@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejRadioButton
+description: API reference for ejRadioButton
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: RadioButton, ejRadioButton, syncfusion, RadioButton api 
 ---
 
 # ejRadioButton
@@ -16,16 +16,22 @@ The RadioButton control allows you to choose an option to perform an action. Thi
 
 
 
+#### Syntax
 
-$(element).ejRadioButton<span class="signature">()</span>
+{% highlight js %}
+
+$(element).ejRadioButton()
+
+{% endhighlight %}
 
 
 
 
 
 
-Example
-{:.example}
+
+#### Example
+
 
 
 {% highlight html %}
@@ -41,8 +47,8 @@ $("#radiobtn1").ejRadioButton();
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 * module:jQuery
@@ -57,7 +63,7 @@ Requires
 
 
 
-### checked<span class="type-signature type boolean">Boolean</span>
+### checked `boolean`
 {:#members:checked}
 
 
@@ -66,8 +72,8 @@ Requires
 Specifies the check atribute of the Radio Button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -76,8 +82,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -95,7 +101,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -104,8 +110,8 @@ Example
 Specify the CSS class to RadioButton to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -114,8 +120,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -133,7 +139,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -142,8 +148,8 @@ Example
 Specifies the RadioButton control state.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -152,8 +158,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -172,7 +178,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -181,8 +187,8 @@ Example
 Specifies the enablePersistence property for RadioButton while initialization. The enablePersistence API save current model value to browser cookies for state maintains. While refreshing the radiobutton control page the model value apply from browser cookies.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -191,8 +197,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -210,7 +216,7 @@ $("#radiobtn1").ejRadioButton({ enablePersistence: false });
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -219,8 +225,8 @@ $("#radiobtn1").ejRadioButton({ enablePersistence: false });
 Specify the Right to Left direction to RadioButton
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -229,8 +235,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -248,7 +254,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -257,8 +263,8 @@ Example
 Specifies the HTML Attributes of the Checkbox
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -267,8 +273,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -285,7 +291,7 @@ Example
 
 
 
-### id<span class="type-signature type string">String</span>
+### id `string`
 {:#members:id}
 
 
@@ -294,8 +300,8 @@ Example
 Specifies the id attribute for the Radio Button while initialization.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -304,8 +310,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -323,7 +329,7 @@ Example
 
 
 
-### idPrefix<span class="type-signature type string">String</span>
+### idPrefix `string`
 {:#members:idprefix}
 
 
@@ -332,8 +338,8 @@ Example
 Specify the idprefix value to be added before the current id of the RadioButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -342,8 +348,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -361,7 +367,7 @@ $("#radiobtn1").ejRadioButton ({  idPrefix : "ej" });
 
 
 
-### name<span class="type-signature type string">String</span>
+### name `string`
 {:#members:name}
 
 
@@ -370,8 +376,8 @@ $("#radiobtn1").ejRadioButton ({  idPrefix : "ej" });
 Specifies the name attribute for the Radio Button while initialization.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -383,7 +389,7 @@ Default Value:
 
 
 
-### size<span class="type-signature type enum">enum</span>
+### size `enum`
 {:#members:size}
 
 
@@ -392,8 +398,8 @@ Default Value:
 Specifies the size of the RadioButton. See <a href="global.html#RadioButtonSize">RadioButtonSize</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -402,8 +408,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -421,7 +427,7 @@ Example
 
 
 
-### text<span class="type-signature type string">string</span>
+### text `string`
 {:#members:text}
 
 
@@ -430,8 +436,8 @@ Example
 Specifies the text content for RadioButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -443,7 +449,7 @@ Default Value:
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -452,8 +458,8 @@ Default Value:
 Set the jquery validation error message in radio button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -462,8 +468,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -488,7 +494,7 @@ $("#radiobtn1").ejRadioButton ();
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -497,8 +503,8 @@ $("#radiobtn1").ejRadioButton ();
 Set the jquery validation rules in radio button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -507,8 +513,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -530,7 +536,7 @@ $("#radiobtn1").ejRadioButton ();
 
 
 
-### value<span class="type-signature type string">String</span>
+### value `string`
 {:#members:value}
 
 
@@ -539,8 +545,8 @@ $("#radiobtn1").ejRadioButton ();
 Specifies the value atribute of the Radio Button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -549,8 +555,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -572,7 +578,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -582,8 +588,8 @@ destroy the RadioButton widget all events bound using this._on will be unbind au
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -611,7 +617,7 @@ $("#radiobtn").ejRadioButton("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -621,8 +627,8 @@ To disable the RadioButton
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -650,7 +656,7 @@ $("#radiobtn").ejRadioButton("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -660,8 +666,8 @@ To enable the RadioButton
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -706,7 +712,7 @@ Fires before the RadioButton is going to changed its state successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -714,13 +720,13 @@ Fires before the RadioButton is going to changed its state successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from RadioButton
+<td class="description">Event parameters from RadioButton
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -728,31 +734,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the RadioButton model</td>
+<td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current element</td>
+<td class="description">returns the current element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the status of the element</td>
+<td class="description">returns the status of the element</td>
 </tr>
 </tbody>
 </table>
@@ -762,8 +768,8 @@ data.isChecked{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -793,7 +799,7 @@ Fires when the RadioButton state is changed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -801,13 +807,13 @@ Fires when the RadioButton state is changed successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from RadioButton
+<td class="description">Event parameters from RadioButton
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -815,31 +821,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the RadioButton model</td>
+<td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current element</td>
+<td class="description">returns the current element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the status of the element</td>
+<td class="description">returns the status of the element</td>
 </tr>
 </tbody>
 </table>
@@ -849,8 +855,8 @@ data.isChecked{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -880,7 +886,7 @@ Fires when the RadioButton created successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -888,13 +894,13 @@ Fires when the RadioButton created successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from RadioButton
+<td class="description">Event parameters from RadioButton
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -902,19 +908,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the RadioButton model</td>
+<td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -924,8 +930,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -955,7 +961,7 @@ Fires when the RadioButton destroyed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -963,13 +969,13 @@ Fires when the RadioButton destroyed successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from RadioButton
+<td class="description">Event parameters from RadioButton
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -977,19 +983,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the RadioButton model</td>
+<td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -999,8 +1005,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

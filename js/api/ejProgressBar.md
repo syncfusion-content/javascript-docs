@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejProgressBar
+description: API reference for ejProgressBar
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ProgressBar, ejProgressBar, syncfusion, ProgressBar api 
 ---
 
 # ejProgressBar
@@ -21,22 +21,28 @@ The ProgressBar control is a graphical control element used to visualize the cha
 
 
 
+#### Syntax
 
+{% highlight js %}
 
-$(element).ejProgressBar<span class="signature">()</span>
+$(element).ejProgressBar()
 
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -51,10 +57,7 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -80,7 +83,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -95,8 +98,8 @@ Sets the root class for ProgressBar theme. This cssClass API helps to use custom
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -112,8 +115,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -130,7 +133,7 @@ $("#progress").ejProgressBar({ cssClass: 'gradient-lime ',value: 50  });
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -145,8 +148,8 @@ When this property sets to false, it disables the ProgressBar control
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -162,8 +165,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -179,7 +182,7 @@ $("#progress").ejProgressBar({ enabled: true,value: 50 });
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -194,8 +197,8 @@ Save current model value to browser cookies for state maintains. While refresh t
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -211,8 +214,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -229,7 +232,7 @@ $("#progress").ejProgressBar({ enablePersistence: true,value: 50 });
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -244,8 +247,8 @@ Sets the ProgressBar direction as right to left alignment.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -261,8 +264,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -278,7 +281,7 @@ $("#progress").ejProgressBar({ enableRTL: true,value: 50 });
 
 
 
-### height<span class="type-signature type number/string">Number/String</span>
+### height `Number/String`
 {:#members:height}
 
 
@@ -293,8 +296,8 @@ Defines the height of the ProgressBar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -310,8 +313,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -328,7 +331,7 @@ $("#progress").ejProgressBar({ height: 20,value: 50 });
 
 
 
-### maxValue<span class="type-signature type number">Number</span>
+### maxValue `number`
 {:#members:maxvalue}
 
 
@@ -343,8 +346,8 @@ Sets the maximum value of the ProgressBar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -360,8 +363,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -378,7 +381,7 @@ $("#progress").ejProgressBar({ maxValue: 200 ,value: 200 });
 
 
 
-### minValue<span class="type-signature type number">Number</span>
+### minValue `number`
 {:#members:minvalue}
 
 
@@ -393,8 +396,8 @@ Sets the minimum value of the ProgressBar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -410,8 +413,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -427,7 +430,7 @@ $("#progress").ejProgressBar({ minValue: 50,value: 50});
 
 
 
-### percentage<span class="type-signature type number">Number</span>
+### percentage `number`
 {:#members:percentage}
 
 
@@ -442,8 +445,8 @@ Sets the ProgressBar value in percentage. The value should be in between 0 to 10
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -459,8 +462,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -476,7 +479,7 @@ $("#progress").ejProgressBar({ percentage : 35 });
 
 
 
-### text<span class="type-signature type string">String</span>
+### text `string`
 {:#members:text}
 
 
@@ -491,8 +494,8 @@ Sets the custom text for the ProgressBar. The text placed in the middle of the P
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -508,8 +511,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -526,7 +529,7 @@ $("#progress").ejProgressBar({ text: 'loading...',value: 50 });
 
 
 
-### value<span class="type-signature type number">Number</span>
+### value `number`
 {:#members:value}
 
 
@@ -541,8 +544,8 @@ Sets the ProgressBar value. The value should be in between min and max values.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -558,8 +561,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -575,7 +578,7 @@ $("#progress").ejProgressBar({ value: 70 });
 
 
 
-### width<span class="type-signature type number/string">Number/String</span>
+### width `Number/String`
 {:#members:width}
 
 
@@ -590,8 +593,8 @@ Defines the width of the ProgressBar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -607,8 +610,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -632,7 +635,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -648,8 +651,8 @@ Destroy the progressbar widget
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -677,7 +680,7 @@ $("#progress").ejProgressBar("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -693,8 +696,8 @@ Disables the progressbar control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -722,7 +725,7 @@ $("#progress").ejProgressBar("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -738,8 +741,8 @@ Enables the progressbar control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -767,7 +770,7 @@ $("#progress").ejProgressBar("enable");
 
 
 
-### getPercent<span class="signature">()</span>
+### getPercent()
 {:#methods:getpercent}
 
 
@@ -783,8 +786,8 @@ Returns the current progress value in percent.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -812,7 +815,7 @@ $("#progress").ejProgressBar("getPercentage");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -828,8 +831,8 @@ Returns the current progress value
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -881,7 +884,7 @@ Event triggers when the progress value changed
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -889,13 +892,13 @@ Event triggers when the progress value changed
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from progressbar
+<td class="description">Event parameters from progressbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -903,25 +906,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ProgressBar model</td>
+<td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current progress percentage</td>
+<td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -931,7 +934,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current progress value</td>
+<td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
@@ -939,8 +942,8 @@ argument{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -976,7 +979,7 @@ Event triggers when the process completes (at 100%)
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -984,13 +987,13 @@ Event triggers when the process completes (at 100%)
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from progressbar
+<td class="description">Event parameters from progressbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -998,25 +1001,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ProgressBar model</td>
+<td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current progress percentage</td>
+<td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1026,7 +1029,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current progress value</td>
+<td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
@@ -1034,8 +1037,8 @@ argument{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1071,7 +1074,7 @@ Event triggers when the progressbar are created
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1079,13 +1082,13 @@ Event triggers when the progressbar are created
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from progressbar
+<td class="description">Event parameters from progressbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1093,19 +1096,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the progressbar model</td>
+<td class="description">returns the progressbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1117,8 +1120,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1156,7 +1159,7 @@ Event triggers when the progressbar are destroyed
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1164,13 +1167,13 @@ Event triggers when the progressbar are destroyed
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from progressbar
+<td class="description">Event parameters from progressbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1178,19 +1181,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the progressbar model</td>
+<td class="description">returns the progressbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1202,8 +1205,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1241,7 +1244,7 @@ Event triggers when the process starts (from 0%)
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1249,13 +1252,13 @@ Event triggers when the process starts (from 0%)
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from progressbar
+<td class="description">Event parameters from progressbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1263,25 +1266,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ProgressBar model</td>
+<td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current progress percentage</td>
+<td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1291,7 +1294,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current progress value</td>
+<td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
@@ -1299,8 +1302,8 @@ argument{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

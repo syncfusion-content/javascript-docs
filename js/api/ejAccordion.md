@@ -1,33 +1,27 @@
 ---
 layout: post
 title: ejAccordion
+description: API reference for ejAccordion
 documentation: API
 platform: js
-metaname: 
-metacontent: 
----
+keywords: accordion, ejAccordion, syncfusion, accordion api
 
+---
 
 # ejAccordion
 
-
-
-
 The Accordion control is an interface where lists of items can be collapsed or expanded. It has several collapsible panels where only one can be expanded at a time that is useful for dashboards where space is limited. Each Accordion control has a template for its header and its content.
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejAccordion()
+
+{% endhighlight %}
 
 
-
-
-$(element).ejAccordion<span class="signature">()</span>
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -53,15 +47,12 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
            // Initialize Accordion control creation.
            $("#accordion").ejAccordion();
        });
-   </script> {% endhighlight %}
+   </script>
+   
+ {% endhighlight %}
 
 
-
-
-Requires
-{:.require}
-
-
+#### Requires
 
 * module:jQuery
 
@@ -74,31 +65,16 @@ Requires
 
 ## Members
 
-
-
-
-### ajaxSettings<span class="type-signature type object">object</span>
+### ajaxSettings  `object`
 {:#members:ajaxsettings}
-
-
-
 
 Specifies the ajaxSettings option to load the content to the accordion control.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -126,108 +102,46 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 {% endhighlight %}
 
 
-
-
-### ajaxSettings.async<span class="type-signature type boolean">Boolean</span>
+### ajaxSettings.async `Boolean`
 {:#members:ajaxsettings-async}
-
-
-
 
 It specifies, whether to enable or disable asynchronous request.
 
-
-
-
-
-
-### ajaxSettings.cache<span class="type-signature type boolean">Boolean</span>
+### ajaxSettings.cache `Boolean`
 {:#members:ajaxsettings-cache}
-
-
-
 
 It specifies the page will be cached in the web browser.
 
-
-
-
-
-
-### ajaxSettings.contentType<span class="type-signature type string">String</span>
+### ajaxSettings.contentType `String`
 {:#members:ajaxsettings-contenttype}
-
-
-
 
 It specifies the type of data is send in the query string.
 
-
-
-
-
-
-### ajaxSettings.data<span class="type-signature type object">Object</span>
+### ajaxSettings.data `Object`
 {:#members:ajaxsettings-data}
-
-
-
 
 It specifies the data as an object, will be passed in the query string.
 
-
-
-
-
-
-### ajaxSettings.dataType<span class="type-signature type string">String</span>
+### ajaxSettings.dataType `String`
 {:#members:ajaxsettings-datatype}
-
-
-
 
 It specifies the type of data that you're expecting back from the response.
 
-
-
-
-
-
-### ajaxSettings.type<span class="type-signature type string">String</span>
+### ajaxSettings.type `String`
 {:#members:ajaxsettings-type}
-
-
-
 
 It specifies the HTTP request type.
 
-
-
-
-
-
-### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation `Boolean`
 {:#members:allowkeyboardnavigation}
-
-
-
 
 Accordion headers can be expanded and collapsed on keyboard action.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * true
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -253,30 +167,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### collapseSpeed<span class="type-signature type integer/string">integer/string</span>
+### collapseSpeed `integer/string`
 {:#members:collapsespeed}
-
-
-
 
 To set the Accordion headers Collapse Speed.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 300
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -302,30 +202,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### collapsible<span class="type-signature type boolean">boolean</span>
+### collapsible `boolean`
 {:#members:collapsible}
-
-
-
 
 Specifies the collapsible state of accordion control.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -352,32 +238,17 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
          $("#accordion").ejAccordion({ collapsible: true});
 </script>{% endhighlight %}
 
-
-
-
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `String`
 {:#members:cssclass}
-
-
-
 
 Sets the root class for the Accordion theme. This cssClass API enables the use of custom skinning options for the Accordion control. By defining the root class using this
 API, we need to include this root class in the CSS.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * ""
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -403,31 +274,18 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### customIcon<span class="type-signature type jsonobject">JSONObject</span>
+### customIcon `JSONObject`
 {:#members:customicon}
-
-
-
 
 The header icon can be customized using this API. It has two properties: header as the collapsing header CSS class name, and selectedHeader as the active header CSS class
 name. It accepts CSS class names with string as the type. * &bull;header: This class name set to collapsing header. This accepts the string type value. &bull;selectedHeader: This class name set to
 expanded header. This accepts the string type value.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "{ header: "e-acrdn-collapsicon", selectedHeader: "e-acrdn-expandicon" }"
 
-
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -459,31 +317,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         });
 </script>{% endhighlight %}
 
-
-
-
-### disabledItems<span class="type-signature type integerarray">Integerarray</span>
+### disabledItems `Integerarray`
 {:#members:disableditems}
-
-
-
 
 To deactivate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -509,30 +352,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `Boolean`
 {:#members:enableanimation}
-
-
-
 
 Specifies the animation behavior in accordion.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value:
 
 * true
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -560,30 +389,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 {% endhighlight %}
 
 
-
-
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `Boolean`
 {:#members:enabled}
-
-
-
 
 With the Enabled property, you can enable or disable the Accordion.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * true
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -608,31 +423,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ enabled: true});
 </script>{% endhighlight %}
 
-
-
-
-### enabledItems<span class="type-signature type integerarray">Integerarray</span>
+### enabledItems `Integerarray`
 {:#members:enableditems}
-
-
-
 
 To activate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -657,31 +457,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ enabledItems: [0,1] });
 </script>{% endhighlight %}
 
-
-
-
-### enableMultipleOpen<span class="type-signature type boolean">boolean</span>
+### enableMultipleOpen `Boolean`
 {:#members:enablemultipleopen}
-
-
-
 
 Multiple content panels to activate at a time.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -707,31 +492,17 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `Boolean`
 {:#members:enablepersistence}
-
-
-
 
 Save current model value to browser cookies for maintaining states. When refreshing the accordion control page, the model value is applied from browser cookies or HTML 5
 local storage.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -757,30 +528,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `Boolean`
 {:#members:enablertl}
-
-
-
 
 Display headers and panel text from right-to-left.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -805,32 +562,17 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ enableRTL: true});
 </script>{% endhighlight %}
 
-
-
-
-### events<span class="type-signature type string">String</span>
+### events `String`
 {:#members:events}
-
-
-
 
 The events API binds the action for activating the accordion header. Users can activate the header by using mouse actions such as mouse-over, mouse-up, mouse-down, and so
 on.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "click"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
                        
@@ -856,31 +598,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 $("#accordion").ejAccordion({ events: "mouseover" });
 </script>{% endhighlight %}
 
-
-
-
-### expandSpeed<span class="type-signature type integer/string">integer/string</span>
+### expandSpeed `integer/string`
 {:#members:expandspeed}
-
-
-
 
 To set the Accordion headers Expand Speed.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value:
 
 * 300
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -906,21 +633,12 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### header<span class="type-signature type string">String</span>
+### header `String`
 {:#members:header}
-
-
-
 
 Set class name to collapsing header.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
       
@@ -949,31 +667,17 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### heightAdjustMode<span class="type-signature type enum/string">Enum/String</span>
+### heightAdjustMode `Enum/String`
 {:#members:heightadjustmode}
-
-
-
 
 Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content. See <a href=
 "global.html#HeightAdjustMode">HeightAdjustMode</a>
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "content"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -1022,22 +726,12 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 $("#accordion").ejAccordion({ heightAdjustMode : "auto" }); 
 </script>{% endhighlight %}
 
-
-
-
-### selectedHeader<span class="type-signature type string">String</span>
+### selectedHeader `String`
 {:#members:selectedheader}
-
-
-
 
 Set class name to expanded header.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
       
@@ -1068,31 +762,17 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
-### selectedItemIndex<span class="type-signature type integer">Integer</span>
+### selectedItemIndex `Integer`
 {:#members:selecteditemindex}
-
-
-
 
 The given index header will activate (open). If collapsible is set to true, and a negative value is given, then all headers are collapsed. Otherwise, the first panel is
 activated.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -1117,31 +797,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ selectedItemIndex : 1 });
 </script>{% endhighlight %}
 
-
-
-
-### selectedItems<span class="type-signature type integerarray">Integerarray</span>
+### selectedItems `Integerarray`
 {:#members:selecteditems}
-
-
-
 
 To activate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * [0]
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -1166,31 +831,16 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ selectedItems: [0,1] });
 </script>{% endhighlight %}
 
-
-
-
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
-
-
-
 
 Displays rounded corner borders on the Accordion control's panels and headers.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="accordion">
@@ -1216,26 +866,15 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
 ## Methods
 
-
-
-
-### collapseAll<span class="signature">()</span>
+### collapseAll()
 {:#methods:collapseall}
-
-
-
 
 collapseAll the accordion widget collapse All the header and content panel Before we call this method, we must set "collapsible" is true. Then only collapseAll method will
 working.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1289,21 +928,12 @@ accObj.collapseAll(); //Calls the collapseAll method of Accordion.
 </script>{% endhighlight %}
 
 
-
-
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
-
-
-
 
 destroy the Accordion widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1355,21 +985,12 @@ $("#Accordion").ejAccordion("destroy");
 </script>{% endhighlight %}
 
 
-
-
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
-
-
-
 
 disables the accordion widget disables All the header and content panel.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1423,21 +1044,12 @@ accObj.disable(); //Calls the disable method of Accordion.
 </script>{% endhighlight %}
 
 
-
-
-### disableItems<span class="signature">()</span>
+### disableItems()
 {:#methods:disableitems}
-
-
-
 
 enable the accordion widget Enables given index header and content panel.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1491,21 +1103,14 @@ accObj.disableItems(1); //Calls the disableItems method of Accordion.
 </script>{% endhighlight %}
 
 
-
-
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
-
-
 
 
 enable the accordion widget Enables all the headers and content panels.
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1561,19 +1166,12 @@ accObj.enable(); //Calls the enable method of Accordion.
 
 
 
-### enableItems<span class="signature">()</span>
+### enableItems()
 {:#methods:enableitems}
-
-
-
 
 enable the accordion widget Enables given index header and content panel.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1633,19 +1231,13 @@ accObj.enableItems(1); //Calls the enable method of Accordion.
 
 
 
-### expandAll<span class="signature">()</span>
+### expandAll()
 {:#methods:expandall}
-
-
-
 
 expand All the accordion widget expand All the header and content panel Before we call this method, we must set "enableMultipleOpen" is true. Then only expandAll method will
 working.
 
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1702,19 +1294,12 @@ accObj.expandAll(); //Calls the expandAll method of Accordion.
 
 
 
-### getItemsCount<span class="signature">()</span>
+### getItemsCount()
 {:#methods:getitemscount}
-
-
-
 
 Returns the total number of panels in the control.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
    <div id="accordion">
@@ -1770,18 +1355,12 @@ accObj.getItemsCount(); //Calls the getItemsCount method of Accordion.
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
-
-
-
 
 Hides the visible Accordion control.
 
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1838,18 +1417,14 @@ accObj.hide(); //Calls the hide method of Accordion.
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
-
-
 
 
 Shows the hidden Accordion control.
 
 
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1907,13 +1482,8 @@ accObj.show(); //Calls the show method of Accordion.
 
 ## Events
 
-
-
-
 ### activate
 {:#events:activate}
-
-
 
 
 Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
@@ -1923,7 +1493,7 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1931,13 +1501,13 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1945,43 +1515,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns active index</td>
+<td class="description">returns active index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active header</td>
+<td class="description">returns current active header</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 inActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns active index</td>
+<td class="description">returns active index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 inActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active header</td>
+<td class="description">returns current active header</td>
 </tr>
 </tbody>
 </table>
@@ -1991,8 +1561,7 @@ inActiveHeader{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2026,9 +1595,6 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 ### ajaxBeforeLoad
 {:#events:ajaxbeforeload}
 
-
-
-
 Triggered before the AJAX content is loaded in a content panel. Arguments have location of the content (URL) and current model value.
 
 <table class="params">
@@ -2036,7 +1602,7 @@ Triggered before the AJAX content is loaded in a content panel. Arguments have l
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2044,13 +1610,13 @@ Triggered before the AJAX content is loaded in a content panel. Arguments have l
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2058,25 +1624,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns current ajax content location</td>
+<td class="description">returns current ajax content location</td>
 </tr>
 </tbody>
 </table>
@@ -2085,10 +1651,7 @@ url{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -2122,8 +1685,6 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 {:#events:ajaxerror}
 
 
-
-
 Triggered after AJAX load failed action. Arguments have URL, error message, and current model value.
 
 <table class="params">
@@ -2131,7 +1692,7 @@ Triggered after AJAX load failed action. Arguments have URL, error message, and 
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2139,13 +1700,13 @@ Triggered after AJAX load failed action. Arguments have URL, error message, and 
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2153,31 +1714,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns current ajax content location</td>
+<td class="description">returns current ajax content location</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the failed data sent.</td>
+<td class="description">returns the failed data sent.</td>
 </tr>
 </tbody>
 </table>
@@ -2187,8 +1748,7 @@ data{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2216,13 +1776,8 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 });
 </script>{% endhighlight %}
 
-
-
-
 ### ajaxLoad
 {:#events:ajaxload}
-
-
 
 
 Triggered after the AJAX content loads. Arguments have current model values.
@@ -2232,7 +1787,7 @@ Triggered after the AJAX content loads. Arguments have current model values.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2240,13 +1795,13 @@ Triggered after the AJAX content loads. Arguments have current model values.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2254,25 +1809,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the url</td>
+<td class="description">returns the name of the url</td>
 </tr>
 </tbody>
 </table>
@@ -2282,8 +1837,7 @@ url{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2318,8 +1872,6 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 {:#events:ajaxsuccess}
 
 
-
-
 Triggered after AJAX success action. Arguments have URL, content, and current model values.
 
 <table class="params">
@@ -2327,7 +1879,7 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2335,13 +1887,13 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2349,37 +1901,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns current ajax content location</td>
+<td class="description">returns current ajax content location</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the succesfull data sent.</td>
+<td class="description">returns the succesfull data sent.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 content{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the ajax content.</td>
+<td class="description">returns the ajax content.</td>
 </tr>
 </tbody>
 </table>
@@ -2389,8 +1941,7 @@ content{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2434,7 +1985,7 @@ Triggered before a tab item is active. Arguments have active index and model val
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2442,13 +1993,13 @@ Triggered before a tab item is active. Arguments have active index and model val
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2456,25 +2007,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns active index</td>
+<td class="description">returns active index</td>
 </tr>
 </tbody>
 </table>
@@ -2484,8 +2035,7 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2514,13 +2064,8 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
 ### beforeInactivate
 {:#events:beforeinactivate}
-
-
-
 
 Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
@@ -2529,7 +2074,7 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2537,13 +2082,13 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2551,31 +2096,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 inActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns active index</td>
+<td class="description">returns active index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 inActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active header</td>
+<td class="description">returns current active header</td>
 </tr>
 </tbody>
 </table>
@@ -2585,8 +2130,7 @@ inActiveHeader{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2615,13 +2159,8 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
 ### create
 {:#events:create}
-
-
-
 
 Triggered after Accordion control creation.
 
@@ -2630,7 +2169,7 @@ Triggered after Accordion control creation.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2638,13 +2177,13 @@ Triggered after Accordion control creation.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2652,19 +2191,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2674,8 +2213,7 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2704,13 +2242,8 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
 ### destroy
 {:#events:destroy}
-
-
-
 
 Triggered after Accordion control destroy.
 
@@ -2719,7 +2252,7 @@ Triggered after Accordion control destroy.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2727,13 +2260,13 @@ Triggered after Accordion control destroy.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2741,19 +2274,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2763,8 +2296,7 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2793,13 +2325,8 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-
-
 ### inActivate
 {:#events:inactivate}
-
-
-
 
 Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
@@ -2808,7 +2335,7 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2816,13 +2343,13 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from accordion
+<td class="description">Event parameters from accordion
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2830,25 +2357,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the accordion model</td>
+<td class="description">returns the accordion model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 inActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns active index</td>
+<td class="description">returns active index</td>
 </tr>
 </tbody>
 </table>
@@ -2858,9 +2385,7 @@ inActiveIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejScroller
+description: API reference for ejScroller
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Scroller, ejScroller, syncfusion, Scroller api 
 ---
 
 # ejScroller
@@ -16,22 +16,28 @@ The Scroller control has a sliding document whose position corresponds to a valu
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejScroller()
+
+{% endhighlight %}
 
 
-$(element).ejScroller<span class="signature">()</span>
 
 
 
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollcontent" style="width:900px;">
 <p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
@@ -52,13 +58,14 @@ kinds of components, the MVC design defines the interactions between them.
 <script>
 // Create Scroller
 $('#scrollcontent').ejScroller();       
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -73,7 +80,7 @@ Requires
 
 
 
-### buttonSize<span class="type-signature type number">number</span>
+### buttonSize `number`
 {:#members:buttonsize}
 
 
@@ -82,8 +89,8 @@ Requires
 Specifies the button height for vertical scrollbar; for horizontal scrollbar specifies the width of the button in the scrollbar.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -92,8 +99,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -124,7 +131,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -133,8 +140,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Specifies to enable or disable the scroller
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -143,8 +150,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -175,7 +182,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -184,8 +191,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Save current model value to browser cookies for state maintanence. While refresh the page Rating control values are retained.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -194,8 +201,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -221,12 +228,14 @@ It can also send commands to the model to update the model's state (e.g., editin
 <script>
 //Enable enablePersistence API on initialization
         $("#scrollcontent").ejScroller({enablePersistence: true });
-</script> {% endhighlight %}
+</script>
+
+ {% endhighlight %}
 
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -235,8 +244,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Indicates the Right to Left direction to scroller
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -245,8 +254,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -277,7 +286,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### enableTouchScroll<span class="type-signature type boolean">boolean</span>
+### enableTouchScroll `boolean`
 {:#members:enabletouchscroll}
 
 
@@ -286,8 +295,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Enables or Disbale the touch Scroll
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -296,8 +305,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -328,7 +337,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -337,8 +346,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Specifies the height of Scroll panel and scrollbars.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -347,8 +356,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -379,7 +388,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### scrollerSize<span class="type-signature type number">number</span>
+### scrollerSize `number`
 {:#members:scrollersize}
 
 
@@ -388,8 +397,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Set the Scrollbar height and width for this API; if vertical scrollbar,apply the width else apply the height.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -398,8 +407,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -431,7 +440,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### scrollLeft<span class="type-signature type number">number</span>
+### scrollLeft `number`
 {:#members:scrollleft}
 
 
@@ -440,8 +449,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 The Scroller content and scrollbars move left with given value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -450,8 +459,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -482,7 +491,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### scrollOneStepBy<span class="type-signature type number">number</span>
+### scrollOneStepBy `number`
 {:#members:scrollonestepby}
 
 
@@ -491,8 +500,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 While press on the arrow key the scrollbar position added to the given pixel value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -501,8 +510,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -533,7 +542,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### scrollTop<span class="type-signature type number">number</span>
+### scrollTop `number`
 {:#members:scrolltop}
 
 
@@ -542,8 +551,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 The Scroller content and scrollbars move to top position with specified value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -552,8 +561,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -584,7 +593,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### targetPane<span class="type-signature type string">string</span>
+### targetPane `string`
 {:#members:targetpane}
 
 
@@ -593,8 +602,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Indicates the target area to which scroller have to appear.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -603,8 +612,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -635,7 +644,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -644,8 +653,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 Specifies the width of Scroll panel and scrollbars.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -654,8 +663,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -690,7 +699,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -700,8 +709,8 @@ destroy the Scroller control all events bound using this._on will be unbind auto
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -743,7 +752,7 @@ The controller mediates input, converting it to commands for the model or view.T
 ideas behind MVC are code reusability and n addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
-<ul>*<li>
+<ul><li>
 <b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
@@ -759,7 +768,7 @@ $("#scrollcontent").ejScroller("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -769,8 +778,8 @@ User disables the Scroller control at any time.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -830,7 +839,7 @@ $("#scrollcontent").ejScroller("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -840,8 +849,8 @@ User enables the Scroller control at any time.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -901,7 +910,7 @@ $("#scrollcontent").ejScroller("enable");
 
 
 
-### isHScroll<span class="signature">()</span>
+### isHScroll()
 {:#methods:ishscroll}
 
 
@@ -916,8 +925,8 @@ Returns horizontal scrollbar is shown or not.
 
 value
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -975,7 +984,7 @@ $("#scrollcontent").ejScroller("isHScroll");
 
 
 
-### isVScroll<span class="signature">()</span>
+### isVScroll()
 {:#methods:isvscroll}
 
 
@@ -990,8 +999,8 @@ Returns vertical scrollbar is shown or not.
 
 value
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1051,7 +1060,7 @@ $("#scrollcontent").ejScrollBar("isVScroll");
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -1061,8 +1070,8 @@ User refreshes the Scroller control at any time.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1122,7 +1131,7 @@ $("#scrollcontent").ejScroller("refresh");
 
 
 
-### scrollX<span class="signature">()</span>
+### scrollX()
 {:#methods:scrollx}
 
 
@@ -1132,8 +1141,8 @@ Scroller moves to given pixel in X (left) position. We can also specify the anim
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1195,7 +1204,7 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 
 
-### scrollY<span class="signature">()</span>
+### scrollY()
 {:#methods:scrolly}
 
 
@@ -1205,8 +1214,8 @@ Scroller moves to given pixel in Y (top) position. We can also specify the anima
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1285,7 +1294,7 @@ Fires when Scroller control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1293,13 +1302,13 @@ Fires when Scroller control is created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from scroller
+<td class="description">Event parameters from scroller
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1307,19 +1316,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the scroller model</td>
+<td class="description">returns the scroller model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1329,8 +1338,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1376,7 +1385,7 @@ Fires when Scroller control is destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1384,13 +1393,13 @@ Fires when Scroller control is destroyed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from scroller
+<td class="description">Event parameters from scroller
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1398,19 +1407,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the scroller model</td>
+<td class="description">returns the scroller model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1420,8 +1429,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

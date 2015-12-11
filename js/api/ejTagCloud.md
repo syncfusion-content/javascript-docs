@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejTagCloud
+description: API reference for ejTagCloud
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: TagCloud, ejTagCloud, syncfusion, TagCloud api 
 ---
 
 # ejTagCloud
@@ -23,21 +23,27 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 
 
+#### Syntax
 
-$(element).ejTagCloud<span class="signature">()</span>
+{% highlight js %}
 
+$(element).ejTagCloud()
 
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -62,9 +68,7 @@ $(function () {
 
 
 
-Requires
-{:.require}
-
+#### Requires
 
 
 
@@ -91,7 +95,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -106,8 +110,8 @@ Specify the CSS class to button to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -123,8 +127,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -142,7 +146,7 @@ Example
 
 
 
-### dataSource<span class="type-signature type object">object</span>
+### dataSource `object`
 {:#members:datasource}
 
 
@@ -157,8 +161,8 @@ The dataSource contains the list of data to display in a cloud format. Each data
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -174,8 +178,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -193,7 +197,7 @@ $("#tagcloud").ejTagCloud({ dataSource: window.websiteCollection,titleText: "Tec
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -208,8 +212,8 @@ Sets the TagCloud and tag items direction as right to left alignment.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -225,8 +229,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -244,7 +248,7 @@ Example
 
 
 
-### fields<span class="type-signature type object">Object</span>
+### fields `object`
 {:#members:fields}
 
 
@@ -259,8 +263,8 @@ Defines the mapping fields for the data items of the TagCloud.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -276,8 +280,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -301,7 +305,7 @@ fields: { text: "text" , url:"url",frequency: "frequency"}
 
 
 
-### fields.frequency<span class="type-signature type number">Number</span>
+### fields.frequency `number`
 {:#members:fields-frequency}
 
 
@@ -323,7 +327,7 @@ Defines the frequency number to categorize the font size.
 
 
 
-### fields.htmlAttributes<span class="type-signature type object">Object</span>
+### fields.htmlAttributes `object`
 {:#members:fields-htmlattributes}
 
 
@@ -345,7 +349,7 @@ Defines the html attributes for the anchor elements inside the each tag items.
 
 
 
-### fields.text<span class="type-signature type string">String</span>
+### fields.text `string`
 {:#members:fields-text}
 
 
@@ -367,7 +371,7 @@ Defines the tag value or display text.
 
 
 
-### fields.url<span class="type-signature type string">String</span>
+### fields.url `string`
 {:#members:fields-url}
 
 
@@ -389,7 +393,7 @@ Defines the url link to navigate while click the tag.
 
 
 
-### format<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### format `string`  `enum`
 {:#members:format}
 
 
@@ -404,8 +408,8 @@ Defines the format for the TagCloud to display the tag items.See <a href="global
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -421,8 +425,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -440,7 +444,7 @@ Example
 
 
 
-### maxFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### maxFontSize `string`  `number`
 {:#members:maxfontsize}
 
 
@@ -455,8 +459,8 @@ Sets the maximum font size value for the tag items. The font size for the tag it
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -472,8 +476,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -491,7 +495,7 @@ Example
 
 
 
-### minFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### minFontSize `string`  `number`
 {:#members:minfontsize}
 
 
@@ -506,8 +510,8 @@ Sets the minimum font size value for the tag items. The font size for the tag it
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -523,8 +527,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -542,7 +546,7 @@ Example
 
 
 
-### query<span class="type-signature type object">object</span>
+### query `object`
 {:#members:query}
 
 
@@ -557,8 +561,8 @@ Define the query to retrieve the data from online server. The query is used only
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -574,8 +578,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -602,7 +606,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-### showTitle<span class="type-signature type boolean">boolean</span>
+### showTitle `boolean`
 {:#members:showtitle}
 
 
@@ -617,8 +621,8 @@ Shows or hides the TagCloud title. When this set to false, it hides the TagCloud
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -634,8 +638,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -653,7 +657,7 @@ Example
 
 
 
-### titleImage<span class="type-signature type string">string</span>
+### titleImage `string`
 {:#members:titleimage}
 
 
@@ -668,8 +672,8 @@ Sets the title image for the TagCloud. To show the title image, the showTitle pr
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -685,8 +689,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -704,7 +708,7 @@ Example
 
 
 
-### titleText<span class="type-signature type string">string</span>
+### titleText `string`
 {:#members:titletext}
 
 
@@ -719,8 +723,8 @@ Sets the title text for the TagCloud. To show the title text, the showTitle prop
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -736,8 +740,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -762,7 +766,7 @@ Example
 
 
 
-### insert<span class="signature">()</span>
+### insert()
 {:#methods:insert}
 
 
@@ -778,8 +782,8 @@ Inserts a new item into the TagCloud
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -826,7 +830,7 @@ $("#tagcloud").ejTagCloud("insert", tag);
 
 
 
-### insertAt<span class="signature">()</span>
+### insertAt()
 {:#methods:insertat}
 
 
@@ -842,8 +846,8 @@ Inserts a new item into the TagCloud at a particular position.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -887,7 +891,7 @@ $("#tagcloud").ejTagCloud("insertAt", tag, 2);
 
 
 
-### remove<span class="signature">(name)</span>
+### remove(name)</span>
 {:#methods:remove}
 
 
@@ -904,7 +908,7 @@ Removes the item from the TagCloud based on the name. It removes all the tags wh
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -912,7 +916,7 @@ Removes the item from the TagCloud based on the name. It removes all the tags wh
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">name of the tag.</td>
+<td class="description">name of the tag.</td>
 </tr>
 </tbody>
 </table>
@@ -920,8 +924,8 @@ name{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -969,7 +973,7 @@ $("#tagcloud").ejTagCloud("remove", tag);
 
 
 
-### removeAt<span class="signature">(position)</span>
+### removeAt(position)</span>
 {:#methods:removeat}
 
 
@@ -986,7 +990,7 @@ Removes the item from the TagCloud based on the position. It removes the tags fr
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -994,7 +998,7 @@ Removes the item from the TagCloud based on the position. It removes the tags fr
 <td class="name">{% highlight html %}
 position{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">position of tag item.</td>
+<td class="description">position of tag item.</td>
 </tr>
 </tbody>
 </table>
@@ -1002,8 +1006,8 @@ position{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1072,7 +1076,7 @@ Event triggers when the TagCloud items are clicked
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1080,13 +1084,13 @@ Event triggers when the TagCloud items are clicked
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1094,31 +1098,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tagcloud model</td>
+<td class="description">returns the tagcloud model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current tag name</td>
+<td class="description">return current tag name</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current url link</td>
+<td class="description">return current url link</td>
 </tr>
 </tbody>
 </table>
@@ -1130,8 +1134,8 @@ url{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1170,7 +1174,7 @@ Event triggers when the TagCloud are created
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1178,13 +1182,13 @@ Event triggers when the TagCloud are created
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1192,19 +1196,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tagcloud model</td>
+<td class="description">returns the tagcloud model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1216,8 +1220,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1256,7 +1260,7 @@ Event triggers when the TagCloud are destroyed
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1264,13 +1268,13 @@ Event triggers when the TagCloud are destroyed
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1278,19 +1282,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tagcloud model</td>
+<td class="description">returns the tagcloud model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1302,8 +1306,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1342,7 +1346,7 @@ Event triggers when the cursor leaves out from a tag item
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1350,13 +1354,13 @@ Event triggers when the cursor leaves out from a tag item
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1364,31 +1368,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tagcloud model</td>
+<td class="description">returns the tagcloud model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current tag name</td>
+<td class="description">return current tag name</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current url link</td>
+<td class="description">return current url link</td>
 </tr>
 </tbody>
 </table>
@@ -1400,8 +1404,8 @@ url{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1440,7 +1444,7 @@ Event triggers when the cursor hovers on a tag item
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1448,13 +1452,13 @@ Event triggers when the cursor hovers on a tag item
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1462,31 +1466,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tagcloud model</td>
+<td class="description">returns the tagcloud model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current tag name</td>
+<td class="description">return current tag name</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return current url link</td>
+<td class="description">return current url link</td>
 </tr>
 </tbody>
 </table>
@@ -1498,8 +1502,8 @@ url{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

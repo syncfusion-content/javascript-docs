@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejDatePicker
+description: API reference for ejDatePicker
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: datePicker, ejDatePicker, syncfusion, datePicker api 
 ---
 
 # ejDatePicker
@@ -13,18 +13,13 @@ metacontent:
 Date selection with the input field.
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejDatePicker(options)
 
-
-
-
-
-
-$(element).ejDatePicker<span class="signature">(options)</span>
-
-
-
+{% endhighlight %}
 
 
 
@@ -34,7 +29,7 @@ $(element).ejDatePicker<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -42,7 +37,7 @@ $(element).ejDatePicker<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for Date Picker.</td>
+<td class="description">settings for Date Picker.</td>
 </tr>
 </tbody>
 </table>
@@ -50,8 +45,8 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -64,13 +59,7 @@ $("#datepicker").ejDatePicker();
 
 
 
-
-
-
-
-Requires
-{:.require}
-
+#### Requires
 
 
 
@@ -101,7 +90,7 @@ Requires
 
 
 
-### allowEdit<span class="type-signature type boolean">Boolean</span>
+### allowEdit `boolean`
 {:#members:allowedit}
 
 
@@ -116,8 +105,8 @@ When allowEdit is set to false, you cannot able to type in datePicker textbox an
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -133,8 +122,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -150,7 +139,7 @@ Example
 
 
 
-### allowDrilDown<span class="type-signature type boolean">Boolean</span>
+### allowDrilDown `boolean`
 {:#members:allowdrildown}
 
 
@@ -165,8 +154,8 @@ Determines whether you can change the popup view to month/year/decade while clic
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -182,8 +171,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -203,7 +192,7 @@ Example
 
 
 
-### buttonText<span class="type-signature type string">String</span>
+### buttonText `string`
 {:#members:buttontext}
 
 
@@ -218,8 +207,8 @@ Sets the text name for the today button in the datepicker calendar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -235,8 +224,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -252,7 +241,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -267,8 +256,8 @@ Sets the root class for DatePicker theme. This cssClass API allows to use custom
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -284,8 +273,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -302,7 +291,7 @@ Example
 
 
 
-### dateFormat<span class="type-signature type string">String</span>
+### dateFormat `string`
 {:#members:dateformat}
 
 
@@ -317,8 +306,8 @@ Specifies the format that is used to format the value of the DatePicker displaye
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -334,8 +323,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -352,7 +341,7 @@ Example
 
 
 
-### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### dayHeaderFormat `string / enum`
 {:#members:dayheaderformat}
 
 
@@ -367,8 +356,8 @@ Specifies the header format of datepicker calendar in short, longer or min types
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -384,8 +373,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -402,7 +391,7 @@ Example
 
 
 
-### depthLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### depthLevel `string / enum`
 {:#members:depthlevel}
 
 
@@ -417,8 +406,8 @@ Specifies the navigation depth in DatePicker calendar. This option is not applie
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -434,8 +423,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -452,7 +441,7 @@ Example
 
 
 
-### displayDefaultDate<span class="type-signature type boolean">Boolean</span>
+### displayDefaultDate `boolean`
 {:#members:displaydefaultdate}
 
 
@@ -467,8 +456,8 @@ Allows to display the default date value in input textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -484,8 +473,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -502,7 +491,7 @@ Example
 
 
 
-### displayInline<span class="type-signature type boolean">Boolean</span>
+### displayInline `boolean`
 {:#members:displayinline}
 
 
@@ -517,8 +506,8 @@ Allows to embed the DatePicker in the page. Also associates DatePicker with div 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -534,8 +523,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -552,7 +541,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -567,8 +556,8 @@ Enables or disables the animation effect when opening the datepicker calendar in
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -584,8 +573,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -603,7 +592,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -618,8 +607,8 @@ Enables or disables the datepicker control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -635,8 +624,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -653,7 +642,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -668,8 +657,8 @@ Specifies the enablePersistence to editor to DatePicker current model value to b
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -685,8 +674,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -703,7 +692,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -718,8 +707,8 @@ Displays Right to Left direction of DatePicker calendar and input box.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -735,8 +724,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -753,7 +742,7 @@ Example
 
 
 
-### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+### enableStrictMode `boolean`
 {:#members:enablestrictmode}
 
 
@@ -768,8 +757,8 @@ When enableStrictMode is true, it allows the value outside the range also, other
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -785,8 +774,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -803,7 +792,7 @@ Example
 
 
 
-### fields<span class="type-signature type object">object</span>
+### fields `object`
 {:#members:fields}
 
 
@@ -818,8 +807,8 @@ Specifies the fields mapping for special Dates in datepicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -835,8 +824,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -855,7 +844,7 @@ specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",iconClass:"
 
 
 
-### fields.date<span class="type-signature type string">String</span>
+### fields.date `string`
 {:#members:fields-date}
 
 
@@ -877,7 +866,7 @@ Specifies the date.
 
 
 
-### fields.iconClass<span class="type-signature type string">String</span>
+### fields.iconClass `string`
 {:#members:fields-iconClass}
 
 
@@ -899,7 +888,7 @@ Specifies the icon class to date.
 
 
 
-### fields.tooltip<span class="type-signature type string">String</span>
+### fields.tooltip `string`
 {:#members:fields-tooltip}
 
 
@@ -921,7 +910,7 @@ Specifies the tooltip to date.
 
 
 
-### headerFormat<span class="type-signature type string">String</span>
+### headerFormat `string`
 {:#members:headerformat}
 
 
@@ -936,8 +925,8 @@ Specifies the header format to be displayed in the Datepicker calendar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -953,8 +942,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -971,7 +960,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span>
+### height `string`
 {:#members:height}
 
 
@@ -986,8 +975,8 @@ Specifies the height of the datepicker input text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1003,8 +992,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1021,7 +1010,7 @@ Example
 
 
 
-### highlightSection<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### highlightSection `string`  `enum`
 {:#members:highlightsection}
 
 
@@ -1036,8 +1025,8 @@ HighlightSection is used to highlight current month, week, workdays. See <a href
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1053,8 +1042,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1071,7 +1060,7 @@ Example
 
 
 
-### highlightWeekend<span class="type-signature type boolean">Boolean</span>
+### highlightWeekend `boolean`
 {:#members:highlightweekend}
 
 
@@ -1086,8 +1075,8 @@ Weekend is highlighted when this property is set to true.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1103,8 +1092,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1121,7 +1110,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -1136,8 +1125,8 @@ Specifies the HTML Attributes of the DatePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1153,8 +1142,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1171,7 +1160,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">String</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -1186,8 +1175,8 @@ Specifies the culture info used by the widget.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1203,8 +1192,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1221,7 +1210,7 @@ Example
 
 
 
-### maxDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### maxDate `string`  `DateObject`
 {:#members:maxdate}
 
 
@@ -1236,8 +1225,8 @@ Specifies the maximum date, the calendar can display.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1253,8 +1242,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1271,7 +1260,7 @@ Example
 
 
 
-### minDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### minDate `string`  `DateObject`
 {:#members:mindate}
 
 
@@ -1286,8 +1275,8 @@ Specifies the minimum date, the calendar can display.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1303,8 +1292,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1321,7 +1310,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">Boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -1336,8 +1325,8 @@ Toggles the readonly state of the widget. When the widget is readonly, it doesn'
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1353,8 +1342,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1371,7 +1360,7 @@ Example
 
 
 
-### showFooter<span class="type-signature type boolean">Boolean</span>
+### showFooter `boolean`
 {:#members:showfooter}
 
 
@@ -1386,8 +1375,8 @@ It allows to display footer in DatePicker calendar to select today date.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1403,8 +1392,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1421,7 +1410,7 @@ Example
 
 
 
-### showOtherMonths<span class="type-signature type boolean">Boolean</span>
+### showOtherMonths `boolean`
 {:#members:showothermonths}
 
 
@@ -1436,8 +1425,8 @@ It allows to display days in other months of DatePicker calendar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1453,8 +1442,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1471,7 +1460,7 @@ Example
 
 
 
-### showPopupButton<span class="type-signature type boolean">Boolean</span>
+### showPopupButton `boolean`
 {:#members:showpopupbutton}
 
 
@@ -1486,8 +1475,8 @@ Shows/Hides the date icon button at right side of textbox that is used to displa
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1503,8 +1492,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1521,7 +1510,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -1536,8 +1525,8 @@ DatePicker input is displayed in rounded corner style when this property is set 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1553,8 +1542,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1571,7 +1560,7 @@ Example
 
 
 
-### showTooltip<span class="type-signature type boolean">Boolean</span>
+### showTooltip `boolean`
 {:#members:showtooltip}
 
 
@@ -1586,8 +1575,8 @@ Specifies the property value as true. It displays the tooltip when hovering on t
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1603,8 +1592,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1621,7 +1610,7 @@ Example
 
 
 
-### specialDates<span class="type-signature type object">object</span>
+### specialDates `object`
 {:#members:specialdates}
 
 
@@ -1636,8 +1625,8 @@ Specifies the special dates in DatePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1653,8 +1642,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1672,7 +1661,7 @@ $("#datepicker").ejDatePicker({specialDates:window.spldays});
 
 
 
-### startDay<span class="type-signature type number">Number</span>
+### startDay `number`
 {:#members:startday}
 
 
@@ -1687,8 +1676,8 @@ Specifies the start day of the week in DatePicker calendar.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1704,8 +1693,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1722,7 +1711,7 @@ Example
 
 
 
-### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### startLevel `string / enum`
 {:#members:startlevel}
 
 
@@ -1737,8 +1726,8 @@ Specifies the start level view in DatePicker calendar. See <a href="global.html#
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1754,8 +1743,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1772,7 +1761,7 @@ Example
 
 
 
-### stepMonths<span class="type-signature type number">Number</span>
+### stepMonths `number`
 {:#members:stepmonths}
 
 
@@ -1787,8 +1776,8 @@ Specifies the number of months to navigate at one click in next and previous but
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1804,8 +1793,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1820,7 +1809,7 @@ Example
 
 
 
-### tooltipFormat<span class="type-signature type string">String</span>
+### tooltipFormat `string`
 {:#members:tooltipformat}
 
 
@@ -1835,8 +1824,8 @@ Sets formatting to the tooltip.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1852,8 +1841,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1872,7 +1861,7 @@ Example
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -1887,8 +1876,8 @@ Sets the jQuery validation error message in datepicker. This property works when
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1904,8 +1893,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1929,7 +1918,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -1944,8 +1933,8 @@ Sets the jQuery validation rules to the datepicker. This property works when the
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1961,8 +1950,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1983,7 +1972,7 @@ Example
 
 
 
-### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### value `string / dateobject`
 {:#members:value}
 
 
@@ -1998,8 +1987,8 @@ Specifies the selected date.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2015,8 +2004,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2033,7 +2022,7 @@ Example
 
 
 
-### watermarkText<span class="type-signature type string">String</span>
+### watermarkText `string`
 {:#members:watermarktext}
 
 
@@ -2048,8 +2037,8 @@ Specifies the water mark text to be displayed in input text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2065,8 +2054,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2083,7 +2072,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span>
+### width `string`
 {:#members:width}
 
 
@@ -2098,8 +2087,8 @@ Specifies the width of the datepicker input text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2115,8 +2104,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2140,7 +2129,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -2156,8 +2145,8 @@ Disables the DatePicker control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2186,7 +2175,7 @@ $("#datepicker").ejDatePicker("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -2202,8 +2191,8 @@ Enables the DatePicker control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2232,7 +2221,7 @@ $("#datepicker").ejDatePicker("enable");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -2254,8 +2243,8 @@ Returns the current date value in the DatePicker control.
 value
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2284,7 +2273,7 @@ $("#datepicker").ejDatePicker("getValue");
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -2300,8 +2289,8 @@ Hides the DatePicker popup, when in opened state.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2330,7 +2319,7 @@ $("#datepicker").ejDatePicker("hide");
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -2346,8 +2335,8 @@ Opens the DatePicker popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2401,7 +2390,7 @@ Fires before closing the DatePicker popup.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2409,31 +2398,31 @@ Fires before closing the DatePicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event parameters from datepicker.</td>
+<td class="description">returns the event parameters from datepicker.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker popup.</td>
+<td class="description">returns the datepicker popup.</td>
 </tr>
 </tbody>
 </table>
@@ -2441,8 +2430,8 @@ argument.element{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2480,7 +2469,7 @@ Fires when each date is created in the DatePicker popup.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2488,31 +2477,31 @@ Fires when each date is created in the DatePicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.date{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current created date object.</td>
+<td class="description">returns the current created date object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current DOM object of the date from the Calendar.</td>
+<td class="description">returns the current DOM object of the date from the Calendar.</td>
 </tr>
 </tbody>
 </table>
@@ -2520,8 +2509,8 @@ argument.element{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2554,7 +2543,7 @@ Fires before opening the DatePicker popup.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2562,31 +2551,31 @@ Fires before opening the DatePicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event parameters from datepicker.</td>
+<td class="description">returns the event parameters from datepicker.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker popup.</td>
+<td class="description">returns the datepicker popup.</td>
 </tr>
 </tbody>
 </table>
@@ -2594,8 +2583,8 @@ argument.element{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2634,7 +2623,7 @@ Fires when the DatePicker input value is changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2642,31 +2631,31 @@ Fires when the DatePicker input value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datepicker input value.</td>
+<td class="description">returns the datepicker input value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value.</td>
+<td class="description">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -2674,8 +2663,8 @@ argument.prevDate{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2711,7 +2700,7 @@ Fires when DatePicker popup is closed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2719,31 +2708,31 @@ Fires when DatePicker popup is closed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value.</td>
+<td class="description">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value.</td>
+<td class="description">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -2751,8 +2740,8 @@ argument.prevDate{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2788,7 +2777,7 @@ Fires when the DatePicker is created successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2796,19 +2785,19 @@ Fires when the DatePicker is created successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DatePicker model.</td>
+<td class="description">returns the DatePicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2816,8 +2805,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2853,7 +2842,7 @@ Fires when the DatePicker is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2861,19 +2850,19 @@ Fires when the DatePicker is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DatePicker model.</td>
+<td class="description">returns the DatePicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2881,8 +2870,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2918,7 +2907,7 @@ Fires when DatePicker input gets focus.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2926,19 +2915,19 @@ Fires when DatePicker input gets focus.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2946,8 +2935,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2983,7 +2972,7 @@ Fires when DatePicker input looses the focus.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2991,19 +2980,19 @@ Fires when DatePicker input looses the focus.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3011,8 +3000,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3048,7 +3037,7 @@ Fires when DatePicker popup is opened.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3056,31 +3045,31 @@ Fires when DatePicker popup is opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the eventclose.</td>
+<td class="description">returns the name of the eventclose.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value.</td>
+<td class="description">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value.</td>
+<td class="description">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -3088,8 +3077,8 @@ argument.prevDate{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3125,7 +3114,7 @@ Fires when a date is selected from the DatePicker popup.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3133,31 +3122,31 @@ Fires when a date is selected from the DatePicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model.</td>
+<td class="description">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value.</td>
+<td class="description">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value.</td>
+<td class="description">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -3165,8 +3154,8 @@ argument.prevDate{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

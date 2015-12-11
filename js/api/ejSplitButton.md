@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejSplitButton
+description: API reference for ejSplitButton
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: SplitButton, ejSplitButton, syncfusion, SplitButton api 
 ---
 
 # ejSplitButton
@@ -20,22 +20,27 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
+#### Syntax
 
+{% highlight js %}
 
-$(element).ejSplitButton<span class="signature">()</span>
+$(element).ejSplitButton()
 
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -57,10 +62,7 @@ Example
 
 
 
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -95,7 +97,7 @@ Requires
 
 
 
-### arrowPosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### arrowPosition `string`  `enum`
 {:#members:arrowposition}
 
 
@@ -110,8 +112,8 @@ Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -127,8 +129,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -151,7 +153,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-### buttonMode<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### buttonMode `string`  `enum`
 {:#members:buttonmode}
 
 
@@ -166,8 +168,8 @@ Specifies the buttonMode like Split or Dropdown Button.See <a href="global.html#
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -183,8 +185,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -207,7 +209,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-### contentType<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### contentType `string`  `enum`
 {:#members:contenttype}
 
 
@@ -222,8 +224,8 @@ Specifies the contentType of the Split Button.See <a href="global.html#ContentTy
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -239,8 +241,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -261,7 +263,7 @@ $("#sbutton").ejSplitButton({ targetID: "target",width:100, contentType:  ej.Con
 
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -276,8 +278,8 @@ Set the root class for Split Button control theme
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -293,8 +295,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -316,7 +318,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,cssClass: "gradient-li
 
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -331,8 +333,8 @@ Specifies the disabling of Split Button if enabled is set to false.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -348,8 +350,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -371,7 +373,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,enabled:  true });
 
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -386,8 +388,8 @@ Specifies the enableRTL property for Split Button while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -403,8 +405,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -426,7 +428,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
 
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -441,8 +443,8 @@ Specifies the height of the Split Button.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -458,8 +460,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -480,7 +482,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });
 
 
 
-### imagePosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### imagePosition `string`  `enum`
 {:#members:imageposition}
 
 
@@ -495,8 +497,8 @@ Specifies the imagePosition of the Split Button.See imagePositions
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -512,8 +514,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -536,7 +538,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-### prefixIcon<span class="type-signature type string">String</span>
+### prefixIcon `string`
 {:#members:prefixicon}
 
 
@@ -551,8 +553,8 @@ Specifies the image content for Split Button while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -568,8 +570,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -591,7 +593,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonl
 
 
 
-### showRoundedCorner<span class="type-signature type string">String</span>
+### showRoundedCorner `string`
 {:#members:showroundedcorner}
 
 
@@ -606,8 +608,8 @@ Specifies the showRoundedCorner property for Split Button while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -623,8 +625,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -646,7 +648,7 @@ $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: tru
 
 
 
-### size<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### size `string`  `enum`
 {:#members:size}
 
 
@@ -661,8 +663,8 @@ Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSiz
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -678,8 +680,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -701,7 +703,7 @@ Example
 
 
 
-### suffixIcon<span class="type-signature type string">String</span>
+### suffixIcon `string`
 {:#members:suffixicon}
 
 
@@ -716,8 +718,8 @@ Specifies the image content for Split Button while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -733,8 +735,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -756,7 +758,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100,contentType:"imageboth"
 
 
 
-### targetID<span class="type-signature type string">String</span>
+### targetID `string`
 {:#members:targetid}
 
 
@@ -771,8 +773,8 @@ Specifies the list content for Split Button while initialization
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -788,8 +790,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -811,7 +813,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100 });
 
 
 
-### text<span class="type-signature type string">String</span>
+### text `string`
 {:#members:text}
 
 
@@ -826,8 +828,8 @@ Specifies the text content for Split Button while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -843,8 +845,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -866,7 +868,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });
 
 
 
-### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width `string`  `number`
 {:#members:width}
 
 
@@ -881,8 +883,8 @@ Specifies the width of the Split Button.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -898,8 +900,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -928,7 +930,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100 });
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -944,8 +946,8 @@ destroy the split button widget all events bound using this._on will be unbind a
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -984,7 +986,7 @@ $("#sbutton").ejSplitButton("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1000,8 +1002,8 @@ To disable the split button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1040,7 +1042,7 @@ $("#sbutton").ejSplitButton("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1056,8 +1058,8 @@ To Enable the split button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1120,7 +1122,7 @@ Fires before menu of the split button control is opened.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1128,19 +1130,19 @@ Fires before menu of the split button control is opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1148,8 +1150,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1189,7 +1191,7 @@ Fires when Button control is clicked successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1197,13 +1199,13 @@ Fires when Button control is clicked successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from split button
+<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1211,31 +1213,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the button state</td>
+<td class="description">return the button state</td>
 </tr>
 </tbody>
 </table>
@@ -1247,8 +1249,8 @@ status{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1290,7 +1292,7 @@ Fires after Split Button control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1298,13 +1300,13 @@ Fires after Split Button control is created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1312,19 +1314,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splite button model</td>
+<td class="description">returns the splite button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1336,8 +1338,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1379,7 +1381,7 @@ Fires when the Split Button is destroyed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1387,13 +1389,13 @@ Fires when the Split Button is destroyed successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from split button
+<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1401,19 +1403,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1425,8 +1427,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1468,7 +1470,7 @@ Fires when a menu item is Hovered out successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1476,13 +1478,13 @@ Fires when a menu item is Hovered out successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from split button
+<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1490,37 +1492,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the clicked menu item element</td>
+<td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event
+<td class="description">returns the event
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1528,13 +1530,13 @@ event{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 ID{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the menu item id</td>
+<td class="description">return the menu item id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the clicked menu item text</td>
+<td class="description">return the clicked menu item text</td>
 </tr>
 </tbody>
 </table>
@@ -1550,8 +1552,8 @@ Text{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1593,7 +1595,7 @@ Fires when a menu item is Hovered in successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1601,13 +1603,13 @@ Fires when a menu item is Hovered in successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from split button
+<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1615,37 +1617,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the clicked menu item element</td>
+<td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event
+<td class="description">returns the event
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1653,13 +1655,13 @@ event{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 ID{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the menu item id</td>
+<td class="description">return the menu item id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the clicked menu item text</td>
+<td class="description">return the clicked menu item text</td>
 </tr>
 </tbody>
 </table>
@@ -1675,8 +1677,8 @@ Text{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1718,7 +1720,7 @@ Fires when a menu item is clicked successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1726,13 +1728,13 @@ Fires when a menu item is clicked successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from split button
+<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1740,43 +1742,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the split button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the clicked menu item element</td>
+<td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item</td>
+<td class="description">returns the selected item</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event.menuId{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the menu id</td>
+<td class="description">return the menu id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event.menuText{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">return the clicked menu item text</td>
+<td class="description">return the clicked menu item text</td>
 </tr>
 </tbody>
 </table>
@@ -1788,8 +1790,8 @@ event.menuText{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

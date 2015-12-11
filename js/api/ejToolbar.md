@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejToolbar
+description: API reference for ejToolbar
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Toolbar, ejToolbar, syncfusion, Toolbar api 
 ---
 
 # ejToolbar
@@ -17,15 +17,22 @@ The Toolbar control supports displaying a list of tools within a web page. This 
 
 
 
-$(element).ejToolbar<span class="signature">()</span>
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejToolbar()
+
+{% endhighlight %}
 
 
 
 
 
 
-Example
-{:.example}
+
+#### Example
+
 
 
 {% highlight html %}
@@ -68,8 +75,8 @@ Example
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 * module:jQuery
@@ -86,7 +93,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -95,8 +102,8 @@ Requires
 Sets the root class for Toolbar control theme
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -105,8 +112,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -150,7 +157,7 @@ Example
 
 
 
-### dataSource<span class="type-signature type objectarray">ObjectArray</span>
+### dataSource `ObjectArray`
 {:#members:datasource}
 
 
@@ -159,8 +166,8 @@ Example
 Specifies dataSource value for the Toolbar during initialization.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -169,8 +176,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -218,7 +225,7 @@ $("#toolbar1").ejToolbar({ dataSource:  items});
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -227,8 +234,8 @@ $("#toolbar1").ejToolbar({ dataSource:  items});
 Specifies the Toolbar control state.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -237,8 +244,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -282,7 +289,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -291,8 +298,8 @@ Example
 Specifies enableRTL property for the Toolbar during initialization.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -301,8 +308,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -346,7 +353,7 @@ Example
 
 
 
-### enableSeparator<span class="type-signature type boolean">boolean</span>
+### enableSeparator `boolean`
 {:#members:enableseparator}
 
 
@@ -355,8 +362,8 @@ Example
 Specifies the to enableSeparator.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -365,8 +372,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -410,7 +417,7 @@ Example
 
 
 
-### fields<span class="type-signature type string">string</span>
+### fields `string`
 {:#members:fields}
 
 
@@ -419,8 +426,8 @@ Example
 Specifies the mapping fields for the data items of the Toolbar
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -429,8 +436,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -483,7 +490,7 @@ $("#toolbar1").ejToolbar(
 
 
 
-### fields.group<span class="type-signature type string">String</span>
+### fields.group `string`
 {:#members:fields-group}
 
 
@@ -496,7 +503,7 @@ Defines the group name for the item.
 
 
 
-### fields.htmlAttributes<span class="type-signature type object">Object</span>
+### fields.htmlAttributes `object`
 {:#members:fields-htmlattributes}
 
 
@@ -509,7 +516,7 @@ Defines the html attributes such as id, class, styles for the item.
 
 
 
-### fields.id<span class="type-signature type string">String</span>
+### fields.id `string`
 {:#members:fields-id}
 
 
@@ -522,7 +529,7 @@ Defines id for the tag.
 
 
 
-### fields.imageAttributes<span class="type-signature type string">String</span>
+### fields.imageAttributes `string`
 {:#members:fields-imageattributes}
 
 
@@ -535,7 +542,7 @@ Defines the image attributes such as height, width, styles and so on.
 
 
 
-### fields.imageUrl<span class="type-signature type string">String</span>
+### fields.imageUrl `string`
 {:#members:fields-imageurl}
 
 
@@ -548,7 +555,7 @@ Defines the imageURL for the image location.
 
 
 
-### fields.spriteCssClass<span class="type-signature type string">String</span>
+### fields.spriteCssClass `string`
 {:#members:fields-spritecssclass}
 
 
@@ -561,7 +568,7 @@ Defines the sprite css for the image tag.
 
 
 
-### fields.text<span class="type-signature type string">String</span>
+### fields.text `string`
 {:#members:fields-text}
 
 
@@ -574,7 +581,7 @@ Defines the text content for the tag.
 
 
 
-### fields.tooltipText<span class="type-signature type string">String</span>
+### fields.tooltipText `string`
 {:#members:fields-tooltiptext}
 
 
@@ -587,7 +594,7 @@ Defines the tooltip text for the tag.
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -596,8 +603,8 @@ Defines the tooltip text for the tag.
 Specifies the height of the Toolbar.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -606,8 +613,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -650,7 +657,7 @@ Example
 
 
 
-### hide<span class="type-signature type boolean">boolean</span>
+### hide `boolean`
 {:#members:hide}
 
 
@@ -659,8 +666,8 @@ Example
 Specifies the to show or hide.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -669,8 +676,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -714,7 +721,7 @@ Example
 
 
 
-### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive `boolean`
 {:#members:isresponsive}
 
 
@@ -723,8 +730,8 @@ Example
 Enables/Disables the responsive support for RTE control toolbar items during the window resizing time.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -733,8 +740,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -778,7 +785,7 @@ Example
 
 
 
-### orientation<span class="type-signature type enum">Enum</span> <span class="type-signature type string">String</span>
+### orientation `enum`  `string`
 {:#members:orientation}
 
 
@@ -787,8 +794,8 @@ Example
 Specifies the to toolbar orientation.See orientation
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -797,8 +804,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -842,7 +849,7 @@ Example
 
 
 
-### query<span class="type-signature type object">object</span>
+### query `object`
 {:#members:query}
 
 
@@ -851,8 +858,8 @@ Example
 Specifies Specifies the query to retrieve the data from the online server. The query is used only when the online dataSource is used.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -861,8 +868,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -917,7 +924,7 @@ var query = ej.Query()
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -926,8 +933,8 @@ var query = ej.Query()
 Specifies showRoundedCorner property for the Toolbar during initialization.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -936,8 +943,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -985,7 +992,7 @@ Example
 
 
 
-### deselectItem<span class="signature">()</span>
+### deselectItem()
 {:#methods:deselectitem}
 
 
@@ -995,8 +1002,8 @@ To Deselect the Toolbar item
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1040,7 +1047,7 @@ $("#toolbar1").ejToolbar("deselectItem",$("li")[3]); //Deselect the Toolbar item
 
 
 
-### deselectItemByID<span class="signature">()</span>
+### deselectItemByID()
 {:#methods:deselectitembyid}
 
 
@@ -1050,8 +1057,8 @@ To Deselect the Toolbar item by id
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1095,7 +1102,7 @@ $("#toolbar1").ejToolbar("deselectItemByID","left"); // To Deselect the Toolbar 
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -1105,8 +1112,8 @@ destroy the Toolbar widget all events bound using this._on will be unbind automa
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1152,7 +1159,7 @@ var toolbarObj = $("#toolbar1").data("ejToolbar");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1162,8 +1169,8 @@ To Disable all item in the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1206,7 +1213,7 @@ $("#toolbar1").ejToolbar("disable"); //Disable all item in the Toolbar
 
 
 
-### disableItem<span class="signature">()</span>
+### disableItem()
 {:#methods:disableitem}
 
 
@@ -1216,8 +1223,8 @@ To disable an item the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1260,7 +1267,7 @@ $("#toolbar1").ejToolbar("disableItem",$("li")[3]);// to disable the third item 
 
 
 
-### disableItemByID<span class="signature">()</span>
+### disableItemByID()
 {:#methods:disableitembyid}
 
 
@@ -1270,8 +1277,8 @@ To Disable the Toolbar item by item id in the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1314,7 +1321,7 @@ $("#toolbar1").ejToolbar("disableItemByID","left"); //Disable the Toolbar item b
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1324,8 +1331,8 @@ To enable all item in the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1368,7 +1375,7 @@ $("#toolbar1").ejToolbar("enable"); //enable all item in the Toolbar
 
 
 
-### enableItem<span class="signature">()</span>
+### enableItem()
 {:#methods:enableitem}
 
 
@@ -1378,8 +1385,8 @@ To enable an item the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1422,7 +1429,7 @@ $("#toolbar1").ejToolbar("enableItem",$("li")[3]);// to enable the third item in
 
 
 
-### enableItemByID<span class="signature">()</span>
+### enableItemByID()
 {:#methods:enableitembyid}
 
 
@@ -1432,8 +1439,8 @@ To Disable the Toolbar item by item id in the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1476,7 +1483,7 @@ $("#toolbar1").ejToolbar("enableItemByID","left"); //Disable the Toolbar item by
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -1486,8 +1493,8 @@ To hide the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1560,7 +1567,7 @@ $("#toolbar1").ejToolbar("hide");// to hide the toolbar
 
 
 
-### removeItem<span class="signature">()</span>
+### removeItem()
 {:#methods:removeitem}
 
 
@@ -1570,8 +1577,8 @@ To Remove the Toolbar item
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1614,7 +1621,7 @@ $("#toolbar1").ejToolbar("removeItem",$("li")[3]); // Remove the Toolbar item
 
 
 
-### removeItemByID<span class="signature">()</span>
+### removeItemByID()
 {:#methods:removeitembyid}
 
 
@@ -1624,8 +1631,8 @@ To Remove the Toolbar item by id
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1668,7 +1675,7 @@ $("#toolbar1").ejToolbar("removeItemByID","left"); // Remove the Toolbar item by
 
 
 
-### selectItem<span class="signature">()</span>
+### selectItem()
 {:#methods:selectitem}
 
 
@@ -1678,8 +1685,8 @@ To Select the Toolbar item
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1722,7 +1729,7 @@ $("#toolbar1").ejToolbar("selectItem",$("li")[3]);//Select the Toolbar item.
 
 
 
-### selectItemByID<span class="signature">()</span>
+### selectItemByID()
 {:#methods:selectitembyid}
 
 
@@ -1732,8 +1739,8 @@ To Select the Toolbar item by id
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1776,7 +1783,7 @@ $("#toolbar1").ejToolbar("selectItemByID","left");//Select the Toolbar item by i
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -1786,8 +1793,8 @@ To show the Toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1847,7 +1854,7 @@ Fires after Toolbar control is clicked.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1855,13 +1862,13 @@ Fires after Toolbar control is clicked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Toolbar
+<td class="description">Event parameters from Toolbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1869,37 +1876,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Toolbar model</td>
+<td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the Toolbar state</td>
+<td class="description">return the Toolbar state</td>
 </tr>
 </tbody>
 </table>
@@ -1909,8 +1916,8 @@ status{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1968,7 +1975,7 @@ Fires after Toolbar control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1976,13 +1983,13 @@ Fires after Toolbar control is created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Toolbar
+<td class="description">Event parameters from Toolbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1990,19 +1997,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Toolbar model</td>
+<td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2012,8 +2019,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2071,7 +2078,7 @@ Fires when the Toolbar is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2079,13 +2086,13 @@ Fires when the Toolbar is destroyed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Toolbar
+<td class="description">Event parameters from Toolbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2093,19 +2100,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Toolbar model</td>
+<td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2115,8 +2122,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2174,7 +2181,7 @@ Fires after Toolbar control is itemHovered.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2182,13 +2189,13 @@ Fires after Toolbar control is itemHovered.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Toolbar
+<td class="description">Event parameters from Toolbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2196,37 +2203,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Toolbar model</td>
+<td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the Toolbar state</td>
+<td class="description">return the Toolbar state</td>
 </tr>
 </tbody>
 </table>
@@ -2236,8 +2243,8 @@ status{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2295,7 +2302,7 @@ Fires after Toolbar control is itemLeave.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2303,13 +2310,13 @@ Fires after Toolbar control is itemLeave.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Toolbar
+<td class="description">Event parameters from Toolbar
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2317,37 +2324,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Toolbar model</td>
+<td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target of the current object.</td>
+<td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the Toolbar state</td>
+<td class="description">return the Toolbar state</td>
 </tr>
 </tbody>
 </table>
@@ -2357,8 +2364,8 @@ status{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

@@ -1,42 +1,33 @@
 ---
 layout: post
 title: ejTile
+description: API reference for ejTile
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Tile, ejTile, syncfusion, Tile api 
 ---
 
 # ejTile
 
 
 
-
 The Web Tiles are simple, opaque rectangles or squares and they are arrayed on the start screen in a grid-like pattern. Tapping or selecting a Tile, launches the app or does some other action that is represented by the Tile. Tiles are arranged in a group separated by columns that looks like a start screen of a device and it can be either static or live.
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejTile()
+
+{% endhighlight %}
 
 
 
 
 
+#### Example
 
-
-
-$(element).ejTile<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -48,15 +39,7 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 </script>{% endhighlight %}
 
 
-
-
-
-
-
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -88,7 +71,7 @@ Requires
 
 
 
-### badge<span class="type-signature type object">object</span>
+### badge `object`
 {:#members:badge}
 
 
@@ -110,7 +93,7 @@ Section for badge specific functionalities.
 
 
 
-### badge.enabled<span class="type-signature type boolean">boolean</span>
+### badge.enabled `boolean`
 {:#members:badge-enabled}
 
 
@@ -125,8 +108,8 @@ Specifies whether to enable badge or not.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -142,8 +125,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -154,7 +137,9 @@ Example
 <script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled: true } }); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -163,7 +148,8 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 // Get the enabled API value.
  $("#tile").ejTile("option", "badge.enabled");                  
 // Set the enabled API
-$("#tile").ejTile("option", "badge.enabled", true);            {% endhighlight %}
+$("#tile").ejTile("option", "badge.enabled", true);          
+  {% endhighlight %}
 
 
 
@@ -171,7 +157,7 @@ $("#tile").ejTile("option", "badge.enabled", true);            {% endhighlight %
 
 
 
-### badge.maxValue<span class="type-signature type number">number</span>
+### badge.maxValue `number`
 {:#members:badge-maxvalue}
 
 
@@ -186,8 +172,8 @@ Specifies maximum value for tile badge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -203,8 +189,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -224,7 +210,9 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 // Get the maxValue API value.
  $("#tile").ejTile("option", "badge.maxValue");                 
 // Set the maxValue API
-$("#tile").ejTile("option", "badge.maxValue", 3);            {% endhighlight %}
+$("#tile").ejTile("option", "badge.maxValue", 3);           
+
+ {% endhighlight %}
 
 
 
@@ -232,7 +220,7 @@ $("#tile").ejTile("option", "badge.maxValue", 3);            {% endhighlight %}
 
 
 
-### badge.minValue<span class="type-signature type number">number</span>
+### badge.minValue `number`
 {:#members:badge-minvalue}
 
 
@@ -247,8 +235,8 @@ Specifies minimum value for tile badge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -264,8 +252,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -285,7 +273,9 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 // Get the minValue API value.
  $("#tile").ejTile("option", "badge.minValue");                 
 // Set the minValue API
-$("#tile").ejTile("option", "badge.minValue", 5);            {% endhighlight %}
+$("#tile").ejTile("option", "badge.minValue", 5);           
+
+ {% endhighlight %}
 
 
 
@@ -293,7 +283,7 @@ $("#tile").ejTile("option", "badge.minValue", 5);            {% endhighlight %}
 
 
 
-### badge.text<span class="type-signature type string">string</span>
+### badge.text `string`
 {:#members:badge-text}
 
 
@@ -308,8 +298,8 @@ Specifies text instead of number for tile badge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -325,8 +315,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -337,7 +327,8 @@ Example
 <script> 
 // Create Tile control 
 $("#tile").ejTile({imageUrl: "themes/sample/tile/people.png", badge: { enabled: true, text:"ten" } }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -346,7 +337,8 @@ $("#tile").ejTile({imageUrl: "themes/sample/tile/people.png", badge: { enabled: 
 // Get the badge text API value.
  $("#tile").ejTile("option", "badge.text");                     
 // Set the badge text API
-$("#tile").ejTile("option", "badge.text", "ten");            {% endhighlight %}
+$("#tile").ejTile("option", "badge.text", "ten");            
+{% endhighlight %}
 
 
 
@@ -354,7 +346,7 @@ $("#tile").ejTile("option", "badge.text", "ten");            {% endhighlight %}
 
 
 
-### badge.value<span class="type-signature type number">number</span>
+### badge.value `number`
 {:#members:badge-value}
 
 
@@ -369,8 +361,8 @@ Sets value for tile badge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -386,8 +378,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -415,7 +407,7 @@ $("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
 
 
 
-### captionTemplateId<span class="type-signature type string">string</span>
+### captionTemplateId `string`
 {:#members:captiontemplateid}
 
 
@@ -430,8 +422,8 @@ Specifies the tile caption in outside template content.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -447,8 +439,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -478,7 +470,7 @@ $("#tile").ejTile("option", "captionTemplateId", "sample");            {% endhig
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -493,8 +485,8 @@ Sets the root class for Tile theme. This cssClass API helps to use custom skinni
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -510,8 +502,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -539,7 +531,7 @@ $("#tile").ejTile("option", "cssClass", "customclass");            {% endhighlig
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -554,8 +546,8 @@ Saves current model value to browser cookies for state maintains. While refreshi
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -571,8 +563,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -600,7 +592,7 @@ $("#tile").ejTile("option", "enablePersistence", true);            {% endhighlig
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -615,8 +607,8 @@ Customize the tile size height.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -632,8 +624,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -661,7 +653,7 @@ $("#tile").ejTile("option", "height", 300);            {% endhighlight %}
 
 
 
-### imageClass<span class="type-signature type string">string</span>
+### imageClass `string`
 {:#members:imageclass}
 
 
@@ -676,8 +668,8 @@ Specifies Tile imageclass, using this property we can give images for each tile 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -693,8 +685,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -720,7 +712,8 @@ background-image:url("themes/sample/tile/people.png");
 // Get the imageClass API value.
  $("#tile").ejTile("option", "imageClass");                     
 // Set the imageClass API
-$("#tile").ejTile("option", "imageClass", "sample");            {% endhighlight %}
+$("#tile").ejTile("option", "imageClass", "sample");           
+ {% endhighlight %}
 
 
 
@@ -728,7 +721,7 @@ $("#tile").ejTile("option", "imageClass", "sample");            {% endhighlight 
 
 
 
-### imagePosition<span class="type-signature type enum">enum</span>
+### imagePosition `enum`
 {:#members:imageposition}
 
 
@@ -743,8 +736,8 @@ Specifies the position of tile image.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -760,8 +753,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -789,7 +782,7 @@ $("#tile").ejTile("option", "imagePosition", "right");            {% endhighligh
 
 
 
-### imageTemplateId<span class="type-signature type string">string</span>
+### imageTemplateId `string`
 {:#members:imagetemplateid}
 
 
@@ -804,8 +797,8 @@ Specifies the tile image in outside template content.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -821,8 +814,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -852,7 +845,7 @@ $("#tile").ejTile("option", "imageTemplateId", "sample");            {% endhighl
 
 
 
-### imageUrl<span class="type-signature type string">string</span>
+### imageUrl `string`
 {:#members:imageurl}
 
 
@@ -867,8 +860,8 @@ Specifies the file name of tile image.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -884,8 +877,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -905,7 +898,8 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png"});
 // Get the imageUrl API value.
  $("#tile").ejTile("option", "imageUrl");                       
 // Set the imageUrl API
-$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");            {% endhighlight %}
+$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");            
+{% endhighlight %}
 
 
 
@@ -913,7 +907,7 @@ $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");       
 
 
 
-### livetile<span class="type-signature type object">object</span>
+### livetile `object`
 {:#members:livetile}
 
 
@@ -935,7 +929,7 @@ Section for livetile specific functionalities.
 
 
 
-### livetile.enabled<span class="type-signature type boolean">boolean</span>
+### livetile.enabled `boolean`
 {:#members:livetile-enabled}
 
 
@@ -950,8 +944,8 @@ Specifies whether to enable livetile or not.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -967,8 +961,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -988,7 +982,8 @@ $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageUrl:['
 // Get the liveTile enabled API value.
  $("#tile").ejTile("option", "liveTile.enabled");                       
 // Set the liveTile enabled API
-$("#tile").ejTile("option", "liveTile.enabled", true);            {% endhighlight %}
+$("#tile").ejTile("option", "liveTile.enabled", true);           
+ {% endhighlight %}
 
 
 
@@ -996,7 +991,7 @@ $("#tile").ejTile("option", "liveTile.enabled", true);            {% endhighligh
 
 
 
-### livetile.imageClass<span class="type-signature type string">string</span>
+### livetile.imageClass `string`
 {:#members:livetile-imageclass}
 
 
@@ -1011,8 +1006,8 @@ Specifies liveTile images in css classes.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1028,8 +1023,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1063,7 +1058,8 @@ background-image:url("themes/sample/tile/people_1.png");
 // Get the liveTile imageClass API value.
  $("#tile").ejTile("option", "liveTile.imageClass");                    
 // Set the liveTile imageClass API
-$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);            {% endhighlight %}
+$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);           
+ {% endhighlight %}
 
 
 
@@ -1071,7 +1067,7 @@ $("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);     
 
 
 
-### livetile.imageTemplateId<span class="type-signature type string">string</span>
+### livetile.imageTemplateId `string`
 {:#members:livetile-imagetemplateid}
 
 
@@ -1086,8 +1082,8 @@ Specifies liveTile images in templates.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1103,8 +1099,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1130,7 +1126,8 @@ $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageTempla
 // Get the liveTile imageTemplateId API value.
  $("#tile").ejTile("option", "liveTile.imageTemplateId");                       
 // Set the liveTile imageTemplateId API
-$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);            {% endhighlight %}
+$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);         
+   {% endhighlight %}
 
 
 
@@ -1138,7 +1135,7 @@ $("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);
 
 
 
-### livetile.imageUrl<span class="type-signature type string">string</span>
+### livetile.imageUrl `string`
 {:#members:livetile-imageurl}
 
 
@@ -1153,8 +1150,8 @@ Specifies liveTile images in css classes.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1170,8 +1167,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1199,7 +1196,7 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 
 
 
-### livetile.type<span class="type-signature type enum">enum</span>
+### livetile.type `enum`
 {:#members:livetile-type}
 
 
@@ -1214,8 +1211,8 @@ Specifies liveTile type for Tile. i.e flip, slide or carousel
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1231,8 +1228,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1260,7 +1257,7 @@ $("#tile").ejTile("option", "liveTile.type", "carousel");            {% endhighl
 
 
 
-### livetile.updateInterval<span class="type-signature type number">number</span>
+### livetile.updateInterval `number`
 {:#members:livetile-updateinterval}
 
 
@@ -1275,8 +1272,8 @@ Specifies time interval between two successive livetile animation
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1292,8 +1289,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1321,7 +1318,7 @@ $("#tile").ejTile("option", "liveTile.updateInterval", 1000);            {% endh
 
 
 
-### showText<span class="type-signature type boolean">boolean</span>
+### showText `boolean`
 {:#members:showtext}
 
 
@@ -1336,8 +1333,8 @@ Specifies whether the tile text to be shown or hidden.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1353,8 +1350,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1382,7 +1379,7 @@ $("#tile").ejTile("option", "showText", false);            {% endhighlight %}
 
 
 
-### text<span class="type-signature type string">string</span>
+### text `string`
 {:#members:text}
 
 
@@ -1397,8 +1394,8 @@ Changes the text of a tile.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1414,8 +1411,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1443,7 +1440,7 @@ $("#tile").ejTile("option", "text", "Settings");            {% endhighlight %}
 
 
 
-### textAlignment<span class="type-signature type enum">enum</span>
+### textAlignment `enum`
 {:#members:textalignment}
 
 
@@ -1458,8 +1455,8 @@ Aligns the text of a tile. i.e left, right or center.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1475,8 +1472,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1504,7 +1501,7 @@ $("#tile").ejTile("option", "textAlignment", "left");            {% endhighlight
 
 
 
-### tileSize<span class="type-signature type enum">enum</span>
+### tileSize `enum`
 {:#members:tilesize}
 
 
@@ -1519,8 +1516,8 @@ Specifies the size of a tile. i.e small, medium, large or wide.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1536,8 +1533,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1565,7 +1562,7 @@ $("#tile").ejTile("option", "tileSize", "medium");            {% endhighlight %}
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -1580,8 +1577,8 @@ Customize the tile size width.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1597,8 +1594,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1633,7 +1630,7 @@ $("#tile").ejTile("option", "width", 300);            {% endhighlight %}
 
 
 
-### updateTemplate<span class="signature">()</span>
+### updateTemplate()
 {:#methods:updatetemplate}
 
 
@@ -1649,8 +1646,8 @@ Update the image template to another one.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1699,7 +1696,7 @@ Event triggers when the mousedown happens in the tile
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1707,13 +1704,13 @@ Event triggers when the mousedown happens in the tile
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from tile
+<td class="description">Event parameters from tile
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1721,25 +1718,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the tile model</td>
+<td class="description">returns the tile model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current tile text</td>
+<td class="description">returns the current tile text</td>
 </tr>
 </tbody>
 </table>
@@ -1751,8 +1748,8 @@ text{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1792,7 +1789,7 @@ Event triggers when the mouseup happens in the tile
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1800,13 +1797,13 @@ Event triggers when the mouseup happens in the tile
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from tile
+<td class="description">Event parameters from tile
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1814,25 +1811,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the tile model</td>
+<td class="description">returns the tile model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current tile text</td>
+<td class="description">returns the current tile text</td>
 </tr>
 </tbody>
 </table>
@@ -1844,8 +1841,8 @@ text{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

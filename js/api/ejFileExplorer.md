@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejFileExplorer
+description: API reference for ejFileExplorer
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: FileExplorer, ejFileExplorer, syncfusion, FileExplorer api
 ---
 
 # ejFileExplorer
@@ -14,17 +14,13 @@ FileExplorer provides a Windows Explorer-like functionality for any web applicat
 
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejFileExplorer(options)
 
-
-
-
-
-$(element).ejFileExplorer<span class="signature">(options)</span>
-
-
-
+{% endhighlight %}
 
 
 
@@ -34,7 +30,7 @@ $(element).ejFileExplorer<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -42,7 +38,7 @@ $(element).ejFileExplorer<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for FileExplorer.</td>
+<td class="description">settings for FileExplorer.</td>
 </tr>
 </tbody>
 </table>
@@ -50,8 +46,8 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -64,7 +60,9 @@ $('#fileExplorer').ejFileExplorer({
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -72,10 +70,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -156,18 +151,8 @@ Requires
 
 
 
-
-
-
-
-
-### ajaxAction<span class="type-signature type string">string</span>
+### ajaxAction `string`
 {:#members:ajaxaction}
-
-
-
-
-
 
 
 
@@ -176,8 +161,8 @@ Sets the URL of server side ajax handling method that handles file operation lik
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -193,8 +178,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -211,18 +196,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### ajaxDataType<span class="type-signature type string">string</span>
+### ajaxDataType `string`
 {:#members:ajaxdatatype}
 
 Specifies the data type of server side ajax handling method. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * "json"
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -240,7 +225,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### ajaxSettings<span class="type-signature type object">Object</span>
+### ajaxSettings `object`
 {:#members:ajaxsettings}
 
 
@@ -255,8 +240,8 @@ By using ajaxSettings property, you can customize the ajax configurations. Norma
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -272,8 +257,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -292,22 +277,23 @@ ajaxSettings: {
     }
 }
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-### allowMultiSelection<span class="type-signature type boolean">boolean</span>
+### allowMultiSelection `boolean`
 {:#members:allowmultiselection}
 
 The FileExplorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * true
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -321,11 +307,12 @@ allowMultiSelection: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -340,8 +327,8 @@ Sets the root class for FileExplorer theme. This cssClass API allows to use cust
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -357,8 +344,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -380,7 +367,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
 
 
@@ -395,8 +382,8 @@ Enables or disables the resize support in FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -412,8 +399,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -435,7 +422,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -450,8 +437,8 @@ Enables or disables the Right to Left alignment support in FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -467,8 +454,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -490,7 +477,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### fileTypes<span class="type-signature type string">string</span>
+### fileTypes `string`
 {:#members:filetypes}
 
 
@@ -505,8 +492,8 @@ Allows specified type of files only to display in FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -522,8 +509,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -545,7 +532,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### filterSettings<span class="type-signature type object">Object</span>
+### filterSettings `object`
 {:#members:filtersettings}
 
 
@@ -567,7 +554,7 @@ By using filterSettings property, you can customize the search functionality of 
 
 
 
-### filterSettings.caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+### filterSettings.caseSensitiveSearch `boolean`
 {:#members:filtersettings-casesensitivesearch}
 
 
@@ -582,8 +569,8 @@ Enables or disables to perform the filter operation with case sensitive.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -599,8 +586,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -624,7 +611,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### filterSettings.filterType<span class="type-signature type enum">enum</span>
+### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
 
 
@@ -639,8 +626,8 @@ Sets the search filter type. There are several filter types available, such as "
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -656,8 +643,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -681,7 +668,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### gridSettings<span class="type-signature type object">Object</span>
+### gridSettings `object`
 {:#members:gridsettings}
 
 
@@ -703,7 +690,7 @@ By using the gridSettings property, you can customize the grid behavior in the F
 
 
 
-### gridSettings.allowSorting<span class="type-signature type boolean">boolean</span>
+### gridSettings.allowSorting `boolean`
 {:#members:gridsettings-allowsorting}
 
 
@@ -718,8 +705,8 @@ Gets or sets a value that indicates whether to enable the dynamic sorting behavi
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -735,8 +722,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -758,7 +745,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### gridSettings.columns<span class="type-signature type array">array</span>
+### gridSettings.columns `array`
 {:#members:gridsettings-columns}
 
 
@@ -773,8 +760,8 @@ Gets or sets an object that indicates to render the grid with specified columns.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -790,8 +777,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -813,7 +800,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -828,8 +815,8 @@ Specifies the height of FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -845,8 +832,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -868,7 +855,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive `boolean`
 {:#members:isresponsive}
 
 
@@ -883,8 +870,8 @@ Enables or disables the responsive support for FileExplorer control during the w
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -900,8 +887,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -925,7 +912,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### layout<span class="type-signature type enum">enum</span>
+### layout `enum`
 {:#members:layout}
 
 
@@ -940,8 +927,8 @@ Sets the file view type. There are two view types available, such as grid, tile.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -957,8 +944,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -980,7 +967,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -995,8 +982,8 @@ Sets the culture in FileExplorer.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1012,8 +999,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1031,18 +1018,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### maxHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### maxHeight `string`  `number`
 {:#members:maxheight}
 
 Sets the maximum height of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * null
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1059,18 +1046,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### maxWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### maxWidth `string`  `number`
 {:#members:maxwidth}
 
 Sets the maximum width of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * null
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1087,18 +1074,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### minHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### minHeight `string`  `number`
 {:#members:minheight}
 
 Sets the minimum height of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * 250
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1115,18 +1102,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### minWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### minWidth `string`  `number`
 {:#members:minwidth}
 
 Sets the minimum width of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * 400
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1144,7 +1131,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### path<span class="type-signature type string">string</span>
+### path `string`
 {:#members:path}
 
 
@@ -1159,8 +1146,8 @@ The property path denotes the filesystem path that are to be explored. The path 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1176,8 +1163,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1194,18 +1181,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### selectedFolder<span class="type-signature type string">String</span>
+### selectedFolder `string`
 {:#members:selectedfolder}
 
 The selectedFolder is used to select the specified folder of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * ""
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1223,18 +1210,18 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### selectedItems<span class="type-signature type string">String</span><span class="type-signature type array">Array</span>
+### selectedItems `string` `array`
 {:#members:selecteditems}
 
 The selectedItems is used to select the specified items (file, folder) of FileExplorer control. 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 * ""
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1252,7 +1239,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### showContextMenu<span class="type-signature type boolean">boolean</span>
+### showContextMenu `boolean`
 {:#members:showcontextmenu}
 
 
@@ -1267,8 +1254,8 @@ Enables or disables the context menu option in FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1284,8 +1271,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1307,7 +1294,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### showFooter<span class="type-signature type boolean">boolean</span>
+### showFooter `boolean`
 {:#members:showfooter}
 
 
@@ -1322,8 +1309,8 @@ Enables or disables the footer in FileExplorer control. The footer element displ
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1339,8 +1326,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1364,7 +1351,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### showToolbar<span class="type-signature type boolean">boolean</span>
+### showToolbar `boolean`
 {:#members:showtoolbar}
 
 
@@ -1379,8 +1366,8 @@ Shows or disables the toolbar in FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1396,8 +1383,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1419,7 +1406,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### showNavigationPane<span class="type-signature type boolean">boolean</span>
+### showNavigationPane `boolean`
 {:#members:shownavigationpane}
 
 
@@ -1434,8 +1421,8 @@ Enables or disables the navigation pane in FileExplorer control. The navigation 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1451,8 +1438,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1474,7 +1461,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### tools<span class="type-signature type object">object</span>
+### tools `object`
 {:#members:tools}
 
 
@@ -1489,8 +1476,8 @@ The tools property is used to configure and group required toolbar items in File
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1506,8 +1493,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1537,7 +1524,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### toolsList<span class="type-signature type array">array</span>
+### toolsList `array`
 {:#members:toolslist}
 
 
@@ -1552,8 +1539,8 @@ The toolsList property is used to arrange the toolbar items in the FileExplorer 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1569,8 +1556,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1592,7 +1579,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### uploadSettings<span class="type-signature type object">Object</span>
+### uploadSettings `object`
 {:#members:uploadsettings}
 
 
@@ -1614,7 +1601,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 
-### uploadSettings.maxFileSize<span class="type-signature type number">number</span>
+### uploadSettings.maxFileSize `number`
 {:#members:uploadSettings-maxfilesize}
 
 
@@ -1629,8 +1616,8 @@ Specifies the maximum file size allowed to upload. It accepts the value in bytes
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1646,8 +1633,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1669,7 +1656,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### uploadSettings.allowMultipleFile<span class="type-signature type boolean">boolean</span>
+### uploadSettings.allowMultipleFile `boolean`
 {:#members:uploadSettings-allowmultiplefile}
 
 
@@ -1684,8 +1671,8 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1701,8 +1688,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1718,7 +1705,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 }); 
 </script>{% endhighlight %}
 
-### uploadSettings.autoUpload<span class="type-signature type boolean">boolean</span>
+### uploadSettings.autoUpload `boolean`
 {:#members:uploadSettings-autoupload}
 
 
@@ -1733,8 +1720,8 @@ Enables or disables the auto upload option while uploading files in FileExplorer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1750,8 +1737,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1773,7 +1760,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width `string`  `number`
 {:#members:width}
 
 
@@ -1788,8 +1775,8 @@ Specifies the width of FileExplorer control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1805,8 +1792,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1830,14 +1817,14 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### adjustSize<span class="signature">()</span>
+### adjustSize()
 {:#methods:adjustsize}
 
 
 Refresh the size of FileExplorer control.
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1857,14 +1844,14 @@ feObj.adjustSize(); // refresh the size of file explorer
 
 
 
-### disableMenuItem<span class="signature">()</span>
+### disableMenuItem(item)
 {:#methods:disablemenuitem}
 
 
 Disable the particular context menu item.
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1884,7 +1871,7 @@ feObj.disableMenuItem("Upload"); // disable upload option
 
 
 
-### disableToolbarItem<span class="signature">()</span>
+### disableToolbarItem(item)
 {:#methods:disabletoolbaritem}
 
 
@@ -1900,8 +1887,8 @@ Disable the particular toolbar item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1922,13 +1909,13 @@ feObj.disableToolbarItem("Searchbar"); // disable search bar
 
 
 
-### enableMenuItem<span class="signature">()</span>
+### enableMenuItem(item)
 {:#methods:enablemenuitem}
 
 Enable the particular context menu item.
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1948,7 +1935,7 @@ feObj.enableMenuItem("Upload"); // enable upload option in context menu
 
 
 
-### enableToolbarItem<span class="signature">()</span>
+### enableToolbarItem(item)
 {:#methods:enabletoolbaritem}
 
 
@@ -1964,8 +1951,8 @@ Enable the particular toolbar item
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1985,14 +1972,14 @@ feObj.enableToolbarItem("Searchbar"); // enable search bar
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
 Refresh the content of the selected folder in FileExplorer control.
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2012,7 +1999,7 @@ feObj.refresh(); // refresh the content of selected folder
 
 
 
-### removeToolbarItem<span class="signature">()</span>
+### removeToolbarItem(item)
 {:#methods:removetoolbaritem}
 
 
@@ -2028,8 +2015,8 @@ Remove the particular toolbar item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2063,7 +2050,7 @@ Fires before the ajax request is performed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2071,13 +2058,13 @@ Fires before the ajax request is performed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2085,25 +2072,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ajax response data</td>
+<td class="description">returns the ajax response data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description">returns the FileExplorer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2114,8 +2101,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2145,7 +2132,7 @@ Fires before downloading the files.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2153,13 +2140,13 @@ Fires before downloading the files.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2167,37 +2154,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the downloaded file names.</td>
+<td class="description">returns the downloaded file names.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of currently opened item.</td>
+<td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2208,8 +2195,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2240,7 +2227,7 @@ Fires before files or folders open.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2248,13 +2235,13 @@ Fires before files or folders open.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2262,37 +2249,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the opened item type.</td>
+<td class="description">returns the opened item type.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of currently opened item.</td>
+<td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2304,8 +2291,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2335,7 +2322,7 @@ Fires before uploading the files.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2343,13 +2330,13 @@ Fires before uploading the files.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2357,31 +2344,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of currently opened item.</td>
+<td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2393,8 +2380,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2424,7 +2411,7 @@ Fires when file or folder is copied successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2432,13 +2419,13 @@ Fires when file or folder is copied successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2446,37 +2433,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of copied file/folder.</td>
+<td class="description">returns the name of copied file/folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sourcePath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the source path.</td>
+<td class="description">returns the source path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2488,8 +2475,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2519,7 +2506,7 @@ Fires when new folder is created sucessfully in file system.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2527,13 +2514,13 @@ Fires when new folder is created sucessfully in file system.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2541,31 +2528,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ajax response data</td>
+<td class="description">returns the ajax response data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description">returns the FileExplorer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description">returns the selected item details</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2577,8 +2564,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2608,7 +2595,7 @@ Fires when file or folder is cut successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2616,13 +2603,13 @@ Fires when file or folder is cut successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2630,37 +2617,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of moved file or folder.</td>
+<td class="description">returns the name of moved file or folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sourcePath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the source path.</td>
+<td class="description">returns the source path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2672,8 +2659,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2703,7 +2690,7 @@ Fires when the file view type is changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2711,13 +2698,13 @@ Fires when the file view type is changed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2725,25 +2712,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 layoutType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current view type.</td>
+<td class="description">returns the current view type.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2755,8 +2742,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2786,7 +2773,7 @@ Fires when files are successfully opened.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2794,13 +2781,13 @@ Fires when files are successfully opened.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2808,37 +2795,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the opened item type.</td>
+<td class="description">returns the opened item type.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of currently opened item.</td>
+<td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2850,8 +2837,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2881,7 +2868,7 @@ Fires when a file or folder is pasted successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2889,13 +2876,13 @@ Fires when a file or folder is pasted successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2903,43 +2890,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of moved file or folder.</td>
+<td class="description">returns the name of moved file or folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 targetFolder{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target folder item details.</td>
+<td class="description">returns the target folder item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 targetPath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the target path.</td>
+<td class="description">returns the target path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2951,8 +2938,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2982,7 +2969,7 @@ Fires when file or folder is deleted sucessfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2990,13 +2977,13 @@ Fires when file or folder is deleted sucessfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3004,43 +2991,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ajax response data.</td>
+<td class="description">returns the ajax response data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the names of deleted items.</td>
+<td class="description">returns the names of deleted items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of deleted item.</td>
+<td class="description">returns the path of deleted item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details.</td>
+<td class="description">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3052,8 +3039,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3082,7 +3069,7 @@ Fires when resizing is performed for FileExplorer.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3090,13 +3077,13 @@ Fires when resizing is performed for FileExplorer.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3104,25 +3091,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse move event args.</td>
+<td class="description">returns the mouse move event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3134,8 +3121,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3164,7 +3151,7 @@ Fires when resizing is started for FileExplorer.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3172,13 +3159,13 @@ Fires when resizing is started for FileExplorer.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3186,25 +3173,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse down event args.</td>
+<td class="description">returns the mouse down event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3216,8 +3203,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3246,7 +3233,7 @@ Fires this event when the resizing is stopped for FileExplorer.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3254,13 +3241,13 @@ Fires this event when the resizing is stopped for FileExplorer.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3268,25 +3255,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse leave event args.</td>
+<td class="description">returns the mouse leave event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3298,8 +3285,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3329,7 +3316,7 @@ Fires when the items from grid view or tile view of FileExplorer control is sele
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3337,13 +3324,13 @@ Fires when the items from grid view or tile view of FileExplorer control is sele
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
+<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3351,37 +3338,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model.</td>
+<td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of clicked item.</td>
+<td class="description">returns the name of clicked item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of clicked item.</td>
+<td class="description">returns the path of clicked item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description">returns the selected item details</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3393,8 +3380,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

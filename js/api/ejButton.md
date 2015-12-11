@@ -1,18 +1,23 @@
 ---
 layout: post
 title: ejButton
+description: API reference for ejButton
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Button, ejButton, syncfusion, button api
 ---
 
 # ejButton
 
 Custom Design for Html Button control.
 
+#### Syntax
 
-$(element).ejButton<span class="signature">(options)</span>
+{% highlight js %}
+
+$(element).ejButton(options)
+
+{% endhighlight %}
 
 
 <table class="params">
@@ -20,7 +25,7 @@ $(element).ejButton<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -28,15 +33,13 @@ $(element).ejButton<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for button</td>
+<td class="description">settings for button</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -48,10 +51,7 @@ $('#button1').ejButton();
 </script>{% endhighlight %}
 
 
-
-
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -66,7 +66,7 @@ Requires
 
 
 
-### contentType<span class="type-signature type enum">enum</span>
+### contentType `enum`
 {:#members:contenttype}
 
 
@@ -75,8 +75,8 @@ Requires
 Specifies the contentType of the Button. See <a href="global.html#ContentType">ContentType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -85,8 +85,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -101,7 +101,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -110,8 +110,8 @@ Example
 Specify the cssClass to button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -120,8 +120,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -136,7 +136,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -145,8 +145,8 @@ Example
 Specifies the button control state.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -155,8 +155,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -171,7 +171,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -180,8 +180,8 @@ Example
 Specify the Right to Left direction to button
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -190,8 +190,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -208,7 +208,7 @@ Example
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -217,8 +217,8 @@ Example
 Specifies the height of the Button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -227,8 +227,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -243,7 +243,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -252,8 +252,8 @@ Example
 Specifies the HTML Attributes of the ejButton
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -262,8 +262,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -278,7 +278,7 @@ Example
 
 
 
-### imagePosition<span class="type-signature type enum">enum</span>
+### imagePosition `enum`
 {:#members:imageposition}
 
 
@@ -287,8 +287,8 @@ Example
 Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See <a href="global.html#ImagePosition">ImagePosition</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -297,8 +297,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -318,7 +318,7 @@ Example
 
 
 
-### prefixIcon<span class="type-signature type string">string</span>
+### prefixIcon `string`
 {:#members:prefixicon}
 
 
@@ -327,8 +327,8 @@ Example
 Specifies the primary icon for Button. This is applicable for the content type&rsquo;s imageOnly, textandimage, imagetextimage and imageboth.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -337,8 +337,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -357,7 +357,7 @@ Example
 
 
 
-### repeatButton<span class="type-signature type boolean">boolean</span>
+### repeatButton `boolean`
 {:#members:repeatbutton}
 
 
@@ -366,8 +366,8 @@ Example
 Convert the button as repeat button. It raises the 'Click' event repeattedly from the it is pressed until it is released.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -376,8 +376,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -392,7 +392,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -401,8 +401,8 @@ Example
 Specify the rounded corner to button
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -411,8 +411,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -427,7 +427,7 @@ Example
 
 
 
-### size<span class="type-signature type enum">enum</span>
+### size `enum`
 {:#members:size}
 
 
@@ -436,8 +436,8 @@ Example
 Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSize</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -446,8 +446,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -462,7 +462,7 @@ Example
 
 
 
-### suffixIcon<span class="type-signature type string">string</span>
+### suffixIcon `string`
 {:#members:suffixicon}
 
 
@@ -471,8 +471,8 @@ Example
 Specifies the secondary icon for Button. This is applicable for the content type&rsquo;s imagetextimage and imageboth.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -481,8 +481,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -502,7 +502,7 @@ Example
 
 
 
-### text<span class="type-signature type string">string</span>
+### text `string`
 {:#members:text}
 
 
@@ -511,8 +511,8 @@ Example
 Specifies the text content for Button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -521,8 +521,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -537,7 +537,7 @@ Example
 
 
 
-### timeInterval<span class="type-signature type string">string</span>
+### timeInterval `string`
 {:#members:timeinterval}
 
 
@@ -546,8 +546,8 @@ Example
 Specified the timeInterval between two 'click' events while button in repeat button mode.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -556,8 +556,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -574,7 +574,7 @@ Example
 
 
 
-### type<span class="type-signature type enum">enum</span> <span class="type-signature type string">string</span>
+### type `enum`  `string`
 {:#members:type}
 
 
@@ -583,8 +583,8 @@ Example
 Specifies the Type of the Button. See <a href="global.html#ButtonType">ButtonType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -593,8 +593,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -609,7 +609,7 @@ Example
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -618,8 +618,8 @@ Example
 Specifies the width of the Button.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -628,8 +628,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -648,7 +648,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -658,8 +658,8 @@ destroy the button widget all events bound using this._on will be unbind automat
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -687,7 +687,7 @@ $("#button1").ejButton("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -697,8 +697,8 @@ To disable the button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -726,7 +726,7 @@ $("#button1").ejButton("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -736,8 +736,8 @@ To enable the button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -782,7 +782,7 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -790,13 +790,13 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -804,25 +804,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the button model</td>
+<td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the button state</td>
+<td class="description">return the button state</td>
 </tr>
 </tbody>
 </table>
@@ -832,8 +832,8 @@ status{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -865,7 +865,7 @@ Fires after Button control is created.If the user want to perform any operation 
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -873,13 +873,13 @@ Fires after Button control is created.If the user want to perform any operation 
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -887,19 +887,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the button model</td>
+<td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -909,8 +909,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -942,7 +942,7 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -950,13 +950,13 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -964,19 +964,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the button model</td>
+<td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -986,8 +986,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
