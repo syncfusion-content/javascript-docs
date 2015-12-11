@@ -1,17 +1,17 @@
----
+﻿---
 layout: post
 title: API reference for ejAutocomplete
 description: What are the options, methods and events available in Essential JavaScript Autocomplete.
 documentation: API
-keywords: ejAutocomplete, API, Essential JS Autocomplete, Autocomplete
 platform: js
-metaname: 
-metacontent: 
+keywords: ejAutocomplete, API, Essential JS Autocomplete, Autocomplete
 ---
 
 # ejAutocomplete
 
 The AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
+
+#### Syntax
 
 {% highlight js %}
 		
@@ -19,8 +19,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 {% endhighlight %}
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 		
@@ -34,8 +33,7 @@ Example
 
 {% endhighlight %}
 
-Requires
-{:.require}
+#### Requires
 
 * module:jQuery
 
@@ -51,20 +49,19 @@ Requires
 
 ## Members
 
-### addNewText<span class="type-signature type string">string</span>
+### addNewText `string`
 {:#members:addnewtext}
 
 Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it. 
 
 N> This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/js/api/ejautocomplete#members:allowaddnew)” property is set as “true”.
 
-Default Value:
-{:.param} 
+#### Default Value
 
-“Add New”
+ * “Add New”
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -77,20 +74,18 @@ Example
 
 {% endhighlight %}
 
-### allowAddNew<span class="type-signature type boolean">boolean</span>
+### allowAddNew `boolean`
 {:#members:allowaddnew}
 
 Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display “No suggestions” label in the popup.
 
 N>  This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode”
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
 
 {% highlight js %}
 
@@ -101,20 +96,18 @@ Example
 
 {% endhighlight %}
 
-### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting `boolean`
 {:#members:allowsorting}
 
 Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order. 
 
 {%seealso%} [SortOrder](http://help.syncfusion.com/js/api/global.html#SortOrder) {%endseealso%}
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-true
+ * true
 
-Example 
-{:.example}
+#### Example 
 
 {% highlight js %}
 
@@ -124,18 +117,16 @@ Example
 
 {% endhighlight %}
 
-### autoFocus<span class="type-signature type boolean">boolean</span>
+### autoFocus `boolean`
 {:#members:autofocus}
 
 To focus the items in the suggestion list when the popup is shown. By default first item will be focused. 
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
 
 {% highlight js %}
 
@@ -145,18 +136,17 @@ Example
 
 {% endhighlight %}
 
-### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+### caseSensitiveSearch `boolean`
 {:#members:casesensitivesearch}
 
 Enables or disables the case sensitive search.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -166,18 +156,17 @@ Example
 
 {% endhighlight %}
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 The root class for the **Autocomplete** textbox widget which helps in customizing its theme.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-””
+ * ””
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -187,18 +176,17 @@ Example
 
 {% endhighlight %}
 
-### dataSource<span class="type-signature type JSONobject array">JSONobject/array</span>
+### dataSource `JSONobject/array`
 {:#members:datasource}
 
 The data source contains the list of data for the suggestions list. It can be a string array or json array. 
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-null
+ * null
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -209,18 +197,17 @@ Example
 
 {% endhighlight %}
 
-### delaySuggestionTimeout<span class="type-signature type number">number</span>
+### delaySuggestionTimeout `number`
 {:#members:delaysuggestiontimeout}
 
 The time delay (in milliseconds) after which the suggestion popup will be shown.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-200
+ * 200
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -230,7 +217,7 @@ Example
 
 {% endhighlight %}
 
-### delimiterChar<span class="type-signature type string">string</span>
+### delimiterChar `string`
 {:#members:delimiterchar}
 
 The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search operation. 
@@ -239,13 +226,12 @@ N> 1. This property is applicable only when the “[MultiSelectMode](http://help
 N> 2. The delimiter string should have a single character and must be a symbol. 
 N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any other special character.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-’,’
+ * ’,’
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -256,20 +242,18 @@ Example
 
 {% endhighlight %}
 
-### emptyResultText<span class="type-signature type string">string</span>
+### emptyResultText `string`
 {:#members:emptyresulttext}
 
 The text to be displayed in the popup when there are no suggestions available for the entered text.
 
 N> This property is applicable only when the [showEmptyResultText](http://help.syncfusion.com/js/api/ejautocomplete#members:showemptyresulttext) property set as “true”
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-“No suggestions”
+ * “No suggestions”
 
-Example 
-{:.example}
+#### Example 
 
 {% highlight js %}
 
@@ -279,20 +263,19 @@ Example
 
 {% endhighlight %}
 
-### enableAutoFill<span class="type-signature type boolean">boolean</span>
+### enableAutoFill `boolean`
 {:#members:enableautofill}
 
 Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled. 
 
 N> This property works only when “[filterType](http://help.syncfusion.com/js/api/ejautocomplete#members:filtertype)” property is set as “startswith” 
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -302,18 +285,17 @@ Example
 
 {% endhighlight %}
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 Enables or disables the **Autocomplete** textbox widget.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-true
+ * true
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -323,18 +305,17 @@ Example
 
 {% endhighlight %}
 
-### enableDistinct<span class="type-signature type boolean">boolean</span>
+### enableDistinct `boolean`
 {:#members:enabledistinct}
 
 Enables or disables displaying the duplicate names present in the search result.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -344,20 +325,19 @@ Example
 
 {% endhighlight %}
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true. While refreshing the page, it retains the model value from browser cookies or local storage.
 
 N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -367,18 +347,17 @@ Example
 
 {% endhighlight %}
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Displays the Autocomplete widget’s content from right to left when enabled.
 
-Default Value: 
-{:.param} 
+#### Default Value
 
-false
+ * false
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -388,20 +367,19 @@ Example
 
 {% endhighlight %}
 
-### fields<span class="type-signature type JSONobject">JSONobject</span>
+### fields `JSONobject`
 {:#members:fields}
 
 Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
 
-Default Value:
-{:.param} 
+#### Default Value
 
-null
+ * null
 
 <table>
 <tr>
 <td>fields.category[Deprecated]<br/><br/></td>
-<td>Used to group the suggestion list items. <br/><br/>Note: Since this is deprecated, we suggest you to use fields.groupBy API.<br/><br/></td>
+<td>Used to group the suggestion list items. <br/><br/> N> Since this is deprecated, we suggest you to use fields.groupBy API.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -422,8 +400,8 @@ Used to group the suggestion list items. <br/><br/></td>
 </tr>
 </table>
 
-Example 
-{:.example}
+#### Example 
+
 
 {% highlight js %}
 
@@ -437,18 +415,16 @@ Example
 {% endhighlight %}
 
 
-### filterType<span class="type-signature type string">string</span>
+### filterType `string`
 {:#members:filtertype}
 
 Specifies the search filter type. There are several types of search filter available such as ‘startswith’, ‘contains’, ‘endswith’, ‘lessthan’, ‘lessthanorequal’, ‘greaterthan’, ‘greaterthanorequal’, ‘equal’, ‘notequal’. 
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-ej.filterType.StartsWith
+ * ej.filterType.StartsWith
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -458,18 +434,17 @@ Example
 
 {% endhighlight %}
 
-### height<span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 The height of the Autocomplete textbox.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -479,18 +454,16 @@ Example
 
 {% endhighlight %}
 
-### highlightSearch<span class="type-signature type boolean">boolean</span>
+### highlightSearch `boolean`
 {:#members:highlightsearch}
 
 The search text can be highlighted in the AutoComplete suggestion list when enabled.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-false
+ * false
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -500,18 +473,16 @@ Example
 
 {% endhighlight %}
 
-### itemsCount<span class="type-signature type integer">integer</span>
+### itemsCount `integer`
 {:#members:itemscount}
 
 Number of items to be displayed in the suggestion list.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-0
+* 0
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -521,18 +492,17 @@ Example
 
 {% endhighlight %}
 
-### minCharacter<span class="type-signature type integer">integer</span>
+### minCharacter `integer`
 {:#members:mincharacter}
 
 Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-1
+ * 1
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -542,7 +512,7 @@ Example
 
 {% endhighlight %}
 
-### multiSelectMode<span class="type-signature type enum">enum</span>
+### multiSelectMode `enum`
 {:#members:multiselectmode}
 
 Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
@@ -552,13 +522,11 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 
 {%seealso%} [MultiSelectMode](http://help.syncfusion.com/js/api/global.html#MultiSelectMode) {%endseealso%}
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-ej.MultiSelectMode.None
+ * ej.MultiSelectMode.None
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -568,18 +536,16 @@ Example
 
 {% endhighlight %}
 
-### popupHeight<span class="type-signature type string">string</span>
+### popupHeight `string`
 {:#members:popupheight}
 
 The height of the suggestion list.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-“152px”
+ * “152px”
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -589,18 +555,16 @@ Example
 
 {% endhighlight %}
 
-### popupWidth<span class="type-signature type string">string</span>
+### popupWidth `string`
 {:#members:popupwidth}
 
 The width of the suggestion list.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-“auto”
+ * “auto”
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -610,18 +574,16 @@ Example
 
 {% endhighlight %}
 
-### query<span class="type-signature type ej.Query">ej.Query</span>
+### query `ej.Query`
 {:#members:query}
 
 The query to retrieve the data from the data source.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -641,18 +603,17 @@ Example
 
 {% endhighlight %}
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 Indicates that the autocomplete textbox values can only be readable.
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-false
+ * false
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -667,8 +628,8 @@ Example
 
 Sets the value for the Autocomplete textbox based on the given input key value.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -682,18 +643,17 @@ Example
 
 {% endhighlight %}
 
-### showEmptyResultText<span class="type-signature type boolean">boolean</span>
+### showEmptyResultText `boolean`
 {:#members:showemptyresulttext}
 
 Enables or disables showing the message when there are no suggestions for the entered text.
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-true
+ * true
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -703,18 +663,17 @@ Example
 
 {% endhighlight %}
 
-### showLoadingIcon<span class="type-signature type boolean">boolean</span>
+### showLoadingIcon `boolean`
 {:#members:showloadingicon}
 
 Enables or disables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-true
+ * true
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -724,18 +683,17 @@ Example
 
 {% endhighlight %}
 
-### showPopupButton<span class="type-signature type boolean">boolean</span>
+### showPopupButton `boolean`
 {:#members:showpopupbutton}
 
 Enables the showPopup button in autocomplete textbox. When the Showpopup button is clicked, it displays all the available data from the data source.
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-false
+ * false
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -745,18 +703,17 @@ Example
 
 {% endhighlight %}
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 Enables or disables rounded corner.
 
-Default Value:  
-{:.param}
+#### Default Value 
 
-false
+ * false
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -766,20 +723,18 @@ Example
 
 {% endhighlight %}
 
-### sortOrder<span class="type-signature type enum">enum</span>
+### sortOrder `enum`
 {:#members:sortorder}
 
 Sort order specifies whether the suggestion list values has to be displayed in ascending or descending order. 
 
 {%seealso%} [SortOrder](http://help.syncfusion.com/js/api/global.html#SortOrder) {%endseealso%}
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-ej.SortOrder.Ascending
+ * ej.SortOrder.Ascending
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -789,18 +744,17 @@ Example
 
 {% endhighlight %}
 
-### template<span class="type-signature type string">string</span>
+### template `string`
 {:#members:template}
 
 The template to display the suggestion list items with customized appearance.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -814,18 +768,17 @@ Example
 
 {% endhighlight %}
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 The jQuery validation error message to be displayed on form validation.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -840,18 +793,16 @@ Example
 
 {% endhighlight %}
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 The jQuery validation rules for form validation.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -863,18 +814,17 @@ Example
 
 {% endhighlight %}
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 The value to be displayed in the autocomplete textbox.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -884,18 +834,17 @@ Example
 
 {% endhighlight %}
 
-### visible<span class="type-signature type boolean">boolean</span>
+### visible `boolean`
 {:#members:visible}
 
 Enables or disables the visibility of the autocomplete textbox.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-true
+ * true
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -905,18 +854,17 @@ Example
 
 {% endhighlight %}
 
-### watermarkText<span class="type-signature type string">string</span>
+### watermarkText `string`
 {:#members:watermarktext}
 
 The text to be displayed when the value of the autocomplete textbox is empty.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -926,18 +874,17 @@ Example
 
 {% endhighlight %}
 
-### width<span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 The width of the Autocomplete textbox.
 
-Default Value:  
-{:.param} 
+#### Default Value 
 
-null
+ * null
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -956,8 +903,8 @@ Clears the text in the Autocomplete textbox.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -972,8 +919,8 @@ Destroys the Autocomplete widget.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -988,8 +935,8 @@ Disables the autocomplete widget.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1004,8 +951,8 @@ Enables the autocomplete widget.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1020,8 +967,8 @@ Returns objects (data object) of all the selected items in the autocomplete text
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1036,8 +983,7 @@ Returns the current selected value from the Autocomplete textbox.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -1052,8 +998,7 @@ Search the entered text and show it in the suggestion list if available.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -1068,8 +1013,7 @@ Open up the autocomplete suggestion popup with all list items.
 
 N> This method does not accept any arguments.
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -1089,16 +1033,16 @@ Sets the value of the Autocomplete textbox based on the given key value.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>Key<br/><br/></td>
-<td>string<br/><br/></td>
-<td>The key value of the specific suggestion item.<br/><br/></td>
+<td class="name">Key<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">The key value of the specific suggestion item.<br/><br/></td>
 </tr>
 </table>
 
  N>  This method accepts string as an argument.
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1118,14 +1062,13 @@ Sets the value of the Autocomplete textbox based on the given input text value.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>Text<br/><br/></td>
-<td>string<br/><br/></td>
-<td>The text (label) value of the specific suggestion item.<br/><br/></td>
+<td class="name">Text<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">The text (label) value of the specific suggestion item.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
@@ -1142,8 +1085,8 @@ Triggers when the data requested from AJAX will get successfully loaded in the *
 
  N>  It internally uses jQuery ajaxSuccess event. For details refer [here](http://api.jquery.com/ajaxsuccess/#).
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -1162,8 +1105,8 @@ Triggers when the AJAX requests complete. The request may get failed or succeed.
 
 N> It internally uses jQuery ajaxComplete event. For details refer [here](http://api.jquery.com/ajaxcomplete/#).
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -1182,8 +1125,8 @@ Triggers when the data requested from AJAX get failed.
 
  N>  It internally uses jQuery ajaxError event. For details refer [here](http://api.jquery.com/ajaxerror/#).
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -1207,29 +1150,29 @@ Triggers when the text box value is changed.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">Boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">Object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>String<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">String<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.value<br/><br/></td>
-<td>String<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td class="name">argument.value<br/><br/></td>
+<td class="type">String<br/><br/></td>
+<td class="description">Value of the autocomplete textbox.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1253,24 +1196,24 @@ Triggers after the suggestion popup is closed.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">Object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>String<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">String<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1294,24 +1237,24 @@ Triggers when Autocomplete widget is created.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1335,24 +1278,24 @@ Triggers after the Autocomplete widget is destroyed.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1376,29 +1319,29 @@ Triggers after the autocomplete textbox is focused.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td class="name">argument.value<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Value of the autocomplete textbox.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1422,29 +1365,29 @@ Triggers after the Autocomplete textbox gets out of the focus.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td class="name">argument.value<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Value of the autocomplete textbox.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1468,24 +1411,24 @@ Triggers after the suggestion list is opened.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
+
 
 {% highlight js %}
 
@@ -1509,44 +1452,43 @@ Triggers when an item has been selected from the suggestion list.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>argument.cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td class="name">argument.cancel<br/><br/></td>
+<td class="type">boolean<br/><br/></td>
+<td class="description">Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.model<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td class="name">argument.model<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td class="name">argument.type<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Name of the event.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td class="name">argument.value<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Value of the autocomplete textbox.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.text<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Text of the selected item.<br/><br/></td>
+<td class="name">argument.text<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Text of the selected item.<br/><br/></td>
 </tr>
 <tr>
-<td>argument.key<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Key of the selected item.<br/><br/></td
-></tr>
+<td class="name">argument.key<br/><br/></td>
+<td class="type">string<br/><br/></td>
+<td class="description">Key of the selected item.<br/><br/></td>
+</tr>
 <tr>
-<td>arugment.Item<br/><br/></td>
-<td>object<br/><br/></td>
-<td>Data object of the selected item.<br/><br/></td>
+<td class="name">arugment.Item<br/><br/></td>
+<td class="type">object<br/><br/></td>
+<td class="description">Data object of the selected item.<br/><br/></td>
 </tr>
 </table>
 
-Example  
-{:.example}
+#### Example  
 
 {% highlight js %}
 
