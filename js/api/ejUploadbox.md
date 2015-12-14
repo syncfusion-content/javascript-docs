@@ -53,7 +53,9 @@ $(element).ejUploadbox()
 <script>
 // Create Uploadbox
 $('#uploadbox1').ejUploadbox();         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -140,7 +142,9 @@ Enables the file drag and drop support to the Uploadbox control.
 <script>
     //Sets the allowDragAndDrop API value on initialization.
     $("#uploadbox1").ejUploadbox({ allowDragAndDrop: false });        
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -197,7 +201,9 @@ Selected files are sent to the server handler by using the AJAX Post.
 <script>
 //Sets the asyncUpload API value during initialization
         $("#uploadbox1").ejUploadbox({ asyncUpload: false });   
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -248,7 +254,9 @@ Uploadbox supports auto uploading of files after the file selection is done.
 <script>
 //Sets the autoUpload API value during initialization
         $("#uploadbox1").ejUploadbox({ autoUpload: true });     
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -300,7 +308,9 @@ Sets the text for each action button.
     //Sets the buttonText API value on initialization.
 $("#uploadbox1").ejUploadbox({ buttonText: { browse: "Choose File", upload: "Upload the File", cancel: "Cancel the Upload"} });        
 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -335,7 +345,9 @@ Sets the text for the browse button.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ buttonText: { browse: "Choose File" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -371,7 +383,8 @@ Sets the text for the cancel button.
     //Sets the buttonText.cancel API value on initialization.
 $("#uploadbox1").ejUploadbox({ buttonText: { cancel: "Cancel"});        
 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -407,7 +420,8 @@ Sets the text for the close button.
     //Sets the buttonText.Close API value on initialization.
 $("#uploadbox1").ejUploadbox({ buttonText: {Close: "close"} });        
 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -442,7 +456,9 @@ Sets the text for the Upload button inside the dialog popup.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ buttonText: { upload: "Upload the File" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -495,7 +511,9 @@ Sets the root class for the Uploadbox control theme. This cssClass API helps to 
     //Sets the cssClass API value on initialization.
 $("#uploadbox1").ejUploadbox({cssClass : "gradient- purple"});        
 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -547,7 +565,9 @@ Specifies the custom file details in the dialog popup on initialization.
     //Sets the customFileDetails API value on initialization.
 $("#uploadbox1").ejUploadbox({customFileDetails:{ title:true, name:true, size:true, status:true, action:true}});        
 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -583,7 +603,9 @@ Enables the file upload interactions like remove/cancel in File details of the d
     //Sets the customFileDetails.action API value on initialization.
 $("#uploadbox1").ejUploadbox({customFileDetails:{action:true}});        
 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -618,7 +640,8 @@ Enables the name in the File details of the dialog popup.
 <script>
 //Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { name: true }});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -691,7 +714,9 @@ Enables or disables the file uploading status visibility in the dialog file deta
 <script>
 //Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { status: true}});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -726,7 +751,9 @@ Enables the title in File details for the dialog popup.
 <script>
 //Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { title: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -777,7 +804,9 @@ Specifies the actions for dialog popup while initialization.
 <script>
 //Sets the  dialogAction API value 
         $("#uploadbox1").ejUploadbox({ dialogAction:{ modal:false, closeOnComplete:false,resize: false, drag:true, content:"#controlid"}});     
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -812,7 +841,9 @@ Once uploaded successfully, the dialog popup closes immediately.
 <script>
 //Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { closeOnComplete: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -848,7 +879,9 @@ Sets the content container option to the Uploadbox dialog popup.
     //Sets the dialogAction.content API value on initialization.
 $("#uploadbox1").ejUploadbox({dialogAction:{ content: "#uploadbox1"}});        
 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -883,7 +916,9 @@ Enables the drag option to the dialog popup.
 <script>
 //Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { drag: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -904,7 +939,7 @@ Enables the drag option to the dialog popup.
 Enables or disables the Uploadbox dialog’s modal property to the dialog popup.
 
 
-Note: dialogAction.modal property does not work in synchronous file upload.
+N> dialogAction.modal property does not work in synchronous file upload.
 
 
 
@@ -922,7 +957,9 @@ Note: dialogAction.modal property does not work in synchronous file upload.
 <script>
 //Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { modal: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -973,7 +1010,9 @@ Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the
 <script>
 //Sets the dialogPosition API value during initialization
         $("#uploadbox1").ejUploadbox({dialogPosition: { X: 300, Y: 10 }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1024,7 +1063,9 @@ Property for applying the text to the Dialog title and content headers.
 <script>
 //Sets the  dialogText API value during initialization
         $("#uploadbox1").ejUploadbox({ dialogText:{title:"Upload File List",name:"File Name",size:"File Size",status:"File Status" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1059,7 +1100,9 @@ Sets the uploaded file’s Name (header text) to the Dialog popup.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { name: "Name" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1094,7 +1137,9 @@ Sets the upload file Size (header text) to the dialog popup.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { size: "Size" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1129,7 +1174,9 @@ Sets the upload file Status (header text) to the dialog popup.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { status: "Status" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1164,7 +1211,9 @@ Sets the title text of the dialog popup.
 <script>
 //Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { title: "Upload Box" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1215,7 +1264,9 @@ The dropAreaText is displayed when the draganddrop support is enabled in the Upl
 <script>
 //Sets the dragAreaText API value during initialization
         $("#uploadbox1").ejUploadbox({ dropAreaText:"Drop files or click to upload"});
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
