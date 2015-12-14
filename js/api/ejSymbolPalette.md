@@ -363,8 +363,8 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 
 ## Events
 
-### selectionChanged
-{:#events:selectionchanged}
+### selectionChange
+{:#events:selectionchange}
 
 Triggers when a palette item is selected or unselected
 
@@ -399,7 +399,7 @@ Triggers when a palette item is selected or unselected
 
 {% highlight html %}
 
-// selectionChange event for diagram
+// selectionChange event for symbol palette
 $("#symbolpalette").ejSymbolPalette({
 	selectionChange:function (args) {}
 });
