@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ejWaitingPopup
 description: API reference for ejWaitingPopup
