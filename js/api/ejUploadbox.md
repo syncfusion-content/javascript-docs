@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ejUploadbox
 description: API reference for ejUploadbox
