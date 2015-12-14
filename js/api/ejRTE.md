@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ejRTE
 description: API reference for ejRTE

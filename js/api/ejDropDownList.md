@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ejDropDownList
 description: API reference for ejDropDownList

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ejWaitingPopup
 description: API reference for ejWaitingPopup
@@ -11,13 +11,7 @@ keywords: WaitingPopup, ejWaitingPopup, syncfusion, WaitingPopup api
 
 
 
-
-
-
-
 The WaitingPopup control for JavaScript is a visual element that provides support for displaying a pop-up indicator over a target area and preventing the end user’s interaction with the target area while loading.
-
-
 
 
 
@@ -29,17 +23,6 @@ The WaitingPopup control for JavaScript is a visual element that provides suppor
 $(element).ejWaitingPopup()
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,7 +49,9 @@ $("#target").ejWaitingPopup({ showOnInit: true });
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -157,7 +142,9 @@ Sets the root class for the WaitingPopup control theme
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -219,7 +206,9 @@ Enables or disables the default loading icon.
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -281,7 +270,9 @@ Enables the visibility of the WaitingPopup control
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -382,7 +373,8 @@ Loads HTML content inside the popup panel instead of the default icon
             height: 112px;
             width: 275px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -444,7 +436,9 @@ Sets the custom text in the pop-up panel to notify the waiting process
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -500,7 +494,8 @@ popupObj.hide();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -522,7 +517,8 @@ $("#target").ejWaitingPopup('hide');
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -570,7 +566,9 @@ popupObj.refresh();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -592,7 +590,9 @@ $("#target").ejWaitingPopup('refresh');
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -641,7 +641,9 @@ popupObj.show();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -663,7 +665,8 @@ $("#target").ejWaitingPopup("show");
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -745,7 +748,8 @@ argument.type{% endhighlight %}</td>
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -820,7 +824,9 @@ argument.type{% endhighlight %}</td>
           display: block;
           height: 70px;
       }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
