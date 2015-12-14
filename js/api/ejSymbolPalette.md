@@ -9,7 +9,7 @@ keywords: symbolpalette, ejSymbolPalette, symbol palette api, syncfusion
 
 # ejSymbolPalette
 
-The symbol palette control provides support to predefine the frequently used nodes and connectors and it allows to drag and drop those symbols to drawing area.
+The symbol palette control allows to predefine the frequently used nodes and connectors and to drag and drop those nodes/connectors to drawing area
 
 #### Syntax
 $(element).ejSymbolPalette()
@@ -42,7 +42,7 @@ $("#symbolpalette").ejSymbolPalette();
 ### allowDrag `Boolean`
 {:#members:allowdrag}
 
-Enable or disable the Drag function of items in the palette
+Defines whether the symbols can be dragged from palette or not
 
 #### Default Value
 
@@ -54,7 +54,7 @@ Enable or disable the Drag function of items in the palette
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({allowDrag: true});
+$("#symbolpalette").ejSymbolPalette( { allowDrag: false } );
 </script>
 
 {% endhighlight %}
@@ -62,7 +62,7 @@ $("#symbolpalette").ejSymbolPalette({allowDrag: true});
 ### cssClass `String`
 {:#members:cssclass}
 
-Used to change the style of the node
+Customizes the style of the symbol palette
 
 #### Default Value
 
@@ -79,10 +79,15 @@ $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
 
 {% endhighlight %}
 
-### diagramId `Object`
-{:#members:diagramid}
+### defaultSettings `Object`
+{:#members:defaultsettings}
 
-The diagramId of the palette
+Defines the default properties of nodes and connectors
+
+### defaultSettings.node `Object`
+{:#members:defaultsettings-node}
+
+Defines the default properties of the nodes
 
 #### Default Value
 
@@ -94,7 +99,51 @@ The diagramId of the palette
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
+$("#symbolpalette").ejSymbolPalette({
+	defaultSettings: { node : { fillColor:"red" } }
+});
+</script>
+
+{% endhighlight %}
+
+### defaultSettings.connector `Object`
+{:#members:defaultsettings-connector}
+
+Defines the default properties of the connectors
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	defaultSettings: { connector: { lineColor: "red" } }
+});
+</script>
+
+{% endhighlight %}
+
+### diagramId `String`
+{:#members:diagramid}
+
+Sets the Id of the diagram, over which the symbols will be dropped
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({ diagramId: "diagram" });
 </script>
 
 {% endhighlight %}
@@ -102,7 +151,7 @@ $("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
 ### headerHeight `Number`
 {:#members:headerheight}
 
-Height of the palette header
+Sets the height of the palette headers
 
 #### Default Value
 
@@ -114,7 +163,7 @@ Height of the palette header
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({headerHeight: 30});
+$("#symbolpalette").ejSymbolPalette( { headerHeight: 25 } );
 </script>
 
 {% endhighlight %}
@@ -122,7 +171,7 @@ $("#symbolpalette").ejSymbolPalette({headerHeight: 30});
 ### height `Number`
 {:#members:height}
 
-The height of the palette
+Defines the height of the symbol palette
 
 #### Default Value
 
@@ -134,7 +183,7 @@ The height of the palette
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({height:500});
+$("#symbolpalette").ejSymbolPalette( { height:300 } );
 </script>
 
 {% endhighlight %}
@@ -142,7 +191,7 @@ $("#symbolpalette").ejSymbolPalette({height:500});
 ### paletteItemHeight `Number`
 {:#members:paletteitemheight}
 
-Height of the items in palette
+Defines the height of the palette items
 
 #### Default Value
 
@@ -154,7 +203,7 @@ Height of the items in palette
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
+$("#symbolpalette").ejSymbolPalette({ paletteItemHeight: 30 });
 </script>
 
 {% endhighlight %}
@@ -162,7 +211,7 @@ $("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
 ### paletteItemWidth `Number`
 {:#members:paletteitemwidth}
 
-Width of the palette item
+Defines the width of the palette items
 
 #### Default Value
 
@@ -174,7 +223,7 @@ Width of the palette item
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
+$("#symbolpalette").ejSymbolPalette({ paletteItemWidth: 30 });
 </script>
 
 {% endhighlight %}
@@ -182,11 +231,11 @@ $("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
 ### palettes `Array`
 {:#members:palettes}
 
-Collection of palette items
+An array of JSON objects, where each object represents a node/connector
 
 #### Default Value
 
-* null
+* []
 
 #### Example
 
@@ -194,7 +243,20 @@ Collection of palette items
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({palettes: palette});
+	
+var palette = {
+		name: "Basic Shapes",
+		expanded: true,
+		items: [{
+			name: "Rectangle", height: 40, width: 80
+		}]
+	};
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Initializes the palette collection
+	palettes: [ palette ]
+});
+
 </script>
 
 {% endhighlight %}
@@ -202,7 +264,7 @@ $("#symbolpalette").ejSymbolPalette({palettes: palette});
 ### previewHeight `Number`
 {:#members:previewheight}
 
-Preview height of the palette items
+Defines the preview height of the symbols
 
 #### Default Value
 
@@ -214,7 +276,7 @@ Preview height of the palette items
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewHeight: 100});
+$("#symbolpalette").ejSymbolPalette( { previewHeight: 50 });
 </script>
 
 {% endhighlight %}
@@ -222,11 +284,11 @@ $("#symbolpalette").ejSymbolPalette({previewHeight: 100});
 ### previewOffset `Object`
 {:#members:previewoffset}
 
-The preview offset for the palette items
+Defines the offset value to be left between the mouse cursor and symbol previews
 
 #### Default Value
 
-* (102, 102)
+* (110, 110)
 
 #### Example
 
@@ -234,7 +296,7 @@ The preview offset for the palette items
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
+$("#symbolpalette").ejSymbolPalette({previewOffset: {x: 50, y: 50}});
 </script>
 
 {% endhighlight %}
@@ -242,7 +304,7 @@ $("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
 ### previewWidth `Number`
 {:#members:previewwidth}
 
-Preview width of the palette items
+Defines the width of the symbol previews
 
 #### Default Value
 
@@ -254,27 +316,7 @@ Preview width of the palette items
 
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewWidth: 100});
-</script>
-
-{% endhighlight %}
-
-### selectedPaletteName `Number`
-{:#members:selectedpalettename}
-
-The selectedPaletteName of the symbol palette
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="symbolpalette"></div>
-<script>
-$("#symbolpalette").ejSymbolPalette({selectedPaletteName: "paletteName"});
+$("#symbolpalette").ejSymbolPalette( { previewWidth: 50 });
 </script>
 
 {% endhighlight %}
@@ -324,7 +366,7 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 ### selectionChanged
 {:#events:selectionchanged}
 
-Triggers When selection is changed
+Triggers when a palette item is selected or unselected
 
 <table class="params">
 	<thead>
@@ -359,7 +401,7 @@ Triggers When selection is changed
 
 // selectionChange event for diagram
 $("#symbolpalette").ejSymbolPalette({
-selectionChange:function (args) {}
+	selectionChange:function (args) {}
 });
 
 {% endhighlight %}

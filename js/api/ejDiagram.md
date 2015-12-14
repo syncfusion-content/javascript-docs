@@ -48,7 +48,7 @@ $("#diagram").ejDiagram();
 ### backgroundColor `String`
 {:#members:backgroundcolor}
 
-Color to be set as the background of the elements
+Defines the background color of diagram elements
 
 #### Default Value
 
@@ -68,7 +68,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 ### backgroundImage `String`
 {:#members:backgroundimage}
 
-Image to be set as the background of the elements
+Defines the path of the background image of diagram elements
 
 #### Default Value
 
@@ -765,10 +765,10 @@ $("#DiagramContent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### nodes.paletteItem `Object`
-{:#members:nodes-paletteItem}
+### connectors.paletteItem `Object`
+{:#members:connectors-paletteitem}
 
-Defines the size and preview size of the node to add that to symbol palette
+Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer [Palette Item](#nodes-paletteitem)
 
 #### Default Value
 
@@ -1206,7 +1206,7 @@ $("#DiagramContent").ejDiagram({connectors : [connector]});
 ### connectors.sourceNode `String`
 {:#members:connectors-sourcenode}
 
-Sets the sourceNode of the connector
+Sets the source node of the connector
 
 #### Default Value
 
@@ -2032,26 +2032,6 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-### drawingTools `Object`
-{:#members:drawingtools}
-
-Describes the interactive features to be performed
-
-#### Default Value
-
-* ""
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.Diagram.TextTool()}});
-</script>
-
-{% endhighlight %}
-
 ### drawType `Object`
 {:#members:drawtype}
 
@@ -2127,6 +2107,17 @@ A method that takes a history entry as argument and returns whether the specific
 
 <div id="diagram"></div>
 <script>
+
+//Add a change to history manager
+var diagram = $("#DiagramContent").ejDiagram("instance");
+var entry = { object: node, prevState: node.empInfo };
+diagram.model.historyManager.push(entry);
+var newValue = { role: "New role" };
+node.empInfo = newValue;
+
+//Pop if the change doesn't need to be tracked
+if(diagram.model.historyManager.canPop(entry))
+	diagram.model.historyManager.pop();
 	
 </script>
 {% endhighlight %}
@@ -2173,14 +2164,17 @@ A method that removes the history of a recent change made in diagram
 
 <div id="diagram"></div>
 <script>
-	
+
+var diagram = $("#DiagramContent").ejDiagram("instance");
+//Pop the last change
+diagram.model.historyManager.pop();	
 </script>
 {% endhighlight %}
 
 ### historyManager.push `function`
-{:#members:historymanager-canpop}
+{:#members:historymanager-push}
 
-A method that allows to track a custom change made in diagram
+A method that allows to track the custom changes made in diagram
 
 #### Example
 
@@ -2188,7 +2182,17 @@ A method that allows to track a custom change made in diagram
 
 <div id="diagram"></div>
 <script>
-	
+
+var diagram = $("#DiagramContent").ejDiagram("instance");
+
+//Creates a custom entry and adds that to history manager
+var entry = { object: node, prevState: node.empInfo };
+diagram.model.historyManager.push(entry);
+
+//Updates the new information
+var newValue = { role: "New role" };
+node.empInfo = newValue;
+
 </script>
 {% endhighlight %}
 
@@ -3196,7 +3200,7 @@ Paints the node with radial color transitions. A focal point defines the beginni
 ### nodes.gradient.RadialGradient.cx `Number`
 {:#members:nodes-gradient-radialgradient-cx}
 
-Defines the center position where color transition is to be applied
+Defines the position of the outermost circle
 
 #### Default Value
 
@@ -3208,12 +3212,12 @@ Defines the center position where color transition is to be applied
 
 <div id="diagramcontent"></div>
 <script>
-var gradient = {
-     type: "radial", fx:50, fy: 50, cx :50, cy: 50, stops: [
-     { color: "white", offset:0 }, { color: "red", offset:100}]
-};
-var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3221,7 +3225,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.gradient.RadialGradient.cy `Number`
 {:#members:nodes-gradient-radialgradient-cy}
 
-The ending X-Axis for the region
+Defines the outer most circle of the radial gradient
 
 #### Default Value
 
@@ -3233,14 +3237,12 @@ The ending X-Axis for the region
 
 <div id="diagramcontent"></div>
 <script>
-var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
-gradient.type = "linear;
-gradient.cx = 20;
-gradient.cy = 50;
-gradient.fx = 20;
-gradient.fy = 50;
-var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3248,7 +3250,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.gradient.RadialGradient.fx `Number`
 {:#members:nodes-gradient-radialgradient-fx}
 
-The starting X-Axis for the region
+Defines the innermost circle of the radial gradient
 
 #### Default Value
 
@@ -3260,14 +3262,13 @@ The starting X-Axis for the region
 
 <div id="diagramcontent"></div>
 <script>
-var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
-gradient.type = "linear;
-gradient.cx = 20;
-gradient.cy = 50;
-gradient.fx = 20;
-gradient.fy = 50;
-var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", 
+		     fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3275,7 +3276,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.gradient.RadialGradient.fy `Number`
 {:#members:nodes-gradient-radialgradient-fy}
 
-The ending Y-Axis for the region
+Defines the innermost circle of the radial gradient
 
 #### Default Value
 
@@ -3287,14 +3288,12 @@ The ending Y-Axis for the region
 
 <div id="diagramcontent"></div>
 <script>
-var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
-gradient.type = "linear;
-gradient.cx = 20;
-gradient.cy = 50;
-gradient.fx = 20;
-gradient.fy = 50;
-var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3314,12 +3313,15 @@ Defines the different colors and the region of color transitions.
 
 <div id="diagramcontent"></div>
 <script>
-var gradient = {
-     type: "radial", fx:50, fy: 50, cx :50, cy: 50, stops: [
-     { color: "white", offset:0 }, { color: "red", offset:100}]
-};
-var nodes = [{name: "Node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:
+			 { 
+				 type:"radial", fx:50, fy:50, 
+		     	 cx:50, cy:50,
+                 stops:[{color:"white", offset:0 }, 
+			     { color:"red", offset:100 }] } };
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3344,13 +3346,15 @@ Sets the color to be filled over the specified region
 
 <div id="diagramcontent"></div>
 <script>
-// Apply the gradient till the bottom most position of node
-var gradient = {
-     type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
-     { color: "white", offset: 0}, { color: "red", offset: 100 }]
-};
-var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[
+				 {color:"white", offset:0 }, 
+				 {color:"red", offset:100}] } 
+			};
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3370,13 +3374,15 @@ Sets the position where the previous color transition ends and a new color trans
 
 <div id="diagramcontent"></div>
 <script>
-// Apply the gradient till the bottom most position of node
-var gradient = {
-     type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
-     { color: "white", offset: 0}, { color: "red", offset: 100 }]
-};
-var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[
+				 {color:"white", offset:0 }, 
+				 {color:"red", offset:100}] } 
+			};
+
+$("#DiagramContent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3396,16 +3402,14 @@ Decribes the transparency level of the region
 
 <div id="diagramcontent"></div>
 <script>
-// Apply the gradient till the bottom most position of node
-var gradient = {
-     type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, 
-	 stops: [
-        { color: "white", offset: 0, opacity: 0.7}, 
-	    { color: "red", offset: 100, opacity: 0.5 }
-	 ]
-};
-var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+			 gradient:{ type:"radial", 
+			    fx:50, fy:50, cx:50, cy:70,
+				stops:[
+				{color:"white", offset:0 }, 
+				//Sets the opacity
+				{color:"red", offset:100, opacity: 0.5}] } 
+			};
 </script>
 
 {% endhighlight %}
@@ -3482,7 +3486,7 @@ $("#DiagramContent").ejDiagram({nodes:[group]});
 ### nodes.inEdges `Array`
 {:#members:nodes-inedges}
 
-A read only collection of incoming connectors/edges of the node
+A read only collection of the incoming connectors/edges of the node
 
 #### Default Value
 
@@ -3494,9 +3498,11 @@ A read only collection of incoming connectors/edges of the node
 
 <div id="diagramcontent"></div>
 <script>
-var connectors = [{ name: "connector1", sourceNode: "node1", targetNode: "Node2"}];
-nodes=[{ inEdges:connectors }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
+//Read the incoming connections to the selected node
+var node = diagram.selectionList[0];
+for(var i = 0; i < node.inEdges.length; i++){
+    console.log(node.inEdges[i]);
+}
 </script>
 
 {% endhighlight %}
@@ -3788,10 +3794,10 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.mode `enum`
+### nodes.labels.mode `String`
 {:#members:nodes-labels-mode}
 
-Returns whether the label currently being edited or not. See <a href="global.html#labeleditmode">LabelEditMode</a>
+Gets whether the label is currently being edited or not. See <a href="global.html#labeleditmode">LabelEditMode</a>
 
 #### Default Value
 
@@ -3803,11 +3809,8 @@ Returns whether the label currently being edited or not. See <a href="global.htm
 
 <div id="diagramcontent"></div>
 <script>
-var nodes;
-nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
-         labels:[{ text:"label", mode: ej.datavisualization.Diagram.LabelEditMode.View }]
-      }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+var node = diagram.selectionList[0];
+console.log(node.labels[0].mode);
 </script>
 
 {% endhighlight %}
@@ -4564,7 +4567,7 @@ A read only collection of outgoing connectors/edges of the node
 
 #### Default Value
 
-* ""
+* []
 
 #### Example
 
@@ -4572,9 +4575,11 @@ A read only collection of outgoing connectors/edges of the node
 
 <div id="diagramcontent"></div>
 <script>
-var connectors = [{ name: "connector1", sourceNode: "Node1", targetNode: "Node2"}];
-nodes=[{outEdges:connectors}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
+//Read the outgoing connectors of the selected node
+var node = diagram.selectionList[0];
+for(var i = 0; i<node.outEdges.length; i++){
+    console.log(node.outEdges[i]);
+}
 </script>
 
 {% endhighlight %}
@@ -4692,7 +4697,7 @@ $("#DiagramContent").ejDiagram({nodes:[group]});
 {% endhighlight %}
 
 ### nodes.paletteItem `Object`
-{:#members:nodes-paletteItem}
+{:#members:nodes-paletteitem}
 
 Defines the size and preview size of the node to add that to symbol palette
 
@@ -4704,7 +4709,7 @@ Defines the size and preview size of the node to add that to symbol palette
 
 {% highlight html %}
 
-<div id="diagramcontent"></div>
+<div id="symbolpalette"></div>
 <script>
 	
 $("#symbolpalette").ejSymbolPalette({
@@ -4723,6 +4728,212 @@ $("#symbolpalette").ejSymbolPalette({
 	}]
 });
 
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.enableScale `Boolean`
+{:#members:nodes-paletteitem.enablescale}
+
+Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", width:50, height:50,
+			//Draw symbol of size(50,50)
+			paletteItem: {
+                width: 100,
+                height: 100,
+                enableScale:false
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.height `Number`
+{:#members:nodes-paletteitem-height}
+
+Defines the height of the symbol
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", 
+			//Sets the size of the symbol
+			paletteItem: {
+                width: 200,
+                height: 200,
+				enableScale: false
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.margin `Object`
+{:#members:nodes-paletteitem-margin}
+
+Defines the margin of the symbol item
+
+#### Default Value
+
+* { left: 4, right: 4, top: 4, bottom: 4 }
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", width:50, height:50,
+			//Sets symbol margin
+			paletteItem: {
+                margin: { left: 30 }
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.previewHeight `Number`
+{:#members:nodes-paletteitem-previewheight}
+
+Defines the preview height of the symbol
+
+#### Default Value
+
+* undefined
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+	$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", width:50, height:50,
+			//Sets preview size
+			paletteItem: {
+                previewWidth: 100,
+				previewHeight: 100
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.previewWidth `Number`
+{:#members:nodes-paletteitem-previewwidth}
+
+Defines the preview width of the symbol
+
+#### Default Value
+
+* undefined
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", width:50, height:50,
+			//Sets preview size
+			paletteItem: {
+                previewWidth: 100,
+				previewHeight: 100
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem.width `Number`
+{:#members:nodes-paletteitem-width}
+
+Defines the width of the symbol 
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", width:50, height:50,
+			//Sets the size of the symbol
+			paletteItem: {
+                width: 200,
+                height: 200,
+                enableScale : false
+			}
+		}]
+	}]
+});
 </script>
 
 {% endhighlight %}
@@ -4828,7 +5039,7 @@ $("#DiagramContent").ejDiagram({nodes:[swimlane]});
 ### nodes.phases.lineColor `String`
 {:#members:nodes-phases-linecolor}
 
-Defines the line color of the splitter, that splits different phases.
+Defines the line color of the splitter that splits adjacent phases.
 
 #### Default Value
 
@@ -4943,7 +5154,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 ### nodes.phases.orientation `String`
 {:#members:nodes-phases-orientation}
 
-Sets the orientation of the phase. Applicable if type is lane.
+Sets the orientation of the phase
 
 #### Default Value
 
@@ -4955,31 +5166,13 @@ Sets the orientation of the phase. Applicable if type is lane.
 
 <div id="diagramcontent"></div>
 <script>
-var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
-width: 300, orientation:"horizontal",
-phases:[{ name:"phase1", offset:150, label:{text:"Phase1"} },    
-       { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
-</script>
-
-{% endhighlight %}
-
-### nodes.phases.parent `String`
-{:#members:nodes-phases-parent}
-
-Sets the parent of the phase.
-
-#### Default Value
-
-* ""
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{parent: "parent"}]}});
+var diagram = $("#DiagramContent").ejDiagram("instance");
+diagram.addPhase(diagram.selectionList[0].name, 
+	{ 
+		name: "verticalPhase", 
+	    type: "phase", offset: 200, orientation: "vertical", 
+		label: { text: "New Phase" } 
+	} );
 </script>
 
 {% endhighlight %}
@@ -4999,7 +5192,12 @@ Sets the type of the object as phase
 
 <div id="diagramcontent"></div>
 <script>
-
+var diagram = $("#DiagramContent").ejDiagram("instance");
+diagram.addPhase(diagram.selectionList[0].name, 
+	{ 
+		name: "verticalPhase", 
+		type: "phase", offset: 200, label: { text: "New Phase" } 
+	});	
 </script>
 
 {% endhighlight %}
@@ -5116,7 +5314,6 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, borderColor:"yellow" }] }];
 $("#DiagramContent").ejDiagram({nodes:nodes});
-
 </script>
 
 {% endhighlight %}
@@ -5829,7 +6026,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 {% endhighlight %}
 
 ### nodes.tooltip `String`
-{:#members:connectors-tooltip}
+{:#members:nodes-tooltip}
 
 Defines the tooltip that should be shown when the mouse hovers over node.  For tooltip properties, refer [Tooltip](#members:tooltip)
 
@@ -6491,7 +6688,7 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### selectedItems.getConstraints `Object`
-{:#members:selecteditems-height}
+{:#members:selecteditems-getconstraints}
 
 Defines a method that dynamically enables/ disables the interaction with multiple selection.
 
@@ -6983,12 +7180,12 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### tooltip.alignment `Object`
-{:#members:alignment}
+{:#members:tooltip-alignment}
 
 Aligns the tooltip around nodes/connectors
 
 ### tooltip.alignment.horizontal `String`
-{:#members:alignment-horizontal}
+{:#members:tooltip-alignment-horizontal}
 
 Defines the horizontal alignment of tooltip. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
 
@@ -7014,7 +7211,7 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### tooltip.alignment.vertical `String`
-{:#members:alignment-vertical}
+{:#members:tooltip-alignment-vertical}
 
 Defines the vertical alignment of tooltip. See <a href="global.html#verticalalignment">VerticalAlignment</a>
 
@@ -7040,7 +7237,7 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### tooltip.margin `Object`
-{:#members:margin}
+{:#members:tooltip-margin}
 
 Sets the margin of the tooltip
 
@@ -7064,7 +7261,7 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### tooltip.relativeMode `String`
-{:#members:relativemode}
+{:#members:tooltip-relativemode}
 
 Defines whether the tooltip should be shown at the mouse position or around node. See <a href="global.html#relativemode">RelativeMode</a>
 
@@ -7089,7 +7286,7 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ### tooltip.templateId `String`
-{:#members:templateid}
+{:#members:tooltip-templateid}
 
 Sets the svg/html template to be bound with tooltip
 
@@ -7113,26 +7310,6 @@ $("#DiagramContent").ejDiagram({
 	tooltip: {
 		templateId: "mouseovertooltip"
 	} });	
-</script>
-
-{% endhighlight %}
-
-### version `String`
-{:#members:version}
-
-Sets the version of the diagram
-
-#### Default Value
-
-* "13.1"
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram("instance");
 </script>
 
 {% endhighlight %}
@@ -8347,7 +8524,7 @@ var diagram=$("#diagramcontent").ejDiagram("instance");
 var tool = ej.datavisualization.Diagram.Tool.ZoomPan;
 //update the tool
 diagram.update({ tool: tool });
-
+</script>
 {% endhighlight %}
 
 ### updateConnector(name, options)
@@ -8813,12 +8990,12 @@ Triggers when the connection is changed
 		<tr>
 			<td class="name">connection</td>
 			<td class="type">String</td>
-			<td class="description">parameter returns the changed source or target node of the connector</td>
+			<td class="description">parameter returns the new source node or target node of the connector</td>
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the changed source or target port of the connector</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the new source port or target port of the connector</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -8908,7 +9085,7 @@ Triggers when the connectors' source point is changed
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">String</td>
+			<td class="type">Object</td>
 			<td class="description">returns the source port of the element</td>
 		</tr>
 		<tr>
@@ -8961,7 +9138,7 @@ Triggers when the connectors' target point is changed
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">String</td>
+			<td class="type">Object</td>
 			<td class="description">returns the target port of the element</td>
 		</tr>
 		<tr>
@@ -9150,6 +9327,11 @@ Triggers while dragging the elements in diagram
 			<td class="name">newValue</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new position of the node/connector</td>
+		</tr>
+		<tr>
+			<td class="name">dragState</td>
+			<td class="type">String</td>
+			<td class="description">parameter returns the state of drag event (Starting, dragging, completed)</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -9835,10 +10017,10 @@ selectionChange:function (args) {}
 
 {% endhighlight %}
 
-### textchanged
-{:#events:textchanged}
+### textChange
+{:#events:textchange}
 
-Triggers When label editing is ended
+Triggers when label editing is ended
 
 <table class="params">
 	<thead>
@@ -9866,9 +10048,9 @@ Triggers When label editing is ended
 
 {% highlight html %}
 
-// textChanged event for diagram
+// textChange event for diagram
 $("#diagramcontent").ejDiagram({
-textChanged:function (args) {}
+textChange:function (args) {}
 });
 
 {% endhighlight %}
