@@ -7,15 +7,15 @@ control: DropDownList
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 By default you can add any text or image to the DropDownList list item. To customize the items layout or to create your own visualized elements you can use this template support.
 
-### Header Template
+## Header Template
 
-You can create the popup header by using “[headerTemplate](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:headertemplate)” property. You can add any HTML content in header template.
+You can create the popup header by using [headerTemplate](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:headertemplate) property. You can add any HTML content in header template.
 
-### Template Field
+## Template Field
 
 Create a set of div containers with common syntax or elements and assign it to the [template](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:template) property. You can add any Html mark-up element inside the DropDownList list using this property.
 
@@ -25,7 +25,9 @@ In the demo, a JSON array is created with text, imgId, role and country which is
 
      <input type="text" id="dropdown1" />	 
 	 
-	<style>
+{% endhighlight %}
+
+{% highlight css %}
 	
     .imgId {
         margin: 0;
@@ -57,14 +59,11 @@ In the demo, a JSON array is created with text, imgId, role and country which is
         padding: 3px 3px -1px 0px;
     }
 	
-	</style>
-     
+	 
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
-	
+    
     var empList = [{
         text: "Erik Linden",
         imgId: "3",
@@ -95,7 +94,6 @@ In the demo, a JSON array is created with text, imgId, role and country which is
         });
     });
 	
-	</script>
 
 {% endhighlight %}
 

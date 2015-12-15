@@ -7,15 +7,15 @@ control: DropDownList
 documentation: ug
 ---
 
-## How To
+# How To
 
-### How to append custom HTML in DropDownList popup outside the scroller part?
+## How to append custom HTML in DropDownList popup outside the scroller part?
 
 Create a custom html element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
 
-### How to set focus to control initially?
+## How to set focus to control initially?
 
-[Access key](https://en.wikipedia.org/wiki/Access_key# "") property can be added in input element to set focus. Here focus is set by using access key + “j”.
+[Access key](https://en.wikipedia.org/wiki/Access_key) property can be added in input element to set focus. Here focus is set by using access key + “j”.
 
 {% highlight html %}
 
@@ -25,7 +25,6 @@ Create a custom html element and insert it after popup wrapper. Detailed sample 
 
 {% highlight js %}
 
-        <script type="text/javascript">
         $(function () {
             var items = [
               { text: "ListItem 1", value: "item1" },
@@ -45,18 +44,16 @@ Create a custom html element and insert it after popup wrapper. Detailed sample 
             }
           });
        });
-    </script>
-
-
+ 
 {% endhighlight %}
 
-### How to clear the text of DropDownList input?
+## How to clear the text of DropDownList input?
 
-To clear the text of the DropDownList input, you can use “[clearText](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:cleartext)” method.
+To clear the text of the DropDownList input, you can use [clearText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:cleartext) method.
 
-### How to add an item dynamically to the DropDownList?
+## How to add an item dynamically to the DropDownList?
 
-You can use “[addItem](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:additem)” method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, image and its associated attributes such as alt, width, and height etc., html attributes.
+You can use [addItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, image and its associated attributes such as alt, width, and height etc., html attributes.
 
 Adding text and value is demonstrated in the below given sample,
 
@@ -68,8 +65,7 @@ Adding text and value is demonstrated in the below given sample,
 
 {% highlight js %}
 
-    <script type="text/javascript">
-        $(function () {
+       $(function () {
             var items = [
               { text: "ListItem 1", value: "item1" },
 	          { text: "ListItem 2", value: "item2" },
@@ -85,18 +81,18 @@ Adding text and value is demonstrated in the below given sample,
             $('#dropdown1').ejDropDownList("addItem", { text: "New Text", value: "text1" });
 
         });
-    </script>
 
 {% endhighlight %}
 
-### How to Disable/ Enable the DropDownList widget?
+## How to Disable/ Enable the DropDownList widget?
 
-You can enable or disable the DropDownList widget using “enabled” property or methods. Detailed information is given [here](#_Enable/Disable_the_widget).
-### How to control the popup visibility via methods in script showPopup ()/hidePopup ()?
+You can enable or disable the DropDownList widget using “enabled” property or methods. Detailed information is given [here](customization#enabledisable-the-widget).
 
-By default popup list is shown on DropDownList button click but you can display the list initially by enabling the “[showPopupOnLoad](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:showpopuponload)” property. You can also use [showPopup ()](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+## How to control the popup visibility via methods in script showPopup ()/hidePopup ()?
 
-### How to retrieve the selected item data from select event via arguments?
+By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/js/api/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+
+## How to retrieve the selected item data from select event via arguments?
 
 Bind the select event and you can retrieve the value from args.value. 
 
@@ -108,7 +104,6 @@ Bind the select event and you can retrieve the value from args.value.
 
 {% highlight js %}
 
-        <script type="text/javascript">
         $(function () {
             var items = [
               { text: "ListItem 1", value: "item1" },
@@ -125,23 +120,25 @@ Bind the select event and you can retrieve the value from args.value.
                 }
             });
         });
-    </script>
-
 
 {% endhighlight %}
 
 The following screenshot will exhibit the select event arguments details,
+
 ![](HowTo_images/HowTo_img1.jpeg)
 
-### How to add check all option in popup list?
+## How to add check all option in popup list?
 
-You can use `headerTemplate` property to add any HTML element. Code snippet to add check all option is given below,
+You can use [headerTemplate](http://help.syncfusion.com/js/api/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
 
 {% highlight html %}
 
      <input type="text" id="dropdown1" />
 	 
-	 <style>
+{% endhighlight %}
+
+{% highlight css %}
+
         .temp {
             height: 30px;
             display: block;
@@ -153,13 +150,12 @@ You can use `headerTemplate` property to add any HTML element. Code snippet to a
             font-size: 14px;
             padding-left: 10px;
         }
-    </style>
+
      
 {% endhighlight %}
 
 {% highlight js %}
 
-	<script>
         $(function () {
             var items = [
               { text: "ListItem 1", value: "item1" },
@@ -184,11 +180,10 @@ You can use `headerTemplate` property to add any HTML element. Code snippet to a
             else obj.uncheckAll();
             window.flag = false;
         }
-    </script>  
-
 
 {% endhighlight %}
 
 The following screenshot exhibits the output of the above code,
+
 ![](HowTo_images/HowTo_img2.jpeg)
 
