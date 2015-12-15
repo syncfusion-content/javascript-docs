@@ -7,25 +7,32 @@ control: DropDownList
 documentation: ug
 ---
 
-## Rendering Mode
+# Rendering Mode
 
 DropDownList widget can be created in three ways.
+
 *  Using an input element 
 
 *  Using a select element 
 
 *  Using UL-LI 
 
-### Using an input element
+## Using an input element
 
 
 Create an input element with the HTML 'id' attribute set to it. To initialize the DropDownList, you should call the 'ejDropDownList' jQuery plug-in function with the options as parameter
 
-You can bind the local JSON array data source to the DropDownList using [dataSource](#_Data_Binding) and [fields](#_Fields) properties. Fields property is used to map with the corresponding columns.
+You can bind the local JSON array data source to the DropDownList using [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) and [fields](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields) properties. Fields property is used to map with the corresponding columns.
+
+{% highlight html %}
+
+	<input type="text" id="dropdown1" />
+
+{% endhighlight %}
+
 
 {% highlight js %}
-
-	<script type="text/javascript">
+	
 	
 		$(function () {
 
@@ -47,17 +54,16 @@ You can bind the local JSON array data source to the DropDownList using [dataSou
 			
 			});
 		
-		});
-	
-	</script>
+		});	
+
 
 {% endhighlight %}
 
-### Using Select Element
+## Using Select Element
 
-You can create a DropDownList using a select element and the detailed information is given in [creating DropDownList](#_Creating_DropDownList) section.
+You can create a DropDownList using a select element and the detailed information is given in [creating DropDownList](getting-started#creating-dropdownlist) section.
 
-### Using UL-LI
+## Using UL-LI
 
 You can bind the predefined set of UL-LI elements to generate the list of popup items. These items can be customized by adding any images, div elements, radio buttons, text boxes etc.
 
@@ -113,8 +119,11 @@ Create a div with UL-LI elements and assign that div id into [targetID](http://h
     	</ul>
     
 	</div>
+	
+{% endhighlight %}
 
-	<style>
+{% highlight css %}
+
     	 .mailtools {
         	display: block;
         	background-image: url('iconsapps.png');
@@ -163,17 +172,12 @@ Create a div with UL-LI elements and assign that div id into [targetID](http://h
      	.mailtools.meeting {
         	background-position: 0 -164px;
         
-    	}
-    
-    
-	</style>
+    	}    
 
 {% endhighlight %}
 
 {% highlight js %}
 
-	<script type="text/javascript">
-	
     	$(function() {
 		
         	$('#dropdown1').ejDropDownList({
@@ -183,7 +187,6 @@ Create a div with UL-LI elements and assign that div id into [targetID](http://h
         	});
 			
     	});
-	</script>
 
 {% endhighlight %}
 

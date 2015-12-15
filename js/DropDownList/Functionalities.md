@@ -6,15 +6,15 @@ platform: js
 control: DropDownList
 documentation: ug
 ---
-## Functionalities
+# Functionalities
 
-### Selection
+## Selection
 
-By default only one item can be selected from the popup list. For multiple selection, you have to enable [checkboxes](#_Checkbox). The selected item consist of active class (“e-active”) to differentiate it from other items.
+By default only one item can be selected from the popup list. For multiple selection, you have to enable [checkboxes](Checkbox). The selected item consist of active class (“e-active”) to differentiate it from other items.
 
-#### Using value or text
+### Using value or text
 
-To select an item initially you can pass the item’s value via “[value](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:value )” property or “[selectItemByValue](http://docs.syncfusion.com/js/api/ejdropdownlist#members:selectitembyvalue)” method. To achieve this DropDownList widget must be initiated with the associate value. 
+To select an item initially you can pass the item’s value via [value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value) property or [selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectitembyvalue) method. To achieve this DropDownList widget must be initiated with the associate value. 
 
 {% highlight html %}
 
@@ -24,10 +24,8 @@ To select an item initially you can pass the item’s value via “[value](http:
 
 {% highlight js %}
 
-    <script type="text/javascript">
-	
     $(function() {
-        var items = [ < br / > {
+        var items = [{
             text: "ListItem 1",
             value: "item1"
         }, {
@@ -52,14 +50,13 @@ To select an item initially you can pass the item’s value via “[value](http:
             value: "item3"
         });
     });
-	
-	</script>
+
 
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img1.jpeg)
 
-N> To retrieve the selected item’s li elements and value you can use “[getSelectedItem](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)”, “[getSelectedValue](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue)” methods respectively.
+N> To retrieve the selected item’s li elements and value you can use [getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
 {% highlight html %}
 
@@ -68,8 +65,6 @@ N> To retrieve the selected item’s li elements and value you can use “[getSe
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
 	
     $(function() {
         var items = [{
@@ -103,11 +98,9 @@ N> To retrieve the selected item’s li elements and value you can use “[getSe
         console.log(JSON.parse(obj.getSelectedValue()));
     });
 	
-	</script>
-
 {% endhighlight %}
 
-#### Using indices
+### Using indices
 
 You can select a single or more than one item by passing index values to the properties “[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)” or “[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)” respectively. Index starts from 0 here.
 
@@ -118,8 +111,6 @@ You can select a single or more than one item by passing index values to the pro
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
 	
     $(function() {
         var items = [{
@@ -147,8 +138,6 @@ You can select a single or more than one item by passing index values to the pro
             selectedIndex: 1
         });
     });
-	
-	</script>
 
 {% endhighlight %}
 
@@ -163,8 +152,6 @@ N> To use 'selectedIndices' property, you should enable checkbox first.
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
 	
     $(function() {
         var items = [{
@@ -194,14 +181,12 @@ N> To use 'selectedIndices' property, you should enable checkbox first.
         });
 		
     });
-	
-	</script>
 
 {% endhighlight %}
 
-#### Unselect items
+### Unselect items
 
-Similarly, you can unselect a single or multiple items by using “[unselectItemByValue](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyvalue)” or “[unselectItemByIndices](http://helpjs.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyindices)” or “[unselectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembytext)” methods. This will remove the selection state of the corresponding data item from the popup list and textbox. 
+Similarly, you can unselect a single or multiple items by using [unselectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyvalue) or [unselectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyindices) or [unselectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembytext) methods. This will remove the selection state of the corresponding data item from the popup list and textbox. 
 
 {% highlight html %}
 
@@ -214,56 +199,51 @@ Similarly, you can unselect a single or multiple items by using “[unselectItem
 
 {% highlight js %}
 
-    <script type="text/javascript">
-	
-                var obj;
-                $(function() {
-                    var items = [{
-                        text: "ListItem 1",
-                        value: "item1"
-                    }, {
-                        text: "ListItem 2",
-                        value: "item2"
-                    }, {
-                        text: "ListItem 3",
-                        value: "item3"
-                    }, {
-                        text: "ListItem 4",
-                        value: "item4"
-                    }, {
-                        text: "ListItem 5",
-                        value: "item5"
-                    }];
-                    $('#dropdown1').ejDropDownList({
-                        width: 300,
-                        dataSource: items,
-                        fields: {
-                            text: "text",
-                            value: "value"
-                        },
-                        showCheckbox: true,
-                        selectedIndices: [1, 2, 3]
-                    });
-                    obj = $('#dropdown1').data("ejDropDownList");
-                    console.log("Selected Item's Text - " + obj.option("text"));
-                    console.log("selected Item's Value - " + obj.option("value"));
-                });
+    var obj;
 
-                function unselect() {
-                    obj.unselectItemByValue("item2");
-                    obj.unselectItemByIndices(2);
-                    obj.unselectItemByText("ListItem 4");
+    $(function() {
+      var items = [{
+          text: "ListItem 1",
+          value: "item1"
+      }, {
+          text: "ListItem 2",
+          value: "item2"
+      }, {
+          text: "ListItem 3",
+          value: "item3"
+      }, {
+          text: "ListItem 4",
+          value: "item4"
+      }, {
+          text: "ListItem 5",
+          value: "item5"
+      }];
+      $('#dropdown1').ejDropDownList({
+          width: 300,
+          dataSource: items,
+          fields: {
+              text: "text",
+              value: "value"
+          },
+          showCheckbox: true,
+          selectedIndices: [1, 2, 3]
+      });
+      obj = $('#dropdown1').data("ejDropDownList");
+      console.log("Selected Item's Text - " + obj.option("text"));
+      console.log("selected Item's Value - " + obj.option("value"));
+    });
 
-                }
-				
-            </script>
-
+    function unselect() {
+      obj.unselectItemByValue("item2");
+      obj.unselectItemByIndices(2);
+      obj.unselectItemByText("ListItem 4");
+    }			
 
 {% endhighlight %}
 
-### Grouping
+## Grouping
 
-The DropDownList items can be categorized by using a specific field in the popup list. This is enabled by using “[groupBy](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields-groupby)” field on data source binding. By default grouping is disabled in DropDownList.
+The DropDownList items can be categorized by using a specific field in the popup list. This is enabled by using [groupBy](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields-groupby) field on data source binding. By default grouping is disabled in DropDownList.
 The below given example explains the behavior of grouping with JSON array binding.
 
 {% highlight html %}
@@ -275,126 +255,120 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 {% highlight js %}
 
-    <script type="text/javascript">
-                $(function() {
-                    var skillset = [{
-                        skill: "Cabbage",
-                        category: "Leafy and Salad"
-                    }, {
-                        skill: "Pea",
-                        category: "Leafy and Salad"
-                    }, {
-                        skill: "Spinach",
-                        category: "Leafy and Salad"
-                    }, {
-                        skill: "Wheatgrass",
-                        category: "Leafy and Salad"
-                    }, {
-                        skill: "Yarrow",
-                        category: "Leafy and Salad"
-                    }, {
-                        skill: "Chickpea",
-                        category: "Beans"
-                    }, {
-                        skill: "Green bean",
-                        category: "Beans"
-                    }, {
-                        skill: "Horse gram",
-                        category: "Beans"
-                    }, {
-                        skill: "Peanut",
-                        category: "Beans"
-                    }, {
-                        skill: "Pigeon pea",
-                        category: "Beans"
-                    }, {
-                        skill: "Garlic",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Garlic Chives",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Lotus root",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Nopal",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Onion",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Shallot",
-                        category: "Bulb and Stem"
-                    }, {
-                        skill: "Beetroot",
-                        category: "Root and Tuberous"
-                    }, {
-                        skill: "Carrot",
-                        category: "Root and Tuberous"
-                    }, {
-                        skill: "Ginger",
-                        category: "Root and Tuberous"
-                    }, {
-                        skill: "Potato",
-                        category: "Root and Tuberous"
-                    }, {
-                        skill: "Radish",
-                        category: "Root and Tuberous"
-                    }, {
-                        skill: "Turmeric",
-                        category: "Root and Tuberous"
-                    }];
-                    $('#dropdown1').ejDropDownList({
-                        width: 150,
-                        popupHeight: 300,
-                        watermarkText: "Select a vegetable",
-                        dataSource: skillset,
-                        fields: {
-                            text: "skill",
-                            groupBy: "category"
-                        }
-                    });
-                });
-            </script>
-
+	$(function() {
+	    var skillset = [{
+	        skill: "Cabbage",
+	        category: "Leafy and Salad"
+	    }, {
+	        skill: "Pea",
+	        category: "Leafy and Salad"
+	    }, {
+	        skill: "Spinach",
+	        category: "Leafy and Salad"
+	    }, {
+	        skill: "Wheatgrass",
+	        category: "Leafy and Salad"
+	    }, {
+	        skill: "Yarrow",
+	        category: "Leafy and Salad"
+	    }, {
+	        skill: "Chickpea",
+	        category: "Beans"
+	    }, {
+	        skill: "Green bean",
+	        category: "Beans"
+	    }, {
+	        skill: "Horse gram",
+	        category: "Beans"
+	    }, {
+	        skill: "Peanut",
+	        category: "Beans"
+	    }, {
+	        skill: "Pigeon pea",
+	        category: "Beans"
+	    }, {
+	        skill: "Garlic",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Garlic Chives",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Lotus root",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Nopal",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Onion",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Shallot",
+	        category: "Bulb and Stem"
+	    }, {
+	        skill: "Beetroot",
+	        category: "Root and Tuberous"
+	    }, {
+	        skill: "Carrot",
+	        category: "Root and Tuberous"
+	    }, {
+	        skill: "Ginger",
+	        category: "Root and Tuberous"
+	    }, {
+	        skill: "Potato",
+	        category: "Root and Tuberous"
+	    }, {
+	        skill: "Radish",
+	        category: "Root and Tuberous"
+	    }, {
+	        skill: "Turmeric",
+	        category: "Root and Tuberous"
+	    }];
+	    $('#dropdown1').ejDropDownList({
+	        width: 150,
+	        popupHeight: 300,
+	        watermarkText: "Select a vegetable",
+	        dataSource: skillset,
+	        fields: {
+	            text: "skill",
+	            groupBy: "category"
+	        }
+	    });
+	});
 
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
 Grouping has restrictions in the following scenarios,
-1. It is not supported on using HTML 'select' element with predefined set of options
 
-2. When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
+* It is not supported on using HTML 'select' element with predefined set of options
+
+* When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
 
 
 {% highlight html %}
 
             <input type="text" id="dropdown1" />
-
                 
 {% endhighlight %}
 
 {% highlight js %}
 
-     <script type="text/javascript">
-           $(function() {
-               $('#dropdown1').ejDropDownList({
-                    targetID: "dropdownitems"
-               });
-           });
-     </script>
-
-
+	$(function() {
+	    $('#dropdown1').ejDropDownList({
+	        targetID: "dropdownitems"
+	    });
+	});         
+    
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img4.jpeg)
 
 N> Virtual scrolling is not supported with Grouping. 
 
-### Sorting
+## Sorting
 
-Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use “[enableSorting](http://docs.syncfusion.com/js/api/ejdropdownlist#members:enablesorting)” property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the “[sortOrder](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:sortorder)” property to sort out the list items. By default ascending order is followed when 'sortOrder' property is not specified. 
+Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use [enableSorting](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablesorting) property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the [sortOrder](http://help.syncfusion.com/js/api/ejdropdownlist#members:sortorder) property to sort out the list items. By default ascending order is followed when 'sortOrder' property is not specified. 
 
 {% highlight html %}
 
@@ -404,42 +378,39 @@ Sorting is enabled to order to display the items alphabetically in either ascend
 
 {% highlight js %}
 
-    <script type="text/javascript">
-                $(function() {
-                    var items = [{
-                        text: "ListItem 1",
-                        value: "item1"
-                    }, {
-                        text: "ListItem 5",
-                        value: "item5"
-                    }, {
-                        text: "ListItem 4",
-                        value: "item4"
-                    }, {
-                        text: "ListItem 2",
-                        value: "item2"
-                    }, {
-                        text: "ListItem 3",
-                        value: "item3"
-                    }, ];
-                    $('#dropdown1').ejDropDownList({
-                        dataSource: items,
-                        fields: {
-                            text: "text",
-                            value: "value"
-                        },
-                        enableSorting: true,
-                        sortOrder: "ascending"
-                    });
-                });
-    </script>
-
-
+	$(function() {
+	    var items = [{
+	        text: "ListItem 1",
+	        value: "item1"
+	    }, {
+	        text: "ListItem 5",
+	        value: "item5"
+	    }, {
+	        text: "ListItem 4",
+	        value: "item4"
+	    }, {
+	        text: "ListItem 2",
+	        value: "item2"
+	    }, {
+	        text: "ListItem 3",
+	        value: "item3"
+	    }, ];
+	    $('#dropdown1').ejDropDownList({
+	        dataSource: items,
+	        fields: {
+	            text: "text",
+	            value: "value"
+	        },
+	        enableSorting: true,
+	        sortOrder: "ascending"
+	    });
+	});             
+  
 {% endhighlight %}
 
-### Cascading
+## Cascading
 
-This works for series of DropDownList in which items are filtered based on the previous DropDownList‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child DropDownList’s id in “[cascadeTo](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:cascadeto)” property and use delimiter (“,”) to specify more than one child DropDownList.
+This works for series of DropDownList in which items are filtered based on the previous DropDownList‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child DropDownList’s id in [cascadeTo](http://help.syncfusion.com/js/api/ejdropdownlist#members:cascadeto) property and use delimiter (“,”) to specify more than one child DropDownList.
 
 Configuring the data items for cascading to the series of DropDownList is demonstrated below
 
@@ -461,8 +432,6 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 {% highlight js %}
 
-    <script type="text/javascript">
-	
     $(function() {
         //first dropdown
         var groups = [{
@@ -560,9 +529,6 @@ Configuring the data items for cascading to the series of DropDownList is demons
             enabled: false
         });
     });
-	
-	</script>
-
 
 {% endhighlight %}
 
@@ -570,7 +536,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 ![](Functionalities_images/Functionalities_img6.jpeg)
 
-You can also bind the data source to the cascading DropDownList dynamically using “[cascade](http://help.syncfusion.com/js/api/ejdropdownlist#events:cascade )” event as demonstrated below,
+You can also bind the data source to the cascading DropDownList dynamically using [cascade](http://help.syncfusion.com/js/api/ejdropdownlist#events:cascade) event as demonstrated below,
 
 {% highlight html %}
 
@@ -594,9 +560,7 @@ You can also bind the data source to the cascading DropDownList dynamically usin
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
-	
+  
     $(function() {
         //first dropdown
         var groups = [{
@@ -670,24 +634,23 @@ You can also bind the data source to the cascading DropDownList dynamically usin
             "enabled": true
         });
     }
-	
-	</script>
-
+		
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img7.jpeg)
 
-### Search
+## Search
 
-Items are searched based on the keyed in values to the textbox. There are two types of searches:
+Items are searched based on the keyed in values to the textbox. There are two types of searches,
+
 * Incremental Search
 
 * Filter Search
 
 
-#### Incremental Search
+### Incremental Search
 
-Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use “[caseSensitiveSearch](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:casesensitivesearch)” property.
+Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](http://help.syncfusion.com/js/api/ejdropdownlist#members:casesensitivesearch) property.
 
 {% highlight html %}
 
@@ -697,9 +660,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 {% highlight js %}
 
-    <script type="text/javascript">
-
-    $(function() {
+     $(function() {
         var items = [{
             text: "Adams",
             value: "emp1"
@@ -727,16 +688,15 @@ Selects the item in the popup list based on the keyed in value. If the time take
         });
     });
 	
-	</script>
-
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img8.jpeg)
 
-#### Filter search
+### Filter search
 
-You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when “[enableFilterSearch](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:enablefiltersearch)” property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
-You can configure the search filter by using “[filterType](http://docs.syncfusion.com/js/api/ejdropdownlist#members:filtertype)” property. There is two types of filter options:
+You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when [enableFilterSearch](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablefiltersearch) property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
+You can configure the search filter by using [filterType](http://help.syncfusion.com/js/api/ejdropdownlist#members:filtertype) property. There is two types of filter options,
+
 * Starts With 
 
 * Contains
@@ -752,7 +712,6 @@ N> Items are filtered based on “contains” filter type by default.
 
 {% highlight js %}
 
-    <script type="text/javascript">
     $(function() {
         var items = [{
             text: "Adams",
@@ -780,25 +739,24 @@ N> Items are filtered based on “contains” filter type by default.
             filterType: "startsWith"
         });
     });
-	</script>
-
+    
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img9.jpeg)
 
-### Validation
+## Validation
 
 You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage” to the DropDownList. 
 
-N> “[jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js#)” script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation/#).
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
-#### Validation Rules
+### Validation Rules
 
-The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using “[validationRules](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:validationrules)” property.
+The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using [validationRules](http://help.syncfusion.com/js/api/ejdropdownlist#members:validationrules) property.
 
-#### Validation Messages 
+### Validation Messages 
 
-You can set your own custom error message by using “[validationMessage](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:validationmessage)” property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/js/api/ejdropdownlist#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
 N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
 
@@ -817,8 +775,6 @@ Required field and min value validation is demonstrated in the below given examp
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
 	
     $(function() {
         var items = [{
@@ -854,8 +810,6 @@ Required field and min value validation is demonstrated in the below given examp
         });
     });
 	
-	</script>
-
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img10.jpeg)

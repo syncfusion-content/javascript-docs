@@ -7,167 +7,170 @@ control: DropDownList
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
-To populate data in the DropDownList widget, define [dataSource](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. You can bind either local array or oData, WebApi and other RESTful services in the DropDownList.
+To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. You can bind either local array or oData, WebApi and other RESTful services in the DropDownList.
 
-### Fields
+## Fields
 
 The following properties provides you a way to bind either local or remote data to the DropDownList widget.
 <table>
     <tr>
-        <th colspan=1 rowspan=1>
+        <th>
             Properties
             <br/>
         </th>
-        <th colspan=1 rowspan=1>
+        <th>
             Description
             <br/>
         </th>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             dataSource
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             The data source contains the list of data for generating the popup list items.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             query
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It specifies the query to retrieve the data from the online server.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             fields
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It specifies the mapping fields for the data items of the DropDownList widget.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             id
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It specifies the ID of the tag.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             text
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It specifies the text content of the tag.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             value
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It specifies the value of the tag.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             groupBy
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It is used to categorize the items based on a specific field.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             imageUrl
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It defines the image location.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             imageAttributes
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It defines the image attributes such as height, width, styles, etc.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             spriteCssClass
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It defines the sprite CSS for the image tag.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             htmlAttributes
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It defines the HTML attributes such as class and styles for an item.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             selected
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             This field defines the tag value to be selected initially. Corresponding field mapped has Boolean values to select the list items on control creation. The data with value true in this field is selected automatically when the control is initialized with checkbox.
             <br/>
         </td>
     </tr>
     <tr>
-        <td colspan=1 rowspan=1>
+        <td>
             tableName
             <br/>
         </td>
-        <td colspan=1 rowspan=1>
+        <td>
             It defines the table name for the tag value or displays text while rendering remote data.
             <br/>
         </td>
     </tr>
 </table>
 
-### Local Data
+## Local Data
 
-Define a JSON array and initialize the widget with [dataSource](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:datasource) property. Specify the column names in the “[fields](#_Fields)” property.
+Define a JSON array and initialize the widget with [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](#Fields) property.
 
 N> The columns are bounded automatically when the fields are specified with the default names like id, text, etc...
 
 {% highlight html %}
 
 	<input type="text" id="dropdown1" />
+    
+{% endhighlight %}
 
-	<style>
+{% highlight css %}
+
     	.imgId {
         	margin: 0;
         	padding: 3px 10px 3px 3px;
@@ -176,12 +179,11 @@ N> The columns are bounded automatically when the fields are specified with the 
         	height: 60px;
         	float: none;
     	}
-	</style>
+
 {% endhighlight %}
 
 {% highlight js %}
-
-	<script type="text/javascript">
+	
     $(function() {
         var empList = [{
             text: "Erik Linden",
@@ -227,8 +229,7 @@ N> The columns are bounded automatically when the fields are specified with the 
             },
             width: "200px"
         });
-    });
-	</script>	
+    });	
 
 {% endhighlight %}
 
@@ -236,7 +237,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 
 N> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_5rengelb) and  Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 	
-The JSON array to the [dataSource](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager), the [ej.JsonAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
+The JSON array to the [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](http://help.syncfusion.com/js/api/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](http://help.syncfusion.com/js/api/ejdatamanager), the [ej.JsonAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
 
 {% highlight html %}
 
@@ -244,9 +245,7 @@ The JSON array to the [dataSource](http://helpjs.syncfusion.com/js/api/ejdropdow
 	
 {% endhighlight %}
 
-{% highlight js %}
-
-	<script type="text/javascript">
+{% highlight js %}	
   
     $(function() {
         var items = [{
@@ -273,13 +272,14 @@ The JSON array to the [dataSource](http://helpjs.syncfusion.com/js/api/ejdropdow
   
     });
 
-	</script>
-
 {% endhighlight %}
-### Remote data 
+
+
+## Remote data 
 
 To bind remote data to the DropDownList, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property.
-#### OData
+
+### OData
 
 OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the 'ej.DataManager' class and then you can assign it to DropDownList 'dataSource'.
 
@@ -291,7 +291,6 @@ OData is a standardized protocol for creating and consuming data. You can provi
 
 {% highlight js %}
 
-    <script type="text/javascript">
     $(function() {
         var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
         $('#dropdown1').ejDropDownList({
@@ -301,13 +300,12 @@ OData is a standardized protocol for creating and consuming data. You can provi
                 value: "OrderID"
             }
         });
-    });
-    </script>     
+    });       
 
 {% endhighlight %}
            
           
-#### OData Version 4
+### OData Version 4
 
 For OData Version 4 support 'ej.ODataV4Adaptor' should be used. By using URL property of 'ej.DataManager' you can bind OData Version 4 Service link and specify  adaptor as ej.ODataV4Adaptor.
 Note: You can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new ej.ODataAdaptor). 
@@ -321,8 +319,7 @@ For further details about OData service please refer [the link](http://www.odata
 
 {% highlight js %}
 
-    <script type="text/javascript">
-     $(function() {
+    $(function() {
         var dataManager = ej.DataManager({
             url: "http://services.odata.org/V4/Northwind/Northwind.svc/Regions/",
             adaptor: new ej.ODataV4Adaptor()
@@ -335,18 +332,17 @@ For further details about OData service please refer [the link](http://www.odata
             }
         });
     });
-    </script>     
-
+  
 {% endhighlight %}
            
            
 ![](DataBinding_images/DataBinding_img2.jpeg)
 
-N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/js/api/ejdropdownlist#events ""). 
+N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/js/api/ejdropdownlist#events). 
 
-#### WebAPI
+### WebAPI
 
-Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
+Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
 
 {% highlight html %}
 
@@ -356,7 +352,6 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
 
 {% highlight js %}
 
-    <script type="text/javascript">
     $(function() {
         $("#dropdown1").ejDropDownList({
             dataSource: ej.DataManager({
@@ -369,7 +364,6 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
             }
         });
     });
-    </script>  
 
 {% endhighlight %}
 
@@ -392,9 +386,10 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
 
 ![](DataBinding_images/DataBinding_img3.jpeg)
 
-#### Other Restful web services
 
-The [Custom Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of 'ej.DataManager' allows to customize or generate your own adaptor which is used to process 'query' and 'result' data. 
+### Other Restful web services
+
+The [Custom Adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of 'ej.DataManager' allows to customize or generate your own adaptor which is used to process 'query' and 'result' data. 
 When using remote data binding, the adaptor of 'ej.DataManager' plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 {% highlight html %}
@@ -404,8 +399,6 @@ When using remote data binding, the adaptor of 'ej.DataManager' plays vital role
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
   
     $(function() {
         //custom adaptor
@@ -450,32 +443,34 @@ When using remote data binding, the adaptor of 'ej.DataManager' plays vital role
   
     });
 
-    </script>
-
 {% endhighlight %}
 
 ![](DataBinding_images/DataBinding_img4.jpeg)
 
-### Virtual Scrolling 
 
-To improve the performance when displaying large data set, you can use “[allowVirtualScrolling](http://docs.syncfusion.com/js/api/ejdropdownlist#members:allowvirtualscrolling)” and “virtualScrollMode” property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via Ajax request.
+## Virtual Scrolling 
+
+To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via Ajax request.
+
 This supports two modes of virtualization. They are,
+
 * Normal Mode
 
 * Continuous Mode
 
 
-Note: The following features are not supported by Virtual Scrolling
+N> The following features are not supported by Virtual Scrolling
+
 * Grouping 
 
 * Sorting
 
+“virtualScrollMode” property accepts both the string and ej.VirtualScrollMode enum value.
 
-N> “virtualScrollMode” property accepts both the string and ej.VirtualScrollMode enum value.
 
-#### Normal Mode
+### Normal Mode
 
-It loads the data on scrolling the list of items. This can be achieved by setting “[normal](http://docs.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode)” value to the 'virtualScrollMode' property.
+It loads the data on scrolling the list of items. This can be achieved by setting [normal](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the 'virtualScrollMode' property.
 
 {% highlight html %}
 
@@ -484,9 +479,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
-    
+  
         $(function() { 
             var dataManager = ej.DataManager({
                 url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
@@ -503,16 +496,14 @@ It loads the data on scrolling the list of items. This can be achieved by settin
             itemsCount: 7
         });
     });
-    
-    </script>
 
 {% endhighlight %}
 
-#### Continuous Mode
+### Continuous Mode
 
-It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting “[continuous](http://docs.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode)” value to the 'virtualScrollMode' property.
+It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting [continuous](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the 'virtualScrollMode' property.
 
-N> In both modes, set of items will be fetched based on the count specified in the “[itemsCount](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:itemscount)” property and next set of items will be loaded on scrolling.
+N> In both modes, set of items will be fetched based on the count specified in the [itemsCount](http://help.syncfusion.com/js/api/ejdropdownlist#members:itemscount) property and next set of items will be loaded on scrolling.
 
 {% highlight html %}
 
@@ -521,13 +512,11 @@ N> In both modes, set of items will be fetched based on the count specified in t
 {% endhighlight %}
 
 {% highlight js %}
-
-    <script type="text/javascript">
     
-        $(function() {
+       $(function() {        
         var dataManager = ej.DataManager({
             url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
-        });
+       });
         
         $('#dropdown1').ejDropDownList({
             dataSource: dataManager,
@@ -540,7 +529,6 @@ N> In both modes, set of items will be fetched based on the count specified in t
             itemsCount: 7
             });
         });
-        
-    </script>
+     
 
 {% endhighlight %}
