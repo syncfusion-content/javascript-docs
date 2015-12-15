@@ -7,10 +7,11 @@ control: DropDownList
 documentation: ug
 ---
 
-## State Persistence
+# State Persistence
 
-DropDownList stores its model is local storage by defining the property “[enablePersistence](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:enablepersistence)”.
+DropDownList stores its model is local storage by defining the property [enablePersistence](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablepersistence).
 You can sustain the below given functionalities in DropDownList by enabling persistence property,
+
 * selected items value in the textbox 
 
 * item’s selection state in the popup list 
@@ -18,6 +19,7 @@ You can sustain the below given functionalities in DropDownList by enabling pers
 
 Widget model will be stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
 The following properties are not included while maintaining DropDownList’s state in local storage to keep localStorage compact.
+
 * Fields
 
 * Data source
@@ -28,52 +30,48 @@ The following properties are not included while maintaining DropDownList’s sta
 {% highlight html %}
 
     <form id="form1">
-                
-                <input type="text" id="dropdown1" />
-                
-                <input type="submit" value="Post" />
-                
-     </form>
+
+        <input type="text" id="dropdown1" />
+
+        <input type="submit" value="Post" />
+
+    </form>
      
 {% endhighlight %}
 
 {% highlight js %}
 
-        <script type="text/javascript">
-			
-                 $(function() { 
-                        var items = [  {
-                            text: "Adams",
-                            value: "emp1"
-                        },  {
-                            text: "James",
-                            value: "emp2"
-                        },  {
-                            text: "Maria",
-                            value: "emp3"
-                        },  {
-                            text: "Jessica",
-                            value: "emp4"
-                        },  {
-                            text: "jenneth",
-                            value: "emp5"
-                        }];  
-						
-						$('#dropdown1').ejDropDownList({  
-							dataSource: items,  
-							fields: {
-                            	text: "text",
-                            	value: "value"
-                        	},  
-							enablePersistence: true 
-                    }); 
-                }); 
-				
-            </script>
+	$(function() {
+	    var items = [{
+	        text: "Adams",
+	        value: "emp1"
+	    }, {
+	        text: "James",
+	        value: "emp2"
+	    }, {
+	        text: "Maria",
+	        value: "emp3"
+	    }, {
+	        text: "Jessica",
+	        value: "emp4"
+	    }, {
+	        text: "jenneth",
+	        value: "emp5"
+	    }];
+
+	    $('#dropdown1').ejDropDownList({
+	        dataSource: items,
+	        fields: {
+	            text: "text",
+	            value: "value"
+	        },
+	        enablePersistence: true
+	    });
+	});      		
 
 {% endhighlight %}
 
-### Accessing currently stored state
+## Accessing currently stored state
 
 Persisted state can be accessed through local storage using corresponding key name. Key name formation would be in below order. It is combination of plugin name and control id.
 
