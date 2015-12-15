@@ -1,25 +1,23 @@
 ---
 layout: post
-title: API reference for ejDialog
-description: What are the options, methods and events available in Essential JavaScript Dialog.
+title: ejDialog
+description: Methods, members, events available in ejDialog
+documentation: API
 platform: js
-keywords: ejDialog, API, Essential JS Dialog, Dialog
-metaname: 
-metacontent: 
+keywords: ejDialog, API, Essential JS Dialog
 ---
 
 # ejDialog
 
-
-
 The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
+#### Syntax
 
+{% highlight js %}
 
+    $(element).ejDialog(options)
 
-
-$(element).ejDialog<span class="signature">(options)</span>
-
+{% endhighlight %}
 
 <table>
 <tr>
