@@ -44,9 +44,6 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 ![](/js/Chart/Working-with-Data_images/Working-with-Data_img1.png)
 
-Local Data Binding
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
 
@@ -73,9 +70,6 @@ Local Data Binding
 {% endhighlight %}
 
 ![](/js/Chart/Working-with-Data_images/Working-with-Data_img2.png)
-
-Plotting data with points
-{:.caption}
 
 ## Remote Data
 
@@ -104,7 +98,66 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 ![](/js/Chart/Working-with-Data_images/Working-with-Data_img3.png)
 
-Remote Data Binding
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	
+
+
+## AngularJS Data Binding
+
+Typically, you will assign data directly to chart using [`dataSource`](../api/ejchart#members:series-datasource) property of the series. In AngularJS, you need to bind the variable, which contains data in the AngularJS scope object, to the dataSource property as illustrated in the following code example,
+
+
+I> Essential JS includes AngularJS directives for all controls in the **ej.widget.angular.min.js** script file. 
+
+N> All the properties in EjChart supports one way AngularJS binding except inner array properties like **series.points[]**, **series.trendlines[]**. [Click](http://help.syncfusion.com/js/angularjs) here to know more about Essential AngularJS and the properties which support two way AngularJS binding in chart.  
+
+{% highlight html %}
+
+<html ng-app="syncApp">
+<head>
+    <script type="text/javascript" src="http://cdn.syncfusion.com/js/assets/external/jquery-2.1.4.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script src="https://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"></script>
+	<script src="https://cdn.syncfusion.com/13.2.0.29/js/common/ej.widget.angular.min.js"></script>
+</head>
+<body ng-controller="Chart">    
+                <div id="chartContainer" style="width:100%" ej-chart
+         				e-size-width="800px" e-size-height="600px" e-title-text="AngularJS Support" >				           
+                   <e-series>              
+                      <e-series e-name="John" e-dataSource=dataSource e-xName="Day" e-yName="John">					 
+					  </e-series>
+					  <e-series e-name="Hendry"  e-dataSource=dataSource e-xName="Day" e-yName="Hendry">					   
+					  </e-series>
+                    </e-series>
+				</div>            
+</body>
+</html>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+        var obj = [
+                { "Day": 1, "John": 57, "Hendry": 43 },
+                { "Day": 2, "John": 73, "Hendry": 27 },
+                { "Day": 3, "John": 49, "Hendry": 51 },
+                { "Day": 4, "John": 63, "Hendry": 37 },
+                { "Day": 5, "John": 44, "Hendry": 56 },
+                { "Day": 6, "John": 49, "Hendry": 51 },
+                { "Day": 7, "John": 61, "Hendry": 39 },
+                { "Day": 8, "John": 35, "Hendry": 65 },
+                { "Day": 9, "John": 45, "Hendry": 55 },
+                { "Day": 10, "John": 37, "Hendry": 63 }
+        ];
+        angular.module('syncApp', ['ejangular'])
+            .controller('Chart', function ($scope) {
+                $scope.dataSource = obj;
+            });
+
+{% endhighlight %}
+
+
+![](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/angularsupport/chart) here to view the AngularJS data binding online demo sample.	
