@@ -121,16 +121,15 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 	<script src="https://cdn.syncfusion.com/13.2.0.29/js/common/ej.widget.angular.min.js"></script>
 </head>
 <body ng-controller="Chart">    
-  <div id="chartContainer" style="width:100%" ej-chart
-               e-size-width="800px" e-size-height="600px" 
-                             e-title-text="AngularJS Support" >				           
-    <e-series>              
-      <e-series e-name="John" e-dataSource=dataSource e-xName="Day" e-yName="John">					 
-	  </e-series>
-    <e-series e-name="Hendry"  e-dataSource=dataSource e-xName="Day" e-yName="Hendry">					   
-	  </e-series>
-    </e-series>
- </div>            
+                <div id="chartContainer" style="width:100%" ej-chart
+         				e-size-width="800px" e-size-height="600px" e-title-text="AngularJS Support" >				           
+                   <e-series>              
+                      <e-series e-name="John" e-dataSource=dataSource e-xName="Day" e-yName="John">					 
+					  </e-series>
+					  <e-series e-name="Hendry"  e-dataSource=dataSource e-xName="Day" e-yName="Hendry">					   
+					  </e-series>
+                    </e-series>
+				</div>            
 </body>
 </html>
 
@@ -139,7 +138,6 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
 {% highlight js %}
 
-       //Generated dataSource for chart.
         var obj = [
                 { "Day": 1, "John": 57, "Hendry": 43 },
                 { "Day": 2, "John": 73, "Hendry": 27 },
@@ -152,11 +150,8 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
                 { "Day": 9, "John": 45, "Hendry": 55 },
                 { "Day": 10, "John": 37, "Hendry": 63 }
         ];
-        
-        
         angular.module('syncApp', ['ejangular'])
             .controller('Chart', function ($scope) {
-                //Assigning data to the dataSource variable in the $scope object.
                 $scope.dataSource = obj;
             });
 
