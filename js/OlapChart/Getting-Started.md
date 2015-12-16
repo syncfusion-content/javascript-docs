@@ -200,7 +200,7 @@ namespace OlapChartDemo
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager = new OlapDataManager(connectionString);
-                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
                 return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
      
             }
