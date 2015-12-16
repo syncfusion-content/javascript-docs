@@ -25,8 +25,8 @@ metacontent:
 
 
 
-### Alignment<span class="type-signature type string">string</span>
-{:#members:alignment}
+### Alignment
+{:#enum:alignment}
 
 
 
@@ -42,8 +42,8 @@ Enum for alignment. 12
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -60,25 +60,25 @@ Enum for alignment. 12
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Sets the lineJoin to center.</td>
+<td class="description">Sets the lineJoin to center.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">Sets the lineJoin to near.</td>
+<td class="description">Sets the lineJoin to near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">Sets the lineJoin to far.</td>
+<td class="description">Sets the lineJoin to far.</td>
 </tr>
 </tbody>
 </table>
@@ -97,8 +97,8 @@ Far{% endhighlight %}</td>
 
 
 
-### ArrowShapes<span class="type-signature type arrowshapes"><a href="global.html#ArrowShapes">ArrowShapes</a></span>
-{:#members:arrowshapes}
+### ArrowShapes
+{:#enum:arrowshapes}
 
 
 
@@ -114,8 +114,8 @@ Enum for the ArrowShapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -132,60 +132,60 @@ Enum for the ArrowShapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+None</td>
+<td class="type">ArrowShapes</td>
 <td class="default">none</td>
-<td class="description last"></td>
+<td class="description"></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CircularArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+CircularArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">circulararrow</td>
-<td class="description last">Used to specify node Shape as CircularArrow</td>
+<td class="description">Used to specify node Shape as CircularArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CurvedRightArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+CurvedRightArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">curvedrightarrow</td>
-<td class="description last">Used to specify node Shape as CurvedRightArrow</td>
+<td class="description">Used to specify node Shape as CurvedRightArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CurvedUpArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+CurvedUpArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">curveduparrow</td>
-<td class="description last">Used to specify node Shape as CurvedUpArrow</td>
+<td class="description">Used to specify node Shape as CurvedUpArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CurvedLeftArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+CurvedLeftArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">curvedleftarrow</td>
-<td class="description last">Used to specify node Shape as CurvedLeftArrow</td>
+<td class="description">Used to specify node Shape as CurvedLeftArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CurvedDownArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+CurvedDownArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">curveddownarrow</td>
-<td class="description last">Used to specify node Shape as CurvedDownArrow</td>
+<td class="description">Used to specify node Shape as CurvedDownArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-JumpingRightArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+JumpingRightArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">jumpingrightarrow</td>
-<td class="description last">Used to specify node Shape as JumpingRightArrow</td>
+<td class="description">Used to specify node Shape as JumpingRightArrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-JumpingLeftArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ArrowShapes">ArrowShapes</a></span></td>
+<td class="name">
+JumpingLeftArrow</td>
+<td class="type">ArrowShapes</td>
 <td class="default">jumpingleftarrow</td>
-<td class="description last">Used to specify node Shape as JumpingLeftArrow</td>
+<td class="description">Used to specify node Shape as JumpingLeftArrow</td>
 </tr>
 </tbody>
 </table>
@@ -203,55 +203,8 @@ JumpingLeftArrow{% endhighlight %}</td>
 
 
 
-
-### autoScrollBorder<span class="type-signature type object">object</span>
-{:#members:autoscrollborder}
-
-
-
-
-
-
-
-
-Specifics the auto scroll starting point of diagram control.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* { autoScrollBorder: { left: 15, top: 15, right: 15, bottom: 15 }}
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-//scrollableArea of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {autoScrollBorder: { left: 15, top: 15, right: 15, bottom: 15 }}}); {% endhighlight %}
-
-
-
-
-
-
-
-### BasicShapes<span class="type-signature type basicshapes"><a href="global.html#BasicShapes">BasicShapes</a></span>
-{:#members:basicshapes}
+### BasicShapes
+{:#enum:basicshapes}
 
 
 
@@ -267,8 +220,8 @@ Enum for the BasicShapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -285,102 +238,102 @@ Enum for the BasicShapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">BasicShapes</td>
 <td class="default">rectangle</td>
-<td class="description last">Used to specify node Shape as Rectangle</td>
+<td class="description">Used to specify node Shape as Rectangle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Ellipse{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Ellipse</td>
+<td class="type">BasicShapes</td>
 <td class="default">ellipse</td>
-<td class="description last">Used to specify node Shape as Ellipse</td>
+<td class="description">Used to specify node Shape as Ellipse</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Path{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Path</td>
+<td class="type">BasicShapes</td>
 <td class="default">path</td>
-<td class="description last">Used to specify node Shape as Path</td>
+<td class="description">Used to specify node Shape as Path</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Polygon{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Polygon</td>
+<td class="type">BasicShapes</td>
 <td class="default">polygon</td>
-<td class="description last">Used to specify node Shape as Polygon</td>
+<td class="description">Used to specify node Shape as Polygon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Triangle</td>
+<td class="type">BasicShapes</td>
 <td class="default">triangle</td>
-<td class="description last">Used to specify node Shape as Triangle</td>
+<td class="description">Used to specify node Shape as Triangle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Plus{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Plus</td>
+<td class="type">BasicShapes</td>
 <td class="default">plus</td>
-<td class="description last">Used to specify node Shape as Plus</td>
+<td class="description">Used to specify node Shape as Plus</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Star</td>
+<td class="type">BasicShapes</td>
 <td class="default">star</td>
-<td class="description last">Used to specify node Shape as Star</td>
+<td class="description">Used to specify node Shape as Star</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">BasicShapes</td>
 <td class="default">pentagon</td>
-<td class="description last">Used to specify node Shape as Pentagon</td>
+<td class="description">Used to specify node Shape as Pentagon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Heptagon{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Heptagon</td>
+<td class="type">BasicShapes</td>
 <td class="default">heptagon</td>
-<td class="description last">Used to specify node Shape as Heptagon</td>
+<td class="description">Used to specify node Shape as Heptagon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Octagon{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Octagon</td>
+<td class="type">BasicShapes</td>
 <td class="default">octagon</td>
-<td class="description last">Used to specify node Shape as Octagon</td>
+<td class="description">Used to specify node Shape as Octagon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">BasicShapes</td>
 <td class="default">trapezoid</td>
-<td class="description last">Used to specify node Shape as Trapezoid</td>
+<td class="description">Used to specify node Shape as Trapezoid</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Decagon{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Decagon</td>
+<td class="type">BasicShapes</td>
 <td class="default">decagon</td>
-<td class="description last">Used to specify node Shape as Decagon</td>
+<td class="description">Used to specify node Shape as Decagon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightTriangle{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+RightTriangle</td>
+<td class="type">BasicShapes</td>
 <td class="default">righttriangle</td>
-<td class="description last">Used to specify node Shape as RightTriangle</td>
+<td class="description">Used to specify node Shape as RightTriangle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Cylinder{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BasicShapes">BasicShapes</a></span></td>
+<td class="name">
+Cylinder</td>
+<td class="type">BasicShapes</td>
 <td class="default">cylinder</td>
-<td class="description last">Used to specify node Shape as Cylinder</td>
+<td class="description">Used to specify node Shape as Cylinder</td>
 </tr>
 </tbody>
 </table>
@@ -399,8 +352,8 @@ Cylinder{% endhighlight %}</td>
 
 
 
-### BingMapType<span class="type-signature type string">string</span>
-{:#members:bingmaptype}
+### BingMapType
+{:#enum:bingmaptype}
 
 
 
@@ -416,8 +369,8 @@ Enum for Map Bing map types
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -434,25 +387,25 @@ Enum for Map Bing map types
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Aerial{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Aerial</td>
+<td class="type">string</td>
 <td class="default">aerial</td>
-<td class="description last">support for bing map type aerial.</td>
+<td class="description">support for bing map type aerial.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-AerialWithLabel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+AerialWithLabel</td>
+<td class="type">string</td>
 <td class="default">aerialwithlabel</td>
-<td class="description last">support for bing map type aerialwithlabel.</td>
+<td class="description">support for bing map type aerialwithlabel.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Road{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Road</td>
+<td class="type">string</td>
 <td class="default">road</td>
-<td class="description last">support for bing map type road.</td>
+<td class="description">support for bing map type road.</td>
 </tr>
 </tbody>
 </table>
@@ -471,8 +424,8 @@ Road{% endhighlight %}</td>
 
 
 
-### BPMNActivity<span class="type-signature type bpmnactivity"><a href="global.html#BPMNActivity">BPMNActivity</a></span>
-{:#members:bpmnactivity}
+### BPMNActivity
+{:#enum:bpmnactivity}
 
 
 
@@ -488,8 +441,8 @@ Enum for the BPMNActivity in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -506,25 +459,25 @@ Enum for the BPMNActivity in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNActivity">BPMNActivity</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNActivity</td>
 <td class="default">none</td>
-<td class="description last">Used to set BPMN Activity as None</td>
+<td class="description">Used to set BPMN Activity as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Task{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNActivity">BPMNActivity</a></span></td>
+<td class="name">
+Task</td>
+<td class="type">BPMNActivity</td>
 <td class="default">task</td>
-<td class="description last">Used to set BPMN Activity as Task</td>
+<td class="description">Used to set BPMN Activity as Task</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SubProcess{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNActivity">BPMNActivity</a></span></td>
+<td class="name">
+SubProcess</td>
+<td class="type">BPMNActivity</td>
 <td class="default">subprocess</td>
-<td class="description last">Used to set BPMN Activity as SubProcess</td>
+<td class="description">Used to set BPMN Activity as SubProcess</td>
 </tr>
 </tbody>
 </table>
@@ -543,8 +496,8 @@ SubProcess{% endhighlight %}</td>
 
 
 
-### BPMNBoundary<span class="type-signature type bpmnboundary"><a href="global.html#BPMNBoundary">BPMNBoundary</a></span>
-{:#members:bpmnboundary}
+### BPMNBoundary
+{:#enum:bpmnboundary}
 
 
 
@@ -560,8 +513,8 @@ Enum for the BPMNBoundary in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -578,25 +531,25 @@ Enum for the BPMNBoundary in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNBoundary">BPMNBoundary</a></span></td>
+<td class="name">
+Default</td>
+<td class="type">BPMNBoundary</td>
 <td class="default">default</td>
-<td class="description last">Used to set BPMN SubProcess's Boundary as Default</td>
+<td class="description">Used to set BPMN SubProcess's Boundary as Default</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Call{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNBoundary">BPMNBoundary</a></span></td>
+<td class="name">
+Call</td>
+<td class="type">BPMNBoundary</td>
 <td class="default">call</td>
-<td class="description last">Used to set BPMN SubProcess's Boundary as Call</td>
+<td class="description">Used to set BPMN SubProcess's Boundary as Call</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Event{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNBoundary">BPMNBoundary</a></span></td>
+<td class="name">
+Event</td>
+<td class="type">BPMNBoundary</td>
 <td class="default">event</td>
-<td class="description last">Used to set BPMN SubProcess's Boundary as Event</td>
+<td class="description">Used to set BPMN SubProcess's Boundary as Event</td>
 </tr>
 </tbody>
 </table>
@@ -615,8 +568,8 @@ Event{% endhighlight %}</td>
 
 
 
-### BPMNDirections<span class="type-signature type bpmndirections"><a href="global.html#BPMNDirections">BPMNDirections</a></span>
-{:#members:bpmndirections}
+### BPMNDirections
+{:#enum:bpmndirections}
 
 
 
@@ -632,8 +585,8 @@ Enum for the BPMNDirections in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -650,25 +603,25 @@ Enum for the BPMNDirections in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNDirections">BPMNDirections</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNDirections</td>
 <td class="default">none</td>
-<td class="description last">Used to set BPMN Flow Direction as None</td>
+<td class="description">Used to set BPMN Flow Direction as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-UniDirectional{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNDirections">BPMNDirections</a></span></td>
+<td class="name">
+UniDirectional</td>
+<td class="type">BPMNDirections</td>
 <td class="default">unidirectional</td>
-<td class="description last">Used to set BPMN Flow Direction as UniDirectional</td>
+<td class="description">Used to set BPMN Flow Direction as UniDirectional</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BiDirectional{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNDirections">BPMNDirections</a></span></td>
+<td class="name">
+BiDirectional</td>
+<td class="type">BPMNDirections</td>
 <td class="default">bidirectional</td>
-<td class="description last">Used to set BPMN Flow Direction as BiDirectional</td>
+<td class="description">Used to set BPMN Flow Direction as BiDirectional</td>
 </tr>
 </tbody>
 </table>
@@ -687,8 +640,8 @@ BiDirectional{% endhighlight %}</td>
 
 
 
-### BPMNEvents<span class="type-signature type bpmnevents"><a href="global.html#BPMNEvents">BPMNEvents</a></span>
-{:#members:bpmnevents}
+### BPMNEvents
+{:#enum:bpmnevents}
 
 
 
@@ -704,8 +657,8 @@ Enum for the BPMNEvents in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -722,39 +675,39 @@ Enum for the BPMNEvents in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Start{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNEvents">BPMNEvents</a></span></td>
+<td class="name">
+Start</td>
+<td class="type">BPMNEvents</td>
 <td class="default">start</td>
-<td class="description last">Used to set BPMN Event as Start</td>
+<td class="description">Used to set BPMN Event as Start</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Intermediate{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNEvents">BPMNEvents</a></span></td>
+<td class="name">
+Intermediate</td>
+<td class="type">BPMNEvents</td>
 <td class="default">intermediate</td>
-<td class="description last">Used to set BPMN Event as Intermediate</td>
+<td class="description">Used to set BPMN Event as Intermediate</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-End{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNEvents">BPMNEvents</a></span></td>
+<td class="name">
+End</td>
+<td class="type">BPMNEvents</td>
 <td class="default">end</td>
-<td class="description last">Used to set BPMN Event as End</td>
+<td class="description">Used to set BPMN Event as End</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-NonInterruptingStart{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNEvents">BPMNEvents</a></span></td>
+<td class="name">
+NonInterruptingStart</td>
+<td class="type">BPMNEvents</td>
 <td class="default">noninterruptingstart</td>
-<td class="description last">Used to set BPMN Event as NonInterruptingStart</td>
+<td class="description">Used to set BPMN Event as NonInterruptingStart</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-NonInterruptingIntermediate{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNEvents">BPMNEvents</a></span></td>
+<td class="name">
+NonInterruptingIntermediate</td>
+<td class="type">BPMNEvents</td>
 <td class="default">noninterruptingintermediate</td>
-<td class="description last">Used to set BPMN Event as NonInterruptingIntermediate</td>
+<td class="description">Used to set BPMN Event as NonInterruptingIntermediate</td>
 </tr>
 </tbody>
 </table>
@@ -773,8 +726,8 @@ NonInterruptingIntermediate{% endhighlight %}</td>
 
 
 
-### BPMNGateways<span class="type-signature type bpmngateways"><a href="global.html#BPMNGateways">BPMNGateways</a></span>
-{:#members:bpmngateways}
+### BPMNGateways
+{:#enum:bpmngateways}
 
 
 
@@ -790,8 +743,8 @@ Enum for the BPMNGateways in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -808,46 +761,46 @@ Enum for the BPMNGateways in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNGateways</td>
 <td class="default">none</td>
-<td class="description last">Used to set BPMN Gateway as None</td>
+<td class="description">Used to set BPMN Gateway as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Exclusive{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+Exclusive</td>
+<td class="type">BPMNGateways</td>
 <td class="default">exclusive</td>
-<td class="description last">Used to set BPMN Gateway as Exclusive</td>
+<td class="description">Used to set BPMN Gateway as Exclusive</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Inclusive{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+Inclusive</td>
+<td class="type">BPMNGateways</td>
 <td class="default">inclusive</td>
-<td class="description last">Used to set BPMN Gateway as Inclusive</td>
+<td class="description">Used to set BPMN Gateway as Inclusive</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Parallel{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+Parallel</td>
+<td class="type">BPMNGateways</td>
 <td class="default">parallel</td>
-<td class="description last">Used to set BPMN Gateway as Parallel</td>
+<td class="description">Used to set BPMN Gateway as Parallel</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Complex{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+Complex</td>
+<td class="type">BPMNGateways</td>
 <td class="default">complex</td>
-<td class="description last">Used to set BPMN Gateway as Complex</td>
+<td class="description">Used to set BPMN Gateway as Complex</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-EventBased{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNGateways">BPMNGateways</a></span></td>
+<td class="name">
+EventBased</td>
+<td class="type">BPMNGateways</td>
 <td class="default">eventbased</td>
-<td class="description last">Used to set BPMN Gateway as EventBased</td>
+<td class="description">Used to set BPMN Gateway as EventBased</td>
 </tr>
 </tbody>
 </table>
@@ -866,8 +819,8 @@ EventBased{% endhighlight %}</td>
 
 
 
-### BPMNLoops<span class="type-signature type bpmnloops"><a href="global.html#BPMNLoops">BPMNLoops</a></span>
-{:#members:bpmnloops}
+### BPMNLoops
+{:#enum:bpmnloops}
 
 
 
@@ -883,8 +836,8 @@ Enum for the BPMNLoops in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -901,32 +854,32 @@ Enum for the BPMNLoops in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNLoops">BPMNLoops</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNLoops</td>
 <td class="default">none</td>
-<td class="description last">Used to set BPMN Activity's Loop as None</td>
+<td class="description">Used to set BPMN Activity's Loop as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Standard{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNLoops">BPMNLoops</a></span></td>
+<td class="name">
+Standard</td>
+<td class="type">BPMNLoops</td>
 <td class="default">standard</td>
-<td class="description last">Used to set BPMN Activity's Loop as Standard</td>
+<td class="description">Used to set BPMN Activity's Loop as Standard</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ParallelMultiInstance{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNLoops">BPMNLoops</a></span></td>
+<td class="name">
+ParallelMultiInstance</td>
+<td class="type">BPMNLoops</td>
 <td class="default">parallelmultiinstance</td>
-<td class="description last">Used to set BPMN Activity's Loop as ParallelMultiInstance</td>
+<td class="description">Used to set BPMN Activity's Loop as ParallelMultiInstance</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SequenceMultiInstance{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNLoops">BPMNLoops</a></span></td>
+<td class="name">
+SequenceMultiInstance</td>
+<td class="type">BPMNLoops</td>
 <td class="default">sequencemultiinstance</td>
-<td class="description last">Used to set BPMN Activity's Loop as SequenceMultiInstance</td>
+<td class="description">Used to set BPMN Activity's Loop as SequenceMultiInstance</td>
 </tr>
 </tbody>
 </table>
@@ -945,8 +898,8 @@ SequenceMultiInstance{% endhighlight %}</td>
 
 
 
-### BPMNShapes<span class="type-signature type bpmnshapes"><a href="global.html#BPMNShapes">BPMNShapes</a></span>
-{:#members:bpmnshapes}
+### BPMNShapes
+{:#enum:bpmnshapes}
 
 
 
@@ -962,8 +915,8 @@ Enum for the BPMNShapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -980,67 +933,67 @@ Enum for the BPMNShapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Event{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+Event</td>
+<td class="type">BPMNShapes</td>
 <td class="default">event</td>
-<td class="description last">Used to specify node Shape as Event</td>
+<td class="description">Used to specify node Shape as Event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Gateway{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+Gateway</td>
+<td class="type">BPMNShapes</td>
 <td class="default">gateway</td>
-<td class="description last">Used to specify node Shape as Gateway</td>
+<td class="description">Used to specify node Shape as Gateway</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SequentialFlow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+SequentialFlow</td>
+<td class="type">BPMNShapes</td>
 <td class="default">sequentialflow</td>
-<td class="description last">Used to specify node Shape as SequentialFlow</td>
+<td class="description">Used to specify node Shape as SequentialFlow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-AssociationFlow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+AssociationFlow</td>
+<td class="type">BPMNShapes</td>
 <td class="default">associationflow</td>
-<td class="description last">Used to specify node Shape as AssociationFlow</td>
+<td class="description">Used to specify node Shape as AssociationFlow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MessageFlow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+MessageFlow</td>
+<td class="type">BPMNShapes</td>
 <td class="default">messageflow</td>
-<td class="description last">Used to specify node Shape as MessageFlow</td>
+<td class="description">Used to specify node Shape as MessageFlow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Message{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+Message</td>
+<td class="type">BPMNShapes</td>
 <td class="default">message</td>
-<td class="description last">Used to specify node Shape as Message</td>
+<td class="description">Used to specify node Shape as Message</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DataObject{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+DataObject</td>
+<td class="type">BPMNShapes</td>
 <td class="default">dataobject</td>
-<td class="description last">Used to specify node Shape as DataObject</td>
+<td class="description">Used to specify node Shape as DataObject</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DataSource{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+DataSource</td>
+<td class="type">BPMNShapes</td>
 <td class="default">datasource</td>
-<td class="description last">Used to specify node Shape as DataSource</td>
+<td class="description">Used to specify node Shape as DataSource</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Activity{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNShapes">BPMNShapes</a></span></td>
+<td class="name">
+Activity</td>
+<td class="type">BPMNShapes</td>
 <td class="default">activity</td>
-<td class="description last">Used to specify node Shape as Activity</td>
+<td class="description">Used to specify node Shape as Activity</td>
 </tr>
 </tbody>
 </table>
@@ -1059,8 +1012,8 @@ Activity{% endhighlight %}</td>
 
 
 
-### BPMNTasks<span class="type-signature type bpmntasks"><a href="global.html#BPMNTasks">BPMNTasks</a></span>
-{:#members:bpmntasks}
+### BPMNTasks
+{:#enum:bpmntasks}
 
 
 
@@ -1076,8 +1029,8 @@ Enum for the BPMNTasks in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1094,74 +1047,74 @@ Enum for the BPMNTasks in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNTasks</td>
 <td class="default">none</td>
-<td class="description last">Used to set BPMN Task Type as None</td>
+<td class="description">Used to set BPMN Task Type as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Service{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Service</td>
+<td class="type">BPMNTasks</td>
 <td class="default">service</td>
-<td class="description last">Used to set BPMN Task Type as Service</td>
+<td class="description">Used to set BPMN Task Type as Service</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Receive{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Receive</td>
+<td class="type">BPMNTasks</td>
 <td class="default">receive</td>
-<td class="description last">Used to set BPMN Task Type as Receive</td>
+<td class="description">Used to set BPMN Task Type as Receive</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Send{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Send</td>
+<td class="type">BPMNTasks</td>
 <td class="default">send</td>
-<td class="description last">Used to set BPMN Task Type as Send</td>
+<td class="description">Used to set BPMN Task Type as Send</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-InstantiatingReceive{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+InstantiatingReceive</td>
+<td class="type">BPMNTasks</td>
 <td class="default">instantiatingreceive</td>
-<td class="description last">Used to set BPMN Task Type as InstantiatingReceive</td>
+<td class="description">Used to set BPMN Task Type as InstantiatingReceive</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Manual{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Manual</td>
+<td class="type">BPMNTasks</td>
 <td class="default">manual</td>
-<td class="description last">Used to set BPMN Task Type as Manual</td>
+<td class="description">Used to set BPMN Task Type as Manual</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BusinessRule{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+BusinessRule</td>
+<td class="type">BPMNTasks</td>
 <td class="default">businessrule</td>
-<td class="description last">Used to set BPMN Task Type as BusinessRule</td>
+<td class="description">Used to set BPMN Task Type as BusinessRule</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-User{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+User</td>
+<td class="type">BPMNTasks</td>
 <td class="default">user</td>
-<td class="description last">Used to set BPMN Task Type as User</td>
+<td class="description">Used to set BPMN Task Type as User</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Script{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Script</td>
+<td class="type">BPMNTasks</td>
 <td class="default">script</td>
-<td class="description last">Used to set BPMN Task Type as Script</td>
+<td class="description">Used to set BPMN Task Type as Script</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Parallel{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTasks">BPMNTasks</a></span></td>
+<td class="name">
+Parallel</td>
+<td class="type">BPMNTasks</td>
 <td class="default">parallel</td>
-<td class="description last">Used to set BPMN Task Type as Parallel</td>
+<td class="description">Used to set BPMN Task Type as Parallel</td>
 </tr>
 </tbody>
 </table>
@@ -1180,8 +1133,8 @@ Parallel{% endhighlight %}</td>
 
 
 
-### BPMNTriggers<span class="type-signature type bpmntriggers"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span>
-{:#members:bpmntriggers}
+### BPMNTriggers
+{:#enum:bpmntriggers}
 
 
 
@@ -1197,8 +1150,8 @@ Enum for the BPMNTriggers in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1215,74 +1168,74 @@ Enum for the BPMNTriggers in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+None</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">none</td>
-<td class="description last">Used to set Event Triger as None</td>
+<td class="description">Used to set Event Triger as None</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Message{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Message</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">message</td>
-<td class="description last">Used to set Event Triger as Message</td>
+<td class="description">Used to set Event Triger as Message</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Timer{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Timer</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">timer</td>
-<td class="description last">Used to set Event Triger as Timer</td>
+<td class="description">Used to set Event Triger as Timer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Escalation{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Escalation</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">escalation</td>
-<td class="description last">Used to set Event Triger as Escalation</td>
+<td class="description">Used to set Event Triger as Escalation</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Link{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Link</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">link</td>
-<td class="description last">Used to set Event Triger as Link</td>
+<td class="description">Used to set Event Triger as Link</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Error{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Error</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">error</td>
-<td class="description last">Used to set Event Triger as Error</td>
+<td class="description">Used to set Event Triger as Error</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Compensation{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Compensation</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">compensation</td>
-<td class="description last">Used to set Event Triger as Compensation</td>
+<td class="description">Used to set Event Triger as Compensation</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Signal{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Signal</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">signal</td>
-<td class="description last">Used to set Event Triger as Signal</td>
+<td class="description">Used to set Event Triger as Signal</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Multiple{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Multiple</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">multiple</td>
-<td class="description last">Used to set Event Triger as Multiple</td>
+<td class="description">Used to set Event Triger as Multiple</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Parallel{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span></td>
+<td class="name">
+Parallel</td>
+<td class="type">BPMNTriggers</td>
 <td class="default">parallel</td>
-<td class="description last">Used to set Event Triger as Parallel</td>
+<td class="description">Used to set Event Triger as Parallel</td>
 </tr>
 </tbody>
 </table>
@@ -1301,8 +1254,8 @@ Parallel{% endhighlight %}</td>
 
 
 
-### ButtonStyle<span class="type-signature type string">string</span>
-{:#members:buttonstyle}
+### ButtonStyle
+{:#enum:buttonstyle}
 
 
 
@@ -1318,8 +1271,8 @@ Enum for ej.mobile.Menu.IOS7.ButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1336,32 +1289,32 @@ Enum for ej.mobile.Menu.IOS7.ButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal ios7 button style</td>
+<td class="description">Enum for normal ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for back ios7 button style</td>
+<td class="description">Enum for back ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for header ios7 button style</td>
+<td class="description">Enum for header ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dialog{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Dialog</td>
+<td class="type">string</td>
 <td class="default">dialog</td>
-<td class="description last">Enum for dialog ios7 button style</td>
+<td class="description">Enum for dialog ios7 button style</td>
 </tr>
 </tbody>
 </table>
@@ -1380,8 +1333,8 @@ Dialog{% endhighlight %}</td>
 
 
 
-### CancelButtonColor<span class="type-signature type string">string</span>
-{:#members:cancelbuttoncolor}
+### CancelButtonColor
+{:#enum:cancelbuttoncolor}
 
 
 
@@ -1397,8 +1350,8 @@ Enum for ej.mobile.Menu.IOS7.CancelButtonColor
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1415,39 +1368,39 @@ Enum for ej.mobile.Menu.IOS7.CancelButtonColor
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Blue{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Blue</td>
+<td class="type">string</td>
 <td class="default">blue</td>
-<td class="description last">Enum for blue color button in ios7 mode</td>
+<td class="description">Enum for blue color button in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Gray{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Gray</td>
+<td class="type">string</td>
 <td class="default">gray</td>
-<td class="description last">Enum for gray color button in ios7 mode</td>
+<td class="description">Enum for gray color button in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Black{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Black</td>
+<td class="type">string</td>
 <td class="default">black</td>
-<td class="description last">Enum for black color button in ios7 mode</td>
+<td class="description">Enum for black color button in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Green{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Green</td>
+<td class="type">string</td>
 <td class="default">green</td>
-<td class="description last">Enum for green color button in ios7 mode</td>
+<td class="description">Enum for green color button in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Red{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Red</td>
+<td class="type">string</td>
 <td class="default">red</td>
-<td class="description last">Enum for red color button in ios7 mode</td>
+<td class="description">Enum for red color button in ios7 mode</td>
 </tr>
 </tbody>
 </table>
@@ -1466,8 +1419,8 @@ Red{% endhighlight %}</td>
 
 
 
-### CharacterType<span class="type-signature type string">string</span>
-{:#members:charactertype}
+### CharacterType
+{:#enum:charactertype}
 
 
 
@@ -1483,8 +1436,8 @@ Enum for gauge CharacterType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1501,39 +1454,39 @@ Enum for gauge CharacterType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-SevenSegment{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SevenSegment</td>
+<td class="type">string</td>
 <td class="default">sevensegment</td>
-<td class="description last">To set the CharacterType sevensegment.</td>
+<td class="description">To set the CharacterType sevensegment.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-FourteenSegment{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+FourteenSegment</td>
+<td class="type">string</td>
 <td class="default">fourteensegment</td>
-<td class="description last">To set the CharacterType fourteensegment.</td>
+<td class="description">To set the CharacterType fourteensegment.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SixteenSegment{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SixteenSegment</td>
+<td class="type">string</td>
 <td class="default">sixteensegment</td>
-<td class="description last">To set the CharacterType sixteensegment.</td>
+<td class="description">To set the CharacterType sixteensegment.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-EightCrossEightDotMatrix{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+EightCrossEightDotMatrix</td>
+<td class="type">string</td>
 <td class="default">eightcrosseightdotmatrix</td>
-<td class="description last">To set the CharacterType eightcrosseightdotmatrix.</td>
+<td class="description">To set the CharacterType eightcrosseightdotmatrix.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-EightCrossEightSquareMatrix{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+EightCrossEightSquareMatrix</td>
+<td class="type">string</td>
 <td class="default">eightcrosseightsquarematrix</td>
-<td class="description last">To set the CharacterType eightcrosseightsquarematrix.</td>
+<td class="description">To set the CharacterType eightcrosseightsquarematrix.</td>
 </tr>
 </tbody>
 </table>
@@ -1552,8 +1505,8 @@ EightCrossEightSquareMatrix{% endhighlight %}</td>
 
 
 
-### ChartOrientations<span class="type-signature type string">String</span>
-{:#members:chartorientations}
+### ChartOrientations
+{:#enum:chartorientations}
 
 
 
@@ -1569,8 +1522,8 @@ Enum for ChartOrientations in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1587,18 +1540,18 @@ Enum for ChartOrientations in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Used to set horizontal organizational chart orientation</td>
+<td class="description">Used to set horizontal organizational chart orientation</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Used to set vertical organizational chart orientation</td>
+<td class="description">Used to set vertical organizational chart orientation</td>
 </tr>
 </tbody>
 </table>
@@ -1617,8 +1570,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### ChartTypes<span class="type-signature type string">String</span>
-{:#members:charttypes}
+### ChartTypes
+{:#enum:charttypes}
 
 
 
@@ -1634,8 +1587,8 @@ Enum for ChartTypes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1652,32 +1605,32 @@ Enum for ChartTypes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Used to arrange the children at left side of parent</td>
+<td class="description">Used to arrange the children at left side of parent</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Used to arrange the children at right side of parent</td>
+<td class="description">Used to arrange the children at right side of parent</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Alternate{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Alternate</td>
+<td class="type">string</td>
 <td class="default">alternate</td>
-<td class="description last">Used to arrange the children at alternative sides(left,right) of parent</td>
+<td class="description">Used to arrange the children at alternative sides(left,right) of parent</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Used to arrange the children with respect to the middle of parent</td>
+<td class="description">Used to arrange the children with respect to the middle of parent</td>
 </tr>
 </tbody>
 </table>
@@ -1696,8 +1649,8 @@ Center{% endhighlight %}</td>
 
 
 
-### CheckState<span class="type-signature type string">string</span>
-{:#members:checkstate}
+### CheckState
+{:#enum:checkstate}
 
 
 
@@ -1713,8 +1666,8 @@ Enum for CheckboxState
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1731,25 +1684,25 @@ Enum for CheckboxState
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Uncheck{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Uncheck</td>
+<td class="type">string</td>
 <td class="default">uncheck</td>
-<td class="description last">Enum for Uncheck state checkbox</td>
+<td class="description">Enum for Uncheck state checkbox</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Check{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Check</td>
+<td class="type">string</td>
 <td class="default">check</td>
-<td class="description last">Enum for Check state checkbox</td>
+<td class="description">Enum for Check state checkbox</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Indeterminate{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Indeterminate</td>
+<td class="type">string</td>
 <td class="default">indeterminate</td>
-<td class="description last">Enum for Indeterminate state checkbox</td>
+<td class="description">Enum for Indeterminate state checkbox</td>
 </tr>
 </tbody>
 </table>
@@ -1768,8 +1721,8 @@ Indeterminate{% endhighlight %}</td>
 
 
 
-### Color<span class="type-signature type string">string</span>
-{:#members:color}
+### Color
+{:#enum:color}
 
 
 
@@ -1785,8 +1738,8 @@ Enum for IOS7Color
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1803,39 +1756,39 @@ Enum for IOS7Color
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Gray{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Gray</td>
+<td class="type">string</td>
 <td class="default">gray</td>
-<td class="description last">Enum for gray ios7 button color</td>
+<td class="description">Enum for gray ios7 button color</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Black{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Black</td>
+<td class="type">string</td>
 <td class="default">black</td>
-<td class="description last">Enum for black ios7 button color</td>
+<td class="description">Enum for black ios7 button color</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Blue{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Blue</td>
+<td class="type">string</td>
 <td class="default">blue</td>
-<td class="description last">Enum for black ios7 buttonColor</td>
+<td class="description">Enum for black ios7 buttonColor</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Green{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Green</td>
+<td class="type">string</td>
 <td class="default">green</td>
-<td class="description last">Enum for green ios7 button color</td>
+<td class="description">Enum for green ios7 button color</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Red{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Red</td>
+<td class="type">string</td>
 <td class="default">red</td>
-<td class="description last">Enum for red ios7 button color</td>
+<td class="description">Enum for red ios7 button color</td>
 </tr>
 </tbody>
 </table>
@@ -1854,8 +1807,8 @@ Red{% endhighlight %}</td>
 
 
 
-### ColorPalette<span class="type-signature type string">string</span>
-{:#members:colorpalette}
+### ColorPalette
+{:#enum:colorpalette}
 
 
 
@@ -1871,8 +1824,8 @@ Enum for Map color palette
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1889,32 +1842,32 @@ Enum for Map color palette
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Palette1{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Palette1</td>
+<td class="type">string</td>
 <td class="default">palette1</td>
-<td class="description last">support for color palette palette1.</td>
+<td class="description">support for color palette palette1.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Palette2{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Palette2</td>
+<td class="type">string</td>
 <td class="default">palette2</td>
-<td class="description last">support for color palette palette2.</td>
+<td class="description">support for color palette palette2.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Palette3{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Palette3</td>
+<td class="type">string</td>
 <td class="default">palette3</td>
-<td class="description last">support for color palette palette3.</td>
+<td class="description">support for color palette palette3.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CustomPalette{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+CustomPalette</td>
+<td class="type">string</td>
 <td class="default">custompalette</td>
-<td class="description last">support for color palette custompalette.</td>
+<td class="description">support for color palette custompalette.</td>
 </tr>
 </tbody>
 </table>
@@ -1933,8 +1886,8 @@ CustomPalette{% endhighlight %}</td>
 
 
 
-### ConnectorConstraints<span class="type-signature type connectorconstraints"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span>
-{:#members:connectorconstraints}
+### ConnectorConstraints
+{:#enum:connectorconstraints}
 
 
 
@@ -1950,8 +1903,8 @@ Enum for ConnectorConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -1968,81 +1921,81 @@ Enum for ConnectorConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Disable all connector Constraints</td>
+<td class="description">Disable all connector Constraints</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Select{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+Select</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connector to be selected</td>
+<td class="description">Enables connector to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Delete{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+Delete</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connector to be Deleted</td>
+<td class="description">Enables connector to be Deleted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Drag{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+Drag</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connector to be Dragged</td>
+<td class="description">Enables connector to be Dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DragSourceEnd{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+DragSourceEnd</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connectors source end to be selected</td>
+<td class="description">Enables connectors source end to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DragTargetEnd{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+DragTargetEnd</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connectors target end to be selected</td>
+<td class="description">Enables connectors target end to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DragSegmentThumb{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+DragSegmentThumb</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables control point and end point of every segment in a connector for editing</td>
+<td class="description">Enables control point and end point of every segment in a connector for editing</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bridging{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+Bridging</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables bridging to the connector</td>
+<td class="description">Enables bridging to the connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DragLabel{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+DragLabel</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables label of node to be Dragged</td>
+<td class="description">Enables label of node to be Dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-InheritBridging{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+InheritBridging</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables bridging to the connector</td>
+<td class="description">Enables bridging to the connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span></td>
+<td class="name">
+Default</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables all constraints</td>
+<td class="description">Enables all constraints</td>
 </tr>
 </tbody>
 </table>
@@ -2061,8 +2014,8 @@ Default{% endhighlight %}</td>
 
 
 
-### ConnectorLineType<span class="type-signature type string">string</span>
-{:#members:connectorlinetype}
+### ConnectorLineType
+{:#enum:connectorlinetype}
 
 
 
@@ -2078,8 +2031,8 @@ Enum for connector line in Chart data label
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2096,18 +2049,18 @@ Enum for connector line in Chart data label
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Line{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Line</td>
+<td class="type">string</td>
 <td class="default">line</td>
-<td class="description last">Line will be used to connect datalabel and datapoint</td>
+<td class="description">Line will be used to connect datalabel and datapoint</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bezier{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bezier</td>
+<td class="type">string</td>
 <td class="default">bezier</td>
-<td class="description last">Bezier curve will be used to connect datalabel and datapoint</td>
+<td class="description">Bezier curve will be used to connect datalabel and datapoint</td>
 </tr>
 </tbody>
 </table>
@@ -2126,8 +2079,8 @@ Bezier{% endhighlight %}</td>
 
 
 
-### ContainerType<span class="type-signature type string">string</span>
-{:#members:containertype}
+### ContainerType
+{:#enum:containertype}
 
 
 
@@ -2143,8 +2096,8 @@ Enum for various containerType in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2161,18 +2114,18 @@ Enum for various containerType in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Canvas{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Canvas</td>
+<td class="type">string</td>
 <td class="default">canvas</td>
-<td class="description last">Sets the container type as Canvas</td>
+<td class="description">Sets the container type as Canvas</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Stack{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Stack</td>
+<td class="type">string</td>
 <td class="default">stack</td>
-<td class="description last">Sets the container type as Stack</td>
+<td class="description">Sets the container type as Stack</td>
 </tr>
 </tbody>
 </table>
@@ -2191,8 +2144,8 @@ Stack{% endhighlight %}</td>
 
 
 
-### ContentType<span class="type-signature type string">string</span>
-{:#members:contenttype}
+### ContentType
+{:#enum:contenttype}
 
 
 
@@ -2208,8 +2161,8 @@ Enum for ContentType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2226,25 +2179,25 @@ Enum for ContentType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Text</td>
+<td class="type">string</td>
 <td class="default">text</td>
-<td class="description last">Enum for text content type</td>
+<td class="description">Enum for text content type</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">Enum for image content type</td>
+<td class="description">Enum for image content type</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Both{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Both</td>
+<td class="type">string</td>
 <td class="default">both</td>
-<td class="description last">Enum for displaying both text and image content type</td>
+<td class="description">Enum for displaying both text and image content type</td>
 </tr>
 </tbody>
 </table>
@@ -2263,8 +2216,8 @@ Both{% endhighlight %}</td>
 
 
 
-### ContentType<span class="type-signature type string">string</span>
-{:#members:contenttype}
+### ContentType
+{:#enum:contenttype}
 
 
 
@@ -2280,8 +2233,8 @@ Enum for Android tabContentType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2298,25 +2251,25 @@ Enum for Android tabContentType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Text</td>
+<td class="type">string</td>
 <td class="default">text</td>
-<td class="description last">Enum for text content type</td>
+<td class="description">Enum for text content type</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">Enum for image content type</td>
+<td class="description">Enum for image content type</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Both{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Both</td>
+<td class="type">string</td>
 <td class="default">both</td>
-<td class="description last">Enum for displaying both text and image content type</td>
+<td class="description">Enum for displaying both text and image content type</td>
 </tr>
 </tbody>
 </table>
@@ -2335,8 +2288,8 @@ Both{% endhighlight %}</td>
 
 
 
-### CoordinateUnit<span class="type-signature type string">string</span>
-{:#members:coordinateunit}
+### CoordinateUnit
+{:#enum:coordinateunit}
 
 
 
@@ -2352,8 +2305,8 @@ Enum for coordinate unit in Chart annotation
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2370,25 +2323,25 @@ Enum for coordinate unit in Chart annotation
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Set none as coordinate unit. Annotations will be placed at a location based on horizontal and vertical alignments</td>
+<td class="description">Set none as coordinate unit. Annotations will be placed at a location based on horizontal and vertical alignments</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pixels{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pixels</td>
+<td class="type">string</td>
 <td class="default">pixels</td>
-<td class="description last">Set pixel as coordinate unit.</td>
+<td class="description">Set pixel as coordinate unit.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Points{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Points</td>
+<td class="type">string</td>
 <td class="default">Points</td>
-<td class="description last">Set points as coordinate unit.</td>
+<td class="description">Set points as coordinate unit.</td>
 </tr>
 </tbody>
 </table>
@@ -2407,8 +2360,8 @@ Points{% endhighlight %}</td>
 
 
 
-### CrosshairType<span class="type-signature type string">string</span>
-{:#members:crosshairtype}
+### CrosshairType
+{:#enum:crosshairtype}
 
 
 
@@ -2424,8 +2377,8 @@ Enum for chart crosshairType.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2442,18 +2395,18 @@ Enum for chart crosshairType.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Crosshair{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Crosshair</td>
+<td class="type">string</td>
 <td class="default">crosshair</td>
-<td class="description last">set crosshair for chart.</td>
+<td class="description">set crosshair for chart.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TrackBall{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TrackBall</td>
+<td class="type">string</td>
 <td class="default">trackBall</td>
-<td class="description last">set trackBall for chart.</td>
+<td class="description">set trackBall for chart.</td>
 </tr>
 </tbody>
 </table>
@@ -2472,8 +2425,8 @@ TrackBall{% endhighlight %}</td>
 
 
 
-### CustomLabelPositionType<span class="type-signature type string">string</span>
-{:#members:customlabelpositiontype}
+### CustomLabelPositionType
+{:#enum:customlabelpositiontype}
 
 
 
@@ -2489,8 +2442,8 @@ Enum for gauge CustomLabelPositionType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2507,18 +2460,18 @@ Enum for gauge CustomLabelPositionType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inner{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inner</td>
+<td class="type">string</td>
 <td class="default">inner</td>
-<td class="description last">To set the CustomLabelPositionType inner.</td>
+<td class="description">To set the CustomLabelPositionType inner.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outer</td>
+<td class="type">string</td>
 <td class="default">outer</td>
-<td class="description last">To set the CustomLabelPositionType outer.</td>
+<td class="description">To set the CustomLabelPositionType outer.</td>
 </tr>
 </tbody>
 </table>
@@ -2537,8 +2490,8 @@ Outer{% endhighlight %}</td>
 
 
 
-### CustomLabelPositionType<span class="type-signature type string">string</span>
-{:#members:customlabelpositiontype}
+### CustomLabelPositionType
+{:#enum:customlabelpositiontype}
 
 
 
@@ -2554,8 +2507,8 @@ Enum for gauge CustomLabelPositionType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2572,18 +2525,18 @@ Enum for gauge CustomLabelPositionType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inner{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inner</td>
+<td class="type">string</td>
 <td class="default">inner</td>
-<td class="description last">To set the CustomLabelPositionType inner.</td>
+<td class="description">To set the CustomLabelPositionType inner.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outer</td>
+<td class="type">string</td>
 <td class="default">outer</td>
-<td class="description last">To set the CustomLabelPositionType outer.</td>
+<td class="description">To set the CustomLabelPositionType outer.</td>
 </tr>
 </tbody>
 </table>
@@ -2603,7 +2556,7 @@ Outer{% endhighlight %}</td>
 
 
 ### dataTypes
-{:#members:datatypes}
+{:#enum:datatypes}
 
 
 
@@ -2624,8 +2577,8 @@ datatypes to the default model values
 
 
 
-### DecoratorShapes<span class="type-signature type string">string</span>
-{:#members:decoratorshapes}
+### DecoratorShapes
+{:#enum:decoratorshapes}
 
 
 
@@ -2641,8 +2594,8 @@ Enum for various decorator shapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2659,46 +2612,46 @@ Enum for various decorator shapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Used to set decorator shape as none</td>
+<td class="description">Used to set decorator shape as none</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Arrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Arrow</td>
+<td class="type">string</td>
 <td class="default">arrow</td>
-<td class="description last">Used to set decorator shape as Arrow</td>
+<td class="description">Used to set decorator shape as Arrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OpenArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OpenArrow</td>
+<td class="type">string</td>
 <td class="default">openarrow</td>
-<td class="description last">Used to set decorator shape as Open Arrow</td>
+<td class="description">Used to set decorator shape as Open Arrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">Used to set decorator shape as Circle</td>
+<td class="description">Used to set decorator shape as Circle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">Used to set decorator shape as Diamond</td>
+<td class="description">Used to set decorator shape as Diamond</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Path{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Path</td>
+<td class="type">string</td>
 <td class="default">path</td>
-<td class="description last">Used to set decorator shape as path</td>
+<td class="description">Used to set decorator shape as path</td>
 </tr>
 </tbody>
 </table>
@@ -2717,8 +2670,8 @@ Path{% endhighlight %}</td>
 
 
 
-### DiagramConstraints<span class="type-signature type diagramconstraints"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span>
-{:#members:diagramconstraints}
+### DiagramConstraints
+{:#enum:diagramconstraints}
 
 
 
@@ -2734,8 +2687,8 @@ Enum for the DiagramConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2752,67 +2705,67 @@ Enum for the DiagramConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Disables all DiagramConstraints</td>
+<td class="description">Disables all DiagramConstraints</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PageEditable{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+PageEditable</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables PageEditing</td>
+<td class="description">Enables/Disables PageEditing</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bridging{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+Bridging</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables Bridging</td>
+<td class="description">Enables/Disables Bridging</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Zoomable{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+Zoomable</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables Zooming</td>
+<td class="description">Enables/Disables Zooming</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PannableX{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+PannableX</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables panning on horizontal axis</td>
+<td class="description">Enables/Disables panning on horizontal axis</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PannableY{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+PannableY</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables panning on vertical axis</td>
+<td class="description">Enables/Disables panning on vertical axis</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pannable{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+Pannable</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables/Disables Panning</td>
+<td class="description">Enables/Disables Panning</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Undoable{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+Undoable</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables undo actions</td>
+<td class="description">Enables/Disables undo actions</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span></td>
+<td class="name">
+Default</td>
+<td class="type">ConnectorConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables all Constraints</td>
+<td class="description">Enables all Constraints</td>
 </tr>
 </tbody>
 </table>
@@ -2831,8 +2784,8 @@ Default{% endhighlight %}</td>
 
 
 
-### Directions<span class="type-signature type string">string</span>
-{:#members:directions}
+### Directions
+{:#enum:directions}
 
 
 
@@ -2848,8 +2801,8 @@ Enum for gauge Directions
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2866,18 +2819,18 @@ Enum for gauge Directions
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Clockwise{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Clockwise</td>
+<td class="type">string</td>
 <td class="default">clockwise</td>
-<td class="description last">To set the Directions clockwise.</td>
+<td class="description">To set the Directions clockwise.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CounterClockwise{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+CounterClockwise</td>
+<td class="type">string</td>
 <td class="default">counterclockwise</td>
-<td class="description last">To set the Directions counterclockwise.</td>
+<td class="description">To set the Directions counterclockwise.</td>
 </tr>
 </tbody>
 </table>
@@ -2896,8 +2849,8 @@ CounterClockwise{% endhighlight %}</td>
 
 
 
-### Directions<span class="type-signature type string">string</span>
-{:#members:directions}
+### Directions
+{:#enum:directions}
 
 
 
@@ -2913,8 +2866,8 @@ Enum for gauge Directions
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2931,18 +2884,18 @@ Enum for gauge Directions
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Clockwise{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Clockwise</td>
+<td class="type">string</td>
 <td class="default">clockwise</td>
-<td class="description last">To set the Directions clockwise.</td>
+<td class="description">To set the Directions clockwise.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CounterClockwise{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+CounterClockwise</td>
+<td class="type">string</td>
 <td class="default">counterclockwise</td>
-<td class="description last">To set the Directions counterclockwise.</td>
+<td class="description">To set the Directions counterclockwise.</td>
 </tr>
 </tbody>
 </table>
@@ -2961,8 +2914,8 @@ CounterClockwise{% endhighlight %}</td>
 
 
 
-### DragState<span class="type-signature type dragstate"><a href="global.html#DragState">DragState</a></span>
-{:#members:dragstate}
+### DragState
+{:#enum:dragstate}
 
 
 
@@ -2978,8 +2931,8 @@ Enum for the Dragstate of the connector in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -2996,25 +2949,25 @@ Enum for the Dragstate of the connector in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Starting{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DragState">DragState</a></span></td>
+<td class="name">
+Starting</td>
+<td class="type">DragState</td>
 <td class="default">starting</td>
-<td class="description last">sets the drag state as starting</td>
+<td class="description">sets the drag state as starting</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dragging{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DragState">DragState</a></span></td>
+<td class="name">
+Dragging</td>
+<td class="type">DragState</td>
 <td class="default">dragging</td>
-<td class="description last">sets the drag state as dragging</td>
+<td class="description">sets the drag state as dragging</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Completed{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#DragState">DragState</a></span></td>
+<td class="name">
+Completed</td>
+<td class="type">DragState</td>
 <td class="default">completed</td>
-<td class="description last">sets the drag state as completed</td>
+<td class="description">sets the drag state as completed</td>
 </tr>
 </tbody>
 </table>
@@ -3033,8 +2986,8 @@ Completed{% endhighlight %}</td>
 
 
 
-### DrawMode<span class="type-signature type string">string</span>
-{:#members:drawmode}
+### DrawMode
+{:#enum:drawmode}
 
 
 
@@ -3050,8 +3003,8 @@ Enum for hilopenclose drawmode.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3068,25 +3021,25 @@ Enum for hilopenclose drawmode.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Both{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Both</td>
+<td class="type">string</td>
 <td class="default">both</td>
-<td class="description last">Specifies the draw mode as both.</td>
+<td class="description">Specifies the draw mode as both.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Open{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Open</td>
+<td class="type">string</td>
 <td class="default">open</td>
-<td class="description last">Specifies the draw mode as open.</td>
+<td class="description">Specifies the draw mode as open.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Close{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Close</td>
+<td class="type">string</td>
 <td class="default">close</td>
-<td class="description last">Specifies the draw mode as close</td>
+<td class="description">Specifies the draw mode as close</td>
 </tr>
 </tbody>
 </table>
@@ -3105,8 +3058,8 @@ Close{% endhighlight %}</td>
 
 
 
-### DrawType<span class="type-signature type string">string</span>
-{:#members:drawtype}
+### DrawType
+{:#enum:drawtype}
 
 
 
@@ -3122,8 +3075,8 @@ Enum for chart drawType mode.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3140,25 +3093,25 @@ Enum for chart drawType mode.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Line{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Line</td>
+<td class="type">string</td>
 <td class="default">line</td>
-<td class="description last">Specifies the drawType as line.</td>
+<td class="description">Specifies the drawType as line.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Column{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Column</td>
+<td class="type">string</td>
 <td class="default">column</td>
-<td class="description last">Specifies the drawType as column.</td>
+<td class="description">Specifies the drawType as column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Area{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Area</td>
+<td class="type">string</td>
 <td class="default">area</td>
-<td class="description last">Specifies the drawType as area.</td>
+<td class="description">Specifies the drawType as area.</td>
 </tr>
 </tbody>
 </table>
@@ -3177,8 +3130,8 @@ Area{% endhighlight %}</td>
 
 
 
-### EdgeLabelPlacement<span class="type-signature type string">string</span>
-{:#members:edgelabelplacement}
+### EdgeLabelPlacement
+{:#enum:edgelabelplacement}
 
 
 
@@ -3194,8 +3147,8 @@ Enum for chart edgeLabelPlacement.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3212,25 +3165,25 @@ Enum for chart edgeLabelPlacement.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Places the edge labels in the same position.</td>
+<td class="description">Places the edge labels in the same position.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Shift{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Shift</td>
+<td class="type">string</td>
 <td class="default">shift</td>
-<td class="description last">Shift the edge labels inside the chart area.</td>
+<td class="description">Shift the edge labels inside the chart area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hide{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Hide</td>
+<td class="type">string</td>
 <td class="default">hide</td>
-<td class="description last">Hide the edge labels which exceeds the chart area boundary.</td>
+<td class="description">Hide the edge labels which exceeds the chart area boundary.</td>
 </tr>
 </tbody>
 </table>
@@ -3250,7 +3203,7 @@ Hide{% endhighlight %}</td>
 
 
 ### element
-{:#members:element}
+{:#enum:element}
 
 
 
@@ -3275,8 +3228,8 @@ Widget element will be automatically set in this
 
 
 
-### ExportType<span class="type-signature type string">string</span>
-{:#members:exporttype}
+### ExportType
+{:#enum:exporttype}
 
 
 
@@ -3292,8 +3245,8 @@ Enum for the types of exporting in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3310,18 +3263,18 @@ Enum for the types of exporting in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">Specifies Chart should be exported as an image</td>
+<td class="description">Specifies Chart should be exported as an image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Excel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Excel</td>
+<td class="type">string</td>
 <td class="default">excel</td>
-<td class="description last">Specifies Chart should be exported in excel</td>
+<td class="description">Specifies Chart should be exported in excel</td>
 </tr>
 </tbody>
 </table>
@@ -3336,8 +3289,8 @@ Excel{% endhighlight %}</td>
 
 
 
-### ExportModes<span class="type-signature type exportmodes"><a href="global.html#ExportModes">ExportModes</a></span>
-{:#members:exportmodes}
+### ExportModes
+{:#enum:exportmodes}
 
 
 
@@ -3353,8 +3306,8 @@ Enum for the ExportModes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3371,18 +3324,18 @@ Enum for the ExportModes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Download{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ExportModes">ExportModes</a></span></td>
+<td class="name">
+Download</td>
+<td class="type">ExportModes</td>
 <td class="default">download</td>
-<td class="description last">Downloads the exported diagram</td>
+<td class="description">Downloads the exported diagram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Data{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#ExportModes">ExportModes</a></span></td>
+<td class="name">
+Data</td>
+<td class="type">ExportModes</td>
 <td class="default">data</td>
-<td class="description last">Converts diagram to data of type imageURL/svg</td>
+<td class="description">Converts diagram to data of type imageURL/svg</td>
 </tr>
 </tbody>
 </table>
@@ -3401,8 +3354,8 @@ Data{% endhighlight %}</td>
 
 
 
-### FileFormats<span class="type-signature type fileformats"><a href="global.html#FileFormats">FileFormats</a></span>
-{:#members:fileformats}
+### FileFormats
+{:#enum:fileformats}
 
 
 
@@ -3418,8 +3371,8 @@ Enum for the FileFormats in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3436,32 +3389,32 @@ Enum for the FileFormats in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-JPG{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FileFormats">FileFormats</a></span></td>
+<td class="name">
+JPG</td>
+<td class="type">FileFormats</td>
 <td class="default">jpg</td>
-<td class="description last">Exports diagram to .jpg format</td>
+<td class="description">Exports diagram to .jpg format</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PNG{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FileFormats">FileFormats</a></span></td>
+<td class="name">
+PNG</td>
+<td class="type">FileFormats</td>
 <td class="default">png</td>
-<td class="description last">Exports diagram to .png format</td>
+<td class="description">Exports diagram to .png format</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BMP{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FileFormats">FileFormats</a></span></td>
+<td class="name">
+BMP</td>
+<td class="type">FileFormats</td>
 <td class="default">bmp</td>
-<td class="description last">Exports diagram to .bmp format</td>
+<td class="description">Exports diagram to .bmp format</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SVG{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FileFormats">FileFormats</a></span></td>
+<td class="name">
+SVG</td>
+<td class="type">FileFormats</td>
 <td class="default">svg</td>
-<td class="description last">Exports diagram to .svg format</td>
+<td class="description">Exports diagram to .svg format</td>
 </tr>
 </tbody>
 </table>
@@ -3480,8 +3433,8 @@ SVG{% endhighlight %}</td>
 
 
 
-### FilterBarMode<span class="type-signature type string">string</span>
-{:#members:filterbarmode}
+### FilterBarMode
+{:#enum:filterbarmode}
 
 
 
@@ -3497,8 +3450,8 @@ Enum for Grid Filter Bar mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3515,18 +3468,18 @@ Enum for Grid Filter Bar mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Immediate{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Immediate</td>
+<td class="type">string</td>
 <td class="default">immediate</td>
-<td class="description last">Used to display filter results as soon as typing the filter query or after specified time interval</td>
+<td class="description">Used to display filter results as soon as typing the filter query or after specified time interval</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OnEnter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OnEnter</td>
+<td class="type">string</td>
 <td class="default">onenter</td>
-<td class="description last">Used to display filter results after enter key is pressed</td>
+<td class="description">Used to display filter results after enter key is pressed</td>
 </tr>
 </tbody>
 </table>
@@ -3545,8 +3498,8 @@ OnEnter{% endhighlight %}</td>
 
 
 
-### FilterType<span class="type-signature type string">string</span>
-{:#members:filtertype}
+### FilterType
+{:#enum:filtertype}
 
 
 
@@ -3562,8 +3515,8 @@ Enum for filtertype
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3580,18 +3533,18 @@ Enum for filtertype
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-StartsWith{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StartsWith</td>
+<td class="type">string</td>
 <td class="default">startswith</td>
-<td class="description last">Enum for filter type startswith</td>
+<td class="description">Enum for filter type startswith</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Contains{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Contains</td>
+<td class="type">string</td>
 <td class="default">contains</td>
-<td class="description last">Enum for filter type contains</td>
+<td class="description">Enum for filter type contains</td>
 </tr>
 </tbody>
 </table>
@@ -3610,8 +3563,8 @@ Contains{% endhighlight %}</td>
 
 
 
-### FitMode<span class="type-signature type fitmode"><a href="global.html#FitMode">FitMode</a></span>
-{:#members:fitmode}
+### FitMode
+{:#enum:fitmode}
 
 
 
@@ -3627,8 +3580,8 @@ Enum for the FitMode in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3645,25 +3598,25 @@ Enum for the FitMode in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Page{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FitMode">FitMode</a></span></td>
+<td class="name">
+Page</td>
+<td class="type">FitMode</td>
 <td class="default">page</td>
-<td class="description last">Fits the entire diagram into view</td>
+<td class="description">Fits the entire diagram into view</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Width{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FitMode">FitMode</a></span></td>
+<td class="name">
+Width</td>
+<td class="type">FitMode</td>
 <td class="default">width</td>
-<td class="description last">Fits the width of the diagram into the width of view</td>
+<td class="description">Fits the width of the diagram into the width of view</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Height{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FitMode">FitMode</a></span></td>
+<td class="name">
+Height</td>
+<td class="type">FitMode</td>
 <td class="default">height</td>
-<td class="description last">Fits the height of the diagram into the height of view</td>
+<td class="description">Fits the height of the diagram into the height of view</td>
 </tr>
 </tbody>
 </table>
@@ -3682,8 +3635,8 @@ Height{% endhighlight %}</td>
 
 
 
-### FlowDirection<span class="type-signature type string">string</span>
-{:#members:flowdirection}
+### FlowDirection
+{:#enum:flowdirection}
 
 
 
@@ -3699,8 +3652,8 @@ Enum for Bullet Graph Flow Direction
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3717,18 +3670,18 @@ Enum for Bullet Graph Flow Direction
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Forward{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Forward</td>
+<td class="type">string</td>
 <td class="default">forward</td>
-<td class="description last">To set the flow direction forward.</td>
+<td class="description">To set the flow direction forward.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Backward{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Backward</td>
+<td class="type">string</td>
 <td class="default">backward</td>
-<td class="description last">To set the flow direction backward.</td>
+<td class="description">To set the flow direction backward.</td>
 </tr>
 </tbody>
 </table>
@@ -3747,8 +3700,8 @@ Backward{% endhighlight %}</td>
 
 
 
-### FlowShapes<span class="type-signature type flowshapes"><a href="global.html#FlowShapes">FlowShapes</a></span>
-{:#members:flowshapes}
+### FlowShapes
+{:#enum:flowshapes}
 
 
 
@@ -3764,8 +3717,8 @@ Enum for the FlowShapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3782,151 +3735,151 @@ Enum for the FlowShapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Process{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Process</td>
+<td class="type">FlowShapes</td>
 <td class="default">process</td>
-<td class="description last">Used to specify node Shape as Process</td>
+<td class="description">Used to specify node Shape as Process</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Decision{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Decision</td>
+<td class="type">FlowShapes</td>
 <td class="default">decision</td>
-<td class="description last">Used to specify node Shape as Decision</td>
+<td class="description">Used to specify node Shape as Decision</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Document{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Document</td>
+<td class="type">FlowShapes</td>
 <td class="default">document</td>
-<td class="description last">Used to specify node Shape as Document</td>
+<td class="description">Used to specify node Shape as Document</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PreDefinedProcess{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+PreDefinedProcess</td>
+<td class="type">FlowShapes</td>
 <td class="default">predefinedprocess</td>
-<td class="description last">Used to specify node Shape as PreDefinedProcess</td>
+<td class="description">Used to specify node Shape as PreDefinedProcess</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Terminator{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Terminator</td>
+<td class="type">FlowShapes</td>
 <td class="default">terminator</td>
-<td class="description last">Used to specify node Shape as Terminator</td>
+<td class="description">Used to specify node Shape as Terminator</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PaperTap{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+PaperTap</td>
+<td class="type">FlowShapes</td>
 <td class="default">papertap</td>
-<td class="description last">Used to specify node Shape as PaperTap</td>
+<td class="description">Used to specify node Shape as PaperTap</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DirectData{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+DirectData</td>
+<td class="type">FlowShapes</td>
 <td class="default">directdata</td>
-<td class="description last">Used to specify node Shape as DirectData</td>
+<td class="description">Used to specify node Shape as DirectData</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SequentialData{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+SequentialData</td>
+<td class="type">FlowShapes</td>
 <td class="default">sequentialdata</td>
-<td class="description last">Used to specify node Shape as SequentialData</td>
+<td class="description">Used to specify node Shape as SequentialData</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Sort{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Sort</td>
+<td class="type">FlowShapes</td>
 <td class="default">sort</td>
-<td class="description last">Used to specify node Shape as Sort</td>
+<td class="description">Used to specify node Shape as Sort</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MultiDocument{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+MultiDocument</td>
+<td class="type">FlowShapes</td>
 <td class="default">multidocument</td>
-<td class="description last">Used to specify node Shape as MultiDocument</td>
+<td class="description">Used to specify node Shape as MultiDocument</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Collate{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Collate</td>
+<td class="type">FlowShapes</td>
 <td class="default">collate</td>
-<td class="description last">Used to specify node Shape as Collate</td>
+<td class="description">Used to specify node Shape as Collate</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SummingJunction{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+SummingJunction</td>
+<td class="type">FlowShapes</td>
 <td class="default">summingjunction</td>
-<td class="description last">Used to specify node Shape as SummingJunction</td>
+<td class="description">Used to specify node Shape as SummingJunction</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Or{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Or</td>
+<td class="type">FlowShapes</td>
 <td class="default">or</td>
-<td class="description last">Used to specify node Shape as Or</td>
+<td class="description">Used to specify node Shape as Or</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-InternalStorage{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+InternalStorage</td>
+<td class="type">FlowShapes</td>
 <td class="default">internalstorage</td>
-<td class="description last">Used to specify node Shape as InternalStorage</td>
+<td class="description">Used to specify node Shape as InternalStorage</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Extract{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Extract</td>
+<td class="type">FlowShapes</td>
 <td class="default">extract</td>
-<td class="description last">Used to specify node Shape as Extract</td>
+<td class="description">Used to specify node Shape as Extract</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ManualOperation{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+ManualOperation</td>
+<td class="type">FlowShapes</td>
 <td class="default">manualoperation</td>
-<td class="description last">Used to specify node Shape as ManualOperation</td>
+<td class="description">Used to specify node Shape as ManualOperation</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Merge{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Merge</td>
+<td class="type">FlowShapes</td>
 <td class="default">merge</td>
-<td class="description last">Used to specify node Shape as Merge</td>
+<td class="description">Used to specify node Shape as Merge</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OffPageReference{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+OffPageReference</td>
+<td class="type">FlowShapes</td>
 <td class="default">offpagereference</td>
-<td class="description last">Used to specify node Shape as OffPageReference</td>
+<td class="description">Used to specify node Shape as OffPageReference</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SequentialAccessStorage{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+SequentialAccessStorage</td>
+<td class="type">FlowShapes</td>
 <td class="default">sequentialaccessstorage</td>
-<td class="description last">Used to specify node Shape as SequentialAccessStorage</td>
+<td class="description">Used to specify node Shape as SequentialAccessStorage</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Annotation1{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Annotation1</td>
+<td class="type">FlowShapes</td>
 <td class="default">annotation1</td>
-<td class="description last">Used to specify node Shape as Annotation1</td>
+<td class="description">Used to specify node Shape as Annotation1</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Annotation2{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#FlowShapes">FlowShapes</a></span></td>
+<td class="name">
+Annotation2</td>
+<td class="type">FlowShapes</td>
 <td class="default">annotation2</td>
-<td class="description last">Used to specify node Shape as Annotation2</td>
+<td class="description">Used to specify node Shape as Annotation2</td>
 </tr>
 </tbody>
 </table>
@@ -3945,8 +3898,8 @@ Annotation2{% endhighlight %}</td>
 
 
 
-### FontStyle<span class="type-signature type string">string</span>
-{:#members:fontstyle}
+### FontStyle
+{:#enum:fontstyle}
 
 
 
@@ -3962,8 +3915,8 @@ Enum for Font Style
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -3980,25 +3933,25 @@ Enum for Font Style
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">Normal</td>
-<td class="description last">To set the fontStyle Normal.</td>
+<td class="description">To set the fontStyle Normal.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Italic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
 <td class="default">Italic</td>
-<td class="description last">To set the fontStyle Italic.</td>
+<td class="description">To set the fontStyle Italic.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Oblique{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Oblique</td>
+<td class="type">string</td>
 <td class="default">Oblique</td>
-<td class="description last">To set the fontStyle Oblique.</td>
+<td class="description">To set the fontStyle Oblique.</td>
 </tr>
 </tbody>
 </table>
@@ -4017,8 +3970,8 @@ Oblique{% endhighlight %}</td>
 
 
 
-### FontStyle<span class="type-signature type string">string</span>
-{:#members:fontstyle}
+### FontStyle
+{:#enum:fontstyle}
 
 
 
@@ -4034,8 +3987,8 @@ Enum for gauge FontStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4052,39 +4005,39 @@ Enum for gauge FontStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">To set the FontStyle normal.</td>
+<td class="description">To set the FontStyle normal.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bold{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
 <td class="default">bold</td>
-<td class="description last">To set the FontStyle bold.</td>
+<td class="description">To set the FontStyle bold.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Italic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
 <td class="default">italic</td>
-<td class="description last">To set the FontStyle italic.</td>
+<td class="description">To set the FontStyle italic.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Underline{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Underline</td>
+<td class="type">string</td>
 <td class="default">underline</td>
-<td class="description last">To set the FontStyle underline.</td>
+<td class="description">To set the FontStyle underline.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Strikeout{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Strikeout</td>
+<td class="type">string</td>
 <td class="default">strikeout</td>
-<td class="description last">To set the FontStyle strikeout.</td>
+<td class="description">To set the FontStyle strikeout.</td>
 </tr>
 </tbody>
 </table>
@@ -4103,8 +4056,8 @@ Strikeout{% endhighlight %}</td>
 
 
 
-### FontStyle<span class="type-signature type string">string</span>
-{:#members:fontstyle}
+### FontStyle
+{:#enum:fontstyle}
 
 
 
@@ -4120,8 +4073,8 @@ Enum for gauge FontStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4138,39 +4091,39 @@ Enum for gauge FontStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Bold{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
 <td class="default">bold</td>
-<td class="description last">To set the FontStyle bold.</td>
+<td class="description">To set the FontStyle bold.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Italic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
 <td class="default">italic</td>
-<td class="description last">To set the FontStyle italic.</td>
+<td class="description">To set the FontStyle italic.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Regular{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Regular</td>
+<td class="type">string</td>
 <td class="default">regular</td>
-<td class="description last">To set the FontStyle regular.</td>
+<td class="description">To set the FontStyle regular.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Strikeout{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Strikeout</td>
+<td class="type">string</td>
 <td class="default">strikeout</td>
-<td class="description last">To set the FontStyle strikeout.</td>
+<td class="description">To set the FontStyle strikeout.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Underline{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Underline</td>
+<td class="type">string</td>
 <td class="default">underline</td>
-<td class="description last">To set the FontStyle underline.</td>
+<td class="description">To set the FontStyle underline.</td>
 </tr>
 </tbody>
 </table>
@@ -4189,8 +4142,8 @@ Underline{% endhighlight %}</td>
 
 
 
-### FontStyle<span class="type-signature type string">string</span>
-{:#members:fontstyle}
+### FontStyle
+{:#enum:fontstyle}
 
 
 
@@ -4206,8 +4159,8 @@ Enum for chart style of font.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4224,18 +4177,18 @@ Enum for chart style of font.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Render normal font.</td>
+<td class="description">Render normal font.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Italic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
 <td class="default">italic</td>
-<td class="description last">Render italic font.</td>
+<td class="description">Render italic font.</td>
 </tr>
 </tbody>
 </table>
@@ -4254,8 +4207,8 @@ Italic{% endhighlight %}</td>
 
 
 
-### FontWeight<span class="type-signature type string">string</span>
-{:#members:fontweight}
+### FontWeight
+{:#enum:fontweight}
 
 
 
@@ -4271,8 +4224,8 @@ Enum for Font Weight
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4289,32 +4242,32 @@ Enum for Font Weight
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">Normal</td>
-<td class="description last">To set the fontWeight Normal.</td>
+<td class="description">To set the fontWeight Normal.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bold{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
 <td class="default">Bold</td>
-<td class="description last">To set the fontWeight Bold.</td>
+<td class="description">To set the fontWeight Bold.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bolder{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bolder</td>
+<td class="type">string</td>
 <td class="default">Bolder</td>
-<td class="description last">To set the fontWeight Bolder.</td>
+<td class="description">To set the fontWeight Bolder.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Lighter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
 <td class="default">Lighter</td>
-<td class="description last">To set the fontWeight Lighter.</td>
+<td class="description">To set the fontWeight Lighter.</td>
 </tr>
 </tbody>
 </table>
@@ -4333,8 +4286,8 @@ Lighter{% endhighlight %}</td>
 
 
 
-### FontWeight<span class="type-signature type string">string</span>
-{:#members:fontweight}
+### FontWeight
+{:#enum:fontweight}
 
 
 
@@ -4350,8 +4303,8 @@ Enum for weight of font.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4368,25 +4321,25 @@ Enum for weight of font.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Regular{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Regular</td>
+<td class="type">string</td>
 <td class="default">regular</td>
-<td class="description last">Render regular font.</td>
+<td class="description">Render regular font.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bold{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
 <td class="default">bold</td>
-<td class="description last">Render bold font.</td>
+<td class="description">Render bold font.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Lighter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
 <td class="default">lighter</td>
-<td class="description last">Render lighter font.</td>
+<td class="description">Render lighter font.</td>
 </tr>
 </tbody>
 </table>
@@ -4405,8 +4358,8 @@ Lighter{% endhighlight %}</td>
 
 
 
-### FooterLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerleftbuttonstyle}
+### FooterLeftButtonStyle
+{:#enum:footerleftbuttonstyle}
 
 
 
@@ -4422,8 +4375,8 @@ Enum for IOS7FooterLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4440,32 +4393,32 @@ Enum for IOS7FooterLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for iOS7 auto left button style for Footer</td>
+<td class="description">Enum for iOS7 auto left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for iOS7 Back left button style for Footer</td>
+<td class="description">Enum for iOS7 Back left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for iOS7 Footer left button style for Footer</td>
+<td class="description">Enum for iOS7 Footer left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for iOS7 Normal left button style for Footer</td>
+<td class="description">Enum for iOS7 Normal left button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4484,8 +4437,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### FooterLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerleftbuttonstyle}
+### FooterLeftButtonStyle
+{:#enum:footerleftbuttonstyle}
 
 
 
@@ -4501,8 +4454,8 @@ Enum for AndroidFooterLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4519,32 +4472,32 @@ Enum for AndroidFooterLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Android auto left button style for Footer</td>
+<td class="description">Enum for Android auto left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Android Back left button style for Footer</td>
+<td class="description">Enum for Android Back left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Android Normal left button style for Footer</td>
+<td class="description">Enum for Android Normal left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Android header left button style for Footer</td>
+<td class="description">Enum for Android header left button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4563,8 +4516,8 @@ Header{% endhighlight %}</td>
 
 
 
-### FooterLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerleftbuttonstyle}
+### FooterLeftButtonStyle
+{:#enum:footerleftbuttonstyle}
 
 
 
@@ -4580,8 +4533,8 @@ Enum for WindowsFooterLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4598,32 +4551,32 @@ Enum for WindowsFooterLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Windows auto left button style for Footer</td>
+<td class="description">Enum for Windows auto left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Windows Back left button style for Footer</td>
+<td class="description">Enum for Windows Back left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Windows Normal left button style for Footer</td>
+<td class="description">Enum for Windows Normal left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Windows header left button style for Footer</td>
+<td class="description">Enum for Windows header left button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4642,8 +4595,8 @@ Header{% endhighlight %}</td>
 
 
 
-### FooterLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerleftbuttonstyle}
+### FooterLeftButtonStyle
+{:#enum:footerleftbuttonstyle}
 
 
 
@@ -4659,8 +4612,8 @@ Enum for FlatFooterLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4677,32 +4630,32 @@ Enum for FlatFooterLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Flat auto left button style for Footer</td>
+<td class="description">Enum for Flat auto left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Flat Back left button style for Footer</td>
+<td class="description">Enum for Flat Back left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Flat Normal left button style for Footer</td>
+<td class="description">Enum for Flat Normal left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Flat Footer left button style for Footer</td>
+<td class="description">Enum for Flat Footer left button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4721,8 +4674,8 @@ Header{% endhighlight %}</td>
 
 
 
-### FooterLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerleftbuttonstyle}
+### FooterLeftButtonStyle
+{:#enum:footerleftbuttonstyle}
 
 
 
@@ -4738,8 +4691,8 @@ Enum for HeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4756,25 +4709,25 @@ Enum for HeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Back left button style for Footer</td>
+<td class="description">Enum for Back left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header left button style for Footer</td>
+<td class="description">Enum for Header left button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal left button style for Footer</td>
+<td class="description">Enum for Normal left button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4793,8 +4746,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### FooterRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerrightbuttonstyle}
+### FooterRightButtonStyle
+{:#enum:footerrightbuttonstyle}
 
 
 
@@ -4810,8 +4763,8 @@ Enum for IOS7FooterRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4828,25 +4781,25 @@ Enum for IOS7FooterRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for iOS7 auto right button style for Footer</td>
+<td class="description">Enum for iOS7 auto right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Footer right button style for Footer</td>
+<td class="description">Enum for Footer right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Footer</td>
+<td class="description">Enum for Normal right button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4865,8 +4818,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### FooterRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerrightbuttonstyle}
+### FooterRightButtonStyle
+{:#enum:footerrightbuttonstyle}
 
 
 
@@ -4882,8 +4835,8 @@ Enum for AndroidFooterRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4900,25 +4853,25 @@ Enum for AndroidFooterRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Android auto right button style for Footer</td>
+<td class="description">Enum for Android auto right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Footer</td>
+<td class="description">Enum for Normal right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Footer right button style for Footer</td>
+<td class="description">Enum for Footer right button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -4937,8 +4890,8 @@ Header{% endhighlight %}</td>
 
 
 
-### FooterRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerrightbuttonstyle}
+### FooterRightButtonStyle
+{:#enum:footerrightbuttonstyle}
 
 
 
@@ -4954,8 +4907,8 @@ Enum for WindowsFooterRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -4972,25 +4925,25 @@ Enum for WindowsFooterRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Windows auto right button style for Footer</td>
+<td class="description">Enum for Windows auto right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Footer</td>
+<td class="description">Enum for Normal right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Footer right button style for Footer</td>
+<td class="description">Enum for Footer right button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -5009,8 +4962,8 @@ Header{% endhighlight %}</td>
 
 
 
-### FooterRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerrightbuttonstyle}
+### FooterRightButtonStyle
+{:#enum:footerrightbuttonstyle}
 
 
 
@@ -5026,8 +4979,8 @@ Enum for FlatFooterRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5044,25 +4997,25 @@ Enum for FlatFooterRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Flat auto right button style for Footer</td>
+<td class="description">Enum for Flat auto right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Footer right button style for Footer</td>
+<td class="description">Enum for Footer right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">/** Enum for Normal right button style for Footer</td>
+<td class="description">/** Enum for Normal right button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -5081,8 +5034,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### FooterRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:footerrightbuttonstyle}
+### FooterRightButtonStyle
+{:#enum:footerrightbuttonstyle}
 
 
 
@@ -5098,8 +5051,8 @@ Enum for HeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5116,18 +5069,18 @@ Enum for HeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Footer</td>
+<td class="description">Enum for Header right button style for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Footer</td>
+<td class="description">Enum for Normal right button style for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -5146,8 +5099,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### Frame<span class="type-signature type string">string</span>
-{:#members:frame}
+### Frame
+{:#enum:frame}
 
 
 
@@ -5163,8 +5116,8 @@ Enum for gauge Frame
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5181,18 +5134,18 @@ Enum for gauge Frame
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-FullCircle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+FullCircle</td>
+<td class="type">string</td>
 <td class="default">fullcircle</td>
-<td class="description last">To set the CircularGauge Frame as fullcircle.</td>
+<td class="description">To set the CircularGauge Frame as fullcircle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HalfCircle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HalfCircle</td>
+<td class="type">string</td>
 <td class="default">halfcircle</td>
-<td class="description last">To set the CircularGauge Frame as halfcircle.</td>
+<td class="description">To set the CircularGauge Frame as halfcircle.</td>
 </tr>
 </tbody>
 </table>
@@ -5211,8 +5164,8 @@ HalfCircle{% endhighlight %}</td>
 
 
 
-### gaugePosition<span class="type-signature type string">string</span>
-{:#members:gaugeposition}
+### gaugePosition
+{:#enum:gaugeposition}
 
 
 
@@ -5228,8 +5181,8 @@ Enum for gauge position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5246,67 +5199,67 @@ Enum for gauge position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-TopLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopLeft</td>
+<td class="type">string</td>
 <td class="default">topleft</td>
-<td class="description last">To set the gauge position topleft.</td>
+<td class="description">To set the gauge position topleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopRight</td>
+<td class="type">string</td>
 <td class="default">topright</td>
-<td class="description last">To set the gauge position topright.</td>
+<td class="description">To set the gauge position topright.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopCenter</td>
+<td class="type">string</td>
 <td class="default">topcenter</td>
-<td class="description last">To set the gauge position topcenter.</td>
+<td class="description">To set the gauge position topcenter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MiddleLeft</td>
+<td class="type">string</td>
 <td class="default">middleleft</td>
-<td class="description last">To set the gauge position middleleft.</td>
+<td class="description">To set the gauge position middleleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MiddleRight</td>
+<td class="type">string</td>
 <td class="default">middleright</td>
-<td class="description last">To set the gauge position middleright.</td>
+<td class="description">To set the gauge position middleright.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the gauge position middlecenter.</td>
+<td class="description">To set the gauge position middlecenter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomLeft</td>
+<td class="type">string</td>
 <td class="default">bottomleft</td>
-<td class="description last">To set the gauge position bottomleft.</td>
+<td class="description">To set the gauge position bottomleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomRight</td>
+<td class="type">string</td>
 <td class="default">bottomright</td>
-<td class="description last">To set the gauge position bottomright.</td>
+<td class="description">To set the gauge position bottomright.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomCenter</td>
+<td class="type">string</td>
 <td class="default">bottomcenter</td>
-<td class="description last">To set the gauge position bottomcenter.</td>
+<td class="description">To set the gauge position bottomcenter.</td>
 </tr>
 </tbody>
 </table>
@@ -5325,8 +5278,8 @@ BottomCenter{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5342,8 +5295,8 @@ Enum for IOS7HeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5360,32 +5313,32 @@ Enum for IOS7HeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for iOS7 Auto left button style for Header</td>
+<td class="description">Enum for iOS7 Auto left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">/** Enum for iOS7 Back left button style for Header</td>
+<td class="description">/** Enum for iOS7 Back left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for iOS7 Header left button style for Header</td>
+<td class="description">Enum for iOS7 Header left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for iOS7 Normal left button style for Header</td>
+<td class="description">Enum for iOS7 Normal left button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5404,8 +5357,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5421,8 +5374,8 @@ Enum for AndroidHeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5439,32 +5392,32 @@ Enum for AndroidHeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Android Auto left button style for Header</td>
+<td class="description">Enum for Android Auto left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Android Back left button style for Header</td>
+<td class="description">Enum for Android Back left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Android Normal left button style for Header</td>
+<td class="description">Enum for Android Normal left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Android Header right button style for Header</td>
+<td class="description">Enum for Android Header right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5483,8 +5436,8 @@ Header{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5500,8 +5453,8 @@ Enum for WindowsHeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5518,32 +5471,32 @@ Enum for WindowsHeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Windows Auto left button style for Header</td>
+<td class="description">Enum for Windows Auto left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Windows Back left button style for Header</td>
+<td class="description">Enum for Windows Back left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Windows Normal left button style for Header</td>
+<td class="description">Enum for Windows Normal left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header left button style for Header</td>
+<td class="description">Enum for Header left button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5562,8 +5515,8 @@ Header{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5579,8 +5532,8 @@ Enum for FlatHeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5597,32 +5550,32 @@ Enum for FlatHeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Flat Auto left button style for Header</td>
+<td class="description">Enum for Flat Auto left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Flat Back left button style for Header</td>
+<td class="description">Enum for Flat Back left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Flat Normal left button style for Header</td>
+<td class="description">Enum for Flat Normal left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Flat Header left button style for Header</td>
+<td class="description">Enum for Flat Header left button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5641,8 +5594,8 @@ Header{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5658,8 +5611,8 @@ Enum for HeaderLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5676,25 +5629,25 @@ Enum for HeaderLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for Back left button style for Header</td>
+<td class="description">Enum for Back left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header left button style for Header</td>
+<td class="description">Enum for Header left button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal left button style for Header</td>
+<td class="description">Enum for Normal left button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5713,8 +5666,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderLeftButtonStyle<span class="type-signature type string">String</span>
-{:#members:headerleftbuttonstyle}
+### HeaderLeftButtonStyle
+{:#enum:headerleftbuttonstyle}
 
 
 
@@ -5730,8 +5683,8 @@ Enum for headerLeftButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5748,25 +5701,25 @@ Enum for headerLeftButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for back Button Style</td>
+<td class="description">Enum for back Button Style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for header Button Style</td>
+<td class="description">Enum for header Button Style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal Button Style</td>
+<td class="description">Enum for normal Button Style</td>
 </tr>
 </tbody>
 </table>
@@ -5785,8 +5738,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -5802,8 +5755,8 @@ Enum for IOS7HeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5820,25 +5773,25 @@ Enum for IOS7HeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for iOS7 Auto right button style for Header</td>
+<td class="description">Enum for iOS7 Auto right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Header</td>
+<td class="description">Enum for Header right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Header</td>
+<td class="description">Enum for Normal right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5857,8 +5810,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -5874,8 +5827,8 @@ Enum for AndroidHeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5892,25 +5845,25 @@ Enum for AndroidHeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Android Auto right button style for Header</td>
+<td class="description">Enum for Android Auto right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Header</td>
+<td class="description">Enum for Normal right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Header</td>
+<td class="description">Enum for Header right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -5929,8 +5882,8 @@ Header{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -5946,8 +5899,8 @@ Enum for WindowsHeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -5964,25 +5917,25 @@ Enum for WindowsHeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Windows Auto right button style for Header</td>
+<td class="description">Enum for Windows Auto right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Header</td>
+<td class="description">Enum for Normal right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Header</td>
+<td class="description">Enum for Header right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -6001,8 +5954,8 @@ Header{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -6018,8 +5971,8 @@ Enum for FlatHeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6036,25 +5989,25 @@ Enum for FlatHeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for Flat Auto right button style for Header</td>
+<td class="description">Enum for Flat Auto right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Header</td>
+<td class="description">Enum for Header right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">/** Enum for Normal right button style for Header</td>
+<td class="description">/** Enum for Normal right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -6073,8 +6026,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">string</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -6090,8 +6043,8 @@ Enum for HeaderRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6108,18 +6061,18 @@ Enum for HeaderRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for Header right button style for Header</td>
+<td class="description">Enum for Header right button style for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal right button style for Header</td>
+<td class="description">Enum for Normal right button style for Header</td>
 </tr>
 </tbody>
 </table>
@@ -6138,8 +6091,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeaderRightButtonStyle<span class="type-signature type string">String</span>
-{:#members:headerrightbuttonstyle}
+### HeaderRightButtonStyle
+{:#enum:headerrightbuttonstyle}
 
 
 
@@ -6155,8 +6108,8 @@ Enum for headerRightButtonStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6173,18 +6126,18 @@ Enum for headerRightButtonStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for header Button Style</td>
+<td class="description">Enum for header Button Style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal Button Style</td>
+<td class="description">Enum for normal Button Style</td>
 </tr>
 </tbody>
 </table>
@@ -6203,8 +6156,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### HeightAdjustMode<span class="type-signature type string">string</span>
-{:#members:heightadjustmode}
+### HeightAdjustMode
+{:#enum:heightadjustmode}
 
 
 
@@ -6220,8 +6173,8 @@ Enum for accordion height style
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6238,25 +6191,25 @@ Enum for accordion height style
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Content{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Content</td>
+<td class="type">string</td>
 <td class="default">content</td>
-<td class="description last">Height fit to the content in the panel</td>
+<td class="description">Height fit to the content in the panel</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Height set to the largest content in the panel</td>
+<td class="description">Height set to the largest content in the panel</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fill{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fill</td>
+<td class="type">string</td>
 <td class="default">fill</td>
-<td class="description last">Height filled to the content of the panel</td>
+<td class="description">Height filled to the content of the panel</td>
 </tr>
 </tbody>
 </table>
@@ -6275,8 +6228,8 @@ Fill{% endhighlight %}</td>
 
 
 
-### HorizontalAlignment<span class="type-signature type string">string</span>
-{:#members:horizontalalignment}
+### HorizontalAlignment
+{:#enum:horizontalalignment}
 
 
 
@@ -6292,8 +6245,8 @@ Enum for Horizontal Alignment of elements in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6310,25 +6263,25 @@ Enum for Horizontal Alignment of elements in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Set horizontal alignment as left</td>
+<td class="description">Set horizontal alignment as left</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Middle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Middle</td>
+<td class="type">string</td>
 <td class="default">middle</td>
-<td class="description last">Set horizontal alignment as middle</td>
+<td class="description">Set horizontal alignment as middle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Set horizontal alignment as right</td>
+<td class="description">Set horizontal alignment as right</td>
 </tr>
 </tbody>
 </table>
@@ -6347,8 +6300,8 @@ Right{% endhighlight %}</td>
 
 
 
-### HorizontalAlignment<span class="type-signature type string">string</span>
-{:#members:horizontalalignment}
+### HorizontalAlignment
+{:#enum:horizontalalignment}
 
 
 
@@ -6364,8 +6317,8 @@ Enum for Horizontal Alignment of elements in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6382,25 +6335,25 @@ Enum for Horizontal Alignment of elements in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Used to align text horizontally on left side of node/connector</td>
+<td class="description">Used to align text horizontally on left side of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Used to align text horizontally on center of node/connector</td>
+<td class="description">Used to align text horizontally on center of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Used to align text horizontally on right side of node/connector</td>
+<td class="description">Used to align text horizontally on right side of node/connector</td>
 </tr>
 </tbody>
 </table>
@@ -6419,8 +6372,8 @@ Right{% endhighlight %}</td>
 
 
 
-### HorizontalTextAlignment<span class="type-signature type string">string</span>
-{:#members:horizontaltextalignment}
+### HorizontalTextAlignment
+{:#enum:horizontaltextalignment}
 
 
 
@@ -6436,8 +6389,8 @@ Enum for Horizontal Alignment of text in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6454,25 +6407,25 @@ Enum for Horizontal Alignment of text in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">Sets horizontal alignment of text to near</td>
+<td class="description">Sets horizontal alignment of text to near</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Sets horizontal alignment of text to center</td>
+<td class="description">Sets horizontal alignment of text to center</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">Sets horizontal alignment of text to far</td>
+<td class="description">Sets horizontal alignment of text to far</td>
 </tr>
 </tbody>
 </table>
@@ -6491,8 +6444,8 @@ Far{% endhighlight %}</td>
 
 
 
-### HourFormat<span class="type-signature type string">string</span>
-{:#members:hourformat}
+### HourFormat
+{:#enum:hourformat}
 
 
 
@@ -6508,8 +6461,8 @@ Enum for Hour format
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6526,18 +6479,18 @@ Enum for Hour format
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-TwentyFour{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TwentyFour</td>
+<td class="type">string</td>
 <td class="default">twentyfour</td>
-<td class="description last">Enum for twentyfour hourformat</td>
+<td class="description">Enum for twentyfour hourformat</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Twelve{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Twelve</td>
+<td class="type">string</td>
 <td class="default">twelve</td>
-<td class="description last">Enum for twentyfour hourformat</td>
+<td class="description">Enum for twentyfour hourformat</td>
 </tr>
 </tbody>
 </table>
@@ -6556,8 +6509,8 @@ Twelve{% endhighlight %}</td>
 
 
 
-### IconName<span class="type-signature type string">string</span>
-{:#members:iconname}
+### IconName
+{:#enum:iconname}
 
 
 
@@ -6573,8 +6526,8 @@ Enum for toolbar icon name
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6591,144 +6544,144 @@ Enum for toolbar icon name
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Add{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Add</td>
+<td class="type">string</td>
 <td class="default">Add</td>
-<td class="description last">Enum for Add toolbar icon</td>
+<td class="description">Enum for Add toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">Back</td>
-<td class="description last">Enum for Back toolbar icon</td>
+<td class="description">Enum for Back toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bookmark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bookmark</td>
+<td class="type">string</td>
 <td class="default">Bookmark</td>
-<td class="description last">Enum for Bookmark toolbar icon</td>
+<td class="description">Enum for Bookmark toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Close{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Close</td>
+<td class="type">string</td>
 <td class="default">Close</td>
-<td class="description last">Enum for Close toolbar icon</td>
+<td class="description">Enum for Close toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Compose{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Compose</td>
+<td class="type">string</td>
 <td class="default">Compose</td>
-<td class="description last">Enum for Compose toolbar icon</td>
+<td class="description">Enum for Compose toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Copy{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Copy</td>
+<td class="type">string</td>
 <td class="default">Copy</td>
-<td class="description last">Enum for Copy toolbar icon</td>
+<td class="description">Enum for Copy toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Cut{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Cut</td>
+<td class="type">string</td>
 <td class="default">Cut</td>
-<td class="description last">Enum for Cut toolbar icon</td>
+<td class="description">Enum for Cut toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Delete{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Delete</td>
+<td class="type">string</td>
 <td class="default">Delete</td>
-<td class="description last">Enum for Delete toolbar icon</td>
+<td class="description">Enum for Delete toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Done{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Done</td>
+<td class="type">string</td>
 <td class="default">Done</td>
-<td class="description last">Enum for Done toolbar icon</td>
+<td class="description">Enum for Done toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Edit{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Edit</td>
+<td class="type">string</td>
 <td class="default">Edit</td>
-<td class="description last">Enum for Edit toolbar icon</td>
+<td class="description">Enum for Edit toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Mail{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Mail</td>
+<td class="type">string</td>
 <td class="default">Mail</td>
-<td class="description last">Enum for Mail toolbar icon</td>
+<td class="description">Enum for Mail toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Next{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Next</td>
+<td class="type">string</td>
 <td class="default">Next</td>
-<td class="description last">Enum for Next toolbar icon</td>
+<td class="description">Enum for Next toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Refresh{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Refresh</td>
+<td class="type">string</td>
 <td class="default">Refresh</td>
-<td class="description last">Enum for Refresh toolbar icon</td>
+<td class="description">Enum for Refresh toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Overflow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Overflow</td>
+<td class="type">string</td>
 <td class="default">Overflow</td>
-<td class="description last">Enum for Overflow toolbar icon</td>
+<td class="description">Enum for Overflow toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Paste{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Paste</td>
+<td class="type">string</td>
 <td class="default">Paste</td>
-<td class="description last">Enum for Paste toolbar icon</td>
+<td class="description">Enum for Paste toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Reply{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Reply</td>
+<td class="type">string</td>
 <td class="default">Reply</td>
-<td class="description last">Enum for Reply toolbar icon</td>
+<td class="description">Enum for Reply toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Save{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Save</td>
+<td class="type">string</td>
 <td class="default">Save</td>
-<td class="description last">Enum for Save toolbar icon</td>
+<td class="description">Enum for Save toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Search{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Search</td>
+<td class="type">string</td>
 <td class="default">Search</td>
-<td class="description last">Enum for Search toolbar icon</td>
+<td class="description">Enum for Search toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Settings{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Settings</td>
+<td class="type">string</td>
 <td class="default">Settings</td>
-<td class="description last">Enum for Settings toolbar icon</td>
+<td class="description">Enum for Settings toolbar icon</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Share{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Share</td>
+<td class="type">string</td>
 <td class="default">Share</td>
-<td class="description last">Enum for Share toolbar icon</td>
+<td class="description">Enum for Share toolbar icon</td>
 </tr>
 </tbody>
 </table>
@@ -6747,8 +6700,8 @@ Share{% endhighlight %}</td>
 
 
 
-### ImagePosition<span class="type-signature type string">string</span>
-{:#members:imageposition}
+### ImagePosition
+{:#enum:imageposition}
 
 
 
@@ -6764,8 +6717,8 @@ Enum for ImagePosition
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6782,18 +6735,18 @@ Enum for ImagePosition
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Enum for image at left position</td>
+<td class="description">Enum for image at left position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Enum for image at right position</td>
+<td class="description">Enum for image at right position</td>
 </tr>
 </tbody>
 </table>
@@ -6812,8 +6765,8 @@ Right{% endhighlight %}</td>
 
 
 
-### ImagePosition<span class="type-signature type string">string</span>
-{:#members:imageposition}
+### ImagePosition
+{:#enum:imageposition}
 
 
 
@@ -6829,8 +6782,8 @@ Enum for Tile ImagePosition
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6847,74 +6800,74 @@ Enum for Tile ImagePosition
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Enum for center position of tile image</td>
+<td class="description">Enum for center position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">Enum for top position of tile image</td>
+<td class="description">Enum for top position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">Enum for bottom position of tile image</td>
+<td class="description">Enum for bottom position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Enum for right position of tile image</td>
+<td class="description">Enum for right position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Enum for left position of tile image</td>
+<td class="description">Enum for left position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopLeft</td>
+<td class="type">string</td>
 <td class="default">topleft</td>
-<td class="description last">Enum for topleft position of tile image</td>
+<td class="description">Enum for topleft position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopRight</td>
+<td class="type">string</td>
 <td class="default">topright</td>
-<td class="description last">Enum for topright position of tile image</td>
+<td class="description">Enum for topright position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomRight</td>
+<td class="type">string</td>
 <td class="default">bottomright</td>
-<td class="description last">Enum for bottomright position of tile image</td>
+<td class="description">Enum for bottomright position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomLeft</td>
+<td class="type">string</td>
 <td class="default">bottomleft</td>
-<td class="description last">Enum for bottomleft position of tile image</td>
+<td class="description">Enum for bottomleft position of tile image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fill{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fill</td>
+<td class="type">string</td>
 <td class="default">fill</td>
-<td class="description last">Enum for fill position of tile image</td>
+<td class="description">Enum for fill position of tile image</td>
 </tr>
 </tbody>
 </table>
@@ -6933,8 +6886,8 @@ Fill{% endhighlight %}</td>
 
 
 
-### IndicatorType<span class="type-signature type string">string</span>
-{:#members:indicatortype}
+### IndicatorType
+{:#enum:indicatortype}
 
 
 
@@ -6950,8 +6903,8 @@ Enum for gauge IndicatorType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -6968,39 +6921,39 @@ Enum for gauge IndicatorType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the IndicatorType rectangle.</td>
+<td class="description">To set the IndicatorType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">To set the IndicatorType circle.</td>
+<td class="description">To set the IndicatorType circle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RoundedRectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RoundedRectangle</td>
+<td class="type">string</td>
 <td class="default">roundedrectangle</td>
-<td class="description last">To set the IndicatorType roundedrectangle.</td>
+<td class="description">To set the IndicatorType roundedrectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Text</td>
+<td class="type">string</td>
 <td class="default">text</td>
-<td class="description last">To set the IndicatorType Text.</td>
+<td class="description">To set the IndicatorType Text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">To set the IndicatorType Text.</td>
+<td class="description">To set the IndicatorType Text.</td>
 </tr>
 </tbody>
 </table>
@@ -7019,8 +6972,8 @@ Image{% endhighlight %}</td>
 
 
 
-### IndicatorType<span class="type-signature type string">string</span>
-{:#members:indicatortype}
+### IndicatorType
+{:#enum:indicatortype}
 
 
 
@@ -7036,8 +6989,8 @@ Enum for gauge IndicatorType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7054,32 +7007,32 @@ Enum for gauge IndicatorType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the IndicatorType rectangle.</td>
+<td class="description">To set the IndicatorType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">To set the IndicatorType circle.</td>
+<td class="description">To set the IndicatorType circle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RoundedRectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RoundedRectangle</td>
+<td class="type">string</td>
 <td class="default">roundedrectangle</td>
-<td class="description last">To set the IndicatorType roundedrectangle.</td>
+<td class="description">To set the IndicatorType roundedrectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Text</td>
+<td class="type">string</td>
 <td class="default">text</td>
-<td class="description last">To set the IndicatorType text.</td>
+<td class="description">To set the IndicatorType text.</td>
 </tr>
 </tbody>
 </table>
@@ -7098,8 +7051,8 @@ Text{% endhighlight %}</td>
 
 
 
-### IndicatorsType<span class="type-signature type string">string</span>
-{:#members:indicatorstype}
+### IndicatorsType
+{:#enum:indicatorstype}
 
 
 
@@ -7115,8 +7068,8 @@ Enum for type of indicator in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7133,74 +7086,74 @@ Enum for type of indicator in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-RSI{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RSI</td>
+<td class="type">string</td>
 <td class="default">RSI</td>
-<td class="description last">Set indicator type as RSI.</td>
+<td class="description">Set indicator type as RSI.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Momentum{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Momentum</td>
+<td class="type">string</td>
 <td class="default">Momentum</td>
-<td class="description last">Set indicator type as Momentum.</td>
+<td class="description">Set indicator type as Momentum.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bollingerband{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bollingerband</td>
+<td class="type">string</td>
 <td class="default">Bollingerband</td>
-<td class="description last">Set indicator type as Bollingerband.</td>
+<td class="description">Set indicator type as Bollingerband.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Accumulationdistribution{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Accumulationdistribution</td>
+<td class="type">string</td>
 <td class="default">Accumulationdistribution</td>
-<td class="description last">Set indicator type as Accumulationdistribution.</td>
+<td class="description">Set indicator type as Accumulationdistribution.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-EMA{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+EMA</td>
+<td class="type">string</td>
 <td class="default">EMA</td>
-<td class="description last">Set indicator type as EMA.</td>
+<td class="description">Set indicator type as EMA.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SMA{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SMA</td>
+<td class="type">string</td>
 <td class="default">SMA</td>
-<td class="description last">Set indicator type as SMA.</td>
+<td class="description">Set indicator type as SMA.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Stochastic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Stochastic</td>
+<td class="type">string</td>
 <td class="default">Stochastic</td>
-<td class="description last">Set indicator type as Stochastic.</td>
+<td class="description">Set indicator type as Stochastic.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ATR{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+ATR</td>
+<td class="type">string</td>
 <td class="default">ATR</td>
-<td class="description last">Set indicator type as ATR.</td>
+<td class="description">Set indicator type as ATR.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MACD{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MACD</td>
+<td class="type">string</td>
 <td class="default">MACD</td>
-<td class="description last">Set indicator type as MACD.</td>
+<td class="description">Set indicator type as MACD.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TMA{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TMA</td>
+<td class="type">string</td>
 <td class="default">TMA</td>
-<td class="description last">Set indicator type as TMA.</td>
+<td class="description">Set indicator type as TMA.</td>
 </tr>
 </tbody>
 </table>
@@ -7219,8 +7172,8 @@ TMA{% endhighlight %}</td>
 
 
 
-### IntervalType<span class="type-signature type string">string</span>
-{:#members:intervaltype}
+### IntervalType
+{:#enum:intervaltype}
 
 
 
@@ -7236,8 +7189,8 @@ Enum for chart interval type.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7254,53 +7207,53 @@ Enum for chart interval type.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Days{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Days</td>
+<td class="type">string</td>
 <td class="default">days</td>
-<td class="description last">Sets chart interval type to days.</td>
+<td class="description">Sets chart interval type to days.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hours{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Hours</td>
+<td class="type">string</td>
 <td class="default">hours</td>
-<td class="description last">Sets chart interval type to hours.</td>
+<td class="description">Sets chart interval type to hours.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Seconds{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Seconds</td>
+<td class="type">string</td>
 <td class="default">seconds</td>
-<td class="description last">Sets chart interval type to seconds.</td>
+<td class="description">Sets chart interval type to seconds.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Milliseconds{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Milliseconds</td>
+<td class="type">string</td>
 <td class="default">milliseconds</td>
-<td class="description last">Sets chart interval type to milliseconds.</td>
+<td class="description">Sets chart interval type to milliseconds.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Minutes{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Minutes</td>
+<td class="type">string</td>
 <td class="default">minutes</td>
-<td class="description last">Sets chart interval type to minutes.</td>
+<td class="description">Sets chart interval type to minutes.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Months{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Months</td>
+<td class="type">string</td>
 <td class="default">months</td>
-<td class="description last">Sets chart interval type to months.</td>
+<td class="description">Sets chart interval type to months.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Years{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Years</td>
+<td class="type">string</td>
 <td class="default">years</td>
-<td class="description last">Sets chart interval type to years.</td>
+<td class="description">Sets chart interval type to years.</td>
 </tr>
 </tbody>
 </table>
@@ -7319,8 +7272,8 @@ Years{% endhighlight %}</td>
 
 
 
-### ItemsLayoutMode<span class="type-signature type string">string</span>
-{:#members:itemslayoutmode}
+### ItemsLayoutMode
+{:#enum:itemslayoutmode}
 
 
 
@@ -7336,8 +7289,8 @@ Enum for TreeMap items layout mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7354,32 +7307,32 @@ Enum for TreeMap items layout mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Squarified{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Squarified</td>
+<td class="type">string</td>
 <td class="default">squarified</td>
-<td class="description last"></td>
+<td class="description"></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SliceAndDiceHorizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SliceAndDiceHorizontal</td>
+<td class="type">string</td>
 <td class="default">sliceanddicehorizontal</td>
-<td class="description last"></td>
+<td class="description"></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SliceAndDiceVertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SliceAndDiceVertical</td>
+<td class="type">string</td>
 <td class="default">sliceanddicevertical</td>
-<td class="description last"></td>
+<td class="description"></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SliceAndDiceAuto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SliceAndDiceAuto</td>
+<td class="type">string</td>
 <td class="default">sliceanddiceauto</td>
-<td class="description last"></td>
+<td class="description"></td>
 </tr>
 </tbody>
 </table>
@@ -7398,8 +7351,8 @@ SliceAndDiceAuto{% endhighlight %}</td>
 
 
 
-### LabelEditMode<span class="type-signature type string">string</span>
-{:#members:labeleditmode}
+### LabelEditMode
+{:#enum:labeleditmode}
 
 
 
@@ -7415,8 +7368,8 @@ Enum for LabelEditMode of text in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7433,18 +7386,18 @@ Enum for LabelEditMode of text in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Edit{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Edit</td>
+<td class="type">string</td>
 <td class="default">edit</td>
-<td class="description last">Used to set label edit mode as edit</td>
+<td class="description">Used to set label edit mode as edit</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-View{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+View</td>
+<td class="type">string</td>
 <td class="default">view</td>
-<td class="description last">Used to set label edit mode as view</td>
+<td class="description">Used to set label edit mode as view</td>
 </tr>
 </tbody>
 </table>
@@ -7463,8 +7416,8 @@ View{% endhighlight %}</td>
 
 
 
-### LabelIntersectAction<span class="type-signature type string">string</span>
-{:#members:labelintersectaction}
+### LabelIntersectAction
+{:#enum:labelintersectaction}
 
 
 
@@ -7480,8 +7433,8 @@ Enum for chart labelIntersectAction.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7498,53 +7451,53 @@ Enum for chart labelIntersectAction.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">No action is made on intersection of labels.</td>
+<td class="description">No action is made on intersection of labels.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rotate90{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rotate90</td>
+<td class="type">string</td>
 <td class="default">rotate90</td>
-<td class="description last">Rotate the labels to 90 degree on intersect.</td>
+<td class="description">Rotate the labels to 90 degree on intersect.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rotate45{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rotate45</td>
+<td class="type">string</td>
 <td class="default">rotate45</td>
-<td class="description last">Rotate the labels to 45 degree on intersect.</td>
+<td class="description">Rotate the labels to 45 degree on intersect.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wrap{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wrap</td>
+<td class="type">string</td>
 <td class="default">wrap</td>
-<td class="description last">Wrap the label to multiple lines on intersect.</td>
+<td class="description">Wrap the label to multiple lines on intersect.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trim{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trim</td>
+<td class="type">string</td>
 <td class="default">trim</td>
-<td class="description last">Trim the text and display whole text on mouse over.</td>
+<td class="description">Trim the text and display whole text on mouse over.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hide{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Hide</td>
+<td class="type">string</td>
 <td class="default">hide</td>
-<td class="description last">Hide the label which intersect.</td>
+<td class="description">Hide the label which intersect.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MultipleRows{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MultipleRows</td>
+<td class="type">string</td>
 <td class="default">multipleRows</td>
-<td class="description last">Labels are placed on another row on intersect.</td>
+<td class="description">Labels are placed on another row on intersect.</td>
 </tr>
 </tbody>
 </table>
@@ -7563,8 +7516,8 @@ MultipleRows{% endhighlight %}</td>
 
 
 
-### LabelPlacement<span class="type-signature type string">string</span>
-{:#members:labelplacement}
+### LabelPlacement
+{:#enum:labelplacement}
 
 
 
@@ -7580,8 +7533,8 @@ Enum for Bullet Graph label placement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7598,18 +7551,18 @@ Enum for Bullet Graph label placement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inside</td>
+<td class="type">string</td>
 <td class="default">inside</td>
-<td class="description last">support for placing labels inside scale.</td>
+<td class="description">support for placing labels inside scale.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
 <td class="default">outside</td>
-<td class="description last">support for placing labels outside scale.</td>
+<td class="description">support for placing labels outside scale.</td>
 </tr>
 </tbody>
 </table>
@@ -7628,8 +7581,8 @@ Outside{% endhighlight %}</td>
 
 
 
-### LabelPlacement<span class="type-signature type string">string</span>
-{:#members:labelplacement}
+### LabelPlacement
+{:#enum:labelplacement}
 
 
 
@@ -7645,8 +7598,8 @@ Enum for gauge LabelPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7663,25 +7616,25 @@ Enum for gauge LabelPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the LabelPlacement near.</td>
+<td class="description">To set the LabelPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the LabelPlacement far.</td>
+<td class="description">To set the LabelPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the LabelPlacement center.</td>
+<td class="description">To set the LabelPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -7700,8 +7653,8 @@ Center{% endhighlight %}</td>
 
 
 
-### LabelPlacement<span class="type-signature type string">string</span>
-{:#members:labelplacement}
+### LabelPlacement
+{:#enum:labelplacement}
 
 
 
@@ -7717,8 +7670,8 @@ Enum for gauge LabelPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7735,25 +7688,25 @@ Enum for gauge LabelPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the LabelPlacement near.</td>
+<td class="description">To set the LabelPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the LabelPlacement far.</td>
+<td class="description">To set the LabelPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the LabelPlacement center.</td>
+<td class="description">To set the LabelPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -7772,8 +7725,8 @@ Center{% endhighlight %}</td>
 
 
 
-### LabelPlacement<span class="type-signature type string">string</span>
-{:#members:labelplacement}
+### LabelPlacement
+{:#enum:labelplacement}
 
 
 
@@ -7789,8 +7742,8 @@ Enum for chart labelPlacement.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7807,18 +7760,18 @@ Enum for chart labelPlacement.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-BetweenTicks{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BetweenTicks</td>
+<td class="type">string</td>
 <td class="default">betweenTicks</td>
-<td class="description last">specifies the placement of labels between the ticks.</td>
+<td class="description">specifies the placement of labels between the ticks.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OnTicks{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OnTicks</td>
+<td class="type">string</td>
 <td class="default">onTicks</td>
-<td class="description last">specifies the placement of labels on the ticks.</td>
+<td class="description">specifies the placement of labels on the ticks.</td>
 </tr>
 </tbody>
 </table>
@@ -7837,8 +7790,8 @@ OnTicks{% endhighlight %}</td>
 
 
 
-### LabelPosition<span class="type-signature type string">string</span>
-{:#members:labelposition}
+### LabelPosition
+{:#enum:labelposition}
 
 
 
@@ -7854,8 +7807,8 @@ Enum for Bullet Graph Label Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7872,18 +7825,18 @@ Enum for Bullet Graph Label Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Below{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Below</td>
+<td class="type">string</td>
 <td class="default">below</td>
-<td class="description last">To set the label position below.</td>
+<td class="description">To set the label position below.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Above{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Above</td>
+<td class="type">string</td>
 <td class="default">above</td>
-<td class="description last">To set the label position above.</td>
+<td class="description">To set the label position above.</td>
 </tr>
 </tbody>
 </table>
@@ -7902,8 +7855,8 @@ Above{% endhighlight %}</td>
 
 
 
-### LabelPosition<span class="type-signature type string">string</span>
-{:#members:labelposition}
+### LabelPosition
+{:#enum:labelposition}
 
 
 
@@ -7919,8 +7872,8 @@ Enum for label position.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -7937,18 +7890,18 @@ Enum for label position.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inside</td>
+<td class="type">string</td>
 <td class="default">inside</td>
-<td class="description last">Support for changing the labelPosition to inside.</td>
+<td class="description">Support for changing the labelPosition to inside.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
 <td class="default">outside</td>
-<td class="description last">Support for changing the labelPosition to outside.</td>
+<td class="description">Support for changing the labelPosition to outside.</td>
 </tr>
 </tbody>
 </table>
@@ -7967,8 +7920,8 @@ Outside{% endhighlight %}</td>
 
 
 
-### LabelSize<span class="type-signature type string">string</span>
-{:#members:labelsize}
+### LabelSize
+{:#enum:labelsize}
 
 
 
@@ -7984,8 +7937,8 @@ Enum for Map Label size
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8002,18 +7955,18 @@ Enum for Map Label size
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">support for label size fixed.</td>
+<td class="description">support for label size fixed.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Default</td>
+<td class="type">string</td>
 <td class="default">default</td>
-<td class="description last">support for label size default.</td>
+<td class="description">support for label size default.</td>
 </tr>
 </tbody>
 </table>
@@ -8032,8 +7985,8 @@ Default{% endhighlight %}</td>
 
 
 
-### LabelType<span class="type-signature type string">string</span>
-{:#members:labeltype}
+### LabelType
+{:#enum:labeltype}
 
 
 
@@ -8049,8 +8002,8 @@ Enum for gauge LabelType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8067,18 +8020,18 @@ Enum for gauge LabelType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Major{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Major</td>
+<td class="type">string</td>
 <td class="default">major</td>
-<td class="description last">To set the LabelType major.</td>
+<td class="description">To set the LabelType major.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Minor{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Minor</td>
+<td class="type">string</td>
 <td class="default">minor</td>
-<td class="description last">To set the LabelType minor.</td>
+<td class="description">To set the LabelType minor.</td>
 </tr>
 </tbody>
 </table>
@@ -8097,8 +8050,8 @@ Minor{% endhighlight %}</td>
 
 
 
-### LabelType<span class="type-signature type string">string</span>
-{:#members:labeltype}
+### LabelType
+{:#enum:labeltype}
 
 
 
@@ -8114,8 +8067,8 @@ Enum for gauge LabelType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8132,18 +8085,18 @@ Enum for gauge LabelType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Major{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Major</td>
+<td class="type">string</td>
 <td class="default">major</td>
-<td class="description last">To set the LabelType major.</td>
+<td class="description">To set the LabelType major.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Minor{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Minor</td>
+<td class="type">string</td>
 <td class="default">minor</td>
-<td class="description last">To set the LabelType minor.</td>
+<td class="description">To set the LabelType minor.</td>
 </tr>
 </tbody>
 </table>
@@ -8162,8 +8115,8 @@ Minor{% endhighlight %}</td>
 
 
 
-### LayerType<span class="type-signature type string">string</span>
-{:#members:layertype}
+### LayerType
+{:#enum:layertype}
 
 
 
@@ -8179,8 +8132,8 @@ Enum for Map LayerType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8197,25 +8150,25 @@ Enum for Map LayerType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Geometry{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Geometry</td>
+<td class="type">string</td>
 <td class="default">geometry</td>
-<td class="description last">support for layer type geometry.</td>
+<td class="description">support for layer type geometry.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OSM{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OSM</td>
+<td class="type">string</td>
 <td class="default">osm</td>
-<td class="description last">support for layer type osm.</td>
+<td class="description">support for layer type osm.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bing{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bing</td>
+<td class="type">string</td>
 <td class="default">bing</td>
-<td class="description last">support for layer type bing.</td>
+<td class="description">support for layer type bing.</td>
 </tr>
 </tbody>
 </table>
@@ -8234,8 +8187,8 @@ Bing{% endhighlight %}</td>
 
 
 
-### LayoutOrientations<span class="type-signature type string">String</span>
-{:#members:layoutorientations}
+### LayoutOrientations
+{:#enum:layoutorientations}
 
 
 
@@ -8251,8 +8204,8 @@ Enum for LayoutOrientations in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8269,32 +8222,32 @@ Enum for LayoutOrientations in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-TopToBottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+TopToBottom</td>
+<td class="type">string</td>
 <td class="default">toptobottom</td>
-<td class="description last">Used to set LayoutOrientation from top to bottom</td>
+<td class="description">Used to set LayoutOrientation from top to bottom</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomToTop{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+BottomToTop</td>
+<td class="type">string</td>
 <td class="default">bottomtotop</td>
-<td class="description last">Used to set LayoutOrientation from bottom to top</td>
+<td class="description">Used to set LayoutOrientation from bottom to top</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftToRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+LeftToRight</td>
+<td class="type">string</td>
 <td class="default">lefttoright</td>
-<td class="description last">Used to set LayoutOrientation from left to right</td>
+<td class="description">Used to set LayoutOrientation from left to right</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightToLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+RightToLeft</td>
+<td class="type">string</td>
 <td class="default">righttoleft</td>
-<td class="description last">Used to set LayoutOrientation from right to left</td>
+<td class="description">Used to set LayoutOrientation from right to left</td>
 </tr>
 </tbody>
 </table>
@@ -8313,8 +8266,8 @@ RightToLeft{% endhighlight %}</td>
 
 
 
-### LayoutTypes<span class="type-signature type string">String</span>
-{:#members:layouttypes}
+### LayoutTypes
+{:#enum:layouttypes}
 
 
 
@@ -8330,8 +8283,8 @@ Enum for LayoutTypes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8348,25 +8301,25 @@ Enum for LayoutTypes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Used not to set any specific layout</td>
+<td class="description">Used not to set any specific layout</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HierarchicalTree{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+HierarchicalTree</td>
+<td class="type">string</td>
 <td class="default">hierarchicaltree</td>
-<td class="description last">Used to set layout type as hierarchical layout</td>
+<td class="description">Used to set layout type as hierarchical layout</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OrganizationalChart{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+OrganizationalChart</td>
+<td class="type">string</td>
 <td class="default">organizationalchart</td>
-<td class="description last">Used to set layout type as organnizational chart</td>
+<td class="description">Used to set layout type as organnizational chart</td>
 </tr>
 </tbody>
 </table>
@@ -8385,8 +8338,8 @@ OrganizationalChart{% endhighlight %}</td>
 
 
 
-### LegendIcons<span class="type-signature type string">string</span>
-{:#members:legendicons}
+### LegendIcons
+{:#enum:legendicons}
 
 
 
@@ -8402,8 +8355,8 @@ Enum for Map legend icons
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8420,18 +8373,18 @@ Enum for Map legend icons
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">support for legend icon rectangle.</td>
+<td class="description">support for legend icon rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">support for legend icon circle.</td>
+<td class="description">support for legend icon circle.</td>
 </tr>
 </tbody>
 </table>
@@ -8450,8 +8403,8 @@ Circle{% endhighlight %}</td>
 
 
 
-### LegendMode<span class="type-signature type string">string</span>
-{:#members:legendmode}
+### LegendMode
+{:#enum:legendmode}
 
 
 
@@ -8467,8 +8420,8 @@ Enum for Map Legend mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8485,18 +8438,18 @@ Enum for Map Legend mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Default</td>
+<td class="type">string</td>
 <td class="default">default</td>
-<td class="description last">support for legend mode default.</td>
+<td class="description">support for legend mode default.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Interactive{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Interactive</td>
+<td class="type">string</td>
 <td class="default">interactive</td>
-<td class="description last">support for legend mode interactive.</td>
+<td class="description">support for legend mode interactive.</td>
 </tr>
 </tbody>
 </table>
@@ -8515,8 +8468,8 @@ Interactive{% endhighlight %}</td>
 
 
 
-### LegendType<span class="type-signature type string">string</span>
-{:#members:legendtype}
+### LegendType
+{:#enum:legendtype}
 
 
 
@@ -8532,8 +8485,8 @@ Enum for Map Legend type
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8550,18 +8503,18 @@ Enum for Map Legend type
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Layers{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Layers</td>
+<td class="type">string</td>
 <td class="default">layers</td>
-<td class="description last">support for Legend type layers.</td>
+<td class="description">support for Legend type layers.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bubbles{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bubbles</td>
+<td class="type">string</td>
 <td class="default">bubbles</td>
-<td class="description last">support for Legend type bubbles.</td>
+<td class="description">support for Legend type bubbles.</td>
 </tr>
 </tbody>
 </table>
@@ -8580,8 +8533,8 @@ Bubbles{% endhighlight %}</td>
 
 
 
-### LineCap<span class="type-signature type string">string</span>
-{:#members:linecap}
+### LineCap
+{:#enum:linecap}
 
 
 
@@ -8597,8 +8550,8 @@ Enum for linecap.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8615,25 +8568,25 @@ Enum for linecap.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Butt{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Butt</td>
+<td class="type">string</td>
 <td class="default">butt</td>
-<td class="description last">Sets the linecap as butt.</td>
+<td class="description">Sets the linecap as butt.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Round{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Round</td>
+<td class="type">string</td>
 <td class="default">round</td>
-<td class="description last">Sets the linecap as round.</td>
+<td class="description">Sets the linecap as round.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Square{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Square</td>
+<td class="type">string</td>
 <td class="default">square</td>
-<td class="description last">Sets the linecap as square.</td>
+<td class="description">Sets the linecap as square.</td>
 </tr>
 </tbody>
 </table>
@@ -8652,8 +8605,8 @@ Square{% endhighlight %}</td>
 
 
 
-### LineJoin<span class="type-signature type string">string</span>
-{:#members:linejoin}
+### LineJoin
+{:#enum:linejoin}
 
 
 
@@ -8669,8 +8622,8 @@ Enum for line join.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8687,25 +8640,25 @@ Enum for line join.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Round{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Round</td>
+<td class="type">string</td>
 <td class="default">round</td>
-<td class="description last">Sets the lineJoin to round.</td>
+<td class="description">Sets the lineJoin to round.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bevel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bevel</td>
+<td class="type">string</td>
 <td class="default">bevel</td>
-<td class="description last">Sets the lineJoin to bevel.</td>
+<td class="description">Sets the lineJoin to bevel.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Miter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Miter</td>
+<td class="type">string</td>
 <td class="default">miter</td>
-<td class="description last">Sets the lineJoin to miter.</td>
+<td class="description">Sets the lineJoin to miter.</td>
 </tr>
 </tbody>
 </table>
@@ -8724,8 +8677,8 @@ Miter{% endhighlight %}</td>
 
 
 
-### LiveTileType<span class="type-signature type string">string</span>
-{:#members:livetiletype}
+### LiveTileType
+{:#enum:livetiletype}
 
 
 
@@ -8741,8 +8694,8 @@ Enum for LiveTileType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8759,25 +8712,25 @@ Enum for LiveTileType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Flip{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Flip</td>
+<td class="type">string</td>
 <td class="default">flip</td>
-<td class="description last">Enum for flip type of livetile</td>
+<td class="description">Enum for flip type of livetile</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Slide{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Slide</td>
+<td class="type">string</td>
 <td class="default">slide</td>
-<td class="description last">Enum for slide type of livetile</td>
+<td class="description">Enum for slide type of livetile</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Carousel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Carousel</td>
+<td class="type">string</td>
 <td class="default">carousel</td>
-<td class="description last">Enum for carousel type of livetile</td>
+<td class="description">Enum for carousel type of livetile</td>
 </tr>
 </tbody>
 </table>
@@ -8796,8 +8749,8 @@ Carousel{% endhighlight %}</td>
 
 
 
-### MACDType<span class="type-signature type string">string</span>
-{:#members:macdtype}
+### MACDType
+{:#enum:macdtype}
 
 
 
@@ -8813,8 +8766,8 @@ Enum for MACDType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8831,25 +8784,25 @@ Enum for MACDType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Line{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Line</td>
+<td class="type">string</td>
 <td class="default">line</td>
-<td class="description last">Enum for MACD line</td>
+<td class="description">Enum for MACD line</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Histogram{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Histogram</td>
+<td class="type">string</td>
 <td class="default">histogram</td>
-<td class="description last">Enum for MACD Histogram</td>
+<td class="description">Enum for MACD Histogram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Both{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Both</td>
+<td class="type">string</td>
 <td class="default">both</td>
-<td class="description last">Enum for both MACD line and histogram</td>
+<td class="description">Enum for both MACD line and histogram</td>
 </tr>
 </tbody>
 </table>
@@ -8868,8 +8821,8 @@ Both{% endhighlight %}</td>
 
 
 
-### MarkerType<span class="type-signature type string">string</span>
-{:#members:markertype}
+### MarkerType
+{:#enum:markertype}
 
 
 
@@ -8885,8 +8838,8 @@ Enum for gauge MarkerType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -8903,88 +8856,88 @@ Enum for gauge MarkerType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the MarkerType rectangle.</td>
+<td class="description">To set the MarkerType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">To set the MarkerType triangle.</td>
+<td class="description">To set the MarkerType triangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Ellipse{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
 <td class="default">ellipse</td>
-<td class="description last">To set the MarkerType ellipse.</td>
+<td class="description">To set the MarkerType ellipse.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">To set the MarkerType diamond.</td>
+<td class="description">To set the MarkerType diamond.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
-<td class="description last">To set the MarkerType pentagon.</td>
+<td class="description">To set the MarkerType pentagon.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">To set the MarkerType circle.</td>
+<td class="description">To set the MarkerType circle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Slider{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Slider</td>
+<td class="type">string</td>
 <td class="default">slider</td>
-<td class="description last">To set the MarkerType slider.</td>
+<td class="description">To set the MarkerType slider.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pointer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pointer</td>
+<td class="type">string</td>
 <td class="default">pointer</td>
-<td class="description last">To set the MarkerType pointer.</td>
+<td class="description">To set the MarkerType pointer.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wedge{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
 <td class="default">wedge</td>
-<td class="description last">To set the MarkerType wedge.</td>
+<td class="description">To set the MarkerType wedge.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
-<td class="description last">To set the MarkerType trapezoid.</td>
+<td class="description">To set the MarkerType trapezoid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RoundedRectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RoundedRectangle</td>
+<td class="type">string</td>
 <td class="default">roundedrectangle</td>
-<td class="description last">To set the MarkerType roundedrectangle.</td>
+<td class="description">To set the MarkerType roundedrectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">To set the MarkerType image.</td>
+<td class="description">To set the MarkerType image.</td>
 </tr>
 </tbody>
 </table>
@@ -9003,8 +8956,8 @@ Image{% endhighlight %}</td>
 
 
 
-### MarkerType<span class="type-signature type string">string</span>
-{:#members:markertype}
+### MarkerType
+{:#enum:markertype}
 
 
 
@@ -9020,8 +8973,8 @@ Enum for gauge MarkerType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9038,88 +8991,88 @@ Enum for gauge MarkerType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the MarkerType rectangle.</td>
+<td class="description">To set the MarkerType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">To set the MarkerType triangle.</td>
+<td class="description">To set the MarkerType triangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Ellipse{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
 <td class="default">ellipse</td>
-<td class="description last">To set the MarkerType ellipse.</td>
+<td class="description">To set the MarkerType ellipse.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">To set the MarkerType diamond.</td>
+<td class="description">To set the MarkerType diamond.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
-<td class="description last">To set the MarkerType pentagon.</td>
+<td class="description">To set the MarkerType pentagon.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">To set the MarkerType circle.</td>
+<td class="description">To set the MarkerType circle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Star</td>
+<td class="type">string</td>
 <td class="default">star</td>
-<td class="description last">To set the MarkerType star.</td>
+<td class="description">To set the MarkerType star.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Slider{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Slider</td>
+<td class="type">string</td>
 <td class="default">slider</td>
-<td class="description last">To set the MarkerType slider.</td>
+<td class="description">To set the MarkerType slider.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pointer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pointer</td>
+<td class="type">string</td>
 <td class="default">pointer</td>
-<td class="description last">To set the MarkerType pointer.</td>
+<td class="description">To set the MarkerType pointer.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wedge{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
 <td class="default">wedge</td>
-<td class="description last">To set the MarkerType wedge.</td>
+<td class="description">To set the MarkerType wedge.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
-<td class="description last">To set the MarkerType trapezoid.</td>
+<td class="description">To set the MarkerType trapezoid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RoundedRectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RoundedRectangle</td>
+<td class="type">string</td>
 <td class="default">roundedrectangle</td>
-<td class="description last">To set the MarkerType roundedrectangle.</td>
+<td class="description">To set the MarkerType roundedrectangle.</td>
 </tr>
 </tbody>
 </table>
@@ -9138,8 +9091,8 @@ RoundedRectangle{% endhighlight %}</td>
 
 
 
-### Mode<span class="type-signature type string">string</span>
-{:#members:mode}
+### Mode
+{:#enum:mode}
 
 
 
@@ -9155,8 +9108,8 @@ Enum for highlighting and selection mode in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9173,18 +9126,18 @@ Enum for highlighting and selection mode in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Series{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Series</td>
+<td class="type">string</td>
 <td class="default">series</td>
-<td class="description last">Specifies entire series should be highlighted or selected</td>
+<td class="description">Specifies entire series should be highlighted or selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Point{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Point</td>
+<td class="type">string</td>
 <td class="default">point</td>
-<td class="description last">Specifies data point should be highlighted or selected</td>
+<td class="description">Specifies data point should be highlighted or selected</td>
 </tr>
 </tbody>
 </table>
@@ -9203,8 +9156,8 @@ Point{% endhighlight %}</td>
 
 
 
-### Mode<span class="type-signature type string">string</span>
-{:#members:mode}
+### Mode
+{:#enum:mode}
 
 
 
@@ -9220,8 +9173,8 @@ Enum for mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9238,18 +9191,18 @@ Enum for mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Search{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Search</td>
+<td class="type">string</td>
 <td class="default">search</td>
-<td class="description last">Enum for Search mode</td>
+<td class="description">Enum for Search mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Default</td>
+<td class="type">string</td>
 <td class="default">default</td>
-<td class="description last">Enum for Default mode</td>
+<td class="description">Enum for Default mode</td>
 </tr>
 </tbody>
 </table>
@@ -9268,8 +9221,8 @@ Default{% endhighlight %}</td>
 
 
 
-### Mode<span class="type-signature type string">string</span>
-{:#members:mode}
+### Mode
+{:#enum:mode}
 
 
 
@@ -9285,8 +9238,8 @@ Enum for mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9303,32 +9256,32 @@ Enum for mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Alert{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Alert</td>
+<td class="type">string</td>
 <td class="default">alert</td>
-<td class="description last">Enum for alert mode dialog</td>
+<td class="description">Enum for alert mode dialog</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Confirm{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Confirm</td>
+<td class="type">string</td>
 <td class="default">confirm</td>
-<td class="description last">Enum for confirm mode dialog</td>
+<td class="description">Enum for confirm mode dialog</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal mode dialog</td>
+<td class="description">Enum for normal mode dialog</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-FullView{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+FullView</td>
+<td class="type">string</td>
 <td class="default">fullview</td>
-<td class="description last">Enum for fullview mode dialog</td>
+<td class="description">Enum for fullview mode dialog</td>
 </tr>
 </tbody>
 </table>
@@ -9348,7 +9301,7 @@ FullView{% endhighlight %}</td>
 
 
 ### model
-{:#members:model}
+{:#enum:model}
 
 
 
@@ -9369,8 +9322,8 @@ User defined model will be automatically set in this
 
 
 
-### NeedleType<span class="type-signature type string">string</span>
-{:#members:needletype}
+### NeedleType
+{:#enum:needletype}
 
 
 
@@ -9386,8 +9339,8 @@ Enum for gauge NeedleType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9404,39 +9357,39 @@ Enum for gauge NeedleType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">To set the NeedleType triangle.</td>
+<td class="description">To set the NeedleType triangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the NeedleType rectangle.</td>
+<td class="description">To set the NeedleType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
-<td class="description last">To set the NeedleType trapezoid.</td>
+<td class="description">To set the NeedleType trapezoid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Arrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Arrow</td>
+<td class="type">string</td>
 <td class="default">arrow</td>
-<td class="description last">To set the NeedleType arrow.</td>
+<td class="description">To set the NeedleType arrow.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">To set the NeedleType image.</td>
+<td class="description">To set the NeedleType image.</td>
 </tr>
 </tbody>
 </table>
@@ -9455,8 +9408,8 @@ Image{% endhighlight %}</td>
 
 
 
-### NodeConstraints<span class="type-signature type nodeconstraints"><a href="global.html#NodeConstraints">NodeConstraints</a></span>
-{:#members:nodeconstraints}
+### NodeConstraints
+{:#enum:nodeconstraints}
 
 
 
@@ -9472,8 +9425,8 @@ Enum for the NodeConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9490,144 +9443,144 @@ Enum for the NodeConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Disable all node Constraints</td>
+<td class="description">Disable all node Constraints</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Select{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Select</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be selected</td>
+<td class="description">Enables node to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Delete{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Delete</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be Deleted</td>
+<td class="description">Enables node to be Deleted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Drag{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Drag</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be Dragged</td>
+<td class="description">Enables node to be Dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rotate{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Rotate</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be Rotated</td>
+<td class="description">Enables node to be Rotated</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Connect{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Connect</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be connected</td>
+<td class="description">Enables node to be connected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeNorthEast{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeNorthEast</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize north east</td>
+<td class="description">Enables node to be resize north east</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeEast{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeEast</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize east</td>
+<td class="description">Enables node to be resize east</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeSouthEast{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeSouthEast</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize south east</td>
+<td class="description">Enables node to be resize south east</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeSouth{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeSouth</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize south</td>
+<td class="description">Enables node to be resize south</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeSouthWest{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeSouthWest</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize south west</td>
+<td class="description">Enables node to be resize south west</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeWest{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeWest</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize west</td>
+<td class="description">Enables node to be resize west</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeNorthWest{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeNorthWest</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize north west</td>
+<td class="description">Enables node to be resize north west</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ResizeNorth{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+ResizeNorth</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables node to be resize north</td>
+<td class="description">Enables node to be resize north</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Resize{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Resize</td>
+<td class="type">NodeConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables node to be Resized</td>
+<td class="description">Enables node to be Resized</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Shadow{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Shadow</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables shadow</td>
+<td class="description">Enables shadow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DragLabel{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+DragLabel</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables label of node to be Dragged</td>
+<td class="description">Enables label of node to be Dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-AllowPan{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+AllowPan</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables panning should be done while node dragging</td>
+<td class="description">Enables panning should be done while node dragging</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-AspectRatio{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+AspectRatio</td>
+<td class="type">NodeConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables Proportional resize for node</td>
+<td class="description">Enables Proportional resize for node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#NodeConstraints">NodeConstraints</a></span></td>
+<td class="name">
+Default</td>
+<td class="type">NodeConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables all node constraints</td>
+<td class="description">Enables all node constraints</td>
 </tr>
 </tbody>
 </table>
@@ -9646,8 +9599,8 @@ Default{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9663,8 +9616,8 @@ Enum for Bullet Graph Orientation
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9681,18 +9634,18 @@ Enum for Bullet Graph Orientation
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">support for orientation in horizontal direction.</td>
+<td class="description">support for orientation in horizontal direction.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">support for orientation in vertical direction.</td>
+<td class="description">support for orientation in vertical direction.</td>
 </tr>
 </tbody>
 </table>
@@ -9711,8 +9664,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9728,8 +9681,8 @@ Enum for chart orientation.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9746,18 +9699,18 @@ Enum for chart orientation.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Sets chart orientation to horizontal.</td>
+<td class="description">Sets chart orientation to horizontal.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Sets chart orientation to vertical.</td>
+<td class="description">Sets chart orientation to vertical.</td>
 </tr>
 </tbody>
 </table>
@@ -9776,8 +9729,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9793,8 +9746,8 @@ Enum for ProgressbarOrientation
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9811,18 +9764,18 @@ Enum for ProgressbarOrientation
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Enum for horizontal mode progress bar</td>
+<td class="description">Enum for horizontal mode progress bar</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Enum for vertical mode progress bar</td>
+<td class="description">Enum for vertical mode progress bar</td>
 </tr>
 </tbody>
 </table>
@@ -9841,8 +9794,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9858,8 +9811,8 @@ Enum for RatingOrientation
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9876,18 +9829,18 @@ Enum for RatingOrientation
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Enum for horizontal mode rating</td>
+<td class="description">Enum for horizontal mode rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Enum for vertical mode rating</td>
+<td class="description">Enum for vertical mode rating</td>
 </tr>
 </tbody>
 </table>
@@ -9906,8 +9859,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9923,8 +9876,8 @@ Enum for Orientation
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -9941,18 +9894,18 @@ Enum for Orientation
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Enum for Horizontal Orientation</td>
+<td class="description">Enum for Horizontal Orientation</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Enum for Vertical Orientation</td>
+<td class="description">Enum for Vertical Orientation</td>
 </tr>
 </tbody>
 </table>
@@ -9971,8 +9924,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### Orientation<span class="type-signature type string">string</span>
-{:#members:orientation}
+### Orientation
+{:#enum:orientation}
 
 
 
@@ -9988,8 +9941,8 @@ Enum for slider
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10006,18 +9959,18 @@ Enum for slider
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Horizontal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description last">Enum for horizontal mode slider</td>
+<td class="description">Enum for horizontal mode slider</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Vertical{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description last">Enum for vertical mode slider</td>
+<td class="description">Enum for vertical mode slider</td>
 </tr>
 </tbody>
 </table>
@@ -10036,8 +9989,8 @@ Vertical{% endhighlight %}</td>
 
 
 
-### OuterCustomLabelPosition<span class="type-signature type string">string</span>
-{:#members:outercustomlabelposition}
+### OuterCustomLabelPosition
+{:#enum:outercustomlabelposition}
 
 
 
@@ -10053,8 +10006,8 @@ Enum for gauge OuterCustomLabelPosition
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10071,32 +10024,32 @@ Enum for gauge OuterCustomLabelPosition
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">To set the OuterCustomLabelPosition left.</td>
+<td class="description">To set the OuterCustomLabelPosition left.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">To set the OuterCustomLabelPosition right.</td>
+<td class="description">To set the OuterCustomLabelPosition right.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">To set the OuterCustomLabelPosition top.</td>
+<td class="description">To set the OuterCustomLabelPosition top.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">To set the OuterCustomLabelPosition bottom.</td>
+<td class="description">To set the OuterCustomLabelPosition bottom.</td>
 </tr>
 </tbody>
 </table>
@@ -10115,8 +10068,8 @@ Bottom{% endhighlight %}</td>
 
 
 
-### OuterCustomLabelPosition<span class="type-signature type string">string</span>
-{:#members:outercustomlabelposition}
+### OuterCustomLabelPosition
+{:#enum:outercustomlabelposition}
 
 
 
@@ -10132,8 +10085,8 @@ Enum for gauge OuterCustomLabelPosition
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10150,32 +10103,32 @@ Enum for gauge OuterCustomLabelPosition
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">To set the OuterCustomLabelPosition left.</td>
+<td class="description">To set the OuterCustomLabelPosition left.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">To set the OuterCustomLabelPosition right.</td>
+<td class="description">To set the OuterCustomLabelPosition right.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">To set the OuterCustomLabelPosition top.</td>
+<td class="description">To set the OuterCustomLabelPosition top.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">To set the OuterCustomLabelPosition bottom.</td>
+<td class="description">To set the OuterCustomLabelPosition bottom.</td>
 </tr>
 </tbody>
 </table>
@@ -10194,55 +10147,8 @@ Bottom{% endhighlight %}</td>
 
 
 
-### pageOrientation<span class="type-signature type enum">enum</span>
-{:#members:pageorientation}
-
-
-
-
-
-
-
-
-To set the page orientation see<a href="global.html#PageOrientations">PageOrientations</a>
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "portrait"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//pageOrientation of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageOrientation: "portrait"}}); {% endhighlight %}
-
-
-
-
-
-
-
-### PageOrientations<span class="type-signature type string">String</span>
-{:#members:pageorientations}
+### PageOrientations
+{:#enum:pageorientations}
 
 
 
@@ -10258,8 +10164,8 @@ Enum for PageOrientations in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10276,18 +10182,18 @@ Enum for PageOrientations in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Landscape{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Landscape</td>
+<td class="type">string</td>
 <td class="default">landscape</td>
-<td class="description last">Used to set orientation as Landscape</td>
+<td class="description">Used to set orientation as Landscape</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Portrait{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Portrait</td>
+<td class="type">string</td>
 <td class="default">portrait</td>
-<td class="description last">Used to set orientation as portrait</td>
+<td class="description">Used to set orientation as portrait</td>
 </tr>
 </tbody>
 </table>
@@ -10306,8 +10212,8 @@ Portrait{% endhighlight %}</td>
 
 
 
-### PagerDisplay<span class="type-signature type string">string</span>
-{:#members:pagerdisplay}
+### PagerDisplay
+{:#enum:pagerdisplay}
 
 
 
@@ -10323,8 +10229,8 @@ Enum for Grid Pager Display
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10341,18 +10247,18 @@ Enum for Grid Pager Display
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal pager display</td>
+<td class="description">Enum for Normal pager display</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">Enum for Fixed pager display</td>
+<td class="description">Enum for Fixed pager display</td>
 </tr>
 </tbody>
 </table>
@@ -10371,8 +10277,8 @@ Fixed{% endhighlight %}</td>
 
 
 
-### PagerPositionHorizontal<span class="type-signature type string">string</span>
-{:#members:pagerpositionhorizontal}
+### PagerPositionHorizontal
+{:#enum:pagerpositionhorizontal}
 
 
 
@@ -10388,8 +10294,8 @@ Enum for PagerPositionHorizontal
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10406,18 +10312,18 @@ Enum for PagerPositionHorizontal
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">Enum for Bottom PagerPositionHorizontal</td>
+<td class="description">Enum for Bottom PagerPositionHorizontal</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">Enum for Top PagerPositionHorizontal</td>
+<td class="description">Enum for Top PagerPositionHorizontal</td>
 </tr>
 </tbody>
 </table>
@@ -10436,8 +10342,8 @@ Top{% endhighlight %}</td>
 
 
 
-### PagerPositionVertical<span class="type-signature type string">string</span>
-{:#members:pagerpositionvertical}
+### PagerPositionVertical
+{:#enum:pagerpositionvertical}
 
 
 
@@ -10453,8 +10359,8 @@ Enum for PagerPositionVertical
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10471,18 +10377,18 @@ Enum for PagerPositionVertical
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Enum for Right PagerPositionVertical</td>
+<td class="description">Enum for Right PagerPositionVertical</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Enum for Left PagerPositionVertical</td>
+<td class="description">Enum for Left PagerPositionVertical</td>
 </tr>
 </tbody>
 </table>
@@ -10501,8 +10407,8 @@ Left{% endhighlight %}</td>
 
 
 
-### PagerType<span class="type-signature type string">string</span>
-{:#members:pagertype}
+### PagerType
+{:#enum:pagertype}
 
 
 
@@ -10518,8 +10424,8 @@ Enum for Grid Pager Type
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10536,18 +10442,18 @@ Enum for Grid Pager Type
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">used to enable normal pager which contain page navigation buttons</td>
+<td class="description">used to enable normal pager which contain page navigation buttons</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Scrollable{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Scrollable</td>
+<td class="type">string</td>
 <td class="default">scrollable</td>
-<td class="description last">used to enable scrollable pager</td>
+<td class="description">used to enable scrollable pager</td>
 </tr>
 </tbody>
 </table>
@@ -10566,8 +10472,8 @@ Scrollable{% endhighlight %}</td>
 
 
 
-### Pattern<span class="type-signature type string">string</span>
-{:#members:pattern}
+### Pattern
+{:#enum:pattern}
 
 
 
@@ -10583,8 +10489,8 @@ Enum for highlighting or selecting patterns in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10601,151 +10507,151 @@ Enum for highlighting or selecting patterns in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Sets none as highlighting or selecting pattern</td>
+<td class="description">Sets none as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Chessboard{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Chessboard</td>
+<td class="type">string</td>
 <td class="default">chessboard</td>
-<td class="description last">Sets chess board as highlighting or selecting pattern</td>
+<td class="description">Sets chess board as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Crosshatch{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Crosshatch</td>
+<td class="type">string</td>
 <td class="default">crosshatch</td>
-<td class="description last">Sets cross hatch as highlighting or selecting pattern</td>
+<td class="description">Sets cross hatch as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dots{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Dots</td>
+<td class="type">string</td>
 <td class="default">dots</td>
-<td class="description last">Set dots as highlighting or selecting pattern</td>
+<td class="description">Set dots as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pacman{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pacman</td>
+<td class="type">string</td>
 <td class="default">pacman</td>
-<td class="description last">Sets pacman as highlighting or selecting pattern</td>
+<td class="description">Sets pacman as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DiagonalBackward{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+DiagonalBackward</td>
+<td class="type">string</td>
 <td class="default">diagonalbackward</td>
-<td class="description last">Sets diagonal backward as highlighting or selecting pattern</td>
+<td class="description">Sets diagonal backward as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DiagonalForward{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+DiagonalForward</td>
+<td class="type">string</td>
 <td class="default">crosshatch</td>
-<td class="description last">Sets diagonal forward as highlighting or selecting pattern</td>
+<td class="description">Sets diagonal forward as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Grid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Grid</td>
+<td class="type">string</td>
 <td class="default">grid</td>
-<td class="description last">Set grid as highlighting or selecting pattern</td>
+<td class="description">Set grid as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Turquoise{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Turquoise</td>
+<td class="type">string</td>
 <td class="default">turquoise</td>
-<td class="description last">Sets turquoise as highlighting or selecting pattern</td>
+<td class="description">Sets turquoise as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Star</td>
+<td class="type">string</td>
 <td class="default">star</td>
-<td class="description last">Sets star as highlighting or selecting pattern</td>
+<td class="description">Sets star as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">Sets triangle as highlighting or selecting pattern</td>
+<td class="description">Sets triangle as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">Sets circle as highlighting or selecting pattern</td>
+<td class="description">Sets circle as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Tile{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Tile</td>
+<td class="type">string</td>
 <td class="default">tile</td>
-<td class="description last">Sets tile as highlighting or selecting pattern</td>
+<td class="description">Sets tile as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HorizontalDash{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HorizontalDash</td>
+<td class="type">string</td>
 <td class="default">horizontaldash</td>
-<td class="description last">Sets horizontal dash as highlighting or selecting pattern</td>
+<td class="description">Sets horizontal dash as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-VerticalDash{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+VerticalDash</td>
+<td class="type">string</td>
 <td class="default">verticaldash</td>
-<td class="description last">Sets vertical dash as highlighting or selecting pattern</td>
+<td class="description">Sets vertical dash as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">Set rectangle as highlighting or selecting pattern</td>
+<td class="description">Set rectangle as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Box{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Box</td>
+<td class="type">string</td>
 <td class="default">box</td>
-<td class="description last">Sets box as highlighting or selecting pattern</td>
+<td class="description">Sets box as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-VerticalStripe{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+VerticalStripe</td>
+<td class="type">string</td>
 <td class="default">tile</td>
-<td class="description last">Sets vertical stripe as highlighting or selecting pattern</td>
+<td class="description">Sets vertical stripe as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HorizontalStripe{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HorizontalStripe</td>
+<td class="type">string</td>
 <td class="default">horizontalstripe</td>
-<td class="description last">Sets horizontal stripe as highlighting or selecting pattern</td>
+<td class="description">Sets horizontal stripe as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bubble{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bubble</td>
+<td class="type">string</td>
 <td class="default">bubble</td>
-<td class="description last">Sets bubble as highlighting or selecting pattern</td>
+<td class="description">Sets bubble as highlighting or selecting pattern</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Custom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Custom</td>
+<td class="type">string</td>
 <td class="default">custom</td>
-<td class="description last">Set custom as highlighting or selecting pattern. The user defined pattern provided in custom patter property will be used</td>
+<td class="description">Set custom as highlighting or selecting pattern. The user defined pattern provided in custom patter property will be used</td>
 </tr>
 </tbody>
 </table>
@@ -10764,8 +10670,8 @@ Custom{% endhighlight %}</td>
 
 
 
-### PointerPlacement<span class="type-signature type string">string</span>
-{:#members:pointerplacement}
+### PointerPlacement
+{:#enum:pointerplacement}
 
 
 
@@ -10781,8 +10687,8 @@ Enum for gauge PointerPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10799,25 +10705,25 @@ Enum for gauge PointerPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the PointerPlacement near.</td>
+<td class="description">To set the PointerPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the PointerPlacement far.</td>
+<td class="description">To set the PointerPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the PointerPlacement center.</td>
+<td class="description">To set the PointerPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -10836,8 +10742,8 @@ Center{% endhighlight %}</td>
 
 
 
-### PointerPlacement<span class="type-signature type string">string</span>
-{:#members:pointerplacement}
+### PointerPlacement
+{:#enum:pointerplacement}
 
 
 
@@ -10853,8 +10759,8 @@ Enum for gauge PointerPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10871,25 +10777,25 @@ Enum for gauge PointerPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the PointerPlacement near.</td>
+<td class="description">To set the PointerPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the PointerPlacement far.</td>
+<td class="description">To set the PointerPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the PointerPlacement center.</td>
+<td class="description">To set the PointerPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -10908,8 +10814,8 @@ Center{% endhighlight %}</td>
 
 
 
-### PointerType<span class="type-signature type string">string</span>
-{:#members:pointertype}
+### PointerType
+{:#enum:pointertype}
 
 
 
@@ -10925,8 +10831,8 @@ Enum for gauge PointerType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -10943,18 +10849,18 @@ Enum for gauge PointerType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Needle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Needle</td>
+<td class="type">string</td>
 <td class="default">needle</td>
-<td class="description last">To set the PointerType needle.</td>
+<td class="description">To set the PointerType needle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Marker{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Marker</td>
+<td class="type">string</td>
 <td class="default">marker</td>
-<td class="description last">To set the PointerType marker.</td>
+<td class="description">To set the PointerType marker.</td>
 </tr>
 </tbody>
 </table>
@@ -10973,8 +10879,8 @@ Marker{% endhighlight %}</td>
 
 
 
-### PortConstraints<span class="type-signature type portconstraints"><a href="global.html#PortConstraints">PortConstraints</a></span>
-{:#members:portconstraints}
+### PortConstraints
+{:#enum:portconstraints}
 
 
 
@@ -10990,8 +10896,8 @@ Enum for PortConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11008,18 +10914,18 @@ Enum for PortConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortConstraints">PortConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">PortConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Disable all constraints</td>
+<td class="description">Disable all constraints</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Connect{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortConstraints">PortConstraints</a></span></td>
+<td class="name">
+Connect</td>
+<td class="type">PortConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Enables connections with connector</td>
+<td class="description">Enables connections with connector</td>
 </tr>
 </tbody>
 </table>
@@ -11038,8 +10944,8 @@ Connect{% endhighlight %}</td>
 
 
 
-### PortShapes<span class="type-signature type string">string</span>
-{:#members:portshapes}
+### PortShapes
+{:#enum:portshapes}
 
 
 
@@ -11055,8 +10961,8 @@ Enum for various port shapes in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11073,32 +10979,32 @@ Enum for various port shapes in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-X{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+X</td>
+<td class="type">string</td>
 <td class="default">x</td>
-<td class="description last">Used to set port shape as X</td>
+<td class="description">Used to set port shape as X</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">Used to set port shape as Circle</td>
+<td class="description">Used to set port shape as Circle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Square{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Square</td>
+<td class="type">string</td>
 <td class="default">square</td>
-<td class="description last">Used to set port shape as Square</td>
+<td class="description">Used to set port shape as Square</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Path{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Path</td>
+<td class="type">string</td>
 <td class="default">path</td>
-<td class="description last">Used to set port shape as Path</td>
+<td class="description">Used to set port shape as Path</td>
 </tr>
 </tbody>
 </table>
@@ -11117,8 +11023,8 @@ Path{% endhighlight %}</td>
 
 
 
-### PortVisibility<span class="type-signature type portvisibility"><a href="global.html#PortVisibility">PortVisibility</a></span>
-{:#members:portvisibility}
+### PortVisibility
+{:#enum:portvisibility}
 
 
 
@@ -11134,8 +11040,8 @@ Enum for port visibility in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11152,39 +11058,39 @@ Enum for port visibility in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Visible{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortVisibility">PortVisibility</a></span></td>
+<td class="name">
+Visible</td>
+<td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description last">Set the port visibility as Visible</td>
+<td class="description">Set the port visibility as Visible</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hidden{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortVisibility">PortVisibility</a></span></td>
+<td class="name">
+Hidden</td>
+<td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description last">Set the port visibility as Hidden</td>
+<td class="description">Set the port visibility as Hidden</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hover{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortVisibility">PortVisibility</a></span></td>
+<td class="name">
+Hover</td>
+<td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description last">Port get visible when hover connector on node</td>
+<td class="description">Port get visible when hover connector on node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Connect{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortVisibility">PortVisibility</a></span></td>
+<td class="name">
+Connect</td>
+<td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description last">Port gets visibile when connect connector to node</td>
+<td class="description">Port gets visibile when connect connector to node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#PortVisibility">PortVisibility</a></span></td>
+<td class="name">
+Default</td>
+<td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description last">Specifies the port visibility as default</td>
+<td class="description">Specifies the port visibility as default</td>
 </tr>
 </tbody>
 </table>
@@ -11203,8 +11109,8 @@ Default{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11220,8 +11126,8 @@ Enum for Map Navigation Control and Legend dock position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11238,74 +11144,74 @@ Enum for Map Navigation Control and Legend dock position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">support for dock position none.</td>
+<td class="description">support for dock position none.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopLeft</td>
+<td class="type">string</td>
 <td class="default">topleft</td>
-<td class="description last">support for dock position topleft.</td>
+<td class="description">support for dock position topleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopCenter</td>
+<td class="type">string</td>
 <td class="default">topcenter</td>
-<td class="description last">support for dock position topcenter.</td>
+<td class="description">support for dock position topcenter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TopRight</td>
+<td class="type">string</td>
 <td class="default">topright</td>
-<td class="description last">support for dock position topright.</td>
+<td class="description">support for dock position topright.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CenterLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+CenterLeft</td>
+<td class="type">string</td>
 <td class="default">centerleft</td>
-<td class="description last">support for dock position centerleft.</td>
+<td class="description">support for dock position centerleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">support for dock position center.</td>
+<td class="description">support for dock position center.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-CenterRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+CenterRight</td>
+<td class="type">string</td>
 <td class="default">centerright</td>
-<td class="description last">support for dock position centerright.</td>
+<td class="description">support for dock position centerright.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomLeft</td>
+<td class="type">string</td>
 <td class="default">bottomleft</td>
-<td class="description last">support for dock position bottomleft.</td>
+<td class="description">support for dock position bottomleft.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomCenter</td>
+<td class="type">string</td>
 <td class="default">bottomcenter</td>
-<td class="description last">support for dock position bottomcenter.</td>
+<td class="description">support for dock position bottomcenter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BottomRight</td>
+<td class="type">string</td>
 <td class="default">bottomright</td>
-<td class="description last">support for dock position bottomright.</td>
+<td class="description">support for dock position bottomright.</td>
 </tr>
 </tbody>
 </table>
@@ -11324,8 +11230,8 @@ BottomRight{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11341,8 +11247,8 @@ Enum for position.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11359,25 +11265,25 @@ Enum for position.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">Sets the position to top.</td>
+<td class="description">Sets the position to top.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Middle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Middle</td>
+<td class="type">string</td>
 <td class="default">middle</td>
-<td class="description last">Sets the position to middle.</td>
+<td class="description">Sets the position to middle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">Sets the position to bottom.</td>
+<td class="description">Sets the position to bottom.</td>
 </tr>
 </tbody>
 </table>
@@ -11396,8 +11302,8 @@ Bottom{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11413,8 +11319,8 @@ Enum for Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11431,18 +11337,18 @@ Enum for Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for relative position for Footer</td>
+<td class="description">Enum for relative position for Footer</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">Enum for fixed position for Footer</td>
+<td class="description">Enum for fixed position for Footer</td>
 </tr>
 </tbody>
 </table>
@@ -11461,8 +11367,8 @@ Fixed{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11478,8 +11384,8 @@ Enum for Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11496,18 +11402,18 @@ Enum for Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for relative position for Header</td>
+<td class="description">Enum for relative position for Header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">Enum for fixed position for Header</td>
+<td class="description">Enum for fixed position for Header</td>
 </tr>
 </tbody>
 </table>
@@ -11526,8 +11432,8 @@ Fixed{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11543,8 +11449,8 @@ Enum for Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11561,46 +11467,46 @@ Enum for Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-RightCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RightCenter</td>
+<td class="type">string</td>
 <td class="default">rightcenter</td>
-<td class="description last">Enum for RightCenter Position</td>
+<td class="description">Enum for RightCenter Position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightTop{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RightTop</td>
+<td class="type">string</td>
 <td class="default">righttop</td>
-<td class="description last">Enum for RightTop Position</td>
+<td class="description">Enum for RightTop Position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightBottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RightBottom</td>
+<td class="type">string</td>
 <td class="default">rightbottom</td>
-<td class="description last">Enum for RightBottom Position</td>
+<td class="description">Enum for RightBottom Position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LeftCenter</td>
+<td class="type">string</td>
 <td class="default">leftcenter</td>
-<td class="description last">Enum for LeftCenter Position</td>
+<td class="description">Enum for LeftCenter Position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftTop{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LeftTop</td>
+<td class="type">string</td>
 <td class="default">lefttop</td>
-<td class="description last">Enum for LeftTop Position</td>
+<td class="description">Enum for LeftTop Position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftBottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LeftBottom</td>
+<td class="type">string</td>
 <td class="default">leftbottom</td>
-<td class="description last">Enum for LeftBottom Position</td>
+<td class="description">Enum for LeftBottom Position</td>
 </tr>
 </tbody>
 </table>
@@ -11619,8 +11525,8 @@ LeftBottom{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11636,8 +11542,8 @@ Enum for Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11654,18 +11560,18 @@ Enum for Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">Enum for Fixed position Tab</td>
+<td class="description">Enum for Fixed position Tab</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for Normal position Tab</td>
+<td class="description">Enum for Normal position Tab</td>
 </tr>
 </tbody>
 </table>
@@ -11684,8 +11590,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### Position<span class="type-signature type string">string</span>
-{:#members:position}
+### Position
+{:#enum:position}
 
 
 
@@ -11701,8 +11607,8 @@ Enum for toolbar position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11719,18 +11625,18 @@ Enum for toolbar position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for relative position for toolbar</td>
+<td class="description">Enum for relative position for toolbar</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Fixed{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Fixed</td>
+<td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description last">Enum for fixed position for toolbar</td>
+<td class="description">Enum for fixed position for toolbar</td>
 </tr>
 </tbody>
 </table>
@@ -11749,8 +11655,8 @@ Fixed{% endhighlight %}</td>
 
 
 
-### Precision<span class="type-signature type string">string</span>
-{:#members:precision}
+### Precision
+{:#enum:precision}
 
 
 
@@ -11766,8 +11672,8 @@ Enum for RatingPrecision
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11784,25 +11690,25 @@ Enum for RatingPrecision
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Full{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Full</td>
+<td class="type">string</td>
 <td class="default">full</td>
-<td class="description last">Enum for full precision rating</td>
+<td class="description">Enum for full precision rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Exact{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Exact</td>
+<td class="type">string</td>
 <td class="default">exact</td>
-<td class="description last">Enum for exact precision rating</td>
+<td class="description">Enum for exact precision rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Half{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Half</td>
+<td class="type">string</td>
 <td class="default">half</td>
-<td class="description last">Enum for half precision rating</td>
+<td class="description">Enum for half precision rating</td>
 </tr>
 </tbody>
 </table>
@@ -11821,8 +11727,8 @@ Half{% endhighlight %}</td>
 
 
 
-### PyramidMode<span class="type-signature type string">string</span>
-{:#members:pyramidmode}
+### PyramidMode
+{:#enum:pyramidmode}
 
 
 
@@ -11838,8 +11744,8 @@ Enum for chart pyramid mode.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11856,18 +11762,18 @@ Enum for chart pyramid mode.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Linear{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Linear</td>
+<td class="type">string</td>
 <td class="default">linear</td>
-<td class="description last">Specifies the mode of the pyramid as linear.</td>
+<td class="description">Specifies the mode of the pyramid as linear.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Surface{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Surface</td>
+<td class="type">string</td>
 <td class="default">Surface</td>
-<td class="description last">Specifies the mode of the pyramid as surface.</td>
+<td class="description">Specifies the mode of the pyramid as surface.</td>
 </tr>
 </tbody>
 </table>
@@ -11886,8 +11792,8 @@ Surface{% endhighlight %}</td>
 
 
 
-### RangePadding<span class="type-signature type string">string</span>
-{:#members:rangepadding}
+### RangePadding
+{:#enum:rangepadding}
 
 
 
@@ -11903,8 +11809,8 @@ Enum for range padding.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -11921,39 +11827,39 @@ Enum for range padding.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Additional{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Additional</td>
+<td class="type">string</td>
 <td class="default">additional</td>
-<td class="description last">Sets chart range padding as additional.</td>
+<td class="description">Sets chart range padding as additional.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Sets chart range padding as normal.</td>
+<td class="description">Sets chart range padding as normal.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Sets chart range padding as none.</td>
+<td class="description">Sets chart range padding as none.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Round{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Round</td>
+<td class="type">string</td>
 <td class="default">round</td>
-<td class="description last">Sets chart range padding as round.</td>
+<td class="description">Sets chart range padding as round.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Sets chart range padding as auto.</td>
+<td class="description">Sets chart range padding as auto.</td>
 </tr>
 </tbody>
 </table>
@@ -11972,8 +11878,8 @@ Auto{% endhighlight %}</td>
 
 
 
-### RangePlacement<span class="type-signature type string">string</span>
-{:#members:rangeplacement}
+### RangePlacement
+{:#enum:rangeplacement}
 
 
 
@@ -11989,8 +11895,8 @@ Enum for gauge RangePlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12007,25 +11913,25 @@ Enum for gauge RangePlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the RangePlacement near.</td>
+<td class="description">To set the RangePlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the RangePlacement far.</td>
+<td class="description">To set the RangePlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the RangePlacement center.</td>
+<td class="description">To set the RangePlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -12044,8 +11950,8 @@ Center{% endhighlight %}</td>
 
 
 
-### RangePlacement<span class="type-signature type string">string</span>
-{:#members:rangeplacement}
+### RangePlacement
+{:#enum:rangeplacement}
 
 
 
@@ -12061,8 +11967,8 @@ Enum for gauge RangePlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12079,25 +11985,25 @@ Enum for gauge RangePlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the RangePlacement near.</td>
+<td class="description">To set the RangePlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the RangePlacement far.</td>
+<td class="description">To set the RangePlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the RangePlacement center.</td>
+<td class="description">To set the RangePlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -12116,8 +12022,8 @@ Center{% endhighlight %}</td>
 
 
 
-### Region<span class="type-signature type region"><a href="global.html#Region">Region</a></span>
-{:#members:region}
+### Region
+{:#enum:region}
 
 
 
@@ -12133,8 +12039,8 @@ Enum for the Region in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12151,18 +12057,18 @@ Enum for the Region in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Content{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Region">Region</a></span></td>
+<td class="name">
+Content</td>
+<td class="type">Region</td>
 <td class="default">content</td>
-<td class="description last">specifies region that is occupied by diagram elements</td>
+<td class="description">specifies region that is occupied by diagram elements</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-PageSettings{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Region">Region</a></span></td>
+<td class="name">
+PageSettings</td>
+<td class="type">Region</td>
 <td class="default">pageSettings</td>
-<td class="description last">specifies the region based on the page settings</td>
+<td class="description">specifies the region based on the page settings</td>
 </tr>
 </tbody>
 </table>
@@ -12181,8 +12087,8 @@ PageSettings{% endhighlight %}</td>
 
 
 
-### Region<span class="type-signature type string">string</span>
-{:#members:region}
+### Region
+{:#enum:region}
 
 
 
@@ -12198,8 +12104,8 @@ Enum for placing annotation in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12216,18 +12122,18 @@ Enum for placing annotation in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Chart{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Chart</td>
+<td class="type">string</td>
 <td class="default">chart</td>
-<td class="description last">Specifies annotation placement should be based on Chart location</td>
+<td class="description">Specifies annotation placement should be based on Chart location</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Series{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Series</td>
+<td class="type">string</td>
 <td class="default">series</td>
-<td class="description last">Specifies annotation placement should be based on chart area</td>
+<td class="description">Specifies annotation placement should be based on chart area</td>
 </tr>
 </tbody>
 </table>
@@ -12246,8 +12152,8 @@ Series{% endhighlight %}</td>
 
 
 
-### RenderMode<span class="type-signature type string">string</span>
-{:#members:rendermode}
+### RenderMode
+{:#enum:rendermode}
 
 
 
@@ -12263,8 +12169,8 @@ Enum for RenderMode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12281,32 +12187,32 @@ Enum for RenderMode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Auto RenderMode</td>
+<td class="description">Auto RenderMode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-IOS7{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+IOS7</td>
+<td class="type">string</td>
 <td class="default">ios7</td>
-<td class="description last">IOS7 RenderMode</td>
+<td class="description">IOS7 RenderMode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Android{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Android</td>
+<td class="type">string</td>
 <td class="default">android</td>
-<td class="description last">Android RenderMode</td>
+<td class="description">Android RenderMode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Windows{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Windows</td>
+<td class="type">string</td>
 <td class="default">windows</td>
-<td class="description last">Windows RenderMode</td>
+<td class="description">Windows RenderMode</td>
 </tr>
 </tbody>
 </table>
@@ -12325,8 +12231,8 @@ Windows{% endhighlight %}</td>
 
 
 
-### ScaleType<span class="type-signature type string">string</span>
-{:#members:scaletype}
+### ScaleType
+{:#enum:scaletype}
 
 
 
@@ -12342,8 +12248,8 @@ Enum for gauge ScaleType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12360,25 +12266,25 @@ Enum for gauge ScaleType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">To set the ScaleType rectangle.</td>
+<td class="description">To set the ScaleType rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RoundedRectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RoundedRectangle</td>
+<td class="type">string</td>
 <td class="default">roundedrectangle</td>
-<td class="description last">To set the ScaleType roundedrectangle.</td>
+<td class="description">To set the ScaleType roundedrectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Thermometer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Thermometer</td>
+<td class="type">string</td>
 <td class="default">thermometer</td>
-<td class="description last">To set the ScaleType thermometer.</td>
+<td class="description">To set the ScaleType thermometer.</td>
 </tr>
 </tbody>
 </table>
@@ -12397,102 +12303,8 @@ Thermometer{% endhighlight %}</td>
 
 
 
-### scrollableArea<span class="type-signature type object">object</span>
-{:#members:scrollablearea}
-
-
-
-
-
-
-
-
-To set the scrollable region of diagram
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* {scrollableArea: { x: Infinity, y: Infinity, width: Infinity, height: Infinity }}
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//scrollableArea of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {scrollableArea: { x: 0, y: 0, width: 0, height: 0 }}}); {% endhighlight %}
-
-
-
-
-
-
-
-### scrollLimit<span class="type-signature type enum">enum</span>
-{:#members:scrolllimit}
-
-
-
-
-
-
-
-
-To define the scrollable limit of diagram see<a href="global.html#ScrollLimit">ScrollLimit</a>
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "infinity"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//scrollLimit of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {scrollLimit: "infinity"}}); {% endhighlight %}
-
-
-
-
-
-
-
-### ScrollLimit<span class="type-signature type string">String</span>
-{:#members:scrolllimit}
+### ScrollLimit
+{:#enum:scrolllimit}
 
 
 
@@ -12508,8 +12320,8 @@ Enum for ScrollLimit in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12526,25 +12338,25 @@ Enum for ScrollLimit in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Infinity{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Infinity</td>
+<td class="type">string</td>
 <td class="default">infinity</td>
-<td class="description last">Used to set scrollLimit as Infinity</td>
+<td class="description">Used to set scrollLimit as Infinity</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diagram{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Diagram</td>
+<td class="type">string</td>
 <td class="default">diagram</td>
-<td class="description last">Used to set scrollLimit as Diagram</td>
+<td class="description">Used to set scrollLimit as Diagram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Limited{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+Limited</td>
+<td class="type">string</td>
 <td class="default">limited</td>
-<td class="description last">Used to set scrollLimit as Limited</td>
+<td class="description">Used to set scrollLimit as Limited</td>
 </tr>
 </tbody>
 </table>
@@ -12563,8 +12375,8 @@ Limited{% endhighlight %}</td>
 
 
 
-### Segments<span class="type-signature type string">string</span>
-{:#members:segments}
+### Segments
+{:#enum:segments}
 
 
 
@@ -12580,8 +12392,8 @@ Enum for various connector segments in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12598,25 +12410,25 @@ Enum for various connector segments in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Straight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Straight</td>
+<td class="type">string</td>
 <td class="default">straight</td>
-<td class="description last">Used to specify the lines as Straight</td>
+<td class="description">Used to specify the lines as Straight</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Orthogonal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Orthogonal</td>
+<td class="type">string</td>
 <td class="default">orthogonal</td>
-<td class="description last">Used to specify the lines as Orthogonal</td>
+<td class="description">Used to specify the lines as Orthogonal</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bezier{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bezier</td>
+<td class="type">string</td>
 <td class="default">bezier</td>
-<td class="description last">Used to specify the lines as Bezier</td>
+<td class="description">Used to specify the lines as Bezier</td>
 </tr>
 </tbody>
 </table>
@@ -12635,8 +12447,8 @@ Bezier{% endhighlight %}</td>
 
 
 
-### SelectionMode<span class="type-signature type string">string</span>
-{:#members:selectionmode}
+### SelectionMode
+{:#enum:selectionmode}
 
 
 
@@ -12652,8 +12464,8 @@ Enum for Map selection mode
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12670,18 +12482,18 @@ Enum for Map selection mode
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Default{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Default</td>
+<td class="type">string</td>
 <td class="default">default</td>
-<td class="description last">support for selection mode default.</td>
+<td class="description">support for selection mode default.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Multiple{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Multiple</td>
+<td class="type">string</td>
 <td class="default">multiple</td>
-<td class="description last">support for selection mode multiple.</td>
+<td class="description">support for selection mode multiple.</td>
 </tr>
 </tbody>
 </table>
@@ -12700,8 +12512,8 @@ Multiple{% endhighlight %}</td>
 
 
 
-### SelectorConstraints<span class="type-signature type selectorconstraints"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span>
-{:#members:selectorconstraints}
+### SelectorConstraints
+{:#enum:selectorconstraints}
 
 
 
@@ -12717,8 +12529,8 @@ Enum to specify the SelectorConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12735,39 +12547,39 @@ Enum to specify the SelectorConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">SelectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Hides the selector</td>
+<td class="description">Hides the selector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rotator{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span></td>
+<td class="name">
+Rotator</td>
+<td class="type">SelectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Sets the visibility of rotation handle as visible</td>
+<td class="description">Sets the visibility of rotation handle as visible</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Resizer{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span></td>
+<td class="name">
+Resizer</td>
+<td class="type">SelectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Sets the visibility of resize handles as visible</td>
+<td class="description">Sets the visibility of resize handles as visible</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-UserHandles{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span></td>
+<td class="name">
+UserHandles</td>
+<td class="type">SelectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description last">Sets the visibility of user handles as visible</td>
+<td class="description">Sets the visibility of user handles as visible</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-All{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span></td>
+<td class="name">
+All</td>
+<td class="type">SelectorConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Sets the visibility of all selection handles as visible</td>
+<td class="description">Sets the visibility of all selection handles as visible</td>
 </tr>
 </tbody>
 </table>
@@ -12786,8 +12598,8 @@ All{% endhighlight %}</td>
 
 
 
-### Shape<span class="type-signature type string">string</span>
-{:#members:shape}
+### Shape
+{:#enum:shape}
 
 
 
@@ -12803,8 +12615,8 @@ Enum for the shape of indicator symbol
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12821,130 +12633,130 @@ Enum for the shape of indicator symbol
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">support for drawing circle as indicator symbol.</td>
+<td class="description">support for drawing circle as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Cross{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Cross</td>
+<td class="type">string</td>
 <td class="default">cross</td>
-<td class="description last">support for drawing cross as indicator symbol.</td>
+<td class="description">support for drawing cross as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">support for drawing diamond as indicator symbol.</td>
+<td class="description">support for drawing diamond as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DownArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+DownArrow</td>
+<td class="type">string</td>
 <td class="default">downarrow</td>
-<td class="description last">support for drawing down arrow as indicator symbol.</td>
+<td class="description">support for drawing down arrow as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Ellipse{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
 <td class="default">ellipse</td>
-<td class="description last">support for drawing ellipse as indicator symbol.</td>
+<td class="description">support for drawing ellipse as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HorizontalLine{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HorizontalLine</td>
+<td class="type">string</td>
 <td class="default">horizontalLine</td>
-<td class="description last">support for drawing horizontal line as indicator symbol.</td>
+<td class="description">support for drawing horizontal line as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">support for drawing image as indicator symbol.</td>
+<td class="description">support for drawing image as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-InvertedTriangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+InvertedTriangle</td>
+<td class="type">string</td>
 <td class="default">invertedtriangle</td>
-<td class="description last">support for drawing inverted triangle as indicator symbol.</td>
+<td class="description">support for drawing inverted triangle as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LeftArrow</td>
+<td class="type">string</td>
 <td class="default">leftarrow</td>
-<td class="description last">support for drawing left arrow as indicator symbol.</td>
+<td class="description">support for drawing left arrow as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
-<td class="description last">support for drawing pentagon as indicator symbol.</td>
+<td class="description">support for drawing pentagon as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">Rectangle</td>
-<td class="description last">support for drawing rectangle as indicator symbol.</td>
+<td class="description">support for drawing rectangle as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RightArrow</td>
+<td class="type">string</td>
 <td class="default">rightarrow</td>
-<td class="description last">support for drawing right arrow as indicator symbol.</td>
+<td class="description">support for drawing right arrow as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Star</td>
+<td class="type">string</td>
 <td class="default">star</td>
-<td class="description last">support for drawing star as indicator symbol.</td>
+<td class="description">support for drawing star as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
-<td class="description last">support for drawing trapezoid as indicator symbol.</td>
+<td class="description">support for drawing trapezoid as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">support for drawing triangle as indicator symbol.</td>
+<td class="description">support for drawing triangle as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-UpArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+UpArrow</td>
+<td class="type">string</td>
 <td class="default">uparrow</td>
-<td class="description last">support for drawing up arrow as indicator symbol.</td>
+<td class="description">support for drawing up arrow as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-VerticalLine{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+VerticalLine</td>
+<td class="type">string</td>
 <td class="default">verticalline</td>
-<td class="description last">support for drawing vertical line as indicator symbol.</td>
+<td class="description">support for drawing vertical line as indicator symbol.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wedge{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
 <td class="default">wedge</td>
-<td class="description last">support for drawing wedge as indicator symbol.</td>
+<td class="description">support for drawing wedge as indicator symbol.</td>
 </tr>
 </tbody>
 </table>
@@ -12963,8 +12775,8 @@ Wedge{% endhighlight %}</td>
 
 
 
-### Shape<span class="type-signature type string">string</span>
-{:#members:shape}
+### Shape
+{:#enum:shape}
 
 
 
@@ -12980,8 +12792,8 @@ Enum for chart shape.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -12998,144 +12810,144 @@ Enum for chart shape.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Sets the shape to none.</td>
+<td class="description">Sets the shape to none.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LeftArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LeftArrow</td>
+<td class="type">string</td>
 <td class="default">leftarrow</td>
-<td class="description last">Sets the shape to leftarrow.</td>
+<td class="description">Sets the shape to leftarrow.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RightArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RightArrow</td>
+<td class="type">string</td>
 <td class="default">rightarrow</td>
-<td class="description last">Sets the shape to rightarrow.</td>
+<td class="description">Sets the shape to rightarrow.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">Sets the shape to circle.</td>
+<td class="description">Sets the shape to circle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Cross{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Cross</td>
+<td class="type">string</td>
 <td class="default">cross</td>
-<td class="description last">Sets the shape to cross.</td>
+<td class="description">Sets the shape to cross.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HorizLine{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HorizLine</td>
+<td class="type">string</td>
 <td class="default">horizline</td>
-<td class="description last">Sets the shape to horizline.</td>
+<td class="description">Sets the shape to horizline.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-VertLine{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+VertLine</td>
+<td class="type">string</td>
 <td class="default">vertLine</td>
-<td class="description last">Sets the shape to vertline.</td>
+<td class="description">Sets the shape to vertline.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">Sets the shape to diamond.</td>
+<td class="description">Sets the shape to diamond.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Rectangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
-<td class="description last">Sets the shape to rectangle.</td>
+<td class="description">Sets the shape to rectangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">Sets the shape to triangle.</td>
+<td class="description">Sets the shape to triangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-InvertedTriangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+InvertedTriangle</td>
+<td class="type">string</td>
 <td class="default">invertedtriangle</td>
-<td class="description last">Sets the shape to invertedtriangle.</td>
+<td class="description">Sets the shape to invertedtriangle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hexagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Hexagon</td>
+<td class="type">string</td>
 <td class="default">hexagon</td>
-<td class="description last">Sets the shape to hexagon.</td>
+<td class="description">Sets the shape to hexagon.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
-<td class="description last">Sets the shape to pentagon.</td>
+<td class="description">Sets the shape to pentagon.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Star</td>
+<td class="type">string</td>
 <td class="default">star</td>
-<td class="description last">Sets the shape to star.</td>
+<td class="description">Sets the shape to star.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Ellipse{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
 <td class="default">ellipse</td>
-<td class="description last">Sets the shape to ellipse.</td>
+<td class="description">Sets the shape to ellipse.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wedge{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
 <td class="default">wedge</td>
-<td class="description last">Sets the shape to wedge.</td>
+<td class="description">Sets the shape to wedge.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Trapezoid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
-<td class="description last">Sets the shape to trapezoid.</td>
+<td class="description">Sets the shape to trapezoid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-UpArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+UpArrow</td>
+<td class="type">string</td>
 <td class="default">uparrow</td>
-<td class="description last">Sets the shape to uparrow.</td>
+<td class="description">Sets the shape to uparrow.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DownArrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+DownArrow</td>
+<td class="type">string</td>
 <td class="default">downarrow</td>
-<td class="description last">Sets the shape to downarrow.</td>
+<td class="description">Sets the shape to downarrow.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">Sets the shape to image.</td>
+<td class="description">Sets the shape to image.</td>
 </tr>
 </tbody>
 </table>
@@ -13154,8 +12966,8 @@ Image{% endhighlight %}</td>
 
 
 
-### Shape<span class="type-signature type string">string</span>
-{:#members:shape}
+### Shape
+{:#enum:shape}
 
 
 
@@ -13171,8 +12983,8 @@ Enum for RatingShape
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13189,53 +13001,53 @@ Enum for RatingShape
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Star{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Star</td>
+<td class="type">string</td>
 <td class="default">star</td>
-<td class="description last">Enum for star shape rating</td>
+<td class="description">Enum for star shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Circle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
 <td class="default">circle</td>
-<td class="description last">Enum for circle shape rating</td>
+<td class="description">Enum for circle shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Diamond{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
 <td class="default">diamond</td>
-<td class="description last">Enum for diamond shape rating</td>
+<td class="description">Enum for diamond shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Heart{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Heart</td>
+<td class="type">string</td>
 <td class="default">heart</td>
-<td class="description last">Enum for heart shape rating</td>
+<td class="description">Enum for heart shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pentagon{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
-<td class="description last">Enum for pentagon shape rating</td>
+<td class="description">Enum for pentagon shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Square{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Square</td>
+<td class="type">string</td>
 <td class="default">square</td>
-<td class="description last">Enum for square shape rating</td>
+<td class="description">Enum for square shape rating</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Triangle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
-<td class="description last">Enum for triangle shape rating</td>
+<td class="description">Enum for triangle shape rating</td>
 </tr>
 </tbody>
 </table>
@@ -13254,8 +13066,8 @@ Triangle{% endhighlight %}</td>
 
 
 
-### Shapes<span class="type-signature type string">string</span>
-{:#members:shapes}
+### Shapes
+{:#enum:shapes}
 
 
 
@@ -13271,8 +13083,8 @@ Enum for various Shapes of node in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13289,60 +13101,60 @@ Enum for various Shapes of node in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Image{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Image</td>
+<td class="type">string</td>
 <td class="default">image</td>
-<td class="description last">Used to specify node Shape as Image</td>
+<td class="description">Used to specify node Shape as Image</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Text</td>
+<td class="type">string</td>
 <td class="default">text</td>
-<td class="description last">Used to specify node Shape as Text</td>
+<td class="description">Used to specify node Shape as Text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Html{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Html</td>
+<td class="type">string</td>
 <td class="default">html</td>
-<td class="description last">Used to specify node Shape as Html</td>
+<td class="description">Used to specify node Shape as Html</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Native{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Native</td>
+<td class="type">string</td>
 <td class="default">native</td>
-<td class="description last">Used to specify node Shape as Native</td>
+<td class="description">Used to specify node Shape as Native</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Basic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Basic</td>
+<td class="type">string</td>
 <td class="default">basic</td>
-<td class="description last">Used to specify node Shape as Basic</td>
+<td class="description">Used to specify node Shape as Basic</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Flow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Flow</td>
+<td class="type">string</td>
 <td class="default">flow</td>
-<td class="description last">Used to specify node Shape as Flow</td>
+<td class="description">Used to specify node Shape as Flow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Arrow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Arrow</td>
+<td class="type">string</td>
 <td class="default">arrow</td>
-<td class="description last">Used to specify node Shape as Arrow</td>
+<td class="description">Used to specify node Shape as Arrow</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BPMN{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+BPMN</td>
+<td class="type">string</td>
 <td class="default">bpmn</td>
-<td class="description last">Used to specify node Shape as BPMN</td>
+<td class="description">Used to specify node Shape as BPMN</td>
 </tr>
 </tbody>
 </table>
@@ -13361,8 +13173,8 @@ BPMN{% endhighlight %}</td>
 
 
 
-### ShowOn<span class="type-signature type string">string</span>
-{:#members:showon}
+### ShowOn
+{:#enum:showon}
 
 
 
@@ -13378,8 +13190,8 @@ Enum for Menu ShowOn
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13396,18 +13208,18 @@ Enum for Menu ShowOn
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Tap{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Tap</td>
+<td class="type">string</td>
 <td class="default">tap</td>
-<td class="description last">Enum for show menu on tap</td>
+<td class="description">Enum for show menu on tap</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TapHold{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+TapHold</td>
+<td class="type">string</td>
 <td class="default">taphold</td>
-<td class="description last">Enum for show menu on tap hold</td>
+<td class="description">Enum for show menu on tap hold</td>
 </tr>
 </tbody>
 </table>
@@ -13426,59 +13238,8 @@ TapHold{% endhighlight %}</td>
 
 
 
-### SnapConstraints<span class="type-signature type enum">enum</span>
-{:#members:snapconstraints}
-
-
-
-
-
-
-
-
-Defines the snapconstraints of diagram seesnapConstraints
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* SnapConstraints.ShowLines
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="diagramcontent"></div>
-<script>
-var gridline = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines};
-//snap constraints of gridlines
-$("#diagramContent").ejDiagram({snapSettings: gridline} });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### SnapConstraints<span class="type-signature type snapconstraints"><a href="global.html#SnapConstraints">SnapConstraints</a></span>
-{:#members:snapconstraints}
+### SnapConstraints
+{:#enum:snapconstraints}
 
 
 
@@ -13494,8 +13255,8 @@ Enum for SnapConstraints in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13512,60 +13273,60 @@ Enum for SnapConstraints in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+None</td>
+<td class="type">SnapConstraints</td>
 <td class="default">0</td>
-<td class="description last">Enables node to be snapped to horizontal gridlines</td>
+<td class="description">Enables node to be snapped to horizontal gridlines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SnapToHorizontalLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+SnapToHorizontalLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">1</td>
-<td class="description last">Enables node to be snapped to vertical gridlines</td>
+<td class="description">Enables node to be snapped to vertical gridlines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SnapToVerticalLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+SnapToVerticalLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">2</td>
-<td class="description last">Enables node to be snapped to horizontal gridlines</td>
+<td class="description">Enables node to be snapped to horizontal gridlines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SnapToLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+SnapToLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enables node to be snapped to gridlines</td>
+<td class="description">Enables node to be snapped to gridlines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ShowHorizontalLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+ShowHorizontalLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">4</td>
-<td class="description last">Enable horizontal lines</td>
+<td class="description">Enable horizontal lines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ShowVerticalLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+ShowVerticalLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">8</td>
-<td class="description last">Enable vertical lines</td>
+<td class="description">Enable vertical lines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ShowLines{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+ShowLines</td>
+<td class="type">SnapConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enable both horizontal and vertical lines</td>
+<td class="description">Enable both horizontal and vertical lines</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-All{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#SnapConstraints">SnapConstraints</a></span></td>
+<td class="name">
+All</td>
+<td class="type">SnapConstraints</td>
 <td class="default">BITOR</td>
-<td class="description last">Enable all the constraints</td>
+<td class="description">Enable all the constraints</td>
 </tr>
 </tbody>
 </table>
@@ -13584,8 +13345,8 @@ All{% endhighlight %}</td>
 
 
 
-### SortOrder<span class="type-signature type string">string</span>
-{:#members:sortorder}
+### SortOrder
+{:#enum:sortorder}
 
 
 
@@ -13601,8 +13362,8 @@ Enum for sortorder
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13619,18 +13380,18 @@ Enum for sortorder
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Ascending{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Ascending</td>
+<td class="type">string</td>
 <td class="default">ascending</td>
-<td class="description last">Enum for Ascending sort order</td>
+<td class="description">Enum for Ascending sort order</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Descending{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Descending</td>
+<td class="type">string</td>
 <td class="default">descending</td>
-<td class="description last">Enum for Descending sort order</td>
+<td class="description">Enum for Descending sort order</td>
 </tr>
 </tbody>
 </table>
@@ -13649,8 +13410,8 @@ Descending{% endhighlight %}</td>
 
 
 
-### Style<span class="type-signature type string">string</span>
-{:#members:style}
+### Style
+{:#enum:style}
 
 
 
@@ -13666,8 +13427,8 @@ Enum for IOS7style
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13684,32 +13445,32 @@ Enum for IOS7style
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal ios7 button style</td>
+<td class="description">Enum for normal ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for back ios7 button style</td>
+<td class="description">Enum for back ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for header ios7 button style</td>
+<td class="description">Enum for header ios7 button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dialog{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Dialog</td>
+<td class="type">string</td>
 <td class="default">dialog</td>
-<td class="description last">Enum for dialog ios7 button style</td>
+<td class="description">Enum for dialog ios7 button style</td>
 </tr>
 </tbody>
 </table>
@@ -13728,8 +13489,8 @@ Dialog{% endhighlight %}</td>
 
 
 
-### Style<span class="type-signature type string">string</span>
-{:#members:style}
+### Style
+{:#enum:style}
 
 
 
@@ -13745,8 +13506,8 @@ Enum for AndroidStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13763,25 +13524,25 @@ Enum for AndroidStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal anroid button style</td>
+<td class="description">Enum for normal anroid button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Small{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Small</td>
+<td class="type">string</td>
 <td class="default">small</td>
-<td class="description last">Enum for small android button style</td>
+<td class="description">Enum for small android button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dialog{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Dialog</td>
+<td class="type">string</td>
 <td class="default">dialog</td>
-<td class="description last">Enum for dialog android button style</td>
+<td class="description">Enum for dialog android button style</td>
 </tr>
 </tbody>
 </table>
@@ -13800,8 +13561,8 @@ Dialog{% endhighlight %}</td>
 
 
 
-### Style<span class="type-signature type string">string</span>
-{:#members:style}
+### Style
+{:#enum:style}
 
 
 
@@ -13817,8 +13578,8 @@ Enum for windowsstyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13835,18 +13596,18 @@ Enum for windowsstyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal windows button style</td>
+<td class="description">Enum for normal windows button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for back windows button style</td>
+<td class="description">Enum for back windows button style</td>
 </tr>
 </tbody>
 </table>
@@ -13865,8 +13626,8 @@ Back{% endhighlight %}</td>
 
 
 
-### Style<span class="type-signature type string">string</span>
-{:#members:style}
+### Style
+{:#enum:style}
 
 
 
@@ -13882,8 +13643,8 @@ Enum for FlatStyle
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13900,25 +13661,25 @@ Enum for FlatStyle
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal flat button style</td>
+<td class="description">Enum for normal flat button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">Enum for back flat button style</td>
+<td class="description">Enum for back flat button style</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Header{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Header</td>
+<td class="type">string</td>
 <td class="default">header</td>
-<td class="description last">Enum for header flat button style</td>
+<td class="description">Enum for header flat button style</td>
 </tr>
 </tbody>
 </table>
@@ -13937,8 +13698,8 @@ Header{% endhighlight %}</td>
 
 
 
-### SymbologyType<span class="type-signature type string">string</span>
-{:#members:symbologytype}
+### SymbologyType
+{:#enum:symbologytype}
 
 
 
@@ -13954,8 +13715,8 @@ Enum for Symbol type.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -13972,88 +13733,88 @@ Enum for Symbol type.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-code39{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code39</td>
+<td class="type">string</td>
 <td class="default">code39</td>
-<td class="description last">Specifies Code 39 Barcode.</td>
+<td class="description">Specifies Code 39 Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code39Extended{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code39Extended</td>
+<td class="type">string</td>
 <td class="default">code39extended</td>
-<td class="description last">Specifies Code 39 Extended Barcode.</td>
+<td class="description">Specifies Code 39 Extended Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code11{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code11</td>
+<td class="type">string</td>
 <td class="default">code11</td>
-<td class="description last">Specifies Code 11 Barcode.</td>
+<td class="description">Specifies Code 11 Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-codabar{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+codabar</td>
+<td class="type">string</td>
 <td class="default">codabar</td>
-<td class="description last">Specifies Codabar Barcode.</td>
+<td class="description">Specifies Codabar Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code32{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code32</td>
+<td class="type">string</td>
 <td class="default">code32</td>
-<td class="description last">Specifies Code 32 Barcode.</td>
+<td class="description">Specifies Code 32 Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code93{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code93</td>
+<td class="type">string</td>
 <td class="default">code93</td>
-<td class="description last">Specifies Code 93 Barcode.</td>
+<td class="description">Specifies Code 93 Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code93Extended{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code93Extended</td>
+<td class="type">string</td>
 <td class="default">code93extended</td>
-<td class="description last">Specifies Code 93 Extended Barcode.</td>
+<td class="description">Specifies Code 93 Extended Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code128A{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code128A</td>
+<td class="type">string</td>
 <td class="default">code128a</td>
-<td class="description last">Specifies Code 128 A Barcode.</td>
+<td class="description">Specifies Code 128 A Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code128B{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code128B</td>
+<td class="type">string</td>
 <td class="default">code128b</td>
-<td class="description last">Specifies Code 128 B Barcode.</td>
+<td class="description">Specifies Code 128 B Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-code128C{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+code128C</td>
+<td class="type">string</td>
 <td class="default">code128c</td>
-<td class="description last">Specifies Code 128 C Barcode.</td>
+<td class="description">Specifies Code 128 C Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dataMatrix{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+dataMatrix</td>
+<td class="type">string</td>
 <td class="default">datamatrix</td>
-<td class="description last">Specifies DataMatrix Barcode.</td>
+<td class="description">Specifies DataMatrix Barcode.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-qrBarcode{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+qrBarcode</td>
+<td class="type">string</td>
 <td class="default">qrbarcode</td>
-<td class="description last">Specifies QR Barcode.</td>
+<td class="description">Specifies QR Barcode.</td>
 </tr>
 </tbody>
 </table>
@@ -14072,8 +13833,8 @@ qrBarcode{% endhighlight %}</td>
 
 
 
-### TrendlinesType<span class="type-signature type string">string</span>
-{:#members:trendlinestype}
+### TrendlinesType
+{:#enum:trendlinestype}
 
 
 
@@ -14089,8 +13850,8 @@ Enum for type of trendline in Chart.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14107,39 +13868,39 @@ Enum for type of trendline in Chart.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Linear{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Linear</td>
+<td class="type">string</td>
 <td class="default">linear</td>
-<td class="description last">Sets linear as trendline type.</td>
+<td class="description">Sets linear as trendline type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Exponential{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Exponential</td>
+<td class="type">string</td>
 <td class="default">exponential</td>
-<td class="description last">Sets exponential as trendline type.</td>
+<td class="description">Sets exponential as trendline type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Logarithmic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Logarithmic</td>
+<td class="type">string</td>
 <td class="default">logarithmic</td>
-<td class="description last">Sets logarithmic as trendline type.</td>
+<td class="description">Sets logarithmic as trendline type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Power{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Power</td>
+<td class="type">string</td>
 <td class="default">power</td>
-<td class="description last">Sets power as trendline type.</td>
+<td class="description">Sets power as trendline type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Polynomial{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Polynomial</td>
+<td class="type">string</td>
 <td class="default">polynomial</td>
-<td class="description last">Sets polynomial as trendline type.</td>
+<td class="description">Sets polynomial as trendline type.</td>
 </tr>
 </tbody>
 </table>
@@ -14158,8 +13919,8 @@ Polynomial{% endhighlight %}</td>
 
 
 
-### TextAlign<span class="type-signature type string">string</span>
-{:#members:textalign}
+### TextAlign
+{:#enum:textalign}
 
 
 
@@ -14175,8 +13936,8 @@ Enum for the Text Alignment in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14193,25 +13954,25 @@ Enum for the Text Alignment in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Used to align text on left side of node/connector</td>
+<td class="description">Used to align text on left side of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Used to align text on center of node/connector</td>
+<td class="description">Used to align text on center of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Used to align text on Right side of node/connector</td>
+<td class="description">Used to align text on Right side of node/connector</td>
 </tr>
 </tbody>
 </table>
@@ -14230,8 +13991,8 @@ Right{% endhighlight %}</td>
 
 
 
-### TextAlign<span class="type-signature type string">string</span>
-{:#members:textalign}
+### TextAlign
+{:#enum:textalign}
 
 
 
@@ -14247,8 +14008,8 @@ Enum for gauge TextAlign
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14265,18 +14026,18 @@ Enum for gauge TextAlign
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">To set the TextAlign Left.</td>
+<td class="description">To set the TextAlign Left.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">To set the TextAlign right.</td>
+<td class="description">To set the TextAlign right.</td>
 </tr>
 </tbody>
 </table>
@@ -14295,8 +14056,8 @@ Right{% endhighlight %}</td>
 
 
 
-### TextAlignment<span class="type-signature type string">string</span>
-{:#members:textalignment}
+### TextAlignment
+{:#enum:textalignment}
 
 
 
@@ -14312,8 +14073,8 @@ Enum for text alignment.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14330,25 +14091,25 @@ Enum for text alignment.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-MiddleTop{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MiddleTop</td>
+<td class="type">string</td>
 <td class="default">middletop</td>
-<td class="description last">Support for changing text alignment to middleTop.</td>
+<td class="description">Support for changing text alignment to middleTop.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MiddleCenter</td>
+<td class="type">string</td>
 <td class="default">middlecenter</td>
-<td class="description last">Support for changing text alignment to middleCenter.</td>
+<td class="description">Support for changing text alignment to middleCenter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleBottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MiddleBottom</td>
+<td class="type">string</td>
 <td class="default">middlebottom</td>
-<td class="description last">Support for changing text alignment to middleBottom.</td>
+<td class="description">Support for changing text alignment to middleBottom.</td>
 </tr>
 </tbody>
 </table>
@@ -14367,8 +14128,8 @@ MiddleBottom{% endhighlight %}</td>
 
 
 
-### TextAlignment<span class="type-signature type string">string</span>
-{:#members:textalignment}
+### TextAlignment
+{:#enum:textalignment}
 
 
 
@@ -14384,8 +14145,8 @@ Enum for Tile TextAlignment
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14402,32 +14163,32 @@ Enum for Tile TextAlignment
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal alignment of tile text</td>
+<td class="description">Enum for normal alignment of tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Left{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Left</td>
+<td class="type">string</td>
 <td class="default">left</td>
-<td class="description last">Enum for left alignment of tile text</td>
+<td class="description">Enum for left alignment of tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Right{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Right</td>
+<td class="type">string</td>
 <td class="default">right</td>
-<td class="description last">Enum for right alignment of tile text</td>
+<td class="description">Enum for right alignment of tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Enum for center alignment of tile text</td>
+<td class="description">Enum for center alignment of tile text</td>
 </tr>
 </tbody>
 </table>
@@ -14446,8 +14207,8 @@ Center{% endhighlight %}</td>
 
 
 
-### TextDecorations<span class="type-signature type string">string</span>
-{:#members:textdecorations}
+### TextDecorations
+{:#enum:textdecorations}
 
 
 
@@ -14463,8 +14224,8 @@ Enum for TextDecorations in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14481,32 +14242,32 @@ Enum for TextDecorations in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Underline{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Underline</td>
+<td class="type">string</td>
 <td class="default">underline</td>
-<td class="description last">Used to set text decoration of the label as Underline</td>
+<td class="description">Used to set text decoration of the label as Underline</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Overline{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Overline</td>
+<td class="type">string</td>
 <td class="default">overline</td>
-<td class="description last">Used to set text decoration of the label as Overline</td>
+<td class="description">Used to set text decoration of the label as Overline</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LineThrough{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LineThrough</td>
+<td class="type">string</td>
 <td class="default">line-through</td>
-<td class="description last">Used to set text decoration of the label as LineThrough</td>
+<td class="description">Used to set text decoration of the label as LineThrough</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+None</td>
+<td class="type">string</td>
 <td class="default">none</td>
-<td class="description last">Used to set text decoration of the label as None</td>
+<td class="description">Used to set text decoration of the label as None</td>
 </tr>
 </tbody>
 </table>
@@ -14525,8 +14286,8 @@ None{% endhighlight %}</td>
 
 
 
-### TextPosition<span class="type-signature type string">string</span>
-{:#members:textposition}
+### TextPosition
+{:#enum:textposition}
 
 
 
@@ -14542,8 +14303,8 @@ Enum for Tile TextPosition
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14560,18 +14321,18 @@ Enum for Tile TextPosition
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inner{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inner</td>
+<td class="type">string</td>
 <td class="default">inner</td>
-<td class="description last">Enum for inner position of tile text</td>
+<td class="description">Enum for inner position of tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outer{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outer</td>
+<td class="type">string</td>
 <td class="default">outer</td>
-<td class="description last">Enum for outer position of tile text</td>
+<td class="description">Enum for outer position of tile text</td>
 </tr>
 </tbody>
 </table>
@@ -14590,8 +14351,8 @@ Outer{% endhighlight %}</td>
 
 
 
-### TextWrapping<span class="type-signature type string">string</span>
-{:#members:textwrapping}
+### TextWrapping
+{:#enum:textwrapping}
 
 
 
@@ -14607,8 +14368,8 @@ Enum for TextWrapping in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14625,25 +14386,25 @@ Enum for TextWrapping in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-NoWrap{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+NoWrap</td>
+<td class="type">string</td>
 <td class="default">nowrap</td>
-<td class="description last">Disables wrapping</td>
+<td class="description">Disables wrapping</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wrap{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wrap</td>
+<td class="type">string</td>
 <td class="default">wrap</td>
-<td class="description last">Enables Line-break at normal word break points</td>
+<td class="description">Enables Line-break at normal word break points</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-WrapWithOverflow{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+WrapWithOverflow</td>
+<td class="type">string</td>
 <td class="default">wrapwithoverflow</td>
-<td class="description last">Enables Line-break at normal word break points with longer word overflows</td>
+<td class="description">Enables Line-break at normal word break points with longer word overflows</td>
 </tr>
 </tbody>
 </table>
@@ -14662,8 +14423,8 @@ WrapWithOverflow{% endhighlight %}</td>
 
 
 
-### TickLinesPosition<span class="type-signature type string">string</span>
-{:#members:ticklinesposition}
+### TickLinesPosition
+{:#enum:ticklinesposition}
 
 
 
@@ -14679,8 +14440,8 @@ Enum for tick line position in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14697,18 +14458,18 @@ Enum for tick line position in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inside</td>
+<td class="type">string</td>
 <td class="default">inside</td>
-<td class="description last">Tick lines will be placed inside</td>
+<td class="description">Tick lines will be placed inside</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
 <td class="default">outside</td>
-<td class="description last">Tick lines will be placed outside</td>
+<td class="description">Tick lines will be placed outside</td>
 </tr>
 </tbody>
 </table>
@@ -14727,8 +14488,8 @@ Outside{% endhighlight %}</td>
 
 
 
-### Theme<span class="type-signature type string">string</span>
-{:#members:theme}
+### Theme
+{:#enum:theme}
 
 
 
@@ -14744,8 +14505,8 @@ Enum for chart themes.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14762,67 +14523,67 @@ Enum for chart themes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Azure{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Azure</td>
+<td class="type">string</td>
 <td class="default">azure</td>
-<td class="description last">Render chart in azure theme.</td>
+<td class="description">Render chart in azure theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-FlatLight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+FlatLight</td>
+<td class="type">string</td>
 <td class="default">flatlight</td>
-<td class="description last">Render chart in flatlight theme.</td>
+<td class="description">Render chart in flatlight theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Azuredark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Azuredark</td>
+<td class="type">string</td>
 <td class="default">azuredark</td>
-<td class="description last">Render chart in azuredark theme.</td>
+<td class="description">Render chart in azuredark theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Lime{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Lime</td>
+<td class="type">string</td>
 <td class="default">lime</td>
-<td class="description last">Render chart in lime theme.</td>
+<td class="description">Render chart in lime theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-LimeDark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+LimeDark</td>
+<td class="type">string</td>
 <td class="default">limedark</td>
-<td class="description last">Render chart in limedark theme.</td>
+<td class="description">Render chart in limedark theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Saffron{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Saffron</td>
+<td class="type">string</td>
 <td class="default">saffron</td>
-<td class="description last">Render chart in saffron theme.</td>
+<td class="description">Render chart in saffron theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SaffronDark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SaffronDark</td>
+<td class="type">string</td>
 <td class="default">saffrondark</td>
-<td class="description last">Render chart in saffrondark theme.</td>
+<td class="description">Render chart in saffrondark theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-GradientLight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+GradientLight</td>
+<td class="type">string</td>
 <td class="default">gradientlight</td>
-<td class="description last">Render chart in gradientlight theme.</td>
+<td class="description">Render chart in gradientlight theme.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-GradientDark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+GradientDark</td>
+<td class="type">string</td>
 <td class="default">gradientdark</td>
-<td class="description last">Render chart in gradientdark theme.</td>
+<td class="description">Render chart in gradientdark theme.</td>
 </tr>
 </tbody>
 </table>
@@ -14841,8 +14602,8 @@ GradientDark{% endhighlight %}</td>
 
 
 
-### Theme<span class="type-signature type string">string</span>
-{:#members:theme}
+### Theme
+{:#enum:theme}
 
 
 
@@ -14858,8 +14619,8 @@ Enum for Theme
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14876,25 +14637,25 @@ Enum for Theme
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Auto RenderMode</td>
+<td class="description">Auto RenderMode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Dark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Dark</td>
+<td class="type">string</td>
 <td class="default">dark</td>
-<td class="description last">Dark RenderMode</td>
+<td class="description">Dark RenderMode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Light{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Light</td>
+<td class="type">string</td>
 <td class="default">light</td>
-<td class="description last">Light RenderMode</td>
+<td class="description">Light RenderMode</td>
 </tr>
 </tbody>
 </table>
@@ -14913,8 +14674,8 @@ Light{% endhighlight %}</td>
 
 
 
-### Themes<span class="type-signature type string">string</span>
-{:#members:themes}
+### Themes
+{:#enum:themes}
 
 
 
@@ -14930,8 +14691,8 @@ Enum for Bullet Graph Theme3
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -14948,18 +14709,18 @@ Enum for Bullet Graph Theme3
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-flatlight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatlight</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the theme flatlight.</td>
+<td class="description">To set the theme flatlight.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-flatdark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatdark</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the theme flatdark.</td>
+<td class="description">To set the theme flatdark.</td>
 </tr>
 </tbody>
 </table>
@@ -14978,8 +14739,8 @@ flatdark{% endhighlight %}</td>
 
 
 
-### Themes<span class="type-signature type string">string</span>
-{:#members:themes}
+### Themes
+{:#enum:themes}
 
 
 
@@ -14995,8 +14756,8 @@ Enum for gauge Themes
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15013,18 +14774,18 @@ Enum for gauge Themes
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-flatlight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatlight</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatlight.</td>
+<td class="description">To set the themes flatlight.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-flatdark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatdark</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatdark.</td>
+<td class="description">To set the themes flatdark.</td>
 </tr>
 </tbody>
 </table>
@@ -15043,8 +14804,8 @@ flatdark{% endhighlight %}</td>
 
 
 
-### Themes<span class="type-signature type string">string</span>
-{:#members:themes}
+### Themes
+{:#enum:themes}
 
 
 
@@ -15060,8 +14821,8 @@ Enum for gauge Themes
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15078,18 +14839,18 @@ Enum for gauge Themes
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-flatlight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatlight</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatlight.</td>
+<td class="description">To set the themes flatlight.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-flatdark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatdark</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatdark.</td>
+<td class="description">To set the themes flatdark.</td>
 </tr>
 </tbody>
 </table>
@@ -15108,8 +14869,8 @@ flatdark{% endhighlight %}</td>
 
 
 
-### Themes<span class="type-signature type string">string</span>
-{:#members:themes}
+### Themes
+{:#enum:themes}
 
 
 
@@ -15125,8 +14886,8 @@ Enum for gauge Themes
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15143,18 +14904,18 @@ Enum for gauge Themes
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-flatlight{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatlight</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatlight.</td>
+<td class="description">To set the themes flatlight.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-flatdark{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+flatdark</td>
+<td class="type">string</td>
 <td class="default">OBJECTLIT</td>
-<td class="description last">To set the themes flatdark.</td>
+<td class="description">To set the themes flatdark.</td>
 </tr>
 </tbody>
 </table>
@@ -15173,8 +14934,8 @@ flatdark{% endhighlight %}</td>
 
 
 
-### ThumbStyle<span class="type-signature type string">string</span>
-{:#members:thumbstyle}
+### ThumbStyle
+{:#enum:thumbstyle}
 
 
 
@@ -15190,8 +14951,8 @@ Enum for slider
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15208,18 +14969,18 @@ Enum for slider
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal mode thumb style slider</td>
+<td class="description">Enum for normal mode thumb style slider</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Small{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Small</td>
+<td class="type">string</td>
 <td class="default">small</td>
-<td class="description last">Enum for small mode thumb style slider</td>
+<td class="description">Enum for small mode thumb style slider</td>
 </tr>
 </tbody>
 </table>
@@ -15238,8 +14999,8 @@ Small{% endhighlight %}</td>
 
 
 
-### TickPlacement<span class="type-signature type string">string</span>
-{:#members:tickplacement}
+### TickPlacement
+{:#enum:tickplacement}
 
 
 
@@ -15255,8 +15016,8 @@ Enum for Bullet Graph tick placement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15273,18 +15034,18 @@ Enum for Bullet Graph tick placement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Inside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Inside</td>
+<td class="type">string</td>
 <td class="default">inside</td>
-<td class="description last">support for placing ticks inside scale.</td>
+<td class="description">support for placing ticks inside scale.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Outside{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
 <td class="default">outside</td>
-<td class="description last">support for placing ticks outside scale.</td>
+<td class="description">support for placing ticks outside scale.</td>
 </tr>
 </tbody>
 </table>
@@ -15303,8 +15064,8 @@ Outside{% endhighlight %}</td>
 
 
 
-### TickPlacement<span class="type-signature type string">string</span>
-{:#members:tickplacement}
+### TickPlacement
+{:#enum:tickplacement}
 
 
 
@@ -15320,8 +15081,8 @@ Enum for gauge TickPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15338,25 +15099,25 @@ Enum for gauge TickPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the TickPlacement near.</td>
+<td class="description">To set the TickPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the TickPlacement far.</td>
+<td class="description">To set the TickPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the TickPlacement center.</td>
+<td class="description">To set the TickPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -15375,8 +15136,8 @@ Center{% endhighlight %}</td>
 
 
 
-### TickPlacement<span class="type-signature type string">string</span>
-{:#members:tickplacement}
+### TickPlacement
+{:#enum:tickplacement}
 
 
 
@@ -15392,8 +15153,8 @@ Enum for gauge TickPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15410,25 +15171,25 @@ Enum for gauge TickPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the TickPlacement near.</td>
+<td class="description">To set the TickPlacement near.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the TickPlacement far.</td>
+<td class="description">To set the TickPlacement far.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the TickPlacement center.</td>
+<td class="description">To set the TickPlacement center.</td>
 </tr>
 </tbody>
 </table>
@@ -15447,8 +15208,8 @@ Center{% endhighlight %}</td>
 
 
 
-### TickPosition<span class="type-signature type string">string</span>
-{:#members:tickposition}
+### TickPosition
+{:#enum:tickposition}
 
 
 
@@ -15464,8 +15225,8 @@ Enum for Bullet Graph Tick Position
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15482,25 +15243,25 @@ Enum for Bullet Graph Tick Position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">To set the Tick position below quantitative scale.</td>
+<td class="description">To set the Tick position below quantitative scale.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">To set the Tick position above quantitative scale.</td>
+<td class="description">To set the Tick position above quantitative scale.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">To set the Tick position at the center of quantitative scale.</td>
+<td class="description">To set the Tick position at the center of quantitative scale.</td>
 </tr>
 </tbody>
 </table>
@@ -15519,8 +15280,8 @@ Center{% endhighlight %}</td>
 
 
 
-### TickType<span class="type-signature type string">string</span>
-{:#members:ticktype}
+### TickType
+{:#enum:ticktype}
 
 
 
@@ -15536,8 +15297,8 @@ Enum for gauge TickType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15554,18 +15315,18 @@ Enum for gauge TickType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Major{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Major</td>
+<td class="type">string</td>
 <td class="default">major</td>
-<td class="description last">To set the TickType major.</td>
+<td class="description">To set the TickType major.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Minor{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Minor</td>
+<td class="type">string</td>
 <td class="default">minor</td>
-<td class="description last">To set the TickType minor.</td>
+<td class="description">To set the TickType minor.</td>
 </tr>
 </tbody>
 </table>
@@ -15584,8 +15345,8 @@ Minor{% endhighlight %}</td>
 
 
 
-### TickType<span class="type-signature type string">string</span>
-{:#members:ticktype}
+### TickType
+{:#enum:ticktype}
 
 
 
@@ -15601,8 +15362,8 @@ Enum for gauge TickType
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15619,18 +15380,18 @@ Enum for gauge TickType
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-MajorInterval{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MajorInterval</td>
+<td class="type">string</td>
 <td class="default">majorinterval</td>
-<td class="description last">To set the TickType majorinterval.</td>
+<td class="description">To set the TickType majorinterval.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MinorInterval{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+MinorInterval</td>
+<td class="type">string</td>
 <td class="default">minorinterval</td>
-<td class="description last">To set the TickType minorinterval.</td>
+<td class="description">To set the TickType minorinterval.</td>
 </tr>
 </tbody>
 </table>
@@ -15649,8 +15410,8 @@ MinorInterval{% endhighlight %}</td>
 
 
 
-### TileSize<span class="type-signature type string">string</span>
-{:#members:tilesize}
+### TileSize
+{:#enum:tilesize}
 
 
 
@@ -15666,8 +15427,8 @@ Enum for Tile Size
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15684,32 +15445,32 @@ Enum for Tile Size
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Medium{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Medium</td>
+<td class="type">string</td>
 <td class="default">medium</td>
-<td class="description last">Enum for medium size of tile</td>
+<td class="description">Enum for medium size of tile</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Small{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Small</td>
+<td class="type">string</td>
 <td class="default">small</td>
-<td class="description last">Enum for small size of tile</td>
+<td class="description">Enum for small size of tile</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Large{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Large</td>
+<td class="type">string</td>
 <td class="default">large</td>
-<td class="description last">Enum for large size of tile</td>
+<td class="description">Enum for large size of tile</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Wide{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Wide</td>
+<td class="type">string</td>
 <td class="default">wide</td>
-<td class="description last">Enum for wide size of tile</td>
+<td class="description">Enum for wide size of tile</td>
 </tr>
 </tbody>
 </table>
@@ -15728,8 +15489,8 @@ Wide{% endhighlight %}</td>
 
 
 
-### Tool<span class="type-signature type tool"><a href="global.html#Tool">Tool</a></span>
-{:#members:tool}
+### Tool
+{:#enum:tool}
 
 
 
@@ -15745,8 +15506,8 @@ Enum for the Tool in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15763,46 +15524,46 @@ Enum for the Tool in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-None{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+None</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Disables all Tools</td>
+<td class="description">Disables all Tools</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SingleSelect{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+SingleSelect</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables SingleSelect tool</td>
+<td class="description">Enables/Disables SingleSelect tool</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MultipleSelect{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+MultipleSelect</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables MultiSelect tool</td>
+<td class="description">Enables/Disables MultiSelect tool</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ZoomPan{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+ZoomPan</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables ZoomPan tool</td>
+<td class="description">Enables/Disables ZoomPan tool</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DrawOnce{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+DrawOnce</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables DrawOnce tool</td>
+<td class="description">Enables/Disables DrawOnce tool</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ContinuesDraw{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#Tool">Tool</a></span></td>
+<td class="name">
+ContinuesDraw</td>
+<td class="type">Tool</td>
 <td class="default">LSH</td>
-<td class="description last">Enables/Disables ContinuousDraw tool</td>
+<td class="description">Enables/Disables ContinuousDraw tool</td>
 </tr>
 </tbody>
 </table>
@@ -15821,8 +15582,8 @@ ContinuesDraw{% endhighlight %}</td>
 
 
 
-### Type<span class="type-signature type string">string</span>
-{:#members:type}
+### Type
+{:#enum:type}
 
 
 
@@ -15838,8 +15599,8 @@ Enum for chart series type.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -15856,193 +15617,193 @@ Enum for chart series type.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Line{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Line</td>
+<td class="type">string</td>
 <td class="default">line</td>
-<td class="description last">sets the seriesType of chart to line.</td>
+<td class="description">sets the seriesType of chart to line.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Spline{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Spline</td>
+<td class="type">string</td>
 <td class="default">spline</td>
-<td class="description last">sets the seriesType of chart to spline.</td>
+<td class="description">sets the seriesType of chart to spline.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Column{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Column</td>
+<td class="type">string</td>
 <td class="default">column</td>
-<td class="description last">sets the seriesType of chart to column.</td>
+<td class="description">sets the seriesType of chart to column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Doughnut{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Doughnut</td>
+<td class="type">string</td>
 <td class="default">doughnut</td>
-<td class="description last">sets the seriesType of chart to doughnut.</td>
+<td class="description">sets the seriesType of chart to doughnut.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Area{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Area</td>
+<td class="type">string</td>
 <td class="default">area</td>
-<td class="description last">sets the seriesType of chart to area.</td>
+<td class="description">sets the seriesType of chart to area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-SplineArea{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+SplineArea</td>
+<td class="type">string</td>
 <td class="default">splinearea</td>
-<td class="description last">sets the seriesType of chart to splinearea.</td>
+<td class="description">sets the seriesType of chart to splinearea.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StepLine{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StepLine</td>
+<td class="type">string</td>
 <td class="default">stepline</td>
-<td class="description last">sets the seriesType of chart to stepline.</td>
+<td class="description">sets the seriesType of chart to stepline.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StepArea{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StepArea</td>
+<td class="type">string</td>
 <td class="default">steparea</td>
-<td class="description last">sets the seriesType of chart to steparea.</td>
+<td class="description">sets the seriesType of chart to steparea.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pie{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pie</td>
+<td class="type">string</td>
 <td class="default">pie</td>
-<td class="description last">sets the seriesType of chart to pie.</td>
+<td class="description">sets the seriesType of chart to pie.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Hilo{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Hilo</td>
+<td class="type">string</td>
 <td class="default">hilo</td>
-<td class="description last">sets the seriesType of chart to hilo.</td>
+<td class="description">sets the seriesType of chart to hilo.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-HiloOpenClose{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+HiloOpenClose</td>
+<td class="type">string</td>
 <td class="default">hiloopenclose</td>
-<td class="description last">sets the seriesType of chart to hiloopenclose.</td>
+<td class="description">sets the seriesType of chart to hiloopenclose.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Candle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Candle</td>
+<td class="type">string</td>
 <td class="default">candle</td>
-<td class="description last">sets the seriesType of chart to candle.</td>
+<td class="description">sets the seriesType of chart to candle.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bubble{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bubble</td>
+<td class="type">string</td>
 <td class="default">bubble</td>
-<td class="description last">sets the seriesType of chart to bubble.</td>
+<td class="description">sets the seriesType of chart to bubble.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Scatter{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Scatter</td>
+<td class="type">string</td>
 <td class="default">scatter</td>
-<td class="description last">sets the seriesType of chart to scatter.</td>
+<td class="description">sets the seriesType of chart to scatter.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bar{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bar</td>
+<td class="type">string</td>
 <td class="default">bar</td>
-<td class="description last">sets the seriesType of chart to bar.</td>
+<td class="description">sets the seriesType of chart to bar.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingArea{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingArea</td>
+<td class="type">string</td>
 <td class="default">stackingarea</td>
-<td class="description last">sets the seriesType of chart to stackingarea.</td>
+<td class="description">sets the seriesType of chart to stackingarea.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingArea100{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingArea100</td>
+<td class="type">string</td>
 <td class="default">stackingarea100</td>
-<td class="description last">sets the seriesType of chart to stackingarea100.</td>
+<td class="description">sets the seriesType of chart to stackingarea100.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RangeColumn{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RangeColumn</td>
+<td class="type">string</td>
 <td class="default">rangecolumn</td>
-<td class="description last">sets the seriesType of chart to rangecolumn.</td>
+<td class="description">sets the seriesType of chart to rangecolumn.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingColumn{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingColumn</td>
+<td class="type">string</td>
 <td class="default">stackingcolumn</td>
-<td class="description last">sets the seriesType of chart to stackingcolumn.</td>
+<td class="description">sets the seriesType of chart to stackingcolumn.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingColumn100{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingColumn100</td>
+<td class="type">string</td>
 <td class="default">stackingcolumn100</td>
-<td class="description last">sets the seriesType of chart to stackingcolumn100.</td>
+<td class="description">sets the seriesType of chart to stackingcolumn100.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingBar{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingBar</td>
+<td class="type">string</td>
 <td class="default">stackingbar</td>
-<td class="description last">sets the seriesType of chart to stackingbar.</td>
+<td class="description">sets the seriesType of chart to stackingbar.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-StackingBar100{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+StackingBar100</td>
+<td class="type">string</td>
 <td class="default">stackingbar100</td>
-<td class="description last">sets the seriesType of chart to stackingbar100.</td>
+<td class="description">sets the seriesType of chart to stackingbar100.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Pyramid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Pyramid</td>
+<td class="type">string</td>
 <td class="default">pyramid</td>
-<td class="description last">sets the seriesType of chart to pyramid.</td>
+<td class="description">sets the seriesType of chart to pyramid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Funnel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Funnel</td>
+<td class="type">string</td>
 <td class="default">funnel</td>
-<td class="description last">sets the seriesType of chart to funnel.</td>
+<td class="description">sets the seriesType of chart to funnel.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Polar{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Polar</td>
+<td class="type">string</td>
 <td class="default">polar</td>
-<td class="description last">sets the seriesType of chart to polar.</td>
+<td class="description">sets the seriesType of chart to polar.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Radar{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Radar</td>
+<td class="type">string</td>
 <td class="default">radar</td>
-<td class="description last">sets the seriesType of chart to radar.</td>
+<td class="description">sets the seriesType of chart to radar.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-RangeArea{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+RangeArea</td>
+<td class="type">string</td>
 <td class="default">rangearea</td>
-<td class="description last">sets the seriesType of chart to rangeArea.</td>
+<td class="description">sets the seriesType of chart to rangeArea.</td>
 </tr>
 </tbody>
 </table>
@@ -16061,8 +15822,8 @@ RangeArea{% endhighlight %}</td>
 
 
 
-### Type<span class="type-signature type string">string</span>
-{:#members:type}
+### Type
+{:#enum:type}
 
 
 
@@ -16078,8 +15839,8 @@ Enum for ej.mobile.Menu.IOS7.Type
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16096,25 +15857,25 @@ Enum for ej.mobile.Menu.IOS7.Type
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Auto{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
 <td class="default">auto</td>
-<td class="description last">Enum for auto type menu in ios7 mode</td>
+<td class="description">Enum for auto type menu in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Animate{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Animate</td>
+<td class="type">string</td>
 <td class="default">animate</td>
-<td class="description last">Enum for animate type menu in ios7 mode</td>
+<td class="description">Enum for animate type menu in ios7 mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Normal{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
 <td class="default">normal</td>
-<td class="description last">Enum for normal type menu in ios7 mode</td>
+<td class="description">Enum for normal type menu in ios7 mode</td>
 </tr>
 </tbody>
 </table>
@@ -16133,8 +15894,8 @@ Normal{% endhighlight %}</td>
 
 
 
-### Type<span class="type-signature type string">string</span>
-{:#members:type}
+### Type
+{:#enum:type}
 
 
 
@@ -16150,8 +15911,8 @@ Enum for ej.mobile.Menu.Android.Type
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16168,32 +15929,32 @@ Enum for ej.mobile.Menu.Android.Type
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Contextual{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Contextual</td>
+<td class="type">string</td>
 <td class="default">contextual</td>
-<td class="description last">Enum for contextual type menu in android mode</td>
+<td class="description">Enum for contextual type menu in android mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Popup{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Popup</td>
+<td class="type">string</td>
 <td class="default">popup</td>
-<td class="description last">Enum for popup type menu in android mode</td>
+<td class="description">Enum for popup type menu in android mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OptionsList{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OptionsList</td>
+<td class="type">string</td>
 <td class="default">optionslist</td>
-<td class="description last">Enum for optionslist type menu in android mode</td>
+<td class="description">Enum for optionslist type menu in android mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-OptionsMenu{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+OptionsMenu</td>
+<td class="type">string</td>
 <td class="default">optionsmenu</td>
-<td class="description last">Enum for optionsmenu type menu in android mode</td>
+<td class="description">Enum for optionsmenu type menu in android mode</td>
 </tr>
 </tbody>
 </table>
@@ -16212,8 +15973,8 @@ OptionsMenu{% endhighlight %}</td>
 
 
 
-### Type<span class="type-signature type string">string</span>
-{:#members:type}
+### Type
+{:#enum:type}
 
 
 
@@ -16229,8 +15990,8 @@ Enum for ej.mobile.Menu.Windows.Type
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16247,18 +16008,18 @@ Enum for ej.mobile.Menu.Windows.Type
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Contextual{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Contextual</td>
+<td class="type">string</td>
 <td class="default">contextual</td>
-<td class="description last">Enum for contextual type menu in windows mode</td>
+<td class="description">Enum for contextual type menu in windows mode</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Popup{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Popup</td>
+<td class="type">string</td>
 <td class="default">popup</td>
-<td class="description last">Enum for popup type menu in windows mode</td>
+<td class="description">Enum for popup type menu in windows mode</td>
 </tr>
 </tbody>
 </table>
@@ -16277,8 +16038,8 @@ Popup{% endhighlight %}</td>
 
 
 
-### Unit<span class="type-signature type string">string</span>
-{:#members:unit}
+### Unit
+{:#enum:unit}
 
 
 
@@ -16294,8 +16055,8 @@ Enum for chart unit.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16312,18 +16073,18 @@ Enum for chart unit.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-percentage{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+percentage</td>
+<td class="type">string</td>
 <td class="default">percentage</td>
-<td class="description last">Specifies the unit in percentage.</td>
+<td class="description">Specifies the unit in percentage.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-pixel{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+pixel</td>
+<td class="type">string</td>
 <td class="default">pixel</td>
-<td class="description last">Specifies the unit in pixel.</td>
+<td class="description">Specifies the unit in pixel.</td>
 </tr>
 </tbody>
 </table>
@@ -16342,8 +16103,8 @@ pixel{% endhighlight %}</td>
 
 
 
-### UnitTextPlacement<span class="type-signature type string">string</span>
-{:#members:unittextplacement}
+### UnitTextPlacement
+{:#enum:unittextplacement}
 
 
 
@@ -16359,8 +16120,8 @@ Enum for gauge UnitTextPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16377,18 +16138,18 @@ Enum for gauge UnitTextPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">To set the UnitTextPlacement back.</td>
+<td class="description">To set the UnitTextPlacement back.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Front{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Front</td>
+<td class="type">string</td>
 <td class="default">front</td>
-<td class="description last">To set the UnitTextPlacement front.</td>
+<td class="description">To set the UnitTextPlacement front.</td>
 </tr>
 </tbody>
 </table>
@@ -16407,8 +16168,8 @@ Front{% endhighlight %}</td>
 
 
 
-### UnitTextPlacement<span class="type-signature type string">string</span>
-{:#members:unittextplacement}
+### UnitTextPlacement
+{:#enum:unittextplacement}
 
 
 
@@ -16424,8 +16185,8 @@ Enum for gauge UnitTextPlacement
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16442,18 +16203,18 @@ Enum for gauge UnitTextPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Front{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Front</td>
+<td class="type">string</td>
 <td class="default">front</td>
-<td class="description last">To set the UnitTextPlacement front.</td>
+<td class="description">To set the UnitTextPlacement front.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Back{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Back</td>
+<td class="type">string</td>
 <td class="default">back</td>
-<td class="description last">To set the UnitTextPlacement back.</td>
+<td class="description">To set the UnitTextPlacement back.</td>
 </tr>
 </tbody>
 </table>
@@ -16472,8 +16233,8 @@ Back{% endhighlight %}</td>
 
 
 
-### UserHandlePositions<span class="type-signature type string">String</span>
-{:#members:userhandlepositions}
+### UserHandlePositions
+{:#enum:userhandlepositions}
 
 
 
@@ -16489,8 +16250,8 @@ Enum to specify the userhandle position in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16507,60 +16268,60 @@ Enum to specify the userhandle position in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-TopLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+TopLeft</td>
+<td class="type">string</td>
 <td class="default">topleft</td>
-<td class="description last">Used to set position as TopLeft</td>
+<td class="description">Used to set position as TopLeft</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+TopCenter</td>
+<td class="type">string</td>
 <td class="default">topcenter</td>
-<td class="description last">Used to set position as TopCenter</td>
+<td class="description">Used to set position as TopCenter</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-TopRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+TopRight</td>
+<td class="type">string</td>
 <td class="default">topright</td>
-<td class="description last">Used to set position as TopRight</td>
+<td class="description">Used to set position as TopRight</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+MiddleLeft</td>
+<td class="type">string</td>
 <td class="default">middleleft</td>
-<td class="description last">Used to set position as MiddleLeft</td>
+<td class="description">Used to set position as MiddleLeft</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-MiddleRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+MiddleRight</td>
+<td class="type">string</td>
 <td class="default">middleright</td>
-<td class="description last">Used to set position as MiddleRight</td>
+<td class="description">Used to set position as MiddleRight</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomLeft{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+BottomLeft</td>
+<td class="type">string</td>
 <td class="default">bottomleft</td>
-<td class="description last">Used to set position as BottomLeft</td>
+<td class="description">Used to set position as BottomLeft</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomCenter{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+BottomCenter</td>
+<td class="type">string</td>
 <td class="default">bottomcenter</td>
-<td class="description last">Used to set position as BottomCenter</td>
+<td class="description">Used to set position as BottomCenter</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-BottomRight{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+BottomRight</td>
+<td class="type">string</td>
 <td class="default">bottomright</td>
-<td class="description last">Used to set position as BottomRight</td>
+<td class="description">Used to set position as BottomRight</td>
 </tr>
 </tbody>
 </table>
@@ -16579,8 +16340,8 @@ BottomRight{% endhighlight %}</td>
 
 
 
-### ValueType<span class="type-signature type string">string</span>
-{:#members:valuetype}
+### ValueType
+{:#enum:valuetype}
 
 
 
@@ -16596,8 +16357,8 @@ Enum for chart valueType.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16614,32 +16375,32 @@ Enum for chart valueType.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Double{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Double</td>
+<td class="type">string</td>
 <td class="default">double</td>
-<td class="description last">set valueType for chart to double.</td>
+<td class="description">set valueType for chart to double.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-DateTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+DateTime</td>
+<td class="type">string</td>
 <td class="default">datetime</td>
-<td class="description last">set valueType for chart to dateTime.</td>
+<td class="description">set valueType for chart to dateTime.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Category{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Category</td>
+<td class="type">string</td>
 <td class="default">category</td>
-<td class="description last">set valueType for chart to category.</td>
+<td class="description">set valueType for chart to category.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Logarithmic{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Logarithmic</td>
+<td class="type">string</td>
 <td class="default">logarithmic</td>
-<td class="description last">set valueType for chart to logarithmic.</td>
+<td class="description">set valueType for chart to logarithmic.</td>
 </tr>
 </tbody>
 </table>
@@ -16658,8 +16419,8 @@ Logarithmic{% endhighlight %}</td>
 
 
 
-### VerticalAlignment<span class="type-signature type string">string</span>
-{:#members:verticalalignment}
+### VerticalAlignment
+{:#enum:verticalalignment}
 
 
 
@@ -16675,8 +16436,8 @@ Enum for Vertical Alignment of elements in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16693,25 +16454,25 @@ Enum for Vertical Alignment of elements in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">Set vertical alignment as top</td>
+<td class="description">Set vertical alignment as top</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Middle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Middle</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Set vertical alignment as middle</td>
+<td class="description">Set vertical alignment as middle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">Set vertical alignment as bottom</td>
+<td class="description">Set vertical alignment as bottom</td>
 </tr>
 </tbody>
 </table>
@@ -16730,8 +16491,8 @@ Bottom{% endhighlight %}</td>
 
 
 
-### VerticalAlignment<span class="type-signature type string">string</span>
-{:#members:verticalalignment}
+### VerticalAlignment
+{:#enum:verticalalignment}
 
 
 
@@ -16747,8 +16508,8 @@ Enum for Vertical Alignment of elements in diagram
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16765,25 +16526,25 @@ Enum for Vertical Alignment of elements in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Top{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Top</td>
+<td class="type">string</td>
 <td class="default">top</td>
-<td class="description last">Used to align text Vertically on left side of node/connector</td>
+<td class="description">Used to align text Vertically on left side of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Used to align text Vertically on center of node/connector</td>
+<td class="description">Used to align text Vertically on center of node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Bottom{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description last">Used to align text Vertically on bottom of node/connector</td>
+<td class="description">Used to align text Vertically on bottom of node/connector</td>
 </tr>
 </tbody>
 </table>
@@ -16802,8 +16563,8 @@ Bottom{% endhighlight %}</td>
 
 
 
-### VerticalTextAlignment<span class="type-signature type string">string</span>
-{:#members:verticaltextalignment}
+### VerticalTextAlignment
+{:#enum:verticaltextalignment}
 
 
 
@@ -16819,8 +16580,8 @@ Enum for Vertical Alignment of text in Chart
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16837,25 +16598,25 @@ Enum for Vertical Alignment of text in Chart
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Near{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Near</td>
+<td class="type">string</td>
 <td class="default">near</td>
-<td class="description last">Sets vertical alignment of text to near</td>
+<td class="description">Sets vertical alignment of text to near</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Center{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Center</td>
+<td class="type">string</td>
 <td class="default">center</td>
-<td class="description last">Sets vertical alignment of text to center</td>
+<td class="description">Sets vertical alignment of text to center</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Far{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Far</td>
+<td class="type">string</td>
 <td class="default">far</td>
-<td class="description last">Sets vertical alignment of text to far</td>
+<td class="description">Sets vertical alignment of text to far</td>
 </tr>
 </tbody>
 </table>
@@ -16874,8 +16635,8 @@ Far{% endhighlight %}</td>
 
 
 
-### ZIndex<span class="type-signature type string">string</span>
-{:#members:zindex}
+### ZIndex
+{:#enum:zindex}
 
 
 
@@ -16891,8 +16652,8 @@ Enum for zIndex.
 
 
 
-#### Properties:
-{:#members:properties:}
+#### Properties
+
 
 
 
@@ -16909,18 +16670,18 @@ Enum for zIndex.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Over{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Over</td>
+<td class="type">string</td>
 <td class="default">over</td>
-<td class="description last">Support for changing the zIndex to over.</td>
+<td class="description">Support for changing the zIndex to over.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Behind{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+Behind</td>
+<td class="type">string</td>
 <td class="default">behind</td>
-<td class="description last">Support for changing the zIndex to behind.</td>
+<td class="description">Support for changing the zIndex to behind.</td>
 </tr>
 </tbody>
 </table>
@@ -16946,7 +16707,7 @@ Behind{% endhighlight %}</td>
 
 
 
-### clearShapeSelection<span class="signature">()</span>
+### clearShapeSelection
 {:#methods:clearshapeselection}
 
 
@@ -16968,7 +16729,7 @@ Clear Selected Map Shapes
 
 
 
-### refreshMarkers<span class="signature">()</span>
+### refreshMarkers
 {:#methods:refreshmarkers}
 
 

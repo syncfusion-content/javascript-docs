@@ -63,8 +63,8 @@
   <li>
       Backward Compatibility
      <ul>
-        <!--<li><a href="/js/backward-compatibility/version-12.2-Changes">Version 12.2 Changes</a></li>-->
-        <li><a href="/js/backward-compatibility/version-13.3-changes">Version 13.3 Changes</a></li>
+        <!--<li><a href="/js/backward-compatibility/version-12-2-Changes">Version 12.2 Changes</a></li>-->
+        <li><a href="/js/backward-compatibility/version-13-3-changes">Version 13.3 Changes</a></li>
      </ul>
   </li>
   <li>
@@ -1511,8 +1511,8 @@
                 <li>
                     <a href="/js/api/ejdiagram#methods">Methods</a>
                     <ul>
-                        <li id="toc-methods:activatetool"><a href="/js/api/ejdiagram#methods:activatetool">activateTool</a></li>
                         <li id="toc-methods:add"><a href="/js/api/ejdiagram#methods:add">add</a></li>
+                        <li id="toc-methods:addlabel"><a href="/js/api/ejdiagram#methods:addlabel">addLabel</a></li>
                         <li id="toc-methods:addphase"><a href="/js/api/ejdiagram#methods:addphase">addPhase</a></li>
                         <li id="toc-methods:addports"><a href="/js/api/ejdiagram#methods:addports">addPorts</a></li>
                         <li id="toc-methods:addselection"><a href="/js/api/ejdiagram#methods:addselection">addSelection</a></li>
@@ -1521,12 +1521,14 @@
                         <li id="toc-methods:bringtocenter"><a href="/js/api/ejdiagram#methods:bringtocenter">bringToCenter</a></li>
                         <li id="toc-methods:bringtofront"><a href="/js/api/ejdiagram#methods:bringtofront">bringToFront</a></li>
                         <li id="toc-methods:clear"><a href="/js/api/ejdiagram#methods:clear">clear</a></li>
+                         <li id="toc-methods:clearselection"><a href="/js/api/ejdiagram#methods:clearselection">clearSelection</a></li>
                         <li id="toc-methods:copy"><a href="/js/api/ejdiagram#methods:copy">copy</a></li>
                         <li id="toc-methods:cut"><a href="/js/api/ejdiagram#methods:cut">cut</a></li>
-                        <li id="toc-methods:deactivatetool"><a href="/js/api/ejdiagram#methods:deactivatetool">deactivateTool</a></li>
                         <li id="toc-methods:exportdiagram"><a href="/js/api/ejdiagram#methods:exportdiagram">exportDiagram</a></li>
+                        <li id="toc-methods:findnode"><a href="/js/api/ejdiagram#methods:findnode">findNode</a></li>
                         <li id="toc-methods:fittopage"><a href="/js/api/ejdiagram#methods:fittopage">fitToPage</a></li>
                         <li id="toc-methods:group"><a href="/js/api/ejdiagram#methods:group">group</a></li>
+                        <li id="toc-methods:insertlabel"><a href="/js/api/ejdiagram#methods:inserlabel">insertLabel</a></li>
                         <li id="toc-methods:layout"><a href="/js/api/ejdiagram#methods:layout">layout</a></li>
                         <li id="toc-methods:load"><a href="/js/api/ejdiagram#methods:load">load</a></li>
                         <li id="toc-methods:moveforward"><a href="/js/api/ejdiagram#methods:moveforward">moveForward</a></li>
@@ -1534,7 +1536,9 @@
                         <li id="toc-methods:paste"><a href="/js/api/ejdiagram#methods:paste">paste</a></li>
                         <li id="toc-methods:print"><a href="/js/api/ejdiagram#methods:print">print</a></li>
                         <li id="toc-methods:redo"><a href="/js/api/ejdiagram#methods:redo">redo</a></li>
+                        <li id="toc-methods:refresh"><a href="/js/api/ejdiagram#methods:refresh">refresh</a></li>
                         <li id="toc-methods:remove"><a href="/js/api/ejdiagram#methods:remove">remove</a></li>
+                        <li id="toc-methods:removeselection"><a href="/js/api/ejdiagram#methods:removeselection">removeSelection</a></li>
                         <li id="toc-methods:sameheight"><a href="/js/api/ejdiagram#methods:sameheight">sameHeight</a></li>
                         <li id="toc-methods:samesize"><a href="/js/api/ejdiagram#methods:samesize">sameSize</a></li>
                         <li id="toc-methods:samewidth"><a href="/js/api/ejdiagram#methods:samewidth">sameWidth</a></li>
@@ -1552,6 +1556,7 @@
                         <li id="toc-methods:updateconnector"><a href="/js/api/ejdiagram#methods:updateconnector">updateConnector</a></li>
                         <li id="toc-methods:updatelabel"><a href="/js/api/ejdiagram#methods:updatelabel">updateLabel</a></li>
                         <li id="toc-methods:updatenode"><a href="/js/api/ejdiagram#methods:updatenode">updateNode</a></li>
+                        <li id="toc-methods:updateport"><a href="/js/api/ejdiagram#methods:updateport">updatePort</a></li>
                         <li id="toc-methods:updateselectedobject"><a href="/js/api/ejdiagram#methods:updateselectedobject">updateSelectedObject</a></li>
                         <li id="toc-methods:updateselection"><a href="/js/api/ejdiagram#methods:updateselection">updateSelection</a></li>
                         <li id="toc-methods:updateuserhandles"><a href="/js/api/ejdiagram#methods:updateuserhandles">updateUserHandles</a></li>
@@ -1573,15 +1578,20 @@
                         <li id="toc-events:contextmenuclick"><a href="/js/api/ejdiagram#events:contextmenuclick">contextMenuClick</a></li>
                         <li id="toc-events:doubleclick"><a href="/js/api/ejdiagram#events:doubleclick">doubleClick</a></li>
                         <li id="toc-events:drag"><a href="/js/api/ejdiagram#events:drag">drag</a></li>
+                        <li id="toc-events:dragover"><a href="/js/api/ejdiagram#events:dragover">dragOver</a></li>
                         <li id="toc-events:drop"><a href="/js/api/ejdiagram#events:drop">drop</a></li>
+                        <li id="toc-events:groupchange"><a href="/js/api/ejdiagram#events:groupchange">groupChange</a></li>
                         <li id="toc-events:itemclick"><a href="/js/api/ejdiagram#events:itemclick">itemClick</a></li>
                         <li id="toc-events:mouseenter"><a href="/js/api/ejdiagram#events:mouseenter">mouseEnter</a></li>
                         <li id="toc-events:mouseleave"><a href="/js/api/ejdiagram#events:mouseleave">mouseLeave</a></li>
                         <li id="toc-events:mouseover"><a href="/js/api/ejdiagram#events:mouseover">mouseOver</a></li>
                         <li id="toc-events:nodecollectionchange"><a href="/js/api/ejdiagram#events:nodecollectionchange">nodeCollectionChange</a></li>
                         <li id="toc-events:nodesizechange"><a href="/js/api/ejdiagram#events:nodesizechange">nodeSizeChange</a></li>
+                        <li id="toc-events:propertychange"><a href="/js/api/ejdiagram#events:propertychange">propertyChange</a></li>
                         <li id="toc-events:rotationchange"><a href="/js/api/ejdiagram#events:rotationchange">rotationChange</a></li>
-                        <li id="toc-events:selectionchanged"><a href="/js/api/ejdiagram#events:selectionchanged">selectionChanged</a></li>
+                         <li id="toc-events:scrollchange"><a href="/js/api/ejdiagram#events:scrollchange">scrollChange</a></li>
+                        <li id="toc-events:segmentchange"><a href="/js/api/ejdiagram#events:segmentchange">segmentChange</a></li>
+                        <li id="toc-events:selectionchange"><a href="/js/api/ejdiagram#events:selectionchange">selectionChange</a></li>
                         <li id="toc-events:textchanged"><a href="/js/api/ejdiagram#events:textchanged">textchanged</a></li>
                     </ul>
                 </li>
@@ -2836,10 +2846,10 @@
       <ul><li><a href="/js/digitalgauge/overview">Overview</a></li><li><a href="/js/digitalgauge/getting-started">Getting Started</a></li><li><a href="/js/digitalgauge/basic-settings">Basic Settings</a></li><li><a href="/js/digitalgauge/frames">Frames</a></li><li><a href="/js/digitalgauge/digital-elements">Digital Elements</a></li><li><a href="/js/digitalgauge/segment-settings">Segment Settings</a></li><li><a href="/js/digitalgauge/character-settings">Character Settings</a></li><li><a href="/js/digitalgauge/multiple-items">Multiple Items</a></li><li><a href="/js/digitalgauge/exporting-the-digital-gauge">Exporting the Digital Gauge</a></li><li><a href="/js/digitalgauge/mvvm">MVVM</a></li></ul></li>
   <li>
       DropDownList
-      <ul><li><a href="/js/dropdownlist/overview">Overview</a></li><li><a href="/js/dropdownlist/getting-started">Getting Started</a></li><li><a href="/js/dropdownlist/data-binding">Data binding</a></li><li><a href="/js/dropdownlist/behaviour-settings">Behavior Settings</a></li><li><a href="/js/dropdownlist/search-options">Search Options</a></li><li><a href="/js/dropdownlist/checkbox-support">Checkbox Support</a></li><li><a href="/js/dropdownlist/multiselection-modes">MultiSelection modes</a></li><li><a href="/js/dropdownlist/appearance-and-styling">Appearance and Styling</a></li><li><a href="/js/dropdownlist/cascading-support">Cascading Support</a></li><li><a href="/js/dropdownlist/grouping-support">Grouping Support</a></li><li><a href="/js/dropdownlist/template-support">Template Support</a></li><li><a href="/js/dropdownlist/rtl">RTL</a></li><li><a href="/js/dropdownlist/keyboard-interaction">Keyboard Interaction</a></li></ul></li>
+       <ul><li><a href="/js/dropdownlist/DropDownList">Overview</a></li><li><a href="/js/dropdownlist/Getting-Started">Getting Started</a></li><li><a href="/js/dropdownlist/Rendering-Mode">Rendering Mode</a></li><li><a href="/js/dropdownlist/DataBinding">DataBinding</a></li><li><a href="/js/dropdownlist/Checkbox">Checkbox</a></li><li><a href="/js/dropdownlist/Functionalities">Functionalities</a></li><li><a href="/js/dropdownlist/TemplateSupport">Template Support</a></li><li><a href="/js/dropdownlist/Customization">Customization</a></li><li><a href="/js/dropdownlist/SettingDimension">Setting Dimension</a></li><li><a href="/js/dropdownlist/StatePersistance">State Persistance</a></li><li><a href="/js/dropdownlist/Accessibility">Accessibility</a></li><li><a href="/js/dropdownlist/HowTo">HowTo</a></li></ul></li>
   <li>
       FileExplorer
-      <ul><li><a href="/js/fileexplorer/overview">Overview</a></li><li><a href="/js/fileexplorer/getting-started">Getting Started</a></li><li><a href="/js/fileexplorer/toolbar-support">Toolbar Support</a></li><li><a href="/js/fileexplorer/customization-layout">Customization layout</a></li><li><a href="/js/fileexplorer/file-management-options">File management options</a></li><li><a href="/js/fileexplorer/disable-or-enabling-toolbar-tool">Disable or Enabling toolbar tool</a></li></ul></li>
+      <ul><li><a href="/js/fileexplorer/overview">Overview</a></li><li><a href="/js/fileexplorer/getting-started">Getting Started</a></li><li><a href="/js/fileexplorer/behavior-settings">Behavior Settings</a></li><li><a href="/js/fileexplorer/user-interface">User Interface</a></li><li><a href="/js/fileexplorer/file-actions">File Actions</a></li><li><a href="/js/fileexplorer/toolbar">Toolbar</a></li><li><a href="/js/fileexplorer/context-menu">Context Menu</a></li><li><a href="/js/fileexplorer/customization">Customization</a></li><li><a href="/js/fileexplorer/multiple-selection">Multiple Selection</a></li><li><a href="/js/fileexplorer/resizing">Resizing</a></li><li><a href="/js/fileexplorer/localization">Localization</a></li><li><a href="/js/fileexplorer/keyboard-navigation">Keyboard Navigation</a></li></ul></li>
   <li>
       Gantt
       <ul><li><a href="/js/gantt/overview">Overview</a></li><li><a href="/js/gantt/getting-started">Getting Started</a></li><li><a href="/js/gantt/time-options">Time Options</a></li><li><a href="/js/gantt/data-binding">Data Binding</a></li><li><a href="/js/gantt/columns">Columns</a></li><li><a href="/js/gantt/editing">Editing</a></li><li><a href="/js/gantt/sorting">Sorting</a></li><li><a href="/js/gantt/schedule-modes">Schedule Modes</a></li><li><a href="/js/gantt/toolbar">Toolbar</a></li><li><a href="/js/gantt/baseline">Baseline</a></li><li><a href="/js/gantt/task-relationship">Task Relationship</a></li><li><a href="/js/gantt/resources">Resources</a></li><li><a href="/js/gantt/stripline">Stripline</a></li><li><a href="/js/gantt/holidays">Holidays</a></li><li><a href="/js/gantt/appearance-and-styling">Appearance and Styling</a></li><li><a href="/js/gantt/context-menu">Context Menu</a></li><li><a href="/js/gantt/validating-schedule-dates">Validating Schedule Dates</a></li><li><a href="/js/gantt/localization">Localization</a></li><li>
@@ -2872,7 +2882,7 @@
         <li><a href="/js/grid/globalizationandlocalization">Globalization and Localization</a></li>
          <li><a href="/js/grid/style-and-appearance">Styling</a></li>
         <li><a href="/js/grid/accessibility">Web Accessibility</a></li>
-		<li><a href="/js/grid/how_to">How to</a></li></ul></li>
+		<li><a href="/js/grid/how-to">How to</a></li></ul></li>
   <li>
       LinearGauge
       <ul><li><a href="/js/lineargauge/overview">Overview</a></li><li><a href="/js/lineargauge/getting-started">Getting Started</a></li><li><a href="/js/lineargauge/basic-settings">Basic Settings</a></li><li><a href="/js/lineargauge/interaction-and-animation">Interaction and Animation</a></li><li><a href="/js/lineargauge/scales">Scales</a></li><li><a href="/js/lineargauge/marker-pointers">Marker Pointers</a></li><li><a href="/js/lineargauge/bar-pointers">Bar Pointers</a></li><li><a href="/js/lineargauge/labels">Labels</a></li><li><a href="/js/lineargauge/ticks">Ticks</a></li><li><a href="/js/lineargauge/ranges">Ranges</a></li><li><a href="/js/lineargauge/custom-labels">Custom labels</a></li><li><a href="/js/lineargauge/indicators">Indicators</a></li><li><a href="/js/lineargauge/exporting">Exporting</a></li><li><a href="/js/lineargauge/mvvm">MVVM</a></li></ul></li>
@@ -2902,16 +2912,16 @@
       <ul><li><a href="/js/olapchart/overview">Overview</a></li><li><a href="/js/olapchart/getting-started">Getting Started</a></li><li><a href="/js/olapchart/data-binding">Data Binding</a></li><li><a href="/js/olapchart/Dimensions">Dimensions</a></li><li><a href="/js/olapchart/Chart-Types">Types</a></li><li><a href="/js/olapchart/Drill-Operation">Drill Operation</a></li><li><a href="/js/olapchart/Axes">Axes</a></li><li><a href="/js/olapchart/Series">Series</a></li><li><a href="/js/olapchart/Legend">Legend</a></li><li><a href="/js/olapchart/Title">Title</a></li><li><a href="/js/olapchart/User-Interactions">User Interactions</a></li><li><a href="/js/olapchart/Appearance">Appearance</a></li><li><a href="/js/olapchart/Export">Export</a></li><li><a href="/js/olapchart/3D-Visualization">3D Visualization</a></li><li><a href="/js/olapchart/Localization">Localization</a></li><li><a href="/js/olapchart/Angular-Binding">Angular Binding</a></li><li><a href="/js/olapchart/Knockout-Binding">Knockout Binding</a></li></ul></li>
   <li>
       OlapClient
-      <ul><li><a href="/js/olapclient/overview">Overview</a></li><li><a href="/js/olapclient/getting-started">Getting Started</a></li><li><a href="/js/olapclient/olap-client-elements">OLAP Client Elements</a></li><li><a href="/js/olapclient/data-binding">Data Binding</a></li><li><a href="/js/olapclient/layout-customization">Layout Customization</a></li><li><a href="/js/olapclient/data-exploration">Data Exploration</a></li><li><a href="/js/olapclient/localization">Localization</a></li><li><a href="/js/olapclient/export">Export</a></li><li><a href="/js/olapclient/defer-update">Defer Update</a></li><li><a href="/js/olapclient/toggle-axis">Toggle Axis</a></li><li><a href="/js/olapclient/measure-groups">Measure Groups</a></li><li><a href="/js/olapclient/angular-binding">Angular Binding</a></li><li><a href="/js/olapclient/knockout-binding">Knockout Binding</a></li><li><a href="/js/olapclient/responsive-layout">Responsive Layout</a></li></ul></li>
+      <ul><li><a href="/js/olapclient/overview">Overview</a></li><li><a href="/js/olapclient/getting-started">Getting Started</a></li><li><a href="/js/olapclient/data-binding">Data Binding</a></li><li><a href="/js/olapclient/olap-client-elements">OLAP Client Elements</a></li><li><a href="/js/olapclient/data-exploration">Data Exploration</a></li><li><a href="/js/olapclient/layout-customization">Layout Customization</a></li><li><a href="/js/olapclient/measure-groups">Measure Groups</a></li><li><a href="/js/olapclient/defer-update">Defer Update</a></li><li><a href="/js/olapclient/toggle-axis">Toggle Axis</a></li><li><a href="/js/olapclient/exporting">Exporting</a></li><li><a href="/js/olapclient/localization">Localization</a></li><li><a href="/js/olapclient/responsive-layout">Responsive Layout</a></li><li><a href="/js/olapclient/angular-binding">Angular Binding</a></li><li><a href="/js/olapclient/knockout-binding">Knockout Binding</a></li></ul></li>
   <li>
       OlapGauge
-      <ul><li><a href="/js/olapgauge/overview">Overview</a></li><li><a href="/js/olapgauge/getting-started">Getting Started</a></li><li><a href="/js/olapgauge/data-binding">Data Binding</a></li><li><a href="/js/olapgauge/layout">Layout</a></li><li><a href="/js/olapgauge/frame-type">Frame Type</a></li><li><a href="/js/olapgauge/scales-and-pointers">Scales and Pointers</a></li><li><a href="/js/olapgauge/ranges">Ranges</a></li><li><a href="/js/olapgauge/custom-label">Custom Label</a></li><li><a href="/js/olapgauge/tooltip">Tooltip</a></li><li><a href="/js/olapgauge/localization">Localization</a></li><li><a href="/js/olapgauge/angular-binding">Angular Binding</a></li><li><a href="/js/olapgauge/knockout-binding">Knockout Binding</a></li><li><a href="/js/olapgauge/responsive-layout">Responsive Layout</a></li></ul></li>
+      <ul><li><a href="/js/olapgauge/overview">Overview</a></li><li><a href="/js/olapgauge/getting-started">Getting Started</a></li><li><a href="/js/olapgauge/data-binding">Data Binding</a></li><li><a href="/js/olapgauge/layout">Layout</a></li><li><a href="/js/olapgauge/animation">Animation</a></li><li><a href="/js/olapgauge/scale">Scale</a></li><li><a href="/js/olapgauge/frame-type">Frame Type</a></li><li><a href="/js/olapgauge/pointers">Pointers</a></li><li><a href="/js/olapgauge/labels">Labels</a></li><li><a href="/js/olapgauge/ticks">Ticks</a></li><li><a href="/js/olapgauge/ranges">Ranges</a></li><li><a href="/js/olapgauge/custom-labels">Custom labels</a></li><li><a href="/js/olapgauge/tooltip">Tooltip</a></li><li><a href="/js/olapgauge/localization">Localization</a></li><li><a href="/js/olapgauge/responsive-layout">Responsive Layout</a></li><li><a href="/js/olapgauge/angular-binding">Angular Binding</a></li><li><a href="/js/olapgauge/knockout-binding">Knockout Binding</a></li></ul></li>
   <li>
       PercentageTextBox
       <ul><li><a href="/js/percentagetextbox/overview">Overview</a></li><li><a href="/js/percentagetextbox/getting-started">Getting Started</a></li><li><a href="/js/percentagetextbox/behavior-settings">Behavior Settings</a></li><li><a href="/js/percentagetextbox/globalization-support">Globalization Support</a></li><li><a href="/js/percentagetextbox/knockout-support">Knockout Support</a></li><li><a href="/js/percentagetextbox/angular-support">Angular Support</a></li><li><a href="/js/percentagetextbox/rtl-support">RTL Support</a></li><li><a href="/js/percentagetextbox/keyboard-interaction">Keyboard Interaction</a></li></ul></li>
   <li>
       PivotGrid
-      <ul><li><a href="/js/pivotgrid/overview">Overview</a></li><li><a href="/js/pivotgrid/getting-started">Getting Started</a></li><li><a href="/js/pivotgrid/olap-connectivity">OLAP Connectivity</a></li><li><a href="/js/pivotgrid/key-performance-indicator-kpi">Key Performance Indicator KPI</a></li><li><a href="/js/pivotgrid/grid-layout">Grid Layout</a></li><li><a href="/js/pivotgrid/grouping-bar">Grouping Bar</a></li><li><a href="/js/pivotgrid/hyperlink">Hyperlink</a></li><li><a href="/js/pivotgrid/context-menu">Context Menu</a></li><li><a href="/js/pivotgrid/paging">Paging</a></li><li><a href="/js/pivotgrid/cell-selection">Cell Selection</a></li><li><a href="/js/pivotgrid/conditional-formatting">Conditional Formatting</a></li><li><a href="/js/pivotgrid/appearance--styling">Appearance  Styling</a></li><li><a href="/js/pivotgrid/localization">Localization</a></li><li><a href="/js/pivotgrid/export">Export</a></li><li><a href="/js/pivotgrid/defer-update">Defer Update</a></li><li><a href="/js/pivotgrid/angular-binding">Angular Binding</a></li><li><a href="/js/pivotgrid/knockout-binding">Knockout Binding</a></li><li><a href="/js/pivotgrid/field-list">Field List</a></li><li><a href="/js/pivotgrid/responsive-layout">Responsive Layout</a></li></ul></li>
+      <ul><li><a href="/js/pivotgrid/overview">Overview</a></li><li><a href="/js/pivotgrid/getting-started">Getting Started</a></li><li><a href="/js/pivotgrid/olap-connectivity">OLAP Connectivity</a></li><li><a href="/js/pivotgrid/kpi">KPI</a></li><li><a href="/js/pivotgrid/grid-layout">Grid Layout</a></li><li><a href="/js/pivotgrid/pivotTable-field-list">PivotTable Field List</a></li><li><a href="/js/pivotgrid/defer-update">Defer Update</a></li><li><a href="/js/pivotgrid/grouping-bar">Grouping Bar</a></li><li><a href="/js/pivotgrid/paging">Paging</a></li><li><a href="/js/pivotgrid/pivotGrid-elements">PivotGrid Elements</a></li><li><a href="/js/pivotgrid/export">Exporting</a></li><li><a href="/js/pivotgrid/localization-and-globalization">Localization and Globalization</a></li><li><a href="/js/pivotgrid/styling">Styling</a></li><li><a href="/js/pivotgrid/responsive">Responsive</a></li><li><a href="/js/pivotgrid/angular-binding">Angular Binding</a></li><li><a href="/js/pivotgrid/knockout-binding">Knockout Binding</a></li></ul></li>
   <li>
       ProgressBar
       <ul><li><a href="/js/progressbar/overview">Overview</a></li><li><a href="/js/progressbar/getting-started">Getting Started</a></li><li><a href="/js/progressbar/define-value">Define value</a></li><li><a href="/js/progressbar/setting-range">Setting Range</a></li><li><a href="/js/progressbar/appearance-and-styling">Appearance and Styling</a></li><li><a href="/js/progressbar/enabling-the-progressbar">Enabling the ProgressBar</a></li><li><a href="/js/progressbar/state-maintenance">State Maintenance</a></li><li><a href="/js/progressbar/rtl-support">RTL Support</a></li></ul></li>

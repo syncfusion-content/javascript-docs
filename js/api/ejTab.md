@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejTab
+description: API reference for ejTab
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Tab, ejTab, syncfusion, Tab api 
 ---
 
 # ejTab
@@ -16,16 +16,22 @@ The Tab control is an interface where list of items are expanded from a single i
 
 
 
+#### Syntax
 
-$(element).ejTab<span class="signature">()</span>
+{% highlight js %}
+
+$(element).ejTab()
+
+{% endhighlight %}
 
 
 
 
 
 
-Example
-{:.example}
+
+#### Example
+
 
 
 {% highlight html %}
@@ -53,8 +59,8 @@ $("#tab").ejTab({width:"300px"});
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 * module:jQuery
@@ -71,7 +77,7 @@ Requires
 
 
 
-### ajaxSettings<span class="type-signature type object">object</span>
+### ajaxSettings `object`
 {:#members:ajaxsettings}
 
 
@@ -80,8 +86,8 @@ Requires
 Specifies the ajaxSettings option to load the content to the Tab control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -90,8 +96,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -114,7 +120,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### ajaxSettings.async<span class="type-signature type boolean">Boolean</span>
+### ajaxSettings.async `boolean`
 {:#members:ajaxsettings-async}
 
 
@@ -127,7 +133,7 @@ It specifies, whether to enable or disable asynchronous request.
 
 
 
-### ajaxSettings.cache<span class="type-signature type boolean">Boolean</span>
+### ajaxSettings.cache `boolean`
 {:#members:ajaxsettings-cache}
 
 
@@ -140,7 +146,7 @@ It specifies the page will be cached in the web browser.
 
 
 
-### ajaxSettings.contentType<span class="type-signature type string">String</span>
+### ajaxSettings.contentType `string`
 {:#members:ajaxsettings-contenttype}
 
 
@@ -153,7 +159,7 @@ It specifies the type of data is send in the query string.
 
 
 
-### ajaxSettings.data<span class="type-signature type object">Object</span>
+### ajaxSettings.data `object`
 {:#members:ajaxsettings-data}
 
 
@@ -166,7 +172,7 @@ It specifies the data as an object, will be passed in the query string.
 
 
 
-### ajaxSettings.dataType<span class="type-signature type string">String</span>
+### ajaxSettings.dataType `string`
 {:#members:ajaxsettings-datatype}
 
 
@@ -179,7 +185,7 @@ It specifies the type of data that you're expecting back from the response.
 
 
 
-### ajaxSettings.type<span class="type-signature type string">String</span>
+### ajaxSettings.type `string`
 {:#members:ajaxsettings-type}
 
 
@@ -192,7 +198,7 @@ It specifies the HTTP request type.
 
 
 
-### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 
@@ -201,8 +207,8 @@ It specifies the HTTP request type.
 Tab items interaction with keyboard keys, like headers active navigation.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -211,8 +217,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -239,7 +245,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### collapsible<span class="type-signature type boolean">boolean</span>
+### collapsible `boolean`
 {:#members:collapsible}
 
 
@@ -248,8 +254,8 @@ It was originally implemented as part of web browsers so that client-side script
 Allow to collapsing the active item, while click on the active header.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -258,8 +264,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -286,7 +292,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -295,8 +301,8 @@ It was originally implemented as part of web browsers so that client-side script
 Set the root class for Tab theme. This cssClass API helps to use custom skinning option for Tab control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -305,8 +311,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -333,7 +339,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### disabledItemIndex<span class="type-signature type integerarray">IntegerArray</span>
+### disabledItemIndex `integerarray`
 {:#members:disableditemindex}
 
 
@@ -342,8 +348,8 @@ It was originally implemented as part of web browsers so that client-side script
 Disables the given tab headers and content panels.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -352,8 +358,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -380,7 +386,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -389,8 +395,8 @@ It was originally implemented as part of web browsers so that client-side script
 Specifies the animation behavior of the tab.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -399,8 +405,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -427,7 +433,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -436,8 +442,8 @@ It was originally implemented as part of web browsers so that client-side script
 When this property is set to false, it disables the tab control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -446,8 +452,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -474,7 +480,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enabledItemIndex<span class="type-signature type integerarray">IntegerArray</span>
+### enabledItemIndex `integerarray`
 {:#members:enableditemindex}
 
 
@@ -483,8 +489,8 @@ It was originally implemented as part of web browsers so that client-side script
 Enables the given tab headers and content panels.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -493,8 +499,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -522,7 +528,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -531,8 +537,8 @@ It was originally implemented as part of web browsers so that client-side script
 Save current model value to browser cookies for state maintains. While refresh the Tab control page the model value apply from browser cookies.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -541,8 +547,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -569,7 +575,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -578,8 +584,8 @@ It was originally implemented as part of web browsers so that client-side script
 Display Right to Left direction for headers and panels text.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -588,8 +594,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -616,7 +622,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### enableTabScroll<span class="type-signature type boolean">boolean</span>
+### enableTabScroll `boolean`
 {:#members:enabletabscroll}
 
 
@@ -625,8 +631,8 @@ It was originally implemented as part of web browsers so that client-side script
 Specify to enable scrolling for Tab header.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -635,8 +641,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -663,7 +669,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### events<span class="type-signature type string">string</span>
+### events `string`
 {:#members:events}
 
 
@@ -672,8 +678,8 @@ It was originally implemented as part of web browsers so that client-side script
 The event API to bind the action for active the tab items.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -682,8 +688,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -710,7 +716,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### headerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### headerPosition `string`  `enum`
 {:#members:headerposition}
 
 
@@ -719,8 +725,8 @@ It was originally implemented as part of web browsers so that client-side script
 Tab header display top,bottom,left or right .See <a href="global.html#Position">Position</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -729,8 +735,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -757,7 +763,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### headerSize<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### headerSize `string`  `number`
 {:#members:headersize}
 
 
@@ -766,8 +772,8 @@ It was originally implemented as part of web browsers so that client-side script
 Set the height of the tab header element. Default this property value is null, so height take content height.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -776,8 +782,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -804,7 +810,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -813,8 +819,8 @@ It was originally implemented as part of web browsers so that client-side script
 Height set the outer panel element. Default this property value is null, so height take content height.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -823,8 +829,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -851,7 +857,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### heightAdjustMode<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### heightAdjustMode `string`  `enum`
 {:#members:heightadjustmode}
 
 
@@ -860,8 +866,8 @@ It was originally implemented as part of web browsers so that client-side script
 Adjust the content panel height for given option (content, auto and fill), by default panels height adjust based on the content.See <a href="global.html#HeightAdjustMode">HeightAdjustMode</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -870,8 +876,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -898,7 +904,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### idPrefix<span class="type-signature type string">string</span>
+### idPrefix `string`
 {:#members:idprefix}
 
 
@@ -907,8 +913,8 @@ It was originally implemented as part of web browsers so that client-side script
 The idPrefix property appends the give string on runtime added tab item id&rsquo;s.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -917,8 +923,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -945,7 +951,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex `number`
 {:#members:selecteditemindex}
 
 
@@ -954,8 +960,8 @@ It was originally implemented as part of web browsers so that client-side script
 Tab header to active for given index value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -964,8 +970,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -992,7 +998,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### showCloseButton<span class="type-signature type boolean">boolean</span>
+### showCloseButton `boolean`
 {:#members:showclosebutton}
 
 
@@ -1001,8 +1007,8 @@ It was originally implemented as part of web browsers so that client-side script
 Display the close button for each tab items. While click on the close icon particular tab item removed.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1011,8 +1017,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1039,7 +1045,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### showReloadIcon<span class="type-signature type boolean">boolean</span>
+### showReloadIcon `boolean`
 {:#members:showreloadicon}
 
 
@@ -1048,8 +1054,8 @@ It was originally implemented as part of web browsers so that client-side script
 Display the Reload button for each tab items.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1058,8 +1064,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1086,7 +1092,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -1095,8 +1101,8 @@ It was originally implemented as part of web browsers so that client-side script
 Tab panels and headers to display the rounded corner style.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1105,8 +1111,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1133,7 +1139,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### width `string`  `number`
 {:#members:width}
 
 
@@ -1142,8 +1148,8 @@ It was originally implemented as part of web browsers so that client-side script
 Set the width for outer panel element, if not it&rsquo;s take parent width.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1152,8 +1158,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1184,7 +1190,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### addItem<span class="signature">(url, displayLabel, index)</span>
+### addItem(url, displayLabel, index)</span>
 {:#methods:additem}
 
 
@@ -1197,7 +1203,7 @@ Add new tab items with given name, url and given index position, if index null i
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1205,26 +1211,26 @@ Add new tab items with given name, url and given index position, if index null i
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">URL name / tab id.</td>
+<td class="description">URL name / tab id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 displayLabel{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Tab Display name.</td>
+<td class="description">Tab Display name.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index position to placed , this is optional.</td>
+<td class="description">Index position to placed , this is optional.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1280,7 +1286,7 @@ $("#tab").ejTab("addItem","#new","New Item",3);
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1290,8 +1296,8 @@ To disable the tab control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1343,7 +1349,7 @@ $("#tab").ejTab("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1353,8 +1359,8 @@ To enable the tab control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1406,7 +1412,7 @@ $("#tab").ejTab("enable");
 
 
 
-### getItemsCount<span class="signature">()</span>
+### getItemsCount()
 {:#methods:getitemscount}
 
 
@@ -1416,8 +1422,8 @@ This function get the number of tab rendered
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1469,7 +1475,7 @@ $("#tab").ejTab("getItemsCount");
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -1479,8 +1485,8 @@ This function hides the tab control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1532,7 +1538,7 @@ $("#tab").ejTab("hide");
 
 
 
-### removeItem<span class="signature">(index)</span>
+### removeItem(index)</span>
 {:#methods:removeitem}
 
 
@@ -1545,7 +1551,7 @@ Remove the given index tab item.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1553,14 +1559,14 @@ Remove the given index tab item.
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of tab item.</td>
+<td class="description">index of tab item.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1612,7 +1618,7 @@ $("#tab").ejTab("removeItem",1);
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -1622,8 +1628,8 @@ This function is to show the tab control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1692,7 +1698,7 @@ Triggered after a tab item activated.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1700,13 +1706,13 @@ Triggered after a tab item activated.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1714,43 +1720,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -1760,8 +1766,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1803,7 +1809,7 @@ Triggered before ajax content load action.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1811,13 +1817,13 @@ Triggered before ajax content load action.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1825,43 +1831,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -1871,8 +1877,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1914,7 +1920,7 @@ Triggered after a tab item activated.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1922,13 +1928,13 @@ Triggered after a tab item activated.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1936,43 +1942,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -1982,8 +1988,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2025,7 +2031,7 @@ Triggered after ajax content load action.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2033,13 +2039,13 @@ Triggered after ajax content load action.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2047,49 +2053,49 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the url</td>
+<td class="description">returns the name of the url</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -2099,8 +2105,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2142,7 +2148,7 @@ Triggered after a tab item activated.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2150,13 +2156,13 @@ Triggered after a tab item activated.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2164,43 +2170,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -2210,8 +2216,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2253,7 +2259,7 @@ Triggered before a tab item activated.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2261,13 +2267,13 @@ Triggered before a tab item activated.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2275,43 +2281,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns previous active tab header.</td>
+<td class="description">returns previous active tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns previous active index.</td>
+<td class="description">returns previous active index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns current active tab header .</td>
+<td class="description">returns current active tab header .</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current active index.</td>
+<td class="description">returns current active index.</td>
 </tr>
 </tbody>
 </table>
@@ -2321,8 +2327,8 @@ activeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2364,7 +2370,7 @@ Triggered before a tab item remove.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2372,13 +2378,13 @@ Triggered before a tab item remove.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button.
+<td class="description">Event parameters from button.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2386,25 +2392,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current tab item index</td>
+<td class="description">returns current tab item index</td>
 </tr>
 </tbody>
 </table>
@@ -2414,8 +2420,8 @@ index{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2457,7 +2463,7 @@ Triggered before a tab item Create.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2465,13 +2471,13 @@ Triggered before a tab item Create.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button.
+<td class="description">Event parameters from button.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2479,25 +2485,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current tab item index</td>
+<td class="description">returns current tab item index</td>
 </tr>
 </tbody>
 </table>
@@ -2507,8 +2513,8 @@ deleteIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2550,7 +2556,7 @@ Triggered before a tab item destroy.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2558,13 +2564,13 @@ Triggered before a tab item destroy.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button.
+<td class="description">Event parameters from button.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2572,25 +2578,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current tab item index</td>
+<td class="description">returns current tab item index</td>
 </tr>
 </tbody>
 </table>
@@ -2600,8 +2606,8 @@ deleteIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2643,7 +2649,7 @@ Triggered after new tab item add
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2651,13 +2657,13 @@ Triggered after new tab item add
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2665,31 +2671,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 tabHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns new added tab header.</td>
+<td class="description">returns new added tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 tabContent{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns new added tab content panel.</td>
+<td class="description">returns new added tab content panel.</td>
 </tr>
 </tbody>
 </table>
@@ -2699,8 +2705,8 @@ tabContent{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2742,7 +2748,7 @@ Triggered after tab item removed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2750,13 +2756,13 @@ Triggered after tab item removed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2764,31 +2770,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the tab model.</td>
+<td class="description">returns the tab model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 removedTab{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab header.</td>
+<td class="description">returns removed tab header.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 removedPanel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab content panel.</td>
+<td class="description">returns removed tab content panel.</td>
 </tr>
 </tbody>
 </table>
@@ -2798,8 +2804,8 @@ removedPanel{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

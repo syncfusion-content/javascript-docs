@@ -1,35 +1,24 @@
 ---
 layout: post
 title: ejColorPicker
+description: API reference for ejColorPicker
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ColorPicker, ejColorPicker, syncfusion, ColorPicker api 
+
 ---
 
 # ejColorPicker
 
-
-
-
-
-
 The ColorPicker control provides you a rich visual interface for color selection. You can select the color from the professionally designed palettes or custom color. By clicking a point on the color, you can change the active color to the color that is located under the pointer. 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejColorPicker(options)
 
-
-
-
-
-
-
-$(element).ejColorPicker<span class="signature">(options)</span>
-
-
-
-
+{% endhighlight %}
 
 
 
@@ -38,7 +27,7 @@ $(element).ejColorPicker<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -46,16 +35,13 @@ $(element).ejColorPicker<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for color picker</td>
+<td class="description">settings for color picker</td>
 </tr>
 </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -69,13 +55,7 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-
-
-
-
-Requires
-{:.require}
-
+#### Requires
 
 
 
@@ -114,26 +94,14 @@ Requires
 
 
 
-### buttonText<span class="type-signature type string">string</span>
+### buttonText `string`
 {:#members:buttontext}
-
-
-
-
-
-
 
 
 The colorpicker control allows to define the customized text to displayed in button elements. Using the property to achieve the customized culture values.
 
 
-
-
-Default Value:
-{:.param}
-
-
-
+#### Default Value
 
 
 
@@ -142,12 +110,8 @@ Default Value:
 
 
 
+#### Example
 
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -165,7 +129,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", c
 
 
 
-### columns<span class="type-signature type number">number</span>
+### columns `number`
 {:#members:columns}
 
 
@@ -180,8 +144,8 @@ Specifies the number of columns to be displayed color palette model.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -197,8 +161,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -216,7 +180,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", columns:
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -231,8 +195,8 @@ This property allows you to customize its appearance using user-defined CSS and 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -248,8 +212,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -267,7 +231,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
 
 
 
-### custom<span class="type-signature type data">data</span>
+### custom `data`
 {:#members:custom}
 
 
@@ -282,8 +246,8 @@ This property allows to define the custom colors in the palette model.Custom pal
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -299,8 +263,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -318,7 +282,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 
-### displayInline<span class="type-signature type boolean">boolean</span>
+### displayInline `boolean`
 {:#members:displayinline}
 
 
@@ -333,8 +297,8 @@ This property allows to embed the popup in the order of DOM element flow . When 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -350,8 +314,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -369,7 +333,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  displayInline: true});
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -384,8 +348,8 @@ This property allows to change the control in enabled or disabled state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -401,8 +365,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -420,7 +384,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  enabled: false});
 
 
 
-### enableOpacity<span class="type-signature type boolean">boolean</span>
+### enableOpacity `boolean`
 {:#members:enableopacity}
 
 
@@ -435,8 +399,8 @@ This property allows to enable or disable the opacity slider in the color picker
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -452,8 +416,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -471,7 +435,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
 
 
 
-### modelType<span class="type-signature type enum">enum</span>
+### modelType `enum`
 {:#members:modeltype}
 
 
@@ -486,8 +450,8 @@ Specifies the model type to be rendered initially in the colorpicker control. Th
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -503,8 +467,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -522,7 +486,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette"});
 
 
 
-### opacityValue<span class="type-signature type number">number</span>
+### opacityValue `number`
 {:#members:opacityvalue}
 
 
@@ -537,8 +501,8 @@ This property allows to change the opacity value .The selected color opacity wil
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -554,8 +518,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -573,7 +537,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
 
 
 
-### palette<span class="type-signature type enum">enum</span>
+### palette `enum`
 {:#members:palette}
 
 
@@ -588,8 +552,8 @@ Specifies the palette type to be displayed at initial time in palette model.Ther
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -605,8 +569,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -624,7 +588,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 
-### presetType<span class="type-signature type enum">enum</span>
+### presetType `enum`
 {:#members:presettype}
 
 
@@ -639,8 +603,8 @@ This property allows to define the preset model to be rendered initially in pale
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -656,8 +620,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -675,7 +639,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetTy
 
 
 
-### showPreview<span class="type-signature type boolean">boolean</span>
+### showPreview `boolean`
 {:#members:showpreview}
 
 
@@ -690,8 +654,8 @@ This property allows to provides live preview support for current cursor selecti
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -707,8 +671,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -726,7 +690,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showPreview: false});
 
 
 
-### showRecentColors<span class="type-signature type boolean">boolean</span>
+### showRecentColors `boolean`
 {:#members:showrecentcolors}
 
 
@@ -741,8 +705,8 @@ This property allows to store the color values in custom list.The colorpicker wi
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -758,8 +722,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -777,7 +741,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   showRecentColors: true});
 
 
 
-### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip `boolean`
 {:#members:showtooltip}
 
 
@@ -792,8 +756,8 @@ This property allows to shows tooltip to notify the slider value in colorpicker 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -809,8 +773,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -828,7 +792,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showTooltip: true});
 
 
 
-### toolIcon<span class="type-signature type string">string</span>
+### toolIcon `string`
 {:#members:toolicon}
 
 
@@ -843,8 +807,8 @@ Specifies the toolIcon to be disaplyed in dropdown control color area.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -860,8 +824,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -888,7 +852,7 @@ margin-left: 5px;
 
 
 
-### tooltipText<span class="type-signature type object">object</span>
+### tooltipText `object`
 {:#members:tooltiptext}
 
 
@@ -903,8 +867,8 @@ This property allows to define the customized text or content to displayed when 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -920,8 +884,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -939,7 +903,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Sw
 
 
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 
@@ -954,8 +918,8 @@ Specifies the color value for colorpicker control, the value is in hexadecimal f
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -971,8 +935,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -997,7 +961,7 @@ $('#colorPick').ejColorPicker({ value: "#278787"});
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1013,8 +977,8 @@ Disables the color picker control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1047,7 +1011,7 @@ $("#colorPick").ejColorPicker("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1063,8 +1027,8 @@ Enable the color picker control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1097,7 +1061,7 @@ $("#colorPick").ejColorPicker("enable");
 
 
 
-### getColor<span class="signature">()</span>
+### getColor()
 {:#methods:getcolor}
 
 
@@ -1113,8 +1077,8 @@ Gets the selected color in RGB format
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1149,7 +1113,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -1165,8 +1129,8 @@ Gets the selected color value as string
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1199,7 +1163,7 @@ alert($("#colorPick").ejColorPicker("getValue"));
 
 
 
-### hexCodeToRGB<span class="signature">()</span>
+### hexCodeToRGB()
 {:#methods:hexcodetorgb}
 
 
@@ -1215,8 +1179,8 @@ To Convert color value from hexCode to RGB
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1251,7 +1215,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -1267,8 +1231,8 @@ Hides the colorpicker popup, if in opended state.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1301,7 +1265,7 @@ $("#colorPick").ejColorPicker("hide");
 
 
 
-### HSVToRGB<span class="signature">()</span>
+### HSVToRGB()
 {:#methods:hsvtorgb}
 
 
@@ -1317,8 +1281,8 @@ Convert color value from HSV to RGB
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1353,7 +1317,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-### RGBToHEX<span class="signature">()</span>
+### RGBToHEX()
 {:#methods:rgbtohex}
 
 
@@ -1369,8 +1333,8 @@ Convert color value from RGB to HEX
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1405,7 +1369,7 @@ alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
 
 
 
-### RGBToHSV<span class="signature">()</span>
+### RGBToHSV()
 {:#methods:rgbtohsv}
 
 
@@ -1421,8 +1385,8 @@ Convert color value from RGB to HSV
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1457,7 +1421,7 @@ alert("H="+color.r+", S="+color.g+", V="+color.b);
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -1473,8 +1437,8 @@ Open the colorpicker popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1519,11 +1483,6 @@ $("#colorPick").ejColorPicker("show");
 
 
 
-
-
-
-
-
 Fires after Color value has been changed sucessfully.If the user want to perform any operation after the color value changed then the user can make use of this change event.
 
 <table class="params">
@@ -1531,7 +1490,7 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1539,13 +1498,13 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1553,25 +1512,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the changed color value</td>
+<td class="description">return the changed color value</td>
 </tr>
 </tbody>
 </table>
@@ -1583,8 +1542,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1624,7 +1583,7 @@ Fires after closing the color picker popup.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1632,13 +1591,13 @@ Fires after closing the color picker popup.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1646,19 +1605,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1670,8 +1629,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1711,7 +1670,7 @@ Fires after Color picker control is created. If the user want to perform any ope
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1719,13 +1678,13 @@ Fires after Color picker control is created. If the user want to perform any ope
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1733,19 +1692,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1757,8 +1716,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1798,7 +1757,7 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1806,13 +1765,13 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1820,19 +1779,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1844,8 +1803,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1885,7 +1844,7 @@ Fires after opening the color picker popup
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1893,13 +1852,13 @@ Fires after opening the color picker popup
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1907,19 +1866,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1931,8 +1890,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1972,7 +1931,7 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1980,13 +1939,13 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from color picker
+<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1994,25 +1953,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the color picker model</td>
+<td class="description">returns the color picker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the selected color value</td>
+<td class="description">return the selected color value</td>
 </tr>
 </tbody>
 </table>
@@ -2024,8 +1983,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

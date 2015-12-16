@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejSlider
+description: API reference for ejSlider
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Slider, ejSlider, syncfusion, Slider api 
 ---
 
 # ejSlider
@@ -22,21 +22,27 @@ The Slider provides support to select a value from a particular range as well as
 
 
 
+#### Syntax
 
-$(element).ejSlider<span class="signature">()</span>
+{% highlight js %}
 
+$(element).ejSlider()
 
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -55,8 +61,8 @@ $('#slider').ejSlider();
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 
@@ -84,7 +90,7 @@ Requires
 
 
 
-### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed `number`
 {:#members:animationspeed}
 
 
@@ -99,8 +105,8 @@ Specifies the animationSpeed of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -116,8 +122,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -134,7 +140,7 @@ $("#slider").ejSlider({ animationSpeed: 500});
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -149,8 +155,8 @@ Specify the CSS class to slider to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -166,8 +172,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -184,7 +190,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -199,8 +205,8 @@ Specifies the animation behavior of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -216,8 +222,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -234,7 +240,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -249,8 +255,8 @@ Specifies the state of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -266,8 +272,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -283,7 +289,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -298,8 +304,8 @@ Specify the enablePersistence to slider to save current model value to browser c
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -315,8 +321,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -332,7 +338,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -347,8 +353,8 @@ Specifies the Right to Left Direction of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -364,8 +370,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -384,7 +390,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span>
+### height `string`
 {:#members:height}
 
 
@@ -399,8 +405,8 @@ Specifies the height of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -416,8 +422,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -433,7 +439,7 @@ Example
 
 
 
-### incrementStep<span class="type-signature type number">number</span>
+### incrementStep `number`
 {:#members:incrementstep}
 
 
@@ -448,8 +454,8 @@ Specifies the incremental step value of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -465,8 +471,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -484,7 +490,7 @@ Example
 
 
 
-### largeStep<span class="type-signature type number">number</span>
+### largeStep `number`
 {:#members:largestep}
 
 
@@ -499,8 +505,8 @@ Specifies the distance between two major (large) ticks from the scale of the sli
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -516,8 +522,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -535,7 +541,7 @@ Example
 
 
 
-### maxValue<span class="type-signature type number">number</span>
+### maxValue `number`
 {:#members:maxvalue}
 
 
@@ -550,8 +556,8 @@ Specifies the ending value of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -567,8 +573,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -586,7 +592,7 @@ Example
 
 
 
-### minValue<span class="type-signature type number">number</span>
+### minValue `number`
 {:#members:minvalue}
 
 
@@ -601,8 +607,8 @@ Specifies the starting value of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -618,8 +624,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -638,7 +644,7 @@ Example
 
 
 
-### orientation<span class="type-signature type enum">enum</span>
+### orientation `enum`
 {:#members:orientation}
 
 
@@ -653,8 +659,8 @@ Specifies the orientation of the slider.See orientation
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -670,8 +676,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -687,7 +693,7 @@ $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -702,8 +708,8 @@ Specifies the readOnly of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -719,8 +725,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -736,7 +742,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -751,8 +757,8 @@ Specifies the rounded corner behavior for slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -768,8 +774,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -785,7 +791,7 @@ Example
 
 
 
-### showScale<span class="type-signature type boolean">boolean</span>
+### showScale `boolean`
 {:#members:showscale}
 
 
@@ -800,8 +806,8 @@ Specifies the major (large) and minor (small) ticks of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -817,13 +823,12 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set enabled API value during initialization
@@ -836,7 +841,7 @@ Example
 
 
 
-### showSmallTicks<span class="type-signature type boolean">boolean</span>
+### showSmallTicks `boolean`
 {:#members:showsmallticks}
 
 
@@ -851,8 +856,8 @@ Specifies the showSmallTicks of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -868,13 +873,12 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set showSmallTicks API value during initialization  
@@ -887,7 +891,7 @@ Example
 
 
 
-### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip `boolean`
 {:#members:showtooltip}
 
 
@@ -902,8 +906,8 @@ Specifies the showTooltip to shows the current Slider value, while moving the Sl
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -919,14 +923,13 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set showTooltip API value during initialization  
@@ -939,7 +942,7 @@ Example
 
 
 
-### sliderType<span class="type-signature type enum">enum</span>
+### sliderType `enum`
 {:#members:slidertype}
 
 
@@ -954,8 +957,8 @@ Specifies the sliderType of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -971,8 +974,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -989,7 +992,7 @@ $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
 
 
 
-### smallStep<span class="type-signature type number">number</span>
+### smallStep `number`
 {:#members:smallstep}
 
 
@@ -1004,8 +1007,8 @@ Specifies the distance between two minor (small) ticks from the scale of the sli
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1021,13 +1024,12 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set smallStep API value during initialization  
@@ -1040,7 +1042,7 @@ Example
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -1055,8 +1057,8 @@ Specifies the value of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1072,13 +1074,12 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set value API  during initialization
@@ -1091,7 +1092,7 @@ Example
 
 
 
-### values<span class="type-signature type array">array</span>
+### values `array`
 {:#members:values}
 
 
@@ -1106,8 +1107,8 @@ Specifies the values of the range slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1123,13 +1124,12 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
-</br>
-</br>
+
 <div id="slider"> </div> 
 <script>
 //To set values API during initialization
@@ -1142,7 +1142,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span>
+### width `string`
 {:#members:width}
 
 
@@ -1157,8 +1157,8 @@ Specifies the width of the slider.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1174,8 +1174,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1199,7 +1199,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1215,8 +1215,8 @@ To disable the slider
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1247,7 +1247,7 @@ $("#slider").ejSlider("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1263,8 +1263,8 @@ To enable the slider
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1295,7 +1295,7 @@ $("#slider").ejSlider("enable");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -1311,8 +1311,8 @@ To get value from slider handle
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1324,7 +1324,8 @@ $("#slider").ejSlider();
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.getValue(); // getValue the slider handle
 </script>
-                 {% endhighlight %}
+                 
+  {% endhighlight %}
 
 
 {% highlight html %}
@@ -1367,7 +1368,7 @@ Fires when Slider control value is changed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1375,13 +1376,13 @@ Fires when Slider control value is changed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1389,37 +1390,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current handle number or index</td>
+<td class="description">returns current handle number or index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns slider id</td>
+<td class="description">returns slider id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the slider value</td>
+<td class="description">returns the slider value</td>
 </tr>
 </tbody>
 </table>
@@ -1431,8 +1432,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1468,7 +1469,7 @@ Fires when Slider control has been created successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1476,13 +1477,13 @@ Fires when Slider control has been created successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1490,19 +1491,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1514,8 +1515,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1551,7 +1552,7 @@ Fires when Slider control has been destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1559,13 +1560,13 @@ Fires when Slider control has been destroyed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1573,19 +1574,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1597,8 +1598,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1634,7 +1635,7 @@ Fires when Slider control is sliding successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1642,13 +1643,13 @@ Fires when Slider control is sliding successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1656,37 +1657,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current handle number or index</td>
+<td class="description">returns current handle number or index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns slider id</td>
+<td class="description">returns slider id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the slider value</td>
+<td class="description">returns the slider value</td>
 </tr>
 </tbody>
 </table>
@@ -1698,8 +1699,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1735,7 +1736,7 @@ Fires when Slider control is started successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1743,13 +1744,13 @@ Fires when Slider control is started successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1757,37 +1758,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current handle number or index</td>
+<td class="description">returns current handle number or index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns slider id</td>
+<td class="description">returns slider id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the slider value</td>
+<td class="description">returns the slider value</td>
 </tr>
 </tbody>
 </table>
@@ -1799,8 +1800,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1836,7 +1837,7 @@ Fires when Slider control is stopped successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1844,13 +1845,13 @@ Fires when Slider control is stopped successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from slider control
+<td class="description">Event parameters from slider control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1858,37 +1859,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns current handle number or index</td>
+<td class="description">returns current handle number or index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns slider id</td>
+<td class="description">returns slider id</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the slider model</td>
+<td class="description">returns the slider model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the slider value</td>
+<td class="description">returns the slider value</td>
 </tr>
 </tbody>
 </table>
@@ -1900,8 +1901,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

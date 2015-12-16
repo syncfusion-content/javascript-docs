@@ -1,8 +1,9 @@
 ---
 layout: post
-title: ejDialog
-documentation: API
+title: API reference for ejDialog
+description: What are the options, methods and events available in Essential JavaScript Dialog.
 platform: js
+keywords: ejDialog, API, Essential JS Dialog, Dialog
 metaname: 
 metacontent: 
 ---
@@ -233,7 +234,7 @@ Example
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-N>Since it is deprecated we suggest to use the API “[target](#methods:isopen)”.
+N>Since it is deprecated we suggest to use the API “[target](#methods:target)”.
 
 Default Value: 
 {:.param}
@@ -389,7 +390,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">Boolean</span>
-{:#members:enableResize}
+{:#members:enableresize}
 
 Allows the dialog to be resized. The dialog cannot be resized less than the minimum height and minimum width values.
 
@@ -917,10 +918,10 @@ Sets the title for the Dialog widget.
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 Title<br/><br/></td><td>
@@ -945,10 +946,10 @@ Sets the content for the Dialog widget dynamically.
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 content<br/><br/></td><td>
@@ -1018,7 +1019,7 @@ Example
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	beforeOpen: function (args) {} }); 
+        $("#dialog").ejDialog({ beforeOpen: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1068,7 +1069,7 @@ Error code</td></tr>
 <td>
 Argument.data.statusText</td><td>
 string</td><td>
-returns the corresponding error text for error code </td></tr>
+The corresponding error description.</td></tr>
 </table>
 
 
@@ -1079,7 +1080,7 @@ Example
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	ajaxError: function (args){} }); 
+        $("#dialog").ejDialog({ ajaxError: function (args){} }); 
 
 {% endhighlight %}
 
@@ -1129,7 +1130,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
+    $("#dialog").ejDialog({ ajaxSuccess: function (args){}});
 
 {% endhighlight %}
 
@@ -1175,7 +1176,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	beforeClose: function(args){}});
+    $("#dialog").ejDialog({ beforeClose: function(args){}});
 
 {% endhighlight %}
 
@@ -1222,7 +1223,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	Close: function (args) {} }); 
+    $("#dialog").ejDialog({ Close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1267,7 +1268,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	close: function (args) {} }); 
+    $("#dialog").ejDialog({ close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1358,7 +1359,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	create: function (args) {} }); 
+    $("#dialog").ejDialog({ create: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1397,7 +1398,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	destroy: function (args) {} }); 
+    $("#dialog").ejDialog({ destroy: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1441,7 +1442,7 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	drag: function (args) {} }); 
+    $("#dialog").ejDialog({ drag: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1485,7 +1486,7 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	dragStart: function (args) {} }); 
+$("#dialog").ejDialog({ dragStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1528,7 +1529,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	dragStop: function (args) {} }); 
+    $("#dialog").ejDialog({ dragStop: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1567,7 +1568,7 @@ Example
 {% highlight js %}
 
 
-           $("#dialog").ejDialog({ 	open: function (args) {} }); 
+           $("#dialog").ejDialog({ open: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1611,7 +1612,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	resize: function (args) {} }); 
+    $("#dialog").ejDialog({ resize: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1655,7 +1656,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStart: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1699,7 +1700,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStop: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStop: function (args) {} }); 
 
 {% endhighlight %}
 

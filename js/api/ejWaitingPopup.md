@@ -1,17 +1,13 @@
 ---
 layout: post
 title: ejWaitingPopup
+description: API reference for ejWaitingPopup
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: WaitingPopup, ejWaitingPopup, syncfusion, WaitingPopup api 
 ---
 
 # ejWaitingPopup
-
-
-
-
 
 
 
@@ -20,26 +16,19 @@ The WaitingPopup control for JavaScript is a visual element that provides suppor
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejWaitingPopup()
+
+{% endhighlight %}
 
 
 
 
+#### Example
 
-
-$(element).ejWaitingPopup<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -60,7 +49,9 @@ $("#target").ejWaitingPopup({ showOnInit: true });
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -68,8 +59,8 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 
@@ -97,7 +88,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -112,8 +103,8 @@ Sets the root class for the WaitingPopup control theme
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -129,8 +120,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -151,7 +142,9 @@ Example
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -159,7 +152,7 @@ Example
 
 
 
-### showImage<span class="type-signature type boolean">Boolean</span>
+### showImage `boolean`
 {:#members:showimage}
 
 
@@ -174,8 +167,8 @@ Enables or disables the default loading icon.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -191,8 +184,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -213,7 +206,9 @@ Example
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -221,7 +216,7 @@ Example
 
 
 
-### showOnInit<span class="type-signature type boolean">Boolean</span>
+### showOnInit `boolean`
 {:#members:showoninit}
 
 
@@ -236,8 +231,8 @@ Enables the visibility of the WaitingPopup control
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -253,8 +248,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -275,7 +270,9 @@ Example
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -283,7 +280,7 @@ Example
 
 
 
-### template<span class="type-signature type object">object</span>
+### template `object`
 {:#members:template}
 
 
@@ -298,8 +295,8 @@ Loads HTML content inside the popup panel instead of the default icon
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -315,8 +312,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -376,7 +373,8 @@ Example
             height: 112px;
             width: 275px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -384,7 +382,7 @@ Example
 
 
 
-### text<span class="type-signature type string">String</span>
+### text `string`
 {:#members:text}
 
 
@@ -399,8 +397,8 @@ Sets the custom text in the pop-up panel to notify the waiting process
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -416,8 +414,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -438,7 +436,9 @@ Example
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -453,7 +453,7 @@ Example
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -469,8 +469,8 @@ To hide the waiting popup
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -494,7 +494,8 @@ popupObj.hide();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -516,7 +517,8 @@ $("#target").ejWaitingPopup('hide');
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -524,7 +526,7 @@ $("#target").ejWaitingPopup('hide');
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -540,8 +542,8 @@ Refreshes the WaitingPopup control by resetting the pop-up panel position and co
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -564,7 +566,9 @@ popupObj.refresh();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -586,7 +590,9 @@ $("#target").ejWaitingPopup('refresh');
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 
@@ -594,7 +600,7 @@ $("#target").ejWaitingPopup('refresh');
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -610,8 +616,8 @@ To show the waiting popup
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -635,7 +641,9 @@ popupObj.show();
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -657,7 +665,8 @@ $("#target").ejWaitingPopup("show");
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -689,7 +698,7 @@ Fires after Create waitingpopup successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -697,19 +706,19 @@ Fires after Create waitingpopup successfully
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the waitingpopup model</td>
+<td class="description">returns the waitingpopup model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -717,8 +726,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -739,7 +748,8 @@ Example
             display: block;
             height: 70px;
         }
-</style>{% endhighlight %}
+</style>
+{% endhighlight %}
 
 
 
@@ -764,7 +774,7 @@ Fires after Destroy waitingpopup successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -772,19 +782,19 @@ Fires after Destroy waitingpopup successfully
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the cancel option value</td>
+<td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the waitingpopup model</td>
+<td class="description">returns the waitingpopup model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -792,8 +802,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -814,7 +824,9 @@ Example
           display: block;
           height: 70px;
       }
-</style>{% endhighlight %}
+</style>
+
+{% endhighlight %}
 
 
 

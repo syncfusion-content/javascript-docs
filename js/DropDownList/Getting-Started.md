@@ -1,512 +1,288 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started 
+title: Getting started with DropDownList widget for Syncfusion Essential JS
+description: To get start with DropDownList by adding references.
 platform: js
 control: DropDownList
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started
 
-This section explains briefly on how to create a **DropDownList** control in your application by using **JavaScript**.
+The external script dependencies of the DropDownList widget are,
 
-The **DropDownList** control provides a list of options and allows you to choose an item from the list. It includes several other **HTML** elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options. In this example, you can learn how to customize **DropDownList** in a real time Voting Selection Scenario of World Cup Football. This helps you to display the groups and its countries in the **DropDownList** Selection Item. 
+* [jQuery 1.7.1](http://jquery.com/) and later versions.
 
-The following screenshot demonstrates the functionality of **DropDownList** with a Cascading feature.
+* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support the animation effects.
 
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img1.png)
+And the internal script dependencies of the DropDownList widget are:
 
-In the above screenshot, you can select a group from the first **DropDownList** widget. After you select the group, the corresponding countries for that group are listed in the second **DropDownList** widget.Then, you can select a country and press the **Vote** option.  
+<table>
+	<tr>
+		<th>File </th>
+		<th>Description / Usage </th>
+	</tr>
+	<tr>
+		<td>ej.core.min.js</td>
+		<td>Must be referred always before using all the JS controls.</td>
+	</tr>
+	<tr>
+		<td>ej.data.min.js</td>
+		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
+	</tr>
+	<tr>
+		<td>ej. dropdownlist.min.js</td>
+		<td>The dropdownlist’s main file</td>
+	</tr>
+	<tr>
+		<td>ej.checkbox.min.js</td>
+		<td>Should be referred when using checkbox functionalities in DropDownList.</td>
+	</tr>
+	<tr>
+		<td>ej.scroller.min.js</td>
+		<td>Should be referred when using scrolling in DropDownList.</td>
+	</tr>
+	<tr>
+		<td>ej.draggable.min.js</td>
+		<td>Should be referred when using popup resize functionality in DropDownList.</td>
+	</tr>
+</table>
 
-## Create DropDownList Widgets 
+For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
 
-**Essential JavaScript DropDownList** widget basically renders with built-in features.
+For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
-You can create an **HTML** file and add the following code example to it. 
+
+## Preparing HTML document
+
+Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to the [JavaScript](http://help.syncfusion.com/js/dependencies) and [CSS](http://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
 
 {% highlight html %}
 
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-      <!-- Style sheet for default theme (flat azure) -->
-      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
-      <!--Scripts-->
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-      <!--Add custom scripts here -->
-   </head>
-   <body>
-      <!— add the DropDownList element here -->
-   </body>
-</html>
-{% endhighlight %}
+    <!DOCTYPE html>
 
-Add the input element to render **DropDownList** widgets.
+    <html>
 
-{% highlight html %}
+    <head>
 
-<div class="control">
-   <div class="ball-icon"></div>
-   <div class="ball-txt" style="">WORLD CUP FOOTBALL</div>
-   <br />
-   <table>
-      <tr>
-         <td class="tdcls"><span class="txt">
-            <label>Select Group</label></span>
-         </td>
-         <td class="tdcls"><span class="txt">
-            <label>Select Country</label></span>
-         </td>
-      </tr>
-      <tr>
-         <td class="tdcls">
-            <input id="groupsList" type="text" />
-         </td>
-         <td class="tdcls">
-            <input id="countryList" type="text" />
-         </td>
-      </tr>
-   </table>
-   <div class="votebox">
-      <button class="e-btn" id="voter">Vote </button>
-   </div>
-</div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+        <!-- style sheet for default theme(flat azure) -->
+
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
+              rel="stylesheet" />
+
+        <!--scripts-->
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--Place input element to create DropDownList-->
+
+        <script>
+
+            // Place your script code here to initialize DropDownList
+
+        </script>
+
+    </body>
+
+    </html>
 
 {% endhighlight %}
 
-Add the following style section for the alignment of **DropDownList** widgets. You can add the following location in the **URL** path for the background image http://js.syncfusion.com/UG/Web/Content/football.png
+ N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-{% highlight css %}
+## Creating DropDownList
 
-<style type="text/css" class="cssStyles">
-   .control
-   {
-       margin-left: 20px;
-       margin-top: 10px;
-   }
-   .ball-icon
-   {
-       display: inline-block;
-       background-image: url("http://js.syncfusion.com/UG/Web/Content/football.png");
-       background-repeat: no-repeat;
-       background-size: contain;
-       height: 50px;
-       width: 50px;
-   }
-   .ball-txt
-   {
-       display: inline-block;
-       font-size: 20px;
-       font-weight: bolder;
-       height: 50px;
-       position: relative;
-       text-align: center;
-       top: -20px;
-   }
-   .votebox
-   {
-       margin-left: 150px;
-       margin-top: 50px;
-   }
-   .txt
-   {
-       display: block;
-       margin-bottom: 12px;
-   }
-   .tdcls
-   {
-       width: 200px;
-   } 
-</style>
+The DropDownList can be created from a HTML ‘select’ element with the HTML 'id' attribute and pre-defined options set to it. To create the DropDownList, you should call the 'ejDropDownList' jQuery plug-in function.
 
+    {% highlight html %}
+	
+	<select id="dropdown1">
+	
+		<option value="item1">ListItem 1</option>
+			
+		<option value="item2">ListItem 2</option>
+					
+		<option value="item3">ListItem 3</option>
+				
+		<option value="item4">ListItem 4</option>
+				
+		<option value="item5">ListItem 5</option>
+				
+	</select>
+			
+	{% endhighlight %}
+	
+	{% highlight js %}	
+	
+		$(function () {
+				
+			$('#dropdown1').ejDropDownList();
+					
+		});				
+	
+			
+	{% endhighlight %}
 
-{% endhighlight %}
+![](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
-Initialize the **DropDownList** and other widgets by using the following code example.
+## Populating data
 
-{% highlight js %}
+The DropDownList can be bounded to both local array and remote data services using [ej.DataManager](http://help.syncfusion.com/js/datamanager/overview). You can use [DataManager](http://help.syncfusion.com/js/datamanager/overview) component to serve data from the data services based on the query provided. To bind data to DropDownList widget, the [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property should be assigned with the instance of 'ej.DataManager'.
+ 
+N> ODataAdaptor is the default adaptor for DataManager. On binding to other web services, proper [data adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set on 'adaptor' option of DataManager. 
+	
+	{% highlight html %}
 
-    // Declare Necessary variable creation 
-    var grpSlct, contrySlct;
+	<input type="text" id="dropdown1" />
+	
+	{% endhighlight %}
+	
+	{% highlight js %}	
+	
+	$(function () {
+		
+		// DataManager creation
+			
+		var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc");
+			
+		$('#dropdown1').ejDropDownList({
+			dataSource: dataManager,
+			fields: { text: "CustomerID", tableName:"Customers" }
+		});
+	});		
+	
 
-    $(function() {
-        // document ready
-        // simple DropDownList creation 
-        $('#groupsList').ejDropDownList({
-            watermarkText: "group" // set watermark text
-        });
+	{% endhighlight %}
+	
+![](Getteing-Started_images/Getteing-Started_img2.jpeg)
 
-        // simple DropDownList creation
-        $('#countryList').ejDropDownList({
-            watermarkText: "country" // setting watermark text
-        });
+## Setting Dimensions
 
-        // simple Button creation
-        $("#voter").ejButton();
+DropDownList dimensions can be set using width and height API.
+	
+	{% highlight html %}
+	
+	<input type="text" id="dropdown1" />
+	
+	{% endhighlight %}
+	
+	{% highlight js %}	
+	
+	$(function () {
+			
+		$('#dropdown1').ejDropDownList({
+			
+			width: 300,
+			
+			height: 50
+		});
+	});		
+	
+	{% endhighlight %}
 
-    });
+**Setting dimensions to Popup list**
+
+PopupWidth and popupHeight can be used to create a fixed size popup list.
+
+	{% highlight html %}
+
+	<input type="text" id="dropdown1" />
+
+	{% endhighlight %}
+	
+	{% highlight js %}
+	
+	
+	$(function () {
+	
+		// declaration
+		
+		var items = [{ text: "ListItem 1", value: "item1" },
+		
+			{ text: "ListItem 2", value: "item2" },
+					
+			{ text: "ListItem 3", value: "item3" },
+					
+			{ text: "ListItem 4", value: "item4" },
+				
+			{ text: "ListItem 5", value: "item5" }];
+					
+		$('#dropdown1').ejDropDownList({
+		
+			dataSource: items,
+			
+			fields: { text: "text", value: "value" },
+			
+			width: 500,
+			
+			height: 50,
+			
+			popupHeight: 200,
+			
+			popupWidth: 300
+			
+		});
+		
+	});
+	
+	{% endhighlight %}
+	
+## Setting and Getting Value
+
+You can select single or multiple values from DropDownList widget. To assign a value initially to the DropDownList, you can use [value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value) property.
+
+N> To select multiple items based on index, refer [here](functionalities#selection).
+
+	{% highlight html %}
+
+	<input type="text" id="dropdown1" />
+
+	{% endhighlight %}
+	
+	{% highlight js %}	
+	
+	$(function () {
+		
+		var items = [{ text: "ListItem 1", value: "item1" },
+		
+			{ text: "ListItem 2", value: "item2" },
+			
+			{ text: "ListItem 3", value: "item3" },
+				
+			{ text: "ListItem 4", value: "item4" },
+				
+			{ text: "ListItem 5", value: "item5" }];
+				
+				
+		$('#dropdown1').ejDropDownList({
+					
+			dataSource: items,
+				
+			fields: { text: "text", value: "value" },
+				
+			value: "item3"
+		});
+			
+		var obj = $('#dropdown1').data("ejDropDownList");
+				
+		console.log("Selected Item's Text - " + obj.option("text"));
+				
+		console.log("selected Item's Value - " + obj.option("value"));       
+				
+	}); 
     
-{% endhighlight %}
 
-Run this code to render the resultant output of the above steps.
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img2.png) 
-
-## Configure Data Source
-
-You can configure **DropDownList** widgets by using online services. Two different online data services for the two **DropDownList** widgets are created. They are as, _groups_ data service for the group selection **DropDownList** and _countries_ data service for the country selection **DropDownList**. Both the data services are referred from the following service location.
-
-[http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
-
-In the above mentioned scenario, the given data source is mentioned in the **Data** **Source** property. In the first and second **DropDownList** widgets, you can mention the Group widgets and countries Data Source in the **Data** **Source** property respectively. When the **Data** **Source** has different field names, you can map the fields with the **field’s** property.
-
-The following code example explains how to configure the **Data Source**.
-
-{% highlight js %}
-
-     // Declare Necessary variable creation 
-     var grpSlct, contrySlct;
-
-     $(function() {
-         // document ready
-
-         // DataManager creation
-         var dataManger = ej.DataManager({
-             url: "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"
-         });
-         // Query creation for groups table
-         var query1 = ej.Query()
-             .from("TeamGroups");
-
-         // Query creation for countries table
-         var query2 = ej.Query()
-             .from("TeamCountries");
-
-         // simple DropDownList creation
-         $('#groupsList').ejDropDownList({
-
-             watermarkText: "group", // set watermark text
-
-             // Set Data Source in the Data Source Property
-             dataSource: dataManger,
-
-             query: query1, // set query for groups
-
-             // Map the fields in the data source with the fields property if its not having fields as in the fields property
-             fields: {
-                 text: "GroupName",
-                 value: "GroupId"
-             }
-         });
-
-         // simple DropDownList creation
-         $('#countryList').ejDropDownList({
-
-             watermarkText: "country", // set watermark text
-
-             // Set Data Source in the Data Source Property
-             dataSource: dataManger,
-             query: query2, // setting query for countries
-             // Set the popup list width
-             popupWidth: "300px",
-
-             // Configure fields with properties
-             fields: {
-                 text: "CountryName",
-                 value: "CountryId",
-                 spriteCssClass: "CountryFlag"
-             }
-         });
-
-         // simple Button creation
-         $("#voter").ejButton();
-
-     });
-
-
-{% endhighlight %}
-
-Execute this code to render the output.
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img3.png) 
-
-## Configure DropDownList with Sprite Icons
-
-To style the **DropDownList** popup with the Country flag, create the **SpriteCSS** styles by using the flag icons from the following image source location. You can add the following location in the **URL** path for the background images.
-
-[http://js.syncfusion.com/UG/Web/Content/countryFootbal.png](http://js.syncfusion.com/UG/Web/Content/countryFootbal.png)
-
-You can load the spirit image icons for the countries in a **DropDownList** by adding the following code example in styles section. 
-
-{% highlight css %}
-
-<style type="text/css" class="cssStyles">
-   #countryList_popup_wrapper .e-align
-   {
-       display: inline-block;
-       float: none;
-       margin-left: 5px;
-       margin-right: 10px;
-       vertical-align: middle;
-   }
-   /*Sprite CSS for the Flags used in DDL widget */
-   .flag
-   {
-       display: block;
-       background-image: url(http://js.syncfusion.com/UG/Web/Content/countryFootbal.png); 
-       height: 46px;
-       width: 70px;
-       background-position: center center;
-       background-repeat: no-repeat;
-   }
-   .flag.algeria
-   {
-       background-position: 0 0;
-   }
-   .flag.argentina
-   {
-       background-position: 0 -96px;
-   }
-   .flag.australia
-   {
-       background-position: 0 -192px;
-   }
-   .flag.belgium
-   {
-       background-position: 0 -288px;
-   }
-   .flag.bosnia
-   {
-       background-position: 0 -384px;
-   }
-   .flag.brazil
-   {
-       background-position: 0 -480px;
-   }
-   .flag.cameroon
-   {
-       background-position: 0 -576px;
-   }
-   .flag.chile
-   {
-       background-position: 0 -672px;
-   }
-   .flag.colombia
-   {
-       background-position: 0 -768px;
-   }
-   .flag.costarica
-   {
-       background-position: 0 -864px;
-   }
-   .flag.croatia
-   {
-       background-position: 0 -960px;
-   }
-   .flag.ecuador
-   {
-       background-position: 0 -1056px;
-   }
-   .flag.england
-   {
-       background-position: 0 -1152px;
-   }
-   .flag.france
-   {
-       background-position: 0 -1248px;
-   }
-   .flag.germany
-   {
-       background-position: 0 -1344px;
-   }
-   .flag.ghana
-   {
-       background-position: 0 -1440px;
-   }
-   .flag.greece
-   {
-       background-position: 0 -1536px;
-   }
-   .flag.honduras
-   {
-       background-position: 0 -1632px;
-   }
-   .flag.iran
-   {
-       background-position: 0 -1728px;
-   }
-   .flag.italy
-   {
-       background-position: 0 -1824px;
-   }
-   .flag.ivoriecote
-   {
-       background-position: 0 -1920px;
-   }
-   .flag.japan
-   {
-       background-position: -120px 0;
-   }
-   .flag.korea
-   {
-       background-position: -120px -96px;
-   }
-   .flag.mexico
-   {
-       background-position: -120px -192px;
-   }
-   .flag.netherlands
-   {
-       background-position: -120px -288px;
-   }
-   .flag.nigeria
-   {
-       background-position: -120px -384px;
-   }
-   .flag.portugal
-   {
-       background-position: -120px -480px;
-   }
-   .flag.russia
-   {
-       background-position: -120px -576px;
-   }
-   .flag.spain
-   {
-       background-position: -120px -672px;
-   }
-   .flag.swiss
-   {
-       background-position: -120px -768px;
-   }
-   .flag.uruguay
-   {
-       background-position: -120px -864px;
-   }
-   .flag.usa
-   {
-       background-position: -120px -960px;
-   }
-</style>
-
-{% endhighlight %}
-
-Run the above code example to render the following **DropDownList** with Data sources.
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img4.png) 
-
-## Set the Cascading Option
-
-In the above scenario, when you select the group in the first **DropDownList**, the corresponding countries for that group are listed in the country **DropDownList.** This is achieved by setting the **“cascadeTo”** that points the **DropDownList**, where the data is loaded dynamically. You can disable the second **DropDownList** till the data is loaded dynamically.
-
-The following code example explains how to set the Cascading Option.
-
-{% highlight js %}
-
-   // Declare Necessary variable creation 
-   var grpSlct, contrySlct;
-
-   $(function() {
-
-       // document ready
-       // To add DataSource refer the navigated section
-       // simple DropDownList creation
-       $('#groupsList').ejDropDownList({
-           watermarkText: "group", // set watermark text
-           // Set Data Source in the Data Source Property
-           dataSource: dataManger,
-           query: query1, // set query for groups
-           // Map the fields in the data source with the fields property if its not having fields as in the fields property
-           fields: {
-               text: "GroupName",
-               value: "GroupId"
-           },
-           // Set DropDownList id to load the dynamic data
-           cascadeTo: 'countryList'
-       });
-
-       // simple DropDownList creation 
-       $('#countryList').ejDropDownList({
-           watermarkText: "country", // setting watermark text
-           // Set Data Source in the Data Source Property
-           dataSource: dataManger,
-           query: query2, // set query for countries
-           // Configure fields with properties
-           fields: {
-               text: "CountryName",
-               value: "CountryId",
-               spriteCssClass: "CountryFlag"
-           },
-           // Set the popup list width
-           popupWidth: "300px",
-           // Disable the dropdownlist until to load the data
-           enabled: false
-       });
-       // simple Button creation
-       $("#voter").ejButton();
-   });
-
-{% endhighlight %}
-
-Execute this code to render the **DropDownList** with Cascading Option.  
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img5.png) 
-
-Initially, you can select the group from the popup of the first **DropDownList**. After you select the option, selected value is loaded.   
-
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img6.png) 
-
-Based on the group selection in the first **DropDownList**, the **DataSource** in the second **DropDownList** is loaded and the corresponding Countries are displayed while clicking the drop-down button as follows.
-
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img7.png) 
-
-From the **DropDownList** “Country”, you can select your desired country.
-
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img8.png) 
-
-## Set the Vote process in the DropDownList Widget
-
-The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information on button, refer to the following link: <http://help.syncfusion.com/js/button/overview>
-
-The following code example explains how to set the Vote process in the **DropDownList** widget.
-
-{% highlight js %}
-
-     // To addDataSource refer the navigated section
-     // Declare Necessary variable creation 
-     var grpSlct, contrySlct;
-
-     $(function() {
-         // document ready
-         // simple DropDownList creation can be referred here 
-         // simple Button creation
-         $("#voter").ejButton({
-             width: "80px", // set the width for the Button
-             height: "25px", // set the height for the button
-             showRoundedCorner: true, // set the rounded corner option  to true
-             contentType: "textandimage", // set the content type for the button
-             prefixIcon: "e-uiLight e-userlogin", // set the Prefix icon for button
-             click: "selectVoted" // set click event of button
-         });
-     });
-
-     function selectVoted() {
-         grpSlct = $('#groupsList').data("ejDropDownList");
-         contrySlct = $('#countryList').data("ejDropDownList");
-         alert("You have voted for the " + contrySlct.model.text + " country in " + grpSlct.model.text);
-     }
-     
-{% endhighlight %}
-
-When you run the above code example, it displays the **DropDownList** widgets. You can select the value and click the **Vote** button. The button click event is processed and the values are displayed as follows.
-
-![](/js/DropDownList/Getting-Started_images/Getting-Started_img9.png) 
+	{% endhighlight %}
 
