@@ -102,7 +102,7 @@ N> To retrieve the selected item’s li elements and value you can use [getSelec
 
 ### Using indices
 
-You can select a single or more than one item by passing index values to the properties “[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)” or “[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)” respectively. Index starts from 0 here.
+You can select a single or more than one item by passing index values to the properties [selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex) or [selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices) respectively. Index starts from 0 here.
 
 {% highlight html %}
 
@@ -143,7 +143,7 @@ You can select a single or more than one item by passing index values to the pro
 
 ![](Functionalities_images/Functionalities_img2.jpeg)
 
-N> To use 'selectedIndices' property, you should enable checkbox first. 
+I> To use "selectedIndices" property, you should enable either showCheckbox or multiSelectMode property First.
 
 {% highlight html %}
 
@@ -339,11 +339,9 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
-Grouping has restrictions in the following scenarios,
-
-* It is not supported on using HTML 'select' element with predefined set of options
-
-* When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
+N> Grouping has restrictions in the following scenarios,
+N> * It is not supported on using HTML "select" element with predefined set of options
+N> * When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
 
 
 {% highlight html %}
@@ -364,11 +362,11 @@ Grouping has restrictions in the following scenarios,
 
 ![](Functionalities_images/Functionalities_img4.jpeg)
 
-N> Virtual scrolling is not supported with Grouping. 
+I> Virtual scrolling is not supported with Grouping.
 
 ## Sorting
 
-Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use [enableSorting](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablesorting) property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the [sortOrder](http://help.syncfusion.com/js/api/ejdropdownlist#members:sortorder) property to sort out the list items. By default ascending order is followed when 'sortOrder' property is not specified. 
+Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use [enableSorting](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablesorting) property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the [sortOrder](http://help.syncfusion.com/js/api/ejdropdownlist#members:sortorder) property to sort out the list items. By default ascending order is followed when "sortOrder" property is not specified. 
 
 {% highlight html %}
 
@@ -407,6 +405,8 @@ Sorting is enabled to order to display the items alphabetically in either ascend
 	});             
   
 {% endhighlight %}
+
+I> Virtual scrolling is not supported with Sorting.
 
 ## Cascading
 
@@ -644,9 +644,7 @@ You can also bind the data source to the cascading DropDownList dynamically usin
 Items are searched based on the keyed in values to the textbox. There are two types of searches,
 
 * Incremental Search
-
 * Filter Search
-
 
 ### Incremental Search
 
@@ -698,9 +696,7 @@ You can quickly locate specific item within a large data source by filtering mat
 You can configure the search filter by using [filterType](http://help.syncfusion.com/js/api/ejdropdownlist#members:filtertype) property. There is two types of filter options,
 
 * Starts With 
-
 * Contains
-
 
 N> Items are filtered based on “contains” filter type by default.
 
