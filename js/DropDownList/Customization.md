@@ -97,7 +97,7 @@ You can use [showRoundedCorner](http://help.syncfusion.com/js/api/ejdropdownlist
 
 ![](Customization_images/Customization_img3.jpeg)
 
-N> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
+I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
 ## Enable/Disable the widget
 
