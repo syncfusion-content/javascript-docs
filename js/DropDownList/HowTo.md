@@ -9,13 +9,9 @@ documentation: ug
 
 # How To
 
-## How to append custom HTML in DropDownList popup outside the scroller part?
+## Set focus to control initially?
 
-Create a custom html element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
-
-## How to set focus to control initially?
-
-[Access key](https://en.wikipedia.org/wiki/Access_key) property can be added in input element to set focus. Here focus is set by using access key + “j”.
+[Access key](https://en.wikipedia.org/wiki/Access_key) property can be added in input element to set focus. Here focus is set by using access key + "j".
 
 {% highlight html %}
 
@@ -47,13 +43,13 @@ Create a custom html element and insert it after popup wrapper. Detailed sample 
  
 {% endhighlight %}
 
-## How to clear the text of DropDownList input?
+## Clear the text of DropDownList input?
 
 To clear the text of the DropDownList input, you can use [clearText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:cleartext) method.
 
-## How to add an item dynamically to the DropDownList?
+## Add an item dynamically to the DropDownList?
 
-You can use [addItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, image and its associated attributes such as alt, width, and height etc., html attributes.
+You can use [addItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, html attributes, selected, image and its associated attributes such as alt, width, and height etc..,
 
 Adding text and value is demonstrated in the below given sample,
 
@@ -84,15 +80,15 @@ Adding text and value is demonstrated in the below given sample,
 
 {% endhighlight %}
 
-## How to Disable/ Enable the DropDownList widget?
+## Disable/ Enable the DropDownList widget?
 
-You can enable or disable the DropDownList widget using “enabled” property or methods. Detailed information is given [here](customization#enabledisable-the-widget).
+You can enable or disable the DropDownList widget using "enabled" property or methods. Detailed information is given [here](customization#enabledisable-the-widget).
 
-## How to control the popup visibility via methods in script showPopup ()/hidePopup ()?
+## Control the popup visibility via methods in script showPopup ()/hidePopup ()?
 
 By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/js/api/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
 
-## How to retrieve the selected item data from select event via arguments?
+## Retrieve the selected item data from select event via arguments?
 
 Bind the select event and you can retrieve the value from args.value. 
 
@@ -127,7 +123,11 @@ The following screenshot will exhibit the select event arguments details,
 
 ![](HowTo_images/HowTo_img1.jpeg)
 
-## How to add check all option in popup list?
+## Append custom HTML in DropDownList popup outside the scroller part?
+
+Create a custom html element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
+
+## Add check all option in popup list?
 
 You can use [headerTemplate](http://help.syncfusion.com/js/api/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
 

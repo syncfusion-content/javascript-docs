@@ -12,7 +12,6 @@ documentation: ug
 The external script dependencies of the DropDownList widget are,
 
 * [jQuery 1.7.1](http://jquery.com/) and later versions.
-
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support the animation effects.
 
 And the internal script dependencies of the DropDownList widget are:
@@ -31,7 +30,7 @@ And the internal script dependencies of the DropDownList widget are:
 		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
 	</tr>
 	<tr>
-		<td>ej. dropdownlist.min.js</td>
+		<td>ej.dropdownlist.min.js</td>
 		<td>The dropdownlist’s main file</td>
 	</tr>
 	<tr>

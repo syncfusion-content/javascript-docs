@@ -103,11 +103,9 @@ N> if you want to showcase the DropDownList with default checked items on data b
 The [multiSelectMode](http://help.syncfusion.com/js/api/ejdropdownlist#members:multiselectmode) property enables you to make multiple selections in the following two ways:
 
 * Delimiter 
-
 * Visual Mode
 
-
-N> “multiSelectMode” property accepts both the **string** and **ej.MultiSelectMode** enum value.
+I> “multiSelectMode” property accepts both the **string** and **ej.MultiSelectMode** enum value.
 
 ### Delimiter
 
