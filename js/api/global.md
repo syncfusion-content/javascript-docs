@@ -1,10 +1,9 @@
 ---
 layout: post
-title: global
+title: Essential Studio JavaScript Global API reference
+description: Essential Studio JavaScript Global API reference
 documentation: API
 platform: js
-metaname: 
-metacontent: 
 ---
 
 
@@ -43,11 +42,6 @@ Enum for alignment. 12
 
 
 #### Properties
-
-
-
-
-
 
 <table class="props">
 <thead>
@@ -16687,71 +16681,15 @@ Behind</td>
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Methods
-
-
-
-
-
-
-
 
 ### clearShapeSelection
 {:#methods:clearshapeselection}
 
-
-
-
-
-
-
-
 Clear Selected Map Shapes
-
-
-
-
-
-
-
-
-
 
 
 ### refreshMarkers
 {:#methods:refreshmarkers}
 
-
-
-
-
-
-
-
 Generates markers
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-prettyPrint();
-</script><script src="scripts/linenumber.js" type="text/javascript">
-</script><script src="scripts/main.js" type="text/javascript">
-</script>
