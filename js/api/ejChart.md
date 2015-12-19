@@ -19124,7 +19124,7 @@ series :[{trendlines:[{ polynomialOrder:2 }]}]
 });
 {% endhighlight %}
 
-Try it: [JS Playground Sample](/http://jsplayground.syncfusion.com/gdpriupt)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
 
