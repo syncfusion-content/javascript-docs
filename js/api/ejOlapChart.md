@@ -127,6 +127,41 @@ $("#OlapChart").ejOlapChart("option", "customObject",  {"key":"Hi Syncfusion!"} 
 {% endhighlight %}
 
 
+
+### enable3D `boolean`
+{:#members:enable3d}
+
+Allows the user to enable 3D view of OlapChart.
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+{% highlight html %}
+ 
+//To set the enable3D option during initialization  
+$("#OlapChart").ejOlapChart({enable3D: true});
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Get or set the enable3D, after initialization:
+//Gets the enable3D values state
+$("#OlapChart").ejOlapChart("option", "enable3D");
+                      
+//Sets the enable3D
+$("#OlapChart").ejOlapChart("option", "enable3D","true"); 
+
+{% endhighlight %}
+
+
+
+
+
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
@@ -191,6 +226,42 @@ $("#OlapChart").ejOlapChart("option", "locale");
 $("#OlapChart").ejOlapChart("option", "locale",  "fr-FR" ); 
 
 {% endhighlight %}
+
+
+
+
+### rotation `number`
+{:#members:rotation}
+
+Allows the user to rotate the angle of OlapChart in 3D view.
+
+#### Default Value
+
+* 0
+
+
+#### Example
+
+{% highlight html %}
+ 
+//To set rotation API value during initialization  
+$("#OlapChart").ejOlapChart({  rotation: 45}); 
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the rotation API, after initialization:
+//Gets the rotation value  
+$("#OlapChart").ejOlapChart("option", "rotation");
+                    
+//Sets the rotation value 
+$("#OlapChart").ejOlapChart("option", "rotation",  45 ); 
+
+{% endhighlight %}
+
+
 
 
 ### serviceMethodSettings `object`
@@ -388,6 +459,54 @@ chartObj.doAjaxPost("POST", "/OlapChartService.svc/Initialize", {"key", "Hello W
 </script>
 
 {% endhighlight %}
+
+
+
+### doPostBack()
+{:#methods:dopostback}
+
+Perform an asynchronous HTTP (FullPost) submit.
+
+#### Example
+
+{% highlight html %}
+
+<div id="OlapChart"></div> 
+ 
+<script>
+// Submitting required information to the service.
+$('#OlapChart).ejOlapChart({
+      url: "OlapChartService.svc",
+  });
+var chartObj = $("#OlapChart").data("ejOlapChart");//Initiates the instance
+chartObj.doPostBack("/OlapChartService.svc/Initialize", {"key", "Hello World"});
+</script> 
+
+{% endhighlight %}
+
+
+
+
+### exportOlapChart()
+{:#methods:exportolapchart}
+
+Exports the OlapChart to an appropriate format based on the parameter passed.
+  
+#### Example
+
+{% highlight html %}
+ 
+<div id="OlapChart"></div> 
+ 
+<script>
+// Create OLAP Chart
+var chartObj = $("#OlapChart").data("ejOlapChart");
+chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel); //Exports the OlapChart
+</script>
+
+{% endhighlight %}
+
+
 
 ### renderChartFromJSON()
 {:#methods:renderchartfromjson}
@@ -951,3 +1070,17 @@ $("#OlapChart").ejOlapChart({
 
 
 
+## Enumeration
+
+### SymbolShapes  `enum`
+{:#enum:symbolshapes}
+
+Allows the user to set shape for the marker.
+
+#### Example
+
+{% highlight html %}
+
+$("#OlapChart").ejOlapChart({commonSeriesOptions :{marker :{ shape: ej.olap.OlapChart.SymbolShapes.LeftArrow} }});
+
+{% endhighlight %}
