@@ -200,7 +200,7 @@ namespace OlapChartDemo
         public Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string customObject)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
-                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport));
+                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(olapReport));
                 dynamic customData = serializer.Deserialize < dynamic > (customObject.ToString());
                 return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
             }

@@ -587,27 +587,8 @@ This function receives JSON data and prepares for rendering the widget after ser
  
 <script>
 // Create OLAP Gauge
-$('#OlapGauge').ejOlapGauge({
-      url: "OlapGaugeService.svc",
-                enableTooltip: true,
-                scales: [{
-                pointers: [{
-                           showBackNeedle: true,
-                           backNeedleLength: 20,
-                           length: 120,
-                           width: 7
-                       },
-               {
-                   type: "marker",
-                   markerType: "diamond",
-                   distanceFromScale: 5,
-                   placement: "center",
-                   backgroundColor: "#29A4D9",
-                   length: 25,
-                   width: 15
-               }]
-        }]
-  });
+$('#OlapGauge').ejOlapGauge({url: "OlapGaugeService.svc"});
+      
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.progressStatus({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
 // creating OLAP Gauge after Ajax request
