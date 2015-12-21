@@ -1508,7 +1508,7 @@ $("#PivotGrid").ejPivotGrid({
    cellSelection: function (args) {}
 });      
 
-
+{% endhighlight %}
 
 ### columnHeaderHyperlinkClick
 {:#events:columnheaderhyperlinkclick}
