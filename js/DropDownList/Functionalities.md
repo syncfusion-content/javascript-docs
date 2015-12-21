@@ -340,8 +340,8 @@ The below given example explains the behavior of grouping with JSON array bindin
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
 N> Grouping has restrictions in the following scenarios,
-N> * It is not supported on using HTML "select" element with predefined set of options
-N> * When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
+N> 1.  It is not supported on using HTML "select" element with predefined set of options
+N> 2.  When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
 
 
 {% highlight html %}
