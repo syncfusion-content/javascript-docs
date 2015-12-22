@@ -7,7 +7,7 @@ control: OlapClient
 documentation: ug
 ---
 
-# OlapClient Elements
+# OlapClient: Elements
 
 ## Cube Selector
 Cube Selector allows to select any one of the cube from the cubes available in connected database.  This can be achieved with a dropdown list displaying the list of names of cubes. On selecting a cube from the dropdown list the corresponding cube elements get loaded.
