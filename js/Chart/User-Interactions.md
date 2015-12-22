@@ -264,7 +264,6 @@ The [`type`](../api/ejchart#members:zooming-type) option in zooming specifies wh
 
 {% endhighlight %}
 
-For zooming chart programmatically refer the online [`KB`](programmatic zooming).
 
 ## Crosshair
 
@@ -453,8 +452,6 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 Change trackball tooltip format
 {:.caption}
-
-To view the data representation depth in chart by clicking on the data point, refer [`Drilldown`](drilldown) KB.
 
 
 ## Highlight

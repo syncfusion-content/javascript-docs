@@ -234,8 +234,8 @@ N> The columns are bounded automatically when the fields are specified with the 
 {% endhighlight %}
 
 ![](DataBinding_images/DataBinding_img1.jpeg)
-
-N> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_5rengelb) and  Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
+N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
+I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_px3jew3i) 
 	
 The JSON array to the [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](http://help.syncfusion.com/js/api/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](http://help.syncfusion.com/js/api/ejdatamanager), the [ej.JsonAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
 
@@ -281,7 +281,7 @@ To bind remote data to the DropDownList, you can assign a service data as an ins
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the 'ej.DataManager' class and then you can assign it to DropDownList 'dataSource'.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class and then you can assign it to DropDownList "dataSource".
 
 {% highlight html %}
 
@@ -307,8 +307,10 @@ OData is a standardized protocol for creating and consuming data. You can provi
           
 ### OData Version 4
 
-For OData Version 4 support 'ej.ODataV4Adaptor' should be used. By using URL property of 'ej.DataManager' you can bind OData Version 4 Service link and specify  adaptor as ej.ODataV4Adaptor.
-Note: You can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new ej.ODataAdaptor). 
+For OData Version 4 support "ej.ODataV4Adaptor" should be used. By using URL property of "ej.DataManager" you can bind OData Version 4 Service link and specify  adaptor as ej.ODataV4Adaptor.
+
+I> You can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new ej.ODataAdaptor).
+ 
 For further details about OData service please refer [the link](http://www.odata.org/).
 
 {% highlight html %}
@@ -389,8 +391,8 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
 
 ### Other Restful web services
 
-The [Custom Adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of 'ej.DataManager' allows to customize or generate your own adaptor which is used to process 'query' and 'result' data. 
-When using remote data binding, the adaptor of 'ej.DataManager' plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+The [Custom Adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of "ej.DataManager" allows to customize or generate your own adaptor which is used to process "query" and "result" data. 
+When using remote data binding, the adaptor of "ej.DataManager" plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 {% highlight html %}
 
@@ -455,22 +457,14 @@ To improve the performance when displaying large data set, you can use “allowV
 This supports two modes of virtualization. They are,
 
 * Normal Mode
-
 * Continuous Mode
 
-
-N> The following features are not supported by Virtual Scrolling
-
-* Grouping 
-
-* Sorting
-
-“virtualScrollMode” property accepts both the string and ej.VirtualScrollMode enum value.
-
+I> 1. Sorting and Grouping is not supported with Virtual Scrolling
+I> 2. “virtualScrollMode” property accepts both the string and ej.VirtualScrollMode enum value.
 
 ### Normal Mode
 
-It loads the data on scrolling the list of items. This can be achieved by setting [normal](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the 'virtualScrollMode' property.
+It loads the data on scrolling the list of items. This can be achieved by setting [normal](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
 
 {% highlight html %}
 
@@ -501,7 +495,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
 
 ### Continuous Mode
 
-It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting [continuous](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the 'virtualScrollMode' property.
+It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting [continuous](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
 
 N> In both modes, set of items will be fetched based on the count specified in the [itemsCount](http://help.syncfusion.com/js/api/ejdropdownlist#members:itemscount) property and next set of items will be loaded on scrolling.
 

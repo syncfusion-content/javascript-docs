@@ -13,19 +13,14 @@ DropDownList stores its model is local storage by defining the property [enableP
 You can sustain the below given functionalities in DropDownList by enabling persistence property,
 
 * selected items value in the textbox 
-
 * item’s selection state in the popup list 
-
 
 Widget model will be stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
 The following properties are not included while maintaining DropDownList’s state in local storage to keep localStorage compact.
 
 * Fields
-
 * Data source
-
 * Query 
-
 
 {% highlight html %}
 

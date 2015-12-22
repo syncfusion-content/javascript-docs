@@ -314,4 +314,4 @@ The following table illustrates those commands with the associated key values.
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/command-manager "Command Manager").
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").

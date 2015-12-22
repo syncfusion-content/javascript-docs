@@ -298,7 +298,7 @@ $("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen", true 
 {% endhighlight %}
 
 
-### isplaySettings.enableTogglePanel `boolean`
+### displaySettings.enableTogglePanel `boolean`
 {:#members:displaysettings-enabletogglepanel}
 
 Sets the Toggle Panel visibility mode.
@@ -329,6 +329,39 @@ $("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel");
 $("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel", true ); 
 
 {% endhighlight %}
+
+
+
+### displaySettings.isResponsive `boolean`
+{:#members:displaysettings-isresponsive}
+
+Allows the user to enable Responsive layout support.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+//To set the isResponsive option during initialization  
+$("#OlapClient1").ejOlapClient({isResponsive: true});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the isResponsive, after initialization:
+//Gets the isResponsive values state
+$("#OlapClient").ejOlapClient("option", "isResponsive");
+                    
+//Sets the reponsive layout
+$("#OlapClient").ejOlapClient("option", "isResponsive","true"); 
+
+{% endhighlight %}
+
 
 
 ### displaySettings.mode `enum`
@@ -434,39 +467,6 @@ $("#OlapClient").ejOlapClient("option","gridLayout", ej.PivotGrid.Layout.NormalT
 
 
 
-### isResponsive `Boolean`
-{:#members:isresponsive}
-
-Allows the user to enable Responsive layout support.
-
-
-
-#### Default Value
-
-* false
-
-
-#### Example
-
-{% highlight html %}
- 
-//To set the isResponsive option during initialization  
-$("#OlapClient1").ejOlapClient({isResponsive: true});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the isResponsive, after initialization:
-//Gets the isResponsive values state
-$("#OlapClient").ejOlapClient("option", "isResponsive");
-                    
-//Sets the reponsive layout
-$("#OlapClient").ejOlapClient("option", "isResponsive","true"); 
-
-{% endhighlight %}
-
 
 ### locale `string`
 {:#members:locale}
@@ -567,6 +567,40 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
 //Sets the cubeChanged value 
 $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.cubeChanged","CubeChangedMyMethod" ); 
 
+{% endhighlight %}
+
+
+
+
+### serviceMethodSettings.exportOlapClient `string`
+{:#members:servicemethodsettings-exportolapclient}
+
+Allows the user to set the custom name for the service method that’s responsible for exporting operation.
+
+#### Default Value
+
+* "Export"
+
+#### Example
+
+{% highlight html %}
+ 
+To set exportOlapClient API value to invoke the corresponding service method for exporting operation.
+ $("#OlapClient").ejOlapClient({  serviceMethodSettings: { exportOlapClient: "Export"}});
+ 
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Gets or sets the exportOlapClient API, to invoke the corresponding service method for exporting operation.
+
+//Gets the exportOlapClient value
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
+   
+//Sets the exportOlapClient value 
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings. exportOlapClient", "Export" );
+ 
 {% endhighlight %}
 
 
@@ -740,6 +774,39 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.loadReport", "Loa
 {% endhighlight %}
 
 
+### serviceMethodSettings.mdxQuery `string`
+{:#members:servicemethodsettings-mdxquery}
+
+Allows the user to set the custom name for the service method that’s responsible for retrieving the MDX query for the current report.
+
+#### Default Value
+
+* "GetMDXQuery"
+
+
+#### Example
+
+{% highlight html %}
+ 
+//To set mdxQuery API value to invoke the corresponding service method for retrieving the MDX query for the current report.
+
+$("#OlapClient").ejOlapClient({  serviceMethodSettings: {mdxQuery: "GetMDXQuery"}});
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Gets or sets the mdxQuery API, to invoke the corresponding service method for retrieving the MDX query for the current report.
+//Gets the mdxQuery value
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
+   
+//Sets the mdxQuery value
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.mdxQuery", "GetMDXQuery"} ); 
+ 
+{% endhighlight %}
+
+
+
 
 ### serviceMethodSettings.measureGroupChanged `string`
 {:#members:servicemethodsettings-measuregroupchanged}
@@ -909,6 +976,36 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.saveReport", "Sav
 
 {% endhighlight %}
 
+
+
+### serviceMethodSettings.toggleAxis `string`
+{:#members:servicemethodsettings-toggleaxis}
+
+Allows the user to set the custom name for the service method that’s responsible for toggling the elements in row and column axes.
+
+#### Default Value
+
+* "ToggleAxis"
+
+
+{% highlight html %}
+ 
+//To set toggleAxis API value, inorder to invoke the corresponding service method for toggling row and column axes.
+ $("#OlapClient").ejOlapClient({  serviceMethodSettings: {toggleAxis: "ToggleAxis"}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Gets or sets the toggleAxis API, to invoke the corresponding service method to toggle row and column axes.
+//Gets the toggleAxis value 
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
+   
+//Sets the toggleAxis value 
+$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.toggleAxis", "ToggleAxis"); 
+
+{% endhighlight %}
 
 
 ### serviceMethodSettings.toolbarServices `string`
@@ -1126,6 +1223,31 @@ clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello
 </script>
 
 {% endhighlight %}
+
+
+### doPostBack(url, params)
+{:#methods:dopostback}
+
+Perform an asynchronous HTTP (FullPost) submit.
+
+#### Example
+
+{% highlight html %}
+
+<div id="OlapClient"></div> 
+ 
+<script>
+// Create OLAP Client
+$('#OlapClient').ejOlapClient({
+      url: "OlapClientService.svc"
+  });
+var clientObj = $("#OlapClient").data("ejOlapClient");//Initiates the instance
+clientObj.doPostBack("/OlapClientService.svc/Initialize", {"key", "Hello World"});
+</script>
+
+{% endhighlight %}
+
+
 
 
 ### getAxisPosition()

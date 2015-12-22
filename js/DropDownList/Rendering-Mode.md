@@ -12,15 +12,12 @@ documentation: ug
 DropDownList widget can be created in three ways.
 
 *  Using an input element 
-
 *  Using a select element 
-
 *  Using UL-LI 
 
 ## Using an input element
 
-
-Create an input element with the HTML 'id' attribute set to it. To initialize the DropDownList, you should call the 'ejDropDownList' jQuery plug-in function with the options as parameter
+Create an input element with the HTML "id" attribute set to it. To initialize the DropDownList, you should call the "ejDropDownList" jQuery plug-in function with the options as parameter
 
 You can bind the local JSON array data source to the DropDownList using [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) and [fields](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields) properties. Fields property is used to map with the corresponding columns.
 

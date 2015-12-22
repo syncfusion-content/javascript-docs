@@ -13,11 +13,11 @@ documentation: ug
 
 ### Fixed Size DropDownList widget
 
-You can customize the widget dimensions using [width](http://help.syncfusion.com/js/api/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/js/api/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the DropDownList wrapper will be assigned with “143px” width and “30px” height.
+You can customize the widget dimensions using [width](http://help.syncfusion.com/js/api/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/js/api/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the DropDownList wrapper will be assigned with "143px" width and "30px" height.
 
 ### Fixed size popup list
 
-You can customize the popup list dimensions using [popupWidth](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupwidth) and [popupHeight](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupheight) properties. Fixed size values can be specified in pixel or percentage values. By default popup width is auto and popup height is “152px”. 
+You can customize the popup list dimensions using [popupWidth](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupwidth) and [popupHeight](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupheight) properties. Fixed size values can be specified in pixel or percentage values. By default popup width is auto and popup height is "152px". 
 
 ### Auto Sizing
 

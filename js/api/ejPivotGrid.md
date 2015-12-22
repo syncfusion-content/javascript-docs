@@ -10,7 +10,7 @@ metacontent:
 
 # PivotGrid
 
-Custom Design for Pivot Grid control.
+Custom Design for PivotGrid control.
 
 
 #### Syntax
@@ -29,7 +29,7 @@ $(element).ejPivotGrid()
 <div id="PivotGrid"> </div> 
  
 <script>
-// Create Pivot Grid
+// Create PivotGrid
 $("#PivotGrid").ejPivotGrid(...);       
 </script>
 
@@ -162,6 +162,101 @@ $("#PivotGrid").ejPivotGrid("option", "enableCellContext","true");
 
 {% endhighlight %}
 
+
+### enableCellSelection `boolean`
+{:#members:enablecellselection}
+
+Enable the cell selection to select a specified range of value cells.
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+{% highlight html %}
+ 
+//To set the enableCellSelection option during initialization  
+$("#PivotGrid").ejPivotGrid({enableCellSelection:true});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Gets or sets the enableCellSelection, after initialization:
+//Gets the enableCellSelection state
+$("#PivotGrid").ejPivotGrid("option", "enableCellSelection");
+                 
+//Sets the enableCellSelection value
+$("#PivotGrid").ejPivotGrid("option", "enableCellSelection","true");
+
+{% endhighlight %}
+
+
+
+### enableConditionalFormatting `boolean`
+{:#members:enableconditionalformatting}
+
+Allows user to format a specific set of cells based on condition. 
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+//To set the Conditional Formatting option during initialization  
+$("#PivotGrid").ejPivotGrid({enableConditionalFormatting:true});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+//Gets or sets the Conditional Formatting, after initialization:
+//Gets the enableConditionalFormatting value
+$("#PivotGrid").ejPivotGrid("option", "enableConditionalFormatting");
+                 
+//Sets the enableConditionalFormatting value
+$("#PivotGrid").ejPivotGrid("option", "enableConditionalFormatting", "true");
+
+{% endhighlight %}
+
+
+### enableGroupingBar `boolean`
+{:#members:enablegroupingbar}
+
+Enables the display of GroupingBar allowing you to filter, sort and remove fields obtained from relational datasource.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+{% highlight html %}
+ 
+//To set the GroupingBar option during initialization  
+$("#PivotGrid").ejPivotGrid({enableGroupingBar:true});
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Gets or sets the GroupingBar, after initialization:
+//Gets the GroupingBar state
+$("#PivotGrid").ejPivotGrid("option", "enableGroupingBar");
+                 
+//Sets the GroupingBar value
+$("#PivotGrid").ejPivotGrid("option", "enableGroupingBar", "true");
+
+{% endhighlight %}
 
 
 ### enableJSONRendering `boolean`
@@ -307,7 +402,7 @@ $("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling","true");
 ### hyperlinkSettings `object`
 {:#members:hyperlinksettings}
 
-Allows the user to configure hyperlink settings to Pivot Grid control.
+Allows the user to configure hyperlink settings to PivotGrid control.
 
 
 
@@ -320,7 +415,7 @@ Allows the user to configure hyperlink settings to Pivot Grid control.
 
 {% highlight html %}
  
-//To configure the hyperlink settings to Pivot Grid during initialization  
+//To configure the hyperlink settings to PivotGrid during initialization  
 $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, enableRowHeaderHyperlink: true}});
 
 {% endhighlight %}
@@ -332,7 +427,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, 
 //Gets the hyperlink settings
 $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                  
-//Sets the hyperlink settings to Pivot Grid
+//Sets the hyperlink settings to PivotGrid
 $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings", {enableValueCellHyperlink: true, enableRowHeaderHyperlink: true}); 
 
 {% endhighlight %}
@@ -528,7 +623,7 @@ Contains the serialized JSON string which renders PivotGrid.
 ### layout `enum`
 {:#members:layout}
 
-Allows the user access the different layouts for Pivot Grid.
+Allows the user access the different layouts for PivotGrid.
 
 
 #### Default Value
@@ -631,7 +726,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings",  {initialize: "In
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
-Allows the user to set the custom name for the service method that&#39;s responsible for drilling up/down operation in Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for drilling up/down operation in PivotGrid.
 
 
 
@@ -644,7 +739,7 @@ Allows the user to set the custom name for the service method that&#39;s respons
 
 {% highlight html %}
  
-//To set drillDown API value, to invoke the corresponding service method for performing server-side operation while drilling up/down in Pivot Grid.   
+//To set drillDown API value, to invoke the corresponding service method for performing server-side operation while drilling up/down in PivotGrid.   
 $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { drillDown: "DrillGridMyMethod" } });
 
 {% endhighlight %}
@@ -652,7 +747,7 @@ $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { drillDown: "DrillGridMyMe
 
 {% highlight html %}
  
-//Get or set the drillDown API, to invoke the corresponding service method for performing server-side operation while drilling up/down in Pivot Grid:
+//Get or set the drillDown API, to invoke the corresponding service method for performing server-side operation while drilling up/down in PivotGrid:
 //Gets the drillDown value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
@@ -663,37 +758,131 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.drillDown", "DrillG
 
 
 
-### serviceMethodSettings.exportOptions `string`
-{:#members:servicemethodsettings-exportoptions}
+### serviceMethodSettings.exportPivotGrid `string`
+{:#members:servicemethodsettings-exportpivotgrid}
 
-Allows the user to set the custom name for the service method that&#39;s responsible for performing exporting operation in Pivot Grid.
+Allows the user to set the custom name for the service method that’s responsible for exporting the PivotGrid.
 
 
 #### Default Value
 
-* "ExportOptions"
+* "Export"
 
 
 #### Example
 
 {% highlight html %}
  
-//To set exportOptions API value, to invoke the corresponding service method for performing server-side operation while exporting.  
-$("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { exportOptions: "ExportOptionsMyMethod" } });
+//To set exportpivotgrid API value, to invoke the corresponding service method for performing exporting the PivotGrid.
+
+$("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { exportPivotGrid: "ExportMyMethod" } })
 
 {% endhighlight %}
 
 
 {% highlight html %}
  
-//Gets or sets the exportOptions API, to invoke the corresponding service method for performing server-side operation while exporting.:
-//Gets the exportOptions value   
+//Gets or sets the exportPivotGrid  API, to invoke the corresponding service method for performing exporting the PivotGrid.
+//Gets the exportPivotGrid value  
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
-//Sets the exportOptions value                          
-$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "ExportOptionsMyMethod");
+//Sets the exportPivotGrid value                          
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportPivotGrid", "ExportMyMethod");
 
- {% endhighlight %}
+{% endhighlight %}
+
+
+### serviceMethodSettings.deferUpdate `string`
+{:#members:servicemethodsettings-deferupdate}
+
+Allows the user to set the custom name for the service method that’s responsible for performing the server-side actions on defer update.
+
+#### Default Value
+
+* "DeferUpdate"
+
+#### Example
+
+{% highlight html %}
+ 
+//To set deferupdate API value, to invoke the corresponding service method for performing the server side actions for defer update.
+$("#PivotGrid").ejPivotGrid({ servieMethods",  {deferUpdate: "DeferUpdateMethod"} );
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Gets or sets the deferupdate API, to invoke the corresponding service method for performing the server side actions for defer update.
+//Gets the deferupdate value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the deferupdate value                     
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.deferUpdate", "DeferUpdateMethod" ); 
+
+{% endhighlight %}
+
+
+### serviceMethodSettings.fetchMembers `string`
+{:#members:servicemethodsettings-fetchmembers}
+
+Allows the user to set the custom name for the service method that’s responsible to getting the values for the tree-view inside filter dialog.
+
+#### Default Value
+
+* "FetchMembers"
+
+#### Example
+
+{% highlight html %}
+ 
+//To set fetchmembers API value, to invoke the corresponding service method for getting the values for the tree-view inside filter dialog.
+$("#PivotGrid").ejPivotGrid({ servieMethods",  {fetchMembers: "FetchMembersMethod"} );
+
+{% endhighlight %}
+ 
+
+{% highlight html %}
+ 
+//Gets or sets the fetchmembers API, to invoke the corresponding service method for getting the values for the tree-view inside filter dialog.
+//Gets the fetchmembers value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the fetchmembers value                     
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.fetchMembers", "FetchMembersMethod" ); 
+
+{% endhighlight %}
+ 
+
+
+### serviceMethodSettings.filtering `string`
+{:#members:servicemethodsettings-filtering}
+
+Allows the user to set the custom name for the service method that's responsible for filtering operation in PivotGrid.
+
+#### Default Value
+
+* "Filtering"
+
+#### Example
+
+{% highlight html %}
+ 
+//To set filtering API value, to invoke the corresponding service method for filtering operation in PivotGrid.
+$("#PivotGrid").ejPivotGrid({ servieMethods",  {filtering : "FilteringMethod"} );
+
+{% endhighlight %}
+ 
+{% highlight html %}
+ 
+//Gets or sets the filtering API, to invoke the corresponding service method for filtering operation in PivotGrid.
+//Gets the filtering value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the filtering value                     
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.filtering", "FilteringMethod" ); 
+
+{% endhighlight %}
 
 
 
@@ -701,7 +890,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "Ex
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method that&#39;s responsible for initializing Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for initializing PivotGrid.
 
 
 #### Default Value
@@ -713,7 +902,7 @@ Allows the user to set the custom name for the service method that&#39;s respons
 
 {% highlight html %}
  
-//To set initialize API value, to invoke the corresponding service method for Pivot Grid initialization.
+//To set initialize API value, to invoke the corresponding service method for PivotGrid initialization.
 $("#PivotGrid").ejPivotGrid({ servieMethods",  {initialize: "InitializeGrid"} );
 
  {% endhighlight %}
@@ -721,7 +910,7 @@ $("#PivotGrid").ejPivotGrid({ servieMethods",  {initialize: "InitializeGrid"} );
 
 {% highlight html %}
  
-//Gets or sets the initialize API, to invoke the corresponding service method for Pivot Grid initialization:
+//Gets or sets the initialize API, to invoke the corresponding service method for PivotGrid initialization:
 //Gets the initialize value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
@@ -732,11 +921,68 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.initialize", "Initi
 
 
 
+### serviceMethodSettings.nodeDropped `string`
+{:#members:servicemethodsettings-nodedropped}
+
+Allows the user to set the custom name for the service method that's responsible for the server-side action on dropping a node into Field List.
+
+#### Default Value
+
+* "NodeDropped"
+
+
+{% highlight html %}
+ 
+//To set nodedropped API value, to invoke the corresponding service method for the server-side action on dropping a node into Field List.
+$("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { nodeDropped: "nodedroppedMethod" } });
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Gets or sets the nodedropped API, to invoke the corresponding service method for the server-side action on dropping a node into Field List.
+//Gets the nodedropped value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the nodedropped value                         
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.nodeDropped",  "nodedroppedMethod"); 
+
+{% endhighlight %}
+
+
+
+### serviceMethodSettings.nodeStateModified `string`
+{:#members:servicemethodsettings-nodestatemodified}
+
+Allows the user to set the custom name for the service method that’s responsible for the server-side action on changing the checked state of a node in Field list.
+
+#### Default Value
+
+* "NodeStateModified"
+
+{% highlight html %}
+ 
+//To set nodestatemodified API value, to invoke the corresponding service method for changing the checked state of a node in Field list.
+$("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { nodeStateModified: "NodeStateModifiedMethod" } });
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Gets or sets the nodestatemodified API, to invoke the corresponding service method for changing the checked state of a node in Field list: 
+//Gets the nodestatemodified value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the nodestatemodified value                         
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.nodeStateModified",  "NodeStateModifiedMethod"); 
+
+{% endhighlight %}
+
 
 ### serviceMethodSettings.paging `string`
 {:#members:servicemethodsettings-paging}
 
-Allows the user to set the custom name for the service method that&#39;s responsible for performing paging operation in Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for performing paging operation in PivotGrid.
 
 
 #### Default Value
@@ -748,7 +994,7 @@ Allows the user to set the custom name for the service method that&#39;s respons
 
 {% highlight html %}
  
-//To set paging API value, to invoke the corresponding service method for performing server-side operation during paging in Pivot Grid.  
+//To set paging API value, to invoke the corresponding service method for performing server-side operation during paging in PivotGrid.  
 $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { paging: "PagingMyMethod" } });
 
 {% endhighlight %}
@@ -756,12 +1002,42 @@ $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { paging: "PagingMyMethod" 
 
 {% highlight html %}
  
-//Gets or sets the paging API, to invoke the corresponding service method for performing server-side operation during paging in Pivot Grid:
+//Gets or sets the paging API, to invoke the corresponding service method for performing server-side operation during paging in PivotGrid:
 //Gets the paging value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
 //Sets the paging value                         
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.paging",  "PagingMyMethod"); 
+
+{% endhighlight %}
+
+
+### serviceMethodSettings.sorting `string`
+{:#members:servicemethodsettings-sorting}
+
+Allows the user to set the custom name for the service method that's responsible for sorting operation in PivotGrid.
+
+#### Default Value
+
+* "Sorting"
+
+#### Example
+
+{% highlight html %}
+ 
+//To set sorting API value, to invoke the corresponding service method for sorting operation in PivotGrid. 
+$("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { sorting: "SortingMethod" } });
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Gets or sets the sorting API, to invoke the corresponding service method for sorting operation in PivotGrid.
+//Gets the sorting value   
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
+                                             
+//Sets the sorting value                         
+$("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.sorting", "SortingMethod"); 
 
 {% endhighlight %}
 
@@ -816,7 +1092,7 @@ Perform an asynchronous HTTP (Ajax) request.
 <div id="PivotGrid"></div> 
  
 <script>
-// Create Pivot Grid
+// Create pivotGrid
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
@@ -857,7 +1133,7 @@ gridObj.doPostBack("/PivotGridService.svc/Initialize", {"key", "Hello World"});
 ### refreshPagedPivotGrid()
 {:#methods:refreshpagedpivotgrid}
 
-This function re-renders the Pivot Grid on clicking the navigating buttons on Pivot Pager.
+This function re-renders the PivotGrid on clicking the navigating buttons on Pivot Pager.
 
 
 #### Example
@@ -867,7 +1143,7 @@ This function re-renders the Pivot Grid on clicking the navigating buttons on Pi
 <div id="PivotGrid"></div> 
  
 <script>
-// Refreshing Pivot Grid while perform paging.
+// Refreshing pivotGrid while perform paging.
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
@@ -881,7 +1157,7 @@ gridObj.refreshPagedPivotGrid("series", 2);
 ### renderControlFromJSON()
 {:#methods:rendercontrolfromjson}
 
-This function receives the JSON formatted datasource to render the Pivot Grid control.
+This function receives the JSON formatted datasource to render the PivotGrid control.
 
 #### Example
 
@@ -890,13 +1166,13 @@ This function receives the JSON formatted datasource to render the Pivot Grid co
 <div id="PivotGrid"></div> 
  
 <script>
-// Rendering Pivot Grid from given JSON formatted data.
+// Rendering pivotGrid from given JSON formatted data.
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
 var gridObj = $("#PivotGrid").data("ejPivotGrid");
 gridObj.renderControlFromJSON({this.getJSONRecords()});
-// Rendering Pivot Grid.
+// Rendering pivotGrid.
 </script>
 
 {% endhighlight %}
@@ -923,7 +1199,7 @@ Fires after the service is invoked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid
+<td class="description">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -937,19 +1213,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">return the current action of Pivot Grid control.</td>
+<td class="description">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with Pivot Grid control.</td>
+<td class="description">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of Pivot Grid control.</td>
+<td class="description">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -961,7 +1237,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model</td>
+<td class="description">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -981,7 +1257,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//afterServiceInvoke event for Pivot Grid
+//afterServiceInvoke event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    afterServiceInvoke: function (args) {}
 });     
@@ -1007,7 +1283,7 @@ Fires before service invoked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid
+<td class="description">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1021,19 +1297,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">return the current action of Pivot Grid control.</td>
+<td class="description">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with Pivot Grid control.</td>
+<td class="description">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of Pivot Grid control.</td>
+<td class="description">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1045,7 +1321,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model</td>
+<td class="description">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1064,7 +1340,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//beforeServiceInvoke event for Pivot Grid
+//beforeServiceInvoke event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    beforeServiceInvoke: function (args) {}
 });      
@@ -1091,7 +1367,7 @@ Fires when the cell is right clicked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1143,7 +1419,7 @@ uniqueName{% endhighlight %}</td>
 
 {% highlight html %}
  
-//cellContext event for Pivot Grid
+//cellContext event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    cellContext: function (args) {}
 });      
@@ -1151,10 +1427,11 @@ $("#PivotGrid").ejPivotGrid({
 {% endhighlight %}
 
 
-### columnHeaderHyperlinkClick
-{:#events:columnheaderhyperlinkclick}
+### cellSelection
+{:#events:cellselection}
 
-Fires when the column header cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the specific range of cell values are selected.
+
 
 <table class="params">
 <thead>
@@ -1169,7 +1446,89 @@ Fires when the column header cell is clicked once if Pivot Grid enabled with hyp
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from PivotGrid.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+args{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">returns the original event args.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellvalue{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Returns the selected cell values.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+rowheaders{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Returns the selected value cells row headers.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+colheaders{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Returns the selected value cells column headers.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+measure{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Returns the selected value cells measure.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+measureValue{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Return the row and column measure count.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+//CellSelection event for PivotGrid
+$("#PivotGrid").ejPivotGrid({
+   cellSelection: function (args) {}
+});      
+
+{% endhighlight %}
+
+### columnHeaderHyperlinkClick
+{:#events:columnheaderhyperlinkclick}
+
+Fires when the column header cell is clicked once if PivotGrid enabled with hyperlink.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type">Object</td>
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1221,7 +1580,7 @@ uniqueName{% endhighlight %}</td>
 
 {% highlight html %}
  
-//columnHeaderHyperlinkClick event for Pivot Grid
+//columnHeaderHyperlinkClick event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    columnHeaderHyperlinkClick: function (args) {}
 });      
@@ -1232,7 +1591,7 @@ $("#PivotGrid").ejPivotGrid({
 ### drillSuccess
 {:#events:drillsuccess}
 
-Fires after drill down of Pivot Grid.
+Fires after drill down of Pivotgrid.
 
 <table class="params">
 <thead>
@@ -1247,7 +1606,7 @@ Fires after drill down of Pivot Grid.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid
+<td class="description">Event parameters from Pivotgrid
 <table class="params">
 <thead>
 <tr>
@@ -1267,7 +1626,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model</td>
+<td class="description">returns the Pivotgrid model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1288,7 +1647,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//drillSuccess event for Pivot Grid
+//drillSuccess event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    drillSuccess: function (args) {}
 });      
@@ -1300,7 +1659,7 @@ $("#PivotGrid").ejPivotGrid({
 ### load
 {:#events:load}
 
-Fires when Pivot Grid Start loading.
+Fires when Pivotgrid Start loading.
 
 <table class="params">
 <thead>
@@ -1315,7 +1674,7 @@ Fires when Pivot Grid Start loading.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1335,7 +1694,7 @@ args{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivot Grid control.</td>
+<td class="description">returns the current action of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1347,7 +1706,7 @@ customObject{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivot Grid control.</td>
+<td class="description">returns the HTML of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1359,7 +1718,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model.</td>
+<td class="description">returns the Pivotgrid model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1380,7 +1739,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//load event for Pivot Grid
+//load event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    load: function (args) {}
 });      
@@ -1392,7 +1751,7 @@ $("#PivotGrid").ejPivotGrid({
 ### renderComplete
 {:#events:rendercomplete}
 
-Fires when Pivot Grid completely finished its rendering.
+Fires when Pivotgrid completely finished its rendering.
 
 <table class="params">
 <thead>
@@ -1407,7 +1766,7 @@ Fires when Pivot Grid completely finished its rendering.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1427,7 +1786,7 @@ args{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivot Grid control.</td>
+<td class="description">returns the current action of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1439,7 +1798,7 @@ customObject{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivot Grid control.</td>
+<td class="description">returns the HTML of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1451,7 +1810,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model.</td>
+<td class="description">returns the Pivotgrid model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1471,7 +1830,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//renderComplete event for Pivot Grid
+//renderComplete event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    renderComplete: function (args) {}
 });      
@@ -1499,7 +1858,7 @@ Fires while any discrepancies occurs during the rendering time.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1519,7 +1878,7 @@ args{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivot Grid control.</td>
+<td class="description">returns the current action of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1531,7 +1890,7 @@ customObject{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivot Grid control.</td>
+<td class="description">returns the HTML of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1549,7 +1908,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model.</td>
+<td class="description">returns the Pivotgrid model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1570,7 +1929,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//renderFailure event for Pivot Grid
+//renderFailure event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    renderFailure: function (args) {}
 });      
@@ -1583,7 +1942,7 @@ $("#PivotGrid").ejPivotGrid({
 ### renderSuccess
 {:#events:rendersuccess}
 
-Fires when Pivot Grid successfully finished its rendering.
+Fires when Pivotgrid successfully finished its rendering.
 
 <table class="params">
 <thead>
@@ -1598,7 +1957,7 @@ Fires when Pivot Grid successfully finished its rendering.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1618,7 +1977,7 @@ args{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivot Grid control.</td>
+<td class="description">returns the current action of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1630,7 +1989,7 @@ customObject{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivot Grid control.</td>
+<td class="description">returns the HTML of Pivotgrid control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1642,7 +2001,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type">object</td>
-<td class="description">returns the Pivot Grid model.</td>
+<td class="description">returns the Pivotgrid model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1663,7 +2022,7 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-//renderSuccess event for Pivot Grid
+//renderSuccess event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    renderSuccess: function (args) {}
 });      
@@ -1676,7 +2035,7 @@ $("#PivotGrid").ejPivotGrid({
 ### rowHeaderHyperlinkClick
 {:#events:rowheaderhyperlinkclick}
 
-Fires when the row header cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the row header cell is clicked once if Pivotgrid enabled with hyperlink.
 
 <table class="params">
 <thead>
@@ -1691,7 +2050,7 @@ Fires when the row header cell is clicked once if Pivot Grid enabled with hyperl
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1744,7 +2103,7 @@ uniqueName{% endhighlight %}</td>
 
 {% highlight html %}
  
-//rowHeaderHyperlinkClick event for Pivot Grid
+//rowHeaderHyperlinkClick event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    rowHeaderHyperlinkClick: function (args) {}
 });      
@@ -1772,7 +2131,7 @@ Fires when the summary cell is clicked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1825,7 +2184,7 @@ uniqueName{% endhighlight %}</td>
 
 {% highlight html %}
  
-//summaryCellHyperlinkClick event for Pivot Grid
+//summaryCellHyperlinkClick event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    summaryCellHyperlinkClick: function (args) {}
 });      
@@ -1837,7 +2196,7 @@ $("#PivotGrid").ejPivotGrid({
 ### valueCellHyperlinkClick
 {:#events:valuecellhyperlinkclick}
 
-Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the value cell is clicked once if Pivotgrid enabled with hyperlink.
 
 <table class="params">
 <thead>
@@ -1852,7 +2211,7 @@ Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivot Grid.
+<td class="description">Event parameters from Pivotgrid.
 <table class="params">
 <thead>
 <tr>
@@ -1904,7 +2263,7 @@ uniqueName{% endhighlight %}</td>
 
 {% highlight html %}
  
-//valueCellHyperlinkClick event for Pivot Grid
+//valueCellHyperlinkClick event for Pivotgrid
 $("#PivotGrid").ejPivotGrid({
    valueCellHyperlinkClick: function (args) {}
 });      

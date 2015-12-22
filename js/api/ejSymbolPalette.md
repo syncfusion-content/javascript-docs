@@ -1,38 +1,20 @@
 ---
 layout: post
 title: ejSymbolPalette
+description: API reference for ejSymbolPalette
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: symbolpalette, ejSymbolPalette, symbol palette api, syncfusion
 ---
 
-defined values to render symbolpalette
+# ejSymbolPalette
 
+The symbol palette control allows to predefine the frequently used nodes and connectors and to drag and drop those nodes/connectors to drawing area
 
+#### Syntax
+$(element).ejSymbolPalette()
 
-
-
-
-
-
-
-
-$(element).ejSymbolPalette<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -40,801 +22,386 @@ Example
 <script>
 //Create symbolpalette
 $("#symbolpalette").ejSymbolPalette();
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-Requires
-{:.require}
-
-
-
+#### Requires
 
 * module:jQuery.js
-
-
 * module:ej.common.all
-
-
 * module:ej.widgets.all
-
-
 * module:jquery.easing.js
-
-
 * module:jquery.globalize.js
-
-
 * module:jsrender.js
-
-
 * module:jquery.validate.js
-
-
 * module:jquery.validate.unobtrusive.js
-
-
-
 
 ## Members
 
-
-
-
-
-
-
-
-### allowDrag<span class="type-signature type boolean">Boolean</span>
+### allowDrag `Boolean`
 {:#members:allowdrag}
 
+Defines whether the symbols can be dragged from palette or not
 
-
-
-
-
-
-
-Enable or disable the Drag function of items in the palette
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({allowDrag: true});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette( { allowDrag: false } );
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `String`
 {:#members:cssclass}
 
+Customizes the style of the symbol palette
 
-
-
-
-
-
-
-Used to change the style of the node
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * "e-symbolpalette"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
 $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
+### defaultSettings `Object`
+{:#members:defaultsettings}
 
+Defines the default properties of nodes and connectors
 
+### defaultSettings.node `Object`
+{:#members:defaultsettings-node}
 
+Defines the default properties of the nodes
 
-
-### diagramId<span class="type-signature type object">Object</span>
-{:#members:diagramid}
-
-
-
-
-
-
-
-
-The diagramId of the palette
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette({
+	defaultSettings: { node : { fillColor:"red" } }
+});
+</script>
 
+{% endhighlight %}
 
+### defaultSettings.connector `Object`
+{:#members:defaultsettings-connector}
 
+Defines the default properties of the connectors
 
+#### Default Value
 
+* null
 
+#### Example
 
-### headerHeight<span class="type-signature type number">Number</span>
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	defaultSettings: { connector: { lineColor: "red" } }
+});
+</script>
+
+{% endhighlight %}
+
+### diagramId `String`
+{:#members:diagramid}
+
+Sets the Id of the diagram, over which the symbols will be dropped
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({ diagramId: "diagram" });
+</script>
+
+{% endhighlight %}
+
+### headerHeight `Number`
 {:#members:headerheight}
 
+Sets the height of the palette headers
 
-
-
-
-
-
-
-Height of the palette header
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 30
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({headerHeight: 30});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette( { headerHeight: 25 } );
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### height<span class="type-signature type number">Number</span>
+### height `Number`
 {:#members:height}
 
+Defines the height of the symbol palette
 
-
-
-
-
-
-
-The height of the palette
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 400
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({height:500});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette( { height:300 } );
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### paletteItemHeight<span class="type-signature type number">Number</span>
+### paletteItemHeight `Number`
 {:#members:paletteitemheight}
 
+Defines the height of the palette items
 
-
-
-
-
-
-
-Height of the items in palette
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 50
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette({ paletteItemHeight: 30 });
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### paletteItemWidth<span class="type-signature type number">Number</span>
+### paletteItemWidth `Number`
 {:#members:paletteitemwidth}
 
+Defines the width of the palette items
 
-
-
-
-
-
-
-Width of the palette item
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 50
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette({ paletteItemWidth: 30 });
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### palettes<span class="type-signature type array">Array</span>
+### palettes `Array`
 {:#members:palettes}
 
+An array of JSON objects, where each object represents a node/connector
 
+#### Default Value
 
+* []
 
-
-
-
-
-Collection of palette items
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({palettes: palette});
-</script>{% endhighlight %}
+	
+var palette = {
+		name: "Basic Shapes",
+		expanded: true,
+		items: [{
+			name: "Rectangle", height: 40, width: 80
+		}]
+	};
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Initializes the palette collection
+	palettes: [ palette ]
+});
 
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-### previewHeight<span class="type-signature type number">Number</span>
+### previewHeight `Number`
 {:#members:previewheight}
 
+Defines the preview height of the symbols
 
-
-
-
-
-
-
-Preview height of the palette items
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 100
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewHeight: 100});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette( { previewHeight: 50 });
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### previewOffset<span class="type-signature type object">Object</span>
+### previewOffset `Object`
 {:#members:previewoffset}
 
+Defines the offset value to be left between the mouse cursor and symbol previews
 
+#### Default Value
 
+* (110, 110)
 
-
-
-
-
-The preview offset for the palette items
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* (102, 102)
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette({previewOffset: {x: 50, y: 50}});
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### previewWidth<span class="type-signature type number">Number</span>
+### previewWidth `Number`
 {:#members:previewwidth}
 
+Defines the width of the symbol previews
 
-
-
-
-
-
-
-Preview width of the palette items
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 100
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
-$("#symbolpalette").ejSymbolPalette({previewWidth: 100});
-</script>{% endhighlight %}
+$("#symbolpalette").ejSymbolPalette( { previewWidth: 50 });
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### selectedPaletteName<span class="type-signature type number">Number</span>
-{:#members:selectedpalettename}
-
-
-
-
-
-
-
-
-The selectedPaletteName of the symbol palette
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 0
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<div id="symbolpalette"></div>
-<script>
-$("#symbolpalette").ejSymbolPalette({selectedPaletteName: "paletteName"});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### showPaletteItemText<span class="type-signature type boolean">Boolean</span>
+### showPaletteItemText `Boolean`
 {:#members:showpaletteitemtext}
-
-
-
-
-
-
-
 
 Enable or disable the palette item text
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
 $("#symbolpalette").ejSymbolPalette({showPaletteItemText: true});
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### width<span class="type-signature type number">Number</span>
+### width `Number`
 {:#members:width}
-
-
-
-
-
-
-
 
 The width of the palette
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 250
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="symbolpalette"></div>
 <script>
 $("#symbolpalette").ejSymbolPalette({width:300});
-</script>{% endhighlight %}
+</script>
 
-
-
-
+{% endhighlight %}
 
 ## Events
 
+### selectionChange
+{:#events:selectionchange}
 
-
-
-
-
-
-
-### selectionChanged
-{:#events:selectionchanged}
-
-
-
-
-
-
-
-
-Triggers When selection is changed
+Triggers when a palette item is selected or unselected
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-changetype{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">return should be inserted or removed</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns node or connector which to be added or deleted</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">argument</td>
+			<td class="type">Object</td>
+			<td class="description">args parameter from diagram</td>
+		</tr>
+		<tr>
+			<td class="name">argument.changetype</td>
+			<td class="type">String</td>
+			<td class="description">return should be inserted or removed</td>
+		</tr>
+		<tr>
+			<td class="name">argument.element</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns node or connector which to be added or deleted</td>
+		</tr>
+	</tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
-//  selectionChange event for diagram
+
+// selectionChange event for symbol palette
 $("#symbolpalette").ejSymbolPalette({
-selectionChange:function (args)  {}
-       });{% endhighlight %}
+	selectionChange:function (args) {}
+});
 
-
-
-
+{% endhighlight %}

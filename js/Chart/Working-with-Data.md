@@ -73,7 +73,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 ## Remote Data
 
-You can bind the remote data to the chart by using the DataManager and you can use the [`query`]((../api/ejchart#members:series-query)) property of the series to filter the data from the dataSource.
+You can bind the remote data to the chart by using the DataManager and you can use the [`query`](../api/ejchart#members:series-query) property of the series to filter the data from the dataSource.
 
 
 {% highlight js %}
