@@ -12,7 +12,7 @@ documentation: ug
 ## Display View
 
 ### Tab View
-In Tab View representation, both Grid and Chart will be displayed in a separate tab.  This could be set using the [`controlPlacement`](/js/api/ejolapclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option.  By default, Tab value is set.
+In Tab View representation, both Grid and Chart will be displayed in a separate tab.  This could be set using the [`controlPlacement`](/js/api/ejolapclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option.  By default, **Tab** value is set.
 
 {% highlight js %}
 
@@ -48,7 +48,7 @@ $("#OlapClient").ejOlapClient({
 ## Default View
 
 ### Grid View
-To display Grid control by default, set [`defaultView`](/js/api/ejolapclient#members:displaysettings-defaultview) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to Grid, which is the default value of the property.
+To display Grid control by default, set [`defaultView`](/js/api/ejolapclient#members:displaysettings-defaultview) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **Grid**, which is the default value of the property.
 
 {% highlight js %}
 

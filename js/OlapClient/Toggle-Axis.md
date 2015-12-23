@@ -13,10 +13,6 @@ Toggle Axis support swaps all the axis elements between column and row axes, the
 
 ![](/js/OlapClient/Toggle-Axis_images/before toggle axis.png)
 
-Before toggle axis
-{:.caption}
 
 ![](/js/OlapClient/Toggle-Axis_images/after toggle axis.png)
 
-After toggle axis
-{:.caption}

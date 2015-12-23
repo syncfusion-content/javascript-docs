@@ -80,7 +80,7 @@ The following screenshot displays the data after applying sorting in ascending o
 
 ## Grouping
 
-The data can be grouped when more than one dimension element is added to Categorical or Series in Axis Element Builder.  Based on the order of addition, data is grouped and the report is updated. In the following example, the Date dimension values get grouped, with respect to Customer dimension values.  Likewise multiple dimension members can be grouped by dragging the elements from Cube Dimension Browsers to Axis Element Builder.
+The data can be grouped when more than one dimension element is added to Categorical or Series in Axis Element Builder.  Based on the order of addition, data is grouped and the report is updated. In the following example, the **Date** dimension values get grouped, with respect to **Customer** dimension values.  Likewise multiple dimension members can be grouped by dragging the elements from Cube Dimension Browsers to Axis Element Builder.
 
 ![](Data-Exploration_images/grouping.png)
 
