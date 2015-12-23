@@ -7,7 +7,9 @@ control: OlapGauge
 documentation: ug
 ---
 
-# Localization in OlapGauge Control
+# Localization
+
+## Localization in OlapGauge Control
 
  We can localize the OlapGauge controls text with a collection of localized strings using **"ej.olap.OlapGauge.locale"** for different cultures. By default, the OlapGauge control is localized in **"en-US"**.
 

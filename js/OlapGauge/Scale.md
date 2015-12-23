@@ -49,7 +49,7 @@ $("#OlapGauge1").ejOlapGauge({
         pointerCap: {
             radius: 5,
             borderWidth: 2,
-            borderColor: "black",
+            borderColor: "green",
             backgroundColor: "yellow"
         },
         //...
