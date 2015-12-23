@@ -24,7 +24,7 @@ Also hyperlink option provides separate event for row, column, value and summary
 * [`summaryCellHyperlinkClick`](/js/api/ejpivotgrid#events:summarycellhyperlinkclick) - Returns column header information through event on hyperlink click.
 * [`valueCellHyperlinkClick`](/js/api/ejpivotgrid#events:valuecellhyperlinkclick) - Returns value cell information through event on hyperlink click.
 
-{% highlight html %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -54,9 +54,9 @@ $(function() {
 ##Selection
 You can select a particular range of value cells from PivotGrid and manipulate/display them. Cell selection is applicable only for values cells and you can enable this functionality by setting `enableCellSelection` property to true.
 
-The "cellSelection" event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
+The **"cellSelection"** event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
 
-{% highlight html %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -80,9 +80,9 @@ $(function() {
 ##Cell Context
 Cell context allows user to perform any custom operation on cell right-click. For example, you can create and display content menu on cell right-click.
 
-Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid#members:enablecellcontext) property to true. The "cellContext" event would be raised as soon as right-click is done providing cell information through event argument.
+Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid#members:enablecellcontext) property to true. The **"cellContext"** event would be raised as soon as right-click is done providing cell information through event argument.
 
-{% highlight html %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -101,7 +101,7 @@ cell_RightClick = function(evt) {
 ##Conditional Formatting
 Conditional formatting in PivotGrid allows user to highlight particular cells with certain color, font-style, font-family etc. Based on the condition it has met.
   
-Conditional formatting is enabled by setting `enableConditionalFormatting` property to true and the formatting dialog is launched when `createConditionalDialog` method is invoked.
+Conditional formatting is enabled by setting `enableConditionalFormatting` property to true and the formatting dialog is launched when **"createConditionalDialog"** method is invoked.
 
 {% highlight html %}
 

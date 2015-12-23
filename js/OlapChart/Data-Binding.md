@@ -244,7 +244,7 @@ namespace OlapChartDemo
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapClientService` contract and hence it is `OlapClientDemo.IOlapClientService`.
+* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapChartService` contract and hence it is `OlapChartDemo.IOlapChartService`.
 * **Binding**: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * **behaviorConfiguration**: This property contains the name of the behavior to be used in the endpoint.
 
