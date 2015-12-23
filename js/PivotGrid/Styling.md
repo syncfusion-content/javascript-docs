@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 #Styling
-By default, PivotGrid supports 13 different themes.
+By default, PivotGrid supports **13** different themes.
 
 * default-theme
 * flat-azure-dark
