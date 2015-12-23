@@ -13,7 +13,7 @@ documentation: ug
 
 We can localize the OlapClient controls text with a collection of localized strings using **"ej.olap.OlapClient.locale"** for different cultures. By default, the OlapClient control is localized in **"en-US".**
 
-Following code example illustrates on how to localize OlapClient based on French culture.
+Following code example illustrates on how to localize OlapClient based on **French** culture.
 
 {% highlight js %}
 
