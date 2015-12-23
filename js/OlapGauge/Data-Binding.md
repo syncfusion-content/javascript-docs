@@ -7,9 +7,9 @@ control: OlapGauge
 documentation: ug
 ---
 
-# DataBinding 
+#Data Binding 
 
-###Binding OlapGauge to Offline Cube
+##Binding OlapGauge to Offline Cube
 To connect an OLAP Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -19,7 +19,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapGauge to Cube in local SQL Server
+##Binding OlapGauge to Cube in local SQL Server
 To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -29,7 +29,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapGauge to Cube in online SQL Server
+##Binding OlapGauge to Cube in online SQL Server
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set host server link and database name needs to be set in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -39,7 +39,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapGauge to Cube in online Mondrian Server
+##Binding OlapGauge to Cube in online Mondrian Server
 To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -50,30 +50,31 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-###Binding OlapGauge to Cube in online ActivePivot Server
+##Binding OlapGauge to Cube in online ActivePivot Server
 To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
 {% endhighlight %}
 
-###WCF
+##WCF
+
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as **“OlapGaugeService.svc”**, click Add.
+To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“OlapGaugeService.svc”**, click Add.
  
-Now WCF service is added into your application successfully that contain the following files. 
+Now, WCF service is added into your application successfully with the following files. The utilization of these files are explained in the following sections.
 
 * OlapGaugeService.svc
 * OlapGaugeService.svc.cs
-* OlapGaugeService.cs
+* IOlapGaugeService.cs
 
 **Configuring WCF Service Class**
-Remove the “DoWork” method present inside both OlapGaugeService.svc.cs and IOlapGaugeService.cs files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `OlapGaugeService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the “DoWork” method present inside both OlapGaugeService.svc.cs and IOlapGaugeService.cs files. Next, add **AspNetCompatibilityRequirements** attribute on top of main class present inside `OlapGaugeService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
@@ -98,9 +99,9 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 * Microsoft.AnalysisServices.AdomdClient.dll
 * Syncfusion.Linq.Base.dll 
-* Syncfusion.Olap.Base.dll, 
+* Syncfusion.Olap.Base.dll
 * Syncfusion.EJ.dll  
-* Syncfusion.EJ.Olap.dll.
+* Syncfusion.EJ.Olap.dll
 
 **List of Namespaces**
 
@@ -109,10 +110,10 @@ The following are the list of namespaces to be added on top of the main class in
 {% highlight c# %}
 
 using System.ServiceModel.Activation;
+using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript.Olap;
-using System.Web.Script.Serialization;
 
 namespace OlapGaugeDemo
 {
@@ -148,7 +149,7 @@ namespace OlapGaugeDemo
 
 First, define the service methods inside IOlapGaugeService interface, found in `IOlapGaugeService.cs` file, created while adding WCF Service to your Web Application.
 
- {% highlight c# %}
+{% highlight c# %}
 
 namespace OlapGaugeDemo
 {
@@ -159,7 +160,12 @@ namespace OlapGaugeDemo
         Dictionary < string, object > InitializeGauge(string action, string customObject);
     }
 }
-Secondly, elaborate the service methods inside the main class, found in OlapGaugeService.svc.cs file
+
+{% endhighlight %}
+
+Secondly, elaborate the service methods inside the main class, found in `OlapGaugeService.svc.cs` file
+
+{% highlight c# %}
 
 namespace OlapGaugeDemo
 {
@@ -226,22 +232,25 @@ namespace OlapGaugeDemo
 }
 {% endhighlight %}
 
-`Configuring Web Configuration File`
+**Configuring Web Configuration File**
 
-You can expose services through the properties, binding, contract and address by using an endpoint.
+You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to IOlapGaugeService contract and hence it is OlapGaugeDemo.IOlapGaugeService.
-* Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
-* behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
+* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapClientService` contract and hence it is `OlapClientDemo.IOlapClientService`.
+* **Binding**: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
+* **behaviorConfiguration**: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated as follows. 
  
 {% highlight xml %}
 
-<system.serviceModel> …… ……
+<system.serviceModel> 
+    …… 
+    ……
     <services>
         <service name="OlapGaugeDemo.OlapGaugeService">
-            <endpoint address="" behaviorConfiguration="OlapgaugeDemo.OlapGaugeServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="OlapGaugeDemo.IOlapGaugeService" /> </service>
+            <endpoint address="" behaviorConfiguration="OlapGaugeDemo.OlapGaugeServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="OlapGaugeDemo.IOlapGaugeService" /> 
+        </service>
     </services>
 </system.serviceModel>
 {% endhighlight %}
@@ -254,15 +263,19 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
     <behaviors>
         <endpointBehaviors>
             <behavior name="OlapGaugeDemo.OlapGaugeServiceAspNetAjaxBehavior">
-                <enableWebScript /> </behavior>
+                <enableWebScript /> 
+            </behavior>
         </endpointBehaviors>
-    </behaviors> …… …… 
+    </behaviors> 
+    …… 
+    …… 
 </system.serviceModel>
 
 {% endhighlight %}
 
 
 N> In this example, **“OlapGaugeDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“OlapGaugeService”** indicates the name of the WCF service created.
+
 Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
