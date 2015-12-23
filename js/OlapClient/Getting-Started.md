@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-##Creating a simple application with OlapClient.
+##Creating a simple application with OlapClient
 
-This section explains on how to create a simple OlapClient.
+This section covers the information required to create a simple OlapClient bound to OLAP datasource.
 
->**NOTE: This section illustrates by creating a simple Web Application through Visual Studio IDE, since OlapClient is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that transfers data to server-side, process and return backs the data to client-side for control re-rendering. The service utilized to communicate can be either WCF or WebAPI based on your requirement and illustrated both for your convenience.**
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapClient is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapClientDemo”**.
@@ -43,7 +43,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-To initialize a OlapClient widget, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapClient widget. Then, initialize the widget by using ejOlapClient method inside “script” tag.
+In-order to initialize a OlapClient widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for OlapClient widget. Then you need to initialize the widget using ejOlapClient method.
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -85,7 +85,7 @@ To initialize a OlapClient widget, define a “div” tag with an appropriate �
 
 The “url” property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapClient widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapClientService”**. Suppose if you are using WCF service then the Url would look like **"../OlapClientService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI Url, which is **“../OlapClientService”**. Suppose if you are using WCF service, then the Url would look like **“../OlapClientService.svc”**. 
 
 ###WebAPI
 
@@ -93,11 +93,11 @@ N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapCl
 
 To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **“OlapClientServiceController.cs”**, click **Add.**
 
-Now, WebAPI controller is added into your application successfully that contains the following file.
+Now, WebAPI controller is added into your application successfully with the following file. The utilization of this file will be explained in the following sections.
  
 * OlapClientServiceController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named “OlapClientServiceController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named “OlapClientServiceController”.
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapClientServiceController.cs` file. 
 
@@ -159,7 +159,7 @@ namespace OlapClientDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientServiceController.cs` file. Also, the database connection for Saving and Loading operations of reports is provided appropriately. 
+Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientServiceController.cs` file. Also, the database connection for saving and loading reports is provided appropriately. 
 
 {% highlight c# %}
 
@@ -180,7 +180,7 @@ namespace OlapClientDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OlapClientServiceController class, found inside `OlapClientServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapClientServiceController class, found inside `OlapClientServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
@@ -437,12 +437,12 @@ public class Global: System.Web.HttpApplication
 }
 {% endhighlight %}
 
-Now, OlapClient is rendered OlapChart and PivotGird with Customer Count over a period of fiscal  years.
+Now, OlapClient is rendered with OlapChart and PivotGird showing Customer Count over a period of fiscal years.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/OlapClient.png" %}
 
 ###WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/js/olapclient/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/js/olapclient/data-binding#wcf).
 
 
 
