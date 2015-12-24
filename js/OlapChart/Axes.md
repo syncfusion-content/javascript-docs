@@ -327,7 +327,8 @@ $(function()
 
 ![](Chart-Axes_images/Chart-Axes_img9.png)
 
-###Smart Axis Labels
+## Smart Axis Labels
+
 When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide. 
 
 {% highlight js %}
