@@ -8632,7 +8632,7 @@ Example
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.addOnPersist("enableAltRow"); // maintain peristence for on the property given
-gridObj.hideColumns(["enableAltRow", "enableHeaderHover"]); // maintain persistence for on the array of properties given
+gridObj.addOnPersist(["enableAltRow", "enableHeaderHover"]); // maintain persistence for on the array of properties given
 </script>{% endhighlight %}
 
 
@@ -11408,7 +11408,7 @@ Example
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.ignoreOnPersist("filterSettings"); // remove peristence based on the property given
-gridObj.hideColumns(["filterSettings", "groupSettings"]); // remove persistence based on the array of properties given
+gridObj.ignoreOnPersist(["filterSettings", "groupSettings"]); // remove persistence based on the array of properties given
 </script>{% endhighlight %}
 
 
