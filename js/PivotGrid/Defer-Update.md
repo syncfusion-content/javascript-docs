@@ -13,10 +13,8 @@ Defer Update support allows you to refresh the control only on-demand and not du
 
 {% highlight js %}
 
-$(function()
-{
-    $("#PivotGrid1").ejPivotGrid(
-    {
+$(function() {
+    $("#PivotGrid1").ejPivotGrid({
         url: "../wcf/OLAPService.svc",
         analysisMode: ej.PivotGrid.AnalysisMode.OlapAnalysis,
         enableDeferUpdate: true,
@@ -24,10 +22,8 @@ $(function()
     });
 });
 
-function onServiceInvokes(args)
-{
-    if (args.action == "initialize") $("#PivotSchemaDesigner").ejPivotSchemaDesigner(
-    {
+function onServiceInvokes(args) {
+    if (args.action == "initialize") $("#PivotSchemaDesigner").ejPivotSchemaDesigner({
         pivotControl: this,
         layout: ej.PivotSchemaDesigner.Layouts.Excel
     });

@@ -135,7 +135,7 @@ Valeur
 </tr>
 <tr>
 <td>
-ColumnArea
+DragFieldHere
 </td>
 <td>
 Champ de glisser ici
@@ -143,7 +143,7 @@ Champ de glisser ici
 </tr>
 <tr>
 <td>
-RowArea
+ColumnArea
 </td>
 <td>
 Colonne zone
@@ -151,10 +151,18 @@ Colonne zone
 </tr>
 <tr>
 <td>
-ValueArea
+RowArea
 </td>
 <td>
 Déposez ligne ic
+</td>
+</tr>
+<tr>
+<td>
+ValueArea
+</td>
+<td>
+Valeurs de déposer ici
 </td>
 </tr>
 <tr>
