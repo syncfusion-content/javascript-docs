@@ -40,14 +40,14 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 <div id="Schedule1"></div>
 
 <script id="apptemplate" type="text/x-jsrender">
-    {{"{{"}}if View !== "agenda"{{"}}"}}
+    {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
-            <div style="margin-left: 2px;">{{"{{"}}:Subject{{"}}"}}</div>
-            <div style="margin-left: 2px;">{{"{{"}}:Location{{"}}"}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
         </div>
-    {{"{{"}}else{{"}}"}}
-        <div>{{"{{"}}:Subject{{"}}"}}, {{"{{"}}:Location{{"}}"}}</div>
-    {{"{{"}}/if{{"}}"}}
+    {{"{{"}}else{{}}}}
+        <div>{{"{{"}}:Subject{{}}}}, {{"{{"}}:Location{{}}}}</div>
+    {{"{{"}}/if{{}}}}
 </script>
 
 <script type="text/javascript">
@@ -87,7 +87,7 @@ To customize the resource header with some additional images or other customizat
 
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-left:275px;margin-top:2px;float:left;background:{{"{{"}}:ResourceColor{{"}}"}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:ResourceText{{"}}"}}</div> 
+        <div style="width:15px;height:15px;margin-left:275px;margin-top:2px;float:left;background:{{"{{"}}:ResourceColor{{}}}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:ResourceText{{}}}}</div> 
     </div>
 </script>
 
@@ -147,7 +147,7 @@ To perform the above specified same customization in **horizontal** **Scheduler*
 
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{"{{"}}:ResColor{{"}}"}};"></div><div>{{"{{"}}:ResText{{"}}"}}</div> 
+        <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{"{{"}}:ResColor{{}}}};"></div><div>{{"{{"}}:ResText{{}}}}</div> 
     </div>
 </script>
 
@@ -296,11 +296,11 @@ To define the template option for tooltip, the [tooltipSettings](/js/api/ejsched
     <div style="width:145px">
         <div style="padding-top:3px;">
             <div style="float:left; font:13px Segoe UI; font-weight:bold;">Subject&nbsp;&nbsp;:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Subject{{"}}"}}</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Subject{{}}}}</div>
         </div>
         <div style="padding-top:3px">
             <div style="float:left; font:13px Segoe UI; font-weight:bold;">Location:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Location{{"}}"}}</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Location{{}}}}</div>
         </div>
     </div>
 </script>
@@ -343,7 +343,7 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="datetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{"{{"}}:~dateDisplay(StartTime){{"}}"}}</div>
+            <div>{{"{{"}}:~dateDisplay(StartTime){{}}}}</div>
         </div>
     </div>
 </script>
@@ -352,21 +352,21 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="timetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{"{{"}}:~timeDisplay(StartTime){{"}}"}}</div>
+            <div>{{"{{"}}:~timeDisplay(StartTime){{}}}}</div>
         </div>
     </div>
 </script>
 
 // Template for appointment which applies for event column in agenda view.
 <script id="apptemplate" type="text/x-jsrender">
-    {{"{{"}}if View !== "agenda"{{"}}"}}
+    {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
-            <div style="margin-left: 2px;">{{"{{"}}:Subject{{"}}"}}</div>
-            <div style="margin-left: 2px;">{{"{{"}}:Location{{"}}"}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
         </div>
-    {{"{{"}}else{{"}}"}}
-        <div>{{"{{"}}:Subject{{"}}"}}, {{"{{"}}:Location{{"}}"}}</div>
-    {{"{{"}}/if{{"}}"}}
+    {{"{{"}}else{{}}}}
+        <div>{{"{{"}}:Subject{{}}}}, {{"{{"}}:Location{{}}}}</div>
+    {{"{{"}}/if{{}}}}
 </script>
 
 <script type="text/javascript">
