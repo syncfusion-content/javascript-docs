@@ -8589,6 +8589,67 @@ $("#Editing").ejGrid("addRecord",{OrderID:12333})
 
 
 
+### addOnPersist<span class="signature">(properties)</span>
+{:#methods:addonpersist}
+
+
+
+
+
+
+
+
+Adds the grid model property for maintaining persistence.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+properties{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description last">you can pass either array of grid model properties or a property to maintain persistence</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.addOnPersist("enableAltRow"); // maintain peristence for on the property given
+gridObj.addOnPersist(["enableAltRow", "enableHeaderHover"]); // maintain persistence for on the array of properties given
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// maintain peristence for on the property given
+$("#Grid").ejGrid("addOnPersist", "enableAltRow"); 
+// maintain persistence for on the array of properties given
+$("#Grid").ejGrid("addOnPersist", ["enableAltRow", "enableHeaderHover"]);                  
+</script>{% endhighlight %}
+
+
+
+
+
+
 
 ### batchCancel<span class="signature">()</span>
 {:#methods:batchcancel}
@@ -9514,7 +9575,7 @@ $("#Grid").ejGrid("expandGroupDropArea");
 
 
 
-Send a filtering request to grid.
+Send a filtering request to filter one column in grid.
 
 <table class="params">
 <thead>
@@ -9572,6 +9633,7 @@ Example
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a filtering request to the grid
 gridObj.filterColumn("OrderID","equal","10248","and", true);
+
 </script>{% endhighlight %}
 
 
@@ -9580,6 +9642,66 @@ gridObj.filterColumn("OrderID","equal","10248","and", true);
 // Sends a filtering request to the grid
 $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
 </script>{% endhighlight %}
+
+
+
+
+
+
+### filterColumn<span class="signature">(filterQueries)</span>
+{:#methods:filtercolumn}
+
+
+
+
+
+
+
+
+Send a filtering request to filter single or multiple column in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+filterQueries{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description last">Pass array of filterColumn query for performing filter operation</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a filtering request to the grid
+gridObj.filterColumn([{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
+
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Sends a filtering request to the grid
+$("#Grid").ejGrid("filterColumn",[{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
+</script>{% endhighlight %}
+
 
 
 
@@ -11236,6 +11358,67 @@ gridObj.hideColumns(["Order ID", "Customer ID"]); // Hide columns based on the a
 $("#Grid").ejGrid("hideColumns", "Order ID"); 
 // Hide columns based on the array of header text of the columns given
 $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);                  
+</script>{% endhighlight %}
+
+
+
+
+
+
+### ignoreOnPersist<span class="signature">(properties)</span>
+{:#methods:ignoreonpersist}
+
+
+
+
+
+
+
+
+Remove the grid model property from being persisted.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+properties{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description last">you can pass either array of grid model properties or a property to remove persistence</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.ignoreOnPersist("filterSettings"); // remove peristence based on the property given
+gridObj.ignoreOnPersist(["filterSettings", "groupSettings"]); // remove persistence based on the array of properties given
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// remove peristence based on the property given
+$("#Grid").ejGrid("ignoreOnPersist", "filterSettings"); 
+// remove persistence based on the array of properties given
+$("#Grid").ejGrid("ignoreOnPersist", ["filterSettings", "groupSettings"]);                  
 </script>{% endhighlight %}
 
 
