@@ -42,12 +42,8 @@ $("#pager").ejPager(pagerModel);
 #### Requires
 
 * module:jquery-1.10.2.min.js
-* module:jquery.easing.1.3.min.js
-* module:jquery.globalize.min.js
 * module:ej.core.js
-* module:ej.data.js
 * module:ej.touch.js
-* module:ej.waitingpopup.js
 * module:ej.pager.js
 
 
@@ -113,7 +109,7 @@ $("#pager").ejPager({currentPage: 1 })
 ### totalPages `Number`
 {:#members:totalpages}
 
-Get the value of total number of pages in the pager. The totalPages value is calculated based on pagesize and totalrecords.
+Gets or sets  the value of total number of pages in the pager. The totalPages value is calculated based on pagesize and totalrecords.
 
 #### Default Value:
 {:.param}
@@ -124,7 +120,7 @@ Get the value of total number of pages in the pager. The totalPages value is cal
 {% highlight html %}
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({total: 1 })
+$("#pager").ejPager({totalPages: 1 })
 });
 </script>
 {% endhighlight %}
@@ -209,7 +205,7 @@ $("#pager").ejPager({enableExternalMessage: true, externalMessage:"Grid Pager" }
 
 {% endhighlight %}
 
-N> `enableExternalMessage` default value as false. So We must enable `enableExternalMessage` set as true when enable externalMessage.
+N> `enableExternalMessage` default value as false. so We must enable `enableExternalMessage` set as true when enable externalMessage.
 
 
 
@@ -261,7 +257,7 @@ $("#pager").ejPager({locale: "es-ES"})
 ### enableRTL `Boolean`
 {:#members:enablertl}
 
-Align content in the grid control from right to left by setting the property as true.
+Align content in the ejPager control from right to left by setting the property as true.
 
 #### Default Value:
 {:.param}
@@ -357,7 +353,7 @@ Send a paging request to specified page through the pagerControl.
 
 ### refreshPager()
 
-Refreshes only the model in ejPager control.
+The `refreshPager()` method helps to refresh the model value of pager control.
 
 #### Example
 
@@ -368,7 +364,7 @@ Refreshes only the model in ejPager control.
 <script>
 $('#pager').ejpager();
 var pgObj = $("#pager").data("ejpager");
-pgbj.refreshPager(); 
+pgObj.refreshPager(); 
 </script>
 
 {% endhighlight %}
@@ -380,7 +376,7 @@ pgbj.refreshPager();
 ### click
 {:#events:click}
 
-Triggered when pager item is clicked in pager control.
+Triggered when pager Numeric item is clicked in pager control.
 
 <table class="params">
 <thead>
