@@ -527,7 +527,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Template
 
-Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") property of the particular column as a string (html element) or ID of the template's HTML element.
+Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") property of the particular column as a string (HTML element) or ID of the template's HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
