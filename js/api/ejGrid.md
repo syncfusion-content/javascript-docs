@@ -1764,6 +1764,29 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
+### editSettings.titleColumn `String`
+{:#members:editsettings-titleColumn}
+
+Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
+    editSettings: { allowAdding: true, showAddNewRow: true, editMode: ej.Grid.EditMode.Dialog, titleColumn: "CustomerID"},
+    toolbarSettings: { showToolbar: true, toolbarItems: ["edit","update","cancel"] }                             
+});
+</script>                 
+{% endhighlight %}
+
 ### editSettings.showAddNewRow `Boolean`
 {:#members:editsettings-showaddnewrow}
 
@@ -3667,6 +3690,42 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### summaryRows.summaryColumns.template `String`
+{:#members:summaryRows-summaryColumns-template}
+
+Gets or sets a value that indicates to add the template for the summary value of dataMember given.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{"{{"}}:summaryValue{{}}}} in  dollars
+</script>
+<script>
+$("#Grid").ejGrid({
+     dataSource: window.gridData,
+     showSummary: true,
+     summaryRows: [{ 
+         title: "Average",
+         summaryColumns: [{ 
+             summaryType: ej.Grid.SummaryType.Average, 
+             displayColumn: "Freight", 
+             dataMember: "Freight",  
+             template: "#templateData",
+             format: "{0:C2}"
+         }]
+      }],
+     columns: [{ field: "OrderID" },{ field: "EmployeeID" },{ field: "Freight", format: "{0:C}" }]
+});
+</script>
+{% endhighlight %}
+
+
 ### summaryRows.title `String`
 {:#members:summaryrows-title}
 
@@ -3687,6 +3746,37 @@ $("#Grid").ejGrid({
      columns:[{field: "OrderID"},{field: "Freight"}],
      summaryRows: [{
         title: "Sum",
+        summaryColumns: [{
+           summaryType: ej.Grid.SummaryType.Sum,
+           displayColumn: "Freight",
+           dataMember: "Freight"
+        }]
+     }]                                    
+});
+</script>
+{% endhighlight %}
+
+### summaryRows.titleColumn `String`
+{:#members:summaryrows-titleColumn}
+
+This specifies the grid to show the title of summary row in the specified column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+     dataSource:window.gridData,  
+     showSummary: true,
+     columns:[{field: "OrderID"},{field: "EmployeeID"},{field: "Freight"}],
+     summaryRows: [{
+        title: "Sum",
+        titleColumn: "EmployeeID",
         summaryColumns: [{
            summaryType: ej.Grid.SummaryType.Sum,
            displayColumn: "Freight",
