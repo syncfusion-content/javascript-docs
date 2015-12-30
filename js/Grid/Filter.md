@@ -448,7 +448,6 @@ List of Column type and Filter operators
             </td>
         </tr>
         <tr>
-          >
             <td>
                 ej.FilterOperators.notEqual
             </td>
