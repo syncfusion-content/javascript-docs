@@ -56,6 +56,10 @@ $("#pager").ejPager(pagerModel);
 
 Gets or sets a value that indicates whether to define the number of records displayed per page
 
+#### Default Value:
+{:.param}
+* 12
+
 #### Example
 {:.example}
 {% highlight html %}
