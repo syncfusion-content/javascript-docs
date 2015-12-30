@@ -1192,7 +1192,7 @@ Sets the template for Tooltip in Grid Columns(both header and content)
 
 Default Value:
 {:.param}
-* -
+* null
 
 ####Example
 {:.example}
@@ -1200,11 +1200,11 @@ Default Value:
 {% highlight html %}
 <div id="Grid"></div> 
 <script type="text/template" id="colTip">
-  {{:text}}
+  {{"{{"}}:value {{}}}}
   </script>
 <script>
 $("#Grid").ejGrid({
-columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"colTip"}] 
+columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
      });
 </script> {% endhighlight %}
 
