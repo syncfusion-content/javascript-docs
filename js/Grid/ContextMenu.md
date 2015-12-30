@@ -241,7 +241,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
                 else if (args.text != "Hide Column")
                     this.hideColumns(args.text);
             },
-            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection", "Hide Column"], subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }]  },
+            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection", "Hide Column"], subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["Order ID", "Customer ID", "Employee ID"] }]  },
             allowPaging: true,
             columns: [
                 { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },
