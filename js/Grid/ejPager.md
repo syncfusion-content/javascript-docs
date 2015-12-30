@@ -132,7 +132,7 @@ $("#pager").ejPager({totalPages: 1 })
 ### totalRecordsCount `Number`
 {:#members:totalrecordscount}
 
-Get the value of total number of records which is bound data item. 
+Get the value of total number of records which is bound to the data item. 
 
 #### Default Value:
 {:.param}
@@ -203,7 +203,7 @@ Gets or sets a value that indicates whether to display the external Message in P
 {% highlight html %}
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({enableExternalMessage: true, externalMessage:"Grid Pager" })
+$("#pager").ejPager({enableExternalMessage: true, externalMessage:"custom Pager" })
 });
 </script>
 
@@ -227,7 +227,7 @@ Gets or sets a value that indicates whether to display the custom Text Message i
 {% highlight html %}
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({customText ="Grid pager"})
+$("#pager").ejPager({customText ="Custom Text"})
 });
 </script>
 
@@ -294,9 +294,9 @@ Send a paging request to specified page through the pagerControl.
  
 			<div class="frame">
                         <ul id="sliderContent">
-						     <li><img class="image" src="13.2.0.29/themes/web/images/rotator/nature.jpg"  title="Nature"/></li>
-                            <li><img class="image" src="13.2.0.29/themes/web/images/rotator/bird.jpg"   title="Beautiful Bird"/></li>
-                            <li><img class="image" src="13.2.0.29/themes/web/images/rotator/sculpture.jpg"  title="Amazing Sculptures"/></li>
+						     <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/nature.jpg"  title="Nature"/></li>
+                            <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/bird.jpg"   title="Beautiful Bird"/></li>
+                            <li><img class="image" src="{{ site.releaseversion }}9/themes/web/images/rotator/sculpture.jpg"  title="Amazing Sculptures"/></li>
                            
                         </ul>
                     </div>                
