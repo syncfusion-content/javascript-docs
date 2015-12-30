@@ -112,3 +112,41 @@ public class SignalHub: Hub
 This [blog](https://www.syncfusion.com/blogs/post/Copying-and-Pasting-Excel-Sheet-Data-to-Grid-ASPNET-MVC.aspx) is about conversion of Excel to JSON data. After got JSON data you can bind it to Grid. 
 
 
+## Prevent/Maintain persistence of properties
+
+Grid actions can be persisted throughout by enabling the enablePersistence property of the Grid. But we can maintain/prevent a grid action explicitly with the help of `addToPersist` and `ignoreOnPersist` methods respectively.
+
+{% highlight html %}
+<a href="http://www.syncfusion.com">Navigate to another Page</a>
+<button id="btn">Prevent/Maintain persistence</button>
+<div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowFiltering: true,
+                filterSettings: {filterType: "menu"},
+                allowPaging: true,
+                allowGrouping: true,
+                enablePersistence: true,
+                columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "CustomerID", headerText: "Customer ID", width: 80},
+                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right }]
+            });
+            $("#btn").ejButton({
+            click: function(args){
+                var gridObj = $("#Grid").ejGrid("instance");//get the gridObject
+                // by default the enableAltRow property of the grid is true.
+                gridObj.option("model.enableAltRow", false);   //set the enableAltRow property of the grid as false 
+                //by default the filterSettings and groupSettings will be persisted upon navigating to another page.
+                gridObj.ignoreOnPersist(["filterSettings", "groupSettings"]);// set the properties that are to be prevented from being persisted
+                //by default the enableAltRow property of the grid will not be persisted
+                gridObj.addToPersist("enableAltRow");// set the properties that are to be maintained for persistence.
+            }
+            });
+        });
+  {% endhighlight %}   
+  
+  So on navigating to another page by clicking on the link, by default the filterSettings and groupSettings will be persisted. But upon clicking the button and navigating, the persist state of the grid actions are modified.
