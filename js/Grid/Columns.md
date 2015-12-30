@@ -553,7 +553,7 @@ $(function () {
 			pageSize : 4
 		},
 		columns : [
-			{ headerText: "Photo", template: "<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png" alt="{{: EmployeeID }}" />" },
+			{ headerText: "Photo", template: "<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />" },
 						//(or)
 			{ headerText: "Photo", template: true, templateID: "#columnTemplate" />" },
 			{ field: "EmployeeID" },
