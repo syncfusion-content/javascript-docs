@@ -2516,7 +2516,7 @@ Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.items</td><td>
-Object</td><td>
+Array</td><td>
 Array of list item object.</td></tr>
 <tr>
 <td>
@@ -2663,7 +2663,7 @@ Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.items</td><td>
-Object</td><td>
+Array</td><td>
 Array of list item object.</td></tr>
 <tr>
 <td>
@@ -2754,7 +2754,7 @@ Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.items</td><td>
-Object</td><td>
+Array</td><td>
 Array of list item object.</td></tr>
 <tr>
 <td>
@@ -2847,7 +2847,7 @@ Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.items</td><td>
-Object</td><td>
+Array</td><td>
 Array of list item object.</td></tr>
 <tr>
 <td>
@@ -2938,7 +2938,7 @@ Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.items</td><td>
-Object</td><td>
+Array</td><td>
 Array of list item object.</td></tr>
 <tr>
 <td>
