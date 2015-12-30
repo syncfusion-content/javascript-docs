@@ -54,7 +54,7 @@ $("#pager").ejPager(pagerModel);
 
 {:#members:pagesize}
 
-Gets or sets a value that indicates whether to define the number of records displayed per page
+Gets or sets a value that indicates whether to define the number of records displayed per page.
 
 #### Default Value:
 {:.param}
@@ -74,7 +74,7 @@ $("#pager").ejPager({pageSize: 2 })
 ### pageCount `Number`
 {:#members:pagecount}
 
-Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation
+Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation.
 
 #### Default Value:
 {:.param}
@@ -113,7 +113,7 @@ $("#pager").ejPager({currentPage: 1 })
 ### totalPages `Number`
 {:#members:totalpages}
 
-Gets or sets  the value of total number of pages in the pager. The totalPages value is calculated based on pagesize and totalrecords.
+Get or sets a value of total number of pages in the pager. The totalPages value is calculated based on pagesize and totalrecords.
 
 #### Default Value:
 {:.param}
@@ -132,7 +132,7 @@ $("#pager").ejPager({totalPages: 1 })
 ### totalRecordsCount `Number`
 {:#members:totalrecordscount}
 
-Get the value of total number of records which is bound to the data item. 
+Get the value of total number of records which is bound to a data item. 
 
 #### Default Value:
 {:.param}
@@ -203,7 +203,7 @@ Gets or sets a value that indicates whether to display the external Message in P
 {% highlight html %}
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({enableExternalMessage: true, externalMessage:"custom Pager" })
+$("#pager").ejPager({enableExternalMessage: true, externalMessage:"external message in Pager" })
 });
 </script>
 
@@ -216,7 +216,7 @@ N> `enableExternalMessage` default value as false. so We must enable `enableExte
 ## customText `String`
 {:#members:customText}
 
-Gets or sets a value that indicates whether to display the custom Text Message in Pager.
+Gets or sets a value that indicates whether to display the custom text message in Pager.
 
 #### Default Value:
 {:.param}
@@ -227,7 +227,7 @@ Gets or sets a value that indicates whether to display the custom Text Message i
 {% highlight html %}
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({customText ="Custom Text"})
+$("#pager").ejPager({customText ="custom pager text"})
 });
 </script>
 
@@ -261,7 +261,7 @@ $("#pager").ejPager({locale: "es-ES"})
 ### enableRTL `Boolean`
 {:#members:enablertl}
 
-Align content in the ejPager control from right to left by setting the property as true.
+Align content in the pager control from right to left by setting the property as true.
 
 #### Default Value:
 {:.param}
@@ -296,7 +296,7 @@ Send a paging request to specified page through the pagerControl.
                         <ul id="sliderContent">
 						     <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/nature.jpg"  title="Nature"/></li>
                             <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/bird.jpg"   title="Beautiful Bird"/></li>
-                            <li><img class="image" src="{{ site.releaseversion }}9/themes/web/images/rotator/sculpture.jpg"  title="Amazing Sculptures"/></li>
+                            <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/sculpture.jpg"  title="Amazing Sculptures"/></li>
                            
                         </ul>
                     </div>                
@@ -357,7 +357,7 @@ Send a paging request to specified page through the pagerControl.
 
 ### refreshPager()
 
-The `refreshPager()` method helps to refresh the model value of pager control.
+`refreshPager()` helps to refresh the model value of pager control.
 
 #### Example
 
@@ -380,7 +380,7 @@ pgObj.refreshPager();
 ### click
 {:#events:click}
 
-Triggered when pager Numeric item is clicked in pager control.
+Triggered when pager numeric item is clicked in pager control.
 
 <table class="params">
 <thead>
