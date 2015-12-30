@@ -1204,7 +1204,8 @@ Default Value:
   </script>
 <script>
 $("#Grid").ejGrid({
-columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
+   dataSource:window.gridData,
+   columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
      });
 </script> {% endhighlight %}
 
@@ -1225,7 +1226,8 @@ Default Value:
 <div id="Grid"></div> 
 <script>
 $("#Grid").ejGrid({
-columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
+    dataSource:window.gridData,
+    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
  });
 </script> {% endhighlight %}
 
