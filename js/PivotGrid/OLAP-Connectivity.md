@@ -57,7 +57,7 @@ To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set t
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -66,16 +66,17 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ###WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as **“OLAPService.svc”**, click Add.
+To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as **“OLAPService.svc”**, click **Add**.
  
-Now, WCF service is added into your application successfully that contains the following files. 
+Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections. 
 
 * OLAPService.svc
 * OLAPService.svc.cs
 * IOLAPService.cs
 
 **Configuring WCF Service Class**
-Remove the “DoWork” method present inside both OLAPService.svc.cs and IOLAPService.cs files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `OLAPService.svc.cs` and set “RequirementsMode” value to “Allowed”.
+
+Remove the “DoWork” method present inside both `OLAPService.svc.cs` and `IOLAPService.cs files`. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `OLAPService.svc.cs` and set “RequirementsMode” value to “Allowed”.
 
 {% highlight c# %}
 
@@ -93,11 +94,11 @@ namespace PivotGridDemo
 
 **List of Dependency Libraries**
 
-Add the following dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
+Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
  
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -136,7 +137,7 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OLAPService.svc.cs` file.
+Now the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OLAPService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -157,7 +158,7 @@ namespace PivotGridDemo
 
 **Service methods in WCF Service**
 
-First, define the service methods inside IOLAPService interface, found in `IOLAPService.cs` file, created while adding WCF Service to your Web Application.
+First, you need to define the service methods inside IOLAPService interface, found in `IOLAPService.cs` file, created while adding WCF Service to your Web Application.
 
  {% highlight c# %}
 
@@ -200,7 +201,7 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-Secondly, elaborate the service methods inside the main class, found in OLAPService.svc.cs file 
+Secondly, you need to elaborate the service methods inside the main class, found in `OLAPService.svc.cs` file 
 
 {% highlight c# %}
 
@@ -332,8 +333,8 @@ namespace PivotGridDemo
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to IOLAPService contract and hence it is PivotGridDemo.IOLAPService.
-* Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to **IOLAPService** contract and hence it is **PivotGridDemo.IOLAPService**.
+* Binding: In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated as follows. 
@@ -371,9 +372,8 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-
->** NOTE: In this example, “PivotGridDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OLAPService” indicates the name of the WCF service created.
-Now, PivotGrid is rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.**
+N> In this example, “PivotGridDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OLAPService” indicates the name of the WCF service created.
+Now, PivotGrid is rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
 {% include image.html url="/js/PivotGrid/OLAP-Connectivity_images/olapwebapi.png" %}
 
@@ -381,16 +381,17 @@ Now, PivotGrid is rendered with Internet Sales Amount over a period of fiscal ye
 
 ###Binding PivotGrid to Collection
 This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer to the following links.
+
 When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/getting-started). 
 
-Or,  when you use WCF service, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/olap-connectivity).
+Or, when you use WCF service, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/olap-connectivity).
 
 ###WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“RelationalService.svc”** and click Add. 
+To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“RelationalService.svc”** and click **Add**. 
 
-Now, WCF service is added into your application successfully that contain the following files. 
+Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections. 
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -398,7 +399,7 @@ Now, WCF service is added into your application successfully that contain the fo
 
 **Configuring WCF Service Class**
 
-Remove the “DoWork” method present inside both RelationalService.svc.cs and IRelationalService.cs files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `RelationalService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the “DoWork” method present inside both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `RelationalService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
@@ -414,7 +415,7 @@ namespace PivotGridDemo
 {% endhighlight %}
 **List of Dependency Libraries**
 
-Add the following dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
+Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
  
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
@@ -572,7 +573,7 @@ namespace PivotGridDemo
 
 **Service methods in WCF Service**
 
-First, define the service methods inside IRelationalService interface, found in `IRelationalService.cs` file, created while adding WCF service to your Web Application.
+First, you need to define the service methods inside IRelationalService interface, found in `IRelationalService.cs` file, created while adding WCF service to your Web Application.
 
 {% highlight c# %}
 
@@ -608,7 +609,7 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-Secondly, elaborate the service methods inside the main class, found in `RelationalService.svc.cs` file.
+Secondly, you need to elaborate the service methods inside the main class, found in `RelationalService.svc.cs` file.
 
  {% highlight c# %}
 
@@ -697,8 +698,8 @@ namespace PivotGridDemo
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-1. Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to IRelationalService contract and hence it is PivotGridDemo.IRelationalService.
-2. Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
+1. Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IRelationalService` contract and hence it is `PivotGridDemo.IRelationalService`.
+2. Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
  
 The endpointBehaviors are illustrated as follows.
@@ -737,8 +738,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
->**NOTE: In this example, “PivotGridDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “RelationalService” indicates the name of the WCF service created.
-Now, PivotGrid is rendered with Sales Amount over a set of products across different customer geographic locations.**
+N> In this example, **“PivotGridDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“RelationalService”** indicates the name of the WCF service created.
+
+Now, PivotGrid will be rendered with Sales Amount over a set of products across different customer geographic locations.
 
 {% include image.html url="/js/PivotGrid/OLAP-Connectivity_images/relaionalwebapi.png" %}
 

@@ -29,10 +29,7 @@ The scripts and style sheets that are mandatorily required to render OlapClient 
 2. jquery-1.10.2.min.js
 3. jquery.easing.1.3.min.js
 4. jquery.globalize.min.js
-5. rgbcolor.js
-6. StackBlur.js
-7. canvg.js
-8. ej.web.all.min.js
+5. ej.web.all.min.js
 
 You can find the scripts and style sheets listed above could in any of the following locations:
 
@@ -54,10 +51,7 @@ In-order to initialize a OlapClient widget, first you need to define a “div”
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script> 
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js" type="text/javascript"></script>    
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>  
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
 

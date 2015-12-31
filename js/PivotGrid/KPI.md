@@ -11,7 +11,7 @@ documentation: ug
 Key Performance Indicators (KPIs) are business metric that help to figure
 out the progress of an enterprise in meeting its business goals.
 
-The differents indicators available in KPI are:
+The different indicators available in KPI are:
 
 * KPI Value: A physical measure or a calculated measure.
 * KPI Goal: Defines the target for the measure.

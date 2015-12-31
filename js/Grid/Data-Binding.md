@@ -79,7 +79,7 @@ To bind remote data to Grid Control, you can assign a service data as an instanc
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") class and then you can assign it to Grid [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "datasource")`.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") class and then you can assign it to Grid [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "datasource").
 
 The following code example describes the above behavior.
 
@@ -206,7 +206,7 @@ The following output is displayed as a result of the above code example.
 
 The [Custom Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") concept of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") allows to customize or generate your own adaptor which is used to process `query` and `result` data. 
 
-When using remote data binding, the adaptor of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager")` plays vital role in processing queries to make them suitable to sends along with data request and also in processing the response data from the server.
+When using remote data binding, the adaptor of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") plays vital role in processing queries to make them suitable to sends along with data request and also in processing the response data from the server.
 
 The following code example describes the above behavior.
 
@@ -309,9 +309,9 @@ The following output is displayed as a result of the above code example.
 
 ### Data Caching
 
-Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
+Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
 
-N>_ The cached data will be stored in browser's HTML5 `localStorage`. _
+N> The cached data will be stored in browser's HTML5 `localStorage`. 
 
 The following code example describes the above behavior.
 

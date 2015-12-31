@@ -144,6 +144,7 @@ $(function()
 ###Enable Zooming
 
 There are two ways to zoom the Chart:
+
 * When [`zooming.enable`](/js/api/ejchart#members:zooming-enable) option is set to true, you can zoom the Chart by using rubber band selection.
 * When [`zooming.enableMouseWheel`](/js/api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the Chart on mouse wheel scrolling.
 
@@ -167,7 +168,7 @@ $(function()
 
 ![](User-Interactions_images/zooming.png) 
 
-After zooming the Chart, a zooming toolbar will appear with options to zoom, pan and reset. Selecting the **“Pan”** option will allow to view the Chart and selecting the **“Reset”** option will reset the zoomed Chart.
+After zooming the Chart, a zooming toolbar will appear with options to *zoom, pan and reset*. Selecting the **“Pan”** option will allow to view the Chart and selecting the **“Reset”** option will reset the zoomed Chart.
 
 ![](User-Interactions_images/pan.png) 
 

@@ -189,7 +189,7 @@ N> `allowGrouping`, `allowSorting` should be enabled to perform default context 
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems) property and to bind required actions for this, use [`contextClick`](http://help.syncfusion.com/js/api/ejgrid#events:contextclick "contextClick") event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customContextMenuItems`](http://help.syncfusion.com/js/api/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems") property and to bind required actions for this, use [`contextClick`](http://help.syncfusion.com/js/api/ejgrid#events:contextclick "contextClick") event.
 
 
 {% highlight html %}
@@ -223,3 +223,38 @@ Custom context menu is used to create your own menu item and its action. To add 
 ![](Context-Menu_images/ContextMenu_img4.png)
 
 
+## Sub Context Menu
+
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu`](http://help.syncfusion.com/js/api/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu") property and to bind required actions for this, use [`contextClick`](http://help.syncfusion.com/js/api/ejgrid#events:contextclick "contextClick") event.
+
+{% highlight html %}
+<div id="Grid"></div>
+
+<script type="text/javascript">
+
+ $("#Grid").ejGrid({
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            dataSource: window.gridData,
+            contextClick: function (args) {
+                if (args.text == "Clear Selection")
+                    this.clearSelection();
+                else if (args.text != "Hide Column")
+                    this.hideColumns(args.text);
+            },
+            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection", "Hide Column"], subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["Order ID", "Customer ID", "Employee ID"] }]  },
+            allowPaging: true,
+            columns: [
+                { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },
+                { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+                { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 90 },
+                { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" },
+                { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+            ]
+ });
+
+</script>
+
+{% endhighlight %}
+
+
+![](Context-Menu_images/ContextMenu_img5.png)

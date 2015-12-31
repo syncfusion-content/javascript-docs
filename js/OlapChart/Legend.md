@@ -97,7 +97,6 @@ $(function()
         legend:
         {
             visible: true,
-            rowCount: 3,
             //Add title to the Chart legend
             title:
             {
@@ -150,7 +149,6 @@ $(function()
         legend:
         {
             visible: true,
-            rowCount: 3,
             //Changing legend items border, height and width
             itemStyle:
             {
@@ -184,7 +182,6 @@ $(function()
         legend:
         {
             visible: true,
-            rowCount: 3,
             //Setting border color and width to legend
             border:
             {
@@ -213,7 +210,6 @@ $(function()
         legend:
         {
             visible: true,
-            rowCount: 3,
             //Customizing the legend text
             font:
             {

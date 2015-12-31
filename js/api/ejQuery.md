@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejQuery
+title: ej.Query
 documentation: API
 platform: js
 metaname: 
@@ -17,8 +17,6 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-
-$(element).ejQuery<span class="signature">()</span>
 
 
 
@@ -125,7 +123,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/O
 
 
 
-clone is used to dublicate the data.
+clone is used to duplicate the data.
 
 
 
