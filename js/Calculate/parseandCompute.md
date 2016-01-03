@@ -25,5 +25,5 @@ document.getElementById("result").innerHTML = value;
 
 Refer to the following screenshot that shows the computed formula value by using **parseandCompute** method.
 
-![](/js/Calculate/parseandCompute_images/parseandCompute_img1.png" Caption=")
+![](/js/Calculate/parseandCompute_images/parseandCompute_img1.png)
 
