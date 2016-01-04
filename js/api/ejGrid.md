@@ -4013,6 +4013,24 @@ $("#Grid").ejGrid("clearColumnSelection");
 
 It is used to clear all the filtering done.
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"> If field of the column is specified then it will clear the  particular filtering column</td>
+</tr>
+</tbody>
+</table>
+
 ####Example
 {:.example}
 
@@ -6101,11 +6119,34 @@ gridObj.resetModelCollections();
 $("#Grid").ejGrid("resetModelCollections");
 </script>{% endhighlight %}
 
-
-### resizeColumns(columnName,width)
+### resizeColumns(column,width)
 {:#methods:resizecolumns}
 
 Resize the columns by giving column name and width for the corresponding one.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the column name that needs to be changed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the width to resize the particular columns</td>
+</tr>
+</tbody>
+</table>
 
 ####Example
 {:.example}
