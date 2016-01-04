@@ -4650,7 +4650,7 @@ $("#Grid").ejGrid("expandGroupDropArea");
 {:#methods:filtercolumn}
 
 
-Send a filtering request to grid.
+Send a filtering request to filter one column in grid.
 
 <table class="params">
 <thead>
@@ -4713,6 +4713,54 @@ gridObj.filterColumn("OrderID","equal","10248","and", true);
 <script>
 // Sends a filtering request to the grid
 $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
+</script>{% endhighlight %}
+
+
+### filterColumn(filterQueries)
+{:#methods:filtercolumn}
+
+
+Send a filtering request to filter single or multiple column in grid.
+
+<table class="param">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+filterQueries{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description last">Pass array of filterColumn query for performing filter operation</td>
+</tr>
+</tbody>
+</table>
+
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a filtering request to the grid
+gridObj.filterColumn([{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
+
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Sends a filtering request to the grid
+$("#Grid").ejGrid("filterColumn",[{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
 </script>{% endhighlight %}
 
 
