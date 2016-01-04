@@ -3985,6 +3985,38 @@ $("#Grid").ejGrid("cancelEdit");
 {% endhighlight %}
 
 
+
+### cancelEditCell()
+{:#methods:canceleditcell}
+
+
+Send a cancel request to the edited cell in grid.
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a cancel request to the edited cell in  grid
+gridObj.cancelEditCell();   
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a cancel request to the edited cell in grid
+$("#Grid").ejGrid("cancelEditCell");        
+</script>{% endhighlight %}
+
+
+
+
 ### clearCellSelection()
 {:#methods:clearcellselection}
 
@@ -4063,6 +4095,52 @@ $("#Grid").ejGrid("clearColumnSelection");
 </script>
 
 {% endhighlight %}
+
+
+
+### clearFiltering(field)
+{:#methods:clearfiltering}
+
+It is used to clear all the filtering done.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"> If field of the column is specified then it will clear the  particular filtering column</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearFiltering("EmployeeID"); //clears the filtering based on the fieldName passed
+gridObj.clearFiltering();  // clears all the filtering
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>         
+$("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based on the fieldName passed
+$("#Grid").ejGrid("clearFiltering"); // clears all the filtering
+</script>{% endhighlight %}
 
 
 ### clearSelection(\[index\])
@@ -6131,6 +6209,55 @@ gridObj.resetModelCollections();
 $("#Grid").ejGrid("resetModelCollections");
 </script>{% endhighlight %}
 
+### resizeColumns(column,width)
+{:#methods:resizecolumns}
+
+Resize the columns by giving column name and width for the corresponding one.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the column name that needs to be changed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the width to resize the particular columns</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// ResizeColumns
+gridObj.resizeColumns("OrderID",width); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// ResizeColumns
+$("#Grid").ejGrid("resizeColumns","OrderID",width);
+</script>{% endhighlight %}
+
 
 ### rowHeightRefresh()
 {:#methods:rowheightrefresh}
@@ -6157,6 +6284,34 @@ gridObj.rowHeightRefresh(); // Resolves row height issue
 <script>         
 // Resolves row height issue
 $("#Grid").ejGrid("rowHeightRefresh");   
+</script>{% endhighlight %}
+
+
+### saveCell()
+{:#methods:savecell}
+
+Save the particular edited cell in grid.
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Save the edited cell
+gridObj.saveCell(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+
+<script>
+
+// Save the edited cell
+$("#Grid").ejGrid("saveCell);
 </script>{% endhighlight %}
 
 
