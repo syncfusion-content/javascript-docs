@@ -497,3 +497,34 @@ Result of above code example is as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img6.png) 
 
+##Cache Adaptor
+
+Cache Adaptor is used to cache the data of the visited pages. It prevents new requests for the previously visited pages. It can be enabled by using the `enableCaching` property. You can configure cache page size and duration of caching by using `cachingPageSize` and `timeTillExpiration` properties of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). 
+
+{% highlight html %}
+<div id="CacheGrid"></div
+
+{% endhighlight %}
+
+{% highlight js %}
+$(function() {
+
+var dataManger = ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
+
+enableCaching: true, 
+
+cachingPageSize: 10, 
+
+timeTillExpiration: 120000 }); 
+
+$("#CacheGrid").ejGrid({
+
+dataSource: dataManger, 
+
+allowPaging: true, 
+
+columns: ["OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCity"] }); });
+
+{% endhighlight %}
+
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img7.png)
