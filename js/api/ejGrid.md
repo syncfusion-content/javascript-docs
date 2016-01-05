@@ -6428,7 +6428,7 @@ cellIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">It is used to set the value for the cell specified by row and cell Index.</td>
+<td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
 </tr>
 </tbody>
 </table>
@@ -6483,7 +6483,7 @@ field{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">It is used to set the value for the cell specified by primaryKeyValue and field name.</td>
+<td class="description last">It is used to set the value for the cell based on specified primaryKeyValue and field name.</td>
 </tr>
 </tbody>
 
