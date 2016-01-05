@@ -1002,13 +1002,13 @@ The following output is displayed as a result of the above code example.
 
 ## Tooltip
 
-When you move the cursor to the particular cell it provides an information about the corresponding cell value.
+When you move the cursor over the particular cell it provides an information about the corresponding cell value.
 
 ### Template
 
 Tooltip Property accepts the template to be shown when hovering Grid column cells.
 
-You can render any type of Render template and assign the script template id in the [`tooltip`](http://help.syncfusion.com/js/api/ejgrid#members:columns-tooltip "tooltip") property.
+You can provide either as direct template or templateID to the tooltip property.
 
 The following code example describes the above behavior.
 
@@ -1043,7 +1043,7 @@ The following output is displayed as a result of the above code example.
 
 When the cell value contains a long text that is not fit into the grid column cell, the clipMode is used.
 
-By using the ClipMode,you can show the cell value as ellipsis or as Clip.
+By using the ClipMode,you can show cell with ellipsis or with Clipped content.
 
 N>By default the [`clipMode`](http://help.syncfusion.com/js/api/ejgrid#members:columns-clipmode "clipMode") will be set as Clip.
 
@@ -1085,7 +1085,7 @@ The following output is displayed as a result of the above code example.
 
 #### Clip
 
-When the content gets overflows the remaining content will be hidden in the particular cell
+When the content overflows, the remaining content will be hidden in the particular cell
 
 The following code example describes the above behavior.
 
