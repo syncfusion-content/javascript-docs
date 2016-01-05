@@ -1213,7 +1213,7 @@ $("#Grid").ejGrid({
 ### columns.clipMode `enum`
 {:#members:columns-clipmode}
 
-Gets or Sets clipmode CSS for Grid Cells (both header and content)
+Sets the clipmode for Grid cell as ellipsis or clipped content(both header and content)
 
 Default Value:
 {:.param}
