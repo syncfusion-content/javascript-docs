@@ -1405,7 +1405,7 @@ Used to get or set the corresponding custom context menu item to which the subme
 
 #### Default Value:
 {:.param}
-* -
+* null
 
 ### contextMenuSettings.subContextMenu.subMenu `Array`
 {:#members:contextmenusettings-subcontextmenu-submenu}
@@ -6396,12 +6396,12 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 {:#methods:setcelltext}
 
 Used to update a particular cell value.
-NOTE: It will work only for Local Data.
+Note: It will work only for Local Data.
 
 #### setCellText(rowIndex, cellIndex, value)
 {:#methods:setcelltext}
 
-Used to update a particular cell value by using rowIndex, cellIndex, value.
+Used to update a particular cell value based on specified rowIndex and cellIndex values.
 
 <table class="params">
 <thead>
@@ -6416,19 +6416,19 @@ Used to update a particular cell value by using rowIndex, cellIndex, value.
 <td class="name">{% highlight html %}
 rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the index of row for selecting the cell.</td>
+<td class="description last">It is used to set the index of row.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the index of cell for selecting rows.</td>
+<td class="description last">It is used to set the index of cell.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">It is used to set the value for the selected cell.</td>
+<td class="description last">It is used to set the value for the cell specified by row and cell Index.</td>
 </tr>
 </tbody>
 </table>
@@ -6456,7 +6456,7 @@ $("#Grid").ejGrid("setCellText", 0, 1, "GREYER");
 #### setCellText(primaryKeyValue, field, value)
 {:#methods:setcelltext}
 
-Used to update a particular cell value by using primarykeyvalue, field and value.
+Used to update a particular cell value based on specified primarykeyvalue and fieldname
 
 <table class="params">
 <thead>
@@ -6471,19 +6471,19 @@ Used to update a particular cell value by using primarykeyvalue, field and value
 <td class="name">{% highlight html %}
 primaryKeyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">It is used to set the primarykey value for selecting the cell.</td>
+<td class="description last">It is used to set the primarykey value for selecting the corresponding row cell.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 field{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">It is used to set the field name for selecting rows.</td>
+<td class="description last">It is used to set the field name for selecting the corresponding column cell.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">It is used to set the value for the selected cell.</td>
+<td class="description last">It is used to set the value for the cell specified by primaryKeyValue and field name.</td>
 </tr>
 </tbody>
 
@@ -6513,7 +6513,7 @@ $("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
 ### setCellValue(index, fieldName, cellValue)
 {:#methods:setcellvalue}
 
-Used to update a particular cell value by giving Index,fieldName and value need to be given.
+Used to update a particular cell value based on specified row Index and the fieldName.
 
 <table class="params">
 <thead>
@@ -6528,13 +6528,13 @@ Used to update a particular cell value by giving Index,fieldName and value need 
 <td class="name">{% highlight html %}
 Index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the index for selecting the cell.</td>
+<td class="description last">It is used to set the index for selecting the row.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">It is used to set the field name for selecting rows.</td>
+<td class="description last">It is used to set the field name for selecting column.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
