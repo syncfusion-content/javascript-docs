@@ -3081,6 +3081,73 @@ Enables an Item or set of Items that are disabled in the DropDownList
 {% endhighlight %}
 
 
+
+### getItemDataByValue()
+{:#methods:getItemDataByValue}
+
+
+
+This method retrieves the items using given value.
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ <input type="text" id="drpdwn" />
+
+    <script>
+
+        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+
+        var query = ej.Query().select("ShipName", "ShipCountry");
+
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        {
+            dataSource: dm, 
+            query: query, 
+            fields: { text: "ShipName", value: "ShipCountry" }, 
+            itemsCount: 20
+        });
+        var DropDownListObj = $("#drpdwn").data("ejDropDownList");
+        console.log("Target CompanyName - "+ DropDownListObj.getItemDataByValue("Aria Cruz")[0].CompanyName);
+
+    </script>
+
+
+{% endhighlight %}
+
+{% highlight html %}
+ <input type="text" id="drpdwn" />
+
+    <script>
+
+        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+
+        var query = ej.Query().select("ShipName", "ShipCountry");
+
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        {
+            dataSource: dm, 
+            query: query, 
+            fields: { text: "ShipName", value: "ShipCountry" }, 
+            itemsCount: 20
+        });
+        var data = .ejDropDownList('getItemDataByValue',"Aria Cruz")
+        console.log("Target CompanyName - "+ data[0].CompanyName);
+
+    </script>
+
+
+{% endhighlight %}
+
+
+
+
 ### getListData()
 {:#methods:getlistdata}
 
@@ -3913,6 +3980,79 @@ This method is used to unselect an item in the DropDownList by using the given v
 
 
 ## Events
+
+
+
+
+### actionBegin 
+{:#events:actionBegin}
+
+
+
+
+Fires the action before the XHR request.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the DropDownList model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<input type="text" id="drpdwn" />
+
+    <script>
+
+        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+
+        var query = ej.Query().select("ShipName", "ShipCountry");
+
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        {
+            dataSource: dm, 
+            query: query, 
+            fields: { text: "ShipName", value: "ShipCountry" }, 
+            itemsCount: 20, 
+            actionBegin : function (args) 
+            {
+                /*Do your changes */               
+            }
+        });
+
+    </script>
+
+ {% endhighlight %}
+
 
 
 ### actionComplete

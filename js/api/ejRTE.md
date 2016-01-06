@@ -721,6 +721,44 @@ Formats the contents based on the XHTML rules.
 
 
 
+### externalCSS `string`
+{:#members:externalcss}
+
+
+
+
+Load the external CSS file inside Iframe.
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified enableXHTML value.
+    $("#rteSample").ejRTE({ externalCSS:"default.css"});
+</script>
+{% endhighlight %}
+
+
+
 ### fileBrowser `object`
 {:#members:filebrowser}
 
@@ -2999,6 +3037,112 @@ The given string value is displayed in the editable area.
 // Initializes the RTE with the value specified.
 $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents, insert table, images and get the HTML content for the displayed content." });
 </script>{% endhighlight %}
+
+
+
+### validationRules  `object`
+{:#members:validationrules}
+
+
+
+
+Sets the jquery validation rules to the Rich Text Editor.
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >
+<textarea   id="rteSample1">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea > <script>
+    // Initializes the RTE with the specified ValidationRules.
+     $("#rteSample").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                required: true,                
+                minlength:15,
+                maxlength: 150,
+                minWordCount: 3,
+                maxWordCount:50
+         }});
+         
+        $("#rteSample1").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                equalTo: "#rteSample"
+         }});
+</script>
+{% endhighlight %}
+
+
+
+### validationMessage  `object`
+{:#members:validationmessage}
+
+Sets the jquery validation error message to the Rich Text Editor. 
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea > <script>
+    // Initializes the RTE with the specified ValidationRules and ValidationMessage.
+     $("#rteSample").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                required: true,                
+                minlength:15,
+                maxlength: 150,
+                minWordCount: 3,
+                maxWordCount:50
+         },
+         validationMessage: {
+                required: "Required RTE value",
+                minlength:"Minimum content length not reached."
+         }});         
+</script>
+{% endhighlight %}
+
 
 
 
