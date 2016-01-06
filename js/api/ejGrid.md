@@ -2909,12 +2909,8 @@ It specifies the grid to search the records based on operator.
 1. ej.FilterOperators.contain
 2. ej.FilterOperators.equal
 3. ej.FilterOperators.notEqual
-4. ej.FilterOperators.greaterThan
-5. ej.FilterOperators.greaterThanOrEqual
-6. ej.FilterOperators.lessThan
-7. ej.FilterOperators.lessThanOrEqual
-8. ej.FilterOperators.startsWith
-9. ej.FilterOperators.endsWith
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
 
 #### Default Value:
 {:.param}
@@ -2929,7 +2925,7 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSearching: true,
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { operator:"contains" }
+   searchSettings: { operator:"contains", key:"VINET"}
 });
 </script> 
 {% endhighlight %}
@@ -2937,7 +2933,7 @@ $("#Grid").ejGrid({
 ### searchSettings.ignoreCase `boolean`
 {:#members:searchsettings-ignorecase}
 
-It enables or disables case-sensitivitiy in searching the records with the given value.
+It enables or disables case-sensitivity while searching the search key in grid.
 
 #### Default Value:
 {:.param}
@@ -2952,7 +2948,7 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSearching: true,
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { ignoreCase: true }
+   searchSettings: { ignoreCase: true, key:"VINET" }
 });
 </script> 
 {% endhighlight %}
