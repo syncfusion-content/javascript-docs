@@ -9,16 +9,12 @@ documentation: ug
 
 # Defer Update
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction. To enable this functionality, set `enableDeferUpdate` property to "true".
-
-The following code example explains on how to enable Defer Update in the PivotGrid control.
+Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
 
 {% highlight js %}
 
-$(function()
-{
-    $("#PivotGrid").ejPivotGrid(
-    {
+$(function() {
+    $("#PivotGrid1").ejPivotGrid({
         url: "../wcf/OLAPService.svc",
         analysisMode: ej.PivotGrid.AnalysisMode.OlapAnalysis,
         enableDeferUpdate: true,
@@ -26,10 +22,8 @@ $(function()
     });
 });
 
-function onServiceInvokes(args)
-{
-    if (args.action == "initialize") $("#PivotSchemaDesigner").ejPivotSchemaDesigner(
-    {
+function onServiceInvokes(args) {
+    if (args.action == "initialize") $("#PivotSchemaDesigner").ejPivotSchemaDesigner({
         pivotControl: this,
         layout: ej.PivotSchemaDesigner.Layouts.Excel
     });
@@ -37,10 +31,5 @@ function onServiceInvokes(args)
 
 {% endhighlight %}
 
-![](/js/PivotGrid/Defer-Update_images/Defer-Update_images1.png) 
-
-
-
-
-
+![](/js/PivotGrid/Defer-Update_images/defer.png) 
 

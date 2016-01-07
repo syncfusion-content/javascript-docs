@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejRTE
+description: API reference for ejRTE
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: RTE, ejRTE, syncfusion, RTE api  
 ---
 
 # ejRTE
@@ -17,8 +17,14 @@ Rich text editor is a component that help you to display or edit the content inc
 
 
 
+#### Syntax
 
-$(element).ejRTE<span class="signature">(options)</span>
+{% highlight js %}
+
+$(element).ejRTE(options)
+
+{% endhighlight %}
+
 
 
 
@@ -28,7 +34,7 @@ $(element).ejRTE<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -36,13 +42,13 @@ $(element).ejRTE<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for RTE.</td>
+<td class="description">settings for RTE.</td>
 </tr>
 </tbody>
 </table>
 
-Example:
-{:.example}
+#### Example:
+
 
 {% highlight html %}
  
@@ -60,8 +66,7 @@ $("#rteSample").ejRTE();
 {% endhighlight %}
 
 
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -137,14 +142,14 @@ Requires
 
 
 
-### allowEditing<span class="type-signature type boolean">boolean</span>
+### allowEditing `boolean`
 {:#members:allowediting}
 
 Enables/disables the editing of the content.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -153,8 +158,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -172,7 +177,7 @@ Example
 </script>
 {% endhighlight %}
 
-### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 
@@ -182,8 +187,8 @@ Example
 RTE control can be accessed through the keyboard shortcut keys.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -192,8 +197,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -213,7 +218,7 @@ Example
 
 
 
-### autoFocus <span class="type-signature type boolean">boolean</span>
+### autoFocus  `boolean`
 {:#members:autoFocus }
 
 
@@ -222,8 +227,8 @@ Example
 When the property is set to true, it focuses the RTE at the time of rendering.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -232,8 +237,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -253,7 +258,7 @@ Example
 
 
 
-### autoHeight <span class="type-signature type boolean">boolean</span>
+### autoHeight  `boolean`
 {:#members:autoHeight }
 
 
@@ -262,8 +267,8 @@ Example
 Based on the content size, its height is adjusted instead of adding the scrollbar.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -272,8 +277,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -293,7 +298,7 @@ Example
 
 
 
-### colorCode<span class="type-signature type object">object</span>
+### colorCode `object`
 {:#members:colorcode}
 
 
@@ -303,8 +308,8 @@ Example
 Sets the colorCode to display the color of the fontColor and backgroundColor in the font tools of the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -315,8 +320,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -344,7 +349,7 @@ Example
 
 
 
-### colorPaletteColumns<span class="type-signature type number">number</span>
+### colorPaletteColumns `number`
 {:#members:colorpalettecolumns}
 
 
@@ -353,8 +358,8 @@ Example
 The number of columns given are rendered in the color palate popup.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -363,8 +368,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -390,7 +395,7 @@ Example
 
 
 
-### colorPaletteRows<span class="type-signature type number">number</span>
+### colorPaletteRows `number`
 {:#members:colorpaletterows}
 
 
@@ -398,8 +403,8 @@ Example
 The number of rows given are rendered in the color palate popup.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -408,8 +413,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -435,7 +440,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -443,8 +448,8 @@ Example
 
 Sets the root class for the RTE theme. This cssClass API helps the usage of custom skinning option for the RTE control by including this root class in CSS.
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -453,8 +458,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -474,7 +479,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -484,8 +489,8 @@ Example
 Enables/disables the RTE control’s accessibility or interaction.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -494,8 +499,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -515,7 +520,7 @@ Example
 
 
 
-### enableHtmlEncode <span class="type-signature type boolean">boolean</span>
+### enableHtmlEncode  `boolean`
 {:#members:enableHtmlEncode }
 
 
@@ -525,8 +530,8 @@ Example
 When the property is set to true, it returns the encrypted text.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -535,8 +540,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -555,7 +560,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -564,8 +569,8 @@ Example
 Maintain the values of the RTE after page reload.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -574,8 +579,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -595,7 +600,7 @@ Example
 
 
 
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
 
 
@@ -605,8 +610,8 @@ Example
 Shows the resize icon and enables the resize option in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -615,8 +620,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -636,7 +641,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -645,8 +650,8 @@ Example
 Shows the RTE in the RTL direction.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -655,8 +660,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -675,7 +680,7 @@ Example
 
 
 
-### enableXHTML<span class="type-signature type boolean">boolean</span>
+### enableXHTML `boolean`
 {:#members:enablexhtml}
 
 
@@ -685,8 +690,8 @@ Example
 Formats the contents based on the XHTML rules.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -695,8 +700,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -716,7 +721,45 @@ Example
 
 
 
-### fileBrowser<span class="type-signature type object">object</span>
+### externalCSS `string`
+{:#members:externalcss}
+
+
+
+
+Load the external CSS file inside Iframe.
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified enableXHTML value.
+    $("#rteSample").ejRTE({ externalCSS:"default.css"});
+</script>
+{% endhighlight %}
+
+
+
+### fileBrowser `object`
 {:#members:filebrowser}
 
 
@@ -726,8 +769,8 @@ Example
 This API allows to enable the file browser support in the RTE control to browse, create, delete and upload the files in the specified current directory.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -736,8 +779,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -761,7 +804,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 
-### fileBrowser.ajaxAction<span class="type-signature type string">string</span>
+### fileBrowser.ajaxAction `string`
 {:#members:filebrowser-ajaxaction}
 
 
@@ -770,8 +813,8 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 This API is used to receive the server-side handler for file related operations.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -780,8 +823,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -804,7 +847,7 @@ Example
 
 
 
-### fileBrowser.extensionAllow<span class="type-signature type string">string</span>
+### fileBrowser.extensionAllow `string`
 {:#members:filebrowser-extensionallow}
 
 
@@ -814,8 +857,8 @@ Specifies the file type extension shown in the file browser window.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -838,7 +881,7 @@ Example
 
 
 
-### fileBrowser.filePath<span class="type-signature type string">string</span>
+### fileBrowser.filePath `string`
 {:#members:filebrowser-filepath}
 
 
@@ -846,8 +889,8 @@ Specifies the directory to perform operations like create, delete and rename fol
 
 
 
-Example
-{:.#example}
+#### Example
+
 
 
 {% highlight html %}
@@ -869,7 +912,7 @@ Example
 
 
 
-### fontName<span class="type-signature type object">object</span>
+### fontName `object`
 {:#members:fontname}
 
 
@@ -877,8 +920,8 @@ Example
 Sets the fontName in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -897,8 +940,8 @@ Default Value:
 
 
 
-Example
-{:.#example}
+#### Example
+
 
 
 {% highlight html %}
@@ -929,7 +972,7 @@ $("#rteSample").ejRTE({ fontName: [
 
 
 
-### fontSize<span class="type-signature type object">object</span>
+### fontSize `object`
 {:#members:fontsize}
 
 
@@ -938,8 +981,8 @@ $("#rteSample").ejRTE({ fontName: [
 Sets the fontSize in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -954,8 +997,8 @@ Default Value:
 
 
 
-Example
-{:#example:}
+#### Example
+
 
 
 {% highlight html %}
@@ -1004,7 +1047,7 @@ $("#rteSample").ejRTE({ fontSize: [
 
 
 
-### format<span class="type-signature type string">string</span>
+### format `string`
 {:#members:format}
 
 
@@ -1014,8 +1057,8 @@ $("#rteSample").ejRTE({ fontSize: [
 Sets the format in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1032,8 +1075,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1059,7 +1102,7 @@ $("#rteSample").ejRTE({format: [
                 {% endhighlight %}
 
 
-### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -1069,8 +1112,8 @@ $("#rteSample").ejRTE({format: [
 Defines the height of the RTE textbox.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1079,8 +1122,8 @@ Default Value:
 
 
 
-Example
-{:#example:}
+#### Example
+
 
 
 {% highlight html %}
@@ -1100,7 +1143,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -1110,8 +1153,8 @@ Example
 Specifies the HTML Attributes of the ejRTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1120,8 +1163,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1141,7 +1184,7 @@ Example
 
 
 
-### iframeAttributes<span class="type-signature type string">object</span>
+### iframeAttributes `object`
 {:#members:iframeattributes}
 
 
@@ -1151,8 +1194,8 @@ Example
 Sets the given attributes to the iframe body element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1161,8 +1204,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1182,7 +1225,7 @@ Example
 
 
 
-### imageBrowser<span class="type-signature type object">object</span>
+### imageBrowser `object`
 {:#members:imagebrowser}
 
 
@@ -1192,8 +1235,8 @@ Example
 This API allows the image browser to support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1202,8 +1245,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1227,7 +1270,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 
-### imageBrowser.ajaxAction<span class="type-signature type string">string</span>
+### imageBrowser.ajaxAction `string`
 {:#members:imagebrowser-ajaxaction}
 
 
@@ -1238,8 +1281,8 @@ This API is used to receive the server-side handler for the file related operati
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1261,7 +1304,7 @@ $("#rteSample").ejRTE({  imageBrowser: {
 
 
 
-### imageBrowser.extensionAllow<span class="type-signature type string">string</span>
+### imageBrowser.extensionAllow `string`
 {:#members:imagebrowser-extensionallow}
 
 
@@ -1272,8 +1315,8 @@ Specifies the file type extension shown in the image browser window.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1296,7 +1339,7 @@ Example
 
 
 
-### imageBrowser.filePath<span class="type-signature type string">string</span>
+### imageBrowser.filePath `string`
 {:#members:imagebrowser-filepath}
 
 
@@ -1307,8 +1350,8 @@ Specifies the directory to perform operations like create, delete and rename fol
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1331,7 +1374,7 @@ Example
 
 
 
-### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive `boolean`
 {:#members:isresponsive}
 
 
@@ -1341,8 +1384,8 @@ Example
 Enables/disables responsive support for the RTE control toolbar items during the window resizing time.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1351,8 +1394,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1372,7 +1415,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -1382,8 +1425,8 @@ Example
 Sets the culture in the RTE when you set the localization values are needs to be assigned to the corresponding text as follows.  
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1392,8 +1435,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1507,7 +1550,7 @@ ej.RTE.Locale["en-US"] = {
 
 
 
-### maxHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### maxHeight `string`  `number`
 {:#members:maxheight}
 
 
@@ -1516,8 +1559,8 @@ ej.RTE.Locale["en-US"] = {
 Sets the maximum height for the RTE outer wrapper element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1526,8 +1569,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1547,7 +1590,7 @@ Example
 
 
 
-### maxLength<span class="type-signature type number">number</span>
+### maxLength `number`
 {:#members:maxlength}
 
 
@@ -1556,8 +1599,8 @@ Example
 Sets the maximum length for the RTE outer wrapper element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1566,8 +1609,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1587,7 +1630,7 @@ Example
 
 
 
-### maxWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### maxWidth `string`  `number`
 {:#members:maxwidth}
 
 
@@ -1597,8 +1640,8 @@ Example
 Sets the maximum width for the RTE outer wrapper element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1607,8 +1650,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1628,7 +1671,7 @@ Example
 
 
 
-### minHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### minHeight `string`  `number`
 {:#members:minheight}
 
 
@@ -1638,8 +1681,8 @@ Example
 Sets the minimum height for the RTE outer wrapper element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1648,8 +1691,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1669,7 +1712,7 @@ Example
 
 
 
-### minWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### minWidth `string`  `number`
 {:#members:minwidth}
 
 
@@ -1678,8 +1721,8 @@ Example
 Sets the minimum width for the RTE outer wrapper element.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1688,8 +1731,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1709,7 +1752,7 @@ Example
 
 
 
-### name<span class="type-signature type string">string</span>
+### name `string`
 {:#members:name}
 
 
@@ -1719,8 +1762,8 @@ Example
 Sets the name in the RTE. When the name value is not initialized, the ID value is assigned to the name.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1729,8 +1772,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1750,7 +1793,7 @@ Example
 
 
 
-### showClearAll<span class="type-signature type boolean">boolean</span>
+### showClearAll `boolean`
 {:#members:showclearall}
 
 
@@ -1760,8 +1803,8 @@ Example
 Shows ClearAll icon in the RTE footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1770,8 +1813,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1791,7 +1834,7 @@ Example
 
 
 
-### showClearFormat<span class="type-signature type boolean">boolean</span>
+### showClearFormat `boolean`
 {:#members:showclearformat}
 
 
@@ -1801,8 +1844,8 @@ Example
 Shows the clear format in the RTE footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1811,8 +1854,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1832,7 +1875,7 @@ Example
 
 
 
-### showCustomTable<span class="type-signature type boolean">boolean</span>
+### showCustomTable `boolean`
 {:#members:showcustomtable}
 
 
@@ -1841,8 +1884,8 @@ Example
 Shows the Custom Table in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1851,8 +1894,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1872,7 +1915,7 @@ Example
 
 
 
-### showDimensions<span class="type-signature type boolean">boolean</span>
+### showDimensions `boolean`
 {:#members:showdimensions}
 
 
@@ -1882,8 +1925,8 @@ Example
 This API is used to set the default dimensions for the image and video. When this property is set to true, the image and video dialog displays the dimension option.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1892,8 +1935,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1913,7 +1956,7 @@ Example
 
 
 
-### showFontOption<span class="type-signature type boolean">boolean</span>
+### showFontOption `boolean`
 {:#members:showfontoption}
 
 
@@ -1922,8 +1965,8 @@ Example
 Shows the FontOption in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1932,8 +1975,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1953,7 +1996,7 @@ Example
 
 
 
-### showFooter<span class="type-signature type boolean">boolean</span>
+### showFooter `boolean`
 {:#members:showfooter}
 
 
@@ -1963,8 +2006,8 @@ Example
 Shows footer in the RTE. When the footer is enabled, it displays the html tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1973,8 +2016,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1994,7 +2037,7 @@ Example
 
 
 
-### showHtmlSource<span class="type-signature type boolean">boolean</span>
+### showHtmlSource `boolean`
 {:#members:showhtmlsource}
 
 
@@ -2003,8 +2046,8 @@ Example
 Shows the HtmlSource in the RTE footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2013,8 +2056,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2034,7 +2077,7 @@ Example
 
 
 
-### showHtmlTagInfo<span class="type-signature type boolean">boolean</span>
+### showHtmlTagInfo `boolean`
 {:#members:showhtmltaginfo}
 
 
@@ -2043,8 +2086,8 @@ Example
 When the cursor is placed or when the text is selected in the RTE, it displays the tag info in the footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2053,8 +2096,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2074,7 +2117,7 @@ Example
 
 
 
-### showToolbar<span class="type-signature type boolean">boolean</span>
+### showToolbar `boolean`
 {:#members:showtoolbar}
 
 
@@ -2083,8 +2126,8 @@ Example
 Shows the toolbar in the RTE.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2093,8 +2136,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2114,15 +2157,15 @@ Example
 
 
 
-### showCharCount<span class="type-signature type boolean">boolean</span>
+### showCharCount `boolean`
 {:#members:showCharCount }
 
 
 Counts the total characters and displays it in the RTE footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2131,8 +2174,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2155,7 +2198,7 @@ Example
 
 
 
-### showWordCount <span class="type-signature type boolean">boolean</span>
+### showWordCount  `boolean`
 {:#members:showWordCount  }
 
 
@@ -2164,8 +2207,8 @@ Example
 Counts the total words and displays it in the RTE footer.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2174,8 +2217,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2195,7 +2238,7 @@ Example
 
 
 
-### tableColumns<span class="type-signature type number">number</span>
+### tableColumns `number`
 {:#members:tablecolumns}
 
 
@@ -2205,8 +2248,8 @@ Example
 The given number of columns render the insert table pop.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2215,8 +2258,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2236,7 +2279,7 @@ Example
 
 
 
-### tableRows<span class="type-signature type number">number</span>
+### tableRows `number`
 {:#members:tablerows}
 
 
@@ -2245,8 +2288,8 @@ Example
 The given number of rows render the insert table pop.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2255,8 +2298,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2276,7 +2319,7 @@ Example
 
 
 
-### tools<span class="type-signature type object">object</span>
+### tools `object`
 {:#members:tools}
 
 
@@ -2285,8 +2328,8 @@ Example
 Sets the tools in the RTE and gets the inner display order of the corresponding group element. Tools are dependent on the toolsList property. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2306,8 +2349,8 @@ view:[“fullScreen”]
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2346,7 +2389,7 @@ Example
 
 
 
-### tools.alignment<span class="type-signature type object">Object</span>
+### tools.alignment `object`
 {:#members:tools-alignment}
 
 
@@ -2356,8 +2399,8 @@ Specifies the alignment tools and the display order of this tool in the RTE tool
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2381,7 +2424,7 @@ Example
 
 
 
-### tools.casing <span class="type-signature type object">Object</span>
+### tools.casing  `object`
 {:#members:tools-casing }
 
 
@@ -2391,8 +2434,8 @@ Specifies the casing tools and the display order of this tool in the RTE toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2416,7 +2459,7 @@ Example
 
 
 
-### tools.clear  <span class="type-signature type object">Object</span>
+### tools.clear   `object`
 {:#members:tools-clear  }
 
 
@@ -2426,8 +2469,8 @@ Specifies the clear tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2451,7 +2494,7 @@ Example
 
 
 
-### tools.clipboard<span class="type-signature type object">Object</span>
+### tools.clipboard `object`
 {:#members:tools-clipboard}
 
 
@@ -2462,8 +2505,8 @@ Specifies the clipboard tools and the display order of this tool in the RTE tool
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2487,7 +2530,7 @@ Example
 
 
 
-### tools.doAction<span class="type-signature type object">Object</span>
+### tools.doAction `object`
 {:#members:tools-doaction}
 
 
@@ -2496,8 +2539,8 @@ Specifies the doAction tools and the display order of this tool in the RTE toolb
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2519,7 +2562,7 @@ Example
 
 
 
-### tools.effects<span class="type-signature type object">Object</span>
+### tools.effects `object`
 {:#members:tools-effects}
 
 
@@ -2529,8 +2572,8 @@ Specifies the effect of tools and the display order of this tool in RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2550,7 +2593,7 @@ effects: ["superscript", "subscript"]
 
 
 
-### tools.font<span class="type-signature type object">Object</span>
+### tools.font `object`
 {:#members:tools-font}
 
 
@@ -2560,8 +2603,8 @@ Specifies the font tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2584,7 +2627,7 @@ Example
 
 
 
-### tools.formatStyle<span class="type-signature type object">Object</span>
+### tools.formatStyle `object`
 {:#members:tools-formatstyle}
 
 
@@ -2593,8 +2636,8 @@ Specifies the formatStyle tools and the display order of this tool in the RTE to
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2618,7 +2661,7 @@ Example
 
 
 
-### tools.images<span class="type-signature type object">Object</span>
+### tools.images `object`
 {:#members:tools-images}
 
 
@@ -2626,8 +2669,8 @@ Specifies the image tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2651,7 +2694,7 @@ Example
 
 
 
-### tools.indenting<span class="type-signature type object">Object</span>
+### tools.indenting `object`
 {:#members:tools-indenting}
 
 
@@ -2659,8 +2702,8 @@ Specifies the indent tools and the display order of this tool in the RTE toolbar
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2684,15 +2727,15 @@ Example
 
 
 
-### tools.links<span class="type-signature type object">Object</span>
+### tools.links `object`
 {:#members:tools-links}
 
 
 Specifies the link tools and the display order of this tool in the RTE toolbar.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2716,7 +2759,7 @@ Example
 
 
 
-### tools.lists<span class="type-signature type object">Object</span>
+### tools.lists `object`
 {:#members:tools-lists}
 
 
@@ -2725,8 +2768,8 @@ Specifies the list tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2749,7 +2792,7 @@ Example
 
 
 
-### tools.media<span class="type-signature type object">Object</span>
+### tools.media `object`
 {:#members:tools-media}
 
 
@@ -2757,8 +2800,8 @@ Specifies the media tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2782,7 +2825,7 @@ Example
 
 
 
-### tools.style<span class="type-signature type object">Object</span>
+### tools.style `object`
 {:#members:tools-style}
 
 
@@ -2791,8 +2834,8 @@ Specifies the style tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2816,7 +2859,7 @@ Example
 
 
 
-### tools.tables<span class="type-signature type object">Object</span>
+### tools.tables `object`
 {:#members:tools-tables}
 
 
@@ -2825,8 +2868,8 @@ Specifies the table tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2849,7 +2892,7 @@ Example
 
 
 
-### tools.view<span class="type-signature type object">Object</span>
+### tools.view `object`
 {:#members:tools-view}
 
 
@@ -2857,8 +2900,8 @@ Specifies the view tools and the display order of this tool in the RTE toolbar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2883,15 +2926,15 @@ Example
 
 
 
-### toolsList<span class="type-signature type object">object</span>
+### toolsList `object`
 {:#members:toolslist}
 
 
 Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2900,8 +2943,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2921,15 +2964,15 @@ Example
 
 
 
-### undoStackLimit<span class="type-signature type number">number</span>
+### undoStackLimit `number`
 {:#members:undostacklimit}
 
 
 Gets the undo stack limit.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2938,8 +2981,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2959,7 +3002,7 @@ Example
 
 
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 
@@ -2968,8 +3011,8 @@ Example
 The given string value is displayed in the editable area.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2978,8 +3021,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2997,8 +3040,114 @@ $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to 
 
 
 
+### validationRules  `object`
+{:#members:validationrules}
 
-### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+
+
+
+Sets the jquery validation rules to the Rich Text Editor.
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >
+<textarea   id="rteSample1">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea > <script>
+    // Initializes the RTE with the specified ValidationRules.
+     $("#rteSample").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                required: true,                
+                minlength:15,
+                maxlength: 150,
+                minWordCount: 3,
+                maxWordCount:50
+         }});
+         
+        $("#rteSample1").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                equalTo: "#rteSample"
+         }});
+</script>
+{% endhighlight %}
+
+
+
+### validationMessage  `object`
+{:#members:validationmessage}
+
+Sets the jquery validation error message to the Rich Text Editor. 
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in 
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea > <script>
+    // Initializes the RTE with the specified ValidationRules and ValidationMessage.
+     $("#rteSample").ejRTE({
+         allowEditing: true,
+         validationRules: {
+                required: true,                
+                minlength:15,
+                maxlength: 150,
+                minWordCount: 3,
+                maxWordCount:50
+         },
+         validationMessage: {
+                required: "Required RTE value",
+                minlength:"Minimum content length not reached."
+         }});         
+</script>
+{% endhighlight %}
+
+
+
+
+
+### width `string`  `number`
 {:#members:width}
 
 
@@ -3006,8 +3155,8 @@ $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to 
 Defines the width of the RTE textbox.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -3016,8 +3165,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3038,15 +3187,15 @@ Example
 ## Methods
 
 
-### createRange<span class="signature">()</span>
+### createRange()
 {:#methods:createRange}
 
 
 Returns the range object.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3065,7 +3214,7 @@ Example
 </script>
 {% endhighlight %}
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -3076,8 +3225,8 @@ Disables the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3112,7 +3261,7 @@ $("#rteSample").ejRTE("disable");// Disables the RTE
 
 
 
-### disableToolbarItem<span class="signature">()</span>
+### disableToolbarItem()
 {:#methods:disabletoolbaritem}
 
 
@@ -3120,8 +3269,8 @@ Disables the corresponding tool in the RTE ToolBar.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3169,7 +3318,7 @@ Example
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -3177,8 +3326,8 @@ Enables the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3214,7 +3363,7 @@ $("#rteSample").ejRTE("enable");// Enables RTE
 
 
 
-### enableToolbarItem<span class="signature">()</span>
+### enableToolbarItem()
 {:#methods:enabletoolbaritem}
 
 
@@ -3223,8 +3372,8 @@ Enables the corresponding tool in the toolbar when the tool is disabled.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3278,7 +3427,7 @@ Note: When you are using our release version before 13.3, refer to the following
 
 
 
-### executeCommand<span class="signature">()</span>
+### executeCommand()
 {:#methods:executecommand}
 
 
@@ -3287,8 +3436,8 @@ Performs the action value based on the given command.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3310,7 +3459,7 @@ rteeObj.executeCommand("bold", true); // Gets the content as string from rte
 
 
 
-### focus<span class="signature">()</span>
+### focus()
 {:#methods:focus}
 
 
@@ -3319,8 +3468,8 @@ Focuses the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3358,7 +3507,7 @@ $("#rteSample").ejRTE("focus");// Focuses the RTE.
 
 
 
-### getCommandStatus<span class="signature">()</span>
+### getCommandStatus()
 {:#methods:getcommandstatus}
 
 
@@ -3367,8 +3516,8 @@ Gets the command status of the selected text based on the given comment in the R
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3388,15 +3537,15 @@ rteeObj.getCommandStatus(("bold");  // Gets the bold status form selected text i
 </script>{% endhighlight %}
 
 
-### getDocument<span class="signature">()</span>
+### getDocument()
 {:#methods:getDocument}
 
 
 Gets the HTML string from the RTE control.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3417,7 +3566,7 @@ Example
 {% endhighlight %}
 
 
-### getHtml<span class="signature">()</span>
+### getHtml()
 {:#methods:gethtml}
 
 
@@ -3426,8 +3575,8 @@ Gets the HTML string from the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3465,7 +3614,7 @@ $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.
 
 
 
-### getSelectedHtml<span class="signature">()</span>
+### getSelectedHtml()
 {:#methods:getselectedhtml}
 
 
@@ -3474,8 +3623,8 @@ Gets the selected html string from the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3513,7 +3662,7 @@ $("#rteSample").ejRTE("getSelectedHtml");// GetSelectedHtml from rte
 
 
 
-### getText<span class="signature">()</span>
+### getText()
 {:#methods:gettext}
 
 
@@ -3521,8 +3670,8 @@ Gets the content as string from the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3560,7 +3709,7 @@ $("#rteSample").ejRTE("getText");// getText from rte
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -3569,8 +3718,8 @@ Hides the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3605,7 +3754,7 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("hide");// Hides the rte       
 </script>{% endhighlight %}
 
-### pasteContent<span class="signature">()</span>
+### pasteContent()
 {:#methods:pasteContent}
 
 
@@ -3613,8 +3762,8 @@ This method helps to insert/paste the content at the current cursor (caret) posi
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3636,7 +3785,7 @@ Example
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -3645,8 +3794,8 @@ Refreshes the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3684,7 +3833,7 @@ $("#rteSample").ejRTE("refresh");// Refreshes the rte
 
 
 
-### removeToolbarItem<span class="signature">()</span>
+### removeToolbarItem()
 {:#methods:removetoolbaritem}
 
 
@@ -3693,8 +3842,8 @@ $("#rteSample").ejRTE("refresh");// Refreshes the rte
 Removes the given tool from the RTE ToolBbar.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3748,15 +3897,15 @@ Note: When using the release version before 13.3, refer to the following
 
 
 
-### selectAll<span class="signature">()</span>
+### selectAll()
 {:#methods:selectAll}
 
 
 Selects all the contents within the RTE.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3777,15 +3926,15 @@ Example
 {% endhighlight %}
 
 
-### selectRange<span class="signature">()</span>
+### selectRange()
 {:#methods:selectRange}
 
 
 Selects the contents in the given range.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3816,7 +3965,7 @@ Example
 {% endhighlight %}
 
 
-### setColorPickerType<span class="signature">()</span>
+### setColorPickerType()
 {:#methods:setcolorpickertype}
 
 
@@ -3825,8 +3974,8 @@ Sets the colorpicker model type rendered initially in the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3864,7 +4013,7 @@ $("#rteSample").ejRTE("setColorPickerType","picker");// Sets the picker mode
 
 
 
-### setHtml<span class="signature">()</span>
+### setHtml()
 {:#methods:sethtml}
 
 
@@ -3873,8 +4022,8 @@ Sets the HTML string from the RTE control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3907,14 +4056,14 @@ $("#rteSample").ejRTE("setHtml","The Rich Text Editor (RTE) control is an easy t
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 Displays the RTE control.
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3969,7 +4118,7 @@ Fires when changed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3977,26 +4126,26 @@ Fires when changed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the RTE model</td>
+<td class="description">returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4032,7 +4181,7 @@ Fires when the RTE is created successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4040,26 +4189,26 @@ Fires when the RTE is created successfully
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4094,7 +4243,7 @@ Fires before the RTE is destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4102,26 +4251,26 @@ Fires before the RTE is destroyed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4157,7 +4306,7 @@ Fires when the commands are executed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4165,26 +4314,26 @@ Fires when the commands are executed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4220,7 +4369,7 @@ Fires when the keydown action is successful.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4228,26 +4377,26 @@ Fires when the keydown action is successful.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4283,7 +4432,7 @@ Fires when the keyup action is successful.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4291,26 +4440,26 @@ Fires when the keyup action is successful.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4346,7 +4495,7 @@ Fires before the RTE Edit area is rendered and after the toolbar is rendered.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4354,26 +4503,26 @@ Fires before the RTE Edit area is rendered and after the toolbar is rendered.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">When the event is canceled; otherwise, false.</td>
+<td class="description">When the event is canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the RTE model</td>
+<td class="description">Returns the RTE model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

@@ -1,31 +1,30 @@
 ---
 layout: post
 title: ejListView
+description: API reference for ejListView
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ListView, ejListView, syncfusion, ListView api 
 ---
 
 # ejListView
 
 
-
 The ListView widget builds interactive ListView interface. This control allows you to select an item from a list-like interface and display a set of data items in different layouts or views. Lists are used for displaying data, data navigation, result lists, and data entry.
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejListView()
+
+{% endhighlight %}
 
 
 
-$(element).ejListView<span class="signature">()</span>
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -48,13 +47,12 @@ Example
 <script> 
 // Create ListView
 $("#lb").ejListView(); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -77,7 +75,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -86,8 +84,8 @@ Requires
 Sets the root class for ListView theme. This cssClass API helps to use custom skinning option for ListView control. By defining the root class using this API, we need to include this root class in CSS.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -96,8 +94,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -137,7 +135,7 @@ $("#lb").ejListView ("option", "cssClass", "customclass");
 
 
 
-### dataSource<span class="type-signature type jsonarray">JSONArray</span>
+### dataSource `JSONArray`
 {:#members:datasource}
 
 
@@ -146,8 +144,8 @@ $("#lb").ejListView ("option", "cssClass", "customclass");
 Specifies the datasource is enabled.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -156,8 +154,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -193,7 +191,7 @@ $("#lb").ejListView ("option", "dataSource", true);
 
 
 
-### enableAjax<span class="type-signature type boolean">boolean</span>
+### enableAjax `boolean`
 {:#members:enableajax}
 
 
@@ -202,8 +200,8 @@ $("#lb").ejListView ("option", "dataSource", true);
 Specifies whether to load ajax content while selecting item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -212,8 +210,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -246,7 +244,7 @@ $("#lb").ejListView ("option", "enableAjax", true);
 
 
 
-### enableCache<span class="type-signature type boolean">boolean</span>
+### enableCache `boolean`
 {:#members:enablecache}
 
 
@@ -255,8 +253,8 @@ $("#lb").ejListView ("option", "enableAjax", true);
 Specifies whether to enable caching the content.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -265,8 +263,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -299,7 +297,7 @@ $("#lb").ejListView ("option", "enableCache", true);
 
 
 
-### enableCheckMark<span class="type-signature type boolean">boolean</span>
+### enableCheckMark `boolean`
 {:#members:enablecheckmark}
 
 
@@ -308,8 +306,8 @@ $("#lb").ejListView ("option", "enableCache", true);
 Specifies whether to enable check mark for the item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -318,8 +316,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -359,7 +357,7 @@ $("#lb").ejListView ("option", "enableCheckMark", true);
 
 
 
-### enableFiltering<span class="type-signature type boolean">boolean</span>
+### enableFiltering `boolean`
 {:#members:enablefiltering}
 
 
@@ -368,8 +366,8 @@ $("#lb").ejListView ("option", "enableCheckMark", true);
 Specifies whether to enable the filtering feature to filter the item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -378,8 +376,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -419,7 +417,7 @@ $("#lb").ejListView ("option", "enableFiltering", true);
 
 
 
-### enableGroupList<span class="type-signature type boolean">boolean</span>
+### enableGroupList `boolean`
 {:#members:enablegrouplist}
 
 
@@ -428,8 +426,8 @@ $("#lb").ejListView ("option", "enableFiltering", true);
 Specifies whether to group the list item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -438,8 +436,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -483,7 +481,7 @@ $("#lb").ejListView ("option", "enableGroupList", true);
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -492,8 +490,8 @@ $("#lb").ejListView ("option", "enableGroupList", true);
 Specifies to maintain the current model value to browser cookies for state maintenance. While refresh the page, the model value will get apply to the control from browser cookies.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -502,8 +500,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -543,7 +541,7 @@ $("#lb").ejListView ("option", "enablePersistence", true);
 
 
 
-### fieldSettings<span class="type-signature type object">object</span>
+### fieldSettings `object`
 {:#members:fieldsettings}
 
 
@@ -553,8 +551,8 @@ Specifies the field settings to map the datasource.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -598,7 +596,7 @@ $("#lb").ejListView ("option", "fieldSettings", true);
 
 
 
-### headerBackButtonText<span class="type-signature type string">string</span>
+### headerBackButtonText `string`
 {:#members:headerbackbuttontext}
 
 
@@ -607,8 +605,8 @@ $("#lb").ejListView ("option", "fieldSettings", true);
 Specifies the text of the back button in the header.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -617,8 +615,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -658,7 +656,7 @@ $("#lb").ejListView ("option", "headerBackButtonText", "Back");
 
 
 
-### headerTitle<span class="type-signature type string">string</span>
+### headerTitle `string`
 {:#members:headertitle}
 
 
@@ -667,8 +665,8 @@ $("#lb").ejListView ("option", "headerBackButtonText", "Back");
 Specifies the title of the header.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -677,8 +675,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -718,7 +716,7 @@ $("#lb").ejListView ("option", "headerTitle", "Title");
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -727,8 +725,8 @@ $("#lb").ejListView ("option", "headerTitle", "Title");
 Specifies the height.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -737,8 +735,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -778,7 +776,7 @@ $("#lb").ejListView ("option", "height", 300);
 
 
 
-### persistSelection<span class="type-signature type boolean">boolean</span>
+### persistSelection `boolean`
 {:#members:persistselection}
 
 
@@ -787,8 +785,8 @@ $("#lb").ejListView ("option", "height", 300);
 Specifies whether to retain the selection of the item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -797,8 +795,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -833,12 +831,14 @@ $("#lb").ejListView ({ persistSelection: true });
 $("#lb").ejListView ("option", "persistSelection");                     
 // Set the persistSelection API
 $("#lb").ejListView ("option", "persistSelection", true);
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 
-### preventSelection<span class="type-signature type boolean">boolean</span>
+### preventSelection `boolean`
 {:#members:preventselection}
 
 
@@ -847,8 +847,8 @@ $("#lb").ejListView ("option", "persistSelection", true);
 Specifies whether to prevent the selection of the item.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -857,8 +857,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -898,7 +898,7 @@ $("#lb").ejListView ("option", "preventSelection", true);
 
 
 
-### query<span class="type-signature type ej.query">ej.Query</span>
+### query `ej.Query`
 {:#members:query}
 
 
@@ -907,8 +907,8 @@ $("#lb").ejListView ("option", "preventSelection", true);
 Specifies the query to execute with the datasource.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -917,8 +917,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -951,7 +951,7 @@ $("#lb").ejListView ("option", "query", true);
 
 
 
-### renderTemplate<span class="type-signature type boolean">boolean</span>
+### renderTemplate `boolean`
 {:#members:rendertemplate}
 
 
@@ -960,8 +960,8 @@ $("#lb").ejListView ("option", "query", true);
 Specifies whether need to render the control with the template contents.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -970,8 +970,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1002,7 +1002,7 @@ $("#lb").ejListView ({ renderTemplate: true });
 
 
 
-### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex `number`
 {:#members:selecteditemindex}
 
 
@@ -1011,8 +1011,8 @@ $("#lb").ejListView ({ renderTemplate: true });
 Specifies the index of item which need to be in selected state initially while loading.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1021,8 +1021,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1062,7 +1062,7 @@ $("#lb").ejListView ("option", "selectedItemIndex", 2);
 
 
 
-### showHeader<span class="type-signature type boolean">boolean</span>
+### showHeader `boolean`
 {:#members:showheader}
 
 
@@ -1071,8 +1071,8 @@ $("#lb").ejListView ("option", "selectedItemIndex", 2);
 Specifies whether to show the header.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1081,8 +1081,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1122,7 +1122,7 @@ $("#lb").ejListView ("option", "showHeader", true);
 
 
 
-### templateId<span class="type-signature type boolean">boolean</span>
+### templateId `boolean`
 {:#members:templateid}
 
 
@@ -1131,8 +1131,8 @@ $("#lb").ejListView ("option", "showHeader", true);
 Specifies ID of the element contains template contents.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1141,8 +1141,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1168,7 +1168,7 @@ Example
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -1177,8 +1177,8 @@ Example
 Specifies the width.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1187,8 +1187,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1232,7 +1232,7 @@ $("#lb").ejListView ("option", "width", 200);
 
 
 
-### addItem<span class="signature">()</span>
+### addItem()
 {:#methods:additem}
 
 
@@ -1242,8 +1242,8 @@ To add item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1273,7 +1273,7 @@ $("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'></li>"
 
 
 
-### checkAllItem<span class="signature">()</span>
+### checkAllItem()
 {:#methods:checkallitem}
 
 
@@ -1283,8 +1283,8 @@ To check all the items.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1314,7 +1314,7 @@ $("#lb").ejListView("checkAllItem");
 
 
 
-### checkItem<span class="signature">()</span>
+### checkItem(item)
 {:#methods:checkitem}
 
 
@@ -1324,8 +1324,8 @@ To check item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1355,7 +1355,7 @@ $("#lb").ejListView("checkItem",2);
 
 
 
-### clear<span class="signature">()</span>
+### clear()
 {:#methods:clear}
 
 
@@ -1365,8 +1365,8 @@ To clear all the list item in the control before updating with new datasource.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1407,7 +1407,7 @@ window.dbitem2 =
 
 
 
-### deActive<span class="signature">()</span>
+### deActive(index)
 {:#methods:deactive}
 
 
@@ -1417,8 +1417,8 @@ To make the item in the given index to be default state.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1448,7 +1448,7 @@ $("#lb").ejListView("deActive",2);
 
 
 
-### disableItem<span class="signature">()</span>
+### disableItem(index)
 {:#methods:disableitem}
 
 
@@ -1458,8 +1458,8 @@ To disable item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1489,7 +1489,7 @@ $("#lb").ejListView("disableItem",2);
 
 
 
-### enableItem<span class="signature">()</span>
+### enableItem(index)
 {:#methods:enableitem}
 
 
@@ -1499,8 +1499,8 @@ To enable item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1530,7 +1530,7 @@ $("#lb").ejListView("enableItem",2);
 
 
 
-### getActiveItem<span class="signature">()</span>
+### getActiveItem()
 {:#methods:getactiveitem}
 
 
@@ -1540,8 +1540,8 @@ To get the active item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1571,7 +1571,7 @@ $("#lb").ejListView("getActiveItem");
 
 
 
-### getActiveItemText<span class="signature">()</span>
+### getActiveItemText()
 {:#methods:getactiveitemtext}
 
 
@@ -1581,8 +1581,8 @@ To get the text of the active item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1612,7 +1612,7 @@ $("#lb").ejListView("getActiveItemText");
 
 
 
-### getCheckedItems<span class="signature">()</span>
+### getCheckedItems()
 {:#methods:getcheckeditems}
 
 
@@ -1622,8 +1622,8 @@ To get all the checked items.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1653,7 +1653,7 @@ $("#lb").ejListView("getCheckedItems");
 
 
 
-### getCheckedItemsText<span class="signature">()</span>
+### getCheckedItemsText()
 {:#methods:getcheckeditemstext}
 
 
@@ -1663,8 +1663,8 @@ To get the text of all the checked items.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1694,7 +1694,7 @@ $("#lb").ejListView("getCheckedItemsText");
 
 
 
-### getItemsCount<span class="signature">()</span>
+### getItemsCount()
 {:#methods:getitemscount}
 
 
@@ -1704,8 +1704,8 @@ To get the total item count.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1735,7 +1735,7 @@ $("#lb").ejListView("getItemsCount");
 
 
 
-### getItemText<span class="signature">()</span>
+### getItemText(index)
 {:#methods:getitemtext}
 
 
@@ -1745,8 +1745,8 @@ To get the text of the item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1776,7 +1776,7 @@ $("#lb").ejListView("getItemText",2);
 
 
 
-### hasChild<span class="signature">()</span>
+### hasChild(index)
 {:#methods:haschild}
 
 
@@ -1786,8 +1786,8 @@ To check whether the item in the given index has child item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1817,7 +1817,7 @@ $("#lb").ejListView("hasChild",2);
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -1827,8 +1827,8 @@ To hide the list.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1858,7 +1858,7 @@ $("#lb").ejListView("hide");
 
 
 
-### hideItem<span class="signature">()</span>
+### hideItem(index)
 {:#methods:hideitem}
 
 
@@ -1868,8 +1868,8 @@ To hide item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1899,7 +1899,7 @@ $("#lb").ejListView("hideItem",2);
 
 
 
-### isChecked<span class="signature">()</span>
+### isChecked(index)
 {:#methods:ischecked}
 
 
@@ -1909,8 +1909,8 @@ To check whether item in the given index is checked.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1940,7 +1940,7 @@ $("#lb").ejListView("isChecked",2);
 
 
 
-### loadAjaxContent<span class="signature">()</span>
+### loadAjaxContent(item)
 {:#methods:loadajaxcontent}
 
 
@@ -1950,8 +1950,8 @@ To load the ajax content while selecting the item.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1974,7 +1974,7 @@ $("#lb").ejListView("loadAjaxContent","load1.html");
 
 
 
-### removeCheckMark<span class="signature">()</span>
+### removeCheckMark(index)
 {:#methods:removecheckmark}
 
 
@@ -1984,8 +1984,8 @@ To remove the check mark either for specific item in the given index or for all 
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2015,7 +2015,7 @@ $("#lb").ejListView("removeCheckMark",2);
 
 
 
-### removeItem<span class="signature">()</span>
+### removeItem(index)
 {:#methods:removeitem}
 
 
@@ -2025,8 +2025,8 @@ To remove item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2056,7 +2056,7 @@ $("#lb").ejListView("removeItem",3);
 
 
 
-### selectItem<span class="signature">()</span>
+### selectItem(index)
 {:#methods:selectitem}
 
 
@@ -2066,8 +2066,8 @@ To select item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2097,7 +2097,7 @@ $("#lb").ejListView("selectItem",2);
 
 
 
-### setActive<span class="signature">()</span>
+### setActive(index)
 {:#methods:setactive}
 
 
@@ -2107,8 +2107,8 @@ To make the item in the given index to be active state.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2138,7 +2138,7 @@ $("#lb").ejListView("setActive",2);
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -2148,8 +2148,8 @@ To show the list.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2179,7 +2179,7 @@ $("#lb").ejListView("show");
 
 
 
-### showItem<span class="signature">()</span>
+### showItem(index)
 {:#methods:showitem}
 
 
@@ -2189,8 +2189,8 @@ To show item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2220,7 +2220,7 @@ $("#lb").ejListView("showItem",2);
 
 
 
-### unCheckAllItem<span class="signature">()</span>
+### unCheckAllItem()
 {:#methods:uncheckallitem}
 
 
@@ -2230,8 +2230,8 @@ To uncheck all the items.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2261,7 +2261,7 @@ $("#lb").ejListView("unCheckAllItem");
 
 
 
-### unCheckItem<span class="signature">()</span>
+### unCheckItem(index)
 {:#methods:uncheckitem}
 
 
@@ -2271,8 +2271,8 @@ To uncheck item in the given index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2319,7 +2319,7 @@ Event triggers before the ajax request happens.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2327,13 +2327,13 @@ Event triggers before the ajax request happens.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2341,25 +2341,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 ajaxData{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the ajax settings.</td>
+<td class="description">returns the ajax settings.</td>
 </tr>
 </tbody>
 </table>
@@ -2369,8 +2369,8 @@ ajaxData{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2408,7 +2408,7 @@ Event triggers after the ajax content loaded completely.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2416,13 +2416,13 @@ Event triggers after the ajax content loaded completely.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2430,19 +2430,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 </tbody>
 </table>
@@ -2452,8 +2452,8 @@ model{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2491,7 +2491,7 @@ Event triggers when the ajax request failed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2499,13 +2499,13 @@ Event triggers when the ajax request failed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2513,49 +2513,49 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 errorThrown{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the error thrown in the ajax post.</td>
+<td class="description">returns the error thrown in the ajax post.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 textStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the status.</td>
+<td class="description">returns the status.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the curent list item.</td>
+<td class="description">returns the curent list item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current item text.</td>
+<td class="description">returns the current item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current item index.</td>
+<td class="description">returns the current item index.</td>
 </tr>
 </tbody>
 </table>
@@ -2565,8 +2565,8 @@ index{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2604,7 +2604,7 @@ Event triggers after the ajax content loaded successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2612,13 +2612,13 @@ Event triggers after the ajax content loaded successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2626,49 +2626,49 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 content{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the ajax current content.</td>
+<td class="description">returns the ajax current content.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the curent list item.</td>
+<td class="description">returns the curent list item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current item text.</td>
+<td class="description">returns the current item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current item index.</td>
+<td class="description">returns the current item index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current url of the ajax post.</td>
+<td class="description">returns the current url of the ajax post.</td>
 </tr>
 </tbody>
 </table>
@@ -2678,8 +2678,8 @@ url{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2717,7 +2717,7 @@ Event triggers before the items loaded.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2725,13 +2725,13 @@ Event triggers before the items loaded.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2739,19 +2739,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 </tbody>
 </table>
@@ -2761,8 +2761,8 @@ model{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2807,7 +2807,7 @@ Event triggers after the items loaded.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2815,13 +2815,13 @@ Event triggers after the items loaded.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2829,19 +2829,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 </tbody>
 </table>
@@ -2851,8 +2851,8 @@ model{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2897,7 +2897,7 @@ Event triggers when mouse down happens on the item.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2905,13 +2905,13 @@ Event triggers when mouse down happens on the item.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2919,61 +2919,61 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 hasChild{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">If the child element exist return true; otherwise, false.</td>
+<td class="description">If the child element exist return true; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current list item.</td>
+<td class="description">returns the current list item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current text of item.</td>
+<td class="description">returns the current text of item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current Index of the item.</td>
+<td class="description">returns the current Index of the item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">If checked return true; otherwise, false.</td>
+<td class="description">If checked return true; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 checkedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the list of checked items.</td>
+<td class="description">returns the list of checked items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 checkedItemsText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current checked item text.</td>
+<td class="description">returns the current checked item text.</td>
 </tr>
 </tbody>
 </table>
@@ -2983,8 +2983,8 @@ checkedItemsText{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3029,7 +3029,7 @@ Event triggers when mouse up happens on the item.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3037,13 +3037,13 @@ Event triggers when mouse up happens on the item.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from listview.
+<td class="description">Event parameters from listview.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3051,61 +3051,61 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the model value of the control.</td>
+<td class="description">returns the model value of the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 hasChild{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">If the child element exist return true; otherwise, false.</td>
+<td class="description">If the child element exist return true; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current list item.</td>
+<td class="description">returns the current list item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current text of item.</td>
+<td class="description">returns the current text of item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current Index of the item.</td>
+<td class="description">returns the current Index of the item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">If checked return true; otherwise, false.</td>
+<td class="description">If checked return true; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 checkedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the list of checked items.</td>
+<td class="description">returns the list of checked items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 checkedItemsText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current checked item text.</td>
+<td class="description">returns the current checked item text.</td>
 </tr>
 </tbody>
 </table>
@@ -3115,8 +3115,8 @@ checkedItemsText{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3143,7 +3143,9 @@ $("#lb").ejListView({
 }
         });    
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 

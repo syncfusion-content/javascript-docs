@@ -341,5 +341,5 @@ To format Summary values, [`format`](http://help.syncfusion.com/js/api/ejgrid#me
 ![](Summary_images/summaryGrid_img7.png)
 
 
-N>_globalize.js` script need to referred while formatting is applied to summary values._
+N> globalize.js` script need to referred while formatting is applied to summary values.
 

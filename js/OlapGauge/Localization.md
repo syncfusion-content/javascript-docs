@@ -9,10 +9,28 @@ documentation: ug
 
 # Localization
 
- The **Essential JavaScript OlapGauge** control provides inherent support to localize its UI.
+## Localization in OlapGauge Control
 
-The following table lists the default English localization User Interface based on French culture.
+ We can localize the OlapGauge controls text with a collection of localized strings using **"ej.olap.OlapGauge.locale"** for different cultures. By default, the OlapGauge control is localized in **"en-US"**.
 
+Following code example illustrates on how to localize OlapGauge based on "French" culture.
+
+{% highlight js %}
+
+ej.olap.OlapGauge.locale["fr-FR"] = {
+    RevenueGoal: "Objectif de chiffre d'affaires",
+    RevenueValue: "Valeur du chiffre d'affaires"
+}
+
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    locale: "fr-FR",
+    //...
+});
+
+{% endhighlight %}
+
+Following table localizes the in-built keywords to “French” culture for OlapGauge.
 
 <table>
 <tr>
@@ -22,186 +40,28 @@ Values</th></tr>
 <tr>
 <td>
 RevenueGoal</td><td>
-"Revenu Objectifs",</td></tr>
+"Objectif de chiffre d'affaires"</td></tr>
 <tr>
 <td>
 RevenueValue</td><td>
-"Revenu Valeurs",</td></tr>
-<tr>
-<td>
-RevenueFor</td><td>
-"Revenu Pour",</td></tr>
-<tr>
-<td>
-MDXqueryExecutionFailed</td><td>
-"L'exécution de la requête MDX pas",</td></tr>
-<tr>
-<td>
-PreparingAndExecutingMDXquery</td><td>
-"Préparation et exécution d'une Requête MDX",</td></tr>
-<tr>
-<td>
-MDXqueryExecutedSuccessfully</td><td>
-"Requête MDX exécutée avec succès",</td></tr>
-<tr>
-<td>
-RenderingStarted</td><td>
-"Rendu en route",</td></tr>
-<tr>
-<td>
-RenderingSucceeded</td><td>
-"Rendu Réussi",</td></tr>
-<tr>
-<td>
-RenderingFailed</td><td>
-"Rendant pas"</td></tr>
+"Valeur du chiffre d'affaires ",</td></tr>
 </table>
 
-The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture with the help of [locale](/js/api/ejOlapGauge#members:locale) property.
+## Localization and Globalization of Cube Info
 
-{% highlight js %}
+Content displayed within the OlapGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+ 
+* To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
+* To bind the globalized content in OlapGauge control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture.
 
- ej.olap.OlapGauge.locale["fr-FR"] = {
-    RevenueGoal: "Objectif de chiffre d'affaires",
-    RevenueValue: "Valeur du chiffre d'affaires",
-    RevenueFor: "Recettes pour",
-    MDXqueryExecutionFailed: "L'exécution de la requête MDX pas",
-    PreparingAndExecutingMDXquery: "La préparation et l'exécution de la requête MDX",
-    MDXqueryExecutedSuccessfully: "MDX requête exécutée avec succès",
-    RenderingStarted: "Rendu commencé",
-    RenderingSucceeded: "Rendu réussi",
-    RenderingFailed: "Rendant pas"
-}
-
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        load: "loadGaugeTheme",
-        locale: "fr-FR",
-        backgroundColor: "transparent",
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
-            border: {
-                width: 0.5
-            },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                type: "needle",
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 9
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 5,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{
-                distanceFromScale: -5,
-                size: 7,
-                backgroundColor: "#fc0606",
-                border: {
-                    color: "#fc0606"
-                }
-            }, {
-                distanceFromScale: -5,
-                size: 7
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 330
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
-        }]
-    });
-});
-{% endhighlight %}
-
-
-N>  In order to render the localized OlapGauge, You are required to reset the content available in both OlapGauge Control and OLAP Cube.
-
-##Localizing Control Information
-
-To apply control side localization, refer the following code example:
-
-{% highlight html %}
-
-ej.olap.OlapGauge.locale["zh-CN"] = {
-    //Corresponding keyword values needs to be set here.
-}
-
-{% endhighlight %}
-
-##Localizing Cube Information
-
-To render the localized Cube information, set `Locale Identifier` in the connection string.
-
-{% highlight c# %}
+{% highlight C# %}
 
 //1036 refers to “fr-FR” culture.
-string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
-DataManager = new OlapDataManager(connectionString);
-DataManager.Culture = new System.Globalization.CultureInfo(1036);
-DataManager.OverrideDefaultFormatStrings = true;
+string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
+DataManager = new OlapDataManager(connectionString);
+DataManager.Culture = new System.Globalization.CultureInfo(1036);
+DataManager.OverrideDefaultFormatStrings = true;
 
-{% endhighlight %}
+{% endhighlight %} 
 
-The following screenshot displays the **OlapGauge** with French localization.
-
-![](/js/OlapGauge/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png) 
-
-
+![](Localization_images/Localization.png) 

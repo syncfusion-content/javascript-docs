@@ -50,6 +50,8 @@ Following code example illustrates on how to localize OlapChart based on **“Fr
 
 {% endhighlight %}
 
+Following table localizes the in-built keywords to **“French”** culture for OlapChart.
+
 <table>
 <tr>
 <th>

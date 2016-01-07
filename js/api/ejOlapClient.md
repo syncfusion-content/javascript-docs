@@ -3,2275 +3,654 @@ layout: post
 title: ejOlapClient
 documentation: API
 platform: js
+keywords: ejOlapClient, API, Essential JS OlapClient
 metaname: 
 metacontent: 
 ---
 
-# Custom Design for Html OLAP Client control.
+# OlapClient
 
+OlapClient is an ad hoc analysis tool that can be easily bound to any OLAP datasource to provide a visual presentation of the information retrieved from multidimensional data.
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejOlapClient()
 
+{% endhighlight %}
 
-
-
-
-
-$(element).ejOlapClient<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-<div id="OlapClient"></div> 
+<div id="OlapClient1"></div> 
  
 <script>
-// Create OLAP Client
-$("#OlapClient").ejOlapClient(...);     
-</script>{% endhighlight %}
+//Create OlapClient
+$("#OlapClient1").ejOlapClient(...);     
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-Requires
-{:.require}
-
-
-
+#### Requires
 
 * module:jquery-1.10.2.min.js
-
-
 * module:jquery.easing.1.3.min.js
-
-
 * module:jquery.globalize.min.js
-
-
 * module:ej.core.js
-
-
 * module:ej.data.js
-
-
 * module:ej.touch.js
-
-
 * module:ej.button.js
-
-
 * module:ej.togglebutton.js
-
-
 * module:ej.checkbox.js
-
-
 * module:ej.radiobutton.js
-
-
 * module:ej.dropdownlist.js
-
-
 * module:ej.dialog.js
-
-
 * module:ej.draggable.js
-
-
 * module:ej.toolbar.js
-
-
 * module:ej.scroller.js
-
-
 * module:ej.maskedit.js
-
-
 * module:ej.waitingpopup.js
-
-
 * module:ej.treeview.js
-
-
 * module:ej.tab.js
-
-
 * module:ej.chart.js
-
-
 * module:ej.olapchart.js
-
-
 * module:ej.pivotgrid.js
-
-
 * module:ej.olapclient.js
-
-
-
 
 ## Members
 
-
-
-
-
-
-
-
-### chartType<span class="type-signature type enum">enum</span>
+### chartType `enum`
 {:#members:charttype}
 
+Allows the user to set the specific chart type for OlapChart.
 
+**Default Value:** ej.olap.OlapChart.ChartTypes.Column
 
-
-
-
-
-
-Sets the type for OLAP Chart component inside OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.olap.OlapChart.ChartTypes.Column
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set chartType API value during initialization
-$("#OlapClient").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the chartType API, after initialization:
-//Gets the chartType value  
-$("#OlapClient").ejOlapClient("option","chartType");
-                        
-//Sets the chartType value 
-$("#OlapClient").ejOlapClient("option","chartType", ej.olap.OlapChart.ChartTypes.Area); {% endhighlight %}
-
-
-
-
-
-
-
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
+Specifies the CSS class to OlapClient to achieve custom theme.
 
+**Default Value:** “”
 
-
-
-
-
-
-Sets the CSS name for custom operation.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set cssClass API value during initialization
-$("#OlapClient").ejOlapClient({ cssClass: "Olive" });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ cssClass: "Olive" });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the cssClass API, after initialization:
-//Gets the cssClass value  
-$("#OlapClient").ejOlapClient("option","cssClass");
-                 
-//Sets the cssClass value 
-$("#OlapClient").ejOlapClient("option","cssClass", "Olive" ); {% endhighlight %}
-
-
-
-
-
-
-
-### customObject<span class="type-signature type object">Object</span>
+### customObject `object`
 {:#members:customobject}
 
+Object utilized to pass additional information between client-end and service-end.
 
+**Default Value:** {}
 
-
-
-
-
-
-Custom object to pass additional information between client-end and service-end.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* {}
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set customObject API value during initialization
-$("#OlapClient").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the customObject API, after initialization:
-//Gets the customObject value  
-$("#OlapClient").ejOlapClient("option","customObject");
-                     
-//Sets the customObject value 
-$("#OlapClient").ejOlapClient("option","customObject", {"MyObject": "Hello World!!"} ); {% endhighlight %}
-
-
-
-
-
-
-
-### displaySettings<span class="type-signature type object">object</span>
+### displaySettings `object`
 {:#members:displaysettings}
 
+Allows the user to customize the widgets layout and appearance.
 
+**Default Value:** {}
 
-
-
-
-
-
-Allows the user to customize the control layout and appearance.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set displaySettings API value, in-order to customize the control layout and appearance.
- $("#OlapClient").ejOlapClient({  displaySettings: {mode: "chartandgrid"}});{% endhighlight %}
-
-
-{% highlight html %}
+ $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.Both } });
  
-//Gets or sets the displaySettings API, to customize the control layout and appearance:
-//Gets the displaySettings value  
-$("#OlapClient").ejOlapClient("option", "displaySettings");
-   
-//Sets the displaySettings value 
-$("#OlapClient").ejOlapClient("option", "displaySettings", {mode: "chartandgrid"} ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### displaySettings.controlPlacement<span class="type-signature type enum">enum</span>
+### displaySettings.controlPlacement `enum`
 {:#members:displaysettings-controlplacement}
 
+Let’s the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or in tile view.
 
+**Default Value:** ej.olap.OlapClient.ControlPlacement.Tab
 
-
-
-
-
-
-Lets the user to customize the display of OLAP Chart and OLAP Grid controls inside the OLAP Client component.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.olap.OlapClient.ControlPlacement.Tab
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set controlPlacement API value during initialization
-$("#OlapClient").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab} });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab} });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the controlPlacement API, after initialization:
-//Gets the controlPlacement value  
-$("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement");
-                 
-//Sets the controlPlacement value 
-$("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement", ej.olap.OlapClient.ControlPlacement.Tile ); {% endhighlight %}
-
-
-
-
-
-
-
-### displaySettings.defaultView<span class="type-signature type enum">enum</span>
+### displaySettings.defaultView `enum`
 {:#members:displaysettings-defaultview}
 
+Let’s the user to set either Chart or Grid as the start-up widget.
 
+**Default Value:** ej.olap.OlapClient.DefaultView.Grid
 
-
-
-
-
-
-Lets the user to set Chart or Grid tab as default.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.olap.OlapClient.DefaultView.Grid
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set defaultView API value during initialization
-$("#OlapClient").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClient.DefaultView.Grid} });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClient.DefaultView.Grid} });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the defaultView API, after initialization:
-//Gets the defaultView value  
-$("#OlapClient").ejOlapClient("option","displaySettings.defaultView");
-                      
-//Sets the defaultView value 
-$("#OlapClient").ejOlapClient("option","displaySettings.defaultView", ej.olap.OlapClient.DefaultView.Chart ); {% endhighlight %}
-
-
-
-
-
-
-
-### displaySettings.enableFullScreen<span class="type-signature type boolean">boolean</span>
+### displaySettings.enableFullScreen `boolean`
 {:#members:displaysettings-enablefullscreen}
 
+Enables/disables the full screen view of OlapChart and PivotGrid in OlapClient.
 
+**Default Value:** false
 
-
-
-
-
-
-Enables/ disables the full screen view of the OLAP components(OLAP Chart, OLAP Grid) in OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set enableFullScreen API value during initialization
-$("#OlapClient").ejOlapClient({ displaySettings.enableFullScreen: true });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: { enableFullScreen: true } });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the enableFullScreen API, after initialization:
-//Gets the enableFullScreen value  
-$("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen");
-                 
-//Sets the enableFullScreen value 
-$("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen", true ); {% endhighlight %}
-
-
-
-
-
-
-
-### displaySettings.enableTogglePanel<span class="type-signature type boolean">boolean</span>
+### displaySettings.enableTogglePanel `boolean`
 {:#members:displaysettings-enabletogglepanel}
 
+Enhances the space for PivotGrid and OlapChart, by hiding Cube Browser and Axis Element Builder.
 
+**Default Value:** false
 
-
-
-
-
-
-Sets the Toggle Panel visibility mode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set enableTogglePanel API value during initialization
-$("#OlapClient").ejOlapClient({ displaySettings.enableTogglePanel: true });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: { enableTogglePanel: true } });
 
+{% endhighlight %}
+
+### displaySettings.isResponsive `boolean`
+{:#members:displaysettings-isresponsive}
+
+Allows the user to enable OlapClient’s responsiveness in the browser layout.
+
+**Default Value:** false
+
+**Example:**
 
 {% highlight html %}
  
-//Get or set the enableTogglePanel API, after initialization:
-//Gets the enableTogglePanel value  
-$("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel");
-                        
-//Sets the enableTogglePanel value 
-$("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel", true ); {% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: { isResponsive: true } });
 
+{% endhighlight %}
 
-
-
-
-
-
-### displaySettings.mode<span class="type-signature type enum">enum</span>
+### displaySettings.mode `enum`
 {:#members:displaysettings-mode}
 
+Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
 
+**Default Value:** ej.olap.OlapClient.DisplayMode.ChartAndGrid
 
-
-
-
-
-
-Sets the display mode (Only Chart/Only Grid/Both Chart And Grid) of OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.olap.OlapClient.DisplayMode.ChartAndGrid
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set mode API value during initialization
-$("#OlapClient").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly }});{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly } });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the mode API, after initialization:
-//Gets the mode value  
-$("#OlapClient").ejOlapClient("option","displaySettings.mode");
-                     
-//Sets the mode value 
-$("#OlapClient").ejOlapClient("option","displaySettings.mode", ej.olap.OlapClient.DisplayMode.ChartOnly ); {% endhighlight %}
-
-
-
-
-
-
-
-### enableMeasureGroups<span class="type-signature type boolean">boolean</span>
+### enableMeasureGroups `boolean`
 {:#members:enablemeasuregroups}
 
+Enables/disables the visibility of measure group selector drop-down in Cube Browser.
 
+**Default Value:** false
 
-
-
-
-
-
-Enables/ disables the visibility of measure group selector drop down in Cube browser in OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set enableMeasureGroups API value during initialization
-$("#OlapClient").ejOlapClient({ enableMeasureGroups : true });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ enableMeasureGroups : true });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the enableMeasureGroups API, after initialization:
-//Gets the enableMeasureGroups value  
-$("#OlapClient").ejOlapClient("option","enableMeasureGroups");
-                      
-//Sets the enableMeasureGroups value 
-$("#OlapClient").ejOlapClient("option","enableMeasureGroups", true ); {% endhighlight %}
-
-
-
-
-
-
-
-### gridLayout<span class="type-signature type enum">enum</span>
+### gridLayout `enum`
 {:#members:gridlayout}
 
+Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
 
+**Default Value:** ej.PivotGrid.Layout.Normal
 
-
-
-
-
-
-Sets the layout for OLAP Grid component inside OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.PivotGrid.Layout.Normal
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:** 
 
 {% highlight html %}
  
-//To set gridLayout API value during initialization
-$("#OlapClient").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the gridLayout API, after initialization:
-//Gets the gridLayout value  
-$("#OlapClient").ejOlapClient("option","gridLayout");
-                       
-//Sets the gridLayout value 
-$("#OlapClient").ejOlapClient("option","gridLayout", ej.PivotGrid.Layout.NormalTopSummary); {% endhighlight %}
-
-
-
-
-
-
-
-### isResponsive<span class="type-signature type boolean">Boolean</span>
-{:#members:isresponsive}
-
-
-
-
-
-
-
-
-Allows the user to enable Responsive layout support.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set the isResponsive option during initialization  
-$("#OlapClient1").ejOlapClient({isResponsive: true});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the isResponsive, after initialization:
-//Gets the isResponsive values state
-$("#OlapClient").ejOlapClient("option", "isResponsive");
-                    
-//Sets the reponsive layout
-$("#OlapClient").ejOlapClient("option", "isResponsive","true"); {% endhighlight %}
-
-
-
-
-
-
-
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
+Allows the user to set the localized language for the widget.
 
+**Default Value:** "en-US"
 
-
-
-
-
-
-Sets the localized language for the control.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "en-US"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:** 
 
 {% highlight html %}
  
-//To set locale API value during initialization
-$("#OlapClient").ejOlapClient({ locale: "en-US" });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ locale: "en-US" });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the locale API, after initialization:
-//Gets the locale value  
-$("#OlapClient").ejOlapClient("option","locale");
-                   
-//Sets the locale value 
-$("#OlapClient").ejOlapClient("option","locale", "fr-FR" ); {% endhighlight %}
-
-
-
-
-
-
-
-### serviceMethodSettings<span class="type-signature type object">object</span>
+### serviceMethodSettings `object`
 {:#members:servicemethodsettings}
 
+Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
 
+**Default Value:** {}
 
-
-
-
-
-
-Allows the user to set custom name for the methods at service-end invoked on AJAX post.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {initialize: "MyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "MyMethod"} });
  
-//Gets or sets the serviceMethodSettings API, to invoke the appropriate service method on UI operation:
-//Gets the serviceMethodSettings value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the serviceMethodSettings value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings",  {initialize: "MyMethod"} ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.cubeChanged<span class="type-signature type string">string</span>
+### serviceMethodSettings.cubeChanged `string`
 {:#members:servicemethodsettings-cubechanged}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for updating the entire report and widget, while changing the Cube.
 
+**Default Value:** "CubeChanged"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for updating entire report and control while changing the Cube.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "CubeChanged"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set cubeChanged API value, to invoke the corresponding service method for updating entire report and control while changing the Cube.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {cubeChanged: "CubeChangedMyMethod"}});{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {cubeChanged: "CubeChangedMyMethod"} });
+ 
+{% endhighlight %}
 
+### serviceMethodSettings.exportOlapClient `string`
+{:#members:servicemethodsettings-exportolapclient}
+
+Allows the user to set the custom name for the service method that’s responsible for exporting.
+
+**Default Value:** "Export"
+
+**Example:**
 
 {% highlight html %}
  
-//Gets or sets the cubeChanged API, to invoke the corresponding service method for updating entire report and control while changing the Cube:
-//Gets the cubeChanged value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the cubeChanged value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.cubeChanged","CubeChangedMyMethod" ); {% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: { exportOlapClient: "Export"} });
+ 
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.fetchMemberTreeNodes<span class="type-signature type string">string</span>
+### serviceMethodSettings.fetchMemberTreeNodes `string`
 {:#members:servicemethodsettings-fetchmembertreenodes}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible to get the members, for the tree-view inside member-editor dialog.
 
+**Default Value:** "FetchMemberTreeNodes"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible to get members for the tree-view inside member-editor dialog.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "FetchMemberTreeNodes"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set fetchMemberTreeNodes API value, to invoke the corresponding service method to get members for the tree-view inside member-editor dialog.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {fetchMemberTreeNodes: "FetchMemberTreeNodesMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchMemberTreeNodes: "FetchMemberTreeNodesMyMethod"} });
  
-//Gets or sets the fetchMemberTreeNodes API, to invoke the corresponding service method to get members for the tree-view inside member-editor dialog:
-//Gets the fetchMemberTreeNodes value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the fetchMemberTreeNodes value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchMemberTreeNodes", "FetchMemberTreeNodesMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.fetchReportList<span class="type-signature type string">string</span>
+### serviceMethodSettings.fetchReportList `string`
 {:#members:servicemethodsettings-fetchreportlist}
-
-
-
-
-
-
-
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for fetching the report names from the database.
 
+**Default Value:** "FetchReportListFromDB"
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "FetchReportListFromDB"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
                      
-//To set fetchReportList API value, to invoke the corresponding service method that&rsquo;s responsible for fetching the report names from the database.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {fetchReportList: "FetchReportListFromDBMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchReportList: "FetchReportListFromDBMyMethod"} });
  
-//Gets or sets the fetchReportList API, to invoke the corresponding service method that&rsquo;s responsible for fetching the report names from the database:
-//Gets the fetchReportList value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the fetchReportList value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchReportList", "FetchReportListFromDBMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.filterElement<span class="type-signature type string">string</span>
+### serviceMethodSettings.filterElement `string`
 {:#members:servicemethodsettings-filterelement}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while filtering members.
 
+**Default Value:** "FilterElement"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for updating reports while filtering members.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "FilterElement"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set filterElement API value, to invoke the corresponding service method for performing server-side operation while filtering members.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {filterElement: "filterElementMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {filterElement: "filterElementMyMethod"} });
  
-//Get or set the filterElement API, to invoke the corresponding service method for performing server-side operation while filtering members:
-//Gets the filterElement value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the filterElement value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.filterElement", "FilterElementMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapClient.
 
+**Default Value:** "InitializeClient"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "InitializeClient"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set initialize API value, to invoke the corresponding service method for OLAP Client initialization.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {initialize: "InitializeClientMyMethod"});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "InitializeClientMyMethod"} });
  
-//Gets or sets the initialize API, to invoke the corresponding service method for OLAP Client initialization:
-//Gets the initialize value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the initialize value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.initialize", "InitializeClientMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.loadReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.loadReport `string`
 {:#members:servicemethodsettings-loadreport}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for loading the report collection from the database.
 
+**Default Value:** "LoadReportFromDB"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for loading the report collection from database.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "LoadReportFromDB"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set loadReport API value, to invoke the corresponding service method that&rsquo;s responsible for loading the report collection from database.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {loadReport: "LoadReportFromDBMyMethod"}});{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {loadReport: "LoadReportFromDBMyMethod"} });
+ 
+{% endhighlight %}
 
+### serviceMethodSettings.mdxQuery `string`
+{:#members:servicemethodsettings-mdxquery}
+
+Allows the user to set the custom name for the service method that’s responsible for retrieving the MDX query for the current report.
+
+**Default Value:** "GetMDXQuery"
+
+**Example:**
 
 {% highlight html %}
  
-//Get or set the loadReport API, to invoke the corresponding service method that&rsquo;s responsible for loading the report from the database:
-//Gets the loadReport value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the loadReport value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.loadReport", "LoadReportFromDBMyMethod"} ); {% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {mdxQuery: "GetMDXQuery"} });
 
+{% endhighlight %}
 
-
-
-
-
-
-### serviceMethodSettings.measureGroupChanged<span class="type-signature type string">string</span>
+### serviceMethodSettings.measureGroupChanged `string`
 {:#members:servicemethodsettings-measuregroupchanged}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for updating the tree-view inside Cube Browser, while changing the measure group.
 
+**Default Value:** "MeasureGroupChanged"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for updating cube browser tree while changing the measure group.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "MeasureGroupChanged"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set measureGroupChanged API value, to invoke the corresponding service method for updating the cube browser tree while changing the measure group.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {measureGroupChanged: "MeasureGroupChangedMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {measureGroupChanged: "MeasureGroupChangedMyMethod"} });
  
-//Gets or sets the measureGroupChanged API, to invoke the corresponding service method for updating the cube browser tree while changing the Measure group:
-//Gets the measureGroupChanged value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the measureGroupChanged value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.measureGroupChanged","MeasureGroupChangedMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.memberExpand<span class="type-signature type string">string</span>
+### serviceMethodSettings.memberExpand `string`
 {:#members:servicemethodsettings-memberexpand}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible to get the child members, on tree-view node expansion.
 
+**Default Value:** "MemberExpanded"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible to get the child members on node expand.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "MemberExpanded"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set memberExpand API value, to invoke the corresponding service method which would get the child members on node expand.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {memberExpand: "MemberExpandedMyMethod"}});{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {memberExpand: "MemberExpandedMyMethod"} });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Gets or sets the memberExpand API, to invoke the corresponding service method which would get the child members on node expand:
-//Gets the memberExpand value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the memberExpand value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.memberExpand", "MemberExpandedMyMethod" ); {% endhighlight %}
-
-
-
-
-
-
-
-### serviceMethodSettings.nodeDropped<span class="type-signature type string">string</span>
+### serviceMethodSettings.nodeDropped `string`
 {:#members:servicemethodsettings-nodedropped}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while dropping a node/SplitButton inside Axis Element Builder.
 
+**Default Value:** "NodeDropped"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while dropping a Node/SplitButton inside AxisElementBuilder.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "NodeDropped"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set nodeDropped API value, to invoke the corresponding service method for performing server-side operation while dropping a Node/SplitButton inside AxisElementBuilder.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {nodeDropped: "NodeDroppedMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {nodeDropped: "NodeDroppedMyMethod"} });
  
-//Gets or sets the nodeDropped API, to invoke the corresponding service method for performing server-side operation while dropping a Node/SplitButton inside AxisElementBuilder:
-//Gets the nodeDropped value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the nodeDropped value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.nodeDropped","NodeDroppedMyMethod"); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.removeSplitButton<span class="type-signature type string">string</span>
+### serviceMethodSettings.removeSplitButton `string`
 {:#members:servicemethodsettings-removesplitbutton}
 
+Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while removing SplitButton from Axis Element Builder.
 
+**Default Value:** "RemoveSplitButton"
 
-
-
-
-
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while removing SplitButton from AxisElementBuilder.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "RemoveSplitButton"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set removeSplitButton API value, to invoke the corresponding service method for performing server-side operation while removing SplitButton from the AxisElementBuilder.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {removeSplitButton: "RemoveSplitButtonMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {removeSplitButton: "RemoveSplitButtonMyMethod"} });
  
-//Gets or sets the removeSplitButton API, to invoke the corresponding service method for performing server-side operation while removing SplitButton from the AxisElementBuilder:
-//Gets the removeSplitButton value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the removeSplitButton value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.removeSplitButton", "RemoveSplitButtonMyMethod" ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.saveReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.saveReport `string`
 {:#members:servicemethodsettings-savereport}
-
-
-
-
-
-
-
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for saving the report collection to database.
 
+**Default Value:** "SaveReportToDB"
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "SaveReportToDB"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set saveReport API value, to invoke the corresponding service method which would save the report collection to database.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {saveReport: "SaveReportToDBMyMethod"}});{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {saveReport: "SaveReportToDBMyMethod"} });
+ 
+{% endhighlight %}
 
+### serviceMethodSettings.toggleAxis `string`
+{:#members:servicemethodsettings-toggleaxis}
+
+Allows the user to set the custom name for the service method that’s responsible for toggling the elements in row and column axes.
+
+**Default Value:** "ToggleAxis"
+
+**Example:**
 
 {% highlight html %}
  
-//Gets or sets the saveReport API, to invoke the corresponding service method which would save the report collection to database:
-//Gets the saveReport value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the saveReport value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.saveReport", "SaveReportToDBMyMethod" ); {% endhighlight %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toggleAxis: "ToggleAxis"} });
 
+{% endhighlight %}
 
-
-
-
-
-
-### serviceMethodSettings.toolbarServices<span class="type-signature type string">string</span>
+### serviceMethodSettings.toolbarServices `string`
 {:#members:servicemethodsettings-toolbarservices}
-
-
-
-
-
-
-
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for any toolbar operation.
 
+**Default Value:** "ToolbarOperations"
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "ToolbarOperations"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set the toolbarServices API value, to invoke the corresponding service method responsible for any toolbar operation.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {toolbarServices: "ToolbarOperationsMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toolbarServices: "ToolbarOperationsMyMethod"} });
  
-//Gets or sets the toolbarServices API value, to invoke the corresponding service method responsible for any toolbar operation:
-//Gets the toolbarServices value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the toolbarServices value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.toolbarServices", "ToolbarOperationsMyMethod"} ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### serviceMethodSettings.updateReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.updateReport `string`
 {:#members:servicemethodsettings-updatereport}
-
-
-
-
-
-
-
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report collection.
 
+**Default Value:** "UpdateReport"
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "UpdateReport"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set updateReport API value, to invoke the corresponding service method that&rsquo;s responsible for updating the report collection and current report.
- $("#OlapClient").ejOlapClient({  serviceMethodSettings: {updateReport: "UpdateReportFromMyMethod"}});{% endhighlight %}
-
-
-{% highlight html %}
+$("#OlapClient1").ejOlapClient({  serviceMethodSettings: {updateReport: "UpdateReportFromMyMethod"} });
  
-//Get or set the updateReport API, to invoke the corresponding service method that&rsquo;s responsible for updating the current report and report collection:
-//Gets the updateReport value  
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings");
-   
-//Sets the updateReport value 
-$("#OlapClient").ejOlapClient("option", "serviceMethodSettings.updateReport", "UpdateReportFromMyMethod"} ); {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-
-
-### title<span class="type-signature type string">string</span>
+### title `string`
 {:#members:title}
 
+Sets the title for OlapClient widget.
 
+**Default Value:** null
 
-
-
-
-
-
-Sets the title for OLAP Client.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set title API value during initialization
-$("#OlapClient").ejOlapClient({ title: "Olap Browser" });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ title: "OLAP Browser" });
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-//Get or set the title API, after initialization:
-//Gets the title value  
-$("#OlapClient").ejOlapClient("option","title");
-                    
-//Sets the title value 
-$("#OlapClient").ejOlapClient("option","title", "Olap Browser" ); {% endhighlight %}
-
-
-
-
-
-
-
-### url<span class="type-signature type string">string</span>
+### url `string`
 {:#members:url}
-
-
-
-
-
-
-
 
 Connects the service using the specified URL for any server updates.
 
+**Default Value:** null
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//To set url value during initialization
-$("#OlapClient").ejOlapClient({ url: "/wcf/OlapClientService.svc" });{% endhighlight %}
+$("#OlapClient1").ejOlapClient({ url: "/wcf/OlapClientService.svc" });
 
-
-{% highlight html %}
- 
-//Get or set the url, after initialization:
-//Gets the url value  
-$("#OlapClient").ejOlapClient("option","url");
-                      
-//Sets the url value 
-$("#OlapClient").ejOlapClient("option","url", "/wcf/OlapClientService.svc" ); {% endhighlight %}
-
-
-
-
+{% endhighlight %}
 
 ## Methods
 
-
-
-
-
-
-
-
-### chartDrillSuccess<span class="signature">()</span>
-{:#methods:chartdrillsuccess}
-
-
-
-
-
-
-
-
-This function is used to drill down the OLAP Grid widget once OLAP Chart drill down.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
-// raised after OLAP Chart drill down
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### cubeChanged<span class="signature">()</span>
-{:#methods:cubechanged}
-
-
-
-
-
-
-
-
-This function is raised while changing the cube.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.cubeChanged(ej.proxy(function(){}, this));
-// raised while changing cubes
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### doAjaxPost<span class="signature">()</span>
+### doAjaxPost()
 {:#methods:doajaxpost}
 
+Perform an asynchronous HTTP (AJAX) request.
 
-
-
-
-
-
-
-Perform an asynchronous HTTP (Ajax) request.
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-<div id="OlapClient"></div> 
+<div id="OlapClient1"></div> 
  
 <script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
+$('#OlapClient1').ejOlapClient({
       url: "OlapClientService.svc"
   });
-var clientObj = $("#OlapClient").data("ejOlapClient");
+var clientObj = $("#OlapClient1").data("ejOlapClient");
 clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
-// initiate an Ajax request
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
+### doPostBack()
+{:#methods:dopostback}
 
+Perform an asynchronous HTTP (FullPost) submit.
 
-
-
-
-### getAxisPosition<span class="signature">()</span>
-{:#methods:getaxisposition}
-
-
-
-
-
-
-
-
-This function is used to get the position of the axis element builders.
-
-
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.getAxisPosition(eve);
-// used to get the position of the axis element builders
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### gridDrillSuccess<span class="signature">()</span>
-{:#methods:griddrillsuccess}
-
-
-
-
-
-
-
-
-This function is used to drill down the OLAP Chart widget once OLAP Grid component drill down.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
+<div id="OlapClient1"></div> 
  
 <script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
+$('#OlapClient1').ejOlapClient({
       url: "OlapClientService.svc"
   });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
-// raised after OLAP Grid drill down
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### nodeDropped<span class="signature">()</span>
-{:#methods:nodedropped}
-
-
-
-
-
-
-
-
-This function is used to perform required action after dropping a tree node in Axis Element builder.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.nodeDropped(ej.proxy(function(){}, this));
-// raised while dropping tree nodes
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### onDropped<span class="signature">()</span>
-{:#methods:ondropped}
-
-
-
-
-
-
-
-
-This function is raised after dropping the element in Axis Element Builder.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.onDropped(ej.proxy(function(){}, this));
-// raised while dropping tree nodes
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### onTabClick<span class="signature">()</span>
-{:#methods:ontabclick}
-
-
-
-
-
-
-
-
-This function is raised while tab changes.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.onTabClick(ej.proxy(function(){}, this));
-// raised while changing tabs
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### reportChanged<span class="signature">()</span>
-{:#methods:reportchanged}
-
-
-
-
-
-
-
-
-This function is raised while changing the report.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.reportChanged(ej.proxy(function(){}, this));
-// raised while changing reports
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### setSplitBtnTargetPos<span class="signature">()</span>
-{:#methods:setsplitbtntargetpos}
-
-
-
-
-
-
-
-
-This function is used to set the position to currently dropped split button in respective axes.
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="OlapClient"></div> 
- 
-<script>
-// Create OLAP Client
-$('#OlapClient').ejOlapClient({
-      url: "OlapClientService.svc"
-  });
-var clientObj = $("#OlapClient").data("ejOlapClient");
-clientObj.setSplitBtnTargetPos(eve);
-// used to set the position to the dropped split button
-</script>{% endhighlight %}
-
-
-
-
+var clientObj = $("#OlapClient1").data("ejOlapClient");
+clientObj.doPostBack("/OlapClientService.svc/Initialize", {"key", "Hello World"});
+</script>
+
+{% endhighlight %}
 
 ## Events
-
-
-
-
-
-
 
 
 ### afterServiceInvoke
 {:#events:afterserviceinvoke}
 
-
-
-
-
-
-
-
-Fires after the service is invoked.
+Triggers when it reaches client-side after any AJAX request.
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component.
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">return the current action of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with OLAP Client control.</td>
+<td class="type">object</td>
+<td class="description">return the custom object bounds with OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">return the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2280,96 +659,81 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//afterServiceInvoke event
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
     afterServiceInvoke: function(args) {}
-});{% endhighlight %}
+});
 
-
-
-
+{% endhighlight %}
 
 
 
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-
-
-
-
-
-
-
-Fires when the summary cell is clicked.
+Triggers before any AJAX request is passed from OlapClient to service methods.
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component.
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">return the current action of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with OLAP Client control.</td>
+<td class="type">object</td>
+<td class="description">return the custom object bounds with OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">return the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2378,96 +742,80 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//beforeServiceInvoke event
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
     beforeServiceInvoke: function(args) {}
-});{% endhighlight %}
+});
 
-
-
-
-
+{% endhighlight %}
 
 
 ### chartLoad
 {:#events:chartload}
 
-
-
-
-
-
-
-
-Fires before rendering the chart
+Triggers before rendering the OlapChart.
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Chart component.
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapChart component.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of OLAP Chart control.</td>
+<td class="type">string</td>
+<td class="description">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with OLAP Chart control.</td>
+<td class="type">object</td>
+<td class="description">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of OLAP Chart control.</td>
+<td class="type">string</td>
+<td class="description">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Chart model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2476,84 +824,67 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//event triggered when OLAP Chart begins rendering.
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
    chartLoad: function (args) {}
-});      {% endhighlight %}
+});      
 
-
-
-
-
-
+{% endhighlight %}
 
 ### load
 {:#events:load}
 
-
-
-
-
-
-
-
-Fires on loading the control
+Triggers while we initiate loading of the widget.
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component.
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Client component.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OlapClient component.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2562,90 +893,74 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//event triggered on loading the control
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
    load: function (args) {}
-});      {% endhighlight %}
+});     
 
-
-
-
-
+{% endhighlight %}
 
 
 ### renderComplete
 {:#events:rendercomplete}
 
-
-
-
-
-
-
-
-Fires on completion of rendering control
+Triggers when OlapClient widget completes all operations at client-end after any AJAX request. 
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2654,96 +969,79 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//event triggered after completing rendering the control
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
    renderComplete: function (args) {}
-});      {% endhighlight %}
+});     
 
-
-
-
-
-
+{% endhighlight %}
 
 ### renderFailure
 {:#events:renderfailure}
 
-
-
-
-
-
-
-
-Fires when error occured in rendering the control
+Triggers when any error occurred during AJAX request. 
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 message{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the error message with error code.</td>
+<td class="type">Object</td>
+<td class="description">returns the error message with error code.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2752,90 +1050,73 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//event triggered when error occurs in rendering the control
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
    renderFailure: function (args) {}
-});      {% endhighlight %}
+});     
 
-
-
-
-
-
+{% endhighlight %}
 
 ### renderSuccess
 {:#events:rendersuccess}
 
-
-
-
-
-
-
-
-Fires when the control is rendered success
+Triggers when OlapClient successfully reaches client-side after any AJAX request.
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Client component.
+<td class="type">Object</td>
+<td class="description">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Client control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Client model.</td>
+<td class="type">object</td>
+<td class="description">returns the OlapClient model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2844,19 +1125,15 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+**Example:**
 
 {% highlight html %}
  
-//success event for rendering the control
-$("#OlapClient").ejOlapClient({
+$("#OlapClient1").ejOlapClient({
    renderSuccess: function (args) {}
-});      {% endhighlight %}
+});      
+
+{% endhighlight %}
 
 
 

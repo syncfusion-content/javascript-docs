@@ -11,9 +11,9 @@ documentation: ug
 
 ##Creating a simple application with OlapGauge
 
-This section explains how to create a simple OlapGauge.
+This section covers the information required to create a simple OlapGauge bound to OLAP datasource.
 
->**NOTE: We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communicate could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.**
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapGaugeDemo”**.
@@ -39,7 +39,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-To initialize a OlapGauge widget, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapGauge widget. Then, initialize the widget by using ejOlapGauge method inside “script” tag.
+In-order to initialize a OlapGauge widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for OlapGauge widget. Then you need to initialize the widget using ejOlapGauge method.
     
 {% highlight html %}
 <!DOCTYPE html>
@@ -179,9 +179,9 @@ To initialize a OlapGauge widget, define a “div” tag with an appropriate “
 
 {% endhighlight %}
 
-The “url” property in Olapgauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapGauge widget as endpoint are WCF and WebAPI.
+The “url” property in OlapGauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapGauge widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI Url, which is, “../OlapGaugeService”. Suppose if you are using WCF service then the Url would look like "../OlapGaugeService.svc". 
+N> The above "GettingStarted.html" contains WebAPI Url, which is “../OlapGaugeService”. Suppose if you are using WCF service, then the Url would look like "../OlapGaugeService.svc". 
 
 ###WebAPI
 
@@ -189,13 +189,13 @@ N> The above "GettingStarted.html" contains WebAPI Url, which is, “../OlapGaug
 
 To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapGaugeController.cs”, click **Add.**
 
-Now WebAPI controller is added into your application successfully that contains the following file.
+Now, WebAPI controller is added into your application successfully with the following file. The utilization of this file will be explained in the following sections.
  
 * OlapGaugeController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapGaugeController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named as “OlapGaugeController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapGaugeController.cs**` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapGaugeController.cs` file.
 
 {% highlight c# %}
 
@@ -218,13 +218,13 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 * Microsoft.AnalysisServices.AdomdClient.dll
 * Syncfusion.Linq.Base.dll 
-* Syncfusion.Olap.Base.dll, 
+* Syncfusion.Olap.Base.dll 
 * Syncfusion.EJ.dll  
-* Syncfusion.EJ.Olap.dll.
+* Syncfusion.EJ.Olap.dll
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `**OlapGaugeController.cs**` file. 
+Following are the list of namespaces to be added on top of the main class inside `OlapGaugeController.cs` file. 
 
 {% highlight c# %}
 
@@ -245,7 +245,7 @@ namespace OlapGaugeDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OalpGauge and JavaScriptSerializer instances are created immediately inside the main class in `**OlapGaugeController.cs**` file.
+Now, the connection string to connect OLAP Cube, OalpGauge and JavaScriptSerializer instances are created immediately inside the main class in `OlapGaugeController.cs` file.
 
 {% highlight c# %}
 
@@ -264,7 +264,7 @@ namespace OlapGaugeDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OlapGaugeController class, found inside `**OlapGaugeController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapGaugeController class, found inside `OlapGaugeController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
@@ -336,10 +336,10 @@ public class Global: System.Web.HttpApplication
 }
 {% endhighlight %}
 
-N> Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
+Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
 
 ###WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding#wcf).
   

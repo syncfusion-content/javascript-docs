@@ -9,15 +9,10 @@ documentation: ug
 
 # Toggle Axis
 
-Toggle Axis support swaps dimensions, measures and named sets, between column and row axes, thereby refreshing OLAP Chart and OLAP Grid accordingly.
+Toggle Axis support swaps all the axis elements between column and row axes, thereby refreshing OlapChart and PivotGrid view. This can be achieved with the use of a toolbar icon.
 
-![](/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images1.png)
+![](/js/OlapClient/Toggle-Axis_images/before toggle axis.png)
 
-Before toggle axis
-{:.caption}
 
-![](/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images2.png)
-
-After toggle axis
-{:.caption}
+![](/js/OlapClient/Toggle-Axis_images/after toggle axis.png)
 

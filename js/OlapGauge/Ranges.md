@@ -9,111 +9,111 @@ documentation: ug
 
 # Ranges
 
-**Ranges** can be defined in OlapGauge using various attributes such as height and color, to measure the sensitivity of the actual value. 
+## Adding Range Collection
 
-* You can set the distance between the ranges and scales in OlapGauge using [distanceFromScale](/js/api/ejCircularGauge#scalesrangesdistancefromscalespan-classtype-signature-type-numbernumberspan) property.
-* You can set the background color for the ranges in OlapGauge using [backgroundColor](/js/api/ejCircularGauge#scalesrangesbackgroundcolorspan-classtype-signature-type-stringstringspan) property.
-* You can customize the Range size using  [size](/js/api/ejCircularGauge#scalesrangessizespan-classtype-signature-type-numbernumberspan) property.
+Range collection can be directly added to the scales option within the OlapGauge widget as an array.
 
 {% highlight js %}
 
-$(function() {
-     $("#OlapGauge").ejOlapGauge({
-         url: "../wcf/OlapGaugeService.svc",
-         enableTooltip: true,
-         load: "loadGaugeTheme",
-         backgroundColor: "transparent",
-         scales: [{
-             showRanges: true,
-             radius: 150,
-             showScaleBar: true,
-             size: 1,
-             border: {
-                 width: 0.5
-             },
-             showIndicators: true,
-             showLabels: true,
-             pointers: [{
-                 type: "needle",
-                 showBackNeedle: true,
-                 backNeedleLength: 20,
-                 length: 120,
-                 width: 9
-             }, {
-                 type: "marker",
-                 markerType: "diamond",
-                 distanceFromScale: 5,
-                 placement: "center",
-                 backgroundColor: "#29A4D9",
-                 length: 25,
-                 width: 15
-             }],
-             ticks: [{
-                 type: "major",
-                 distanceFromScale: 5,
-                 height: 16,
-                 width: 1,
-                 color: "#8c8c8c"
-             }, {
-                 type: "minor",
-                 height: 6,
-                 width: 1,
-                 distanceFromScale: 2,
-                 color: "#8c8c8c"
-             }],
-             labels: [{
-                 color: "#8c8c8c"
-             }],
-             ranges: [{
-                 distanceFromScale: -10,
-                 size: 7,
-                 backgroundColor: "black",
-                 border: {
-                     color: "#fc0606"
-                 }
-             }, {
-                 distanceFromScale: -10,
-                 size: 7
-             }],
-             customLabels: [{
-                 position: {
-                     x: 180,
-                     y: 290
-                 },
-                 font: {
-                     size: "10px",
-                     fontFamily: "Segoe UI",
-                     fontStyle: "Normal"
-                 },
-                 color: "#666666"
-             }, {
-                 position: {
-                     x: 180,
-                     y: 330
-                 },
-                 font: {
-                     size: "10px",
-                     fontFamily: "Segoe UI",
-                     fontStyle: "Normal"
-                 },
-                 color: "#666666"
-             }, {
-                 position: {
-                     x: 180,
-                     y: 150
-                 },
-                 font: {
-                     size: "12px",
-                     fontFamily: "Segoe UI",
-                     fontStyle: "Normal"
-                 },
-                 color: "#666666"
-             }]
-         }]
-     });
- });
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            distanceFromScale: 10
+        }]
+    }],
+    //...
+});
 
 {% endhighlight %}
 
-![](/js/OlapGauge/Ranges_images/Ranges_img1.png) 
+## Appearance Customization
 
+The appearance of the range can be customized through the following properties.
+
+* **startValue** – defines the start position of the range.
+* **endValue** – defines the end position of the range.
+* **startWidth** – sets the width at starting position of the range.
+* **endWidth** – sets the width at ending position of the range.
+* **backgroundColor** – sets the background color of the range.
+* **border** – sets the height and width of the border of the range.
+* **placement** – sets the position of the range.
+* **distanceFromScale** – sets the distance between the range and scale.
+
+Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
+
+{% highlight js %}
+
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            startValue: 20,
+            endValue: 50,
+            startWidth: 2,
+            endWidth: 6,
+            backgroundColor: "yellow",
+            border: {
+                color: "red",
+                width: 2
+            },
+            distanceFromScale: 20
+        }, {
+            startValue: 50,
+            endValue: 100,
+            startWidth: 2,
+            endWidth: 7,
+            backgroundColor: "blue",
+            border: {
+                color: "green",
+                width: 2
+            },
+            placement: "near",
+        }]
+    }],
+    //...
+});
+
+{% endhighlight %}
+
+![](Ranges_images/range customization.png) 
+
+N> On setting both the position properties - "distanceFromScale" and "placement" for a range, the value set in "distanceFromScale" is given preference.
+
+## Multiple Ranges 
+Multiple ranges can be added by placing an array of objects in `ranges` option.
+
+{% highlight js %}
+
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            startValue: 0,
+            endValue: 10,
+            backgroundColor: "Green",
+            distanceFromScale: -5
+        }, {
+            startValue: 10,
+            endValue: 30,
+            backgroundColor: "yellow",
+            distanceFromScale: -5
+        }, {
+            startValue: 30,
+            endValue: 50,
+            backgroundColor: "red",
+            distanceFromScale: -5
+        }]
+    }],
+    //...
+});
+
+{% endhighlight %}
+
+![](Ranges_images/multiple ranges.png) 

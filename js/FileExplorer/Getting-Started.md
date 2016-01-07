@@ -49,13 +49,11 @@ To include the control in the application the following references need to be ad
 
 Add the below CSS reference in the head section, for the default theme
 
-    <table>
-        <tr>
-            <td>
-                <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br /><br />
-            </td>
-        </tr>
-    </table>
+{% highlight js %}
+
+       <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br /><br />
+
+{% endhighlight %}
 
 N> Essential JS widgets having the support for 13 inbuilt themes, to know more please check [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#)
 

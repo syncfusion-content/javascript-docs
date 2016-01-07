@@ -1,16 +1,13 @@
 ---
 layout: post
 title: ejTimePicker
+description: API reference for ejTimePicker
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: TimePicker, ejTimePicker, syncfusion, TimePicker api  
 ---
 
 # ejTimePicker
-
-
-
 
 
 
@@ -18,27 +15,19 @@ The TimePicker control for JavaScript allows users to select a time value. The a
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejTimePicker()
+
+{% endhighlight %}
 
 
 
 
+#### Example
 
-
-
-$(element).ejTimePicker<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -51,14 +40,7 @@ $("#timepicker").ejTimePicker();
 
 
 
-
-
-
-
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -93,7 +75,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -108,8 +90,8 @@ Specify the CSS class to timepicker to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -125,8 +107,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -144,7 +126,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -159,8 +141,8 @@ Specifies the animation behavior in timepicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -176,8 +158,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -195,7 +177,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -210,8 +192,8 @@ When this property is set to false, it disables the timepicker control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -227,8 +209,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -246,7 +228,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -261,8 +243,8 @@ Enables or disables the state maintenance of TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -278,8 +260,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -297,7 +279,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -312,8 +294,8 @@ Sets the TimePicker direction as right to left alignment.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -329,8 +311,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -348,7 +330,7 @@ Example
 
 
 
-### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+### enableStrictMode `boolean`
 {:#members:enablestrictmode}
 
 
@@ -363,8 +345,8 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -380,8 +362,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -398,7 +380,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -413,8 +395,8 @@ Defines the height of the TimePicker textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -430,8 +412,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -449,7 +431,7 @@ Example
 
 
 
-### hourInterval<span class="type-signature type number">Number</span>
+### hourInterval `number`
 {:#members:hourinterval}
 
 
@@ -464,8 +446,8 @@ Sets the step value for increment an hour value through arrow keys or mouse scro
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -481,8 +463,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -500,7 +482,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -515,8 +497,8 @@ Specifies the HTML Attributes of the ejTimePicker
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -532,8 +514,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -551,7 +533,7 @@ Example
 
 
 
-### interval<span class="type-signature type number">Number</span>
+### interval `number`
 {:#members:interval}
 
 
@@ -566,8 +548,8 @@ Sets the time interval between the two adjacent time values in the popup.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -583,8 +565,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -602,7 +584,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">String</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -617,8 +599,8 @@ Defines the localization locale for TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -634,8 +616,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -653,7 +635,7 @@ Example
 
 
 
-### maxTime<span class="type-signature type string">String</span>
+### maxTime `string`
 {:#members:maxtime}
 
 
@@ -668,8 +650,8 @@ Sets the maximum time value to the TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -685,8 +667,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -704,7 +686,7 @@ Example
 
 
 
-### minTime<span class="type-signature type string">String</span>
+### minTime `string`
 {:#members:mintime}
 
 
@@ -719,8 +701,8 @@ Sets the minimum time value to the TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -736,8 +718,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -755,7 +737,7 @@ Example
 
 
 
-### minutesInterval<span class="type-signature type number">Number</span>
+### minutesInterval `number`
 {:#members:minutesinterval}
 
 
@@ -770,8 +752,8 @@ Sets the step value for increment the minute value through arrow keys or mouse s
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -787,8 +769,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -806,7 +788,7 @@ Example
 
 
 
-### popupHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### popupHeight `string`  `number`
 {:#members:popupheight}
 
 
@@ -821,8 +803,8 @@ Defines the height of the TimePicker popup.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -838,8 +820,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -857,7 +839,7 @@ Example
 
 
 
-### popupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### popupWidth `string`  `number`
 {:#members:popupwidth}
 
 
@@ -872,8 +854,8 @@ Defines the width of the TimePicker popup.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -889,8 +871,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -908,7 +890,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">Boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -923,8 +905,8 @@ Indicates that the timepicker value can only be read.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -940,8 +922,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -959,7 +941,7 @@ Example
 
 
 
-### secondsInterval<span class="type-signature type number">Number</span>
+### secondsInterval `number`
 {:#members:secondsinterval}
 
 
@@ -974,8 +956,8 @@ Sets the step value for increment the seconds value through arrow keys or mouse 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -991,8 +973,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1010,7 +992,7 @@ Example
 
 
 
-### showPopupButton<span class="type-signature type boolean">Boolean</span>
+### showPopupButton `boolean`
 {:#members:showpopupbutton}
 
 
@@ -1025,8 +1007,8 @@ Shows or hides the arrow button from the TimePicker textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1042,8 +1024,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1061,7 +1043,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -1076,8 +1058,8 @@ Changes the sharped edges into rounded corner for the TimePicker textbox and pop
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1093,8 +1075,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1112,7 +1094,7 @@ Example
 
 
 
-### timeFormat<span class="type-signature type string">String</span>
+### timeFormat `string`
 {:#members:timeformat}
 
 
@@ -1127,8 +1109,8 @@ Defines the time format displayed in the TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1144,8 +1126,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1163,7 +1145,7 @@ Example
 
 
 
-### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### value `string`  `DateObject`
 {:#members:value}
 
 
@@ -1178,8 +1160,8 @@ Sets a specified time value on the TimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1195,8 +1177,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1214,7 +1196,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width `string`  `number`
 {:#members:width}
 
 
@@ -1229,8 +1211,8 @@ Defines the width of the TimePicker textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1246,8 +1228,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1272,7 +1254,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1288,8 +1270,8 @@ To disable the timepicker
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1318,7 +1300,7 @@ $("#timepicker").ejTimePicker("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1334,8 +1316,8 @@ To enable the timepicker
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1364,7 +1346,7 @@ $("#timepicker").ejTimePicker("enable");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -1380,8 +1362,8 @@ returns the current time value
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1410,7 +1392,7 @@ $("#timepicker").ejTimePicker("getValue");
 
 
 
-### setCurrentTime<span class="signature">()</span>
+### setCurrentTime()
 {:#methods:setcurrenttime}
 
 
@@ -1426,8 +1408,8 @@ updates the current system time to timepicker
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1480,7 +1462,7 @@ Fires when the time value changed in the TimePicker.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1488,13 +1470,13 @@ Fires when the time value changed in the TimePicker.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from timepicker
+<td class="description">Event parameters from timepicker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1502,25 +1484,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified time value</td>
+<td class="description">returns the modified time value</td>
 </tr>
 </tbody>
 </table>
@@ -1532,8 +1514,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1545,7 +1527,7 @@ $("#timepicker").ejTimePicker({
    beforeChange: function (args) {}
 });  
 </script> 
-                    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -1570,7 +1552,7 @@ Fires when the TimePicker popup before opened .
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1578,31 +1560,31 @@ Fires when the TimePicker popup before opened .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TimePicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previous value</td>
+<td class="description">returns the previous value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the time value</td>
+<td class="description">returns the time value</td>
 </tr>
 </tbody>
 </table>
@@ -1610,8 +1592,8 @@ argument.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1623,7 +1605,8 @@ $("#timepicker").ejTimePicker({
    beforeOpen: function (args) {}
 });   
 </script> 
-                                    {% endhighlight %}
+                                   
+ {% endhighlight %}
 
 
 
@@ -1648,7 +1631,7 @@ Fires when the time value changed in the TimePicker.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1656,13 +1639,13 @@ Fires when the time value changed in the TimePicker.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from timepicker
+<td class="description">Event parameters from timepicker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1670,25 +1653,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified time value</td>
+<td class="description">returns the modified time value</td>
 </tr>
 </tbody>
 </table>
@@ -1700,8 +1683,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1713,7 +1696,8 @@ $("#timepicker").ejTimePicker({
    change: function (args) {}
 });  
 </script> 
-                    {% endhighlight %}
+                   
+ {% endhighlight %}
 
 
 
@@ -1738,7 +1722,7 @@ Fires when the TimePicker popup closed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1746,31 +1730,31 @@ Fires when the TimePicker popup closed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TimePicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previous value</td>
+<td class="description">returns the previous value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the time value</td>
+<td class="description">returns the time value</td>
 </tr>
 </tbody>
 </table>
@@ -1778,8 +1762,8 @@ argument.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1791,7 +1775,8 @@ $("#timepicker").ejTimePicker({
    close: function (args) {}
 });   
 </script> 
-                                    {% endhighlight %}
+                                   
+  {% endhighlight %}
 
 
 
@@ -1816,7 +1801,7 @@ Fires when create TimePicker successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1824,19 +1809,19 @@ Fires when create TimePicker successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TimePicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1844,8 +1829,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1857,7 +1842,7 @@ $("#timepicker").ejTimePicker({
    create: function (args) {}
 });   
 </script> 
-                                    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -1882,7 +1867,7 @@ Fires when the TimePicker is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1890,19 +1875,19 @@ Fires when the TimePicker is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TimePicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1910,8 +1895,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1923,7 +1908,7 @@ $("#timepicker").ejTimePicker({
    destroy: function (args) {}
 });   
 </script> 
-                                    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -1948,7 +1933,7 @@ Fires when the timepicker control gets focus.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1956,13 +1941,13 @@ Fires when the timepicker control gets focus.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from timepicker
+<td class="description">Event parameters from timepicker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1970,25 +1955,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current time value</td>
+<td class="description">returns the current time value</td>
 </tr>
 </tbody>
 </table>
@@ -2000,8 +1985,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2038,7 +2023,7 @@ Fires when the timepicker control get lost focus.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2046,13 +2031,13 @@ Fires when the timepicker control get lost focus.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from timepicker
+<td class="description">Event parameters from timepicker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2060,25 +2045,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current time value</td>
+<td class="description">returns the current time value</td>
 </tr>
 </tbody>
 </table>
@@ -2090,8 +2075,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2103,7 +2088,7 @@ $("#timepicker").ejTimePicker({
    focusOut: function (args) {}
 }); 
 </script> 
-                     {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -2128,7 +2113,7 @@ Fires when the TimePicker popup opened.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2136,31 +2121,31 @@ Fires when the TimePicker popup opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TimePicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previous value</td>
+<td class="description">returns the previous value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the time value</td>
+<td class="description">returns the time value</td>
 </tr>
 </tbody>
 </table>
@@ -2168,8 +2153,8 @@ argument.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2181,7 +2166,7 @@ $("#timepicker").ejTimePicker({
    open: function (args) {}
 });   
 </script> 
-                                    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -2206,7 +2191,7 @@ Fires when the value is selected from the timepicker dropdownlist.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2214,13 +2199,13 @@ Fires when the value is selected from the timepicker dropdownlist.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from timepicker
+<td class="description">Event parameters from timepicker
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2228,25 +2213,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected time value</td>
+<td class="description">returns the selected time value</td>
 </tr>
 </tbody>
 </table>
@@ -2258,8 +2243,8 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2271,7 +2256,7 @@ $("#timepicker").ejTimePicker({
    select: function (args) {}
 });   
 </script> 
-                    {% endhighlight %}
+ {% endhighlight %}
 
 
 

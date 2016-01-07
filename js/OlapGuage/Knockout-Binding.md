@@ -3,7 +3,7 @@ layout: post
 title: Knockout-Binding
 description: knockout binding
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

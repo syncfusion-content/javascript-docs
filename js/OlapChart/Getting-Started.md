@@ -11,12 +11,12 @@ documentation: ug
 
 ##Creating a simple application with OlapChart
 
-This section explains on how to create a simple OlapChart.
+This section covers the information required to create a simple OlapChart bound to OLAP datasource.
 
->**NOTE: This section is illustrated by creating a simple Web Application through Visual Studio IDE, since OlapChart is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that transfers data to server-side, processes and return backs the data to client-side for control re-rendering. The service utilized to communicate can be either WCF or WebAPI based on your requirement and illustrated both for your convenience.** 
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapChart is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience. 
 
 ###Project Initialization
-Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **OlapChartDemo”**.
+Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapChartDemo”**.
 
 Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **GettingStarted.html**, click **Add.**
 
@@ -40,7 +40,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-To initialize a OlapChart widget, first, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapChart widget. Then, initialize the widget by using ejOlapChart method inside “script” tag.
+In-order to initialize a OlapChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for OlapChart widget. Then you need to initialize the widget using ejOlapChart method.
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ To initialize a OlapChart widget, first, define a “div” tag with an appropri
 
 The “url” property in OlapChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapChart widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapChartService”**. Suppose if you are using WCF service then the Url would look like **"../OlapChartService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI Url, which is **“../OlapChartService”**. Suppose if you are using WCF service, then the Url would look like **“../OlapChartService.svc”**.
 
 ###WebAPI
 
@@ -94,11 +94,11 @@ N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapCh
 
 To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **OlapChartServiceController.cs**. Finally, click **Add.**
 
-Now WebAPI controller is added into your application successfully that contains the following file.
+Now, WebAPI controller is added into your application successfully with the following file. The utilization of this file will be explained in the following sections.
  
-* OlapChartService.cs
+* OlapChartServiceController.cs
 
->**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.**
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapChartServiceController.cs` file.
 
@@ -106,7 +106,7 @@ Next, remove all the existing methods such as “Get”, “Post”, “Put” a
 
 namespace OlapChartDemo
 {
-    public class OlapChartController: ApiController
+    public class OlapChartServiceController: ApiController
     {
     
     }
@@ -119,20 +119,21 @@ Add the following mentioned dependency libraries into your Web Application. You 
 
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+>**NOTE: If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
 
-* Microsoft.AnalysisServices.AdomdClient.dll,  
-* Syncfusion.Linq.Base.dll, 
-* Syncfusion.Olap.Base.dll,  
+* Microsoft.AnalysisServices.AdomdClient.dll
+* Syncfusion.Compression.Base.dll
+* Syncfusion.Linq.Base.dll
+* Syncfusion.Olap.Base.dll  
 * Syncfusion.EJ.dll 
-* Syncfusion.EJ.Olap.dll.
+* Syncfusion.EJ.Olap.dll
 * Syncfusion.Pdf.Base.dll
 * Syncfusion.XlsIO.Base.dll
 * Syncfusion.DocIO.Base.dll
 
 **List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `OlapChartController.cs` file.
+The following are the list of namespaces to be added on top of the main class inside `OlapChartServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -143,9 +144,9 @@ using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
 using Syncfusion.JavaScript.Olap;
 
-namespace OlapchartDemo
+namespace OlapChartDemo
 {
-    public class OlapChartController : ApiController
+    public class OlapChartServiceController : ApiController
     {
 
     }
@@ -155,13 +156,13 @@ namespace OlapchartDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartController.cs` file.
+Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartServiceController.cs` file.
 
 {% highlight c# %}
 
 namespace OlapChartDemo
 {
-    public class OlapChartController: ApiController
+    public class OlapChartServiceController: ApiController
     {
         OlapChart htmlHelper = new OlapChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -174,13 +175,13 @@ namespace OlapChartDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OlapChartController class, found inside `OlapChartController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapChartServiceController class, found inside `OlapChartServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
 namespace OlapChartDemo
 {
-    public class OlapChartController: ApiController
+    public class OlapChartServiceController: ApiController
     {
         OlapChart htmlHelper = new OlapChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -200,7 +201,7 @@ namespace OlapChartDemo
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager = new OlapDataManager(connectionString);
-                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
                 return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
      
             }
@@ -263,6 +264,6 @@ Now, OlapChart is rendered with Customer Count over a period of fiscal years acr
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img9.png"%}
 
 ###WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/js/olapchart/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/js/olapchart/data-binding#wcf).
 
 

@@ -13,7 +13,7 @@ documentation: ug
 
 ### Enable tooltip for data point
 
-Tooltip for the data points can be enabled by using the [visible](../api/ejchart#members:series-tooltip-visible) option of the [tooltip](../api/ejchart#members:series-tooltip) in the series.
+Tooltip for the data points can be enabled by using the [`visible`](../api/ejchart#members:series-tooltip-visible) option of the [`tooltip`](../api/ejchart#members:series-tooltip) in the series.
 
 {% highlight js %}
 
@@ -43,7 +43,7 @@ Chart with tooltip
 
 ### Format the tooltip 
 
-Tooltip displays data specified by the [format](../api/ejchart#members:series-tooltip-format) option of the tooltip. The default value of the format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
+Tooltip displays data specified by the [`format`](../api/ejchart#members:series-tooltip-format) option of the tooltip. The default value of the format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
 
 You can also use * **#series.<optionname>#** * as placeholder to display the value of an option in corresponding series and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point.
 
@@ -73,7 +73,7 @@ Chart with formatted tooltip
 
 ### Tooltip Template
 
-HTML elements can be displayed in the tooltip by using the [template](../api/ejchart#members:series-tooltip-template) option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
+HTML elements can be displayed in the tooltip by using the [`template`](../api/ejchart#members:series-tooltip-template) option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
 
 You can also use * **#series.<optionname>#** * as place holder to display the value of an option in corresponding series of the tooltip and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point for which the tooltip is displayed.
   
@@ -120,7 +120,7 @@ Chart with tooltip template
 
 #### Tooltip template animation
 
-You can enable animation by setting the [enableAnimation](../api/ejchart#members:series-tooltip-enableanimation) to true. Tooltip animates when the mouse moves from one data point to another point. The [duration](../api/ejchart#members:series-tooltip-duration) property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
+You can enable animation by setting the [`enableAnimation`](../api/ejchart#members:series-tooltip-enableanimation) to true. Tooltip animates when the mouse moves from one data point to another point. The [`duration`](../api/ejchart#members:series-tooltip-duration) property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
 
 N> Tooltip is animated only if the template is specified for tooltip.
 
@@ -147,7 +147,7 @@ N> Tooltip is animated only if the template is specified for tooltip.
 
 ### Customize the appearance of tooltip   
 
-The [fill](../api/ejchart#members:series-tooltip-fill) and [border](../api/ejchart#members:series-tooltip-border) options are used to customize the background color and border of the tooltip respectively. The [font](../api/ejchart#members:series-tooltip-font) option in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](../api/ejchart#members:series-tooltip-fill) and [`border`](../api/ejchart#members:series-tooltip-border) options are used to customize the background color and border of the tooltip respectively. The [`font`](../api/ejchart#members:series-tooltip-font) option in the tooltip is used to customize the font of the tooltip text.
 
 {% highlight js %}
 
@@ -176,7 +176,7 @@ Customizing the appearance of tooltip
 
 #### Tooltip with rounded corners
 
-The options [rx](../api/ejchart#members:series-tooltip-rx) and [ry](../api/ejchart#members:series-tooltip-ry) are used to customize the corner radius of the tooltip rectangle.
+The options [`rx`](../api/ejchart#members:series-tooltip-rx) and [`ry`](../api/ejchart#members:series-tooltip-ry) are used to customize the corner radius of the tooltip rectangle.
 
 {% highlight js %}
 
@@ -211,9 +211,9 @@ Tooltip with rounded corners
 
 There are two ways you can zoom the chart,
 
-* When the [zooming.enable](../api/ejchart#members:zooming-enable) option is set to true, you can zoom the chart by using the rubber band selection.
+* When the [`zooming.enable`](../api/ejchart#members:zooming-enable) option is set to true, you can zoom the chart by using the rubber band selection.
 
-* When the [zooming.enableMouseWheel](../api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart on mouse wheel scrolling. 
+* When the [`zooming.enableMouseWheel`](../api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart on mouse wheel scrolling. 
 
 {% highlight js %}
 
@@ -246,7 +246,7 @@ Select panning option from zoomkit
 
 ### Types of zooming
 
-The [type](../api/ejchart#members:zooming-type) option in zooming specifies whether the chart is allowed to scale along the horizontal axis or vertical axis or along both axis. The default value of the [type](../api/ejchart#members:zooming-type) is **"xy"** (both axis).
+The [`type`](../api/ejchart#members:zooming-type) option in zooming specifies whether the chart is allowed to scale along the horizontal axis or vertical axis or along both axis. The default value of the [`type`](../api/ejchart#members:zooming-type) is **"xy"** (both axis).
 
 {% highlight js %}
 
@@ -264,7 +264,6 @@ The [type](../api/ejchart#members:zooming-type) option in zooming specifies whet
 
 {% endhighlight %}
 
-For zooming chart programmatically refer the online [KB](programmatic zooming).
 
 ## Crosshair
 
@@ -272,7 +271,7 @@ Crosshair is used to view the value of an axis at mouse position or touch contac
 
 ### Enable crosshair and crosshair label
 
-Crosshair can be enabled by using the [visible](../api/ejchart#members:series-tooltip-visible) option in the [crosshair](../api/ejchart#members:crosshair). Crosshair label for an axis can be enabled by using the [visible](../api/ejchart#members:primaryxaxis-crosshairlabel-visible) option of [crosshairLabel](../api/ejchart#members:primaryxaxis-crosshairlabel) in the corresponding axis.
+Crosshair can be enabled by using the [`visible`](../api/ejchart#members:series-tooltip-visible) option in the [`crosshair`](../api/ejchart#members:crosshair). Crosshair label for an axis can be enabled by using the [`visible`](../api/ejchart#members:primaryxaxis-crosshairlabel-visible) option of [`crosshairLabel`](../api/ejchart#members:primaryxaxis-crosshairlabel) in the corresponding axis.
 
 
 {% highlight js %}
@@ -311,7 +310,7 @@ Chart with crosshair
 
 ### Customize the crosshair line and crosshair label
 
-The [fill](../api/ejchart#members:crosshair-fill) and [border](../api/ejchart#members:crosshair-border) options of the [crosshairLabel](../api/ejchart#members:crosshairlabel) is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized by using the [line](../api/ejchart#members:crosshair-line) option in the [crosshair](../api/ejchart#members:crosshair).
+The [`fill`](../api/ejchart#members:crosshair-fill) and [`border`](../api/ejchart#members:crosshair-border) options of the [`crosshairLabel`](../api/ejchart#members:crosshairlabel) is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized by using the [`line`](../api/ejchart#members:crosshair-line) option in the [`crosshair`](../api/ejchart#members:crosshair).
 
 {% highlight js %}
 
@@ -354,7 +353,7 @@ Trackball is used to track a data point close to the mouse position or touch con
 
 ### Enable Trackball
 
-Trackball can be enabled by setting the [visible](../api/ejchart#members:crosshair-visible) option of the crosshair to *true* and then set the [type](../api/ejchart#members:crosshair-type) as **"trackball"**. The default value of type is **"crosshair"**.
+Trackball can be enabled by setting the [`visible`](../api/ejchart#members:crosshair-visible) option of the crosshair to *true* and then set the [`type`](../api/ejchart#members:crosshair-type) as **"trackball"**. The default value of type is **"crosshair"**.
 
 {% highlight js %}
 
@@ -383,7 +382,7 @@ Chart with trackball
 
 #### Customize trackball marker and trackball line
 
-Shape and size of the trackball marker can be customized by using the [shape](../api/ejchart#members:crosshair-marker-shape) and [size](../api/ejchart#members:crosshair-marker-size) options of the crosshair marker. Color and width of the trackball line can be customized by using the [line](../api/ejchart#members:crosshair-line) option in the crosshair.
+Shape and size of the trackball marker can be customized by using the [`shape`](../api/ejchart#members:crosshair-marker-shape) and [`size`](../api/ejchart#members:crosshair-marker-size) options of the crosshair marker. Color and width of the trackball line can be customized by using the [`line`](../api/ejchart#members:crosshair-line) option in the crosshair.
 
 {% highlight js %}
 
@@ -421,7 +420,7 @@ Customize trackball line and marker
 
 ### Format Trackball tooltip
 
-X and Y values displayed in the trackball tooltip are formatted based on its axis [labelFormat](../api/ejchart#members:primaryxaxis-labelformat).  
+X and Y values displayed in the trackball tooltip are formatted based on its axis [`labelFormat`](../api/ejchart#members:primaryxaxis-labelformat).  
 
 {% highlight js %}
 
@@ -454,12 +453,10 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 Change trackball tooltip format
 {:.caption}
 
-To view the data representation depth in chart by clicking on the data point, refer [Drilldown](drilldown) KB.
-
 
 ## Highlight
 
-EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the [enable](../api/ejchart#members:series-highlightsettings-enable) property to *true* in the [highlightsettings](../api/ejchart#members:series-highlightsettings) of the series.
+EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the [`enable`](../api/ejchart#members:series-highlightsettings-enable) property to *true* in the [`highlightsettings`](../api/ejchart#members:series-highlightsettings) of the series.
 
 N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
 
@@ -490,7 +487,7 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 ### Highlight Mode
 
-You can set three different highlight mode for the highlighting data point and series by using the [mode](../api/ejchart#members:series-highlightsettings-mode) property of the [highlightsettings](../api/ejchart#members:series-highlightsettings).
+You can set three different highlight mode for the highlighting data point and series by using the [`mode`](../api/ejchart#members:series-highlightsettings-mode) property of the [`highlightsettings`](../api/ejchart#members:series-highlightsettings).
 
 * Series
 * Points
@@ -498,7 +495,7 @@ You can set three different highlight mode for the highlighting data point and s
 
 **Series mode**
 
-To highlight all the data points of the specified series, you can set the **“series”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option in the highlighSettings. 
+To highlight all the data points of the specified series, you can set the **“series”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option in the highlighSettings. 
 
 
 {% highlight js %}
@@ -533,7 +530,7 @@ Highlighting chart series
 
 **Point mode**
 
-To highlight a single point, you can set the **“point”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option.
+To highlight a single point, you can set the **“point”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight js %}
 
@@ -567,7 +564,7 @@ Highlighting chart point
 
 **Cluster mode**
 
-To highlight the points that corresponds to the same index in all the series, set the **“cluster”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option.
+To highlight the points that corresponds to the same index in all the series, set the **“cluster”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight js %}
 
@@ -601,7 +598,7 @@ Highlighting chart in cluster mode
 
 ### Customize the highlight styles
 
-To customize the highlighted series, use the [color](../api/ejchart#members:series-highlightsettings-color), [border](../api/ejchart#members:series-tooltip-border) and [opacity](../api/ejchart#members:series-highlightsettings-opacity) options in the highlightSettings.
+To customize the highlighted series, use the [`color`](../api/ejchart#members:series-highlightsettings-color), [`border`](../api/ejchart#members:series-tooltip-border) and [`opacity`](../api/ejchart#members:series-highlightsettings-opacity) options in the highlightSettings.
 
 {% highlight js %}
 
@@ -635,7 +632,7 @@ Customizing highlight styles
 
 ### Patterns to highlight
 
-EjChart provides pattern support for highlighting the data by setting the value to the [pattern](../api/ejchart#members:series-highlightsettings-pattern) property of the highlightSettings. The different types of highlight patterns are as follows.
+EjChart provides pattern support for highlighting the data by setting the value to the [`pattern`](../api/ejchart#members:series-highlightsettings-pattern) property of the highlightSettings. The different types of highlight patterns are as follows.
 
 1.	chessboard
 2.	crosshatch
@@ -689,7 +686,7 @@ Changing pattern to highlight
 
 #### Custom pattern
 
-To create a custom pattern for the highlighting data points, set the pattern type as **"custom"** and add the custom pattern **id** in the [customPattern](../api/ejchart#members:series-highlightsettings-custompattern) option of the highlightSettings.
+To create a custom pattern for the highlighting data points, set the pattern type as **"custom"** and add the custom pattern **id** in the [`customPattern`](../api/ejchart#members:series-highlightsettings-custompattern) option of the highlightSettings.
 
 {% highlight html %}
 
@@ -725,7 +722,7 @@ To create a custom pattern for the highlighting data points, set the pattern typ
 
 ## Selection
 
-EjChart provides selection support for the series and data points on mouse click. To enable the selection option, set the [enable](../api/ejchart#members:series-selectionsettings-enable) property to *true* in the [selectionSettings](../api/ejchart#members:series-selectionSettings) of the series.
+EjChart provides selection support for the series and data points on mouse click. To enable the selection option, set the [`enable`](../api/ejchart#members:series-selectionsettings-enable) property to *true* in the [`selectionSettings`](../api/ejchart#members:series-selectionSettings) of the series.
 
 N> When mouse is clicked on the data points, the corresponding series legend also will be selected.
 
@@ -755,7 +752,7 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 
 ### Selection Mode
 
-You can set three different selection mode for highlighting the data point and series by using the [mode](../api/ejchart#members:series-selectionsettings-mode) property of the selectionSettings.
+You can set three different selection mode for highlighting the data point and series by using the [`mode`](../api/ejchart#members:series-selectionsettings-mode) property of the selectionSettings.
 
 * Series
 * Points
@@ -763,7 +760,7 @@ You can set three different selection mode for highlighting the data point and s
 
 **Series mode**
 
-To select all the data points of the specified series, you can set the **"series"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option in the selectionSettings.
+To select all the data points of the specified series, you can set the **"series"** value to the [`mode`](../api/ejchart#members:series-selectionsettings-mode) option in the selectionSettings.
 
 {% highlight js %}
 
@@ -797,7 +794,7 @@ Series selection
 
 **Point mode**
 
-To highlight a single point, you can set the **"point"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option. 
+To highlight a single point, you can set the **"point"** value to the [`mode`](../api/ejchart#members:series-selectionsettings-mode) option. 
 
 {% highlight js %}
 
@@ -831,7 +828,7 @@ Point selection
 
 **Cluster mode**
 
-To select the points that corresponds to the same index in all the series, set the **"cluster"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option.
+To select the points that corresponds to the same index in all the series, set the **"cluster"** value to the [`mode`](../api/ejchart#members:series-selectionsettings-mode) option.
 
 {% highlight js %}
 
@@ -865,7 +862,7 @@ Cluster selection
 
 ### Customizing selection styles
 
-To customize the selection styles, use the [color](../api/ejchart#members:series-selectionsettings-color), [border](../api/ejchart#members:series-selectionsettings-border) and [opacity](../api/ejchart#members:series-selectionsettings-opacity) options in the selectionSettings.
+To customize the selection styles, use the [`color`](../api/ejchart#members:series-selectionsettings-color), [`border`](../api/ejchart#members:series-selectionsettings-border) and [`opacity`](../api/ejchart#members:series-selectionsettings-opacity) options in the selectionSettings.
 
 {% highlight js %}
 
@@ -900,7 +897,7 @@ Customizing selection styles
 
 ### Patterns for selection
 
-EjChart provides pattern support for the data selection by setting the value to the [pattern](../api/ejchart#members:series-selectionsettings-pattern) property of the selectionSettings. The different types of selection patterns are as follows.
+EjChart provides pattern support for the data selection by setting the value to the [`pattern`](../api/ejchart#members:series-selectionsettings-pattern) property of the selectionSettings. The different types of selection patterns are as follows.
 
 1.	chessboard
 2.	crosshatch
@@ -954,7 +951,7 @@ Selection pattern
 
 #### Custom pattern
 
-To create a custom pattern for selecting the data points, set the [pattern](../api/ejchart#members:series-selectionsettings-pattern) type as **"custom"** and add the custom pattern **id** in the [customPattern](../api/ejchart#members:series-selectionsettings-custompattern) option of the selectionSettings.
+To create a custom pattern for selecting the data points, set the [`pattern`](../api/ejchart#members:series-selectionsettings-pattern) type as **"custom"** and add the custom pattern **id** in the [`customPattern`](../api/ejchart#members:series-selectionsettings-custompattern) option of the selectionSettings.
 
 {% highlight html %}
 
@@ -996,7 +993,7 @@ Add custom pattern for selection
 
 ### Handling Series Selection
 
-To get the series information when selecting the specific series, subscribe to the [seriesRegionClick](../api/ejchart.html#events:seriesregionclick) event and set the **selectionSettings.mode** as **"series"**.
+To get the series information when selecting the specific series, subscribe to the [`seriesRegionClick`](../api/ejchart.html#events:seriesregionclick) event and set the **selectionSettings.mode** as **"series"**.
 
 {% highlight js %}
 

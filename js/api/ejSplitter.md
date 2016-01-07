@@ -1,15 +1,13 @@
 ---
 layout: post
 title: ejSplitter
+description: API reference for ejSplitter
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Splitter, ejSplitter, syncfusion, Splitter api  
 ---
 
 # ejSplitter
-
-
 
 
 
@@ -17,19 +15,13 @@ The Splitter is a layout control that enables you to divide a Web page into dist
 
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejSplitter(options)
 
-
-
-
-
-
-$(element).ejSplitter<span class="signature">(options)</span>
-
-
-
-
+{% endhighlight %}
 
 
 
@@ -38,7 +30,7 @@ $(element).ejSplitter<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -46,7 +38,7 @@ $(element).ejSplitter<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for Slider.</td>
+<td class="description">settings for Slider.</td>
 </tr>
 </tbody>
 </table>
@@ -54,8 +46,8 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -78,8 +70,8 @@ $('#innerSplitter').ejSplitter();
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 
@@ -107,7 +99,7 @@ Requires
 
 
 
-### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed `number`
 {:#members:animationspeed}
 
 
@@ -122,8 +114,8 @@ Specify animation speed for the Splitter pane movement while collapsing and expa
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -139,8 +131,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -164,7 +156,7 @@ $("#innerSplitter").ejSplitter({animationSpeed: 150 });
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -179,8 +171,8 @@ Specify the CSS class to splitter control to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -196,8 +188,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -220,7 +212,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -235,8 +227,8 @@ Specifies the animation behavior of the splitter.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -252,8 +244,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -277,7 +269,7 @@ Example
 
 
 
-### enableAutoResize<span class="type-signature type boolean">boolean</span>
+### enableAutoResize `boolean`
 {:#members:enableautoresize}
 
 
@@ -292,8 +284,8 @@ Specify window resizing behavior for splitter control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -309,8 +301,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -333,7 +325,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -348,8 +340,8 @@ Specify Right to Left Direction for splitter control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -365,8 +357,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -389,7 +381,7 @@ Example
 
 
 
-### height<span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 
@@ -404,8 +396,8 @@ Specify height for splitter control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -421,8 +413,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -446,7 +438,7 @@ Example
 
 
 
-### orientation<span class="type-signature type enum">Enum</span>
+### orientation `enum`
 {:#members:orientation}
 
 
@@ -461,8 +453,8 @@ Specify the orientation for spliter control.See orientation
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -478,8 +470,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -502,7 +494,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 
-### properties<span class="type-signature type array">array</span>
+### properties `array`
 {:#members:properties}
 
 
@@ -517,8 +509,8 @@ Specify properties for each pane.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -534,8 +526,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -559,7 +551,7 @@ Example
 
 
 
-### width<span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 
@@ -574,8 +566,8 @@ Specify width for splitter control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -591,8 +583,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -623,7 +615,7 @@ Example
 
 
 
-### addItem<span class="signature">(content, property, index)</span>
+### addItem(content, property, index)</span>
 {:#methods:additem}
 
 
@@ -640,7 +632,7 @@ To add the new pane to splitter control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -648,19 +640,19 @@ To add the new pane to splitter control.
 <td class="name">{% highlight html %}
 content{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">content of pane.</td>
+<td class="description">content of pane.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 property{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">pane properties.</td>
+<td class="description">pane properties.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of pane.</td>
+<td class="description">index of pane.</td>
 </tr>
 </tbody>
 </table>
@@ -668,8 +660,8 @@ index{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -712,7 +704,7 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 
 
 
-### collapse<span class="signature">()</span>
+### collapse()
 {:#methods:collapse}
 
 
@@ -728,8 +720,8 @@ To collapse the splitter control pane.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -772,7 +764,7 @@ $("#innerSplitter").ejSplitter("collpase");
 
 
 
-### expand<span class="signature">()</span>
+### expand()
 {:#methods:expand}
 
 
@@ -788,8 +780,8 @@ To expand the splitter control pane.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -832,7 +824,7 @@ $("#innerSplitter").ejSplitter("expand");
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -848,8 +840,8 @@ To refresh the splitter control pane resizing.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -892,7 +884,7 @@ $("#innerSplitter").ejSplitter("refresh");
 
 
 
-### removeItem<span class="signature">(index)</span>
+### removeItem(index)</span>
 {:#methods:removeitem}
 
 
@@ -909,7 +901,7 @@ To remove the new pane from the splitter control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -917,7 +909,7 @@ To remove the new pane from the splitter control.
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of pane.</td>
+<td class="description">index of pane.</td>
 </tr>
 </tbody>
 </table>
@@ -925,8 +917,8 @@ index{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -993,7 +985,7 @@ Fires when before expand collapse in splitter control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1001,13 +993,13 @@ Fires when before expand collapse in splitter control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from splitter control
+<td class="description">Event parameters from splitter control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1015,37 +1007,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns collapsed pane details.</td>
+<td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns expanded pane details.</td>
+<td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splitter model.</td>
+<td class="description">returns the splitter model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current split bar index.</td>
+<td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1057,8 +1049,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1101,7 +1093,7 @@ Fires when splitter control pane has been created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1109,13 +1101,13 @@ Fires when splitter control pane has been created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from splitter control
+<td class="description">Event parameters from splitter control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1123,19 +1115,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splitter model.</td>
+<td class="description">returns the splitter model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1147,8 +1139,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1190,7 +1182,7 @@ Fires when splitter control pane has been destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1198,13 +1190,13 @@ Fires when splitter control pane has been destroyed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from splitter control
+<td class="description">Event parameters from splitter control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1212,19 +1204,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splitter model.</td>
+<td class="description">returns the splitter model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1236,8 +1228,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1279,7 +1271,7 @@ Fires when expandCollapse in splitter control pane.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1287,13 +1279,13 @@ Fires when expandCollapse in splitter control pane.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from splitter control
+<td class="description">Event parameters from splitter control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1301,37 +1293,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns collapsed pane details.</td>
+<td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns expanded pane details.</td>
+<td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splitter model.</td>
+<td class="description">returns the splitter model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current split bar index.</td>
+<td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1343,8 +1335,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1387,7 +1379,7 @@ Fires when resize in splitter control pane.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1395,13 +1387,13 @@ Fires when resize in splitter control pane.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from splitter control
+<td class="description">Event parameters from splitter control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1409,37 +1401,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns collapsed pane details.</td>
+<td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns expanded pane details.</td>
+<td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the splitter model.</td>
+<td class="description">returns the splitter model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current split bar index.</td>
+<td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1451,8 +1443,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

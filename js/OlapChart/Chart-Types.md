@@ -35,7 +35,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     }
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Column
@@ -62,7 +61,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingColumn
@@ -89,7 +87,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Bar
@@ -117,7 +114,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingBar
@@ -144,7 +140,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Pie
@@ -172,7 +167,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Pyramid
@@ -199,7 +193,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Funnel
@@ -226,7 +219,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Line
@@ -253,7 +245,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StepLine
@@ -281,7 +272,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Spline
@@ -308,8 +298,7 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
-    },
+     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Area
     },
@@ -336,7 +325,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StepArea
@@ -363,7 +351,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.SplineArea
@@ -391,7 +378,6 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     legend: {
         visible: true,
-        rowCount: 3
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingArea
@@ -411,7 +397,7 @@ The following screenshot displays a **Stacking Area Chart.**
 
 ##Combination Chart
 
-A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
+A **combination Chart** combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
    1. Can’t combine Column and Bar series.
    2. Pie Chart can’t be used with other series types.
@@ -422,6 +408,10 @@ A combination Chart combines two or more series types in a single Chart. But the
 $(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
+        legend: {
+            visible: true,
+            rowCount: 2
+        },
         size: {
             height: "460px",
             width: "950px"
@@ -445,4 +435,4 @@ function onSeriesRenders(args) {
 {% endhighlight %}
 
 
-![](/js/OlapChart/Series_images/Series_img1.png) 
+![](/js/OlapChart/Chart-Types_images/combinationalchart.png) 
