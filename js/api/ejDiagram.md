@@ -9529,6 +9529,82 @@ groupChange:function (args) {}
 
 {% endhighlight %}
 
+### historyChange 
+{:#events:historyChange}
+
+Triggers while performing the undo/redo operation.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>			 
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">changes</td>
+			<td class="type">Array</td>			 
+			<td class="description">The array object changes contains the subproperties and it has been shown in the below table(SubProperties)</td>
+		</tr>
+		<tr>
+			<td class="name">Source</td>
+			<td class="type">Array</td>			 
+			<td class="description">Return the source object</td>
+		</tr>		 
+	</tbody>
+</table>
+
+#### SubProperties
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>			 
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">type</td>
+			<td class="type">string</td>			 
+			<td class="description">Returns which type of undo/redo operation performed (example:positionChanged, sizeChanged)</td>
+		</tr>
+		<tr>
+			<td class="name">newValues</td>
+			<td class="type">Object</td>			 
+			<td class="description">Returns the new values of the changed properties.(example:newValues:{offset:60,offset:60,width:60,height:60})</td>
+		</tr>
+		<tr>
+			<td class="name">oldValues</td>
+			<td class="type">Object</td>			 
+			<td class="description">Returns the old values of the changed properties.(example:oldValues:{offset:60,offset:60,width:60,height:60})</td>
+		</tr>
+		<tr>
+			<td class="name">addedItems</td>
+			<td class="type">Array</td>			 
+			<td class="description">Returns the newly added items in the collection</td>
+		</tr>
+		<tr>
+			<td class="name">deletedItems</td>
+			<td class="type">Array</td>			 
+			<td class="description">Returns the deleted items in the collection</td>
+		</tr>		 
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// history change event for diagram
+$("#diagramcontent").ejDiagram({
+historyChange:function (args) {}
+});
+
+{% endhighlight %}
+
 ### itemClick
 {:#events:itemclick}
 

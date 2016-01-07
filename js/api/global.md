@@ -2756,6 +2756,20 @@ Undoable</td>
 </tr>
 <tr>
 <td class="name">
+Resizable</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Resizable constraints allows you to change the diagram size on window resize.</td>
+</tr>
+<tr>
+<td class="name">
+APIUpdate</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">APIUpdate constraints allows you to edit the diagram through API methods, when the diagram is read only</td>
+</tr>
+<tr>
+<td class="name">
 Default</td>
 <td class="type">ConnectorConstraints</td>
 <td class="default">BITOR</td>
@@ -2763,7 +2777,6 @@ Default</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
