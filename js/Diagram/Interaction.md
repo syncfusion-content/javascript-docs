@@ -92,15 +92,14 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
-## Working among Multiple diagram
+## Working with multiple diagrams
 
+Diagram provides support to drag diagram elements from one diagram to another. 
 
+If you enable `FloatElements` constraints to any diagram, it will allow you to drag elements from it and the elements can be dropped into any other diagram.
 
-Diagram provides the support to dragging the diagram elements into one diagram to another. By default this constraints will be disabled.
+The following code illustrates how to drag nodes over multiple diagrams.
 
-To enable this feature, you need to enable the FloatElements constraints, by using the diagramConstraints property of the diagram. Note that the above constraints should be enabled on the source diagram as well as the target diagram. 
-
-The following code illustrates how enable the FloatElement constraints to diagram.
 {% highlight html %}
     &lt;body&gt;
 
@@ -119,12 +118,12 @@ The following code illustrates how enable the FloatElement constraints to diagra
 
 {% highlight js %}
     
-        //Enable the FloatElements constraints
+        //Enables the FloatElements constraints
         var constraints = ej.datavisualization.Diagram.DiagramConstraints.Default | ej.datavisualization.Diagram.DiagramConstraints.FloatElements;
 
         var node = { name: "node1", height: 100, width: 100, offsetX: 100, offsetY: 100, fillColor: "#05ADA4", labels: [{ text: "Node" }] };
         
-        //Create the source
+        //Creates the source
         $("#sourceDiagram").ejDiagram({
             height: "500px",
             width: "400px",
@@ -132,7 +131,8 @@ The following code illustrates how enable the FloatElement constraints to diagra
             //Set the constraints to the diagram
             constraints: constraints
         });
-
+        
+        //Creates the target diagram
         $("#targetDiagram").ejDiagram({
             height: "500px",
             width: "400px",
@@ -143,7 +143,7 @@ The following code illustrates how enable the FloatElement constraints to diagra
 {% endhighlight %}
 
 
-The following screen short illustrates the dragging a node from one diagram to another.
+The following screen short illustrates how the nodes are dragged from one diagram to another.
  
 ![](/js/Diagram/Interaction_images/sshot-1.png)
 
