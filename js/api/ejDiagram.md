@@ -186,7 +186,7 @@ $("#DiagramContent").ejDiagram( {
 
 
 ### commandManager.commands.execute `function`
-{:#members:commandmanager-commands-canexecute}
+{:#members:commandmanager-commands-execute}
 
 A method that defines what to be executed when the key combination is recognized.
 
@@ -2320,7 +2320,7 @@ $("#DiagramContent").ejDiagram({ height:"500" });
 Automatically arranges the nodes and connectors in a predefined manner
 
 ### layout.fixedNode `String`
-{:#members:layout- fixednode}
+{:#members:layout-fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
@@ -2338,7 +2338,7 @@ $("#diagramContent").ejDiagram({ layout: { fixedNode: "nodename"}});
 {% endhighlight %}
 
 ### layout.getLayoutInfo `Object`
-{:#members:layout- getlayoutinfo}
+{:#members:layout-getlayoutinfo}
 
 Customizes the orientation of trees/sub trees. For orientations, see <a href="global.html#chartorientations">ChartOrientations</a>. For chart types, see <a href="global.html#charttypes">ChartTypes</a>
 
@@ -2359,7 +2359,7 @@ $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 {% endhighlight %}
 
 ### layout.marginY `Number`
-{:#members:layout- marginy}
+{:#members:layout-marginy}
 
 Sets the margin value to be vertically left between layout and diagram
 
@@ -7907,7 +7907,7 @@ Insert a label into a node's label collection at runtime
 		<tr>
 			<td class="name">index</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">index to insert the label into the node </td>
+			<td class="description">index at which new label to be inserted in a label collection</td>
 		</tr>
 	</tbody>
 </table>
@@ -8570,8 +8570,7 @@ Update the given label at runtime
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
-var label = [];
-label =[{"name":"node1" "text": "node", "bold": true, "italic": true}]
+var label = {"name":"node1" "text": "node", "bold": true, "italic": true};
 diagram.updateLabel(node.name,node.labels[0],label);
 </script>
 
@@ -9445,7 +9444,7 @@ dragOver:function (args) {}
 ### dragLeave
 {:#events:dragleave}
 
-Triggers when a symbol is dragged outside of the diagram.
+Triggers when an element is moved out of the diagram.
 
 <table class="params">
 	<thead>
@@ -9459,7 +9458,7 @@ Triggers when a symbol is dragged outside of the diagram.
 		<tr>
 			<td class="name">element</td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
+			<td class="description">parameter returns the node or connector which is moved out of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -9512,7 +9511,7 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 		<tr>
 			<td class="name">sourceType</td>
 			<td class="type">Enum</td>
-			<td class="description">parameter returns the enum which defines the type of the source</td>
+			<td class="description">parameter returns source from where the object is dragged</td>
 		</tr>
 	</tbody>
 </table>
