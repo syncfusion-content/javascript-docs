@@ -75,20 +75,12 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-## boundaryConstraints
+## Boundary Constraints
 
- The boundary constraints allows you to move the diagram elements to the specified region.  It includes the following options.
+ Diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized or rotated. 
+ `boundaryConstraints` property of page settings allows you to customize the interactable region. To explore the boundary constraints, refer boundary constraints.
 
-* It allows to move the diagram elements in all directions, without any restrictions
-
-* It allows to move the diagram elements beyond the diagram content
-
-* It allows to move the diagram elements only the region specified on pageSettings 
-
-boundaryConstraints property of pageSettings helps to limit the movement of diagram elements. For the accepted values of the boundaryConstraints, refer to boundaryConstraints. 
-
-The following code example illustrates how to specify boundaryConstraints.                
-
+The following code example illustrates how to define boundaryConstraints.
 
 {% highlight js %}
 
@@ -96,7 +88,8 @@ The following code example illustrates how to specify boundaryConstraints.
     $("#Diagram").ejDiagram({
         //sets the boundaryConstraints  
         pageSettings: {
-            boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Infinity; 
+		    //Allows to drag within the diagram content
+            boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Diagram; 
         }
     });
     
