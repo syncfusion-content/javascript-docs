@@ -78,7 +78,7 @@ $("#diagram").ejDiagram({
 ## Boundary Constraints
 
  Diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized or rotated. 
- `boundaryConstraints` property of page settings allows you to customize the interactable region. To explore the boundary constraints, refer boundary constraints.
+ `boundaryConstraints` property of page settings allows you to customize the interactable region. To explore the boundary constraints, refer refer [Boundary Constraints](/js/api/ejDiagram#members:boundaryConstraints "Boundary Constraints").
 
 The following code example illustrates how to define boundaryConstraints.
 
