@@ -77,9 +77,9 @@ $("#diagram").ejDiagram({
 
 To explore more label properties, refer to [Label Properties](/js/api/ejdiagram#members:nodes-labels "Label Properties").
 
-### Add Label at runtime
+### Add Labels at runtime
 
-Labels can be added at runtime by using public method, addLabel API. The following code illustrates how to add a label to a node. 
+Labels can be added at runtime by using the client side method `addLabel`. The following code illustrates how to add a label to a node. 
 
 {% highlight js %}
 
@@ -87,36 +87,15 @@ Labels can be added at runtime by using public method, addLabel API. The follow
 
         // Defines JSON to create a label
         var label = { name: "label", text: "Node" };
-
-        // Add a label to the node
         diagram.addLabel("node1", label); 
+		
+		//Insert label at a specific index of labels collection
+    	var label = { name: "label", text: "New Label", offset: { x: 0.1, y: 0.1 } };
+    	diagram.insertLabel("node1", label, 1); 
 
 {% endhighlight %}
 
 ![](/js/Diagram/Label_images/addlabelatruntime_img1.png)
-
-
-
-### Insert Label
-
-Labels are also can be added to node with the specified index at runtime by using public method, insertLabel API. The following code illustrates how to add a label to a node with the index of 1.
-
-
-
-{% highlight js %}
-
-    var diagram = $("#sourceDiagram").ejDiagram("instance");
-
-    // Defines JSON to create a label
-    var label = { name: "label", text: "New Label", offset: { x: 0.1, y: 0.1 } };
-
-    // Add a label to the node with specified index
-    diagram.insertLabel("node1", label, 1); 
-    
-{% endhighlight %}
-
-![](/js/Diagram/Label_images/insertlabel_img1.png) 
-
 
 
 ## Update Label at runtime
