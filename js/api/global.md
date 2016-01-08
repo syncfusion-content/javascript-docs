@@ -9623,7 +9623,7 @@ Default</td>
 </table>
 
 ### ObjectTypes
-{:#enum:objectyypes}
+{:#enum:objectypes}
 Enum for ObjectTypes in diagram
 
 #### Properties
@@ -9643,27 +9643,27 @@ Enum for ObjectTypes in diagram
 Diagram</td>
 <td class="type">string</td>
 <td class="default">diagram</td>
-<td class="description">Specifies that the element is dragged from diagram</td>
+<td class="description">Specifies that the type of the object is diagram</td>
 </tr>
 <tr>
 <td class="name">
 Palette</td>
 <td class="type">string</td>
 <td class="default">palette</td>
-<td class="description">Specifies that the element is dragged from palette.</td>
+<td class="description">Specifies that the type of the object is palette</td>
 </tr>
 <td class="name">
 Lane</td>
 <td class="type">string</td>
 <td class="default">lane</td>
-<td class="description">Specifies that the dragging element children of a lane.</td>
+<td class="description">Specifies that the type of the object is lane</td>
 </tr>
 <tr>
 <td class="name">
 Group</td>
 <td class="type">string</td>
 <td class="default">group</td>
-<td class="description">Specifies that the dragging element children of a lane.</td>
+<td class="description">Specifies that the type of the object is group</td>
 </tr>
 </tbody>
 </table>
