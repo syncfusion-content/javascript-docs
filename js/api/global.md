@@ -16693,3 +16693,62 @@ Clear Selected Map Shapes
 {:#methods:refreshmarkers}
 
 Generates markers
+
+
+### Boundary Constraints
+{:#enum:boundaryConstraints}
+
+
+
+
+
+
+
+
+Enum for Boundary Constraints in diagram
+
+
+
+
+
+
+#### Properties
+
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Infinity</td>
+<td class="type">string</td>
+<td class="default">infinity</td>
+<td class="description">Used to set boundaryConstraints as Infinity</td>
+</tr>
+<tr>
+<td class="name">
+Diagram</td>
+<td class="type">string</td>
+<td class="default">diagram</td>
+<td class="description">Used to set boundaryConstraints as Diagram</td>
+</tr>
+<tr>
+<td class="name">
+Page</td>
+<td class="type">string</td>
+<td class="default">page</td>
+<td class="description">Used to set boundaryConstraints as Page</td>
+</tr>
+</tbody>
+</table>

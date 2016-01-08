@@ -6460,6 +6460,12 @@ $("#DiagramContent").ejDiagram({
 
 Defines the scrollable region of diagram. See<a href="global.html#scrolllimit">ScrollLimit</a>
 
+### pageSettings.boundaryConstraints `String`
+{:#members:pagesettings-boundaryConstraints}
+
+Defines the scrollable region of diagram. See<a href="global.html#boundaryConstraints">Boundary Constraints</a>
+
+
 #### Default Value
 
 * ScrollLimit.Infinity

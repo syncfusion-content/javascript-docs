@@ -92,6 +92,65 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
+## Working among Multiple diagram
+
+
+
+Diagram provides the support to dragging the diagram elements into one diagram to another. By default this constraints will be disabled.
+
+To enable this feature, you need to enable the FloatElements constraints, by using the diagramConstraints property of the diagram. Note that the above constraints should be enabled on the source diagram as well as the target diagram. 
+
+The following code illustrates how enable the FloatElement constraints to diagram.
+{% highlight html %}
+    &lt;body&gt;
+
+        &lt;div id="sourceDiagram"&gt;
+
+        &lt;/div&gt;
+
+
+
+        &lt;div id="targetDiagram"&gt;
+
+        &lt;/div&gt;
+
+    &lt;/body&gt;
+{% endhighlight %}
+
+{% highlight js %}
+    
+        //Enable the FloatElements constraints
+        var constraints = ej.datavisualization.Diagram.DiagramConstraints.Default | ej.datavisualization.Diagram.DiagramConstraints.FloatElements;
+
+        var node = { name: "node1", height: 100, width: 100, offsetX: 100, offsetY: 100, fillColor: "#05ADA4", labels: [{ text: "Node" }] };
+        
+        //Create the source
+        $("#sourceDiagram").ejDiagram({
+            height: "500px",
+            width: "400px",
+            nodes: [node],
+            //Set the constraints to the diagram
+            constraints: constraints
+        });
+
+        $("#targetDiagram").ejDiagram({
+            height: "500px",
+            width: "400px",
+            constraints: constraints
+        });
+        
+     
+{% endhighlight %}
+
+
+The following screen short illustrates the dragging a node from one diagram to another.
+ 
+![](/js/Diagram/Interaction_images/sshot-1.png)
+
+![](/js/Diagram/Interaction_images/sshot-2.png)
+ 
+
+
 ## Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
@@ -315,3 +374,14 @@ The following table illustrates those commands with the associated key values.
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").
+
+## Navigating Shapes
+Diagram provides the support to navigating the shapes with keyboard.
+
+You can select shapes in diagram with the mouse or keyboard. For example, the Node1 shape is selected in the following screen short, as indicated by a selector. If you want to enter text on the adjacent connectors, you can use the TAB key to move forward to the desired connector shape, as can be seen with the dotted rectangle around the connector to the right of the selected Node1 Shape.
+
+![](/js/Diagram/Interaction_images/navigatingshapes_img1.png)
+ 
+Then you simply press the Enter key to select the dotted highlighted connector, and then type the desired text.
+
+![](/js/Diagram/Interaction_images/navigatingshapes_img2.png)

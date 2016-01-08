@@ -136,6 +136,53 @@ The following image shows the symbol palette with multiple palette Items.
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
+
+## Customize the Palette Header
+
+Diagram provides support to embed Html element into a palette header. 
+
+By default, the palette header is a simply shows the name of the header. To customize the palette header, you need to define the id of the html template by using the **templateId** property of the palette. The following code illustrates how a palette header has been customized.
+
+
+{% highlight html %}
+
+
+    &lt;!--dependency scripts--&gt;
+        &lt;script id="svgTemplate" type="text/x-jsrender"&gt;
+        &lt;!--  define html element --&gt;
+            &lt;svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px"&gt;
+                &lt;g visibility="visible"&gt;
+                    &lt;image width="26px" height="26px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="image.png"&gt;&lt;/image&gt;
+                    &lt;text x="40" y="18" font-size="14"&gt;
+                        <tspan>Basic Shapes</tspan>
+                    &lt;/text&gt;
+                &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/script&gt;												
+
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+    //Defines the JSON to create a palette
+    var palette =
+    {
+        name: "Basic Shapes",
+        //Sets the id of the HTML content 
+        templateId: "svgTemplate",
+    };
+
+{% endhighlight %}
+
+The following image shows the customized palette header
+
+![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+
+ 
+
+
 ## Customize the size of palette items
 
 You can customize the size of the individual palette items. The `paletteItem` property of node enables you to define the size, preview size of the symbol items. The following code example illustrates how to change the size of a palette item.
