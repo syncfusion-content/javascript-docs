@@ -372,16 +372,9 @@ The following table illustrates those commands with the associated key values.
 | Ctrl+MouseScroll | zoom | Zoom(Zoom in/Zoom out the diagram) |
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
+| Tab | focusToNextItem | Move from shape to shape on the drawing page. A dotted rectangle indicates the shape that has the focus. |
+| Shift + Tab | focusToPreviousItem | Move from shape to shape on the drawing page in reverse order. |
+| Enter | selectFocusedItem | Select a shape that has focus. |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").
-
-## Navigating Shapes
-Diagram provides the support to navigating the shapes with keyboard.
-
-You can select shapes in diagram with the mouse or keyboard. For example, the Node1 shape is selected in the following screen short, as indicated by a selector. If you want to enter text on the adjacent connectors, you can use the TAB key to move forward to the desired connector shape, as can be seen with the dotted rectangle around the connector to the right of the selected Node1 Shape.
-
-![](/js/Diagram/Interaction_images/navigatingshapes_img1.png)
  
-Then you simply press the Enter key to select the dotted highlighted connector, and then type the desired text.
-
-![](/js/Diagram/Interaction_images/navigatingshapes_img2.png)
