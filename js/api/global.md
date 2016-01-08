@@ -128,56 +128,56 @@ Enum for the ArrowShapes in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description"></td>
 </tr>
 <tr>
 <td class="name">
 CircularArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">circulararrow</td>
 <td class="description">Used to specify node Shape as CircularArrow</td>
 </tr>
 <tr>
 <td class="name">
 CurvedRightArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">curvedrightarrow</td>
 <td class="description">Used to specify node Shape as CurvedRightArrow</td>
 </tr>
 <tr>
 <td class="name">
 CurvedUpArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">curveduparrow</td>
 <td class="description">Used to specify node Shape as CurvedUpArrow</td>
 </tr>
 <tr>
 <td class="name">
 CurvedLeftArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">curvedleftarrow</td>
 <td class="description">Used to specify node Shape as CurvedLeftArrow</td>
 </tr>
 <tr>
 <td class="name">
 CurvedDownArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">curveddownarrow</td>
 <td class="description">Used to specify node Shape as CurvedDownArrow</td>
 </tr>
 <tr>
 <td class="name">
 JumpingRightArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">jumpingrightarrow</td>
 <td class="description">Used to specify node Shape as JumpingRightArrow</td>
 </tr>
 <tr>
 <td class="name">
 JumpingLeftArrow</td>
-<td class="type">ArrowShapes</td>
+<td class="type">string</td>
 <td class="default">jumpingleftarrow</td>
 <td class="description">Used to specify node Shape as JumpingLeftArrow</td>
 </tr>
@@ -234,98 +234,98 @@ Enum for the BasicShapes in diagram
 <tr>
 <td class="name">
 Rectangle</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">rectangle</td>
 <td class="description">Used to specify node Shape as Rectangle</td>
 </tr>
 <tr>
 <td class="name">
 Ellipse</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">ellipse</td>
 <td class="description">Used to specify node Shape as Ellipse</td>
 </tr>
 <tr>
 <td class="name">
 Path</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">path</td>
 <td class="description">Used to specify node Shape as Path</td>
 </tr>
 <tr>
 <td class="name">
 Polygon</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">polygon</td>
 <td class="description">Used to specify node Shape as Polygon</td>
 </tr>
 <tr>
 <td class="name">
 Triangle</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">triangle</td>
 <td class="description">Used to specify node Shape as Triangle</td>
 </tr>
 <tr>
 <td class="name">
 Plus</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">plus</td>
 <td class="description">Used to specify node Shape as Plus</td>
 </tr>
 <tr>
 <td class="name">
 Star</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">star</td>
 <td class="description">Used to specify node Shape as Star</td>
 </tr>
 <tr>
 <td class="name">
 Pentagon</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">pentagon</td>
 <td class="description">Used to specify node Shape as Pentagon</td>
 </tr>
 <tr>
 <td class="name">
 Heptagon</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">heptagon</td>
 <td class="description">Used to specify node Shape as Heptagon</td>
 </tr>
 <tr>
 <td class="name">
 Octagon</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">octagon</td>
 <td class="description">Used to specify node Shape as Octagon</td>
 </tr>
 <tr>
 <td class="name">
 Trapezoid</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">trapezoid</td>
 <td class="description">Used to specify node Shape as Trapezoid</td>
 </tr>
 <tr>
 <td class="name">
 Decagon</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">decagon</td>
 <td class="description">Used to specify node Shape as Decagon</td>
 </tr>
 <tr>
 <td class="name">
 RightTriangle</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">righttriangle</td>
 <td class="description">Used to specify node Shape as RightTriangle</td>
 </tr>
 <tr>
 <td class="name">
 Cylinder</td>
-<td class="type">BasicShapes</td>
+<td class="type">string</td>
 <td class="default">cylinder</td>
 <td class="description">Used to specify node Shape as Cylinder</td>
 </tr>
@@ -455,21 +455,21 @@ Enum for the BPMNActivity in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNActivity</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set BPMN Activity as None</td>
 </tr>
 <tr>
 <td class="name">
 Task</td>
-<td class="type">BPMNActivity</td>
+<td class="type">string</td>
 <td class="default">task</td>
 <td class="description">Used to set BPMN Activity as Task</td>
 </tr>
 <tr>
 <td class="name">
 SubProcess</td>
-<td class="type">BPMNActivity</td>
+<td class="type">string</td>
 <td class="default">subprocess</td>
 <td class="description">Used to set BPMN Activity as SubProcess</td>
 </tr>
@@ -527,21 +527,21 @@ Enum for the BPMNBoundary in diagram
 <tr>
 <td class="name">
 Default</td>
-<td class="type">BPMNBoundary</td>
+<td class="type">string</td>
 <td class="default">default</td>
 <td class="description">Used to set BPMN SubProcess's Boundary as Default</td>
 </tr>
 <tr>
 <td class="name">
 Call</td>
-<td class="type">BPMNBoundary</td>
+<td class="type">string</td>
 <td class="default">call</td>
 <td class="description">Used to set BPMN SubProcess's Boundary as Call</td>
 </tr>
 <tr>
 <td class="name">
 Event</td>
-<td class="type">BPMNBoundary</td>
+<td class="type">string</td>
 <td class="default">event</td>
 <td class="description">Used to set BPMN SubProcess's Boundary as Event</td>
 </tr>
@@ -599,21 +599,21 @@ Enum for the BPMNDirections in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNDirections</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set BPMN Flow Direction as None</td>
 </tr>
 <tr>
 <td class="name">
 UniDirectional</td>
-<td class="type">BPMNDirections</td>
+<td class="type">string</td>
 <td class="default">unidirectional</td>
 <td class="description">Used to set BPMN Flow Direction as UniDirectional</td>
 </tr>
 <tr>
 <td class="name">
 BiDirectional</td>
-<td class="type">BPMNDirections</td>
+<td class="type">string</td>
 <td class="default">bidirectional</td>
 <td class="description">Used to set BPMN Flow Direction as BiDirectional</td>
 </tr>
@@ -671,35 +671,35 @@ Enum for the BPMNEvents in diagram
 <tr>
 <td class="name">
 Start</td>
-<td class="type">BPMNEvents</td>
+<td class="type">string</td>
 <td class="default">start</td>
 <td class="description">Used to set BPMN Event as Start</td>
 </tr>
 <tr>
 <td class="name">
 Intermediate</td>
-<td class="type">BPMNEvents</td>
+<td class="type">string</td>
 <td class="default">intermediate</td>
 <td class="description">Used to set BPMN Event as Intermediate</td>
 </tr>
 <tr>
 <td class="name">
 End</td>
-<td class="type">BPMNEvents</td>
+<td class="type">string</td>
 <td class="default">end</td>
 <td class="description">Used to set BPMN Event as End</td>
 </tr>
 <tr>
 <td class="name">
 NonInterruptingStart</td>
-<td class="type">BPMNEvents</td>
+<td class="type">string</td>
 <td class="default">noninterruptingstart</td>
 <td class="description">Used to set BPMN Event as NonInterruptingStart</td>
 </tr>
 <tr>
 <td class="name">
 NonInterruptingIntermediate</td>
-<td class="type">BPMNEvents</td>
+<td class="type">string</td>
 <td class="default">noninterruptingintermediate</td>
 <td class="description">Used to set BPMN Event as NonInterruptingIntermediate</td>
 </tr>
@@ -757,42 +757,42 @@ Enum for the BPMNGateways in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set BPMN Gateway as None</td>
 </tr>
 <tr>
 <td class="name">
 Exclusive</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">exclusive</td>
 <td class="description">Used to set BPMN Gateway as Exclusive</td>
 </tr>
 <tr>
 <td class="name">
 Inclusive</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">inclusive</td>
 <td class="description">Used to set BPMN Gateway as Inclusive</td>
 </tr>
 <tr>
 <td class="name">
 Parallel</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">parallel</td>
 <td class="description">Used to set BPMN Gateway as Parallel</td>
 </tr>
 <tr>
 <td class="name">
 Complex</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">complex</td>
 <td class="description">Used to set BPMN Gateway as Complex</td>
 </tr>
 <tr>
 <td class="name">
 EventBased</td>
-<td class="type">BPMNGateways</td>
+<td class="type">string</td>
 <td class="default">eventbased</td>
 <td class="description">Used to set BPMN Gateway as EventBased</td>
 </tr>
@@ -850,28 +850,28 @@ Enum for the BPMNLoops in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNLoops</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set BPMN Activity's Loop as None</td>
 </tr>
 <tr>
 <td class="name">
 Standard</td>
-<td class="type">BPMNLoops</td>
+<td class="type">string</td>
 <td class="default">standard</td>
 <td class="description">Used to set BPMN Activity's Loop as Standard</td>
 </tr>
 <tr>
 <td class="name">
 ParallelMultiInstance</td>
-<td class="type">BPMNLoops</td>
+<td class="type">string</td>
 <td class="default">parallelmultiinstance</td>
 <td class="description">Used to set BPMN Activity's Loop as ParallelMultiInstance</td>
 </tr>
 <tr>
 <td class="name">
 SequenceMultiInstance</td>
-<td class="type">BPMNLoops</td>
+<td class="type">string</td>
 <td class="default">sequencemultiinstance</td>
 <td class="description">Used to set BPMN Activity's Loop as SequenceMultiInstance</td>
 </tr>
@@ -929,63 +929,63 @@ Enum for the BPMNShapes in diagram
 <tr>
 <td class="name">
 Event</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">event</td>
 <td class="description">Used to specify node Shape as Event</td>
 </tr>
 <tr>
 <td class="name">
 Gateway</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">gateway</td>
 <td class="description">Used to specify node Shape as Gateway</td>
 </tr>
 <tr>
 <td class="name">
 SequentialFlow</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">sequentialflow</td>
 <td class="description">Used to specify node Shape as SequentialFlow</td>
 </tr>
 <tr>
 <td class="name">
 AssociationFlow</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">associationflow</td>
 <td class="description">Used to specify node Shape as AssociationFlow</td>
 </tr>
 <tr>
 <td class="name">
 MessageFlow</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">messageflow</td>
 <td class="description">Used to specify node Shape as MessageFlow</td>
 </tr>
 <tr>
 <td class="name">
 Message</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">message</td>
 <td class="description">Used to specify node Shape as Message</td>
 </tr>
 <tr>
 <td class="name">
 DataObject</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">dataobject</td>
 <td class="description">Used to specify node Shape as DataObject</td>
 </tr>
 <tr>
 <td class="name">
 DataSource</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">datasource</td>
 <td class="description">Used to specify node Shape as DataSource</td>
 </tr>
 <tr>
 <td class="name">
 Activity</td>
-<td class="type">BPMNShapes</td>
+<td class="type">string</td>
 <td class="default">activity</td>
 <td class="description">Used to specify node Shape as Activity</td>
 </tr>
@@ -1043,70 +1043,70 @@ Enum for the BPMNTasks in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set BPMN Task Type as None</td>
 </tr>
 <tr>
 <td class="name">
 Service</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">service</td>
 <td class="description">Used to set BPMN Task Type as Service</td>
 </tr>
 <tr>
 <td class="name">
 Receive</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">receive</td>
 <td class="description">Used to set BPMN Task Type as Receive</td>
 </tr>
 <tr>
 <td class="name">
 Send</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">send</td>
 <td class="description">Used to set BPMN Task Type as Send</td>
 </tr>
 <tr>
 <td class="name">
 InstantiatingReceive</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">instantiatingreceive</td>
 <td class="description">Used to set BPMN Task Type as InstantiatingReceive</td>
 </tr>
 <tr>
 <td class="name">
 Manual</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">manual</td>
 <td class="description">Used to set BPMN Task Type as Manual</td>
 </tr>
 <tr>
 <td class="name">
 BusinessRule</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">businessrule</td>
 <td class="description">Used to set BPMN Task Type as BusinessRule</td>
 </tr>
 <tr>
 <td class="name">
 User</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">user</td>
 <td class="description">Used to set BPMN Task Type as User</td>
 </tr>
 <tr>
 <td class="name">
 Script</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">script</td>
 <td class="description">Used to set BPMN Task Type as Script</td>
 </tr>
 <tr>
 <td class="name">
 Parallel</td>
-<td class="type">BPMNTasks</td>
+<td class="type">string</td>
 <td class="default">parallel</td>
 <td class="description">Used to set BPMN Task Type as Parallel</td>
 </tr>
@@ -1164,76 +1164,119 @@ Enum for the BPMNTriggers in diagram
 <tr>
 <td class="name">
 None</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">none</td>
 <td class="description">Used to set Event Triger as None</td>
 </tr>
 <tr>
 <td class="name">
 Message</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">message</td>
 <td class="description">Used to set Event Triger as Message</td>
 </tr>
 <tr>
 <td class="name">
 Timer</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">timer</td>
 <td class="description">Used to set Event Triger as Timer</td>
 </tr>
 <tr>
 <td class="name">
 Escalation</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">escalation</td>
 <td class="description">Used to set Event Triger as Escalation</td>
 </tr>
 <tr>
 <td class="name">
 Link</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">link</td>
 <td class="description">Used to set Event Triger as Link</td>
 </tr>
 <tr>
 <td class="name">
 Error</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">error</td>
 <td class="description">Used to set Event Triger as Error</td>
 </tr>
 <tr>
 <td class="name">
 Compensation</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">compensation</td>
 <td class="description">Used to set Event Triger as Compensation</td>
 </tr>
 <tr>
 <td class="name">
 Signal</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">signal</td>
 <td class="description">Used to set Event Triger as Signal</td>
 </tr>
 <tr>
 <td class="name">
 Multiple</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">multiple</td>
 <td class="description">Used to set Event Triger as Multiple</td>
 </tr>
 <tr>
 <td class="name">
 Parallel</td>
-<td class="type">BPMNTriggers</td>
+<td class="type">string</td>
 <td class="default">parallel</td>
 <td class="description">Used to set Event Triger as Parallel</td>
 </tr>
 </tbody>
 </table>
 
+### BridgeDirection
+{:#enum:bridgedirection}
+
+Enum for the BridgeDirection in diagram
+
+#### Properties
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to set the direction of line bridges as left</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to set the direction of line bridges as right</td>
+</tr>
+<tr>
+<td class="name">Top</td>
+<td class="type">string</td>
+<td class="default">top</td>
+<td class="description">Used to set the direction of line bridges as top</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="type">string</td>
+<td class="default">bottom</td>
+<td class="description">Used to set the direction of line bridges as bottom</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2708,56 +2751,56 @@ None</td>
 <tr>
 <td class="name">
 PageEditable</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables PageEditing</td>
 </tr>
 <tr>
 <td class="name">
 Bridging</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables Bridging</td>
 </tr>
 <tr>
 <td class="name">
 Zoomable</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables Zooming</td>
 </tr>
 <tr>
 <td class="name">
 PannableX</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables panning on horizontal axis</td>
 </tr>
 <tr>
 <td class="name">
 PannableY</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables panning on vertical axis</td>
 </tr>
 <tr>
 <td class="name">
 Pannable</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">BITOR</td>
 <td class="description">Enables/Disables Panning</td>
 </tr>
 <tr>
 <td class="name">
 Undoable</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Enables/Disables undo actions</td>
 </tr>
 <tr>
 <td class="name">
 Default</td>
-<td class="type">ConnectorConstraints</td>
+<td class="type">DiagramConstraints</td>
 <td class="default">BITOR</td>
 <td class="description">Enables all Constraints</td>
 </tr>
@@ -2945,21 +2988,21 @@ Enum for the Dragstate of the connector in diagram
 <tr>
 <td class="name">
 Starting</td>
-<td class="type">DragState</td>
+<td class="type">string</td>
 <td class="default">starting</td>
 <td class="description">sets the drag state as starting</td>
 </tr>
 <tr>
 <td class="name">
 Dragging</td>
-<td class="type">DragState</td>
+<td class="type">string</td>
 <td class="default">dragging</td>
 <td class="description">sets the drag state as dragging</td>
 </tr>
 <tr>
 <td class="name">
 Completed</td>
-<td class="type">DragState</td>
+<td class="type">string</td>
 <td class="default">completed</td>
 <td class="description">sets the drag state as completed</td>
 </tr>
@@ -3320,14 +3363,14 @@ Enum for the ExportModes in diagram
 <tr>
 <td class="name">
 Download</td>
-<td class="type">ExportModes</td>
+<td class="type">string</td>
 <td class="default">download</td>
 <td class="description">Downloads the exported diagram</td>
 </tr>
 <tr>
 <td class="name">
 Data</td>
-<td class="type">ExportModes</td>
+<td class="type">string</td>
 <td class="default">data</td>
 <td class="description">Converts diagram to data of type imageURL/svg</td>
 </tr>
@@ -3385,28 +3428,28 @@ Enum for the FileFormats in diagram
 <tr>
 <td class="name">
 JPG</td>
-<td class="type">FileFormats</td>
+<td class="type">string</td>
 <td class="default">jpg</td>
 <td class="description">Exports diagram to .jpg format</td>
 </tr>
 <tr>
 <td class="name">
 PNG</td>
-<td class="type">FileFormats</td>
+<td class="type">string</td>
 <td class="default">png</td>
 <td class="description">Exports diagram to .png format</td>
 </tr>
 <tr>
 <td class="name">
 BMP</td>
-<td class="type">FileFormats</td>
+<td class="type">string</td>
 <td class="default">bmp</td>
 <td class="description">Exports diagram to .bmp format</td>
 </tr>
 <tr>
 <td class="name">
 SVG</td>
-<td class="type">FileFormats</td>
+<td class="type">string</td>
 <td class="default">svg</td>
 <td class="description">Exports diagram to .svg format</td>
 </tr>
@@ -3594,21 +3637,21 @@ Enum for the FitMode in diagram
 <tr>
 <td class="name">
 Page</td>
-<td class="type">FitMode</td>
+<td class="type">string</td>
 <td class="default">page</td>
 <td class="description">Fits the entire diagram into view</td>
 </tr>
 <tr>
 <td class="name">
 Width</td>
-<td class="type">FitMode</td>
+<td class="type">string</td>
 <td class="default">width</td>
 <td class="description">Fits the width of the diagram into the width of view</td>
 </tr>
 <tr>
 <td class="name">
 Height</td>
-<td class="type">FitMode</td>
+<td class="type">string</td>
 <td class="default">height</td>
 <td class="description">Fits the height of the diagram into the height of view</td>
 </tr>
@@ -3731,147 +3774,147 @@ Enum for the FlowShapes in diagram
 <tr>
 <td class="name">
 Process</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">process</td>
 <td class="description">Used to specify node Shape as Process</td>
 </tr>
 <tr>
 <td class="name">
 Decision</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">decision</td>
 <td class="description">Used to specify node Shape as Decision</td>
 </tr>
 <tr>
 <td class="name">
 Document</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">document</td>
 <td class="description">Used to specify node Shape as Document</td>
 </tr>
 <tr>
 <td class="name">
 PreDefinedProcess</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">predefinedprocess</td>
 <td class="description">Used to specify node Shape as PreDefinedProcess</td>
 </tr>
 <tr>
 <td class="name">
 Terminator</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">terminator</td>
 <td class="description">Used to specify node Shape as Terminator</td>
 </tr>
 <tr>
 <td class="name">
 PaperTap</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">papertap</td>
 <td class="description">Used to specify node Shape as PaperTap</td>
 </tr>
 <tr>
 <td class="name">
 DirectData</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">directdata</td>
 <td class="description">Used to specify node Shape as DirectData</td>
 </tr>
 <tr>
 <td class="name">
 SequentialData</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">sequentialdata</td>
 <td class="description">Used to specify node Shape as SequentialData</td>
 </tr>
 <tr>
 <td class="name">
 Sort</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">sort</td>
 <td class="description">Used to specify node Shape as Sort</td>
 </tr>
 <tr>
 <td class="name">
 MultiDocument</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">multidocument</td>
 <td class="description">Used to specify node Shape as MultiDocument</td>
 </tr>
 <tr>
 <td class="name">
 Collate</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">collate</td>
 <td class="description">Used to specify node Shape as Collate</td>
 </tr>
 <tr>
 <td class="name">
 SummingJunction</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">summingjunction</td>
 <td class="description">Used to specify node Shape as SummingJunction</td>
 </tr>
 <tr>
 <td class="name">
 Or</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">or</td>
 <td class="description">Used to specify node Shape as Or</td>
 </tr>
 <tr>
 <td class="name">
 InternalStorage</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">internalstorage</td>
 <td class="description">Used to specify node Shape as InternalStorage</td>
 </tr>
 <tr>
 <td class="name">
 Extract</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">extract</td>
 <td class="description">Used to specify node Shape as Extract</td>
 </tr>
 <tr>
 <td class="name">
 ManualOperation</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">manualoperation</td>
 <td class="description">Used to specify node Shape as ManualOperation</td>
 </tr>
 <tr>
 <td class="name">
 Merge</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">merge</td>
 <td class="description">Used to specify node Shape as Merge</td>
 </tr>
 <tr>
 <td class="name">
 OffPageReference</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">offpagereference</td>
 <td class="description">Used to specify node Shape as OffPageReference</td>
 </tr>
 <tr>
 <td class="name">
 SequentialAccessStorage</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">sequentialaccessstorage</td>
 <td class="description">Used to specify node Shape as SequentialAccessStorage</td>
 </tr>
 <tr>
 <td class="name">
 Annotation1</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">annotation1</td>
 <td class="description">Used to specify node Shape as Annotation1</td>
 </tr>
 <tr>
 <td class="name">
 Annotation2</td>
-<td class="type">FlowShapes</td>
+<td class="type">string</td>
 <td class="default">annotation2</td>
 <td class="description">Used to specify node Shape as Annotation2</td>
 </tr>
@@ -9579,6 +9622,51 @@ Default</td>
 </tbody>
 </table>
 
+### ObjectTypes
+{:#enum:objectyypes}
+Enum for ObjectTypes in diagram
+
+#### Properties
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Diagram</td>
+<td class="type">string</td>
+<td class="default">diagram</td>
+<td class="description">Specifies that the element is dragged from diagram</td>
+</tr>
+<tr>
+<td class="name">
+Palette</td>
+<td class="type">string</td>
+<td class="default">palette</td>
+<td class="description">Specifies that the element is dragged from palette.</td>
+</tr>
+<td class="name">
+Lane</td>
+<td class="type">string</td>
+<td class="default">lane</td>
+<td class="description">Specifies that the dragging element children of a lane.</td>
+</tr>
+<tr>
+<td class="name">
+Group</td>
+<td class="type">string</td>
+<td class="default">group</td>
+<td class="description">Specifies that the dragging element children of a lane.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -12053,14 +12141,14 @@ Enum for the Region in diagram
 <tr>
 <td class="name">
 Content</td>
-<td class="type">Region</td>
+<td class="type">string</td>
 <td class="default">content</td>
 <td class="description">specifies region that is occupied by diagram elements</td>
 </tr>
 <tr>
 <td class="name">
 PageSettings</td>
-<td class="type">Region</td>
+<td class="type">string</td>
 <td class="default">pageSettings</td>
 <td class="description">specifies the region based on the page settings</td>
 </tr>
@@ -12128,6 +12216,38 @@ Series</td>
 <td class="type">string</td>
 <td class="default">series</td>
 <td class="description">Specifies annotation placement should be based on chart area</td>
+</tr>
+</tbody>
+</table>
+
+### RelativeMode
+{:#enum:relativemode}
+
+Enum for the RelativeMode in diagram
+
+#### Properties
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Object</td>
+<td class="type">String</td>
+<td class="default">object</td>
+<td class="description">Shows tooltip around the node</td>
+</tr>
+<tr>
+<td class="name">Mouse</td>
+<td class="type">String</td>
+<td class="default">mouse</td>
+<td class="description">Shows tooltip at the mouse position</td>
 </tr>
 </tbody>
 </table>
