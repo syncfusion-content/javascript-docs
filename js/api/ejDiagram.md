@@ -88,7 +88,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 ### bridgeDirection `enum`
 {:#members:bridgedirection}
 
-Sets the direction of line bridges. See <a href="global.html#bridgedirection">BridgeDirection</a>
+Sets the direction of line bridges. See [Bridge Direction](/js/api/global#bridgedirection)
 
 #### Default Value
 
@@ -338,10 +338,10 @@ A collection of JSON objects where each object represents a connector
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var connector = {name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{ x:200,y:200 }};
-$("#diagram").ejDiagram({ connectors:[connector] });
+$("#diagramcontent").ejDiagram({ connectors:[connector] });
 </script>
 
 {% endhighlight %}
@@ -401,7 +401,7 @@ $("#diagramcontent").ejDiagram(
 ### connectors.constraints `enum`
 {:#members:connectors-constraints}
 
-Enables or disables the behaviors of connectors. See <a href="global.html#connectorconstraints">ConnectorConstraints</a>
+Enables or disables the behaviors of connectors. See [Connector Constraints](/js/api/global#connectorconstraints)
 
 #### Default Value
 
@@ -477,7 +477,7 @@ $("#diagramcontent").ejDiagram({ connectors:[ connector ] });
 ### connectors.horizontalAlign `enum`
 {:#members:connectors-horizontalalign}
 
-Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
@@ -1155,7 +1155,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
-Defines the shape of the source decorator. See <a href="global.html#decoratorshapes">DecoratorShapes</a>
+Defines the shape of the source decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
 
 #### Default Value
 
@@ -1409,7 +1409,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.targetDecorator.shape `enum`
 {:#members:connectors-targetdecorator-shape}
 
-Defines the shape of the target decorator. See <a href="global.html#decoratorshapes">DecoratorShapes</a>
+Defines the shape of the target decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
 
 #### Default Value
 
@@ -1594,7 +1594,7 @@ $("#diagramcontent").ejDiagram({
 ### connectors.verticalAlign `enum`
 {:#members:connectors-verticalalign}
 
-To set the vertical alignment of connector (Applicable,if the parent is group). See <a href="global.html#verticalalignment">VerticalAlignment</a>
+To set the vertical alignment of connector (Applicable,if the parent is group).See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
@@ -1676,13 +1676,13 @@ Binds the custom JSON data with connector properties
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
 	   //Sets the method name to connector template 
 	   connectorTemplate :"connectorTemplate"
@@ -1701,7 +1701,7 @@ Binds the custom JSON data with connector properties
 ### constraints `enum`
 {:#members:constraints}
 
-Enables/Disables the default behaviors of the diagram. See <a href="global.html#diagramconstraints">DiagramConstraints</a>
+Enables/Disables the default behaviors of the diagram. See [Diagram Constraints](/js/api/global#diagramconstraints)
 
 #### Default Value
 
@@ -1788,14 +1788,14 @@ Defines the data source either as a collection of objects or as an instance of e
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 	
 var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { dataSource: data }
    });
    
@@ -1816,13 +1816,13 @@ Sets the unique id of the data source items
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", dataSource: data }
    });
 </script>
@@ -1842,13 +1842,13 @@ Defines the parent id of the data source item
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data }
    });
 </script>
@@ -1868,9 +1868,9 @@ Describes query to retrieve a set of data from the specified datasource
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: {
        dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -1893,13 +1893,13 @@ Sets the unique id of the root data source item
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", root:"E1", dataSource: data }
    });
 </script>
@@ -1919,9 +1919,9 @@ Describes the name of the table on which the specified query has to be executed
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: {
        dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -2124,7 +2124,7 @@ A method that ends grouping the changes
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var group = diagram.model.selectedItems
 
@@ -2202,9 +2202,9 @@ Defines what should be happened while trying to restore a custom change
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#diagram").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	historyManager: {
 		//Called to revert a custom action
 		undo: customUndoRedo,
@@ -2215,7 +2215,7 @@ $("#diagram").ejDiagram({
 
 //Method to handle the custom action
 function customUndoRedo(args) {
-	var diagram = $("#diagram").ejDiagram("instance");
+	var diagram = $("#diagramcontent").ejDiagram("instance");
 	var node = args.object;
 	var currentState = node.empInfo;
 
@@ -2237,7 +2237,7 @@ A method that starts to group the changes to revert/restore them in a single und
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var group = diagram.model.selectedItems
 
@@ -2268,9 +2268,9 @@ Defines what should be happened while trying to revert a custom change
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#diagram").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	historyManager: {
 		//Called to revert a custom action
 		undo: customUndoRedo,
@@ -2281,7 +2281,7 @@ $("#diagram").ejDiagram({
 
 //Method to handle the custom action
 function customUndoRedo(args) {
-	var diagram = $("#diagram").ejDiagram("instance");
+	var diagram = $("#diagramcontent").ejDiagram("instance");
 	var node = args.object;
 	var currentState = node.empInfo;
 
@@ -2320,7 +2320,7 @@ $("#diagramcontent").ejDiagram({ height:"500" });
 Automatically arranges the nodes and connectors in a predefined manner
 
 ### layout.fixedNode `String`
-{:#members:layout-fixednode}
+{:#members:layout- fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
@@ -2338,9 +2338,9 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 {% endhighlight %}
 
 ### layout.getLayoutInfo `Object`
-{:#members:layout-getlayoutinfo}
+{:#members:layout- getlayoutinfo}
 
-Customizes the orientation of trees/sub trees. For orientations, see <a href="global.html#chartorientations">ChartOrientations</a>. For chart types, see <a href="global.html#charttypes">ChartTypes</a>
+Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
 
 #### Default Value
 
@@ -2350,16 +2350,16 @@ Customizes the orientation of trees/sub trees. For orientations, see <a href="gl
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
-$("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
+$("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 </script>
 
 {% endhighlight %}
 
 ### layout.marginY `Number`
-{:#members:layout-marginy}
+{:#members:layout- marginy}
 
 Sets the margin value to be vertically left between layout and diagram
 
@@ -2424,7 +2424,7 @@ $("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
 ### layout.orientation `enum`
 {:#members:layout-orientation}
 
-Sets the orientation/direction to arrange the diagram elements. See <a href="global.html#layoutorientations">LayoutOrientations</a>
+Sets the orientation/direction to arrange the diagram elements. See [Layout Orientations](/js/api/global#layoutorientations)
 
 #### Default Value
 
@@ -2445,7 +2445,7 @@ $("#diagramcontent").ejDiagram({layout: { orientation: ej.datavisualization.Diag
 ### layout.type `enum`
 {:#members:layout-type}
 
-Sets the type of the layout based on which the elements will be arranged. See <a href="global.html#layouttypes">LayoutTypes</a>
+Sets the type of the layout based on which the elements will be arranged. See [Layout Types](/js/api/global#layouttypes)
 
 #### Default Value
 
@@ -2527,7 +2527,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 ### nodes.activity `enum`
 {:#members:nodes-activity}
 
-Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. See <a href="global.html#bpmnactivity">BPMNActivity</a>
+Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. See [BPMN Activity](/js/api/global#bpmnactivity)
 
 #### Default Value
 
@@ -2735,7 +2735,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
-Enables or disables the default behaviors of the node. See <a href="global.html#nodeconstraints">NodeConstraints</a>
+Enables or disables the default behaviors of the node. See [Node Constraints](/js/api/global#nodeconstraints)
 
 #### Default Value
 
@@ -2807,7 +2807,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 ### nodes.container.type `enum`
 {:#members:nodes-container-type}
 
-Sets the type of the container. Applicable if the group is a container. See <a href="global.html#containertype">ContainerType </a>
+Sets the type of the container. Applicable if the group is a container. See [Container Types](/js/api/global#containertype">ContainerType </a>
 
 #### Default Value
 
@@ -2888,7 +2888,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 ### nodes.event `enum`
 {:#members:nodes-event}
 
-Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See <a href="global.html#bpmnevents">BPMNEvents</a>
+Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See [BPMN Events](/js/api/global#bpmnevents)
 
 #### Default Value
 
@@ -2996,7 +2996,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.gateway `enum`
 {:#members:nodes-gateway}
 
-Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. See <a href="global.html#bpmngateways">BPMNGateways</a>
+Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. See [BPMN Gateways](/js/api/global#bpmngateways)
 
 #### Default Value
 
@@ -3425,7 +3425,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.horizontalAlign `enum`
 {:#members:nodes-horizontalalign}
 
-Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
@@ -3687,7 +3687,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.horizontalAlignment `enum`
 {:#members:nodes-labels-horizontalalignment}
 
-Sets the horizontal alignment of the label. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Sets the horizontal alignment of the label. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
@@ -3761,7 +3761,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.mode `enum`
 {:#members:nodes-labels-mode}
 
-Gets whether the label is currently being edited or not. See <a href="global.html#labeleditmode">LabelEditMode</a>
+Gets whether the label is currently being edited or not. See [Label Edit Mode](/js/api/global#labeleditmode)
 
 #### Default Value
 
@@ -3903,7 +3903,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.textAlign `enum`
 {:#members:nodes-labels-textalign}
 
-Defines how to align the text inside the label. See <a href="global.html#textalign">TextAlign</a>
+Defines how to align the text inside the label. See [Text Align](/js/api/global#textalign)
 
 #### Default Value
 
@@ -3927,7 +3927,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 ### nodes.labels.textDecoration `enum`
 {:#members:nodes-labels-textdecoration}
 
-Sets how to decorate the label text. See <a href="global.html#textdecorations">TextDecorations</a>
+Sets how to decorate the label text. See [Text Decorations](/js/api/global#textdecorations)
 
 #### Default Value
 
@@ -3952,7 +3952,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.verticalAlignment `enum`
 {:#members:nodes-labels-verticalalignment}
 
-Sets the vertical alignment of the label. See <a href="global.html#verticalalignment">VerticalAlignment</a>
+Sets the vertical alignment of the label. See [Vertical Alignments](/js/api/global#verticalalignment)
 
 #### Default Value
 
@@ -4026,7 +4026,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.wrapping `enum`
 {:#members:nodes-labels-wrapping}
 
-Defines how the label text needs to be wrapped. See <a href="global.html#textwrapping">TextWrapping</a>
+Defines how the label text needs to be wrapped. See [Text Wrapping](/js/api/global#textwrapping)
 
 #### Default Value
 
@@ -4744,7 +4744,7 @@ Defines the height of the symbol
 
 {% highlight html %}
 
-<div id="symbolpalette"></div>
+<div id="diagramcontent"></div>
 <script>
 $("#symbolpalette").ejSymbolPalette({
 	//Defines the palette collection 
@@ -5331,7 +5331,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.constraints `enum`
 {:#members:nodes-ports-constraints}
 
-Defines whether connections can be created with the port See <a href="global.html#portconstraints">PortConstraints</a>
+Defines whether connections can be created with the port See [Port Constraints](/js/api/global#portconstraints)
 
 #### Default Value
 
@@ -5451,7 +5451,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.shape `enum`
 {:#members:nodes-ports-shape}
 
-Defines the shape of the port. See <a href="global.html#portshapes">PortShapes</a>
+Defines the shape of the port. See [Port Shapes](/js/api/global#portshapes)
 
 #### Default Value
 
@@ -5498,7 +5498,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
-Defines when the port should be visible. See <a href="global.html#portvisibility">PortVisibility</a>
+Defines when the port should be visible. See [Port Visibility](/js/api/global#portvisibility)
 
 #### Default Value
 
@@ -5739,7 +5739,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.boundary `enum`
 {:#members:nodes-subprocess-boundary}
 
-Sets the boundary of the BPMN process See <a href="global.html#bpmnboundary">BPMNBoundary</a>
+Sets the boundary of the BPMN process See [BPMN Boundary](/js/api/global#bpmnboundary)
 
 #### Default Value
 
@@ -5787,7 +5787,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
-Defines the loop type of a sub process .See <a href="global.html#bpmnloops">BPMNLoops</a>
+Defines the loop type of a sub process .See [BPMN Loops](/js/api/global#bpmnloops)
 
 #### Default Value
 
@@ -5883,7 +5883,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tasks.loop `enum`
 {:#members:nodes-tasks-loop}
 
-Sets the loop type of a bpmn task .See <a href="global.html#BPMNLoops">BPMNLoops</a>
+Sets the loop type of a bpmn task .See [BPMN Loops](/js/api/global#bpmnloops)
 
 #### Default Value
 
@@ -5907,7 +5907,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tasks.type `enum`
 {:#members:nodes-tasks-type}
 
-Sets the type of the BPMN task. See <a href="global.html#bpmntasks">BPMNTasks</a>
+Sets the type of the BPMN task. See [BPMN Tasks](/js/api/global#bpmntasks)
 
 #### Default Value
 
@@ -6034,7 +6034,7 @@ $("#diagramcontent").ejDiagram({
 ### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
-Sets the type of BPMN Event Triggers. See <a href="global.html#bpmntriggers">BPMNTriggers</a>
+Sets the type of BPMN Event Triggers. See [BPMN Triggers](/js/api/global#bpmntriggers)
 
 #### Default Value
 
@@ -6056,7 +6056,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.type `enum`
 {:#members:nodes-type}
 
-Defines the type of the node. See <a href="global.html#shapes">Shapes</a>
+Defines the type of the node. See [Shapes](/js/api/global#shapes)
 
 #### Default Value
 
@@ -6079,7 +6079,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes})
 ### nodes.verticalAlign `enum`
 {:#members:nodes-verticalalign}
 
-Sets the vertical aligment of a node. Applicable, if the parent of a node is a container. See <a href="global.html#verticalalignment">VerticalAlignment</a>
+Sets the vertical aligment of a node. Applicable, if the parent of a node is a container. See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
@@ -6182,13 +6182,13 @@ Binds the custom JSON data with node properties
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
 	   //Sets the method name to node template 
 	   nodeTemplate :"nodeTemplate"
@@ -6357,7 +6357,7 @@ $("#diagramcontent").ejDiagram({
 ### pageSettings.pageOrientation `enum`
 {:#members:pagesettings-pageorientation}
 
-Sets the orientation of the page. See <a href="global.html#pageorientations">PageOrientation</a>
+Sets the orientation of the page. See [Page Orientations](/js/api/global#pageorientations)
 
 #### Default Value
 
@@ -6422,7 +6422,7 @@ $("#diagramcontent").ejDiagram({
 ### pageSettings.scrollLimit `enum`
 {:#members:pagesettings-scrolllimit}
 
-Defines the scrollable region of diagram. See <a href="global.html#scrolllimit">ScrollLimit</a>
+Defines the scrollable region of diagram. See [Scroll Limit](/js/api/global#scrolllimit)
 
 #### Default Value
 
@@ -6632,7 +6632,7 @@ for(var i =0; i< diagram.model.selectedItems.children; i++){
 ### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
-Controls the visibility of selector. See <a href="global.html#selectorconstraints">SelectorConstraints</a>
+Controls the visibility of selector. See [Selector Constraints](/js/api/global#selectorconstraints)
 
 #### Default Value
 
@@ -6861,10 +6861,7 @@ Enables or disables snapping nodes/connectors to objects
 
 {% highlight html %}
 
-<div id="diagramcontent"></div>
-<script>
 $("#diagramcontent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
-</script>
 
 {% endhighlight %}
 
@@ -6970,7 +6967,7 @@ Defines the angle by which the object needs to be snapped
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 $("#diagramcontent").ejDiagram({snapSettings: { snapAngle: 10} });
 
@@ -6987,7 +6984,7 @@ Defines the minimum distance between the selected object and the nearest object
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 var snap = {"snapObjectDistance":5};
 //snapObjectDistance
@@ -7088,7 +7085,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 ### tool `enum`
 {:#members:tool}
 
-Enables/Disables the interactive behaviors of diagram. See <a href="global.html#tool">Tool</a>
+Enables/Disables the interactive behaviors of diagram. See [Tools](/js/api/global#tool)
 
 #### Default Value
 
@@ -7154,7 +7151,7 @@ Aligns the tooltip around nodes/connectors
 ### tooltip.alignment.horizontal `enum`
 {:#members:tooltip-alignment-horizontal}
 
-Defines the horizontal alignment of tooltip. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Defines the horizontal alignment of tooltip. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
@@ -7180,7 +7177,7 @@ $("#diagramcontent").ejDiagram({
 ### tooltip.alignment.vertical `enum`
 {:#members:tooltip-alignment-vertical}
 
-Defines the vertical alignment of tooltip. See <a href="global.html#verticalalignment">VerticalAlignment</a>
+Defines the vertical alignment of tooltip. See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
@@ -7230,7 +7227,7 @@ $("#diagramcontent").ejDiagram({
 ### tooltip.relativeMode `enum`
 {:#members:tooltip-relativemode}
 
-Defines whether the tooltip should be shown at the mouse position or around node. See <a href="global.html#relativemode">RelativeMode </a>
+Defines whether the tooltip should be shown at the mouse position or around node. See [Relative Mode](/js/api/global#relativemode">RelativeMode </a>
 
 #### Default Value
 
@@ -7740,17 +7737,17 @@ Export the diagram as downloadable files or as data
 		<tr>
 			<td class="name">options.format</td>
 			<td class="type">String</td>
-			<td class="description">format of the exported file/data See <a href="global.html#fileformats">FileFormats</a></td>
+			<td class="description">format of the exported file/data See [File Formats](/js/api/global#fileformats)</td>
 		</tr>
 		<tr>
 			<td class="name">options.mode </td>
 			<td class="type">String</td>
-			<td class="description">to set whether to export diagram as a file or as raw data See <a href="global.html#exportmodes">ExportModes</a></td>
+			<td class="description">to set whether to export diagram as a file or as raw data See [Export Modes](/js/api/global#exportmodes)</td>
 		</tr>
 		<tr>
 			<td class="name">options.region</td>
 			<td class="type">String</td>
-			<td class="description">to set the region of the diagram to be exported See <a href="global.html#region">Region</a></td>
+			<td class="description">to set the region of the diagram to be exported See [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">options.bounds</td>
@@ -7839,12 +7836,12 @@ Fit the diagram content into diagram viewport
 		<tr>
 			<td class="name">mode </td>
 			<td class="type">String [optional]</td>
-			<td class="description">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode </a></td>
+			<td class="description">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
 		</tr>
 		<tr>
 			<td class="name">region</td>
 			<td class="type">String [optional]</td>
-			<td class="description">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
+			<td class="description">to set whether the region to be fit will be based on diagram elements or page settings [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">margin</td>
@@ -7910,7 +7907,7 @@ Insert a label into a node's label collection at runtime
 		<tr>
 			<td class="name">index</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">index at which new label to be inserted in a label collection</td>
+			<td class="description">index to insert the label into the node </td>
 		</tr>
 	</tbody>
 </table>
@@ -8573,7 +8570,8 @@ Update the given label at runtime
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
-var label = {"name":"node1", "text": "node", "bold": true, "italic": true};
+var label = [];
+label =[{"name":"node1" "text": "node", "bold": true, "italic": true}]
 diagram.updateLabel(node.name,node.labels[0],label);
 </script>
 
@@ -8882,7 +8880,7 @@ Triggers When auto scroll is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // autoScrollChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -8940,7 +8938,7 @@ Triggers when a node, connector or diagram is clicked
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // click event for diagram
 $("#diagramcontent").ejDiagram({
@@ -8988,7 +8986,7 @@ Triggers when the connection is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // connectionChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9031,7 +9029,7 @@ Triggers when the connector collection is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // connectorCollectionChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9089,7 +9087,7 @@ Triggers when the connectors' source point is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // connectorSourceChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9147,7 +9145,7 @@ Triggers when the connectors' target point is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // connectorTargetChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9190,7 +9188,7 @@ Triggers before opening the context menu
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // contextMenuBeforeOpen event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9248,7 +9246,7 @@ Triggers when a context menu item is clicked
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // contextMenuClick event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9286,7 +9284,7 @@ Triggers when a node, connector or diagram model is clicked twice
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // doubleClick event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9339,7 +9337,7 @@ Triggers while dragging the elements in diagram
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // deag event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9377,7 +9375,7 @@ Triggers when a symbol is dragged into diagram from symbol palette
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // drag enter event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9435,7 +9433,7 @@ Triggers when a symbol is dragged over diagram
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // drag over event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9447,7 +9445,7 @@ dragOver:function (args) {}
 ### dragLeave
 {:#events:dragleave}
 
-Triggers when an element is moved out of the diagram.
+Triggers when a symbol is dragged outside of the diagram.
 
 <table class="params">
 	<thead>
@@ -9461,14 +9459,14 @@ Triggers when an element is moved out of the diagram.
 		<tr>
 			<td class="name">element</td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector which is moved out of the diagram</td>
+			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
 		</tr>
 	</tbody>
 </table>
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // drag leave event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9514,14 +9512,14 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 		<tr>
 			<td class="name">sourceType</td>
 			<td class="type">Enum</td>
-			<td class="description">parameter returns source from where the object is dragged</td>
+			<td class="description">parameter returns the enum which defines the type of the source</td>
 		</tr>
 	</tbody>
 </table>
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // drop event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9569,7 +9567,7 @@ Triggers when a child is added to or removed from a group
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // group change event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9617,7 +9615,7 @@ Triggers when a diagram element is clicked
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // itemClick event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9660,7 +9658,7 @@ Triggers when mouse enters a node/connector
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // mouseEnter event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9703,7 +9701,7 @@ Triggers when mouse leaves node/connector
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // mouseLeave event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9746,7 +9744,7 @@ Triggers when mouse hovers over a node/connector
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // mouseOver event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9789,7 +9787,7 @@ Triggers when node collection is changed
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // nodeCollectionChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9847,7 +9845,7 @@ Triggers when a node is resized
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // sizeChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9900,7 +9898,7 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // propertyChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9948,7 +9946,7 @@ Triggers when the diagram elements are rotated
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // rotationChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -9986,7 +9984,7 @@ Triggers when the diagram is zoomed or panned
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // ScrollChange event
 $("#diagramcontent").ejDiagram({
@@ -10034,7 +10032,7 @@ Triggers when a connector segment is edited
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // segment changed event for diagram
 $("#diagramcontent").ejDiagram({
@@ -10092,7 +10090,7 @@ Triggers when the selection is changed in diagram
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // selectionChange event for diagram
 $("#diagramcontent").ejDiagram({
@@ -10135,7 +10133,7 @@ Triggers when label editing is ended
 
 #### Example
 
-{% highlight js %}
+{% highlight html %}
 
 // textChange event for diagram
 $("#diagramcontent").ejDiagram({
