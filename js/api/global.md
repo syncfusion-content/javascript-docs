@@ -12329,21 +12329,21 @@ Enum for Boundary Constraints in diagram
 Infinity</td>
 <td class="type">string</td>
 <td class="default">infinity</td>
-<td class="description">Used to set boundaryConstraints as Infinity</td>
+<td class="description">Allows to move the diagram elements in all directions, without any restrictions</td>
 </tr>
 <tr>
 <td class="name">
 Diagram</td>
 <td class="type">string</td>
 <td class="default">diagram</td>
-<td class="description">Used to set boundaryConstraints as Diagram</td>
+<td class="description">Allows to move the diagram elements beyond the diagram content</td>
 </tr>
 <tr>
 <td class="name">
 Page</td>
 <td class="type">string</td>
 <td class="default">page</td>
-<td class="description">Used to set boundaryConstraints as Page</td>
+<td class="description">Allows to move the diagram elements only the region specified on pageSettings </td>
 </tr>
 </tbody>
 </table>

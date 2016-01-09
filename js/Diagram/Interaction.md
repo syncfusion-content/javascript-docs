@@ -145,9 +145,9 @@ The following code illustrates how to drag nodes over multiple diagrams.
 
 The following screen short illustrates how the nodes are dragged from one diagram to another.
  
-![](/js/Diagram/Interaction_images/sshot-1.png)
+![](/js/Diagram/Interaction_images/Interaction_img12.png)
 
-![](/js/Diagram/Interaction_images/sshot-2.png)
+![](/js/Diagram/Interaction_images/Interaction_img13.png)
  
 
 
