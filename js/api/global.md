@@ -2759,14 +2759,14 @@ Undoable</td>
 Resizable</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
-<td class="description">Resizable constraints allows you to change the diagram size on window resize.</td>
+<td class="description">Autamatically adjusts the view port size, when the window is resized</td>
 </tr>
 <tr>
 <td class="name">
 APIUpdate</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
-<td class="description">APIUpdate constraints allows you to edit the diagram through API methods, when the diagram is read only</td>
+<td class="description">Enables/Disables to edit the page programmatically</td>
 </tr>
 <tr>
 <td class="name">
