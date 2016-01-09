@@ -372,9 +372,9 @@ The following table illustrates those commands with the associated key values.
 | Ctrl+MouseScroll | zoom | Zoom(Zoom in/Zoom out the diagram) |
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
-| Tab | focusToNextItem | Move from shape to shape on the drawing page. A dotted rectangle indicates the shape that has the focus. |
-| Shift + Tab | focusToPreviousItem | Move from shape to shape on the drawing page in reverse order. |
-| Enter | selectFocusedItem | Select a shape that has focus. |
+| Tab | focusToNextItem | Focus the next node/connector based on z-order |
+| Shift + Tab | focusToPreviousItem | Focus the previous node/connector based on z-order |
+| Enter | selectFocusedItem | Select the focussed node/connector |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").
  
