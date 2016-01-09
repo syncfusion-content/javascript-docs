@@ -224,6 +224,24 @@ The `enableScale` property of the palette item enables you to customize the size
 
 Palette headers are often used to display unit of information that proceeds the information about the palette. By default, the header content is the name of the palette by default, so when you customize the header of the palette, it will update on all the palette as well.
 
+Following code example illustrates how to define default palette header.
+
+
+{% highlight js %}
+
+        $("#symbolpalette").ejSymbolPalette({          
+            diagramId: "diagram",
+            //Defines the default header
+            palettes: [{
+                name: "Basic Shapes",
+                
+            }], 
+        });
+
+{% endhighlight %}
+
+
+![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img7.png)
 
 #### Customize the Palette Header
 
