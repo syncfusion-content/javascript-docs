@@ -52,7 +52,7 @@ Defines the background color of diagram elements
 
 #### Default Value
 
-* ""
+* "transparent"
 
 #### Example
 
@@ -72,7 +72,7 @@ Defines the path of the background image of diagram elements
 
 #### Default Value
 
-* ""
+* null
 
 #### Example
 
@@ -85,10 +85,10 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 
 {% endhighlight %}
 
-### bridgeDirection `String`
+### bridgeDirection `enum`
 {:#members:bridgedirection}
 
-Sets the direction of line bridges
+Sets the direction of line bridges. See [Bridge Direction](/js/api/global#bridgedirection)
 
 #### Default Value
 
@@ -100,7 +100,7 @@ Sets the direction of line bridges
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({ bridgeDirection:ej.datavisualization.Diagram.BridgeDirection.Bottom } });
+$("#diagramcontent").ejDiagram({ bridgeDirection:ej.datavisualization.Diagram.BridgeDirection.Bottom } });
 </script>
 
 {% endhighlight %}
@@ -126,7 +126,7 @@ An object that maps a set of command names with the corresponding command object
 <div id="diagramcontent"></div>
 <script>
 	
-$("#DiagramContent").ejDiagram( {
+$("#diagramcontent").ejDiagram( {
    commandManager:{
       commands: { 
 		//Command Name
@@ -136,11 +136,11 @@ $("#DiagramContent").ejDiagram( {
             gesture: { key:ej.datavisualization.Diagram.Keys.C, 
 				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift },
             canExecute : function(args) {
-                var diagram = $("#DiagramContent").ejDiagram("instance");
+                var diagram = $("#diagramcontent").ejDiagram("instance");
                 return diagram.model.selectedItems.children.length;
             },
             execute : function(args){
-                var diagram = $("#DiagramContent").ejDiagram("instance");
+                var diagram = $("#diagramcontent").ejDiagram("instance");
                 diagram.copy();
                 diagram.paste();
             } 
@@ -153,14 +153,10 @@ $("#DiagramContent").ejDiagram( {
 
 {% endhighlight %}
 
-### commandManager.commands.canExecute `Object`
+### commandManager.commands.canExecute `function`
 {:#members:commandmanager-commands-canexecute}
 
-A method that defines whether the command is executable at the moment or not 
-
-#### Default Value
-
-* null
+A method that defines whether the command is executable at the moment or not. 
 
 #### Example
 
@@ -169,7 +165,39 @@ A method that defines whether the command is executable at the moment or not
 <div id="diagramcontent"></div>
 <script>
 
-$("#DiagramContent").ejDiagram( {
+$("#diagramcontent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Method to define whether the command is executable at the moment
+        { 
+            canExecute : function(args) {
+                var diagram = $("#diagramcontent").ejDiagram("instance");
+                return diagram.model.selectedItems.children.length;
+            }
+        } 
+     }
+   }
+});
+</script>
+
+{% endhighlight %}
+
+
+### commandManager.commands.execute `function`
+{:#members:commandmanager-commands-execute}
+
+A method that defines what to be executed when the key combination is recognized.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+
+$("#diagramcontent").ejDiagram( {
    commandManager:{
       commands: { 
 		//Command Name
@@ -177,7 +205,7 @@ $("#DiagramContent").ejDiagram( {
 		//Defines what to be executed when the key combination is recognized
         { 
             execute : function(args){
-                var diagram = $("#DiagramContent").ejDiagram("instance");
+                var diagram = $("#diagramcontent").ejDiagram("instance");
                 diagram.copy();
                 diagram.paste();
             } 
@@ -194,14 +222,14 @@ $("#DiagramContent").ejDiagram( {
 
 Defines a combination of keys and key modifiers, on recognition of which the command will be executed
 
-### commandManager.commands.gesture.key `string`
+### commandManager.commands.gesture.key `enum`
 {:#members:commandmanager-commands-gesture-key}
 
-Sets the key value, on recognition of which the command will be executed
+Sets the key value, on recognition of which the command will be executed.
 
 #### Default Value
 
-* Keys.None
+* ej.datavisualization.Diagram.Keys.None
 
 #### Example
 
@@ -209,7 +237,7 @@ Sets the key value, on recognition of which the command will be executed
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram( {
+$("#diagramcontent").ejDiagram( {
    commandManager:{
       commands: { 
 		//Command Name
@@ -226,14 +254,14 @@ $("#DiagramContent").ejDiagram( {
 
 {% endhighlight %}
 
-### commandManager.commands.gesture.keyModifiers `string`
+### commandManager.commands.gesture.keyModifiers `enum`
 {:#members:commandmanager-commands-gesture-keymodifers}
 
-Sets a combination of key modifiers, on recognition of which the command will be executed
+Sets a combination of key modifiers, on recognition of which the command will be executed.
 
 #### Default Value
 
-* KeyModifiers.None
+* ej.datavisualization.Diagram.KeyModifiers.None
 
 #### Example
 
@@ -241,7 +269,7 @@ Sets a combination of key modifiers, on recognition of which the command will be
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram( {
+$("#diagramcontent").ejDiagram( {
    commandManager:{
       commands: { 
 		//Command Name
@@ -254,41 +282,6 @@ $("#DiagramContent").ejDiagram( {
      }
    }
 });	
-</script>
-
-{% endhighlight %}
-
-### commandManager.commands.execute `Object`
-{:#members:commandmanager-commands-execute}
-
-A method that defines the action to be done when the specified key gesture is recognized
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-
-$("#DiagramContent").ejDiagram( {
-   commandManager:{
-      commands: { 
-		//Command Name
-        "clone" : 
-		//Method to define whether the command is executable at the moment
-        { 
-            canExecute : function(args) {
-                var diagram = $("#DiagramContent").ejDiagram("instance");
-                return diagram.model.selectedItems.children.length;
-            }
-        } 
-     }
-   }
-});
 </script>
 
 {% endhighlight %}
@@ -308,13 +301,13 @@ Defines any additional parameters that are required at runtime
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram( {
+$("#diagramcontent").ejDiagram( {
    commandManager:{
       commands: { 
         "clone" : 
         { 
             execute : function(args){
-                var diagram = $("#DiagramContent").ejDiagram("instance");
+                var diagram = $("#diagramcontent").ejDiagram("instance");
 				//Checks args.parameter
                 if(diagram.getObjectType(diagram.model.selectedItems.children[0]) == args.parameter)
                 {
@@ -345,10 +338,10 @@ A collection of JSON objects where each object represents a connector
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var connector = {name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{ x:200,y:200 }};
-$("#DiagramContent").ejDiagram({ connectors:[connector] });
+$("#diagramcontent").ejDiagram({ connectors:[connector] });
 </script>
 
 {% endhighlight %}
@@ -370,7 +363,7 @@ To maintain additional information about connectors
 <script>
 var addInfo = { Description: "Bidirectional Flow" };
 var connector = { name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{ x:200,y:200 }, addInfo:addInfo };
-$("#DiagramContent").ejDiagram({ connectors:[connector] });
+$("#diagramcontent").ejDiagram({ connectors:[connector] });
 </script>
 
 {% endhighlight %}
@@ -395,7 +388,7 @@ var connector1 = { name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:
 	               bridgeSpace: 15 };
 var connector2 = { name:"connector2", sourcePoint:{x:150, y:100}, targetPoint:{x:150, y:200}};
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
-$("#DiagramContent").ejDiagram(
+$("#diagramcontent").ejDiagram(
 { 
 	connectors:[connector1, connector2],
 	//Enable bridging
@@ -405,14 +398,14 @@ $("#DiagramContent").ejDiagram(
 
 {% endhighlight %}
 
-### connectors.constraints `Number`
+### connectors.constraints `enum`
 {:#members:connectors-constraints}
 
-Enables or disables the behaviors of connectors. see<a href="global.html#connectorconstraints">ConnectorConstraints</a>
+Enables or disables the behaviors of connectors. See [Connector Constraints](/js/api/global#connectorconstraints)
 
 #### Default Value
 
-* ConnectorConstraints.Default
+* ej.datavisualization.Diagram.ConnectorConstraints.Default
 
 #### Example
 
@@ -424,7 +417,7 @@ var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 var connector = { name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{ x:200,y:200 }, 
 	              //Disable selection
                   constraints: ConnectorConstraints.Default & ~ConnectorConstraints.Select };
-$("#DiagramContent").ejDiagram({ connectors:[connector] });
+$("#diagramcontent").ejDiagram({ connectors:[connector] });
 </script>
 
 {% endhighlight %}
@@ -447,7 +440,7 @@ Defines the radius of the rounded corner
 var connector = { name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{ x:200,y:200 }, 
 	              //Set corner radius
                   cornerRadius: 10, segments:[{ type: "orthogonal"}] };
-$("#DiagramContent").ejDiagram({ connectors:[connector] });
+$("#diagramcontent").ejDiagram({ connectors:[connector] });
 </script>
 
 {% endhighlight %}
@@ -476,19 +469,19 @@ Configures the styles of shapes
 var connector = { name: "connector", 
 	         cssClass: "hoverConnector", 
 	         sourcePoint:{ x:100, y: 100 }, targetPoint: { x: 200, y: 200 } };			 
-$("#DiagramContent").ejDiagram({ connectors:[ connector ] });
+$("#diagramcontent").ejDiagram({ connectors:[ connector ] });
 </script>
 
 {% endhighlight %}
 
-### connectors.horizontalAlign `String`
+### connectors.horizontalAlign `enum`
 {:#members:connectors-horizontalalign}
 
-Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container
+Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
-* HorizontalAlignment.Left
+* ej.datavisualization.Diagram.HorizontalAlignment.Left
 
 #### Example
 
@@ -498,13 +491,13 @@ Sets the horizontal alignment of the connector. Applicable, if the parent of the
 <script>
 var connector1 = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:150, y:150}, 
 	               //Set the horizontal alignment
-	               horizontalAlign:"right" }; 
+	               horizontalAlign:ej.datavisualization.Diagram.HorizontalAlignment.Right }; 
 				   
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
 			  
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -527,7 +520,7 @@ A collection of JSON objects where each object represents a label. For label pro
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
 	              //Define the labels collection
                   labels:[{ text:"connector" }]}; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -539,7 +532,7 @@ Sets the stroke color of the connector
 
 #### Default Value
 
-* black
+* "black"
 
 #### Example
 
@@ -549,7 +542,7 @@ Sets the stroke color of the connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   lineColor:"blue" }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -571,7 +564,7 @@ Sets the pattern of dashes and gaps used to stroke the path of the connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   lineColor:"blue", lineDashArray: "2,2" }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -593,7 +586,7 @@ Defines the padding value to ease the interaction with connectors
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   lineHitPadding: 15 }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -615,7 +608,7 @@ Sets the width of the line
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   lineWidth: 10 }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -641,7 +634,7 @@ var connector1 = { name:"connector1", sourcePoint:{x:100, y:100},
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 
 </script>
 
@@ -667,7 +660,7 @@ var connector1 = { name:"connector1", sourcePoint:{x:100, y:100},
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -692,7 +685,7 @@ var connector1 = { name:"connector1", sourcePoint:{x:100, y:100},
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -717,7 +710,7 @@ var connector1 = { name:"connector1", sourcePoint:{x:100, y:100},
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -738,7 +731,7 @@ Sets a unique name for the connector
 <div id="diagramcontent"></div>
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -760,7 +753,7 @@ Defines the transparency of the connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
 	              opacity: 0.5 }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -778,7 +771,7 @@ Defines the size and preview size of the node to add that to symbol palette. To 
 
 {% highlight html %}
 
-<div id="diagramcontent"></div>
+<div id="symbolpalette"></div>
 <script>
 	
 $("#symbolpalette").ejSymbolPalette({
@@ -818,7 +811,7 @@ Sets the parent name of the connector.
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, parent:"group"}; 
 var group = { name :"group", children:["connector1"] };
-$("#DiagramContent").ejDiagram({ nodes:[group], connectors : [connector]});
+$("#diagramcontent").ejDiagram({ nodes:[group], connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -841,7 +834,7 @@ An array of JSON objects where each object represents a segment
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
 	              //Defines a collection of segments
                   segments: [{type:"straight", point: { x:75, y:150 }}] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -863,7 +856,7 @@ Sets the direction of orthogonal segment
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   segments: [{type:"orthogonal", direction:"bottom", length:50}] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -885,7 +878,7 @@ Describes the length of orthogonal segment
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   segments: [{type:"orthogonal", direction:"bottom", length:50}] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -908,7 +901,7 @@ Describes the end point of bezier/straight segment
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
 	              //Defines a collection of segments
                   segments: [{ type:"straight", point: { x:75, y:150 }}] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -930,7 +923,7 @@ Defines the first control point of the bezier segment
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   segments: [{ type:"bezier", point1: { x:150, y:50} }] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -952,7 +945,7 @@ Defines the second control point of bezier segment
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   segments: [{ type:"bezier", point1: { x:150, y:50}, point2:{ x: 150, y: 150 } }] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -973,13 +966,13 @@ Sets the type of the segment. See <a href="global.html#segments">Segments</a>
 <div id="diagramcontent"></div>
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  segments: [{ type:"bezier" }] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+                  segments: [{ type: ej.datavisualization.Diagram.Segments.Bezier }] }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
 
-### connectors.segments.vector1 `Point`
+### connectors.segments.vector1 `Object`
 {:#members:connectors-segments-vector1}
 
 Describes the length and angle between the first control point and the start point of bezier segment
@@ -998,12 +991,12 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
                   segments: [{ type:"bezier", 
                   vector1: { distance:75, angle: 0}, 
                   vector2: { distance:75, angle: 180} }] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
 
-### connectors.segments.vector2 `Point`
+### connectors.segments.vector2 `Object`
 {:#members:connectors-segments-vector2}
 
 Describes the length and angle between the second control point and end point of bezier segment
@@ -1022,19 +1015,19 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
                   segments: [{ type:"bezier", 
                   vector1: { distance:75, angle: 0}, 
                   vector2: { distance:75, angle: 180} }] }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
 
-### connectors.sourceDecorator `String`
+### connectors.sourceDecorator `Object`
 {:#members:connectors-sourcedecorator}
 
 Defines the source decorator of the connector
 
 #### Default Value
 
-* null
+* { shape:"arrow", width: 8, height:8, borderColor:"black", fillColor:"black" }
 
 #### Example
 
@@ -1044,7 +1037,7 @@ Defines the source decorator of the connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   sourceDecorator : { shape:"openarrow" } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1066,7 +1059,7 @@ Sets the border color of the source decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"openarrow" , borderColor:"red"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1088,7 +1081,7 @@ Sets the border width of the decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   sourceDecorator : { shape:"openarrow" , borderWidth: 5} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1110,7 +1103,7 @@ Sets the fill color of the source decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"circle" , fillColor:"red"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1132,7 +1125,7 @@ Sets the height of the source decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { width: 10, height:10 } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1154,7 +1147,7 @@ Defines the custom shape of the source decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   sourceDecorator : { shape:"path", pathData:"M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1162,7 +1155,7 @@ $("#DiagramContent").ejDiagram({connectors : [connector]});
 ### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
-Defines the shape of the source decorator. See <a href="global.html#decoratorshapes">DecoratorShapes</a>
+Defines the shape of the source decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
 
 #### Default Value
 
@@ -1175,8 +1168,8 @@ Defines the shape of the source decorator. See <a href="global.html#decoratorsha
 <div id="diagramcontent"></div>
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-                  sourceDecorator : { shape:"circle" } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+                  sourceDecorator : { shape: ej.datavisualization.Diagram.DecoratorShapes.Circle } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1198,7 +1191,7 @@ Defines the width of the source decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { width: 10, height:10 } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1222,7 +1215,7 @@ Sets the source node of the connector
 var node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 var node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
 var connector = { name:"connector1", sourceNode:"source", targetNode:"target" }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 
 </script>
 
@@ -1248,7 +1241,7 @@ var node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
 var connector = { name:"connector1", 
                   sourceNode:"source", targetNode:"target",
                   sourcePadding: 2, targetPadding: 2 }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1260,7 +1253,7 @@ Describes the start point of the connector
 
 #### Default Value
 
-* Point
+* ej.datavisualization.Diagram.Point()
 
 #### Example
 
@@ -1271,7 +1264,7 @@ Describes the start point of the connector
 var connector = { name:"connector1", 
 				  sourcePoint:{x:100, y:100}, 
 				  targetPoint:{x:200, y:200} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1298,12 +1291,12 @@ var node2 = {name:"target", offsetX:200, offsetY:200, width: 50, height: 50,
 var connector = { name:"connector1", 
                   sourceNode:"source", targetNode:"target",
                   sourcePort: "port", targetPort:"port" }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 </script>
 
 {% endhighlight %}
 
-### connectors.targetDecorator `String`
+### connectors.targetDecorator `Object`
 {:#members:connectors-targetdecorator}
 
 Defines the target decorator of the connector
@@ -1320,7 +1313,7 @@ Defines the target decorator of the connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   targetDecorator : { shape:"openarrow" } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1342,7 +1335,7 @@ Sets the border color of the decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"openarrow" , borderColor:"red"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1364,7 +1357,7 @@ Sets the color with which the decorator will be filled
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   targetDecorator : { shape:"circle" , fillColor:"red"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1386,7 +1379,7 @@ Defines the height of the target decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   targetDecorator : { width: 10, height:10 } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1408,7 +1401,7 @@ Defines the custom shape of the target decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
                   targetDecorator : { shape:"path", pathData:"M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1416,7 +1409,7 @@ $("#DiagramContent").ejDiagram({connectors : [connector]});
 ### connectors.targetDecorator.shape `enum`
 {:#members:connectors-targetdecorator-shape}
 
-Defines the shape of the target decorator See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
+Defines the shape of the target decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
 
 #### Default Value
 
@@ -1429,8 +1422,8 @@ Defines the shape of the target decorator See <a href="global.html#DecoratorShap
 <div id="diagramcontent"></div>
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-                  targetDecorator : { shape:"circle" } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+                  targetDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.Circle } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1452,7 +1445,7 @@ Defines the width of the target decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   targetDecorator : { width: 10, height:10 } }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1475,7 +1468,7 @@ Sets the target node of the connector
 var node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 var node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
 var connector = { name:"connector1", sourceNode:"source", targetNode:"target" }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1500,7 +1493,7 @@ var node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
 var connector = { name:"connector1", 
                   sourceNode:"source", targetNode:"target",
                   sourcePadding: 2, targetPadding: 2 }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1512,7 +1505,7 @@ Describes the end point of the connector
 
 #### Default Value
 
-* Point
+* ej.datavisualization.Diagram.Point()
 
 #### Example
 
@@ -1523,7 +1516,7 @@ Describes the end point of the connector
 var connector = { name:"connector1", 
 				  sourcePoint:{x:100, y:100}, 
 				  targetPoint:{x:200, y:200} }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1550,12 +1543,12 @@ var node2 = {name:"target", offsetX:200, offsetY:200, width: 50, height: 50,
 var connector = { name:"connector1", 
                   sourceNode:"source", targetNode:"target",
                   sourcePort: "port", targetPort:"port" }; 
-$("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
+$("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]});
 </script>
 
 {% endhighlight %}
 
-### connectors.tooltip `String`
+### connectors.tooltip `Object`
 {:#members:connectors-tooltip}
 
 Defines the tooltip that should be shown when the mouse hovers over connector.  For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -1585,7 +1578,7 @@ var tooltip = {
 		}
 	};
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
-$("#DiagramContent").ejDiagram({	
+$("#diagramcontent").ejDiagram({	
 //Defines connectors
 	connectors: [{
 		name: "flow1",sourcePoint: { x:100, y: 100 }, targetPoint :{ x:200, y:200 },
@@ -1598,14 +1591,14 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-### connectors.verticalAlign `VerticalAlignment`
+### connectors.verticalAlign `enum`
 {:#members:connectors-verticalalign}
 
-To set the vertical alignment of connector (Applicable,if the parent is group)
+To set the vertical alignment of connector (Applicable,if the parent is group).See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
-* VerticalAlignment.Top
+* ej.datavisualization.Diagram.VerticalAlignment.Top
 
 #### Example
 
@@ -1615,13 +1608,13 @@ To set the vertical alignment of connector (Applicable,if the parent is group)
 <script>
 var connector1 = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:150, y:150}, 
 	               //Set the horizontal alignment
-	               verticalAlign:"bottom" }; 
+	               verticalAlign:ej.datavisualization.Diagram.VerticalAlignment.Bottom }; 
 				   
 var group = { name :"group", children:[ connector1 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               minWidth:200, minHeight: 200, fillColor:"gray" };
 			  
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -1643,7 +1636,7 @@ Enables or disables the visibility of connector
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   visible: false }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1665,7 +1658,7 @@ Sets the z-index of the connector
 <script>
 var connector = { name:"connectorghj", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   zOrder: 1000 }; 
-$("#DiagramContent").ejDiagram({connectors : [connector]});
+$("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
@@ -1683,13 +1676,13 @@ Binds the custom JSON data with connector properties
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
 	   //Sets the method name to connector template 
 	   connectorTemplate :"connectorTemplate"
@@ -1708,11 +1701,11 @@ Binds the custom JSON data with connector properties
 ### constraints `enum`
 {:#members:constraints}
 
-Enables/Disables the default behaviors of the diagram see <a href="global.html#diagramconstraints">DiagramConstraints</a>
+Enables/Disables the default behaviors of the diagram. See [Diagram Constraints](/js/api/global#diagramconstraints)
 
 #### Default Value
 
-* constraints.All
+* ej.datavisualization.Diagram.DiagramConstraints.All
 
 #### Example
 
@@ -1722,7 +1715,7 @@ Enables/Disables the default behaviors of the diagram see <a href="global.html#d
 <script>
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 //Enables line bridging
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	constraints: DiagramConstraints.Default | DiagramConstraints.Bridging });
 </script>
 
@@ -1751,7 +1744,7 @@ Defines the collection of context menu items
 //Collection of items
 var menuitems = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
 var contextMenu = { items: menuitems};
-$("#diagram").ejDiagram({contextMenu: contextMenu});
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
@@ -1772,7 +1765,7 @@ To set whether to display the default context menu items or not
 <div id="diagramcontent"></div>
 <script>
 var contextMenu = { showCustomMenuItemsOnly: true };
-$("#diagram").ejDiagram({contextMenu: contextMenu});
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
@@ -1795,14 +1788,14 @@ Defines the data source either as a collection of objects or as an instance of e
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 	
 var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { dataSource: data }
    });
    
@@ -1817,19 +1810,19 @@ Sets the unique id of the data source items
 
 #### Default Value
 
-* null
+* ""
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", dataSource: data }
    });
 </script>
@@ -1843,19 +1836,19 @@ Defines the parent id of the data source item
 
 #### Default Value
 
-* null
+* ''
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data }
    });
 </script>
@@ -1875,9 +1868,9 @@ Describes query to retrieve a set of data from the specified datasource
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: {
        dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -1894,19 +1887,19 @@ Sets the unique id of the root data source item
 
 #### Default Value
 
-* null
+* ""
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", root:"E1", dataSource: data }
    });
 </script>
@@ -1926,9 +1919,9 @@ Describes the name of the table on which the specified query has to be executed
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: {
        dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -1953,9 +1946,9 @@ Initializes the default values for nodes and connectors
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     defaultSettings: { node: { fillColor:"red"} }
 });
 </script>
@@ -1975,9 +1968,9 @@ Initializes the default connector properties
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Apply default styles to all connectors
     defaultSettings: { connector: { lineColor:"red", lineWidth:4, lineDashArray:"2,2" } }
 });
@@ -1998,10 +1991,10 @@ Initializes the default properties of groups
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Disable dragging all groups
     defaultSettings: { group: {constraints: NodeConstraints.Default & ~NodeConstraints.Drag } }
 });
@@ -2022,9 +2015,9 @@ Initializes the default properties for nodes
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Apply same style to all nodes
     defaultSettings: { node: { fillColor:"red", borderColor:"black" } }
 });
@@ -2039,7 +2032,7 @@ Sets the type of Json object to be drawn through drawing tool
 
 #### Default Value
 
-* ""
+* {}
 
 #### Example
 
@@ -2105,11 +2098,11 @@ A method that takes a history entry as argument and returns whether the specific
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 
 //Add a change to history manager
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 var entry = { object: node, prevState: node.empInfo };
 diagram.model.historyManager.push(entry);
 var newValue = { role: "New role" };
@@ -2131,7 +2124,7 @@ A method that ends grouping the changes
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var group = diagram.model.selectedItems
 
@@ -2162,10 +2155,10 @@ A method that removes the history of a recent change made in diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 //Pop the last change
 diagram.model.historyManager.pop();	
 </script>
@@ -2180,10 +2173,10 @@ A method that allows to track the custom changes made in diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 
 //Creates a custom entry and adds that to history manager
 var entry = { object: node, prevState: node.empInfo };
@@ -2209,9 +2202,9 @@ Defines what should be happened while trying to restore a custom change
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#diagram").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	historyManager: {
 		//Called to revert a custom action
 		undo: customUndoRedo,
@@ -2222,7 +2215,7 @@ $("#diagram").ejDiagram({
 
 //Method to handle the custom action
 function customUndoRedo(args) {
-	var diagram = $("#diagram").ejDiagram("instance");
+	var diagram = $("#diagramcontent").ejDiagram("instance");
 	var node = args.object;
 	var currentState = node.empInfo;
 
@@ -2244,7 +2237,7 @@ A method that starts to group the changes to revert/restore them in a single und
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var group = diagram.model.selectedItems
 
@@ -2271,17 +2264,13 @@ diagram.model.historyManager.closeGroupAction();
 
 Defines what should be happened while trying to revert a custom change
 
-#### Default Value
-
-* null
-
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#diagram").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	historyManager: {
 		//Called to revert a custom action
 		undo: customUndoRedo,
@@ -2292,7 +2281,7 @@ $("#diagram").ejDiagram({
 
 //Method to handle the custom action
 function customUndoRedo(args) {
-	var diagram = $("#diagram").ejDiagram("instance");
+	var diagram = $("#diagramcontent").ejDiagram("instance");
 	var node = args.object;
 	var currentState = node.empInfo;
 
@@ -2318,9 +2307,9 @@ Specifies the height of the diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({ height:"500" });
+$("#diagramcontent").ejDiagram({ height:"500" });
 </script>
 
 {% endhighlight %}
@@ -2330,7 +2319,7 @@ $("#DiagramContent").ejDiagram({ height:"500" });
 
 Automatically arranges the nodes and connectors in a predefined manner
 
-### layout. fixedNode `String`
+### layout.fixedNode `String`
 {:#members:layout- fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
@@ -2344,14 +2333,14 @@ Defines the fixed node with reference to which, the layout will be arranged and 
 {% highlight html %}
 
 //fixedNode of the layout
-$("#diagramContent").ejDiagram({ layout: { fixedNode: "nodename"}});
+$("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 
 {% endhighlight %}
 
-### layout. getLayoutInfo `Object`
+### layout.getLayoutInfo `Object`
 {:#members:layout- getlayoutinfo}
 
-Customizes the orientation of trees/sub trees. For orientations, see <a href="global.html#chartorientations">ChartOrientations</a> For chart types see <a href="global.html#charttypes">ChartTypes</a>
+Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
 
 #### Default Value
 
@@ -2361,10 +2350,10 @@ Customizes the orientation of trees/sub trees. For orientations, see <a href="gl
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
-$("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
+$("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 </script>
 
 {% endhighlight %}
@@ -2382,10 +2371,10 @@ Sets the margin value to be vertically left between layout and diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 // marginY of the layout
-$("#diagramContent").ejDiagram({layout: { marginY: 50 }});
+$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
 </script>
 
 {% endhighlight %}
@@ -2403,10 +2392,10 @@ Sets the space to be horizontally left between nodes
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //horizontalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: { horizontalSpacing: 50 }});
+$("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
 </script>
 
 {% endhighlight %}
@@ -2424,52 +2413,52 @@ Sets the margin value to be horizontally left between the layout and diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //marginX of the layout
-$("#diagramContent").ejDiagram({ layout: { marginX: 50 } });
+$("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
 </script>
 
 {% endhighlight %}
 
-### layout.orientation `String`
+### layout.orientation `enum`
 {:#members:layout-orientation}
 
-Sets the orientation/direction to arrange the diagram elements. See <a href="global.html#layoutorientations">LayoutOrientations</a>
+Sets the orientation/direction to arrange the diagram elements. See [Layout Orientations](/js/api/global#layoutorientations)
 
 #### Default Value
 
-* LayoutOrientations.TopToBottom
+* ej.datavisualization.Diagram.LayoutOrientations.TopToBottom
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //orientation of the layout
-$("#diagramContent").ejDiagram({layout: { orientation: ej.datavisualization.Diagram.LayoutOrientations.LeftToRight }});
+$("#diagramcontent").ejDiagram({layout: { orientation: ej.datavisualization.Diagram.LayoutOrientations.LeftToRight }});
 </script>
 
 {% endhighlight %}
 
-### layout.type `String`
+### layout.type `enum`
 {:#members:layout-type}
 
-Sets the type of the layout based on which the elements will be arranged. See <a href="global.html#layouttypes">LayoutTypes</a>
+Sets the type of the layout based on which the elements will be arranged. See [Layout Types](/js/api/global#layouttypes)
 
 #### Default Value
 
-* LayoutTypes.None
+* ej.datavisualization.Diagram.LayoutTypes.None
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //type of the layout
-$("#diagramContent").ejDiagram({ layout: { type: ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree } });
+$("#diagramcontent").ejDiagram({ layout: { type: ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree } });
 </script>
 
 {% endhighlight %}
@@ -2487,10 +2476,10 @@ Sets the space to be vertically left between nodes
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //verticalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: { verticalSpacing: 50 }});
+$("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
 </script>
 {% endhighlight %}
 
@@ -2527,18 +2516,18 @@ Array of JSON objects where each object represents a node
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [{ name: "node1", width: 175, height: 60, offsetX:100, offsetY:100}];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
 
-### nodes.activity `String`
+### nodes.activity `enum`
 {:#members:nodes-activity}
 
-Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. See <a href="global.html#bpmnactivity">BPMNActivity</a>
+Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. See [BPMN Activity](/js/api/global#bpmnactivity)
 
 #### Default Value
 
@@ -2552,7 +2541,7 @@ Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. S
 <script>
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess, width:50, height:50}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2564,7 +2553,7 @@ To maintain additional information about nodes
 
 #### Default Value
 
-* null
+* {}
 
 #### Example
 
@@ -2578,7 +2567,7 @@ var node1 = { name: "node1", addInfo: addInfo, offsetX:100, offsetY:100, width:5
 
 //Define add Info for swimlane
 var node2 = { type: "swimlane", name: "swimlane", addInfo: addInfo };
-$("#DiagramContent").ejDiagram({nodes:[node1, node2]});
+$("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 </script>
 
 {% endhighlight %}
@@ -2600,7 +2589,7 @@ Sets the border color of node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2623,7 +2612,7 @@ Sets the pattern of dashes and gaps to stroke the border
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "4,2"}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2645,7 +2634,7 @@ Sets the border width of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "2,2", borderWidth:2}];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -2669,7 +2658,7 @@ var nodes;
 var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "4,2"};
 var node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, borderColor: "red" , borderDashArray: "4,2"};
 var group = { name :"group", children:[node1, node2], canUngroup: false };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -2694,7 +2683,7 @@ var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borde
 var node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, borderColor: "red" , borderDashArray: "4,2"};
 //A group node with two child nodes
 var group = { name :"group", children:[node1, node2]};
-$("#DiagramContent").ejDiagram({ nodes:[group] });
+$("#diagramcontent").ejDiagram({ nodes:[group] });
 </script>
 
 {% endhighlight %}
@@ -2716,7 +2705,7 @@ Defines whether the BPMN data object is a collection or not
 <script>
 var nodes;
 nodes=[{name:"dataobject", type: "bpmn", shape:"dataObject", collection: true, width:50, height: 50, offsetX:100, offsetY:100}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2738,7 +2727,7 @@ Defines the distance to be left between a node and its connections(In coming and
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, connectorPadding: 5}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2746,11 +2735,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
-Enables or disables the default behaviors of the node. see<a href="global.html#nodeconstraints">NodeConstraints</a>
+Enables or disables the default behaviors of the node. See [Node Constraints](/js/api/global#nodeconstraints)
 
 #### Default Value
 
-* NodeConstraints.Default
+* ej.datavisualization.Diagram.NodeConstraints.Default
 
 #### Example
 
@@ -2763,31 +2752,7 @@ var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	constraints: NodeConstraints.Default & ~NodeConstraints.Select}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.constraints `enum`
-{:#members:nodes-constraints}
-
-Enables or disables the behaviors of swimlane. see <a href="global.html#nodeconstraints">NodeConstraints</a> 
-
-#### Default Value
-
-ej.datavisualization.Diagram.NodeConstraints.Default & ~(ej.datavisualization.Diagram.NodeConstraints.ResizeNorth | ej.datavisualization.Diagram.NodeConstraints.ResizeWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthEast | ej.datavisualization.Diagram.NodeConstraints.ResizeSouthWest)
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
-//Disables selection
-var swimlane = { type: "swimlane",name: "swimlane",constraints: NodeConstraints.Default & ~NodeConstraints.Select };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
-
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2807,11 +2772,10 @@ Defines how the child objects need to be arranged(Either in any predefined manne
 
 <div id="diagramcontent"></div>
 <script>
-ar nodes;
 var node1 = { name: "node1", width: 50, height:50, borderColor: "red" , borderDashArray: "4,2"};
 var node2 = { name: "node2", width: 50, height:50, borderColor: "red" , borderDashArray: "4,2"};
 var group = {name :"group", children:[node1, node2], container: { type: "stack" }, offsetX:200, offsetY:100 };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -2835,7 +2799,7 @@ var nodes;
 var node1 = { name: "node1", width: 50, height:50, borderColor: "red" , borderDashArray: "4,2"};
 var node2 = { name: "node2", width: 50, height:50, borderColor: "red" , borderDashArray: "4,2"};
 var group = {name :"group", children:[node1, node2], container: { type: "stack", orientation: "horizontal" }, offsetX:200, offsetY:100 };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -2843,7 +2807,7 @@ $("#DiagramContent").ejDiagram({nodes:[group]});
 ### nodes.container.type `enum`
 {:#members:nodes-container-type}
 
-Sets the type of the container. Applicable if the group is a container.
+Sets the type of the container. Applicable if the group is a container. See [Container Types](/js/api/global#containertype">ContainerType </a>
 
 #### Default Value
 
@@ -2862,7 +2826,7 @@ var node2 = { name: "node2", width: 50, height:50, borderColor: "red" , borderDa
 var group = {name :"group", children:[node1, node2], container: { 
 	type: ej.datavisualization.Diagram.ContainerType.Stack }, 
 	offsetX:200, offsetY:100 };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -2885,7 +2849,7 @@ Defines the corner radius of rectangular shapes.
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	type:"basic", shape:"rectangle", cornerRadius:5}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -2915,7 +2879,7 @@ var node = { name: "node",
 	         cssClass: "hoverNode", 
 	         width: 50, height: 50, offsetX: 100, offsetY: 100 };
 			 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -2924,7 +2888,7 @@ $("#DiagramContent").ejDiagram({ nodes:[node] });
 ### nodes.event `enum`
 {:#members:nodes-event}
 
-Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See <a href="global.html#bpmnevents">BPMNEvents</a>
+Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See [BPMN Events](/js/api/global#bpmnevents)
 
 #### Default Value
 
@@ -2939,7 +2903,7 @@ Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See <
 var nodes = [];
 nodes=[{ type: "bpmn", shape: "event" , 
 	     event: ej.datavisualization.Diagram.BPMNEvents.Intermediate, width:50, height:50}];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -2968,7 +2932,7 @@ var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, exclu
 var node2 = { name: "node2", width: 50, height:50 };
 var node3 = { name: "node3", width: 50, height:50 };
 
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
       nodes:[ node1, node2, node3 ],
       layout:{type:"hierarchicaltree"}
 });
@@ -2998,7 +2962,7 @@ var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, isExp
 
 var node2 = { name: "node2", width: 50, height:50 };
 var connector = { sourceNode:"node1", targetNode:"node2" , name:"connector" };
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
       nodes:[node1, node2],
       connectors:[connector],
       layout:{type:"hierarchicaltree"}
@@ -3014,7 +2978,7 @@ Defines the fill color of the node
 
 #### Default Value
 
-* "White"
+* "white"
 
 #### Example
 
@@ -3024,7 +2988,7 @@ Defines the fill color of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, fillColor:"red" }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3032,7 +2996,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.gateway `enum`
 {:#members:nodes-gateway}
 
-Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. See <a href="global.html#bpmngateways">BPMNGateways</a>
+Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. See [BPMN Gateways](/js/api/global#bpmngateways)
 
 #### Default Value
 
@@ -3046,7 +3010,7 @@ Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. Se
 <script>
 var nodes = [];
 nodes=[{ type: "bpmn", shape: "gateway" , gateway: ej.datavisualization.Diagram.BPMNGateways.Exclusive, width:50, height:50 }];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -3068,7 +3032,7 @@ Defines the different colors and the region of color transitions
 
 #### Default Value
 
-* ""
+* []
 
 #### Example
 
@@ -3081,7 +3045,7 @@ Defines the different colors and the region of color transitions
      { color: "white", offset: 0}, { color: "red", offset: 50}]
 };
 var nodes = [{name: "Node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3108,7 +3072,7 @@ Defines the left most position(relative to node) of the rectangular region that 
      { color: "white", offset: 0}, { color: "red", offset: 100 }]
 };
 var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3134,7 +3098,7 @@ Defines the right most position(relative to node) of the rectangular region that
      { color: "white", offset: 0}, { color: "red", offset: 100 }]
 };
 var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3160,7 +3124,7 @@ Defines the top most position(relative to node) of the rectangular region that n
      { color: "white", offset: 0}, { color: "red", offset: 100 }]
 };
 var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3186,7 +3150,7 @@ Defines the bottom most position(relative to node) of the rectangular region tha
      { color: "white", offset: 0}, { color: "red", offset: 100 }]
 };
 var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3217,7 +3181,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 		     cx:50, cy:50,
              stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3242,7 +3206,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 		     cx:50, cy:50,
              stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3268,7 +3232,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 		     cx:50, cy:50,
              stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3293,7 +3257,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 		     cx:50, cy:50,
              stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3321,7 +3285,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
                  stops:[{color:"white", offset:0 }, 
 			     { color:"red", offset:100 }] } };
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3354,7 +3318,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 				 {color:"red", offset:100}] } 
 			};
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3382,7 +3346,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 				 {color:"red", offset:100}] } 
 			};
 
-$("#DiagramContent").ejDiagram({ nodes:[node] });
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 </script>
 
 {% endhighlight %}
@@ -3430,7 +3394,7 @@ Defines the header of a swimlane/lane
 <div id="diagramcontent"></div>
 <script>
 var swimlane = { type: "swimlane", name: "swimlane", header: { text: "Swimlane", fontSize: 12, bold: true } };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -3453,19 +3417,19 @@ Defines the height of the node
 var nodes;
 // Set the height as 150
 nodes = [{ name: "node1", width: 50, height:150, offsetX:50, offsetY:50 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
 
-### nodes.horizontalAlign `HorizontalAlignment`
+### nodes.horizontalAlign `enum`
 {:#members:nodes-horizontalalign}
 
-Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container
+Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
-* HorizontalAlignment.Left
+* ej.datavisualization.Diagram.HorizontalAlignment.Left
 
 #### Example
 
@@ -3476,9 +3440,9 @@ Sets the horizontal alignment of the node. Applicable, if the parent of the node
 var nodes;
 var node1 = { name: "node1", width: 50, height:50};
 //Align the node at the right most position of the canvas
-var node2 = { name: "node2", width: 50, height:50, horizontalAlign: "right"};
+var node2 = { name: "node2", width: 50, height:50, horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right };
 var group = { name :"group", children:[ node1, node2 ], container: { type: "canvas" }, offsetX:200, offsetY:100, minWidth:200, minHeight: 200, fillColor:"gray" };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -3523,7 +3487,7 @@ Sets the node as a swimlane
 <div id="diagramcontent"></div>
 <script>
 var swimlane = {type: "swimlane",name: "swimlane", isSwimlane:true, header: {text: "Swimlane", fontSize: 12, bold: true} };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -3535,7 +3499,7 @@ A collection of objects where each object represents a label
 
 #### Default Value
 
-* ""
+* []
 
 #### Example
 
@@ -3570,7 +3534,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", bold:true}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3594,7 +3558,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", borderColor:"red", borderWidth: 2}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3618,7 +3582,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", borderColor:"red", borderWidth: 2}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3642,7 +3606,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", fillColor: "green"}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3666,7 +3630,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", fontColor: "green"}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3690,7 +3654,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", fontColor: "green", fontFamily:"seugoe UI"}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3714,7 +3678,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", fontSize: 14}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 
 </script>
 
@@ -3723,11 +3687,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.labels.horizontalAlignment `enum`
 {:#members:nodes-labels-horizontalalignment}
 
-Sets the horizontal alignment of the label. See<a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Sets the horizontal alignment of the label. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
-* HorizontalAlignment.Center
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
 
 #### Example
 
@@ -3738,9 +3702,9 @@ Sets the horizontal alignment of the label. See<a href="global.html#horizontalal
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	     //Align the text at the left most position of node
-         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left"}]
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3764,7 +3728,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", italic:true}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3789,19 +3753,19 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 	     //Leaves 5px space between the left boundary of node and label
          labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
 
-### nodes.labels.mode `String`
+### nodes.labels.mode `enum`
 {:#members:nodes-labels-mode}
 
-Gets whether the label is currently being edited or not. See <a href="global.html#labeleditmode">LabelEditMode</a>
+Gets whether the label is currently being edited or not. See [Label Edit Mode](/js/api/global#labeleditmode)
 
 #### Default Value
 
-* LabelEditMode.Edit
+* ej.datavisualization.Diagram.LabelEditMode.Edit
 
 #### Example
 
@@ -3834,7 +3798,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", name:"label1"}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3846,7 +3810,7 @@ Sets the fraction/ratio(relative to node) that defines the position of the label
 
 #### Default Value
 
-* Point(0.5, 0.5)
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
 
 #### Example
 
@@ -3856,9 +3820,9 @@ Sets the fraction/ratio(relative to node) that defines the position of the label
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
-         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point({x:0, y:0.5}) }]
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 
 </script>
 
@@ -3883,7 +3847,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", readOnly:true}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3907,7 +3871,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", rotateAngle: 90}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3931,7 +3895,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"Label"}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3939,11 +3903,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.labels.textAlign `enum`
 {:#members:nodes-labels-textalign}
 
-Defines how to align the text inside the label. See <a href="global.html#textalign">TextAlign</a>
+Defines how to align the text inside the label. See [Text Align](/js/api/global#textalign)
 
 #### Default Value
 
-* TextAlign.Center
+* ej.datavisualization.Diagram.TextAlign.Center
 
 #### Example
 
@@ -3955,7 +3919,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"node Label", textAlign:ej.datavisualization.Diagram.TextAlign.Left}]
       }];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -3963,11 +3927,11 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.labels.textDecoration `enum`
 {:#members:nodes-labels-textdecoration}
 
-Sets how to decorate the label text. See<a href="global.html#TextDecorations">TextDecorations</a>
+Sets how to decorate the label text. See [Text Decorations](/js/api/global#textdecorations)
 
 #### Default Value
 
-* TextDecorations.None
+* ej.datavisualization.Diagram.TextDecorations.None
 
 #### Example
 
@@ -3980,7 +3944,7 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 	     //Decorate the text with an underline
          labels:[{ text:"Label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -3988,11 +3952,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.labels.verticalAlignment `enum`
 {:#members:nodes-labels-verticalalignment}
 
-Sets the vertical alignment of the label. See<a href="global.html#VerticalAlignment">VerticalAlignment</a>
+Sets the vertical alignment of the label. See [Vertical Alignments](/js/api/global#verticalalignment)
 
 #### Default Value
 
-* VerticalAlignment.Center
+* ej.datavisualization.Diagram.VerticalAlignment.Center
 
 #### Example
 
@@ -4004,9 +3968,9 @@ Sets the vertical alignment of the label. See<a href="global.html#VerticalAlignm
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	     //Aligns the text at the top most position of node
-         labels:[{ text:"label", offset:{ y:0 }, verticalAlignment:"top"}]
+         labels:[{ text:"label", offset:{ y:0 }, verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }]
       }];
-$("#DiagramContent").ejDiagram({ nodes:nodes });
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -4030,7 +3994,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"Label", visible: false}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4054,7 +4018,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"Label", width: 100}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4062,11 +4026,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.labels.wrapping `enum`
 {:#members:nodes-labels-wrapping}
 
-Defines how the label text needs to be wrapped. See <a href="global.html#textwrapping">TextWrapping</a>
+Defines how the label text needs to be wrapped. See [Text Wrapping](/js/api/global#textwrapping)
 
 #### Default Value
 
-* TextWrapping.WrapWithOverflow
+* ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow
 
 #### Example
 
@@ -4078,7 +4042,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"Enter Your Text", wrapping:ej.datavisualization.Diagram.TextWrapping.NoWrap}]
       }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4102,7 +4066,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 //Define the collection of lanes
 				 lanes:[{name:"lane1", width:200 },
 				 {name:"lane2", width:100}] };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4114,7 +4078,7 @@ Allows to maintain additional information about lane
 
 #### Default Value
 
-* null
+* {}
 
 #### Example
 
@@ -4125,7 +4089,7 @@ Allows to maintain additional information about lane
 var addInfo = { Description:"Describe the functionality" };
 var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{ name:"lane1", width:200, addInfo: addInfo }] };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4150,7 +4114,7 @@ lanes:[{name:"lane1", width:200 ,
 	  //Defines the collection of child objects
       children:[{name:"process1", width: 50, height: 50 }]
  }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4172,7 +4136,7 @@ Defines the fill color of the lane
 <script>
 var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 lanes:[{name:"lane1", width:200 ,fillColor:"lightgray" }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4196,7 +4160,7 @@ var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 lanes:[{name:"lane1", width:200, 
 	//Defines the lane header
 	header:{fillColor:"blue", fontColor:"white", text:"Functon 1"} }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4218,7 +4182,7 @@ Defines the object as a lane
 <script>
 var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{name:"lane1", width:200 , isLane:true }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4240,7 +4204,7 @@ Sets the unique identifier of the lane
 <script>
 var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 lanes:[{ name:"function1", width:200 }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4262,7 +4226,7 @@ Sets the orientation of the lane.
 <script>
 var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, orientation:"horizontal",
 lanes:[{ name:"function1", width:200 , orientation:"vertical" }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4286,7 +4250,7 @@ var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{name:"lane1", width:200 , 
       children:[{name:"process1", width: 50, height: 50, marginBottom: 50 }]
  }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4310,7 +4274,7 @@ var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{name:"lane1", width:200 , 
       children:[{name:"process1", width: 50, height: 50, marginLeft: 10 }]
  }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4334,7 +4298,7 @@ var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{name:"lane1", width:200 , 
       children:[{name:"process1", width: 50, height: 50, marginRight: 10 }]
  }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4358,7 +4322,7 @@ var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 lanes:[{name:"lane1", width:200 , 
       children:[{name:"process1", width: 50, height: 50, marginTop: 10 }]
  }]}
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4370,7 +4334,7 @@ Defines the maximum height limit of the node
 
 #### Default Value
 
-* undefined
+* 0
 
 #### Example
 
@@ -4380,7 +4344,7 @@ Defines the maximum height limit of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, maxHeight: 100}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4392,7 +4356,7 @@ Defines the maximum width limit of the node
 
 #### Default Value
 
-* undefined
+* 0
 
 #### Example
 
@@ -4402,7 +4366,7 @@ Defines the maximum width limit of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, maxWidth: 100}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4414,7 +4378,7 @@ Defines the minimum height limit of the node
 
 #### Default Value
 
-* undefined
+* 0
 
 #### Example
 
@@ -4424,7 +4388,7 @@ Defines the minimum height limit of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, minHeight: 10 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4436,7 +4400,7 @@ Defines the minimum width limit of the node
 
 #### Default Value
 
-* undefined
+* 0
 
 #### Example
 
@@ -4446,7 +4410,7 @@ Defines the minimum width limit of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, minWidth: 10 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4468,7 +4432,7 @@ Sets the unique identifier of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4490,7 +4454,7 @@ Defines the position of the node on X-Axis
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4512,7 +4476,7 @@ Defines the position of the node on Y-Axis
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4534,7 +4498,7 @@ Defines the opaque of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, opacity:0.7 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4555,7 +4519,7 @@ Defines the orientation of nodes. Applicable, if the node is a swimlane.
 <div id="diagramcontent"></div>
 <script>
 var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, orientation:"horizontal" };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -4607,7 +4571,7 @@ var group = { name :"group", children:[ node1, node2 ],
               fillColor:"gray", minWidth:200, minHeight:200,
               paddingBottom:10
             };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -4635,7 +4599,7 @@ var group = { name :"group", children:[ node1, node2 ],
               fillColor:"gray", minWidth:200, minHeight:200,
               paddingLeft:10
             };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -4663,7 +4627,7 @@ var group = { name :"group", children:[ node1, node2 ],
               fillColor:"gray", minWidth:200, minHeight:200,
               paddingRight:10
             };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -4691,7 +4655,7 @@ var group = { name :"group", children:[ node1, node2 ],
               fillColor:"gray", minWidth:200, minHeight:200,
               paddingTop:10
             };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -4959,7 +4923,7 @@ var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, paren
 var node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, parent :"group" };
 
 var group = { name :"group", children:["node1", "node2"] };
-$("#DiagramContent").ejDiagram({nodes:[node1, node2, group]});
+$("#diagramcontent").ejDiagram({nodes:[node1, node2, group]});
 </script>
 
 {% endhighlight %}
@@ -4982,7 +4946,7 @@ Sets the path geometry that defines the shape of a path node
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
       type:"basic", shape:"path", pathData: "M370.9702,194.9961L359.5112,159.7291L389.5112,137.9341L419.5112,159.7291L408.0522,194.9961L370.9702,194.9961z" }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5006,7 +4970,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", offset:150, label:{text:"Phase1"}},    
        { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5030,7 +4994,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", offset:150, label:{text:"Phase1"}},    
        { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 </script>
 
@@ -5055,7 +5019,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", offset:150, label:{text:"Phase1"}, lineColor:"green"},    
        { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5079,7 +5043,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", offset:150, label:{text:"Phase1"}, lineDashArray:"2,2"},    
        { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5103,7 +5067,7 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", offset:150, label:{text:"Phase1"}, lineWidth:3 },    
        { name:"phase2", label:{ text:"Phase2"} }]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5126,7 +5090,7 @@ Sets the unique identifier of the phase
 var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
 width: 300, orientation:"horizontal",
 phases:[{ name:"phase1", label:{text:"Phase1"}, lineWidth:3 } ]};
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5138,7 +5102,7 @@ Sets the length of the smaller region(phase) of a swimlane
 
 #### Default Value
 
-* undefined
+* 100
 
 #### Example
 
@@ -5146,7 +5110,7 @@ Sets the length of the smaller region(phase) of a swimlane
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{offset: 100}]}});
+$("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{offset: 200}]}});
 </script>
 
 {% endhighlight %}
@@ -5166,7 +5130,7 @@ Sets the orientation of the phase
 
 <div id="diagramcontent"></div>
 <script>
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.addPhase(diagram.selectionList[0].name, 
 	{ 
 		name: "verticalPhase", 
@@ -5192,7 +5156,7 @@ Sets the type of the object as phase
 
 <div id="diagramcontent"></div>
 <script>
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.addPhase(diagram.selectionList[0].name, 
 	{ 
 		name: "verticalPhase", 
@@ -5220,7 +5184,7 @@ Sets the height of the phase headers
 var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
 width: 300, orientation:"horizontal",phaseSize:50,
 phases:[{ name:"phase1", offset:150, label:{text:"Phase 1"} }] };
-$("#DiagramContent").ejDiagram({nodes:[swimlane]});
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
 {% endhighlight %}
@@ -5232,7 +5196,7 @@ Sets the ratio/ fractional value relative to node, based on which the node will 
 
 #### Default Value
 
-* Points(0.5,0.5)
+* ej.datavisualization.Diagram.Points(0.5,0.5)
 
 #### Example
 
@@ -5243,7 +5207,7 @@ Sets the ratio/ fractional value relative to node, based on which the node will 
 var nodes;
 //The node will be transformed with respect to its top left corner
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, pivot: {x:0, y:0}}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5266,7 +5230,7 @@ Defines a collection of points to draw a polygon. Applicable, if the shape is a 
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 type: "basic",shape:"polygon", points:[{ x: 0, y: 12.5 }, { x: 0, y: 50 }, { x: 50, y: 50 }, { x: 50, y: 0 }, { x: 12.5, y: 0 }, { x: 0, y: 12.5 }]}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5290,7 +5254,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0 }}, 
             {name:"port2", offset:{ x:0.5, y:1 }}]}];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5313,7 +5277,7 @@ Sets the border color of the port
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, borderColor:"yellow" }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5336,7 +5300,7 @@ Sets the stroke width of the port
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, borderColor:"yellow", borderWidth: 3 }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5359,7 +5323,7 @@ Defines the space to be left between the port bounds and its incoming and outgoi
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, connectorPadding:10 }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5367,11 +5331,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.ports.constraints `enum`
 {:#members:nodes-ports-constraints}
 
-Defines whether connections can be created with the port See <a href="global.html#portconstraints">PortConstraints</a>
+Defines whether connections can be created with the port See [Port Constraints](/js/api/global#portconstraints)
 
 #### Default Value
 
-* PortConstraints.Connect
+* ej.datavisualization.Diagram.PortConstraints.Connect
 
 #### Example
 
@@ -5384,7 +5348,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 	  //Disable creating connections with the port
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, constraints: PortConstraints.Default &~ PortConstraints.Connect }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5407,7 +5371,7 @@ Sets the fill color of the port
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, fillColor:"red" }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5430,7 +5394,7 @@ Sets the unique identifier of the port
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{ name:"port1", offset:{ x:0.5, y:0.5 } }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5442,7 +5406,7 @@ Defines the position of the port as fraction/ ratio relative to node
 
 #### Default Value
 
-* Point(0, 0)
+* ej.datavisualization.Diagram.Point(0, 0)
 
 #### Example
 
@@ -5454,7 +5418,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 	  //Add port at the center of the node
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 } }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5479,7 +5443,7 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, 
       //Define the shape of the port
       shape:"path", pathData: "M5,0 L10,10 L0,10 z"}] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5487,11 +5451,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.ports.shape `enum`
 {:#members:nodes-ports-shape}
 
-Defines the shape of the port. See <a href="global.html#portshapes">PortShapes</a>
+Defines the shape of the port. See [Port Shapes](/js/api/global#portshapes)
 
 #### Default Value
 
-* PortShapes.Square
+* ej.datavisualization.Diagram.PortShapes.Square
 
 #### Example
 
@@ -5503,7 +5467,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, 
       shape:ej.datavisualization.Diagram.PortShapes.Circle}] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5526,7 +5490,7 @@ Defines the size of the port
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, size: 10}] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5534,11 +5498,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
-Defines when the port should be visible. See <a href="global.html#portvisibility">PortVisibility</a>
+Defines when the port should be visible. See [Port Visibility](/js/api/global#portvisibility)
 
 #### Default Value
 
-* PortVisibility.Default
+* ej.datavisualization.Diagram.PortVisibility.Default
 
 #### Example
 
@@ -5550,7 +5514,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, 
       visibility:ej.datavisualization.Diagram.PortVisibility.Visible }] }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5572,7 +5536,7 @@ Sets the angle to which the node should be rotated
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, rotateAngle: 45 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5584,7 +5548,7 @@ Defines the opacity and the position of shadow
 
 #### Default Value
 
-* Diagram.Shadow()
+* ej.datavisualization.Diagram.Shadow()
 
 #### Example
 
@@ -5597,7 +5561,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: NodeConstraints.Default | NodeConstraints.Shadow,
       shadow: {opacity: 0.5, distance: 10, angle: 45} }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5622,7 +5586,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: NodeConstraints.Default | NodeConstraints.Shadow,
       shadow: { angle: 135} }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5647,7 +5611,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: NodeConstraints.Default | NodeConstraints.Shadow,
       shadow: { distance: 10 } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5672,7 +5636,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: NodeConstraints.Default | NodeConstraints.Shadow,
       shadow: {opacity: 0.9 } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5680,11 +5644,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
-Sets the shape of the node. It depends upon the type of node. See <a href="global.html#shapes">Shapes</a>
+Sets the shape of the node. It depends upon the type of node.
 
 #### Default Value
 
-* "rectangle"
+* ej.datavisualization.Diagram.BasicShapes.Rectangle
 
 #### Example
 
@@ -5696,7 +5660,7 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	  // Sets the shape as ellipse
       type:"basic", shape:ej.datavisualization.Diagram.BasicShapes.Ellipse }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5719,7 +5683,7 @@ Sets the source path of the image. Applicable, if the type of the node is image.
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 type:"image", source: "Clayton.png" }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5731,7 +5695,7 @@ Defines the sub process of a BPMN Activity. Applicable, if the type of the bpmn 
 
 #### Default Value
 
-* Diagram.BPMNSubProcess()
+* ej.datavisualization.Diagram.BPMNSubProcess()
 
 #### Example
 
@@ -5743,7 +5707,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ loop: ej.datavisualization.Diagram.BPMNLoops.Standard } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5767,7 +5731,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 type:"bpmn", shape:"activity", activity:"subprocess", 
 subProcess:{ adhoc: true } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5775,7 +5739,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.boundary `enum`
 {:#members:nodes-subprocess-boundary}
 
-Sets the boundary of the BPMN process See <a href="global.html#bpmnboundary">BPMNBoundary</a>
+Sets the boundary of the BPMN process See [BPMN Boundary](/js/api/global#bpmnboundary)
 
 #### Default Value
 
@@ -5791,7 +5755,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ boundary: ej.datavisualization.Diagram.BPMNBoundary.Call } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5815,7 +5779,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ compensation: true } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5823,7 +5787,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
-Defines the loop type of a sub process .See <a href="global.html#bpmnloops">BPMNLoops</a>
+Defines the loop type of a sub process .See [BPMN Loops](/js/api/global#bpmnloops)
 
 #### Default Value
 
@@ -5839,7 +5803,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 type:"bpmn", shape:"activity", activity:"subprocess", 
 subProcess:{ loop: ej.datavisualization.Diagram.BPMNLoops.ParallelMultiInstance} }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5847,11 +5811,11 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.task `Object`
 {:#members:nodes-task}
 
-Defines the task of the bpmn activity. Applicable, if the type of activity is set as task
+Defines the task of the bpmn activity. Applicable, if the type of activity is set as task.
 
 #### Default Value
 
-* Diagram.BPMNTask()
+* ej.datavisualization.Diagram.BPMNTask()
 
 #### Example
 
@@ -5863,7 +5827,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ compensation: true } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5887,7 +5851,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ call: true } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5911,7 +5875,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ compensation: true } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5919,7 +5883,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.tasks.loop `enum`
 {:#members:nodes-tasks-loop}
 
-Sets the loop type of a bpmn task .See <a href="global.html#BPMNLoops">BPMNLoops</a>
+Sets the loop type of a bpmn task .See [BPMN Loops](/js/api/global#bpmnloops)
 
 #### Default Value
 
@@ -5935,7 +5899,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ loop: ej.datavisualization.Diagram.BPMNLoops.Standard } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5943,7 +5907,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.tasks.type `enum`
 {:#members:nodes-tasks-type}
 
-Sets the type of the BPMN task. See <a href="global.html#bpmntasks">BPMNTasks</a>
+Sets the type of the BPMN task. See [BPMN Tasks](/js/api/global#bpmntasks)
 
 #### Default Value
 
@@ -5959,7 +5923,7 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ type: ej.datavisualization.Diagram.BPMNTasks.Service } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5995,13 +5959,13 @@ var nodes;
 nodes=[{ name: "Clayton", width: 100, height:50, offsetX:50, offsetY:50, 
 		addInfo:{source:"clayton.png"},
 		type:"native", templateId:"svgTemplate" }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 
 </script>
 
 {% endhighlight %}
 
-### nodes.textBlock `Number`
+### nodes.textBlock `Object`
 {:#members:nodes-textblock}
 
 Defines the textBlock of a text node
@@ -6019,13 +5983,13 @@ Defines the textBlock of a text node
 var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"text", textBlock:{ text: "Text Node", fontColor:"red" } }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 
 </script>
 
 {% endhighlight %}
 
-### nodes.tooltip `String`
+### nodes.tooltip `Object`
 {:#members:nodes-tooltip}
 
 Defines the tooltip that should be shown when the mouse hovers over node.  For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -6055,7 +6019,7 @@ var tooltip = {
 		}
 	};
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
-$("#DiagramContent").ejDiagram({	
+$("#diagramcontent").ejDiagram({	
 //Defines nodes
 	nodes: [{
 		name:"Rectangle", width:50, height: 50, offsetX: 100, offsetY: 100,
@@ -6070,7 +6034,7 @@ $("#DiagramContent").ejDiagram({
 ### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
-Sets the type of BPMN Event Triggers. See <a href="global.html#bpmntriggers">BPMNTriggers</a>
+Sets the type of BPMN Event Triggers. See [BPMN Triggers](/js/api/global#bpmntriggers)
 
 #### Default Value
 
@@ -6092,7 +6056,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.type `enum`
 {:#members:nodes-type}
 
-Defines the type of the node. See <a href="global.html#shapes">Shapes</a>
+Defines the type of the node. See [Shapes](/js/api/global#shapes)
 
 #### Default Value
 
@@ -6107,19 +6071,19 @@ Defines the type of the node. See <a href="global.html#shapes">Shapes</a>
 var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type: ej.datavisualization.Diagram.Shapes.BPMN }];
-$("#DiagramContent").ejDiagram({nodes:nodes})
+$("#diagramcontent").ejDiagram({nodes:nodes})
 </script>
 
 {% endhighlight %}
 
-### nodes.verticalAlign `VerticalAlignment`
+### nodes.verticalAlign `enum`
 {:#members:nodes-verticalalign}
 
-Sets the vertical aligment of a node. Applicable, if the parent of a node is a container.
+Sets the vertical aligment of a node. Applicable, if the parent of a node is a container. See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
-* VerticalAlignment.Top
+* ej.datavisualization.Diagram.VerticalAlignment.Top
 
 #### Example
 
@@ -6129,12 +6093,12 @@ Sets the vertical aligment of a node. Applicable, if the parent of a node is a c
 <script>
 var nodes;
 var node1 = { name: "node1", width: 50, height:50};
-var node2 = { name: "node2", width: 50, height:50, verticalAlign: "bottom"};
+var node2 = { name: "node2", width: 50, height:50, verticalAlign: ej.datavisualization.Diagram.VerticalAlignment.Bottom };
 var group = { name :"group", children:[ node1, node2 ], 
               container: { type: "canvas" }, offsetX:200, offsetY:100, 
               fillColor:"gray", minWidth:200, minHeight:200
             };
-$("#DiagramContent").ejDiagram({nodes:[group]});
+$("#diagramcontent").ejDiagram({nodes:[group]});
 </script>
 
 {% endhighlight %}
@@ -6156,7 +6120,7 @@ Defines the visibility of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, visible:false }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -6178,7 +6142,7 @@ Defines the width of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 100, height:50, offsetX:50, offsetY:50 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -6200,7 +6164,7 @@ Defines the z-index of the node
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, zOrder: 10 }];
-$("#DiagramContent").ejDiagram({nodes:nodes});
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -6218,13 +6182,13 @@ Binds the custom JSON data with node properties
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
    var data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
 		
-   $("#diagram").ejDiagram({
+   $("#diagramcontent").ejDiagram({
 	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
 	   //Sets the method name to node template 
 	   nodeTemplate :"nodeTemplate"
@@ -6256,9 +6220,9 @@ Defines the maximum distance to be left between the object and the scroll bar to
 #### Example
 
 {% highlight html %}
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ autoScrollBorder: { left: 50, top: 50, right: 50, bottom: 50 } }
 });
 </script>
@@ -6277,9 +6241,9 @@ Sets whether multiple pages can be created to fit all nodes and connectors
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{multiplePage:false}
 });
 </script>
@@ -6298,9 +6262,9 @@ Defines the background color of diagram pages
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageBackgroundColor:"lightgray"}
 });
 </script>
@@ -6319,9 +6283,9 @@ Defines the page border color
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
@@ -6340,9 +6304,9 @@ Sets the border width of diagram pages
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
@@ -6361,9 +6325,9 @@ Defines the height of a page
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
@@ -6382,30 +6346,30 @@ Defines the page margin
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageMargin : 20 }
 });
 </script>
 {% endhighlight %}
 
-### pageSettings.pageOrientation `String`
+### pageSettings.pageOrientation `enum`
 {:#members:pagesettings-pageorientation}
 
-Sets the orientation of the page. See<a href="global.html#pageorientations">PageOrientation</a>
+Sets the orientation of the page. See [Page Orientations](/js/api/global#pageorientations)
 
 #### Default Value
 
-* PageOrientations.Portrait
+* ej.datavisualization.Diagram.PageOrientations.Portrait
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 800, pageHeight: 500, 
 	pageOrientation:ej.datavisualization.Diagram.PageOrientations.Landscape }
 });
@@ -6425,9 +6389,9 @@ Defines the height of a diagram page
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
@@ -6446,31 +6410,31 @@ Defines the scrollable area of diagram. Applicable, if the scroll limit is "limi
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ scrollLimit: "limited",
     scrollableArea: {x:0, y:0, width:1000, height:1000} }
 });
 </script>
 {% endhighlight %}
 
-### pageSettings.scrollLimit `String`
+### pageSettings.scrollLimit `enum`
 {:#members:pagesettings-scrolllimit}
 
-Defines the scrollable region of diagram. See<a href="global.html#scrolllimit">ScrollLimit</a>
+Defines the scrollable region of diagram. See [Scroll Limit](/js/api/global#scrolllimit)
 
 #### Default Value
 
-* ScrollLimit.Infinity
+* ej.datavisualization.Diagram.ScrollLimit.Infinity
 
 #### Example
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ scrollLimit: ej.datavisualization.Diagram.ScrollLimit.Diagram }
 });
 </script>
@@ -6489,9 +6453,9 @@ Enables or disables the page breaks
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
     pageSettings:{ showPageBreak: true }
 });
 </script>
@@ -6517,7 +6481,7 @@ Allows to read the zoom value of diagram
 
 <div id="diagramcontent"></div>
 <script>	
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 console.log(diagram.model.scrollSettings.currentZoom);
 </script>
 
@@ -6538,7 +6502,7 @@ Sets the horizontal scroll offset
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	scrollSettings:{ horizontalOffset: 50 }
 })
 </script>
@@ -6552,7 +6516,7 @@ Allows to extend the scrollable region that is based on the scroll limit
 
 #### Default Value
 
-* null
+* {left: 0, right: 0, top:0, bottom: 0}
 
 #### Example
 
@@ -6560,7 +6524,7 @@ Allows to extend the scrollable region that is based on the scroll limit
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Sets the region to be extended
     scrollSettings: { padding: { left: 25, right: 25, top: 25, bottom: 25} }
 });
@@ -6583,7 +6547,7 @@ Sets the vertical scroll offset
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	scrollSettings:{ verticalOffset: 50 }
 })
 </script>
@@ -6606,7 +6570,7 @@ Allows to read the view port width of the diagram
 <div id="diagramcontent"></div>
 <script>
 	
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 console.log(diagram.model.scrollSettings.viewPortWidth);
 
 </script>
@@ -6629,7 +6593,7 @@ Allows to read the view port height of the diagram
 <div id="diagramcontent"></div>
 <script>
 	
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 console.log(diagram.model.scrollSettings.viewPortHeight);
 
 </script>
@@ -6656,7 +6620,7 @@ A read only collection of the selected items
 
 <div id="diagramcontent"></div>
 <script>
-var diagram = $("#DiagramContent").ejDiagram("instance");
+var diagram = $("#diagramcontent").ejDiagram("instance");
 //Read the selected items 
 for(var i =0; i< diagram.model.selectedItems.children; i++){
     //Do your actions here
@@ -6668,11 +6632,11 @@ for(var i =0; i< diagram.model.selectedItems.children; i++){
 ### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
-Controls the visibility of selector. See <a href="global.html#selectorconstraints">SelectorConstraints</a>
+Controls the visibility of selector. See [Selector Constraints](/js/api/global#selectorconstraints)
 
 #### Default Value
 
-* SelectorConstraints.All
+* ej.datavisualization.Diagram.SelectorConstraints.All
 
 #### Example
 
@@ -6680,7 +6644,7 @@ Controls the visibility of selector. See <a href="global.html#selectorconstraint
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { constraints: ej.datavisualization.Diagram.SelectorConstraints.UserHandles } 
 });
 </script>
@@ -6701,7 +6665,7 @@ Defines a method that dynamically enables/ disables the interaction with multipl
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 selectedItems: { 
 	getConstraints: function() {
 		//Allows to drag the multiple selected elements even when the selected elements are not movable 
@@ -6727,7 +6691,7 @@ Sets the height of the selected items
 <div id="diagramcontent"></div>
 <script>
 //Sets the height of the selector as 100
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { height:100, width: 100 }
 });
 </script>
@@ -6747,7 +6711,7 @@ Sets the x position of the selector
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });;
 </script>
@@ -6767,7 +6731,7 @@ Sets the y position of the selector
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });
 </script>
@@ -6787,13 +6751,13 @@ Sets the angle to rotate the selected items
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { rotateAngle: 90 }
 });
 </script>
 {% endhighlight %}
 
-### selectedItems.tooltip `Number`
+### selectedItems.tooltip `Object`
 {:#members:selecteditems-tooltip}
 
 Sets the angle to rotate the selected items. For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -6807,7 +6771,7 @@ Sets the angle to rotate the selected items. For tooltip properties, refer [Tool
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { tooltip : { alignment:{ vertical:"top" } } }
 });
 </script>
@@ -6831,7 +6795,7 @@ A collection of frequently using commands that have to be added around the selec
 var userHandle= [];
 var cloneHandle = ej.datavisualization.Diagram.UserHandle();
 userHandle.push(cloneHandle);
-$("#DiagramContent").ejDiagram({selectedItems:{userHandles:userHandle}});
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 </script>
 
 {% endhighlight %}
@@ -6852,7 +6816,7 @@ Sets the width of the selected items
 <script>
 	
 //Sets the width of the selector as 100
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
      selectedItems: { height:100, width: 100 }
 });
 </script>
@@ -6897,7 +6861,7 @@ Enables or disables snapping nodes/connectors to objects
 
 {% highlight html %}
 
-$("#DiagramContent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
+$("#diagramcontent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
 
 {% endhighlight %}
 
@@ -6922,7 +6886,7 @@ Defines the line color of horizontal grid lines
 <div id="diagramcontent"></div>
 <script>
 var gridline = { lineColor :"blue" };
-$("#DiagramContent").ejDiagram({ snapSettings: { horizontalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({ snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -6940,10 +6904,10 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var gridline = { lineColor :"blue", lineDashArray:"2,2" };
-$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -6961,10 +6925,10 @@ A pattern of lines and gaps that defines a set of horizontal gridlines
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var gridline = { linesInterval: [1, 14, 0.5, 14.5 ] };
-$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 }});
 </script>
 
@@ -6983,11 +6947,11 @@ Specifies a set of intervals to snap the objects
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //Snap objects to every 5th pixel
 var gridline = { snapInterval : [5] };
-$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -7005,7 +6969,7 @@ Defines the angle by which the object needs to be snapped
 
 {% highlight html %}
 
-$("#DiagramContent").ejDiagram({snapSettings: { snapAngle: 10} });
+$("#diagramcontent").ejDiagram({snapSettings: { snapAngle: 10} });
 
 {% endhighlight %}
 
@@ -7024,7 +6988,7 @@ Defines the minimum distance between the selected object and the nearest object
 
 var snap = {"snapObjectDistance":5};
 //snapObjectDistance
-$("#diagramContent").ejDiagram({snapSettings: snap});
+$("#diagramcontent").ejDiagram({snapSettings: snap});
 
 {% endhighlight %}
 
@@ -7049,7 +7013,7 @@ Defines the line color of horizontal grid lines
 <div id="diagramcontent"></div>
 <script>
 var gridline = { lineColor :"blue" };
-$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -7067,10 +7031,10 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var gridline = { lineColor :"blue", lineDashArray:"2,2" };
-$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -7088,10 +7052,10 @@ A pattern of lines and gaps that defines a set of horizontal gridlines
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 var gridline = { linesInterval: [1, 14, 0.5, 14.5 ] };
-$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -7109,11 +7073,11 @@ Specifies a set of intervals to snap the objects
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
 //Snap objects to every 5th pixel
 var gridline = { snapInterval : [5] };
-$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
+$("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -7121,11 +7085,11 @@ $("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 ### tool `enum`
 {:#members:tool}
 
-Enables/Disables the interactive behaviors of diagram. See<a href="global.html#tool">Tool</a>
+Enables/Disables the interactive behaviors of diagram. See [Tools](/js/api/global#tool)
 
 #### Default Value
 
-* Tool.All
+* ej.datavisualization.Diagram.Tool.All
 
 #### Example
 
@@ -7134,7 +7098,7 @@ Enables/Disables the interactive behaviors of diagram. See<a href="global.html#t
 <div id="diagramcontent"></div>
 <script>
 //Prevents editing and allows only to zoom/pan
-$("#DiagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan});
+$("#diagramcontent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan});
 </script>
 
 {% endhighlight %}
@@ -7160,7 +7124,7 @@ An object that defines the description, appearance and alignments of tooltips
 </script>
 
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Defines mouse over tooltip
 	tooltip: {
 		templateId: "mouseovertooltip",
@@ -7184,14 +7148,14 @@ $("#DiagramContent").ejDiagram({
 
 Aligns the tooltip around nodes/connectors
 
-### tooltip.alignment.horizontal `String`
+### tooltip.alignment.horizontal `enum`
 {:#members:tooltip-alignment-horizontal}
 
-Defines the horizontal alignment of tooltip. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+Defines the horizontal alignment of tooltip. See [Horizontal Alignment](/js/api/global#horizontalalignment)
 
 #### Default Value
 
-* HorizontalAlignment.Center
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
 
 #### Example
 
@@ -7199,7 +7163,7 @@ Defines the horizontal alignment of tooltip. See <a href="global.html#horizontal
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	tooltip: {
 		alignment: {
 			horizontal: ej.datavisualization.Diagram.HorizontalAlignment.Center
@@ -7210,14 +7174,14 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-### tooltip.alignment.vertical `String`
+### tooltip.alignment.vertical `enum`
 {:#members:tooltip-alignment-vertical}
 
-Defines the vertical alignment of tooltip. See <a href="global.html#verticalalignment">VerticalAlignment</a>
+Defines the vertical alignment of tooltip. See [Vertical Alignment](/js/api/global#verticalalignment)
 
 #### Default Value
 
-* VerticalAlignment.Bottom
+* ej.datavisualization.Diagram.VerticalAlignment.Bottom
 
 #### Example
 
@@ -7225,7 +7189,7 @@ Defines the vertical alignment of tooltip. See <a href="global.html#verticalalig
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	tooltip: {
 		alignment: {
 			vertical: ej.datavisualization.Diagram.VerticalAlignment.Bottom
@@ -7251,7 +7215,7 @@ Sets the margin of the tooltip
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	tooltip: {
 		margin : { top:10 }
 	}
@@ -7260,14 +7224,14 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-### tooltip.relativeMode `String`
+### tooltip.relativeMode `enum`
 {:#members:tooltip-relativemode}
 
-Defines whether the tooltip should be shown at the mouse position or around node. See <a href="global.html#relativemode">RelativeMode</a>
+Defines whether the tooltip should be shown at the mouse position or around node. See [Relative Mode](/js/api/global#relativemode">RelativeMode </a>
 
 #### Default Value
 
-* RelativeMode.Object
+* ej.datavisualization.Diagram.RelativeMode.Object
 
 #### Example
 
@@ -7275,7 +7239,7 @@ Defines whether the tooltip should be shown at the mouse position or around node
 
 <div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	tooltip: {
 		//Shows tooltip at the mouse position
 		relativeMode: ej.datavisualization.Diagram.RelativeMode.Mouse
@@ -7305,7 +7269,7 @@ Sets the svg/html template to be bound with tooltip
 </script>
 
 <script>	
-$("#DiagramContent").ejDiagram({
+$("#diagramcontent").ejDiagram({
 	//Defines mouse over tooltip
 	tooltip: {
 		templateId: "mouseovertooltip"
@@ -7327,9 +7291,9 @@ Specifies the width of the diagram
 
 {% highlight html %}
 
-<div id="diagram"></div>
+<div id="diagramcontent"></div>
 <script>
-$("#DiagramContent").ejDiagram({ width:"1000" });
+$("#diagramcontent").ejDiagram({ width:"1000" });
 </script>
 
 {% endhighlight %}
@@ -7349,7 +7313,7 @@ Sets the factor by which we can zoom in or zoom out
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({zoomFactor: 1});
+$("#diagramcontent").ejDiagram({zoomFactor: 1});
 </script>
 
 {% endhighlight %}
@@ -7364,14 +7328,14 @@ Add nodes and connectors to diagram at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">a JSON to define a node/connector or an array of nodes and connector</td>
 		</tr>
@@ -7407,14 +7371,14 @@ Add a label to a node at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName</td>
+			<td class="name">nodeName </td>
 			<td class="type">string</td>
 			<td class="description">name of the node to which label will be added</td>
 		</tr>
@@ -7447,14 +7411,14 @@ Add a phase to a swimlane at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the swimlane to which the phase will be added</td>
 		</tr>
@@ -7486,21 +7450,21 @@ Add a collection of ports to the node specified by name
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the node to which the ports have to be added</td>
 		</tr>
 		<tr>
 			<td class="name">ports</td>
 			<td class="type">Array</td>
-			<td class="description">a collection of ports to be added to the specified node</td>
+			<td class="description">a collection of ports to be added to the specified node </td>
 		</tr>
 	</tbody>
 </table>
@@ -7526,14 +7490,14 @@ Add the specified node to selection list
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">the node to be selected</td>
 		</tr>
@@ -7566,8 +7530,8 @@ Align the selected objects based on the reference object and direction
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7600,8 +7564,8 @@ Bring the specified portion of the diagram content to the diagram viewport
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7634,8 +7598,8 @@ Bring the specified portion of the diagram content to the center of the diagram 
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7754,8 +7718,8 @@ Export the diagram as downloadable files or as data
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7766,24 +7730,24 @@ Export the diagram as downloadable files or as data
 			<td class="description">options to export the desired region of diagram to the desired formats</td>
 		</tr>
 		<tr>
-			<td class="name">options.fileName</td>
+			<td class="name">options.fileName </td>
 			<td class="type">String</td>
 			<td class="description">name of the file to be downloaded</td>
 		</tr>
 		<tr>
 			<td class="name">options.format</td>
 			<td class="type">String</td>
-			<td class="description">format of the exported file/data See <a href="global.html#fileformats">FileFormats</a></td>
+			<td class="description">format of the exported file/data See [File Formats](/js/api/global#fileformats)</td>
 		</tr>
 		<tr>
-			<td class="name">options.mode</td>
+			<td class="name">options.mode </td>
 			<td class="type">String</td>
-			<td class="description">to set whether to export diagram as a file or as raw data See <a href="global.html#exportmodes">ExportModes</a></td>
+			<td class="description">to set whether to export diagram as a file or as raw data See [Export Modes](/js/api/global#exportmodes)</td>
 		</tr>
 		<tr>
 			<td class="name">options.region</td>
 			<td class="type">String</td>
-			<td class="description">to set the region of the diagram to be exported See <a href="global.html#region">Region</a></td>
+			<td class="description">to set the region of the diagram to be exported See [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">options.bounds</td>
@@ -7829,14 +7793,14 @@ Read a node/connector object by its name
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the node/connector that is to be identified</td>
 		</tr>
@@ -7863,21 +7827,21 @@ Fit the diagram content into diagram viewport
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">mode</td>
+			<td class="name">mode </td>
 			<td class="type">String [optional]</td>
-			<td class="description">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode</a></td>
+			<td class="description">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
 		</tr>
 		<tr>
 			<td class="name">region</td>
 			<td class="type">String [optional]</td>
-			<td class="description">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
+			<td class="description">to set whether the region to be fit will be based on diagram elements or page settings [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">margin</td>
@@ -7924,14 +7888,14 @@ Insert a label into a node's label collection at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the node to which the label has to be inserted</td>
 		</tr>
@@ -7943,7 +7907,7 @@ Insert a label into a node's label collection at runtime
 		<tr>
 			<td class="name">index</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">index to insert the label into the node</td>
+			<td class="description">index to insert the label into the node </td>
 		</tr>
 	</tbody>
 </table>
@@ -7986,8 +7950,8 @@ Load the diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8037,8 +8001,8 @@ Move the selected objects by either one pixel or by the pixels specified through
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8076,8 +8040,8 @@ Paste the selected object from internal clipboard to diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8088,7 +8052,7 @@ Paste the selected object from internal clipboard to diagram
 			<td class="description">object to be added to diagram</td>
 		</tr>
 		<tr>
-			<td class="name">rename</td>
+			<td class="name">rename </td>
 			<td class="type">Boolean [optional]</td>
 			<td class="description">to define whether the specified object is to be renamed or not</td>
 		</tr>
@@ -8169,14 +8133,14 @@ Remove either the given node/connector or the selected element from diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object [optional]</td>
 			<td class="description">the node/connector to be removed from diagram</td>
 		</tr>
@@ -8203,14 +8167,14 @@ Remove a particular object from selection list
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">the node/connector to be removed from selection list</td>
 		</tr>
@@ -8306,14 +8270,14 @@ Bring the node into view
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">the node/connector to be brought into view</td>
 		</tr>
@@ -8426,14 +8390,14 @@ Move the specified label to edit mode
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">node/connector that contains the label to be edited</td>
 		</tr>
@@ -8500,8 +8464,8 @@ Update diagram at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8535,14 +8499,14 @@ Update Connectors at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the connector to be updated</td>
 		</tr>
@@ -8574,14 +8538,14 @@ Update the given label at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName</td>
+			<td class="name">nodeName </td>
 			<td class="type">String</td>
 			<td class="description">the name of node/connector which contains the label to be updated</td>
 		</tr>
@@ -8621,14 +8585,14 @@ Update nodes at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the node that is to be updated</td>
 		</tr>
@@ -8660,14 +8624,14 @@ Update a port with its modified properties at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName</td>
+			<td class="name">nodeName </td>
 			<td class="type">String</td>
 			<td class="description">the name of node which contains the port to be updated</td>
 		</tr>
@@ -8706,14 +8670,14 @@ Update the specified node as selected object
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name</td>
+			<td class="name">name </td>
 			<td class="type">String</td>
 			<td class="description">name of the node to be updated as selected object</td>
 		</tr>
@@ -8740,8 +8704,8 @@ Update the selection at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8774,14 +8738,14 @@ Update userhandles with respect to the given node
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
+			<td class="name">node </td>
 			<td class="type">Object</td>
 			<td class="description">node/connector with respect to which, the user handles have to be updated</td>
 		</tr>
@@ -8826,8 +8790,8 @@ Upgrade the diagram from old version
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8861,8 +8825,8 @@ Used to zoomIn/zoomOut diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8900,8 +8864,8 @@ Triggers When auto scroll is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8933,8 +8897,8 @@ Triggers when a node, connector or diagram is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8943,6 +8907,21 @@ Triggers when a node, connector or diagram is clicked
 			<td class="name">element</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the clicked node, connector or diagram</td>
+		</tr>
+		<tr>
+			<td class="name">actualObject</td>
+			<td class="type">Number</td>
+			<td class="description">parameter returns the object that is actually clicked</td>
+		</tr>
+		<tr>
+			<td class="name">offsetX</td>
+			<td class="type">Number</td>
+			<td class="description">parameter returns the horizontal coordinate of the mouse pointer, relative to the diagram</td>
+		</tr>
+		<tr>
+			<td class="name">offsetY</td>
+			<td class="type">Number</td>
+			<td class="description">parameter returns  the vertical coordinate of the mouse pointer, relative to the diagram</td>
 		</tr>
 		<tr>
 			<td class="name">count</td>
@@ -8976,8 +8955,8 @@ Triggers when the connection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9024,14 +9003,14 @@ Triggers when the connector collection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">changeType</td>
+			<td class="name">changeType </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns whether the connector is inserted or removed</td>
 		</tr>
@@ -9067,8 +9046,8 @@ Triggers when the connectors' source point is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9077,6 +9056,11 @@ Triggers when the connectors' source point is changed
 			<td class="name">element</td>
 			<td class="type">Object</td>
 			<td class="description">returns the connector, the source point of which is being dragged</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">Object</td>
+			<td class="description">returns the source node of the element</td>
 		</tr>
 		<tr>
 			<td class="name">point</td>
@@ -9089,7 +9073,7 @@ Triggers when the connectors' source point is changed
 			<td class="description">returns the source port of the element</td>
 		</tr>
 		<tr>
-			<td class="name">dragState</td>
+			<td class="name">dragState </td>
 			<td class="type">String</td>
 			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
@@ -9120,8 +9104,8 @@ Triggers when the connectors' target point is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9130,6 +9114,11 @@ Triggers when the connectors' target point is changed
 			<td class="name">element</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the connector, the target point of which is being dragged</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">Object</td>
+			<td class="description">returns the target node of the element</td>
 		</tr>
 		<tr>
 			<td class="name">point</td>
@@ -9142,7 +9131,7 @@ Triggers when the connectors' target point is changed
 			<td class="description">returns the target port of the element</td>
 		</tr>
 		<tr>
-			<td class="name">dragState</td>
+			<td class="name">dragState </td>
 			<td class="type">String</td>
 			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
@@ -9173,8 +9162,8 @@ Triggers before opening the context menu
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9188,6 +9177,11 @@ Triggers before opening the context menu
 			<td class="name">contextmenu</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the actual arguments from context menu</td>
+		</tr>
+		<tr>
+			<td class="name">target</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the object that was clicked</td>
 		</tr>
 	</tbody>
 </table>
@@ -9211,8 +9205,8 @@ Triggers when a context menu item is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9243,7 +9237,7 @@ Triggers when a context menu item is clicked
 			<td class="description">parameter returns the object that was clicked</td>
 		</tr>
 		<tr>
-			<td class="name">canExecute</td>
+			<td class="name">canExecute </td>
 			<td class="type">Boolean</td>
 			<td class="description">parameter defines whether to execute the click event or not</td>
 		</tr>
@@ -9269,8 +9263,8 @@ Triggers when a node, connector or diagram model is clicked twice
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9307,8 +9301,8 @@ Triggers while dragging the elements in diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9319,17 +9313,17 @@ Triggers while dragging the elements in diagram
 			<td class="description">parameter returns the node or connector that is being dragged</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue</td>
+			<td class="name">oldValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the previous position of the node/connector</td>
 		</tr>
 		<tr>
-			<td class="name">newValue</td>
+			<td class="name">newValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new position of the node/connector</td>
 		</tr>
 		<tr>
-			<td class="name">dragState</td>
+			<td class="name">dragState </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the state of drag event (Starting, dragging, completed)</td>
 		</tr>
@@ -9360,8 +9354,8 @@ Triggers when a symbol is dragged into diagram from symbol palette
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9398,8 +9392,8 @@ Triggers when a symbol is dragged over diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9419,6 +9413,21 @@ Triggers when a symbol is dragged over diagram
 			<td class="type">Object</td>
 			<td class="description">parameter returns the node/connector over which the symbol is dragged</td>
 		</tr>
+		<tr>
+			<td class="name">oldValue</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the previous position of the node/connector</td>
+		</tr>
+		<tr>
+			<td class="name">newValue</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the new position of the node/connector</td>
+		</tr>
+		<tr>
+			<td class="name">cancel</td>
+			<td class="type">Boolean</td>
+			<td class="description">parameter returns whether or not to cancel the dragOver event</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9433,6 +9442,39 @@ dragOver:function (args) {}
 
 {% endhighlight %}
 
+### dragLeave
+{:#events:dragleave}
+
+Triggers when a symbol is dragged outside of the diagram.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>
+			<th>Type </th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// drag leave event for diagram
+$("#diagramcontent").ejDiagram({
+dragLeave:function (args) {}
+});
+
+{% endhighlight %}
+
 ### drop
 {:#events:drop}
 
@@ -9441,8 +9483,8 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9458,7 +9500,7 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 			<td class="description">parameter returns whether or not to cancel the drop event</td>
 		</tr>
 		<tr>
-			<td class="name">source</td>
+			<td class="name">source </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the element is dragged</td>
 		</tr>
@@ -9466,6 +9508,11 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 			<td class="name">target</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object over which the objecct will be dropped</td>
+		</tr>
+		<tr>
+			<td class="name">sourceType</td>
+			<td class="type">Enum</td>
+			<td class="description">parameter returns the enum which defines the type of the source</td>
 		</tr>
 	</tbody>
 </table>
@@ -9489,8 +9536,8 @@ Triggers when a child is added to or removed from a group
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9511,7 +9558,7 @@ Triggers when a child is added to or removed from a group
 			<td class="description">parameter returns the new parent group(if any) of the object</td>
 		</tr>
 		<tr>
-			<td class="name">cause</td>
+			<td class="name">cause </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the cause of group change("group", unGroup")</td>
 		</tr>
@@ -9537,8 +9584,8 @@ Triggers when a diagram element is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9552,6 +9599,16 @@ Triggers when a diagram element is clicked
 			<td class="name">selectedObject</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object that is selected</td>
+		</tr>
+		<tr>
+			<td class="name">cancel</td>
+			<td class="type">Boolean</td>
+			<td class="description">parameter returns whether or not to cancel the drop event</td>
+		</tr>
+		<tr>
+			<td class="name">event</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the actual click event arguments that explains which button is clicked</td>
 		</tr>
 	</tbody>
 </table>
@@ -9575,8 +9632,8 @@ Triggers when mouse enters a node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9587,7 +9644,7 @@ Triggers when mouse enters a node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source</td>
+			<td class="name">source </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the selected object is dragged</td>
 		</tr>
@@ -9618,8 +9675,8 @@ Triggers when mouse leaves node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9630,7 +9687,7 @@ Triggers when mouse leaves node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source</td>
+			<td class="name">source </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the selected object is dragged</td>
 		</tr>
@@ -9661,8 +9718,8 @@ Triggers when mouse hovers over a node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9673,7 +9730,7 @@ Triggers when mouse hovers over a node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source</td>
+			<td class="name">source </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the element is dragged</td>
 		</tr>
@@ -9704,14 +9761,14 @@ Triggers when node collection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">changeType</td>
+			<td class="name">changeType </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns whether the node is to be added or removed</td>
 		</tr>
@@ -9739,16 +9796,16 @@ nodeCollectionChange:function (args) {}
 
 {% endhighlight %}
 
-### nodeSizeChange
-{:#events:nodesizechange}
+### sizeChange
+{:#events:sizechange}
 
 Triggers when a node is resized
 
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9761,22 +9818,27 @@ Triggers when a node is resized
 		<tr>
 			<td class="name">cancel</td>
 			<td class="type">Boolean</td>
-			<td class="description">parameter to cancel the size change</td>
+			<td class="description">parameter to cancel the size change </td>
 		</tr>
 		<tr>
-			<td class="name">newValue</td>
+			<td class="name">newValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue</td>
+			<td class="name">oldValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
 		</tr>
 		<tr>
-			<td class="name">resizeState</td>
+			<td class="name">resizeState </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the state of resizing(starting,resizing,completed)</td>
+		</tr>
+		<tr>
+			<td class="name">offset</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the difference between new and old value</td>
 		</tr>
 	</tbody>
 </table>
@@ -9800,8 +9862,8 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9812,17 +9874,22 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 			<td class="description">parameter returns the selected element</td>
 		</tr>
 		<tr>
-			<td class="name">newValue</td>
+			<td class="name">cause</td>
+			<td class="type">Enum</td>
+			<td class="description">parameter returns the action is nudge or not</td>
+		</tr>
+		<tr>
+			<td class="name">newValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new value of the node property that is being changed</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue</td>
+			<td class="name">oldValue </td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the old value of the property that is being changed</td>
 		</tr>
 		<tr>
-			<td class="name">propertyName</td>
+			<td class="name">propertyName </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the name of the property that is changed</td>
 		</tr>
@@ -9848,8 +9915,8 @@ Triggers when the diagram elements are rotated
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9860,14 +9927,14 @@ Triggers when the diagram elements are rotated
 			<td class="description">parameter returns the node that is rotated</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue</td>
+			<td class="name">oldValue </td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the previous rotation angle</td>
+			<td class="description">parameter returns the previous rotation angle </td>
 		</tr>
 		<tr>
-			<td class="name">newValue</td>
+			<td class="name">newValue </td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the new rotation angle</td>
+			<td class="description">parameter returns the new rotation angle </td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -9896,8 +9963,8 @@ Triggers when the diagram is zoomed or panned
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9934,8 +10001,8 @@ Triggers when a connector segment is edited
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9946,7 +10013,7 @@ Triggers when a connector segment is edited
 			<td class="description">Parameter returns the connector that is being edited</td>
 		</tr>
 		<tr>
-			<td class="name">dragState</td>
+			<td class="name">dragState </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the state of editing (starting, dragging, completed)</td>
 		</tr>
@@ -9954,6 +10021,11 @@ Triggers when a connector segment is edited
 			<td class="name">point</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the current mouse position</td>
+		</tr>
+		<tr>
+			<td class="name">cancel</td>
+			<td class="type">Boolean</td>
+			<td class="description">parameter to specify whether or not to cancel the event</td>
 		</tr>
 	</tbody>
 </table>
@@ -9977,12 +10049,22 @@ Triggers when the selection is changed in diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
+		<tr>
+			<td class="name">changeType </td>
+			<td class="type">String</td>
+			<td class="description">parameter returns whether the item is selected or removed selection</td>
+		</tr>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the item which is selected or to be selected</td>
+		</tr>
 		<tr>
 			<td class="name">oldItems</td>
 			<td class="type">Array</td>
@@ -9996,7 +10078,7 @@ Triggers when the selection is changed in diagram
 		<tr>
 			<td class="name">selectedItems</td>
 			<td class="type">Array</td>
-			<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
+			<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change </td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -10025,8 +10107,8 @@ Triggers when label editing is ended
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Type</th>
+			<th>Name </th>
+			<th>Type </th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -10037,9 +10119,14 @@ Triggers when label editing is ended
 			<td class="description">parameter returns the node that contains the text being edited</td>
 		</tr>
 		<tr>
-			<td class="name">value</td>
+			<td class="name">value </td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the new text</td>
+		</tr>
+		<tr>
+			<td class="name">keyCode</td>
+			<td class="type">String</td>
+			<td class="description">parameter returns the keycode of the key entered</td>
 		</tr>
 	</tbody>
 </table>
