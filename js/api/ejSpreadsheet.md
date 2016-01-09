@@ -1,0 +1,9262 @@
+---
+layout: post
+title: ejSpreadsheet
+description: Methods,members and events avaliable in ejSpreadsheet
+documentation: API
+platform: js
+keywords: ejSpreadsheet, API, Essential JS Spreadsheet
+---
+
+#ejSpreadsheet
+
+The Spreadsheet can be easily configured to the DOM element, such as div. you can create a Spreadsheet with a highly customizable look and feel.
+
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejSpreadsheet(options)
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+{% highlight html %} 
+options
+{% endhighlight %}
+</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Settings for Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Create Spreadsheet
+$('#Spreadsheet').ejSpreadsheet();
+</script>
+
+{% endhighlight %}
+
+#### Requires
+
+* jQuery.js
+* jsrender.js
+* jQuery.easing.min.js
+* jQuery.validate.js
+* ej.globalize.js
+* ej.core.js
+* ej.data.js
+* ej.scroller.js
+* ej.ribbon.js
+* ej.chart.js
+* ej.listbox.js
+* ej.menu.js
+* ej.colorpicker.js
+* ej.slider.js
+* ej.excelfilter.js
+* ej.treeview.js
+* ej.button.js
+* ej.checkbox.js
+* ej.draggable.js
+* ej.waitingpopup.js
+* ej.radiobutton.js
+* ej.autocomplete.js
+* ej.dropdownlist.js
+* ej.datepicker.js
+* ej.dialog.js
+* ej.editor.js
+* ej.pager.js
+* ej.ribbon.js
+* ej.uploadbox.js
+* ej.togglebutton.js
+* ej.calculate.js
+* ej.excelfilter.js
+* ej.tab.js
+* ej.toolbar.js
+
+## Members
+
+### activeSheetIndex `Number`
+{:#members:activesheetindex}
+
+
+Gets or sets an active sheet index in the Spreadsheet. By defining this value, you can specify which sheet should be active in workbook.
+
+#### Default Value
+* 1
+
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheetCount: 5,
+activeSheetIndex: 3
+});         
+</script>
+
+{% endhighlight %}
+
+### allowAutoCellType `Boolean`
+{:#members:allowautocelltype}
+
+Gets or sets a value that indicates whether to enable or disable auto rendering of cell type in the Spreadsheet. 
+
+#### Default Value
+* false
+
+
+Note: allowCellType must be true while using the allowAutoCellType.
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({   
+allowCellType: true,
+allowAutoCellType:true
+});        
+</script>
+
+{% endhighlight %}
+
+### allowAutoFill `Boolean`
+{:#members:allowautofill}
+
+Gets or sets a value that indicates whether to enable or disable autofill feature in the Spreadsheet. 
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({   
+allowAutoFill: true
+});        
+</script>
+
+
+{% endhighlight %}
+
+### allowAutoSum `Boolean`
+{:#members:allowautosum}
+
+Gets or sets a value that indicates whether to enable or disable autosum feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowAutoSum: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowCellFormatting `Boolean`
+{:#members:allowcellformatting}
+
+Gets or sets a value that indicates whether to enable or disable cell format feature in the Spreadsheet. By enabling this, you can customize styles and number formats.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCellFormatting : true
+});                     
+</script>
+
+{% endhighlight %}
+
+### allowCellType `Boolean`
+{:#members:allowcelltype}
+
+Gets or sets a value that indicates whether to enable or disable cell type feature in the Spreadsheet.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCellType : true
+});                     
+</script>
+
+{% endhighlight %}
+
+### allowCharts `Boolean`
+{:#members:allowcharts}
+
+Gets or sets a value that indicates whether to enable or disable chart feature in the Spreadsheet. By enabling this feature, you can create and customize charts in Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCharts: true
+}); 
+</script>
+
+
+{% endhighlight %}
+
+### allowClipboard `Boolean`
+{:#members:allowclipboard}
+
+Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet .By enabling this feature, you can perform cut/copy and paste operations in Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowClipboard : true                    
+});
+</script>
+
+
+{% endhighlight %}
+
+### allowComments `Boolean`
+{:#members:allowcomments}
+
+Gets or sets a value that indicates whether to enable or disable comment feature in the Spreadsheet. By enabling this, you can add/delete/modify comments in Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowComments: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowConditionalFormats `Boolean`
+{:#members:allowconditionalformats}
+
+Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
+Note: allowCellFormatting must be true while using conditional formatting.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowCellFormatting : true,
+allowConditionalFormats : true         
+});
+</script>
+
+
+{% endhighlight %}
+
+### allowDataValidation `Boolean`
+{:#members:allowdatavalidation}
+
+Gets or sets a value that indicates whether to enable or disable datavalidation feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowDataValidation: true                   
+});
+</script>
+
+
+{% endhighlight %}
+
+### allowDelete `Boolean`
+{:#members:allowdelete}
+
+Gets or sets a value that indicates whether to enable or disable the delete action in the Spreadsheet. By enabling this feature, you can delete existing rows, columns, cells and sheet.
+ 
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowDelete: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowDragAndDrop `Boolean`
+{:#members:allowdraganddrop}
+
+Gets or sets a value that indicates whether to enable or disable drag and drop feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowDragAndDrop: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowEditing `Boolean`
+{:#members:allowediting}
+
+Gets or sets a value that indicates whether to enable or disable the edit action in the Spreadsheet.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowEditing: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowFiltering `Boolean`
+{:#members:allowfiltering}
+
+Gets or sets a value that indicates whether to enable or disable filtering feature in the Spreadsheet. Filtering can be used to limit the data displayed using required criteria.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowFiltering: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowFormatAsTable `Boolean`
+{:#members:allowformatastable}
+
+Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
+Note: allowCellFormatting and allowFiltering must be true while using format as table.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCellFormatting  :true,
+allowFiltering:true,
+allowFormatAsTable: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowFormatPainter `Boolean`
+{:#members:allowformatpainter}
+
+Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected range and apply it to another range.
+Note: allowCellFormatting must be true while enable this feature.
+
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>  
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCellFormatting: true,
+allowFormatPainter: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowFormulaBar `Boolean`
+{:#members:allowformulabar}
+
+Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>  
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowFormulaBar: false
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowFreezing `Boolean`
+{:#members:allowfreezing}
+
+Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowFreezing : true
+});
+</script>
+
+
+{% endhighlight %}
+
+### allowHyperlink `Boolean`
+{:#members:allowhyperlink}
+
+Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a webpage.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowHyperlink: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowImport `Boolean`
+{:#members:allowimport}
+
+Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
+Note: Need to specify importMapper while enabling this feature. Import feature supports xls, xlsx file formats.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowImport: true,
+importSettings:
+{
+importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
+}
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowInsert `Boolean`
+{:#members:allowinsert}
+
+Gets or sets a value that indicates whether to enable or disable the insert action in the Spreadsheet. By enabling this feature, you can insert new rows, columns, cells and sheet.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowInsert: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowKeyboardNavigation `Boolean`
+{:#members:allowkeyboardnavigation}
+
+Gets or sets a value that indicates whether to enable or disable keyboard navigation feature in the Spreadsheet.
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowKeyboardNavigation: true
+});         
+</script>
+
+
+{% endhighlight %}
+
+### allowLockCell `Boolean`
+{:#members:allowlockcell}
+
+Gets or sets a value that indicates whether to enable or disable lock cell feature in the Spreadsheet. 
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowLockCell: true                     
+});
+</script>
+{% endhighlight %}
+
+### allowMerging `Boolean`
+{:#members:allowmerging}
+
+Gets or sets a value that indicates whether to enable or disable merge feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowMerging: true
+});         
+</script>
+
+{% endhighlight %}
+
+### allowResizing `Boolean`
+{:#members:allowresizing}
+
+Gets or sets a value that indicates whether to enable or disable resizing feature in the Spreadsheet. By enabling this feature, you can change the column width and row height by dragging its header boundaries.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowResizing: true
+});         
+</script>
+
+{% endhighlight %}
+
+### allowSearching `Boolean`
+{:#members:allowsearching}
+
+Gets or sets a value that indicates whether to enable or disable find and replace feature in the Spreadsheet. By enabling this, you can easily find and replace a specific value in the sheet or workbook. By using goto behavior, you can select and highlight all cells that contains specific data or data types.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSearching : true
+});        
+</script>
+
+{% endhighlight %}
+
+### allowSelection `Boolean`
+{:#members:allowselection}
+
+Gets or sets a value that indicates whether to enable or disable selection in the Spreadsheet. By enabling this feature, selected items will be highlighted.
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowSelection: true
+});         
+</script>
+
+{% endhighlight %}
+
+### allowSorting `Boolean`
+{:#members:allowsorting}
+
+Gets or sets a value that indicates whether to enable the sorting feature in the Spreadsheet. 
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowSorting: true
+});         
+</script>
+
+{% endhighlight %}
+
+### allowUndoRedo `Boolean`
+{:#members:allowundoredo}
+
+Gets or sets a value that indicates whether to enable or disable undo and redo feature in the Spreadsheet.
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowUndoRedo: true                    
+});
+</script>
+
+{% endhighlight %}
+
+### allowWrap `Boolean`
+{:#members:allowwrap}
+
+Gets or sets a value that indicates whether to enable or disable wrap text feature in the Spreadsheet. By enabling this, cell content can wrap to the next line, if the cell content exceeds the boundary of the cell.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowWrap: true                     
+});
+</script>
+
+{% endhighlight %}
+
+### apWidth `Number`
+{:#members:apwidth}
+
+Gets or sets a value that indicates to define the width of the activation panel in Spreadsheet.
+
+#### Default Value
+* 200
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+apWidth: 100
+});         
+</script>
+
+{% endhighlight %}
+
+### autoFillSettings `Object`
+{:#members:autofillsettings}
+
+Gets or sets an object that indicates to customize the autofill behavior in the Spreadsheet.
+
+#### autoFillSettings.fillType `Enum` 
+{:#members:autofillsettings-filltype}
+
+This property is used to set filltype unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
+Note: allowAutoFill must be true while setting filltype. 
+
+#### Default Value
+* ej.Spreadsheet.AutoFillOptions.FillSeries
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowAutoFill: true,
+autoFillSettings({
+fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
+})
+});  
+</script>
+
+{% endhighlight %}
+
+#### autoFillSettings.showFillOptions `Boolean`
+{:#members:autofillsettings-showfilloptions}
+
+Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
+Note: allowAutoFill must be true while enabling this property.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowAutoFille: true,
+autoFillSettings({
+showFillOptions: true
+})
+});  
+</script>
+
+{% endhighlight %}
+
+### chartSettings `Object`
+{:#members:chartsettings}
+
+Gets or sets an object that indicates to customize the chart behavior in the Spreadsheet.
+
+#### chartSettings.height `Number`
+{:#members:chartsettings-height}
+
+Gets or sets a value that defines the chart height in Spreadsheet.
+
+#### Default Value
+* 220
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCharts: true,
+chartSettings: {
+height : 300
+}
+}); 
+</script>
+
+{% endhighlight %}
+
+#### chartSettings.width `Number`
+{:#members:chartsettings-width}
+
+Gets or sets a value that defines the chart width in the Spreadsheet.
+
+#### Default Value
+* 440
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowCharts: true,
+chartSettings: {
+width : 500
+}
+}); 
+</script>
+
+{% endhighlight %}
+
+### columnCount `Number`
+{:#members:columncount}
+
+Gets or sets a value that defines the number of columns displayed in the sheet.
+
+#### Default Value
+* 21
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+columnCount: 30
+});         
+</script>
+
+{% endhighlight %}
+
+### columnWidth `Number`
+{:#members:columnwidth}
+
+Gets or sets a value that indicates to define the common width for each column in the Spreadsheet.
+#### Default Value
+* 60
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+columnWidth: 100
+});         
+</script>
+
+{% endhighlight %}
+
+### cssClass `String`
+{:#members:cssclass}
+
+Gets or sets a value that indicates to render the spreadsheet with custom theme.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Set the CSS class during initialization. 
+$('#Spreadsheet').ejSpreadsheet({
+cssClass: "gradient-lime"
+});        
+</script>
+
+{% endhighlight %}
+
+### enableContextMenu `Boolean`
+{:#members:enablecontextmenu}
+
+Gets or sets a value that indicates whether to enable or disable context menu in the Spreadsheet.
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+enableContextMenu: true
+});                   
+</script>
+
+{% endhighlight %}
+
+### exportSettings `Object`
+{:#members:exportsettings}
+
+Gets or sets an object that indicates to customize the exporting behavior in Spreadsheet.
+
+#### exportSettings.allowExporting `Boolean`
+{:#members:exportsettings-allowexporting}
+
+Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
+Note: User must specify excelUrl or csvUrl while enabling this feature.
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+exportSettings({
+allowExporting: true,
+csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
+excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
+})
+});        
+</script>
+
+{% endhighlight %}
+
+#### exportSettings.csvUrl `String`
+{:#members:exportsettings-csvurl}
+
+Gets or sets a value that indicates to define csvUrl for export to csv format.
+Note: User must specify allowExporting true while use this property.
+
+#### Default Value
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+exportSettings({
+allowExporting: true,
+csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
+})
+});        
+</script>
+
+{% endhighlight %}
+
+#### exportSettings.excelUrl `String`
+{:#members:exportsettings-excelurl}
+
+Gets or sets a value that indicates to define excelUrl for export to excel format.
+Note: User must specify allowExporting true while use this property.
+
+#### Default Value
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+exportSettings({
+allowExporting: true,
+excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
+})
+});        
+</script>
+
+{% endhighlight %}
+
+#### exportSettings.password `String`
+{:#members:exportsettings-password}
+
+Gets or sets a value that indicates to define password while export to excel format.
+Note: User must specify allowExporting true while use this property.
+
+#### Default Value
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+exportSettings({
+allowExporting: true,
+excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
+password :”Spreadhseet”
+})
+});        
+</script>
+
+{% endhighlight %}
+
+### formatSettings `Object`
+{:#members:formatsettings}
+
+Gets or sets an object that indicates to customize the format behavior in the Spreadsheet.
+
+#### formatSettings.allowCellBorder `Boolean`
+{:#members:formatsettings-allowcellborder}
+
+Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
+Note: allowCellFormatting must be true while using this property.
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowCellFormatting: true,
+formatSettings({
+allowCellBorder: true
+})
+});  
+</script>
+
+{% endhighlight %}
+
+#### formatSettings.allowDecimalPlaces `Boolean`
+{:#members:formatsettings-allowdecimalplaces}
+
+Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
+Note: allowCellFormatting must be true while using this property.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowCellFormatting: true,
+formatSettings({
+allowDecimalPlaces: true
+})
+});  
+</script>
+
+{% endhighlight %}
+
+#### formatSettings.allowFontFamily `Boolean`
+{:#members:formatsettings-allowfontfamily}
+
+Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
+Note: allowCellFormatting must be true while using this property. 
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowCellFormatting : true,
+formatSettings({
+allowFontFamily: true
+})
+});  
+</script>
+
+{% endhighlight %}
+
+### importSettings `Object`
+{:#members:importsettings}
+
+Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
+#### importSettings.importMapper `String`
+{:#members:importsettings-importmapper}
+
+Sets import mapper to perform import feature in Spreadsheet.
+Note: allowImport must be true while using this property.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowImport: true,
+importSettings({
+importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
+})
+});        
+</script>
+
+{% endhighlight %}
+
+#### importSettings.importUrl `String`
+{:#members:importsettings-importurl}
+
+Sets import Url to access the online files in the Spreadsheet.
+Note: allowImport must be true while using this property.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowImport: true,
+importSettings({
+importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx", //It is used to access the online files in Spreadsheet.
+})
+});        
+</script>
+
+{% endhighlight %}
+
+#### importSettings.password `String`
+{:#members:importsettings-password}
+
+Gets or sets a value that indicates to define password while importing in the Spreadsheet.
+Note: allowImport must be true while using this property.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowImport: true,
+importSettings({
+importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
+password: "Spreadsheet" //It is used to set password for sheet.
+})
+});        
+</script>
+
+{% endhighlight %}
+
+### locale `String`
+{:#members:locale}
+
+Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data (i.e.) in a language and culture specific to a particular country or region.
+
+#### Default Value
+* "en-US"
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+ej.Spreadsheet.locale["es-ES"] = {
+Sheet: "Hoja"
+};             
+$('#Spreadsheet').ejSpreadsheet({ 
+locale: "es-ES"
+});         
+</script>
+
+{% endhighlight %}
+
+### pictureSettings `Object`
+{:#members:picturesettings}
+
+Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
+#### pictureSettings.allowPictures `Boolean`
+{:#members:picturesettings-allowpictures}
+
+Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+pictureSettings({
+allowPictures: true,
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### pictureSettings.height `Number`
+{:#members:picturesettings-height}
+
+Gets or sets a value that indicates to define height to picture in the Spreadsheet.
+
+#### Default Value
+* 220
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+pictureSettings({
+allowPictures: true,
+height: 300
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### pictureSettings.width `Number`
+{:#members:picturesettings-width}
+
+Gets or sets a value that indicates to define width to picture in the Spreadsheet.
+
+#### Default Value
+* 440
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+pictureSettings({
+allowPictures: true,
+width: 500
+})
+});    
+</script>
+
+{% endhighlight %}
+
+### printSettings `Object`
+{:#members:printsettings}
+
+Gets or sets an object that indicates to customize the print option in Spreadsheet.
+#### printSettings.allowPageSetup `Boolean`
+{:#members:printsettings-allowpagesetup}
+
+Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
+Note: allowPrinting must be true while enabling allowPageSetup.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowPrinting: true,
+printSettings({
+allowPageSetup: true
+})
+});   
+</script>
+
+{% endhighlight %}
+
+#### printSettings.allowPageSize `Boolean`
+{:#members:printsettings-allowpagesize}
+
+Gets or sets a value that indicates whether to enable or disable pagesize support for printing in Spreadsheet.
+Note: allowPrinting must be true while enabling allowPageSetup.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowPrinting: true,
+printSettings({
+allowPageSize: true
+})
+});   
+</script>
+
+{% endhighlight %}
+
+#### printSettings.allowPrinting `Boolean`
+{:#members:printsettings-allowprinting}
+
+Gets or sets a value that indicates whether to enable or disable print feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+printSettings({
+allowPrinting: true
+})
+});   
+</script>
+
+{% endhighlight %}
+
+### rowCount `Number`
+{:#members:rowcount}
+
+Gets or sets a value that indicates whether to define the number of rows to be displayed in the sheet.
+
+#### Default Value
+* 20
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+rowCount: 30
+});         
+</script>
+
+{% endhighlight %}
+
+### rowHeight `Number`
+{:#members:rowheight}
+
+Gets or sets a value that indicates to define the common height for each row in the sheet.
+
+#### Default Value
+* 20
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+rowHeight: 30
+});         
+</script>
+
+{% endhighlight %}
+
+### scrollSettings `Object`
+{:#members:scrollsettings}
+
+Gets or sets an object that indicates to customize the scroll options in the Spreadsheet.
+#### scrollSettings.allowScrolling `Boolean`
+{:#members:scrollsettings-allowscrolling}
+
+Gets or sets a value that indicates whether to enable or disable scrolling in Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.allowSheetOnDemand `Boolean`
+{:#members:scrollsettings-allowsheetondemand}
+
+Gets or sets a value that indicates whether to enable or disable sheet on demand. By enabling this, it render only the active sheet element while paging remaining sheets are created one by one.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+allowSheetOnDemand: true,
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.allowVirtualScrolling `Boolean`
+{:#members:scrollsettings-allowvirtualscrolling}
+
+Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
+Note: allowScrolling must be true while enabling allowVirtualScrolling.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+allowVirtualScrolling: true
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.height  `Number / String`
+{:#members:scrollsettings-height}
+
+Gets or sets the value that indicates to define the height of spreadsheet.
+
+#### Default Value
+* 550
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+height: 600
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.isResponsive `Boolean`
+{:#members:scrollsettings-isresponsive}
+
+Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+width: "100%",
+height: "100%",
+isResponsive: true
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.scrollMode `Enum`
+{:#members:scrollsettings-scrollmode}
+
+Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
+Note: allowScrolling must be true while enabling this property.
+
+#### Default Value
+* ej.Spreadsheet.scrollMode.Infinite
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+height: "100%",
+width: "100%",
+scrollmode: ej.Spreadsheet.scrollMode.Infinite,
+})
+});    
+</script>
+
+{% endhighlight %}
+
+#### scrollSettings.width `Number / String`
+{:#members:scrollsettings-width}
+
+Gets or sets the value that indicates to define the height off spreadsheet.
+
+#### Default Value
+* 1200
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+scrollSettings({
+allowScrolling: true,
+width: 1300,
+scrollmode: ej.Spreadsheet.scrollMode.Infinite
+})
+});    
+</script>
+
+{% endhighlight %}
+
+### selectionSettings `Object`
+{:#members:selectionsettings}
+
+Gets or sets an object that indicates to customize the selection options in the Spreadsheet.
+#### selectionSettings.activeCell `String`
+{:#members:selectionsettings-activecell}
+
+Gets or sets a value that indicates to define active cell in spreadsheet.
+Note: allowSelection must be true while using this property.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSelection: true,
+selectionSettings({
+activeCell: "A1"
+})
+});
+</script>
+
+{% endhighlight %}
+
+#### selectionSettings.animationTime `Number`
+{:#members:selectionsettings-animationtime}
+
+Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
+Note: allowSelection and enableAnimation must be true while using this property.
+
+#### Default Value
+* 0.001
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSelection: true,
+selectionSettings({
+enableAnimation: true,
+animationTime: 0.002
+})
+});
+</script>
+
+{% endhighlight %}
+
+#### selectionSettings.enableAnimation `Boolean`
+{:#members:selectionsettings-enableanimation}
+
+Gets or sets a value that indicates to enable or disable animation while selection.
+Note: allowSelection must be true while using this property.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSelection: true,
+selectionSettings({
+enableAnimation: true
+})
+});
+</script>
+
+{% endhighlight %}
+
+#### selectionSettings.selectionType `Enum`
+{:#members:selectionsettings-selectiontype}
+
+Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
+Note: allowSelection must be true while using this property.
+
+#### Default Value
+* ej.Spreadsheet.SelectionType.Default
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSelection: true,
+selectionSettings({
+selectionType: ej.Spreadsheet.SelectionType.Default,
+animationTime: 0.001,
+enableAnimation: true
+})
+});
+</script>
+
+{% endhighlight %}
+
+#### selectionSettings.selectionUnit `Enum`
+{:#members:selectionsettings-selectionunit}
+
+Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and Multirange.
+Note: allowSelection must be true while using this property.
+#### Default Value
+* ej.Spreadsheet.SelectionUnit.MultiRange
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowSelection: true,
+selectionSettings({
+selectionUnit: ej.Spreadsheet.SelectionUnit.MultiRange
+})
+});  
+</script>
+
+{% endhighlight %}
+
+### sheetCount `Number`
+{:#members:sheetcount}
+
+Gets or sets a value that indicates to define the number of sheets to be created at the initial load.
+#### Default Value
+* 1
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+sheetCount: 5
+});         
+</script>
+
+{% endhighlight %}
+
+### showGridlines `Boolean`
+{:#members:showgridlines}
+
+Gets or sets a value that indicates whether to show or hide grid lines in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+showGridlines: true
+});   
+</script>
+
+{% endhighlight %}
+
+### showHeader `Boolean`
+{:#members:showheader}
+
+Gets or sets a value that indicates whether to show or hide grid headers in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+showHeader: true
+});   
+</script>
+
+{% endhighlight %}
+
+### showRibbon `Boolean`
+{:#members:showribbon}
+
+Gets or sets a value that indicates whether to show or hide ribbon in the Spreadsheet.
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+showRibbon: true
+});         
+</script>
+
+{% endhighlight %}
+
+### undoRedoStep `Number`
+{:#members:undoredostep}
+
+This is used to set the number of undo-redo steps in the Spreadsheet.
+
+#### Default Value
+* 20
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+undoRedoStep: 15
+});         
+</script>
+
+{% endhighlight %}
+
+### userName `String`
+{:#members:username}
+
+Define the username for the Spreadsheet which is displayed in comment.
+
+#### Default Value
+* User Name
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+userName: "User Name"
+});         
+</script>
+
+{% endhighlight %}
+
+## Methods
+
+### addNewSheet()
+{:#methods:addnewsheet}
+
+This method is used to add a new sheet in the last position of the sheet container.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.addNewSheet(); // Sends a add new sheet request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a add new sheet request to the Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("addNewSheet");        
+</script>
+
+{% endhighlight %}
+
+
+### clearAll(\[range\])
+{:#methods:clearall}
+
+It is used to clear all the data and format in the specified range of cells in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearAll("A2:A6"); // Sends a clear all request to the Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a clear all request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("clearAll", "A2:A6");        
+</script>
+
+{% endhighlight %}
+
+
+### clearAllFormat(\[range\])
+{:#methods:clearallformat}
+
+This property is used to clear all the formats applied in the specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearAllFormat("A2:A6"); // Sends a clear all format request to the Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a clear all format request to the Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("clearAllFormat", "A2:A6");        
+</script>
+
+{% endhighlight %}
+
+### clearBorder(\[range\])
+{:#methods:clearborder}
+
+Used to clear the applied border in the specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearBorder("A2:A6"); // Sends a clear border request to the Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a clear border request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("clearBorder", "A2:A6");        
+</script>
+
+{% endhighlight %}
+
+### clearContents(\[range\])
+{:#methods:clearContents}
+
+This property is used to clear the contents in the specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearContents("A2:A6"); // Sends a clear content request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a clear content request to the Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("clearContents", "A2:A6");        
+</script>
+
+{% endhighlight %}
+
+### clearRange(rangeName)
+{:#methods:clearrange}
+
+This method is used to remove only the data in the range denoted by the specified range name.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the defined rangeSettings property name.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearRange("updateTable"); // Sends a clear range request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Sends a clear range request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("clearRange","updateTable");        
+</script>
+
+{% endhighlight %}
+
+### clearRangeData(\[range\], \[property\], \[skipHiddenRow\])
+{:#methods:clearrangedata}
+
+It is used to remove data in the specified range of cells based on the defined property.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array / string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span> </td>
+<td class="description"><span class="optional">Optional</span> If pass true, if you want to skip the hidden rows </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.clearRangeData(“A1:A5”, ["value", "value2"], xlObj.getRange(“A1:A5”), true);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sends a clear range data request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("clearRangeData", “A1:A5”, ["value", "value2"], xlObj.getRange(“A1:A5”), false);        
+</script>
+
+{% endhighlight %}
+
+### copySheet(fromIdx, toIdx)
+{:#methods:copysheet}
+
+This method is used to copy sheets in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}fromIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index that you want to copy.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}toIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the position index where you want to copy.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.copySheet(2, 1); // Sends a copy sheet request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a copy sheet request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("copySheet", 2, 1);        
+</script>
+
+{% endhighlight %}
+
+
+### deleteEntireColumn(startCol, endCol)
+{:#methods:deleteentirecolumn}
+
+This method is used to delete the entire column which is selected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the start column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the end column index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Delete a column in the sheet.
+xlObj.deleteEntireColumn(2, 3);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Delete a column in the sheet.
+$("#Spreadsheet").ejSpreadsheet("deleteEntireColumn”,2,3);
+</script> 
+
+{% endhighlight %}
+
+### deleteEntireRow(startRow, endRow)
+{:#methods:deleteentirerow}
+
+This method is used to delete the entire row which is selected.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the start row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the end row index.</td>
+</tr>
+<tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Delete a row in the sheet.
+xlObj.deleteEntireRow(2,3);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Delete a row in the sheet.
+$("#Spreadsheet").ejSpreadsheet("deleteEntireRow", 2, 3);
+</script> 
+
+{% endhighlight %}
+
+### deleteSheet(idx)
+{:#methods:deletesheet}
+
+This method is used to delete a particular sheet in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}idx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index to perform delete action.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.deleteSheet(3); // Sends a sheet delete request to the Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a sheet delete request to the Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("deleteSheet", 3);        
+</script>
+
+{% endhighlight %}
+
+
+### deleteShiftLeft(startCell, endCell)
+{:#methods:deleteshiftleft}
+
+This method is used to delete the selected cells and shift the remaining cells to left.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the starting cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the ending cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Delete a cell and shift cells left in the sheet.
+xlObj.deleteShiftLeft(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+// Delete a cell and shift cells left in the sheet.
+$("#Spreadsheet").ejSpreadsheet("deleteShiftLeft", startCell, endCell);
+</script> 
+
+{% endhighlight %}
+
+### deleteShiftUp(startCell, endCell)
+{:#methods:deleteshiftup}
+
+This method is used to delete the selected cells and shift the remaining cells up.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Delete a cell and shift cells up in the sheet.
+xlObj.deleteShiftUp(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+// Delete a cell and shift cells up in the sheet.
+$("#Spreadsheet").ejSpreadsheet("deleteShiftUp", startCell, endCell);
+</script> 
+
+{% endhighlight %}
+
+### editRange(rangeName, fn)
+{:#methods:editrange}
+
+This method is used to edit data in the specified range of cells based on its corresponding rangeSettings.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the defined rangeSettings property name.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}fn{% endhighlight %}</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description">Pass the function that you want to perform range edit.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var updateFn = function(cell, cellIdx) {
+if (cellIdx % 2 == 0)
+return "SpreadSheet";
+else
+return "Grid";
+};
+var rangeSettings = {
+range: "B1:C2",
+name: "updateTable",
+cssClass: "readOnly1",
+readOnly: true,
+contextTab: {},
+contextMenuSettings: {
+dataSource: [{
+id: 1,
+text: "Copy",
+parentId: null,
+sprite: "e-icon e-copy"
+}, {
+id: 2,
+text: "Refresh",
+parentId: null,
+}]
+},
+showPanel: true
+};
+//Update new rangeSettings property before invoking edit range
+xlObj.model.sheets[1].rangeSettings["updateTable"] = rangeSettings;
+//Sends a edit range request to the Spreadsheet
+xlObj.editRange("updateTable", updateFn); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+//Sends a edit range request to the Spreadsheet after updating new rangeSettings.
+$("#Spreadsheet").ejSpreadsheet("editRange", "updateTable", updateFn);        
+</script>
+
+{% endhighlight %}
+
+### getActivationPanel()
+{:#methods:getactivationpanel}
+
+This method is used to get the activation panel in the Spreadsheet.
+
+Returns:
+Element
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getActivationPanel(); // Gets sheet  ActivationPanel element in Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets sheet ActivationPanel element in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("getActivationPanel");        
+</script>
+
+{% endhighlight %}
+
+
+### getActiveCell(\[sheetIdx\])
+{:#methods:getactivecell}
+
+This method is used to get the active cell object in Spreadsheet. It will returns object which contains rowIndex and colIndex of the active cell.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> If sheetIdx is specified, it will return the activecell object in specified sheet index else it will use the current sheet index</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getActiveCell(1); // Gets the activecell  object in specified sheet index.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets the activecell element in specified sheetindex
+$("#Spreadsheet").ejSpreadsheet("getActiveCell", 1);        
+</script>
+
+{% endhighlight %}
+
+### getActiveCellElem(\[sheetIdx\])
+{:#methods:getactivecellelem}
+
+This method is used to get the activecell element based on the given sheet index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> If sheetIndex is specified, it will return the activecell element in specified sheet index else it will use the current active sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getActiveCellElem(1); // Gets activecell element in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets activecell element in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("getActiveCellElem", 1);        
+</script>
+
+{% endhighlight %}
+
+### getActiveSheetIndex()
+{:#methods:getactivesheetindex}
+
+This method is used to get the current activesheet index in Spreadsheet.
+
+Returns:
+Number
+ 
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getActiveSheetIndex(); // Gets activesheet index in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets activesheet index in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("getActiveSheetIndex");        
+</script>
+
+{% endhighlight %}
+
+### getAutoFillElem()
+{:#methods:getautofillelem}
+
+This method is used to get the autofill element in Spreadsheet.
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getAutoFillElem(); // Gets autofill element in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets autofill element in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("getAutoFillElem");        
+</script>
+
+{% endhighlight %}
+
+### getCell(rowIdx, colIdx, \[sheetIdx\])
+{:#methods:getcell}
+
+This method is used to get the cell element based on specified row and column index in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass the sheet index that you want to get cell.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getCell(2, 3, 1); // Get the cell based on rowIndex and colIndex.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Get the cell based on row and column index
+$("#Spreadsheet").ejSpreadsheet("getCell", 2, 3, 1);        
+</script>
+
+{% endhighlight %}
+
+## getFrozenColumns(sheetIdx)
+{:#methods:getfrozencolumns}
+
+This method is used to get the frozen columns index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Number
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getFrozenColumns(1); // Gets the freezed column index in Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets the freezed column index in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);        
+</script>
+
+{% endhighlight %}
+
+### getFrozenRows(sheetIdx)
+{:#methods:getfrozenrows}
+
+This method is used to get the frozen row’s index in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Number
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getFrozenRows(1); // Gets the freezed row index in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets the freezed row index in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("getFrozenRows", 1);        
+</script>
+
+{% endhighlight %}
+
+### getHyperlink(cell)
+{:#methods:gethyperlink}
+
+This method is used to get the hyperlink data as object from the specified cell in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">DOM Element</span></td>
+<td class="description">Pass the DOM element to get hyperlink</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Object (cellAddr and webAddr based on cell)
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getHyperlink(xlObj.getCell(1, 1)); // To get the hyperlink data of specified cell.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To get the hyperlink data of specified cell.
+$("#Spreadsheet").ejSpreadsheet("getHyperlink", xlObj.getCell(1, 1, 1));        
+</script>
+
+{% endhighlight %}
+
+### getRange(startRIndex, startCIndex, endRIndex, endCIndex, sheetIdx)
+{:#methods:getrange}
+
+This method is used to get all cell elements in the specified range.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startRIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}startCIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endRIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index of the end cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index of the end cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the index of the sheet.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getRange(1, 2, 4, 5, 1); // Get the range cells based on startcell and endcell index
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Get the range cells based on startcell and endcell index
+$("#Spreadsheet").ejSpreadsheet("getRange", 1, 2, 4, 5, 1);        
+</script>
+
+{% endhighlight %}
+
+### getRangeData(\[range\], valueonly, \[property\], \[sheetIdx\], \[skipDateTime\],  \[skipFormula\], \[skipHiddenRow\], \[virtualRowIdx\], \[virtualRowCount\])
+{:#methods:getrangedata}
+
+This method is used to get the data in specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array / string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}valueonly{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass 'true' if you want cell values alone.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="type"><span class="param-type">array / string</span></td>
+<td class="description"><span class="optional">Optional</span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass the index of the sheet.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}skipDateTime{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> When skipDateTime is set as true, it return 'value2' cell value (cell type as 'datetime')</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}skipFormula{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> Pass true, if you want to get the calculated formula value else it return formula string.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> Pass true, if you want to skip the hidden rows data.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}virtualRowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass virtual row index of sheet.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}virtualRowCount{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass virtual row count of sheet.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Array of objects
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getRangeData([2, 6, 2, 6], false, ["value"], 1, false); // To get the cells data of specified range
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To get the cells data of specified range
+$("#Spreadsheet").ejSpreadsheet("getRangeData", [2, 6, 2, 6], false, ["value"], 1, false);        
+</script>
+
+{% endhighlight %}
+
+### getRangeIndices(range)
+{:#methods:getrangeindices}
+This method is used to get the range indices array based on the specified alpha range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the alpha range that you want to get range indices.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Array
+ 
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getRangeIndices("A1:A9"); // Get range indicesbased on specified alpha range.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Get cells based on specified range indices
+$("#Spreadsheet").ejSpreadsheet("getRangeIndices", "A1:A9");        
+</script>
+{% endhighlight %}
+
+### getSheet(sheetIdx)
+
+{:#methods:getsheet}
+
+This method is used to get the sheet details based on the given sheet index in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index to get the sheet object.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object..
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getSheet(1); // Gets sheet details of Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets sheet details of Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("getSheet", 1);        
+</script>
+
+{% endhighlight %}
+
+### getSheetElement(sheetIdx)
+{:#methods:getsheetelement}
+
+This method is used to get the sheet content div element of Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index to get the sheet content.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getSheetElement(1); // Gets sheet content of Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets sheet content of Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("getSheetElement", 1);        
+</script>
+
+{% endhighlight %}
+
+### gotoPage(sheetIdx, newSheet)
+{:#methods:gotopage}
+
+This method is used to send a paging request to the specified sheet Index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index to perform paging at specified sheet index</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass 'true' to create a new sheet. If the specified sheet index is already exist, it navigate to that sheet else it create a new sheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.gotoPage(1, false); // Sends a paging request to the Spreadsheet with specified sheet index
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a paging request to the Spreadsheet with specified sheet index.
+$("#Spreadsheet").ejSpreadsheet("gotoPage", 3, true);        
+</script>
+
+{% endhighlight %}
+
+### hideColumn(startCol, endCol)
+{:#methods:hidecolumn}
+
+This method is used to hide the entire columns from the specified range (startCol, endCol) in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the start column.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the end column.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Hide a column in the sheet.
+xlObj.hideColumn(1, 1);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Hide a column in the sheet.
+$("#Spreadsheet").ejSpreadsheet("hideColumn", 1, 1);
+</script>
+
+{% endhighlight %}
+
+### hideFormulaBar()
+{:#methods:hideformulabar}
+
+This method is used to hide the formula bar in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To hide formula bar in Spreadsheet.
+xlObj.hideFormulaBar();
+</script>
+
+{% endhighlight %}
+
+### hideRow(startRow, endRow)
+{:#methods:hiderow}
+
+This method is used to hide the rows, based on the specified row index in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the start row.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the end row.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Hide a row in the sheet.
+xlObj.hideRow(1, 4);
+</script>
+
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Hide a row in the sheet.
+$("#Spreadsheet").ejSpreadsheet("hideRow", 1, 4);
+</script>
+
+{% endhighlight %}
+
+### hideSheet(sheetIdx)
+{:#methods:hidesheet}
+
+This method is used to hide the sheet based on the specified sheetIndex or sheet name in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">string / number</span></td>
+<td class="description">Pass the sheet name or index that you want to hide.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a hide sheet request to the Spreadsheet.
+xlObj.hideSheet("Sheet2");
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+//Sends a hide sheet request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("hideSheet", 2);
+</script>
+
+{% endhighlight %}
+
+### hideWaitingPopUp()
+{:#methods:hidewaitingpopup}
+
+This method is used to hide the displayed waiting pop-up in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// hide waiting popup in the Spreadsheet.
+xlObj.hideWaitingPopUp();
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// hide waiting popup in the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("hideWaitingPopUp");
+</script>
+
+{% endhighlight %}
+
+### insertEntireColumn(startCell, endCell)
+{:#methods:insertentirecolumn}
+
+This method is used to insert a column before the active cell's column in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Insert a column in the sheet.
+xlObj.insertEntireColumn(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+// Insert a column in the sheet.
+$("#Spreadsheet").ejSpreadsheet("insertEntireColumn", startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+### insertEntireRow(startCell, endCell)
+{:#methods:insertentirerow}
+
+This method is used to insert a row before the active cell's row in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Insert a row in the sheet.
+xlObj.insertEntireRow(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+// Insert a row in the sheet.
+$("#Spreadsheet").ejSpreadsheet("insertEntireRow", startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+### insertSheet()</span>
+{:#methods:insertsheet}
+
+This method is used to insert a new sheet to the left of the current active sheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.insertSheet(); // Sends a insert new sheet request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends an insert new sheet request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("insertSheet");        
+</script>
+
+{% endhighlight %}
+
+### insertShiftBottom(startCell, endCell)
+{:#methods:insertshiftbottom}
+
+This method is used to insert cells in the selected or specified range and shift remaining cells to bottom.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Insert a cells and shift cells bottom in the sheet.
+xlObj.insertShiftBottom(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+// Insert a cell and shift cells bottom in the sheet.
+$("#Spreadsheet").ejSpreadsheet("insertShiftBottom", startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+### insertShiftRight(startCell, endCell)
+{:#methods:insertshiftright}
+
+This method is used to insert cells in the selected or specified range and shift remaining cells to right.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the start cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Insert a cells and shift cells right in the sheet.
+xlObj.insertShiftRight(startCell, endCell);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
+// Insert a cell and shift cells right in the sheet.
+$("#Spreadsheet").ejSpreadsheet("insertShiftRight", startCell, endCell);
+</script> 
+
+{% endhighlight %}
+
+### import(importRequest)
+
+This method is used to import excel file manually by using form data.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}importRequest{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the form data object to import files manually.</td>
+</tr>
+</tbody>
+</table>
+
+The Objects are File, Password, Url, FileStream, FileType. 
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
+var importRequest = {Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx";
+xlObj.import(importRequest); 
+</script>
+
+{% endhighlight %}
+
+### lockCells(range, \[isLocked\])
+{:#methods:lockcells}
+
+This method is used to lock/unlock the range of cells in active sheet. Lock cells are activated only after the sheet is protected. Once the sheet is protected it is unable to lock/unlock cells.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string / array</span></td>
+<td class="description">Pass the alpha range cells or array range of cells.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isLocked{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> By default is true. If it is false locked cells are unlocked.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.lockCells("A3:B5", true); // To lock cells in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To lock cells in the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("lockCells","A3:B5", true);        
+</script>
+
+{% endhighlight %}
+
+### mergeAcrossCells(\[range\], \[alertStatus\])
+{:#methods:mergeacrosscells}
+
+This method is used to merge cells by across in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> To pass the cell range or selected cells are process.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> If pass true it does not show alert.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.mergeAcrossCells("A3:B5", true); // To merge cells across in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To merge cells across in the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("mergeAcrossCells","A3:B5");        
+</script>
+
+{% endhighlight %}
+
+### mergeCells(\[range\], \[alertStatus\])
+{:#methods:mergecells}
+
+This method is used to merge the selected cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> To pass the cell range or selected cells are process.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> If pass true it does not show alert.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.mergeCells("A3:B5", true); // To merge the selecetd cell in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To merge the selecetd cell in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("mergeCells","A3:B5");        
+</script>
+
+{% endhighlight %}
+
+### moveSheet(fromIdx, toIdx)
+{:#methods:movesheet}
+
+This method is used to move sheets in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}fromIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index that you want to move.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}toIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the position index where you want to move.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.moveSheet(2, 1); // Sends a move sheet request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a move sheet request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("moveSheet", 2, 1);        
+</script>
+
+{% endhighlight %}
+
+
+### protectSheet(\[isProtected\])
+{:#methods:protectsheet}
+
+This method is used to protect or unprotect active sheet.
+<table class="params">
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isProtected{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span>  By default is true. If it is false active sheet is unprotected.</td>
+</tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To protect sheet in Spreadsheet.
+xlObj.protectSheet(false);
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To defined refresh selection in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("protectSheet", false);
+</script>
+
+{% endhighlight %}
+
+### removeHyperlink(range, \[isClearHLink\])
+{:#methods:removehyperlink}
+
+This method is used to remove the hyperlink from selected cells of current sheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Hyperlink remove from the specified range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isClearHLink{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> If it is true, It will clear link only not format.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.removeHyperlink("A2:A3", false); // To remove the hyperlink  of specified range
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To remove the hyperlink  of specified range
+$("#Spreadsheet").ejSpreadsheet("removeHyperlink", "A2:A3", false);        
+</script>
+
+{% endhighlight %}
+
+### removeRange(rangeName)
+{:#methods:removerange}
+
+This method is used to remove the range data and its defined rangeSettings property based on the specified range name.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the defined rangeSetting property name.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sends a remove range request to the Spreadsheet.
+xlObj.removeRange("updateTable"); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a remove range request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
+</script>
+
+{% endhighlight %}
+
+### setActiveCell(rowIdx, colIdx, sheetIdx)
+{:#methods:setactivecell}
+
+This method is used to set the activecell in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the index of the sheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.setActiveCell(1, 0, 1); // Sets activecell in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sets activecell in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("setActiveCell", 1, 0, 1);
+</script>
+
+{% endhighlight %}
+
+### setActiveSheetIndex(sheetIdx)
+{:#methods:setactivesheetindex}
+
+This method is used to set active sheet index for the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
+<tr>
+</thead>
+<tbody>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the active sheet index for Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+var sheetIndex= 1;
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Set active sheet index for Spreadsheet. 
+xlObj.setActiveSheetIndex(sheetIndex);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+//Set active sheet index for Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("setActiveSheetIndex", sheetIndex);
+</script>
+
+{% endhighlight %}
+
+### setBorder(property, \[range\])
+{:#methods:setborder}
+
+This method is used to set border for the specified range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the border properties that you want to set.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.setBorder({ borderStyle: "solid", ID: "outside", hexaCode: "#000000"}, "B2:B6"); // To set borders in Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To set borders in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("setBorder", { borderStyle: "solid", ID: "outside", hexaCode: "#000000"}, "B2:B6");        
+</script>
+
+{% endhighlight %}
+
+### setHyperlink(range, link, sheetIdx)
+{:#methods:sethyperlink}
+
+This method is used to set the hyperlink in selected cells of the current sheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}Range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">If range is specified, it will set the hyperlink in range of the cells.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}link{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass cellAddress or webAddress</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">If we pass cellAddress then which sheet to be navigate in the applied link.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.setHyperlink("A2:A3",{"cellAddr":"A2:A8"}, 3); // To set the hyperlink  of specified range
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To set the hyperlink  of specified range
+$("#Spreadsheet").ejSpreadsheet("setHyperlink", "A2:A3",{"cellAddr":"A2:A8"},3);        
+</script>
+
+{% endhighlight %}
+
+### setSheetFocus()</span>
+{:#methods:setSheetFocus}
+
+This method is used to set the focus to a Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Set focus on Spreadsheet.
+xlObj.setSheetFocus();
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Set focus on Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("setSheetFocus");
+</script>
+
+{% endhighlight %}
+
+
+### setWidthToColumns(widthColl)
+{:#methods:setwidthtocolumns}
+
+This method is used to set the width for the columns in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}widthColl{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/object</span></td>
+<td class="description">Pass the cell index and width of the cells.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+var widthColl= [{cellIndex: 1, width: 40}, {cellIndex: 2, width: 50}];
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Set width for columns in specified sheet
+xlObj.setWidthToColumns(widthColl);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Set width for columns in specified sheet
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthColl);
+</script>
+
+{% endhighlight %}
+
+### sheetRename(sheetName)
+{:#methods:sheetrename}
+
+This method is used to rename the active sheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the sheet name that you want to change the current active sheet name.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.sheetRename("Sep-Billing"); // Sends a sheet rename request to the Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To rename a sheet in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("sheetRename", "Sep-Billing");        
+</script>
+
+{% endhighlight %}
+
+### showActivationPanel(rangeName)
+{:#methods:showactivationpanel}
+
+This method is used to display the activationPanel for the specified range name.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range name that you want to display the activation panel.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.showActivationPanel("upTable"); // To display the activationPanel in Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To display the activationPanel in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("showActivationPanel", "upTable");        
+</script>
+
+{% endhighlight %}
+
+### showColumn(startCol, endCol)
+{:#methods:showcolumn}
+
+This method is used to show the hidden columns within the specified range in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startColIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the start column.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endColIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the end column.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// show the hidden column in the sheet.
+xlObj.showColumn(1, 1);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// show the hidden column in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showColumn", 1, 1);
+</script>
+
+{% endhighlight %}
+
+### showFormulaBar()
+
+This method is used to show the formula bar in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To show the formula bar in Spreadsheet
+xlObj.showFormulaBar();
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To show the formula bar in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("showFormulaBar ");
+</script>
+
+{% endhighlight %}
+
+### showRow(startRow, endRow)
+{:#methods:showrow}
+
+This method is used to show the hidden rows in the specified range in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the start row.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the end row.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To show the hidden rows in the sheet.
+xlObj.showRow(1, 1);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// show the hidden row in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showRow", 1, 1);
+</script>
+
+{% endhighlight %}
+
+### showWaitingPopUp()
+{:#methods:showwaitingpopup}
+
+This method is used to show waiting pop-up in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To show waiting popup in Spreadsheet
+xlObj.showWaitingPopUp();
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// show waiting popup in the Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("showWaitingPopUp");
+</script>
+
+{% endhighlight %}
+
+### unfreezePanes()
+{:#methods:unfreezepanes}
+
+This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To unfreeze the freezed rows and columns in the sheet.
+xlObj.XLFreeze.unfreezePanes();
+</script>
+
+{% endhighlight %}
+
+### unhideSheet(sheetInfo)
+{:#methods:unhidesheet}
+
+This method is used to unhide the sheet based on specified sheet name or sheet index.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetInfo{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/number</span></td>
+<td class="description">Pass the sheet name or index that you want to unhide.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To unhide a sheet in Spreadsheet.
+xlObj.unhideSheet("Sheet2");
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+//To unhide a sheet in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("unhideSheet", "Sheet2");
+</script>
+
+{% endhighlight %}
+
+### unmergeCells(\[range\])
+{:#methods:unmergecells}
+
+This method is used to unmerge the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To unmerge the selected cells in Spreadsheet.
+xlObj.unmergeCells("A3:B5"); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To unmerge the selected cells in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("unmergeCells","A3:B5");        
+</script>
+
+{% endhighlight %}
+
+### unWrapText(\[range\])
+{:#methods:unwraptext}
+
+This method is used to unwrap the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To unwrap the cell text.
+xlObj.unWrapText(“A1:B3”);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To unwrap the cell text.
+$("#Spreadsheet").ejSpreadsheet(“unWrapText”,”A1:B3”)
+</script>
+
+{% endhighlight %}
+
+### updateData(data, \[range\])
+{:#methods:updatedata}
+
+This method is used to update the data for the specified range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the cells data that you want to update.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will update data for the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update data in the specified range of the cells in Spreadsheet.
+xlObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], [1, 0, 3, 0]); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To update a data in the specified range of cells in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("updateData", [{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], [1, 0, 2, 0]);        
+</script>
+
+{% endhighlight %}
+
+### updateFormulaBar()
+{:#methods:updateformulabar}
+
+This method is used to update the formula bar in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To update the formula bar in Spreadsheet
+xlObj.updateFormulaBar();
+</script>
+
+{% endhighlight %}
+
+### updateRange(sheetIdx, settings)
+{:#methods:updaterange}
+
+This method is used to update the range of cells based on the specified settings which we want to update in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index that you want to update.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}settings{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the dataSource, startCell and showHeader values as settings.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var settings = { dataSource: [{ Product: "XYZ", Price: "2000" }], showHeader: "true", startCell: "F1" };
+// To update range of cells with the specified settings
+xlObj.updateRange(1, settings); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+var settings = { dataSource: [{ Product: "XYZ", Price: "2000" }], showHeader: "true", startCell: "F1" };
+// To update cells range of cells with the specified settings
+$("#Spreadsheet").ejSpreadsheet("updateRange", 1, settings);        
+</script>
+
+{% endhighlight %}
+
+### updateUniqueData(data, \[range\])
+{:#methods:updateuniquedata}
+
+This method is used to update the unique data for the specified range of cells in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the  data that you want to update in the particular range</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update unique data in Spreadsheet.
+xlObj.updateUniqueData([{ value: 10, value2: 10, type: "general"}], [1, 0, 5, 0]); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To update unique data in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("updateUniqueData", [{ value: 10, value2: 10, type: "general"}], [1, 0, 5, 0]);        
+</script>
+
+{% endhighlight %}
+
+### wrapText(\[range\])
+{:#methods:wraptext}
+
+This method is used to wrap the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array / string</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update wrap in the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To wrap the cell Text.
+xlObj.wrapText(“A1:B3”);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To wrap the cell Text.
+$("#Spreadsheet").ejSpreadsheet(“wrapText”,”A1:B3”)
+</script>
+
+{% endhighlight %}
+
+### XLCellType
+{:#methods:xlcelltype}
+
+#### XLCellType.addCellTypes(range, settings, \[sheetIdx\])
+{:#methods:xlcelltype-addcelltypes}
+
+This method is used to set a cell type from the specified range of cells in the spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range where you want apply cell type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}settings{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass type of cell type and its settings.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td  class="type"><span class="param-type">number</span></td>
+<td  class="description">Optional. Pass sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To add cell types in Spreadsheet.
+xlObj.XLCellType.addCellTypes(“A1 : B3”, {“type” : ej.Spreadsheet.CustomCellType.Button, “text” : “Button1”, “background-color” : “green” },  1);
+</script>
+
+{% endhighlight %}
+
+#### XLCellType.removeCellTypes(range, \[sheetIdx\])
+{:#methods:xlcelltype-removecelltypes}
+
+This method is used to remove cell type from the specified range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range where you want remove cell type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To remove cell types in Spreadsheet.
+xlObj.XLCellType.removeCellTypes(“A1:B2”, 1);
+</script>
+
+{% endhighlight %}
+
+### XLCFormat
+{:#methods:xlcformat}
+
+#### XLCFormat.clearCF(isSelected, \[range\])
+{:#methods:xlcformat-clearcf}
+
+This method is used to clear the applied conditional formatting rules in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}isSelected{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description"><span class="optional">Optional</span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To clear conditional formatting rules in Spreadsheet.
+xlObj.XLCFormat.clearCF(true, [1, 0, 7, 0]);
+</script>
+
+{% endhighlight %}
+
+#### XLCFormat.getCFRule(rowIdx, colIdx)
+{:#methods:xlcformat-getcfrule}
+
+This method is used to get the applied conditional formatting rules as array of objects based on the specified row Index and column Index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Array of objects
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Gets the conditional formatting rules in Spreadsheet.
+xlObj.XLCFormat.getCFRule(2, 0);
+</script>
+
+{% endhighlight %}
+
+#### XLCFormat.setCFRule(rule)
+{:#methods:xlcformat-setcfrule}
+
+This method is used to set the conditional formatting rule in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rule{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the rule to set.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sets the conditional formatting rules in Spreadsheet
+xlObj.XLCFormat.setCFRule({ "action": "lessthan", "input1": "30", "color": "yellowft", "addr": "H3:H7" });
+</script>
+
+{% endhighlight %}
+
+### XLChart
+{:#methods:xlchart}
+
+#### XLChart.createChart(\[range\], options)
+{:#methods:xlchart-createchart}
+
+This method is used to create a chart for specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">To pass the type of chart and chart name.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLChart.createChart("A3:A7",{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To create chart in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLChart.refreshChart(id, options)
+{:#methods:xlchart-refreshchart}
+
+This method is used to refresh the chart in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">To pass the chart Id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">To pass the type of chart and chart name.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example 
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLChart.refreshChart(id,{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To refresh the chart in Spreadsheet
+</script>
+{% endhighlight %}
+
+#### XLChart.resizeChart(id, height, width)
+{:#methods:xlchart-resizechart}
+
+This method is used to resize the chart of specified id in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">To pass the chart id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}height{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">To pass height value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}width{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">To pass the width value.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLChart.resizeChart(“Spreadsheet_Chart1”, 200, 300); // It is used to resize the chart in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLClipboard
+{:#methods:xlclipboard}
+
+#### XLClipboard.copy()
+{:#methods:xlclipboard-copy}
+
+This method is used to copy the selected cells in the Spreadsheet.
+
+#### Example
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To copy cells in a Spreadsheet.
+xlObj.XLClipboard.copy();
+</script>
+
+{% endhighlight %}
+
+#### XLClipboard.cut()
+{:#methods:xlclipboard-cut}
+
+This method is used to cut the selected cells in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To cut cells in a Spreadsheet
+xlObj.XLClipboard.cut();
+</script>
+
+{% endhighlight %}
+
+#### XLClipboard.paste()
+{:#methods:xlclipboard-paste}
+
+This method is used to paste the cut or copied cells data in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To paste data in Spreadsheet
+xlObj.XLClipboard.paste();
+</script>
+
+{% endhighlight %}
+
+### XLComment
+{:#methods:xlcomment}
+
+#### XLComment.deleteComment(\[range\], \[sheetIdx\], \[skipHiddenRow\])
+{:#methods:xlcomment-deletecomment}
+
+This method is used to delete the comment in the specified range in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array / string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> Pass true, if you want to skip the hidden rows data.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a delete comment request to the Spreadsheet.
+xlObj.XLComment.deleteComment("A1:D3", 1, true);
+</script>
+
+{% endhighlight %}
+
+#### XLComment.editComment(\[trgtCell\])
+{:#methods:xlcomment-editcomment}
+
+This method is used to edit the comment in the trgtCell in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional</span> Pass the row index and column index of the cell which contains comment. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends an edit comment request to the Spreadsheet.
+xlObj.XLComment.editComment({rowIdx: 1, colIdx: 1});
+</script>
+
+{% endhighlight %}
+
+#### XLComment.findNextComment()
+{:#methods:xlcomment-findnextcomment}
+
+This method is used to find the next comment from the active cell in Spreadsheet.
+
+Returns:
+Boolean
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a find next comment request to the Spreadsheet.
+xlObj.XLComment.findNextComment();
+</script>
+
+{% endhighlight %}
+
+#### XLComment.findPrevComment()
+{:#methods:xlcomment-findprevcomment}
+
+This method is used to find the previous comment from the active cell in Spreadsheet.
+
+Returns:
+Boolean
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a find previous comment request to the Spreadsheet.
+xlObj.XLComment.findPrevComment();
+</script>
+
+{% endhighlight %}
+
+#### XLComment.getComment(cell)
+{:#methods:xlcomment-getcomment}
+
+This method is used to get comment data for the specified cell.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">DOM Element</span></td>
+<td class="description">Pass the DOM element to get comment data as object.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getComment(xlObj.getCell(1, 5)); // Get the specified cell comment data.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Get the specified cell comment data
+$("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));        
+</script>
+
+{% endhighlight %}
+
+#### XLComment.setComment(\[range\], data, \[showEditPanel\])
+{:#methods:xlcomment-setcomment}
+
+This method is used to set new comment in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string / array</span> </td>
+<td class="description"><span class="optional">Optional</span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the comment data.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}showEditPanel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional</span> Pass true to show comment in edit mode </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To set comment in Spreadsheet.
+xlObj.XLComment.setComment(spreadsheetObj.getCell(1, 5), "Spreadsheet Comment!");
+</script>
+
+{% endhighlight %}
+
+#### XLComment.showAllComments()
+{:#methods:xlcomment-showallcomments}
+
+This method is used to show all the comments in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a show all comment request to the Spreadsheet.
+xlObj.XLComment.showAllComments();
+</script>
+
+{% endhighlight %}
+
+#### XLComment.showHideComment(\[trgtCell\])
+{:#methods:xlcomment-showhidecomment}
+
+This method is used to show or hide the specific comment in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">DOM Element</type></td>
+<td class="description"><span class="optional">Optional</span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To show/hide comment request in Spreadsheet.
+xlObj.XLComment.showHideComment(spreadsheetObj.getCell(1, 5));
+</script>
+
+{% endhighlight %}
+
+### XLDragDrop
+{:#methods:xldragdrop}
+
+#### XLDragDrop.moveRangeTo(sourceRange, destinationRange)
+{:#methods:xldragdrop-moverangeto}
+
+This method is used to drag and drop the selected range of cells to destination range in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sourceRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object/array</span></td>
+<td class="description">Pass the source range to perform drag and drop.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}destinationRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object/array</span></td>
+<td class="description">Pass the destination range to drop the dragged cells.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var options = {sourcerange: [1,2,1,2], destinationrange: [1,3,1,6]}
+xlObj.XLDragDrop.moveRangeTo(options.sourcerange, options.destinationrange); // To perform drag and drop in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLDragFill
+{:#methods:xldragfill}
+
+#### XLDragFill.autoFill(options)
+{:#methods:xldragfill-autofill}
+
+This method is used to perform autofill in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the options to perform autofill in Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var options = {dataRange: “A1:B1”, direction: "right", fillRange:”A1:B2”}
+xlObj.XLDragFill.autoFill(options); // To perform autofill in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLDragFill.hideAutoFillElement()
+{:#methods:xldragfill-hideautofillelement}
+
+This method is used to hide the auto fill element in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide auto fill element in Spreadsheet
+xlObj.XLDragFill.hideAutoFillElement();
+</script>
+
+{% endhighlight %}
+
+#### XLDragFill.hideAutoFillOptions()
+{:#methods:xldragfill-hideautofilloptions}
+
+This method is used to hide the auto fill options in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide auto fill element in Spreadsheet
+xlObj.XLDragFill.hideAutoFillOptions();
+</script>
+
+{% endhighlight %}
+
+
+#### XLDragFill.positionAutoFillElement(isdragfill)
+{:#methods:xldragfill-positionautofillelement}
+
+This method is used to set position of the autofill element in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}isdragfill{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass the drag fill status as boolean value for show auto fill options in Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLDragFill.positionAutoFillElement(false); // set position of the autofill element in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLEdit
+{:#methods:xledit}
+
+#### XLEdit.calcNow(\[sheetIdx\])
+{:#methods:xledit-clacnow}
+
+This method is used to calculate formulas in the specified sheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLEdit.calcNow(1); // To calculate formulas in specified sheet in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLEdit.editCell(rowIdx, colIdx, oldData)
+{:#methods:xledit-editcell}
+
+This method is used to edit a particular cell based on the row index and column index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index to edit particular cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index to edit particular cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}oldData{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to maintain previous cell value.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Edit particular cell based on row index and column index.
+spreadsheetObj.XLEdit.editCell(1, 1, true);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Edit particular cell based on row index and column index.
+$("#Spreadsheet").ejSpreadsheet("XLEdit").editCell(1, 1, true);
+</script> 
+
+{% endhighlight %}
+
+#### XLEdit.getPropertyValue(rowIdx, colIdx, \[prop\], \[sheetIdx\])
+{:#methods:xledit-getpropertyvalue}
+
+This method is used to get the property value of particular cell, based on the row and column index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index to get the property value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index to get the property value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prop{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> Pass the property name that you want ("value", "value2", "type", "cFormatRule", "range", "thousandSeparator", "rule", "format", "border", "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders", "tformats", "tborders", "isFilterHeader", "filterState", "tableName", "comment", "formatStr", "decimalPlaces", "cellType").</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span> Pass the index of the sheet.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Object/string/array based on the property.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var ssObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Get the cell property value.
+xlObj.XLEdit.getPropertyValue(1, 1, "value", 1);
+</script>
+
+{% endhighlight %}
+
+#### XLEdit.getPropertyValueByElem(elem, property, sheetIdx)
+{:#methods:xledit-getpropertyvaluebyelem}
+
+This method is used to get the property value in specified cell in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}elem{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Pass the cell element to get property value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the property name that you want ("value", "value2", "type", "cFormatRule", "range", "thousandSeparator", "rule", "format", "border", "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders", "tformats", "tborders", "isFilterHeader", "filterState", "tableName", "comment", "formatStr", "decimalPlaces", "cellType").</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the index of sheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Get the cell property value based on tag element.
+xlObj.XLEdit.getPropertyValueByElem(xlObj.getCell(1, 1), "value", 1);
+</script>
+
+{% endhighlight %}
+
+#### XLEdit.saveCell()
+{:#methods:xledit-savecell}
+
+This method is used to save the edited cell value in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Save the edited cell value
+xlObj.XLEdit.saveCell();
+</script>
+
+{% endhighlight %}
+
+#### XLEdit.updateCell(cell, value)
+{:#methods:xledit-updatecell}
+
+This method is used to update a particular cell value in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass row index and column index of the cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}value{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/number</span></td>
+<td class="description">Pass the cell value.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Update the specified values to a particular cell.
+xlObj.XLEdit.updateCell({rowIndex: 1, colIndex: 1}, "product");
+</script>
+
+{% endhighlight %}
+
+#### XLEdit.updateCellValue(cellIdx, val, formatclass, sheetIdx)
+{:#methods:xledit-updatecellvalue}
+
+This method is used to update a particular cell value and its format in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cellIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass row index and column index of the cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}val{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/number</span></td>
+<td class="description">Pass the cell value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}formatclass{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the class name to update format. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
+className = xlObj.XLFormat.getFormatHashCode({ color: "red" });
+// To update the specified values in a particular cell.
+xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1);
+</script>
+
+{% endhighlight %}
+
+### XLExport
+{:#methods:xlexport}
+
+#### XLExport.export(type)
+{:#methods:xlexport-export}
+
+This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
+Note: Using export, user must be provided the excelUrl and csvUrl property under exportSettings.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the export type that you want. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To save the worksheet on Excel format
+xlObj.XLExport.export(“Excel”);
+</script>
+
+{% endhighlight %}
+
+### XLFilter
+{:#methods:xlfilter}
+
+#### XLFilter.clearFilter()
+{:#methods:xlfilter-clearfilter}
+
+This method is used to clear the filter in filtered columns in the Spreadsheet.
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Clear filter for columns in the sheet.
+xlObj.XLFilter.clearFilter();
+</script>
+
+{% endhighlight %}
+
+#### XLFilter.filter(range)
+{:#methods:xlfilter-filter}
+
+This method is used to apply filter for the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range of the selected cells.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To apply filter for specified range of cells.
+xlObj.XLFilter.filter("A3:C8");
+</script>
+
+{% endhighlight %}
+
+#### XLFilter.filterByActiveCell()
+{:#methods:xlfilter-filterbyactivecell}
+
+This method is used to apply filter for the column by active cell's value in the Spreadsheet.
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Apply filter for columns with active cell in the sheet.
+xlObj.XLFilter.filterByActiveCell();
+</script>
+
+{% endhighlight %}
+
+### XLFormat
+{:#methods:xlformat}
+
+#### XLFormat.createTable( tableObject, \[range\])
+{:#methods:xlformat-createtable}
+
+This method is used to create a table for the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}tableObject{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the table object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span>  If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), tableObj;
+tableObj = { header: true, name: "Table 0", formatName: "TableStyleLight1"};
+// Sends a create table request to the Spreadsheet
+xlObj.XLFormat.createTable(tableObj, "A1:C6");
+</script>
+
+{% endhighlight %}
+
+#### XLFormat.format(formatObj, range)
+{:#methods:xlformat-format}
+
+This method is used to set format style and values in a cell or range of cells.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}formatObj{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the formatObject which contains style, type, format, groupSeparator and decimalPlaces.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range indices to format cells.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sends a format request to the Spreadsheet.
+xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
+</script>
+
+{% endhighlight %}
+
+#### XLFormat.removeTable(tableId)
+{:#methods:xlformat-tableid}
+
+This method is used to remove table with specified tableId in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}tableId{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the tableId that you want to remove.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sends a remove table request to the Spreadsheet.
+xlObj.XLFormat.removeTable(1);
+</script>
+
+{% endhighlight %}
+
+#### XLFormat.updateDecimalPlaces(type, range)
+{:#methods:xlformat-updatedecimalplaces}
+
+This method is used to update the decimal places for numeric value for the selected range of cells in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the decimal places type in increment/decrement.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range indices.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update decimal place value in the range of cells in the Spreadsheet.
+xlObj.XLFormat.updateDecimalPlaces("increment", "A1:C3");
+</script>
+
+{% endhighlight %}
+
+#### XLFormat.updateFormat(formatobj, \[range\])
+{:#methods:xlformat-updateformat}
+
+This method is used to update the format for the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}formatobj{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the format object that you want to update.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), formatObj;
+formatObj = { format: ["e-formatFFFF006N2N2N1N1N1N1N2N1N", "", "e-formatFFFF006N2N2N1N1N1N1N2N1N"], leftborder: ["","",""], topborder: ["e-border1N1N6N1N1N6NS1N1N6N11000000"]};
+// To update a format in the specified range of cells.
+xlObj.XLFormat.updateFormat(formatObj, [1, 0, 3, 0]);
+</script>
+
+{% endhighlight %}
+
+#### XLFormat.updateUniqueFormat(formatclass, \[range\])
+{:#methods:xlformat-updateuniqueformat}
+
+This method is used to update the unique format for selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}formatclass{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the unique format class.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update the unique format.
+xlObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N1N1N1N1N2N1N", [1, 0, 4, 0]);
+</script>
+
+{% endhighlight %}
+
+### XLFreeze
+{:#methods:xlfreeze}
+
+#### XLFreeze.freezeColumns(colIdx)
+{:#methods:xlfreeze-freezecolumns}
+
+This method is used to freeze columns upto the specified column index in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the column to be freezed.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Freeze a column in the sheet.
+xlObj.XLFreeze.freezeColumns(2);
+</script>
+
+{% endhighlight %}
+
+#### XLFreeze.freezeLeftColumn()
+{:#methods:xlfreeze-freezeleftcolumn}
+
+This method is used to freeze the first column in the Spreadsheet.
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Freeze the first column in the sheet.
+xlObj.XLFreeze.freezeLeftColumn();
+</script>
+
+{% endhighlight %}
+
+#### XLFreeze.freezePanes(cell)
+{:#methods:xlfreeze-freezepanes}
+
+This method is used to freeze rows and columns before the specified cell in the Spreadsheet.
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Row index and column index of the cell which you want to freeze.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Freeze some rows and columns in the sheet.
+xlObj.XLFreeze.freezePane({ rowIndex: 2, colIndex: 3});
+</script>
+
+{% endhighlight %}
+
+#### XLFreeze.freezeRows(rowIdx)
+{:#methods:xlfreeze-freezerows}
+
+This method is used to freeze rows upto the specified row index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the row to be freeze.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Freeze a row in the sheet.
+xlObj.XLFreeze.freezeRows(2);
+</script>
+
+{% endhighlight %}
+
+#### XLFreeze.freezeTopRow()
+{:#methods:xlfreeze-freezetoprow}
+
+This method is used to freeze the top row in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Freeze the top row in the sheet.
+xlObj.XLFreeze.freezeTopRow();
+</script>
+
+{% endhighlight %}
+
+
+### XLPrint
+{:#methods:xlprint}
+
+#### XLPrint.printSelection()
+{:#methods:xlprint-printselection}
+
+This method is used to print the selected contents in the Spreadsheet.
+#### Example
+
+{% highlight html %}
+<script>
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Print the selected area in the sheet.
+xlObj.XLPrint.printSelection();
+</script>
+
+{% endhighlight %}
+
+#### XLPrint.printSheet()
+{:#methods:xlprint-printsheet}
+
+This method is used to print the entire contents in the active sheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Sends a print entire sheet request to the Spreadsheet.
+xlObj.XLPrint.printSheet();
+</script>
+
+{% endhighlight %}
+
+### XLResize
+{:#methods:xlresize}
+
+#### XLResize.getColWidth(colIdx)
+{:#methods:xlresize-getcolwidth}
+
+This method is used to get the column width of the specified column index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Number
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Gets the particular column width in Spreadsheet.
+xlObj.XLResize.getColWidth(2);
+</script>
+
+{% endhighlight %}
+
+#### XLResize.getRowHeight(rowIdx)
+{:#methods:xlresize-getrowheight}
+
+This method is used to get the row height of the specified row index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index which you want to find its height.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Number
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Gets the particular row height in Spreadsheet.
+xlObj.XLResize.getRowHeight(2);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets the particular row height in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("XLResize.getRowHeight”,2);
+</script>
+
+{% endhighlight %}
+
+#### XLResize.setColWidth(colIdx, size)
+{:#methods:xlresize-setcolwidth}
+
+This method is used to set the column width of the specified column index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}size{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the width value that you want to set.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sets the column width in the Spreadsheet.
+xlObj.XLResize.setColWidth(2, 100);
+</script>
+
+{% endhighlight %}
+
+#### XLResize.setRowHeight(rowIdx, size)
+{:#methods:xlresize-setrowheight}
+
+This method is used to set the row height of the specified row index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}size{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the height value that you want to set.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sets the row height in Spreadsheet.
+xlObj.XLResize.setRowHeight(2, 100);
+</script>
+
+{% endhighlight %}
+
+
+### XLRibbon
+{:#methods:xlribbon}
+
+#### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\])
+{:#methods:xlribbon-addnamedrange}
+
+This method is used to add a new name in the Spreadsheet name manager.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the name that you want to define in name manager.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}refersTo{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the cell reference.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}comment{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> Pass comment, if you want.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional</span>  Pass the sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To define new name in the Spreadsheet.
+xlObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
+</script>
+
+{% endhighlight %}
+
+#### XLRibbon.autoSum(type, range)
+{:#methods:xlribbon-autosum}
+
+This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formulas in the selected range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">To pass the type("SUM","MAX","MIN","AVG","COUNT").</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">If range is specified, it will apply autosum for the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.autoSum("SUM", "A2:A6"); // To insert the formula after selected range of cells in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLRibbon.removeNamedRange(name)
+{:#methods:xlribbon-removenamedrange}
+
+This method is used to delete the defined name in the Spreadsheet name manager.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the defined name that you want to remove from name manager.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To remove the define name in Spreadsheet name manager.
+xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
+</script>
+
+{% endhighlight %}
+
+### XLSearch
+{:#methods:xlsearch}
+
+#### XLSearch.replaceAllByBook(findData, replaceData, isCSen, isEMatch)
+{:#methods:xlsearch-replaceallbybook}
+
+This method is used to find and replace all data by workbook in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}findData{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search data.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}replaceData{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the replace data.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isCSen{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with case-sensitive.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isEMatch{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with entire cell contents.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.replaceAllByBook("Sheet", "Spreadsheet", true, false); // Sends a replace all by workbook request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLSearch.replaceAllBySheet(findData, replaceData, isCSen, isEMatch)
+{:#methods:xlsearch-replaceallbysheet}
+This method is used to find and replace all data by sheet in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}findData{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search data.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}replaceData{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the replace data.</td></tr>
+<tr>
+<td class="name">{% highlight html %}isCSen{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with case-sensitive.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isEMatch{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with entire cell contents.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.replaceAllBySheet("Sheet", "Spreadsheet", true, false); // Sends a replace all by sheet request to Spreadsheet
+</script>
+
+{% endhighlight %}
+
+### XLSelection
+{:#methods:xlselection}
+
+#### XLSelection.getSelectedCells(sheetIdx)
+{:#methods:xlselection-getselectedcells}
+
+This method is used to get the selected cells element based on specified sheet index in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index to get the cells element.</td>
+</tr>
+</tbody>
+</table>
+
+Returns:
+Element
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.getSelectedCells(1); //Gets the selected cells element.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.refreshSelection(\[range\])
+{:#methods:xlselection-refreshselection}
+
+This method is used to refresh the selection in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional</span> Pass range to refresh selection.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To defined refresh selection in Spreadsheet.
+xlObj.XLSelection.refreshSelection([1,2,3,4]);
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectColumn(colIdx)
+{:#methods:xlselection-selectcolumn}
+
+This method is used to select a single column in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column index value.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.selectColumn(1); //To select a single column in the active sheet.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectColumns(startIdx, endIdx)
+{:#methods:xlselection-selectcolumns}
+
+This method is used to select entire columns in a specified range (start index and end index) in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column start index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the column end index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specified range.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectRange(range, endCell)
+{:#methods:xlselection-selectrange}
+
+This method is used to select the specified range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass range which want to select.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the row and column index of the end cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.selectRange(“A1:B2”, {rowIndex: 7, colIndex: 1 }); //To select range of cells in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectRow(rowIdx)
+{:#methods:xlselection-selectrow}
+
+This method is used to select a single row in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the row index value.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.selectRow(1); //To select a single row in the specified sheet index in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectRows(startIdx, endIdx)
+{:#methods:xlselection-selectrows}
+
+This method is used to select entire rows in a specified range (start index and end index) in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}startIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the start row index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}endIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the end row index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.selectRows(2, 4); //To select entire rows in the specified range.
+</script>
+
+{% endhighlight %}
+
+#### XLSelection.selectSheet()
+{:#methods:xlselection-selectsheet}
+
+This method is used to select all cells in active sheet.
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+spreadsheetObj.XLSelection.selectSheet(); //To select all cells in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLSort
+{:#methods:xlsort}
+
+#### XLSort.sortByColor(operation, color, range)
+{:#methods:xlsort-sortbycolor}
+
+This method is used to sort a particular range of cells based on its cell or font color in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}operation{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass 'PutCellColor' to sort by cell color or 'PutFontColor' for by font color.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}color{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the HEX color code to sort.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To sort range based on cell color in the Spreadsheet.
+xlObj.XLSort.sortByColor("PutCellColor", {background-color” : "#EC2024", color:  "#6N2N2N"}, "D2:D8"); </script>
+
+{% endhighlight %}
+
+#### XLSort.sortByRange(range, columnName, direction)
+{:#methods:xlsort-sortbyrange}
+
+This method is used to sort a particular range of cells based on its values in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/string</span></td>
+<td class="description">Pass the range to sort.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the column name.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the direction to sort (ascending or Decending).</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To sort the cell value in a specified range in the Spreadsheet.
+xlObj.XLSort.sortByRange("A1:D3", "B",  "ascending"); 
+</script>
+
+{% endhighlight %}
+
+### XLValidate
+{:#methods:xlvalidate}
+
+#### XLValidate.applyDVRules(range, values, type, required, showErrorAlert)
+{:#methods:xlvalidate-applydvrules}
+
+This method is used to apply data validation rules in a selected range of cells based on the defined condition in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">If range is specified, it will apply rules for the specified range else it will use the current selected range. </td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}values{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Pass the validation condition, value1 and value2.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the data type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}required{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass 'true' if you ignore blank values.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}showErrorAlert{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass 'true' if you want to show an error alert.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To apply validation rule to allow whole number between 15 and 20.
+xlObj.XLValidate.applyDVRules("A1:D3", ["Between", "15", "20"], "number" ,true, true);
+</script>
+
+{% endhighlight %}
+
+#### XLValidate.clearDV(\[range\])
+{:#methods:xlvalidate-cleardv}
+
+This method is used to clear the applied validation rules in a specified range of cells in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To clear validation rules in selected cells.
+spreadsheetObj.XLValidate.clearDV("A2:A7");
+</script>
+
+{% endhighlight %}
+
+#### XLValidate.highlightInvalidData(\[range\])
+{:#methods:xlvalidate-highlightinvaliddata}
+
+This method is used to highlight invalid data in a specified range of cells in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional</span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//initialize the Spreadsheet object
+var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To highlight invalid cell data
+spreadsheetObj.XLValidate.highlightInvalidData("A2:A7");
+</script>
+
+{% endhighlight %}
+
+## Events
+
+### actionBegin
+{:#events:actionbegin}
+
+Triggered for every action before its starts.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when actionBegin event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}afterFormat{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the applied style format object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}beforeFormat{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the applied style format object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the cell range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}reqType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the action format.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}gotoIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns goto index while paging.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns boolean value. If create new sheet it returns true.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Return column name while sorting.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}colSelected{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns selected columns while sorting or filtering begins.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sortDirection{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns sort direction while sort action begins.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//actionBegin event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+actionBegin: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### actionComplete
+{:#events:actioncomplete}
+
+Triggered for every action complete.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tbody>
+</thead>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when actionComplete event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}selCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/object</span></td>
+<td class="description">Returns the applied cell format object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}reqType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the request type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//actionComplete event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+actionComplete: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### autoFillBegin
+{:#events:autofillbegin}
+
+Triggered when the auto fill operation begins.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when autoFillBegin event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}dataRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns autofill begin cell range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns which direction drag the autofill.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}fillRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns fill cells range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}fillType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the auto fill type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr><tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//drag event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+autoFillBegin: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### autoFillComplete
+{:#events:autofillcomplete}
+
+Triggered when the auto fill operation completes.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when autoFillComplete event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}dataRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns autofill begin cell range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns which direction to drag the autofill.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}fillRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns fill cells range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}fillType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the auto fill type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//autoFillComplete event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+autoFillComplete: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### beforeCellFormat
+
+Triggered before the cells to be formatted.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeCellFormat event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr><tr>
+<td class="name">{% highlight html %}format{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the applied style format object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cells{% endhighlight %}</td>
+<td class="type"><span class="param-type">array/object</span></td>
+<td class="description">Returns the selected cells.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//beforeCellFormat event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+beforeCellFormat: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+
+### beforeCellSelect
+
+Triggered before the cell selection.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeCellSelect event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}prevRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the previous cell range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}currRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the current cell range.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// beforeCellSelect event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+beforeCellSelect: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### beforeDrop
+
+Triggered before the selected cells are dropped.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeDrop event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the currentcell row and column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the drag cells range object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}preventAlert{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cell Overwriting alert option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//beforeDrop event for Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet({
+beforeDrop: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### beforeOpen
+
+Triggered before the contextmenu is open.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeOpen event is triggered. 
+<table class="params">
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//beforeOpen event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+beforeOpen: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### beforePanelOpen
+
+Triggered before the activation panel is open.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforePanelOpen event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}activationPanel{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the activation panel element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the range option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// beforePanelOpen event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+beforePanelOpen: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### cellClick
+
+Triggered when click on sheet cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the click cell element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the column index of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}rowIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the row index of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the column name of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the column information.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//cellClick event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+cellClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### cellEdit
+
+Triggered when the cell is edited.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellEdit event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">element<span></td>
+<td class="description">Returns the click cell element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the columnName of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the column field information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//cellEdit event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+cellEdit: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### cellHover
+
+Triggered when mouse hover on cell in sheets.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellHover event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// cellHover event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+cellHover: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### cellSave
+
+Triggered when save the edited cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellSave event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the save cell element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the columnName of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the column field information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}pValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the cell previous value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}value{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the cell value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//cellSave event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+cellSave: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### contextMenuClick
+
+Triggered when click the contextmenu items.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when contextMenuClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}Id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element Id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}element{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns event information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}events{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns target element and event information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object<span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element parent Id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}parentText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element parent text.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}text{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element text.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// contextMenuClick event for Spreadsheet.
+$('#Spreadsheet').ejSpreadsheet({ 
+contextMenuClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### drag
+
+Triggered when the selected cells are being dragged.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when drag event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the currentcell row and columnn index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the drag cells range object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//drag event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+drag: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### dragStart
+
+Triggered when the selected cells are initiated to drag.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when dragStart event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the current cell row and column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the drag cells range object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//dragStart event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+dragStart: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### drop
+
+Triggered when the selected cells are dropped.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when drop event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the current cell row and column index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the drag cells range object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//drop event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+drop: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### editRangeBegin
+
+Triggered before the range editing starts.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when editRangeBegin event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr><tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the range option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// editRangeBegin event for Spreadsheet.
+$('#Spreadsheet').ejSpreadsheet({ 
+editRangeBegin: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### editRangeComplete
+
+Triggered after range editing completes.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when editRangeComplete event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the range option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// editRangeComplete event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+editRangeComplete: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### load
+
+Triggered before the sheet is loaded.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when load event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}sheetIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the active sheet index.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//load event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+load: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### loadComplete
+
+Triggered after the sheet is loaded.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when loadComplete event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// loadComplete event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+loadComplete: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+
+### menuClick
+
+Triggered every click of the menu item.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when menuClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}element{% endhighlight %}</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns menu click element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the event information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element parent Id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}parentText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element parent text.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}text{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns target element text.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// menuClick event for Spreadsheet.
+$('#Spreadsheet').ejSpreadsheet({ 
+menuClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### openFailure
+
+Triggered when import sheet is failed to open.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type">object</td>
+<td class="description">Arguments when openFailure event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}failureType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the failure type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}status{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the status index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}statusText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the status in text.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//openFailure event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+openFailure: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### pagerClick
+
+Triggered when pager item is clicked in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when pagerClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}activeSheet{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the active sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}gotoSheet{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the new sheet index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns whether new sheet icon is clicked.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// pagerClick event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+pagerClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### ribbonClick
+
+Triggered when click on the ribbon.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when ribbonClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}Id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns element Id.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prop{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns target information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}status{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns status.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}isChecked{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns ischecked in boolean.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// ribbonClick event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+ribbonClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### seriesRendering
+
+Triggered when the chart series rendering.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when seriesRendering event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns chart data and chart information.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the chart model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//seriesRendering event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+seriesRendering: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### tabClick
+
+Triggered when click the ribbon tab.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when tabClick event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}activeIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the active tab index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}activeHeader{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns active tab header element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prevActiveHeader{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns previous active tab header element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prevActiveIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns previous active tab index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// tabClick event for Spreadsheet.
+$('#Spreadsheet').ejSpreadsheet({ 
+tabClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### tabSelect
+
+Triggered when select the ribbon tab.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when tabSelect event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<td>Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}activeIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the active tab index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}activeHeader{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns active tab header element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prevActiveHeader{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns previous active tab header element.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}prevActiveIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns previous active tab index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// tabSelect event for Spreadsheet.
+$('#Spreadsheet').ejSpreadsheet({ 
+tabSelect: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+
+
