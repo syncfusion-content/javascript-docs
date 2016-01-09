@@ -6463,7 +6463,7 @@ Defines the scrollable region of diagram. See<a href="global.html#scrolllimit">S
 ### pageSettings.boundaryConstraints `String`
 {:#members:pagesettings-boundaryConstraints}
 
-Defines the scrollable region of diagram. See<a href="global.html#boundaryConstraints">Boundary Constraints</a>
+Defines the draggable region of diagram elements. See<a href="global.html#boundaryConstraints">Boundary Constraints</a>
 
 
 #### Default Value

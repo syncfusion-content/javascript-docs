@@ -288,18 +288,3 @@ $("#palette").ejSymbolPalette({
 
 {% endhighlight %}
 To explore the properties of symbol palette, refer to [Symbol Palette Properties](/js/api/ejsymbolpalette#members "Symbol Palette Properties").
-
-## Drop nodes into diagram 
-
-The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer.
-The `diagramId` property of symbol palette allows to define the Diagram over which the symbol items can be dragged and dropped. The following code example illustrates how to relate the symbol palette with the Diagram.
-
-{% highlight js %}
-
-//Relates Diagram to symbol palette
-$("#symbolpalette").ejSymbolPalette({
-	//Specifies the diagramId
-	diagramId: "diagram",
-});
-
-{% endhighlight %}
