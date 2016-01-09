@@ -9546,7 +9546,7 @@ Triggers while performing the undo/redo operation.
 		<tr>
 			<td class="name">changes</td>
 			<td class="type">Array</td>			 
-			<td class="description">An array of objects, where each object represents the changes made in last undo/redo</td>
+			<td class="description">An array of objects, where each object represents the changes made in last undo/redo. To explore how the changes are defined, refer [Undo Redo Changes](#undo-redo-changes)</td>
 		</tr>
 		<tr>
 			<td class="name">Source</td>
