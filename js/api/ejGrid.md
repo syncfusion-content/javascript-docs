@@ -6836,6 +6836,54 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 </script>{% endhighlight %}
 
 
+### selectRows(rowIndexes)
+{:#methods:selectRows}
+
+
++
+
+<table class="param">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+rowIndexes{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description last">Pass array of rowIndexes for selecting rows</td>
+</tr>
+</tbody>
+</table>
+
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Selects rows based on the given array of indexes
+gridObj.selectRows([1,3,5,7]);
+
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Selects rows based on the given array of indexes
+$("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
+</script>{% endhighlight %}
+
+
 ### setCellText()
 {:#methods:setcelltext}
 
