@@ -9530,9 +9530,9 @@ groupChange:function (args) {}
 {% endhighlight %}
 
 ### historyChange 
-{:#events:historyChange}
+{:#events:historychange}
 
-Triggers while performing the undo/redo operation.
+Triggers when a change is reverted or restored(undo/redo)
 
 <table class="params">
 	<thead>
