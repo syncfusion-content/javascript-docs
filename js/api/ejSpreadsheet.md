@@ -410,6 +410,7 @@ allowFiltering: true
 {:#members:allowformatastable}
 
 Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
+
 Note: allowCellFormatting and allowFiltering must be true while using format as table.
 
 #### Default Value
@@ -434,6 +435,7 @@ allowFormatAsTable: true
 {:#members:allowformatpainter}
 
 Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected range and apply it to another range.
+
 Note: allowCellFormatting must be true while enable this feature.
 
 #### Default Value
@@ -457,6 +459,7 @@ allowFormatPainter: true
 {:#members:allowformulabar}
 
 Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
+
 #### Default Value
 * true
 
@@ -477,6 +480,7 @@ allowFormulaBar: false
 {:#members:allowfreezing}
 
 Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
+
 #### Default Value
 * true
 
@@ -497,6 +501,7 @@ allowFreezing : true
 {:#members:allowhyperlink}
 
 Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a webpage.
+
 #### Default Value
 * true
 
@@ -517,7 +522,9 @@ allowHyperlink: true
 {:#members:allowimport}
 
 Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
+
 Note: Need to specify importMapper while enabling this feature. Import feature supports xls, xlsx file formats.
+
 #### Default Value
 * true
 
@@ -542,6 +549,7 @@ importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
 {:#members:allowinsert}
 
 Gets or sets a value that indicates whether to enable or disable the insert action in the Spreadsheet. By enabling this feature, you can insert new rows, columns, cells and sheet.
+
 #### Default Value
 * true
 
@@ -562,6 +570,7 @@ allowInsert: true
 {:#members:allowkeyboardnavigation}
 
 Gets or sets a value that indicates whether to enable or disable keyboard navigation feature in the Spreadsheet.
+
 #### Default Value
 * true
 
@@ -680,6 +689,7 @@ allowSelection: true
 {:#members:allowsorting}
 
 Gets or sets a value that indicates whether to enable the sorting feature in the Spreadsheet. 
+
 #### Default Value
 * true
 
@@ -699,6 +709,7 @@ allowSorting: true
 {:#members:allowundoredo}
 
 Gets or sets a value that indicates whether to enable or disable undo and redo feature in the Spreadsheet.
+
 #### Default Value
 * true
 
@@ -763,6 +774,7 @@ Gets or sets an object that indicates to customize the autofill behavior in the 
 {:#members:autofillsettings-filltype}
 
 This property is used to set filltype unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
+
 Note: allowAutoFill must be true while setting filltype. 
 
 #### Default Value
@@ -787,6 +799,7 @@ fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
 {:#members:autofillsettings-showfilloptions}
 
 Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
+
 Note: allowAutoFill must be true while enabling this property.
 
 #### Default Value
@@ -882,6 +895,7 @@ columnCount: 30
 {:#members:columnwidth}
 
 Gets or sets a value that indicates to define the common width for each column in the Spreadsheet.
+
 #### Default Value
 * 60
 
@@ -921,6 +935,7 @@ cssClass: "gradient-lime"
 {:#members:enablecontextmenu}
 
 Gets or sets a value that indicates whether to enable or disable context menu in the Spreadsheet.
+
 #### Default Value
 * true
 
@@ -945,6 +960,7 @@ Gets or sets an object that indicates to customize the exporting behavior in Spr
 {:#members:exportsettings-allowexporting}
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
+
 Note: User must specify excelUrl or csvUrl while enabling this feature.
 
 #### Default Value
@@ -970,6 +986,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 {:#members:exportsettings-csvurl}
 
 Gets or sets a value that indicates to define csvUrl for export to csv format.
+
 Note: User must specify allowExporting true while use this property.
 
 #### Default Value
@@ -1018,6 +1035,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 {:#members:exportsettings-password}
 
 Gets or sets a value that indicates to define password while export to excel format.
+
 Note: User must specify allowExporting true while use this property.
 
 #### Default Value
@@ -1048,6 +1066,7 @@ Gets or sets an object that indicates to customize the format behavior in the Sp
 {:#members:formatsettings-allowcellborder}
 
 Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
+
 Note: allowCellFormatting must be true while using this property.
 
 #### Default Value
@@ -1071,6 +1090,7 @@ allowCellBorder: true
 {:#members:formatsettings-allowdecimalplaces}
 
 Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
+
 Note: allowCellFormatting must be true while using this property.
 
 #### Default Value
@@ -1095,6 +1115,7 @@ allowDecimalPlaces: true
 {:#members:formatsettings-allowfontfamily}
 
 Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
+
 Note: allowCellFormatting must be true while using this property. 
 
 #### Default Value
@@ -1119,10 +1140,12 @@ allowFontFamily: true
 {:#members:importsettings}
 
 Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
+
 #### importSettings.importMapper `String`
 {:#members:importsettings-importmapper}
 
 Sets import mapper to perform import feature in Spreadsheet.
+
 Note: allowImport must be true while using this property.
 
 #### Default Value
@@ -1147,6 +1170,7 @@ importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
 {:#members:importsettings-importurl}
 
 Sets import Url to access the online files in the Spreadsheet.
+
 Note: allowImport must be true while using this property.
 
 #### Default Value
@@ -1171,6 +1195,7 @@ importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx", //It
 {:#members:importsettings-password}
 
 Gets or sets a value that indicates to define password while importing in the Spreadsheet.
+
 Note: allowImport must be true while using this property.
 
 #### Default Value
@@ -1219,10 +1244,12 @@ locale: "es-ES"
 {:#members:picturesettings}
 
 Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
+
 #### pictureSettings.allowPictures `Boolean`
 {:#members:picturesettings-allowpictures}
 
 Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
+
 #### Default Value
 * true
 
@@ -1290,10 +1317,12 @@ width: 500
 {:#members:printsettings}
 
 Gets or sets an object that indicates to customize the print option in Spreadsheet.
+
 #### printSettings.allowPageSetup `Boolean`
 {:#members:printsettings-allowpagesetup}
 
 Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
+
 Note: allowPrinting must be true while enabling allowPageSetup.
 
 #### Default Value
@@ -1318,6 +1347,7 @@ allowPageSetup: true
 {:#members:printsettings-allowpagesize}
 
 Gets or sets a value that indicates whether to enable or disable pagesize support for printing in Spreadsheet.
+
 Note: allowPrinting must be true while enabling allowPageSetup.
 
 #### Default Value
@@ -1404,6 +1434,7 @@ rowHeight: 30
 {:#members:scrollsettings}
 
 Gets or sets an object that indicates to customize the scroll options in the Spreadsheet.
+
 #### scrollSettings.allowScrolling `Boolean`
 {:#members:scrollsettings-allowscrolling}
 
@@ -1452,6 +1483,7 @@ allowSheetOnDemand: true,
 {:#members:scrollsettings-allowvirtualscrolling}
 
 Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
+
 Note: allowScrolling must be true while enabling allowVirtualScrolling.
 
 #### Default Value
@@ -1472,7 +1504,7 @@ allowVirtualScrolling: true
 
 {% endhighlight %}
 
-#### scrollSettings.height  `Number / String`
+#### scrollSettings.height  `Number/String`
 {:#members:scrollsettings-height}
 
 Gets or sets the value that indicates to define the height of spreadsheet.
@@ -1524,6 +1556,7 @@ isResponsive: true
 {:#members:scrollsettings-scrollmode}
 
 Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
+
 Note: allowScrolling must be true while enabling this property.
 
 #### Default Value
@@ -1546,7 +1579,7 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite,
 
 {% endhighlight %}
 
-#### scrollSettings.width `Number / String`
+#### scrollSettings.width `Number/String`
 {:#members:scrollsettings-width}
 
 Gets or sets the value that indicates to define the height off spreadsheet.
@@ -1574,10 +1607,12 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite
 {:#members:selectionsettings}
 
 Gets or sets an object that indicates to customize the selection options in the Spreadsheet.
+
 #### selectionSettings.activeCell `String`
 {:#members:selectionsettings-activecell}
 
 Gets or sets a value that indicates to define active cell in spreadsheet.
+
 Note: allowSelection must be true while using this property.
 
 #### Default Value
@@ -1602,6 +1637,7 @@ activeCell: "A1"
 {:#members:selectionsettings-animationtime}
 
 Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
+
 Note: allowSelection and enableAnimation must be true while using this property.
 
 #### Default Value
@@ -1651,6 +1687,7 @@ enableAnimation: true
 {:#members:selectionsettings-selectiontype}
 
 Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
+
 Note: allowSelection must be true while using this property.
 
 #### Default Value
@@ -1677,7 +1714,9 @@ enableAnimation: true
 {:#members:selectionsettings-selectionunit}
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and Multirange.
+
 Note: allowSelection must be true while using this property.
+
 #### Default Value
 * ej.Spreadsheet.SelectionUnit.MultiRange
 
@@ -1700,6 +1739,7 @@ selectionUnit: ej.Spreadsheet.SelectionUnit.MultiRange
 {:#members:sheetcount}
 
 Gets or sets a value that indicates to define the number of sheets to be created at the initial load.
+
 #### Default Value
 * 1
 
@@ -1759,6 +1799,7 @@ showHeader: true
 {:#members:showribbon}
 
 Gets or sets a value that indicates whether to show or hide ribbon in the Spreadsheet.
+
 #### Default Value
 * true
 
@@ -1960,7 +2001,7 @@ $("#Spreadsheet").ejSpreadsheet("clearBorder", "A2:A6");
 {% endhighlight %}
 
 ### clearContents(\[range\])
-{:#methods:clearContents}
+{:#methods:clearcontents}
 
 This property is used to clear the contents in the specified range in Spreadsheet.
 <table class="params">
@@ -2189,6 +2230,7 @@ $("#Spreadsheet").ejSpreadsheet("deleteEntireColumn”,2,3);
 {:#methods:deleteentirerow}
 
 This method is used to delete the entire row which is selected.
+
 <table class="params">
 <thead>
 <tr>
@@ -2208,7 +2250,7 @@ This method is used to delete the entire row which is selected.
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the end row index.</td>
 </tr>
-<tbody>
+</tbody>
 </table>
 
 #### Example
@@ -2235,6 +2277,7 @@ $("#Spreadsheet").ejSpreadsheet("deleteEntireRow", 2, 3);
 {:#methods:deletesheet}
 
 This method is used to delete a particular sheet in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -2950,7 +2993,9 @@ $("#Spreadsheet").ejSpreadsheet("getRangeData", [2, 6, 2, 6], false, ["value"], 
 
 ### getRangeIndices(range)
 {:#methods:getrangeindices}
+
 This method is used to get the range indices array based on the specified alpha range in Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -2991,10 +3036,10 @@ $("#Spreadsheet").ejSpreadsheet("getRangeIndices", "A1:A9");
 {% endhighlight %}
 
 ### getSheet(sheetIdx)
-
 {:#methods:getsheet}
 
 This method is used to get the sheet details based on the given sheet index in Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3039,6 +3084,7 @@ $("#Spreadsheet").ejSpreadsheet("getSheet", 1);
 {:#methods:getsheetelement}
 
 This method is used to get the sheet content div element of Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3083,6 +3129,7 @@ $("#Spreadsheet").ejSpreadsheet("getSheetElement", 1);
 {:#methods:gotopage}
 
 This method is used to send a paging request to the specified sheet Index in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3129,6 +3176,7 @@ $("#Spreadsheet").ejSpreadsheet("gotoPage", 3, true);
 {:#methods:hidecolumn}
 
 This method is used to hide the entire columns from the specified range (startCol, endCol) in Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3193,6 +3241,7 @@ xlObj.hideFormulaBar();
 {:#methods:hiderow}
 
 This method is used to hide the rows, based on the specified row index in Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3241,6 +3290,7 @@ $("#Spreadsheet").ejSpreadsheet("hideRow", 1, 4);
 {:#methods:hidesheet}
 
 This method is used to hide the sheet based on the specified sheetIndex or sheet name in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3309,6 +3359,7 @@ $("#Spreadsheet").ejSpreadsheet("hideWaitingPopUp");
 {:#methods:insertentirecolumn}
 
 This method is used to insert a column before the active cell's column in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3358,6 +3409,7 @@ $("#Spreadsheet").ejSpreadsheet("insertEntireColumn", startCell, endCell);
 {:#methods:insertentirerow}
 
 This method is used to insert a row before the active cell's row in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3403,7 +3455,7 @@ $("#Spreadsheet").ejSpreadsheet("insertEntireRow", startCell, endCell);
 
 {% endhighlight %}
 
-### insertSheet()</span>
+### insertSheet()
 {:#methods:insertsheet}
 
 This method is used to insert a new sheet to the left of the current active sheet.
@@ -3432,6 +3484,7 @@ $("#Spreadsheet").ejSpreadsheet("insertSheet");
 {:#methods:insertshiftbottom}
 
 This method is used to insert cells in the selected or specified range and shift remaining cells to bottom.
+
 <table class="params">
 <thead>
 <tr>
@@ -3481,6 +3534,7 @@ $("#Spreadsheet").ejSpreadsheet("insertShiftBottom", startCell, endCell);
 {:#methods:insertshiftright}
 
 This method is used to insert cells in the selected or specified range and shift remaining cells to right.
+
 <table class="params">
 <thead>
 <tr>
@@ -3527,8 +3581,10 @@ $("#Spreadsheet").ejSpreadsheet("insertShiftRight", startCell, endCell);
 {% endhighlight %}
 
 ### import(importRequest)
+{:#methods:import}
 
 This method is used to import excel file manually by using form data.
+
 <table class="params">
 <thead>
 <tr>
@@ -3565,6 +3621,7 @@ xlObj.import(importRequest);
 {:#methods:lockcells}
 
 This method is used to lock/unlock the range of cells in active sheet. Lock cells are activated only after the sheet is protected. Once the sheet is protected it is unable to lock/unlock cells.
+
 <table class="params">
 <thead>
 <tr>
@@ -3611,6 +3668,7 @@ $("#Spreadsheet").ejSpreadsheet("lockCells","A3:B5", true);
 {:#methods:mergeacrosscells}
 
 This method is used to merge cells by across in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3656,6 +3714,7 @@ $("#Spreadsheet").ejSpreadsheet("mergeAcrossCells","A3:B5");
 {:#methods:mergecells}
 
 This method is used to merge the selected cells in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3701,6 +3760,7 @@ $("#Spreadsheet").ejSpreadsheet("mergeCells","A3:B5");
 {:#methods:movesheet}
 
 This method is used to move sheets in Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3747,6 +3807,7 @@ $("#Spreadsheet").ejSpreadsheet("moveSheet", 2, 1);
 {:#methods:protectsheet}
 
 This method is used to protect or unprotect active sheet.
+
 <table class="params">
 <tr>
 <th>Name</th>
@@ -3783,6 +3844,7 @@ $("#Spreadsheet").ejSpreadsheet("protectSheet", false);
 {:#methods:removehyperlink}
 
 This method is used to remove the hyperlink from selected cells of current sheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3827,6 +3889,7 @@ $("#Spreadsheet").ejSpreadsheet("removeHyperlink", "A2:A3", false);
 {:#methods:removerange}
 
 This method is used to remove the range data and its defined rangeSettings property based on the specified range name.
+
 <table class="params">
 <thead>
 <tr>
@@ -3868,6 +3931,7 @@ $("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
 {:#methods:setactivecell}
 
 This method is used to set the activecell in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3918,6 +3982,7 @@ $("#Spreadsheet").ejSpreadsheet("setActiveCell", 1, 0, 1);
 {:#methods:setactivesheetindex}
 
 This method is used to set active sheet index for the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -3959,6 +4024,7 @@ $("#Spreadsheet").ejSpreadsheet("setActiveSheetIndex", sheetIndex);
 {:#methods:setborder}
 
 This method is used to set border for the specified range of cells in the Spreadsheet.
+
 <table class="params">
 <thead>
 <tr>
@@ -4038,7 +4104,7 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.setHyperlink("A2:A3",{"cellAddr":"A2:A8"}, 3); // To set the hyperlink  of specified range
+xlObj.setHyperlink("A2:A3",{"cellAddr":"A2:A8"}, 3); // To set the hyperlink  of specified range.
 </script>
 
 {% endhighlight %}
@@ -4051,10 +4117,10 @@ $("#Spreadsheet").ejSpreadsheet("setHyperlink", "A2:A3",{"cellAddr":"A2:A8"},3);
 
 {% endhighlight %}
 
-### setSheetFocus()</span>
-{:#methods:setSheetFocus}
+### setSheetFocus()
+{:#methods:setsheetfocus}
 
-This method is used to set the focus to a Spreadsheet.
+This method is used to set the focus to the Spreadsheet.
 
 #### Example
 
@@ -4075,7 +4141,6 @@ $("#Spreadsheet").ejSpreadsheet("setSheetFocus");
 </script>
 
 {% endhighlight %}
-
 
 ### setWidthToColumns(widthColl)
 {:#methods:setwidthtocolumns}
@@ -4719,7 +4784,7 @@ This method is used to set a cell type from the specified range of cells in the 
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To add cell types in Spreadsheet.
-xlObj.XLCellType.addCellTypes(“A1 : B3”, {“type” : ej.Spreadsheet.CustomCellType.Button, “text” : “Button1”, “background-color” : “green” },  1);
+xlObj.XLCellType.addCellTypes("A1 : B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
 </script>
 
 {% endhighlight %}
@@ -5748,6 +5813,7 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1)
 {:#methods:xlexport-export}
 
 This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
+
 Note: Using export, user must be provided the excelUrl and csvUrl property under exportSettings.
 
 <table class="params">
@@ -5786,6 +5852,7 @@ xlObj.XLExport.export(“Excel”);
 {:#methods:xlfilter-clearfilter}
 
 This method is used to clear the filter in filtered columns in the Spreadsheet.
+
 #### Example
 
 {% highlight html %}
@@ -5836,6 +5903,7 @@ xlObj.XLFilter.filter("A3:C8");
 {:#methods:xlfilter-filterbyactivecell}
 
 This method is used to apply filter for the column by active cell's value in the Spreadsheet.
+
 #### Example
 
 {% highlight html %}
@@ -5931,7 +5999,7 @@ xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
 {% endhighlight %}
 
 #### XLFormat.removeTable(tableId)
-{:#methods:xlformat-tableid}
+{:#methods:xlformat-removetable}
 
 This method is used to remove table with specified tableId in the Spreadsheet.
 
@@ -6122,6 +6190,7 @@ xlObj.XLFreeze.freezeColumns(2);
 {:#methods:xlfreeze-freezeleftcolumn}
 
 This method is used to freeze the first column in the Spreadsheet.
+
 #### Example
 
 {% highlight html %}
@@ -6229,6 +6298,7 @@ xlObj.XLFreeze.freezeTopRow();
 {:#methods:xlprint-printselection}
 
 This method is used to print the selected contents in the Spreadsheet.
+
 #### Example
 
 {% highlight html %}
@@ -6591,6 +6661,7 @@ xlObj.XLSearch.replaceAllByBook("Sheet", "Spreadsheet", true, false); // Sends a
 
 #### XLSearch.replaceAllBySheet(findData, replaceData, isCSen, isEMatch)
 {:#methods:xlsearch-replaceallbysheet}
+
 This method is used to find and replace all data by sheet in Spreadsheet.
 <table class="params">
 <thead>
@@ -6885,11 +6956,12 @@ xlObj.XLSelection.selectRows(2, 4); //To select entire rows in the specified ran
 {:#methods:xlselection-selectsheet}
 
 This method is used to select all cells in active sheet.
+
 #### Example
 
 {% highlight html %}
 <script>
-// initialize Spreadsheet object.
+// Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 spreadsheetObj.XLSelection.selectSheet(); //To select all cells in Spreadsheet.
 </script>
@@ -7219,8 +7291,8 @@ Triggered for every action complete.
 <th>Type</th>
 <th>Description</th>
 </tr>
-<tbody>
 </thead>
+<tbody>
 <tr>
 <td class="name">{% highlight html %}argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
@@ -7455,6 +7527,7 @@ autoFillComplete: function (args){}
 {% endhighlight %}
 
 ### beforeCellFormat
+{:#events:beforecellformat}
 
 Triggered before the cells to be formatted.
 
@@ -7530,6 +7603,7 @@ beforeCellFormat: function (args){}
 
 
 ### beforeCellSelect
+{:#events:beforecellselect}
 
 Triggered before the cell selection.
 
@@ -7600,6 +7674,7 @@ beforeCellSelect: function (args){}
 {% endhighlight %}
 
 ### beforeDrop
+{:#events:beforedrop}
 
 Triggered before the selected cells are dropped.
 
@@ -7685,6 +7760,7 @@ beforeDrop: function (args){}
 {% endhighlight %}
 
 ### beforeOpen
+{:#events:beforeopen}
 
 Triggered before the contextmenu is open.
 
@@ -7749,6 +7825,7 @@ beforeOpen: function (args){}
 {% endhighlight %}
 
 ### beforePanelOpen
+{:#events:beforepanelopen}
 
 Triggered before the activation panel is open.
 
@@ -7824,6 +7901,7 @@ beforePanelOpen: function (args){}
 {% endhighlight %}
 
 ### cellClick
+{:#events:cellclick}
 
 Triggered when click on sheet cell.
 
@@ -7894,6 +7972,7 @@ cellClick: function (args){}
 {% endhighlight %}
 
 ### cellEdit
+{:#events:celledit}
 
 Triggered when the cell is edited.
 
@@ -7921,7 +8000,7 @@ Triggered when the cell is edited.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}cell{% endhighlight %}</td>
-<td class="type"><span class="param-type">element<span></td>
+<td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the click cell element.</td>
 </tr>
 <tr>
@@ -7969,6 +8048,7 @@ cellEdit: function (args){}
 {% endhighlight %}
 
 ### cellHover
+{:#events:cellhover}
 
 Triggered when mouse hover on cell in sheets.
 
@@ -8034,6 +8114,7 @@ cellHover: function (args){}
 {% endhighlight %}
 
 ### cellSave
+{:#events:cellsave}
 
 Triggered when save the edited cell.
 
@@ -8119,6 +8200,7 @@ cellSave: function (args){}
 {% endhighlight %}
 
 ### contextMenuClick
+{:#events:contextmenuclick}
 
 Triggered when click the contextmenu items.
 <table class="params">
@@ -8165,7 +8247,7 @@ Triggered when click the contextmenu items.
 </tr>
 <tr>
 <td class="name">{% highlight html %}model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object<span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8213,6 +8295,7 @@ contextMenuClick: function (args){}
 {% endhighlight %}
 
 ### drag
+{:#events:drag}
 
 Triggered when the selected cells are being dragged.
 
@@ -8293,6 +8376,7 @@ drag: function (args){}
 {% endhighlight %}
 
 ### dragStart
+{:#events:dragstart}
 
 Triggered when the selected cells are initiated to drag.
 <table class="params">
@@ -8372,6 +8456,7 @@ dragStart: function (args){}
 {% endhighlight %}
 
 ### drop
+{:#events:drop}
 
 Triggered when the selected cells are dropped.
 
@@ -8452,6 +8537,7 @@ drop: function (args){}
 {% endhighlight %}
 
 ### editRangeBegin
+{:#events:editrangebegin}
 
 Triggered before the range editing starts.
 
@@ -8481,7 +8567,8 @@ Triggered before the range editing starts.
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
-</tr><tr>
+</tr>
+<tr>
 <td class="name">{% highlight html %}model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
@@ -8521,6 +8608,7 @@ editRangeBegin: function (args){}
 {% endhighlight %}
 
 ### editRangeComplete
+{:#events:editrangecomplete}
 
 Triggered after range editing completes.
 
@@ -8591,6 +8679,7 @@ editRangeComplete: function (args){}
 {% endhighlight %}
 
 ### load
+{:#events:load}
 
 Triggered before the sheet is loaded.
 
@@ -8614,7 +8703,7 @@ Triggered before the sheet is loaded.
 <td>Type</td>
 <td>Description</td>
 </tr>
-</tbody>
+</thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}type{% endhighlight %}</td>
@@ -8656,6 +8745,7 @@ load: function (args){}
 {% endhighlight %}
 
 ### loadComplete
+{:#events:loadcomplete}
 
 Triggered after the sheet is loaded.
 
@@ -8715,8 +8805,8 @@ loadComplete: function (args){}
 
 {% endhighlight %}
 
-
 ### menuClick
+{:#events:menuclick}
 
 Triggered every click of the menu item.
 
@@ -8803,6 +8893,7 @@ menuClick: function (args){}
 {% endhighlight %}
 
 ### openFailure
+{:#events:openfailure}
 
 Triggered when import sheet is failed to open.
 
@@ -8858,7 +8949,7 @@ Triggered when import sheet is failed to open.
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
-<tbody>
+</tbody>
 </table>
 </td></tr>
 </tbody>
@@ -8878,6 +8969,7 @@ openFailure: function (args){}
 {% endhighlight %}
 
 ### pagerClick
+{:#events:pagerclick}
 
 Triggered when pager item is clicked in the Spreadsheet.
 
@@ -8953,6 +9045,7 @@ pagerClick: function (args){}
 {% endhighlight %}
 
 ### ribbonClick
+{:#events:ribbonclick}
 
 Triggered when click on the ribbon.
 
@@ -9033,6 +9126,7 @@ ribbonClick: function (args){}
 {% endhighlight %}
 
 ### seriesRendering
+{:#events:seriesrendering}
 
 Triggered when the chart series rendering.
 
@@ -9099,6 +9193,7 @@ seriesRendering: function (args){}
 {% endhighlight %}
 
 ### tabClick
+{:#events:tabclick}
 
 Triggered when click the ribbon tab.
 
@@ -9179,6 +9274,7 @@ tabClick: function (args){}
 {% endhighlight %}
 
 ### tabSelect
+{:#events:tabselect}
 
 Triggered when select the ribbon tab.
 
@@ -9257,6 +9353,3 @@ tabSelect: function (args){}
 </script>
 
 {% endhighlight %}
-
-
-
