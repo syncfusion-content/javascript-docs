@@ -3976,7 +3976,7 @@ Gets or sets a value that indicates whether column width will be adjusted width 
 
 #### Default Value:
 {:.param}
-* auto
+* ej.Grid.ColumnLayout.Fixed
 
 #### Example
 {% highlight html %}
