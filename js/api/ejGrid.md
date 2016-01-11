@@ -3969,6 +3969,29 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### columnLayout `enum`
+{:#members:columnlayout}
+
+Gets or sets a value that indicates whether column width will be adjusted width corresponding to grid control.
+
+#### Default Value:
+{:.param}
+* auto
+
+#### Example
+{% highlight html %}
+<style>
+    width:700px;
+</style>
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource: window.gridData,
+   columnLayout:"fixed"
+});
+</script> 
+{% endhighlight %}
+
 
 ## Methods
 
