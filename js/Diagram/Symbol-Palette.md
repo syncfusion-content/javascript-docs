@@ -10,21 +10,14 @@ documentation: ug
 # Symbol Palette
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram. 
+
 ## Palettes
  
-A palette is both the customizable header and also the set of relevent shapes themselves.The Palette has a header that displays the name and also allows you to expand or collapse its items. 
-
+A palette allows to display a group of related symbols and it textually annotates the group with its header.
 
 ### Palette Items
-Each node or connector in the palette is called a Palette Item.It allows to drag the diagram object by clicking on it with the mouse and dragging it anywhere.
 
-#### Create and add symbols to the Palette 
-
-The following steps illustrate how to add palette items to symbol palette. 
-
-#### Define the palette items
-
-You can create a palette item as a node, group, connector, lane, or phase. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define palette items.
+You can create a palette item as a node, group, connector, lane, or phase. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define a palette item.
 
 {% highlight js %}
 
@@ -37,70 +30,7 @@ You can create a palette item as a node, group, connector, lane, or phase. To cr
         offsetX: 20, offsetY: 20, shape: "ellipse",
     };
 
-    //Creates a group
-    var group = {
-        name: "group",
-        //Defines the child nodes.
-        children: [{
-            name: "child1",
-            width: 40, height: 40,
-            offsetX: 20, offsetY: 20, borderWidth: 1
-        },{
-            name: "child2",
-            width: 40, height: 40,
-            offsetX: 40, offsetY: 40,
-            borderWidth: 1,
-        }],
-        width: 40, 
-        height: 40,
-    };
-
-    //Creates a connector 
-    var connector = {
-        name: "Line",
-        segments: [{ type: "orthogonal" }],
-        //Defines the source and target points
-        sourcePoint: { x: 0, y: 0 },
-        targetPoint: { x: 40, y: 40 },
-        //Defines the target decorator properties
-        targetDecorator: { shape: "arrow" },
-    };
-
-    //Creates a lane 
-    var lane = {
-        name: "lane", 
-        header: {
-            width: 50, 
-            height: 50, 
-            fillColor: "#C7D4DF"
-        },
-        fillColor: "#f5f5f5",
-        //Specifies size for the lane 
-        height: 60, 
-        width: 140,
-        //Specifies offset for the lane 
-        offsetX: 70, 
-        offsetY: 30,
-        //Specifies orientation as horizontal/vertical
-        orientation: "horizontal", 
-        isLane: true
-    };
-
-    //Creates a phase
-    var phase = {
-        name: "verticalPhase",
-        type: "phase",
-        // Defines the style of the phase
-        lineWidth: 1, 
-        lineDashArray: "3,3",
-        lineColor: "#606060",
-        //Defines the orientation of the phase
-        orientation: "vertical", 
-    } 
-
 {% endhighlight %}
-
-#### Initialize a palette with palette items
 
 To initialize a palette, define a JSON object with the property `name` that is displayed as the header text of palette. The palette items need to be defined and added to the `items` collection of the palette. The `expanded` property of palette allows to expand/collapse its palette items. 
 The following code example illustrates how to define a palette with items that are defined in the previous section. 
