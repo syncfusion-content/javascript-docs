@@ -1770,7 +1770,9 @@ Gets or sets a value that indicates whether to show or hide grid lines in the Sp
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-showGridlines: true
+	sheets:[{
+		showGridlines: true
+	}]
 });   
 </script>
 
@@ -1790,7 +1792,9 @@ Gets or sets a value that indicates whether to show or hide grid headers in the 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-showHeader: true
+	sheets:[{
+		showHeader: true
+	}]
 });   
 </script>
 
@@ -2017,7 +2021,7 @@ This property is used to clear the contents in the specified range in Spreadshee
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will clear the content in the specified <br/>range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -2574,7 +2578,7 @@ This method is used to get the activecell element based on the given sheet index
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the activecell element in specified sheet index else it will use the current active sheet index.</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the activecell element in specified <br/>sheet index else it will use the current active sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -2713,7 +2717,7 @@ $("#Spreadsheet").ejSpreadsheet("getCell", 2, 3, 1);
 
 {% endhighlight %}
 
-## getFrozenColumns(sheetIdx)
+### getFrozenColumns(sheetIdx)
 {:#methods:getfrozencolumns}
 
 This method is used to get the frozen columns index in the Spreadsheet.
@@ -3356,7 +3360,7 @@ $("#Spreadsheet").ejSpreadsheet("hideWaitingPopUp");
 
 {% endhighlight %}
 
-### insertEntireColumn(startCell, endCell)
+### insertEntireColumn(startCol, endCol)
 {:#methods:insertentirecolumn}
 
 This method is used to insert a column before the active cell's column in the Spreadsheet.
@@ -3371,14 +3375,14 @@ This method is used to insert a column before the active cell's column in the Sp
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Row index and column index of the start cell.</td>
+<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass start column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Row index and column index of the end cell.</td>
+<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass end column.</td>
 </tr>
 </tbody>
 </table>
@@ -3406,7 +3410,7 @@ $("#Spreadsheet").ejSpreadsheet("insertEntireColumn", startCell, endCell);
 
 {% endhighlight %}
 
-### insertEntireRow(startCell, endCell)
+### insertEntireRow(startRow, endRow)
 {:#methods:insertentirerow}
 
 This method is used to insert a row before the active cell's row in the Spreadsheet.
@@ -3421,14 +3425,14 @@ This method is used to insert a row before the active cell's row in the Spreadsh
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Row index and column index of the start cell.</td>
+<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass start row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Row index and column index of the end cell.</td>
+<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass end row.</td>
 </tr>
 </tbody>
 </table>
@@ -4523,7 +4527,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified <br/>range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4569,7 +4573,7 @@ This method is used to update the data for the specified range of cells in the S
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range <br/> else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -4721,7 +4725,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified <br/> range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -5526,7 +5530,7 @@ xlObj.XLDragFill.positionAutoFillElement(false); // set position of the autofill
 {:#methods:xledit}
 
 #### XLEdit.calcNow(\[sheetIdx\])
-{:#methods:xledit-clacnow}
+{:#methods:xledit-calcnow}
 
 This method is used to calculate formulas in the specified sheet.
 <table class="params">
