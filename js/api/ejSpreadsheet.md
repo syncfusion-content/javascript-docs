@@ -123,6 +123,7 @@ Gets or sets a value that indicates whether to enable or disable auto rendering 
 
 
 Note: allowCellType must be true while using the allowAutoCellType.
+
 #### Example
 
 {% highlight html %}
@@ -1050,7 +1051,7 @@ $('#Spreadsheet').ejSpreadsheet({
 exportSettings({
 allowExporting: true,
 excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
-password :”Spreadhseet”
+password :"Spreadhseet"
 })
 });        
 </script>
@@ -4312,6 +4313,7 @@ $("#Spreadsheet").ejSpreadsheet("showColumn", 1, 1);
 {% endhighlight %}
 
 ### showFormulaBar()
+{:#methods:showformulabar}
 
 This method is used to show the formula bar in Spreadsheet.
 
@@ -4533,7 +4535,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 //Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To unwrap the cell text.
-xlObj.unWrapText(“A1:B3”);
+xlObj.unWrapText("A1:B3");
 </script>
 
 {% endhighlight %}
@@ -5134,7 +5136,7 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array / string</span></td>
+<td class="type"><span class="param-type">array/string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
@@ -5356,7 +5358,7 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">DOM Element</type></td>
+<td class="type"><span class="param-type">DOM Element</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
 </tr>
 </tbody>
@@ -5680,7 +5682,7 @@ This method is used to get the property value in specified cell in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}property{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the property name that you want ("value", "value2", "type", "cFormatRule", "range", "thousandSeparator", "rule", "format", "border", "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders", "tformats", "tborders", "isFilterHeader", "filterState", "tableName", "comment", "formatStr", "decimalPlaces", "cellType").</td>
+<td class="description"><p>Pass the property name that you want ("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader", "filterState", "tableName", <br/>"comment", "formatStr", "decimalPlaces", "cellType").</p></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
@@ -5773,7 +5775,7 @@ This method is used to update a particular cell value and its format in the Spre
 <tbody>
 <tr>
 <td class="name">{% highlight html %}cellIdx{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass row index and column index of the cell.</td>
 </tr>
 <tr>
@@ -7012,7 +7014,7 @@ This method is used to sort a particular range of cells based on its cell or fon
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To sort range based on cell color in the Spreadsheet.
-xlObj.XLSort.sortByColor("PutCellColor", {background-color” : "#EC2024", color:  "#6N2N2N"}, "D2:D8"); </script>
+xlObj.XLSort.sortByColor("PutCellColor", {"background-color" : "#EC2024", color:  "#6N2N2N"}, "D2:D8"); </script>
 
 {% endhighlight %}
 
@@ -7434,7 +7436,7 @@ Triggered when the auto fill operation begins.
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
-//drag event for Spreadsheet
+//autoFillBegin event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
 autoFillBegin: function (args){}
 });
