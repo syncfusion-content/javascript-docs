@@ -1898,7 +1898,7 @@ It is used to clear all the data and format in the specified range of cells in S
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -1938,7 +1938,7 @@ This property is used to clear all the formats applied in the specified range in
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -1977,7 +1977,7 @@ Used to clear the applied border in the specified range in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -2016,7 +2016,7 @@ This property is used to clear the contents in the specified range in Spreadshee
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -2098,17 +2098,17 @@ It is used to remove data in the specified range of cells based on the defined p
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}property{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
+<td class="description"><span class="optional">Optional. </span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span> </td>
-<td class="description"><span class="optional">Optional</span> If pass true, if you want to skip the hidden rows </td>
+<td class="description"><span class="optional">Optional. </span> If pass true, if you want to skip the hidden rows </td>
 </tr>
 </tbody>
 </table>
@@ -2529,7 +2529,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> If sheetIdx is specified, it will return the activecell object in specified sheet index else it will use the current sheet index</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will return the activecell object in specified sheet index else it will use the current sheet index</td>
 </tr>
 </tbody>
 </table>
@@ -2573,7 +2573,7 @@ This method is used to get the activecell element based on the given sheet index
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> If sheetIndex is specified, it will return the activecell element in specified sheet index else it will use the current active sheet index.</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the activecell element in specified sheet index else it will use the current active sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -2684,7 +2684,7 @@ This method is used to get the cell element based on specified row and column in
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass the sheet index that you want to get cell.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the sheet index that you want to get cell.</td>
 </tr>
 </tbody>
 </table>
@@ -2923,7 +2923,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}valueonly{% endhighlight %}</td>
@@ -2933,37 +2933,37 @@ This method is used to get the data in specified range in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}property{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional</span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
+<td class="description"><span class="optional">Optional. </span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass the index of the sheet.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}skipDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> When skipDateTime is set as true, it return 'value2' cell value (cell type as 'datetime')</td>
+<td class="description"><span class="optional">Optional. </span> When skipDateTime is set as true, it return 'value2' cell value (cell type as 'datetime')</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}skipFormula{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> Pass true, if you want to get the calculated formula value else it return formula string.</td>
+<td class="description"><span class="optional">Optional. </span> Pass true, if you want to get the calculated formula value else it return formula string.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> Pass true, if you want to skip the hidden rows data.</td>
+<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}virtualRowIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass virtual row index of sheet.</td>
+<td class="description"><span class="optional">Optional. </span> Pass virtual row index of sheet.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}virtualRowCount{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass virtual row count of sheet.</td>
+<td class="description"><span class="optional">Optional. </span> Pass virtual row count of sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -3639,7 +3639,7 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 <tr>
 <td class="name">{% highlight html %}isLocked{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> By default is true. If it is false locked cells are unlocked.</td>
+<td class="description"><span class="optional">Optional. </span> By default is true. If it is false locked cells are unlocked.</td>
 </tr>
 </tbody>
 </table>
@@ -3681,12 +3681,12 @@ This method is used to merge cells by across in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> To pass the cell range or selected cells are process.</td>
+<td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> If pass true it does not show alert.</td>
+<td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -3727,12 +3727,12 @@ This method is used to merge the selected cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> To pass the cell range or selected cells are process.</td>
+<td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> If pass true it does not show alert.</td>
+<td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -3817,7 +3817,7 @@ This method is used to protect or unprotect active sheet.
 <tr>
 <td class="name">{% highlight html %}isProtected{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span>  By default is true. If it is false active sheet is unprotected.</td>
+<td class="description"><span class="optional">Optional. </span>  By default is true. If it is false active sheet is unprotected.</td>
 </tr>
 </table>
 
@@ -3862,7 +3862,7 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <tr>
 <td class="name">{% highlight html %}isClearHLink{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> If it is true, It will clear link only not format.</td>
+<td class="description"><span class="optional">Optional. </span> If it is true, It will clear link only not format.</td>
 </tr>
 </tbody>
 </table>
@@ -3988,10 +3988,11 @@ This method is used to set active sheet index for the Spreadsheet.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th></tr>
-<tr>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
+<tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the active sheet index for Spreadsheet.</td>
@@ -4042,7 +4043,7 @@ This method is used to set border for the specified range of cells in the Spread
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4479,7 +4480,7 @@ This method is used to unmerge the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4520,7 +4521,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4566,7 +4567,7 @@ This method is used to update the data for the specified range of cells in the S
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will update data for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -4677,7 +4678,7 @@ This method is used to update the unique data for the specified range of cells i
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4718,7 +4719,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update wrap in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4810,7 +4811,7 @@ This method is used to remove cell type from the specified range of cells in the
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass sheet index.</td>
+<td class="description"><span class="optional">Optional. </span> Pass sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -4851,7 +4852,7 @@ This method is used to clear the applied conditional formatting rules in the Spr
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
-<td class="description"><span class="optional">Optional</span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -4877,7 +4878,7 @@ This method is used to get the applied conditional formatting rules as array of 
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="description">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4963,7 +4964,7 @@ This method is used to create a chart for specified range in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}options{% endhighlight %}</td>
@@ -5134,17 +5135,17 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array / string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> Pass true, if you want to skip the hidden rows data.</td>
+<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
 </tr>
 </tbody>
 </table>
@@ -5177,7 +5178,7 @@ This method is used to edit the comment in the trgtCell in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional</span> Pass the row index and column index of the cell which contains comment. </td>
+<td class="description"><span class="optional">Optional. </span> Pass the row index and column index of the cell which contains comment. </td>
 </tr>
 </tbody>
 </table>
@@ -5296,7 +5297,7 @@ This method is used to set new comment in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string / array</span> </td>
-<td class="description"><span class="optional">Optional</span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
+<td class="description"><span class="optional">Optional. </span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}data{% endhighlight %}</td>
@@ -5306,7 +5307,7 @@ This method is used to set new comment in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}showEditPanel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional</span> Pass true to show comment in edit mode </td>
+<td class="description"><span class="optional">Optional. </span> Pass true to show comment in edit mode </td>
 </tr>
 </tbody>
 </table>
@@ -5356,7 +5357,7 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">DOM Element</type></td>
-<td class="description"><span class="optional">Optional</span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
 </tr>
 </tbody>
 </table>
@@ -5538,7 +5539,7 @@ This method is used to calculate formulas in the specified sheet.
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
+<td class="description"><span class="optional">Optional. </span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
 </tr>
 </tbody>
 </table>
@@ -5631,12 +5632,12 @@ This method is used to get the property value of particular cell, based on the r
 <tr>
 <td class="name">{% highlight html %}prop{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> Pass the property name that you want ("value", "value2", "type", "cFormatRule", "range", "thousandSeparator", "rule", "format", "border", "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders", "tformats", "tborders", "isFilterHeader", "filterState", "tableName", "comment", "formatStr", "decimalPlaces", "cellType").</td>
+<td class="description"><p><span class="optional">Optional. </span>Pass the property name that you want("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader",  "filterState", "tableName",<br/> "comment", "formatStr", "decimalPlaces", "cellType").</p></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span> Pass the index of the sheet.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -5941,7 +5942,7 @@ This method is used to create a table for the selected range of cells in the Spr
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span>  If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span>  If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -6092,7 +6093,7 @@ This method is used to update the format for the selected range of cells in the 
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -6131,7 +6132,7 @@ This method is used to update the unique format for selected range of cells in t
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional</span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -6517,12 +6518,12 @@ This method is used to add a new name in the Spreadsheet name manager.
 <tr>
 <td class="name">{% highlight html %}comment{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> Pass comment, if you want.</td>
+<td class="description"><span class="optional">Optional. </span> Pass comment, if you want.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional</span>  Pass the sheet index.</td>
+<td class="description"><span class="optional">Optional. </span>  Pass the sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -6680,7 +6681,8 @@ This method is used to find and replace all data by sheet in Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}replaceData{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the replace data.</td></tr>
+<td class="description">Pass the replace data.</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}isCSen{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
@@ -6760,7 +6762,7 @@ This method is used to refresh the selection in the Spreadsheet.
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional</span> Pass range to refresh selection.</td>
+<td class="description"><span class="optional">Optional. </span> Pass range to refresh selection.</td>
 </tr>
 </tbody>
 </table>
@@ -7131,7 +7133,7 @@ This method is used to clear the applied validation rules in a specified range o
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -7164,7 +7166,7 @@ This method is used to highlight invalid data in a specified range of cells in t
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional</span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
