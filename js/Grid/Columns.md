@@ -1000,3 +1000,155 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img24.png)
 
 
+## Tooltip
+
+When you move the cursor over the particular cell it provides an information about the corresponding cell value.
+
+**Template**
+
+Html templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+
+N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
+ 
+N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
+ 
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script type="text/template" id="colTip">
+ {{"{{"}}:value {{}}}}  
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID" },
+			{ field: "EmployeeID"},
+			{ field: "ShipCity", tooltip: "#colTip"},
+			{ field: "Freight"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img25.png)
+
+## ClipMode
+
+When the cell value contains a long text that is not fit into the grid column cell, the `clipMode` property is used. By using the `clipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
+
+N> 1. By default the `clipMode` will be set as `clip`. 
+N> 2. For [`clipMode`] property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
+
+
+**List of Enumeration types**
+  
+ 1. Clip
+ 2. Ellipsis
+ 3. EllipsisWithTooltip 
+ 
+### Clip
+
+When the content overflows, the remaining content will be hidden in the particular cell
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID" },
+			{ field: "ShipCity"},
+			{ field: "ShipName", clipMode: ej.Grid.ClipMode.Clip},
+			{ field: "Freight"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img27.png)
+ 
+### Ellipsis
+
+Ellipsis will be displayed when the content overflows its column width. Here tooltip will not be shown for corresponding columns.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID" },
+			{ field: "ShipCity"},
+			{ field: "ShipName", clipMode: ej.Grid.ClipMode.Ellipsis},
+			{ field: "Freight"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img26.png)
+
+### Ellipsis With Tooltip
+
+Ellipsis will be displayed when the content overflows its column width. Here tooltip will be shown only for the corresponding column cells that shows ellipsis.
+
+N> If `clipMode` is set as `EllipsisWithTooltip`, then `tooltip` must be given.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script type="text/template" id="colTip">
+ {{"{{"}}:value {{}}}}  
+ </script>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID" },
+			{ field: "ShipCity"},
+			{ field: "ShipName",tooltip:"#colTip", clipMode: ej.Grid.ClipMode.EllipsisWithTooltip},
+			{ field: "Freight"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img28.png)
+
+
+

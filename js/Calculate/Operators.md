@@ -125,7 +125,7 @@ Some library functions cannot have arguments, but you can still include the pare
 
 Refer to the following screenshot to get more details on **addNamedRange** support.
 
-![](/js/Calculate/Operators_images/Operators_img1.png" Caption=")
+![](/js/Calculate/Operators_images/Operators_img1.png)
 
 
 

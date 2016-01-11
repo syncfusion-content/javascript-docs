@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Globalization and localization  with Grid widget for Syncfusion Essential JS
+title: Globalization and Localization  with Grid widget for Syncfusion Essential JS
 description: How to use globalization and localization 
 platform: js
 control: Grid
 documentation: ug
 ---
-# Globalization and localization
+# Globalization and Localization
 
 ## Localization
 
-All text in Grid can be localized using `ej.Grid.locale` object. Please find the table with list of properties and its value in locale object.
+All text in Grid can be localized using `ej.Grid.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -261,7 +261,7 @@ Last Page</td></tr>
 <div id="Grid"></div>
 <script type="text/javascript">
 
- ej.Grid.locale["de-DE"] = {
+ ej.Grid.Locale["de-DE"] = {
     EmptyRecord: "Keine Aufzeichnungen angezeigt",
     GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
     DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
@@ -272,7 +272,7 @@ Last Page</td></tr>
     GroupCaptionFormat: "{{"{{"}}:field{{}}}}: {{"{{"}}:key{{}}}} - {{"{{"}}:count{{}}}} {{"{{"}}if count == 1{{}}}}Beiträge{{"{{"}}else{{}}}}Beiträges{{"{{"}}/if{{}}}}",
     UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
  };
- ej.Pager.locale["de-DE"] = {
+ ej.Pager.Locale["de-DE"] = {
     pagerInfo: "{0} von {1} Seiten ({2} Beiträge)",
     firstPageTooltip: "Zur ersten Seite",
     lastPageTooltip: "Zur letzten Seite",
@@ -309,13 +309,13 @@ Last Page</td></tr>
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
 
 
-I> You need to change pager locale in `ej.Pager.locale` object.
+I> You need to change pager locale in `ej.Pager.Locale` object.
 
 
 ## Excel-Filter Localization
 
 
-All text in Excel-Filter can be localized using `ej.ExcelFilter.locale` object. Please find the table with list of properties and its value in locale object.
+All text in Excel-Filter can be localized using `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -469,7 +469,7 @@ Please find the code
 
 <div id="Grid"></div>
 <script type="text/javascript">
-  ej.ExcelFilter.locale["de-DE"] = {
+  ej.ExcelFilter.Locale["de-DE"] = {
       SortNoSmaller: "Art Anzahl kleiner",
       SortNoLarger: "Art Anzahl größer",
       SortTextAscending: "Sortieren aufsteigend Text",
