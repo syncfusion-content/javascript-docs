@@ -3987,7 +3987,7 @@ Gets or sets a value that indicates whether column width will be adjusted with c
 <script>
 $("#Grid").ejGrid({
    dataSource: window.gridData,
-   columnLayout:"fixed"
+   columnLayout:ej.Grid.ColumnLayout.Fixed,
 });
 </script> 
 {% endhighlight %}
