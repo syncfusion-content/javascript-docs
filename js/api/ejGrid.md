@@ -3972,7 +3972,7 @@ $("#Grid").ejGrid({
 ### columnLayout `enum`
 {:#members:columnlayout}
 
-Gets or sets a value that indicates whether column width will be adjusted width corresponding to grid control.
+Gets or sets a value that indicates whether column width will be adjusted with corresponding to grid control.
 
 #### Default Value:
 {:.param}
