@@ -2041,6 +2041,26 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 {:.param}
 * []
 
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Gets or sets a value that indicates whether to define the field name of the column to be sort.
+
+### filterSettings.filteredColumns.operator `enum`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Gets or sets a value that indicates whether to define the filteroperator in string/integer/dateTime.
+
+### filterSettings.filteredColumns.pridicate `string`
+{:#members:filtersettings-filteredcolumns-pridicate}
+
+Gets or sets a value that indicates whether to define the predicate as and/or.
+
+### filterSettings.filteredColumns.value `string/number`
+{:#members:filtersettings-filteredcolumns-value}
+
+Gets or sets a value that indicates whether to define the value to be filtered in a column.
+
 #### Example
 {:.example}
 {% highlight html %}
