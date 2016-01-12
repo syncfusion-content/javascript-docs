@@ -2769,7 +2769,7 @@ $("#print").text("TotalRecordsCount: " + value);
 </script>
 {% endhighlight %}
 
-### pagingSettings.printMode `enum`
+### pageSettings.printMode `enum`
 {:#members:pagesettings-printmode}
 
 Gets or sets a value that indicates whether to define the number of pages to print
