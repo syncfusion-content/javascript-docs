@@ -2226,7 +2226,7 @@ xlObj.deleteEntireColumn(2, 3);
 {% highlight html %}
 <script>
 // Delete a column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("deleteEntireColumn”,2,3);
+$("#Spreadsheet").ejSpreadsheet("deleteEntireColumn",2,3);
 </script> 
 
 {% endhighlight %}
@@ -3152,7 +3152,7 @@ This method is used to send a paging request to the specified sheet Index in the
 <tr>
 <td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass 'true' to create a new sheet. If the specified sheet index is already exist, it navigate to that sheet else it create a new sheet.</td>
+<td class="description">Pass 'true' to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -3392,20 +3392,18 @@ This method is used to insert a column before the active cell's column in the Sp
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
-var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 //initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a column in the sheet.
-xlObj.insertEntireColumn(startCell, endCell);
+xlObj.insertEntireColumn(1, 2);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Insert a column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("insertEntireColumn", startCell, endCell);
+$("#Spreadsheet").ejSpreadsheet("insertEntireColumn", 1, 2);
 </script>
 
 {% endhighlight %}
@@ -3442,20 +3440,18 @@ This method is used to insert a row before the active cell's row in the Spreadsh
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
-var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a row in the sheet.
-xlObj.insertEntireRow(startCell, endCell);
+xlObj.insertEntireRow(1, 2);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Insert a row in the sheet.
-$("#Spreadsheet").ejSpreadsheet("insertEntireRow", startCell, endCell);
+$("#Spreadsheet").ejSpreadsheet("insertEntireRow", 1, 2);
 </script>
 
 {% endhighlight %}
