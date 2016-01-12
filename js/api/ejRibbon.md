@@ -162,6 +162,86 @@ Enables the ribbon resize feature.
 
 {% endhighlight %}
 
+### showQAT `boolean`  
+{:#members:showqat}
+
+Property to enable the ribbon quick access toolbar.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="ribbonmenu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">   
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "100%",
+                showQAT: true,
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        openOnClick: false
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "Font",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "bold",
+                                text: "Bold",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon bold"
+                                }
+                            }, {
+                                id: "italic",
+                                text: "Italic",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonitalic"
+                                }
+                            }, {
+                                id: "underline",
+                                text: "Underline",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonunderline"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                height: 30
+                            }
+                        }]
+                    }]
+                }]
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### applicationTab `object`
 {:#members:applicationtab}
 
@@ -4929,6 +5009,85 @@ Specifies the tooltip for button, split button, dropdown list, toggle button, cu
 
 {% endhighlight %}
 
+### tabs.groups.content.groups.quickAccessMode `enum`
+{:#members:tabs-groups-content-groups-quickaccessmode}
+
+To add,show and hide controls in Quick Access toolbar.
+
+#### Default Value
+
+* ej.Ribbon.quickAccessMode.none
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="ribbonmenu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">   
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "100%",
+                showQAT: true,
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        openOnClick: false
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "Font",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "bold",
+                                text: "Bold",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon bold"
+                                }
+                            }, {
+                                id: "italic",
+                                text: "Italic",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonitalic"
+                                }
+                            }, {
+                                id: "underline",
+                                text: "Underline",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonunderline"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                height: 30
+                            }
+                        }]
+                    }]
+                }]
+            });
+        });
+    </script> 
+
+{% endhighlight %}
 
 ### tabs.groups.content.groups.type `enum`
 {:#members:tabs-groups-content-groups-type}
@@ -8855,6 +9014,115 @@ Triggered when the expand/collapse button is clicked successfully .
 
 {% endhighlight %}
 
+### qatMenuItemClick        
+{:#events:qatmenuitemclick}
+
+Triggered when the QAT menu item is clicked successfully .
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument.cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">argument.model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">argument.type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">argument.text</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the clicked menu item text.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <button id="btn">Home button</button>
+    <script type="text/javascript">   
+    $(function() {
+        $("#Ribbon").ejRibbon({
+            width: "100%",
+            showQAT: true,
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "Font",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "bold",
+                            text: "Bold",
+                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                prefixIcon: "e-ribbon bold"
+                            }
+                        }, {
+                            id: "italic",
+                            text: "Italic",
+                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                prefixIcon: "e-ribbon e-ribbonitalic"
+                            }
+                        }, {
+                            id: "underline",
+                            text: "Underline",
+                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                prefixIcon: "e-ribbon e-ribbonunderline"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            height: 30
+                        }
+                    }]
+                }]
+            }],
+            qatMenuItemClick: function(args) {}
+        });
+    });
+    </script>
+ 
+{% endhighlight %}
 
 
 
