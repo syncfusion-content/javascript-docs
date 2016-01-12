@@ -2051,8 +2051,8 @@ Gets or sets a value that indicates whether to define the field name of the colu
 
 Gets or sets a value that indicates whether to define the filteroperator in string/integer/dateTime.
 
-### filterSettings.filteredColumns.pridicate `string`
-{:#members:filtersettings-filteredcolumns-pridicate}
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
 
 Gets or sets a value that indicates whether to define the predicate as and/or.
 
