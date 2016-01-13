@@ -66,7 +66,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
           
            title: {
                 //Change title text alignment
-                textAlignment: "far",
+                textAlignment: "near",
                 //...
             }          
 
