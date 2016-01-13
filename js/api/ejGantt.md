@@ -238,6 +238,30 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 {% endhighlight %}
 
 
+### enablePredecessorValidation `boolean`
+{:#members:enablePredecessorValidation}
+
+Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
+
+#### Default Value:
+{:.param}
+
+* true
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ enablePredecessorValidation:  false });            
+</script>
+
+{% endhighlight %}
+
+
 ### baselineColor `string`
 {:#members:baselinecolor}
 
@@ -562,6 +586,60 @@ Specifies the fields to be included in the edit dialog in gantt
 </script>
 
 {% endhighlight %}
+
+### splitterSettings `object`
+{:#members:editsettings}
+
+Option to configure the splitter position.
+
+
+### splitterSettings.position `string`
+{:#members:splitterSettings-position}
+
+Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
+
+#### Default Value:
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  splitterSettings:{position : "300px"} });
+</script>
+
+{% endhighlight %}
+
+
+### splitterSettings.index `string`
+{:#members:splitterSettings-index}
+
+Specifies the position of splitter in Gantt, based on column index in Gantt.
+
+#### Default Value:
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  splitterSettings:{index : "3"} });
+</script>
+
+{% endhighlight %}
+
 
 
 ### editSettings `object`
@@ -2585,6 +2663,25 @@ gantObj.ejGantt("addRecord",data); // To add a task
 // To add an item
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
 $("#gantt").ejGantt("addRecord",data);  
+</script>
+{% endhighlight %}
+
+
+### setSplitterIndex()
+{:#methods:setSplitterIndex}
+
+Positions the splitter by the specified column index.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt object
+var ganttObj = $("#gantt").data("ejGantt");
+gantObj.ejGantt("setSplitterIndex", "3"); // Set splitter position after column index 3
 </script>
 {% endhighlight %}
 
@@ -4689,5 +4786,81 @@ $("#gantt").ejGantt({
 {% endhighlight %}
 
 
+### toolbarclick
+{:#events:toolbarclick}
 
+Triggered when toolbar item is clicked in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Arguments when toolBarClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+itemName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the toolbar item on which mouse click has been performed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   toolBarClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 

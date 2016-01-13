@@ -362,7 +362,7 @@ Header text of the column.
 {% endhighlight %}
 
 
-### columns.visible `boolean
+### columns.visible `boolean`
 {:#members:columns-visible}
 
 Controls the visibility of the column.
@@ -382,6 +382,61 @@ Controls the visibility of the column.
 
 {% endhighlight %}
 
+
+### columns.headerTemplateID `String`
+
+{:#members:columns-headerTemplateID}
+
+Specifies the header template value for the column header
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  headerTemplateID: "#dataTemplate1"},{ headerTemplateID: "#dataTemplate2"}]});
+
+{% endhighlight %}
+
+### columns.isFrozen `boolean`
+
+{:#members:columns-isFrozen}
+
+Specifies whether the column is frozen
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  isFrozen: true}]});
+
+{% endhighlight %}
+
+
+### columns.alllowFreezing `boolean`
+
+{:#members:columns-alllowFreezing}
+
+Enables or diables the ability to freeze/unfreeze the columns
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  allowFreezing: false }]});
+
+{% endhighlight %}
 
 ### contextMenuSettings `object`
 {:#members:contextmenusettings}
@@ -451,6 +506,25 @@ Specifies hierarchical or self-referential data to populate the TreeGrid.
  {
     dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
  });            
+
+{% endhighlight %}
+
+
+### headerTextOverflow `string`
+{:#members:headerTextOverflow}
+
+Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
+
+#### Default Value
+
+* "none"
+
+#### Example
+
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({ headerTextOverflow: "wrap"});
 
 {% endhighlight %}
 
@@ -1168,14 +1242,13 @@ $("#treegrid").ejTreeGrid("clearSelection",2);
 
 {% endhighlight %}
 
+
 ### collapseAll()
 {:#methods:collapseall}
 
 To collapse all the parent items in tree grid
 
-
 #### Example
-
 
 {% highlight html %}
  
@@ -1283,6 +1356,69 @@ var treegridObj = $("#treegrid").data("ejTreeGrid");
 var dataManager = ej.DataManager(projectData);
 var query = ej.Query().select(["taskID", "taskName", "startDate", "endDate", "subtasks", "progress", "duration"]);
 treegridObj.refresh(dataManager, query) // To refresh the tree grid content
+</script>
+{% endhighlight %}
+
+
+
+### freezePrecedingColumns ()
+{:#methods:freezePrecedingColumns}
+
+Freeze all the columns preceding to the column specified by the field name.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.freezePrecedingColumns(field); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Save the edited cell
+$("#treegrid").ejTreeGrid("freezePrecedingColumns" , field);  
+</script>
+{% endhighlight %}
+
+
+
+### freezeColumn ()
+
+{:#methods:freezeColumn}
+
+Freeze/unfreeze the specified column.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.freezeColumn(field, isFrozen); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Save the edited cell
+$("#treegrid").ejTreeGrid("freezeColumn" , field , isFrozen);  
 </script>
 {% endhighlight %}
 
@@ -1666,7 +1802,7 @@ Triggered before every success event of Treegrid action.
 
 {% highlight html %}
  
-<div id="gantt"></div> 
+<div id="treegrid"></div> 
 <script>
 $("#treegrid").ejTreeGrid({
    actionBegin: function (args) {}
@@ -1939,7 +2075,7 @@ Triggered for every Treegrid action success event.
 
 {% highlight html %}
  
-<div id="gantt"></div> 
+<div id="treegrid"></div> 
 <script>
 $("#treegrid").ejTreeGrid({
    actionComplete: function (args) {}
@@ -3085,5 +3221,83 @@ $("#treegrid").ejTreeGrid({
 {% endhighlight %}
 
 
+
+### toolBarClick
+{:#events:toolbarclick}
+
+Triggered when toolbar item is clicked in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Arguments when toolBarClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the TreeGrid model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+itemName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the toolbar item on which mouse click has been performed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   toolBarClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 
