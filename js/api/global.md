@@ -3464,7 +3464,7 @@ Data</td>
 
 
 
-Enum for the types of editing in grid
+Enum for the type of edit in grid
 
 
 
@@ -3474,7 +3474,7 @@ Enum for the types of editing in grid
 #### Properties
 
 
-Enum for the types of editing in grid
+Enum for the type of edit in grid
 
 
 
@@ -5467,7 +5467,7 @@ HalfCircle</td>
 
 
 
-Enum for grid Formposition
+Enum for formposition in grid
 
 
 
@@ -5477,7 +5477,7 @@ Enum for grid Formposition
 #### Properties
 
 
-Enum for grid Formposition
+Enum for Formposition in grid
 
 
 
@@ -14730,7 +14730,8 @@ Center</td>
 <td class="description">Used to align text on center of node/connector</td>
 </tr>
 <tr>
-<td class="name">Right</td>
+<td class="name">
+Right</td>
 <td class="type">string</td>
 <td class="default">right</td>
 <td class="description">Used to align text on Right side of node/connector</td>
