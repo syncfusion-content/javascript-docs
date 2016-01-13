@@ -31,8 +31,6 @@ To render a Line Chart, set the series [`type`](../api/ejchart.html#members:seri
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img1.png)
 
-Line Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/line) here to view the Line Chart online demo sample.
 
@@ -58,8 +56,6 @@ To change the width of the line segment, you can use the [`width`](../api/ejchar
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img2.png)
 
-Changing the line width
-{:.caption}
 
 
 ### Dashed lines
@@ -81,9 +77,6 @@ To render the line series with dotted lines, you can use the [`dashArray`](../ap
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img3.png)
-
-Line series with dashed lines
-{:.caption}
 
 
 
@@ -109,9 +102,6 @@ For customizing the start and end caps of the line segment, you can use the [`li
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img4.png)
 
-Changin line cap
-{:.caption}
-
 
 ### Changing the line join
 
@@ -136,9 +126,6 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img5.png)
 
-Changing the line join
-{:.caption}
-
 
 ## Step Line Chart
 
@@ -147,7 +134,7 @@ To render a Step Line Chart, set the series [`type`](../api/ejchart.html#members
 {% highlight js %}
 
 
-        $("#chartcontainer").ejChart({
+     $("#chartcontainer").ejChart({
               // ...
             series: [{
                 //Change type and color of the series.
@@ -162,8 +149,6 @@ To render a Step Line Chart, set the series [`type`](../api/ejchart.html#members
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img6.png)
 
-Step Line Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stepline) here to view the Step Line Chart online demo sample.
 
@@ -189,9 +174,6 @@ To change the line width, you can use the **width** property.
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img7.png)
 
-Changing the step line width
-{:.caption}
-
 
 ### Dashed lines
 
@@ -212,10 +194,6 @@ To render the step line series with dotted lines, you can use the [`dashArray`](
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img8.png)
-
-Step Line series with dashed lines
-{:.caption}
-
 
 
 ### Changing the line cap
@@ -240,9 +218,6 @@ For customizing the start and end caps of the line segment, you can use the [`li
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img9.png)
 
-Changin line cap
-{:.caption}
-
 
 ### Changing the line join
 
@@ -266,9 +241,6 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img10.png)
-
-Changing the line join
-{:.caption}
 
 
 ## Area Chart
@@ -296,8 +268,6 @@ To render an Area chart, you can specify the series [`type`](../api/ejchart.html
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img11.png)
 
-Area Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/area) here to view the Area Chart online demo.
 
@@ -337,9 +307,6 @@ Since the RangeArea series requires two y values for a point, you have to add th
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img12.png)
 
-RangeArea Chart
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/rangearea) here to view our Range Area Chart online demo.
 
 
@@ -367,8 +334,6 @@ To render a Step Area Chart, set the [`type`](../api/ejchart.html#members:series
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img13.png)
 
-StepArea Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/steparea) here to view our Step Area Chart online demo.
 
@@ -398,8 +363,6 @@ To render a Spline Area Chart, set the [`type`](../api/ejchart.html#members:seri
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img14.png)
 
-SplineArea Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/splinearea) here to view our Spline Area Chart online demo.
 
@@ -430,8 +393,6 @@ To render a Stacked Area Chart, set the [`type`](../api/ejchart.html#members:ser
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img15.png)
 
-Stacked Area Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedarea) here to view our Stacked Area Chart online demo.
 
@@ -460,8 +421,6 @@ To render a 100% Stacked Area Chart, set the [`type`](../api/ejchart.html#member
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img16.png)
 
-100% Stacked Area Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedarea) here to view our 100% Stacked Area Chart online demo.
 
@@ -491,8 +450,6 @@ To render a Column Chart, set the [`type`](../api/ejchart.html#members:series-ty
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img17.png)
 
-Column Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our Column Chart demo.
 
@@ -522,9 +479,6 @@ You can change the color of a column by using the [`fill`](../api/ejchart.html#m
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img18.png)
-
-Change the color of a column
-{:.caption}
 
 
 ## RangeColumn Chart
@@ -563,8 +517,6 @@ Since, the RangeColumn series requires two y values for a point, add the [`high`
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img19.png)
 
-Range Column Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/rangecolumn) here to view our Range Column Chart online demo.
 
@@ -595,10 +547,6 @@ To change the color of a range column, you can use the [`fill`](../api/ejchart.h
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img20.png)
 
-Change the color of a range column
-{:.caption}
-
-
 ## Stacked Column Chart
 
 To render a Stacked Column Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingColumn"** in the chart series. To change the StackingColumn color, you can use the [`fill`](../api/ejchart.html#members:series-fill) property of the series.
@@ -625,8 +573,6 @@ To render a Stacked Column Chart, set the [`type`](../api/ejchart.html#members:s
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img21.png)
 
-Stacked Column Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedcolumn) here to view our Stacked Column Chart online demo.
 
@@ -661,9 +607,6 @@ You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggro
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img22.png)
 
-grouping stacked columns
-{:.caption}
-
 
 ### Change a point color
 
@@ -689,10 +632,6 @@ To change the color of a stacking column, you can use the [`fill`](../api/ejchar
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img23.png)
 
-Change the color of a stacked column
-{:.caption}
-
- 
 
 ## 100% Stacked Column Chart    
 
@@ -718,8 +657,6 @@ To render a 100% Stacked Column Chart, set the [`type`](../api/ejchart.html#memb
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img24.png)
 
-100% Stacking column chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedcolumn) here to view our 100% Stacked Column Chart online demo.
 
@@ -754,9 +691,6 @@ By using the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup)
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img25.png)
 
-grouping 100% stacked columns
-{:.caption}
-
 
 ### Change a point color
 
@@ -783,9 +717,6 @@ To change the color of a 100% stacking column, you can use the [`fill`](../api/e
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img26.png)
 
-Change the color of a 100% stacked column
-{:.caption}
-
 
 ## Bar Chart
 
@@ -811,8 +742,6 @@ To render a bar Chart, set the [`type`](../api/ejchart.html#members:series-type)
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img27.png)
 
-Bar Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/bar) here to view our Bar Chart demo.
 
@@ -842,9 +771,6 @@ By using the [`fill`](../api/ejchart.html#members:series-points-fill) property o
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img28.png)
 
-Change the color of a bar
-{:.caption}
-
 
 ## Stacked Bar Chart
 
@@ -870,8 +796,6 @@ To render a Stacked Bar Chart, set the [`type`](../api/ejchart.html#members:seri
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img29.png)
 
-Stacked Bar Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedbar) here to view our Stacked Bar Chart online demo.
 
@@ -906,9 +830,6 @@ You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggro
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img30.png)
 
-grouping stacked bar
-{:.caption}
-
 
 ### Change a point color
 
@@ -933,9 +854,6 @@ You can change the color of a stacking bar by using the [`fill`](../api/ejchart.
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img31.png)
-
-Change the color of a stacked bar
-{:.caption}
 
 
 ## 100% Stacked Bar Chart
@@ -962,8 +880,6 @@ To render a 100% Stacked Bar Chart, set the [`type`](../api/ejchart.html#members
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img32.png)
 
-100% Stacked Bar Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedbar) here to view our 100% Stacked Bar Chart online demo.
 
@@ -995,9 +911,6 @@ By using the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup)
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img33.png)
 
-grouping 100% stacked bar
-{:.caption}
-
 
 ### Change a point color
 
@@ -1023,8 +936,6 @@ To change the color of a 100% stacking bar, you can use the [`fill`](../api/ejch
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img34.png)
 
-Change the color of a 100% stacked bar
-{:.caption}
 
 
 ## Spline Chart
@@ -1052,8 +963,6 @@ To render a Spline Chart, set the [`type`](../api/ejchart.html#members:series-ty
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img35.png)
 
-Spline Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/spline) here to view the Spline Chart online demo sample.
 
@@ -1082,9 +991,6 @@ To change the spline segment width, you can use the [`width`](../api/ejchart.htm
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img36.png)
 
-Changing the spline width
-{:.caption}
-
 
 ### Dashed lines
 
@@ -1109,9 +1015,6 @@ To render the spline series with dotted lines, you can use the [`dashArray`](../
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img37.png)
-
-Spline chart with dashed lines
-{:.caption}
 
 
 ## Pie Chart
@@ -1139,8 +1042,6 @@ You can create a pie chart by setting the series [`type`](../api/ejchart.html#me
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img38.png)
 
-Pie Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/pie) here to view the Pie chart online demo sample.
 
@@ -1169,9 +1070,6 @@ You can use the [`pieCoefficient`](../api/ejchart.html#members:series-piecoeffic
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img39.png)
 
-Changing the pie size
-{:.caption}
-
 
 ### Explode a pie segment
 
@@ -1196,9 +1094,6 @@ You can explode a pie segment on the chart load by using the [`explodeIndex`](..
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img40.png)
-
-Exploding a pie segment
-{:.caption}
 
 
 ### Explode all the segments
@@ -1225,9 +1120,6 @@ To explode all the segments of the Pie chart, you can enable the [`explodeAll`](
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img41.png)
 
-Exploding all the segments
-{:.caption}
-
 
 ### Explode a pie segment on mouse over
 
@@ -1253,8 +1145,6 @@ To explode a pie segment on a mouse over, you can enable the [`explode`](../api/
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img42.png)
 
-Exploding a pie segment on mouse over
-{:.caption}
 
 ### Sector of Pie
 
@@ -1280,9 +1170,6 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img43.png)
-
-SemiPie Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/semipieanddoughnut) here to view the Semi Pie Chart online demo sample.
 
@@ -1312,8 +1199,6 @@ To create a Doughnut chart, you can specify the series [`type`](../api/ejchart.h
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img44.png)
 
-Doughnut Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/doughnut) here to view the Doughnut Chart online demo sample.
 
@@ -1342,9 +1227,6 @@ You can change the doughnut chart inner radius by using the [`doughnutCoefficien
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img45.png)
 
-Changing Doughnut inner radius
-{:.caption}
-
 
 ### Change the doughnut size
 
@@ -1369,9 +1251,6 @@ You can use the [`doughnutSize`](../api/ejchart.html#members:series-doughnutsize
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img46.png)
-
-Changing the doughnut size
-{:.caption}
 
 
 ### Explode a doughnut segment
@@ -1398,9 +1277,6 @@ To explode a specific doughnut segment, set the index to be exploded by using th
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img47.png)
 
-Exploding a doughnut segment
-{:.caption}
-
 
 ### Explode all the segments
 
@@ -1425,9 +1301,6 @@ To explode all the segments, you can enable the [`explodeAll`](../api/ejchart.ht
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img48.png)
-
-Exploding all the segments
-{:.caption}
 
 
 ### Explode a doughnut segment on mouse over
@@ -1454,8 +1327,6 @@ To explode a doughnut segment on a mouse over, you can enable the [`explode`](..
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img49.png)
 
-Exploding a doughnut segment on mouse over
-{:.caption}
 
 ### Sector of Doughnut
 
@@ -1482,8 +1353,6 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img50.png)
 
-Arc of Doughnut
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/semipieanddoughnut) here to view the Semi Doughnut Chart online demo sample.
 
@@ -1512,8 +1381,6 @@ To create a Pyramid chart, you can specify the series [`type`](../api/ejchart.ht
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img51.png)
 
-Pyramid Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/pyramid) here to view the Pyramid Chart online demo sample.
 
@@ -1542,9 +1409,6 @@ Pyramid mode has two types, *linear* and *surface* respectively. The default **"
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img52.png)
 
-Pyramid Chart with surface mode
-{:.caption}
-
 
 ### Gap between the segments
 
@@ -1569,9 +1433,6 @@ You can control the gap between the segments by using the [`gapRatio`](../api/ej
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img53.png)
-
-Pyramid Chart with GapRatio
-{:.caption}
 
 
 ### Explode a pyramid segment
@@ -1598,9 +1459,6 @@ You can explode a pyramid segment on the chart load by using the [`explodeIndex`
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img54.png)
 
-Exploding a pyramid segment
-{:.caption}
-
 
 ## Funnel Chart
 
@@ -1626,8 +1484,6 @@ You can create a funnel chart by setting the series [`type`](../api/ejchart.html
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img55.png)
 
-Funnel Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/funnel) here to view the Funnel Chart online demo sample.
 
@@ -1657,9 +1513,6 @@ Funnel segments height and width is calculated from the chart size, by default. 
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img56.png)
 
-Changing funnel width and height
-{:.caption}
-
 
 ### Explode a funnel segment
 
@@ -1684,9 +1537,6 @@ You can explode a funnel segment on the chart load by using the [`explodeIndex`]
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img57.png)
-
-Exploding a funnel segment
-{:.caption}
 
 
 ## Bubble Chart
@@ -1723,8 +1573,6 @@ To create a Bubble chart, you can set the series [`type`](../api/ejchart.html#me
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img58.png)
 
-Bubble Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/bubble) here to view the Bubble Chart online demo sample.
 
@@ -1751,10 +1599,9 @@ To create a Scatter chart, you can set the series [`type`](../api/ejchart.html#m
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img59.png)
 
-Scatter Series
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/scatter) here to view the Scatter Chart online demo sample.
+
 
 ### Customize the scatter chart
 
@@ -1784,9 +1631,6 @@ You can change the scatter size by using the [`size`](../api/ejchart.html#member
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img60.png)
 
-Changing scatter size and color
-{:.caption}
- 
 
 ## HiloOpenClose Chart 
 
@@ -1825,8 +1669,6 @@ To create a HiloOpenClose chart, you can set the series [`type`](../api/ejchart.
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img61.png)
 
-HiLoOpenCloseSeries
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hiloopenclose) here to view the HiloOpenClose Chart online demo sample.
 
@@ -1854,9 +1696,6 @@ You can change the HiloOpenClose chart [`drawMode`](../api/ejchart.html#members:
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img62.png)
 
-HiLoOpenCloseSeries Open DrawMode 
-{:.caption}
-
 
 ### Bull and Bear Color	
 
@@ -1881,9 +1720,6 @@ Hiloopenclose chart [`bullFillColor`](../api/ejchart.html#members:series-bullfil
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img63.png)
-
-Change OHLC Bull and Bear Color
-{:.caption}
 
 
 ## Candle
@@ -1922,8 +1758,6 @@ You can create a Candle chart by specifying the series [`type`](../api/ejchart.h
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img64.png)
 
-Candle Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/candle) here to view the Candle Chart online demo sample.
 
@@ -1950,9 +1784,6 @@ Candle chart [`bullFillColor`](../api/ejchart.html#members:series-bullfillcolor)
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img65.png)
-
-Change Candle bull and bear Color
-{:.caption}
 
 
 ## Hilo
@@ -1990,8 +1821,6 @@ Hilo chart is created by setting the series [`type`](../api/ejchart.html#members
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img66.png)
 
-Change Candle bull and bear Color
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hilo) here to view the Hilo Chart online demo sample.
 
@@ -2017,8 +1846,6 @@ Polar chart is created by setting the series [`type`](../api/ejchart.html#member
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img67.png)
 
-Polar Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/polar) here to view the Polar Chart online demo sample.
 
@@ -2046,9 +1873,6 @@ Polar [`drawType`](../api/ejchart.html#members:series-drawtype) property is used
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img68.png)
 
-Polar Chart column type
-{:.caption}
-
 
 ### Stack columns in Polar chart
 
@@ -2073,8 +1897,6 @@ By using the [`isStacking`](../api/ejchart.html#members:series-isstacking) prope
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img69.png)
 
-Polar Chart IsStacking
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/windrose) here to view the Polar Wind Rose Chart online demo sample.
 
@@ -2103,8 +1925,6 @@ To create a Radar chart, you can specify the series [`type`](../api/ejchart.html
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img70.png)
 
-Radar Chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/radar) here to view the Radar Chart online demo sample.
 
@@ -2133,9 +1953,6 @@ Radar [`drawType`](../api/ejchart.html#members:series-drawtype) property is used
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img71.png)
 
-Radar Chart with column drawType
-{:.caption}
-
 
 ### Stack columns in Radar chart
 
@@ -2161,8 +1978,297 @@ By using the [`isStacking`](../api/ejchart.html#members:series-isstacking) prope
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img72.png)
 
-Radar IsStacking
-{:.caption}
+
+## Waterfall Chart 
+
+For rendering a Waterfall chart, set series [`type`](../api/ejchart.html#members:series-type) as **“waterfall”** in the chart series. To change the waterfall series segment color use [`fill`](../api/ejchart.html#members:series-fill) option of series and use [`positiveFill`](../api/ejchart.html#members:series-positiveFill) property to differentiate the positive segments.
+
+N> The inline property of the **series.positiveFill** has the first priority and override the **series.fill**.
+
+{% highlight js %}
+
+
+  $("#chartcontainer").ejChart({
+        
+           // ...
+           series: [{
+                   //Change type and color of the series.
+                   type: waterfall,         
+                   fill: "#C64E4A",
+                   positiveFill: "#C64E4A" 
+                   // ...     
+            }],          
+              // ...
+        }); 
+
+
+{% endhighlight %}
+
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img73.png)
+
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/waterfall) here to view the Waterfall Chart online demo sample.
+
+
+**ShowIntermediateSum**
+
+To display the summary of values since the last intermediate point of the waterfall series, set **showIntermediateSum** property as true in the specific point.
+
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+           // ...
+            series: [{
+                  points: [
+                        //Enable showIntermediateSum in to a point.
+                        //  ...
+                        { x: "Intermediate sum",showIntermediateSum: true }
+                        //  ...        
+                   ],
+                //  ...
+            }],
+         
+              // ...
+        }); 
+
+
+{% endhighlight %}
+
+
+**ShowTotalSum**
+
+The sum of all previous point in the waterfall series is displayed on enabling the **showTotalSum** property for a specific point.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+           // ...
+            series: [{
+                  points: [
+                        //Enable showTotalSum in to a point.
+                        //  ...
+                        { x: "Total sum", showTotalSum: true }
+                        //  ...        
+                   ],
+                //  ...
+            }],
+         
+              // ...
+        }); 
+
+
+{% endhighlight %}
+
+
+### ConnectorLine
+
+To customize the connector line color, width, opacity and dashArray of the waterfall series, you can use [`connectorLine`](../api/ejchart.html#members:series-connectorLine) option of series.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+           // ...
+           series: [{
+         
+                 //customize waterfall series connector line styles
+                 connectorLine: {color: "#333000", width: 1, opacity: 1, dashArray: "3,2"},
+                 //  ...
+            }],
+                     
+            // ...
+    }); 
+
+
+{% endhighlight %}
+
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img74.png)
+
+
+## Errorbar Chart 
+
+EjChart can generate Error bar for Cartesian type series *(line, column, bar, scatter, area, candle, hilo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *“visibile”* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
+
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+       // ...
+       series:[{
+              	//...
+                //To toggle the error bar visibility		    
+	        errorBar: {
+		        visibility: "visible"
+		     }
+	   }]
+                     
+         // ...
+    }); 
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img75.png)
+
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/errorbar) here to view the Errorbar Chart online demo sample.
+
+
+### Changing Error Bar Type
+
+You can change the error bar rendering type using [`type`](../api/ejchart.html#members:series-errorBar-type) *(like fixedValue, percentage, standardDeviation, standardError and custom)* option of errorBar. To change the error bar line length you can use [`verticalErrorValue`](../api/ejchart.html#members:series-errorBar-verticalErrorValue) property.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+        // ...
+        series:[{
+                //...	
+                //Change the error bar type	    
+	        errorBar: {
+		       type: "fixedValue",
+               verticalErrorValue:3
+		     }
+          }]
+                     
+        // ...
+    }); 
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img76.png)
+
+
+#### Customizing error bar type              
+
+To customize the error bar type, set error bar [`type`](../api/ejchart.html#members:series-errorBar-type) as **"custom"** and then change the horizontal/vertical positive and negative value of error bar.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+         // ...
+         series:[{
+                //...	
+                //Change the error bar type	    
+	         errorBar: {
+		         type: "custom",
+                          verticalPositiveErrorValue:5,
+                          horizontalPositiveErrorValue:1,
+                          verticalNegativeErrorValue:5,
+                          horizontalNegativeErrorValue:1
+			      }
+
+	     }]
+                     
+          // ...
+    }); 
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img77.png)
+
+
+### Changing Error Bar Mode
+
+Error bar mode is used to define whether the error bar line has to be drawn *horizontally, vertically* or in *both* side.  To change the error bar mode use [`errorBar.mode`](../api/ejchart.html#members:series-errorBar-mode) option.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+           // ...
+           series:[{
+                //...	
+                //Change the error bar mode	    
+	           errorBar: {
+		       type: "fixedValue",
+               mode: "vertical"
+		      }
+	      }]
+                     
+         // ...
+    }); 
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img78.png)
+
+
+### Changing Error Bar Direction
+
+You can change the error bar direction to plus, minus or both side using [`errorBar.directions`](../api/ejchart.html#members:series-errorBar-directions) option.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+         // ...
+         series:[{
+              //...	
+              //Change the error bar direction	    
+	          errorBar: {
+		           type: "fixedValue",
+                   mode: "vertical",
+                   direction: "minus" 
+		       }
+	       }]
+                     
+            // ...
+    }); 
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img79.png)
+
+
+### Customizing Error bar cap
+
+To customize the error bar cap *visibility, length, width* and *fill* color, you can use [`cap`](../api/ejchart.html#members:series-errorBar-cap) option in the **series.errorBar**.
+
+{% highlight js %}
+
+
+   $("#chartcontainer").ejChart({
+        
+        // ...
+         series:[{
+                //...	
+              errorBar: {
+                   //To customize the error bar cap
+		           cap:{
+                          visible: true,
+                          length: 20,
+                          width: 1,
+                          fill :"#000000"
+                        }
+    		    }
+         }]                     
+        // ...
+    });
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img80.png)
 
 
 

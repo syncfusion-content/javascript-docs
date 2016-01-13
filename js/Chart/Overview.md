@@ -13,7 +13,7 @@ Essential Chart for Javascript is a visually stunning Charting component. It inc
 
 Some of the key features are,
 
-* Supports highly interactive 27 chart types; 8 charts can be viewed in 3D view.
+* Supports highly interactive 28 chart types; 8 charts can be viewed in 3D view.
 * Data Binding with local and remote data source.
 * Supports multiple axes, and able to plot data with different data types such as numbers, date time and strings.
 * Supports interactive features like zooming, panning, crosshair, trackball, tooltip and data point selection.

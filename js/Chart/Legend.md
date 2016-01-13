@@ -32,8 +32,6 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 ![](/js/Chart/Legend_images/Legend_img1.png)
 
-Legend visibility in chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/legendposition) here to view the online demo sample for legend position.
 
@@ -62,9 +60,6 @@ To add the title to the legend, you have to specify the [`legend.title.text`](..
 
 ![](/js/Chart/Legend_images/Legend_img2.png)
 
-Chart with legend title
-{:.caption}
-
 
 ## Position and Align the Legend
 
@@ -89,9 +84,6 @@ By using the [`position`](../api/ejchart#members:legend-position) option, you ca
 
 ![](/js/Chart/Legend_images/Legend_img3.png)
 
-Change legend position
-{:.caption}
-
 **Legend Alignment**
 
 You can align the legend to the *center*, *far* or *near* based on its position by using the [`alignment`](../api/ejchart#members:legend-alignment) option.
@@ -114,9 +106,6 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img4.png)
-
-Change legend position and alignment
-{:.caption}
 
 
 ## Arrange legend items in the rows and columns
@@ -150,9 +139,6 @@ You can arrange the legend items horizontally and vertically by using the [`rowC
 
 ![](/js/Chart/Legend_images/Legend_img5.png)
 
-Arrangeing legend items in rows and columns
-{:.caption}
-
 
 ## Customization
 
@@ -178,9 +164,6 @@ To change the legend icon shape, you have to specify the shape in the [`shape`](
 
 ![](/js/Chart/Legend_images/Legend_img6.png)
 
-Changing legend shape
-{:.caption}
-
 
 ### Legend items size and border
 
@@ -204,10 +187,6 @@ You can change the size of the legend items by using the [`itemStyle.width`](../
 
 ![](/js/Chart/Legend_images/Legend_img7.png)
 
-Changing legend items size and border
-{:.caption}
-
-
 ### Legend size
 
 By default, legend takes 20% of the **height** horizontally when it was placed on the top or bottom position and 20% of the **width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejchart#members:legend-size) option of the legend.  
@@ -229,9 +208,6 @@ By default, legend takes 20% of the **height** horizontally when it was placed o
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img8.png)
-
-Change legend size
-{:.caption}
 
 
 ### Legend Item Padding
@@ -256,10 +232,6 @@ You can control the spacing between the legend items by using the [`itemPadding`
 
 ![](/js/Chart/Legend_images/Legend_img9.png)
 
-Change padding between the legend items
-{:.caption}
-
-
 ### Legend border
 
 You can customize the legend border by using the [`border`](../api/ejchart#members:legend-border) option in the legend. 
@@ -281,10 +253,6 @@ You can customize the legend border by using the [`border`](../api/ejchart#membe
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img10.png)
-
-Customize the legend border
-{:.caption}
-
 
 ### Scrollbar for legend
 
@@ -308,9 +276,6 @@ You can enable or disable the legend scrollbar by using the [`enableScrollbar`](
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img11.png)
-
-Enable scrollbar for legend
-{:.caption}
 
 ### Customize the legend text
 
@@ -341,9 +306,45 @@ To customize the legend item text and title you can use the [`legend.font`](../a
 
 ![](/js/Chart/Legend_images/Legend_img12.png)
 
-Customizing legend item and title text
-{:.caption}
+### LegendItems Text Overflow
 
+**Trim**
+
+You can trim the legend item text when its width exceeds the [`legend.textWidth`](../api/ejchart#members:legend-textWidth), by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"trim"**. The original text will be displayed on mouse hover.
+
+{% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+            
+            // ...             
+            legend: {
+               //trim the legend text
+		        textOverflow: 'trim', 
+		        textWidth: 34
+	          } 
+
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+![](/js/Chart/Legend_images/Legend_img13.png) 
+
+
+**Wrap**
+
+By specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wrap"**, you can wrap the legend text by word.
+
+![](/js/Chart/Legend_images/Legend_img14.png)
+
+**WrapTrim**
+
+You can wrap and trim the legend text by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wraptrim"**. The original text will be displayed on mouse hover.
+
+![](/js/Chart/Legend_images/Legend_img15.png)
+   
 
 ## Handle the legend item clicked
 
@@ -392,7 +393,4 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img13.png)
-
-Avoid series collapsing on legend item clicked
-{:.caption}
+![](/js/Chart/Legend_images/Legend_img16.png)

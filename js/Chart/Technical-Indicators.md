@@ -106,9 +106,6 @@ To create an Accumulation Distribution indicator, set the [`indicators.type`](..
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png)
 
-Accumulation Distribution Indicator
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/accumulationdistribution) here to view the Accumulation Distribution indicator online demo sample.
 
 
@@ -134,9 +131,6 @@ You can create an ATR indicator by setting the [`indicators.type`](../api/ejchar
 {% endhighlight %}
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png)
-
-Average true range Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/atr) here to view the ATR indicator online demo sample.
 
@@ -164,9 +158,6 @@ Bollinger Band indicator is created by setting the [`indicators.type`](../api/ej
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png)
 
-Bollinger Band Indicator
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/bollingerband) here to view the Bollinger Band indicator online demo sample.
 
 
@@ -192,9 +183,6 @@ To render an EMA indicator, you have to set the [`indicators.type`](../api/ejcha
 {% endhighlight %}
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png)
-
-Exponential Moving Average Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/ema) here to view the EMA indicator online demo sample.
 
@@ -222,9 +210,6 @@ Momentum Technical indicator is created by setting the [`indicators.type`](../ap
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png)
 
-Momentum Indicator
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/momentum) here to view the Momentum indicator online demo sample.
 
 
@@ -251,8 +236,6 @@ To render an MACD indicator, you have to set the [`indicators.type`](../api/ejch
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png)
 
-MACD Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/macd) here to view the MACD indicator online demo sample.
 
@@ -281,8 +264,6 @@ By using the [`macdType`](../api/ejchart#members:indicators-macdtype) enumeratio
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png)
 
-MACD Histogram
-{:.caption}
 
 ### Relative Strength Index (RSI)
 
@@ -308,8 +289,6 @@ To render the RSI indicator, set the [`indicators.type`](../api/ejchart#members:
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png)
 
-RSI Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/rsi) here to view the RSI indicator online demo sample.
 
@@ -337,8 +316,6 @@ To render the SMA indicator, you should specify the [`indicators.type`](../api/e
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png)
 
-Simple Moving Average Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/sma) here to view the SMA indicator online demo sample.
 
@@ -366,8 +343,6 @@ For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejc
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png)
 
-Stochastic Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/stochastic) here to view the stochastic indicator online demo sample.
 
@@ -395,8 +370,6 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img11.png)
 
-Triangular Moving Average Indicator
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/tma) here to view the TMA indicator online demo sample.
 
@@ -426,7 +399,5 @@ To display the indicator tooltip, use [`visible`](../api/ejchart#members:indicat
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img12.png)
 
-Indicator Tooltip
-{:.caption}
 
 
