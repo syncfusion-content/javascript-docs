@@ -3741,7 +3741,7 @@ Enum for Grid Filter Bar mode
 #### Properties
 
 
-Used to display filter results after enter key is pressed or specified time interval
+Enum for Grid Filter Bar mode
 
 
 
