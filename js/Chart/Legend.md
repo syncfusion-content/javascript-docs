@@ -339,9 +339,9 @@ By specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **
 
 ![](/js/Chart/Legend_images/Legend_img14.png)
 
-**WrapTrim**
+**WrapAndTrim**
 
-You can wrap and trim the legend text by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wraptrim"**. The original text will be displayed on mouse hover.
+You can wrap and trim the legend text by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wrapAndTrim"**. The original text will be displayed on mouse hover.
 
 ![](/js/Chart/Legend_images/Legend_img15.png)
    

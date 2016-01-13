@@ -255,7 +255,7 @@ The user can choose the items displayed in the zooming toolbar by specifying the
 	         //Customizing zooming toolbar
 	         zooming:{	
 			   enable: true,
-               toolbarItems: [”reset”, “zoomIn”, “zoomOut”]
+               toolbarItems: ["reset", "zoomIn", "zoomOut"]
 			},
              // ...
     });

@@ -2138,7 +2138,7 @@ You can change the error bar rendering type using [`type`](../api/ejchart.html#m
                 //...	
                 //Change the error bar type	    
 	        errorBar: {
-		       type: "fixedValue",
+		       type: "percentage",
                verticalErrorValue:3
 		     }
           }]

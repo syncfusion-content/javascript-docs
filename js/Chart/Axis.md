@@ -1107,11 +1107,11 @@ The following screenshot displays the result, when the [`labelIntersectAction`](
 ![](/js/Chart/Axis_images/axis_img47.png)
 
 
-The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **multiplerows **.
+The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **multipleRows **.
 
 ![](/js/Chart/Axis_images/axis_img48.png)
 
 
-The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrapbyword**.
+The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrapByWord**.
 
 ![](/js/Chart/Axis_images/axis_img49.png)

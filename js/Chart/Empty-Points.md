@@ -82,7 +82,7 @@ Empty points color and border can be customized using [`style`](../api/ejchart.h
                        visible: true,
                        //Customizing empty points styles
                        style: {
-                           color: "pink",
+                           color: "#ffa000",
                            border:{
                                color: "gray",
                                width:2
