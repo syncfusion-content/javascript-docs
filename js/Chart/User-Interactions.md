@@ -241,11 +241,10 @@ The [`type`](../api/ejchart#members:zooming-type) option in zooming specifies wh
 
 {% endhighlight %}
 
-For zooming chart programmatically refer the online [`KB`](programmatic zooming).
 
 ### Customizing zooming toolbar
 
-The user can choose the items displayed in the zooming toolbar by specifying the property [`toolBarItems`](../api/ejchart#members:zooming-toolBarItems).
+You can choose the items displayed in the zooming toolbar by specifying the property [`toolBarItems`](../api/ejchart#members:zooming-toolBarItems).
 
 {% highlight js %}
 
@@ -437,9 +436,6 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 {% endhighlight %}
 
 ![](/js/Chart/User-Interactions_images/User-Interactions_img13.png)
-
-To view the data representation depth in chart by clicking on the data point, refer [`Drilldown`](drilldown) KB.
-
 
 ## Highlight
 
