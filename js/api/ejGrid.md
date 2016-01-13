@@ -2049,7 +2049,7 @@ Gets or sets a value that indicates whether to define the field name of the colu
 ### filterSettings.filteredColumns.operator `enum`
 {:#members:filtersettings-filteredcolumns-operator}
 
-Gets or Sets a value that indicates whether to define the filter condition to filtered column.
+Gets or sets a value that indicates whether to define the filter condition to filtered column.
 
 ### filterSettings.filteredColumns.predicate `string`
 {:#members:filtersettings-filteredcolumns-predicate}
