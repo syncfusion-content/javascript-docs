@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Animation
-description: animation
+title: Animation in Dialog widget for Essential JS
+description: How to apply animation effects.
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 
 # Animation

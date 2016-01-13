@@ -37,9 +37,6 @@ EjChart supports localization for its axis labels and tooltip. To render the cha
 
 ![](/js/Chart/Localization_images/Localization_img1.png)
 
-Chart with french localization
-{:.caption}
-
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/localization) here to view the localization chart online demo sample.
 
 

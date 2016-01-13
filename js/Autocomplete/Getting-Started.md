@@ -1,10 +1,11 @@
 ---
 layout: post
-title: getting-Started
-description: getting started
+title: Getting Started with AutoComplete widget for Essential JS
+description: How to create Autocomplete widget with the step-by-step instructions.
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Getting Started
@@ -16,18 +17,18 @@ This section helps to understand the getting started of the AutoComplete widget 
 Create a new HTML file and include the below code
 
 {% highlight html %}
-
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+        
+        <!DOCTYPE html>
+        
+        <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+        </head>
+        <body>
+        
+        </body>
+        </html>
 
 
 {% endhighlight %}
@@ -37,12 +38,12 @@ Create a new HTML file and include the below code
 Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Dialog </title>
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-</head>
+        
+        <head>
+            <meta charset="utf-8" />
+            <title>Getting Started - Dialog </title>
+            <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        </head>
 
 
 {% endhighlight %}
@@ -53,23 +54,23 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 {% highlight html %}
 
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Dialog</title>
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
-</head>
+        <head>
+            <meta charset="utf-8" />
+            <title>Getting Started - Dialog</title>
+            <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+            <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+            <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+            <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+        </head>
 
 
 {% endhighlight %}
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server._
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
 
 
 
@@ -81,10 +82,10 @@ Add an input element in the &lt;body&gt; tag as below.
 
 {% highlight html %}
 
-
-<body>
-        <input type="text" id="autocomplete" />
-</body>
+        
+        <body>
+                <input type="text" id="autocomplete" />
+        </body>
 
 
 {% endhighlight %}
@@ -139,9 +140,9 @@ This button helps you to show all the available suggestions on clicking it.
 
 {% highlight js %}
 
-
-   $('#autocomplete').ejAutocomplete({ dataSource: carList, showPopupButton:true });
-
+        
+        $('#autocomplete').ejAutocomplete({ dataSource: carList, showPopupButton:true });
+        
 
 
 {% endhighlight %}

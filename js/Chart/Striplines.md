@@ -43,8 +43,6 @@ You can create horizontal stripline by adding the [`stripline`](../api/ejchart#m
 
 ![](/js/Chart/Striplines_images/Striplines_img1.png)
 
-Horizontal Striplines
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/striplines) here to view the Striplines online demo sample.
 
@@ -82,9 +80,6 @@ You can create vertical stripline by adding the [`stripline`](../api/ejchart#mem
 
 ![](/js/Chart/Striplines_images/Striplines_img2.png)
 
-Vertical Striplines
-{:.caption}
-
 
 ## Customize the Text
 
@@ -112,9 +107,7 @@ To customize the stripLine text, use the [`text`](../api/ejchart#members:primary
 {% endhighlight %}
 
 ![](/js/Chart/Striplines_images/Striplines_img3.png)
-
-Customize stripline text
-{:.caption}	
+	
 
 **Text Alignment**
 
@@ -141,9 +134,6 @@ Stripline text can be aligned by using the [`textAlignment`](../api/ejchart#memb
 {% endhighlight %}
 
 ![](/js/Chart/Striplines_images/Striplines_img4.png)
-
-Stripline text alignment
-{:.caption}
 
 
 ## Customize the Stripline
@@ -175,9 +165,6 @@ To customize the stripLine styles, use the [`color`](../api/ejchart#members:prim
 
 ![](/js/Chart/Striplines_images/Striplines_img5.png)
 
-Customize stripline rectangle
-{:.caption}
-
 
 ## Change the zorder of the stripline
 
@@ -204,6 +191,3 @@ Stripline [`zIndex`](../api/ejchart#members:primaryyaxis-stripline-zindex) prope
 {% endhighlight %}
 
 ![](/js/Chart/Striplines_images/Striplines_img6.png)
-
-Stripline zIndex
-{:.caption}

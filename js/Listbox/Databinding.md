@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Databinding
-description: databinding
+title: Databinding in ListBox widget for Syncfusion Essential JS
+description: How to populate data in ListBox widget.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Databinding
@@ -87,6 +88,7 @@ Here the bikeName and bikeId fields are mapped with text and id properties of th
 ![FieldSetting Listbox](databinding_images\local-data_img1.png)
 
 ## Remote data
+
 ### OData
 
 [OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
@@ -117,13 +119,10 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 {% endhighlight %}
 
-
-
 ![Alt text](Databinding_images\odata_img1.png)
 
+
 ### WebAPI
-
-
 
 [ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
@@ -153,11 +152,11 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-N> _In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API._
+N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
 
  {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
-![Alt text](Databinding_images\webapi_img1.png)
+![WebApi Listbox ](Databinding_images\webapi_img1.png)
 
 ### Virtual Scrolling
 
@@ -201,7 +200,7 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
 
-N> _By default, the value of “virtualScrollMode” property is normal._
+N> By default, the value of “virtualScrollMode” property is normal.
 
 {% include image.html url="Databinding_images\normal-scrolling_img1.png" Caption="Before scrolling"%}
 
@@ -244,7 +243,7 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
 
-N> _The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”._
+N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
 
 {% include image.html url="Databinding_images\continuous-scrolling_img1.png" Caption="Before scrolling"%}
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: overview
-description: overview
+title: Overview of AutoComplete widget for Essential JS 
+description: Explains about the Autocomplete widget and its key features
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Overview

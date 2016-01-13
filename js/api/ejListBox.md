@@ -1,20 +1,23 @@
 ---
 layout: post
-title: API reference for ejListBox
-description: What are the options, methods and events available in Essential JavaScript ListBox.
+title: ejListBox
+description: Methods, members, events available in ejListBox
 documentation: API
-keywords: ejListBox, API, Essential JS ListBox, ListBox
 platform: js
-metaname: 
-metacontent: 
+keywords: ejListView, API, Essential JS ListBox 
 ---
 
 # ejListBox
 
+The ListBox control provides a list of options for users to select from. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
-The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
+#### Syntax
 
-$(element).ejListBox<span class="signature">(options)</span>
+{% highlight js %}
+
+        $(element).ejListBox(options)
+
+{% endhighlight %}
 
 Example
 {:.example}
@@ -2507,47 +2510,52 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-argument.data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-argument.index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
 argument.cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+argument.items</td><td>
+Array</td><td>
+Array of list item object.</td></tr>
+<tr>
+<td>
+argument.items[index].item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.items[index].data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.items[index].index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+argument.items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+argument.items[index].isEnabled</td><td>
 Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
+Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+argument.items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+argument.items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2649,47 +2657,52 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-argument.data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-argument.index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
 argument.cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+argument.items</td><td>
+Array</td><td>
+Array of list item object.</td></tr>
+<tr>
+<td>
+argument.items[index].item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.items[index].data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.items[index].index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+argument.items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+argument.items[index].isEnabled</td><td>
 Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
+Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+argument.items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+argument.items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2735,47 +2748,52 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-argument.data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-argument.index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
 argument.cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+argument.items</td><td>
+Array</td><td>
+Array of list item object.</td></tr>
+<tr>
+<td>
+argument.items[index].item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.items[index].data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.items[index].index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+argument.items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+argument.items[index].isEnabled</td><td>
 Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
+Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+argument.items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+argument.items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2823,47 +2841,52 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-argument.data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-argument.index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
 argument.cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+argument.items</td><td>
+Array</td><td>
+Array of list item object.</td></tr>
+<tr>
+<td>
+argument.items[index].item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.items[index].data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.items[index].index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+argument.items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+argument.items[index].isEnabled</td><td>
 Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
+Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+argument.items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+argument.items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2909,47 +2932,52 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-argument.data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-argument.index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
 argument.cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+argument.items</td><td>
+Array</td><td>
+Array of list item object.</td></tr>
+<tr>
+<td>
+argument.items[index].item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.items[index].data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.items[index].index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+argument.items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+argument.items[index].isEnabled</td><td>
 Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
+Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+argument.items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+argument.items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>

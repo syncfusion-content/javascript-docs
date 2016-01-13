@@ -1,17 +1,17 @@
 ---
 layout: post
-title: API reference for ejAutocomplete
-description: What are the options, methods and events available in Essential JavaScript Autocomplete.
+title: ejAutocomplete
+description: Methods, members, events available in ejAutocomplete
 documentation: API
-keywords: ejAutocomplete, API, Essential JS Autocomplete, Autocomplete
 platform: js
-metaname: 
-metacontent: 
+keywords: ejAutocomplete, API, Essential JS Autocomplete 
 ---
 
 # ejAutocomplete
 
 The AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
+
+#### Syntax
 
 {% highlight js %}
 		

@@ -29,8 +29,6 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 
 ![](/js/Chart/Trendlines_images/Trendlines_img1.png)
 
-Adding Trendline to the chart
-{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
 
@@ -58,8 +56,6 @@ A trendline can be customized by using the properties such as [`fill`](../api/ej
 
 ![](/js/Chart/Trendlines_images/Trendlines_img2.png)
 
-Customizing the trendlines
-{:.caption}
 
 
 ## Types of Trendline
@@ -71,6 +67,7 @@ EjChart supports the following type of Trendlines.
 * Logarithmic
 * Power 
 * Polynomial
+* MovingAverage
 
 ### Linear
 
@@ -82,7 +79,7 @@ To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:
             series:[{
                   trendlines: [{
                        //Change Trendline type
-                       type: “linear”
+                       type: "linear"
                      }],
                 //...
               }]          
@@ -94,8 +91,6 @@ To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:
 
 ![](/js/Chart/Trendlines_images/Trendlines_img3.png)
 
-Adding Linear Trendline to the chart
-{:.caption}
 
 ### Exponential
 
@@ -107,7 +102,7 @@ Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#mem
             series:[{
                   trendlines: [{
                        //Change Trendline type
-                       type: “exponential”
+                       type: "exponential"
                      }],
                 //...
               }]          
@@ -119,8 +114,6 @@ Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 ![](/js/Chart/Trendlines_images/Trendlines_img4.png)
 
-Adding Exponential Trendline to the chart
-{:.caption}
 
 ### Logarithmic
 
@@ -132,7 +125,7 @@ Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#mem
             series:[{
                   trendlines: [{
                        //Change Trendline type
-                       type: “logarithmic”
+                       type: "logarithmic"
                      }],
                 //...
               }]          
@@ -144,8 +137,6 @@ Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 ![](/js/Chart/Trendlines_images/Trendlines_img5.png)
 
-Adding Logarithmic Trendline to the chart
-{:.caption}
 
 ### Power
 
@@ -157,7 +148,7 @@ Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:s
             series:[{
                   trendlines: [{
                        //Change Trendline type
-                       type: “power”
+                       type: "power"
                      }],
                 //...
               }]          
@@ -169,8 +160,6 @@ Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:s
 
 ![](/js/Chart/Trendlines_images/Trendlines_img6.png)
 
-Adding Power Trendline to the chart
-{:.caption}
 
 ### Polynomial
 
@@ -182,7 +171,7 @@ Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ej
             series:[{
                   trendlines: [{
                        //Change Trendline type
-                       type: “polynomial”
+                       type: "polynomial"
                      }],
                 //...
               }]          
@@ -194,8 +183,29 @@ Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ej
 
 ![](/js/Chart/Trendlines_images/Trendlines_img7.png)
 
-Adding Polynomial Trendline to the chart
-{:.caption}
+
+
+### MovingAverage
+
+MovingAverage Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) of the trendline as **"movingAverage"**. 
+
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type and set [`period`](../api/ejchart#members:series-trendlines-period) for moving average
+                       type: "movingAverage", period: 3
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+![](/js/Chart/Trendlines_images/Trendlines_img8.png)
 
 ## Forecasting
 
@@ -225,10 +235,8 @@ The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-f
 
 {% endhighlight %}
 
-![](/js/Chart/Trendlines_images/Trendlines_img8.png)
+![](/js/Chart/Trendlines_images/Trendlines_img9.png)
 
-Adding ForwardForecast value to Chart Trendline
-{:.caption}
 
 
 ### Backward Forecasting
@@ -252,10 +260,8 @@ The value set for the [`backwardForecast`](../api/ejchart#members:series-trendli
 
 {% endhighlight %}
 
-![](/js/Chart/Trendlines_images/Trendlines_img9.png)
+![](/js/Chart/Trendlines_images/Trendlines_img10.png)
 
-Adding BackwardForecast  value to Chart Trendline
-{:.caption}
 
 ## Trendlines Legend
 
@@ -278,7 +284,4 @@ To display the legend item for trendline, use the [`name`](../api/ejchart#member
 
 {% endhighlight %}
 
-![](/js/Chart/Trendlines_images/Trendlines_img10.png)
-
-Hide the Trendline series on legend mouse click
-{:.caption}
+![](/js/Chart/Trendlines_images/Trendlines_img11.png)

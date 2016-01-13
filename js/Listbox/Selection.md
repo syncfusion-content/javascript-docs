@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Selection
-description: selection
+title: Selection in ListBox widget for Syncfusion Essential JS
+description: How to achieve Selection and MultiSelection
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Selection
@@ -37,7 +38,7 @@ By default, the ListBox widget allows single item selection. We can select speci
 
 Multiple selection can be enabled using “allowMultiSelection” property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
-{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction). {% endseealso %}
+{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction) {% endseealso %}
 
 {% highlight js %}
 
@@ -54,13 +55,16 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 {% endhighlight %}
 
+![MultiSelect Listbox](Selection_Images\multipleselection_img1.png)
+
+
 ## Checkbox
 
 The ListBox widget allows selection through checkbox. It can be enabled using “showCheckbox” API.
 
 The specified items can be checked on initialize through “checkedIndices” property. 
 
-{% seealso %} [“checkedIndices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
+{% seealso %} [Checked Indices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
 
 {% highlight js %}
 

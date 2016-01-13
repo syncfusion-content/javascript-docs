@@ -24,7 +24,6 @@ $(element).ejChart();
 
 
 #### Example
-{:.example}
 
 
 {% highlight html %}
@@ -59,7 +58,7 @@ $('#container').ejChart();
 
 
 
-### annotations<span class="type-signature type array">array</span>
+### annotations `array`
 {:#members:annotations}
 
 
@@ -72,7 +71,7 @@ Options for adding and customizing annotations in Chart.
 
 
 
-### annotations.angle<span class="type-signature type number">number</span>
+### annotations.angle `number`
 {:#members:annotations-angle}
 
 
@@ -81,15 +80,14 @@ Options for adding and customizing annotations in Chart.
 Angle to rotate the annotation in degrees.
 
 
-Default value:
-{:.param}
-'0'
+#### Default Value
+
+* '0'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -109,7 +107,7 @@ Try it: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
-### annotations.content<span class="type-signature type string">string</span>
+### annotations.content `string`
 {:#members:annotations-content}
 
 
@@ -118,15 +116,14 @@ Try it: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
 Text content or id of a HTML element to be displayed as annotation.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -146,7 +143,7 @@ Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
-### annotations.coordinateUnit<span class="type-signature type enum">enum</span>
+### annotations.coordinateUnit `enum`
 {:#members:annotations-coordinateunit}
 
 
@@ -155,15 +152,14 @@ Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 Specifies how annotations have to be placed in Chart.
 
 
-Default value:
-{:.param}
-"none". See <a href="global.html#members:coordinateunit">CoordinateUnit</a>
+#### Default Value
+
+* "none". See <a href="global.html#members:coordinateunit">CoordinateUnit</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -179,7 +175,7 @@ $("#container").ejChart({
 
 
 
-### annotations.horizontalAlignment<span class="type-signature type enum">enum</span>
+### annotations.horizontalAlignment `enum`
 {:#members:annotations-horizontalalignment}
 
 
@@ -188,15 +184,14 @@ $("#container").ejChart({
 Specifies the horizontal alignment of the annotation.
 
 
-Default value:
-{:.param}
-"middle". See <a href="global.html#members:horizontalalignment">HorizontalAlignment</a>
+#### Default Value
+
+* "middle". See <a href="global.html#members:horizontalalignment">HorizontalAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -215,7 +210,7 @@ Try it: [Horizontal Alignment](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
-### annotations.margin<span class="type-signature type object">object</span>
+### annotations.margin `object`
 {:#members:annotations-margin}
 
 
@@ -231,7 +226,7 @@ Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
-### annotations.margin.bottom<span class="type-signature type number">number</span>
+### annotations.margin.bottom `number`
 {:#members:annotations-margin-bottom}
 
 
@@ -240,15 +235,14 @@ Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
 Annotation is placed at the specified value above its original position.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -264,7 +258,7 @@ $("#container").ejChart({
 
 
 
-### annotations.margin.left<span class="type-signature type number">number</span>
+### annotations.margin.left `number`
 {:#members:annotations-margin-left}
 
 
@@ -273,15 +267,14 @@ $("#container").ejChart({
 Annotation is placed at the specified value from left side of its original position.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -297,7 +290,7 @@ $("#container").ejChart({
 
 
 
-### annotations.margin.right<span class="type-signature type number">number</span>
+### annotations.margin.right `number`
 {:#members:annotations-margin-right}
 
 
@@ -306,15 +299,14 @@ $("#container").ejChart({
 Annotation is placed at the specified value from the right side of its original position.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -330,7 +322,7 @@ $("#container").ejChart({
 
 
 
-### annotations.margin.top<span class="type-signature type number">number</span>
+### annotations.margin.top `number`
 {:#members:annotations-margin-top}
 
 
@@ -339,15 +331,14 @@ $("#container").ejChart({
 Annotation is placed at the specified value under its original position.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -363,7 +354,7 @@ $("#container").ejChart({
 
 
 
-### annotations.opacity<span class="type-signature type number">number</span>
+### annotations.opacity `number`
 {:#members:annotations-opacity}
 
 
@@ -372,15 +363,14 @@ $("#container").ejChart({
 Controls the opacity of the annotation.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -399,7 +389,7 @@ Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
-### annotations.region<span class="type-signature type enum">enum</span>
+### annotations.region `enum`
 {:#members:annotations-region}
 
 
@@ -408,15 +398,14 @@ Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 Specifies whether annotation has to be placed with respect to chart or series.
 
 
-Default value:
-{:.param}
-"chart". See <a href="global.html#members:region">Region</a>
+#### Default Value
+
+* "chart". See <a href="global.html#members:region">Region</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -435,7 +424,7 @@ Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 
 
 
-### annotations.verticalAlignment<span class="type-signature type enum">enum</span>
+### annotations.verticalAlignment `enum`
 {:#members:annotations-verticalalignment}
 
 
@@ -444,15 +433,14 @@ Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 Specifies the vertical alignment of the annotation.
 
 
-Default value:
-{:.param}
-"middle". See <a href="global.html#members:verticalalignment">VerticalAlignment</a>
+#### Default Value
+
+* "middle". See <a href="global.html#members:verticalalignment">VerticalAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -471,7 +459,7 @@ Try it: [Vertical Alignment](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
-### annotations.visible<span class="type-signature type boolean">boolean</span>
+### annotations.visible `boolean`
 {:#members:annotations-visible}
 
 
@@ -480,15 +468,14 @@ Try it: [Vertical Alignment](http://jsplayground.syncfusion.com/frjpm2um)
 Controls the visibility of the annotation.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -507,7 +494,7 @@ Try it: [Annotation Visibility](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
-### annotations.x<span class="type-signature type number">number</span>
+### annotations.x `number`
 {:#members:annotations-x}
 
 
@@ -518,15 +505,14 @@ when coordinateUnit is points, it represents the x-coordinate of axis bounded wi
 This property is not applicable when coordinateUnit is none.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -545,7 +531,7 @@ Try it: [Annotation Positioning](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
-### annotations.xAxisName<span class="type-signature type string">string</span>
+### annotations.xAxisName `string`
 {:#members:annotations-xaxisname}
 
 
@@ -554,15 +540,14 @@ Try it: [Annotation Positioning](http://jsplayground.syncfusion.com/frjpm2um)
 Name of the horizontal axis to be used for positioning the annotation. This property is applicable only when coordinateUnit is points.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -581,7 +566,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/h23k4jcy)
 
 
 
-### annotations.y<span class="type-signature type number">number</span>
+### annotations.y `number`
 {:#members:annotations-y}
 
 
@@ -592,15 +577,14 @@ When coordinateUnit is points, it represents the y-coordinate of axis bounded wi
 This property is not applicable when coordinateUnit is none.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -618,7 +602,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1nq2ss4v)
 
 
 
-### annotations.yAxisName<span class="type-signature type string">string</span>
+### annotations.yAxisName `string`
 {:#members:annotations-yaxisname}
 
 
@@ -628,15 +612,14 @@ Name of the vertical axis to be used for positioning the annotation.
 This property is applicable only when coordinateUnit is points.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -655,7 +638,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
 
 
-### backGroundImageUrl<span class="type-signature type string">string</span>
+### backGroundImageUrl `string`
 {:#members:backgroundimageurl}
 
 
@@ -664,15 +647,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 Url of the image to be used as chart background.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -691,7 +673,7 @@ Try it: [JS playground Sample](http://jsplayground.syncfusion.com/i1bys43l)
 
 
 
-### border<span class="type-signature type object">object</span>
+### border `object`
 {:#members:border}
 
 
@@ -706,7 +688,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 
 
 
-### border.color<span class="type-signature type string">string</span>
+### border.color `string`
 {:#members:border-color}
 
 
@@ -715,15 +697,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 Border color of the chart.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -739,7 +720,7 @@ $("#container").ejChart({
 
 
 
-### border.opacity<span class="type-signature type number">number</span>
+### border.opacity `number`
 {:#members:border-opacity}
 
 
@@ -748,15 +729,14 @@ $("#container").ejChart({
 Opacity of the chart border.
 
 
-Default value:
-{:.param}
-0.3
+#### Default Value
+
+* 0.3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -772,7 +752,7 @@ $("#container").ejChart({
 
 
 
-### border.width<span class="type-signature type number">number</span>
+### border.width `number`
 {:#members:border-width}
 
 
@@ -781,15 +761,14 @@ $("#container").ejChart({
 Width of the Chart border.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -805,7 +784,7 @@ $("#container").ejChart({
 
 
 
-### canResize<span class="type-signature type boolean">boolean</span>
+### canResize `boolean`
 {:#members:canresize}
 
 
@@ -814,15 +793,14 @@ $("#container").ejChart({
 Controls whether Chart has to be responsive or not.
 
 
-Default Value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -841,7 +819,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r12awtp3)
 
 
 
-### chartArea<span class="type-signature type object">object</span>
+### chartArea `object`
 {:#members:chartarea}
 
 
@@ -852,7 +830,7 @@ Options for configuring the border and background of the plot area.
 
 
 
-### chartArea.background<span class="type-signature type string">string</span>
+### chartArea.background `string`
 {:#members:chartarea-background}
 
 
@@ -861,18 +839,16 @@ Options for configuring the border and background of the plot area.
 Background color of the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-transparent
+* transparent
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -889,7 +865,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/picztz23)
 
 
-### chartArea.border<span class="type-signature type object">object</span>
+### chartArea.border `object`
 {:#members:chartarea-border}
 
 
@@ -903,7 +879,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kzy21bwx)
 
 
 
-### chartArea.border.color<span class="type-signature type string">string</span>
+### chartArea.border.color `string`
 {:#members:chartarea-border-color}
 
 
@@ -912,18 +888,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kzy21bwx)
 Border color of the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-Gray
+* Gray
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -937,7 +911,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### chartArea.border.opacity<span class="type-signature type number">number</span>
+### chartArea.border.opacity `number`
 {:#members:chartarea-border-opacity}
 
 
@@ -946,18 +920,16 @@ $("#container").ejChart({
 Opacity of the plot area border.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.3
+* 0.3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -971,7 +943,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### chartArea.border.width<span class="type-signature type number">number</span>
+### chartArea.border.width `number`
 {:#members:chartarea-border-width}
 
 
@@ -980,18 +952,16 @@ $("#container").ejChart({
 Border width of the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.5
+* 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1007,7 +977,7 @@ $("#container").ejChart({
 
 
 
-### columnDefinitions<span class="type-signature type array">array</span>
+### columnDefinitions `array`
 {:#members:columndefinitions}
 
 
@@ -1021,7 +991,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 
-### columnDefinitions.unit<span class="type-signature type enum">enum</span>
+### columnDefinitions.unit `enum`
 {:#members:columnDefinitions.unit}
 
 
@@ -1030,15 +1000,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 Specifies the unit to measure the width of the column in plotting area.
 
 
-Default value:
-{:.param}
-'pixel'. See <a href="global.html#members:unit">Unit</a>
+#### Default Value
+
+* 'pixel'. See <a href="global.html#members:unit">Unit</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1054,7 +1023,7 @@ $("#container").ejChart({
 
 
 
-### columnDefinitions.columnWidth<span class="type-signature type number">number</span>
+### columnDefinitions.columnWidth `number`
 {:#members:columnDefinitions.columnWidth}
 
 
@@ -1063,15 +1032,14 @@ $("#container").ejChart({
 Width of the column in plotting area. Width is measured in either pixel or percentage based on the value of unit property.
 
 
-Default value:
-{:.param}
-50
+#### Default Value
+
+* 50
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1087,7 +1055,7 @@ $("#container").ejChart({
 
 
 
-### columnDefinitions.lineColor<span class="type-signature type string">string</span>
+### columnDefinitions.lineColor `string`
 {:#members:columnDefinitions.lineColor}
 
 
@@ -1096,15 +1064,14 @@ $("#container").ejChart({
 Color of the line that indicates the starting point of the column in plotting area.
 
 
-Default value:
-{:.param}
-"transparent"
+#### Default Value
+
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1120,7 +1087,7 @@ $("#container").ejChart({
 
 
 
-### columnDefinitions.lineWidth<span class="type-signature type number">number</span>
+### columnDefinitions.lineWidth `number`
 {:#members:columnDefinitions.lineWidth}
 
 
@@ -1129,15 +1096,14 @@ $("#container").ejChart({
 Width of the line that indicates the starting point of the column in plot area.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1153,7 +1119,7 @@ $("#container").ejChart({
 
 
 
-### commonSeriesOptions<span class="type-signature type object">object</span>
+### commonSeriesOptions `object`
 {:#members:commonseriesoptions}
 
 
@@ -1166,7 +1132,7 @@ Options for configuring the properties of all the series. You can also override 
 
 
 
-### commonSeriesOptions.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.border `object`
 {:#members:commonseriesoptions-border}
 
 
@@ -1179,7 +1145,7 @@ Options to customize the border of all the series.
 
 
 
-### commonSeriesOptions.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.border.color `string`
 {:#members:commonseriesoptions-border-color}
 
 
@@ -1188,18 +1154,16 @@ Options to customize the border of all the series.
 Border color of all series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"transparent"
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1213,7 +1177,7 @@ commonSeriesOptions :{border :{ color : "green" } }
 
 
 
-### commonSeriesOptions.border.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.border.width `number`
 {:#members:commonseriesoptions-border-width}
 
 
@@ -1222,18 +1186,16 @@ commonSeriesOptions :{border :{ color : "green" } }
 Border width of all series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1247,7 +1209,7 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 
 
-### commonSeriesOptions.dashArray<span class="type-signature type string">string</span>
+### commonSeriesOptions.dashArray `string`
 {:#members:commonseriesoptions-dasharray}
 
 
@@ -1256,18 +1218,16 @@ commonSeriesOptions :{border :{ width : 2 } }
 Pattern of dashes and gaps used to stroke all the line type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- ""
+ * ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1281,7 +1241,7 @@ commonSeriesOptions :{dashArray : "2,3"}
 
 
 
-### commonSeriesOptions.dataSource<span class="type-signature type object">object</span>
+### commonSeriesOptions.dataSource `object`
 {:#members:commonseriesoptions-datasource}
 
 
@@ -1290,18 +1250,16 @@ commonSeriesOptions :{dashArray : "2,3"}
 Set the dataSource for all series. It can be an array of JSON objects or an instance of ej.DataManager.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1310,6 +1268,7 @@ Example
 $("#container").ejChart({
 commonSeriesOptions : {dataSource: data }                   
 });
+
  {% endhighlight %}
  
  
@@ -1318,7 +1277,7 @@ commonSeriesOptions : {dataSource: data }
 
 
 
-### commonSeriesOptions.doughnutCoefficient<span class="type-signature type number">number</span>
+### commonSeriesOptions.doughnutCoefficient `number`
 {:#members:commonseriesoptions-doughnutcoefficient}
 
 
@@ -1327,18 +1286,16 @@ commonSeriesOptions : {dataSource: data }
 Controls the size of the hole in doughnut series. Value ranges from 0 to 1
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.4
+* 0.4
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1354,7 +1311,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/15exlbqk)
 
 
 
-### commonSeriesOptions.doughnutSize<span class="type-signature type number">number</span>
+### commonSeriesOptions.doughnutSize `number`
 {:#members:commonseriesoptions-doughnutsize}
 
 
@@ -1363,18 +1320,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/15exlbqk)
 Controls the size of the doughnut series. Value ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.8
+* 0.8
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1390,7 +1345,7 @@ commonSeriesOptions :{ doughnutSize : 0.9}
 
 
 
-### commonSeriesOptions.drawType<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.drawType `enum`
 {:#members:commonseriesoptions-drawtype}
 
 
@@ -1399,15 +1354,13 @@ commonSeriesOptions :{ doughnutSize : 0.9}
 Specifies the type of series to be drawn in radar or polar series. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="global.html#members:drawtype">DrawType</a>
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1423,7 +1376,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/woedp3qa)
 
 
 
-### commonSeriesOptions.enableAnimation<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.enableAnimation `boolean`
 {:#members:commonseriesoptions-enableanimation}
 
 
@@ -1432,18 +1385,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/woedp3qa)
 Enable/disable the animation for all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1457,7 +1408,7 @@ commonSeriesOptions :{ enableAnimation : false}
 
 
 
-### commonSeriesOptions.enableSmartLabels<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.enableSmartLabels `boolean'
 {:#members:commonseriesoptions-enablesmartlabels}
 
 
@@ -1466,18 +1417,16 @@ commonSeriesOptions :{ enableAnimation : false}
 To avoid overlapping of data labels smartly. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1493,7 +1442,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ojz1vbr4)
 
 
 
-### commonSeriesOptions.endAngle<span class="type-signature type number">number</span>
+### commonSeriesOptions.endAngle `number`
 {:#members:commonseriesoptions-endangle}
 
 
@@ -1502,18 +1451,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ojz1vbr4)
 Start angle of pie/doughnut series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1528,7 +1475,7 @@ commonSeriesOptions :{ endAngle : 270}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/52kkuy5d)
 
 
-### commonSeriesOptions.explode<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.explode `boolean`
 {:#members:commonseriesoptions-explode}
 
 
@@ -1537,18 +1484,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/52kkuy5d)
 Explodes the pie/doughnut slices on mouse move.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1564,7 +1509,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cletijkr)
 
 
 
-### commonSeriesOptions.explodeAll<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.explodeAll `boolean`
 {:#members:commonseriesoptions-explodeall}
 
 
@@ -1573,18 +1518,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cletijkr)
 Explodes all the slice of pie/doughnut on render.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1600,7 +1543,7 @@ commonSeriesOptions :{ explodeAll : true}
 
 
 
-### commonSeriesOptions.explodeIndex<span class="type-signature type number">number</span>
+### commonSeriesOptions.explodeIndex `number`
 {:#members:commonseriesoptions-explodeindex}
 
 
@@ -1609,18 +1552,16 @@ commonSeriesOptions :{ explodeAll : true}
 Index of the point to be exploded from pie/doughnut/pyramid/funnel.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1638,7 +1579,7 @@ commonSeriesOptions :{ explodeIndex : 2}
 
 
 
-### commonSeriesOptions.explodeOffset<span class="type-signature type number">number</span>
+### commonSeriesOptions.explodeOffset `number`
 {:#members:commonseriesoptions-explodeoffset}
 
 
@@ -1647,18 +1588,16 @@ commonSeriesOptions :{ explodeIndex : 2}
 Specifies the distance of the slice from the center, when it is exploded.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.4
+* 0.4
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1674,7 +1613,7 @@ commonSeriesOptions :{ explodeOffset : 20}
 
 
 
-### commonSeriesOptions.fill<span class="type-signature type string">string</span>
+### commonSeriesOptions.fill `string`
 {:#members:commonseriesoptions-fill}
 
 
@@ -1683,18 +1622,16 @@ commonSeriesOptions :{ explodeOffset : 20}
 Fill color for all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1711,7 +1648,7 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
-### commonSeriesOptions.font<span class="type-signature type object">object</span>
+### commonSeriesOptions.font `object`
 {:#members:commonseriesoptions-font}
 
 
@@ -1724,7 +1661,7 @@ Options for customizing the font of all the series.
 
 
 
-### commonSeriesOptions.font.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.font.color `string`
 {:#members:commonseriesoptions-font-color}
 
 
@@ -1733,18 +1670,16 @@ Options for customizing the font of all the series.
 Font color of the text in all series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#707070"
+* "#707070"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1758,7 +1693,7 @@ commonSeriesOptions :{font :{color : "green"}}
 
 
 
-### commonSeriesOptions.font.fontFamily<span class="type-signature type string">string</span>
+### commonSeriesOptions.font.fontFamily `string`
 {:#members:commonseriesoptions-font-fontfamily}
 
 
@@ -1767,18 +1702,16 @@ commonSeriesOptions :{font :{color : "green"}}
 Font Family for all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1792,7 +1725,7 @@ commonSeriesOptions :{ font : { fontFamily : "Algerian"}}
 
 
 
-### commonSeriesOptions.font.fontStyle<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.font.fontStyle `enum`
 {:#members:commonseriesoptions-font-fontstyle}
 
 
@@ -1801,18 +1734,16 @@ commonSeriesOptions :{ font : { fontFamily : "Algerian"}}
 Specifies the font Style for all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"normal"
+* "normal"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1826,7 +1757,7 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 
 
 
-### commonSeriesOptions.font.fontWeight<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.font.fontWeight `enum`
 {:#members:commonseriesoptions-font-fontweight}
 
 
@@ -1835,18 +1766,16 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 Specifies the font weight for all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular"
+* "regular"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1860,7 +1789,7 @@ commonSeriesOptions :{font :{fontWeight : "lighter"}}
 
 
 
-### commonSeriesOptions.font.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.font.opacity `number`
 {:#members:commonseriesoptions-font-opacity}
 
 
@@ -1869,18 +1798,16 @@ commonSeriesOptions :{font :{fontWeight : "lighter"}}
 Opacity for text in all the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1894,7 +1821,7 @@ commonSeriesOptions :{font :{opacity : 0.5}}
 
 
 
-### commonSeriesOptions.font.size<span class="type-signature type string">string</span>
+### commonSeriesOptions.font.size `string`
 {:#members:commonseriesoptions-font-size}
 
 
@@ -1902,18 +1829,16 @@ commonSeriesOptions :{font :{opacity : 0.5}}
 
 Font size for text in all the series.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "12px"
+ * "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1930,7 +1855,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gmjlryrg)
 
 
 
-### commonSeriesOptions.funnelHeight
+### commonSeriesOptions.funnelHeight `string`
 {:#members:commonseriesoptions-funnelheight}
 
 
@@ -1939,18 +1864,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gmjlryrg)
 Sets the height of the funnel in funnel series. Values can be either pixel or percentage.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "32.7%"
+ * "32.7%"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -1968,7 +1891,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cnku50hw)
 
 
 
-### commonSeriesOptions.funnelWidth
+### commonSeriesOptions.funnelWidth `string`
 {:#members:commonseriesoptions-funnelwidth}
 
 
@@ -1976,18 +1899,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cnku50hw)
 
 Sets the width of the funnel in funnel series. Values can be either pixel or percentage.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "11.6%"
+ * "11.6%"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2005,7 +1926,7 @@ commonSeriesOptions : {funnelWidth : '40%' }
 
 
 
-### commonSeriesOptions.gapRatio<span class="type-signature type number">number</span>
+### commonSeriesOptions.gapRatio `number`
 {:#members:commonseriesoptions-gapratio}
 
 
@@ -2014,18 +1935,16 @@ commonSeriesOptions : {funnelWidth : '40%' }
 Gap between the slices in pyramid and funnel series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0
+ * 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2042,7 +1961,7 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/om3zazbd)
 
 
 
-### commonSeriesOptions.isClosed<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.isClosed `boolean`
 {:#members:commonseriesoptions-isclosed}
 
 
@@ -2051,18 +1970,16 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/om3zazbd)
 Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- true
+ * true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2079,7 +1996,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d41kmmwt)
 
 
 
-### commonSeriesOptions.isStacking<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.isStacking `boolean`
 {:#members:commonseriesoptions-isstacking}
 
 
@@ -2088,18 +2005,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d41kmmwt)
 Specifies whether to stack the column series in polar/radar charts.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- false
+ * false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2116,7 +2031,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 
 
 
-### commonSeriesOptions.isTransposed<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.isTransposed `boolean`
 {:#members:commonseriesoptions-isTransposed}
 
 
@@ -2125,18 +2040,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 Renders the chart vertically. This is applicable only for cartesian type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2150,7 +2063,7 @@ commonSeriesOptions : {isTransposed : false }
 
 
 
-### commonSeriesOptions.labelPosition<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.labelPosition `enum`
 {:#members:commonseriesoptions-labelposition}
 
 
@@ -2159,17 +2072,15 @@ commonSeriesOptions : {isTransposed : false }
 Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2185,7 +2096,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 
 
 
-### commonSeriesOptions.lineCap<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.lineCap `enum`
 {:#members:commonseriesoptions-linecap}
 
 
@@ -2194,16 +2105,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 Specifies the line cap of the series. 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
-"butt". See <a href="global.html#members:linecap">LineCap</a>
+* "butt". See <a href="global.html#members:linecap">LineCap</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2217,7 +2126,7 @@ commonSeriesOptions :{lineCap : "butt"}
 
 
 
-### commonSeriesOptions.lineJoin<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.lineJoin `enum`
 {:#members:commonseriesoptions-linejoin}
 
 
@@ -2226,16 +2135,14 @@ commonSeriesOptions :{lineCap : "butt"}
 Specifies the type of shape to be used where two lines meet.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "round". See <a href="global.html#members:linejoin">LineJoin</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2249,7 +2156,7 @@ commonSeriesOptions :{lineCap : "round"}
 
 
 
-### commonSeriesOptions.marker<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker `object`
 {:#members:commonseriesoptions-marker}
 
 
@@ -2262,7 +2169,7 @@ Options for displaying and customizing marker for individual point in a series. 
 
 
 
-### commonSeriesOptions.marker.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.border `object`
 {:#members:commonseriesoptions-marker-border}
 
 
@@ -2275,7 +2182,7 @@ Options for customizing the border of the marker shape.
 
 
 
-### commonSeriesOptions.marker.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.border.color `string`
 {:#members:commonseriesoptions-marker-border-color}
 
 
@@ -2284,18 +2191,16 @@ Options for customizing the border of the marker shape.
 Border color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"white"
+* "white"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2309,7 +2214,7 @@ commonSeriesOptions :{color : "green"}
 
 
 
-### commonSeriesOptions.marker.border.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.border.width `number`
 {:#members:commonseriesoptions-marker-border-width}
 
 
@@ -2318,18 +2223,16 @@ commonSeriesOptions :{color : "green"}
 Border width of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2343,7 +2246,7 @@ commonSeriesOptions :{marker :{border :{width : 2}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.dataLabel `object`
 {:#members:commonseriesoptions-marker-datalabel}
 
 
@@ -2356,7 +2259,7 @@ Options for displaying and customizing data labels.
 
 
 
-### commonSeriesOptions.marker.dataLabel.angle<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.angle `number`
 {:#members:commonseriesoptions-marker-datalabel-angle}
 
 
@@ -2365,18 +2268,16 @@ Options for displaying and customizing data labels.
 Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2393,7 +2294,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
 
 
 
-### commonSeriesOptions.marker.dataLabel.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
 
 
@@ -2406,7 +2307,7 @@ Options for customizing the border of the data label.
 
 
 
-### commonSeriesOptions.marker.dataLabel.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.dataLabel.border.color `string`
 {:#members:commonseriesoptions-marker-datalabel-border-color}
 
 
@@ -2415,18 +2316,16 @@ Options for customizing the border of the data label.
 Border color of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2440,7 +2339,7 @@ commonSeriesOptions :{marker :{dataLabel :{border : {color : "green"}}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.border.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.border.width `number`
 {:#members:commonseriesoptions-marker-datalabel-border-width}
 
 
@@ -2449,18 +2348,16 @@ commonSeriesOptions :{marker :{dataLabel :{border : {color : "green"}}}}
 Border width of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.1
+* 0.1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2476,7 +2373,7 @@ commonSeriesOptions :{marker :{dataLabel :{border :{ width :2 }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.connectorLine<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.dataLabel.connectorLine `object`
 {:#members:commonseriesoptions-marker-datalabel-connectorline}
 
 
@@ -2489,7 +2386,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-### commonSeriesOptions.marker.dataLabel.connectorLine.type<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.connectorLine.type `enum`
 {:#members:commonseriesoptions-marker-datalabel-connectorline-type}
 
 
@@ -2498,16 +2395,14 @@ Options for displaying and customizing the line that connects point and data lab
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"line". See <a href="global.html#connectorlinetype">ConnectorLineType</a>
+* "line". See <a href="global.html#connectorlinetype">ConnectorLineType</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2524,7 +2419,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 
-### commonSeriesOptions.marker.dataLabel.connectorLine.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.connectorLine.width `number`
 {:#members:commonseriesoptions-marker-datalabel-connectorline-width}
 
 
@@ -2533,18 +2428,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 Width of the connector.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.5
+* 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2559,7 +2452,7 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
-### commonSeriesOptions.marker.dataLabel.fill<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.dataLabel.fill `string`
 {:#members:commonseriesoptions-marker-datalabel-fill}
 
 
@@ -2568,18 +2461,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 Background color of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2593,7 +2484,7 @@ commonSeriesOptions :{marker :{dataLabel :{fill : "green"}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.font<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.dataLabel.font `object`
 {:#members:commonseriesoptions-marker-datalabel-font}
 
 
@@ -2606,7 +2497,7 @@ Options for customizing the data label font.
 
 
 
-### commonSeriesOptions.marker.dataLabel.font.fontFamily<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.dataLabel.font.fontFamily `string`
 {:#members:commonseriesoptions-marker-datalabel-font-fontfamily}
 
 
@@ -2615,18 +2506,16 @@ Options for customizing the data label font.
 Font family of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2640,7 +2529,7 @@ commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.font.fontStyle<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.font.fontStyle `enum`
 {:#members:commonseriesoptions-marker-datalabel-font-fontstyle}
 
 
@@ -2649,16 +2538,14 @@ commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}
 Font style of the data label.   
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"normal". See <a href="global.html#fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#fontstyle">FontStyle</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2672,7 +2559,7 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.font.fontWeight<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.font.fontWeight `enum`
 {:#members:commonseriesoptions-marker-datalabel-font-fontweight}
 
 
@@ -2681,17 +2568,15 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}
 Font weight of the data label.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2705,7 +2590,7 @@ commonSeriesOptions :{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.font.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.font.opacity `number`
 {:#members:commonseriesoptions-marker-datalabel-font-opacity}
 
 
@@ -2714,18 +2599,16 @@ commonSeriesOptions :{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}
 Opacity of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 1
+ * 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2739,7 +2622,7 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.font.size<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.dataLabel.font.size `string`
 {:#members:commonseriesoptions-marker-datalabel-font-size}
 
 
@@ -2748,18 +2631,16 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}
 Font size of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"12px"
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2773,7 +2654,7 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.horizontalTextAlignment<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.horizontalTextAlignment `enum`
 {:#members:commonseriesoptions-marker-datalabel-horizontaltextalignment}
 
 
@@ -2782,18 +2663,16 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 Horizontal alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"center"
+* "center"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2809,7 +2688,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/c3i3lxpg)
 
 
 
-### commonSeriesOptions.marker.dataLabel.margin<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.dataLabel.margin `object`
 {:#members:commonseriesoptions-marker-datalabel-margin}
 
 
@@ -2822,7 +2701,7 @@ Margin of the text to its background shape. The size of the background shape inc
 
 
 
-### commonSeriesOptions.marker.dataLabel.margin.bottom<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.margin.bottom `number`
 {:#members:commonseriesoptions-marker-datalabel-margin-bottom}
 
 
@@ -2831,18 +2710,16 @@ Margin of the text to its background shape. The size of the background shape inc
 Bottom margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2856,7 +2733,7 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ bottom :10 }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.margin.left<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.margin.left `number`
 {:#members:commonseriesoptions-marker-datalabel-margin-left}
 
 
@@ -2864,18 +2741,16 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ bottom :10 }}}}
 Left margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 5
+ * 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2889,7 +2764,7 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ left : 10}}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.margin.right<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.margin.right `number`
 {:#members:commonseriesoptions-marker-datalabel-margin-right}
 
 
@@ -2898,18 +2773,16 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ left : 10}}}}
 Right margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2923,7 +2796,7 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ right :10 }}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.margin.top<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.margin.top `number`
 {:#members:commonseriesoptions-marker-datalabel-margin-top}
 
 
@@ -2932,18 +2805,16 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ right :10 }}}}
 Top margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2959,7 +2830,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dff0lfpg)
 
 
 
-### commonSeriesOptions.marker.dataLabel.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.dataLabel.opacity `number`
 {:#members:commonseriesoptions-marker-datalabel-opacity}
 
 
@@ -2968,18 +2839,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dff0lfpg)
 Opacity of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -2993,7 +2862,7 @@ commonSeriesOptions :{marker :{dataLabel :{opacity : 0.5}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.shape<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.shape `enum`
 {:#members:commonseriesoptions-marker-datalabel-shape}
 
 
@@ -3002,18 +2871,16 @@ commonSeriesOptions :{marker :{dataLabel :{opacity : 0.5}}}
 Background shape of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"none". See <a href="global.html#members:shape">Shape</a>
+* "none". See <a href="global.html#members:shape">Shape</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3027,7 +2894,7 @@ commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.text<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.dataLabel.text `string`
 {:#members:commonseriesoptions-marker-datalabel-text}
 
 
@@ -3036,16 +2903,14 @@ commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}
 Name of a field in data source, where datalabel text is displayed.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3060,7 +2925,7 @@ commonseriesoptions : { marker : { dataLabel : { text : "TextFieldName" }}}
 
 
 
-### commonSeriesOptions.marker.dataLabel.textPosition<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.textPosition `enum`
 {:#members:commonseriesoptions-marker-datalabel-textposition}
 
 
@@ -3069,18 +2934,16 @@ commonseriesoptions : { marker : { dataLabel : { text : "TextFieldName" }}}
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:textposition">TextPosition</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3096,7 +2959,7 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 
 
 
-### commonSeriesOptions.marker.dataLabel.verticalTextAlignment<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.dataLabel.verticalTextAlignment `enum`
 {:#members:commonseriesoptions-marker-datalabel-verticaltextalignment}
 
 
@@ -3105,18 +2968,16 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 Vertical alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"center"
+* "center"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3132,7 +2993,7 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/zro5pbw2)
 
 
 
-### commonSeriesOptions.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.marker.dataLabel.visible `boolean`
 {:#members:commonseriesoptions-marker-datalabel-visible}
 
 
@@ -3141,18 +3002,16 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/zro5pbw2)
 Controls the visibility of the data labels. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3166,7 +3025,7 @@ commonSeriesOptions :{marker :{dataLabel :{visible : true}}
 
 
 
-### commonSeriesOptions.marker.fill<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.fill `string`
 {:#members:commonseriesoptions-marker-fill}
 
 
@@ -3175,18 +3034,16 @@ commonSeriesOptions :{marker :{dataLabel :{visible : true}}
 Color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3202,7 +3059,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 
 
 
-### commonSeriesOptions.marker.imageUrl<span class="type-signature type string">string</span>
+### commonSeriesOptions.marker.imageUrl `string`
 {:#members:commonseriesoptions-marker-imageurl}
 
 
@@ -3211,18 +3068,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 The URL for the Image to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3238,7 +3093,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/251niupi)
 
 
 
-### commonSeriesOptions.marker.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.opacity `number`
 {:#members:commonseriesoptions-marker-opacity}
 
 
@@ -3247,18 +3102,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/251niupi)
 Opacity of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 1
+ * 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3272,7 +3125,7 @@ commonSeriesOptions :{marker :{ opacity : 0.5 }}
 
 
 
-### commonSeriesOptions.marker.shape<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.marker.shape `enum`
 {:#members:commonseriesoptions-marker-shape}
 
 
@@ -3281,18 +3134,16 @@ commonSeriesOptions :{marker :{ opacity : 0.5 }}
 Specifies the shape of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:shape">Shape</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3308,7 +3159,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 
 
 
-### commonSeriesOptions.marker.size<span class="type-signature type object">object</span>
+### commonSeriesOptions.marker.size `object`
 {:#members:commonseriesoptions-marker-size}
 
 
@@ -3321,7 +3172,7 @@ Options for customizing the size of the marker shape.
 
 
 
-### commonSeriesOptions.marker.size.height<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.size.height `number`
 {:#members:commonseriesoptions-marker-size-height}
 
 
@@ -3330,18 +3181,16 @@ Options for customizing the size of the marker shape.
 Height of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3355,7 +3204,7 @@ commonSeriesOptions :{marker :{size :{height : 5}}}
 
 
 
-### commonSeriesOptions.marker.size.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.marker.size.width `number`
 {:#members:commonseriesoptions-marker-size-width}
 
 
@@ -3364,18 +3213,16 @@ commonSeriesOptions :{marker :{size :{height : 5}}}
 Width of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3390,7 +3237,7 @@ commonSeriesOptions :{marker :{ size :{ width : 2 } } }
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fbrqexxu)
 
 
-### commonSeriesOptions.marker.visible<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.marker.visible `boolean`
 {:#members:commonseriesoptions-marker-visible}
 
 
@@ -3399,18 +3246,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fbrqexxu)
 Controls the visibility of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3426,7 +3271,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f2qfyfbt)
 
 
 
-### commonSeriesOptions.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.opacity `number`
 {:#members:commonseriesoptions-opacity}
 
 
@@ -3435,18 +3280,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f2qfyfbt)
 Opacity of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3460,7 +3303,7 @@ commonSeriesOptions :{opacity : 0.5}
 
 
 
-### commonSeriesOptions.palette<span class="type-signature type string">string</span>
+### commonSeriesOptions.palette `string`
 {:#members:commonseriesoptions-palette}
 
 
@@ -3469,18 +3312,16 @@ commonSeriesOptions :{opacity : 0.5}
 Name of a field in data source, where the fill color for all the data points is generated.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3494,7 +3335,7 @@ commonSeriesOptions : { palette : "ColorFieldName" }
 
 
 
-### commonSeriesOptions.pieCoefficient<span class="type-signature type number">number</span>
+### commonSeriesOptions.pieCoefficient `number`
 {:#members:commonseriesoptions-piecoefficient}
 
 
@@ -3503,18 +3344,16 @@ commonSeriesOptions : { palette : "ColorFieldName" }
 Controls the size of pie series. Value ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.8
+* 0.8
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3531,7 +3370,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
 
 
-### commonSeriesOptions.pyramidMode<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.pyramidMode `enum`
 {:#members:commonseriesoptions-pyramidmode}
 
 
@@ -3540,15 +3379,13 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 Specifies the mode of the pyramid series. 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
-"linear". See <a href="global.html#members:pyramidmode">PyramidMode</a>
+* "linear". See <a href="global.html#members:pyramidmode">PyramidMode</a>
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3564,7 +3401,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/maeo3b3s)
 
 
 
-### commonSeriesOptions.startAngle<span class="type-signature type number">number</span>
+### commonSeriesOptions.startAngle `number`
 {:#members:commonseriesoptions-startangle}
 
 
@@ -3573,18 +3410,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/maeo3b3s)
 Start angle from where the pie/doughnut series renders. By default it starts from 0.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3600,7 +3435,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
 
 
 
-### commonSeriesOptions.tooltip<span class="type-signature type object">object</span>
+### commonSeriesOptions.tooltip `object`
 {:#members:commonseriesoptions-tooltip}
 
 
@@ -3612,7 +3447,7 @@ Options for customizing the tooltip of chart.
 
 
 
-### commonSeriesOptions.tooltip.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.tooltip.border `object`
 {:#members:commonseriesoptions-tooltip-border}
 
 
@@ -3625,7 +3460,7 @@ Options for customizing the border of the tooltip.
 
 
 
-### commonSeriesOptions.tooltip.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.tooltip.border.color `string`
 {:#members:commonseriesoptions-tooltip-border-color}
 
 
@@ -3634,18 +3469,16 @@ Options for customizing the border of the tooltip.
 Border color of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3659,7 +3492,7 @@ commonSeriesOptions :{tooltip :{border:{ color : "green" }}}
 
 
 
-### commonSeriesOptions.tooltip.border.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.tooltip.border.width `number`
 {:#members:commonseriesoptions-tooltip-border-width}
 
 
@@ -3668,18 +3501,16 @@ commonSeriesOptions :{tooltip :{border:{ color : "green" }}}
 Border width of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3766,7 +3597,7 @@ commonSeriesOptions :{tooltip :{ry: 10}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 
 
-### commonSeriesOptions.tooltip.duration<span class="type-signature type string">string</span>
+### commonSeriesOptions.tooltip.duration `string`
 {:#members:commonseriesoptions-tooltip-duration}
 
 
@@ -3775,18 +3606,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 Specifies the duration, the tooltip has to be displayed.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"500ms"
+* "500ms"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3800,7 +3629,7 @@ commonSeriesOptions :{tooltip :{duration : "300ms"}}
 
 
 
-### commonSeriesOptions.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.tooltip.enableAnimation `boolean`
 {:#members:commonseriesoptions-tooltip-enableanimation}
 
 
@@ -3809,18 +3638,16 @@ commonSeriesOptions :{tooltip :{duration : "300ms"}}
 Enables/disables the animation of the tooltip when moving from one point to other.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3834,7 +3661,7 @@ commonSeriesOptions :{tooltip :{enableAnimation : false}}
 
 
 
-### commonSeriesOptions.tooltip.fill<span class="type-signature type string">string</span>
+### commonSeriesOptions.tooltip.fill `string`
 {:#members:commonseriesoptions-tooltip-fill}
 
 
@@ -3843,18 +3670,16 @@ commonSeriesOptions :{tooltip :{enableAnimation : false}}
 Background color of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3868,7 +3693,7 @@ commonSeriesOptions :{tooltip :{fill : "green"}}
 
 
 
-### commonSeriesOptions.tooltip.format<span class="type-signature type string">string</span>
+### commonSeriesOptions.tooltip.format `string`
 {:#members:commonseriesoptions-tooltip-format}
 
 
@@ -3877,18 +3702,16 @@ commonSeriesOptions :{tooltip :{fill : "green"}}
 Format of the tooltip content.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#point.x# : #point.y#"
+* "#point.x# : #point.y#"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3905,7 +3728,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
 
 
 
-### commonSeriesOptions.tooltip.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.tooltip.opacity `number`
 {:#members:commonseriesoptions-tooltip-opacity}
 
 
@@ -3914,18 +3737,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
 Opacity of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.5
+* 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3942,7 +3763,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jih5jejk)
 
 
 
-### commonSeriesOptions.tooltip.template<span class="type-signature type string">string</span>
+### commonSeriesOptions.tooltip.template `string`
 {:#members:commonseriesoptions-tooltip-template}
 
 
@@ -3951,18 +3772,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jih5jejk)
 Custom template to format the tooltip content. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -3983,7 +3802,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rmunfu1b)
 
 
 
-### commonSeriesOptions.tooltip.visible<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.tooltip.visible `boolean`
 {:#members:commonseriesoptions-tooltip-visible}
 
 
@@ -3992,18 +3811,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rmunfu1b)
 Controls the visibility of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4018,7 +3835,7 @@ commonSeriesOptions :{ tooltip :{visible : true} }
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tpizvdt0)
 
 
-### commonSeriesOptions.type<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.type `enum`
 {:#members:commonseriesoptions-type}
 
 
@@ -4027,16 +3844,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tpizvdt0)
 Specifies the type of the series to render in chart. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"column". See <a href="global.html#members:type">Type</a>
+* "column". See <a href="global.html#members:type">Type</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4052,7 +3867,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
 
 
 
-### commonSeriesOptions.xAxisName<span class="type-signature type string">string</span>
+### commonSeriesOptions.xAxisName `string`
 {:#members:commonseriesoptions-xaxisname}
 
 
@@ -4061,18 +3876,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
 Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4087,7 +3900,7 @@ commonSeriesOptions :{ xAxisName : "xAxis"}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1t424pc)
 
 
-### commonSeriesOptions.xName<span class="type-signature type string">string</span>
+### commonSeriesOptions.xName `string`
 {:#members:commonseriesoptions-xname}
 
 
@@ -4096,18 +3909,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1t424pc)
 Name of the property in the datasource that contains x value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4124,7 +3935,7 @@ commonSeriesOptions : {xName: "XValue" }
 
 
 
-### commonSeriesOptions.yAxisName<span class="type-signature type string">string</span>
+### commonSeriesOptions.yAxisName `string`
 {:#members:commonseriesoptions-yaxisname}
 
 
@@ -4133,18 +3944,16 @@ commonSeriesOptions : {xName: "XValue" }
 Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4160,7 +3969,7 @@ commonSeriesOptions :{ yAxisName : "yAxis"}
 
 
 
-### commonSeriesOptions.yName<span class="type-signature type string">string</span>
+### commonSeriesOptions.yName `string`
 {:#members:commonseriesoptions-yname}
 
 
@@ -4169,18 +3978,16 @@ commonSeriesOptions :{ yAxisName : "yAxis"}
 Name of the property in the datasource that contains y value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4197,7 +4004,7 @@ commonSeriesOptions :{yName: "yValue" }
  
 
  
-### commonSeriesOptions.high<span class="type-signature type string">string</span>
+### commonSeriesOptions.high `string`
 {:#members:commonseriesoptions-high}
 
 
@@ -4206,18 +4013,16 @@ commonSeriesOptions :{yName: "yValue" }
 Name of the property in the datasource that contains high value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4231,7 +4036,7 @@ commonSeriesOptions : {high: "high" }
 
 
 
-### commonSeriesOptions.low<span class="type-signature type string">string</span>
+### commonSeriesOptions.low `string`
 {:#members:commonseriesoptions-low}
 
 
@@ -4240,18 +4045,16 @@ commonSeriesOptions : {high: "high" }
 Name of the property in the datasource that contains low value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4267,7 +4070,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 
-### commonSeriesOptions.open<span class="type-signature type string">string</span>
+### commonSeriesOptions.open `string`
 {:#members:commonseriesoptions-open}
 
 
@@ -4276,18 +4079,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 Name of the property in the datasource that contains open value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4300,25 +4101,23 @@ commonSeriesOptions : {open: "oepn" }
 
 
 
-### commonSeriesOptions.close<span class="type-signature type string">string</span>
+### commonSeriesOptions.close `string`
 {:#members:commonseriesoptions-close}
 
 
 Name of the property in the datasource that contains close value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4333,7 +4132,7 @@ commonSeriesOptions : {close: "close" }
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
-### commonSeriesOptions.size<span class="type-signature type string">string</span>
+### commonSeriesOptions.size `string`
 {:#members:commonseriesoptions-size}
 
 
@@ -4342,18 +4141,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 Name of the property in the datasource that contains the size value for the bubble series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4368,7 +4165,7 @@ commonSeriesOptions : [{size: "size" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kf0d05wi)
 
 
-### commonSeriesOptions.trendlines<span class="type-signature type array">array</span>
+### commonSeriesOptions.trendlines `array`
 {:#members:commonseriesoptions-trendlines}
 
 
@@ -4379,7 +4176,7 @@ Option to add the trendlines to chart.
 
 
 
-### commonSeriesOptions.trendlines.visibility<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.trendlines.visibility `boolean`
 {:#members:commonseriesoptions-trendlines-visibility}
 
 
@@ -4388,18 +4185,16 @@ Option to add the trendlines to chart.
 Show/hides the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4414,7 +4209,7 @@ commonSeriesOptions :{trendlines:[{ visibility:'visible' }]}
 
 
 
-### commonSeriesOptions.trendlines.type<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.type `string`
 {:#members:commonseriesoptions-trendlines-type}
 
 
@@ -4423,18 +4218,16 @@ commonSeriesOptions :{trendlines:[{ visibility:'visible' }]}
 Specifies the type of the trendline for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
+* "linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4447,7 +4240,7 @@ commonSeriesOptions :{trendlines:[{ type:'linear' }]}
 
 
 
-### commonSeriesOptions.trendlines.name<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.name `string`
 {:#members:commonseriesoptions-trendlines-name}
 
 
@@ -4456,17 +4249,15 @@ commonSeriesOptions :{trendlines:[{ type:'linear' }]}
 Name for the trendlines that is to be displayed in the legend text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"trendline"
+* "trendline"
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4480,7 +4271,7 @@ commonSeriesOptions :{trendlines:[{ name:'Trendline' }]}
 
 
 
-### commonSeriesOptions.trendlines.fill<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.fill `string`
 {:#members:commonseriesoptions-trendlines-fill}
 
 
@@ -4489,17 +4280,15 @@ commonSeriesOptions :{trendlines:[{ name:'Trendline' }]}
 Fill color of the trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#0000FF"
+* "#0000FF"
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4513,7 +4302,7 @@ commonSeriesOptions :{trendlines:[{ fill:'#0000FF' }]}
 
 
 
-### commonSeriesOptions.trendlines.width<span class="type-signature type number">number</span>
+### commonSeriesOptions.trendlines.width `number`
 {:#members:commonseriesoptions-trendlines-width}
 
 
@@ -4522,17 +4311,15 @@ commonSeriesOptions :{trendlines:[{ fill:'#0000FF' }]}
 Width of the trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4545,7 +4332,7 @@ commonSeriesOptions :{trendlines:[{ width:1 }]}
 
 
 
-### commonSeriesOptions.trendlines.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.trendlines.opacity `number`
 {:#members:commonseriesoptions-trendlines-opacity}
 
 
@@ -4554,17 +4341,15 @@ commonSeriesOptions :{trendlines:[{ width:1 }]}
 Opacity of the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4578,7 +4363,7 @@ commonSeriesOptions :{trendlines:[{ opacity:1 }]}
 
 
 
-### commonSeriesOptions.trendlines.dashArray<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.dashArray `string`
 {:#members:commonseriesoptions-trendlines-dasharray}
 
 
@@ -4587,17 +4372,15 @@ commonSeriesOptions :{trendlines:[{ opacity:1 }]}
 Pattern of dashes and gaps used to stroke the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4610,7 +4393,7 @@ commonSeriesOptions :{trendlines:[{ dashArray:"" }]}
 
 
 
-### commonSeriesOptions.trendlines.forwardForecast<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.forwardForecast `string`
 {:#members:commonseriesoptions-trendlines-forwardforecast}
 
 
@@ -4619,17 +4402,15 @@ commonSeriesOptions :{trendlines:[{ dashArray:"" }]}
 Future trends of the current series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4642,7 +4423,7 @@ commonSeriesOptions :{trendlines:[{ forwardForeCast:2 }]}
 
 
 
-### commonSeriesOptions.trendlines.backwardForecast<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.backwardForecast `string`
 {:#members:commonseriesoptions-trendlines-backwardforecast}
 
 
@@ -4651,17 +4432,15 @@ commonSeriesOptions :{trendlines:[{ forwardForeCast:2 }]}
 Past trends of the current series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4676,7 +4455,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d5o0dk1l)
 
 
 
-### commonSeriesOptions.trendlines.polynomialOrder<span class="type-signature type string">string</span>
+### commonSeriesOptions.trendlines.polynomialOrder `string`
 {:#members:commonseriesoptions-trendlines-polynomialorder}
 
 
@@ -4685,17 +4464,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d5o0dk1l)
 Specifies the order of the polynomial trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4710,7 +4487,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
 
 
 
-### commonSeriesOptions.highlightSettings<span class="type-signature type object">object</span>
+### commonSeriesOptions.highlightSettings `object`
 {:#members:commonseriesoptions-highlightsettings}
 
 
@@ -4721,7 +4498,7 @@ Options for customizing the appearance of the series or data point while highlig
 
 
 
-### commonSeriesOptions.highlightSettings.enable<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.highlightSettings.enable `boolean`
 {:#members:commonseriesoptions-highlightsettings-enable}
 
 
@@ -4730,18 +4507,16 @@ Options for customizing the appearance of the series or data point while highlig
 Enables/disables the ability to highlight the series or data point interactively.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4754,7 +4529,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 
 
 
-### commonSeriesOptions.highlightSettings.mode<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.highlightSettings.mode `enum`
 {:#members:commonseriesoptions-highlightsettings-mode}
 
 
@@ -4763,18 +4538,16 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 Specifies whether the series or data point has to be highlighted.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:mode">Mode</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4787,7 +4560,7 @@ commonSeriesOptions :{highlightSettings:{mode:"point"}}
 
 
 
-### commonSeriesOptions.highlightSettings.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.highlightSettings.color `string`
 {:#members:commonseriesoptions-highlightsettings-color}
 
 
@@ -4796,17 +4569,15 @@ commonSeriesOptions :{highlightSettings:{mode:"point"}}
 Color of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4819,7 +4590,7 @@ commonSeriesOptions :{highlightSettings:{color:"red"}}
 
 
 
-### commonSeriesOptions.highlightSettings.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.highlightSettings.opacity `number`
 {:#members:commonseriesoptions-highlightsettings-opacity}
 
 
@@ -4828,17 +4599,15 @@ commonSeriesOptions :{highlightSettings:{color:"red"}}
 Opacity of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.6
+* 0.6
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4851,7 +4620,7 @@ commonSeriesOptions :{highlightSettings:{opacity:1}}
 
 
 
-### commonSeriesOptions.highlightSettings.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.highlightSettings.border `object`
 {:#members:commonseriesoptions-highlightsettings-border}
 
 
@@ -4860,7 +4629,7 @@ Options for customizing the border of series on highlight.
 
 
 
-### commonSeriesOptions.highlightSettings.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.highlightSettings.border.color `string`
 {:#members:commonseriesoptions-highlightsettings-border-color}
 
 
@@ -4868,17 +4637,15 @@ Options for customizing the border of series on highlight.
 Border color of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4891,7 +4658,7 @@ commonSeriesOptions :{highlightSettings:{border:{color:"black"}}}
 
 
 
-### commonSeriesOptions.highlightSettings.border.width<span class="type-signature type string">string</span>
+### commonSeriesOptions.highlightSettings.border.width `string`
 {:#members:commonseriesoptions-highlightsettings-border-width}
 
 
@@ -4899,17 +4666,15 @@ commonSeriesOptions :{highlightSettings:{border:{color:"black"}}}
 Border width of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4924,7 +4689,7 @@ commonSeriesOptions :{highlightSettings:{border:{width:1}}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rppilz5a)
 
 
-### commonSeriesOptions.highlightSettings.pattern<span class="type-signature type string">string</span>
+### commonSeriesOptions.highlightSettings.pattern `string`
 {:#members:commonseriesoptions-highlightsettings-pattern}
 
 
@@ -4932,17 +4697,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rppilz5a)
 
 Specifies the pattern for the series/point on highlight.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"none". See <a href="global.html#members:pattern">Pattern</a>
+* "none". See <a href="global.html#members:pattern">Pattern</a>
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4958,7 +4721,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e31yyof2)
 
 
 
-### commonSeriesOptions.highlightSettings.customPattern<span class="type-signature type string">string</span>
+### commonSeriesOptions.highlightSettings.customPattern `string`
 {:#members:commonseriesoptions-highlightsettings-custompattern}
 
 
@@ -4966,17 +4729,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e31yyof2)
 
 Custom pattern for the series on highlight.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -4992,7 +4753,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ecgabpa5)
 
 
 
-### commonSeriesOptions.selectionSettings<span class="type-signature type object">object</span>
+### commonSeriesOptions.selectionSettings `object`
 {:#members:commonseriesoptions-selectionsettings}
 
 
@@ -5002,7 +4763,7 @@ Options for customizing the appearance of the series/data point on selection.
 
 
 
-### commonSeriesOptions.selectionSettings.enable<span class="type-signature type boolean">boolean</span>
+### commonSeriesOptions.selectionSettings.enable `boolean`
 {:#members:commonseriesoptions-selectionsettings-enable}
 
 
@@ -5011,18 +4772,16 @@ Options for customizing the appearance of the series/data point on selection.
 Enables/disables the ability to select a series/data point interactively.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5035,7 +4794,7 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 
 
 
-### commonSeriesOptions.selectionSettings.mode<span class="type-signature type enum">enum</span>
+### commonSeriesOptions.selectionSettings.mode `enum`
 {:#members:commonseriesoptions-selectionsettings-mode}
 
 
@@ -5044,18 +4803,16 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 Specifies whether the series or data point has to be selected.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:mode">Mode</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5070,7 +4827,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 
 
 
-### commonSeriesOptions.selectionSettings.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.selectionSettings.color `string`
 {:#members:commonseriesoptions-selectionsettings-color}
 
 
@@ -5079,17 +4836,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 Color of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5102,7 +4857,7 @@ commonSeriesOptions :{selectionSettings:{color:"red"}}
 
 
 
-### commonSeriesOptions.selectionSettings.opacity<span class="type-signature type number">number</span>
+### commonSeriesOptions.selectionSettings.opacity `number`
 {:#members:commonseriesoptions-selectionsettings-opacity}
 
 
@@ -5111,17 +4866,15 @@ commonSeriesOptions :{selectionSettings:{color:"red"}}
 Opacity of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.6
+* 0.6
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5133,7 +4886,7 @@ commonSeriesOptions:{selectionSettings:{opacity:1}}
 {% endhighlight %}
 
 
-### commonSeriesOptions.selectionSettings.border<span class="type-signature type object">object</span>
+### commonSeriesOptions.selectionSettings.border `object`
 {:#members:commonseriesoptions-selectionsettings-border}
 
 
@@ -5142,7 +4895,7 @@ Options for customizing the border of the series on selection.
 
 
 
-### commonSeriesOptions.selectionSettings.border.color<span class="type-signature type string">string</span>
+### commonSeriesOptions.selectionSettings.border.color `string`
 {:#members:commonseriesoptions-selectionsettings-border-color}
 
 
@@ -5150,17 +4903,15 @@ Options for customizing the border of the series on selection.
 Border color of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5173,7 +4924,7 @@ commonSeriesOptions :{selectionSettings:{border:{color:"black"}}}
 
 
 
-### commonSeriesOptions.selectionSettings.border.width<span class="type-signature type string">string</span>
+### commonSeriesOptions.selectionSettings.border.width `string`
 {:#members:commonseriesoptions-selectionsettings-border-width}
 
 
@@ -5181,17 +4932,15 @@ commonSeriesOptions :{selectionSettings:{border:{color:"black"}}}
 Border width of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5204,7 +4953,7 @@ commonSeriesOptions :{selectionSettings:{border:{width:1}}}
 
 
 
-### commonSeriesOptions.selectionSettings.pattern<span class="type-signature type string">string</span>
+### commonSeriesOptions.selectionSettings.pattern `string`
 {:#members:commonseriesoptions-selectionsettings-pattern}
 
 
@@ -5212,17 +4961,15 @@ commonSeriesOptions :{selectionSettings:{border:{width:1}}}
 
 Specifies the pattern for the series/point on selection.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"none". See <a href="global.html#members:pattern">Pattern</a>
+* "none". See <a href="global.html#members:pattern">Pattern</a>
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5237,24 +4984,22 @@ commonSeriesOptions :{selectionSettings:{pattern:"chessboard"}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zbipilg5)
 
 
-### commonSeriesOptions.selectionSettings.customPattern<span class="type-signature type string">string</span>
+### commonSeriesOptions.selectionSettings.customPattern `string`
 {:#members:commonseriesoptions-selectionsettings-custompattern}
 
 
 
 Custom pattern for the series on selection.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5271,7 +5016,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
 
 
 
-### crosshair<span class="type-signature type object">object</span>
+### crosshair `object`
 {:#members:crosshair}
 
 
@@ -5284,7 +5029,7 @@ Options for displaying and customizing the crosshair.
 
 
 
-### crosshair.marker<span class="type-signature type object">object</span>
+### crosshair.marker `object`
 {:#members:crosshair-marker}
 
 
@@ -5297,7 +5042,7 @@ Options for customizing the marker in crosshair.
 
 
 
-### crosshair.marker.border<span class="type-signature type object">object</span>
+### crosshair.marker.border `object`
 {:#members:crosshair-marker-border}
 
 
@@ -5310,7 +5055,7 @@ Options for customizing the border.
 
 
 
-### crosshair.marker.border.width<span class="type-signature type number">number</span>
+### crosshair.marker.border.width `number`
 {:#members:crosshair-marker-border-width}
 
 
@@ -5319,15 +5064,14 @@ Options for customizing the border.
 Border width of the marker.
 
 
-Default value:
-{:.param}
-3
+#### Default Value
+
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5343,7 +5087,7 @@ $("#container").ejChart({
 
 
 
-### crosshair.marker.opacity<span class="type-signature type boolean">boolean</span>
+### crosshair.marker.opacity `boolean`
 {:#members:crosshair-marker-opacity}
 
 
@@ -5352,15 +5096,14 @@ $("#container").ejChart({
 Opacity of the marker.
 
 
-Default value:
-{:.param}
-true
+#### Default Value
+
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5376,7 +5119,7 @@ $("#container").ejChart({
 
 
 
-### crosshair.marker.size<span class="type-signature type object">object</span>
+### crosshair.marker.size `object`
 {:#members:crosshair-marker-size}
 
 
@@ -5389,7 +5132,7 @@ Options for customizing the size of the marker.
 
 
 
-### crosshair.marker.size.height<span class="type-signature type number">number</span>
+### crosshair.marker.size.height `number`
 {:#members:crosshair-marker-size-height}
 
 
@@ -5398,15 +5141,14 @@ Options for customizing the size of the marker.
 Height of the marker.
 
 
-Default value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5422,7 +5164,7 @@ $("#container").ejChart({
 
 
 
-### crosshair.marker.size.width<span class="type-signature type number">number</span>
+### crosshair.marker.size.width `number`
 {:#members:crosshair-marker-size-width}
 
 
@@ -5431,15 +5173,14 @@ $("#container").ejChart({
 Width of the marker.
 
 
-Default value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5455,7 +5196,7 @@ $("#container").ejChart({
 
 
 
-### crosshair.marker.visible<span class="type-signature type boolean">boolean</span>
+### crosshair.marker.visible `boolean`
 {:#members:crosshair-marker-visible}
 
 
@@ -5464,15 +5205,14 @@ $("#container").ejChart({
 Show/hides the marker.
 
 
-Default value:
-{:.param}
-true
+#### Default Value
+
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5491,7 +5231,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
 
 
-### crosshair.type<span class="type-signature type enum">enum</span>
+### crosshair.type `enum`
 {:#members:crosshair-type}
 
 
@@ -5500,15 +5240,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 Specifies the type of the crosshair. It can be trackball or crosshair
 
 
-Default value:
-{:.param}
-"crosshair". See <a href="global.html#members:crosshairtype">CrosshairType</a>
+#### Default Value
+
+* "crosshair". See <a href="global.html#members:crosshairtype">CrosshairType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5524,7 +5263,7 @@ $("#container").ejChart({
 
 
 
-### crosshair.visible<span class="type-signature type boolean">boolean</span>
+### crosshair.visible `boolean`
 {:#members:crosshair-visible}
 
 
@@ -5533,15 +5272,14 @@ $("#container").ejChart({
 Show/hides the crosshair/trackball visibility.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5560,7 +5298,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
 
 
 
-### depth<span class="type-signature type number">number</span>
+### depth `number`
 {:#members:depth}
 
 
@@ -5569,18 +5307,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
 Depth of the 3D Chart from front view of series to background wall. This property is applicable only for 3D view.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-100
+* 100
 
 
 
 
-Example
-{:.example}
+#### Example
 
 {% highlight js %}
 
@@ -5595,7 +5331,7 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mfcep44t)
 
-### enable3D<span class="type-signature type boolean">boolean</span>
+### enable3D `boolean`
 {:#members:enable3d}
 
 
@@ -5604,18 +5340,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mfcep44t)
 Controls whether 3D view has to be enabled or not. 3D view is supported only for column, bar. Stacking column, stacking bar, pie and doughnut series types.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 {% highlight js %}
 
@@ -5633,7 +5367,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dx0nj11k)
 
 
 
-### enableCanvasRendering<span class="type-signature type boolean">boolean</span>
+### enableCanvasRendering `boolean`
 {:#members:enablecanvasrendering}
 
 
@@ -5642,15 +5376,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dx0nj11k)
 Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering supports all functionalities in SVG rendering except 3D Charts.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5669,7 +5402,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 
 
 
-### enableRotation<span class="type-signature type boolean">boolean</span>
+### enableRotation `boolean`
 {:#members:enablerotation}
 
 
@@ -5678,18 +5411,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 Controls whether 3D view has to be rotated on dragging. This property is applicable only for 3D view.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5707,7 +5438,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hf5wopxp)
 
 
-### indicators<span class="type-signature type array">array</span>
+### indicators `array`
 {:#members:indicators}
 
 
@@ -5720,7 +5451,7 @@ Options to customize the technical indicators.
 
 
 
-### indicators.dPeriod<span class="type-signature type number">number</span>
+### indicators.dPeriod `number`
 {:#members:indicators-dperiod}
 
 
@@ -5729,18 +5460,16 @@ Options to customize the technical indicators.
 The dPeriod value for stochastic indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5757,7 +5486,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnfnqsqd)
 
 
-### indicators.enableAnimation<span class="type-signature type boolean">boolean</span>
+### indicators.enableAnimation `boolean`
 {:#members:indicators-enableanimation}
 
 
@@ -5766,18 +5495,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnfnqsqd)
 Enables/disables the animation.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5793,7 +5520,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
 
 
-### indicators.fill<span class="type-signature type string">string</span>
+### indicators.fill `string`
 {:#members:indicators-fill}
 
 
@@ -5802,18 +5529,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
 Color of the technical indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#00008B"
+* "#00008B"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5829,7 +5554,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vrm2umdf)
 
 
-### indicators.histogram<span class="type-signature type object">object</span>
+### indicators.histogram `object`
 {:#members:indicators-histogram}
 
 
@@ -5842,7 +5567,7 @@ Options to customize the histogram in MACD indicator.
 
 
 
-### indicators.histogram.border<span class="type-signature type object">object</span>
+### indicators.histogram.border `object`
 {:#members:indicators-histogram-border}
 
 
@@ -5855,7 +5580,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
 
 
 
-### indicators.histogram.border.color<span class="type-signature type string">string</span>
+### indicators.histogram.border.color `string`
 {:#members:indicators-histogram-border-color}
 
 
@@ -5864,16 +5589,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
 Color of the histogram border in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
-"#9999ff"
+* "#9999ff"
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5889,7 +5612,7 @@ $("#container").ejChart({
 
 
 
-### indicators.histogram.border.width<span class="type-signature type width">width</span>
+### indicators.histogram.border.width `width`
 {:#members:indicators-histogram-border-width}
 
 
@@ -5898,18 +5621,16 @@ $("#container").ejChart({
 Controls the width of histogram border line in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5925,7 +5646,7 @@ $("#container").ejChart({
 
 
 
-### indicators.histogram.fill<span class="type-signature type string">string</span>
+### indicators.histogram.fill `string`
 {:#members:indicators-histogram-fill}
 
 
@@ -5934,18 +5655,16 @@ $("#container").ejChart({
 Color of histogram columns in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#ccccff"
+* "#ccccff"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5961,7 +5680,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2rvadgmd)
 
 
-### indicators.histogram.opacity<span class="type-signature type number">number</span>
+### indicators.histogram.opacity `number`
 {:#members:indicators-histogram-opacity}
 
 
@@ -5970,18 +5689,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2rvadgmd)
 Opacity of histogram columns in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -5997,7 +5714,7 @@ $("#container").ejChart({
 
 
 
-### indicators.kPeriod<span class="type-signature type number">number</span>
+### indicators.kPeriod `number`
 {:#members:indicators-kperiod}
 
 
@@ -6006,18 +5723,16 @@ $("#container").ejChart({
 Specifies the k period in stochastic indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6033,7 +5748,7 @@ $("#container").ejChart({
 
 
 
-### indicators.longPeriod<span class="type-signature type number">number</span>
+### indicators.longPeriod `number`
 {:#members:indicators-longperiod}
 
 
@@ -6042,18 +5757,16 @@ $("#container").ejChart({
 Specifies the long period in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-26
+* 26
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6069,7 +5782,7 @@ $("#container").ejChart({
 
 
 
-### indicators.lowerLine<span class="type-signature type object">object</span>
+### indicators.lowerLine `object`
 {:#members:indicators-lowerline}
 
 
@@ -6082,7 +5795,7 @@ Options to customize the lower line in indicators.
 
 
 
-### indicators.lowerLine.fill<span class="type-signature type string">string</span>
+### indicators.lowerLine.fill `string`
 {:#members:indicators-lowerline-fill}
 
 
@@ -6091,18 +5804,16 @@ Options to customize the lower line in indicators.
 Color of lower line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#008000"
+* "#008000"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6118,7 +5829,7 @@ $("#container").ejChart({
 
 
 
-### indicators.lowerLine.width<span class="type-signature type number">number</span>
+### indicators.lowerLine.width `number`
 {:#members:indicators-lowerline-width}
 
 
@@ -6127,18 +5838,16 @@ $("#container").ejChart({
 Width of the lower line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6154,7 +5863,7 @@ $("#container").ejChart({
 
 
 
-### indicators.macdLine<span class="type-signature type object">object</span>
+### indicators.macdLine `object`
 {:#members:indicators-macdline}
 
 
@@ -6167,7 +5876,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/oarmpbow)
 
 
 
-### indicators.macdLine.fill<span class="type-signature type string">string</span>
+### indicators.macdLine.fill `string`
 {:#members:indicators-macdline-fill}
 
 
@@ -6176,18 +5885,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/oarmpbow)
 Color of MACD line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#ff9933"
+* "#ff9933"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6203,7 +5910,7 @@ $("#container").ejChart({
 
 
 
-### indicators.macdLine.width<span class="type-signature type number">number</span>
+### indicators.macdLine.width `number`
 {:#members:indicators-macdline-width}
 
 
@@ -6212,18 +5919,16 @@ $("#container").ejChart({
 Width of the MACD line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6239,7 +5944,7 @@ $("#container").ejChart({
 
 
 
-### indicators.macdType<span class="type-signature type string">string</span>
+### indicators.macdType `string`
 {:#members:indicators-macdtype}
 
 
@@ -6248,18 +5953,16 @@ $("#container").ejChart({
 Specifies the type of the MACD indicator. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"line". See <a href="global.html#members:macdtype">MACDType</a>
+* "line". See <a href="global.html#members:macdtype">MACDType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6275,7 +5978,7 @@ $("#container").ejChart({
 
 
 
-### indicators.period<span class="type-signature type number">number</span>
+### indicators.period `number`
 {:#members:indicators-period}
 
 
@@ -6284,18 +5987,16 @@ $("#container").ejChart({
 Specifies period value in indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-14
+* 14
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6311,7 +6012,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 
-### indicators.periodLine<span class="type-signature type object">object</span>
+### indicators.periodLine `object`
 {:#members:indicators-periodline}
 
 
@@ -6324,7 +6025,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/20dlmyxk)
 
 
 
-### indicators.periodLine.fill<span class="type-signature type string">string</span>
+### indicators.periodLine.fill `string`
 {:#members:indicators-periodline-fill}
 
 
@@ -6333,18 +6034,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/20dlmyxk)
 Color of period line in indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"blue"
+* "blue"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6360,7 +6059,7 @@ $("#container").ejChart({
 
 
 
-### indicators.periodLine.width<span class="type-signature type number">number</span>
+### indicators.periodLine.width `number`
 {:#members:indicators-periodline-width}
 
 
@@ -6369,18 +6068,16 @@ $("#container").ejChart({
 Width of the period line in indicators.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6396,7 +6093,7 @@ $("#container").ejChart({
 
 
 
-### indicators.seriesName<span class="type-signature type string">string</span>
+### indicators.seriesName `string`
 {:#members:indicators-seriesname}
 
 
@@ -6405,18 +6102,16 @@ $("#container").ejChart({
 Name of the series for which indicator has to be drawn.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6432,7 +6127,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 
-### indicators.shortPeriod<span class="type-signature type number">number</span>
+### indicators.shortPeriod `number`
 {:#members:indicators-shortperiod}
 
 
@@ -6441,18 +6136,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 Specifies the short period in MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-13
+* 13
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6468,7 +6161,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2hpibxjj)
 
 
-### indicators.standardDeviations<span class="type-signature type number">number</span>
+### indicators.standardDeviations `number`
 {:#members:indicators-standarddeviations}
 
 
@@ -6477,18 +6170,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2hpibxjj)
 Specifies the standard deviation value for Bollinger band indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6504,7 +6195,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0b04ckwl)
 
 
-### indicators.tooltip<span class="type-signature type object">object</span>
+### indicators.tooltip `object`
 {:#members:indicators-tooltip}
 
 
@@ -6517,7 +6208,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ritlgl5w)
 
 
 
-### indicators.tooltip.border<span class="type-signature type object">object</span>
+### indicators.tooltip.border `object`
 {:#members:indicators-tooltip-border}
 
 
@@ -6530,7 +6221,7 @@ Option to customize the border of indicator tooltip.
 
 
 
-### indicators.tooltip.border.color<span class="type-signature type string">string</span>
+### indicators.tooltip.border.color `string`
 {:#members:indicators-tooltip-border-color}
 
 
@@ -6539,18 +6230,16 @@ Option to customize the border of indicator tooltip.
 Border color of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6566,7 +6255,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.border.width<span class="type-signature type number">number</span>
+### indicators.tooltip.border.width `number`
 {:#members:indicators-tooltip-border-width}
 
 
@@ -6575,18 +6264,16 @@ $("#container").ejChart({
 Border width of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6602,7 +6289,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.duration<span class="type-signature type string">string</span>
+### indicators.tooltip.duration `string`
 {:#members:indicators-tooltip-duration}
 
 
@@ -6611,18 +6298,16 @@ $("#container").ejChart({
 Specifies the animation duration of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"500ms"
+* "500ms"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6638,7 +6323,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
+### indicators.tooltip.enableAnimation `boolean`
 {:#members:indicators-tooltip-enableanimation}
 
 
@@ -6647,18 +6332,16 @@ $("#container").ejChart({
 Enables/disables the tooltip animation.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6674,7 +6357,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.format<span class="type-signature type string">string</span>
+### indicators.tooltip.format `string`
 {:#members:indicators-tooltip-format}
 
 
@@ -6683,18 +6366,16 @@ $("#container").ejChart({
 Format of indicator tooltip. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#point.x# : #point.y#"
+* "#point.x# : #point.y#"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6710,7 +6391,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.fill<span class="type-signature type string">string</span>
+### indicators.tooltip.fill `string`
 {:#members:indicators-tooltip-fill}
 
 
@@ -6719,18 +6400,16 @@ $("#container").ejChart({
 Background color of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6746,7 +6425,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.opacity<span class="type-signature type number">number</span>
+### indicators.tooltip.opacity `number`
 {:#members:indicators-tooltip-opacity}
 
 
@@ -6755,18 +6434,16 @@ $("#container").ejChart({
 Opacity of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.95
+* 0.95
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6782,7 +6459,7 @@ $("#container").ejChart({
 
 
 
-### indicators.tooltip.visible<span class="type-signature type boolaean">boolaean</span>
+### indicators.tooltip.visible `boolaean`
 {:#members:indicators-tooltip-visible}
 
 
@@ -6791,18 +6468,16 @@ $("#container").ejChart({
 Controls the visibility of indicator tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6818,7 +6493,7 @@ $("#container").ejChart({
 
 
 
-### indicators.trigger<span class="type-signature type number">number</span>
+### indicators.trigger `number`
 {:#members:indicators-trigger}
 
 
@@ -6827,18 +6502,16 @@ $("#container").ejChart({
 Trigger value of MACD indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-9
+* 9
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6854,7 +6527,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nrh5tk4z)
 
 
-### indicators.visibility<span class="type-signature type string">string</span>
+### indicators.visibility `string`
 {:#members:indicators-trigger}
 
 
@@ -6863,18 +6536,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nrh5tk4z)
 Specifies the visibility of indicator.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"visible"
+* "visible"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6890,7 +6561,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
 
 
-### indicators.type<span class="type-signature type string">string</span>
+### indicators.type `string`
 {:#members:indicators-type}
 
 
@@ -6899,18 +6570,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
 Specifies the type of indicator that has to be rendered.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"sma". See <a href="global.html#members:indicatorstype">IndicatorsType</a>
+* "sma". See <a href="global.html#members:indicatorstype">IndicatorsType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6926,7 +6595,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mr4ykv5i)
 
 
-### indicators.upperLine<span class="type-signature type object">object</span>
+### indicators.upperLine `object`
 {:#members:indicators-upperline}
 
 
@@ -6939,7 +6608,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/duskfkix)
 
 
 
-### indicators.upperLine.fill<span class="type-signature type string">string</span>
+### indicators.upperLine.fill `string`
 {:#members:indicators-upperline-fill}
 
 
@@ -6948,18 +6617,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/duskfkix)
 Fill color of the upper line in indicators
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#ff9933"
+* "#ff9933"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -6975,7 +6642,7 @@ $("#container").ejChart({
 
 
 
-### indicators.upperLine.width<span class="type-signature type number">number</span>
+### indicators.upperLine.width `number`
 {:#members:indicators-upperline-width}
 
 
@@ -6984,18 +6651,16 @@ $("#container").ejChart({
 Width of the upper line in indicators.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7011,7 +6676,7 @@ $("#container").ejChart({
 
 
 
-### indicators.width<span class="type-signature type number">number</span>
+### indicators.width `number`
 {:#members:indicators-width}
 
 
@@ -7020,18 +6685,16 @@ $("#container").ejChart({
 Width of the indicator line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7047,7 +6710,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r23e0yrp)
 
 
-### indicators.xAxisName<span class="type-signature type string">string</span>
+### indicators.xAxisName `string`
 {:#members:indicators-xaxisname}
 
 
@@ -7056,18 +6719,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r23e0yrp)
 Name of the horizontal axis used for indicator. Primary X axis is used when x axis name is not specified.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7083,7 +6744,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kksyu40s)
 
 
-### indicators.yAxisName<span class="type-signature type string">string</span>
+### indicators.yAxisName `string`
 {:#members:indicators-yaxisname}
 
 
@@ -7092,18 +6753,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kksyu40s)
 Name of the vertical axis used for indicator. Primary Y axis is used when y axis name is not specified
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7119,7 +6778,7 @@ $("#container").ejChart({
 
 
 
-### legend<span class="type-signature type object">object</span>
+### legend `object`
 {:#members:legend}
 
 
@@ -7132,7 +6791,7 @@ Options to customize the legend items and legend title.
 
 
 
-### legend.alignment<span class="type-signature type enum">enum</span>
+### legend.alignment `enum`
 {:#members:legend-alignment}
 
 
@@ -7141,15 +6800,14 @@ Options to customize the legend items and legend title.
 Horizontal alignment of the legend.
 
 
-Default value:
-{:.param}
-"Center". See <a href="global.html#members:alignment">Alignment</a>
+#### Default Value
+
+* "Center". See <a href="global.html#members:alignment">Alignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7168,7 +6826,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jpcc441l)
 
 
 
-### legend.background<span class="type-signature type string">string</span>
+### legend.background `string`
 {:#members:legend-background}
 
 
@@ -7177,15 +6835,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jpcc441l)
 Background for the legend. Use this property to add a background image or background color for the legend.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7204,7 +6861,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yesrbzgh)
 
 
 
-### legend.border<span class="type-signature type object">object</span>
+### legend.border `object`
 {:#members:legend-border}
 
 
@@ -7218,7 +6875,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zob1c5er)
 
 
 
-### legend.border.color<span class="type-signature type string">string</span>
+### legend.border.color `string`
 {:#members:legend-border-color}
 
 
@@ -7227,15 +6884,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zob1c5er)
 Border color of the legend.
 
 
-Default value:
-{:.param}
-"transparent"
+#### Default Value
+
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7251,7 +6907,7 @@ $("#container").ejChart({
 
 
 
-### legend.border.width<span class="type-signature type number">number</span>
+### legend.border.width `number`
 {:#members:legend-border-width}
 
 
@@ -7260,15 +6916,14 @@ $("#container").ejChart({
 Border width of the legend.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7284,7 +6939,7 @@ $("#container").ejChart({
 
 
 
-### legend.columnCount<span class="type-signature type number">number</span>
+### legend.columnCount `number`
 {:#members:legend-columncount}
 
 
@@ -7293,15 +6948,14 @@ $("#container").ejChart({
 Number of columns to arrange the legend items.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7320,7 +6974,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
 
 
 
-### legend.enableScrollbar<span class="type-signature type boolean">boolean</span>
+### legend.enableScrollbar `boolean`
 {:#members:legend-enableScrollbar}
 
 
@@ -7329,15 +6983,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
 Controls whether legend has to use scrollbar or not. When enabled, scroll bar appears depending upon size and position properties of legend.
 
 
-Default value:
-{:.param}
-true
+#### Default Value
+
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7356,7 +7009,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3budcknt)
 
 
 
-### legend.fill<span class="type-signature type string">string</span>
+### legend.fill `string`
 {:#members:legend-fill}
 
 
@@ -7366,15 +7019,14 @@ Fill color for the legend items. By using this property, it displays all legend 
 Legend items representing invisible series is displayed in gray color.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7393,7 +7045,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3alytf20)
 
 
 
-### legend.font<span class="type-signature type object">object</span>
+### legend.font `object`
 {:#members:legend-font}
 
 
@@ -7407,7 +7059,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
 
 
 
-### legend.font.fontFamily<span class="type-signature type string">string</span>
+### legend.font.fontFamily `string`
 {:#members:legend-font-fontfamily}
 
 
@@ -7416,15 +7068,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
 Font family for legend item text.
 
 
-Default value:
-{:.param}
-"Segoe UI"
+#### Default Value
+
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7440,7 +7091,7 @@ $("#container").ejChart({
 
 
 
-### legend.font.fontStyle<span class="type-signature type enum">enum</span>
+### legend.font.fontStyle `enum`
 {:#members:legend-font-fontstyle}
 
 
@@ -7449,15 +7100,14 @@ $("#container").ejChart({
 Font style for legend item text.
 
 
-Default value:
-{:.param}
-"Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+#### Default Value
+
+* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7473,7 +7123,7 @@ $("#container").ejChart({
 
 
 
-### legend.font.fontWeight<span class="type-signature type enum">enum</span>
+### legend.font.fontWeight `enum`
 {:#members:legend-font-fontweight}
 
 
@@ -7482,15 +7132,14 @@ $("#container").ejChart({
 Font weight for legend item text.
 
 
-Default value:
-{:.param}
-"Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+#### Default Value
+
+* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7506,7 +7155,7 @@ $("#container").ejChart({
 
 
 
-### legend.font.size<span class="type-signature type string">string</span>
+### legend.font.size `string`
 {:#members:legend-font-size}
 
 
@@ -7515,15 +7164,14 @@ $("#container").ejChart({
 Font size for legend item text.
 
 
-Default value:
-{:.param}
-"12px"
+#### Default Value
+
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7539,7 +7187,7 @@ $("#container").ejChart({
 
 
 
-### legend.itemPadding<span class="type-signature type number">number</span>
+### legend.itemPadding `number`
 {:#members:legend-itempadding}
 
 
@@ -7548,15 +7196,14 @@ $("#container").ejChart({
 Gap or padding between the legend items.
 
 
-Default value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7575,7 +7222,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tozzsrit)
 
 
 
-### legend.itemStyle<span class="type-signature type object">object</span>
+### legend.itemStyle `object`
 {:#members:legend-itemstyle}
 
 
@@ -7588,7 +7235,7 @@ Options to customize the style of legend items.
 
 
 
-### legend.itemStyle.border<span class="type-signature type object">object</span>
+### legend.itemStyle.border `object`
 {:#members:legend-itemstyle-border}
 
 
@@ -7602,7 +7249,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hplwwoll)
 
 
 
-### legend.itemStyle.border.color<span class="type-signature type string">string</span>
+### legend.itemStyle.border.color `string`
 {:#members:legend-itemstyle-border-color}
 
 
@@ -7611,15 +7258,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hplwwoll)
 Border color of the legend items.
 
 
-Default value:
-{:.param}
-"transparent"
+#### Default Value
+
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7635,7 +7281,7 @@ $("#container").ejChart({
 
 
 
-### legend.itemStyle.border.width<span class="type-signature type number">number</span>
+### legend.itemStyle.border.width `number`
 {:#members:legend-itemstyle-border-width}
 
 
@@ -7644,15 +7290,14 @@ $("#container").ejChart({
 Border width of the legend items.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7668,7 +7313,7 @@ $("#container").ejChart({
 
 
 
-### legend.itemStyle.height<span class="type-signature type number">number</span>
+### legend.itemStyle.height `number`
 {:#members:legend-itemstyle-height}
 
 
@@ -7677,15 +7322,14 @@ $("#container").ejChart({
 Height of the shape in legend items.
 
 
-Default value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7701,7 +7345,7 @@ $("#container").ejChart({
 
 
 
-### legend.itemStyle.width<span class="type-signature type number">number</span>
+### legend.itemStyle.width `number`
 {:#members:legend-itemstyle-width}
 
 
@@ -7710,15 +7354,14 @@ $("#container").ejChart({
 Width of the shape in legend items.
 
 
-Default value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7734,7 +7377,7 @@ $("#container").ejChart({
 
 
 
-### legend.location<span class="type-signature type object">object</span>
+### legend.location `object`
 {:#members:legend-location}
 
 
@@ -7748,7 +7391,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xurqtijv)
 
 
 
-### legend.location.x<span class="type-signature type number">number</span>
+### legend.location.x `number`
 {:#members:legend-location-x}
 
 
@@ -7757,15 +7400,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xurqtijv)
 X value or horizontal offset to position the legend in chart.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7781,7 +7423,7 @@ $("#container").ejChart({
 
 
 
-### legend.location.y<span class="type-signature type number">number</span>
+### legend.location.y `number`
 {:#members:legend-location-y}
 
 
@@ -7790,15 +7432,14 @@ $("#container").ejChart({
 Y value or vertical offset to position the legend.
 
 
-Default value:
-{:.param}
-0
+#### Default Value
+
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7814,7 +7455,7 @@ $("#container").ejChart({
 
 
 
-### legend.opacity<span class="type-signature type number">number</span>
+### legend.opacity `number`
 {:#members:legend-opacity}
 
 
@@ -7823,15 +7464,14 @@ $("#container").ejChart({
 Opacity of the legend.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7850,7 +7490,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
 
 
 
-### legend.position<span class="type-signature type enum">enum</span>
+### legend.position `enum`
 {:#members:legend-position}
 
 
@@ -7860,15 +7500,14 @@ Places the legend at specified position. Legend can be placed at **left**, **rig
 To manually specify the location of legend, set **custom** as value to this property.
 
 
-Default value:
-{:.param}
-"Bottom". See <a href="global.html#members:position">Position</a>
+#### Default Value
+
+* "Bottom". See <a href="global.html#members:position">Position</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7887,7 +7526,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
 
 
-### legend.rowCount<span class="type-signature type number">number</span>
+### legend.rowCount `number`
 {:#members:legend-rowcount}
 
 
@@ -7896,15 +7535,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 Number of rows to arrange the legend items.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7923,7 +7561,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 
 
 
-### legend.shape<span class="type-signature type enum">enum</span>
+### legend.shape `enum`
 {:#members:legend-shape}
 
 
@@ -7932,15 +7570,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 Shape of the legend items. Default shape for pie and doughnut series is circle and all other series uses rectangle.
 
 
-Default value:
-{:.param}
-"None". See <a href="global.html#members:shape">Shape</a>
+#### Default Value
+
+* "None". See <a href="global.html#members:shape">Shape</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -7959,7 +7596,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uq3eho3v)
 
 
 
-### legend.size<span class="type-signature type object">object</span>
+### legend.size `object`
 {:#members:legend-size}
 
 
@@ -7973,7 +7610,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 
 
 
-### legend.size.height<span class="type-signature type string">string</span>
+### legend.size.height `string`
 {:#members:legend-size-height}
 
 
@@ -7982,15 +7619,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 Height of the legend. Height can be specified in either pixel or percentage.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8006,7 +7642,7 @@ $("#container").ejChart({
 
 
 
-### legend.size.width<span class="type-signature type string">string</span>
+### legend.size.width `string`
 {:#members:legend-size-width}
 
 
@@ -8015,15 +7651,14 @@ $("#container").ejChart({
 Width of the legend. Width can be specified in either pixel or percentage.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8039,7 +7674,7 @@ $("#container").ejChart({
 
 
 
-### legend.title<span class="type-signature type object">object</span>
+### legend.title `object`
 {:#members:legend-title}
 
 
@@ -8052,7 +7687,7 @@ Options to customize the legend title.
 
 
 
-### legend.title.font<span class="type-signature type object">object</span>
+### legend.title.font `object`
 {:#members:legend-title-font}
 
 
@@ -8066,7 +7701,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/bkgyatau)
 
 
 
-### legend.title.font.fontFamily<span class="type-signature type string">string</span>
+### legend.title.font.fontFamily `string`
 {:#members:legend-title-font-fontfamily}
 
 
@@ -8075,15 +7710,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/bkgyatau)
 Font family for the text in legend title.
 
 
-Default value:
-{:.param}
-"Segoe UI"
+#### Default Value
+
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8099,7 +7733,7 @@ $("#container").ejChart({
 
 
 
-### legend.title.font.fontStyle<span class="type-signature type enum">enum</span>
+### legend.title.font.fontStyle `enum`
 {:#members:legend-title-font-fontstyle}
 
 
@@ -8108,15 +7742,14 @@ $("#container").ejChart({
 Font style for legend title.
 
 
-Default value:
-{:.param}
-"normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+#### Default Value
+
+* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8132,7 +7765,7 @@ $("#container").ejChart({
 
 
 
-### legend.title.font.fontWeight<span class="type-signature type enum">enum</span>
+### legend.title.font.fontWeight `enum`
 {:#members:legend-title-font-fontweight}
 
 
@@ -8141,15 +7774,14 @@ $("#container").ejChart({
 Font weight for legend title.
 
 
-Default value:
-{:.param}
-"normal". See <a href="global.html#members:fontweight">FontWeight</a>
+#### Default Value
+
+* "normal". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8165,7 +7797,7 @@ $("#container").ejChart({
 
 
 
-### legend.title.font.size<span class="type-signature type string">string</span>
+### legend.title.font.size `string`
 {:#members:legend-title-font-size}
 
 
@@ -8174,15 +7806,14 @@ $("#container").ejChart({
 Font size for legend title.
 
 
-Default value:
-{:.param}
-"12px"
+#### Default Value
+
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8198,7 +7829,7 @@ $("#container").ejChart({
 
 
 
-### legend.title.text<span class="type-signature type string">string</span>
+### legend.title.text `string`
 {:#members:legend-title-text}
 
 
@@ -8207,15 +7838,14 @@ $("#container").ejChart({
 Text to be displayed in legend title.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8234,7 +7864,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
 
 
 
-### legend.title.textAlignment<span class="type-signature type enum">enum</span>
+### legend.title.textAlignment `enum`
 {:#members:legend-title-textalignment}
 
 
@@ -8243,15 +7873,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
 Alignment of the legend title.
 
 
-Default value:
-{:.param}
-"center". See <a href="global.html#members:alignment">Alignment</a>
+#### Default Value
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8270,7 +7899,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 
 
 
-### legend.visible<span class="type-signature type boolean">boolean</span>
+### legend.visible `boolean`
 {:#members:legend-visible}
 
 
@@ -8279,15 +7908,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 Controls the visibility of the legend.
 
 
-Default Value:
-{:.param}
-true
+#### Default Value
+
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8306,7 +7934,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -8316,15 +7944,14 @@ Name of the culture based on which chart should be localized. Number and date ti
 String type properties like title text are not localized automatically. Provide localized text as value to string type properties.
 
 
-Default value:
-{:.param}
-"en-US"
+#### Default Value
+
+* "en-US"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8375,7 +8002,7 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 
-### Margin<span class="type-signature type object">object</span>
+### Margin `object`
 {:#members:margin}
 
 
@@ -8389,7 +8016,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
 
 
 
-### margin.left<span class="type-signature type number">number</span>
+### margin.left `number`
 {:#members:margin-left}
 
 
@@ -8398,15 +8025,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
 Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
 
 
-Default Value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8422,7 +8048,7 @@ $("#container").ejChart({
 
 
 
-### margin.right<span class="type-signature type number">number</span>
+### margin.right `number`
 {:#members:margin-right}
 
 
@@ -8431,15 +8057,14 @@ $("#container").ejChart({
 Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
 
 
-Default Value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8455,7 +8080,7 @@ $("#container").ejChart({
 
 
 
-### margin.top<span class="type-signature type number">number</span>
+### margin.top `number`
 {:#members:margin-top}
 
 
@@ -8464,15 +8089,14 @@ $("#container").ejChart({
 Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
 
 
-Default Value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8488,7 +8112,7 @@ $("#container").ejChart({
 
 
 
-### margin.bottom<span class="type-signature type number">number</span>
+### margin.bottom `number`
 {:#members:margin-bottom}
 
 
@@ -8497,15 +8121,14 @@ $("#container").ejChart({
 Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
 
 
-Default Value:
-{:.param}
-10
+#### Default Value
+
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8521,7 +8144,7 @@ $("#container").ejChart({
 
 
 
-### perspectiveAngle<span class="type-signature type number">number</span>
+### perspectiveAngle `number`
 {:#members:perspectiveangle}
 
 
@@ -8531,18 +8154,16 @@ Perspective angle of the 3D view. Chart appears closer when perspective angle is
 This property is applicable only when 3D view is enabled
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-90
+* 90
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8561,7 +8182,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ofpxunlm)
 
 
 
-### primaryXAxis<span class="type-signature type object">object</span>
+### primaryXAxis `object`
 {:#members:primaryxaxis}
 
 
@@ -8574,7 +8195,7 @@ This is a horizontal axis that contains options to configure axis and it is the 
 
 
 
-### primaryXAxis.alternateGridBand<span class="type-signature type object">object</span>
+### primaryXAxis.alternateGridBand `object`
 {:#members:primaryxaxis-alternategridband}
 
 
@@ -8587,7 +8208,7 @@ Options for customizing horizontal axis alternate grid band.
 
 
 
-### primaryXAxis.alternateGridBand.even<span class="type-signature type object">object</span>
+### primaryXAxis.alternateGridBand.even `object`
 {:#members:primaryxaxis-alternategridband-even}
 
 
@@ -8600,7 +8221,7 @@ Options for customizing even grid band.
 
 
 
-### primaryXAxis.alternateGridBand.even.fill<span class="type-signature type string">string</span>
+### primaryXAxis.alternateGridBand.even.fill `string`
 {:#members:primaryxaxis-alternategridband-even-fill}
 
 
@@ -8609,18 +8230,16 @@ Options for customizing even grid band.
 Fill color for the even grid bands.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-transparent
+* transparent
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8636,7 +8255,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.alternateGridBand.even.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.alternateGridBand.even.opacity `number`
 {:#members:primaryxaxis-alternategridband-even-opacity}
 
 
@@ -8645,18 +8264,16 @@ $("#container").ejChart({
 Opacity of the even grid band.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8672,7 +8289,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vanuvupl)
 
 
-### primaryXAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
+### primaryXAxis.alternateGridBand.odd `object`
 {:#members:primaryxaxis-alternategridband-odd}
 
 
@@ -8685,7 +8302,7 @@ Options for customizing odd grid band.
 
 
 
-### primaryXAxis.alternateGridBand.odd.fill<span class="type-signature type string">string</span>
+### primaryXAxis.alternateGridBand.odd.fill `string`
 {:#members:primaryxaxis-alternategridband-odd-fill}
 
 
@@ -8694,18 +8311,16 @@ Options for customizing odd grid band.
 Fill color of the odd grid bands
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-transparent
+* transparent
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8721,7 +8336,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.alternateGridBand.odd.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.alternateGridBand.odd.opacity `number`
 {:#members:primaryxaxis-alternategridband-odd-opacity}
 
 
@@ -8730,18 +8345,16 @@ $("#container").ejChart({
 Opacity of odd grid band
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8757,7 +8370,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n23ku03f)
 
 
-### primaryXAxis.axisLine<span class="type-signature type object">object</span>
+### primaryXAxis.axisLine `object`
 {:#members:primaryxaxis-axisline}
 
 
@@ -8770,7 +8383,7 @@ Options for customizing the axis line.
 
 
 
-### primaryXAxis.axisLine.dashArray<span class="type-signature type string">string</span>
+### primaryXAxis.axisLine.dashArray `string`
 {:#members:primaryxaxis-axisline-dasharray}
 
 
@@ -8779,18 +8392,16 @@ Options for customizing the axis line.
 Pattern of dashes and gaps to be applied to the axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8806,7 +8417,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gx3dji4o)
 
 
-### primaryXAxis.axisLine.offset<span class="type-signature type number">number</span>
+### primaryXAxis.axisLine.offset `number`
 {:#members:primaryxaxis-axisline-offset}
 
 
@@ -8815,18 +8426,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gx3dji4o)
 Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8842,7 +8451,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fmchh3yz)
 
 
-### primaryXAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.axisLine.visible `boolean`
 {:#members:primaryxaxis-axisline-visible}
 
 
@@ -8851,18 +8460,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fmchh3yz)
 Show/hides the axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8878,7 +8485,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.axisLine.width<span class="type-signature type number">number</span>
+### primaryXAxis.axisLine.width `number`
 {:#members:primaryxaxis-axisline-width}
 
 
@@ -8887,18 +8494,16 @@ $("#container").ejChart({
 Width of axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8914,7 +8519,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0chmy5rg)
 
 
-### primaryXAxis.columnIndex<span class="type-signature type number">number</span>
+### primaryXAxis.columnIndex `number`
 {:#members:primaryxaxis-columnindex}
 
 
@@ -8923,18 +8528,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0chmy5rg)
 Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8950,7 +8553,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.columnSpan<span class="type-signature type number">number</span>
+### primaryXAxis.columnSpan `number`
 {:#members:primaryxaxis-columnspan}
 
 
@@ -8959,18 +8562,16 @@ $("#container").ejChart({
 Specifies the number of columns or plot areas an axis has to span horizontally.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -8986,7 +8587,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zqgvpx1v)
 
 
-### primaryXAxis.crosshairLabel<span class="type-signature type object">object</span>
+### primaryXAxis.crosshairLabel `object`
 {:#members:primaryxaxis-crosshairlabel}
 
 
@@ -8999,7 +8600,7 @@ Options to customize the crosshair label.
 
 
 
-### primaryXAxis.crosshairLabel.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.crosshairLabel.visible `boolean`
 {:#members:primaryxaxis-crosshairlabel-visible}
 
 
@@ -9008,18 +8609,16 @@ Options to customize the crosshair label.
 Show/hides the crosshair label associated with this axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9035,7 +8634,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.desiredIntervals<span class="type-signature type number">number</span>
+### primaryXAxis.desiredIntervals `number`
 {:#members:primaryxaxis-desiredintervals}
 
 
@@ -9044,18 +8643,16 @@ $("#container").ejChart({
 With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9071,7 +8668,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.edgeLabelPlacement<span class="type-signature type enum">enum</span>
+### primaryXAxis.edgeLabelPlacement `enum`
 {:#members:primaryxaxis-edgelabelplacement}
 
 
@@ -9080,18 +8677,16 @@ $("#container").ejChart({
 Specifies the position of labels at the edge of the axis. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9107,7 +8702,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ff44lp52)
 
 
-### primaryXAxis.enableTrim<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.enableTrim `boolean`
 {:#members:primaryxaxis-enabletrim}
 
 
@@ -9116,18 +8711,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ff44lp52)
 Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9143,7 +8736,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qt3th50v)
 
 
-### primaryXAxis.font<span class="type-signature type object">object</span>
+### primaryXAxis.font `object`
 {:#members:primaryxaxis-font}
 
 
@@ -9156,7 +8749,7 @@ Options for customizing the font of the axis Labels.
 
 
 
-### primaryXAxis.font.fontFamily<span class="type-signature type string">string</span>
+### primaryXAxis.font.fontFamily `string`
 {:#members:primaryxaxis-font-fontfamily}
 
 
@@ -9165,18 +8758,16 @@ Options for customizing the font of the axis Labels.
 Font family of labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9192,7 +8783,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryXAxis.font.fontStyle `enum`
 {:#members:primaryxaxis-font-fontstyle}
 
 
@@ -9201,19 +8792,17 @@ $("#container").ejChart({
 Font style of labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9229,7 +8818,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.font.fontWeight<span class="type-signature type enum">enum</span>
+### primaryXAxis.font.fontWeight `enum`
 {:#members:primaryxaxis-font-fontweight}
 
 
@@ -9238,18 +8827,16 @@ $("#container").ejChart({
 Font weight of the label.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9265,7 +8852,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.font.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.font.opacity `number`
 {:#members:primaryxaxis-font-opacity}
 
 
@@ -9274,18 +8861,16 @@ $("#container").ejChart({
 Opacity of the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9301,7 +8886,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.font.size<span class="type-signature type string">string</span>
+### primaryXAxis.font.size `string`
 {:#members:primaryxaxis-font-size}
 
 
@@ -9310,18 +8895,16 @@ $("#container").ejChart({
 Font size of the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"13px"
+* "13px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9337,7 +8920,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
 
 
-### primaryXAxis.intervalType<span class="type-signature type enum">enum</span>
+### primaryXAxis.intervalType `enum`
 {:#members:primaryxaxis-intervaltype}
 
 
@@ -9346,19 +8929,17 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
 Specifies the type of interval in date time axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="global.html#members:intervaltype">IntervalType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9374,7 +8955,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
 
-### primaryXAxis.isInversed<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.isInversed `boolean`
 {:#members:primaryxaxis-isinversed}
 
 
@@ -9383,18 +8964,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 Specifies whether to inverse the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9410,7 +8989,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xp1frbzw)
 
 
-### primaryXAxis.labelFormat<span class="type-signature type string">string</span>
+### primaryXAxis.labelFormat `string`
 {:#members:primaryxaxis-labelformat}
 
 
@@ -9419,18 +8998,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xp1frbzw)
 Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9446,7 +9023,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
 
 
-### primaryXAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
+### primaryXAxis.labelIntersectAction `enum`
 {:#members:primaryxaxis-labelintersectaction}
 
 
@@ -9455,18 +9032,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
 Specifies the action to take when the axis labels are overlapping with each other. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9482,7 +9057,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
 
 
-### primaryXAxis.labelPosition<span class="type-signature type enum">enum</span>
+### primaryXAxis.labelPosition `enum`
 {:#members:primaryxaxis-labelposition}
 
 
@@ -9491,18 +9066,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
 Specifies the position of the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9518,7 +9091,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 
 
-### primaryXAxis.labelRotation<span class="type-signature type number">number</span>
+### primaryXAxis.labelRotation `number`
 {:#members:primaryxaxis-labelrotation}
 
 
@@ -9527,18 +9100,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 Angle in degrees to rotate the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9554,7 +9125,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gl5iwbsh)
 
 
-### primaryXAxis.logBase<span class="type-signature type number">number</span>
+### primaryXAxis.logBase `number`
 {:#members:primaryxaxis-logbase}
 
 
@@ -9563,18 +9134,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gl5iwbsh)
 Logarithmic base value. This is applicable only for logarithmic axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-10
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9590,7 +9159,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorGridLines<span class="type-signature type object">object</span>
+### primaryXAxis.majorGridLines `object`
 {:#members:primaryxaxis-majorgridlines}
 
 
@@ -9603,7 +9172,7 @@ Options for customizing major gird lines.
 
 
 
-### primaryXAxis.majorGridLines.dashArray<span class="type-signature type string">string</span>
+### primaryXAxis.majorGridLines.dashArray `string`
 {:#members:primaryxaxis-majorgridlines-dasharray}
 
 
@@ -9612,18 +9181,16 @@ Options for customizing major gird lines.
 Pattern of dashes and gaps used to stroke the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9639,7 +9206,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorGridLines.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.majorGridLines.opacity `number`
 {:#members:primaryxaxis-majorgridlines-opacity}
 
 
@@ -9648,18 +9215,16 @@ $("#container").ejChart({
 Opacity of major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9675,7 +9240,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.majorGridLines.visible `boolean`
 {:#members:primaryxaxis-majorgridlines-visible}
 
 
@@ -9684,18 +9249,16 @@ $("#container").ejChart({
 Show/hides the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9711,7 +9274,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorGridLines.width<span class="type-signature type number">number</span>
+### primaryXAxis.majorGridLines.width `number`
 {:#members:primaryxaxis-majorgridlines-width}
 
 
@@ -9720,18 +9283,16 @@ $("#container").ejChart({
 Width of the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9747,7 +9308,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1tjezqc0)
 
 
-### primaryXAxis.majorTickLines<span class="type-signature type object">object</span>
+### primaryXAxis.majorTickLines `object`
 {:#members:primaryxaxis-majorticklines}
 
 
@@ -9760,7 +9321,7 @@ Options for customizing the major tick lines.
 
 
 
-### primaryXAxis.majorTickLines.size<span class="type-signature type number">number</span>
+### primaryXAxis.majorTickLines.size `number`
 {:#members:primaryxaxis-majorticklines-size}
 
 
@@ -9769,18 +9330,16 @@ Options for customizing the major tick lines.
 Length of the major tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9796,7 +9355,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.majorTickLines.visible `boolean`
 {:#members:primaryxaxis-majorticklines-visible}
 
 
@@ -9805,18 +9364,16 @@ $("#container").ejChart({
 Show/hides the majorticklines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9832,7 +9389,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.majorTickLines.width<span class="type-signature type number">number</span>
+### primaryXAxis.majorTickLines.width `number`
 {:#members:primaryxaxis-majorticklines-width}
 
 
@@ -9841,18 +9398,16 @@ $("#container").ejChart({
 Width of the major tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9868,7 +9423,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/30i5qgrm)
 
 
-### primaryXAxis.maximumLabels<span class="type-signature type number">number</span>
+### primaryXAxis.maximumLabels `number`
 {:#members:primaryxaxis-maximumlabels}
 
 
@@ -9877,18 +9432,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/30i5qgrm)
 Maximum number of labels to be displayed in every 100 pixels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9904,7 +9457,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/a4gcmpzx)
 
 
-### primaryXAxis.maximumLabelWidth<span class="type-signature type number">Number</span>
+### primaryXAxis.maximumLabelWidth `number`
 {:#members:primaryxaxis-maximumlabelwidth}
 
 
@@ -9913,18 +9466,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/a4gcmpzx)
 Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-34
+* 34
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9940,7 +9491,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.minorGridLines<span class="type-signature type object">object</span>
+### primaryXAxis.minorGridLines `object`
 {:#members:primaryxaxis-minorgridlines}
 
 
@@ -9953,7 +9504,7 @@ Options for customizing the minor grid lines.
 
 
 
-### primaryXAxis.minorGridLines.dashArray<span class="type-signature type string">string</span>
+### primaryXAxis.minorGridLines.dashArray `string`
 {:#members:primaryxaxis-minorgridlines-dasharray}
 
 
@@ -9962,18 +9513,16 @@ Options for customizing the minor grid lines.
 Patterns of dashes and gaps used to stroke the minor grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -9989,7 +9538,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.minorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.minorGridLines.visible `boolean`
 {:#members:primaryxaxis-minorgridlines-visible}
 
 
@@ -9998,18 +9547,16 @@ $("#container").ejChart({
 Show/hides the minor grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10025,7 +9572,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.minorGridLines.width<span class="type-signature type number">number</span>
+### primaryXAxis.minorGridLines.width `number`
 {:#members:primaryxaxis-minorgridlines-width}
 
 
@@ -10034,18 +9581,16 @@ $("#container").ejChart({
 Width of the minorGridLines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10061,7 +9606,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlobmfvj)
 
 
-### primaryXAxis.minorTickLines<span class="type-signature type object">object</span>
+### primaryXAxis.minorTickLines `object`
 {:#members:primaryxaxis-minorticklines}
 
 
@@ -10074,7 +9619,7 @@ Options for customizing the minor tick lines.
 
 
 
-### primaryXAxis.minorTickLines.size<span class="type-signature type number">number</span>
+### primaryXAxis.minorTickLines.size `number`
 {:#members:primaryxaxis-minorticklines-size}
 
 
@@ -10083,18 +9628,16 @@ Options for customizing the minor tick lines.
 Length of the minor tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10110,7 +9653,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.minorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.minorTickLines.visible `boolean`
 {:#members:primaryxaxis-minorticklines-visible}
 
 
@@ -10119,18 +9662,16 @@ $("#container").ejChart({
 Show/hides the minor tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10146,7 +9687,7 @@ Width of the minor tick line.
 
 
 
-### primaryXAxis.minorTickLines.width<span class="type-signature type number">number</span>
+### primaryXAxis.minorTickLines.width `number`
 {:#members:primaryxaxis-minorticklines-width}
 
 
@@ -10155,18 +9696,16 @@ Width of the minor tick line.
 Width of the minor tick line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10182,7 +9721,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.minorTicksPerInterval<span class="type-signature type number">number</span>
+### primaryXAxis.minorTicksPerInterval `number`
 {:#members:primaryxaxis-minorticksperinterval}
 
 
@@ -10191,18 +9730,16 @@ $("#container").ejChart({
 Specifies the number of minor ticks per interval.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10216,7 +9753,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.name<span class="type-signature type string">string</span>
+### primaryXAxis.name `string`
 {:#members:primaryxaxis-name}
 
 
@@ -10225,18 +9762,16 @@ $("#container").ejChart({
 Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10252,7 +9787,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.opposedPosition<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.opposedPosition `boolean`
 {:#members:primaryxaxis-opposedposition}
 
 
@@ -10261,18 +9796,16 @@ $("#container").ejChart({
 Specifies whether to render the axis at the opposite side of its default position.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10288,7 +9821,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.plotOffset<span class="type-signature type number">number</span>
+### primaryXAxis.plotOffset `number`
 {:#members:primaryxaxis-plotoffset}
 
 
@@ -10297,18 +9830,16 @@ $("#container").ejChart({
 Specifies the padding for the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-10
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10324,7 +9855,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yo4ek2ci)
 
 
-### primaryXAxis.range<span class="type-signature type object">object</span>
+### primaryXAxis.range `object`
 {:#members:primaryxaxis-range}
 
 
@@ -10335,7 +9866,7 @@ Options to customize the range of the axis.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
 
 
-### primaryXAxis.range.minimum<span class="type-signature type number">number</span>
+### primaryXAxis.range.minimum `number`
 {:#members:primaryxaxis-range-minimum}
 
 
@@ -10344,15 +9875,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
 Minimum value of the axis range.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10366,7 +9896,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.range.maximum<span class="type-signature type number">number</span>
+### primaryXAxis.range.maximum `number`
 {:#members:primaryxaxis-range-maximum}
 
 
@@ -10375,15 +9905,14 @@ $("#container").ejChart({
 Maximum value of the axis range.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10397,7 +9926,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.range.interval<span class="type-signature type number">number</span>
+### primaryXAxis.range.interval `number`
 {:#members:primaryxaxis-range-interval}
 
 
@@ -10406,15 +9935,14 @@ $("#container").ejChart({
 Interval of the axis range.
 
 
-Default value:
-{:.param}
-null
+#### Default Value
+
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10428,7 +9956,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.rangePadding<span class="type-signature type enum">enum</span>
+### primaryXAxis.rangePadding `enum`
 {:#members:primaryxaxis-rangepadding}
 
 
@@ -10437,18 +9965,16 @@ $("#container").ejChart({
 Specifies the padding for the axis range.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.rangePaddding.None
+* ej.datavisualization.Chart.rangePaddding.None
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10464,7 +9990,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.roundingPlaces<span class="type-signature type number">number</span>
+### primaryXAxis.roundingPlaces `number`
 {:#members:primaryxaxis-roundingplaces}
 
 
@@ -10473,18 +9999,16 @@ $("#container").ejChart({
 Rounds the number to the given number of decimals.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10503,27 +10027,26 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hgqmxm50)
 
 
 
-### primaryXAxis.stripLine<span class="type-signature type array">array</span>
+### primaryXAxis.stripLine `array`
 {:#members:primaryxaxis-stripline}
 
 
 Options for customizing the strip lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-[ ]
-
-
-
+* [ ]
 
 
 
 
-### primaryXAxis.stripLine.borderColor<span class="type-signature type string">string</span>
+
+
+
+### primaryXAxis.stripLine.borderColor `string`
 {:#members:primaryxaxis-stripline-bordercolor}
 
 
@@ -10532,18 +10055,16 @@ Default value:
 Border color of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"gray"
+* "gray"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10559,7 +10080,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.color<span class="type-signature type string">string</span>
+### primaryXAxis.stripLine.color `string`
 {:#members:primaryxaxis-stripline-color}
 
 
@@ -10568,18 +10089,16 @@ $("#container").ejChart({
 Background color of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"gray"
+* "gray"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10595,7 +10114,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.end<span class="type-signature type number">number</span>
+### primaryXAxis.stripLine.end `number`
 {:#members:primaryxaxis-stripline-end}
 
 
@@ -10604,18 +10123,16 @@ $("#container").ejChart({
 End value of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10631,7 +10148,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.font<span class="type-signature type object">object</span>
+### primaryXAxis.stripLine.font `object`
 {:#members:primaryxaxis-stripline-font}
 
 
@@ -10644,7 +10161,7 @@ Options for customizing the font of the text.
 
 
 
-### primaryXAxis.stripLine.font.color<span class="type-signature type string">string</span>
+### primaryXAxis.stripLine.font.color `string`
 {:#members:primaryxaxis-stripline-font-color}
 
 
@@ -10653,18 +10170,16 @@ Options for customizing the font of the text.
 Font color of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"black"
+* "black"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10680,7 +10195,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.font.fontFamily<span class="type-signature type enum">enum</span>
+### primaryXAxis.stripLine.font.fontFamily `enum`
 {:#members:primaryxaxis-stripline-font-fontfamily}
 
 
@@ -10689,18 +10204,16 @@ $("#container").ejChart({
 Font family of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"middlecenter"
+* "middlecenter"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10716,7 +10229,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryXAxis.stripLine.font.fontStyle `enum`
 {:#members:primaryxaxis-stripline-font-fontstyle}
 
 
@@ -10725,18 +10238,16 @@ $("#container").ejChart({
 Font style of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Normal"
+* "Normal"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10752,7 +10263,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.font.fontWeight<span class="type-signature type string">string</span>
+### primaryXAxis.stripLine.font.fontWeight `string`
 {:#members:primaryxaxis-stripline-font-fontweight}
 
 
@@ -10761,18 +10272,16 @@ $("#container").ejChart({
 Font weight of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular"
+* "regular"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10788,7 +10297,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.font.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.stripLine.font.opacity `number`
 {:#members:primaryxaxis-stripline-font-opacity}
 
 
@@ -10797,18 +10306,16 @@ $("#container").ejChart({
 Opacity of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10824,7 +10331,7 @@ primaryXAxis: { stripLine:[{ font : { opacity: 0.5} }]}
 
 
 
-### primaryXAxis.stripLine.font.size<span class="type-signature type string">string</span>
+### primaryXAxis.stripLine.font.size `string`
 {:#members:primaryxaxis-stripline-font-size}
 
 
@@ -10833,18 +10340,16 @@ primaryXAxis: { stripLine:[{ font : { opacity: 0.5} }]}
 Font size of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"12px"
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10860,7 +10365,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.start<span class="type-signature type number">number</span>
+### primaryXAxis.stripLine.start `number`
 {:#members:primaryxaxis-stripline-start}
 
 
@@ -10869,18 +10374,16 @@ $("#container").ejChart({
 Start value of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10896,7 +10399,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.startFromAxis<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.stripLine.startFromAxis `boolean`
 {:#members:primaryxaxis-stripline-startfromaxis}
 
 
@@ -10905,18 +10408,16 @@ $("#container").ejChart({
 Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10932,7 +10433,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.text<span class="type-signature type string">string</span>
+### primaryXAxis.stripLine.text `string`
 {:#members:primaryxaxis-stripline-text}
 
 
@@ -10941,18 +10442,16 @@ $("#container").ejChart({
 Specifies text to be displayed inside the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"stripLine"
+* "stripLine"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -10968,7 +10467,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.textAlignment<span class="type-signature type enum">enum</span>
+### primaryXAxis.stripLine.textAlignment `enum`
 {:#members:primaryxaxis-stripline-textalignment}
 
 
@@ -10977,18 +10476,16 @@ $("#container").ejChart({
 Specifies the alignment of the text inside the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11004,7 +10501,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.stripLine.visible `boolean`
 {:#members:primaryxaxis-stripline-visible}
 
 
@@ -11013,18 +10510,16 @@ $("#container").ejChart({
 Show/hides the strip line.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11040,7 +10535,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.width<span class="type-signature type number">number</span>
+### primaryXAxis.stripLine.width `number`
 {:#members:primaryxaxis-stripline-width}
 
 
@@ -11049,18 +10544,16 @@ $("#container").ejChart({
 Width of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11076,7 +10569,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.stripLine.zIndex<span class="type-signature type enum">enum</span>
+### primaryXAxis.stripLine.zIndex `enum`
 {:#members:primaryxaxis-stripline-zindex}
 
 
@@ -11085,18 +10578,16 @@ $("#container").ejChart({
 Specifies the order where the strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="global.html#members:zindex">ZIndex</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11112,7 +10603,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
 
 
-### primaryXAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
+### primaryXAxis.tickLinesPosition `enum`
 {:#members:primaryxaxis-ticklinesposition}
 
 
@@ -11121,19 +10612,17 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
 Specifies the position of the axis tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-"outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11149,7 +10638,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title<span class="type-signature type object">object</span>
+### primaryXAxis.title `object`
 {:#members:primaryxaxis-title}
 
 
@@ -11162,7 +10651,7 @@ Options for customizing the axis title.
 
 
 
-### primaryXAxis.title.enableTrim<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.title.enableTrim `boolean`
 {:#members:primaryxaxis-title-enabletrim}
 
 
@@ -11171,18 +10660,16 @@ Options for customizing the axis title.
 Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11198,7 +10685,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.font<span class="type-signature type object">object</span>
+### primaryXAxis.title.font `object`
 {:#members:primaryxaxis-title-font}
 
 
@@ -11211,7 +10698,7 @@ Options for customizing the title font.
 
 
 
-### primaryXAxis.title.font.fontFamily<span class="type-signature type string">string</span>
+### primaryXAxis.title.font.fontFamily `string`
 {:#members:primaryxaxis-title-font-fontfamily}
 
 
@@ -11220,18 +10707,16 @@ Options for customizing the title font.
 Font family of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11247,7 +10732,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryXAxis.title.font.fontStyle `enum`
 {:#members:primaryxaxis-title-font-fontstyle}
 
 
@@ -11256,18 +10741,16 @@ $("#container").ejChart({
 Font style of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.FontStyle.Normal
+* ej.datavisualization.Chart.FontStyle.Normal
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11284,7 +10767,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.font.fontWeight<span class="type-signature type enum">enum</span>
+### primaryXAxis.title.font.fontWeight `enum`
 {:#members:primaryxaxis-title-font-fontweight}
 
 
@@ -11293,18 +10776,16 @@ $("#container").ejChart({
 Font weight of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11320,7 +10801,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.font.opacity<span class="type-signature type number">number</span>
+### primaryXAxis.title.font.opacity `number`
 {:#members:primaryxaxis-title-font-opacity}
 
 
@@ -11329,18 +10810,16 @@ $("#container").ejChart({
 Opacity of the axis title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11356,7 +10835,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.font.size<span class="type-signature type string">string</span>
+### primaryXAxis.title.font.size `string`
 {:#members:primaryxaxis-title-font-size}
 
 
@@ -11365,18 +10844,16 @@ $("#container").ejChart({
 Font size of the axis title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"16px"
+* "16px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11392,7 +10869,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.maximumTitleWidth<span class="type-signature type number">number</span>
+### primaryXAxis.title.maximumTitleWidth `number`
 {:#members:primaryxaxis-title-maximumtitlewidth}
 
 
@@ -11401,18 +10878,16 @@ $("#container").ejChart({
 Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-34
+* 34
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11428,7 +10903,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.title.text<span class="type-signature type string">string</span>
+### primaryXAxis.title.text `string`
 {:#members:primaryxaxis-title-text}
 
 
@@ -11437,18 +10912,16 @@ $("#container").ejChart({
 Title for the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11464,7 +10937,7 @@ primaryXAxis: { title: { text: "Year" } }
 
 
 
-### primaryXAxis.title.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.title.visible `boolean`
 {:#members:primaryxaxis-title-visible}
 
 
@@ -11473,18 +10946,16 @@ primaryXAxis: { title: { text: "Year" } }
 Controls the visibility of axis title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11500,7 +10971,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.valueType<span class="type-signature type enum">enum</span>
+### primaryXAxis.valueType `enum`
 {:#members:primaryxaxis-valuetype}
 
 
@@ -11509,19 +10980,17 @@ $("#container").ejChart({
 Specifies the type of data the axis is handling.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="global.html#members:valuetype">ValueType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11537,7 +11006,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.visible<span class="type-signature type boolean">boolean</span>
+### primaryXAxis.visible `boolean`
 {:#members:primaryxaxis-visible}
 
 
@@ -11546,18 +11015,16 @@ $("#container").ejChart({
 Show/hides the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11573,7 +11040,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.zoomFactor<span class="type-signature type number">number</span>
+### primaryXAxis.zoomFactor `number`
 {:#members:primaryxaxis-zoomfactor}
 
 
@@ -11582,18 +11049,16 @@ $("#container").ejChart({
 The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11609,7 +11074,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.zoomPosition<span class="type-signature type number">number</span>
+### primaryXAxis.zoomPosition `number`
 {:#members:primaryxaxis-zoomposition}
 
 
@@ -11619,18 +11084,16 @@ Position of the zoomed axis. Value ranges from 0 to 1.
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11646,7 +11109,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis<span class="type-signature type object">object</span>
+### primaryYAxis `object`
 {:#members:primaryyaxis}
 
 
@@ -11659,7 +11122,7 @@ This is a vertical axis that contains options to configure axis. This is the pri
 
 
 
-### primaryYAxis.alternateGridBand<span class="type-signature type object">object</span>
+### primaryYAxis.alternateGridBand `object`
 {:#members:primaryyaxis-alternategridband}
 
 
@@ -11672,7 +11135,7 @@ Options for customizing vertical axis alternate grid band.
 
 
 
-### primaryYAxis.alternateGridBand.even<span class="type-signature type object">object</span>
+### primaryYAxis.alternateGridBand.even `object`
 {:#members:primaryyaxis-alternategridband-even}
 
 
@@ -11685,7 +11148,7 @@ Options for customizing even grid band.
 
 
 
-### primaryYAxis.alternateGridBand.even.fill<span class="type-signature type string">string</span>
+### primaryYAxis.alternateGridBand.even.fill `string`
 {:#members:primaryyaxis-alternategridband-even-fill}
 
 
@@ -11694,18 +11157,16 @@ Options for customizing even grid band.
 Fill color for the even grid bands.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-transparent
+* transparent
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11721,7 +11182,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.alternateGridBand.even.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.alternateGridBand.even.opacity `number`
 {:#members:primaryyaxis-alternategridband-even-opacity}
 
 
@@ -11730,18 +11191,16 @@ $("#container").ejChart({
 Opacity of the even grid band.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11757,7 +11216,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/12z4yd2l)
 
 
-### primaryYAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
+### primaryYAxis.alternateGridBand.odd `object`
 {:#members:primaryyaxis-alternategridband-odd}
 
 
@@ -11770,7 +11229,7 @@ Options for customizing odd grid band.
 
 
 
-### primaryYAxis.alternateGridBand.odd.fill<span class="type-signature type string">string</span>
+### primaryYAxis.alternateGridBand.odd.fill `string`
 {:#members:primaryyaxis-alternategridband-odd-fill}
 
 
@@ -11779,18 +11238,16 @@ Options for customizing odd grid band.
 Fill color of the odd grid bands.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-transparent
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11806,7 +11263,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.alternateGridBand.odd.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.alternateGridBand.odd.opacity `number`
 {:#members:primaryyaxis-alternategridband-odd-opacity}
 
 
@@ -11815,18 +11272,16 @@ $("#container").ejChart({
 Opacity of odd grid band.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11842,7 +11297,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hyakwb3m)
 
 
-### primaryYAxis.axisLine<span class="type-signature type object">object</span>
+### primaryYAxis.axisLine `object`
 {:#members:primaryyaxis-axisline}
 
 
@@ -11855,7 +11310,7 @@ Options for customizing the axis line.
 
 
 
-### primaryYAxis.axisLine.dashArray<span class="type-signature type string">string</span>
+### primaryYAxis.axisLine.dashArray `string`
 {:#members:primaryyaxis-axisline-dasharray}
 
 
@@ -11864,18 +11319,16 @@ Options for customizing the axis line.
 Pattern of dashes and gaps to be applied to the axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11891,7 +11344,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.axisLine.offset<span class="type-signature type number">number</span>
+### primaryYAxis.axisLine.offset `number`
 {:#members:primaryyaxis-axisline-offset}
 
 
@@ -11900,18 +11353,16 @@ $("#container").ejChart({
 Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11927,7 +11378,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3drq4c1j)
 
 
-### primaryYAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.axisLine.visible `boolean`
 {:#members:primaryyaxis-axisline-visible}
 
 
@@ -11936,18 +11387,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3drq4c1j)
 Show/hides the axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11963,7 +11412,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.axisLine.width<span class="type-signature type number">number</span>
+### primaryYAxis.axisLine.width `number`
 {:#members:primaryyaxis-axisline-width}
 
 
@@ -11972,18 +11421,16 @@ $("#container").ejChart({
 Width of axis line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -11999,7 +11446,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zz4cubdn)
 
 
-### primaryYAxis.crosshairLabel<span class="type-signature type object">object</span>
+### primaryYAxis.crosshairLabel `object`
 {:#members:primaryyaxis-crosshairlabel}
 
 
@@ -12012,7 +11459,7 @@ Options to customize the crosshair label.
 
 
 
-### primaryYAxis.crosshairLabel.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.crosshairLabel.visible `boolean`
 {:#members:primaryyaxis-crosshairlabel-visible}
 
 
@@ -12021,18 +11468,16 @@ Options to customize the crosshair label.
 Show/hides the crosshair label associated with this axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12048,7 +11493,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.desiredIntervals<span class="type-signature type number">number</span>
+### primaryYAxis.desiredIntervals `number`
 {:#members:primaryyaxis-desiredintervals}
 
 
@@ -12057,18 +11502,16 @@ $("#container").ejChart({
 With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12084,7 +11527,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.edgeLabelPlacement<span class="type-signature type enum">enum</span>
+### primaryYAxis.edgeLabelPlacement `enum`
 {:#members:primaryyaxis-edgelabelplacement}
 
 
@@ -12093,19 +11536,17 @@ $("#container").ejChart({
 Specifies the position of labels at the edge of the axis. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12121,7 +11562,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.enableTrim<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.enableTrim `boolean`
 {:#members:primaryyaxis-enabletrim}
 
 
@@ -12130,18 +11571,16 @@ $("#container").ejChart({
 Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false 
+* false 
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12157,7 +11596,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.font<span class="type-signature type object">object</span>
+### primaryYAxis.font `object`
 {:#members:primaryyaxis-font}
 
 
@@ -12170,7 +11609,7 @@ Options for customizing the font of the axis Labels.
 
 
 
-### primaryYAxis.font.fontFamily<span class="type-signature type string">string</span>
+### primaryYAxis.font.fontFamily `string`
 {:#members:primaryyaxis-font-fontfamily}
 
 
@@ -12179,18 +11618,16 @@ Options for customizing the font of the axis Labels.
 Font family of labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12206,7 +11643,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryYAxis.font.fontStyle `enum`
 {:#members:primaryyaxis-font-fontstyle}
 
 
@@ -12215,8 +11652,7 @@ $("#container").ejChart({
 Font style of labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
@@ -12226,8 +11662,7 @@ ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fo
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12243,7 +11678,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.font.fontWeight<span class="type-signature type enum">enum</span>
+### primaryYAxis.font.fontWeight `enum`
 {:#members:primaryyaxis-font-fontweight}
 
 
@@ -12252,19 +11687,17 @@ $("#container").ejChart({
 Font weight of the label.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12280,7 +11713,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.font.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.font.opacity `number`
 {:#members:primaryyaxis-font-opacity}
 
 
@@ -12289,18 +11722,16 @@ $("#container").ejChart({
 Opacity of the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12316,7 +11747,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.font.size<span class="type-signature type string">string</span>
+### primaryYAxis.font.size `string`
 {:#members:primaryyaxis-font-size}
 
 
@@ -12325,18 +11756,16 @@ $("#container").ejChart({
 Font size of the axis labels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"13px"
+* "13px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12352,7 +11781,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/s1dshld4))
 
 
-### primaryYAxis.intervalType<span class="type-signature type enum">enum</span>
+### primaryYAxis.intervalType `enum`
 {:#members:primaryyaxis-intervaltype}
 
 
@@ -12361,19 +11790,17 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/s1dshld4))
 Specifies the type of interval in date time axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="global.html#members:intervaltype">IntervalType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12389,7 +11816,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 
 
-### primaryYAxis.isInversed<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.isInversed `boolean`
 {:#members:primaryyaxis-isinversed}
 
 
@@ -12398,18 +11825,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 Specifies whether to inverse the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12425,7 +11850,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mnnwkac1)
 
 
-### primaryYAxis.labelFormat<span class="type-signature type string">string</span>
+### primaryYAxis.labelFormat `string`
 {:#members:primaryyaxis-labelformat}
 
 
@@ -12434,18 +11859,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mnnwkac1)
 Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12461,7 +11884,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 
 
-### primaryYAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
+### primaryYAxis.labelIntersectAction `enum`
 {:#members:primaryyaxis-labelintersectaction}
 
 
@@ -12470,18 +11893,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 Specifies the action to take when the axis labels are overlapping with each other. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.LabelIntersectAction.None
+* ej.datavisualization.Chart.LabelIntersectAction.None
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12497,24 +11918,22 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
 
 
-### primaryYAxis.labelPosition<span class="type-signature type enum">enum</span>
+### primaryYAxis.labelPosition `enum`
 {:#members:primaryyaxis-labelposition}
 
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12530,7 +11949,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.logBase<span class="type-signature type number">number</span>
+### primaryYAxis.logBase `number`
 {:#members:primaryyaxis-logbase}
 
 
@@ -12539,19 +11958,17 @@ $("#container").ejChart({
 Logarithmic base value. This is applicable only for logarithmic axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-10
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12567,7 +11984,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nfviof2i)
 
 
-### primaryYAxis.majorGridLines<span class="type-signature type object">object</span>
+### primaryYAxis.majorGridLines `object`
 {:#members:primaryyaxis-majorgridlines}
 
 
@@ -12580,7 +11997,7 @@ Options for customizing major gird lines.
 
 
 
-### primaryYAxis.majorGridLines.dashArray<span class="type-signature type string">string</span>
+### primaryYAxis.majorGridLines.dashArray `string`
 {:#members:primaryyaxis-majorgridlines-dasharray}
 
 
@@ -12589,18 +12006,16 @@ Options for customizing major gird lines.
 Pattern of dashes and gaps used to stroke the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12616,7 +12031,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.majorGridLines.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.majorGridLines.opacity `number`
 {:#members:primaryyaxis-majorgridlines-opacity}
 
 
@@ -12625,18 +12040,16 @@ $("#container").ejChart({
 Opacity of major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12652,7 +12065,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.majorGridLines.visible `boolean`
 {:#members:primaryyaxis-majorgridlines-visible}
 
 
@@ -12661,18 +12074,16 @@ $("#container").ejChart({
 Show/hides the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12688,7 +12099,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.majorGridLines.width<span class="type-signature type number">number</span>
+### primaryYAxis.majorGridLines.width `number`
 {:#members:primaryyaxis-majorgridlines-width}
 
 
@@ -12697,18 +12108,16 @@ $("#container").ejChart({
 Width of the major grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12724,7 +12133,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jaqmz0ox)
 
 
-### primaryYAxis.majorTickLines<span class="type-signature type object">object</span>
+### primaryYAxis.majorTickLines `object`
 {:#members:primaryyaxis-majorticklines}
 
 
@@ -12737,7 +12146,7 @@ Options for customizing the major tick lines.
 
 
 
-### primaryYAxis.majorTickLines.size<span class="type-signature type number">number</span>
+### primaryYAxis.majorTickLines.size `number`
 {:#members:primaryyaxis-majorticklines-size}
 
 
@@ -12746,18 +12155,16 @@ Options for customizing the major tick lines.
 Length of the major tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12773,7 +12180,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.majorTickLines.visible `boolean`
 {:#members:primaryyaxis-majorticklines-visible}
 
 
@@ -12782,18 +12189,16 @@ $("#container").ejChart({
 Show/hides the majorticklines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12809,7 +12214,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.majorTickLines.width<span class="type-signature type number">number</span>
+### primaryYAxis.majorTickLines.width `number`
 {:#members:primaryyaxis-majorticklines-width}
 
 
@@ -12818,18 +12223,16 @@ $("#container").ejChart({
 Width of the major tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12845,7 +12248,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dumkxazd)
 
 
-### primaryYAxis.maximumLabels<span class="type-signature type number">number</span>
+### primaryYAxis.maximumLabels `number`
 {:#members:primaryyaxis-maximumlabels}
 
 
@@ -12854,18 +12257,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dumkxazd)
 Maximum number of labels to be displayed in every 100 pixels.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12890,18 +12291,16 @@ $("#container").ejChart({
 Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.maximumLabelWidth type {int}
+* ej.datavisualization.Chart.maximumLabelWidth type {int}
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12917,7 +12316,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorGridLines<span class="type-signature type object">object</span>
+### primaryYAxis.minorGridLines `object`
 {:#members:primaryyaxis-minorgridlines}
 
 
@@ -12930,7 +12329,7 @@ Options for customizing the minor grid lines.
 
 
 
-### primaryYAxis.minorGridLines.dashArray<span class="type-signature type string">string</span>
+### primaryYAxis.minorGridLines.dashArray `string`
 {:#members:primaryyaxis-minorgridlines-dasharray}
 
 
@@ -12939,18 +12338,16 @@ Options for customizing the minor grid lines.
 Patterns of dashes and gaps used to stroke the minor grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -12966,7 +12363,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.minorGridLines.visible `boolean`
 {:#members:primaryyaxis-minorgridlines-visible}
 
 
@@ -12975,18 +12372,16 @@ $("#container").ejChart({
 Show/hides the minor grid lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13002,7 +12397,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorGridLines.width<span class="type-signature type number">number</span>
+### primaryYAxis.minorGridLines.width `number`
 {:#members:primaryyaxis-minorgridlines-width}
 
 
@@ -13011,18 +12406,16 @@ $("#container").ejChart({
 Width of the minorGridLines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13038,7 +12431,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3ijc021x)
 
 
-### primaryYAxis.minorTickLines<span class="type-signature type object">object</span>
+### primaryYAxis.minorTickLines `object`
 {:#members:primaryyaxis-minorticklines}
 
 
@@ -13051,7 +12444,7 @@ Options for customizing the minor tick lines.
 
 
 
-### primaryYAxis.minorTickLines.size<span class="type-signature type number">number</span>
+### primaryYAxis.minorTickLines.size `number`
 {:#members:primaryyaxis-minorticklines-size}
 
 
@@ -13060,18 +12453,16 @@ Options for customizing the minor tick lines.
 Length of the minor tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13088,7 +12479,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.minorTickLines.visible `boolean`
 {:#members:primaryyaxis-minorticklines-visible}
 
 
@@ -13097,18 +12488,16 @@ $("#container").ejChart({
 Show/hides the minor tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13124,7 +12513,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorTickLines.width<span class="type-signature type number">number</span>
+### primaryYAxis.minorTickLines.width `number`
 {:#members:primaryyaxis-minorticklines-width}
 
 
@@ -13133,18 +12522,16 @@ $("#container").ejChart({
 Width of the minor tick line
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13160,7 +12547,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.minorTicksPerInterval<span class="type-signature type number">number</span>
+### primaryYAxis.minorTicksPerInterval `number`
 {:#members:primaryyaxis-minorticksperinterval}
 
 
@@ -13169,18 +12556,16 @@ $("#container").ejChart({
 Specifies the number of minor ticks per interval.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13196,7 +12581,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tbbhdw21)
 
 
-### primaryYAxis.name<span class="type-signature type string">string</span>
+### primaryYAxis.name `string`
 {:#members:primaryyaxis-name}
 
 
@@ -13205,18 +12590,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tbbhdw21)
 Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13232,7 +12615,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.opposedPosition<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.opposedPosition `boolean`
 {:#members:primaryyaxis-opposedposition}
 
 
@@ -13241,18 +12624,16 @@ $("#container").ejChart({
 Specifies whether to render the axis at the opposite side of its default position.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13267,7 +12648,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.plotOffset<span class="type-signature type number">number</span>
+### primaryYAxis.plotOffset `number`
 {:#members:primaryyaxis-plotoffset}
 
 
@@ -13276,18 +12657,16 @@ $("#container").ejChart({
 Specifies the padding for the plot area.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-10
+* 10
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13303,7 +12682,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
 
 
-### primaryYAxis.rangePadding<span class="type-signature type enum">enum</span>
+### primaryYAxis.rangePadding `enum`
 {:#members:primaryyaxis-rangepadding}
 
 
@@ -13312,19 +12691,17 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
 Specifies the padding for the axis range.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
 
-ej.datavisualization.Chart.RangePadding.None. See <a href="global.html#members:rangepadding">RangePadding</a>
+* ej.datavisualization.Chart.RangePadding.None. See <a href="global.html#members:rangepadding">RangePadding</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13340,7 +12717,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.roundingPlaces<span class="type-signature type number">number</span>
+### primaryYAxis.roundingPlaces `number`
 {:#members:primaryyaxis-roundingplaces}
 
 
@@ -13349,18 +12726,16 @@ $("#container").ejChart({
 Rounds the number to the given number of decimals.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13376,7 +12751,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ad225rnj)
 
 
-### primaryYAxis.rowIndex<span class="type-signature type number">number</span>
+### primaryYAxis.rowIndex `number`
 {:#members:primaryyaxis-rowindex}
 
 
@@ -13385,18 +12760,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ad225rnj)
 Specifies the index of the row to which the axis is associated, when the chart area is divided into multiple plot areas by using rowDefinitions.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13411,7 +12784,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.rowSpan<span class="type-signature type number">number</span>
+### primaryYAxis.rowSpan `number`
 {:#members:primaryyaxis-rowspan}
 
 
@@ -13420,18 +12793,16 @@ $("#container").ejChart({
 Specifies the number of row or plot areas an axis has to span vertically.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13447,7 +12818,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fitf4tn3)
 
 
-### primaryYAxis.stripLine<span class="type-signature type array">array</span>
+### primaryYAxis.stripLine `array`
 {:#members:primaryyaxis-stripline}
 
 
@@ -13456,20 +12827,19 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fitf4tn3)
 Options for customizing the strip lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-[ ]
-
-
-
+* [ ]
 
 
 
 
-### primaryYAxis.stripLine.borderColor<span class="type-signature type string">string</span>
+
+
+
+### primaryYAxis.stripLine.borderColor `string`
 {:#members:primaryyaxis-stripline-bordercolor}
 
 
@@ -13478,18 +12848,16 @@ Default value:
 Border color of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"gray"
+* "gray"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13505,7 +12873,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.color<span class="type-signature type string">string</span>
+### primaryYAxis.stripLine.color `string`
 {:#members:primaryyaxis-stripline-color}
 
 
@@ -13514,18 +12882,16 @@ $("#container").ejChart({
 Background color of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"gray"
+* "gray"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13541,7 +12907,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.end<span class="type-signature type number">number</span>
+### primaryYAxis.stripLine.end `number`
 {:#members:primaryyaxis-stripline-end}
 
 
@@ -13550,18 +12916,16 @@ $("#container").ejChart({
 End value of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13577,7 +12941,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.font<span class="type-signature type object">object</span>
+### primaryYAxis.stripLine.font `object`
 {:#members:primaryyaxis-stripline-font}
 
 
@@ -13590,7 +12954,7 @@ Options for customizing the font of the text.
 
 
 
-### primaryYAxis.stripLine.font.color<span class="type-signature type string">string</span>
+### primaryYAxis.stripLine.font.color `string`
 {:#members:primaryyaxis-stripline-font-color}
 
 
@@ -13599,18 +12963,16 @@ Options for customizing the font of the text.
 Font color of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"black"
+* "black"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13626,7 +12988,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.font.fontFamily<span class="type-signature type enum">enum</span>
+### primaryYAxis.stripLine.font.fontFamily `enum`
 {:#members:primaryyaxis-stripline-font-fontfamily}
 
 
@@ -13635,18 +12997,16 @@ $("#container").ejChart({
 Font family of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"middlecenter"
+* "middlecenter"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13662,7 +13022,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryYAxis.stripLine.font.fontStyle `enum`
 {:#members:primaryyaxis-stripline-font-fontstyle}
 
 
@@ -13671,18 +13031,16 @@ $("#container").ejChart({
 Font style of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Normal"
+* "Normal"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13698,7 +13056,7 @@ primaryYAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}
 
 
 
-### primaryYAxis.stripLine.font.fontWeight<span class="type-signature type string">string</span>
+### primaryYAxis.stripLine.font.fontWeight `string`
 {:#members:primaryyaxis-stripline-font-fontweight}
 
 
@@ -13707,18 +13065,16 @@ primaryYAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}
 Font weight of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular"
+* "regular"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13734,7 +13090,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.font.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.stripLine.font.opacity `number`
 {:#members:primaryyaxis-stripline-font-opacity}
 
 
@@ -13743,18 +13099,16 @@ $("#container").ejChart({
 Opacity of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13770,7 +13124,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.font.size<span class="type-signature type string">string</span>
+### primaryYAxis.stripLine.font.size `string`
 {:#members:primaryyaxis-stripline-font-size}
 
 
@@ -13779,18 +13133,16 @@ $("#container").ejChart({
 Font size of the strip line text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"12px"
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13806,7 +13158,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.start<span class="type-signature type number">number</span>
+### primaryYAxis.stripLine.start `number`
 {:#members:primaryyaxis-stripline-start}
 
 
@@ -13815,18 +13167,16 @@ $("#container").ejChart({
 Start value of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13842,7 +13192,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.startFromAxis<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.stripLine.startFromAxis `boolean`
 {:#members:primaryyaxis-stripline-startfromaxis}
 
 
@@ -13851,18 +13201,16 @@ $("#container").ejChart({
 Indicates whether to render the strip line from the minimum/start value of the axis. This property won’t work when start property is set.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13878,7 +13226,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.text<span class="type-signature type string">string</span>
+### primaryYAxis.stripLine.text `string`
 {:#members:primaryyaxis-stripline-text}
 
 
@@ -13887,18 +13235,16 @@ $("#container").ejChart({
 Specifies text to be displayed inside the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"stripLine"
+* "stripLine"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13914,7 +13260,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.textAlignment<span class="type-signature type enum">enum</span>
+### primaryYAxis.stripLine.textAlignment `enum`
 {:#members:primaryyaxis-stripline-textalignment}
 
 
@@ -13923,19 +13269,17 @@ $("#container").ejChart({
 Specifies the alignment of the text inside the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-"middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13951,7 +13295,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.stripLine.visible `boolean`
 {:#members:primaryyaxis-stripline-visible}
 
 
@@ -13960,18 +13304,16 @@ $("#container").ejChart({
 Show/hides the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -13987,7 +13329,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.width<span class="type-signature type number">number</span>
+### primaryYAxis.stripLine.width `number`
 {:#members:primaryyaxis-stripline-width}
 
 
@@ -13996,18 +13338,16 @@ $("#container").ejChart({
 Width of the strip line.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14022,7 +13362,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.stripLine.zIndex<span class="type-signature type enum">enum</span>
+### primaryYAxis.stripLine.zIndex `enum`
 {:#members:primaryyaxis-stripline-zindex}
 
 
@@ -14031,18 +13371,16 @@ $("#container").ejChart({
 Specifies the order in which strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered below the series and when it is “over”, it is rendered above the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-"over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="global.html#members:zindex">ZIndex</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14058,7 +13396,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
 
 
-### primaryYAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
+### primaryYAxis.tickLinesPosition `enum`
 {:#members:primaryyaxis-ticklinesposition}
 
 
@@ -14067,19 +13405,17 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
 Specifies the position of the axis tick lines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-"outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14095,7 +13431,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title<span class="type-signature type object">object</span>
+### primaryYAxis.title `object`
 {:#members:primaryyaxis-title}
 
 
@@ -14108,7 +13444,7 @@ Options for customizing the axis title.
 
 
 
-### primaryYAxis.title.enableTrim<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.title.enableTrim `boolean`
 {:#members:primaryyaxis-title-enabletrim}
 
 
@@ -14117,18 +13453,16 @@ Options for customizing the axis title.
 Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.enableTrim
+* ej.datavisualization.Chart.enableTrim
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14144,7 +13478,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.font<span class="type-signature type object">object</span>
+### primaryYAxis.title.font `object`
 {:#members:primaryyaxis-title-font}
 
 
@@ -14157,7 +13491,7 @@ Options for customizing the title font.
 
 
 
-### primaryYAxis.title.font.fontFamily<span class="type-signature type string">string</span>
+### primaryYAxis.title.font.fontFamily `string`
 {:#members:primaryyaxis-title-font-fontfamily}
 
 
@@ -14166,18 +13500,16 @@ Options for customizing the title font.
 Font family of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14193,7 +13525,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.font.fontStyle<span class="type-signature type enum">enum</span>
+### primaryYAxis.title.font.fontStyle `enum`
 {:#members:primaryyaxis-title-font-fontstyle}
 
 
@@ -14202,18 +13534,16 @@ $("#container").ejChart({
 Font style of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.FontStyle.Normal
+* ej.datavisualization.Chart.FontStyle.Normal
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14229,7 +13559,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.font.fontWeight<span class="type-signature type enum">enum</span>
+### primaryYAxis.title.font.fontWeight `enum`
 {:#members:primaryyaxis-title-font-fontweight}
 
 
@@ -14238,18 +13568,16 @@ $("#container").ejChart({
 Font weight of the title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14265,7 +13593,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.font.opacity<span class="type-signature type number">number</span>
+### primaryYAxis.title.font.opacity `number`
 {:#members:primaryyaxis-title-font-opacity}
 
 
@@ -14274,18 +13602,16 @@ $("#container").ejChart({
 Opacity of the axis title text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14301,7 +13627,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.font.size<span class="type-signature type string">string</span>
+### primaryYAxis.title.font.size `string`
 {:#members:primaryyaxis-title-font-size}
 
 
@@ -14310,18 +13636,16 @@ $("#container").ejChart({
 Font size of the axis title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"16px"
+* "16px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14337,7 +13661,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.maximumTitleWidth<span class="type-signature type number">number</span>
+### primaryYAxis.title.maximumTitleWidth `number`
 {:#members:primaryyaxis-title-maximumtitlewidth}
 
 
@@ -14346,18 +13670,16 @@ $("#container").ejChart({
 Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-ej.datavisualization.Chart.maximumTitleWidth.null
+* ej.datavisualization.Chart.maximumTitleWidth.null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14373,7 +13695,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.text<span class="type-signature type string">string</span>
+### primaryYAxis.title.text `string`
 {:#members:primaryyaxis-title-text}
 
 
@@ -14382,18 +13704,16 @@ $("#container").ejChart({
 Title for the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14409,7 +13729,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.title.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.title.visible `boolean`
 {:#members:primaryyaxis-title-visible}
 
 
@@ -14418,18 +13738,16 @@ $("#container").ejChart({
 Controls the visibility of axis title.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14445,7 +13763,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.valueType<span class="type-signature type enum">enum</span>
+### primaryYAxis.valueType `enum`
 {:#members:primaryyaxis-valuetype}
 
 
@@ -14454,19 +13772,17 @@ $("#container").ejChart({
 Specifies the type of data the axis is handling.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
 
-null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="global.html#members:valuetype">ValueType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14482,7 +13798,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.visible<span class="type-signature type boolean">boolean</span>
+### primaryYAxis.visible `boolean`
 {:#members:primaryyaxis-visible}
 
 
@@ -14491,18 +13807,16 @@ $("#container").ejChart({
 Show/hides the axis.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14518,7 +13832,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.zoomFactor<span class="type-signature type number">number</span>
+### primaryYAxis.zoomFactor `number`
 {:#members:primaryyaxis-zoomfactor}
 
 
@@ -14527,18 +13841,16 @@ $("#container").ejChart({
 The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14554,7 +13866,7 @@ $("#container").ejChart({
 
 
 
-### primaryYAxis.zoomPosition<span class="type-signature type number">number</span>
+### primaryYAxis.zoomPosition `number`
 {:#members:primaryyaxis-zoomposition}
 
 
@@ -14563,18 +13875,16 @@ $("#container").ejChart({
 Position of the zoomed axis. Value ranges from 0 to 1
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14599,18 +13909,16 @@ $("#container").ejChart({
 Rotation angle of the 3D view. This property is applicable only when 3D view is enabled.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14629,7 +13937,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pf23aw13)
 
 
 
-### rowDefinitions<span class="type-signature type array">array</span>
+### rowDefinitions `array`
 {:#members:rowdefinitions}
 
 
@@ -14643,7 +13951,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 
 
 
-### rowDefinitions.unit<span class="type-signature type enum">enum</span>
+### rowDefinitions.unit `enum`
 {:#members:rowDefinitions.unit}
 
 
@@ -14652,15 +13960,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 Specifies the unit to measure the height of the row in plotting area.
 
 
-Default value:
-{:.param}
-'pixel'. See <a href="global.html#members:unit">Unit</a>
+#### Default Value
+
+* 'pixel'. See <a href="global.html#members:unit">Unit</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14676,7 +13983,7 @@ $("#container").ejChart({
 
 
 
-### rowDefinitions.rowHeight<span class="type-signature type number">number</span>
+### rowDefinitions.rowHeight `number`
 {:#members:rowDefinitions.rowHeight}
 
 
@@ -14685,15 +13992,14 @@ $("#container").ejChart({
 Height of the row in plotting area. Height is measured in either pixel or percentage based on the value of unit property.
 
 
-Default value:
-{:.param}
-50
+#### Default Value
+
+* 50
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14709,7 +14015,7 @@ $("#container").ejChart({
 
 
 
-### rowDefinitions.lineColor<span class="type-signature type string">string</span>
+### rowDefinitions.lineColor `string`
 {:#members:rowDefinitions.lineColor}
 
 
@@ -14718,15 +14024,14 @@ $("#container").ejChart({
 Color of the line that indicates the starting point of the row in plotting area.
 
 
-Default value:
-{:.param}
-"transparent"
+#### Default Value
+
+* "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14742,7 +14047,7 @@ $("#container").ejChart({
 
 
 
-### rowDefinitions.lineWidth<span class="type-signature type number">number</span>
+### rowDefinitions.lineWidth `number`
 {:#members:rowDefinitions.lineWidth}
 
 
@@ -14751,15 +14056,14 @@ $("#container").ejChart({
 Width of the line that indicates the starting point of the row in plot area.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14775,7 +14079,7 @@ $("#container").ejChart({
 
 
 
-### series<span class="type-signature type array">array</span>
+### series `array`
 {:#members:series}
 
 
@@ -14788,7 +14092,7 @@ Specifies the properties used for customizing the series.
 
 
 
-### series.bearFillColor<span class="type-signature type string">string</span>
+### series.bearFillColor `string`
 {:#members:series-bearfillcolor}
 
 
@@ -14797,18 +14101,16 @@ Specifies the properties used for customizing the series.
 Color of the point, where the close is up in financial chart.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14825,7 +14127,7 @@ series : [{bearFillColor: "blue" }]
 
 
 
-### series.border<span class="type-signature type object">object</span>
+### series.border `object`
 {:#members:series-border}
 
 
@@ -14838,7 +14140,7 @@ Options for customizing the border of the series.
 
 
 
-### series.border.color<span class="type-signature type string">string</span>
+### series.border.color `string`
 {:#members:series-border-color}
 
 
@@ -14847,18 +14149,16 @@ Options for customizing the border of the series.
 Border color of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "transparent"
+*  "transparent"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14872,7 +14172,7 @@ series :[{border :{ color : "green" } }]
 
 
 
-### series.border.width<span class="type-signature type number">number</span>
+### series.border.width `number`
 {:#members:series-border-width}
 
 
@@ -14881,18 +14181,16 @@ series :[{border :{ color : "green" } }]
 Border width of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14907,7 +14205,7 @@ series :[{border :{ width : 2 } }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
 
 
-### series.bullFillColor<span class="type-signature type string">string</span>
+### series.bullFillColor `string`
 {:#members:series-bullfillcolor}
 
 
@@ -14916,17 +14214,15 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
 Color of the point, where the close is down in financial chart.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14942,7 +14238,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 
 
-### series.dashArray<span class="type-signature type string">string</span>
+### series.dashArray `string`
 {:#members:series-dasharray}
 
 
@@ -14951,18 +14247,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 Pattern of dashes and gaps used to stroke the line type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -14978,7 +14272,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/322c4ex3)
 
 
 
-### series.dataSource<span class="type-signature type object">object</span>
+### series.dataSource `object`
 {:#members:series-datasource}
 
 
@@ -14987,18 +14281,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/322c4ex3)
 Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15013,7 +14305,7 @@ series : [{dataSource: data }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 
 
-### series.doughnutCoefficient<span class="type-signature type number">number</span>
+### series.doughnutCoefficient `number`
 {:#members:series-doughnutcoefficient}
 
 
@@ -15022,18 +14314,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.4
+* 0.4
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15048,7 +14338,7 @@ series : [{doughnutCoefficient : 0.5 }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1xjrwrxl)
 
 
-### series.doughnutSize<span class="type-signature type number">number</span>
+### series.doughnutSize `number`
 {:#members:series-doughnutsize}
 
 
@@ -15057,18 +14347,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1xjrwrxl)
 Controls the size of the doughnut series. Value ranges from 0 to 1.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0.8
+*  0.8
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15082,7 +14370,7 @@ series : [{doughnutSize : 0.6 }]
 
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
 
-### series.drawType<span class="type-signature type boolean">boolean</span>
+### series.drawType `boolean`
 {:#members:series-drawtype}
 
 
@@ -15091,18 +14379,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
 Type of series to be drawn in radar or polar series. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="global.html#members:drawtype">DrawType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15116,7 +14402,7 @@ series : [{drawType : "column" }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/pg04h4gh)
 
 
-### series.enableAnimation<span class="type-signature type boolean">boolean</span>
+### series.enableAnimation `boolean`
 {:#members:series-enableanimation}
 
 
@@ -15125,18 +14411,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/pg04h4gh)
 Enable/disable the animation of series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15151,7 +14435,7 @@ series : [{enableAnimation : true }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/w4mkzixd)
 
 
-### series.enableSmartLabels<span class="type-signature type number">number</span>
+### series.enableSmartLabels `number`
 {:#members:series-enablesmartlabels}
 
 
@@ -15160,18 +14444,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/w4mkzixd)
 To avoid overlapping of data labels smartly. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15186,7 +14468,7 @@ series : [{enableSmartLabels : false }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/40docuib)
 
 
-### series.endAngle<span class="type-signature type number">number</span>
+### series.endAngle `number`
 {:#members:series-endangle}
 
 
@@ -15195,18 +14477,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/40docuib)
 End angle of pie/doughnut series. For a complete circle, it has to be 360, by default.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15221,7 +14501,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/fqpf3ort)
 
 
 
-### series.explode<span class="type-signature type boolean">boolean</span>
+### series.explode `boolean`
 {:#members:series-explode}
 
 
@@ -15230,18 +14510,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/fqpf3ort)
 Explodes the pie/doughnut slices on mouse move.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15256,7 +14534,7 @@ series : [{explode: true }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/prpei1ld)
 
 
-### series.explodeAll<span class="type-signature type boolean">boolean</span>
+### series.explodeAll `boolean`
 {:#members:series-explodeall}
 
 
@@ -15265,18 +14543,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/prpei1ld)
 Explodes all the slice of pie/doughnut on render.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15291,7 +14567,7 @@ series : [{explodeAll: true }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/n3if1tnn)
 
 
-### series.explodeIndex<span class="type-signature type number">number</span>
+### series.explodeIndex `number`
 {:#members:series-explodeindex}
 
 
@@ -15300,18 +14576,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/n3if1tnn)
 Index of the point to be exploded from pie/doughnut/pyramid/funnel.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15327,7 +14601,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/taccivfh)
 
 
 
-### series.explodeOffset<span class="type-signature type number">number</span>
+### series.explodeOffset `number`
 {:#members:series-explodeoffset}
 
 
@@ -15336,18 +14610,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/taccivfh)
 Specifies the distance of the slice from the center, when it is exploded.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 25
+ * 25
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15363,7 +14635,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/2j040lr0)
 
 
 
-### series.fill<span class="type-signature type string">string</span>
+### series.fill `string`
 {:#members:series-fill}
 
 
@@ -15372,18 +14644,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/2j040lr0)
 Fill color of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15398,7 +14668,7 @@ series :[{fill : "green"}]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/sit3agft)
 
 
-### series.font<span class="type-signature type object">object</span>
+### series.font `object`
 {:#members:series-font}
 
 
@@ -15411,7 +14681,7 @@ Options for customizing the series font.
 
 
 
-### series.font.color<span class="type-signature type string">string</span>
+### series.font.color `string`
 {:#members:series-font-color}
 
 
@@ -15420,18 +14690,16 @@ Options for customizing the series font.
 Font color of the series text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#707070"
+* "#707070"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15445,7 +14713,7 @@ series :[{font :{color : "green"}}]
 
 
 
-### series.font.fontFamily<span class="type-signature type string">string</span>
+### series.font.fontFamily `string`
 {:#members:series-font-fontfamily}
 
 
@@ -15454,18 +14722,16 @@ series :[{font :{color : "green"}}]
 Font Family of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15479,7 +14745,7 @@ series :[{ font : { fontFamily : "Algerian"}}]
 
 
 
-### series.font.fontStyle<span class="type-signature type enum">enum</span>
+### series.font.fontStyle `enum`
 {:#members:series-font-fontstyle}
 
 
@@ -15488,18 +14754,16 @@ series :[{ font : { fontFamily : "Algerian"}}]
 Font Style of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Normal"
+* "Normal"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15513,7 +14777,7 @@ series : [{font :{fontStyle : "italic"}} ]
 
 
 
-### series.font.fontWeight<span class="type-signature type enum">enum</span>
+### series.font.fontWeight `enum`
 {:#members:series-font-fontweight}
 
 
@@ -15522,18 +14786,16 @@ series : [{font :{fontStyle : "italic"}} ]
 Font weight of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Regular"
+* "Regular"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15547,7 +14809,7 @@ series :[{font :{fontWeight : "lighter"}}]
 
 
 
-### series.font.opacity<span class="type-signature type number">number</span>
+### series.font.opacity `number`
 {:#members:series-font-opacity}
 
 
@@ -15556,18 +14818,16 @@ series :[{font :{fontWeight : "lighter"}}]
 Opacity of series text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15581,7 +14841,7 @@ series :[{font :{opacity : 0.5}}]
 
 
 
-### series.font.size<span class="type-signature type string">string</span>
+### series.font.size `string`
 {:#members:series-font-size}
 
 
@@ -15590,18 +14850,16 @@ series :[{font :{opacity : 0.5}}]
 Size of the series text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"12px"
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15615,7 +14873,7 @@ series :[{font :{size : "14px"}}]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/g0jeybnt)
 
 
-### series.funnelHeight<span class="type-signature type string">string</span>
+### series.funnelHeight `string`
 {:#members:series-funnelheight}
 
 
@@ -15624,18 +14882,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/g0jeybnt)
 Specifies the height of the funnel in funnel series. Values can be in both pixel and percentage.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"32.7%"
+* "32.7%"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15650,7 +14906,7 @@ series : [{funnelHeight : '40%' }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/5gqzqndn)
 
 
-### series.funnelWidth<span class="type-signature type string">string</span>
+### series.funnelWidth `string`
 {:#members:series-funnelwidth}
 
 
@@ -15659,18 +14915,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/5gqzqndn)
 Specifies the width of the funnel in funnel series. Values can be in both pixel and percentage.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"11.6%"
+* "11.6%"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15685,7 +14939,7 @@ series : [{funnelWidth : '40%' }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/u0f5hsbw)
 
 
-### series.gapRatio<span class="type-signature type number">number</span>
+### series.gapRatio `number`
 {:#members:series-gapratio}
 
 
@@ -15694,18 +14948,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/u0f5hsbw)
 Gap between the slices of pyramid/funnel series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0
+ * 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15719,7 +14971,7 @@ series : [{gapRatio : 0.2 }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/cjocyfce)
 
 
-### series.isClosed<span class="type-signature type boolean">boolean</span>
+### series.isClosed `boolean`
 {:#members:series-isclosed}
 
 
@@ -15728,18 +14980,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/cjocyfce)
 Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15753,7 +15003,7 @@ series : [{isClosed : false }]
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/ktrsbcrh)
 
 
-### series.isStacking<span class="type-signature type boolean">boolean</span>
+### series.isStacking `boolean`
 {:#members:series-isstacking}
 
 
@@ -15762,18 +15012,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/ktrsbcrh)
 Specifies whether to stack the column series in polar/radar charts.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- true
+ * true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15790,7 +15038,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/mj2qdclr)
 
 
 
-### series.isTransposed<span class="type-signature type boolean">boolean</span>
+### series.isTransposed `boolean`
 {:#members:series-isTransposed}
 
 
@@ -15799,18 +15047,16 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/mj2qdclr)
 Renders the chart vertically. This is applicable only for cartesian type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15827,7 +15073,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
 
 
 
-### series.labelPosition<span class="type-signature type enum">enum</span>
+### series.labelPosition `enum`
 {:#members:series-labelposition}
 
 
@@ -15837,17 +15083,15 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15863,7 +15107,7 @@ series : [{labelPosition : "outside" }]
 
 
 
-### series.lineCap<span class="type-signature type enum">enum</span>
+### series.lineCap `enum`
 {:#members:series-linecap}
 
 
@@ -15872,18 +15116,16 @@ series : [{labelPosition : "outside" }]
 Specifies the line cap of the series. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Butt". See <a href="global.html#members:linecap">LineCap</a>
+* "Butt". See <a href="global.html#members:linecap">LineCap</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15897,7 +15139,7 @@ series :[{lineCap : "butt"}]
 
 
 
-### series.lineJoin<span class="type-signature type enum">enum</span>
+### series.lineJoin `enum`
 {:#members:series-linejoin}
 
 
@@ -15906,16 +15148,14 @@ series :[{lineCap : "butt"}]
 Specifies the type of shape to be used where two lines meet.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
-"Round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "Round". See <a href="global.html#members:linejoin">LineJoin</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15929,7 +15169,7 @@ series :[{lineJoin : "round"}]
 
 
 
-### series.marker<span class="type-signature type object">object</span>
+### series.marker `object`
 {:#members:series-marker}
 
 
@@ -15942,7 +15182,7 @@ Options for displaying and customizing marker for individual point in a series. 
 
 
 
-### series.marker.border<span class="type-signature type object">object</span>
+### series.marker.border `object`
 {:#members:series-marker-border}
 
 
@@ -15955,7 +15195,7 @@ Options for customizing the border of the marker shape.
 
 
 
-### series.marker.border.color<span class="type-signature type string">string</span>
+### series.marker.border.color `string`
 {:#members:series-marker-border-color}
 
 
@@ -15964,18 +15204,16 @@ Options for customizing the border of the marker shape.
 Border color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"white"
+* "white"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -15989,7 +15227,7 @@ series :[{marker:{border:{color : "green"}}}]
 
 
 
-### series.marker.border.width<span class="type-signature type number">number</span>
+### series.marker.border.width `number`
 {:#members:series-marker-border-width}
 
 
@@ -15998,18 +15236,16 @@ series :[{marker:{border:{color : "green"}}}]
 Border width of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16025,7 +15261,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/po32cgmg)
 
 
 
-### series.marker.dataLabel<span class="type-signature type object">object</span>
+### series.marker.dataLabel `object`
 {:#members:series-marker-datalabel}
 
 
@@ -16038,7 +15274,7 @@ Options for displaying and customizing data labels.
 
 
 
-### series.marker.dataLabel.angle<span class="type-signature type number">number</span>
+### series.marker.dataLabel.angle `number`
 {:#members:series-marker-datalabel-angle}
 
 
@@ -16047,18 +15283,16 @@ Options for displaying and customizing data labels.
 Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16073,7 +15307,7 @@ series :[{marker :{dataLabel :{angle : 90}}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
 
 
-### series.marker.dataLabel.border<span class="type-signature type object">object</span>
+### series.marker.dataLabel.border `object`
 {:#members:series-marker-datalabel-border}
 
 
@@ -16086,7 +15320,7 @@ Options for customizing the border of the data label.
 
 
 
-### series.marker.dataLabel.border.color<span class="type-signature type string">string</span>
+### series.marker.dataLabel.border.color `string`
 {:#members:series-marker-datalabel-border-color}
 
 
@@ -16094,18 +15328,16 @@ Options for customizing the border of the data label.
 
 Border color of the data label. 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16119,7 +15351,7 @@ series :[{marker :{dataLabel :{border : {color : "green"}}}}]
 
 
 
-### series.marker.dataLabel.border.width<span class="type-signature type number">number</span>
+### series.marker.dataLabel.border.width `number`
 {:#members:series-marker-datalabel-border-width}
 
 
@@ -16128,18 +15360,16 @@ series :[{marker :{dataLabel :{border : {color : "green"}}}}]
 Border width of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.1
+* 0.1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16153,7 +15383,7 @@ series :[{marker :{dataLabel :{border :{ width :2 }}}}]
 
 
 
-### series.marker.dataLabel.connectorLine<span class="type-signature type object">object</span>
+### series.marker.dataLabel.connectorLine `object`
 {:#members:series-marker-datalabel-connectorline}
 
 
@@ -16166,7 +15396,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-### series.marker.dataLabel.connectorLine.type<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.connectorLine.type `enum`
 {:#members:series-marker-datalabel-connectorline-type}
 
 
@@ -16175,17 +15405,15 @@ Options for displaying and customizing the line that connects point and data lab
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16199,7 +15427,7 @@ series :[{marker :{dataLabel :{connectorLine :{ type : "bezier" }}}}]
 
 
 
-### series.marker.dataLabel.connectorLine.width<span class="type-signature type number">number</span>
+### series.marker.dataLabel.connectorLine.width `number`
 {:#members:series-marker-datalabel-connectorline-width}
 
 
@@ -16208,18 +15436,16 @@ series :[{marker :{dataLabel :{connectorLine :{ type : "bezier" }}}}]
 Width of the connector. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0.5
+ * 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16235,7 +15461,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 
 
 
-### series.marker.dataLabel.fill<span class="type-signature type string">string</span>
+### series.marker.dataLabel.fill `string`
 {:#members:series-marker-datalabel-fill}
 
 
@@ -16244,18 +15470,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 Background color of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16269,7 +15493,7 @@ series :[{marker :{dataLabel :{fill : "green"}}}]
 
 
 
-### series.marker.dataLabel.font<span class="type-signature type object">object</span>
+### series.marker.dataLabel.font `object`
 {:#members:series-marker-datalabel-font}
 
 
@@ -16282,7 +15506,7 @@ Options for customizing the data label font.
 
 
 
-### series.marker.dataLabel.font.fontFamily<span class="type-signature type string">string</span>
+### series.marker.dataLabel.font.fontFamily `string`
 {:#members:series-marker-datalabel-font-fontfamily}
 
 
@@ -16291,18 +15515,16 @@ Options for customizing the data label font.
 Font family of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16316,7 +15538,7 @@ series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]
 
 
 
-### series.marker.dataLabel.font.fontStyle<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.font.fontStyle `enum`
 {:#members:series-marker-datalabel-font-fontstyle}
 
 
@@ -16325,18 +15547,16 @@ series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]
 Font style of the data label.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16350,7 +15570,7 @@ series :[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]
 
 
 
-### series.marker.dataLabel.font.fontWeight<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.font.fontWeight `enum`
 {:#members:series-marker-datalabel-font-fontweight}
 
 
@@ -16359,16 +15579,14 @@ series :[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]
 Font weight of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16382,7 +15600,7 @@ series :[{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}]
 
 
 
-### series.marker.dataLabel.font.opacity<span class="type-signature type number">number</span>
+### series.marker.dataLabel.font.opacity `number`
 {:#members:series-marker-datalabel-font-opacity}
 
 
@@ -16391,18 +15609,16 @@ series :[{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}]
 Opacity of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16416,7 +15632,7 @@ series :[{marker :{dataLabel :{font :{ opacity : 0.5 }}}}]
 
 
 
-### series.marker.dataLabel.font.size<span class="type-signature type string">string</span>
+### series.marker.dataLabel.font.size `string`
 {:#members:series-marker-datalabel-font-size}
 
 
@@ -16425,18 +15641,16 @@ series :[{marker :{dataLabel :{font :{ opacity : 0.5 }}}}]
 Font size of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "12px"
+ * "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16453,7 +15667,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 
 
 
-### series.marker.dataLabel.horizontalTextAlignment<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.horizontalTextAlignment `enum`
 {:#members:series-marker-datalabel-horizontaltextalignment}
 
 
@@ -16462,18 +15676,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 Horizontal alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"center"
+* "center"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16509,18 +15721,16 @@ Margin of the text to its background shape. The size of the background shape inc
 Bottom margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16534,7 +15744,7 @@ series :[{marker :{dataLabel :{margin :{ bottom :10 }}}}]
 
 
 
-### series.marker.dataLabel.margin.left<span class="type-signature type number">number</span>
+### series.marker.dataLabel.margin.left `number`
 {:#members:series-marker-datalabel-margin-left}
 
 
@@ -16543,18 +15753,16 @@ series :[{marker :{dataLabel :{margin :{ bottom :10 }}}}]
 Left margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 5
+ * 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16568,7 +15776,7 @@ series :[{marker :{dataLabel :{margin :{ left : 10}}}}]
 
 
 
-### series.marker.dataLabel.margin.right<span class="type-signature type number">number</span>
+### series.marker.dataLabel.margin.right `number`
 {:#members:series-marker-datalabel-margin-right}
 
 
@@ -16577,18 +15785,16 @@ series :[{marker :{dataLabel :{margin :{ left : 10}}}}]
 Right margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16602,7 +15808,7 @@ series :[{marker :{dataLabel :{margin :{ right :10 }}}}]
 
 
 
-### series.marker.dataLabel.margin.top<span class="type-signature type number">number</span>
+### series.marker.dataLabel.margin.top `number`
 {:#members:series-marker-datalabel-margin-top}
 
 
@@ -16611,18 +15817,16 @@ series :[{marker :{dataLabel :{margin :{ right :10 }}}}]
 Top margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16638,7 +15842,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3yoplr42)
 
 
 
-### series.marker.dataLabel.opacity<span class="type-signature type number">number</span>
+### series.marker.dataLabel.opacity `number`
 {:#members:series-marker-datalabel-opacity}
 
 
@@ -16647,18 +15851,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3yoplr42)
 Opacity of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16672,7 +15874,7 @@ series :[{marker :{dataLabel :{opacity : 0.5}}}]
 
 
 
-### series.marker.dataLabel.shape<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.shape `enum`
 {:#members:series-marker-datalabel-shape}
 
 
@@ -16681,16 +15883,14 @@ series :[{marker :{dataLabel :{opacity : 0.5}}}]
 Background shape of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16704,7 +15904,7 @@ series :[{marker :{dataLabel :{shape : "circle"}}}]
 
 
 
-### series.marker.dataLabel.text<span class="type-signature type string">string</span>
+### series.marker.dataLabel.text `string`
 {:#members:series-marker-datalabel-text}
 
 
@@ -16713,16 +15913,14 @@ series :[{marker :{dataLabel :{shape : "circle"}}}]
 Name of a field in data source where datalabel text is displayed.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16736,7 +15934,7 @@ series :[{marker :{dataLabel :{text : "TextFieldName"}}}]
 
 
 
-### series.marker.dataLabel.textPosition<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.textPosition `enum`
 {:#members:series-marker-datalabel-textposition}
 
 
@@ -16745,16 +15943,14 @@ series :[{marker :{dataLabel :{text : "TextFieldName"}}}]
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:textposition">TextPosition</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16768,7 +15964,7 @@ series :[{marker :{dataLabel :{textPosition : "bottom"}}}]
 
 
 
-### series.marker.dataLabel.verticalTextAlignment<span class="type-signature type enum">enum</span>
+### series.marker.dataLabel.verticalTextAlignment `enum`
 {:#members:series-marker-datalabel-verticaltextalignment}
 
 
@@ -16777,18 +15973,16 @@ series :[{marker :{dataLabel :{textPosition : "bottom"}}}]
 Vertical alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-'center'
+* 'center'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16803,7 +15997,7 @@ series :[{marker :{dataLabel :{verticalTextAlignment : "far"}}}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/emylj2pu)
 
 
-### series.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
+### series.marker.dataLabel.visible `boolean`
 {:#members:series-marker-datalabel-visible}
 
 
@@ -16812,18 +16006,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/emylj2pu)
 Controls the visibility of the data labels. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16835,7 +16027,7 @@ series :[{marker :{dataLabel :{visible : true}}}]
  {% endhighlight %}
 
 
-### series.marker.dataLabel.template<span class="type-signature type string">string</span>
+### series.marker.dataLabel.template `string`
 {:#members:series-marker-datalabel-template}
 
 
@@ -16844,18 +16036,16 @@ series :[{marker :{dataLabel :{visible : true}}}]
 Custom template to format the data label content. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16871,7 +16061,7 @@ series :[{marker :{dataLabel :{template : "item"}}}]
  
  
  
-### series.marker.dataLabel.offset<span class="type-signature type number">number</span>
+### series.marker.dataLabel.offset `number`
 {:#members:series-marker-datalabel-offset}
 
 
@@ -16880,18 +16070,16 @@ series :[{marker :{dataLabel :{template : "item"}}}]
 Moves the label vertically by some offset.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16904,7 +16092,7 @@ series :[{marker :{dataLabel :{offset : 10}}}]
 
 
 
-### series.marker.fill<span class="type-signature type string">string</span>
+### series.marker.fill `string`
 {:#members:series-marker-fill}
 
 
@@ -16913,18 +16101,16 @@ series :[{marker :{dataLabel :{offset : 10}}}]
 Color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16938,7 +16124,7 @@ series :[{marker : { fill : "green" } }]
 
 
 
-### series.marker.imageUrl<span class="type-signature type string">string</span>
+### series.marker.imageUrl `string`
 {:#members:series-marker-imageurl}
 
 
@@ -16947,18 +16133,16 @@ series :[{marker : { fill : "green" } }]
 The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -16972,7 +16156,7 @@ series :[{marker :{ imageUrl: "../images/sample.png"}}]
 
 
 
-### series.marker.opacity<span class="type-signature type number">number</span>
+### series.marker.opacity `number`
 {:#members:series-marker-opacity}
 
 
@@ -16981,18 +16165,16 @@ series :[{marker :{ imageUrl: "../images/sample.png"}}]
 Opacity of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 1
+ * 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17008,7 +16190,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1bavaoqq)
 
 
 
-### series.marker.shape<span class="type-signature type enum">enum</span>
+### series.marker.shape `enum`
 {:#members:series-marker-shape}
 
 
@@ -17017,16 +16199,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1bavaoqq)
 Specifies the shape of the marker.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:shape">Shape</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17041,7 +16221,7 @@ series :[{marker :{ shape: "rectangle"}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vd552nid)
 
 
-### series.marker.size<span class="type-signature type object">object</span>
+### series.marker.size `object`
 {:#members:series-marker-size}
 
 
@@ -17054,7 +16234,7 @@ Options for customizing the size of the marker shape.
 
 
 
-### series.marker.size.height<span class="type-signature type number">number</span>
+### series.marker.size.height `number`
 {:#members:series-marker-size-height}
 
 
@@ -17063,18 +16243,16 @@ Options for customizing the size of the marker shape.
 Height of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17088,7 +16266,7 @@ series :[{marker :{size :{height : 5}}}]
 
 
 
-### series.marker.size.width<span class="type-signature type number">number</span>
+### series.marker.size.width `number`
 {:#members:series-marker-size-width}
 
 
@@ -17097,18 +16275,16 @@ series :[{marker :{size :{height : 5}}}]
 Width of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17123,7 +16299,7 @@ series :[{marker :{ size :{ width : 2 } } }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53gkiuse)
 
 
-### series.marker.visible<span class="type-signature type boolean">boolean</span>
+### series.marker.visible `boolean`
 {:#members:series-marker-visible}
 
 
@@ -17132,18 +16308,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53gkiuse)
 Controls the visibility of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17157,7 +16331,7 @@ series :[{marker :{ visible : true}}]
 
 
 
-### series.opacity<span class="type-signature type number">number</span>
+### series.opacity `number`
 {:#members:series-opacity}
 
 
@@ -17166,18 +16340,16 @@ series :[{marker :{ visible : true}}]
 Opacity of the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17191,7 +16363,7 @@ series :[{opacity : 0.5}]
  
  
  
-### series.palette<span class="type-signature type string">string</span>
+### series.palette `string`
 {:#members:series-palette}
 
 
@@ -17200,18 +16372,16 @@ series :[{opacity : 0.5}]
 Name of a field in data source where fill color for all the data points is generated.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17225,7 +16395,7 @@ series :[{palette : "ColorFieldName"}]
 
 
 
-### series.pieCoefficient<span class="type-signature type number">number</span>
+### series.pieCoefficient `number`
 {:#members:series-piecoefficient}
 
 
@@ -17236,18 +16406,16 @@ Controls the size of pie series. Value ranges from 0 to 1.
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0.8
+ * 0.8
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17264,7 +16432,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
 
 
-### series.points<span class="type-signature type array">array</span>
+### series.points `array`
 {:#members:series-points}
 
 
@@ -17275,7 +16443,7 @@ Option to add data points; each point should have x and y property. Also, option
 
 
 
-### series.points.border<span class="type-signature type object">object</span>
+### series.points.border `object`
 {:#members:series-points-border}
 
 
@@ -17288,7 +16456,7 @@ Options for customizing the border of a point. This is applicable only for colum
 
 
 
-### series.points.border.color<span class="type-signature type string">string</span>
+### series.points.border.color `string`
 {:#members:series-points-border-color}
 
 
@@ -17297,18 +16465,16 @@ Options for customizing the border of a point. This is applicable only for colum
 Border color of the point. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17322,7 +16488,7 @@ series :[{ points:[{ border:{color : "green"} }] }]
 
 
 
-### series.points.border.width<span class="type-signature type number">number</span>
+### series.points.border.width `number`
 {:#members:series-points-border-width}
 
 
@@ -17331,18 +16497,16 @@ series :[{ points:[{ border:{color : "green"} }] }]
 Border width of the point. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17359,7 +16523,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### series.points.close<span class="type-signature type number">number</span>
+### series.points.close `number`
 {:#members:series-points-close}
 
 
@@ -17368,18 +16532,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 Close value of the point. Close value is applicable only for financial type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17400,18 +16562,16 @@ series :[{ points:[{ close : 50 }] }]
 Size of a bubble in the bubble series. This is applicable only for the bubble series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17425,7 +16585,7 @@ series :[{ points:[{ size : 5 }] }]
 
 
 
-### series.points.fill<span class="type-signature type string">string</span>
+### series.points.fill `string`
 {:#members:series-points-fill}
 
 
@@ -17434,18 +16594,16 @@ series :[{ points:[{ size : 5 }] }]
 Background color of the point. This is applicable only for column type series and accumulation type series. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17459,7 +16617,7 @@ series :[{ points:[{ fill : "green" }] }]
 
 
 
-### series.points.high<span class="type-signature type number">number</span>
+### series.points.high `number`
 {:#members:series-points-high}
 
 
@@ -17468,18 +16626,16 @@ series :[{ points:[{ fill : "green" }] }]
 High value of the point. High value is applicable only for financial type series, range area series and range column series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17493,7 +16649,7 @@ series :[{ points:[{ high : 120 }] }]
 
 
 
-### series.points.low<span class="type-signature type number">number</span>
+### series.points.low `number`
 {:#members:series-points-x}
 
 
@@ -17502,18 +16658,16 @@ series :[{ points:[{ high : 120 }] }]
 Low value of the point. Low value is applicable only for financial type series, range area series and range column series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17527,7 +16681,7 @@ series :[{ points:[{ low : 70 }] }]
 
 
 
-### series.points.marker<span class="type-signature type object">object</span>
+### series.points.marker `object`
 {:#members:series-points-marker}
 
 
@@ -17540,7 +16694,7 @@ Options for displaying and customizing marker for a data point. Marker contains 
 
 
 
-### series.points.marker.border<span class="type-signature type object">object</span>
+### series.points.marker.border `object`
 {:#members:series-points-marker-border}
 
 
@@ -17553,7 +16707,7 @@ Options for customizing the border of the marker shape.
 
 
 
-### series.points.marker.border.color<span class="type-signature type string">string</span>
+### series.points.marker.border.color `string`
 {:#members:series-points-marker-border-color}
 
 
@@ -17562,18 +16716,16 @@ Options for customizing the border of the marker shape.
 Border color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"white"
+* "white"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17587,7 +16739,7 @@ series :[{ points:[{ marker:{border:{color : "green"}} }] }]
 
 
 
-### series.points.marker.border.width<span class="type-signature type number">number</span>
+### series.points.marker.border.width `number`
 {:#members:series-points-marker-border-width}
 
 
@@ -17596,18 +16748,16 @@ series :[{ points:[{ marker:{border:{color : "green"}} }] }]
 Border width of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-3
+* 3
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17623,7 +16773,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3vkjgyc0)
 
 
 
-### series.points.marker.dataLabel<span class="type-signature type object">object</span>
+### series.points.marker.dataLabel `object`
 {:#members:series-points-marker-datalabel}
 
 
@@ -17636,7 +16786,7 @@ Options for displaying and customizing data label.
 
 
 
-### series.points.marker.dataLabel.angle<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.angle `number`
 {:#members:series-points-marker-datalabel-angle}
 
 
@@ -17645,18 +16795,16 @@ Options for displaying and customizing data label.
 Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17671,7 +16819,7 @@ series :[{ points:[{ marker :{dataLabel :{angle : 90} }] }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3r5mcfc)
 
 
-### series.points.marker.dataLabel.border<span class="type-signature type object">object</span>
+### series.points.marker.dataLabel.border `object`
 {:#members:series-points-marker-datalabel-border}
 
 
@@ -17684,7 +16832,7 @@ Options for customizing the border of the data label.
 
 
 
-### series.points.marker.dataLabel.border.color<span class="type-signature type string">string</span>
+### series.points.marker.dataLabel.border.color `string`
 {:#members:series-points-marker-datalabel-border-color}
 
 
@@ -17692,18 +16840,16 @@ Options for customizing the border of the data label.
 
 Border color of the data label. 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17717,7 +16863,7 @@ series :[{ points:[{ marker :{dataLabel :{border : {color : "green"}}} }] }]
 
 
 
-### series.points.marker.dataLabel.border.width<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.border.width `number`
 {:#members:series-points-marker-datalabel-border-width}
 
 
@@ -17726,18 +16872,16 @@ series :[{ points:[{ marker :{dataLabel :{border : {color : "green"}}} }] }]
 Border width of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.1
+* 0.1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17751,7 +16895,7 @@ series :[{ points:[{ marker :{dataLabel :{border :{ width :2 }}} }] }]
 
 
 
-### series.points.marker.dataLabel.connectorLine<span class="type-signature type object">object</span>
+### series.points.marker.dataLabel.connectorLine `object`
 {:#members:series-points-marker-datalabel-connectorline}
 
 
@@ -17764,7 +16908,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-### series.points.marker.dataLabel.connectorLine.type<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.connectorLine.type `enum`
 {:#members:series-points-marker-datalabel-connectorline-type}
 
 
@@ -17773,17 +16917,15 @@ Options for displaying and customizing the line that connects point and data lab
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17797,7 +16939,7 @@ series :[{ points:[{ marker :{dataLabel :{connectorLine :{ type : "bezier" }}} }
 
 
 
-### series.points.marker.dataLabel.connectorLine.width<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.connectorLine.width `number`
 {:#members:series-points-marker-datalabel-connectorline-width}
 
 
@@ -17806,18 +16948,16 @@ series :[{ points:[{ marker :{dataLabel :{connectorLine :{ type : "bezier" }}} }
 Width of the connector. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0.5
+ * 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17833,7 +16973,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tm0wneyn)
 
 
 
-### series.points.marker.dataLabel.fill<span class="type-signature type string">string</span>
+### series.points.marker.dataLabel.fill `string`
 {:#members:series-points-marker-datalabel-fill}
 
 
@@ -17842,18 +16982,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tm0wneyn)
 Background color of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17867,7 +17005,7 @@ series :[{ points:[{ marker :{dataLabel :{fill : "green"}}}]}]
 
 
 
-### series.points.marker.dataLabel.font<span class="type-signature type object">object</span>
+### series.points.marker.dataLabel.font `object`
 {:#members:series-points-marker-datalabel-font}
 
 
@@ -17880,7 +17018,7 @@ Options for customizing the data label font.
 
 
 
-### series.points.marker.dataLabel.font.fontFamily<span class="type-signature type string">string</span>
+### series.points.marker.dataLabel.font.fontFamily `string`
 {:#members:series-points-marker-datalabel-font-fontfamily}
 
 
@@ -17889,18 +17027,16 @@ Options for customizing the data label font.
 Font family of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Segoe UI"
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17914,7 +17050,7 @@ series :[{ points:[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]}]
 
 
 
-### series.points.marker.dataLabel.font.fontStyle<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.font.fontStyle `enum`
 {:#members:series-points-marker-datalabel-font-fontstyle}
 
 
@@ -17923,18 +17059,16 @@ series :[{ points:[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]}]
 Font style of the data label.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17948,7 +17082,7 @@ series :[{points:[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]}]
 
 
 
-### series.points.marker.dataLabel.font.fontWeight<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.font.fontWeight `enum`
 {:#members:series-points-marker-datalabel-font-fontweight}
 
 
@@ -17957,16 +17091,14 @@ series :[{points:[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]}]
 Font weight of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -17980,7 +17112,7 @@ series :[{ points:[{ marker :{dataLabel :{font : { fontWeight : "lighter" }}}}] 
 
 
 
-### series.points.marker.dataLabel.font.opacity<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.font.opacity `number`
 {:#members:series-points-marker-datalabel-font-opacity}
 
 
@@ -17989,18 +17121,16 @@ series :[{ points:[{ marker :{dataLabel :{font : { fontWeight : "lighter" }}}}] 
 Opacity of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18014,7 +17144,7 @@ series :[{ points:[{ marker :{dataLabel :{font :{ opacity : 0.5 }}}}] }]
 
 
 
-### series.points.marker.dataLabel.font.size<span class="type-signature type string">string</span>
+### series.points.marker.dataLabel.font.size `string`
 {:#members:series-points-marker-datalabel-font-size}
 
 
@@ -18023,18 +17153,16 @@ series :[{ points:[{ marker :{dataLabel :{font :{ opacity : 0.5 }}}}] }]
 Font size of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "12px"
+ * "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18051,7 +17179,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v4rp3aio)
 
 
 
-### series.points.marker.dataLabel.horizontalTextAlignment<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.horizontalTextAlignment `enum`
 {:#members:series-points-marker-datalabel-horizontaltextalignment}
 
 
@@ -18060,18 +17188,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v4rp3aio)
 Horizontal alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"center"
+* "center"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18085,7 +17211,7 @@ series :[{ points:[{ marker :{dataLabel :{horizontalTextAlignment : "far"}}}] }]
 
 
 
-### series.points.marker.dataLabel.margin<span class="type-signature type object">object</span>
+### series.points.marker.dataLabel.margin `object`
 {:#members:series-points-marker-datalabel-margin}
 
 
@@ -18098,7 +17224,7 @@ Margin of the text to its background shape. The size of the background shape inc
 
 
 
-### series.points.marker.dataLabel.margin.bottom<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.margin.bottom `number`
 {:#members:series-points-marker-datalabel-margin-bottom}
 
 
@@ -18107,18 +17233,16 @@ Margin of the text to its background shape. The size of the background shape inc
 Bottom margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18132,7 +17256,7 @@ series :[{ points:[{ marker :{dataLabel :{margin :{ bottom :10 }}}}] }]
 
 
 
-### series.points.marker.dataLabel.margin.left<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.margin.left `number`
 {:#members:series-points-marker-datalabel-margin-left}
 
 
@@ -18141,18 +17265,16 @@ series :[{ points:[{ marker :{dataLabel :{margin :{ bottom :10 }}}}] }]
 Left margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 5
+ * 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18166,7 +17288,7 @@ series :[{ points: [{ marker :{dataLabel :{margin :{ left : 10}}}}] }]
 
 
 
-### series.points.marker.dataLabel.margin.right<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.margin.right `number`
 {:#members:series-points-marker-datalabel-margin-right}
 
 
@@ -18175,18 +17297,16 @@ series :[{ points: [{ marker :{dataLabel :{margin :{ left : 10}}}}] }]
 Right margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18200,7 +17320,7 @@ series :[{ points:[{ marker :{dataLabel :{margin :{ right :10 }}}}] }]
 
 
 
-### series.points.marker.dataLabel.margin.top<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.margin.top `number`
 {:#members:series-points-marker-datalabel-margin-top}
 
 
@@ -18209,18 +17329,16 @@ series :[{ points:[{ marker :{dataLabel :{margin :{ right :10 }}}}] }]
 Top margin of the text. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-5
+* 5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18236,7 +17354,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rezz5cjo)
 
 
 
-### series.points.marker.dataLabel.opacity<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.opacity `number`
 {:#members:series-points-marker-datalabel-opacity}
 
 
@@ -18245,18 +17363,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rezz5cjo)
 Opacity of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18270,7 +17386,7 @@ series :[{ points:[{ marker :{dataLabel :{opacity : 0.5}}}] }]
 
 
 
-### series.points.marker.dataLabel.shape<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.shape `enum`
 {:#members:series-points-marker-datalabel-shape}
 
 
@@ -18279,16 +17395,14 @@ series :[{ points:[{ marker :{dataLabel :{opacity : 0.5}}}] }]
 Background shape of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18302,7 +17416,7 @@ series :[{ points:[{ marker :{dataLabel :{shape : "circle"}}}] }]
 
 
 
-### series.points.marker.dataLabel.textPosition<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.textPosition `enum`
 {:#members:series-points-marker-datalabel-textposition}
 
 
@@ -18311,16 +17425,14 @@ series :[{ points:[{ marker :{dataLabel :{shape : "circle"}}}] }]
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:textposition">TextPosition</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18334,7 +17446,7 @@ series :[{ points:[{ marker :{dataLabel :{textPosition : "bottom"}}}] }]
 
 
 
-### series.points.marker.dataLabel.verticalTextAlignment<span class="type-signature type enum">enum</span>
+### series.points.marker.dataLabel.verticalTextAlignment `enum`
 {:#members:series-points-marker-datalabel-verticaltextalignment}
 
 
@@ -18343,18 +17455,16 @@ series :[{ points:[{ marker :{dataLabel :{textPosition : "bottom"}}}] }]
 Vertical alignment of the data label. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-'center'
+* 'center'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18369,7 +17479,7 @@ series :[{ points: [{ marker :{dataLabel :{verticalTextAlignment : "far"}}}] }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/k5e5rltz)
 
 
-### series.points.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
+### series.points.marker.dataLabel.visible `boolean`
 {:#members:series-points-marker-datalabel-visible}
 
 
@@ -18378,18 +17488,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/k5e5rltz)
 Controls the visibility of the data labels. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18401,7 +17509,7 @@ series :[{ points: [{ marker :{dataLabel :{visible : true}}}] }]
  {% endhighlight %}
 
 
-### series.points.marker.dataLabel.template<span class="type-signature type string">string</span>
+### series.points.marker.dataLabel.template `string`
 {:#members:series-points-marker-datalabel-template}
 
 
@@ -18410,18 +17518,16 @@ series :[{ points: [{ marker :{dataLabel :{visible : true}}}] }]
 Custom template to format the data label content. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18437,7 +17543,7 @@ series :[{ points:[{ marker :{dataLabel :{template : "item"}}}] }]
  
  
  
-### series.points.marker.dataLabel.offset<span class="type-signature type number">number</span>
+### series.points.marker.dataLabel.offset `number`
 {:#members:series-points-marker-datalabel-offset}
 
 
@@ -18446,18 +17552,16 @@ series :[{ points:[{ marker :{dataLabel :{template : "item"}}}] }]
 Moves the label vertically by specified offset.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18470,7 +17574,7 @@ series :[{ points:[{ marker :{dataLabel :{offset : 10}}}] }]
 
 
 
-### series.points.marker.fill<span class="type-signature type string">string</span>
+### series.points.marker.fill `string`
 {:#members:series-points-marker-fill}
 
 
@@ -18479,18 +17583,16 @@ series :[{ points:[{ marker :{dataLabel :{offset : 10}}}] }]
 Color of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18504,7 +17606,7 @@ series :[{ points:[{ marker : { fill : "green" } }] }]
 
 
 
-### series.points.marker.imageUrl<span class="type-signature type string">string</span>
+### series.points.marker.imageUrl `string`
 {:#members:series-points-marker-imageurl}
 
 
@@ -18513,18 +17615,16 @@ series :[{ points:[{ marker : { fill : "green" } }] }]
 The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18538,7 +17638,7 @@ series :[{ points:[{ marker :{ imageUrl: "../images/sample.png"}}] }]
 
 
 
-### series.points.marker.opacity<span class="type-signature type number">number</span>
+### series.points.marker.opacity `number`
 {:#members:series-points-marker-opacity}
 
 
@@ -18547,18 +17647,16 @@ series :[{ points:[{ marker :{ imageUrl: "../images/sample.png"}}] }]
 Opacity of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 1
+ * 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18574,7 +17672,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fr1zj5v3)
 
 
 
-### series.points.marker.shape<span class="type-signature type enum">enum</span>
+### series.points.marker.shape `enum`
 {:#members:series-points-marker-shape}
 
 
@@ -18583,16 +17681,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fr1zj5v3)
 Specifies the shape of the marker.  
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:shape">Shape</a>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18607,7 +17703,7 @@ series :[{ points:[{ marker :{ shape: "rectangle"}] }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5cgrkynp)
 
 
-### series.points.marker.size<span class="type-signature type object">object</span>
+### series.points.marker.size `object`
 {:#members:series-points-marker-size}
 
 
@@ -18620,7 +17716,7 @@ Options for customizing the size of the marker shape.
 
 
 
-### series.points.marker.size.height<span class="type-signature type number">number</span>
+### series.points.marker.size.height `number`
 {:#members:series-points-marker-size-height}
 
 
@@ -18629,18 +17725,16 @@ Options for customizing the size of the marker shape.
 Height of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18654,7 +17748,7 @@ series :[{ points:[{ marker :{size :{height : 5}}}] }]
 
 
 
-### series.points.marker.size.width<span class="type-signature type number">number</span>
+### series.points.marker.size.width `number`
 {:#members:series-points-marker-size-width}
 
 
@@ -18663,18 +17757,16 @@ series :[{ points:[{ marker :{size :{height : 5}}}] }]
 Width of the marker. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-6
+* 6
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18689,7 +17781,7 @@ series :[{ points:[{ marker :{ size :{ width : 2 } } }] }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hcnmls5c)
 
 
-### series.points.marker.visible<span class="type-signature type boolean">boolean</span>
+### series.points.marker.visible `boolean`
 {:#members:series-points-marker-visible}
 
 
@@ -18698,18 +17790,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hcnmls5c)
 Controls the visibility of the marker shape. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18723,7 +17813,7 @@ series :[{ points:[{ marker :{ visible : true}}] }]
 
 
 
-### series.points.open<span class="type-signature type number">number</span>
+### series.points.open `number`
 {:#members:series-points-open}
 
 
@@ -18732,18 +17822,16 @@ series :[{ points:[{ marker :{ visible : true}}] }]
 Open value of the point. This is applicable only for financial type series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18757,7 +17845,7 @@ series :[{ points:[{ open : 30 }] }]
 
 
 
-### series.points.text<span class="type-signature type string">string</span>
+### series.points.text `string` 
 {:#members:series-points-text}
 
 
@@ -18766,18 +17854,16 @@ series :[{ points:[{ open : 30 }] }]
 Datalabel text for the point.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18791,7 +17877,7 @@ series :[{ points:[{ text : "20%" }] }]
 
 
 
-### series.points.x<span class="type-signature type number">number</span>
+### series.points.x `number`
 {:#members:series-points-x}
 
 
@@ -18800,18 +17886,16 @@ series :[{ points:[{ text : "20%" }] }]
 X value of the point.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18825,7 +17909,7 @@ series :[{ points:[{ x : 1 }] }]
 
 
 
-### series.points.y<span class="type-signature type number">number</span>
+### series.points.y `number`
 {:#members:series-points-y}
 
 
@@ -18834,18 +17918,16 @@ series :[{ points:[{ x : 1 }] }]
 Y value of the point.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18859,7 +17941,7 @@ series :[{ points:[{ y : 20 }] }]
 
 
 
-### series.pyramidMode<span class="type-signature type enum">enum</span>
+### series.pyramidMode `enum`
 {:#members:series-pyramidmode}
 
 
@@ -18868,18 +17950,16 @@ series :[{ points:[{ y : 20 }] }]
 Specifies the mode of the pyramid series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"linear"
+* "linear"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18895,7 +17975,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
 
 
 
-### series.query<span class="type-signature type object">object</span>
+### series.query `object`
 {:#members:series-query}
 
 
@@ -18904,18 +17984,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
 Specifies ej.Query to select data from dataSource. This property is applicable only when the dataSource is ej.DataManager.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18933,7 +18011,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 
-### series.startAngle<span class="type-signature type number">number</span>
+### series.startAngle `number`
 {:#members:series-startangle}
 
 
@@ -18942,18 +18020,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 Start angle from where the pie/doughnut series renders. It starts from 0, by default.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -18969,7 +18045,7 @@ series : [{startAngle: 140 }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cw1zlin3)
 
 
-### series.tooltip<span class="type-signature type object">object</span>
+### series.tooltip `object`
 {:#members:series-tooltip}
 
 
@@ -18982,7 +18058,7 @@ Options for customizing the tooltip of chart.
 
 
 
-### series.tooltip.border<span class="type-signature type object">object</span>
+### series.tooltip.border `object`
 {:#members:series-tooltip-border}
 
 
@@ -18995,7 +18071,7 @@ Options for customizing the border of the tooltip.
 
 
 
-### series.tooltip.border.color<span class="type-signature type string">string</span>
+### series.tooltip.border.color `string`
 {:#members:series-tooltip-border-color}
 
 
@@ -19004,18 +18080,16 @@ Options for customizing the border of the tooltip.
 Border Color of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19029,7 +18103,7 @@ series : [{tooltip : {border : { color :"green"} }]
 
 
 
-### series.tooltip.border.width<span class="type-signature type number">number</span>
+### series.tooltip.border.width `number`
 {:#members:series-tooltip-border-width}
 
 
@@ -19038,18 +18112,16 @@ series : [{tooltip : {border : { color :"green"} }]
 Border Width of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 1
+ * 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19137,7 +18209,7 @@ series :[{
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 
 
-### series.tooltip.duration<span class="type-signature type string">string</span>
+### series.tooltip.duration `string`
 {:#members:series-tooltip-duration}
 
 
@@ -19146,18 +18218,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 Specifies the duration, the tooltip has to be displayed.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"500ms"
+* "500ms"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19171,7 +18241,7 @@ series : [{tooltip : { duration: "300ms" }]
 
 
 
-### series.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
+### series.tooltip.enableAnimation `boolean`
 {:#members:series-tooltip-enableanimation}
 
 
@@ -19180,18 +18250,16 @@ series : [{tooltip : { duration: "300ms" }]
 Enables/disables the animation of the tooltip when moving from one point to another.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-true
+* true
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19205,7 +18273,7 @@ series : [{tooltip : { enableAnimation: false }]
 
 
 
-### series.tooltip.fill<span class="type-signature type string">string</span>
+### series.tooltip.fill `string`
 {:#members:series-tooltip-fill}
 
 
@@ -19214,18 +18282,16 @@ series : [{tooltip : { enableAnimation: false }]
 Background color of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19241,7 +18307,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xz1asbhm)
 
 
 
-### series.tooltip.format<span class="type-signature type string">string</span>
+### series.tooltip.format `string`
 {:#members:series-tooltip-format}
 
 
@@ -19251,18 +18317,16 @@ Format of the tooltip content.
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#point.x# : #point.y#"
+* "#point.x# : #point.y#"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19277,7 +18341,7 @@ series : [{tooltip : {format : "#point.x# : #point.y#"} }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ykkxirn1)
 
 
-### series.tooltip.opacity<span class="type-signature type number">number</span>
+### series.tooltip.opacity `number`
 {:#members:series-tooltip-opacity}
 
 
@@ -19286,18 +18350,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ykkxirn1)
 Opacity of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- 0.95
+ * 0.95
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19311,7 +18373,7 @@ series : [{tooltip : { opacity: 0.5 }]
 
 
 
-### series.tooltip.template<span class="type-signature type string">string</span>
+### series.tooltip.template `string`
 {:#members:series-tooltip-template}
 
 
@@ -19320,18 +18382,16 @@ series : [{tooltip : { opacity: 0.5 }]
 Custom template to format the tooltip content. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19355,7 +18415,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/j0twqmow)
 
 
 
-### series.tooltip.visible<span class="type-signature type boolean">boolean</span>
+### series.tooltip.visible `boolean`
 {:#members:series-tooltip-visible}
 
 
@@ -19364,18 +18424,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/j0twqmow)
 Controls the visibility of the tooltip.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19389,7 +18447,7 @@ series : [{tooltip : {visible : true} }]
 
 
 
-### series.type<span class="type-signature type enum">enum</span>
+### series.type `enum`
 {:#members:series-type}
 
 
@@ -19398,17 +18456,15 @@ series : [{tooltip : {visible : true} }]
 Specifies the type of the series to render in chart.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"column". see <a href="global.html#members:type">Type</a>
+* "column". see <a href="global.html#members:type">Type</a>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19423,7 +18479,7 @@ series : [{type : "column" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xab3pr0x)
 
 
-### series.visibility<span class="type-signature type string">string</span>
+### series.visibility `string`
 {:#members:series-visibility}
 
 
@@ -19433,18 +18489,16 @@ Controls the visibility of the series.
 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- "visible"
+ * "visible"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19459,7 +18513,7 @@ series : [{visibility: "hidden" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
-### series.xAxisName<span class="type-signature type string">string</span>
+### series.xAxisName `string`
 {:#members:series-xaxisname}
 
 
@@ -19468,18 +18522,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19494,7 +18546,7 @@ series : [{xAxisName: "xAxis" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 
 
-### series.xName<span class="type-signature type string">string</span>
+### series.xName `string`
 {:#members:series-xname}
 
 
@@ -19503,18 +18555,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 Name of the property in the datasource that contains x value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19529,7 +18579,7 @@ series : [{xName: "XValue" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
-### series.yAxisName<span class="type-signature type string">string</span>
+### series.yAxisName `string`
 {:#members:series-yaxisname}
 
 
@@ -19538,18 +18588,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19565,7 +18613,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 
 
 
-### series.yName<span class="type-signature type string">string</span>
+### series.yName `string`
 {:#members:series-yname}
 
 
@@ -19574,18 +18622,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 Name of the property in the datasource that contains y value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19599,7 +18645,7 @@ series : [{yName: "YValue" }]
 
 
 
-### series.high<span class="type-signature type string">string</span>
+### series.high `string`
 {:#members:series-high}
 
 
@@ -19608,18 +18654,16 @@ series : [{yName: "YValue" }]
 Name of the property in the datasource that contains high value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19633,7 +18677,7 @@ series : [{high: "high" }]
 
 
 
-### series.low<span class="type-signature type string">string</span>
+### series.low `string`
 {:#members:series-low}
 
 
@@ -19642,18 +18686,16 @@ series : [{high: "high" }]
 Name of the property in the datasource that contains low value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19669,7 +18711,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 
-### series.open<span class="type-signature type string">string</span>
+### series.open `string`
 {:#members:series-open}
 
 
@@ -19678,18 +18720,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 Name of the property in the datasource that contains open value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19702,25 +18742,23 @@ series : [{open: "oepn" }]
 
 
 
-### series.close<span class="type-signature type string">string</span>
+### series.close `string`
 {:#members:series-close}
 
 
 Name of the property in the datasource that contains close value for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+ * null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19735,7 +18773,7 @@ series : [{close: "close" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
-### series.size<span class="type-signature type string">string</span>
+### series.size `string`
 {:#members:series-size}
 
 
@@ -19744,18 +18782,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 Name of the property in the datasource that contains the size value for the bubble series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
- null
+* null
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19770,7 +18806,7 @@ series : [{size: "size" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
 
 
-### series.trendlines<span class="type-signature type array">array</span>
+### series.trendlines `array`
 {:#members:series-trendlines}
 
 
@@ -19781,7 +18817,7 @@ Option to add trendlines to chart.
 
 
 
-### series.trendlines.visibility<span class="type-signature type boolean">boolean</span>
+### series.trendlines.visibility `boolean`
 {:#members:series-trendlines-visibility}
 
 
@@ -19790,18 +18826,16 @@ Option to add trendlines to chart.
 Show/hides the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19816,7 +18850,7 @@ series :[{trendlines:[{ visibility:'visible' }]}]
 
 
 
-### series.trendlines.type<span class="type-signature type string">string</span>
+### series.trendlines.type `string`
 {:#members:series-trendlines-type}
 
 
@@ -19825,18 +18859,16 @@ series :[{trendlines:[{ visibility:'visible' }]}]
 Specifies the type of trendline for the series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
+* "linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19849,7 +18881,7 @@ series :[{trendlines:[{ type:'linear' }]}]
 
 
 
-### series.trendlines.name<span class="type-signature type string">string</span>
+### series.trendlines.name `string`
 {:#members:series-trendlines-name}
 
 
@@ -19858,17 +18890,15 @@ series :[{trendlines:[{ type:'linear' }]}]
 Name for the trendlines that is to be displayed in legend text.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"Trendline"
+* "Trendline"
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19882,7 +18912,7 @@ series :[{trendlines:[{ name:'Trendline' }]}]
 
 
 
-### series.trendlines.fill<span class="type-signature type string">string</span>
+### series.trendlines.fill `string`
 {:#members:series-trendlines-fill}
 
 
@@ -19891,17 +18921,15 @@ series :[{trendlines:[{ name:'Trendline' }]}]
 Fill color of the trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"#0000FF"
+* "#0000FF"
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19915,7 +18943,7 @@ series :[{trendlines:[{ fill:'#0000FF' }]}]
 
 
 
-### series.trendlines.width<span class="type-signature type number">number</span>
+### series.trendlines.width `number`
 {:#members:series-trendlines-width}
 
 
@@ -19924,17 +18952,15 @@ series :[{trendlines:[{ fill:'#0000FF' }]}]
 Width of the trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19947,7 +18973,7 @@ series :[{trendlines:[{ width:1 }]}]
 
 
 
-### series.trendlines.opacity<span class="type-signature type number">number</span>
+### series.trendlines.opacity `number`
 {:#members:series-trendlines-opacity}
 
 
@@ -19956,17 +18982,15 @@ series :[{trendlines:[{ width:1 }]}]
 Opacity of the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-1
+* 1
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -19980,7 +19004,7 @@ series :[{trendlines:[{ opacity:1 }]}]
 
 
 
-### series.trendlines.dashArray<span class="type-signature type string">string</span>
+### series.trendlines.dashArray `string`
 {:#members:series-trendlines-dasharray}
 
 
@@ -19989,17 +19013,15 @@ series :[{trendlines:[{ opacity:1 }]}]
 Pattern of dashes and gaps used to stroke the trendline.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20012,7 +19034,7 @@ series :[{trendlines:[{ dashArray:"" }]}]
 
 
 
-### series.trendlines.forwardForecast<span class="type-signature type string">string</span>
+### series.trendlines.forwardForecast `string`
 {:#members:series-trendlines-forwardforecast}
 
 
@@ -20021,17 +19043,15 @@ series :[{trendlines:[{ dashArray:"" }]}]
 Future trends of the current series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20044,7 +19064,7 @@ series :[{trendlines:[{ forwardForeCast:2 }]}]
 
 
 
-### series.trendlines.backwardForecast<span class="type-signature type string">string</span>
+### series.trendlines.backwardForecast `string`
 {:#members:series-trendlines-backwardforecast}
 
 
@@ -20053,17 +19073,15 @@ series :[{trendlines:[{ forwardForeCast:2 }]}]
 Past trends of the current series.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20078,7 +19096,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3gntcp0)
 
 
 
-### series.trendlines.polynomialOrder<span class="type-signature type string">string</span>
+### series.trendlines.polynomialOrder `string`
 {:#members:series-trendlines-polynomialorder}
 
 
@@ -20087,17 +19105,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3gntcp0)
 Specifies the order of polynomial trendlines.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 0
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20112,7 +19128,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
 
-### series.highlightsettings<span class="type-signature type object">object</span>
+### series.highlightsettings `object`
 {:#members:series-highlightsettings}
 
 
@@ -20123,7 +19139,7 @@ Options for customizing the appearance of the series or data point while highlig
 
 
 
-### series.highlightSettings.enable<span class="type-signature type boolean">boolean</span>
+### series.highlightSettings.enable `boolean`
 {:#members:series-highlightsettings-enable}
 
 
@@ -20132,18 +19148,16 @@ Options for customizing the appearance of the series or data point while highlig
 Enables/disables the ability to highlight series or data point interactively.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20156,7 +19170,7 @@ series :[{highlightSettings:{enable:true}}]
 
 
 
-### series.highlightSettings.mode<span class="type-signature type enum">enum</span>
+### series.highlightSettings.mode `enum`
 {:#members:series-highlightsettings-mode}
 
 
@@ -20165,18 +19179,16 @@ series :[{highlightSettings:{enable:true}}]
 Specifies whether series or data point has to be highlighted.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:mode">Mode</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20189,7 +19201,7 @@ series :[{highlightSettings:{mode:"point"}}]
 
 
 
-### series.highlightSettings.color<span class="type-signature type string">string</span>
+### series.highlightSettings.color `string`
 {:#members:series-highlightsettings-color}
 
 
@@ -20198,17 +19210,15 @@ series :[{highlightSettings:{mode:"point"}}]
 Color of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20221,7 +19231,7 @@ series :[{highlightSettings:{color:"red"}}]
 
 
 
-### series.highlightSettings.opacity<span class="type-signature type number">number</span>
+### series.highlightSettings.opacity `number`
 {:#members:series-highlightsettings-opacity}
 
 
@@ -20230,17 +19240,15 @@ series :[{highlightSettings:{color:"red"}}]
 Opacity of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.6
+* 0.6
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20253,7 +19261,7 @@ series :[{highlightSettings:{opacity:1}}]
 
 
 
-### series.highlightSettings.border<span class="type-signature type object">object</span>
+### series.highlightSettings.border `object`
 {:#members:series-highlightsettings-border}
 
 
@@ -20262,7 +19270,7 @@ Options for customizing the border of series on highlight.
 
 
 
-### series.highlightSettings.border.color<span class="type-signature type string">string</span>
+### series.highlightSettings.border.color `string`
 {:#members:series-highlightsettings-border-color}
 
 
@@ -20270,17 +19278,15 @@ Options for customizing the border of series on highlight.
 Border color of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20293,7 +19299,7 @@ series :[{highlightSettings:{border:{color:"black"}}}]
 
 
 
-### series.highlightSettings.border.width<span class="type-signature type string">string</span>
+### series.highlightSettings.border.width `string`
 {:#members:series-highlightsettings-border-width}
 
 
@@ -20301,17 +19307,15 @@ series :[{highlightSettings:{border:{color:"black"}}}]
 Border width of the series/point on highlight.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20326,7 +19330,7 @@ series :[{highlightSettings:{border:{width:1}}}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ormhp3rz)
 
 
-### series.highlightSettings.pattern<span class="type-signature type string">string</span>
+### series.highlightSettings.pattern `string`
 {:#members:series-highlightsettings-pattern}
 
 
@@ -20334,17 +19338,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ormhp3rz)
 
 Specifies the pattern for the series/point on highlight.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"none". See <a href="global.html#members:pattern">Pattern</a>
+* "none". See <a href="global.html#members:pattern">Pattern</a>
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20360,7 +19362,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gcdopi4d)
 
 
 
-### series.highlightSettings.customPattern<span class="type-signature type string">string</span>
+### series.highlightSettings.customPattern `string`
 {:#members:series-highlightsettings-custompattern}
 
 
@@ -20368,17 +19370,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gcdopi4d)
 
 Custom pattern for the series on highlight.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20394,7 +19394,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zmumutbx)
 
 
 
-### series.selectionSettings<span class="type-signature type object">object</span>
+### series.selectionSettings `object`
 {:#members:series-selectionsettings}
 
 
@@ -20404,7 +19404,7 @@ Options for customizing the appearance of the series/data point on selection.
 
 
 
-### series.selectionSettings.enable<span class="type-signature type boolean">boolean</span>
+### series.selectionSettings.enable `boolean`
 {:#members:series-selectionsettings-enable}
 
 
@@ -20413,18 +19413,16 @@ Options for customizing the appearance of the series/data point on selection.
 Enables/disables the ability to select a series/data point interactively.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20437,7 +19435,7 @@ series :[{selectionSettings:{enable:true}}]
 
 
 
-### series.selectionSettings.mode<span class="type-signature type enum">enum</span>
+### series.selectionSettings.mode `enum`
 {:#members:series-selectionsettings-mode}
 
 
@@ -20446,18 +19444,16 @@ series :[{selectionSettings:{enable:true}}]
 Specifies whether series or data point has to be selected.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:mode">Mode</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20472,7 +19468,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
 
 
 
-### series.selectionSettings.color<span class="type-signature type string">string</span>
+### series.selectionSettings.color `string`
 {:#members:series-selectionsettings-color}
 
 
@@ -20481,17 +19477,15 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
 Color of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20504,7 +19498,7 @@ series :[{selectionSettings:{color:"red"}}]
 
 
 
-### series.selectionSettings.opacity<span class="type-signature type number">number</span>
+### series.selectionSettings.opacity `number`
 {:#members:series-selectionsettings-opacity}
 
 
@@ -20513,17 +19507,15 @@ series :[{selectionSettings:{color:"red"}}]
 Opacity of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0.6
+* 0.6
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20535,7 +19527,7 @@ series :[{selectionSettings:{opacity:1}}]
 {% endhighlight %}
 
 
-### series.selectionSettings.border<span class="type-signature type object">object</span>
+### series.selectionSettings.border `object`
 {:#members:series-selectionsettings-border}
 
 
@@ -20544,7 +19536,7 @@ Options for customizing the border of series on selection.
 
 
 
-### series.selectionSettings.border.color<span class="type-signature type string">string</span>
+### series.selectionSettings.border.color `string`
 {:#members:series-selectionsettings-border-color}
 
 
@@ -20552,17 +19544,15 @@ Options for customizing the border of series on selection.
 Border color of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20575,7 +19565,7 @@ series :[{selectionSettings:{border:{color:"black"}}}]
 
 
 
-### series.selectionSettings.border.width<span class="type-signature type string">string</span>
+### series.selectionSettings.border.width `string`
 {:#members:series-selectionsettings-border-width}
 
 
@@ -20583,17 +19573,15 @@ series :[{selectionSettings:{border:{color:"black"}}}]
 Border width of the series/point on selection.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20606,7 +19594,7 @@ series :[{selectionSettings:{border:{width:1}}}]
 
 
 
-### series.selectionSettings.pattern<span class="type-signature type string">string</span>
+### series.selectionSettings.pattern `string`
 {:#members:series-selectionsettings-pattern}
 
 
@@ -20614,17 +19602,15 @@ series :[{selectionSettings:{border:{width:1}}}]
 
 Specifies the pattern for the series/point on selection.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-"none". See <a href="global.html#members:pattern">Pattern</a>
+* "none". See <a href="global.html#members:pattern">Pattern</a>
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20639,24 +19625,22 @@ series :[{selectionSettings:{pattern:"chessboard"}}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cuee3fgt)
 
 
-### series.selectionSettings.customPattern<span class="type-signature type string">string</span>
+### series.selectionSettings.customPattern `string`
 {:#members:series-selectionsettings-custompattern}
 
 
 
 Custom pattern for the series on selection.
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-""
+* ""
 
  
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20673,7 +19657,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wlovhaqi)
 
 
 
-### sideBySideSeriesPlacement<span class="type-signature type boolean">boolean</span>
+### sideBySideSeriesPlacement `boolean`
 {:#members:sidebysideseriesplacement}
 
 
@@ -20682,18 +19666,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wlovhaqi)
 Controls whether data points has to be displayed side by side or along the depth of the axis. 
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-false
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20710,7 +19692,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lhtjjczw)
 
 
-### size<span class="type-signature type object">object</span>
+### size `object
 {:#members:size}
 
 
@@ -20724,7 +19706,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wpvk5t3p)
 
 
 
-### size.height<span class="type-signature type string">string</span>
+### size.height `string`
 {:#members:size-height}
 
 
@@ -20733,15 +19715,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wpvk5t3p)
 Height of the Chart. Height can be specified in either pixel or percentage.
 
 
-Default value:
-{:.param}
-'450'
+#### Default Value
+
+* '450'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20757,7 +19738,7 @@ $("#container").ejChart({
 
 
 
-### size.width<span class="type-signature type string">string</span>
+### size.width `string`
 {:#members:size-width}
 
 
@@ -20766,15 +19747,14 @@ $("#container").ejChart({
 Width of the Chart. Width can be specified in either pixel or percentage.
 
 
-Default value:
-{:.param}
-'450'
+#### Default Value
+
+* '450'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20790,7 +19770,7 @@ $("#container").ejChart({
 
 
 
-### theme<span class="type-signature type enum">enum</span>
+### theme `enum`
 {:#members:theme}
 
 
@@ -20799,15 +19779,14 @@ $("#container").ejChart({
 Specifies the theme for Chart.
 
 
-Default Value:
-{:.param}
-"Flatlight". See <a href="global.html#members:theme">Theme</a>
+#### Default Value
+
+* "Flatlight". See <a href="global.html#members:theme">Theme</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20826,7 +19805,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
 
 
 
-### tilt<span class="type-signature type number">number</span>
+### tilt `number`
 {:#members:tilt}
 
 
@@ -20835,18 +19814,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
 Slope angle of 3D Chart. This property is applicable only when 3D view is enabled.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-0
+* 0
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20865,7 +19842,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p0cd1lvx)
 
 
 
-### title<span class="type-signature type object">object</span>
+### title `object`
 {:#members:title}
 
 
@@ -20876,7 +19853,7 @@ Options for customizing the title and subtitle of Chart.
 
 
 
-### title.font<span class="type-signature type object">object</span>
+### title.font `object`
 {:#members:title-font}
 
 
@@ -20890,7 +19867,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fhtgy2vx)
 
 
 
-### title.font.fontFamily<span class="type-signature type string">string</span>
+### title.font.fontFamily `string`
 {:#members:title-font-fontfamily}
 
 
@@ -20899,15 +19876,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fhtgy2vx)
 Font family for Chart title.
 
 
-Default value:
-{:.param}
-"Segoe UI"
+#### Default Value
+
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20923,7 +19899,7 @@ $("#container").ejChart({
 
 
 
-### title.font.fontStyle<span class="type-signature type enum">enum</span>
+### title.font.fontStyle `enum`
 {:#members:title-font-fontstyle}
 
 
@@ -20932,15 +19908,14 @@ $("#container").ejChart({
 Font style for Chart title.
 
 
-Default value:
-{:.param}
-"Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+#### Default Value
+
+* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20956,7 +19931,7 @@ $("#container").ejChart({
 
 
 
-### title.font.fontWeight<span class="type-signature type enum">enum</span>
+### title.font.fontWeight `enum`
 {:#members:title-font-fontweight}
 
 
@@ -20965,15 +19940,14 @@ $("#container").ejChart({
 Font weight for Chart title.
 
 
-Default value:
-{:.param}
-"Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+#### Default Value
+
+* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -20989,7 +19963,7 @@ $("#container").ejChart({
 
 
 
-### title.font.opacity<span class="type-signature type number">number</span>
+### title.font.opacity `number`
 {:#members:title-font-opacity}
 
 
@@ -20998,15 +19972,14 @@ $("#container").ejChart({
 Opacity of the Chart title.
 
 
-Default value:
-{:.param}
-0.5
+#### Default Value
+
+* 0.5
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21022,7 +19995,7 @@ $("#container").ejChart({
 
 
 
-### title.font.size<span class="type-signature type string">string</span>
+### title.font.size `string`
 {:#members:title-font-size}
 
 
@@ -21031,15 +20004,14 @@ $("#container").ejChart({
 Font size for Chart title.
 
 
-Default value:
-{:.param}
-"20px"
+#### Default Value
+
+* "20px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21055,7 +20027,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle<span class="type-signature type object">object</span>
+### title.subTitle `object`
 {:#members:title-subtitle}
 
 
@@ -21066,7 +20038,7 @@ Options to customize the sub title of Chart.
 
 
 
-### title.subTitle.font<span class="type-signature type object">object</span>
+### title.subTitle.font `object`
 {:#members:title-subtitle-font}
 
 
@@ -21080,7 +20052,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
 
 
 
-### title.subTitle.font.fontFamily<span class="type-signature type string">string</span>
+### title.subTitle.font.fontFamily `string`
 {:#members:title-subtitle-font-fontfamily}
 
 
@@ -21089,15 +20061,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
 Font family of sub title.
 
 
-Default value:
-{:.param}
-"Segoe UI"
+#### Default Value
+
+* "Segoe UI"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21113,7 +20084,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
+### title.subTitle.font.fontStyle `enum`
 {:#members:title-subtitle-font-fontstyle}
 
 
@@ -21122,15 +20093,14 @@ $("#container").ejChart({
 Font style for sub title.
 
 
-Default value:
-{:.param}
-"Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+#### Default Value
+
+* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21146,7 +20116,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
+### title.subTitle.font.fontWeight `enum` 
 {:#members:title-subtitle-font-fontweight}
 
 
@@ -21155,15 +20125,14 @@ $("#container").ejChart({
 Font weight for sub title.
 
 
-Default value:
-{:.param}
-"Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+#### Default Value
+
+* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21179,7 +20148,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle.font.opacity<span class="type-signature type double">double</span>
+### title.subTitle.font.opacity `double`
 {:#members:title-subtitle-font-opacity}
 
 
@@ -21188,15 +20157,14 @@ $("#container").ejChart({
 Opacity of the sub title.
 
 
-Default value:
-{:.param}
-1
+#### Default Value
+
+* 1
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21212,7 +20180,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle.font.size<span class="type-signature type enum">enum</span>
+### title.subTitle.font.size `enum`
 {:#members:title-subtitle-font-size}
 
 
@@ -21221,15 +20189,14 @@ $("#container").ejChart({
 Font size for sub title.
 
 
-Default value:
-{:.param}
-"12px"
+#### Default Value
+
+* "12px"
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21245,7 +20212,7 @@ $("#container").ejChart({
 
 
 
-### title.subTitle.text<span class="type-signature type string">string</span>
+### title.subTitle.text `string`
 {:#members:title-subtitle-text}
 
 
@@ -21254,15 +20221,14 @@ $("#container").ejChart({
 Text to be displayed in sub title.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21281,7 +20247,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e3thfz5p)
 
 
 
-### title.subTitle.textAlignment<span class="type-signature type enum">enum</span>
+### title.subTitle.textAlignment `enum`
 {:#members:title-subtitle-textalignment}
 
 
@@ -21290,15 +20256,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e3thfz5p)
 Alignment of sub title text.
 
 
-Default value:
-{:.param}
-"far". See <a href="global.html#members:textalignment">TextAlignment</a>
+#### Default Value
+
+* "far". See <a href="global.html#members:textalignment">TextAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21317,7 +20282,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
 
 
 
-### title.text<span class="type-signature type string">string</span>
+### title.text `string`
 {:#members:title-text}
 
 
@@ -21326,15 +20291,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
 Text to be displayed in Chart title.
 
 
-Default value:
-{:.param}
-""
+#### Default Value
+
+* ""
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21353,7 +20317,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rk0x1e5u)
 
 
 
-### title.textAlignment<span class="type-signature type enum">enum</span>
+### title.textAlignment `enum`
 {:#members:title-textalignment}
 
 
@@ -21362,15 +20326,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rk0x1e5u)
 Alignment of the title text.
 
 
-Default Value:
-{:.param}
-"Center". See <a href="global.html#members:textalignment">TextAlignment</a>
+#### Default Value
+
+* "Center". See <a href="global.html#members:textalignment">TextAlignment</a>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21389,7 +20352,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1vsex5m)
 
 
 
-### wallSize<span class="type-signature type number">number</span>
+### wallSize `number`
 {:#members:wallsize}
 
 
@@ -21398,18 +20361,16 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1vsex5m)
 Width of the wall used in 3D Chart. Wall is present only in Cartesian type 3D series and not in 3D pie or Doughnut series. This property is applicable only when 3D view is enabled.
 
 
-Default value:
-{:.param}
+#### Default Value
 
 
 
-2
+* 2
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21427,7 +20388,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q4nv04rw)
 
 
 
-### zooming<span class="type-signature type object">object</span>
+### zooming `object`
 {:#members:zooming}
 
 
@@ -21440,7 +20401,7 @@ Options for enabling zooming feature of chart.
 
 
 
-### zooming.enable<span class="type-signature type boolean">boolean</span>
+### zooming.enable `boolean`
 {:#members:zooming-enable}
 
 
@@ -21449,15 +20410,14 @@ Options for enabling zooming feature of chart.
 Enables or disables zooming.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21473,7 +20433,7 @@ $("#container").ejChart({
 
 
 
-### zooming.enableDeferredZoom<span class="type-signature type boolean">boolean</span>
+### zooming.enableDeferredZoom `boolean`
 {:#members:zooming-enabledeferredzoom}
 
 
@@ -21482,15 +20442,14 @@ $("#container").ejChart({
 Enable or disables the differed zooming. When it is enabled, chart is updated only on mouse up action while zooming and panning.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21506,7 +20465,7 @@ $("#container").ejChart({
 
 
 
-### zooming.enableMouseWheel<span class="type-signature type boolean">boolean</span>
+### zooming.enableMouseWheel `boolean`
 {:#members:zooming-enablemousewheel}
 
 
@@ -21515,15 +20474,14 @@ $("#container").ejChart({
 Enables/disables the ability to zoom the chart on moving the mouse wheel.
 
 
-Default value:
-{:.param}
-false
+#### Default Value
+
+* false
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21542,7 +20500,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0gkvnyi3)
 
 
 
-### zooming.type<span class="type-signature type string">string</span>
+### zooming.type `string`
 {:#members:zooming-type}
 
 
@@ -21551,15 +20509,14 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0gkvnyi3)
 Specifies whether to allow zooming the chart vertically or horizontally or in both ways.
 
 
-Default value:
-{:.param}
-'x,y'
+#### Default Value
+
+* 'x,y'
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21583,7 +20540,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 
-### animate<span class="signature">(options)</span>
+### animate(options)
 {:#methods:animate}
 
 
@@ -21637,7 +20594,7 @@ chartObj.animate(chartObj.model.indicators[0]);
 
 
 
-### export<span class="signature">(type, url, exportMultipleChart)</span>
+### export(type, url, exportMultipleChart)
 {:#methods:export}
 
 
@@ -21708,7 +20665,7 @@ chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChart
 
 
 
-### redraw<span class="signature">()</span>
+### redraw()
 {:#methods:redraw}
 
 
@@ -21718,8 +20675,7 @@ Redraws the entire chart. You can call this method whenever you update, add or r
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21813,8 +20769,7 @@ argument.type{% endhighlight %}</td>
 
 Fires before rendering the labels. This event is fired for each label in axis. You can use this event to add custom text to axis labels.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21891,8 +20846,7 @@ argument.type{% endhighlight %}</td>
 Fires during the initialization of axis labels.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -21955,8 +20909,7 @@ argument.type{% endhighlight %}</td>
 
 Fires during axes range calculation. This event is fired for each axis present in Chart. You can use this event to customize axis range as required.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22037,8 +20990,7 @@ argument.type{% endhighlight %}</td>
 Fires before rendering the axis title. This event is triggered for each axis with title. You can use this event to add custom text to axis title.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22119,8 +21071,7 @@ argument.type{% endhighlight %}</td>
 Fires during the calculation of chart area bounds. You can use this event to customize the bounds of chart area.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22203,8 +21154,7 @@ Fires after chart is created.
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22264,8 +21214,7 @@ Fires when chart is destroyed completely.
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22324,8 +21273,7 @@ argument.type{% endhighlight %}</td>
 Fires before rendering the data labels. This event is triggered for each data label in the series. You can use this event to add custom text in data labels.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22413,8 +21361,7 @@ argument.type{% endhighlight %}</td>
 
 Fires during the calculation of legend bounds. You can use this event to customize the bounds of legend.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22490,8 +21437,7 @@ argument.type{% endhighlight %}</td>
 Fires on clicking the legend item. 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22589,8 +21535,7 @@ argument.data.legendItem.series{% endhighlight %}</td>
 
 Fires when moving mouse over legend item. You can use this event for hit testing on legend items.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22691,8 +21636,7 @@ Argument.data.legendItem.series{% endhighlight %}</td>
 Fires before rendering the legend item. This event is fired for each legend item in Chart. You can use this event to customize legend item shape or add custom text to legend item.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22787,8 +21731,7 @@ argument.data.symbolShape{% endhighlight %}</td>
 Fires before loading the chart.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22846,8 +21789,7 @@ argument.type{% endhighlight %}</td>
 
 Fires on clicking a point in chart. You can use this event to handle clicks made on points.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -22928,8 +21870,7 @@ argument.data.region.Region.pointIndex{% endhighlight %}</td>
 
 Fires when mouse is moved over a point. 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23009,8 +21950,7 @@ argument.data.region.seriesIndex{% endhighlight %}</td>
 Fires before rendering chart. 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23066,8 +22006,7 @@ argument.type{% endhighlight %}</td>
 
 Fires after selecting a series. This event is triggered after selecting a series only if selection mode is series.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23136,8 +22075,7 @@ argument.data.seriesIndex{% endhighlight %}</td>
 
 Fires before rendering a series. This event is fired for each series in Chart.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23200,8 +22138,7 @@ argument.data.series{% endhighlight %}</td>
 
 Fires before rendering the marker symbols. This event is triggered for each marker in Chart.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23272,8 +22209,7 @@ argument.data.style{% endhighlight %}</td>
 Fires before rendering the Chart title. You can use this event to add custom text in Chart title.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23347,8 +22283,7 @@ argument.data.title{% endhighlight %}</td>
 
 Fires before rendering the tooltip. This event is fired when tooltip is enabled and mouse is hovered on a Chart point. You can use this event to customize tooltip before rendering.
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23423,8 +22358,7 @@ argument.data.seriesIndex{% endhighlight %}</td>
 Fires before rendering crosshair tooltip in axis. This event is fired for each axis with crosshair label enabled. You can use this event to customize crosshair label before rendering
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23505,8 +22439,7 @@ argument.data.currentTrackText{% endhighlight %}</td>
 Fires before rendering trackball tooltip. This event is fired for each series in Chart because trackball tooltip is displayed for all the series. You can use this event to customize the text displayed in trackball tooltip.
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight js %}
@@ -23582,6 +22515,3 @@ argument.data.series{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
-
-

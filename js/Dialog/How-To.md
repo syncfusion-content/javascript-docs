@@ -1,10 +1,11 @@
 ---
 layout: post
-title: How-To
-description: how to
+title: How to section in Dialog widget for Essential JS? 
+description: How to achieve specific requirements in Dialog widget for Essential JS
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 # How To?
 
@@ -95,6 +96,35 @@ Create a div element to render the child Dialog widget and use it as a content o
 
 {% endhighlight %}
 
+Initialize both the Dialog widgets by adding the script section as below.
+
+{% highlight js %}
+
+
+        $(function () {
+            $("#button1").ejButton({ click: "openDialog" });
+            $("#button2").ejButton({ click: "openNestedDialog" });
+
+            $("#dialog").ejDialog({
+                title: "Dialog",
+                showOnInit: false,
+                width: 500, height: 400,
+                actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]
+            });
+            $("#nesteddialog").ejDialog({
+                title: "Nested Dialog",
+                showOnInit: false,
+                width: 300, height: 200
+            });
+        });
+
+        function openDialog(args) {
+            $("#dialog").ejDialog("open");
+        }
+        function openNestedDialog(args) {
+            $("#nesteddialog").ejDialog("open");
+        }   
 
 
 
+{% endhighlight %}

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of ListBox widget for Syncfusion Essential JS
+description: Explains about the ListBox widget and its key features
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Overview
 
 The ListBox control provides a list of options for users to select from. It is capable of including other HTML elements such as images, text boxes, check boxes, and radio buttons and so on. It also supports data binding, template options, and multi-select options.
 
-** Key Features **
+**Key Features**
 
 * Data Binding: Supports Data binding with JSON data and remote data.
 

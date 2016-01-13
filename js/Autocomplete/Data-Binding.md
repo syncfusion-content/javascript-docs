@@ -1,10 +1,11 @@
 ---
 layout: post
-title: data-binding
-description: data binding
+title: Databinding in AutoComplete widget for Essential JS
+description: How to populate data for the suggestion list.
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Data Binding
@@ -35,27 +36,27 @@ Here the name and index fields are mapped with text and key properties of the fi
 
 {% highlight html %}
 
-
-<input type="text" id="autocomplete" />
-
-<script type="text/javascript">
-
-        var countriesField = [
-              { name: "Austria", index: "C1" },
-              { name: "Australia", index: "C2" }, { name: "Antarctica", index: "C3" },
-              { name: "Bangladesh", index: "C4" }, { name: "Belgium", index: "C5" },
-              { name: "Brazil", index: "C6" },
-              { name: "Canada", index: "C7" }, { name: "China", index: "C8" },
-              { name: "Cuba", index: "C9" },
-              { name: "Denmark", index: "C10" }, { name: "Dominica", index: "C11" },
-              { name: "Europe", index: "C12" }, { name: "Egypt", index: "C13" },
-              { name: "England", index: "C14" },
-              { name: "India", index: "C15" }, { name: "Indonesia", index: "C16" }
-        ];
-
-        $('#autocomplete').ejAutocomplete({ dataSource: countriesField, fields: { key: "index", text: "name" }, width: 205 });
-
-</script>
+        
+        <input type="text" id="autocomplete" />
+        
+        <script type="text/javascript">
+        
+                var countriesField = [
+                { name: "Austria", index: "C1" },
+                { name: "Australia", index: "C2" }, { name: "Antarctica", index: "C3" },
+                { name: "Bangladesh", index: "C4" }, { name: "Belgium", index: "C5" },
+                { name: "Brazil", index: "C6" },
+                { name: "Canada", index: "C7" }, { name: "China", index: "C8" },
+                { name: "Cuba", index: "C9" },
+                { name: "Denmark", index: "C10" }, { name: "Dominica", index: "C11" },
+                { name: "Europe", index: "C12" }, { name: "Egypt", index: "C13" },
+                { name: "England", index: "C14" },
+                { name: "India", index: "C15" }, { name: "Indonesia", index: "C16" }
+                ];
+        
+                $('#autocomplete').ejAutocomplete({ dataSource: countriesField, fields: { key: "index", text: "name" }, width: 205 });
+        
+        </script>
 
 
 
@@ -75,22 +76,22 @@ Here the ContactName and SupplierID fields are mapped with text and key properti
 
 {% highlight html %}
 
-<input type="text" id="autocomplete" />
-
-<script type="text/javascript">
-
-        /* Create DataManager */
-        var dataManger = ej.DataManager({
-            /* OData service */
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-        });
-        /* Create Query */
-        var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
-
-        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205 });
-
-</script>
-
+        <input type="text" id="autocomplete" />
+        
+        <script type="text/javascript">
+        
+                /* Create DataManager */
+                var dataManger = ej.DataManager({
+                /* OData service */
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+                });
+                /* Create Query */
+                var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
+        
+                $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205 });
+        
+        </script>
+        
 
 
 {% endhighlight %}
@@ -110,21 +111,21 @@ Here the ContactName and SupplierID fields are mapped with text and key properti
 Here the ContactName field is mapped with text property of the field object. 
 
 {% highlight html %}
-
-<input type="text" id="autocomplete" />
-
-<script type="text/javascript">
-
-        /* Creating DataManager */
-        var dataManger = ej.DataManager({
-            /* ASP.NET Web API */
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Suppliers",
-            crossDomain: true
-        });        
-        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, fields: { text: "ContactName" }, width: 205 });
-
-</script>
-
+        
+        <input type="text" id="autocomplete" />
+        
+        <script type="text/javascript">
+        
+                /* Creating DataManager */
+                var dataManger = ej.DataManager({
+                /* ASP.NET Web API */
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Suppliers",
+                crossDomain: true
+                });        
+                $('#autocomplete').ejAutocomplete({ dataSource: dataManger, fields: { text: "ContactName" }, width: 205 });
+        
+        </script>
+        
 
 
 {% endhighlight %}
@@ -143,32 +144,32 @@ N> In the above data manager configuration, “crossDomain” must be set to tru
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/js/api/ejautocomplete)” event. 
 
 {%seealso%} 
-* [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) 
+* [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) event
 
-* [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) events
+* [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) event
 {%endseealso%}
 
 {% highlight html %}
 
-<input type="text" id="autocomplete" />
-
-<script type="text/javascript">
-
-        /* Creating DataManager */
-        var dataManger = ej.DataManager({
-            /* Web service host */
-            url: "http://mvc.syncfusion.com/Services/"
-        });
-        /* Query creation */
-        var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
-
-        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205, actionFailure: onRequestFailure });
-
-        function onRequestFailure(args) {
-            //Error handler
-        }
-
-</script>
+        <input type="text" id="autocomplete" />
+        
+        <script type="text/javascript">
+        
+                /* Creating DataManager */
+                var dataManger = ej.DataManager({
+                /* Web service host */
+                url: "http://mvc.syncfusion.com/Services/"
+                });
+                /* Query creation */
+                var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
+        
+                $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205, actionFailure: onRequestFailure });
+        
+                function onRequestFailure(args) {
+                //Error handler
+                }
+        
+        </script>
 
 
 

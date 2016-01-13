@@ -460,6 +460,31 @@ queryString: "EmployeeID",
 </script>
 {% endhighlight %}
 
+### columnLayout `enum`
+{:#members:columnlayout}
+
+Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ColumnLayout.Auto
+
+#### Example
+{:.example}
+{% highlight html %}           
+<div id="Grid"></div>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+   columnLayout:ej.Grid.ColumnLayout.Fixed,
+    columns: [
+       { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, width: 80  },
+       { field: "CustomerID", headerText: "Customer ID", width: 90 },
+             ],
+});
+</script>
+{% endhighlight %}
+
 ### columns `Array`
 {:#members:columns}
 
@@ -587,6 +612,29 @@ $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowResizing:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowResizing:false},{field:"ShipCity"}] 
+});
+</script> 
+{% endhighlight %}
+
+### columns.showInColumnChooser `Boolean`
+{:#members:columns-showincolumnchooser}
+
+Used to hide the particular column in columnchooser by giving value as false.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+ showColumnChooser:true,
+    columns:[{field:"OrderID"},{field:"CustomerID",showInColumnChooser:false},{field:"ShipCity"}] 
+});
 });
 </script> 
 {% endhighlight %}
@@ -1184,6 +1232,53 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+
+### columns.tooltip `string`
+{:#members:columns-tooltip}
+
+Sets the template for Tooltip in Grid Columns(both header and content)
+
+Default Value:
+{:.param}
+* null
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script type="text/template" id="colTip">
+  {{"{{"}}:value {{}}}}
+  </script>
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
+     });
+</script> {% endhighlight %}
+
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+Sets the clipmode for Grid cell as ellipsis or clipped content(both header and content)
+
+Default Value:
+{:.param}
+* ej.Grid.ClipMode.Clip
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
+ });
+</script> {% endhighlight %}
+
 ### columns.type `String`
 {:#members:columns-type}
 
@@ -1344,6 +1439,45 @@ $("#Grid").ejGrid({
 });
 </script> 
 {% endhighlight %}
+
+### contextMenuSettings.subContextMenu `Array`
+{:#members:contextmenusettings-subcontextmenu}
+
+Used to get or set the subMenu to the corresponding custom context menu item.
+
+### contextMenuSettings.subContextMenu.contextMenuItem `string`
+{:#members:contextmenusettings-subcontextmenu-contextmenuitem}
+
+Used to get or set the corresponding custom context menu item to which the submenu to be appended.
+
+#### Default Value:
+{:.param}
+* null
+
+### contextMenuSettings.subContextMenu.subMenu `Array`
+{:#members:contextmenusettings-subcontextmenu-submenu}
+
+Used to get or set the sub menu items to the custom context menu item.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+   contextMenuSettings: { enableContextMenu: true, customContextMenuItems: ["Hide Column"],
+   subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }] 
+  },          
+});
+</script>
+{% endhighlight %}
+
 
 ### cssClass `String`
 {:#members:cssclass}
@@ -4089,6 +4223,38 @@ $("#Grid").ejGrid("cancelEdit");
 {% endhighlight %}
 
 
+
+### cancelEditCell()
+{:#methods:canceleditcell}
+
+
+Send a cancel request to the edited cell in grid.
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a cancel request to the edited cell in  grid
+gridObj.cancelEditCell();   
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a cancel request to the edited cell in grid
+$("#Grid").ejGrid("cancelEditCell");        
+</script>{% endhighlight %}
+
+
+
+
 ### clearCellSelection()
 {:#methods:clearcellselection}
 
@@ -4167,6 +4333,52 @@ $("#Grid").ejGrid("clearColumnSelection");
 </script>
 
 {% endhighlight %}
+
+
+
+### clearFiltering(field)
+{:#methods:clearfiltering}
+
+It is used to clear all the filtering done.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"> If field of the column is specified then it will clear the  particular filtering column</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearFiltering("EmployeeID"); //clears the filtering based on the fieldName passed
+gridObj.clearFiltering();  // clears all the filtering
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>         
+$("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based on the fieldName passed
+$("#Grid").ejGrid("clearFiltering"); // clears all the filtering
+</script>{% endhighlight %}
 
 
 ### clearSelection(\[index\])
@@ -6283,6 +6495,55 @@ gridObj.resetModelCollections();
 $("#Grid").ejGrid("resetModelCollections");
 </script>{% endhighlight %}
 
+### resizeColumns(column,width)
+{:#methods:resizecolumns}
+
+Resize the columns by giving column name and width for the corresponding one.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the column name that needs to be changed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the width to resize the particular columns</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// ResizeColumns
+gridObj.resizeColumns("OrderID",width); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// ResizeColumns
+$("#Grid").ejGrid("resizeColumns","OrderID",width);
+</script>{% endhighlight %}
+
 
 ### rowHeightRefresh()
 {:#methods:rowheightrefresh}
@@ -6309,6 +6570,34 @@ gridObj.rowHeightRefresh(); // Resolves row height issue
 <script>         
 // Resolves row height issue
 $("#Grid").ejGrid("rowHeightRefresh");   
+</script>{% endhighlight %}
+
+
+### saveCell()
+{:#methods:savecell}
+
+Save the particular edited cell in grid.
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Save the edited cell
+gridObj.saveCell(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+
+<script>
+
+// Save the edited cell
+$("#Grid").ejGrid("saveCell);
 </script>{% endhighlight %}
 
 
@@ -6438,7 +6727,6 @@ var gridObj = $("#Grid").data("ejGrid");
 gridObj.selectCells([[1, [4, 3, 2]]]); 
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <script>
@@ -6545,6 +6833,228 @@ gridObj.selectRows(1, 4);
 <script>
 // Selects rows based on the given index
 $("#Grid").ejGrid("selectRows", 1, 4);
+</script>{% endhighlight %}
+
+
+### selectRows(rowIndexes)
+{:#methods:selectRows}
+
+
++
+
+<table class="param">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+rowIndexes{% endhighlight %}</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description last">Pass array of rowIndexes for selecting rows</td>
+</tr>
+</tbody>
+</table>
+
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Selects rows based on the given array of indexes
+gridObj.selectRows([1,3,5,7]);
+
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Selects rows based on the given array of indexes
+$("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
+</script>{% endhighlight %}
+
+
+### setCellText()
+{:#methods:setcelltext}
+
+Used to update a particular cell value.
+Note: It will work only for Local Data.
+
+#### setCellText(rowIndex, cellIndex, value)
+{:#methods:setcelltext}
+
+Used to update a particular cell value based on specified rowIndex and cellIndex values.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index of row.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index of cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// update a particular cell value
+gridObj.setCellText(0, 1, "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+
+<script>
+// update a particular cell value
+$("#Grid").ejGrid("setCellText", 0, 1, "GREYER");
+</script>{% endhighlight %}
+
+
+#### setCellText(primaryKeyValue, field, value)
+{:#methods:setcelltext}
+
+Used to update a particular cell value based on specified primarykeyvalue and fieldname
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the primarykey value for selecting the corresponding row cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the field name for selecting the corresponding column cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the cell based on specified primaryKeyValue and field name.</td>
+</tr>
+</tbody>
+
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// update a particular cell value
+gridObj.setCellText(10248,"EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+// update a particular cell value
+$("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+
+### setCellValue(index, fieldName, cellValue)
+{:#methods:setcellvalue}
+
+Used to update a particular cell value based on specified row Index and the fieldName.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index for selecting the row.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the field name for selecting column.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the selected cell.</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %} 
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+//Used to update a particular cell value
+gridObj.setCellValue(1,"EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+//Used to update a particular cell value
+$("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
 </script>{% endhighlight %}
 
 
@@ -6838,6 +7348,29 @@ gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
 </script>{% endhighlight %}
 
+### windowonresize()
+{:#methods:windowonresize}
+
+It adapts grid to its parent element or to the browsers window.
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Used for resizing the grid window
+gridObj.windowonresize(); 
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+// Used for resizing the grid window
+$("#Grid").ejGrid("windowonresize");        
+</script>{% endhighlight %}
 
 
 ## Events
@@ -9299,6 +9832,12 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
@@ -9395,6 +9934,12 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
@@ -9471,6 +10016,12 @@ argument{% endhighlight %}</td>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>

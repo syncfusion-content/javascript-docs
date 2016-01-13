@@ -704,3 +704,241 @@ Now, PivotGrid is rendered with Sales Amount over a set of products across diffe
 
 This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf-1).
   
+##Creating a simple application with PivotGrid and Relational datasource (Client-Side)
+
+This section covers the information that you need to know to populate a simple PivotGrid with Relational data completely on the client-side.  
+
+### Scripts and CSS References
+
+Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are highlighted below in an appropriate order.
+
+1. ej.widgets.all.min.css
+2. jquery-1.10.2.min.js
+3. jquery.easing.1.3.min.js
+4. jquery.linq.js
+5. ej.web.all.min.js
+
+### Initialize PivotGrid
+
+Place a "div" tag in the HTML page which acts as a container for the PivotGrid widget. Then initialize the widget using the "ejPivotGrid" method.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>PivotGrid - Getting Started</title>
+
+    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+     <!--Create a tag which acts as a container for ejPivotGrid widget.-->
+     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
+     </div>
+
+     <script type="text/javascript">
+         $(function () {
+              //Set properties and initialize ejPivotGrid widget.
+              $("#PivotGrid1").ejPivotGrid();
+         });
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+### Populate PivotGrid With Data
+
+Let us now see how to populate the PivotGrid control using a sample JSON data as shown below. 
+
+{% highlight html %}
+
+var pivotData = [
+    { Amount: 100, Country: "Canada", Product: "Bike" },
+    { Amount: 200, Country: "Germany", Product: "Van" },
+    { Amount: 300, Country: "Germany", Product: "Car" },
+    { Amount: 150, Country: "United Kingdom", Product: "Bike" },
+    { Amount: 200, Country: "Canada", Product: "Car" }
+]
+
+{% endhighlight %}
+
+Now set the JSON data to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGrid control. 
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html>
+
+//……
+
+<body>
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
+    </div>
+    <script type="text/javascript">
+
+        //Datasource
+        var pivotData = [
+            { Amount: 100, Country: "Canada", Product: "Bike" },
+            { Amount: 200, Country: "Germany", Product: "Van" },
+            { Amount: 300, Country: "Germany", Product: "Car" },
+            { Amount: 150, Country: "United Kingdom", Product: "Bike" },
+            { Amount: 200, Country: "Canada", Product: "Car" }
+        ]
+
+        $(function () {
+            $("#PivotGrid1").ejPivotGrid({
+                dataSource: {
+                    //Datasource bound to PivotGrid control.
+                    data: pivotData,
+                    //Required fields in row, column, value and filter areas of PivotGrid control.
+                    rows: [
+                        {
+                            fieldName: "Country",
+                            fieldCaption: "Country"
+                        }
+                    ],
+                    columns: [
+                        {
+                            fieldName: "Product",
+                            fieldCaption: "Product"
+                        }
+                    ],
+                    values: [
+                        {
+                           fieldName: "Amount",
+                           fieldCaption: "Amount"
+                        }
+                    ],
+                },
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+{% endhighlight %}
+
+The above code will generate a simple PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section. 
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/purejs.png" %}
+
+### Apply Sorting
+
+You can sort a field either to ascending or descending order using the **"sortOrder"** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+
+{% highlight html %}
+
+$(function () {
+    $("#PivotGrid1").ejPivotGrid({
+        dataSource: {
+            data: pivotData,
+            rows: [{
+                fieldName: "Country",
+                fieldCaption: "Country",
+                sortOrder: ej.PivotAnalysis.SortOrder.Descending
+            },
+            ],
+            //……
+        },
+    });
+});
+
+
+
+{% endhighlight %}
+
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/purejssorting.png" %}
+
+
+### Apply Filtering
+
+Filtering option allows you to specify a set of values that either need to be displayed or hided. Also filtering option is applicable only for Row, Column and Filter areas.
+
+**"filterItems"** object allow us to apply filtering to the fields using the following properties:
+
+* filterType -  indicates whether the values should be included or excluded.
+* values -  specify an array of values that needs to be included or excluded within the particular field.
+
+
+{% highlight html %}
+
+$(function () {
+    $("#PivotGrid1").ejPivotGrid({
+        dataSource: {
+            data: pivotData,
+            rows: [{
+                fieldName: "Country",
+                fieldCaption: "Country",
+                filterItems: {
+                    filterType: ej.PivotAnalysis.FilterType.Exclude,
+                    values: ["United Kingdom"]
+                }
+            }
+            ],
+            columns: [{
+                fieldName: "Product",
+                fieldCaption: "Product",
+                filterItems: {
+                    filterType: ej.PivotAnalysis.FilterType.Include,
+                    values: ["Bike", "Car"]
+                 }
+            }
+            ],
+           //……
+        },
+    });
+});
+
+{% endhighlight %}
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/purejsfiltering.png" %}
+
+### Apply Summary Types
+
+Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"totalsum"** is the default summary type. Following are the summary types that are supported:
+
+* totalsum
+* average
+* count
+* minimum
+* maximum
+
+{% highlight html %}
+
+$(function () {
+    $("#PivotGrid1").ejPivotGrid({
+        dataSource: {
+            data: pivotData,
+            //……
+            values: [{
+                fieldName: "Amount",
+                fieldCaption: "Amount",
+                summaryType: ej.PivotAnalysis.SummaryType.Average
+            },
+            {
+                fieldName: "Quantity",
+                fieldCaption: "Quantity",
+                summaryType: ej.PivotAnalysis.SummaryType.TotalSum
+            },
+            ],
+            //……
+        },
+    });
+});
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/purejssummarytype.png" %}
+
+
+

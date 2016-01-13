@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Action-Buttons
-description: action buttons
+title: Action Buttons in Dialog widget for Essential JS
+description: How to enable the Interaction button like “Close”, “Minimize” and etc., in Dialog Widget. 
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 
 # Action Buttons
