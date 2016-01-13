@@ -2592,6 +2592,69 @@ Outer</td>
 
 
 
+### ColumnLayout
+{:#enum:columnlayout}
+
+
+
+
+
+
+
+
+Enum for grid columnlayout
+
+
+
+
+
+
+#### Properties
+
+
+Set the columnlayout to column width will be adjusted or not
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="type">string</td>
+<td class="default">auto</td>
+<td class="description">set as auto means column width will be adjusted.</td>
+</tr>
+<tr>
+<td class="name">Fixed</td>
+<td class="type">string</td>
+<td class="default">fixed</td>
+<td class="description">Set as fixed means column width will be not adjusted.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### dataTypes
 {:#enum:datatypes}
 
@@ -3391,7 +3454,195 @@ Data</td>
 
 
 
-### FileFormats
+### EditType
+{:#enum:edittype}
+
+
+
+
+
+
+
+
+Enum for the types of editing in grid
+
+
+
+
+
+
+#### Properties
+
+
+Enum for the types of editing in grid
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Boolean</td>
+<td class="type">string</td>
+<td class="default">boolean</td>
+<td class="description">Specifies column should be edit as boolean</td>
+</tr>
+<tr>
+<td class="name">DatePicker</td>
+<td class="type">string</td>
+<td class="default">datepicker</td>
+<td class="description">Specifies column should be edit as datePicker</td>
+</tr>
+<tr>
+<td class="name">DateTimePicker</td>
+<td class="type">string</td>
+<td class="default">datetimepicker</td>
+<td class="description">Specifies column should be edit as datetimepicker</td>
+</tr>
+<tr>
+<td class="name">Dropdown</td>
+<td class="type">string</td>
+<td class="default">dropdown</td>
+<td class="description">Specifies column should be edit as dropdown</td>
+</tr>
+<tr>
+<td class="name">Numeric</td>
+<td class="type">string</td>
+<td class="default">numeric</td>
+<td class="description">Specifies column should be edit as numeric</td>
+</tr>
+<tr>
+<td class="name">String</td>
+<td class="type">string</td>
+<td class="default">string</td>
+<td class="description">Specifies column should be edit as string</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### EditMode
+{:#enum:editmode}
+
+
+
+
+
+
+
+
+Enum for the mode of editing in grid
+
+
+
+
+
+
+#### Properties
+
+
+Enum for the mode of editing in grid
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Normal</td>
+<td class="type">string</td>
+<td class="default">normal</td>
+<td class="description">Specifies column should be editmode as normal</td>
+</tr>
+<tr>
+<td class="name">Dialog</td>
+<td class="type">string</td>
+<td class="default">dialog</td>
+<td class="description">Specifies column should be editmode as dialog</td>
+</tr>
+<tr>
+<td class="name">DialogTemplate</td>
+<td class="type">string</td>
+<td class="default">dialogtemplate</td>
+<td class="description">Specifies column should be editmode as dialogtemplate</td>
+</tr>
+<tr>
+<td class="name">Batch</td>
+<td class="type">string</td>
+<td class="default">batch</td>
+<td class="description">Specifies column should be editmode as batch</td>
+</tr>
+<tr>
+<td class="name">ExternalForm</td>
+<td class="type">string</td>
+<td class="default">externalform</td>
+<td class="description">Specifies column should be editmode as externalform</td>
+</tr>
+<tr>
+<td class="name">InlineForm</td>
+<td class="type">string</td>
+<td class="default">inlineform</td>
+<td class="description">Specifies column should be editmode as inlineform</td>
+</tr>
+<tr>
+<td class="name">InlineTemplateForm</td>
+<td class="type">string</td>
+<td class="default">inlineformtemplate</td>
+<td class="description">Specifies column should be editmode as inlineformtemplate</td>
+</tr>
+<tr>
+<td class="name">ExternalFormTemplate</td>
+<td class="type">string</td>
+<td class="default">externalformtemplate</td>
+<td class="description">Specifies column should be editmode as externalformtemplate</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ### FileFormats
 {:#enum:fileformats}
 
 
@@ -3490,30 +3741,29 @@ Enum for Grid Filter Bar mode
 #### Properties
 
 
+Used to display filter results after enter key is pressed or specified time interval
 
 
 
 
 <table class="props">
 <thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th class="last">Description</th>
-</tr>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
 </thead>
 <tbody>
 <tr>
-<td class="name">
-Immediate</td>
+<td class="name">Immediate</td>
 <td class="type">string</td>
 <td class="default">immediate</td>
 <td class="description">Used to display filter results as soon as typing the filter query or after specified time interval</td>
 </tr>
 <tr>
-<td class="name">
-OnEnter</td>
+<td class="name">OnEnter</td>
 <td class="type">string</td>
 <td class="default">onenter</td>
 <td class="description">Used to display filter results after enter key is pressed</td>
@@ -3556,32 +3806,38 @@ Enum for filtertype
 
 
 
+Enum for filtertype
+
 
 
 
 <table class="props">
 <thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th class="last">Description</th>
-</tr>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
 </thead>
 <tbody>
 <tr>
-<td class="name">
-StartsWith</td>
+<td class="name">Menu</td>
 <td class="type">string</td>
-<td class="default">startswith</td>
-<td class="description">Enum for filter type startswith</td>
+<td class="default">menu</td>
+<td class="description">Enum for filter type menu</td>
 </tr>
 <tr>
-<td class="name">
-Contains</td>
+<td class="name">Excel</td>
 <td class="type">string</td>
-<td class="default">contains</td>
-<td class="description">Enum for filter type contains</td>
+<td class="default">excel</td>
+<td class="description">Enum for filter type excel</td>
+</tr>
+<tr>
+<td class="name">FilterBar</td>
+<td class="type">string</td>
+<td class="default">filterbar</td>
+<td class="description">Enum for filter type filterbar</td>
 </tr>
 </tbody>
 </table>
@@ -5201,6 +5457,69 @@ HalfCircle</td>
 
 
 
+### FormPosition
+{:#enum:formposition}
+
+
+
+
+
+
+
+
+Enum for grid Formposition
+
+
+
+
+
+
+#### Properties
+
+
+Enum for grid Formposition
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">BottomLeft</td>
+<td class="type">string</td>
+<td class="default">bottomleft</td>
+<td class="description">To set the Formposition as bottomleft.</td>
+</tr>
+<tr>
+<td class="name">TopRight</td>
+<td class="type">string</td>
+<td class="default">topright</td>
+<td class="description">To set the Formposition as topright.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### gaugePosition
 {:#enum:gaugeposition}
 
@@ -6531,6 +6850,89 @@ Twelve</td>
 </tr>
 </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### HeaderTextAlign
+{:#enum:headertextalign}
+
+
+
+
+
+
+
+
+Enum for the Headertext Alignment in grid
+
+
+
+
+
+
+#### Properties
+
+
+
+Enum for the HeaderText Alignment in grid
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<th>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to align headertext on left side of node</td>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="type">string</td>
+<td class="default">center</td>
+<td class="description">Used to align headertext on center of node</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to align headertext on Right side of node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -11874,6 +12276,69 @@ Surface</td>
 
 
 
+### PrintMode
+{:#enum:printmode}
+
+
+
+
+
+
+
+
+Enum for pagesetting in print mode.
+
+
+
+
+
+
+#### Properties
+
+
+Enum for page settting in print mode.
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">AllPages</td>
+<td class="type">string</td>
+<td class="default">allpages</td>
+<td class="description">Specifies Printmode for allpages.</td>
+</tr>
+<tr>
+<td class="name">CurrentPage</td>
+<td class="type">string</td>
+<td class="default">currentpage</td>
+<td class="description">Specifies Printmode for currentpage.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### RangePadding
 {:#enum:rangepadding}
 
@@ -12331,6 +12796,69 @@ Windows</td>
 </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### RowPosition
+{:#enum:rowposition}
+
+
+
+
+
+
+
+
+Enum for grid Rowposition
+
+
+
+
+
+
+#### Properties
+
+
+Enum for grid Rowposition
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td>
+<td class="type">string</td>
+<td class="default">top</td>
+<td class="description">To set the rowposition as top.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="type">string</td>
+<td class="default">bottom</td>
+<td class="description">To set the rowposition as bottom.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -13947,6 +14475,139 @@ qrBarcode</td>
 
 
 
+### SelectionMode
+{:#enum:selectionMode}
+
+
+
+
+
+
+
+
+Enum for grid as Selectionmode
+
+
+
+
+
+
+#### Properties
+
+
+Enum for grid as Selectionmode
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Row</td>
+<td class="type">string</td>
+<td class="default">row</td>
+<td class="description">To set the Selectionmode as row.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="type">string</td>
+<td class="default">cell</td>
+<td class="description">To set the Selectionmode as cell.</td>
+</tr>
+<tr>
+<td class="name">Column</td>
+<td class="type">string</td>
+<td class="default">column</td>
+<td class="description">To set the Selectionmode as column.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### SelectionType
+{:#enum:selectiontype}
+
+
+
+
+
+
+
+
+Enum for grid as selectiontype
+
+
+
+
+
+
+#### Properties
+
+
+Enum for grid as selectiontype
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Single</td>
+<td class="type">string</td>
+<td class="default">single</td>
+<td class="description">To set the selectiontype as single.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="type">string</td>
+<td class="default">multiple</td>
+<td class="description">To set the selectiontype as multiple.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### TrendlinesType
 {:#enum:trendlinestype}
 
@@ -14082,8 +14743,7 @@ Center</td>
 <td class="description">Used to align text on center of node/connector</td>
 </tr>
 <tr>
-<td class="name">
-Right</td>
+<td class="name">Right</td>
 <td class="type">string</td>
 <td class="default">right</td>
 <td class="description">Used to align text on Right side of node/connector</td>
@@ -14091,6 +14751,75 @@ Right</td>
 </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### TextAlign
+{:#enum:textalign}
+
+
+
+
+
+
+
+
+Enum for the Text Alignment in grid
+
+
+
+
+
+
+#### Properties
+
+
+
+Enum for the Text Alignment in grid
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<th>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to align text on left side of node</td>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="type">string</td>
+<td class="default">center</td>
+<td class="description">Used to align text on center of node</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to align text on Right side of node</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -16152,6 +16881,192 @@ Popup</td>
 
 
 
+### Type
+{:#enum:type}
+
+
+
+
+
+
+
+
+Enum for Command Type
+
+
+
+
+
+
+#### Properties
+
+
+Enum for Command Type
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Edit</td>
+<td class="type">string</td>
+<td class="default">edit</td>
+<td class="description">Enum for edit type commands column</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="type">string</td>
+<td class="default">delete</td>
+<td class="description">Enum for delete type commands column</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="type">string</td>
+<td class="default">save</td>
+<td class="description">Enum for save type commands column</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="type">string</td>
+<td class="default">cancel</td>
+<td class="description">Enum for cancel type commands column</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ToolBarItems
+{:#enum:toolbaritems}
+
+
+
+
+
+
+
+
+Enum for toolbaritems in grid
+
+
+
+
+
+
+#### Properties
+
+
+Enum for toolbaritems in grid
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td>
+<td class="type">string</td>
+<td class="default">add</td>
+<td class="description">To set the toolbaritem as add.</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="type">string</td>
+<td class="default">cancel</td>
+<td class="description">To set the toolbaritem as cancel.</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="type">string</td>
+<td class="default">delete</td>
+<td class="description">To set the toolbaritem as delete.</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="type">string</td>
+<td class="default">edit</td>
+<td class="description">To set the toolbaritem as edit.</td>
+</tr>
+<tr>
+<td class="name">ExcelExport</td>
+<td class="type">string</td>
+<td class="default">excelexport</td>
+<td class="description">To set the toolbaritem as excelexport.</td>
+</tr>
+<tr>
+<td class="name">PdfExport</td>
+<td class="type">string</td>
+<td class="default">pdfexport</td>
+<td class="description">To set the toolbaritem as pdfexport.</td>
+</tr>
+<tr>
+<td class="name">PrintGrid</td>
+<td class="type">string</td>
+<td class="default">printgrid</td>
+<td class="description">To set the toolbaritem as printgrid.</td>
+</tr>
+<tr>
+<td class="name">Search</td>
+<td class="type">string</td>
+<td class="default">search</td>
+<td class="description">To set the toolbaritem as search.</td>
+</tr>
+<tr>
+<td class="name">Update</td>
+<td class="type">string</td>
+<td class="default">update</td>
+<td class="description">To set the toolbaritem as update.</td>
+</tr>
+<tr>
+<td class="name">WordExport</td>
+<td class="type">string</td>
+<td class="default">wordExport</td>
+<td class="description">To set the toolbaritem as wordExport.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Unit
 {:#enum:unit}
 
@@ -16731,6 +17646,70 @@ Far</td>
 <td class="type">string</td>
 <td class="default">far</td>
 <td class="description">Sets vertical alignment of text to far</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### VirtualScrollMode
+{:#enum:virtualscrollmode}
+
+
+
+
+
+
+
+
+Enum for grid as virtualscrollmode
+
+
+
+
+
+
+#### Properties
+
+
+Enum for grid as virtualscrollmode
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Normal</td>
+<td class="type">string</td>
+<td class="default">normal</td>
+<td class="description">To set the virtualscrollmode as normal.</td>
+</tr>
+<tr>
+<td class="name">Continuous</td>
+<td class="type">string</td>
+<td class="default">continuous</td>
+<td class="description">To set the virtualscrollmode as continuous.</td>
 </tr>
 </tbody>
 </table>
