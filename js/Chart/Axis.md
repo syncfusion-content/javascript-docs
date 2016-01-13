@@ -1055,7 +1055,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 ## Smart Axis Labels
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) is **none**. The other available values of the Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multipleRows**, **wrap**, **wrapByWord** and **hide**.
+When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) is **none**. The other available values of the Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multiplerows**, **wrap**, **wrapbyword** and **hide**.
 
 {% highlight js %}
 
@@ -1063,7 +1063,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
             // Avoid overlapping of x-axis labels
             primaryXAxis: {
-                labelIntersectAction : 'multipleRows',
+                labelIntersectAction : 'multiplerows',
                  //  ...
             },
             
