@@ -6935,19 +6935,6 @@ Enum for the HeaderText Alignment in grid
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### IconName
 {:#enum:iconname}
 
