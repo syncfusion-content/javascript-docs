@@ -2044,12 +2044,12 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 ### filterSettings.filteredColumns.field `string`
 {:#members:filtersettings-filteredcolumns-field}
 
-Gets or sets a value that indicates whether to define the field name of the column to be sort.
+Gets or sets a value that indicates whether to define the field name of the column to be filter.
 
 ### filterSettings.filteredColumns.operator `enum`
 {:#members:filtersettings-filteredcolumns-operator}
 
-Gets or sets a value that indicates whether to define the filteroperator in string/integer/dateTime.
+Gets or Sets a value that indicates whether to define the filter condition to filtered column.
 
 ### filterSettings.filteredColumns.predicate `string`
 {:#members:filtersettings-filteredcolumns-predicate}
