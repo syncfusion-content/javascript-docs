@@ -69,15 +69,15 @@ N>  The **Source** textbox in the above image denotes the location of the NuGet 
 
 ### Overview
 
-[Bower](bower.io# "") is a package manager for the Web. Syncfusion bower package allows you to use the Syncfusion Javascript libraries in an efficient way.
+[Bower](http://bower.io) is a package manager for the Web. Syncfusion bower package allows you to use the Syncfusion Javascript libraries in an efficient way.
 
-I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets/# "") and also registered as syncfusion-javascript in the bower registry.
+I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as syncfusion-javascript in the bower registry.
 
 ### Bower Install and Configuration
 
 #### Bower Installation
 
-To configure the bower in your machine you need to install [node, npm](http://nodejs.org/# "") and [git](http://git-scm.org/# ""). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower ""). 
+To configure the bower in your machine you need to install [node, npm](http://nodejs.org) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower). 
 Syncfusion Javascript Bower package can be configured in the following ways.
 1. Using command prompt.
 
@@ -119,7 +119,7 @@ N>'bower init'
 
 You can install the Syncfusion bower package from a local directory. To perform this follow the below steps.
 
-1. Navigate the [Syncfusion Javascript bower repository](https://github.com/syncfusion/JavaScript-JavaScript-Widgets/# "") location on github and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
+1. Navigate the [Syncfusion Javascript bower repository](https://github.com/syncfusion/JavaScript-JavaScript-Widgets/) location on github and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.jpeg)
 
