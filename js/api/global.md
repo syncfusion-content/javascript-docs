@@ -14463,7 +14463,7 @@ qrBarcode</td>
 
 
 ### SelectionMode
-{:#enum:selectionMode}
+{:#enum:selectionmode}
 
 
 
