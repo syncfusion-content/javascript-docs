@@ -23,7 +23,7 @@ http://cdn.syncfusion.com/js/assets/external/**[fileName]**
 
 _Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js_  
 
-N>  The first four script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
+N>  The first three script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
 
 <table>
 <tr>
@@ -39,18 +39,13 @@ Common jQuery script to render any of the Syncfusion widgets</td><td>
 <tr>
 <td>
 jQuery.easing</td><td>
-supports animation</td><td>
+Supports animation</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js</a></td></tr>
 <tr>
 <td>
 jsrender</td><td>
-supports template rendering</td><td>
+Supports template rendering</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js">http://cdn.syncfusion.com/js/assets/external/jsrender.min.js</a>  </td></tr>
-<tr>
-<td>
-jQuery.Globalize</td><td>
-Supports Globalization</td><td>
-<a href="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js</a>     </td></tr>
 <tr>
 <td>
 AngularJS</td><td>
@@ -259,7 +254,6 @@ One of the major risk with CDN links is that – sometimes it may go down due to
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     <script type="text/javascript">
@@ -268,7 +262,6 @@ One of the major risk with CDN links is that – sometimes it may go down due to
             // Referring local scripts - Specify the path where the below files are located in your machine
             document.write(decodeURIComponent('%3Cscript src="Scripts/jquery-1.10.2.min.js" %3E%3C/script%3E'));
             document.write(decodeURIComponent('%3Cscript src="Scripts/jquery.easing.1.3.min.js" %3E%3C/script%3E'));
-            document.write(decodeURIComponent('%3Cscript src="Scripts/jquery.globalize.min.js" %3E%3C/script%3E'));
             document.write(decodeURIComponent('%3Cscript src="Scripts/jsrender.min.js" %3E%3C/script%3E'));
         }
 
