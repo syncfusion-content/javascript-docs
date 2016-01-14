@@ -5634,6 +5634,82 @@ BottomCenter</td>
 
 
 
+### GridLines
+{:#enum:gridlines}
+
+
+
+
+
+
+
+
+Enum for gridlines in grid
+
+
+
+
+
+
+#### Properties
+
+
+Enum for gridlines in grid
+
+
+
+
+<table class="props">
+<thead>
+<th>
+<tr>Name</tr>
+<tr>Type</tr>
+<tr>Default</tr>
+<tr>Description</tr>
+</th>
+</thead>
+<tbody>
+<tr>
+<td class="name">Both</td>
+<td class="type">string</td>
+<td class="default">both</td>
+<td class="description">To set the gridline as both side.</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="type">string</td>
+<td class="default">none</td>
+<td class="description">To set the gridline as none.</td>
+</tr>
+<tr>
+<td class="name">Horizontal</td>
+<td class="type">string</td>
+<td class="default">horizontal</td>
+<td class="description">To set the gridline as horizontal.</td>
+</tr>
+<tr>
+<td class="name">Vertical</td>
+<td class="type">string</td>
+<td class="default">vertical</td>
+<td class="description">To set the gridline as vertical.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### HeaderLeftButtonStyle
 {:#enum:headerleftbuttonstyle}
 
