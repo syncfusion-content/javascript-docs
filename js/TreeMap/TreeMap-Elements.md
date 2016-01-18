@@ -59,9 +59,50 @@ You can customize the labels of the **legenditem** using `legendLabel` property 
 
 {% endhighlight %}
 
-
-
 ![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png)
+
+
+### Interactive Legend
+
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding treemap items. You can enable this option by setting `mode` property in `legendSettings` value as “interactive” and default value of `mode` property is “default” to enable the normal legend.
+
+#### Title for Interactive Legend
+
+You can provide the title for interactive legend by using `title` property in `legendSettings`.
+
+#### Label for Interactive Legend
+
+You can provide the left and right labels to interactive legend by using `leftLabel` and `rightLabel` properties in `legendSettings`. 
+
+
+{% highlight js %}
+
+    jQuery(function ($) {
+        $("#treemap").ejTreeMap({
+            layers: [
+            {
+                // ...
+                showLegend: true,
+                legendSettings: {                                        
+                    height: 15,
+                    width: 150,                    
+                    mode: "interactive",
+                    title: "Population",
+                    leftLabel: "0.5M",
+                    rightLabel: "40M",
+                    dockPosition: "top"
+                },
+                // ...                        
+            }]
+        }); 
+    });
+
+{% endhighlight %}
+
+![](/TreeMap-Elements_images/Interactive_Legend.png)
+
+
+
 
 ## Header
 
