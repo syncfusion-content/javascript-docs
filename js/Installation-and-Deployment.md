@@ -65,30 +65,29 @@ N>  The **Source** textbox in the above image denotes the location of the NuGet 
 
 * Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
 
-## Configuring Syncfusion Bower Package
+## Configuring Syncfusion Bower Packages
 
 ### Overview
 
-[Bower](http://bower.io) is a package manager for the Web. Syncfusion bower package allows you to use the Syncfusion Javascript libraries in an efficient way.
+[Bower](http://bower.io) is a package manager for the Web. Syncfusion bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
 
 I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as syncfusion-javascript in the bower registry.
 
-### Bower Install and Configuration
-
-#### Bower Installation
+### Bower Installation
 
 To configure the bower in your machine you need to install [node, npm](http://nodejs.org) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower). 
 Syncfusion Javascript Bower package can be configured in the following ways.
+
 1. Using command prompt.
 
 2. Using bower.json file.
 
 3. From local directory.
 
-##### Using command prompt
-
+#### Using command prompt
 
 Perform the below steps to install Syncfusion bower Package via command prompt in your web application.
+
 1. Open your web project’s location in a command prompt window.
 
 2. Then run the command bower install <package name>.
@@ -104,7 +103,7 @@ Perform the below steps to install Syncfusion bower Package via command prompt i
 N>To install a particular version of a bower package, you need to provide the version as suffix of the package name while installing. For instance, run the below command, Eg: To install the package of version 13.3.0.18. 
 N>'bower install syncfusion-javascript#13.3.0.18'
 
-##### Using bower.json file
+#### Using bower.json file
 
 In another way, you can add the packages to the bower.json file by simply specify the package name. This will install/restore the packages to your project. Please refer the below image.
  
@@ -115,7 +114,7 @@ N>'bower init'
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.jpeg)
 
-##### From local directory
+#### From local directory
 
 You can install the Syncfusion bower package from a local directory. To perform this follow the below steps.
 
@@ -127,7 +126,7 @@ You can install the Syncfusion bower package from a local directory. To perform 
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img9.jpeg)
 
-#### Bower Update
+### Bower Update
 
 To update the installed bower packages, run the command bower update <package name>.
 ~~~
