@@ -24,8 +24,7 @@ $(element).ejGrid(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for grid</td>
 </tr>
@@ -4298,8 +4297,7 @@ It is used to clear all the row selection or at specific row selection based on 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the column is specified then it will remove the selection from the particular column else it will clears all of the column selection</td>
 </tr>
@@ -4351,8 +4349,7 @@ It is used to clear all the filtering done.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"> If field of the column is specified then it will clear the  particular filtering column</td>
 </tr>
@@ -4397,8 +4394,7 @@ Clear all the row selection or at specific row selection based on the index prov
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the row is specified then it will remove the selection from the particular row else it will clears all of the row selection</td>
 </tr>
@@ -4534,14 +4530,12 @@ Add or remove columns in grid column collections
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columndetails{% endhighlight %}</td>
+<td class="name">columndetails</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of columns or string of field name to add/remove the column in grid</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass add/remove action to be performed. By default "add" action will perform</td>
 </tr>
@@ -4593,8 +4587,7 @@ Refresh the grid with new data source
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-datasource{% endhighlight %}</td>
+<td class="name">datasource</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass new data source to the grid</td>
 </tr>
@@ -4640,14 +4633,12 @@ Delete a record in grid control even allowDeleting is set as false
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the json data of record need to be delete.</td>
 </tr>
@@ -4718,14 +4709,12 @@ Edit a particular cell based on the row index and field name provided in "batch"
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass row index to edit particular cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to perform batch edit</td>
 </tr>
@@ -4825,8 +4814,7 @@ Expand or collapse the row based on the row state in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$target{% endhighlight %}</td>
+<td class="name">$target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the target object to expand/collapse the row based on its row state</td>
 </tr>
@@ -4900,32 +4888,27 @@ Send a filtering request to filter one column in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterOperator{% endhighlight %}</td>
+<td class="name">filterOperator</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">string/integer/dateTime operator</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterValue{% endhighlight %}</td>
+<td class="name">filterValue</td>
 <td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">Pass the value to be filtered in a column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-predicate{% endhighlight %}</td>
+<td class="name">predicate</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the predicate as and/or</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-matchcase{% endhighlight %}</td>
+<td class="name">matchcase</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the match case valueas true/false</td>
 </tr>
@@ -4970,8 +4953,7 @@ Send a filtering request to filter single or multiple column in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-filterQueries{% endhighlight %}</td>
+<td class="name">filterQueries</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass array of filterColumn query for performing filter operation</td>
 </tr>
@@ -5075,8 +5057,7 @@ Get the column details based on the given field in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column object</td>
 </tr>
@@ -5132,8 +5113,7 @@ Get the column details based on the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the header text of the column to get the corresponding column object</td>
 </tr>
@@ -5184,8 +5164,7 @@ Get the column details based on the given column index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the index of the column to get the corresponding column object</td>
 </tr>
@@ -5262,8 +5241,7 @@ Get the column index of the given field in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column index</td>
 </tr>
@@ -5458,8 +5436,7 @@ Get the column field name from the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass header text of the column to get its corresponding field name</td>
 </tr>
@@ -5669,8 +5646,7 @@ Get the column header text from the given field name in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass field name of the column to get its corresponding header text</td>
 </tr>
@@ -5742,8 +5718,7 @@ Get the row index based on the given tr element in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$tr{% endhighlight %}</td>
+<td class="name">$tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr element in grid content to get its row index</td>
 </tr>
@@ -5858,14 +5833,12 @@ Get the rows(tr element) from the given from and to row index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-from{% endhighlight %}</td>
+<td class="name">from</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the from index from which the rows to be returned</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-to{% endhighlight %}</td>
+<td class="name">to</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the to index to which the rows to be returned</td>
 </tr>
@@ -6050,8 +6023,7 @@ Send a paging request to specified page in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-pageIndex{% endhighlight %}</td>
+<td class="name">pageIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the page index to perform paging at specified page index</td>
 </tr>
@@ -6096,8 +6068,7 @@ Send a column grouping request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be grouped in grid control</td>
 </tr>
@@ -6139,8 +6110,7 @@ Hide columns from the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to hide</td>
 </tr>
@@ -6246,8 +6216,7 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-templateRefresh{% endhighlight %}</td>
+<td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> When templateRefresh is set true, template and grid contents both are refreshed in grid else only grid content is refreshed</td>
 </tr>
@@ -6355,8 +6324,7 @@ Remove a column or collection of columns from a sorted column collections in gri
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of field names of the columns to remove a collection of sorted columns or pass a string of field name to remove a column from sorted column collections</td>
 </tr>
@@ -6435,14 +6403,12 @@ Re-order the column in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromFieldName{% endhighlight %}</td>
+<td class="name">fromFieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the from field name of the column needs to be changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-toFieldName{% endhighlight %}</td>
+<td class="name">toFieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the to field name of the column needs to be changed</td>
 </tr>
@@ -6510,14 +6476,12 @@ Resize the columns by giving column name and width for the corresponding one.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the column name that needs to be changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-width{% endhighlight %}</td>
+<td class="name">width</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the width to resize the particular columns</td>
 </tr>
@@ -6617,12 +6581,12 @@ Set dimension for grid with corresponding to grid parent.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>height</code></td>
+<td class="name">height</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the height of the grid container</td>
 </tr>
 <tr>
-<td class="name"><code>width</code></td>
+<td class="name">width</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the width of the grid container</td>
 </tr>
@@ -6662,8 +6626,7 @@ Send a search request to grid with specified string passed in it
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-searchString{% endhighlight %}</td>
+<td class="name">searchString</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the string to search in Grid records</td>
 </tr>
@@ -6706,8 +6669,7 @@ Select cells in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowCellIndexes{% endhighlight %}</td>
+<td class="name">rowCellIndexes</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the starting index of row and indexes of cells for that corresponding row for selecting cells.</td>
 </tr>
@@ -6751,8 +6713,7 @@ Select columns in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromIndex{% endhighlight %}</td>
+<td class="name">fromIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of column for selecting columns.</td>
 </tr>
@@ -6799,14 +6760,12 @@ Select rows in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromIndex{% endhighlight %}</td>
+<td class="name">fromIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of row for selecting rows.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-toIndex{% endhighlight %}</td>
+<td class="name">toIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the ending index of row for selecting rows.</td>
 </tr>
@@ -6852,8 +6811,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowIndexes{% endhighlight %}</td>
+<td class="name">rowIndexes</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass array of rowIndexes for selecting rows</td>
 </tr>
@@ -6905,20 +6863,17 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index of row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index of cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
 </tr>
@@ -6960,20 +6915,17 @@ Used to update a particular cell value based on specified primarykeyvalue and fi
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the primarykey value for selecting the corresponding row cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the field name for selecting the corresponding column cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the cell based on specified primaryKeyValue and field name.</td>
 </tr>
@@ -7017,20 +6969,17 @@ Used to update a particular cell value based on specified row Index and the fiel
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Index{% endhighlight %}</td>
+<td class="name">Index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index for selecting the row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the field name for selecting column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the selected cell.</td>
 </tr>
@@ -7073,14 +7022,12 @@ Set validation to a field during editing.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Specify the field name of the column to set validation rules</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rules{% endhighlight %}</td>
+<td class="name">rules</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Specify the validation rules for the field</td>
 </tr>
@@ -7124,8 +7071,7 @@ Show columns in the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to show</td>
 </tr>
@@ -7171,14 +7117,12 @@ Send a sorting request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column as columnName for which sorting have to be performed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sortingDirection{% endhighlight %}</td>
+<td class="name">sortingDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the sort direction ascending/descending by which the column have to be sort. By default it is sorting in an ascending order</td>
 </tr>
@@ -7222,8 +7166,7 @@ Send an edit record request in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$tr{% endhighlight %}</td>
+<td class="name">$tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr- selected row element to be edited in grid</td>
 </tr>
@@ -7268,8 +7211,7 @@ Un-group a column from grouped columns collection in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be ungrouped from grouped column collection</td>
 </tr>
@@ -7313,14 +7255,12 @@ Update a edited record in grid control even allowEditing is set as false.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the edited json data of record need to be update.</td>
 </tr>
