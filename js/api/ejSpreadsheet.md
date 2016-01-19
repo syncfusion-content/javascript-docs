@@ -2569,9 +2569,9 @@ This method is used to get the activecell element based on the given sheet index
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2670,9 +2670,9 @@ This method is used to get the cell element based on specified row and column in
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2724,9 +2724,9 @@ This method is used to get the frozen columns index in the Spreadsheet.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2768,9 +2768,9 @@ This method is used to get the frozen row’s index in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2812,9 +2812,9 @@ This method is used to get the hyperlink data as object from the specified cell 
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7209,9 +7209,9 @@ Triggered for every action before its starts.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7304,9 +7304,9 @@ Triggered for every action complete.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7380,9 +7380,9 @@ Triggered when the auto fill operation begins.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7465,9 +7465,9 @@ Triggered when the auto fill operation completes.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7551,9 +7551,9 @@ Triggered before the cells to be formatted.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7627,9 +7627,9 @@ Triggered before the cell selection.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7698,9 +7698,9 @@ Triggered before the selected cells are dropped.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7783,9 +7783,9 @@ Triggered before the contextmenu is open.
 <td class="description">Arguments when beforeOpen event is triggered. 
 <table class="params">
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7849,9 +7849,9 @@ Triggered before the activation panel is open.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7925,9 +7925,9 @@ Triggered when click on sheet cell.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -7996,9 +7996,9 @@ Triggered when the cell is edited.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8072,9 +8072,9 @@ Triggered when mouse hover on cell in sheets.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8138,9 +8138,9 @@ Triggered when save the edited cell.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8223,9 +8223,9 @@ Triggered when click the contextmenu items.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8319,9 +8319,9 @@ Triggered when the selected cells are being dragged.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8399,9 +8399,9 @@ Triggered when the selected cells are initiated to drag.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8480,9 +8480,9 @@ Triggered when the selected cells are dropped.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8561,9 +8561,9 @@ Triggered before the range editing starts.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8632,9 +8632,9 @@ Triggered after range editing completes.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8703,9 +8703,9 @@ Triggered before the sheet is loaded.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8769,9 +8769,9 @@ Triggered after the sheet is loaded.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8830,9 +8830,9 @@ Triggered every click of the menu item.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8917,9 +8917,9 @@ Triggered when import sheet is failed to open.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -8993,9 +8993,9 @@ Triggered when pager item is clicked in the Spreadsheet.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -9069,9 +9069,9 @@ Triggered when click on the ribbon.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -9150,9 +9150,9 @@ Triggered when the chart series rendering.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -9217,9 +9217,9 @@ Triggered when click the ribbon tab.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -9298,9 +9298,9 @@ Triggered when select the ribbon tab.
 <table class="params">
 <thead>
 <tr>
-<td>Name</td>
-<td>Type</td>
-<td>Description</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
