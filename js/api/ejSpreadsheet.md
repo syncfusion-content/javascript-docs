@@ -7782,6 +7782,7 @@ Triggered before the contextmenu is open.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforeOpen event is triggered. 
 <table class="params">
+<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
