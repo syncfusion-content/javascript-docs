@@ -78,9 +78,7 @@ You can provide the left and right labels to interactive legend by using `leftLa
 {% highlight js %}
 
     jQuery(function ($) {
-        $("#treemap").ejTreeMap({
-            layers: [
-            {
+        $("#treemap").ejTreeMap({            
                 // ...
                 showLegend: true,
                 legendSettings: {                                        
@@ -92,16 +90,13 @@ You can provide the left and right labels to interactive legend by using `leftLa
                     rightLabel: "40M",
                     dockPosition: "top"
                 },
-                // ...                        
-            }]
+                // ...                                   
         }); 
     });
 
 {% endhighlight %}
 
-![](/TreeMap-Elements_images/Interactive_Legend.png)
-
-
+![](/js/TreeMap/TreeMap-Elements_images/Interactive_Legend.png)
 
 
 ## Header
