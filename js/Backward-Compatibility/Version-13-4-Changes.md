@@ -11,6 +11,25 @@ documentation: ug
 
 Some of the API name changes have been made to the controls to be effective from Volume 4, 2015 release. Those changes are documented by mapping the old names with appropriate new API names to enable quick upgradation of any control. To migrate from Volume 3, 2015 or from other earlier versions to this Volume 4, 2015, refer to the following API changes.
 
+## ejDialog
+
+<table>
+<tr>
+<td>
+Member Type<br/><br/></td><td>
+Old API Name<br/><br/></td><td>
+New API  Name<br/><br/></td><td>
+Comments<br/><br/></td></tr>
+<tr>
+<td>
+Properties<br/><br/></td><td>
+closeIconTooltip<br/><br/></td><td>
+tooltip: {<br/>close: "Close",<br/>collapse: "Collapse",<br/>restore: "Restore",<br/>maximize: "Maximize",<br/>minimize: "Minimize",<br/>expand: "Expand",<br/>unPin: "UnPin",<br/>pin: "Pin"<br/>}<br/><br/></td><td>
+Instead of closeIconTooltip, <br/> close option can be used under tooltip API.<br/><br/></td></tr>
+</table>
+
+
+
 ## ejSchedule
 
 <table>
@@ -56,4 +75,22 @@ Renamed as per naming convention.<br/><br/></td></tr>
 appointmentDeleted<br/><br/></td><td>
 beforeAppointmentRemove<br/><br/></td><td>
 Renamed as per naming convention.<br/><br/></td></tr>
+</table>
+
+
+## ejSplitter
+
+<table>
+<tr>
+<td>
+Member Type<br/><br/></td><td>
+Old API Name<br/><br/></td><td>
+New API  Name<br/><br/></td><td>
+Comments<br/><br/></td></tr>
+<tr>
+<td>
+Properties<br/><br/></td><td>
+enableAutoResize <br/><br/></td><td>
+isResponsive  <br/><br/></td><td>
+Instead of enableAutoResize, <br/> isResponsive API can be used.<br/><br/></td></tr>
 </table>
