@@ -5,7 +5,6 @@ description: API reference for ejColorPicker
 documentation: API
 platform: js
 keywords: ColorPicker, ejColorPicker, syncfusion, ColorPicker api 
-
 ---
 
 # ejColorPicker

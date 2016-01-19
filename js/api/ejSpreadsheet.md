@@ -7216,52 +7216,52 @@ Triggered for every action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}afterFormat{% endhighlight %}</td>
+<td class="name">afterFormat</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the applied style format object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}beforeFormat{% endhighlight %}</td>
+<td class="name">beforeFormat</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the applied style format object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns the cell range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}reqType{% endhighlight %}</td>
+<td class="name">reqType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the action format.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}gotoIdx{% endhighlight %}</td>
+<td class="name">gotoIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns goto index while paging.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="name">newSheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns boolean value. If create new sheet it returns true.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Return column name while sorting.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colSelected{% endhighlight %}</td>
+<td class="name">colSelected</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns selected columns while sorting or filtering begins.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sortDirection{% endhighlight %}</td>
+<td class="name">sortDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns sort direction while sort action begins.</td>
 </tr>
@@ -7311,32 +7311,32 @@ Triggered for every action complete.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}selCell{% endhighlight %}</td>
+<td class="name">selCell</td>
 <td class="type"><span class="param-type">array/object</span></td>
 <td class="description">Returns the applied cell format object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}reqType{% endhighlight %}</td>
+<td class="name">reqType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
@@ -7387,41 +7387,41 @@ Triggered when the auto fill operation begins.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}dataRange{% endhighlight %}</td>
+<td class="name">dataRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns autofill begin cell range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="name">direction</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns which direction drag the autofill.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}fillRange{% endhighlight %}</td>
+<td class="name">fillRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns fill cells range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}fillType{% endhighlight %}</td>
+<td class="name">fillType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the auto fill type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr><tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7472,42 +7472,42 @@ Triggered when the auto fill operation completes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}dataRange{% endhighlight %}</td>
+<td class="name">dataRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns autofill begin cell range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="name">direction</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns which direction to drag the autofill.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}fillRange{% endhighlight %}</td>
+<td class="name">fillRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns fill cells range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}fillType{% endhighlight %}</td>
+<td class="name">fillType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the auto fill type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7558,31 +7558,31 @@ Triggered before the cells to be formatted.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr><tr>
-<td class="name">{% highlight html %}format{% endhighlight %}</td>
+<td class="name">format</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the applied style format object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cells{% endhighlight %}</td>
+<td class="name">cells</td>
 <td class="type"><span class="param-type">array/object</span></td>
 <td class="description">Returns the selected cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
@@ -7634,27 +7634,27 @@ Triggered before the cell selection.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}prevRange{% endhighlight %}</td>
+<td class="name">prevRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns the previous cell range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}currRange{% endhighlight %}</td>
+<td class="name">currRange</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns the current cell range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7705,42 +7705,42 @@ Triggered before the selected cells are dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the currentcell row and column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="name">dragAndDropRange</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the drag cells range object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}preventAlert{% endhighlight %}</td>
+<td class="name">preventAlert</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cell Overwriting alert option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7790,22 +7790,22 @@ Triggered before the contextmenu is open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7856,32 +7856,32 @@ Triggered before the activation panel is open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}activationPanel{% endhighlight %}</td>
+<td class="name">activationPanel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the activation panel element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the range option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -7932,27 +7932,27 @@ Triggered when click on sheet cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the click cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the column index of clicked cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the row index of clicked cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the column name of clicked cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the column information.</td>
 </tr>
@@ -8003,32 +8003,32 @@ Triggered when the cell is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the click cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the columnName of clicked cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the column field information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8079,22 +8079,22 @@ Triggered when mouse hover on cell in sheets.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8145,42 +8145,42 @@ Triggered when save the edited cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the save cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the columnName of clicked cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the column field information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}pValue{% endhighlight %}</td>
+<td class="name">pValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the cell previous value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the cell value.</td>
 </tr>
@@ -8230,52 +8230,52 @@ Triggered when click the contextmenu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}Id{% endhighlight %}</td>
+<td class="name">Id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element Id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}event{% endhighlight %}</td>
+<td class="name">event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns event information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}events{% endhighlight %}</td>
+<td class="name">events</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns target element and event information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}parentId{% endhighlight %}</td>
+<td class="name">parentId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element parent Id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}parentText{% endhighlight %}</td>
+<td class="name">parentText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element parent text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}text{% endhighlight %}</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8326,37 +8326,37 @@ Triggered when the selected cells are being dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the currentcell row and columnn index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="name">dragAndDropRange</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the drag cells range object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8406,37 +8406,37 @@ Triggered when the selected cells are initiated to drag.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the current cell row and column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="name">dragAndDropRange</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the drag cells range object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8487,37 +8487,37 @@ Triggered when the selected cells are dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the current cell row and column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}dragAndDropRange{% endhighlight %}</td>
+<td class="name">dragAndDropRange</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the drag cells range object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8568,27 +8568,27 @@ Triggered before the range editing starts.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the range option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8639,27 +8639,27 @@ Triggered after range editing completes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the range option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8710,22 +8710,22 @@ Triggered before the sheet is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIndex{% endhighlight %}</td>
+<td class="name">sheetIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the active sheet index.</td>
 </tr>
@@ -8776,17 +8776,17 @@ Triggered after the sheet is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8837,42 +8837,42 @@ Triggered every click of the menu item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type"><span class="param-type">element</span></td>
 <td class="description">Returns menu click element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}event{% endhighlight %}</td>
+<td class="name">event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the event information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}parentId{% endhighlight %}</td>
+<td class="name">parentId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element parent Id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}parentText{% endhighlight %}</td>
+<td class="name">parentText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element parent text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}text{% endhighlight %}</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns target element text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -8924,32 +8924,32 @@ Triggered when import sheet is failed to open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}failureType{% endhighlight %}</td>
+<td class="name">failureType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the failure type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}status{% endhighlight %}</td>
+<td class="name">status</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the status index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}statusText{% endhighlight %}</td>
+<td class="name">statusText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the status in text.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -9000,32 +9000,32 @@ Triggered when pager item is clicked in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}activeSheet{% endhighlight %}</td>
+<td class="name">activeSheet</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the active sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}gotoSheet{% endhighlight %}</td>
+<td class="name">gotoSheet</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the new sheet index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="name">newSheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns whether new sheet icon is clicked.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -9076,37 +9076,37 @@ Triggered when click on the ribbon.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}Id{% endhighlight %}</td>
+<td class="name">Id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns element Id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prop{% endhighlight %}</td>
+<td class="name">prop</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns target information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}status{% endhighlight %}</td>
+<td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns status.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isChecked{% endhighlight %}</td>
+<td class="name">isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns ischecked in boolean.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -9157,22 +9157,22 @@ Triggered when the chart series rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns chart data and chart information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the chart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -9224,37 +9224,37 @@ Triggered when click the ribbon tab.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}activeIndex{% endhighlight %}</td>
+<td class="name">activeIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the active tab index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}activeHeader{% endhighlight %}</td>
+<td class="name">activeHeader</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns active tab header element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prevActiveHeader{% endhighlight %}</td>
+<td class="name">prevActiveHeader</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns previous active tab header element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prevActiveIndex{% endhighlight %}</td>
+<td class="name">prevActiveIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns previous active tab index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>
@@ -9305,37 +9305,37 @@ Triggered when select the ribbon tab.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}activeIndex{% endhighlight %}</td>
+<td class="name">activeIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the active tab index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}activeHeader{% endhighlight %}</td>
+<td class="name">activeHeader</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns active tab header element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prevActiveHeader{% endhighlight %}</td>
+<td class="name">prevActiveHeader</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns previous active tab header element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prevActiveIndex{% endhighlight %}</td>
+<td class="name">prevActiveIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns previous active tab index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
 </tr>

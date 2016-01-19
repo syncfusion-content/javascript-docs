@@ -10381,5 +10381,3 @@ $("#CoreCircularGauge").ejCircularGauge({
 });
 </script>{% endhighlight %}
 
-
-

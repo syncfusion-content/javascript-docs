@@ -5676,16 +5676,3 @@ $("#container").ejMap({
 });{% endhighlight %}
 
 
-
-
-
-
-
-
-
-<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
-
-
-
-
-

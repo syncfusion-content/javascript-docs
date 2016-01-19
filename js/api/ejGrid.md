@@ -24,8 +24,7 @@ $(element).ejGrid(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for grid</td>
 </tr>
@@ -4298,8 +4297,7 @@ It is used to clear all the row selection or at specific row selection based on 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the column is specified then it will remove the selection from the particular column else it will clears all of the column selection</td>
 </tr>
@@ -4351,8 +4349,7 @@ It is used to clear all the filtering done.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"> If field of the column is specified then it will clear the  particular filtering column</td>
 </tr>
@@ -4397,8 +4394,7 @@ Clear all the row selection or at specific row selection based on the index prov
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the row is specified then it will remove the selection from the particular row else it will clears all of the row selection</td>
 </tr>
@@ -4534,14 +4530,12 @@ Add or remove columns in grid column collections
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columndetails{% endhighlight %}</td>
+<td class="name">columndetails</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of columns or string of field name to add/remove the column in grid</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass add/remove action to be performed. By default "add" action will perform</td>
 </tr>
@@ -4593,8 +4587,7 @@ Refresh the grid with new data source
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-datasource{% endhighlight %}</td>
+<td class="name">datasource</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass new data source to the grid</td>
 </tr>
@@ -4640,14 +4633,12 @@ Delete a record in grid control even allowDeleting is set as false
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the json data of record need to be delete.</td>
 </tr>
@@ -4718,14 +4709,12 @@ Edit a particular cell based on the row index and field name provided in "batch"
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass row index to edit particular cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to perform batch edit</td>
 </tr>
@@ -4825,8 +4814,7 @@ Expand or collapse the row based on the row state in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$target{% endhighlight %}</td>
+<td class="name">$target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the target object to expand/collapse the row based on its row state</td>
 </tr>
@@ -4900,32 +4888,27 @@ Send a filtering request to filter one column in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterOperator{% endhighlight %}</td>
+<td class="name">filterOperator</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">string/integer/dateTime operator</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterValue{% endhighlight %}</td>
+<td class="name">filterValue</td>
 <td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">Pass the value to be filtered in a column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-predicate{% endhighlight %}</td>
+<td class="name">predicate</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the predicate as and/or</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-matchcase{% endhighlight %}</td>
+<td class="name">matchcase</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the match case valueas true/false</td>
 </tr>
@@ -4970,8 +4953,7 @@ Send a filtering request to filter single or multiple column in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-filterQueries{% endhighlight %}</td>
+<td class="name">filterQueries</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass array of filterColumn query for performing filter operation</td>
 </tr>
@@ -5075,8 +5057,7 @@ Get the column details based on the given field in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column object</td>
 </tr>
@@ -5132,8 +5113,7 @@ Get the column details based on the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the header text of the column to get the corresponding column object</td>
 </tr>
@@ -5184,8 +5164,7 @@ Get the column details based on the given column index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the index of the column to get the corresponding column object</td>
 </tr>
@@ -5262,8 +5241,7 @@ Get the column index of the given field in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column index</td>
 </tr>
@@ -5458,8 +5436,7 @@ Get the column field name from the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass header text of the column to get its corresponding field name</td>
 </tr>
@@ -5669,8 +5646,7 @@ Get the column header text from the given field name in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass field name of the column to get its corresponding header text</td>
 </tr>
@@ -5742,8 +5718,7 @@ Get the row index based on the given tr element in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$tr{% endhighlight %}</td>
+<td class="name">$tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr element in grid content to get its row index</td>
 </tr>
@@ -5858,14 +5833,12 @@ Get the rows(tr element) from the given from and to row index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-from{% endhighlight %}</td>
+<td class="name">from</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the from index from which the rows to be returned</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-to{% endhighlight %}</td>
+<td class="name">to</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the to index to which the rows to be returned</td>
 </tr>
@@ -6050,8 +6023,7 @@ Send a paging request to specified page in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-pageIndex{% endhighlight %}</td>
+<td class="name">pageIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the page index to perform paging at specified page index</td>
 </tr>
@@ -6096,8 +6068,7 @@ Send a column grouping request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be grouped in grid control</td>
 </tr>
@@ -6139,8 +6110,7 @@ Hide columns from the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to hide</td>
 </tr>
@@ -6246,8 +6216,7 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-templateRefresh{% endhighlight %}</td>
+<td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> When templateRefresh is set true, template and grid contents both are refreshed in grid else only grid content is refreshed</td>
 </tr>
@@ -6355,8 +6324,7 @@ Remove a column or collection of columns from a sorted column collections in gri
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of field names of the columns to remove a collection of sorted columns or pass a string of field name to remove a column from sorted column collections</td>
 </tr>
@@ -6435,14 +6403,12 @@ Re-order the column in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromFieldName{% endhighlight %}</td>
+<td class="name">fromFieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the from field name of the column needs to be changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-toFieldName{% endhighlight %}</td>
+<td class="name">toFieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the to field name of the column needs to be changed</td>
 </tr>
@@ -6510,14 +6476,12 @@ Resize the columns by giving column name and width for the corresponding one.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the column name that needs to be changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-width{% endhighlight %}</td>
+<td class="name">width</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the width to resize the particular columns</td>
 </tr>
@@ -6617,12 +6581,12 @@ Set dimension for grid with corresponding to grid parent.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>height</code></td>
+<td class="name">height</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the height of the grid container</td>
 </tr>
 <tr>
-<td class="name"><code>width</code></td>
+<td class="name">width</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the width of the grid container</td>
 </tr>
@@ -6662,8 +6626,7 @@ Send a search request to grid with specified string passed in it
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-searchString{% endhighlight %}</td>
+<td class="name">searchString</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the string to search in Grid records</td>
 </tr>
@@ -6706,8 +6669,7 @@ Select cells in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowCellIndexes{% endhighlight %}</td>
+<td class="name">rowCellIndexes</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the starting index of row and indexes of cells for that corresponding row for selecting cells.</td>
 </tr>
@@ -6751,8 +6713,7 @@ Select columns in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromIndex{% endhighlight %}</td>
+<td class="name">fromIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of column for selecting columns.</td>
 </tr>
@@ -6799,14 +6760,12 @@ Select rows in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fromIndex{% endhighlight %}</td>
+<td class="name">fromIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of row for selecting rows.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-toIndex{% endhighlight %}</td>
+<td class="name">toIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the ending index of row for selecting rows.</td>
 </tr>
@@ -6852,8 +6811,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowIndexes{% endhighlight %}</td>
+<td class="name">rowIndexes</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass array of rowIndexes for selecting rows</td>
 </tr>
@@ -6905,20 +6863,17 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index of row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index of cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
 </tr>
@@ -6960,20 +6915,17 @@ Used to update a particular cell value based on specified primarykeyvalue and fi
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the primarykey value for selecting the corresponding row cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-field{% endhighlight %}</td>
+<td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the field name for selecting the corresponding column cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the cell based on specified primaryKeyValue and field name.</td>
 </tr>
@@ -7017,20 +6969,17 @@ Used to update a particular cell value based on specified row Index and the fiel
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-Index{% endhighlight %}</td>
+<td class="name">Index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the index for selecting the row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">It is used to set the field name for selecting column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the value for the selected cell.</td>
 </tr>
@@ -7073,14 +7022,12 @@ Set validation to a field during editing.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Specify the field name of the column to set validation rules</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rules{% endhighlight %}</td>
+<td class="name">rules</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Specify the validation rules for the field</td>
 </tr>
@@ -7124,8 +7071,7 @@ Show columns in the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-headerText{% endhighlight %}</td>
+<td class="name">headerText</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to show</td>
 </tr>
@@ -7171,14 +7117,12 @@ Send a sorting request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column as columnName for which sorting have to be performed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sortingDirection{% endhighlight %}</td>
+<td class="name">sortingDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the sort direction ascending/descending by which the column have to be sort. By default it is sorting in an ascending order</td>
 </tr>
@@ -7222,8 +7166,7 @@ Send an edit record request in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-$tr{% endhighlight %}</td>
+<td class="name">$tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr- selected row element to be edited in grid</td>
 </tr>
@@ -7268,8 +7211,7 @@ Un-group a column from grouped columns collection in grid
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be ungrouped from grouped column collection</td>
 </tr>
@@ -7313,14 +7255,12 @@ Update a edited record in grid control even allowEditing is set as false.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fieldName{% endhighlight %}</td>
+<td class="name">fieldName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the edited json data of record need to be update.</td>
 </tr>
@@ -7389,8 +7329,7 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid is initialized:
 <table class="params">
@@ -7403,20 +7342,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7425,8 +7361,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid paging action starts:
 <table class="params">
@@ -7439,50 +7374,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentPage{% endhighlight %}</td>
+<td class="name">currentPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousPage{% endhighlight %}</td>
+<td class="name">previousPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-endIndex{% endhighlight %}</td>
+<td class="name">endIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-startIndex{% endhighlight %}</td>
+<td class="name">startIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of that current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7491,8 +7418,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid sorting action starts:
 <table class="params">
@@ -7505,38 +7431,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnSortDirection{% endhighlight %}</td>
+<td class="name">columnSortDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
@@ -7545,8 +7465,7 @@ columnSortDirection{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid grouping action starts:
 <table class="params">
@@ -7559,32 +7478,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7593,8 +7507,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record editing action starts:
 <table class="params">
@@ -7607,56 +7520,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7665,8 +7569,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record save action starts:
 <table class="params">
@@ -7679,44 +7582,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedRow{% endhighlight %}</td>
+<td class="name">selectedRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7725,8 +7621,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record cancel action starts:
 <table class="params">
@@ -7739,26 +7634,22 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7767,8 +7658,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record delete action starts:
 <table class="params">
@@ -7781,44 +7671,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-tr{% endhighlight %}</td>
+<td class="name">tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7827,8 +7710,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when add new record action starts:
 <table class="params">
@@ -7841,32 +7723,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7875,8 +7752,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid filtering action starts:
 <table class="params">
@@ -7889,38 +7765,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentFilteringColumn{% endhighlight %}</td>
+<td class="name">currentFilteringColumn</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterCollection{% endhighlight %}</td>
+<td class="name">filterCollection</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7929,14 +7799,12 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action starts:</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterbeforeopen"
 <table class="params">
@@ -7949,44 +7817,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnType{% endhighlight %}</td>
+<td class="name">columnType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterbeforeopen".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7995,8 +7856,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
@@ -8009,44 +7869,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dataSource{% endhighlight %}</td>
+<td class="name">dataSource</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-query{% endhighlight %}</td>
+<td class="name">query</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the query manager.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicerequest".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8055,8 +7908,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
@@ -8069,44 +7921,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dataSource{% endhighlight %}</td>
+<td class="name">dataSource</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-query{% endhighlight %}</td>
+<td class="name">query</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the query manager.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicesearch".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8115,8 +7960,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterbeforeopen"
 <table class="params">
@@ -8129,50 +7973,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnType{% endhighlight %}</td>
+<td class="name">columnType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isCustomFilter{% endhighlight %}</td>
+<td class="name">isCustomFilter</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the customfilter option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterbeforeopen".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8207,8 +8043,7 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete when grid is initialized.
 <table class="params">
@@ -8221,26 +8056,22 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8249,8 +8080,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete after grid paging action is completed.
 <table class="params">
@@ -8263,62 +8093,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentPage{% endhighlight %}</td>
+<td class="name">currentPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousPage{% endhighlight %}</td>
+<td class="name">previousPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-endIndex{% endhighlight %}</td>
+<td class="name">endIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-startIndex{% endhighlight %}</td>
+<td class="name">startIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of the current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8327,8 +8147,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid sorting action is completed.
 <table class="params">
@@ -8341,50 +8160,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current sorted column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnSortDirection{% endhighlight %}</td>
+<td class="name">columnSortDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8393,8 +8204,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid grouping action is completed.
 <table class="params">
@@ -8407,44 +8217,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8453,8 +8256,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record editing action is completed.
 <table class="params">
@@ -8467,62 +8269,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8531,8 +8323,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record save action is completed.
 <table class="params">
@@ -8545,56 +8336,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedRow{% endhighlight %}</td>
+<td class="name">selectedRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8603,8 +8385,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record cancel action is completed.
 <table class="params">
@@ -8617,38 +8398,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8657,8 +8432,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record delete action is completed.
 <table class="params">
@@ -8671,56 +8445,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-tr{% endhighlight %}</td>
+<td class="name">tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8729,8 +8494,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after add new record action is completed.
 <table class="params">
@@ -8743,50 +8507,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns empty record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8795,8 +8551,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid filtering action is completed.
 <table class="params">
@@ -8809,50 +8564,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentFilteringColumn{% endhighlight %}</td>
+<td class="name">currentFilteringColumn</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterCollection{% endhighlight %}</td>
+<td class="name">filterCollection</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8861,14 +8608,12 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action end:</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
@@ -8881,38 +8626,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dataSource{% endhighlight %}</td>
+<td class="name">dataSource</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicerequest".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8921,8 +8660,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
@@ -8935,44 +8673,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnType{% endhighlight %}</td>
+<td class="name">columnType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterafteropen".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -8981,8 +8712,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
@@ -8995,38 +8725,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dataSource{% endhighlight %}</td>
+<td class="name">dataSource</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicesearch".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -9035,8 +8759,7 @@ type{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
@@ -9049,50 +8772,43 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">
+columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnType{% endhighlight %}</td>
+<td class="name">columnType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filtermodel{% endhighlight %}</td>
+<td class="name">filtermodel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isCustomFilter{% endhighlight %}</td>
+<td class="name">isCustomFilter</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the customfilter option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterafteropen".</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -9134,8 +8850,7 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionFailure when grid is initialized.
 <table class="params">
@@ -9148,32 +8863,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9182,8 +8892,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionFailure after grid paging action is completed.
 <table class="params">
@@ -9196,68 +8905,57 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentPage{% endhighlight %}</td>
+<td class="name">currentPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousPage{% endhighlight %}</td>
+<td class="name">previousPage</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-endIndex{% endhighlight %}</td>
+<td class="name">endIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-startIndex{% endhighlight %}</td>
+<td class="name">startIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of the current page.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9266,8 +8964,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid sorting action is completed.
 <table class="params">
@@ -9280,56 +8977,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current sorted column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnSortDirection{% endhighlight %}</td>
+<td class="name">columnSortDirection</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9338,8 +9026,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid grouping action is completed.
 <table class="params">
@@ -9352,50 +9039,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9404,8 +9083,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record editing action is completed.
 <table class="params">
@@ -9418,68 +9096,57 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9488,8 +9155,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record save action is completed.
 <table class="params">
@@ -9502,62 +9168,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedRow{% endhighlight %}</td>
+<td class="name">selectedRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9566,8 +9222,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record delete action is completed.
 <table class="params">
@@ -9580,62 +9235,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-tr{% endhighlight %}</td>
+<td class="name">tr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9644,8 +9289,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after add new record action is completed.
 <table class="params">
@@ -9658,56 +9302,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns empty record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9716,8 +9351,7 @@ error{% endhighlight %}</td>
 </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid filtering action is completed.
 <table class="params">
@@ -9730,56 +9364,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentFilteringColumn{% endhighlight %}</td>
+<td class="name">currentFilteringColumn</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-filterCollection{% endhighlight %}</td>
+<td class="name">filterCollection</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-originalEventType{% endhighlight %}</td>
+<td class="name">originalEventType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
+<td class="name">requestType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -9817,8 +9442,7 @@ Triggered when record batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchAdd event is triggered.
 <table class="params">
@@ -9831,56 +9455,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primaryKey.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
@@ -9919,8 +9534,7 @@ Triggered when record batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchDelete event is triggered.
 <table class="params">
@@ -9933,38 +9547,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primary key.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row Index.</td>
 </tr>
@@ -10003,8 +9611,7 @@ Triggered before the batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchAdd event is triggered.
 <table class="params">
@@ -10017,38 +9624,33 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-defaultData{% endhighlight %}</td>
+<td class="name">defaultData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the default data object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primaryKey.</td>
 </tr>
@@ -10086,8 +9688,7 @@ Triggered before the batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchDelete event is triggered.
 <table class="params">
@@ -10100,44 +9701,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primaryKey.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element.</td>
 </tr>
@@ -10176,8 +9770,7 @@ Triggered before the batch save.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchSave event is triggered.
 <table class="params">
@@ -10190,26 +9783,22 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-batchChanges{% endhighlight %}</td>
+<td class="name">batchChanges</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the changed record object.</td>
 </tr>
@@ -10247,8 +9836,7 @@ Triggered before the record is going to be edited.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beginEdit event is triggered.
 <table class="params">
@@ -10261,44 +9849,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current edited row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKey{% endhighlight %}</td>
+<td class="name">primaryKey</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primary key.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-primaryKeyValue{% endhighlight %}</td>
+<td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primary key value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -10336,8 +9917,7 @@ Triggered when record cell edit.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellEdit event is triggered.
 <table class="params">
@@ -10350,68 +9930,58 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-validationRules{% endhighlight %}</td>
+<td class="name">
+validationRules</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the validation rules.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousValue{% endhighlight %}</td>
+<td class="name">previousValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the previous value of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isForeignKey{% endhighlight %}</td>
+<td class="name">isForeignKey</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns isForeignKey option value.</td>
 </tr>
@@ -10448,8 +10018,7 @@ Triggered when record cell save.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSave event is triggered.
 <table class="params">
@@ -10462,62 +10031,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousValue{% endhighlight %}</td>
+<td class="name">previousValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the previous value of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnObject{% endhighlight %}</td>
+<td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isForeignKey{% endhighlight %}</td>
+<td class="name">isForeignKey</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns isForeignKey option value.</td>
 </tr>
@@ -10555,8 +10114,7 @@ Triggered after the cell is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
@@ -10569,56 +10127,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousRowCellIndex{% endhighlight %}</td>
+<td class="name">previousRowCellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousRowCell{% endhighlight %}</td>
+<td class="name">previousRowCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedRowCellIndex{% endhighlight %}</td>
+<td class="name">selectedRowCellIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the selected row cell index values.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -10656,8 +10205,7 @@ Triggered before the cell is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
@@ -10670,62 +10218,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousRowCellIndex{% endhighlight %}</td>
+<td class="name">previousRowCellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentCell{% endhighlight %}</td>
+<td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousRowCell{% endhighlight %}</td>
+<td class="name">previousRowCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousRowCellIndex{% endhighlight %}</td>
+<td class="name">previousRowCellIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously selected row cell index values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isCtrlKeyPressed{% endhighlight %}</td>
+<td class="name">isCtrlKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the ctrl key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isShiftKeyPressed{% endhighlight %}</td>
+<td class="name">isShiftKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -10763,8 +10301,7 @@ Triggered when the column is being dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrag event is triggered.
 <table class="params">
@@ -10777,38 +10314,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-draggableType{% endhighlight %}</td>
+<td class="name">draggableType</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns target elements based on mouse move position.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -10845,8 +10376,7 @@ Triggered when column dragging begins.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDragStart event is triggered.
 <table class="params">
@@ -10859,38 +10389,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-draggableType{% endhighlight %}</td>
+<td class="name">draggableType</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns drag start element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -10927,8 +10451,7 @@ Triggered when the column is dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrop event is triggered.
 <table class="params">
@@ -10941,38 +10464,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-draggableType{% endhighlight %}</td>
+<td class="name">draggableType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns dropped dragged element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11009,8 +10526,7 @@ Triggered after the column is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelected event is triggered.
 <table class="params">
@@ -11023,56 +10539,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousColumnIndex{% endhighlight %}</td>
+<td class="name">previousColumnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected column index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-headerCell{% endhighlight %}</td>
+<td class="name">headerCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected header cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevColumnHeaderCell{% endhighlight %}</td>
+<td class="name">prevColumnHeaderCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected header cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns corresponding column object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedColumnsIndex{% endhighlight %}</td>
+<td class="name">selectedColumnsIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the selected columns values.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11109,8 +10616,7 @@ Triggered before the column is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelecting event is triggered.
 <table class="params">
@@ -11123,62 +10629,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected column index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousColumnIndex{% endhighlight %}</td>
+<td class="name">previousColumnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected column index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-headerCell{% endhighlight %}</td>
+<td class="name">headerCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected header cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevColumnHeaderCell{% endhighlight %}</td>
+<td class="name">prevColumnHeaderCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected header cell element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns corresponding column object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-previousColumnIndex{% endhighlight %}</td>
+<td class="name">previousColumnIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously selected column index values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isCtrlKeyPressed{% endhighlight %}</td>
+<td class="name">isCtrlKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the ctrl key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-isShiftKeyPressed{% endhighlight %}</td>
+<td class="name">isShiftKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11215,8 +10711,7 @@ Triggered when context menu item is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextClick event is triggered.
 <table class="params">
@@ -11229,38 +10724,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+<td class="name">currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+<td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of contextmenu item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11297,8 +10786,7 @@ Triggered before the context menu is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextOpen event is triggered.
 <table class="params">
@@ -11311,38 +10799,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+<td class="name">currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+<td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of contextmenu item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11379,8 +10861,8 @@ Triggered when the grid is rendered completely.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -11393,20 +10875,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11444,8 +10923,7 @@ Triggered the grid is bound with data during initial rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when dataBound event is triggered.
 <table class="params">
@@ -11458,20 +10936,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11508,8 +10983,7 @@ Triggered when grid going to destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when destroy event is triggered.
 <table class="params">
@@ -11522,20 +10996,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11572,8 +11043,7 @@ Triggered when detail template row is clicked to collapse.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsCollapse event is triggered.
 <table class="params">
@@ -11586,44 +11056,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-detailsRow{% endhighlight %}</td>
+<td class="name">detailsRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns detail row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-masterData{% endhighlight %}</td>
+<td class="name">masterData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row of detail row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-masterRow{% endhighlight %}</td>
+<td class="name">masterRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11661,8 +11124,7 @@ Triggered detail template row is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -11675,32 +11137,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-detailsElement{% endhighlight %}</td>
+<td class="name">detailsElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns details row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the details row data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11737,8 +11194,7 @@ Triggered when detail template row is clicked to expand.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsExpand event is triggered.
 <table class="params">
@@ -11751,44 +11207,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-detailsRow{% endhighlight %}</td>
+<td class="name">detailsRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns detail row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-masterData{% endhighlight %}</td>
+<td class="name">masterData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row of detail row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-masterRow{% endhighlight %}</td>
+<td class="name">masterRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11825,8 +11274,7 @@ Triggered after the record is added.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endAdd event is triggered.
 <table class="params">
@@ -11839,20 +11287,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns added data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11890,8 +11335,7 @@ Triggered after the record is deleted.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endDelete event is triggered.
 <table class="params">
@@ -11904,20 +11348,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11954,8 +11395,7 @@ Triggered after the record is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endEdit event is triggered.
 <table class="params">
@@ -11968,20 +11408,17 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns modified data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12020,8 +11457,7 @@ Triggered initial load.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when load event is triggered.
 <table class="params">
@@ -12034,26 +11470,22 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12091,8 +11523,7 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -12105,62 +11536,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the text value in the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowMerge{% endhighlight %}</td>
+<td class="name">rowMerge</td>
 <td class="type"><span class="param-type">mergeRowback</span></td>
 <td class="description last">Returns the merge rows in grid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-colMerge{% endhighlight %}</td>
+<td class="name">colMerge</td>
 <td class="type"><span class="param-type">mergeColback</span></td>
 <td class="description last">Returns the merge column in grid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-merge{% endhighlight %}</td>
+<td class="name">merge</td>
 <td class="type"><span class="param-type">merge</span></td>
 <td class="description last">Returns the merge the rows and columns in grid.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12198,8 +11619,7 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -12212,50 +11632,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the text value in the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12292,8 +11704,8 @@ Triggered when record is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordClick event is triggered.
 <table class="params">
@@ -12306,62 +11718,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the jquery object of the current selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellValue{% endhighlight %}</td>
+<td class="name">cellValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the corresponding cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the Header text of the column corresponding to the selected cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12398,8 +11800,7 @@ Triggered when record is double clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordDoubleClick event is triggered.
 <table class="params">
@@ -12412,62 +11813,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the jquery object of the current selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellValue{% endhighlight %}</td>
+<td class="name">cellValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the corresponding cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the Header text of the column corresponding to the selected cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12504,8 +11895,7 @@ Triggered after column resized.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resized event is triggered.
 <table class="params">
@@ -12518,56 +11908,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldWidth{% endhighlight %}</td>
+<td class="name">oldWidth</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newWidth{% endhighlight %}</td>
+<td class="name">newWidth</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the new width value.</td>
 </tr>
@@ -12604,8 +11985,7 @@ Triggered when column resize end.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeEnd event is triggered.
 <table class="params">
@@ -12618,56 +11998,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldWidth{% endhighlight %}</td>
+<td class="name">oldWidth</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newWidth{% endhighlight %}</td>
+<td class="name">newWidth</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the new width value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-extra{% endhighlight %}</td>
+<td class="name">extra</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the extra width value.</td>
 </tr>
@@ -12706,8 +12077,7 @@ Triggered when column resize start.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeStart event is triggered.
 <table class="params">
@@ -12720,44 +12090,37 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-columnIndex{% endhighlight %}</td>
+<td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldWidth{% endhighlight %}</td>
+<td class="name">oldWidth</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
@@ -12794,8 +12157,7 @@ Triggered when right clicked on grid element.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rightClick event is triggered.
 <table class="params">
@@ -12808,62 +12170,52 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentData{% endhighlight %}</td>
+<td class="name">currentData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected row data object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellIndex{% endhighlight %}</td>
+<td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the cell index of the selected cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellValue{% endhighlight %}</td>
+<td class="name">cellValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12901,8 +12253,7 @@ Triggered every time a request is made to access row information, element and da
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -12915,38 +12266,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12985,8 +12330,7 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelected event is triggered.
 <table class="params">
@@ -12999,56 +12343,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-foreignKeyData{% endhighlight %}</td>
+<td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevRow{% endhighlight %}</td>
+<td class="name">prevRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevRowIndex{% endhighlight %}</td>
+<td class="name">prevRowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13087,8 +12422,7 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelecting event is triggered.
 <table class="params">
@@ -13101,50 +12435,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected row index value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-row{% endhighlight %}</td>
+<td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevRow{% endhighlight %}</td>
+<td class="name">prevRow</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected row element.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevRowIndex{% endhighlight %}</td>
+<td class="name">prevRowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13182,8 +12508,7 @@ Triggered when refresh the template column elements in the Grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when templateRefresh event is triggered.
 <table class="params">
@@ -13196,44 +12521,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-column{% endhighlight %}</td>
+<td class="name">column</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current row data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowIndex{% endhighlight %}</td>
+<td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13270,8 +12589,7 @@ Triggered when toolbar item is clicked in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when toolBarClick event is triggered.
 <table class="params">
@@ -13284,50 +12602,42 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+<td class="name">currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+<td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of toolbar item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-gridModel{% endhighlight %}</td>
+<td class="name">gridModel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-toolbarData{% endhighlight %}</td>
+<td class="name">toolbarData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the toolbar object of the selected toolbar element.</td>
 </tr>
