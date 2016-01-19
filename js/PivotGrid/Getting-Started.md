@@ -730,11 +730,11 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
 
     <title>PivotGrid - Getting Started</title>
 
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -844,7 +844,7 @@ $(function () {
                 fieldName: "Country",
                 fieldCaption: "Country",
                 sortOrder: ej.PivotAnalysis.SortOrder.Descending
-            },
+            }
             ],
             //……
         },
@@ -928,7 +928,7 @@ $(function () {
                 fieldName: "Quantity",
                 fieldCaption: "Quantity",
                 summaryType: ej.PivotAnalysis.SummaryType.TotalSum
-            },
+            }
             ],
             //……
         },
