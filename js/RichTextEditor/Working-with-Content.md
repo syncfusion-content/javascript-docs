@@ -307,16 +307,101 @@ If you want to add additional fonts to font drop-down, pass the font information
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
 {% highlight js %}
-$(function () {
-        $("#texteditor").ejRTE({
-            value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
-            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+
+    $(function () {
+            $("#texteditor").ejRTE({
+                value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            });
         });
-    });
-    function pasteContent() {
-        var editor = $("#texteditor").ejRTE("instance");
-        var selectedHtml = editor.getSelectedHtml();
-        editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
-    }
+        function pasteContent() {
+            var editor = $("#texteditor").ejRTE("instance");
+            var selectedHtml = editor.getSelectedHtml();
+            editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
+        }
+    
 {% endhighlight %}
 
+
+## Validation 
+
+You can validate the RichTextEditor’s value on form submission by applying [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) and [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) to the RichTextEditor.
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+
+### Validation Rules
+
+The validation rules help you to verify the content by adding validation attributes to the text area. This can be set by using [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) property.
+
+
+### Validation Messages 
+
+You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+
+
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘maxLength’ attribute,
+
+
+When you initialize the RichTextEditor widget, it creates a text area hidden element which is used to store the value. Hence, the validation is performed based on the value stored in this hidden element.
+
+Required field, minlength, maxlength, minWordCount and maxWordCount values validation is demonstrated in the below given example.
+
+
+{% highlight html %}
+
+    <form id="form1">
+    
+        <textarea id="rteSample" rows="10" cols="30" style="width: 100%; height: 440px">
+            Description:
+            The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area.
+            Functional Specifications/Requirements:
+            Provide the tool bar support, it’s also customizable.
+            Options to get the HTML elements with styles.
+            Support to insert image from a defined path.
+            Footer elements and styles(tag / Element information , Action button (Upload, Cancel))
+            Re-size the editor support.
+            Provide efficient public methods and client side events.
+            Keyboard navigation support.
+        </textarea>
+    <button id="save">Validate</button>
+    
+    </form>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    <script type="text/javascript">
+        $(function () {
+            $("#save").ejButton({
+                size: "large",
+                showRoundedCorner: true,
+                type : "submit"
+            });            allowEditing: true,
+                showFooter: true,
+                validationRules: {
+                    required: true,
+                    minlength: 15,
+                    maxlength: 150,
+                    minWordCount: 3,
+                    maxWordCount: 50,
+    
+                },
+                validationMessage: {
+                    required: "Required RTE value",
+                    minlength: "Minimum content length not reached.",
+                    maxlength: "Maximum content length reached."
+                }
+            });
+    
+        });
+    </script>
+  
+{% endhighlight %}
+
+![](Working-with-Content_images/Validation.png)
