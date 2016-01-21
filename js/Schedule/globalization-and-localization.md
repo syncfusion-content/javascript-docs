@@ -10,7 +10,7 @@ keywords: globalize, localize, localization, globalization
 
 ## Globalization
 
-The Scheduler control is built with default **globalization** support as it format the dates according to the user’s locale automatically and processes it internally without any need for manual conversions. This kind of default handling of Scheduler dates is achieved through the reference of **jQuery.globalize** library which globalizes the date, day and month names accordingly. 
+The Scheduler control is built with default **globalization** support as it format the dates according to the user’s locale automatically and processes it internally without any need for manual conversions. This kind of default handling of Scheduler dates is achieved through the built-in **ej.globalize** library which globalizes the date, day and month names accordingly. 
 
 ## Localization
 
@@ -18,14 +18,9 @@ Scheduler also comes with default localization support which allows it to custom
 
 N> By default, the Schedule control is localized in **en-US** culture.
 
-To localize Scheduler into a particular culture, it is necessary to refer the below specified scripts in your application,
+To localize Scheduler into a particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                   
 
-* **jquery.globalize.min.js** 
-* Other culture-specific script files, to which specific culture the Schedule needs to be adapted.
-
-All the culture-specific script files are available under the following location – which needs to be referred in your application after the reference of the **jquery.globalize.min.js** file.                   
-
-_<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified_
+_<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures_
 
 The following code example shows how to localize the Schedule control in **fr-FR** culture.
 
@@ -150,7 +145,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> Refer the **globalize.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
+N> Refer the **ej.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
 
 For further information on – how to refer the required culture scripts into your application, refer [here](/js/localization).
 

@@ -36,8 +36,8 @@ $('#Schedule').ejSchedule();
 
 * module:jQuery
 * module:jquery.easing.min.js
-* module:jquery.globalize.min.js
 * module:jsrender.min.js
+* module:ej.globalize.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.schedule.js
@@ -58,8 +58,8 @@ $('#Schedule').ejSchedule();
 
 ## Members
 
-### allowDragDrop `boolean`
-{:#members:allowdragdrop}
+### allowDragAndDrop `boolean`
+{:#members:allowdraganddrop}
 
 When set to true, Schedule allows the appointments to be dragged and dropped at required time.
 
@@ -77,7 +77,7 @@ When set to true, Schedule allows the appointments to be dragged and dropped at 
         $(function () {
             $("#Schedule").ejSchedule({
 		        currentDate:new Date(2014,4,5),
-                allowDragDrop: false,
+                allowDragAndDrop: false,
                 appointmentSettings: {
                     dataSource: [{
                         Id: 101,
@@ -1351,16 +1351,16 @@ Sets the date format for Schedule.
 
 {% endhighlight %}
 
-### enableAppointmentNavigation `boolean`
-{:#members:enableappointmentnavigation}
+### showAppointmentNavigator `boolean`
+{:#members:showappointmentnavigator}
 
-When set to true, enables the previous or next appointment navigation within the Schedule.
+When set to true, shows the previous/next appointment navigator button on the Scheduler.
 
 #### Default Value
 
 * true
 
-#### Example - To disable the previous or next appointment navigation.
+#### Example - To hide the previous or next appointment navigator button.
 
 {% highlight html %}
 
@@ -1370,7 +1370,7 @@ When set to true, enables the previous or next appointment navigation within the
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
-                enableAppointmentNavigation: false,
+                showAppointmentNavigator: false,
                 appointmentSettings: {
                     dataSource: [{
                         Id: 101,
@@ -4051,6 +4051,49 @@ $('#Schedule').ejSchedule({
 {% endhighlight %}
 
 
+### getSlotByElement(element)
+{:#methods:getslotbyelement}
+
+Retrieves the time slot information (start/end time and resource details) of the given element. The parameter is optional - as when no element is passed to it, the currently selected cell information will be retrieved. When multiple cells are selected in the Scheduler, it is not necessary to provide the parameter.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">element</td>
+            <td class="type">object</td>
+            <td class="description">TD element object rendered as Scheduler work cell</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+
+<script>
+$('#Schedule').ejSchedule();
+
+  var obj = $("#Schedule1").data("ejSchedule");
+  var $td = $(".e-draggableworkarea table tr td").first();
+  var slotDetails = obj.getSlotByElement($td);
+
+  console.log("Start Date: " + slotDetails.startTime);
+  console.log("End Date: " + slotDetails.endTime);
+  console.log("Resource details: " + slotDetails.resources);
+</script>
+
+{% endhighlight %}
+
 
 ### searchAppointments(searchString, field, operator, ignoreCase)
 {:#methods:searchappointments}
@@ -5028,11 +5071,11 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
-### appointmentDeleted
-{:#events:appointmentdeleted}
+### beforeAppointmentRemove
+{:#events:beforeappointmentremove}
 
 
-Triggers after the appointment is deleted.
+Triggers before the appointment is being removed from the Scheduler.
 
 <table class="params">
     <thead>
@@ -5043,11 +5086,6 @@ Triggers after the appointment is deleted.
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="name">argument.object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of appointmentDeleted event.</td>
-        </tr>
         <tr>
             <td class="name">argument.cancel</td>
             <td class="type">boolean</td>
@@ -5066,7 +5104,7 @@ Triggers after the appointment is deleted.
         <tr>
             <td class="name">argument.type</td>
             <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
     </tbody>
 </table>
@@ -5116,18 +5154,18 @@ $("#Schedule").ejSchedule({
                     startTimeZone: "StartTimeZone",
                     endTimeZone: "EndTimeZone"
         },
-   appointmentDeleted: function (args) {}
+   beforeAppointmentRemove: function (args) {}
 });
 </script>
 
 {% endhighlight %}
 
 
-### appointmentEdited
-{:#events:appointmentedited}
+### beforeAppointmentChange
+{:#events:beforeappointmentchange}
 
 
-Triggers after the appointment is edited.
+Triggers before the edited appointment is being saved.
 
 <table class="params">
     <thead>
@@ -5138,11 +5176,6 @@ Triggers after the appointment is edited.
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="name">argument.object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of appointmentEdited event.</td>
-        </tr>
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
@@ -5161,7 +5194,7 @@ Triggers after the appointment is edited.
         <tr>
             <td class="name">argument.type</td>
             <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
     </tbody>
 </table>
@@ -5210,7 +5243,7 @@ $("#Schedule").ejSchedule({
                     startTimeZone: "StartTimeZone",
                     endTimeZone: "EndTimeZone"
         },
-   appointmentEdited: function (args) {}
+   beforeAppointmentChange: function (args) {}
 });
 </script>
 
@@ -5299,10 +5332,10 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
-### appointmentSaved
-{:#events:appointmentsaved}
+### beforeAppointmentCreate
+{:#events:beforeappointmentcreate}
 
-Triggers after the appointment is saved.
+Triggers before the appointment gets saved.
 
 <table class="params">
     <thead>
@@ -5314,14 +5347,9 @@ Triggers after the appointment is saved.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of appointmentSaved event by using appointment window.</td>
-        </tr>
-        <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the saved appointment object.</td>
+            <td class="description">Returns the appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5336,32 +5364,7 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.type</td>
             <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
-        </tr>
-        <tr>
-            <td class="name">argument.object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of appointmentSaved event by using quick window.</td>
-        </tr>
-        <tr>
-            <td class="name">argument.cancel</td>
-            <td class="type">boolean</td>
-            <td class="description">Returns the cancel option value.</td>
-        </tr>
-        <tr>
-            <td class="name">argument.appointment</td>
-            <td class="type">object</td>
-            <td class="description">Returns the saved appointment object.</td>
-        </tr>
-        <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
-            <td class="description">Returns the Schedule model.</td>
-        </tr>
-        <tr>
-            <td class="name">argument.type</td>
-            <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
     </tbody>
 </table>
@@ -5377,7 +5380,7 @@ Triggers after the appointment is saved.
  
 <script>
 $("#Schedule").ejSchedule({
-   appointmentSaved: function (args) {}
+   beforeAppointmentCreate: function (args) {}
 });
 </script>
 

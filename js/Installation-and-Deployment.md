@@ -25,7 +25,7 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 
   * Css - contains the style sheets for mobile and web components.
   * External - contains the external dependency files such as jquery, jquery.easing etc.
-  * Scripts - includes all the necessary scripts for Syncfusion Essential JS components.
+  * Scripts - includes all the necessary widget scripts as well as culture scripts for Syncfusion Essential JS components.
   * TypeScript - includes the default type-definition file `ej.widgets.all.d.ts`.
 
 ## For Mac and Linux Users
@@ -51,17 +51,17 @@ The steps to download and configure the Syncfusion NuGet Packages in Visual Stud
 
 * In Visual Studio, navigate to `Tools|Library Package Manager|Package Manager Settings`, the Options pop-up will appear on the screen as shown below,
   
-  ![](/Installation-and-Deployment_images/Installation-and-Deployment_img1.png) 
+  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img1.png) 
 
 * Select `Package Manager|Package Sources` in the above pop-up and click on the `Browse` button(preceding the `Add` button) to navigate to the location where the above collection of NuGet packages are located on your machine.
   
-  ![](/Installation-and-Deployment_images/Installation-and-Deployment_img3.png) 
+  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png) 
 
 N>  The **Source** textbox in the above image denotes the location of the NuGet packages on your machine and the **Name** section, allows you to provide a unique name which we will refer to in the package installation section later.
 
 * Now click the `Add` button and the package name will be listed in the **Available package sources** list as shown below and then Click `OK`.
 
-  ![](/Installation-and-Deployment_images/Installation-and-Deployment_img4.png) 
+  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png) 
 
 * Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
 

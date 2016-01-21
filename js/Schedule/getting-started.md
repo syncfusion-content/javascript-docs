@@ -13,7 +13,6 @@ To render the Schedule control, the following list of external dependencies are 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing) - to support animation effects in the components
-* [jQuery.Globalize v0.1.1](https://github.com/jquery/globalize/tree/v0.1.1) - to support globalization
 
 The other required internal dependencies are tabulated below,
 
@@ -30,6 +29,10 @@ Must be referred always first before using all the JS controls.<br/><br/></td></
 <td>
 ej.data.min.js<br/><br/></td><td>
 Used to handle data operation and should be used while binding data to JS controls.<br/><br/></td></tr>
+<tr>
+<td>
+ej.globalize.min.js<br/><br/></td><td>
+Must be referred to localize any of the JS control's text and content.<br/><br/></td></tr>
 <tr>
 <td>
 ej.schedule.min.js<br/><br/></td><td>
@@ -85,7 +88,6 @@ Add links to the [CDN](/js/cdn) Script files with other required external depend
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
@@ -128,7 +130,7 @@ Initialize the Schedule control by adding the following script code to the body 
 
 ## Data Binding
 
-Scheduler uses [ej.DataManager](/js/datamanager/overview) which supports both RESTful JSON data services binding and local JSON array binding. The **dataSource** property of the Scheduler can be assigned either with the instance of `ej.DataManger` or JSON data array collection. 
+Scheduler uses [ejDataManager](/js/datamanager/overview) which supports both RESTful JSON data services binding and local JSON array binding. The **dataSource** property of the Scheduler can be assigned either with the instance of `ejDataManger` or JSON data array collection. 
 
 For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServices/Northwnd.svc) is used here and the code example is as follows.
 
