@@ -9867,7 +9867,7 @@ args.cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 args.Model{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="Model.html">Model</a></span></td>
+<td class="type"><span class="param-type">Model</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
