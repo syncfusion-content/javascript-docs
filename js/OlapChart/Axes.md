@@ -176,7 +176,7 @@ $(function()
 ![](Chart-Axes_images/Chart-Axes_img4.png)
 
 ###Label and Tick Positioning
-Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/js/api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](js/api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
+Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/js/api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](/js/api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
 
 {% highlight js %}
 
