@@ -69,11 +69,10 @@ Now, Include the specific theme reference to your HTML file by referring the app
 
 ### Adding the required JavaScript files
 
-Essential JS widgets requires the following dependent scripts,
+Essential JS widgets requires the following external dependent scripts,
 
 * jquery-1.10.2.min.js 
 * jquery.easing.1.3.min.js
-* jquery.globalize.min.js
 * jsrender.min.js
 
 In the below specified location, you can find the dependent script files. Copy and paste it into the **Scripts** folder of your application,
@@ -81,7 +80,7 @@ In the below specified location, you can find the dependent script files. Copy a
 
 <b>(installed location)</b>\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
 
-Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script in a minified format.
+Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
 N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
 
@@ -105,7 +104,6 @@ Include the script references in the head section of your HTML page as shown bel
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
   </head>
@@ -134,7 +132,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
         <script src="Scripts/jquery.easing.1.3.min.js"></script>
-        <script src="Scripts/jquery.globalize.min.js"></script>
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
     </head>
@@ -212,7 +209,6 @@ Include the reference to the required JavaScript files in your HTML page as show
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
@@ -245,7 +241,6 @@ Create a basic HTML file and directly refer all the required cdn links for the [
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>
@@ -270,7 +265,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>

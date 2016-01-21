@@ -4,7 +4,7 @@ description: Custom Configuration with Schedule control
 platform: js
 control: schedule
 documentation: ug
-keywords: globalize, localize, localization, globalization 
+keywords: validation and customization of appointment window fields, highlight different work-hours, Appointment filters 
 ---
 # How To
 

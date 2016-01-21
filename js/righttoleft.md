@@ -25,11 +25,10 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
         <script src="Scripts/jquery.easing.1.3.min.js"></script>
-        <script src="Scripts/jquery.globalize.min.js"></script>
-        // Culture file reference to use the ar-DZ culture
-        <script src="Scripts/cultures/globalize.culture.ar-DZ.min.js"></script>
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
+        // Culture file reference to use the ar-DZ culture
+        <script src="Scripts/cultures/ej.culture.ar-DZ.min.js"></script>
     </head>
     <body>     
         <!--Container for ejDatePicker widget-->

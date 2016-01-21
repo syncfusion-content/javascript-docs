@@ -11,12 +11,11 @@ documentation: ug
 
 ## Common Libraries
 
-**Essential JavaScript** components mainly relies on the following 4 common libraries –
+**Essential JavaScript** components mainly relies on the following 3 common libraries –
 
 * jQuery 1.7.1 and later versions
 * jsRender - to render the templates.
 * jQuery.easing - to support the animation effects in the components.
-* jQuery.Globalize - to support the globalization.
 
 ## Server-side Libraries
 

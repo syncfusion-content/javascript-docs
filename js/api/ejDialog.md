@@ -22,14 +22,14 @@ The Dialog control displays a Dialog window within a webpage. The Dialog enables
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
-options<br/><br/></td><td>
-object<br/><br/></td><td>
-Settings for Dialog.<br/><br/></td></tr>
+options</td><td>
+object</td><td>
+Settings for Dialog.</td></tr>
 </table>
 
 Example
@@ -116,39 +116,39 @@ Example
 ### animation<span class="type-signature type JSONobject">JSONobject</span>
 {:#members:animation}
 
-Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set “[enableAnimation](http://docs.syncfusion.com/js/api/ejdialog#members:enableanimation)” as true. It contains the following sub properties.
+Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set “[enableAnimation](#members:enableanimation)” as true. It contains the following sub properties.
 
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Default<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Default</th><th>
+Description</th></tr>
 <tr>
 <td>
-show.effect<br/><br/></td><td>
-String<br/><br/></td><td>
-fade<br/><br/></td><td>
-The animation effect when the dialog is opened. The possible values are fade and slide.<br/><br/></td></tr>
+show.effect</td><td>
+String</td><td>
+fade</td><td>
+The animation effect when the dialog is opened. The possible values are fade and slide.</td></tr>
 <tr>
 <td>
-show.duration<br/><br/></td><td>
-integer <br/><br/></td><td>
-400<br/><br/></td><td>
-The duration for the animation effect when the dialog is opened.<br/><br/></td></tr>
+show.duration</td><td>
+integer </td><td>
+400</td><td>
+The duration for the animation effect when the dialog is opened.</td></tr>
 <tr>
 <td>
-hide.effect<br/><br/></td><td>
-String<br/><br/></td><td>
-fade<br/><br/></td><td>
-The animation effect when the dialog is closed. The possible values are fade and slide.<br/><br/></td></tr>
+hide.effect</td><td>
+String</td><td>
+fade</td><td>
+The animation effect when the dialog is closed. The possible values are fade and slide.</td></tr>
 <tr>
 <td>
-hide.duration<br/><br/></td><td>
-integer<br/><br/></td><td>
-400<br/><br/></td><td>
-The duration for the animation effect when the dialog is closed.<br/><br/></td></tr>
+hide.duration</td><td>
+integer</td><td>
+400</td><td>
+The duration for the animation effect when the dialog is closed.</td></tr>
 </table>
 
 Example
@@ -194,6 +194,8 @@ Example
 
 The tooltip text for the dialog close button.
 
+N> Since it is deprecated we suggest to use the API “[tooltip](#members:tooltip)”.
+
 Default Value:
 {:.param}
 close
@@ -227,12 +229,33 @@ Example
 {% endhighlight %}
 
 
+### containment <span class="type-signature type string">string</span>
+{:#members:containment}
+
+The selector for the container element. If the property is set, then dialog will append to the selected element and it is restricted to move only within the specified container element.
+
+Note: This property is similar to the “[target](#methods:target)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
+
+Default Value:
+{:.param}
+“”
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({containment: "#dragarea"}); 
+
+{% endhighlight %}
+
+
 ### content[Deprecated]<span class="type-signature type string">String</span>
 {:#members:content}
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-N>Since it is deprecated we suggest to use the API “[target](#methods:target)”.
+N>Since it is deprecated we suggest to use the API “[target](#members:target)”.
 
 Default Value: 
 {:.param}
@@ -251,7 +274,7 @@ Example
 ### contentType<span class="type-signature type string">String</span>
 {:#members:contenttype}
 
-The content type to load the dialog content at run time. The possible values are null, ajax, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](http://docs.syncfusion.com/js/api/ejdialog#members:contenturl) property.
+The content type to load the dialog content at run time. The possible values are null, ajax, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](#members:contenturl) property.
 
 Default Value:
 {:.param}
@@ -271,7 +294,7 @@ Example
 ### contentUrl<span class="type-signature type string">String</span>
 {:#members:contenturl}
 
-The URL to load the dialog content (such as AJAX, image, and iframe). In order to load content from URL, you need to set [contentType](http://docs.syncfusion.com/js/api/ejdialog#members:contenttype) as ‘ajax’ or ‘iframe’ or ‘image’.
+The URL to load the dialog content (such as AJAX, image, and iframe). In order to load content from URL, you need to set [contentType](#members:contenttype) as ‘ajax’ or ‘iframe’ or ‘image’.
 
 Default Value:
 {:.param}
@@ -390,7 +413,7 @@ Example
 ### enableResize<span class="type-signature type boolean">Boolean</span>
 {:#members:enableresize}
 
-Allows the dialog to be resized. The dialog cannot be resized less than the minimum height and minimum width values.
+Allows the dialog to be resized. The dialog cannot be resized less than the minimum height, width values and greater than the maximum height and width.
 
 Default Value: 
 {:.param}
@@ -428,7 +451,7 @@ Example
 ### faviconCSS<span class="type-signature type string">String</span>
 {:#members:faviconcss}
 
-The CSS class name to display the favicon in the dialog header. In order to display fav icon, you need to [showHeader](http://docs.syncfusion.com/js/api/ejdialog#members:showheader) as true since the favicon will be displayed in the dialog header.
+The CSS class name to display the favicon in the dialog header. In order to display favicon, you need to set [showHeader](#members:showheader) as true since the favicon will be displayed in the dialog header.
 
 Default Value: 
 {:.param}
@@ -482,6 +505,24 @@ Example
     $("#dialog").ejDialog({isResponsive: true }); 
 
 {% endhighlight %}
+
+### locale <span class="type-signature type integer">Integer</span> 
+{:#members:locale}
+Set the localization culture for Dialog Widget.
+
+Default Value:
+{:.param}
+“en-US”
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({locale: "en-US"});
+
+{% endhighlight %}
+
 
 
 ### maxHeight<span class="type-signature type integer">Integer</span> 
@@ -567,22 +608,22 @@ Displays the Dialog widget at the given X and Y position.
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Default<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Default</th><th>
+Description</th></tr>
 <tr>
 <td>
-X<br/><br/></td><td>
-string<br/><br/></td><td>
-null<br/><br/></td><td>
-Sets the left position of the Dialog widget.<br/><br/></td></tr>
+X</td><td>
+string</td><td>
+null</td><td>
+Sets the left position of the Dialog widget.</td></tr>
 <tr>
 <td>
-Y<br/><br/></td><td>
-string<br/><br/></td><td>
-null<br/><br/></td><td>
-Sets the top position of the Dialog widget.<br/><br/></td></tr>
+Y</td><td>
+string</td><td>
+null</td><td>
+Sets the top position of the Dialog widget.</td></tr>
 </table>
 
 Example
@@ -674,7 +715,7 @@ Example
 ### title <span class="type-signature type string">String</span> 
 {:#members:title}
 
-The title text to be displayed in the dialog header. In order to set title, you need to set [showHeader](http://docs.syncfusion.com/js/api/ejdialog#members:showheader) as true since the title will be displayed in the dialog header.
+The title text to be displayed in the dialog header. In order to set title, you need to set [showHeader](#members:showheader) as true since the title will be displayed in the dialog header.
 
 Default Value:
 {:.param}
@@ -686,6 +727,77 @@ Example
 {% highlight js %}
 
     $("#dialog").ejDialog({title: "Custom title" }); 
+
+{% endhighlight %}
+
+### tooltip <span class="type-signature type object">object</span> 
+{:#members:tooltip}
+
+Add or configure the tooltip text for [actionButtons](#members:actionbuttons) in the dialog header.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Default</th><th>
+Description</th></tr>
+<tr>
+<td>
+close</td><td>
+String</td><td>
+“Close”</td><td>
+Sets the tooltip for close button.</td></tr>
+<tr>
+<td>
+collapse</td><td>
+String</td><td>
+“Collapse”</td><td>
+Sets the tooltip for collapse button.</td></tr>
+<tr>
+<td>
+restore</td><td>
+String</td><td>
+“Restore”</td><td>
+Sets the tooltip for restore button.</td></tr>
+<tr>
+<td>
+maximize</td><td>
+String</td><td>
+“Maximize”</td><td>
+Sets the tooltip for maximize button. </td></tr>
+<tr>
+<td>
+minimize</td><td>
+String</td><td>
+“Minimize”</td><td>
+Sets the tooltip for minimize button.</td></tr>
+<tr>
+<td>
+expand</td><td>
+String</td><td>
+“Expand”</td><td>
+Sets the tooltip for expand button.</td></tr>
+<tr>
+<td>
+unpin</td><td>
+String</td><td>
+“Unpin”</td><td>
+Sets the tooltip for unpin button.</td></tr>
+<tr>
+<td>
+pin</td><td>
+String</td><td>
+“Pin”</td><td>
+Sets the tooltip for pin button.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({tooltip: { close: "Exit" }}); 
 
 {% endhighlight %}
 
@@ -922,9 +1034,9 @@ Sets the title for the Dialog widget.
 <b>Description</b></th></tr>
 <tr>
 <td>
-Title<br/><br/></td><td>
-string<br/><br/></td><td>
-The title for the dialog widget.<br/><br/></td></tr>
+Title</td><td>
+string</td><td>
+The title for the dialog widget.</td></tr>
 </table>
 
 Example
@@ -950,9 +1062,9 @@ Sets the content for the Dialog widget dynamically.
 <b>Description</b></th></tr>
 <tr>
 <td>
-content<br/><br/></td><td>
-string<br/><br/></td><td>
-The content for the dialog widget. It accepts both string and html string.<br/><br/></td></tr>
+content</td><td>
+string</td><td>
+The content for the dialog widget. It accepts both string and html string.</td></tr>
 </table>
 
 Example
@@ -1184,7 +1296,7 @@ Example
 
 This event is triggered after the dialog widget is closed.
 
-N>Since it is deprecated use the method “close”. Here casing is the difference between two methods.
+N>Since it is deprecated use the method “[close](#events:close)”. Here casing is the difference between two methods.
 
 <table>
 <tr>
@@ -1200,13 +1312,18 @@ Current event object.</td></tr>
 <tr>
 <td>
 argument.cancel</td><td>
-boolean</td><td>
+Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 argument.model</td><td>
-object</td><td>
+Object</td><td>
 Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.isInteraction</td><td>
+Boolean</td><td>
+Specifies whether the event is triggered by user interaction or method call.</td></tr>
 <tr>
 <td>
 argument.type</td><td>
@@ -1277,7 +1394,7 @@ Example
 
 Triggered after the dialog content is loaded in DOM.
 
-N> This event is triggered only when the [contentType](http://docs.syncfusion.com/js/api/ejdialog) is set to image or iframe.
+N> This event is triggered only when the [contentType](#members:contenttype) is set to image or iframe.
 
 <table>
 <tr>
