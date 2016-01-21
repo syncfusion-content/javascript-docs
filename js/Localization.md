@@ -13,33 +13,34 @@ All our Syncfusion Components has been provided with the built-in [Localization]
 
 To localize any of our Syncfusion components into a particular culture, it is necessary to refer the below specified scripts in your application,
 
-* **jquery.globalize.min.js** (Mandatory for processing specific source-side actions globally)
+* **ej.globalize.min.js** (Mandatory for processing specific source-side actions globally)
 * Other culture-specific script files, to which specific culture you need to adapt any of our Syncfusion control.
 
+I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application.
 
 N>   All the culture-specific script files are available within the below specified location once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 </td>
 </tr>
 </table>
 
-N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **globalize.culture.de-DE.min.js** file in your application, after the reference of jquery.globalize.min.js file. 
+N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. 
 
 
 ## Localizing the Syncfusion components 
 
-Define the **locale** property which is applicable for all the Syncfusion components with the required culture codes declared by **JQuery globalize script**. Usually, the culture codes are defined in short forms like **en-US** for English culture, **de-DE** for German culture, **fr-FR** for French culture and so on. The below sample code shows how to define the **locale** property for **DatePicker** control,
+Define the **locale** property which is applicable for all the Syncfusion components with the required culture codes declared by **EJ globalize script**. Usually, the culture codes are defined in short forms like **en-US** for English culture, **de-DE** for German culture, **fr-FR** for French culture and so on. The below sample code shows how to define the **locale** property for **DatePicker** control,
 
 {% highlight js %}
 
@@ -62,9 +63,9 @@ The date formats, day names and month names are automatically translated into th
 
 #### Example 1: Defining locale property in the DatePicker control using built-in localized texts - Static
 
-Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **globalize.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
+Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **ej.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
 
-Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of your application and then refer it along with the other script and css reference in the head section. Also, define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
+Copy the file **ej.culture.de-DE.min.js** into the **Scripts** folder of your application and then refer it along with the other script and css reference in the head section. Also, define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
 
 {% highlight html %}
 
@@ -75,10 +76,9 @@ Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of 
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
-    <script src="Scripts/globalize.culture.de-DE.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
+    <script src="Scripts/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -117,12 +117,11 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
-    <script src="Scripts/globalize.culture.de-DE.min.js"></script>
-    <script src="Scripts/globalize.culture.vi-VN.min.js"></script>
-    <script src="Scripts/globalize.culture.fr-FR.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
+    <script src="Scripts/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej.culture.vi-VN.min.js"></script>
+    <script src="Scripts/ej.culture.fr-FR.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -196,10 +195,9 @@ Refer the same steps mentioned in the previous example – as it is applicable f
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
-    <script src="Scripts/globalize.culture.de-DE.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
+    <script src="Scripts/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -245,10 +243,9 @@ Now define the **locale** property for the Grid control with the appropriate **c
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
-    <script src="Scripts/globalize.culture.de-DE.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
+    <script src="Scripts/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -316,11 +313,10 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
-    <script src="Scripts/jquery.globalize.min.js"></script>
-    <script src="Scripts/globalize.culture.de-DE.min.js"></script>
-    <script src="Scripts/globalize.culture.es-ES.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
+    <script src="Scripts/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej.culture.es-ES.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->

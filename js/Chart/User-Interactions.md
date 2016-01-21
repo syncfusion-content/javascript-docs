@@ -244,7 +244,7 @@ The [`type`](../api/ejchart#members:zooming-type) option in zooming specifies wh
 
 ### Customizing zooming toolbar
 
-The user can choose the items displayed in the zooming toolbar by specifying the property [`toolBarItems`](../api/ejchart#members:zooming-toolBarItems).
+You can choose the items displayed in the zooming toolbar by specifying the property [`toolBarItems`](../api/ejchart#members:zooming-toolBarItems).
 
 {% highlight js %}
 
