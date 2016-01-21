@@ -112,7 +112,7 @@ $(function()
 ![](Legend_images/Legend_img4.png) 
 
 ##Legend Alignment
-You can align the legend to center, far and near based on its position in the Chart area using the [`alignment`](help.syncfusion.com/js/api/ejchart#members:legend-alignment) option.
+You can align the legend to center, far and near based on its position in the Chart area using the [`alignment`](/js/api/ejchart#members:legend-alignment) option.
  
 {% highlight js %}
 
