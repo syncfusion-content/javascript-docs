@@ -2602,7 +2602,7 @@ Outer</td>
 
 
 
-The columnlayout in grid columns width to the changes. 
+Gets or sets a value that indicates whether to define columnlayout.
 
 
 
@@ -2612,7 +2612,8 @@ The columnlayout in grid columns width to the changes.
 #### Properties
 
 
-The columnlayout in grid columns width to the changes.    
+
+Gets or sets a value that indicates whether to define columnlayout.    
 
 
 
@@ -2631,13 +2632,13 @@ The columnlayout in grid columns width to the changes.
 <td class="name">Auto</td>
 <td class="type">string</td>
 <td class="default">auto</td>
-<td class="description">Columnlayout is auto means column width will be adjusted based upon the gird.</td>
+<td class="description">Gets or sets a value that indicates to render the auto(based on width) for columnlayout in grid.</td>
 </tr>
 <tr>
 <td class="name">Fixed</td>
 <td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description">Columnlayout is fixed means column width will be not adjusted based upon the gird.</td>
+<td class="description">Gets or sets a value that indicates to render the fixed(based on width) for columnlayout in grid.</td>
 </tr>
 </tbody>
 </table>
@@ -14590,7 +14591,7 @@ Gets or sets a value that indicates whether to add the default selection actions
 <td class="name">Column</td>
 <td class="type">string</td>
 <td class="default">column</td>
-<td class="description">To set the Selectionmode as column.</td>
+<td class="description">Get or Set  the Selectionmode as column.</td>
 </tr>
 </tbody>
 </table>
