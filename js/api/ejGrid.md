@@ -3293,6 +3293,12 @@ $("#Grid").ejGrid({
 
 Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
 
+### sortSettings.sortedColumns `Object`
+{:#members:sortsettings-sortedcolumns}
+
+Gets or sets a value that indicates whether to define the direction and field to sort the column.
+
+
 ### sortSettings.sortedColumns.direction `String`
 {:#members:sortsettings-sortedcolumns-direction}
 
