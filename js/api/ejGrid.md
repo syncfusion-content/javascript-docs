@@ -2165,6 +2165,26 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 {:.param}
 * []
 
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Gets or sets a value that indicates whether to define the field name of the column to be filter.
+
+### filterSettings.filteredColumns.operator `enum`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Gets or sets a value that indicates whether to define the filter condition to filtered column.
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Gets or sets a value that indicates whether to define the predicate as and/or.
+
+### filterSettings.filteredColumns.value `string/number`
+{:#members:filtersettings-filteredcolumns-value}
+
+Gets or sets a value that indicates whether to define the value to be filtered in a column.
+
 #### Example
 {:.example}
 {% highlight html %}
@@ -2758,6 +2778,28 @@ $("#print").text("TotalRecordsCount: " + value);
 </script>
 {% endhighlight %}
 
+### pageSettings.printMode `enum`
+{:#members:pagesettings-printmode}
+
+Gets or sets a value that indicates whether to define the number of pages to print
+
+#### Default Value:
+{:.param}
+* ej.Grid.PrintMode.AllPages
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowPaging:true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.PrintGrid] },
+   pageSettings:{printMode:ej.Grid.PrintMode.CurrentPage},
+});
+</script>
+{% endhighlight %}
+
 ### query `Object`
 {:#members:query}
 
@@ -3292,6 +3334,12 @@ $("#Grid").ejGrid({
 {:#members:sortsettings}
 
 Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
+
+### sortSettings.sortedColumns `Object`
+{:#members:sortsettings-sortedcolumns}
+
+Gets or sets a value that indicates whether to define the direction and field to sort the column.
+
 
 ### sortSettings.sortedColumns.direction `String`
 {:#members:sortsettings-sortedcolumns-direction}
@@ -4085,6 +4133,29 @@ $("#Grid").ejGrid({
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] }
 });
 </script>
+{% endhighlight %}
+
+### columnLayout `enum`
+{:#members:columnlayout}
+
+Gets or sets a value that indicates whether column width will be adjusted with corresponding to grid control.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ColumnLayout.Fixed
+
+#### Example
+{% highlight html %}
+<style>
+    width:700px;
+</style>
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource: window.gridData,
+   columnLayout:ej.Grid.ColumnLayout.Fixed
+});
+</script> 
 {% endhighlight %}
 
 
