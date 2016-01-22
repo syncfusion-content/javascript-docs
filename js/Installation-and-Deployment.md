@@ -25,7 +25,7 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 
   * Css - contains the style sheets for mobile and web components.
   * External - contains the external dependency files such as jquery, jquery.easing etc.
-  * Scripts - includes all the necessary scripts for Syncfusion Essential JS components.
+  * Scripts - includes all the necessary widget scripts as well as culture scripts for Syncfusion Essential JS components.
   * TypeScript - includes the default type-definition file `ej.widgets.all.d.ts`.
 
 ## For Mac and Linux Users
