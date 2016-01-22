@@ -65,7 +65,7 @@ The date formats, day names and month names are automatically translated into th
 
 Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **ej.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
 
-Copy the file **ej.culture.de-DE.min.js** into the **Scripts** folder of your application and then refer it along with the other script and css reference in the head section. Also, define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
+Define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
 
 {% highlight html %}
 
@@ -78,7 +78,7 @@ Copy the file **ej.culture.de-DE.min.js** into the **Scripts** folder of your ap
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -119,9 +119,9 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej.culture.de-DE.min.js"></script>
-    <script src="Scripts/ej.culture.vi-VN.min.js"></script>
-    <script src="Scripts/ej.culture.fr-FR.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.vi-VN.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.fr-FR.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -176,10 +176,10 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
 There are other Syncfusion components like Grid, Gantt, FileExplorer and Schedule which defines a collection of custom localized-text for each culture. In order to apply those localized label collection appropriately for each custom-texts, we need to define separately a collection of culture based translated words for each culture as shown below,
 
 N>   Based on the components and specific-culture names used in the application, we can define the localized words for it using the below syntax within the script section,   
-N>               **ej.ComponentName.locale[Culture-Code] = { … };**
+N>               **ej.ClassName.Locale[Culture-Code] = { … };**
 
 N>   For example, to define the localized words for the grid control in fr-FR culture, it can be done as follows,   
-N>               **ej.Grid.locale["fr-FR"] = { … };**
+N>               **ej.Grid.Locale["fr-FR"] = { … };**
 
 
 #### Example 2: Defining locale property in the Grid control using collection of localized text
@@ -197,7 +197,7 @@ Refer the same steps mentioned in the previous example – as it is applicable f
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -218,7 +218,7 @@ Define the collection of custom localized-words for the **de-De** culture within
 {% highlight js %}
 
        //localized words defined for de-DE culture
-        ej.Grid.locale["de-DE"] = {
+        ej.Grid.Locale["de-DE"] = {
             EmptyRecord: "Keine Aufzeichnungen angezeigt",
             GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
             DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
@@ -245,14 +245,14 @@ Now define the **locale** property for the Grid control with the appropriate **c
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
     <div id="Grid"></div>
     <script type="text/javascript">
        //Collection of localized words defined for **de-DE** culture
-        ej.Grid.locale["de-DE"] = {
+        ej.Grid.Locale["de-DE"] = {
             EmptyRecord: "Keine Aufzeichnungen angezeigt",
             GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
             DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
@@ -315,8 +315,8 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej.culture.de-DE.min.js"></script>
-    <script src="Scripts/ej.culture.es-ES.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/cultures/ej.culture.es-ES.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -332,7 +332,7 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
 
     <script type="text/javascript">
        //Collection of localized words defined for de-DE & es-ES culture pre-defined
-        ej.Grid.locale["es-ES"] = {
+        ej.Grid.Locale["es-ES"] = {
             EmptyRecord: "No hay registros que mostrar",
             GroupDropArea: "Arrastre un encabezado de columna aquí",
             DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
@@ -344,7 +344,7 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
             UnGroup: "Haga clic aquí para desagrupar"
         };
 
-        ej.Grid.locale["de-DE"] = {
+        ej.Grid.Locale["de-DE"] = {
             EmptyRecord: "Keine Aufzeichnungen angezeigt",
             GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
             DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
