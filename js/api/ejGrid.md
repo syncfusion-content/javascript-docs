@@ -3751,7 +3751,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.summaryType `Object`
+### summaryRows.summaryColumns.summaryType `enum`
 {:#members:summaryrows-summarycolumns-summarytype}
 
 Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column
@@ -3761,7 +3761,6 @@ Gets or sets a value that indicates the type of calculations to be performed for
 * []
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
