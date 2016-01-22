@@ -2165,6 +2165,26 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 {:.param}
 * []
 
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Gets or sets a value that indicates whether to define the field name of the column to be filter.
+
+### filterSettings.filteredColumns.operator `enum`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Gets or sets a value that indicates whether to define the filter condition to filtered column.
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Gets or sets a value that indicates whether to define the predicate as and/or.
+
+### filterSettings.filteredColumns.value `string/number`
+{:#members:filtersettings-filteredcolumns-value}
+
+Gets or sets a value that indicates whether to define the value to be filtered in a column.
+
 #### Example
 {:.example}
 {% highlight html %}
