@@ -2602,7 +2602,7 @@ Outer</td>
 
 
 
-Enum for grid columnlayout
+The columnlayout in grid columns width to the changes. 
 
 
 
@@ -2612,7 +2612,7 @@ Enum for grid columnlayout
 #### Properties
 
 
-Set the columnlayout to column width will be adjusted or not
+The columnlayout in grid columns width to the changes.    
 
 
 
@@ -2631,13 +2631,13 @@ Set the columnlayout to column width will be adjusted or not
 <td class="name">Auto</td>
 <td class="type">string</td>
 <td class="default">auto</td>
-<td class="description">set as auto means column width will be adjusted.</td>
+<td class="description">Columnlayout is auto means column width will be adjusted based upon the gird.</td>
 </tr>
 <tr>
 <td class="name">Fixed</td>
 <td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description">Set as fixed means column width will be not adjusted.</td>
+<td class="description">Columnlayout is fixed means column width will be not adjusted based upon the gird.</td>
 </tr>
 </tbody>
 </table>
@@ -3464,7 +3464,7 @@ Data</td>
 
 
 
-Enum for the type of edit in grid
+Gets or sets a value that indicates whether to define the type of editing. 
 
 
 
@@ -3474,7 +3474,7 @@ Enum for the type of edit in grid
 #### Properties
 
 
-Enum for the type of edit in grid
+Gets or sets a value that indicates whether to define the type of editing.
 
 
 
@@ -3493,37 +3493,37 @@ Enum for the type of edit in grid
 <td class="name">Boolean</td>
 <td class="type">string</td>
 <td class="default">boolean</td>
-<td class="description">Specifies column should be edit as boolean</td>
+<td class="description"> The column to set the edittype is boolean means column should be edit as boolean type.</td>
 </tr>
 <tr>
 <td class="name">DatePicker</td>
 <td class="type">string</td>
 <td class="default">datepicker</td>
-<td class="description">Specifies column should be edit as datePicker</td>
+<td class="description">The column to set the edittype is datePicker means column should be edit as datePicker type.</td>
 </tr>
 <tr>
 <td class="name">DateTimePicker</td>
 <td class="type">string</td>
 <td class="default">datetimepicker</td>
-<td class="description">Specifies column should be edit as datetimepicker</td>
+<td class="description">The column to set the edittype is datetimepicker means column should be edit as datetimepicker type.</td>
 </tr>
 <tr>
 <td class="name">Dropdown</td>
 <td class="type">string</td>
 <td class="default">dropdown</td>
-<td class="description">Specifies column should be edit as dropdown</td>
+<td class="description">The column to set the edittype is dropdown means column should be edit as dropdown type.</td>
 </tr>
 <tr>
 <td class="name">Numeric</td>
 <td class="type">string</td>
 <td class="default">numeric</td>
-<td class="description">Specifies column should be edit as numeric</td>
+<td class="description">The column to set the edittype is numeric means column should be edit as numeric type.</td>
 </tr>
 <tr>
 <td class="name">String</td>
 <td class="type">string</td>
 <td class="default">string</td>
-<td class="description">Specifies column should be edit as string</td>
+<td class="description">The column to set the edittype is string means column should be edit as string type.</td>
 </tr>
 </tbody>
 </table>
@@ -3552,7 +3552,7 @@ Enum for the type of edit in grid
 
 
 
-Enum for the mode of editing in grid
+Gets or sets a value that indicates whether to define the mode of editing.
 
 
 
@@ -3562,7 +3562,7 @@ Enum for the mode of editing in grid
 #### Properties
 
 
-Enum for the mode of editing in grid
+Gets or sets a value that indicates whether to define the mode of editing.
 
 
 
@@ -3581,49 +3581,49 @@ Enum for the mode of editing in grid
 <td class="name">Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">Specifies column should be editmode as normal</td>
+<td class="description">Get or Set column should be mode of editing is normal</td>
 </tr>
 <tr>
 <td class="name">Dialog</td>
 <td class="type">string</td>
 <td class="default">dialog</td>
-<td class="description">Specifies column should be editmode as dialog</td>
+<td class="description">Get or Set column should be mode of editing is dialog</td>
 </tr>
 <tr>
 <td class="name">DialogTemplate</td>
 <td class="type">string</td>
 <td class="default">dialogtemplate</td>
-<td class="description">Specifies column should be editmode as dialogtemplate</td>
+<td class="description">Get or Set column should be mode of editing is dialog</td>
 </tr>
 <tr>
 <td class="name">Batch</td>
 <td class="type">string</td>
 <td class="default">batch</td>
-<td class="description">Specifies column should be editmode as batch</td>
+<td class="description">Get or Set column should be mode of editing is batch</td>
 </tr>
 <tr>
 <td class="name">ExternalForm</td>
 <td class="type">string</td>
 <td class="default">externalform</td>
-<td class="description">Specifies column should be editmode as externalform</td>
+<td class="description">Get or Set column should be mode of editing is externalform</td>
 </tr>
 <tr>
 <td class="name">InlineForm</td>
 <td class="type">string</td>
 <td class="default">inlineform</td>
-<td class="description">Specifies column should be editmode as inlineform</td>
+<td class="description">Get or Set column should be mode of editing is inlineform</td>
 </tr>
 <tr>
 <td class="name">InlineTemplateForm</td>
 <td class="type">string</td>
 <td class="default">inlineformtemplate</td>
-<td class="description">Specifies column should be editmode as inlineformtemplate</td>
+<td class="description">Get or Set column should be mode of editing is inlineformtemplate</td>
 </tr>
 <tr>
 <td class="name">ExternalFormTemplate</td>
 <td class="type">string</td>
 <td class="default">externalformtemplate</td>
-<td class="description">Specifies column should be editmode as externalformtemplate</td>
+<td class="description">Get or Set column should be mode of editing is externalformtemplate</td>
 </tr>
 </tbody>
 </table>
@@ -3731,7 +3731,7 @@ SVG</td>
 
 
 
-Enum for Grid Filter Bar mode
+The grid to starts the filter action while typing in the filterBar or after pressing the enter key
 
 
 
@@ -3741,7 +3741,8 @@ Enum for Grid Filter Bar mode
 #### Properties
 
 
-Enum for Grid Filter Bar mode
+
+The grid to starts the filter action while typing in the filterBar or after pressing the enter key
 
 
 
@@ -3795,7 +3796,7 @@ Enum for Grid Filter Bar mode
 
 
 
-Enum for filtertype
+The grid to show the filterBar or filterMenu to the grid records by filtertype.
 
 
 
@@ -3806,7 +3807,7 @@ Enum for filtertype
 
 
 
-Enum for filtertype
+The grid to show the filterBar or filterMenu to the grid records by filtertype.
 
 
 
@@ -3825,19 +3826,19 @@ Enum for filtertype
 <td class="name">Menu</td>
 <td class="type">string</td>
 <td class="default">menu</td>
-<td class="description">Enum for filter type menu</td>
+<td class="description">Gets or sets a value that indicates to render the menu(based on filter type) for filtering the grid record.</td>
 </tr>
 <tr>
 <td class="name">Excel</td>
 <td class="type">string</td>
 <td class="default">excel</td>
-<td class="description">Enum for filter type excel</td>
+<td class="description">Gets or sets a value that indicates to render the excel(based on filter type) for filtering the grid record.</td>
 </tr>
 <tr>
 <td class="name">FilterBar</td>
 <td class="type">string</td>
 <td class="default">filterbar</td>
-<td class="description">Enum for filter type filterbar</td>
+<td class="description">Gets or sets a value that indicates to render the filterbar(based on filter type) for filtering the grid record.</td>
 </tr>
 </tbody>
 </table>
@@ -5467,7 +5468,7 @@ HalfCircle</td>
 
 
 
-Enum for formposition in grid
+Set the position of an External edit form either in the top-right or bottom-left of the grid
 
 
 
@@ -5477,7 +5478,7 @@ Enum for formposition in grid
 #### Properties
 
 
-Enum for Formposition in grid
+Set the position of an External edit form either in the top-right or bottom-left of the grid
 
 
 
@@ -5496,13 +5497,13 @@ Enum for Formposition in grid
 <td class="name">BottomLeft</td>
 <td class="type">string</td>
 <td class="default">bottomleft</td>
-<td class="description">To set the Formposition as bottomleft.</td>
+<td class="description">Set the position of an External edit form in the bottom-left of the grid.</td>
 </tr>
 <tr>
 <td class="name">TopRight</td>
 <td class="type">string</td>
 <td class="default">topright</td>
-<td class="description">To set the Formposition as topright.</td>
+<td class="description">Set the position of an External edit form in the top-right of the grid.</td>
 </tr>
 </tbody>
 </table>
@@ -5644,7 +5645,7 @@ BottomCenter</td>
 
 
 
-Enum for gridlines in grid
+Gets or sets a value that indicates to enable the visibility of the grid lines.
 
 
 
@@ -5654,7 +5655,7 @@ Enum for gridlines in grid
 #### Properties
 
 
-Enum for gridlines in grid
+Gets or sets a value that indicates to enable the visibility of the gridlines.
 
 
 
@@ -5673,25 +5674,25 @@ Enum for gridlines in grid
 <td class="name">Both</td>
 <td class="type">string</td>
 <td class="default">both</td>
-<td class="description">To set the gridline as both side.</td>
+<td class="description">Get or Set the gridline as vertical and horizontal direction.</td>
 </tr>
 <tr>
 <td class="name">None</td>
 <td class="type">string</td>
 <td class="default">none</td>
-<td class="description">To set the gridline as none.</td>
+<td class="description">Get or Set the gridline as none.</td>
 </tr>
 <tr>
 <td class="name">Horizontal</td>
 <td class="type">string</td>
 <td class="default">horizontal</td>
-<td class="description">To set the gridline as horizontal.</td>
+<td class="description">Get or Set the gridline as horizontal direction.</td>
 </tr>
 <tr>
 <td class="name">Vertical</td>
 <td class="type">string</td>
 <td class="default">vertical</td>
-<td class="description">To set the gridline as vertical.</td>
+<td class="description">Get or Set the gridline as vertical direction.</td>
 </tr>
 </tbody>
 </table>
@@ -6951,7 +6952,7 @@ Twelve</td>
 
 
 
-Enum for the Headertext Alignment in grid
+The text alignment of a particular column header cell value
 
 
 
@@ -6962,7 +6963,7 @@ Enum for the Headertext Alignment in grid
 
 
 
-Enum for the HeaderText Alignment in grid
+The text alignment of a particular column header cell value
 
 
 
@@ -12349,7 +12350,7 @@ Surface</td>
 
 
 
-Enum for pagesetting in print mode.
+Gets or sets a value that indicates to enable the visible of the printmode.
 
 
 
@@ -12359,7 +12360,7 @@ Enum for pagesetting in print mode.
 #### Properties
 
 
-Enum for page settting in print mode.
+Gets or sets a value that indicates to enable the visible of the printmode.
 
 
 
@@ -12378,13 +12379,13 @@ Enum for page settting in print mode.
 <td class="name">AllPages</td>
 <td class="type">string</td>
 <td class="default">allpages</td>
-<td class="description">Specifies Printmode for allpages.</td>
+<td class="description">Get or Set the printmode as allpages.</td>
 </tr>
 <tr>
 <td class="name">CurrentPage</td>
 <td class="type">string</td>
 <td class="default">currentpage</td>
-<td class="description">Specifies Printmode for currentpage.</td>
+<td class="description">Get or Set the printmode as currentpage.</td>
 </tr>
 </tbody>
 </table>
@@ -12883,7 +12884,7 @@ Windows</td>
 
 
 
-Enum for grid Rowposition
+Specifies to set the position of an adding new row either in the top or bottom of the grid
 
 
 
@@ -12893,7 +12894,7 @@ Enum for grid Rowposition
 #### Properties
 
 
-Enum for grid Rowposition
+Specifies to set the position of an adding new row either in the top or bottom of the grid
 
 
 
@@ -12912,13 +12913,13 @@ Enum for grid Rowposition
 <td class="name">Top</td>
 <td class="type">string</td>
 <td class="default">top</td>
-<td class="description">To set the rowposition as top.</td>
+<td class="description">Set the position of an adding new row in the top of the grid.</td>
 </tr>
 <tr>
 <td class="name">Bottom</td>
 <td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description">To set the rowposition as bottom.</td>
+<td class="description">Set the position of an adding new row in the bottom of the grid</td>
 </tr>
 </tbody>
 </table>
@@ -14548,7 +14549,7 @@ qrBarcode</td>
 
 
 
-Enum for grid as Selectionmode
+Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode
 
 
 
@@ -14558,7 +14559,7 @@ Enum for grid as Selectionmode
 #### Properties
 
 
-Enum for grid as Selectionmode
+Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode
 
 
 
@@ -14577,13 +14578,13 @@ Enum for grid as Selectionmode
 <td class="name">Row</td>
 <td class="type">string</td>
 <td class="default">row</td>
-<td class="description">To set the Selectionmode as row.</td>
+<td class="description">Get or Set the Selectionmode as row.</td>
 </tr>
 <tr>
 <td class="name">Cell</td>
 <td class="type">string</td>
 <td class="default">cell</td>
-<td class="description">To set the Selectionmode as cell.</td>
+<td class="description">Get or Set the Selectionmode as cell.</td>
 </tr>
 <tr>
 <td class="name">Column</td>
@@ -14618,7 +14619,7 @@ Enum for grid as Selectionmode
 
 
 
-Enum for grid as selectiontype
+The row selection behavior of grid 
 
 
 
@@ -14628,7 +14629,7 @@ Enum for grid as selectiontype
 #### Properties
 
 
-Enum for grid as selectiontype
+The row selection behavior of grid 
 
 
 
@@ -14647,13 +14648,13 @@ Enum for grid as selectiontype
 <td class="name">Single</td>
 <td class="type">string</td>
 <td class="default">single</td>
-<td class="description">To set the selectiontype as single.</td>
+<td class="description">Set the selectiontype as single means select the single row selection.</td>
 </tr>
 <tr>
 <td class="name">Multiple</td>
 <td class="type">string</td>
 <td class="default">multiple</td>
-<td class="description">To set the selectiontype as multiple.</td>
+<td class="description">Set the selectiontype as multiple means select the multiple row selection.</td>
 </tr>
 </tbody>
 </table>
@@ -14839,7 +14840,7 @@ Right</td>
 
 
 
-Enum for the Text Alignment in grid
+Gets or sets a value that indicates to align the text within the column
 
 
 
@@ -14850,7 +14851,7 @@ Enum for the Text Alignment in grid
 
 
 
-Enum for the Text Alignment in grid
+Gets or sets a value that indicates to align the text within the column
 
 
 
@@ -16945,7 +16946,7 @@ Popup</td>
 
 
 
-### Type
+### Command Type
 {:#enum:type}
 
 
@@ -16955,7 +16956,7 @@ Popup</td>
 
 
 
-Enum for Command Type
+Gets or sets a value that indicates to specify the commandtype of the specified columns.
 
 
 
@@ -16965,7 +16966,7 @@ Enum for Command Type
 #### Properties
 
 
-Enum for Command Type
+Gets or sets a value that indicates to specify the commandtype of the specified columns.
 
 
 
@@ -16984,25 +16985,25 @@ Enum for Command Type
 <td class="name">Edit</td>
 <td class="type">string</td>
 <td class="default">edit</td>
-<td class="description">Enum for edit type commands column</td>
+<td class="description">Get or Set commandtype as edit in specific column</td>
 </tr>
 <tr>
 <td class="name">Delete</td>
 <td class="type">string</td>
 <td class="default">delete</td>
-<td class="description">Enum for delete type commands column</td>
+<td class="description">Get or Set commandtype is delete in specific column</td>
 </tr>
 <tr>
 <td class="name">Save</td>
 <td class="type">string</td>
 <td class="default">save</td>
-<td class="description">Enum for save type commands column</td>
+<td class="description">Get or Set commandtype is save in specific column</td>
 </tr>
 <tr>
 <td class="name">Cancel</td>
 <td class="type">string</td>
 <td class="default">cancel</td>
-<td class="description">Enum for cancel type commands column</td>
+<td class="description">Get or Set commandtype is cancel in specific column</td>
 </tr>
 </tbody>
 </table>
@@ -17738,7 +17739,7 @@ Far</td>
 
 
 
-Enum for grid as virtualscrollmode
+Define the mode of virtual scrolling in grid
 
 
 
@@ -17748,7 +17749,7 @@ Enum for grid as virtualscrollmode
 #### Properties
 
 
-Enum for grid as virtualscrollmode
+Define the mode of virtual scrolling in grid
 
 
 
@@ -17767,13 +17768,13 @@ Enum for grid as virtualscrollmode
 <td class="name">Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">To set the virtualscrollmode as normal.</td>
+<td class="description">Set the virtualscrollmode as normal.</td>
 </tr>
 <tr>
 <td class="name">Continuous</td>
 <td class="type">string</td>
 <td class="default">continuous</td>
-<td class="description">To set the virtualscrollmode as continuous.</td>
+<td class="description">Set the virtualscrollmode as continuous.</td>
 </tr>
 </tbody>
 </table>
