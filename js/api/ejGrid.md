@@ -2758,6 +2758,28 @@ $("#print").text("TotalRecordsCount: " + value);
 </script>
 {% endhighlight %}
 
+### pageSettings.printMode `enum`
+{:#members:pagesettings-printmode}
+
+Gets or sets a value that indicates whether to define the number of pages to print
+
+#### Default Value:
+{:.param}
+* ej.Grid.PrintMode.AllPages
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowPaging:true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.PrintGrid] },
+   pageSettings:{printMode:ej.Grid.PrintMode.CurrentPage},
+});
+</script>
+{% endhighlight %}
+
 ### query `Object`
 {:#members:query}
 
