@@ -415,7 +415,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### gridLines<span class="type-signature type enum">enum</span>
+### gridLines `enum`
 {:#members:gridlines}
 
 Gets or sets a value that indicates to enable the visibility of the grid lines.
@@ -424,8 +424,7 @@ Gets or sets a value that indicates to enable the visibility of the grid lines.
 {:.param}
 * ej.Grid.GridLines.Both
 
-#### Example
-{:.example}
+#### Example 
 {% highlight html %}  
 <div id="Grid"></div> 
 <script>
@@ -662,7 +661,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.commands.type<span class="type-signature type enum">enum</span>
+### columns.commands.type `enum`
 {:#members:columns-commands-type}
 
 Gets or sets a value that indicates to add the command column button. See unboundType
@@ -672,7 +671,6 @@ Gets or sets a value that indicates to add the command column button. See unboun
 * -
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -855,7 +853,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.editType<span class="type-signature type enum">enum</span>
+### columns.editType `enum`
 {:#members:columns-edittype}
 
 Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. . See editingType
@@ -865,7 +863,6 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 * ej.Grid.EditingType.String
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -1007,7 +1004,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.headerTextAlign<span class="type-signature type enum">enum</span>
+### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
 
 This defines the text alignment of a particular column header cell value. See headerTextAlign
@@ -1017,7 +1014,6 @@ This defines the text alignment of a particular column header cell value. See he
 * ej.TextAlign.Left
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -1163,7 +1159,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.textAlign<span class="type-signature type enum">enum</span>
+### columns.textAlign `enum`
 {:#members:columns-textalign}
 
 Gets or sets a value that indicates to align the text within the column. See textAlign
@@ -1173,7 +1169,6 @@ Gets or sets a value that indicates to align the text within the column. See tex
 * ej.TextAlign.Left
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -1565,7 +1560,7 @@ $("#Grid").ejGrid({
 </script>                
 {% endhighlight %}
 
-### editSettings.editMode<span class="type-signature type enum">enum</span>
+### editSettings.editMode `enum`
 {:#members:editsettings-editmode}
 
 Gets or sets a value that indicates whether to define the mode of editing See editMode
@@ -1575,7 +1570,6 @@ Gets or sets a value that indicates whether to define the mode of editing See ed
 * ej.Grid.EditMode.Normal
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div>
 <script>
@@ -1630,7 +1624,7 @@ $("#Grid").ejGrid({
 </script>                
 {% endhighlight %}
 
-### editSettings.formPosition<span class="type-signature type enum">enum</span>
+### editSettings.formPosition `enum`
 {:#members:editsettings-formposition}
 
 This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid
@@ -1640,7 +1634,6 @@ This specifies to set the position of an External edit form either in the top-ri
 * ej.Grid.FormPosition.BottomLeft
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div>
 <script>
@@ -1695,7 +1688,7 @@ $("#Grid").ejGrid({
 </script>                
 {% endhighlight %}
 
-### editSettings.rowPosition<span class="type-signature type enum">enum</span>
+### editSettings.rowPosition `enum`
 {:#members:editsettings-rowposition}
 
 This specifies to set the position of an adding new row either in the top or bottom of the grid
@@ -1705,7 +1698,6 @@ This specifies to set the position of an adding new row either in the top or bot
 * ej.Grid.RowPosition.top
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div>
 <script>
@@ -2010,7 +2002,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
+### filterSettings.filterBarMode `enum`
 {:#members:filtersettings-filterbarmode}
 
 This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
@@ -2020,7 +2012,6 @@ This specifies the grid to starts the filter action while typing in the filterBa
 * ej.Grid.FilterBarMode.Immediate
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -2054,7 +2045,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.filterType<span class="type-signature type enum">enum</span>
+### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
 
 This specifies the grid to show the filterBar or filterMenu to the grid records. See <a href="global.html#filterType">filterType</a>
@@ -2064,7 +2055,6 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 * ej.Grid.FilterType.FilterBar
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -2805,7 +2795,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.virtualScrollMode<span class="type-signature type enum">enum</span>
+### scrollSettings.virtualScrollMode `enum`
 {:#members:scrollsettings-virtualscrollmode}
 
 This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
@@ -2815,7 +2805,6 @@ This is used to define the mode of virtual scrolling in grid. See virtualScrollM
 * ej.Grid.VirtualScrollMode.Normal
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div>
 <script>
@@ -3025,7 +3014,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionSettings.selectionMode<span class="type-signature type enum">enum</span>
+### selectionSettings.selectionMode `enum`
 {:#members:selectionsettings-selectionmode}
 
 Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode.See selectionMode
@@ -3035,7 +3024,6 @@ Gets or sets a value that indicates whether to add the default selection actions
 * ["row"]
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -3047,7 +3035,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionType<span class="type-signature type enum">enum</span>
+### selectionType `enum`
 {:#members:selectiontype}
 
 The row selection behavior of grid. Accepting types are "single" and "multiple".
@@ -3057,7 +3045,6 @@ The row selection behavior of grid. Accepting types are "single" and "multiple".
 * ej.Grid.SelectionType.Single
 
 #### Example
-{:.example}
 {% highlight html %} 
 <div id="Grid"></div> 
 <script>
@@ -3946,7 +3933,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### toolbarSettings.toolbarItems<span class="type-signature type enum">enum</span>
+### toolbarSettings.toolbarItems `enum`
 {:#members:toolbarsettings-toolbaritems}
 
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
@@ -3956,7 +3943,6 @@ Gets or sets a value that indicates whether to add the default editing actions a
 * []
 
 #### Example
-{:.example}
 {% highlight html %}
 <div id="Grid"></div> 
 <script>
@@ -3975,7 +3961,7 @@ $("#Grid").ejGrid({
 ### addRecord()
 {:#methods:addrecord}
 
-Add a new record in grid control even allowAdding is set as false.
+Add a new record in grid control when allowAdding is set as true.
 
 
 ####Example
@@ -4416,7 +4402,7 @@ $("#Grid").ejGrid("dataSource", data);
 {:#methods:deleterecord}
 
 
-Delete a record in grid control even allowDeleting is set as false
+Delete a record in grid control when allowDeleting is set as true
 
 <table class="params">
 <thead>
@@ -6791,7 +6777,7 @@ $("#Grid").ejGrid("ungroupColumn", "OrderID");
 ### updateRecord(fieldName, data)
 {:#methods:updaterecord}
 
-Update a edited record in grid control even allowEditing is set as false.
+Update a edited record in grid control when allowEditing is set as true.
 
 <table class="params">
 <thead>
