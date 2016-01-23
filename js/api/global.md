@@ -2632,13 +2632,13 @@ Gets or sets a value that indicates whether to define columnlayout.
 <td class="name">Auto</td>
 <td class="type">string</td>
 <td class="default">auto</td>
-<td class="description">Gets or sets a value that indicates to render the auto(based on width) for columnlayout in grid.</td>
+<td class="description">Gets or sets a value that indicates to render the columnlayout in auto(based on width) for a grid.</td>
 </tr>
 <tr>
 <td class="name">Fixed</td>
 <td class="type">string</td>
 <td class="default">fixed</td>
-<td class="description">Gets or sets a value that indicates to render the fixed(based on width) for columnlayout in grid.</td>
+<td class="description">Gets or sets a value that indicates to render the columnlayout in fixed(based on width) for a grid.</td>
 </tr>
 </tbody>
 </table>
@@ -3494,37 +3494,37 @@ Gets or sets a value that indicates whether to define the type of editing.
 <td class="name">Boolean</td>
 <td class="type">string</td>
 <td class="default">boolean</td>
-<td class="description"> The column to set the edittype is boolean means column should be edit as boolean type.</td>
+<td class="description"> Sets the edit type of column as boolean type.</td>
 </tr>
 <tr>
 <td class="name">DatePicker</td>
 <td class="type">string</td>
 <td class="default">datepicker</td>
-<td class="description">The column to set the edittype is datePicker means column should be edit as datePicker type.</td>
+<td class="description">Sets the edit type of column as datePicker type.</td>
 </tr>
 <tr>
 <td class="name">DateTimePicker</td>
 <td class="type">string</td>
 <td class="default">datetimepicker</td>
-<td class="description">The column to set the edittype is datetimepicker means column should be edit as datetimepicker type.</td>
+<td class="description">Sets the edit type of column as datetimepicker type.</td>
 </tr>
 <tr>
 <td class="name">Dropdown</td>
 <td class="type">string</td>
 <td class="default">dropdown</td>
-<td class="description">The column to set the edittype is dropdown means column should be edit as dropdown type.</td>
+<td class="description">Sets the edit type of column as dropdown type.</td>
 </tr>
 <tr>
 <td class="name">Numeric</td>
 <td class="type">string</td>
 <td class="default">numeric</td>
-<td class="description">The column to set the edittype is numeric means column should be edit as numeric type.</td>
+<td class="description">Sets the edit type of column as numeric type.</td>
 </tr>
 <tr>
 <td class="name">String</td>
 <td class="type">string</td>
 <td class="default">string</td>
-<td class="description">The column to set the edittype is string means column should be edit as string type.</td>
+<td class="description">Sets the edit type of column as string type.</td>
 </tr>
 </tbody>
 </table>
@@ -3582,49 +3582,49 @@ Gets or sets a value that indicates whether to define the mode of editing.
 <td class="name">Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">Get or Set column should be mode of editing is normal</td>
+<td class="description">Get or Set the column editing mode in normal</td>
 </tr>
 <tr>
 <td class="name">Dialog</td>
 <td class="type">string</td>
 <td class="default">dialog</td>
-<td class="description">Get or Set column should be mode of editing is dialog</td>
+<td class="description">Get or Set the column editing mode in dialog</td>
 </tr>
 <tr>
 <td class="name">DialogTemplate</td>
 <td class="type">string</td>
 <td class="default">dialogtemplate</td>
-<td class="description">Get or Set column should be mode of editing is dialog</td>
+<td class="description">Get or Set the column editing mode in dialog</td>
 </tr>
 <tr>
 <td class="name">Batch</td>
 <td class="type">string</td>
 <td class="default">batch</td>
-<td class="description">Get or Set column should be mode of editing is batch</td>
+<td class="description">Get or Set the column editing mode in batch</td>
 </tr>
 <tr>
 <td class="name">ExternalForm</td>
 <td class="type">string</td>
 <td class="default">externalform</td>
-<td class="description">Get or Set column should be mode of editing is externalform</td>
+<td class="description">Get or Set the column editing mode in externalform</td>
 </tr>
 <tr>
 <td class="name">InlineForm</td>
 <td class="type">string</td>
 <td class="default">inlineform</td>
-<td class="description">Get or Set column should be mode of editing is inlineform</td>
+<td class="description">Get or Set the column editing mode in inlineform</td>
 </tr>
 <tr>
 <td class="name">InlineTemplateForm</td>
 <td class="type">string</td>
 <td class="default">inlineformtemplate</td>
-<td class="description">Get or Set column should be mode of editing is inlineformtemplate</td>
+<td class="description">Get or Set the column editing mode in inlineformtemplate</td>
 </tr>
 <tr>
 <td class="name">ExternalFormTemplate</td>
 <td class="type">string</td>
 <td class="default">externalformtemplate</td>
-<td class="description">Get or Set column should be mode of editing is externalformtemplate</td>
+<td class="description">Get or Set the column editing mode in externalformtemplate</td>
 </tr>
 </tbody>
 </table>
@@ -3762,7 +3762,7 @@ The grid to starts the filter action while typing in the filterBar or after pres
 <td class="name">Immediate</td>
 <td class="type">string</td>
 <td class="default">immediate</td>
-<td class="description">Used to display filter results as soon as typing the filter query or after specified time interval</td>
+<td class="description">Used to display filter results as soon as typing the filter query or after the given specified time interval</td>
 </tr>
 <tr>
 <td class="name">OnEnter</td>
@@ -12914,13 +12914,13 @@ Specifies to set the position of an adding new row either in the top or bottom o
 <td class="name">Top</td>
 <td class="type">string</td>
 <td class="default">top</td>
-<td class="description">Set the position of an adding new row in the top of the grid.</td>
+<td class="description">Set the position of new row in the top of the grid.</td>
 </tr>
 <tr>
 <td class="name">Bottom</td>
 <td class="type">string</td>
 <td class="default">bottom</td>
-<td class="description">Set the position of an adding new row in the bottom of the grid</td>
+<td class="description">Set the position of new row in the bottom of the grid</td>
 </tr>
 </tbody>
 </table>
@@ -14550,7 +14550,7 @@ qrBarcode</td>
 
 
 
-Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode
+Gets or sets a value that indicates whether to add the default selection actions as a selection mode
 
 
 
@@ -14579,19 +14579,19 @@ Gets or sets a value that indicates whether to add the default selection actions
 <td class="name">Row</td>
 <td class="type">string</td>
 <td class="default">row</td>
-<td class="description">Get or Set the Selectionmode as row.</td>
+<td class="description">Get or Set the Selectionmode as row basis.</td>
 </tr>
 <tr>
 <td class="name">Cell</td>
 <td class="type">string</td>
 <td class="default">cell</td>
-<td class="description">Get or Set the Selectionmode as cell.</td>
+<td class="description">Get or Set the Selectionmode as cell basis.</td>
 </tr>
 <tr>
 <td class="name">Column</td>
 <td class="type">string</td>
 <td class="default">column</td>
-<td class="description">Get or Set  the Selectionmode as column.</td>
+<td class="description">Get or Set  the Selectionmode as column basis.</td>
 </tr>
 </tbody>
 </table>
@@ -14649,13 +14649,13 @@ The row selection behavior of grid
 <td class="name">Single</td>
 <td class="type">string</td>
 <td class="default">single</td>
-<td class="description">Set the selectiontype as single means select the single row selection.</td>
+<td class="description">Set the selectiontype as single row selection.</td>
 </tr>
 <tr>
 <td class="name">Multiple</td>
 <td class="type">string</td>
 <td class="default">multiple</td>
-<td class="description">Set the selectiontype as multiple means select the multiple row selection.</td>
+<td class="description">Set the selectiontype as multiple row selection.</td>
 </tr>
 </tbody>
 </table>
@@ -14870,19 +14870,19 @@ Gets or sets a value that indicates to align the text within the column
 <td class="name">Left</td>
 <td class="type">string</td>
 <td class="default">left</td>
-<td class="description">Used to align text on left side of node</td>
+<td class="description">Sets the alignment of text to left side of node.</td>
 </tr>
 <tr>
 <td class="name">Center</td>
 <td class="type">string</td>
 <td class="default">center</td>
-<td class="description">Used to align text on center of node</td>
+<td class="description">Sets the alignment of text to center of node.</td>
 </tr>
 <tr>
 <td class="name">Right</td>
 <td class="type">string</td>
 <td class="default">right</td>
-<td class="description">Used to align text on Right side of node</td>
+<td class="description">Sets the alignment of text to Right side of node.</td>
 </tr>
 </tbody>
 </table>
@@ -16986,25 +16986,25 @@ Gets or sets a value that indicates to specify the commandtype of the specified 
 <td class="name">Edit</td>
 <td class="type">string</td>
 <td class="default">edit</td>
-<td class="description">Get or Set commandtype as edit in specific column</td>
+<td class="description">Get or Set commandtype as edit for specific column</td>
 </tr>
 <tr>
 <td class="name">Delete</td>
 <td class="type">string</td>
 <td class="default">delete</td>
-<td class="description">Get or Set commandtype is delete in specific column</td>
+<td class="description">Get or Set commandtype is delete for specific column</td>
 </tr>
 <tr>
 <td class="name">Save</td>
 <td class="type">string</td>
 <td class="default">save</td>
-<td class="description">Get or Set commandtype is save in specific column</td>
+<td class="description">Get or Set commandtype is save for specific column</td>
 </tr>
 <tr>
 <td class="name">Cancel</td>
 <td class="type">string</td>
 <td class="default">cancel</td>
-<td class="description">Get or Set commandtype is cancel in specific column</td>
+<td class="description">Get or Set commandtype is cancel for specific column</td>
 </tr>
 </tbody>
 </table>
