@@ -84,7 +84,7 @@ $("#OlapClient").ejOlapClient({
 ## Display Mode
 
 ### Grid Only
-After setting the [`mode`](/js/api/ejolapclientmembers:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
+After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
 
 {% highlight js %}
 
