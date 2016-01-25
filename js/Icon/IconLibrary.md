@@ -1,6 +1,32 @@
 ---
- 
+layout: post
+title: Icon Library
+description: Icon Library
+platform: js
+control: Introduction
+documentation: ug
 ---
+
+# Icons
+
+The **Essential Studio for JavaScript** provide icons library that contains the number of built-in icons. You can use these icons to display in your application, you need to configure their CSS class names to elements in the application. Use the following syntax to apply class names.
+
+**Syntax**: .e-icon .e-[icon description]
+
+**Example**:
+
+{% highlight html %}
+
+    <span class=".e-icon .e-search"></span>
+
+{% endhighlight %}
+
+N>  Make sure the css file (ej.widgets.all.min.css/ej.web.all.min.css) is referred in your application.
+
+## List of Icons
+
+The complete list of ejicons is listed in the following table.
+
   <style type="text/css" class="cssStyles"> 
       table {
           width: 730px;
