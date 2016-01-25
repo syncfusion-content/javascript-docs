@@ -461,7 +461,7 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/highlightmode.png) 
 
 ###Customize the Highlight Styles
-To customize the highlighted series, use [`border.color`](/js/api/ejchart#members:series-highlightsettings-border-color), [`border.width`](/js/api/ejchart#members:series-highlightsettings-border-width) and [`opacity`](members:series-highlightsettings-opacity)
+To customize the highlighted series, use [`border.color`](/js/api/ejchart#members:series-highlightsettings-border-color), [`border.width`](/js/api/ejchart#members:series-highlightsettings-border-width) and [`opacity`](/js/api/ejchart#members:series-highlightsettings-opacity)
  options in the [`highlightSettings`](/js/api/ejchart#members:series-highlightsettings) property.
 
 {% highlight js %}
@@ -557,7 +557,7 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/patternhighlight.png) 
 
 ##Selection
-OlapChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](members:series-selectionsettings-enable) option of the series.
+OlapChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings-enable) option of the series.
 
 {% highlight js %}
 
