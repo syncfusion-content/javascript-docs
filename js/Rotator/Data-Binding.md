@@ -113,7 +113,7 @@ The link for those script files are as follows:
 
 [http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
-[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js)
+[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js)
 
 The following code example depicts the way to bind data to the **Rotator** through the **Knockout** support.
 
@@ -194,7 +194,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
       <script src="[http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
-      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
    </head>
    <body ng-controller="RotatCtrl">
       <div class="cols-sample-area">

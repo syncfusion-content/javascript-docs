@@ -123,7 +123,7 @@ $(function()
 ##Common Axis Features
 
 ###Axis Visibility
-Axis visibility can be set by using the [`visible`](/js/api/ejchart#members:primaryyaxis) property of the respective axis. The default value of the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property is true.
+Axis visibility can be set by using the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property of the respective axis. The default value of the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property is true.
 
 {% highlight js %}
 
