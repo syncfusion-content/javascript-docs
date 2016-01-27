@@ -212,7 +212,7 @@ N> Add the following script files along with the specified code to access knocko
 
 The link for the script file is as follows:
 
-[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js)
+[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js)
 
 
 The following code example depicts you the way to bind data to the **Toolbar** through the knockout support. 
