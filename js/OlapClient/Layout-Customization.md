@@ -84,7 +84,7 @@ $("#OlapClient").ejOlapClient({
 ## Display Mode
 
 ### Grid Only
-After setting the [`mode`](/js/api/ejolapclientmembers:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
+After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
 
 {% highlight js %}
 
@@ -101,7 +101,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/Grid only.png)
 
 ### Chart Only
-After setting the [`mode`](/js/api/ejolapclientmembers:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartOnly**, the Grid is hidden and data is displayed only in the Chart.
+After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartOnly**, the Grid is hidden and data is displayed only in the Chart.
 
 {% highlight js %}
 
@@ -118,7 +118,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/Chart only.png)
 
 ### Both Chart and Grid
-After setting the [`mode`](/js/api/ejolapclientmembers:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
+After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
 
 {% highlight js %}
 
