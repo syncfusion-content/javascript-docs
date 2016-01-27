@@ -119,7 +119,7 @@ N>'bower init'
 
 You can install the Syncfusion bower package from a local directory. To perform this follow the below steps.
 
-1. Navigate the [Syncfusion Javascript bower repository](https://github.com/syncfusion/JavaScript-JavaScript-Widgets/) location on github and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
+1. Navigate the [Syncfusion Javascript bower repository](https://github.com/syncfusion/JavaScript-Widgets/) location on github and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.jpeg)
 

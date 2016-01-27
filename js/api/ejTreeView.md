@@ -1825,7 +1825,7 @@ $("#treeView").ejTreeView({
 
 
 
-### addNode(newNodeText, target)</span>
+### addNode(newNodeText, target)
 {:#methods:addnode}
 
 
@@ -1943,7 +1943,7 @@ $("#treeView").ejTreeView("checkAll");
 
 
 
-### checkNode(element)</span>
+### checkNode(element)
 {:#methods:checknode}
 
 
@@ -2051,7 +2051,7 @@ $("#treeView").ejTreeView("collapseAll");
 
 
 
-### collapseNode(element)</span>
+### collapseNode(element)
 {:#methods:collapsenode}
 
 
@@ -2113,7 +2113,7 @@ $("#treeView").ejTreeView("collapseNode", $("#book"));
 
 
 
-### disableNode(element)</span>
+### disableNode(element)
 {:#methods:disablenode}
 
 
@@ -2175,7 +2175,7 @@ $("#treeView").ejTreeView("disableNode", $("#book"));
 
 
 
-### enableNode(element)</span>
+### enableNode(element)
 {:#methods:enablenode}
 
 
@@ -2239,7 +2239,7 @@ $("#treeView").ejTreeView("enableNode", $("#book"));
 
 
 
-### ensureVisible(element)</span>
+### ensureVisible(element)
 {:#methods:ensurevisible}
 
 
@@ -2358,7 +2358,7 @@ $("#treeView").ejTreeView("expandAll");
 
 
 
-### expandNode(element)</span>
+### expandNode(element)
 {:#methods:expandnode}
 
 
@@ -2701,7 +2701,7 @@ $("#treeView").ejTreeView("getExpandedNodesIndex");
 
 
 
-### getNodeByIndex(index)</span>
+### getNodeByIndex(index)
 {:#methods:getnodebyindex}
 
 
@@ -2774,7 +2774,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-### getNode(element)</span>
+### getNode(element)
 {:#methods:getnode}
 
 
@@ -2848,7 +2848,7 @@ $("#treeView").ejTreeView("getNode", $("#book"));
 
 
 
-### getNodeIndex(element)</span>
+### getNodeIndex(element)
 {:#methods:getnodeindex}
 
 
@@ -2922,7 +2922,7 @@ $("#treeView").ejTreeView("getNodeIndex", $("#book"));
 
 
 
-    ### getParent(element)</span>
+    ### getParent(element)
 {:#methods:getparent}
 
 
@@ -3110,7 +3110,7 @@ $("#treeView").ejTreeView("getSelectedNodeIndex");
 
 
 
-### getText(element)</span>
+### getText(element)
 {:#methods:gettext}
 
 
@@ -3301,7 +3301,7 @@ $("#treeView").ejTreeView("getVisibleNodes");
 
 
 
-### hasChildNode(element)</span>
+### hasChildNode(element)
 {:#methods:haschildnode}
 
 
@@ -3420,7 +3420,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-### hideNode(element)</span>
+### hideNode(element)
 {:#methods:hidenode}
 
 
@@ -3483,7 +3483,7 @@ $("#treeView").ejTreeView("hideNode", $("#book"));
 
 
 
-### insertAfter(newNodeText, target)</span>
+### insertAfter(newNodeText, target)
 {:#methods:insertafter}
 
 
@@ -3556,7 +3556,7 @@ treeObj.insertAfter(obj, $("#book"));
 
 
 
-### insertBefore(newNodeText, target)</span>
+### insertBefore(newNodeText, target)
 {:#methods:insertbefore}
 
 
@@ -3630,7 +3630,7 @@ treeObj.insertBefore(obj, $("#book"));
 
 
 
-### isNodeChecked(element)</span>
+### isNodeChecked(element)
 {:#methods:isnodechecked}
 
 
@@ -3704,7 +3704,7 @@ $("#treeView").ejTreeView("isNodeChecked", $("#book"));
 
 
 
-### isChildLoaded(element)</span>
+### isChildLoaded(element)
 {:#methods:ischildloaded}
 
 
@@ -3778,7 +3778,7 @@ $("#treeView").ejTreeView("isChildLoaded", $("#book"));
 
 
 
-### isDisabled(element)</span>
+### isDisabled(element)
 {:#methods:isdisabled}
 
 
@@ -3851,7 +3851,7 @@ $("#treeView").ejTreeView("isDisabled", $("#book"));
 
 
 
-### isExist(element)</span>
+### isExist(element)
 {:#methods:isexist}
 
 
@@ -3925,7 +3925,7 @@ $("#treeView").ejTreeView("isExist", $("#book"));
 
 
 
-### isExpanded(element)</span>
+### isExpanded(element)
 {:#methods:isexpanded}
 
 
@@ -3996,7 +3996,7 @@ $("#treeView").ejTreeView("isExpanded", $("#book"));
 
 
 
-### isSelected(element)</span>
+### isSelected(element)
 {:#methods:isselected}
 
 
@@ -4068,7 +4068,7 @@ $("#treeView").ejTreeView("isSelected", $("#book"));
 
 
 
-### isVisible(element)</span>
+### isVisible(element)
 {:#methods:isvisible}
 
 
@@ -4140,7 +4140,7 @@ $("#treeView").ejTreeView("isVisible", $("#book"));
 
 
 
-### loadData(newNodeText, target)</span>
+### loadData(newNodeText, target)
 {:#methods:loaddata}
 
 
@@ -4212,7 +4212,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-### moveNode(sourceNode, destionationNode, index)</span>
+### moveNode(sourceNode, destionationNode, index)
 {:#methods:movenode}
 
 
@@ -4382,7 +4382,7 @@ $("#treeView").ejTreeView("removeAll");
 
 
 
-### removeNode(element)</span>
+### removeNode(element)
 {:#methods:removenode}
 
 
@@ -4444,7 +4444,7 @@ $("#treeView").ejTreeView("removeNode", $("#book"));
 
 
 
-### selectNode(element)</span>
+### selectNode(element)
 {:#methods:selectnode}
 
 
@@ -4551,7 +4551,7 @@ $("#treeView").ejTreeView("show");
 
 
 
-### showNode(element)</span>
+### showNode(element)
 {:#methods:shownode}
 
 
@@ -4659,7 +4659,7 @@ $("#treeView").ejTreeView("unCheckAll");
 
 
 
-### uncheckNode(element)</span>
+### uncheckNode(element)
 {:#methods:unchecknode}
 
 
@@ -4722,7 +4722,7 @@ $("#treeView").ejTreeView("uncheckNode", $("#book"));
 
 
 
-### unselectNode(element)</span>
+### unselectNode(element)
 {:#methods:unselectnode}
 
 
@@ -4784,7 +4784,7 @@ $("#treeView").ejTreeView("unselectNode", $("#book"));
 
 
 
-### updateText(target, newText)</span>
+### updateText(target, newText)
 {:#methods:updatetext}
 
 
