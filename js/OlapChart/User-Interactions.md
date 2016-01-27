@@ -631,7 +631,7 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/selectionmode.png) 
 
 ###Customize the Selection Styles
-To customize the selection styles, use the [`border.color`](/js/api/ejchart#series-selectionsettings-border-color), [`border.width`](/js/api/ejchart#members:series-selectionsettings-border-width) and [`opacity`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-opacity) options in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings).
+To customize the selection styles, use the [`border.color`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-border-color), [`border.width`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-border-width) and [`opacity`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-opacity) options in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings).
 
 {% highlight js %}
 

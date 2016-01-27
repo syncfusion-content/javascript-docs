@@ -16,7 +16,7 @@ Paging helps to improve the rendering performance of the PivotGrid control by br
  
 In-order to initialize a "Pager", first you need to define a "div" tag with an appropriate "id" attribute which acts as a container for the widget. Then you need to initialize the widget using **“ejPivotPager”** method.
 
-Inside the **“ejPivotPager”** method, the enumeration property [`mode`](/js/api/ejpivotgrid#members:mode) needs to be set to **“ej.PivotPager.Mode.Both”** in-order to display both categorical pager and series pager. The other enumerations such as **“ej.PivotPager.Mode.Categorical”** and **“ej.PivotPager.Mode.Series”** will display only categorical pager and series pager respectively.
+Inside the **“ejPivotPager”** method, the enumeration property [`mode`](/js/api/ejpivotpager#members:mode) needs to be set to **“ej.PivotPager.Mode.Both”** in-order to display both categorical pager and series pager. The other enumerations such as **“ej.PivotPager.Mode.Categorical”** and **“ej.PivotPager.Mode.Series”** will display only categorical pager and series pager respectively.
 
 
 {% highlight html %}
