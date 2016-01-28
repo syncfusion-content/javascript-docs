@@ -1,63 +1,263 @@
 ---
 layout: post
-title: Application-Tab
-description: application tab
-platform: js
-control: Ribbon
+title:  Ribbon-Application-Tab
+description:application tab
 documentation: ug
+platform: js
+keywords: application tab,ribbon application tab
 ---
 
 # Application Tab
 
-The **application menu** support is provided in the Ribbon control application tab. Use **applicationTab** property to define the application tab with menu. In applicationTab definition, Type property defines the application menu and the value is **ApplicationMenu**, **itemID** property to specify ID of UL list for application menu and **menuSettings** property to specify all the members and events of the menu.
+The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by [`type`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-type) property with the following:
+
+* menu
+* backstage
+
+## Application Menu
+
+The Application Menu is similar to traditional file menu options and Syncfusion `ejMenu` control is used internally to render this. To show Application Menu in Ribbon, set the [`type`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-type) as `menu` and [`menuSettings`](http://help.syncfusion.com/js/api/ejmenu) to customize properties of `ejMenu`.
+
+### _Create Using Template_
+
+Set the UL element `id` to [`menuItemID`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-menuitemid) property to create Application Menu and it will acts as template to render menu.
 
 {% highlight html %}
-
-	<!-- ... -->
-	<head>
-	</head>
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	   <ul id="menu">
-	      <li>
-	         <a>FILE</a>
-	         <ul>
-	            <li><a>New</a></li>
-	            <li><a>Open</a></li>
-	         </ul>
-	      </li>
-	   </ul>
-	   <div id="Contents">Custom control</div>
-	   <script type="text/javascript">
-		$(function() {
-		    $("#Ribbon").ejRibbon({
-		        width: "800px",
-		        applicationTab: {
-		            type: ej.Ribbon.applicationTabType.menu,
-		            menuItemID: "menu",
-		            menuSettings: {
-		                openOnClick: false
-		            }
-		        },
-		        tabs: [{
-		            id: "home",
-		            text: "HOME",
-		            groups: [{
-		                text: "CustomControls",
-		                type: "custom",
-		                contentID: "Contents"
-		            }]
-		        }]
-		    });
-		});
-	   </script>
-	</body>
-	<!-- ... -->
+    
+        <div id="Ribbon"></div>
+        <!--UL template to render menu-->
+        <ul id="ribbonmenu">
+        <li>
+            <a>FILE</a>
+            <ul>
+            <li><a>Open</a></li>
+            <li><a>Print</a></li>
+            </ul>
+        </li>
+        </ul>
+        <div id="Contents">Custom control</div>
+        <script type="text/javascript">
+            $(function () {
+                $("#Ribbon").ejRibbon({
+                    width: "500px",
+                    applicationTab: {
+                        type: ej.Ribbon.applicationTabType.menu,
+                        // menuItemID mapped to UL with id of “menu”                                         
+                        menuItemID: "ribbonmenu",
+                        // menu properties defined in menusetttings 
+                        menuSettings: {
+                            openOnClick: false
+                        }
+                    },
+                    tabs: [{
+                        id: "home",
+                        text: "HOME",
+                        groups: [{
+                            text: "New",
+                            type: "custom",
+                            contentID: "Contents"
+                        }]
+                    }]
+                });
+            });
+        </script>
 
 {% endhighlight %}
 
-The following screenshot illustrates Ribbon with application menu.
-
 ![](/js/Ribbon/Application-Tab_images/Application-Tab_img1.png)
 
+### _Binding Data Source_
+
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-bindin) page to set data source to `ejMenu`.
+
+{% highlight html %}
+    
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+    </ul>
+    <script type="text/javascript">
+        var data = [{
+            id: 1,
+            text: "File",
+            parentId: null
+        }, {
+            id: 11,
+            parentId: 1,
+            text: "Open"
+        }, {
+            id: 12,
+            parentId: 1,
+            text: "Save"
+        }, {
+            id: 121,
+            parentId: 12,
+            text: "Save As"
+        }, {
+            id: 122,
+            parentId: 12,
+            text: "Save All"
+        }];
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: 500,
+                applicationTab: {
+                    type:ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        // data source to menu
+                        fields: {
+                            dataSource: data,
+                            id: "id",
+                            parentId: "parentId",
+                            text: "text"
+                        }
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "Home",
+                    groups: [{
+                        text: "Font",
+                        content: [{
+                            groups: [{
+                                id: "bold",
+                                text: "Bold",
+                                isBig: true,
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-bold"
+                                }
+                            }]
+                        }]
+                    }]
+                }]
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
+
+![](/js/Ribbon/Application-Tab_images/Application-Tab_img2.png)
+
+## Backstage Page
+
+The Backstage page is where documents and related data of those can be managed, such as Create, Save and other information.
+
+The Backstage page has a feature to add custom Control in left side of the page which contains menu items and the right side contains corresponding user controls. 
+
+You can set Application Tab [`type`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-type) as `backstage` and set [`id`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages-id) , [`text`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages-text) to backstage items. Backstage [`pages`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages) can be added with required [`itemType`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages-itemtype) and [`contentID`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages-contentid) as template id to render template into Backstage. 
+
+Separator between Backstage items can be enabled by setting [`enableSeparator`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-pages-enableseparator) as true. Width of back stage side header can be customized using [`headerWidth`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-headerwidth), If not set based on content given width will be considered.
+
+To render the Ribbon with the Backstage page, refer to the following code snippet. 
+
+{% highlight html %}
+    
+    <div id="Ribbon"></div>
+    <div id="newCon">
+        <table>
+            <tr>
+                <td>
+                    <button id="btn1" class="e-bsnewbtnstyle">Blank WorkBook</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="accountCon">
+        <div class="e-userDiv">
+            <span>User Information</span>
+            <div>
+                <div class="e-accuser e-newpageicon"></div>
+                <div class="e-userCon">
+                    <div>user</div>
+                    <div>xyz@syncfusion.com</div>
+                </div>
+            </div>
+        </div>
+        <a href="#">Sign out</a>
+    </div>
+    <div id="ribbonContent">Home control</div>
+    <script type="text/javascript">
+        $("#btn1").ejButton({
+            size: "large",
+            height: 200,
+            width: 205,
+            contentType: "textandimage",
+            imagePosition: "imagetop",
+            prefixIcon: "e-blank e-infopageicon"
+        });
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "500px",
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.backstage,
+                    text: "FILE",
+                    // height and width of bask stage is set 
+                    backstageSettings: {
+                        text: "FILE",
+                        height: 360,
+                        width: 600,
+                        headerWidth: 125,
+                        pages: [{
+                            // id and text of bask stage item
+
+                            id: "new",
+                            text: "New",
+                            contentID: "newCon"
+                        }, {
+                            id: "close",
+                            text: "Close",
+                            // enable separator is to set separator between backstage items
+
+                            enableSeparator: true,
+                            backStageItemType: ej.Ribbon.itemType.button
+                        }, {
+                            id: "account",
+                            text: "Office Account",
+                            contentID: "accountCon"
+                        }]
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "New",
+                        type: "custom",
+                        contentID: "ribbonContent"
+                    }]
+                }]
+            });
+        });
+    </script>
+    <style type="text/css">
+        .e-accuser {
+            background-image: url"../themes/common-images/ribbon/User.jpg");
+        }
+        .e-blank {
+            background-image: url("../themes/common-images/ribbon/blank.png");
+        }
+        .e-infopageicon {
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 198px;
+        }
+        .e-newpageicon {
+            background-repeat: no-repeat;
+            height: 42px;
+            width: 42px;
+        }
+        .e-bspagestyle {
+            line-height: 0;
+            font-size: 30px;
+        }
+        .e-ribbon .e-ribbonbackstagepage .e-bsnewbtnstyle {
+            color: #212121;
+            background: #fdfdfd;
+            margin: 20px;
+        }
+    </style>
+    
+{% endhighlight %}
+
+![](/js/Ribbon/Application-Tab_images/Application-Tab_img3.png)

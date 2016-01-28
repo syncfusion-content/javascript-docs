@@ -1,99 +1,138 @@
 ---
 layout: post
-title: Contextual-Tab-and-Tab-Set
-description: contextual tab and tab set
-platform: js
-control: Ribbon
+title:  Contextual-Tab-and-Tab-Set
+description:contextual tab and tab set
 documentation: ug
+platform: js
+keywords: contextual tab and tab set
 ---
 
-# Contextual Tab and Tab Set
+# Contextual Tabs
 
-You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contextualTabs definition, use tabs property to add contextual tabs and contextual tab set. In tabs definition, use **backgroundColor** property to apply background color to the **Contextual Tabs** and **Tab Set**. Use **borderColor** property to apply border color to the **Contextual Tabs** and **Tab Set**.
+[`Contextual Tabs`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs) are collection of Tabs that extended styling and can be shown based on some criteria. Contextual Tabs can be added like [`tabs`](http://help.syncfusion.com/js/api/ejribbon#members:tabs) including groups and content section. You can set [`backgroundColor`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs-backgroundcolor) and [`borderColor`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs-bordercolor) to highlight them as Tab set
 
 {% highlight html %}
 
-    <!-- ... -->
-    <head>
-    </head>
-    <!-- ... -->
-    <body>
-       <div id="Ribbon"></div>
-       <ul id="menu">
-          <li>
-             <a>FILE</a>
-             <ul>
-                <li><a>New</a></li>
-                <li><a>Open</a></li>
-             </ul>
-          </li>
-       </ul>
-       <div id="Contents">Custom Control</div>
-       <div id="contextualTab"><button id="contextualBtn">Contextual Tab</button></div>
-       <div id="contextualTabset1"><button id="contextualTabsetBtn1">Contextual Tabset1</button></div>
-       <div id="contextualTabset2"><button id="contextualTabsetBtn2">Contextual Tabset2</button></div>
-       <script type="text/javascript">
-        $(function() {
-            $("#Ribbon").ejRibbon({
-                width: "800px",
-                applicationTab: {
-                   type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "menu",
-                    menuSettings: {
-                        openOnClick: false
-                    }
-                },
-                tabs: [{
-                    id: "home",
-                    text: "HOME",
-                    groups: [{
-                        text: "CustomControls",
-                        type: "custom",
-                        contentID: "Contents"
-                    }]
-                }],
-                contextualTabs: [{
-                    backgroundColor: "#FCFBEB",
-                    borderColor: "#F2CC1C",
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+            <li>
+                <a>FILE</a>
+                <ul>
+                    <li><a>New</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="Contents">Custom Control</div>
+        <div id="headings" class="e-headings">
+            <div>
+                <p>AaBbCcDd</p>
+                <p>No Spacing</p>
+            </div>
+            <div>
+                <p class="e-strong">AaBbCcDd</p>
+                <p>Strong</p>
+            </div>
+            <div>
+                <p class="e-emphasis">AaBbCcDd</p>
+                <p>Emphasis</p>
+            </div>
+        </div>
+        <table id="design" class="e-designtablestyle">
+            <tr>
+                <td>
+                    <input type="checkbox" id="Check2" />
+                    <label for="Check2">First Column</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="check4" checked="checked" />
+                    <label for="check4">Total Row</label>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            $(function () {
+                $("#Ribbon").ejRibbon({
+                    width: "500px",
+                    applicationTab: {
+                        type: ej.Ribbon.applicationTabType.menu,
+                        menuItemID: "ribbonmenu"
+                    },
                     tabs: [{
-                        id: "Design",
-                        text: "DESIGN",
+                        id: "home",
+                        text: "HOME",
                         groups: [{
-                            text: "Table Style Options",
+                            text: "CustomControls",
                             type: "custom",
-                            contentID: "contextualTab"
+                            contentID: "Contents"
                         }]
-                    }]
-                }, {
-                    backgroundColor: "blue",
-                    borderColor: "lightblue",
-                    tabs: [{
-                        id: "tabset1",
-                        text: "Tabset1",
-                        groups: [{
-                            text: "Tabset1 Style",
-                            type: "custom",
-                            contentID: "contextualTabset1"
+                    }],
+    
+                    // contextual Tabs collection
+                    contextualTabs: [{
+    
+                        // contextual tab with custom content
+                        backgroundColor: "#FCFBEB",
+                        borderColor: "#F2CC1C",
+                        tabs: [{
+                            id: "Design",
+                            text: "DESIGN",
+                            groups: [{
+                                text: "Table Style Options",
+                                type: "custom",
+                                contentID: "design"
+                            }]
                         }]
-                    }, {
-                        id: "tabset2",
-                        text: "Tabset2",
-                        groups: [{
-                            text: "Tabset2 Style",
-                            type: "custom",
-                            contentID: "contextualTabset2"
-                        }]
-                    }]
-                }]        
+                    },
+    
+                        // tab set with background & border color
+                        {
+                            backgroundColor: "blue",
+                            borderColor: "lightblue",
+                            tabs: [{
+                                id: "tabset1",
+                                text: "Tabset1",
+                                groups: [{
+                                    text: "Tabset1 Style",
+                                    type: "custom",
+                                    contentID: "headings"
+                                }]
+                            }, {
+                                id: "tabset2",
+                                text: "Tabset2",
+                                groups: [{
+                                    text: "TabSet2 Style",
+                                    content: [{
+                                        // groups with button controls
+                                        groups: [{
+                                            id: "uppercase",
+                                            text: "Upper Case",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.ImageOnly,
+                                                prefixIcon: "e-ribbon e-uppercase"
+                                            }
+                                        }, {
+                                            id: "lowercase",
+                                            text: "Lower Case",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.ImageOnly,
+                                                prefixIcon: "e-ribbon e-lowercase"
+                                            }
+                                        }],
+                                        defaults: {
+                                            isBig: true
+                                        }
+                                    }]
+                                }]
+                            }]
+                        }
+                    ]
+                });
             });
-        });
-       </script>
-    </body>
-    <!-- ... -->
+        </script>
 
+   
 {% endhighlight %}
 
-The following screenshot illustrates Ribbon with **Contextual Tabs** and **Tab Set**.
 
 ![](/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
 
