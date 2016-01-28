@@ -229,7 +229,7 @@ The following code example depicts you the way to bind data to the **Toolbar** t
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js"></script>
    </head>
    <body>
       <div class="cols-sample-area">
