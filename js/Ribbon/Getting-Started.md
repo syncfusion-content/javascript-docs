@@ -1,497 +1,265 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
-platform: js
-control: Ribbon
+title:  Ribbon - Getting-Started
+description: Getting-Started
 documentation: ug
+platform: js
+keywords: getting started,ribbon getting started
 ---
 
 # Getting Started
 
-This section explains briefly how to create a **Ribbon** in your application with **JavaScript**.
+This section explains briefly how to create a `Ribbon`.
 
-## Create your Ribbon in JavaScript
+## Script & CSS Reference 
 
-The **Ribbon** can be easily configured to the DOM element such as **&lt;div&gt;**. You can create a Ribbon with a highly customizable look and feel. The Ribbon control displays the controls in multiple tabs. This section explains the ribbon tabs, adding controls to the groups, expand/collapse ribbon option, and the control separator.
+Ribbon have the following list of external script dependencies and these should be referred before `ej` Script files
 
-![](/js/Ribbon/Getting-Started_images/Getting-Started_img1.png)
+* [`jQuery`](http://jquery.com) 1.7.1 and later versions
+* [`jQuery.easing`](http://gsgd.co.uk/sandbox/jquery/easing) - to support the animation effects in the components.
 
-Create a HTML file and add the following references to the required libraries.
+Also Ribbon have internal dependencies which includes `ej.core` libraries and [`child controls`](http://help.syncfusion.com/js/api/ejribbon#requires). For getting started, you can refer `ej.web.all.min.js` which includes `ej.core` and all Syncfusion JavaScript controls.
+
+Add the specific theme reference to your HTML file by referring the appropriate `ej.web.all.min.css` which contains `ej.widgets.core.min.css` (layout related css) and `ej.theme.min.css` (theme related css) for all the Syncfusion controls.
+
+Create a basic HTML file as shown below to create your Ribbon. 
 
 {% highlight html %}
 
-	<!doctype html>
-	<html>
-	   <head>
-	      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-	      <!-- style sheet for default theme(flat azure) -->
-	      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-	      <!--scripts-->
-	      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-	      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js"></script>
-	      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-	      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	   </head>
-	   <body>
-	   </body>
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Ribbon Control</title>
+	
+		<!-- style sheet for default theme(flat azure) -->
+		<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+	
+		<!—jQuery dependency scripts-->
+		<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+		<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+	
+		<!— ej script to render JavaScript control-->
+		<script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+	</head>
+	<body>
+	</body>
 	</html>
 
 {% endhighlight %}
 
-Add a **&lt;div&gt;** element. It is a container for **ejRibbon**.
+_**Note**_: 
+
+1.	_In case if you don’t want to use `ej.web.all.min.js` file, you can use our [`custom script generator`](http://help.syncfusion.com/js/api/ejribbon#requires) to create custom script file with required controls and its dependencies only_
+2.	_Ribbon’s sample level icons can be loaded using `ej.icons.css` from the location **(installed location)**\ Syncfusion\Essential Studio\13.2.0.29\JavaScript\assets\css\web\ribbon-css”_ 
+
+## Control Initialization
+
+The Ribbon can be configured to the HTML`<div>` element. Add a `<div>` element with Id of `Ribbon`. 
+
+Ribbon can be initialized with `Application Tab` and UL list is needed for binding menu to application menu which can be specified through [`menuItemID`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-menuitemid) which denotes `id` of UL.
+
+Define the Application Tab with [`type`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-type) as `menu` to render simple Ribbon control.
 
 {% highlight html %}
 
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	</body>
-	<!-- ... -->
+	  <div id="Ribbon"></div>
+      <ul id="ribbonmenu">
+         <li>
+            <a>FILE</a>
+            <ul>
+               <li><a>New</a></li>
+               <li><a>Open</a></li>
+               <li><a>Save</a></li>
+               <li><a>Print</a></li>
+            </ul>
+         </li>
+      </ul>
+      <script type="text/javascript">
+          $(function () {
+              $("#Ribbon").ejRibbon({
+                  width: "500px",
+                  // application tab item defined here
+                  applicationTab: {
+                      type: ej.Ribbon.applicationTabType.menu,
+                      menuItemID: "ribbonmenu"
+                  }
+              });
+          });
+      </script>
 
 {% endhighlight %}
 
-Create the **ejRibbon** widget as follows. The width property allows you to define the width to the Ribbon. In applicationTab definition, the **itemID** property allows you to specify the ID of the ul list to create the application menu. In tabs definition, the groups property allows you to create one or more groups in the tab. In **contextualTabs** definition, the **backgroundColor** property allows you to define the background color of the contextual tab and **borderColor** property allows you to define the border color of the contextual tab.
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img1.png)
+
+_**Note**_: _Set the required [`width`](http://help.syncfusion.com/js/api/ejribbon#members:width) to Ribbon, else default parent container or window width will be considered_
+
+## Adding Tabs
+
+Tab is a set of related groups which are combined into single item. For creating Tab, [`id`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-id) and [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-text) properties should be specified. 
 
 {% highlight html %}
-		
-	<!-- ... -->
-	<head>
-	</head>
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	   <ul id="menu">
-	      <li>
-	         <a>FILE</a>
-	         <ul>
-	            <li><a>New</a></li>
-	            <li><a>Open</a></li>
-	         </ul>
-	      </li>
-	   </ul>
-	   <div id="ribbonContent">Ribbon control</div>
-	   <div id="inserttab">Insert Tab</div>
-	   <div id="designtab">Design Tab</div>
-	   <script type="text/javascript">
-		$(function() {
-		    $("#Ribbon").ejRibbon({
-		        width: "500px",
-		        applicationTab: {
-		            type: ej.Ribbon.applicationTabType.menu,
-		            menuItemID: "menu",
-		            menuSettings: {
-		                openOnClick: false
-		            }
-		        },
-		        tabs: [{
-		            id: "home",
-		            text: "HOME",
-		            groups: [{
-		                text: "New",
-		                type: "custom",
-		                contentID: "ribbonContent"
-		            }]
-		        }, {
-		            id: "Calculator",
-		            text: "CALCULATOR",
-		            groups: [{
-		                text: "Numbers",
-		                type: "custom",
-		                contentID: "inserttab"
-		            }]
-		        }],
-		        contextualTabs: [{
-		            backgroundColor: "#FCFBEB",
-		            borderColor: "#F2CC1C",
-		            tabs: [{
-		                id: "Design",
-		                text: "DESIGN",
-		                groups: [{
-		                    text: "Table Style",
-		                    type: "custom",
-		                    contentID: "designtab"
-		                }]
-		            }]
-		        }]
-		    });
-		});
-	   </script>
-	</body>
-	<!-- ... -->
-	
-{% endhighlight %}
 
-The following screenshot illustrates the **Ribbon** control.
+	<div id="Ribbon"></div>
+      <ul id="ribbonmenu">
+         <li>
+            <a>FILE</a>
+            <ul>
+               <li><a>New</a></li>
+               <li><a>Open</a></li>
+            </ul>
+         </li>
+      </ul>
+      <script type="text/javascript">
+          $(function () {
+              $("#Ribbon").ejRibbon({
+                  width: "500px",
+                  // application tab item defined here
+                  applicationTab: {
+                      Type: ej.Ribbon.applicationTabType.menu,
+                      menuItemID: "ribbonmenu"
+                  },
+                  // tab item defined here
+                  tabs: [{
+                      id: "home",
+                      text: "HOME"                      
+                  }]
+              });
+        });
+      </script>
+   </body>
+</html>
+
+{% endhighlight %}
 
 ![](/js/Ribbon/Getting-Started_images/Getting-Started_img2.png)
 
-## Add Controls
+## Configuring Groups
 
-Add controls to each **Ribbon** tab by using the property content. You can also add custom controls by using the property **contentID**.The property **alignType** is used to align the groups in row or column order. Syncfusion has provided Button, Split button, DropdownList, Toggle button, Gallery, and Custom controls support in your Ribbon control. 
+List of controls are combined as logical [`groups`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups) into Tab. Group alignment type as `row/column`, Default is `row`. 
 
-The default **alignType** is rows.
+Create group item with [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-text) specified and add content group to Groups collection with ejButton control settings.
 
 {% highlight html %}
 
-	<!-- ... -->
-	<head>
-	</head>
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	   <ul id="menu">
-	      <li>
-	         <a>FILE</a>
-	         <ul>
-	            <li><a>New</a></li>
-	            <li><a>Open</a></li>
-	         </ul>
-	      </li>
-	   </ul>
-	   <div id="Contents"><button id="custom">Custom Control</button></div>
-	   <script type="text/javascript">
-			$(function() {
-			    var fontfamily = [{
-			            value: 1,
-			            text: "Segoe UI"
-			        }, {
-			            value: 2,
-			            text: "Arial"
-			        }, {
-			            value: 3,
-			            text: "Times New Roman"
-			        }, {
-			            value: 4,
-			            text: "Tahoma"
-			        }, {
-			            value: 5,
-			            text: "Helvetica"
-			        }],
-			        fontsize = [{
-			            value: 1,
-			            text: "1pt"
-			        }, {
-			            value: 2,
-			            text: "2pt"
-			        }, {
-			            value: 3,
-			            text: "3pt"
-			        }, {
-			            value: 4,
-			            text: "4pt"
-			        }, {
-			            value: 5,
-			            text: "5pt"
-			        }];
-			    $("#Ribbon").ejRibbon({
-			        width: "800px",
-			        applicationTab: {
-			            type: "ApplicationMenu",
-			            menuItemID: "menu",
-			            menuSettings: {
-			                openOnClick: false
-			            }
-			        },
-			        tabs: [{
-			            id: "home",
-			            text: "HOME",
-			            groups: [{
-			                text: "New",
-			                alignType: ej.Ribbon.alignType.rows,
-			                content: [{
-			                    groups: [{
-			                        id: "new",
-			                        text: "New",
-			                        toolTip: "New",
-			                        buttonSettings: {
-			                            contentType: ej.ContentType.ImageOnly,
-			                            imagePosition: ej.ImagePosition.ImageTop,
-			                            prefixIcon: "e-ribbon e-new",
-			                            click: "executeAction"
-			                        }
-			                    }],
-			                    defaults: {
-			                        type: ej.Ribbon.type.button,
-			                        width: 60,
-			                        height: 70
-			                    }
-			                }]
-			            }, {
-			                text: "Font",
-			                alignType: "rows",
-			                content: [{
-			                    groups: [{
-			                        id: "fontfamily",
-			                        toolTip: "Font",
-			                        dropdownSettings: {
-			                            dataSource: fontfamily,
-			                            value: 1,
-			                            width: 150
-			                        }
-			                    }, {
-			                        id: "fontsize",
-			                        toolTip: "FontSize",
-			                        dropdownSettings: {
-			                            dataSource: fontsize,
-			                            value: 1,
-			                            width: 65
-			                        }
-			                    }],
-			                    defaults: {
-			                        type: ej.Ribbon.type.dropDownList,
-			                        height: 28,
-			                        isBig: false,
-			                    }
-			                }, {
-			                    groups: [{
-			                        id: "bold",
-			                        text: "bold",
-			                        toolTip: "Bold",
-			                        buttonSettings: {
-			                            contentType: ej.ContentType.ImageOnly,
-			                            prefixIcon: "e-ribbon bold"
-			                        }
-			                    }, {
-			                        id: "italic",
-			                        text: "italic",
-			                        text: "italic",
-			                        toolTip: "Italic",
-			                        buttonSettings: {
-			                            contentType: ej.ContentType.ImageOnly,
-			                            prefixIcon: "e-ribbon e-ribbonitalic"
-			                        }
-			                    }],
-			                    defaults: {
-			                        type: ej.Ribbon.type.button,
-			                        isBig: false,
-			                    }
-			                }]
-			            }, {
-			                text: "CustomControls",
-			                type: "custom",
-			                contentID: "Contents"
-			            }]
-			        }]
-			    });
-			});
-	   </script>
-	   <style type="text/css">
-	      .e-ribbon .e-new:before {
-	      content: "\e646";
-	      font-size: 36px;
-	      position: relative;
-	      left: -12px;
-	      top: -4px;
-	      }
-	      .e-ribbon .e-ribbonitalic:before {
-	      content: "\e635";
-	      }
-	      .e-ribbon .bold:before {
-	      content: "\e636";
-	      }
-	   </style>
-	</body>
-	<!-- ... -->
+	<div id="Ribbon"></div>
+      <ul id="ribbonmenu">
+         <li>
+            <a>FILE</a>
+            <ul>
+               <li><a>New</a></li>
+            </ul>
+         </li>
+      </ul>
+      <script type="text/javascript">
+          $(function () {
+             $("#Ribbon").ejRibbon({
+                width: "500px",
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu"
+                },
+                // tab item defined here
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    // group with content & button settings
+                    groups: [{
+                        text: "New",
+                        content: [{
+                            groups: [{
+                                id: "new",
+                                text: "New",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-new",
+                                }
+                            }]
+                        }]
+                    }]
+                }]
+            });
+       });
+      </script>
 
 {% endhighlight %}
-
-The following screenshot illustrates **Ribbon** with controls.
 
 ![](/js/Ribbon/Getting-Started_images/Getting-Started_img3.png)
 
-## Expand/Collapse
+## Adding Controls to Group
 
-The **Ribbon** has **expand/collapse** support. The following screenshot illustrates **Ribbon** in the expanded state,
-
-![](/js/Ribbon/Getting-Started_images/Getting-Started_img4.png)
-
-The following screenshot illustrates **Ribbon** in the collapsed state.
-
-![](/js/Ribbon/Getting-Started_images/Getting-Started_img5.png)
-
-## Separator for Controls
-
-The **Ribbon** control has control separator support. Set enableSeparator value to true to enable the separator after a control. **Control separator** supports only row type group.
+Syncfusion JavaScript Controls can be added to group’s content with corresponding [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) specified like button, splitbutton, togglebutton, dropdownlist, gallery, custom, etc. Default type is `button`.
 
 {% highlight html %}
 
-	<!-- ... -->
-	<head>
-	</head>
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	   <ul id="menu">
-	      <li>
-	         <a>FILE</a>
-	         <ul>
-	            <li><a>New</a></li>
-	            <li><a>Open</a></li>
-	         </ul>
-	      </li>
-	   </ul>
-	   <script type="text/javascript">
-		$(function() {
-		     var fontfamily = [{
-		             value: 1,
-		             text: "Segoe UI"
-		         }, {
-		             value: 2,
-		             text: "Arial"
-		         }, {
-		             value: 3,
-		             text: "Times New Roman"
-		         }, {
-		             value: 4,
-		             text: "Tahoma"
-		         }, {
-		             value: 5,
-		             text: "Helvetica"
-		         }],
-		         fontsize = [{
-		             value: 1,
-		             text: "1pt"
-		         }, {
-		             value: 2,
-		             text: "2pt"
-		         }, {
-		             value: 3,
-		             text: "3pt"
-		         }, {
-		             value: 4,
-		             text: "4pt"
-		         }, {
-		             value: 5,
-		             text: "5pt"
-		         }]
-		     $("#Ribbon").ejRibbon({
-		         width: "700px",
-		         applicationTab: {
-		             type: ej.Ribbon.applicationTabType.menu,
-		             menuItemID: "menu",
-		             menuSettings: {
-		                 openOnClick: false
-		             }
-		         },
-		         tabs: [{
-		             id: "home",
-		             text: "HOME",
-		             groups: [{
-		                 text: "New",
-		                 alignType: ej.Ribbon.alignType.rows,
-		                 enableGroupExpander: true,
-		                 content: [{
-		                     groups: [{
-		                         id: "new",
-		                         text: "New",
-		                         toolTip: "New",
-		                         buttonSettings: {
-		                             contentType: ej.ContentType.ImageOnly,
-		                             imagePosition: ej.ImagePosition.ImageTop,
-		                             prefixIcon: "e-ribbon e-new",
-		                             click: "executeAction"
-		                         }
-		                     }],
-		                     defaults: {
-		                         type: ej.Ribbon.type.button,
-		                         width: 60,
-		                         height: 70
-		                     }
-		                 }]
-		             }, {
-		                 text: "Font",
-		                 alignType: "rows",
-		                 content: [{
-		                     groups: [{
-		                         id: "fontfamily",
-		                         toolTip: "Font",
-		                         dropdownSettings: {
-		                             dataSource: fontfamily,
-		                             value: 1,
-		                             width: 150
-		                         }
-		                     }, {
-		                         id: "fontsize",
-		                         toolTip: "FontSize",
-		                         dropdownSettings: {
-		                             dataSource: fontsize,
-		                             value: 1,
-		                             width: 65
-		                         }
-		                     }],
-		                     defaults: {
-		                         type: ej.Ribbon.type.dropDownList,
-		                         height: 28,
-		                         isBig: false,
-		                     }
-		                 }, {
-		                     groups: [{
-		                         id: "bold",
-		                         text: "bold",
-		                         toolTip: "Bold",
-		                         buttonSettings: {
-		                             contentType: ej.ContentType.ImageOnly,
-		                             prefixIcon: "e-ribbon bold"
-		                         }
-		                     }, {
-		                         id: "italic",
-		                         text: "italic",
-		                         text: "italic",
-		                         toolTip: "Italic",
-		                         enableSeparator: true,
-		                         buttonSettings: {
-		                             contentType: ej.ContentType.ImageOnly,
-		                             prefixIcon: "e-ribbon e-ribbonitalic"
-		                         }
-		                     }, {
-		                         id: "underline",
-		                         text: "underline",
-		                         text: "underline",
-		                         toolTip: "Underline",
-		                         buttonSettings: {
-		                             contentType: ej.ContentType.ImageOnly,
-		                             prefixIcon: "e-ribbon e-ribbonunderline"
-		                         }
-		                     }],
-		                     defaults: {
-		                         type: ej.Ribbon.type.button,
-		                         isBig: false,
-		                     }
-		                 }]
-		             }]
-		         }]
-		     });
-		 });
-	   </script>
-	   <style type="text/css">
-	      .e-ribbon .e-new:before {
-	      content: "\e646";
-	      font-size: 36px;
-	      position: relative;
-	      left: -12px;
-	      top: -4px;
-		  font-family: "ej-webfont";
-	      }
-	      .e-ribbon .e-ribbonitalic:before {
-	      content: "\e635";
-		  font-family: "ej-webfont";
-	      }
-	      .e-ribbon .bold:before {
-	      content: "\e636";
-		  font-family: "ej-webfont";
-	      }
-	      .e-ribbon .e-ribbonunderline:before {
-	      content: "\e634";
-		  font-family: "ej-webfont";
-	      }
-	   </style>
-	</body>
-	<!-- ... -->
-
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+        <li>
+          <a>FILE</a>
+          <ul>
+              <li><a>New</a></li>
+          </ul>
+        </li>
+    </ul>
+    <ul id="split">
+        <li><span>Paste</span></li>
+    </ul>
+    <script type="text/javascript">
+            var fontfamily = [{
+                value: 1,
+                text: "Segoe UI"
+            }, {
+                value: 2,
+                text: "Arial"
+            }];
+            $(function () {
+                $("#Ribbon").ejRibbon({
+                    width: 500,
+                    applicationTab: {
+                        type: ej.Ribbon.applicationTabType.menu,
+                        menuItemID: "ribbonmenu"
+                    },
+                    tabs: [{
+                        id: "home",
+                        text: "HOME",
+                        groups: [{
+                            text: "SplitButton & Dropdown",
+                            alignType: ej.Ribbon.alignType.columns,
+                            content: [{
+                                groups: [{
+                                    id: "paste",
+                                    text: "paste",
+                                    // split button settings
+                                    splitButtonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        targetID: "split",
+                                        prefixIcon: "e-ribbon e-ribbonpaste",
+                                        buttonMode: "dropdown",
+                                        arrowPosition: "bottom"
+                                    }
+                                }],
+                                defaults: {
+                                    type: ej.Ribbon.type.splitButton,
+                                    width: 50,
+                                    height: 70
+                                }
+                            }, {
+                                groups: [{
+                                    id: "fontfamily",
+                                    // dropdown list settings
+                                    type: ej.Ribbon.type.dropDownList,
+                                    dropdownSettings: {
+                                        dataSource: fontfamily,
+                                        value: "1",
+                                        width: 100
+                                    }
+                                }]
+                            }]
+                        }]
+                    }]
+                });
+            });
+    </script>
+  
 {% endhighlight %}
 
-The following screenshot illustrates the control separator after the **Italic** Button control.
-
-![](/js/Ribbon/Getting-Started_images/Getting-Started_img6.png)
-
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img4.png)
