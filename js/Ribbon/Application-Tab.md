@@ -68,7 +68,7 @@ Set the UL element `id` to [`menuItemID`](http://help.syncfusion.com/js/api/ejri
 
 ### _Binding Data Source_
 
-Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-bindin) page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-binding) page to set data source to `ejMenu`.
 
 {% highlight html %}
     
@@ -261,3 +261,5 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 {% endhighlight %}
 
 ![](/js/Ribbon/Application-Tab_images/Application-Tab_img3.png)
+
+N> _Height & width of backstage can be set using [`height`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered._
