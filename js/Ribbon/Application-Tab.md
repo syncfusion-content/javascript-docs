@@ -68,7 +68,7 @@ Set the UL element `id` to [`menuItemID`](http://help.syncfusion.com/js/api/ejri
 
 ### _Binding Data Source_
 
-Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-bindin) page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-binding) page to set data source to `ejMenu`.
 
 {% highlight html %}
     
