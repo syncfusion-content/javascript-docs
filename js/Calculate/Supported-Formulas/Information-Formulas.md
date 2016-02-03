@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _CELL( infoType, reference)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -171,7 +171,7 @@ _ISBLANK(value)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -195,11 +195,11 @@ _ISERR( value )_
 
 
 
-Where,
+**where:**
 
 
 
-* value is the value that you want to test. When the value is an error value (except #N/A), this function returns `true/false` to indicate whether a value is an error or not.
+* value is the value that you want to test. When the value is an error value `except #N/A`, this function returns `true/false` to indicate whether a value is an error or not.
 
 
 
@@ -207,7 +207,7 @@ Where,
 
 
 
-Returns `true` when the value is a string that starts with a #.
+Returns `true` when the value is a string that starts with a `#`.
 
 
 
@@ -219,7 +219,7 @@ _ISERROR(value)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -231,7 +231,7 @@ Where,
 
 
 
-The `IsLogiacl` function checks whether a value is a logical value and returns **true** or **false**.
+The `IsLogiacl` function checks whether a value is a logical value and returns `true` or `false`.
 
 
 
@@ -243,7 +243,7 @@ _ISLOGICAL( value )_
 
 
 
- Where,
+ **where:**
 
 
 
@@ -255,7 +255,7 @@ _ISLOGICAL( value )_
 
 
 
-The `IsNA` function returns a Boolean value after determining that the provided value is #NA error value.
+The `IsNA` function returns a Boolean value after determining that the provided value is `#NA` error value.
 
 
 
@@ -267,7 +267,7 @@ _ISNA(value)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -291,7 +291,7 @@ IsNonText(text)
 
 
 
-Where,
+**where:**
 
 
 
@@ -315,7 +315,7 @@ _ISNUMBER(value)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -339,7 +339,7 @@ _INFO(infoType)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -363,7 +363,7 @@ _ISFORMULA (reference)_
 
 
 
-Where,
+**where:**
 
 
 
@@ -375,7 +375,7 @@ Where,
 
 
 
-&#35;VALUE!-occurs when reference is not a valid data type.
+`#VALUE!`-occurs when reference is not a valid data type.
 
 
 
@@ -415,7 +415,7 @@ _ISEVEN (value)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -423,11 +423,11 @@ where:
 
 
 
-Remarks          
+**Remarks:**          
 
 
 
-•If the given value is nonnumeric, ISEVEN function returns &#35;VALUE! error value.
+•If the given value is nonnumeric, ISEVEN function returns `#VALUE!` error value.
 
 
 
@@ -471,7 +471,7 @@ _N (value)_
 
 
 
-* Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of 1. The other values are returned as 0.
+* Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of `1`. The other values are returned as `0`.
 
 
 
@@ -479,7 +479,7 @@ _N (value)_
 
 
 
-The `NA` function returns the #N/A error. This error message is produced when a formula is unable to find a value that it needs. This error message denotes 'value not available'.
+The `NA` function returns the `#N/A` error. This error message is produced when a formula is unable to find a value that it needs. This error message denotes 'value not available'.
 
 
 
@@ -495,11 +495,11 @@ _NA()_
 
 
 
-Remarks          
+**Remarks:**
 
 
 
-•The function does not have any arguments.
+* The function does not have any arguments.
 
 
 
@@ -519,7 +519,7 @@ _SHEET(value)_
 
 
 
-where:
+**where:**
 
 
 
@@ -527,15 +527,15 @@ where:
 
 
 
- Remarks:
+ **Remarks:**
 
 
 
-*REF! - occurs if value argument is not a valid value.
+* `#REF!` - occurs if value argument is not a valid value.
 
 
 
-*NA - occurs if value argument is a sheet name that is not valid.
+* `#N/A` - occurs if value argument is a sheet name that is not valid.
 
 
 
@@ -555,7 +555,7 @@ _SHEETS(reference)_
 
 
 
-where:
+**where:**
 
 
 
@@ -563,11 +563,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* REF! - occurs if reference is not a valid value.
+* `#REF!` - occurs if reference is not a valid value.
 
 
 
@@ -587,7 +587,7 @@ _TYPE( value )_
 
 
 
-where:
+**where:**
 
 
 
@@ -607,7 +607,7 @@ _ROW( [reference] )_
 
 
 
-where,
+**where:**
 
 
 
@@ -631,7 +631,7 @@ _ROWS( array )_
 
 
 
-where:
+**where:**
 
 
 

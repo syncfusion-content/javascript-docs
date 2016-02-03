@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formula parsing and evaluation | JS | Calculate | WidowsForms | Syncfusion
+title: Formula parsing and evaluation of Calculate for Syncfusion Essential JS
 description: formula parsing and evaluation
 platform: JS
 control: Calculate
 documentation: ug
 ---
 
-# Formula parsing and evaluation
+# Formula Parsing and Evaluation
 
 Calculate engine have a built-in formula parser and evaluate the parsed formula using `CalcEngine.parseAndComputeFormula` method.
 
@@ -17,7 +17,7 @@ The built-in formula parser will parse the formula into a well formed version us
 
 
 
-`CalcEngine.Parse` method accepts a string formula, for example = A2 + 5 and checks whether it is a valid formula that CalcEngine can understand. After that, it returns a string that represents a parsed version of the formula that can be more readily computed.
+`CalcEngine.Parse` method accepts a string formula, for example `= A2 + 5` and checks whether it is a valid formula that `CalcEngine` can understand. After that, it returns a string that represents a parsed version of the formula that can be more readily computed.
 
 ## Parsing Order
 
@@ -38,11 +38,11 @@ Similarly, parsing and computing will be done through `ParseAndCompute` method. 
 
 ## Computing sheet formulas
 
-To calculate a sheet formula, the sheet should be registered to CalcEngine object before that. The sheet / grid should be implemented from `CalcData` which will be having the intermediate methods `SetValueRowCol` and `GetValueRowCol` methods.
+To calculate a sheet formula, the sheet should be registered to `CalcEngine` object before that. The sheet / grid should be implemented from `CalcData` which will be having the intermediate methods `SetValueRowCol` and `GetValueRowCol` methods.
 
 ### Setting cell formulas
 
-The index based values can be set based on spreadsheet like rowIndex and colIndex when formula is applied in a cell using ` SetValueRowCol` method.
+The index based values can be set based on spreadsheet like rowIndex and colIndex when formula is applied in a cell using `SetValueRowCol` method.
 
 {% highlight js %}
 
