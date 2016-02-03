@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Functions | JS | Calculate | WidowsForms | Syncfusion
+title: Custom Functions of Calculate for Syncfusion Essential JS
 description: custom functions
 platform: JS
 control: Calculate
@@ -19,7 +19,7 @@ Adding a custom function to the Formula Library is a two-step process. When the 
 
 ### Step 1-Writing the Method
 
-To calculate custom formula function, writing a method is required. Any kind of convention with respect to passing arguments can be used and within the implementation code. Thus, arguments can be a single entry like A1 or 153 or it can be more complex like A1:C15. The computed value will be returned as a string. The arguments can be enhanced with standard items like cell references, numbers, other formulas, etc., using the parsing tools of `CalcEngine` to minimize the amount of code that is required to be written.
+To calculate custom formula function, writing a method is required. Any kind of convention with respect to passing arguments can be used within the implementation code. Thus, arguments can be a single entry like `A1` or 153 or it can be more complex like `A1:C15`. The computed value will be returned as a string. The arguments can be enhanced with standard items like cell references, numbers, other formulas, etc., using the parsing tools of `CalcEngine` to minimize the amount of code that is required to be written.
 
 
 
@@ -53,7 +53,7 @@ calcObj.addCustomFunction("ADD", "customAdd")
 
 ## Remove Function
 
-sTo remove a single function from the Function Library, use the `calcObj.removeFunction` method, passing a `function name` as the string that references this function from a formula.
+To remove a single function from the Function Library, use the `calcObj.removeFunction` method, passing a `function name` as the string that references this function from a formula.
 
 {% highlight js %}
 
