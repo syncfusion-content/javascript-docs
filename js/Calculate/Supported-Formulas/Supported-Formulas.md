@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -13,402 +13,410 @@ documentation: ug
 
 The following formulas are supported in Essential calculate,
 
-[ABS](/js/calculate/supported-formulas#abs)
+[ABS](/js/calculate/supported-formulas/math-trigonometry#abs)
 
-[ACOS](/js/calculate/supported-formulas#acos)
+[ACOS](/js/calculate/supported-formulas/math-trigonometry#acos)
 
-[ACOSH](/js/calculate/supported-formulas#acosh)
+[ACOSH](/js/calculate/supported-formulas/math-trigonometry#acosh)
 
-[ACOT](/js/calculate/supported-formulas#acot)
+[ACOT](/js/calculate/supported-formulas/math-trigonometry#acot)
 
-[ACOTH](/js/calculate/supported-formulas#acoth)
+[ACOTH](/js/calculate/supported-formulas/math-trigonometry#acoth)
 
-[ADDRESS](/js/calculate/supported-formulas#address)
+[ADDRESS](/js/calculate/supported-formulas/lookup-and-reference#address)
 
-[AND](/js/calculate/supported-formulas#and)
+[AND](/js/calculate/supported-formulas/logical-formulas#and)
 
-[ARABIC](/js/calculate/supported-formulas#arabic)
+[ARABIC](/js/calculate/supported-formulas/math-trigonometry#arabic)
 
-[AREAS](/js/calculate/supported-formulas#areas)
+[AREAS](/js/calculate/supported-formulas/lookup-and-reference#areas)
 
-[ASIN](/js/calculate/supported-formulas#asin)
+[ASIN](/js/calculate/supported-formulas/math-trigonometry#asin)
 
-[ATAN](/js/calculate/supported-formulas#atan)
+[ATAN](/js/calculate/supported-formulas/math-trigonometry#atan)
 
-[ATAN2](/js/calculate/supported-formulas#atan2)
+[ATAN2](/js/calculate/supported-formulas/math-trigonometry#atan2)
 
-[AVEDEV](/js/calculate/supported-formulas#avedev)
+[AVEDEV](/js/calculate/supported-formulas/statistical#avedev)
 
-[AVERAGE](/js/calculate/supported-formulas#average)
+[AVERAGE](/js/calculate/supported-formulas/statistical#average)
 
-[AVERAGEA](/js/calculate/supported-formulas#averagea)
+[AVERAGEA](/js/calculate/supported-formulas/statistical#averagea)
 
-[BIN2DEC](/js/calculate/supported-formulas#bin2dec)
+[BIN2DEC](/js/calculate/supported-formulas/engineering#bin2dec)
 
-[BIN2HEX](/js/calculate/supported-formulas#bin2hex)
+[BIN2HEX](/js/calculate/supported-formulas/engineering#bin2hex)
 
-[BIN2OCT](/js/calculate/supported-formulas#bin2oct)
+[BIN2OCT](/js/calculate/supported-formulas/engineering#bin2oct)
 
-[BINOM.DIST](/js/calculate/supported-formulas#binomdist)
+[BINOM.DIST](/js/calculate/supported-formulas/statistical#binomdist)
 
-[CEILING](/js/calculate/supported-formulas#ceiling)
+[CEILING](/js/calculate/supported-formulas/math-trigonometry#ceiling)
 
-[CEILINGMATH](/js/calculate/supported-formulas#ceilingmath)
+[CEILINGMATH](/js/calculate/supported-formulas/math-trigonometry#ceilingmath)
 
-[CELL](/js/calculate/supported-formulas#cell)
+[CELL](/js/calculate/supported-formulas/information-formulas#cell)
 
-[CHAR](/js/calculate/supported-formulas#char)
+[CHAR](/js/calculate/supported-formulas/text-formulas#char)
 
-[CHISQ.DIST.RT](/js/calculate/supported-formulas#chisqdistrt)
+[CHISQ.DIST.RT](/js/calculate/supported-formulas/statistical#chisqdistrt)
 
-[CHISQ.INV](/js/calculate/supported-formulas#chisqinv)
+[CHISQ.INV](/js/calculate/supported-formulas/statistical#chisqinv)
 
-[CHISQ.INV.RT](/js/calculate/supported-formulas#chisqinvrt)
+[CHISQ.INV.RT](/js/calculate/supported-formulas/statistical#chisqinvrt)
 
-[CHOOSE](/js/calculate/supported-formulas#choose)
+[CHOOSE](/js/calculate/supported-formulas/lookup-and-reference#choose)
 
-[CLEAN](/js/calculate/supported-formulas#clean)
+[CLEAN](/js/calculate/supported-formulas/text-formulas#clean)
 
-[CODE](/js/calculate/supported-formulas#code)
+[CODE](/js/calculate/supported-formulas/text-formulas#code)
 
-[COLUMN](/js/calculate/supported-formulas#column)
+[COLUMN](/js/calculate/supported-formulas/lookup-and-reference#column)
 
-[COLUMNS](/js/calculate/supported-formulas#columns)
+[COLUMNS](/js/calculate/supported-formulas/lookup-and-reference#columns)
 
-[COMBIN](/js/calculate/supported-formulas#combin)
+[COMBIN](/js/calculate/supported-formulas/math-trigonometry#combin)
 
-[COMBINA](/js/calculate/supported-formulas#combina)
+[COMBINA](/js/calculate/supported-formulas/math-trigonometry#combina)
 
-[CONCATENATE](/js/calculate/supported-formulas#concatenate)
+[CONCATENATE](/js/calculate/supported-formulas/text-formulas#concatenate)
 
-[CONFIDENCE.NORM](/js/calculate/supported-formulas#confidencenorm)
+[CONFIDENCE.NORM](/js/calculate/supported-formulas/statistical#confidencenorm)
 
-[CORREL](/js/calculate/supported-formulas#correl)
+[CORREL](/js/calculate/supported-formulas/statistical#correl)
 
-[COS](/js/calculate/supported-formulas#cos)
+[COS](/js/calculate/supported-formulas/math-trigonometry#cos)
 
-[COSH](/js/calculate/supported-formulas#cosh)
+[COSH](/js/calculate/supported-formulas/math-trigonometry#cosh)
 
-[COT](/js/calculate/supported-formulas#cot)
+[COT](/js/calculate/supported-formulas/math-trigonometry#cot)
 
-[COUNT](/js/calculate/supported-formulas#count)
+[COUNT](/js/calculate/supported-formulas/statistical#count)
 
-[COUNTA](/js/calculate/supported-formulas#counta)
+[COUNTA](/js/calculate/supported-formulas/statistical#counta)
 
-[COUNTBLANK](/js/calculate/supported-formulas#countblank)
+[COUNTBLANK](/js/calculate/supported-formulas/statistical#countblank)
 
-[CSC](/js/calculate/supported-formulas#csc)
+[CSC](/js/calculate/supported-formulas/math-trigonometry#csc)
 
-[CSCH](/js/calculate/supported-formulas#csch)
+[CSCH](/js/calculate/supported-formulas/math-trigonometry#csch)
 
-[DATE](/js/calculate/supported-formulas#date)
+[DATE](/js/calculate/supported-formulas/date-time#date)
 
-[DATEVALUE](/js/calculate/supported-formulas#datevalue)
+[DATEVALUE](/js/calculate/supported-formulas/date-time#datevalue)
 
-[DAY](/js/calculate/supported-formulas#day)
+[DAY](/js/calculate/supported-formulas/date-time#day)
 
-[DAYS](/js/calculate/supported-formulas#days)
+[DAYS](/js/calculate/supported-formulas/date-time#days)
 
-[DAYS360](/js/calculate/supported-formulas#days360)
+[DAYS360](/js/calculate/supported-formulas/date-time#days360)
 
-[DEC2BIN](/js/calculate/supported-formulas#dec2bin)
+[DEC2BIN](/js/calculate/supported-formulas/engineering#dec2bin)
 
-[DEC2OCT](/js/calculate/supported-formulas#dec2oct)
+[DEC2OCT](/js/calculate/supported-formulas/engineering#dec2oct)
 
-[DECIMAL](/js/calculate/supported-formulas#decimal)
+[DECIMAL](/js/calculate/supported-formulas/math-trigonometry#decimal)
 
-[DEGREES](/js/calculate/supported-formulas#degrees)
+[DEGREES](/js/calculate/supported-formulas/math-trigonometry#degrees)
 
-[DEVSQ](/js/calculate/supported-formulas#devsq)
+[DEVSQ](/js/calculate/supported-formulas/statistical#devsq)
 
-[DOLLAR](/js/calculate/supported-formulas#dollar)
+[DOLLAR](/js/calculate/supported-formulas/text-formulas#dollar)
 
-[EDATE](/js/calculate/supported-formulas#edate)
+[EDATE](/js/calculate/supported-formulas/date-time#edate)
 
-[EncodeURL](/js/calculate/supported-formulas#encodeurl)
+[EncodeURL](/js/calculate/supported-formulas/web-formulas#encodeurl)
 
-[EOMONTH](/js/calculate/supported-formulas#eomonth)
+[EOMONTH](/js/calculate/supported-formulas/date-time#eomonth)
 
-[ERROR.TYPE](/js/calculate/supported-formulas#errortype)
+[ERROR.TYPE](/js/calculate/supported-formulas/information-formulas#errortype)
 
-[EVEN](/js/calculate/supported-formulas#even)
+[EVEN](/js/calculate/supported-formulas/math-trigonometry#even)
 
-[EXACT](/js/calculate/supported-formulas#exact)
+[EXACT](/js/calculate/supported-formulas/text-formulas#exact)
 
-[EXP](/js/calculate/supported-formulas#exp)
+[EXP](/js/calculate/supported-formulas/math-trigonometry#exp)
 
-[EXPON.DIST](/js/calculate/supported-formulas#expondist)
+[EXPON.DIST](/js/calculate/supported-formulas/statistical#expondist)
 
-[F.DIST](/js/calculate/supported-formulas#fdist)
+[F.DIST](/js/calculate/supported-formulas/statistical#fdist)
 
-[F.DIST.RT](/js/calculate/supported-formulas#fdistrt)
+[F.DIST.RT](/js/calculate/supported-formulas/statistical#fdistrt)
 
-[F.INV.RT](/js/calculate/supported-formulas#finvrt)
+[F.INV.RT](/js/calculate/supported-formulas/statistical#finvrt)
 
-[FACT](/js/calculate/supported-formulas#fact)
+[FACT](/js/calculate/supported-formulas/math-trigonometry#fact)
 
-[FALSE](/js/calculate/supported-formulas#false)
+[FACTDOUBLE](/js/calculate/supported-formulas/math-trigonometry#factdouble)
 
-[FIND](/js/calculate/supported-formulas#find)
+[FALSE](/js/calculate/supported-formulas/logical-formulas#false)
 
-[FISHER](/js/calculate/supported-formulas#fisher)
+[FIND](/js/calculate/supported-formulas/text-formulas#find)
 
-[FISHERINV](/js/calculate/supported-formulas#fisherinv)
+[FISHER](/js/calculate/supported-formulas/statistical#fisher)
 
-[FIXED](/js/calculate/supported-formulas#fixed)
+[FISHERINV](/js/calculate/supported-formulas/statistical#fisherinv)
+
+[FIXED](/js/calculate/supported-formulas/text-formulas#fixed)
 
 [FLOOR](/js/calculate/supported-formulas#floor)
 
-[FORECAST](/js/calculate/supported-formulas#forecast)
+[FORECAST](/js/calculate/supported-formulas/statistical#forecast)
 
-[FORMULATEXT](/js/calculate/supported-formulas#formulatext)
+[FORMULATEXT](/js/calculate/supported-formulas/lookup-and-reference#formulatext)
 
-[GAMMA.INV](/js/calculate/supported-formulas#gammainv)
+[GAMMA.INV](/js/calculate/supported-formulas/statistica#gammainv)
 
-[GAMMALN](/js/calculate/supported-formulas#gammaln)
+[GAMMALN](/js/calculate/supported-formulas/statistica#gammaln)
 
-[GAMMALN.PRECISE](/js/calculate/supported-formulas#gammalnprecise)
+[GAMMALN.PRECISE](/js/calculate/supported-formulas/statistica#gammalnprecise)
 
-[GEOMEAN](/js/calculate/supported-formulas#geomean)
+[GEOMEAN](/js/calculate/supported-formulas/statistical#geomean)
 
-[HARMEAN](/js/calculate/supported-formulas#harmean)
+[HARMEAN](/js/calculate/supported-formulas/statistical#harmean)
 
-[HEX2BIN](/js/calculate/supported-formulas#hex2bin)
+[HEX2BIN](/js/calculate/supported-formulas/engineering#hex2bin)
 
-[HEX2OCT](/js/calculate/supported-formulas#hex2oct)
+[HEX2OCT](/js/calculate/supported-formulas/engineering#hex2oct)
 
-[HLOOKUP](/js/calculate/supported-formulas#hlookup)
+[HLOOKUP](/js/calculate/supported-formulas/lookup-and-reference#hlookup)
 
-[HOUR](/js/calculate/supported-formulas#hour)
+[HOUR](/js/calculate/supported-formulas/date-time#hour)
 
-[HYPERLINK](/js/calculate/supported-formulas#hyperlink)
+[HYPERLINK](/js/calculate/supported-formulas/lookup-and-reference#hyperlink)
 
-[IF](/js/calculate/supported-formulas#if)
+[IF](/js/calculate/supported-formulas/logical-formulas#if)
 
-[IFERROR](/js/calculate/supported-formulas#iferror)
+[IFERROR](/js/calculate/supported-formulas/logical-formulas#iferror)
 
-[IFNA](/js/calculate/supported-formulas#ifna)
+[IFNA](/js/calculate/supported-formulas/logical-formulas#ifna)
 
-[INDEX](/js/calculate/supported-formulas#index)
+[INDEX](/js/calculate/supported-formulas/lookup-and-reference#index)
 
-[INDIRECT](/js/calculate/supported-formulas#indirect)
+[INDIRECT](/js/calculate/supported-formulas/lookup-and-reference#indirect)
 
-[INFO](/js/calculate/supported-formulas#info)
+[INFO](/js/calculate/supported-formulas/information-formulas#info)
 
-[INT](/js/calculate/supported-formulas#int)
+[INT](/js/calculate/supported-formulas/math-trigonometry#int)
 
-[INTERCEPT](/js/calculate/supported-formulas#intercept)
+[INTERCEPT](/js/calculate/supported-formulas/statistical#intercept)
 
-[ISBLANK](/js/calculate/supported-formulas#isblank)
+[ISBLANK](/js/calculate/supported-formulas/information-formulas#isblank)
 
-[ISERR](/js/calculate/supported-formulas#iserr)
+[ISERR](/js/calculate/supported-formulas/information-formulas#iserr)
 
-[ISERROR](/js/calculate/supported-formulas#iserror)
+[ISERROR](/js/calculate/supported-formulas/information-formulas#iserror)
 
-[ISEVEN](/js/calculate/supported-formulas#iseven)
+[ISEVEN](/js/calculate/supported-formulas/information-formulas#iseven)
 
-[ISFORMULA](/js/calculate/supported-formulas#isformula)
+[ISFORMULA](/js/calculate/supported-formulas/information-formulas#isformula)
 
-[ISLOGICAL](/js/calculate/supported-formulas#islogical)
+[ISLOGICAL](/js/calculate/supported-formulas/information-formulas#islogical)
 
-[ISNA](/js/calculate/supported-formulas#isna)
+[ISNA](/js/calculate/supported-formulas/information-formulas#isna)
 
-[ISNONTEXT](/js/calculate/supported-formulas#isnontext)
+[ISNONTEXT](/js/calculate/supported-formulas/information-formulas#isnontext)
 
-[ISNUMBER](/js/calculate/supported-formulas#isnumber)
+[ISNUMBER](/js/calculate/supported-formulas/information-formulas#isnumber)
 
-[ISODD](/js/calculate/supported-formulas#isodd)
+[ISODD](/js/calculate/supported-formulas/information-formulas#isodd)
 
-[ISOWEEKNUM](/js/calculate/supported-formulas#isoweeknum)
+[ISOWEEKNUM](/js/calculate/supported-formulas/date-time#isoweeknum)
 
-[ISREF](/js/calculate/supported-formulas#isref)
+[ISREF](/js/calculate/supported-formulas/information-formulas#isref)
 
-[ISTEXT](/js/calculate/supported-formulas#istext)
+[ISTEXT](/js/calculate/supported-formulas/math-trigonometry#istext)
 
-[LARGE](/js/calculate/supported-formulas#large)
+[LARGE](/js/calculate/supported-formulas/statistical#large)
 
-[LEFT](/js/calculate/supported-formulas#left)
+[LEFT](/js/calculate/supported-formulas/text-formulas#left)
 
-[LEN](/js/calculate/supported-formulas#len)
+[LEN](/js/calculate/supported-formulas/text-formulas#len)
 
-[LN](/js/calculate/supported-formulas#ln)
+[LN](/js/calculate/supported-formulas/math-trigonometry#ln)
 
-[LOG](/js/calculate/supported-formulas#log)
+[LOG](/js/calculate/supported-formulas/math-trigonometry#log)
 
-[LOG10](/js/calculate/supported-formulas#log10)
+[LOG10](/js/calculate/supported-formulas/math-trigonometry#log10)
 
-[LOGNORM.DIST](/js/calculate/supported-formulas#lognormdist)
+[LOGNORM.DIST](/js/calculate/supported-formulas/statistical#lognormdist)
 
-[LOGNORM.INV](/js/calculate/supported-formulas#lognorminv)
+[LOGNORM.INV](/js/calculate/supported-formulas/statistical#lognorminv)
 
-[LOOKUP](/js/calculate/supported-formulas#lookup)
+[LOOKUP](/js/calculate/supported-formulas/lookup-and-reference#lookup)
 
-[LOWER](/js/calculate/supported-formulas#lower)
+[LOWER](/js/calculate/supported-formulas/text-formulas#lower)
 
-[MAX](/js/calculate/supported-formulas#max)
+[MAX](/js/calculate/supported-formulas/statistical#max)
 
-[MAXA](/js/calculate/supported-formulas#maxa)
+[MAXA](/js/calculate/supported-formulas/statistical#maxa)
 
-[MEDIAN](/js/calculate/supported-formulas#median)
+[MEDIAN](/js/calculate/supported-formulas/statistical#median)
 
-[MID](/js/calculate/supported-formulas#mid)
+[MID](/js/calculate/supported-formulas/text-formulas#mid)
 
-[MIN](/js/calculate/supported-formulas#min)
+[MIN](/js/calculate/supported-formulas/statistical#min)
 
-[MINA](/js/calculate/supported-formulas#mina)
+[MINA](/js/calculate/supported-formulas/statistical#mina)
 
-[MINUTE](/js/calculate/supported-formulas#minute)
+[MINUTE](/js/calculate/supported-formulas/date-time#minute)
 
-[MONTH](/js/calculate/supported-formulas#month)
+[MONTH](/js/calculate/supported-formulas/date-time#month)
 
-[N](/js/calculate/supported-formulas#n)
+[N](/js/calculate/supported-formulas/information-formulas#n)
 
-[NA](/js/calculate/supported-formulas#na)
+[NA](/js/calculate/supported-formulas/information-formulas#na)
 
-[NEGBINOM.DIST](/js/calculate/supported-formulas#negbinomdist)
+[NEGBINOM.DIST](/js/calculate/supported-formulas/statistical#negbinomdist)
 
-[NETWORKDAYS](/js/calculate/supported-formulas#networkdays)
+[NETWORKDAYS](/js/calculate/supported-formulas/date-time#networkdays)
 
-[NETWORKDAYSINTL](/js/calculate/supported-formulas#networkdaysintl)
+[NETWORKDAYSINTL](/js/calculate/supported-formulas/date-time#networkdaysintl)
 
-[NORM.DIST](/js/calculate/supported-formulas#normdist)
+[NORM.DIST](/js/calculate/supported-formulas/statistical#normdist)
 
-[NORM.INV](/js/calculate/supported-formulas#norminv)
+[NORM.INV](/js/calculate/supported-formulas/statistical#norminv)
 
-[NORM.S.DIST](/js/calculate/supported-formulas#normsdist)
+[NORM.S.DIST](/js/calculate/supported-formulas/statistical#normsdist)
 
-[NORM.S.INV](/js/calculate/supported-formulas#normsinv)
+[NORM.S.INV](/js/calculate/supported-formulas/statistical#normsinv)
 
-[NOT](/js/calculate/supported-formulas#not)
+[NOT](/js/calculate/supported-formulas/logical-formulas#not)
 
-[NOW](/js/calculate/supported-formulas#now)
+[NOW](/js/calculate/supported-formulas/date-time#now)
 
-[NUMBERVALUE](/js/calculate/supported-formulas#numbervalue)
+[NUMBERVALUE](/js/calculate/supported-formulas/text-formulas#numbervalue)
 
-[OFFSET](/js/calculate/supported-formulas#offset)
+[OFFSET](/js/calculate/supported-formulas/lookup-and-reference#offset)
 
-[OR](/js/calculate/supported-formulas#or)
+[OR](/js/calculate/supported-formulas/logical-formulas#or)
 
-[PERCENTILE](/js/calculate/supported-formulas#percentile)
+[PERCENTILE](/js/calculate/supported-formulas/statistical#percentile)
 
-[PERCENTILE.EXC](/js/calculate/supported-formulas#percentileexc)
+[PERCENTILE.EXC](/js/calculate/supported-formulas/statistical#percentileexc)
 
-[PERCENTILE.INC](/js/calculate/supported-formulas#percentileinc)
+[PERCENTILE.INC](/js/calculate/supported-formulas/statistical#percentileinc)
 
-[PERCENTRANK.INC](/js/calculate/supported-formulas#percentrankinc)
+[PERCENTRANK.INC](/js/calculate/supported-formulas/statistical#percentrankinc)
 
-[PERMUT](/js/calculate/supported-formulas#permut)
+[PERMUT](/js/calculate/supported-formulasstatistical#permut)
 
-[PERMUTATIONA](/js/calculate/supported-formulas#permutationa)
+[PERMUTATIONA](/js/calculate/supported-formulas/statistical#permutationa)
 
 [PI](/js/calculate/supported-formulas#pi)
 
-[POISSON.DIST](/js/calculate/supported-formulas#poissondist)
+[POISSON.DIST](/js/calculate/supported-formulas/statistical#poissondist)
 
-[PRODUCT](/js/calculate/supported-formulas#product)
+[PRODUCT](/js/calculate/supported-formulas/math-trigonometry#product)
 
-[PROPER](/js/calculate/supported-formulas#proper)
+[PROPER](/js/calculate/supported-formulas/text-formulas#proper)
 
-[RANK.EQ](/js/calculate/supported-formulas#rankeq)
+[RANK.EQ](/js/calculate/supported-formulas/statistical#rankeq)
 
-[REPLACE](/js/calculate/supported-formulas#replace)
+[REPLACE](/js/calculate/supported-formulas/text-formulas#replace)
 
-[REPT](/js/calculate/supported-formulas#rept)
+[REPT](/js/calculate/supported-formulas/text-formulas#rept)
 
-[RIGHT](/js/calculate/supported-formulas#right)
+[RIGHT](/js/calculate/supported-formulas/text-formulas#right)
 
-[ROW](/js/calculate/supported-formulas#row)
+[ROW](/js/calculate/supported-formulas/information-formulas#row)
 
-[ROWS](/js/calculate/supported-formulas#rows)
+[ROWS](/js/calculate/supported-formulas/information-formulas#rows)
 
-[RSQ](/js/calculate/supported-formulas#rsq)
+[RSQ](/js/calculate/supported-formulas/statistical#rsq)
 
-[SEARCH](/js/calculate/supported-formulas#search)
+[SEARCH](/js/calculate/supported-formulas/text-formulas#search)
 
-[SEC](/js/calculate/supported-formulas#sec)
+[SEC](/js/calculate/supported-formulas/math-trigonometry#sec)
 
-[SECOND](/js/calculate/supported-formulas#second)
+[SECOND](/js/calculate/supported-formulas/date-time#second)
 
 [SERIESSUM](/js/calculate/supported-formulas#seriessum)
 
-[SHEET](/js/calculate/supported-formulas#sheet)
+[SHEET](/js/calculate/supported-formulas/information-formulas#sheet)
 
-[SHEETS](/js/calculate/supported-formulas#sheets)
+[SHEETS](/js/calculate/supported-formulas/information-formulas#sheets)
 
-[SIN](/js/calculate/supported-formulas#sin)
+[SIN](/js/calculate/supported-formulas/math-trigonometry#sin)
 
-[SINH](/js/calculate/supported-formulas#sinh)
+[SINH](/js/calculate/supported-formulas/math-trigonometry#sinh)
 
-[SMALL](/js/calculate/supported-formulas#small)
+[SMALL](/js/calculate/supported-formulas/statistical#small)
 
-[SQRT](/js/calculate/supported-formulas#sqrt)
+[SQRT](/js/calculate/supported-formulas/math-trigonometry#sqrt)
 
-[STANDARDIZE](/js/calculate/supported-formulas#standardize)
+[STANDARDIZE](/js/calculate/supported-formulas/statistical#standardize)
 
-[STDEV.P](/js/calculate/supported-formulas#stdevp)
+[STDEV.P](/js/calculate/supported-formulas/statistical#stdevp)
 
-[STDEV.S](/js/calculate/supported-formulas#stdevs)
+[STDEV.S](/js/calculate/supported-formulas/statistical#stdevs)
 
-[STDEVA](/js/calculate/supported-formulas#stdeva)
+[STDEVA](/js/calculate/supported-formulas/statistical#stdeva)
 
-[STDEVPA](/js/calculate/supported-formulas#stdevpa)
+[STDEVPA](/js/calculate/supported-formulas/statistical#stdevpa)
 
-[SUBSTITUTE](/js/calculate/supported-formulas#substitute)
+[SUBSTITUTE](/js/calculate/supported-formulas/text-formulas#substitute)
 
-[SUBTOTAL](/js/calculate/supported-formulas#subtotal)
+[SUBTOTAL](/js/calculate/supported-formulas/math-trigonometry#subtotal)
 
-[SUM](/js/calculate/supported-formulas#sum)
+[SUM](/js/calculate/supported-formulas/math-trigonometry#sum)
 
-[SUMIF](/js/calculate/supported-formulas#sumif)
+[SUMIF](/js/calculate/supported-formulas/math-trigonometry#sumif)
 
-[T](/js/calculate/supported-formulas#t)
+[T](/js/calculate/supported-formulas/text-formulas#t)
 
-[T.DIST](/js/calculate/supported-formulas#tdist)
+[T.DIST](/js/calculate/supported-formulas/statistical#tdist)
 
-[T.INV](/js/calculate/supported-formulas#tinv)
+[T.INV](/js/calculate/supported-formulas/statistical#tinv)
 
-[TAN](/js/calculate/supported-formulas#tan)
+[TAN](/js/calculate/supported-formulas/math-trigonometry#tan)
 
-[TIME](/js/calculate/supported-formulas#time)
+[TIME](/js/calculate/supported-formulas/date-time#time)
 
-[TIMEVALUE](/js/calculate/supported-formulas#timevalue)
+[TIMEVALUE](/js/calculate/supported-formulas/date-time#timevalue)
 
-[TODAY](/js/calculate/supported-formulas#today)
+[TODAY](/js/calculate/supported-formulas/date-time#today)
 
-[TRANSPOSE](/js/calculate/supported-formulas#transpose)
+[TRANSPOSE](/js/calculate/supported-formulas/lookup-and-reference#transpose)
 
-[TRIM](/js/calculate/supported-formulas#trim)
+[TRIM](/js/calculate/supported-formulas/text-formulas#trim)
 
-[TRIMMEAN](/js/calculate/supported-formulas#trimmean)
+[TRIMMEAN](/js/calculate/supported-formulas/statistical#trimmean)
 
 
 
-[TRUE](/js/calculate/supported-formulas#true)
+[TRUE](/js/calculate/supported-formulas/logical-formulas#true)
 
-[UNICHAR](/js/calculate/supported-formulas#unichar)
+[TRUNC](/js/calculate/supported-formulas/math-trigonometry#trunc)
 
-[UNICODE](/js/calculate/supported-formulas#unicode)
+[TYPE](/js/calculate/supported-formulas/information-formulas#type)
 
-[UPPER](/js/calculate/supported-formulas#upper)
+[UNICHAR](/js/calculate/supported-formulas/text-formulas#unichar)
 
-[VALUE](/js/calculate/supported-formulas#value)
+[UNICODE](/js/calculate/supported-formulas/text-formulas#unicode)
 
-[VAR.P](/js/calculate/supported-formulas#varp)
+[UPPER](/js/calculate/supported-formulas/text-formulas#upper)
 
-[VARA](/js/calculate/supported-formulas#vara)
+[VALUE](/js/calculate/supported-formulas/text-formulas#value)
 
-[VARPA](/js/calculate/supported-formulas#varpa)
+[VAR.P](/js/calculate/supported-formulas/statistical#varp)
 
-[WEEKDAY](/js/calculate/supported-formulas#weekday)
+[VARA](/js/calculate/supported-formulas/statistical#vara)
 
-[WEEKNUM](/js/calculate/supported-formulas#weeknum)
+[VARPA](/js/calculate/supported-formulas/statistical#varpa)
 
-[WEIBULL.DIST](/js/calculate/supported-formulas#weibulldist)
+[WEEKDAY](/js/calculate/supported-formulas/date-time#weekday)
 
-[WORKDAY](/js/calculate/supported-formulas#workday)
+[WEEKNUM](/js/calculate/supported-formulas/date-time#weeknum)
 
-[WORKDAYINTL](/js/calculate/supported-formulas#workdayintl)
+[WEIBULL.DIST](/js/calculate/supported-formulas/statistical#weibulldist)
 
-[XOR](/js/calculate/supported-formulas#xor)
+[WORKDAY](/js/calculate/supported-formulas/date-time#workday)
 
-[YEAR](/js/calculate/supported-formulas#year)
+[WORKDAYINTL](/js/calculate/supported-formulas/date-time#workdayintl)
+
+[XOR](/js/calculate/supported-formulas/logical-formulas#xor)
+
+[YEAR](/js/calculate/supported-formulas/date-time#year)
+
+[ZTEST](/js/calculate/supported-formulas/statistical#ztest)

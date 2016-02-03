@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _AND(logical1, logical2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -35,7 +35,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -67,7 +67,7 @@ _FALSE(stringvalue)_
 
 
 
-where;
+**where:**
 
 
 
@@ -95,7 +95,7 @@ _IF(logical_test, value_if_true, value_if_false)_
 
 
 
-where:
+**where:**
 
 
 
@@ -111,7 +111,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -135,7 +135,7 @@ _IFERROR (value, value_error)_
 
 
 
-where:
+**where:**
 
 
 
@@ -167,7 +167,7 @@ _IFNA (Formula_value, value_if_na)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -195,7 +195,7 @@ _NOT(logical)_
 
 
 
-where:
+**where:**
 
 
 
@@ -219,7 +219,7 @@ _TRUE(stringvalue)_
 
 
 
-where:
+**where:**
 
 
 
@@ -243,7 +243,7 @@ _OR(logical1, logical2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -251,7 +251,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -275,7 +275,7 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-where:
+**where:**
 
 
 
@@ -283,4 +283,4 @@ where:
 
 
 
-* When the given arguments do not have the logical values, `XOR` returns the #VALUE! error value.
+* When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.

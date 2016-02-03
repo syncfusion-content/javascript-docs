@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Operators | JS | Calculate | WidowsForms | Syncfusion
+title: Operators of Calculate for Syncfusion Essential JS
 description: operators
 platform: JS
 control: Calculate
@@ -11,7 +11,7 @@ documentation: ug
 
 The calculation type of an equation will be specified by operators. These operators will be prioritized in a default order for calculating the equation. 
 
-To recognize a particular string is to be treated as a formula, the string is required to start with a special character `formulaCharacter`. Its default character is the equals (=) sign.
+To recognize a particular string is to be treated as a formula, the string is required to start with a special character `formulaCharacter`. Its default character is the equals `=` sign.
 
 ## Arithmetic operators
 

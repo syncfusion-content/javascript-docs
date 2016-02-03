@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _ABS(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -55,7 +55,7 @@ _ACOT(number) or DEGREES ACOT(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -63,11 +63,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when the number is a non-numeric value.
+* `#VALUE!` occurs when the number is a non-numeric value.
 
 
 
@@ -91,7 +91,7 @@ _ACOTH(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -103,11 +103,11 @@ where:
 
 
 
-* &#35;NUM! occurs when number is lesser than one.
+* `#NUM!` occurs when number is lesser than one.
 
 
 
-* &#35;VALUE! occurs when absolute value of number is lesser than one.
+* `#VALUE!` occurs when absolute value of number is lesser than one.
 
 
 
@@ -127,7 +127,7 @@ _ARABIC( romannumeral )_
 
 
 
-where:
+**where:**
 
 
 
@@ -135,15 +135,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when text is not a valid value.
+* `#VALUE!` occurs when text is not a valid value.
 
 
 
-* &#35;VALUE! occurs when text is not a valid Roman numeral.
+* `#VALUE!` occurs when text is not a valid Roman numeral.
 
 
 
@@ -167,7 +167,7 @@ _ACOS(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -191,7 +191,7 @@ _ACOSH(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -215,7 +215,7 @@ _ASIN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -239,7 +239,7 @@ _ATAN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -263,7 +263,7 @@ _ATAN2(x_num,y_num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -275,7 +275,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -303,7 +303,7 @@ _COMBIN(number, number_chosen)_
 
 
 
-where:
+**where:**
 
 
 
@@ -315,7 +315,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -347,7 +347,7 @@ _COT(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -355,15 +355,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the number is out of the range.
+* `#NUM!` occurs when the number is out of the range.
 
 
 
-* &#35;VALUE! occurs when the number is a non-numeric value.
+* `#VALUE!` occurs when the number is a non-numeric value.
 
 
 
@@ -383,7 +383,7 @@ _CSC(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -391,15 +391,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the number is outside its constraints.
+* `#NUM!` occurs when the number is outside its constraints.
 
 
 
-* &#35;VALUE! occurs when the number is a non-numeric value.
+* `#VALUE!` occurs when the number is a non-numeric value.
 
 
 
@@ -419,7 +419,7 @@ _CSCH(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -427,15 +427,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the number is outside its constraints.
+* `#NUM!` occurs when the number is outside its constraints.
 
 
 
-* &#35;VALUE! occurs when the number is a non-numeric value.
+* `#VALUE!` occurs when the number is a non-numeric value.
 
 
 
@@ -455,7 +455,7 @@ _COS(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -479,7 +479,7 @@ _COSH(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -489,7 +489,7 @@ where:
 
 
 
-## COMBINa
+## COMBINA
 
 
 
@@ -505,7 +505,7 @@ _COMBINA(number1, number2)_
 
 
 
-where:
+**where:**
 
 
 
@@ -517,15 +517,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when either value is out of range.
+* `#NUM!` occurs when either value is out of range.
 
 
 
-* &#35;VALUE! occurs when either value is non-numeric.
+* `#VALUE!` occurs when either value is non-numeric.
 
 
 
@@ -545,7 +545,7 @@ _CEILING(number, significance)_
 
 
 
-where:
+**where:**
 
 
 
@@ -557,7 +557,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -585,7 +585,7 @@ _CEILING(number, [significance],  [mode])_
 
 
 
-where:
+**where:**
 
 
 
@@ -617,7 +617,7 @@ _DECIMAL(text, radix)_
 
 
 
-where:
+**where:**
 
 
 
@@ -629,11 +629,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! or &#35;VALUE! occurs when text or radix is outside the constraints.
+* `#NUM!` or `#VALUE!` occurs when text or radix is outside the constraints.
 
 
 
@@ -653,7 +653,7 @@ _DEGREES(angle)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -677,7 +677,7 @@ _EVEN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -685,7 +685,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -709,7 +709,7 @@ _EXP(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -733,7 +733,7 @@ _FACT(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -741,7 +741,7 @@ where:
 
 
 
-## FACTDouble
+## FACTDOUBLE
 
 
 
@@ -757,7 +757,7 @@ _FACTDOUBLE (number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -765,15 +765,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! when the number is lesser than zero (0).
+* `#NUM!` when the number is lesser than zero (0).
 
 
 
-* &#35;VALUE! Occurs when any of the given argument is non-numeric
+* `#VALUE!` Occurs when any of the given argument is non-numeric
 
 
 
@@ -793,7 +793,7 @@ _INT(number)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -817,7 +817,7 @@ _LN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -825,7 +825,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -849,7 +849,7 @@ _LOG(number, base)_
 
 
 
-where:
+**where:**
 
 
 
@@ -877,7 +877,7 @@ _LOG10(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -901,7 +901,7 @@ _SIN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -925,7 +925,7 @@ _SINH(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -949,7 +949,7 @@ _SEC(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -957,15 +957,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the number is outside its constraints.
+* `#NUM!` occurs when the number is outside its constraints.
 
 
 
-* &#35;VALUE! occurs when number is a non-numeric value.
+* `#VALUE!` occurs when number is a non-numeric value.
 
 
 
@@ -985,7 +985,7 @@ _SUBTOTAL (function_Number, ref1, (ref2)...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1131,7 +1131,7 @@ _PRODUCT(number1, number2, ...)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -1155,7 +1155,7 @@ _SQRT(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1163,7 +1163,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1187,7 +1187,7 @@ _SUMIF(range, criteria, sum_range)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1203,7 +1203,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1231,7 +1231,7 @@ _TAN(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1255,7 +1255,7 @@ _TRUNC( number, [num_digits] )_
 
 
 
-where:
+**where:**
 
 
 
@@ -1283,7 +1283,7 @@ _ISTEXT(text)_
 
 
 
-where:
+**where:**
 
 
 
