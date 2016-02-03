@@ -285,6 +285,17 @@ Please use the following platform names only in the front matter information
 | {{ site.mvc5releaseversion }}    | 13.3500.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 | {{ site.mvc6releaseversion }}    | 13.3600.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 
+
+## Where can I see my updated changes?
+
+All changes committed/merged to development branch will be automatically published in <http://115.249.201.211:9090> in the following timings.
+
+* 5 AM IST
+* 11 AM IST
+* 1 PM IST
+* 4 PM IST
+* 7 PM IST
+
 ## API Reference Guideline
 
 ### Naming Standards
