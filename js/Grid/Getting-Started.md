@@ -15,7 +15,6 @@ The grid control has the following list of external JavaScript dependencies.
 * [jQuery](http://jquery.com/) 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
-* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1) v0.1.1 - to support globalization
 
 Refer to the internal dependencies in the following table.
 
@@ -81,6 +80,10 @@ ej.editor.min.js</td></tr>
 <td>
 ej.excelfilter.js</td><td>
 It is referred when excel like filter menu is enabled.</td></tr>
+<tr>
+<td>
+ej.globalize.min.js</td><td>
+It is referred when using localization in Grid.</td></tr>
 </table>
 
 
