@@ -74,7 +74,7 @@ N>If the position of the dialog is not set as above, all the three dialogs will 
 
 ![Create Multiple Dialogs](how-to_images\create-multiple-dialogs_img1.png)
 
-### Create Nested Dialog
+## Create Nested Dialog
 
 A Dialog widget can be nested within another Dialog widget.
 
