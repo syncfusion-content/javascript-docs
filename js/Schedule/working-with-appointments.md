@@ -328,15 +328,15 @@ function onAppointmentClick(args) {
 
 It is possible to define some specific actions to take place after the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
 
-* [appointmentSaved](/js/api/ejschedule#events:appointmentsaved)
-* [appointmentEdited](/js/api/ejschedule#events:appointmentedited)
-* [appointmentDeleted](/js/api/ejschedule#events:appointmentdeleted)
+* [beforeAppointmentCreate](/js/api/ejschedule#events:beforeAppointmentCreate)
+* [beforeAppointmentChange](/js/api/ejschedule#events:beforeAppointmentChange)
+* [beforeAppointmentRemove](/js/api/ejschedule#events:beforeAppointmentRemove)
 
-**appointmentSaved** – Triggers before saving a new appointment.
+**beforeAppointmentCreate** – Triggers before saving a new appointment.
 
-**appointmentEdited** – Triggers when an appointment is edited and before it is being updated to the dataSource.
+**beforeAppointmentChange** – Triggers when an appointment is edited and before it is being updated to the dataSource.
 
-**appointmentDeleted** – Triggers before deleting an existing appointment.
+**beforeAppointmentRemove** – Triggers before deleting an existing appointment.
 
 To stop the save, edit and delete actions on the Scheduler appointments, following code example can be used.
 
@@ -360,9 +360,9 @@ $(function() {
                 EndTime: new Date(2015, 11, 5, 11, 00)
             }]
         },
-        appointmentSaved: "onAppointmentSave",
-        appointmentEdited: "onAppointmentEdit",
-        appointmentDeleted: "onAppointmentDelete"
+        beforeAppointmentCreate: "onAppointmentSave",
+        beforeAppointmentChange: "onAppointmentEdit",
+        beforeAppointmentRemove: "onAppointmentDelete"
     });
 });
 
@@ -420,7 +420,7 @@ N> When the `readOnly` property is set to true – double clicking the cells wil
 
 ## Drag and Drop
 
-The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `allowDragDrop` property. By default, it is set to `true`.
+The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `allowDragAndDrop` property. By default, it is set to `true`.
 
 {% highlight html %}
 
@@ -431,7 +431,7 @@ The appointment time can be modified through the drag and drop behaviour, by dra
 $(function() {
     $("#schedule").ejSchedule({
         //disable appointment drag and drop,
-        allowDragDrop: false,
+        allowDragAndDrop: false,
         currentDate: new Date(2015, 11, 7),
         appointmentSettings: {
             //Array of JSON data configure in dataSource
@@ -497,6 +497,235 @@ function onDragStop(args) {
     args.cancel = true; // cancels the drag action on appointments.
 }	
 </script>
+
+{% endhighlight %}
+
+### External Drag and Drop
+
+It is possible to drag and drop the external items to and fro the Scheduler control. This action is handled through the property [`appointmentDragArea`](/js/api/ejschedule#members:appointmentdragarea) 
+which specifies the draggable area name stating whether the appointments can be dragged outside of the control or within it.
+
+The following code example lets you drag and drop the external items from the tree view control to the Scheduler.
+
+{% highlight html %}
+
+<!-- Treeview List -->
+<div class="col-md-2">
+    <span class=""><b>Tutorials </b> </span>
+    <ul id="treeViewDrag">
+        <li class="expanded">
+            HTML
+            <ul>
+                <li>Introduction</li>
+                <li>Editors</li>
+                <li>Styles</li>
+                <li>Formatting</li>
+                <li>Tables</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<div id="customWindow" style="display: none">
+    <form id="custom">
+        <table width="100%" cellpadding="5">
+            <tbody>
+                <tr>
+                    <td>Subject:</td>
+                    <td colspan="2">
+                        <input id="subject" type="text" value="" name="Subject" style="width: 100%" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td colspan="2">
+                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>StartTime:</td>
+                    <td>
+                       <input id="StartTime" type="text" value="" name="StartTime" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>EndTime:</td>
+                    <td>
+                       <input id="EndTime" type="text" value="" name="EndTime" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Resource:</td>
+                    <td colspan="2">
+                       <input id="resource" type="text" value="" name="Resource" style="width: 100%" readonly />
+                    </td>
+                </tr>
+                <tr style="display: none">
+                    <td>ownerId:</td>
+                    <td colspan="2">
+                       <input id="ownerId" type="text" name="ownerId" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div>
+        <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+        <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#treeViewDrag").ejTreeView(
+                {
+                    allowDragAndDrop: true,
+                    width: 170,
+                    allowDropChild: false,
+                    allowDropSibling: false,
+                    allowDragAndDropAcrossControl: true,
+                    nodeDragStart: "onDragStart",
+                    nodeDropped: "onDropped",
+                });
+            var dManager = ej.DataManager(window.HorizontalResourcesTutorials).executeLocal(ej.Query().take(10));
+            $("#Schedule1").ejSchedule({
+                width: "100%",
+                height: "525px", cellWidth: "40px",
+                showCurrentTimeIndicator: false, orientation: "horizontal",
+                views: ["Day", "Week", "WorkWeek", "Month"],
+                currentDate: new Date(2014, 4, 5),
+                currentView: ej.Schedule.CurrentView.Workweek,
+                group: {
+                    resources: ["Owners"]
+                },
+                resources: [
+                   {
+                       field: "ownerId",
+                       title: "Owner",
+                       name: "Owners", allowMultiple: true,
+                       resourceSettings: {
+                           dataSource: [
+                           { text: "Nancy", id: 1, groupId: 1, color: "#f8a398" },
+                           { text: "Steven", id: 3, groupId: 2, color: "#56ca85" },
+                           { text: "Michael", id: 5, groupId: 1, color: "#51a0ed" },
+						   { text: "Milan", id: 13, groupId: 3, color: "#99ff99" },
+						   { text: "Paul", id: 15, groupId: 3, color: "#cc99ff" }
+                           ],
+                           text: "text", id: "id", groupId: "groupId", color: "color"
+                       }
+                   }],
+                appointmentSettings: {
+                    dataSource: dManager,
+                    id: "Id",
+                    subject: "Subject",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    description: "Description",
+                    allDay: "AllDay",
+                    recurrence: "Recurrence",
+                    recurrenceRule: "RecurrenceRule",
+                    resourceFields: "ownerId"
+
+                },
+                dragStop: "onDragStop",
+            });
+            $("#btncancel").ejButton({ width: '85px' });
+            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#StartTime").ejDateTimePicker({ width: "150px" });
+            $("#EndTime").ejDateTimePicker({ width: "150px" });
+            $("#customWindow").ejDialog({
+                width: 600,
+                height: "auto",
+                position: { X: 200, Y: 100 },
+                showOnInit: false,
+                enableModal: true,
+                title: "Create Appointment",
+                enableResize: false,
+                allowKeyboardNavigation: false,
+                close: "clearFields"
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onDragStart(e) {
+    if (e.targetElementData.parentId == "") return false;
+}
+
+function onDropped(e) {
+    if ($(e.target).parents(".e-schedule").length != 0) {
+        var scheduleObj = $("#Schedule1").data("ejSchedule");
+        var index = $($(e.target).context).hasClass("e-workcells") || $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : 7 - ((parseInt($($(e.target).context).index() / 7) + 1) * 7 - $($(e.target).context).index()) + ($($(e.target).context).parent().index() * 7);
+        if (scheduleObj.model.orientation == "horizontal") {
+            index = scheduleObj.model.showTimeScale ? scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView()) ? Math.floor(index / ((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2)) : index : $(e.event.target).index();
+        }
+        var renderDate = (scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") ? scheduleObj.monthDays : scheduleObj.model.orientation == "vertical" ? scheduleObj.dateRender : scheduleObj._dateRender;
+        renderDate = scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "customview" && scheduleObj._dateRender.length <= 7 ? scheduleObj._dateRender : renderDate;
+        var curDate = new Date(renderDate[index]);
+        var _target = $($(e.target).context);
+        if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
+            var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
+            var timemin = time.toString().split(".");
+            var cur_StartTime = new Date(curDate).setHours(parseInt(timemin[0]), parseInt(timemin[1]) == 5 ? 30 : 00);
+            var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
+            var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
+        }
+        else if ($(_target).hasClass("e-workcells") && scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") {
+            var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
+            var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
+        }
+        else {
+            var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
+            var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
+            scheduleObj._appointmentAddWindow.find(".allday").ejCheckBox({ checked: true });
+        }
+        
+        var StartDate = new Date(cur_StartTime);
+        var StartTime = new Date(cur_StartTime);
+        var endTime = cur_EndTime;
+        
+        // To find the resource details
+        var resource = scheduleObj._getResourceValue($($(e.target).context));
+       
+        // custom appointmnt window
+        $("#subject").val(e.droppedElementData.text);
+        $("#customdescription").val(e.droppedElementData.text);
+        $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
+        $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
+        $("#resource").val(resource.text);
+        $("#ownerId").val(resource.id);
+        $("#customWindow").ejDialog("open");
+    }
+}
+
+function save() {
+    var obj = {};
+    var formelement = $("#customWindow").find("#custom").get(0);
+    for (var index = 0; index < formelement.length; index++) {
+        var columnName = formelement[index].name, $element = $(formelement[index]);
+        if (columnName != undefined) {
+            if (columnName == "Subject") var value = formelement[index].value;
+            if (columnName == "Desctiption") value = formelement[index].value;
+            if (columnName == "StartTime") value = new Date(formelement[index].value);
+            if (columnName == "EndTime") value = new Date(formelement[index].value);
+            if (columnName == "ownerId") value = parseInt(formelement[index].value);
+            if (columnName != "Resource") obj[columnName] = value;
+        }
+    }
+    $("#customWindow").ejDialog("close");
+    var object = $("#Schedule1").data("ejSchedule");
+    object.saveAppointment(obj);
+}
+
+function cancel() {
+    $("#customWindow").ejDialog("close");
+}
 
 {% endhighlight %}
 
