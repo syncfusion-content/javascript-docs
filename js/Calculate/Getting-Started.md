@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started | JS | Calculate | WidowsForms | Syncfusion
+title: Getting Started of Calculate for Syncfusion Essential JS
 description: getting started 
 platform: JS
 control: Calculate
 documentation: ug
 ---
 
-# Getting started 
+# Getting Started 
 
-Essential Calculate can be configured in a web (HTML) page by using the following steps,
+Essential Calculate can be configured in a web `HTML` page by using the following steps,
 
-1. Create a HTML file and add the following code templates,
+1. Create a `HTML` file and add the following code templates,
 
    ~~~ html 
     <!DOCTYPE html>
@@ -26,7 +26,7 @@ Essential Calculate can be configured in a web (HTML) page by using the followin
    ~~~
 
 
-2. Add scripts files and CSS file into the `title` tag of the created HTML page,
+2. Add scripts files and `CSS` file into the `title` tag of the created `HTML` page,
 
    ~~~ html
     <head>
@@ -66,7 +66,7 @@ var calcObj = new CalcEngine();
 
 {% endhighlight %}
 
-Here, the CalcEngine is instantiated with empty constructor. If any control needs to be integrated with CalcEngine, that control can be passed as parameter of constructor. 
+Here, the `CalcEngine` is instantiated with empty constructor. If any control needs to be integrated with `CalcEngine`, that control can be passed as parameter of constructor. 
 
 
 
@@ -267,7 +267,7 @@ calcObj.getValueRowCol = function (sheetID,row, col) {
 
 {% endhighlight %}
 
-Here is the code for ‘setValueRowCol`,
+Here is the code for `setValueRowCol`,
 
 {% highlight js%}
 
@@ -308,7 +308,7 @@ calcObj.setValueRowCol = function (sheetID, value, row, col) {
 
 ### Evaluating formula
 
-The given formula in the text box `` can be evaluated using `parseAndComputeFormula` by click on the `compute` button.
+The given formula in the text box can be evaluated using `parseAndComputeFormula` by click on the `compute` button.
 
 {% highlight js %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | JS | Calculate | WidowsForms | Syncfusion
+title: Overview of Calculate for Syncfusion Essential JS
 description: Overview 
 platform: JS
 control: Calculate

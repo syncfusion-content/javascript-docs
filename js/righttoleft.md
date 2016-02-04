@@ -28,7 +28,7 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
         // Culture file reference to use the ar-DZ culture
-        <script src="Scripts/cultures/ej.culture.ar-DZ.min.js"></script>
+        <script src="Scripts/cultures/ej/cultures/ej.culture.ar-DZ.min.js"></script>
     </head>
     <body>     
         <!--Container for ejDatePicker widget-->

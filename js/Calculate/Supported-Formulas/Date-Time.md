@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -25,7 +25,7 @@ _DATE(year, month, day)_
 
 
 
-where:
+**where:**
 
 
 
@@ -49,7 +49,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -73,7 +73,7 @@ _DATEVALUE(date_text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -81,7 +81,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -109,7 +109,7 @@ _DAY(serial_number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -117,7 +117,7 @@ where:
 
 
 
-## DAYs360
+## DAYS360
 
 
 
@@ -133,7 +133,7 @@ _DAYS360(start_date, end_date, method)_
 
 
 
-where:
+**where:**
 
 
 
@@ -153,7 +153,7 @@ where:
 
 
 
-## DAYs
+## DAYS
 
 
 
@@ -169,7 +169,7 @@ _DAYS(endDate, startDate)_
 
 
 
-where:
+**where:**
 
 
 
@@ -193,7 +193,7 @@ _EDATE( startDate, Months )_
 
 
 
-where:
+**where:**
 
 
 
@@ -205,15 +205,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when the supplied startDate is not a valid date.
+* `#VALUE!` occurs when the supplied startDate is not a valid date.
 
 
 
-* &#35;VALUE! occurs when the supplied Months argument is non-numeric.
+* `#VALUE!` occurs when the supplied Months argument is non-numeric.
 
 
 
@@ -233,7 +233,7 @@ _EOMONTH(startDate, Months)_
 
 
 
-where:
+**where:**
 
 
 
@@ -245,19 +245,19 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any of the supplied argument is not a numeric value. 
+* `#VALUE!` occurs when any of the supplied argument is not a numeric value. 
 
 
 
-* &#35;NUM! occurs when the supplied startDate is not a valid date.
+* `#NUM!` occurs when the supplied startDate is not a valid date.
 
 
 
-* &#35;NUM! occurs when the supplied startDate plus the value of the months argument is not a valid date.
+* `#NUM!` occurs when the supplied startDate plus the value of the months argument is not a valid date.
 
 
 
@@ -277,11 +277,11 @@ _HOUR(serial_number)_
 
 
 
-where:
+**where:**
 
 
 
-* serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TimeValue("6:00 PM")).
+* serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
 
 
 
@@ -301,7 +301,7 @@ _ISOWEEKNUM( DateTime)_
 
 
 
-where:
+**where:**
 
 
 
@@ -309,15 +309,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the date argument is not a valid number.
+* `#NUM!` occurs when the date argument is not a valid number.
 
 
 
-* &#35;VALUE! occurs when the date argument is not a valid date type.
+* `#VALUE!` occurs when the date argument is not a valid date type.
 
 
 
@@ -337,7 +337,7 @@ _MINUTE(serial_number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -345,7 +345,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -369,7 +369,7 @@ _MONTH(serial_number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -377,7 +377,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -401,7 +401,7 @@ _NETWORKDAYS( start_date, end_date, [holidays] )_
 
 
 
-where:
+**where:**
 
 
 
@@ -420,7 +420,7 @@ where:
 **Notes:**
 
 
-• If any argument is not a valid date, NETWORKDAYS returns the #VALUE! error value.
+• If any argument is not a valid date, NETWORKDAYS returns the `#VALUE!` error value.
 
 
 
@@ -440,7 +440,7 @@ _NETWORKDAYS.INTL(startDate, endDate)_
 
 
 
-where:
+**where:**
 
 
 
@@ -452,11 +452,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when the supplied startDate and endDate are not valid dates. 
+* `#VALUE!` occurs when the supplied startDate and endDate are not valid dates. 
 
 
 
@@ -476,7 +476,7 @@ _NOW( )_
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -504,7 +504,7 @@ _SECOND(serial_number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -512,7 +512,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -536,7 +536,7 @@ _TIME(hour, minute, second)_
 
 
 
-where:
+**where:**
 
 
 
@@ -568,7 +568,7 @@ _TIMEVALUE(time_text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -576,7 +576,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -600,7 +600,7 @@ _TODAY( )_
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -624,7 +624,7 @@ _WEEKDAY(serial_number,return_type)_
 
 
 
-where:
+**where:**
 
 
 
@@ -674,7 +674,7 @@ Numbers 0 (Monday) through 6 (Sunday).</td></tr>
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -702,7 +702,7 @@ _WEEKNUM( serialNum, [returnType] )_
 
 
 
-where:
+**where:**
 
 
 
@@ -714,19 +714,19 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when the supplied serialNum cannot be recognized as a numeric value or a date. 
+* `#VALUE!` occurs when the supplied serialNum cannot be recognized as a numeric value or a date. 
 
 
 
-* &#35;NUM! occurs when the supplied [returnType] argument is not one of the above listed permitted values. 
+* `#NUM!` occurs when the supplied [returnType] argument is not one of the above listed permitted values. 
 
 
 
-* &#35;NUM! occurs when the supplied serialNum argument is numeric, but is out of range for the current date base. 
+* `#NUM!` occurs when the supplied serialNum argument is numeric, but is out of range for the current date base. 
 
 
 
@@ -746,7 +746,7 @@ _WORKDAY.INTL (startDate, days, [weekend], [holidays])_
 
 
 
-where:
+**where:**
 
 
 
@@ -766,23 +766,23 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the supplied startDate plus the supplied days argument results in an invalid date.
+* `#NUM!` occurs when the supplied startDate plus the supplied days argument results in an invalid date.
 
 
 
-* &#35;NUM! occurs when the supplied [weekend] argument is invalid (see above explanation of this argument).
+* `#NUM!` occurs when the supplied [weekend] argument is invalid (see above explanation of this argument).
 
 
 
-* &#35;VALUE! occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates.
+* `#VALUE!` occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates.
 
 
 
-* &#35;VALUE! occurs when the supplied days argument is non-numeric.
+* `#VALUE!` occurs when the supplied days argument is non-numeric.
 
 
 
@@ -802,7 +802,7 @@ _WORKDAY(startDate, Days, [holidays])_
 
 
 
-where:
+**where:**
 
 
 
@@ -818,15 +818,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when the supplied startDate plus the supplied days argument results in an invalid date. 
+* `#NUM!` occurs when the supplied startDate plus the supplied days argument results in an invalid date. 
 
 
 
-* &#35;VALUE! occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates, when the supplied days argument is non-numeric.
+* `#VALUE!` occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates, when the supplied days argument is non-numeric.
 
 
 
@@ -848,7 +848,7 @@ _YEAR(serial_number)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -856,7 +856,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 

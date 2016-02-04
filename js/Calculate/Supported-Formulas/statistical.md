@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _AVEDEV(number1, number2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -35,7 +35,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -63,13 +63,13 @@ _AVERAGE(number1, number2, ...)_
 
 
 
-where: 
+**where:** 
 
 * number1, number2, ... are numeric arguments for which you want the average.
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -81,7 +81,7 @@ Remarks:
 
 
 
-## AVERAGEa
+## AVERAGEA
 
 
 
@@ -97,7 +97,7 @@ _AVERAGEA(value1, value2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -105,7 +105,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -137,7 +137,7 @@ _BINOM.DIST (trial number,sp,value, cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -157,15 +157,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when trial number is lesser than zero, when sp and value are lesser than zero or greater than one.
+* `#NUM!` occurs when trial number is lesser than zero, when sp and value are lesser than zero or greater than one.
 
 
 
-* &#35;VALUE! occurs when trials, sp, and value are non-numeric.
+* `#VALUE!` occurs when trials, sp, and value are non-numeric.
 
 
 
@@ -185,7 +185,7 @@ _CONFIDENCE.NORM(alpha,stdev,size)_
 
 
 
-where:
+**where:**
 
 
 
@@ -201,15 +201,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to zero.
+* `#NUM!` occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to zero.
 
 
 
@@ -233,7 +233,7 @@ _CHISQ.INV(probability,degFreedom)_
 
 
 
-where:
+**where:**
 
 
 
@@ -245,15 +245,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when probability is lesser than zero, when probability is greater than 1, and degFreedom is lesser than 1.
+* `#NUM!` occurs when probability is lesser than zero, when probability is greater than 1, and degFreedom is lesser than 1.
 
 
 
-* &#35;VALUE! occurs when probability or degFreedom is non-numeric.
+* `#VALUE!` occurs when probability or degFreedom is non-numeric.
 
 
 
@@ -273,7 +273,7 @@ _CHISQ.INV.RT(probability, degFreedom)_
 
 
 
-where:
+**where:**
 
 
 
@@ -285,15 +285,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when probability is lesser than zero, when probability is greater than 1, and when degFreedom is lesser than 1.
+* `#NUM!` occurs when probability is lesser than zero, when probability is greater than 1, and when degFreedom is lesser than 1.
 
 
 
-* &#35;VALUE! occurs when probability or degFreedom is non-numeric. 
+* `#VALUE!` occurs when probability or degFreedom is non-numeric. 
 
 
 
@@ -313,7 +313,7 @@ _CHISQ.DIST.RT(x,degFreedom)_
 
 
 
-where:
+**where:**
 
 
 
@@ -325,19 +325,19 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when either argument is non-numeric.
+* `#VALUE!` occurs when either argument is non-numeric.
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when f degFreedom < 1 or degFreedom >10^10.
+* `#NUM!` occurs when f degFreedom < 1 or degFreedom >10^10.
 
 
 
@@ -357,7 +357,7 @@ _CHISQ.DIST(x,degFreedom,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -373,15 +373,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! - occurs if any argument is non-numeric.
+* `#VALUE!` - occurs if any argument is non-numeric.
 
 
 
-* &#35;NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom >10^10.
+* `#NUM!` - occurs if x is negative and if f degFreedom < 1 or degFreedom >10^10.
 
 
 
@@ -401,7 +401,7 @@ _CORREL(array1, array2)_
 
 
 
-where:
+**where:**
 
 
 
@@ -413,7 +413,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -437,7 +437,7 @@ _COUNT(value1, value2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -445,7 +445,7 @@ value1, value2, ... are arguments that can contain or refer to a variety of diff
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -473,7 +473,7 @@ _COUNTA(value1, value2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -497,7 +497,7 @@ _COUNTBLANK(range)_
 
 
 
-where:
+**where:**
 
 
 
@@ -505,7 +505,7 @@ range is the range from which you want to count the blank cells.
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -529,7 +529,7 @@ _DEVSQ(number1, number2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -537,7 +537,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -561,7 +561,7 @@ _EXPON.DIST(x,y,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -577,15 +577,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when x is lesser than zero and y is equal to or lesser than zero. 
+* `#NUM!` occurs when x is lesser than zero and y is equal to or lesser than zero. 
 
 
 
-* &#35;VALUE! occurs when x or y is non-numeric.
+* `#VALUE!` occurs when x or y is non-numeric.
 
 
 
@@ -605,7 +605,7 @@ _F.DIST(x,degFreedom1,degFreedom2,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -625,15 +625,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when x is negative, when degFreedom1< 1 and when degFreedom1< 1
+* `#NUM!` occurs when x is negative, when degFreedom1< 1 and when degFreedom1< 1
 
 
 
@@ -653,7 +653,7 @@ _F.DIST.RT(x, degFreedom1, degFreedom2)_
 
 
 
-where:
+**where:**
 
 
 
@@ -669,15 +669,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when x is negative, when degFreedom1< 1 and  when degFreedom2< 1.
+* `#NUM!` occurs when x is negative, when degFreedom1< 1 and  when degFreedom2< 1.
 
 
 
@@ -697,7 +697,7 @@ _F.INV.RT(probability,degFreedom1,degFreedom2)_
 
 
 
-where:
+**where:**
 
 
 
@@ -713,15 +713,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when probability is equal to or lesser than zero and when probability is equal to or greater than one.
+* `#NUM!` occurs when probability is equal to or lesser than zero and when probability is equal to or greater than one.
 
 
 
-* &#35;VALUE! occurs when probability or degFreedom1 or degFreedom2 is non-numeric.
+* `#VALUE!` occurs when probability or degFreedom1 or degFreedom2 is non-numeric.
 
 
 
@@ -741,7 +741,7 @@ _FISHER(x)_
 
 
 
-where:
+**where:**
 
 
 
@@ -749,7 +749,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -773,7 +773,7 @@ _FISHERINV(y)_
 
 
 
-where:
+**where:**
 
 
 
@@ -797,7 +797,7 @@ _FORECAST(x, known_ys, known_xs)_
 
 
 
-where:
+**where:**
 
 
 
@@ -829,7 +829,7 @@ _F.DIST.RT(x, degFreedom1, degFreedom2)_
 
 
 
-where:
+**where:**
 
 * x is the value that evaluates the function.
 
@@ -843,15 +843,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs if any argument is non-numeric.
+* `#VALUE!` occurs if any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
+* `#NUM!` occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
 
 
 
@@ -871,7 +871,7 @@ _GEOMEAN(number1, number2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -879,7 +879,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -907,7 +907,7 @@ _HARMEAN(number1, number2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -915,7 +915,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -927,7 +927,7 @@ Remarks:
 
 
 
-## INTercept
+## INTERCEPT
 
 
 
@@ -943,7 +943,7 @@ _INTERCEPT(known_y's, known_x's)_
 
 
 
-where:
+**where:**
 
 
 
@@ -971,7 +971,7 @@ _LARGE(array, k)_
 
 
 
-where:
+**where:**
 
 
 
@@ -983,7 +983,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1007,7 +1007,7 @@ _MAX(number1, number2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1031,7 +1031,7 @@ _MAXA(value1, value2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1039,7 +1039,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1075,7 +1075,7 @@ _MEDIAN(number1, number2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1083,7 +1083,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1107,7 +1107,7 @@ _MIN(number1, number2, ...)_
 
 
 
-where: 
+**where:** 
 
 
 
@@ -1115,7 +1115,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1123,7 +1123,7 @@ Remarks:
 
 
 
-## MINa
+## MINA
 
 
 
@@ -1139,7 +1139,7 @@ _MINA(value1, value2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1147,7 +1147,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1171,7 +1171,7 @@ _NORM.DIST(x,mean,stdev,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1191,15 +1191,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs if mean or stdev is non-numeric.
+* `#VALUE!` occurs if mean or stdev is non-numeric.
 
 
 
-* &#35;NUM! occurs if stdev is equal to or less than zero.
+* `#NUM!` occurs if stdev is equal to or less than zero.
 
 
 
@@ -1219,7 +1219,7 @@ _GAMMA.INV(x,y,z,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1239,15 +1239,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or lesser than zero. 
+* `#NUM!` occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or lesser than zero. 
 
 
 
-* &#35;VALUE! occurs when x or y or z is non-numeric.
+* `#VALUE!` occurs when x or y or z is non-numeric.
 
 
 
@@ -1267,7 +1267,7 @@ _GAMMALN.PRECISE(x)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1275,15 +1275,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when x is lesser than zero.
+* `#NUM!` occurs when x is lesser than zero.
 
 
 
-* &#35;VALUE! occurs when x is non-numeric.
+* `#VALUE!` occurs when x is non-numeric.
 
 
 
@@ -1303,7 +1303,7 @@ _LOGNORM.DIST(x,mean,stdev,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1323,15 +1323,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when x ≤ 0 or if stdev ≤ 0.
+* `#NUM!` occurs when x ≤ 0 or if stdev ≤ 0.
 
 
 
@@ -1351,7 +1351,7 @@ _LOGNORM.INV(probability, mean, stdev)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1367,15 +1367,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any argument is non-numeric.
+* `#VALUE!` occurs when any argument is non-numeric.
 
 
 
-* &#35;NUM! occurs when probability <= 0 or probability >= 1 and if Stdev<=0.
+* `#NUM!` occurs when probability <= 0 or probability >= 1 and if Stdev<=0.
 
 
 
@@ -1397,7 +1397,7 @@ _NORM.S.DIST(val, cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1425,7 +1425,7 @@ _NORM.S.INV(probability)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1437,7 +1437,7 @@ where:
 
 
 
-The `Negbinom.Dist` function calculates the probability mass function or the cumulative distribution function for the **Negative Binomial Distribution**.
+The `Negbinom.Dist` function calculates the probability mass function or the cumulative distribution function for the `Negative Binomial Distribution`.
 
 
 
@@ -1449,7 +1449,7 @@ _NEGBINOM.DIST(F_number,S_number,S_probability,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1485,7 +1485,7 @@ _PERCENTILE.EXC(array, k)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1497,15 +1497,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
+* `#NUM!` occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
 
 
 
-* &#35;VALUE! occurs when k is non-numeric.
+* `#VALUE!` occurs when k is non-numeric.
 
 
 
@@ -1525,7 +1525,7 @@ _PERCENTILE.INC (array,k)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1537,15 +1537,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
+* `#NUM!` occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
 
 
 
-* &#35;VALUE! occurs when k is a non-numeric.
+* `#VALUE!` occurs when k is a non-numeric.
 
 
 
@@ -1565,7 +1565,7 @@ _PERMUTATIONA(number, number-chosen)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1577,15 +1577,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when numeric arguments use data types that are non-numeric.
+* `#VALUE!` occurs when numeric arguments use data types that are non-numeric.
 
 
 
-* &#35;NUM! occurs when numeric arguments have values that are not valid.
+* `#NUM!` occurs when numeric arguments have values that are not valid.
 
 
 
@@ -1605,7 +1605,7 @@ _POISSON.DIST(x,mean,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1621,15 +1621,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when x is not an integer.
+* `#VALUE!` occurs when x is not an integer.
 
 
 
-* &#35;NUM! occurs when x or mean is non-numeric and s when x < 0.
+* `#NUM!` occurs when x or mean is non-numeric and s when x < 0.
 
 
 
@@ -1649,7 +1649,7 @@ _PERMUT(number, number_chosen)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1661,7 +1661,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1689,7 +1689,7 @@ _RANK.EQ(number, ref)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1717,7 +1717,7 @@ _RSQ(known_y's, known_x's)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1745,7 +1745,7 @@ _SMALL(array, k)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1773,7 +1773,7 @@ _Standardize(x, mean, standard_dev))
 
 
 
-where:
+**where:**
 
 
 
@@ -1789,7 +1789,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1813,7 +1813,7 @@ _STDEVA(value1, value2 , ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1821,7 +1821,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1845,7 +1845,7 @@ _STDEVPA(value1, value2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1853,7 +1853,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1877,7 +1877,7 @@ _STDEV.P(number1,[number2],...])_
 
 
 
-where:
+**where:**
 
 
 
@@ -1889,7 +1889,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1921,7 +1921,7 @@ _STDEV.S(number1,[number2],...])_
 
 
 
-where:
+**where:**
 
 
 
@@ -1933,7 +1933,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -1965,7 +1965,7 @@ _TDIST(x,deg_freedom,tails)_
 
 
 
-where:
+**where:**
 
 
 
@@ -1981,11 +1981,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* If any argument is non-numeric, TDIST returns the #VALUE! error value.
+* If any argument is non-numeric, TDIST returns the `#VALUE!` error value.
 
 
 
@@ -2029,7 +2029,7 @@ _T.INV(probability,deg_freedom)_
 
 
 
-where:
+**where:**
 
 
 
@@ -2041,11 +2041,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* If either argument is nonnumeric, T.INV returns the #VALUE! error value.
+* If either argument is nonnumeric, T.INV returns the `#VALUE!` error value.
 
 
 
@@ -2077,7 +2077,7 @@ _TRIMMEAN(array, percent)_
 
 
 
-where:
+**where:**
 
 
 
@@ -2089,7 +2089,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -2117,7 +2117,7 @@ _VAR.P(number1,[number2],...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -2129,7 +2129,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -2173,7 +2173,7 @@ _VARPA(value1, value2, ...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -2181,7 +2181,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -2209,7 +2209,7 @@ _VARA( value1, value2, ... value_n )_
 
 
 
-where:
+**where:**
 
 
 
@@ -2233,7 +2233,7 @@ _WEIBULL.DIST(x,alpha,beta,cumulative)_
 
 
 
-where:
+**where:**
 
 
 
@@ -2253,15 +2253,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when x is lesser than zero and when alpha or beta is equal to or lesser than zero.
+* `#NUM!` occurs when x is lesser than zero and when alpha or beta is equal to or lesser than zero.
 
 
 
-* &#35;VALUE! occurs when beta is non-numeric.
+* `#VALUE!` occurs when beta is non-numeric.
 
 
 
@@ -2281,7 +2281,7 @@ _ZTEST(a1,T_value,sigma)_
 
 
 
-where:
+**where:**
 
 
 

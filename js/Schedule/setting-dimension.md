@@ -69,6 +69,40 @@ $(function() {
 
 N> In **desktop** mode, the default height value of the cells is set to **20px**, whereas for **mobile** mode – the Scheduler cells are rendered with **40px** by default.
 
+### Cell Auto-Height
+
+The height of the cells especially in timeline view can be made to adjust automatically based on its exceeding appointment count. It is controlled by an API named [showOverflowButton](/js/api/ejschedule#members:showOverflowButton) which accepts true or false value, denoting whether to enable/disable the cell auto-height adjusting option. To enable this option, set the value of `showOverflowButton` as `false` whereas its default value is `true`.
+
+In **Vertical** view, the same functionality is made applicable only in the **Month View** whereas in **Horizontal** mode, it is applicable in all the views.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+			currentDate:new Date(2014,4,5),
+            currentView: "month",
+            showOverflowButton: false,
+            appointmentSettings: {
+                dataSource: [{
+                    Id: 100,
+                    Subject: "Wild Discovery",
+                    StartTime: new Date(2015, 11, 2, 9, 00),
+                    EndTime: new Date(2015, 11, 2, 10, 30),
+                    Location: "CHINA"
+                }]
+            } 
+        });
+    });
+</script>
+
+{% endhighlight %}
+
 ### Cell Width
 
 The [cellWidth](/js/api/ejschedule#members:cellwidth) property allows the Scheduler to set the width of the cells in pixels. The appointment width adjusts based on the cell width of the Scheduler.

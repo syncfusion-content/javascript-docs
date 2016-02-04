@@ -1473,6 +1473,33 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
+### contextMenuSettings.disabledefaultitems `Boolean`
+{:#members:contextmenusettings-disabledefaultitems}
+
+Gets or sets a value that indicates whether to disable the default context menu items in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource: window.gridData,
+   columns:[{field: "OrderID", isPrimaryKey: true},{field: "EmployeeID"}],
+   editSettings: { allowDeleting: true, allowEditing: true, allowAdding: true },
+   allowGrouping: true,
+   allowSorting: true,
+   allowPaging: true,
+   contextMenuSettings: { enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"], disableDefaultItems: true }
+});
+</script> 
+{% endhighlight %}
+
+
 ### cssClass `String`
 {:#members:cssclass}
 

@@ -40,14 +40,14 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 <div id="Schedule1"></div>
 
 <script id="apptemplate" type="text/x-jsrender">
-    {{"{{"}}if View !== "agenda"{{}}}}
+    {{"{{"}}if View !== "agenda"{{"}}"}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
-            <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
-            <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Subject{{"}}"}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Location{{"}}"}}</div>
         </div>
-    {{"{{"}}else{{}}}}
-        <div>{{"{{"}}:Subject{{}}}}, {{"{{"}}:Location{{}}}}</div>
-    {{"{{"}}/if{{}}}}
+    {{"{{"}}else{{"}}"}}
+        <div>{{"{{"}}:Subject{{"}}"}}, {{"{{"}}:Location{{"}}"}}</div>
+    {{"{{"}}/if{{"}}"}}
 </script>
 
 <script type="text/javascript">
@@ -70,6 +70,123 @@ $(function() {
 
 {% endhighlight %}
 
+## Cell Templates
+
+The template design that applies on the Scheduler elements such as alldaycells, workcells and monthcells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colours, and other elements etc and can also access the current view of the Scheduler using the name **view**.
+
+**Alldaycells** - An API named [allDayCellsTemplateId](/js/api/ejschedule#members:alldaycellstemplateid) can be used to customize the allday cells, which accepts the id of the template design block preceded with a symbol **#**.
+
+**Workcells and Monthcells** - An API named [workCellsTemplateId](/js/api/ejschedule#members:workcellstemplateid) can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
+
+The cells can be customized with the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<!-- Template for Alldaycells -->
+<script id="alldayTemplate" type="text/x-jsrender">
+    <div class="e-icon e-scheduleallday" style="opacity:0.5"></div>
+    <span style="opacity:0.5">AllDay</span>
+</script>
+
+<!-- Template for Workcells and Monthcells -->
+<script id="workTemplate" type="text/x-jsrender">
+    {{"{{"}}if resource.classname == 'e-parentnode'{{}}}}
+        {{"{{"}}:resource.text{{}}}}
+    {{"{{"}}else{{}}}}
+        {{"{{"}}if date.getDay() == 0 || date.getDay() == 6{{}}}}
+            <div style="background-color:lightblue">Weekend</div>
+        {{"{{"}}else{{}}}}
+            {{"{{"}}if view == 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5{{}}}}
+                <div style="background-color:burlywood">Meeting</div>
+            {{"{{"}}else resource.text != 'Party Hall-B' && date.getDate() == 15{{}}}}
+                <div style="background-color:thistle">Holiday</div>
+            {{"{{"}}else view != 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5 && date.getHours() == 10{{}}}}
+                <div style="background-color:burlywood">Meeting</div>
+            {{"{{"}}else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5{{}}}}
+                <div style="background-color:lightblue">Conf.</div>
+            {{"{{"}}else resource.text == 'Party Hall-B' && date.getDate() == 16{{}}}}
+                <div style="background-color:darkkhaki">Happyday</div>
+            {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
+                <div style="background-color:goldenrod">Conf.</div>
+            {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
+                <div style="background-color:palegreen">Day Spl</div>
+            {{"{{"}}else date.getDate() == 25 && date.getMonth() == 11{{}}}}
+                <div style="background-color:sandybrown">Christmas</div>
+            {{"{{"}}/if{{}}}}
+        {{"{{"}}/if{{}}}}
+    {{"{{"}}/if{{}}}}
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        allDayCellsTemplateId: "#alldayTemplate",
+        workCellsTemplateId: "#workTemplate",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+## Dateheader Template
+
+The template design that applies on for the date header part of the Scheduler. An API named [dateHeaderTemplateId](/js/api/ejschedule#members:dateheadertemplateid) can be used to customize the date header which accepts the id value of the template design block preceded by a symbol **#**. The template can also access the current view of the Scheduler in using the name **view**.
+
+The Dateheader can be customized with the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<!-- Template for Dateheader -->
+<script id="dateTemplate" type="text/x-jsrender">
+    <div>{{"{{"}}:~dTemplate(date){{}}}}</div>
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        dateHeaderTemplateId: "#dateTemplate",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function _dateFormat(date) {
+    var dFormat = ej.format(new Date(date), "dd/MM");
+    return dFormat;
+}
+$.views.helpers({ dTemplate: _dateFormat });
+    
+{% endhighlight %}
+
 ## Resource Header Template
 
 The template structure that applies on the resource headers of the Scheduler. By default, only the resource names will be displayed on the resource header bar. Also, the way of rendering resource headers on the Scheduler is comparatively different for both vertical and horizontal scheduler views. 
@@ -87,7 +204,7 @@ To customize the resource header with some additional images or other customizat
 
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-left:275px;margin-top:2px;float:left;background:{{"{{"}}:ResourceColor{{}}}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:ResourceText{{}}}}</div> 
+        <div style="width:15px;height:15px;margin-left:275px;margin-top:2px;float:left;background:{{"{{"}}:ResourceColor{{"}}"}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:ResourceText{{"}}"}}</div> 
     </div>
 </script>
 
@@ -147,7 +264,7 @@ To perform the above specified same customization in **horizontal** **Scheduler*
 
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{"{{"}}:ResColor{{}}}};"></div><div>{{"{{"}}:ResText{{}}}}</div> 
+        <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{"{{"}}:ResColor{{"}}"}};"></div><div>{{"{{"}}:ResText{{"}}"}}</div> 
     </div>
 </script>
 
@@ -199,6 +316,73 @@ $(function() {
 {% endhighlight %}
 
 N> In horizontal Scheduler, the header template makes use of an additional field namely **classname** which holds either **e-parentnode** or **e-childnode** value. The field **classname** can be used in the application scenario to check for the parent or child header node. You can apply the different template customization accordingly based on it.
+
+## TimeScale Templates
+
+The [TimeScale](/js/api/ejschedule#members:timeScale) is also availed with template options to allow customization. It includes the following 2 properties for customization -
+
+* [majorSlotTemplateId](/js/api/ejschedule#members:timeScale-majorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the major time slots.
+* [minorSlotTemplateId](/js/api/ejschedule#members:timeScale-minorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the minor time slots.
+
+The template customization for major and minor timeslots can be referred from the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<!-- Template for Majorslot -->
+<script id="majorTemplate" type="text/x-jsrender">
+    <div>{{"{{"}}:~major(date){{}}}}</div>
+</script>
+
+<!-- Template for Minorslot -->
+<script id="minorTemplate" type="text/x-jsrender">
+    <div>{{"{{"}}:~minor(date){{}}}}</div>
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        timeScale: {
+            enable: true,
+            majorSlot: 60,
+            majorSlotTemplateId: "#majorTemplate",
+            minorSlotCount: 6,
+            minorSlotTemplateId: "#minorTemplate"
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
+</script>
+
+<script>
+    function _majorFormat(date) {
+        var dFormat = ej.format(new Date(date), "hh:mm:ss");
+        return dFormat;
+    }
+    
+    function _minorFormat(date) {
+        var dFormat = ej.format(new Date(date), "hh:mm:ss");
+        return dFormat;
+    }
+    
+    $.views.helpers({ 
+        major: _majorFormat, 
+        minor: _minorFormat
+    });
+</script>
+
+{% endhighlight %}
 
 ## Priority Settings Template
 
@@ -296,11 +480,11 @@ To define the template option for tooltip, the [tooltipSettings](/js/api/ejsched
     <div style="width:145px">
         <div style="padding-top:3px;">
             <div style="float:left; font:13px Segoe UI; font-weight:bold;">Subject&nbsp;&nbsp;:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Subject{{}}}}</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Subject{{"}}"}}</div>
         </div>
         <div style="padding-top:3px">
             <div style="float:left; font:13px Segoe UI; font-weight:bold;">Location:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Location{{}}}}</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Location{{"}}"}}</div>
         </div>
     </div>
 </script>
@@ -343,7 +527,7 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="datetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{"{{"}}:~dateDisplay(StartTime){{}}}}</div>
+            <div>{{"{{"}}:~dateDisplay(StartTime){{"}}"}}</div>
         </div>
     </div>
 </script>
@@ -352,21 +536,21 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="timetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{"{{"}}:~timeDisplay(StartTime){{}}}}</div>
+            <div>{{"{{"}}:~timeDisplay(StartTime){{"}}"}}</div>
         </div>
     </div>
 </script>
 
 // Template for appointment which applies for event column in agenda view.
 <script id="apptemplate" type="text/x-jsrender">
-    {{"{{"}}if View !== "agenda"{{}}}}
+    {{"{{"}}if View !== "agenda"{{"}}"}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
-            <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
-            <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Subject{{"}}"}}</div>
+            <div style="margin-left: 2px;">{{"{{"}}:Location{{"}}"}}</div>
         </div>
-    {{"{{"}}else{{}}}}
-        <div>{{"{{"}}:Subject{{}}}}, {{"{{"}}:Location{{}}}}</div>
-    {{"{{"}}/if{{}}}}
+    {{"{{"}}else{{"}}"}}
+        <div>{{"{{"}}:Subject{{"}}"}}, {{"{{"}}:Location{{"}}"}}</div>
+    {{"{{"}}/if{{"}}"}}
 </script>
 
 <script type="text/javascript">
