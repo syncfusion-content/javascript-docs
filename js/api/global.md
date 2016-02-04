@@ -2594,29 +2594,11 @@ Outer</td>
 
 ### ColumnLayout
 {:#enum:columnlayout}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates whether to define columnlayout.
-
-
-
-
-
-
-#### Properties
-
-
-
+ 
+#### Properties 
 Gets or sets a value that indicates whether to define columnlayout.    
-
-
-
 
 <table class="props">
 <thead>
@@ -2642,19 +2624,6 @@ Gets or sets a value that indicates whether to define columnlayout.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### dataTypes
 {:#enum:datatypes}
@@ -3457,29 +3426,12 @@ Data</td>
 
 ### EditType
 {:#enum:edittype}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates whether to define the type of editing. 
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Gets or sets a value that indicates whether to define the type of editing.
-
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -3528,45 +3480,15 @@ Gets or sets a value that indicates whether to define the type of editing.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### EditMode
 {:#enum:editmode}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates whether to define the mode of editing.
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Gets or sets a value that indicates whether to define the mode of editing.
-
-
-
 
 <table class="props">
 <thead>
@@ -3628,20 +3550,7 @@ Gets or sets a value that indicates whether to define the mode of editing.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
  ### FileFormats
 {:#enum:fileformats}
@@ -3789,29 +3698,11 @@ The grid to starts the filter action while typing in the filterBar or after pres
 
 ### FilterType
 {:#enum:filtertype}
-
-
-
-
-
-
-
-
+ 
 The grid to show the filterBar or filterMenu to the grid records by filtertype.
-
-
-
-
-
-
+ 
 #### Properties
-
-
-
 The grid to show the filterBar or filterMenu to the grid records by filtertype.
-
-
-
 
 <table class="props">
 <thead>
@@ -3843,20 +3734,7 @@ The grid to show the filterBar or filterMenu to the grid records by filtertype.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### FitMode
 {:#enum:fitmode}
@@ -5461,28 +5339,11 @@ HalfCircle</td>
 
 ### FormPosition
 {:#enum:formposition}
-
-
-
-
-
-
-
-
+ 
 Set the position of an External edit form either in the top-right or bottom-left of the grid
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Set the position of an External edit form either in the top-right or bottom-left of the grid
-
-
-
 
 <table class="props">
 <thead>
@@ -5508,18 +5369,6 @@ Set the position of an External edit form either in the top-right or bottom-left
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### gaugePosition
@@ -5621,45 +5470,15 @@ BottomCenter</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### GridLines
 {:#enum:gridlines}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates to enable the visibility of the grid lines.
 
-
-
-
-
-
 #### Properties
-
-
 Gets or sets a value that indicates to enable the visibility of the gridlines.
-
-
-
 
 <table class="props">
 <thead>
@@ -5697,21 +5516,8 @@ Gets or sets a value that indicates to enable the visibility of the gridlines.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
 ### HeaderLeftButtonStyle
 {:#enum:headerleftbuttonstyle}
 
@@ -6945,29 +6751,12 @@ Twelve</td>
 
 ### HeaderTextAlign
 {:#enum:headertextalign}
-
-
-
-
-
-
-
-
+ 
 The text alignment of a particular column header cell value
-
-
-
-
-
-
+ 
 #### Properties
-
-
-
 The text alignment of a particular column header cell value
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -6998,20 +6787,7 @@ The text alignment of a particular column header cell value
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### IconName
 {:#enum:iconname}
@@ -12343,28 +12119,11 @@ Surface</td>
 
 ### PrintMode
 {:#enum:printmode}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates to enable the visible of the printmode.
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Gets or sets a value that indicates to enable the visible of the printmode.
-
-
-
 
 <table class="props">
 <thead>
@@ -12390,19 +12149,7 @@ Gets or sets a value that indicates to enable the visible of the printmode.
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### RangePadding
 {:#enum:rangepadding}
@@ -12877,29 +12624,12 @@ Windows</td>
 
 ### RowPosition
 {:#enum:rowposition}
-
-
-
-
-
-
-
-
+ 
 Specifies to set the position of an adding new row either in the top or bottom of the grid
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Specifies to set the position of an adding new row either in the top or bottom of the grid
-
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -12924,18 +12654,6 @@ Specifies to set the position of an adding new row either in the top or bottom o
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### ScaleType
@@ -14527,44 +14245,14 @@ qrBarcode</td>
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### SelectionMode
 {:#enum:selectionmode}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates whether to add the default selection actions as a selection mode
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode
-
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -14833,29 +14521,12 @@ Right</td>
 
 ### TextAlign
 {:#enum:textalign}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates to align the text within the column
-
-
-
-
-
-
+ 
 #### Properties
-
-
-
 Gets or sets a value that indicates to align the text within the column
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -14886,19 +14557,7 @@ Gets or sets a value that indicates to align the text within the column
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### TextAlign
 {:#enum:textalign}
@@ -16949,29 +16608,12 @@ Popup</td>
 
 ### Command Type
 {:#enum:type}
-
-
-
-
-
-
-
-
+ 
 Gets or sets a value that indicates to specify the commandtype of the specified columns.
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Gets or sets a value that indicates to specify the commandtype of the specified columns.
-
-
-
-
+ 
 <table class="props">
 <thead>
 <th>
@@ -17008,45 +16650,15 @@ Gets or sets a value that indicates to specify the commandtype of the specified 
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### ToolBarItems
 {:#enum:toolbaritems}
-
-
-
-
-
-
-
-
+ 
 Enum for toolbaritems in grid
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Enum for toolbaritems in grid
-
-
-
 
 <table class="props">
 <thead>
@@ -17120,17 +16732,6 @@ Enum for toolbaritems in grid
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Unit
@@ -17732,28 +17333,11 @@ Far</td>
 
 ### VirtualScrollMode
 {:#enum:virtualscrollmode}
-
-
-
-
-
-
-
-
+ 
 Define the mode of virtual scrolling in grid
-
-
-
-
-
-
+ 
 #### Properties
-
-
 Define the mode of virtual scrolling in grid
-
-
-
 
 <table class="props">
 <thead>
@@ -17779,20 +17363,7 @@ Define the mode of virtual scrolling in grid
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### ZIndex
 {:#enum:zindex}
