@@ -234,7 +234,7 @@ Example
 
 The selector for the container element. If the property is set, then dialog will append to the selected element and it is restricted to move only within the specified container element.
 
-Note: This property is similar to the “[target](#methods:target)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
+N> This property is similar to the “[target](#methods:target)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
 
 Default Value:
 {:.param}

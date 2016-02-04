@@ -8,7 +8,7 @@ keywords: export, print
 ---
 # Export and Print
 
-## Export Appointments
+## Export Appointments to ICS file
 
 The Appointments can be exported as a whole collection or else a single appointment alone can be exported from the Scheduler. By default, the appointments are exported to .ics format which can then be imported and used in any of the other external calendars.
 
@@ -139,6 +139,70 @@ public void ExportToICS(FormCollection form)
 
 {% endhighlight %}
 
+## PDF Export
+
+Scheduler supports to export the entire schedule control along with its appointments in PDF format, for which the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
+
+The following code example depicts the way to export the Scheduler with appointments in PDF format.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<!-- Button div for Export Option-->
+<button id="btnExport">Export</button>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnExport").ejButton({
+            width: "80px",
+            height: "30px",
+            click: "onExportClick"
+        });
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+			currentDate:new Date(2014,4,5),
+            appointmentSettings: {
+                dataSource: [{
+                    Id: 100,
+                    Subject: "Wild Discovery",
+                    StartTime: new Date(2015, 11, 2, 9, 00),
+                    EndTime: new Date(2015, 11, 2, 10, 30),
+                    Location: "CHINA"
+                }]
+            }
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onExportClick(e) {
+    var obj = $("#Schedule1").data("ejSchedule");
+    obj.exportSchedule("http://js.syncfusion.com/ScheduleExport/api/JSScheduleExport/PDFExport", null, null);
+    e.cancel = true;
+}
+
+{% endhighlight %}
+
+The server-side action **PDFExport** contains the following code example to export the Scheduler.
+
+{% highlight c# %}
+
+public ActionResult PDFExport(string scheduleModel)
+{
+    PdfExport exp = new PdfExport();
+    PdfDocument document = exp.Export(Request.Form["ScheduleModel"], Request.Form["ScheduleProcesedApps"], "flat-saffron", Request.Form["locale"], PdfPageOrientation.Landscape);
+    document.Save("Schedule.pdf", HttpContext.ApplicationInstance.Response, HttpReadType.Save);
+    return RedirectToAction("PDFExportController");
+}
+
+{% endhighlight %}
+
 ## Print
 
 Two types of Print options are available – either to print the entire Scheduler layout including all the appointments in it or else to print any particular appointment alone. The public method [print](/js/api/ejschedule#methods:print) is used to print the entire Scheduler.
@@ -233,3 +297,66 @@ $(function() {
 
 {% endhighlight %}
 
+## Import Appointments
+
+To Import appointments to the Scheduler, the following code as example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<!--Button div for Print Option-->
+<button id="Btn">Import</button>
+
+<script type="text/javascript">
+$(function() {
+    $("#Btn").ejButton({ width: "70px", height: "30px", click: "ScheduleImport" });
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        height: "525px",
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            id: "Id",
+            subject: "subject",
+            startTime: "startTime",
+            endTime: "endTime",
+            allDay: "allDay",
+            recurrence: "recurrence",
+            recurrenceRule: "recurrenceRule"
+        }
+    });
+});
+
+function ScheduleImport() {
+    var dataManger = ej.DataManager({ url: '@Url.Action("ScheduleImportData", "Schedule")', crossDomain: true });
+    $("#Schedule1").ejSchedule({
+        appointmentSettings: {
+            dataSource: dataManger
+        }
+    });
+}
+</script>
+
+{% endhighlight %}
+
+The server-side action **Import ICS File** contains the following code example to export the Scheduler appointments.
+
+{% highlight c# %}
+
+public JsonResult ScheduleImportData() {
+    var destinationPath = @"Filepath\iCalender.ics";
+    ScheduleImport importApps = new ScheduleImport();
+    var app = importApps.renderingImportAppointments(destinationPath);
+    int intMax = app.Max(a => a.Id);
+    List<ScheduleAppointmentsObjData> result = new List<ScheduleAppointmentsObjData>();
+    for (var i = 0; i < app.Count; i++) {
+        app[i].Id = intMax + 1;
+        ScheduleAppointmentsObjData row = new ScheduleAppointmentsObjData(app[i].Id, app[i].Subject, app[i].Location, app[i].StartTime, app[i].EndTime, app[i].Description, null, null, app[i].Recurrence, null, null, app[i].AppointmentCategorize, null, app[i].AllDay, null, null, app[i].RecurrenceRules, null, null);
+        result.Add(row);
+        intMax = app[i].Id;
+    }
+    return Json(result, JsonRequestBehavior.AllowGet);
+}
+
+{% endhighlight %}

@@ -143,7 +143,7 @@ N>The title can be also set through the title attribute for the dialog’s div e
 
 In most cases, the Dialog widgets are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog widget provides “open” and “close” methods to open/close the dialogs dynamically.
 
-The Dialog widget can be hidden on initialize using “showOnInit” property which should be set to false. 
+The Dialog widget can be hidden on initialize using `showOnInit` property which should be set to false. 
 
 Refer the below example. The dialog will be opened on clicking the Button widget. 
 

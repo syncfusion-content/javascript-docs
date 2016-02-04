@@ -24,31 +24,31 @@ Binds the <b>id</b> field name for indexing and performing CRUD operation on the
 <tr>
 <td>
 startTime<br/><br/></td><td>
-Binds the appointment start time field name which is <b>mandatory</b>.<br/><br/></td></tr>
+Binds the appointment start time field name which is <b>mandatory</b> and also its related validation rules.<br/><br/></td></tr>
 <tr>
 <td>
 startTimeZone<br/><br/></td><td>
-Binds the name of the start timezone field in the dataSource. If the <b>startTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
+Binds the name of the start timezone field in the dataSource and also its related validation rules. If the <b>startTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
 endTime<br/><br/></td><td>
-Binds the appointment end time field name which is <b>mandatory</b>.<br/><br/></td></tr>
+Binds the appointment end time field name which is <b>mandatory</b> and also its related validation rules.<br/><br/></td></tr>
 <tr>
 <td>
 endTimeZone<br/><br/></td><td>
-Binds the name of the end timezone field in the dataSource. If the <b>endTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
+Binds the name of the end timezone field in the dataSource and also its related validation rules. If the <b>endTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
 subject<br/><br/></td><td>
-Binds the appointment subject field name which holds the summary of the appointment. <br/><br/></td></tr>
+Binds the appointment subject field name which holds the summary of the appointment and also its related validation rules. <br/><br/></td></tr>
 <tr>
 <td>
 location<br/><br/></td><td>
-Binds the name of the location field. It indicates the appointment location/occurrence place. This field needs to be bind to the Scheduler, when an API <b>showLocationField</b> is set to true.<br/><br/></td></tr>
+Binds the name of the location field and also its related validation rules. It indicates the appointment location/occurrence place. This field needs to be bind to the Scheduler, when an API <b>showLocationField</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 description<br/><br/></td><td>
-Binds the appointment description field name.<br/><br/></td></tr>
+Binds the appointment description field name and also its related validation rules.<br/><br/></td></tr>
 <tr>
 <td>
 allDay<br/><br/></td><td>
@@ -56,11 +56,11 @@ Binds the name of the allDay field. It accepts the <b>boolean</b> value and indi
 <tr>
 <td>
 categorize<br/><br/></td><td>
-Binds the name of the categorize field. It indicates the category or status value (red categorize, green, yellow and so on). <br/><br/></td></tr>
+Binds the name of the categorize field and also its related validation rules. It indicates the category or status value (red categorize, green, yellow and so on). <br/><br/></td></tr>
 <tr>
 <td>
 priority<br/><br/></td><td>
-Binds the name of the priority field and indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
+Binds the name of the priority field, its related validation rules and also indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 resourceFields<br/><br/></td><td>
@@ -82,6 +82,8 @@ Binds the recurrence Id field which acts as a parent id for Scheduler recurrence
 recurrenceExDate<br/><br/></td><td>
 Binds the recurrence Exception field which accepts the recurrence Exception date values.<br/><br/></td></tr>
 </table>
+
+The below example depicts the appointment fields accepting the string type mapper fields,
 
 {% highlight html %}
 
@@ -152,6 +154,59 @@ $(function() {
 
 {% endhighlight %}
 
+## Appointment Field Validation
+
+It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
+
+Refer the appointment fields specified with validation rules from the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $.validator.addMethod("customRule", function (value, element, options) {
+            var ptn = /^[a-zA-Z0-9- ]*$/; //new RegExp(options);
+            return ptn.test(value);
+        }, "Special character(s) not allowed in Location field");
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014, 4, 5),
+            showLocationField: true,
+            categorizeSettings: {
+                enable: true,
+                allowMultiple: false,
+                dataSource: [
+                    { text: "Blue Category", id: 1, color: "#43b496", fontColor: "#ffffff" },
+                    { text: "Green Category", id: 2, color: "#7f993e", fontColor: "#ffffff" },
+                    { text: "Orange Category", id: 3, color: "#cc8638", fontColor: "#ffffff" },
+                    { text: "Purple Category", id: 4, color: "#ab54a0", fontColor: "#ffffff" },
+                    { text: "Red Category", id: 5, color: "#dd654e", fontColor: "#ffffff" },
+                    { text: "Yellow Category", id: 6, color: "#d0af2b", fontColor: "#ffffff" }
+                ],
+                text: "text", id: "id", color: "color", fontColor: "fontColor"
+            },
+            appointmentSettings: {
+                id: "Id",
+                subject: { field: "Subject", validationRules: { required: true } },
+                location: { field: "Location", validationRules: { required: true, customRule: "/^[a-zA-Z0-9- ]*$/" } },
+                startTime: { field: "StartTime", validationRules: { required: true } },
+                endTime: { field: "EndTime", validationRules: { required: true } },
+                description: { field: "Description", validationRules: { required: true, minlength: 5, maxlength: 500 } },
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                categorize: { field: "Categorize", validationRules: { required: true, messages: { required: "Categories are required." } } }
+            }
+        });
+    });
+</script>
+    
+{% endhighlight %}
 
 ## Binding to JSON Data Array
 

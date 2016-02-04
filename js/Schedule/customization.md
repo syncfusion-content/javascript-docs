@@ -15,9 +15,9 @@ The Scheduler can be customized in various aspects like -
 * Setting different [date format](/js/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
+* Setting different time Slot duration
 
 ## Hour Customization
-
 
 It includes customization of displaying Scheduler with specific Start/End hours and also defining the working hour time range which is differentiated as business hours.
 
@@ -95,6 +95,45 @@ $(function() {
 {% endhighlight %}
 
 N> By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+
+## TimeScale
+
+The [TimeScale](/js/api/ejschedule#members:timeScale) is an object collection which allows the user to set the required time slot duration to be displayed on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
+
+* [enable](/js/api/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the timescale option. Its default value is `true`.
+* [majorSlot](/js/api/ejschedule#members:timeScale-majorSlot) – Specifies the major time slot duration.
+* [minorSlotCount](/js/api/ejschedule#members:timeScale-minorSlotCount) – Specifies the value based on which the minor time slots are divided.
+
+The majorSlot and minorSlot can be set on the Scheduler with the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        timeScale: {
+            enable: true,
+            majorSlot: 60,
+            minorSlotCount: 6
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
 
 ## Date Customization
 
