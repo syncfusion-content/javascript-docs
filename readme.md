@@ -76,7 +76,7 @@ Please use the following platform names only in the front matter information
 
 |    Platform       	  	|PlatformName Identifier|
 |:-------------------------:|:---------------------:|
-| Android           	  	| andrroid				|
+| Android           	  	| android				|
 | ASP.NET           	  	| aspnet				|
 | ASP.NET Classic   	  	| aspnet-classic		|
 | ASP.NET MVC             	| ejmvc					|
