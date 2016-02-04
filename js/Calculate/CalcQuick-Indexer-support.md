@@ -1,19 +1,19 @@
 ---
 layout: post
-title: CalcQuick Indexer support | JS | Calculate | WidowsForms | Syncfusion
+title: CalcQuick Indexer support of Calculate for Syncfusion Essential JS
 description: calcquick (indexer) support
 platform: JS
 control: Calculate
 documentation: ug
 ---
 
-# CalcQuick (Indexer) support
+# CalcQuick (Indexer) Support
 The indexer method will be used in calculate through an instance of `CalcQuick` class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. After registering the variables, it provides options to perform manual or automatic calculations.
 
-These keys or virtual references must be enclosed within square brackets `[ ]`. (Eg. [A] )
+These keys or virtual references must be enclosed within square brackets `[ ]`. `Eg. [A]`
 
 ## Manual Calculation
-Manual calculations requires explicit request of Essential Calculate to compute the value and return it. These methods can be invoked from the CalcQuick class.
+Manual calculations requires explicit request of Calculate CalcEngine to compute the value and return it. These methods can be invoked from the `CalcQuick` class.
 
 ### Working with keys 
 

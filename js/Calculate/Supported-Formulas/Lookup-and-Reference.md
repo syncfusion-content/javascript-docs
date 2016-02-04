@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])_
 
 
 
-where:
+**where:**
 
 
 
@@ -65,7 +65,7 @@ _AREAS(reference)_
 
 
 
-where:
+**where:**
 
 
 
@@ -89,7 +89,7 @@ _CHOOSE(index, valuearray)_
 
 
 
-where:
+**where:**
 
 
 
@@ -117,7 +117,7 @@ _COLUMN(range)_
 
 
 
-where:
+**where:**
 
 
 
@@ -141,7 +141,7 @@ _COLUMNS(array)_
 
 
 
-where:
+**where:**
 
 
 
@@ -165,7 +165,7 @@ _FORMULATEXT (reference)_
 
 
 
-where:
+**where:**
 
 
 
@@ -173,31 +173,31 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;N/A occurs when the reference argument is to another workbook that is not opened.
+* `#N/A` occurs when the reference argument is to another workbook that is not opened.
 
 
 
-* &#35;N/A occurs when the reference argument is to a range containing more than one cell.
+* `#N/A` occurs when the reference argument is to a range containing more than one cell.
 
 
 
-* &#35;N/A occurs when the cell used as the reference argument does not contain a formula.
+* `#N/A` occurs when the cell used as the reference argument does not contain a formula.
 
 
 
-* &#35;N/A occurs when the formula in the cell is longer than 8192 characters.
+* `#N/A` occurs when the formula in the cell is longer than 8192 characters.
 
 
 
-* &#35;N/A occurs when the formula cannot be displayed in the worksheet.
+* `#N/A` occurs when the formula cannot be displayed in the worksheet.
 
 
 
-* &#35;N/A occurs when an external workbook that contains the formula is not opened.
+* `#N/A` occurs when an external workbook that contains the formula is not opened.
 
 
 
@@ -205,7 +205,7 @@ Remarks:
 
 
 
-Searches for a value in the top row of the array of values and then returns a value in the same column from a row you specify in the array. Use `HLookup` when your comparison values are located in a row across the top of a table of data and you want to look down a specified number of rows. Use **VLookup** when your comparison values are located in a column to the left of the data you want to find.
+Searches for a value in the top row of the array of values and then returns a value in the same column from a row you specify in the array. Use `HLookup` when your comparison values are located in a row across the top of a table of data and you want to look down a specified number of rows. Use `VLookup` when your comparison values are located in a column to the left of the data you want to find.
 
 
 
@@ -217,7 +217,7 @@ _HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)_
 
 
 
-where:
+**where:**
 
 
 
@@ -255,7 +255,7 @@ _HYPERLINK( linkLocation, friendlyName )_
 
 
 
-where:
+**where:**
 
 
 
@@ -283,7 +283,7 @@ _INDEX(range,row,col)_
 
 
 
-where:
+**where:**
 
 
 
@@ -315,7 +315,7 @@ _INDIRECT(content)_
 
 
 
-where:
+**where:**
 
 
 
@@ -339,7 +339,7 @@ _OFFSET( range, rows, columns, height, width )_
 
 
 
-where:
+**where:**
 
 
 
@@ -383,7 +383,7 @@ _LOOKUP(lookup_value, lookup_vector, result_vector)_
 
 
 
-where:
+**where:**
 
 
 
@@ -399,7 +399,7 @@ _=LOOKUP(lookup_value, array)_
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -407,7 +407,7 @@ Remarks:
 
 
 
-* When `lookup_value` is smaller than the smallest value in `lookup_vector`, `Lookup` returns the #N/A error value.
+* When `lookup_value` is smaller than the smallest value in `lookup_vector`, `Lookup` returns the `#N/A` error value.
 
 
 
@@ -427,7 +427,7 @@ _TRANSPOSE(array)_
 
 
 
-where:
+**where:**
 
 
 

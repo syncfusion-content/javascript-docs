@@ -507,7 +507,7 @@ Please find the code
 
 ## Globalization
 
-[`jQuery.globalize`](https://github.com/jquery/globalize/tree/v0.1.1) library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](http://help.syncfusion.com/js/api/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
+`ej.globalize` library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](http://help.syncfusion.com/js/api/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
 
 {% highlight html %}
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
 documentation: ug
 ---
 
-## TEXT FORMULAS
+# TEXT FORMULAS
 
 
 
-### CHAR
+## CHAR
 
 
 
@@ -27,7 +27,7 @@ _CHAR(number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -35,7 +35,7 @@ where:
 
 
 
-### CLEAN
+## CLEAN
 
 
 
@@ -51,7 +51,7 @@ _CLEAN(Text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -59,7 +59,7 @@ where:
 
 
 
-### CODE
+## CODE
 
 
 
@@ -75,7 +75,7 @@ _CODE(name)_
 
 
 
-where:
+**where:**
 
 
 
@@ -83,7 +83,7 @@ where:
 
 
 
-### CONCATENATE
+## CONCATENATE
 
 
 
@@ -99,7 +99,7 @@ _CONCATENATE (text1, text2,...)_
 
 
 
-where:
+**where:**
 
 
 
@@ -107,11 +107,11 @@ where:
 
 
 
-### DOLLAR
+## DOLLAR
 
 
 
-THE `DOLLAR` FUNCTION CONVERTS A NUMBER TO TEXT BY USING THE CURRENCY FORMAT. THE FORMAT USED IS $#,##0.00_);($#,##0.00).
+The `DOLLAR` function converts a number to text by using the CURRENCY format. The format used as $#,##0.00_);($#,##0.00).
 
 
 
@@ -123,7 +123,7 @@ _DOLLAR(number, decimal_places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -135,7 +135,7 @@ where:
 
 
 
-### EXACT
+## EXACT
 
 
 
@@ -151,7 +151,7 @@ _EXACT(value1, value2)_
 
 
 
-where:
+**where:**
 
 
 
@@ -163,7 +163,7 @@ where:
 
 
 
-### FIND
+## FIND
 
 
 
@@ -179,7 +179,7 @@ _FIND(text1,text2, num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -195,15 +195,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE!-occurs when text1 does not appear in text2 and when num is not greater than zero.
+* `#VALUE!`-occurs when text1 does not appear in text2 and when num is not greater than zero.
 
 
 
-### FIXED
+## FIXED
 
 
 
@@ -219,7 +219,7 @@ _FIXED(number, decimal_places, no_commas)_
 
 
 
-where:
+**where:**
 
 
 
@@ -235,7 +235,7 @@ where:
 
 
 
-### LEFT
+## LEFT
 
 
 
@@ -251,7 +251,7 @@ _LEFT(text, bytes)_
 
 
 
-where:
+**where:**
 
 
 
@@ -263,7 +263,7 @@ where:
 
 
 
-### LEN
+## LEN
 
 
 
@@ -279,7 +279,7 @@ _LEN(name)_
 
 
 
-where:
+**where:**
 
 
 
@@ -287,7 +287,7 @@ where:
 
 
 
-### LOWER
+## LOWER
 
 
 
@@ -303,7 +303,7 @@ _LOWER(text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -311,7 +311,7 @@ where:
 
 
 
-### MID
+## MID
 
 
 
@@ -327,7 +327,7 @@ _MID(text, startNum, numBytes)_
 
 
 
-where:
+**where:**
 
 
 
@@ -343,7 +343,7 @@ where:
 
 
 
-### NUMBERVALUE
+## NUMBERVALUE
 
 
 
@@ -359,7 +359,7 @@ _NUMBERVALUE(text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -367,15 +367,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;VALUE! occurs when any of the argument is not valid.
+* `#VALUE!` occurs when any of the argument is not valid.
 
 
 
-### PROPER
+## PROPER
 
 
 
@@ -391,7 +391,7 @@ _PROPER(text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -399,7 +399,7 @@ where:
 
 
 
-### REPLACE
+## REPLACE
 
 
 
@@ -415,7 +415,7 @@ _REPLACE(oldText, startNum, numChars, newText)_
 
 
 
-where:
+**where:**
 
 
 
@@ -435,7 +435,7 @@ where:
 
 
 
-### REPT
+## REPT
 
 
 
@@ -451,7 +451,7 @@ _REPT(string, number)_
 
 
 
-where:
+**where:**
 
 
 
@@ -463,7 +463,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -471,7 +471,7 @@ Remarks:
 
 
 
-### RIGHT
+## RIGHT
 
 
 
@@ -487,7 +487,7 @@ _RIGHT(string, num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -499,7 +499,7 @@ where:
 
 
 
-### SEARCH
+## SEARCH
 
 
 
@@ -515,7 +515,7 @@ _SEARCH(findText,withinText, startNum )_
 
 
 
-where:
+**where:**
 
 
 
@@ -535,11 +535,11 @@ Remark:
 
 
 
-* &#35;VALUE! occurs when find Text is not found.
+* `#VALUE!` occurs when find Text is not found.
 
 
 
-### SUBSTITUTE
+## SUBSTITUTE
 
 
 
@@ -555,7 +555,7 @@ _SUBSTITUTE(text, old_text, new_text, instance_num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -575,7 +575,7 @@ where:
 
 
 
-### T
+## T
 
 
 
@@ -591,7 +591,7 @@ _T( value )_
 
 
 
-where:
+**where:**
 
 
 
@@ -603,7 +603,7 @@ where:
 
 
 
-### TRIM
+## TRIM
 
 
 
@@ -619,7 +619,7 @@ _TRIM( text )_
 
 
 
-where:
+**where:**
 
 
 
@@ -627,7 +627,7 @@ where:
 
 
 
-### UNICHAR
+## UNICHAR
 
 
 
@@ -643,7 +643,7 @@ _UNICHAR(num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -651,11 +651,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;N/A-occurs when data types are not valid.
+* `#N/A`-occurs when data types are not valid.
 
 
 
@@ -663,7 +663,7 @@ Remarks:
 
 
 
-### UNICODE
+## UNICODE
 
 
 
@@ -679,7 +679,7 @@ _UNICODE(text)_
 
 
 
-where:
+**where:**
 
 
 
@@ -687,7 +687,7 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
@@ -695,7 +695,7 @@ Remarks:
 
 
 
-### UPPER
+## UPPER
 
 
 
@@ -711,7 +711,7 @@ _UPPER(text )_
 
 
 
-where:
+**where:**
 
 
 
@@ -719,7 +719,7 @@ where:
 
 
 
-### VALUE
+## VALUE
 
 
 
@@ -735,7 +735,7 @@ _VALUE(range)_
 
 
 
-where:
+**where:**
 
 
 

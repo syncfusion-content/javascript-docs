@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas | JS | Calculate | WidowsForms | Syncfusion
+title: Supported Formulas of Calculate for Syncfusion Essential JS
 description: supported formulas
 platform: JS
 control: Calculate
@@ -27,7 +27,7 @@ _BIN2OCT(num, places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -55,7 +55,7 @@ _BIN2HEX(num places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -67,15 +67,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number is not a valid binary number, when places is negative.
+* `#NUM!` occurs when number is not a valid binary number, when places is negative.
 
 
 
-* &#35;VALUE! occurs when places is non-numeric.
+* `#VALUE!` occurs when places is non-numeric.
 
 
 
@@ -95,7 +95,7 @@ _BIN2DEC(num)_
 
 
 
-where:
+**where:**
 
 
 
@@ -103,11 +103,11 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number is not a valid binary number or when number contains more than 10 characters.
+* `#NUM!` occurs when number is not a valid binary number or when number contains more than 10 characters.
 
 
 
@@ -127,7 +127,7 @@ _DEC2BIN(num,places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -139,15 +139,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number < -512 or if number >511 and when places is zero or negative.
+* `#NUM!` occurs when number < -512 or if number >511 and when places is zero or negative.
 
 
 
-* &#35;VALUE! occurs when number  or places is non-numeric and when `DEC2BIN` requires more than the number of characters specified in places.
+* `#VALUE!` occurs when number  or places is non-numeric and when `DEC2BIN` requires more than the number of characters specified in places.
 
 
 
@@ -167,7 +167,7 @@ _DEC2OCT(num, places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -179,15 +179,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number < -512 or if number >511 and when places is zero or negative.
+* `#NUM!` occurs when number < -512 or if number >511 and when places is zero or negative.
 
 
 
-* &#35;VALUE! occurs when the number or places is non-numeric and when DEC2OCT requires more than the number of characters specified in places.
+* `#VALUE!` occurs when the number or places is non-numeric and when DEC2OCT requires more than the number of characters specified in places.
 
 
 
@@ -207,7 +207,7 @@ _HEX2BIN(num, places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -219,15 +219,15 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number is not a valid binary number and when places is negative.
+* `#NUM!` occurs when number is not a valid binary number and when places is negative.
 
 
 
-* &#35;VALUE! occurs when places is non-numeric.
+* `#VALUE!` occurs when places is non-numeric.
 
 
 
@@ -247,7 +247,7 @@ _HEX2OCT(num, places)_
 
 
 
-where:
+**where:**
 
 
 
@@ -259,12 +259,12 @@ where:
 
 
 
-Remarks:
+**Remarks:**
 
 
 
-* &#35;NUM! occurs when number is not a valid hexadecimal number and when places is negative.
+* `#NUM!` occurs when number is not a valid hexadecimal number and when places is negative.
 
 
 
-* &#35;VALUE! occurs when places is non-numeric.
+* `#VALUE!` occurs when places is non-numeric.
