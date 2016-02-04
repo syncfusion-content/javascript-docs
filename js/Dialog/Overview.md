@@ -12,7 +12,7 @@ keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej
 
 The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms. 
 
-##Key Features:
+## Key Features:
 
 * Model dialog support: Displays the content in a modal dialog, disabling interaction with other items on the page
 
