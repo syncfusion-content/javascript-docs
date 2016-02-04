@@ -3,7 +3,7 @@ layout: post
 title: Cells with Grid widget for Syncfusion Essential JS
 description: How to define the cells and its features
 platform: js
-control: Grid
+control: ejGrid
 documentation: ug
 --- 
 # Cell
