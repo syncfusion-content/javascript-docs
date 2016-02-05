@@ -8,8 +8,6 @@ documentation: ug
 --- 
 # Cell
 
-It represents the Grid cells of both header and Content.
-
 ## Auto wrap column
 
 [`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the Grid to wrap cell content to next line when the content exceeds the boundary of the cell width. 
