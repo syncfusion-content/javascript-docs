@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Cell
 
-It represents the Grid cells of both header and Content.
+A cell is a specific location within a Grid and is defined by the intersection of a Grid row and column.
 
 ## Auto wrap column
 
