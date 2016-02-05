@@ -8,8 +8,6 @@ documentation: ug
 --- 
 # Cell
 
-A cell is a specific location within a Grid and is defined by the intersection of a Grid row and column.
-
 ## Auto wrap column
 
 [`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the Grid to wrap cell content to next line when the content exceeds the boundary of the cell width. 
