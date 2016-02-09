@@ -8,10 +8,7 @@ documentation: ug
 ---
 
 # Supported Formulas
-
-(Formula names will be added in alphabetical order in the first page. Each formulas will be represented as links. These links will be redirected to its explanation page.)
-
-The following formulas are supported in Essential calculate,
+The following are the list of formulas supported in Calculate library,
 
 [ABS](/js/calculate/supported-formulas/math-trigonometry#abs)
 
