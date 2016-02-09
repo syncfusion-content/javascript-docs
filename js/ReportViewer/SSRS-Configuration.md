@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SSRS-Configuration
+title: SSRS Configuration
 description: ssrs configuration
 platform: js
 control: ReportViewer
@@ -9,7 +9,7 @@ documentation: ug
 
 # SSRS Configuration
 
-The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’s reportServerUrl property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’s reportPath property. 
+The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’s `reportServerUrl` property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’s `reportPath` property. 
 
 {% highlight js %}
 $("#viewer").ejReportViewer({

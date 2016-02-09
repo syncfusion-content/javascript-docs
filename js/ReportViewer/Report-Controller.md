@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-Controller
+title: Report Controller
 description: report controller
 platform: js
 control: ReportViewer
@@ -13,7 +13,7 @@ The ReportViewer uses Web API services to process the report file, process the r
 
 ## IReportController
 
-The interface IReportController has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The IReportController has the following action methods declaration. 
+The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The `IReportController` has the following action methods declaration. 
 
 <table>
 <tr>
@@ -40,7 +40,7 @@ Report loaded method that is triggered when report and sub report begin loading.
 
 ## ReportHelper
 
-The class ReportHelper contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The ReportHelper has the following methods. 
+The class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The `ReportHelper` has the following methods. 
 
 <table>
 <tr>
@@ -104,7 +104,6 @@ public class ReportsController: ApiController,IReportController
         return ReportHelper.ProcessReport(jsonData, this);
     }
 }
-
 
 {% endhighlight %}
 
