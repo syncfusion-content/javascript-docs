@@ -165,11 +165,11 @@ The following formulas are supported in Essential calculate,
 
 [FORMULATEXT](/js/calculate/supported-formulas/lookup-and-reference#formulatext)
 
-[GAMMA.INV](/js/calculate/supported-formulas/statistica#gammainv)
+[GAMMA.INV](/js/calculate/supported-formulas/statistical#gammainv)
 
-[GAMMALN](/js/calculate/supported-formulas/statistica#gammaln)
+[GAMMALN](/js/calculate/supported-formulas/statistical#gammaln)
 
-[GAMMALN.PRECISE](/js/calculate/supported-formulas/statistica#gammalnprecise)
+[GAMMALN.PRECISE](/js/calculate/supported-formulas/statistical#gammalnprecise)
 
 [GEOMEAN](/js/calculate/supported-formulas/statistical#geomean)
 
@@ -299,7 +299,7 @@ The following formulas are supported in Essential calculate,
 
 [PERCENTRANK.INC](/js/calculate/supported-formulas/statistical#percentrankinc)
 
-[PERMUT](/js/calculate/supported-formulasstatistical#permut)
+[PERMUT](/js/calculate/supported-formulas/statistical#permut)
 
 [PERMUTATIONA](/js/calculate/supported-formulas/statistical#permutationa)
 
