@@ -208,7 +208,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable drag and drop a node into ej.TreeView.
+Gets or sets a value that indicates whether to enable drag and drop a node in inter ej.TreeView.
 
 
 
@@ -1510,6 +1510,62 @@ $("#treeView").ejTreeView({
 
 
 
+
+### htmlAttributes `object`
+{:#members:htmlAttributes}
+
+
+
+
+
+
+
+
+Specifies the HTML Attributes for the TreeView. Using this API we can add custom attributes in TreeView control.
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* {}
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>                  
+// Initialize the TreeView with the htmlAttributes value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    htmlAttributes: {class:"my-class"}
+});
+ </script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
 ### loadOnDemand `boolean`
 {:#members:loadondemand}
 
@@ -1662,6 +1718,141 @@ $("#treeView").ejTreeView({
     showCheckbox: true
 });
  </script>{% endhighlight %}
+
+
+
+
+
+
+### sortSettings `object`
+{:#members:sortSettings}
+
+
+
+
+
+
+
+
+By using sortSettings property, you can customize the sorting option in TreeView control.
+
+
+
+
+
+
+
+
+
+
+
+### sortSettings.allowSorting `boolean`
+{:#members:sortSettings-allowSorting}
+
+
+
+
+
+
+
+
+Enables or disables the sorting option in TreeView control
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>        
+// Initialize the TreeView with ascending order of tree nodes  
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    sortSettings: {
+        allowSorting: true
+        }
+});
+ </script>{% endhighlight %}
+
+
+
+
+
+
+
+### sortSettings.sortOrder `enum`
+{:#members:sortSettings-sortOrder}
+
+
+
+
+
+
+
+
+Sets the sorting order type. There are two sorting types available, such as "ascending", "descending". See <a href="global#enum:sortorder">sortOrder</a>
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* ej.sortOrder.Ascending
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>        
+// Initialize the TreeView with descending order of tree nodes  
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    sortSettings: {
+        allowSorting: true,
+        sortOrder: ej.sortOrder.Descending
+        }
+});
+ </script>{% endhighlight %}
+
+
+
 
 
 
@@ -1825,7 +2016,7 @@ $("#treeView").ejTreeView({
 
 
 
-### addNode(newNodeText, target)
+### addNode(newNodeText, target)</span>
 {:#methods:addnode}
 
 
@@ -1897,6 +2088,85 @@ treeObj.addNode(obj, $("#book"));
 
 
 
+
+
+
+
+
+
+
+### addNodes(collection, target)</span>
+{:#methods:addnodes}
+
+
+
+
+
+
+
+
+To add a collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+collection{% endhighlight %}</td>
+<td class="type"><span class="param-type">object / Array of Object</span></td>
+<td class="description">New node details in JSON object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = [{ id: "temp", name: "New node" }, { id: "temp1", name: "New node1" }];
+treeObj.addNodes(obj, "book"); // First argument is new nodes object in Array and this will be appended as child of node, which node is having ID book.
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ 
+<script>
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+treeObj.addNode(obj, $("#book"));
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### checkAll()
 {:#methods:checkall}
 
@@ -1943,7 +2213,7 @@ $("#treeView").ejTreeView("checkAll");
 
 
 
-### checkNode(element)
+### checkNode(element)</span>
 {:#methods:checknode}
 
 
@@ -2051,7 +2321,7 @@ $("#treeView").ejTreeView("collapseAll");
 
 
 
-### collapseNode(element)
+### collapseNode(element)</span>
 {:#methods:collapsenode}
 
 
@@ -2113,7 +2383,7 @@ $("#treeView").ejTreeView("collapseNode", $("#book"));
 
 
 
-### disableNode(element)
+### disableNode(element)</span>
 {:#methods:disablenode}
 
 
@@ -2175,7 +2445,7 @@ $("#treeView").ejTreeView("disableNode", $("#book"));
 
 
 
-### enableNode(element)
+### enableNode(element)</span>
 {:#methods:enablenode}
 
 
@@ -2239,7 +2509,7 @@ $("#treeView").ejTreeView("enableNode", $("#book"));
 
 
 
-### ensureVisible(element)
+### ensureVisible(element)</span>
 {:#methods:ensurevisible}
 
 
@@ -2358,7 +2628,7 @@ $("#treeView").ejTreeView("expandAll");
 
 
 
-### expandNode(element)
+### expandNode(element)</span>
 {:#methods:expandnode}
 
 
@@ -2531,8 +2801,8 @@ $("#treeView").ejTreeView("getCheckedNodesIndex");
 
 
 
-### getCount()
-{:#methods:getcount}
+### getNodeCount()
+{:#methods:getNodeCount}
 
 
 
@@ -2571,17 +2841,17 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getCount(); // It will return the TreeView nodes count.
+treeObj.getNodeCount(); // It will return the TreeView nodes count.
 </script>{% endhighlight %}
 
 
 {% highlight html %} 
 <script>
-$("#treeView").ejTreeView("getCount");        
+$("#treeView").ejTreeView("getNodeCount");        
 </script>{% endhighlight %}
 
 
-
+N> "getCount" method name has been renamed as "getNodeCount" 
 
 
 
@@ -2701,7 +2971,7 @@ $("#treeView").ejTreeView("getExpandedNodesIndex");
 
 
 
-### getNodeByIndex(index)
+### getNodeByIndex(index)</span>
 {:#methods:getnodebyindex}
 
 
@@ -2774,7 +3044,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-### getNode(element)
+### getNode(element)</span>
 {:#methods:getnode}
 
 
@@ -2848,7 +3118,7 @@ $("#treeView").ejTreeView("getNode", $("#book"));
 
 
 
-### getNodeIndex(element)
+### getNodeIndex(element)</span>
 {:#methods:getnodeindex}
 
 
@@ -2922,7 +3192,7 @@ $("#treeView").ejTreeView("getNodeIndex", $("#book"));
 
 
 
-    ### getParent(element)
+### getParent(element)</span>
 {:#methods:getparent}
 
 
@@ -3110,7 +3380,7 @@ $("#treeView").ejTreeView("getSelectedNodeIndex");
 
 
 
-### getText(element)
+### getText(element)</span>
 {:#methods:gettext}
 
 
@@ -3301,7 +3571,7 @@ $("#treeView").ejTreeView("getVisibleNodes");
 
 
 
-### hasChildNode(element)
+### hasChildNode(element)</span>
 {:#methods:haschildnode}
 
 
@@ -3420,7 +3690,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-### hideNode(element)
+### hideNode(element)</span>
 {:#methods:hidenode}
 
 
@@ -3430,7 +3700,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-To hideNode particular node in TreeView.
+To hide particular node in TreeView.
 
 <table class="params">
 <thead>
@@ -3483,7 +3753,7 @@ $("#treeView").ejTreeView("hideNode", $("#book"));
 
 
 
-### insertAfter(newNodeText, target)
+### insertAfter(newNodeText, target)</span>
 {:#methods:insertafter}
 
 
@@ -3556,7 +3826,7 @@ treeObj.insertAfter(obj, $("#book"));
 
 
 
-### insertBefore(newNodeText, target)
+### insertBefore(newNodeText, target)</span>
 {:#methods:insertbefore}
 
 
@@ -3630,7 +3900,7 @@ treeObj.insertBefore(obj, $("#book"));
 
 
 
-### isNodeChecked(element)
+### isNodeChecked(element)</span>
 {:#methods:isnodechecked}
 
 
@@ -3704,7 +3974,7 @@ $("#treeView").ejTreeView("isNodeChecked", $("#book"));
 
 
 
-### isChildLoaded(element)
+### isChildLoaded(element)</span>
 {:#methods:ischildloaded}
 
 
@@ -3778,7 +4048,7 @@ $("#treeView").ejTreeView("isChildLoaded", $("#book"));
 
 
 
-### isDisabled(element)
+### isDisabled(element)</span>
 {:#methods:isdisabled}
 
 
@@ -3851,7 +4121,7 @@ $("#treeView").ejTreeView("isDisabled", $("#book"));
 
 
 
-### isExist(element)
+### isExist(element)</span>
 {:#methods:isexist}
 
 
@@ -3925,7 +4195,7 @@ $("#treeView").ejTreeView("isExist", $("#book"));
 
 
 
-### isExpanded(element)
+### isExpanded(element)</span>
 {:#methods:isexpanded}
 
 
@@ -3996,7 +4266,7 @@ $("#treeView").ejTreeView("isExpanded", $("#book"));
 
 
 
-### isSelected(element)
+### isSelected(element)</span>
 {:#methods:isselected}
 
 
@@ -4068,7 +4338,7 @@ $("#treeView").ejTreeView("isSelected", $("#book"));
 
 
 
-### isVisible(element)
+### isVisible(element)</span>
 {:#methods:isvisible}
 
 
@@ -4140,7 +4410,7 @@ $("#treeView").ejTreeView("isVisible", $("#book"));
 
 
 
-### loadData(newNodeText, target)
+### loadData(newNodeText, target)</span>
 {:#methods:loaddata}
 
 
@@ -4212,7 +4482,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-### moveNode(sourceNode, destionationNode, index)
+### moveNode(sourceNode, destionationNode, index)</span>
 {:#methods:movenode}
 
 
@@ -4382,7 +4652,7 @@ $("#treeView").ejTreeView("removeAll");
 
 
 
-### removeNode(element)
+### removeNode(element)</span>
 {:#methods:removenode}
 
 
@@ -4444,7 +4714,7 @@ $("#treeView").ejTreeView("removeNode", $("#book"));
 
 
 
-### selectNode(element)
+### selectNode(element)</span>
 {:#methods:selectnode}
 
 
@@ -4551,7 +4821,7 @@ $("#treeView").ejTreeView("show");
 
 
 
-### showNode(element)
+### showNode(element)</span>
 {:#methods:shownode}
 
 
@@ -4659,7 +4929,7 @@ $("#treeView").ejTreeView("unCheckAll");
 
 
 
-### uncheckNode(element)
+### uncheckNode(element)</span>
 {:#methods:unchecknode}
 
 
@@ -4722,7 +4992,7 @@ $("#treeView").ejTreeView("uncheckNode", $("#book"));
 
 
 
-### unselectNode(element)
+### unselectNode(element)</span>
 {:#methods:unselectnode}
 
 
@@ -4784,7 +5054,7 @@ $("#treeView").ejTreeView("unselectNode", $("#book"));
 
 
 
-### updateText(target, newText)
+### updateText(target, newText)</span>
 {:#methods:updatetext}
 
 
@@ -5000,6 +5270,30 @@ argument.value{% endhighlight %}</td>
 argument.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.isChildLoaded{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the child nodes are loaded or not</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parent id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.async{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the format asynchronous or synchronous </td>
 </tr>
 </tbody>
 </table>
@@ -5349,6 +5643,24 @@ argument.isChildLoaded{% endhighlight %}</td>
 argument.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parent id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.async{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the format asynchronous or synchronous </td>
 </tr>
 </tbody>
 </table>
@@ -6269,13 +6581,13 @@ argument.value{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 argument.id{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.parentId{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
@@ -6289,6 +6601,18 @@ argument.currentElement{% endhighlight %}</td>
 argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns true when the node checkbox is checked; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.currentNode{% endhighlight %}</td>
+<td class="type"><span class="param-type">Array of string</span></td>
+<td class="description">it returns the currently checked node name</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.currentCheckedNodes{% endhighlight %}</td>
+<td class="type"><span class="param-type">Array of object</span></td>
+<td class="description">it returns the currently checked and its child node details</td>
 </tr>
 </tbody>
 </table>
@@ -6368,11 +6692,18 @@ argument.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
+
 <tr>
 <td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the current element target</td>
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of current element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parentId of current element<</td>
 </tr>
 </tbody>
 </table>
@@ -6436,7 +6767,7 @@ argument.model{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 argument.id{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
@@ -6448,7 +6779,7 @@ argument.type{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 argument.parentId{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
@@ -6462,6 +6793,18 @@ argument.value{% endhighlight %}</td>
 argument.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.isChildLoaded{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the child nodes are loaded or not</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.async{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the format asynchronous or synchronous </td>
 </tr>
 </tbody>
 </table>
@@ -6730,13 +7073,13 @@ argument.targetElementData{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+argument.draggedElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the target node</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.parentElementData{% endhighlight %}</td>
+argument.draggedElementData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
@@ -6822,15 +7165,15 @@ argument.dragTarget{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.draggedElement{% endhighlight %}</td>
+argument.parentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the current dragging TreeView node</td>
+<td class="description">returns the current dragging parent TreeView node</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.draggedElementData{% endhighlight %}</td>
+argument.parentElementData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the current dragging TreeView node details</td>
+<td class="description">returns the current dragging parent TreeView node details</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -7233,21 +7576,9 @@ argument.model{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the id of the current element of the node clicked</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -7266,6 +7597,24 @@ argument.isChildLoaded{% endhighlight %}</td>
 argument.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentId{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parent id of currently clicked node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.async{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the format asynchronous or synchronous </td>
 </tr>
 </tbody>
 </table>
@@ -7553,6 +7902,18 @@ argument.currentElement{% endhighlight %}</td>
 argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns true when the node checkbox is checked; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.currentNode{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">it returns currently unchecked node name</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.currentUncheckedNodes{% endhighlight %}</td>
+<td class="type"><span class="param-type">Array of object</span></td>
+<td class="description">it returns currently unchecked node and its child node details.</td>
 </tr>
 </tbody>
 </table>

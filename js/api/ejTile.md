@@ -81,7 +81,7 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 
 
 
-Section for badge specific functionalities.
+Section for badge specific functionalities and it represents the notification for tile items.
 
 
 
@@ -417,7 +417,7 @@ $("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
 
 
 
-Specifies the tile caption in outside template content.
+Specifies the tile caption in outside of template content.
 
 
 
@@ -731,7 +731,7 @@ $("#tile").ejTile("option", "imageClass", "sample");
 
 
 
-Specifies the position of tile image.
+Specifies the position of tile image. See  <a href="global#enum:imageposition">imageposition</a>
 
 
 
@@ -792,7 +792,7 @@ $("#tile").ejTile("option", "imagePosition", "right");            {% endhighligh
 
 
 
-Specifies the tile image in outside template content.
+Specifies the tile image in outside of template content.
 
 
 
@@ -855,7 +855,7 @@ $("#tile").ejTile("option", "imageTemplateId", "sample");            {% endhighl
 
 
 
-Specifies the file name of tile image.
+Specifies the url of tile image.
 
 
 
@@ -1206,7 +1206,7 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 
 
 
-Specifies liveTile type for Tile. i.e flip, slide or carousel
+Specifies liveTile type for Tile. See  <a href="global#enum:livetiletype">orientation</a> 
 
 
 
@@ -1450,7 +1450,8 @@ $("#tile").ejTile("option", "text", "Settings");            {% endhighlight %}
 
 
 
-Aligns the text of a tile. i.e left, right or center.
+Aligns the text of a tile. See  <a href="global#enum:textalignment">textalignment</a> 
+ 
 
 
 
@@ -1511,7 +1512,7 @@ $("#tile").ejTile("option", "textAlignment", "left");            {% endhighlight
 
 
 
-Specifies the size of a tile. i.e small, medium, large or wide.
+Specifies the size of a tile.  See  <a href="global#enum:tilesize">tilesize</a>.
 
 
 
@@ -1640,7 +1641,7 @@ $("#tile").ejTile("option", "width", 300);            {% endhighlight %}
 
 
 
-Update the image template to another one.
+Update the image template of tile item to another one.
 
 
 
@@ -1735,8 +1736,14 @@ type{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 text{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current tile text</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the index of current tile item </td>
 </tr>
 </tbody>
 </table>
@@ -1830,6 +1837,12 @@ type{% endhighlight %}</td>
 text{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the current tile text</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the index of current tile item </td>
 </tr>
 </tbody>
 </table>
