@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Databinding in ListBox widget for Syncfusion Essential JS
-description: How to populate data in ListBox widget.
+title: Databinding
+description: databinding
 platform: js
 control: ListBox
 documentation: ug
-keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Databinding
@@ -45,39 +44,29 @@ The local data can be an array of JSON objects which is assigned for the ListBox
 
 Here the bikeName and bikeId fields are mapped with text and id properties of the field object respectively.
 
-{% highlight html %}
+{% highlight js %}
 
-
- <ul id="listbox"></ul>
-
-    <script type="text/javascript">
-        jQuery(function ($) {
-
-
-            bikeList = [
-                { bikeId: "bk1", bikeName: "Apache RTR" }, 
-                { bikeId: "bk2", bikeName: "CBR 150-R" }, 
+jQuery(function ($)
+        {
+            bikeList = [{ bikeId: "bk1", bikeName: "Apache RTR" },
+                { bikeId: "bk2", bikeName: "CBR 150-R" },
                 { bikeId: "bk3", bikeName: "CBZ Xtreme" },
-                { bikeId: "bk4", bikeName: "Discover" }, 
-                { bikeId: "bk5", bikeName: "Dazzler" }, 
+                { bikeId: "bk4", bikeName: "Discover" },
+                { bikeId: "bk5", bikeName: "Dazzler" },
                 { bikeId: "bk6", bikeName: "Flame" },
-                { bikeId: "bk7", bikeName: "Fazer" }, 
-                { bikeId: "bk8", bikeName: "FZ-S" }, 
+                { bikeId: "bk7", bikeName: "Fazer" },
+                { bikeId: "bk8", bikeName: "FZ-S" },
                 { bikeId: "bk9", bikeName: "Pulsar" },
-                { bikeId: "bk10", bikeName: "Shine" }, 
-                { bikeId: "bk11", bikeName: "R15" }, 
-                { bikeId: "bk12", bikeName: "Unicorn" }
-            ];
+                { bikeId: "bk10", bikeName: "Shine" },
+                { bikeId: "bk11", bikeName: "R15" },
+                { bikeId: "bk12", bikeName: "Unicorn" }];
+
             $("#listbox").ejListBox({
-                dataSource: bikeList,
-                fields: { 
-                     id: "bikeId", 
-                     text: "bikeName" 
-                }
+                dataSource:bikeList,
+                fields: { id: "bikeId", text: "bikeName" }
             });
         });
 
-    </script> 
 
 
 
@@ -85,7 +74,7 @@ Here the bikeName and bikeId fields are mapped with text and id properties of th
 
 
 
-![FieldSetting Listbox](databinding_images\local-data_img1.png)
+![FieldSetting Listbox](Databinding_images\Databinding_img1.png)
 
 ## Remote data
 
@@ -95,9 +84,11 @@ Here the bikeName and bikeId fields are mapped with text and id properties of th
 
 Here the CustomerID field is mapped with text property of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
 
-{% highlight js %}
+{% highlight html %}
 
-
+<ul id="listbox">
+</ul>
+    <script type="text/javascript">
         jQuery(function ($) {
             //create datamanager
             var dataManager = ej.DataManager({
@@ -105,24 +96,25 @@ Here the CustomerID field is mapped with text property of the field object. The 
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
             });
             // create query
-            var query = ej.Query()
-                   .from("Customers").take(10);
-
+            var query = ej.Query().from("Customers").take(10);
             $('#listbox').ejListBox({
                 dataSource: dataManager,
                 fields: { text: "CustomerID" },
                 query: query
             });
         });
-
+    </script>
 
 
 {% endhighlight %}
 
-![Alt text](Databinding_images\odata_img1.png)
 
+
+![Alt text](Databinding_images\Databinding_img2.png)
 
 ### WebAPI
+
+
 
 [ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
@@ -152,21 +144,21 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
+N> _In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API._
 
  {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
-![WebApi Listbox ](Databinding_images\webapi_img1.png)
+![Alt text](Databinding_images\Databinding_img3.png)
 
 ### Virtual Scrolling
 
- The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using “allowVirtualScrolling” property. There are two ways to load data based on the scrolling type.
+ The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using `allowVirtualScrolling` property. There are two ways to load data based on the scrolling type.
 
 1. Normal scrolling
 
 2. Continuous Scrolling
 
-The scrolling type can be defined via “virtualScrollMode” property.
+The scrolling type can be defined via `virtualScrollMode` property.
 
 #### **Normal Scrolling**
 
@@ -200,11 +192,11 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
 
-N> By default, the value of “virtualScrollMode” property is normal.
+N> _By default, the value of “virtualScrollMode” property is normal._
 
-{% include image.html url="Databinding_images\normal-scrolling_img1.png" Caption="Before scrolling"%}
+![Alt text](Databinding_images\Databinding_img4.png)
 
-{% include image.html url="Databinding_images\normal-scrolling_img2.png" Caption="Virtual scrolling (normal)"%}
+![Alt text](Databinding_images\Databinding_img5.png)
 
 
 #### **Continuous Scrolling**
@@ -243,11 +235,16 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
 
-N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
+N> _The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”._
 
-{% include image.html url="Databinding_images\continuous-scrolling_img1.png" Caption="Before scrolling"%}
+![Alt text](Databinding_images\Databinding_img6.png)
 
-{% include image.html url="Databinding_images\continuous-scrolling_img2.png" Caption="Virtual scrolling (continuous)"%}
+![Alt text](Databinding_images\Databinding_img7.png)
+
+
+
+
+
 
 
 
@@ -290,7 +287,7 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
 
 
-![Alt text](Databinding_images\handling-errors_img1.png)
+![Alt text](Databinding_images\Databinding_img8.png)
 
 
 

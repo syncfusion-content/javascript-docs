@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Getting Started with ListBox widget for Syncfusion Essential JS
-description: How to create ListBox widget with the step-by-step instructions.
+title: Getting-Started
+description: getting started
 platform: js
 control: ListBox
 documentation: ug
-keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Getting Started
@@ -20,9 +19,9 @@ Create a new HTML file and include the below code
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title></title>
 </head>
 <body>
@@ -39,11 +38,9 @@ Add link to the CSS file from the specific [theme](http://help.syncfusion.com/js
 
 {% highlight html %}
 
-<head>
     <meta charset="utf-8" />
     <title>Getting Started - ListBox </title>
     <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-</head>
 
 
 {% endhighlight %}
@@ -55,25 +52,30 @@ Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with depe
 {% highlight html %}
 
 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
 
 
 {% endhighlight %}
 
-{% seealso %} [Custom Script Generator](http://help.syncfusion.com/js/include-only-the-needed-widgets) {% endseealso %}
+### See Also
 
- N> To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
+[Custom Script Generator](http://help.syncfusion.com/js/include-only-the-needed-widgets)
+
+
+ N> To reduce the file size further please use  [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
 
 ## Create ListBox
 
-Create UL and LI elements and add in the &lt;body&gt; tag as below.
+Create UL and LI elements and add in the &lt;body&gt; tag.
 
+Initialize the ListBox widget as below.
+
+{% tabs %}
 {% highlight html %}
-
 
                <div>
                     <ul id="listbox">
@@ -95,10 +97,6 @@ Create UL and LI elements and add in the &lt;body&gt; tag as below.
 
 {% endhighlight %}
 
-
-
-Initialize the ListBox widget as below.
-
 {% highlight js %}
 
 
@@ -109,24 +107,25 @@ Initialize the ListBox widget as below.
 
 
 {% endhighlight %}
+{% endtabs %}
 
 
-
-![Alt text](Getting-Started_Images\getting-started_img1.png)
+![Alt text](Getting-Started_images\Getting-Started_img1.png)
 
 ## Databinding
 
 We can populate data in the ListBox widget using “datasource” and “fields” properties. 
 
-{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding) {% endseealso %}
+{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 {% highlight html %}
 
 
-<ul id="listbox"></ul>
+ <ul id="listbox"></ul>
 
-<script type="text/javascript">
+    <script type="text/javascript">
         jQuery(function ($) {
+
 
             bikeList = [
                 { bikeId: "bk1", bikeName: "Apache RTR" }, 
@@ -142,7 +141,6 @@ We can populate data in the ListBox widget using “datasource” and “fields�
                 { bikeId: "bk11", bikeName: "R15" }, 
                 { bikeId: "bk12", bikeName: "Unicorn" }
             ];
-            
             $("#listbox").ejListBox({
                 dataSource: bikeList,
                 fields: { 
@@ -152,13 +150,13 @@ We can populate data in the ListBox widget using “datasource” and “fields�
             });
         });
 
-</script> 
+    </script> 
 
 
 
 {% endhighlight %}
 
-![Databinding Listbox](Getting-Started_Images\getting-started_img2.png)
+![Databinding Listbox](Getting-Started_images\Getting-Started_img2.png)
 
 ## Selection
 
@@ -186,5 +184,5 @@ The ListBox widget supports item selection.
 
 
 
-![Selection Listbox](Getting-Started_Images\getting-started_img3.png)
+![Selection Listbox](Getting-Started_images\Getting-Started_img3.png)
 

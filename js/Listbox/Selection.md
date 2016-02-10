@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Selection in ListBox widget for Syncfusion Essential JS
-description: How to achieve Selection and MultiSelection
+title: Selection
+description: selection
 platform: js
 control: ListBox
 documentation: ug
-keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Selection
@@ -16,6 +15,28 @@ The ListBox widget allows you to highlight the selected item. It allows multiple
 ## Selection on initialize
 
 By default, the ListBox widget allows single item selection. We can select specific item during initialization of the ListBox widget using the “selectedIndex” API. 
+
+{% tabs %}
+{% highlight html %}
+
+<div>
+        <ul id="listbox">
+            <li>Audi A4</li>
+            <li>Audi A5</li>
+            <li>Audi A6</li>
+            <li>Audi A7</li>
+            <li>Audi A8</li>
+            <li>BMW 501</li>
+            <li>BMW 502</li>
+            <li>BMW 503</li>
+            <li>Batch</li>
+            <li>BMW 507</li>
+            <li>BMW 3200</li>
+            <li>Cut</li>
+        </ul>
+    </div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
@@ -30,15 +51,16 @@ By default, the ListBox widget allows single item selection. We can select speci
 
 
 
-
 {% endhighlight %}
+{% endtabs %}
 
+![](Selection_images\Selection_img1.png)
 
 ## Multiple selection
 
 Multiple selection can be enabled using “allowMultiSelection” property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
-{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction) {% endseealso %}
+{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction). {% endseealso %}
 
 {% highlight js %}
 
@@ -55,8 +77,7 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 {% endhighlight %}
 
-![MultiSelect Listbox](Selection_Images\multipleselection_img1.png)
-
+![](Selection_images\Selection_img2.png)
 
 ## Checkbox
 
@@ -64,7 +85,7 @@ The ListBox widget allows selection through checkbox. It can be enabled using �
 
 The specified items can be checked on initialize through “checkedIndices” property. 
 
-{% seealso %} [Checked Indices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
+{% seealso %} [checkedIndices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
 
 {% highlight js %}
 
@@ -84,4 +105,4 @@ The specified items can be checked on initialize through “checkedIndices” pr
 
 
 
-![Checked Listbox](Selection_Images\checkbox_img1.png)
+![](Selection_images\Selection_img3.png)
