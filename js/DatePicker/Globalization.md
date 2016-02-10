@@ -82,14 +82,19 @@ By default DatePicker input has **“select date”** as watermark text, you can
 
 Based on culture specific, only date gets localized but by changing the watermark and button text, you can completely localize the DatePicker UI too.
 
-Refer below code example to update those value based some culture say for example German.
+Refer below code example to update those value based some culture say for example English and German.
 
 {% highlight js %}
 
-ej.DatePicker.Locale['de-DE'] = {
-    watermarkText: "Zeitraum auswählen",
-    buttonText: 'Heute'
-};
+    ej.DatePicker.Locale['en-US'] = {
+        watermarkText: "Select date",
+        buttonText: 'Today'
+    };
+
+    ej.DatePicker.Locale['de-DE'] = {
+        watermarkText: "Zeitraum auswählen",
+        buttonText: 'Heute'
+    };
 
 {% endhighlight %}
 
