@@ -8,26 +8,33 @@ documentation: ug
 ---
 # Globalization
 
-DatePicker has been provided with inbuilt localization support, so that it will be able adapt based on culture specific locale defined for it. DatePicker supports this localization with help of [jQuery.globalize.js](http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js) library. So you have to refer this library and the culture specific file in page in order to localize (mandatory). 
+DatePicker has been provided with inbuilt localization support, so that it will be able adapt based on culture specific locale defined for it. 
 
-More than 350 culture specific files are available to localize the date. To know more about **‘jQuery.globalize.js’** plugin, please refer the below link [https://github.com/jquery/globalize](https://github.com/jquery/globalize#). 
+More than 350 culture specific files are available to localize the date. To know more about EJ globalize support, please refer the below link      
+ [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
 
 N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
 <table>
 <tr>
 <td>
-(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified<br/><br/>For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, <br/><br/>C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified</td></tr>
+
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+
+    For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+
+</td></tr>
 </table>
-To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the globalize.culture.de-DE.min.js file in your application, after the reference of **jquery.globalize.min.js** file.
+To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the ej.culture.de-DE.min.js file in your application,
 
-The **‘en-US’** locale is currently being used as default culture in DatePicker. You can set any other culture to DatePicker by using [locale](http://help.syncfusion.com/js/api/ejdatepicker#members:locale) property. Below code example shows German cultured DatePicker.
+The **en-US** locale is currently being used as default culture in DatePicker. You can set any other culture to DatePicker by using **Locale** property. Below code example shows German cultured DatePicker.
 
-Refer the below German culture file in head section of html page after the reference of **‘jQuery.globalize.js’** file.
+Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
 
  {% highlight js %}
    
-           <script src="http://cdn.syncfusion.com/js/assets/external/cultures/globalize.culture.de-DE.min.js"></script>
+           <script src="http://cdn.syncfusion.com/js/assets/scripts/cultures/ej.culture.de-DE.min.js"></script>
                 
  {% endhighlight %}
 
