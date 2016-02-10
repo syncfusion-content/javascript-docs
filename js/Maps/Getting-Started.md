@@ -475,5 +475,3 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 ![](/js/Maps/Getting-Started_images/Getting-Started_img6.png)
 
-The complete code sample can be found [here](http://www.syncfusion.com/uploads/user/directTrac/General/Getting_Started1888184355.zip).
-
