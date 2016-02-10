@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Grouping in ListBox widget for Syncfusion Essential JS
-description: ListBox items can be grouped by providing a heading (header) for each set of items.
+title: Grouping
+description: grouping
 platform: js
 control: ListBox
 documentation: ug
-keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Grouping
@@ -21,6 +20,7 @@ ListBox items can be grouped by providing a heading (header) for each set of ite
 
 The header for each group can be defined using the “span” element”. 
 
+{% tabs %}
 {% highlight html %}
 
 
@@ -52,17 +52,18 @@ The header for each group can be defined using the “span” element”.
 
 {% highlight js %}
 
-jQuery(function($) {
 
-    $("#listbox").ejListBox();
+        jQuery(function ($) {
+           $("#listbox").ejListBox();
+        });
 
-});
+
 
 {% endhighlight %}
+{% endtabs %}
 
 
-
-![Alt text](Grouping_Images\using-span-tag_img1.png)
+![Alt text](Grouping_images\Grouping_img1.png)
 
 ## Databinding
 
@@ -74,32 +75,27 @@ The grouping will be defined based on the “groupBy” API in fields object.
 
 {% highlight html %}
 
-    <ul id="listbox"></ul>
-
+<ul id="listbox"></ul>
     <script type="text/javascript">
         jQuery(function ($) {
             //datasource for listbox
             //Here the category column is used to define the grouping
-            var skillSet = [
-            { skill: "Bahrain", category: "B" },
-            { skill: "Brazil", category: "B" },
-            { skill: "Argentina", category: "A" },
-            { skill: "Bangladesh", category: "B" },
-            { skill: "Burma", category: "B" },
-            { skill: "Afghanistan", category: "A" },
-            { skill: "Antigua and Barbuda", category: "A" },
-            { skill: "Barbados", category: "B" },
-            { skill: "Botswana", category: "B" },
-            { skill: "Albania", category: "A" },
-            { skill: "Andorra", category: "A" },
-            { skill: "Belarus", category: "B" },
-            { skill: "Bolivia", category: "B" },
-            { skill: "Algeria", category: "A" },
-            { skill: "Angola", category: "A" }
-            ];
-
-
-
+            var skillSet = [{ skill: "Bahrain", category: "B" },
+                { skill: "Brazil", category: "B" },
+                { skill: "Argentina", category: "A" },
+                { skill: "Bangladesh", category: "B" },
+                { skill: "Burma", category: "B" },
+                { skill: "Afghanistan", category: "A" },
+                { skill: "Antigua and Barbuda", category: "A" },
+                { skill: "Barbados", category: "B" },
+                { skill: "Botswana", category: "B" },
+                { skill: "Albania", category: "A" },
+                { skill: "Andorra", category: "A" },
+                { skill: "Belarus", category: "B" },
+                { skill: "Bolivia", category: "B" },
+                { skill: "Algeria", category: "A" },
+                { skill: "Angola", category: "A" }];
+                
             $("#listbox").ejListBox({
                 dataSource: skillSet,
                 fields: {
@@ -109,13 +105,13 @@ The grouping will be defined based on the “groupBy” API in fields object.
                 },
             });
         });
-
     </script>
+
 
 
 {% endhighlight %}
 
 
 
-![DataBinding Listbox](Grouping_Images\databinding_img1.png)
+![](Grouping_images\Grouping_img2.png)
 
