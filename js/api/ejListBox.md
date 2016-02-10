@@ -1083,7 +1083,7 @@ Example
  {% endhighlight %}
  
  
- ### targetID <span class="type-signature type string">string</span>
+### targetID <span class="type-signature type string">string</span>
 {:#members:targetid}
 
 Specifies the targetID for the listbox items.
