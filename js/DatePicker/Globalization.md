@@ -34,7 +34,7 @@ Refer the below German culture file in head section of html page after the refer
 
  {% highlight js %}
    
-           <script src="http://cdn.syncfusion.com/js/assets/scripts/cultures/ej.culture.de-DE.min.js"></script>
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.de-DE.min.js"></script>
                 
  {% endhighlight %}
 
@@ -82,31 +82,14 @@ By default DatePicker input has **“select date”** as watermark text, you can
 
 Based on culture specific, only date gets localized but by changing the watermark and button text, you can completely localize the DatePicker UI too.
 
-Refer below code example to update those value based some culture say for example English and German.
+Refer below code example to update those value based some culture say for example German.
 
 {% highlight js %}
 
-        //create instance for datePicker.
-
-        // only after control creation we can get dateObj otherwise it throws exception.
-
-        var dateObj = $("#datePicker").ejDatePicker('instance');
-
-        //condition to check English culture and change watermark and button text using dateObj.
-
-        if (Globalize.cultureSelector == "en-US") {
-
-            dateObj.option({ buttonText: "Today", watermarkText: "select date" })
-
-        }
-
-        //condition to check German culture and change watermark and button text using dateObj.
-
-        if (Globalize.cultureSelector == "de-DE") {
-
-            dateObj.option({ buttonText: "heute", watermarkText: "Datum auswählen" })
-
-        }
+ej.DatePicker.Locale['de-DE'] = {
+    watermarkText: "Zeitraum auswählen",
+    buttonText: 'Heute'
+};
 
 {% endhighlight %}
 
