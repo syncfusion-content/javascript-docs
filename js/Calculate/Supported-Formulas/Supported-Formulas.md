@@ -8,10 +8,7 @@ documentation: ug
 ---
 
 # Supported Formulas
-
-(Formula names will be added in alphabetical order in the first page. Each formulas will be represented as links. These links will be redirected to its explanation page.)
-
-The following formulas are supported in Essential calculate,
+The following are the list of formulas supported in Calculate library,
 
 [ABS](/js/calculate/supported-formulas/math-trigonometry#abs)
 
@@ -165,11 +162,11 @@ The following formulas are supported in Essential calculate,
 
 [FORMULATEXT](/js/calculate/supported-formulas/lookup-and-reference#formulatext)
 
-[GAMMA.INV](/js/calculate/supported-formulas/statistica#gammainv)
+[GAMMA.INV](/js/calculate/supported-formulas/statistical#gammainv)
 
-[GAMMALN](/js/calculate/supported-formulas/statistica#gammaln)
+[GAMMALN](/js/calculate/supported-formulas/statistical#gammaln)
 
-[GAMMALN.PRECISE](/js/calculate/supported-formulas/statistica#gammalnprecise)
+[GAMMALN.PRECISE](/js/calculate/supported-formulas/statistical#gammalnprecise)
 
 [GEOMEAN](/js/calculate/supported-formulas/statistical#geomean)
 
@@ -299,7 +296,7 @@ The following formulas are supported in Essential calculate,
 
 [PERCENTRANK.INC](/js/calculate/supported-formulas/statistical#percentrankinc)
 
-[PERMUT](/js/calculate/supported-formulasstatistical#permut)
+[PERMUT](/js/calculate/supported-formulas/statistical#permut)
 
 [PERMUTATIONA](/js/calculate/supported-formulas/statistical#permutationa)
 
