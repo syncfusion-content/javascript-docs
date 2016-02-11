@@ -60,6 +60,8 @@ $("#datetime").ejDateTimePicker();
 
 
 
+
+
 #### Requires
 
 
@@ -71,13 +73,13 @@ $("#datetime").ejDateTimePicker();
 * module:jquery.easing.1.3.js
 
 
-* module:jquery.globalize.js
-
-
-* module:globalize.cultures.min.js
-
-
 * module:ej.core.js
+
+
+* module:ej.globalize.js
+
+
+* module:ej.cultures.en-US.min.js
 
 
 * module:ej.datetimepicker.js
@@ -94,7 +96,11 @@ $("#datetime").ejDateTimePicker();
 
 
 
+
 ## Members
+
+
+
 
 
 ### buttonText `JSONobject`
@@ -102,7 +108,14 @@ $("#datetime").ejDateTimePicker();
 
 
 
+
+
+
 Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
+
+
+
+
 
 
 #### Default Value
@@ -678,7 +691,7 @@ Sets the DateTimePicker direction as right to left alignment.
 
 
 
-When enableStrictMode true it allows the value outside of the range also, otherwise it internally changed to the correct value.
+When enableStrictMode true it allows the value outside of the range also but it highlights the textbox with error class, otherwise it internally changed to the correct value. 
 
 
 
@@ -978,7 +991,7 @@ Defines the localization culture for DateTimePicker.
 
 
 
-Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element.
+Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element when we set true to enableStrictMode.
 
 
 
@@ -1062,6 +1075,52 @@ Sets the minimum value to the DateTimePicker. Behind the minimum value an error 
         $("#datetime").ejDateTimePicker({  minDateTime: new Date("5/5/2010 12:00:00 AM") });
 </script>{% endhighlight %}
 
+
+
+
+
+
+
+### popupPosition `string`  `enum`
+{:#members:popupposition}
+
+
+
+
+
+
+
+
+ Specifies the popup position of DateTimePicker.
+ 
+ 
+ 
+ 
+ 
+ 
+#### Default value
+
+
+
+
+
+* ej.DateTimePicker.Bottom
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set popupPosition API during initialization  
+        $("#datetime").ejDateTimePicker({  popupPosition: "bottom" });
+</script>{% endhighlight %}
 
 
 
@@ -1321,13 +1380,6 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 ### startLevel `string`  `enum`
 {:#members:startlevel}
 
-
-
-
-
-
-
-
 Specifies the start level view in datepicker inside the DateTimePicker popup. See DatePicker.Level
 
 
@@ -1461,6 +1513,178 @@ Defines the time format displayed in the time dropdown inside the DateTimePicker
 //To set timeDisplayFormat API during initialization  
         $("#datetime").ejDateTimePicker({  timeDisplayFormat: "HH:mm" });
 </script> {% endhighlight %}
+
+
+
+
+
+
+
+### timeDrillDown `JSONobject`
+{:#members:timedrilldown}
+
+
+
+We can drill down up to time interval on selected date with meridian details.
+
+
+#### Default Value
+
+
+
+* { enabled: false, interval: 5, showMeridian: false, autoClose: true }
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set timeDrillDown API during initialization  
+        $("#datetime").ejDateTimePicker({  timeDrillDown: { enabled: true } });
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### timeDrillDwon.enabled `boolean`
+{:#members:timedrilldown-enabled}
+
+
+
+
+
+
+
+
+This is the field to show/hide the timeDrillDown in DateTimePicker.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set timeDrillDown API during initialization  
+        $("#datetime").ejDateTimePicker({ timeDrillDown: { enabled: true }});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+###  timeDrillDown.interval `number`
+{:#members:timedrilldown-interval}
+
+
+
+
+
+
+
+
+Sets the interval time of minutes on selected date.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set timeDrillDown API during initialization  
+        $("#datetime").ejDateTimePicker({ timeDrillDown: { interval: 10 }});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### timeDrillDown.showMeridian `boolean`
+{:#members:timedrilldown-showmeridian}
+
+
+
+
+
+
+
+
+Allows the user to show or hide the meridian with time in DateTimePicker.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set timeDrillDown API during initialization  
+        $("#datetime").ejDateTimePicker({ timeDrillDown: { showMeridian: true }});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### timeDrillDown.autoClose `boolean`
+{:#members:timedrilldown-autoclose}
+
+
+
+
+
+
+
+
+After choosing the time, the popup will close automatically if we set it as true, otherwise we focusout the datetimepicker or choose timeNow button for closing the popup.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set buttonText API during initialization  
+        $("#datetime").ejDateTimePicker({ timeDrillDown: { autoClose: true }});
+</script>{% endhighlight %}
+
 
 
 
@@ -2081,6 +2305,12 @@ argument.value{% endhighlight %}</td>
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected date time value</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.isInteraction{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns true if change event triggered by interaction, otherwise returns false</td>
 </tr>
 </tbody>
 </table>
