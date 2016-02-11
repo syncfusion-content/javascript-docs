@@ -3300,6 +3300,34 @@ $("#Grid").ejGrid({
 </script>                 
 {% endhighlight %}
 
+### showInColumnChooser `Boolean`
+{:#members:showInColumnChooser}
+Gets or sets a value that indicates whether to enable column in chooser  menu of grid. On enabling feature able to show/hide grid columns in column chooser menu.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+            
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    showColumnChooser:true,
+	columns: [
+                        { field: "OrderID", showInColumnChooser:false,headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right},
+                        { field: "CustomerID", headerText: "Customer ID", width: 80, visible: false },
+                        { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                        { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right }
+                ]
+});
+</script>                 
+{% endhighlight %}
+
 ### showStackedHeader `Boolean`
 {:#members:showstackedheader}
 
