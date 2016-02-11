@@ -3302,7 +3302,7 @@ $("#Grid").ejGrid({
 
 ### showInColumnChooser `Boolean`
 {:#members:showInColumnChooser}
-Gets or sets a value that indicates whether to enable column in chooser  menu of grid. On enabling feature able to show/hide grid columns in column chooser menu.
+Gets or sets a value that indicates whether to show column in column chooser.
 
 #### Default Value:
 {:.param}
