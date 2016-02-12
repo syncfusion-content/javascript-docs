@@ -11,8 +11,9 @@ keywords: application tab,ribbon application tab
 
 The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by [`type`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-type) property with the following:
 
-* menu
-* backstage
+*  menu
+*  backstage
+
 
 ## Application Menu
 
