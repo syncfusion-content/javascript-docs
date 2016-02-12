@@ -3672,12 +3672,12 @@ To customize the tooltip display based on your requirements.
 {% endhighlight %}
 
 ### timeScale 'object'
-{:#members:timeScale}
+{:#members:timescale}
 
 Holds all the options related to the time scale of Scheduler. The timeslots either major or minor slots can be customized with this property.
 
 ### timeScale.enable `boolean`
-{:#members:timeScale-enable}
+{:#members:timescale-enable}
 
 When set to true, displays the timescale on the Scheduler.
 
@@ -3718,7 +3718,7 @@ When set to true, displays the timescale on the Scheduler.
 
 ### timeScale.minorSlotCount `int`
 
-{:#members:timeScale-minorSlotCount }
+{:#members:timescale-minorslotcount }
 
 When set with some specific value, defines the number of time divisions split per hour(as per value given for the majorTimeSlot). Those time divisions are meant to be the minor slots. 
 
@@ -3728,7 +3728,7 @@ When set with some specific value, defines the number of time divisions split pe
 
 ### timeScale.majorSlot `int`
 
-{:#members:timeScale-majorSlot }
+{:#members:timescale-majorslot }
 
 Accepts the value in minutes. When provided with specific value, displays the appropriate time interval on the Scheduler
 
@@ -3771,7 +3771,7 @@ Accepts the value in minutes. When provided with specific value, displays the ap
 {% endhighlight %}
 
 ### timeScale.minorSlotTemplateId `string`
-{:#members:timeScale-minorSlotTemplateId }
+{:#members:timescale-minorslottemplateid }
 
 Accepts id value of the template defined for minor time slots
 
@@ -3780,7 +3780,7 @@ Accepts id value of the template defined for minor time slots
 * null
 
 ### timeScale.majorSlotTemplateId `string`
-{:#members:timeScale-majorSlotTemplateId }
+{:#members:timescale-majorslottemplateid }
 
 Accepts id value of the template defined for major time slots.
 
@@ -3842,7 +3842,7 @@ Accepts id value of the template defined for major time slots.
 {% endhighlight %}
 
 ### showDeleteConfirmationDialog `boolean`
-{:#members:showDeleteConfirmationDialog}
+{:#members:showdeleteconfirmationdialog}
 
 When set to true, shows the delete confirmation dialog before deleting an appointment.
 
@@ -3876,7 +3876,7 @@ When set to true, shows the delete confirmation dialog before deleting an appoin
 {% endhighlight %}
 
 ### allDayCellsTemplateId  `string`
-{:#members:allDayCellsTemplateId}
+{:#members:alldaycellstemplateid}
 
 Accepts the id value of the template layout defined for the all-day cells.
 
@@ -3908,7 +3908,7 @@ Accepts the id value of the template layout defined for the all-day cells.
 {% endhighlight %}
 
 ### workCellsTemplateId  `string`
-{:#members:workCellsTemplateId}
+{:#members:workcellstemplateid}
 
 Accepts the id value of the template layout defined for the work cells and month cells.
 
@@ -3940,7 +3940,7 @@ Accepts the id value of the template layout defined for the work cells and month
 {% endhighlight %}
 
 ### dateHeaderTemplateId  `string`
-{:#members:dateHeaderTemplateId}
+{:#members:dateheadertemplateid}
 
 Accepts the id value of the template layout defined for the date header cells.
 
@@ -3972,7 +3972,7 @@ Accepts the id value of the template layout defined for the date header cells.
 {% endhighlight %}
 
 ### showOverflowButton  `boolean`
-{:#members:showOverflowButton}
+{:#members:showoverflowbutton}
 
 when set to false, allows the height of the work-cells to adjust automatically based on the number of appointment count it has. 
 
@@ -4011,7 +4011,7 @@ when set to false, allows the height of the work-cells to adjust automatically b
 
 
 ### appointmentDragArea `string`
-{:#members:appointmentDragArea}
+{:#members:appointmentdragarea}
 
 Allows setting draggable area for the Scheduler appointments. Also, turns on the external drag and drop, when set with some specific external drag area name.
 
@@ -7019,7 +7019,7 @@ $("#Schedule").ejSchedule({
 
 
 ### overflowButtonClick
-{:#events:overflowButtonClick}
+{:#events:overflowbuttonclick}
 
 Triggers when the overflow button is clicked.
 
@@ -7076,7 +7076,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### overflowButtonHover
-{:#events:overflowButtonHover}
+{:#events:overflowbuttonhover}
 
 Triggers while mouse hovering on the overflow button.
 
@@ -7134,7 +7134,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### keyDown
-{:#events:keyDown}
+{:#events:keydown}
 
 Triggers when any of the keyboard keys are pressed.
 
@@ -7189,7 +7189,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### appointmentCreated
-{:#events:appointmentCreated}
+{:#events:appointmentcreated}
 
 Triggers after the appointment is saved.
 
@@ -7243,7 +7243,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### appointmentChanged
-{:#events:appointmentChanged}
+{:#events:appointmentchanged}
 
 
 Triggers after the appointment is edited.
@@ -7331,7 +7331,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### appointmentRemoved
-{:#events:appointmentRemoved}
+{:#events:appointmentremoved}
 
 
 Triggers after the appointment is deleted.
