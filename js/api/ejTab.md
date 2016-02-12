@@ -86,14 +86,6 @@ $("#tab").ejTab({width:"300px"});
 Specifies the ajaxSettings option to load the content to the Tab control.
 
 
-#### Default Value
-
-
-
-
-* null
-
-
 
 
 #### Example
@@ -115,7 +107,9 @@ It was originally implemented as part of web browsers so that client-side script
 <script type="text/javascript">         
 //To set enableAnimation API value during initialization  
   $("#tab").ejTab({ ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -129,7 +123,12 @@ It was originally implemented as part of web browsers so that client-side script
 It specifies, whether to enable or disable asynchronous request.
 
 
+#### Default Value
 
+
+
+
+* true
 
 
 
@@ -144,6 +143,14 @@ It specifies the page will be cached in the web browser.
 
 
 
+#### Default Value
+
+
+
+
+* false
+
+
 
 
 ### ajaxSettings.contentType `string`
@@ -156,6 +163,12 @@ It specifies the type of data is send in the query string.
 
 
 
+#### Default Value
+
+
+
+
+* "html"
 
 
 
@@ -169,6 +182,12 @@ It specifies the data as an object, will be passed in the query string.
 
 
 
+#### Default Value
+
+
+
+
+* {}
 
 
 
@@ -182,7 +201,12 @@ It specifies the type of data that you're expecting back from the response.
 
 
 
+#### Default Value
 
+
+
+
+* "html"
 
 
 ### ajaxSettings.type `string`
@@ -195,7 +219,12 @@ It specifies the HTTP request type.
 
 
 
+#### Default Value
 
+
+
+
+* "get"
 
 
 ### allowKeyboardNavigation `boolean`
@@ -581,7 +610,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-Display Right to Left direction for headers and panels text.
+Display Right to Left direction for headers and panels text of tab.
 
 
 #### Default Value
@@ -722,7 +751,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-Tab header display top,bottom,left or right .See <a href="global.html#Position">Position</a>
+Specifies the position of Tab header as top, bottom, left or right .See <a href="global.html#Position">Position</a>
 
 
 #### Default Value
@@ -904,13 +933,146 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
+
+
+### hiddenItemIndex `array`
+{:#members:hiddenItemIndex}
+
+
+
+
+
+
+
+
+Specifies to hide a pane of Tab control.
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* []
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div> 
+<script type="text/javascript">         
+// Set the hiddenItemIndex  during initialization.                     
+        $("#tab").ejTab({width:"300px", hiddenItemIndex: [0,1] }); 
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
+### htmlAttributes `object`
+{:#members:htmlAttributes}
+
+
+
+
+
+
+
+
+Specifies the HTML Attributes of the Tab.
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* {}
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div> 
+<script type="text/javascript">         
+// Set the htmlAttributes  during initialization.                     
+        $("#tab").ejTab({width:"300px", htmlAttributes: {class:"my-class"} }); 
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
+
+
+
 ### idPrefix `string`
 {:#members:idprefix}
 
 
 
 
-The idPrefix property appends the give string on runtime added tab item id&rsquo;s.
+The idPrefix property appends the given string on the added tab item id&rsquo;s in runtime.
 
 
 #### Default Value
@@ -957,7 +1119,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-Tab header to active for given index value.
+Specifies the Tab header in active for given index value.
 
 
 #### Default Value
@@ -1004,7 +1166,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-Display the close button for each tab items. While click on the close icon particular tab item removed.
+Display the close button for each tab items. While clicking on the close icon, particular tab item will be removed.
 
 
 #### Default Value
@@ -1098,7 +1260,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-Tab panels and headers to display the rounded corner style.
+Tab panels and headers to be displayed in rounded corner style.
 
 
 #### Default Value
@@ -1190,7 +1352,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 
-### addItem(url, displayLabel, index)</span>
+### addItem(url, displayLabel, index, cssClass, id)
 {:#methods:additem}
 
 
@@ -1225,6 +1387,18 @@ index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index position to placed , this is optional.</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+cssClass{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">specifies cssClass, this is optional.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">specifies id of tab, this is optional.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1256,7 +1430,7 @@ It was originally implemented as part of web browsers so that client-side script
 $("#tab").ejTab({width:"400px"});
         var tabObj = $("#tab").data("ejTab");
         // Add new tab items with given list
-        tabObj.addItem("#new","New Item",3);
+        tabObj.addItem("#new", "New Item", 3, "myClass", "newItem");
 </script>  {% endhighlight %}
 
 
@@ -1538,7 +1712,93 @@ $("#tab").ejTab("hide");
 
 
 
-### removeItem(index)</span>
+
+
+
+### hideItem(index)
+{:#methods:hideItem}
+
+
+
+
+This function hides the specified item tab in tab control.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">index of tab item.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">   
+$("#tab").ejTab({width:"300px"});      
+//initialize the tab object
+        var tabObj = $("#tab").data("ejTab");
+        // To hide the tab item..
+        tabObj.hideItem(1);
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">   
+$("#tab").ejTab({width:"300px"});      
+$("#tab").ejTab("hideItem", 1); 
+</script>  {% endhighlight %}
+
+
+
+
+
+
+### removeItem(index)
 {:#methods:removeitem}
 
 
@@ -1680,6 +1940,91 @@ $("#tab").ejTab("show");
 
 
 
+
+
+### showItem(index)
+{:#methods:showItem}
+
+
+
+
+This function helps to show the specified hidden tab item in tab control.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">index of tab item.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript"> 
+$("#tab").ejTab({width:"300px"});        
+//initialize the tab object
+        var tabObj = $("#tab").data("ejTab");
+        // To show the specified item.
+        tabObj.showItem(1);
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
+It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">    
+$("#tab").ejTab({width:"300px"});     
+$("#tab").ejTab("showItem", 1); 
+</script>  {% endhighlight %}
+
+
+
 ## Events
 
 
@@ -1758,6 +2103,12 @@ activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current active index.</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+isInteraction{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns, is it triggered by interaction or not.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -1802,7 +2153,7 @@ width: "300px",
 
 
 
-Triggered before ajax content load action.
+Triggered before ajax content has been loaded.
 
 <table class="params">
 <thead>
@@ -1868,6 +2219,18 @@ activeHeader{% endhighlight %}</td>
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current active index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+url{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the url of ajax request</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+isInteraction{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns, is it triggered by interaction or not.</td>
 </tr>
 </tbody>
 </table>
@@ -1913,7 +2276,7 @@ width:"300px",
 
 
 
-Triggered after a tab item activated.
+Triggered if error occurs in Ajax request.
 
 <table class="params">
 <thead>
@@ -1958,27 +2321,15 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-prevActiveHeader{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns previous active tab header.</td>
+<td class="description">returns ajax data details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-prevActiveIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns previous active index.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-activeHeader{% endhighlight %}</td>
+url{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns current active tab header .</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-activeIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns current active index.</td>
+<td class="description">returns the url of ajax request.</td>
 </tr>
 </tbody>
 </table>
@@ -2057,12 +2408,6 @@ cancel{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-url{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the url</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the tab model.</td>
@@ -2096,6 +2441,18 @@ activeHeader{% endhighlight %}</td>
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current active index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+url{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the url of ajax request</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+isInteraction{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns, is it triggered by interaction or not.</td>
 </tr>
 </tbody>
 </table>
@@ -2186,27 +2543,21 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-prevActiveHeader{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns previous active tab header.</td>
+<td class="description">return ajax data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-prevActiveIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns previous active index.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-activeHeader{% endhighlight %}</td>
+url{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns current active tab header .</td>
+<td class="description">returns ajax url</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-activeIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns current active index.</td>
+content{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns content of ajax request.</td>
 </tr>
 </tbody>
 </table>
@@ -2318,6 +2669,12 @@ activeHeader{% endhighlight %}</td>
 activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current active index.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+isInteraction{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns, is it triggered by interaction or not.</td>
 </tr>
 </tbody>
 </table>
@@ -2499,12 +2856,6 @@ type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
-<tr>
-<td class="name">{% highlight html %}
-deleteIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns current tab item index</td>
-</tr>
 </tbody>
 </table>
 </td>
@@ -2591,12 +2942,6 @@ model{% endhighlight %}</td>
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-deleteIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns current tab item index</td>
 </tr>
 </tbody>
 </table>
@@ -2789,12 +3134,6 @@ type{% endhighlight %}</td>
 removedTab{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns removed tab header.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-removedPanel{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns removed tab content panel.</td>
 </tr>
 </tbody>
 </table>

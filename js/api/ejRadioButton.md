@@ -578,45 +578,6 @@ Specifies the value atribute of the Radio Button.
 
 
 
-### destroy()
-{:#methods:destroy}
-
-
-
-
-destroy the RadioButton widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<script> 
-// Create RadioButton
-$("#radiobtn").ejRadioButton();
-var chkObj = $("#radiobtn").data("ejRadioButton");
-chkObj.destroy();
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<script>
-// enable the RadioButton
-$("#radiobtn").ejRadioButton();
-$("#radiobtn").ejRadioButton("destroy");        
-</script>{% endhighlight %}
-
-
-
-
 ### disable()
 {:#methods:disable}
 
@@ -739,26 +700,26 @@ cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-data.element{% endhighlight %}</td>
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns the current element</td>
+<td class="description">returns true if element is checked, otherwise returns false</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-data.isChecked{% endhighlight %}</td>
+isInteraction{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns the status of the element</td>
+<td class="description">returns true if change event triggered by interaction, otherwise returns false</td>
 </tr>
 </tbody>
 </table>
@@ -826,26 +787,26 @@ cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-data.element{% endhighlight %}</td>
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns the current element</td>
+<td class="description">returns true if element is checked, otherwise returns false</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-data.isChecked{% endhighlight %}</td>
+isInteraction{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns the status of the element</td>
+<td class="description">returns true if change event triggered by interaction, otherwise returns false</td>
 </tr>
 </tbody>
 </table>
@@ -913,13 +874,13 @@ cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
@@ -988,13 +949,13 @@ cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the RadioButton model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>

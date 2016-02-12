@@ -38,7 +38,7 @@ $(element).ejSplitter(options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">settings for Slider.</td>
+<td class="description">settings for Splitter.</td>
 </tr>
 </tbody>
 </table>
@@ -98,6 +98,68 @@ $('#innerSplitter').ejSplitter();
 
 
 
+### allowKeyboardNavigation `boolean`
+{:#members:allowKeyboardNavigation}
+
+
+
+
+
+
+
+
+Turns on keyboard interaction with the Splitter panes. You must set this property to true to access the keyboard shortcuts of ejSplitter.
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
+//To set allowKeyboardNavigation API value during initialization
+        $("#innerSplitter").ejSplitter({allowKeyboardNavigation: false});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### animationSpeed `number`
 {:#members:animationspeed}
@@ -109,7 +171,7 @@ $('#innerSplitter').ejSplitter();
 
 
 
-Specify animation speed for the Splitter pane movement while collapsing and expanding.
+Specify animation speed for the Splitter pane movement, while collapsing and expanding.
 
 
 
@@ -179,7 +241,7 @@ Specify the CSS class to splitter control to achieve custom theme.
 
 
 
-* null
+* &ldquo;&rdquo;
 
 
 
@@ -269,59 +331,6 @@ Specifies the animation behavior of the splitter.
 
 
 
-### enableAutoResize `boolean`
-{:#members:enableautoresize}
-
-
-
-
-
-
-
-
-Specify window resizing behavior for splitter control.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
-<div id="innerSplitter">
-<div>
-<div class="cont">Pane 1 </div>
-</div>
-<div>
-<div class="cont">Pane 2 </div>
-</div>
-</div> 
-<script>
-//To set windowResizing API value during initialization
-        $("#innerSplitter").ejSplitter({enableAutoResize: true});
-</script>{% endhighlight %}
-
-
-
-
 
 
 
@@ -333,9 +342,8 @@ Specify window resizing behavior for splitter control.
 
 
 
+Specifies the splitter control to be displayed in right to left direction.
 
-
-Specify Right to Left Direction for splitter control.
 
 
 
@@ -404,7 +412,7 @@ Specify height for splitter control.
 
 
 
-* &ldquo;100%&rdquo;
+* null
 
 
 
@@ -437,6 +445,125 @@ Specify height for splitter control.
 
 
 
+### htmlAttributes `object`
+{:#members:htmlAttributes}
+
+
+
+
+
+
+
+
+Specifies the HTML Attributes of the Splitter.
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* {}
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
+//Set HtmlAttributes API during initialization
+        $("#innerSplitter").ejSplitter({htmlAttributes: {class:"my-class"}});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+### isResponsive `boolean`
+{:#members:isResponsive}
+
+
+
+
+
+
+
+
+Specify window resizing behavior for splitter control.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
+//To set isResponsive API value during initialization
+        $("#innerSplitter").ejSplitter({isResponsive: true});
+</script>{% endhighlight %}
+
+
+
+
+N> We have renamed the API "enableAutoResize" to "isResponsive".
+
+
+
+
+
 
 ### orientation `enum`
 {:#members:orientation}
@@ -448,7 +575,7 @@ Specify height for splitter control.
 
 
 
-Specify the orientation for spliter control.See orientation
+Specify the orientation for spliter control. See  <a href="global.html#enum:orientation">orientation</a>
 
 
 
@@ -504,7 +631,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 
-Specify properties for each pane.
+Specify properties for each pane like paneSize, minSize, maxSize, collapsible, resizable. 
 
 
 
@@ -517,7 +644,7 @@ Specify properties for each pane.
 
 
 
-* null
+* []
 
 
 
@@ -574,7 +701,7 @@ Specify width for splitter control.
 
 
 
-* &ldquo;100%&rdquo;
+* null
 
 
 
@@ -615,7 +742,7 @@ Specify width for splitter control.
 
 
 
-### addItem(content, property, index)</span>
+### addItem(content, property, index)
 {:#methods:additem}
 
 
@@ -625,7 +752,7 @@ Specify width for splitter control.
 
 
 
-To add the new pane to splitter control.
+To add a new pane to splitter control.
 
 <table class="params">
 <thead>
@@ -704,7 +831,7 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 
 
 
-### collapse()
+### collapse(paneIndex)
 {:#methods:collapse}
 
 
@@ -717,6 +844,24 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 To collapse the splitter control pane.
 
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+paneIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">index number of pane.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -738,7 +883,7 @@ To collapse the splitter control pane.
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
-splitterObj.collapse(); // collpase the splitter control pane.
+splitterObj.collapse(0); // collpase the splitter control pane.
 </script>{% endhighlight %}
 
 
@@ -755,7 +900,7 @@ splitterObj.collapse(); // collpase the splitter control pane.
 <script>
 $("#innerSplitter").ejSplitter();
 // collpase the splitter control
-$("#innerSplitter").ejSplitter("collpase");
+$("#innerSplitter").ejSplitter("collapse", 0);
 </script>{% endhighlight %}
 
 
@@ -764,7 +909,7 @@ $("#innerSplitter").ejSplitter("collpase");
 
 
 
-### expand()
+### expand(paneIndex)
 {:#methods:expand}
 
 
@@ -776,6 +921,26 @@ $("#innerSplitter").ejSplitter("collpase");
 
 To expand the splitter control pane.
 
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+paneIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">index number of pane.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -798,7 +963,7 @@ To expand the splitter control pane.
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
-splitterObj.expand(); // expand the splitter control pane.
+splitterObj.expand(0); // expand the splitter control pane.
 </script>{% endhighlight %}
 
 
@@ -815,7 +980,7 @@ splitterObj.expand(); // expand the splitter control pane.
 <script>
 $("#innerSplitter").ejSplitter();
 // expand the splitter control
-$("#innerSplitter").ejSplitter("expand");
+$("#innerSplitter").ejSplitter("expand", 0);
 </script>{% endhighlight %}
 
 
@@ -884,7 +1049,7 @@ $("#innerSplitter").ejSplitter("refresh");
 
 
 
-### removeItem(index)</span>
+### removeItem(index)
 {:#methods:removeitem}
 
 
@@ -894,7 +1059,7 @@ $("#innerSplitter").ejSplitter("refresh");
 
 
 
-To remove the new pane from the splitter control.
+To remove a specified pane from the splitter control.
 
 <table class="params">
 <thead>
@@ -978,7 +1143,7 @@ $("#innerSplitter").ejSplitter("removeItem",0);
 
 
 
-Fires when before expand collapse in splitter control.
+Fires before expanding / collapsing the split pane of splitter control.
 
 <table class="params">
 <thead>
@@ -1264,7 +1429,7 @@ $("#innerSplitter").ejSplitter({
 
 
 
-Fires when expandCollapse in splitter control pane.
+Fires when expand / collapse operation in splitter control pane has been performed successfully.
 
 <table class="params">
 <thead>
@@ -1405,15 +1570,15 @@ cancel{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-collapsed{% endhighlight %}</td>
+prevPane{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns collapsed pane details.</td>
+<td class="description">returns previous pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-expanded{% endhighlight %}</td>
+nextPane{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns expanded pane details.</td>
+<td class="description">returns next pane details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}

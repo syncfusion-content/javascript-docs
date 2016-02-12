@@ -80,6 +80,57 @@ $('#scrollcontent').ejScroller();
 
 
 
+### autoHide `boolean`
+{:#members:autoHide}
+
+
+
+
+Set true to hides the scrollbar, when mouseout the content area.
+
+
+#### Default Value
+
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="scrollcontent" style="width:900px;" >
+<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any
+output representation of data, such as a chart or a diagram. Multiple views of the same data 
+are possible, such as a bar chart for management and a tabular view for accountants. 
+The controller mediates input, converting it to commands for the model or view.The central 
+ideas behind MVC are code reusability and n addition to dividing the application into three 
+kinds of components, the MVC design defines the interactions between them.
+
+<ul>
+<li>
+<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+It can also send commands to the model to update the model's state (e.g., editing a document).
+</li>
+</ul> 
+</div> 
+ 
+<script>
+//To enable the autoHide property of Scroller during initialization
+        $("#scrollcontent").ejScroller({autoHide: true });      
+</script>{% endhighlight %}
+
+
+
+
 ### buttonSize `number`
 {:#members:buttonsize}
 
@@ -292,7 +343,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-Enables or Disbale the touch Scroll
+Enables or Disable the touch Scroll
 
 
 #### Default Value
