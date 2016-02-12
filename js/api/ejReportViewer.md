@@ -819,7 +819,7 @@ Example
 ### enablePageCache<span class="type-signature type boolean">boolean</span>
 {:#members:enablePageCache}
 
-Enables or disables the cache in page of report viewer.
+Enables or disables the page cache of report.
 
 Default Value:
 {:.param}
@@ -834,6 +834,28 @@ Example
 <div id="reportviewer"></div> 
 <script>        
     $("#reportviewer").ejReportViewer({ enablePageCache: false });            
+</script>
+
+{% endhighlight %}
+
+### printOption<span class="type-signature type enum">enum</span>
+{:#members:printOption}
+
+Specifies the print option of the report.
+
+Default Value:
+{:.param}
+
+* ej.ReportViewer.PrintOption.Default
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOption.Default });            
 </script>
 
 {% endhighlight %}
@@ -1610,79 +1632,10 @@ Example
 
 {% endhighlight %}
 
-### ReportPrint
-{:#events:reportprint}
-
-Fires when the report is printed.If you want to perform any operation after the successful printing of report, you can make use of the ReportPrint event.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">true if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="reportviewer"></div> 
-<script>        
-    $("#reportviewer").ejReportViewer({ 
-        reportPrint:  function (args) {
-            // Write a code block to perform any action when the report is printed successfully.
-        }
-    });           
-</script>
-
-{% endhighlight %}
-
-### ReportExport
+### reportExport
 {:#events:reportexport}
 
-Fires when the report is exported.If you want to perform any operation after the successful exporting of report, you can make use of the ReportExport event.
+Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
 
 <table class="params">
 <thead>
@@ -1741,12 +1694,17 @@ Example
 <script>        
     $("#reportviewer").ejReportViewer({ 
         reportExport:  function (args) {
-            // Write a code block to perform any action when the report is exported successfully.
+            // Write a code block to perform any action before exporting of report.
         }
     });           
 </script>
 
 {% endhighlight %}
+
+
+
+
+
 
 
 
