@@ -462,6 +462,26 @@ True</td></tr>
 <td>
 False</td><td>
 False</td></tr>
+<tr>
+<td>
+SelectAll</td><td>
+Select All</td></tr>
+<tr>
+<td>
+Blanks</td><td>
+Blanks</td></tr>
+<tr>
+<td>
+Showrowswhere</td><td>
+Show rows where</td></tr>
+<tr>
+<td>
+NumericTextboxWaterMark</td><td>
+Enter value</td></tr>
+<tr>
+<td>
+Search</td><td>
+Search</td></tr>
 </table>
 Please find the code
 
