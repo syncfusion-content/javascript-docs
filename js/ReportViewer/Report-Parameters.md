@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-Parameters
+title: Report Parameters
 description: report parameters
 platform: js
 control: ReportViewer
@@ -9,7 +9,7 @@ documentation: ug
 
 # Report Parameters
 
-The ReportViewer has support to add report parameters to ReportViewer at runtime. The ReportViewer has Parameters property that is the list of ReportParameter type to add collection of report parameters to it. You can add report parameters either through ReportViewer model when creating ReportViewer control or through Web API.
+The ReportViewer has support to add report Parameters to ReportViewer at runtime. The ReportViewer has `parameters` property that is the list of ReportParameter type to add collection of report parameters to it. You can add report parameters either through ReportViewer model when creating ReportViewer control or through Web API.
 
 The following code example illustrates how to add ReportParameter at control creation.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started
 description: getting started
 platform: js
 control: ReportViewer
@@ -33,7 +33,6 @@ To create a new web form in the application
    New Item Wizard
    {:.caption}
 
-
 2. Click New Item and select HTML Page from the listed templates
 
    ![](Getting-Started_images/Getting-Started_img4.png) 
@@ -41,10 +40,7 @@ To create a new web form in the application
    Adding HTML Form
    {:.caption}
 
-
 3. Name the page as Default.html and click OK.
-
-
 
 ### Add References, Scripts, Styles and Control in HTML Page
 
@@ -76,13 +72,12 @@ To create a new web form in the application
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf 
 
-
-
-   N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting dlls from ASP.NET WebApi nuget package.
-
-
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+   N>
+   N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting dlls from ASP.NET WebApi nuget package. 
+   
+   
 3. Click OK
-
 
 ### Add Scripts and Styles
 
@@ -99,7 +94,7 @@ Add the script files and CSS files in the &lt;title&gt; tag of the default.ht
 
 ### Add Control in HTML Page
 
-Add the following code example in the &lt;body&gt; tag in the Default.html page. Set the desired ReportPath and ReportServiceUrl to ReportViewer.
+Add the following code example in the &lt;body&gt; tag in the Default.html page. Set the desired `reportPath` and `reportServiceUrl` to ReportViewer.
 
 {% highlight html %}
 
@@ -119,7 +114,7 @@ Add the following code example in the &lt;body&gt; tag in the Default.html p
 
 {% endhighlight %}
 
-N> Add your report files to your application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\XX.X.X.XX\Common\Data\ejReportTemplate). “XX.X.X.XX” is the Essential Studio Release Version.
+N> Add your report files to your application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
 ### Add WebAPI controller for ReportViewer
 
@@ -132,7 +127,7 @@ Adding WebApi Controller
 
 #### Inherit IReportController
 
-The ApiController inherits the IReportController and you can add the following code example to its methods definition in order to process the report file. The interface IReportController contains the required actions and helper methods declaration to process the report. The ReportHelper class contains helper methods that helps to process Post/Get request from control and return the response to control.
+The ApiController inherits the `IReportController` and you can add the following code example to its methods definition in order to process the report file. The interface `IReportController` contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
 
 {% highlight c# %}
 
@@ -226,7 +221,7 @@ ReportViewer with Sales Dashboard Report
 
 ReportViewer supports to load RDL/RDLC files from SSRS Server. The following steps help you to load reports from SSRS Server.
 
-1. Set the reportPath from SSRS and SSRS reportServerUrl in the ReportViewer properties.
+1. Set the `reportPath` from SSRS and SSRS `reportServerUrl` in the ReportViewer properties.
 
    ~~~ html
    <div>
@@ -245,7 +240,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
    </div>
    ~~~
 
-2. Add the credential information in ReportApiController’s OnInitReportOptions method which is available in IReportController.
+2. Add the credential information in ReportApiController’s `OnInitReportOptions` method which is available in `IReportController`.
 
    ~~~ csharp
    public void OnInitReportOptions(ReportViewerOptions reportOption)
@@ -267,7 +262,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 
 The ReportViewer has data binding support to visualize the RDLC reports. The following code example helps you to bind data to ReportViewer.
 
-1. Assign the RDLC report path to ReportViewer’s ReportPath property and set the data sources to the ReportViewer’s dataSources property.
+1. Assign the RDLC report path to ReportViewer’s `reportPath` property and set the data sources to the ReportViewer’s `dataSources` property.
 
    ~~~ html
    <div>
