@@ -12,17 +12,18 @@ documentation: ug
 The ListBox widget’s appearance can be customized based on different needs using templates. The desired templates can be defined using the “template” property.
 
 {% highlight html %}
-    <ul id="listbox"></ul>
-
+   <ul id="listbox"></ul>
     <script type="text/javascript">
-        var data = [
-              { text: "Erik Linden", imageName: "3", designation: "Representative", country: "England" },
-              { text: "John Linden", imageName: "6", designation: "Representative", country: "Norway" },
-              { text: "Louis", imageName: "7", designation: "Representative", country: "Australia" },
-              { text: "Lawrence", imageName: "8", designation: "Representative", country: "India" }
-        ];
+        var data = [{
+            text: "Erik Linden",
+            imageName: "3",
+            designation: "Representative",
+            country: "England"
+        },
+            { text: "John Linden", imageName: "6", designation: "Representative", country: "Norway" },
+            { text: "Louis", imageName: "7", designation: "Representative", country: "Australia" },
+            { text: "Lawrence", imageName: "8", designation: "Representative", country: "India" }];
         $(function () {
-
             $('#listbox').ejListBox({
                 dataSource: data,
                 height: "240",
@@ -32,11 +33,12 @@ The ListBox widget’s appearance can be customized based on different needs usi
             });
         });
     </script>
+
 {% endhighlight %}
 
 
 
-N> In the above code snippet, the image path (images/Employees) is given just for demonstration. Hence the images will not be displayed while using the above code.
+N> _In the above code snippet, the image path (images/Employees) is given just for demonstration. Hence the images will not be displayed while using the above code._
 
 {% seealso %} [Data Binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
@@ -44,22 +46,24 @@ Define the styles for the template as below.
 
 {% highlight css %}
 
-.image {
-     margin:0;
-     padding: 3px 10px 3px 3px;
-     border:0 none;
-     width:60px;
-     height:60px;
-     float:left;
-}
-.text{
-    font-weight:bold;
-    padding:6px 3px 1px 3px;
-}
-.desig, .country{
-    font-size:smaller;
-    padding:3px 3px 0px 0px;
-}
+        .image
+        {
+            margin:0;
+            padding: 3px 10px 3px 3px;
+            border:0 none;
+            width:60px;
+            height:60px;
+            float:left;
+        }
+        .text
+        {
+             font-weight:bold;
+             padding:6px 3px 1px 3px;
+        }
+        .desig,.country{
+            font-size:smaller;
+            padding:3px 3px 0px 0px;
+        }
 
 
 
@@ -68,5 +72,5 @@ Define the styles for the template as below.
 
 
 
-![ALt text](Templates_Images\templates_img1.png)
+![ALt text](Templates_images\Templates_img1.png)
 
