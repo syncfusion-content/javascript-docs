@@ -80,5 +80,5 @@ Tab is a collection of control [`groups`](http://help.syncfusion.com/js/api/ejri
    
 {% endhighlight %}
 
-
+![](/js/Ribbon/Tab_images/Tab_img1.png)
 
