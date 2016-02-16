@@ -1,18 +1,15 @@
 ---
 layout: post
-title: Accessibility in ListBox widget for Syncfusion Essential JS
-description: Keyboard Interaction and Incremental search in ListBox widget.
+title: Keyboard-interaction
+description: Keyboard-interaction
 platform: js
 control: ListBox
 documentation: ug
-keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
-# Accessibility
+# Keyboard interaction
 
-## Keyboard interaction
-
-You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the ListBox widget. The keyboard interaction will be enabled by default in the ListBox widget. It can be disabled by setting “allowKeyboardNavigation” to false.Please refer the below table for details about short cut keys and its corresponding usage.
+You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the ListBox widget. Please refer the below table for details about short cut keys and its corresponding usage.
 
 <table>
 <tr>
@@ -22,7 +19,7 @@ You can use Keyboard shortcut keys as an alternative for mouse actions to inte
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
-Selects the focussed item</td></tr>
+Selects the focused item</td></tr>
 <tr>
 <td>
 <kbd>Up</kbd></td><td>
@@ -49,9 +46,7 @@ Moves to first item</td></tr>
 Moves to last item</td></tr>
 </table>
 
-
 N> Initial focus can be done by pressing tab key multiple times until it is focused.
-
 
 ## Incremental Search
 
@@ -104,11 +99,13 @@ The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps
 
 
 
-![Incremental Search](Incremental-Search_Images\incremental-search_img1.png)
+![](Keyboard-interaction_images\Keyboard-interaction_img1.png)
 
 Press <kbd> tab </kbd> key to get ListBox focus and press <kbd>“A”</kbd> (enable caps lock or press <kbd>shift</kbd> +<kbd> “A”</kbd> since case sensitive search is enabled) to get the below output.
 
-![Incremental Search](Incremental-Search_Images\incremental-search_img2.png)
+![](Keyboard-interaction_images\Keyboard-interaction_img2.png)
+
+
 
 
 

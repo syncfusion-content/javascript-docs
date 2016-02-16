@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-DataSources
+title: Report DataSources
 description: report datasources
 platform: js
 control: ReportViewer
@@ -9,7 +9,7 @@ documentation: ug
 
 # Report DataSources
 
-The ReportViewer has support to add data sources to ReportViewer for RDLC reports at runtime. You can add SQL Server, Oracle, MS Azure, XML, Business Object, and SQL Server Compact DataSources to ReportViewer. The ReportViewer has DataSources property that is the list of ReportDataSource type to add collection of DataSources to it. You can add DataSources either through ReportViewer model when creating ReportViewer control or through Web API.
+The ReportViewer has support to add data sources to ReportViewer for RDLC reports at runtime. You can add SQL Server, Oracle, MS Azure, XML, Business Object, and SQL Server Compact DataSources to ReportViewer. The ReportViewer has `dataSources` property that is the list of ReportDataSource type to add collection of DataSources to it. You can add DataSources either through ReportViewer model when creating ReportViewer control or through Web API.
 
 The following code example illustrates how to add DataSource at control creation.
 

@@ -794,6 +794,72 @@ Example
 
 {% endhighlight %}
 
+### isResponsive<span class="type-signature type boolean">boolean</span>
+{:#members:isResponsive}
+
+Enables or disables the responsive of report viewer when window resized.
+
+Default Value:
+{:.param}
+
+* true
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ isResponsive: true });            
+</script>
+
+{% endhighlight %}
+
+### enablePageCache<span class="type-signature type boolean">boolean</span>
+{:#members:enablePageCache}
+
+Enables or disables the page cache of report.
+
+Default Value:
+{:.param}
+
+* false
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ enablePageCache: false });            
+</script>
+
+{% endhighlight %}
+
+### printOption<span class="type-signature type enum">enum</span>
+{:#members:printOption}
+
+Specifies the print option of the report.
+
+Default Value:
+{:.param}
+
+* ej.ReportViewer.PrintOption.Default
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOption.Default });            
+</script>
+
+{% endhighlight %}
+
 ## Methods
 
 ### exportReport<span class="signature">()</span>
@@ -1565,6 +1631,80 @@ Example
 </script>
 
 {% endhighlight %}
+
+### reportExport
+{:#events:reportexport}
+
+Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the report model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        reportExport:  function (args) {
+            // Write a code block to perform any action before exporting of report.
+        }
+    });           
+</script>
+
+{% endhighlight %}
+
+
+
+
+
 
 
 

@@ -1,25 +1,24 @@
 ---
 layout: post
-title: ejListBox
-description: Methods, members, events available in ejListBox
+title: API reference for ejListBox
+description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
+keywords: ejListBox, API, Essential JS ListBox, ListBox
 platform: js
-keywords: ejListView, API, Essential JS ListBox 
+metaname: 
+metacontent: 
 ---
 
 # ejListBox
 
-The ListBox control provides a list of options for users to select from. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
-#### Syntax
+The ListBox control provides a list of options for users to select from. It is capable of including other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options, multi-select options, etc.
 
-{% highlight js %}
+**Syntax**:
 
-        $(element).ejListBox(options)
+$(element).ejListBox<span class="signature">(options)</span>
 
-{% endhighlight %}
-
-Example
+**Example**:
 {:.example}
 
 {% highlight html %}
@@ -64,6 +63,7 @@ Requires
 
 ## Members
 
+
 ### allowDragAndDrop [Deprecated]  <span class="type-signature type boolean">boolean</span>
 {:#members:allowdraganddrop}
 
@@ -92,7 +92,7 @@ $("#list").ejListBox({
 ### allowDrag  <span class="type-signature type boolean">boolean</span>
 {:#members:allowdrag} 
 
-Enables/disables the dragging behavior of the ListBox widget’s item within a ListBox or between two ListBox widgets.
+Enables/disables the dragging behavior of the items in ListBox widget.
 
 Default Value:
 {:.param} 
@@ -569,13 +569,12 @@ $("#countrylist").ejListBox({
 <tr>
 <td>
 fields.category [Deprecated]</td><td>
-The grouping in the ListBox widget can be defined using this field. 
-N> Since this is deprecated we suggest you to use fields.groupBy API.
+The grouping in the ListBox widget can be defined using this field.Since this is deprecated we suggest you to use fields.groupBy API.
 </td></tr>
 <tr>
 <td>
 fields.checkBy </td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not. </td></tr>
+Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.</td></tr>
 <tr>
 <td>
 fields.groupBy </td><td>
@@ -599,7 +598,7 @@ Defines the image attributes such as height, width, styles and so on.</td></tr>
 <tr>
 <td>
 fields.selected [Deprecated]</td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.N> Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
+Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
 <tr>
 <td>
 fields.selectBy</td><td>
@@ -661,7 +660,28 @@ Example
 
 {% endhighlight %}
 
-### itemRequestCount  <span class="type-signature type integer">integer</span>
+### totalItemsCount <span class="type-signature type integer">integer</span>
+{:#members:totalitemscount}
+
+The total number of list items to be rendered in the ListBox widget. 
+
+N> It’s dependent on datasource property.
+
+Default Value:
+{:.param}
+
+null
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({totalItemsCount: 8});
+
+{% endhighlight %}
+
+### itemRequestCount <span class="type-signature type integer">integer</span>
 {:#members:itemrequestcount}
 
 The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
@@ -688,7 +708,7 @@ $("#customerlist").ejListBox({
 ### loadDataOnInit <span class="type-signature type boolean">boolean</span>
 {:#members:loaddataoninit}
 
-Loads data for the listbox by default (i.e. on initialization) when set to true.
+Loads data for the listbox by default (i.e. on initialization) when it is set to true. It creates empty ListBox if it is set to false.
 
 N> It is used along with cascading feature. See also [cascadeTo](http://help.syncfusion.com//js/api/ejlistbox#members:cascadeto).
 
@@ -718,7 +738,7 @@ The query to retrieve required data from the data source.
 Default Value:
 {:.param} 
 
-null
+ej.Query()
 
 Example
 {:.example}
@@ -1059,6 +1079,26 @@ Example
  {% highlight js %}
  
     $('#list').ejListBox({ width: "220"}); 
+    
+ {% endhighlight %}
+ 
+ 
+### targetID <span class="type-signature type string">string</span>
+{:#members:targetid}
+
+Specifies the targetID for the listbox items.
+
+Default Value:
+{:.param} 
+
+null
+
+Example
+{:.example}
+
+ {% highlight js %}
+ 
+    $('#list').ejListBox({ targetID: "carslist"}); 
     
  {% endhighlight %}
  
@@ -1553,6 +1593,46 @@ Example
 
 {% endhighlight %}
 
+### mergeData<span class="signature">(data)</span>
+{:#methods:mergedata}
+
+Merges the given data with the existing data items in the listbox.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+data</td><td>
+array</td><td>
+Data to merge in listbox.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight html%}
+
+ <ul id="list"></ul>
+<button id="mergedata">Merge Data </button>
+<script type="text/javascript">
+BikeList = [{ BikeName: "Apache RTR" }, { BikeName: "CBR 150-R" },{ BikeName: "Discover" }, { BikeName: "Dazzler" }];
+NewBikeList = [{ BikeName: "Honda" }, { BikeName: "TVS" }];
+$('#list').ejListBox({
+dataSource: BikeList,
+fields: { text: "BikeName" }
+});
+$("#mergedata").click(function () {
+$("#list").ejListBox("mergeData", NewBikeList);
+});
+</script>
+           
+
+{% endhighlight %}
+
 
 ### moveDown<span class="signature">()</span>
 {:#methods:movedown}
@@ -1612,6 +1692,22 @@ Example
 {% highlight js%}
 
                 $("#customerlist").ejListBox("refresh", true);
+
+{% endhighlight %}
+
+### removeAll<span class="signature">()</span>
+{:#methods:removeall}
+
+Removes all the list items from listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("removeAll");
 
 {% endhighlight %}
 
@@ -1777,7 +1873,7 @@ Example
 
 {% highlight js%}
 
-            $('#list').ejListBox("selectItemByValue", "audia5");
+            $('#list').ejListBox("selectItemByValue", "Audi A5");
 
 {% endhighlight %}
 
@@ -1960,7 +2056,7 @@ Example
 
 
 ### unSelectAll<span class="signature">()</span> [Deprecated]
-{:#methods:unselectall}
+{:#methods:unSelectAll}
 
 Unselect all the selected list items in the ListBox widget. 
 
@@ -2106,7 +2202,7 @@ Example
 
 {% highlight js%}
 
-            $('#list').ejListBox("unselectItemByValue", "audia5");
+            $('#list').ejListBox("unselectItemByValue", "Audi A5");
 
 {% endhighlight %}
 
@@ -2142,13 +2238,343 @@ Example
 {% endhighlight %}
 
 
+### hideCheckedItems <span class="signature">()</span>
+{:#methods:hidecheckeditems}
+
+Hides all the checked items in the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideSelectedItems");
+
+{% endhighlight %}
+
+### showItemByIndices<span class="signature">(indices)</span>
+{:#methods:showitembyindices}
+
+Shows a set of hidden list Items using its index values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox items to be shown.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("showItemsByIndices", "1,2,3");
+
+{% endhighlight %}
+
+
+### hideItemsByIndices <span class="signature">(indices)</span>
+{:#methods:hideitemsbyindices}
+
+Hides a set of list Items using its index values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox items to be hidden.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideItemsByIndices", "1,2,3");
+
+{% endhighlight %}
+
+
+### showItemsByValues <span class="signature">(values)</span>
+{:#methods:showitemsbyvalues}
+
+Shows the hidden list items using its values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+values</td><td>
+Array</td><td>
+Values of the listbox items to be shown.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("showItemsByValues", ["Audi A4", "Audi A5"]);
+
+{% endhighlight %}
+
+
+### hideItemsByValues <span class="signature">(values)</span>
+{:#methods:hideitemsbyvalues}
+
+Hides the list item using its values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+values</td><td>
+Array</td><td>
+Values of the listbox items to be hidden.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideItemsByValues", ["Audi A4", "Audi A5"]);
+
+{% endhighlight %}
+
+
+### showItemByValue <span class="signature">(values)</span>
+{:#methods:showitembyvalue}
+
+Shows a hidden list item using its value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+value</td><td>
+String</td><td>
+Value of the listbox item to be shown.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("showItemByValue", "Audi A5");
+
+{% endhighlight %}
+
+
+### hideItemByValue <span class="signature">(values)</span>
+{:#methods:hideitembyvalue}
+
+Hide a list item using its value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+value</td><td>
+String</td><td>
+Value of the listbox item to be hidden.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideItemByValue", "Audi A5");
+
+{% endhighlight %}
+
+
+### showItemByIndex <span class="signature">(index)</span>
+{:#methods:showitembyindex}
+
+Shows a hidden list item using its index value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer</td><td>
+Index of the listbox item to be shown.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("showItemByIndex", 2);
+
+{% endhighlight %}
+
+
+### hideItemByIndex <span class="signature">(index)</span>
+{:#methods:hideitembyindex}
+
+Hides a list item using its index value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer</td><td>
+Index of the listbox item to be hidden.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideItemByIndex", 2);
+
+{% endhighlight %}
+
+
+### show <span class="signature">()</span>
+{:#methods:show}
+
+Shows the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("show");
+
+{% endhighlight %}
+
+
+### hide <span class="signature">()</span>
+{:#methods:hide}
+
+Hides the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hide");
+
+{% endhighlight %}
+
+
+### hideAllItems <span class="signature">()</span>
+{:#methods:hideallitems}
+
+Hides all the listbox items in the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("hideAllItems");
+
+{% endhighlight %}
+
+
+### showAllItems <span class="signature">()</span>
+{:#methods:showallitems }
+
+Shows all the listbox items in the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("showAllItems");
+
+{% endhighlight %}
+
 
 ## Events
+
+### actionBegin
+{:#events:actionbegin}
+
+Triggers before the AJAX request begins to load data in the ListBox widget. 
+
+Example
+{:.example}
+
+{% highlight js%}
+
+$("#list").ejListBox({ 
+    
+    actionBegin: function(args) { 
+        
+       //do something 
+    }
+    
+});
+
+
+{% endhighlight %}
+
 
 ### actionSuccess
 {:#events:actionsuccess}
 
-Triggers when the data requested from AJAX will get successfully loaded in the ListBox widget. 
+Triggers after the data requested via AJAX is successfully loaded in the ListBox widget. 
 
 N> It internally uses jQuery ajaxSuccess event. For details refer [here](http://api.jquery.com/ajaxsuccess/).
 
@@ -2517,7 +2943,7 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 argument.items</td><td>
 Array</td><td>
-Array of list item object.</td></tr>
+Array of list item object</td></tr>
 <tr>
 <td>
 argument.items[index].item</td><td>
@@ -2577,11 +3003,10 @@ $("#list").ejListBox({
 
 {% endhighlight %}
 
-
 ### itemRequest [Deprecated]
-{:#events:itemrequest}
+{:#events:itemRequest}
 
-Triggers when the virtual scrolling, requests for new set of list items to be loaded in the ListBox widget.
+Triggers when scrolling action (virtual scrolling) requests for new set of list items to be loaded in the ListBox widget.
 
 <table>
 <tr>
@@ -2664,7 +3089,7 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 argument.items</td><td>
 Array</td><td>
-Array of list item object.</td></tr>
+Array of list item object</td></tr>
 <tr>
 <td>
 argument.items[index].item</td><td>
@@ -2755,7 +3180,7 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 argument.items</td><td>
 Array</td><td>
-Array of list item object.</td></tr>
+Array of list item object</td></tr>
 <tr>
 <td>
 argument.items[index].item</td><td>
@@ -2848,7 +3273,7 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 argument.items</td><td>
 Array</td><td>
-Array of list item object.</td></tr>
+An array of list item objects which are being dropped.</td></tr>
 <tr>
 <td>
 argument.items[index].item</td><td>
@@ -2939,7 +3364,7 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 argument.items</td><td>
 Array</td><td>
-Array of list item object.</td></tr>
+An array of list item objects which are being dropped.</td></tr>
 <tr>
 <td>
 argument.items[index].item</td><td>
