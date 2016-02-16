@@ -439,6 +439,55 @@ Specifies the height of the slider.
 
 
 
+### htmlAttributes `object`
+{:#members:htmlAttributes}
+
+
+
+
+
+
+
+
+Specifies the HTML Attributes of the ejSlider.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* {}
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
+//To set htmlAttributes API value during initialization  
+        $("#slider").ejSlider({ htmlAttributes: {disabled:"disabled"}});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### incrementStep `number`
 {:#members:incrementstep}
 
@@ -1225,7 +1274,7 @@ To disable the slider
  
 <script>
 $("#slider").ejSlider();
-// Create slider control
+// Create slider control object
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.disable(); // disable the slider control
 </script>{% endhighlight %}
@@ -1273,7 +1322,7 @@ To enable the slider
  
 <script>
 $("#slider").ejSlider();
-// Create slider control
+// Create slider control object
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.enable(); // enable the slider control
 </script>{% endhighlight %}
@@ -1320,9 +1369,9 @@ To get value from slider handle
 <div id="slider"> </div> 
 <script>
 $("#slider").ejSlider();
-// Create Editors
+// Create slider control object
 var sliderObj = $("#slider").data("ejSlider");
-sliderObj.getValue(); // getValue the slider handle
+sliderObj.getValue(); // get value from the slider handle
 </script>
                  
   {% endhighlight %}
@@ -1336,6 +1385,53 @@ sliderObj.getValue(); // getValue the slider handle
 $("#slider").ejSlider();
 // get value from slider handle
 $("#slider").ejSlider("getValue");
+</script>{% endhighlight %}
+
+
+
+
+
+### setValue(value)
+{:#methods:setValue}
+
+
+
+
+
+
+
+
+To set value to slider handle
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+$("#slider").ejSlider();
+// Create slider control object
+var sliderObj = $("#slider").data("ejSlider");
+sliderObj.setValue(10); // set value to the slider handle
+</script>
+                 
+  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+ 
+<script>
+$("#slider").ejSlider();
+// set value to slider handle
+$("#slider").ejSlider("setValue",10);
 </script>{% endhighlight %}
 
 

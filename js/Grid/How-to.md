@@ -150,3 +150,60 @@ Grid actions can be persisted throughout by enabling the enablePersistence prope
   {% endhighlight %}   
   
   So on navigating to another page by clicking on the link, by default the filterSettings and groupSettings will be persisted. But upon clicking the button and navigating, the persist state of the grid actions are modified.
+   
+# External Search in Grid
+
+Using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method of grid, you can search the string in grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/js/api/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
+
+{% tabs %}
+{% highlight html %}
+<div class="content-container-fluid">
+<div class="row">
+<div id="sampleProperties">
+<div class="prop-grid">
+<div class="row">
+<div class="col-md-3">
+<input type="text" id="srchstr" class="e-ejinputtext" />
+<input type="button" id = "search" value="Searching"/>
+</div>
+</div>
+</div>
+</div>
+<div class="cols-sample-area">
+<div id="Grid"></div>
+</div>
+</div>
+</div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+$("#Grid").ejGrid({
+dataSource: window.gridData,
+allowPaging: true,
+allowSearching: true,
+columns: [
+{ field: "OrderID" },
+{ field: "CustomerID" },
+{ field: "EmployeeID"},
+{ field: "Freight" },
+{ field: "ShipCity"},
+{ field: "ShipCountry"}
+]
+});
+$("#search").ejButton({ click: "onSearching", size: "small" });
+});
+function onSearching(args) {
+var obj = $("#Grid").ejGrid("instance");
+var val = $("#srchstr").val();
+obj.search(val);
+}
+
+
+{% endhighlight %}
+
+{% endtabs %}
+The following output is displayed as a result of the above code example.
+![](externalsearch_images/externalsearch_img1.jpeg)
+

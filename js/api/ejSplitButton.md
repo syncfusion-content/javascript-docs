@@ -451,7 +451,7 @@ Specifies the height of the Split Button.
 
 
 
-* &ldquo;28&rdquo; pixel
+* &ldquo;&rdquo;
 
 
 
@@ -474,6 +474,60 @@ Specifies the height of the Split Button.
 <script> 
 //To set height API value during initialization  
 $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });                       
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### htmlAttributes `object`
+{:#members:htmlAttributes}
+
+
+
+
+
+
+
+
+Specifies the HTML Attributes of the Split Button.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* {}
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script> 
+//To set htmlAttributes API value during initialization  
+$("#sbutton").ejSplitButton({  htmlAttributes : {disabled:"disabled"} });                       
 </script>{% endhighlight %}
 
 
@@ -891,7 +945,7 @@ Specifies the width of the Split Button.
 
 
 
-* &ldquo;28&rdquo; pixel
+* &ldquo;&rdquo;
 
 
 
@@ -1096,6 +1150,118 @@ $("#sbutton").ejSplitButton("enable");
 
 
 
+
+
+### hide()
+{:#methods:hide}
+
+
+
+
+
+
+
+
+To Hide the list content of the split button.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//To Hide the list content of the Split Button control.           
+$("#sbutton").ejSplitButton({targetID: "target",width:100});
+var SptObj=$("#sbutton").data("ejSplitButton");
+SptObj.hide();
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//To hide the list content of the Split Button control.           
+$("#sbutton").ejSplitButton({targetID: "target",width:100});
+$("#sbutton").ejSplitButton("hide");
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### show()
+{:#methods:show}
+
+
+
+
+
+
+
+
+To show the list content of the split button.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//To Show the list content of the Split Button control.           
+$("#sbutton").ejSplitButton({targetID: "target",width:100});
+var SptObj=$("#sbutton").data("ejSplitButton");
+SptObj.show();
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//To show the list content of the Split Button control.           
+$("#sbutton").ejSplitButton({targetID: "target",width:100});
+$("#sbutton").ejSplitButton("show");
+</script>{% endhighlight %}
+
+
+
+
+
 ## Events
 
 
@@ -1275,6 +1441,95 @@ $("#sbutton"). ejSplitButton ({
 
 
 
+### close
+{:#events:close}
+
+
+
+
+
+
+
+
+Fires before the list content of Button control is closed
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from split button
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the cancel option value</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the split button model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//close event for split button
+$("#sbutton"). ejSplitButton ({
+                targetID: "target",width:100,
+     close: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### create
 {:#events:create}
 
@@ -1320,7 +1575,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the splite button model</td>
+<td class="description">returns the split button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -1807,6 +2062,95 @@ event.menuText{% endhighlight %}</td>
 $("#sbutton"). ejSplitButton ({
                targetID: "target",width:100,
      itemSelected: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### open
+{:#events:open}
+
+
+
+
+
+
+
+
+Fires before the list content of Button control is opened
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from split button
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the cancel option value</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the split button model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//open event for split button
+$("#sbutton"). ejSplitButton ({
+                targetID: "target",width:100,
+     open: function (args) {}
 });
 </script>{% endhighlight %}
 
