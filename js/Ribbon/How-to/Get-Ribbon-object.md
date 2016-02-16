@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Get-Ribbon-object
-description: get ribbon object
-platform: js
-control: Ribbon
+title:  Get-Ribbon-object
+description:get ribbon object
 documentation: ug
+platform: js
+keywords: get ribbon object,ribbon get ribbon object
 ---
 
 ### Get Ribbon object
 
-After **Ribbon** initialization, **Ribbon** object is stored in a container element of Ribbon. To access Ribbon object, you can use the following code example.
+After Ribbon initialization, Ribbon object is stored in a container element of Ribbon and it can be accessed for further processing. 
 
 {% highlight js %}
 
-var ribbonObject = $("#Ribbon").ejRibbon("instance");
+    // "defaultRibbon" is Id of Ribbon control
+    var ribbonObject = $("#defaultRibbon").ejRibbon("instance");
 
-[or]
+      [or]
 
-var ribbonObject = $("#Ribbon").data("ejRibbon");
-
+    var ribbonObject = $("#defaultRibbon").data("ejRibbon");
 
 {% endhighlight %}
 

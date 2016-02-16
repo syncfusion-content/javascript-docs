@@ -1,136 +1,145 @@
 ---
 layout: post
-title: Angular-Support
-description: angular support 
-platform: js
-control: Ribbon
+title:  Angular-Support
+description:angular-support
 documentation: ug
+platform: js
+keywords: angular support,ribbon angular support
 ---
 
 # Angular Support 
 
-**Ribbon** control has angular support. It is possible to add object, array collection in the Ribbon control. The one way binding support is provided for Ribbon control. **ej-Ribbon** is the control tag where, ej is tag prefix and Ribbon is the control name.
+It is possible to add object, array collection in the Ribbon control with angular. The one way binding support is provided for Ribbon control.
 
-To know more details about the Angular binding, refer [here](/js/angularjs).
+`ej-ribbon` is the control tag where, `ej` is tag prefix and `Ribbon` is the control name.
 
-## Rendering Tabs and Contextual tabs
+## Tabs and Contextual Tabs
 
-Ribbon tabs and Contextual tabs are Array Collections and the inner tag is used for them. You can extend the Object with in these Array Collections by using hyphen. 
+Ribbon Tabs and Contextual Tabs are Array Collections and the inner tag is used for them.
 
-Ribbon tab and Contextual Tab are rendered with the following code example.
+Objects with in these Array Collections can be extended by using hyphen. E.g. `e-applicationtab-menuItemid="ribbonmenu"`
 
 {% highlight html %}
- 
-    <div ng-app="ribbonApp">
-       <div ng-controller="RibbonCtrl">
-          <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-menuitemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
-             <div e-tabs>
-                <div e-tab e-id="home" e-text="HOME">
-                   <div e-groups>
-                      <div e-group e-text="New" e-aligntype="rows">
-                         <div e-content>
-                            <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
-                               <div e-groups>
-                                  <div e-group e-id="new" e-text="New">
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div e-contextualtabs>
-                <div e-contextualtab e-backgroundcolor="#FCFBEB" e-bordercolor="#F2CC1C">
-                   <div e-tabs>
-                      <div e-tab e-id="Design" e-text="DESIGN">
-                         <div e-groups>
-                            <div e-group e-text="New" e-aligntype="rows">
-                               <div e-content>
-                                  <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
-                                     <div e-groups>
-                                        <div e-group e-id="Design" e-text="Design">
-                                        </div>
-                                     </div>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <ul id="ribbonmenu">
-             <li>
-                <a>FILE</a>
-             </li>
-          </ul>
-       </div>
-    </div>
+
+	<div ng-app="ribbonApp">
+		<div ng-controller="RibbonCtrl">
+		<div id="defaultRibbon" ej-ribbon e-width="400" e-applicationtab-menuItemid="ribbonmenu" e-applicationtab-applicationTabType="ApplicationMenu">
+			
+				<!-- Tabs array collection-->
+				<div e-tabs>
+					<div e-tab e-id="home" e-text="HOME">
+						<div e-groups>
+							<div e-group e-text="New" e-aligntype="rows">
+								<div e-content>
+									<div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
+										<div e-groups>
+							
+											<!-- group object-->
+											<div e-group e-id="new" e-text="New" e-buttonsettings-prefixicon="e-new" e-buttonsettings-contenttype="imageonly">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div e-contextualtabs>
+					<div e-contextualtab e-backgroundcolor="#FCFBEB" e-bordercolor="#F2CC1C">
+						<div e-tabs>
+							<div e-tab e-id="Design" e-text="DESIGN">
+								<div e-groups>
+									<div e-group e-text="New" e-aligntype="rows">
+										<div e-content>
+											<div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
+												<div e-groups>
+													<div e-group e-id="Design" e-text="Design" e-buttonsettings-prefixicon="e-shape" e-buttonsettings-contenttype="textandimage" e-buttonsettings-imageposition="imagetop">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<ul id="ribbonmenu">
+			<li>
+			<a>FILE</a>
+			<ul>
+				<li><a>Save</a></li>
+			</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		angular.module('ribbonApp', ['ejangular']).controller('RibbonCtrl', function ($scope) {
+		});
+	</script>
 
 {% endhighlight %}
-
-After executing the above code, you can render the following output.
 
 ![](/js/Ribbon/Angular-Support_images/Angular-Support_img1.png)
 
-## Rendering Gallery and Custom Tooltip
+## Gallery and Custom Tooltip                
 
-GalleryItems is an Array Collection and the inner tag is used for it inside the ribbon Groups. You can extend the Object of this Array Collection by using hyphen. Custom Tooltip is an Object of Ribbon Groups and you can extend it by using hyphen.
+GalleryItems is an Array Collection and the inner tag is used for it inside the Ribbon Groups. Object of this Array Collection can be extended by using hyphen. 
 
-Eg: e-customtooltip-title.
-
-Gallery and Custom Tooltip are rendered by using the following code example.
+Custom Tooltip is an Object of Ribbon Groups and can extend it by using hyphen. E.g. `e-customtooltip-title`.
 
 {% highlight html %}
-   
-      <div ng-app="ribbonApp">
-         <div ng-controller="RibbonCtrl">
-            <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu" e-allowresizing="true">
-               <div e-tabs>
-                  <div e-tab e-id="home" e-text="HOME">
-                     <div e-groups>
-                        <div e-group e-text="New" e-aligntype="rows">
-                           <div e-content>
-                              <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
-                                 <div e-groups>
-                                    <div e-group e-id="paste" e-text="Paste" e-customtooltip-title="Paste" e-customtooltip-content="<h6>Paste the content.<br &#47;><br &#47;>Add content on the Clipboard to your document.<&#47;h6>" e-customtooltip-prefixicon="e-pastetip">
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div e-group e-text="Gallery" e-aligntype="rows">
-                           <div e-content>
-                              <div e-content>
-                                 <div e-groups>
-                                    <div e-group e-id="Gallery" e-columns="3" e-itemheight="54" e-itemwidth="68" e-expandedcolumns="4" e-type="gallery">
-                                       <div e-galleryitems>
-                                          <div e-galleryitem e-text="GalleryContent1" e-buttonsettings-contenttype="imageonly" e-buttonsettings-prefixicon="e-gallerycontent1 e-gbtnimg" e-buttonsettings-cssclass="e-gbtnposition"></div>
-                                          <div e-galleryitem e-text="GalleryContent2" e-buttonsettings-contenttype="imageonly" e-buttonsettings-prefixicon="e-gallerycontent2 e-gbtnimg" e-buttonsettings-cssclass="e-gbtnposition"></div>
-                                          <div e-galleryitem e-text="GalleryContent3" e-buttonsettings-contenttype="imageonly" e-buttonsettings-prefixicon="e-gallerycontent3 e-gbtnimg" e-buttonsettings-cssclass="e-gbtnposition"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <ul id="ribbonmenu">
-               <li>
-                  <a>FILE</a>
-               </li>
-            </ul>
-         </div>
-      </div>
+
+	<body ng-controller="RibbonCtrl">
+	<body ng-controller="RibbonCtrl">
+	<div ng-app="ribbonApp">
+			<div ng-controller="RibbonCtrl">
+				<div id="defaultRibbon" ej-ribbon e-width="400" e-applicationtab-menuitemid="ribbonmenu" e-applicationtab-applicationtabtype="ApplicationMenu" e-allowresizing="true">
+					<div e-tabs>
+						<div e-tab e-id="home" e-text="HOME">
+							<div e-groups>
+								<div e-group e-text="New" e-aligntype="rows">
+									<div e-content>
+										<div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
+											<div e-groups>
+												<div e-group e-id="paste" e-text="Paste" e-customtooltip-title="Paste" e-customtooltip-content="<h6>Paste the content.<br/><br/>Add content on the Clipboard to your document.</h6>" e-customtooltip-prefixicon="e-pastetip">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div e-group e-text="Gallery" e-aligntype="rows">
+									<div e-content>
+										<div e-content>
+											<div e-groups>
+												<div e-group e-id="Gallery" e-columns="3" e-itemheight="54" e-itemwidth="70" e-expandedcolumns="4" e-type="gallery">
+													<div e-galleryitems>
+														<div e-galleryitem e-text="Content1" e-tooltip="GalleryContent1" e-buttonsettings-contenttype="textonly"></div>
+														<div e-galleryitem e-text="Content2" e-tooltip="GalleryContent2" e-buttonsettings-contenttype="textonly"></div>
+														<div e-galleryitem e-text="Content3" e-tooltip="GalleryContent3" e-buttonsettings-contenttype="textonly"></div>
+														<div e-galleryitem e-text="Content4" e-tooltip="GalleryContent4" e-buttonsettings-contenttype="textonly" ></div>
+														<div e-galleryitem e-text="Content5" e-tooltip="GalleryContent5" e-buttonsettings-contenttype="textonly" ></div>
+													</div>
+													<div e-customgalleryitems>
+														<div e-customgalleryitem e-customitemtype="menu" e-menuid="extramenu" e-menusettings-openonclick="false"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	       <script type="text/javascript">
+				angular.module('ribbonApp', ['ejangular']).controller('RibbonCtrl', function ($scope) {
+				});
+			</script>
 
 {% endhighlight %}
 
-After executing the above code, you can render the following output.
-
 ![](/js/Ribbon/Angular-Support_images/Angular-Support_img2.png)
-

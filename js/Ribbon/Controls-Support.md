@@ -1,219 +1,310 @@
 ---
 layout: post
 title: Controls-Support
-description: controls support
-platform: js
-control: Ribbon
+description:controls support
 documentation: ug
+platform: js
+keywords: controls support,ribbon controls support
 ---
 
 # Controls Support
 
-In **Ribbon** control, Button,SplitButton,DropDownList Toggle button,Custom controls provide support to the groups.
+Button, Split Button, DropdownList, Toggle button, Gallery and Custom controls can be added to each groups. You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property in group to define the controls. Default `type` is `button`. 
 
-* **type** property is used to define the controls.
-* **ej.Ribbon.type.splitButton**-to add Split button control.
-* **ej.Ribbon.type.button**-to add Button control.
-* **ej.Ribbon.type.dropDownList**-to add Dropdown List control.
-* **ej.Ribbon.type.toggleButton**-to add Toggle button control.
-* **ej.Ribbon.type.custom**-to add custom controls.
+## Built in Controls
 
-The default type is **button**.
+The following table describes about the built in controls [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) and their corresponding control settings.
+
+<table class="params">
+<thead>
+<tr>
+<th>Type</th>
+<th>Control Settings</th>
+<th class="last">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="type">Button</td>
+<td class="control settings"><span class="param-type">[`ejButton`](http://help.syncfusion.com/js/api/ejbutton) -  [`buttonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings)</span></td>
+<td class="example last">
+	buttonSettings: {
+					width: 70,
+					contentType: ej.ContentType.ImageOnly,
+					prefixIcon: "e-ribbon e-new"
+				    }
+ </td>
+</tr>
+<tr>
+<td class="type">SplitButton</td>
+<td class="control settings"><span class="param-type">[`ejSplitButton`](http://help.syncfusion.com/js/api/ejsplitbutton) - [`splitButtonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-splitbuttonsettings)</span></td>
+<td class="example last">
+	splitButtonSettings: {
+                          contentType: ej.ContentType.ImageOnly,
+                          prefixIcon: "e-ribbon e-ribbonpaste",
+                          targetID: "pasteSplit",
+                          buttonMode: "dropdown",
+                          arrowPosition: ej.ArrowPosition.Bottom
+                          }
+ </td>
+</tr>
+<tr>
+<td class="type">ToggleButton</td>
+<td class="control settings"><span class="param-type">[`ejToggleButton`](http://help.syncfusion.com/js/api/ejtogglebutton) - [`toggleButtonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-togglebuttonsettings)</span></td>
+<td class="example last">
+	toggleButtonSettings: {
+                           contentType: ej.ContentType.ImageOnly,
+                           defaultText: "Italic",
+                           activeText: "Italic",
+                           defaultPrefixIcon: "e-ribbon e-ribbonitalic",
+                           activePrefixIcon: "e-ribbon e-ribbonitalic"
+                           }
+ </td>
+</tr>
+<tr>
+<td class="type">DropDownList</td>
+<td class="control settings"><span class="param-type">[`ejDropDownList`](http://help.syncfusion.com/js/api/ejdropdownlist) - [`dropdownSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-dropdownsettings)</span></td>
+<td class="example last">
+	dropdownSettings: {
+                      dataSource: fontsize,
+                      text: "1pt",
+                      width: 65
+                      }
+ </td>
+</tr>
+</tbody>
+</table>
+
+N> 1.You can specify type either to [`group’s collection`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type).
+
+N> 2.	For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
 
 {% highlight html %}
 
-	<!-- ... -->
-	<head>
-	</head>
-	<!-- ... -->
-	<body>
-	   <div id="Ribbon"></div>
-	   <ul id="menu">
-	      <li>
-	         <a>FILE</a>
-	         <ul>
-	            <li><a>New</a></li>
-	         </ul>
-	      </li>
-	   </ul>
-	   <ul id="split">
-	      <li><span>Paste</span></li>
-	   </ul>
-	   <input id="fontcolor"/>
-	   <script type="text/javascript">
-			var fontfamily = [{
-			    value: 1,
-			    text: "Segoe UI"
-			}, {
-			    value: 2,
-			    text: "Arial"
-			}, {
-			    value: 3,
-			    text: "Times New Roman"
-			}, {
-			    value: 4,
-			    text: "Tahoma"
-			}, {
-			    value: 5,
-			    text: "Helvetica"
-			}];
-			$(function() {
-			    $("#Ribbon").ejRibbon({
-			        width: 800,
-			        applicationTab: {
-			            type: ej.Ribbon.applicationTabType.menu,
-			            menuItemID: "menu",
-			            menuSettings: {
-			                openOnClick: false
-			            }
-			        },
-			        tabs: [{
-			            id: "home",
-			            text: "HOME",
-			            groups: [{
-			                text: "SplitButton",
-			                alignType: ej.Ribbon.alignType.columns,
-			                content: [{
-			                    groups: [{
-			                        id: "paste",
-			                        text: "paste",
-			                        toolTip: "Paste",
-			                        type: ej.Ribbon.type.splitButton,
-			                        splitButtonSettings: {
-			                            contentType: ej.ContentType.ImageOnly,
-			                            targetID: "split",
-			                            prefixIcon: "e-ribbon e-ribbonpaste",
-			                            buttonMode: "dropdown",
-			                            arrowPosition: "bottom"
-			                        }
-			                    }],
-			                    defaults: {
-			                        type: ej.Ribbon.type.splitButton,
-			                        width: 50,
-			                        height: 70
-			                    }
-			                }]
-			            }, {
-			                text: "Dropdown List",
-			                alignType: ej.Ribbon.alignType.rows,
-			                content: [{
-			                    groups: [{
-			                        id: "fontfamily",
-			                        toolTip: "Font",
-			                        type: ej.Ribbon.type.dropDownList,
-			                        dropdownSettings: {
-			                            dataSource: fontfamily,
-			                            value: "1",
-			                            width: 150
-			                        }
-			                    }]
-			                }]
-			            }, {
-			                text: "Custom",
-			                alignType: ej.Ribbon.alignType.rows,
-			                content: [{
-			                    groups: [{
-			                        id: "fontcolor",
-			                        text: "Font Color",
-			                        toolTip: "Font Color",
-			                        type: ej.Ribbon.type.custom,
-			                        contentID: "fontcolor"
-			                    }]
-			                }]
-			            }, {
-			                text: "Button",
-			                alignType: ej.Ribbon.alignType.rows,
-			                content: [{
-			                    groups: [{
-			                        id: "undo",
-			                        text: "Undo",
-			                        toolTip: "Undo",
-			                        buttonSettings: {
-			                            contentType: ej.ContentType.TextAndImage,
-			                            imagePosition: ej.ImagePosition.ImageTop,
-			                            prefixIcon: "e-ribbon e-undo",
-			                            click: "executeAction"
-			                        }
-			                    }],
-			                    defaults: {
-			                        type: ej.Ribbon.type.button,
-			                        width: 40,
-			                        height: 70
-			                    }
-			                }]
-			            }, {
-			                text: "Toggle",
-			                alignType: ej.Ribbon.alignType.columns,
-			                content: [{
-			                    groups: [{
-			                        id: "bold",
-			                        toolTip: "Bold",
-			                        type: ej.Ribbon.type.toggleButton,
-			                        toggleButtonSettings: {
-			                            contentType: ej.ContentType.ImageOnly,
-			                            defaultText: "Bold",
-			                            activeText: "Bold",
-			                            defaultPrefixIcon: "e-ribbon bold",
-			                            activePrefixIcon: "e-ribbon bold",
-			                            click: "executeAction"
-			                        }
-			                    }],
-			                    defaults: {
-			                        width: 40,
-			                        height: 70
-			                    }
-			                }]
-			            }]
-			        }],
-			        create: "createControl",
-			    });
-			});
-			
-			function createControl(args) {
-			    $("#fontcolor").ejColorPicker({
-			        value: "#FFFF00",
-			        modelType: "palette",
-			        cssClass: "e-ribbon",
-			        toolIcon: "e-icon e-fontcoloricon"
-			    });
-			}
-	   </script>
-	   <style>
-	      .e-ribbon .e-ribbonpaste:before {
-	      content: "\e645";
-	      font-size: 36px;
-	      position: relative;
-	      left: -9px;
-	      top: -4px;
-	      font-family:"ej-webfont";
-	      }
-	      .e-ribbon .e-undo:before {
-	      content: "\e736";
-	      font-size: 28px;
-	      position: relative;
-	      left: -2px;
-	      top: 2px;
-	      font-family:"ej-webfont";
-	      }
-	      .e-ribbon .bold:before {
-	      content: "\e636";
-	      font-family:"ej-webfont";
-	      }
-	      .e-ribbon .e-fontcoloricon:before {
-	      content: "\e632";
-	      font-size: 15px;
-	      position: relative;    
-	      right: -1px;
-	      top: -9px;
-	      font-family:"ej-webfont";
-	      }
-	   </style>
-	</body>
-	<!-- ... -->
-	
+	<div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+                    <li><a>FILE</a>
+                        <ul>
+                            <li><a>New</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="pasteSplit">
+                    <li><a>Paste</a></li>
+                </ul>
+     <script type="text/javascript">
+        var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"], fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"], action1 = ["New", "Clear"], action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"];
+        $(function() {
+            $("#Ribbon").ejRibbon({
+                width: "100%",
+                applicationTab: { Type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+                tabs: [
+                    {
+                        id: "home",
+                        text: "HOME",
+                        groups: [
+                            {
+                                text: "New",
+                                alignType: ej.Ribbon.alignType.rows,
+                                content: [
+                                    {
+                                        groups: [
+                                            {
+                                                id: "new",
+                                                text: "New",
+                                                toolTip: "New",
+                                                buttonSettings: {
+                                                    contentType: ej.ContentType.ImageOnly,
+                                                    imagePosition: ej.ImagePosition.ImageTop,
+                                                    prefixIcon: "e-ribbon e-new"
+                                                }
+                                            }
+                                        ],
+                                        defaults: {
+                                            type: ej.Ribbon.type.button,
+                                            width: 60,
+                                            height: 70
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                text: "Clipboard",
+                                alignType: ej.Ribbon.alignType.columns,
+                                content: [
+                                    {
+                                        groups: [
+                                            {
+                                                id: "paste",
+                                                text: "paste",
+                                                toolTip: "Paste",
+                                                splitButtonSettings: {
+                                                    contentType: ej.ContentType.ImageOnly,
+                                                    prefixIcon: "e-ribbon e-ribbonpaste",
+                                                    targetID: "pasteSplit",
+                                                    buttonMode: "dropdown",
+                                                    arrowPosition: ej.ArrowPosition.Bottom
+                                                }
+                                            }
+                                        ],
+                                        defaults: {
+                                            type: ej.Ribbon.type.splitButton,
+                                            width: 50,
+                                            height: 70
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                text: "Font",
+                                alignType: "rows",
+                                content: [
+                                    {
+                                        groups: [
+                                            {
+                                                id: "fontfamily",
+                                                toolTip: "Font",
+                                                dropdownSettings: {
+                                                    dataSource: fontfamily,
+                                                    text: "Segoe UI",
+                                                    width: 150
+                                                }
+                                            },
+                                            {
+                                                id: "fontsize",
+                                                toolTip: "FontSize",
+                                                dropdownSettings: {
+                                                    dataSource: fontsize,
+                                                    text: "1pt",
+                                                    width: 65
+                                                }
+                                            }
+                                        ],
+                                        defaults: {
+                                            type: ej.Ribbon.type.dropDownList,
+                                            height: 28
+                                        }
+                                    }, {
+                                        groups: [
+                                            {
+                                                id: "bold",
+                                                toolTip: "Bold",
+                                                type: ej.Ribbon.type.toggleButton,
+                                                toggleButtonSettings: {
+                                                    contentType: ej.ContentType.ImageOnly,
+                                                    defaultText: "Bold",
+                                                    activeText: "Bold",
+                                                    defaultPrefixIcon: "e-ribbon bold",
+                                                    activePrefixIcon: "e-ribbon bold"
+                                                }
+                                            },
+                                            {
+                                                id: "italic",
+                                                toolTip: "Italic",
+                                                type: ej.Ribbon.type.toggleButton,
+                                                toggleButtonSettings: {
+                                                    contentType: ej.ContentType.ImageOnly,
+                                                    defaultText: "Italic",
+                                                    activeText: "Italic",
+                                                    defaultPrefixIcon: "e-ribbon e-ribbonitalic",
+                                                    activePrefixIcon: "e-ribbon e-ribbonitalic"
+                                                }
+                                            }
+                                        ],
+                                        defaults: {
+                                            isBig: false,
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                    }
+                ],
+            });
+        });
+    </script>
+   
 {% endhighlight %}
-
-The following output is displayed as a result of the above code example.
 
 ![](/js/Ribbon/Controls-Support_images/Controls-Support_img1.png)
 
+## Custom
+
+You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) as `custom` to render custom controls and Custom element id has to be specified as [`contentID`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-contentid).You can change the element defined in the custom template to appropriate Syncfusion control in the event of Ribbon [`create`](http://help.syncfusion.com/js/api/ejribbon#events:create).
+
+{% highlight html %}
+
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+        <li>
+            <a>FILE </a>
+            <ul>
+                <li><a>New</a></li>
+                <li><a>Print</a></li>
+            </ul>
+        </li>
+    </ul>
+    <input id="fontcolor" />
+    <table id="design" class="e-designtablestyle">
+        <tr>
+            <td>
+                <input type="checkbox" id="check1" /><label for="check1">Header Row</label></td>
+            <td>
+                <input type="checkbox" id="Check2" checked="checked" /><label for="Check2">First Column</label></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="check4" checked="checked" /><label for="check4">Total Row</label></td>
+            <td>
+                <input type="checkbox" id="Check5" /><label for="Check5">Last Column</label></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "600",
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu"
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "Font",
+                        content: [{
+                            groups: [{
+                                id: "fontcolor",
+                                toolTip: "Font Color",
+                                contentID: "fontcolor"
+                            }],
+                            // defaults settings to controls
+                            defaults: {
+                                height: 30,
+                                type: ej.Ribbon.type.custom
+                            }
+                        }]
+                    }, {
+                        text: "Operators",
+                        content: [{
+                            groups: [{
+                                id: "design",
+                                type: ej.Ribbon.type.custom,
+                                contentID: "design"
+                            }]
+                        }]
+                    }]
+                }],
+                // event of Ribbon create to initialize custom control
+                create: "createControl"
+            });
+        });
+        function createControl(args) {
+            var ribbon = $("#Ribbon").data("ejRibbon");
+            $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
+        }
+    </script>
+
+{% endhighlight %}
+
+![](/js/Ribbon/Controls-Support_images/Controls-Support_img2.png)
