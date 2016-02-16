@@ -47,6 +47,22 @@ $("#PivotGrid1").ejPivotGrid(...);
 
 ## Members
 
+### analysisMode `object`
+{:#members:analysismode}
+
+Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
+
+**Default Value:** ej.PivotGrid.AnalysisMode.Olap
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Relational });  
+
+{% endhighlight %}
+
+
 ### cssClass `string`
 {:#members:cssclass}
 
@@ -68,6 +84,101 @@ $("#PivotGrid1").ejPivotGrid({ cssClass: "gradient-lime" });
 Contains the serialized OlapReport at that instant.
 
 **Default Value:** “”
+
+### dataSource `object`
+{:#members:datasource}
+
+Initializes the data source for the PivotGrid widget, when it functions completely on client-side.
+
+**Default Value:** {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {data:value}});
+
+{% endhighlight %}
+
+
+### dataSource.data `object`
+{:#members:dataSource-data}
+
+Provides the raw data source for the PivotGrid.
+
+**Default Value:** null
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {data: value}});
+
+{% endhighlight %}
+
+
+### dataSource.columns `object`
+{:#members:datasource-columns}
+
+Lists out the items to be arranged in column section of PivotGrid.
+
+**Default Value:** []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {columns: itemsArray}});
+
+{% endhighlight %}
+
+### dataSource.rows `object`
+{:#members:datasource-rows}
+
+Lists out the items to be arranged in row section of PivotGrid.
+
+**Default Value:** []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {rows: itemsArray}});
+
+{% endhighlight %}
+
+
+### dataSource.values `object`
+{:#members:datasource-values}
+
+Lists out the items which supports calculation in PivotGrid.
+
+**Default Value:** []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {values: itemsArray}});
+
+{% endhighlight %}
+
+
+### dataSource.filters `object`
+{:#members:datasource-filters}
+
+Lists out the items which supports filtering of values in PivotGrid.
+
+**Default Value:** []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {filters: itemsArray}});
+
+{% endhighlight %}
+
 
 ### customObject `object`
 {:#members:customobject}
@@ -114,6 +225,36 @@ $("#PivotGrid1").ejPivotGrid({ enableCellSelection:true });
 
 {% endhighlight %}
 
+### enableCollapseByDefault `boolean`
+{:#members:enablecollapsebydefault}
+
+Collapses the Pivot Items along rows and columns by default.  It works only for relational data source.
+
+**Default Value:** false
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({enableCollapseByDefault: true});
+
+{% endhighlight %}
+
+### enableColumnGrandTotal `boolean`
+{:#members:enablecolumngrandtotal}
+
+Enables the display of grand total for all the columns.
+
+**Default Value:** true
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({enableColumnGrandTotal: true});
+
+{% endhighlight %}
+
 ### enableConditionalFormatting `boolean`
 {:#members:enableconditionalformatting}
 
@@ -128,6 +269,23 @@ Allows the user to format a specific set of cells based on the condition.
 $("#PivotGrid1").ejPivotGrid({ enableConditionalFormatting:true });
 
 {% endhighlight %}
+
+
+### enableDeferUpdate `boolean`
+{:#members:enabledeferupdate}
+
+Allows the user to refresh the control on-demand and not during every UI operation.
+
+**Default Value:** false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({enableDeferUpdate: true});
+
+{% endhighlight %}
+
 
 ### enableGroupingBar `boolean`
 {:#members:enablegroupingbar}
@@ -144,6 +302,23 @@ $("#PivotGrid1").ejPivotGrid({ enableGroupingBar:true });
 
 {% endhighlight %}
 
+
+### enableGrandTotal `boolean`
+{:#members:enablegrandtotal}
+
+Enables the display of grand total for rows and columns.
+
+**Default Value:** true
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({enableGrandTotal: true});
+
+{% endhighlight %}
+
+
 ### enableJSONRendering `boolean`
 {:#members:enablejsonrendering}
 
@@ -156,6 +331,36 @@ Allows the user to load PivotGrid using JSON data.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({ enableJSONRendering: true });
+
+{% endhighlight %}
+
+### enablePivotFieldList `boolean`
+{:#members:enablepivotfieldlist}
+
+Enables rendering of PivotGrid widget along with the PivotTable Field List, which allows UI operation.
+
+**Default Value:** true
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({enablePivotFieldList: true});
+
+{% endhighlight %}
+
+### enableRowGrandTotal `boolean`
+{:#members:enablerowgrandtotal}
+
+Enables the display of grand total for all the rows.
+
+**Default Value:** true
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({enableRowGrandTotal: true});
 
 {% endhighlight %}
 
@@ -328,6 +533,22 @@ Allows the user to set the localized language for the widget.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({ locale: "en-US" }}); 
+
+{% endhighlight %}
+
+
+### operationalMode `object`
+{:#members:operationalmode}
+
+Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
+
+**Default Value:** ej.PivotGrid.OperationalMode.ClientMode
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({operationalMode: ej.PivotGrid.OperationalMode.ServerMode});
 
 {% endhighlight %}
 
@@ -513,7 +734,6 @@ $("#PivotGrid1").ejPivotGrid({ url: "/wcf/PivotGridService.svc" });
 
 ## Methods
 
-
 ### doAjaxPost()
 {:#methods:doajaxpost}
 
@@ -553,6 +773,21 @@ $('#PivotGrid1').ejPivotGrid({
 var gridObj = $("#PivotGrid1").data("ejPivotGrid");
 gridObj.doPostBack("/PivotGridService.svc/Initialize", {"key", "Hello World"});
 </script>
+
+{% endhighlight %}
+
+
+### exportPivotGrid()
+{:#methods:exportpivotgrid}
+
+Exports the PivotGrid to an appropriate format based on the parameter passed.
+
+**Example:**
+
+{% highlight html %}
+ 
+var gridObj = $("# PivotGrid1").data("ejPivotGrid");
+gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 
 {% endhighlight %}
 
@@ -1642,4 +1877,63 @@ $("#PivotGrid1").ejPivotGrid({
 });      
 
 {% endhighlight %}
+
+
+## Enumeration
+
+### AnalysisMode  `enum`
+{:#enum:analysismode}
+
+Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Olap});
+
+{% endhighlight %}
+
+
+### ExportOptions  `enum`
+{:#enum:exportoptions}
+
+Allows the user to set the exporting options for PivotGrid widget. 
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({ exportOptions: ej.PivotGrid.ExportOptions.Excel});
+
+{% endhighlight %}
+
+### Layout  `enum`
+{:#enum:layout}
+
+Allows the user to set the layout for PivotGrid.
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.Normal });
+
+{% endhighlight %}
+
+
+### OperationalMode  `enum`
+{:#enum:Operationalmode}
+
+Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotGrid1").ejPivotGrid({operationalMode:ej.PivotGrid.OperationalMode.ServerMode});
+
+{% endhighlight %}
+
+
 

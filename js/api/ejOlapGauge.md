@@ -137,6 +137,71 @@ $("#OlapGauge1").ejOlapGauge({ numberFormat: ej.olap.OlapGauge.numberFormat.Defa
 
 {% endhighlight %}
 
+
+### labelFormatSettings.numberFormat `enum`
+{:#members:labelformatsettings-numberformat}
+
+Allows the user to change the number format of the label values in OlapGauge.
+
+**Default Value:** ej.olap.OlapGauge.NumberFormat.Default
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapGauge1").ejOlapGauge({labelFormatSettings: {numberFormat: ej.olap.OlapGauge.NumberFormat.Default} });
+
+{% endhighlight %}
+
+
+### labelFormatSettings.decimalPlaces `number`
+{:#members:labelFormatSettings-decimalPlaces}
+
+Allows you to change the position of a digit on the right-hand side of the decimal point for label value.
+
+**Default Value:** 5
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapGauge1").ejOlapGauge({labelFormatSettings: {decimalPlaces: 3} });
+
+{% endhighlight %}
+
+
+### labelFormatSettings.prefixText  `string`
+{:#members:labelFormatSettings-prefixText}
+
+Allows you to add a text at the beginning of the label.
+
+**Default Value:** " "
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapGauge1").ejOlapGauge({labelFormatSettings: {prefixText: “prefixTextValue”} });
+
+{% endhighlight %}
+
+
+### labelFormatSettings.suffixText `string`
+{:#members:labelFormatSettings-suffixText }
+
+Allows you to add text at the end of the label.
+
+**Default Value:** " "
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapGauge1").ejOlapGauge({labelFormatSettings: {suffixText: “suffixTextValue”} });
+
+{% endhighlight %}
+
+
 ### locale `string`
 {:#members:locale}
 
@@ -874,4 +939,18 @@ $("#OlapGauge1").ejOlapGauge({
 {% endhighlight %}
 
 
+## Enumeration
+
+### NumberFormat  `enum`
+{:#enum:numberformat}
+
+Allows the user to change the format of the label values in OlapGauge.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapGauge1").ejOlapGauge({labelFormatSettings: {numberFormat: ej.olap.OlapGauge.NumberFormat.Default} });
+
+{% endhighlight %}
 

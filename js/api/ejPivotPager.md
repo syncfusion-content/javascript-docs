@@ -175,3 +175,18 @@ pagerObj.initPagerProperties(150, {CategorialPageSize: 10, SeriesPageSize: 10, C
 </script>
 
 {% endhighlight %}
+
+## Enumeration
+
+### Mode `enum`
+{:#enum:mode}
+
+Allows the user to set the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager.
+
+**Example:**
+
+{% highlight html %}
+
+$("#PivotPager1").ejPivotPager({ mode: ej.PivotPager.Mode.Series });
+
+{% endhighlight %}
