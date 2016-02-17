@@ -7,13 +7,10 @@ platform: js
 keywords: Rating, ejRating, syncfusion, Rating api 
 ---
 
-
 # ejRating
 
 
-
 The Rating control provides an intuitive Rating experience that enables you to select a number of stars that represent a Rating. You can configure the item size, orientation and the number of displayed items in the Rating control. You can also customize the Rating star image by using custom CSS.
-
 
 
 #### Syntax
@@ -25,29 +22,22 @@ $(element).ejRating()
 {% endhighlight %}
 
 
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-// Create Rating
-$('#rating').ejRating(); 
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        // Create Rating
+        $('#rating').ejRating();
+    </script>
 
+{% endhighlight %}
 
 
 #### Requires
-
 
 
 * module:jQuery
@@ -61,14 +51,8 @@ $('#rating').ejRating();
 
 ## Members
 
-
-
-
 ### allowReset `boolean`
 {:#members:allowreset}
-
-
-
 
 Enables the rating control with reset button.It can be used to reset the rating control value.
 
@@ -76,172 +60,127 @@ Enables the rating control with reset button.It can be used to reset the rating 
 #### Default Value
 
 
-
-
 * true
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set allowReset API value during initialization  
-        $("#rating").ejRating({allowReset: true});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set allowReset API value during initialization
+        $("#rating").ejRating({ allowReset: true });
+    </script>
 
+{% endhighlight %}
 
 
 ### cssClass `string`
 {:#members:cssclass}
 
 
-
-
-Specify the CSS class to rating to achieve custom theme.
+Specify the CSS class to achieve custom theme.
 
 
 #### Default Value
 
 
-
-
 * ""
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-// Set the cssClass during initialization.
-        $("#rating").ejRating({  cssClass : "gradient-lime" });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        // Set the cssClass during initialization.
+        $("#rating").ejRating({ cssClass: "gradient-lime" });
+    </script>
+
+{% endhighlight %}
 
 
 
 ### enabled `boolean`
 {:#members:enabled}
 
-
-
-
 When this property is set to false, it disables the rating control.
-
 
 #### Default Value
 
-
-
-
 * true
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set enabled API value during initialization  
-        $("#rating").ejRating({enabled: true });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set enabled API value during initialization
+        $("#rating").ejRating({ enabled: true });
+    </script>
 
+{% endhighlight %}
 
 
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
-
-
-
 Save current model value to browser cookies for state maintanence. While refresh the page Rating control values are retained.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set persist API value during initialization  
-        $("#rating").ejRating({enablePersistence: true });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set persist API value during initialization
+        $("#rating").ejRating({ enablePersistence: true });
+    </script>
 
+{% endhighlight %}
 
 
 ### height `string`
 {:#members:height}
 
 
-
-
 Specifies the height of the Rating control wrapper.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
-<input id="rating"></input> 
- 
-<script>
-//To set height API value during initialization  
-        $("#rating").ejRating({height: "50" });
-</script>{% endhighlight %}
 
+    <input id="rating"></input>
 
+    <script>
+        //To set height API value during initialization
+        $("#rating").ejRating({ height: "50" });
+    </script>
+
+{% endhighlight %}
 
 
 ### incrementStep `number`
 {:#members:incrementstep}
-
-
 
 
 Specifies the value to be increased while navigating between shapes(stars) in Rating control.
@@ -250,62 +189,46 @@ Specifies the value to be increased while navigating between shapes(stars) in Ra
 #### Default Value
 
 
-
-
 * 1
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set incrementStep API value during initialization  
-        $("#rating").ejRating({incrementStep: 2 });
-</script>{% endhighlight %}
 
+    <input id="rating"></input>
 
+    <script>
+        //To set incrementStep API value during initialization
+        $("#rating").ejRating({ incrementStep: 2 });
+    </script>
+
+{% endhighlight %}
 
 
 ### maxValue `number`
 {:#members:maxvalue}
 
-
-
-
 Allow to render the maximum number of Rating shape(star).
-
 
 #### Default Value
 
-
-
-
 * 5
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set maxValue API value during initialization  
-        $("#rating").ejRating({maxValue: 10 });
-</script>{% endhighlight %}
+
+    <input id="rating"></input>
+
+    <script>
+        //To set maxValue API value during initialization
+        $("#rating").ejRating({ maxValue: 10 });
+    </script>
+
+{% endhighlight %}
 
 
 
@@ -314,43 +237,30 @@ Allow to render the maximum number of Rating shape(star).
 {:#members:minvalue}
 
 
-
-
 Allow to render the minimum number of Rating shape(star).
 
 
 #### Default Value
 
-
-
-
 * 0
-
-
 
 
 #### Example
 
-
-
 {% highlight html %}
  
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set minValue API value during initialization  
-        $("#rating").ejRating({minValue: 3 });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set minValue API value during initialization
+        $("#rating").ejRating({ minValue: 3 });
+    </script>
 
+{% endhighlight %}
 
 
 ### orientation `enum`
 {:#members:orientation}
-
-
 
 
 Specifies the orientation of Rating control. See <a href="global.html#Orientation">Orientation</a>
@@ -359,11 +269,7 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 #### Default Value
 
 
-
-
 * ej.Rating.Orientation.Horizontal
-
-
 
 
 #### Example
@@ -372,12 +278,14 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set orientation API value during initialization  
-        $("#rating").ejRating({orientation: ej.Rating.Orientation.Horizontal });
-</script> {% endhighlight %}
+    <input id="rating"></input>
+
+    <script>
+        //To set orientation API value during initialization
+        $("#rating").ejRating({ orientation: ej.Rating.Orientation.Horizontal });
+    </script> 
+
+{% endhighlight %}
 
 
 
@@ -385,43 +293,31 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 ### precision `enum`
 {:#members:precision}
 
-
-
-
 Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See <a href="global.html#Precision">Precision</a>
 
 
 #### Default Value
 
 
-
-
 * "full"
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set precision API value during initialization  
-        $("#rating").ejRating({precision: ej.Rating.Precision.Half});
-</script>{% endhighlight %}
 
+    <input id="rating"></input>
 
+    <script>
+        //To set precision API value during initialization
+        $("#rating").ejRating({ precision: ej.Rating.Precision.Half });
+    </script>
 
+{% endhighlight %}
 
 ### readOnly `boolean`
 {:#members:readonly}
-
-
 
 
 Interaction with Rating control can be prevented by enabling this API.
@@ -430,68 +326,50 @@ Interaction with Rating control can be prevented by enabling this API.
 #### Default Value
 
 
-
-
 * false
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set readOnly API value during initialization  
-        $("#rating").ejRating({readOnly: true});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set readOnly API value during initialization
+        $("#rating").ejRating({ readOnly: true });
+    </script>
 
-
+{% endhighlight %}
 
 ### shapeHeight `number`
 {:#members:shapeheight}
 
-
-
-
 To specify the height of each shape in Rating control.
-
 
 #### Default Value
 
-
-
-
 * 23
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set shapeHeight API value during initialization  
-        $("#rating").ejRating({shapeHeight: 25 });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set shapeHeight API value during initialization
+        $("#rating").ejRating({ shapeHeight: 25 });
+    </script>
 
+{% endhighlight %}
 
 
 ### shapeWidth `number`
 {:#members:shapewidth}
-
-
 
 
 To specify the width of each shape in Rating control.
@@ -500,34 +378,25 @@ To specify the width of each shape in Rating control.
 #### Default Value
 
 
-
-
 * 23
-
-
 
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//To set shapeWidth API value during initialization  
-        $("#rating").ejRating({shapeWidth: 25 });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set shapeWidth API value during initialization
+        $("#rating").ejRating({ shapeWidth: 25 });
+    </script>
 
+{% endhighlight %}
 
 
 ### showTooltip `boolean`
 {:#members:showtooltip}
-
-
-
 
 Enables the tooltip option.Currently selected value value will be displayed in tooltip.
 
@@ -535,36 +404,26 @@ Enables the tooltip option.Currently selected value value will be displayed in t
 #### Default Value
 
 
-
-
 * true
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set showTooltip API value during initialization  
-        $("#rating").ejRating({showTooltip: true});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set showTooltip API value during initialization
+        $("#rating").ejRating({ showTooltip: true });
+    </script>
 
+{% endhighlight %}
 
 
 ### value `number`
 {:#members:value}
-
-
-
 
 To specify the number of stars to be selected while rendering.
 
@@ -572,35 +431,25 @@ To specify the number of stars to be selected while rendering.
 #### Default Value
 
 
-
-
 * 1
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-</br>
-</br>
-<input id="rating"></input> 
- 
-<script>
-//To set value API value during initialization  
-        $("#rating").ejRating({value: 3 });
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //To set value API value during initialization
+        $("#rating").ejRating({ value: 3 });
+    </script>
 
+{% endhighlight %}
 
 
 ### width `string`
 {:#members:width}
-
-
 
 
 Specifies the width of the Rating control wrapper.
@@ -609,79 +458,65 @@ Specifies the width of the Rating control wrapper.
 #### Default Value
 
 
-
-
 * null
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
-<input id="rating"></input> 
- 
-<script>
-//To set width API value during initialization  
-        $("#rating").ejRating({width: "200" });
-</script>{% endhighlight %}
 
+    <input id="rating"></input>
 
+    <script>
+        //To set width API value during initialization
+        $("#rating").ejRating({ width: "200" });
+    </script>
+
+{% endhighlight %}
 
 ## Methods
-
-
-
 
 ### destroy()
 {:#methods:destroy}
 
-
-
-
-destroy the Rating widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
-
-
+Destroy the Rating widget all events bound will be unbind automatically and bring the control to pre-init state.
 
 #### Example
 
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+        // Create Rating
+        $("#rating").ejRating();
+        
+        // Create Rating Object
+        var ratingObj = $("#rating").data("ejRating");
+        ratingObj.destroy();
+        
+    </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<rating id="rating">Rating</rating> 
- 
-<script>
-$("#rating").ejRating();
-// Create Rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.destroy(); // destroy the button
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // destroy the rating
+        $("#rating").ejRating("destroy");
+    </script>
 
-{% highlight html %}
- 
-<rating id="rating">Rating</rating> 
- 
-<script>
-$("#rating").ejRating();
-// destroy the rating
-$("#rating").ejRating("destroy");
-</script>{% endhighlight %}
-
-
-
+{% endhighlight %}
 
 ### getValue()
 {:#methods:getvalue}
 
-
-
-
-To get the current value of rating control
-
+To get the current value of rating control.
 
 
 #### Returns:
@@ -692,28 +527,36 @@ Rating value
 #### Example
 
 
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+        // Create rating
+        $("#rating").ejRating();
+        
+        // Create rating object
+        var ratingObj = $("#rating").data("ejRating");
+
+        // Get current value of rating
+        ratingObj.getValue();
+
+     </script>
+
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Get current value of rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.getValue(); // get the current value of rting
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // To get the current value of rating
+        $("#rating").ejRating("getValue");
+    </script>
 
-{% highlight html %}
- 
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// To get the current value of rating
-$("#rating").ejRating("getValue");
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -724,7 +567,7 @@ $("#rating").ejRating("getValue");
 
 
 
-To hide the rating control
+To hide the rating control.
 
 
 
@@ -734,194 +577,190 @@ To hide the rating control
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Hide Rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.hide(); // hides the rating control
-</script>{% endhighlight %}
+    <input id="rating"></input>
+
+    <script>
+       
+        $("#rating").ejRating();
+        
+        //Create rating object
+        var ratingObj = $("#rating").data("ejRating");
+
+        // hides the rating control
+        ratingObj.hide(); 
+        
+    </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// hide the rating control
-$("#rating").ejRating("hide");
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // hide the rating control
+        $("#rating").ejRating("hide");
+    </script>
 
+{% endhighlight %}
 
 
 ### refresh()
 {:#methods:refresh}
 
-
-
-
-user can refresh the rating control to identify changes
-
+User can refresh the rating control to identify changes.
 
 
 #### Example
 
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+        $("#rating").ejRating();
+        // Create rating control object
+        var ratingObj = $("#rating").data("ejRating");
+        // Refresh the rating control
+        ratingObj.refresh(); 
+    </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Refresh the rating control
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.refresh(); // refreshes the rating control
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // To refresh the rating values
+        $("#rating").ejRating("refresh");
+    </script>
 
-{% highlight html %}
- 
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// To refresh the rating values
-$("#rating").ejRating("refresh");
-</script>{% endhighlight %}
-
-
+{% endhighlight %}
 
 
 ### reset()
 {:#methods:reset}
 
-
-
-
-To reset the rating value
-
-
+To reset the rating value.
 
 #### Example
 
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+        $("#rating").ejRating();
+        //  Create the rating object.
+        var ratingObj = $("#rating").data("ejRating");
+        
+        // reset the rating values
+        ratingObj.reset(); 
+    </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Reset Rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.reset(); // reset the rating values
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // reset the rating values
+        $("#rating").ejRating("reset");
+    </script>
 
-{% highlight html %}
- 
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// reset the rating values
-$("#rating").ejRating("reset");
-</script>{% endhighlight %}
-
-
-
+{% endhighlight %}
 
 ### setValue()
 {:#methods:setvalue}
 
-
-
-
-To set the current value of rating control
-
-
+To set the rating value.
 
 #### Example
 
 
+{% highlight html %}
+
+    <input id="rating"></input>
+
+    <script>
+    
+        $("#rating").ejRating();
+        
+        // Create the rating object
+        var ratingObj = $("#rating").data("ejRating");
+        
+        // Set current value of rating
+        ratingObj.setValue(); 
+        
+    </script>
+
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Set current value of rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.setValue(); // set the current value of rating
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // To set the current value of rating
+        $("#rating").ejRating("setValue");
+    </script>
 
-{% highlight html %}
- 
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// To set the current value of rating
-$("#rating").ejRating("setValue");
-</script>{% endhighlight %}
-
-
+{% endhighlight %}
 
 
 ### show()
 {:#methods:show}
 
-
-
-
 To show the rating control
-
-
 
 #### Example
 
 
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+
+        $("#rating").ejRating();
+
+        // Create rating object
+        var ratingObj = $("#rating").data("ejRating");
+
+        // shows the rating control
+        ratingObj.show();
+
+    </script>
+
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// Show Rating
-var ratingObj = $("#rating").data("ejRating");
-ratingObj.show(); // shows the rating control
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        $("#rating").ejRating();
+        // show the rating control
+        $("#rating").ejRating("show");
+    </script>
 
-{% highlight html %}
- 
-<input id="rating"></input> 
- 
-<script>
-$("#rating").ejRating();
-// show the rating control
-$("#rating").ejRating("show");
-</script>{% endhighlight %}
-
-
+{% endhighlight %}
 
 ## Events
 
-
-
-
 ### change
 {:#events:change}
-
-
-
 
 Fires when Rating value changes.
 
@@ -988,27 +827,22 @@ event{% endhighlight %}</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//mouseover event for button
-$("#rating").ejRating({
-   change: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //change event for rating
+        $("#rating").ejRating({
+            change: function (args) { }
+        });
+    </script>
 
+{% endhighlight %}
 
 
 ### click
 {:#events:click}
-
-
-
 
 Fires when Rating control is clicked successfully.
 
@@ -1072,30 +906,23 @@ event{% endhighlight %}</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//click event for button
-$("#rating").ejRating({
-   click: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //click event for rating
+        $("#rating").ejRating({
+            click: function (args) { }
+        });
+    </script>
 
-
+{% endhighlight %}
 
 ### create
 {:#events:create}
-
-
-
 
 Fires when Rating control is created.
 
@@ -1147,30 +974,23 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//create event for rating
-$("#rating").ejRating({
-   create: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //create event for rating
+        $("#rating").ejRating({
+            create: function (args) { }
+        });
+    </script>
 
-
+{% endhighlight %}
 
 ### destroy
 {:#events:destroy}
-
-
-
 
 Fires when Rating control is destroyed successfully.
 
@@ -1222,32 +1042,26 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//destroy event for rating
-$("#rating").ejRating({
-   destroy: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //destroy event for rating
+        $("#rating").ejRating({
+            destroy: function (args) { }
+        });
+    </script>
 
-
+{% endhighlight %}
 
 ### mouseout
 {:#events:mouseout}
 
 
-
-
-Fires when mouse hover is removed from Rating control
+Fires when mouse hover is removed from Rating control.
 
 <table class="params">
 <thead>
@@ -1309,32 +1123,25 @@ event{% endhighlight %}</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//mouseover event for button
-$("#rating").ejRating({
-   mouseout: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
 
+    <script>
+        //mouseout event for Rating
+        $("#rating").ejRating({
+            mouseout: function (args) { }
+        });
+    </script>
 
-
+{% endhighlight %}
 
 ### mouseover
 {:#events:mouseover}
 
-
-
-
-Fires when mouse hovered over the Rating control
+Fires when mouse hovered over the Rating control.
 
 <table class="params">
 <thead>
@@ -1405,18 +1212,18 @@ index{% endhighlight %}</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input id="rating"></input> 
- 
-<script>
-//mouseover event for button
-$("#rating").ejRating({
-   mouseover: function (args) {}
-});
-</script>{% endhighlight %}
+    <input id="rating"></input>
+
+    <script>
+        //mouseover event for rating
+        $("#rating").ejRating({
+            mouseover: function (args) { }
+        });
+    </script>
+
+{% endhighlight %}
 
 
 
