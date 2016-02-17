@@ -60,7 +60,7 @@ By default, the ListBox widget allows single item selection. We can select speci
 
 Multiple selection can be enabled using “allowMultiSelection” property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
-{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction). {% endseealso %}
+{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/keyboard-interaction). {% endseealso %}
 
 {% highlight js %}
 
