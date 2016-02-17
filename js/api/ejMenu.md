@@ -149,7 +149,7 @@ To enable or disable the Animation while hover or click an menu items.See <a hre
 
 Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
 
-#### Default Valu
+#### Default Value
 
 * null
 
