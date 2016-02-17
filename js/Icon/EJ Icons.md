@@ -1,25 +1,69 @@
 ---
 layout: post
-title: Icon Library
-description: Icon Library
+title: EJ Icons
+description: EJ Icons
 platform: js
 control: Introduction
 documentation: ug
 ---
 
-# Icons
+# EJ Icons
 
-The **Essential Studio for JavaScript** provide icons library that contains the number of built-in icons. You can use these icons to display in your application, you need to configure their CSS class names to elements in the application. Use the following syntax to apply class names.
+The **Essential Studio for JavaScript** provide icons library that contains the number of built-in icons. You can use these icons to display in your application by configuring their CSS class names to elements in the application. Use the following syntax to apply the class names.
 
-**Syntax**: .e-icon .e-[icon description]
+**Syntax**: e-icon e-[icon description]
 
 **Example**:
 
+The following example showcase to display the ejicon by using their corresponding class names.
+
+{% tabs %}
 {% highlight html %}
 
-    <span class=".e-icon .e-search"></span>
+<!doctype html>
+<html>
+<head>
+    <title>Essential Studio for JavaScript : Icon Set</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+    //css references
+</head>
+<body>
+  <div class="icons">
+   <ul>
+     <li>
+       <div class="e-icon e-search"></div>
+     </li>
+     <li>
+       <div class="e-icon e-settings"></div>
+     </li>
+     <li>
+       <div class="e-icon e-upload"></div>
+     </li>
+     <li>
+       <div class="e-icon e-font"></div>
+     </li>
+   </ul>
+  </div>
+</body>
+</html>
 
 {% endhighlight %}
+
+{% highlight css %}
+
+<style type="text/css" class="cssStyles">
+   div.icons li
+        {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 20px;
+            list-style: none;
+           
+        }
+</style>
+
+{% endhighlight %}
+{% endtabs %}
 
 N>  Make sure the css file (ej.widgets.all.min.css/ej.web.all.min.css) is referred in your application.
 
