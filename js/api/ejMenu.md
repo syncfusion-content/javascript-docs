@@ -149,7 +149,7 @@ To enable or disable the Animation while hover or click an menu items.See <a hre
 
 Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
 
-#### Default Valu
+#### Default Value
 
 * null
 
@@ -190,7 +190,7 @@ Specifies the target id of context menu. On right clicking the specified context
 ### cssClass `string`
 {:#members:cssclass}
 
-Specify the CSS class to Menu to achieve custom theme.
+Specify the CSS class to achieve custom theme.
 
 #### Default Value
 
@@ -605,7 +605,7 @@ Fields used to bind the data source and it includes following field members to m
 {% highlight js %}        
  
         //To set fields API value during initialization  
-        //To set fields API value 
+
               $("#menu").ejMenu({ 
                fields: { dataSource: window.menu, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }
           });
@@ -818,7 +818,7 @@ Specifies the type of the menu. Essential JavaScript Menu consists of two type o
 
 #### Default Value
 
-* ej.menuType.NormalMenu
+* ej.MenuType.NormalMenu
 
 #### Example
 

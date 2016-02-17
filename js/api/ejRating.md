@@ -398,7 +398,7 @@ To specify the width of each shape in Rating control.
 ### showTooltip `boolean`
 {:#members:showtooltip}
 
-Enables the tooltip option.Currently selected value value will be displayed in tooltip.
+Enables the tooltip option.Currently selected value will be displayed in tooltip.
 
 
 #### Default Value
