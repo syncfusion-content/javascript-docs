@@ -76,6 +76,21 @@ $("#OlapClient1").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline 
 
 {% endhighlight %}
 
+### clientExportMode `string`
+{:#members:clientexportmode}
+
+Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported. 
+
+**Default Value:** ej.olap.OlapClient.ClientExportMode.ChartAndGrid 
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExportMode.ChartAndGrid });
+
+{% endhighlight %}
+
 ### cssClass `string`
 {:#members:cssclass}
 
@@ -208,6 +223,21 @@ Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
 {% highlight html %}
  
 $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly } });
+
+{% endhighlight %}
+
+### enableDeferUpdate `boolean`
+{:#members:enabledeferupdate}
+
+Allows the user to refresh the control on-demand and not during every UI operation. 
+
+**Default Value:** false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapClient1").ejOlapClient({ enableDeferUpdate: true });
 
 {% endhighlight %}
 
@@ -1136,5 +1166,59 @@ $("#OlapClient1").ejOlapClient({
 {% endhighlight %}
 
 
+## Enumeration
 
+
+### clientExportMode `enum`
+{:#enum:clientexportmode}
+
+Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExportMode.ChartAndGrid});
+
+{% endhighlight %}
+
+### ControlPlacement  `enum`
+{:#enum:controlplacement}
+
+Allow the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or tile view.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab} });
+
+{% endhighlight %}
+
+
+### DisplayMode  `enum`
+{:#enum:displaymode}
+
+Sets the display mode to view only Chart or only Grid or both in OlapClient.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly } });
+
+{% endhighlight %}
+
+### DefaultView `enum`
+{:#enum:defaultview}
+
+Allows the user to set either Chart or Grid as the start-up widget.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapClient1").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClient.DefaultView.Grid} });
+
+{% endhighlight %}
 

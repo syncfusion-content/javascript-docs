@@ -164,6 +164,22 @@ $("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "MyMethod1", 
 
 {% endhighlight %}
 
+### serviceMethodSettings.exportOlapChart `string`
+{:#members:servicemethodsettings-exportolapchart}
+
+Allows the user to set the custom name for the service method that’s responsible for exporting.
+
+**Default Value:** "Export"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("# OlapChart1").ejOlapChart({ serviceMethodSettings: { exportOlapChart: "Export"} });                                  
+
+{% endhighlight %}
+
+
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
@@ -844,5 +860,32 @@ Allows the user to set shape for the marker.
 {% highlight html %}
 
 $("#OlapChart1").ejOlapChart({commonSeriesOptions :{marker :{ shape: ej.olap.OlapChart.SymbolShapes.LeftArrow} }});
+
+{% endhighlight %}
+
+
+### ChartTypes `enum`
+{:#enum:charttypes}
+
+Allows the user to set the type for OlapChart.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapChart1").ejOlapChart({commonSeriesOptions :{ type: ej.olap.OlapChart.ChartTypes.Column} });
+
+{% endhighlight %}
+
+### ExportOption  `enum`
+{:#enum:exportoption }
+
+Allows the user to export OlapChart to an appropriate format based on the parameter passed.
+
+**Example:**
+
+{% highlight html %}
+
+$("#OlapChart1").ejOlapChart({commonSeriesOptions :{ exportOlapChart: ej.olap.OlapChart.ExportOptions.Excel } });
 
 {% endhighlight %}
