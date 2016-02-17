@@ -201,7 +201,7 @@ namespace OlapClientDemo
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-                return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString());
+                return jsonResult.ContainsKey("gridLayout") ? olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString()) : olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
             }
             [System.Web.Http.ActionName("InitializeChart")]
             [System.Web.Http.HttpPost]

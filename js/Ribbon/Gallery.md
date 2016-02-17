@@ -1,120 +1,259 @@
 ---
 layout: post
 title: Gallery
-description: gallery
-platform: js
-control: Ribbon
+description:gallery
 documentation: ug
+platform: js
+keywords: gallery,ribbon gallery
 ---
 
 # Gallery
 
-The **Ribbon** control has gallery support. By using the Gallery in Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the **tabgroups**.
+Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as [`button`](http://help.syncfusion.com/js/api/ejbutton)/[`menu`](http://help.syncfusion.com/js/api/ejmenu) to display images, text, or both images and text. You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) of group as `gallery`.
 
-To use the gallery feature, include the following properties under **tabgroups**.
+## Gallery Items
 
-* **id** –defines the id of the gallery.
-* **type**- defines the type of the item and it must be of type ej.Ribbon.type.gallery.
-* **columns** –defines the number of columns to be displayed in a row at intial without gallery expand operation.
-* **expandedColumns**-defines the number of columns to be displayed in a row at gallery expand operation.
-* **itemHeight** –defines the height of the  contents.
-* **itemWidth** –defines the width of contents.
-* **galleryItems** –defines the collection of the items to be included in the gallery.
-* **customGalleryItems**- defines the additional items to be  displayed at gallery expand operation. It can be of customItemType  ej.Ribbon. customItemType.button or ej.Ribbon. customItemType.menu. By default value it is ej.Ribbon. customItemType.button.
+[`Gallery items`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems) are collection of the items to be included in the main gallery. You can set [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems-text) and [`toolTip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems-tooltip) to gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/js/api/ejbutton).
+ 
+Number of [`columns`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-columns) to display in gallery for each row should be specified and the Number of columns in Expanded State [`(expandedColumns)`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-expandedcolumns) can be customized, if not set, `columns` count will be set as default. 
+
+N> The [`itemHeight`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-itemheight) and [`itemWidth`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-itemwidth) for gallery item can be set, if not set default values will be used.
 
 {% highlight html %}
-     
-    <!-- ... -->
-    <head>
-    </head>
-    <!-- ... -->
-    <body>
-       <div id="defaultRibbon">
-       </div>
-       <ul id="ribbonmenu">
-          <li><a>FILE</a> </li>
-       </ul>
-       <ul id="custommenu">
-          <li>
-             <a>New Quick Step</a>
-             <ul>
-                <li><a>Flag and Move</a></li>
-             </ul>
-          </li>
-       </ul>
-       <div id="paste" style="height: 40px; width: 43px;">Paste</div>
-       <script type="text/javascript">
-            $(function() {
-                $("#defaultRibbon").ejRibbon({
-                    width: "800",
-                    applicationTab: {
-                        type: ej.Ribbon.applicationTabType.menu,
-                        menuItemID: "ribbonmenu"
-                    },
-                    tabs: [{
-                        id: "home",
-                        text: "HOME",
-                        groups: [{
-                            text: "Clipboard",
-                            type: "custom",
-                            contentID: "paste"
-                        }, {
-                            text: "Gallery",
-                            alignType: ej.Ribbon.alignType.rows,
-                            content: [{
-                                groups: [{
-                                    id: "Gallery1",
-                                    columns: 2,
-                                    itemHeight: 54,
-                                    itemWidth: 68,
-                                    expandedColumns: 3,
-                                    type: ej.Ribbon.type.gallery,
-                                    galleryItems: [{
-                                        text: "Content1",
-                                        toolTip: "Content1",
-                                    }, {
-                                        text: "Content2",
-                                        toolTip: "Content2",
-                                    }, {
-                                        text: "Content3",
-                                        toolTip: "Content3"
-                                    }, {
-                                        text: "Content4",
-                                        toolTip: "Content4"
-                                    }, {
-                                        text: "Content5",
-                                        toolTip: "Content5"
-                                    }],
-                                    customGalleryItems: [{
-                                        text: "Save Selection as new quick style",
-                                        toolTip: "Save",
-                                        customItemType: ej.Ribbon.customItemType.button,
-                                    }, {
-                                        customItemType: ej.Ribbon.customItemType.menu,
-                                        menuId: "custommenu"
-                                    }]
+
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+        <li><a>FILE</a>
+            <ul>
+                <li><a>Open</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "500",
+                applicationTab: {
+                    type:ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu"
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        type: "gallery",
+                        text: "Gallery",
+                        content: [{
+                            groups: [{
+                                id: "Gallery",
+                                columns: 2,
+                                itemHeight: 54,
+                                itemWidth: 73,
+                                expandedColumns: 3,
+                                type: ej.Ribbon.type.gallery,
+                                galleryItems: [{
+                                    text: "GalleryContent1",
+                                    toolTip: "GalleryContent1",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent1 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent2",
+                                    toolTip: "GalleryContent2",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent2 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent3",
+                                    toolTip: "GalleryContent3",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent3 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent4",
+                                    toolTip: "GalleryContent4",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent4 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
                                 }]
                             }]
                         }]
                     }]
-                });
+                }]
             });
-       </script>
-    </body>
-    <!-- ... -->
+        });
+    </script>
+    <style type="text/css">
+        .e-gallerycontent1 {
+            background-position: 0 -105px;
+        }
+        .e-gallerycontent2 {
+            background-position: -69px -105px;
+        }
+        .e-gallerycontent3 {
+            background-position: -136px -105px;
+        }
+        .e-gallerycontent4 {
+            background-position: 0 -53px;
+        }
+        .e-gbtnposition {
+            margin-top: 5px;
+        }
+        .e-gbtnimg {
+            background-image: url("../themes/common-images/ribbon/homegallery.png");
+            background-repeat: no-repeat;
+            height: 64px;
+            width: 64px;
+        }
+    </style>
+
 
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
 
 ![](/js/Ribbon/Gallery_images/Gallery_img1.png)
 
-Ribbon control default Gallery.
+Ribbon Gallery.
 {:.caption}
 
 
 ![](/js/Ribbon/Gallery_images/Gallery_img2.png)
 
-Ribbon control after  Gallery expand operation
+Gallery at Expanded State
 {:.caption}
 
+## Custom Gallery Items
+
+[`Custom gallery items`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems) are the additional items to be displayed at gallery expanded state. You can set [`customItemType`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) as `button` or `menu`, Default is `button`.
+
+You can also set [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-text) and [`toolTip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-tooltip) to custom gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/js/api/ejbutton)/[`menuSettings`](http://help.syncfusion.com/js/api/ejmenu) based on the [`customItemType`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) specified.
+
+{% highlight html %}
+
+    <div id="Ribbon"></div>
+    <ul id="ribbonmenu">
+        <li><a>FILE</a> </li>
+    </ul>
+    <ul id="custommenu">
+        <li>
+            <a>New Quick Step</a>
+            <ul>
+                <li><a>Flag and Move</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $(function () {
+            $("#Ribbon").ejRibbon({
+                width: "500",
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu"
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        type: "gallery",
+                        text: "Gallery",
+                        content: [{
+                            groups: [{
+                                id: "Gallery",
+                                columns: 2,
+                                itemHeight: 54,
+                                itemWidth: 73,
+                                expandedColumns: 3,
+                                type: ej.Ribbon.type.gallery,
+                                galleryItems: [{
+                                    text: "GalleryContent1",
+                                    toolTip: "GalleryContent1",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent1 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent2",
+                                    toolTip: "GalleryContent2",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent2 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent3",
+                                    toolTip: "GalleryContent3",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent3 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }, {
+                                    text: "GalleryContent4",
+                                    toolTip: "GalleryContent4",
+                                    buttonSettings: {
+                                        contentType: ej.ContentType.ImageOnly,
+                                        prefixIcon: "e-gallerycontent4 e-gbtnimg",
+                                        cssClass: "e-gbtnposition"
+                                    }
+                                }],
+                                customGalleryItems: [{
+                                    customItemType: ej.Ribbon.customItemType.menu,
+                                    menuId: "custommenu",
+                                    menuSettings: {
+                                        openOnClick: false
+                                    }
+                                }, {
+                                    text: "Clear Formatting",
+                                    toolTip: "Clear Formatting",
+                                    customItemType: ej.Ribbon.customItemType.button,
+                                    buttonSettings: {                                        
+                                        cssClass: "e-extrabtnstyle"
+                                    }
+                                }]
+                            }]
+                        }]
+                    }]
+                }]
+            });
+        });
+    </script>
+    <style type="text/css">
+        .e-gallerycontent1 {
+            background-position: 0 -105px;
+        }
+        .e-gallerycontent2 {
+            background-position: -69px -105px;
+        }
+        .e-gallerycontent3 {
+            background-position: -136px -105px;
+        }
+        .e-gallerycontent4 {
+            background-position: 0 -53px;
+        }
+        .e-gbtnposition {
+            margin-top: 5px;
+        }
+        .e-gbtnimg {
+            background-image: url("../themes/common-images/ribbon/homegallery.png");
+            background-repeat: no-repeat;
+            height: 64px;
+            width: 64px;
+        }
+        .e-extracontent .e-extrabtnstyle {
+            padding-left: 28px;
+            text-align: left;
+        }
+    </style>
+
+{% endhighlight %}
+
+![](/js/Ribbon/Gallery_images/Gallery_img3.png)
