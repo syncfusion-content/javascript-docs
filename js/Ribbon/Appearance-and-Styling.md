@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Appearance-and-Styling
-description:appearance and styling
+description: appearance and styling
 documentation: ug
 platform: js
 keywords: appearance and styling,ribbon appearance and styling
