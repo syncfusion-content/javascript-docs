@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Get-Ribbon-object
-description:get ribbon object
+description: get ribbon object
 documentation: ug
 platform: js
 keywords: get ribbon object,ribbon get ribbon object

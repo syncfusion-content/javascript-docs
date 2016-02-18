@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Ribbon-Application-Tab
-description:application tab
+description: application tab
 documentation: ug
 platform: js
 keywords: application tab,ribbon application tab

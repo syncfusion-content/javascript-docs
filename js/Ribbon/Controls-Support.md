@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Controls-Support
-description:controls support
+description: controls support
 documentation: ug
 platform: js
 keywords: controls support,ribbon controls support
@@ -22,12 +22,11 @@ The following table describes about the built in controls [`type`](http://help.s
 <th>Control Settings</th>
 <th class="last">Example</th>
 </tr>
-</thead>
+</thead>                     
 <tbody>
 <tr>
 <td class="type">Button</td>
-<td class="control settings"><span class="param-type">[`ejButton`](http://help.syncfusion.com/js/api/ejbutton) -  [`buttonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings)</span></td>
-<td class="example last">
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejbutton">ejButton</a> -  <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings">buttonSettings</a></span></td><td class="example last">
 	buttonSettings: {
 					width: 70,
 					contentType: ej.ContentType.ImageOnly,
@@ -37,7 +36,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">SplitButton</td>
-<td class="control settings"><span class="param-type">[`ejSplitButton`](http://help.syncfusion.com/js/api/ejsplitbutton) - [`splitButtonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-splitbuttonsettings)</span></td>
+<td class="control settings"><span class="param-type"> <a href="http://help.syncfusion.com/js/api/ejsplitbutton">ejSplitButton</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-splitbuttonsettings">splitButtonSettings</a></span></td>
 <td class="example last">
 	splitButtonSettings: {
                           contentType: ej.ContentType.ImageOnly,
@@ -50,7 +49,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">ToggleButton</td>
-<td class="control settings"><span class="param-type">[`ejToggleButton`](http://help.syncfusion.com/js/api/ejtogglebutton) - [`toggleButtonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-togglebuttonsettings)</span></td>
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejtogglebutton">ejToggleButton</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-togglebuttonsettings">toggleButtonSettings</a></span></td>
 <td class="example last">
 	toggleButtonSettings: {
                            contentType: ej.ContentType.ImageOnly,
@@ -63,7 +62,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">DropDownList</td>
-<td class="control settings"><span class="param-type">[`ejDropDownList`](http://help.syncfusion.com/js/api/ejdropdownlist) - [`dropdownSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-dropdownsettings)</span></td>
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejdropdownlist">ejDropDownList</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-dropdownsettings">dropdownSettings</a></span></td>
 <td class="example last">
 	dropdownSettings: {
                       dataSource: fontsize,

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Contextual-Tab-and-Tab-Set
-description:contextual tab and tab set
+description: contextual tab and tab set
 documentation: ug
 platform: js
 keywords: contextual tab and tab set
