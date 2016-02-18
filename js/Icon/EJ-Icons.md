@@ -23,7 +23,7 @@ The following example showcase to display the ejicon by using their correspondin
 <!doctype html>
 <html>
 <head>
-    <title>Essential Studio for JavaScript : Icon Set</title>
+    <title>Essential Studio for JavaScript : EJ Icons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     //css references
 </head>
