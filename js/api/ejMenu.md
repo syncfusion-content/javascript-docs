@@ -9,16 +9,7 @@ keywords: Menu, ejMenu, syncfusion, Menu api
 
 # ejMenu
 
-
-
-
-
 The Menu control supports displaying a Menu created from list items. The Menu is based on a hierarchy of UL and LI elements where the list items are rendered as sub-menu items.
-
-
-
-
-
 
 #### Syntax
 
@@ -28,66 +19,50 @@ $(element).ejMenu()
 
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+{% endhighlight %}
 
- 
-<script>
-// Create Menu
-$("#menu").ejMenu({height: 22});        
-</script>{% endhighlight %}
+{% highlight js %}
 
+    $("#menu").ejMenu();
 
-
-
-
+{% endhighlight %}
 
 
 #### Requires
@@ -111,693 +86,469 @@ $("#menu").ejMenu({height: 22});
 * module:ej.checkbox.js
 
 
-
-
 ## Members
-
-
-
-
-
-
-
 
 ### animationType `enum`
 {:#members:animationtype}
 
-
-
-
-
-
-
-
-To enable or disable the Animation while hover or click an menu items..See <a href="global.html#AnimationType">AnimationType</a>
-
-
-
+To enable or disable the Animation while hover or click an menu items.See <a href="global.html#AnimationType">AnimationType</a>
 
 #### Default Value
 
-
-
-
-
-
-
-* ej.animation.Default
-
-
-
-
-
-
-
+* ej.AnimationType.Default
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>  
-//To set animationType API value during initialization  
-  //To set animationType API value 
-  $("#menu").ejMenu({ height:22,animationType: ej.AnimationType.Default }); 
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
+  
+      //To set animationType API value during initialization   
+      $("#menu").ejMenu({ animationType: ej.AnimationType.Default }); 
 
-
-
-
-
+{% endhighlight %}
 
 ### contextMenuTarget `string`
 {:#members:contextmenutarget}
 
-
-
-
-
-
-
-
 Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * null
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
+
      <div id="target" class="textarea">
-                           HTML is written in the form of HTML elements consisting of tags enclosed in angle
-                           brackets (like
-                           <html>
-                           ),within the web page content. HTML tags most commonly come in pairs like and ,although
-                           some tags, known as empty elements, are unpaired, for example
-                           <img>. The purpose of a web browser is to read HTML documents and compose them into
-                           visible or audible web pages. The browser does not display the HTML tags, but uses
-                           the tags to interpret the content of the page.
-                       </div>
-                       <ul id="contextMenu">
-                           <li><a>Cut</a></li> 
-                           <li><a>Copy</a></li> 
-                           <li><a>Paste</a></li> 
-                      <li class="separator"></li> 
-                           <li><a>Comments</a></li>
-                           <li><a>Links</a></li>
-                           <li><a>Clear Formatting</a></li>  
-                       </ul>           
-<script>
-//To set contextMenuTarget API value during initialization  
-        //To set contextMenuTarget API value 
-        $("#contextMenu").ejMenu({menuType:ej.MenuType.ContextMenu, height:22,contextMenuTarget:"#target"});  
-</script>{% endhighlight %}
+        HTML is written in the form of HTML elements consisting of tags enclosed in angle
+        brackets (like
+        <html>
+        ),within the web page content. HTML tags most commonly come in pairs like and ,although
+        some tags, known as empty elements, are unpaired, for example
+        <img>. The purpose of a web browser is to read HTML documents and compose them into
+        visible or audible web pages. The browser does not display the HTML tags, but uses
+        the tags to interpret the content of the page.
+    </div>
+    <ul id="contextMenu">
+        <li><a>Cut</a></li>
+        <li><a>Copy</a></li>
+        <li><a>Paste</a></li>
+        <li class="separator"></li>
+        <li><a>Comments</a></li>
+        <li><a>Links</a></li>
+        <li><a>Clear Formatting</a></li>
+    </ul>
+ 
+{% endhighlight %}
 
+{% highlight js %}   
 
+        //To set contextMenuTarget API value during initialization  
 
+        $("#contextMenu").ejMenu({ menuType: ej.MenuType.ContextMenu, contextMenuTarget: "#target" });
 
-
-
+{% endhighlight %}
 
 ### cssClass `string`
 {:#members:cssclass}
 
-
-
-
-
-
-
-
-Specify the CSS class to Menu to achieve custom theme.
-
-
-
+Specify the CSS class to achieve custom theme.
 
 #### Default Value
 
-
-
-
-
-
-
 * ""
-
-
-
-
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %} 
  
-<script>
-//To Set the CSS class during initialization.                   
-        $("#menu").ejMenu({ height:22, cssClass:'gradient-lime ' });            
-</script>{% endhighlight %}
+     //To Set the CSS class during initialization.    
 
+     $("#menu").ejMenu({  cssClass: 'gradient-lime ' });
 
-
-
-
+{% endhighlight %}
 
 
 ### enableAnimation `boolean`
 {:#members:enableanimation}
 
-
-
-
-
-
-
-
-Gets or sets a value that indicates whether to enable or disable the animation effect.
-
-
-
+To enable or disable the Animation effect while hover or click an menu items.
 
 #### Default Value
 
-
-
-
-
-
-
 * true
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul> 
 
+{% endhighlight %}
+
+{% highlight js %}
  
-<script> 
-//To set enableAnimation API value during initialization  
-  //To set enableAnimation API value 
-  $("#menu").ejMenu({ height:22,enableAnimation: true });
-</script>{% endhighlight %}
+      //To set enableAnimation API value during initialization 
+      
+      $("#menu").ejMenu({ enableAnimation: true });
 
-
-
-
-
+{% endhighlight %}
 
 
 ### enableCenterAlign `boolean`
 {:#members:enablecenteralign}
 
-
-
-
-
-
-
-
 Specifies the root menu items to be aligned center in horizontal menu.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * false
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+{% endhighlight %}
 
+{% highlight js %}
  
-<script> 
-//To set enableCenterAlign API value during initialization  
-        //To set enableCenterAlign API value 
-        $("#menu").ejMenu({ height:22,enableCenterAlign: true });
-</script>{% endhighlight %}
+      //To set enableCenterAlign API value during initialization  
 
+      $("#menu").ejMenu({ enableCenterAlign: true });
 
-
-
-
+{% endhighlight %}
 
 
 ### enabled `boolean`
 {:#members:enabled}
 
 
-
-
-
-
-
-
 Enable / Disable the Menu control.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * true
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+     //To set enabled API value during initialization  
  
-<script> 
-//To set enabled API value during initialization  
-        //To set enabled API value 
-        $("#menu").ejMenu({ height:22,enabled: true });
-</script>{% endhighlight %}
+     $("#menu").ejMenu({ enabled: true });
 
-
-
-
-
+{% endhighlight %}
 
 
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-
-
-
-
-
-
-
 Specifies the menu items to be displayed in right to left direction.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * false
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
  
-<script> 
-//To set rtl API value during initialization  
-        //To set rtl API value 
-        $("#menu").ejMenu({ height:22,enableRTL: true });
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
 
+     //To set rtl API value during initialization  
 
+     $("#menu").ejMenu({ enableRTL: true });
 
-
+{% endhighlight %}
 
 
 ### enableSeparator `boolean`
 {:#members:enableseparator}
 
-
-
-
-
-
-
-
- When this property sets to false, the menu list is displayed without any separators.
-
-
-
+ When this property sets to false, the menu items is displayed without any separators.
 
 #### Default Value
 
-
-
-
-
-
-
 * true
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}
  
-<script> 
-//To set enableSeparator API value during initialization  
-        //To set enableSeparator API value 
-        $("#menu").ejMenu({ height:22,enableSeparator: true });
-</script>{% endhighlight %}
+        //To set enableSeparator API value during initialization  
 
+        $("#menu").ejMenu({ enableSeparator: true });
 
-
-
-
+{% endhighlight %}
 
 
 ### excludeTarget `string`
 {:#members:excludetarget}
 
-
-
-
-
-
-
-
 Specifies the target which needs to be excluded. i.e., The context menu will not be displayed in those specified targets.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * null
 
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
      <div id="target" class="textarea">
@@ -821,224 +572,88 @@ Specifies the target which needs to be excluded. i.e., The context menu will not
                            <li><a>Comments</a></li>
                            <li><a>Links</a></li>
                            <li><a>Clear Formatting</a></li>  
-                       </ul>           
-<script> 
-//To set excludeTarget API value during initialization  
-//To set excludeTarget API value 
-$("#contextMenu").ejMenu({ menuType:ej.MenuType.ContextMenu,height:22,contextMenuTarget:"#target",excludeTarget: ".inner" });
-</script>{% endhighlight %}
+                       </ul>  
+         
+{% endhighlight %}
 
+{% highlight js %}                  
+ 
+    //To set excludeTarget API value during initialization  
 
+    $("#contextMenu").ejMenu({ menuType:ej.MenuType.ContextMenu,contextMenuTarget:"#target",excludeTarget: ".inner" });
 
-
-
+{% endhighlight %}
 
 
 ### fields `object`
 {:#members:fields}
 
-
-
-
-
-
-
-
 Fields used to bind the data source and it includes following field members to make databind easier.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * null
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
-<ul id="menu"/>
-<script> 
-//To set fields API value during initialization  
-        //To set fields API value 
-              $("#menu").ejMenu({ height:22,
-               fields: { dataSource: window.menu, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }
-          });
-</script>
 
+    <ul id="menu"/>
+        
 {% endhighlight %}
 
+{% highlight js %}        
+ 
+        //To set fields API value during initialization  
+
+              $("#menu").ejMenu({ 
+               fields: { dataSource: window.menu, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }
+          });
 
 
-
-
-
+{% endhighlight %}
 
 ### fields.child `object`
 {:#members:fields-child}
 
-
-
-
-
-
-
-
 It receives the child data for the inner level.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.dataSource `object`
 {:#members:fields-datasource}
 
-
-
-
-
-
-
-
-datasource receives Essential DataManager object and JSON object.
-
-
-
-
-
-
-
-
-
-
+It receives datasource as Essential DataManager object and JSON object.
 
 ### fields.htmlAttribute `string`
 {:#members:fields-htmlattribute}
 
 
-
-
-
-
-
-
 Specifies the html attributes to &ldquo;li&rdquo; item list.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.id `string`
 {:#members:fields-id}
 
-
-
-
-
-
-
-
 Specifies the id to menu items list
-
-
-
-
-
-
-
-
-
-
 
 ### fields.imageAttribute `string`
 {:#members:fields-imageattribute}
 
-
-
-
-
-
-
-
 Specifies the image attribute to &ldquo;img&rdquo; tag inside items list.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.imageUrl `string`
 {:#members:fields-imageurl}
 
 
-
-
-
-
-
-
 Specifies the image URL to &ldquo;img&rdquo; tag inside item list.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.linkAttribute `string`
 {:#members:fields-linkattribute}
 
 
-
-
-
-
-
-
 Adds custom attributes like "target" to the anchor tag of the menu items.
-
-
-
-
-
-
-
-
 
 
 
@@ -1046,295 +661,213 @@ Adds custom attributes like "target" to the anchor tag of the menu items.
 {:#members:fields-parentid}
 
 
-
-
-
-
-
-
 Specifies the parent id of the table.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.query `object`
 {:#members:fields-query}
 
 
-
-
-
-
-
-
 It receives query to retrieve data from the table (query is same as SQL).
-
-
-
-
-
-
-
-
-
 
 
 ### fields.spriteCssClass `string`
 {:#members:fields-spritecssclass}
 
-
-
-
-
-
-
-
-Specifies the sprite CSS class to &ldquo;li&rdquo; item list
-
-
-
-
-
-
-
-
-
+Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
 
 
 ### fields.tableName `string`
 {:#members:fields-tablename}
 
 
-
-
-
-
-
-
-It receives table name to execute query on the corresponding table
-
-
-
-
-
-
-
-
-
+It receives table name to execute query on the corresponding table.
 
 
 ### fields.text `string`
 {:#members:fields-text}
 
-
-
-
-
-
-
-
 Specifies the text of menu items list.
-
-
-
-
-
-
-
-
-
 
 
 ### fields.url `string`
 {:#members:fields-url}
 
-
-
-
-
-
-
-
 Specifies the url to the anchor tag in menu item list.
-
-
-
-
-
-
-
-
-
-
 
 ### height `string`  `number`
 {:#members:height}
 
 
-
-
-
-
-
-
 Specifies the height of the root menu.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * "auto"
-
-
-
-
-
-
-
 
 #### Example
 
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+{% endhighlight %}
 
+{% highlight js %}
+ 
+        //To set height API value during initialization  
+        $("#menu").ejMenu({ height: 22 }); 
+
+{% endhighlight %}
+
+
+### htmlAttributes `JSONobject`
+
+{:#members:htmlattributes}
+
+Specifies the list of html attributes to be added to menu control.
+
+#### Default Value
+
+* {}
+
+#### Example
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+        <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-//To set height API value during initialization  
-  $("#menu").ejMenu({ height: 22 }); 
-</script> {% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
+  
+        //To set htmlAttributes API value during initialization  
 
+        $("#menu").ejMenu({ htmlAttributes:{"aria-label":"menu"} });
 
-
-
-
+{% endhighlight %}
 
 ### menuType `string`  `enum`
 {:#members:menutype}
 
-
-
-
-
-
-
-
-Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu both Normal and Context Menu mode.See <a href="global.html#MenuType">MenuType</a>
-
-
-
+Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu mode.See <a href="global.html#MenuType">MenuType</a>
 
 #### Default Value
 
-
-
-
-
-
-
-* ej.menuType.NormalMenu
-
-
-
-
-
-
-
+* ej.MenuType.NormalMenu
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>  
-//To set menuType API value during initialization  
-  //To set menuType API value 
-  $("#menu").ejMenu({ height:22,menuType: "normalmenu" });
-</script> {% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
+  
+        //To set menuType API value during initialization  
 
+        $("#menu").ejMenu({ menuType: "normalmenu" });
 
-
-
+{% endhighlight %}
 
 
 ### openOnClick `boolean`
@@ -1342,21 +875,10 @@ Specifies the type of the menu. Essential JavaScript Menu consists of two type o
 
 
 
-
-
-
-
-
 Specifies the sub menu items to be show or open only on click.
 
 
-
-
 #### Default Value
-
-
-
-
 
 
 
@@ -1364,222 +886,177 @@ Specifies the sub menu items to be show or open only on click.
 
 
 
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}
  
-<script> 
-//To set openOnClick API value during initialization  
-        //To set openOnClick API value 
-        $("#menu").ejMenu({ height:22,openOnClick: true });
-</script>{% endhighlight %}
+       //To set openOnClick API value during initialization  
+ 
+        $("#menu").ejMenu({ openOnClick: true });
 
 
-
-
-
+{% endhighlight %}
 
 
 ### orientation `string`  `enum`
 {:#members:orientation}
 
 
-
-
-
-
-
-
-Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See <a href="global.html#Direction">Direction</a>
-
-
-
+Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See <a href="global.html#Orientation">Orientation</a>
 
 #### Default Value
 
-
-
-
-
-
-
-* ej.orientation.Horizontal
-
-
-
-
-
-
-
+* ej.Orientation.Horizontal
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}
+  
+        //To set orientation API value during initialization  
  
-<script>  
-//To set orientation API value during initialization  
-  //To set orientation API value 
-  $("#menu").ejMenu({ height:22,orientation: ej.Orientation.Horizontal });
-</script>{% endhighlight %}
+         $("#menu").ejMenu({ orientation: ej.Orientation.Horizontal });
 
-
-
-
-
+{% endhighlight %}
 
 
 ### showRooltLevelArrows `boolean`
 {:#members:showrooltlevelarrows}
 
 
-
-
-
-
-
-
 Specifies the main menu items arrows only to be shown if it contains child items.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * true
-
-
-
-
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script> 
-//To set showRooltLevelArrows API value during initialization  
-        //To set showRooltLevelArrows API value 
-        $("#menu").ejMenu({ height:22,showRooltLevelArrows: true });
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
 
+        //To set showRooltLevelArrows API value during initialization  
+        
+        $("#menu").ejMenu({ showRooltLevelArrows: true });
 
-
+{% endhighlight %}
 
 
 
@@ -1587,163 +1064,124 @@ Specifies the main menu items arrows only to be shown if it contains child items
 {:#members:showsublevelarrows}
 
 
-
-
-
-
-
-
 Specifies the sub menu items arrows only to be shown if it contains child items.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * true
-
-
-
-
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}
  
-<script> 
-//To set showSubLevelArrows API value during initialization  
-        //To set showSubLevelArrows API value 
-        $("#menu").ejMenu({ height:22,showSubLevelArrows: true });
-</script>{% endhighlight %}
+        //To set showSubLevelArrows API value during initialization  
+ 
+        $("#menu").ejMenu({ showSubLevelArrows: true });
 
-
-
-
-
+{% endhighlight %}
 
 
 ### subMenuDirection `string`  `enum`
 {:#members:submenudirection}
 
 
-
-
-
-
-
-
-Specifies the sub menu popup direction.See <a href="global.html#Direction">Direction</a>
-
-
-
+Specifies position of pulldown submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
 
 #### Default Value
 
 
-
-
-
-
-
-* ej.direction.Right
-
-
-
-
-
+* ej.Direction.Right
 
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+{% endhighlight %}
 
+{% highlight js %}
  
-<script> 
-//To set subMenuDirection API value during initialization  
-        //To set subMenuDirection API value 
-        $("#menu").ejMenu({ height:22,subMenuDirection: ej.Direction.Right });
-</script>{% endhighlight %}
 
+        //To set subMenuDirection API value during initialization  
 
-
-
+        $("#menu").ejMenu({ subMenuDirection: ej.Direction.Right });
+        
+{% endhighlight %}
 
 
 
@@ -1751,290 +1189,243 @@ Specifies the sub menu popup direction.See <a href="global.html#Direction">Direc
 {:#members:titletext}
 
 
-
-
-
-
-
-
 Specifies the title to responsive menu.
 
 
 
-
 #### Default Value
-
-
-
-
-
 
 
 * "Menu"
 
 
 
-
-
-
-
-
 #### Example
 
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script> 
-//To set titleText API value during initialization  
-        //To set titleText API value 
-        $("#menu").ejMenu({ height:22,titleText: "Menu" });
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}
 
+        //To set titleText API value during initialization  
 
-
-
+        $("#menu").ejMenu({ titleText: "Menu" });
+        
+{% endhighlight %}
 
 
 ### width `string`  `number`
 {:#members:width}
 
 
-
-
-
-
-
-
 Specifies the width of the main menu.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * auto
-
-
-
-
-
-
-
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %} 
+  
+        //To set width API value during initialization  
  
-<script>  
-//To set width API value during initialization  
-  //To set width API value 
-  $("#menu").ejMenu({ width: "800px",height:"30px" });  
-</script>{% endhighlight %}
-
-
-
+        $("#menu").ejMenu({ width: "800px",height:"30px" });
+          
+{% endhighlight %}
 
 
 ## Methods
-
-
-
-
-
-
 
 
 ### disable()
 {:#methods:disable}
 
 
-
-
-
-
-
-
 Disables the Menu control.
-
-
-
 
 
 #### Example
 
 
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+ 
+{% endhighlight %}
+
+{% highlight js %}
+
+    $("#menu").ejMenu();
+    
+    //initialize the menu object
+    var menuObj = $("#menu").data("ejMenu");
+    
+    //To disable Menu control
+    menuObj.disable();
+    
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
-        var menuObj = $("#menu").data("ejMenu");
-        //To disable Menu control
-        menuObj.disable();
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %} 
 
-{% highlight html %}
- 
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    $("#menu").ejMenu();
+    
+    //To disable Menu control
+    $("#menu").ejMenu("disable");
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To disable Menu control
-$("#menu").ejMenu("disable");
-</script>{% endhighlight %}
-
-
-
-
-
+{% endhighlight %}
 
 
 ### disableItem(itemtext)</span>
 {:#methods:disableitem}
-
-
-
-
-
-
 
 
 Specifies the Menu Item to be disabled by using the Menu Item Text.
@@ -2059,107 +1450,111 @@ itemtext{% endhighlight %}</td>
 
 
 
-
 #### Example
 
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %}  
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To disable Menu item using item text
         menuObj.disableItem("Home");
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To disable Menu item using item text
-$("#menu").ejMenu("disableItem","Home");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
+        $("#menu").ejMenu();
 
+        //To disable Menu item using item text
+        $("#menu").ejMenu("disableItem", "Home");
 
-
+{% endhighlight %}
 
 
 ### disableItembyID(itemid)</span>
 {:#methods:disableitembyid}
-
-
-
-
-
 
 
 
@@ -2184,98 +1579,106 @@ itemid{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %}  
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To disable Menu item using item id
         menuObj.disableItemByID("More");
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+{% endhighlight %}
 
+{% highlight js %} 
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To disable Menu item using item id
-$("#menu").ejMenu("disableItemByID","More");
-</script>{% endhighlight %}
+        $("#menu").ejMenu();
 
+        //To disable Menu item using item id
+        $("#menu").ejMenu("disableItemByID", "More");
 
-
-
+{% endhighlight %}
 
 
 
@@ -2283,118 +1686,114 @@ $("#menu").ejMenu("disableItemByID","More");
 {:#methods:enable}
 
 
-
-
-
-
-
-
 Enables the Menu control.
-
-
-
 
 
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To enable Menu control
         menuObj.enable();
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22}); 
-//To enable Menu control
-$("#menu").ejMenu("enable");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %} 
 
+        $("#menu").ejMenu();
 
+        //To enable Menu control
+        $("#menu").ejMenu("enable");
 
+{% endhighlight %}
 
 
 
 ### enableItem(itemtext)</span>
 {:#methods:enableitem}
-
-
-
-
-
 
 
 
@@ -2418,113 +1817,109 @@ itemtext{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To enable Menu item using item text
-menuObj.disableItem("Home");
-menuObj.disableItem("Search Jobs");
         menuObj.enableItem("Search Jobs");
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+{% endhighlight %}
 
- 
-<script>
-$("#menu").ejMenu({height:22}); 
-//To enable Menu item using item text
-$("#menu").ejMenu("disableItem","Home");
-$("#menu").ejMenu("disableItem","Search Jobs");
-$("#menu").ejMenu("enableItem","Search Jobs");
-</script>{% endhighlight %}
+{% highlight js %}     
 
+        $("#menu").ejMenu();
 
+        //To enable Menu item using item text
+        $("#menu").ejMenu("enableItem", "Search Jobs");
 
-
-
+{% endhighlight %}
 
 
 ### enableItembyID(itemid)</span>
 {:#methods:enableitembyid}
-
-
-
-
-
 
 
 
@@ -2548,220 +1943,217 @@ itemid{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To enable Menu item using item id
-menuObj.disable();
         menuObj.enableItemByID("More");
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To enable Menu item using item id
- $("#menu").ejMenu("disable");
-$("#menu").ejMenu("enableItemByID","More");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
+        $("#menu").ejMenu();
 
+        //To enable Menu item using item id
+        $("#menu").ejMenu("enableItemByID", "More");
 
-
-
-
-### hideContextMenu()
-{:#methods:hidecontextmenu}
+{% endhighlight %}
 
 
 
-
-
-
-
+### hide()
+{:#methods:hide}
 
 Hides the Context Menu control.
 
-
-
-
-
 #### Example
 
-
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To hide context menu
-        menuObj.hideContextMenu();
-</script>{% endhighlight %}
+        menuObj.hide();
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To hide context menu
-$("#menu").ejMenu("hideContextMenu");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %} 
 
+        $("#menu").ejMenu();
 
+        //To hide context menu
+        $("#menu").ejMenu("hide");
 
-
+{% endhighlight %}
 
 
 ### insert(item, target)</span>
 {:#methods:insert}
-
-
-
-
-
 
 
 
@@ -2792,114 +2184,116 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+ 
+{% endhighlight %}
+
+{% highlight js %} 
+
+    $("#menu").ejMenu();
+    
+    //initialize the menu object
+    var menuObj = $("#menu").data("ejMenu");
+    
+    //To insert menu item
+    menuObj.insert([{
+        id: "More",
+        text: "More"
+    }], "#Home");
+
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
-        var menuObj = $("#menu").data("ejMenu");
+{% endhighlight %}
+
+{% highlight js %}  
+
+        $("#menu").ejMenu();
+
         //To insert menu item 
-        menuObj.insert([{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
+        $("#menu").ejMenu("insert", [{
+            id: "More",
+            text: "More"
+        }], "#Home");
 
-
-{% highlight html %}
- 
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To insert menu item 
-$("#menu").ejMenu("insert",[{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
-
-
-
-
-
+{% endhighlight %}
 
 
 ### insertAfter(item, target)</span>
 {:#methods:insertafter}
-
-
-
-
-
 
 
 
@@ -2930,115 +2324,116 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+        
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+        
         //To insert menu item 
         menuObj.insertAfter([{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
+            id: "More",
+            text: "More"
+        }], "#Home");
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To insert menu item 
-$("#menu").ejMenu("insertAfter",[{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
+        $("#menu").ejMenu();
 
+        //To insert menu item 
+        $("#menu").ejMenu("insertAfter", [{
+            id: "More",
+            text: "More"
+        }], "#Home");
 
-
+{% endhighlight %}
 
 
 ### insertBefore(item, target)</span>
 {:#methods:insertbefore}
-
-
-
-
-
-
 
 
 Insert the menu item before the target node.
@@ -3068,115 +2463,116 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
-
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %}  
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
+
         //To insert menu item 
         menuObj.insertBefore([{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
+            id: "More",
+            text: "More"
+        }], "#Home");
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To insert menu item 
-$("#menu").ejMenu("insertBefore",[{
-         id:"More",
-       text:"More"
-                }],"#Home");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
+        $("#menu").ejMenu();
 
+        //To insert menu item 
+        $("#menu").ejMenu("insertBefore", [{
+            id: "More",
+            text: "More"
+        }], "#Home");
 
-
+{% endhighlight %}
 
 
 ### remove(target)</span>
 {:#methods:remove}
-
-
-
-
-
-
 
 
 Remove Menu item.
@@ -3200,112 +2596,113 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight js %}  
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
+        var menuObj = $("#menu").data("ejMenu");
+
+        //To remove menu item 
+        menuObj.remove(["#Home"]);
+
+{% endhighlight %}
+
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
-var menuObj = $("#menu").data("ejMenu");
-//To remove menu item 
-menuObj.remove(["#Home"]);
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
-{% highlight html %}
- 
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+        $("#menu").ejMenu();
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To remove menu item 
-$("#menu").ejMenu("remove",["#Home"]);
-</script>{% endhighlight %}
+        //To remove menu item 
+        $("#menu").ejMenu("remove", ["#Home"]);
+
+{% endhighlight %}
 
 
+### show(locationX, locationY, targetElement, event)</span>
+{:#methods:show}
 
 
-
-
-
-### showContextMenu(locationX, locationY, targetElement, event)</span>
-{:#methods:showcontextmenu}
-
-
-
-
-
-
-
-
-Shows the Context Menu .
+To show the Menu control.
 
 <table class="params">
 <thead>
@@ -3352,108 +2749,107 @@ event{% endhighlight %}</td>
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
-
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
  
-<script>
-$("#menu").ejMenu({height:22,}); 
-//initialize the menu object
+{% endhighlight %}
+
+{% highlight js %} 
+
+        $("#menu").ejMenu();
+
+        //initialize the menu object
         var menuObj = $("#menu").data("ejMenu");
-        //To show context menu
-        menuObj.ShowContextMenu();
-</script>{% endhighlight %}
+
+        //To show menu
+        menuObj.show();
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script>
-$("#menu").ejMenu({height:22,}); 
-//To show context menu
-$("#menu").ejMenu("ShowContextMenu");
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
+        $("#menu").ejMenu();
 
+        //To show menu
+        $("#menu").ejMenu("show");
 
+{% endhighlight %}
 
 ## Events
 
 
-
-
-
-
-
-
-### beforeContextOpen
-{:#events:beforecontextopen}
-
-
-
-
-
-
+### beforeOpen
+{:#events:beforeopen}
 
 
 Fires before context menu gets open.
@@ -3513,67 +2909,57 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
- 
-<script> 
- //before context menu open event for menu
- $("#menu").ejMenu({height:22,
- beforeOpen: function (args) {}
- });   
-</script>{% endhighlight %}
+{% endhighlight %}
 
+{% highlight js %}  
 
-
-
-
-
+        //before context menu open event for menu
+        $("#menu").ejMenu({
+            beforeOpen: function (args) { }
+        }); 
+  
+{% endhighlight %}
 
 ### click
 {:#events:click}
-
-
-
-
-
-
 
 
 Fires when mouse click on menu items.
@@ -3644,68 +3030,59 @@ selectedItem{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
- //click event for menu
- $("#menu").ejMenu({height:22,
- click: function (args){}
- });   
-</script>{% endhighlight %}
+        //click event for menu
+        $("#menu").ejMenu({
+            click: function (args) { }
+        });
+  
+{% endhighlight %}
 
 
-
-
-
-
-
-### contextClose
-{:#events:contextclose}
-
-
-
-
-
-
+### close
+{:#events:close}
 
 
 Fire when context menu on close.
@@ -3759,66 +3136,60 @@ target{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
 
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
- //context menu close event for menu
- $("#menu").ejMenu({height:22,
- close: function (args) {}
- });   
-</script>{% endhighlight %}
+        //context menu close event for menu
+        $("#menu").ejMenu({
+            close: function (args) { }
+        });
+  
+{% endhighlight %}
 
 
-
-
-
-
-
-### contextOpen
-{:#events:contextopen}
-
-
-
-
-
+### open
+{:#events:open}
 
 
 
@@ -3881,59 +3252,54 @@ target{% endhighlight %}</td>
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
- //context menu open event for menu
- $("#menu").ejMenu({height:22,
- open: function (args) {}
- });   
-</script>{% endhighlight %}
-
-
-
-
-
+        //context menu open event for menu
+        $("#menu").ejMenu({
+            open: function (args) { }
+        });
+  
+{% endhighlight %}
 
 
 ### create
 {:#events:create}
-
-
-
-
-
-
 
 
 Fires to create menu items.
@@ -3980,69 +3346,58 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %} 
  
-<script> 
- //Create event for menu
- $("#menu").ejMenu({height:22,
- create: function (args){}
- });   
-</script>{% endhighlight %}
-
-
-
-
-
-
+        //Create event for menu
+        $("#menu").ejMenu({
+            create: function (args) { }
+        });
+   
+{% endhighlight %}
 
 ### destroy
 {:#events:destroy}
-
-
-
-
-
-
-
 
 Fires to destroy menu items.
 
@@ -4097,59 +3452,54 @@ type{% endhighlight %}</td>
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
- //Destroy event for menu
- $("#menu").ejMenu({height:22,
- destroy: function (args){}
- }); 
-</script>  {% endhighlight %}
+        //Destroy event for menu
+        $("#menu").ejMenu({
+            destroy: function (args) { }
+        });
 
-
-
-
-
+{% endhighlight %}
 
 
 ### keydown
 {:#events:keydown}
-
-
-
-
-
-
 
 
 Fires when key down on menu items.
@@ -4215,67 +3565,59 @@ event{% endhighlight %}</td>
 </table>
 
 
-
-
 #### Example
-
 
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
- //keydown event for menu
- $("#menu").ejMenu({height:22,
- keydown: function (args){}
- });  
-</script> {% endhighlight %}
-
-
-
-
-
+        //keydown event for menu
+        $("#menu").ejMenu({
+            keydown: function (args) { }
+        });
+ 
+ {% endhighlight %}
 
 
 ### mouseout
 {:#events:mouseout}
-
-
-
-
-
-
 
 
 Fires when mouse out from menu items.
@@ -4340,67 +3682,58 @@ event{% endhighlight %}</td>
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 
-
 {% highlight html %}
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
+  
+        //mouse out event for menu
+        $("#menu").ejMenu({
+            mouseout: function (args) { }
+        });
  
-<script>  
- //mouse out event for menu
- $("#menu").ejMenu({height:22,
- mouseout: function (args) {}
- });   
-</script>{% endhighlight %}
-
-
-
-
-
+{% endhighlight %}
 
 
 ### mouseover
 {:#events:mouseover}
-
-
-
-
-
-
 
 
 Fires when mouse over the Menu items.
@@ -4474,44 +3807,50 @@ event{% endhighlight %}</td>
 
 {% highlight html %}
  
-<ul id="menu">
-<li id="Home"><a>Home</a></li>
-<li><a>Search Jobs</a>
-<ul>
-<li><a>Advanced Search</a></li>
-<li><a>Jobs by Company</a></li>
-<li><a>Jobs by Category</a></li>
-<li><a>Jobs by Location</a></li>
-<li><a>Jobs by Skills</a></li>
-<li><a>Jobs by Designation</a></li>
-</ul>
-</li>
-<li id="Post Resume"><a>Post Resume</a></li>
-<li id="Job Seeker"><a>JobSeeker Login</a></li>
-<li id="Fast Forward"><a>Fast Forward</a>
-<ul>
-<li><a>Resume writing</a></li>
-<li><a>Certification</a></li>
-<li><a>Resume Spotlight</a></li>
-<li><a>Jobs4u</a></li>
-</ul>
-</li>
-<li id="More"><a>More</a>
-<ul>
-<li><a>Mobile</a></li>
-<li><a>Pay check</a></li>
-<li><a>Blog</a></li>
-</ul>
-</li>
-</ul>
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
 
+{% endhighlight %}
+
+{% highlight js %}  
  
-<script> 
-  //mouse over event for menu
- $("#menu").ejMenu({height:22,
- mouseover: function (args) {}
- });   
-</script>{% endhighlight %}
+        //mouse over event for menu
+        $("#menu").ejMenu({
+            mouseover: function (args) { }
+        }); 
+
+{% endhighlight %}
 
 
 
