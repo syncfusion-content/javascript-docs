@@ -9,11 +9,9 @@ documentation: ug
 
 # EJ Icons
 
-The **Essential Studio for JavaScript** provide icons library that contains the number of built-in icons. You can use these icons to display in your application by configuring their CSS class names to elements in the application. Use the following syntax to apply the class names.
+The **Essential Studio for JavaScript** provides a set of font icons that can be utilized in your application by applying the class names in element. To make it simple and standard, the EJIcon class names are followed by **“e-icon e-{icon name}“** syntax.  
 
-**Syntax**: e-icon e-[icon description]
-
-**Example**:
+**For example**:
 
 The following example showcase to display the ejicon by using their corresponding class names.
 
