@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Resize
-description:resize
+description: resize
 documentation: ug
 platform: js
 keywords: resize,ribbon resize

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Screen Tips
-description:screen tips
+description: screen tips
 documentation: ug
 platform: js
 keywords: screen tips,ribbon screen tips

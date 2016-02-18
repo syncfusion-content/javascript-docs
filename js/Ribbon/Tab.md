@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Tab
-description:tab 
+description: tab 
 documentation: ug
 platform: js
 keywords: ribbon tab

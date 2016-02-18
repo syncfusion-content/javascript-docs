@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Group
-description:group
+description: group
 documentation: ug
 platform: js
 keywords: group,ribbon group
