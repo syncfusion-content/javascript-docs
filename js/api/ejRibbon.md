@@ -242,6 +242,421 @@ Property to enable the ribbon quick access toolbar.
 
 {% endhighlight %}
 
+### collapsePinSettings `object`
+{:#members:collapsepinsettings}
+
+Sets custom setting to the collapsible pin in the ribbon.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+
+      <div id="defaultRibbon"></div>
+      <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+         </ul>
+        <script>
+            $(function() {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                collapsePinSettings: {
+                    toolTip: "Pin the Ribbon"
+                },
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        openOnClick: false
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "New",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "new",
+                                text: "New",
+                                toolTip: "New",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    imagePosition: ej.ImagePosition.ImageTop,
+                                    prefixIcon: "e-ribbon e-new",
+                                    click: "executeAction"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                width: 60,
+                                height: 70
+                            }
+                        }]
+                    }]
+                }],
+            });
+        });
+      </script>
+  
+{% endhighlight %}
+
+### collapsePinSettings.toolTip `string` 
+{:#members:collapsepinsettings-tooltip}
+
+Sets tooltip for the collapse pin .
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+      
+     <div id="defaultRibbon"></div>
+     <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+     </ul>
+     <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            collapsePinSettings: {
+                toolTip: "Pin the Ribbon"
+            },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }],
+    
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### collapsePinSettings.customToolTip  `object` 
+{:#members:collapsepinsettings-customtooltip }
+
+Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+   
+      <div id="defaultRibbon"></div>
+      <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+       </ul>
+    <script>
+    $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            collapsePinSettings:{
+                        customToolTip:{
+                        title: "Pin the Ribbon",
+                        content: "<h6>Click the icon to expand the Ribbon.</h6>"
+                        }
+                    },	
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }],
+    
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### expandPinSettings `object`
+{:#members:expandpinsettings}
+
+Sets custom setting to the expandable pin in the ribbon.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+   
+       <div id="defaultRibbon"></div>
+       <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+        </ul>
+        <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            expandPinSettings:{				   
+                        toolTip: "Collapse the Ribbon"                  
+                    },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### expandPinSettings.toolTip `string` 
+{:#members:expandpinsettings-tooltip}
+
+Sets tooltip for the expand pin.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+       <li><a>FILE</a>
+            <ul>
+             <li><a>New</a></li>
+             </ul>
+        </li>
+     </ul>
+     <script>
+            $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            expandPinSettings:{				   
+                        toolTip: "Collapse the Ribbon"                  
+                    },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### expandPinSettings.customToolTip `object` 
+{:#members:expandpinsettings-customtooltip }
+
+Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+    </ul>
+    <script>
+    $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            expandPinSettings:{
+                        customToolTip:{
+                        title: "Collapse the Ribbon",
+                        content: "<h6>Click the icon to collapse the Ribbon.</h6>"
+                        }
+                    },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### applicationTab `object`
 {:#members:applicationtab}
 
@@ -5298,6 +5713,164 @@ Specifies the group expander for groups in the ribbon control. Set "true" to ena
 
 {% endhighlight %}
 
+### tabs.groups.groupExpanderSettings `object`
+{:#members:tabs-groups-groupexpandersettings}
+
+Sets custom setting to the groups in the ribbon control.
+
+#### Default Value
+
+* Object
+
+#### Example 
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+    </ul>
+    <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    enableGroupExpander: true,
+                    groupExpanderSettings:{   
+                                toolTip: "Clipboard"                       
+                            }
+                }]
+            }]
+        });
+    });
+        </script>
+
+{% endhighlight %}
+
+### tabs.groups.groupExpanderSettings.toolTip `string` 
+{:#members:tabs-groups-groupexpandersettings-tooltip}
+
+Sets tooltip for the group expander of the group.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+    </ul>
+    <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    enableGroupExpander: true,
+                    groupExpanderSettings:{   
+                                toolTip: "Clipboard"                       
+                            }
+                }]
+            }]
+        });
+    });
+        </script>
+
+{% endhighlight %}
+
+### tabs.groups.groupExpanderSettings.customToolTip `object` 
+{:#members:tabs.groups.groupexpandersettings.customtooltip }
+
+Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+
+    div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+    </ul>
+    <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    enableGroupExpander: true,
+                    groupExpanderSettings:{   
+                                customToolTip:{
+                                title: "Clipboard",
+                                content: "<h6>Show a popup for the Clipboard group.</h6>"
+                                }                     
+                            }
+                }]
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
 
 ### tabs.groups.text `string`
 {:#members:tabs-groups-text}
@@ -5510,6 +6083,80 @@ Specifies the text of the tab in the ribbon control.
 
  {% endhighlight %}
 
+### locale `string`
+{:#members:locale}
+
+Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region and  it will need to use the user's preference. 
+
+#### Default Value
+
+* "en-US"
+
+#### Example
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+       <li><a>FILE</a>
+            <ul>
+             <li><a>New</a></li>
+             </ul>
+        </li>
+     </ul>
+     <script>
+            ej.Ribbon.Locale["es-ES"] = {
+            CustomizeQuickAccess: "Agordu Rapida Aliro",
+            MoreCommands: "pli Komando"
+        };
+        
+        $(function() {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                locale: "es-ES",
+                showQAT: true,
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        openOnClick: false
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "Clipboard",
+                        alignType: ej.Ribbon.alignType.columns,
+                        content: [{
+                            groups: [{
+                                id: "paste",
+                                text: "paste",
+                                toolTip: "Paste",
+                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                splitButtonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonpaste",
+                                    targetID: "pasteSplit",
+                                    buttonMode: "dropdown",
+                                    arrowPosition: ej.ArrowPosition.Bottom,
+                                    click: "executeAction"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.splitButton,
+                                width: 50,
+                                height: 70
+                            }
+                        }]
+                    }]
+                }]
+            });
+        
+        });
+     </script>
+     
+{% endhighlight %}
 
 ### width `string/number`
 {:#members:width}
