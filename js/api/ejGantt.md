@@ -2689,21 +2689,8 @@ gantObj.ejGantt("setSplitterIndex", "3"); // Set splitter position after column 
 {:#methods:canceledit}
 
 To cancel the edited state of an item in gantt
-#### Example
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// Create Gantt object
-var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("setSplitterIndex", "3"); // Set splitter position after column index 3
-</script>
-{% endhighlight %}
 
 #### Example
-
 
 {% highlight html %}
  
