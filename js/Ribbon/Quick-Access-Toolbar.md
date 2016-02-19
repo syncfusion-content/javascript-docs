@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Quick Access Toolbar
-description:quick access toolbar
+description: quick access toolbar
 documentation: ug
 platform: js
 keywords: quick access toolbar,ribbon quick access toolbar

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Angular-Support
-description:angular-support
+description: angular-support
 documentation: ug
 platform: js
 keywords: angular support,ribbon angular support

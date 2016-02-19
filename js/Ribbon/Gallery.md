@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gallery
-description:gallery
+description: gallery
 documentation: ug
 platform: js
 keywords: gallery,ribbon gallery
