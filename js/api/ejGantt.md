@@ -588,7 +588,7 @@ Specifies the fields to be included in the edit dialog in gantt
 {% endhighlight %}
 
 ### splitterSettings `object`
-{:#members:editsettings}
+{:#members:splitterSettings}
 
 Option to configure the splitter position.
 
@@ -2685,15 +2685,12 @@ gantObj.ejGantt("setSplitterIndex", "3"); // Set splitter position after column 
 </script>
 {% endhighlight %}
 
-
 ### cancelEdit()
 {:#methods:canceledit}
 
 To cancel the edited state of an item in gantt
 
-
 #### Example
-
 
 {% highlight html %}
  
