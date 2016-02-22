@@ -15,7 +15,7 @@ Data markers are used to provide information about the data point to the user. Y
 
 You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
 
-Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible)) option of the [`marker`](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
+Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) option of the [`marker`](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
 
 The following code example explains on how to enable series marker and add shapes,
 
@@ -90,7 +90,7 @@ The following code example illustrates this,
 
 ## Add labels
 
-Data label can be added to a chart series by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible)) property in the [`dataLabel`](../api/ejchart#members:series-marker-datalabel)) option. The labels appear at the top of the data point, by default.
+Data label can be added to a chart series by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) property in the [`dataLabel`](../api/ejchart#members:series-marker-datalabel) option. The labels appear at the top of the data point, by default.
 
 The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
 
