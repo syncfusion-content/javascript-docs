@@ -77,7 +77,7 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 									quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
 									toggleButtonSettings: {
 										contentType: ej.ContentType.ImageOnly,
-										efaultText: "Italic",
+										defaultText: "Italic",
 										activeText: "Italic",
 										prefixIcon: "e-ribbon e-ribbonitalic"
 									}
