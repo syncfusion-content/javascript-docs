@@ -167,7 +167,7 @@ Enables the ribbon resize feature.
 
 Property to enable the ribbon quick access toolbar.
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -247,7 +247,7 @@ Property to enable the ribbon quick access toolbar.
 
 Sets custom setting to the collapsible pin in the ribbon.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -315,7 +315,7 @@ Sets custom setting to the collapsible pin in the ribbon.
 
 Sets tooltip for the collapse pin .
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -384,7 +384,7 @@ Sets tooltip for the collapse pin .
 
 Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -456,7 +456,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
 
 Sets custom setting to the expandable pin in the ribbon.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -524,7 +524,7 @@ Sets custom setting to the expandable pin in the ribbon.
 
 Sets tooltip for the expand pin.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -591,7 +591,7 @@ Sets tooltip for the expand pin.
 
 Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -662,7 +662,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
 
 Specifies the application tab to contain application menu or backstage page in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -715,7 +715,7 @@ Specifies the application tab to contain application menu or backstage page in t
 
 Specifies the ribbon backstage page items.
 
-#### Default Value
+#### Default Value:
 
 * object
 
@@ -796,7 +796,7 @@ Specifies the ribbon backstage page items.
 
 Specifies the display text of application tab.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -873,12 +873,12 @@ Specifies the display text of application tab.
     </script>
    {% endhighlight %}
 
-### applicationTab.backstageSettings.height `string/number`
+### applicationTab.backstageSettings.height `string|number`
 {:#members:applicationtab-backstagesettings-height}
 
 Specifies the height of ribbon backstage page.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -956,12 +956,12 @@ Specifies the height of ribbon backstage page.
 
 {% endhighlight %}
 
-### applicationTab.backstageSettings.width `string/number`
+### applicationTab.backstageSettings.width `string|number`
 {:#members:applicationtab-backstagesettings-width}
 
 Specifies the width of ribbon backstage page.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1044,7 +1044,7 @@ Specifies the width of ribbon backstage page.
 
 Specifies the ribbon backstage page with its tab and button elements.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -1128,7 +1128,7 @@ Specifies the ribbon backstage page with its tab and button elements.
 
 Specifies the id for ribbon backstage page's tab and button elements.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1212,7 +1212,7 @@ Specifies the id for ribbon backstage page's tab and button elements.
 
 Specifies the text for ribbon backstage page's tab header and button elements.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1296,9 +1296,30 @@ Specifies the text for ribbon backstage page's tab header and button elements.
 
 Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
 
-#### Default Value
+#### Default Value:
 
 * ej.Ribbon.itemType.tab
+
+<ts name=”ej.Ribbon.itemType”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">button</td>
+<td class="description">To render the button for ribbon backstage page’s contents</td>
+</tr>
+<tr>
+<td class="name">tab</td>
+<td class="description">To render the tab for ribbon backstage page’s contents</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -1380,7 +1401,7 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
 
 Specifies the id of html elements like div, ul, etc., as ribbon backstage page's tab content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1464,7 +1485,7 @@ Specifies the id of html elements like div, ul, etc., as ribbon backstage page's
 
 Specifies the separator between backstage page's tab and button elements.
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -1543,12 +1564,12 @@ Specifies the separator between backstage page's tab and button elements.
 {% endhighlight %}
 
 
-### applicationTab.backstageSettings.headerWidth `string/number`
+### applicationTab.backstageSettings.headerWidth `string|number`
 {:#members:applicationtab-backstagesettings-headerwidth}
 
 Specifies the width of backstage page header that contains tabs and buttons.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1632,7 +1653,7 @@ Specifies the width of backstage page header that contains tabs and buttons.
 
 Specifies the ID of 'ul' list to create application menu in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1674,9 +1695,11 @@ Specifies the ID of 'ul' list to create application menu in the ribbon control.
 
 Specifies the menu members, events by using the menu settings for the menu in the application tab.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.Menu.Model” />
 
 #### Example
 
@@ -1716,9 +1739,30 @@ Specifies the menu members, events by using the menu settings for the menu in th
 
 Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 *  ej.Ribbon.applicationTabType.menu
+
+<ts name=”ej.Ribbon.applicationTabType”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">menu</td>
+<td class="description">applicationTab display as menu</td>
+</tr>
+<tr>
+<td class="name">backstage</td>
+<td class="description">applicationTab display as backstage</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -1758,7 +1802,7 @@ Specifies the application menu or backstage page. Specify the type of applicatio
 
 Specifies the contextual tabs and tabset to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -1847,7 +1891,7 @@ Specifies the contextual tabs and tabset to the ribbon control with the backgrou
 
 Specifies the backgroundColor of the contextual tabs and tabset in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1936,7 +1980,7 @@ Specifies the backgroundColor of the contextual tabs and tabset in the ribbon co
 
 Specifies the borderColor of the contextual tabs and tabset in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2024,7 +2068,7 @@ Specifies the borderColor of the contextual tabs and tabset in the ribbon contro
 
 Specifies the tabs to present in the contectual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -2113,7 +2157,7 @@ Specifies the tabs to present in the contectual tabs and tab set. Refer to the t
 
 Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -2177,7 +2221,7 @@ Specifies the index or indexes to disable the given index tab or indexes tabs in
 
 Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2248,7 +2292,7 @@ Specifies the index or indexes to enable the given index tab or indexes tabs in 
 
 Specifies the index of the ribbon tab to select the given index tab item in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -2311,7 +2355,7 @@ Specifies the index of the ribbon tab to select the given index tab item in the 
 
 Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -2374,7 +2418,7 @@ Specifies the tabs and its groups. Also specifies the control details that has t
 
 Specifies single group or multiple groups and its contents to each tab in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -2427,9 +2471,30 @@ Specifies single group or multiple groups and its contents to each tab in the ri
 
 Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.alignType.rows" and for column type is "ej.Ribbon.alignType.columns".
 
-#### Default Value
+#### Default Value:
 
 * ej.Ribbon.alignType.rows
+
+<ts name=”ej.Ribbon.alignType”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rows</td>
+<td class="description">To align the group content's in row</td>
+</tr>
+<tr>
+<td class="name">columns</td>
+<td class="description">To align group content's in columns</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -2480,7 +2545,7 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
 
 Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -2532,7 +2597,7 @@ Specifies the Syncfusion button, split button, dropdown list, toggle button, gal
 
 Specifies the height, width, type, isBig property to the controls in the group commonly.
 
-#### Default Value
+#### Default Value:
 
 * object
 
@@ -2593,7 +2658,7 @@ Specifies the height, width, type, isBig property to the controls in the group c
 
 Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -2644,9 +2709,11 @@ Specifies the controls such as Syncfusion button, split button, dropdown list, t
 
 Specifies the Syncfusion button members, events by using this buttonSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.Button.Model” />
 
 #### Example
 
@@ -2706,7 +2773,7 @@ Specifies the Syncfusion button members, events by using this buttonSettings.
 
 It is used to set the count of gallery contents in a row.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2818,7 +2885,7 @@ It is used to set the count of gallery contents in a row.
 
 Specifies the custom items such as div, table, controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2897,7 +2964,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
 
 Specifies the css class property to apply styles to the button, split, dropdown controls in the groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2954,7 +3021,7 @@ Specifies the css class property to apply styles to the button, split, dropdown 
 
 Specifies the Syncfusion button and menu as gallery extra items.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -3062,9 +3129,11 @@ Specifies the Syncfusion button and menu as gallery extra items.
 
 Specifies the syncfusion button members, events by using buttonSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.Button.Model” />
 
 #### Example
 
@@ -3169,14 +3238,35 @@ Specifies the syncfusion button members, events by using buttonSettings.
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.customGalleryItems.customItemType `enum`
+### tabs.groups.content.groups.customGalleryItems.customItemType `enum`###
 {:#members:tabs-groups-content-groups-customgalleryitems-customitemtype}
 
 Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Synfusion button and menu.
 
-#### Default Value
+#### Default Value:
 
 * ej.Ribbon.customItemType.button
+
+<ts name=”ej.Ribbon.customItemType”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">button</td>
+<td class="description">Specifies the button type in customGalleryItems</td>
+</tr>
+<tr>
+<td class="name">menu</td>
+<td class="description">Specifies the menu type in customGalleryItems</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -3285,7 +3375,7 @@ Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.
 
 Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
-#### Default Value
+#### Default Value:
 
 * object
 
@@ -3397,7 +3487,7 @@ Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#
 
 Specifies the UL list id to render menu as gallery extra item.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -3508,9 +3598,11 @@ Specifies the UL list id to render menu as gallery extra item.
 
 Specifies the Syncfusion menu members, events by using menuSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.Menu.Model” />
 
 #### Example
 
@@ -3620,7 +3712,7 @@ Specifies the Syncfusion menu members, events by using menuSettings.
 
 Specifies the text for gallery extra item's button.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -3728,7 +3820,7 @@ Specifies the text for gallery extra item's button.
 
 Specifies the tooltip for gallery extra item's button.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -3836,7 +3928,7 @@ Specifies the tooltip for gallery extra item's button.
 
 Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and html support are also provided for title and content.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -3904,7 +3996,7 @@ Provides custom tooltip for button, split button, dropdown list, toggle button, 
 
 Sets content to the custom tooltip. Text and html support are provided for content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -3972,7 +4064,7 @@ Sets content to the custom tooltip. Text and html support are provided for conte
 
 Sets icon to the custom tooltip content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4040,7 +4132,7 @@ Sets icon to the custom tooltip content.
 
 Sets title to the custom tooltip. Text and html support are provided for title and the title is in bold for text format.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4108,9 +4200,11 @@ Sets title to the custom tooltip. Text and html support are provided for title a
 
 Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.DropDownList.Model” />
 
 #### Example
 
@@ -4176,7 +4270,7 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
 
 Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set "true" to enable the separator.
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -4239,7 +4333,7 @@ Specifies the separator to the control that is in row type group. The separator 
 
 Sets the count of gallery contents in a row, when the gallery is in expanded state.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4347,7 +4441,7 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
 
 Defines each gallery content.
 
-#### Default Value
+#### Default Value:
 
 * array
 
@@ -4455,9 +4549,11 @@ Defines each gallery content.
 
 Specifies the Syncfusion button members, events by using buttonSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.Button.Model” />
 
 #### Example
 
@@ -4569,7 +4665,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
 
 Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
-#### Default Value
+#### Default Value:
 
 * object
 
@@ -4681,7 +4777,7 @@ Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups
 
 Sets text for the gallery content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4790,7 +4886,7 @@ Sets text for the gallery content.
 
 Sets tooltip for the gallery content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4898,7 +4994,7 @@ Sets tooltip for the gallery content.
 
 Specifies the Id for button, split button, dropdown list, toggle button, gallery, custom controls in the sub groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4950,7 +5046,7 @@ Specifies the Id for button, split button, dropdown list, toggle button, gallery
 
 Specifies the size for button, split button controls. Set "true" for big size and "false" for small size.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4997,12 +5093,12 @@ Specifies the size for button, split button controls. Set "true" for big size an
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.itemHeight `string/number`
+### tabs.groups.content.groups.itemHeight `string|number`
 {:#members:tabs-groups-content-groups-itemheight}
 
 Sets the height of each gallery content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5105,12 +5201,12 @@ Sets the height of each gallery content.
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.itemWidth `string/number`
+### tabs.groups.content.groups.itemWidth `string|number`
 {:#members:tabs-groups-content-groups-itemwidth}
 
 Sets the width of each gallery content.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5217,9 +5313,11 @@ Sets the width of each gallery content.
 
 Specifies the Syncfusion split button members, events by using this splitButtonSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.SplitButton.Model” />
 
 #### Example
 
@@ -5274,7 +5372,7 @@ Specifies the Syncfusion split button members, events by using this splitButtonS
 
 Specifies the text for button, split button, toggle button controls in the sub groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5326,9 +5424,11 @@ Specifies the text for button, split button, toggle button controls in the sub g
 
 Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
 
-#### Default Value
+#### Default Value:
 
 * object
+
+<ts ref = “ej.ToggleButton.Model” />
 
 #### Example
 
@@ -5378,7 +5478,7 @@ Specifies the Syncfusion toggle button members, events by using toggleButtonSett
 
 Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5429,9 +5529,34 @@ Specifies the tooltip for button, split button, dropdown list, toggle button, cu
 
 To add,show and hide controls in Quick Access toolbar.
 
-#### Default Value
+#### Default Value:
 
 * ej.Ribbon.quickAccessMode.none
+
+<ts name=”ej.Ribbon.quickAccessMode”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">none</td>
+<td class="description">Controls are hidden in Quick Access toolbar </td>
+</tr>
+<tr>
+<td class="name">toolBar</td>
+<td class="description">Add controls in toolBar</td>
+</tr>
+<tr>
+<td class="name">menu</td>
+<td class="description">Add controls in menu</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -5509,9 +5634,46 @@ To add,show and hide controls in Quick Access toolbar.
 
 Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
 
-#### Default Value
+#### Default Value:
 
 * ej.Ribbon.type.button
+
+<ts name=”ej.Ribbon.type”/>
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">button</td>
+<td class="description">Specifies the button control</td>
+</tr>
+<tr>
+<td class="name">splitButton</td>
+<td class="description">Specifies the splitbutton</td>
+</tr>
+<tr>
+<td class="name">dropDownList</td>
+<td class="description">Specifies the dropDown</td>
+</tr>
+<tr>
+<td class="name">custom</td>
+<td class="description">To append external element's</td>
+</tr>
+<tr>
+<td class="name">toggleButton</td>
+<td class="description">Specifies the togglebuton</td>
+</tr>
+<tr>
+<td class="name">gallery</td>
+<td class="description">Specifies the ribbon gallery</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -5561,7 +5723,7 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
 
 Specifies the ID of custom items to be placed in the groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5614,7 +5776,7 @@ Specifies the ID of custom items to be placed in the groups.
 
 Specifies the HTML contents to place into the groups.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5665,7 +5827,7 @@ Specifies the HTML contents to place into the groups.
 
 Specifies the group expander for groups in the ribbon control. Set "true" to enable the group expander.
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -5718,7 +5880,7 @@ Specifies the group expander for groups in the ribbon control. Set "true" to ena
 
 Sets custom setting to the groups in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -5770,7 +5932,7 @@ Sets custom setting to the groups in the ribbon control.
 
 Sets tooltip for the group expander of the group.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5822,7 +5984,7 @@ Sets tooltip for the group expander of the group.
 
 Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
-#### Default Value
+#### Default Value:
 
 * Object
 
@@ -5877,7 +6039,7 @@ Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->
 
 Specifies the text to the groups in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5930,7 +6092,7 @@ Specifies the text to the groups in the ribbon control.
 
 Specifies the custom items such as div, table, controls by using the "custom" type.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5983,7 +6145,7 @@ Specifies the custom items such as div, table, controls by using the "custom" ty
 
 Specifies the ID for each tab's content panel.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6036,7 +6198,7 @@ Specifies the ID for each tab's content panel.
 
 Specifies the text of the tab in the ribbon control.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6088,7 +6250,7 @@ Specifies the text of the tab in the ribbon control.
 
 Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region and  it will need to use the user's preference. 
 
-#### Default Value
+#### Default Value:
 
 * "en-US"
 
@@ -6158,12 +6320,12 @@ Gets or sets a value that indicates whether to customizing the user interface (U
      
 {% endhighlight %}
 
-### width `string/number`
+### width `string|number`
 {:#members:width}
 
 Specifies the width to the ribbon control. You can set width in string or number format.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -7250,7 +7412,7 @@ Gets text of the given index tab in the ribbon control.
 #### Returns:
 {:#methods:returns:}
 
-Returns the given index tab in the ribbon control.
+String
 
 
 #### Example
@@ -7360,7 +7522,7 @@ Hides the given text tab in the ribbon control.
 <tbody>
 <tr>
 <td class="name">string</td>
-<td class="type"><span class="param-type">srting</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
 </tbody>
@@ -7473,7 +7635,7 @@ Checks whether the given text tab in the ribbon control is enabled or not.
 <tbody>
 <tr>
 <td class="name">string</td>
-<td class="type"><span class="param-type">srting</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
 </tbody>
@@ -7482,7 +7644,7 @@ Checks whether the given text tab in the ribbon control is enabled or not.
 #### Returns:
 {:#methods:returns:}
 
-Returns true when enabled, else false.                                                                              .
+Boolean                                                                            .
 
 #### Example
 
@@ -7591,7 +7753,7 @@ Checks whether the given text tab in the ribbon control is visible or not.
 <tbody>
 <tr>
 <td class="name">string</td>
-<td class="type"><span class="param-type">srting</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
 </tbody>
@@ -7600,7 +7762,7 @@ Checks whether the given text tab in the ribbon control is visible or not.
 #### Returns:
 {:#methods:returns:}
 
-Returns true when visible, else false.
+Boolean
 
 #### Example
 
@@ -8097,7 +8259,7 @@ Displays the given text tab in the ribbon control.
 <tbody>
 <tr>
 <td class="name">string</td>
-<td class="type"><span class="param-type">srting</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
 </tbody>
@@ -8500,22 +8662,22 @@ Triggered when the control in the group is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.target</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the control clicked in the group.</td>
 </tr>
@@ -8581,22 +8743,22 @@ Triggered when the groupexpander in the group is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.target</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the clicked groupexpander.</td>
 </tr>
@@ -8662,27 +8824,27 @@ Triggered when an item in the Gallery control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.galleryModel</td>
+<td class="name">galleryModel</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gallery model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.target</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
 </tr>
@@ -8790,32 +8952,32 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.target</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
 </tr>
 <tr>
-<td class="name">argument.id</td>
+<td class="name">id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the id of the target item.</td>
 </tr>
 <tr>
-<td class="name">argument.text</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the text of the target item.</td>
 </tr>
@@ -8912,17 +9074,17 @@ Triggered when the ribbon control is collapsed.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -8989,17 +9151,17 @@ Triggered when the ribbon control is expanded.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -9592,22 +9754,22 @@ Triggered when the expand/collapse button is clicked successfully .
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.target</td>
+<td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the expand/collapse button.</td>
 </tr>
@@ -9676,22 +9838,22 @@ Triggered when the QAT menu item is clicked successfully .
 </thead>
 <tbody>
 <tr>
-<td class="name">argument.cancel</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">argument.model</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name">argument.type</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">argument.text</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the clicked menu item text.</td>
 </tr>

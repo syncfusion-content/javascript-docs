@@ -21,12 +21,12 @@ Add content to Group item which is based on [`type`](http://help.syncfusion.com/
 
 Groups and defaults settings can be added with the [`content`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content).
 
-#### Defaults
+#### _Defaults_
 
 The `height`, `width`, `type`, `isBig` property to the controls in the [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups) can be specified commonly.
 The `height` & `width` applicable to button, split button, dropdownlist ,Toggle button controls and `isBig` applicable to only button controls ( button, split , toggle)
 
-#### Adding Content Groups
+#### _Adding Content Groups_
 
 Controls such as button, split button, dropdown list, toggle button, gallery in the subgroup of the Ribbon tab can be rendered. All of these can be customized using its corresponding settings property such as [`buttonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings), `dropdownSettings`, etc.
 
@@ -119,7 +119,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 
 ![](/js/Ribbon/Group_images/Group_img1.png)
 
-#### Enable Separator 
+#### _Enable Separator_ 
 
 Separates the control from the next control in the group when group `alignType` is `row`. Set “true” to [`enableSeparator`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-enableseparator).
 
