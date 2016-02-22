@@ -291,7 +291,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
         }
         .e-ribbon .e-Actions:before {
             /*e-Actions to group “Actions”*/
-            content: "\e177";
+            content: "\e184;
             text-indent: 7px;
         }
     </style>
