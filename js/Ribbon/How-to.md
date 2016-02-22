@@ -7,7 +7,9 @@ platform: js
 keywords: get ribbon object,ribbon get ribbon object
 ---
 
-### Get Ribbon object
+# How to
+
+## Get Ribbon object
 
 After Ribbon initialization, Ribbon object is stored in a container element of Ribbon and it can be accessed for further processing. 
 
