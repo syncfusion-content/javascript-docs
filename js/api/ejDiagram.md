@@ -113,7 +113,7 @@ Defines a set of custom commands and binds them with a set of desired key gestur
 ### commandManager.commands `Object`
 {:#members:commandmanager-commands}
 
-An object that maps a set of command names with the corresponding command objects 
+An object that maps a set of command names with the corresponding command objects
 
 #### Default Value
 
@@ -156,7 +156,7 @@ $("#diagramcontent").ejDiagram( {
 ### commandManager.commands.canExecute `function`
 {:#members:commandmanager-commands-canexecute}
 
-A method that defines whether the command is executable at the moment or not. 
+A method that defines whether the command is executable at the moment or not.
 
 #### Example
 
@@ -183,7 +183,6 @@ $("#diagramcontent").ejDiagram( {
 </script>
 
 {% endhighlight %}
-
 
 ### commandManager.commands.execute `function`
 {:#members:commandmanager-commands-execute}
@@ -255,7 +254,7 @@ $("#diagramcontent").ejDiagram( {
 {% endhighlight %}
 
 ### commandManager.commands.gesture.keyModifiers `enum`
-{:#members:commandmanager-commands-gesture-keymodifers}
+{:#members:commandmanager-commands-gesture-keymodifiers}
 
 Sets a combination of key modifiers, on recognition of which the command will be executed.
 
@@ -1551,7 +1550,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 ### connectors.tooltip `Object`
 {:#members:connectors-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over connector.  For tooltip properties, refer [Tooltip](#members:tooltip)
+Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value
 
@@ -2085,8 +2084,29 @@ $("#diagramcontent").ejDiagram({ enableContextMenu: false });
 
 {% endhighlight %}
 
+### height `String`
+{:#members:height}
+
+Specifies the height of the diagram
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ height:"500" });
+</script>
+
+{% endhighlight %}
+
 ### historyManager `Object`
 {:#members:historymanager}
+
 Customizes the undo redo functionality
 
 ### historyManager.canPop `function`
@@ -2113,6 +2133,7 @@ if(diagram.model.historyManager.canPop(entry))
 	diagram.model.historyManager.pop();
 	
 </script>
+
 {% endhighlight %}
 
 ### historyManager.closeGroupAction `function`
@@ -2149,7 +2170,7 @@ diagram.model.historyManager.closeGroupAction();
 ### historyManager.pop `function`
 {:#members:historymanager-pop}
 
-A method that removes the history of a recent change made in diagram 
+A method that removes the history of a recent change made in diagram
 
 #### Example
 
@@ -2162,6 +2183,7 @@ var diagram = $("#diagramcontent").ejDiagram("instance");
 //Pop the last change
 diagram.model.historyManager.pop();	
 </script>
+
 {% endhighlight %}
 
 ### historyManager.push `function`
@@ -2187,6 +2209,7 @@ var newValue = { role: "New role" };
 node.empInfo = newValue;
 
 </script>
+
 {% endhighlight %}
 
 ### historyManager.redo `function`
@@ -2226,6 +2249,7 @@ function customUndoRedo(args) {
 	args.prevState = currentState;
 }	
 </script>
+
 {% endhighlight %}
 
 ### historyManager.startGroupAction `function`
@@ -2292,25 +2316,6 @@ function customUndoRedo(args) {
 	args.prevState = currentState;
 }	
 </script>
-{% endhighlight %}
-
-### height `String`
-{:#members:height}
-
-Specifies the height of the diagram
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram({ height:"500" });
-</script>
 
 {% endhighlight %}
 
@@ -2320,7 +2325,7 @@ $("#diagramcontent").ejDiagram({ height:"500" });
 Automatically arranges the nodes and connectors in a predefined manner
 
 ### layout.fixedNode `String`
-{:#members:layout- fixednode}
+{:#members:layout-fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
@@ -2338,7 +2343,7 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 {% endhighlight %}
 
 ### layout.getLayoutInfo `Object`
-{:#members:layout- getlayoutinfo}
+{:#members:layout-getlayoutinfo}
 
 Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
 
@@ -2354,27 +2359,6 @@ Customizes the orientation of trees/sub trees. For orientations, see [Chart Orie
 <script>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
 $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
-</script>
-
-{% endhighlight %}
-
-### layout.marginY `Number`
-{:#members:layout- marginy}
-
-Sets the margin value to be vertically left between layout and diagram
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-// marginY of the layout
-$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
 </script>
 
 {% endhighlight %}
@@ -2417,6 +2401,27 @@ Sets the margin value to be horizontally left between the layout and diagram
 <script>
 //marginX of the layout
 $("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
+</script>
+
+{% endhighlight %}
+
+### layout.marginY `Number`
+{:#members:layout-marginy}
+
+Sets the margin value to be vertically left between layout and diagram
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+// marginY of the layout
+$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
 </script>
 
 {% endhighlight %}
@@ -2481,6 +2486,7 @@ Sets the space to be vertically left between nodes
 //verticalSpacing of the layout
 $("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
 </script>
+
 {% endhighlight %}
 
 ### locale `String`
@@ -2884,7 +2890,6 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-
 ### nodes.event `enum`
 {:#members:nodes-event}
 
@@ -2937,36 +2942,6 @@ $("#diagramcontent").ejDiagram({
       layout:{type:"hierarchicaltree"}
 });
 
-</script>
-
-{% endhighlight %}
-
-### nodes.isexpanded `Boolean`
-{:#members:nodes-isexpanded}
-
-Defines whether the sub tree of the node is expanded or collapsed
-
-#### Default Value
-
-* true
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-//Collapse its subtree
-var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, isExpanded: false};
-
-var node2 = { name: "node2", width: 50, height:50 };
-var connector = { sourceNode:"node1", targetNode:"node2" , name:"connector" };
-$("#diagramcontent").ejDiagram({
-      nodes:[node1, node2],
-      connectors:[connector],
-      layout:{type:"hierarchicaltree"}
-});
 </script>
 
 {% endhighlight %}
@@ -3051,7 +3026,6 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 {% endhighlight %}
 
 ### nodes.gradient.LinearGradient.x1 `Number`
-
 {:#members:nodes-gradient-lineargradient-x1}
 
 Defines the left most position(relative to node) of the rectangular region that needs to be painted
@@ -3154,7 +3128,6 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
-
 
 ### nodes.gradient.RadialGradient `Object`
 {:#members:nodes-gradient-radialgradient}
@@ -3467,6 +3440,36 @@ var node = diagram.selectionList[0];
 for(var i = 0; i < node.inEdges.length; i++){
     console.log(node.inEdges[i]);
 }
+</script>
+
+{% endhighlight %}
+
+### nodes.isexpanded `Boolean`
+{:#members:nodes-isexpanded}
+
+Defines whether the sub tree of the node is expanded or collapsed
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+//Collapse its subtree
+var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, isExpanded: false};
+
+var node2 = { name: "node2", width: 50, height:50 };
+var connector = { sourceNode:"node1", targetNode:"node2" , name:"connector" };
+$("#diagramcontent").ejDiagram({
+      nodes:[node1, node2],
+      connectors:[connector],
+      layout:{type:"hierarchicaltree"}
+});
 </script>
 
 {% endhighlight %}
@@ -4212,7 +4215,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 ### nodes.lanes.orientation `String`
 {:#members:nodes-lanes-orientation}
 
-Sets the orientation of the lane. 
+Sets the orientation of the lane.
 
 #### Default Value
 
@@ -4697,7 +4700,7 @@ $("#symbolpalette").ejSymbolPalette({
 {% endhighlight %}
 
 ### nodes.paletteItem.enableScale `Boolean`
-{:#members:nodes-paletteitem.enablescale}
+{:#members:nodes-paletteitem-enablescale}
 
 Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
 
@@ -4870,7 +4873,7 @@ $("#symbolpalette").ejSymbolPalette({
 ### nodes.paletteItem.width `Number`
 {:#members:nodes-paletteitem-width}
 
-Defines the width of the symbol 
+Defines the width of the symbol
 
 #### Default Value
 
@@ -5192,7 +5195,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 ### nodes.pivot `Point`
 {:#members:nodes-pivot}
 
-Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation) 
+Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)
 
 #### Default Value
 
@@ -5992,7 +5995,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tooltip `Object`
 {:#members:nodes-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over node.  For tooltip properties, refer [Tooltip](#members:tooltip)
+Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value
 
@@ -6220,12 +6223,14 @@ Defines the maximum distance to be left between the object and the scroll bar to
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
     pageSettings:{ autoScrollBorder: { left: 50, top: 50, right: 50, bottom: 50 } }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.multiplePage `Boolean`
@@ -6247,6 +6252,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{multiplePage:false}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBackgroundColor `String`
@@ -6268,6 +6274,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBackgroundColor:"lightgray"}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBorderColor `String`
@@ -6289,6 +6296,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBorderWidth `Number`
@@ -6310,6 +6318,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageHeight `Number`
@@ -6331,6 +6340,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageMargin `Number`
@@ -6352,6 +6362,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageMargin : 20 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageOrientation `enum`
@@ -6374,6 +6385,7 @@ $("#diagramcontent").ejDiagram({
 	pageOrientation:ej.datavisualization.Diagram.PageOrientations.Landscape }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageWidth `Number`
@@ -6395,6 +6407,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.scrollableArea `Object`
@@ -6417,6 +6430,7 @@ $("#diagramcontent").ejDiagram({
     scrollableArea: {x:0, y:0, width:1000, height:1000} }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.scrollLimit `enum`
@@ -6438,6 +6452,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ scrollLimit: ej.datavisualization.Diagram.ScrollLimit.Diagram }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.showPageBreak `Boolean`
@@ -6459,6 +6474,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ showPageBreak: true }
 });
 </script>
+
 {% endhighlight %}
 
 ### scrollSettings `Object`
@@ -6554,29 +6570,6 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings.viewPortWidth `Number`
-{:#members:scrollsettings-viewportwidth}
-
-Allows to read the view port width of the diagram
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-	
-var diagram = $("#diagramcontent").ejDiagram("instance");
-console.log(diagram.model.scrollSettings.viewPortWidth);
-
-</script>
-
-{% endhighlight %}
-
 ### scrollSettings.viewPortHeight `Number`
 {:#members:scrollsettings-viewportheight}
 
@@ -6595,6 +6588,29 @@ Allows to read the view port height of the diagram
 	
 var diagram = $("#diagramcontent").ejDiagram("instance");
 console.log(diagram.model.scrollSettings.viewPortHeight);
+
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.viewPortWidth `Number`
+{:#members:scrollsettings-viewportwidth}
+
+Allows to read the view port width of the diagram
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+var diagram = $("#diagramcontent").ejDiagram("instance");
+console.log(diagram.model.scrollSettings.viewPortWidth);
 
 </script>
 
@@ -6663,6 +6679,7 @@ Defines a method that dynamically enables/ disables the interaction with multipl
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
@@ -6673,8 +6690,8 @@ selectedItems: {
     } }
 });
 </script>
-{% endhighlight %}
 
+{% endhighlight %}
 
 ### selectedItems.height `Number`
 {:#members:selecteditems-height}
@@ -6688,6 +6705,7 @@ Sets the height of the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 //Sets the height of the selector as 100
@@ -6695,12 +6713,13 @@ $("#diagramcontent").ejDiagram({
      selectedItems: { height:100, width: 100 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.offsetX `Number`
 {:#members:selecteditems-offsetx}
 
-Sets the x position of the selector 
+Sets the x position of the selector
 
 #### Default Value
 
@@ -6709,12 +6728,14 @@ Sets the x position of the selector
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });;
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.offsetY `Number`
@@ -6729,12 +6750,14 @@ Sets the y position of the selector
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.rotateAngle `Number`
@@ -6749,12 +6772,14 @@ Sets the angle to rotate the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { rotateAngle: 90 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.tooltip `Object`
@@ -6769,12 +6794,14 @@ Sets the angle to rotate the selected items. For tooltip properties, refer [Tool
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { tooltip : { alignment:{ vertical:"top" } } }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.userHandles `Array`
@@ -6812,6 +6839,7 @@ Sets the width of the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 	
@@ -7328,14 +7356,14 @@ Add nodes and connectors to diagram at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">a JSON to define a node/connector or an array of nodes and connector</td>
 		</tr>
@@ -7371,14 +7399,14 @@ Add a label to a node at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName </td>
+			<td class="name">nodeName</td>
 			<td class="type">string</td>
 			<td class="description">name of the node to which label will be added</td>
 		</tr>
@@ -7411,14 +7439,14 @@ Add a phase to a swimlane at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the swimlane to which the phase will be added</td>
 		</tr>
@@ -7450,21 +7478,21 @@ Add a collection of ports to the node specified by name
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the node to which the ports have to be added</td>
 		</tr>
 		<tr>
 			<td class="name">ports</td>
 			<td class="type">Array</td>
-			<td class="description">a collection of ports to be added to the specified node </td>
+			<td class="description">a collection of ports to be added to the specified node</td>
 		</tr>
 	</tbody>
 </table>
@@ -7490,14 +7518,14 @@ Add the specified node to selection list
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">the node to be selected</td>
 		</tr>
@@ -7530,8 +7558,8 @@ Align the selected objects based on the reference object and direction
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7564,8 +7592,8 @@ Bring the specified portion of the diagram content to the diagram viewport
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7598,8 +7626,8 @@ Bring the specified portion of the diagram content to the center of the diagram 
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7718,8 +7746,8 @@ Export the diagram as downloadable files or as data
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -7730,7 +7758,7 @@ Export the diagram as downloadable files or as data
 			<td class="description">options to export the desired region of diagram to the desired formats</td>
 		</tr>
 		<tr>
-			<td class="name">options.fileName </td>
+			<td class="name">options.fileName</td>
 			<td class="type">String</td>
 			<td class="description">name of the file to be downloaded</td>
 		</tr>
@@ -7740,7 +7768,7 @@ Export the diagram as downloadable files or as data
 			<td class="description">format of the exported file/data See [File Formats](/js/api/global#fileformats)</td>
 		</tr>
 		<tr>
-			<td class="name">options.mode </td>
+			<td class="name">options.mode</td>
 			<td class="type">String</td>
 			<td class="description">to set whether to export diagram as a file or as raw data See [Export Modes](/js/api/global#exportmodes)</td>
 		</tr>
@@ -7793,14 +7821,14 @@ Read a node/connector object by its name
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the node/connector that is to be identified</td>
 		</tr>
@@ -7827,14 +7855,14 @@ Fit the diagram content into diagram viewport
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">mode </td>
+			<td class="name">mode</td>
 			<td class="type">String [optional]</td>
 			<td class="description">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
 		</tr>
@@ -7888,14 +7916,14 @@ Insert a label into a node's label collection at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the node to which the label has to be inserted</td>
 		</tr>
@@ -7907,7 +7935,7 @@ Insert a label into a node's label collection at runtime
 		<tr>
 			<td class="name">index</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">index to insert the label into the node </td>
+			<td class="description">index to insert the label into the node</td>
 		</tr>
 	</tbody>
 </table>
@@ -7950,8 +7978,8 @@ Load the diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8001,8 +8029,8 @@ Move the selected objects by either one pixel or by the pixels specified through
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8040,8 +8068,8 @@ Paste the selected object from internal clipboard to diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8052,7 +8080,7 @@ Paste the selected object from internal clipboard to diagram
 			<td class="description">object to be added to diagram</td>
 		</tr>
 		<tr>
-			<td class="name">rename </td>
+			<td class="name">rename</td>
 			<td class="type">Boolean [optional]</td>
 			<td class="description">to define whether the specified object is to be renamed or not</td>
 		</tr>
@@ -8133,14 +8161,14 @@ Remove either the given node/connector or the selected element from diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object [optional]</td>
 			<td class="description">the node/connector to be removed from diagram</td>
 		</tr>
@@ -8167,14 +8195,14 @@ Remove a particular object from selection list
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">the node/connector to be removed from selection list</td>
 		</tr>
@@ -8270,14 +8298,14 @@ Bring the node into view
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">the node/connector to be brought into view</td>
 		</tr>
@@ -8390,14 +8418,14 @@ Move the specified label to edit mode
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">node/connector that contains the label to be edited</td>
 		</tr>
@@ -8464,8 +8492,8 @@ Update diagram at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8489,6 +8517,7 @@ var tool = ej.datavisualization.Diagram.Tool.ZoomPan;
 //update the tool
 diagram.update({ tool: tool });
 </script>
+
 {% endhighlight %}
 
 ### updateConnector(name, options)
@@ -8499,14 +8528,14 @@ Update Connectors at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the connector to be updated</td>
 		</tr>
@@ -8538,14 +8567,14 @@ Update the given label at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName </td>
+			<td class="name">nodeName</td>
 			<td class="type">String</td>
 			<td class="description">the name of node/connector which contains the label to be updated</td>
 		</tr>
@@ -8585,14 +8614,14 @@ Update nodes at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the node that is to be updated</td>
 		</tr>
@@ -8624,14 +8653,14 @@ Update a port with its modified properties at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">nodeName </td>
+			<td class="name">nodeName</td>
 			<td class="type">String</td>
 			<td class="description">the name of node which contains the port to be updated</td>
 		</tr>
@@ -8670,14 +8699,14 @@ Update the specified node as selected object
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">name </td>
+			<td class="name">name</td>
 			<td class="type">String</td>
 			<td class="description">name of the node to be updated as selected object</td>
 		</tr>
@@ -8704,8 +8733,8 @@ Update the selection at runtime
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8738,14 +8767,14 @@ Update userhandles with respect to the given node
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node </td>
+			<td class="name">node</td>
 			<td class="type">Object</td>
 			<td class="description">node/connector with respect to which, the user handles have to be updated</td>
 		</tr>
@@ -8790,8 +8819,8 @@ Upgrade the diagram from old version
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8825,8 +8854,8 @@ Used to zoomIn/zoomOut diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8864,8 +8893,8 @@ Triggers When auto scroll is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8897,8 +8926,8 @@ Triggers when a node, connector or diagram is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -8921,7 +8950,7 @@ Triggers when a node, connector or diagram is clicked
 		<tr>
 			<td class="name">offsetY</td>
 			<td class="type">Number</td>
-			<td class="description">parameter returns  the vertical coordinate of the mouse pointer, relative to the diagram</td>
+			<td class="description">parameter returns the vertical coordinate of the mouse pointer, relative to the diagram</td>
 		</tr>
 		<tr>
 			<td class="name">count</td>
@@ -8955,8 +8984,8 @@ Triggers when the connection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9003,14 +9032,14 @@ Triggers when the connector collection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">changeType </td>
+			<td class="name">changeType</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns whether the connector is inserted or removed</td>
 		</tr>
@@ -9046,8 +9075,8 @@ Triggers when the connectors' source point is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9073,7 +9102,7 @@ Triggers when the connectors' source point is changed
 			<td class="description">returns the source port of the element</td>
 		</tr>
 		<tr>
-			<td class="name">dragState </td>
+			<td class="name">dragState</td>
 			<td class="type">String</td>
 			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
@@ -9104,8 +9133,8 @@ Triggers when the connectors' target point is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9131,7 +9160,7 @@ Triggers when the connectors' target point is changed
 			<td class="description">returns the target port of the element</td>
 		</tr>
 		<tr>
-			<td class="name">dragState </td>
+			<td class="name">dragState</td>
 			<td class="type">String</td>
 			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
@@ -9162,8 +9191,8 @@ Triggers before opening the context menu
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9205,8 +9234,8 @@ Triggers when a context menu item is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9237,7 +9266,7 @@ Triggers when a context menu item is clicked
 			<td class="description">parameter returns the object that was clicked</td>
 		</tr>
 		<tr>
-			<td class="name">canExecute </td>
+			<td class="name">canExecute</td>
 			<td class="type">Boolean</td>
 			<td class="description">parameter defines whether to execute the click event or not</td>
 		</tr>
@@ -9263,8 +9292,8 @@ Triggers when a node, connector or diagram model is clicked twice
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9301,8 +9330,8 @@ Triggers while dragging the elements in diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9313,17 +9342,17 @@ Triggers while dragging the elements in diagram
 			<td class="description">parameter returns the node or connector that is being dragged</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue </td>
+			<td class="name">oldValue</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the previous position of the node/connector</td>
 		</tr>
 		<tr>
-			<td class="name">newValue </td>
+			<td class="name">newValue</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new position of the node/connector</td>
 		</tr>
 		<tr>
-			<td class="name">dragState </td>
+			<td class="name">dragState</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the state of drag event (Starting, dragging, completed)</td>
 		</tr>
@@ -9354,8 +9383,8 @@ Triggers when a symbol is dragged into diagram from symbol palette
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9384,6 +9413,39 @@ dragEnter:function (args) {}
 
 {% endhighlight %}
 
+### dragLeave
+{:#events:dragleave}
+
+Triggers when a symbol is dragged outside of the diagram.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// drag leave event for diagram
+$("#diagramcontent").ejDiagram({
+dragLeave:function (args) {}
+});
+
+{% endhighlight %}
+
 ### dragOver
 {:#events:dragover}
 
@@ -9392,8 +9454,8 @@ Triggers when a symbol is dragged over diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9442,39 +9504,6 @@ dragOver:function (args) {}
 
 {% endhighlight %}
 
-### dragLeave
-{:#events:dragleave}
-
-Triggers when a symbol is dragged outside of the diagram.
-
-<table class="params">
-	<thead>
-		<tr>
-			<th>Name </th>
-			<th>Type </th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
-		</tr>
-	</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-// drag leave event for diagram
-$("#diagramcontent").ejDiagram({
-dragLeave:function (args) {}
-});
-
-{% endhighlight %}
-
 ### drop
 {:#events:drop}
 
@@ -9483,8 +9512,8 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9500,7 +9529,7 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 			<td class="description">parameter returns whether or not to cancel the drop event</td>
 		</tr>
 		<tr>
-			<td class="name">source </td>
+			<td class="name">source</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the element is dragged</td>
 		</tr>
@@ -9536,8 +9565,8 @@ Triggers when a child is added to or removed from a group
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9558,7 +9587,7 @@ Triggers when a child is added to or removed from a group
 			<td class="description">parameter returns the new parent group(if any) of the object</td>
 		</tr>
 		<tr>
-			<td class="name">cause </td>
+			<td class="name">cause</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the cause of group change("group", unGroup")</td>
 		</tr>
@@ -9584,8 +9613,8 @@ Triggers when a diagram element is clicked
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9632,8 +9661,8 @@ Triggers when mouse enters a node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9644,7 +9673,7 @@ Triggers when mouse enters a node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source </td>
+			<td class="name">source</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the selected object is dragged</td>
 		</tr>
@@ -9675,8 +9704,8 @@ Triggers when mouse leaves node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9687,7 +9716,7 @@ Triggers when mouse leaves node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source </td>
+			<td class="name">source</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the selected object is dragged</td>
 		</tr>
@@ -9718,8 +9747,8 @@ Triggers when mouse hovers over a node/connector
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9730,7 +9759,7 @@ Triggers when mouse hovers over a node/connector
 			<td class="description">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
-			<td class="name">source </td>
+			<td class="name">source</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the object from where the element is dragged</td>
 		</tr>
@@ -9761,14 +9790,14 @@ Triggers when node collection is changed
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">changeType </td>
+			<td class="name">changeType</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns whether the node is to be added or removed</td>
 		</tr>
@@ -9796,64 +9825,6 @@ nodeCollectionChange:function (args) {}
 
 {% endhighlight %}
 
-### sizeChange
-{:#events:sizechange}
-
-Triggers when a node is resized
-
-<table class="params">
-	<thead>
-		<tr>
-			<th>Name </th>
-			<th>Type </th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns node that was resized</td>
-		</tr>
-		<tr>
-			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter to cancel the size change </td>
-		</tr>
-		<tr>
-			<td class="name">newValue </td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
-		</tr>
-		<tr>
-			<td class="name">oldValue </td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
-		</tr>
-		<tr>
-			<td class="name">resizeState </td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the state of resizing(starting,resizing,completed)</td>
-		</tr>
-		<tr>
-			<td class="name">offset</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the difference between new and old value</td>
-		</tr>
-	</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-// sizeChange event for diagram
-$("#diagramcontent").ejDiagram({
-sizeChange:function (args) {}
-});
-
-{% endhighlight %}
-
 ### propertyChange
 {:#events:propertychange}
 
@@ -9862,8 +9833,8 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9879,17 +9850,17 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 			<td class="description">parameter returns the action is nudge or not</td>
 		</tr>
 		<tr>
-			<td class="name">newValue </td>
+			<td class="name">newValue</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the new value of the node property that is being changed</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue </td>
+			<td class="name">oldValue</td>
 			<td class="type">Object</td>
 			<td class="description">parameter returns the old value of the property that is being changed</td>
 		</tr>
 		<tr>
-			<td class="name">propertyName </td>
+			<td class="name">propertyName</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the name of the property that is changed</td>
 		</tr>
@@ -9915,8 +9886,8 @@ Triggers when the diagram elements are rotated
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -9927,14 +9898,14 @@ Triggers when the diagram elements are rotated
 			<td class="description">parameter returns the node that is rotated</td>
 		</tr>
 		<tr>
-			<td class="name">oldValue </td>
+			<td class="name">oldValue</td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the previous rotation angle </td>
+			<td class="description">parameter returns the previous rotation angle</td>
 		</tr>
 		<tr>
-			<td class="name">newValue </td>
+			<td class="name">newValue</td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns the new rotation angle </td>
+			<td class="description">parameter returns the new rotation angle</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -9963,8 +9934,8 @@ Triggers when the diagram is zoomed or panned
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -10001,8 +9972,8 @@ Triggers when a connector segment is edited
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -10013,7 +9984,7 @@ Triggers when a connector segment is edited
 			<td class="description">Parameter returns the connector that is being edited</td>
 		</tr>
 		<tr>
-			<td class="name">dragState </td>
+			<td class="name">dragState</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the state of editing (starting, dragging, completed)</td>
 		</tr>
@@ -10049,14 +10020,14 @@ Triggers when the selection is changed in diagram
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">changeType </td>
+			<td class="name">changeType</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns whether the item is selected or removed selection</td>
 		</tr>
@@ -10078,7 +10049,7 @@ Triggers when the selection is changed in diagram
 		<tr>
 			<td class="name">selectedItems</td>
 			<td class="type">Array</td>
-			<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change </td>
+			<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
@@ -10099,6 +10070,64 @@ selectionChange:function (args) {}
 
 {% endhighlight %}
 
+### sizeChange
+{:#events:sizechange}
+
+Triggers when a node is resized
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns node that was resized</td>
+		</tr>
+		<tr>
+			<td class="name">cancel</td>
+			<td class="type">Boolean</td>
+			<td class="description">parameter to cancel the size change</td>
+		</tr>
+		<tr>
+			<td class="name">newValue</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
+		</tr>
+		<tr>
+			<td class="name">oldValue</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
+		</tr>
+		<tr>
+			<td class="name">resizeState</td>
+			<td class="type">String</td>
+			<td class="description">parameter returns the state of resizing(starting,resizing,completed)</td>
+		</tr>
+		<tr>
+			<td class="name">offset</td>
+			<td class="type">Object</td>
+			<td class="description">parameter returns the difference between new and old value</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// sizeChange event for diagram
+$("#diagramcontent").ejDiagram({
+sizeChange:function (args) {}
+});
+
+{% endhighlight %}
+
 ### textChange
 {:#events:textchange}
 
@@ -10107,8 +10136,8 @@ Triggers when label editing is ended
 <table class="params">
 	<thead>
 		<tr>
-			<th>Name </th>
-			<th>Type </th>
+			<th>Name</th>
+			<th>Type</th>
 			<th>Description</th>
 		</tr>
 	</thead>
@@ -10119,7 +10148,7 @@ Triggers when label editing is ended
 			<td class="description">parameter returns the node that contains the text being edited</td>
 		</tr>
 		<tr>
-			<td class="name">value </td>
+			<td class="name">value</td>
 			<td class="type">String</td>
 			<td class="description">parameter returns the new text</td>
 		</tr>
