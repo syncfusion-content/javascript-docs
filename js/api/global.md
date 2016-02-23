@@ -14601,7 +14601,7 @@ Right</td>
 ### TextAlign
 {:#enum:textalign}
  
-Specifies whether the text in the cell is left-aligned,right-aligned,centered.
+Specifies whether the text in the cell is left-aligned,right-aligned,centered,justified.
 
 <table class="props">
 <thead>
