@@ -1294,14 +1294,10 @@ Specifies the text for ribbon backstage page's tab header and button elements.
 ### applicationTab.backstageSettings.pages.itemType `enum`
 {:#members:applicationtab-backstagesettings-pages-itemtype}
 
+<ts name="ej.Ribbon.itemType"/>
+
 Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
 
-#### Default Value:
-
-* ej.Ribbon.itemType.tab
-
-<ts name=”ej.Ribbon.itemType”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -1320,6 +1316,10 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
 </tr>
 </tbody>
 </table>
+
+#### Default Value:
+
+* ej.Ribbon.itemType.tab
 
 #### Example
 
@@ -1737,14 +1737,10 @@ Specifies the menu members, events by using the menu settings for the menu in th
 ### applicationTab.type `enum`
 {:#members:applicationtab-type}
 
+<ts name="ej.Ribbon.applicationTabType"/>
+
 Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
 
-#### Default Value:
-
-*  ej.Ribbon.applicationTabType.menu
-
-<ts name=”ej.Ribbon.applicationTabType”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -1763,6 +1759,10 @@ Specifies the application menu or backstage page. Specify the type of applicatio
 </tr>
 </tbody>
 </table>
+
+#### Default Value:
+
+*  ej.Ribbon.applicationTabType.menu
 
 #### Example
 
@@ -2469,14 +2469,10 @@ Specifies single group or multiple groups and its contents to each tab in the ri
 ### tabs.groups.alignType `enum`
 {:#members:tabs-groups-aligntype}
 
+<ts name="ej.Ribbon.alignType"/>
+
 Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.alignType.rows" and for column type is "ej.Ribbon.alignType.columns".
 
-#### Default Value:
-
-* ej.Ribbon.alignType.rows
-
-<ts name=”ej.Ribbon.alignType”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -2495,6 +2491,10 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
 </tr>
 </tbody>
 </table>
+
+#### Default Value:
+
+* ej.Ribbon.alignType.rows
 
 #### Example
 
@@ -3238,17 +3238,13 @@ Specifies the syncfusion button members, events by using buttonSettings.
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.customGalleryItems.customItemType `enum`###
+### tabs.groups.content.groups.customGalleryItems.customItemType `enum`
 {:#members:tabs-groups-content-groups-customgalleryitems-customitemtype}
+
+<ts name="ej.Ribbon.customItemType"/>
 
 Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Synfusion button and menu.
 
-#### Default Value:
-
-* ej.Ribbon.customItemType.button
-
-<ts name=”ej.Ribbon.customItemType”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -3267,6 +3263,10 @@ Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.
 </tr>
 </tbody>
 </table>
+
+#### Default Value:
+
+* ej.Ribbon.customItemType.button
 
 #### Example
 
@@ -5527,14 +5527,10 @@ Specifies the tooltip for button, split button, dropdown list, toggle button, cu
 ### tabs.groups.content.groups.quickAccessMode `enum`
 {:#members:tabs-groups-content-groups-quickaccessmode}
 
+<ts name="ej.Ribbon.quickAccessMode"/>
+
 To add,show and hide controls in Quick Access toolbar.
 
-#### Default Value:
-
-* ej.Ribbon.quickAccessMode.none
-
-<ts name=”ej.Ribbon.quickAccessMode”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -5557,6 +5553,10 @@ To add,show and hide controls in Quick Access toolbar.
 </tr>
 </tbody>
 </table>
+
+#### Default Value:
+
+* ej.Ribbon.quickAccessMode.none
 
 #### Example
 
@@ -5632,14 +5632,10 @@ To add,show and hide controls in Quick Access toolbar.
 ### tabs.groups.content.groups.type `enum`
 {:#members:tabs-groups-content-groups-type}
 
+<ts name="ej.Ribbon.type"/>
+
 Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
 
-#### Default Value:
-
-* ej.Ribbon.type.button
-
-<ts name=”ej.Ribbon.type”/>
- 
 <table class="params">
 <thead>
 <tr>
@@ -5675,6 +5671,10 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
 </tbody>
 </table>
 
+#### Default Value:
+
+* ej.Ribbon.type.button
+ 
 #### Example
 
 {% highlight html %}
