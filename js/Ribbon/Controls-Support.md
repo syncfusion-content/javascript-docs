@@ -27,11 +27,11 @@ The following table describes about the built in controls [`type`](http://help.s
 <tr>
 <td class="type">Button</td>
 <td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejbutton">ejButton</a> -  <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings">buttonSettings</a></span></td><td class="example last">
-	buttonSettings: {
+    buttonSettings: {
 					width: 70,
 					contentType: ej.ContentType.ImageOnly,
 					prefixIcon: "e-ribbon e-new"
-				    }
+				    }                           
  </td>
 </tr>
 <tr>
@@ -75,8 +75,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </table>
 
 N> 1.You can specify type either to [`group’s collection`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type).
-
-N> 2.	For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
+N> 2.For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
 
 {% highlight html %}
 
