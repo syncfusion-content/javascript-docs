@@ -37,9 +37,9 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 
 * module:jQuery
 * module:jquery.easing.min.js
-* module:jquery.globalize.min.js
 * module:ej.core.js
 * module:ej.data.js
+* module:ej.globalize.min.js
 * module:ej.dropdownlist.js
 * module:ej.button.js
 * module:ej.tab.js
