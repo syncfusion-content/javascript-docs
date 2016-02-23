@@ -781,6 +781,39 @@ Note: allowAutoFill must be true while setting filltype.
 #### Default Value
 * ej.Spreadsheet.AutoFillOptions.FillSeries
 
+<ts name="ej.Spreadsheet.AutoFillOptions"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">CopyCells</td>
+<td class="description">Specifies the CopyCells property in AutoFillOptions.</td>
+</tr>
+<tr>
+<td class="name">FillSeries</td>
+<td class="description">Specifies the FillSeries property in AutoFillOptions.</td>
+</tr>
+<tr>
+<td class="name">FillFormattingOnly</td>
+<td class="description">Specifies the FillFormattingOnly property in AutoFillOptions.</td>
+</tr>
+<tr>
+<td class="name">FillWithoutFormatting</td>
+<td class="description">Specifies the FillWithoutFormatting property in AutoFillOptions.</td>
+</tr>
+<tr>
+<td class="name">FlashFill</td>
+<td class="description">Specifies the FlashFill property in AutoFillOptions.</td>
+</tr>
+</tbody>
+</table>
+
 #### Example
 
 {% highlight html %}
@@ -1505,7 +1538,7 @@ allowVirtualScrolling: true
 
 {% endhighlight %}
 
-#### scrollSettings.height  `Number/String`
+#### scrollSettings.height  `Number|String`
 {:#members:scrollsettings-height}
 
 Gets or sets the value that indicates to define the height of spreadsheet.
@@ -1563,6 +1596,27 @@ Note: allowScrolling must be true while enabling this property.
 #### Default Value
 * ej.Spreadsheet.scrollMode.Infinite
 
+<ts name="ej.Spreadsheet.scrollMode"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Infinite</td>
+<td class="description">To enable Infinite scrollmode for Spreadsheet.</td>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">To enable Normal scrollmode for Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
 #### Example
 
 {% highlight html %}
@@ -1580,7 +1634,7 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite,
 
 {% endhighlight %}
 
-#### scrollSettings.width `Number/String`
+#### scrollSettings.width `Number|String`
 {:#members:scrollsettings-width}
 
 Gets or sets the value that indicates to define the height off spreadsheet.
@@ -1694,6 +1748,31 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionType.Default
 
+<ts name="ej.Spreadsheet.SelectionType"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Column</td>
+<td class="description">To select only Column in Spreadsheet.</td>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">To select only Row in Spreadsheet.</td>
+</tr>
+<tr>
+<td class="name">Default</td>
+<td class="description">To select both Column/Row in Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
 #### Example
 
 {% highlight html %}
@@ -1720,6 +1799,31 @@ Note: allowSelection must be true while using this property.
 
 #### Default Value
 * ej.Spreadsheet.SelectionUnit.MultiRange
+
+<ts name="ej.Spreadsheet.SelectionUnit"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Single</td>
+<td class="description">To enable Single selection unit in Spreadsheet.</td>
+</tr>
+<tr>
+<td class="name">Range</td>
+<td class="description">To enable Range selection unit in Spreadsheet.</td>
+</tr>
+<tr>
+<td class="name">MultiRange</td>
+<td class="description">To enable Multirange selection unit in Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -2045,7 +2149,7 @@ $("#Spreadsheet").ejSpreadsheet("clearContents", "A2:A6");
 
 {% endhighlight %}
 
-### clearRange(rangeName)
+### clearRange(\[rangeName\])
 {:#methods:clearrange}
 
 This method is used to remove only the data in the range denoted by the specified range name.
@@ -2102,7 +2206,7 @@ It is used to remove data in the specified range of cells based on the defined p
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array / string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
@@ -2496,7 +2600,7 @@ $("#Spreadsheet").ejSpreadsheet("editRange", "updateTable", updateFn);
 
 This method is used to get the activation panel in the Spreadsheet.
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -2539,7 +2643,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Object
 
 #### Example
@@ -2583,7 +2687,7 @@ This method is used to get the activecell element based on the given sheet index
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -2611,7 +2715,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveCellElem", 1);
 
 This method is used to get the current activesheet index in Spreadsheet.
 
-Returns:
+####Returns:
 Number
  
 #### Example
@@ -2639,7 +2743,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveSheetIndex");
 
 This method is used to get the autofill element in Spreadsheet.
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -2694,7 +2798,7 @@ This method is used to get the cell element based on specified row and column in
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -2738,7 +2842,7 @@ This method is used to get the frozen columns index in the Spreadsheet.
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Number
 
 #### Example
@@ -2782,7 +2886,7 @@ This method is used to get the frozen row’s index in Spreadsheet.
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Number
 
 #### Example
@@ -2820,13 +2924,13 @@ This method is used to get the hyperlink data as object from the specified cell 
 <tbody>
 <tr>
 <td class="name">{% highlight html %}cell{% endhighlight %}</td>
-<td class="type"><span class="param-type">DOM Element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the DOM element to get hyperlink</td>
 </tr>
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Object (cellAddr and webAddr based on cell)
 
 #### Example
@@ -2889,7 +2993,7 @@ This method is used to get all cell elements in the specified range.
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -2927,7 +3031,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array / string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
@@ -2937,7 +3041,7 @@ This method is used to get the data in specified range in Spreadsheet.
 </tr>
 <tr>
 <td class="name">{% highlight html %}property{% endhighlight %}</td>
-<td class="type"><span class="param-type">array / string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
 </tr>
 <tr>
@@ -2973,7 +3077,7 @@ This method is used to get the data in specified range in Spreadsheet.
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Array of objects
 
 #### Example
@@ -3018,7 +3122,7 @@ This method is used to get the range indices array based on the specified alpha 
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Array
  
 #### Example
@@ -3062,7 +3166,7 @@ This method is used to get the sheet details based on the given sheet index in S
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Object
 
 #### Example
@@ -3107,7 +3211,7 @@ This method is used to get the sheet content div element of Spreadsheet.
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -3307,7 +3411,7 @@ This method is used to hide the sheet based on the specified sheetIndex or sheet
 <tbody>
 <tr>
 <td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
-<td class="type"><span class="param-type">string / number</span></td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the sheet name or index that you want to hide.</td>
 </tr>
 </tbody>
@@ -3634,7 +3738,7 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">string / array</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">Pass the alpha range cells or array range of cells.</td>
 </tr>
 <tr>
@@ -4159,7 +4263,7 @@ This method is used to set the width for the columns in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}widthColl{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/object</span></td>
+<td class="type"><span class="param-type">array|object</span></td>
 <td class="description">Pass the cell index and width of the cells.</td>
 </tr>
 </tbody>
@@ -4440,7 +4544,7 @@ This method is used to unhide the sheet based on specified sheet name or sheet i
 <tbody>
 <tr>
 <td class="name">{% highlight html %}sheetInfo{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/number</span></td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the sheet name or index that you want to unhide.</td>
 </tr>
 </tbody>
@@ -4522,7 +4626,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified <br/>range else it will use the current selected range.</td>
 </tr>
 </tbody>
@@ -4679,7 +4783,7 @@ This method is used to update the unique data for the specified range of cells i
 </tr>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
@@ -4720,7 +4824,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array / string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified <br/> range else it will use the current selected range.</td>
 </tr>
 </tbody>
@@ -4853,7 +4957,7 @@ This method is used to clear the applied conditional formatting rules in the Spr
 </tr>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
@@ -4897,7 +5001,7 @@ This method is used to get the applied conditional formatting rules as array of 
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Array of objects
 
 #### Example
@@ -5136,7 +5240,7 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
@@ -5202,7 +5306,7 @@ xlObj.XLComment.editComment({rowIdx: 1, colIdx: 1});
 
 This method is used to find the next comment from the active cell in Spreadsheet.
 
-Returns:
+####Returns:
 Boolean
 
 #### Example
@@ -5223,7 +5327,7 @@ xlObj.XLComment.findNextComment();
 
 This method is used to find the previous comment from the active cell in Spreadsheet.
 
-Returns:
+####Returns:
 Boolean
 
 #### Example
@@ -5254,13 +5358,13 @@ This method is used to get comment data for the specified cell.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}cell{% endhighlight %}</td>
-<td class="type"><span class="param-type">DOM Element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the DOM element to get comment data as object.</td>
 </tr>
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Object
 
 #### Example
@@ -5298,7 +5402,7 @@ This method is used to set new comment in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">string / array</span> </td>
+<td class="type"><span class="param-type">string|array</span> </td>
 <td class="description"><span class="optional">Optional. </span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
 </tr>
 <tr>
@@ -5358,7 +5462,7 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
-<td class="type"><span class="param-type">DOM Element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
 </tr>
 </tbody>
@@ -5394,12 +5498,12 @@ This method is used to drag and drop the selected range of cells to destination 
 <tbody>
 <tr>
 <td class="name">{% highlight html %}sourceRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">object/array</span></td>
+<td class="type"><span class="param-type">object|array</span></td>
 <td class="description">Pass the source range to perform drag and drop.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}destinationRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">object/array</span></td>
+<td class="type"><span class="param-type">object|array</span></td>
 <td class="description">Pass the destination range to drop the dragged cells.</td>
 </tr>
 </tbody>
@@ -5644,7 +5748,7 @@ This method is used to get the property value of particular cell, based on the r
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Object/string/array based on the property.
 
 #### Example
@@ -5676,7 +5780,7 @@ This method is used to get the property value in specified cell in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}elem{% endhighlight %}</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the cell element to get property value.</td>
 </tr>
 <tr>
@@ -5742,7 +5846,7 @@ This method is used to update a particular cell value in the Spreadsheet.
 </tr>
 <tr>
 <td class="name">{% highlight html %}value{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/number</span></td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
 </tr>
 </tbody>
@@ -5780,7 +5884,7 @@ This method is used to update a particular cell value and its format in the Spre
 </tr>
 <tr>
 <td class="name">{% highlight html %}val{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/number</span></td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
 </tr>
 <tr>
@@ -6353,7 +6457,7 @@ This method is used to get the column width of the specified column index in the
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Number
 
 #### Example
@@ -6390,7 +6494,7 @@ This method is used to get the row height of the specified row index in the Spre
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Number
 
 #### Example
@@ -6733,7 +6837,7 @@ This method is used to get the selected cells element based on specified sheet i
 </tbody>
 </table>
 
-Returns:
+####Returns:
 Element
 
 #### Example
@@ -7033,7 +7137,7 @@ This method is used to sort a particular range of cells based on its values in t
 <tbody>
 <tr>
 <td class="name">{% highlight html %}range{% endhighlight %}</td>
-<td class="type"><span class="param-type">array/string</span></td>
+<td class="type"><span class="param-type">array|string</span></td>
 <td class="description">Pass the range to sort.</td>
 </tr>
 <tr>
@@ -7312,12 +7416,12 @@ Triggered for every action complete.
 <tbody>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns Spreadsheet model.</td>
 </tr>
 <tr>
 <td class="name">selCell</td>
-<td class="type"><span class="param-type">array/object</span></td>
+<td class="type"><span class="param-type">array|object</span></td>
 <td class="description">Returns the applied cell format object.</td>
 </tr>
 <tr>
@@ -7413,7 +7517,7 @@ Triggered when the auto fill operation begins.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7498,7 +7602,7 @@ Triggered when the auto fill operation completes.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7568,12 +7672,12 @@ Triggered before the cells to be formatted.
 </tr>
 <tr>
 <td class="name">cells</td>
-<td class="type"><span class="param-type">array/object</span></td>
+<td class="type"><span class="param-type">array|object</span></td>
 <td class="description">Returns the selected cells.</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7645,7 +7749,7 @@ Triggered before the cell selection.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7726,7 +7830,7 @@ Triggered before the selected cells are dropped.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7792,7 +7896,7 @@ Triggered before the contextmenu is open.
 <tbody>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
@@ -7802,7 +7906,7 @@ Triggered before the contextmenu is open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7873,7 +7977,7 @@ Triggered before the activation panel is open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7934,7 +8038,7 @@ Triggered when click on sheet cell.
 <tbody>
 <tr>
 <td class="name">cell</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the click cell element.</td>
 </tr>
 <tr>
@@ -8005,7 +8109,7 @@ Triggered when the cell is edited.
 <tbody>
 <tr>
 <td class="name">cell</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the click cell element.</td>
 </tr>
 <tr>
@@ -8020,7 +8124,7 @@ Triggered when the cell is edited.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8081,7 +8185,7 @@ Triggered when mouse hover on cell in sheets.
 <tbody>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
@@ -8091,7 +8195,7 @@ Triggered when mouse hover on cell in sheets.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8147,7 +8251,7 @@ Triggered when save the edited cell.
 <tbody>
 <tr>
 <td class="name">cell</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the save cell element.</td>
 </tr>
 <tr>
@@ -8162,7 +8266,7 @@ Triggered when save the edited cell.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8237,7 +8341,7 @@ Triggered when click the contextmenu items.
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target element.</td>
 </tr>
 <tr>
@@ -8252,7 +8356,7 @@ Triggered when click the contextmenu items.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8343,12 +8447,12 @@ Triggered when the selected cells are being dragged.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
@@ -8423,7 +8527,7 @@ Triggered when the selected cells are initiated to drag.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8504,12 +8608,12 @@ Triggered when the selected cells are dropped.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
@@ -8575,7 +8679,7 @@ Triggered before the range editing starts.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8646,7 +8750,7 @@ Triggered after range editing completes.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8717,7 +8821,7 @@ Triggered before the sheet is loaded.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8778,7 +8882,7 @@ Triggered after the sheet is loaded.
 <tbody>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8839,7 +8943,7 @@ Triggered every click of the menu item.
 <tbody>
 <tr>
 <td class="name">element</td>
-<td class="type"><span class="param-type">element</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns menu click element.</td>
 </tr>
 <tr>
@@ -8849,7 +8953,7 @@ Triggered every click of the menu item.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8941,7 +9045,7 @@ Triggered when import sheet is failed to open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9017,7 +9121,7 @@ Triggered when pager item is clicked in the Spreadsheet.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9088,7 +9192,7 @@ Triggered when click on the ribbon.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9164,7 +9268,7 @@ Triggered when the chart series rendering.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the chart model.</td>
 </tr>
 <tr>
@@ -9246,7 +9350,7 @@ Triggered when click the ribbon tab.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9327,7 +9431,7 @@ Triggered when select the ribbon tab.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
