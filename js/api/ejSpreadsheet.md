@@ -1812,15 +1812,15 @@ Note: allowSelection must be true while using this property.
 <tbody>
 <tr>
 <td class="name">Single</td>
-<td class="description">To enable Single selection unit in Spreadsheet.</td>
+<td class="description">To enable Single selection in Spreadsheet.</td>
 </tr>
 <tr>
 <td class="name">Range</td>
-<td class="description">To enable Range selection unit in Spreadsheet.</td>
+<td class="description">To enable Range selection in Spreadsheet.</td>
 </tr>
 <tr>
 <td class="name">MultiRange</td>
-<td class="description">To enable Multirange selection unit in Spreadsheet.</td>
+<td class="description">To enable Multirange selection in Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
