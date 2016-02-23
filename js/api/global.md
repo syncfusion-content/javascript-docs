@@ -2595,33 +2595,29 @@ Outer</td>
 ### ColumnLayout
 {:#enum:columnlayout}
  
-Specifies whether the layout of column is auto or fixed.
+Specifies whether Grid's the layout of column is auto or fixed.
  
-#### Properties 
-
-Specifies whether the layout of column is auto or fixed.   
-
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Auto</td>
 <td class="type">string</td>
 <td class="default">auto</td>
-<td class="description"> column layout is auto(based on width).</td>
+<td class="description">Column layout is auto(based on width).</td>
 </tr>
 <tr>
 <td class="name">Fixed</td>
 <td class="type">string</td>
-<td class="default">fixed</td>
-<td class="description">column layout is fixed(based on width).</td>
+<td class="default"></td>
+<td class="description">Column layout is fixed(based on width).</td>
 </tr>
 </tbody>
 </table>
@@ -2630,39 +2626,35 @@ Specifies whether the layout of column is auto or fixed.
 ### ClipMode
 {:#enum:clipmode}
  
-whether to include or exclude the literal characters in the input mask when doing a cut or copy command.
- 
-#### Properties 
-
-whether to include or exclude the literal characters in the input mask when doing a cut or copy command.   
+Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Ellipsis</td>
 <td class="type">string</td>
-<td class="default">ellipsis</td>
-<td class="description">Text to break onto multiple lines.</td>
+<td class="default"></td>
+<td class="description">Multiple lines to truncate.ellipis is create the dots.</td> 
 </tr>
 <tr>
 <td class="name">Clip</td>
 <td class="type">string</td>
 <td class="default">clip</td>
-<td class="description">Prevent text from wrapping.</td>
+<td class="description">Truncate the text in the cell.</td>
 </tr>
 <tr>
 <td class="name">EllipsisWithTooltip</td>
 <td class="type">string</td>
-<td class="default">ellipsiswithtooltip</td>
-<td class="description">Text break across multiple lines.wraps an individual word</td>
+<td class="default"></td>
+<td class="description">Multiple lines to truncate.ellipis is create the dots with show the tooltips</td>
 </tr>
 </tbody>
 </table>
@@ -2671,44 +2663,40 @@ whether to include or exclude the literal characters in the input mask when doin
 ### Command Type
 {:#enum:type}
  
-Whether the commandtype of the specified columns.
- 
-#### Properties
-
-Whether the commandtype of the specified columns.
+Whether Grid's the types of command is edit,delete,cancel or save.
  
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Edit</td>
 <td class="type">string</td>
-<td class="default">edit</td>
-<td class="description">CommandType is edit .</td>
+<td class="default"> </td>
+<td class="description">CommandType is edit.</td>
 </tr>
 <tr>
 <td class="name">Delete</td>
 <td class="type">string</td>
-<td class="default">delete</td>
+<td class="default"> </td>
 <td class="description">CommandType is delete.</td>
 </tr>
 <tr>
 <td class="name">Save</td>
 <td class="type">string</td>
-<td class="default">save</td>
+<td class="default"> </td>
 <td class="description">CommandType is save.</td>
 </tr>
 <tr>
 <td class="name">Cancel</td>
 <td class="type">string</td>
-<td class="default">cancel</td>
+<td class="default"> </td>
 <td class="description">CommandType is cancel.</td>
 </tr>
 </tbody>
@@ -3517,57 +3505,53 @@ Data</td>
 ### EditType
 {:#enum:edittype}
  
-The type of the cell's hosted editing control. 
- 
-#### Properties
+Specifies whether the Grid's edittype is boolean,datePicker,datetimepicker,dropdown,numeric or string.
 
-The type of the cell's hosted editing control.
- 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Boolean</td>
 <td class="type">string</td>
-<td class="default">boolean</td>
-<td class="description">Edit type of column is boolean type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as boolean.</td>
 </tr>
 <tr>
 <td class="name">DatePicker</td>
 <td class="type">string</td>
-<td class="default">datepicker</td>
-<td class="description">Edit type of column is datePicker type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as datePicker.</td>
 </tr>
 <tr>
 <td class="name">DateTimePicker</td>
 <td class="type">string</td>
-<td class="default">datetimepicker</td>
-<td class="description">Edit type of column is datetimepicker type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as datetimepicker.</td>
 </tr>
 <tr>
 <td class="name">Dropdown</td>
 <td class="type">string</td>
-<td class="default">dropdown</td>
-<td class="description">Edit type of column is dropdown type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as dropdown .</td>
 </tr>
 <tr>
 <td class="name">Numeric</td>
 <td class="type">string</td>
-<td class="default">numeric</td>
-<td class="description">Edit type of column is numeric type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as numeric.</td>
 </tr>
 <tr>
 <td class="name">String</td>
 <td class="type">string</td>
-<td class="default">string</td>
-<td class="description">Edit type of column is string type.</td>
+<td class="default"></td>
+<td class="description">Specifies edittype as string.</td>
 </tr>
 </tbody>
 </table>
@@ -3576,68 +3560,65 @@ The type of the cell's hosted editing control.
 ### EditMode
 {:#enum:editmode}
  
-Specifies whether to define the mode of editing.
+Specifies whether the Grid's  editmode is normal,dialog,dialogtemplate,batch,externalform,inlineform,InlineTemplateForm,externalformtemplate.
  
-#### Properties
-Specifies whether to define the mode of editing.
-
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">The Specifies editmode is normal</td>
+<td class="description">Editmode is normal</td>
 </tr>
 <tr>
 <td class="name">Dialog</td>
 <td class="type">string</td>
-<td class="default">dialog</td>
-<td class="description">The Specifies editmode is dialog</td>
+<td class="default"> </td>
+<td class="description">Editmode is dialog</td>
 </tr>
 <tr>
 <td class="name">DialogTemplate</td>
 <td class="type">string</td>
-<td class="default">dialogtemplate</td>
-<td class="description">The Specifies editmode is dialogtemplate</td>
+<td class="default"></td>
+<td class="description">Editmode is dialogtemplate</td>
 </tr>
 <tr>
 <td class="name">Batch</td>
 <td class="type">string</td>
-<td class="default">batch</td>
-<td class="description">The Specifies editmode is batch</td>
+<td class="default"></td>
+<td class="description">Editmode is batch</td>
 </tr>
 <tr>
 <td class="name">ExternalForm</td>
 <td class="type">string</td>
-<td class="default">externalform</td>
-<td class="description">The Specifies editmode is externalform</td>
+<td class="default"></td>
+<td class="description">Editmode is externalform</td>
 </tr>
 <tr>
 <td class="name">InlineForm</td>
 <td class="type">string</td>
-<td class="default">inlineform</td>
-<td class="description">The Specifies editmode is inlineform</td>
+<td class="default"></td>
+<td class="description">Editmode is inlineform</td>
 </tr>
 <tr>
 <td class="name">InlineTemplateForm</td>
 <td class="type">string</td>
-<td class="default">InlineTemplateForm</td>
-<td class="description">The Specifies editmode is InlineTemplateForm</td>
+<td class="default"></td>
+<td class="description">Editmode is InlineTemplateForm</td>
 </tr>
 <tr>
 <td class="name">ExternalFormTemplate</td>
 <td class="type">string</td>
-<td class="default">externalformtemplate</td>
-<td class="description">The Specifies editmode is externalformtemplate</td>
+<td class="default"></td>
+<td class="description">Editmode is externalformtemplate</td>
 </tr>
 </tbody>
 </table>
@@ -3725,35 +3706,29 @@ SVG</td>
 ### FilterBarMode
 {:#enum:filterbarmode}
 
-Specifies the filterBarMode on typing in the filterBar or after pressing the enter key.
-
-
-#### Properties
-
-Specifies the filterBarMode on typing in the filterBar or after pressing the enter key.
-
-
+Specifies whether the Grid's filterBarMode is typing in the filterBar or after pressing the enter key.
+ 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Immediate</td>
 <td class="type">string</td>
 <td class="default">immediate</td>
-<td class="description">Display filter results is typing the filter query</td>
+<td class="description">Specifies filter results is typing the filter query</td>
 </tr>
 <tr>
 <td class="name">OnEnter</td>
 <td class="type">string</td>
-<td class="default">onenter</td>
-<td class="description">Display filter results after enter key is pressed</td>
+<td class="default"></td>
+<td class="description">Specifies filter results as after enter key is pressed</td>
 </tr>
 </tbody>
 </table>
@@ -3775,39 +3750,35 @@ Specifies the filterBarMode on typing in the filterBar or after pressing the ent
 ### FilterType
 {:#enum:filtertype}
  
-Specifies whether to define the FilterType.
+Specifies whether the Grid's Filtertype is menu,excel or filterbar.
  
-#### Properties
-
-Specifies whether to define the FilterType.
-
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Menu</td>
 <td class="type">string</td>
-<td class="default">menu</td>
-<td class="description">Specifies the menu for filtering the grid record.</td>
+<td class="default"></td>
+<td class="description">Specifies the filtertype as menu.</td>
 </tr>
 <tr>
 <td class="name">Excel</td>
 <td class="type">string</td>
-<td class="default">excel</td>
-<td class="description">Specifies the excel for filtering the grid record.</td>
+<td class="default"></td>
+<td class="description">Specifies the filtertype as excel.</td>
 </tr>
 <tr>
 <td class="name">FilterBar</td>
 <td class="type">string</td>
 <td class="default">filterbar</td>
-<td class="description">Specifies the filterbar for filtering the grid record.</td>
+<td class="description">Specifies the filtertype as filterbar.</td>
 </tr>
 </tbody>
 </table>
@@ -5417,20 +5388,15 @@ HalfCircle</td>
 ### FormPosition
 {:#enum:formposition}
  
-Specifies whether position in  the editform is top-right or bottom-left.
-
-#### Properties
-
-Specifies whether position in  the editform is top-right or bottom-left.
-
+Specifies the position of form is top-right or bottom-left.
+ 
 <table class="props">
-<thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -5442,7 +5408,7 @@ Specifies whether position in  the editform is top-right or bottom-left.
 <tr>
 <td class="name">TopRight</td>
 <td class="type">string</td>
-<td class="default">topright</td>
+<td class="default"></td>
 <td class="description">Form position is top-right.</td>
 </tr>
 </tbody>
@@ -5553,20 +5519,16 @@ BottomCenter</td>
 ### GridLines
 {:#enum:gridlines}
  
-Specifies whether to define the visibility of the grid lines.
-
-#### Properties
-
-Specifies whether to define the visibility of the grid lines.
+Specifies whether the Grid's gridlines is both,horizontal,vertical or none.
 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -5578,19 +5540,19 @@ Specifies whether to define the visibility of the grid lines.
 <tr>
 <td class="name">None</td>
 <td class="type">string</td>
-<td class="default">none</td>
+<td class="default"></td>
 <td class="description">No gridlines are displayed.</td>
 </tr>
 <tr>
 <td class="name">Horizontal</td>
 <td class="type">string</td>
-<td class="default">horizontal</td>
+<td class="default"></td>
 <td class="description">Displays the horizontal gridlines only.</td>
 </tr>
 <tr>
 <td class="name">Vertical</td>
 <td class="type">string</td>
-<td class="default">vertical</td>
+<td class="default"></td>
 <td class="description">Displays the vertical gridlines only.</td>
 </tr>
 </tbody>
@@ -6832,19 +6794,15 @@ Twelve</td>
 {:#enum:headertextalign}
  
 Specifies the horizontal alignment of the text displayed in the columnheader.
- 
-#### Properties
 
-Specifies the horizontal alignment of the text displayed in the columnheader.
- 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<th>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -6856,13 +6814,13 @@ Specifies the horizontal alignment of the text displayed in the columnheader.
 <tr>
 <td class="name">Center</td>
 <td class="type">string</td>
-<td class="default">center</td>
-<td class="description">Headertext is center.</td>
+<td class="default"></td>
+<td class="description">Headertext is centered.</td>
 </tr>
 <tr>
 <td class="name">Right</td>
 <td class="type">string</td>
-<td class="default">right</td>
+<td class="default"></td>
 <td class="description">Headertext is aligned to the right.</td>
 </tr>
 </tbody>
@@ -12200,33 +12158,29 @@ Surface</td>
 ### PrintMode
 {:#enum:printmode}
  
-Gets or sets the print mode to print the report.
- 
-#### Properties
-
-Gets or sets the print mode to print the report.
+Specifies whether the Grid's print mode is allpages,currentpages.
 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">AllPages</td>
 <td class="type">string</td>
 <td class="default">allpages</td>
-<td class="description">Printmode is allpages.</td>
+<td class="description">Printmodes allpages.</td>
 </tr>
 <tr>
 <td class="name">CurrentPage</td>
 <td class="type">string</td>
-<td class="default">currentpage</td>
-<td class="description">Printmode is currentpage.</td>
+<td class="default"></td>
+<td class="description">Printmode currentpage.</td>
 </tr>
 </tbody>
 </table>
@@ -12706,33 +12660,29 @@ Windows</td>
 ### RowPosition
 {:#enum:rowposition}
  
-Specifies whether position in the row is top or bottom.
- 
-#### Properties
+Specifies whether the Grid's position of add new row is top or bottom.
 
-Specifies whether position in the row is top or bottom.
- 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Top</td>
 <td class="type">string</td>
 <td class="default">top</td>
-<td class="description">Display the row in top position.</td>
+<td class="description">Specifies position of add new row is top.</td>
 </tr>
 <tr>
 <td class="name">Bottom</td>
 <td class="type">string</td>
-<td class="default">bottom</td>
-<td class="description">Display the row in bottom position.</td>
+<td class="default"></td>
+<td class="description">Specifies position of add new row is bottom.</td>
 </tr>
 </tbody>
 </table>
@@ -14330,20 +14280,16 @@ qrBarcode</td>
 ### SelectionMode
 {:#enum:selectionmode}
  
-Gets or sets a value that indicates how rows,cells and columns are selected in the Grid.
- 
-#### Properties
-
-Gets or sets a value that indicates how rows,cells and columns are selected in the Grid.
+Specifies whether the Grid's mode of selection is row,cell or column.
  
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -14355,13 +14301,13 @@ Gets or sets a value that indicates how rows,cells and columns are selected in t
 <tr>
 <td class="name">Cell</td>
 <td class="type">string</td>
-<td class="default">cell</td>
+<td class="default"></td>
 <td class="description">Selectionmode is cell basis.</td>
 </tr>
 <tr>
 <td class="name">Column</td>
 <td class="type">string</td>
-<td class="default">column</td>
+<td class="default"></td>
 <td class="description">Selectionmode is column basis.</td>
 </tr>
 </tbody>
@@ -14385,20 +14331,15 @@ Gets or sets a value that indicates how rows,cells and columns are selected in t
 {:#enum:selectiontype}
 
 Specifies whether type of selection is single or multiple.
-
-#### Properties
-
-Specifies whether type of selection is single or multiple.
-
-
+ 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -14410,7 +14351,7 @@ Specifies whether type of selection is single or multiple.
 <tr>
 <td class="name">Multiple</td>
 <td class="type">string</td>
-<td class="default">multiple</td>
+<td class="default"></td>
 <td class="description">selectiontype is multiple row selection.</td>
 </tr>
 </tbody>
@@ -14420,44 +14361,40 @@ Specifies whether type of selection is single or multiple.
 ### SummaryType
 {:#enum:summarytype}
  
-Specifies aggregate to defined the summarytype.
- 
-#### Properties
+Specifies whether the Grid's types of summary to be used.
 
-Specifies aggregate to defined the summarytype.
- 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Average</td>
 <td class="type">string</td>
-<td class="default">average</td>
-<td class="description"> SummaryType is edit .</td>
+<td class="default"></td>
+<td class="description"> SummaryType is edit.</td>
 </tr>
 <tr>
 <td class="name">Count</td>
 <td class="type">string</td>
-<td class="default">count</td>
+<td class="default"></td>
 <td class="description">SummaryType is count.</td>
 </tr>
 <tr>
 <td class="name">Custom</td>
 <td class="type">string</td>
-<td class="default">custom</td>
+<td class="default"></td>
 <td class="description">SummaryType is custom.</td>
 </tr>
 <tr>
 <td class="name">FalseCount</td>
 <td class="type">string</td>
-<td class="default">falsecount</td>
+<td class="default"></td>
 <td class="description">SummaryType is falsecount.</td>
 </tr>
 <tr>
@@ -14469,19 +14406,19 @@ Specifies aggregate to defined the summarytype.
 <tr>
 <td class="name">Minimum</td>
 <td class="type">string</td>
-<td class="default">minimum</td>
+<td class="default"></td>
 <td class="description">SummaryType is minimum.</td>
 </tr>
 <tr>
 <td class="name">Sum</td>
 <td class="type">string</td>
-<td class="default">sum</td>
+<td class="default"></td>
 <td class="description">SummaryType is sum.</td>
 </tr>
 <tr>
 <td class="name">TrueCount</td>
 <td class="type">string</td>
-<td class="default">truecount</td>
+<td class="default"></td>
 <td class="description">SummaryType is truecount.</td>
 </tr>
 </tbody>
@@ -14659,39 +14596,41 @@ Right</td>
 ### TextAlign
 {:#enum:textalign}
  
-Specifies whether the text in the object is left-aligned,right-aligned,centered.
- 
-#### Properties
+Specifies whether the text in the cell is left-aligned,right-aligned,centered.
 
-Specifies whether the text in the object is left-aligned,right-aligned,centered.
- 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<th>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Left</td>
 <td class="type">string</td>
 <td class="default">left</td>
-<td class="description">Text is aligned to the right.</td>
+<td class="description">Text is aligned to the left.</td>
 </tr>
 <tr>
 <td class="name">Center</td>
 <td class="type">string</td>
-<td class="default">center</td>
-<td class="description">Text is center.</td>
+<td class="default"></td>
+<td class="description">Text is centered.</td>
 </tr>
 <tr>
 <td class="name">Right</td>
 <td class="type">string</td>
-<td class="default">right</td>
+<td class="default"></td>
 <td class="description">Text is aligned to the right.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Text is justified.</td>
 </tr>
 </tbody>
 </table>
@@ -16746,80 +16685,76 @@ Popup</td>
 ### ToolBarItems
 {:#enum:toolbaritems}
  
-Specifies whether to define the toolBarItems. 
- 
-#### Properties
-
-Specifies whether to define the toolBarItems.
+Specifies the toolBarItems to be used in the Grid. 
 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Add</td>
 <td class="type">string</td>
-<td class="default">add</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is add.</td>
 </tr>
 <tr>
 <td class="name">Cancel</td>
 <td class="type">string</td>
-<td class="default">cancel</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is cancel.</td>
 </tr>
 <tr>
 <td class="name">Delete</td>
 <td class="type">string</td>
-<td class="default">delete</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is delete.</td>
 </tr>
 <tr>
 <td class="name">Edit</td>
 <td class="type">string</td>
-<td class="default">edit</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is edit.</td>
 </tr>
 <tr>
 <td class="name">ExcelExport</td>
 <td class="type">string</td>
-<td class="default">excelexport</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is excelexport.</td>
 </tr>
 <tr>
 <td class="name">PdfExport</td>
 <td class="type">string</td>
-<td class="default">pdfexport</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is pdfexport.</td>
 </tr>
 <tr>
 <td class="name">PrintGrid</td>
 <td class="type">string</td>
-<td class="default">printgrid</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is printgrid.</td>
 </tr>
 <tr>
 <td class="name">Search</td>
 <td class="type">string</td>
-<td class="default">search</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is search.</td>
 </tr>
 <tr>
 <td class="name">Update</td>
 <td class="type">string</td>
-<td class="default">update</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is update.</td>
 </tr>
 <tr>
 <td class="name">WordExport</td>
 <td class="type">string</td>
-<td class="default">wordexport</td>
+<td class="default"></td>
 <td class="description">Toolbaritem is wordExport.</td>
 </tr>
 </tbody>
@@ -17426,20 +17361,16 @@ Far</td>
 ### VirtualScrollMode
 {:#enum:virtualscrollmode}
  
-Specifies whether virtualscroll mode is normal or continuous.
- 
-#### Properties
-
-Specifies whether virtualscroll mode is normal or continuous.
+Specifies whether the Grid's virtualscroll mode is normal or continuous.
 
 <table class="props">
 <thead>
-<th>
-<tr>Name</tr>
-<tr>Type</tr>
-<tr>Default</tr>
-<tr>Description</tr>
-</th>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -17451,7 +17382,7 @@ Specifies whether virtualscroll mode is normal or continuous.
 <tr>
 <td class="name">Continuous</td>
 <td class="type">string</td>
-<td class="default">continuous</td>
+<td class="default"></td>
 <td class="description">virtualscrollmode is continuous.</td>
 </tr>
 </tbody>
