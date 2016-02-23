@@ -2642,7 +2642,7 @@ Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
 <td class="name">Ellipsis</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description">Multiple lines to truncate.ellipis is create the dots.</td> 
+<td class="description">Shows ellipsis for the overflown cell.</td> 
 </tr>
 <tr>
 <td class="name">Clip</td>
@@ -2654,7 +2654,7 @@ Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
 <td class="name">EllipsisWithTooltip</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description">Multiple lines to truncate.ellipis is create the dots with show the tooltips</td>
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
 </tr>
 </tbody>
 </table>
@@ -2663,7 +2663,7 @@ Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
 ### Command Type
 {:#enum:type}
  
-Whether Grid's the types of command is edit,delete,cancel or save.
+Specifies whether the Grid's types of command is edit,delete,cancel or save.
  
 <table class="props">
 <thead>
@@ -3539,7 +3539,7 @@ Specifies whether the Grid's edittype is boolean,datePicker,datetimepicker,dropd
 <td class="name">Dropdown</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description">Specifies edittype as dropdown .</td>
+<td class="description">Specifies edittype as dropdown.</td>
 </tr>
 <tr>
 <td class="name">Numeric</td>
@@ -6816,6 +6816,11 @@ Specifies the horizontal alignment of the text displayed in the columnheader.
 <td class="type">string</td>
 <td class="default"></td>
 <td class="description">Headertext is centered.</td>
+</tr>
+<td class="name">Justify</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Headertext is Justified.</td>
 </tr>
 <tr>
 <td class="name">Right</td>
@@ -12158,7 +12163,7 @@ Surface</td>
 ### PrintMode
 {:#enum:printmode}
  
-Specifies whether the Grid's print mode is allpages,currentpages.
+Specifies whether the Grid's printmode is allpages,currentpages.
 
 <table class="props">
 <thead>
@@ -12174,13 +12179,13 @@ Specifies whether the Grid's print mode is allpages,currentpages.
 <td class="name">AllPages</td>
 <td class="type">string</td>
 <td class="default">allpages</td>
-<td class="description">Printmodes allpages.</td>
+<td class="description">Prints allpages.</td>
 </tr>
 <tr>
 <td class="name">CurrentPage</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description">Printmode currentpage.</td>
+<td class="description">Prints currentpage.</td>
 </tr>
 </tbody>
 </table>
@@ -14346,13 +14351,13 @@ Specifies whether type of selection is single or multiple.
 <td class="name">Single</td>
 <td class="type">string</td>
 <td class="default">single</td>
-<td class="description">selectiontype is single row selection.</td>
+<td class="description">Specifies the selectiontype as single.</td>
 </tr>
 <tr>
 <td class="name">Multiple</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description">selectiontype is multiple row selection.</td>
+<td class="description">Specifies the selectiontype as multiple.</td>
 </tr>
 </tbody>
 </table>
@@ -14377,7 +14382,7 @@ Specifies whether the Grid's types of summary to be used.
 <td class="name">Average</td>
 <td class="type">string</td>
 <td class="default"></td>
-<td class="description"> SummaryType is edit.</td>
+<td class="description"> SummaryType is average.</td>
 </tr>
 <tr>
 <td class="name">Count</td>
