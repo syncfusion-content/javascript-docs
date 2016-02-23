@@ -38,6 +38,14 @@ documentation: ug
    </tr>
    <tr>
       <td>
+        ej.globalize.min.js
+      </td>
+      <td>
+        Must be referred to localize any of the JS control's text and content.
+      </td>
+   </tr>
+   <tr>
+      <td>
          ej.ribbon.min.js
       </td>
       <td>
