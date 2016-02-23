@@ -2650,7 +2650,7 @@ whether to include or exclude the literal characters in the input mask when doin
 <td class="name">Ellipsis</td>
 <td class="type">string</td>
 <td class="default">ellipsis</td>
-<td class="description">allow the text to break onto multiple lines. </td>
+<td class="description">Text to break onto multiple lines.</td>
 </tr>
 <tr>
 <td class="name">Clip</td>
@@ -2662,7 +2662,7 @@ whether to include or exclude the literal characters in the input mask when doin
 <td class="name">EllipsisWithTooltip</td>
 <td class="type">string</td>
 <td class="default">ellipsiswithtooltip</td>
-<td class="description">Make a line of text break across multiple lines.wraps an individual word</td>
+<td class="description">Text break across multiple lines.wraps an individual word</td>
 </tr>
 </tbody>
 </table>
@@ -2671,11 +2671,11 @@ whether to include or exclude the literal characters in the input mask when doin
 ### Command Type
 {:#enum:type}
  
-Specifies the commandtype of the specified columns.
+Whether the commandtype of the specified columns.
  
 #### Properties
 
-Specifies the commandtype of the specified columns.
+Whether the commandtype of the specified columns.
  
 <table class="props">
 <thead>
@@ -2691,7 +2691,7 @@ Specifies the commandtype of the specified columns.
 <td class="name">Edit</td>
 <td class="type">string</td>
 <td class="default">edit</td>
-<td class="description"> CommandType is edit .</td>
+<td class="description">CommandType is edit .</td>
 </tr>
 <tr>
 <td class="name">Delete</td>
