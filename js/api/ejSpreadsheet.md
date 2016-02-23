@@ -241,7 +241,7 @@ allowCharts: true
 ### allowClipboard `Boolean`
 {:#members:allowclipboard}
 
-Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet .By enabling this feature, you can perform cut/copy and paste operations in Spreadsheet.
+Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet. By enabling this feature, you can perform cut/copy and paste operations in Spreadsheet.
 
 #### Default Value
 * true
@@ -778,11 +778,6 @@ This property is used to set filltype unit in Spreadsheet. It has five types whi
 
 Note: allowAutoFill must be true while setting filltype. 
 
-#### Default Value
-* ej.Spreadsheet.AutoFillOptions.FillSeries
-
-<ts name="ej.Spreadsheet.AutoFillOptions"/>
-
 <table class="params">
 <thead>
 <tr>
@@ -813,6 +808,11 @@ Note: allowAutoFill must be true while setting filltype.
 </tr>
 </tbody>
 </table>
+
+#### Default Value
+* ej.Spreadsheet.AutoFillOptions.FillSeries
+
+<ts name="ej.Spreadsheet.AutoFillOptions"/>
 
 #### Example
 
@@ -1084,7 +1084,7 @@ $('#Spreadsheet').ejSpreadsheet({
 exportSettings({
 allowExporting: true,
 excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
-password :"Spreadhseet"
+password :"Spreadsheet"
 })
 });        
 </script>
@@ -1593,11 +1593,6 @@ Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has tw
 
 Note: allowScrolling must be true while enabling this property.
 
-#### Default Value
-* ej.Spreadsheet.scrollMode.Infinite
-
-<ts name="ej.Spreadsheet.scrollMode"/>
-
 <table class="params">
 <thead>
 <tr>
@@ -1616,6 +1611,11 @@ Note: allowScrolling must be true while enabling this property.
 </tr>
 </tbody>
 </table>
+
+#### Default Value
+* ej.Spreadsheet.scrollMode.Infinite
+
+<ts name="ej.Spreadsheet.scrollMode"/>
 
 #### Example
 
@@ -1745,11 +1745,6 @@ Gets or sets a value that indicates to set selection type in Spreadsheet. It has
 
 Note: allowSelection must be true while using this property.
 
-#### Default Value
-* ej.Spreadsheet.SelectionType.Default
-
-<ts name="ej.Spreadsheet.SelectionType"/>
-
 <table class="params">
 <thead>
 <tr>
@@ -1772,6 +1767,12 @@ Note: allowSelection must be true while using this property.
 </tr>
 </tbody>
 </table>
+
+#### Default Value
+* ej.Spreadsheet.SelectionType.Default
+
+<ts name="ej.Spreadsheet.SelectionType"/>
+
 
 #### Example
 
@@ -1797,11 +1798,6 @@ Gets or sets a value that indicates to set selection unit in Spreadsheet. It has
 
 Note: allowSelection must be true while using this property.
 
-#### Default Value
-* ej.Spreadsheet.SelectionUnit.MultiRange
-
-<ts name="ej.Spreadsheet.SelectionUnit"/>
-
 <table class="params">
 <thead>
 <tr>
@@ -1824,6 +1820,12 @@ Note: allowSelection must be true while using this property.
 </tr>
 </tbody>
 </table>
+
+#### Default Value
+* ej.Spreadsheet.SelectionUnit.MultiRange
+
+<ts name="ej.Spreadsheet.SelectionUnit"/>
+
 
 #### Example
 
@@ -2005,7 +2007,7 @@ It is used to clear all the data and format in the specified range of cells in S
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
 </tr>
@@ -2045,7 +2047,7 @@ This property is used to clear all the formats applied in the specified range in
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
 </tr>
@@ -2084,7 +2086,7 @@ Used to clear the applied border in the specified range in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
 </tr>
@@ -2123,7 +2125,7 @@ This property is used to clear the contents in the specified range in Spreadshee
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will clear the content in the specified <br/>range else it will use the current selected range. </td>
 </tr>
@@ -2149,7 +2151,7 @@ $("#Spreadsheet").ejSpreadsheet("clearContents", "A2:A6");
 
 {% endhighlight %}
 
-### clearRange(\[rangeName\])
+### clearRange(rangeName)
 {:#methods:clearrange}
 
 This method is used to remove only the data in the range denoted by the specified range name.
@@ -2163,7 +2165,7 @@ This method is used to remove only the data in the range denoted by the specifie
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="name">rangeName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the defined rangeSettings property name.</td>
 </tr>
@@ -2205,17 +2207,17 @@ It is used to remove data in the specified range of cells based on the defined p
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="name">property</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span> </td>
 <td class="description"><span class="optional">Optional. </span> If pass true, if you want to skip the hidden rows </td>
 </tr>
@@ -2228,7 +2230,7 @@ It is used to remove data in the specified range of cells based on the defined p
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearRangeData(“A1:A5”, ["value", "value2"], xlObj.getRange(“A1:A5”), true);
+xlObj.clearRangeData("A1:A5", ["value", "value2"], xlObj.getRange("A1:A5"), true);
 </script>
 
 {% endhighlight %}
@@ -2237,7 +2239,7 @@ xlObj.clearRangeData(“A1:A5”, ["value", "value2"], xlObj.getRange(“A1:A5�
 <script>
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a clear range data request to the Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("clearRangeData", “A1:A5”, ["value", "value2"], xlObj.getRange(“A1:A5”), false);        
+$("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], xlObj.getRange("A1:A5"), false);        
 </script>
 
 {% endhighlight %}
@@ -2256,12 +2258,12 @@ This method is used to copy sheets in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}fromIdx{% endhighlight %}</td>
+<td class="name">fromIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index that you want to copy.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}toIdx{% endhighlight %}</td>
+<td class="name">toIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the position index where you want to copy.</td>
 </tr>
@@ -2303,12 +2305,12 @@ This method is used to delete the entire column which is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="name">startCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the start column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="name">endCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the end column index.</td>
 </tr>
@@ -2350,12 +2352,12 @@ This method is used to delete the entire row which is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="name">startRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the start row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the end row index.</td>
 </tr>
@@ -2397,7 +2399,7 @@ This method is used to delete a particular sheet in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}idx{% endhighlight %}</td>
+<td class="name">idx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index to perform delete action.</td>
 </tr>
@@ -2438,12 +2440,12 @@ This method is used to delete the selected cells and shift the remaining cells t
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="name">startCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the starting cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="name">endCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the ending cell.</td>
 </tr>
@@ -2486,12 +2488,12 @@ This method is used to delete the selected cells and shift the remaining cells u
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="name">startCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the start cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="name">endCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the end cell.</td>
 </tr>
@@ -2535,12 +2537,12 @@ This method is used to edit data in the specified range of cells based on its co
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="name">rangeName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the defined rangeSettings property name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}fn{% endhighlight %}</td>
+<td class="name">fn</td>
 <td class="type"><span class="param-type">function</span></td>
 <td class="description">Pass the function that you want to perform range edit.</td>
 </tr>
@@ -2636,7 +2638,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will return the activecell object in specified sheet index else it will use the current sheet index</td>
 </tr>
@@ -2680,7 +2682,7 @@ This method is used to get the activecell element based on the given sheet index
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the activecell element in specified <br/>sheet index else it will use the current active sheet index.</td>
 </tr>
@@ -2781,17 +2783,17 @@ This method is used to get the cell element based on specified row and column in
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the sheet index that you want to get cell.</td>
 </tr>
@@ -2835,7 +2837,7 @@ This method is used to get the frozen columns index in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index.</td>
 </tr>
@@ -2879,7 +2881,7 @@ This method is used to get the frozen row’s index in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index.</td>
 </tr>
@@ -2923,7 +2925,7 @@ This method is used to get the hyperlink data as object from the specified cell 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the DOM element to get hyperlink</td>
 </tr>
@@ -2966,27 +2968,27 @@ This method is used to get all cell elements in the specified range.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startRIndex{% endhighlight %}</td>
+<td class="name">startRIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index of the start cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}startCIndex{% endhighlight %}</td>
+<td class="name">startCIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index of the start cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endRIndex{% endhighlight %}</td>
+<td class="name">endRIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index of the end cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCIndex{% endhighlight %}</td>
+<td class="name">endCIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index of the end cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the index of the sheet.</td>
 </tr>
@@ -3030,47 +3032,47 @@ This method is used to get the data in specified range in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}valueonly{% endhighlight %}</td>
+<td class="name">valueonly</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass 'true' if you want cell values alone.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="name">property</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}skipDateTime{% endhighlight %}</td>
+<td class="name">skipDateTime</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> When skipDateTime is set as true, it return 'value2' cell value (cell type as 'datetime')</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}skipFormula{% endhighlight %}</td>
+<td class="name">skipFormula</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true, if you want to get the calculated formula value else it return formula string.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}virtualRowIdx{% endhighlight %}</td>
+<td class="name">virtualRowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass virtual row index of sheet.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}virtualRowCount{% endhighlight %}</td>
+<td class="name">virtualRowCount</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass virtual row count of sheet.</td>
 </tr>
@@ -3115,7 +3117,7 @@ This method is used to get the range indices array based on the specified alpha 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the alpha range that you want to get range indices.</td>
 </tr>
@@ -3159,7 +3161,7 @@ This method is used to get the sheet details based on the given sheet index in S
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index to get the sheet object.</td>
 </tr>
@@ -3204,7 +3206,7 @@ This method is used to get the sheet content div element of Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index to get the sheet content.</td>
 </tr>
@@ -3249,12 +3251,12 @@ This method is used to send a paging request to the specified sheet Index in the
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index to perform paging at specified sheet index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}newSheet{% endhighlight %}</td>
+<td class="name">newSheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass 'true' to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
 </tr>
@@ -3296,12 +3298,12 @@ This method is used to hide the entire columns from the specified range (startCo
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="name">startCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the start column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="name">endCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the end column.</td>
 </tr>
@@ -3361,12 +3363,12 @@ This method is used to hide the rows, based on the specified row index in Spread
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="name">startRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the start row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the end row.</td>
 </tr>
@@ -3410,7 +3412,7 @@ This method is used to hide the sheet based on the specified sheetIndex or sheet
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the sheet name or index that you want to hide.</td>
 </tr>
@@ -3479,12 +3481,12 @@ This method is used to insert a column before the active cell's column in the Sp
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCol{% endhighlight %}</td>
+<td class="name">startCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass start column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCol{% endhighlight %}</td>
+<td class="name">endCol</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass end column.</td>
 </tr>
@@ -3527,12 +3529,12 @@ This method is used to insert a row before the active cell's row in the Spreadsh
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="name">startRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass start row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass end row.</td>
 </tr>
@@ -3600,12 +3602,12 @@ This method is used to insert cells in the selected or specified range and shift
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="name">startCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the start cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="name">endCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the end cell.</td>
 </tr>
@@ -3650,12 +3652,12 @@ This method is used to insert cells in the selected or specified range and shift
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startCell{% endhighlight %}</td>
+<td class="name">startCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the start cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="name">endCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the end cell.</td>
 </tr>
@@ -3700,7 +3702,7 @@ This method is used to import excel file manually by using form data.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}importRequest{% endhighlight %}</td>
+<td class="name">importRequest</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the form data object to import files manually.</td>
 </tr>
@@ -3737,12 +3739,12 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string|array</span></td>
 <td class="description">Pass the alpha range cells or array range of cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isLocked{% endhighlight %}</td>
+<td class="name">isLocked</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> By default is true. If it is false locked cells are unlocked.</td>
 </tr>
@@ -3784,12 +3786,12 @@ This method is used to merge cells by across in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
+<td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
 </tr>
@@ -3830,12 +3832,12 @@ This method is used to merge the selected cells in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}alertStatus{% endhighlight %}</td>
+<td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
 </tr>
@@ -3876,12 +3878,12 @@ This method is used to move sheets in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}fromIdx{% endhighlight %}</td>
+<td class="name">fromIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index that you want to move.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}toIdx{% endhighlight %}</td>
+<td class="name">toIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the position index where you want to move.</td>
 </tr>
@@ -3920,7 +3922,7 @@ This method is used to protect or unprotect active sheet.
 <th>Description</th>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isProtected{% endhighlight %}</td>
+<td class="name">isProtected</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span>  By default is true. If it is false active sheet is unprotected.</td>
 </tr>
@@ -3960,12 +3962,12 @@ This method is used to remove the hyperlink from selected cells of current sheet
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Hyperlink remove from the specified range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isClearHLink{% endhighlight %}</td>
+<td class="name">isClearHLink</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> If it is true, It will clear link only not format.</td>
 </tr>
@@ -4005,7 +4007,7 @@ This method is used to remove the range data and its defined rangeSettings prope
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="name">rangeName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the defined rangeSetting property name.</td>
 </tr>
@@ -4047,17 +4049,17 @@ This method is used to set the activecell in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the index of the sheet.</td>
 </tr>
@@ -4098,7 +4100,7 @@ This method is used to set active sheet index for the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the active sheet index for Spreadsheet.</td>
 </tr>
@@ -4141,12 +4143,12 @@ This method is used to set border for the specified range of cells in the Spread
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="name">property</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the border properties that you want to set.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
 </tr>
@@ -4186,17 +4188,17 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}Range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">If range is specified, it will set the hyperlink in range of the cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}link{% endhighlight %}</td>
+<td class="name">link</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass cellAddress or webAddress</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">If we pass cellAddress then which sheet to be navigate in the applied link.</td>
 </tr>
@@ -4262,7 +4264,7 @@ This method is used to set the width for the columns in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}widthColl{% endhighlight %}</td>
+<td class="name">widthColl</td>
 <td class="type"><span class="param-type">array|object</span></td>
 <td class="description">Pass the cell index and width of the cells.</td>
 </tr>
@@ -4304,7 +4306,7 @@ This method is used to rename the active sheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetName{% endhighlight %}</td>
+<td class="name">sheetName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the sheet name that you want to change the current active sheet name.</td>
 </tr>
@@ -4344,7 +4346,7 @@ This method is used to display the activationPanel for the specified range name.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rangeName{% endhighlight %}</td>
+<td class="name">rangeName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range name that you want to display the activation panel.</td>
 </tr>
@@ -4384,12 +4386,12 @@ This method is used to show the hidden columns within the specified range in the
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startColIdx{% endhighlight %}</td>
+<td class="name">startColIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the start column.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endColIdx{% endhighlight %}</td>
+<td class="name">endColIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the end column.</td>
 </tr>
@@ -4455,12 +4457,12 @@ This method is used to show the hidden rows in the specified range in the Spread
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startRow{% endhighlight %}</td>
+<td class="name">startRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the start row.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endRow{% endhighlight %}</td>
+<td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the end row.</td>
 </tr>
@@ -4543,7 +4545,7 @@ This method is used to unhide the sheet based on specified sheet name or sheet i
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetInfo{% endhighlight %}</td>
+<td class="name">sheetInfo</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the sheet name or index that you want to unhide.</td>
 </tr>
@@ -4584,7 +4586,7 @@ This method is used to unmerge the selected range of cells in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
 </tr>
@@ -4625,7 +4627,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified <br/>range else it will use the current selected range.</td>
 </tr>
@@ -4647,7 +4649,7 @@ xlObj.unWrapText("A1:B3");
 {% highlight html %}
 <script>
 // To unwrap the cell text.
-$("#Spreadsheet").ejSpreadsheet(“unWrapText”,”A1:B3”)
+$("#Spreadsheet").ejSpreadsheet("unWrapText","A1:B3")
 </script>
 
 {% endhighlight %}
@@ -4666,12 +4668,12 @@ This method is used to update the data for the specified range of cells in the S
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the cells data that you want to update.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range <br/> else it will use the current selected range. </td>
 </tr>
@@ -4729,12 +4731,12 @@ This method is used to update the range of cells based on the specified settings
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index that you want to update.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}settings{% endhighlight %}</td>
+<td class="name">settings</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the dataSource, startCell and showHeader values as settings.</td>
 </tr>
@@ -4777,12 +4779,12 @@ This method is used to update the unique data for the specified range of cells i
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the  data that you want to update in the particular range</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
 </tr>
@@ -4823,7 +4825,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified <br/> range else it will use the current selected range.</td>
 </tr>
@@ -4837,7 +4839,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 //Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To wrap the cell Text.
-xlObj.wrapText(“A1:B3”);
+xlObj.wrapText("A1:B3");
 </script>
 
 {% endhighlight %}
@@ -4845,7 +4847,7 @@ xlObj.wrapText(“A1:B3”);
 {% highlight html %}
 <script>
 // To wrap the cell Text.
-$("#Spreadsheet").ejSpreadsheet(“wrapText”,”A1:B3”)
+$("#Spreadsheet").ejSpreadsheet("wrapText","A1:B3")
 </script>
 
 {% endhighlight %}
@@ -4867,17 +4869,17 @@ This method is used to set a cell type from the specified range of cells in the 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range where you want apply cell type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}settings{% endhighlight %}</td>
+<td class="name">settings</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass type of cell type and its settings.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td  class="type"><span class="param-type">number</span></td>
 <td  class="description">Optional. Pass sheet index.</td>
 </tr>
@@ -4910,12 +4912,12 @@ This method is used to remove cell type from the specified range of cells in the
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range where you want remove cell type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass sheet index.</td>
 </tr>
@@ -4929,7 +4931,7 @@ This method is used to remove cell type from the specified range of cells in the
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To remove cell types in Spreadsheet.
-xlObj.XLCellType.removeCellTypes(“A1:B2”, 1);
+xlObj.XLCellType.removeCellTypes("A1:B2", 1);
 </script>
 
 {% endhighlight %}
@@ -4951,12 +4953,12 @@ This method is used to clear the applied conditional formatting rules in the Spr
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}isSelected{% endhighlight %}</td>
+<td class="name">isSelected</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
@@ -4989,12 +4991,12 @@ This method is used to get the applied conditional formatting rules as array of 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index.</td>
 </tr>
@@ -5032,7 +5034,7 @@ This method is used to set the conditional formatting rule in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rule{% endhighlight %}</td>
+<td class="name">rule</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the rule to set.</td>
 </tr>
@@ -5068,12 +5070,12 @@ This method is used to create a chart for specified range in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">To pass the type of chart and chart name.</td>
 </tr>
@@ -5105,12 +5107,12 @@ This method is used to refresh the chart in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}id{% endhighlight %}</td>
+<td class="name">id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">To pass the chart Id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">To pass the type of chart and chart name.</td>
 </tr>
@@ -5141,17 +5143,17 @@ This method is used to resize the chart of specified id in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}id{% endhighlight %}</td>
+<td class="name">id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">To pass the chart id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}height{% endhighlight %}</td>
+<td class="name">height</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">To pass height value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}width{% endhighlight %}</td>
+<td class="name">width</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">To pass the width value.</td>
 </tr>
@@ -5164,7 +5166,7 @@ This method is used to resize the chart of specified id in the Spreadsheet.
 <script>
 // Create Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLChart.resizeChart(“Spreadsheet_Chart1”, 200, 300); // It is used to resize the chart in Spreadsheet.
+xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5239,17 +5241,17 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}skipHiddenRow{% endhighlight %}</td>
+<td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
 </tr>
@@ -5282,7 +5284,7 @@ This method is used to edit the comment in the trgtCell in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
+<td class="name">trgtCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the row index and column index of the cell which contains comment. </td>
 </tr>
@@ -5357,7 +5359,7 @@ This method is used to get comment data for the specified cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the DOM element to get comment data as object.</td>
 </tr>
@@ -5401,17 +5403,17 @@ This method is used to set new comment in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string|array</span> </td>
 <td class="description"><span class="optional">Optional. </span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the comment data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}showEditPanel{% endhighlight %}</td>
+<td class="name">showEditPanel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true to show comment in edit mode </td>
 </tr>
@@ -5461,7 +5463,7 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}trgtCell{% endhighlight %}</td>
+<td class="name">trgtCell</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
 </tr>
@@ -5497,12 +5499,12 @@ This method is used to drag and drop the selected range of cells to destination 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sourceRange{% endhighlight %}</td>
+<td class="name">sourceRange</td>
 <td class="type"><span class="param-type">object|array</span></td>
 <td class="description">Pass the source range to perform drag and drop.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}destinationRange{% endhighlight %}</td>
+<td class="name">destinationRange</td>
 <td class="type"><span class="param-type">object|array</span></td>
 <td class="description">Pass the destination range to drop the dragged cells.</td>
 </tr>
@@ -5538,7 +5540,7 @@ This method is used to perform autofill in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}options{% endhighlight %}</td>
+<td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the options to perform autofill in Spreadsheet.</td>
 </tr>
@@ -5551,7 +5553,7 @@ This method is used to perform autofill in Spreadsheet.
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-var options = {dataRange: “A1:B1”, direction: "right", fillRange:”A1:B2”}
+var options = {dataRange: "A1:B1", direction: "right", fillRange:"A1:B2"}
 xlObj.XLDragFill.autoFill(options); // To perform autofill in Spreadsheet.
 </script>
 
@@ -5608,7 +5610,7 @@ This method is used to set position of the autofill element in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}isdragfill{% endhighlight %}</td>
+<td class="name">isdragfill</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass the drag fill status as boolean value for show auto fill options in Spreadsheet.</td>
 </tr>
@@ -5643,7 +5645,7 @@ This method is used to calculate formulas in the specified sheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
 </tr>
@@ -5675,17 +5677,17 @@ This method is used to edit a particular cell based on the row index and column 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index to edit particular cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index to edit particular cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}oldData{% endhighlight %}</td>
+<td class="name">oldData</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true, if you want to maintain previous cell value.</td>
 </tr>
@@ -5726,22 +5728,22 @@ This method is used to get the property value of particular cell, based on the r
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index to get the property value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index to get the property value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}prop{% endhighlight %}</td>
+<td class="name">prop</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><p><span class="optional">Optional. </span>Pass the property name that you want("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader",  "filterState", "tableName",<br/> "comment", "formatStr", "decimalPlaces", "cellType").</p></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
 </tr>
@@ -5779,17 +5781,17 @@ This method is used to get the property value in specified cell in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}elem{% endhighlight %}</td>
+<td class="name">elem</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description">Pass the cell element to get property value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}property{% endhighlight %}</td>
+<td class="name">property</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><p>Pass the property name that you want ("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader", "filterState", "tableName", <br/>"comment", "formatStr", "decimalPlaces", "cellType").</p></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the index of sheet.</td>
 </tr>
@@ -5818,7 +5820,7 @@ This method is used to save the edited cell value in the Spreadsheet.
 
 {% highlight html %}
 <script>
-//initialize the Spreadsheet object
+// Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Save the edited cell value
 xlObj.XLEdit.saveCell();
@@ -5840,12 +5842,12 @@ This method is used to update a particular cell value in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass row index and column index of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}value{% endhighlight %}</td>
+<td class="name">value</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
 </tr>
@@ -5878,22 +5880,22 @@ This method is used to update a particular cell value and its format in the Spre
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cellIdx{% endhighlight %}</td>
+<td class="name">cellIdx</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass row index and column index of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}val{% endhighlight %}</td>
+<td class="name">val</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}formatclass{% endhighlight %}</td>
+<td class="name">formatclass</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the class name to update format. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass sheet index.</td>
 </tr>
@@ -5904,7 +5906,7 @@ This method is used to update a particular cell value and its format in the Spre
 
 {% highlight html %}
 <script>
-//Initialize the Spreadsheet object
+// Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
 className = xlObj.XLFormat.getFormatHashCode({ color: "red" });
 // To update the specified values in a particular cell.
@@ -5933,7 +5935,7 @@ Note: Using export, user must be provided the excelUrl and csvUrl property under
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the export type that you want. </td>
 </tr>
@@ -5946,8 +5948,8 @@ Note: Using export, user must be provided the excelUrl and csvUrl property under
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// To save the worksheet on Excel format
-xlObj.XLExport.export(“Excel”);
+// To save the worksheet on Excel format.
+xlObj.XLExport.export("Excel");
 </script>
 
 {% endhighlight %}
@@ -5986,7 +5988,7 @@ This method is used to apply filter for the selected range of cells in the Sprea
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range of the selected cells.</td>
 </tr>
@@ -6041,12 +6043,12 @@ This method is used to create a table for the selected range of cells in the Spr
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}tableObject{% endhighlight %}</td>
+<td class="name">tableObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the table object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span>  If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
 </tr>
@@ -6080,12 +6082,12 @@ This method is used to set format style and values in a cell or range of cells.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}formatObj{% endhighlight %}</td>
+<td class="name">formatObj</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the formatObject which contains style, type, format, groupSeparator and decimalPlaces.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range indices to format cells.</td>
 </tr>
@@ -6120,7 +6122,7 @@ This method is used to remove table with specified tableId in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}tableId{% endhighlight %}</td>
+<td class="name">tableId</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the tableId that you want to remove.</td>
 </tr>
@@ -6154,12 +6156,12 @@ This method is used to update the decimal places for numeric value for the selec
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the decimal places type in increment/decrement.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range indices.</td>
 </tr>
@@ -6192,12 +6194,12 @@ This method is used to update the format for the selected range of cells in the 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}formatobj{% endhighlight %}</td>
+<td class="name">formatobj</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the format object that you want to update.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
 </tr>
@@ -6231,12 +6233,12 @@ This method is used to update the unique format for selected range of cells in t
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}formatclass{% endhighlight %}</td>
+<td class="name">formatclass</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the unique format class.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
 </tr>
@@ -6273,7 +6275,7 @@ This method is used to freeze columns upto the specified column index in the Spr
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the column to be freezed.</td>
 </tr>
@@ -6326,7 +6328,7 @@ This method is used to freeze rows and columns before the specified cell in the 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}cell{% endhighlight %}</td>
+<td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Row index and column index of the cell which you want to freeze.</td>
 </tr>
@@ -6360,7 +6362,7 @@ This method is used to freeze rows upto the specified row index in the Spreadshe
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index of the row to be freeze.</td>
 </tr>
@@ -6450,7 +6452,7 @@ This method is used to get the column width of the specified column index in the
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index.</td>
 </tr>
@@ -6487,7 +6489,7 @@ This method is used to get the row height of the specified row index in the Spre
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index which you want to find its height.</td>
 </tr>
@@ -6513,7 +6515,7 @@ xlObj.XLResize.getRowHeight(2);
 {% highlight html %}
 <script>
 // Gets the particular row height in Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("XLResize.getRowHeight”,2);
+$("#Spreadsheet").ejSpreadsheet("XLResize.getRowHeight",2);
 </script>
 
 {% endhighlight %}
@@ -6532,12 +6534,12 @@ This method is used to set the column width of the specified column index in the
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}size{% endhighlight %}</td>
+<td class="name">size</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the width value that you want to set.</td>
 </tr>
@@ -6570,12 +6572,12 @@ This method is used to set the row height of the specified row index in the Spre
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}size{% endhighlight %}</td>
+<td class="name">size</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the height value that you want to set.</td>
 </tr>
@@ -6612,22 +6614,22 @@ This method is used to add a new name in the Spreadsheet name manager.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}name{% endhighlight %}</td>
+<td class="name">name</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name that you want to define in name manager.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}refersTo{% endhighlight %}</td>
+<td class="name">refersTo</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the cell reference.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}comment{% endhighlight %}</td>
+<td class="name">comment</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass comment, if you want.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional. </span>  Pass the sheet index.</td>
 </tr>
@@ -6660,12 +6662,12 @@ This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formul
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">To pass the type("SUM","MAX","MIN","AVG","COUNT").</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">If range is specified, it will apply autosum for the specified range else it will use the current selected range.</td>
 </tr>
@@ -6697,7 +6699,7 @@ This method is used to delete the defined name in the Spreadsheet name manager.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}name{% endhighlight %}</td>
+<td class="name">name</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the defined name that you want to remove from name manager.</td>
 </tr>
@@ -6733,22 +6735,22 @@ This method is used to find and replace all data by workbook in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}findData{% endhighlight %}</td>
+<td class="name">findData</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the search data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}replaceData{% endhighlight %}</td>
+<td class="name">replaceData</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the replace data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isCSen{% endhighlight %}</td>
+<td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isEMatch{% endhighlight %}</td>
+<td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true, if you want to match with entire cell contents.</td>
 </tr>
@@ -6780,22 +6782,22 @@ This method is used to find and replace all data by sheet in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}findData{% endhighlight %}</td>
+<td class="name">findData</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the search data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}replaceData{% endhighlight %}</td>
+<td class="name">replaceData</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the replace data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isCSen{% endhighlight %}</td>
+<td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}isEMatch{% endhighlight %}</td>
+<td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass true, if you want to match with entire cell contents.</td>
 </tr>
@@ -6830,7 +6832,7 @@ This method is used to get the selected cells element based on specified sheet i
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}sheetIdx{% endhighlight %}</td>
+<td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index to get the cells element.</td>
 </tr>
@@ -6866,7 +6868,7 @@ This method is used to refresh the selection in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass range to refresh selection.</td>
 </tr>
@@ -6899,7 +6901,7 @@ This method is used to select a single column in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}colIdx{% endhighlight %}</td>
+<td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column index value.</td>
 </tr>
@@ -6931,12 +6933,12 @@ This method is used to select entire columns in a specified range (start index a
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startIdx{% endhighlight %}</td>
+<td class="name">startIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column start index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endIdx{% endhighlight %}</td>
+<td class="name">endIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the column end index.</td>
 </tr>
@@ -6968,12 +6970,12 @@ This method is used to select the specified range of cells in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass range which want to select.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endCell{% endhighlight %}</td>
+<td class="name">endCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the row and column index of the end cell.</td>
 </tr>
@@ -6986,7 +6988,7 @@ This method is used to select the specified range of cells in the Spreadsheet.
 <script>
 // initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRange(“A1:B2”, {rowIndex: 7, colIndex: 1 }); //To select range of cells in Spreadsheet.
+xlObj.XLSelection.selectRange("A1:B2", {rowIndex: 7, colIndex: 1 }); //To select range of cells in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -7005,7 +7007,7 @@ This method is used to select a single row in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}rowIdx{% endhighlight %}</td>
+<td class="name">rowIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the row index value.</td>
 </tr>
@@ -7037,12 +7039,12 @@ This method is used to select entire rows in a specified range (start index and 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}startIdx{% endhighlight %}</td>
+<td class="name">startIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the start row index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}endIdx{% endhighlight %}</td>
+<td class="name">endIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the end row index.</td>
 </tr>
@@ -7094,17 +7096,17 @@ This method is used to sort a particular range of cells based on its cell or fon
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}operation{% endhighlight %}</td>
+<td class="name">operation</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass 'PutCellColor' to sort by cell color or 'PutFontColor' for by font color.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}color{% endhighlight %}</td>
+<td class="name">color</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the HEX color code to sort.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range</td>
 </tr>
@@ -7136,17 +7138,17 @@ This method is used to sort a particular range of cells based on its values in t
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
 <td class="description">Pass the range to sort.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}columnName{% endhighlight %}</td>
+<td class="name">columnName</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the column name.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}direction{% endhighlight %}</td>
+<td class="name">direction</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the direction to sort (ascending or Decending).</td>
 </tr>
@@ -7183,27 +7185,27 @@ This method is used to apply data validation rules in a selected range of cells 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">If range is specified, it will apply rules for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}values{% endhighlight %}</td>
+<td class="name">values</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description">Pass the validation condition, value1 and value2.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the data type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}required{% endhighlight %}</td>
+<td class="name">required</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass 'true' if you ignore blank values.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}showErrorAlert{% endhighlight %}</td>
+<td class="name">showErrorAlert</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass 'true' if you want to show an error alert.</td>
 </tr>
@@ -7237,7 +7239,7 @@ This method is used to clear the applied validation rules in a specified range o
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
 </tr>
@@ -7270,7 +7272,7 @@ This method is used to highlight invalid data in a specified range of cells in t
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}range{% endhighlight %}</td>
+<td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
@@ -7307,7 +7309,7 @@ Triggered for every action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when actionBegin event is triggered. 
 <table class="params">
@@ -7402,7 +7404,7 @@ Triggered for every action complete.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when actionComplete event is triggered. 
 <table class="params">
@@ -7478,7 +7480,7 @@ Triggered when the auto fill operation begins.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when autoFillBegin event is triggered. 
 <table class="params">
@@ -7563,7 +7565,7 @@ Triggered when the auto fill operation completes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when autoFillComplete event is triggered. 
 <table class="params">
@@ -7649,7 +7651,7 @@ Triggered before the cells to be formatted.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforeCellFormat event is triggered. 
 <table class="params">
@@ -7725,7 +7727,7 @@ Triggered before the cell selection.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforeCellSelect event is triggered. 
 <table class="params">
@@ -7796,7 +7798,7 @@ Triggered before the selected cells are dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforeDrop event is triggered. 
 <table class="params">
@@ -7882,7 +7884,7 @@ Triggered before the contextmenu is open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforeOpen event is triggered. 
 <table class="params">
@@ -7948,7 +7950,7 @@ Triggered before the activation panel is open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when beforePanelOpen event is triggered. 
 <table class="params">
@@ -8024,7 +8026,7 @@ Triggered when click on sheet cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when cellClick event is triggered. 
 <table class="params">
@@ -8095,7 +8097,7 @@ Triggered when the cell is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when cellEdit event is triggered. 
 <table class="params">
@@ -8171,7 +8173,7 @@ Triggered when mouse hover on cell in sheets.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when cellHover event is triggered. 
 <table class="params">
@@ -8237,7 +8239,7 @@ Triggered when save the edited cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when cellSave event is triggered. 
 <table class="params">
@@ -8322,7 +8324,7 @@ Triggered when click the contextmenu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when contextMenuClick event is triggered. 
 <table class="params">
@@ -8418,7 +8420,7 @@ Triggered when the selected cells are being dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when drag event is triggered. 
 <table class="params">
@@ -8498,7 +8500,7 @@ Triggered when the selected cells are initiated to drag.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when dragStart event is triggered. 
 <table class="params">
@@ -8579,7 +8581,7 @@ Triggered when the selected cells are dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when drop event is triggered. 
 <table class="params">
@@ -8660,7 +8662,7 @@ Triggered before the range editing starts.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when editRangeBegin event is triggered. 
 <table class="params">
@@ -8731,7 +8733,7 @@ Triggered after range editing completes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when editRangeComplete event is triggered. 
 <table class="params">
@@ -8802,7 +8804,7 @@ Triggered before the sheet is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when load event is triggered. 
 <table class="params">
@@ -8868,7 +8870,7 @@ Triggered after the sheet is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when loadComplete event is triggered. 
 <table class="params">
@@ -8929,7 +8931,7 @@ Triggered every click of the menu item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when menuClick event is triggered. 
 <table class="params">
@@ -9016,7 +9018,7 @@ Triggered when import sheet is failed to open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">object</td>
 <td class="description">Arguments when openFailure event is triggered. 
 <table class="params">
@@ -9092,7 +9094,7 @@ Triggered when pager item is clicked in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when pagerClick event is triggered. 
 <table class="params">
@@ -9168,7 +9170,7 @@ Triggered when click on the ribbon.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when ribbonClick event is triggered. 
 <table class="params">
@@ -9249,7 +9251,7 @@ Triggered when the chart series rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when seriesRendering event is triggered. 
 <table class="params">
@@ -9316,7 +9318,7 @@ Triggered when click the ribbon tab.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when tabClick event is triggered. 
 <table class="params">
@@ -9397,7 +9399,7 @@ Triggered when select the ribbon tab.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Arguments when tabSelect event is triggered. 
 <table class="params">
