@@ -771,7 +771,7 @@ apWidth: 100
 
 Gets or sets an object that indicates to customize the autofill behavior in the Spreadsheet.
 
-#### autoFillSettings.fillType `Enum` 
+### autoFillSettings.fillType `Enum` 
 {:#members:autofillsettings-filltype}
 
 This property is used to set filltype unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
@@ -829,7 +829,7 @@ fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
 
 {% endhighlight %}
 
-#### autoFillSettings.showFillOptions `Boolean`
+### autoFillSettings.showFillOptions `Boolean`
 {:#members:autofillsettings-showfilloptions}
 
 Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
@@ -859,7 +859,7 @@ showFillOptions: true
 
 Gets or sets an object that indicates to customize the chart behavior in the Spreadsheet.
 
-#### chartSettings.height `Number`
+### chartSettings.height `Number`
 {:#members:chartsettings-height}
 
 Gets or sets a value that defines the chart height in Spreadsheet.
@@ -882,7 +882,7 @@ height : 300
 
 {% endhighlight %}
 
-#### chartSettings.width `Number`
+### chartSettings.width `Number`
 {:#members:chartsettings-width}
 
 Gets or sets a value that defines the chart width in the Spreadsheet.
@@ -990,7 +990,7 @@ enableContextMenu: true
 
 Gets or sets an object that indicates to customize the exporting behavior in Spreadsheet.
 
-#### exportSettings.allowExporting `Boolean`
+### exportSettings.allowExporting `Boolean`
 {:#members:exportsettings-allowexporting}
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
@@ -1016,7 +1016,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 
 {% endhighlight %}
 
-#### exportSettings.csvUrl `String`
+### exportSettings.csvUrl `String`
 {:#members:exportsettings-csvurl}
 
 Gets or sets a value that indicates to define csvUrl for export to csv format.
@@ -1041,7 +1041,7 @@ csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv",
 
 {% endhighlight %}
 
-#### exportSettings.excelUrl `String`
+### exportSettings.excelUrl `String`
 {:#members:exportsettings-excelurl}
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
@@ -1065,7 +1065,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 
 {% endhighlight %}
 
-#### exportSettings.password `String`
+### exportSettings.password `String`
 {:#members:exportsettings-password}
 
 Gets or sets a value that indicates to define password while export to excel format.
@@ -1096,7 +1096,7 @@ password :"Spreadsheet"
 
 Gets or sets an object that indicates to customize the format behavior in the Spreadsheet.
 
-#### formatSettings.allowCellBorder `Boolean`
+### formatSettings.allowCellBorder `Boolean`
 {:#members:formatsettings-allowcellborder}
 
 Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
@@ -1120,7 +1120,7 @@ allowCellBorder: true
 
 {% endhighlight %}
 
-#### formatSettings.allowDecimalPlaces `Boolean`
+### formatSettings.allowDecimalPlaces `Boolean`
 {:#members:formatsettings-allowdecimalplaces}
 
 Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
@@ -1145,7 +1145,7 @@ allowDecimalPlaces: true
 
 {% endhighlight %}
 
-#### formatSettings.allowFontFamily `Boolean`
+### formatSettings.allowFontFamily `Boolean`
 {:#members:formatsettings-allowfontfamily}
 
 Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
@@ -1175,7 +1175,7 @@ allowFontFamily: true
 
 Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
 
-#### importSettings.importMapper `String`
+### importSettings.importMapper `String`
 {:#members:importsettings-importmapper}
 
 Sets import mapper to perform import feature in Spreadsheet.
@@ -1200,7 +1200,7 @@ importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
 
 {% endhighlight %}
 
-#### importSettings.importUrl `String`
+### importSettings.importUrl `String`
 {:#members:importsettings-importurl}
 
 Sets import Url to access the online files in the Spreadsheet.
@@ -1225,7 +1225,7 @@ importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx", //It
 
 {% endhighlight %}
 
-#### importSettings.password `String`
+### importSettings.password `String`
 {:#members:importsettings-password}
 
 Gets or sets a value that indicates to define password while importing in the Spreadsheet.
@@ -1279,7 +1279,7 @@ locale: "es-ES"
 
 Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
 
-#### pictureSettings.allowPictures `Boolean`
+### pictureSettings.allowPictures `Boolean`
 {:#members:picturesettings-allowpictures}
 
 Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
@@ -1301,7 +1301,7 @@ allowPictures: true,
 
 {% endhighlight %}
 
-#### pictureSettings.height `Number`
+### pictureSettings.height `Number`
 {:#members:picturesettings-height}
 
 Gets or sets a value that indicates to define height to picture in the Spreadsheet.
@@ -1324,7 +1324,7 @@ height: 300
 
 {% endhighlight %}
 
-#### pictureSettings.width `Number`
+### pictureSettings.width `Number`
 {:#members:picturesettings-width}
 
 Gets or sets a value that indicates to define width to picture in the Spreadsheet.
@@ -1352,7 +1352,7 @@ width: 500
 
 Gets or sets an object that indicates to customize the print option in Spreadsheet.
 
-#### printSettings.allowPageSetup `Boolean`
+### printSettings.allowPageSetup `Boolean`
 {:#members:printsettings-allowpagesetup}
 
 Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
@@ -1377,7 +1377,7 @@ allowPageSetup: true
 
 {% endhighlight %}
 
-#### printSettings.allowPageSize `Boolean`
+### printSettings.allowPageSize `Boolean`
 {:#members:printsettings-allowpagesize}
 
 Gets or sets a value that indicates whether to enable or disable pagesize support for printing in Spreadsheet.
@@ -1402,7 +1402,7 @@ allowPageSize: true
 
 {% endhighlight %}
 
-#### printSettings.allowPrinting `Boolean`
+### printSettings.allowPrinting `Boolean`
 {:#members:printsettings-allowprinting}
 
 Gets or sets a value that indicates whether to enable or disable print feature in the Spreadsheet.
@@ -1469,7 +1469,7 @@ rowHeight: 30
 
 Gets or sets an object that indicates to customize the scroll options in the Spreadsheet.
 
-#### scrollSettings.allowScrolling `Boolean`
+### scrollSettings.allowScrolling `Boolean`
 {:#members:scrollsettings-allowscrolling}
 
 Gets or sets a value that indicates whether to enable or disable scrolling in Spreadsheet.
@@ -1490,7 +1490,7 @@ allowScrolling: true,
 
 {% endhighlight %}
 
-#### scrollSettings.allowSheetOnDemand `Boolean`
+### scrollSettings.allowSheetOnDemand `Boolean`
 {:#members:scrollsettings-allowsheetondemand}
 
 Gets or sets a value that indicates whether to enable or disable sheet on demand. By enabling this, it render only the active sheet element while paging remaining sheets are created one by one.
@@ -1513,7 +1513,7 @@ allowSheetOnDemand: true,
 
 {% endhighlight %}
 
-#### scrollSettings.allowVirtualScrolling `Boolean`
+### scrollSettings.allowVirtualScrolling `Boolean`
 {:#members:scrollsettings-allowvirtualscrolling}
 
 Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
@@ -1538,7 +1538,7 @@ allowVirtualScrolling: true
 
 {% endhighlight %}
 
-#### scrollSettings.height  `Number|String`
+### scrollSettings.height  `Number|String`
 {:#members:scrollsettings-height}
 
 Gets or sets the value that indicates to define the height of spreadsheet.
@@ -1561,7 +1561,7 @@ height: 600
 
 {% endhighlight %}
 
-#### scrollSettings.isResponsive `Boolean`
+### scrollSettings.isResponsive `Boolean`
 {:#members:scrollsettings-isresponsive}
 
 Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
@@ -1586,7 +1586,7 @@ isResponsive: true
 
 {% endhighlight %}
 
-#### scrollSettings.scrollMode `Enum`
+### scrollSettings.scrollMode `Enum`
 {:#members:scrollsettings-scrollmode}
 
 Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
@@ -1634,7 +1634,7 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite,
 
 {% endhighlight %}
 
-#### scrollSettings.width `Number|String`
+### scrollSettings.width `Number|String`
 {:#members:scrollsettings-width}
 
 Gets or sets the value that indicates to define the height off spreadsheet.
@@ -1663,7 +1663,7 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite
 
 Gets or sets an object that indicates to customize the selection options in the Spreadsheet.
 
-#### selectionSettings.activeCell `String`
+### selectionSettings.activeCell `String`
 {:#members:selectionsettings-activecell}
 
 Gets or sets a value that indicates to define active cell in spreadsheet.
@@ -1688,7 +1688,7 @@ activeCell: "A1"
 
 {% endhighlight %}
 
-#### selectionSettings.animationTime `Number`
+### selectionSettings.animationTime `Number`
 {:#members:selectionsettings-animationtime}
 
 Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
@@ -1714,7 +1714,7 @@ animationTime: 0.002
 
 {% endhighlight %}
 
-#### selectionSettings.enableAnimation `Boolean`
+### selectionSettings.enableAnimation `Boolean`
 {:#members:selectionsettings-enableanimation}
 
 Gets or sets a value that indicates to enable or disable animation while selection.
@@ -1738,7 +1738,7 @@ enableAnimation: true
 
 {% endhighlight %}
 
-#### selectionSettings.selectionType `Enum`
+### selectionSettings.selectionType `Enum`
 {:#members:selectionsettings-selectiontype}
 
 Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
@@ -1791,7 +1791,7 @@ enableAnimation: true
 
 {% endhighlight %}
 
-#### selectionSettings.selectionUnit `Enum`
+### selectionSettings.selectionUnit `Enum`
 {:#members:selectionsettings-selectionunit}
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and Multirange.
@@ -4855,7 +4855,7 @@ $("#Spreadsheet").ejSpreadsheet("wrapText","A1:B3")
 ### XLCellType
 {:#methods:xlcelltype}
 
-#### XLCellType.addCellTypes(range, settings, \[sheetIdx\])
+### XLCellType.addCellTypes(range, settings, \[sheetIdx\])
 {:#methods:xlcelltype-addcelltypes}
 
 This method is used to set a cell type from the specified range of cells in the spreadsheet.
@@ -4898,7 +4898,7 @@ xlObj.XLCellType.addCellTypes("A1 : B3", {"type" : ej.Spreadsheet.CustomCellType
 
 {% endhighlight %}
 
-#### XLCellType.removeCellTypes(range, \[sheetIdx\])
+### XLCellType.removeCellTypes(range, \[sheetIdx\])
 {:#methods:xlcelltype-removecelltypes}
 
 This method is used to remove cell type from the specified range of cells in the Spreadsheet.
@@ -4939,7 +4939,7 @@ xlObj.XLCellType.removeCellTypes("A1:B2", 1);
 ### XLCFormat
 {:#methods:xlcformat}
 
-#### XLCFormat.clearCF(isSelected, \[range\])
+### XLCFormat.clearCF(isSelected, \[range\])
 {:#methods:xlcformat-clearcf}
 
 This method is used to clear the applied conditional formatting rules in the Spreadsheet.
@@ -4977,7 +4977,7 @@ xlObj.XLCFormat.clearCF(true, [1, 0, 7, 0]);
 
 {% endhighlight %}
 
-#### XLCFormat.getCFRule(rowIdx, colIdx)
+### XLCFormat.getCFRule(rowIdx, colIdx)
 {:#methods:xlcformat-getcfrule}
 
 This method is used to get the applied conditional formatting rules as array of objects based on the specified row Index and column Index in the Spreadsheet.
@@ -5019,7 +5019,7 @@ xlObj.XLCFormat.getCFRule(2, 0);
 
 {% endhighlight %}
 
-#### XLCFormat.setCFRule(rule)
+### XLCFormat.setCFRule(rule)
 {:#methods:xlcformat-setcfrule}
 
 This method is used to set the conditional formatting rule in the Spreadsheet.
@@ -5056,7 +5056,7 @@ xlObj.XLCFormat.setCFRule({ "action": "lessthan", "input1": "30", "color": "yell
 ### XLChart
 {:#methods:xlchart}
 
-#### XLChart.createChart(\[range\], options)
+### XLChart.createChart(\[range\], options)
 {:#methods:xlchart-createchart}
 
 This method is used to create a chart for specified range in Spreadsheet.
@@ -5093,7 +5093,7 @@ xlObj.XLChart.createChart("A3:A7",{"type":"stackingcolumn100","enable3D":"true",
 
 {% endhighlight %}
 
-#### XLChart.refreshChart(id, options)
+### XLChart.refreshChart(id, options)
 {:#methods:xlchart-refreshchart}
 
 This method is used to refresh the chart in the Spreadsheet.
@@ -5129,7 +5129,7 @@ xlObj.XLChart.refreshChart(id,{"type":"stackingcolumn100","enable3D":"true","mar
 </script>
 {% endhighlight %}
 
-#### XLChart.resizeChart(id, height, width)
+### XLChart.resizeChart(id, height, width)
 {:#methods:xlchart-resizechart}
 
 This method is used to resize the chart of specified id in the Spreadsheet.
@@ -5174,7 +5174,7 @@ xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resi
 ### XLClipboard
 {:#methods:xlclipboard}
 
-#### XLClipboard.copy()
+### XLClipboard.copy()
 {:#methods:xlclipboard-copy}
 
 This method is used to copy the selected cells in the Spreadsheet.
@@ -5190,7 +5190,7 @@ xlObj.XLClipboard.copy();
 
 {% endhighlight %}
 
-#### XLClipboard.cut()
+### XLClipboard.cut()
 {:#methods:xlclipboard-cut}
 
 This method is used to cut the selected cells in the Spreadsheet.
@@ -5207,7 +5207,7 @@ xlObj.XLClipboard.cut();
 
 {% endhighlight %}
 
-#### XLClipboard.paste()
+### XLClipboard.paste()
 {:#methods:xlclipboard-paste}
 
 This method is used to paste the cut or copied cells data in the Spreadsheet.
@@ -5227,7 +5227,7 @@ xlObj.XLClipboard.paste();
 ### XLComment
 {:#methods:xlcomment}
 
-#### XLComment.deleteComment(\[range\], \[sheetIdx\], \[skipHiddenRow\])
+### XLComment.deleteComment(\[range\], \[sheetIdx\], \[skipHiddenRow\])
 {:#methods:xlcomment-deletecomment}
 
 This method is used to delete the comment in the specified range in Spreadsheet.
@@ -5270,7 +5270,7 @@ xlObj.XLComment.deleteComment("A1:D3", 1, true);
 
 {% endhighlight %}
 
-#### XLComment.editComment(\[trgtCell\])
+### XLComment.editComment(\[trgtCell\])
 {:#methods:xlcomment-editcomment}
 
 This method is used to edit the comment in the trgtCell in Spreadsheet.
@@ -5303,7 +5303,7 @@ xlObj.XLComment.editComment({rowIdx: 1, colIdx: 1});
 
 {% endhighlight %}
 
-#### XLComment.findNextComment()
+### XLComment.findNextComment()
 {:#methods:xlcomment-findnextcomment}
 
 This method is used to find the next comment from the active cell in Spreadsheet.
@@ -5324,7 +5324,7 @@ xlObj.XLComment.findNextComment();
 
 {% endhighlight %}
 
-#### XLComment.findPrevComment()
+### XLComment.findPrevComment()
 {:#methods:xlcomment-findprevcomment}
 
 This method is used to find the previous comment from the active cell in Spreadsheet.
@@ -5345,7 +5345,7 @@ xlObj.XLComment.findPrevComment();
 
 {% endhighlight %}
 
-#### XLComment.getComment(cell)
+### XLComment.getComment(cell)
 {:#methods:xlcomment-getcomment}
 
 This method is used to get comment data for the specified cell.
@@ -5389,7 +5389,7 @@ $("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));
 
 {% endhighlight %}
 
-#### XLComment.setComment(\[range\], data, \[showEditPanel\])
+### XLComment.setComment(\[range\], data, \[showEditPanel\])
 {:#methods:xlcomment-setcomment}
 
 This method is used to set new comment in Spreadsheet.
@@ -5432,7 +5432,7 @@ xlObj.XLComment.setComment(spreadsheetObj.getCell(1, 5), "Spreadsheet Comment!")
 
 {% endhighlight %}
 
-#### XLComment.showAllComments()
+### XLComment.showAllComments()
 {:#methods:xlcomment-showallcomments}
 
 This method is used to show all the comments in the Spreadsheet.
@@ -5449,7 +5449,7 @@ xlObj.XLComment.showAllComments();
 
 {% endhighlight %}
 
-#### XLComment.showHideComment(\[trgtCell\])
+### XLComment.showHideComment(\[trgtCell\])
 {:#methods:xlcomment-showhidecomment}
 
 This method is used to show or hide the specific comment in the Spreadsheet.
@@ -5485,7 +5485,7 @@ xlObj.XLComment.showHideComment(spreadsheetObj.getCell(1, 5));
 ### XLDragDrop
 {:#methods:xldragdrop}
 
-#### XLDragDrop.moveRangeTo(sourceRange, destinationRange)
+### XLDragDrop.moveRangeTo(sourceRange, destinationRange)
 {:#methods:xldragdrop-moverangeto}
 
 This method is used to drag and drop the selected range of cells to destination range in the Spreadsheet.
@@ -5526,7 +5526,7 @@ xlObj.XLDragDrop.moveRangeTo(options.sourcerange, options.destinationrange); // 
 ### XLDragFill
 {:#methods:xldragfill}
 
-#### XLDragFill.autoFill(options)
+### XLDragFill.autoFill(options)
 {:#methods:xldragfill-autofill}
 
 This method is used to perform autofill in Spreadsheet.
@@ -5559,7 +5559,7 @@ xlObj.XLDragFill.autoFill(options); // To perform autofill in Spreadsheet.
 
 {% endhighlight %}
 
-#### XLDragFill.hideAutoFillElement()
+### XLDragFill.hideAutoFillElement()
 {:#methods:xldragfill-hideautofillelement}
 
 This method is used to hide the auto fill element in the Spreadsheet.
@@ -5577,7 +5577,7 @@ xlObj.XLDragFill.hideAutoFillElement();
 
 {% endhighlight %}
 
-#### XLDragFill.hideAutoFillOptions()
+### XLDragFill.hideAutoFillOptions()
 {:#methods:xldragfill-hideautofilloptions}
 
 This method is used to hide the auto fill options in the Spreadsheet.
@@ -5596,7 +5596,7 @@ xlObj.XLDragFill.hideAutoFillOptions();
 {% endhighlight %}
 
 
-#### XLDragFill.positionAutoFillElement(isdragfill)
+### XLDragFill.positionAutoFillElement(isdragfill)
 {:#methods:xldragfill-positionautofillelement}
 
 This method is used to set position of the autofill element in the Spreadsheet.
@@ -5631,7 +5631,7 @@ xlObj.XLDragFill.positionAutoFillElement(false); // set position of the autofill
 ### XLEdit
 {:#methods:xledit}
 
-#### XLEdit.calcNow(\[sheetIdx\])
+### XLEdit.calcNow(\[sheetIdx\])
 {:#methods:xledit-calcnow}
 
 This method is used to calculate formulas in the specified sheet.
@@ -5663,7 +5663,7 @@ xlObj.XLEdit.calcNow(1); // To calculate formulas in specified sheet in Spreadsh
 
 {% endhighlight %}
 
-#### XLEdit.editCell(rowIdx, colIdx, oldData)
+### XLEdit.editCell(rowIdx, colIdx, oldData)
 {:#methods:xledit-editcell}
 
 This method is used to edit a particular cell based on the row index and column index in the Spreadsheet.
@@ -5714,7 +5714,7 @@ $("#Spreadsheet").ejSpreadsheet("XLEdit").editCell(1, 1, true);
 
 {% endhighlight %}
 
-#### XLEdit.getPropertyValue(rowIdx, colIdx, \[prop\], \[sheetIdx\])
+### XLEdit.getPropertyValue(rowIdx, colIdx, \[prop\], \[sheetIdx\])
 {:#methods:xledit-getpropertyvalue}
 
 This method is used to get the property value of particular cell, based on the row and column index in the Spreadsheet.
@@ -5766,7 +5766,7 @@ xlObj.XLEdit.getPropertyValue(1, 1, "value", 1);
 
 {% endhighlight %}
 
-#### XLEdit.getPropertyValueByElem(elem, property, sheetIdx)
+### XLEdit.getPropertyValueByElem(elem, property, sheetIdx)
 {:#methods:xledit-getpropertyvaluebyelem}
 
 This method is used to get the property value in specified cell in Spreadsheet.
@@ -5811,7 +5811,7 @@ xlObj.XLEdit.getPropertyValueByElem(xlObj.getCell(1, 1), "value", 1);
 
 {% endhighlight %}
 
-#### XLEdit.saveCell()
+### XLEdit.saveCell()
 {:#methods:xledit-savecell}
 
 This method is used to save the edited cell value in the Spreadsheet.
@@ -5828,7 +5828,7 @@ xlObj.XLEdit.saveCell();
 
 {% endhighlight %}
 
-#### XLEdit.updateCell(cell, value)
+### XLEdit.updateCell(cell, value)
 {:#methods:xledit-updatecell}
 
 This method is used to update a particular cell value in the Spreadsheet.
@@ -5866,7 +5866,7 @@ xlObj.XLEdit.updateCell({rowIndex: 1, colIndex: 1}, "product");
 
 {% endhighlight %}
 
-#### XLEdit.updateCellValue(cellIdx, val, formatclass, sheetIdx)
+### XLEdit.updateCellValue(cellIdx, val, formatclass, sheetIdx)
 {:#methods:xledit-updatecellvalue}
 
 This method is used to update a particular cell value and its format in the Spreadsheet.
@@ -5918,7 +5918,7 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1)
 ### XLExport
 {:#methods:xlexport}
 
-#### XLExport.export(type)
+### XLExport.export(type)
 {:#methods:xlexport-export}
 
 This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
@@ -5957,7 +5957,7 @@ xlObj.XLExport.export("Excel");
 ### XLFilter
 {:#methods:xlfilter}
 
-#### XLFilter.clearFilter()
+### XLFilter.clearFilter()
 {:#methods:xlfilter-clearfilter}
 
 This method is used to clear the filter in filtered columns in the Spreadsheet.
@@ -5974,7 +5974,7 @@ xlObj.XLFilter.clearFilter();
 
 {% endhighlight %}
 
-#### XLFilter.filter(range)
+### XLFilter.filter(range)
 {:#methods:xlfilter-filter}
 
 This method is used to apply filter for the selected range of cells in the Spreadsheet.
@@ -6008,7 +6008,7 @@ xlObj.XLFilter.filter("A3:C8");
 
 {% endhighlight %}
 
-#### XLFilter.filterByActiveCell()
+### XLFilter.filterByActiveCell()
 {:#methods:xlfilter-filterbyactivecell}
 
 This method is used to apply filter for the column by active cell's value in the Spreadsheet.
@@ -6029,7 +6029,7 @@ xlObj.XLFilter.filterByActiveCell();
 ### XLFormat
 {:#methods:xlformat}
 
-#### XLFormat.createTable( tableObject, \[range\])
+### XLFormat.createTable( tableObject, \[range\])
 {:#methods:xlformat-createtable}
 
 This method is used to create a table for the selected range of cells in the Spreadsheet.
@@ -6068,7 +6068,7 @@ xlObj.XLFormat.createTable(tableObj, "A1:C6");
 
 {% endhighlight %}
 
-#### XLFormat.format(formatObj, range)
+### XLFormat.format(formatObj, range)
 {:#methods:xlformat-format}
 
 This method is used to set format style and values in a cell or range of cells.
@@ -6107,7 +6107,7 @@ xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
 
 {% endhighlight %}
 
-#### XLFormat.removeTable(tableId)
+### XLFormat.removeTable(tableId)
 {:#methods:xlformat-removetable}
 
 This method is used to remove table with specified tableId in the Spreadsheet.
@@ -6141,7 +6141,7 @@ xlObj.XLFormat.removeTable(1);
 
 {% endhighlight %}
 
-#### XLFormat.updateDecimalPlaces(type, range)
+### XLFormat.updateDecimalPlaces(type, range)
 {:#methods:xlformat-updatedecimalplaces}
 
 This method is used to update the decimal places for numeric value for the selected range of cells in the Spreadsheet.
@@ -6180,7 +6180,7 @@ xlObj.XLFormat.updateDecimalPlaces("increment", "A1:C3");
 
 {% endhighlight %}
 
-#### XLFormat.updateFormat(formatobj, \[range\])
+### XLFormat.updateFormat(formatobj, \[range\])
 {:#methods:xlformat-updateformat}
 
 This method is used to update the format for the selected range of cells in the Spreadsheet.
@@ -6219,7 +6219,7 @@ xlObj.XLFormat.updateFormat(formatObj, [1, 0, 3, 0]);
 
 {% endhighlight %}
 
-#### XLFormat.updateUniqueFormat(formatclass, \[range\])
+### XLFormat.updateUniqueFormat(formatclass, \[range\])
 {:#methods:xlformat-updateuniqueformat}
 
 This method is used to update the unique format for selected range of cells in the Spreadsheet.
@@ -6260,7 +6260,7 @@ xlObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N1N1N1N1N2N1N", [1, 0, 4, 
 ### XLFreeze
 {:#methods:xlfreeze}
 
-#### XLFreeze.freezeColumns(colIdx)
+### XLFreeze.freezeColumns(colIdx)
 {:#methods:xlfreeze-freezecolumns}
 
 This method is used to freeze columns upto the specified column index in the Spreadsheet.
@@ -6295,7 +6295,7 @@ xlObj.XLFreeze.freezeColumns(2);
 
 {% endhighlight %}
 
-#### XLFreeze.freezeLeftColumn()
+### XLFreeze.freezeLeftColumn()
 {:#methods:xlfreeze-freezeleftcolumn}
 
 This method is used to freeze the first column in the Spreadsheet.
@@ -6313,7 +6313,7 @@ xlObj.XLFreeze.freezeLeftColumn();
 
 {% endhighlight %}
 
-#### XLFreeze.freezePanes(cell)
+### XLFreeze.freezePanes(cell)
 {:#methods:xlfreeze-freezepanes}
 
 This method is used to freeze rows and columns before the specified cell in the Spreadsheet.
@@ -6348,7 +6348,7 @@ xlObj.XLFreeze.freezePane({ rowIndex: 2, colIndex: 3});
 
 {% endhighlight %}
 
-#### XLFreeze.freezeRows(rowIdx)
+### XLFreeze.freezeRows(rowIdx)
 {:#methods:xlfreeze-freezerows}
 
 This method is used to freeze rows upto the specified row index in the Spreadsheet.
@@ -6381,7 +6381,7 @@ xlObj.XLFreeze.freezeRows(2);
 
 {% endhighlight %}
 
-#### XLFreeze.freezeTopRow()
+### XLFreeze.freezeTopRow()
 {:#methods:xlfreeze-freezetoprow}
 
 This method is used to freeze the top row in the Spreadsheet.
@@ -6403,7 +6403,7 @@ xlObj.XLFreeze.freezeTopRow();
 ### XLPrint
 {:#methods:xlprint}
 
-#### XLPrint.printSelection()
+### XLPrint.printSelection()
 {:#methods:xlprint-printselection}
 
 This method is used to print the selected contents in the Spreadsheet.
@@ -6419,7 +6419,7 @@ xlObj.XLPrint.printSelection();
 
 {% endhighlight %}
 
-#### XLPrint.printSheet()
+### XLPrint.printSheet()
 {:#methods:xlprint-printsheet}
 
 This method is used to print the entire contents in the active sheet.
@@ -6438,7 +6438,7 @@ xlObj.XLPrint.printSheet();
 ### XLResize
 {:#methods:xlresize}
 
-#### XLResize.getColWidth(colIdx)
+### XLResize.getColWidth(colIdx)
 {:#methods:xlresize-getcolwidth}
 
 This method is used to get the column width of the specified column index in the Spreadsheet.
@@ -6475,7 +6475,7 @@ xlObj.XLResize.getColWidth(2);
 
 {% endhighlight %}
 
-#### XLResize.getRowHeight(rowIdx)
+### XLResize.getRowHeight(rowIdx)
 {:#methods:xlresize-getrowheight}
 
 This method is used to get the row height of the specified row index in the Spreadsheet.
@@ -6520,7 +6520,7 @@ $("#Spreadsheet").ejSpreadsheet("XLResize.getRowHeight",2);
 
 {% endhighlight %}
 
-#### XLResize.setColWidth(colIdx, size)
+### XLResize.setColWidth(colIdx, size)
 {:#methods:xlresize-setcolwidth}
 
 This method is used to set the column width of the specified column index in the Spreadsheet.
@@ -6558,7 +6558,7 @@ xlObj.XLResize.setColWidth(2, 100);
 
 {% endhighlight %}
 
-#### XLResize.setRowHeight(rowIdx, size)
+### XLResize.setRowHeight(rowIdx, size)
 {:#methods:xlresize-setrowheight}
 
 This method is used to set the row height of the specified row index in the Spreadsheet.
@@ -6600,7 +6600,7 @@ xlObj.XLResize.setRowHeight(2, 100);
 ### XLRibbon
 {:#methods:xlribbon}
 
-#### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\])
+### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\])
 {:#methods:xlribbon-addnamedrange}
 
 This method is used to add a new name in the Spreadsheet name manager.
@@ -6648,7 +6648,7 @@ xlObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
 
 {% endhighlight %}
 
-#### XLRibbon.autoSum(type, range)
+### XLRibbon.autoSum(type, range)
 {:#methods:xlribbon-autosum}
 
 This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formulas in the selected range of cells in the Spreadsheet.
@@ -6685,7 +6685,7 @@ xlObj.XLRibbon.autoSum("SUM", "A2:A6"); // To insert the formula after selected 
 
 {% endhighlight %}
 
-#### XLRibbon.removeNamedRange(name)
+### XLRibbon.removeNamedRange(name)
 {:#methods:xlribbon-removenamedrange}
 
 This method is used to delete the defined name in the Spreadsheet name manager.
@@ -6721,7 +6721,7 @@ xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
 ### XLSearch
 {:#methods:xlsearch}
 
-#### XLSearch.replaceAllByBook(findData, replaceData, isCSen, isEMatch)
+### XLSearch.replaceAllByBook(findData, replaceData, isCSen, isEMatch)
 {:#methods:xlsearch-replaceallbybook}
 
 This method is used to find and replace all data by workbook in the Spreadsheet.
@@ -6768,7 +6768,7 @@ xlObj.XLSearch.replaceAllByBook("Sheet", "Spreadsheet", true, false); // Sends a
 
 {% endhighlight %}
 
-#### XLSearch.replaceAllBySheet(findData, replaceData, isCSen, isEMatch)
+### XLSearch.replaceAllBySheet(findData, replaceData, isCSen, isEMatch)
 {:#methods:xlsearch-replaceallbysheet}
 
 This method is used to find and replace all data by sheet in Spreadsheet.
@@ -6818,7 +6818,7 @@ xlObj.XLSearch.replaceAllBySheet("Sheet", "Spreadsheet", true, false); // Sends 
 ### XLSelection
 {:#methods:xlselection}
 
-#### XLSelection.getSelectedCells(sheetIdx)
+### XLSelection.getSelectedCells(sheetIdx)
 {:#methods:xlselection-getselectedcells}
 
 This method is used to get the selected cells element based on specified sheet index in the Spreadsheet.
@@ -6854,7 +6854,7 @@ xlObj.XLSelection.getSelectedCells(1); //Gets the selected cells element.
 
 {% endhighlight %}
 
-#### XLSelection.refreshSelection(\[range\])
+### XLSelection.refreshSelection(\[range\])
 {:#methods:xlselection-refreshselection}
 
 This method is used to refresh the selection in the Spreadsheet.
@@ -6887,7 +6887,7 @@ xlObj.XLSelection.refreshSelection([1,2,3,4]);
 
 {% endhighlight %}
 
-#### XLSelection.selectColumn(colIdx)
+### XLSelection.selectColumn(colIdx)
 {:#methods:xlselection-selectcolumn}
 
 This method is used to select a single column in the Spreadsheet.
@@ -6919,7 +6919,7 @@ xlObj.XLSelection.selectColumn(1); //To select a single column in the active she
 
 {% endhighlight %}
 
-#### XLSelection.selectColumns(startIdx, endIdx)
+### XLSelection.selectColumns(startIdx, endIdx)
 {:#methods:xlselection-selectcolumns}
 
 This method is used to select entire columns in a specified range (start index and end index) in the Spreadsheet.
@@ -6956,7 +6956,7 @@ xlObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specifi
 
 {% endhighlight %}
 
-#### XLSelection.selectRange(range, endCell)
+### XLSelection.selectRange(range, endCell)
 {:#methods:xlselection-selectrange}
 
 This method is used to select the specified range of cells in the Spreadsheet.
@@ -6993,7 +6993,7 @@ xlObj.XLSelection.selectRange("A1:B2", {rowIndex: 7, colIndex: 1 }); //To select
 
 {% endhighlight %}
 
-#### XLSelection.selectRow(rowIdx)
+### XLSelection.selectRow(rowIdx)
 {:#methods:xlselection-selectrow}
 
 This method is used to select a single row in the Spreadsheet.
@@ -7025,7 +7025,7 @@ xlObj.XLSelection.selectRow(1); //To select a single row in the specified sheet 
 
 {% endhighlight %}
 
-#### XLSelection.selectRows(startIdx, endIdx)
+### XLSelection.selectRows(startIdx, endIdx)
 {:#methods:xlselection-selectrows}
 
 This method is used to select entire rows in a specified range (start index and end index) in the Spreadsheet.
@@ -7062,7 +7062,7 @@ xlObj.XLSelection.selectRows(2, 4); //To select entire rows in the specified ran
 
 {% endhighlight %}
 
-#### XLSelection.selectSheet()
+### XLSelection.selectSheet()
 {:#methods:xlselection-selectsheet}
 
 This method is used to select all cells in active sheet.
@@ -7081,7 +7081,7 @@ spreadsheetObj.XLSelection.selectSheet(); //To select all cells in Spreadsheet.
 ### XLSort
 {:#methods:xlsort}
 
-#### XLSort.sortByColor(operation, color, range)
+### XLSort.sortByColor(operation, color, range)
 {:#methods:xlsort-sortbycolor}
 
 This method is used to sort a particular range of cells based on its cell or font color in the Spreadsheet.
@@ -7124,7 +7124,7 @@ xlObj.XLSort.sortByColor("PutCellColor", {"background-color" : "#EC2024", color:
 
 {% endhighlight %}
 
-#### XLSort.sortByRange(range, columnName, direction)
+### XLSort.sortByRange(range, columnName, direction)
 {:#methods:xlsort-sortbyrange}
 
 This method is used to sort a particular range of cells based on its values in the Spreadsheet.
@@ -7170,7 +7170,7 @@ xlObj.XLSort.sortByRange("A1:D3", "B",  "ascending");
 ### XLValidate
 {:#methods:xlvalidate}
 
-#### XLValidate.applyDVRules(range, values, type, required, showErrorAlert)
+### XLValidate.applyDVRules(range, values, type, required, showErrorAlert)
 {:#methods:xlvalidate-applydvrules}
 
 This method is used to apply data validation rules in a selected range of cells based on the defined condition in the Spreadsheet.
@@ -7224,7 +7224,7 @@ xlObj.XLValidate.applyDVRules("A1:D3", ["Between", "15", "20"], "number" ,true, 
 
 {% endhighlight %}
 
-#### XLValidate.clearDV(\[range\])
+### XLValidate.clearDV(\[range\])
 {:#methods:xlvalidate-cleardv}
 
 This method is used to clear the applied validation rules in a specified range of cells in the Spreadsheet.
@@ -7258,7 +7258,7 @@ spreadsheetObj.XLValidate.clearDV("A2:A7");
 
 {% endhighlight %}
 
-#### XLValidate.highlightInvalidData(\[range\])
+### XLValidate.highlightInvalidData(\[range\])
 {:#methods:xlvalidate-highlightinvaliddata}
 
 This method is used to highlight invalid data in a specified range of cells in the Spreadsheet.
