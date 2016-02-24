@@ -34,7 +34,7 @@ $(element).ejSpreadsheet(options)
 options
 {% endhighlight %}
 </td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts ref= "ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Settings for Spreadsheet.</td>
 </tr>
 </tbody>
@@ -774,6 +774,8 @@ Gets or sets an object that indicates to customize the autofill behavior in the 
 ### autoFillSettings.fillType `Enum` 
 {:#members:autofillsettings-filltype}
 
+<ts name="ej.Spreadsheet.AutoFillOptions"/>
+
 This property is used to set filltype unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
 
 Note: allowAutoFill must be true while setting filltype. 
@@ -812,7 +814,7 @@ Note: allowAutoFill must be true while setting filltype.
 #### Default Value
 * ej.Spreadsheet.AutoFillOptions.FillSeries
 
-<ts name="ej.Spreadsheet.AutoFillOptions"/>
+
 
 #### Example
 
@@ -1589,6 +1591,8 @@ isResponsive: true
 ### scrollSettings.scrollMode `Enum`
 {:#members:scrollsettings-scrollmode}
 
+<ts name="ej.Spreadsheet.scrollMode"/>
+
 Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
 
 Note: allowScrolling must be true while enabling this property.
@@ -1615,7 +1619,7 @@ Note: allowScrolling must be true while enabling this property.
 #### Default Value
 * ej.Spreadsheet.scrollMode.Infinite
 
-<ts name="ej.Spreadsheet.scrollMode"/>
+
 
 #### Example
 
@@ -1741,6 +1745,8 @@ enableAnimation: true
 ### selectionSettings.selectionType `Enum`
 {:#members:selectionsettings-selectiontype}
 
+<ts name="ej.Spreadsheet.SelectionType"/>
+
 Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
 
 Note: allowSelection must be true while using this property.
@@ -1771,7 +1777,7 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionType.Default
 
-<ts name="ej.Spreadsheet.SelectionType"/>
+
 
 
 #### Example
@@ -1793,6 +1799,8 @@ enableAnimation: true
 
 ### selectionSettings.selectionUnit `Enum`
 {:#members:selectionsettings-selectionunit}
+
+<ts name="ej.Spreadsheet.SelectionUnit"/>
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and Multirange.
 
@@ -1824,7 +1832,7 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionUnit.MultiRange
 
-<ts name="ej.Spreadsheet.SelectionUnit"/>
+
 
 
 #### Example
@@ -7418,7 +7426,7 @@ Triggered for every action complete.
 <tbody>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7519,7 +7527,7 @@ Triggered when the auto fill operation begins.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7604,7 +7612,7 @@ Triggered when the auto fill operation completes.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7679,7 +7687,7 @@ Triggered before the cells to be formatted.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7751,7 +7759,7 @@ Triggered before the cell selection.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7832,12 +7840,12 @@ Triggered before the selected cells are dropped.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
@@ -7908,7 +7916,7 @@ Triggered before the contextmenu is open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -7979,7 +7987,7 @@ Triggered before the activation panel is open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8126,7 +8134,7 @@ Triggered when the cell is edited.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8197,7 +8205,7 @@ Triggered when mouse hover on cell in sheets.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8268,7 +8276,7 @@ Triggered when save the edited cell.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8358,7 +8366,7 @@ Triggered when click the contextmenu items.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8449,7 +8457,7 @@ Triggered when the selected cells are being dragged.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8529,12 +8537,12 @@ Triggered when the selected cells are initiated to drag.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description">Returns the target item.</td>
 </tr>
 <tr>
@@ -8610,7 +8618,7 @@ Triggered when the selected cells are dropped.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8681,7 +8689,7 @@ Triggered before the range editing starts.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8752,7 +8760,7 @@ Triggered after range editing completes.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8823,7 +8831,7 @@ Triggered before the sheet is loaded.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8884,7 +8892,7 @@ Triggered after the sheet is loaded.
 <tbody>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -8955,7 +8963,7 @@ Triggered every click of the menu item.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9047,7 +9055,7 @@ Triggered when import sheet is failed to open.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9123,7 +9131,7 @@ Triggered when pager item is clicked in the Spreadsheet.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9194,7 +9202,7 @@ Triggered when click on the ribbon.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9270,7 +9278,7 @@ Triggered when the chart series rendering.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the chart model.</td>
 </tr>
 <tr>
@@ -9352,7 +9360,7 @@ Triggered when click the ribbon tab.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
@@ -9433,7 +9441,7 @@ Triggered when select the ribbon tab.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type"><ts ref="ej.Spreadsheet.Model"/>object</span></td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
