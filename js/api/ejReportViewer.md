@@ -259,11 +259,11 @@ Specifies the excel export format.
 </tr>
 <tr>
 <td class="name">Excel2010</td>
-<td class="description">Specifies the Excel2007 property in ExcelFormats to get specified version of exported format.</td>
+<td class="description">Specifies the Excel2010 property in ExcelFormats to get specified version of exported format.</td>
 </tr>
 <tr>
 <td class="name">Excel2013</td>
-<td class="description">Specifies the Excel2007 property in ExcelFormats to get specified version of exported format.</td>
+<td class="description">Specifies the Excel2013 property in ExcelFormats to get specified version of exported format.</td>
 </tr>
 </tbody>
 </table>
@@ -509,47 +509,47 @@ Specifies the paper size of print layout.
 <tbody>
 <tr>
 <td class="name">A3</td>
-<td class="description">Specifies the A3 as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the A3 as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">portrait</td>
-<td class="description">Specifies the A4 as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the A4 as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">B4(JIS)</td>
-<td class="description">Specifies the B4(JIS) as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the B4(JIS) as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">B5(JIS)</td>
-<td class="description">Specifies the B5(JIS) as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the B5(JIS) as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Envelope #10</td>
-<td class="description">Specifies the Envelope #10 as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Envelope #10 as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Envelope Monarch</td>
-<td class="description">Specifies the Envelope as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Envelope as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Executive</td>
-<td class="description">Specifies the Executive as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Executive as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Legal</td>
-<td class="description">Specifies the Legal as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Legal as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Letter</td>
-<td class="description">Specifies the Letter as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Letter as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Tabloid</td>
-<td class="description">Specifies the Tabloid as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Tabloid as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
 <td class="name">Custom</td>
-<td class="description">Specifies the Custom as value in pageSettings.paperSize to get specified paper size.</td>
+<td class="description">Specifies the Custom as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 </tbody>
 </table>
@@ -763,8 +763,8 @@ Enables and disables the print mode.
 
 {% endhighlight %}
 
-### printOption `enum`
-{:#members:printOption}
+### printOptions `enum`
+{:#members:printOptions}
 
 Specifies the print option of the report.
 
@@ -778,22 +778,22 @@ Specifies the print option of the report.
 <tbody>
 <tr>
 <td class="name">Default</td>
-<td class="description">Specifies the Default property in PrintOption.</td>
+<td class="description">Specifies the Default property in printOptions.</td>
 </tr>
 <tr>
 <td class="name">NewTab</td>
-<td class="description">Specifies the NewTab property in PrintOption.</td>
+<td class="description">Specifies the NewTab property in printOptions.</td>
 </tr>
 <tr>
 <td class="name">None</td>
-<td class="description">Specifies the None property in PrintOption.</td>
+<td class="description">Specifies the None property in printOptions.</td>
 </tr>
 </tbody>
 </table>
 
 #### Default Value
 
-* ej.ReportViewer.PrintOption.Default
+* ej.ReportViewer.PrintOptions.Default
 
 #### Example
 
@@ -801,7 +801,7 @@ Specifies the print option of the report.
  
 <div id="reportviewer"></div> 
 <script>        
-    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOption.Default });            
+    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOptions.Default });            
 </script>
 
 {% endhighlight %}
@@ -821,11 +821,11 @@ Specifies the processing mode of the report.
 <tbody>
 <tr>
 <td class="name">Remote</td>
-<td class="description">Specifies the Remote property in ProcessingMode.</td>
+<td class="description">Specifies the Remote property in processingMode.</td>
 </tr>
 <tr>
 <td class="name">Local</td>
-<td class="description">Specifies the Local property in ProcessingMode.</td>
+<td class="description">Specifies the Local property in processingMode.</td>
 </tr>
 </tbody>
 </table>
@@ -923,7 +923,7 @@ Gets or sets the reports server url.
  
 <div id="reportviewer"></div> 
 <script>
-    $("#reportviewer").ejReportViewer({ reportServerUrl:  "http://mvc.syncfusion.com/reportserver" });            
+    $("#reportviewer").ejReportViewer({ reportServerUrl: "http://mvc.syncfusion.com/reportserver" });            
 </script>
 
 {% endhighlight %}
@@ -943,7 +943,7 @@ Specifies the report Web API service url.
 
 <div id="reportviewer"></div> 
 <script>
-    $("#reportviewer").ejReportViewer({ reportServiceUrl:  "../api/RDLReport" });            
+    $("#reportviewer").ejReportViewer({ reportServiceUrl: "../api/RDLReport" });            
 </script>
 
 {% endhighlight %}
@@ -1290,7 +1290,6 @@ Navigate to next page from the current page.
 
 {% endhighlight %}
 
-
 ### gotoPageIndex()
 {:#methods:gotopageindex}
 
@@ -1393,10 +1392,9 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1407,22 +1405,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1461,10 +1456,9 @@ Fires during drill through action done in report.If you want to perform any oper
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1475,28 +1469,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-actionInfo{% endhighlight %}</td>
+<td class="name">actionInfo</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the actionInfo's parameters bookmarkLink,hyperLink,reportName,parameters.</td>
+<td class="description last">returns the actionInfo's parameters bookmarkLink, hyperLink, reportName, parameters.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1535,10 +1525,9 @@ Fires before report rendering is completed.If you want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1549,22 +1538,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1604,10 +1590,9 @@ Fires after report rendering completed.If you want to perform any operation afte
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1618,34 +1603,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-reportParameters{% endhighlight %}</td>
+<td class="name">reportParameters</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the collection of parameters</td>
+<td class="description last">returns the collection of parameters.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-reportParameters{% endhighlight %}</td>
+<td class="name">reportParameters</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the collection of parameters</td>
+<td class="description last">returns the collection of parameters.</td>
 </tr>
 </tbody>
 </table>
@@ -1685,10 +1665,9 @@ Fires when any error occurred while rendering the report.If you want to perform 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1699,28 +1678,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the error details</td>
+<td class="description last">returns the error details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1759,10 +1734,9 @@ Fires when the report is being exported.If you want to perform any operation bef
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1773,22 +1747,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1827,10 +1798,10 @@ Fires when the report is loaded.If you want to perform any operation after the s
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">event parameters from reportviewer
+<td class="description last">event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1841,22 +1812,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1895,10 +1863,9 @@ Fires when click the View Report Button.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1909,28 +1876,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-parameters{% endhighlight %}</td>
+<td class="name">parameters</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the parameter collection.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
