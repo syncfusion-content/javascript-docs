@@ -66,3 +66,13 @@ List of custom classes that are need to override styles. The following are speci
 *	`e-ribbonbackstagepage`,`e-ribbonbackstagetop`,`e-backstagetopicon` – Applies to back stage top header.
 
 *	`e-ribbonbackstagebody` ,`e-backstageheader`,`e-backstagecontent`,`e-backstageli`,`e- backstageseparator`, `e-backstageactive` – Applies Backstage page side header and its contents.
+
+### Quick Access Toolbar
+
+*   `e-rbnwithqat`- This class applied to the Quick access toolbar in the Ribbon.
+
+*   `e-rbnabove` - This class applied to the top Quick access toolbar.
+
+*   `e-qatooldiv`- This class applied to individual controls in the Quick access toolbar.
+
+*   `e-rbnbelow`- This class applied to the bottom Quick access toolbar.
