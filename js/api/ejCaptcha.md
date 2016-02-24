@@ -95,7 +95,7 @@ Requires
 
 
 
-### characterSet<span class="type-signature type string">string</span>
+### characterSet  `string`
 {:#members:characterset}
 
 
@@ -146,7 +146,7 @@ Example
 
 
 
-### customErrorMessage<span class="type-signature type string">string</span>
+### customErrorMessage  `string`
 {:#members:customerrormessage}
 
 
@@ -197,7 +197,7 @@ Example
 
 
 
-### enableAutoValidation<span class="type-signature type boolean">boolean</span>
+### enableAutoValidation  `boolean`
 {:#members:enableautovalidation}
 
 
@@ -248,7 +248,7 @@ Example
 
 
 
-### enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
+### enableCaseSensitivity  `boolean`
 {:#members:enablecasesensitivity}
 
 
@@ -299,7 +299,7 @@ Example
 
 
 
-### enablePattern<span class="type-signature type boolean">boolean</span>
+### enablePattern  `boolean`
 {:#members:enablepattern}
 
 
@@ -350,7 +350,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL  `boolean`
 {:#members:enablertl}
 
 
@@ -401,7 +401,7 @@ Example
 
 
 
-### hatchStyle<span class="type-signature type enum">enum</span>
+### hatchStyle  `enum`
 {:#members:hatchstyle}
 
 
@@ -452,7 +452,7 @@ Example
 
 
 
-### height<span class="type-signature type number">number</span>
+### height  `number`
 {:#members:height}
 
 
@@ -503,7 +503,7 @@ Example
 
 
 
-### mapper<span class="type-signature type string">string</span>
+### mapper  `string`
 {:#members:mapper}
 
 
@@ -554,7 +554,7 @@ Example
 
 
 
-### maximumLength<span class="type-signature type number">number</span>
+### maximumLength  `number`
 {:#members:maximumlength}
 
 
@@ -605,7 +605,7 @@ Example
 
 
 
-### minimumLength<span class="type-signature type number">number</span>
+### minimumLength  `number`
 {:#members:minimumlength}
 
 
@@ -656,7 +656,7 @@ Example
 
 
 
-### requestMapper<span class="type-signature type string">string</span>
+### requestMapper  `string`
 {:#members:requestmapper}
 
 
@@ -707,7 +707,7 @@ Example
 
 
 
-### showAudioButton<span class="type-signature type boolean">boolean</span>
+### showAudioButton  `boolean`
 {:#members:showaudiobutton}
 
 
@@ -758,7 +758,7 @@ Example
 
 
 
-### showRefreshButton<span class="type-signature type boolean">boolean</span>
+### showRefreshButton  `boolean`
 {:#members:showrefreshbutton}
 
 
@@ -809,7 +809,7 @@ Example
 
 
 
-### targetButton<span class="type-signature type string">string</span>
+### targetButton  `string`
 {:#members:targetbutton}
 
 
@@ -861,7 +861,7 @@ Example
 
 
 
-### targetInput<span class="type-signature type string">string</span>
+### targetInput  `string`
 {:#members:targetinput}
 
 
@@ -992,20 +992,20 @@ Fires when captch refresh begins.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1057,20 +1057,20 @@ Fires after captch refresh completed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1122,20 +1122,20 @@ Fires when captch refresh fails to load.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1187,20 +1187,20 @@ Fires after captch refresh succeeded.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
