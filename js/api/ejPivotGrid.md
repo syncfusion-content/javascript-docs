@@ -513,6 +513,33 @@ Sets the summary layout for PivotGrid. Following are the ways in which summary c
 
 **Default Value:** ej.PivotGrid.Layout.Normal
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Normal</td>
+            <td class="description">To set normal summary layout in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NormalTopSummary</td>
+            <td class="description">To set layout with summaries at the top in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NoSummaries</td>
+            <td class="description">To set layout without summaries in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">ExcelLikeLayout</td>
+            <td class="description">To set excel-like layout in PivotGrid.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -1886,6 +1913,26 @@ $("#PivotGrid1").ejPivotGrid({
 
 Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Olap</td>
+            <td class="description">To bind an OLAP data source to PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">Relational</td>
+            <td class="description">To bind a relational data source to PivotGrid.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -1898,7 +1945,34 @@ $("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Olap});
 ### ExportOptions  `enum`
 {:#enum:exportoptions}
 
-Allows the user to set the exporting options for PivotGrid widget. 
+Allows the user to set the exporting options for PivotGrid widget.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Excel</td>
+            <td class="description">To export PivotGrid in Excel format.</td>
+        </tr>
+        <tr>
+            <td class="name">Word</td>
+            <td class="description">To export PivotGrid in Word format.</td>
+        </tr>
+         <tr>
+            <td class="name">PDF</td>
+            <td class="description">To export PivotGrid in PDF format.</td>
+        </tr>
+         <tr>
+            <td class="name">CSV</td>
+            <td class="description">To export PivotGrid in CSV format.</td>
+        </tr>
+    </tbody>
+</table> 
 
 **Example:**
 
@@ -1913,6 +1987,33 @@ $("#PivotGrid1").ejPivotGrid({ exportOptions: ej.PivotGrid.ExportOptions.Excel})
 
 Allows the user to set the layout for PivotGrid.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Normal</td>
+            <td class="description">To set normal summary layout in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NormalTopSummary</td>
+            <td class="description">To set layout with summaries at the top in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NoSummaries</td>
+            <td class="description">To set layout without summaries in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">ExcelLikeLayout</td>
+            <td class="description">To set excel-like layout in PivotGrid.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -1923,9 +2024,29 @@ $("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.Normal });
 
 
 ### OperationalMode  `enum`
-{:#enum:Operationalmode}
+{:#enum:operationalmode}
 
 Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ClientMode</td>
+            <td class="description">To bind data source completely from client-side.</td>
+        </tr>
+        <tr>
+            <td class="name">ServerMode</td>
+            <td class="description">To bind data source completely from server-side.</td>
+        </tr>
+    </tbody>
+</table>
+
 
 **Example:**
 

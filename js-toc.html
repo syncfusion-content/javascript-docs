@@ -3156,6 +3156,14 @@
                                     <li id="toc-members:editsettings-editmode"><a href="/js/api/ejgantt#members:editsettings-editmode">editMode</a></li>
                                 </ul>
                             </li>
+                            <li id="toc-members:splitterSettings">
+                                <a href="/js/api/ejgantt#members:splitterSettings">splitterSettings</a>
+                                <ul>
+                                    <li id="toc-members:splitterSettings-position"><a href="/js/api/ejgantt#members:splitterSettings-position">position</a></li>
+                                    <li id="toc-members:splitterSettings-index"><a href="/js/api/ejgantt#members:splitterSettings-index">index</a></li>
+                                </ul>
+                            </li>
+                            <li id="toc-members:enablePredecessorValidation"><a href="/js/api/ejgantt#members:enablePredecessorValidation">enablePredecessorValidation</a></li>
                             <li id="toc-members:enablealtrow"><a href="/js/api/ejgantt#members:enablealtrow">enableAltRow</a></li>
                             <li id="toc-members:enablecollapseall"><a href="/js/api/ejgantt#members:enablecollapseall">enableCollapseAll</a></li>
                             <li id="toc-members:enablecontextmenu"><a href="/js/api/ejgantt#members:enablecontextmenu">enableContextMenu</a></li>
@@ -3257,6 +3265,7 @@
                             <li id="toc-methods:outdentitem"><a href="/js/api/ejgantt#methods:outdentitem">outdentItem</a></li>
                             <li id="toc-methods:saveedit"><a href="/js/api/ejgantt#methods:saveedit">saveEdit</a></li>
                             <li id="toc-methods:searchitem"><a href="/js/api/ejgantt#methods:searchitem">searchItem</a></li>
+                            <li id="toc-methods:setsplitterposition"><a href="/js/api/ejgantt#methods:setSplitterIndex">setSplitterIndex</a></li>
                             <li id="toc-methods:setsplitterposition"><a href="/js/api/ejgantt#methods:setsplitterposition">setSplitterPosition</a></li>
                             <li id="toc-methods:showcolumn"><a href="/js/api/ejgantt#methods:showcolumn">showColumn</a></li>
                         </ul>
@@ -5189,10 +5198,10 @@
                             <li id="toc-members:isresponsive"><a href="/js/api/ejolapgauge#members:isresponsive">isResponsive</a></li>
                             <li id="toc-members:labelformatsettings"><a href="/js/api/ejolapgauge#members:labelformatsettings">labelFormatSettings</a>
                                 <ul>
-                                    <li id="toc-members:labelFormatSettings-decimalPlaces"><a href="/js/api/ejolapgauge#members:labelFormatSettings-decimalPlaces">decimalPlaces</a></li>
+                                    <li id="toc-members:labelformatsettings-decimalplaces"><a href="/js/api/ejolapgauge#members:labelformatsettings-decimalplaces">decimalPlaces</a></li>
                                     <li id="toc-members:labelformatsettings-numberformat"><a href="/js/api/ejolapgauge#members:labelformatsettings-numberformat">numberFormat</a></li>
-                                    <li id="toc-members:labelFormatSettings-prefixText"><a href="/js/api/ejolapgauge#members:labelFormatSettings-prefixText">prefixText</a></li>
-                                    <li id="toc-members:labelFormatSettings-suffixText"><a href="/js/api/ejolapgauge#members:labelFormatSettings-suffixText">suffixText</a></li>
+                                    <li id="toc-members:labelformatsettings-prefixtext"><a href="/js/api/ejolapgauge#members:labelformatsettings-prefixtext">prefixText</a></li>
+                                    <li id="toc-members:labelformatsettings-suffixtext"><a href="/js/api/ejolapgauge#members:labelformatsettings-suffixtext">suffixText</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:locale"><a href="/js/api/ejolapgauge#members:locale">locale</a></li>
@@ -5224,6 +5233,11 @@
                             <li id="toc-events:rendercomplete"><a href="/js/api/ejolapgauge#events:rendercomplete">renderComplete</a></li>
                             <li id="toc-events:renderfailure"><a href="/js/api/ejolapgauge#events:renderfailure">renderFailure</a></li>
                             <li id="toc-events:rendersuccess"><a href="/js/api/ejolapgauge#events:rendersuccess">renderSuccess</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="/js/api/ejolapgauge#enum">Enumeration</a>
+                        <ul>
+                            <li id="toc-enum:numberformat"><a href="/js/api/ejolapgauge#enum:numberformat">NumberFormat</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -5320,7 +5334,7 @@
                             <li id="toc-enum:analysismode"><a href="/js/api/ejpivotgrid#enum:analysismode">AnalysisMode</a></li>
                             <li id="toc-enum:exportoptions"><a href="/js/api/ejpivotgrid#enum:exportoptions">ExportOptions</a></li>
                             <li id="toc-enum:layout"><a href="/js/api/ejpivotgrid#enum:layout">Layout</a></li>
-                            <li id="toc-enum:Operationalmode"><a href="/js/api/ejpivotgrid#enum:Operationalmode">OperationalMode</a></li>
+                            <li id="toc-enum:operationalmode"><a href="/js/api/ejpivotgrid#enum:operationalmode">OperationalMode</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -8002,6 +8016,10 @@
                                     <li id="toc-members:columns-filteredittype"><a href="/js/api/ejtreegrid#members:columns-filteredittype">filterEditType</a></li>
                                     <li id="toc-members:columns-headertext"><a href="/js/api/ejtreegrid#members:columns-headertext">headerText</a></li>
                                     <li id="toc-members:columns-visible"><a href="/js/api/ejtreegrid#members:columns-visible">visible</a></li>
+                                    <li id="toc-members:columns-headerTextOverflow"><a href="/js/api/ejtreegrid#members:columns-headerTextOverflow">headerTextOverflow</a></li>
+                                    <li id="toc-members:columns-headerTemplateID"><a href="/js/api/ejtreegrid#members:columns-headerTemplateID">headerTemplateID</a></li>
+                                    <li id="toc-members:columns-isFrozen"><a href="/js/api/ejtreegrid#members:columns-isFrozen">isFrozen</a></li>
+                                    <li id="toc-members:columns-allowFreezing"><a href="/js/api/ejtreegrid#members:columns-allowFreezing">allowFreezing</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:contextmenusettings"><a href="/js/api/ejtreegrid#members:contextmenusettings">contextMenuSettings</a>
@@ -8074,6 +8092,8 @@
                             <li id="toc-methods:search"><a href="/js/api/ejtreegrid#methods:search">search</a></li>
                             <li id="toc-methods:showcolumn"><a href="/js/api/ejtreegrid#methods:showcolumn">showColumn</a></li>
                             <li id="toc-methods:sortcolumn"><a href="/js/api/ejtreegrid#methods:sortcolumn">sortColumn</a></li>
+                            <li id="toc-methods:freezePrecedingColumns"><a href="/js/api/ejtreegrid#methods:freezePrecedingColumns">freezePrecedingColumns</a></li>
+                            <li id="toc-methods:freezeColumn"><a href="/js/api/ejtreegrid#methods:freezeColumn">freezeColumn</a></li>
                         </ul>
                     </li>
                     <li><a href="/js/api/ejtreegrid#events">Events</a>

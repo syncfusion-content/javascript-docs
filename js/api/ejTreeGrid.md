@@ -420,9 +420,9 @@ Specifies whether the column is frozen
 {% endhighlight %}
 
 
-### columns.alllowFreezing `boolean`
+### columns.allowFreezing `boolean`
 
-{:#members:columns-alllowFreezing}
+{:#members:columns-allowFreezing}
 
 Enables or diables the ability to freeze/unfreeze the columns
 

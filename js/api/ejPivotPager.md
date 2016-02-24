@@ -102,6 +102,29 @@ Sets the pager mode (Only Categorical Pager/Only Series Pager/Both) for the Pivo
 
 **Default Value:** ej.PivotPager.Mode.Both
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Both</td>
+            <td class="description">To set both categorical and series pager for paging.</td>
+        </tr>
+        <tr>
+            <td class="name">Categorical</td>
+            <td class="description">To set only categorical pager for paging.</td>
+        </tr>
+        <tr>
+            <td class="name">Series</td>
+            <td class="description">To set only series pager for paging.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -182,6 +205,29 @@ pagerObj.initPagerProperties(150, {CategorialPageSize: 10, SeriesPageSize: 10, C
 {:#enum:mode}
 
 Allows the user to set the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Both</td>
+            <td class="description">To set both categorical and series pager for paging.</td>
+        </tr>
+        <tr>
+            <td class="name">Categorical</td>
+            <td class="description">To set only categorical pager for paging.</td>
+        </tr>
+        <tr>
+            <td class="name">Series</td>
+            <td class="description">To set only series pager for paging.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 

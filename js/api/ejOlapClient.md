@@ -68,6 +68,86 @@ Allows the user to set the specific chart type for OlapChart.
 
 **Default Value:** ej.olap.OlapChart.ChartTypes.Column
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Line</td>
+            <td class="description">To render a Line type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Spline</td>
+            <td class="description">To render a Spline type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Column</td>
+            <td class="description">To render a Column type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Area</td>
+            <td class="description">To render a Area type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">SplineArea</td>
+            <td class="description">To render a SplineArea type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepLine</td>
+            <td class="description">To render a StepLine type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepArea</td>
+            <td class="description">To render a StepArea type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pie</td>
+            <td class="description">To render a Pie type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bar</td>
+            <td class="description">To render a Bar type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingArea</td>
+            <td class="description">To render a StackingArea type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingColumn</td>
+            <td class="description">To render a StackingColumn type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingBar</td>
+            <td class="description">To render a StackingBar type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pyramid</td>
+            <td class="description">To render a Pyramid type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Funnel</td>
+            <td class="description">To render a Funnel type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Doughnut</td>
+            <td class="description">To render a Doughnut type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Scatter</td>
+            <td class="description">To render a Scatter type for OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bubble</td>
+            <td class="description">To render a Bubble type for OlapChart.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -143,6 +223,26 @@ Let’s the user to customize the display of OlapChart and PivotGrid widgets, ei
 
 **Default Value:** ej.olap.OlapClient.ControlPlacement.Tab
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Tab</td>
+            <td class="description">To display OlapChart and PivotGrid widgets in tab view.</td>
+        </tr>
+        <tr>
+            <td class="name">Tile</td>
+            <td class="description">To display OlapChart and PivotGrid widgets within the same view, one below the other.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -157,6 +257,26 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Ola
 Let’s the user to set either Chart or Grid as the start-up widget.
 
 **Default Value:** ej.olap.OlapClient.DefaultView.Grid
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Chart</td>
+            <td class="description">To set OlapChart as a default control in view when the OlapClient widget is loaded for the first time.</td>
+        </tr>
+        <tr>
+            <td class="name">Grid</td>
+            <td class="description">To set PivotGrid as a default control in view when the OlapClient widget is loaded for the first time.</td>
+        </tr>
+    </tbody>
+</table>
+
 
 **Example:**
 
@@ -218,6 +338,30 @@ Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
 
 **Default Value:** ej.olap.OlapClient.DisplayMode.ChartAndGrid
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ChartOnly</td>
+            <td class="description">To display only OlapChart widget.</td>
+        </tr>
+        <tr>
+            <td class="name">GridOnly</td>
+            <td class="description">To display only PivotGrid widget.</td>
+        </tr>
+        <tr>
+            <td class="name">ChartAndGrid</td>
+            <td class="description">To display both OlapChart and PivotGrid widgets.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -262,6 +406,33 @@ $("#OlapClient1").ejOlapClient({ enableMeasureGroups : true });
 Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
 
 **Default Value:** ej.PivotGrid.Layout.Normal
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Normal</td>
+            <td class="description">To set normal summary layout in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NormalTopSummary</td>
+            <td class="description">To set layout with summaries at the top in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">NoSummaries</td>
+            <td class="description">To set layout without summaries in PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">ExcelLikeLayout</td>
+            <td class="description">To set excel-like layout in PivotGrid.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:** 
 
@@ -1174,6 +1345,29 @@ $("#OlapClient1").ejOlapClient({
 
 Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ChartAndGrid</td>
+            <td class="description">To export only PivotGrid contents.</td>
+        </tr>
+        <tr>
+            <td class="name">ChartOnly</td>
+            <td class="description">To export only OlapChart contents.</td>
+        </tr>
+        <tr>
+            <td class="name">GridOnly</td>
+            <td class="description">To export both PivotGrid and OlapChart contents.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -1186,6 +1380,26 @@ $("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExpo
 {:#enum:controlplacement}
 
 Allow the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or tile view.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Tab</td>
+            <td class="description">To display OlapChart and PivotGrid widgets in tab view.</td>
+        </tr>
+        <tr>
+            <td class="name">Tile</td>
+            <td class="description">To display OlapChart and PivotGrid widgets within the same view, one below the other.</td>
+        </tr>
+    </tbody>
+</table>
+
 
 **Example:**
 
@@ -1201,6 +1415,30 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Ola
 
 Sets the display mode to view only Chart or only Grid or both in OlapClient.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ChartOnly</td>
+            <td class="description">To display only OlapChart widget.</td>
+        </tr>
+        <tr>
+            <td class="name">GridOnly</td>
+            <td class="description">To display only PivotGrid widget.</td>
+        </tr>
+        <tr>
+            <td class="name">ChartAndGrid</td>
+            <td class="description">To display both OlapChart and PivotGrid widgets.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -1213,6 +1451,25 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Dis
 {:#enum:defaultview}
 
 Allows the user to set either Chart or Grid as the start-up widget.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Chart</td>
+            <td class="description">To set OlapChart as a default control in view when the OlapClient widget is loaded for the first time.</td>
+        </tr>
+        <tr>
+            <td class="name">Grid</td>
+            <td class="description">To set PivotGrid as a default control in view when the OlapClient widget is loaded for the first time.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
