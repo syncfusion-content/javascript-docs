@@ -43,27 +43,60 @@ N>   **Mac** and **Linux** users will not be able to use the **Reporting and Bus
 N>  Also, the exporting functionality available in some of the widgets like the grid will also not be available due to the server-side .NET dependencies.
 
 
-## Configuring Syncfusion NuGet Packages
+## Configuring Syncfusion NuGet Packages in Visual Studio 
 
-The steps to download and configure the Syncfusion NuGet Packages in Visual Studio are as follows,
+Syncfusion JavaScript NuGet packages are available [here](http://nuget.syncfusion.com/package/javascript).
 
-* Download the and unzip the Syncfusion NuGet Packages for JavaScript from [here](http://nuget.syncfusion.com/login) 
+### NuGet Configuration  
 
-* In Visual Studio, navigate to `Tools|Library Package Manager|Package Manager Settings`, the Options pop-up will appear on the screen as shown below,
-  
-  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img1.png) 
+The steps to install the Syncfusion JavaScript NuGet Packages in Visual Studio are as follows,
 
-* Select `Package Manager|Package Sources` in the above pop-up and click on the `Browse` button(preceding the `Add` button) to navigate to the location where the above collection of NuGet packages are located on your machine.
-  
-  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png) 
+1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
 
-N>  The **Source** textbox in the above image denotes the location of the NuGet packages on your machine and the **Name** section, allows you to provide a unique name which we will refer to in the package installation section later.
+   ![](Installation-and-Deployment_images/NuGetConfig1.jpeg)
 
-* Now click the `Add` button and the package name will be listed in the **Available package sources** list as shown below and then Click `OK`.
+2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
-  ![](/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png) 
+   **Name**: Name of the package that listed in Available package sources  
+   **Source**: Syncfusion JavaScript NuGet Package feed url 
+   [http://nuget.syncfusion.com/javascript](http://nuget.syncfusion.com/javascript)
+    
+   ![](Installation-and-Deployment_images/NuGetConfig2.jpeg)
 
-* Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
+   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
+    
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
+
+### NuGet Installation
+
+Syncfusion JavaScript NuGet can install once configured the package source. The NuGet installation steps as below,
+
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
+
+   ![](Installation-and-Deployment_images/NuGetConfig3.jpeg)
+
+2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
+
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
+   
+3. Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
+
+### Updating a NuGet Package
+
+Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update.
+ 
+1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
+
+2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
+
+   ![](Installation-and-Deployment_images/NuGetConfig4.jpeg)
+
+3. If there is a new version of NuGet you will see it in the list of available updates.
+
+4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+
+   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
+
 
 ## Configuring Syncfusion Bower Packages
 

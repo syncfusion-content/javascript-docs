@@ -1325,7 +1325,7 @@ Specifies the dropAreaHeight when the draganddrop support is enabled in the Uplo
 
 
 
-### dropAreaWidth `number`  `string`
+### dropAreaWidth `number|string`
 {:#members:dropareawidth}
 
 
@@ -2303,7 +2303,9 @@ Enables the Uploadbox control
 $("#uploadbox1").ejUploadbox();
 var uploadObj = $("#uploadbox1").data("ejUploadbox");
 uploadObj.enable(); // enable the Uploadbox
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -2314,7 +2316,9 @@ uploadObj.enable(); // enable the Uploadbox
 // Enables the Uploadbox
 $("#uploadbox1").ejUploadbox();
 $("#uploadbox1").ejUploadbox("enable"); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2352,57 +2356,32 @@ Fires when the upload progress begins.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">To pass additional information to the server.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">files</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Selected FileList Object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
@@ -2448,45 +2427,22 @@ Fires when the upload progress is cancelled.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-fileStatus{% endhighlight %}</td>
+<td class="name">fileStatus</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Canceled FileList Object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
@@ -2531,62 +2487,37 @@ Fires when the file upload progress is completed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-e{% endhighlight %}</td>
+<td class="name">e</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">AJAX event argument for reference.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">files</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Uploaded file list.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-responseText{% endhighlight %}</td>
+<td class="name">responseText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">response from the server.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-xhr{% endhighlight %}</td>
+<td class="name">xhr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">XHR-AJAX Object for reference.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 
@@ -2632,69 +2563,42 @@ Fires when the file upload progress is completed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-responseText{% endhighlight %}</td>
+<td class="name">responseText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">response from the server.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-e{% endhighlight %}</td>
+<td class="name">e</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">AJAX event argument for reference.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-success{% endhighlight %}</td>
+<td class="name">success</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">successfully uploaded files list.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">files</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Uploaded file list.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-xhr{% endhighlight %}</td>
+<td class="name">xhr</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">XHR-AJAX Object for reference.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
@@ -2741,38 +2645,17 @@ Fires when the Uploadbox control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 
@@ -2819,34 +2702,14 @@ Fires when the Uploadbox control is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2897,46 +2760,24 @@ Fires when the Upload process ends in Error.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">details about the error information.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">error event action details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">files</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the file details of the file uploaded</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2987,45 +2828,22 @@ Fires when the file is selected for upload successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">files</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns Selected FileList objects</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
@@ -3070,40 +2888,19 @@ Fires when the uploaded file is removed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Uploadbox
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-fileStatus{% endhighlight %}</td>
+<td class="name">fileStatus</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the file details of the file object</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
