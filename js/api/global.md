@@ -7384,9 +7384,237 @@ SliceAndDiceAuto</td>
 
 
 
+### Keys
+{:#enum:keys}
 
+Enum for Keys in diagram.
 
+#### Properties
 
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">No key pressed.</td>
+        </tr>
+        <tr>
+            <td class="name">A</td>
+            <td class="description">The A key.</td>
+        </tr>
+        <tr>
+            <td class="name">B</td>
+            <td class="description">The B key.</td>
+        </tr>
+        <tr>
+            <td class="name">C</td>
+            <td class="description">The C key.</td>
+        </tr>
+        <tr>
+            <td class="name">D</td>
+            <td class="description">The D Key.</td>
+        </tr>
+        <tr>
+            <td class="name">E</td>
+            <td class="description">The E key.</td>
+        </tr>
+        <tr>
+            <td class="name">F</td>
+            <td class="description">The F key.</td>
+        </tr>
+        <tr>
+            <td class="name">G</td>
+            <td class="description">The G key.</td>
+        </tr>
+        <tr>
+            <td class="name">H</td>
+            <td class="description">The H Key.</td>
+        </tr>
+        <tr>
+            <td class="name">I</td>
+            <td class="description">The I key.</td>
+        </tr>
+        <tr>
+            <td class="name">J</td>
+            <td class="description">The J key.</td>
+        </tr>
+        <tr>
+            <td class="name">K</td>
+            <td class="description">The K key.</td>
+        </tr>
+        <tr>
+            <td class="name">L</td>
+            <td class="description">The L Key.</td>
+        </tr>
+        <tr>
+            <td class="name">M</td>
+            <td class="description">The M key.</td>
+        </tr>
+        <tr>
+            <td class="name">N</td>
+            <td class="description">The N key.</td>
+        </tr>
+        <tr>
+            <td class="name">O</td>
+            <td class="description">The O key.</td>
+        </tr>
+        <tr>
+            <td class="name">P</td>
+            <td class="description">The P Key.</td>
+        </tr>
+        <tr>
+            <td class="name">Q</td>
+            <td class="description">The Q key.</td>
+        </tr>
+        <tr>
+            <td class="name">R</td>
+            <td class="description">The R key.</td>
+        </tr>
+        <tr>
+            <td class="name">S</td>
+            <td class="description">The S key.</td>
+        </tr>
+        <tr>
+            <td class="name">T</td>
+            <td class="description">The T Key.</td>
+        </tr>
+        <tr>
+            <td class="name">U</td>
+            <td class="description">The U key.</td>
+        </tr>
+        <tr>
+            <td class="name">V</td>
+            <td class="description">The V key.</td>
+        </tr>
+        <tr>
+            <td class="name">W</td>
+            <td class="description">The W key.</td>
+        </tr>
+        <tr>
+            <td class="name">X</td>
+            <td class="description">The X key.</td>
+        </tr>
+        <tr>
+            <td class="name">Y</td>
+            <td class="description">The Y key.</td>
+        </tr>
+        <tr>
+            <td class="name">Z</td>
+            <td class="description">The Z key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number0</td>
+            <td class="description">The 0 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number1</td>
+            <td class="description">The 1 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number2</td>
+            <td class="description">The 2 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number3</td>
+            <td class="description">The 3 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number4</td>
+            <td class="description">The 4 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number5</td>
+            <td class="description">The 5 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number6</td>
+            <td class="description">The 6 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number7</td>
+            <td class="description">The 7 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number8</td>
+            <td class="description">The 8 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number9</td>
+            <td class="description">The 9 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description">The LEFT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Up</td>
+            <td class="description">The UP ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description">The RIGHT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Down</td>
+            <td class="description">The DOWN ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Escape</td>
+            <td class="description">The ESC key.</td>
+        </tr>
+        <tr>
+            <td class="name">Delete</td>
+            <td class="description">The DEL key.</td>
+        </tr>
+        <tr>
+            <td class="name">Tab</td>
+            <td class="description">The TAB key.</td>
+        </tr>
+        <tr>
+            <td class="name">Enter</td>
+            <td class="description">The ENTER key.</td>
+        </tr>
+    </tbody>
+</table>
+
+### KeyModifiers
+{:#enum:keymodifiers}
+
+Enum for KeyModifiers in diagram.
+
+#### Properties
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">No modifiers are pressed.</td>
+        </tr>
+        <tr>
+            <td class="name">Alt</td>
+            <td class="description">The ALT key.</td>
+        </tr>
+        <tr>
+            <td class="name">Control</td>
+            <td class="description">The CTRL key.</td>
+        </tr>
+        <tr>
+            <td class="name">Shift</td>
+            <td class="description">The SHIFT key.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### LabelEditMode
 {:#enum:labeleditmode}
