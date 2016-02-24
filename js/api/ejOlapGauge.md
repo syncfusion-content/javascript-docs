@@ -129,6 +129,46 @@ Allows the user to change the format of the label values in OlapGauge.
 
 **Default Value:** ej.olap.OlapGauge.NumberFormat.Default
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description">To set default format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Currency</td>
+            <td class="description">To set currency format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Percentage</td>
+            <td class="description">To set percentage format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Fraction</td>
+            <td class="description">To set fraction format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Scientific</td>
+            <td class="description">To set scientific format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Text</td>
+            <td class="description">To set text format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Notation</td>
+            <td class="description">To set notation format for label values.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -145,6 +185,46 @@ Allows the user to change the number format of the label values in OlapGauge.
 
 **Default Value:** ej.olap.OlapGauge.NumberFormat.Default
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description">To set default format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Currency</td>
+            <td class="description">To set currency format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Percentage</td>
+            <td class="description">To set percentage format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Fraction</td>
+            <td class="description">To set fraction format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Scientific</td>
+            <td class="description">To set scientific format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Text</td>
+            <td class="description">To set text format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Notation</td>
+            <td class="description">To set notation format for label values.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 **Example:**
 
 {% highlight html %}
@@ -155,7 +235,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {numberFormat: ej.olap.OlapGa
 
 
 ### labelFormatSettings.decimalPlaces `number`
-{:#members:labelFormatSettings-decimalPlaces}
+{:#members:labelformatsettings-decimalplaces}
 
 Allows you to change the position of a digit on the right-hand side of the decimal point for label value.
 
@@ -171,7 +251,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {decimalPlaces: 3} });
 
 
 ### labelFormatSettings.prefixText  `string`
-{:#members:labelFormatSettings-prefixText}
+{:#members:labelformatsettings-prefixtext}
 
 Allows you to add a text at the beginning of the label.
 
@@ -187,7 +267,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {prefixText: “prefixTextVal
 
 
 ### labelFormatSettings.suffixText `string`
-{:#members:labelFormatSettings-suffixText }
+{:#members:labelformatsettings-suffixtext }
 
 Allows you to add text at the end of the label.
 
@@ -945,6 +1025,46 @@ $("#OlapGauge1").ejOlapGauge({
 {:#enum:numberformat}
 
 Allows the user to change the format of the label values in OlapGauge.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description">To set default format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Currency</td>
+            <td class="description">To set currency format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Percentage</td>
+            <td class="description">To set percentage format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Fraction</td>
+            <td class="description">To set fraction format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Scientific</td>
+            <td class="description">To set scientific format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Text</td>
+            <td class="description">To set text format for label values.</td>
+        </tr>
+        <tr>
+            <td class="name">Notation</td>
+            <td class="description">To set notation format for label values.</td>
+        </tr>
+    </tbody>
+</table>
+
 
 **Example:**
 
