@@ -855,6 +855,97 @@ $("#OlapChart1").ejOlapChart({
 
 Allows the user to set shape for the marker.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Does not set any shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">LeftArrow</td>
+            <td class="description">To set left arrow shape for the marker</td>
+        </tr>
+        <tr>
+            <td class="name">RightArrow</td>
+            <td class="description">To set right arrow shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description">To set circle shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Cross</td>
+            <td class="description">To set cross shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">HorizLine</td>
+            <td class="description">To set horizontal line shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">VertLine</td>
+            <td class="description">To set vertical line shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Diamond</td>
+            <td class="description">To set diamond shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Rectangle</td>
+            <td class="description">To set rectangle shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Triangle</td>
+            <td class="description">To set triangle shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">InvertedTriangle</td>
+            <td class="description">To set inverted triangle shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Hexagon</td>
+            <td class="description">To set hexagon shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Pentagon</td>
+            <td class="description">To set pentagon shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Star</td>
+            <td class="description">To set star shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Ellipse</td>
+            <td class="description">To set ellipse shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Wedge</td>
+            <td class="description">To set wedge shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Trapezoid</td>
+            <td class="description">To set trapezoid shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">UpArrow</td>
+            <td class="description">To set up arrow shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">DownArrow</td>
+            <td class="description">To set down arrow shape for the marker.</td>
+        </tr>
+        <tr>
+            <td class="name">Image</td>
+            <td class="description">To set image shape for the marker.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -869,6 +960,85 @@ $("#OlapChart1").ejOlapChart({commonSeriesOptions :{marker :{ shape: ej.olap.Ola
 
 Allows the user to set the type for OlapChart.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Line</td>
+            <td class="description">To render a Line type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Spline</td>
+            <td class="description">To render a Spline type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Column</td>
+            <td class="description">To render a Column type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Area</td>
+            <td class="description">To render an Area type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">SplineArea</td>
+            <td class="description">To render a SplineArea type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepLine</td>
+            <td class="description">To render a StepLine type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepArea</td>
+            <td class="description">To render a StepArea type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pie</td>
+            <td class="description">To render a Pie type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bar</td>
+            <td class="description">To render a Bar type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingArea</td>
+            <td class="description">To render a StackingArea type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingColumn</td>
+            <td class="description">To render a StackingColumn type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingBar</td>
+            <td class="description">To render a StackingBar type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pyramid</td>
+            <td class="description">To render a Pyramid type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Funnel</td>
+            <td class="description">To render a Funnel type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Doughnut</td>
+            <td class="description">To render a Doughnut type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Scatter</td>
+            <td class="description">To render a Scatter type OlapChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bubble</td>
+            <td class="description">To render a Bubble type OlapChart.</td>
+        </tr>
+    </tbody>
+</table>
+
 **Example:**
 
 {% highlight html %}
@@ -881,6 +1051,53 @@ $("#OlapChart1").ejOlapChart({commonSeriesOptions :{ type: ej.olap.OlapChart.Cha
 {:#enum:exportoption }
 
 Allows the user to export OlapChart to an appropriate format based on the parameter passed.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Excel</td>
+            <td class="description">To export OlapChart in Excel format.</td>
+        </tr>
+        <tr>
+            <td class="name">Word</td>
+            <td class="description">To export OlapChart in Word format.</td>
+        </tr>
+        <tr>
+            <td class="name">PDF</td>
+            <td class="description">To export OlapChart in PDF format.</td>
+        </tr>
+        <tr>
+            <td class="name">CSV</td>
+            <td class="description">To export OlapChart in CSV format.</td>
+        </tr>
+        <tr>
+            <td class="name">PNG</td>
+            <td class="description">To export OlapChart in PNG format.</td>
+        </tr>
+        <tr>
+            <td class="name">JPG</td>
+            <td class="description">To export OlapChart in JPG format.</td>
+        </tr>
+        <tr>
+            <td class="name">EMF</td>
+            <td class="description">To export OlapChart in EMF format.</td>
+        </tr>
+        <tr>
+            <td class="name">GIF</td>
+            <td class="description">To export OlapChart in GIF format.</td>
+        </tr>
+        <tr>
+            <td class="name">BMP</td>
+            <td class="description">To export OlapChart in BMP format.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
