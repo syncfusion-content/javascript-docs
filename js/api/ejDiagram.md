@@ -211,7 +211,6 @@ $("#diagramcontent").ejDiagram( {
 
 {% endhighlight %}
 
-
 ### commandManager.commands.execute `function`
 {:#members:commandmanager-commands-execute}
 
@@ -475,7 +474,7 @@ $("#diagramcontent").ejDiagram( {
 {% endhighlight %}
 
 ### commandManager.commands.gesture.keyModifiers `enum`
-{:#members:commandmanager-commands-gesture-keymodifers}
+{:#members:commandmanager-commands-gesture-keymodifiers}
 
 <ts name = "ej.datavisualization.Diagram.KeyModifiers"/>
 	
@@ -1981,7 +1980,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 ### connectors.tooltip `Object`
 {:#members:connectors-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over connector.  For tooltip properties, refer [Tooltip](#members:tooltip)
+Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value:
 
@@ -2589,8 +2588,29 @@ $("#diagramcontent").ejDiagram({ enableContextMenu: false });
 
 {% endhighlight %}
 
+### height `String`
+{:#members:height}
+
+Specifies the height of the diagram
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ height:"500" });
+</script>
+
+{% endhighlight %}
+
 ### historyManager `Object`
 {:#members:historymanager}
+
 Customizes the undo redo functionality
 
 ### historyManager.canPop `function`
@@ -2617,6 +2637,7 @@ if(diagram.model.historyManager.canPop(entry))
 	diagram.model.historyManager.pop();
 	
 </script>
+
 {% endhighlight %}
 
 ### historyManager.closeGroupAction `function`
@@ -2691,6 +2712,7 @@ var newValue = { role: "New role" };
 node.empInfo = newValue;
 
 </script>
+
 {% endhighlight %}
 
 ### historyManager.redo `function`
@@ -2730,6 +2752,7 @@ function customUndoRedo(args) {
 	args.prevState = currentState;
 }	
 </script>
+
 {% endhighlight %}
 
 ### historyManager.startGroupAction `function`
@@ -2796,25 +2819,6 @@ function customUndoRedo(args) {
 	args.prevState = currentState;
 }	
 </script>
-{% endhighlight %}
-
-### height `String`
-{:#members:height}
-
-Specifies the height of the diagram
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram({ height:"500" });
-</script>
 
 {% endhighlight %}
 
@@ -2824,7 +2828,7 @@ $("#diagramcontent").ejDiagram({ height:"500" });
 Automatically arranges the nodes and connectors in a predefined manner
 
 ### layout.fixedNode `String`
-{:#members:layout- fixednode}
+{:#members:layout-fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
@@ -2842,7 +2846,7 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 {% endhighlight %}
 
 ### layout.getLayoutInfo `Object`
-{:#members:layout- getlayoutinfo}
+{:#members:layout-getlayoutinfo}
 
 Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
 
@@ -2862,28 +2866,7 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout.marginY `Number`
-{:#members:layout- marginy}
-
-Sets the margin value to be vertically left between layout and diagram
-
-#### Default Value:
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-// marginY of the layout
-$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
-</script>
-
-{% endhighlight %}
-
-### layout.horizontalSpacing `Number`
+### layout.horizontalspacing `Number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
@@ -2921,6 +2904,27 @@ Sets the margin value to be horizontally left between the layout and diagram
 <script>
 //marginX of the layout
 $("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
+</script>
+
+{% endhighlight %}
+
+### layout.marginY `Number`
+{:#members:layout-marginy}
+
+Sets the margin value to be vertically left between layout and diagram
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+// marginY of the layout
+$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
 </script>
 
 {% endhighlight %}
@@ -3672,36 +3676,6 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### nodes.isexpanded `Boolean`
-{:#members:nodes-isexpanded}
-
-Defines whether the sub tree of the node is expanded or collapsed
-
-#### Default Value:
-
-* true
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-//Collapse its subtree
-var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, isExpanded: false};
-
-var node2 = { name: "node2", width: 50, height:50 };
-var connector = { sourceNode:"node1", targetNode:"node2" , name:"connector" };
-$("#diagramcontent").ejDiagram({
-      nodes:[node1, node2],
-      connectors:[connector],
-      layout:{type:"hierarchicaltree"}
-});
-</script>
-
-{% endhighlight %}
-
 ### nodes.fillColor `String`
 {:#members:nodes-fillcolor}
 
@@ -3819,7 +3793,6 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 {% endhighlight %}
 
 ### nodes.gradient.LinearGradient.x1 `Number`
-
 {:#members:nodes-gradient-lineargradient-x1}
 
 Defines the left most position(relative to node) of the rectangular region that needs to be painted
@@ -3922,7 +3895,6 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
-
 
 ### nodes.gradient.RadialGradient `Object`
 {:#members:nodes-gradient-radialgradient}
@@ -4260,6 +4232,36 @@ var node = diagram.selectionList[0];
 for(var i = 0; i < node.inEdges.length; i++){
     console.log(node.inEdges[i]);
 }
+</script>
+
+{% endhighlight %}
+
+### nodes.isexpanded `Boolean`
+{:#members:nodes-isexpanded}
+
+Defines whether the sub tree of the node is expanded or collapsed
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+//Collapse its subtree
+var node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, isExpanded: false};
+
+var node2 = { name: "node2", width: 50, height:50 };
+var connector = { sourceNode:"node1", targetNode:"node2" , name:"connector" };
+$("#diagramcontent").ejDiagram({
+      nodes:[node1, node2],
+      connectors:[connector],
+      layout:{type:"hierarchicaltree"}
+});
 </script>
 
 {% endhighlight %}
@@ -5640,7 +5642,7 @@ $("#symbolpalette").ejSymbolPalette({
 {% endhighlight %}
 
 ### nodes.paletteItem.enableScale `Boolean`
-{:#members:nodes-paletteitem.enablescale}
+{:#members:nodes-paletteitem-enablescale}
 
 Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
 
@@ -7223,7 +7225,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tooltip `Object`
 {:#members:nodes-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over node.  For tooltip properties, refer [Tooltip](#members:tooltip)
+Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value:
 
@@ -7237,7 +7239,7 @@ Defines the tooltip that should be shown when the mouse hovers over node.  For t
 
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-        <span style="padding: 5px;"> {{:name}}</span>
+        <span style="padding: 5px;"> {{:name}} </span>
    </div>
 </script>
 
@@ -7566,12 +7568,14 @@ Defines the maximum distance to be left between the object and the scroll bar to
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
     pageSettings:{ autoScrollBorder: { left: 50, top: 50, right: 50, bottom: 50 } }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.multiplePage `Boolean`
@@ -7593,6 +7597,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{multiplePage:false}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBackgroundColor `String`
@@ -7614,6 +7619,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBackgroundColor:"lightgray"}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBorderColor `String`
@@ -7635,6 +7641,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageBorderWidth `Number`
@@ -7656,6 +7663,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageHeight `Number`
@@ -7677,6 +7685,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageMargin `Number`
@@ -7698,6 +7707,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageMargin : 20 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageOrientation `enum`
@@ -7741,6 +7751,7 @@ $("#diagramcontent").ejDiagram({
 	pageOrientation:ej.datavisualization.Diagram.PageOrientations.Landscape }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.pageWidth `Number`
@@ -7762,6 +7773,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ pageWidth: 500, pageHeight: 500 }
 });
 </script>
+
 {% endhighlight %}
 
 ### pageSettings.scrollableArea `Object`
@@ -7851,6 +7863,7 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ showPageBreak: true }
 });
 </script>
+
 {% endhighlight %}
 
 ### scrollSettings `Object`
@@ -7946,29 +7959,6 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings.viewPortWidth `Number`
-{:#members:scrollsettings-viewportwidth}
-
-Allows to read the view port width of the diagram
-
-#### Default Value:
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-	
-var diagram = $("#diagramcontent").ejDiagram("instance");
-console.log(diagram.model.scrollSettings.viewPortWidth);
-
-</script>
-
-{% endhighlight %}
-
 ### scrollSettings.viewPortHeight `Number`
 {:#members:scrollsettings-viewportheight}
 
@@ -7987,6 +7977,29 @@ Allows to read the view port height of the diagram
 	
 var diagram = $("#diagramcontent").ejDiagram("instance");
 console.log(diagram.model.scrollSettings.viewPortHeight);
+
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.viewPortWidth `Number`
+{:#members:scrollsettings-viewportwidth}
+
+Allows to read the view port width of the diagram
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+var diagram = $("#diagramcontent").ejDiagram("instance");
+console.log(diagram.model.scrollSettings.viewPortWidth);
 
 </script>
 
@@ -8089,6 +8102,7 @@ Defines a method that dynamically enables/ disables the interaction with multipl
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
@@ -8099,8 +8113,8 @@ selectedItems: {
     } }
 });
 </script>
-{% endhighlight %}
 
+{% endhighlight %}
 
 ### selectedItems.height `Number`
 {:#members:selecteditems-height}
@@ -8114,6 +8128,7 @@ Sets the height of the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 //Sets the height of the selector as 100
@@ -8121,6 +8136,7 @@ $("#diagramcontent").ejDiagram({
      selectedItems: { height:100, width: 100 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.offsetX `Number`
@@ -8135,12 +8151,14 @@ Sets the x position of the selector
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });;
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.offsetY `Number`
@@ -8155,12 +8173,14 @@ Sets the y position of the selector
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { offsetX:100, offsetY: 100 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.rotateAngle `Number`
@@ -8175,12 +8195,14 @@ Sets the angle to rotate the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { rotateAngle: 90 }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.tooltip `Object`
@@ -8195,12 +8217,14 @@ Sets the angle to rotate the selected items. For tooltip properties, refer [Tool
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({
      selectedItems: { tooltip : { alignment:{ vertical:"top" } } }
 });
 </script>
+
 {% endhighlight %}
 
 ### selectedItems.userHandles `Array`
@@ -8238,6 +8262,7 @@ Sets the width of the selected items
 #### Example
 
 {% highlight html %}
+
 <div id="diagramcontent"></div>
 <script>
 	
@@ -8580,7 +8605,7 @@ An object that defines the description, appearance and alignments of tooltips
 <div id="diagramcontent"></div>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-        <span style="padding: 5px;"> {{:Designation}}</span>
+        <span style="padding: 5px;"> {{:Designation}} </span>
    </div>
 </script>
 
@@ -8796,7 +8821,7 @@ Sets the svg/html template to be bound with tooltip
 
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-        <span style="padding: 5px;"> {{:Designation}}</span>
+        <span style="padding: 5px;"> {{:Designation}} </span>
    </div>
 </script>
 
@@ -10037,6 +10062,7 @@ var tool = ej.datavisualization.Diagram.Tool.ZoomPan;
 //update the tool
 diagram.update({ tool: tool });
 </script>
+
 {% endhighlight %}
 
 ### updateConnector(name, options)
@@ -10936,6 +10962,39 @@ dragEnter:function (args) {}
 
 {% endhighlight %}
 
+### dragLeave
+{:#events:dragleave}
+
+Triggers when a symbol is dragged outside of the diagram.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node or connector that is dragged outside of the diagram</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// drag leave event for diagram
+$("#diagramcontent").ejDiagram({
+dragLeave:function (args) {}
+});
+
+{% endhighlight %}
+
 ### dragOver
 {:#events:dragover}
 
@@ -10990,39 +11049,6 @@ Triggers when a symbol is dragged over diagram
 // drag over event for diagram
 $("#diagramcontent").ejDiagram({
 dragOver:function (args) {}
-});
-
-{% endhighlight %}
-
-### dragLeave
-{:#events:dragleave}
-
-Triggers when a symbol is dragged outside of the diagram.
-
-<table class="params">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="name">element</td>
-			<td class="type">object</td>
-			<td class="description last">parameter returns the node or connector that is dragged outside of the diagram</td>
-		</tr>
-	</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-// drag leave event for diagram
-$("#diagramcontent").ejDiagram({
-dragLeave:function (args) {}
 });
 
 {% endhighlight %}
@@ -11348,64 +11374,6 @@ nodeCollectionChange:function (args) {}
 
 {% endhighlight %}
 
-### sizeChange
-{:#events:sizechange}
-
-Triggers when a node is resized
-
-<table class="params">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="name">element</td>
-			<td class="type">object</td>
-			<td class="description last">parameter returns node that was resized</td>
-		</tr>
-		<tr>
-			<td class="name">cancel</td>
-			<td class="type">boolean</td>
-			<td class="description last">parameter to cancel the size change</td>
-		</tr>
-		<tr>
-			<td class="name">newValue</td>
-			<td class="type">object</td>
-			<td class="description last">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
-		</tr>
-		<tr>
-			<td class="name">oldValue</td>
-			<td class="type">object</td>
-			<td class="description last">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
-		</tr>
-		<tr>
-			<td class="name">resizeState</td>
-			<td class="type">string</td>
-			<td class="description last">parameter returns the state of resizing(starting,resizing,completed)</td>
-		</tr>
-		<tr>
-			<td class="name">offset</td>
-			<td class="type">object</td>
-			<td class="description last">parameter returns the difference between new and old value</td>
-		</tr>
-	</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-// sizeChange event for diagram
-$("#diagramcontent").ejDiagram({
-sizeChange:function (args) {}
-});
-
-{% endhighlight %}
-
 ### propertyChange
 {:#events:propertychange}
 
@@ -11647,6 +11615,64 @@ Triggers when the selection is changed in diagram
 // selectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 selectionChange:function (args) {}
+});
+
+{% endhighlight %}
+
+### sizeChange
+{:#events:sizechange}
+
+Triggers when a node is resized
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">element</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns node that was resized</td>
+		</tr>
+		<tr>
+			<td class="name">cancel</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter to cancel the size change</td>
+		</tr>
+		<tr>
+			<td class="name">newValue</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
+		</tr>
+		<tr>
+			<td class="name">oldValue</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
+		</tr>
+		<tr>
+			<td class="name">resizeState</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the state of resizing(starting,resizing,completed)</td>
+		</tr>
+		<tr>
+			<td class="name">offset</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the difference between new and old value</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// sizeChange event for diagram
+$("#diagramcontent").ejDiagram({
+sizeChange:function (args) {}
 });
 
 {% endhighlight %}
