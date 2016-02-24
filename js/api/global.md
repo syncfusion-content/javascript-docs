@@ -14484,8 +14484,8 @@ Specifies whether the Grid's types of summary to be used.
 <tr>
 <td class="name">Maximum</td>
 <td class="type">string</td>
-<td class="default">maximum</td>
-<td class="description">SummaryType is cancel.</td>
+<td class="default"></td>
+<td class="description">SummaryType is maximum.</td>
 </tr>
 <tr>
 <td class="name">Minimum</td>
