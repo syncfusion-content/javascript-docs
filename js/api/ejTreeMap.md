@@ -1,28 +1,26 @@
 ---
 layout: post
 title: ejTreeMap
+description: API reference for ejMap
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: treemap, ejtreemap, treemap api, syncfusion
 ---
+
+# ejTreeMap
 
 The treemap can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 
+#### Syntax
 
-
-
+{% highlight js %}
 
 $(element).ejTreeMap<span class="signature">()</span>
 
+{% endhighlight %}
 
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -33,14 +31,12 @@ Example
 $('#container').ejTreeMap();    
 </script> 
   
-</div>{% endhighlight %}
+</div>
+
+{% endhighlight %}
 
 
-
-
-Requires
-{:.require}
-
+#### Requires
 
 * module:jQuery
 
@@ -54,2987 +50,2529 @@ Requires
 ## Members
 
 
-
-
-### borderBrush<span class="type-signature type string">string</span>
+### borderBrush `string`
 {:#members:borderbrush}
-
-
-
 
 Specifies the border brush color of the treemap
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "white"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set borderBrush API value during initialization 
-  $("#container").ejTreeMap( {borderBrush:'white'});{% endhighlight %}
+  $("#container").ejTreeMap( {borderBrush:'white'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the borderBrush API, after initialization:
-        //Gets the borderBrush value 
-  var property =$("#container").data("ejTreeMap").model.borderBrush;
+   
+   //Gets the borderBrush value 
+   
+   var property =$("#container").data("ejTreeMap").model.borderBrush;
  
-        //Sets the borderBrush value 
-        $("#container").data("ejTreeMap").model.borderBrush = 'white'; {% endhighlight %}
+   //Sets the borderBrush value 
+   
+   $("#container").data("ejTreeMap").model.borderBrush = 'white'; 
+
+{% endhighlight %}
 
 
-
-
-### borderThickness<span class="type-signature type number">number</span>
+### borderThickness `number`
 {:#members:borderthickness}
-
-
-
 
 Specifies the border thickness of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set borderThickness API value during initialization 
-  $("#container").ejTreeMap({borderThickness:1});{% endhighlight %}
+  $("#container").ejTreeMap({borderThickness:1});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the borderThickness API, after initialization:
-        //Gets the borderThickness value 
-  var property =$("#container").data("ejTreeMap").model.borderThickness;
  
-        //Sets the borderThickness value 
-        $("#container").data("ejTreeMap").model.borderThickness = 1; {% endhighlight %}
+   //Gets the borderThickness value 
+ 
+   var property =$("#container").data("ejTreeMap").model.borderThickness;
+ 
+   //Sets the borderThickness value 
+   
+   $("#container").data("ejTreeMap").model.borderThickness = 1; 
+
+{% endhighlight %}
 
 
-
-
-### color<span class="type-signature type string">string</span>
+### color `string`
 {:#members:color}
-
-
-
 
 Specifies the uniform color mapping of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set uniColorMapping API value during initialization 
-  $("#container").ejTreeMap( {uniColorMapping{ color: null }});{% endhighlight %}
+  $("#container").ejTreeMap( {uniColorMapping{ color: null }});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the uniColorMapping API, after initialization:
-        //Gets the uniColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.uniColorMapping.color;
+   
+   //Gets the uniColorMapping value 
+   
+   var property =$("#container").data("ejTreeMap").model.uniColorMapping.color;
  
-        //Sets the uniColorMapping value 
-        $("#container").data("ejTreeMap").model.uniColorMapping = { color: null }; {% endhighlight %}
+   //Sets the uniColorMapping value 
+   
+   $("#container").data("ejTreeMap").model.uniColorMapping = { color: null }; 
+
+{% endhighlight %}
 
 
-
-
-### color<span class="type-signature type string">string</span>
+### color `string`
 {:#members:color}
-
-
-
 
 Specifies the color for desaturationColorMapping
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set color API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the color API, after initialization:
-        //Gets the color value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.color;
+   
+   //Gets the color value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.color;
  
-        //Sets the color for desaturationColorMapping value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; {% endhighlight %}
+   //Sets the color for desaturationColorMapping value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; 
+
+{% endhighlight %}
 
 
-
-
-### color<span class="type-signature type string">string</span>
-{:#members:color}
-
-
-
-
-Specifies the color for desaturationColorMapping
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set color API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the color API, after initialization:
-        //Gets the color value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.color;
- 
-        //Sets the color for desaturationColorMapping value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; {% endhighlight %}
-
-
-
-
-### color<span class="type-signature type string">string</span>
-{:#members:color}
-
-
-
-
-Specifies the uniform color mapping of the treemap
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set uniColorMapping API value during initialization 
-  $("#container").ejTreeMap( {uniColorMapping{ color: null }});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the uniColorMapping API, after initialization:
-        //Gets the uniColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.uniColorMapping.color;
- 
-        //Sets the uniColorMapping value 
-        $("#container").data("ejTreeMap").model.uniColorMapping = { color: null }; {% endhighlight %}
-
-
-
-
-### colors<span class="type-signature type data">data</span>
+### colors `array`
 {:#members:colors}
-
-
-
 
 Specifies the colors of the paletteColorMapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the colors of the paletteColorMapping during initialization 
-  $("#container").ejTreeMap( {paletteColorMapping{colors: ["red","green","blue", "yellow"]}});{% endhighlight %}
+  $("#container").ejTreeMap( {paletteColorMapping{colors: ["red","green","blue", "yellow"]}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the colors of the paletteColorMapping, after initialization:
-        //Gets the colors of the paletteColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.paletteColorMapping;
+   
+   //Gets the colors of the paletteColorMapping value 
+   
+   var property =$("#container").data("ejTreeMap").model.paletteColorMapping;
  
-        //Sets the the colors of the paletteColorMapping
-        $("#container").data("ejTreeMap").model.paletteColorMapping = {colors: ["red","green","blue", "yellow"]}; {% endhighlight %}
+   //Sets the the colors of the paletteColorMapping
+   
+   $("#container").data("ejTreeMap").model.paletteColorMapping = {colors: ["red","green","blue", "yellow"]}; 
+
+{% endhighlight %}
 
 
-
-
-### colors<span class="type-signature type data">data</span>
-{:#members:colors}
-
-
-
-
-Specifies the colors of the paletteColorMapping
-
-
-Default Value:
-{:.param}
-
-
-
-* []
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set the colors of the paletteColorMapping during initialization 
-  $("#container").ejTreeMap( {paletteColorMapping{colors: ["red","green","blue", "yellow"]}});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the colors of the paletteColorMapping, after initialization:
-        //Gets the colors of the paletteColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.paletteColorMapping;
- 
-        //Sets the the colors of the paletteColorMapping
-        $("#container").data("ejTreeMap").model.paletteColorMapping = {colors: ["red","green","blue", "yellow"]}; {% endhighlight %}
-
-
-
-
-### colorValuePath<span class="type-signature type string">string</span>
+### colorValuePath `string`
 {:#members:colorvaluepath}
-
-
-
 
 Specifies the color valuepath of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set colorValuePath API value during initialization 
-  $("#container").ejTreeMap({colorValuePath:'GoldMedals'});{% endhighlight %}
+  $("#container").ejTreeMap({colorValuePath:'GoldMedals'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the colorValuePath API, after initialization:
-        //Gets the colorValuePath value 
-  var property =$("#container").data("ejTreeMap").model.colorValuePath;
+   
+   //Gets the colorValuePath value 
+   
+   var property =$("#container").data("ejTreeMap").model.colorValuePath;
  
-        //Sets the colorValuePath value 
-        $("#container").data("ejTreeMap").model.colorValuePath = 'GoldMedals'; {% endhighlight %}
+   //Sets the colorValuePath value 
+   
+   $("#container").data("ejTreeMap").model.colorValuePath = 'GoldMedals'; 
+
+{% endhighlight %}
 
 
-
-
-### dataSource<span class="type-signature type object">object</span>
+### dataSource `object`
 {:#members:datasource}
-
-
-
 
 Specifies the datasource of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set datasource API value during initialization 
-  $("#container").ejTreeMap({datasource:medal_data});{% endhighlight %}
+  $("#container").ejTreeMap({datasource:medal_data});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the datasource API, after initialization:
-        //Gets the datasource value 
-  var property =$("#container").data("ejTreeMap").model.datasource;
+   
+   //Gets the datasource value 
+   
+   var property =$("#container").data("ejTreeMap").model.datasource;
  
-        //Sets the datasource value 
-        $("#container").data("ejTreeMap").model.datasource = medal_data; {% endhighlight %}
+   //Sets the datasource value 
+   
+   $("#container").data("ejTreeMap").model.datasource = medal_data; 
+
+{% endhighlight %}
 
 
-
-
-### desaturationColorMapping<span class="type-signature type object">object</span>
+### desaturationColorMapping `object`
 {:#members:desaturationcolormapping}
-
-
-
 
 Specifies the desaturationColorMapping settings of the treemap
 
 
-
-
-
-
-### dockPosition<span class="type-signature type enum">enum</span>
+### dockPosition `enum`
 {:#members:dockposition}
-
-
-
 
 Specifies the dockPosition for legend
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">top</td>			
+			<td class="description">specifies the top position</td>
+		</tr>
+		<tr>
+			<td class="name">bottom</td>			
+			<td class="description">specifies the bottom position</td>
+		</tr>
+    <tr>
+			<td class="name">right</td>			
+			<td class="description">specifies the bottom position</td>
+		</tr>
+    <tr>
+			<td class="name">left</td>			
+			<td class="description">specifies the left position</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * top
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set dockPosition API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ dockPosition: "top"}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ dockPosition: "top"}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the dockPosition API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.dockPosition;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.dockPosition;
  
-        //Sets the dockPosition value 
-        $("#container").data("ejTreeMap").model.legendSettings = { dockPosition: "top"}; {% endhighlight %}
+   //Sets the dockPosition value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { dockPosition: "top"}; 
+
+{% endhighlight %}
 
 
-
-
-### drillDownHeaderColor<span class="type-signature type string">string</span>
+### drillDownHeaderColor `string`
 {:#members:drilldownheadercolor}
-
-
-
 
 specifies the drillDown header color
 
-
-Default Value:
-{:.param}
-
-
+####Default Value
 
 * 'null'
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the drillDownHeaderColor during initialization.                  
-        $("#container").ejTreeMap({drillDownHeaderColor:'#0478c3'});{% endhighlight %}
+   $("#container").ejTreeMap({drillDownHeaderColor:'#0478c3'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the drillDownHeaderColor API, after initialization:
-        //Gets the drillDownHeaderColor value 
-  var property =$("#container").data("ejTreeMap").model.drillDownHeaderColor;
+   
+   //Gets the drillDownHeaderColor value 
+   
+   var property =$("#container").data("ejTreeMap").model.drillDownHeaderColor;
  
-        //Sets the drillDownHeaderColor value 
-        $("#container").data("ejTreeMap").model.drillDownHeaderColor = '#0478c3'; {% endhighlight %}
+   //Sets the drillDownHeaderColor value 
+   
+   $("#container").data("ejTreeMap").model.drillDownHeaderColor = '#0478c3'; 
+
+{% endhighlight %}
 
 
-
-
-### drillDownSelectionColor<span class="type-signature type string">string</span>
+### drillDownSelectionColor `string`
 {:#members:drilldownselectioncolor}
-
-
-
 
 specifies the drillDown selection color
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * '#000000'
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the drillDownSelectionColor during initialization.                       
-        $("#container").ejTreeMap({drillDownSelectionColor:'#e5e5e5'});{% endhighlight %}
+   $("#container").ejTreeMap({drillDownSelectionColor:'#e5e5e5'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the drillDownSelectionColor API, after initialization:
-        //Gets the drillDownSelectionColor value 
-  var property =$("#container").data("ejTreeMap").model.drillDownSelectionColor;
+   
+   //Gets the drillDownSelectionColor value 
+   
+   var property =$("#container").data("ejTreeMap").model.drillDownSelectionColor;
  
-        //Sets the drillDownSelectionColor value 
-        $("#container").data("ejTreeMap").model.drillDownSelectionColor = '#000000'; {% endhighlight %}
+   //Sets the drillDownSelectionColor value 
+   
+   $("#container").data("ejTreeMap").model.drillDownSelectionColor = '#000000';
+
+{% endhighlight %}
 
 
-
-
-### enableDrillDown<span class="type-signature type boolean">boolean</span>
+### enableDrillDown `boolean`
 {:#members:enabledrilldown}
-
-
-
 
 Enable/Disable the drillDown for treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
+#### Example
 {:.example}
 
 
 {% highlight html %}
  
 //To set enableDrillDown API value during initialization 
-  $("#container").ejTreeMap({enableDrillDown:true});{% endhighlight %}
+  $("#container").ejTreeMap({enableDrillDown:true});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the enableDrillDown API, after initialization:
-        //Gets the enableDrillDown value 
-  var property =$("#container").data("ejTreeMap").model.enableDrillDown;
+   
+   //Gets the enableDrillDown value 
+   
+   var property =$("#container").data("ejTreeMap").model.enableDrillDown;
  
-        //Sets the enableDrillDown value 
-        $("#container").data("ejTreeMap").model.enableDrillDown = true; {% endhighlight %}
+   //Sets the enableDrillDown value 
+   
+   $("#container").data("ejTreeMap").model.enableDrillDown = true; 
+
+{% endhighlight %}
 
 
-
-
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
-
-
-
 
 Specifies whether treemap need to resize when container is resized
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * true
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set enableResize API value during initialization 
-  $("#container").ejTreeMap({enableResize:false});{% endhighlight %}
+  $("#container").ejTreeMap({enableResize:false});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the enableResize API, after initialization:
-        //Gets the enableResize value 
-  var property =$("#container").data("ejTreeMap").model.enableResize;
+   
+   //Gets the enableResize value 
+   
+   var property =$("#container").data("ejTreeMap").model.enableResize;
  
-        //Sets the enableResize value 
-        $("#container").data("ejTreeMap").model.enableResize = false; {% endhighlight %}
+   //Sets the enableResize value 
+   
+   $("#container").data("ejTreeMap").model.enableResize = false; 
+
+{% endhighlight %}
 
 
-
-
-### from<span class="type-signature type number">number</span>
+### from `number`
 {:#members:from}
-
-
-
 
 Specifies the from value for desaturation color mapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set from API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the from API, after initialization:
-        //Gets the from value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.from;
+   
+   //Gets the from value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.from;
  
-        //Sets the from value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { from:1}; {% endhighlight %}
+   //Sets the from value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { from:1}; 
+
+{% endhighlight %}
 
 
-
-
-### from<span class="type-signature type number">number</span>
-{:#members:from}
-
-
-
-
-Specifies the from value for desaturation color mapping
-
-
-Default Value:
-{:.param}
-
-
-
-* 0
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set from API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the from API, after initialization:
-        //Gets the from value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.from;
- 
-        //Sets the from value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { from:1}; {% endhighlight %}
-
-
-
-
-### groupColorMapping<span class="type-signature type treemapgroupcolormapping">TreeMapGroupColorMapping</span>
+### groupColorMapping `array`
 {:#members:groupcolormapping}
-
-
-
 
 Specifies the group color mapping of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set groupColorMapping API value during initialization 
-  $("#container").ejTreeMap( {groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}]}] });{% endhighlight %}
+  $("#container").ejTreeMap( {groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}]}] });
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupColorMapping API, after initialization:
-        //Gets the groupColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.groupColorMapping;
+   
+   //Gets the groupColorMapping value 
+   
+   var property =$("#container").data("ejTreeMap").model.groupColorMapping;
  
-        //Sets the groupColorMapping value 
-        $("#container").data("ejTreeMap").model.groupColorMapping = [groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}] }]});{% endhighlight %}
+   //Sets the groupColorMapping value 
+   
+   $("#container").data("ejTreeMap").model.groupColorMapping = [groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}] }]});
+   
+{% endhighlight %}
 
 
-
-
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
-
-
-
 
 Specifies the height for legend
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 30
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set height API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ height: 15}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ height: 15}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the height API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.height;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.height;
  
-        //Sets the height value 
-        $("#container").data("ejTreeMap").model.legendSettings = { height: 30}; {% endhighlight %}
+   //Sets the height value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { height: 30};
+
+{% endhighlight %}
 
 
-
-
-### highlightBorderBrush<span class="type-signature type string">string</span>
+### highlightBorderBrush `string`
 {:#members:highlightborderbrush}
-
-
-
 
 Specifies the highlight border brush of treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "gray"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set highlightBorderBrush API value during initialization 
-  $("#container").ejTreeMap({highlightBorderBrush:'gray'});{% endhighlight %}
+  $("#container").ejTreeMap({highlightBorderBrush:'gray'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightBorderBrush API, after initialization:
-        //Gets the highlightBorderBrush value 
-  var property =$("#container").data("ejTreeMap").model.highlightBorderBrush;
+   
+   //Gets the highlightBorderBrush value 
+   
+   var property =$("#container").data("ejTreeMap").model.highlightBorderBrush;
  
-        //Sets the highlightBorderBrush value 
-        $("#container").data("ejTreeMap").model.highlightBorderBrush = 'gray'; {% endhighlight %}
+   //Sets the highlightBorderBrush value 
+   
+   $("#container").data("ejTreeMap").model.highlightBorderBrush = 'gray';
+
+{% endhighlight %}
 
 
-
-
-### highlightBorderThickness<span class="type-signature type number">number</span>
+### highlightBorderThickness `number`
 {:#members:highlightborderthickness}
-
-
-
 
 Specifies the border thickness when treemap items is highlighted in the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 5
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set highlightBorderThickness API value during initialization 
-  $("#container").ejTreeMap({highlightBorderThickness:5});{% endhighlight %}
+  $("#container").ejTreeMap({highlightBorderThickness:5});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightBorderThickness API, after initialization:
-        //Gets the highlightBorderThickness value 
-  var property =$("#container").data("ejTreeMap").model.highlightBorderThickness;
  
-        //Sets the highlightBorderThickness value 
-        $("#container").data("ejTreeMap").model.highlightBorderThickness = 5; {% endhighlight %}
+   //Gets the highlightBorderThickness value 
+ 
+   var property =$("#container").data("ejTreeMap").model.highlightBorderThickness;
+ 
+   //Sets the highlightBorderThickness value 
+   
+   $("#container").data("ejTreeMap").model.highlightBorderThickness = 5; 
+
+{% endhighlight %}
 
 
-
-
-### highlightGroupBorderBrush<span class="type-signature type string">string</span>
+### highlightGroupBorderBrush `string`
 {:#members:highlightgroupborderbrush}
-
-
-
 
 Specifies the highlight border brush of treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "gray"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set highlightGroupBorderBrush API value during initialization 
-  $("#container").ejTreeMap({highlightGroupBorderBrush:'gray'});{% endhighlight %}
+  $("#container").ejTreeMap({highlightGroupBorderBrush:'gray'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightGroupBorderBrush API, after initialization:
-        //Gets the highlightGroupBorderBrush value 
-  var property =$("#container").data("ejTreeMap").model.highlightGroupBorderBrush;
+   
+   //Gets the highlightGroupBorderBrush value 
+   
+   var property =$("#container").data("ejTreeMap").model.highlightGroupBorderBrush;
  
-        //Sets the highlightGroupBorderBrush value 
-        $("#container").data("ejTreeMap").model.highlightGroupBorderBrush = 'gray'; {% endhighlight %}
+   //Sets the highlightGroupBorderBrush value 
+   
+   $("#container").data("ejTreeMap").model.highlightGroupBorderBrush = 'gray'; 
+
+{% endhighlight %}
 
 
-
-
-### highlightGroupBorderThickness<span class="type-signature type number">number</span>
+### highlightGroupBorderThickness `number`
 {:#members:highlightgroupborderthickness}
-
-
-
 
 Specifies the border thickness when treemap items is highlighted in the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 5
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set highlightGroupBorderThickness API value during initialization 
-  $("#container").ejTreeMap({highlightGroupBorderThickness:5});{% endhighlight %}
+  $("#container").ejTreeMap({highlightGroupBorderThickness:5});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightGroupBorderThickness API, after initialization:
-        //Gets the highlightGroupBorderThickness value 
-  var property =$("#container").data("ejTreeMap").model.highlightGroupBorderThickness;
+   
+   //Gets the highlightGroupBorderThickness value 
+   
+   var property =$("#container").data("ejTreeMap").model.highlightGroupBorderThickness;
  
-        //Sets the highlightGroupBorderThickness value 
-        $("#container").data("ejTreeMap").model.highlightGroupBorderThickness = 5; {% endhighlight %}
+   //Sets the highlightGroupBorderThickness value 
+   
+   $("#container").data("ejTreeMap").model.highlightGroupBorderThickness = 5;
+
+{% endhighlight %}
 
 
-
-
-### highlightGroupOnSelection<span class="type-signature type boolean">boolean</span>
+### highlightGroupOnSelection `boolean`
 {:#members:highlightgrouponselection}
-
-
-
 
 Specifies whether treemap item need to highlighted on selection
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
+#### Example
 {:.example}
 
 
 {% highlight html %}
  
 //To set highlightGroupOnSelection API value during initialization 
-  $("#container").ejTreeMap({highlightGroupOnSelection:false});{% endhighlight %}
+  $("#container").ejTreeMap({highlightGroupOnSelection:false});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightGroupOnSelection API, after initialization:
-        //Gets the highlightGroupOnSelection value 
-  var property =$("#container").data("ejTreeMap").model.highlightGroupOnSelection;
+   
+   //Gets the highlightGroupOnSelection value 
+   
+   var property =$("#container").data("ejTreeMap").model.highlightGroupOnSelection;
  
-        //Sets the highlightGroupOnSelection value 
-        $("#container").data("ejTreeMap").model.highlightGroupOnSelection = false; {% endhighlight %}
+   //Sets the highlightGroupOnSelection value 
+   
+   $("#container").data("ejTreeMap").model.highlightGroupOnSelection = false; 
+
+{% endhighlight %}
 
 
-
-
-### highlightOnSelection<span class="type-signature type boolean">boolean</span>
+### highlightOnSelection `boolean`
 {:#members:highlightonselection}
-
-
-
 
 Specifies whether treemap item need to highlighted on selection
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set highlightOnSelection API value during initialization 
-  $("#container").ejTreeMap({highlightOnSelection:false});{% endhighlight %}
+  $("#container").ejTreeMap({highlightOnSelection:false});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the highlightOnSelection API, after initialization:
-        //Gets the highlightOnSelection value 
-  var property =$("#container").data("ejTreeMap").model.highlightOnSelection;
+   
+   //Gets the highlightOnSelection value 
+   
+   var property =$("#container").data("ejTreeMap").model.highlightOnSelection;
  
-        //Sets the highlightOnSelection value 
-        $("#container").data("ejTreeMap").model.highlightOnSelection = false; {% endhighlight %}
+   //Sets the highlightOnSelection value 
+   
+   $("#container").data("ejTreeMap").model.highlightOnSelection = false; 
+
+{% endhighlight %}
 
 
-
-
-### iconHeight<span class="type-signature type number">number</span>
+### iconHeight `number`
 {:#members:iconheight}
-
-
-
 
 Specifies the iconHeight for legend
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 15
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set iconHeight API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ iconHeight: 15}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ iconHeight: 15}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the iconHeight API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.iconHeight;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.iconHeight;
  
-        //Sets the iconHeight value 
-        $("#container").data("ejTreeMap").model.legendSettings = { iconHeight: 15}; {% endhighlight %}
+   //Sets the iconHeight value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { iconHeight: 15};
+
+{% endhighlight %}
 
 
-
-
-### iconWidth<span class="type-signature type number">number</span>
+### iconWidth `number`
 {:#members:iconwidth}
-
-
-
 
 Specifies the iconWidth for legend
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 15
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set iconWidth API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ iconWidth: 15}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ iconWidth: 15}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the iconWidth API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.iconWidth;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.iconWidth;
  
-        //Sets the iconWidth value 
-        $("#container").data("ejTreeMap").model.legendSettings = { iconWidth: 15}; {% endhighlight %}
+   //Sets the iconWidth value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { iconWidth: 15}; 
+
+{% endhighlight %}
 
 
-
-
-### itemsLayoutMode<span class="type-signature type enum">enum</span>
+### itemsLayoutMode `enum`
 {:#members:itemslayoutmode}
-
-
-
 
 Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">squarified</td>			
+			<td class="description">specifies the squarified as layout type position</td>
+		</tr>
+		<tr>
+			<td class="name">sliceanddicehorizontal</td>			
+			<td class="description">specifies the sliceanddicehorizontal as layout type position</td>
+		</tr>
+    <tr>
+			<td class="name">sliceanddicevertical</td>			
+			<td class="description">specifies the sliceanddicevertical as layout type position</td>
+		</tr>
+    <tr>
+			<td class="name">sliceanddiceauto</td>			
+			<td class="description">specifies the sliceanddiceauto as layout type position</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "Squarified"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set itemsLayoutMode API value during initialization 
-  $("#container").ejTreeMap({itemsLayoutMode:ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified});{% endhighlight %}
+  $("#container").ejTreeMap({itemsLayoutMode:ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the itemsLayoutMode API, after initialization:
-        //Gets the itemsLayoutMode value 
-  var property =$("#container").data("ejTreeMap").model.itemsLayoutMode;
+   
+   //Gets the itemsLayoutMode value 
+   
+   var property =$("#container").data("ejTreeMap").model.itemsLayoutMode;
  
-        //Sets the itemsLayoutMode value 
-        $("#container").data("ejTreeMap").model.itemsLayoutMode = ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified; {% endhighlight %}
+   //Sets the itemsLayoutMode value 
+   
+   $("#container").data("ejTreeMap").model.itemsLayoutMode = ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings<span class="type-signature type object">object</span>
+### leafItemSettings `Object`
 {:#members:leafitemsettings}
-
-
-
 
 Specifies the leaf settings of the treemap
 
 
-
-
-
-
-### leafItemSettings.borderBrush<span class="type-signature type string">string</span>
+### leafItemSettings.borderBrush `string`
 {:#members:leafitemsettings-borderbrush}
-
-
-
 
 Specifies the border bruch color of the leaf item.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "white"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set borderBrush API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ borderBrush: "white"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ borderBrush: "white"}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the borderBrush API, after initialization:
-        //Gets the borderBrush value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.borderBrush;
+   
+   //Gets the borderBrush value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.borderBrush;
  
-        //Sets the borderBrush value 
-        $("#container").data("ejTreeMap").model.leafItemSettings = { borderBrush: "white"}; {% endhighlight %}
+   //Sets the borderBrush value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { borderBrush: "white"}; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.borderThickness<span class="type-signature type number">number</span>
+### leafItemSettings.borderThickness `number`
 {:#members:leafitemsettings-borderthickness}
-
-
-
 
 Specifies the border thickness of the leaf item.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set borderThickness API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ borderThickness: 1}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ borderThickness: 1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the borderThickness API, after initialization:
-        //Gets the borderThickness value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.borderThickness;
+   
+   //Gets the borderThickness value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.borderThickness;
  
-        //Sets the borderThickness value 
-        $("#container").data("ejTreeMap").model.leafItemSettings = { borderThickness: 1}; {% endhighlight %}
+   //Sets the borderThickness value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { borderThickness: 1}; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.itemTemplate<span class="type-signature type string">string</span>
+### leafItemSettings.itemTemplate `string`
 {:#members:leafitemsettings-itemtemplate}
-
-
-
 
 Specifies the label template of the leaf item.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set itemTemplate API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ itemTemplate: "temp"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ itemTemplate: "temp"}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the itemTemplate API, after initialization:
-        //Gets the itemTemplate value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.itemTemplate;
+   
+   //Gets the itemTemplate value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.itemTemplate;
  
-        //Sets the itemTemplate value 
-        $("#container").data("ejTreeMap").model.leafItemSettings = { itemTemplate: "temp"}; {% endhighlight %}
+   //Sets the itemTemplate value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { itemTemplate: "temp"}; 
+ 
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.labelPath<span class="type-signature type string">string</span>
+### leafItemSettings.labelPath `string`
 {:#members:leafitemsettings-labelpath}
-
-
-
 
 Specifies the label path of the leaf item.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelPath API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ labelPath: "GameName"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ labelPath: "GameName"}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelPath API, after initialization:
-        //Gets the labelPath value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelPath;
+   
+   //Gets the labelPath value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelPath;
  
-        //Sets the labelPath value 
-        $("#container").data("ejTreeMap").model.leafItemSettings = { labelPath: "GameName"}; {% endhighlight %}
+   //Sets the labelPath value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { labelPath: "GameName"}; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.labelPosition<span class="type-signature type enum">enum</span>
+### leafItemSettings.labelPosition `enum`
 {:#members:leafitemsettings-labelposition}
-
-
-
 
 Specifies the position of the leaf labels.
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">none</td>			
+			<td class="description">specifies the none position</td>
+		</tr>
+		<tr>
+			<td class="name">topleft</td>			
+			<td class="description">specifies the topleft position</td>
+		</tr>
+    <tr>
+			<td class="name">topcenter</td>			
+			<td class="description">specifies the topcenter position</td>
+		</tr>
+    <tr>
+			<td class="name">topright</td>			
+			<td class="description">specifies the topright position</td>
+		</tr>    
+    <tr>
+			<td class="name">centerleft</td>			
+			<td class="description">specifies the centerleft position</td>
+		</tr>
+		<tr>
+			<td class="name">center</td>			
+			<td class="description">specifies the center position</td>
+		</tr>
+    <tr>
+			<td class="name">centerright</td>			
+			<td class="description">specifies the centerright position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomleft</td>			
+			<td class="description">specifies the bottomleft position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomcenter</td>			
+			<td class="description">specifies the bottomcenter position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomright</td>			
+			<td class="description">specifies the bottomright position</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * center
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelPosition API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ labelPosition: "center"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ labelPosition: "center"}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelPosition API, after initialization:
-        //Gets the labelPosition value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelPosition;
+   
+   //Gets the labelPosition value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelPosition;
  
-        //Sets the labelPosition value 
-        $("#container").data("ejTreeMap").model.leafItemSettings.labelPosition= "topleft"; {% endhighlight %}
+   //Sets the labelPosition value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings.labelPosition= "topleft"; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.labelVisibilityMode<span class="type-signature type enum">enum</span>
+### leafItemSettings.labelVisibilityMode `enum`
 {:#members:leafitemsettings-labelvisibilitymode}
-
-
-
 
 Specifies the mode of label visibility
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="visible">top</td>			
+			<td class="description">specifies the visible mode</td>
+		</tr>
+    <tr>
+			<td class="name">hideonexceededlength</td>			
+			<td class="description">specifies the hideonexceededlength mode</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * visible
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelVisibilityMode API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ labelVisibilityMode: "visible"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ labelVisibilityMode: "visible"}});
+  
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelVisibilityMode API, after initialization:
-        //Gets the labelVisibilityMode value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelVisibilityMode;
+   
+   //Gets the labelVisibilityMode value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.labelVisibilityMode;
  
-        //Sets the labelVisibilityMode value 
-        $("#container").data("ejTreeMap").model.leafItemSettings.labelVisibilityMode= "visible"; {% endhighlight %}
+   //Sets the labelVisibilityMode value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings.labelVisibilityMode= "visible"; 
+
+{% endhighlight %}
 
 
-
-
-### leafItemSettings.showLabels<span class="type-signature type boolean">boolean</span>
+### leafItemSettings.showLabels `boolean`
 {:#members:leafitemsettings-showlabels}
-
-
-
 
 Shows or hides the label of the leaf item.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "false"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set showLabels API value during initialization 
-  $("#container").ejTreeMap({leafItemSettings:{ showLabels: "false"}});{% endhighlight %}
+  $("#container").ejTreeMap({leafItemSettings:{ showLabels: "false"}});
+  
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the showLabels API, after initialization:
-        //Gets the showLabels value 
-  var property =$("#container").data("ejTreeMap").model.leafItemSettings.showLabels;
+   
+   //Gets the showLabels value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.showLabels;
  
-        //Sets the showLabels value 
-        $("#container").data("ejTreeMap").model.leafItemSettings = { showLabels: "false"}; {% endhighlight %}
+   //Sets the showLabels value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { showLabels: "false"}; 
+
+{% endhighlight %}
 
 
-
-
-### legendSettings<span class="type-signature type object">object</span>
+### legendSettings `object`
 {:#members:legendsettings}
-
-
-
 
 Specifies the legend settings of the treemap
 
 
-
-
-
-
-### levels<span class="type-signature type treemaplevel">treeMapLevel</span>
+### levels `TreeMapLevel`
 {:#members:levels}
-
-
-
 
 Specify levels of treemap for grouped visualization of datas
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the levels during initialization.                
-  $("#container").ejTreeMap({   levels: [{ groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' }]}){% endhighlight %}
+  $("#container").ejTreeMap({   levels: [{ groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the levels after initialization:
+  
   //Gets the levels from map.
+  
   var levels =$("#container").data("ejTreeMap").model.levels[levelIndex];
+  
   //Sets the levels to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };{% endhighlight %}
+  
+  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };
+
+{% endhighlight %}
 
 
-
-
-### paletteColorMapping<span class="type-signature type object">object</span>
+### paletteColorMapping `object`
 {:#members:palettecolormapping}
-
-
-
 
 Specifies the paletteColorMapping of the treemap
 
 
-
-
-
-
-### rangeColorMapping<span class="type-signature type treemaprangecolormapping">TreeMapRangeColorMapping</span>
+### rangeColorMapping `TreeMapRangeColorMapping`
 {:#members:rangecolormapping}
-
-
-
 
 Specifies the rangeColorMapping settings of the treemap
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set rangeColorMapping API value during initialization 
-  $("#container").ejTreeMap( {rangeColorMapping:[{ color: "#77D8D8",legendLabel:"1% Growth", from: "0", to: "1" }]});{% endhighlight %}
+  $("#container").ejTreeMap( {rangeColorMapping:[{ color: "#77D8D8",legendLabel:"1% Growth", from: "0", to: "1" }]});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the rangeColorMapping API, after initialization:
-        //Gets the rangeColorMapping value 
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping;
+   
+   //Gets the rangeColorMapping value 
+   
+   var property =$("#container").data("ejTreeMap").model.rangeColorMapping;
  
-        //Sets the rangeColorMapping value 
-        $("#container").data("ejTreeMap").model.rangeColorMapping = [{ color: "#77D8D8",legendLabel:"1% Growth", from: "0", to: "1" }]; {% endhighlight %}
+   //Sets the rangeColorMapping value 
+   
+   $("#container").data("ejTreeMap").model.rangeColorMapping = [{ color: "#77D8D8",legendLabel:"1% Growth", from: "0", to: "1" }]; 
+
+{% endhighlight %}
 
 
-
-
-### rangeMaximum<span class="type-signature type number">number</span>
+### rangeMaximum `number`
 {:#members:rangemaximum}
-
-
-
 
 Specifies the rangeMaximum value for desaturation color mapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set rangeMaximum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the rangeMaximum API, after initialization:
-        //Gets the rangeMaximum value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
+   
+   //Gets the rangeMaximum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
  
-        //Sets the rangeMaximum value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; {% endhighlight %}
+   //Sets the rangeMaximum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
+
+{% endhighlight %}
 
 
-
-
-### rangeMaximum<span class="type-signature type number">number</span>
+### rangeMaximum `number`
 {:#members:rangemaximum}
-
-
-
 
 Specifies the rangeMaximum value for desaturation color mapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set rangeMaximum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the rangeMaximum API, after initialization:
-        //Gets the rangeMaximum value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
+   
+   //Gets the rangeMaximum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
  
-        //Sets the rangeMaximum value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; {% endhighlight %}
+   //Sets the rangeMaximum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
+
+{% endhighlight %}
 
 
-
-
-### rangeMinimum<span class="type-signature type number">number</span>
+### rangeMinimum `number`
 {:#members:rangeminimum}
-
-
-
 
 Specifies the rangeMinimum value for desaturation color mapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set rangeMinimum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Get or set the rangeMinimum API, after initialization:
+   
+   //Gets the rangeMinimum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
+ 
+   //Sets the rangeMinimum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
+
+{% endhighlight %}
+
+
+### rangeMinimum `number`
+{:#members:rangeminimum}
+
+Specifies the rangeMinimum value for desaturation color mapping
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+ 
+//To set rangeMinimum API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the rangeMinimum API, after initialization:
-        //Gets the rangeMinimum value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
+   
+   //Gets the rangeMinimum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
  
-        //Sets the rangeMinimum value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; {% endhighlight %}
+   //Sets the rangeMinimum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
+
+{% endhighlight %}
 
 
-
-
-### rangeMinimum<span class="type-signature type number">number</span>
-{:#members:rangeminimum}
-
-
-
-
-Specifies the rangeMinimum value for desaturation color mapping
-
-
-Default Value:
-{:.param}
-
-
-
-* 0
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set rangeMinimum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the rangeMinimum API, after initialization:
-        //Gets the rangeMinimum value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
- 
-        //Sets the rangeMinimum value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; {% endhighlight %}
-
-
-
-
-### shapeLayer.groupSelectionMode<span class="type-signature type enum">enum</span>
+### shapeLayer.groupSelectionMode `enum`
 {:#members:shapelayer-groupselectionmode}
-
-
-
 
 Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">default</td>			
+			<td class="description">specifies the default mode</td>
+		</tr>
+		<tr>
+			<td class="name">multiple</td>			
+			<td class="description">specifies the multiple mode</td>
+		</tr>  
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "default"
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the selection mode during initialization.                        
-        $("#container").ejTreeMap({layers: [{ selectionMode:'default' }]}){% endhighlight %}
+        $("#container").ejTreeMap({layers: [{ selectionMode:'default' }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupSelection mode after initialization:
+  
   //Gets the selection mode from treemap.
+  
   var property =$("#container").data("ejTreeMap").model.layers[layerIndex].groupSelectionMode;
+  
   //Sets the selection mode to treemap.
-  $("#container").data("ejTreeMap").model.layers[layerIndex].groupSelectionMode  = 'default';{% endhighlight %}
+  
+  $("#container").data("ejTreeMap").model.layers[layerIndex].groupSelectionMode  = 'default';
+
+{% endhighlight %}
 
 
-
-
-### showLegend<span class="type-signature type boolean">boolean</span>
+### showLegend `boolean`
 {:#members:showlegend}
-
-
-
 
 Specifies the legend visibility status of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set showLegend API value during initialization 
-  $("#container").ejTreeMap({showLegend:false});{% endhighlight %}
+  $("#container").ejTreeMap({showLegend:false});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the showLegend API, after initialization:
-        //Gets the showLegend value 
-  var property =$("#container").data("ejTreeMap").model.showLegend;
+   
+   //Gets the showLegend value 
+   
+   var property =$("#container").data("ejTreeMap").model.showLegend;
  
-        //Sets the showLegend value 
-        $("#container").data("ejTreeMap").model.showLegend = false; {% endhighlight %}
+   //Sets the showLegend value 
+   
+   $("#container").data("ejTreeMap").model.showLegend = false; 
+
+{% endhighlight %}
 
 
-
-
-### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip `boolean`
 {:#members:showtooltip}
-
-
-
 
 Specifies whether treemap tooltip need to be visible
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set showTooltip API value during initialization 
-  $("#container").ejTreeMap({showTooltip:false});{% endhighlight %}
+  $("#container").ejTreeMap({showTooltip:false});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the showTooltip API, after initialization:
-        //Gets the showTooltip value 
-  var property =$("#container").data("ejTreeMap").model.showTooltip;
+   
+   //Gets the showTooltip value 
+   
+   var property =$("#container").data("ejTreeMap").model.showTooltip;
  
-        //Sets the showTooltip value 
-        $("#container").data("ejTreeMap").model.showTooltip = false; {% endhighlight %}
+   //Sets the showTooltip value 
+   
+   $("#container").data("ejTreeMap").model.showTooltip = false; 
+
+{% endhighlight %}
 
 
-
-
-### template<span class="type-signature type string">string</span>
+### template `string`
 {:#members:template}
-
-
-
 
 Specifies the template for legendSettings
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set template API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ template: null}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ template: null}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the template API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.template;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.template;
  
-        //Sets the template value 
-        $("#container").data("ejTreeMap").model.legendSettings = { template: null}; {% endhighlight %}
+   //Sets the template value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { template: null}; 
 
+{% endhighlight %}
 
-
-
-### to<span class="type-signature type number">number</span>
+### to `number`
 {:#members:to}
-
-
-
 
 Specifies the to value for desaturation color mapping
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set to API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});{% endhighlight %}
+  $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the to API, after initialization:
-        //Gets the to value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.to;
+   
+   //Gets the to value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.to;
  
-        //Sets the to value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { to:1}; {% endhighlight %}
+   //Sets the to value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { to:1}; 
+
+{% endhighlight %}
 
 
-
-
-### to<span class="type-signature type number">number</span>
-{:#members:to}
-
-
-
-
-Specifies the to value for desaturation color mapping
-
-
-Default Value:
-{:.param}
-
-
-
-* 0
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//To set to API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the to API, after initialization:
-        //Gets the to value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.to;
- 
-        //Sets the to value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { to:1}; {% endhighlight %}
-
-
-
-
-### tooltipTemplate<span class="type-signature type string">string</span>
+### tooltipTemplate `string`
 {:#members:tooltiptemplate}
-
-
-
 
 Specifies the tooltip template of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set tooltipTemplate API value during initialization 
-  $("#container").ejTreeMap({tooltipTemplate:'template'});{% endhighlight %}
+  $("#container").ejTreeMap({tooltipTemplate:'template'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the tooltipTemplate API, after initialization:
-        //Gets the tooltipTemplate value 
-  var property =$("#container").data("ejTreeMap").model.tooltipTemplate;
+   
+   //Gets the tooltipTemplate value 
+   
+   var property =$("#container").data("ejTreeMap").model.tooltipTemplate;
  
-        //Sets the tooltipTemplate value 
-        $("#container").data("ejTreeMap").model.tooltipTemplate = 'template'; {% endhighlight %}
+   //Sets the tooltipTemplate value 
+   
+   $("#container").data("ejTreeMap").model.tooltipTemplate = 'template'; 
+
+{% endhighlight %}
 
 
-
-
-### TreeMapGroupColorMapping.groupID<span class="type-signature type string">string</span>
+### TreeMapGroupColorMapping.groupID `string`
 {:#members:treemapgroupcolormapping-groupid}
-
-
-
 
 Specifies the groupID for GroupColorMapping.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupID for GroupColorMapping during initialization.                         
-        $("#container").ejTreeMap({groupColorMapping: [{ groupID:"Asia" }]}){% endhighlight %}
+        $("#container").ejTreeMap({groupColorMapping: [{ groupID:"Asia" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupID for GroupColorMapping after initialization:
+
   //Gets the groupID for GroupColorMapping from map.
+
   var property =$("#container").data("ejTreeMap").model.groupColorMapping.groupID;
+
   //Sets the groupID for GroupColorMapping to map.
-  $("#container").data("ejTreeMap").model.groupColorMapping.groupID  = "Asia";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.groupColorMapping.groupID  = "Asia";
+  
+{% endhighlight %}
 
 
-
-
-### treeMapItems<span class="type-signature type treemapitem">TreeMapItem</span>
+### treeMapItems `array`
 {:#members:treemapitems}
-
-
-
 
 Hold the treeMapItems to be displayed in treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * []
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the treeMapItems during initialization. 
-  $("#container").ejTreeMap({treeMapItems:[]});                             {% endhighlight %}
+  $("#container").ejTreeMap({treeMapItems:[]});                             
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the treeMapItems after initialization:
+
   //Gets the treeMapItems from treemap.
+
   var property =$("#container").data("ejTreeMap").model.treeMapItems;
              
   //Sets the treeMapItems to treemap.
-        $("#container").data("ejTreeMap").model.treeMapItems = []; {% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.treeMapItems = []; 
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel
+### treeMapLevel `object`
 {:#members:treemaplevel}
-
-
-
 
 Hold the Level settings of TreeMap
 
 
-
-
-
-
-### treeMapLevel.groupBackground<span class="type-signature type string">string</span>
+### treeMapLevel.groupBackground `string`
 {:#members:treemaplevel-groupbackground}
-
-
-
 
 specifies the group background
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupBackground during initialization.                       
-        $("#container").ejTreeMap({levels: [{ groupBackground:"white" }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupBackground:"white" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupBackground after initialization:
+
   //Gets the groupBackground from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupBackground;
+
   //Sets the groupBackground to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBackground  = "white";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBackground  = "white";
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.groupBorderColor<span class="type-signature type string">string</span>
+### treeMapLevel.groupBorderColor `string`
 {:#members:treemaplevel-groupbordercolor}
-
-
-
 
 Specifies the group border color for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupBorderColor during initialization.                      
-        $("#container").ejTreeMap({levels: [{ groupBorderColor:"#58585B" }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupBorderColor:"#58585B" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupBorderColor after initialization:
+
   //Gets the groupBorderColor from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderColor;
+
   //Sets the groupBorderColor to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderColor  = "#58585B";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderColor  = "#58585B";
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.groupBorderThickness<span class="type-signature type number">number</span>
+### treeMapLevel.groupBorderThickness `number`
 {:#members:treemaplevel-groupborderthickness}
-
-
-
 
 Specifies the group border thickness for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupBorderThickness during initialization.                  
-        $("#container").ejTreeMap({levels: [{ groupBorderThickness:1 }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupBorderThickness:1 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupBorderThickness after initialization:
+
   //Gets the groupBorderThickness from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderThickness;
+
   //Sets the groupBorderThickness to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderThickness  = 1;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupBorderThickness  = 1;
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.groupGap<span class="type-signature type number">number</span>
+### treeMapLevel.groupGap `number`
 {:#members:treemaplevel-groupgap}
-
-
-
 
 Specifies the group gap for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupGap during initialization.                      
-        $("#container").ejTreeMap({levels: [{ groupGap:1 }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupGap:1 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupGap after initialization:
+  
   //Gets the groupGap from map.
+  
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupGap;
+  
   //Sets the groupGap to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupGap  = 1;{% endhighlight %}
+  
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupGap  = 1;
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.groupPadding<span class="type-signature type number">number</span>
+### treeMapLevel.groupPadding `number`
 {:#members:treemaplevel-grouppadding}
-
-
-
 
 Specifies the group padding for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 4
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupPadding during initialization.                  
-        $("#container").ejTreeMap({levels: [{ groupPadding:4 }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupPadding:4 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the groupPadding after initialization:
+
   //Gets the groupPadding from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupPadding;
+
   //Sets the groupPadding to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupPadding  = 4;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupPadding  = 4;
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.groupPath<span class="type-signature type string">string</span>
+### treeMapLevel.groupPath `string`
 {:#members:treemaplevel-grouppath}
-
-
-
 
 Specifies the group path for tree map level.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the groupPath during initialization.                     
-        $("#container").ejTreeMap({levels: [{ groupPath:"pathName" }]}){% endhighlight %}
-
+   $("#container").ejTreeMap({levels: [{ groupPath:"pathName" }]}){% endhighlight %}
 
 {% highlight html %}
  
 //Get or set the groupPath after initialization:
+
   //Gets the groupPath from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].groupPath;
+
   //Sets the groupPath to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].groupPath  = "pathName";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].groupPath  = "pathName";
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.headerHeight<span class="type-signature type number">number</span>
+### treeMapLevel.headerHeight `number`
 {:#members:treemaplevel-headerheight}
-
-
-
 
 Specifies the header height for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the headerHeight during initialization.                  
-        $("#container").ejTreeMap({levels: [{ headerHeight:20 }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ headerHeight:20 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the headerHeight after initialization:
+
   //Gets the headerHeight from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].headerHeight;
+
   //Sets the headerHeight to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].headerHeight  = 1;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].headerHeight  = 1;
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.headerTemplate<span class="type-signature type string">string</span>
+### treeMapLevel.headerTemplate `string`
 {:#members:treemaplevel-headertemplate}
-
-
-
 
 Specifies the header template for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the headerTemplate during initialization.                        
-        $("#container").ejTreeMap({levels: [{ headerTemplate:"template" }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ headerTemplate:"template" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the headerTemplate after initialization:
+
   //Gets the headerTemplate from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].headerTemplate;
+
   //Sets the headerTemplate to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].headerTemplate  = "template";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].headerTemplate  = "template";
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.headerVisibilityMode<span class="type-signature type enum">enum</span>
+### treeMapLevel.headerVisibilityMode `enum`
 {:#members:treemaplevel-headervisibilitymode}
-
-
-
 
 Specifies the mode of header visibility
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="visible">top</td>			
+			<td class="description">specifies the visible mode</td>
+		</tr>
+    <tr>
+			<td class="name">hideonexceededlength</td>			
+			<td class="description">specifies the hideonexceededlength mode</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * visible
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelVisibilityMode API value during initialization 
-  $("#container").ejTreeMap({levels:[{ headerVisibilityMode: "visible"}]});{% endhighlight %}
+  $("#container").ejTreeMap({levels:[{ headerVisibilityMode: "visible"}]});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the headerVisibilityMode API, after initialization:
-        //Gets the headerVisibilityMode value 
-  var property =$("#container").data("ejTreeMap").model.levels[0].headerVisibilityMode;
+   
+   //Gets the headerVisibilityMode value 
+   
+   var property =$("#container").data("ejTreeMap").model.levels[0].headerVisibilityMode;
  
-        //Sets the headerVisibilityMode value 
-        $("#container").data("ejTreeMap").model.levels[0].headerVisibilityMode= "visible"; {% endhighlight %}
+   //Sets the headerVisibilityMode value 
+   
+   $("#container").data("ejTreeMap").model.levels[0].headerVisibilityMode= "visible"; 
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.labelPosition<span class="type-signature type enum">enum</span>
+### treeMapLevel.labelPosition `enum`
 {:#members:treemaplevel-labelposition}
-
-
-
 
 Specifies the position of the labels.
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">none</td>			
+			<td class="description">specifies the none position</td>
+		</tr>
+		<tr>
+			<td class="name">topleft</td>			
+			<td class="description">specifies the topleft position</td>
+		</tr>
+    <tr>
+			<td class="name">topcenter</td>			
+			<td class="description">specifies the topcenter position</td>
+		</tr>
+    <tr>
+			<td class="name">topright</td>			
+			<td class="description">specifies the topright position</td>
+		</tr>    
+    <tr>
+			<td class="name">centerleft</td>			
+			<td class="description">specifies the centerleft position</td>
+		</tr>
+		<tr>
+			<td class="name">center</td>			
+			<td class="description">specifies the center position</td>
+		</tr>
+    <tr>
+			<td class="name">centerright</td>			
+			<td class="description">specifies the centerright position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomleft</td>			
+			<td class="description">specifies the bottomleft position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomcenter</td>			
+			<td class="description">specifies the bottomcenter position</td>
+		</tr>
+    <tr>
+			<td class="name">bottomright</td>			
+			<td class="description">specifies the bottomright position</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * center
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelPosition API value during initialization 
-  $("#container").ejTreeMap({levels:[{ labelPosition: "center"]}});{% endhighlight %}
+  $("#container").ejTreeMap({levels:[{ labelPosition: "center"]}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelPosition API, after initialization:
-        //Gets the labelPosition value 
-  var property =$("#container").data("ejTreeMap").model.levels[0].labelPosition;
+   
+   //Gets the labelPosition value 
+   
+   var property =$("#container").data("ejTreeMap").model.levels[0].labelPosition;
  
-        //Sets the labelPosition value 
-        $("#container").data("ejTreeMap").model.levels[0].labelPosition= "topleft"; {% endhighlight %}
+   //Sets the labelPosition value 
+   
+   $("#container").data("ejTreeMap").model.levels[0].labelPosition= "topleft"; 
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.labelTemplate<span class="type-signature type string">string</span>
+### treeMapLevel.labelTemplate `string`
 {:#members:treemaplevel-labeltemplate}
-
-
-
 
 Specifies the label template for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the labelTemplate during initialization.                         
-        $("#container").ejTreeMap({levels: [{ labelTemplate:"template" }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ labelTemplate:"template" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelTemplate after initialization:
+
   //Gets the labelTemplate from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].labelTemplate;
+
   //Sets the labelTemplate to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].labelTemplate  = "template";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].labelTemplate  = "template";
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.labelVisibilityMode<span class="type-signature type enum">enum</span>
+### treeMapLevel.labelVisibilityMode `enum`
 {:#members:treemaplevel-labelvisibilitymode}
-
-
-
 
 Specifies the mode of label visibility
 
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="visible">top</td>			
+			<td class="description">specifies the visible mode</td>
+		</tr>
+    <tr>
+			<td class="name">hideonexceededlength</td>			
+			<td class="description">specifies the hideonexceededlength mode</td>
+		</tr>
+	</tbody>
+</table>
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * visible
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set labelVisibilityMode API value during initialization 
-  $("#container").ejTreeMap({levels:[{ labelVisibilityMode: "visible"}]});{% endhighlight %}
+  $("#container").ejTreeMap({levels:[{ labelVisibilityMode: "visible"}]});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the labelVisibilityMode API, after initialization:
-        //Gets the labelVisibilityMode value 
-  var property =$("#container").data("ejTreeMap").model.levels[0].labelVisibilityMode;
+   
+   //Gets the labelVisibilityMode value 
+   
+   var property =$("#container").data("ejTreeMap").model.levels[0].labelVisibilityMode;
  
-        //Sets the labelVisibilityMode value 
-        $("#container").data("ejTreeMap").model.levels[0].labelVisibilityMode= "visible"; {% endhighlight %}
+   //Sets the labelVisibilityMode value 
+   
+   $("#container").data("ejTreeMap").model.levels[0].labelVisibilityMode= "visible"; 
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.showHeader<span class="type-signature type bool">bool</span>
+### treeMapLevel.showHeader `boolean`
 {:#members:treemaplevel-showheader}
-
-
-
 
 Shows or hides the header for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the shoeHeader during initialization.                    
-        $("#container").ejTreeMap({levels: [{ showHeader:false }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ showHeader:false }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the showHeader after initialization:
+
   //Gets the showHeader from treemap.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].showHeader;
+
   //Sets the headerHeight to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].showHeader  = true;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].showHeader  = true;
+
+{% endhighlight %}
 
 
-
-
-### treeMapLevel.showLabels<span class="type-signature type boolean">boolean</span>
+### treeMapLevel.showLabels `boolean`
 {:#members:treemaplevel-showlabels}
-
-
-
 
 Shows or hides the labels for tree map level.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the showLabels during initialization.                    
-        $("#container").ejTreeMap({levels: [{ showLabels:false }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ showLabels:false }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the showLabels after initialization:
+
   //Gets the showLabels from map.
+
   var property =$("#container").data("ejTreeMap").model.levels[levelIndex].showLabels;
+
   //Sets the showLabels to map.
-  $("#container").data("ejTreeMap").model.levels[levelIndex].showLabels  = false;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.levels[levelIndex].showLabels  = false;
+
+{% endhighlight %}
 
 
-
-
-### treeMapRangeColorMapping.color<span class="type-signature type string">string</span>
+### treeMapRangeColorMapping.color `string`
 {:#members:treemaprangecolormapping-color}
-
-
-
 
 Specifies the color value for rangeColorMapping.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the color value for rangeColorMapping during initialization.                     
-        $("#container").ejTreeMap({rangeColorMapping: [{ color: "#77D8D8" }]}){% endhighlight %}
+   $("#container").ejTreeMap({rangeColorMapping: [{ color: "#77D8D8" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the color value for rangeColorMapping after initialization:
+  
   //Gets the color value for rangeColorMapping from map.
+  
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.color;
+  
   //Sets the color value for rangeColorMapping to map.
-  $("#container").data("ejTreeMap").model.rangeColorMapping.color  = "#77D8D8";{% endhighlight %}
+  
+  $("#container").data("ejTreeMap").model.rangeColorMapping.color  = "#77D8D8";
+
+{% endhighlight %}
 
 
-
-
-### treeMapRangeColorMapping.from<span class="type-signature type number">number</span>
+### treeMapRangeColorMapping.from `number`
 {:#members:treemaprangecolormapping-from}
-
-
-
 
 Specifies the from value for rangeColorMapping.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * -1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the from value for rangeColorMapping during initialization.                      
-        $("#container").ejTreeMap({rangeColorMapping: [{ from:-1 }]}){% endhighlight %}
+   $("#container").ejTreeMap({rangeColorMapping: [{ from:-1 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the from value for rangeColorMapping after initialization:
+
   //Gets the from value for rangeColorMapping from map.
+
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.from;
+
   //Sets the from value for rangeColorMapping to map.
-  $("#container").data("ejTreeMap").model.rangeColorMapping.from  = -1;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.from  = -1;
+
+{% endhighlight %}
 
 
-
-
-### treeMapRangeColorMapping.legendlabel<span class="type-signature type string">string</span>
+### treeMapRangeColorMapping.legendlabel `string`
 {:#members:treemaprangecolormapping-legendlabel}
-
-
-
 
 Specifies the legendlabel value for rangeColorMapping.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the legendlabel value for rangeColorMapping during initialization.                       
-        $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]}){% endhighlight %}
+   $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the legendlabel value for rangeColorMapping after initialization:
+
   //Gets the legendlabel value for rangeColorMapping from map.
+
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
+
   //Sets the legendlabel value for rangeColorMapping to map.
-  $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
+
+{% endhighlight %}
 
 
-
-
-### treeMapRangeColorMapping.to<span class="type-signature type number">number</span>
+### treeMapRangeColorMapping.to `number`
 {:#members:treemaprangecolormapping-to}
-
-
-
 
 Specifies the to value for rangeColorMapping.
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * -1
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
 // Set the to value for rangeColorMapping during initialization.                        
-        $("#container").ejTreeMap({rangeColorMapping: [{ to:-1 }]}){% endhighlight %}
+   $("#container").ejTreeMap({rangeColorMapping: [{ to:-1 }]})
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the to value for rangeColorMapping after initialization:
+
   //Gets the to value for rangeColorMapping from map.
+
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.to;
+
   //Sets the to value for rangeColorMapping to map.
-  $("#container").data("ejTreeMap").model.rangeColorMapping.to  = -1;{% endhighlight %}
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.to  = -1;
+
+{% endhighlight %}
 
 
-
-
-### uniColorMapping<span class="type-signature type object">object</span>
+### uniColorMapping `object`
 {:#members:unicolormapping}
-
-
-
 
 Specifies the uniColorMapping settings of the treemap
 
-
-
-
-
-
-### weightValuePath<span class="type-signature type string">string</span>
+### weightValuePath `string`
 {:#members:weightvaluepath}
-
-
-
 
 Specifies the weight valuepath of the treemap
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set weightValuePath API value during initialization 
-  $("#container").ejTreeMap({weightValuePath:'TotalMedals'});{% endhighlight %}
+  $("#container").ejTreeMap({weightValuePath:'TotalMedals'});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the weightValuePath API, after initialization:
-        //Gets the weightValuePath value 
-  var property =$("#container").data("ejTreeMap").model.weightValuePath;
+   
+   //Gets the weightValuePath value 
+   
+   var property =$("#container").data("ejTreeMap").model.weightValuePath;
  
-        //Sets the weightValuePath value 
-        $("#container").data("ejTreeMap").model.weightValuePath = 'TotalMedals'; {% endhighlight %}
+   //Sets the weightValuePath value 
+   
+   $("#container").data("ejTreeMap").model.weightValuePath = 'TotalMedals'; 
+
+{% endhighlight %}
 
 
-
-
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
-
-
-
 
 Specifies the width for legend
 
-
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 100
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set width API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ width: 100}});{% endhighlight %}
+  $("#container").ejTreeMap( {legendSettings:{ width: 100}});
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 //Get or set the width API, after initialization:
-        //Gets the template value 
-  var property =$("#container").data("ejTreeMap").model.legendSettings.width;
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.width;
  
-        //Sets the width value 
-        $("#container").data("ejTreeMap").model.legendSettings = { width: 100}; {% endhighlight %}
+   //Sets the width value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { width: 100}; 
+
+{% endhighlight %}
 
 
 
 ## Methods
 
-
-
-
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
-
-
-
 
 Method to reload treemap with updated values.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //refresh method for treemap
-$("#container").ejTreeMap("refresh");{% endhighlight %}
+   $("#container").ejTreeMap("refresh");
+   
+{% endhighlight %}
 
 
 
 ## Events
 
-
-
-
 ### treeMapItemSelected
 {:#events:treemapitemselected}
-
-
-
 
 Triggers on treemap item selected.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-originalEvent.data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns selected treeMapItem object.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns selected treeMapItem object.</td>
+        </tr>
+    </tbody>
 </table>
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //treemap item selected event for treemap
-$("#container").ejTreeMap({
+  $("#container").ejTreeMap({
    treeMapItemSelected: function () {}
-});{% endhighlight %}
+  });
+
+{% endhighlight %}
 
 
 
