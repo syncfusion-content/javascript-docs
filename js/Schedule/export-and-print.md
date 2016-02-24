@@ -299,7 +299,9 @@ $(function() {
 
 ## Import Appointments
 
-To Import appointments to the Scheduler, the following code as example.
+To Import appointments into the Scheduler, server-side method `renderingImportAppointments` can be used to render the appointments which can be retrived from specified file path location.
+
+To Import appointments into the Scheduler, refer the following code as example.
 
 {% highlight html %}
 
@@ -340,7 +342,7 @@ function ScheduleImport() {
 
 {% endhighlight %}
 
-The server-side action **Import ICS File** contains the following code example to export the Scheduler appointments.
+The server-side action **Import ICS File** contains the following code example to import the Scheduler appointments.
 
 {% highlight c# %}
 
