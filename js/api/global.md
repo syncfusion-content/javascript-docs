@@ -2661,7 +2661,7 @@ Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
 
 
 ### Command Type
-{:#enum:type}
+{:#enum:commandtype}
  
 Specifies whether the Grid's types of command is edit,delete,cancel or save.
  
@@ -5413,6 +5413,80 @@ Specifies the position of form is top-right or bottom-left.
 </tr>
 </tbody>
 </table>
+
+
+
+### FilterOperator
+{:#enum:filteroperator}
+ 
+Specifies the filter operators.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startsWith</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as startswith.</td>
+</tr>
+<tr>
+<td class="name">endsWith</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as endswith.</td>
+</tr>
+<td class="name">contains</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as contains.</td>
+</tr>
+<tr>
+<td class="name">equal</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as equal.</td>
+</tr>
+<tr>
+<td class="name">notEqual</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as notequal.</td>
+</tr>
+<tr>
+<td class="name">greaterThan</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as greaterthan.</td>
+</tr>
+<tr>
+<td class="name">greaterThanOrEqual</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as greaterthanorequal.</td>
+</tr>
+<tr>
+<td class="name">lessThan</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as lessthan.</td>
+</tr>
+<tr>
+<td class="name">lessThanOrEqual</td>
+<td class="type">string</td>
+<td class="default"></td>
+<td class="description">Specifies the filter operator as Lessthanorequal.</td>
+</tr>
+</tbody>
+</table>
+
 
 
 ### gaugePosition
@@ -10513,6 +10587,11 @@ Bottom</td>
 
 
 
+
+
+
+
+ 
 
 
 ### PageOrientations
