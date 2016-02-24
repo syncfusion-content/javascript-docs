@@ -805,7 +805,8 @@ Gets or sets a value that indicates to bind the external datasource to the parti
 <script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
-  columns:[{field:"OrderID"},{field:"CustomerID",visible:false},{field:"ShipCity"}]
+  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+  columns:[{field:"OrderID"},{field:"CustomerID",visible:false},{ field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: window.employeeView, headerText: "First Name" }]
 });
 </script>
 {% endhighlight %}
@@ -850,7 +851,28 @@ Gets or sets a value that indicates to render the grid content and header with a
 <script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
-    columns:[{field:"OrderID",headerText:"<div&amp;gtOrder ID</div>",disableHtmlEncode:true}
+    columns:[{field:"OrderID",headerText:"<div&amp;gtOrder ID</div>",disableHtmlEncode:true}]
+  });
+</script>
+{% endhighlight %}
+
+### columns.displayAsCheckBox `Boolean`
+{:#members:columns-displayascheckbox}
+
+Gets or sets a value that indicates to display a column value as checkbox or string
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    columns:[{field:"OrderID"}, {field:"Verified", displayAsCheckBox: false}]
   });
 </script>
 {% endhighlight %}
@@ -4216,6 +4238,33 @@ $("#Grid").ejGrid({
 
 ## Methods
 
+### addIgnoreOnExport()
+{:#methods:addignoreonexport}
+
+Adds a grid model property which is to be ignored upon exporting.
+
+
+####Example
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a request to ignore the filterSettings property upon exporting
+gridObj.addIgnoreOnExport("filterSettings"); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a request to ignore the filterSettings property upon exporting
+$("#Grid").ejGrid("addIgnoreOnExport","filterSettings");       
+</script>
+{% endhighlight %}
+
 ### addRecord()
 {:#methods:addrecord}
 
@@ -4231,14 +4280,15 @@ Add a new record in grid control when allowAdding is set as true.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an add new record request to the grid
 gridObj.addRecord(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
  
 <script>
 // add new record to the grid
-$("#Editing").ejGrid("addRecord",{OrderID:12333})       
+$("#Grid").ejGrid("addRecord",{OrderID:12333})       
 </script>
 {% endhighlight %}
 
@@ -4488,6 +4538,33 @@ $("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based o
 $("#Grid").ejGrid("clearFiltering"); // clears all the filtering
 </script>{% endhighlight %}
 
+### clearSearching()
+{:#methods:clearsearching}
+
+
+Clear the searching from the grid
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Clears the searching from the grid
+gridObj.clearSearching(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Clears the searching from the grid
+$("#Grid").ejGrid("clearSearching");        
+</script>{% endhighlight %}
 
 ### clearSelection(\[index\])
 {:#methods:clearselection}
@@ -4981,7 +5058,64 @@ gridObj.expandGroupDropArea();
 $("#Grid").ejGrid("expandGroupDropArea");        
 </script>{% endhighlight %}
 
+### export(action, \[serverEvent\], \[multipleExport\], \[gridIds\])
+{:#methods:export}
 
+Export the grid content to excel, word or pdf document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the controller action name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">serverEvent</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"><span class="optional">optional</span>ASP server event name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">multipleExport</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the mutiple exporting value as true/false</td>
+</tr>
+<tr>
+<td class="name">gridIds</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the array of the gridIds to be filtered</td>
+</tr>
+</tbody>
+</table>
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends an exporting request
+gridObj.export("/api/GridExport/ExcelExport"); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends an exporting request
+$("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
+</script>{% endhighlight %}
 
 ### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\])
 {:#methods:filtercolumn}
@@ -5021,7 +5155,7 @@ Send a filtering request to filter one column in grid.
 <tr>
 <td class="name">matchcase</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span> Pass the match case valueas true/false</td>
+<td class="description last"><span class="optional">optional</span> Pass the match case value as true/false</td>
 </tr>
 </tbody>
 </table>
@@ -6721,6 +6855,32 @@ Set dimension for grid with corresponding to grid parent.
  //Set grid dimension based on providing height and width
  &lt;/script&gt;</code>
 </pre>
+
+### setWidthToColumns()
+{:#methods:setwidthtocolumns}
+
+Send a request to grid to refresh the width set to columns
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a request to the grid to refresh columns width
+gridObj.setWidthToColumns(); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Sends a request to the grid to refresh columns width
+$("#Grid").ejGrid("setWidthToColumns");        
+</script>{% endhighlight %}
 
 ### search(searchString)
 {:#methods:search}
@@ -11022,7 +11182,7 @@ $("#Grid").ejGrid({
 ### dataBound
 {:#events:databound}
 
-Triggered the grid is bound with data during initial rendering.
+Triggered when the grid is bound with data during initial rendering.
 
 <table class="params">
 <thead>
