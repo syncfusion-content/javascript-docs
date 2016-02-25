@@ -72,7 +72,7 @@ $('#button1').ejButton();
 
 
 
-Specifies the contentType of the Button. See <a href="global.html#ContentType">ContentType</a>
+Specifies the contentType to be displayed over the Button. See <a href="global.html#ContentType">ContentType</a>
 
 
 #### Default Value
@@ -107,7 +107,7 @@ Specifies the contentType of the Button. See <a href="global.html#ContentType">C
 
 
 
-Specify the cssClass to button to achieve custom theme.
+Sets the root CSS class for Button theme, which is used customize. 
 
 
 #### Default Value
@@ -249,7 +249,7 @@ Specifies the height of the Button.
 
 
 
-Specifies the HTML Attributes of the ejButton
+It allows to define the characteristics of the Button control. It will helps to extend the capability of an HTML element.
 
 
 #### Default Value
@@ -324,7 +324,9 @@ Specifies the image position of the Button. This image position is applicable on
 
 
 
-Specifies the primary icon for Button. This is applicable for the content type&rsquo;s imageOnly, textandimage, imagetextimage and imageboth.
+Specifies the primary icon for Button. This icon will be displayed from the left margin of the button.
+
+N>  This is applicable for the content type’s imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -398,7 +400,7 @@ Convert the button as repeat button. It raises the 'Click' event repeattedly fro
 
 
 
-Specify the rounded corner to button
+Displays the Button with rounded corncers.
 
 
 #### Default Value
@@ -467,8 +469,9 @@ Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSiz
 
 
 
+Specifies the secondary icon for Button. This icon will be displayed from the right margin of the button. 
 
-Specifies the secondary icon for Button. This is applicable for the content type&rsquo;s imagetextimage and imageboth.
+N>   This is applicable for the content type’s imagetextimage and imageboth.
 
 
 #### Default Value
@@ -541,9 +544,9 @@ Specifies the text content for Button.
 {:#members:timeinterval}
 
 
+Specified the time interval between two consecutive 'click' event on the button.
 
-
-Specified the timeInterval between two 'click' events while button in repeat button mode.
+ N>   This is applicable for while the button in repeat button mode.
 
 
 #### Default Value
@@ -777,6 +780,7 @@ $("#button1").ejButton("enable");
 
 Fires when Button control is clicked successfully.Consider the scenario to perform any validation,modification of content or any other operations click on button,we can make use of this click event to achieve the scenario.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -788,48 +792,37 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+argument.status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the button state</td>
 </tr>
-</tbody>
-</table>
-</td>
+<tr>
+<td class="name">{% highlight html %}
+argument.e{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">return the event model for sever side processing. </td>
 </tr>
 </tbody>
 </table>
+
 
 
 #### Example
@@ -860,6 +853,7 @@ $("#button1").ejButton({
 
 Fires after Button control is created.If the user want to perform any operation after the button control creation then the user can make use of this create event.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -871,42 +865,25 @@ Fires after Button control is created.If the user want to perform any operation 
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -937,6 +914,7 @@ $("#button1").ejButton({
 
 Fires when the button is destroyed successfully.If the user want to perform any operation after the destroy button control then the user can make use of this destroy event.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -948,42 +926,25 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1004,3 +965,15 @@ $("#button1").ejButton({
 </script>{% endhighlight %}
 
 
+
+
+
+<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
+
+
+
+<script type="text/javascript">
+prettyPrint();
+</script><script src="scripts/linenumber.js" type="text/javascript">
+</script><script src="scripts/main.js" type="text/javascript">
+</script>
