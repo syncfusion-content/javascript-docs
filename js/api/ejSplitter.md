@@ -11,7 +11,7 @@ keywords: Splitter, ejSplitter, syncfusion, Splitter api
 
 
 
-The Splitter is a layout control that enables you to divide a Web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter control. The split bars are inserted automatically in between the adjacent panes.
+The Splitter is a layout control that enables you to divide a web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter control. The split bars are inserted automatically in between the adjacent panes.
 
 
 

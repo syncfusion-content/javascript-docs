@@ -49,6 +49,7 @@ $('#dropable').ejDroppable();
 * module:ej.core
 
 
+* module:ej.droppable
 
 ## Members
 
@@ -58,7 +59,7 @@ $('#dropable').ejDroppable();
 
 
 
-Used to accept the droppable items.
+Used to accept the specified draggable items.
 
 
 
@@ -149,7 +150,7 @@ destroy in the Droppable.
 
 {% highlight html %}
  
-< div  id="droppable" > </div > 
+<div  id="droppable"> </div > 
  
 <script>
 // Create droppabaleObj
@@ -198,6 +199,12 @@ argument.model{% endhighlight %}</td>
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the element which accepts the droppable element.</td>
 </tr>
 </tbody>
 </table>
@@ -255,6 +262,13 @@ argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the mouse out over the element</td>
+</tr>
+<tr>
 </tbody>
 </table>
 
@@ -312,6 +326,12 @@ argument.model{% endhighlight %}</td>
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the mouse over the element</td>
 </tr>
 </tbody>
 </table>
