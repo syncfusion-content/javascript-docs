@@ -413,6 +413,165 @@ Example
 
 Specifies the background apperance for the captcha.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Set background as None to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">BackwardDiagonal</td>
+            <td class="description">Set background as BackwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Cross</td>
+            <td class="description">Set background as Cross to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DarkDownwardDiagonal</td>
+            <td class="description">Set background as DarkDownwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DarkHorizontal</td>
+            <td class="description">Set background as DarkHorizontal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DarkUpwardDiagonal</td>
+            <td class="description">Set background as DarkUpwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DarkVertical</td>
+            <td class="description">Set background as DarkVertical to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DashedDownwardDiagonal</td>
+            <td class="description">Set background as DashedDownwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DashedHorizontal</td>
+            <td class="description">Set background as DashedHorizontal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DashedUpwardDiagonal</td>
+            <td class="description">Set background as DashedUpwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DashedVertical</td>
+            <td class="description">Set background as DashedVertical to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DiagonalBrick</td>
+            <td class="description">Set background as DiagonalBrick to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DiagonalCross</td>
+            <td class="description">Set background as DiagonalCross to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Divot</td>
+            <td class="description">Set background as Divot to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DottedDiamond</td>
+            <td class="description">Set background as DottedDiamond to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">DottedGrid</td>
+            <td class="description">Set background as DottedGrid to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">ForwardDiagonal</td>
+            <td class="description">Set background as ForwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Horizontal</td>
+            <td class="description">Set background as Horizontal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">HorizontalBrick</td>
+            <td class="description">Set background as HorizontalBrick to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LargeCheckerBoard</td>
+            <td class="description">Set background as LargeCheckerBoard to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LargeConfetti</td>
+            <td class="description">Set background as LargeConfetti to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LargeGrid</td>
+            <td class="description">Set background as LargeGrid to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LightDownwardDiagonal</td>
+            <td class="description">Set background as LightDownwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LightHorizontal</td>
+            <td class="description">Set background as LightHorizontal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LightUpwardDiagonal</td>
+            <td class="description">Set background as LightUpwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">LightVertical</td>
+            <td class="description">Set background as LightVertical to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Max</td>
+            <td class="description">Set background as Max to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Min</td>
+            <td class="description">Set background as Min to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">NarrowHorizontal</td>
+            <td class="description">Set background as NarrowHorizontal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">NarrowVertical</td>
+            <td class="description">Set background as NarrowVertical to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">OutlinedDiamond</td>
+            <td class="description">Set background as OutlinedDiamond to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Percent90</td>
+            <td class="description">Set background as Percent90 to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Wave</td>
+            <td class="description">Set background as Wave to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">Weave</td>
+            <td class="description">Set background as Weave to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">WideDownwardDiagonal</td>
+            <td class="description">Set background as WideDownwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">WideUpwardDiagonal</td>
+            <td class="description">Set background as WideUpwardDiagonal to Captcha</td>
+        </tr>
+        <tr>
+            <td class="name">ZigZag</td>
+            <td class="description">Set background as ZigZag to Captcha</td>
+        </tr>
+    </tbody>
+</table>
+
 
 
 
@@ -912,7 +1071,7 @@ Example
 
 
 
-### width<span class="type-signature type number">number</span>
+### width  `number`
 {:#members:width}
 
 
