@@ -1355,7 +1355,7 @@ Sets the mode to export the OLAP visualization components such as OlapChart and 
     <tbody>
         <tr>
             <td class="name">ChartAndGrid</td>
-            <td class="description">To export only PivotGrid contents.</td>
+            <td class="description">To export both PivotGrid and OlapChart contents.</td>
         </tr>
         <tr>
             <td class="name">ChartOnly</td>
@@ -1363,7 +1363,7 @@ Sets the mode to export the OLAP visualization components such as OlapChart and 
         </tr>
         <tr>
             <td class="name">GridOnly</td>
-            <td class="description">To export both PivotGrid and OlapChart contents.</td>
+            <td class="description">To export only PivotGrid contents.</td>
         </tr>
     </tbody>
 </table>
