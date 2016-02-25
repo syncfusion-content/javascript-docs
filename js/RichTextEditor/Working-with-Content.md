@@ -196,50 +196,54 @@ enablePersistence: true
 
 ## Change the Font
 
-By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font. To change it, select a different font from the drop-down in the editor’s toolbar. To apply different font for particular section of the content, select the text that you would like to change, and select a required font from the drop-down to apply the changes to the selected text.
+By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font name and 3(12pt) font size. To change it, select a different font name and font size from the drop-down in the editor’s toolbar. To apply different font style for particular section of the content, select the text that you would like to change, and select a required font style from the drop-down to apply the changes to the selected text.
 
-### Set Default Font
+### Set Default Font and Font Size
 
-* Set a default font to the font drop-down programmatically.
+* Set a default font name and font size to the font name and size drop-down programmatically.
 
 {% highlight html %}
 
- <textarea id ="texteditor"></textarea>
-
-<script type ="text/javascript">
-      $(function () {
-        $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            tools: {
-                font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
-            }
-        });
-
-        var editor = $("#texteditor").ejRTE("instance");
-        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-        ddl.selectItemByIndex(7);
+<textarea id="texteditor"></textarea>
+ 
+<script>
+    $("#texteditor").ejRTE({
+        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+        tools: {
+            font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
+        },
+         minWidth:"100px",
+        isResponsive:true
     });
+
+    var editor = $("#texteditor").ejRTE("instance");
+    var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+    ddl.selectItemByIndex(7);
+    var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
+    ddlSize.selectItemByIndex(5);
 </script>
+
 {% endhighlight %}
 
 * You can set default font for &lt; iframe &gt;’s body tag using [iframeAttributes](user-interface#iframe-attributes) property.
 
 {% highlight html %}
 
-   <textarea id="texteditor"></textarea>
+<textarea id="texteditor"></textarea>
+  
+<script type="text/javascript">
 
-   <script type="text/javascript">
+    $(function () {
 
-        $(function () {
-
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                iframeAttributes:{ style:"font-family:Arial;"}
-            });
-
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            iframeAttributes: { style: "font-family:Arial;font-size:14px" }
         });
-    </script>
+
+    });
+</script>
+
 {% endhighlight %}
 
 * If you want to override the default font from CSS, create a style tag with CSS styles and append it to the &lt; iframe &gt;’s head tag of the editor.
@@ -273,34 +277,38 @@ By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” f
 </script>
 {% endhighlight %}
 
-### Adding Fonts
+### Adding Font Names and Font Size
 
-If you want to add additional fonts to font drop-down, pass the font information as JSON data and bind it with instance of drop-down. 
+If you want to add additional font names and font sizes to font drop-down, pass the font information as JSON data and bind it with instance of drop-down. 
 
 {% highlight html %}
 
 <textarea id="texteditor"></textarea>
 
 <script type="text/javascript">
-        $(function () {
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                tools: {
-                    font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
-                }
-            });
-
-            var editor = $("#texteditor").ejRTE("instance");
-            editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
-            var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-            ddl.option({ "dataSource": editor.defaults.fontName });
-            ddl.selectItemByValue("CalibriLight");
+        
+    $(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            tools: {
+                font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
+            }
         });
 
+        var editor = $("#texteditor").ejRTE("instance");
+        editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
+        editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
+		var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+		var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
+        ddl.option({ "dataSource": editor.defaults.fontName });
+		ddlSize.option({ "dataSource": editor.defaults.fontSize });
+        ddl.selectItemByValue("CalibriLight");
+		ddlSize.selectItemByValue("8");
+    });
+
 </script>
+
 {% endhighlight %}
-
-
 
 ## Insert the content at cursor
 
@@ -329,6 +337,34 @@ You can validate the RichTextEditor’s value on form submission by applying [va
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
+### jQuery Validation Methods
+
+The following are jquery validation methods.
+
+_List of jquery validation methods_
+
+<table>
+<tr>
+<th>
+Rules</th><th>
+Description</th></tr>
+<tr>
+<td>
+required</td><td>
+ Requires value for the RichTextEditor control.</td></tr>
+<tr>
+<td>
+minWordCount</td><td>
+ Requires the value to be of given minimum words count.</td></tr>
+<tr>
+<td>
+minlength</td><td>
+ Requires the value to be of given minimum characters count.</td></tr>
+<tr>
+<td>
+maxlength</td><td>
+ Requires the value to be of given maximum characters count.</td></tr>
+</table>
 
 ### Validation Rules
 
