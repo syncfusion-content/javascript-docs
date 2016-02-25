@@ -1213,7 +1213,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point `Point`
+### connectors.segments.point `object`
 {:#members:connectors-segments-point}
 
 Describes the end point of bezier/straight segment
@@ -1236,7 +1236,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point1 `Point`
+### connectors.segments.point1 `object`
 {:#members:connectors-segments-point1}
 
 Defines the first control point of the bezier segment
@@ -1258,7 +1258,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point2 `Point`
+### connectors.segments.point2 `object`
 {:#members:connectors-segments-point2}
 
 Defines the second control point of bezier segment
@@ -1638,7 +1638,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.sourcePoint `Point`
+### connectors.sourcePoint `object`
 {:#members:connectors-sourcepoint}
 
 Describes the start point of the connector
@@ -1927,7 +1927,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.targetPoint `Point`
+### connectors.targetPoint `object`
 {:#members:connectors-targetpoint}
 
 Describes the end point of the connector
@@ -2224,7 +2224,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### contextMenu
+### contextMenu `object`
 {:#members:contextmenu}
 
 An object to customize the context menu of diagram
@@ -2273,7 +2273,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
-### dataSourceSettings
+### dataSourceSettings `object`
 {:#members:datasourcesettings}
 
 Configures the data source that is to be bound with diagram
@@ -2822,7 +2822,7 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
-### layout
+### layout `object`
 {:#members:layout}
 
 Automatically arranges the nodes and connectors in a predefined manner
@@ -3757,7 +3757,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.gradient
+### nodes.gradient `object`
 {:#members:nodes-gradient}
 
 Paints the node with a smooth transition from one color to another color
@@ -4644,7 +4644,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.offset `Point`
+### nodes.labels.offset `object`
 {:#members:nodes-labels-offset}
 
 Sets the fraction/ratio(relative to node) that defines the position of the label
@@ -6134,7 +6134,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.pivot `Point`
+### nodes.pivot `object`
 {:#members:nodes-pivot}
 
 Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation) 
@@ -6365,7 +6365,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.offset `Point`
+### nodes.ports.offset `object`
 {:#members:nodes-ports-offset}
 
 Defines the position of the port as fraction/ ratio relative to node
