@@ -50,7 +50,7 @@ $("#diagram").ejDiagram();
 
 Defines the background color of diagram elements
 
-#### Default Value
+#### Default Value:
 
 * "transparent"
 
@@ -70,7 +70,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 
 Defines the path of the background image of diagram elements
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -88,9 +88,36 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 ### bridgeDirection `enum`
 {:#members:bridgedirection}
 
-Sets the direction of line bridges. See [Bridge Direction](/js/api/global#bridgedirection)
+Sets the direction of line bridges.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to set the direction of line bridges as left</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to set the direction of line bridges as right</td>
+       </tr>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to set the direction of line bridges as top</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to set the direction of line bridges as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BridgeDirection.Top
 
@@ -113,9 +140,9 @@ Defines a set of custom commands and binds them with a set of desired key gestur
 ### commandManager.commands `Object`
 {:#members:commandmanager-commands}
 
-An object that maps a set of command names with the corresponding command objects
+An object that maps a set of command names with the corresponding command objects 
 
-#### Default Value
+#### Default Value:
 
 * {}
 
@@ -156,7 +183,7 @@ $("#diagramcontent").ejDiagram( {
 ### commandManager.commands.canExecute `function`
 {:#members:commandmanager-commands-canexecute}
 
-A method that defines whether the command is executable at the moment or not.
+A method that defines whether the command is executable at the moment or not. 
 
 #### Example
 
@@ -224,9 +251,202 @@ Defines a combination of keys and key modifiers, on recognition of which the com
 ### commandManager.commands.gesture.key `enum`
 {:#members:commandmanager-commands-gesture-key}
 
+<ts name = "ej.datavisualization.Diagram.Keys"/>
+
 Sets the key value, on recognition of which the command will be executed.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">No key pressed.</td>
+        </tr>
+        <tr>
+            <td class="name">A</td>
+            <td class="description last">The A key.</td>
+        </tr>
+        <tr>
+            <td class="name">B</td>
+            <td class="description last">The B key.</td>
+        </tr>
+        <tr>
+            <td class="name">C</td>
+            <td class="description last">The C key.</td>
+        </tr>
+        <tr>
+            <td class="name">D</td>
+            <td class="description last">The D Key.</td>
+        </tr>
+        <tr>
+            <td class="name">E</td>
+            <td class="description last">The E key.</td>
+        </tr>
+        <tr>
+            <td class="name">F</td>
+            <td class="description last">The F key.</td>
+        </tr>
+        <tr>
+            <td class="name">G</td>
+            <td class="description last">The G key.</td>
+        </tr>
+        <tr>
+            <td class="name">H</td>
+            <td class="description last">The H Key.</td>
+        </tr>
+        <tr>
+            <td class="name">I</td>
+            <td class="description last">The I key.</td>
+        </tr>
+        <tr>
+            <td class="name">J</td>
+            <td class="description last">The J key.</td>
+        </tr>
+        <tr>
+            <td class="name">K</td>
+            <td class="description last">The K key.</td>
+        </tr>
+        <tr>
+            <td class="name">L</td>
+            <td class="description last">The L Key.</td>
+        </tr>
+        <tr>
+            <td class="name">M</td>
+            <td class="description last">The M key.</td>
+        </tr>
+        <tr>
+            <td class="name">N</td>
+            <td class="description last">The N key.</td>
+        </tr>
+        <tr>
+            <td class="name">O</td>
+            <td class="description last">The O key.</td>
+        </tr>
+        <tr>
+            <td class="name">P</td>
+            <td class="description last">The P Key.</td>
+        </tr>
+        <tr>
+            <td class="name">Q</td>
+            <td class="description last">The Q key.</td>
+        </tr>
+        <tr>
+            <td class="name">R</td>
+            <td class="description last">The R key.</td>
+        </tr>
+        <tr>
+            <td class="name">S</td>
+            <td class="description last">The S key.</td>
+        </tr>
+        <tr>
+            <td class="name">T</td>
+            <td class="description last">The T Key.</td>
+        </tr>
+        <tr>
+            <td class="name">U</td>
+            <td class="description last">The U key.</td>
+        </tr>
+        <tr>
+            <td class="name">V</td>
+            <td class="description last">The V key.</td>
+        </tr>
+        <tr>
+            <td class="name">W</td>
+            <td class="description last">The W key.</td>
+        </tr>
+        <tr>
+            <td class="name">X</td>
+            <td class="description last">The X key.</td>
+        </tr>
+        <tr>
+            <td class="name">Y</td>
+            <td class="description last">The Y key.</td>
+        </tr>
+        <tr>
+            <td class="name">Z</td>
+            <td class="description last">The Z key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number0</td>
+            <td class="description last">The 0 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number1</td>
+            <td class="description last">The 1 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number2</td>
+            <td class="description last">The 2 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number3</td>
+            <td class="description last">The 3 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number4</td>
+            <td class="description last">The 4 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number5</td>
+            <td class="description last">The 5 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number6</td>
+            <td class="description last">The 6 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number7</td>
+            <td class="description last">The 7 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number8</td>
+            <td class="description last">The 8 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number9</td>
+            <td class="description last">The 9 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">The LEFT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Up</td>
+            <td class="description last">The UP ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">The RIGHT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Down</td>
+            <td class="description last">The DOWN ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Escape</td>
+            <td class="description last">The ESC key.</td>
+        </tr>
+        <tr>
+            <td class="name">Delete</td>
+            <td class="description last">The DEL key.</td>
+        </tr>
+        <tr>
+            <td class="name">Tab</td>
+            <td class="description last">The TAB key.</td>
+        </tr>
+        <tr>
+            <td class="name">Enter</td>
+            <td class="description last">The ENTER key.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.Keys.None
 
@@ -256,9 +476,38 @@ $("#diagramcontent").ejDiagram( {
 ### commandManager.commands.gesture.keyModifiers `enum`
 {:#members:commandmanager-commands-gesture-keymodifiers}
 
+<ts name = "ej.datavisualization.Diagram.KeyModifiers"/>
+	
 Sets a combination of key modifiers, on recognition of which the command will be executed.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">No modifiers are pressed.</td>
+       </tr>
+        <tr>
+            <td class="name">Alt</td>
+            <td class="description last">The ALT key.</td>
+       </tr>
+        <tr>
+            <td class="name">Control</td>
+            <td class="description last">The CTRL key.</td>
+       </tr>
+        <tr>
+            <td class="name">Shift</td>
+            <td class="description last">The SHIFT key.</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.KeyModifiers.None
 
@@ -290,7 +539,7 @@ $("#diagramcontent").ejDiagram( {
 
 Defines any additional parameters that are required at runtime
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -329,7 +578,7 @@ $("#diagramcontent").ejDiagram( {
 
 A collection of JSON objects where each object represents a connector
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -350,7 +599,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 To maintain additional information about connectors
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -372,7 +621,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 Defines the width of the line bridges
 
-#### Default Value
+#### Default Value:
 
 * 10
 
@@ -400,9 +649,66 @@ $("#diagramcontent").ejDiagram(
 ### connectors.constraints `enum`
 {:#members:connectors-constraints}
 
-Enables or disables the behaviors of connectors. See [Connector Constraints](/js/api/global#connectorconstraints)
+<ts name = "ej.datavisualization.Diagram.ConnectorConstraints"/>
 
-#### Default Value
+Enables or disables the behaviors of connectors.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disable all connector Constraints</td>
+       </tr>
+        <tr>
+            <td class="name">Select</td>
+            <td class="description last">Enables connector to be selected</td>
+       </tr>
+        <tr>
+            <td class="name">Delete</td>
+            <td class="description last">Enables connector to be Deleted</td>
+       </tr>
+        <tr>
+            <td class="name">Drag</td>
+            <td class="description last">Enables connector to be Dragged</td>
+       </tr>
+        <tr>
+            <td class="name">DragSourceEnd</td>
+            <td class="description last">Enables connectors source end to be selected</td>
+       </tr>
+        <tr>
+            <td class="name">DragTargetEnd</td>
+            <td class="description last">Enables connectors target end to be selected</td>
+       </tr>
+        <tr>
+            <td class="name">DragSegmentThumb</td>
+            <td class="description last">Enables control point and end point of every segment in a connector for editing</td>
+       </tr>
+        <tr>
+            <td class="name">Bridging</td>
+            <td class="description last">Enables bridging to the connector</td>
+       </tr>
+        <tr>
+            <td class="name">DragLabel</td>
+            <td class="description last">Enables label of node to be Dragged</td>
+       </tr>
+        <tr>
+            <td class="name">InheritBridging</td>
+            <td class="description last">Enables bridging to the connector</td>
+       </tr>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Enables all constraints</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.ConnectorConstraints.Default
 
@@ -426,7 +732,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 Defines the radius of the rounded corner
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -449,7 +755,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 Configures the styles of shapes
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -476,9 +782,34 @@ $("#diagramcontent").ejDiagram({ connectors:[ connector ] });
 ### connectors.horizontalAlign `enum`
 {:#members:connectors-horizontalalign}
 
-Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
-#### Default Value
+Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align text horizontally on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text horizontally on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align text horizontally on right side of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.HorizontalAlignment.Left
 
@@ -506,7 +837,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 A collection of JSON objects where each object represents a label. For label properties, refer [Labels](#members:nodes-labels)
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -529,7 +860,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the stroke color of the connector
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -551,7 +882,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the pattern of dashes and gaps used to stroke the path of the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -573,7 +904,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the padding value to ease the interaction with connectors
 
-#### Default Value
+#### Default Value:
 
 * 10
 
@@ -595,7 +926,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the width of the line
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -617,7 +948,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the minimum space to be left between the bottom of parent bounds and the connector. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -644,7 +975,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum space to be left between the left of parent bounds and the connector. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -669,7 +1000,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum space to be left between the right of parent bounds and the connector. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -694,7 +1025,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum space to be left between the top of parent bounds and the connector. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -719,7 +1050,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Sets a unique name for the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -740,7 +1071,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the transparency of the connector
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -762,7 +1093,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer [Palette Item](#nodes-paletteitem)
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -798,7 +1129,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Sets the parent name of the connector.
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -820,7 +1151,7 @@ $("#diagramcontent").ejDiagram({ nodes:[group], connectors : [connector]});
 
 An array of JSON objects where each object represents a segment
 
-#### Default Value
+#### Default Value:
 
 * [ { type:"straight" } ]
 
@@ -843,7 +1174,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the direction of orthogonal segment
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -865,7 +1196,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Describes the length of orthogonal segment
 
-#### Default Value
+#### Default Value:
 
 * undefined
 
@@ -882,12 +1213,12 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point `Point`
+### connectors.segments.point `object`
 {:#members:connectors-segments-point}
 
 Describes the end point of bezier/straight segment
 
-#### Default Value
+#### Default Value:
 
 * Diagram.Point()
 
@@ -905,12 +1236,12 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point1 `Point`
+### connectors.segments.point1 `object`
 {:#members:connectors-segments-point1}
 
 Defines the first control point of the bezier segment
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -927,12 +1258,12 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.point2 `Point`
+### connectors.segments.point2 `object`
 {:#members:connectors-segments-point2}
 
 Defines the second control point of bezier segment
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -952,9 +1283,34 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.type `enum`
 {:#members:connectors-segments-type}
 
-Sets the type of the segment. See <a href="global.html#segments">Segments</a>
+<ts name = "ej.datavisualization.Diagram.Segments"/>
 
-#### Default Value
+Sets the type of the segment.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Straight</td>
+            <td class="description last">Used to specify the lines as Straight</td>
+       </tr>
+        <tr>
+            <td class="name">Orthogonal</td>
+            <td class="description last">Used to specify the lines as Orthogonal</td>
+       </tr>
+        <tr>
+            <td class="name">Bezier</td>
+            <td class="description last">Used to specify the lines as Bezier</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.Segments.Straight
 
@@ -976,7 +1332,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Describes the length and angle between the first control point and the start point of bezier segment
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1000,7 +1356,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Describes the length and angle between the second control point and end point of bezier segment
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1024,7 +1380,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the source decorator of the connector
 
-#### Default Value
+#### Default Value:
 
 * { shape:"arrow", width: 8, height:8, borderColor:"black", fillColor:"black" }
 
@@ -1046,7 +1402,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the border color of the source decorator
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -1068,7 +1424,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the border width of the decorator
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -1090,7 +1446,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the fill color of the source decorator
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -1112,7 +1468,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the height of the source decorator
 
-#### Default Value
+#### Default Value:
 
 * 8
 
@@ -1134,7 +1490,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the custom shape of the source decorator
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1154,9 +1510,46 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
-Defines the shape of the source decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
+<ts name = "ej.datavisualization.Diagram.DecoratorShapes"/>
 
-#### Default Value
+Defines the shape of the source decorator.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set decorator shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set decorator shape as Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">OpenArrow</td>
+            <td class="description last">Used to set decorator shape as Open Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description last">Used to set decorator shape as Circle</td>
+       </tr>
+        <tr>
+            <td class="name">Diamond</td>
+            <td class="description last">Used to set decorator shape as Diamond</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set decorator shape as path</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.DecoratorShapes.Arrow
 
@@ -1178,7 +1571,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the width of the source decorator
 
-#### Default Value
+#### Default Value:
 
 * 8
 
@@ -1200,7 +1593,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the source node of the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1225,7 +1618,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 Defines the space to be left between the source node and the source point of a connector
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -1245,12 +1638,12 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.sourcePoint `Point`
+### connectors.sourcePoint `object`
 {:#members:connectors-sourcepoint}
 
 Describes the start point of the connector
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Point()
 
@@ -1273,7 +1666,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the source port of the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1300,7 +1693,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 Defines the target decorator of the connector
 
-#### Default Value
+#### Default Value:
 
 * { shape:"arrow", width: 8, height:8, borderColor:"black", fillColor:"black" }
 
@@ -1322,7 +1715,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the border color of the decorator
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -1344,7 +1737,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the color with which the decorator will be filled
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -1366,7 +1759,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the height of the target decorator
 
-#### Default Value
+#### Default Value:
 
 * 8
 
@@ -1388,7 +1781,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the custom shape of the target decorator
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1408,9 +1801,46 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.targetDecorator.shape `enum`
 {:#members:connectors-targetdecorator-shape}
 
-Defines the shape of the target decorator. See [Decorator Shapes](/js/api/global#decoratorshapes)
+<ts name = "ej.datavisualization.Diagram.DecoratorShapes"/>
 
-#### Default Value
+Defines the shape of the target decorator.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set decorator shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set decorator shape as Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">OpenArrow</td>
+            <td class="description last">Used to set decorator shape as Open Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description last">Used to set decorator shape as Circle</td>
+       </tr>
+        <tr>
+            <td class="name">Diamond</td>
+            <td class="description last">Used to set decorator shape as Diamond</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set decorator shape as path</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.DecoratorShapes.Arrow
 
@@ -1432,7 +1862,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Defines the width of the target decorator
 
-#### Default Value
+#### Default Value:
 
 * 8
 
@@ -1454,7 +1884,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the target node of the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1477,7 +1907,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 Defines the space to be left between the target node and the target point of the connector
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -1497,12 +1927,12 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.targetPoint `Point`
+### connectors.targetPoint `object`
 {:#members:connectors-targetpoint}
 
 Describes the end point of the connector
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Point()
 
@@ -1525,7 +1955,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the targetPort of the connector
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1552,7 +1982,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer [Tooltip](#members:tooltip)
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1564,7 +1994,7 @@ Defines the tooltip that should be shown when the mouse hovers over connector. F
 
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-       <span style="padding: 5px;"> {{:name}} </span>
+        <span style="padding: 5px;"> {{:name}} </span>
    </div>
 </script>
 
@@ -1593,9 +2023,34 @@ $("#diagramcontent").ejDiagram({
 ### connectors.verticalAlign `enum`
 {:#members:connectors-verticalalign}
 
-To set the vertical alignment of connector (Applicable,if the parent is group).See [Vertical Alignment](/js/api/global#verticalalignment)
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-#### Default Value
+To set the vertical alignment of connector (Applicable,if the parent is group).
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to align text Vertically on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text Vertically on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to align text Vertically on bottom of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.VerticalAlignment.Top
 
@@ -1623,7 +2078,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Enables or disables the visibility of connector
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -1645,7 +2100,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Sets the z-index of the connector
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -1667,7 +2122,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 Binds the custom JSON data with connector properties
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1700,9 +2155,58 @@ Binds the custom JSON data with connector properties
 ### constraints `enum`
 {:#members:constraints}
 
-Enables/Disables the default behaviors of the diagram. See [Diagram Constraints](/js/api/global#diagramconstraints)
+<ts name = "ej.datavisualization.Diagram.DiagramConstraints"/>
 
-#### Default Value
+Enables/Disables the default behaviors of the diagram.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disables all DiagramConstraints</td>
+       </tr>
+        <tr>
+            <td class="name">PageEditable</td>
+            <td class="description last">Enables/Disables PageEditing</td>
+       </tr>
+        <tr>
+            <td class="name">Bridging</td>
+            <td class="description last">Enables/Disables Bridging</td>
+       </tr>
+        <tr>
+            <td class="name">Zoomable</td>
+            <td class="description last">Enables/Disables Zooming</td>
+       </tr>
+        <tr>
+            <td class="name">PannableX</td>
+            <td class="description last">Enables/Disables panning on horizontal axis</td>
+       </tr>
+        <tr>
+            <td class="name">PannableY</td>
+            <td class="description last">Enables/Disables panning on vertical axis</td>
+       </tr>
+        <tr>
+            <td class="name">Pannable</td>
+            <td class="description last">Enables/Disables Panning</td>
+       </tr>
+        <tr>
+            <td class="name">Undoable</td>
+            <td class="description last">Enables/Disables undo actions</td>
+       </tr>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Enables all Constraints</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.DiagramConstraints.All
 
@@ -1720,7 +2224,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### contextMenu
+### contextMenu `object`
 {:#members:contextmenu}
 
 An object to customize the context menu of diagram
@@ -1730,7 +2234,7 @@ An object to customize the context menu of diagram
 
 Defines the collection of context menu items
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -1753,7 +2257,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 To set whether to display the default context menu items or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -1769,7 +2273,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
-### dataSourceSettings
+### dataSourceSettings `object`
 {:#members:datasourcesettings}
 
 Configures the data source that is to be bound with diagram
@@ -1779,7 +2283,7 @@ Configures the data source that is to be bound with diagram
 
 Defines the data source either as a collection of objects or as an instance of ej.DataManager
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1807,7 +2311,7 @@ var data = [
 
 Sets the unique id of the data source items
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1833,7 +2337,7 @@ Sets the unique id of the data source items
 
 Defines the parent id of the data source item
 
-#### Default Value
+#### Default Value:
 
 * ''
 
@@ -1859,7 +2363,7 @@ Defines the parent id of the data source item
 
 Describes query to retrieve a set of data from the specified datasource
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1884,7 +2388,7 @@ Describes query to retrieve a set of data from the specified datasource
 
 Sets the unique id of the root data source item
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -1910,7 +2414,7 @@ Sets the unique id of the root data source item
 
 Describes the name of the table on which the specified query has to be executed
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1937,7 +2441,7 @@ Describes the name of the table on which the specified query has to be executed
 
 Initializes the default values for nodes and connectors
 
-#### Default Value
+#### Default Value:
 
 * {}
 
@@ -1959,7 +2463,7 @@ $("#diagramcontent").ejDiagram({
 
 Initializes the default connector properties
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -1982,7 +2486,7 @@ $("#diagramcontent").ejDiagram({
 
 Initializes the default properties of groups
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2006,7 +2510,7 @@ $("#diagramcontent").ejDiagram({
 
 Initializes the default properties for nodes
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2029,7 +2533,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the type of Json object to be drawn through drawing tool
 
-#### Default Value
+#### Default Value:
 
 * {}
 
@@ -2049,7 +2553,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 
 Enables or disables auto scroll in diagram
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -2069,7 +2573,7 @@ $("#diagramcontent").ejDiagram({ enableAutoScroll: false });
 
 Enables or disables diagram context menu
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -2170,7 +2674,7 @@ diagram.model.historyManager.closeGroupAction();
 ### historyManager.pop `function`
 {:#members:historymanager-pop}
 
-A method that removes the history of a recent change made in diagram
+A method that removes the history of a recent change made in diagram 
 
 #### Example
 
@@ -2183,7 +2687,6 @@ var diagram = $("#diagramcontent").ejDiagram("instance");
 //Pop the last change
 diagram.model.historyManager.pop();	
 </script>
-
 {% endhighlight %}
 
 ### historyManager.push `function`
@@ -2217,7 +2720,7 @@ node.empInfo = newValue;
 
 Defines what should be happened while trying to restore a custom change
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2319,7 +2822,7 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
-### layout
+### layout `object`
 {:#members:layout}
 
 Automatically arranges the nodes and connectors in a predefined manner
@@ -2329,7 +2832,7 @@ Automatically arranges the nodes and connectors in a predefined manner
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -2347,7 +2850,7 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 
 Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2363,12 +2866,12 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout.horizontalSpacing `Number`
+### layout.horizontalspacing `Number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
 
-#### Default Value
+#### Default Value:
 
 * 30
 
@@ -2389,7 +2892,7 @@ $("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
 
 Sets the margin value to be horizontally left between the layout and diagram
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -2410,7 +2913,7 @@ $("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
 
 Sets the margin value to be vertically left between layout and diagram
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -2429,9 +2932,38 @@ $("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
 ### layout.orientation `enum`
 {:#members:layout-orientation}
 
-Sets the orientation/direction to arrange the diagram elements. See [Layout Orientations](/js/api/global#layoutorientations)
+<ts name = "ej.datavisualization.Diagram.LayoutOrientations"/>
 
-#### Default Value
+Sets the orientation/direction to arrange the diagram elements.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">TopToBottom</td>
+            <td class="description last">Used to set LayoutOrientation from top to bottom</td>
+       </tr>
+        <tr>
+            <td class="name">BottomToTop</td>
+            <td class="description last">Used to set LayoutOrientation from bottom to top</td>
+       </tr>
+        <tr>
+            <td class="name">LeftToRight</td>
+            <td class="description last">Used to set LayoutOrientation from left to right</td>
+       </tr>
+        <tr>
+            <td class="name">RightToLeft</td>
+            <td class="description last">Used to set LayoutOrientation from right to left</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.LayoutOrientations.TopToBottom
 
@@ -2450,9 +2982,34 @@ $("#diagramcontent").ejDiagram({layout: { orientation: ej.datavisualization.Diag
 ### layout.type `enum`
 {:#members:layout-type}
 
-Sets the type of the layout based on which the elements will be arranged. See [Layout Types](/js/api/global#layouttypes)
+<ts name = "ej.datavisualization.Diagram.LayoutTypes"/>
 
-#### Default Value
+Sets the type of the layout based on which the elements will be arranged.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used not to set any specific layout</td>
+       </tr>
+        <tr>
+            <td class="name">HierarchicalTree</td>
+            <td class="description last">Used to set layout type as hierarchical layout</td>
+       </tr>
+        <tr>
+            <td class="name">OrganizationalChart</td>
+            <td class="description last">Used to set layout type as organnizational chart</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.LayoutTypes.None
 
@@ -2473,7 +3030,7 @@ $("#diagramcontent").ejDiagram({ layout: { type: ej.datavisualization.Diagram.La
 
 Sets the space to be vertically left between nodes
 
-#### Default Value
+#### Default Value:
 
 * 30
 
@@ -2486,7 +3043,6 @@ Sets the space to be vertically left between nodes
 //verticalSpacing of the layout
 $("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
 </script>
-
 {% endhighlight %}
 
 ### locale `String`
@@ -2494,7 +3050,7 @@ $("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
 
 Defines the current culture of diagram
 
-#### Default Value
+#### Default Value:
 
 * "en-US"
 
@@ -2514,7 +3070,7 @@ $("#diagramcontent").ejDiagram({ locale: "en-US" });
 
 Array of JSON objects where each object represents a node
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -2533,9 +3089,35 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 ### nodes.activity `enum`
 {:#members:nodes-activity}
 
-Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity. See [BPMN Activity](/js/api/global#bpmnactivity)
+<ts name = "ej.datavisualization.Diagram.BPMNActivity"/>
 
-#### Default Value
+Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN Activity as None</td>
+       </tr>
+        <tr>
+            <td class="name">Task</td>
+            <td class="description last">Used to set BPMN Activity as Task</td>
+       </tr>
+        <tr>
+            <td class="name">SubProcess</td>
+            <td class="description last">Used to set BPMN Activity as SubProcess</td>
+       </tr>
+   </tbody>
+</table>
+
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNActivity.Task
 
@@ -2557,7 +3139,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 To maintain additional information about nodes
 
-#### Default Value
+#### Default Value:
 
 * {}
 
@@ -2583,7 +3165,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 
 Sets the border color of node
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -2605,7 +3187,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the pattern of dashes and gaps to stroke the border
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -2628,7 +3210,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the border width of the node
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -2650,7 +3232,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 Defines whether the group can be ungrouped or not
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -2674,7 +3256,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Array of JSON objects where each object represents a child node/connector
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -2699,7 +3281,7 @@ $("#diagramcontent").ejDiagram({ nodes:[group] });
 
 Defines whether the BPMN data object is a collection or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -2721,7 +3303,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the distance to be left between a node and its connections(In coming and out going connections).
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -2741,9 +3323,102 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
-Enables or disables the default behaviors of the node. See [Node Constraints](/js/api/global#nodeconstraints)
+<ts name = "ej.datavisualization.Diagram.NodeConstraints"/>
 
-#### Default Value
+Enables or disables the default behaviors of the node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disable all node Constraints</td>
+       </tr>
+        <tr>
+            <td class="name">Select</td>
+            <td class="description last">Enables node to be selected</td>
+       </tr>
+        <tr>
+            <td class="name">Delete</td>
+            <td class="description last">Enables node to be Deleted</td>
+       </tr>
+        <tr>
+            <td class="name">Drag</td>
+            <td class="description last">Enables node to be Dragged</td>
+       </tr>
+        <tr>
+            <td class="name">Rotate</td>
+            <td class="description last">Enables node to be Rotated</td>
+       </tr>
+        <tr>
+            <td class="name">Connect</td>
+            <td class="description last">Enables node to be connected</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeNorthEast</td>
+            <td class="description last">Enables node to be resize north east</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeEast</td>
+            <td class="description last">Enables node to be resize east</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeSouthEast</td>
+            <td class="description last">Enables node to be resize south east</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeSouth</td>
+            <td class="description last">Enables node to be resize south</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeSouthWest</td>
+            <td class="description last">Enables node to be resize south west</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeWest</td>
+            <td class="description last">Enables node to be resize west</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeNorthWest</td>
+            <td class="description last">Enables node to be resize north west</td>
+       </tr>
+        <tr>
+            <td class="name">ResizeNorth</td>
+            <td class="description last">Enables node to be resize north</td>
+       </tr>
+        <tr>
+            <td class="name">Resize</td>
+            <td class="description last">Enables node to be Resized</td>
+       </tr>
+        <tr>
+            <td class="name">Shadow</td>
+            <td class="description last">Enables shadow</td>
+       </tr>
+        <tr>
+            <td class="name">DragLabel</td>
+            <td class="description last">Enables label of node to be Dragged</td>
+       </tr>
+        <tr>
+            <td class="name">AllowPan</td>
+            <td class="description last">Enables panning should be done while node dragging</td>
+       </tr>
+        <tr>
+            <td class="name">AspectRatio</td>
+            <td class="description last">Enables Proportional resize for node</td>
+       </tr>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Enables all node constraints</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.NodeConstraints.Default
 
@@ -2768,7 +3443,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -2791,7 +3466,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the orientation of the container. Applicable, if the group is a container.
 
-#### Default Value
+#### Default Value:
 
 * "vertical"
 
@@ -2813,9 +3488,30 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 ### nodes.container.type `enum`
 {:#members:nodes-container-type}
 
-Sets the type of the container. Applicable if the group is a container. See [Container Types](/js/api/global#containertype">ContainerType </a>
+<ts name = "ej.datavisualization.Diagram.ContainerType"/>
 
-#### Default Value
+Sets the type of the container. Applicable if the group is a container.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Canvas</td>
+            <td class="description last">Sets the container type as Canvas</td>
+       </tr>
+        <tr>
+            <td class="name">Stack</td>
+            <td class="description last">Sets the container type as Stack</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.ContainerType.Canvas
 
@@ -2842,7 +3538,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the corner radius of rectangular shapes.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -2865,7 +3561,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Configures the styles of shapes
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -2890,12 +3586,46 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
+
 ### nodes.event `enum`
 {:#members:nodes-event}
 
-Sets the type of the BPMN Events. Applicable, if the node is a bpmn event. See [BPMN Events](/js/api/global#bpmnevents)
+<ts name = "ej.datavisualization.Diagram.BPMNEvents"/>
 
-#### Default Value
+Sets the type of the BPMN Events. Applicable, if the node is a bpmn event.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Start</td>
+            <td class="description last">Used to set BPMN Event as Start</td>
+       </tr>
+        <tr>
+            <td class="name">Intermediate</td>
+            <td class="description last">Used to set BPMN Event as Intermediate</td>
+       </tr>
+        <tr>
+            <td class="name">End</td>
+            <td class="description last">Used to set BPMN Event as End</td>
+       </tr>
+        <tr>
+            <td class="name">NonInterruptingStart</td>
+            <td class="description last">Used to set BPMN Event as NonInterruptingStart</td>
+       </tr>
+        <tr>
+            <td class="name">NonInterruptingIntermediate</td>
+            <td class="description last">Used to set BPMN Event as NonInterruptingIntermediate</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNEvents.Start
 
@@ -2918,7 +3648,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 Defines whether the node can be automatically arranged using layout or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -2951,7 +3681,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the fill color of the node
 
-#### Default Value
+#### Default Value:
 
 * "white"
 
@@ -2971,9 +3701,46 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.gateway `enum`
 {:#members:nodes-gateway}
 
-Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway. See [BPMN Gateways](/js/api/global#bpmngateways)
+<ts name = "ej.datavisualization.Diagram.BPMNGateways"/>
 
-#### Default Value
+Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN Gateway as None</td>
+       </tr>
+        <tr>
+            <td class="name">Exclusive</td>
+            <td class="description last">Used to set BPMN Gateway as Exclusive</td>
+       </tr>
+        <tr>
+            <td class="name">Inclusive</td>
+            <td class="description last">Used to set BPMN Gateway as Inclusive</td>
+       </tr>
+        <tr>
+            <td class="name">Parallel</td>
+            <td class="description last">Used to set BPMN Gateway as Parallel</td>
+       </tr>
+        <tr>
+            <td class="name">Complex</td>
+            <td class="description last">Used to set BPMN Gateway as Complex</td>
+       </tr>
+        <tr>
+            <td class="name">EventBased</td>
+            <td class="description last">Used to set BPMN Gateway as EventBased</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNGateways.None
 
@@ -2990,7 +3757,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.gradient
+### nodes.gradient `object`
 {:#members:nodes-gradient}
 
 Paints the node with a smooth transition from one color to another color
@@ -3005,7 +3772,7 @@ Paints the node with linear color transitions
 
 Defines the different colors and the region of color transitions
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -3030,7 +3797,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the left most position(relative to node) of the rectangular region that needs to be painted
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3056,7 +3823,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the right most position(relative to node) of the rectangular region that needs to be painted
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3082,7 +3849,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the top most position(relative to node) of the rectangular region that needs to be painted
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3108,7 +3875,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the bottom most position(relative to node) of the rectangular region that needs to be painted
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3139,7 +3906,7 @@ Paints the node with radial color transitions. A focal point defines the beginni
 
 Defines the position of the outermost circle
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3164,7 +3931,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Defines the outer most circle of the radial gradient
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3189,7 +3956,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Defines the innermost circle of the radial gradient
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3215,7 +3982,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Defines the innermost circle of the radial gradient
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3240,7 +4007,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Defines the different colors and the region of color transitions.
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -3273,7 +4040,7 @@ Defines the color and a position where the previous color transition ends and a 
 
 Sets the color to be filled over the specified region
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -3301,7 +4068,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Sets the position where the previous color transition ends and a new color transition starts
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3329,7 +4096,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Decribes the transparency level of the region
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -3356,7 +4123,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 
 Defines the header of a swimlane/lane
 
-#### Default Value
+#### Default Value:
 
 * { text: "Title", fontSize: 11 }
 
@@ -3377,7 +4144,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the height of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3398,9 +4165,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.horizontalAlign `enum`
 {:#members:nodes-horizontalalign}
 
-Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container. See [Horizontal Alignment](/js/api/global#horizontalalignment)
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
-#### Default Value
+Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align text horizontally on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text horizontally on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align text horizontally on right side of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.HorizontalAlignment.Left
 
@@ -3425,7 +4217,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 A read only collection of the incoming connectors/edges of the node
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -3479,7 +4271,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the node as a swimlane
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -3500,7 +4292,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 A collection of objects where each object represents a label
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -3523,7 +4315,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Enables/disables the bold style
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -3547,7 +4339,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the border color of the label
 
-#### Default Value
+#### Default Value:
 
 * "transparent"
 
@@ -3571,7 +4363,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the border width of the label
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3595,7 +4387,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the fill color of the text area
 
-#### Default Value
+#### Default Value:
 
 * "transparent"
 
@@ -3619,7 +4411,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the font color of the text
 
-#### Default Value
+#### Default Value:
 
 * "black"
 
@@ -3643,7 +4435,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the font family of the text
 
-#### Default Value
+#### Default Value:
 
 * "Arial"
 
@@ -3667,7 +4459,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the font size of the text
 
-#### Default Value
+#### Default Value:
 
 * 12
 
@@ -3690,9 +4482,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.horizontalAlignment `enum`
 {:#members:nodes-labels-horizontalalignment}
 
-Sets the horizontal alignment of the label. See [Horizontal Alignment](/js/api/global#horizontalalignment)
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
-#### Default Value
+Sets the horizontal alignment of the label.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align text horizontally on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text horizontally on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align text horizontally on right side of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.HorizontalAlignment.Center
 
@@ -3717,7 +4534,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Enables/disables the italic style
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -3741,7 +4558,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 To set the margin of the label
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Margin()
 
@@ -3764,9 +4581,30 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.mode `enum`
 {:#members:nodes-labels-mode}
 
-Gets whether the label is currently being edited or not. See [Label Edit Mode](/js/api/global#labeleditmode)
+<ts name = "ej.datavisualization.Diagram.LabelEditMode"/>
 
-#### Default Value
+Gets whether the label is currently being edited or not.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Edit</td>
+            <td class="description last">Used to set label edit mode as edit</td>
+       </tr>
+        <tr>
+            <td class="name">View</td>
+            <td class="description last">Used to set label edit mode as view</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.LabelEditMode.Edit
 
@@ -3787,7 +4625,7 @@ console.log(node.labels[0].mode);
 
 Sets the unique identifier of the label
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -3806,12 +4644,12 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.offset `Point`
+### nodes.labels.offset `object`
 {:#members:nodes-labels-offset}
 
 Sets the fraction/ratio(relative to node) that defines the position of the label
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Point(0.5, 0.5)
 
@@ -3836,7 +4674,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines whether the label is editable or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -3860,7 +4698,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the angle to which the label needs to be rotated
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -3884,7 +4722,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the label text
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -3906,9 +4744,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.textAlign `enum`
 {:#members:nodes-labels-textalign}
 
-Defines how to align the text inside the label. See [Text Align](/js/api/global#textalign)
+<ts name = "ej.datavisualization.Diagram.TextAlign"/>
+	
+Defines how to align the text inside the label.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align text on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align text on Right side of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.TextAlign.Center
 
@@ -3930,9 +4793,38 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 ### nodes.labels.textDecoration `enum`
 {:#members:nodes-labels-textdecoration}
 
-Sets how to decorate the label text. See [Text Decorations](/js/api/global#textdecorations)
+<ts name = "ej.datavisualization.Diagram.TextDecorations"/>
 
-#### Default Value
+Sets how to decorate the label text.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Underline</td>
+            <td class="description last">Used to set text decoration of the label as Underline</td>
+       </tr>
+        <tr>
+            <td class="name">Overline</td>
+            <td class="description last">Used to set text decoration of the label as Overline</td>
+       </tr>
+        <tr>
+            <td class="name">LineThrough</td>
+            <td class="description last">Used to set text decoration of the label as LineThrough</td>
+       </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set text decoration of the label as None</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.TextDecorations.None
 
@@ -3955,9 +4847,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.verticalAlignment `enum`
 {:#members:nodes-labels-verticalalignment}
 
-Sets the vertical alignment of the label. See [Vertical Alignments](/js/api/global#verticalalignment)
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-#### Default Value
+Sets the vertical alignment of the label.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Set vertical alignment as top</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Set vertical alignment as middle</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Set vertical alignment as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.VerticalAlignment.Center
 
@@ -3983,7 +4900,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 Enables or disables the visibility of the label
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -4007,7 +4924,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the width of the label(the maximum value of label width and the node width will be considered as label width)
 
-#### Default Value
+#### Default Value:
 
 * 50
 
@@ -4029,9 +4946,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.wrapping `enum`
 {:#members:nodes-labels-wrapping}
 
-Defines how the label text needs to be wrapped. See [Text Wrapping](/js/api/global#textwrapping)
+<ts name = "ej.datavisualization.Diagram.TextWrapping"/>
 
-#### Default Value
+Defines how the label text needs to be wrapped.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">NoWrap</td>
+            <td class="description last">Disables wrapping</td>
+       </tr>
+        <tr>
+            <td class="name">Wrap</td>
+            <td class="description last">Enables Line-break at normal word break points</td>
+       </tr>
+        <tr>
+            <td class="name">WrapWithOverflow</td>
+            <td class="description last">Enables Line-break at normal word break points with longer word overflows</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow
 
@@ -4055,7 +4997,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 An array of objects where each object represents a lane. Appilicable, if the node is a swimlane.
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -4079,7 +5021,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Allows to maintain additional information about lane
 
-#### Default Value
+#### Default Value:
 
 * {}
 
@@ -4102,7 +5044,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 An array of objects where each object represents a child node of the lane
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -4127,7 +5069,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the fill color of the lane
 
-#### Default Value
+#### Default Value:
 
 * "white"
 
@@ -4149,7 +5091,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the header of the lane
 
-#### Default Value
+#### Default Value:
 
 * { text: "Function", fontSize: 11 }
 
@@ -4173,7 +5115,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the object as a lane
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -4195,7 +5137,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Sets the unique identifier of the lane
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -4215,9 +5157,9 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 ### nodes.lanes.orientation `String`
 {:#members:nodes-lanes-orientation}
 
-Sets the orientation of the lane.
+Sets the orientation of the lane. 
 
-#### Default Value
+#### Default Value:
 
 * "vertical"
 
@@ -4239,7 +5181,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the minimum space to be left between the bottom of parent bounds and the node. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4263,7 +5205,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the minimum space to be left between the left of parent bounds and the node. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4287,7 +5229,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the minimum space to be left between the right of the parent bounds and the node. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4311,7 +5253,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the minimum space to be left between the top of parent bounds and the node. Applicable, if the parent is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4335,7 +5277,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the maximum height limit of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4357,7 +5299,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the maximum width limit of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4379,7 +5321,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the minimum height limit of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4401,7 +5343,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the minimum width limit of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4423,7 +5365,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the unique identifier of the node
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -4445,7 +5387,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the position of the node on X-Axis
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4467,7 +5409,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the position of the node on Y-Axis
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4489,7 +5431,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the opaque of the node
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -4511,7 +5453,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the orientation of nodes. Applicable, if the node is a swimlane.
 
-#### Default Value
+#### Default Value:
 
 * "vertical"
 
@@ -4532,7 +5474,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 A read only collection of outgoing connectors/edges of the node
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -4556,7 +5498,7 @@ for(var i = 0; i<node.outEdges.length; i++){
 
 Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4584,7 +5526,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum padding value to be left between the left most position of a group and its children. Applicable, if the group is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4612,7 +5554,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum padding value to be left between the right most position of a group and its children. Applicable, if the group is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4640,7 +5582,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the minimum padding value to be left between the top most position of a group and its children. Applicable, if the group is a container.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4668,7 +5610,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the size and preview size of the node to add that to symbol palette
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -4704,7 +5646,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -4739,7 +5681,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Defines the height of the symbol
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4774,7 +5716,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Defines the margin of the symbol item
 
-#### Default Value
+#### Default Value:
 
 * { left: 4, right: 4, top: 4, bottom: 4 }
 
@@ -4807,7 +5749,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Defines the preview height of the symbol
 
-#### Default Value
+#### Default Value:
 
 * undefined
 
@@ -4841,7 +5783,7 @@ Defines the preview height of the symbol
 
 Defines the preview width of the symbol
 
-#### Default Value
+#### Default Value:
 
 * undefined
 
@@ -4873,9 +5815,9 @@ $("#symbolpalette").ejSymbolPalette({
 ### nodes.paletteItem.width `Number`
 {:#members:nodes-paletteitem-width}
 
-Defines the width of the symbol
+Defines the width of the symbol 
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -4910,7 +5852,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 Sets the name of the parent group
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -4936,7 +5878,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2, group]});
 
 Sets the path geometry that defines the shape of a path node
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -4959,7 +5901,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 An array of objects, where each object represents a smaller region(phase) of a swimlane.
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -4983,7 +5925,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the header of the smaller regions
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5008,7 +5950,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Defines the line color of the splitter that splits adjacent phases.
 
-#### Default Value
+#### Default Value:
 
 * "#606060"
 
@@ -5032,7 +5974,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Sets the dash array that used to stroke the phase splitter
 
-#### Default Value
+#### Default Value:
 
 * "3,3"
 
@@ -5056,7 +5998,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Sets the lineWidth of the phase
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -5080,7 +6022,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Sets the unique identifier of the phase
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -5103,7 +6045,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 Sets the length of the smaller region(phase) of a swimlane
 
-#### Default Value
+#### Default Value:
 
 * 100
 
@@ -5123,7 +6065,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 Sets the orientation of the phase
 
-#### Default Value
+#### Default Value:
 
 * "horizontal"
 
@@ -5149,7 +6091,7 @@ diagram.addPhase(diagram.selectionList[0].name,
 
 Sets the type of the object as phase
 
-#### Default Value
+#### Default Value:
 
 * "phase"
 
@@ -5174,7 +6116,7 @@ diagram.addPhase(diagram.selectionList[0].name,
 
 Sets the height of the phase headers
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -5192,12 +6134,12 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.pivot `Point`
+### nodes.pivot `object`
 {:#members:nodes-pivot}
 
-Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)
+Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation) 
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Points(0.5,0.5)
 
@@ -5220,7 +6162,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon.
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -5243,7 +6185,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 An array of objects where each object represents a port
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -5267,7 +6209,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the border color of the port
 
-#### Default Value
+#### Default Value:
 
 * "#1a1a1a"
 
@@ -5290,7 +6232,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the stroke width of the port
 
-#### Default Value
+#### Default Value:
 
 * 1
 
@@ -5313,7 +6255,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the space to be left between the port bounds and its incoming and outgoing connections.
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -5334,9 +6276,30 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.constraints `enum`
 {:#members:nodes-ports-constraints}
 
-Defines whether connections can be created with the port See [Port Constraints](/js/api/global#portconstraints)
+<ts name = "ej.datavisualization.Diagram.PortConstraints"/>
+	
+Defines whether connections can be created with the port
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disable all constraints</td>
+       </tr>
+        <tr>
+            <td class="name">Connect</td>
+            <td class="description last">Enables connections with connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.PortConstraints.Connect
 
@@ -5361,7 +6324,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the fill color of the port
 
-#### Default Value
+#### Default Value:
 
 * "white"
 
@@ -5384,7 +6347,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the unique identifier of the port
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -5402,12 +6365,12 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.offset `Point`
+### nodes.ports.offset `object`
 {:#members:nodes-ports-offset}
 
 Defines the position of the port as fraction/ ratio relative to node
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Point(0, 0)
 
@@ -5431,7 +6394,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the path data to draw the port. Applicable, if the port `shape` is path.
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -5454,9 +6417,38 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.shape `enum`
 {:#members:nodes-ports-shape}
 
-Defines the shape of the port. See [Port Shapes](/js/api/global#portshapes)
+<ts name = "ej.datavisualization.Diagram.PortShapes"/>
+	
+Defines the shape of the port.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">X</td>
+            <td class="description last">Used to set port shape as X</td>
+       </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description last">Used to set port shape as Circle</td>
+       </tr>
+        <tr>
+            <td class="name">Square</td>
+            <td class="description last">Used to set port shape as Square</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set port shape as Path</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.PortShapes.Square
 
@@ -5480,7 +6472,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the size of the port
 
-#### Default Value
+#### Default Value:
 
 * 8
 
@@ -5501,9 +6493,42 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
-Defines when the port should be visible. See [Port Visibility](/js/api/global#portvisibility)
+<ts name = "ej.datavisualization.Diagram.PortVisibility"/>
 
-#### Default Value
+Defines when the port should be visible.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Visible</td>
+            <td class="description last">Set the port visibility as Visible</td>
+       </tr>
+        <tr>
+            <td class="name">Hidden</td>
+            <td class="description last">Set the port visibility as Hidden</td>
+       </tr>
+        <tr>
+            <td class="name">Hover</td>
+            <td class="description last">Port get visible when hover connector on node</td>
+       </tr>
+        <tr>
+            <td class="name">Connect</td>
+            <td class="description last">Port gets visibile when connect connector to node</td>
+       </tr>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Specifies the port visibility as default</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.PortVisibility.Default
 
@@ -5527,7 +6552,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the angle to which the node should be rotated
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -5549,7 +6574,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the opacity and the position of shadow
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Shadow()
 
@@ -5574,7 +6599,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the angle of the shadow relative to node
 
-#### Default Value
+#### Default Value:
 
 * 45
 
@@ -5599,7 +6624,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the distance to move the shadow relative to node
 
-#### Default Value
+#### Default Value:
 
 * 5
 
@@ -5624,7 +6649,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the opaque of the shadow
 
-#### Default Value
+#### Default Value:
 
 * 0.7
 
@@ -5647,9 +6672,78 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
+<ts name = "ej.datavisualization.Diagram.BasicShapes"/>
+
 Sets the shape of the node. It depends upon the type of node.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Rectangle</td>
+            <td class="description last">Used to specify node Shape as Rectangle</td>
+       </tr>
+        <tr>
+            <td class="name">Ellipse</td>
+            <td class="description last">Used to specify node Shape as Ellipse</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to specify node Shape as Path</td>
+       </tr>
+        <tr>
+            <td class="name">Polygon</td>
+            <td class="description last">Used to specify node Shape as Polygon</td>
+       </tr>
+        <tr>
+            <td class="name">Triangle</td>
+            <td class="description last">Used to specify node Shape as Triangle</td>
+       </tr>
+        <tr>
+            <td class="name">Plus</td>
+            <td class="description last">Used to specify node Shape as Plus</td>
+       </tr>
+        <tr>
+            <td class="name">Star</td>
+            <td class="description last">Used to specify node Shape as Star</td>
+       </tr>
+        <tr>
+            <td class="name">Pentagon</td>
+            <td class="description last">Used to specify node Shape as Pentagon</td>
+       </tr>
+        <tr>
+            <td class="name">Heptagon</td>
+            <td class="description last">Used to specify node Shape as Heptagon</td>
+       </tr>
+        <tr>
+            <td class="name">Octagon</td>
+            <td class="description last">Used to specify node Shape as Octagon</td>
+       </tr>
+        <tr>
+            <td class="name">Trapezoid</td>
+            <td class="description last">Used to specify node Shape as Trapezoid</td>
+       </tr>
+        <tr>
+            <td class="name">Decagon</td>
+            <td class="description last">Used to specify node Shape as Decagon</td>
+       </tr>
+        <tr>
+            <td class="name">RightTriangle</td>
+            <td class="description last">Used to specify node Shape as RightTriangle</td>
+       </tr>
+        <tr>
+            <td class="name">Cylinder</td>
+            <td class="description last">Used to specify node Shape as Cylinder</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BasicShapes.Rectangle
 
@@ -5673,7 +6767,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the source path of the image. Applicable, if the type of the node is image.
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -5696,7 +6790,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the sub process of a BPMN Activity. Applicable, if the type of the bpmn activity is sub process.
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNSubProcess()
 
@@ -5720,7 +6814,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines whether the bpmn sub process is without any prescribed order or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -5742,9 +6836,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.boundary `enum`
 {:#members:nodes-subprocess-boundary}
 
-Sets the boundary of the BPMN process See [BPMN Boundary](/js/api/global#bpmnboundary)
+<ts name = "ej.datavisualization.Diagram.BPMNBoundary"/>
 
-#### Default Value
+Sets the boundary of the BPMN process
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Used to set BPMN SubProcess's Boundary as Default</td>
+       </tr>
+        <tr>
+            <td class="name">Call</td>
+            <td class="description last">Used to set BPMN SubProcess's Boundary as Call</td>
+       </tr>
+        <tr>
+            <td class="name">Event</td>
+            <td class="description last">Used to set BPMN SubProcess's Boundary as Event</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNBoundary.Default
 
@@ -5768,7 +6887,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets whether the bpmn subprocess is triggered as a compensation of a specific activity
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -5790,9 +6909,38 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
-Defines the loop type of a sub process .See [BPMN Loops](/js/api/global#bpmnloops)
+<ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
 
-#### Default Value
+Defines the loop type of a sub process.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN Activity's Loop as None</td>
+       </tr>
+        <tr>
+            <td class="name">Standard</td>
+            <td class="description last">Used to set BPMN Activity's Loop as Standard</td>
+       </tr>
+        <tr>
+            <td class="name">ParallelMultiInstance</td>
+            <td class="description last">Used to set BPMN Activity's Loop as ParallelMultiInstance</td>
+       </tr>
+        <tr>
+            <td class="name">SequenceMultiInstance</td>
+            <td class="description last">Used to set BPMN Activity's Loop as SequenceMultiInstance</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNLoops.None
 
@@ -5816,7 +6964,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the task of the bpmn activity. Applicable, if the type of activity is set as task.
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNTask()
 
@@ -5840,7 +6988,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 To set whether the task is a global task or not
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -5864,7 +7012,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets whether the task is triggered as a compensation of another specific activity
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -5886,9 +7034,38 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tasks.loop `enum`
 {:#members:nodes-tasks-loop}
 
-Sets the loop type of a bpmn task .See [BPMN Loops](/js/api/global#bpmnloops)
+<ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
 
-#### Default Value
+Sets the loop type of a bpmn task.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">X</td>
+            <td class="description last">Used to set port shape as X</td>
+       </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description last">Used to set port shape as Circle</td>
+       </tr>
+        <tr>
+            <td class="name">Square</td>
+            <td class="description last">Used to set port shape as Square</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set port shape as Path</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNLoops.None
 
@@ -5910,9 +7087,62 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.tasks.type `enum`
 {:#members:nodes-tasks-type}
 
-Sets the type of the BPMN task. See [BPMN Tasks](/js/api/global#bpmntasks)
+<ts name = "ej.datavisualization.Diagram.BPMNTasks"/>
 
-#### Default Value
+Sets the type of the BPMN task.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN Task Type as None</td>
+       </tr>
+        <tr>
+            <td class="name">Service</td>
+            <td class="description last">Used to set BPMN Task Type as Service</td>
+       </tr>
+        <tr>
+            <td class="name">Receive</td>
+            <td class="description last">Used to set BPMN Task Type as Receive</td>
+       </tr>
+        <tr>
+            <td class="name">Send</td>
+            <td class="description last">Used to set BPMN Task Type as Send</td>
+       </tr>
+        <tr>
+            <td class="name">InstantiatingReceive</td>
+            <td class="description last">Used to set BPMN Task Type as InstantiatingReceive</td>
+       </tr>
+        <tr>
+            <td class="name">Manual</td>
+            <td class="description last">Used to set BPMN Task Type as Manual</td>
+       </tr>
+        <tr>
+            <td class="name">BusinessRule</td>
+            <td class="description last">Used to set BPMN Task Type as BusinessRule</td>
+       </tr>
+        <tr>
+            <td class="name">User</td>
+            <td class="description last">Used to set BPMN Task Type as User</td>
+       </tr>
+        <tr>
+            <td class="name">Script</td>
+            <td class="description last">Used to set BPMN Task Type as Script</td>
+       </tr>
+        <tr>
+            <td class="name">Parallel</td>
+            <td class="description last">Used to set BPMN Task Type as Parallel</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNTasks.None
 
@@ -5936,7 +7166,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the id of svg/html templates. Applicable, if the node is html or native.
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -5973,7 +7203,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the textBlock of a text node
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -5997,7 +7227,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer [Tooltip](#members:tooltip)
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6009,7 +7239,7 @@ Defines the tooltip that should be shown when the mouse hovers over node. For to
 
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-       <span style="padding: 5px;"> {{:name}} </span>
+        <span style="padding: 5px;"> {{:name}} </span>
    </div>
 </script>
 
@@ -6037,9 +7267,62 @@ $("#diagramcontent").ejDiagram({
 ### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
-Sets the type of BPMN Event Triggers. See [BPMN Triggers](/js/api/global#bpmntriggers)
+<ts name = "ej.datavisualization.Diagram.BPMNTriggers"/>
 
-#### Default Value
+Sets the type of BPMN Event Triggers.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set Event Triger as None</td>
+       </tr>
+        <tr>
+            <td class="name">Message</td>
+            <td class="description last">Used to set Event Triger as Message</td>
+       </tr>
+        <tr>
+            <td class="name">Timer</td>
+            <td class="description last">Used to set Event Triger as Timer</td>
+       </tr>
+        <tr>
+            <td class="name">Escalation</td>
+            <td class="description last">Used to set Event Triger as Escalation</td>
+       </tr>
+        <tr>
+            <td class="name">Link</td>
+            <td class="description last">Used to set Event Triger as Link</td>
+       </tr>
+        <tr>
+            <td class="name">Error</td>
+            <td class="description last">Used to set Event Triger as Error</td>
+       </tr>
+        <tr>
+            <td class="name">Compensation</td>
+            <td class="description last">Used to set Event Triger as Compensation</td>
+       </tr>
+        <tr>
+            <td class="name">Signal</td>
+            <td class="description last">Used to set Event Triger as Signal</td>
+       </tr>
+        <tr>
+            <td class="name">Multiple</td>
+            <td class="description last">Used to set Event Triger as Multiple</td>
+       </tr>
+        <tr>
+            <td class="name">Parallel</td>
+            <td class="description last">Used to set Event Triger as Parallel</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.BPMNTriggers.None
 
@@ -6059,9 +7342,46 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.type `enum`
 {:#members:nodes-type}
 
-Defines the type of the node. See [Shapes](/js/api/global#shapes)
+<ts name = "ej.datavisualization.Diagram.Shapes"/>
 
-#### Default Value
+Defines the type of the node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set decorator shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set decorator shape as Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">OpenArrow</td>
+            <td class="description last">Used to set decorator shape as Open Arrow</td>
+       </tr>
+        <tr>
+            <td class="name">Circle</td>
+            <td class="description last">Used to set decorator shape as Circle</td>
+       </tr>
+        <tr>
+            <td class="name">Diamond</td>
+            <td class="description last">Used to set decorator shape as Diamond</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set decorator shape as path</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.Shapes.Basic
 
@@ -6082,9 +7402,34 @@ $("#diagramcontent").ejDiagram({nodes:nodes})
 ### nodes.verticalAlign `enum`
 {:#members:nodes-verticalalign}
 
-Sets the vertical aligment of a node. Applicable, if the parent of a node is a container. See [Vertical Alignment](/js/api/global#verticalalignment)
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-#### Default Value
+Sets the vertical aligment of a node. Applicable, if the parent of a node is a container.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Set vertical alignment as top</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Set vertical alignment as middle</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Set vertical alignment as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.VerticalAlignment.Top
 
@@ -6111,7 +7456,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 Defines the visibility of the node
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -6133,7 +7478,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the width of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6155,7 +7500,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the z-index of the node
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6177,7 +7522,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Binds the custom JSON data with node properties
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6216,7 +7561,7 @@ Defines the size and appearance of diagram page
 
 Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
 
-#### Default Value
+#### Default Value:
 
 * { left: 15, top: 15, right: 15, bottom: 15 }
 
@@ -6238,7 +7583,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets whether multiple pages can be created to fit all nodes and connectors
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -6260,7 +7605,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the background color of diagram pages
 
-#### Default Value
+#### Default Value:
 
 * "#ffffff"
 
@@ -6282,7 +7627,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the page border color
 
-#### Default Value
+#### Default Value:
 
 * "#565656"
 
@@ -6304,7 +7649,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the border width of diagram pages
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6326,7 +7671,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the height of a page
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6348,7 +7693,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the page margin
 
-#### Default Value
+#### Default Value:
 
 * 24
 
@@ -6368,9 +7713,30 @@ $("#diagramcontent").ejDiagram({
 ### pageSettings.pageOrientation `enum`
 {:#members:pagesettings-pageorientation}
 
-Sets the orientation of the page. See [Page Orientations](/js/api/global#pageorientations)
+<ts name = "ej.datavisualization.Diagram.PageOrientations"/>
 
-#### Default Value
+Sets the orientation of the page.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Landscape</td>
+            <td class="description last">Used to set orientation as Landscape</td>
+       </tr>
+        <tr>
+            <td class="name">Portrait</td>
+            <td class="description last">Used to set orientation as portrait</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.PageOrientations.Portrait
 
@@ -6393,7 +7759,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the height of a diagram page
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6415,7 +7781,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines the scrollable area of diagram. Applicable, if the scroll limit is "limited".
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6430,15 +7796,39 @@ $("#diagramcontent").ejDiagram({
     scrollableArea: {x:0, y:0, width:1000, height:1000} }
 });
 </script>
-
 {% endhighlight %}
 
 ### pageSettings.scrollLimit `enum`
 {:#members:pagesettings-scrolllimit}
 
-Defines the scrollable region of diagram. See [Scroll Limit](/js/api/global#scrolllimit)
+<ts name = "ej.datavisualization.Diagram.ScrollLimit"/>
 
-#### Default Value
+Defines the scrollable region of diagram.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Infinity</td>
+            <td class="description last">Used to set scrollLimit as Infinity</td>
+       </tr>
+        <tr>
+            <td class="name">Diagram</td>
+            <td class="description last">Used to set scrollLimit as Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Limited</td>
+            <td class="description last">Used to set scrollLimit as Limited</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.ScrollLimit.Infinity
 
@@ -6452,7 +7842,6 @@ $("#diagramcontent").ejDiagram({
     pageSettings:{ scrollLimit: ej.datavisualization.Diagram.ScrollLimit.Diagram }
 });
 </script>
-
 {% endhighlight %}
 
 ### pageSettings.showPageBreak `Boolean`
@@ -6460,7 +7849,7 @@ $("#diagramcontent").ejDiagram({
 
 Enables or disables the page breaks
 
-#### Default Value
+#### Default Value:
 
 * false
 
@@ -6487,7 +7876,7 @@ Defines the zoom value, zoom factor, scroll status and view port size of the dia
 
 Allows to read the zoom value of diagram
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6508,7 +7897,7 @@ console.log(diagram.model.scrollSettings.currentZoom);
 
 Sets the horizontal scroll offset
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6530,7 +7919,7 @@ $("#diagramcontent").ejDiagram({
 
 Allows to extend the scrollable region that is based on the scroll limit
 
-#### Default Value
+#### Default Value:
 
 * {left: 0, right: 0, top:0, bottom: 0}
 
@@ -6553,7 +7942,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the vertical scroll offset
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6575,7 +7964,7 @@ $("#diagramcontent").ejDiagram({
 
 Allows to read the view port height of the diagram
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6598,7 +7987,7 @@ console.log(diagram.model.scrollSettings.viewPortHeight);
 
 Allows to read the view port width of the diagram
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6626,7 +8015,7 @@ Defines the size and position of selected items and defines the appearance of se
 
 A read only collection of the selected items
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -6648,9 +8037,43 @@ for(var i =0; i< diagram.model.selectedItems.children; i++){
 ### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
-Controls the visibility of selector. See [Selector Constraints](/js/api/global#selectorconstraints)
+<ts name = "ej.datavisualization.Diagram.SelectorConstraints"/>
 
-#### Default Value
+Controls the visibility of selector.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Hides the selector</td>
+       </tr>
+        <tr>
+            <td class="name">Rotator</td>
+            <td class="description last">Sets the visibility of rotation handle as visible</td>
+       </tr>
+        <tr>
+            <td class="name">Resizer</td>
+            <td class="description last">Sets the visibility of resize handles as visible</td>
+       </tr>
+        <tr>
+            <td class="name">UserHandles</td>
+            <td class="description last">Sets the visibility of user handles as visible</td>
+       </tr>
+        <tr>
+            <td class="name">All</td>
+            <td class="description last">Sets the visibility of all selection handles as visible</td>
+       </tr>
+   </tbody>
+</table>
+
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.SelectorConstraints.All
 
@@ -6672,7 +8095,7 @@ $("#diagramcontent").ejDiagram({
 
 Defines a method that dynamically enables/ disables the interaction with multiple selection.
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -6698,7 +8121,7 @@ selectedItems: {
 
 Sets the height of the selected items
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6719,9 +8142,9 @@ $("#diagramcontent").ejDiagram({
 ### selectedItems.offsetX `Number`
 {:#members:selecteditems-offsetx}
 
-Sets the x position of the selector
+Sets the x position of the selector 
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6743,7 +8166,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the y position of the selector
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6765,7 +8188,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the angle to rotate the selected items
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6787,7 +8210,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the angle to rotate the selected items. For tooltip properties, refer [Tooltip](#members:tooltip)
 
-#### Default Value
+#### Default Value:
 
 * ej.datavisualization.Diagram.Tooltip()
 
@@ -6809,7 +8232,7 @@ $("#diagramcontent").ejDiagram({
 
 A collection of frequently using commands that have to be added around the selector.
 
-#### Default Value
+#### Default Value:
 
 * []
 
@@ -6832,7 +8255,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 Sets the width of the selected items
 
-#### Default Value
+#### Default Value:
 
 * 0
 
@@ -6856,7 +8279,7 @@ $("#diagramcontent").ejDiagram({
 
 Enables or disables tooltip of diagram
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -6881,7 +8304,7 @@ Defines the gridlines and defines how and when the objects have to be snapped
 
 Enables or disables snapping nodes/connectors to objects
 
-#### Default Value
+#### Default Value:
 
 * true
 
@@ -6903,7 +8326,7 @@ Defines the appearance of horizontal gridlines
 
 Defines the line color of horizontal grid lines
 
-#### Default Value
+#### Default Value:
 
 * "lightgray"
 
@@ -6924,7 +8347,7 @@ $("#diagramcontent").ejDiagram({ snapSettings: { horizontalGridLines: gridline} 
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -6945,7 +8368,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 A pattern of lines and gaps that defines a set of horizontal gridlines
 
-#### Default Value
+#### Default Value:
 
 * [1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]
 
@@ -6967,7 +8390,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 Specifies a set of intervals to snap the objects
 
-#### Default Value
+#### Default Value:
 
 * [20]
 
@@ -6989,7 +8412,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 Defines the angle by which the object needs to be snapped
 
-#### Default Value
+#### Default Value:
 
 * 5
 
@@ -7006,7 +8429,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { snapAngle: 10} });
 
 Defines the minimum distance between the selected object and the nearest object
 
-#### Default Value
+#### Default Value:
 
 * 5
 
@@ -7030,7 +8453,7 @@ Defines the appearance of horizontal gridlines
 
 Defines the line color of horizontal grid lines
 
-#### Default Value
+#### Default Value:
 
 * "lightgray"
 
@@ -7051,7 +8474,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -7072,7 +8495,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 A pattern of lines and gaps that defines a set of horizontal gridlines
 
-#### Default Value
+#### Default Value:
 
 * [1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]
 
@@ -7093,7 +8516,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 Specifies a set of intervals to snap the objects
 
-#### Default Value
+#### Default Value:
 
 * [20]
 
@@ -7113,9 +8536,44 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 ### tool `enum`
 {:#members:tool}
 
-Enables/Disables the interactive behaviors of diagram. See [Tools](/js/api/global#tool)
+Enables/Disables the interactive behaviors of diagram.
 
-#### Default Value
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disables all Tools</td>
+       </tr>
+        <tr>
+            <td class="name">SingleSelect</td>
+            <td class="description last">Enables/Disables SingleSelect tool</td>
+       </tr>
+        <tr>
+            <td class="name">MultipleSelect</td>
+            <td class="description last">Enables/Disables MultiSelect tool</td>
+       </tr>
+        <tr>
+            <td class="name">ZoomPan</td>
+            <td class="description last">Enables/Disables ZoomPan tool</td>
+       </tr>
+        <tr>
+            <td class="name">DrawOnce</td>
+            <td class="description last">Enables/Disables DrawOnce tool</td>
+       </tr>
+        <tr>
+            <td class="name">ContinuesDraw</td>
+            <td class="description last">Enables/Disables ContinuousDraw tool</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.Tool.All
 
@@ -7136,7 +8594,7 @@ $("#diagramcontent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan}
 
 An object that defines the description, appearance and alignments of tooltips
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -7147,7 +8605,7 @@ An object that defines the description, appearance and alignments of tooltips
 <div id="diagramcontent"></div>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-       <span style="padding: 5px;"> {{:Designation}} </span>
+        <span style="padding: 5px;"> {{:Designation}} </span>
    </div>
 </script>
 
@@ -7179,9 +8637,34 @@ Aligns the tooltip around nodes/connectors
 ### tooltip.alignment.horizontal `enum`
 {:#members:tooltip-alignment-horizontal}
 
-Defines the horizontal alignment of tooltip. See [Horizontal Alignment](/js/api/global#horizontalalignment)
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
-#### Default Value
+Defines the horizontal alignment of tooltip.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align text horizontally on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text horizontally on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align text horizontally on right side of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.HorizontalAlignment.Center
 
@@ -7205,9 +8688,34 @@ $("#diagramcontent").ejDiagram({
 ### tooltip.alignment.vertical `enum`
 {:#members:tooltip-alignment-vertical}
 
-Defines the vertical alignment of tooltip. See [Vertical Alignment](/js/api/global#verticalalignment)
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-#### Default Value
+Defines the vertical alignment of tooltip.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to align text Vertically on left side of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align text Vertically on center of node/connector</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to align text Vertically on bottom of node/connector</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.VerticalAlignment.Bottom
 
@@ -7233,7 +8741,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the margin of the tooltip
 
-#### Default Value
+#### Default Value:
 
 * { left: 5, right: 5, top: 5, bottom: 5 }
 
@@ -7255,9 +8763,30 @@ $("#diagramcontent").ejDiagram({
 ### tooltip.relativeMode `enum`
 {:#members:tooltip-relativemode}
 
-Defines whether the tooltip should be shown at the mouse position or around node. See [Relative Mode](/js/api/global#relativemode">RelativeMode </a>
+<ts name = "ej.datavisualization.Diagram.RelativeMode"/>
 
-#### Default Value
+Defines whether the tooltip should be shown at the mouse position or around node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">object</td>
+            <td class="description last">Shows tooltip around the node</td>
+       </tr>
+        <tr>
+            <td class="name">Mouse</td>
+            <td class="description last">Shows tooltip at the mouse position</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
 
 * ej.datavisualization.Diagram.RelativeMode.Object
 
@@ -7282,7 +8811,7 @@ $("#diagramcontent").ejDiagram({
 
 Sets the svg/html template to be bound with tooltip
 
-#### Default Value
+#### Default Value:
 
 * ""
 
@@ -7292,7 +8821,7 @@ Sets the svg/html template to be bound with tooltip
 
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-       <span style="padding: 5px;"> {{:Designation}} </span>
+        <span style="padding: 5px;"> {{:Designation}} </span>
    </div>
 </script>
 
@@ -7311,7 +8840,7 @@ $("#diagramcontent").ejDiagram({
 
 Specifies the width of the diagram
 
-#### Default Value
+#### Default Value:
 
 * null
 
@@ -7331,7 +8860,7 @@ $("#diagramcontent").ejDiagram({ width:"1000" });
 
 Sets the factor by which we can zoom in or zoom out
 
-#### Default Value
+#### Default Value:
 
 * 0.2
 
@@ -7364,8 +8893,8 @@ Add nodes and connectors to diagram at runtime
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">a JSON to define a node/connector or an array of nodes and connector</td>
+			<td class="type">object</td>
+			<td class="description last">a JSON to define a node/connector or an array of nodes and connector</td>
 		</tr>
 	</tbody>
 </table>
@@ -7408,12 +8937,12 @@ Add a label to a node at runtime
 		<tr>
 			<td class="name">nodeName</td>
 			<td class="type">string</td>
-			<td class="description">name of the node to which label will be added</td>
+			<td class="description last">name of the node to which label will be added</td>
 		</tr>
 		<tr>
 			<td class="name">newLabel</td>
-			<td class="type">Object</td>
-			<td class="description">JSON for the new label to be added</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new label to be added</td>
 		</tr>
 	</tbody>
 </table>
@@ -7447,13 +8976,13 @@ Add a phase to a swimlane at runtime
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the swimlane to which the phase will be added</td>
+			<td class="type">string</td>
+			<td class="description last">name of the swimlane to which the phase will be added</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON object to define the phase to be added</td>
+			<td class="type">object</td>
+			<td class="description last">JSON object to define the phase to be added</td>
 		</tr>
 	</tbody>
 </table>
@@ -7486,13 +9015,13 @@ Add a collection of ports to the node specified by name
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the node to which the ports have to be added</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node to which the ports have to be added</td>
 		</tr>
 		<tr>
 			<td class="name">ports</td>
-			<td class="type">Array</td>
-			<td class="description">a collection of ports to be added to the specified node</td>
+			<td class="type">array</td>
+			<td class="description last">a collection of ports to be added to the specified node</td>
 		</tr>
 	</tbody>
 </table>
@@ -7526,13 +9055,13 @@ Add the specified node to selection list
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">the node to be selected</td>
+			<td class="type">object</td>
+			<td class="description last">the node to be selected</td>
 		</tr>
 		<tr>
-			<td class="name">clearSelection</td>
-			<td class="type">Boolean [optional]</td>
-			<td class="description">to define whether to clear the existing selection or not</td>
+			<td class="name">[clearSelection]</td>
+			<td class="type">boolean</td>
+			<td class="description last">to define whether to clear the existing selection or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -7566,8 +9095,8 @@ Align the selected objects based on the reference object and direction
 	<tbody>
 		<tr>
 			<td class="name">direction</td>
-			<td class="type">String</td>
-			<td class="description">to specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")</td>
+			<td class="type">string</td>
+			<td class="description last">to specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")</td>
 		</tr>
 	</tbody>
 </table>
@@ -7600,8 +9129,8 @@ Bring the specified portion of the diagram content to the diagram viewport
 	<tbody>
 		<tr>
 			<td class="name">rect</td>
-			<td class="type">Object</td>
-			<td class="description">the rectangular region that is to be brought into diagram viewport</td>
+			<td class="type">object</td>
+			<td class="description last">the rectangular region that is to be brought into diagram viewport</td>
 		</tr>
 	</tbody>
 </table>
@@ -7634,8 +9163,8 @@ Bring the specified portion of the diagram content to the center of the diagram 
 	<tbody>
 		<tr>
 			<td class="name">rect</td>
-			<td class="type">Object</td>
-			<td class="description">the rectangular region that is to be brought to the center of diagram viewport</td>
+			<td class="type">object</td>
+			<td class="description last">the rectangular region that is to be brought to the center of diagram viewport</td>
 		</tr>
 	</tbody>
 </table>
@@ -7708,6 +9237,10 @@ diagram.clearSelection();
 
 Copy the selected object to internal clipboard and get the copied object
 
+#### Returns:
+
+* Object
+
 #### Example
 
 {% highlight html %}
@@ -7753,42 +9286,46 @@ Export the diagram as downloadable files or as data
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">options</td>
-			<td class="type">Object [optional]</td>
-			<td class="description">options to export the desired region of diagram to the desired formats</td>
+			<td class="name">[options]</td>
+			<td class="type">object</td>
+			<td class="description last">options to export the desired region of diagram to the desired formats</td>
 		</tr>
 		<tr>
 			<td class="name">options.fileName</td>
-			<td class="type">String</td>
-			<td class="description">name of the file to be downloaded</td>
+			<td class="type">string</td>
+			<td class="description last">name of the file to be downloaded</td>
 		</tr>
 		<tr>
 			<td class="name">options.format</td>
-			<td class="type">String</td>
-			<td class="description">format of the exported file/data See [File Formats](/js/api/global#fileformats)</td>
+			<td class="type">string</td>
+			<td class="description last">format of the exported file/data. See [File Formats](/js/api/global#fileformats)</td>
 		</tr>
 		<tr>
 			<td class="name">options.mode</td>
-			<td class="type">String</td>
-			<td class="description">to set whether to export diagram as a file or as raw data See [Export Modes](/js/api/global#exportmodes)</td>
+			<td class="type">string</td>
+			<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/js/api/global#exportmodes)</td>
 		</tr>
 		<tr>
 			<td class="name">options.region</td>
-			<td class="type">String</td>
-			<td class="description">to set the region of the diagram to be exported See [Region](/js/api/global#region)</td>
+			<td class="type">string</td>
+			<td class="description last">to set the region of the diagram to be exported. See [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">options.bounds</td>
-			<td class="type">Object</td>
-			<td class="description">to export any custom region of diagram</td>
+			<td class="type">object</td>
+			<td class="description last">to export any custom region of diagram</td>
 		</tr>
 		<tr>
 			<td class="name">options.margin</td>
-			<td class="type">Object</td>
-			<td class="description">to set margin to the exported data</td>
+			<td class="type">object</td>
+			<td class="description last">to set margin to the exported data</td>
 		</tr>
 	</tbody>
 </table>
+
+#### Returns:
+
+* String
 
 #### Example
 
@@ -7829,11 +9366,15 @@ Read a node/connector object by its name
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the node/connector that is to be identified</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node/connector that is to be identified</td>
 		</tr>
 	</tbody>
 </table>
+
+#### Returns:
+
+* Object
 
 #### Example
 
@@ -7862,19 +9403,19 @@ Fit the diagram content into diagram viewport
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">mode</td>
-			<td class="type">String [optional]</td>
-			<td class="description">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
+			<td class="name">[mode]</td>
+			<td class="type">string</td>
+			<td class="description last">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
 		</tr>
 		<tr>
-			<td class="name">region</td>
-			<td class="type">String [optional]</td>
-			<td class="description">to set whether the region to be fit will be based on diagram elements or page settings [Region](/js/api/global#region)</td>
+			<td class="name">[region]</td>
+			<td class="type">string</td>
+			<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings [Region](/js/api/global#region)</td>
 		</tr>
 		<tr>
-			<td class="name">margin</td>
-			<td class="type">Object [optional]</td>
-			<td class="description">to set the required margin</td>
+			<td class="name">[margin]</td>
+			<td class="type">object</td>
+			<td class="description last">to set the required margin</td>
 		</tr>
 	</tbody>
 </table>
@@ -7924,18 +9465,18 @@ Insert a label into a node's label collection at runtime
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the node to which the label has to be inserted</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node to which the label has to be inserted</td>
 		</tr>
 		<tr>
 			<td class="name">label</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to define the new label</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to define the new label</td>
 		</tr>
 		<tr>
-			<td class="name">index</td>
-			<td class="type">Number [optional]</td>
-			<td class="description">index to insert the label into the node</td>
+			<td class="name">[index]</td>
+			<td class="type">number</td>
+			<td class="description last">index to insert the label into the node</td>
 		</tr>
 	</tbody>
 </table>
@@ -7986,8 +9527,8 @@ Load the diagram
 	<tbody>
 		<tr>
 			<td class="name">data</td>
-			<td class="type">Object</td>
-			<td class="description">JSON data to load the diagram</td>
+			<td class="type">object</td>
+			<td class="description last">JSON data to load the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -8037,13 +9578,13 @@ Move the selected objects by either one pixel or by the pixels specified through
 	<tbody>
 		<tr>
 			<td class="name">direction</td>
-			<td class="type">String</td>
-			<td class="description">specifies the direction to move the selected objects ("left","right",top","bottom")</td>
+			<td class="type">string</td>
+			<td class="description last">specifies the direction to move the selected objects ("left","right",top","bottom")</td>
 		</tr>
 		<tr>
-			<td class="name">delta</td>
-			<td class="type">Number [optional]</td>
-			<td class="description">specifies the number of pixels by which the selected objects have to be moved</td>
+			<td class="name">[delta]</td>
+			<td class="type">number</td>
+			<td class="description last">specifies the number of pixels by which the selected objects have to be moved</td>
 		</tr>
 	</tbody>
 </table>
@@ -8075,14 +9616,14 @@ Paste the selected object from internal clipboard to diagram
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">object</td>
-			<td class="type">Object [optional]</td>
-			<td class="description">object to be added to diagram</td>
+			<td class="name">[object]</td>
+			<td class="type">object</td>
+			<td class="description last">object to be added to diagram</td>
 		</tr>
 		<tr>
-			<td class="name">rename</td>
-			<td class="type">Boolean [optional]</td>
-			<td class="description">to define whether the specified object is to be renamed or not</td>
+			<td class="name">[rename]</td>
+			<td class="type">boolean</td>
+			<td class="description last">to define whether the specified object is to be renamed or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -8168,9 +9709,9 @@ Remove either the given node/connector or the selected element from diagram
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">node</td>
-			<td class="type">Object [optional]</td>
-			<td class="description">the node/connector to be removed from diagram</td>
+			<td class="name">[node]</td>
+			<td class="type">object</td>
+			<td class="description last">the node/connector to be removed from diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -8203,8 +9744,8 @@ Remove a particular object from selection list
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">the node/connector to be removed from selection list</td>
+			<td class="type">object</td>
+			<td class="description last">the node/connector to be removed from selection list</td>
 		</tr>
 	</tbody>
 </table>
@@ -8278,6 +9819,10 @@ diagram.sameWidth();
 
 Returns the diagram as serialized JSON
 
+#### Returns:
+
+* Object
+
 #### Example
 
 {% highlight html %}
@@ -8306,8 +9851,8 @@ Bring the node into view
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">the node/connector to be brought into view</td>
+			<td class="type">object</td>
+			<td class="description last">the node/connector to be brought into view</td>
 		</tr>
 	</tbody>
 </table>
@@ -8426,13 +9971,13 @@ Move the specified label to edit mode
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">node/connector that contains the label to be edited</td>
+			<td class="type">object</td>
+			<td class="description last">node/connector that contains the label to be edited</td>
 		</tr>
 		<tr>
 			<td class="name">label</td>
-			<td class="type">Object</td>
-			<td class="description">to be edited</td>
+			<td class="type">object</td>
+			<td class="description last">to be edited</td>
 		</tr>
 	</tbody>
 </table>
@@ -8500,8 +10045,8 @@ Update diagram at runtime
 	<tbody>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to specify the diagram properties that have to be modified</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to specify the diagram properties that have to be modified</td>
 		</tr>
 	</tbody>
 </table>
@@ -8536,13 +10081,13 @@ Update Connectors at runtime
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the connector to be updated</td>
+			<td class="type">string</td>
+			<td class="description last">name of the connector to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to specify the connector properties that have to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to specify the connector properties that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -8575,21 +10120,25 @@ Update the given label at runtime
 	<tbody>
 		<tr>
 			<td class="name">nodeName</td>
-			<td class="type">String</td>
-			<td class="description">the name of node/connector which contains the label to be updated</td>
+			<td class="type">string</td>
+			<td class="description last">the name of node/connector which contains the label to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">label</td>
-			<td class="type">Object</td>
-			<td class="description">the label to be modified</td>
+			<td class="type">object</td>
+			<td class="description last">the label to be modified</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to specify the label properties that have to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to specify the label properties that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
+
+#### Returns:
+
+* Object
 
 #### Example
 
@@ -8622,13 +10171,13 @@ Update nodes at runtime
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the node that is to be updated</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node that is to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to specify the properties of node that have to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to specify the properties of node that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -8661,18 +10210,18 @@ Update a port with its modified properties at runtime
 	<tbody>
 		<tr>
 			<td class="name">nodeName</td>
-			<td class="type">String</td>
-			<td class="description">the name of node which contains the port to be updated</td>
+			<td class="type">string</td>
+			<td class="description last">the name of node which contains the port to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">Object</td>
-			<td class="description">the port to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">the port to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
-			<td class="type">Object</td>
-			<td class="description">JSON to specify the properties of the port that have to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">JSON to specify the properties of the port that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -8707,8 +10256,8 @@ Update the specified node as selected object
 	<tbody>
 		<tr>
 			<td class="name">name</td>
-			<td class="type">String</td>
-			<td class="description">name of the node to be updated as selected object</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node to be updated as selected object</td>
 		</tr>
 	</tbody>
 </table>
@@ -8740,9 +10289,9 @@ Update the selection at runtime
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">showUserHandles</td>
-			<td class="type">Boolean [optional]</td>
-			<td class="description">to specify whether to show the user handles or not</td>
+			<td class="name">[showUserHandles]</td>
+			<td class="type">boolean</td>
+			<td class="description last">to specify whether to show the user handles or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -8775,8 +10324,8 @@ Update userhandles with respect to the given node
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">node/connector with respect to which, the user handles have to be updated</td>
+			<td class="type">object</td>
+			<td class="description last">node/connector with respect to which, the user handles have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -8827,8 +10376,8 @@ Upgrade the diagram from old version
 	<tbody>
 		<tr>
 			<td class="name">data</td>
-			<td class="type">Object</td>
-			<td class="description">to be upgraded</td>
+			<td class="type">object</td>
+			<td class="description last">to be upgraded</td>
 		</tr>
 	</tbody>
 </table>
@@ -8862,8 +10411,8 @@ Used to zoomIn/zoomOut diagram
 	<tbody>
 		<tr>
 			<td class="name">zoom</td>
-			<td class="type">Object</td>
-			<td class="description">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
+			<td class="type">object</td>
+			<td class="description last">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
 		</tr>
 	</tbody>
 </table>
@@ -8901,8 +10450,8 @@ Triggers When auto scroll is changed
 	<tbody>
 		<tr>
 			<td class="name">delay</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the delay between subsequent auto scrolls</td>
+			<td class="type">string</td>
+			<td class="description last">Returns the delay between subsequent auto scrolls</td>
 		</tr>
 	</tbody>
 </table>
@@ -8934,33 +10483,33 @@ Triggers when a node, connector or diagram is clicked
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the clicked node, connector or diagram</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the clicked node, connector or diagram</td>
 		</tr>
 		<tr>
 			<td class="name">actualObject</td>
-			<td class="type">Number</td>
-			<td class="description">parameter returns the object that is actually clicked</td>
+			<td class="type">number</td>
+			<td class="description last">parameter returns the object that is actually clicked</td>
 		</tr>
 		<tr>
 			<td class="name">offsetX</td>
-			<td class="type">Number</td>
-			<td class="description">parameter returns the horizontal coordinate of the mouse pointer, relative to the diagram</td>
+			<td class="type">number</td>
+			<td class="description last">parameter returns the horizontal coordinate of the mouse pointer, relative to the diagram</td>
 		</tr>
 		<tr>
 			<td class="name">offsetY</td>
-			<td class="type">Number</td>
-			<td class="description">parameter returns the vertical coordinate of the mouse pointer, relative to the diagram</td>
+			<td class="type">number</td>
+			<td class="description last">parameter returns  the vertical coordinate of the mouse pointer, relative to the diagram</td>
 		</tr>
 		<tr>
 			<td class="name">count</td>
-			<td class="type">Number</td>
-			<td class="description">parameter returns the count of how many times the mouse button is pressed</td>
+			<td class="type">number</td>
+			<td class="description last">parameter returns the count of how many times the mouse button is pressed</td>
 		</tr>
 		<tr>
 			<td class="name">event</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
 		</tr>
 	</tbody>
 </table>
@@ -8992,23 +10541,23 @@ Triggers when the connection is changed
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the connection that is changed between nodes, ports or points</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the connection that is changed between nodes, ports or points</td>
 		</tr>
 		<tr>
 			<td class="name">connection</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the new source node or target node of the connector</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the new source node or target node of the connector</td>
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new source port or target port of the connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new source port or target port of the connector</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to cancel the change or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9040,18 +10589,18 @@ Triggers when the connector collection is changed
 	<tbody>
 		<tr>
 			<td class="name">changeType</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns whether the connector is inserted or removed</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns whether the connector is inserted or removed</td>
 		</tr>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the connector that is to be added or deleted</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the connector that is to be added or deleted</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to cancel the collection change or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to cancel the collection change or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9083,33 +10632,33 @@ Triggers when the connectors' source point is changed
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">returns the connector, the source point of which is being dragged</td>
+			<td class="type">object</td>
+			<td class="description last">returns the connector, the source point of which is being dragged</td>
 		</tr>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">returns the source node of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the source node of the element</td>
 		</tr>
 		<tr>
 			<td class="name">point</td>
-			<td class="type">Object</td>
-			<td class="description">returns the source point of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the source point of the element</td>
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">Object</td>
-			<td class="description">returns the source port of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the source port of the element</td>
 		</tr>
 		<tr>
 			<td class="name">dragState</td>
-			<td class="type">String</td>
-			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
+			<td class="type">string</td>
+			<td class="description last">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to cancel the change or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9141,33 +10690,33 @@ Triggers when the connectors' target point is changed
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the connector, the target point of which is being dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the connector, the target point of which is being dragged</td>
 		</tr>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">returns the target node of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the target node of the element</td>
 		</tr>
 		<tr>
 			<td class="name">point</td>
-			<td class="type">Object</td>
-			<td class="description">returns the target point of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the target point of the element</td>
 		</tr>
 		<tr>
 			<td class="name">port</td>
-			<td class="type">Object</td>
-			<td class="description">returns the target port of the element</td>
+			<td class="type">object</td>
+			<td class="description last">returns the target port of the element</td>
 		</tr>
 		<tr>
 			<td class="name">dragState</td>
-			<td class="type">String</td>
-			<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
+			<td class="type">string</td>
+			<td class="description last">returns the state of connection end point dragging(starting, dragging, completed)</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to cancel the change or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9199,18 +10748,18 @@ Triggers before opening the context menu
 	<tbody>
 		<tr>
 			<td class="name">diagram</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the diagram object</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the diagram object</td>
 		</tr>
 		<tr>
 			<td class="name">contextmenu</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the actual arguments from context menu</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the actual arguments from context menu</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that was clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that was clicked</td>
 		</tr>
 	</tbody>
 </table>
@@ -9242,33 +10791,33 @@ Triggers when a context menu item is clicked
 	<tbody>
 		<tr>
 			<td class="name">id</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the id of the selected context menu item</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the selected context menu item</td>
 		</tr>
 		<tr>
 			<td class="name">text</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the text of the selected context menu item</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the text of the selected context menu item</td>
 		</tr>
 		<tr>
 			<td class="name">parentId</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the parent id of the selected context menu item</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the parent id of the selected context menu item</td>
 		</tr>
 		<tr>
 			<td class="name">parentText</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the parent text of the selected context menu item</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the parent text of the selected context menu item</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that was clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that was clicked</td>
 		</tr>
 		<tr>
 			<td class="name">canExecute</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to execute the click event or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to execute the click event or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9300,13 +10849,13 @@ Triggers when a node, connector or diagram model is clicked twice
 	<tbody>
 		<tr>
 			<td class="name">actualObject</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that is actually clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that is actually clicked</td>
 		</tr>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the selected obejct</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the selected obejct</td>
 		</tr>
 	</tbody>
 </table>
@@ -9338,28 +10887,28 @@ Triggers while dragging the elements in diagram
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is being dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node or connector that is being dragged</td>
 		</tr>
 		<tr>
 			<td class="name">oldValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous position of the node/connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous position of the node/connector</td>
 		</tr>
 		<tr>
 			<td class="name">newValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new position of the node/connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new position of the node/connector</td>
 		</tr>
 		<tr>
 			<td class="name">dragState</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the state of drag event (Starting, dragging, completed)</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the state of drag event (Starting, dragging, completed)</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter returns whether or not to cancel the drag event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter returns whether or not to cancel the drag event</td>
 		</tr>
 	</tbody>
 </table>
@@ -9391,13 +10940,13 @@ Triggers when a symbol is dragged into diagram from symbol palette
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is dragged into diagram</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node or connector that is dragged into diagram</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter returns whether to add or remove the symbol from diagram</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter returns whether to add or remove the symbol from diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -9429,8 +10978,8 @@ Triggers when a symbol is dragged outside of the diagram.
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is dragged outside of the diagram</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node or connector that is dragged outside of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -9462,33 +11011,33 @@ Triggers when a symbol is dragged over diagram
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node or connector that is dragged over diagram</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node or connector that is dragged over diagram</td>
 		</tr>
 		<tr>
 			<td class="name">allowDrop</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether the symbol can be dropped at the current mouse position</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether the symbol can be dropped at the current mouse position</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node/connector over which the symbol is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node/connector over which the symbol is dragged</td>
 		</tr>
 		<tr>
 			<td class="name">oldValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous position of the node/connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous position of the node/connector</td>
 		</tr>
 		<tr>
 			<td class="name">newValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new position of the node/connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new position of the node/connector</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter returns whether or not to cancel the dragOver event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter returns whether or not to cancel the dragOver event</td>
 		</tr>
 	</tbody>
 </table>
@@ -9520,28 +11069,28 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns node or connector that is being dropped</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns node or connector that is being dropped</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter returns whether or not to cancel the drop event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter returns whether or not to cancel the drop event</td>
 		</tr>
 		<tr>
 			<td class="name">source</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object from where the element is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object from where the element is dragged</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object over which the objecct will be dropped</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object over which the objecct will be dropped</td>
 		</tr>
 		<tr>
 			<td class="name">sourceType</td>
 			<td class="type">Enum</td>
-			<td class="description">parameter returns the enum which defines the type of the source</td>
+			<td class="description last">parameter returns the enum which defines the type of the source</td>
 		</tr>
 	</tbody>
 </table>
@@ -9573,23 +11122,23 @@ Triggers when a child is added to or removed from a group
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that is added to/removed from a group</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that is added to/removed from a group</td>
 		</tr>
 		<tr>
 			<td class="name">oldParent</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the old parent group(if any) of the object</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the old parent group(if any) of the object</td>
 		</tr>
 		<tr>
 			<td class="name">newParent</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new parent group(if any) of the object</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new parent group(if any) of the object</td>
 		</tr>
 		<tr>
 			<td class="name">cause</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the cause of group change("group", unGroup")</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the cause of group change("group", unGroup")</td>
 		</tr>
 	</tbody>
 </table>
@@ -9621,23 +11170,23 @@ Triggers when a diagram element is clicked
 	<tbody>
 		<tr>
 			<td class="name">actualObject</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that was actually clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that was actually clicked</td>
 		</tr>
 		<tr>
 			<td class="name">selectedObject</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object that is selected</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object that is selected</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter returns whether or not to cancel the drop event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter returns whether or not to cancel the drop event</td>
 		</tr>
 		<tr>
 			<td class="name">event</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
 		</tr>
 	</tbody>
 </table>
@@ -9669,18 +11218,18 @@ Triggers when mouse enters a node/connector
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the target node or connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
 			<td class="name">source</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object from where the selected object is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object from where the selected object is dragged</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the target object over which the selected object is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the target object over which the selected object is dragged</td>
 		</tr>
 	</tbody>
 </table>
@@ -9712,18 +11261,18 @@ Triggers when mouse leaves node/connector
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the target node or connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
 			<td class="name">source</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object from where the selected object is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object from where the selected object is dragged</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the target object over which the selected object is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the target object over which the selected object is dragged</td>
 		</tr>
 	</tbody>
 </table>
@@ -9755,18 +11304,18 @@ Triggers when mouse hovers over a node/connector
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the target node or connector</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the target node or connector</td>
 		</tr>
 		<tr>
 			<td class="name">source</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object from where the element is dragged</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object from where the element is dragged</td>
 		</tr>
 		<tr>
 			<td class="name">target</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the object over which the element is being dragged.</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the object over which the element is being dragged.</td>
 		</tr>
 	</tbody>
 </table>
@@ -9798,18 +11347,18 @@ Triggers when node collection is changed
 	<tbody>
 		<tr>
 			<td class="name">changeType</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns whether the node is to be added or removed</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns whether the node is to be added or removed</td>
 		</tr>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node which needs to be added or deleted</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node which needs to be added or deleted</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter defines whether to cancel the collection change or not</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter defines whether to cancel the collection change or not</td>
 		</tr>
 	</tbody>
 </table>
@@ -9841,28 +11390,28 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the selected element</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the selected element</td>
 		</tr>
 		<tr>
 			<td class="name">cause</td>
 			<td class="type">Enum</td>
-			<td class="description">parameter returns the action is nudge or not</td>
+			<td class="description last">parameter returns the action is nudge or not</td>
 		</tr>
 		<tr>
 			<td class="name">newValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new value of the node property that is being changed</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new value of the node property that is being changed</td>
 		</tr>
 		<tr>
 			<td class="name">oldValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the old value of the property that is being changed</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the old value of the property that is being changed</td>
 		</tr>
 		<tr>
 			<td class="name">propertyName</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the name of the property that is changed</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the name of the property that is changed</td>
 		</tr>
 	</tbody>
 </table>
@@ -9894,23 +11443,23 @@ Triggers when the diagram elements are rotated
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node that is rotated</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node that is rotated</td>
 		</tr>
 		<tr>
 			<td class="name">oldValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous rotation angle</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous rotation angle</td>
 		</tr>
 		<tr>
 			<td class="name">newValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new rotation angle</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new rotation angle</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter to specify whether or not to cancel the event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
 	</tbody>
 </table>
@@ -9942,13 +11491,13 @@ Triggers when the diagram is zoomed or panned
 	<tbody>
 		<tr>
 			<td class="name">newValues</td>
-			<td class="type">Object</td>
-			<td class="description">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
+			<td class="type">object</td>
+			<td class="description last">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
 		</tr>
 		<tr>
 			<td class="name">oldValues</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
 		</tr>
 	</tbody>
 </table>
@@ -9980,23 +11529,23 @@ Triggers when a connector segment is edited
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">Parameter returns the connector that is being edited</td>
+			<td class="type">object</td>
+			<td class="description last">Parameter returns the connector that is being edited</td>
 		</tr>
 		<tr>
 			<td class="name">dragState</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the state of editing (starting, dragging, completed)</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the state of editing (starting, dragging, completed)</td>
 		</tr>
 		<tr>
 			<td class="name">point</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the current mouse position</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the current mouse position</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter to specify whether or not to cancel the event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
 	</tbody>
 </table>
@@ -10028,33 +11577,33 @@ Triggers when the selection is changed in diagram
 	<tbody>
 		<tr>
 			<td class="name">changeType</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns whether the item is selected or removed selection</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns whether the item is selected or removed selection</td>
 		</tr>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the item which is selected or to be selected</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the item which is selected or to be selected</td>
 		</tr>
 		<tr>
 			<td class="name">oldItems</td>
-			<td class="type">Array</td>
-			<td class="description">parameter returns the collection of nodes and connectors that have to be removed from selection list</td>
+			<td class="type">array</td>
+			<td class="description last">parameter returns the collection of nodes and connectors that have to be removed from selection list</td>
 		</tr>
 		<tr>
 			<td class="name">newItems</td>
-			<td class="type">Array</td>
-			<td class="description">parameter returns the collection of nodes and connectors that have to be added to selection list</td>
+			<td class="type">array</td>
+			<td class="description last">parameter returns the collection of nodes and connectors that have to be added to selection list</td>
 		</tr>
 		<tr>
 			<td class="name">selectedItems</td>
-			<td class="type">Array</td>
-			<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
+			<td class="type">array</td>
+			<td class="description last">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter to specify whether or not to cancel the selection change event</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter to specify whether or not to cancel the selection change event</td>
 		</tr>
 	</tbody>
 </table>
@@ -10086,33 +11635,33 @@ Triggers when a node is resized
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns node that was resized</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns node that was resized</td>
 		</tr>
 		<tr>
 			<td class="name">cancel</td>
-			<td class="type">Boolean</td>
-			<td class="description">parameter to cancel the size change</td>
+			<td class="type">boolean</td>
+			<td class="description last">parameter to cancel the size change</td>
 		</tr>
 		<tr>
 			<td class="name">newValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
 		</tr>
 		<tr>
 			<td class="name">oldValue</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
 		</tr>
 		<tr>
 			<td class="name">resizeState</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the state of resizing(starting,resizing,completed)</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the state of resizing(starting,resizing,completed)</td>
 		</tr>
 		<tr>
 			<td class="name">offset</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the difference between new and old value</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the difference between new and old value</td>
 		</tr>
 	</tbody>
 </table>
@@ -10144,18 +11693,18 @@ Triggers when label editing is ended
 	<tbody>
 		<tr>
 			<td class="name">element</td>
-			<td class="type">Object</td>
-			<td class="description">parameter returns the node that contains the text being edited</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the node that contains the text being edited</td>
 		</tr>
 		<tr>
 			<td class="name">value</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the new text</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the new text</td>
 		</tr>
 		<tr>
 			<td class="name">keyCode</td>
-			<td class="type">String</td>
-			<td class="description">parameter returns the keycode of the key entered</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the keycode of the key entered</td>
 		</tr>
 	</tbody>
 </table>

@@ -49,6 +49,7 @@ $('#dragable').ejDraggable();
 * module:ej.core
 
 
+* module:ej.draggable
 
 
 ## Members
@@ -219,7 +220,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 
 
 
-If Drag area is specified.
+The drag area is used to restrict the dragging element bounds.
 
 
 
@@ -441,7 +442,7 @@ dragableObj.destroy();
 
 
 
-This event is triggered when dragging events are destroyed.
+This event is triggered when dragging element is destroyed.
 
 <table class="params">
 <thead>
@@ -523,13 +524,30 @@ argument.cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the autocomplete model</td>
+<td class="description">returns the draggable model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
+</tr>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current draggable element object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event model values</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the exact mouse down target element</td>
 </tr>
 </tbody>
 </table>
@@ -582,13 +600,30 @@ argument.cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the autocomplete model</td>
+<td class="description">returns the draggable model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
+</tr>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current draggable element object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event model values</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the exact mouse down target element</td>
 </tr>
 </tbody>
 </table>
@@ -639,13 +674,30 @@ argument.cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the autocomplete model</td>
+<td class="description">returns the draggable model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
+</tr>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current draggable element object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event model values</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the exact mouse down target element</td>
 </tr>
 </tbody>
 </table>
@@ -690,22 +742,17 @@ This event is triggered when dragged.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the autocomplete model</td>
+<td class="description">returns the draggle element object</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event</td>
+argument.sender{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event model values</td>
 </tr>
+<tr>
 </tbody>
 </table>
 
@@ -726,3 +773,18 @@ $("#dragable").ejDraggable({
                 
                             
 {% endhighlight %}
+
+
+{% highlight html %}
+
+<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
+
+{% endhighlight %}
+
+
+
+<script type="text/javascript">
+prettyPrint();
+</script><script src="scripts/linenumber.js" type="text/javascript">
+</script><script src="scripts/main.js" type="text/javascript">
+</script>

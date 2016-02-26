@@ -93,7 +93,7 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-Sets the root class for ProgressBar theme. This cssClass API helps to use custom skinning option for ProgressBar control. By defining the root class using this API, we need to include this root class in CSS.
+Sets the root CSS class for ProgressBar theme, which is used customize. 
 
 
 
@@ -327,6 +327,24 @@ $("#progress").ejProgressBar({ height: 20,value: 50 });
 
 
 
+### htmlAttributes `object`
+{:#members:htmlattributes}
+
+It allows to define the characteristics of the progressBar control. It will helps to extend the capability of an HTML element.
+
+#### Default Value
+
+* {}
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
+//Initialize the ProgressBar with htmlAttributes specified
+$("#progress").ejProgressBar({ htmlAttributes: { title: "Demo" } });
+</script>{% endhighlight %}
 
 
 
@@ -475,7 +493,23 @@ $("#progress").ejProgressBar({ percentage : 35 });
 
 
 
+### showRoundedCorner `boolean`
+{:#members:showroundedcorner}
 
+Displays rounded corner borders on the progressBar control.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
+//Initialize the ProgressBar with the rounded corner support.
+$("#progress").ejProgressBar({ showRoundedCorner: true });
+</script>{% endhighlight %}
 
 
 
@@ -645,7 +679,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 
-Destroy the progressbar widget
+Allows you to destroy the ProgressBar widget.
 
 
 
@@ -879,6 +913,7 @@ $("#progress").ejProgressBar("getValue");
 
 Event triggers when the progress value changed
 
+
 <table class="params">
 <thead>
 <tr>
@@ -890,54 +925,37 @@ Event triggers when the progress value changed
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from progressbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-percentage{% endhighlight %}</td>
+argument.percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-</tbody>
-</table>
-</td>
-</tr>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -974,6 +992,7 @@ $("#progress").ejProgressBar({
 
 Event triggers when the process completes (at 100%)
 
+
 <table class="params">
 <thead>
 <tr>
@@ -985,54 +1004,37 @@ Event triggers when the process completes (at 100%)
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from progressbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-percentage{% endhighlight %}</td>
+argument.percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-</tbody>
-</table>
-</td>
-</tr>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -1069,6 +1071,7 @@ $("#progress").ejProgressBar({
 
 Event triggers when the progressbar are created
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1080,42 +1083,25 @@ Event triggers when the progressbar are created
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from progressbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the progressbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -1154,6 +1140,7 @@ $("#progress").ejProgressBar({
 
 Event triggers when the progressbar are destroyed
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1165,42 +1152,25 @@ Event triggers when the progressbar are destroyed
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from progressbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the progressbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -1239,6 +1209,7 @@ $("#progress").ejProgressBar({
 
 Event triggers when the process starts (from 0%)
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1250,54 +1221,37 @@ Event triggers when the process starts (from 0%)
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from progressbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ProgressBar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-percentage{% endhighlight %}</td>
+argument.percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current progress percentage</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-</tbody>
-</table>
-</td>
-</tr>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current progress value</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -1318,3 +1272,18 @@ value: 50,
 
 
 
+
+
+
+
+<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
+
+
+
+
+
+<script type="text/javascript">
+prettyPrint();
+</script><script src="scripts/linenumber.js" type="text/javascript">
+</script><script src="scripts/main.js" type="text/javascript">
+</script>
