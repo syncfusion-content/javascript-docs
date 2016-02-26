@@ -2496,6 +2496,32 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### textWrapSettings `Object`
+{:#members:textwrapsettings}
+
+Gets or sets an object that indicates whether to auto wrap the grid header or content or both
+
+### textWrapSettings.wrapMode `enum`
+{:#members:textWrapSettings-wrapmode}
+
+This specifies the grid to apply the auto wrap for grid content or header or both.
+
+#### Default Value:
+{:.param}
+* ej.Grid.WrapMode.Both
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowTextWrap: true, 
+   textWrapSettings:{ wrapMode: ej.Grid.WrapMode.Both }                
+});
+</script>
+{% endhighlight %}
+
 ### isResponsive `Boolean`
 {:#members:isresponsive}
 
