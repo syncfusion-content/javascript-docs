@@ -4195,7 +4195,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kf0d05wi)
 
 
 ### commonSeriesOptions.emptyPointSettings `object`
-{:#members:commonSeriesOptions-emptyPointSettings}
+{:#members:commonseriesoptions-emptypointsettings}
 
 
 
@@ -4204,7 +4204,7 @@ Options for customizing the empty point in the series.
 
 
 ### commonSeriesOptions.emptyPointSettings.visible `boolean`
-{:#members:commonSeriesOptions-emptypointsettings-visible}
+{:#members:commonseriesoptions-emptypointsettings-visible}
 
 
 
@@ -4244,7 +4244,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
 
 ### commonSeriesOptions.emptyPointSettings.displayMode `enum`
-{:#members:commonSeriesOptions-emptypointsettings-displaymode}
+{:#members:commonseriesoptions-emptypointsettings-displaymode}
 
 
 
@@ -4282,7 +4282,7 @@ See [Mode](http://help.syncfusion.com/js/api/global#members:mode).
 
  
 ### commonSeriesOptions.emptyPointSettings.style `object`
-{:#members:commonSeriesOptions-emptypointsettings-style}
+{:#members:commonseriesoptions-emptypointsettings-style}
 
 
 
@@ -4291,7 +4291,7 @@ Options for customizing the color and border of the empty point in the series.
 
 
 ### commonSeriesOptions.emptyPointSettings.style.color `string`
-{:#members:commonSeriesOptions-emptypointsettings-style-color}
+{:#members:commonseriesoptions-emptypointsettings-style-color}
 
 
 
@@ -4327,7 +4327,7 @@ commonSeriesOptions : {
  
  
 ### commonSeriesOptions.emptyPointSettings.style.border `object`
-{:#members:commonSeriesOptions-emptypointsettings-style-border}
+{:#members:commonseriesoptions-emptypointsettings-style-border}
 
 
 
@@ -4336,7 +4336,7 @@ Options for customizing border of the empty point in the series.
  
 
 ### commonSeriesOptions.emptyPointSettings.style.border.color `string`
-{:#members:commonSeriesOptions-emptypointsettings-style-border-color}
+{:#members:commonseriesoptions-emptypointsettings-style-border-color}
 
 
 
@@ -4372,7 +4372,7 @@ commonSeriesOptions : {
  
 
 ### commonSeriesOptions.emptyPointSettings.style.border.width `number`
-{:#members:commonSeriesOptions-emptypointsettings-style-border-color}
+{:#members:commonseriesoptions-emptypointsettings-style-border-color}
 
 
 
@@ -4409,7 +4409,7 @@ commonSeriesOptions : {
 
  
 ### commonSeriesOptions.positiveFill `string`
-{:#members:commonSeriesOptions-positivefill}
+{:#members:commonseriesoptions-positivefill}
 
 
 
@@ -4444,7 +4444,7 @@ $("#container").ejChart({
  
  
 ### commonSeriesOptions.connectorLine `object`
-{:#members:commonSeriesOptions-connectorline}
+{:#members:commonseriesoptions-connectorline}
 
 
 
@@ -4455,7 +4455,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.connectorLine-width `number`
-{:#members:commonSeriesOptions-connectorline-width}
+{:#members:commonseriesoptions-connectorline-width}
 
 
 
@@ -4488,7 +4488,7 @@ commonSeriesOptions : {
  
 
 ### commonSeriesOptions.connectorLine-color `string`
-{:#members:commonSeriesOptions-connectorline-color}
+{:#members:commonseriesoptions-connectorline-color}
 
 
 
@@ -4522,7 +4522,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.connectorLine-dashArray `string`
-{:#members:commonSeriesOptions-connectorline-dasharray}
+{:#members:commonseriesoptions-connectorline-dasharray}
 
 
 
@@ -4557,7 +4557,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.connectorLine-opacity `number`
-{:#members:commonSeriesOptions-connectorline-opacity}
+{:#members:commonseriesoptions-connectorline-opacity}
 
 
 
@@ -4591,7 +4591,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.errorBar `object`
-{:#members:commonSeriesOptions-errorbar}
+{:#members:commonseriesoptions-errorbar}
 
 
 Options to customize the error bar in series.
@@ -4599,7 +4599,7 @@ Options to customize the error bar in series.
 
 
 ### commonSeriesOptions.errorBar-visibility `boolean`
-{:#members:commonSeriesOptions-errorbar-visibility}
+{:#members:commonseriesoptions-errorbar-visibility}
 
 
 Show/hides the error bar
@@ -4630,7 +4630,7 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
    
 ### commonSeriesOptions.errorBar-type `enum`
-{:#members:commonSeriesOptions-errorbar-type}
+{:#members:commonseriesoptions-errorbar-type}
 
 
 Specifies the type of error bar.
@@ -4660,7 +4660,7 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 ### commonSeriesOptions.errorBar-mode `enum`
-{:#members:commonSeriesOptions-errorbar-mode}
+{:#members:commonseriesoptions-errorbar-mode}
 
 
 Specifies the mode of error bar.
@@ -4691,7 +4691,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.errorBar-direction `enum`
-{:#members:commonSeriesOptions-errorbar-direction}
+{:#members:commonseriesoptions-errorbar-direction}
 
 
 Specifies the direction of error bar.
@@ -4722,7 +4722,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.errorBar-verticalErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-verticalerrorvalue}
+{:#members:commonseriesoptions-errorbar-verticalerrorvalue}
 
 
 Value of vertical error bar.
@@ -4752,7 +4752,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 ### commonSeriesOptions.errorBar-horizontalErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-horizontalerrorvalue}
+{:#members:commonseriesoptions-errorbar-horizontalerrorvalue}
 
 
 Value of horizontal  error bar.
@@ -4783,7 +4783,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-horizontalPositiveErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-horizontalpositiveerrorvalue}
+{:#members:commonseriesoptions-errorbar-horizontalpositiveerrorvalue}
 
 
 Value of positive horizontal error bar.
@@ -4815,7 +4815,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-horizontalNegativeErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-horizontalnegativeerrorvalue}
+{:#members:commonseriesoptions-errorbar-horizontalnegativeerrorvalue}
 
 
 Value of negative horizontal error bar.
@@ -4846,7 +4846,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-verticalPositiveErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-verticalpositiveerrorvalue}
+{:#members:commonseriesoptions-errorbar-verticalpositiveerrorvalue}
 
 
 Value of positive vertical error bar.
@@ -4878,7 +4878,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-verticalNegativeErrorValue `number`
-{:#members:commonSeriesOptions-errorbar-verticalnegativeerrorvalue}
+{:#members:commonseriesoptions-errorbar-verticalnegativeerrorvalue}
 
 
 Value of negative vertical error bar.
@@ -4909,7 +4909,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-fill `string`
-{:#members:commonSeriesOptions-errorbar-fill}
+{:#members:commonseriesoptions-errorbar-fill}
 
 
 Fill color of the error bar.
@@ -4943,7 +4943,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
     
 
 ### commonSeriesOptions.errorBar-width `number`
-{:#members:commonSeriesOptions-errorbar-width}
+{:#members:commonseriesoptions-errorbar-width}
 
 
 Width of the error bar.
@@ -4976,7 +4976,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.errorBar-cap `object`
-{:#members:commonSeriesOptions-errorbar-cap}
+{:#members:commonseriesoptions-errorbar-cap}
 
 
 Options for customizing the error bar cap.
@@ -4985,7 +4985,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### commonSeriesOptions.errorBar-cap-visible `boolean`
-{:#members:commonSeriesOptions-errorbar-cap-visible}
+{:#members:commonseriesoptions-errorbar-cap-visible}
 
 Show/Hides the error bar cap.
 
@@ -5015,7 +5015,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.errorBar-cap-width `number`
-{:#members:commonSeriesOptions-errorbar-cap-width}
+{:#members:commonseriesoptions-errorbar-cap-width}
 
 Width of the error bar cap.
 
@@ -5046,7 +5046,7 @@ $("#container").ejChart({
  
  
 ### commonSeriesOptions.errorBar-cap-length `number`
-{:#members:commonSeriesOptions-errorbar-cap-length}
+{:#members:commonseriesoptions-errorbar-cap-length}
 
 Length of the error bar cap.
 
@@ -5076,7 +5076,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.errorBar-cap-fill `string`
-{:#members:commonSeriesOptions-errorbar-cap-fill}
+{:#members:commonseriesoptions-errorbar-cap-fill}
 
 Color of the error bar cap.
 
@@ -5498,6 +5498,39 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 {% endhighlight %}
 
 
+### commonseriesoptions.highlightSettings.type `enum`
+{:#members:commonseriesoptions-highlightsettings-type}
+
+
+
+Specifies the type of highlight.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+commonseriesoptions:{
+  highlightSettings:{
+              type : 'multiple'
+             }
+	}
+  }); 
+
+{% endhighlight %}
+
 
 ### commonSeriesOptions.highlightSettings.mode `enum`
 {:#members:commonseriesoptions-highlightsettings-mode}
@@ -5762,6 +5795,39 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 });
 {% endhighlight %}
 
+
+### commonseriesoptions.selectionSettings.type `enum`
+{:#members:commonseriesoptions-selectionSettings-type}
+
+
+
+Specifies the type of selection.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+commonseriesoptions:{
+  selectionSettings:{
+              type : 'multiple'
+             }
+	}
+  }); 
+
+{% endhighlight %}
 
 
 ### commonSeriesOptions.selectionSettings.mode `enum`
@@ -8942,7 +9008,7 @@ $("#container").ejChart({
 
 
 ### title.border.cornerRadius `number`
-{:#members:title-border-cornerRadius}
+{:#members:title-border-cornerradius}
 
 
 
@@ -17680,7 +17746,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
 
 ### series.emptyPointSettings `object`
-{:#members:series-emptyPointSettings}
+{:#members:series-emptypointsettings}
 
 
 
@@ -18678,6 +18744,71 @@ series :[{ points:[{ border :{width : 2} }] }]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+
+
+### series.points.showIntermediateSum `boolean`
+{:#members:series-points-showintermediatesum}
+
+
+
+
+To show/hide the intermediate summary from the last intermediate point.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{ points:[{ showIntermediateSum : true }] }]                  
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
+
+### series.points.showTotalSum `boolean`
+{:#members:series-points-showtotalsum}
+
+
+
+
+To show/hide the total summary of the waterfall series.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{ points:[{ showTotalSum : true }] }]                  
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
 
 
 
@@ -21352,7 +21483,38 @@ series :[{highlightSettings:{enable:true}}]
 });
 {% endhighlight %}
 
+### series.highlightSettings.type `enum`
+{:#members:series-highlightsettings-type}
 
+
+
+Specifies the type of highlight.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+    series: [{  
+	  highlightSettings:{
+              type : 'multiple'
+             }
+	   }]
+  }); 
+
+{% endhighlight %}
 
 ### series.highlightSettings.mode `enum`
 {:#members:series-highlightsettings-mode}
@@ -21747,6 +21909,38 @@ series :[{selectionSettings:{border:{color:"black"}}}]
 });
 {% endhighlight %}
 
+### series.selectionSettings.type `enum`
+{:#members:series-selectionsettings-type}
+
+
+
+Specifies the type of selection.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+     series: [{
+      selectionSettings:{
+              type : 'multiple'
+             }
+	  }]
+  }); 
+
+{% endhighlight %}
 
 
 ### series.selectionSettings.border.width `string`
@@ -22926,7 +23120,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 ### zooming.toolbarItems `array`
-{:#members:zooming-toolbarItems}
+{:#members:zooming-toolbaritems}
 
 
 
