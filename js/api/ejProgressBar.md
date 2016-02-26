@@ -679,7 +679,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 
-Destroy the progressbar widget
+Allows you to destroy the ProgressBar widget.
 
 
 

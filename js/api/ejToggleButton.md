@@ -849,7 +849,7 @@ Specifies the width of the ToggleButton.
 
 
 
-To destroy the toggle button widget, all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Allows you to destroy the ToggleButton widget.
 
 
 

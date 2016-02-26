@@ -1202,7 +1202,7 @@ $("#toolbar1").ejToolbar("deselectItemByID","left"); // To Deselect the Toolbar 
 
 
 
-Destroy the Toolbar widget, all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Allows you to destroy the Toolbar widget.
 
 
 

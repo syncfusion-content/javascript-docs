@@ -1145,7 +1145,7 @@ accObj.collapseAll(); //Calls the collapseAll method of Accordion.
 ### destroy()
 {:#methods:destroy}
 
-destroy the Accordion widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Allows you to destroy the Accordion widget.
 
 #### Example
 
