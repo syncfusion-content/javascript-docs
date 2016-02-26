@@ -99,7 +99,7 @@ $(element).ejToolbar()
 
 
 
-Sets the root class for Toolbar control theme
+Sets the root CSS class for Toolbar control to acheive the custom theme.
 
 
 #### Default Value
@@ -163,7 +163,7 @@ Sets the root class for Toolbar control theme
 
 
 
-Specifies dataSource value for the Toolbar during initialization.
+Specifies dataSource value for the Toolbar control during initialization.
 
 
 #### Default Value
@@ -295,7 +295,7 @@ Specifies the Toolbar control state.
 
 
 
-Specifies enableRTL property for the Toolbar during initialization.
+Specifies enableRTL property to align the Toolbar control from right to left direction.
 
 
 #### Default Value
@@ -359,7 +359,7 @@ Specifies enableRTL property for the Toolbar during initialization.
 
 
 
-Specifies the to enableSeparator.
+Allows to separate the each UL items in the Toolbar control.
 
 
 #### Default Value
@@ -509,7 +509,7 @@ Defines the group name for the item.
 
 
 
-Defines the html attributes such as id, class, styles for the item.
+Defines the html attributes such as id, class, styles for the item to extend the capability.
 
 
 
@@ -561,7 +561,7 @@ Defines the imageURL for the image location.
 
 
 
-Defines the sprite css for the image tag.
+Defines the sprite CSS for the image tag.
 
 
 
@@ -594,7 +594,7 @@ Defines the tooltip text for the tag.
 
 
 
-### height `number`
+### height `number/string`
 {:#members:height}
 
 
@@ -663,7 +663,7 @@ Specifies the height of the Toolbar.
 
 
 
-Specifies the to show or hide.
+Specifies whether the Toolbar control is need to be show or hide.
 
 
 #### Default Value
@@ -727,7 +727,7 @@ Specifies the to show or hide.
 
 
 
-Enables/Disables the responsive support for RTE control toolbar items during the window resizing time.
+Enables/Disables the responsive support for Toolbar items during the window resizing time.
 
 
 #### Default Value
@@ -791,7 +791,7 @@ Enables/Disables the responsive support for RTE control toolbar items during the
 
 
 
-Specifies the to toolbar orientation.See orientation
+Specifies the Toolbar orientation. See orientation
 
 
 #### Default Value
@@ -855,7 +855,7 @@ Specifies the to toolbar orientation.See orientation
 
 
 
-Specifies Specifies the query to retrieve the data from the online server. The query is used only when the online dataSource is used.
+Specifies the query to retrieve the data from the online server. The query is used only when the online dataSource is used.
 
 
 #### Default Value
@@ -930,7 +930,7 @@ var query = ej.Query()
 
 
 
-Specifies showRoundedCorner property for the Toolbar during initialization.
+Displays the Toolbar with rounded corners.
 
 
 #### Default Value
@@ -986,6 +986,66 @@ Specifies showRoundedCorner property for the Toolbar during initialization.
 </script>{% endhighlight %}
 
 
+### width `number/string`
+{:#members:width}
+
+
+
+
+Specifies the width of the Toolbar.
+
+
+#### Default Value
+
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="toolbar1">
+<ul>
+   <li id="Left" title="Left">
+       <div class="ToolbarItems LeftAlign_tool"></div>
+  </li>
+   <li id="Center" title="Center">
+       <div class="ToolbarItems CenterAlign_tool"></div>
+   </li>
+   <li id="Right" title="Right">
+       <div class="ToolbarItems RightAlign_tool"></div>
+   </li>
+   <li id="Justify" title="Justify">
+       <div class="ToolbarItems Justify_tool"></div>
+   </li>
+</ul>
+<ul>
+   <li id="Bold" title="Bold">
+       <div class="ToolbarItems Bold_tool"></div>
+   </li>
+   <li id="Italic" title="Italic">
+       <div class="ToolbarItems Italic_tool"></div>
+   </li>
+   <li id="StrikeThrough" title="Strike Through">
+       <div class="ToolbarItems StrikeThrough_tool"></div>
+   </li>
+   <li id="UndeLine" title="UnderLine">
+       <div class="ToolbarItems Underline_tool"></div>
+   </li>
+</ul>
+</div>
+<script>
+//To set width API value during initialization  
+        $("#toolbar1").ejToolbar({ width: 300 });                                        
+</script>{% endhighlight %}
+
 
 ## Methods
 
@@ -998,8 +1058,26 @@ Specifies showRoundedCorner property for the Toolbar during initialization.
 
 
 
-To Deselect the Toolbar item
+Deselect the specified Toolbar item.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">The element need to be deselected</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1053,9 +1131,25 @@ $("#toolbar1").ejToolbar("deselectItem",$("li")[3]); //Deselect the Toolbar item
 
 
 
-To Deselect the Toolbar item by id
+Deselect the Toolbar item based on specified id.
 
-
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">The ID of the element need to be deselected</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -1108,7 +1202,7 @@ $("#toolbar1").ejToolbar("deselectItemByID","left"); // To Deselect the Toolbar 
 
 
 
-destroy the Toolbar widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroy the Toolbar widget, all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
 
@@ -1165,7 +1259,7 @@ var toolbarObj = $("#toolbar1").data("ejToolbar");
 
 
 
-To Disable all item in the Toolbar
+To disable all items in the Toolbar control.
 
 
 
@@ -1219,9 +1313,26 @@ $("#toolbar1").ejToolbar("disable"); //Disable all item in the Toolbar
 
 
 
-To disable an item the Toolbar
+Disable the specified Toolbar item. 
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">The element need to be disabled</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -1273,8 +1384,26 @@ $("#toolbar1").ejToolbar("disableItem",$("li")[3]);// to disable the third item 
 
 
 
-To Disable the Toolbar item by item id in the Toolbar
+Disable the Toolbar item based on specified item id in the Toolbar.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">The ID of the element need to be disabled</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1327,7 +1456,7 @@ $("#toolbar1").ejToolbar("disableItemByID","left"); //Disable the Toolbar item b
 
 
 
-To enable all item in the Toolbar
+Enable the Toolbar if it is in disabled state.
 
 
 
@@ -1381,8 +1510,26 @@ $("#toolbar1").ejToolbar("enable"); //enable all item in the Toolbar
 
 
 
-To enable an item the Toolbar
+Enable the Toolbar item based on specified item.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">The element need to be enabled</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1435,8 +1582,26 @@ $("#toolbar1").ejToolbar("enableItem",$("li")[3]);// to enable the third item in
 
 
 
-To Disable the Toolbar item by item id in the Toolbar
+Enable the Toolbar item based on specified item id in the Toolbar.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">The ID of the element need to be enabled</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1530,37 +1695,6 @@ To hide the Toolbar
 </ul>
 </div>
 <script>
-<div id="toolbar1">
-<ul>
-   <li id="Left" title="Left">
-       <div class="ToolbarItems LeftAlign_tool"></div>
-  </li>
-   <li id="Center" title="Center">
-       <div class="ToolbarItems CenterAlign_tool"></div>
-   </li>
-   <li id="Right" title="Right">
-       <div class="ToolbarItems RightAlign_tool"></div>
-   </li>
-   <li id="Justify" title="Justify">
-       <div class="ToolbarItems Justify_tool"></div>
-   </li>
-        </ul>
-        <ul>
-   <li id="Bold" title="Bold">
-       <div class="ToolbarItems Bold_tool"></div>
-   </li>
-   <li id="Italic" title="Italic">
-       <div class="ToolbarItems Italic_tool"></div>
-   </li>
-   <li id="StrikeThrough" title="Strike Through">
-       <div class="ToolbarItems StrikeThrough_tool"></div>
-   </li>
-   <li id="UndeLine" title="UnderLine">
-       <div class="ToolbarItems Underline_tool"></div>
-   </li>
-</ul>
-</div>
-<script>
 $("#toolbar1").ejToolbar("hide");// to hide the toolbar
 </script>{% endhighlight %}
 
@@ -1573,8 +1707,26 @@ $("#toolbar1").ejToolbar("hide");// to hide the toolbar
 
 
 
-To Remove the Toolbar item
+Remove the item from toolbar, based on specified item. 
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">The element need to be removed</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1627,8 +1779,26 @@ $("#toolbar1").ejToolbar("removeItem",$("li")[3]); // Remove the Toolbar item
 
 
 
-To Remove the Toolbar item by id
+Remove the item from toolbar, based on specified item id in the Toolbar.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">The ID of the element need to be removed</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1681,8 +1851,26 @@ $("#toolbar1").ejToolbar("removeItemByID","left"); // Remove the Toolbar item by
 
 
 
-To Select the Toolbar item
+Selects the item from toolbar, based on specified item.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">The element need to be selected</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1735,8 +1923,26 @@ $("#toolbar1").ejToolbar("selectItem",$("li")[3]);//Select the Toolbar item.
 
 
 
-To Select the Toolbar item by id
+Selects the item from toolbar, based on specified item id in the Toolbar.
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">The ID of the element need to be selected</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1789,7 +1995,7 @@ $("#toolbar1").ejToolbar("selectItemByID","left");//Select the Toolbar item by i
 
 
 
-To show the Toolbar
+To show the Toolbar.
 
 
 
@@ -1860,60 +2066,48 @@ Fires after Toolbar control is clicked.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Toolbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">return the event object</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+argument.currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+argument.status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1981,42 +2175,25 @@ Fires after Toolbar control is created.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Toolbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -2073,6 +2250,7 @@ type{% endhighlight %}</td>
 
 Fires when the Toolbar is destroyed successfully.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -2084,42 +2262,25 @@ Fires when the Toolbar is destroyed successfully.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Toolbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -2174,7 +2335,7 @@ $("#toolbar1").ejToolbar({
 
 
 
-Fires after Toolbar control is itemHovered.
+Fires after Toolbar control item is hovered.
 
 <table class="params">
 <thead>
@@ -2187,57 +2348,39 @@ Fires after Toolbar control is itemHovered.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Toolbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+argument.currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+argument.status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2295,7 +2438,8 @@ status{% endhighlight %}</td>
 
 
 
-Fires after Toolbar control is itemLeave.
+Fires after mouse leave from Toolbar control item.
+
 
 <table class="params">
 <thead>
@@ -2308,57 +2452,39 @@ Fires after Toolbar control is itemLeave.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from Toolbar
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+argument.currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+argument.status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>

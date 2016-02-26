@@ -44,6 +44,7 @@ $(element).ejToggleButton()
 $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});   
     
 </script> 
+
 {% endhighlight %}
 
 
@@ -71,8 +72,9 @@ $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});
 
 
 
+Specify the icon in active state to the toggle button and it will be aligned from left margin of the button.
 
-Specify the activePrefixIcon to toggle button to achieve custom theme.
+N>  This is applicable for the content type&rsquo;s imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -102,7 +104,9 @@ Specify the activePrefixIcon to toggle button to achieve custom theme.
    defaultPrefixIcon: "e-mediaplay e-uiLight",
    activePrefixIcon: "e-mediapause e-uiLight",
  });                    
-</script> {% endhighlight %}
+</script>
+
+ {% endhighlight %}
 
 
 
@@ -113,7 +117,9 @@ Specify the activePrefixIcon to toggle button to achieve custom theme.
 
 
 
-Specify the activeSuffixIcon to toggle button to achieve custom theme.
+Specify the icon in active state to the toggle button and it will be aligned from right margin of the button.
+
+N>  This is applicable for the content type&rsquo;s imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -142,6 +148,7 @@ Specify the activeSuffixIcon to toggle button to achieve custom theme.
    activeSuffixIcon: "e-mediapause e-uiLight",
  });                    
 </script> 
+
 {% endhighlight %}
 
 
@@ -153,7 +160,7 @@ Specify the activeSuffixIcon to toggle button to achieve custom theme.
 
 
 
-Specifies the activeText of the ToggleButton.
+Sets the text when ToggleButton is in active state i.e.,checked state.
 
 
 #### Default Value
@@ -215,6 +222,7 @@ Specifies the contentType of the ToggleButton. See <a href="global.html#ContentT
 // Set the button contentType on initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",contentType : ej.ContentType.TextOnly });                    
 </script> 
+
 {% endhighlight %}
 
 
@@ -226,7 +234,7 @@ Specifies the contentType of the ToggleButton. See <a href="global.html#ContentT
 
 
 
-Specify the CSS class to toggle button to achieve custom theme.
+Specify the CSS class to the ToggleButton to achieve custom theme.
 
 
 #### Default Value
@@ -251,6 +259,7 @@ Specify the CSS class to toggle button to achieve custom theme.
 // Set the CSS class during initialization.                     
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",cssClass : "gradient-lime" });                        
 </script> 
+
 {% endhighlight %}
 
 
@@ -262,7 +271,9 @@ Specify the CSS class to toggle button to achieve custom theme.
 
 
 
-Specify the defaultPrefixIcon to toggle button to achieve custom theme.
+Specify the icon in default state to the toggle button and it will be aligned from left margin of the button.
+
+N>  This is applicable for the content type&rsquo;s imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -292,6 +303,7 @@ Specify the defaultPrefixIcon to toggle button to achieve custom theme.
    activePrefixIcon: "e-mediapause e-uiLight",
  });                    
 </script> 
+
 {% endhighlight %}
 
 
@@ -303,7 +315,9 @@ Specify the defaultPrefixIcon to toggle button to achieve custom theme.
 
 
 
-Specify the defaultSuffixIcon to toggle button to achieve custom theme.
+Specify the icon in default state to the toggle button and it will be aligned from right margin of the button.
+
+N>  This is applicable for the content type&rsquo;s imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -333,6 +347,7 @@ Specify the defaultSuffixIcon to toggle button to achieve custom theme.
    activeSuffixIcon: "e-mediapause e-uiLight",
  });                    
 </script> 
+
 {% endhighlight %}
 
 
@@ -344,7 +359,7 @@ Specify the defaultSuffixIcon to toggle button to achieve custom theme.
 
 
 
-Specifies the defaultText of the ToggleButton.
+Specifies the text of the ToggleButton, when the control is a default state. i.e., unChecked state.
 
 
 #### Default Value
@@ -417,8 +432,8 @@ Specifies the state of the ToggleButton.
 
 
 
-
-Specify the enablePersistence to Togglebutton to save current model value to browser cookies for state maintains
+Save current model value to browser cookies for maintaining states. When refreshing the ToggleButton control page, the model value is applied from browser cookies or HTML 5
+local storage.
 
 
 #### Default Value
@@ -443,6 +458,7 @@ Specify the enablePersistence to Togglebutton to save current model value to bro
 // Set the rounded corner during initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",enablePersistence : true });                         
 </script> 
+
 {% endhighlight %}
 
 
@@ -454,7 +470,7 @@ Specify the enablePersistence to Togglebutton to save current model value to bro
 
 
 
-Specify the Right to Left Direction to Togglebutton
+Specify the Right to Left direction of the Togglebutton.
 
 
 #### Default Value
@@ -479,12 +495,13 @@ Specify the Right to Left Direction to Togglebutton
 // Set the enableRTL during initialization.                     
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enableRTL : true });                  
 </script> 
+
 {% endhighlight %}
 
 
 
 
-### height `string`
+### height `number/string`
 {:#members:height}
 
 
@@ -514,7 +531,9 @@ Specifies the height of the ToggleButton.
 <script> 
 //To set height API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",height: "28px" });                                           
-</script>         {% endhighlight %}
+</script>        
+
+ {% endhighlight %}
 
 
 
@@ -525,7 +544,7 @@ Specifies the height of the ToggleButton.
 
 
 
-Specifies the HTML Attributes of the ToggleButton
+It allows to define the characteristics of the ToggleButton control. It will helps to extend the capability of an HTML element.
 
 
 #### Default Value
@@ -550,6 +569,7 @@ Specifies the HTML Attributes of the ToggleButton
 // To Set HtmlAttributes on initialization.                     
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",htmlAttributes: {disabled:"disabled"} });                    
 </script> 
+
 {% endhighlight %}
 
 
@@ -561,7 +581,9 @@ Specifies the HTML Attributes of the ToggleButton
 
 
 
-Specifies the image position of the ToggleButton. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See imagePositions
+Specifies the image position of the ToggleButton. 
+
+N>  This image position is applicable only with the contentType property value set as textandimage. The images can be positioned in both imageLeft and imageRight options.
 
 
 #### Default Value
@@ -593,6 +615,7 @@ Specifies the image position of the ToggleButton. This image position is applica
    activePrefixIcon: "e-mediapause e-uiLight"
 });                     
 </script> 
+
 {% endhighlight %}
 
 
@@ -602,11 +625,8 @@ Specifies the image position of the ToggleButton. This image position is applica
 {:#members:preventtoggle}
 
 
-
-
-Specifies the preventToggle of the ToggleButton.
-
-
+Allows to prevents the control switched to checked (active) state.
+ 
 #### Default Value
 
 
@@ -629,6 +649,7 @@ Specifies the preventToggle of the ToggleButton.
 //To set preventToggle API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",preventToggle: false});                                              
 </script> 
+
  {% endhighlight %}
 
 
@@ -640,7 +661,7 @@ Specifies the preventToggle of the ToggleButton.
 
 
 
-Specify the rounded corner to Togglebutton
+Displays the ToggleButton with rounded corners.
 
 
 #### Default Value
@@ -665,6 +686,7 @@ Specify the rounded corner to Togglebutton
 // Set the rounded corner during initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",showRoundedCorner : true });                         
 </script> 
+
 {% endhighlight %}
 
 
@@ -701,6 +723,7 @@ Specifies the size of the ToggleButton. See <a href="global.html#ButtonSize">But
 //To set size API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",size: ej.ButtonSize.Mini});                                                                  
 </script> 
+
 {% endhighlight %}
 
 
@@ -711,8 +734,7 @@ Specifies the size of the ToggleButton. See <a href="global.html#ButtonSize">But
 
 
 
-
-Specifies the toggleState of the ToggleButton.
+It allows to define the ToggleButton state to checked(Active) or unchecked(Default) at initial time.
 
 
 #### Default Value
@@ -737,7 +759,8 @@ Specifies the toggleState of the ToggleButton.
 //To set toggleState API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",toggleState: false });       
 </script> 
-    {% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -773,12 +796,13 @@ Specifies the type of the ToggleButton. See <a href="global.html#ButtonType">But
 //To set type API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",type:ej.ButtonType.Submit});                                                                 
 </script> 
+
 {% endhighlight %}
 
 
 
 
-### width `string`
+### width ``number/string``
 {:#members:width}
 
 
@@ -809,6 +833,7 @@ Specifies the width of the ToggleButton.
 //To set width API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",width: "100px" });                                           
 </script> 
+
  {% endhighlight %}
 
 
@@ -824,7 +849,7 @@ Specifies the width of the ToggleButton.
 
 
 
-To destroy the toggle button
+To destroy the toggle button widget, all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
 
@@ -842,6 +867,7 @@ $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.destroy(); // destroy the toggle button
 </script>
+
 {% endhighlight %}
 
 
@@ -853,7 +879,9 @@ toggleObj.destroy(); // destroy the toggle button
 // destroy the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("destroy"); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -864,7 +892,7 @@ $("#toggle").ejToggleButton("destroy");
 
 
 
-To disable the toggle button
+To disable the ToggleButton to prevent all user interactions.
 
 
 
@@ -881,7 +909,9 @@ To disable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.disable(); // disable the toggle button
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -892,7 +922,9 @@ toggleObj.disable(); // disable the toggle button
 // disable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("disable"); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -903,7 +935,7 @@ $("#toggle").ejToggleButton("disable");
 
 
 
-To enable the toggle button
+To enable the ToggleButton.
 
 
 
@@ -920,7 +952,9 @@ To enable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.enable(); // enable the toggle button
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -931,7 +965,9 @@ toggleObj.enable(); // enable the toggle button
 // enable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("enable");  
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -948,6 +984,7 @@ $("#toggle").ejToggleButton("enable");
 
 Fires when ToggleButton control state is changed successfully.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -959,48 +996,31 @@ Fires when ToggleButton control state is changed successfully.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from toggle button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-isChecked{% endhighlight %}</td>
+argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1032,6 +1052,7 @@ $("#toggle").ejToggleButton({
 
 Fires when ToggleButton control is clicked successfully.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1043,54 +1064,37 @@ Fires when ToggleButton control is clicked successfully.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from toggle button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-isChecked{% endhighlight %}</td>
+argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+argument.status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1122,6 +1126,7 @@ defaultText:"Play",activeText:"Pause",
 
 Fires when ToggleButton control is created successfully.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1133,42 +1138,25 @@ Fires when ToggleButton control is created successfully.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from toggle button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1199,6 +1187,7 @@ $("#toggle").ejToggleButton({
 
 Fires when ToggleButton control is destroyed successfully.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1210,42 +1199,25 @@ Fires when ToggleButton control is destroyed successfully.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from toggle button
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example

@@ -400,7 +400,7 @@ Convert the button as repeat button. It raises the 'Click' event repeattedly fro
 
 
 
-Displays the Button with rounded corncers.
+Displays the Button with rounded corners.
 
 
 #### Default Value
