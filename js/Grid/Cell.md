@@ -8,9 +8,27 @@ documentation: ug
 --- 
 # Cell
 
-## Auto wrap column
+## Auto wrap 
 
-[`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the Grid to wrap cell content to next line when the content exceeds the boundary of the cell width. 
+Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set [`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
+
+We can specify the mode of auto wrap using [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property of the [`textWrapSettings`](http://help.syncfusion.com/js/api/ejgrid#members:textWrapSettings "textWrapSettings"). 
+
+Three types of wrapMode are available and they are,
+  
+ 1. Both
+ 2. Header
+ 3. Content 
+ 
+N> 1. By default the [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") will be set as `both`. 
+
+N> 2. While using [`textWrapSettings`](http://help.syncfusion.com/js/api/ejgrid#members:textWrapSettings "textWrapSettings") then it is must to set [`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") as `true`.
+
+N> 3. For [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property you can assign either `string` value (`both`) or `enum` value (`ej.Grid.WrapMode.Both`).
+ 
+## Both
+
+When [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/js/api/ejgrid#members:textWrapSettings "textWrapSettings") property set as `both` then the auto wrap will be enable for both grid content and header. 
 
 The following code example describes the above behavior.
 
@@ -19,27 +37,99 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight js %}
-$(function () {
-	$("#Grid").ejGrid({
+
+    $(function () {
+		$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowTextWrap : true,
+		textWrapSettings: {wrapMode: "both"},
 		columns : [
 			{ field: "OrderID", width: 100 },
 			{ field: "EmployeeID", width: 100 },
 			{ field: "Freight", width: 100 },
 			{ field: "ShipCity", width: 150 },
-			{ field: "ShipAddress", width: 200 }
+			{ field: "ShipAddress",headerText:"Ship Address", width: 200 }
 		]
 	});
-});
+	});
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
 ![](Cell_images/cell_img1.png)
 
+## Header
+
+When [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/js/api/ejgrid#members:textWrapSettings "textWrapSettings") property set as `header` then the auto wrap will be enable only for grid header alone. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+
+	$(function () {
+		$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowTextWrap : true,
+		textWrapSettings: {wrapMode: "header"},
+		columns : [
+			{ field: "OrderID", width: 100 },
+			{ field: "EmployeeID", width: 100 },
+			{ field: "Freight", width: 100 },
+			{ field: "ShipCity", width: 150 },
+			{ field: "ShipAddress",headerText:"Ship Address", width: 200 }
+		]
+	});
+	});
+	
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Cell_images/cell_img1_1.png)
+
+## Content
+
+When [`wrapMode`](http://help.syncfusion.com/js/api/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/js/api/ejgrid#members:textWrapSettings "textWrapSettings") property set as `content` then the auto wrap will be enable only for grid content alone. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+
+	$(function () {
+		$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowTextWrap : true,
+		textWrapSettings: {wrapMode: "content"},
+		columns : [
+			{ field: "OrderID", width: 100 },
+			{ field: "EmployeeID", width: 100 },
+			{ field: "Freight", width: 100 },
+			{ field: "ShipCity", width: 150 },
+			{ field: "ShipAddress",headerText:"Ship Address", width: 200 }
+		]
+	});
+	});
+	
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Cell_images/cell_img1_2.png)
 
 ## Cell Merging
 
