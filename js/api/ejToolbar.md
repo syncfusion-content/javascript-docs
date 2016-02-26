@@ -930,7 +930,7 @@ var query = ej.Query()
 
 
 
-Displays the Toolbar with rounded corners.
+Display the Toolbar with rounded corners.
 
 
 #### Default Value
