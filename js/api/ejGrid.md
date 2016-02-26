@@ -11699,18 +11699,18 @@ Triggered every time a request is made to access particular cell information, el
 </tr>
 <tr>
 <td class="name">rowMerge</td>
-<td class="type"><span class="param-type">mergeRowback</span></td>
-<td class="description last">Returns the merge rows in grid.</td>
+<td class="type"><span class="param-type">void</span></td>
+<td class="description last">Method to merge Grid rows.</td>
 </tr>
 <tr>
 <td class="name">colMerge</td>
-<td class="type"><span class="param-type">mergeColback</span></td>
-<td class="description last">Returns the merge column in grid.</td>
+<td class="type"><span class="param-type">void</span></td>
+<td class="description last">Method to merge Grid columns.</td>
 </tr>
 <tr>
 <td class="name">merge</td>
-<td class="type"><span class="param-type">merge</span></td>
-<td class="description last">Returns the merge the rows and columns in grid.</td>
+<td class="type"><span class="param-type">void</span></td>
+<td class="description last">Method to merge Grid rows and columns.</td>
 </tr>
 <tr>
 <td class="name">model</td>
