@@ -5498,6 +5498,39 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 {% endhighlight %}
 
 
+### commonseriesoptions.highlightSettings.type `enum`
+{:#members:commonseriesoptions-highlightsettings-type}
+
+
+
+Specifies the type of highlight.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+commonseriesoptions:{
+  highlightSettings:{
+              type : 'multiple'
+             }
+	}
+  }); 
+
+{% endhighlight %}
+
 
 ### commonSeriesOptions.highlightSettings.mode `enum`
 {:#members:commonseriesoptions-highlightsettings-mode}
@@ -5762,6 +5795,39 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 });
 {% endhighlight %}
 
+
+### commonseriesoptions.selectionSettings.type `enum`
+{:#members:commonseriesoptions-selectionSettings-type}
+
+
+
+Specifies the type of selection.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+commonseriesoptions:{
+  selectionSettings:{
+              type : 'multiple'
+             }
+	}
+  }); 
+
+{% endhighlight %}
 
 
 ### commonSeriesOptions.selectionSettings.mode `enum`
@@ -21352,7 +21418,38 @@ series :[{highlightSettings:{enable:true}}]
 });
 {% endhighlight %}
 
+### series.highlightSettings.type `enum`
+{:#members:series-highlightsettings-type}
 
+
+
+Specifies the type of highlight.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+    series: [{  
+	  highlightSettings:{
+              type : 'multiple'
+             }
+	   }]
+  }); 
+
+{% endhighlight %}
 
 ### series.highlightSettings.mode `enum`
 {:#members:series-highlightsettings-mode}
@@ -21747,6 +21844,38 @@ series :[{selectionSettings:{border:{color:"black"}}}]
 });
 {% endhighlight %}
 
+### series.selectionSettings.type `enum`
+{:#members:series-selectionsettings-type}
+
+
+
+Specifies the type of selection.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+     series: [{
+      selectionSettings:{
+              type : 'multiple'
+             }
+	  }]
+  }); 
+
+{% endhighlight %}
 
 
 ### series.selectionSettings.border.width `string`
