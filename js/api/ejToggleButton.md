@@ -661,7 +661,7 @@ Allows to prevents the control switched to checked (active) state.
 
 
 
-Display the ToggleButton with rounded corners.
+Displays the ToggleButton with rounded corners.
 
 
 #### Default Value

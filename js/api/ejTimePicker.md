@@ -914,7 +914,7 @@ Defines the width of the TimePicker popup.
 
 
 
-Allows to toggles the read only state of the TimePicker. When the widget is readOnly, it doesn't allow user interaction.
+Toggles the readonly state of the TimePicker
 
 
 
@@ -1018,7 +1018,7 @@ Sets the step value for increment the seconds value through arrow keys or mouse 
 
 
 
-Shows or hides the arrow popup button from the TimePicker textbox.
+shows or hides the drop down button in TimePicker.
 
 
 
@@ -1285,7 +1285,7 @@ Defines the width of the TimePicker textbox.
 
 
 
-To disable the TimePicker to prevent all user interactions.
+Allows you to disable the TimePicker. 
 
 
 
@@ -1335,7 +1335,7 @@ $("#timepicker").ejTimePicker("disable");
 
 
 
-It enables the TimePicker control and allows the user interaction. 
+Allows you to enable the TimePicker. 
 
 
 
@@ -1477,7 +1477,7 @@ $("#timepicker").ejTimePicker("hide");
 
 
 
-Updates the TimePicker textbox with current system time.
+Updates the current system time in TimePicker.
 
 
 
