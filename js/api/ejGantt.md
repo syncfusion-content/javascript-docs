@@ -239,7 +239,7 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 
 ### enablePredecessorValidation `boolean`
-{:#members:enablePredecessorValidation}
+{:#members:enablepredecessorvalidation}
 
 Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
 
@@ -588,13 +588,13 @@ Specifies the fields to be included in the edit dialog in gantt
 {% endhighlight %}
 
 ### splitterSettings `object`
-{:#members:splitterSettings}
+{:#members:splittersettings}
 
 Option to configure the splitter position.
 
 
 ### splitterSettings.position `string`
-{:#members:splitterSettings-position}
+{:#members:splittersettings-position}
 
 Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
 
@@ -618,7 +618,7 @@ Specifies position of the splitter in Gantt , splitter can be placed either base
 
 
 ### splitterSettings.index `string`
-{:#members:splitterSettings-index}
+{:#members:splittersettings-index}
 
 Specifies the position of splitter in Gantt, based on column index in Gantt.
 
@@ -2668,7 +2668,7 @@ $("#gantt").ejGantt("addRecord",data);
 
 
 ### setSplitterIndex()
-{:#methods:setSplitterIndex}
+{:#methods:setsplitterindex}
 
 Positions the splitter by the specified column index.
 

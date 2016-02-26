@@ -385,7 +385,7 @@ Controls the visibility of the column.
 
 ### columns.headerTemplateID `String`
 
-{:#members:columns-headerTemplateID}
+{:#members:columns-headertemplateid}
 
 Specifies the header template value for the column header
 
@@ -403,7 +403,7 @@ Specifies the header template value for the column header
 
 ### columns.isFrozen `boolean`
 
-{:#members:columns-isFrozen}
+{:#members:columns-isfrozen}
 
 Specifies whether the column is frozen
 
@@ -422,7 +422,7 @@ Specifies whether the column is frozen
 
 ### columns.allowFreezing `boolean`
 
-{:#members:columns-allowFreezing}
+{:#members:columns-allowfreezing}
 
 Enables or diables the ability to freeze/unfreeze the columns
 
@@ -1362,7 +1362,7 @@ treegridObj.refresh(dataManager, query) // To refresh the tree grid content
 
 
 ### freezePrecedingColumns ()
-{:#methods:freezePrecedingColumns}
+{:#methods:freezeprecedingcolumns}
 
 Freeze all the columns preceding to the column specified by the field name.
 
@@ -1394,7 +1394,7 @@ $("#treegrid").ejTreeGrid("freezePrecedingColumns" , field);
 
 ### freezeColumn ()
 
-{:#methods:freezeColumn}
+{:#methods:freezecolumn}
 
 Freeze/unfreeze the specified column.
 
