@@ -1032,7 +1032,7 @@ Specifies the width of the editor.
 
 
 
-destroy the editor widgets all events are unbind automatically and bring the control to pre-init state.
+Allows you to destroy the Editor widgets.
 
 
 
