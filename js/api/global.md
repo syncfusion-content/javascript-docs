@@ -2595,28 +2595,22 @@ Outer</td>
 ### ColumnLayout
 {:#enum:columnlayout}
  
-Specifies whether Grid's the layout of column is auto or fixed.
+Specifies whether the Grid's column layout is Auto or Fixed.
  
 <table class="props">
 <thead>
 <tr>
 <th>Name</th>
-<th>Type</th>
-<th>Default</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">Auto</td>
-<td class="type">string</td>
-<td class="default">auto</td>
 <td class="description">Column layout is auto(based on width).</td>
 </tr>
 <tr>
 <td class="name">Fixed</td>
-<td class="type">string</td>
-<td class="default"></td>
 <td class="description">Column layout is fixed(based on width).</td>
 </tr>
 </tbody>
@@ -2626,81 +2620,32 @@ Specifies whether Grid's the layout of column is auto or fixed.
 ### ClipMode
 {:#enum:clipmode}
  
-Specifies whether the Grid's clipmode is ellipsis,clip or ellipsiswithtooltip.
+Specifies whether the Grid's clip mode is Ellipsis, Clip or EllipsisWithTooltip.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Ellipsis</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">Ellipsis</td> 
 <td class="description">Shows ellipsis for the overflown cell.</td> 
 </tr>
 <tr>
-<td class="name">Clip</td>
-<td class="type">string</td>
-<td class="default">clip</td>
+<td class="name">Clip</td> 
 <td class="description">Truncate the text in the cell.</td>
 </tr>
 <tr>
-<td class="name">EllipsisWithTooltip</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">EllipsisWithTooltip</td> 
 <td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
 </tr>
 </tbody>
 </table>
 
 
-### Command Type
-{:#enum:commandtype}
- 
-Specifies whether the Grid's types of command is edit,delete,cancel or save.
- 
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Edit</td>
-<td class="type">string</td>
-<td class="default"> </td>
-<td class="description">CommandType is edit.</td>
-</tr>
-<tr>
-<td class="name">Delete</td>
-<td class="type">string</td>
-<td class="default"> </td>
-<td class="description">CommandType is delete.</td>
-</tr>
-<tr>
-<td class="name">Save</td>
-<td class="type">string</td>
-<td class="default"> </td>
-<td class="description">CommandType is save.</td>
-</tr>
-<tr>
-<td class="name">Cancel</td>
-<td class="type">string</td>
-<td class="default"> </td>
-<td class="description">CommandType is cancel.</td>
-</tr>
-</tbody>
-</table>
 
 
 ### dataTypes
@@ -3502,56 +3447,42 @@ Data</td>
 
 
 
-### EditType
-{:#enum:edittype}
+### EditingType
+{:#enum:editingtype}
  
-Specifies whether the Grid's edittype is boolean,datePicker,datetimepicker,dropdown,numeric or string.
+Specifies whether the Grid's editing type is String, Boolean, Numeric, Dropdown, DatePicker or DateTimePicker.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Boolean</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as boolean.</td>
+<td class="name">String</td> 
+<td class="description">Specifies editing type as stringedit.</td>
+</tr>
+<tr>
+<td class="name">Boolean</td> 
+<td class="description">Specifies editing type as booleanedit.</td>
+</tr>
+<tr>
+<td class="name">Numeric</td> 
+<td class="description">Specifies editing type as numericedit.</td>
+</tr>
+<tr>
+<td class="name">Dropdown</td> 
+<td class="description">Specifies editing type as dropdownedit.</td>
 </tr>
 <tr>
 <td class="name">DatePicker</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as datePicker.</td>
+<td class="description">Specifies editing type as datepicker.</td>
 </tr>
 <tr>
-<td class="name">DateTimePicker</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as datetimepicker.</td>
-</tr>
-<tr>
-<td class="name">Dropdown</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as dropdown.</td>
-</tr>
-<tr>
-<td class="name">Numeric</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as numeric.</td>
-</tr>
-<tr>
-<td class="name">String</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies edittype as string.</td>
+<td class="name">DateTimePicker</td> 
+<td class="description">Specifies editing type as datetimepicker.</td>
 </tr>
 </tbody>
 </table>
@@ -3560,65 +3491,47 @@ Specifies whether the Grid's edittype is boolean,datePicker,datetimepicker,dropd
 ### EditMode
 {:#enum:editmode}
  
-Specifies whether the Grid's  editmode is normal,dialog,dialogtemplate,batch,externalform,inlineform,InlineTemplateForm,externalformtemplate.
+Specifies whether the Grid's edit mode is Normal, Dialog, DialogTemplate, Batch, InlineForm, InlineTemplateForm, ExternalForm or ExternalFormTemplate.
  
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Normal</td>
-<td class="type">string</td>
-<td class="default">normal</td>
-<td class="description">Editmode is normal</td>
+<td class="name">Normal</td> 
+<td class="description">Edit mode is normal</td>
 </tr>
 <tr>
-<td class="name">Dialog</td>
-<td class="type">string</td>
-<td class="default"> </td>
-<td class="description">Editmode is dialog</td>
+<td class="name">Dialog</td> 
+<td class="description">Edit mode is dialog</td>
 </tr>
 <tr>
-<td class="name">DialogTemplate</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is dialogtemplate</td>
+<td class="name">DialogTemplate</td> 
+<td class="description">Edit mode is dialogtemplate</td>
 </tr>
 <tr>
-<td class="name">Batch</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is batch</td>
+<td class="name">Batch</td> 
+<td class="description">Edit mode is batch</td>
+</tr>
+<td class="name">InlineForm</td> 
+<td class="description">Edit mode is inlineform</td>
 </tr>
 <tr>
-<td class="name">ExternalForm</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is externalform</td>
+<td class="name">InlineTemplateForm</td> 
+<td class="description">Edit mode is inlinetemplateform</td>
 </tr>
 <tr>
-<td class="name">InlineForm</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is inlineform</td>
+<td class="name">ExternalForm</td> 
+<td class="description">Edit mode is externalform</td>
 </tr>
 <tr>
-<td class="name">InlineTemplateForm</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is InlineTemplateForm</td>
-</tr>
 <tr>
-<td class="name">ExternalFormTemplate</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Editmode is externalformtemplate</td>
+<td class="name">ExternalFormTemplate</td> 
+<td class="description">Edit mode is externalformtemplate</td>
 </tr>
 </tbody>
 </table>
@@ -3706,79 +3619,52 @@ SVG</td>
 ### FilterBarMode
 {:#enum:filterbarmode}
 
-Specifies whether the Grid's filterBarMode is typing in the filterBar or after pressing the enter key.
+Specifies whether the Grid's filterbar mode is Immediate or OnEnter.
  
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Immediate</td>
-<td class="type">string</td>
-<td class="default">immediate</td>
-<td class="description">Specifies filter results is typing the filter query</td>
+<td class="name">Immediate</td> 
+<td class="description">Initiate filter operation on typing the filter query</td>
 </tr>
 <tr>
-<td class="name">OnEnter</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies filter results as after enter key is pressed</td>
+<td class="name">OnEnter</td> 
+<td class="description">Initiate filter operation after Enter key is pressed</td>
 </tr>
 </tbody>
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### FilterType
 {:#enum:filtertype}
  
-Specifies whether the Grid's Filtertype is menu,excel or filterbar.
+Specifies whether the Grid's filter type is Menu, Excel or FilterBar.
  
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Menu</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies the filtertype as menu.</td>
+<td class="name">Menu</td> 
+<td class="description">Specifies the filter type as menu.</td>
 </tr>
 <tr>
-<td class="name">Excel</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies the filtertype as excel.</td>
+<td class="name">Excel</td> 
+<td class="description">Specifies the filter type as excel.</td>
 </tr>
 <tr>
-<td class="name">FilterBar</td>
-<td class="type">string</td>
-<td class="default">filterbar</td>
-<td class="description">Specifies the filtertype as filterbar.</td>
+<td class="name">FilterBar</td> 
+<td class="description">Specifies the filter type as filterbar.</td>
 </tr>
 </tbody>
 </table>
@@ -5388,28 +5274,22 @@ HalfCircle</td>
 ### FormPosition
 {:#enum:formposition}
  
-Specifies the position of form is top-right or bottom-left.
+Specifies whether the position of Grid's edit form is TopRight or BottomLeft.
  
 <table class="props">
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">BottomLeft</td>
-<td class="type">string</td>
-<td class="default">bottomleft</td>
-<td class="description">Form position is bottom-left.</td>
+<td class="name">BottomLeft</td> 
+<td class="description">Form position is bottomleft.</td>
 </tr>
 <tr>
-<td class="name">TopRight</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Form position is top-right.</td>
+<td class="name">TopRight</td> 
+<td class="description">Form position is topright.</td>
 </tr>
 </tbody>
 </table>
@@ -5419,69 +5299,49 @@ Specifies the position of form is top-right or bottom-left.
 ### FilterOperator
 {:#enum:filteroperator}
  
-Specifies the filter operators.
+Specifies the filter operator.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">startsWith</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">startsWith</td> 
 <td class="description">Specifies the filter operator as startswith.</td>
 </tr>
 <tr>
-<td class="name">endsWith</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">endsWith</td> 
 <td class="description">Specifies the filter operator as endswith.</td>
 </tr>
-<td class="name">contains</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">contains</td> 
 <td class="description">Specifies the filter operator as contains.</td>
 </tr>
 <tr>
-<td class="name">equal</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">equal</td> 
 <td class="description">Specifies the filter operator as equal.</td>
 </tr>
 <tr>
-<td class="name">notEqual</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">notEqual</td> 
 <td class="description">Specifies the filter operator as notequal.</td>
 </tr>
 <tr>
-<td class="name">greaterThan</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">greaterThan</td> 
 <td class="description">Specifies the filter operator as greaterthan.</td>
 </tr>
 <tr>
-<td class="name">greaterThanOrEqual</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">greaterThanOrEqual</td> 
 <td class="description">Specifies the filter operator as greaterthanorequal.</td>
 </tr>
 <tr>
-<td class="name">lessThan</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">lessThan</td> 
 <td class="description">Specifies the filter operator as lessthan.</td>
 </tr>
 <tr>
-<td class="name">lessThanOrEqual</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">lessThanOrEqual</td> 
 <td class="description">Specifies the filter operator as Lessthanorequal.</td>
 </tr>
 </tbody>
@@ -5593,41 +5453,31 @@ BottomCenter</td>
 ### GridLines
 {:#enum:gridlines}
  
-Specifies whether the Grid's gridlines is both,horizontal,vertical or none.
+Specifies whether the Grid lines is None, Horizontal, Vertical or Both.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Both</td>
-<td class="type">string</td>
-<td class="default">both</td>
-<td class="description">Displays both the horizontal and vertical gridlines.</td>
+<td class="name">None</td> 
+<td class="description">No grid lines are displayed.</td>
 </tr>
 <tr>
-<td class="name">None</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">No gridlines are displayed.</td>
+<td class="name">Horizontal</td> 
+<td class="description">Displays the horizontal grid lines only.</td>
 </tr>
 <tr>
-<td class="name">Horizontal</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Displays the horizontal gridlines only.</td>
+<td class="name">Vertical</td> 
+<td class="description">Displays the vertical grid lines only.</td>
 </tr>
 <tr>
-<td class="name">Vertical</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Displays the vertical gridlines only.</td>
+<td class="name">Both</td> 
+<td class="description">Displays both the horizontal and vertical grid lines.</td>
 </tr>
 </tbody>
 </table>
@@ -6864,46 +6714,7 @@ Twelve</td>
 
 
 
-### HeaderTextAlign
-{:#enum:headertextalign}
  
-Specifies the horizontal alignment of the text displayed in the columnheader.
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Left</td>
-<td class="type">string</td>
-<td class="default">left</td>
-<td class="description">Headertext is aligned to the left.</td>
-</tr>
-<tr>
-<td class="name">Center</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Headertext is centered.</td>
-</tr>
-<td class="name">Justify</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Headertext is Justified.</td>
-</tr>
-<tr>
-<td class="name">Right</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Headertext is aligned to the right.</td>
-</tr>
-</tbody>
-</table>
  
 
 ### IconName
@@ -10589,11 +10400,6 @@ Bottom</td>
 
 
 
-
-
- 
-
-
 ### PageOrientations
 {:#enum:pageorientations}
 
@@ -12242,28 +12048,22 @@ Surface</td>
 ### PrintMode
 {:#enum:printmode}
  
-Specifies whether the Grid's printmode is allpages,currentpages.
+Specifies whether the Grid's printmode is AllPages or CurrentPage.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">AllPages</td>
-<td class="type">string</td>
-<td class="default">allpages</td>
+<td class="name">AllPages</td> 
 <td class="description">Prints allpages.</td>
 </tr>
 <tr>
-<td class="name">CurrentPage</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">CurrentPage</td> 
 <td class="description">Prints currentpage.</td>
 </tr>
 </tbody>
@@ -12744,29 +12544,23 @@ Windows</td>
 ### RowPosition
 {:#enum:rowposition}
  
-Specifies whether the Grid's position of add new row is top or bottom.
+Specifies whether the position of add new row in Grid is Top or Bottom.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Top</td>
-<td class="type">string</td>
-<td class="default">top</td>
-<td class="description">Specifies position of add new row is top.</td>
+<td class="name">Top</td> 
+<td class="description">Specifies position of add new row as top.</td>
 </tr>
 <tr>
-<td class="name">Bottom</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies position of add new row is bottom.</td>
+<td class="name">Bottom</td> 
+<td class="description">Specifies position of add new row as bottom.</td>
 </tr>
 </tbody>
 </table>
@@ -14364,79 +14158,52 @@ qrBarcode</td>
 ### SelectionMode
 {:#enum:selectionmode}
  
-Specifies whether the Grid's mode of selection is row,cell or column.
+Specifies whether the Grid's selection mode is Row, Cell or Column.
  
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Row</td>
-<td class="type">string</td>
-<td class="default">row</td>
-<td class="description">Selectionmode is row basis.</td>
+<td class="name">Row</td> 
+<td class="description">Selection is row basis.</td>
 </tr>
 <tr>
-<td class="name">Cell</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Selectionmode is cell basis.</td>
+<td class="name">Cell</td> 
+<td class="description">Selection is cell basis.</td>
 </tr>
 <tr>
-<td class="name">Column</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Selectionmode is column basis.</td>
+<td class="name">Column</td> 
+<td class="description">Selection is column basis.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### SelectionType
 {:#enum:selectiontype}
 
-Specifies whether type of selection is single or multiple.
+Specifies whether the Grid's selection type is Single or Multiple.
  
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Single</td>
-<td class="type">string</td>
-<td class="default">single</td>
-<td class="description">Specifies the selectiontype as single.</td>
+<td class="name">Single</td> 
+<td class="description">Specifies the selection type as single.</td>
 </tr>
 <tr>
-<td class="name">Multiple</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Specifies the selectiontype as multiple.</td>
+<td class="name">Multiple</td> 
+<td class="description">Specifies the selection type as multiple.</td>
 </tr>
 </tbody>
 </table>
@@ -14445,65 +14212,47 @@ Specifies whether type of selection is single or multiple.
 ### SummaryType
 {:#enum:summarytype}
  
-Specifies whether the Grid's types of summary to be used.
+Specifies whether the Grid's summary type to be used.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Average</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description"> SummaryType is average.</td>
+<td class="name">Average</td> 
+<td class="description">Summary type is average.</td>
 </tr>
 <tr>
-<td class="name">Count</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is count.</td>
+<td class="name">Minimum</td> 
+<td class="description">Summary type is minimum.</td>
 </tr>
 <tr>
-<td class="name">Custom</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is custom.</td>
+<td class="name">Maximum</td> 
+<td class="description">Summary type is maximum.</td>
 </tr>
 <tr>
-<td class="name">FalseCount</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is falsecount.</td>
+<td class="name">Count</td> 
+<td class="description">Summary type is count.</td>
 </tr>
 <tr>
-<td class="name">Maximum</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is maximum.</td>
+<td class="name">Sum</td> 
+<td class="description">Summary type is sum.</td>
 </tr>
 <tr>
-<td class="name">Minimum</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is minimum.</td>
+<td class="name">Custom</td> 
+<td class="description">Summary type is custom.</td>
 </tr>
 <tr>
-<td class="name">Sum</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is sum.</td>
+<td class="name">TrueCount</td> 
+<td class="description">Summary type is truecount.</td>
 </tr>
 <tr>
-<td class="name">TrueCount</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">SummaryType is truecount.</td>
+<td class="name">FalseCount</td> 
+<td class="description">Summary type is falsecount.</td>
 </tr>
 </tbody>
 </table>
@@ -14680,41 +14429,31 @@ Right</td>
 ### TextAlign
 {:#enum:textalign}
  
-Specifies whether the text in the cell is left-aligned,right-aligned,centered,justified.
+Specifies whether the text alignment in the cell is Center, Justify, Left or Right.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Left</td>
-<td class="type">string</td>
-<td class="default">left</td>
-<td class="description">Text is aligned to the left.</td>
-</tr>
-<tr>
-<td class="name">Center</td>
-<td class="type">string</td>
-<td class="default"></td>
+<td class="name">Center</td> 
 <td class="description">Text is centered.</td>
 </tr>
 <tr>
-<td class="name">Right</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Text is aligned to the right.</td>
+<td class="name">Justify</td> 
+<td class="description">Text is justified.</td>
 </tr>
 <tr>
-<td class="name">Justify</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Text is justified.</td>
+<td class="name">Left</td> 
+<td class="description">Text is aligned to the left.</td>
+</tr>
+<tr>
+<td class="name">Right</td> 
+<td class="description">Text is aligned to the right.</td>
 </tr>
 </tbody>
 </table>
@@ -16762,84 +16501,62 @@ Popup</td>
 
 
 
- 
+
 
 
 
 ### ToolBarItems
 {:#enum:toolbaritems}
  
-Specifies the toolBarItems to be used in the Grid. 
+Specifies the toolbar items to be used in the Grid. 
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Add</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is add.</td>
+<td class="name">Add</td> 
+<td class="description">Toolbar item is add.</td>
 </tr>
 <tr>
-<td class="name">Cancel</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is cancel.</td>
+<td class="name">Edit</td> 
+<td class="description">Toolbar item is edit.</td>
 </tr>
 <tr>
-<td class="name">Delete</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is delete.</td>
+<td class="name">Delete</td> 
+<td class="description">Toolbar item is delete.</td>
 </tr>
 <tr>
-<td class="name">Edit</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is edit.</td>
+<td class="name">Update</td> 
+<td class="description">Toolbar item is update.</td>
 </tr>
 <tr>
-<td class="name">ExcelExport</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is excelexport.</td>
+<td class="name">Cancel</td> 
+<td class="description">Toolbar item is cancel.</td>
 </tr>
 <tr>
-<td class="name">PdfExport</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is pdfexport.</td>
+<td class="name">Search</td> 
+<td class="description">Toolbar item is search.</td>
 </tr>
 <tr>
-<td class="name">PrintGrid</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is printgrid.</td>
+<td class="name">ExcelExport</td> 
+<td class="description">Toolbar item is excelExport.</td>
 </tr>
 <tr>
-<td class="name">Search</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is search.</td>
+<td class="name">PdfExport</td> 
+<td class="description">Toolbar item is pdfExport.</td>
 </tr>
 <tr>
-<td class="name">Update</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is update.</td>
+<td class="name">PrintGrid</td> 
+<td class="description">Toolbar item is printGrid.</td>
 </tr>
 <tr>
-<td class="name">WordExport</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">Toolbaritem is wordExport.</td>
+<td class="name">WordExport</td> 
+<td class="description">Toolbar item is wordExport.</td>
 </tr>
 </tbody>
 </table>
@@ -16847,6 +16564,7 @@ Specifies the toolBarItems to be used in the Grid.
 
 ### Unit
 {:#enum:unit}
+
 
 
 
@@ -17135,15 +16853,37 @@ BottomRight</td>
 
 
 
-
-
-
-
-
-
-
-
-
+### UnboundType
+{:#enum:unboundtype}
+ 
+Specifies whether the Grid's unbound type is Edit, Save, Delete or Cancel.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Edit</td> 
+<td class="description">Unbound type is edit.</td>
+</tr>
+<tr>
+<td class="name">Save</td> 
+<td class="description">Unbound type is save.</td>
+</tr>
+<tr>
+<td class="name">Delete</td> 
+<td class="description">Unbound type is delete.</td>
+</tr>
+<tr>
+<td class="name">Cancel</td> 
+<td class="description">Unbound type is cancel.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -17445,29 +17185,23 @@ Far</td>
 ### VirtualScrollMode
 {:#enum:virtualscrollmode}
  
-Specifies whether the Grid's virtualscroll mode is normal or continuous.
+Specifies whether the Grid's virtual scroll mode is Normal or Continuous.
 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
+<th>Name</th> 
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">Normal</td>
-<td class="type">string</td>
-<td class="default">normal</td>
-<td class="description">virtualscrollmode is normal.</td>
+<td class="name">Normal</td> 
+<td class="description">virtual scroll mode is normal.</td>
 </tr>
 <tr>
-<td class="name">Continuous</td>
-<td class="type">string</td>
-<td class="default"></td>
-<td class="description">virtualscrollmode is continuous.</td>
+<td class="name">Continuous</td> 
+<td class="description">virtual scroll mode is continuous.</td>
 </tr>
 </tbody>
 </table>
