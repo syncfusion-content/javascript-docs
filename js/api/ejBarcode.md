@@ -825,23 +825,23 @@ Specifies the type of the Barcode. See <a href="global.html#SymbologyType">Symbo
     <tbody>
         <tr>
             <td class="name">QRBarcode</td>
-            <td class="description">Represents the QR barcode</td>
+            <td class="description">Represents the QR code</td>
         </tr>
         <tr>
             <td class="name">DataMatrix</td>
-            <td class="description">Represents the DataMatrix barcode</td>
+            <td class="description">Represents the Data Matrix barcode</td>
         </tr>
         <tr>
             <td class="name">Code39</td>
-            <td class="description">Represents the Code-39 barcode</td>
+            <td class="description">Represents the Code 39 barcode</td>
         </tr>
         <tr>
             <td class="name">Code39Extended</td>
-            <td class="description">Represents the Code-39 Extended barcode</td>
+            <td class="description">Represents the Code 39 Extended barcode</td>
         </tr>
         <tr>
             <td class="name">Code11</td>
-            <td class="description">Represents the Code-11 barcode</td>
+            <td class="description">Represents the Code 11 barcode</td>
         </tr>
         <tr>
             <td class="name">Codabar</td>
@@ -849,27 +849,27 @@ Specifies the type of the Barcode. See <a href="global.html#SymbologyType">Symbo
         </tr>
         <tr>
             <td class="name">Code32</td>
-            <td class="description">Represents the Code-32 barcode</td>
+            <td class="description">Represents the Code 32 barcode</td>
         </tr>
         <tr>
             <td class="name">Code93</td>
-            <td class="description">Represents the Code-93 barcode</td>
+            <td class="description">Represents the Code 93 barcode</td>
         </tr>
         <tr>
             <td class="name">Code93Extended</td>
-            <td class="description">Represents the Code-93 Extended barcode</td>
+            <td class="description">Represents the Code 93 Extended barcode</td>
         </tr>
         <tr>
             <td class="name">Code128A</td>
-            <td class="description">Represents the Code-128A barcode</td>
+            <td class="description">Represents the Code 128 A barcode</td>
         </tr>
         <tr>
             <td class="name">Code128B</td>
-            <td class="description">Represents the Code-128B barcode</td>
+            <td class="description">Represents the Code 128 B barcode</td>
         </tr>
         <tr>
             <td class="name">Code128C</td>
-            <td class="description">Represents the Code-128C barcode</td>
+            <td class="description">Represents the Code 128 C barcode</td>
         </tr>
     </tbody>
 </table>
