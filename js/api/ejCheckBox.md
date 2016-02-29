@@ -52,7 +52,7 @@ $("#chkbox").ejCheckBox();
 
 
 
-### checked
+### checked `boolean | string[]`
 {:#members:checked}
 
 
@@ -87,7 +87,7 @@ $("#chkbox").ejCheckBox({ checked:  true });
 
 
 
-
+<ts name="ej.CheckState" ref="ej.CheckState" />
 
 
 
@@ -644,14 +644,32 @@ $("#chkbox").ejCheckBox({ showRoundedCorner: true });
 {:#members:size}
 
 
+<ts name="ej.CheckboxSize" />
 
 
 
-
-
-
-Specifies the size of the CheckBox.See <a href="global.html#CheckboxSize">CheckboxSize</a>
-
+Specifies the size of the CheckBox.See below to know available CheckboxSize</a>
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Medium</td>
+<td class="description">Displays the CheckBox in medium size</td>
+</tr>
+<tr>
+<td class="name">
+Small</td>
+<td class="description">Displays the CheckBox in small size</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1071,7 +1089,9 @@ To Check the status of CheckBox
 
 
 
+####Returns
 
+boolean
 
 #### Example
 
@@ -1135,32 +1155,33 @@ Fires before the CheckBox is going to changed its state successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.CheckBox.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the CheckBox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+event</td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event model values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name">
+isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the status whether the element is checked or not.</td>
 </tr>
@@ -1214,39 +1235,40 @@ Fires when the CheckBox state is changed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.CheckBox.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the CheckBox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns the current element</td>
+<td class="name">
+event</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event arguments</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name">
+isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the status whether the element is checked or not.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.checkState{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+checkState</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the state of the checkbox</td>
 </tr>
 </tbody>
@@ -1299,21 +1321,22 @@ Fires when the CheckBox state is created successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.CheckBox.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the CheckBox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
@@ -1367,21 +1390,22 @@ Fires when the CheckBox state is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.CheckBox.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the CheckBox model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
