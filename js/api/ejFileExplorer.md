@@ -35,8 +35,8 @@ $(element).ejFileExplorer(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">
+options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">settings for FileExplorer.</td>
 </tr>
@@ -616,7 +616,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-
+<ts name="ej.FilterType" />
 
 
 
@@ -624,7 +624,32 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 Sets the search filter type. There are several filter types available, such as "startswith", "contains", "endswith". See <a href="global.html#filterType">filterType</a>
 
 
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+StartsWith</td>
+<td class="type">string</td>
+<td class="default">startswith</td>
+<td class="description">Enum for filter type startswith</td>
+</tr>
+<tr>
+<td class="name">
+Contains</td>
+<td class="type">string</td>
+<td class="default">contains</td>
+<td class="description">Enum for filter type contains</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
@@ -800,7 +825,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### height `string`  `number`
+### height `string | number`
 {:#members:height}
 
 
@@ -917,7 +942,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-
+<ts name="ej.FileExplorer.layoutType"/>
 
 
 
@@ -925,7 +950,32 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 Sets the file view type. There are two view types available, such as grid, tile. See layoutType.
 
 
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Tile</td>
+<td class="description">Supports to display files in tile view</td>
+</tr>
+<tr>
+<td class="name">
+Grid</td>
+<td class="description">Supports to display files in grid view </td>
+</tr>
+<tr>
+<td class="name">
+LargeIcons</td>
+<td class="description">Supports to display files as large icons</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
@@ -1018,7 +1068,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### maxHeight `string`  `number`
+### maxHeight `string | number`
 {:#members:maxheight}
 
 Sets the maximum height of FileExplorer control. 
@@ -1046,7 +1096,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### maxWidth `string`  `number`
+### maxWidth `string | number`
 {:#members:maxwidth}
 
 Sets the maximum width of FileExplorer control. 
@@ -1074,7 +1124,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### minHeight `string`  `number`
+### minHeight `string | number`
 {:#members:minheight}
 
 Sets the minimum height of FileExplorer control. 
@@ -1102,7 +1152,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 </script>{% endhighlight %}
 
 
-### minWidth `string`  `number`
+### minWidth `string | number`
 {:#members:minwidth}
 
 Sets the minimum width of FileExplorer control. 
@@ -1210,7 +1260,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### selectedItems `string` `array`
+### selectedItems `string | array`
 {:#members:selecteditems}
 
 The selectedItems is used to select the specified items (file, folder) of FileExplorer control. 
@@ -1760,7 +1810,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-### width `string`  `number`
+### width `string | number`
 {:#members:width}
 
 
@@ -1850,6 +1900,24 @@ feObj.adjustSize(); // refresh the size of file explorer
 
 Disable the particular context menu item.
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">string | element</span></td>
+<td class="description">Id of the menu item/ Menu element to be disabled </td>
+</tr>
+</tbody>
+</table>
+
 #### Example
 
 
@@ -1884,7 +1952,23 @@ feObj.disableMenuItem("Upload"); // disable upload option
 Disable the particular toolbar item.
 
 
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">string | element</span></td>
+<td class="description">Id of the toolbar item/ Tool item element to be disabled </td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1913,6 +1997,24 @@ feObj.disableToolbarItem("Searchbar"); // disable search bar
 {:#methods:enablemenuitem}
 
 Enable the particular context menu item.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">string | Element</span></td>
+<td class="description">Id of the menu item/ Menu element to be Enabled </td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -1948,6 +2050,23 @@ feObj.enableMenuItem("Upload"); // enable upload option in context menu
 Enable the particular toolbar item
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">string | Element</span></td>
+<td class="description">Id of the tool item/ Tool item element to be Enabled </td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2011,7 +2130,23 @@ feObj.refresh(); // refresh the content of selected folder
 
 Remove the particular toolbar item.
 
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">string | Element</span></td>
+<td class="description">Id of the tool item/ tool item element to be removed </td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2069,26 +2204,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">
+data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ajax response data</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2151,38 +2287,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
+<td class="name">
+files</td>
 <td class="type"><span class="param-type">string[]</span></td>
 <td class="description">returns the downloaded file names.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2246,38 +2383,53 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemType{% endhighlight %}</td>
+<td class="name">
+itemType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the opened item type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2341,32 +2493,47 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2416,8 +2583,8 @@ Fires when file or folder is copied successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2430,38 +2597,40 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">string[]</span></td>
+<td class="name">
+name</td>
+<td class="type">
+<span class="param-type">string[]</span></td>
 <td class="description">returns the name of copied file/folder.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sourcePath{% endhighlight %}</td>
+<td class="name">
+sourcePath</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the source path.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2511,8 +2680,8 @@ Fires when new folder is created sucessfully in file system.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2525,32 +2694,33 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">
+data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ajax response data</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2560,7 +2730,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
@@ -2600,8 +2769,8 @@ Fires when file or folder is cut successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2614,38 +2783,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
+<td class="name">
+name</td>
 <td class="type"><span class="param-type">string[]</span></td>
 <td class="description">returns the name of moved file or folder.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sourcePath{% endhighlight %}</td>
+<td class="name">
+sourcePath</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the source path.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2695,8 +2865,8 @@ Fires when the file view type is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2709,26 +2879,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-layoutType{% endhighlight %}</td>
+<td class="name">
+layoutType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current view type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2767,7 +2938,6 @@ layoutChange: function (args) {}
 
 
 Fires when files are successfully opened.
-
 <table class="params">
 <thead>
 <tr>
@@ -2778,8 +2948,8 @@ Fires when files are successfully opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2792,38 +2962,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemType{% endhighlight %}</td>
+<td class="name">
+itemType</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the opened item type.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of currently opened item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2873,8 +3044,8 @@ Fires when a file or folder is pasted successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2887,44 +3058,45 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
+<td class="name">
+name</td>
 <td class="type"><span class="param-type">string[]</span></td>
 <td class="description">returns the name of moved file or folder.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-targetFolder{% endhighlight %}</td>
+<td class="name">
+targetFolder</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target folder item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-targetPath{% endhighlight %}</td>
+<td class="name">
+targetPath</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the target path.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -2934,8 +3106,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
-
 
 
 #### Example
@@ -2974,8 +3144,8 @@ Fires when file or folder is deleted sucessfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -2988,44 +3158,45 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">
+data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the ajax response data.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
+<td class="name">
+name</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the names of deleted items.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of deleted item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -3074,8 +3245,8 @@ Fires when resizing is performed for FileExplorer.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -3088,26 +3259,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse move event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -3117,6 +3289,7 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -3156,8 +3329,8 @@ Fires when resizing is started for FileExplorer.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -3170,26 +3343,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse down event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -3199,7 +3373,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
@@ -3238,8 +3411,8 @@ Fires this event when the resizing is stopped for FileExplorer.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -3252,26 +3425,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse leave event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -3281,6 +3455,7 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -3321,8 +3496,8 @@ Fires when the items from grid view or tile view of FileExplorer control is sele
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from FileExplorer
 <table class="params">
@@ -3335,38 +3510,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
+<td class="name">
+name</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of clicked item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-path{% endhighlight %}</td>
+<td class="name">
+path</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the path of clicked item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
+<td class="name">
+selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>

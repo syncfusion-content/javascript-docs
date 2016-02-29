@@ -35,13 +35,14 @@ $(element).ejDateTimePicker(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">
+options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">settings for Date Picker.</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -103,7 +104,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-### buttonText `JSONobject`
+### buttonText 'object`
 {:#members:buttontext}
 
 
@@ -380,10 +381,10 @@ Defines the datetime format displayed in the DateTimePicker. The value should be
 
 
 
-### dayHeaderFormat `string / enum`
+### dayHeaderFormat `string | enum`
 {:#members:dayheaderformat}
 
-
+<ts name="ej.DatePicker.Header" ref="ej.DatePicker.Header"/>
 
 
 
@@ -435,7 +436,7 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 
-
+<ts name="ej.DatePicker.Level" ref="ej.DatePicker.DepthLevel"/>
 
 
 
@@ -781,7 +782,7 @@ Specifies the header format to be displayed in the DatePicker calendar inside th
 
 
 
-### height `string / number`
+### height `string | number`
 {:#members:height}
 
 
@@ -981,7 +982,7 @@ Defines the localization culture for DateTimePicker.
 
 
 
-### maxDateTime `string`  `DateObject`
+### maxDateTime `string | object`
 {:#members:maxdatetime}
 
 
@@ -1031,7 +1032,7 @@ Sets the maximum value to the DateTimePicker. Beyond the maximum value an error 
 
 
 
-### minDateTime `string`  `DateObject`
+### minDateTime `string | object`
 {:#members:mindatetime}
 
 
@@ -1081,20 +1082,39 @@ Sets the minimum value to the DateTimePicker. Behind the minimum value an error 
 
 
 
-### popupPosition `string`  `enum`
+### popupPosition `string | enum`
 {:#members:popupposition}
 
 
+<ts name="ej.popupPosition" />
 
 
 
-
-
-
- Specifies the popup position of DateTimePicker.
+Specifies the popup position of DateTimePicker.See below to know available popup positions
  
  
  
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Botton</td>
+<td class="description">Opens the DateTimePicker popup below to the DateTimePicker input box</td>
+</tr>
+<td class="name">
+Top</td>
+<td class="description">Opens the DateTimePicker popup above to the DateTimePicker input box </td>
+</tr>
+
+</tbody>
+</table>
  
  
  
@@ -1377,8 +1397,10 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 
 
 
-### startLevel `string`  `enum`
+### startLevel `string | enum`
 {:#members:startlevel}
+
+<ts name="ej.DatePicker.Level" ref="ej.DatePicker.StartLevel"/>
 
 Specifies the start level view in datepicker inside the DateTimePicker popup. See DatePicker.Level
 
@@ -1520,7 +1542,7 @@ Defines the time format displayed in the time dropdown inside the DateTimePicker
 
 
 
-### timeDrillDown `JSONobject`
+### timeDrillDown `object`
 {:#members:timedrilldown}
 
 
@@ -1692,7 +1714,7 @@ After choosing the time, the popup will close automatically if we set it as true
 
 
 
-### timePopupWidth `string / number`
+### timePopupWidth `string | number`
 {:#members:timepopupwidth}
 
 
@@ -1853,7 +1875,7 @@ Set the jquery validation rules in datetimepicker.
 
 
 
-### value `string / dateobject`
+### value  `string | object`
 {:#members:value}
 
 
@@ -1903,7 +1925,7 @@ Sets the DateTime value to the control.
 
 
 
-### width `string / number`
+### width `string | number`
 {:#members:width}
 
 
@@ -2068,8 +2090,10 @@ Returns the current datetime value in the DateTimePicker.
 
 
 
-#### Returns:
-{:#methods:returns:}
+####Returns:
+
+
+string
 
 value
 
@@ -2271,45 +2295,45 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isValidState{% endhighlight %}</td>
+<td class="name">
+isValidState</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the current value is valid or not</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevDateTime{% endhighlight %}</td>
+<td class="name">
+prevDateTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected date time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="name">
+isInteraction</td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true if change event triggered by interaction, otherwise returns false</td>
 </tr>
 </tbody>
@@ -2360,32 +2384,32 @@ Fires when DateTimePicker popup closes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevDateTime{% endhighlight %}</td>
+<td class="name">
+prevDateTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected date time value</td>
 </tr>
@@ -2437,20 +2461,20 @@ Fires after DateTimePicker control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the DateTimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2502,20 +2526,20 @@ Fires when the DateTimePicker is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the DateTimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2567,26 +2591,26 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the datetime value, which is in text box</td>
 </tr>
@@ -2638,26 +2662,26 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the datetime value, which is in text box</td>
 </tr>
@@ -2709,32 +2733,32 @@ Fires when DateTimePicker popup opens.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevDateTime{% endhighlight %}</td>
+<td class="name">
+prevDateTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected date time value</td>
 </tr>
