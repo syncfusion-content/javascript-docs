@@ -79,7 +79,7 @@ $(element).ejReportViewer<span class="signature">()</span>
 
 ## Members
 
-### dataSources `array`
+### dataSources `Array`
 {:#members:datasources}
 
 Gets or sets the list of data sources for the RDLC report.
@@ -105,7 +105,7 @@ Gets or sets the list of data sources for the RDLC report.
 
 {% endhighlight %}
 
-### dataSources.name `string`
+### dataSources.name `String`
 {:#members:datasources-name}
 
 Gets or sets the name of the data source.
@@ -131,7 +131,7 @@ Gets or sets the name of the data source.
 
 {% endhighlight %}
 
-### dataSources.values `object`
+### dataSources.values `Object`
 {:#members:datasources-values}
 
 Gets or sets the values of data source.
@@ -157,7 +157,7 @@ Gets or sets the values of data source.
 
 {% endhighlight %}
 
-### enablePageCache `boolean`
+### enablePageCache `Boolean`
 {:#members:enablePageCache}
 
 Enables or disables the page cache of report.
@@ -177,7 +177,7 @@ Enables or disables the page cache of report.
 
 {% endhighlight %}
 
-### exportSettings `object`
+### exportSettings `Object`
 {:#members:exportsettings}
 
 Specifies the export settings.
@@ -404,7 +404,7 @@ Specifies the word export format.
 
 {% endhighlight %}
 
-### isResponsive `boolean`
+### isResponsive `Boolean`
 {:#members:isResponsive}
 
 When set to true, adapts the report layout to fit the screen size of devices on which it renders.
@@ -424,7 +424,7 @@ When set to true, adapts the report layout to fit the screen size of devices on 
 
 {% endhighlight %}
 
-### locale `string`
+### locale `String`
 {:#members:locale}
 
 Specifies the locale for report viewer.
@@ -447,7 +447,7 @@ Specifies the locale for report viewer.
 
 {% endhighlight %}
 
-### pageSettings `object`
+### pageSettings `Object`
 {:#members:pagesettings}
 
 Specifies the page settings.
@@ -572,7 +572,7 @@ Specifies the paper size of print layout.
 
 {% endhighlight %}
 
-### parameters `array`
+### parameters `Array`
 {:#members:parameters}
 
 Gets or sets the list of parameters associated with the report.
@@ -600,7 +600,7 @@ Gets or sets the list of parameters associated with the report.
 
 {% endhighlight %}
 
-### parameters.labels `array`
+### parameters.labels `Array`
 {:#members:parameters-labels}
 
 Gets or sets the parameter labels.
@@ -628,7 +628,7 @@ Gets or sets the parameter labels.
 
 {% endhighlight %}
 
-### parameters.name `string`
+### parameters.name `String`
 {:#members:parameters-name}
 
 Gets or sets the name of the parameter.
@@ -656,7 +656,7 @@ Gets or sets the name of the parameter.
 
 {% endhighlight %}
 
-### parameters.nullable `boolean`
+### parameters.nullable `Boolean`
 {:#members:parameters-nullable}
 
 Gets or sets whether the parameter allows nullable value or not.
@@ -684,7 +684,7 @@ Gets or sets whether the parameter allows nullable value or not.
 
 {% endhighlight %}
 
-### parameters.prompt `string`
+### parameters.prompt `String`
 {:#members:parameters-prompt}
 
 Gets or sets the prompt message associated with the specified parameter.
@@ -712,7 +712,7 @@ Gets or sets the prompt message associated with the specified parameter.
 
 {% endhighlight %}
 
-### parameters.values `array`
+### parameters.values `Array`
 {:#members:parameters-values}
 
 Gets or sets the parameter values.
@@ -740,7 +740,7 @@ Gets or sets the parameter values.
 
 {% endhighlight %}
 
-### printMode `boolean`
+### printMode `Boolean`
 {:#members:printmode}
 
 Enables and disables the print mode.
@@ -888,7 +888,7 @@ Specifies the render layout.
 
 {% endhighlight %}
 
-### reportPath `string`
+### reportPath `String`
 {:#members:reportpath}
 
 Gets or sets the path of the report file.
@@ -908,7 +908,7 @@ Gets or sets the path of the report file.
 
 {% endhighlight %}
 
-### reportServerUrl `string`
+### reportServerUrl `String`
 {:#members:reportserverurl}
 
 Gets or sets the reports server url.
@@ -928,7 +928,7 @@ Gets or sets the reports server url.
 
 {% endhighlight %}
 
-### reportServiceUrl `string`
+### reportServiceUrl `String`
 {:#members:reportserviceurl}
 
 Specifies the report Web API service url.
@@ -948,12 +948,12 @@ Specifies the report Web API service url.
 
 {% endhighlight %}
 
-### toolbarSettings `object`
+### toolbarSettings `Object`
 {:#members:toolbarsettings}
 
 Specifies the toolbar settings.
 
-### toolbarSettings.click `string`
+### toolbarSettings.click `String`
 {:#members:toolbarsettings-click}
 
 Fires when user click on toolbar item in the toolbar.
@@ -1046,7 +1046,7 @@ Specifies the toolbar items.
 
 {% endhighlight %}
 
-### toolbarSettings.showToolbar `boolean`
+### toolbarSettings.showToolbar `Boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Shows or hides the toolbar.
@@ -1069,7 +1069,7 @@ Shows or hides the toolbar.
 
 {% endhighlight %}
 
-### toolbarSettings.showTooltip `boolean`
+### toolbarSettings.showTooltip `Boolean`
 {:#members:toolbarsettings-showtooltip}
 
 Shows or hides the tooltip of toolbar items.
@@ -1092,7 +1092,7 @@ Shows or hides the tooltip of toolbar items.
 
 {% endhighlight %}
 
-### toolbarSettings.templateId `string`
+### toolbarSettings.templateId `String`
 {:#members:toolbarsettings-templateid}
 
 Specifies the toolbar template ID.
@@ -1115,7 +1115,7 @@ Specifies the toolbar template ID.
 
 {% endhighlight %}
 
-### zoomFactor `number`
+### zoomFactor `Number`
 {:#members:zoomfactor}
 
 Gets or sets the zoom factor for report viewer.
