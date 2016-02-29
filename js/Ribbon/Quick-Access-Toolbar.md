@@ -11,7 +11,7 @@ keywords: quick access toolbar,ribbon quick access toolbar
 
 Quick Access Toolbar provides the shortcuts to the most commonly used commands by placing the controls at the Quick Access Toolbar section. It can be placed at the top or bottom of the Ribbon.
 
-Set [`showQAT`](http://help.syncfusion.com/js/api/ejribbon#members:showqat) as true to enable Quick Access Toolbar in Ribbon. It supports the Button, Split Button, Toggle Button controls. The [`quickAccessMode`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-quickaccessmode) is used to change the controls state in Quick Access Toolbar. through options as `toolbar`,`menu` and `none`. Default value is `none` and QAT toolbar is created with specified controls added in Toolbar.
+Set [`showQAT`](http://help.syncfusion.com/js/api/ejribbon#members:showqat) as true to enable Quick Access Toolbar in Ribbon. It supports the Button, Split Button, Toggle Button controls. The [`quickAccessMode`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-quickaccessmode) is used to change the controls state in Quick Access Toolbar through options as `toolbar`,`menu` and `none`. Default value is `none` and QAT toolbar is created with specified controls added in Toolbar.
 
 The `toolbar` option used to set controls visibility in Quick Access Toolbar.The `menu` option shows the controls in Quick Access Menu and does not show controls in Quick Access Toolbar.
 
