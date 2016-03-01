@@ -93,7 +93,7 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-### buttonText `string`
+### buttonText `object`
 {:#members:buttontext}
 
 
@@ -104,7 +104,7 @@ The colorpicker control allows to define the customized text to displayed in but
 
 
 
-* buttonText.apply= "Apply", buttonText.cancel= "Cancel"
+* buttonText.apply= "Apply", buttonText.cancel= "Cancel",buttonText.Swaches="Swatches"
 
 
 
@@ -120,6 +120,59 @@ The colorpicker control allows to define the customized text to displayed in but
 <script>
 //To set buttonText API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", cancel: "Close" }});
+</script>{% endhighlight %}
+
+
+
+
+### buttonMode `enum`
+{:#members:buttonMode}
+
+<ts name="ej.ButtonMode"/>
+
+Allows to change the mode of the button. Please refer below to know available button mode
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Split</td>
+<td class="description">Displays the button in split mode </td>
+</tr>
+<tr>
+<td class="name">
+Dropdown</td>
+<td class="description">Displays the button in Dropdown modee</td>
+</tr>
+</tbody>
+</table>
+#### Default Value
+
+
+
+* ej.ButtonMode.Split
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
+ 
+<script>
+//To set buttonText API during initialization
+$('#colorPick').ejColorPicker({ value: "#278787",  buttonMode: ej.ButtonModel.DropDown});
 </script>{% endhighlight %}
 
 
@@ -202,7 +255,7 @@ This property allows you to customize its appearance using user-defined CSS and 
 
 
 
-* emptyString
+* ""
 
 
 
@@ -230,7 +283,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
 
 
 
-### custom `data`
+### custom `array`
 {:#members:custom}
 
 
@@ -430,6 +483,34 @@ $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
 
 
 
+### htmlAttributes `object`
+{:#members:htmlattributes}
+
+It allows to define the characteristics of the ColorPicker control. It will helps to extend the capability of an HTML element.
+
+
+#### Default Value
+
+
+
+
+* {}
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="colorPick"/> 
+ 
+<script>
+// Set HtmlAttributes to Button on initialization. 
+        $('#colorPick').ejColorPicker({ htmlAttributes : {disabled:"disabled"}});       
+</script>{% endhighlight %}
 
 
 
@@ -439,14 +520,32 @@ $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
 
 
 
+<ts name="ej.ColorPicker.ModelType"/>
 
 
+Specifies the model type to be rendered initially in the colorpicker control. See below to get available ModelType
 
 
-
-Specifies the model type to be rendered initially in the colorpicker control. There are three different types of model type availabale in colorpicker control. See <a href="global.html#ModelType">ModelType</a>
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Palette</td>
+<td class="description">support palette type mode in colorpicker.</td>
+</tr>
+<tr>
+<td class="name">
+Picker</td>
+<td class="description">support palette type mode in colorpicker.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -541,13 +640,33 @@ $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
 
 
 
+<ts name="ej.ColorPicker.Palette"/>
 
 
 
 
+Specifies the palette type to be displayed at initial time in palette model.There two types of palette model availabale in colorpicker control. See below available Palette
 
-Specifies the palette type to be displayed at initial time in palette model.There two types of palette model availabale in colorpicker control. See <a href="global.html#Palette">Palette</a>
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+BasicPalette</td>
+<td class="description">used to show the basic palette</td>
+</tr>
+<tr>
+<td class="name">
+CustomPalette</td>
+<td class="description">used to show the custompalette</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -591,16 +710,79 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 {:#members:presettype}
 
 
+<ts name="ej.ColorPicker.Presets"/>
 
 
 
 
+This property allows to define the preset model to be rendered initially in palette type.It consists of 12 different types of presets. Each presets have 50 colors. See below available Presets
 
 
-This property allows to define the preset model to be rendered initially in palette type.It consists of 12 different types of presets. Each presets have 50 colors. See Presets
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Basic</td>
+<td class="description">used to show the basic presets</td>
+</tr>
+<tr>
+<td class="name">
+CandyCrush</td>
+<td class="description">used to show the CandyCrush colors presets</td>
+</tr>
+<tr>
+<td class="name">
+Citrus</td>
+<td class="description">used to show the Citrus colors presets</td>
+</tr>
+<tr>
+<td class="name">
+FlatColors</td>
+<td class="description">used to show the FlatColors presets</td>
+</tr>
+<tr>
+<td class="name">
+Misty</td>
+<td class="description">used to show the Misty presets</td>
+</tr>
+<tr>
+<td class="name">
+MoonLight</td>
+<td class="description">used to show the MoonLight presets</td>
+</tr>
+<tr>
+<td class="name">
+PinkShades</td>
+<td class="description">used to show the PinkShades presets</td>
+</tr>
+<tr>
+<td class="name">
+Sandy</td>
+<td class="description">used to show the Sandy presets</td>
+</tr>
+<tr>
+<td class="name">
+SeaWolf</td>
+<td class="description">used to show the Seawolf presets</td>
+</tr>
+<tr>
+<td class="name">
+Vintage</td>
+<td class="description">used to show the Vintage presets</td>
+</tr>
+<tr>
+<td class="name">
+WebColors</td>
+<td class="description">used to show the WebColors presets</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
@@ -632,6 +814,84 @@ This property allows to define the preset model to be rendered initially in pale
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetType: "vintage"});
 </script>{% endhighlight %}
 
+### showApplyCancel `boolean`
+{:#members:showapplycancel}
+
+
+Allows to show/hides the apply and cancel buttons in ColorPicker control
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
+ 
+<script>
+//To set showApplyCancel API during initialization
+$('#colorPick').ejColorPicker({ value: "#278787", showApplyCancel: false});
+</script>{% endhighlight %}
+
+
+### showClearButton `boolean`
+{:#members:showclearbutton}
+
+
+Allows to show/hides the clear button in ColorPicker control
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
+ 
+<script>
+//To set showClearButton API during initialization
+$('#colorPick').ejColorPicker({ value: "#278787", showClearButton: false});
+</script>{% endhighlight %}
 
 
 
@@ -640,12 +900,6 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetTy
 
 ### showPreview `boolean`
 {:#members:showpreview}
-
-
-
-
-
-
 
 
 This property allows to provides live preview support for current cursor selection color and selected color.
@@ -1072,7 +1326,9 @@ $("#colorPick").ejColorPicker("enable");
 
 Gets the selected color in RGB format
 
+####Returns
 
+object
 
 
 
@@ -1126,7 +1382,9 @@ Gets the selected color value as string
 
 
 
+####Returns
 
+string
 
 #### Example
 
@@ -1166,15 +1424,12 @@ alert($("#colorPick").ejColorPicker("getValue"));
 {:#methods:hexcodetorgb}
 
 
-
-
-
-
-
-
 To Convert color value from hexCode to RGB
 
 
+####Returns
+
+object
 
 
 
@@ -1277,6 +1532,11 @@ $("#colorPick").ejColorPicker("hide");
 Convert color value from HSV to RGB
 
 
+####Returns
+
+object
+
+
 
 
 
@@ -1329,7 +1589,9 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 Convert color value from RGB to HEX
 
 
+####Returns
 
+string
 
 
 #### Example
@@ -1381,7 +1643,9 @@ alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
 Convert color value from RGB to HSV
 
 
+####Returns
 
+object
 
 
 #### Example
@@ -1494,9 +1758,9 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
 <thead>
@@ -1508,26 +1772,33 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<tr>
+<td class="name">
+changeFrom</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">return the previous color value</td>
+</tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ColorPicker.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">return the changed color value</td>
 </tr>
@@ -1537,6 +1808,7 @@ value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -1587,8 +1859,8 @@ Fires after closing the color picker popup.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
@@ -1601,20 +1873,21 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ColorPicker.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1624,7 +1897,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
@@ -1674,8 +1946,8 @@ Fires after Color picker control is created. If the user want to perform any ope
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
@@ -1688,20 +1960,21 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name"><ts ref="ej.ColorPicker.Model"/>
+
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1711,7 +1984,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
@@ -1761,9 +2033,9 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
 <thead>
@@ -1775,20 +2047,21 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ColorPicker.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1798,7 +2071,6 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 
@@ -1848,8 +2120,8 @@ Fires after opening the color picker popup
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
@@ -1862,20 +2134,21 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ColorPicker.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1935,9 +2208,9 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Event parameters from color picker
 <table class="params">
 <thead>
@@ -1949,26 +2222,27 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ColorPicker.Model"/>
+<span class="param-type">object</span></td>
 <td class="description">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">return the selected color value</td>
 </tr>

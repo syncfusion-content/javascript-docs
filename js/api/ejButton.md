@@ -30,8 +30,8 @@ $(element).ejButton(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">
+options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">settings for button</td>
 </tr>
@@ -72,7 +72,49 @@ $('#button1').ejButton();
 
 
 
-Specifies the contentType to be displayed over the Button. See <a href="global.html#ContentType">ContentType</a>
+<ts name="ej.ContentType"/>
+
+
+Specifies the contentType of the Button. See below to know available ContentType
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+TextOnly</td>
+<td class="description">To display the text content only in button</td>
+</tr>
+<tr>
+<td class="name">
+ImageOnly</td>
+<td class="description">To display the image only in button</td>
+</tr>
+<tr>
+<td class="name">
+ImageBoth</td>
+<td class="description">Supports to display  image for both ends of the button</td>
+</tr>
+
+<tr>
+<td class="name">
+TextAndImage</td>
+<td class="description">Supports to display image with the text content</td>
+</tr>
+<tr>
+<td class="name">
+ImageTextImage</td>
+<td class="description">Supports to display  image with both ends of the text</td>
+</tr>
+
+</tbody>
+</table>
 
 
 #### Default Value
@@ -246,9 +288,6 @@ Specifies the height of the Button.
 ### htmlAttributes `object`
 {:#members:htmlattributes}
 
-
-
-
 It allows to define the characteristics of the Button control. It will helps to extend the capability of an HTML element.
 
 
@@ -281,10 +320,43 @@ It allows to define the characteristics of the Button control. It will helps to 
 ### imagePosition `enum`
 {:#members:imageposition}
 
+<ts name="ej.ButtonType"/>
 
 
+Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See below to know about available ImagePosition
 
-Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See <a href="global.html#ImagePosition">ImagePosition</a>
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+ImageRight</td>
+<td class="description">support for aligning text in left and image in right</td>
+</tr>
+<tr>
+<td class="name">
+ImageLeft</td>
+<td class="description">support for aligning text in right and image in left</td>
+</tr>
+<tr>
+<td class="name">
+ImageTop</td>
+<td class="description">support for aligning text in bottom and image in top.</td>
+</tr>
+
+<tr>
+<td class="name">
+ImageBottom</td>
+<td class="description">support for aligning text in top and image in bottom</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -433,9 +505,49 @@ Displays the Button with rounded corncers.
 {:#members:size}
 
 
+<ts name="ej.ButtonSize"/>
 
+Specifies the size of the Button. See below to know available ButtonSize
 
-Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSize</a>
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Normal</td>
+<td class="description">Creates button with inbuilt default size height, width specified</td>
+</tr>
+<tr>
+<td class="name">
+Mini</td>
+<td class="description">Creates button with inbuilt mini size height, width specified</td>
+</tr>
+<tr>
+<td class="name">
+Small</td>
+<td class="description">Creates button with inbuilt small size height, width specified</td>
+</tr>
+
+<tr>
+<td class="name">
+Medium</td>
+<td class="description">Creates button with inbuilt medium size height, width specified </td>
+</tr>
+<tr>
+<td class="name">
+Large</td>
+<td class="description">Creates button with inbuilt large size height, width specified </td>
+</tr>
+
+</tbody>
+</table>
+
 
 
 #### Default Value
@@ -577,14 +689,40 @@ Specified the time interval between two consecutive 'click' event on the button.
 
 
 
-### type `enum`  `string`
+### type `enum`
 {:#members:type}
 
+<ts name="ej.ButtonType"/>
 
 
+Specifies the Type of the Button. See below to know available ButtonType
 
-Specifies the Type of the Button. See <a href="global.html#ButtonType">ButtonType</a>
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td class="name">
+Button</td>
+<td class="description">Creates button with inbuilt button type specified</td>
+</tr>
+<tr>
+<td class="name">
+Reset</td>
+<td class="description">Creates button with inbuilt reset type specified </td>
+</tr>
+<tr>
+<td class="name">
+Submit</td>
+<td class="description">Creates button with inbuilt submit type specified</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
@@ -791,32 +929,32 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Button.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the button state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.e{% endhighlight %}</td>
+<td class="name">
+e</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">return the event model for sever side processing. </td>
 </tr>
@@ -864,20 +1002,20 @@ Fires after Button control is created.If the user want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Button.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -925,20 +1063,20 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Button.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>

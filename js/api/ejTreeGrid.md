@@ -278,55 +278,15 @@ Enables or disables the ability to sort the rows based on this column/field.
 {% endhighlight %}
 
 
-### columns.editType `enum`
+### columns.editType `string`
 {:#members:columns-edittype}
-
-<ts name = "ej.TreeGrid.EditingType"/>
 
 Specifies the edit type of the column.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">String</td>
-<td class="description">Specifies string edit type.</td>
-</tr>
-<tr>
-<td class="name">Boolean</td>
-<td class="description">Specifies boolean edit type.</td>
-</tr>
-<tr>
-<td class="name">Numeric</td>
-<td class="description">Specifies numeric edit type.</td>
-</tr>
-<tr>
-<td class="name">Dropdown</td>
-<td class="description">Specifies dropdown edit type.</td>
-</tr>
-<tr>
-<td class="name">DatePicker</td>
-<td class="description">Specifies date edit type.</td>
-</tr>
-<tr>
-<td class="name">DateTimePicker</td>
-<td class="description">Specifies datetime edit type.</td>
-</tr>
-<tr>
-<td class="name">Maskedit</td>
-<td class="description">Specifies maskedit edit type.</td>
-</tr>
-</tbody>
-</table>
 
 #### Default Value:
 
-* ej.TreeGrid.EditingType.String
+* null
 
 
 #### Example
@@ -334,7 +294,7 @@ Specifies the edit type of the column.
 
 {% highlight html %}
  
- $("#treegrid").ejTreeGrid({columns: [{ editType: ej.TreeGrid.EditingType.String},{editType: ej.TreeGrid.EditingType.Boolean}]});
+ $("#treegrid").ejTreeGrid({columns: [{ editType: "stringedit"},{editType: "booleanedit"}]});
 
 {% endhighlight %}
 
@@ -347,7 +307,7 @@ Specifies the name of the field from the dataSource to bind with this column.
 
 #### Default Value:
 
-* ""
+* null
 
 
 #### Example
@@ -360,51 +320,15 @@ Specifies the name of the field from the dataSource to bind with this column.
 {% endhighlight %}
 
 
-### columns.filterEditType `enum`
+### columns.filterEditType `string`
 {:#members:columns-filteredittype}
-
-<ts name = "ej.TreeGrid.EditingType"/>
 
 Specifies the type of the editor control to be used to filter the rows.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">String</td>
-<td class="description">Specifies string filter type.</td>
-</tr>
-<tr>
-<td class="name">Boolean</td>
-<td class="description">Specifies boolean filter type.</td>
-</tr>
-<tr>
-<td class="name">Numeric</td>
-<td class="description">Specifies numeric filter type.</td>
-</tr>
-<tr>
-<td class="name">Dropdown</td>
-<td class="description">Specifies dropdown filter type.</td>
-</tr>
-<tr>
-<td class="name">DatePicker</td>
-<td class="description">Specifies date filter type.</td>
-</tr>
-<tr>
-<td class="name">DateTimePicker</td>
-<td class="description">Specifies datetime filter type.</td>
-</tr>
-</tbody>
-</table>
 
 #### Default Value
 
-* ej.TreeGrid.EditingType.String
+* null
 
 
 #### Example
@@ -412,7 +336,7 @@ Specifies the type of the editor control to be used to filter the rows.
 
 {% highlight html %}
        
-        $("#treegrid").ejTreeGrid({columns: [{ filterEditType: ej.TreeGrid.EditingType.String},{filterEditType: ej.TreeGrid.EditingType.Boolean}]});
+        $("#treegrid").ejTreeGrid({columns: [{ filterEditType: "stringedit"},{filterEditType: "booleanedit"}]});
 
 {% endhighlight %}
 
@@ -496,9 +420,9 @@ Specifies whether the column is frozen
 {% endhighlight %}
 
 
-### columns.alllowFreezing `boolean`
+### columns.allowFreezing `boolean`
 
-{:#members:columns-alllowfreezing}
+{:#members:columns-allowfreezing}
 
 Enables or diables the ability to freeze/unfreeze the columns
 
@@ -743,36 +667,15 @@ Enables or disables the ability to edit a row or cell.
 {% endhighlight %}
 
 
-### editSettings.editMode `enum`
+### editSettings.editMode `string`
 {:#members:editsettings-editmode}
 
-<ts name = "ej.TreeGrid.EditMode"/>
-
 specifies the editmode in treegrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">CellEditing</td>
-<td class="description">you can edit a cell.</td>
-</tr>
-<tr>
-<td class="name">RowEditing</td>
-<td class="description">you can edit a row.</td>
-</tr>
-</tbody>
-</table>
 
 
 #### Default Value
 
-* ej.TreeGrid.EditMode.CellEditing
+* "cellEditing"
 
 
 #### Example
@@ -780,48 +683,15 @@ specifies the editmode in treegrid , "cellEditing" is for cell type editing and 
 
 {% highlight html %}
                  
-        $("#treegrid").ejTreeGrid({  editSettings:{editMode : ej.TreeGrid.EditMode.CellEditing} });
+        $("#treegrid").ejTreeGrid({  editSettings:{editMode : "cellEditing"} });
 
 {% endhighlight %}
 
 
-### editSettings.rowPosition `enum`
+### editSettings.rowPosition `string`
 {:#members:editsettings-rowposition}
 
-<ts name = "ej.TreeGrid.RowPosition"/>
-
 Specifies the position where the new row has to be added.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Top</td>
-<td class="description">row can be added newly at the top position.</td>
-</tr>
-<tr>
-<td class="name">Bottom</td>
-<td class="description">row can be added newly at the bottom position.</td>
-</tr>
-<tr>
-<td class="name">Above</td>
-<td class="description">row can be added newly at the position above the selected row.</td>
-</tr>
-<tr>
-<td class="name">Below</td>
-<td class="description">row can be added newly at the position below the selected row.</td>
-</tr>
-<tr>
-<td class="name">Child</td>
-<td class="description">row can be added newly as a child for the selected row.</td>
-</tr>
-</tbody>
-</table>
 
 
 #### Default Value
@@ -834,7 +704,7 @@ Specifies the position where the new row has to be added.
 
 {% highlight html %}
    
- $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
+ $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : "aboveSelectedRow"} });
 
 {% endhighlight %}
 
@@ -926,7 +796,7 @@ Specifies whether to render only the visual elements that are visible in the UI.
 {% endhighlight %}
 
 
-### filterBarMode `string`
+### filterBarMode `enum`
 {:#members:filterbarmode}
 
 Specifies if the filtering should happen immediately on each key press or only on pressing enter key.
@@ -1084,33 +954,15 @@ Specifies the index of the selected row.
 {% endhighlight %}
 
 
-### selectionType `enum`
+### selectionType `string`
 {:#members:selectiontype}
 
 Specifies the type of selection whether to select single row or multiple rows.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Single</td>
-<td class="description">Single row can be selected.</td>
-</tr>
-<tr>
-<td class="name">Multiple</td>
-<td class="description">Multiple rows can be selected.</td>
-</tr>
-</tbody>
-</table>
 
 #### Default Value
 
-* ej.TreeGrid.SelectionType.Single
+* "single"
 
 
 #### Example
@@ -1118,7 +970,7 @@ Specifies the type of selection whether to select single row or multiple rows.
 
 {% highlight html %}
           
-        $("#treegrid").ejTreeGrid({ selectionType:ej.TreeGrid.SelectionType.Multiple });                   
+        $("#treegrid").ejTreeGrid({ selectionType:"multiple" });                   
 
 {% endhighlight %}
 
@@ -1273,7 +1125,7 @@ Option to add columns based on which the rows have to be sorted recursively.
 Options for displaying and customizing the toolbar items.
 
 
-### toolbarSettings.showToolBar `boolean`
+### toolbarSettings.showToolBar `boolean'
 {:#members:toolbarsettings-showtoolbar}
 
 Shows/hides the toolbar.
@@ -1378,6 +1230,19 @@ treegridObj.clearSelection(2);
 </script>
 {% endhighlight %}
 
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// To clear the selection
+$("#treegrid").ejTreeGrid("clearSelection",2);  
+</script>
+
+{% endhighlight %}
+
+
 ### collapseAll()
 {:#methods:collapseall}
 
@@ -1394,6 +1259,18 @@ To collapse all the parent items in tree grid
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.collapseAll(); // To collapse all parent items in tree grid
 </script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// To expand all items
+$("#treegrid").ejTreeGrid("collapseAll");       
+</script>
+
 {% endhighlight %}
 
 
@@ -1484,27 +1361,10 @@ treegridObj.refresh(dataManager, query) // To refresh the tree grid content
 
 
 
-### freezePrecedingColumns (field)
+### freezePrecedingColumns ()
 {:#methods:freezeprecedingcolumns}
 
 Freeze all the columns preceding to the column specified by the field name.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">field</td>
-<td class="type">string</td>
-<td class="description">Columns preceding this field can be freezed.</td>
-</tr>
-</tbody>
-</table>
 
 #### Example
 
@@ -1520,33 +1380,23 @@ treegridObj.freezePrecedingColumns(field);
 {% endhighlight %}
 
 
-### freezeColumn (field, isFrozen)
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Save the edited cell
+$("#treegrid").ejTreeGrid("freezePrecedingColumns" , field);  
+</script>
+{% endhighlight %}
+
+
+
+### freezeColumn ()
 
 {:#methods:freezecolumn}
 
 Freeze/unfreeze the specified column.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">field</td>
-<td class="type">string</td>
-<td class="description">The column to be frozen/unfrozen.</td>
-</tr>
-<tr>
-<td class="name">isFrozen</td>
-<td class="type">boolean</td>
-<td class="description">To freeze/unfreeze the column containing this field.</td>
-</tr>
-</tbody>
-</table>
 
 #### Example
 
@@ -1558,6 +1408,17 @@ Freeze/unfreeze the specified column.
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.freezeColumn(field, isFrozen); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Save the edited cell
+$("#treegrid").ejTreeGrid("freezeColumn" , field , isFrozen);  
 </script>
 {% endhighlight %}
 
@@ -1579,6 +1440,17 @@ To save the edited cell in treegrid
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.saveCell(); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Save the edited cell
+$("#treegrid").ejTreeGrid("saveCell");  
 </script>
 {% endhighlight %}
 
@@ -1617,6 +1489,18 @@ To search an item with search string provided at the run time
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.search("Plan"); // To search a Plan string in tree grid data
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// To search a task
+$("#treegrid").ejTreeGrid("search","Plan");     
 </script>
 
 {% endhighlight %}
@@ -1702,6 +1586,17 @@ To sorting the data based on the particular fields
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.sortColumn("Start Date", ej.sortOrder.Descending); // To sort the data
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="treegrid"></div> 
+ 
+<script>
+// Sort the particular field.
+$("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);  
 </script>
 {% endhighlight %}
 
@@ -2301,28 +2196,13 @@ Triggered after collapsed the TreeGrid record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">number</td>
+<td class="type">object</td>
 <td class="description">Returns the row index of collapsed record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of collapsed record..</td>
-</tr>
-<tr>
-<td class="name">requestType</td>
-<td class="type">string</td>
-<td class="description">Returns Request Type.</td>
-</tr>
-<tr>
-<td class="name">expanded</td>
-<td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event type.</td>
+<td class="description">Returns the data of edited cell record..</td>
 </tr>
 </tbody>
 </table>
@@ -2384,23 +2264,13 @@ Triggered while collapsing the TreeGrid record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">number</td>
+<td class="type">object</td>
 <td class="description">Returns the row index of collapsing record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of collapsing record..</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event Type.</td>
-</tr>
-<tr>
-<td class="name">expanded</td>
-<td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsing state.</td>
+<td class="description">Returns the data of edited cell record..</td>
 </tr>
 </tbody>
 </table>
@@ -2462,7 +2332,7 @@ Triggered while Context Menu is rendered in TreeGrid control
 </tr>
 <tr>
 <td class="name">contextMenuItems</td>
-<td class="type">array</td>
+<td class="type">boolean</td>
 <td class="description">Returns the default context menu items to which we add custom items.</td>
 </tr>
 <tr>
@@ -2624,28 +2494,13 @@ Triggered after expand the record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index of expanded record.</td>
+<td class="type">object</td>
+<td class="description">Returns the row index of record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of expanded record..</td>
-</tr>
-<tr>
-<td class="name">requestType</td>
-<td class="type">string</td>
-<td class="description">Returns Request Type.</td>
-</tr>
-<tr>
-<td class="name">expanded</td>
-<td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or expanded state.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event type.</td>
+<td class="description">Returns the data of edited cell record..</td>
 </tr>
 </tbody>
 </table>
@@ -2708,23 +2563,13 @@ Triggered while expanding the TreeGrid record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index of expanding record.</td>
+<td class="type">object</td>
+<td class="description">Returns the row index of record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of expanding record..</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event Type.</td>
-</tr>
-<tr>
-<td class="name">expanded</td>
-<td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
+<td class="description">Returns the data of edited cell record..</td>
 </tr>
 </tbody>
 </table>
@@ -2851,9 +2696,9 @@ Triggered while rendering each cell in the treegrid
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">cellElement</td>
+<td class="name">rowElement</td>
 <td class="type">object</td>
-<td class="description">Returns the selecting cell element.</td>
+<td class="description">Returns the selecting row element.</td>
 </tr>
 <tr>
 <td class="name">cellValue</td>
@@ -2930,12 +2775,12 @@ Triggered while rendering each row
 <tr>
 <td class="name">rowElement</td>
 <td class="type">object</td>
-<td class="description">Returns the row element of rendering row.</td>
+<td class="description">Returns the row element of editing cell.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of rendering row record.</td>
+<td class="description">Returns the data of edited cell record.</td>
 </tr>
 </tbody>
 </table>
@@ -2996,22 +2841,22 @@ Triggered while dragging a row in TreeGrid control
 </tr>
 <tr>
 <td class="name">draggedRow</td>
-<td class="type">object</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row which we start to drag.</td>
 </tr>
 <tr>
 <td class="name">draggedRowIndex</td>
-<td class="type">number</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
 <td class="name">targetRow</td>
-<td class="type">object</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row on which we are dragging.</td>
 </tr>
 <tr>
 <td class="name">targetRowIndex</td>
-<td class="type">number</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row index on which we are dragging.</td>
 </tr>
 <tr>
@@ -3093,7 +2938,7 @@ Triggered while start to drag row in TreeGrid control
 </tr>
 <tr>
 <td class="name">draggedRow</td>
-<td class="type">object</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row which we start to drag.</td>
 </tr>
 <tr>
@@ -3175,22 +3020,22 @@ Triggered while drop a row in TreeGrid control
 </tr>
 <tr>
 <td class="name">draggedRow</td>
-<td class="type">object</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row which we start to drag.</td>
 </tr>
 <tr>
 <td class="name">draggedRowIndex</td>
-<td class="type">number</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
 <td class="name">targetRow</td>
-<td class="type">object</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row which we are dropped to row.</td>
 </tr>
 <tr>
 <td class="name">targetRowIndex</td>
-<td class="type">number</td>
+<td class="type">boolean</td>
 <td class="description">Returns the row index which we are dropped to row.</td>
 </tr>
 <tr>
@@ -3266,24 +3111,19 @@ Triggered after the row is selected.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">targetRow</td>
+<td class="name">rowElement</td>
 <td class="type">object</td>
 <td class="description">Returns the selecting row element.</td>
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">number</td>
+<td class="type">string</td>
 <td class="description">Returns the index of selecting row record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
 <td class="description">Returns the data of selected record.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event type.</td>
 </tr>
 </tbody>
 </table>
@@ -3343,9 +3183,9 @@ Triggered before the row is going to be selected.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowElement</td>
 <td class="type">object</td>
-<td class="description">Returns the data selecting record.</td>
+<td class="description">Returns the selecting row element.</td>
 </tr>
 <tr>
 <td class="name">recordIndex</td>
@@ -3353,24 +3193,9 @@ Triggered before the row is going to be selected.
 <td class="description">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name">targetRow</td>
+<td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the selecting row element.</td>
-</tr>
-<tr>
-<td class="name">previousData</td>
-<td class="type">object</td>
-<td class="description">Returns the previous selected data.</td>
-</tr>
-<tr>
-<td class="name">previousIndex</td>
-<td class="type">string</td>
-<td class="description">Returns the previous selected row index.</td>
-</tr>
-<tr>
-<td class="name">previousTreeGridRow</td>
-<td class="type">object</td>
-<td class="description">Returns the previous selected row element.</td>
+<td class="description">Returns the data selecting record.</td>
 </tr>
 </tbody>
 </table>
@@ -3407,47 +3232,53 @@ Triggered when toolbar item is clicked in TreeGrid.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
+<th class="last">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Arguments when toolBarClick event is triggered.
+<td class="description last">Arguments when toolBarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
+<th class="last">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">cancel</td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Returns the cancel option value.</td>
+<td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">currentTarget</td>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the current item.</td>
+<td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name">model</td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description last">Returns the TreeGrid model.</td>
 </tr>
 <tr>
-<td class="name">itemName</td>
+<td class="name">{% highlight html %}
+itemName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the toolbar item on which mouse click has been performed</td>
+<td class="description last">Returns the name of the toolbar item on which mouse click has been performed</td>
 </tr>
 <tr>
-<td class="name">type</td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the event.</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
