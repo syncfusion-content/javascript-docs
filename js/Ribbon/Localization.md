@@ -12,7 +12,7 @@ keywords: overview
 
 ## Localization
 
-All text in Ribbon can be localized using ej.Ribbon.Locale object. Please find the table with list of properties and its value in locale object.
+Set [`locale`](http://help.syncfusion.com/js/api/ejribbon#members:locale) in string and all text in Ribbon can be localized using ej.Ribbon.Locale object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
