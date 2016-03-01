@@ -12,7 +12,7 @@ keywords: overview
 
 ## Localization
 
-Set [`locale`](http://help.syncfusion.com/js/api/ejribbon#members:locale) in string and all text in Ribbon can be localized using ej.Ribbon.Locale object. Please find the table with list of properties and its value in locale object.
+The localization support allows to customize the display of text within the Ribbon in a user-specific culture and locale. The Ribbon control can be localized in specific culture using the common API [`locale`](http://help.syncfusion.com/js/api/ejribbon#members:locale) along with the collection of localized words defined for that culture using the ej.Ribbon.Locale [culture-code].Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -44,6 +44,10 @@ Show Below the Ribbon</td></tr>
 MoreCommands</td><td>
 More Commands...</td></tr>
 </table>
+
+N> By default, the Ribbon control is localized in `en-US` culture.
+
+For further information on – how to refer the required culture scripts into your application, refer [`here`](http://help.syncfusion.com/js/localization).
 
 {% highlight html %}
 
