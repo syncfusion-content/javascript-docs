@@ -1307,7 +1307,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.template `Boolean`
+### columns.template `Boolean|String`
 {:#members:columns-template}
 
 Gets or sets a value that indicates whether to enables column template for a particular column.
@@ -1326,7 +1326,8 @@ Gets or sets a value that indicates whether to enables column template for a par
 <script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
- columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
+ columns:[{field:"OrderID",headerText:"TemplateColumn",template:"<span>{{:EmployeeID}}</span>"},
+          {field:"EmployeeID",headerText:"Employee",template:true,templateID:"#columnTemplate"} ]
 });
 </script>
 {% endhighlight %}
