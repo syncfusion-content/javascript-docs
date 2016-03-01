@@ -408,7 +408,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
             collapsePinSettings:{
                         customToolTip:{
                         title: "Pin the Ribbon",
-                        content: "<h6>Click the icon to expand the Ribbon.</h6>"
+                        content: "<h6>Keep it open while you work</h6>"
                         }
                     },	
             applicationTab: {
