@@ -303,3 +303,207 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
 {% endhighlight %}
 
 ![](/js/Ribbon/Screen-Tips_images/Screen-Tips_img3.png)
+
+### For Expand Pin
+
+Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:expandpinsettings-customtooltip) for expand pin in the Ribbon. 
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+                 <ul id="ribbonmenu">
+				    <li><a>FILE</a>
+                       <ul>
+                         <li><a>New</a></li>
+                         <li><a>Open</a></li>
+			    	  </ul>
+				   </li>
+                </ul>
+            </div>
+     <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "300",
+            expandPinSettings: {
+                customToolTip: {
+                    title: "Collapse the Ribbon",
+                    content: "<h6>Click the icon to collapse the Ribbon.</h6>"
+                }
+            },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+     </script>
+
+{% endhighlight %}
+
+![](/js/Ribbon/Screen-Tips_images/Screen-Tips_img4.png)
+
+### For Collapse Pin
+
+Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:collapsepinsettings-customtooltip) for collapse pin in the Ribbon. 
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+                 <ul id="ribbonmenu">
+				    <li><a>FILE</a>
+                       <ul>
+                         <li><a>New</a></li>
+                         <li><a>Open</a></li>
+			    	  </ul>
+				   </li>
+                </ul>
+            </div>
+     <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "300",
+            collapsePinSettings: {
+                customToolTip: {
+                    title: "Pin the Ribbon",
+                    content: "<h6>Keep it open while you work</h6>"
+                }
+            },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+     </script>
+
+{% endhighlight %}
+
+![](/js/Ribbon/Screen-Tips_images/Screen-Tips_img5.png)
+
+### For GroupExpander
+
+[`Custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-groupexpandersettings-customtooltip) for each group expander can be specified.
+
+{% highlight html %}
+
+    <div id="defaultRibbon"></div>
+               <ul id="ribbonmenu">
+				  <li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+			    	</ul>
+				</li>
+           </ul>
+        </div>
+     <script>
+        $(function() {
+        $("#defaultRibbon").ejRibbon({
+            width: "300",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "ribbonmenu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+    
+                    text: "New",
+                    alignType: ej.Ribbon.AlignType.Columns,
+                    enableGroupExpander: true,
+                    groupExpanderSettings: {
+                        customToolTip: {
+                            title: "Clipboard",
+                            content: "<h6>Show a popup for the Clipboard group.</h6>"
+                        }
+                    },
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
+            }]
+        });
+    });
+     </script>   
+
+{% endhighlight %}
+
+![](/js/Ribbon/Screen-Tips_images/Screen-Tips_img6.png)
