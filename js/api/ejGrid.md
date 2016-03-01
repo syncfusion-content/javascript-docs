@@ -5117,7 +5117,7 @@ Expand or collapse the row based on the row state in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+Element
 
 
 ####Example
@@ -5210,6 +5210,10 @@ Export the grid content to excel, word or pdf document.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 #### Example
 {:.example}
@@ -5537,12 +5541,10 @@ Get the column details based on the given column index in grid
 </tbody>
 </table>
 
-
 #### Returns:
 {:#methods:returns:}
 
 Object
-
 
 #### Example
 {:.example}
@@ -7777,7 +7779,7 @@ Send an edit record request in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+Element
 
 ####Example
 {:.example}
