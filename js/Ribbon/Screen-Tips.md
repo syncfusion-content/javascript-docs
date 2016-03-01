@@ -457,7 +457,7 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#memb
      <script>
         $(function() {
         $("#defaultRibbon").ejRibbon({
-            width: "500",
+            width: "300",
             applicationTab: {
                 type: ej.Ribbon.applicationTabType.menu,
                 menuItemID: "ribbonmenu",
@@ -469,17 +469,36 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#memb
                 id: "home",
                 text: "HOME",
                 groups: [{
+    
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
-                    type: "custom",
+                    alignType: ej.Ribbon.AlignType.Columns,
                     enableGroupExpander: true,
                     groupExpanderSettings: {
                         customToolTip: {
                             title: "Clipboard",
                             content: "<h6>Show a popup for the Clipboard group.</h6>"
                         }
-                    }
-                }]
+                    },
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }],
+                }],
             }]
         });
     });
