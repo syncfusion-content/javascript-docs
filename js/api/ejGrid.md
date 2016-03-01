@@ -247,6 +247,7 @@ $("#Grid").ejGrid({
 {:#members:allowresizetofit}
 
 Gets or sets a value that indicates whether the column is non resizeable. Column width is set automatically based on the content or header text which is large.
+
 #### Default Value:
 {:.param}
 * false
@@ -417,11 +418,36 @@ $("#Grid").ejGrid({
 ### gridLines `enum`
 {:#members:gridlines}
 
+<ts name="ej.Grid.GridLines"/>
+
 Gets or sets a value that indicates to enable the visibility of the grid lines.
 
 #### Default Value:
 {:.param}
 * ej.Grid.GridLines.Both
+
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Displays both the horizontal and vertical grid lines.</td>
+</tr>
+<tr>
+<td class="name">Horizontal</td>
+<td class="description">Displays the horizontal grid lines only.</td>
+</tr>
+<tr>
+<td class="name">Vertical</td>
+<td class="description">Displays the vertical grid lines only.</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">No grid lines are displayed.</td>
+</tr>
+Add a comment to this line
+</table>
 
 #### Example 
 {% highlight html %}  
@@ -461,11 +487,28 @@ queryString: "EmployeeID",
 ### columnLayout `enum`
 {:#members:columnlayout}
 
+<ts name="ej.Grid.ColumnLayout"/>
+
 Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
 
 #### Default Value:
 {:.param}
 * ej.Grid.ColumnLayout.Auto
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Column layout is auto(based on width).</td>
+</tr>
+<tr>
+<td class="name">Fixed</td>
+<td class="description">Column layout is fixed(based on width).</td>
+</tr> 
+</table>
 
 #### Example
 {:.example}
@@ -711,11 +754,36 @@ $("#Grid").ejGrid({
 ### columns.commands.type `enum`
 {:#members:columns-commands-type}
 
+<ts name="ej.Grid.UnboundType"/>
+
 Gets or sets a value that indicates to add the command column button. See unboundType
 
 #### Default Value:
 {:.param}
 * -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type is edit.</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type is save.</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type is delete.</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type is cancel.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -812,7 +880,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### columns.defaultValue `String/Number/Boolean/Date`
+### columns.defaultValue `String|Number|Boolean|Date`
 {:#members:columns-defaultvalue}
 
 Gets or sets a value that indicates to display the specified default value while adding a new record to the grid
@@ -925,11 +993,44 @@ $("#Grid").ejGrid({
 ### columns.editType `enum`
 {:#members:columns-edittype}
 
+<ts name="ej.Grid.EditingType"/>
+
 Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. . See editingType
 
 #### Default Value:
 {:.param}
 * ej.Grid.EditingType.String
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">String</td>
+<td class="description">Specifies editing type as stringedit.</td>
+</tr>
+<tr>
+<td class="name">Boolean</td>
+<td class="description">Specifies editing type as booleanedit.</td>
+</tr> 
+<tr>
+<td class="name">Numeric</td>
+<td class="description">Specifies editing type as numericedit.</td>
+</tr> 
+<tr>
+<td class="name">Dropdown</td>
+<td class="description">Specifies editing type as dropdownedit.</td>
+</tr> 
+<tr>
+<td class="name">DatePicker</td>
+<td class="description">Specifies editing type as datepicker.</td>
+</tr> 
+<tr>
+<td class="name">DateTimePicker</td>
+<td class="description">Specifies editing type as datetimepicker.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -1076,11 +1177,37 @@ $("#Grid").ejGrid({
 ### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
 
+<ts ref="ej.TextAlign"/>
+
 This defines the text alignment of a particular column header cell value. See headerTextAlign
 
 #### Default Value:
 {:.param}
 * ej.TextAlign.Left
+
+<table>
+Add a comment to this line
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Headertext is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Headertext is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Headertext is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Headertext is aligned to the right.</td>
+</tr>   
+</table>
 
 #### Example
 {% highlight html %}
@@ -1231,11 +1358,36 @@ $("#Grid").ejGrid({
 ### columns.textAlign `enum`
 {:#members:columns-textalign}
 
+<ts ref=" ej.TextAlign.Left"/>
+
 Gets or sets a value that indicates to align the text within the column. See textAlign
 
 #### Default Value:
 {:.param}
 * ej.TextAlign.Left
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Text is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Text is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Text is aligned to the right.</td>
+</tr>   
+</table>
 
 #### Example
 {% highlight html %}
@@ -1277,13 +1429,34 @@ $("#Grid").ejGrid({
 ### columns.clipMode `enum`
 {:#members:columns-clipmode}
 
+<ts name="ej.Grid.ClipMode"/>
+
 Sets the clipmode for Grid cell as ellipsis or clipped content(both header and content)
 
-Default Value:
+#### Default Value:
 {:.param}
 * ej.Grid.ClipMode.Clip
 
-####Example
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell</td>
+</tr> 
+<tr>
+<td class="name">EllipsisWithTooltip</td>
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
+</tr>   
+</table>
+
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -1745,11 +1918,57 @@ $("#Grid").ejGrid({
 ### editSettings.editMode `enum`
 {:#members:editsettings-editmode}
 
+<ts name="ej.Grid.EditMode"/>
+
 Gets or sets a value that indicates whether to define the mode of editing See editMode
 
 #### Default Value:
 {:.param}
 * ej.Grid.EditMode.Normal
+
+<table>
+Add a comment to this line
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">Edit mode is normal.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell</td>
+</tr> 
+<tr>
+<td class="name">Dialog</td>
+<td class="description">Edit mode is dialog.</td>
+</tr>  
+<tr>
+<td class="name">DialogTemplate</td>
+<td class="description">Edit mode is dialogtemplate.</td>
+</tr> 
+<tr>
+<td class="name">Batch</td>
+<td class="description">Edit mode is batch.</td>
+</tr> 
+<tr>
+<td class="name">InlineForm</td>
+<td class="description">Edit mode is inlineform.</td>
+</tr> 
+<tr>
+<td class="name">InlineTemplateForm</td>
+<td class="description">Edit mode is inlinetemplateform.</td>
+</tr> 
+<tr>
+<td class="name">ExternalForm</td>
+<td class="description">Edit mode is externalform.</td>
+</tr> 
+<tr>
+<td class="name">ExternalFormTemplate</td>
+<td class="description">Edit mode is externalformtemplate.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -1809,11 +2028,28 @@ $("#Grid").ejGrid({
 ### editSettings.formPosition `enum`
 {:#members:editsettings-formposition}
 
+<ts name="ej.Grid.FormPosition"/>
+
 This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid
 
 #### Default Value:
 {:.param}
 * ej.Grid.FormPosition.BottomLeft
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">BottomLeft</td>
+<td class="description">Form position is bottomleft.</td>
+</tr>
+<tr>
+<td class="name">TopRight</td>
+<td class="description">Form position is topright.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -1873,11 +2109,28 @@ $("#Grid").ejGrid({
 ### editSettings.rowPosition `enum`
 {:#members:editsettings-rowposition}
 
+<ts name="ej.Grid.RowPosition"/>
+
 This specifies to set the position of an adding new row either in the top or bottom of the grid
 
 #### Default Value:
 {:.param}
 * ej.Grid.RowPosition.top
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Top</td>
+<td class="description">Specifies position of add new row as top.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="description">Specifies position of add new row as bottom.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -2187,11 +2440,29 @@ $("#Grid").ejGrid({
 ### filterSettings.filterBarMode `enum`
 {:#members:filtersettings-filterbarmode}
 
+<ts name="ej.Grid.FilterBarMode"/>
+
 This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
 
 #### Default Value:
 {:.param}
 * ej.Grid.FilterBarMode.Immediate
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Immediate</td>
+<td class="description">Initiate filter operation on typing the filter query.</td>
+</tr>
+<tr>
+<td class="name">OnEnter</td>
+<td class="description">Initiate filter operation after Enter key is pressed.</td>
+</tr> 
+</table>
+
 
 #### Example
 {% highlight html %}
@@ -2222,14 +2493,63 @@ Gets or sets a value that indicates whether to define the field name of the colu
 ### filterSettings.filteredColumns.operator `enum`
 {:#members:filtersettings-filteredcolumns-operator}
 
+<ts ref="ej.FilterOperators"/>
+
 Gets or sets a value that indicates whether to define the filter condition to filtered column.
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">startsWith</td>
+<td class="description">Specifies the filter operator as startswith.</td>
+</tr>
+<tr>
+<td class="name">endsWith</td>
+<td class="description">Specifies the filter operator as endswith.</td>
+</tr> 
+<tr>
+<td class="name">contains</td>
+<td class="description">Specifies the filter operator as contains.</td>
+</tr> 
+<tr>
+<td class="name">equal</td>
+<td class="description">Specifies the filter operator as equal.</td>
+</tr> 
+<tr>
+<td class="name">notEqual</td>
+<td class="description">Specifies the filter operator as notequal.</td>
+</tr> 
+<tr>
+<td class="name">greaterThan</td>
+<td class="description">Specifies the filter operator as greaterthan.</td>
+</tr> 
+<tr>
+<td class="name">greaterThanOrEqual</td>
+<td class="description">Specifies the filter operator as greaterthanorequal.</td>
+</tr> 
+<tr>
+<td class="name">lessThan</td>
+<td class="description">Specifies the filter operator as lessthan.</td>
+</tr> 
+<tr>
+<td class="name">lessThanOrEqual</td>
+<td class="description">Specifies the filter operator as Lessthanorequal.</td>
+</tr> 
+</table>
 
 ### filterSettings.filteredColumns.predicate `string`
 {:#members:filtersettings-filteredcolumns-predicate}
 
 Gets or sets a value that indicates whether to define the predicate as and/or.
 
-### filterSettings.filteredColumns.value `string/number`
+### filterSettings.filteredColumns.value `string|number`
 {:#members:filtersettings-filteredcolumns-value}
 
 Gets or sets a value that indicates whether to define the value to be filtered in a column.
@@ -2250,11 +2570,32 @@ $("#Grid").ejGrid({
 ### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
 
+<ts name="ej.Grid.FilterType"/>
+
 This specifies the grid to show the filterBar or filterMenu to the grid records. See <a href="global.html#filterType">filterType</a>
 
 #### Default Value:
 {:.param}
 * ej.Grid.FilterType.FilterBar
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr> 
+<tr>
+<td class="name">FilterBar</td>
+<td class="description">Specifies the filter type as filterbar.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -2856,11 +3197,28 @@ $("#print").text("TotalRecordsCount: " + value);
 ### pageSettings.printMode `enum`
 {:#members:pagesettings-printmode}
 
+<ts name="ej.Grid.PrintMode"/>
+
 Gets or sets a value that indicates whether to define the number of pages to print
 
 #### Default Value:
 {:.param}
 * ej.Grid.PrintMode.AllPages
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">AllPages</td>
+<td class="description">Prints allpages.</td>
+</tr>
+<tr>
+<td class="name">CurrentPage</td>
+<td class="description">Prints currentpage.</td>
+</tr>  
+</table>
 
 #### Example
 {% highlight html %}
@@ -3048,11 +3406,28 @@ $("#Grid").ejGrid({
 ### scrollSettings.virtualScrollMode `enum`
 {:#members:scrollsettings-virtualscrollmode}
 
+<ts name="ej.Grid.VirtualScrollMode"/>
+
 This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
 
 #### Default Value:
 {:.param}
 * ej.Grid.VirtualScrollMode.Normal
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">virtual scroll mode is normal.</td>
+</tr>
+<tr>
+<td class="name">Continuous</td>
+<td class="description">virtual scroll mode is continuous.</td>
+</tr>  
+</table>
 
 #### Example
 {% highlight html %}
@@ -3267,11 +3642,32 @@ $("#Grid").ejGrid({
 ### selectionSettings.selectionMode `enum`
 {:#members:selectionsettings-selectionmode}
 
+<ts name="ej.Grid.SelectionMode"/>
+
 Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode.See selectionMode
 
 #### Default Value:
 {:.param}
 * ["row"]
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">Selection is row basis.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">Selection is cell basis.</td>
+</tr>  
+<tr>
+<td class="name">Column</td>
+<td class="description">Selection is column basis.</td>
+</tr> 
+</table>
 
 #### Example
 {% highlight html %}
@@ -3288,11 +3684,28 @@ $("#Grid").ejGrid({
 ### selectionType `enum`
 {:#members:selectiontype}
 
+<ts name="ej.Grid.SelectionType"/>
+
 The row selection behavior of grid. Accepting types are "single" and "multiple".
 
 #### Default Value:
 {:.param}
 * ej.Grid.SelectionType.Single
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Single</td>
+<td class="description">Specifies the selection type as single.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="description">Specifies the selection type as multiple.</td>
+</tr>  
+</table>
 
 #### Example
 {% highlight html %} 
@@ -4038,11 +4451,52 @@ $("#Grid").ejGrid({
 ### summaryRows.summaryColumns.summaryType `enum`
 {:#members:summaryrows-summarycolumns-summarytype}
 
+<ts name="ej.Grid.SummaryType"/>
+
 Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column
 
 #### Default Value:
 {:.param}
 * []
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Average</td>
+<td class="description">Summary type is average.</td>
+</tr>
+<tr>
+<td class="name">Minimum</td>
+<td class="description">Summary type is minimum.</td>
+</tr>  
+<tr>
+<td class="name">Maximum</td>
+<td class="description">Summary type is maximum.</td>
+</tr>  
+<tr>
+<td class="name">Count</td>
+<td class="description">Summary type is count.</td>
+</tr>  
+<tr>
+<td class="name">Sum</td>
+<td class="description">Summary type is sum.</td>
+</tr>  
+<tr>
+<td class="name">Custom</td>
+<td class="description">Summary type is custom.</td>
+</tr>  
+<tr>
+<td class="name">TrueCount</td>
+<td class="description">Summary type is truecount.</td>
+</tr>  
+<tr>
+<td class="name">FalseCount</td>
+<td class="description">Summary type is falsecount.</td>
+</tr>  
+</table>
 
 #### Example
 {% highlight html %}
@@ -4219,11 +4673,56 @@ $("#Grid").ejGrid({
 ### toolbarSettings.toolbarItems `enum`
 {:#members:toolbarsettings-toolbaritems}
 
+<ts name-"ej.Grid.ToolBarItems"/>
+
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
 
 #### Default Value:
 {:.param
 * []
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Add</td>
+<td class="description">Toolbar item is add.</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Toolbar item is edit.</td>
+</tr>  
+<tr>
+<td class="name">Delete</td>
+<td class="description">Toolbar item is delete.</td>
+</tr>  
+<tr>
+<td class="name">Update</td>
+<td class="description">Toolbar item is update.</td>
+</tr>  
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Toolbar item is cancel.</td>
+</tr>  
+<tr>
+<td class="name">Search</td>
+<td class="description">Toolbar item is search.</td>
+</tr>  
+<tr>
+<td class="name">PdfExport</td>
+<td class="description">Toolbar item is pdfExport.</td>
+</tr>  
+<tr>
+<td class="name">PrintGrid</td>
+<td class="description">Toolbar item is printGrid.</td>
+</tr>  
+<tr>
+<td class="name">WordExport</td>
+<td class="description">Toolbar item is wordExport.</td>
+</tr>  
+</table>
 
 #### Example
 {% highlight html %}
@@ -4237,30 +4736,6 @@ $("#Grid").ejGrid({
 });
 </script>
 {% endhighlight %}
-
-### columnLayout `enum`
-{:#members:columnlayout}
-
-Gets or sets a value that indicates whether column width will be adjusted with corresponding to grid control.
-
-#### Default Value:
-{:.param}
-* ej.Grid.ColumnLayout.Fixed
-
-#### Example
-{% highlight html %}
-<style>
-    width:700px;
-</style>
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource: window.gridData,
-   columnLayout:ej.Grid.ColumnLayout.Fixed
-});
-</script> 
-{% endhighlight %}
-
 
 ## Methods
 
