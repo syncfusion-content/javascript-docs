@@ -52,7 +52,7 @@ $("#OlapGauge1").ejOlapGauge(...);
 
 Sets the number of column count to arrange the OlapGauge's.
 
-**Default Value:** 0
+#### Default Value: 0
 
 **Example:**
 
@@ -67,7 +67,7 @@ $("#OlapGauge1").ejOlapGauge({ columnsCount: 1 });
 
 Specify the CSS class to OlapGauge to achieve custom theme.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -82,7 +82,7 @@ $("#OlapGauge1").ejOlapGauge({ cssClass : "gradient-lime" });
 
 Object utilized to pass additional information between client-end and service-end.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -97,7 +97,7 @@ $("#OlapGauge1").ejOlapGauge({ customObject: {"key":"Hello World"} });
 
 Enables/disables tooltip visibility in OlapGauge.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -112,7 +112,7 @@ $("#OlapGauge1").ejOlapGauge({ enableTooltip: true });
 
 Allows the user to enable OlapGauge’s responsiveness in the browser layout.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -125,9 +125,11 @@ $("#OlapGauge1").ejOlapGauge({ isResponsive: true });
 ### labelFormatSettings `enum`
 {:#members:labelformatsettings}
 
+<ts name = "ej.olap.OlapGauge.NumberFormat"/>
+
 Allows the user to change the format of the label values in OlapGauge.
 
-**Default Value:** ej.olap.OlapGauge.NumberFormat.Default
+#### Default Value: ej.olap.OlapGauge.NumberFormat.Default
 
 <table class="params">
     <thead>
@@ -173,7 +175,7 @@ Allows the user to change the format of the label values in OlapGauge.
 
 {% highlight html %}
  
-$("#OlapGauge1").ejOlapGauge({ numberFormat: ej.olap.OlapGauge.numberFormat.Default });
+$("#OlapGauge1").ejOlapGauge({ numberFormat: ej.olap.OlapGauge.NumberFormat.Default });
 
 {% endhighlight %}
 
@@ -181,9 +183,11 @@ $("#OlapGauge1").ejOlapGauge({ numberFormat: ej.olap.OlapGauge.numberFormat.Defa
 ### labelFormatSettings.numberFormat `enum`
 {:#members:labelformatsettings-numberformat}
 
+<ts name = "ej.olap.OlapGauge.NumberFormat"/>
+
 Allows the user to change the number format of the label values in OlapGauge.
 
-**Default Value:** ej.olap.OlapGauge.NumberFormat.Default
+#### Default Value: ej.olap.OlapGauge.NumberFormat.Default
 
 <table class="params">
     <thead>
@@ -239,7 +243,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {numberFormat: ej.olap.OlapGa
 
 Allows you to change the position of a digit on the right-hand side of the decimal point for label value.
 
-**Default Value:** 5
+#### Default Value: 5
 
 **Example:**
 
@@ -255,7 +259,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {decimalPlaces: 3} });
 
 Allows you to add a text at the beginning of the label.
 
-**Default Value:** " "
+#### Default Value: " "
 
 **Example:**
 
@@ -271,7 +275,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {prefixText: “prefixTextVal
 
 Allows you to add text at the end of the label.
 
-**Default Value:** " "
+#### Default Value: " "
 
 **Example:**
 
@@ -287,7 +291,7 @@ $("#OlapGauge1").ejOlapGauge({labelFormatSettings: {suffixText: “suffixTextVal
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:**
 
@@ -302,7 +306,7 @@ $("#OlapGauge1").ejOlapGauge({ locale: "fr-FR" });
 
 Sets the number of row count to arrange the OlapGauge's.
 
-**Default Value:** 0
+#### Default Value: 0
 
 **Example:**
 
@@ -317,7 +321,7 @@ $("#OlapGauge1").ejOlapGauge({ rowsCount: 1 });
 
 Sets the scale values such as pointers, indicators, etc... for OlapGauge.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -332,7 +336,7 @@ $("#OlapGauge1").ejOlapGauge({ scales: {showRanges: true, showIndicators: true} 
 
 Allows the user to set the custom name for the methods at service-end, communicated during AJAX post.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -347,7 +351,7 @@ $("#OlapGauge1").ejOlapGauge({ serviceMethodSettings: {initialize: "MyMethod"} }
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapGauge.
 
-**Default Value:** "InitializeGauge"
+#### Default Value: "InitializeGauge"
 
 **Example:**
 
@@ -362,7 +366,7 @@ $("#OlapGauge1").ejOlapGauge({ serviceMethodSettings: {initialize: "InitializeGa
 
 Enables/disables the header labels in OlapGauge.
 
-**Default Value:** true
+#### Default Value: true
 
 **Example:**
 
@@ -377,7 +381,7 @@ $("#OlapGauge1").ejOlapGauge({ showHeaderLabel: false });
 
 Connects the service using the specified URL for any server updates.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -564,10 +568,9 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -578,40 +581,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapGauge control.</td>
+<td class="description last">return the current action of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapGauge control.</td>
+<td class="description last">return the custom object bounds with OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapGauge control.</td>
+<td class="description last">return the outer HTML of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -647,10 +644,9 @@ Triggers before any AJAX request is passed from OlapGauge to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -661,40 +657,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapGauge control.</td>
+<td class="description last">return the current action of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapGauge control.</td>
+<td class="description last">return the custom object bounds with OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapGauge control.</td>
+<td class="description last">return the outer HTML of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -730,10 +720,9 @@ Triggers when OlapGauge started loading at client-side.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -744,22 +733,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -793,10 +779,9 @@ Triggers when OlapGauge widget completes all operations at client-side after any
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -807,34 +792,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapGauge control.</td>
+<td class="description last">returns the outer HTML of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -870,10 +850,9 @@ Triggers when any error occurred during AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -884,46 +863,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapGauge control.</td>
+<td class="description last">returns the outer HTML of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-message{% endhighlight %}</td>
+<td class="name">message</td>
 <td class="type">Object</td>
-<td class="description">returns the error message with error code.</td>
+<td class="description last">returns the error message with error code.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-responseJSON{% endhighlight %}</td>
+<td class="name">responseJSON</td>
 <td class="type">object</td>
-<td class="description">returns the JSON formatted response while error occurs.</td>
+<td class="description last">returns the JSON formatted response while error occurs.</td>
 </tr>
 </tbody>
 </table>
@@ -958,10 +930,9 @@ Triggers when OlapGauge successfully reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapGauge.
+<td class="description last">Event parameters from OlapGauge.
 <table class="params">
 <thead>
 <tr>
@@ -972,34 +943,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapGauge control.</td>
+<td class="description last">returns the outer HTML of OlapGauge control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapGauge model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapGauge.Model"/>object</td>
+<td class="description last">returns the OlapGauge model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1023,6 +989,8 @@ $("#OlapGauge1").ejOlapGauge({
 
 ### NumberFormat  `enum`
 {:#enum:numberformat}
+
+<ts name = "ej.olap.OlapGauge.NumberFormat"/>
 
 Allows the user to change the format of the label values in OlapGauge.
 
