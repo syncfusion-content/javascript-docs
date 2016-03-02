@@ -64,17 +64,15 @@ Requires
 ## Members
 
 
-### allowDragAndDrop [Deprecated]  <span class="type-signature type boolean">boolean</span>
+### allowDragAndDrop [Deprecated] `boolean`
 {:#members:allowdraganddrop}
 
 Enables/disables the drag and drop behavior of the ListBox widget.
 
 N> Since this is a deprecated property we suggest to use **allowDrag** and **allowDrop** properties.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -89,15 +87,14 @@ $("#list").ejListBox({
             
 {% endhighlight %}
 
-### allowDrag  <span class="type-signature type boolean">boolean</span>
+### allowDrag `boolean`
 {:#members:allowdrag} 
 
 Enables/disables the dragging behavior of the items in ListBox widget.
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-false
+* false
 
 Example
 {:.example}
@@ -110,17 +107,15 @@ Example
             
 {% endhighlight %}
 
-### allowDrop  <span class="type-signature type boolean">boolean</span>
+### allowDrop `boolean`
 {:#members:allowdrop} 
 
 Accepts the items which are dropped in to it, when it is set to true. 
 
 N> Need to enable allowDrag property to drag the list (li) item from the listbox control.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -133,15 +128,14 @@ Example
 
 {% endhighlight %}
 
-### allowMultiSelection <span class="type-signature type boolean">boolean</span>
+### allowMultiSelection `boolean`
 {:#members:allowmultiselection}  
 
 Enables or disables multiple selection.
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-false
+* false
 
 Example 
 {:.example}
@@ -152,15 +146,14 @@ Example
 
 {% endhighlight %}
 
-### allowVirtualScrolling <span class="type-signature type boolean">boolean</span>
+### allowVirtualScrolling `boolean`
 {:#members:allowvirtualscrolling}  
 
 Loads the list data on demand via scrolling behavior to improve the application’s performance. There are two ways to load data which can be defined using “virtualScrollMode” property.
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-false
+* false
 
 Example
 {:.example}
@@ -175,17 +168,15 @@ Example
 
 {% endhighlight %}
 
-### caseSensitiveSearch <span class="type-signature type boolean">boolean</span>
+### caseSensitiveSearch `boolean`
 {:#members:casesensitivesearch} 
  
 Enables or disables the case sensitive search for list item by typing the text (search) value.
 
 N> It works only when the enableIncrementalSearch is set as true.
 
-Default Value: 
-{:.param} 
-
-false
+#### Default Value: 
+* false
 
 Example
 {:.example}
@@ -203,15 +194,13 @@ Example
 {% endhighlight %}  
 
 
-### cascadeTo  <span class="type-signature type string">string</span>
+### cascadeTo `string`
 {:#members:cascadeto} 
 
 Dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This property accepts the id of the child ListBox widget to populate the data.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -227,15 +216,14 @@ $('#list').ejListBox({
 {% endhighlight %}
 
 
-### checkAll [Deprecated] <span class="type-signature type boolean">boolean</span>
+### checkAll [Deprecated] `boolean`
 {:#members:checkall} 
 
 To check all the items of the ListBox widget. It works only when the showCheckbox property is set to true. 
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-false
+* false
 
 Example
 {:.example}
@@ -246,17 +234,15 @@ Example
 
 {% endhighlight %}
 
-### checkedItems [Deprecated] <span class="type-signature type array">array</span>
+### checkedItems [Deprecated] `array`
 {:#members:checkeditems} 
 
 List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
-Default Value:
-{:.param} 
-
-[]
+#### Default Value:
+* []
 
 Example
 {:.example}
@@ -267,17 +253,16 @@ Example
 
 {% endhighlight %}
 
-### checkedItemlist [Deprecated] <span class="type-signature type array">array</span>
+### checkedItemlist [Deprecated] `array`
 {:#members:checkeditemlist} 
 
 List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-[]
+* []
 
 Example
 {:.example}
@@ -289,17 +274,16 @@ Example
 
 {% endhighlight %}
 
-### checkItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
+### checkItemsByIndex [Deprecated] `string`
 {:#members:checkitemsbyindex} 
 
 List of items to be checked by default using index values. It works only when the showCheckbox property is set to true. 
 
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
-Default Value: 
-{:.param} 
+#### Default Value: 
 
-null
+* null
 
 Example
 {:.example}
@@ -310,15 +294,14 @@ Example
         
 {% endhighlight %}
 
-### checkedIndices <span class="type-signature type string">string</span>
+### checkedIndices `string`
 {:#members:checkedindices} 
 
 Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
-Default Value:
-{:param} 
+#### Default Value:
 
-null
+* null
 
 Example
 {:.example}
@@ -329,15 +312,14 @@ Example
         
 {% endhighlight %}
 
-### cssClass <span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 The root class for the ListBox widget to customize the existing theme.
 
-Default Value:
-{:.param} 
+#### Default Value:
 
-“”
+*  “”
 
 Example
 {:.example}
@@ -349,15 +331,14 @@ Example
  {% endhighlight %}
 
 
-### dataSource <span class="type-signature type JSONobject">JSONobject</span>
+### dataSource `JSONobject`
 {:#members:datasource}
 
 Contains the list of data for generating the list items.
 
-Default Value:
-{:.param} 
+####Default Value:
 
-null
+* null
 
 Example
 {:.example}
@@ -372,15 +353,13 @@ Example
             
  {% endhighlight %}
 
-### disableItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
+### disableItemsByIndex [Deprecated] `string`
 {:#members:disableitemsbyindex}
 
 Disables set of list items using its index value.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example} 
@@ -391,15 +370,13 @@ Example
 
 {% endhighlight %}
 
-### enabled <span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 Enables or disables the ListBox widget.
 
-Default Value:
-{:.param} 
-
-true
+#### Default Value:
+* true
 
 Example 
 {:.example}
@@ -410,15 +387,13 @@ Example
 
 {% endhighlight %}
 
-### enableItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
+### enableItemsByIndex [Deprecated] `string`
 {:#members:enableitemsbyindex}
 
 Enables the set of disabled list items using its index value.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -429,17 +404,15 @@ Example
 
 {% endhighlight  %}
 
-### enableLoadOnDemand [Deprecated] <span class="type-signature type boolean">boolean</span>
+### enableLoadOnDemand [Deprecated] `boolean`
 {:#members:enableloadondemand}
 
 Loads data on demand for the ListBox widget via scrolling behavior.If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “normal”.
 
 N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -454,15 +427,13 @@ Example
 
 
 
-### enableIncrementalSearch <span class="type-signature type boolean">boolean</span>
+### enableIncrementalSearch `boolean`
 {:#members:enableincrementalsearch}
 
 Enables or disables the search behavior to find the specific list item by typing the text value.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example 
 {:.example}
@@ -473,17 +444,15 @@ Example
 
 {% endhighlight %}
 
-### enablePersistence <span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
 
 N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example 
 {:.example}
@@ -494,15 +463,13 @@ Example
 
 {% endhighlight %}
 
-### enableRTL <span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Displays the ListBox widget’s content from right to left when enabled.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example 
 {:.example}
@@ -513,17 +480,15 @@ Example
 
 {% endhighlight %}
 
-### enableVirtualScrolling  [Deprecated] <span class="type-signature type boolean">boolean</span>
+### enableVirtualScrolling  [Deprecated] `boolean`
 {:#members:enablevirtualscrolling}
 
 Loads data on demand for the ListBox widget via scrolling behavior. If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “continuous”.
 
 N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -537,15 +502,13 @@ Example
 {% endhighlight %}
 
 
-### fields <span class="type-signature type JSONobject">JSONobject</span>
+### fields `JSONobject`
 {:#members:fields}
 
 Mapping fields for the data items of the ListBox widget.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -622,15 +585,13 @@ Defines the specific field name to display the tooltip text for all the list ite
 </table>
 
 
-### height  <span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 Defines the height of the ListBox widget.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -641,15 +602,14 @@ Example
 
 {% endhighlight %}
 
-### itemsCount <span class="type-signature type integer">integer</span>
+### itemsCount `integer`
 {:#members:itemscount}
 
 The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
 
-Default Value:
-{:.param}
+#### Default Value:
 
-null
+* null
 
 Example
 {:.example}
@@ -660,17 +620,15 @@ Example
 
 {% endhighlight %}
 
-### totalItemsCount <span class="type-signature type integer">integer</span>
+### totalItemsCount `integer`
 {:#members:totalitemscount}
 
 The total number of list items to be rendered in the ListBox widget. 
 
 N> It’s dependent on datasource property.
 
-Default Value:
-{:.param}
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -681,15 +639,13 @@ Example
 
 {% endhighlight %}
 
-### itemRequestCount <span class="type-signature type integer">integer</span>
+### itemRequestCount `integer`
 {:#members:itemrequestcount}
 
 The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
 
-Default Value:
-{:.param} 
-
-5
+#### Default Value:
+* 5
 
 Example
 {:.example}
@@ -705,7 +661,7 @@ $("#customerlist").ejListBox({
         
  {% endhighlight %}
 
-### loadDataOnInit <span class="type-signature type boolean">boolean</span>
+### loadDataOnInit `boolean`
 {:#members:loaddataoninit}
 
 Loads data for the listbox by default (i.e. on initialization) when it is set to true. It creates empty ListBox if it is set to false.
@@ -713,9 +669,7 @@ Loads data for the listbox by default (i.e. on initialization) when it is set to
 N> It is used along with cascading feature. See also [cascadeTo](http://help.syncfusion.com//js/api/ejlistbox#members:cascadeto).
 
 Default Value: 
-{:.param} 
-
-true
+####true
 
 Example
 {:.example}
@@ -730,15 +684,13 @@ Example
         
  {% endhighlight %}
  
-### query <span class="type-signature type ej.Query">ej.Query</span>
+### query `ej.Query`
 {:#members:query}
 
 The query to retrieve required data from the data source.
 
-Default Value:
-{:.param} 
-
-ej.Query()
+#### Default Value:
+* ej.Query()
 
 Example
 {:.example}
@@ -757,17 +709,15 @@ $("#customerlist").ejListBox({
 
 {% endhighlight %}
 
-### selectedItemIndex [Deprecated] <span class="type-signature type integer">integer</span>
+### selectedItemIndex [Deprecated] `integer`
 {:#members:selecteditemindex}
 
 The item to be selected by default using its index.
 
 N> Since this is a deprecated property we suggest to use selectedIndex property.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -778,17 +728,15 @@ Example
     
 {% endhighlight %}
 
-### selectedItemlist [Deprecated] <span class="type-signature type array">array</span>
+### selectedItemlist [Deprecated] `array`
 {:#members:selecteditemlist}
 
 The list of items to be selected by default using its index values. To use this property allowMultiSelection should be enabled.
 
 N> Since this is a deprecated property we suggest to use selectedIndices property.
 
-Default Value:
-{:.param} 
-
-[]
+#### Default Value:
+* []
 
 Example
 {:.example}
@@ -805,17 +753,15 @@ Example
 
 {% endhighlight %}
 
-### selectedItems [Deprecated] <span class="type-signature type array">array</span>
+### selectedItems [Deprecated] `array`
 {:#members:selecteditems}
 
 The list of items to be selected by default using its index. To use this property allowMultiSelection should be enabled.
 
 N> Since this is a deprecated property we suggest to use selectedIndices property.
 
-Default Value:
-{:.param} 
-
-[]
+#### Default Value:
+* []
 
 Example
 {:.example}
@@ -826,15 +772,13 @@ Example
 
 {% endhighlight %}
 
-### selectedIndex  <span class="type-signature type integer">integer</span>
+### selectedIndex `integer`
 {:#members:selectedindex}
 
 The list item to be selected by default using its index.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -845,15 +789,13 @@ Example
 
 {% endhighlight %}
 
-### selectedIndices <span class="type-signature type array">array</span>
+### selectedIndices `array`
 {:#members:selectedindices}
 
 The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
 
-Default Value:
-{:.param} 
-
-[]
+#### Default Value:
+* []
 
 Example
 {:.example}
@@ -864,15 +806,13 @@ Example
 
 {% endhighlight %}
 
-### showCheckbox <span class="type-signature type boolean">boolean</span>
+### showCheckbox `boolean`
 {:#members:showcheckbox}
 
 Enables/Disables the multi selection option with the help of checkbox control.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -883,15 +823,13 @@ Example
 
 {% endhighlight %}
 
-### showRoundedCorner <span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 To display the ListBox container with rounded corners.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -902,15 +840,13 @@ Example
 
 {% endhighlight %}
 
-### template <span class="type-signature type string">string</span>
+### template `string`
 {:#members:template}
 
 The template to display the ListBox widget with customized appearance.
 
-Default Value: 
-{:.param} 
-
-null
+#### Default Value: 
+* null
 
 Example
 {:.example}
@@ -925,15 +861,13 @@ Example
         
  {% endhighlight %}
 
-### unCheckAll [Deprecated] <span class="type-signature type boolean">boolean</span>
+### unCheckAll [Deprecated] `boolean`
 {:#members:uncheckall}
 
 Unchecks all the checked list items. It is dependent on showCheckbox property.
 
-Default Value:
-{:.param} 
-
-false
+#### Default Value:
+* false
 
 Example
 {:.example}
@@ -944,15 +878,13 @@ Example
 
 {% endhighlight %}
 
-### uncheckItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
+### uncheckItemsByIndex [Deprecated] `string`
 {:#members:uncheckitemsbyindex}
 
 Unchecks the list of items by using its index values. It is dependent on showCheckbox property.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -963,15 +895,13 @@ Example
             
 {% endhighlight %}
 
-### value <span class="type-signature type integer">integer</span>
+### value `integer`
 {:#members:value}
 
 Holds the selected items values and used to bind value to the list item using angular and knockout.
 
-Default Value:
-{:.param} 
-
-“”
+#### Default Value:
+* “”
 
 Example
 {:.example}
@@ -1035,19 +965,29 @@ Example
             
  {% endhighlight %}
 
-### virtualScrollMode <span class="type-signature type enum">enum</span>
+### virtualScrollMode `enum`
 {:#members:virtualscrollmode}
+
+<ts name = "ej.VirtualScrollMode"/>
 
 Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
 
-* __continuous__: Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.
-
-* __normal__: This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
-
-Default Value:
-{:.param} 
-
-“normal”. 
+<table>
+<tr>
+<th>Name<br/><br/></th>
+<th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>continuous_<br/><br/></td>
+<td> Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.<br/><br/></td>
+</tr>
+<tr>
+<td>_normal_<br/><br/></td>
+<td>This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
+</tr>
+</table>
+#### Default Value:
+* ej.VirtualScrollMode.Normal
 
 Example
 {:.example}
@@ -1063,15 +1003,13 @@ Example
 
  {% endhighlight %}
 
-### width <span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 Defines the width of the ListBox widget.
 
-Default Value:
-{:.param} 
-
-null
+#### Default Value:
+* null
 
 Example
 {:.example}
@@ -1083,15 +1021,13 @@ Example
  {% endhighlight %}
  
  
-### targetID <span class="type-signature type string">string</span>
+### targetID `string`
 {:#members:targetid}
 
 Specifies the targetID for the listbox items.
 
 Default Value:
-{:.param} 
-
-null
+####null
 
 Example
 {:.example}
@@ -1107,7 +1043,7 @@ Example
 ## Methods
 
 
-### addItem<span class="signature">(listItem, index)</span>
+### addItem(listItem, index)
 {:#methods:additem}
 
 Adds a given list items in the ListBox widget at a specified index. It accepts two parameters. 
@@ -1121,7 +1057,7 @@ Adds a given list items in the ListBox widget at a specified index. It accepts t
 <tr>
 <td>
 listItem</td><td>
-object / string</td><td>
+object |string</td><td>
 This can be a list item object (for JSON binding) or a string (for UL and LI rendering). Also we can the specify this as an array of list item object or an array of strings to add multiple items.</td></tr>
 <tr>
 <td>
@@ -1140,7 +1076,7 @@ Example
 
 {% endhighlight %}
 
-### checkAll<span class="signature">()</span>
+### checkAll
 {:#methods:checkall}
 
 Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
@@ -1157,7 +1093,7 @@ Example
 {% endhighlight %}
 
 
-### checkItemByIndex<span class="signature">(index)</span>
+### checkItemByIndex(Index)
 {:#methods:checkitembyindex}
 
 Checks a list item by using its index. It is dependent on showCheckbox property.
@@ -1185,7 +1121,7 @@ Example
 {% endhighlight %}
 
 
-### checkItemsByIndices<span class="signature">(index/indices) </span>
+### checkItemsByIndices(index|indices) 
 {:#methods:checkitemsbyindices}
 
 Checks multiple list items by using its index values. It is dependent on showCheckbox property.
@@ -1199,7 +1135,7 @@ Checks multiple list items by using its index values. It is dependent on showChe
 <tr>
 <td>
 index/indices</td><td>
-Integer array/ string</td><td>
+Integer array| string</td><td>
 Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1216,7 +1152,7 @@ Example
 {% endhighlight %}
 
 
-### disable<span class="signature">()</span>
+### disable
 {:#methods:disable}
 
 Disables the ListBox widget.
@@ -1233,7 +1169,7 @@ Example
 {% endhighlight %}
 
 
-### disableItem<span class="signature">(text)</span>
+### disableItem(text)
 {:#methods:disableitem}
 
 Disables a list item by passing the item text as parameter.
@@ -1261,7 +1197,7 @@ Example
 {% endhighlight %}
 
 
-### disableItemByIndex<span class="signature">(index)</span>
+### disableItemByIndex(index)
 {:#methods:disableitembyindex}
 
 Disables a list Item using its index value.
@@ -1289,7 +1225,7 @@ Example
 {% endhighlight %}
 
 
-### disableItemsByIndices<span class="signature">(indices)</span>
+### disableItemsByIndices(indices)
 {:#methods:disableitemsbyindices}
 
 Disables set of list Items using its index values.
@@ -1317,7 +1253,7 @@ Example
 {% endhighlight %}
 
 
-### enable<span class="signature">()</span>
+### enable
 {:#methods:enable}
 
 Enables the ListBox widget when it is disabled.
@@ -1332,7 +1268,7 @@ Example
 {% endhighlight %}
 
 
-### enableItem<span class="signature">(text)</span>
+### enableItem(text)
 {:#methods:enableitem}
 
 Enables a list Item using its item text value.
@@ -1360,7 +1296,7 @@ Example
 {% endhighlight %}
 
 
-### enableItemByIndex<span class="signature">(index)</span>
+### enableItemByIndex(index)
 {:#methods:enableitembyindex}
 
 Enables a list item using its index value.
@@ -1388,7 +1324,7 @@ Example
 {% endhighlight %}
 
 
-### enableItemsByIndices<span class="signature">(indices)</span>
+### enableItemsByIndices(indices)
 {:#methods:enableitemsbyindices}
 
 Enables a set of list Items using its index values.
@@ -1417,7 +1353,7 @@ Example
 {% endhighlight %}
 
 
-### getCheckedItems<span class="signature">()</span>
+### getCheckedItems
 {:#methods:getcheckeditems}
 
 Returns the list of checked items in the ListBox widget. It is dependent on showCheckbox property.
@@ -1434,7 +1370,7 @@ Example
 {% endhighlight %}
 
 
-### getSelectedItems<span class="signature">()</span>
+### getSelectedItems
 {:#methods:getselecteditems}
 
 Returns the list of selected items in the ListBox widget. 
@@ -1451,7 +1387,7 @@ Example
 {% endhighlight %}
 
 
-### getIndexByText<span class="signature">(text)</span>
+### getIndexByText(text)
 {:#methods:getindexbytext}
 
 
@@ -1482,7 +1418,7 @@ Example
 {% endhighlight %}
 
 
-### getIndexByValue<span class="signature">(value)</span>
+### getIndexByValue(value)
 {:#methods:getindexbyvalue}
 
 Returns an item’s index based on the value given.
@@ -1510,7 +1446,7 @@ Example
 {% endhighlight %}
 
 
-### getTextByIndex<span class="signature">(index)</span>
+### getTextByIndex
 {:#methods:gettextbyindex}
 
 Returns an item’s text (label) based on the index given.
@@ -1538,7 +1474,7 @@ Example
 {% endhighlight %}
 
 
-### getItemByIndex<span class="signature">(index)</span>
+### getItemByIndex
 {:#methods:getitembyindex}
 
 Returns a list item’s object using its index.
@@ -1566,7 +1502,7 @@ Example
 {% endhighlight %}
 
 
-### getItemByText<span class="signature">(text)</span>
+### getItemByText(text)
 {:#methods:getitembytext}
 
 Returns a list item’s object based on the text given.
@@ -1593,7 +1529,7 @@ Example
 
 {% endhighlight %}
 
-### mergeData<span class="signature">(data)</span>
+### mergeData(data)
 {:#methods:mergedata}
 
 Merges the given data with the existing data items in the listbox.
@@ -1634,7 +1570,7 @@ $("#list").ejListBox("mergeData", NewBikeList);
 {% endhighlight %}
 
 
-### moveDown<span class="signature">()</span>
+### moveDown
 {:#methods:movedown}
 
 Selects the next item based on the current selection.
@@ -1651,7 +1587,7 @@ Example
 {% endhighlight %}
 
 
-### moveUp<span class="signature">()</span>
+### moveUp
 {:#methods:moveup}
 
 Selects the previous item based on the current selection.
@@ -1668,7 +1604,7 @@ Example
 {% endhighlight %}            
 
 
-### refresh<span class="signature">(refreshData)</span>
+### refresh(refreshData)
 {:#methods:refresh}
 
 Refreshes the ListBox widget.
@@ -1695,7 +1631,7 @@ Example
 
 {% endhighlight %}
 
-### removeAll<span class="signature">()</span>
+### removeAll
 {:#methods:removeall}
 
 Removes all the list items from listbox.
@@ -1712,7 +1648,7 @@ Example
 {% endhighlight %}
 
 
-### removeItem<span class="signature">()</span> [Deprecated]
+### removeItem [Deprecated]
 {:#methods:removeitem}
 
 Removes the selected list items from the listbox. 
@@ -1732,7 +1668,7 @@ Example
  {% endhighlight %}         
 
 
-### removeSelectedItems<span class="signature">()</span>
+### removeSelectedItems
 {:#methods:removeselecteditems}
 
 Removes the selected list items from the listbox.
@@ -1749,7 +1685,7 @@ Example
 {% endhighlight %}
 
 
-### removeItemByText<span class="signature">(text)</span>
+### removeItemByText(text)
 {:#methods:removeitembytext}
 
 Removes a list item by using its text.
@@ -1777,7 +1713,7 @@ Example
 {% endhighlight %}
 
 
-### removeItemByIndex<span class="signature">(index)</span>
+### removeItemByIndex(index)
 {:#methods:removeitembyindex}
 
 Removes a list item by using its index value.
@@ -1805,7 +1741,7 @@ Example
 {% endhighlight %}
 
 
-### selectAll<span class="signature">()</span>
+### selectAll
 {:#methods:selectall}
 
 Selects all the list items dynamically. This method will works when the allowMultiSelection property is set as true.
@@ -1822,7 +1758,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemByText<span class="signature">(text)</span>
+### selectItemByText(text)
 {:#methods:selectItemByText}
 
 Selects the list tem using its text value.
@@ -1850,7 +1786,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemByValue<span class="signature">(value)</span>
+### selectItemByValue(value)
 {:#methods:selectitembyvalue}
 
 Selects list tem using its value property.
@@ -1878,7 +1814,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemByIndex<span class="signature">(index)</span>
+### selectItemByIndex(index)
 {:#methods:selectitembyindex}
 
 Selects list item using its index value.
@@ -1906,7 +1842,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
+### selectItemsByIndex(index|indices) [Deprecated]
 {:#methods:selectitemsbyindex}
 
 Selects a set of list items through its index values. This method will works when allowMultiSelection property is set to true.
@@ -1936,7 +1872,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemsByIndices<span class="signature">(indices)</span>
+### selectItemsByIndices(indices)
 {:#methods:selectitemsbyindices}
 
 Selects a set of list items through its index values. 
@@ -1964,7 +1900,7 @@ Example
 {% endhighlight %}
 
 
-### unCheckAll<span class="signature">()</span> [Deprecated]
+### unCheckAll [Deprecated]
 {:#methods:unCheckAll}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
@@ -1999,7 +1935,7 @@ Example
 {% endhighlight %}
 
 
-### uncheckItemByIndex<span class="signature">(index)</span>
+### uncheckItemByIndex(index)
 {:#methods:uncheckitembyindex}
 
 Unchecks a checked list item using its index value. To use this method showCheckbox property to be set as true.
@@ -2027,7 +1963,7 @@ Example
 {% endhighlight %}
 
 
-### uncheckItemsByIndices<span class="signature">(indices)</span>
+### uncheckItemsByIndices(indices)
 {:#methods:uncheckitemsbyindices}
 
 Unchecks the set of checked list items using its index values. To use this method showCheckbox property must be set to true.
@@ -2055,7 +1991,7 @@ Example
 {% endhighlight %}
 
 
-### unSelectAll<span class="signature">()</span> [Deprecated]
+### unSelectAll [Deprecated]
 {:#methods:unSelectAll}
 
 Unselect all the selected list items in the ListBox widget. 
@@ -2073,7 +2009,7 @@ Example
 {% endhighlight %}
 
 
-### unselectAll<span class="signature">()</span>
+### unselectAll
 {:#methods:unselectall}
 
 Unselect all the selected list items in the ListBox widget. 
@@ -2091,7 +2027,7 @@ Example
 {% endhighlight %}
 
 
-### unselectItemByIndex<span class="signature">(index)</span>
+### unselectItemByIndex(index)
 {:#methods:unselectitembyindex}
 
 Unselects a selected list item using its index value
@@ -2119,7 +2055,7 @@ Example
 {% endhighlight %}
 
 
-### unselectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
+### unselectItemsByIndex(index|indices) [Deprecated]
 {:#methods:unselectitemsbyindex}
 
 Unselects a set of list items using its index values. 
@@ -2133,7 +2069,7 @@ Unselects a set of list items using its index values.
 <tr>
 <td>
 index/Indices</td><td>
-Integer array/ string</td><td>
+Integer array|string</td><td>
 Index/Indices of the listbox item to be unselected.</td></tr>
 </table>
 
@@ -2150,7 +2086,7 @@ Example
 {% endhighlight %}
 
 
-### unselectItemByText<span class="signature">(text)</span>
+### unselectItemByText(text)
 {:#methods:unselectitembytext}
 
 Unselects a selected list item using its text value.
@@ -2179,7 +2115,7 @@ Example
 {% endhighlight %}
 
 
-### unselectItemByValue<span class="signature">(value)</span>
+### unselectItemByValue(value)
 {:#methods:unselectitembyvalue}
 
 Unselects a selected list item using its value.
@@ -2207,7 +2143,7 @@ Example
 {% endhighlight %}
 
 
-### unselectItemsByIndices<span class="signature">(indices)</span>
+### unselectItemsByIndices(indices)
 {:#methods:unselectitemsbyindices}
 
 Unselects a set of list items using its index values. 
@@ -2238,7 +2174,7 @@ Example
 {% endhighlight %}
 
 
-### hideCheckedItems <span class="signature">()</span>
+### hideCheckedItems 
 {:#methods:hidecheckeditems}
 
 Hides all the checked items in the listbox.
@@ -2254,7 +2190,7 @@ Example
 
 {% endhighlight %}
 
-### showItemByIndices<span class="signature">(indices)</span>
+### showItemByIndices(indices)
 {:#methods:showitembyindices}
 
 Shows a set of hidden list Items using its index values.
@@ -2282,7 +2218,7 @@ Example
 {% endhighlight %}
 
 
-### hideItemsByIndices <span class="signature">(indices)</span>
+### hideItemsByIndices(indices)
 {:#methods:hideitemsbyindices}
 
 Hides a set of list Items using its index values.
@@ -2310,7 +2246,7 @@ Example
 {% endhighlight %}
 
 
-### showItemsByValues <span class="signature">(values)</span>
+### showItemsByValues(values)
 {:#methods:showitemsbyvalues}
 
 Shows the hidden list items using its values.
@@ -2338,7 +2274,7 @@ Example
 {% endhighlight %}
 
 
-### hideItemsByValues <span class="signature">(values)</span>
+### hideItemsByValues(values)
 {:#methods:hideitemsbyvalues}
 
 Hides the list item using its values.
@@ -2366,7 +2302,7 @@ Example
 {% endhighlight %}
 
 
-### showItemByValue <span class="signature">(values)</span>
+### showItemByValue(values)
 {:#methods:showitembyvalue}
 
 Shows a hidden list item using its value.
@@ -2394,7 +2330,7 @@ Example
 {% endhighlight %}
 
 
-### hideItemByValue <span class="signature">(values)</span>
+### hideItemByValue(values)
 {:#methods:hideitembyvalue}
 
 Hide a list item using its value.
@@ -2422,7 +2358,7 @@ Example
 {% endhighlight %}
 
 
-### showItemByIndex <span class="signature">(index)</span>
+### showItemByIndex(index)
 {:#methods:showitembyindex}
 
 Shows a hidden list item using its index value.
@@ -2450,7 +2386,7 @@ Example
 {% endhighlight %}
 
 
-### hideItemByIndex <span class="signature">(index)</span>
+### hideItemByIndex (index)
 {:#methods:hideitembyindex}
 
 Hides a list item using its index value.
@@ -2478,7 +2414,7 @@ Example
 {% endhighlight %}
 
 
-### show <span class="signature">()</span>
+### show 
 {:#methods:show}
 
 Shows the listbox.
@@ -2495,7 +2431,7 @@ Example
 {% endhighlight %}
 
 
-### hide <span class="signature">()</span>
+### hide
 {:#methods:hide}
 
 Hides the listbox.
@@ -2512,7 +2448,7 @@ Example
 {% endhighlight %}
 
 
-### hideAllItems <span class="signature">()</span>
+### hideAllItems
 {:#methods:hideallitems}
 
 Hides all the listbox items in the listbox.
@@ -2529,7 +2465,7 @@ Example
 {% endhighlight %}
 
 
-### showAllItems <span class="signature">()</span>
+### showAllItems
 {:#methods:showallitems }
 
 Shows all the listbox items in the listbox.
@@ -2660,57 +2596,57 @@ Triggers when the item selection is changed.
 <b>Description</b></th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2746,57 +2682,57 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -2834,17 +2770,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
@@ -2880,17 +2816,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
@@ -2926,62 +2862,62 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.items</td><td>
+items</td><td>
 Array</td><td>
 Array of list item object</td></tr>
 <tr>
 <td>
-argument.items[index].item</td><td>
+items[index].item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.items[index].data</td><td>
+items[index].data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.items[index].index</td><td>
+items[index].index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.items[index].isChecked</td><td>
+items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isSelected</td><td>
+items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isEnabled</td><td>
+items[index].isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.items[index].text</td><td>
+items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.items[index].value</td><td>
+items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3016,27 +2952,27 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.originalEvent</td><td>
+originalEvent</td><td>
 Object</td><td>
 Returns the event arguments like event type,timestamp, etc.,</td></tr>
 <tr>
 <td>
-argument.scrollData</td><td>
+scrollData</td><td>
 Object</td><td>
 Returns the dimension and position properties for scrolled element.</td></tr>
 </table>
@@ -3072,62 +3008,62 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.items</td><td>
+items</td><td>
 Array</td><td>
 Array of list item object</td></tr>
 <tr>
 <td>
-argument.items[index].item</td><td>
+items[index].item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.items[index].data</td><td>
+items[index].data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.items[index].index</td><td>
+items[index].index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.items[index].isChecked</td><td>
+items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isSelected</td><td>
+items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isEnabled</td><td>
+items[index].isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.items[index].text</td><td>
+items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.items[index].value</td><td>
+items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3163,62 +3099,62 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.items</td><td>
+items</td><td>
 Array</td><td>
 Array of list item object</td></tr>
 <tr>
 <td>
-argument.items[index].item</td><td>
+items[index].item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.items[index].data</td><td>
+items[index].data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.items[index].index</td><td>
+items[index].index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.items[index].isChecked</td><td>
+items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isSelected</td><td>
+items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isEnabled</td><td>
+items[index].isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.items[index].text</td><td>
+items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.items[index].value</td><td>
+items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3256,62 +3192,62 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.items</td><td>
+items</td><td>
 Array</td><td>
 An array of list item objects which are being dropped.</td></tr>
 <tr>
 <td>
-argument.items[index].item</td><td>
+items[index].item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.items[index].data</td><td>
+items[index].data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.items[index].index</td><td>
+items[index].index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.items[index].isChecked</td><td>
+items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isSelected</td><td>
+items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isEnabled</td><td>
+items[index].isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.items[index].text</td><td>
+items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.items[index].value</td><td>
+items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3347,62 +3283,62 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.items</td><td>
+items</td><td>
 Array</td><td>
 An array of list item objects which are being dropped.</td></tr>
 <tr>
 <td>
-argument.items[index].item</td><td>
+items[index].item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.items[index].data</td><td>
+items[index].data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.items[index].index</td><td>
+items[index].index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.items[index].isChecked</td><td>
+items[index].isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isSelected</td><td>
+items[index].isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.items[index].isEnabled</td><td>
+items[index].isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.items[index].text</td><td>
+items[index].text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.items[index].value</td><td>
+items[index].value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3441,8 +3377,8 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
@@ -3451,47 +3387,47 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3527,57 +3463,57 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3613,57 +3549,57 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
@@ -3701,57 +3637,57 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.model</td><td>
-Object</td><td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-argument.index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-argument.isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-argument.isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
-argument.text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-argument.value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
 </table>
