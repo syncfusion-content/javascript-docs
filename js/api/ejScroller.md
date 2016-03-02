@@ -38,7 +38,7 @@ $(element).ejScroller()
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;">
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -49,7 +49,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>  can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller</b>  can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
          It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul>     
@@ -106,7 +106,7 @@ Set true to hides the scrollbar, when mouseout the content area.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -117,7 +117,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -126,7 +126,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 <script>
 //To enable the autoHide property of Scroller during initialization
         $("#scrollcontent").ejScroller({autoHide: true });      
-</script>{% endhighlight %}
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -137,7 +139,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-Specifies the button height for vertical scrollbar; for horizontal scrollbar specifies the width of the button in the scrollbar.
+Specifies the height and width of button in the scrollbar.
+
 
 
 #### Default Value
@@ -157,7 +160,7 @@ Specifies the button height for vertical scrollbar; for horizontal scrollbar spe
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -168,7 +171,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -208,7 +211,7 @@ Specifies to enable or disable the scroller
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -219,7 +222,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -259,7 +262,7 @@ Save current model value to browser cookies for state maintanence. While refresh
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -270,7 +273,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -280,7 +283,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 //Enable enablePersistence API on initialization
         $("#scrollcontent").ejScroller({enablePersistence: true });
 </script>
-
  {% endhighlight %}
 
 
@@ -312,7 +314,7 @@ Indicates the Right to Left direction to scroller
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -323,7 +325,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -363,7 +365,7 @@ Enables or Disable the touch Scroll
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -374,7 +376,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -414,7 +416,7 @@ Specifies the height of Scroll panel and scrollbars.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -425,7 +427,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -444,8 +446,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-
-Set the Scrollbar height and width for this API; if vertical scrollbar,apply the width else apply the height.
+If the scrollbar has vertical it set as width, else it will set as height of the handler.
 
 
 #### Default Value
@@ -465,7 +466,7 @@ Set the Scrollbar height and width for this API; if vertical scrollbar,apply the
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -476,7 +477,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -517,7 +518,7 @@ The Scroller content and scrollbars move left with given value.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -528,7 +529,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -568,7 +569,7 @@ While press on the arrow key the scrollbar position added to the given pixel val
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -579,7 +580,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -619,7 +620,7 @@ The Scroller content and scrollbars move to top position with specified value.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -630,7 +631,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -670,7 +671,7 @@ Indicates the target area to which scroller have to appear.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -681,7 +682,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -721,7 +722,7 @@ Specifies the width of Scroll panel and scrollbars.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -732,7 +733,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -756,7 +757,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-destroy the Scroller control all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+destroy the Scroller control, unbind the all ej control related events automatically and bring the control to pre-init state.
 
 
 
@@ -767,7 +768,7 @@ destroy the Scroller control all events bound using this._on will be unbind auto
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -794,7 +795,7 @@ scrollerObj.destroy(); // destroy the scroller
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -804,7 +805,7 @@ ideas behind MVC are code reusability and n addition to dividing the application
 kinds of components, the MVC design defines the interactions between them.
 
 <ul><li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -836,7 +837,7 @@ User disables the Scroller control at any time.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -847,7 +848,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -864,7 +865,7 @@ scrollerObj.disable(); // disable the Scroller control at any time
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -875,7 +876,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -907,7 +908,7 @@ User enables the Scroller control at any time.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -918,7 +919,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -935,7 +936,7 @@ scrollerObj.enable(); // enable the Scroller control at any time
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -946,7 +947,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -967,14 +968,14 @@ $("#scrollcontent").ejScroller("enable");
 
 
 
-Returns horizontal scrollbar is shown or not.
+Returns true if horizontal scrollbar is shown, else return false.
 
 
 
 #### Returns:
 {:#methods:returns:}
 
-value
+boolean
 
 #### Example
 
@@ -983,7 +984,7 @@ value
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -994,7 +995,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1010,7 +1011,7 @@ scrollerObj.isHScroll(); // Returns horizontal scrollbar is shown or not.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1021,7 +1022,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1041,14 +1042,14 @@ $("#scrollcontent").ejScroller("isHScroll");
 
 
 
-Returns vertical scrollbar is shown or not.
+Returns true if vertical scrollbar is shown, else return false.
 
 
 
 #### Returns:
 {:#methods:returns:}
 
-value
+boolean
 
 #### Example
 
@@ -1057,7 +1058,7 @@ value
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1068,7 +1069,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1085,7 +1086,7 @@ scrollerObj.isVScroll(); // Returns vertical scrollbar is shown or not.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;">
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1096,7 +1097,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1128,7 +1129,7 @@ User refreshes the Scroller control at any time.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1139,7 +1140,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1156,7 +1157,7 @@ scrollerObj.refresh(); // refreshes the Scroller control at any time
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1167,7 +1168,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1199,7 +1200,7 @@ Scroller moves to given pixel in X (left) position. We can also specify the anim
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1210,7 +1211,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1228,7 +1229,7 @@ scrollObj.scrollX(25,false,1000); // call scrollX method(with animation enabled.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1239,7 +1240,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1272,7 +1273,7 @@ Scroller moves to given pixel in Y (top) position. We can also specify the anima
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1283,7 +1284,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1301,7 +1302,7 @@ scrollObj.scrollY(25,false,1000); // call scrollY method(with animation enabled.
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1312,7 +1313,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1350,8 +1351,8 @@ Fires when Scroller control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from scroller
 <table class="params">
@@ -1364,20 +1365,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Scroller.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the scroller model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1396,7 +1397,7 @@ type{% endhighlight %}</td>
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1407,7 +1408,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 
@@ -1441,8 +1442,8 @@ Fires when Scroller control is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from scroller
 <table class="params">
@@ -1455,20 +1456,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Scroller.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the scroller model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1487,7 +1488,7 @@ type{% endhighlight %}</td>
 {% highlight html %}
  
 <div id="scrollcontent" style="width:900px;" >
-<p>Model&ndash;view&ndash;controller (MVC) is a software architecture pattern which separates the
+<p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
@@ -1498,7 +1499,7 @@ kinds of components, the MVC design defines the interactions between them.
 
 <ul>
 <li>
-<b>A controller*</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 It can also send commands to the model to update the model's state (e.g., editing a document).
 </li>
 </ul> 

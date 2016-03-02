@@ -97,8 +97,11 @@ $(element).ejSplitButton()
 
 
 
-### arrowPosition `string`  `enum`
+### arrowPosition `string|enum`
 {:#members:arrowposition}
+
+
+<ts name = "ej.ArrowPosition"/>
 
 
 
@@ -108,6 +111,42 @@ $(element).ejSplitButton()
 
 
 Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Left</td>
+<td class="description">To set Left arrowPosition of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="description">To set Right arrowPosition of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Top</td>
+<td class="description">To set Top arrowPosition of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Bottom</td>
+<td class="description">To set Bottom arrowPosition of the splitbutton</td>
+</tr>
+</tbody>
+</table>
+
+
+
 
 
 
@@ -153,17 +192,43 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-### buttonMode `string`  `enum`
+### buttonMode `string|enum`
 {:#members:buttonmode}
 
 
+<ts name = "ej.ButtonMode"/>
 
 
 
 
 
 
-Specifies the buttonMode like Split or Dropdown Button.See <a href="global.html#ButtonMode">ButtonMode</a>
+
+
+Specifies the buttonMode like Split or Dropdown Button.See ButtonMode
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Split</td>
+<td class="description">To specify  Split mode of the button type</td>
+</tr>
+<tr>
+<td class="name">
+Dropdown</td>
+<td class="description">To specify Dropdown mode of the button type</td>
+</tr>
+</tbody>
+</table>
+
 
 
 
@@ -209,17 +274,58 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-### contentType `string`  `enum`
+### contentType `string|enum`
 {:#members:contenttype}
 
 
+<ts name = "ej.ContentType"/>
 
 
 
 
 
 
-Specifies the contentType of the Split Button.See <a href="global.html#ContentType">ContentType</a>
+
+
+Specifies the contentType of the Split Button.See ContentType
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+TextOnly</td>
+<td class="description">To specify the text contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageOnly</td>
+<td class="description">To specify the image contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageBoth</td>
+<td class="description">To specify the two images of contentType</td>
+</tr>
+<tr>
+<td class="name">
+TextAndImage</td>
+<td class="description">To specify the Text and Image contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageTextImage</td>
+<td class="description">To specify the image text and image contentType</td>
+</tr>
+</tbody>
+</table>
+
 
 
 
@@ -428,7 +534,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
 
 
 
-### height `string`  `number`
+### height `string|number`
 {:#members:height}
 
 
@@ -536,8 +642,11 @@ $("#sbutton").ejSplitButton({  htmlAttributes : {disabled:"disabled"} });
 
 
 
-### imagePosition `string`  `enum`
+### imagePosition `string|enum`
 {:#members:imageposition}
+
+
+<ts name = "ej.ImagePosition"/>
 
 
 
@@ -547,6 +656,38 @@ $("#sbutton").ejSplitButton({  htmlAttributes : {disabled:"disabled"} });
 
 
 Specifies the imagePosition of the Split Button.See imagePositions
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+ImageRight</td>
+<td class="description">To specify Left position of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageLeft</td>
+<td class="description">To specify Right position of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageTop</td>
+<td class="description">To specify Top position of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageBottom</td>
+<td class="description">To specify Bottom position of the splitbutton</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -702,17 +843,57 @@ $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: tru
 
 
 
-### size `string`  `enum`
+### size `string|enum`
 {:#members:size}
 
 
+<ts name = "ej.ButtonSize"/>
 
 
 
 
 
 
-Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSize</a>
+
+
+Specifies the size of the Button. See ButtonSize
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Mini</td>
+<td class="description">To specify the minimum size of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Small</td>
+<td class="description">To specify the small size of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Medium</td>
+<td class="description">To specify the medium size of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Large</td>
+<td class="description">To specify the large size of the splitbutton</td>
+</tr>
+<tr>
+<td class="name">
+Normal</td>
+<td class="description">To specify the normal size of the splitbutton</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -922,7 +1103,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });
 
 
 
-### width `string`  `number`
+### width `string|number`
 {:#members:width}
 
 
@@ -1293,20 +1474,20 @@ Fires before menu of the split button control is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1362,8 +1543,8 @@ Fires when Button control is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1376,32 +1557,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the button state</td>
 </tr>
@@ -1463,8 +1644,8 @@ Fires before the list content of Button control is closed
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1477,20 +1658,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1552,8 +1733,8 @@ Fires after Split Button control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -1566,20 +1747,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1641,8 +1822,8 @@ Fires when the Split Button is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1655,20 +1836,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1730,8 +1911,8 @@ Fires when a menu item is Hovered out successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1744,32 +1925,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event.element{% endhighlight %}</td>
+<td class="name">
+event.element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event
 <table class="params">
@@ -1782,14 +1963,14 @@ event{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the menu item id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
+<td class="name">
+Text</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the clicked menu item text</td>
 </tr>
@@ -1855,8 +2036,8 @@ Fires when a menu item is Hovered in successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1869,32 +2050,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event.element{% endhighlight %}</td>
+<td class="name">
+event.element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event
 <table class="params">
@@ -1907,14 +2088,14 @@ event{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the menu item id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-Text{% endhighlight %}</td>
+<td class="name">
+Text</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the clicked menu item text</td>
 </tr>
@@ -1980,8 +2161,8 @@ Fires when a menu item is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -1994,44 +2175,44 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event.element{% endhighlight %}</td>
+<td class="name">
+event.element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItem{% endhighlight %}</td>
+<td class="name">
+selectedItem</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the selected item</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event.menuId{% endhighlight %}</td>
+<td class="name">
+event.menuId</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the menu id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event.menuText{% endhighlight %}</td>
+<td class="name">
+event.menuText</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the clicked menu item text</td>
 </tr>
@@ -2093,8 +2274,8 @@ Fires before the list content of Button control is opened
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from split button
 <table class="params">
@@ -2107,20 +2288,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.SplitButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the split button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>

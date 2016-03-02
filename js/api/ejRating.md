@@ -263,6 +263,9 @@ Allow to render the minimum number of Rating shape(star).
 {:#members:orientation}
 
 
+<ts name="ej.Orientation">
+
+
 Specifies the orientation of Rating control. See <a href="global.html#Orientation">Orientation</a>
 
 
@@ -292,6 +295,8 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 
 ### precision `enum`
 {:#members:precision}
+
+<ts name="ej.Rating.Precision">
 
 Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See <a href="global.html#Precision">Precision</a>
 
@@ -522,7 +527,7 @@ To get the current value of rating control.
 #### Returns:
 {:#methods:returns:}
 
-Rating value
+number
 
 #### Example
 
@@ -678,10 +683,28 @@ To reset the rating value.
 
 {% endhighlight %}
 
-### setValue()
+### setValue(value)
 {:#methods:setvalue}
 
 To set the rating value.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">string|number</span></td>
+<td class="description">Specifies the rating value.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -698,7 +721,7 @@ To set the rating value.
         var ratingObj = $("#rating").data("ejRating");
         
         // Set current value of rating
-        ratingObj.setValue(); 
+        ratingObj.setValue(4); 
         
     </script>
 
@@ -712,7 +735,7 @@ To set the rating value.
     <script>
         $("#rating").ejRating();
         // To set the current value of rating
-        $("#rating").ejRating("setValue");
+        $("#rating").ejRating("setValue", 4);
     </script>
 
 {% endhighlight %}
@@ -774,8 +797,8 @@ Fires when Rating value changes.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -788,32 +811,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse click event args values.</td>
 </tr>
@@ -856,8 +879,8 @@ Fires when Rating control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -870,32 +893,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse click event args values.</td>
 </tr>
@@ -936,8 +959,8 @@ Fires when Rating control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -950,20 +973,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1004,8 +1027,8 @@ Fires when Rating control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -1018,20 +1041,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1073,8 +1096,8 @@ Fires when mouse hover is removed from Rating control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -1087,32 +1110,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse click event args values.</td>
 </tr>
@@ -1153,8 +1176,8 @@ Fires when mouse hovered over the Rating control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from rating
 <table class="params">
@@ -1167,38 +1190,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rating model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse click event args values.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">
+index</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current index value.</td>
 </tr>

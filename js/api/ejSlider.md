@@ -52,7 +52,7 @@ $(element).ejSlider()
 <script> 
 // Create Slider 
 $('#slider').ejSlider(); 
-</script> 
+</script>
 {% endhighlight %}
 
 
@@ -698,13 +698,35 @@ Specifies the starting value of the slider.
 
 
 
+<ts name="ej.Orientation">
 
 
 
 
+Specifies the orientation of the slider.
 
-Specifies the orientation of the slider.See orientation
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="description">Shows slider in horizontal orientation</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="description">Shows slider in vertical orientation</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -850,7 +872,7 @@ Specifies the rounded corner behavior for slider.
 
 
 
-Specifies the major (large) and minor (small) ticks of the slider.
+Shows/Hide the major (large) and minor (small) ticks in the scale of the slider.
 
 
 
@@ -900,7 +922,7 @@ Specifies the major (large) and minor (small) ticks of the slider.
 
 
 
-Specifies the showSmallTicks of the slider.
+Specifies the small ticks from the scale of the slider.
 
 
 
@@ -950,7 +972,7 @@ Specifies the showSmallTicks of the slider.
 
 
 
-Specifies the showTooltip to shows the current Slider value, while moving the Slider handle of the slider.
+Specifies the showTooltip to shows the current Slider value, while moving the Slider handle or clicking on the slider handle of the slider.
 
 
 
@@ -1003,6 +1025,33 @@ Specifies the showTooltip to shows the current Slider value, while moving the Sl
 
 Specifies the sliderType of the slider.
 
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Default</td>
+<td class="description">Shows default slider</td>
+</tr>
+<tr>
+<td class="name">
+MinRange</td>
+<td class="description">Shows minRange slider</td>
+</tr>
+<tr>
+<td class="name">
+Range</td>
+<td class="description">Shows Range slider</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1101,7 +1150,7 @@ Specifies the distance between two minor (small) ticks from the scale of the sli
 
 
 
-Specifies the value of the slider.
+Specifies the value of the slider. But it's not applicable for range slider. To range slider we can use values property. 
 
 
 
@@ -1151,7 +1200,7 @@ Specifies the value of the slider.
 
 
 
-Specifies the values of the range slider.
+Specifies the values of the range slider. But it's not applicable for default and minRange sliders. we can use value property for default and minRange sliders. 
 
 
 
@@ -1353,10 +1402,16 @@ $("#slider").ejSlider("enable");
 
 
 
-
 To get value from slider handle
 
 
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
 
 
 
@@ -1457,7 +1512,7 @@ $("#slider").ejSlider("setValue",10);
 
 
 
-Fires when Slider control value is changed successfully.
+Fires once Slider control value is changed successfully.
 
 <table class="params">
 <thead>
@@ -1469,8 +1524,8 @@ Fires when Slider control value is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1483,40 +1538,46 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sliderIndex{% endhighlight %}</td>
+<td class="name">
+sliderIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
+<td class="name">
+id</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns slider id</td>
+<td class="description">returns slider id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the slider model</td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the slider model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the slider value</td>
+<td class="description">returns the slider value.</td>
+</tr>
+<tr>
+<td class="name">
+isInteraction</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true if event triggered by interaction else returns false. </td>
 </tr>
 </tbody>
 </table>
@@ -1558,7 +1619,7 @@ $("#slider").ejSlider({
 
 
 
-Fires when Slider control has been created successfully.
+Fires once Slider control has been created successfully.
 
 <table class="params">
 <thead>
@@ -1570,8 +1631,8 @@ Fires when Slider control has been created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1584,20 +1645,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the slider model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1653,8 +1714,8 @@ Fires when Slider control has been destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1667,20 +1728,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the slider model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1724,7 +1785,8 @@ $("#slider").ejSlider({
 
 
 
-Fires when Slider control is sliding successfully.
+Fires once Slider control is sliding successfully.
+
 
 <table class="params">
 <thead>
@@ -1736,8 +1798,8 @@ Fires when Slider control is sliding successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1750,38 +1812,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sliderIndex{% endhighlight %}</td>
+<td class="name">
+sliderIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
+<td class="name">
+id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns slider id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the slider model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the slider value</td>
 </tr>
@@ -1825,7 +1887,7 @@ $("#slider").ejSlider({
 
 
 
-Fires when Slider control is started successfully.
+Fires once Slider control is started successfully.
 
 <table class="params">
 <thead>
@@ -1837,8 +1899,8 @@ Fires when Slider control is started successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1851,38 +1913,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sliderIndex{% endhighlight %}</td>
+<td class="name">
+sliderIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
+<td class="name">
+id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns slider id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the slider model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the slider value</td>
 </tr>
@@ -1938,8 +2000,8 @@ Fires when Slider control is stopped successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from slider control
 <table class="params">
@@ -1952,38 +2014,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-sliderIndex{% endhighlight %}</td>
+<td class="name">
+sliderIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
+<td class="name">
+id</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns slider id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the slider model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the slider value</td>
 </tr>
