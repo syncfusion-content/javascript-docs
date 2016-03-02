@@ -195,9 +195,50 @@ Sets the text when ToggleButton is in active state i.e.,checked state.
 {:#members:contenttype}
 
 
+<ts name = "ej.ContentType"/>
 
 
-Specifies the contentType of the ToggleButton. See <a href="global.html#ContentType">ContentType</a>
+
+
+Specifies the contentType of the ToggleButton. See ContentType as below
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+TextOnly</td>
+<td class="description">To specify the text contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageOnly</td>
+<td class="description">To specify the image contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageBoth</td>
+<td class="description">To specify the two images of contentType</td>
+</tr>
+<tr>
+<td class="name">
+TextAndImage</td>
+<td class="description">To specify the Text and Image contentType</td>
+</tr>
+<tr>
+<td class="name">
+ImageTextImage</td>
+<td class="description">To specify the image text and image contentType</td>
+</tr>
+</tbody>
+</table>
+
 
 
 #### Default Value
@@ -501,7 +542,7 @@ Specify the Right to Left direction of the Togglebutton.
 
 
 
-### height `number/string`
+### height `number|string`
 {:#members:height}
 
 
@@ -579,11 +620,45 @@ It allows to define the characteristics of the ToggleButton control. It will hel
 {:#members:imageposition}
 
 
+<ts name = "ej.ImagePosition"/>
+
 
 
 Specifies the image position of the ToggleButton. 
 
 N>  This image position is applicable only with the contentType property value set as textandimage. The images can be positioned in both imageLeft and imageRight options.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+ImageRight</td>
+<td class="description">To specify Left position of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageLeft</td>
+<td class="description">To specify Right position of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageTop</td>
+<td class="description">To specify Top position of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+ImageBottom</td>
+<td class="description">To specify Bottom position of the togglebutton</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -696,9 +771,49 @@ Displays the ToggleButton with rounded corners.
 {:#members:size}
 
 
+<ts name = "ej.ButtonSize"/>
 
 
-Specifies the size of the ToggleButton. See <a href="global.html#ButtonSize">ButtonSize</a>
+
+Specifies the size of the ToggleButton. See ButtonSize as below
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Mini</td>
+<td class="description">To specify the minimum size of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+Small</td>
+<td class="description">To specify the small size of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+Medium</td>
+<td class="description">To specify the medium size of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+Large</td>
+<td class="description">To specify the large size of the togglebutton</td>
+</tr>
+<tr>
+<td class="name">
+Normal</td>
+<td class="description">To specify the normal size of the togglebutton</td>
+</tr>
+</tbody>
+</table>
+
 
 
 #### Default Value
@@ -769,9 +884,41 @@ It allows to define the ToggleButton state to checked(Active) or unchecked(Defau
 {:#members:type}
 
 
+<ts name = "ej.ButtonType" />
 
 
-Specifies the type of the ToggleButton. See <a href="global.html#ButtonType">ButtonType</a>
+
+Specifies the type of the ToggleButton. See ButtonType as below
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Button</td>
+<td class="description">To create button with button type as button</td>
+</tr>
+<tr>
+<td class="name">
+Reset</td>
+<td class="description">To create button with button type as reset</td>
+</tr>
+<tr>
+<td class="name">
+Submit</td>
+<td class="description">To create button with button type as submit</td>
+</tr>
+</tbody>
+</table>
+
+
+
 
 
 #### Default Value
@@ -802,7 +949,7 @@ Specifies the type of the ToggleButton. See <a href="global.html#ButtonType">But
 
 
 
-### width ``number/string``
+### width `number|string`
 {:#members:width}
 
 
@@ -995,26 +1142,26 @@ Fires when ToggleButton control state is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name">
+isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ToggleButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1063,32 +1210,32 @@ Fires when ToggleButton control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name">
+isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ToggleButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the toggle button state</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1137,20 +1284,20 @@ Fires when ToggleButton control is created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ToggleButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1198,20 +1345,20 @@ Fires when ToggleButton control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.ToggleButton.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
