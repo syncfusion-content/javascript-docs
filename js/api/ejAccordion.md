@@ -27,19 +27,20 @@ $(element).ejAccordion()
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language.
+                        It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -80,19 +81,19 @@ Specifies the ajaxSettings option to load the content to the accordion control.
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -146,19 +147,19 @@ Accordion headers can be expanded and collapsed on keyboard action.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -167,7 +168,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-### collapseSpeed `integer/string`
+### collapseSpeed `number`
 {:#members:collapsespeed}
 
 To set the Accordion headers Collapse Speed.
@@ -181,19 +182,19 @@ To set the Accordion headers Collapse Speed.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -216,20 +217,20 @@ Specifies the collapsible state of accordion control.
 {% highlight html %}
  
 <div id="accordion">
-<h3>
-<a href="#">Orubase</a></h3>
-<div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
-</div>
- <h3>
-           <a href="#">WinRT XAML</a></h3>
+       <h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -241,8 +242,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 ### cssClass `String`
 {:#members:cssclass}
 
-Sets the root class for the Accordion theme. This cssClass API enables the use of custom skinning options for the Accordion control. By defining the root class using this
-API, we need to include this root class in the CSS.
+Sets the root CSS class for Accordion theme, which is used customize. 
 
 #### Default Value
 
@@ -253,19 +253,19 @@ API, we need to include this root class in the CSS.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -274,16 +274,28 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-### customIcon `JSONObject`
+### customIcon `object`
 {:#members:customicon}
 
-The header icon can be customized using this API. It has two properties: header as the collapsing header CSS class name, and selectedHeader as the active header CSS class
-name. It accepts CSS class names with string as the type. * &bull;header: This class name set to collapsing header. This accepts the string type value. &bull;selectedHeader: This class name set to
-expanded header. This accepts the string type value.
+Allows you to set the custom header Icon. It accepts two key values “header”, ”selectedHeader”.
+
+1. header - The collapsing header CSS class name. 
+2. selectedHeader - The active header CSS class name.
+
 
 #### Default Value
 
-* "{ header: "e-acrdn-collapsicon", selectedHeader: "e-acrdn-expandicon" }"
+* "{ header: "e-collaps", selectedHeader: "e-expand" }"
+
+### customIcon.header `String`
+{:#members:customicon-header}
+
+This class name set to collapsing header. 
+
+### customIcon.selectedHeader `String`
+{:#members:customicon-selectedheader}
+
+This class name set to expanded (active) header. 
 
 #### Example
 
@@ -292,19 +304,19 @@ expanded header. This accepts the string type value.
         
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">           
@@ -317,10 +329,13 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         });
 </script>{% endhighlight %}
 
-### disabledItems `Integerarray`
+### disabledItems `number[]`
 {:#members:disableditems}
 
-To deactivate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
+Disables the specified indexed items in accordion.
+
+N> The disabledItems is a dependent property of enableMultipleOpen. The enableMultipleOpen property should be set as true.
+
 
 #### Default Value
 
@@ -331,19 +346,19 @@ To deactivate multiple headers for the accordion, give the index value for array
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -367,19 +382,19 @@ Specifies the animation behavior in accordion.
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -392,7 +407,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 ### enabled `Boolean`
 {:#members:enabled}
 
-With the Enabled property, you can enable or disable the Accordion.
+With this enabled property, you can enable or disable the Accordion.
 
 #### Default Value
 
@@ -403,19 +418,19 @@ With the Enabled property, you can enable or disable the Accordion.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -423,10 +438,13 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ enabled: true});
 </script>{% endhighlight %}
 
-### enabledItems `Integerarray`
+### enabledItems `number[]`
 {:#members:enableditems}
 
-To activate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
+Used to enable the disabled items in accordion.
+
+N> The enabledItems is a dependent property of enableMultipleOpen. The enableMultipleOpen property should be set as true.
+
 
 #### Default Value
 
@@ -437,19 +455,19 @@ To activate multiple headers for the accordion, give the index value for array t
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -471,19 +489,19 @@ Multiple content panels to activate at a time.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -507,19 +525,19 @@ local storage.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -542,19 +560,19 @@ Display headers and panel text from right-to-left.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -578,19 +596,19 @@ on.
                        
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -598,7 +616,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 $("#accordion").ejAccordion({ events: "mouseover" });
 </script>{% endhighlight %}
 
-### expandSpeed `integer/string`
+### expandSpeed `number`
 {:#members:expandspeed}
 
 To set the Accordion headers Expand Speed.
@@ -612,19 +630,19 @@ To set the Accordion headers Expand Speed.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -633,10 +651,10 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 </script>{% endhighlight %}
 
 
-### header `String`
-{:#members:header}
+### headerSize `number|string`
+{:#members:headersize}
 
-Set class name to collapsing header.
+Sets the height for Accordion items header.
 
 #### Example
 
@@ -644,34 +662,74 @@ Set class name to collapsing header.
       
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">           
 //header on initialization. 
   $("#accordion").ejAccordion({
-                        header: "collapsicon"
+                        headerSize: "40px"
         });
 </script>{% endhighlight %}
 
+### height `number|string`
+{:#members:height}
 
-### heightAdjustMode `Enum/String`
+Specifies height of the accordion.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+      
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+ <script type="text/javascript">           
+//header on initialization. 
+  $("#accordion").ejAccordion({
+                        height: "500px"
+        });
+</script>{% endhighlight %}
+
+### heightAdjustMode `enum|string`
 {:#members:heightadjustmode}
+
+<ts name="ej.Accordion.HeightAdjustMode"/>
 
 Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content. See <a href=
 "global.html#HeightAdjustMode">HeightAdjustMode</a>
+
+
 
 #### Default Value
 
@@ -682,19 +740,19 @@ Adjusts the content panel height based on the given option (content, auto, or fi
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -706,19 +764,19 @@ $("#accordion").ejAccordion({ heightAdjustMode : ej.Accordion.HeightAdjustMode.A
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -726,10 +784,14 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 $("#accordion").ejAccordion({ heightAdjustMode : "auto" }); 
 </script>{% endhighlight %}
 
-### selectedHeader `String`
-{:#members:selectedheader}
+### htmlAttributes `object`
+{:#members:htmlattributes}
 
-Set class name to expanded header.
+It allows to define the characteristics of the Accordion control. It will helps to extend the capability of an HTML element.
+
+#### Default Value
+
+* {}
 
 #### Example
 
@@ -737,32 +799,30 @@ Set class name to expanded header.
       
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
- <script type="text/javascript">           
-//Selected header on initialization. 
-  $("#accordion").ejAccordion({
-                
-                        selectedHeader: "activeicon"
-                
-        });
+<script type="text/javascript">           
+    //HtmlAttributes on initialization. 
+    $("#accordion").ejAccordion({
+        htmlAttributes: { title: "Demo" }
+    });
 </script>{% endhighlight %}
 
 
-### selectedItemIndex `Integer`
+### selectedItemIndex `number|string`
 {:#members:selecteditemindex}
 
 The given index header will activate (open). If collapsible is set to true, and a negative value is given, then all headers are collapsed. Otherwise, the first panel is
@@ -777,19 +837,19 @@ activated.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -797,10 +857,13 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
         $("#accordion").ejAccordion({ selectedItemIndex : 1 });
 </script>{% endhighlight %}
 
-### selectedItems `Integerarray`
+### selectedItems `number[]`
 {:#members:selecteditems}
 
-To activate multiple headers for the accordion, give the index value for array type for this API. The enableMultipleOpen property should be set as true.
+Activate the specified indexed items of the accordion
+
+N> The selectedItems is a dependent property of enableMultipleOpen. The enableMultipleOpen property should be set as true.
+
 
 #### Default Value
 
@@ -811,24 +874,58 @@ To activate multiple headers for the accordion, give the index value for array t
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
   // selectedItems on initialization.
         $("#accordion").ejAccordion({ selectedItems: [0,1] });
+</script>{% endhighlight %}
+
+### showCloseButton `Boolean`
+{:#members:showclosebutton}
+
+Used to determines the close button visibility an each accordion items. This close button helps to remove the accordion item from the control.  
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script type="text/javascript">
+        // selectedItems on initialization.
+        $("#accordion").ejAccordion({ showCloseButton: true });
 </script>{% endhighlight %}
 
 ### showRoundedCorner `boolean`
@@ -845,79 +942,216 @@ Displays rounded corner borders on the Accordion control's panels and headers.
 {% highlight html %}
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
- <script type="text/javascript">
-  // Enable showRoundedCorner on initialization.
+<script type="text/javascript">
+        // Enable showRoundedCorner on initialization.
         $("#accordion").ejAccordion({ showRoundedCorner: true});
+</script>{% endhighlight %}
+
+### width `number|string`
+{:#members:width}
+
+Specifies width of the accordion.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+      
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+ <script type="text/javascript">           
+  //Accordion initialization. 
+  $("#accordion").ejAccordion({
+                width: "500px"
+        });
 </script>{% endhighlight %}
 
 
 ## Methods
 
-### collapseAll()
-{:#methods:collapseall}
+### addItem(header_name, content, index, isAjaxReq)
+{:#methods:additem}
 
-collapseAll the accordion widget collapse All the header and content panel Before we call this method, we must set "collapsible" is true. Then only collapseAll method will
-working.
+AddItem method is used to add the panel in dynamically. It receives the following parameters
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+header_name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">specify the name of the header</td>
+</tr>
+<tr>
+<td class="name">
+content</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">content of the new panel</td>
+</tr>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">insertion place of the new panel</td>
+</tr>
+<tr>
+<td class="name">
+isAjaxReq</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Enable or disable the ajax request to the added panel</td>
+</tr>
+</tbody>
+</table>
+
+
 
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+           $("#accordion").ejAccordion();
+// Call addItem method.
+$("#accordion").ejAccordion("addItem", "New Item", "The accordion content", 2);
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// addItem the Accordion
+$("#accordion").ejAccordion();
+var accObj = $("#accordion").data("ejAccordion");
+accObj.addItem("New item", "The accordion content", 2); //Calls the addItem method of Accordion.   
+</script>{% endhighlight %}
+
+
+### collapseAll()
+{:#methods:collapseall}
+
+This method used to collapse the all the expanded items in accordion at a time.
+
+N>  Before we call this method, we must set "collapsible" is true. Then only collapseAll method will working.
+
+
+#### Example
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
 // Call collapseAll method.
- $("#accordion").ejAccordion();
+$("#accordion").ejAccordion();
 $("#accordion").ejAccordion("collapseAll");
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-   <div id="accordion">
+  <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -936,21 +1170,21 @@ destroy the Accordion widget all events bound using this._on will be unbind auto
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -962,21 +1196,21 @@ accObj.destroy(); //Calls the destroy method of Accordion.
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -988,26 +1222,26 @@ $("#Accordion").ejAccordion("destroy");
 ### disable()
 {:#methods:disable}
 
-disables the accordion widget disables All the header and content panel.
+Disables the accordion widget includes all the headers and content panels.
 
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1019,21 +1253,21 @@ $("#accordion").ejAccordion("disable");
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1044,62 +1278,82 @@ accObj.disable(); //Calls the disable method of Accordion.
 </script>{% endhighlight %}
 
 
-### disableItems()
+### disableItems(index)
 {:#methods:disableitems}
 
-enable the accordion widget Enables given index header and content panel.
+Disable the accordion widget item based on specified header index.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">index values to disable the panels</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
            $("#accordion").ejAccordion();
 // Call disableItems method.
-$("#accordion").ejAccordion("disableItems", 1);
+$("#accordion").ejAccordion("disableItems", [1]);
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
 // disableItems the Accordion
 $("#accordion").ejAccordion();
 var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems(1); //Calls the disableItems method of Accordion.   
+accObj.disableItems([1]); //Calls the disableItems method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -1107,27 +1361,27 @@ accObj.disableItems(1); //Calls the disableItems method of Accordion.
 {:#methods:enable}
 
 
-enable the accordion widget Enables all the headers and content panels.
+Enable the accordion widget includes all the headers and content panels.
 
 
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1139,21 +1393,21 @@ $("#accordion").ejAccordion("enable");
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1166,66 +1420,86 @@ accObj.enable(); //Calls the enable method of Accordion.
 
 
 
-### enableItems()
+### enableItems(index)
 {:#methods:enableitems}
 
-enable the accordion widget Enables given index header and content panel.
+Enable the accordion widget item based on specified header index.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">index values to enable the panels</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
            $("#accordion").ejAccordion();
 // Call enableItems method.
-$("#accordion").ejAccordion("disableItems", 0); 
-$("#accordion").ejAccordion("disableItems", 1); 
-$("#accordion").ejAccordion("enableItems", 1);
+$("#accordion").ejAccordion("disableItems", [0]); 
+$("#accordion").ejAccordion("disableItems", [1]); 
+$("#accordion").ejAccordion("enableItems", [1]);
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
 // enableItems the Accordion
 $("#accordion").ejAccordion();
 var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems(0);
-accObj.disableItems(1);
-accObj.enableItems(1); //Calls the enable method of Accordion.  
+accObj.disableItems([0]);
+accObj.disableItems([1]);
+accObj.enableItems([1]); //Calls the enable method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1234,28 +1508,30 @@ accObj.enableItems(1); //Calls the enable method of Accordion.
 ### expandAll()
 {:#methods:expandall}
 
-expand All the accordion widget expand All the header and content panel Before we call this method, we must set "enableMultipleOpen" is true. Then only expandAll method will
-working.
+To expand all the accordion widget items.
+
+N>  Before we call this method, we must set "enableMultipleOpen" is true. Then only expandAll method will working.
+
 
 #### Example
 
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1267,21 +1543,21 @@ $("#accordion").ejAccordion("expandAll");
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1299,24 +1575,31 @@ accObj.expandAll(); //Calls the expandAll method of Accordion.
 
 Returns the total number of panels in the control.
 
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
 #### Example
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1327,22 +1610,22 @@ $("#accordion").ejAccordion("getItemsCount");
 
 
 {% highlight html %}
- 
-   <div id="accordion">
+
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1364,21 +1647,21 @@ Hides the visible Accordion control.
 
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1390,21 +1673,21 @@ $("#accordion").ejAccordion("hide");
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1414,7 +1697,142 @@ var accObj = $("#accordion").data("ejAccordion");
 accObj.hide(); //Calls the hide method of Accordion.    
 </script>{% endhighlight %}
 
+### refresh()
+{:#methods:refresh}
 
+The refresh method is used to adjust the control size based on the parent element dimension.
+
+#### Example
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+           $("#accordion").ejAccordion();
+// Call refresh method.
+$("#accordion").ejAccordion("refresh");
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// refresh the Accordion
+$("#accordion").ejAccordion();
+var accObj = $("#accordion").data("ejAccordion");
+accObj.refresh(); //Calls the refresh method of Accordion.   
+</script>{% endhighlight %}
+
+
+### removeItem(index)
+{:#methods:removeitem}
+
+RemoveItem method is used to remove the specified index panel.It receives the parameter as number.
+  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+index </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">specify the index value for remove the accordion panel.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+           $("#accordion").ejAccordion();
+// Call removeItem method.
+$("#accordion").ejAccordion("removeItem", 2);
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// removeItem the Accordion
+$("#accordion").ejAccordion();
+var accObj = $("#accordion").data("ejAccordion");
+accObj.addItem(2); //Calls the removeItem method of Accordion.   
+</script>{% endhighlight %}
 
 
 ### show()
@@ -1428,21 +1846,21 @@ Shows the hidden Accordion control.
 
 
 {% highlight html %}
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1454,21 +1872,21 @@ $("#accordion").ejAccordion("show");
 
 {% highlight html %}
  
-   <div id="accordion">
+<div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
 <script>
@@ -1488,6 +1906,7 @@ accObj.show(); //Calls the show method of Accordion.
 
 Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1498,67 +1917,44 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeIndex{% endhighlight %}</td>
+<td class="name">
+ activeIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeHeader{% endhighlight %}</td>
+<td class="name">
+ activeHeader </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns current active header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-inActiveIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">returns active index</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-inActiveHeader{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns current active header</td>
+<td class="name">
+ isInteraction </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1568,19 +1964,19 @@ inActiveHeader{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -1597,6 +1993,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 Triggered before the AJAX content is loaded in a content panel. Arguments have location of the content (URL) and current model value.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1607,49 +2004,32 @@ Triggered before the AJAX content is loaded in a content panel. Arguments have l
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 #### Example
 
@@ -1657,19 +2037,19 @@ url{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -1687,6 +2067,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 Triggered after AJAX load failed action. Arguments have URL, error message, and current model value.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1697,55 +2078,38 @@ Triggered after AJAX load failed action. Arguments have URL, error message, and 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">
+ data </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the failed data sent.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1755,19 +2119,19 @@ data{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -1782,6 +2146,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 Triggered after the AJAX content loads. Arguments have current model values.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1792,49 +2157,32 @@ Triggered after the AJAX content loads. Arguments have current model values.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the url</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1844,19 +2192,19 @@ url{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -1874,6 +2222,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 Triggered after AJAX success action. Arguments have URL, content, and current model values.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1884,61 +2233,44 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
+<td class="name">
+ data </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the succesfull data sent.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-content{% endhighlight %}</td>
+<td class="name">
+ content </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the ajax content.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1948,19 +2280,19 @@ content{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -1990,49 +2322,38 @@ Triggered before a tab item is active. Arguments have active index and model val
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeIndex{% endhighlight %}</td>
+<td class="name">
+ activeIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
-</tbody>
-</table>
-</td>
+<tr>
+<td class="name">
+ isInteraction </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
 </tbody>
 </table>
+
 
 
 #### Example
@@ -2042,19 +2363,19 @@ activeIndex{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -2079,55 +2400,38 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-inActiveIndex{% endhighlight %}</td>
+<td class="name">
+ inActiveIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-inActiveHeader{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns current active header</td>
+<td class="name">
+ isInteraction </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -2137,19 +2441,19 @@ inActiveHeader{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -2174,40 +2478,22 @@ Triggered after Accordion control creation.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2220,19 +2506,19 @@ type{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -2257,43 +2543,26 @@ Triggered after Accordion control destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -2303,19 +2572,19 @@ type{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">
@@ -2330,6 +2599,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -2340,49 +2610,44 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from accordion
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-inActiveIndex{% endhighlight %}</td>
+<td class="name">
+ inActiveIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
-</tbody>
-</table>
-</td>
+<tr>
+<td class="name">
+ inActiveHeader </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns in active element</td>
+</tr>
+<tr>
+<td class="name">
+ isInteraction </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
 </tbody>
 </table>
+
 
 
 #### Example
@@ -2391,19 +2656,19 @@ inActiveIndex{% endhighlight %}</td>
  
 <div id="accordion">
        <h3>
-           <a href="#">Orubase</a></h3>
+           <a href="#">ASP.NET</a></h3>
        <div>
-Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
        </div>
        <h3>
-           <a href="#">WinRT XAML</a></h3>
+           <a href="#">ASP.NET MVC</a></h3>
        <div>
-Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
        </div>
        <h3>
-           <a href="#">Metro Studio</a></h3>
+           <a href="#">Javascript</a></h3>
        <div>
-Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
        </div>
    </div>
  <script type="text/javascript">

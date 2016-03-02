@@ -50,8 +50,8 @@ $(element).ejTreeView(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name"> 
+options </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">settings for TreeView.</td>
 </tr>
@@ -1805,13 +1805,14 @@ $("#treeView").ejTreeView({
 {:#members:sortSettings-sortOrder}
 
 
-
+<ts name = "ej.sortOrder">
 
 
 
 
 
 Sets the sorting order type. There are two sorting types available, such as "ascending", "descending". See <a href="global#enum:sortorder">sortOrder</a>
+
 
 
 
@@ -1956,7 +1957,7 @@ $("#treeView").ejTreeView({
 
 
 
-### width `string`  `number`
+### width `string|number`
 {:#members:width}
 
 
@@ -2016,7 +2017,7 @@ $("#treeView").ejTreeView({
 
 
 
-### addNode(newNodeText, target)</span>
+### addNode(newNodeText, target)
 {:#methods:addnode}
 
 
@@ -2038,15 +2039,15 @@ To add a Node or collection of nodes in TreeView. If target tree node is specifi
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-newNodeText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name">
+newNodeText</td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">New node text or JSON object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2095,7 +2096,7 @@ treeObj.addNode(obj, $("#book"));
 
 
 
-### addNodes(collection, target)</span>
+### addNodes(collection, target)
 {:#methods:addnodes}
 
 
@@ -2117,15 +2118,15 @@ To add a collection of nodes in TreeView. If target tree node is specified, then
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-collection{% endhighlight %}</td>
-<td class="type"><span class="param-type">object / Array of Object</span></td>
+<td class="name">
+collection</td>
+<td class="type"><span class="param-type">object|Array of Object</span></td>
 <td class="description">New node details in JSON object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name">
+target </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2213,7 +2214,7 @@ $("#treeView").ejTreeView("checkAll");
 
 
 
-### checkNode(element)</span>
+### checkNode(element)
 {:#methods:checknode}
 
 
@@ -2235,9 +2236,9 @@ To check a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2321,7 +2322,7 @@ $("#treeView").ejTreeView("collapseAll");
 
 
 
-### collapseNode(element)</span>
+### collapseNode(element)
 {:#methods:collapsenode}
 
 
@@ -2343,10 +2344,10 @@ To collapse a particular node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
+<td class="description">ID of TreeView node|object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2383,7 +2384,7 @@ $("#treeView").ejTreeView("collapseNode", $("#book"));
 
 
 
-### disableNode(element)</span>
+### disableNode(element)
 {:#methods:disablenode}
 
 
@@ -2405,9 +2406,9 @@ To disable the node in the TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2445,7 +2446,7 @@ $("#treeView").ejTreeView("disableNode", $("#book"));
 
 
 
-### enableNode(element)</span>
+### enableNode(element)
 {:#methods:enablenode}
 
 
@@ -2467,9 +2468,9 @@ To enable the node in the TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2509,7 +2510,7 @@ $("#treeView").ejTreeView("enableNode", $("#book"));
 
 
 
-### ensureVisible(element)</span>
+### ensureVisible(element)
 {:#methods:ensurevisible}
 
 
@@ -2531,9 +2532,9 @@ To ensure that the TreeView node is visible in the TreeView. This method is usef
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2628,7 +2629,7 @@ $("#treeView").ejTreeView("expandAll");
 
 
 
-### expandNode(element)</span>
+### expandNode(element)
 {:#methods:expandnode}
 
 
@@ -2650,9 +2651,9 @@ To expandNode particular node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -2971,7 +2972,7 @@ $("#treeView").ejTreeView("getExpandedNodesIndex");
 
 
 
-### getNodeByIndex(index)</span>
+### getNodeByIndex(index)
 {:#methods:getnodebyindex}
 
 
@@ -2993,8 +2994,8 @@ To get TreeView node by using index position in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name"> 
+index </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Index position of TreeView node</td>
 </tr>
@@ -3044,7 +3045,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-### getNode(element)</span>
+### getNode(element) 
 {:#methods:getnode}
 
 
@@ -3066,8 +3067,8 @@ To get TreeView node data such as id, text, parentId, selected, checked, expande
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">string/object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
@@ -3118,7 +3119,7 @@ $("#treeView").ejTreeView("getNode", $("#book"));
 
 
 
-### getNodeIndex(element)</span>
+### getNodeIndex(element) 
 {:#methods:getnodeindex}
 
 
@@ -3140,8 +3141,8 @@ To get current index position of TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element </td>
 <td class="type"><span class="param-type">string/object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
@@ -3192,7 +3193,7 @@ $("#treeView").ejTreeView("getNodeIndex", $("#book"));
 
 
 
-### getParent(element)</span>
+### getParent(element) 
 {:#methods:getparent}
 
 
@@ -3214,8 +3215,8 @@ To get immediate parent TreeView node of particular TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element </td>
 <td class="type"><span class="param-type">string/object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
@@ -3380,7 +3381,7 @@ $("#treeView").ejTreeView("getSelectedNodeIndex");
 
 
 
-### getText(element)</span>
+### getText(element) 
 {:#methods:gettext}
 
 
@@ -3402,9 +3403,9 @@ To get the text of a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3571,7 +3572,7 @@ $("#treeView").ejTreeView("getVisibleNodes");
 
 
 
-### hasChildNode(element)</span>
+### hasChildNode(element) 
 {:#methods:haschildnode}
 
 
@@ -3594,9 +3595,9 @@ To check a node having child or not.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3690,7 +3691,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-### hideNode(element)</span>
+### hideNode(element) 
 {:#methods:hidenode}
 
 
@@ -3712,9 +3713,9 @@ To hide particular node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3753,7 +3754,7 @@ $("#treeView").ejTreeView("hideNode", $("#book"));
 
 
 
-### insertAfter(newNodeText, target)</span>
+### insertAfter(newNodeText, target) 
 {:#methods:insertafter}
 
 
@@ -3775,15 +3776,15 @@ To add a Node or collection of nodes after the particular TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-newNodeText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+newNodeText </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">New node text or JSON object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name">
+target </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3826,7 +3827,7 @@ treeObj.insertAfter(obj, $("#book"));
 
 
 
-### insertBefore(newNodeText, target)</span>
+### insertBefore(newNodeText, target) 
 {:#methods:insertbefore}
 
 
@@ -3848,15 +3849,15 @@ To add a Node or collection of nodes before the particular TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-newNodeText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+newNodeText </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">New node text or JSON object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+target </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3900,7 +3901,7 @@ treeObj.insertBefore(obj, $("#book"));
 
 
 
-### isNodeChecked(element)</span>
+### isNodeChecked(element) 
 {:#methods:isnodechecked}
 
 
@@ -3922,9 +3923,9 @@ To check the given TreeView node is checked or unchecked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -3974,7 +3975,7 @@ $("#treeView").ejTreeView("isNodeChecked", $("#book"));
 
 
 
-### isChildLoaded(element)</span>
+### isChildLoaded(element) 
 {:#methods:ischildloaded}
 
 
@@ -3996,9 +3997,9 @@ To check whether the child nodes are loaded of the given TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4048,7 +4049,7 @@ $("#treeView").ejTreeView("isChildLoaded", $("#book"));
 
 
 
-### isDisabled(element)</span>
+### isDisabled(element) 
 {:#methods:isdisabled}
 
 
@@ -4070,9 +4071,9 @@ To check the given TreeView node is disabled or enabled.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4121,7 +4122,7 @@ $("#treeView").ejTreeView("isDisabled", $("#book"));
 
 
 
-### isExist(element)</span>
+### isExist(element) 
 {:#methods:isexist}
 
 
@@ -4143,9 +4144,9 @@ To check the given node is exist in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4195,7 +4196,7 @@ $("#treeView").ejTreeView("isExist", $("#book"));
 
 
 
-### isExpanded(element)</span>
+### isExpanded(element) 
 {:#methods:isexpanded}
 
 
@@ -4217,9 +4218,9 @@ To get the expand status of the given TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4266,7 +4267,7 @@ $("#treeView").ejTreeView("isExpanded", $("#book"));
 
 
 
-### isSelected(element)</span>
+### isSelected(element) 
 {:#methods:isselected}
 
 
@@ -4288,9 +4289,9 @@ To get the select status of the given TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4338,7 +4339,7 @@ $("#treeView").ejTreeView("isSelected", $("#book"));
 
 
 
-### isVisible(element)</span>
+### isVisible(element) 
 {:#methods:isvisible}
 
 
@@ -4360,9 +4361,9 @@ To get the visibility status of the given TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4410,7 +4411,7 @@ $("#treeView").ejTreeView("isVisible", $("#book"));
 
 
 
-### loadData(newNodeText, target)</span>
+### loadData(newNodeText, target) 
 {:#methods:loaddata}
 
 
@@ -4432,15 +4433,15 @@ To load the TreeView nodes from the particular URL. If target tree node is speci
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-URL{% endhighlight %}</td>
+<td class="name"> 
+URL </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">URL location, the data returned from the URL will be loaded in TreeView</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+target </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4482,7 +4483,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-### moveNode(sourceNode, destionationNode, index)</span>
+### moveNode(sourceNode, destionationNode, index) 
 {:#methods:movenode}
 
 
@@ -4504,20 +4505,20 @@ To move the TreeView node with in same TreeView. The new poistion of given TreeV
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-sourceNode{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+sourceNode </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-destinationNode{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+destinationNode </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name"> 
+index </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">New index position of given source node</td>
 </tr>
@@ -4652,7 +4653,7 @@ $("#treeView").ejTreeView("removeAll");
 
 
 
-### removeNode(element)</span>
+### removeNode(element) 
 {:#methods:removenode}
 
 
@@ -4674,9 +4675,9 @@ To remove a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4714,7 +4715,7 @@ $("#treeView").ejTreeView("removeNode", $("#book"));
 
 
 
-### selectNode(element)</span>
+### selectNode(element) 
 {:#methods:selectnode}
 
 
@@ -4736,9 +4737,9 @@ To select a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4821,7 +4822,7 @@ $("#treeView").ejTreeView("show");
 
 
 
-### showNode(element)</span>
+### showNode(element) 
 {:#methods:shownode}
 
 
@@ -4843,9 +4844,9 @@ To show a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4929,7 +4930,7 @@ $("#treeView").ejTreeView("unCheckAll");
 
 
 
-### uncheckNode(element)</span>
+### uncheckNode(element) 
 {:#methods:unchecknode}
 
 
@@ -4951,9 +4952,9 @@ To uncheck a node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -4992,7 +4993,7 @@ $("#treeView").ejTreeView("uncheckNode", $("#book"));
 
 
 
-### unselectNode(element)</span>
+### unselectNode(element) 
 {:#methods:unselectnode}
 
 
@@ -5014,9 +5015,9 @@ To unselect the node in the TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+element </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
@@ -5054,7 +5055,7 @@ $("#treeView").ejTreeView("unselectNode", $("#book"));
 
 
 
-### updateText(target, newText)</span>
+### updateText(target, newText) 
 {:#methods:updatetext}
 
 
@@ -5076,14 +5077,14 @@ To edit or update the text of the TreeView node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string/object</span></td>
+<td class="name"> 
+target </td>
+<td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newText{% endhighlight %}</td>
+<td class="name"> 
+newText </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">New text</td>
 </tr>
@@ -5156,38 +5157,38 @@ Fires before adding node to TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.data{% endhighlight %}</td>
+<td class="name"> 
+ data </td>
 <td class="type"><span class="param-type">string/object</span></td>
 <td class="description">returns the given new node data</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetParent{% endhighlight %}</td>
+<td class="name"> 
+ targetParent </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the parent element, the given new nodes to be appended to the given parent element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
@@ -5242,56 +5243,56 @@ Fires before collapse a node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+model</td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChildLoaded{% endhighlight %}</td>
+<td class="name"> 
+ isChildLoaded </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the child nodes are loaded or not</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name"> 
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the parent id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.async{% endhighlight %}</td>
+<td class="name"> 
+ async </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the format asynchronous or synchronous </td>
 </tr>
@@ -5344,44 +5345,44 @@ Fires before cut node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name"> 
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element, the given node to be cut</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name"> 
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.keyCode{% endhighlight %}</td>
+<td class="name"> 
+ keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the keypressed keycode value</td>
 </tr>
@@ -5437,50 +5438,50 @@ Fires before deleting node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name"> 
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element, the given node to be deleted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name"> 
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+<td class="name"> 
+ parentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the target node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the parent node values</td> 
 </tr>
@@ -5537,26 +5538,26 @@ Fires before editing the node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
@@ -5609,56 +5610,56 @@ Fires before expanding the node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChildLoaded{% endhighlight %}</td>
+<td class="name"> 
+ isChildLoaded </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the child node is ready to expanded state; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name"> 
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the parent id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.async{% endhighlight %}</td>
+<td class="name"> 
+ async </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the format asynchronous or synchronous </td>
 </tr>
@@ -5711,26 +5712,26 @@ Fires before loading nodes to TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.ajaxOptions{% endhighlight %}</td>
+<td class="name"> 
+ ajaxOptions </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the AJAX settings object</td>
 </tr>
@@ -5788,44 +5789,44 @@ Fires before paste node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name"> 
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element, the given node to be pasted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name"> 
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.keyCode{% endhighlight %}</td>
+<td class="name"> 
+ keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the keypressed keycode value</td>
 </tr>
@@ -5881,32 +5882,32 @@ Fires before selecting node in TreeView.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name"> 
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element, the given node to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name"> 
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
@@ -5964,20 +5965,20 @@ Fires when TreeView created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -6030,20 +6031,20 @@ Fires when TreeView destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -6097,38 +6098,38 @@ Fires before nodeEdit Successful.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.newText{% endhighlight %}</td>
+<td class="name"> 
+ newText </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the new entered text for the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current node element id</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.oldText{% endhighlight %}</td>
+<td class="name"> 
+ oldText </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the old node text</td>
 </tr>
@@ -6181,56 +6182,56 @@ Fires when key pressed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.path{% endhighlight %}</td>
+<td class="name"> 
+ path </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns node path from root element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.keyCode{% endhighlight %}</td>
+<td class="name"> 
+ keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the keypressed keycode value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isExpanded{% endhighlight %}</td>
+<td class="name"> 
+ isExpanded </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns when the current node is in expanded state; otherwise, false.</td>
 </tr>
@@ -6283,26 +6284,26 @@ Fires when data load fails.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.error{% endhighlight %}</td>
+<td class="name"> 
+ error </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the AJAX error object</td>
 </tr>
@@ -6361,38 +6362,38 @@ Fires when data loaded successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.data{% endhighlight %}</td>
+<td class="name"> 
+ data </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the success data from the URL</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetParent{% endhighlight %}</td>
+<td class="name"> 
+ targetParent </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target parent element, the data returned from the URL to be appended to the given parent element, else in TreeView</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
@@ -6438,7 +6439,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node added successfully.
+Fires once node added successfully.
 
 <table class="params">
 <thead>
@@ -6450,44 +6451,44 @@ Fires when node added successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.data{% endhighlight %}</td>
+<td class="name"> 
+ data </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the added data, that are given initially</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodes{% endhighlight %}</td>
+<td class="name"> 
+ nodes </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the newly added elements</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+<td class="name"> 
+ parentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target parent element of the added element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
@@ -6537,7 +6538,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node checked successfully.
+Fires once node checked successfully.
 
 <table class="params">
 <thead>
@@ -6549,68 +6550,68 @@ Fires when node checked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name"> 
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name"> 
+ isChecked </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns true when the node checkbox is checked; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentNode{% endhighlight %}</td>
+<td class="name"> 
+ currentNode </td>
 <td class="type"><span class="param-type">Array of string</span></td>
 <td class="description">it returns the currently checked node name</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentCheckedNodes{% endhighlight %}</td>
+<td class="name"> 
+ currentCheckedNodes </td>
 <td class="type"><span class="param-type">Array of object</span></td>
 <td class="description">it returns the currently checked and its child node details</td>
 </tr>
@@ -6663,45 +6664,45 @@ Fires when node clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of current element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name"> 
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the parentId of current element<</td>
 </tr>
@@ -6753,56 +6754,56 @@ Fires when node collapsed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name"> 
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name"> 
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name"> 
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChildLoaded{% endhighlight %}</td>
+<td class="name"> 
+ isChildLoaded </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the child nodes are loaded or not</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.async{% endhighlight %}</td>
+<td class="name"> 
+ async </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the format asynchronous or synchronous </td>
 </tr>
@@ -6854,44 +6855,44 @@ Fires when node cut successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+<td class="name"> 
+ parentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the cut node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.keyCode{% endhighlight %}</td>
+<td class="name"> 
+ keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the keypressed keycode value</td>
 </tr>
@@ -6947,38 +6948,38 @@ Fires when node deleted successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+<td class="name"> 
+ parentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the deleted node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentDetails{% endhighlight %}</td>
+<td class="name"> 
+ parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
@@ -7036,56 +7037,56 @@ Fires when node dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.dragTarget{% endhighlight %}</td>
+<td class="name"> 
+ dragTarget </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the original drag target</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name"> 
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current target TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElementData{% endhighlight %}</td>
+<td class="name"> 
+ targetElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current target details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.draggedElement{% endhighlight %}</td>
+<td class="name"> 
+ draggedElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the target node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.draggedElementData{% endhighlight %}</td>
+<td class="name"> 
+ draggedElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name"> 
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -7127,7 +7128,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node drag start successfully.
+Fires once node drag start successfully.
 
 
 <table class="params">
@@ -7140,56 +7141,56 @@ Fires when node drag start successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.dragTarget{% endhighlight %}</td>
+<td class="name">
+ dragTarget </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the original drag target</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElement{% endhighlight %}</td>
+<td class="name">
+ parentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dragging parent TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentElementData{% endhighlight %}</td>
+<td class="name">
+ parentElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dragging parent TreeView node details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the dragging node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElementData{% endhighlight %}</td>
+<td class="name">
+ targetElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -7242,62 +7243,62 @@ Fires before the dragged node to be dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.dropTarget{% endhighlight %}</td>
+<td class="name">
+ dropTarget </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the original drop target</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.draggedElement{% endhighlight %}</td>
+<td class="name">
+ draggedElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dragged TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.draggedElementData{% endhighlight %}</td>
+<td class="name">
+ draggedElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dragged TreeView node details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the dragged node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElementData{% endhighlight %}</td>
+<td class="name">
+ targetElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.position{% endhighlight %}</td>
+<td class="name">
+ position </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the drop position such as before, after or over</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -7339,7 +7340,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node dropped successfully.
+Fires once node dropped successfully.
 
 <table class="params">
 <thead>
@@ -7351,62 +7352,62 @@ Fires when node dropped successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.dropTarget{% endhighlight %}</td>
+<td class="name">
+ dropTarget </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the original drop target</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.droppedElement{% endhighlight %}</td>
+<td class="name">
+ droppedElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dropped TreeView node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.droppedElementData{% endhighlight %}</td>
+<td class="name">
+ droppedElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current dropped TreeView node details</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current parent element of the dropped node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElementData{% endhighlight %}</td>
+<td class="name">
+ targetElementData </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.position{% endhighlight %}</td>
+<td class="name">
+ position </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the drop position such as before, after or over</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -7448,7 +7449,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node edited successfully.
+Fires once node edited successfully.
 
 <table class="params">
 <thead>
@@ -7460,56 +7461,56 @@ Fires when node edited successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name">
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.oldText{% endhighlight %}</td>
+<td class="name">
+ oldText </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the oldText of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.newText{% endhighlight %}</td>
+<td class="name">
+ newText </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the newText of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element, the given node to be cut</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name">
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
@@ -7551,7 +7552,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node expanded successfully.
+Fires once node expanded successfully.
 
 <table class="params">
 <thead>
@@ -7563,56 +7564,56 @@ Fires when node expanded successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChildLoaded{% endhighlight %}</td>
+<td class="name">
+ isChildLoaded </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the child node is ready to expanded state; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name">
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name">
+ id </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name">
+ parentId </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the parent id of currently clicked node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.async{% endhighlight %}</td>
+<td class="name">
+ async </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the format asynchronous or synchronous </td>
 </tr>
@@ -7653,7 +7654,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node pasted successfully.
+Fires once node pasted successfully.
 
 <table class="params">
 <thead>
@@ -7665,44 +7666,44 @@ Fires when node pasted successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+ target </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the pasted element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.nodeDetails{% endhighlight %}</td>
+<td class="name">
+ nodeDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given target node values</td> 
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.keyCode{% endhighlight %}</td>
+<td class="name">
+ keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the keypressed keycode value</td>
 </tr>
@@ -7760,44 +7761,44 @@ Fires when node selected successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name">
+ id </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name">
+ parentId </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name">
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
@@ -7838,7 +7839,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when node unchecked successfully.
+Fires once node unchecked successfully.
 
 <table class="params">
 <thead>
@@ -7850,68 +7851,68 @@ Fires when node unchecked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TreeView model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+ event </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
+<td class="name">
+ id </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the id of the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.parentId{% endhighlight %}</td>
+<td class="name">
+ parentId </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+ value </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the value of the node</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentElement{% endhighlight %}</td>
+<td class="name">
+ currentElement </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current element of the node clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isChecked{% endhighlight %}</td>
+<td class="name">
+ isChecked </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns true when the node checkbox is checked; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentNode{% endhighlight %}</td>
+<td class="name">
+ currentNode </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">it returns currently unchecked node name</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentUncheckedNodes{% endhighlight %}</td>
+<td class="name">
+ currentUncheckedNodes </td>
 <td class="type"><span class="param-type">Array of object</span></td>
 <td class="description">it returns currently unchecked node and its child node details.</td>
 </tr>

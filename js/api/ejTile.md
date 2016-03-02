@@ -90,9 +90,6 @@ Section for badge specific functionalities and it represents the notification fo
 
 
 
-
-
-
 ### badge.enabled `boolean`
 {:#members:badge-enabled}
 
@@ -725,13 +722,79 @@ $("#tile").ejTile("option", "imageClass", "sample");
 {:#members:imageposition}
 
 
+<ts name = "ej.Tile.ImagePosition"/>
 
 
 
 
 
 
-Specifies the position of tile image. See  <a href="global#enum:imageposition">imageposition</a>
+
+
+Specifies the position of tile image. See imageposition
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Center</td>
+<td class="description">To set the center position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+Top</td>
+<td class="description">To set the top position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+Bottom</td>
+<td class="description">To set the bottom position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="description">To set the right position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+Left</td>
+<td class="description">To set the left position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+TopLeft</td>
+<td class="description">To set the topleft position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+TopRight</td>
+<td class="description">To set the topright position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+BottomRight</td>
+<td class="description">To set the bottomright position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+BottomLeft</td>
+<td class="description">To set the bottomleft position of tile image</td>
+</tr>
+<tr>
+<td class="name">
+Fill</td>
+<td class="description">To set the fill position of tile image</td>
+</tr>
+</tbody>
+</table>
+
 
 
 
@@ -1200,13 +1263,44 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 {:#members:livetile-type}
 
 
+<ts name = "ej.Tile.LiveTileType"/>
 
 
 
 
 
 
-Specifies liveTile type for Tile. See  <a href="global#enum:livetiletype">orientation</a> 
+
+
+Specifies liveTile type for Tile. See orientation
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Flip</td>
+<td class="description">To set flip type of liveTile for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Slide</td>
+<td class="description">To set slide type of liveTile for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Carousel</td>
+<td class="description">To set carousel type of liveTile for tile control</td>
+</tr>
+</tbody>
+</table>
+ 
 
 
 
@@ -1444,13 +1538,49 @@ $("#tile").ejTile("option", "text", "Settings");            {% endhighlight %}
 {:#members:textalignment}
 
 
+<ts name = "ej.Tile.TextAlignment"/>
 
 
 
 
 
 
-Aligns the text of a tile. See  <a href="global#enum:textalignment">textalignment</a> 
+
+
+Aligns the text of a tile. See textalignment
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="description">To set the normal alignment of text for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Left</td>
+<td class="description">To set the left alignment of text for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="description">To set the right alignment of text for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Center</td>
+<td class="description">To set the center alignment of text for tile control</td>
+</tr>
+</tbody>
+</table>
+
  
 
 
@@ -1501,18 +1631,139 @@ $("#tile").ejTile("option", "textAlignment", "left");            {% endhighlight
 
 
 
+### textPosition `enum`
+{:#members:textalignment}
+
+
+<ts name = "ej.Tile.TextPosition"/>
+
+
+
+
+
+
+
+
+Position of the text for tile control. See textPosition
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inner</td>
+<td class="description">To set the inner position of the tile text</td>
+</tr>
+<tr>
+<td class="name">
+Outer</td>
+<td class="description">To set the outer position of the tile text</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* "Inner"
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+// Set textPosition on initialization. 
+// To set textPosition API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", textPosition:"inner" }); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the textPosition, after initialization:
+// Get the textPosition API value.
+ $("#tile").ejTile("option", "textPosition");                  
+// Set the textPosition API
+$("#tile").ejTile("option", "textPosition", "inner");            {% endhighlight %}
+
+
+
+
+
+
 
 ### tileSize `enum`
 {:#members:tilesize}
 
 
+<ts name = "ej.Tile.TileSize"/>
 
 
 
 
 
 
-Specifies the size of a tile.  See  <a href="global#enum:tilesize">tilesize</a>.
+
+Specifies the size of a tile.  See tilesize
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Medium</td>
+<td class="description">To set the medium size for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Small</td>
+<td class="description">To set the small size for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Large</td>
+<td class="description">To set the large size for tile control</td>
+</tr>
+<tr>
+<td class="name">
+Wide</td>
+<td class="description">To set the wide size for tile control</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1631,7 +1882,7 @@ $("#tile").ejTile("option", "width", 300);            {% endhighlight %}
 
 
 
-### updateTemplate()
+### updateTemplate(name)
 {:#methods:updatetemplate}
 
 
@@ -1645,6 +1896,24 @@ Update the image template of tile item to another one.
 
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+name</td>
+<td class="type">
+string</td>
+<td class="description">UpdateTemplate by using id</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1702,8 +1971,8 @@ Event triggers when the mousedown happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from tile
 <table class="params">
@@ -1716,32 +1985,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Tile.Model"/><span class="param-type">boolean</span></td>
 <td class="description">returns the tile model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">
+text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">
+index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the index of current tile item </td>
 </tr>
@@ -1801,8 +2070,8 @@ Event triggers when the mouseup happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from tile
 <table class="params">
@@ -1815,32 +2084,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Tile.Model"/><span class="param-type">boolean</span></td>
 <td class="description">returns the tile model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">
+text</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns the current tile text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">
+index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the index of current tile item </td>
 </tr>

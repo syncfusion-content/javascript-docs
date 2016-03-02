@@ -2592,6 +2592,62 @@ Outer</td>
 
 
 
+### ColumnLayout
+{:#enum:columnlayout}
+ 
+Specifies whether the Grid's column layout is Auto or Fixed.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Column layout is auto(based on width).</td>
+</tr>
+<tr>
+<td class="name">Fixed</td>
+<td class="description">Column layout is fixed(based on width).</td>
+</tr>
+</tbody>
+</table>
+
+
+### ClipMode
+{:#enum:clipmode}
+ 
+Specifies whether the Grid's clip mode is Ellipsis, Clip or EllipsisWithTooltip.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Ellipsis</td> 
+<td class="description">Shows ellipsis for the overflown cell.</td> 
+</tr>
+<tr>
+<td class="name">Clip</td> 
+<td class="description">Truncate the text in the cell.</td>
+</tr>
+<tr>
+<td class="name">EllipsisWithTooltip</td> 
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
 ### dataTypes
 {:#enum:datatypes}
 
@@ -3391,7 +3447,97 @@ Data</td>
 
 
 
-### FileFormats
+### EditingType
+{:#enum:editingtype}
+ 
+Specifies whether the Grid's editing type is String, Boolean, Numeric, Dropdown, DatePicker or DateTimePicker.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">String</td> 
+<td class="description">Specifies editing type as stringedit.</td>
+</tr>
+<tr>
+<td class="name">Boolean</td> 
+<td class="description">Specifies editing type as booleanedit.</td>
+</tr>
+<tr>
+<td class="name">Numeric</td> 
+<td class="description">Specifies editing type as numericedit.</td>
+</tr>
+<tr>
+<td class="name">Dropdown</td> 
+<td class="description">Specifies editing type as dropdownedit.</td>
+</tr>
+<tr>
+<td class="name">DatePicker</td>
+<td class="description">Specifies editing type as datepicker.</td>
+</tr>
+<tr>
+<td class="name">DateTimePicker</td> 
+<td class="description">Specifies editing type as datetimepicker.</td>
+</tr>
+</tbody>
+</table>
+ 
+
+### EditMode
+{:#enum:editmode}
+ 
+Specifies whether the Grid's edit mode is Normal, Dialog, DialogTemplate, Batch, InlineForm, InlineTemplateForm, ExternalForm or ExternalFormTemplate.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Normal</td> 
+<td class="description">Edit mode is normal</td>
+</tr>
+<tr>
+<td class="name">Dialog</td> 
+<td class="description">Edit mode is dialog</td>
+</tr>
+<tr>
+<td class="name">DialogTemplate</td> 
+<td class="description">Edit mode is dialogtemplate</td>
+</tr>
+<tr>
+<td class="name">Batch</td> 
+<td class="description">Edit mode is batch</td>
+</tr>
+<td class="name">InlineForm</td> 
+<td class="description">Edit mode is inlineform</td>
+</tr>
+<tr>
+<td class="name">InlineTemplateForm</td> 
+<td class="description">Edit mode is inlinetemplateform</td>
+</tr>
+<tr>
+<td class="name">ExternalForm</td> 
+<td class="description">Edit mode is externalform</td>
+</tr>
+<tr>
+<tr>
+<td class="name">ExternalFormTemplate</td> 
+<td class="description">Edit mode is externalformtemplate</td>
+</tr>
+</tbody>
+</table>
+ 
+
+ ### FileFormats
 {:#enum:fileformats}
 
 
@@ -3473,132 +3619,56 @@ SVG</td>
 ### FilterBarMode
 {:#enum:filterbarmode}
 
-
-
-
-
-
-
-
-Enum for Grid Filter Bar mode
-
-
-
-
-
-
-#### Properties
-
-
-
-
-
-
+Specifies whether the Grid's filterbar mode is Immediate or OnEnter.
+ 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th class="last">Description</th>
+<th>Name</th> 
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">
-Immediate</td>
-<td class="type">string</td>
-<td class="default">immediate</td>
-<td class="description">Used to display filter results as soon as typing the filter query or after specified time interval</td>
+<td class="name">Immediate</td> 
+<td class="description">Initiate filter operation on typing the filter query</td>
 </tr>
 <tr>
-<td class="name">
-OnEnter</td>
-<td class="type">string</td>
-<td class="default">onenter</td>
-<td class="description">Used to display filter results after enter key is pressed</td>
+<td class="name">OnEnter</td> 
+<td class="description">Initiate filter operation after Enter key is pressed</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### FilterType
 {:#enum:filtertype}
-
-
-
-
-
-
-
-
-Enum for filtertype
-
-
-
-
-
-
-#### Properties
-
-
-
-
-
-
+ 
+Specifies whether the Grid's filter type is Menu, Excel or FilterBar.
+ 
 <table class="props">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th class="last">Description</th>
+<th>Name</th> 
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">
-StartsWith</td>
-<td class="type">string</td>
-<td class="default">startswith</td>
-<td class="description">Enum for filter type startswith</td>
+<td class="name">Menu</td> 
+<td class="description">Specifies the filter type as menu.</td>
 </tr>
 <tr>
-<td class="name">
-Contains</td>
-<td class="type">string</td>
-<td class="default">contains</td>
-<td class="description">Enum for filter type contains</td>
+<td class="name">Excel</td> 
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+<tr>
+<td class="name">FilterBar</td> 
+<td class="description">Specifies the filter type as filterbar.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ### FitMode
 {:#enum:fitmode}
@@ -5201,6 +5271,84 @@ HalfCircle</td>
 
 
 
+### FormPosition
+{:#enum:formposition}
+ 
+Specifies whether the position of Grid's edit form is TopRight or BottomLeft.
+ 
+<table class="props">
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">BottomLeft</td> 
+<td class="description">Form position is bottomleft.</td>
+</tr>
+<tr>
+<td class="name">TopRight</td> 
+<td class="description">Form position is topright.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+### FilterOperator
+{:#enum:filteroperator}
+ 
+Specifies the filter operator.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startsWith</td> 
+<td class="description">Specifies the filter operator as startswith.</td>
+</tr>
+<tr>
+<td class="name">endsWith</td> 
+<td class="description">Specifies the filter operator as endswith.</td>
+</tr>
+<td class="name">contains</td> 
+<td class="description">Specifies the filter operator as contains.</td>
+</tr>
+<tr>
+<td class="name">equal</td> 
+<td class="description">Specifies the filter operator as equal.</td>
+</tr>
+<tr>
+<td class="name">notEqual</td> 
+<td class="description">Specifies the filter operator as notequal.</td>
+</tr>
+<tr>
+<td class="name">greaterThan</td> 
+<td class="description">Specifies the filter operator as greaterthan.</td>
+</tr>
+<tr>
+<td class="name">greaterThanOrEqual</td> 
+<td class="description">Specifies the filter operator as greaterthanorequal.</td>
+</tr>
+<tr>
+<td class="name">lessThan</td> 
+<td class="description">Specifies the filter operator as lessthan.</td>
+</tr>
+<tr>
+<td class="name">lessThanOrEqual</td> 
+<td class="description">Specifies the filter operator as Lessthanorequal.</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### gaugePosition
 {:#enum:gaugeposition}
 
@@ -5300,21 +5448,41 @@ BottomCenter</td>
 </tr>
 </tbody>
 </table>
+ 
 
+### GridLines
+{:#enum:gridlines}
+ 
+Specifies whether the Grid lines is None, Horizontal, Vertical or Both.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">None</td> 
+<td class="description">No grid lines are displayed.</td>
+</tr>
+<tr>
+<td class="name">Horizontal</td> 
+<td class="description">Displays the horizontal grid lines only.</td>
+</tr>
+<tr>
+<td class="name">Vertical</td> 
+<td class="description">Displays the vertical grid lines only.</td>
+</tr>
+<tr>
+<td class="name">Both</td> 
+<td class="description">Displays both the horizontal and vertical grid lines.</td>
+</tr>
+</tbody>
+</table>
+ 
+ 
 ### HeaderLeftButtonStyle
 {:#enum:headerleftbuttonstyle}
 
@@ -6546,6 +6714,9 @@ Twelve</td>
 
 
 
+ 
+ 
+
 ### IconName
 {:#enum:iconname}
 
@@ -7384,9 +7555,237 @@ SliceAndDiceAuto</td>
 
 
 
+### Keys
+{:#enum:keys}
 
+Enum for Keys in diagram.
 
+#### Properties
 
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">No key pressed.</td>
+        </tr>
+        <tr>
+            <td class="name">A</td>
+            <td class="description">The A key.</td>
+        </tr>
+        <tr>
+            <td class="name">B</td>
+            <td class="description">The B key.</td>
+        </tr>
+        <tr>
+            <td class="name">C</td>
+            <td class="description">The C key.</td>
+        </tr>
+        <tr>
+            <td class="name">D</td>
+            <td class="description">The D Key.</td>
+        </tr>
+        <tr>
+            <td class="name">E</td>
+            <td class="description">The E key.</td>
+        </tr>
+        <tr>
+            <td class="name">F</td>
+            <td class="description">The F key.</td>
+        </tr>
+        <tr>
+            <td class="name">G</td>
+            <td class="description">The G key.</td>
+        </tr>
+        <tr>
+            <td class="name">H</td>
+            <td class="description">The H Key.</td>
+        </tr>
+        <tr>
+            <td class="name">I</td>
+            <td class="description">The I key.</td>
+        </tr>
+        <tr>
+            <td class="name">J</td>
+            <td class="description">The J key.</td>
+        </tr>
+        <tr>
+            <td class="name">K</td>
+            <td class="description">The K key.</td>
+        </tr>
+        <tr>
+            <td class="name">L</td>
+            <td class="description">The L Key.</td>
+        </tr>
+        <tr>
+            <td class="name">M</td>
+            <td class="description">The M key.</td>
+        </tr>
+        <tr>
+            <td class="name">N</td>
+            <td class="description">The N key.</td>
+        </tr>
+        <tr>
+            <td class="name">O</td>
+            <td class="description">The O key.</td>
+        </tr>
+        <tr>
+            <td class="name">P</td>
+            <td class="description">The P Key.</td>
+        </tr>
+        <tr>
+            <td class="name">Q</td>
+            <td class="description">The Q key.</td>
+        </tr>
+        <tr>
+            <td class="name">R</td>
+            <td class="description">The R key.</td>
+        </tr>
+        <tr>
+            <td class="name">S</td>
+            <td class="description">The S key.</td>
+        </tr>
+        <tr>
+            <td class="name">T</td>
+            <td class="description">The T Key.</td>
+        </tr>
+        <tr>
+            <td class="name">U</td>
+            <td class="description">The U key.</td>
+        </tr>
+        <tr>
+            <td class="name">V</td>
+            <td class="description">The V key.</td>
+        </tr>
+        <tr>
+            <td class="name">W</td>
+            <td class="description">The W key.</td>
+        </tr>
+        <tr>
+            <td class="name">X</td>
+            <td class="description">The X key.</td>
+        </tr>
+        <tr>
+            <td class="name">Y</td>
+            <td class="description">The Y key.</td>
+        </tr>
+        <tr>
+            <td class="name">Z</td>
+            <td class="description">The Z key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number0</td>
+            <td class="description">The 0 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number1</td>
+            <td class="description">The 1 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number2</td>
+            <td class="description">The 2 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number3</td>
+            <td class="description">The 3 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number4</td>
+            <td class="description">The 4 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number5</td>
+            <td class="description">The 5 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number6</td>
+            <td class="description">The 6 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number7</td>
+            <td class="description">The 7 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number8</td>
+            <td class="description">The 8 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Number9</td>
+            <td class="description">The 9 key.</td>
+        </tr>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description">The LEFT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Up</td>
+            <td class="description">The UP ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description">The RIGHT ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Down</td>
+            <td class="description">The DOWN ARROW key.</td>
+        </tr>
+        <tr>
+            <td class="name">Escape</td>
+            <td class="description">The ESC key.</td>
+        </tr>
+        <tr>
+            <td class="name">Delete</td>
+            <td class="description">The DEL key.</td>
+        </tr>
+        <tr>
+            <td class="name">Tab</td>
+            <td class="description">The TAB key.</td>
+        </tr>
+        <tr>
+            <td class="name">Enter</td>
+            <td class="description">The ENTER key.</td>
+        </tr>
+    </tbody>
+</table>
+
+### KeyModifiers
+{:#enum:keymodifiers}
+
+Enum for KeyModifiers in diagram.
+
+#### Properties
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">No modifiers are pressed.</td>
+        </tr>
+        <tr>
+            <td class="name">Alt</td>
+            <td class="description">The ALT key.</td>
+        </tr>
+        <tr>
+            <td class="name">Control</td>
+            <td class="description">The CTRL key.</td>
+        </tr>
+        <tr>
+            <td class="name">Shift</td>
+            <td class="description">The SHIFT key.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### LabelEditMode
 {:#enum:labeleditmode}
@@ -11874,6 +12273,31 @@ Surface</td>
 
 
 
+### PrintMode
+{:#enum:printmode}
+ 
+Specifies whether the Grid's printmode is AllPages or CurrentPage.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">AllPages</td> 
+<td class="description">Prints allpages.</td>
+</tr>
+<tr>
+<td class="name">CurrentPage</td> 
+<td class="description">Prints currentpage.</td>
+</tr>
+</tbody>
+</table>
+ 
+
 ### RangePadding
 {:#enum:rangepadding}
 
@@ -12343,6 +12767,31 @@ Windows</td>
 
 
 
+
+
+### RowPosition
+{:#enum:rowposition}
+ 
+Specifies whether the position of add new row in Grid is Top or Bottom.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td> 
+<td class="description">Specifies position of add new row as top.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td> 
+<td class="description">Specifies position of add new row as bottom.</td>
+</tr>
+</tbody>
+</table>
 
 
 ### ScaleType
@@ -13934,7 +14383,107 @@ qrBarcode</td>
 </table>
 
 
+### SelectionMode
+{:#enum:selectionmode}
+ 
+Specifies whether the Grid's selection mode is Row, Cell or Column.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Row</td> 
+<td class="description">Selection is row basis.</td>
+</tr>
+<tr>
+<td class="name">Cell</td> 
+<td class="description">Selection is cell basis.</td>
+</tr>
+<tr>
+<td class="name">Column</td> 
+<td class="description">Selection is column basis.</td>
+</tr>
+</tbody>
+</table>
+ 
 
+### SelectionType
+{:#enum:selectiontype}
+
+Specifies whether the Grid's selection type is Single or Multiple.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Single</td> 
+<td class="description">Specifies the selection type as single.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td> 
+<td class="description">Specifies the selection type as multiple.</td>
+</tr>
+</tbody>
+</table>
+
+
+### SummaryType
+{:#enum:summarytype}
+ 
+Specifies whether the Grid's summary type to be used.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Average</td> 
+<td class="description">Summary type is average.</td>
+</tr>
+<tr>
+<td class="name">Minimum</td> 
+<td class="description">Summary type is minimum.</td>
+</tr>
+<tr>
+<td class="name">Maximum</td> 
+<td class="description">Summary type is maximum.</td>
+</tr>
+<tr>
+<td class="name">Count</td> 
+<td class="description">Summary type is count.</td>
+</tr>
+<tr>
+<td class="name">Sum</td> 
+<td class="description">Summary type is sum.</td>
+</tr>
+<tr>
+<td class="name">Custom</td> 
+<td class="description">Summary type is custom.</td>
+</tr>
+<tr>
+<td class="name">TrueCount</td> 
+<td class="description">Summary type is truecount.</td>
+</tr>
+<tr>
+<td class="name">FalseCount</td> 
+<td class="description">Summary type is falsecount.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -14104,6 +14653,39 @@ Right</td>
 
 
 
+
+### TextAlign
+{:#enum:textalign}
+ 
+Specifies whether the text alignment in the cell is Center, Justify, Left or Right.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Center</td> 
+<td class="description">Text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td> 
+<td class="description">Text is justified.</td>
+</tr>
+<tr>
+<td class="name">Left</td> 
+<td class="description">Text is aligned to the left.</td>
+</tr>
+<tr>
+<td class="name">Right</td> 
+<td class="description">Text is aligned to the right.</td>
+</tr>
+</tbody>
+</table>
+ 
 
 ### TextAlign
 {:#enum:textalign}
@@ -16151,9 +16733,66 @@ Popup</td>
 
 
 
+### ToolBarItems
+{:#enum:toolbaritems}
+ 
+Specifies the toolbar items to be used in the Grid. 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td> 
+<td class="description">Toolbar item is add.</td>
+</tr>
+<tr>
+<td class="name">Edit</td> 
+<td class="description">Toolbar item is edit.</td>
+</tr>
+<tr>
+<td class="name">Delete</td> 
+<td class="description">Toolbar item is delete.</td>
+</tr>
+<tr>
+<td class="name">Update</td> 
+<td class="description">Toolbar item is update.</td>
+</tr>
+<tr>
+<td class="name">Cancel</td> 
+<td class="description">Toolbar item is cancel.</td>
+</tr>
+<tr>
+<td class="name">Search</td> 
+<td class="description">Toolbar item is search.</td>
+</tr>
+<tr>
+<td class="name">ExcelExport</td> 
+<td class="description">Toolbar item is excelExport.</td>
+</tr>
+<tr>
+<td class="name">PdfExport</td> 
+<td class="description">Toolbar item is pdfExport.</td>
+</tr>
+<tr>
+<td class="name">PrintGrid</td> 
+<td class="description">Toolbar item is printGrid.</td>
+</tr>
+<tr>
+<td class="name">WordExport</td> 
+<td class="description">Toolbar item is wordExport.</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Unit
 {:#enum:unit}
+
 
 
 
@@ -16442,15 +17081,37 @@ BottomRight</td>
 
 
 
-
-
-
-
-
-
-
-
-
+### UnboundType
+{:#enum:unboundtype}
+ 
+Specifies whether the Grid's unbound type is Edit, Save, Delete or Cancel.
+ 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Edit</td> 
+<td class="description">Unbound type is edit.</td>
+</tr>
+<tr>
+<td class="name">Save</td> 
+<td class="description">Unbound type is save.</td>
+</tr>
+<tr>
+<td class="name">Delete</td> 
+<td class="description">Unbound type is delete.</td>
+</tr>
+<tr>
+<td class="name">Cancel</td> 
+<td class="description">Unbound type is cancel.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -16748,6 +17409,31 @@ Far</td>
 
 
 
+
+### VirtualScrollMode
+{:#enum:virtualscrollmode}
+ 
+Specifies whether the Grid's virtual scroll mode is Normal or Continuous.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th> 
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Normal</td> 
+<td class="description">virtual scroll mode is normal.</td>
+</tr>
+<tr>
+<td class="name">Continuous</td> 
+<td class="description">virtual scroll mode is continuous.</td>
+</tr>
+</tbody>
+</table>
+ 
 
 ### ZIndex
 {:#enum:zindex}

@@ -36,7 +36,9 @@ $(element).ejTimePicker()
 <script>
 // Create TimePicker
 $("#timepicker").ejTimePicker();
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -49,10 +51,7 @@ $("#timepicker").ejTimePicker();
 * module:jquery.easing.1.3.js
 
 
-* module:jquery.globalize.js
-
-
-* module:globalize.cultures.min.js
+* module:ej.globalize.js
 
 
 * module:ej.core.js
@@ -84,8 +83,7 @@ $("#timepicker").ejTimePicker();
 
 
 
-
-Specify the CSS class to timepicker to achieve custom theme.
+Sets the root CSS class for the TimePicker theme, which is used to customize.
 
 
 
@@ -117,7 +115,8 @@ Specify the CSS class to timepicker to achieve custom theme.
 <script>
 // Set the CSS class during initialization.                     
         $("#timepicker").ejTimePicker({  cssClass : "gradient-lime" });
-</script> 
+</script>
+ 
 {% endhighlight %}
 
 
@@ -136,7 +135,7 @@ Specify the CSS class to timepicker to achieve custom theme.
 
 
 
-Specifies the animation behavior in timepicker.
+Specifies the animation behavior in TimePicker.
 
 
 
@@ -168,7 +167,8 @@ Specifies the animation behavior in timepicker.
 <script>
 // Set the enableAnimation value during initialization.                         
         $("#timepicker").ejTimePicker({  enableAnimation : false });
-</script> 
+</script>
+ 
 {% endhighlight %}
 
 
@@ -187,7 +187,7 @@ Specifies the animation behavior in timepicker.
 
 
 
-When this property is set to false, it disables the timepicker control.
+When this property is set to false, it disables the TimePicker control.
 
 
 
@@ -219,7 +219,8 @@ When this property is set to false, it disables the timepicker control.
 <script>
 // Set the enabled value during initialization.                         
         $("#timepicker").ejTimePicker({  enabled : false });
-</script> 
+</script>
+ 
 {% endhighlight %}
 
 
@@ -238,7 +239,8 @@ When this property is set to false, it disables the timepicker control.
 
 
 
-Enables or disables the state maintenance of TimePicker.
+Save current model value to browser cookies for maintaining states. When refreshing the TimePicker control page, the model value is applied from browser cookies or HTML 5
+local storage.
 
 
 
@@ -271,6 +273,7 @@ Enables or disables the state maintenance of TimePicker.
 // Set the enablePersistence value during initialization.                       
         $("#timepicker").ejTimePicker({  enablePersistence : true });
 </script> 
+
 {% endhighlight %}
 
 
@@ -289,7 +292,7 @@ Enables or disables the state maintenance of TimePicker.
 
 
 
-Sets the TimePicker direction as right to left alignment.
+Displays the TimePicker as right to left alignment.
 
 
 
@@ -322,6 +325,7 @@ Sets the TimePicker direction as right to left alignment.
 // Set the enableRTL value during initialization.                       
         $("#timepicker").ejTimePicker({  enableRTL : true });
 </script> 
+
 {% endhighlight %}
 
 
@@ -340,7 +344,7 @@ Sets the TimePicker direction as right to left alignment.
 
 
 
-When enableStrictMode true it allows the value outside of the range also, otherwise it internally changed to the correct value.
+When the enableStrictMode is set as true it allows the value outside of the range and also indicate with red color border, otherwise it internally changed to the min or max range value based an input value.
 
 
 
@@ -372,6 +376,7 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 <script>
 //To set enableStrictMode API during initialization  
         $("#timepicker").ejTimePicker({  enableStrictMode: true });
+        
 </script> {% endhighlight %}
 
 
@@ -380,7 +385,7 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 
-### height `string`  `number`
+### height `string|number`
 {:#members:height}
 
 
@@ -423,6 +428,7 @@ Defines the height of the TimePicker textbox.
 // Set the height value during initialization.                  
         $("#timepicker").ejTimePicker({  height : "35" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -474,6 +480,7 @@ Sets the step value for increment an hour value through arrow keys or mouse scro
 // Set the hourInterval value during initialization.                    
         $("#timepicker").ejTimePicker({  hourInterval : 2 });
 </script> 
+
 {% endhighlight %}
 
 
@@ -492,7 +499,7 @@ Sets the step value for increment an hour value through arrow keys or mouse scro
 
 
 
-Specifies the HTML Attributes of the ejTimePicker
+It allows to define the characteristics of the TimePicker control. It will helps to extend the capability of an HTML element.
 
 
 
@@ -525,6 +532,7 @@ Specifies the HTML Attributes of the ejTimePicker
 // To Set HtmlAttributes value during initialization.                   
         $("#timepicker").ejTimePicker({htmlAttributes : {required:"required"});
 </script> 
+
 {% endhighlight %}
 
 
@@ -576,6 +584,7 @@ Sets the time interval between the two adjacent time values in the popup.
 // Set the interval value during initialization.                        
         $("#timepicker").ejTimePicker({  interval : 60 });
 </script> 
+
 {% endhighlight %}
 
 
@@ -594,7 +603,7 @@ Sets the time interval between the two adjacent time values in the popup.
 
 
 
-Defines the localization locale for TimePicker.
+Defines the localization info used by the TimePicker.
 
 
 
@@ -627,6 +636,7 @@ Defines the localization locale for TimePicker.
 // Set the locale value during initialization.                  
         $("#timepicker").ejTimePicker({  locale : "en-US" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -678,6 +688,7 @@ Sets the maximum time value to the TimePicker.
 // Set the maxTime value during initialization.                         
         $("#timepicker").ejTimePicker({  maxTime : "5:00 PM" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -729,6 +740,7 @@ Sets the minimum time value to the TimePicker.
 // Set the minTime value during initialization.                         
         $("#timepicker").ejTimePicker({  minTime : "8:00 AM" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -780,6 +792,7 @@ Sets the step value for increment the minute value through arrow keys or mouse s
 // Set the minute interval value during initialization.                         
         $("#timepicker").ejTimePicker({  minutesInterval : 5 });
 </script> 
+
 {% endhighlight %}
 
 
@@ -788,7 +801,7 @@ Sets the step value for increment the minute value through arrow keys or mouse s
 
 
 
-### popupHeight `string`  `number`
+### popupHeight `string|number`
 {:#members:popupheight}
 
 
@@ -831,6 +844,7 @@ Defines the height of the TimePicker popup.
 // Set the popupHeight value during initialization.                     
         $("#timepicker").ejTimePicker({  popupHeight : "250px" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -839,7 +853,7 @@ Defines the height of the TimePicker popup.
 
 
 
-### popupWidth `string`  `number`
+### popupWidth `string|number`
 {:#members:popupwidth}
 
 
@@ -900,7 +914,7 @@ Defines the width of the TimePicker popup.
 
 
 
-Indicates that the timepicker value can only be read.
+Toggles the readonly state of the TimePicker
 
 
 
@@ -933,6 +947,7 @@ Indicates that the timepicker value can only be read.
 // Set the readOnly value during initialization.                        
         $("#timepicker").ejTimePicker({  readOnly : false });
 </script> 
+
 {% endhighlight %}
 
 
@@ -984,6 +999,7 @@ Sets the step value for increment the seconds value through arrow keys or mouse 
 // Set the seconds interval value during initialization.                        
         $("#timepicker").ejTimePicker({ timeFormat : "h:mm:ss tt",secondsInterval : 5 });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1002,7 +1018,7 @@ Sets the step value for increment the seconds value through arrow keys or mouse 
 
 
 
-Shows or hides the arrow button from the TimePicker textbox.
+shows or hides the drop down button in TimePicker.
 
 
 
@@ -1035,6 +1051,7 @@ Shows or hides the arrow button from the TimePicker textbox.
 // Set the showPopupButton property during initialization.                      
         $("#timepicker").ejTimePicker({  showPopupButton : false });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1053,7 +1070,7 @@ Shows or hides the arrow button from the TimePicker textbox.
 
 
 
-Changes the sharped edges into rounded corner for the TimePicker textbox and popup.
+TimePicker is displayed with rounded corner when this property is set to true.
 
 
 
@@ -1086,6 +1103,7 @@ Changes the sharped edges into rounded corner for the TimePicker textbox and pop
 // Set the showRoundedCorner value during initialization.                       
         $("#timepicker").ejTimePicker({  showRoundedCorner : true });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1137,6 +1155,7 @@ Defines the time format displayed in the TimePicker.
 // Set the timeFormat during initialization.                    
         $("#timepicker").ejTimePicker({  timeFormat : "h:mm:ss tt" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1145,7 +1164,7 @@ Defines the time format displayed in the TimePicker.
 
 
 
-### value `string`  `DateObject`
+### value `string|object`
 {:#members:value}
 
 
@@ -1188,6 +1207,7 @@ Sets a specified time value on the TimePicker.
 // Set the time value during initialization.                    
         $("#timepicker").ejTimePicker({  value : "5:10 PM" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1196,7 +1216,7 @@ Sets a specified time value on the TimePicker.
 
 
 
-### width `string`  `number`
+### width `string|number`
 {:#members:width}
 
 
@@ -1239,6 +1259,7 @@ Defines the width of the TimePicker textbox.
 // Set the width value during initialization.                   
         $("#timepicker").ejTimePicker({  width : "120" });
 </script> 
+
 {% endhighlight %}
 
 
@@ -1264,7 +1285,7 @@ Defines the width of the TimePicker textbox.
 
 
 
-To disable the timepicker
+Allows you to disable the TimePicker. 
 
 
 
@@ -1282,7 +1303,9 @@ $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
 timeObj.disable(); // disable the timepicker
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -1292,7 +1315,9 @@ timeObj.disable(); // disable the timepicker
 $("#timepicker").ejTimePicker();
 // disable the timepicker
 $("#timepicker").ejTimePicker("disable");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1310,7 +1335,7 @@ $("#timepicker").ejTimePicker("disable");
 
 
 
-To enable the timepicker
+Allows you to enable the TimePicker. 
 
 
 
@@ -1328,7 +1353,9 @@ $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
 timeObj.enable(); // enables the timepicker
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -1338,7 +1365,9 @@ timeObj.enable(); // enables the timepicker
 $("#timepicker").ejTimePicker();
 // enables the timepicker
 $("#timepicker").ejTimePicker("enable");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1356,7 +1385,12 @@ $("#timepicker").ejTimePicker("enable");
 
 
 
-returns the current time value
+It returns the current time value.
+
+
+#### Returns:
+
+string
 
 
 
@@ -1374,7 +1408,9 @@ $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
 timeObj.getValue(); // returns the timepicker value
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -1384,11 +1420,55 @@ timeObj.getValue(); // returns the timepicker value
 $("#timepicker").ejTimePicker();
 // to get the time value
 $("#timepicker").ejTimePicker("getValue");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+### hide()
+{:#methods:hide}
 
 
 
 
+
+
+
+
+This method will hide the TimePicker control popup.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+$("#timepicker").ejTimePicker();
+// Create TimePicker instance
+var timeObj = $("#timepicker").data("ejTimePicker");
+timeObj.hide(); // hide the timepicker popup
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+$("#timepicker").ejTimePicker();
+// to hide the timepicker popup
+$("#timepicker").ejTimePicker("hide");
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1402,7 +1482,7 @@ $("#timepicker").ejTimePicker("getValue");
 
 
 
-updates the current system time to timepicker
+Updates the current system time in TimePicker.
 
 
 
@@ -1420,7 +1500,9 @@ $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
 timeObj.setCurrentTime(); // updates the current system
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -1430,9 +1512,54 @@ timeObj.setCurrentTime(); // updates the current system
 $("#timepicker").ejTimePicker();
 // updates the current system
 $("#timepicker").ejTimePicker("setCurrentTime");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
+### show()
+{:#methods:show}
+
+
+
+
+
+
+
+
+This method will show the TimePicker control popup.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+$("#timepicker").ejTimePicker();
+// Create TimePicker instance
+var timeObj = $("#timepicker").data("ejTimePicker");
+timeObj.show(); // show the timepicker popup
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+$("#timepicker").ejTimePicker();
+// to show the timepicker popup
+$("#timepicker").ejTimePicker("show");
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1457,6 +1584,7 @@ $("#timepicker").ejTimePicker("setCurrentTime");
 
 Fires when the time value changed in the TimePicker.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1467,49 +1595,38 @@ Fires when the time value changed in the TimePicker.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from timepicker
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previously selected time value</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified time value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -1545,7 +1662,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-Fires when the TimePicker popup before opened .
+Fires when the TimePicker popup before opened.
 
 <table class="params">
 <thead>
@@ -1557,32 +1674,32 @@ Fires when the TimePicker popup before opened .
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the previous value</td>
+<td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -1626,6 +1743,7 @@ $("#timepicker").ejTimePicker({
 
 Fires when the time value changed in the TimePicker.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1636,49 +1754,44 @@ Fires when the time value changed in the TimePicker.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from timepicker
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+isInteraction</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the value changed by user interaction otherwise returns false</td>
+</tr>
+<tr>
+<td class="name">
+prevTime</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previously selected time value</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified time value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -1727,32 +1840,32 @@ Fires when the TimePicker popup closed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the previous value</td>
+<td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -1806,20 +1919,20 @@ Fires when create TimePicker successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1872,20 +1985,20 @@ Fires when the TimePicker is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1928,6 +2041,7 @@ $("#timepicker").ejTimePicker({
 
 Fires when the timepicker control gets focus.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -1938,49 +2052,38 @@ Fires when the timepicker control gets focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from timepicker
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previously selected time value</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current time value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -2018,6 +2121,7 @@ $("#timepicker").ejTimePicker({
 
 Fires when the timepicker control get lost focus.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -2028,49 +2132,38 @@ Fires when the timepicker control get lost focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from timepicker
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previously selected time value</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current time value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -2118,32 +2211,32 @@ Fires when the TimePicker popup opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previous value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -2184,7 +2277,8 @@ $("#timepicker").ejTimePicker({
 
 
 
-Fires when the value is selected from the timepicker dropdownlist.
+Fires when the value is selected from the TimePicker dropdownlist.
+
 
 <table class="params">
 <thead>
@@ -2196,49 +2290,38 @@ Fires when the value is selected from the timepicker dropdownlist.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from timepicker
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previously selected time value</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the selected time value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 

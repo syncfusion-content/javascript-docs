@@ -790,7 +790,7 @@ Template design that applies on the Schedule appointments. All the field names t
 
 {% endhighlight %}
 
-### cssClass 'string'
+### cssClass `string`
 {:#members:cssclass  }
 
 #### Default Value
@@ -1299,7 +1299,7 @@ Contains all the default context menu options that are applicable for both Sched
 
 > In the above code example, menuItemClick event is defined that triggers when any of the menu options are selected. Here, the condition is checked as, when the id of selected menu item option contains custom1, then the target appointment’s text and its color gets modified.
 
-### currentDate `date`
+### currentDate `object`
 {:#members:currentdate}
 
 Sets current date of the Schedule. The Schedule displays initially with the date that is provided here.
@@ -1332,16 +1332,45 @@ Sets current date of the Schedule. The Schedule displays initially with the date
 
 {% endhighlight %}
 
-### currentView `string/enum`
+### currentView `string|enum`
 {:#members:currentview}
 
-Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and customview - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView are as follows,
+Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and customview - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView(ej.Schedule.CurrentView) are as follows,
 
-* ej.Schedule.CurrentView.Day
-* ej.Schedule.CurrentView.Week
-* ej.Schedule.CurrentView.Workweek
-* ej.Schedule.CurrentView.Month
-* ej.Schedule.CurrentView.CustomView
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Day</td>
+            <td class="description">Set currentView as Day to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Week</td>
+            <td class="description">Set currentView as Week to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Workweek</td>
+            <td class="description">Set currentView as Workweek to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Month</td>
+            <td class="description">Set currentView as Month to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Agenda</td>
+            <td class="description">Set currentView as Agenda to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">CustomView</td>
+            <td class="description">Set currentView as CustomView to Scheduler</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value
 
@@ -1968,7 +1997,7 @@ Sets the specific culture to the Schedule.
 
 > To set any culture for Schedule, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Schedule, refer to the **globalize.culture.fr-FR.min.js** script file. Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.Schedule.Locale[“fr-FR”] = { }; under script section.
 
-### maxDate `date`
+### maxDate `object`
 {:#members:maxdate}
 
 Sets the maximum date limit to display on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
@@ -2004,7 +2033,7 @@ Sets the maximum date limit to display on the Schedule. Setting maxDate with spe
 
 {% endhighlight %}
 
-### minDate `date`
+### minDate `object`
 {:#members:mindate}
 
 Sets the minimum date limit to display on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
@@ -2040,13 +2069,29 @@ Sets the minimum date limit to display on the Schedule. Setting minDate with spe
 
 {% endhighlight %}
 
-### orientation `string/enum`
+### orientation `string|enum`
 {:#members:orientation}
 
-Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values as metioned below,
+Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values. The enum values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
 
-* ej.Schedule.Orientation.Vertical
-* ej.Schedule.Orientation.Horizontal
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Vertical</td>
+            <td class="description">Set orientation as vertical to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Horizontal</td>
+            <td class="description">Set orientation as horizontal to Scheduler</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value
 
@@ -2411,7 +2456,7 @@ Defines the specific start and end dates to be rendered in the Schedule control.
 
 * null
 
-### renderDates.start `date`
+### renderDates.start `object`
 {:#members:renderdates-start}
 
 Sets the start of custom date range to be rendered in the Schedule.
@@ -2420,7 +2465,7 @@ Sets the start of custom date range to be rendered in the Schedule.
 
 * null
 
-### renderDates.end `date`
+### renderDates.end `object`
 {:#members:renderdates-end}
 
 Sets the end limit of the custom date range.
@@ -3164,13 +3209,29 @@ Sets the start hour time range to be displayed on the Schedule.
 
 {% endhighlight %}
 
-### timeMode `string/enum`
+### timeMode `string|enum`
 {:#members:timemode}
 
-Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value("12" or "24") or the below mentioned enum values.
+Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value("12" or "24") or the below mentioned enum values. The enum values that are accepted by timeMode(ej.Schedule.TimeMode) are as follows,
 
-* ej.Schedule.TimeMode.Hour12
-* ej.Schedule.TimeMode.Hour24
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Hour12</td>
+            <td class="description">Set timeMode as 12 hours to Scheduler</td>
+        </tr>
+        <tr>
+            <td class="name">Hour24</td>
+            <td class="description">Set timeMode as 24 hours to Scheduler</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value
 
@@ -3671,7 +3732,7 @@ To customize the tooltip display based on your requirements.
 
 {% endhighlight %}
 
-### timeScale 'object'
+### timeScale `object`
 {:#members:timescale}
 
 Holds all the options related to the time scale of Scheduler. The timeslots either major or minor slots can be customized with this property.
@@ -3716,7 +3777,7 @@ When set to true, displays the timescale on the Scheduler.
 
 {% endhighlight %}
 
-### timeScale.minorSlotCount `int`
+### timeScale.minorSlotCount `number`
 
 {:#members:timescale-minorslotcount }
 
@@ -3726,7 +3787,7 @@ When set with some specific value, defines the number of time divisions split pe
 
 * 2
 
-### timeScale.majorSlot `int`
+### timeScale.majorSlot `number`
 
 {:#members:timescale-majorslot }
 
@@ -4686,8 +4747,8 @@ Triggers before the action begin of the Schedule.
                     </thead>
                 <tbody>
                     <tr>
-                        <td class="name">argument.data.currentDate</td>
-                        <td class="type">date</td>
+                        <td class="name">currentDate</td>
+                        <td class="type">object</td>
                         <td class="description">Returns the current date value.</td>
                     </tr>
                     <tr>
@@ -4696,13 +4757,13 @@ Triggers before the action begin of the Schedule.
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.data.currentView</td>
+                        <td class="name">currentView</td>
                         <td class="type">string</td>
                         <td class="description">Returns the current view value.</td>
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -4749,7 +4810,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -4796,7 +4857,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -4841,8 +4902,8 @@ Triggers before the action begin of the Schedule.
                             <td class="type">object</td>                
                             <td class="description">Returns the save appointment value.</td>
                         </tr>                                                                                                                                  <tr>
-                            <td class="name">model</td>                                                                                                                                                                                                               <td class="type">object</td>
-                            <td class="description">Returns the Schedule model.</td>
+                            <td class="name">model</td>
+                            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>                                                                                                                                                                                      <td class="description">Returns the Schedule model.</td>
                         </tr>
                         <tr>
                             <td class="name">requestType</td>
@@ -4883,7 +4944,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -4925,7 +4986,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -4967,7 +5028,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -5009,7 +5070,7 @@ Triggers before the action begin of the Schedule.
                     </tr>
                     <tr>
                         <td class="name">model</td>
-                        <td class="type">object</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
@@ -5086,7 +5147,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5128,7 +5189,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5170,7 +5231,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5212,7 +5273,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5254,7 +5315,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5296,7 +5357,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5338,7 +5399,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5380,7 +5441,7 @@ Triggers after the completion of action in the Schedule.
                 </tr>
                 <tr>
                     <td class="name">model</td>
-                    <td class="type">object</td>
+                    <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                     <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
@@ -5434,27 +5495,27 @@ Triggers after the appointment is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of appointmentClick event.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the clicked appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -5517,22 +5578,22 @@ Triggers before the appointment is being removed from the Scheduler.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the deleted appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
@@ -5607,22 +5668,22 @@ Triggers before the edited appointment is being saved.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the edited appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
@@ -5696,27 +5757,27 @@ Triggers after the appointment is hovered.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of appointmentHover event.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the hovered appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -5777,22 +5838,22 @@ Triggers before the appointment gets saved.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
@@ -5832,72 +5893,72 @@ Triggers before the appointment window opens.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.endTime</td>
+            <td class="name">endTime</td>
             <td class="type">object</td>
             <td class="description">Returns the end time of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.originalEventType</td>
+            <td class="name">originalEventType</td>
             <td class="type">string</td>
             <td class="description">Returns the action name that triggers window open.</td>
         </tr>
         <tr>
-            <td class="name">argument.startTime</td>
+            <td class="name">startTime</td>
             <td class="type">object</td>
             <td class="description">Returns the start time of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of edit appointmentWindowOpen event while selecting the edit appointment or edit series option.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the edit appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.edit</td>
+            <td class="name">edit</td>
             <td class="type">boolean</td>
             <td class="description">Returns the edit occurrence option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -5939,47 +6000,47 @@ Triggers before the context menu opens.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of beforeContextMenuOpen event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.cellIndex</td>
+            <td class="name">cellIndex</td>
             <td class="type">number</td>
             <td class="description">Returns the current cell index value.</td>
         </tr>
         <tr>
-            <td class="name">argument.currentDate</td>
-            <td class="type">date</td>
+            <td class="name">currentDate</td>
+            <td class="type">object</td>
             <td class="description">Returns the current date value.</td>
         </tr>
         <tr>
-            <td class="name">argument.resources</td>
+            <td class="name">resources</td>
             <td class="type">object</td>
             <td class="description">Returns the current resource details, when multiple resources are present, otherwise returns null.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the current appointment details while opening the menu from appointment.</td>
         </tr>
         <tr>
-            <td class="name">argument.events</td>
+            <td class="name">events</td>
             <td class="type">object</td>
             <td class="description">Returns the object of before opening menu target.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>   
@@ -6019,37 +6080,37 @@ Triggers after the cell is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of cellClick event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.endTime</td>
+            <td class="name">endTime</td>
             <td class="type">object</td>
             <td class="description">Returns the end time of the clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.startTime</td>
+            <td class="name">startTime</td>
             <td class="type">object</td>
             <td class="description">Returns the start time of the clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6091,37 +6152,37 @@ Triggers after the cell is clicked twice.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of cellDoubleClick event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.endTime</td>
+            <td class="name">endTime</td>
             <td class="type">object</td>
             <td class="description">Returns the end time of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.startTime</td>
+            <td class="name">startTime</td>
             <td class="type">object</td>
             <td class="description">Returns the start time of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the double clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6161,37 +6222,37 @@ Triggers after the cell is hovered.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of cellHover event.</td>
         </tr>   
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.cellIndex</td>
+            <td class="name">cellIndex</td>
             <td class="type">object</td>
             <td class="description">Returns the index of the hovered cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.currentDate</td>
+            <td class="name">currentDate</td>
             <td class="type">object</td>
             <td class="description">Returns the current date of the hovered cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the clicked cell.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6230,27 +6291,27 @@ Triggers while the appointment is being dragged over the workcells.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of dragOver event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the drag over appointment.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6312,27 +6373,27 @@ Triggers when the appointment dragging begins.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of dargStart event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the dragging appointment.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6395,27 +6456,27 @@ Triggers when the appointment is dropped.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of dragDrop event.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the dropped appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6490,27 +6551,27 @@ Triggers after the context menu is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of menuItemClick event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.events</td>
+            <td class="name">events</td>
             <td class="type">object</td>
             <td class="description">Returns the object of menu item event.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6564,37 +6625,37 @@ Triggers after the Schedule view or date is navigated.
                 </thead>
                 <tbody>
                     <tr>    
-                        <td class="name">argument.currentDate</td>
-                        <td class="type">date</td>
+                        <td class="name">currentDate</td>
+                        <td class="type">object</td>
                         <td class="description">Returns the current date object.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.cancel</td>
+                        <td class="name">cancel</td>
                         <td class="type">boolean</td>
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.model</td>
-                        <td class="type">object</td>
+                        <td class="name">model</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.currentView</td>
+                        <td class="name">currentView</td>
                         <td class="type">string</td>
                         <td class="description">Returns the current view value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.previousView</td>
+                        <td class="name">previousView</td>
                         <td class="type">string</td>
                         <td class="description">Returns the previous view value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.target</td>
+                        <td class="name">target</td>
                         <td class="type">object</td>
                         <td class="description">Returns the target of the action.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.type</td>
+                        <td class="name">type</td>
                         <td class="type">string</td>
                         <td class="description">Returns the name of the event.</td>
                     </tr>
@@ -6616,32 +6677,32 @@ Triggers after the Schedule view or date is navigated.
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="name">argument.cancel</td>
+                        <td class="name">cancel</td>
                         <td class="type">boolean</td>
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.model</td>
-                        <td class="type">object</td>
+                        <td class="name">model</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.currentDate</td>
+                        <td class="name">currentDate</td>
                         <td class="type">object</td>
                         <td class="description">Returns the new date of the Schedule.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.previousDate</td>
+                        <td class="name">previousDate</td>
                         <td class="type">object</td>
                         <td class="description">Returns the previous date of the Schedule.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.target</td>
+                        <td class="name">target</td>
                         <td class="type">object</td>
                         <td class="description">Returns the target of the action.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.type</td>
+                        <td class="name">type</td>
                         <td class="type">string</td>
                         <td class="description">Returns the name of the event.</td>
                     </tr>
@@ -6663,32 +6724,32 @@ Triggers after the Schedule view or date is navigated.
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="name">argument.cancel</td>
+                        <td class="name">cancel</td>
                         <td class="type">boolean</td>
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.model</td>
-                        <td class="type">object</td>
+                        <td class="name">model</td>
+                        <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
                         <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.currentDate</td>
+                        <td class="name">currentDate</td>
                         <td class="type">object</td>
                         <td class="description">Returns the new date of the Schedule.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.previousDate</td>
+                        <td class="name">previousDate</td>
                         <td class="type">object</td>
                         <td class="description">Returns the previous date of the Schedule.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.target</td>
+                        <td class="name">target</td>
                         <td class="type">object</td>
                         <td class="description">Returns the target of the action.</td>
                     </tr>
                     <tr>
-                        <td class="name">argument.type</td>
+                        <td class="name">type</td>
                         <td class="type">string</td>
                         <td class="description">Returns the name of the event.</td> 
                     </tr>
@@ -6730,22 +6791,22 @@ Triggers when the reminder is raised for an appointment.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
         <tr>
-            <td class="name">argument.reminderAppointment</td>
+            <td class="name">reminderAppointment</td>
             <td class="type">object</td>
             <td class="description">Returns the appointment object for which the reminder is raised.</td>
         </tr>
@@ -6784,27 +6845,27 @@ Triggers while resizing the appointment.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of resizing event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.element</td>
+            <td class="name">element</td>
             <td class="type">object</td>
             <td class="description">Returns the resize element value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6865,27 +6926,27 @@ Triggers when the appointment resizing begins.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of resizeStart event.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.element</td>
+            <td class="name">element</td>
             <td class="type">object</td>
             <td class="description">Returns the resize element value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -6946,32 +7007,32 @@ Triggers when appointment resizing stops.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object of resizeStop event.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the resized appointment value.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.target</td>
+            <td class="name">target</td>
             <td class="type">object</td>
             <td class="description">Returns the target of the resized appointment.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -7033,27 +7094,27 @@ Triggers when the overflow button is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object consisting of starttime, endtime and resource value of the underlying cell on which the clicked overflow button is present.  </td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.events</td>
+            <td class="name">events</td>
             <td class="type">object</td>
             <td class="description">Returns the object of menu item event.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -7090,27 +7151,27 @@ Triggers while mouse hovering on the overflow button.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.object</td>
+            <td class="name">object</td>
             <td class="type">object</td>
             <td class="description">Returns the object consisting of starttime, endtime and resource value of the underlying cell on which the overflow button is currently hovered.  </td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.events</td>
+            <td class="name">events</td>
             <td class="type">object</td>
             <td class="description">Returns the object of menu item event.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -7148,22 +7209,22 @@ Triggers when any of the keyboard keys are pressed.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
          <tr>
-            <td class="name">argument.events</td>
+            <td class="name">events</td>
             <td class="type">object</td>
             <td class="description">Returns the object of menu item event.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
         </tr>
@@ -7203,22 +7264,22 @@ Triggers after the appointment is saved.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
@@ -7258,22 +7319,22 @@ Triggers after the appointment is edited.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the edited appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
@@ -7346,22 +7407,22 @@ Triggers after the appointment is deleted.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.cancel</td>
+            <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">argument.appointment</td>
+            <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the deleted appointment object.</td>
         </tr>
         <tr>
-            <td class="name">argument.model</td>
-            <td class="type">object</td>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
-            <td class="name">argument.type</td>
+            <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
         </tr>

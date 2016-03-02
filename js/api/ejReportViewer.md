@@ -14,8 +14,7 @@ The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC file
 
 $(element).ejReportViewer<span class="signature">()</span>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -27,8 +26,7 @@ Example
 
 {% endhighlight %}
 
-Requires
-{:.require}
+#### Requires
 
 * module:jQuery
 
@@ -81,18 +79,16 @@ Requires
 
 ## Members
 
-### dataSources<span class="type-signature type array">array</span>
+### dataSources `Array`
 {:#members:datasources}
 
 Gets or sets the list of data sources for the RDLC report.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * []
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -109,18 +105,16 @@ Example
 
 {% endhighlight %}
 
-### dataSources.name<span class="type-signature type string">string</span>
+### dataSources.name `String`
 {:#members:datasources-name}
 
 Gets or sets the name of the data source.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -137,18 +131,16 @@ Example
 
 {% endhighlight %}
 
-### dataSources.values<span class="type-signature type object">object</span>
+### dataSources.values `Object`
 {:#members:datasources-values}
 
 Gets or sets the values of data source.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * null
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -165,48 +157,72 @@ Example
 
 {% endhighlight %}
 
-### exportSettings<span class="type-signature type object">object</span>
-{:#members:exportsettings}
+### enablePageCache `Boolean`
+{:#members:enablePageCache}
 
-Specifies the export settings.
+Enables or disables the page cache of report.
 
-### exportSettings.excelFormat<span class="type-signature type enum">enum</span>
-{:#members:exportsettings-excelformat}
+#### Default Value
 
-Specifies the excel export format.
+* false
 
-Default Value:
-{:.param}
-
-* ej.ReportViewer.ExcelFormats.Excel97to2003
-
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
 <div id="reportviewer"></div> 
 <script>        
-    $("#reportviewer").ejReportViewer(
-        {
-            exportSettings:{ excelFormat: ej.ReportViewer.ExcelFormats.Excel97to2003}
-        });            
+    $("#reportviewer").ejReportViewer({ enablePageCache: false });            
 </script>
 
 {% endhighlight %}
 
-### exportSettings.exportOptions<span class="type-signature type enum">enum</span>
+### exportSettings `Object`
+{:#members:exportsettings}
+
+Specifies the export settings.
+
+### exportSettings.exportOptions `enum`
 {:#members:exportsettings-exportoptions}
 
 Specifies the export formats.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">All</td>
+<td class="description">Specifies the All property in ExportOptions to get all availble options.</td>
+</tr>
+<tr>
+<td class="name">Pdf</td>
+<td class="description">Specifies the Pdf property in ExportOptions to get Pdf option.</td>
+</tr>
+<tr>
+<td class="name">Word</td>
+<td class="description">Specifies the Word property in ExportOptions to get Word option.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the Excel property in ExportOptions to get Excel option.</td>
+</tr>
+<tr>
+<td class="name">Html</td>
+<td class="description">Specifies the Html property in ExportOptions to get Html option.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * ej.ReportViewer.ExportOptions.All
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -220,19 +236,161 @@ Example
 
 {% endhighlight %}
 
+### exportSettings.excelFormat `enum`
+{:#members:exportsettings-excelformat}
 
-### exportSettings.wordFormat<span class="type-signature type enum">enum</span>
+Specifies the excel export format.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Excel97to2003</td>
+<td class="description">Specifies the Excel97to2003 property in ExcelFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Excel2007</td>
+<td class="description">Specifies the Excel2007 property in ExcelFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Excel2010</td>
+<td class="description">Specifies the Excel2010 property in ExcelFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Excel2013</td>
+<td class="description">Specifies the Excel2013 property in ExcelFormats to get specified version of exported format.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.ReportViewer.ExcelFormats.Excel97to2003
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer(
+        {
+            exportSettings:{ excelFormat: ej.ReportViewer.ExcelFormats.Excel97to2003}
+        });            
+</script>
+
+{% endhighlight %}
+
+### exportSettings.wordFormat `enum`
 {:#members:exportsettings-wordformat}
 
 Specifies the word export format.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Doc</td>
+<td class="description">Specifies the Doc property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Dot</td>
+<td class="description">Specifies the Dot property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Docx</td>
+<td class="description">Specifies the Docx property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2007</td>
+<td class="description">Specifies the Word2007 property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2010</td>
+<td class="description">Specifies the Word2010 property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2013</td>
+<td class="description">Specifies the Word2013 property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2007Dotx</td>
+<td class="description">Specifies the Word2007Dotx property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2010Dotx</td>
+<td class="description">Specifies the Word2010Dotx property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2013Dotx</td>
+<td class="description">Specifies the Word2013Dotx property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2007Docm</td>
+<td class="description">Specifies the Word2007Docm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2010Docm</td>
+<td class="description">Specifies the Word2010Docm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2013Docm</td>
+<td class="description">Specifies the Word2013Docm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2007Dotm</td>
+<td class="description">Specifies the Word2007Dotm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2010Dotm</td>
+<td class="description">Specifies the Word2010Dotm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Word2013Dotm</td>
+<td class="description">Specifies the Word2013Dotm property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Rtf</td>
+<td class="description">Specifies the Rtf property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Txt</td>
+<td class="description">Specifies the Txt property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">EPub</td>
+<td class="description">Specifies the EPub property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Html</td>
+<td class="description">Specifies the Html property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Xml</td>
+<td class="description">Specifies the Xml property in WordFormats to get specified version of exported format.</td>
+</tr>
+<tr>
+<td class="name">Automatic</td>
+<td class="description">Specifies the Automatic property in WordFormats to get specified version of exported format.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * ej.ReportViewer.WordFormats.Doc
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -246,18 +404,36 @@ Example
 
 {% endhighlight %}
 
-### locale<span class="type-signature type string">string</span>
+### isResponsive `Boolean`
+{:#members:isResponsive}
+
+When set to true, adapts the report layout to fit the screen size of devices on which it renders.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ isResponsive: true });            
+</script>
+
+{% endhighlight %}
+
+### locale `String`
 {:#members:locale}
 
 Specifies the locale for report viewer.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * "en-US"
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -271,23 +447,40 @@ Example
 
 {% endhighlight %}
 
-### pageSettings<span class="type-signature type object">object</span>
+### pageSettings `Object`
 {:#members:pagesettings}
 
 Specifies the page settings.
 
-### pageSettings.orientation<span class="type-signature type enum">enum</span>
+### pageSettings.orientation `enum`
 {:#members:pagesettings-orientation}
 
 Specifies the print layout orientation.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Landscape</td>
+<td class="description">Specifies the Landscape property in pageSettings.orientation to get specified layout.</td>
+</tr>
+<tr>
+<td class="name">portrait</td>
+<td class="description">Specifies the portrait property in pageSettings.orientation to get specified layout.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * null
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -301,18 +494,71 @@ Example
 
 {% endhighlight %}
 
-### pageSettings.paperSize<span class="type-signature type enum">enum</span>
+### pageSettings.paperSize `enum`
 {:#members:pagesettings-papersize}
 
 Specifies the paper size of print layout.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">A3</td>
+<td class="description">Specifies the A3 as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">portrait</td>
+<td class="description">Specifies the A4 as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">B4(JIS)</td>
+<td class="description">Specifies the B4(JIS) as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">B5(JIS)</td>
+<td class="description">Specifies the B5(JIS) as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Envelope #10</td>
+<td class="description">Specifies the Envelope #10 as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Envelope Monarch</td>
+<td class="description">Specifies the Envelope as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Executive</td>
+<td class="description">Specifies the Executive as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Legal</td>
+<td class="description">Specifies the Legal as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Letter</td>
+<td class="description">Specifies the Letter as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Tabloid</td>
+<td class="description">Specifies the Tabloid as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+<tr>
+<td class="name">Custom</td>
+<td class="description">Specifies the Custom as value in pageSettings.paperSize to get specified size.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * null
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -326,19 +572,16 @@ Example
 
 {% endhighlight %}
 
-
-### parameters<span class="type-signature type array">array</span>
+### parameters `Array`
 {:#members:parameters}
 
 Gets or sets the list of parameters associated with the report.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * []
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -357,18 +600,16 @@ Example
 
 {% endhighlight %}
 
-### parameters.labels<span class="type-signature type array">array</span>
+### parameters.labels `Array`
 {:#members:parameters-labels}
 
 Gets or sets the parameter labels.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * null
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -387,18 +628,16 @@ Example
 
 {% endhighlight %}
 
-### parameters.name<span class="type-signature type string">string</span>
+### parameters.name `String`
 {:#members:parameters-name}
 
 Gets or sets the name of the parameter.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -417,18 +656,16 @@ Example
 
 {% endhighlight %}
 
-### parameters.nullable<span class="type-signature type boolean">boolean</span>
+### parameters.nullable `Boolean`
 {:#members:parameters-nullable}
 
 Gets or sets whether the parameter allows nullable value or not.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * false
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -447,18 +684,16 @@ Example
 
 {% endhighlight %}
 
-### parameters.prompt<span class="type-signature type string">string</span>
+### parameters.prompt `String`
 {:#members:parameters-prompt}
 
 Gets or sets the prompt message associated with the specified parameter.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -477,18 +712,16 @@ Example
 
 {% endhighlight %}
 
-### parameters.values<span class="type-signature type array">array</span>
+### parameters.values `Array`
 {:#members:parameters-values}
 
 Gets or sets the parameter values.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * null
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -507,18 +740,16 @@ Example
 
 {% endhighlight %}
 
-### printMode<span class="type-signature type boolean">boolean</span>
+### printMode `Boolean`
 {:#members:printmode}
 
 Enables and disables the print mode.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * false
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -532,18 +763,78 @@ Example
 
 {% endhighlight %}
 
-### processingMode<span class="type-signature type enum">enum</span>
+### printOptions `enum`
+{:#members:printOptions}
+
+Specifies the print option of the report.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Default</td>
+<td class="description">Specifies the Default property in printOptions.</td>
+</tr>
+<tr>
+<td class="name">NewTab</td>
+<td class="description">Specifies the NewTab property in printOptions.</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">Specifies the None property in printOptions.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.ReportViewer.PrintOptions.Default
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOptions.Default });            
+</script>
+
+{% endhighlight %}
+
+### processingMode `enum`
 {:#members:processingmode}
 
 Specifies the processing mode of the report.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Remote</td>
+<td class="description">Specifies the Remote property in processingMode.</td>
+</tr>
+<tr>
+<td class="name">Local</td>
+<td class="description">Specifies the Local property in processingMode.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * ej.ReportViewer.ProcessingMode.Remote
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -554,18 +845,39 @@ Example
 
 {% endhighlight %}
 
-### renderMode<span class="type-signature type enum">enum</span>
+### renderMode `enum`
 {:#members:rendermode}
 
 Specifies the render layout.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Default</td>
+<td class="description">Specifies the Default property in RenderMode to get default output.</td>
+</tr>
+<tr>
+<td class="name">Mobile</td>
+<td class="description">Specifies the Mobile property in RenderMode to get specified output.</td>
+</tr>
+<tr>
+<td class="name">Desktop</td>
+<td class="description">Specifies the Desktop property in RenderMode to get specified output.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * ej.ReportViewer.RenderMode.Default
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -576,18 +888,16 @@ Example
 
 {% endhighlight %}
 
-### reportPath<span class="type-signature type string">string</span>
+### reportPath `String`
 {:#members:reportpath}
 
 Gets or sets the path of the report file.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -598,67 +908,61 @@ Example
 
 {% endhighlight %}
 
-### reportServerUrl<span class="type-signature type string">string</span>
+### reportServerUrl `String`
 {:#members:reportserverurl}
 
 Gets or sets the reports server url.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
 <div id="reportviewer"></div> 
 <script>
-    $("#reportviewer").ejReportViewer({ reportServerUrl:  "http://172.16.7.164/ReportServer/SampleReport.rdl" });            
+    $("#reportviewer").ejReportViewer({ reportServerUrl: "http://mvc.syncfusion.com/reportserver" });            
 </script>
 
 {% endhighlight %}
 
-### reportServiceUrl<span class="type-signature type string">string</span>
+### reportServiceUrl `String`
 {:#members:reportserviceurl}
 
 Specifies the report Web API service url.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
 <div id="reportviewer"></div> 
 <script>
-    $("#reportviewer").ejReportViewer({ reportServiceUrl:  "../api/RDLReport" });            
+    $("#reportviewer").ejReportViewer({ reportServiceUrl: "../api/RDLReport" });            
 </script>
 
 {% endhighlight %}
 
-### toolbarSettings<span class="type-signature type object">object</span>
+### toolbarSettings `Object`
 {:#members:toolbarsettings}
 
 Specifies the toolbar settings.
 
-### toolbarSettings.click<span class="type-signature type string">string</span>
+### toolbarSettings.click `String`
 {:#members:toolbarsettings-click}
 
 Fires when user click on toolbar item in the toolbar.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -672,18 +976,63 @@ Example
 
 {% endhighlight %}
 
-### toolbarSettings.items<span class="type-signature type enum">enum</span>
+### toolbarSettings.items `enum`
 {:#members:toolbarsettings-items}
 
 Specifies the toolbar items.
 
-Default Value:
-{:.param}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Print</td>
+<td class="description">Specifies the Print as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">Refresh</td>
+<td class="description">Specifies the Refresh as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">Zoom</td>
+<td class="description">Specifies the Zoom as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">FittoPage</td>
+<td class="description">Specifies the FittoPage as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">Export</td>
+<td class="description">Specifies the Export as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">PageNavigation</td>
+<td class="description">Specifies the PageNavigation as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">Parameters</td>
+<td class="description">Specifies the Parameters as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">PrintLayout</td>
+<td class="description">Specifies the PrintLayout as value in ToolbarItems to get specified item.</td>
+</tr>
+<tr>
+<td class="name">PageSetup</td>
+<td class="description">Specifies the PageSetup as value in ToolbarItems to get specified item.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
 
 * ej.ReportViewer.ToolbarItems.All
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -697,18 +1046,16 @@ Example
 
 {% endhighlight %}
 
-### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showToolbar `Boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Shows or hides the toolbar.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * true
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -722,18 +1069,16 @@ Example
 
 {% endhighlight %}
 
-### toolbarSettings.showTooltip<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showTooltip `Boolean`
 {:#members:toolbarsettings-showtooltip}
 
 Shows or hides the tooltip of toolbar items.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * true
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -747,18 +1092,16 @@ Example
 
 {% endhighlight %}
 
-### toolbarSettings.templateId<span class="type-signature type string">string</span>
+### toolbarSettings.templateId `String`
 {:#members:toolbarsettings-templateid}
 
 Specifies the toolbar template ID.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * empty
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -772,18 +1115,16 @@ Example
 
 {% endhighlight %}
 
-### zoomFactor<span class="type-signature type number">number</span>
+### zoomFactor `Number`
 {:#members:zoomfactor}
 
 Gets or sets the zoom factor for report viewer.
 
-Default Value:
-{:.param}
+#### Default Value
 
 * 1
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -794,81 +1135,14 @@ Example
 
 {% endhighlight %}
 
-### isResponsive<span class="type-signature type boolean">boolean</span>
-{:#members:isResponsive}
-
-Enables or disables the responsive of report viewer when window resized.
-
-Default Value:
-{:.param}
-
-* true
-
-Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="reportviewer"></div> 
-<script>        
-    $("#reportviewer").ejReportViewer({ isResponsive: true });            
-</script>
-
-{% endhighlight %}
-
-### enablePageCache<span class="type-signature type boolean">boolean</span>
-{:#members:enablePageCache}
-
-Enables or disables the page cache of report.
-
-Default Value:
-{:.param}
-
-* false
-
-Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="reportviewer"></div> 
-<script>        
-    $("#reportviewer").ejReportViewer({ enablePageCache: false });            
-</script>
-
-{% endhighlight %}
-
-### printOption<span class="type-signature type enum">enum</span>
-{:#members:printOption}
-
-Specifies the print option of the report.
-
-Default Value:
-{:.param}
-
-* ej.ReportViewer.PrintOption.Default
-
-Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="reportviewer"></div> 
-<script>        
-    $("#reportviewer").ejReportViewer({ printOption: ej.ReportViewer.PrintOption.Default });            
-</script>
-
-{% endhighlight %}
-
 ## Methods
 
-### exportReport<span class="signature">()</span>
+### exportReport()
 {:#methods:exportreport}
 
 Export the report to the specified format.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -880,13 +1154,12 @@ Example
 
 {% endhighlight %}
 
-### fitToPage<span class="signature">()</span>
+### fitToPage()
 {:#methods:fittopage}
 
 Fit the report page to the container.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -898,13 +1171,12 @@ Example
 
 {% endhighlight %}
 
-### fitToPageHeight<span class="signature">()</span>
+### fitToPageHeight()
 {:#methods:fittopageheight}
 
 Fit the report page height to the container.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -916,13 +1188,12 @@ Example
 
 {% endhighlight %}
 
-### fitToPageWidth<span class="signature">()</span>
+### fitToPageWidth()
 {:#methods:fittopagewidth}
 
 Fit the report page width to the container.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -934,13 +1205,12 @@ Example
 
 {% endhighlight %}
 
-### getDataSetNames<span class="signature">()</span>
+### getDataSetNames()
 {:#methods:getdatasetnames}
 
 Get the available datasets name of the rdlc report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -952,13 +1222,12 @@ Example
 
 {% endhighlight %}
 
-### getParameters<span class="signature">()</span>
+### getParameters()
 {:#methods:getparameters}
 
 Get the available parameters of the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -970,13 +1239,12 @@ Example
 
 {% endhighlight %}
 
-### gotoFirstPage<span class="signature">()</span>
+### gotoFirstPage()
 {:#methods:gotofirstpage}
 
 Navigate to first page of report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -988,13 +1256,12 @@ Example
 
 {% endhighlight %}
 
-### gotoLastPage<span class="signature">()</span>
+### gotoLastPage()
 {:#methods:gotolastpage}
 
 Navigate to last page of the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1006,13 +1273,12 @@ Example
 
 {% endhighlight %}
 
-### gotoNextPage<span class="signature">()</span>
+### gotoNextPage()
 {:#methods:gotonextpage}
 
 Navigate to next page from the current page.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1024,14 +1290,12 @@ Example
 
 {% endhighlight %}
 
-
-### gotoPageIndex<span class="signature">()</span>
+### gotoPageIndex()
 {:#methods:gotopageindex}
 
 Go to specific page index of the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1043,13 +1307,12 @@ Example
 
 {% endhighlight %}
 
-### gotoPreviousPage<span class="signature">()</span>
+### gotoPreviousPage()
 {:#methods:gotopreviouspage}
 
 Navigate to previous page from the current page.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1061,13 +1324,12 @@ Example
 
 {% endhighlight %}
 
-### print<span class="signature">()</span>
+### print()
 {:#methods:print}
 
 Print the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1079,13 +1341,12 @@ Example
 
 {% endhighlight %}
 
-### printLayout<span class="signature">()</span>
+### printLayout()
 {:#methods:printlayout}
 
 Apply print layout to the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1097,13 +1358,12 @@ Example
 
 {% endhighlight %}
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 Refresh the report.
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1132,10 +1392,9 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1146,22 +1405,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1170,8 +1426,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1201,10 +1456,9 @@ Fires during drill through action done in report.If you want to perform any oper
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1215,28 +1469,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-actionInfo{% endhighlight %}</td>
+<td class="name">actionInfo</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the actionInfo's parameters bookmarkLink,hyperLink,reportName,parameters.</td>
+<td class="description last">returns the actionInfo's parameters bookmarkLink, hyperLink, reportName, parameters.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1245,8 +1495,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1276,10 +1525,9 @@ Fires before report rendering is completed.If you want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1290,22 +1538,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1314,8 +1559,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1346,10 +1590,9 @@ Fires after report rendering completed.If you want to perform any operation afte
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1360,34 +1603,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-reportParameters{% endhighlight %}</td>
+<td class="name">reportParameters</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the collection of parameters</td>
+<td class="description last">returns the collection of parameters.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-reportParameters{% endhighlight %}</td>
+<td class="name">reportParameters</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the collection of parameters</td>
+<td class="description last">returns the collection of parameters.</td>
 </tr>
 </tbody>
 </table>
@@ -1396,8 +1634,7 @@ reportParameters{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1428,10 +1665,9 @@ Fires when any error occurred while rendering the report.If you want to perform 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1442,28 +1678,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-error{% endhighlight %}</td>
+<td class="name">error</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the error details</td>
+<td class="description last">returns the error details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1472,8 +1704,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1484,6 +1715,70 @@ Example
             // Write a code block to perform any operation when report error occurs.
         }
     });                         
+</script>
+
+{% endhighlight %}
+
+### reportExport
+{:#events:reportexport}
+
+Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the report model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        reportExport:  function (args) {
+            // Write a code block to perform any action before exporting of report.
+        }
+    });           
 </script>
 
 {% endhighlight %}
@@ -1503,10 +1798,10 @@ Fires when the report is loaded.If you want to perform any operation after the s
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">event parameters from reportviewer
+<td class="description last">event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1517,22 +1812,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1541,8 +1833,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1572,10 +1863,9 @@ Fires when click the View Report Button.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
+<td class="description last">Event parameters from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -1586,28 +1876,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-parameters{% endhighlight %}</td>
+<td class="name">parameters</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the parameter collection.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
+<td class="description last">returns the report model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1616,8 +1902,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
  
@@ -1632,74 +1917,7 @@ Example
 
 {% endhighlight %}
 
-### reportExport
-{:#events:reportexport}
 
-Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">true if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the report model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="reportviewer"></div> 
-<script>        
-    $("#reportviewer").ejReportViewer({ 
-        reportExport:  function (args) {
-            // Write a code block to perform any action before exporting of report.
-        }
-    });           
-</script>
-
-{% endhighlight %}
 
 
 

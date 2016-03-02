@@ -70,9 +70,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 * module:ej.core.js
 
-* module:jquery.globalize.js
-
-* module:globalize.cultures.min.js
+* module:ej.globalize.js
 
 * module:ej.editor.js
 
@@ -87,8 +85,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-
-Specify the CSS class to editor to achieve custom theme.
+Sets the root CSS class for Accordion theme, which is used customize. 
 
 
 #### Default Value
@@ -129,7 +126,7 @@ Specify the CSS class to editor to achieve custom theme.
 
 
 
-DecimalPlaces declares the decimal point to the value of the editor.
+DecimalPlaces declares the number of digits to be displayed right side of the value.
 
 
 #### Default Value
@@ -326,9 +323,46 @@ Strict mode option to restrict entering values defined outside the range in the 
 </script>{% endhighlight %}
 
 
+### groupSeparator `string`
+{:#members:groupseparator}
 
 
-### height `string`
+
+
+It provides the options to get the customized character to separate the digits. If not set, the separator defined by the current culture.  
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input id="numeric" type="text" /> 
+ 
+<input id="currency" type="text" /> 
+ 
+<input id="percentage" type="text" /> 
+ 
+<script>
+//To set enableStrictMode API value during initialization  
+        $("#numeric").ejNumericTextbox({ groupSeparator: "-", value:5  });   
+        $("#currency").ejCurrencyTextbox({ groupSeparator: "-", value:55  });
+        $("#percentage").ejPercentageTextbox({ groupSeparator: "-", value:555  });                   
+</script>{% endhighlight %}
+
+
+### height `number|string`
 {:#members:height}
 
 
@@ -342,7 +376,7 @@ Specifies the height of the editor.
 
 
 
-* 30pixel
+* 30
 
 
 
@@ -374,8 +408,7 @@ Specifies the height of the editor.
 
 
 
-
-Specifies the HTML Attributes of the ejTextBoxes
+It allows to define the characteristics of the Editors control. It will helps to extend the capability of an HTML element.
 
 
 #### Default Value
@@ -416,7 +449,7 @@ Specifies the HTML Attributes of the ejTextBoxes
 
 
 
-Specifies the value used to increment or decrement editor value.
+The Editor value increment or decrement based an increment step value.
 
 
 #### Default Value
@@ -621,7 +654,7 @@ Specifies the name of the editor.
 
 
 
-Toggles the readonly state of the editor. When the editor is readonly it doesn't allow user input.
+Toggles the readonly state of the editor. When the Editor is readonly it doesn't allow user interactions.
 
 
 #### Default Value
@@ -738,13 +771,13 @@ Specifies whether the up and down spin buttons should be displayed in editor.
 
 
 
-### validateOnType `number`
+### validateOnType `boolean`
 {:#members:validateontype}
 
 
 
 
-enables decimal separator position validation on type .
+Enables decimal separator position validation on type .
 
 
 #### Default Value
@@ -752,7 +785,7 @@ enables decimal separator position validation on type .
 
 
 
-* 0
+* false
 
 
 
@@ -785,7 +818,10 @@ enables decimal separator position validation on type .
 
 
 
-Set the jquery validation error message in editor.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
+Set the jQuery validation error message in editor.
+
+N> The property will work when the widget present inside the form. Additionally need to include jquery.validate.min.js plugin.
+
 
 
 #### Default Value
@@ -826,7 +862,9 @@ Set the jquery validation error message in editor.The property will work when th
 
 
 
-Set the jquery validation rules to the editor.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
+Set the jQuery validation rules to the editor.
+
+N> The property will work when the widget present inside the form. Additionally need to include jquery.validate.min.js plugin.
 
 
 #### Default Value
@@ -861,7 +899,7 @@ Set the jquery validation rules to the editor.The property will work when the wi
 
 
 
-### value `number`
+### value `number|string`
 {:#members:value}
 
 
@@ -943,7 +981,7 @@ Specify the watermark text to editor.
 
 
 
-### width `string`
+### width `number|string`
 {:#members:width}
 
 
@@ -957,7 +995,7 @@ Specifies the width of the editor.
 
 
 
-* 143pixel
+* 143
 
 
 
@@ -1051,7 +1089,7 @@ $("#percentage").ejPercentageTextbox("destroy");
 
 
 
-To disable the corresponding editors
+To disable the corresponding Editors
 
 
 
@@ -1109,7 +1147,7 @@ $("#percentage").ejPercentageTextbox("disable");
 
 
 
-To enable the corresponding editors
+To enable the corresponding Editors
 
 
 
@@ -1168,8 +1206,13 @@ $("#percentage").ejPercentageTextbox("enable");
 
 
 
-To get value from corresponding editors
+To get value from corresponding Editors
 
+
+#### Returns:
+{:#methods:returns:}
+
+number
 
 
 #### Example
@@ -1231,7 +1274,8 @@ $("#percentage").ejPercentageTextbox("getValue");
 
 
 
-Fires after editor control value is changed.
+Fires after Editor control value is changed.
+
 
 <table class="params">
 <thead>
@@ -1243,49 +1287,38 @@ Fires after editor control value is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from editors.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name"> 
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>
-</tbody>
-</table>
-</td>
+<tr>
+<td class="name"> 
+ isInteraction </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true when the value changed by user interaction otherwise returns false</td>
 </tr>
 </tbody>
 </table>
+
 
 
 #### Example
@@ -1325,7 +1358,7 @@ $("#percentage").ejPercentageTextbox({
 
 
 
-Fires after editor control is created.
+Fires after Editor control is created.
 
 <table class="params">
 <thead>
@@ -1337,20 +1370,20 @@ Fires after editor control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the editor model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1395,7 +1428,7 @@ $("#percentage").ejPercentageTextbox({
 
 
 
-Fires when the editor is destroyed successfully.
+Fires when the Editor is destroyed successfully.
 
 <table class="params">
 <thead>
@@ -1407,20 +1440,20 @@ Fires when the editor is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the editor model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1465,7 +1498,8 @@ $("#percentage").ejPercentageTextbox({
 
 
 
-Fires after editor control is focused.
+Fires after Editor control is focused.
+
 
 <table class="params">
 <thead>
@@ -1477,49 +1511,32 @@ Fires after editor control is focused.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from editors.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model</td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+ value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1559,7 +1576,7 @@ $("#percentage").ejPercentageTextbox({
 
 
 
-Fires after editor control is loss the focus.
+Fires after Editor control is loss the focus.
 
 <table class="params">
 <thead>
@@ -1571,8 +1588,8 @@ Fires after editor control is loss the focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from editors.
 <table class="params">
@@ -1585,35 +1602,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+ cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model</td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
+<td class="name">
+ value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example

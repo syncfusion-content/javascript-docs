@@ -2941,7 +2941,7 @@ This method is used to get the hyperlink data as object from the specified cell 
 </table>
 
 ####Returns:
-Object (cellAddr and webAddr based on cell)
+Object
 
 #### Example
 
@@ -3088,7 +3088,7 @@ This method is used to get the data in specified range in Spreadsheet.
 </table>
 
 ####Returns:
-Array of objects
+Array
 
 #### Example
 
@@ -5012,7 +5012,7 @@ This method is used to get the applied conditional formatting rules as array of 
 </table>
 
 ####Returns:
-Array of objects
+Array
 
 #### Example
 

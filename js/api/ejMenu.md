@@ -91,6 +91,8 @@ $(element).ejMenu()
 ### animationType `enum`
 {:#members:animationtype}
 
+<ts name="ej.AnimationType">
+
 To enable or disable the Animation while hover or click an menu items.See <a href="global.html#AnimationType">AnimationType</a>
 
 #### Default Value
@@ -695,7 +697,7 @@ Specifies the text of menu items list.
 
 Specifies the url to the anchor tag in menu item list.
 
-### height `string`  `number`
+### height `string|number`
 {:#members:height}
 
 
@@ -753,7 +755,7 @@ Specifies the height of the root menu.
 {% endhighlight %}
 
 
-### htmlAttributes `JSONobject`
+### htmlAttributes `object`
 
 {:#members:htmlattributes}
 
@@ -811,8 +813,10 @@ Specifies the list of html attributes to be added to menu control.
 
 {% endhighlight %}
 
-### menuType `string`  `enum`
+### menuType `string|enum`
 {:#members:menutype}
+
+<ts name="ej.MenuType">
 
 Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu mode.See <a href="global.html#MenuType">MenuType</a>
 
@@ -937,8 +941,10 @@ Specifies the sub menu items to be show or open only on click.
 {% endhighlight %}
 
 
-### orientation `string`  `enum`
+### orientation `string|enum`
 {:#members:orientation}
+
+<ts name="ej.Orientation">
 
 
 Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See <a href="global.html#Orientation">Orientation</a>
@@ -1120,8 +1126,10 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 {% endhighlight %}
 
 
-### subMenuDirection `string`  `enum`
+### subMenuDirection `string|enum`
 {:#members:submenudirection}
+
+<ts name="ej.Direction">
 
 
 Specifies position of pulldown submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
@@ -1251,7 +1259,7 @@ Specifies the title to responsive menu.
 {% endhighlight %}
 
 
-### width `string`  `number`
+### width `string|number`
 {:#members:width}
 
 
@@ -1424,7 +1432,7 @@ Disables the Menu control.
 {% endhighlight %}
 
 
-### disableItem(itemtext)</span>
+### disableItem(itemtext)
 {:#methods:disableitem}
 
 
@@ -1440,8 +1448,8 @@ Specifies the Menu Item to be disabled by using the Menu Item Text.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-itemtext{% endhighlight %}</td>
+<td class="name">
+itemtext</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Specifies the Menu Item Text to be disabled.</td>
 </tr>
@@ -1553,7 +1561,7 @@ itemtext{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### disableItembyID(itemid)</span>
+### disableItembyID(itemid)
 {:#methods:disableitembyid}
 
 
@@ -1570,9 +1578,9 @@ Specifies the Menu Item to be disabled by using the Menu Item Id.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-itemid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span> | <span class="param-type">number</span></td>
+<td class="name">
+itemid</td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Specifies the Menu Item id to be disabled</td>
 </tr>
 </tbody>
@@ -1792,7 +1800,7 @@ Enables the Menu control.
 
 
 
-### enableItem(itemtext)</span>
+### enableItem(itemtext)
 {:#methods:enableitem}
 
 
@@ -1809,8 +1817,8 @@ Specifies the Menu Item to be enabled by using the Menu Item Text.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-itemtext{% endhighlight %}</td>
+<td class="name">
+itemtext</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Specifies the Menu Item Text to be enabled.</td>
 </tr>
@@ -1918,7 +1926,7 @@ itemtext{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### enableItembyID(itemid)</span>
+### enableItembyID(itemid)
 {:#methods:enableitembyid}
 
 
@@ -1935,9 +1943,9 @@ Specifies the Menu Item to be enabled by using the Menu Item Id.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-itemid{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span> | <span class="param-type">number</span></td>
+<td class="name">
+itemid</td>
+<td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Specifies the Menu Item id to be enabled.</td>
 </tr>
 </tbody>
@@ -2152,7 +2160,7 @@ Hides the Context Menu control.
 {% endhighlight %}
 
 
-### insert(item, target)</span>
+### insert(item, target)
 {:#methods:insert}
 
 
@@ -2169,15 +2177,15 @@ Insert the menu item as child of target node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
-<td class="type"><span class="param-type">ArrayObject</span></td>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">Information about Menu item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span> | <span class="param-type">Object</span></td>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">string|Object</span></td>
 <td class="description">Selector of target node or Object of target node.</td>
 </tr>
 </tbody>
@@ -2292,7 +2300,7 @@ target{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### insertAfter(item, target)</span>
+### insertAfter(item, target)
 {:#methods:insertafter}
 
 
@@ -2309,15 +2317,15 @@ Insert the menu item after the target node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
-<td class="type"><span class="param-type">ArrayObject</span></td>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">Information about Menu item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span> | <span class="param-type">Object</span></td>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">string|Object</span></td>
 <td class="description">Selector of target node or Object of target node.</td>
 </tr>
 </tbody>
@@ -2432,7 +2440,7 @@ target{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### insertBefore(item, target)</span>
+### insertBefore(item, target)
 {:#methods:insertbefore}
 
 
@@ -2448,15 +2456,15 @@ Insert the menu item before the target node.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
-<td class="type"><span class="param-type">ArrayObject</span></td>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">Information about Menu item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span> | <span class="param-type">Object</span></td>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">string|Object</span></td>
 <td class="description">Selector of target node or Object of target node.</td>
 </tr>
 </tbody>
@@ -2571,7 +2579,7 @@ target{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### remove(target)</span>
+### remove(target)
 {:#methods:remove}
 
 
@@ -2587,9 +2595,9 @@ Remove Menu item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">ArrayObject</span> | <span class="param-type">ArrayString</span></td>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">Object|ArrayString</span></td>
 <td class="description">Selector of target node or Object of target node.</td>
 </tr>
 </tbody>
@@ -2698,7 +2706,7 @@ target{% endhighlight %}</td>
 {% endhighlight %}
 
 
-### show(locationX, locationY, targetElement, event)</span>
+### show(locationX, locationY, targetElement, event)
 {:#methods:show}
 
 
@@ -2714,26 +2722,26 @@ To show the Menu control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-locationX{% endhighlight %}</td>
+<td class="name">
+locationX</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">x co-ordinate position of context menu.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-locationY{% endhighlight %}</td>
+<td class="name">
+locationY</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">y co-ordinate position of context menu.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-targetElement{% endhighlight %}</td>
+<td class="name">
+targetElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">target element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">name of the event</td>
 </tr>
@@ -2864,8 +2872,8 @@ Fires before context menu gets open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from context menu
 <table class="params">
@@ -2878,26 +2886,26 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element</td>
 </tr>
@@ -2974,8 +2982,8 @@ Fires when mouse click on menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -2988,38 +2996,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">
+text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns clicked menu item text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItem{% endhighlight %}</td>
+<td class="name">
+selectedItem</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the selected item</td>
 </tr>
@@ -3097,8 +3105,8 @@ Fire when context menu on close.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3111,20 +3119,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element</td>
 </tr>
@@ -3205,8 +3213,8 @@ Fires when context menu on open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3219,20 +3227,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target element</td>
 </tr>
@@ -3314,8 +3322,8 @@ Fires to create menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3328,14 +3336,14 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -3411,8 +3419,8 @@ Fires to destroy menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3425,14 +3433,14 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -3514,8 +3522,8 @@ Fires when key down on menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3528,32 +3536,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-menuText{% endhighlight %}</td>
+<td class="name">
+menuText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns clicked menu item text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event</td>
 </tr>
@@ -3632,8 +3640,8 @@ Fires when mouse out from menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3646,32 +3654,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">
+text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns clicked menu item text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event</td>
 </tr>
@@ -3686,6 +3694,7 @@ event{% endhighlight %}</td>
 
 
 {% highlight html %}
+
     <ul id="menu">
         <li id="Home"><a>Home</a></li>
         <li>
@@ -3748,8 +3757,8 @@ Fires when mouse over the Menu items.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from menu
 <table class="params">
@@ -3762,32 +3771,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the menu model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
+<td class="name">
+text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns clicked menu item text</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns clicked menu item element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event</td>
 </tr>
