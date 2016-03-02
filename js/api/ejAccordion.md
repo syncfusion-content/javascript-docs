@@ -168,7 +168,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### collapseSpeed `integer/string`
+### collapseSpeed `number`
 {:#members:collapsespeed}
 
 To set the Accordion headers Collapse Speed.
@@ -274,7 +274,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### customIcon `JSONObject`
+### customIcon `object`
 {:#members:customicon}
 
 Allows you to set the custom header Icon. It accepts two key values “header”, ”selectedHeader”.
@@ -329,7 +329,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         });
 </script>{% endhighlight %}
 
-### disabledItems `Integerarray`
+### disabledItems `number[]`
 {:#members:disableditems}
 
 Disables the specified indexed items in accordion.
@@ -438,7 +438,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ enabled: true});
 </script>{% endhighlight %}
 
-### enabledItems `Integerarray`
+### enabledItems `number[]`
 {:#members:enableditems}
 
 Used to enable the disabled items in accordion.
@@ -616,7 +616,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 $("#accordion").ejAccordion({ events: "mouseover" });
 </script>{% endhighlight %}
 
-### expandSpeed `integer/string`
+### expandSpeed `number`
 {:#members:expandspeed}
 
 To set the Accordion headers Expand Speed.
@@ -651,7 +651,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### headerSize `number/string`
+### headerSize `number|string`
 {:#members:headersize}
 
 Sets the height for Accordion items header.
@@ -684,7 +684,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         });
 </script>{% endhighlight %}
 
-### height `number/string`
+### height `number|string`
 {:#members:height}
 
 Specifies height of the accordion.
@@ -721,11 +721,15 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         });
 </script>{% endhighlight %}
 
-### heightAdjustMode `Enum/String`
+### heightAdjustMode `enum|string`
 {:#members:heightadjustmode}
+
+<ts name="ej.Accordion.HeightAdjustMode"/>
 
 Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content. See <a href=
 "global.html#HeightAdjustMode">HeightAdjustMode</a>
+
+
 
 #### Default Value
 
@@ -818,7 +822,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### selectedItemIndex `Integer`
+### selectedItemIndex `number|string`
 {:#members:selecteditemindex}
 
 The given index header will activate (open). If collapsible is set to true, and a negative value is given, then all headers are collapsed. Otherwise, the first panel is
@@ -853,7 +857,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ selectedItemIndex : 1 });
 </script>{% endhighlight %}
 
-### selectedItems `Integerarray`
+### selectedItems `number[]`
 {:#members:selecteditems}
 
 Activate the specified indexed items of the accordion
@@ -958,7 +962,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ showRoundedCorner: true});
 </script>{% endhighlight %}
 
-### width `number/string`
+### width `number|string`
 {:#members:width}
 
 Specifies width of the accordion.
@@ -998,32 +1002,48 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 
 ## Methods
 
-### addItem()
+### addItem(header_name, content, index, isAjaxReq)
 {:#methods:additem}
 
 AddItem method is used to add the panel in dynamically. It receives the following parameters
 
-### parameter1 `String`
 
-To specify the text value to be displayed over the newly added panel header.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+header_name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">specify the name of the header</td>
+</tr>
+<tr>
+<td class="name">
+content</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">content of the new panel</td>
+</tr>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">insertion place of the new panel</td>
+</tr>
+<tr>
+<td class="name">
+isAjaxReq</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Enable or disable the ajax request to the added panel</td>
+</tr>
+</tbody>
+</table>
 
-### parameter2 `String`
-
-To specify the value to be displayed within the newly added panel. 
-
-N> when the parameter4 set as false or without specified.
-
-To specify the value to be act as the ajax request link to the newly added panel. 
-
-N> When the parameter4 set as true.  
-
-### parameter3 `Number`
-
-The added panel can be inserted in the specified index value.
-
-### parameter4 `Boolean`
-
-Enable or disable the ajax request to the added panel.
 
 
 #### Example
@@ -1145,7 +1165,7 @@ accObj.collapseAll(); //Calls the collapseAll method of Accordion.
 ### destroy()
 {:#methods:destroy}
 
-Allows you to destroy the Accordion widget.
+destroy the Accordion widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 #### Example
 
@@ -1258,10 +1278,30 @@ accObj.disable(); //Calls the disable method of Accordion.
 </script>{% endhighlight %}
 
 
-### disableItems()
+### disableItems(index)
 {:#methods:disableitems}
 
 Disable the accordion widget item based on specified header index.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">index values to disable the panels</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
 
@@ -1286,7 +1326,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
            $("#accordion").ejAccordion();
 // Call disableItems method.
-$("#accordion").ejAccordion("disableItems", 1);
+$("#accordion").ejAccordion("disableItems", [1]);
 </script>{% endhighlight %}
 
 
@@ -1313,7 +1353,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 // disableItems the Accordion
 $("#accordion").ejAccordion();
 var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems(1); //Calls the disableItems method of Accordion.   
+accObj.disableItems([1]); //Calls the disableItems method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -1380,10 +1420,30 @@ accObj.enable(); //Calls the enable method of Accordion.
 
 
 
-### enableItems()
+### enableItems(index)
 {:#methods:enableitems}
 
 Enable the accordion widget item based on specified header index.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">index values to enable the panels</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
 
@@ -1408,9 +1468,9 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
            $("#accordion").ejAccordion();
 // Call enableItems method.
-$("#accordion").ejAccordion("disableItems", 0); 
-$("#accordion").ejAccordion("disableItems", 1); 
-$("#accordion").ejAccordion("enableItems", 1);
+$("#accordion").ejAccordion("disableItems", [0]); 
+$("#accordion").ejAccordion("disableItems", [1]); 
+$("#accordion").ejAccordion("enableItems", [1]);
 </script>{% endhighlight %}
 
 
@@ -1437,9 +1497,9 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 // enableItems the Accordion
 $("#accordion").ejAccordion();
 var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems(0);
-accObj.disableItems(1);
-accObj.enableItems(1); //Calls the enable method of Accordion.  
+accObj.disableItems([0]);
+accObj.disableItems([1]);
+accObj.enableItems([1]); //Calls the enable method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1514,6 +1574,13 @@ accObj.expandAll(); //Calls the expandAll method of Accordion.
 {:#methods:getitemscount}
 
 Returns the total number of panels in the control.
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
 
 #### Example
 
@@ -1689,14 +1756,30 @@ accObj.refresh(); //Calls the refresh method of Accordion.
 </script>{% endhighlight %}
 
 
-### removeItem()
+### removeItem(index)
 {:#methods:removeitem}
 
-RemoveItem method is used to remove the specified index panel.It receives the parameter as
+RemoveItem method is used to remove the specified index panel.It receives the parameter as number.
   
-### parameter1 `Number`
 
-To remove the panel from the specified index value.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+index </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">specify the index value for remove the accordion panel.</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
 
@@ -1834,38 +1917,38 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.activeIndex{% endhighlight %}</td>
+<td class="name">
+ activeIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.activeHeader{% endhighlight %}</td>
+<td class="name">
+ activeHeader </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns current active header</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name">
+ isInteraction </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
@@ -1921,26 +2004,26 @@ Triggered before the AJAX content is loaded in a content panel. Arguments have l
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
@@ -1995,32 +2078,32 @@ Triggered after AJAX load failed action. Arguments have URL, error message, and 
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.data{% endhighlight %}</td>
+<td class="name">
+ data </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the failed data sent.</td>
 </tr>
@@ -2074,26 +2157,26 @@ Triggered after the AJAX content loads. Arguments have current model values.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the url</td>
 </tr>
@@ -2150,38 +2233,38 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.url{% endhighlight %}</td>
+<td class="name">
+ url </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns current ajax content location</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.data{% endhighlight %}</td>
+<td class="name">
+ data </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the succesfull data sent.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.content{% endhighlight %}</td>
+<td class="name">
+ content </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the ajax content.</td>
 </tr>
@@ -2239,32 +2322,32 @@ Triggered before a tab item is active. Arguments have active index and model val
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.activeIndex{% endhighlight %}</td>
+<td class="name">
+ activeIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name">
+ isInteraction </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
@@ -2317,32 +2400,32 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.inActiveIndex{% endhighlight %}</td>
+<td class="name">
+ inActiveIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name">
+ isInteraction </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
@@ -2395,20 +2478,20 @@ Triggered after Accordion control creation.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2460,20 +2543,20 @@ Triggered after Accordion control destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2527,38 +2610,38 @@ Triggered after a Accordion item is active or inactive. Argument values are acti
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model </td>
+<td class="type"><ts ref="ej.Accordion.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the accordion model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.inActiveIndex{% endhighlight %}</td>
+<td class="name">
+ inActiveIndex </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns active index</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.inActiveHeader{% endhighlight %}</td>
+<td class="name">
+ inActiveHeader </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns in active element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name">
+ isInteraction </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the Accordion index activated by user interaction otherwise returns false</td>
 </tr>
