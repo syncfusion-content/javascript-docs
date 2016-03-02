@@ -7710,7 +7710,7 @@ Checks whether the given text tab in the ribbon control is enabled or not.
 #### Returns:
 {:#methods:returns:}
 
-Boolean                                                                            .
+Boolean
 
 #### Example
 
