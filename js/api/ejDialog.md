@@ -57,7 +57,7 @@ Requires
 ##Members
 
 
-### actionButtons<span class="type-signature type stringarray">StringArray<span>
+### actionButtons `String[]`
 {:#members:actionbuttons}
 
 Adds action buttons like close, minimize, pin, maximize in the dialog header.
@@ -76,7 +76,7 @@ Example
  {% endhighlight %}
 
 
-### allowDraggable<span class="type-signature type object">Boolean
+### allowDraggable `Boolean`
 {:#members:allowdraggable}
 
 Enables or disables draggable.
@@ -94,7 +94,7 @@ Example
          
 {% endhighlight %}
 
-### allowKeyboardNavigation<span class="type-signature type boolean">Boolean</span>
+### allowKeyboardNavigation `Boolean`
 {:#members:allowkeyboardnavigation}
 
 Enables or disables keyboard interaction.
@@ -113,7 +113,7 @@ Example
 {% endhighlight %}
 
 
-### animation<span class="type-signature type JSONobject">JSONobject</span>
+### animation `object`
 {:#members:animation}
 
 Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set “[enableAnimation](#members:enableanimation)” as true. It contains the following sub properties.
@@ -189,7 +189,7 @@ Example
 {% endhighlight %}
 
 
-### closeIconTooltip<span class="type-signature type string">String</span>
+### closeIconTooltip `String`
 {:#members:closeicontooltip}
 
 The tooltip text for the dialog close button.
@@ -210,7 +210,7 @@ Example
 {% endhighlight %}
 
 
-### closeOnEscape<span class="type-signature type boolean">Boolean</span>
+### closeOnEscape `Boolean`
 {:#members:closeonescape}
 
 Closes the dialog widget on pressing the <kbd>ESC</kbd> key when it is set to true.
@@ -229,7 +229,7 @@ Example
 {% endhighlight %}
 
 
-### containment <span class="type-signature type string">string</span>
+### containment `String`
 {:#members:containment}
 
 The selector for the container element. If the property is set, then dialog will append to the selected element and it is restricted to move only within the specified container element.
@@ -250,7 +250,7 @@ Example
 {% endhighlight %}
 
 
-### content[Deprecated]<span class="type-signature type string">String</span>
+### content[Deprecated] `String`
 {:#members:content}
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
@@ -271,7 +271,7 @@ Example
 {% endhighlight %}
 
 
-### contentType<span class="type-signature type string">String</span>
+### contentType `String`
 {:#members:contenttype}
 
 The content type to load the dialog content at run time. The possible values are null, ajax, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](#members:contenturl) property.
@@ -291,7 +291,7 @@ Example
 {% endhighlight %}
 
 
-### contentUrl<span class="type-signature type string">String</span>
+### contentUrl `String`
 {:#members:contenturl}
 
 The URL to load the dialog content (such as AJAX, image, and iframe). In order to load content from URL, you need to set [contentType](#members:contenttype) as ‘ajax’ or ‘iframe’ or ‘image’.
@@ -312,7 +312,7 @@ Example
 {% endhighlight %}
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `String`
 {:#members:cssclass}
 
 The root class for the Dialog widget to customize the existing theme.
@@ -331,7 +331,7 @@ Example
 {% endhighlight %}
 
 
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `Boolean`
 {:#members:enableanimation}
 
 Enable or disables animation when the dialog is opened or closed.
@@ -350,7 +350,7 @@ Example
 {% endhighlight %}
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `Boolean`
 {:#members:enabled}
 
 Enables or disables the Dialog widget.
@@ -369,7 +369,7 @@ Example
 {% endhighlight %}
 
 
-### enableModal<span class="type-signature type boolean">Boolean</span>
+### enableModal `Boolean`
 {:#members:enablemodal}
 
 Enable or disables modal dialog. The [modal dialog](https://en.wikipedia.org/wiki/Modal_window#) acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed.
@@ -388,7 +388,7 @@ Example
 {% endhighlight %}
 
 
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `Boolean`
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
@@ -410,7 +410,7 @@ Example
 {% endhighlight %}
 
 
-### enableResize<span class="type-signature type boolean">Boolean</span>
+### enableResize `Boolean`
 {:#members:enableresize}
 
 Allows the dialog to be resized. The dialog cannot be resized less than the minimum height, width values and greater than the maximum height and width.
@@ -429,7 +429,7 @@ Example
 {% endhighlight %}
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `Boolean`
 {:#members:enablertl}
 
 Displays dialog content from right to left when set to true.
@@ -448,7 +448,7 @@ Example
 {% endhighlight %}
 
 
-### faviconCSS<span class="type-signature type string">String</span>
+### faviconCSS `String`
 {:#members:faviconcss}
 
 The CSS class name to display the favicon in the dialog header. In order to display favicon, you need to set [showHeader](#members:showheader) as true since the favicon will be displayed in the dialog header.
@@ -467,7 +467,7 @@ Example
 {% endhighlight %}
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
+### height `String` `Number`
 {:#members:height}
 
 Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
@@ -486,7 +486,7 @@ Example
 {% endhighlight %}
 
 
-### isResponsive<span class="type-signature type boolean">Boolean</span> 
+### isResponsive `Boolean` 
 {:#members:isresponsive}
 
 Enable or disables responsive behavior.
@@ -506,7 +506,7 @@ Example
 
 {% endhighlight %}
 
-### locale <span class="type-signature type integer">Integer</span> 
+### locale `Number`
 {:#members:locale}
 Set the localization culture for Dialog Widget.
 
@@ -525,7 +525,7 @@ Example
 
 
 
-### maxHeight<span class="type-signature type integer">Integer</span> 
+### maxHeight `Number`
 {:#members:maxheight}
 
 Sets the maximum height for the dialog widget.
@@ -544,7 +544,7 @@ Example
 {% endhighlight %}
 
 
-### maxWidth<span class="type-signature type integer">Integer</span> 
+### maxWidth `Number`
 {:#members:maxwidth}
 
 Sets the maximum width for the dialog widget.
@@ -563,7 +563,7 @@ Example
 {% endhighlight %}
 
 
-### minHeight<span class="type-signature type integer">Integer</span> 
+### minHeight `Number`
 {:#members:minheight}
 
 Sets the minimum height for the dialog widget.
@@ -581,7 +581,7 @@ Example
 
 {% endhighlight %}
 
-### minWidth<span class="type-signature type integer">Integer</span> 
+### minWidth `Number`
 {:#members:minwidth}
 
 Sets the minimum width for the dialog widget.
@@ -600,7 +600,7 @@ Example
 {% endhighlight %}
 
 
-### position<span class="type-signature type JSONobject">JSONobject</span>   
+### position `object`   
 {:#members:position}
 
 Displays the Dialog widget at the given X and Y position. 
@@ -636,7 +636,7 @@ Example
 {% endhighlight %}
 
 
-### showHeader<span class="type-signature type boolean">Boolean</span>    
+### showHeader `Boolean`
 {:#members:showheader}
 
 Shows or hides the dialog header.
@@ -655,7 +655,7 @@ Example
 {% endhighlight %}
 
 
-### showOnInit<span class="type-signature type boolean">Boolean</span> 
+### showOnInit `Boolean`
 {:#members:showoninit}
 
 The Dialog widget can be opened by default i.e. on initialization, when it is set to true.
@@ -674,7 +674,7 @@ Example
 {% endhighlight %}
 
 
-### showRoundedCorner<span class="type-signature type boolean">Boolean</span> 
+### showRoundedCorner `Boolean`
 {:#members:showroundedcorner}
 
 Enables or disables the rounder corner.
@@ -693,7 +693,7 @@ Example
 {% endhighlight %}
 
 
-### target <span class="type-signature type string">String</span> 
+### target `String`
 {:#members:target}
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
@@ -712,7 +712,7 @@ Example
 {% endhighlight %}
 
 
-### title <span class="type-signature type string">String</span> 
+### title `String`
 {:#members:title}
 
 The title text to be displayed in the dialog header. In order to set title, you need to set [showHeader](#members:showheader) as true since the title will be displayed in the dialog header.
@@ -730,7 +730,7 @@ Example
 
 {% endhighlight %}
 
-### tooltip <span class="type-signature type object">object</span> 
+### tooltip `object`
 {:#members:tooltip}
 
 Add or configure the tooltip text for [actionButtons](#members:actionbuttons) in the dialog header.
@@ -802,7 +802,7 @@ Example
 {% endhighlight %}
 
 
-### width <span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
+### width `String` `Number`
 {:#members:width}
 
 Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
@@ -821,7 +821,7 @@ Example
 {% endhighlight %}
 
 
-### zIndex<span class="type-signature type integer">Integer</span>
+### zIndex `Number`
 {:#members:zindex}
 
 Sets the z-index value for the Dialog widget.
@@ -1107,17 +1107,17 @@ This event is triggered before the dialog widgets gets open.
 <b>Description</b></th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event</td></tr>
 </table>
@@ -1147,37 +1147,37 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.url</td><td>
+url</td><td>
 string</td><td>
 URL of the content.</td></tr>
 <tr>
 <td>
-argument.data.responseText</td><td>
+data.responseText</td><td>
 string</td><td>
 Error page content</td></tr>
 <tr>
 <td>
-argument.data.status</td><td>
+data.status</td><td>
 integer</td><td>
 Error code</td></tr>
 <tr>
 <td>
-Argument.data.statusText</td><td>
+data.statusText</td><td>
 string</td><td>
 The corresponding error description.</td></tr>
 </table>
@@ -1208,27 +1208,27 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.url</td><td>
+url</td><td>
 string</td><td>
 URL of the content.</td></tr>
 <tr>
 <td>
-argument.data</td><td>
+data</td><td>
 string</td><td>
 Response content.</td></tr>
 </table>
@@ -1258,22 +1258,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1306,27 +1306,27 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 Object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.isInteraction</td><td>
+isInteraction</td><td>
 Boolean</td><td>
 Specifies whether the event is triggered by user interaction or method call.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1356,22 +1356,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event</td></tr>
 </table>
@@ -1404,27 +1404,27 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.url</td><td>
+url</td><td>
 String</td><td>
 URL of the content.</td></tr>
 <tr>
 <td>
-argument.contentType</td><td>
+contentType</td><td>
 Object</td><td>
 Content type</td></tr>
 </table>
@@ -1453,17 +1453,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1492,17 +1492,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1531,22 +1531,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1575,22 +1575,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1619,22 +1619,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1662,17 +1662,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1701,22 +1701,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1745,22 +1745,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1789,22 +1789,22 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event</td></tr>
 <tr>
 <td>
-argument.event</td><td>
+event</td><td>
 Object</td><td>
 Current event object.</td></tr>
 </table>
@@ -1833,17 +1833,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
@@ -1878,17 +1878,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-argument.cancel</td><td>
+cancel</td><td>
 boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model</td><td>
+model</td><td><ts ref="ej.Dialog.Model"/>
 object</td><td>
 Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 string</td><td>
 Name of the event.</td></tr>
 </table>
