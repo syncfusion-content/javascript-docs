@@ -64,9 +64,11 @@ $("#OlapClient1").ejOlapClient(...);
 ### chartType `enum`
 {:#members:charttype}
 
+<ts ref = "ej.olap.OlapChart.ChartTypes"/>
+
 Allows the user to set the specific chart type for OlapChart.
 
-**Default Value:** ej.olap.OlapChart.ChartTypes.Column
+#### Default Value: ej.olap.OlapChart.ChartTypes.Column
 
 <table class="params">
     <thead>
@@ -161,7 +163,7 @@ $("#OlapClient1").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline 
 
 Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported. 
 
-**Default Value:** ej.olap.OlapClient.ClientExportMode.ChartAndGrid 
+#### Default Value: ej.olap.OlapClient.ClientExportMode.ChartAndGrid 
 
 **Example:**
 
@@ -176,7 +178,7 @@ $("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExpo
 
 Specifies the CSS class to OlapClient to achieve custom theme.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -191,7 +193,7 @@ $("#OlapClient1").ejOlapClient({ cssClass: "Olive" });
 
 Object utilized to pass additional information between client-end and service-end.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -206,7 +208,7 @@ $("#OlapClient1").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} }
 
 Allows the user to customize the widgets layout and appearance.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -219,9 +221,11 @@ Allows the user to customize the widgets layout and appearance.
 ### displaySettings.controlPlacement `enum`
 {:#members:displaysettings-controlplacement}
 
+<ts name = "ej.olap.OlapClient.ControlPlacement"/>
+
 Let’s the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or in tile view.
 
-**Default Value:** ej.olap.OlapClient.ControlPlacement.Tab
+#### Default Value: ej.olap.OlapClient.ControlPlacement.Tab
 
 <table class="params">
     <thead>
@@ -254,9 +258,11 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Ola
 ### displaySettings.defaultView `enum`
 {:#members:displaysettings-defaultview}
 
+<ts name = "ej.olap.OlapClient.DefaultView"/>
+
 Let’s the user to set either Chart or Grid as the start-up widget.
 
-**Default Value:** ej.olap.OlapClient.DefaultView.Grid
+#### Default Value: ej.olap.OlapClient.DefaultView.Grid
 
 <table class="params">
     <thead>
@@ -291,7 +297,7 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClie
 
 Enables/disables the full screen view of OlapChart and PivotGrid in OlapClient.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -306,7 +312,7 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { enableFullScreen: true } });
 
 Enhances the space for PivotGrid and OlapChart, by hiding Cube Browser and Axis Element Builder.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -321,7 +327,7 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { enableTogglePanel: true } })
 
 Allows the user to enable OlapClient’s responsiveness in the browser layout.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -334,9 +340,11 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { isResponsive: true } });
 ### displaySettings.mode `enum`
 {:#members:displaysettings-mode}
 
+<ts name = "ej.olap.OlapClient.DisplayMode"/>
+
 Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
 
-**Default Value:** ej.olap.OlapClient.DisplayMode.ChartAndGrid
+#### Default Value: ej.olap.OlapClient.DisplayMode.ChartAndGrid
 
 <table class="params">
     <thead>
@@ -375,7 +383,7 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Dis
 
 Allows the user to refresh the control on-demand and not during every UI operation. 
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -390,7 +398,7 @@ $("#OlapClient1").ejOlapClient({ enableDeferUpdate: true });
 
 Enables/disables the visibility of measure group selector drop-down in Cube Browser.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -403,9 +411,11 @@ $("#OlapClient1").ejOlapClient({ enableMeasureGroups : true });
 ### gridLayout `enum`
 {:#members:gridlayout}
 
+<ts ref = "ej.PivotGrid.Layout"/>
+
 Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
 
-**Default Value:** ej.PivotGrid.Layout.Normal
+#### Default Value: ej.PivotGrid.Layout.Normal
 
 <table class="params">
     <thead>
@@ -447,7 +457,7 @@ $("#OlapClient1").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:** 
 
@@ -462,7 +472,7 @@ $("#OlapClient1").ejOlapClient({ locale: "en-US" });
 
 Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -477,7 +487,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "MyMethod"}
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating the entire report and widget, while changing the Cube.
 
-**Default Value:** "CubeChanged"
+#### Default Value: "CubeChanged"
 
 **Example:**
 
@@ -492,7 +502,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {cubeChanged: "CubeChang
 
 Allows the user to set the custom name for the service method that’s responsible for exporting.
 
-**Default Value:** "Export"
+#### Default Value: "Export"
 
 **Example:**
 
@@ -507,7 +517,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: { exportOlapClient: "Exp
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible to get the members, for the tree-view inside member-editor dialog.
 
-**Default Value:** "FetchMemberTreeNodes"
+#### Default Value: "FetchMemberTreeNodes"
 
 **Example:**
 
@@ -522,7 +532,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchMemberTreeNodes: "
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for fetching the report names from the database.
 
-**Default Value:** "FetchReportListFromDB"
+#### Default Value: "FetchReportListFromDB"
 
 **Example:**
 
@@ -537,7 +547,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchReportList: "Fetch
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while filtering members.
 
-**Default Value:** "FilterElement"
+#### Default Value: "FilterElement"
 
 **Example:**
 
@@ -552,7 +562,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {filterElement: "filterE
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapClient.
 
-**Default Value:** "InitializeClient"
+#### Default Value: "InitializeClient"
 
 **Example:**
 
@@ -567,7 +577,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "Initialize
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for loading the report collection from the database.
 
-**Default Value:** "LoadReportFromDB"
+#### Default Value: "LoadReportFromDB"
 
 **Example:**
 
@@ -582,7 +592,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {loadReport: "LoadReport
 
 Allows the user to set the custom name for the service method that’s responsible for retrieving the MDX query for the current report.
 
-**Default Value:** "GetMDXQuery"
+#### Default Value: "GetMDXQuery"
 
 **Example:**
 
@@ -597,7 +607,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {mdxQuery: "GetMDXQuery"
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating the tree-view inside Cube Browser, while changing the measure group.
 
-**Default Value:** "MeasureGroupChanged"
+#### Default Value: "MeasureGroupChanged"
 
 **Example:**
 
@@ -612,7 +622,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {measureGroupChanged: "M
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible to get the child members, on tree-view node expansion.
 
-**Default Value:** "MemberExpanded"
+#### Default Value: "MemberExpanded"
 
 **Example:**
 
@@ -627,7 +637,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {memberExpand: "MemberEx
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while dropping a node/SplitButton inside Axis Element Builder.
 
-**Default Value:** "NodeDropped"
+#### Default Value: "NodeDropped"
 
 **Example:**
 
@@ -642,7 +652,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {nodeDropped: "NodeDropp
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report while removing SplitButton from Axis Element Builder.
 
-**Default Value:** "RemoveSplitButton"
+#### Default Value: "RemoveSplitButton"
 
 **Example:**
 
@@ -657,7 +667,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {removeSplitButton: "Rem
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for saving the report collection to database.
 
-**Default Value:** "SaveReportToDB"
+#### Default Value: "SaveReportToDB"
 
 **Example:**
 
@@ -672,7 +682,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {saveReport: "SaveReport
 
 Allows the user to set the custom name for the service method that’s responsible for toggling the elements in row and column axes.
 
-**Default Value:** "ToggleAxis"
+#### Default Value: "ToggleAxis"
 
 **Example:**
 
@@ -687,7 +697,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toggleAxis: "ToggleAxis
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for any toolbar operation.
 
-**Default Value:** "ToolbarOperations"
+#### Default Value: "ToolbarOperations"
 
 **Example:**
 
@@ -702,7 +712,7 @@ $("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toolbarServices: "Toolb
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for updating report collection.
 
-**Default Value:** "UpdateReport"
+#### Default Value: "UpdateReport"
 
 **Example:**
 
@@ -717,7 +727,7 @@ $("#OlapClient1").ejOlapClient({  serviceMethodSettings: {updateReport: "UpdateR
 
 Sets the title for OlapClient widget.
 
-**Default Value:** null
+#### Default Value: null
 
 **Example:**
 
@@ -732,7 +742,7 @@ $("#OlapClient1").ejOlapClient({ title: "OLAP Browser" });
 
 Connects the service using the specified URL for any server updates.
 
-**Default Value:** null
+#### Default Value: null
 
 **Example:**
 
@@ -804,10 +814,9 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component.
+<td class="description last">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
@@ -818,40 +827,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapClient control.</td>
+<td class="description last">return the current action of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapClient control.</td>
+<td class="description last">return the custom object bounds with OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapClient control.</td>
+<td class="description last">return the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -887,10 +890,9 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component.
+<td class="description last">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
@@ -901,40 +903,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapClient control.</td>
+<td class="description last">return the current action of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapClient control.</td>
+<td class="description last">return the custom object bounds with OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapClient control.</td>
+<td class="description last">return the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -969,10 +965,9 @@ Triggers before rendering the OlapChart.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart component.
+<td class="description last">Event parameters from OlapChart component.
 <table class="params">
 <thead>
 <tr>
@@ -983,40 +978,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1050,10 +1039,9 @@ Triggers while we initiate loading of the widget.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component.
+<td class="description last">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
@@ -1064,28 +1052,24 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapClient component.</td>
+<td class="description last">returns the outer HTML of OlapClient component.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1120,10 +1104,9 @@ Triggers when OlapClient widget completes all operations at client-end after any
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component
+<td class="description last">Event parameters from OlapClient component
 <table class="params">
 <thead>
 <tr>
@@ -1134,34 +1117,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1195,10 +1173,9 @@ Triggers when any error occurred during AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component
+<td class="description last">Event parameters from OlapClient component
 <table class="params">
 <thead>
 <tr>
@@ -1209,40 +1186,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-message{% endhighlight %}</td>
+<td class="name">message</td>
 <td class="type">Object</td>
-<td class="description">returns the error message with error code.</td>
+<td class="description last">returns the error message with error code.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1276,10 +1247,9 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapClient component.
+<td class="description last">Event parameters from OlapClient component.
 <table class="params">
 <thead>
 <tr>
@@ -1290,34 +1260,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of OlapClient control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapClient model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1342,6 +1307,8 @@ $("#OlapClient1").ejOlapClient({
 
 ### clientExportMode `enum`
 {:#enum:clientexportmode}
+
+<ts name = "ej.olap.OlapClient.ClientExportMode"/>
 
 Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported.
 
@@ -1379,6 +1346,8 @@ $("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExpo
 ### ControlPlacement  `enum`
 {:#enum:controlplacement}
 
+<ts name = "ej.olap.OlapClient.ControlPlacement"/>
+
 Allow the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or tile view.
 
 <table class="params">
@@ -1412,6 +1381,8 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Ola
 
 ### DisplayMode  `enum`
 {:#enum:displaymode}
+
+<ts name = "ej.olap.OlapClient.DisplayMode"/>
 
 Sets the display mode to view only Chart or only Grid or both in OlapClient.
 
@@ -1449,6 +1420,8 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Dis
 
 ### DefaultView `enum`
 {:#enum:defaultview}
+
+<ts name = "ej.OlapClient.DefaultView"/>
 
 Allows the user to set either Chart or Grid as the start-up widget.
 
