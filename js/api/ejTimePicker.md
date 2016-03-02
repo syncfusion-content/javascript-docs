@@ -385,7 +385,7 @@ When the enableStrictMode is set as true it allows the value outside of the rang
 
 
 
-### height `string`  `number`
+### height `string|number`
 {:#members:height}
 
 
@@ -801,7 +801,7 @@ Sets the step value for increment the minute value through arrow keys or mouse s
 
 
 
-### popupHeight `string`  `number`
+### popupHeight `string|number`
 {:#members:popupheight}
 
 
@@ -853,7 +853,7 @@ Defines the height of the TimePicker popup.
 
 
 
-### popupWidth `string`  `number`
+### popupWidth `string|number`
 {:#members:popupwidth}
 
 
@@ -1164,7 +1164,7 @@ Defines the time format displayed in the TimePicker.
 
 
 
-### value `string`  `DateObject`
+### value `string|object`
 {:#members:value}
 
 
@@ -1216,7 +1216,7 @@ Sets a specified time value on the TimePicker.
 
 
 
-### width `string`  `number`
+### width `string|number`
 {:#members:width}
 
 
@@ -1386,6 +1386,11 @@ $("#timepicker").ejTimePicker("enable");
 
 
 It returns the current time value.
+
+
+#### Returns:
+
+string
 
 
 
@@ -1590,32 +1595,32 @@ Fires when the time value changed in the TimePicker.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified time value</td>
 </tr>
@@ -1669,32 +1674,32 @@ Fires when the TimePicker popup before opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -1749,38 +1754,38 @@ Fires when the time value changed in the TimePicker.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name">
+isInteraction</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the value changed by user interaction otherwise returns false</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the modified time value</td>
 </tr>
@@ -1835,32 +1840,32 @@ Fires when the TimePicker popup closed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -1914,20 +1919,20 @@ Fires when create TimePicker successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1980,20 +1985,20 @@ Fires when the TimePicker is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2047,32 +2052,32 @@ Fires when the timepicker control gets focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current time value</td>
 </tr>
@@ -2127,32 +2132,32 @@ Fires when the timepicker control get lost focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current time value</td>
 </tr>
@@ -2206,32 +2211,32 @@ Fires when the TimePicker popup opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+model</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previous value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>
 </tr>
@@ -2285,32 +2290,32 @@ Fires when the value is selected from the TimePicker dropdownlist.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.prevTime{% endhighlight %}</td>
+<td class="name">
+prevTime</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the previously selected time value</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the selected time value</td>
 </tr>
