@@ -269,7 +269,7 @@ $("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");
 
 
 
-
+<ts name="ej.Direction">
 
 
 
@@ -588,7 +588,7 @@ $("#navpane").ejNavigationDrawer ("option", "listViewSettings.width", "200");
 
 
 
-### position `enum`
+### position `string`
 {:#members:position}
 
 
@@ -759,7 +759,7 @@ $("#navpane").ejNavigationDrawer ("option", "targetId", "left");
 
 
 
-### type `enum`
+### type `string`
 {:#members:type}
 
 
@@ -844,7 +844,7 @@ $("#navpane").ejNavigationDrawer ("option", "type", "overlay");
 
 
 
-### width `int`
+### width `number`
 {:#members:width}
 
 
@@ -1133,8 +1133,8 @@ Event triggers before the control gets closed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from Navigation Drawer
 <table class="params">
@@ -1147,32 +1147,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
+<td class="name">
+item</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the item of element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
+<td class="name">
+itemName</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">returns the name of item</td>
 </tr>
@@ -1250,8 +1250,8 @@ Event triggers when the control open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from Navigation Drawer
 <table class="params">
@@ -1264,33 +1264,33 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
+<td class="name">
+item</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the item of element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+itemName</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of item</td>
 </tr>
 </tbody>
@@ -1367,8 +1367,8 @@ Event triggers when the Swipe happens.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from Navigation Drawer
 <table class="params">
@@ -1381,33 +1381,33 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
+<td class="name">
+item</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the item of element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="name">
+itemName</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of item</td>
 </tr>
 </tbody>
