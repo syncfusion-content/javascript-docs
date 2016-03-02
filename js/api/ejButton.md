@@ -86,7 +86,6 @@ Specifies the contentType of the Button. See below to know available ContentType
 </thead>
 <tbody>
 <tr>
-<tr>
 <td class="name">
 TextOnly</td>
 <td class="description">To display the text content only in button</td>

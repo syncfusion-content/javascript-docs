@@ -362,7 +362,7 @@ It provides the options to get the customized character to separate the digits. 
 </script>{% endhighlight %}
 
 
-### height `string`
+### height `number|string`
 {:#members:height}
 
 
@@ -376,7 +376,7 @@ Specifies the height of the editor.
 
 
 
-* 30pixel
+* 30
 
 
 
@@ -771,7 +771,7 @@ Specifies whether the up and down spin buttons should be displayed in editor.
 
 
 
-### validateOnType `number`
+### validateOnType `boolean`
 {:#members:validateontype}
 
 
@@ -785,7 +785,7 @@ Enables decimal separator position validation on type .
 
 
 
-* 0
+* false
 
 
 
@@ -899,7 +899,7 @@ N> The property will work when the widget present inside the form. Additionally 
 
 
 
-### value `number`
+### value `number|string`
 {:#members:value}
 
 
@@ -981,7 +981,7 @@ Specify the watermark text to editor.
 
 
 
-### width `string`
+### width `number|string`
 {:#members:width}
 
 
@@ -995,7 +995,7 @@ Specifies the width of the editor.
 
 
 
-* 143pixel
+* 143
 
 
 
@@ -1032,7 +1032,7 @@ Specifies the width of the editor.
 
 
 
-Allows you to destroy the Editor widgets.
+destroy the editor widgets all events are unbind automatically and bring the control to pre-init state.
 
 
 
@@ -1209,6 +1209,11 @@ $("#percentage").ejPercentageTextbox("enable");
 To get value from corresponding Editors
 
 
+#### Returns:
+{:#methods:returns:}
+
+number
+
 
 #### Example
 
@@ -1282,32 +1287,32 @@ Fires after Editor control value is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name"> 
+ value </td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.isInteraction{% endhighlight %}</td>
+<td class="name"> 
+ isInteraction </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">returns true when the value changed by user interaction otherwise returns false</td>
 </tr>
@@ -1365,20 +1370,20 @@ Fires after Editor control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the editor model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1435,20 +1440,20 @@ Fires when the Editor is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name"> 
+ cancel </td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the editor model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name"> 
+ type </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1506,26 +1511,26 @@ Fires after Editor control is focused.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model</td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+ value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>
@@ -1583,8 +1588,8 @@ Fires after Editor control is loss the focus.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from editors.
 <table class="params">
@@ -1597,26 +1602,26 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+ cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+ model</td>
+<td class="type"><ts ref="ej.Editor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+<td class="name">
+ value</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the corresponding editor control value.</td>
 </tr>

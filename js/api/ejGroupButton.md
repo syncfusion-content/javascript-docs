@@ -1384,8 +1384,8 @@ Triggered before any button element in the GroupButtton get selected.
         <tbody>
             <tr>
                 <td class="name">
-
-                    argument
+                    {% highlight html %}
+                    argument{% endhighlight %}
                 </td>
                 <td class="type"><span class="param-type">Object</span></td>
                 <td class="description">
@@ -1441,7 +1441,7 @@ Triggered before any button element in the GroupButtton get selected.
                                 </td>
                                 <td class="type"><ts ref="ej.GroupButton.Model"/>
 <span class="param-type">object</span></td>
-                                <td class="description">returns the GroupButton model</td>
+                                <td class="description">returns the button model</td>
                             </tr>
                             <tr>
                                 <td class="name">
@@ -1469,7 +1469,7 @@ Triggered before any button element in the GroupButtton get selected.
                 </td>
             </tr>
         </tbody>
-    </table>
+        </table>
 
 
 #### Example
