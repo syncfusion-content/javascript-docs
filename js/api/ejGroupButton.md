@@ -1384,8 +1384,8 @@ Triggered before any button element in the GroupButtton get selected.
         <tbody>
             <tr>
                 <td class="name">
-                    {% highlight html %}
-                    argument{% endhighlight %}
+                    
+                    argument
                 </td>
                 <td class="type"><span class="param-type">Object</span></td>
                 <td class="description">
@@ -1691,8 +1691,7 @@ Triggered once the key is pressed, when the control is in focused state.
         <tbody>
             <tr>
                 <td class="name">
-                    {% highlight html %}
-                    argument{% endhighlight %}
+                    argument
                 </td>
                 <td class="type"><span class="param-type">Object</span></td>
                 <td class="description">
