@@ -55,7 +55,7 @@ $("#PivotPager1").ejPivotPager(...);
 
 Contains the current page number in categorical axis.
 
-**Default Value:** 1
+#### Default Value: 1
 
 **Example:**
 
@@ -70,7 +70,7 @@ $("#PivotPager1").ejPivotPager({ categoricalCurrentPage: 1 });
 
 Contains the total page count in categorical axis.
 
-**Default Value:** 1
+#### Default Value: 1
 
 **Example:**
 
@@ -85,7 +85,7 @@ $("#PivotPager1").ejPivotPager({ categPageCount: 1 });
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:**
 
@@ -98,9 +98,11 @@ $("#PivotPager1").ejPivotPager({ locale: "en-US" });
 ### mode `enum`
 {:#members:mode}
 
+<ts name = "ej.PivotPager.Mode"/>
+
 Sets the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager. 
 
-**Default Value:** ej.PivotPager.Mode.Both
+#### Default Value: ej.PivotPager.Mode.Both
 
 <table class="params">
     <thead>
@@ -138,7 +140,7 @@ $("#PivotPager1").ejPivotPager({ mode: ej.PivotPager.Mode.Series });
 
 Contains the current page number in series axis.
 
-**Default Value:** 1
+#### Default Value: 1
 
 **Example:**
 
@@ -153,7 +155,7 @@ $("#PivotPager1").ejPivotPager({ seriesCurrentPage: 1 });
 
 Contains the total page count in series axis.
 
-**Default Value:** 1
+#### Default Value: 1
 
 **Example:**
 
@@ -168,7 +170,7 @@ $("#PivotPager1").ejPivotPager({ seriesPageCount: 1 });
 
 Contains the ID of the target element for which paging needs to be done.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -203,6 +205,8 @@ pagerObj.initPagerProperties(150, {CategorialPageSize: 10, SeriesPageSize: 10, C
 
 ### Mode `enum`
 {:#enum:mode}
+
+<ts name = "ej.PivotPager.Mode"/>
 
 Allows the user to set the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager.
 
