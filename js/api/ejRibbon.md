@@ -162,6 +162,72 @@ Enables the ribbon resize feature.
 
 {% endhighlight %}
 
+### buttonDefaults `object`
+{:#members:buttondefaults}
+
+Specifies the height, width, enableRTL, showRoundedCorner,enabled,cssClass property to the controls in the ribbon commonly and 
+it will work only when those properties are not defined in buttonSettings and content defaults.
+
+#### Default Value:
+
+* object
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script>
+    $(function() {
+        $("#Ribbon").ejRibbon({
+            width: "100%",
+            buttonDefaults: {
+                width: 50,
+                height: 40,
+                showRoundedCorner: true
+            },
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            type: ej.Ribbon.type.button,
+                            buttonSettings: {
+                                width: 70,
+                                height: 50
+                            }
+                        }]
+                    }]
+                }]
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### showQAT `boolean`  
 {:#members:showqat}
 
@@ -5980,7 +6046,7 @@ Sets tooltip for the group expander of the group.
 {% endhighlight %}
 
 ### tabs.groups.groupExpanderSettings.customToolTip `object` 
-{:#members:tabs.groups.groupexpandersettings.customtooltip }
+{:#members:tabs-groups-groupexpandersettings-customtooltip }
 
 Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 

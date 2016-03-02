@@ -1307,7 +1307,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.template `Boolean`
+### columns.template `Boolean|String`
 {:#members:columns-template}
 
 Gets or sets a value that indicates whether to enables column template for a particular column.
@@ -1326,7 +1326,8 @@ Gets or sets a value that indicates whether to enables column template for a par
 <script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
- columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
+ columns:[{field:"OrderID",headerText:"TemplateColumn",template:"<span>{{:EmployeeID}}</span>"},
+          {field:"EmployeeID",headerText:"Employee",template:true,templateID:"#columnTemplate"} ]
 });
 </script>
 {% endhighlight %}
@@ -4744,6 +4745,11 @@ $("#Grid").ejGrid({
 
 Adds a grid model property which is to be ignored upon exporting.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 
 ####Example
 
@@ -4771,6 +4777,10 @@ $("#Grid").ejGrid("addIgnoreOnExport","filterSettings");
 
 Add a new record in grid control when allowAdding is set as true.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 
@@ -4798,6 +4808,10 @@ $("#Grid").ejGrid("addRecord",{OrderID:12333})
 
 Cancel the modified changes in grid control when edit mode is "batch".
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -4825,8 +4839,12 @@ $("#Grid").ejGrid("batchCancel");
 ### batchSave()
 {:#methods:batchsave}
 
-
 Save the modified changes to data source in grid control when edit mode is "batch".
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -4856,9 +4874,12 @@ $("#Grid").ejGrid("batchSave");
 ### cancelEdit()
 {:#methods:canceledit}
 
-
 Send a cancel request in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -4888,9 +4909,12 @@ $("#Grid").ejGrid("cancelEdit");
 ### cancelEditCell()
 {:#methods:canceleditcell}
 
-
 Send a cancel request to the edited cell in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -4920,6 +4944,11 @@ $("#Grid").ejGrid("cancelEditCell");
 {:#methods:clearcellselection}
 
 It is used to clear all the cell selection.
+
+#### Returns:
+{:#methods:returns:}
+
+Boolean
 
 ####Example
 {:.example}
@@ -4966,8 +4995,10 @@ It is used to clear all the row selection or at specific row selection based on 
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-
+Boolean
 
 ####Example
 {:.example}
@@ -5018,6 +5049,11 @@ It is used to clear all the filtering done.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -5042,9 +5078,12 @@ $("#Grid").ejGrid("clearFiltering"); // clears all the filtering
 ### clearSearching()
 {:#methods:clearsearching}
 
-
 Clear the searching from the grid
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5090,6 +5129,11 @@ Clear all the row selection or at specific row selection based on the index prov
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
 
 ####Example
 {:.example}
@@ -5118,9 +5162,12 @@ $("#Grid").ejGrid("clearSelection");
 ### clearSorting()
 {:#methods:clearsorting}
 
-
 Clear the sorting from columns in the grid
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5147,8 +5194,12 @@ $("#Grid").ejGrid("clearSorting");
 ### collapseAll()
 {:#methods:collapseall}
 
-
 Collapse all the group caption rows in grid
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5175,9 +5226,12 @@ $("#Grid").ejGrid("collapseAll");
 ### collapseGroupDropArea()
 {:#methods:collapsegroupdroparea}
 
-
 Collapse the group drop area in grid
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5205,8 +5259,6 @@ $("#Grid").ejGrid("collapseGroupDropArea");
 ### columns(columndetails, \[action\])
 {:#methods:columns}
 
-
-
 Add or remove columns in grid column collections
 
 <table class="params">
@@ -5230,6 +5282,11 @@ Add or remove columns in grid column collections
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 
 ####Example
@@ -5262,8 +5319,6 @@ $("#Grid").ejGrid("columns","CustomerID", "add");
 ### dataSource(datasource)
 {:#methods:datasource}
 
-
-
 Refresh the grid with new data source
 
 <table class="params">
@@ -5282,6 +5337,11 @@ Refresh the grid with new data source
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 
 ####Example
@@ -5309,7 +5369,6 @@ $("#Grid").ejGrid("dataSource", data);
 ### deleteRecord(fieldName, data)
 {:#methods:deleterecord}
 
-
 Delete a record in grid control when allowDeleting is set as true
 
 <table class="params">
@@ -5334,6 +5393,11 @@ Delete a record in grid control when allowDeleting is set as true
 </tbody>
 </table>
 
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5360,9 +5424,12 @@ $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 ### destroy()
 {:#methods:destroy}
 
-
 Destroy the grid widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5410,6 +5477,11 @@ Edit a particular cell based on the row index and field name provided in "batch"
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 
 ####Example
 {:.example}
@@ -5436,6 +5508,11 @@ $("#Grid").ejGrid("editCell", 2, "OrderID");
 
 Send a save request in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -5461,9 +5538,12 @@ $("#Grid").ejGrid("endEdit");
 ### expandAll()
 {:#methods:expandall}
 
-
 Expand all the group caption rows in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5504,11 +5584,16 @@ Expand or collapse the row based on the row state in grid
 <tbody>
 <tr>
 <td class="name">$target</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">JQuery</span></td>
 <td class="description last">Pass the target object to expand/collapse the row based on its row state</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Element
 
 
 ####Example
@@ -5537,6 +5622,11 @@ $("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand > div").first());
 {:#methods:expandgroupdroparea}
 
 Expand the group drop area in grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -5596,8 +5686,12 @@ Export the grid content to excel, word or pdf document.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+Void
+
+#### Example
 {:.example}
 
 
@@ -5661,8 +5755,12 @@ Send a filtering request to filter one column in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+Void
+
+#### Example
 {:.example}
 
 
@@ -5683,7 +5781,7 @@ $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
 </script>{% endhighlight %}
 
 
-### filterColumn(filterQueries)
+### filterColumn(filterCollection)
 {:#methods:filtercolumn}
 
 
@@ -5706,9 +5804,12 @@ Send a filtering request to filter single or multiple column in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
+Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5733,11 +5834,14 @@ $("#Grid").ejGrid("filterColumn",[{field:"OrderID",operator:"lessthan",value:"10
 ### getBatchChanges()
 {:#methods:getbatchchanges}
 
-
 Get the batch changes of edit, delete and add operations of grid.
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+Object
+
+#### Example
 {:.example}
 
 
@@ -5760,8 +5864,12 @@ $("#Grid").ejGrid("getBatchChanges");
 ### getBrowserDetails()
 {:#methods:getbrowserdetails}
 
-
 Get the browser details
+
+#### Returns:
+{:#methods:returns:}
+
+Object
 
 ####Example
 {:.example}
@@ -5810,14 +5918,12 @@ Get the column details based on the given field in grid
 </tbody>
 </table>
 
-
-
 #### Returns:
 {:#methods:returns:}
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5836,13 +5942,7 @@ gridObj.getColumnByField("OrderID");
 <script>
 // Gets the column details based on the given field name
 $("#Grid").ejGrid("getColumnByField", "OrderID");        
-</script>{% endhighlight %}
-
-
-
-
-
-
+</script>{% endhighlight %} 
 
 ### getColumnByHeaderText(headerText)
 {:#methods:getcolumnbyheadertext}
@@ -5873,7 +5973,7 @@ Get the column details based on the given header text in grid.
 Object
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5917,14 +6017,12 @@ Get the column details based on the given column index in grid
 </tbody>
 </table>
 
-
 #### Returns:
 {:#methods:returns:}
 
 Object
 
-
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -5947,10 +6045,14 @@ $("#Grid").ejGrid("getColumnByIndex", 1);
 ### getColumnFieldNames()
 {:#methods:getcolumnfieldnames}
 
-
 Get the list of field names from column collection in grid.
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Array
+
+#### Example
 {:.example}
 
 
@@ -5998,7 +6100,7 @@ Get the column index of the given field in grid.
 #### Returns:
 {:#methods:returns:}
 
-Index
+Number
 
 
 ####Example
@@ -6030,6 +6132,11 @@ $("#Grid").ejGrid("getColumnIndexByField", "OrderID");
 
 Get the content div element of grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Element
+
 ####Example
 {:.example}
 
@@ -6059,6 +6166,11 @@ $("#Grid").ejGrid("getContent");
 
 Get the content table element of grid
 
+#### Returns:
+{:#methods:returns:}
+
+Element
+
 ####Example
 {:.example}
 
@@ -6084,6 +6196,11 @@ $("#Grid").ejGrid("getContentTable");
 {:#methods:getcurrenteditcelldata}
 
 Get the data of currently edited cell value in "batch" edit mode
+
+#### Returns:
+{:#methods:returns:}
+
+Object
 
 ####Example
 {:.example}
@@ -6115,7 +6232,7 @@ Get the current page index in grid pager.
 #### Returns:
 {:#methods:returns:}
 
-PageIndex
+Number
 
 
 ####Example
@@ -6143,8 +6260,12 @@ $("#Grid").ejGrid("getCurrentIndex");
 ### getCurrentViewData()
 {:#methods:getcurrentviewdata}
 
-Get the current page data source of grid..
+Get the current page data source of grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Array
 
 ####Example
 {:.example}
@@ -6189,8 +6310,10 @@ Get the column field name from the given header text in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-
+String
 
 ####Example
 {:.example}
@@ -6219,6 +6342,11 @@ $("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
 
 Get the filter bar of grid
 
+#### Returns:
+{:#methods:returns:}
+
+Element
+
 ####Example
 {:.example}
 
@@ -6246,6 +6374,11 @@ $("#Grid").ejGrid("getFilterBar");
 
 Get the records filtered or searched in Grid
 
+#### Returns:
+{:#methods:returns:}
+
+Array
+
 ####Example
 {:.example}
 
@@ -6272,6 +6405,11 @@ $("#Grid").ejGrid("getFilteredRecords");
 
 Get the footer content of grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Element
+
 ####Example
 {:.example}
 
@@ -6297,8 +6435,12 @@ $("#Grid").ejGrid("getFooterContent");
 ### getFooterTable()
 {:#methods:getfootertable}
 
+Get the footer table element of grid.
 
-Get the footer table element of grid
+#### Returns:
+{:#methods:returns:}
+
+Element
 
 ####Example
 {:.example}
@@ -6324,9 +6466,14 @@ $("#Grid").ejGrid("getFooterTable");
 ### getHeaderContent()
 {:#methods:getheadercontent}
 
-Get the header content div element of grid..
+Get the header content div element of grid.
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Element
+
+#### Example
 {:.example}
 
 
@@ -6355,6 +6502,11 @@ $("#Grid").ejGrid("getHeaderContent");
 
 Get the header table element of grid
 
+#### Returns:
+{:#methods:returns:}
+
+Element
+
 ####Example
 {:.example}
 
@@ -6379,7 +6531,6 @@ $("#Grid").ejGrid("getHeaderTable");
 ### getHeaderTextByFieldName(field)
 {:#methods:getheadertextbyfieldname}
 
-
 Get the column header text from the given field name in grid.
 
 <table class="params">
@@ -6399,8 +6550,12 @@ Get the column header text from the given field name in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+String
+
+#### Example
 {:.example}
 
 
@@ -6423,10 +6578,14 @@ $("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
 ### getHiddenColumnNames()
 {:#methods:gethiddencolumnnames}
 
-
 Get the names of all the hidden column collections in grid.
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Array
+
+#### Example
 {:.example}
 
 
@@ -6465,7 +6624,7 @@ Get the row index based on the given tr element in grid.
 <tbody>
 <tr>
 <td class="name">$tr</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">JQuery</span></td>
 <td class="description last">Pass the tr element in grid content to get its row index</td>
 </tr>
 </tbody>
@@ -6474,7 +6633,7 @@ Get the row index based on the given tr element in grid.
 #### Returns:
 {:#methods:returns:}
 
-index
+Number
 
 
 ####Example
@@ -6502,9 +6661,12 @@ $("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());
 ### getPager()
 {:#methods:getpager}
 
+Get the pager of grid.
 
-Get the pager of grid..
+#### Returns:
+{:#methods:returns:}
 
+Element
 
 ####Example
 {:.example}
@@ -6531,14 +6693,12 @@ $("#Grid").ejGrid("getPager");
 ### getPrimaryKeyFieldNames()
 {:#methods:getprimarykeyfieldnames}
 
-
 Get the names of primary key columns in Grid
-
 
 #### Returns:
 {:#methods:returns:}
 
-key fields
+Array
 
 
 ####Example
@@ -6591,8 +6751,10 @@ Get the rows(tr element) from the given from and to row index in grid
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-
+Element
 
 ####Example
 {:.example}
@@ -6619,9 +6781,12 @@ $("#Grid").ejGrid("getRowByIndex", 3, 6);
 ### getRowHeight()
 {:#methods:getrowheight}
 
-
 Get the row height of grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Number
 
 ####Example
 {:.example}
@@ -6649,6 +6814,11 @@ $("#Grid").ejGrid("getRowHeight");
 {:#methods:getrows}
 
 Get the rows(tr element)of grid which is displayed in the current page.
+
+#### Returns:
+{:#methods:returns:}
+
+Element
 
 ####Example
 {:.example}
@@ -6678,6 +6848,11 @@ $("#Grid").ejGrid("getRows");
 Get the scroller object of grid.
 
 
+#### Returns:
+{:#methods:returns:}
+
+Object
+
 ####Example
 {:.example}
 
@@ -6704,6 +6879,11 @@ $("#Grid").ejGrid("getScrollObject");
 {:#methods:getselectedrecords}
 
 Get the selected records details in grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -6732,6 +6912,10 @@ $("#Grid").ejGrid("getSelectedRecords");
 
 Get the names of all the visible column collections in grid
 
+#### Returns:
+{:#methods:returns:}
+
+Array
 
 ####Example
 {:.example}
@@ -6776,6 +6960,10 @@ Send a paging request to specified page in grid
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -6821,6 +7009,11 @@ Send a column grouping request in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -6863,6 +7056,11 @@ Hide columns from the grid based on the header text
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -6892,6 +7090,10 @@ $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);
 
 Print the grid control
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -6922,6 +7124,10 @@ $("#Grid").ejGrid("print");
 
 It is used to refresh and reset the changes made in "batch" edit mode
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -6969,6 +7175,11 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 
 ####Example
 {:.example}
@@ -6999,9 +7210,12 @@ $("#Grid").ejGrid("refreshContent", true);
 ### refreshTemplate()
 {:#methods:refreshtemplate}
 
-
 Refresh the template of the grid
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7030,6 +7244,11 @@ $("#Grid").ejGrid("refreshTemplate");
 
 Refresh the toolbar items in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7056,8 +7275,6 @@ $("#Grid").ejGrid("refreshToolbar");
 ### removeSortedColumns(fieldName)
 {:#methods:removesortedcolumns}
 
-
-
 Remove a column or collection of columns from a sorted column collections in grid.
 
 <table class="params">
@@ -7077,8 +7294,12 @@ Remove a column or collection of columns from a sorted column collections in gri
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+Void
+
+#### Example
 {:.example}
 
 
@@ -7109,6 +7330,11 @@ $("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);
 
 
 Creates a grid control
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7161,7 +7387,12 @@ Re-order the column in grid
 </tbody>
 </table>
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
 {:.example}
 
 
@@ -7187,6 +7418,11 @@ $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
 {:#methods:resetmodelcollections}
 
 Reset the model collections like pageSettings, groupSettings, filterSettings, sortSettings and summaryRows.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7234,7 +7470,12 @@ Resize the columns by giving column name and width for the corresponding one.
 </tbody>
 </table>
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -7259,6 +7500,11 @@ $("#Grid").ejGrid("resizeColumns","OrderID",width);
 {:#methods:rowheightrefresh}
 
 Resolves row height issue when unbound column is used with FrozenColumn
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7288,6 +7534,11 @@ $("#Grid").ejGrid("rowHeightRefresh");
 
 Save the particular edited cell in grid.
 
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
 ####Example
 {:.example}
 
@@ -7312,7 +7563,7 @@ $("#Grid").ejGrid("saveCell);
 
 
 ###  setDimension()
-{:#methods:dimension}
+{:#methods:setdimension}
  
 Set dimension for grid with corresponding to grid parent.
 
@@ -7340,6 +7591,11 @@ Set dimension for grid with corresponding to grid parent.
 </table>
 
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7361,6 +7617,11 @@ Set dimension for grid with corresponding to grid parent.
 {:#methods:setwidthtocolumns}
 
 Send a request to grid to refresh the width set to columns
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7405,6 +7666,11 @@ Send a search request to grid with specified string passed in it
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7447,6 +7713,11 @@ Select cells in grid.
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7492,9 +7763,12 @@ Select columns in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
+Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7518,7 +7792,6 @@ $("#Grid").ejGrid("selectColumns", 1, 4);
 
 ### selectRows(fromIndex, toIndex)
 {:#methods:selectrows}
-
 
 Select rows in grid.
 
@@ -7544,8 +7817,12 @@ Select rows in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-####Example
+Void
+
+#### Example
 {:.example}
 
 
@@ -7570,8 +7847,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 ### selectRows(rowIndexes)
 {:#methods:selectRows}
 
-
-+
+Select rows in grid.
 
 <table class="param">
 <thead>
@@ -7590,7 +7866,10 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
+Void
 
 ####Example
 {:.example}
@@ -7652,6 +7931,11 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7702,10 +7986,14 @@ Used to update a particular cell value based on specified primarykeyvalue and fi
 <td class="description last">It is used to set the value for the cell based on specified primaryKeyValue and field name.</td>
 </tr>
 </tbody>
-
 </table>
 
-####Example
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
 {:.example}
 
 
@@ -7758,6 +8046,11 @@ Used to update a particular cell value based on specified row Index and the fiel
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7806,6 +8099,11 @@ Set validation to a field during editing.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7849,6 +8147,11 @@ Show columns in the grid based on the header text
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -7901,6 +8204,11 @@ Send a sorting request in grid.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -7925,7 +8233,6 @@ $("#Grid").ejGrid("sortColumn", "OrderID", "ascending");
 ### startEdit($tr)
 {:#methods:startedit}
 
-
 Send an edit record request in grid
 
 <table class="params">
@@ -7939,12 +8246,16 @@ Send an edit record request in grid
 <tbody>
 <tr>
 <td class="name">$tr</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">JQuery</span></td>
 <td class="description last">Pass the tr- selected row element to be edited in grid</td>
 </tr>
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Element
 
 ####Example
 {:.example}
@@ -7989,6 +8300,11 @@ Un-group a column from grouped columns collection in grid
 </tr>
 </tbody>
 </table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 ####Example
 {:.example}
@@ -8039,6 +8355,11 @@ Update a edited record in grid control when allowEditing is set as true.
 </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -8065,6 +8386,11 @@ $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 It adapts grid to its parent element or to the browsers window.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 ####Example
 {:.example}
 
@@ -8086,6 +8412,7 @@ $("#Grid").ejGrid("windowonresize");
 
 
 ## Events
+
 ### actionBegin
 {:#events:actionbegin}
 
@@ -8102,7 +8429,7 @@ Triggered for every grid action before its starts.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid is initialized:
 <table class="params">
 <thead>
@@ -8134,7 +8461,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid paging action starts:
 <table class="params">
 <thead>
@@ -8191,7 +8518,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid sorting action starts:
 <table class="params">
 <thead>
@@ -8238,7 +8565,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid grouping action starts:
 <table class="params">
 <thead>
@@ -8280,7 +8607,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record editing action starts:
 <table class="params">
 <thead>
@@ -8342,7 +8669,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record save action starts:
 <table class="params">
 <thead>
@@ -8394,7 +8721,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record cancel action starts:
 <table class="params">
 <thead>
@@ -8431,7 +8758,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record delete action starts:
 <table class="params">
 <thead>
@@ -8483,7 +8810,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when add new record action starts:
 <table class="params">
 <thead>
@@ -8525,7 +8852,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid filtering action starts:
 <table class="params">
 <thead>
@@ -8572,7 +8899,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action starts:</td>
 </tr>
 <tr>
@@ -8629,7 +8956,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
 <thead>
@@ -8681,7 +9008,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
 <thead>
@@ -8733,7 +9060,7 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterbeforeopen"
 <table class="params">
 <thead>
@@ -8803,6 +9130,7 @@ $("#Grid").ejGrid({
 
 ### actionComplete
 {:#events:actioncomplete}
+
 Triggered for every grid action success event.
 
 <table class="params">
@@ -8816,7 +9144,7 @@ Triggered for every grid action success event.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete when grid is initialized.
 <table class="params">
 <thead>
@@ -8853,7 +9181,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete after grid paging action is completed.
 <table class="params">
 <thead>
@@ -8920,7 +9248,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid sorting action is completed.
 <table class="params">
 <thead>
@@ -8977,7 +9305,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid grouping action is completed.
 <table class="params">
 <thead>
@@ -9029,7 +9357,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record editing action is completed.
 <table class="params">
 <thead>
@@ -9096,7 +9424,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record save action is completed.
 <table class="params">
 <thead>
@@ -9158,7 +9486,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record cancel action is completed.
 <table class="params">
 <thead>
@@ -9205,7 +9533,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record delete action is completed.
 <table class="params">
 <thead>
@@ -9267,7 +9595,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after add new record action is completed.
 <table class="params">
 <thead>
@@ -9324,7 +9652,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid filtering action is completed.
 <table class="params">
 <thead>
@@ -9381,12 +9709,12 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action end:</td>
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
 <thead>
@@ -9433,7 +9761,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
 <thead>
@@ -9485,7 +9813,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
 <thead>
@@ -9532,7 +9860,7 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
 <thead>
@@ -9623,7 +9951,7 @@ Triggered for every grid action server failure event.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionFailure when grid is initialized.
 <table class="params">
 <thead>
@@ -9665,7 +9993,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionFailure after grid paging action is completed.
 <table class="params">
 <thead>
@@ -9737,7 +10065,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid sorting action is completed.
 <table class="params">
 <thead>
@@ -9799,7 +10127,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid grouping action is completed.
 <table class="params">
 <thead>
@@ -9856,7 +10184,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record editing action is completed.
 <table class="params">
 <thead>
@@ -9928,7 +10256,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record save action is completed.
 <table class="params">
 <thead>
@@ -9995,7 +10323,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid record delete action is completed.
 <table class="params">
 <thead>
@@ -10062,7 +10390,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after add new record action is completed.
 <table class="params">
 <thead>
@@ -10124,7 +10452,7 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionFailure after grid filtering action is completed.
 <table class="params">
 <thead>
@@ -10215,7 +10543,7 @@ Triggered when record batch add.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchAdd event is triggered.
 <table class="params">
 <thead>
@@ -10307,7 +10635,7 @@ Triggered when record batch delete.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchDelete event is triggered.
 <table class="params">
 <thead>
@@ -10384,7 +10712,7 @@ Triggered before the batch add.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchAdd event is triggered.
 <table class="params">
 <thead>
@@ -10461,7 +10789,7 @@ Triggered before the batch delete.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchDelete event is triggered.
 <table class="params">
 <thead>
@@ -10543,7 +10871,7 @@ Triggered before the batch save.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchSave event is triggered.
 <table class="params">
 <thead>
@@ -10609,7 +10937,7 @@ Triggered before the record is going to be edited.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beginEdit event is triggered.
 <table class="params">
 <thead>
@@ -10690,7 +11018,7 @@ Triggered when record cell edit.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellEdit event is triggered.
 <table class="params">
 <thead>
@@ -10717,8 +11045,7 @@ Triggered when record cell edit.
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name">
-validationRules</td>
+<td class="name">validationRules</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the validation rules.</td>
 </tr>
@@ -10791,7 +11118,7 @@ Triggered when record cell save.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSave event is triggered.
 <table class="params">
 <thead>
@@ -10873,7 +11200,6 @@ $("#Grid").ejGrid({
 ### cellSelected
 {:#events:cellselected}
 
-
 Triggered after the cell is selected.
 
 <table class="params">
@@ -10887,7 +11213,7 @@ Triggered after the cell is selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
 <thead>
@@ -10978,7 +11304,7 @@ Triggered before the cell is going to be selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
 <thead>
@@ -11074,7 +11400,7 @@ Triggered when the column is being dragged.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrag event is triggered.
 <table class="params">
 <thead>
@@ -11149,7 +11475,7 @@ Triggered when column dragging begins.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDragStart event is triggered.
 <table class="params">
 <thead>
@@ -11224,7 +11550,7 @@ Triggered when the column is dropped.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrop event is triggered.
 <table class="params">
 <thead>
@@ -11299,7 +11625,7 @@ Triggered after the column is selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelected event is triggered.
 <table class="params">
 <thead>
@@ -11389,7 +11715,7 @@ Triggered before the column is going to be selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelecting event is triggered.
 <table class="params">
 <thead>
@@ -11484,7 +11810,7 @@ Triggered when context menu item is clicked
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextClick event is triggered.
 <table class="params">
 <thead>
@@ -11559,7 +11885,7 @@ Triggered before the context menu is opened.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextOpen event is triggered.
 <table class="params">
 <thead>
@@ -11633,9 +11959,8 @@ Triggered when the grid is rendered completely.
 </thead>
 <tbody>
 <tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
 <thead>
@@ -11696,7 +12021,7 @@ Triggered when the grid is bound with data during initial rendering.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when dataBound event is triggered.
 <table class="params">
 <thead>
@@ -11756,7 +12081,7 @@ Triggered when grid going to destroy.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when destroy event is triggered.
 <table class="params">
 <thead>
@@ -11816,7 +12141,7 @@ Triggered when detail template row is clicked to collapse.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsCollapse event is triggered.
 <table class="params">
 <thead>
@@ -11897,7 +12222,7 @@ Triggered detail template row is initialized.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
 <thead>
@@ -11967,7 +12292,7 @@ Triggered when detail template row is clicked to expand.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsExpand event is triggered.
 <table class="params">
 <thead>
@@ -12047,7 +12372,7 @@ Triggered after the record is added.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endAdd event is triggered.
 <table class="params">
 <thead>
@@ -12108,7 +12433,7 @@ Triggered after the record is deleted.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endDelete event is triggered.
 <table class="params">
 <thead>
@@ -12168,7 +12493,7 @@ Triggered after the record is edited.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endEdit event is triggered.
 <table class="params">
 <thead>
@@ -12230,7 +12555,7 @@ Triggered initial load.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when load event is triggered.
 <table class="params">
 <thead>
@@ -12296,7 +12621,7 @@ Triggered every time a request is made to access particular cell information, el
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
 <thead>
@@ -12392,7 +12717,7 @@ Triggered every time a request is made to access particular cell information, el
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
 <thead>
@@ -12476,9 +12801,8 @@ Triggered when record is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordClick event is triggered.
 <table class="params">
 <thead>
@@ -12573,7 +12897,7 @@ Triggered when record is double clicked.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordDoubleClick event is triggered.
 <table class="params">
 <thead>
@@ -12668,7 +12992,7 @@ Triggered after column resized.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resized event is triggered.
 <table class="params">
 <thead>
@@ -12758,7 +13082,7 @@ Triggered when column resize end.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeEnd event is triggered.
 <table class="params">
 <thead>
@@ -12850,7 +13174,7 @@ Triggered when column resize start.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeStart event is triggered.
 <table class="params">
 <thead>
@@ -12930,7 +13254,7 @@ Triggered when right clicked on grid element.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rightClick event is triggered.
 <table class="params">
 <thead>
@@ -13026,7 +13350,7 @@ Triggered every time a request is made to access row information, element and da
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
 <thead>
@@ -13103,7 +13427,7 @@ Triggered after the row is selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelected event is triggered.
 <table class="params">
 <thead>
@@ -13195,7 +13519,7 @@ Triggered before the row is going to be selected.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelecting event is triggered.
 <table class="params">
 <thead>
@@ -13281,7 +13605,7 @@ Triggered when refresh the template column elements in the Grid.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when templateRefresh event is triggered.
 <table class="params">
 <thead>
@@ -13362,7 +13686,7 @@ Triggered when toolbar item is clicked in grid.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
 <td class="description last">Arguments when toolBarClick event is triggered.
 <table class="params">
 <thead>
