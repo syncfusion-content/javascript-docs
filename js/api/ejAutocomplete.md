@@ -172,7 +172,7 @@ The root class for the **Autocomplete** textbox widget which helps in customizin
 
 {% endhighlight %}
 
-### dataSource `JSONobject|array`
+### dataSource `object|array`
 {:#members:datasource}
 
 The data source contains the list of data for the suggestions list. It can be a string array or json array. 
@@ -355,7 +355,7 @@ Displays the Autocomplete widget’s content from right to left when enabled.
 
 {% endhighlight %}
 
-### fields `JSONobject`
+### fields `object`
 {:#members:fields}
 
 Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
@@ -463,7 +463,7 @@ The search text can be highlighted in the AutoComplete suggestion list when enab
 
 {% endhighlight %}
 
-### itemsCount `Integer`
+### itemsCount `Number`
 {:#members:itemscount}
 
 Number of items to be displayed in the suggestion list.
@@ -482,7 +482,7 @@ Number of items to be displayed in the suggestion list.
 
 {% endhighlight %}
 
-### minCharacter `Integer`
+### minCharacter `Number`
 {:#members:mincharacter}
 
 Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
@@ -626,7 +626,7 @@ Indicates that the autocomplete textbox values can only be readable.
 
 {% endhighlight %}
 
-### selectValueByKey [Deprecated]
+### selectValueByKey [Deprecated] `Number`
 {:#members:selectvaluebykey}
 
 Sets the value for the Autocomplete textbox based on the given input key value.
