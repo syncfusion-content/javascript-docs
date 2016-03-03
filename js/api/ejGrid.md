@@ -8439,7 +8439,705 @@ $("#Grid").ejGrid("windowonresize");
 
 Triggered for every grid action before its starts.
 
--
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid is initialized:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid paging action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">currentPage</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the current selected page number.</td>
+</tr>
+<tr>
+<td class="name">previousPage</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the previous selected page number.</td>
+</tr>
+<tr>
+<td class="name">endIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the end row index of that current page.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">startIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the start row index of that current page.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid sorting action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the current grouped column field name.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">columnSortDirection</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the column sort direction.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid grouping action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the current grouped column field name.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid record editing action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current edited row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">originalEventType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the current action event type.</td>
+</tr>
+<tr>
+<td class="name">primaryKey</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns primary key.</td>
+</tr>
+<tr>
+<td class="name">primaryKeyValue</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns primary key value.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the edited row index.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid record save action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">foreignKeyData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the foreign key record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">selectedRow</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the selected row index.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid record cancel action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid record delete action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">foreignKeyData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the foreign key record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">tr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns selected row for delete.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when add new record action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid filtering action starts:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">currentFilteringColumn</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current filtering column field name.</td>
+</tr>
+<tr>
+<td class="name">filterCollection</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns filter details.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid excel filtering action starts:</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid request type as "filterbeforeopen"
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns current column field name.</td>
+</tr>
+<tr>
+<td class="name">columnType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns type of the column like number, string and so on.</td>
+</tr>
+<tr>
+<td class="name">filtermodel</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the excel filter model.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type as "filterbeforeopen".</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid request type as "filterchoicerequest"
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">dataSource</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the dataSource.</td>
+</tr>
+<tr>
+<td class="name">filtermodel</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the excel filter model.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the query manager.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type as "filterchoicerequest".</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid request type as "filterchoicesearch"
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">dataSource</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the dataSource.</td>
+</tr>
+<tr>
+<td class="name">filtermodel</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the excel filter model.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the query manager.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type as "filterchoicesearch".</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters when grid request type as "filterbeforeopen"
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns current column field name.</td>
+</tr>
+<tr>
+<td class="name">columnType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns type of the column like number, string and so on.</td>
+</tr>
+<tr>
+<td class="name">filtermodel</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the excel filter model.</td>
+</tr>
+<tr>
+<td class="name">isCustomFilter</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the customfilter option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns request type as "filterbeforeopen".</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 ####Example
 {:.example}
