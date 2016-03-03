@@ -1009,7 +1009,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### hiddenItemIndex `array`
-{:#members:hiddenItemIndex}
+{:#members:hiddenitemindex}
 
 
 
@@ -1073,7 +1073,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
@@ -1791,7 +1791,7 @@ $("#tab").ejTab("hide");
 
 
 ### hideItem(index)
-{:#methods:hideItem}
+{:#methods:hideitem}
 
 
 
@@ -2018,7 +2018,7 @@ $("#tab").ejTab("show");
 
 
 ### showItem(index)
-{:#methods:showItem}
+{:#methods:showitem}
 
 
 
