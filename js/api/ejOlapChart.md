@@ -689,7 +689,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">message</td>
 <td class="type">object</td>
-<td class="description last">return the error stacke tace of the original exception.</td>
+<td class="description last">return the error stack trace of the original exception.</td>
 </tr>
 <tr>
 <td class="name">element</td>
