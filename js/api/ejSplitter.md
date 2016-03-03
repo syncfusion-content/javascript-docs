@@ -11,7 +11,7 @@ keywords: Splitter, ejSplitter, syncfusion, Splitter api
 
 
 
-The Splitter is a layout control that enables you to divide a web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter control. The split bars are inserted automatically in between the adjacent panes.
+The Splitter is a layout control that enables you to divide a Web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter control. The split bars are inserted automatically in between the adjacent panes.
 
 
 
@@ -35,8 +35,8 @@ $(element).ejSplitter(options)
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
+<td class="name">
+options</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">settings for Splitter.</td>
 </tr>
@@ -569,13 +569,38 @@ N> We have renamed the API "enableAutoResize" to "isResponsive".
 {:#members:orientation}
 
 
+<ts name = "ej.Orientation"/>
 
 
 
 
 
 
-Specify the orientation for spliter control. See  <a href="global.html#enum:orientation">orientation</a>
+
+
+Specify the orientation for spliter control. See orientation
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="description">To set the horizontal orientation for splitter control</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="description">To set the vertical orientation for splitter control</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -764,25 +789,31 @@ To add a new pane to splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-content{% endhighlight %}</td>
+<td class="name">
+content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">content of pane.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-property{% endhighlight %}</td>
+<td class="name">
+property</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">pane properties.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">
+index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">index of pane.</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns:
+
+
+Element
 
 
 
@@ -855,8 +886,8 @@ To collapse the splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-paneIndex{% endhighlight %}</td>
+<td class="name">
+paneIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">index number of pane.</td>
 </tr>
@@ -934,8 +965,8 @@ To expand the splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-paneIndex{% endhighlight %}</td>
+<td class="name">
+paneIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">index number of pane.</td>
 </tr>
@@ -1071,15 +1102,13 @@ To remove a specified pane from the splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
+<td class="name">
+index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">index of pane.</td>
 </tr>
 </tbody>
 </table>
-
-
 
 
 #### Example
@@ -1155,8 +1184,8 @@ Fires before expanding / collapsing the split pane of splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from splitter control
 <table class="params">
@@ -1169,38 +1198,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-collapsed{% endhighlight %}</td>
+<td class="name">
+collapsed</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-expanded{% endhighlight %}</td>
+<td class="name">
+expanded</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-splitbarIndex{% endhighlight %}</td>
+<td class="name">
+splitbarIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1263,8 +1292,8 @@ Fires when splitter control pane has been created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from splitter control
 <table class="params">
@@ -1277,20 +1306,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1352,8 +1381,8 @@ Fires when splitter control pane has been destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from splitter control
 <table class="params">
@@ -1366,20 +1395,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1441,8 +1470,8 @@ Fires when expand / collapse operation in splitter control pane has been perform
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from splitter control
 <table class="params">
@@ -1455,38 +1484,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-collapsed{% endhighlight %}</td>
+<td class="name">
+collapsed</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-expanded{% endhighlight %}</td>
+<td class="name">
+expanded</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-splitbarIndex{% endhighlight %}</td>
+<td class="name">
+splitbarIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>
@@ -1549,8 +1578,8 @@ Fires when resize in splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from splitter control
 <table class="params">
@@ -1563,38 +1592,38 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-prevPane{% endhighlight %}</td>
+<td class="name">
+prevPane</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns previous pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-nextPane{% endhighlight %}</td>
+<td class="name">
+nextPane</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns next pane details.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-splitbarIndex{% endhighlight %}</td>
+<td class="name">
+splitbarIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>
 </tr>

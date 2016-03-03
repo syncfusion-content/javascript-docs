@@ -57,7 +57,7 @@ $(element).ejOlapChart()
 
 Specifies the CSS class to OlapChart to achieve custom theme.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -72,14 +72,14 @@ $("#OlapChart1").ejOlapChart({ cssClass : "gradient-lime" });
 
 Contains the serialized OlapReport at that instant, that is, current OlapReport. 
 
-**Default Value:** “”
+#### Default Value: “”
 
 ### customObject `object`
 {:#members:customobject}
 
 Object utilized to pass additional information between client-end and service-end.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -94,7 +94,7 @@ $("#OlapChart1").ejOlapChart({ customObject: {"key":"Hello World"} });
 
 Allows the user to enable 3D view of OlapChart.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -109,7 +109,7 @@ $("#OlapChart1").ejOlapChart({ enable3D: true });
 
 Allows the user to enable OlapChart’s responsiveness in the browser layout.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -124,7 +124,7 @@ $("#OlapChart1").ejOlapChart({ isResponsive: true });
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:**
 
@@ -139,7 +139,7 @@ $("#OlapChart1").ejOlapChart({ locale: "fr-FR" });
 
 Allows the user to rotate the angle of OlapChart in 3D view.
 
-**Default Value:** 0
+#### Default Value: 0
 
 **Example:**
 
@@ -154,7 +154,7 @@ $("#OlapChart1").ejOlapChart({ rotation: 45 });
 
 Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -169,7 +169,7 @@ $("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "MyMethod1", 
 
 Allows the user to set the custom name for the service method that’s responsible for exporting.
 
-**Default Value:** "Export"
+#### Default Value: "Export"
 
 **Example:**
 
@@ -185,7 +185,7 @@ $("# OlapChart1").ejOlapChart({ serviceMethodSettings: { exportOlapChart: "Expor
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for drilling up/down operation in OlapChart.
 
-**Default Value:** "DrillChart"
+#### Default Value: "DrillChart"
 
 **Example:**
 
@@ -195,12 +195,12 @@ $("#OlapChart1").ejOlapChart({ serviceMethodSettings: {drillDown: "DrillChartMyM
 
 {% endhighlight %}
 
-###  serviceMethodSettings.initialize `string`
+### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapChart.
 
-**Default Value:** "InitializeChart"
+#### Default Value: "InitializeChart"
 
 **Example:**
 
@@ -215,7 +215,7 @@ $("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "IninlizeChar
 
 Connects the service using the specified URL for any server updates.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -232,7 +232,6 @@ $("#OlapChart1").ejOlapChart({ url: "/OlapChartService.svc" });
 {:#methods:doajaxpost}
 
 Perform an asynchronous HTTP (AJAX) request.
-
 
 **Example:**
 
@@ -371,10 +370,9 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -385,40 +383,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -454,10 +446,9 @@ Triggers before any AJAX request is passed from OlapChart to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -468,40 +459,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -538,10 +523,9 @@ Triggers when drill up/down happens in OlapChart control.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -552,22 +536,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</span></td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type">string</span></td>
-<td class="description">returns the name of the event.</td>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -605,10 +586,9 @@ Triggers when OlapChart widget completes all operations at client-side after any
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -619,40 +599,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -690,10 +664,9 @@ Triggers when any error occurred during AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -704,46 +677,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-message{% endhighlight %}</td>
+<td class="name">message</td>
 <td class="type">object</td>
-<td class="description">return the error stacke tace of the original exception.</td>
+<td class="description last">return the error stack trace of the original exception.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -779,10 +745,9 @@ Triggers when OlapChart successfully reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from OlapChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -793,40 +758,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the OlapChart model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -852,6 +811,8 @@ $("#OlapChart1").ejOlapChart({
 
 ### SymbolShapes  `enum`
 {:#enum:symbolshapes}
+
+<ts name = "ej.olap.OlapChart.SymbolShapes"/>
 
 Allows the user to set shape for the marker.
 
@@ -958,6 +919,8 @@ $("#OlapChart1").ejOlapChart({commonSeriesOptions :{marker :{ shape: ej.olap.Ola
 ### ChartTypes `enum`
 {:#enum:charttypes}
 
+<ts name = "ej.olap.OlapChart.ChartTypes"/>
+
 Allows the user to set the type for OlapChart.
 
 <table class="params">
@@ -1049,6 +1012,8 @@ $("#OlapChart1").ejOlapChart({commonSeriesOptions :{ type: ej.olap.OlapChart.Cha
 
 ### ExportOption  `enum`
 {:#enum:exportoption }
+
+<ts name = "ej.olap.OlapChart.ExportOptions"/>
 
 Allows the user to export OlapChart to an appropriate format based on the parameter passed.
 

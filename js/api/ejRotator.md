@@ -155,7 +155,7 @@ Turns on keyboard interaction with the Rotator items. You must set this property
 
 
 
-### animationSpeed `string`  `number`
+### animationSpeed `string|number`
 {:#members:animationspeed}
 
 
@@ -486,7 +486,7 @@ Sets the delay between the Rotator Items move after the slide transition.
 
 
 
-### displayItemsCount `string`  `number`
+### displayItemsCount `string|number`
 {:#members:displayitemscount}
 
 
@@ -893,7 +893,7 @@ Specifies the URL for an image.
 
 
 
-### frameSpace `string`  `number`
+### frameSpace `string|number`
 {:#members:framespace}
 
 
@@ -1005,7 +1005,7 @@ Resizes the Rotator when the browser is resized.
 
 
 
-### navigateSteps `string`  `number`
+### navigateSteps `string|number`
 {:#members:navigatesteps}
 
 
@@ -1066,7 +1066,7 @@ Specifies the number of Rotator Items to navigate on a single click (next/previo
 
 
 
-
+<ts name="ej.Orientation">
 
 
 
@@ -1117,12 +1117,12 @@ Specifies the orientation for the Rotator control, that is, whether it must be r
 
 
 
-### pagerPosition `string`  `enum`
+### pagerPosition `string|enum`
 {:#members:pagerposition}
 
 
 
-
+<ts name="ej.Rotator.PagerPosition">
 
 
 
@@ -1499,7 +1499,7 @@ Turns on or off thumbnail support in the Rotator control. Thumbnail is used to n
 
 
 
-### slideHeight `string`  `number`
+### slideHeight `string|number`
 {:#members:slideheight}
 
 
@@ -1555,7 +1555,7 @@ Sets the height of a Rotator Item.
 
 
 
-### slideWidth `string`  `number`
+### slideWidth `string|number`
 {:#members:slidewidth}
 
 
@@ -1611,7 +1611,7 @@ Sets the width of a Rotator Item.
 
 
 
-### startIndex `string`  `number`
+### startIndex `string|number`
 {:#members:startindex}
 
 
@@ -1915,14 +1915,13 @@ $("#sliderContent").ejRotator("enable");
 
 
 
-
-
-
-
-
 This method is used to get the current slide index.
 
 
+#### Returns:
+{:#methods:returns:}
+
+number
 
 
 
@@ -1969,7 +1968,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### gotoIndex(index)</span>
+### gotoIndex(index)
 {:#methods:gotoindex}
 
 
@@ -2311,8 +2310,8 @@ This event is fired when the Rotator slides are changed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2325,32 +2324,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemId{% endhighlight %}</td>
+<td class="name">
+itemId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeItemIndex{% endhighlight %}</td>
+<td class="name">
+activeItemIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current slide index.</td>
 </tr>
@@ -2411,8 +2410,8 @@ This event is fired when the Rotator control is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2425,20 +2424,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2499,8 +2498,8 @@ This event is fired when the Rotator control is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2513,20 +2512,20 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2587,8 +2586,8 @@ This event is fired when a pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2601,32 +2600,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemId{% endhighlight %}</td>
+<td class="name">
+itemId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeItemIndex{% endhighlight %}</td>
+<td class="name">
+activeItemIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current slide index.</td>
 </tr>
@@ -2687,8 +2686,8 @@ This event is fired when enableAutoPlay is started.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2701,32 +2700,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemId{% endhighlight %}</td>
+<td class="name">
+itemId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeItemIndex{% endhighlight %}</td>
+<td class="name">
+activeItemIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current slide index.</td>
 </tr>
@@ -2787,8 +2786,8 @@ This event is fired when autoplay is stopped or paused.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2801,32 +2800,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemId{% endhighlight %}</td>
+<td class="name">
+itemId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeItemIndex{% endhighlight %}</td>
+<td class="name">
+activeItemIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current slide index.</td>
 </tr>
@@ -2887,8 +2886,8 @@ This event is fired when a thumbnail pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">
+argument</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description">Event parameters from button
 <table class="params">
@@ -2901,32 +2900,32 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemId{% endhighlight %}</td>
+<td class="name">
+itemId</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-activeItemIndex{% endhighlight %}</td>
+<td class="name">
+activeItemIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current slide index.</td>
 </tr>

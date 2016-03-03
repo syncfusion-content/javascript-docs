@@ -47,7 +47,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner(...);
 
 Specifies the CSS class to PivotSchemaDesigner to achieve custom theme.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -62,7 +62,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({cssClass: "gradient-lime"});
 
 Object utilized to pass additional information between client-end and service-end.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -76,9 +76,9 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ customObject: {"MyObject": "H
 ### enableWrapper `boolean`
 {:#members:enablewrapper}
 
-For ASP.NET and MVC Wrapper, Pivots Shema Designer will be initialized and rendered empty initially. Once PivotGrid widget is rendered completely, Pivots Shema Designer will just be populated with data source by setting this property to “true”.
+For ASP.NET and MVC Wrapper, Pivots Schema Designer will be initialized and rendered empty initially. Once PivotGrid widget is rendered completely, Pivots Schema Designer will just be populated with data source by setting this property to “true”.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -94,7 +94,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ enableWrapper : true });
 
 Allows the user to set the list of filters in filter section.
 
-**Default Value:** new Array()
+#### Default Value: new Array()
 
 **Example:**
 
@@ -109,7 +109,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({filters: []});
 
 Sets the height for PivotSchemaDesigner.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -125,7 +125,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({height: "630px"});
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:**
 
@@ -141,7 +141,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ locale: "en-US" });
 
 Allows the user to set list of PivotCalculations in values section.
 
-**Default Value:** new Array()
+#### Default Value: new Array()
 
 **Example:**
 
@@ -157,7 +157,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotCalculations: []});
 
 Allows the user to set the list of PivotItems in column section.
 
-**Default Value:** new Array()
+#### Default Value: new Array()
 
 **Example:**
 
@@ -173,7 +173,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotColumns: []});
 
 Sets the Pivot control bound with this PivotSchemaDesigner.
 
-**Default Value:** null
+#### Default Value: null
 
 **Example:**
 
@@ -188,7 +188,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotControl: controlObject});
 
 Allows the user to set the list of PivotItems in row section.
 
-**Default Value:** new Array()
+#### Default Value: new Array()
 
 **Example:**
 
@@ -203,7 +203,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotRows: []});
 
 Allows the user to arrange the fields inside Field List of PivotSchemaDesigner.
 
-**Default Value:** new Array()
+#### Default Value: new Array()
 
 **Example:**
 
@@ -218,7 +218,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotTableFields: []});
 
 Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -234,7 +234,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { initialize: 
 
 Allows the user to set the custom name for the service method that’s responsible for getting the values for the tree-view inside filter dialog.
 
-**Default Value:** "FetchMembers"
+#### Default Value: "FetchMembers"
 
 **Example:**
 
@@ -250,7 +250,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod:  { fetchMember
 
 Allows the user to set the custom name for the service method that’s responsible for filtering operation in Field List.
 
-**Default Value:** "Filtering"
+#### Default Value: "Filtering"
 
 **Example:**
 
@@ -266,7 +266,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod:  { filtering :
 
 Allows the user to set the custom name for the service method that’s responsible for the server-side action, on expanding members in Field List.
 
-**Default Value:** "MemberExpanded"
+#### Default Value: "MemberExpanded"
 
 **Example:**
 
@@ -283,7 +283,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { memberExpand
 
 Allows the user to set the custom name for the service method that’s responsible for the server-side action, on dropping a node into Field List.
 
-**Default Value:** "NodeDropped"
+#### Default Value: "NodeDropped"
 
 **Example:**
 
@@ -298,7 +298,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { nodeDropped:
 
 Allows the user to set the custom name for the service method that’s responsible for the server-side action on changing the checked state of a node in Field List.
 
-**Default Value:** "NodeStateModified"
+#### Default Value: "NodeStateModified"
 
 **Example:**
 
@@ -309,12 +309,12 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { nodeStateMod
 {% endhighlight %}
 
 
-### serviceMethod.romveButton `string`
-{:#members:servicemethod-romvebutton}
+### serviceMethod.removeButton `string`
+{:#members:servicemethod-removebutton}
 
 Allows the user to set the custom name for the service method that’s responsible for remove operation in Field List.
 
-**Default Value:** "RemoveButton"
+#### Default Value: "RemoveButton"
 
 **Example:**
 
@@ -330,7 +330,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { removeButton
 
 Connects the service using the specified URL for any server updates.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -345,7 +345,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({url: "/wcf/PivotService.svc"})
 
 Sets the width for PivotSchemaDesigner.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -393,10 +393,9 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotSchemaDesinger
+<td class="description last">Event parameters from PivotSchemaDesigner
 <table class="params">
 <thead>
 <tr>
@@ -407,40 +406,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of PivotSchemaDesinger control.</td>
+<td class="description last">return the current action of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with PivotSchemaDesinger control.</td>
+<td class="description last">return the custom object bounds with PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of PivotSchemaDesinger control.</td>
+<td class="description last">return the outer HTML of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the PivotSchemaDesinger model</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
+<td class="description last">returns the PivotSchemaDesigner model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -463,7 +456,7 @@ $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")({
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from PivotSchemaDesinger to service methods.
+Triggers before any AJAX request is passed from PivotSchemaDesigner to service methods.
 
 <table class="params">
 <thead>
@@ -475,10 +468,9 @@ Triggers before any AJAX request is passed from PivotSchemaDesinger to service m
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotSchemaDesinger
+<td class="description last">Event parameters from PivotSchemaDesigner
 <table class="params">
 <thead>
 <tr>
@@ -489,40 +481,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of PivotSchemaDesinger control.</td>
+<td class="description last">return the current action of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with PivotSchemaDesinger control.</td>
+<td class="description last">return the custom object bounds with PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of PivotSchemaDesinger control.</td>
+<td class="description last">return the outer HTML of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the PivotSchemaDesinger model</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
+<td class="description last">returns the PivotSchemaDesigner model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>

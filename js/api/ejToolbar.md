@@ -157,7 +157,7 @@ Sets the root CSS class for Toolbar control to acheive the custom theme.
 
 
 
-### dataSource `ObjectArray`
+### dataSource `object`
 {:#members:datasource}
 
 
@@ -594,7 +594,7 @@ Defines the tooltip text for the tag.
 
 
 
-### height `number/string`
+### height `number|string`
 {:#members:height}
 
 
@@ -785,13 +785,38 @@ Enables/Disables the responsive support for Toolbar items during the window resi
 
 
 
-### orientation `enum`  `string`
+### orientation `enum|string`
 {:#members:orientation}
+
+
+<ts name = "ej.Orientation"/>
 
 
 
 
 Specifies the Toolbar orientation. See orientation
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="description">To set the horizontal orientation for toolbar control</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="description">To set the vertical orientation for toolbar control</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -986,7 +1011,7 @@ Displays the Toolbar with rounded corners.
 </script>{% endhighlight %}
 
 
-### width `number/string`
+### width `number|string`
 {:#members:width}
 
 
@@ -1052,7 +1077,7 @@ Specifies the width of the Toolbar.
 
 
 
-### deselectItem()
+### deselectItem(element)
 {:#methods:deselectitem}
 
 
@@ -1071,8 +1096,8 @@ Deselect the specified Toolbar item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">The element need to be deselected</td>
 </tr>
@@ -1125,7 +1150,7 @@ $("#toolbar1").ejToolbar("deselectItem",$("li")[3]); //Deselect the Toolbar item
 
 
 
-### deselectItemByID()
+### deselectItemByID(ID)
 {:#methods:deselectitembyid}
 
 
@@ -1143,8 +1168,8 @@ Deselect the Toolbar item based on specified id.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">The ID of the element need to be deselected</td>
 </tr>
@@ -1307,7 +1332,7 @@ $("#toolbar1").ejToolbar("disable"); //Disable all item in the Toolbar
 
 
 
-### disableItem()
+### disableItem(element)
 {:#methods:disableitem}
 
 
@@ -1326,8 +1351,8 @@ Disable the specified Toolbar item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">The element need to be disabled</td>
 </tr>
@@ -1378,7 +1403,7 @@ $("#toolbar1").ejToolbar("disableItem",$("li")[3]);// to disable the third item 
 
 
 
-### disableItemByID()
+### disableItemByID(ID)
 {:#methods:disableitembyid}
 
 
@@ -1397,8 +1422,8 @@ Disable the Toolbar item based on specified item id in the Toolbar.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">The ID of the element need to be disabled</td>
 </tr>
@@ -1504,7 +1529,7 @@ $("#toolbar1").ejToolbar("enable"); //enable all item in the Toolbar
 
 
 
-### enableItem()
+### enableItem(element)
 {:#methods:enableitem}
 
 
@@ -1523,8 +1548,8 @@ Enable the Toolbar item based on specified item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">The element need to be enabled</td>
 </tr>
@@ -1576,7 +1601,7 @@ $("#toolbar1").ejToolbar("enableItem",$("li")[3]);// to enable the third item in
 
 
 
-### enableItemByID()
+### enableItemByID(ID)
 {:#methods:enableitembyid}
 
 
@@ -1595,8 +1620,8 @@ Enable the Toolbar item based on specified item id in the Toolbar.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">The ID of the element need to be enabled</td>
 </tr>
@@ -1701,7 +1726,7 @@ $("#toolbar1").ejToolbar("hide");// to hide the toolbar
 
 
 
-### removeItem()
+### removeItem(element)
 {:#methods:removeitem}
 
 
@@ -1720,8 +1745,8 @@ Remove the item from toolbar, based on specified item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">The element need to be removed</td>
 </tr>
@@ -1773,7 +1798,7 @@ $("#toolbar1").ejToolbar("removeItem",$("li")[3]); // Remove the Toolbar item
 
 
 
-### removeItemByID()
+### removeItemByID(ID)
 {:#methods:removeitembyid}
 
 
@@ -1792,8 +1817,8 @@ Remove the item from toolbar, based on specified item id in the Toolbar.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">The ID of the element need to be removed</td>
 </tr>
@@ -1845,7 +1870,7 @@ $("#toolbar1").ejToolbar("removeItemByID","left"); // Remove the Toolbar item by
 
 
 
-### selectItem()
+### selectItem(element)
 {:#methods:selectitem}
 
 
@@ -1864,8 +1889,8 @@ Selects the item from toolbar, based on specified item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">The element need to be selected</td>
 </tr>
@@ -1917,7 +1942,7 @@ $("#toolbar1").ejToolbar("selectItem",$("li")[3]);//Select the Toolbar item.
 
 
 
-### selectItemByID()
+### selectItemByID(ID)
 {:#methods:selectitembyid}
 
 
@@ -1936,8 +1961,8 @@ Selects the item from toolbar, based on specified item id in the Toolbar.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-ID{% endhighlight %}</td>
+<td class="name">
+ID</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">The ID of the element need to be selected</td>
 </tr>
@@ -2065,43 +2090,43 @@ Fires after Toolbar control is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">return the event object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentTarget{% endhighlight %}</td>
+<td class="name">
+currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
 </tr>
@@ -2174,20 +2199,20 @@ Fires after Toolbar control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2261,20 +2286,20 @@ Fires when the Toolbar is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -2347,38 +2372,38 @@ Fires after Toolbar control item is hovered.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentTarget{% endhighlight %}</td>
+<td class="name">
+currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
 </tr>
@@ -2451,38 +2476,38 @@ Fires after mouse leave from Toolbar control item.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Toolbar model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.currentTarget{% endhighlight %}</td>
+<td class="name">
+currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.status{% endhighlight %}</td>
+<td class="name">
+status</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">return the Toolbar state</td>
 </tr>

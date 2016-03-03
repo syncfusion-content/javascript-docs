@@ -52,7 +52,7 @@ $("#PivotGrid1").ejPivotGrid(...);
 
 Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
 
-**Default Value:** ej.PivotGrid.AnalysisMode.Olap
+#### Default Value: ej.PivotGrid.AnalysisMode.Olap
 
 **Example:**
 
@@ -68,7 +68,7 @@ $("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Relational
 
 Specifies the CSS class to PivotGrid to achieve custom theme.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -83,14 +83,14 @@ $("#PivotGrid1").ejPivotGrid({ cssClass: "gradient-lime" });
 
 Contains the serialized OlapReport at that instant.
 
-**Default Value:** “”
+#### Default Value: “”
 
 ### dataSource `object`
 {:#members:datasource}
 
 Initializes the data source for the PivotGrid widget, when it functions completely on client-side.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -102,11 +102,11 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {data:value}});
 
 
 ### dataSource.data `object`
-{:#members:dataSource-data}
+{:#members:datasource-data}
 
 Provides the raw data source for the PivotGrid.
 
-**Default Value:** null
+#### Default Value: null
 
 **Example:**
 
@@ -122,7 +122,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {data: value}});
 
 Lists out the items to be arranged in column section of PivotGrid.
 
-**Default Value:** []
+#### Default Value: []
 
 **Example:**
 
@@ -137,7 +137,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: itemsArray}});
 
 Lists out the items to be arranged in row section of PivotGrid.
 
-**Default Value:** []
+#### Default Value: []
 
 **Example:**
 
@@ -153,7 +153,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: itemsArray}});
 
 Lists out the items which supports calculation in PivotGrid.
 
-**Default Value:** []
+#### Default Value: []
 
 **Example:**
 
@@ -169,7 +169,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {values: itemsArray}});
 
 Lists out the items which supports filtering of values in PivotGrid.
 
-**Default Value:** []
+#### Default Value: []
 
 **Example:**
 
@@ -185,7 +185,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {filters: itemsArray}});
 
 Object utilized to pass additional information between client-end and service-end.
 
-**Default Value:** null
+#### Default Value: null
 
 **Example:**
 
@@ -200,7 +200,7 @@ $("#PivotGrid1").ejPivotGrid({ customObject: { Language: "en-US" }});
 
 Allows the user to access each cell on right-click.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -215,7 +215,7 @@ $("#PivotGrid1").ejPivotGrid({ enableCellContext: true });
 
 Enables the cell selection for a specified range of value cells.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -230,7 +230,7 @@ $("#PivotGrid1").ejPivotGrid({ enableCellSelection:true });
 
 Collapses the Pivot Items along rows and columns by default.  It works only for relational data source.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -245,7 +245,7 @@ $("#PivotGrid1").ejPivotGrid({enableCollapseByDefault: true});
 
 Enables the display of grand total for all the columns.
 
-**Default Value:** true
+#### Default Value: true
 
 **Example:**
 
@@ -260,7 +260,7 @@ $("#PivotGrid1").ejPivotGrid({enableColumnGrandTotal: true});
 
 Allows the user to format a specific set of cells based on the condition. 
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -276,7 +276,7 @@ $("#PivotGrid1").ejPivotGrid({ enableConditionalFormatting:true });
 
 Allows the user to refresh the control on-demand and not during every UI operation.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -292,7 +292,7 @@ $("#PivotGrid1").ejPivotGrid({enableDeferUpdate: true});
 
 Enables the display of GroupingBar allowing you to filter, sort and remove fields obtained from relational datasource.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -308,7 +308,7 @@ $("#PivotGrid1").ejPivotGrid({ enableGroupingBar:true });
 
 Enables the display of grand total for rows and columns.
 
-**Default Value:** true
+#### Default Value: true
 
 **Example:**
 
@@ -324,7 +324,7 @@ $("#PivotGrid1").ejPivotGrid({enableGrandTotal: true});
 
 Allows the user to load PivotGrid using JSON data.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -339,7 +339,7 @@ $("#PivotGrid1").ejPivotGrid({ enableJSONRendering: true });
 
 Enables rendering of PivotGrid widget along with the PivotTable Field List, which allows UI operation.
 
-**Default Value:** true
+#### Default Value: true
 
 **Example:**
 
@@ -354,7 +354,7 @@ $("#PivotGrid1").ejPivotGrid({enablePivotFieldList: true});
 
 Enables the display of grand total for all the rows.
 
-**Default Value:** true
+#### Default Value: true
 
 **Example:**
 
@@ -369,7 +369,7 @@ $("#PivotGrid1").ejPivotGrid({enableRowGrandTotal: true});
 
 Allows the user to view PivotGrid from right to left.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -384,7 +384,7 @@ $("#PivotGrid1").ejPivotGrid({ enableRTL: true });
 
 Allows the user to enable ToolTip option.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -399,7 +399,7 @@ $("#PivotGrid1").ejPivotGrid({ enableToolTip: true });
 
 Allows the user to view large amount of data through virtual scrolling.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -414,7 +414,7 @@ $("#PivotGrid1").ejPivotGrid({ enableVirtualScrolling: true });
 
 Allows the user to configure hyperlink settings of PivotGrid control.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -427,9 +427,9 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: {enableValueCellHyperlink: tru
 ### hyperlinkSettings.enableColumnHeaderHyperlink `boolean`
 {:#members:hyperlinksettings-enablecolumnheaderhyperlink}
 
-Allows the user to enable/diable hyperlink for column header.
+Allows the user to enable/disable hyperlink for column header.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -442,9 +442,9 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableColumnHeaderHyperlink:
 ### hyperlinkSettings.enableRowHeaderHyperlink `boolean`
 {:#members:hyperlinksettings-enablerowheaderhyperlink}
 
-Allows the user to enable/diable hyperlink for row header.
+Allows the user to enable/disable hyperlink for row header.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -457,9 +457,9 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableRowHeaderHyperlink: tr
 ### hyperlinkSettings.enableSummaryCellHyperlink `boolean`
 {:#members:hyperlinksettings-enablesummarycellhyperlink}
 
-Allows the user to enable/diable hyperlink for summary cells.
+Allows the user to enable/disable hyperlink for summary cells.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -472,9 +472,9 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableSummaryCellHyperlink: 
 ### hyperlinkSettings.enableValueCellHyperlink `boolean`
 {:#members:hyperlinksettings-enablevaluecellhyperlink}
 
-Allows the user to enable/diable hyperlink for value cells.
+Allows the user to enable/disable hyperlink for value cells.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -489,7 +489,7 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableValueCellHyperlink: tr
 
 Allows the user to enable PivotGrid’s responsiveness in the browser layout.
 
-**Default Value:** false
+#### Default Value: false
 
 **Example:**
 
@@ -504,14 +504,16 @@ $("#PivotGrid1").ejPivotGrid({ isResponsive: true });
 
 Contains the serialized JSON string which renders PivotGrid.
 
-**Default Value:** “”
+#### Default Value: “”
 
 ### layout `enum`
 {:#members:layout}
 
+<ts name = "ej.PivotGrid.Layout"/>
+
 Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
 
-**Default Value:** ej.PivotGrid.Layout.Normal
+#### Default Value: ej.PivotGrid.Layout.Normal
 
 <table class="params">
     <thead>
@@ -553,7 +555,7 @@ $("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.NoSummaries });
 
 Allows the user to set the localized language for the widget.
 
-**Default Value:** "en-US"
+#### Default Value: "en-US"
 
 **Example:**
 
@@ -569,7 +571,7 @@ $("#PivotGrid1").ejPivotGrid({ locale: "en-US" }});
 
 Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
 
-**Default Value:** ej.PivotGrid.OperationalMode.ClientMode
+#### Default Value: ej.PivotGrid.OperationalMode.ClientMode
 
 **Example:**
 
@@ -584,7 +586,7 @@ $("#PivotGrid1").ejPivotGrid({operationalMode: ej.PivotGrid.OperationalMode.Serv
 
 Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
 
-**Default Value:** {}
+#### Default Value: {}
 
 **Example:**
 
@@ -599,7 +601,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { initialize: "InitializeG
 
 Allows the user to set the custom name for the service method that&#39;s responsible for drill up/down operation in PivotGrid.
 
-**Default Value:** "DrillGrid"
+#### Default Value: "DrillGrid"
 
 **Example:**
 
@@ -614,7 +616,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillDown: "DrillGridMyM
 
 Allows the user to set the custom name for the service method that’s responsible for exporting.
 
-**Default Value:** "Export"
+#### Default Value: "Export"
 
 **Example:**
 
@@ -629,7 +631,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { exportPivotGrid: "Export
 
 Allows the user to set the custom name for the service method that’s responsible for performing server-side actions on defer update.
 
-**Default Value:** "DeferUpdate"
+#### Default Value: "DeferUpdate"
 
 **Example:**
 
@@ -644,7 +646,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { deferUpdate: "DeferUpdat
 
 Allows the user to set the custom name for the service method that’s responsible to getting the values for the tree-view inside filter dialog.
 
-**Default Value:** "FetchMembers"
+#### Default Value: "FetchMembers"
 
 **Example:**
 
@@ -659,7 +661,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings:  { fetchMembers: "FetchMem
 
 Allows the user to set the custom name for the service method that's responsible for filtering operation in PivotGrid.
 
-**Default Value:** "Filtering"
+#### Default Value: "Filtering"
 
 **Example:**
 
@@ -674,7 +676,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings:  { filtering : "FilteringM
 
 Allows the user to set the custom name for the service method that&#39;s responsible for initializing PivotGrid.
 
-**Default Value:** "InitializeGrid"
+#### Default Value: "InitializeGrid"
 
 **Example:**
 
@@ -689,7 +691,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { initialize: "InitializeG
 
 Allows the user to set the custom name for the service method that's responsible for the server-side action, on dropping a node into Field List.
 
-**Default Value:** "NodeDropped"
+#### Default Value: "NodeDropped"
 
 **Example:**
 
@@ -704,7 +706,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { nodeDropped: "nodedroppe
 
 Allows the user to set the custom name for the service method that’s responsible for the server-side action on changing the checked state of a node in Field List.
 
-**Default Value:** "NodeStateModified"
+#### Default Value: "NodeStateModified"
 
 **Example:**
 
@@ -719,7 +721,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { nodeStateModified: "Node
 
 Allows the user to set the custom name for the service method that&#39;s responsible for performing paging operation in PivotGrid.
 
-**Default Value:** "Paging"
+#### Default Value: "Paging"
 
 **Example:**
 
@@ -734,7 +736,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { paging: "PagingMyMethod"
 
 Allows the user to set the custom name for the service method that's responsible for sorting operation in PivotGrid.
 
-**Default Value:** "Sorting"
+#### Default Value: "Sorting"
 
 **Example:**
 
@@ -749,7 +751,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { sorting: "SortingMethod"
 
 Connects the service using the specified URL for any server updates.
 
-**Default Value:** “”
+#### Default Value: “”
 
 **Example:**
 
@@ -880,10 +882,9 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotGrid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -894,40 +895,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of PivotGrid control.</td>
+<td class="description last">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with PivotGrid control.</td>
+<td class="description last">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of PivotGrid control.</td>
+<td class="description last">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the PivotGrid model</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -962,10 +957,9 @@ Triggers before any AJAX request is passed from PivotGrid to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotGrid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -976,40 +970,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">return the current action of PivotGrid control.</td>
+<td class="description last">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description">return the custom object bounds with PivotGrid control.</td>
+<td class="description last">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">return the outer HTML of PivotGrid control.</td>
+<td class="description last">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the PivotGrid model</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1043,10 +1031,9 @@ Triggers when right-click action is performed on a cell.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotGrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1057,34 +1044,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellPosition{% endhighlight %}</td>
+<td class="name">cellPosition</td>
 <td class="type">string</td>
-<td class="description">returns the cell position (row index and column index) in table.</td>
+<td class="description last">returns the cell position (row index and column index) in table.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellType{% endhighlight %}</td>
+<td class="name">cellType</td>
 <td class="type">string</td>
-<td class="description">returns the type of the cell.</td>
+<td class="description last">returns the type of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-uniqueName{% endhighlight %}</td>
+<td class="name">uniqueName</td>
 <td class="type">string</td>
-<td class="description">returns the unique name of levels/members.</td>
+<td class="description last">returns the unique name of levels/members.</td>
 </tr>
 </tbody>
 </table>
@@ -1119,10 +1101,9 @@ Triggers when a specific range of value cells are selected.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from PivotGrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1133,40 +1114,34 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellvalue{% endhighlight %}</td>
+<td class="name">cellvalue</td>
 <td class="type">object</td>
-<td class="description">Returns the selected cell values.</td>
+<td class="description last">Returns the selected cell values.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowheaders{% endhighlight %}</td>
+<td class="name">rowheaders</td>
 <td class="type">object</td>
-<td class="description">Returns the selected value cells row headers.</td>
+<td class="description last">Returns the selected value cells row headers.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-colheaders{% endhighlight %}</td>
+<td class="name">colheaders</td>
 <td class="type">object</td>
-<td class="description">Returns the selected value cells column headers.</td>
+<td class="description last">Returns the selected value cells column headers.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-measure{% endhighlight %}</td>
+<td class="name">measure</td>
 <td class="type">object</td>
-<td class="description">Returns the selected value cells measure.</td>
+<td class="description last">Returns the selected value cells measure.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-measureValue{% endhighlight %}</td>
+<td class="name">measureValue</td>
 <td class="type">object</td>
-<td class="description">Return the row and column measure count.</td>
+<td class="description last">Return the row and column measure count.</td>
 </tr>
 </tbody>
 </table>
@@ -1200,10 +1175,9 @@ Triggers when the hyperlink of column header is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1214,34 +1188,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellPosition{% endhighlight %}</td>
+<td class="name">cellPosition</td>
 <td class="type">string</td>
-<td class="description">returns the cell position (row index and column index) in table.</td>
+<td class="description last">returns the cell position (row index and column index) in table.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellType{% endhighlight %}</td>
+<td class="name">cellType</td>
 <td class="type">string</td>
-<td class="description">returns the type of the cell.</td>
+<td class="description last">returns the type of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-uniqueName{% endhighlight %}</td>
+<td class="name">uniqueName</td>
 <td class="type">string</td>
-<td class="description">returns the unique name of levels/members.</td>
+<td class="description last">returns the unique name of levels/members.</td>
 </tr>
 </tbody>
 </table>
@@ -1276,10 +1245,9 @@ Triggers after performing drill operation in PivotGrid.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1290,22 +1258,19 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the Pivotgrid model</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1339,10 +1304,9 @@ Triggers when PivotGrid loading is initiated.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1353,46 +1317,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the Pivotgrid model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1426,10 +1383,9 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1440,46 +1396,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the Pivotgrid model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1513,10 +1462,9 @@ Triggers when any error occurred during AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1527,52 +1475,44 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-message{% endhighlight %}</td>
+<td class="name">message</td>
 <td class="type">Object</td>
-<td class="description">returns the error message with error code.</td>
+<td class="description last">returns the error message with error code.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the Pivotgrid model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1607,10 +1547,9 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1621,46 +1560,39 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-action{% endhighlight %}</td>
+<td class="name">action</td>
 <td class="type">string</td>
-<td class="description">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-customObject{% endhighlight %}</td>
+<td class="name">customObject</td>
 <td class="type">Object</td>
-<td class="description">returns the custom object bounded with the control.</td>
+<td class="description last">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
+<td class="name">element</td>
 <td class="type">string</td>
-<td class="description">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type">boolean</td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type">object</td>
-<td class="description">returns the Pivotgrid model.</td>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type">string</td>
-<td class="description">returns the name of the event.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1695,10 +1627,9 @@ Triggers when the hyperlink of row header is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1709,34 +1640,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellPosition{% endhighlight %}</td>
+<td class="name">cellPosition</td>
 <td class="type">string</td>
-<td class="description">returns the cell position (row index and column index) in table.</td>
+<td class="description last">returns the cell position (row index and column index) in table.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellType{% endhighlight %}</td>
+<td class="name">cellType</td>
 <td class="type">string</td>
-<td class="description">returns the type of the cell.</td>
+<td class="description last">returns the type of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-uniqueName{% endhighlight %}</td>
+<td class="name">uniqueName</td>
 <td class="type">string</td>
-<td class="description">returns the unique name of levels/members.</td>
+<td class="description last">returns the unique name of levels/members.</td>
 </tr>
 </tbody>
 </table>
@@ -1770,10 +1696,9 @@ Triggers when the hyperlink of summary cell is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1784,34 +1709,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellPosition{% endhighlight %}</td>
+<td class="name">cellPosition</td>
 <td class="type">string</td>
-<td class="description">returns the cell position (row index and column index) in table.</td>
+<td class="description last">returns the cell position (row index and column index) in table.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellType{% endhighlight %}</td>
+<td class="name">cellType</td>
 <td class="type">string</td>
-<td class="description">returns the type of the cell.</td>
+<td class="description last">returns the type of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-uniqueName{% endhighlight %}</td>
+<td class="name">uniqueName</td>
 <td class="type">string</td>
-<td class="description">returns the unique name of levels/members.</td>
+<td class="description last">returns the unique name of levels/members.</td>
 </tr>
 </tbody>
 </table>
@@ -1845,10 +1765,9 @@ Triggers when the hyperlink of value cell is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1859,34 +1778,29 @@ argument{% endhighlight %}</td>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-args{% endhighlight %}</td>
+<td class="name">args</td>
 <td class="type">object</td>
-<td class="description">returns the original event args.</td>
+<td class="description last">returns the original event args.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellPosition{% endhighlight %}</td>
+<td class="name">cellPosition</td>
 <td class="type">string</td>
-<td class="description">returns the cell position (row index and column index) in table.</td>
+<td class="description last">returns the cell position (row index and column index) in table.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cellType{% endhighlight %}</td>
+<td class="name">cellType</td>
 <td class="type">string</td>
-<td class="description">returns the type of the cell.</td>
+<td class="description last">returns the type of the cell.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rowData{% endhighlight %}</td>
+<td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-uniqueName{% endhighlight %}</td>
+<td class="name">uniqueName</td>
 <td class="type">string</td>
-<td class="description">returns the unique name of levels/members.</td>
+<td class="description last">returns the unique name of levels/members.</td>
 </tr>
 </tbody>
 </table>
@@ -1910,6 +1824,8 @@ $("#PivotGrid1").ejPivotGrid({
 
 ### AnalysisMode  `enum`
 {:#enum:analysismode}
+
+<ts name = "ej.PivotGrid.AnalysisMode"/>
 
 Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
 
@@ -1944,6 +1860,8 @@ $("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Olap});
 
 ### ExportOptions  `enum`
 {:#enum:exportoptions}
+
+<ts name = "ej.PivotGrid.ExportOptions"/>
 
 Allows the user to set the exporting options for PivotGrid widget.
 
@@ -1985,6 +1903,8 @@ $("#PivotGrid1").ejPivotGrid({ exportOptions: ej.PivotGrid.ExportOptions.Excel})
 ### Layout  `enum`
 {:#enum:layout}
 
+<ts name = "ej.PivotGrid.Layout"/>
+
 Allows the user to set the layout for PivotGrid.
 
 <table class="params">
@@ -2025,6 +1945,8 @@ $("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.Normal });
 
 ### OperationalMode  `enum`
 {:#enum:operationalmode}
+
+<ts name = "ej.PivotGrid.OperationalMode"/>
 
 Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
 
