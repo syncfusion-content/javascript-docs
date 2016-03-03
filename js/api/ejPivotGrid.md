@@ -427,7 +427,7 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: {enableValueCellHyperlink: tru
 ### hyperlinkSettings.enableColumnHeaderHyperlink `boolean`
 {:#members:hyperlinksettings-enablecolumnheaderhyperlink}
 
-Allows the user to enable/diable hyperlink for column header.
+Allows the user to enable/disable hyperlink for column header.
 
 #### Default Value: false
 
@@ -442,7 +442,7 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableColumnHeaderHyperlink:
 ### hyperlinkSettings.enableRowHeaderHyperlink `boolean`
 {:#members:hyperlinksettings-enablerowheaderhyperlink}
 
-Allows the user to enable/diable hyperlink for row header.
+Allows the user to enable/disable hyperlink for row header.
 
 #### Default Value: false
 
@@ -457,7 +457,7 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableRowHeaderHyperlink: tr
 ### hyperlinkSettings.enableSummaryCellHyperlink `boolean`
 {:#members:hyperlinksettings-enablesummarycellhyperlink}
 
-Allows the user to enable/diable hyperlink for summary cells.
+Allows the user to enable/disable hyperlink for summary cells.
 
 #### Default Value: false
 
@@ -472,7 +472,7 @@ $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableSummaryCellHyperlink: 
 ### hyperlinkSettings.enableValueCellHyperlink `boolean`
 {:#members:hyperlinksettings-enablevaluecellhyperlink}
 
-Allows the user to enable/diable hyperlink for value cells.
+Allows the user to enable/disable hyperlink for value cells.
 
 #### Default Value: false
 
@@ -1061,7 +1061,7 @@ Triggers when right-click action is performed on a cell.
 <tr>
 <td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description last">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
 <td class="name">uniqueName</td>
@@ -1177,7 +1177,7 @@ Triggers when the hyperlink of column header is clicked.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1205,7 +1205,7 @@ Triggers when the hyperlink of column header is clicked.
 <tr>
 <td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description last">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
 <td class="name">uniqueName</td>
@@ -1247,7 +1247,7 @@ Triggers after performing drill operation in PivotGrid.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1265,7 +1265,7 @@ Triggers after performing drill operation in PivotGrid.
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
-<td class="description last">returns the Pivotgrid model</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1306,7 +1306,7 @@ Triggers when PivotGrid loading is initiated.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1324,7 +1324,7 @@ Triggers when PivotGrid loading is initiated.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -1334,7 +1334,7 @@ Triggers when PivotGrid loading is initiated.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1344,7 +1344,7 @@ Triggers when PivotGrid loading is initiated.
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
-<td class="description last">returns the Pivotgrid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1385,7 +1385,7 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1403,7 +1403,7 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -1413,7 +1413,7 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1423,7 +1423,7 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
-<td class="description last">returns the Pivotgrid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1464,7 +1464,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1482,7 +1482,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -1492,7 +1492,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">message</td>
@@ -1507,7 +1507,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
-<td class="description last">returns the Pivotgrid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1549,7 +1549,7 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1567,7 +1567,7 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">returns the current action of Pivotgrid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -1577,7 +1577,7 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the HTML of Pivotgrid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1587,7 +1587,7 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotGrid.Model"/>object</td>
-<td class="description last">returns the Pivotgrid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1629,7 +1629,7 @@ Triggers when the hyperlink of row header is clicked.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1657,7 +1657,7 @@ Triggers when the hyperlink of row header is clicked.
 <tr>
 <td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description last">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
 <td class="name">uniqueName</td>
@@ -1698,7 +1698,7 @@ Triggers when the hyperlink of summary cell is clicked.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1726,7 +1726,7 @@ Triggers when the hyperlink of summary cell is clicked.
 <tr>
 <td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description last">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
 <td class="name">uniqueName</td>
@@ -1767,7 +1767,7 @@ Triggers when the hyperlink of value cell is clicked.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from Pivotgrid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1795,7 +1795,7 @@ Triggers when the hyperlink of value cell is clicked.
 <tr>
 <td class="name">rowData</td>
 <td class="type">string</td>
-<td class="description last">returns the seriealized data of the header cells.</td>
+<td class="description last">returns the serialized data of the header cells.</td>
 </tr>
 <tr>
 <td class="name">uniqueName</td>

@@ -76,7 +76,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ customObject: {"MyObject": "H
 ### enableWrapper `boolean`
 {:#members:enablewrapper}
 
-For ASP.NET and MVC Wrapper, Pivots Shema Designer will be initialized and rendered empty initially. Once PivotGrid widget is rendered completely, Pivots Shema Designer will just be populated with data source by setting this property to “true”.
+For ASP.NET and MVC Wrapper, Pivots Schema Designer will be initialized and rendered empty initially. Once PivotGrid widget is rendered completely, Pivots Schema Designer will just be populated with data source by setting this property to “true”.
 
 #### Default Value: false
 
@@ -309,8 +309,8 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { nodeStateMod
 {% endhighlight %}
 
 
-### serviceMethod.romveButton `string`
-{:#members:servicemethod-romvebutton}
+### serviceMethod.removeButton `string`
+{:#members:servicemethod-removebutton}
 
 Allows the user to set the custom name for the service method that’s responsible for remove operation in Field List.
 
@@ -395,7 +395,7 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotSchemaDesinger
+<td class="description last">Event parameters from PivotSchemaDesigner
 <table class="params">
 <thead>
 <tr>
@@ -408,17 +408,17 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotSchemaDesinger control.</td>
+<td class="description last">return the current action of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotSchemaDesinger control.</td>
+<td class="description last">return the custom object bounds with PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotSchemaDesinger control.</td>
+<td class="description last">return the outer HTML of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -428,7 +428,7 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
-<td class="description last">returns the PivotSchemaDesinger model</td>
+<td class="description last">returns the PivotSchemaDesigner model</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -456,7 +456,7 @@ $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")({
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from PivotSchemaDesinger to service methods.
+Triggers before any AJAX request is passed from PivotSchemaDesigner to service methods.
 
 <table class="params">
 <thead>
@@ -470,7 +470,7 @@ Triggers before any AJAX request is passed from PivotSchemaDesinger to service m
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotSchemaDesinger
+<td class="description last">Event parameters from PivotSchemaDesigner
 <table class="params">
 <thead>
 <tr>
@@ -483,17 +483,17 @@ Triggers before any AJAX request is passed from PivotSchemaDesinger to service m
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotSchemaDesinger control.</td>
+<td class="description last">return the current action of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotSchemaDesinger control.</td>
+<td class="description last">return the custom object bounds with PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotSchemaDesinger control.</td>
+<td class="description last">return the outer HTML of PivotSchemaDesigner control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -503,7 +503,7 @@ Triggers before any AJAX request is passed from PivotSchemaDesinger to service m
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
-<td class="description last">returns the PivotSchemaDesinger model</td>
+<td class="description last">returns the PivotSchemaDesigner model</td>
 </tr>
 <tr>
 <td class="name">type</td>
