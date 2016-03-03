@@ -306,8 +306,8 @@ The below code snippet demonstrates this,
             columns: [
                 { field: "taskID", headerText: "Task Id"},
                 { field: "taskName", headerText: "Task Name",allowEditing: false },
-                { field: "startDate", headerText: "Start Date},
-                { field: "endDate", headerText: "End Date” }
+                { field: "startDate", headerText: "Start Date"},
+                { field: "endDate", headerText: "End Date" }
             ]
         })
     });
