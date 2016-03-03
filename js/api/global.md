@@ -2706,11 +2706,25 @@ None</td>
 <td class="description">Disables all DiagramConstraints</td>
 </tr>
 <tr>
+<tr>
+<td class="name">
+UserInteraction</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Enables/Disables the interaction at runtime</td>
+</tr>
+<tr>
+<td class="name">
+APIUpdate</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Enables/Disables to edit the page programmatically</td>
+</tr>
 <td class="name">
 PageEditable</td>
 <td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description">Enables/Disables PageEditing</td>
+<td class="description">Enables/Disables the interaction and APIUpdate</td>
 </tr>
 <tr>
 <td class="name">
@@ -2760,13 +2774,6 @@ Resizable</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
 <td class="description">Autamatically adjusts the view port size, when the window is resized</td>
-</tr>
-<tr>
-<td class="name">
-APIUpdate</td>
-<td class="type">DiagramConstraints</td>
-<td class="default">LSH</td>
-<td class="description">Enables/Disables to edit the page programmatically</td>
 </tr>
 <tr>
 <td class="name">
