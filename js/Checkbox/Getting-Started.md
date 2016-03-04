@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**.**Essential JavaScript Checkbox** provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
+This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**.**Essential JavaScript Checkbox** provides support for multiple selections, within your web page and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
 
 
 

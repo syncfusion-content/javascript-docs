@@ -9,7 +9,7 @@ documentation: ug
 
 # Button Type
 
-**Button** is used as normal clickable button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. Using the **type** property, you can easily render the button in following types.
+**Button** is used as normal click able button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. Using the **type** property, you can easily render the button in following types.
 
 List of Button types
 
@@ -22,7 +22,7 @@ List of Button types
          button
       </td>
       <td>
-         The button is a clickable button
+         The button is a click able button
       </td>
    </tr>
    <tr>

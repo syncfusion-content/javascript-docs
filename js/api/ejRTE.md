@@ -927,10 +927,10 @@ Sets the fontName in the RTE.
 
 * {text: "Segoe UI", value: "Segoe UI" },
 {text: "Arial", value: "Arial,Helvetica,sans-serif" },
-{text: "Courier New", value: "Courier New,Courier,monospace" },
+{text: "Courier New", value: "Courier New,Courier,Monospace" },
 {text: "Georgia", value: "Georgia,serif" },
 {text: "Impact", value: "Impact,Charcoal,sans-serif" },
-{text: "Lucida Console", value: "Lucida Console,Monaco,monospace" },
+{text: "Lucida Console", value: "Lucida Console,Monaco,Monospace" },
 {text: "Tahoma", value: "Tahoma,Geneva,sans-serif" },
 {text: "Times New Roman", value: "Times New Roman" },
 {text: "Trebuchet MS", value: "Trebuchet MS,Helvetica,sans-serif" }, 
@@ -3839,7 +3839,7 @@ $("#rteSample").ejRTE("refresh");// Refreshes the rte
 
 
 
-Removes the given tool from the RTE ToolBbar.
+Removes the given tool from the RTE Toolbar.
 
 
 #### Example
@@ -3970,7 +3970,7 @@ Selects the contents in the given range.
 
 
 
-Sets the colorpicker model type rendered initially in the RTE control.
+Sets the color picker model type rendered initially in the RTE control.
 
 
 
