@@ -1205,7 +1205,7 @@ Change the DatePicker calendar and date format based on given culture.
 
 
 
-### maxDate `string | object`
+### maxDate `string | date`
 {:#members:maxdate}
 
 
@@ -1255,7 +1255,7 @@ Specifies the maximum date in the calendar that the user can select.
 
 
 
-### minDate `string | object`
+### minDate `string | date`
 {:#members:mindate}
 
 
@@ -1986,7 +1986,7 @@ Sets the jQuery validation custom rules to the DatePicker. see [validation](http
 
 
 
-### value `string | object`
+### value `string | date`
 {:#members:value}
 
 

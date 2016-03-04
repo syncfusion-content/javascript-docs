@@ -263,10 +263,37 @@ Allow to render the minimum number of Rating shape(star).
 {:#members:orientation}
 
 
-<ts name="ej.Orientation">
+<ts name="ej.Orientation" />
 
 
 Specifies the orientation of Rating control. See <a href="global.html#Orientation">Orientation</a>
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
+<td class="default">horizontal</td>
+<td class="description">Used to set Orientation as Horizontal</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="default">vertical</td>
+<td class="description">Used to set Orientation as Vertical</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -296,9 +323,44 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 ### precision `enum`
 {:#members:precision}
 
-<ts name="ej.Rating.Precision">
+<ts name="ej.Rating.Precision" />
 
 Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See <a href="global.html#Precision">Precision</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Exact</td>
+<td class="type">string</td>
+<td class="default">exact</td>
+<td class="description">Used to set Precision as Exact</td>
+</tr>
+<tr>
+<td class="name">
+Full</td>
+<td class="type">string</td>
+<td class="default">full</td>
+<td class="description">Used to set Precision as Full</td>
+</tr>
+<tr>
+<td class="name">
+Half</td>
+<td class="type">string</td>
+<td class="default">half</td>
+<td class="description">Used to set Precision as Half</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value

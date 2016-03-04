@@ -1944,7 +1944,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-event.element</td>
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
@@ -2069,7 +2069,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-event.element</td>
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
@@ -2194,7 +2194,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-event.element</td>
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the clicked menu item element</td>
 </tr>
@@ -2206,13 +2206,13 @@ selectedItem</td>
 </tr>
 <tr>
 <td class="name">
-event.menuId</td>
+menuId</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the menu id</td>
 </tr>
 <tr>
 <td class="name">
-event.menuText</td>
+menuText</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">return the clicked menu item text</td>
 </tr>

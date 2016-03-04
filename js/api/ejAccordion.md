@@ -724,11 +724,36 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 ### heightAdjustMode `enum|string`
 {:#members:heightadjustmode}
 
-<ts name="ej.Accordion.HeightAdjustMode"/>
+<ts name="ej.Accordion.HeightAdjustMode" />
 
-Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content. See <a href=
-"global.html#HeightAdjustMode">HeightAdjustMode</a>
+Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content. 
 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Content</td>
+<td class="description">Height fit to the content in the panel</td>
+</tr>
+<tr>
+<td class="name">
+Auto</td>
+<td class="description">Height set to the largest content in the panel</td>
+</tr>
+<tr>
+<td class="name">
+Fill</td>
+<td class="description">Height filled to the content of the panel</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value

@@ -1164,7 +1164,7 @@ Defines the time format displayed in the TimePicker.
 
 
 
-### value `string|object`
+### value `string|Date`
 {:#members:value}
 
 

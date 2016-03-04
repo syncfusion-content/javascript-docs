@@ -1805,14 +1805,36 @@ $("#treeView").ejTreeView({
 {:#members:sortSettings-sortOrder}
 
 
-<ts name = "ej.sortOrder">
+<ts name = "ej.sortOrder"/>
 
 
 
 
 
-Sets the sorting order type. There are two sorting types available, such as "ascending", "descending". See <a href="global#enum:sortorder">sortOrder</a>
+Sets the sorting order type. There are two sorting types available, such as "ascending", "descending".
 
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Ascending</td>
+<td class="description">Enum for Ascending sort order</td>
+</tr>
+<tr>
+<td class="name">
+Descending</td>
+<td class="description">Enum for Descending sort order</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2120,7 +2142,7 @@ To add a collection of nodes in TreeView. If target tree node is specified, then
 <tr>
 <td class="name">
 collection</td>
-<td class="type"><span class="param-type">object|Array of Object</span></td>
+<td class="type"><span class="param-type">object|Array</span></td>
 <td class="description">New node details in JSON object</td>
 </tr>
 <tr>
@@ -6606,13 +6628,13 @@ Fires once node checked successfully.
 <tr>
 <td class="name"> 
  currentNode </td>
-<td class="type"><span class="param-type">Array of string</span></td>
+<td class="type"><span class="param-type">Array</span></td>
 <td class="description">it returns the currently checked node name</td>
 </tr>
 <tr>
 <td class="name"> 
  currentCheckedNodes </td>
-<td class="type"><span class="param-type">Array of object</span></td>
+<td class="type"><span class="param-type">Array</span></td>
 <td class="description">it returns the currently checked and its child node details</td>
 </tr>
 </tbody>
@@ -7913,7 +7935,7 @@ Fires once node unchecked successfully.
 <tr>
 <td class="name">
  currentUncheckedNodes </td>
-<td class="type"><span class="param-type">Array of object</span></td>
+<td class="type"><span class="param-type">Array</span></td>
 <td class="description">it returns currently unchecked node and its child node details.</td>
 </tr>
 </tbody>
