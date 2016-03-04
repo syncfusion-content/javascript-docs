@@ -873,7 +873,6 @@ Specifies the type of the Barcode. See <a href="global.html#SymbologyType">Symbo
         </tr>
     </tbody>
 </table>
-
 Default Value:
 {:.param}
 
