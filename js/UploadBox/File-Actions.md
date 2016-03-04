@@ -37,7 +37,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% endhighlight %}
 
-Configure the handler to save the file. Create a folder (for example, uploadfiles) and save the uploaded files into this folder.  
+Configure the handler to save the file. Create a folder (for example, upload files) and save the uploaded files into this folder.  
 
 {% highlight c# %}
 
