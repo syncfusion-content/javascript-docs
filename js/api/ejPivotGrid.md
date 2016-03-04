@@ -117,7 +117,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {data: value}});
 {% endhighlight %}
 
 
-### dataSource.columns `object`
+### dataSource.columns `array`
 {:#members:datasource-columns}
 
 Lists out the items to be arranged in column section of PivotGrid.
@@ -132,7 +132,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: itemsArray}});
 
 {% endhighlight %}
 
-### dataSource.rows `object`
+### dataSource.rows `array`
 {:#members:datasource-rows}
 
 Lists out the items to be arranged in row section of PivotGrid.
@@ -148,7 +148,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: itemsArray}});
 {% endhighlight %}
 
 
-### dataSource.values `object`
+### dataSource.values `array`
 {:#members:datasource-values}
 
 Lists out the items which supports calculation in PivotGrid.
@@ -164,7 +164,7 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {values: itemsArray}});
 {% endhighlight %}
 
 
-### dataSource.filters `object`
+### dataSource.filters `array`
 {:#members:datasource-filters}
 
 Lists out the items which supports filtering of values in PivotGrid.

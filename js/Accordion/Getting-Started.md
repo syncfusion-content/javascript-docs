@@ -208,11 +208,11 @@ The following screenshot illustrates the **Accordion** control with rounded corn
 
 ## Customize Icon
 
-You can customize the **Header** icon using **customIcon** property. This property has two features such as **header** and **selectedHeade**r. By default, the classes of **header** and **selectedHeader** are **e-collapse** and **e-expand** respectively**.**
+You can customize the **Header** icon using **customIcon** property. This property has two features such as **header** and **selectedHeader**. By default, the classes of **header** and **selectedHeader** are **e-collapse** and **e-expand** respectively**.**
 
 You can change the + and - symbols in the **Accordion** header, that are the default icons with Up or Down arrow icons. 
 
-Up or Down arrow icons are available in **e-arrowheadup** and **e- arrowheaddown** classes respectively in the ej.widjets.core.min.css stylesheets from the sample. 
+Up or Down arrow icons are available in **e-arrowheadup** and **e- arrowheaddown** classes respectively in the ej.widgets.core.min.css stylesheets from the sample. 
 
 You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arrowheadup** and **e-arrowheaddown** class to **selectedHeader** and **header** properties respectively.
 
