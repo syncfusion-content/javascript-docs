@@ -607,7 +607,7 @@ The above method generates the request header with custom header as follows.
 
 ##Cross domain & JSONP
 
-The **DataManager** contains support for creating cross domain request, you can achieve this by using `crossDomain` and `jsonp` property of the **DataManager**. The following code example illustrate on how to create cross domain request. 
+The **DataManager** contains support for creating cross domain request, you can achieve this by using `crossDomain` and `json` property of the **DataManager**. The following code example illustrate on how to create cross domain request. 
 
 
 {% highlight html %}

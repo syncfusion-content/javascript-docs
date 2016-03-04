@@ -149,7 +149,7 @@ N> you can disable/enable the single or multiple list items by using [disableIte
 ## Applying HTML Attributes
 
 Additional HTML attributes can be applied to the widget by using [htmlAttributes](http://help.syncfusion.com/js/api/ejdropdownlist#members:htmlattributes) property. The attributes such as name, required, read-only and disabled are directly applied to the input element of DropDownList, and other attributes such as style, class will be applied to the outer wrapper element of DropDownList.
-Note: when you add an item dynamically to the widget, you can specify the html attributes in the [addItem()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method parameters.
+Note: when you add an item dynamically to the widget, you can specify the HTML attributes in the [addItem()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method parameters.
 
 {% highlight html %}
 

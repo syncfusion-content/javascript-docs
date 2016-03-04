@@ -93,6 +93,6 @@ CurrencyTextBox at initial load
 
 ![](/js/Currency/Angular-Support_images/Angular-Support_img2.png)
 
-CurrencyTextBox with Angular Binding
+CurrencyTextBox with AngularJS Binding
 {:.caption}
 

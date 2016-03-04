@@ -72,7 +72,7 @@ The result of above code example is illustrated as follows.
 
 ##URL Adaptor
 
-Url Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations. Now, in the following code example the data is retrived data from **MVC** **Controller**. 
+Url Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations. Now, in the following code example the data is retreived data from **MVC** **Controller**. 
 
 {% highlight html %}
 
