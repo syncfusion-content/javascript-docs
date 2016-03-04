@@ -91,9 +91,38 @@ $(element).ejMenu()
 ### animationType `enum`
 {:#members:animationtype}
 
-<ts name="ej.AnimationType">
+<ts name="ej.AnimationType" />
 
 To enable or disable the Animation while hover or click an menu items.See <a href="global.html#AnimationType">AnimationType</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Default</td>
+<td class="type">string</td>
+<td class="default">default</td>
+<td class="description">Used to set AnimationType as Default</td>
+</tr>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td>
+<td class="default">none</td>
+<td class="description">Used to set AnimationType as None</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Default Value
 
@@ -816,9 +845,38 @@ Specifies the list of html attributes to be added to menu control.
 ### menuType `string|enum`
 {:#members:menutype}
 
-<ts name="ej.MenuType">
+<ts name="ej.MenuType" />
 
 Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu mode.See <a href="global.html#MenuType">MenuType</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+ContextMenu</td>
+<td class="type">string</td>
+<td class="default">contextmenu</td>
+<td class="description">Used to set MenuType as ContextMenu</td>
+</tr>
+<tr>
+<td class="name">
+NormalMenu</td>
+<td class="type">string</td>
+<td class="default">normalmenu</td>
+<td class="description">Used to set MenuType as NormalMenu</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Default Value
 
@@ -944,10 +1002,39 @@ Specifies the sub menu items to be show or open only on click.
 ### orientation `string|enum`
 {:#members:orientation}
 
-<ts name="ej.Orientation">
+<ts name="ej.Orientation" />
 
 
 Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See <a href="global.html#Orientation">Orientation</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
+<td class="default">horizontal</td>
+<td class="description">Used to set Orientation as Horizontal</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="default">vertical</td>
+<td class="description">Used to set Orientation as Vertical</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Default Value
 
@@ -1129,10 +1216,45 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 ### subMenuDirection `string|enum`
 {:#members:submenudirection}
 
-<ts name="ej.Direction">
+<ts name="ej.Direction" />
 
 
 Specifies position of pulldown submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to set Direction as Left</td>
+</tr>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td>
+<td class="default">none</td>
+<td class="description">Used to set Direction as None</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to set Direction as Right</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Default Value
 
