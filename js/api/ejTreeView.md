@@ -1512,7 +1512,7 @@ $("#treeView").ejTreeView({
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
@@ -1725,7 +1725,7 @@ $("#treeView").ejTreeView({
 
 
 ### sortSettings `object`
-{:#members:sortSettings}
+{:#members:sortsettings}
 
 
 
@@ -1747,7 +1747,7 @@ By using sortSettings property, you can customize the sorting option in TreeView
 
 
 ### sortSettings.allowSorting `boolean`
-{:#members:sortSettings-allowSorting}
+{:#members:sortsettings-allowsorting}
 
 
 
@@ -1802,7 +1802,7 @@ $("#treeView").ejTreeView({
 
 
 ### sortSettings.sortOrder `enum`
-{:#members:sortSettings-sortOrder}
+{:#members:sortsettings-sortorder}
 
 
 <ts name = "ej.sortOrder"/>
@@ -2825,7 +2825,7 @@ $("#treeView").ejTreeView("getCheckedNodesIndex");
 
 
 ### getNodeCount()
-{:#methods:getNodeCount}
+{:#methods:getnodecount}
 
 
 
