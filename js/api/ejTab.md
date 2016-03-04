@@ -1041,7 +1041,7 @@ Fill</td>
 
 
 ### hiddenItemIndex `array`
-{:#members:hiddenItemIndex}
+{:#members:hiddenitemindex}
 
 
 
@@ -1107,7 +1107,7 @@ Specifies to hide a pane of Tab control.
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
@@ -1860,7 +1860,7 @@ This function hides the tab control.
 
 
 ### hideItem(index)
-{:#methods:hideItem}
+{:#methods:hideitem}
 
 
 
@@ -2099,7 +2099,7 @@ This function is to show the tab control.
 
 
 ### showItem(index)
-{:#methods:showItem}
+{:#methods:showitem}
 
 
 

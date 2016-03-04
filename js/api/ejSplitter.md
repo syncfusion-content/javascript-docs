@@ -99,7 +99,7 @@ $('#innerSplitter').ejSplitter();
 
 
 ### allowKeyboardNavigation `boolean`
-{:#members:allowKeyboardNavigation}
+{:#members:allowkeyboardnavigation}
 
 
 
@@ -446,7 +446,7 @@ Specify height for splitter control.
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
@@ -506,7 +506,7 @@ Specifies the HTML Attributes of the Splitter.
 
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 
 
