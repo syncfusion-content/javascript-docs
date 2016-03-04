@@ -212,6 +212,7 @@ Used to enable or disable the ejGroupButton control.
 ### groupButtonMode `enum | string`
 {:#members:groupbuttonmode}
 
+<ts name="ej.GroupButtonMode"/>
 
 Sets the GroupButton behavior to works as Checkbox mode/ radio button mode based on the specified option.
 
@@ -377,10 +378,37 @@ Defines the characteristics of the ejGroupButton control and extend the capabili
 ### orientation `enum`
 {:#members:orientation}
 
-<ts name= "ej.Orientation" ref="ej.Orientation"/>
+<ts name="ej.Orientation"/>
 
-Specify the orientation of the GroupButton. See available orientations [here](http://help.syncfusion.com/js/api/global#enum:orientation)
+Specify the orientation of the GroupButton. See below to get available orientations 
 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
+<td class="default">horizontal</td>
+<td class="description">Enum for Horizontal Orientation</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="default">vertical</td>
+<td class="description">Enum for Vertical Orientation</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
@@ -522,7 +550,7 @@ Sets the rounder corner to the GroupButton, if sets as true.
 ### size `enum | string`
 {:#members:size}
 
-<ts name="ej.ButtonSize" ref="ej.ButtonSize" />
+<ts ref="ej.ButtonSize" />
 
 
 Specifies the size of the button. See available [size](http://help.syncfusion.com/js/api/ejbutton#members:size)
@@ -872,7 +900,7 @@ Enables the disabled ejGroupButton control.
 {% endhighlight %}
 
 ### enableItem(element)
-{:#methods:disableitem}
+{:#methods:enableitem}
 
 
 Enable the specified disabled button element from the ejGroupButton control.
@@ -939,8 +967,7 @@ JQuery</td><td>
 Specific button element</td></tr>
 </table>
 
-####Returns
-
+####Returns:
 number
 
 #### Example
@@ -989,8 +1016,7 @@ JQuery</td><td>
 Specific button element</td></tr>
 </table>
 
-###Returns 
-
+####Returns:
 number
 
 #### Example
@@ -1077,7 +1103,7 @@ Hides the GroupButton control
 
 {% endhighlight %}
 
-### hideitem(element)
+### hideItem(element)
 {:#methods:hideitem}
 
 
@@ -1222,7 +1248,7 @@ Public method used to select the specified button element from the ejGroupButton
 <tr>
 <td>
 element</td><td>
-jQuery Object</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1327,7 +1353,7 @@ Show the specified hidden button element from the ejGroupButton control.
 <tr>
 <td>
 element</td><td>
-jQuery Object</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1383,8 +1409,7 @@ Triggered before any button element in the GroupButtton get selected.
         </thead>
         <tbody>
             <tr>
-                <td class="name">
-                    
+                <td class="name"> 
                     argument
                 </td>
                 <td class="type"><span class="param-type">Object</span></td>
@@ -1401,7 +1426,6 @@ Triggered before any button element in the GroupButtton get selected.
                         <tbody>
                             <tr>
                                 <td class="name">
-
                                     disabled
                                 </td>
                                 <td class="type"><span class="param-type">boolean</span></td>
@@ -1439,8 +1463,7 @@ Triggered before any button element in the GroupButtton get selected.
                                 <td class="name">
                                     model
                                 </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/>
-<span class="param-type">object</span></td>
+                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span> </td>
                                 <td class="description">returns the button model</td>
                             </tr>
                             <tr>
@@ -1464,7 +1487,7 @@ Triggered before any button element in the GroupButtton get selected.
                                 <td class="type"><span class="param-type">boolean</span></td>
                                 <td class="description">return the button state</td>
                             </tr>
-</tbody>
+                        </tbody>
                     </table>
                 </td>
             </tr>
@@ -1680,6 +1703,7 @@ type</td>
 
 Triggered once the key is pressed, when the control is in focused state.
 
+
 <table class="params">
         <thead>
             <tr>
@@ -1707,7 +1731,6 @@ Triggered once the key is pressed, when the control is in focused state.
                         <tbody>
                             <tr>
                                 <td class="name">
-
                                     disabled
                                 </td>
                                 <td class="type"><span class="param-type">boolean</span></td>
@@ -1745,8 +1768,7 @@ Triggered once the key is pressed, when the control is in focused state.
                                 <td class="name">
                                     model
                                 </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/>
-<span class="param-type">object</span></td>
+                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
                                 <td class="description">returns the button model</td>
                             </tr>
                             <tr>
@@ -1770,7 +1792,7 @@ Triggered once the key is pressed, when the control is in focused state.
                                 <td class="type"><span class="param-type">boolean</span></td>
                                 <td class="description">return the button state</td>
                             </tr>
-</tbody>
+        </tbody>
                     </table>
                 </td>
             </tr>
@@ -1814,6 +1836,7 @@ Triggered once the key is pressed, when the control is in focused state.
 
 Triggered when the button element get selected.
 
+
 <table class="params">
         <thead>
             <tr>
@@ -1825,7 +1848,6 @@ Triggered when the button element get selected.
         <tbody>
             <tr>
                 <td class="name">
-
                     argument
                 </td>
                 <td class="type"><span class="param-type">Object</span></td>
@@ -1849,7 +1871,6 @@ Triggered when the button element get selected.
                             </tr>
                             <tr>
                                 <td class="name">
-
                                     element
                                 </td>
                                 <td class="type"><span class="param-type">object</span></td>
@@ -1880,8 +1901,7 @@ Triggered when the button element get selected.
                                 <td class="name">
                                     model
                                 </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/>
-<span class="param-type">object</span></td>
+                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
                                 <td class="description">returns the button model</td>
                             </tr>
                             <tr>
@@ -1905,12 +1925,12 @@ Triggered when the button element get selected.
                                 <td class="type"><span class="param-type">boolean</span></td>
                                 <td class="description">return the button state</td>
                             </tr>
-</tbody>
+                         </tbody>
                     </table>
                 </td>
             </tr>
         </tbody>
-    </table>
+        </table>
 
 
 

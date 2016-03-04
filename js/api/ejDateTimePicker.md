@@ -104,7 +104,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-### buttonText 'object`
+### buttonText `object`
 {:#members:buttontext}
 
 
@@ -384,14 +384,14 @@ Defines the datetime format displayed in the DateTimePicker. The value should be
 ### dayHeaderFormat `string | enum`
 {:#members:dayheaderformat}
 
-<ts name="ej.DatePicker.Header" ref="ej.DatePicker.Header"/>
+<ts ref="ej.DatePicker.Header"/>
 
 
 
 
 
 
-Specifies the header format of the datepicker inside the DateTimePicker popup. See DatePicker.Level
+Specifies the header format of the datepicker inside the DateTimePicker popup. See DatePicker.Header
 
 
 
@@ -436,7 +436,7 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 
-<ts name="ej.DatePicker.Level" ref="ej.DatePicker.DepthLevel"/>
+<ts ref="ej.DatePicker.Level"/>
 
 
 
@@ -982,7 +982,7 @@ Defines the localization culture for DateTimePicker.
 
 
 
-### maxDateTime `string | object`
+### maxDateTime `string | date`
 {:#members:maxdatetime}
 
 
@@ -1032,7 +1032,7 @@ Sets the maximum value to the DateTimePicker. Beyond the maximum value an error 
 
 
 
-### minDateTime `string | object`
+### minDateTime `string | date`
 {:#members:mindatetime}
 
 
@@ -1400,7 +1400,7 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 ### startLevel `string | enum`
 {:#members:startlevel}
 
-<ts name="ej.DatePicker.Level" ref="ej.DatePicker.StartLevel"/>
+<ts ref="ej.DatePicker.Level" />
 
 Specifies the start level view in datepicker inside the DateTimePicker popup. See DatePicker.Level
 
@@ -1875,7 +1875,7 @@ Set the jquery validation rules in datetimepicker.
 
 
 
-### value  `string | object`
+### value  `string | date`
 {:#members:value}
 
 

@@ -1066,13 +1066,40 @@ Specifies the number of Rotator Items to navigate on a single click (next/previo
 
 
 
-<ts name="ej.Orientation">
+<ts name="ej.Orientation" />
 
 
 
 
 Specifies the orientation for the Rotator control, that is, whether it must be rendered horizontally or vertically. See <a href="global.html#Orientation">Orientation</a>
 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td>
+<td class="default">horizontal</td>
+<td class="description">Used to set Orientation as Horizontal</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="default">vertical</td>
+<td class="description">Used to set Orientation as Vertical</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1122,12 +1149,69 @@ Specifies the orientation for the Rotator control, that is, whether it must be r
 
 
 
-<ts name="ej.Rotator.PagerPosition">
+<ts name="ej.Rotator.PagerPosition" />
 
 
 
 
 Specifies the position of the showPager in the Rotator Item. See <a href="global.html#PagerPosition">PagerPosition</a>
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+BottomLeft</td>
+<td class="type">string</td>
+<td class="default">bottomleft</td>
+<td class="description">Used to set PagerPosition as BottomLeft</td>
+</tr>
+<tr>
+<td class="name">
+BottomRight</td>
+<td class="type">string</td>
+<td class="default">bottomright</td>
+<td class="description">Used to set PagerPosition as BottomRight</td>
+</tr>
+<tr>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
+<td class="default">outside</td>
+<td class="description">Used to set PagerPosition as Outside</td>
+</tr>
+<tr>
+<td class="name">
+TopCenter</td>
+<td class="type">string</td>
+<td class="default">topcenter</td>
+<td class="description">Used to set PagerPosition as TopCenter</td>
+</tr>
+<tr>
+<td class="name">
+TopLeft</td>
+<td class="type">string</td>
+<td class="default">topleft</td>
+<td class="description">Used to set PagerPosition as TopLeft</td>
+</tr>
+<tr>
+<td class="name">
+TopRight</td>
+<td class="type">string</td>
+<td class="default">topright</td>
+<td class="description">Used to set PagerPosition as TopRight</td>
+</tr>
+</tbody>
+</table>
 
 
 

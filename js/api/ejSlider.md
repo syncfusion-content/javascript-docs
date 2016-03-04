@@ -698,35 +698,37 @@ Specifies the starting value of the slider.
 
 
 
-<ts name="ej.Orientation">
+<ts name="ej.Orientation"/>
 
 
 
 
-Specifies the orientation of the slider.
+Specifies the orientation of the slider. 
 
 
 
-<table class="params">
+
+<table class="props">
 <thead>
 <tr>
 <th>Name</th>
-<th>Description</th>
+<th class="last">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">
 Horizontal</td>
-<td class="description">Shows slider in horizontal orientation</td>
+<td class="description">Used to set horizontal organizational chart orientation</td>
 </tr>
 <tr>
 <td class="name">
 Vertical</td>
-<td class="description">Shows slider in vertical orientation</td>
+<td class="description">Used to set vertical organizational chart orientation</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
@@ -1019,7 +1021,7 @@ Specifies the showTooltip to shows the current Slider value, while moving the Sl
 
 
 
-
+<ts name = "ej.slider.sliderType"/>
 
 
 

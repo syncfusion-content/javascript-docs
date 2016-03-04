@@ -811,12 +811,7 @@ index</td>
 
 
 #### Returns:
-
-
 Element
-
-
-
 
 #### Example
 
