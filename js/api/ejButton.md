@@ -13,11 +13,13 @@ Custom Design for Html Button control.
 
 #### Syntax
 
+
 {% highlight js %}
 
-$(element).ejButton(options)
+     $(element).ejButton(options)
 
 {% endhighlight %}
+
 
 
 <table class="params">
@@ -43,12 +45,15 @@ options</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Create Button
-$('#button1').ejButton();       
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Create Button
+        $('#button1').ejButton();       
+        </script>
+
+{% endhighlight %}
+
 
 
 #### Requires
@@ -76,6 +81,8 @@ $('#button1').ejButton();
 
 
 Specifies the contentType of the Button. See below to know available ContentType
+
+
 
 <table class="props">
 <thead>
@@ -116,7 +123,9 @@ ImageTextImage</td>
 </table>
 
 
-#### Default Value
+
+
+####Default Value
 
 
 
@@ -132,12 +141,14 @@ ImageTextImage</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the button contentType on initialization.                        
-        $("#button1").ejButton({  contentType : ej.ContentType.ImageOnly,prefixIcon: "e-uiLight e-icon e-handup" });                    
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the button contentType on initialization.                        
+                $("#button1").ejButton({  contentType : ej.ContentType.ImageOnly,prefixIcon: "e-uiLight e-icon e-handup" });                    
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -167,12 +178,14 @@ Sets the root CSS class for Button theme, which is used customize.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the cssClass during initialization.                      
-        $("#button1").ejButton({  cssClass : "gradient-lime" });                        
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the cssClass during initialization.                      
+                $("#button1").ejButton({  cssClass : "gradient-lime" });                        
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -202,12 +215,14 @@ Specifies the button control state.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Enable Button on initialization. 
-        $("#button1").ejButton({ enabled:true });       
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Enable Button on initialization. 
+                $("#button1").ejButton({ enabled:true });       
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -237,14 +252,16 @@ Specify the Right to Left direction to button
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the enableRTL during initialization.                     
-        $("#button1").ejButton({ contentType: ej.ContentType.TextAndImage,
-   imagePosition: ej.ImagePosition.ImageLeft,
-   prefixIcon: "e-uiLight e-login", enableRTL : true });        
-</script>                                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the enableRTL during initialization.                     
+                $("#button1").ejButton({ contentType: ej.ContentType.TextAndImage,
+        imagePosition: ej.ImagePosition.ImageLeft,
+        prefixIcon: "e-uiLight e-login", enableRTL : true });        
+        </script>                                 
+
+{% endhighlight %}
 
 
 
@@ -274,12 +291,14 @@ Specifies the height of the Button.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//To set height API value during initialization  
-        $("#button1").ejButton({ height:"30px" });      
-</script>                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //To set height API value during initialization  
+                $("#button1").ejButton({ height:"30px" });      
+        </script>                
+
+ {% endhighlight %}
 
 
 
@@ -306,12 +325,14 @@ It allows to define the characteristics of the Button control. It will helps to 
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set HtmlAttributes to Button on initialization. 
-        $("#button1").ejButton({htmlAttributes : {disabled:"disabled"}});       
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set HtmlAttributes to Button on initialization. 
+                $("#button1").ejButton({htmlAttributes : {disabled:"disabled"}});       
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -332,7 +353,6 @@ Specifies the image position of the Button. This image position is applicable on
 </tr>
 </thead>
 <tbody>
-<tr>
 <tr>
 <td class="name">
 ImageRight</td>
@@ -374,17 +394,19 @@ ImageBottom</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the image position for button during initialization.                     
-        $("#button1").ejButton(
-{
-   contentType: ej.ContentType.TextAndImage,
-   imagePosition: ej.ImagePosition.ImageRight,
-        prefixIcon: "e-uiLight e-icon e-handup" //Specifies the primary icon for Button
-});     
-</script>                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the image position for button during initialization.                     
+                $("#button1").ejButton(
+        {
+        contentType: ej.ContentType.TextAndImage,
+        imagePosition: ej.ImagePosition.ImageRight,
+                prefixIcon: "e-uiLight e-icon e-handup" //Specifies the primary icon for Button
+        });     
+        </script>                 
+
+{% endhighlight %}
 
 
 
@@ -416,16 +438,18 @@ N>  This is applicable for the content type’s imageonly, textandimage, imagete
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the primary icon during initialization.                  
-        $("#button1").ejButton(
- {
-    contentType: "imageonly",
-    prefixIcon: "e-uiLight e-icon e-handup"
- });            
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the primary icon during initialization.                  
+                $("#button1").ejButton(
+        {
+            contentType: "imageonly",
+            prefixIcon: "e-uiLight e-icon e-handup"
+        });            
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -455,12 +479,14 @@ Convert the button as repeat button. It raises the 'Click' event repeattedly fro
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Create repeat button during initialization.                  
-        $("#button1").ejButton({  repeatButton : true });
-</script>                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Create repeat button during initialization.                  
+                $("#button1").ejButton({  repeatButton : true });
+        </script>             
+
+{% endhighlight %}
 
 
 
@@ -490,12 +516,14 @@ Displays the Button with rounded corncers.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the showRoundedCorner during initialization.                     
-        $("#button1").ejButton({  showRoundedCorner : true });                  
-</script>                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the showRoundedCorner during initialization.                     
+                $("#button1").ejButton({  showRoundedCorner : true });                  
+        </script>             
+
+{% endhighlight %}
 
 
 
@@ -516,7 +544,6 @@ Specifies the size of the Button. See below to know available ButtonSize
 </tr>
 </thead>
 <tbody>
-<tr>
 <tr>
 <td class="name">
 Normal</td>
@@ -565,12 +592,14 @@ Large</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//To set size API value during initialization  
-        $("#button1").ejButton({  size: ej.ButtonSize.Mini});   
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //To set size API value during initialization  
+                $("#button1").ejButton({  size: ej.ButtonSize.Mini});   
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -601,17 +630,19 @@ N>   This is applicable for the content type’s imagetextimage and imageboth.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the secondary icon during initialization.                        
-        $("#button1").ejButton(
- {
-      contentType: "imageonly",
-                prefixIcon: "e-uiLight e-icon e-handup",
-            suffixIcon: "e-uiLight e-icon e-padlockclosed"
- });            
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the secondary icon during initialization.                        
+                $("#button1").ejButton(
+        {
+            contentType: "imageonly",
+                        prefixIcon: "e-uiLight e-icon e-handup",
+                    suffixIcon: "e-uiLight e-icon e-padlockclosed"
+        });            
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -641,12 +672,14 @@ Specifies the text content for Button.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set the button text on initialization.                       
-        $("#button1").ejButton({  text: "Hello Word" });
-</script>                 {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set the button text on initialization.                       
+                $("#button1").ejButton({  text: "Hello Word" });
+        </script>               
+
+  {% endhighlight %}
 
 
 
@@ -676,14 +709,16 @@ Specified the time interval between two consecutive 'click' event on the button.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Set interval during initialization.                  
-        $("#button1").ejButton({  
-                        repeatButton : true,
-                        timeInterval : "100" });
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Set interval during initialization.                  
+                $("#button1").ejButton({  
+                                repeatButton : true,
+                                timeInterval : "100" });
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -704,7 +739,6 @@ Specifies the Type of the Button. See below to know available ButtonType
 </tr>
 </thead>
 <tbody>
-<tr>
 <tr>
 <td class="name">
 Button</td>
@@ -739,12 +773,15 @@ Submit</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//To set type API value during initialization  
-        $("#button1").ejButton({type: ej.ButtonType.Submit});   
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //To set type API value during initialization  
+                $("#button1").ejButton({type: ej.ButtonType.Submit});   
+        </script>
+
+
+{% endhighlight %}
 
 
 
@@ -774,12 +811,14 @@ Specifies the width of the Button.
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//To set width API value during initialization  
-        $("#button1").ejButton({width: "150px"});       
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //To set width API value during initialization  
+                $("#button1").ejButton({width: "150px"});       
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -804,25 +843,29 @@ destroy the button widget all events bound using this._on will be unbind automat
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Create Button
-$("#button1").ejButton();
-var btnObj = $("#button1").data("ejButton");
-btnObj.destroy(); // destroy the button
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Create Button
+        $("#button1").ejButton();
+        var btnObj = $("#button1").data("ejButton");
+        btnObj.destroy(); // destroy the button
+        </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// enable the button
-$("#button1").ejButton();
-$("#button1").ejButton("destroy");      
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // enable the button
+        $("#button1").ejButton();
+        $("#button1").ejButton("destroy");      
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -843,25 +886,29 @@ To disable the button
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Create Button
-$("#button1").ejButton();
-var btnObj = $("#button1").data("ejButton");
-btnObj.disable(); // disable the button
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Create Button
+        $("#button1").ejButton();
+        var btnObj = $("#button1").data("ejButton");
+        btnObj.disable(); // disable the button
+        </script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// disable the button
-$("#button1").ejButton();
-$("#button1").ejButton("disable");      
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // disable the button
+        $("#button1").ejButton();
+        $("#button1").ejButton("disable");      
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -882,25 +929,30 @@ To enable the button
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// Create Button
-$("#button1").ejButton();
-var btnObj = $("#button1").data("ejButton");
-btnObj.enable(); // enable the button
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // Create Button
+        $("#button1").ejButton();
+        var btnObj = $("#button1").data("ejButton");
+        btnObj.enable(); // enable the button
+        </script>
+
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-// enable the button
-$("#button1").ejButton();
-$("#button1").ejButton("enable");       
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        // enable the button
+        $("#button1").ejButton();
+        $("#button1").ejButton("enable");       
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -968,16 +1020,18 @@ e</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//click event for button
-$("#button1").ejButton({
-   click: function (args) {
-// Write a code block to perform operation while click on button.
-}
-});
-</script>                  {% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //click event for button
+        $("#button1").ejButton({
+        click: function (args) {
+        // Write a code block to perform operation while click on button.
+        }
+        });
+        </script>                  
+
+{% endhighlight %}
 
 
 
@@ -1029,16 +1083,18 @@ type</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//create event for button
-$("#button1").ejButton({
-   create: function (args) {
-// Write a code block to perform operation after creating the button.
-}
-});
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //create event for button
+        $("#button1").ejButton({
+        create: function (args) {
+        // Write a code block to perform operation after creating the button.
+        }
+        });
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -1090,27 +1146,19 @@ type</td>
 
 {% highlight html %}
  
-<button id="button1">Button</button> 
- 
-<script>
-//destroy event for button
-$("#button1").ejButton({
-   destroy: function (args) {
-// Write a code block to perform operation after destroy the button.
-}
-});
-</script>{% endhighlight %}
+        <button id="button1">Button</button> 
+        
+        <script>
+        //destroy event for button
+        $("#button1").ejButton({
+        destroy: function (args) {
+        // Write a code block to perform operation after destroy the button.
+        }
+        });
+        </script>
+
+{% endhighlight %}
 
 
 
 
-
-<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
-
-
-
-<script type="text/javascript">
-prettyPrint();
-</script><script src="scripts/linenumber.js" type="text/javascript">
-</script><script src="scripts/main.js" type="text/javascript">
-</script>

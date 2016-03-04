@@ -269,13 +269,48 @@ $("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");
 
 
 
-<ts name="ej.Direction">
+<ts name="ej.Direction" />
 
 
 
 
 Sets the Direction for the control. See <a href="global.html#Direction">Direction</a>
 
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to set Direction as Left</td>
+</tr>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td>
+<td class="default">none</td>
+<td class="description">Used to set Direction as None</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to set Direction as Right</td>
+</tr>
+</tbody>
+</table>
 
 
 

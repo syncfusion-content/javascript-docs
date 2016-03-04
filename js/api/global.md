@@ -3494,46 +3494,46 @@ Specifies whether the Grid's editing type is String, Boolean, Numeric, Dropdown,
 Specifies whether the Grid's edit mode is Normal, Dialog, DialogTemplate, Batch, InlineForm, InlineTemplateForm, ExternalForm or ExternalFormTemplate.
  
 <table class="props">
-<thead>
-<tr>
-<th>Name</th> 
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Normal</td> 
-<td class="description">Edit mode is normal</td>
-</tr>
-<tr>
-<td class="name">Dialog</td> 
-<td class="description">Edit mode is dialog</td>
-</tr>
-<tr>
-<td class="name">DialogTemplate</td> 
-<td class="description">Edit mode is dialogtemplate</td>
-</tr>
-<tr>
-<td class="name">Batch</td> 
-<td class="description">Edit mode is batch</td>
-</tr>
-<td class="name">InlineForm</td> 
-<td class="description">Edit mode is inlineform</td>
-</tr>
-<tr>
-<td class="name">InlineTemplateForm</td> 
-<td class="description">Edit mode is inlinetemplateform</td>
-</tr>
-<tr>
-<td class="name">ExternalForm</td> 
-<td class="description">Edit mode is externalform</td>
-</tr>
-<tr>
-<tr>
-<td class="name">ExternalFormTemplate</td> 
-<td class="description">Edit mode is externalformtemplate</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Normal</td>
+            <td class="description">Edit mode is normal</td>
+        </tr>
+        <tr>
+            <td class="name">Dialog</td>
+            <td class="description">Edit mode is dialog</td>
+        </tr>
+        <tr>
+            <td class="name">DialogTemplate</td>
+            <td class="description">Edit mode is dialogtemplate</td>
+        </tr>
+        <tr>
+            <td class="name">Batch</td>
+            <td class="description">Edit mode is batch</td>
+        </tr>
+        <tr>
+            <td class="name">InlineForm</td>
+            <td class="description">Edit mode is inlineform</td>
+        </tr>
+        <tr>
+            <td class="name">InlineTemplateForm</td>
+            <td class="description">Edit mode is inlinetemplateform</td>
+        </tr>
+        <tr>
+            <td class="name">ExternalForm</td>
+            <td class="description">Edit mode is externalform</td>
+        </tr>
+        <tr>
+            <td class="name">ExternalFormTemplate</td>
+            <td class="description">Edit mode is externalformtemplate</td>
+        </tr>
+    </tbody>
 </table>
  
 

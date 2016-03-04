@@ -235,10 +235,38 @@ Specifies the list of html attributes to be added to maskedit textbox.
 {:#members:inputmode}
 
 
-<ts name="ej.InputMode">
+<ts name="ej.InputMode" />
 
 
 Specify the inputMode for maskedit textbox control. See <a href="global.html#InputMode">InputMode</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Password</td>
+<td class="type">string</td>
+<td class="default">password</td>
+<td class="description">Used to set InputMode as Password</td>
+</tr>
+<tr>
+<td class="name">
+Text</td>
+<td class="type">string</td>
+<td class="default">text</td>
+<td class="description">Used to set InputMode as Text</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
@@ -400,11 +428,51 @@ Maskedit input is displayed in rounded corner style when this property is set to
 {:#members:textalign}
 
 
-<ts name="ej.TextAlign">
+<ts name="ej.TextAlign" />
 
 
 Specify the text alignment for maskedit textbox control.See <a href="global.html#TextAlign">TextAlign</a>
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td>
+<td class="default">center</td>
+<td class="description">Used to set text alignment as Center</td>
+</tr>
+<tr>
+<td class="name">
+Justify</td>
+<td class="type">string</td>
+<td class="default">justify</td>
+<td class="description">Used to set text alignment as Justify</td>
+</tr>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td>
+<td class="default">left</td>
+<td class="description">Used to set text alignment as Left</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="default">right</td>
+<td class="description">Used to set text alignment as Right</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
