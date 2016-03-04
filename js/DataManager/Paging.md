@@ -422,3 +422,4 @@ Result of the cabove code example is illustrated as follows.
 
 
 ![](/js/DataManager/Paging_images/Paging_img7.png) 
+
