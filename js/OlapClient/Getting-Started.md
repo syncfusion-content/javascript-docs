@@ -134,6 +134,7 @@ The following are the list of namespaces to be added on top of the main class in
 {% highlight c# %}
 
 using System.Data.SqlServerCe;
+using System.Data;
 using System.Web;
 using System.Web.Http;
 using Syncfusion.JavaScript.Olap;
