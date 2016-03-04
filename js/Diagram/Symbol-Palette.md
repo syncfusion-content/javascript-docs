@@ -9,10 +9,42 @@ documentation: ug
 
 # Symbol Palette
 
-The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram. 
+The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram.
 
-## Palettes
- 
+## Create symbol palette
+
+The `diagramId` property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.  
+
+{% highlight html %}
+
+<!--Initializes the Diagram element-->
+<div id="diagram"></div>;
+
+<!-- Initializes the SymbolPalette element -->
+<div id="symbolpalette"></div>;
+
+{% endhighlight %}
+
+{% highlight js %}
+
+// Initializes the Diagram control
+$("#diagram").ejDiagram({
+	width: "1020px",
+	height: "600px"
+});
+
+// Initializes the SymbolPalette control
+$("#symbolpalette").ejSymbolPalette({
+	// Relates Diagram with SymbolPalette
+	diagramId: "diagram",
+	width: "100%",
+	height: "100%"
+});
+
+{% endhighlight %}
+
+## Add palettes to SymbolPalette
+
 A palette allows to display a group of related symbols and it textually annotates the group with its header.
 To initialize a palette, define a JSON object with the property `name` that is displayed as the header text of palette. The `expanded` property of palette allows to expand/collapse its palette items.
 The following code example illustrates how to define a palette and how its added to symbol palette.
@@ -51,9 +83,57 @@ The following image shows the symbol palette with multiple palette Items.
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
-### Palette Items
+### Customize the Palette Header
 
-The palette items need to be defined and added to the `items` collection of the palette. You can create a palette item as a node, group, connector, lane, or phase except swimlane. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define a palette item.
+Palettes can be annotated with its header texts and you can change the height of palette header by using `HeaderHeight` property of symbol palette.
+
+Also, you can embed any Html element into a palette header by defining the ScriptTemplate id to palette's templateId property. Following code example illustrates how to customize palette headers.
+
+{% highlight html %}
+
+    <!--dependency scripts-->
+        <script id="svgTemplate" type="text/x-jsrender">
+            <!--define html element-->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px">
+                <g visibility="visible">
+                    <image width="26px" height="26px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="image.png"></image>
+                    <text x="40" y="18" font-size="14">
+                        <tspan>Basic Shapes</tspan>
+                    </text>
+                </g>
+            </svg>
+        </script>											
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+    //Defines the JSON to create a palette with custom header
+    var palette =
+    {
+        name: "Basic Shapes",
+        //Sets the id of the script template 
+        templateId: "svgTemplate",
+    };
+    
+    $("#symbolpalette").ejSymbolPalette({
+        palettes: [
+            palette
+        ],
+        //Specifies height of the symbol palette header
+        headerHeight:30,
+    });
+
+{% endhighlight %}
+
+The following image shows the customized palette header
+
+![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+
+## Add symbols to palette
+
+The symbol need to be defined and added to the `items` collection of the palette. You can create a symbol as a node, group, connector, lane, or phase except swimlane. To create a symbol, you first need to define that element as JSON. The following code example illustrates how to define a symbol.
 
 {% highlight js %}
 
@@ -68,7 +148,7 @@ The palette items need to be defined and added to the `items` collection of the 
 
 {% endhighlight %}
  
-The following code example illustrates how to define a palette with items that are defined in the previous section. 
+The following code example illustrates how to define a palette with symbols that are defined in the previous section. 
 
 {% highlight js %}
 
@@ -89,9 +169,9 @@ The following code example illustrates how to define a palette with items that a
 
 {% endhighlight %}
 
-#### Customize the size of palette items
+### Customize the size of symbols
 
-You can customize the size of the individual palette items. The `paletteItem` property of node enables you to define the size of the symbol items. The following code example illustrates how to change the size of a palette item.
+You can customize the size of the individual symbol. The `paletteItem` property of node enables you to define the size of the symbols. The following code example illustrates how to change the size of a symbol.
 
 {% highlight js %}
 
@@ -104,9 +184,9 @@ You can customize the size of the individual palette items. The `paletteItem` pr
                 name: "Rectangle",
                 height: 40,
                 width: 80,
-                //Specifies the size of palette Item 
+                //Specifies the size of symbol 
                 paletteItem: { 
-                    //Defines the size of the palette item
+                    //Defines the size of the symbol
                     width: 50,
                     height: 50, 
                     margin: {
@@ -119,25 +199,30 @@ You can customize the size of the individual palette items. The `paletteItem` pr
             }]
         }],
 
-        //Specifies the default size to render palette items
+        //Specifies the default size to render symbols
         paletteItemWidth: 50,
         paletteItemHeight: 50, 
     });
 
 {% endhighlight %}
 
-Palette item size is set based on the precedence flow given in the following table.
+Symbol size will be set based on the following precedence.
+
+**Precedence**
 
 | Palette Item | Rendering Size |  
 |---|---|---|
-| Precedence - Width | paletteItem.width > model.paletteItemWidth > node.width |  
-| Precedence - Height | paletteItem.height > model.paletteItem.Height > node.height |  
+| Width | paletteItem.width > model.paletteItemWidth > node.width |  
+| Height | paletteItem.height > model.paletteItem.Height > node.height | 
 
-Palette item size can be based on the actual size of the node, regardless of the precedence. 
+* Symbol size will be rendered in the palette based on node.paletteItem's `width` and `height` property. 
+* If paletteItem's width and height property is not specified, symbol size will be rendered in the palette based on model's `paletteItemWidth` and `paletteItemHeight` property. 
+* If you dont specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
+ 
 
-#### Stretch the shape in to the Palette Item
+### Stretch the symbols into the palette
 
-The `enableScale` property of the palette item enables you to customize the size of the item regardless of the precedence. The following code example illustrates how to customize the palette item size.
+The `enableScale` property of the paletteItem enables you to customize the size of the symbol regardless of the precedence. The following code example illustrates how to customize the symbol size.
 
 {% highlight js %}
 
@@ -165,70 +250,6 @@ The `enableScale` property of the palette item enables you to customize the size
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
 
-
-### Palette header 
-
-Palette headers are often used to display unit of information that proceeds the information about the palette. By default, the header content is the name of the palette by default, so when you customize the header of the palette, it will update on all the palette as well.
-
-Following code example illustrates how to define default palette header.
-
-
-{% highlight js %}
-
-        $("#symbolpalette").ejSymbolPalette({          
-            diagramId: "diagram",
-            //Defines the default header
-            palettes: [{
-                name: "Basic Shapes",
-            }], 
-        });
-
-{% endhighlight %}
-
-
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img7.png)
-
-#### Customize the Palette Header
-
-Palettes can be annotated with its header texts. Following code example illustrates how to define palette header.
-
-Also, you can embed any Html element into a palette header by defining the ScriptTemplate id to palette's templateId property. Following code example illustrates how to customize palette headers.
-
-{% highlight html %}
-
-
-    &lt;!--dependency scripts--&gt;
-        &lt;script id="svgTemplate" type="text/x-jsrender"&gt;
-        &lt;!--  define html element --&gt;
-            &lt;svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px"&gt;
-                &lt;g visibility="visible"&gt;
-                    &lt;image width="26px" height="26px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="image.png"&gt;&lt;/image&gt;
-                    &lt;text x="40" y="18" font-size="14"&gt;
-                        <tspan>Basic Shapes</tspan>
-                    &lt;/text&gt;
-                &lt;/g&gt;
-            &lt;/svg&gt;
-        &lt;/script&gt;												
-
-
-{% endhighlight %}
-
-
-{% highlight js %}
-
-    //Defines the JSON to create a palette with custom header
-    var palette =
-    {
-        name: "Basic Shapes",
-        //Sets the id of the script template 
-        templateId: "svgTemplate",
-    };
-
-{% endhighlight %}
-
-The following image shows the customized palette header
-
-![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Symbol Previews
 
@@ -315,34 +336,29 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
 ![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
 
 
-preview size is set based on the precedence flow given in the following table.
+Symbol preview size will be set based on the following precedence.
+
+**Precedence**
 
 | Palette Item |   Preview Size |
 |---|---|---|
-| Precedence - Width |  paletteItem.previewWidth > model.previewWidth > node.width |
-| Precedence - Height | paletteItem.previewHeight > model.previewHeight > node.height |
+| Width |  paletteItem.previewWidth > model.previewWidth > node.width |
+| Height | paletteItem.previewHeight > model.previewHeight > node.height |
 
-Preview item size can be based on the actual size of the node, regardless of the precedence.
+* Symbol preview size will be set based on node.paletteItem's `previewWidth` and `previewHeight` property. 
+* If paletteItem's width and height property is not specified, symbol size will be set based on model's `previewWidth` and `previewHeight` property. 
+* If you dont specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
 
+## Show/hide the symbol Text 
 
-## Appearance 
-
-You can show/hide the palette item texts by using the `showPaletteItemText` property of symbol palette and you can change the height of palette header by using `headerHeight` property of symbol palette. The following code illustrates how to customize the appearance of the symbol Palette.
+You can show/hide the symbol text by using the `showPaletteItemText` property of symbol palette.
 
 {% highlight js %}
 
     // Initializes symbol palette
     $("#palette").ejSymbolPalette({
-        palettes: palettes,
-        diagramId: "DiagramContent",
-        height: "100%",
-        width: "100%",
-        paletteItemWidth: 45,
-        paletteItemHeight: 45,
         //Specifies whether palette item text should be visible or not
         showPaletteItemText: true,
-        //Specifies height of the symbol palette header.
-        headerHeight: 30,
     });
 
 {% endhighlight %}
