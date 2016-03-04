@@ -63,7 +63,7 @@ In-order to initialize a OlapGauge widget, first you need to define a “div” 
                 {
                     $("#OlapGauge").ejOlapGauge(
                     {
-                        url: "../OlapGaugeService",
+                        url: "../OlapGauge",
                         enableTooltip: true,
                         load: "loadGaugeTheme",
                         backgroundColor: "transparent",
