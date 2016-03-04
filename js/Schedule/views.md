@@ -313,7 +313,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> Eventhough Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
+N> Even though Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
 
 ## Timeline View
 
