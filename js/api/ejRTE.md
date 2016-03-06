@@ -2424,7 +2424,7 @@ Specifies the alignment tools and the display order of this tool in the RTE tool
 
 
 
-### tools.casing  `object`
+### tools.casing  `array`
 {:#members:tools-casing }
 
 
@@ -2459,7 +2459,7 @@ Specifies the casing tools and the display order of this tool in the RTE toolbar
 
 
 
-### tools.clear   `object`
+### tools.clear   `array`
 {:#members:tools-clear  }
 
 
@@ -2494,7 +2494,7 @@ Specifies the clear tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.clipboard `object`
+### tools.clipboard `array`
 {:#members:tools-clipboard}
 
 
@@ -2530,7 +2530,7 @@ Specifies the clipboard tools and the display order of this tool in the RTE tool
 
 
 
-### tools.doAction `object`
+### tools.doAction `array`
 {:#members:tools-doaction}
 
 
@@ -2562,7 +2562,7 @@ Specifies the doAction tools and the display order of this tool in the RTE toolb
 
 
 
-### tools.effects `object`
+### tools.effects `array`
 {:#members:tools-effects}
 
 
@@ -2593,7 +2593,7 @@ effects: ["superscript", "subscript"]
 
 
 
-### tools.font `object`
+### tools.font `array`
 {:#members:tools-font}
 
 
@@ -2627,7 +2627,7 @@ Specifies the font tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.formatStyle `object`
+### tools.formatStyle `array`
 {:#members:tools-formatstyle}
 
 
@@ -2661,7 +2661,7 @@ Specifies the formatStyle tools and the display order of this tool in the RTE to
 
 
 
-### tools.images `object`
+### tools.images `array`
 {:#members:tools-images}
 
 
@@ -2694,7 +2694,7 @@ Specifies the image tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.indenting `object`
+### tools.indenting `array`
 {:#members:tools-indenting}
 
 
@@ -2727,7 +2727,7 @@ Specifies the indent tools and the display order of this tool in the RTE toolbar
 
 
 
-### tools.links `object`
+### tools.links `array`
 {:#members:tools-links}
 
 
@@ -2759,7 +2759,7 @@ Specifies the link tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.lists `object`
+### tools.lists `array`
 {:#members:tools-lists}
 
 
@@ -2792,7 +2792,7 @@ Specifies the list tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.media `object`
+### tools.media `array`
 {:#members:tools-media}
 
 
@@ -2825,7 +2825,7 @@ Specifies the media tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.style `object`
+### tools.style `array`
 {:#members:tools-style}
 
 
@@ -2859,7 +2859,7 @@ Specifies the style tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.tables `object`
+### tools.tables `array`
 {:#members:tools-tables}
 
 
@@ -2892,7 +2892,7 @@ Specifies the table tools and the display order of this tool in the RTE toolbar.
 
 
 
-### tools.view `object`
+### tools.view `array`
 {:#members:tools-view}
 
 
@@ -2926,7 +2926,7 @@ Specifies the view tools and the display order of this tool in the RTE toolbar.
 
 
 
-### toolsList `object`
+### toolsList `array`
 {:#members:toolslist}
 
 
