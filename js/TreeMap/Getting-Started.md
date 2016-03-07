@@ -61,7 +61,7 @@ The `dataSource` property accepts the collection values as input. For example, y
 
 You can calculate the size of the object using `weightValuePath` of **TreeMap**.
 
-Add a **&lt;script&gt;** tag anywhere in a webpage and initialize **TreeMap** as illustrated in the following code sample. 
+Add a **&lt;script&gt;** tag anywhere in a web page and initialize **TreeMap** as illustrated in the following code sample. 
 
 {% highlight html %}
 
@@ -302,7 +302,7 @@ You can set the color value of leaf nodes using TreeMap Legend. This legend is a
 
 ### Label for Legend
 
-You can customize the labels of the legend item using `legendlabel` property of `rangeColorMapping`. 
+You can customize the labels of the legend item using `legendLabel` property of `rangeColorMapping`. 
 
 The following code sample illustrates how to add labels for legend in a TreeMap.
 
