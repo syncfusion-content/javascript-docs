@@ -240,7 +240,7 @@ By default, there are 12 themes support available for **Accordion** control name
 
 ## CSS class
 
-**CSS** class can be used to customize the **Accordion** control appearance. Define a **CSS** class asyou’re your requirement and assign the class name to **cssClass** property.
+**CSS** class can be used to customize the **Accordion** control appearance. Define a **CSS** class as you’re your requirement and assign the class name to **cssClass** property.
 
 ### Configure AutoComplete textbox using CSS class
 

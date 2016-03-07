@@ -80,7 +80,7 @@ The following screenshot displays the output.
 
 The following table contains the **sub properties** available under **Uploadbox’s DialogText** property. To customize the text, pass the alternate text with corresponding **sub properties**. 
 
-Subproperties under dialogText property.
+Sub properties under dialogText property.
 
 <table>
 <tr>

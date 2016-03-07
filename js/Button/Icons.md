@@ -87,7 +87,7 @@ List of icons
     </tr>
     <tr>
         <td>
-            e-collaps
+            e-collapse
         </td>
         <td>
             <img src="Icons_images\Icons_img6.png" alt="" width="15pt" height="14pt">

@@ -132,7 +132,6 @@ Following are the list of namespaces to be added on top of the main class inside
 
 using System.Web;
 using System.Web.Script.Serialization;
-using System.ServiceModel.Activation;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
@@ -284,7 +283,7 @@ jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
         }
 
