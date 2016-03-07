@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The Linera gauge can be easily configured to the DOM element, such as div. you can create a linear gauge with a highly customizable look and feel.
+The Linear gauge can be easily configured to the DOM element, such as div. you can create a linear gauge with a highly customizable look and feel.
 
 
 
@@ -39,7 +39,7 @@ $(element).ejLinearGauge(options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">For seting the Linear gauge</td>
+<td class="description last">For setting the Linear gauge</td>
 </tr>
 </tbody>
 </table>
@@ -437,7 +437,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 
-Specifies the frame backgroundimageurl of linear gauge
+Specifies the frame background image url of linear gauge
 
 
 
@@ -8361,7 +8361,7 @@ To get MarkerStyle in number
 <td class="name">{% highlight html %}
 argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">vscaleIndex alue for the Gauge</td>
+<td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10177,7 +10177,7 @@ To set setBarWidth
 <td class="name">{% highlight html %}
 argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">scaleIndexvalue for the Gauge</td>
+<td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10753,7 +10753,7 @@ argument.scaleIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">pointerIndexvalue for the Gauge</td>
+<td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -12305,7 +12305,7 @@ argument.TickIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Tick Stylefor Gauge</td>
+<td class="description last">Tick Style for Gauge</td>
 </tr>
 </tbody>
 </table>
@@ -12497,7 +12497,7 @@ argument.TickIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Tick YDistance From Scalefor Gauge</td>
+<td class="description last">Tick YDistance From Scale for Gauge</td>
 </tr>
 </tbody>
 </table>
@@ -12821,7 +12821,7 @@ args.scaleElement{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 args.scaleIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">numer</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
@@ -12965,7 +12965,7 @@ angle{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">oject</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
@@ -13169,7 +13169,7 @@ args.object{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 args.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">bolean</span></td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
@@ -13293,13 +13293,13 @@ args.context{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 args.position{% endhighlight %}</td>
-<td class="type"><span class="param-type">oject</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the ticks</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 args.Model{% endhighlight %}</td>
-<td class="type"><span class="param-type">oject</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
@@ -13323,7 +13323,7 @@ args.style{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 args.tick{% endhighlight %}</td>
-<td class="type"><span class="param-type">oject</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ticks style
 <table class="params">
 <thead>
@@ -13448,7 +13448,7 @@ args.context{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
-<td class="description last">eturns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>

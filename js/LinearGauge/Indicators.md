@@ -240,7 +240,7 @@ Execute the above code to render the following output.
 
 ![](/js/LinearGauge/Indicators_images/Indicators_img3.png)
 
-## Font optoins
+## Font options
 
 The basic font options available for the textual type indicators in the **Linear Gauge** such as Size, font style and font family are achieved by the properties **size**, **fontStyle** and **fontFamily.**
 

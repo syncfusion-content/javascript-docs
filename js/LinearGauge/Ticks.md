@@ -201,7 +201,7 @@ Execute the above code to render the following output.
 
 ![](/js/LinearGauge/Ticks_images/Ticks_img3.png)
 
-## Postioning the ticks
+## Positioning the ticks
 
 * You can position ticks with the help of two properties such as **distanceFromScale** and **placement**. The property **distanceFromScale** defines the distance between the scale and ticks. 
 

@@ -145,7 +145,7 @@ Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExpor
  
 	i). ASP.Net MVC Controller
     
-    ii). ASP.Net Webforms
+    ii). ASP.Net Webform
     
     iii). WebAPI
     

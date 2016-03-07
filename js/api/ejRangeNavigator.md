@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The rangenavigator can be easily configured to the DOM element, such as div. you can create a rangenavigator with a highly customizable look and feel.
+The RangeNavigator can be easily configured to the DOM element, such as div. you can create a RangeNavigator with a highly customizable look and feel.
 
 
 
@@ -39,13 +39,13 @@ $(element).ejRangeNavigator(options, options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for rangenavigator</td>
+<td class="description last">settings for RangeNavigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for rangenavigator</td>
+<td class="description last">settings for RangeNavigator</td>
 </tr>
 </tbody>
 </table>
@@ -3875,7 +3875,7 @@ Specifies the starting range of range navigator.
 
 
 
-selectedData is for getting the data when the "rangeChanged" event trigger from clientside.
+selectedData is for getting the data when the "rangeChanged" event trigger from client side.
 
 
 

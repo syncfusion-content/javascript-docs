@@ -5432,7 +5432,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
 
 
 
-Specifies the moveing average starting period value.
+Specifies the moving average starting period value.
 
 
 #### Default Value
@@ -10636,7 +10636,7 @@ $("#container").ejChart({
 
 
 
-Show/hides the majorticklines.
+Show/hides the major tick lines.
 
 
 #### Default Value
@@ -11244,7 +11244,7 @@ Specifies the padding for the axis range.
 
 
 
-* ej.datavisualization.Chart.rangePaddding.None
+* ej.datavisualization.Chart.rangePadding.None
 
 
 
@@ -13461,7 +13461,7 @@ $("#container").ejChart({
 
 
 
-Show/hides the majorticklines.
+Show/hides the major tick lines.
 
 
 #### Default Value
@@ -21418,7 +21418,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
 
-Specifies the moveing average starting period  value.
+Specifies the moving average starting period  value.
 
 
 #### Default Value
@@ -23319,7 +23319,7 @@ $("#container").ejChart("redraw");
 
 
 
-Fires after the series animation is completed. This event will beis triggered for each series when animation is enabled.
+Fires after the series animation is completed. This event will be triggered for each series when animation is enabled.
 
 Example:
 {:.example}

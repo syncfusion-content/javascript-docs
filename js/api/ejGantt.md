@@ -163,7 +163,7 @@ Enables or Disables Keyboard navigation in gantt
 ### allowMultiSorting `boolean`
 {:#members:allowmultisorting}
 
-Specifies enabling or disabling multiple soting for gantt columns
+Specifies enabling or disabling multiple sorting for gantt columns
 
 
 #### Default Value:
@@ -703,7 +703,7 @@ Enables or disables delete icon in gantt toolbar
 ### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
-Specifies the option for enabling or disablig editing in gantt grid part
+Specifies the option for enabling or disabling editing in gantt grid part
 
 
 #### Default Value:
@@ -729,7 +729,7 @@ Specifies the option for enabling or disablig editing in gantt grid part
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
 
-Specifies the editmode in gantt , "normal" is for dialog editing ,"cellEditing" is for cell type editing
+Specifies the edit mode in gantt , "normal" is for dialog editing ,"cellEditing" is for cell type editing
 
 
 #### Default Value:
@@ -1185,7 +1185,7 @@ Specifies the background of parent taskbar in gantt
 ### parentTaskIdMapping `string`
 {:#members:parenttaskidmapping}
 
-Specifies the mapping property path for parent task Id in selfreference datasource
+Specifies the mapping property path for parent task Id in self reference datasource
 
 
 #### Default Value:
@@ -2380,7 +2380,7 @@ Specifies the template Id for customized tooltip for taskbar editing in gantt
 ### taskbarTooltipTemplate `string`
 {:#members:taskbartooltiptemplate}
 
-Specifies the template for tooltip on mouseaction on taskbars
+Specifies the template for tooltip on mouse action on taskbars
 
 
 #### Default Value:
@@ -2409,7 +2409,7 @@ Specifies the template for tooltip on mouseaction on taskbars
 ### taskbarTooltipTemplateId `string`
 {:#members:taskbartooltiptemplateid}
 
-Specifies the template id for tooltip on mouseaction on taskbars
+Specifies the template id for tooltip on mouse action on taskbars
 
 
 #### Default Value:
@@ -3322,7 +3322,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameterswhile performing the delete operation starts:
+<td class="description">Event parameter swhile performing the delete operation starts:
 <table class="params">
 <thead>
 <tr>
@@ -3340,7 +3340,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">data</td>
 <td class="type">string</td>
-<td class="description">Returns the data od deleting element.</td>
+<td class="description">Returns the data of deleting element.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -3419,7 +3419,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">data</td>
 <td class="type">string</td>
-<td class="description">Returns the data edting element</td>
+<td class="description">Returns the data editing element</td>
 </tr>
 <tr>
 <td class="name">recordIndex</td>
@@ -3591,7 +3591,7 @@ Triggered for every gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameterswhile performing after completing the delete operation is completed:
+<td class="description">Event parameters while performing after completing the delete operation is completed:
 <table class="params">
 <thead>
 <tr>
@@ -3609,7 +3609,7 @@ Triggered for every gantt action success event.
 <tr>
 <td class="name">data</td>
 <td class="type">string</td>
-<td class="description">Returns the data od deleted element.</td>
+<td class="description">Returns the data of deleted element.</td>
 </tr>
 <tr>
 <td class="name">model</td>
