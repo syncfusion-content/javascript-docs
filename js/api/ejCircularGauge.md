@@ -203,13 +203,13 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 
 
 
-### enableResize `boolean`
-{:#members:enableresize}
+### isResponsive `boolean`
+{:#members:isresponsive}
 
 
 
 
-Specify enableResize value of circular gauge
+Specify isResponsive value of circular gauge
 
 
 #### Default Value
@@ -230,7 +230,7 @@ Specify enableResize value of circular gauge
 </div> 
  
 <script>                  
-        $("#CoreCircularGauge").ejCircularGauge({  enableResize : true });
+        $("#CoreCircularGauge").ejCircularGauge({  isResponsive : true });
 </script>{% endhighlight %}
 
 

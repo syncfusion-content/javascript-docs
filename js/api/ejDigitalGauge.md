@@ -93,8 +93,8 @@ Requires
 
 
 
-### enableResize `boolean`
-{:#members:enableresize}
+### isResponsive `boolean`
+{:#members:isresponsive}
 
 
 
@@ -132,7 +132,7 @@ Specifies the resize option of the DigitalGauge.
 <div id="DigitalCore"></div> 
  
 <script>
-$("#DigitalCore").ejDigitalGauge({ enableResize: true }); 
+$("#DigitalCore").ejDigitalGauge({ isResponsive: true }); 
 </script>{% endhighlight %}
 
 

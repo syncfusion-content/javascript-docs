@@ -3134,8 +3134,8 @@ enableAnimation : false
 
 
 
-### enableResizing `boolean`
-{:#members:enableresizing}
+### isResponsive `boolean`
+{:#members:isresponsive}
 
 
 
@@ -3173,7 +3173,7 @@ Sets a value whether to make the bullet graph responsive on resize.
 <div id="bulletGraph1"></div> 
 <script>
 $("#bulletGraph1").ejBulletGraph({
-enableResizing : false                  
+isResponsive : false                  
 });
 </script>{% endhighlight %}
 
