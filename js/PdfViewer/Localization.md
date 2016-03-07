@@ -198,7 +198,7 @@ Fit the PDF page to the width of the container.
 </tr>
 <tr>
 <td colspan="1" rowspan="2">
-fitTopage
+fitToPage
 </td>
 <td>
 headerText
