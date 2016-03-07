@@ -720,7 +720,7 @@ Specifies the width of grid lines in higher level.
 ### labelSettings.higherLevel.intervalType `enum`
 {:#members:labelsettings-higherlevel-intervaltype}
 
-
+<ts name="ej.RangeNavigator.IntervalType">
 
 
 
@@ -729,8 +729,57 @@ Specifies the width of grid lines in higher level.
 
 Specifies the intervalType for higher level labels. See <a href="global.html#IntervalType">IntervalType</a>
 
+### IntervalType
+{:#enum:intervalType}
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Years</td>
+<td class="type">string</td> 
+<td class="description last">The labels are displayed with year as intervals between them </td>
+</tr>
+<tr>
+<td class="name">
+Quarters</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed with quarter as intervals  between them</td>
+</tr> 
+<tr>
+<td class="name">
+Months</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed with months as intervals between them</td>
+</tr> 
+<tr>
+<td class="name">
+Weeks</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed with weeks as intervals between them</td>
+</tr> 
+<tr>
+<td class="name">
+Days</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed with days as intervals between them</td>
+</tr> 
+<tr>
+<td class="name">
+Hours</td>
 
+<td class="type">string</td>
+<td class="description last">The labels are displayed with hours as intervals between them</td>
+</tr> 
+</tbody>
+</table>
 
 #### Default Value
 
@@ -769,10 +818,36 @@ Specifies the intervalType for higher level labels. See <a href="global.html#Int
 ### labelSettings.higherLevel.labelPlacement `enum`
 {:#members:labelsettings-higherlevel-labelplacement}
 
+<ts name="ej.RangeNavigator.LabelPlacement">
 
+Specifies the position of the labels to render either inside or outside of plot area
 
+### LabelPlacement
+{:#enum:labelPlacement}
 
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inside</td>
+<td class="type">string</td> 
+<td class="description last">The Labels are displayed inside the Range Navigator </td>
+</tr>
+<tr>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
+<td class="description last">The Labels are displayed outside the Range Navigator</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -819,9 +894,36 @@ Specifies the position of the labels to render either inside or outside of plot 
 {:#members:labelsettings-higherlevel-position}
 
 
+<ts name="ej.RangeNavigator.Position">
 
+Specifies the position of the labels in higher level
 
+### Position
+{:#enum:position}
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Top</td>
+<td class="type">string</td>
+<td class="description last">Labels are placed on top of the slider</td>
+</tr>
+<tr>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
+<td class="description last">Labels are placed at teh bottom of the slider</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -1660,13 +1762,10 @@ Specifies the width of grid lines in lower level.
 
 
 
-### labelSettings.lowerLevel.intervalTypes `enum`
-{:#members:labelsettings-lowerlevel-intervaltypes}
+### labelSettings.lowerLevel.intervalType `enum`
+{:#members:labelsettings-lowerlevel-intervaltype}
 
-
-
-
-
+<ts ref="ej.RangeNavigator.IntervalType">
 
 
 
@@ -1712,7 +1811,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 ### labelSettings.lowerLevel.labelPlacement `enum`
 {:#members:labelsettings-lowerlevel-labelplacement}
 
-
+<ts ref="ej.RangeNavigator.LabelPlacement">
 
 
 
@@ -1762,7 +1861,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 {:#members:labelsettings-lowerlevel-position}
 
 
-
+<ts ref="ej.RangeNavigator.Position">
 
 
 
@@ -2486,7 +2585,42 @@ Specifies the label font size. Labels render with the specified font size.
 ### labelSettings.style.font.style `enum`
 {:#members:labelsettings-style-font-style}
 
+<ts name="ej.RangeNavigator.Style">
 
+Specifies the label font style. Labels render with the specified font style..
+
+### Style
+{:#enum:style}
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description last">The labels are displayed in the default format</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed in Bold format</td>
+</tr> 
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description last">The labels are displayed in the itialized format</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -2535,7 +2669,36 @@ Specifies the label font style. Labels render with the specified font style..See
 ### labelSettings.style.font.weight `enum`
 {:#members:labelsettings-style-font-weight}
 
+<ts name="ej.RangeNavigator.Weight">
 
+Specifies the lable font weight
+
+### Weight
+{:#enum:weight}
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Regular</td>
+<td class="type">string</td> 
+<td class="description last">The Labels are displayed in the default manner</td>
+</tr>
+<tr>
+<td class="name">Lighter</td>
+<td class="type">string</td>
+<td class="description last">The Labels are displayed lighter than the normal text</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -2584,6 +2747,41 @@ Specifies the label font weight. Labels render with the specified font weight. S
 ### labelSettings.style.horizontalAlignment `enum`
 {:#members:labelsettings-style-horizontalalignment}
 
+<ts name="ej.RangeNavigator.HorizontalAlignment">
+
+Specifies the horizontalAlignment of the label in RangeNavigator
+
+### HorizontalAlignment
+{:#enum:horizontalAlignment}
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Middle</td>
+<td class="type">string</td> 
+<td class="description last">The labels are aligned to the center </td>
+</tr>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td>
+<td class="description last">The labels are aligned to the left</td>
+</tr> 
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="description last">The labels are aligned to the right</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -3700,9 +3898,48 @@ Padding specifies the gap between the container and the range navigator.
 ### rangePadding `enum`
 {:#members:rangepadding}
 
+<ts name="ej.RangeNavigator.RangePadding">
 
+If the range is not given explicitly, range will be calculated automatically.
 
+### RangePadding
+{:#enum:rangePadding}
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Additional</td>
+<td class="type">string</td> 
+<td class="description last">The range is added with an extra interval when the RangePadding is set as Additional</td>
+</tr>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
+<td class="description last">The automatic range calculation differs based on the data when the RangePadding is set as Normal </td>
+</tr> 
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td>
+<td class="description last">The Range is calculated based on the minimum and maximum value in the data when the  RangePadding is set as None</td>
+</tr> 
+<tr>
+<td class="name">
+Round</td>
+<td class="type">string</td>
+<td class="description last">The Range is rounded to the nearest possible values when the RangePadding is set as  Round</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -3865,7 +4102,7 @@ Specifies the starting range of range navigator.
 
 
 
-### selectedData
+### selectedData 'object'
 {:#members:selecteddata}
 
 
@@ -5223,16 +5460,36 @@ Toggles the visibility of axis in range navigator.
 ### valueType `enum`
 {:#members:valuetype}
 
+<ts name='ej.RangeNavigator.ValueType'>
+You can plot data of type date time or numeric. This property determines the type of data that this axis will handle.
 
+###ValueType
+{:#enum:valueType}
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Numeric</td>
+<td class="type">string</td> 
+<td class="description last">The numeric data is used in the RangeNavigator then the ValueType is set as Numeric</td>
+</tr>
+<tr>
+<td class="name">
+DateTime</td>
+<td class="type">string</td>
+<td class="description last">The default value type of Range Navigator is DateTime and it reprsents the DateTime Values</td>
+</tr> 
 
-
-
-
-
-You can plot data of type date time or numeric. This property determines the type of data that this axis will handle. See <a href="global.html#ValueType">ValueType</a>
-
-
+</tbody>
+</table>
 
 
 #### Default Value
@@ -5516,25 +5773,25 @@ Fires on load of range navigator.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.Data{% endhighlight %}</td>
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -5583,25 +5840,25 @@ Fires after range navigator is loaded.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.Data{% endhighlight %}</td>
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -5650,25 +5907,25 @@ Fires on changing the range of range navigator.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.Data{% endhighlight %}</td>
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
