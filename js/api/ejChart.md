@@ -20325,7 +20325,69 @@ series :[{ points:[{ border :{width : 2} }] }]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
+### series.points.showIntermediateSum `boolean`
+{:#members:series-points-showintermediatesum}
 
+
+
+
+To show/hide the intermediate summary from the last intermediate point.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{ points:[{ showIntermediateSum : true }] }]                  
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
+
+### series.points.showTotalSum `boolean`
+{:#members:series-points-showtotalsum}
+
+
+
+
+To show/hide the total summary of the waterfall series.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{ points:[{ showTotalSum : true }] }]                  
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
 
 
 ### series.points.close `number`
