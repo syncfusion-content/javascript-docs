@@ -106,7 +106,7 @@ You can enable the tooltip support for the TreeMap by setting the `showTooltip` 
 
 ## Leaf Item Setting
 
-You can customize the **Leaf level TreeMapitems** using `leafItemSettings`. The Label and tooltip values take the property of bound object that is referred in the `labelPath` when defined.
+You can customize the **Leaf level TreeMap items** using `leafItemSettings`. The Label and tooltip values take the property of bound object that is referred in the `labelPath` when defined.
 
 {% highlight js %}
 

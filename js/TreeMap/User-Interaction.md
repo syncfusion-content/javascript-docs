@@ -65,7 +65,7 @@ To enable the selection of leaf nodes, the `highlightGroupOnSelection` property 
 ## MultiSelection
 
 This feature enables you to select multiple leaf nodes or groups simultaneously. To enable this feature for leaf nodes, set `selectionMode` as "**multiple**" and for groups, set `groupSelectionMode` as "**multiple**"
-To select multiple items simulataneously, the mouse tap should be done along with a continuous press of the "**Control**" key.  
+To select multiple items simultaneously, the mouse tap should be done along with a continuous press of the "**Control**" key.  
 
 ##### Selection (Multiple)
 
