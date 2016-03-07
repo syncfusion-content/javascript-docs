@@ -35,7 +35,7 @@ The **Maps** control supports data binding with the `dataSource` property in the
 
 ### Properties
 
-The following properties in shape layers is be used for binding datas in **Maps** control,
+The following properties in shape layers is be used for binding data in **Maps** control,
 
 * dataSource
 * shapeDataPath
