@@ -131,14 +131,14 @@ Gets or sets the name of the data source.
 
 {% endhighlight %}
 
-### dataSources.values `Object`
+### dataSources.values `Array`
 {:#members:datasources-values}
 
 Gets or sets the values of data source.
 
 #### Default Value
 
-* null
+* []
 
 #### Example
 
@@ -719,7 +719,7 @@ Gets or sets the parameter values.
 
 #### Default Value
 
-* null
+* []
 
 #### Example
 
