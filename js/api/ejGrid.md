@@ -2477,7 +2477,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.filteredColumns `Object`
+### filterSettings.filteredColumns `Array`
 {:#members:filtersettings-filteredcolumns}
 
 Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
@@ -2747,7 +2747,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.groupedColumns `Object`
+### groupSettings.groupedColumns `Array`
 {:#members:groupsettings-groupedcolumns}
 
 Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
@@ -3873,7 +3873,7 @@ $("#Grid").ejGrid({
 
 Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
 
-### sortSettings.sortedColumns `Object`
+### sortSettings.sortedColumns `Array`
 {:#members:sortsettings-sortedcolumns}
 
 Gets or sets a value that indicates whether to define the direction and field to sort the column.
@@ -4257,7 +4257,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns `Object`
+### summaryRows.summaryColumns `Array`
 {:#members:summaryrows-summarycolumns}
 
 Gets or sets a value that indicates whether to add summary columns into the summary rows.
@@ -4642,7 +4642,7 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to enable the toolbar in the grid and add toolbar items
 
-### toolbarSettings.customToolbarItems `Object`
+### toolbarSettings.customToolbarItems `Array`
 {:#members:toolbarsettings-customtoolbaritems}
 
 Gets or sets a value that indicates whether to add custom toolbar items within the toolbar to perform any action in the grid
@@ -8917,12 +8917,7 @@ Triggered for every grid action before its starts.
 </tbody>
 </table>
 </td>
-</tr>
-<tr>
-<td class="name">argument</td>
-<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when grid excel filtering action starts:</td>
-</tr>
+</tr> 
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
@@ -9727,12 +9722,7 @@ Triggered for every grid action success event.
 </tbody>
 </table>
 </td>
-</tr>
-<tr>
-<td class="name">argument</td>
-<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when grid excel filtering action end:</td>
-</tr>
+</tr> 
 <tr>
 <td class="name">argument</td>
 <td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
