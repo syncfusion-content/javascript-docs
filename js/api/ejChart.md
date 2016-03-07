@@ -2785,7 +2785,6 @@ Options for displaying and customizing the line that connects point and data lab
 <ts name = "ej.Chart.Type"/>
 
 
-
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
 
 ### Type
@@ -3522,7 +3521,6 @@ commonseriesoptions : { marker : { dataLabel : { textMappingName : "TextFieldNam
 <ts name = "ej.Chart.TextPosition"/>
 
 
-
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC.
 
 
@@ -3591,7 +3589,6 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 
 
 <ts name = "ej.Chart.VerticalTextAlignment"/>
-
 
 
 Vertical alignment of the data label. 
@@ -4039,7 +4036,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
 
 <ts name = "ej.Chart.PyramidMode"/>
-
 
 
 Specifies the mode of the pyramid series. 
@@ -6492,7 +6488,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 
 
 ### commonSeriesOptions.highlightSettings.mode `enum`
-{:#members:commonseriesoptions-highlightsettings-mode}
+{:#members:commonSeriesOptions-highlightSettings-mode}
 
 
 <ts name = "ej.Chart.HighlightMode"/>

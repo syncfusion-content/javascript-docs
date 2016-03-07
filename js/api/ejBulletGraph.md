@@ -376,7 +376,6 @@ Specifies the fontStyle of caption
 ### FontStyle
 {:#enum:fontStyle}
 
-
 <table class="props">
 <thead>
 <tr>
@@ -795,7 +794,7 @@ Specifies the fontStyle of indicator. Indicator text render with this fontStyle.
 
 
 
-* "Normal" 
+* "Normal"
 
 
 
@@ -2379,9 +2378,7 @@ Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. S
 
 
 
-
-
-* "Normal" 
+* "Normal"
 
 
 
@@ -5054,7 +5051,7 @@ Specifies the fontStyle of labels in bullet graph. Labels render with this fontS
 
 
 
-* "Normal" 
+* "Normal"
 
 
 
