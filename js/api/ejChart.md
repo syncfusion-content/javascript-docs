@@ -6788,6 +6788,64 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 {% endhighlight %}
 
 
+### commonseriesoptions.selectionSettings.type `enum`
+{:#members:commonseriesOptions-selectionSettings-type}
+
+<ts name = "ej.Chart.SelectionType"/>
+
+Specifies the type of selection.
+
+### SelectionType
+{:#enum:selectionType}
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Single</td>
+<td class="type">string</td>
+<td class="description">It will be select the single series / point of the chart.</td>
+</tr>
+<tr>
+<td class="name">
+Multiple</td>
+<td class="type">string</td>
+<td class="description">It will be select the multiple series / point of the chart.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({ 
+commonseriesoptions:{
+  selectionSettings:{
+              type : 'multiple'
+             }
+	}
+  }); 
+
+{% endhighlight %}
+
 
 ### commonSeriesOptions.selectionSettings.mode `enum`
 {:#members:commonseriesoptions-selectionsettings-mode}
@@ -23208,7 +23266,7 @@ series :[{selectionSettings:{enable:true}}]
 
 
 ### series.selectionSettings.mode `enum`
-{:#members:series-selectionsettings-mode}
+{:#members:series-selectionSettings-mode}
 
 <ts ref = "ej.Chart.HighlightMode"/>
 
@@ -23238,6 +23296,39 @@ series :[{selectionSettings:{mode:"point"}}]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
 
+
+### series.selectionSettings.type `enum`
+{:#members:series-selectionSettings-type}
+
+<ts ref = "ej.Chart.SelectionType"/>
+
+Specifies the type of selection.
+
+
+#### Default Value
+
+
+
+* "single"
+
+See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+     series: [{
+      selectionSettings:{
+              type : 'multiple'
+             }
+	  }]
+  }); 
+
+{% endhighlight %}
 
 
 ### series.selectionSettings.color `string`
