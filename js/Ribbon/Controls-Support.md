@@ -40,7 +40,6 @@ The following table describes about the built in controls [`type`](http://help.s
 <td class="example last">
 	splitButtonSettings: {
                           contentType: ej.ContentType.ImageOnly,
-                          prefixIcon: "e-ribbon e-ribbonpaste",
                           targetID: "pasteSplit",
                           buttonMode: "dropdown",
                           arrowPosition: ej.ArrowPosition.Bottom
@@ -55,8 +54,6 @@ The following table describes about the built in controls [`type`](http://help.s
                            contentType: ej.ContentType.ImageOnly,
                            defaultText: "Italic",
                            activeText: "Italic",
-                           defaultPrefixIcon: "e-ribbon e-ribbonitalic",
-                           activePrefixIcon: "e-ribbon e-ribbonitalic"
                            }
  </td>
 </tr>
@@ -65,7 +62,7 @@ The following table describes about the built in controls [`type`](http://help.s
 <td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejdropdownlist">ejDropDownList</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-dropdownsettings">dropdownSettings</a></span></td>
 <td class="example last">
 	dropdownSettings: {
-                      dataSource: fontsize,
+                      dataSource: size,
                       text: "1pt",
                       width: 65
                       }
@@ -74,8 +71,8 @@ The following table describes about the built in controls [`type`](http://help.s
 </tbody>
 </table>
 
-N> 1.You can specify type either to [`group’s collection`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type).
-N> 2.For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
+N> 1. You can specify type either to [`group’s collection`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type).
+N> 2. For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
 
 {% highlight html %}
 
