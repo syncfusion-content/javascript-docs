@@ -150,7 +150,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 {% endhighlight %}
 
-2\. Add a script tag anywhere in the webpage and add the following code. 
+2\. Add a script tag anywhere in the web page and add the following code. 
 
 {% highlight js %}
 
@@ -233,7 +233,7 @@ The `shapeDataPath` property used to refer the data ID in dataSource. For exampl
 
 ### Shape Property Path
 
-The `shapePropertyPath` property is similar to the `shapeDataPath` that refers the column name in the `shapeData` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the shapeDataproperty match, then the associated object from the `dataSource` is bound to the corresponding shape.
+The `shapePropertyPath` property is similar to the `shapeDataPath` that refers the column name in the `shapeData` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the shapeData property match, then the associated object from the `dataSource` is bound to the corresponding shape.
 
 The **JSON** object “populationData” is used as dataSource in the following code example.
 

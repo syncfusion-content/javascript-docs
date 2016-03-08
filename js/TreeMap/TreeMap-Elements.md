@@ -19,7 +19,7 @@ TreeMap contains various elements such as,
 
 You can set the color value of **leaf nodes** using `treeMapLegend`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `rangeColorMapping`.
 
-You can set `showLegend` propery value to **“True”** to enable or disable legend visibility.
+You can set `showLegend` property value to **“True”** to enable or disable legend visibility.
 
 ### TreeMap Legend
 
@@ -27,7 +27,7 @@ You can decide the size of the legend icons by setting `iconWidth` and `iconHeig
 
 ### Label for Legend
 
-You can customize the labels of the **legenditem** using `legendLabel` property of `rangeColorMapping`. 
+You can customize the labels of the **legend item** using `legendLabel` property of `rangeColorMapping`. 
 
 {% highlight js %}
 
@@ -101,7 +101,7 @@ You can provide the left and right labels to interactive legend by using `leftLa
 
 ## Header
 
-You can set headers for each level by setting the `showHeader` propery of the each **TreeMap** levels. The `headerHeight` property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the `headerTemplate` of the **TreeMap** levels.
+You can set headers for each level by setting the `showHeader` property of the each **TreeMap** levels. The `headerHeight` property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the `headerTemplate` of the **TreeMap** levels.
 
 {% highlight js %}
 

@@ -9277,50 +9277,62 @@ diagram.cut();
 Export the diagram as downloadable files or as data
 
 <table class="params">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="name">[options]</td>
-			<td class="type">object</td>
-			<td class="description last">options to export the desired region of diagram to the desired formats</td>
-		</tr>
-		<tr>
-			<td class="name">options.fileName</td>
-			<td class="type">string</td>
-			<td class="description last">name of the file to be downloaded</td>
-		</tr>
-		<tr>
-			<td class="name">options.format</td>
-			<td class="type">string</td>
-			<td class="description last">format of the exported file/data. See [File Formats](/js/api/global#fileformats)</td>
-		</tr>
-		<tr>
-			<td class="name">options.mode</td>
-			<td class="type">string</td>
-			<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/js/api/global#exportmodes)</td>
-		</tr>
-		<tr>
-			<td class="name">options.region</td>
-			<td class="type">string</td>
-			<td class="description last">to set the region of the diagram to be exported. See [Region](/js/api/global#region)</td>
-		</tr>
-		<tr>
-			<td class="name">options.bounds</td>
-			<td class="type">object</td>
-			<td class="description last">to export any custom region of diagram</td>
-		</tr>
-		<tr>
-			<td class="name">options.margin</td>
-			<td class="type">object</td>
-			<td class="description last">to set margin to the exported data</td>
-		</tr>
-	</tbody>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">[options]</td>
+<td class="type"><ts name="ej.Diagram.Model"/><span class="param-type">Object</span></td>
+<td class="description last">options to export the desired region of diagram to the desired formats.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fileName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the file to be downloaded.</td>
+</tr>
+<tr>
+<td class="name">format</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">format of the exported file/data. See [File Formats](/js/api/global#fileformats).</td>
+</tr>
+<tr>
+<td class="name">mode</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/js/api/global#exportmodes).</td>
+</tr>
+<tr>
+<td class="name">region</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">to set the region of the diagram to be exported. See [Region](/js/api/global#region).</td>
+</tr>
+<tr>
+<td class="name">bounds</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to export any custom region of diagram.</td>
+</tr>
+<tr>
+<td class="name">margin</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to set margin to the exported data.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
 </table>
 
 #### Returns:

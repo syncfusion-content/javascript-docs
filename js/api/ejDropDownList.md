@@ -3295,7 +3295,7 @@ This method will return the whole object corresponds to given value from datasou
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20
         });
-        var data = .ejDropDownList('getItemDataByValue',"Aria Cruz")
+        var data =  $('#drpdwn').ejDropDownList('getItemDataByValue',"Aria Cruz")
         console.log("Target CompanyName - "+ data[0].CompanyName);
 
     </script>
@@ -3314,7 +3314,9 @@ This method will return the whole object corresponds to given value from datasou
 
 This method is used to retrieve the items that are bound with the DropDownList.
 
-####Returns: object 
+####Returns: 
+
+object 
 
 This method will return the whole data which binds with Dropdownlist control 
 

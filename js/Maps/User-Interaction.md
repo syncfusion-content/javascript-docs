@@ -229,7 +229,7 @@ Latitude point of the position </td></tr>
 <td>
 Longitude</td><td>
 Double</td><td>
-Longitude point of the postion</td></tr>
+Longitude point of the position</td></tr>
 <tr>
 <td>
 level</td><td>
