@@ -33,7 +33,7 @@ documentation: ug
          ej.data.min.js
       </td>
       <td>
-         Used to handle datamanger operation and should be used while binding data to <i><b>JS</b></i> controls.
+         Used to handle data manger operation and should be used while binding data to <i><b>JS</b></i> controls.
       </td>
    </tr>
    <tr>
@@ -89,7 +89,7 @@ documentation: ug
          ej.dropdownlist.min.js
       </td>
       <td rowspan = "4">
-         These files are used to render button,split button,toggle button, and dropdownlist controls in the ribbon groups.
+         These files are used to render button,split button,toggle button, and dropdown list controls in the ribbon groups.
       </td>
    </tr>
    <tr>
