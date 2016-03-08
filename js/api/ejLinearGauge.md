@@ -821,7 +821,7 @@ Specifies the orientation for Linear gauge.
 
 
 
-Specify isResponsive value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
+Specify enableResize value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
 
 
