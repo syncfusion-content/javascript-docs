@@ -1866,7 +1866,7 @@ Specifies the application menu or backstage page. Specify the type of applicatio
 ### contextualTabs `array`
 {:#members:contextualtabs}
 
-Specifies the contextual tabs and tabset to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
+Specifies the contextual tabs and tab set to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
 
 #### Default Value:
 
@@ -1955,7 +1955,7 @@ Specifies the contextual tabs and tabset to the ribbon control with the backgrou
 ### contextualTabs.backgroundColor `string`
 {:#members:contextualtabs-backgroundcolor}
 
-Specifies the backgroundColor of the contextual tabs and tabset in the ribbon control.
+Specifies the backgroundColor of the contextual tabs and tab set in the ribbon control.
 
 #### Default Value:
 
@@ -2044,7 +2044,7 @@ Specifies the backgroundColor of the contextual tabs and tabset in the ribbon co
 ### contextualTabs.borderColor `string`
 {:#members:contextualtabs-bordercolor}
 
-Specifies the borderColor of the contextual tabs and tabset in the ribbon control.
+Specifies the borderColor of the contextual tabs and tab set in the ribbon control.
 
 #### Default Value:
 
@@ -2132,7 +2132,7 @@ Specifies the borderColor of the contextual tabs and tabset in the ribbon contro
 ### contextualTabs.tabs `array`
 {:#members:contextualtabs-tabs}
 
-Specifies the tabs to present in the contectual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
+Specifies the tabs to present in the contextual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
 
 #### Default Value:
 
@@ -3309,7 +3309,7 @@ Specifies the syncfusion button members, events by using buttonSettings.
 
 <ts name="ej.Ribbon.customItemType"/>
 
-Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Synfusion button and menu.
+Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Syncfusion button and menu.
 
 <table class="params">
 <thead>
@@ -5716,7 +5716,7 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
 </tr>
 <tr>
 <td class="name">splitButton</td>
-<td class="description">Specifies the splitbutton</td>
+<td class="description">Specifies the split button</td>
 </tr>
 <tr>
 <td class="name">dropDownList</td>
@@ -5728,7 +5728,7 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
 </tr>
 <tr>
 <td class="name">toggleButton</td>
-<td class="description">Specifies the togglebuton</td>
+<td class="description">Specifies the toggle button</td>
 </tr>
 <tr>
 <td class="name">gallery</td>
@@ -6446,7 +6446,7 @@ Specifies the width to the ribbon control. You can set width in string or number
 ### addContextualTabs(contextualTabSet, \[index\])
 {:#methods:addcontextualtabs}
 
-Adds contextual tab or contextual tab set dynamically in the ribbon control with contextualtabs object and index position. When index is null, ribbon contextual tab or contextual tab set is added at the last index.
+Adds contextual tab or contextual tab set dynamically in the ribbon control with contextual tabs object and index position. When index is null, ribbon contextual tab or contextual tab set is added at the last index.
 
 <table class="params">
 <thead>
@@ -6744,7 +6744,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
 
 {% endhighlight %}
 
-### addTabGroup(tabIndex, tabGroup, \[grpIndex\])
+### addTabGroup(tabIndex, tabGroup, \[groupIndex\])
 {:#methods:addtabgroup}
 
 Adds tab group dynamically in the ribbon control with given tab index, tab group object and group index position. When group index is null, ribbon group is added at the last index.
@@ -6769,7 +6769,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
 <td class="description last">group to be displayed in ribbon tab .</td>
 </tr>
 <tr>
-<td class="name">grpIndex</td>
+<td class="name">groupIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of the ribbon group,this is optional.</td>
 </tr>
@@ -6922,7 +6922,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
 {% endhighlight %}
 
 
-### addTabGroupContent(tabIndex, grpIndex, subGrpIndex, content, \[contentIndex\])
+### addTabGroupContent(tabIndex, groupIndex, subGroupIndex, content, \[contentIndex\])
 {:#methods:addtabgroupcontent}
 
 Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
@@ -6942,12 +6942,12 @@ Adds group content dynamically in the ribbon control with given tab index, group
 <td class="description last">ribbon tab index.</td>
 </tr>
 <tr>
-<td class="name">grpIndex</td>
+<td class="name">groupIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ribbon group index.</td>
 </tr>
 <tr>
-<td class="name">subGrpIndex</td>
+<td class="name">subGroupIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">sub group index in the ribbon group,</td>
 </tr>
@@ -8454,7 +8454,7 @@ Triggered before the ribbon tab item is removed.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8552,7 +8552,7 @@ Triggered before the ribbon control is created.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9020,7 +9020,7 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9142,7 +9142,7 @@ Triggered when the ribbon control is collapsed.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9219,7 +9219,7 @@ Triggered when the ribbon control is expanded.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9308,7 +9308,7 @@ Triggered after adding the new ribbon tab item.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9411,7 +9411,7 @@ Triggered when tab is clicked successfully in the ribbon control.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9524,7 +9524,7 @@ Triggered before the ribbon tab is created.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9623,7 +9623,7 @@ Triggered after the tab item is removed from the ribbon control.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9722,7 +9722,7 @@ Triggered after the ribbon tab item is selected in the ribbon control.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9822,7 +9822,7 @@ Triggered when the expand/collapse button is clicked successfully .
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
