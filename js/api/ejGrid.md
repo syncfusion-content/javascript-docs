@@ -246,7 +246,7 @@ $("#Grid").ejGrid({
 ### allowResizeToFit `Boolean`
 {:#members:allowresizetofit}
 
-Gets or sets a value that indicates whether the column is non resizeable. Column width is set automatically based on the content or header text which is large.
+Gets or sets a value that indicates whether the column is non resizable. Column width is set automatically based on the content or header text which is large.
 
 #### Default Value:
 {:.param}
@@ -267,7 +267,7 @@ $("#Grid").ejGrid({
 ### allowResizing `Boolean`
 {:#members:allowresizing}
 
-Gets or sets a value that indicates whether to enable dynamic resizabiliy of columns. . Resize the width of the columns by simply click and move the particular column header line
+Gets or sets a value that indicates whether to enable dynamic resizable of columns. Resize the width of the columns by simply click and move the particular column header line
 
 #### Default Value:
 {:.param}
@@ -638,7 +638,7 @@ $("#Grid").ejGrid({
 ### columns.allowResizing `Boolean`
 {:#members:columns-allowresizing}
 
-Gets or sets a value that indicates whether to enable dynamic resizabiliy for particular column.
+Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
 
 #### Default Value:
 {:.param}
@@ -660,7 +660,7 @@ $("#Grid").ejGrid({
 ### columns.showInColumnChooser `Boolean`
 {:#members:columns-showincolumnchooser}
 
-Used to hide the particular column in columnchooser by giving value as false.
+Used to hide the particular column in column chooser by giving value as false.
 
 #### Default Value:
 {:.param}
@@ -995,7 +995,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.EditingType"/>
 
-Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. . See editingType
+Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. See editingType
 
 #### Default Value:
 {:.param}
@@ -1008,19 +1008,19 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 </tr>
 <tr>
 <td class="name">String</td>
-<td class="description">Specifies editing type as stringedit.</td>
+<td class="description">Specifies editing type as string edit.</td>
 </tr>
 <tr>
 <td class="name">Boolean</td>
-<td class="description">Specifies editing type as booleanedit.</td>
+<td class="description">Specifies editing type as boolean edit.</td>
 </tr> 
 <tr>
 <td class="name">Numeric</td>
-<td class="description">Specifies editing type as numericedit.</td>
+<td class="description">Specifies editing type as numeric edit.</td>
 </tr> 
 <tr>
 <td class="name">Dropdown</td>
-<td class="description">Specifies editing type as dropdownedit.</td>
+<td class="description">Specifies editing type as dropdown edit.</td>
 </tr> 
 <tr>
 <td class="name">DatePicker</td>
@@ -1028,7 +1028,7 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 </tr> 
 <tr>
 <td class="name">DateTimePicker</td>
-<td class="description">Specifies editing type as datetimepicker.</td>
+<td class="description">Specifies editing type as datetime picker.</td>
 </tr> 
 </table>
 
@@ -1193,19 +1193,19 @@ Add a comment to this line
 </tr>
 <tr>
 <td class="name">Center</td>
-<td class="description">Headertext is centered.</td>
+<td class="description">Header text is centered.</td>
 </tr>
 <tr>
 <td class="name">Justify</td>
-<td class="description">Headertext is justified.</td>
+<td class="description">Header text is justified.</td>
 </tr> 
 <tr>
 <td class="name">Left</td>
-<td class="description">Headertext is aligned to the left.</td>
+<td class="description">Header text is aligned to the left.</td>
 </tr> 
 <tr>
 <td class="name">Right</td>
-<td class="description">Headertext is aligned to the right.</td>
+<td class="description">Header text is aligned to the right.</td>
 </tr>   
 </table>
 
@@ -1246,7 +1246,7 @@ $("#Grid").ejGrid({
 ### columns.isIdentity `Boolean`
 {:#members:columns-isidentity}
 
-Gets or sets a value that indicates thecolumn has an identity in the database.
+Gets or sets a value that indicates the column has an identity in the database.
 
 #### Default Value:
 {:.param}
@@ -1432,7 +1432,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.ClipMode"/>
 
-Sets the clipmode for Grid cell as ellipsis or clipped content(both header and content)
+Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
 
 #### Default Value:
 {:.param}
@@ -1472,7 +1472,7 @@ $("#Grid").ejGrid({
 ### columns.type `String`
 {:#members:columns-type}
 
-Gets or sets a value that indicates to specify the datatype of the specified columns.
+Gets or sets a value that indicates to specify the data type of the specified columns.
 
 #### Default Value:
 {:.param}
@@ -1779,7 +1779,7 @@ $("#Grid").ejGrid({
 ### editSettings `Object`
 {:#members:editsettings}
 
-Gest or sets an object that indicates whether to customize the editing behavior of the grid.
+Gets or sets an object that indicates whether to customize the editing behavior of the grid.
 
 ### editSettings.allowAdding `Boolean`
 {:#members:editsettings-allowadding}
@@ -1947,7 +1947,7 @@ Add a comment to this line
 </tr>  
 <tr>
 <td class="name">DialogTemplate</td>
-<td class="description">Edit mode is dialogtemplate.</td>
+<td class="description">Edit mode is dialog template.</td>
 </tr> 
 <tr>
 <td class="name">Batch</td>
@@ -1955,19 +1955,19 @@ Add a comment to this line
 </tr> 
 <tr>
 <td class="name">InlineForm</td>
-<td class="description">Edit mode is inlineform.</td>
+<td class="description">Edit mode is inline form.</td>
 </tr> 
 <tr>
 <td class="name">InlineTemplateForm</td>
-<td class="description">Edit mode is inlinetemplateform.</td>
+<td class="description">Edit mode is inline template form.</td>
 </tr> 
 <tr>
 <td class="name">ExternalForm</td>
-<td class="description">Edit mode is externalform.</td>
+<td class="description">Edit mode is external form.</td>
 </tr> 
 <tr>
 <td class="name">ExternalFormTemplate</td>
-<td class="description">Edit mode is externalformtemplate.</td>
+<td class="description">Edit mode is external form template.</td>
 </tr> 
 </table>
 
@@ -2772,7 +2772,7 @@ $("#Grid").ejGrid({
 ### groupSettings.showDropArea `Boolean`
 {:#members:groupsettings-showdroparea}
 
-Gets or sets a value that indicates whether to show the group droparea just above the column header. It can be used to avoid ungrouping the already grouped column using groupsettings.
+Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using groupsettings.
 
 #### Default Value:
 {:.param}
@@ -2819,7 +2819,7 @@ $("#Grid").ejGrid({
 ### groupSettings.showToggleButton `Boolean`
 {:#members:groupsettings-showtogglebutton}
 
-Gets or sets a value that indicates whether to showthe group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
+Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
 
 #### Default Value:
 {:.param}
@@ -3171,7 +3171,7 @@ $("#Grid").ejGrid({
 ### pageSettings.totalPages `Number`
 {:#members:pagesettings-totalpages}
 
-Get the value of total number of pages in the grid. The totalPages value is calculated based on pagesize and totalrecords of grid
+Get the value of total number of pages in the grid. The totalPages value is calculated based on page size and total records of grid
 
 #### Default Value:
 {:.param}
@@ -3234,11 +3234,11 @@ Gets or sets a value that indicates whether to define the number of pages to pri
 </tr>
 <tr>
 <td class="name">AllPages</td>
-<td class="description">Prints allpages.</td>
+<td class="description">Prints all pages.</td>
 </tr>
 <tr>
 <td class="name">CurrentPage</td>
-<td class="description">Prints currentpage.</td>
+<td class="description">Prints curren tpage.</td>
 </tr>  
 </table>
 
@@ -4512,11 +4512,11 @@ Gets or sets a value that indicates the type of calculations to be performed for
 </tr>  
 <tr>
 <td class="name">TrueCount</td>
-<td class="description">Summary type is truecount.</td>
+<td class="description">Summary type is true count.</td>
 </tr>  
 <tr>
 <td class="name">FalseCount</td>
-<td class="description">Summary type is falsecount.</td>
+<td class="description">Summary type is false count.</td>
 </tr>  
 </table>
 
@@ -5277,7 +5277,7 @@ $("#Grid").ejGrid("collapseGroupDropArea");
 
 
 
-### columns(columndetails, \[action\])
+### columns(column details, \[action\])
 {:#methods:columns}
 
 Add or remove columns in grid column collections
@@ -5292,7 +5292,7 @@ Add or remove columns in grid column collections
 </thead>
 <tbody>
 <tr>
-<td class="name">columndetails</td>
+<td class="name">column details</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of columns or string of field name to add/remove the column in grid</td>
 </tr>
@@ -5697,7 +5697,7 @@ Export the grid content to excel, word or pdf document.
 <tr>
 <td class="name">multipleExport</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the mutiple exporting value as true/false</td>
+<td class="description last"><span class="optional">optional</span>Pass the multiple exporting value as true/false</td>
 </tr>
 <tr>
 <td class="name">gridIds</td>
