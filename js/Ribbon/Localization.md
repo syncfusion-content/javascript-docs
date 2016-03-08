@@ -25,19 +25,19 @@ CustomizeQuickAccess</td><td>
 Customize Quick Access Toolbar</td></tr>
 <tr>
 <td>
-RemovefromQuickAccessToolbar</td><td>
+RemoveFromQuickAccessToolbar</td><td>
 Remove from Quick Access Toolbar</td></tr>
 <tr>
 <td>
-AddtoQuickAccessToolbar</td><td>
+AddToQuickAccessToolbar</td><td>
 Add to Quick Access Toolbar</td></tr>
 <tr>
 <td>
-ShowAbovetheRibbon</td><td>
+ShowAboveTheRibbon</td><td>
 Show Above the Ribbon</td></tr>
 <tr>
 <td>
-ShowBelowtheRibbon</td><td>
+ShowBelowTheRibbon</td><td>
 Show Below the Ribbon</td></tr>
 <tr>
 <td>
