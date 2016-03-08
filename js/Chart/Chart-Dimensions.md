@@ -78,14 +78,14 @@ You can specify the chart size in percentage by using the [`size`](../api/ejchar
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set the [`isResponsive`](../api/ejchart#members:isResponsive) property to **true**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the [`canResize`](../api/ejchart#members:canresize) property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight js %}
 
       $("#container").ejChart({
            // ...
-           //Enable isResponsive to change the chart size dynamically.
-           isResponsive: true           
+           //Enable canResize to change the chart size dynamically.
+           canResize: true           
            // ...
       });
 

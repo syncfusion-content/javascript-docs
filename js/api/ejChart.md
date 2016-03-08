@@ -784,6 +784,41 @@ $("#container").ejChart({
 
 
 
+### canResize `boolean`
+{:#members:canresize}
+
+
+
+
+Controls whether Chart has to be responsive or not.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   canResize : true             
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r12awtp3)
+
+
+
+
 ### chartArea `object`
 {:#members:chartarea}
 
@@ -7776,37 +7811,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-### isResponsive `boolean`
-{:#members:isresponsive}
 
-
-
-
-Controls whether Chart has to be responsive or not.
-
-
-#### Default Value
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-   isResponsive : true             
-
-});
-
-{% endhighlight %}
-
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1dkyopq5)
 
 
 ### legend `object`
@@ -10224,39 +10229,6 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
-
-### primaryXAxis.isIndexed `boolean`
-{:#members:primaryxaxis-isindexed}
-
-
-
-
-IsIndexed is points plotting based on index in category axis value type charts.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     primaryXAxis: { isIndexed : true}
-                           
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ayxewsvh)
 
 ### primaryXAxis.isInversed `boolean`
 {:#members:primaryxaxis-isinversed}

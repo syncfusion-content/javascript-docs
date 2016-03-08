@@ -49,7 +49,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 * For any display devices, the control will be rendered based on the space available in that device. For this purpose, **resizing** property is given to the **Digital Gauge** control. The **Digital Gauge** renders with a given value. 
 
-* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property **isResponsive.**
+* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property **canResize.**
 
 
 {% highlight html %}
@@ -66,7 +66,7 @@ $(function () {
             // For setting width of the canvas element.
             width:800,
             // For enabling resize.
-           isResponsive: true,
+           canResize: true,
 })
     });
 
@@ -105,7 +105,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
             // For setting width of the canvas element.
             width:800,
             // For enabling resize.
-          isResponsive: true,
+          canResize: true,
             // For setting theme for digital gauge.
           themes: "flatdark",
             // For setting text

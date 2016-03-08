@@ -189,8 +189,8 @@ Specifies the data source for range navigator.
 
 
 
-### isResponsive `boolean`
-{:#members:isresponsive}
+### enableAutoResizing `boolean`
+{:#members:enableautoresizing}
 
 
 
@@ -228,7 +228,7 @@ Sets a value whether to make the range navigator responsive on resize.
 <div id="RangeNavigator"></div> 
 <script>
         $("#container").ejRangeNavigator({
-   isResponsive: true;
+   enableAutoResizing: true;
    });
 </script>  {% endhighlight %}
 
