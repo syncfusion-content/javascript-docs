@@ -17,13 +17,13 @@ It is possible to add object, array collection in the Ribbon control with angula
 
 Ribbon Tabs and Contextual Tabs are Array Collections and the inner tag is used for them.
 
-Objects with in these Array Collections can be extended by using hyphen. E.g. `e-applicationtab-menuItemid="ribbonmenu"`
+Objects with in these Array Collections can be extended by using hyphen. E.g. `e-applicationtab-menuitemid="menu"`
 
 {% highlight html %}
 
 	<div ng-app="ribbonApp">
 		<div ng-controller="RibbonCtrl">
-		<div id="defaultRibbon" ej-ribbon e-width="400" e-applicationtab-menuItemid="ribbonmenu" e-applicationtab-applicationTabType="ApplicationMenu">
+		<div id="defaultRibbon" ej-ribbon e-width="400" e-applicationtab-menuItemid="ribbonmenu" e-applicationtab-type="menu">
 			
 				<!-- Tabs array collection-->
 				<div e-tabs>
@@ -65,7 +65,7 @@ Objects with in these Array Collections can be extended by using hyphen. E.g. `e
 					</div>
 				</div>
 			</div>
-		<ul id="ribbonmenu">
+		<ul id="menu">
 			<li>
 			<a>FILE</a>
 			<ul>
