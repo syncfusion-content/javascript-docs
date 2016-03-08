@@ -330,8 +330,8 @@ Specifies the animate state for marker pointer
 
 
 
-### enableResize `boolean`
-{:#members:enableresize}
+### isResponsive `boolean`
+{:#members:isresponsive}
 
 
 
@@ -340,7 +340,7 @@ Specifies the animate state for marker pointer
 
 
 
-Specifies the can resize state.
+Specifies the responsive to resize state.
 
 
 
@@ -369,7 +369,7 @@ Specifies the can resize state.
 <div id="LinearGauge1"></div> 
  
 <script>
-        $("#LinearGauge1").ejLinearGauge({ enableResize: true });   
+        $("#LinearGauge1").ejLinearGauge({ isResponsive: true });   
 </script> {% endhighlight %}
 
 
@@ -821,7 +821,7 @@ Specifies the orientation for Linear gauge.
 
 
 
-Specify enableResize value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
+Specify isresponsive value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
 
 
