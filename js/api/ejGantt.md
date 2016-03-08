@@ -163,7 +163,7 @@ Enables or Disables Keyboard navigation in gantt
 ### allowMultiSorting `boolean`
 {:#members:allowmultisorting}
 
-Specifies enabling or disabling multiple sorting for gantt columns
+Specifies enabling or disabling multiple sorting for Gantt columns
 
 
 #### Default Value:
@@ -703,7 +703,7 @@ Enables or disables delete icon in gantt toolbar
 ### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
-Specifies the option for enabling or disabling editing in gantt grid part
+Specifies the option for enabling or disabling editing in Gantt grid part
 
 
 #### Default Value:
@@ -729,7 +729,7 @@ Specifies the option for enabling or disabling editing in gantt grid part
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
 
-Specifies the edit mode in gantt , "normal" is for dialog editing ,"cellEditing" is for cell type editing
+Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" is for cell type editing
 
 
 #### Default Value:
@@ -3322,7 +3322,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameter swhile performing the delete operation starts:
+<td class="description">Event parameters while performing the delete operation starts:
 <table class="params">
 <thead>
 <tr>
