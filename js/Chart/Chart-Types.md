@@ -2093,9 +2093,9 @@ To customize the connector line color, width, opacity and dashArray of the water
 ![](/js/Chart/Chart-Types_images/Chart-Types_img74.png)
 
 
-## Errorbar Chart 
+## Error bar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(line, column, bar, scatter, area, candle, hilo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *“visibile”* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
+EjChart can generate Error bar for Cartesian type series *(line, column, bar, scatter, area, candle, hilo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *“visible”* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
 
 
 {% highlight js %}
@@ -2121,7 +2121,7 @@ EjChart can generate Error bar for Cartesian type series *(line, column, bar, sc
 ![](/js/Chart/Chart-Types_images/Chart-Types_img75.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/errorbar) here to view the Errorbar Chart online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/errorbar) here to view the Error bar Chart online demo sample.
 
 
 ### Changing Error Bar Type
