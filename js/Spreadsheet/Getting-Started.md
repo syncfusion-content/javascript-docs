@@ -395,7 +395,7 @@ The Spreadsheet control also has support for excel like drag fill, which can be 
 3. Formula Series - fill formula based on cell reference.
 4. Formatting - repeat cell formats.
 
-For auto filling, editing and autofill should be enabled using `allowEditing` and `allowAutoFill`.
+For auto filling, editing and auto fill should be enabled using `allowEditing` and `allowAutoFill`.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
