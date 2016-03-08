@@ -150,4 +150,4 @@ Import and Export Helper functions are available in the Assembly `Syncfusion.EJ.
 
 N> 1. _The above mentioned assemblies will be available in below location after Essential studio build installation._
 N> 2. _C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\precompiledassemblies\x.x.x.x\y.y._
-N> 3. _x.x.x.x defines build version of Essential Studio and y.y defines .Net framework version._
+N> 3. _x.x.x.x defines build version of Essential Studio and y.y defines .NET Framework version._
