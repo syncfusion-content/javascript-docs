@@ -2987,7 +2987,7 @@ Specifies the custom bounds to align the layout
 <div id="diagramcontent"></div>
 <script>
 // bounds of the layout
-$("#diagramcontent").ejDiagram(layout: { bounds:{ x: 0, y: 0, width: 100, height: 100} }});
+$("#diagramcontent").ejDiagram({layout: { bounds:{ x: 0, y: 0, width: 100, height: 100} }});
 </script>
 
 {% endhighlight %}
