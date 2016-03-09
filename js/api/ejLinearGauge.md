@@ -12820,7 +12820,7 @@ args.scaleElement{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
@@ -13168,7 +13168,7 @@ args.object{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
@@ -13292,13 +13292,13 @@ args.context{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.position{% endhighlight %}</td>
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the ticks</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.Model{% endhighlight %}</td>
+Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
@@ -13322,7 +13322,7 @@ args.style{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.tick{% endhighlight %}</td>
+tick{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ticks style
 <table class="params">
@@ -13446,8 +13446,8 @@ args.context{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">type</span></td>
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
@@ -13528,8 +13528,8 @@ args.context{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">type</span></td>
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
