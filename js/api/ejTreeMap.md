@@ -1252,7 +1252,7 @@ Shows or hides the label of the leaf item.
 Specifies the legend settings of the treemap
 
 
-### levels `TreeMapLevel`
+### levels `array`
 {:#members:levels}
 
 Specify levels of treemap for grouped visualization of datas
@@ -1292,7 +1292,7 @@ Specify levels of treemap for grouped visualization of datas
 Specifies the paletteColorMapping of the treemap
 
 
-### rangeColorMapping `TreeMapRangeColorMapping`
+### rangeColorMapping `array`
 {:#members:rangecolormapping}
 
 Specifies the rangeColorMapping settings of the treemap
@@ -2556,7 +2556,7 @@ Triggers on treemap item selected.
     </thead>
     <tbody>
         <tr>
-            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
             <td class="type"><span class="param-type">object</span></td>
             <td class="description last">Returns selected treeMapItem object.</td>
         </tr>
