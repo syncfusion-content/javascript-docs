@@ -2719,7 +2719,7 @@ Remove Menu item.
 <tr>
 <td class="name">
 target</td>
-<td class="type"><span class="param-type">Object|ArrayString</span></td>
+<td class="type"><span class="param-type">object|array</span></td>
 <td class="description">Selector of target node or Object of target node.</td>
 </tr>
 </tbody>
