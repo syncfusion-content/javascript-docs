@@ -9287,7 +9287,7 @@ Export the diagram as downloadable files or as data
 <tbody>
 <tr>
 <td class="name">[options]</td>
-<td class="type"><ts name="ej.Diagram.Model"/><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">options to export the desired region of diagram to the desired formats.
 <table class="params">
 <thead>
