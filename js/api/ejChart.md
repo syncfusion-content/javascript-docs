@@ -151,10 +151,6 @@ Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 
 Specifies how annotations have to be placed in Chart.
 
-
-### CoordinateUnit
-{:#enum:coordinateUnit}
-
 <table class="props">
 <thead>
 <tr>
@@ -215,9 +211,6 @@ $("#container").ejChart({
 
 
 Specifies the horizontal alignment of the annotation.
-
-### HorizontalAlignment
-{:#enum:horizontalalignment}
 
 <table class="props">
 <thead>
@@ -464,9 +457,6 @@ Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 Specifies whether annotation has to be placed with respect to chart or series.
 
 
-### Region
-{:#enum:region}
-
 <table class="props">
 <thead>
 <tr>
@@ -525,10 +515,6 @@ Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 
 
 Specifies the vertical alignment of the annotation.
-
-
-### VerticalAlignment
-{:#enum:verticalalignment}
 
 <table class="props">
 <thead>
@@ -1128,9 +1114,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 Specifies the unit to measure the width of the column in plotting area.
 
 
-### Unit
-{:#enum:unit}
-
 <table class="props">
 <thead>
 <tr>
@@ -1544,9 +1527,6 @@ commonSeriesOptions :{ doughnutSize : 0.9}
 Specifies the type of series to be drawn in radar or polar series. 
 
 
-### DrawType
-{:#enum:drawType}
-
 <table class="props">
 <thead>
 <tr>
@@ -1958,8 +1938,6 @@ commonSeriesOptions :{ font : { fontFamily : "Algerian"}}
 
 Specifies the font Style for all the series.
 
-### FontStyle
-{:#enum:fontStyle}
 
 <table class="props">
 <thead>
@@ -2018,9 +1996,6 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 
 Specifies the font weight for all the series.
 
-
-### FontWeight
-{:#enum:FontWeight}
 
 <table class="props">
 <thead>
@@ -2359,8 +2334,6 @@ commonSeriesOptions : {isTransposed : false }
 
 Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
 
-### LabelPosition
-{:#enum:labelPosition}
 
 <table class="props">
 <thead>
@@ -2428,9 +2401,6 @@ Specifies the line cap of the series.
 
 
 
-### LineCap
-{:#enum:lineCap}
-
 <table class="props">
 <thead>
 <tr>
@@ -2492,9 +2462,6 @@ commonSeriesOptions :{lineCap : "butt"}
 
 Specifies the type of shape to be used where two lines meet.
 
-
-### Linejoin
-{:#enum:linejoin}
 
 <table class="props">
 <thead>
@@ -2787,8 +2754,6 @@ Options for displaying and customizing the line that connects point and data lab
 
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
 
-### Type
-{:#enum:type}
 
 <table class="props">
 <thead>
@@ -3085,8 +3050,7 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 
 Horizontal alignment of the data label. 
 
-### HorizontalTextAlignment
-{:#enum:horizontaltextalignment}
+
 
 <table class="props">
 <thead>
@@ -3329,8 +3293,6 @@ Background shape of the data label.
 
 
 
-### Shape
-{:#enum:shape}
 
 <table class="props">
 <thead>
@@ -3525,8 +3487,6 @@ Specifies the position of the data label. This property can be used only for the
 
 
 
-### TextPosition
-{:#enum:textposition}
 
 <table class="props">
 <thead>
@@ -3594,8 +3554,6 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 Vertical alignment of the data label. 
 
 
-### VerticalTextAlignment
-{:#enum:verticalTextAlignment}
 
 <table class="props">
 <thead>
@@ -4041,8 +3999,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 Specifies the mode of the pyramid series. 
 
 
-### PyramidMode
-{:#enum:pyramidMode}
 
 <table class="props">
 <thead>
@@ -4532,9 +4488,6 @@ Specifies the type of the series to render in chart.
 
 
 
-
-### Type
-{:#enum:type}
 
 <table class="props">
 <thead>
@@ -5091,8 +5044,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 Specifies the mode of empty point.
 
 
-### DisplayMode
-{:#enum:displayMode}
 
 <table class="props">
 <thead>
@@ -5511,8 +5462,6 @@ $("#container").ejChart({
 Specifies the type of error bar.
 
 
-### ErrorbarType
-{:#enum:errorbarType}
 
 <table class="props">
 <thead>
@@ -5583,8 +5532,6 @@ $("#container").ejChart({
 Specifies the mode of error bar.
 
 
-### Mode
-{:#enum:mode}
 
 <table class="props">
 <thead>
@@ -5650,8 +5597,6 @@ $("#container").ejChart({
 Specifies the direction of error bar.
 
 
-### Direction
-{:#enum:direction}
 
 
 <table class="props">
@@ -6499,9 +6444,6 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 Specifies whether the series or data point has to be highlighted.
 
 
-### HighlightMode
-{:#enum:highlightMode}
-
 <table class="props">
 <thead>
 <tr>
@@ -6795,8 +6737,6 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 
 Specifies the type of selection.
 
-### SelectionType
-{:#enum:selectionType}
 
 <table class="props">
 <thead>
@@ -7293,8 +7233,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
 Specifies the type of the crosshair. It can be trackball or crosshair
 
-### CrosshairType
-{:#enum:crosshairType}
 <table class="props">
 <thead>
 <tr>
@@ -7316,7 +7254,6 @@ Trackball</td>
 <td class="type">string</td>
 <td class="description">Track a data point close to the mouse position.</td>
 </tr> 
-<tr>
 </tbody>
 </table>
 
@@ -8880,8 +8817,6 @@ Options to customize the legend items and legend title.
 
 Horizontal alignment of the legend.
 
-### HighlightMode
-{:#enum:highlightMode}
 
 <table class="props">
 <thead>
@@ -9611,8 +9546,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
 Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. 
 To manually specify the location of legend, set **custom** as value to this property.
 
-### LegendPosition
-{:#enum:legendPosition}
 
 <table class="props">
 <thead>
@@ -10198,8 +10131,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
 
 Alignment of the legend title.
 
-### Alignment
-{:#enum:alignment}
 
 <table class="props">
 <thead>
@@ -10266,8 +10197,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 
 Specifies the action taken when the legend width is more than the textWidth.
 
-### TextOverflow
-{:#enum:textOverflow}
 
 <table class="props">
 <thead>
@@ -11141,8 +11070,6 @@ $("#container").ejChart({
 
 Specifies the position of labels at the edge of the axis. 
 
-### EdgeLabelPlacement
-{:#enum:edgeLabelPlacement}
 
 <table class="props">
 <thead>
@@ -11429,8 +11356,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
 
 Specifies the type of interval in date time axis.
 
-### IntervalType
-{:#enum:intervalType}
 
 <table class="props">
 <thead>
@@ -11591,8 +11516,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
 
 Specifies the action to take when the axis labels are overlapping with each other. 
 
-### LabelIntersectAction
-{:#enum:labelIntersectAction}
 
 <table class="props">
 <thead>
@@ -11690,8 +11613,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
 
 Specifies the position of the axis labels.
 
-### LabelPosition
-{:#enum:labelPosition}
 
 <table class="props">
 <thead>
@@ -12619,8 +12540,6 @@ $("#container").ejChart({
 
 Specifies the padding for the axis range.
 
-### RangePadding
-{:#enum:rangePadding}
 
 <table class="props">
 <thead>
@@ -13168,8 +13087,6 @@ $("#container").ejChart({
 
 Specifies the alignment of the text inside the strip line.
 
-### TextAlignment
-{:#enum:textAlignment}
 
 <table class="props">
 <thead>
@@ -13304,8 +13221,6 @@ $("#container").ejChart({
 
 Specifies the order where the strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
-### ChartZIndex
-{:#enum:chartZIndex}
 
 <table class="props">
 <thead>
@@ -13365,8 +13280,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
 
 Specifies the position of the axis tick lines.
 
-### TickLinesPosition
-{:#enum:tickLinesPosition}
 
 <table class="props">
 <thead>
@@ -13763,8 +13676,6 @@ $("#container").ejChart({
 
 Specifies the type of data the axis is handling.
 
-### AxisValueType
-{:#enum:axisValueType}
 
 <table class="props">
 <thead>
@@ -16190,6 +16101,7 @@ $("#container").ejChart({
 
 ### primaryYAxis.stripLine.zIndex `enum`
 {:#members:primaryyaxis-stripline-zindex}
+
 <ts ref = "ej.Chart.ChartZIndex"/>
 
 
@@ -16224,6 +16136,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
 
 ### primaryYAxis.tickLinesPosition `enum`
 {:#members:primaryyaxis-ticklinesposition}
+
 <ts ref = "ej.Chart.TickLinesPosition"/>
 
 
@@ -16784,8 +16697,6 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 
 Specifies the unit to measure the height of the row in plotting area.
 
-### RowUnit
-{:#enum:rowUnit}
 
 <table class="props">
 <thead>
@@ -19762,6 +19673,7 @@ $("#container").ejChart({
    
 ### series.errorBar-type `enum`
 {:#members:series-errorbar-type}
+
 <ts ref = "ej.Chart.CommonSeriesOptions.ErrorbarType"/>
 
 Specifies the type of error bar.
@@ -19823,6 +19735,7 @@ $("#container").ejChart({
 
 ### series.errorBar-direction `enum`
 {:#members:series-errorbar-direction}
+
 <ts ref = "ej.Chart.Direction"/>
 
 Specifies the direction of error bar.
@@ -20919,6 +20832,7 @@ series :[{ points:[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]}]
 
 ### series.points.marker.dataLabel.font.fontStyle `enum`
 {:#members:series-points-marker-datalabel-font-fontstyle}
+
 <ts ref="ej.Chart.FontStyle"/>
 
 
@@ -23701,9 +23615,6 @@ $("#container").ejChart({
 <ts name = "ej.Chart.Theme"/>
 
 Specifies the theme for Chart.
-
-### Theme
-{:#enum:theme}
 
 <table class="props">
 <thead>

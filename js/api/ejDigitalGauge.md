@@ -451,7 +451,8 @@ Specifies the Character settings for the DigitalGauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -624,12 +625,10 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 ### items.characterSettings.type `enum`
 {:#members:items-charactersettings-type}
 
-<ts name="ej.DigitalGauge.Type">
+<ts name="ej.DigitalGauge.Type"/>
 
 Specifies the character type for the text to be displayed.
 
-### Type
-{:#enum:type}
 
 
 <table class="props">
@@ -787,7 +786,8 @@ Set the specific font for the text, when the enableCustomFont is set to true
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -865,13 +865,11 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 ### items.font.fontStyle `enum`
 {:#members:items-font-fontstyle}
 
-<ts name="ej.DigitalGauge.FontStyle">
+<ts name="ej.DigitalGauge.FontStyle"/>
 
 Set the font style for the font
 
 
-### FontStyle
-{:#enum:fontStyle}
 
 <table class="props">
 <thead>
@@ -1030,7 +1028,8 @@ Set the location for the text, where it needs to be placed within the gauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1177,7 +1176,8 @@ Set the segemnt settings for the digital gauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1836,7 +1836,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{value: "Welcome" }]});
 
 
 
-### matrixSegmentData 'object'
+### matrixSegmentData `object`
 {:#members:matrixsegmentdata}
 
 
@@ -1858,7 +1858,7 @@ Specifies the matrixSegmentData for the DigitalGauge.
 
 
 
-### segmentData 'object'
+### segmentData `object`
 {:#members:segmentdata}
 
 
@@ -2442,11 +2442,6 @@ model{% endhighlight %}</td>
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name"></td>
-<td class="type"></td>
-<td class="description last"></td>
 </tr>
 </tbody>
 </table>
