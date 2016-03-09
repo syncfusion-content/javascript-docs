@@ -86,7 +86,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 {% endhighlight %}
 
 ### backgroundImage.alignment `enum`
-{:#members:backgroundimage-imagealignment}
+{:#members:backgroundimage-alignment}
 
 <ts name = "ej.datavisualization.Diagram.ImageAlignment "/>
     
@@ -161,7 +161,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage:{alignment: ej.datavisualizatio
 
 
 ### backgroundImage.scale `enum`
-{:# members:backgroundimage-scaleconstraints}
+{:# members:backgroundimage-scale}
 
 <ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
     
@@ -200,7 +200,7 @@ Defines how the image of the background is to be scaled.
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({ ScaleConstraints:ej.datavisualization.Diagram.ScaleConstraints.Meet }});
+$("#diagramcontent").ejDiagram({ backgroundImage:{scale:ej.datavisualization.Diagram.ScaleConstraints.Meet }});
 </script>
 
 {% endhighlight %}
@@ -220,7 +220,7 @@ Sets the source path of the background image
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({ source:"Syncfusion.png" }});
+$("#diagramcontent").ejDiagram({ backgroundImage:{ source:"Syncfusion.png" }});
 </script>
 
 {% endhighlight %}
@@ -3033,7 +3033,7 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 {% endhighlight %}
 
 ### layout.horizontalAlignment `enum`
-{:#members:layout-horizontalAlignment}
+{:#members:layout-horizontalalignment}
 
 <ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
@@ -3122,7 +3122,7 @@ $("#diagramcontent").ejDiagram({layout: { margin:{ left: 10, right: 10, top: 10,
 {% endhighlight %}
 
 ### layout.verticalAlignment `enum`
-{:#members:layout- verticalAlignment }
+{:#members:layout-verticalalignment }
 
 <ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
