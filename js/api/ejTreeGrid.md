@@ -3222,8 +3222,8 @@ $("#treegrid").ejTreeGrid({
 
 
 
-### toolBarClick
-{:#events:toolbarclick}
+### toolbarClick
+{:#events:toolbarClick}
 
 Triggered when toolbar item is clicked in TreeGrid.
 
@@ -3295,7 +3295,7 @@ type{% endhighlight %}</td>
 <div id="treegrid"></div> 
 <script>
 $("#treegrid").ejTreeGrid({
-   toolBarClick: function (args) {}
+   toolbarClick: function (args) {}
 });
 </script>
 {% endhighlight %}
