@@ -369,12 +369,10 @@ captionSettings :{font :{fontFamily : "algerian"}}
 ### captionSettings.font.fontStyle `enum`
 {:#members:captionsettings-font-fontstyle}
 
-<ts name="ej.BulletGraph.FontStyle">
+<ts name="ej.BulletGraph.FontStyle"/>
 
 Specifies the fontStyle of caption
 
-### FontStyle
-{:#enum:fontStyle}
 
 <table class="props">
 <thead>
@@ -449,12 +447,10 @@ captionSettings :{font :{fontStyle : "italic"}}
 {:#members:captionsettings-font-fontweight}
 
 
-<ts name="ej.BulletGraph.FontWeight">
+<ts name="ej.BulletGraph.FontWeight"/>
 
 Specifies the fontWeight of caption
 
-### FontWeight
-{:#enum:fontWeight}
 
 <table class="props">
 <thead>
@@ -775,7 +771,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.indicator.font.fontStyle `enum`
 {:#members:captionsettings-indicator-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle">
+<ts ref="ej.BulletGraph.FontStyle"/>
 
 
 
@@ -825,7 +821,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 {:#members:captionsettings-indicator-font-fontweight}
 
 
-<ts ref="ej.BulletGraph.FontWeight">
+<ts ref="ej.BulletGraph.FontWeight"/>
 
 
 
@@ -1647,12 +1643,10 @@ captionSettings :{ indicator :{text : "Power Production"} }
 ### captionSettings.indicator.textAlignment `enum`
 {:#members:captionsettings-indicator-textalignment}
 
-<ts name="ej.BulletGraph.TextAlignment">
+<ts name="ej.BulletGraph.TextAlignment"/>
 
 Specifies the alignement of indicator with respect to scale based on text position
 
-### TextAlignment
-{:#enum:textAlignment}
 
 <table class="props">
 <thead>
@@ -1730,12 +1724,10 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 {:#members:captionsettings-indicator-textanchor}
 
 
-<ts name="ej.BulletGraph.TextAnchor">
+<ts name="ej.BulletGraph.TextAnchor"/>
 
 Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
 
-### TextAnchor
-{:#enum:textAnchor}
 
 <table class="props">
 <thead>
@@ -1859,12 +1851,10 @@ captionSettings :{ indicator :{textAngle :10} }
 {:#members:captionsettings-indicator-textposition}
 
 
-<ts name="ej.BulletGraph.TextPosition">
+<ts name="ej.BulletGraph.TextPosition"/>
 
 Specifies where indicator should be placed
 
-### TextPosition
-{:#enum:textPostion}
 
 <table class="props">
 <thead>
@@ -1872,7 +1862,6 @@ Specifies where indicator should be placed
 <th>Name</th>
 <th>Type</th> 
 <th class="last">Description</th>
-<th >
 </tr>
 </thead>
 <tbody>
@@ -2361,7 +2350,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.subTitle.font.fontStyle `enum`
 {:#members:captionsettings-subtitle-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle">
+<ts ref="ej.BulletGraph.FontStyle"/>
 
 
 
@@ -2407,7 +2396,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 ### captionSettings.subTitle.font.fontWeight `enum`
 {:#members:captionsettings-subtitle-font-fontweight}
 
-<ts ref="ej.BulletGraph.FontWeight">
+<ts ref="ej.BulletGraph.FontWeight"/>
 
 
 
@@ -2771,7 +2760,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 ### captionSettings.subTitle.textAlignment `enum`
 {:#members:captionsettings-subtitle-textalignment}
 
-<ts ref="ej.BulletGraph.TextAlignment">
+<ts ref="ej.BulletGraph.TextAlignment"/>
 
 
 
@@ -2821,7 +2810,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 {:#members:captionsettings-subtitle-textanchor}
 
 
-<ts ref="ej.BulletGraph.TextAnchor">
+<ts ref="ej.BulletGraph.TextAnchor"/>
 
 
 
@@ -2918,7 +2907,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 {:#members:captionsettings-subtitle-textposition}
 
 
-<ts ref="ej.BulletGraph.TextPosition">
+<ts ref="ej.BulletGraph.TextPosition"/>
 
 
 
@@ -3016,7 +3005,7 @@ captionSettings :{text : "Production"}
 ### captionSettings.textAlignment `enum`
 {:#members:captionsettings-textalignment}
 
-<ts ref="ej.BulletGraph.TextAlignment">
+<ts ref="ej.BulletGraph.TextAlignment"/>
 
 
 
@@ -3065,7 +3054,7 @@ captionSettings :{textAlignment: 'Center'}
 ### captionSettings.textAnchor `enum`
 {:#members:captionsettings-textanchor}
 
-<ts ref="ej.BulletGraph.TextAnchor">
+<ts ref="ej.BulletGraph.TextAnchor"/>
 
 
 
@@ -3164,7 +3153,7 @@ captionSettings :{textAngle : 5}
 {:#members:captionsettings-textposition}
 
 
-<ts ref="ej.BulletGraph.TextPosition">
+<ts ref="ej.BulletGraph.TextPosition"/>
 
 
 
@@ -3359,12 +3348,10 @@ enableResizing : false
 ### flowDirection `enum`
 {:#members:flowdirection}
 
-<ts name="ej.BulletGraph.FlowDirection">
+<ts name="ej.BulletGraph.FlowDirection"/>
 
 Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
 
-### FlowDirection
-{:#enum:flowDirection}
 
 <table class="props">
 <thead>
@@ -3483,14 +3470,12 @@ height : 600
 {:#members:orientation}
 
 
-<ts name="ej.BulletGraph.Orientation">
+<ts name="ej.BulletGraph.Orientation"/>
 
 Bullet graph will render in the specified orientation.
 
-### Orientation
-{:#enum:orientation}
 
-    <table class="props">
+<table class="props">
 <thead>
 <tr>
 <th>Name</th>
@@ -5032,7 +5017,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 ### quantitativeScaleSettings.labelSettings.font.fontStyle `enum`
 {:#members:quantitativescalesettings-labelsettings-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle">
+<ts ref="ej.BulletGraph.FontStyle"/>
 
 
 
@@ -5082,7 +5067,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 {:#members:quantitativescalesettings-labelsettings-font-fontweight}
 
 
-<ts ref="ej.BulletGraph.FontWeight">
+<ts ref="ej.BulletGraph.FontWeight"/>
 
 
 
@@ -5180,12 +5165,10 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 {:#members:quantitativescalesettings-labelsettings-labelplacement}
 
 
-<ts name="ej.BulletGraph.LabelPlacement">
+<ts name="ej.BulletGraph.LabelPlacement"/>
 
 Specifies the placement of labels in bullet graph scale.
 
-### LabelPlacement
-{:#enum:labelPlacement}
 
 <table class="props">
 <thead>
@@ -5401,12 +5384,10 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 ### quantitativeScaleSettings.labelSettings.position `enum`
 {:#members:quantitativescalesettings-labelsettings-position}
 
-<ts name= "ej.BulletGraph.Position">
+<ts name= "ej.BulletGraph.Position"/>
 
 Specifies the position of the labels to render either above or below the graph. See <a href="global.html#Position">Position</a>
 
-### Position
-{:#enum:position}
 
 <table class="props">
 <thead>
@@ -6179,12 +6160,10 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 {:#members:quantitativescalesettings-tickplacement}
 
 
-<ts name="ej.BulletGraph.TickPlacement">
+<ts name="ej.BulletGraph.TickPlacement"/>
 
 Specifies the placement of ticks to render either inside or outside the scale.
 
-### TickPlacement
-{:#enum:tickPlacement}
 
 <table class="props">
 <thead>
@@ -6252,12 +6231,10 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 {:#members:quantitativescalesettings-tickposition}
 
 
-<ts name="ej.BulletGraph.TickPosition">
+<ts name="ej.BulletGraph.TickPosition"/>
 
 Specifies the position of the ticks to render either above,below or inside
 
-### TickPosition
-{:#enum:tickPosition}
 
 <table class="props">
 <thead>
@@ -7232,7 +7209,7 @@ indicatorSettings{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object<a href="global.html#model">model</a></span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of bullet graph.</td>
 </tr>
 <tr>

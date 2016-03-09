@@ -309,8 +309,6 @@ Specify the url of the frame background image for circular gauge
 
 Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame</a>
 
-### FrameType
-{:#enum:frameType}
 
 <table class="props">
 <thead>
@@ -434,8 +432,6 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCi
 
 Specify gaugePosition value of circular gauge See GaugePosition
 
-### GaugePosition
-{:#enum:gaugePosition}
 
 <table class="props">
 <thead>
@@ -701,8 +697,6 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 
 Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
-### LabelPosition
-{:#enum:labelPosition}
 
 <table class="props">
 <thead>
@@ -1003,9 +997,6 @@ Specify border width of circular gauge
 <ts name = "ej.CircularGauge.Direction"/>
 
 Specify scale direction of circular gauge. See <a href="global.html#Directions">Directions</a>
-
-### Direction
-{:#enum:direction}
 
 <table class="props">
 <thead>
@@ -1571,8 +1562,6 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 
 Specify indicator style of circular gauge. See <a href="global.html#IndicatorType">IndicatorType</a>
 
-### IndicatorTypes
-{:#enum:indicatorTypes}
 
 <table class="props">
 <thead>
@@ -2051,8 +2040,6 @@ Specify opacity value for labels of circular gauge
 
 Specify label placement of circular gauge. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
-### Placement
-{:#enum:placement}
 
 <table class="props">
 <thead>
@@ -2115,8 +2102,6 @@ Center</td>
 
 Specify label Style of circular gauge. See <a href="global.html#LabelType">LabelType</a>
 
-### LabelType
-{:#enum:labelType}
 
 <table class="props">
 <thead>
@@ -2206,8 +2191,6 @@ Specify unitText of circular gauge
 
 Specify unitTextPosition of circular gauge. See UnitTextPosition
 
-### TextPosition
-{:#enum:textPosition}
 
 <table class="props">
 <thead>
@@ -2958,8 +2941,6 @@ Specify pointer length of circular gauge
 
 Specify marker Style value of circular gauge. See <a href="global.html#MarkerType">MarkerType</a>
 
-### MarkerType
-{:#enum:markerType}
 
 <table class="props">
 <thead>
@@ -3077,8 +3058,6 @@ Image</td>
 
 Specify needle Style value of circular gauge. See <a href="global.html#NeedleType">NeedleType</a>
 
-### NeedleType
-{:#enum:needleType}
 
 <table class="props">
 <thead>
@@ -3616,8 +3595,6 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 Specify pointer type value of circular gauge. See <a href="global.html#PointerType">PointerType</a>
 
-### PointerType
-{:#enum:pointerType}
 
 <table class="props">
 <thead>

@@ -720,7 +720,7 @@ Specifies the width of grid lines in higher level.
 ### labelSettings.higherLevel.intervalType `enum`
 {:#members:labelsettings-higherlevel-intervaltype}
 
-<ts name="ej.RangeNavigator.IntervalType">
+<ts name="ej.RangeNavigator.IntervalType"/>
 
 
 
@@ -729,8 +729,6 @@ Specifies the width of grid lines in higher level.
 
 Specifies the intervalType for higher level labels. See <a href="global.html#IntervalType">IntervalType</a>
 
-### IntervalType
-{:#enum:intervalType}
 
 <table class="props">
 <thead>
@@ -818,12 +816,10 @@ Hours</td>
 ### labelSettings.higherLevel.labelPlacement `enum`
 {:#members:labelsettings-higherlevel-labelplacement}
 
-<ts name="ej.RangeNavigator.LabelPlacement">
+<ts name="ej.RangeNavigator.LabelPlacement"/>
 
 Specifies the position of the labels to render either inside or outside of plot area
 
-### LabelPlacement
-{:#enum:labelPlacement}
 
 <table class="props">
 <thead>
@@ -894,12 +890,10 @@ Specifies the position of the labels to render either inside or outside of plot 
 {:#members:labelsettings-higherlevel-position}
 
 
-<ts name="ej.RangeNavigator.Position">
+<ts name="ej.RangeNavigator.Position"/>
 
 Specifies the position of the labels in higher level
 
-### Position
-{:#enum:position}
 
 <table class="props">
 <thead>
@@ -1765,7 +1759,7 @@ Specifies the width of grid lines in lower level.
 ### labelSettings.lowerLevel.intervalType `enum`
 {:#members:labelsettings-lowerlevel-intervaltype}
 
-<ts ref="ej.RangeNavigator.IntervalType">
+<ts ref="ej.RangeNavigator.IntervalType"/>
 
 
 
@@ -1811,7 +1805,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 ### labelSettings.lowerLevel.labelPlacement `enum`
 {:#members:labelsettings-lowerlevel-labelplacement}
 
-<ts ref="ej.RangeNavigator.LabelPlacement">
+<ts ref="ej.RangeNavigator.LabelPlacement"/>
 
 
 
@@ -1861,7 +1855,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 {:#members:labelsettings-lowerlevel-position}
 
 
-<ts ref="ej.RangeNavigator.Position">
+<ts ref="ej.RangeNavigator.Position"/>
 
 
 
@@ -2585,12 +2579,10 @@ Specifies the label font size. Labels render with the specified font size.
 ### labelSettings.style.font.style `enum`
 {:#members:labelsettings-style-font-style}
 
-<ts name="ej.RangeNavigator.Style">
+<ts name="ej.RangeNavigator.Style"/>
 
 Specifies the label font style. Labels render with the specified font style..
 
-### Style
-{:#enum:style}
 
 <table class="props">
 <thead>
@@ -2669,12 +2661,10 @@ Specifies the label font style. Labels render with the specified font style..See
 ### labelSettings.style.font.weight `enum`
 {:#members:labelsettings-style-font-weight}
 
-<ts name="ej.RangeNavigator.Weight">
+<ts name="ej.RangeNavigator.Weight"/>
 
 Specifies the lable font weight
 
-### Weight
-{:#enum:weight}
 
 
 <table class="props">
@@ -2747,12 +2737,10 @@ Specifies the label font weight. Labels render with the specified font weight. S
 ### labelSettings.style.horizontalAlignment `enum`
 {:#members:labelsettings-style-horizontalalignment}
 
-<ts name="ej.RangeNavigator.HorizontalAlignment">
+<ts name="ej.RangeNavigator.HorizontalAlignment"/>
 
 Specifies the horizontalAlignment of the label in RangeNavigator
 
-### HorizontalAlignment
-{:#enum:horizontalAlignment}
 
 <table class="props">
 <thead>
@@ -3898,12 +3886,10 @@ Padding specifies the gap between the container and the range navigator.
 ### rangePadding `enum`
 {:#members:rangepadding}
 
-<ts name="ej.RangeNavigator.RangePadding">
+<ts name="ej.RangeNavigator.RangePadding"/>
 
 If the range is not given explicitly, range will be calculated automatically.
 
-### RangePadding
-{:#enum:rangePadding}
 
 <table class="props">
 <thead>
@@ -4102,7 +4088,7 @@ Specifies the starting range of range navigator.
 
 
 
-### selectedData 'object'
+### selectedData `object`
 {:#members:selecteddata}
 
 
@@ -5460,11 +5446,9 @@ Toggles the visibility of axis in range navigator.
 ### valueType `enum`
 {:#members:valuetype}
 
-<ts name='ej.RangeNavigator.ValueType'>
+<ts name='ej.RangeNavigator.ValueType'/>
 You can plot data of type date time or numeric. This property determines the type of data that this axis will handle.
 
-###ValueType
-{:#enum:valueType}
 
 <table class="props">
 <thead>

@@ -400,7 +400,8 @@ Specify frame of linear gauge
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -819,8 +820,6 @@ Specifies the orientation for Linear gauge.
 
 Specify labelPosition value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
-### LabelPosition
-{:#enum:labelPosition}
 
 
 <table class="props">
@@ -1063,7 +1062,8 @@ Specifies the scales
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1255,7 +1255,8 @@ Specifies the border of bar pointer
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1639,7 +1640,8 @@ Specifies the border of the Scale.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1879,7 +1881,8 @@ Specifies the font in customLabels
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1961,8 +1964,6 @@ Specifies the fontFamily in customLabels
 
 Specifies the fontStyle in customLabels. See <a href="global.html#FontStyle">FontStyle</a>
 
-### FontStyle
-{:#enum:fontStyle}
 
 <table class="props">
 <thead>
@@ -2154,7 +2155,8 @@ Specifies the position in customLabels
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -2298,7 +2300,8 @@ Specifies the positionType in customLabels.See <a href="global.html#CustomLabelP
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -2428,8 +2431,6 @@ Specifies the label Value in customLabels
 
 Specifies the scale Direction of the Scale. See <a href="global.html#Directions">Directions</a>
 
-### Direction
-{:#enum:direction}
 
 <table class="props">
 <thead>
@@ -2619,7 +2620,8 @@ Specifies the border in bar indicators
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -2778,7 +2780,8 @@ Specifies the font of bar indicators
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -3090,7 +3093,8 @@ Specifies the position in bar indicators
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -3615,7 +3619,8 @@ Specifies the textLocation in bar indicators
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -3758,8 +3763,6 @@ $("#LinearGauge1").ejLinearGauge({
 
 Specifies the indicator Style of font in bar indicators
 
-### IndicatorTypes
-{:#enum:indicatorTypes}
 
 <table class="props">
 <thead>
@@ -4009,7 +4012,8 @@ Specifies the DistanceFromScale of labels.
 
 
 
-* object
+{:.param}
+* null
 
 
 
@@ -4153,7 +4157,8 @@ Specifies the font of labels.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -4426,8 +4431,6 @@ Specifies the opacity of label.
 
 Specifies the label Placement of label. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
-### LabelPlacement
-{:#enum:labelPlacement}
 
 <table class="props">
 <thead>
@@ -4550,8 +4553,6 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 Specifies the label Style of label. See <a href="global.html#LabelType">LabelType</a>
 
-### LabelType
-{:#enum:labelType}
 
 <table class="props">
 <thead>
@@ -4669,8 +4670,6 @@ Specifies the unitText of label.
 
 Specifies the unitText Position of label.See <a href="global.html#UnitTextPlacement">UnitTextPlacement</a>
 
-### TextPlacement
-{:#enum:textPlacement}
 
 <table class="props">
 <thead>
@@ -4952,7 +4951,8 @@ Specifies the border of marker pointer
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -5144,7 +5144,8 @@ Specifies the pointer Gradient of marker pointer
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -5321,8 +5322,6 @@ Specifies the pointer Placement of marker pointer See <a href="global.html#Point
 
 Specifies the marker Style of marker pointerSee <a href="global.html#MarkerType">MarkerType</a>
 
-### PointerType
-{:#enum:pointerType}
 
 <table class="props">
 <thead>
@@ -5758,7 +5757,8 @@ Specifies the position
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -5998,7 +5998,8 @@ Specifies the border in the ranges.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -7052,7 +7053,8 @@ Specifies the DistanceFromScale in the tick.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -7326,8 +7328,6 @@ Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement
 
 Specifies the tick Style in the tick. See <a href="global.html#TickType">TickType</a>
 
-### TicksType
-{:#enum:ticksType}
 
 
 <table class="props">
@@ -7442,8 +7442,6 @@ Specifies the tick Width in the tick.
 
 Specifies the scaleBar type .See <a href="global.html#ScaleType">ScaleType</a>
 
-### ScaleType
-{:#enum:scaleType}
 
 
 <table class="props">
@@ -7566,8 +7564,6 @@ Specifies the scaleBar width.
 
 Specifies the theme for Linear gauge. See LinearGauge.Themes
 
-### Theme
-{:#enum:theme}
 
 <table class="props">
 <thead>
@@ -10356,7 +10352,8 @@ Specifies the scales.
 
 
 
-* object
+{:.param}
+* null
 
 
 
