@@ -10,20 +10,13 @@ metacontent:
 Communicates with data source and returns the desired result based on the Query provided.
 
 
+#### Syntax
 
+{% highlight js %}
 
+var dataManager = new ej.DataManager(datasource, query, adaptor)
 
-
-
-
-
-
-$(element).ejDataManager<span class="signature">(datasource, query, adaptor)</span>
-
-
-
-
-
+{% endhighlight %}
 
 
 <table class="params">
