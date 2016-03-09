@@ -535,13 +535,35 @@ Specifies the mapping property path for duration of a task in datasource
 ### durationUnit `enum`
 {:#members:durationunit}
 
-Specifies the duration unit for each tasks whether days or hours
+Specifies the duration unit for each tasks whether days or hours or minutes
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Day</td>
+<td class="description">Sets the Duration Unit as day.</td>
+</tr>
+<tr>
+<td class="name">Hour</td>
+<td class="description">Sets the Duration Unit as hour.</td>
+</tr>
+<tr>
+<td class="name">Minute</td>
+<td class="description">Sets the Duration Unit as minute.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
 
-* "day"
+* ej.Gantt.DurationUnit.Day
 
 
 #### Example
@@ -553,7 +575,7 @@ Specifies the duration unit for each tasks whether days or hours
 <div id="gantt"></div> 
 <script>                          
         $("#gantt").ejGantt({  
-                        durationUnit : day });
+                        durationUnit : ej.Gantt.DurationUnit.Hour });
 </script>
 
 {% endhighlight %}
@@ -1692,16 +1714,48 @@ Specified the format for Hour view in schedule header
 {% endhighlight %}
 
 
-### scheduleHeaderSettings.minutesPerInterval<span class="type-signature type enum">enum</span>
+### scheduleHeaderSettings.minutesPerInterval `enum`
 {:#members:scheduleheadersettings-minutesperinterval}
+
+<ts name = "ej.Gantt.minutesPerInterval"/>
 
 Specifies the number of minutes per interval
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Sets the interval automatically according with schedule start and end date.</td>
+</tr>
+<tr>
+<td class="name">OneMinute</td>
+<td class="description">Sets one minute intervals per hour.</td>
+</tr>
+<tr>
+<td class="name">FiveMinutes</td>
+<td class="description">Sets Five minute intervals per hour.</td>
+</tr>
+<tr>
+<td class="name">FifteenMinutes</td>
+<td class="description">Sets fifteen minute intervals per hour.</td>
+</tr>
+<tr>
+<td class="name">ThirtyMinutes</td>
+<td class="description">Sets thirty minute intervals per hour.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
 
-* null
+* ej.Gantt.minutesPerInterval.Auto
 
 
 #### Example
@@ -1713,7 +1767,7 @@ Specifies the number of minutes per interval
 <div id="gantt"></div> 
 <script>                          
         $("#gantt").ejGantt({  
-                        scheduleHeaderSettings:{minutesPerInterval : "oneMinute"}});              
+                        scheduleHeaderSettings:{minutesPerInterval : ej.Gantt.minutesPerInterval.OneMinute}});              
 </script>              
 
 {% endhighlight %}
@@ -1750,13 +1804,45 @@ Specified the format for month view in schedule header
 ### scheduleHeaderSettings.scheduleHeaderType `enum`
 {:#members:scheduleheadersettings-scheduleheadertype}
 
+<ts name = "ej.Gantt.ScheduleHeaderType"/>
+
 Specifies the schedule mode
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Year</td>
+<td class="description">Sets year Schedule Mode.</td>
+</tr>
+<tr>
+<td class="name">Month</td>
+<td class="description">Sets month Schedule Mode.</td>
+</tr>
+<tr>
+<td class="name">Week</td>
+<td class="description">Sets week Schedule Mode.</td>
+</tr>
+<tr>
+<td class="name">Day</td>
+<td class="description">Sets day Schedule Mode.</td>
+</tr>
+<tr>
+<td class="name">Hour</td>
+<td class="description">Sets hour Schedule Mode.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
 
-* "week"
+* ej.Gantt.ScheduleHeaderType.Week
 
 
 #### Example
@@ -1768,7 +1854,7 @@ Specifies the schedule mode
 <div id="gantt"></div> 
 <script>                          
         $("#gantt").ejGantt({  
-                        scheduleHeaderSettings:{scheduleHeaderType : "week"}
+                        scheduleHeaderSettings:{scheduleHeaderType : ej.Gantt.ScheduleHeaderType.Month}
                });
 </script>              
 
@@ -2257,7 +2343,7 @@ Specifies the mapping property path for start date of a task in datasource
 {% endhighlight %}
 
 
-### stripLines `string`
+### stripLines `array`
 {:#members:striplines}
 
 Specifies the options for striplines
@@ -2327,7 +2413,7 @@ Specifies the template script for customized tooltip for taskbar editing in gant
 #### Default Value:
 {:.param}
 
-* null
+* ""
 
 
 #### Example
@@ -2357,7 +2443,7 @@ Specifies the template Id for customized tooltip for taskbar editing in gantt
 #### Default Value:
 {:.param}
 
-* null
+* ""
 
 
 #### Example
@@ -2386,7 +2472,7 @@ Specifies the template for tooltip on mouseaction on taskbars
 #### Default Value:
 {:.param}
 
-* null
+* ""
 
 
 #### Example
@@ -2399,7 +2485,7 @@ Specifies the template for tooltip on mouseaction on taskbars
 <script>                  
         $("#gantt").ejGantt(
  {
-    taskbarTooltipTemplate: ""
+    taskbarTooltipTemplate: "TooltipTemplate"
  });            
 </script>
 
@@ -2415,7 +2501,7 @@ Specifies the template id for tooltip on mouseaction on taskbars
 #### Default Value:
 {:.param}
 
-* null
+* ""
 
 
 #### Example
@@ -2428,7 +2514,7 @@ Specifies the template id for tooltip on mouseaction on taskbars
 <script>          
         $("#gantt").ejGantt(
  {
-    taskbarTooltipTemplateId: ""
+    taskbarTooltipTemplateId: "TooltipTemplateId"
  });            
 </script>
 
@@ -2606,13 +2692,33 @@ Specifies the weekendBackground color in gantt
 ### workingTimeScale `enum`
 {:#members:workingtimescale}
 
+<ts name = "ej.Gantt.workingTimeScale"/>
+
 Specifies the working time schedule of day
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">TimeScale8Hours</td>
+<td class="description">Sets eight hour timescale.</td>
+</tr>
+<tr>
+<td class="name">TimeScale24Hours</td>
+<td class="description">Sets twenty four hour timescale.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
 
-* "TimeScale24"
+* ej.Gantt.workingTimeScale.TimeScale8Hours
 
 
 #### Example
@@ -2624,7 +2730,7 @@ Specifies the working time schedule of day
 <div id="gantt"></div> 
 <script>                          
         $("#gantt").ejGantt({  
-                        workingTimeScale : "TimeScale24Hours" 
+                        workingTimeScale : ej.Gantt.workingTimeScale.TimeScale24Hours
             });
 </script>
 
@@ -2633,10 +2739,32 @@ Specifies the working time schedule of day
 
 ## Methods
 
-### addRecord()
+### addRecord(data, rowPosition)
 {:#methods:addrecord}
 
 To add item in gantt
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Item to add in Gantt row.</td>
+</tr>
+<tr>
+<td class="name">rowPosition</td>
+<td class="type">enum</td>
+<td class="description">Defines in which position the row wants to add</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -2650,27 +2778,32 @@ To add item in gantt
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
-gantObj.ejGantt("addRecord",data); // To add a task
+ganttObj.addRecord(data, ej.Gantt.AddRowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
 
 
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To add an item
-var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
-$("#gantt").ejGantt("addRecord",data);  
-</script>
-{% endhighlight %}
-
-
-### setSplitterIndex()
+### setSplitterIndex(index)
 {:#methods:setsplitterindex}
 
 Positions the splitter by the specified column index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type">Number</td>
+<td class="description">Set the splitter position based on column index.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -2681,7 +2814,7 @@ Positions the splitter by the specified column index.
 <script>
 // Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("setSplitterIndex", "3"); // Set splitter position after column index 3
+gantObj.setSplitterIndex(3); // Set splitter position after column index 3
 </script>
 {% endhighlight %}
 
@@ -2697,23 +2830,11 @@ To cancel the edited state of an item in gantt
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("cancelEdit"); // To cancel edited
+gantObj.cancelEdit(); // To cancel edited
 </script>
 {% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To outdent a selected item in gantt
-$("#gantt").ejGantt("cancelEdit");      
-</script>
-{% endhighlight %}
-
 
 ### collapseAllItems()
 {:#methods:collapseallitems}
@@ -2731,21 +2852,9 @@ To collapse all the parent items in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("collapseAllItems"); // To collapse all parent items in gantt
+gantObj.collapseAllItems(); // To collapse all parent items in gantt
 </script>
 {% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To expand all items
-$("#gantt").ejGantt("collapseAllItems");        
-</script>
-{% endhighlight %}
-
 
 ### deleteItem()
 {:#methods:deleteitem}
@@ -2763,18 +2872,7 @@ To delete a selected item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("deleteItem"); // To delete a task
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To delete an item
-$("#gantt").ejGantt("deleteItem");      
+gantObj.deleteItem(); // To delete a task
 </script>
 {% endhighlight %}
 
@@ -2793,20 +2891,9 @@ destroy the gantt widget all events bound using this._on will be unbind automati
 <div id="gantt"></div> 
  
 <script>
-// Create gantt
-var gantt = $("#gantt").data("ejGantt");
-gantt.destroy(); // destroy the gantt
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// enable the gantt
-$("#gantt").ejGantt("destroy"); 
+// Create gantt Object
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.destroy(); // destroy the gantt
 </script>
 {% endhighlight %}
 
@@ -2825,29 +2912,34 @@ To Expand all the parent items in gantt
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("expandAllItems"); // To expand all parent items in gantt
+gantObj.expandAllItems(); // To expand all parent items in gantt
 </script>
 {% endhighlight %}
 
 
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To expand all items
-$("#gantt").ejGantt("expandAllItems");  
-</script>
-{% endhighlight %}
-
-
-### expandCollapseRecord()
+### expandCollapseRecord(taskId)
 {:#methods:expandcollapserecord}
 
 To expand and collapse an item in gantt using item's ID
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">taskId</td>
+<td class="type">Number</td>
+<td class="description">Exapnd or Collapse a record based on task id.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -2857,20 +2949,9 @@ To expand and collapse an item in gantt using item's ID
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt object.
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("expandCollapseRecord" , "23"); // To expand collapse an item
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To expand collapse an item
-$("#gantt").ejGantt("expandCollapseRecord" , "23");     
+gantObj.expandCollapseRecord(23); // To expand collapse an item
 </script>
 {% endhighlight %}
 
@@ -2929,18 +3010,7 @@ To indent a selected item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("indentItem"); // To indent a selected item in gantt
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To indent a selected item in gantt
-$("#gantt").ejGantt("indentItem");      
+gantObj.indentItem(); // To indent a selected item in gantt
 </script>
 {% endhighlight %}
 
@@ -2959,20 +3029,9 @@ To Open the dialog to add new task to the gantt
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt Object.
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("openAddDialog"); // To open the add dialog
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// open Add dialog
-$("#gantt").ejGantt("openAddDialog");   
+gantObj.openAddDialog(); // To open the add dialog
 </script>
 {% endhighlight %}
 
@@ -2991,20 +3050,9 @@ To Open the dialog to edit existing task to the gantt
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("openEditDialog"); // To open the add dialog
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// open Add dialog
-$("#gantt").ejGantt("openEditDialog");  
+gantObj.openEditDialog(); // To open the add dialog
 </script>
 {% endhighlight %}
 
@@ -3025,18 +3073,7 @@ To outdent a selected item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("outdentItem"); // To outdent a selected item in gantt
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To outdent a selected item in gantt
-$("#gantt").ejGantt("outdentItem");     
+gantObj.outdentItem(); // To outdent a selected item in gantt
 </script>
 {% endhighlight %}
 
@@ -3057,26 +3094,32 @@ To save the edited state of an item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("saveEdit"); // To save edited state of an item
+gantObj.saveEdit(); // To save edited state of an item
 </script>
 {% endhighlight %}
 
 
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To expand collapse an item
-$("#gantt").ejGantt("saveEdit");        
-</script>
-{% endhighlight %}
-
-
-### searchItem()
+### searchItem(searchString)
 {:#methods:searchitem}
 
 To search an item with search string provided at the run time
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">searchString</td>
+<td class="type">string</td>
+<td class="description">you can pass a text to search in Gantt Control.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -3087,20 +3130,9 @@ To search an item with search string provided at the run time
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt
+// Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("searchItem",$("#text").val()); // To search a task
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
- <div id="gantt"></div> 
- 
-<script>
-// To search a task
-$("#gantt").ejGantt("searchItem",$("#text").val());     
+gantObj.searchItem($("#text").val()); // To search a task
 </script>
 {% endhighlight %}
 
@@ -3831,13 +3863,23 @@ Triggered after collapsed the gantt record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">object</td>
+<td class="type">Number</td>
 <td class="description">Returns the row index of collapsed record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of edited cell record..</td>
+<td class="description">Returns the data of collapsed record.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns Request Type.</td>
+</tr>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -3895,13 +3937,18 @@ Triggered while collapsing the gantt record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">object</td>
+<td class="type">Number</td>
 <td class="description">Returns the row index of collapsing record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
 <td class="description">Returns the data of edited cell record..</td>
+</tr>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -3959,7 +4006,7 @@ Triggered while Context Menu is rendered in Gantt control
 </tr>
 <tr>
 <td class="name">contextMenuItems</td>
-<td class="type">boolean</td>
+<td class="type">array</td>
 <td class="description">Returns the default context menu items to which we add custom items.</td>
 </tr>
 <tr>
@@ -4112,13 +4159,23 @@ Triggered after expand the record
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">object</td>
+<td class="type">number</td>
 <td class="description">Returns the row index of record.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of edited cell record..</td>
+<td class="description">Returns the data of expanded record.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns Request Type.</td>
+</tr>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -4183,6 +4240,11 @@ Triggered while expanding the gantt record
 <td class="name">data</td>
 <td class="type">object</td>
 <td class="description">Returns the data of edited cell record..</td>
+</tr>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -4303,9 +4365,9 @@ Triggered while rendering each cell in the tree grid
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">rowElement</td>
+<td class="name">cellElement</td>
 <td class="type">object</td>
-<td class="description">Returns the selecting row element.</td>
+<td class="description">Returns the selecting cell element.</td>
 </tr>
 <tr>
 <td class="name">cellValue</td>
@@ -4378,13 +4440,23 @@ Triggered while rendering each taskbar in the gantt chart
 </tr>
 <tr>
 <td class="name">TaskbarBackground</td>
-<td class="type">object</td>
+<td class="type">string</td>
 <td class="description">Returns the taskbar background of current item.</td>
 </tr>
 <tr>
 <td class="name">ProgressbarBackground</td>
 <td class="type">string</td>
 <td class="description">Returns the progressbar background of current item.</td>
+</tr>
+<tr>
+<td class="name">parentTaskbarBackground</td>
+<td class="type">string</td>
+<td class="description">Returns the parent taskbar background of current item.</td>
+</tr>
+<tr>
+<td class="name">parentProgressbarBackground</td>
+<td class="type">string</td>
+<td class="description">Returns the parent progressbar background of current item.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -4448,12 +4520,12 @@ Triggered while rendering each row
 <tr>
 <td class="name">rowElement</td>
 <td class="type">object</td>
-<td class="description">Returns the row element of editing cell.</td>
+<td class="description">Returns the row element of rendering row.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of edited cell record..</td>
+<td class="description">Returns the data of rendering row record..</td>
 </tr>
 </tbody>
 </table>
@@ -4510,13 +4582,13 @@ Triggered after the row is selected.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">rowElement</td>
+<td class="name">targetRow</td>
 <td class="type">object</td>
 <td class="description">Returns the selecting row element.</td>
 </tr>
 <tr>
 <td class="name">recordIndex</td>
-<td class="type">string</td>
+<td class="type">number</td>
 <td class="description">Returns the index of selecting row record.</td>
 </tr>
 <tr>
@@ -4579,9 +4651,9 @@ Triggered before the row is going to be selected.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">rowElement</td>
+<td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the selecting row element.</td>
+<td class="description">Returns the data selecting record.</td>
 </tr>
 <tr>
 <td class="name">recordIndex</td>
@@ -4589,9 +4661,34 @@ Triggered before the row is going to be selected.
 <td class="description">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">targetChartRow</td>
 <td class="type">object</td>
-<td class="description">Returns the data selecting record.</td>
+<td class="description">Returns the selecting row chart element.</td>
+</tr>
+<tr>
+<td class="name">targetGridRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row grid element.</td>
+</tr>
+<tr>
+<td class="name">previousData</td>
+<td class="type">object</td>
+<td class="description">Returns the previous selected data.</td>
+</tr>
+<tr>
+<td class="name">previousIndex</td>
+<td class="type">string</td>
+<td class="description">Returns the previous selected row index.</td>
+</tr>
+<tr>
+<td class="name">previousChartRow</td>
+<td class="type">object</td>
+<td class="description">Returns the previous selected row chart element.</td>
+</tr>
+<tr>
+<td class="name">previousGridRow</td>
+<td class="type">object</td>
+<td class="description">Returns the previous selected row grid element.</td>
 </tr>
 </tbody>
 </table>
@@ -4783,8 +4880,8 @@ $("#gantt").ejGantt({
 {% endhighlight %}
 
 
-### toolbarClick
-{:#events:toolbarClick}
+### toolbarclick
+{:#events:toolbarclick}
 
 Triggered when toolbar item is clicked in Gantt.
 
@@ -4793,53 +4890,47 @@ Triggered when toolbar item is clicked in Gantt.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
+<td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments when toolbarClick event is triggered.
+<td class="description">Arguments when toolBarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
+<td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
+<td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-currentTarget{% endhighlight %}</td>
+<td class="name">currentTarget</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current item.</td>
+<td class="description">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the Gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
+<td class="name">itemName</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the toolbar item on which mouse click has been performed</td>
+<td class="description">Returns the name of the toolbar item on which mouse click has been performed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
+<td class="description">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
