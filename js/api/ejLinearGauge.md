@@ -13803,7 +13803,7 @@ context{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">eturns the name of the event</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
