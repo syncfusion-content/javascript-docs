@@ -17,7 +17,7 @@ To split the chart area vertically into a number of rows, use [`rowDefinitions`]
 
 * You can allocate space for each row by using the [`unit`](../api/ejchart.html#members:rowdefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [`rowHeight`](../api/ejchart.html#members:rowdefinitions-rowheight) value of the rowDefinitions.
  
-* To associate a vertical axis to a row, specify the rowDefintions **index** value to the [`rowIndex`](../api/ejchart.html#members:primaryyaxis-rowindex) property of the chart axis.
+* To associate a vertical axis to a row, specify the rowDefinitions **index** value to the [`rowIndex`](../api/ejchart.html#members:primaryyaxis-rowindex) property of the chart axis.
 
 * To customize each row’s horizontal line, use [`lineColor`](../api/ejchart.html#members:rowdefinitions-linecolor) and [`lineWidth`](../api/ejchart.html#members:rowdefinitions-linewidth) property.
 
@@ -110,7 +110,7 @@ To split the chart area horizontally into a number of columns, use [`columnDefin
 
 * You can allocate space for each column by using the [`unit`](../api/ejchart.html#members:columndefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [`columnWidth`](../api/ejchart.html#members:columndefinitions-columnwidth) value of the columnDefinitions.
  
-* To associate a horizontal axis to a column, specify the columnDefintions **index** value to the [`columnIndex`](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
+* To associate a horizontal axis to a column, specify the columnDefinitions **index** value to the [`columnIndex`](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
  
 {% highlight js %}
 

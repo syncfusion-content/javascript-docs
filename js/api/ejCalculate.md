@@ -243,7 +243,7 @@ Name{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-range
+string
 
 
 Example
@@ -426,7 +426,7 @@ Formula{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-value of formula
+string
 
 
 Example
@@ -480,7 +480,7 @@ Formula{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-value of formula
+string
 
 
 Example

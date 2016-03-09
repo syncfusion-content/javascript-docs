@@ -55,7 +55,7 @@ The following screenshot displays a **Bullet Graph** with customized caption usi
 
 ## Subtitle
 
-**Subtitle** is added to **Bullet Braph** using **text** property of **subtitle** in **captionSettings**. **Subtitle** also provides properties like location, textAngle and font to customize subtitle similar to caption.
+**Subtitle** is added to **Bullet Graph** using **text** property of **subtitle** in **captionSettings**. **Subtitle** also provides properties like location, textAngle and font to customize subtitle similar to caption.
 
 {% highlight js %}
 

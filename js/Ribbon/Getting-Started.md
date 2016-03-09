@@ -184,7 +184,7 @@ Create group item with [`text`](http://help.syncfusion.com/js/api/ejribbon#membe
 
 ## Adding Controls to Group
 
-Syncfusion JavaScript Controls can be added to group’s content with corresponding [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) specified like button, splitbutton, togglebutton, dropdownlist, gallery, custom, etc. Default type is `button`.
+Syncfusion JavaScript Controls can be added to group’s content with corresponding [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) specified like button, split button, toggle button, dropdown list, gallery, custom, etc. Default type is `button`.
 
 {% highlight html %}
 

@@ -292,7 +292,7 @@ In JavaScript circular gauge, it is possible to replace the pointer with images.
 
 **Image with URL**
 
-* To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. 
+* To implement the pointer image we need to give the API called ImageUrl. It is a string data type. 
 * Image type pointer is applicable for both marker as well as needle type pointers and it is possible with combine the normal marker pointer type wit image type. The three possibilities are
  
   * Needle Image

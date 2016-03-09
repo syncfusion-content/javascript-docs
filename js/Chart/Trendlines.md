@@ -35,7 +35,7 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 
 ## Customize the trendline styles
 
-A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. The default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), **dashArray** and **opacity**. The default type of trendline is **"linear"**.
 
 {% highlight js %}
 

@@ -424,7 +424,7 @@ Specifies whether the column is frozen
 
 {:#members:columns-allowfreezing}
 
-Enables or diables the ability to freeze/unfreeze the columns
+Enables or disables the ability to freeze/unfreeze the columns
 
 #### Default Value
 
@@ -670,7 +670,7 @@ Enables or disables the ability to edit a row or cell.
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
 
-specifies the editmode in treegrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
+specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
 
 
 #### Default Value
@@ -1197,7 +1197,7 @@ Specifies the index of the column that needs to have the expander button. By def
 ### clearSelection(index)
 {:#methods:clearselection}
 
-To clear all the selection in treegrid
+To clear all the selection in TreeGrid
 
 <table class="params">
 <thead>
@@ -1426,7 +1426,7 @@ $("#treegrid").ejTreeGrid("freezeColumn" , field , isFrozen);
 ### saveCell()
 {:#methods:savecell}
 
-To save the edited cell in treegrid
+To save the edited cell in TreeGrid
 
 
 #### Example
@@ -1606,7 +1606,7 @@ $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);
 ### actionBegin
 {:#events:actionbegin}
 
-Triggered before every success event of Treegrid action.
+Triggered before every success event of TreeGrid action.
 
 <table class="params">
 <thead>
@@ -1643,7 +1643,7 @@ Triggered before every success event of Treegrid action.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1690,7 +1690,7 @@ Triggered before every success event of Treegrid action.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1732,7 +1732,7 @@ Triggered before every success event of Treegrid action.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1774,7 +1774,7 @@ Triggered before every success event of Treegrid action.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1815,7 +1815,7 @@ $("#treegrid").ejTreeGrid({
 {:#events:actioncomplete}
 
 
-Triggered for every Treegrid action success event.
+Triggered for every TreeGrid action success event.
 
 <table class="params">
 <thead>
@@ -1884,7 +1884,7 @@ Triggered for every Treegrid action success event.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1931,7 +1931,7 @@ Triggered for every Treegrid action success event.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -1968,12 +1968,12 @@ Triggered for every Treegrid action success event.
 <tr>
 <td class="name">data</td>
 <td class="type">string</td>
-<td class="description">Returns the data od deleted element.</td>
+<td class="description">Returns the data of deleted element.</td>
 </tr>
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -2087,7 +2087,7 @@ $("#treegrid").ejTreeGrid({
 ### beginEdit
 {:#events:beginedit}
 
-Triggered while enter the edit mode in the treegrid cell
+Triggered while enter the edit mode in the TreeGrid cell
 
 <table class="params">
 <thead>
@@ -2338,7 +2338,7 @@ Triggered while Context Menu is rendered in TreeGrid control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -2379,7 +2379,7 @@ $("#treegrid").ejTreeGrid({
 {:#events:endedit}
 
 
-Triggered after saved the modified cellValue in treegrid
+Triggered after saved the modified cellValue in TreeGrid
 
 <table class="params">
 <thead>
@@ -2599,7 +2599,7 @@ $("#treegrid").ejTreeGrid({
 {:#events:load}
 
 
-Triggered while Treegrid is loaded
+Triggered while TreeGrid is loaded
 
 <table class="params">
 <thead>
@@ -2631,7 +2631,7 @@ Triggered while Treegrid is loaded
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model</td>
+<td class="description">Returns the TreeGrid model</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -2666,7 +2666,7 @@ $("#treegrid").ejTreeGrid({
 {:#events:querycellinfo}
 
 
-Triggered while rendering each cell in the treegrid
+Triggered while rendering each cell in the TreeGrid
 
 <table class="params">
 <thead>
@@ -2867,7 +2867,7 @@ Triggered while dragging a row in TreeGrid control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -2949,7 +2949,7 @@ Triggered while start to drag row in TreeGrid control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3041,7 +3041,7 @@ Triggered while drop a row in TreeGrid control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid model.</td>
+<td class="description">Returns the TreeGrid model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>

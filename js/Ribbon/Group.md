@@ -24,7 +24,7 @@ Groups and defaults settings can be added with the [`content`](http://help.syncf
 #### _Defaults_
 
 The `height`, `width`, `type`, `isBig` property to the controls in the [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups) can be specified commonly.
-The `height` & `width` applicable to button, split button, dropdownlist ,Toggle button controls and `isBig` applicable to only button controls ( button, split , toggle)
+The `height` & `width` applicable to button, split button, dropdown list ,Toggle button controls and `isBig` applicable to only button controls ( button, split , toggle)
 
 #### _Adding Content Groups_
 

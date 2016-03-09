@@ -39,7 +39,7 @@ $(element).ejDigitalGauge(options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">For seting the Digital gauge</td>
+<td class="description last">For setting the Digital gauge</td>
 </tr>
 </tbody>
 </table>
@@ -1071,7 +1071,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x:0,y: 20 } }]});
 
 
 
-Set the segemnt settings for the digital gauge.
+Set the segment settings for the digital gauge.
 
 
 
