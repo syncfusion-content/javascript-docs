@@ -148,13 +148,6 @@ for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td
 ### executeQuery<span class="signature">(query)</span>
 {:#methods:executequery}
 
-
-
-
-
-
-
-
 The executeQuery property is used to process the data based on the query on Url Binding.
 
 <table class="params">
@@ -181,7 +174,7 @@ query{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-result of each operation will be handled once the result is available.
+JQueryPromise
 
 
 Example
