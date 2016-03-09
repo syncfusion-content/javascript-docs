@@ -331,7 +331,7 @@ Example
  {% endhighlight %}
 
 
-### dataSource `JSONobject`
+### dataSource `object`
 {:#members:datasource}
 
 Contains the list of data for generating the list items.
@@ -502,7 +502,7 @@ Example
 {% endhighlight %}
 
 
-### fields `JSONobject`
+### fields `object`
 {:#members:fields}
 
 Mapping fields for the data items of the ListBox widget.
@@ -564,23 +564,23 @@ fields.selected [Deprecated]</td><td>
 Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
 <tr>
 <td>
-fields.selectBy</td><td>
+selectBy</td><td>
 Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.</td></tr>
 <tr>
 <td>
-fields.spriteCssClass</td><td>
+spriteCssClass</td><td>
 Defines the sprite css class for the image to be displayed.</td></tr>
 <tr>
 <td>
-fields.tableName</td><td>
+tableName</td><td>
 Defines the table name to get the specific set of list items to be loaded in the ListBox widget while rendering with remote data.</td></tr>
 <tr>
 <td>
-fields.text</td><td>
+text</td><td>
 Defines the specific field name in the data source to load the list with data.</td></tr>
 <tr>
 <td>
-fields.tooltipText [Deprecated]</td><td>
+tooltipText [Deprecated]</td><td>
 Defines the specific field name to display the tooltip text for all the list items.</td></tr>
 </table>
 
@@ -602,7 +602,7 @@ Example
 
 {% endhighlight %}
 
-### itemsCount `integer`
+### itemsCount `number`
 {:#members:itemscount}
 
 The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
@@ -620,7 +620,7 @@ Example
 
 {% endhighlight %}
 
-### totalItemsCount `integer`
+### totalItemsCount `number`
 {:#members:totalitemscount}
 
 The total number of list items to be rendered in the ListBox widget. 
@@ -639,7 +639,7 @@ Example
 
 {% endhighlight %}
 
-### itemRequestCount `integer`
+### itemRequestCount `number`
 {:#members:itemrequestcount}
 
 The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
@@ -709,7 +709,7 @@ $("#customerlist").ejListBox({
 
 {% endhighlight %}
 
-### selectedItemIndex [Deprecated] `integer`
+### selectedItemIndex [Deprecated] `number`
 {:#members:selecteditemindex}
 
 The item to be selected by default using its index.
@@ -772,7 +772,7 @@ Example
 
 {% endhighlight %}
 
-### selectedIndex `integer`
+### selectedIndex `number`
 {:#members:selectedindex}
 
 The list item to be selected by default using its index.
@@ -895,7 +895,7 @@ Example
             
 {% endhighlight %}
 
-### value `integer`
+### value `number`
 {:#members:value}
 
 Holds the selected items values and used to bind value to the list item using angular and knockout.
@@ -978,11 +978,11 @@ Specifies the virtual scroll mode to load the list data on demand via scrolling 
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>continuous_<br/><br/></td>
+<td>continuous<br/><br/></td>
 <td> Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.<br/><br/></td>
 </tr>
 <tr>
-<td>_normal_<br/><br/></td>
+<td>normal<br/><br/></td>
 <td>This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
 </tr>
 </table>
@@ -1062,7 +1062,7 @@ This can be a list item object (for JSON binding) or a string (for UL and LI ren
 <tr>
 <td>
 index</td><td>
-Integer</td><td>
+number</td><td>
 The index value to add the given items at the specified index. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1076,7 +1076,7 @@ Example
 
 {% endhighlight %}
 
-### checkAll
+### checkAll()
 {:#methods:checkall}
 
 Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
@@ -1107,7 +1107,7 @@ Checks a list item by using its index. It is dependent on showCheckbox property.
 <tr>
 <td>
 index</td><td>
-Integer</td><td>
+number</td><td>
 Index of the listbox item to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1135,7 +1135,7 @@ Checks multiple list items by using its index values. It is dependent on showChe
 <tr>
 <td>
 index/indices</td><td>
-Integer array| string</td><td>
+number[]</td><td>
 Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1152,7 +1152,7 @@ Example
 {% endhighlight %}
 
 
-### disable
+### disable()
 {:#methods:disable}
 
 Disables the ListBox widget.
@@ -1211,7 +1211,7 @@ Disables a list Item using its index value.
 <tr>
 <td>
 index</td><td>
-integer</td><td>
+number</td><td>
 Index of the listbox item to be disabled.</td></tr>
 </table>
 
@@ -1239,7 +1239,7 @@ Disables set of list Items using its index values.
 <tr>
 <td>
 Indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox items to be disabled.</td></tr>
 </table>
 
@@ -1253,7 +1253,7 @@ Example
 {% endhighlight %}
 
 
-### enable
+### enable()
 {:#methods:enable}
 
 Enables the ListBox widget when it is disabled.
@@ -1310,7 +1310,7 @@ Enables a list item using its index value.
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 Index of the listbox item to be enabled.</td></tr>
 </table>
 
@@ -1338,7 +1338,7 @@ Enables a set of list Items using its index values.
 <tr>
 <td>
 indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox items to be enabled.</td></tr>
 </table>
 
@@ -1353,12 +1353,15 @@ Example
 {% endhighlight %}
 
 
-### getCheckedItems
+### getCheckedItems()
 {:#methods:getcheckeditems}
 
 Returns the list of checked items in the ListBox widget. It is dependent on showCheckbox property.
 
 N> This method does not accept any arguments.
+
+####Returns:
+number[]
 
 Example
 {:.example}
@@ -1370,7 +1373,7 @@ Example
 {% endhighlight %}
 
 
-### getSelectedItems
+### getSelectedItems()
 {:#methods:getselecteditems}
 
 Returns the list of selected items in the ListBox widget. 
@@ -1431,7 +1434,7 @@ Returns an item’s index based on the value given.
 <b>Description</b></td></tr>
 <tr>
 <td>
-value</td><td>
+index/indices</td><td>
 string</td><td>
 The list item’s value</td></tr>
 </table>
@@ -1446,7 +1449,7 @@ Example
 {% endhighlight %}
 
 
-### getTextByIndex
+### getTextByIndex()
 {:#methods:gettextbyindex}
 
 Returns an item’s text (label) based on the index given.
@@ -1460,7 +1463,7 @@ Returns an item’s text (label) based on the index given.
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 The list item index.</td></tr>
 </table>
 
@@ -1474,7 +1477,7 @@ Example
 {% endhighlight %}
 
 
-### getItemByIndex
+### getItemByIndex()
 {:#methods:getitembyindex}
 
 Returns a list item’s object using its index.
@@ -1488,7 +1491,7 @@ Returns a list item’s object using its index.
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 The list item index.</td></tr>
 </table>
 
@@ -1570,7 +1573,7 @@ $("#list").ejListBox("mergeData", NewBikeList);
 {% endhighlight %}
 
 
-### moveDown
+### moveDown()
 {:#methods:movedown}
 
 Selects the next item based on the current selection.
@@ -1587,7 +1590,7 @@ Example
 {% endhighlight %}
 
 
-### moveUp
+### moveUp()
 {:#methods:moveup}
 
 Selects the previous item based on the current selection.
@@ -1631,7 +1634,7 @@ Example
 
 {% endhighlight %}
 
-### removeAll
+### removeAll()
 {:#methods:removeall}
 
 Removes all the list items from listbox.
@@ -1668,7 +1671,7 @@ Example
  {% endhighlight %}         
 
 
-### removeSelectedItems
+### removeSelectedItems()
 {:#methods:removeselecteditems}
 
 Removes the selected list items from the listbox.
@@ -1727,7 +1730,7 @@ Removes a list item by using its index value.
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 Index of the listbox item to be removed.</td></tr>
 </table>
 
@@ -1828,7 +1831,7 @@ Selects list item using its index value.
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 Index of the listbox item to be selected.</td></tr>
 </table>
 
@@ -1856,7 +1859,7 @@ Selects a set of list items through its index values. This method will works whe
 <tr>
 <td>
 index/Indices</td><td>
-Integer array/ string</td><td>
+number[]</td><td>
 Index/Indices of the listbox items to be selected.</td></tr>
 </table>
 
@@ -1886,7 +1889,7 @@ Selects a set of list items through its index values.
 <tr>
 <td>
 index/Indices</td><td>
-Integer array/ string</td><td>
+number[]</td><td>
 Index/Indices of the listbox item to be selected.</td></tr>
 </table>
 
@@ -1949,7 +1952,7 @@ Unchecks a checked list item using its index value. To use this method showCheck
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 Index of the listbox item to be unchecked.</td></tr>
 </table>
 
@@ -1977,7 +1980,7 @@ Unchecks the set of checked list items using its index values. To use this metho
 <tr>
 <td>
 indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox item to be unchecked.</td></tr>
 </table>
 
@@ -2041,7 +2044,7 @@ Unselects a selected list item using its index value
 <tr>
 <td>
 index</td><td>
-Integer </td><td>
+number </td><td>
 Index of the listbox item to be unselected.</td></tr>
 </table>
 
@@ -2069,7 +2072,7 @@ Unselects a set of list items using its index values.
 <tr>
 <td>
 index/Indices</td><td>
-Integer array|string</td><td>
+number[]</td><td>
 Index/Indices of the listbox item to be unselected.</td></tr>
 </table>
 
@@ -2157,7 +2160,7 @@ Unselects a set of list items using its index values.
 <tr>
 <td>
 indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox item to be unselected.</td></tr>
 </table>
 
@@ -2174,7 +2177,7 @@ Example
 {% endhighlight %}
 
 
-### hideCheckedItems 
+### hideCheckedItems ()
 {:#methods:hidecheckeditems}
 
 Hides all the checked items in the listbox.
@@ -2204,7 +2207,7 @@ Shows a set of hidden list Items using its index values.
 <tr>
 <td>
 indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox items to be shown.</td></tr>
 </table>
 
@@ -2232,7 +2235,7 @@ Hides a set of list Items using its index values.
 <tr>
 <td>
 indices</td><td>
-Integer array/ string</td><td>
+number[] | string</td><td>
 Indices of the listbox items to be hidden.</td></tr>
 </table>
 
@@ -2372,7 +2375,7 @@ Shows a hidden list item using its index value.
 <tr>
 <td>
 index</td><td>
-Integer</td><td>
+number</td><td>
 Index of the listbox item to be shown.</td></tr>
 </table>
 
@@ -2400,7 +2403,7 @@ Hides a list item using its index value.
 <tr>
 <td>
 index</td><td>
-Integer</td><td>
+number</td><td>
 Index of the listbox item to be hidden.</td></tr>
 </table>
 
@@ -2431,7 +2434,7 @@ Example
 {% endhighlight %}
 
 
-### hide
+### hide()
 {:#methods:hide}
 
 Hides the listbox.
@@ -2448,7 +2451,7 @@ Example
 {% endhighlight %}
 
 
-### hideAllItems
+### hideAllItems()
 {:#methods:hideallitems}
 
 Hides all the listbox items in the listbox.
@@ -2465,7 +2468,7 @@ Example
 {% endhighlight %}
 
 
-### showAllItems
+### showAllItems()
 {:#methods:showallitems }
 
 Shows all the listbox items in the listbox.
@@ -2879,47 +2882,52 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 items</td><td>
 Array</td><td>
-Array of list item object</td></tr>
+Array of list item object
+<table>
+<tr>
+<td>item</td>
+<td>Object</td>
+<td>List item object.</td>
+</tr>
+
 <tr>
 <td>
-items[index].item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-items[index].data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-items[index].index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-items[index].isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-items[index].isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-items[index].isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-items[index].text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
-<td>
-items[index].value</td><td>
+<td>value</td><td>
 String</td><td>
 List item’s value.</td></tr>
+</table>
+</td></tr>
+
+
 </table>
 
 Example
@@ -3025,47 +3033,49 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 items</td><td>
 Array</td><td>
-Array of list item object</td></tr>
+Array of list item object
+<table>
 <tr>
 <td>
-items[index].item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-items[index].data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-items[index].index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-items[index].isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-items[index].isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-items[index].isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
-<td>
-items[index].text</td><td>
+<td>text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-items[index].value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
+</table></td></tr>
+
 </table>
 
  Example
@@ -3116,47 +3126,50 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 items</td><td>
 Array</td><td>
-Array of list item object</td></tr>
+Array of list item object
+<table>
 <tr>
 <td>
-items[index].item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-items[index].data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-items[index].index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-items[index].isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-items[index].isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-items[index].isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-items[index].text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-items[index].value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
+ </table></td></tr>
+
 </table>
 
  Example
@@ -3209,47 +3222,51 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 items</td><td>
 Array</td><td>
-An array of list item objects which are being dropped.</td></tr>
+An array of list item objects which are being dropped.
+<table>
 <tr>
 <td>
-items[index].item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-items[index].data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-items[index].index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-items[index].isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-items[index].isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-items[index].isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-items[index].text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-items[index].value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
+</table>
+</td></tr>
+
 </table>
 
  Example
@@ -3300,47 +3317,51 @@ Set this option to true to cancel the event.</td></tr>
 <td>
 items</td><td>
 Array</td><td>
-An array of list item objects which are being dropped.</td></tr>
+An array of list item objects which are being dropped.
+<table>
 <tr>
 <td>
-items[index].item</td><td>
+item</td><td>
 Object</td><td>
 List item object.</td></tr>
 <tr>
 <td>
-items[index].data</td><td>
+data</td><td>
 Object</td><td>
 The Datasource of the listbox.</td></tr>
 <tr>
 <td>
-items[index].index</td><td>
+index</td><td>
 Number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
-items[index].isChecked</td><td>
+isChecked</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
-items[index].isSelected</td><td>
+isSelected</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
-items[index].isEnabled</td><td>
+isEnabled</td><td>
 Boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
-items[index].text</td><td>
+text</td><td>
 String</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
-items[index].value</td><td>
+value</td><td>
 String</td><td>
 List item’s value.</td></tr>
+</table>
+</td></tr>
+
 </table>
 
  Example
@@ -3382,7 +3403,7 @@ model</td><td>
 Instance of the listbox model object.</td></tr>
 <tr>
 <td>
-argument.type</td><td>
+type</td><td>
 String</td><td>
 Name of the event.</td></tr>
 <tr>
