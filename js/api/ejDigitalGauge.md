@@ -1177,7 +1177,7 @@ Set the segemnt settings for the digital gauge.
 
 
 {:.param}
-* nullObject
+* null
 
 
 
