@@ -389,7 +389,7 @@ Specifies the zoom factor for map zoom value.
 {% endhighlight %}
 
 
-### layers `object`
+### layers `array`
 {:#members:layers}
 
 Hold the shapelayers to be displayed in map
@@ -771,7 +771,7 @@ Set the orientation value for navigation control
 Enables or Disables the navigation control for map to perform zooming and panning on map shapes.
 
 
-### shapeLayer
+### shapeLayer `object`
 {:#members:shapelayer}
 
 Layer for holding the map shapes
@@ -2422,7 +2422,7 @@ Specifies the map items template for shapes.
 {% endhighlight %}
 
 
-### shapeLayer.markers `marker`
+### shapeLayer.markers `array`
 {:#members:shapelayer-markers}
 
 Specify markers for shape layer.
@@ -2490,7 +2490,7 @@ Specifies the map marker template for map layer.
 {% endhighlight %}
 
 
-### shapeLayer.selectedMapShapes `object`
+### shapeLayer.selectedMapShapes `array`
 {:#members:shapelayer-selectedmapshapes}
 
 Specify selectedMapShapes for shape layer
@@ -3198,7 +3198,7 @@ Shows or hides the tooltip for shapes
 {% endhighlight %}
 
 
-### shapeLayer.subLayers `object`
+### shapeLayer.subLayers `array`
 {:#members:shapelayer-sublayers}
 
 Specifies the sub shape layers
@@ -3493,7 +3493,7 @@ Triggered on selecting the map markers.
     </thead>
     <tbody>
         <tr>
-            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
             <td class="type"><span class="param-type">object</span></td>
             <td class="description last">Returns marker object.</td>
         </tr>
@@ -3528,7 +3528,7 @@ Triggers while leaving the hovered map shape
     </thead>
     <tbody>
         <tr>
-            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
             <td class="type"><span class="param-type">object</span></td>
             <td class="description last">Returns hovered map shape object.</td>
         </tr>
@@ -3562,7 +3562,7 @@ Triggers while hovering the map shape.
     </thead>
     <tbody>
         <tr>
-            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
             <td class="type"><span class="param-type">object</span></td>
             <td class="description last">Returns hovered map shape object.</td>
         </tr>
@@ -3663,7 +3663,7 @@ Triggered on selecting the map shapes.
     </thead>
     <tbody>
         <tr>
-            <td class="name">{% highlight html %}originalEvent.data{% endhighlight %}</td>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
             <td class="type"><span class="param-type">object</span></td>
             <td class="description last">Returns selected shape object.</td>
         </tr>
