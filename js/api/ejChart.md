@@ -11244,7 +11244,7 @@ Specifies the padding for the axis range.
 
 
 
-* ej.datavisualization.Chart.rangePadding.None
+* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
 
 
 
