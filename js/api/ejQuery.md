@@ -10,25 +10,7 @@ metacontent:
 Communicates with data source and returns the desired result based on the Query provided.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Example
+#### Example
 {:.example}
 
 
@@ -98,7 +80,7 @@ value{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -129,7 +111,7 @@ clone is used to duplicate the data.
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -155,13 +137,6 @@ $(".table tbody").html(tbody);
 
 ### execute<span class="signature">(dataManager)</span>
 {:#methods:execute}
-
-
-
-
-
-
-
 
 It is used to execute the query on URL Binding
 
@@ -189,10 +164,10 @@ dataManager{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-method executes all operations immediately and does not wait for each individual operation to complete. The result of each operation will be handled once the result is available.
+JQueryPromise
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -291,7 +266,7 @@ tables{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -340,7 +315,7 @@ key{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -391,7 +366,7 @@ tableName{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -446,7 +421,7 @@ fieldName{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -501,7 +476,7 @@ query{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -558,7 +533,7 @@ pageSize{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -620,7 +595,7 @@ end{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -659,7 +634,7 @@ It is used to count records.
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -726,7 +701,7 @@ ignoreCase{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -783,7 +758,7 @@ fieldName{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -838,7 +813,7 @@ nos{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -893,7 +868,7 @@ fieldName{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -948,7 +923,7 @@ fieldName{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -1003,7 +978,7 @@ nos{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -1058,7 +1033,7 @@ dataManager{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -1134,7 +1109,7 @@ ignoreCase{% endhighlight %}</td>
 
 
 
-Example
+#### Example
 {:.example}
 
 
