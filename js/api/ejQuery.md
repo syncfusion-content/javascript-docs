@@ -31,7 +31,6 @@ for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td
 ### addParams<span class="signature">(key, value)</span>
 {:#methods:addparams}
 
- 
 Passes custom parameters to our API URL.
 
 <table class="params">
@@ -59,7 +58,7 @@ Passes custom parameters to our API URL.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
  
 #### Example
 {:.example}
@@ -78,7 +77,7 @@ clone is used to duplicate the data.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
 
 #### Example
 {:.example}
@@ -124,7 +123,7 @@ dataManager{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-Object 
+JQueryPromise 
 
 #### Example
 {:.example}
@@ -199,7 +198,7 @@ expand is used to performs complex binding.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
  
 #### Example
 {:.example}
@@ -236,7 +235,7 @@ Relates two tables. A foreign key is a column or combination of columns which is
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
 
 #### Example
 {:.example}
@@ -275,7 +274,7 @@ Specifies the name of table(s) to retrieve data.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -318,7 +317,7 @@ Groups records based on the given field name.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -361,7 +360,7 @@ Displays the records in hierarchical relationships. The foreign key is used to r
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
 
 #### Example
 {:.example}
@@ -405,7 +404,7 @@ Retrieves records based on the given page index and size.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -454,7 +453,7 @@ The range property is used to retrieve the records based on the given start and 
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -482,7 +481,7 @@ Specifies that the total number of records(count) is required in the result.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Query
 
 #### Example
 {:.example}
@@ -533,7 +532,7 @@ It is used to search the given search key value in JSON data
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -579,7 +578,7 @@ Selects specified columns from the data source.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -622,7 +621,7 @@ Skips the given count of records from the data source.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -665,7 +664,7 @@ Sort items or records in an ordered sequence.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -708,7 +707,7 @@ Sort items or records in descending order.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -751,7 +750,7 @@ Picks the given count of records from the top of the datasource.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -794,7 +793,7 @@ using is a method used to query the data manager.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
@@ -855,7 +854,7 @@ It is used to filter records based on the filter condition.
 #### Returns:
 {:#methods:returns:}
 
-Array
+ej.Query
 
 #### Example
 {:.example}
