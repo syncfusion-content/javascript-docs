@@ -32,7 +32,10 @@ $(element).ejDraggable()
 {% highlight html %}
  
 <div id="dragable"/>
+
+ {% endhighlight %}
  
+{% highlight js %}
 <script>
 // Create Dragable
 $('#dragable').ejDraggable();   
@@ -88,7 +91,7 @@ If clone is specified.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set clone API value during initialization  
         $("#dragable").ejDraggable({ clone: true });                           
@@ -96,7 +99,7 @@ If clone is specified.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the clone API, after initialization:
         //Gets the clone value  
@@ -146,7 +149,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set cursorAt API value during initialization  
         $("#dragable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                
@@ -154,7 +157,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
@@ -188,7 +191,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set distance API value during initialization  
         $("#dragable").ejDraggable({ distance: 1 });                            
@@ -196,7 +199,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the distance API, after initialization:
         //Gets the distance value  
@@ -246,7 +249,7 @@ The drag area is used to restrict the dragging element bounds.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set dragArea API value during initialization  
         $("#dragable").ejDraggable({ dragArea: true });                         
@@ -254,7 +257,7 @@ The drag area is used to restrict the dragging element bounds.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the dragArea API, after initialization:
         //Gets the dragArea value  
@@ -304,7 +307,7 @@ If specified, restricts drag start click to the specified element(s).
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set handle API value during initialization  
         $("#dragable").ejDraggable({ handle: null });                           
@@ -312,7 +315,7 @@ If specified, restricts drag start click to the specified element(s).
   {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the handle API, after initialization:
         //Gets the handle value  
@@ -358,7 +361,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set scope API value during initialization  
         $("#dragable").ejDraggable({ scope: 'default' });                               
@@ -366,7 +369,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -411,6 +414,10 @@ destroy in the dragable.
  
 < div  id="dragable" > </div > 
  
+{% endhighlight %}
+
+
+{% highlight js %}
 <script>
 // Create dragableObj
 var dragableObj  = $("#dragable").data("ejDraggable");
@@ -454,20 +461,20 @@ This event is triggered when dragging element is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Draggable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -481,7 +488,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //destroy event for Draggable
 $("#dragable").ejDraggable({ 
@@ -515,37 +522,37 @@ This event is triggered when the mouse is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Draggable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the draggable model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current draggable element object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event model values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the exact mouse down target element</td>
 </tr>
@@ -559,7 +566,7 @@ argument.target{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //drag event for Draggable
 $("#dragable").ejDraggable({ 
@@ -591,37 +598,37 @@ Supply a callback function to handle the drag start event as an init option.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Draggable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the draggable model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current draggable element object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event model values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the exact mouse down target element</td>
 </tr>
@@ -635,7 +642,7 @@ argument.target{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //dragStart event for Draggable
 $("#dragable").ejDraggable({ 
@@ -665,37 +672,37 @@ This event is triggered when the mouse is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Draggable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the draggable model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current draggable element object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event model values</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
+<td class="name">
+target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the exact mouse down target element</td>
 </tr>
@@ -709,7 +716,7 @@ argument.target{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //dragStop event for Draggable
 $("#dragable").ejDraggable({ 
@@ -741,14 +748,14 @@ This event is triggered when dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
+<td class="name">
+element</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the draggle element object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.sender{% endhighlight %}</td>
+<td class="name">
+sender</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event model values</td>
 </tr>
@@ -763,7 +770,7 @@ argument.sender{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //helper event for Draggable
 $("#dragable").ejDraggable({ 

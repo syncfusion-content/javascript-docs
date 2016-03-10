@@ -4801,7 +4801,7 @@ Triggered when toolbar item is clicked in Gantt.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments when toolBarClick event is triggered.
+<td class="description last">Arguments when toolbarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -4856,7 +4856,7 @@ type{% endhighlight %}</td>
 <div id="gantt"></div> 
 <script>
 $("#gantt").ejGantt({
-   toolBarClick: function (args) {}
+   toolbarClick: function (args) {}
 });
 </script>
 {% endhighlight %}
