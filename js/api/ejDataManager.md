@@ -126,7 +126,7 @@ The executeQuery property is used to process the data based on the query on Url 
 #### Returns:
 {:#methods:returns:}
 
-Object
+JQueryPromise
 
 #### Example
 {:.example}
@@ -170,7 +170,7 @@ It is a method used to inserts a new record in the table.
 #### Returns:
 {:#methods:returns:}
 
-Number
+Object
  
 #### Example
 {:.example}
@@ -230,7 +230,7 @@ It is used to remove the data from the dataSource.
 #### Returns:
 {:#methods:returns:}
 
-Array
+Object
 
 #### Example
 {:.example}
