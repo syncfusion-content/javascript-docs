@@ -748,7 +748,7 @@ Enables or disables the ability to edit a row or cell.
 
 <ts name = "ej.TreeGrid.EditMode"/>
 
-specifies the edit mode in treegrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
+specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
 
 <table class="params">
 <thead>
