@@ -1335,7 +1335,7 @@ Sets current date of the Schedule. The Schedule displays initially with the date
 ### currentView `string|enum`
 {:#members:currentview}
 
-Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and customview - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView(ej.Schedule.CurrentView) are as follows,
+Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView(ej.Schedule.CurrentView) are as follows,
 
 <table class="params">
     <thead>
@@ -1473,7 +1473,7 @@ When set to true, shows the previous/next appointment navigator button on the Sc
 ### enableAppointmentResize `boolean`
 {:#members:enableappointmentresize}
 
-When set to true, enables the resize behaviour of appointments within the Schedule.
+When set to true, enables the resize behavior of appointments within the Schedule.
 
 #### Default Value
 
@@ -1579,7 +1579,7 @@ Saves the current model value to browser cookies for state maintenance. When the
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-When set to true, the Schedule layout and behaviour changes as per the common RTL conventions.
+When set to true, the Schedule layout and behavior changes as per the common RTL conventions.
 
 #### Default Value
 
@@ -1774,7 +1774,7 @@ Sets the height of the Schedule. Accepts both pixel and percentage values.
 ### workHours `object`
 {:#members:workhours}
 
-To define the workHours display of the Schedule control.
+To define the work hours within the Schedule control.
 
 ### workHours.highlight `boolean`
 {:#members:workhours-hightlight}
@@ -2899,7 +2899,7 @@ Binds color field name in the dataSource to resourceSettings **color**. The colo
 ### resources.resourceSettings.appointmentClass `string`
 {:#members:resources-resourcesettings-appointmentclass}
 
-Binds appointmentClass field name in the dataSource. It applies custom CSS classname to appointments depicting to the resorce it belongs.
+Binds appointmentClass field name in the dataSource. It applies custom CSS class name to appointments depicting to the resource it belongs.
 
 #### Example - To customize the styles of the appointments based on the resources it belongs, use the appointmentClass field with other resources options.
 
@@ -5143,7 +5143,7 @@ Triggers after the completion of action in the Schedule.
                 <tr>
                     <td class="name">data</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the data about viewchange action.</td>
+                    <td class="description">Returns the data about view change action.</td>
                 </tr>
                 <tr>
                     <td class="name">model</td>
@@ -6279,7 +6279,7 @@ $("#Schedule").ejSchedule({
 ### drag
 {:#events:drag}
 
-Triggers while the appointment is being dragged over the workcells.
+Triggers while the appointment is being dragged over the work cells.
 
 <table class="params">
     <thead>
@@ -6375,7 +6375,7 @@ Triggers when the appointment dragging begins.
         <tr>
             <td class="name">object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of dargStart event.</td>
+            <td class="description">Returns the object of dragStart event.</td>
         </tr>
         <tr>
             <td class="name">cancel</td>
