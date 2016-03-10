@@ -5797,7 +5797,7 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 
 
 ### commonSeriesOptions.selectionSettings.type `enum`
-{:#members:commonseriesoptions-selectionSettings-type}
+{:#members:commonseriesOptions-selectionSettings-type}
 
 
 
