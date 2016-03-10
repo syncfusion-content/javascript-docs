@@ -166,7 +166,7 @@ To customize the stripLine styles, use the [`color`](../api/ejchart#members:prim
 ![](/js/Chart/Striplines_images/Striplines_img5.png)
 
 
-## Change the zorder of the stripline
+## Change the Z-order of the stripline
 
 Stripline [`zIndex`](../api/ejchart#members:primaryyaxis-stripline-zindex) property is used to display the stripLine either behind or over the series.  
 
