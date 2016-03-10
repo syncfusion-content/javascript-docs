@@ -4880,8 +4880,8 @@ $("#gantt").ejGantt({
 {% endhighlight %}
 
 
-### toolbarclick
-{:#events:toolbarclick}
+### toolbarClick
+{:#events:toolbarClick}
 
 Triggered when toolbar item is clicked in Gantt.
 
@@ -4897,7 +4897,7 @@ Triggered when toolbar item is clicked in Gantt.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Arguments when toolBarClick event is triggered.
+<td class="description">Arguments when toolbarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
