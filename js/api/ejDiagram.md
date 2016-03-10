@@ -1667,34 +1667,12 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### sourcePoint `Number`
-{:#members:sourcepoint}
-
-Describes the coordinates of the element
-
-#### Default Value:
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-    
-var point = {x: 10,y: 10};
-
-</script>
-
-{% endhighlight %}
-
-### sourcePoint.x `Number`
-{:#members:sourcepoint-x}
+### connectors.sourcePoint.x `Number`
+{:#members:connectors-sourcepoint-x}
 
 Defines the x-coordinates of the point of element
 
-####Default Value:
+#### Default Value:
 
 * 0
 
@@ -1709,12 +1687,12 @@ var point = {x: 10};
 
 {% endhighlight %}
 
-### sourcePoint.y `Number`
-{:#members:sourcepoint-y}
+### connectors.sourcePoint.y `Number`
+{:#members:connectors-sourcepoint-y}
 
 Defines the y-coordinates of the point of element
 
-####Default Value:
+#### Default Value:
 
 * 0
 
