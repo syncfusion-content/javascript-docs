@@ -2450,7 +2450,7 @@ Sets the timing, when the reminders are to be alerted for the Schedule appointme
 ### renderDates `object`
 {:#members:renderdates}
 
-Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to **custom view**.
+Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to **customview**.
 
 #### Default Value
 
