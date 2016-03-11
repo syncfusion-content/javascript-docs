@@ -5796,10 +5796,10 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 {% endhighlight %}
 
 
-### commonseriesoptions.selectionSettings.type `enum`
-{:#members:commonseriesoptions-selectionSettings-type}
+### commonSeriesOptions.selectionSettings.type `enum`
+{:#members:commonseriesOptions-selectionSettings-type}
 
-
+<ts name = "ej.Chart.SelectionType"/>
 
 Specifies the type of selection.
 

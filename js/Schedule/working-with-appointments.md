@@ -149,7 +149,7 @@ The appointments can be created by double-clicking on the Scheduler cells across
 
 N> Select multiple cells both using mouse or keyboard access keys (<kbd>shift</kbd>+<kbd>arrow keys</kbd>) and press <kbd>Alt</kbd>+<kbd>N</kbd> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
 
-To prevent the display of default appointment window on double clicking the Scheduler cells, either the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) or [cellDoubleClick](/js/api/ejschedule#events:celldoubleclick) event can be used, within which the **args.cancel** needs to be set to true. This behaviour is depicted in the below code example.
+To prevent the display of default appointment window on double clicking the Scheduler cells, either the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) or [cellDoubleClick](/js/api/ejschedule#events:celldoubleclick) event can be used, within which the **args.cancel** needs to be set to true. This behavior is depicted in the below code example.
 
 {% highlight html %}
 
@@ -420,7 +420,7 @@ N> When the `readOnly` property is set to true – double clicking the cells wil
 
 ## Drag and Drop
 
-The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `allowDragAndDrop` property. By default, it is set to `true`.
+The appointment time can be modified through the drag and drop behavior, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `allowDragAndDrop` property. By default, it is set to `true`.
 
 {% highlight html %}
 
