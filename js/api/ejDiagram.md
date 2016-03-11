@@ -90,7 +90,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 
 <ts name = "ej.datavisualization.Diagram.ImageAlignment "/>
     
-Defines the position of the background image over the diagram area/ node area.
+Defines how to align the background image over the diagram area.
 
 <table class="props">
     <thead>
@@ -102,44 +102,44 @@ Defines the position of the background image over the diagram area/ node area.
     <tbody>
         <tr>
             <td class="name">None</td>
-            <td class="description last">Scales the graphic content non-uniformly to the given width and height
+            <td class="description last">Scales the graphic content non-uniformly to the width and height of the diagram area
 </td>
        </tr>
         <tr>
             <td class="name">XMinYMin</td>
-            <td class="description last">Used to align image horizontally on top left side of diagram area/node </td>
+            <td class="description last">Used to align the image at the top left of diagram area </td>
        </tr>
         <tr>
             <td class="name">XMinYMid</td>
-            <td class="description last">Used to align image horizontally on left center side of diagram area/node</td>
+            <td class="description last">Used to align the image at the left center of diagram area</td>
        </tr>
         <tr>
             <td class="name">XMinYMax</td>
-            <td class="description last">Used to align image horizontally on bottom left side of diagram area/node</td>
+            <td class="description last">Used to align the image at the bottom left of diagram area</td>
        </tr>
         <tr>
             <td class="name">XMidYMin</td>
-            <td class="description last">Used to align image horizontally on top center side of diagram area/node</td>
+            <td class="description last">Used to align the image at the top center of diagram area</td>
        </tr>
         <tr>
             <td class="name">XMidYMid</td>
-            <td class="description last">Used to align image horizontally on center of diagram area/node</td>
+            <td class="description last">Used to align the image at the center of diagram area</td>
        </tr>
         <tr>
             <td class="name">XMidYMax</td>
-            <td class="description last">Used to align image horizontally on bottom center side of diagram area/node</td>
+            <td class="description last">Used to align the image at the bottom center of diagram area</td>
        </tr>
         <tr>
             <td class="name">XMaxYMin</td>
-            <td class="description last">Used to align image horizontally on top right side of diagram area/node</td>
+            <td class="description last">Used to align the image at the top right of diagram area/node</td>
        </tr>
         <tr>
             <td class="name">XMaxYMid</td>
-            <td class="description last">Used to align image horizontally on right center side of diagram area/node</td>
+            <td class="description last">Used to align the image at the right center of diagram area/node</td>
        </tr>
         <tr>
             <td class="name">XMaxYMax</td>
-            <td class="description last">Used to align image horizontally on bottom right side of diagram area/node</td>
+            <td class="description last">Used to align the image at the bottom right of diagram area/node</td>
        </tr>
    </tbody>
 </table>
@@ -165,7 +165,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage:{alignment: ej.datavisualizatio
 
 <ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
     
-Defines how the image of the background is to be scaled.
+Defines how the background image should be scaled/stretched
 
 <table class="props">
     <thead>
@@ -2969,12 +2969,12 @@ function customUndoRedo(args) {
 ### layout `object`
 {:#members:layout}
 
-Automatically arranges the nodes and connectors in a predefined manner
+Automatically arranges the nodes and connectors in a predefined manner.
 
 ### layout.bounds `Object`
 {:#members:layout-bounds}
 
-Specifies the custom bounds to align the layout
+Specifies the custom bounds to arrange/align the layout
 
 #### Default Value:
 
@@ -2987,7 +2987,7 @@ Specifies the custom bounds to align the layout
 <div id="diagramcontent"></div>
 <script>
 // bounds of the layout
-$("#diagramcontent").ejDiagram({layout: { bounds:{ x: 0, y: 0, width: 100, height: 100} }});
+$("#diagramcontent").ejDiagram({layout: { bounds:{ x: 0, y: 0, width: 1000, height: 1000} }});
 </script>
 
 {% endhighlight %}
@@ -3037,7 +3037,7 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 <ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
-Defines how to horizontally align the layout within the specified layout bounds
+Defines how to horizontally align the layout within the layout bounds
 
 <table class="props">
     <thead>
@@ -3126,7 +3126,7 @@ $("#diagramcontent").ejDiagram({layout: { margin:{ left: 10, right: 10, top: 10,
 
 <ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-Defines how to vertically align the layout within the specified layout bounds
+Defines how to vertically align the layout within the layout bounds
 
 <table class="props">
     <thead>
@@ -3650,7 +3650,7 @@ Enables or disables the default behaviors of the node.
        </tr>
         <tr>
             <td class="name">PointerVisibility</td>
-            <td class="description last">Enables user interaction for node</td>
+            <td class="description last">Enables the user interaction with the node</td>
        </tr>
         <tr>
             <td class="name">Default</td>
