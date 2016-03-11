@@ -2397,7 +2397,7 @@ This event is fired when the Rotator slides are changed.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2497,7 +2497,7 @@ This event is fired when the Rotator control is initialized.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2585,7 +2585,7 @@ This event is fired when the Rotator control is destroyed.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2673,7 +2673,7 @@ This event is fired when a pager is clicked.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2773,7 +2773,7 @@ This event is fired when enableAutoPlay is started.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2873,7 +2873,7 @@ This event is fired when autoplay is stopped or paused.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>
@@ -2973,7 +2973,7 @@ This event is fired when a thumbnail pager is clicked.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
+<td class="description">Event parameters from rotator
 <table class="params">
 <thead>
 <tr>

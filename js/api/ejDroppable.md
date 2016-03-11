@@ -31,6 +31,10 @@ $(element).ejDroppable()
  
 <div  id="dropable" />
  
+{% endhighlight %}
+
+{% highlight js %}
+
 <script>
 // Create Dragable
 $('#dropable').ejDroppable();   
@@ -76,7 +80,7 @@ Used to accept the specified draggable items.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set scope API value during initialization  
         $("#droppable").ejDroppable({ accept: null });                          
@@ -84,7 +88,7 @@ Used to accept the specified draggable items.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the accept API, after initialization:
         //Gets the accept value  
@@ -115,7 +119,7 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set scope API value during initialization  
         $("#droppable").ejDroppable({ scope: 'default' });                             
@@ -123,7 +127,7 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -152,6 +156,11 @@ destroy in the Droppable.
  
 <div  id="droppable"> </div > 
  
+{% endhighlight %}
+
+
+{% highlight js %}
+
 <script>
 // Create droppabaleObj
 var droppabaleObj  = $("#droppable").data("ejDroppable");
@@ -183,26 +192,26 @@ This event is triggered when the mouse up is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Droppable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElement{% endhighlight %}</td>
+<td class="name">
+targetElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the element which accepts the droppable element.</td>
 </tr>
@@ -245,26 +254,26 @@ This event is triggered when the mouse is moved out.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Droppable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElement{% endhighlight %}</td>
+<td class="name">
+targetElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse out over the element</td>
 </tr>
@@ -310,26 +319,26 @@ This event is triggered when the mouse is moved over.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Droppable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.targetElement{% endhighlight %}</td>
+<td class="name">
+targetElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse over the element</td>
 </tr>
