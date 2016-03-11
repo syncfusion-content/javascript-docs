@@ -32,6 +32,10 @@ $(element).ejResizable()
  
 <div  id="resizing" /> 
  
+ {% endhighlight %}
+
+
+{% highlight js %}
 <script>
 // Create resizing
 $('#resizing').ejResizable();   
@@ -99,7 +103,7 @@ Sets the offset of the resizing helper relative to the mouse cursor.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set cursorAt API value during initialization  
         $("#resizing").ejResizable({ cursorAt:  { top: 1, left: -2 } });                                
@@ -107,7 +111,7 @@ Sets the offset of the resizing helper relative to the mouse cursor.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
@@ -157,7 +161,7 @@ Distance in pixels after mousedown the mouse must move before resizing should st
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set distance API value during initialization  
         $("#resizing").ejResizable({ distance: 1 });                            
@@ -165,7 +169,7 @@ Distance in pixels after mousedown the mouse must move before resizing should st
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the distance API, after initialization:
         //Gets the distance value  
@@ -215,7 +219,7 @@ If specified, restricts resize start click to the specified element(s).
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set handle API value during initialization  
         $("#resizing").ejResizable({ handle: null });                           
@@ -223,7 +227,7 @@ If specified, restricts resize start click to the specified element(s).
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the handle API, after initialization:
         //Gets the handle value  
@@ -273,7 +277,7 @@ Sets the max height for resizing
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set maxHeight API value during initialization  
         $("#resizing").ejResizable({ maxHeight: null });                                
@@ -281,7 +285,7 @@ Sets the max height for resizing
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the maxHeight API, after initialization:
         //Gets the maxHeight value  
@@ -331,7 +335,7 @@ Sets the max width for resizing
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set maxWidth API value during initialization  
         $("#resizing").ejResizable({ maxWidth: null });                         
@@ -339,7 +343,7 @@ Sets the max width for resizing
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the maxWidth API, after initialization:
         //Gets the maxWidth value  
@@ -389,7 +393,7 @@ Sets the min Height for resizing
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set minHeight API value during initialization  
         $("#resizing").ejResizable({ minHeight: null });                                
@@ -397,7 +401,7 @@ Sets the min Height for resizing
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the minHeight API, after initialization:
         //Gets the minHeight value  
@@ -447,7 +451,7 @@ Sets the min Width for resizing
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set minWidth API value during initialization  
         $("#resizing").ejResizable({ minWidth: null });                         
@@ -455,7 +459,7 @@ Sets the min Width for resizing
   {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the minWidth API, after initialization:
         //Gets the minWidth value  
@@ -506,7 +510,7 @@ Used to group sets of resizeable items.
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set scope API value during initialization  
         $("#resizing").ejResizable({ scope: 'default' });                               
@@ -514,7 +518,7 @@ Used to group sets of resizeable items.
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -559,6 +563,11 @@ destroy in the Resizable.
  
 < div  id="resizing" > </div > 
  
+{% endhighlight %}
+
+
+{% highlight js %}
+
 <script>
 // Create resizingObj
 var resizingObj  = $("#resizing").data("ejResizable");
@@ -602,20 +611,20 @@ This event is triggered when the widget destroys.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Resizable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -629,7 +638,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //destroy event for Resizable
 $("#resizing").ejResizable({ 
@@ -666,20 +675,20 @@ This event is triggered when resized.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Resizable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -693,7 +702,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //helper event for Resizable
 $("#resizing").ejResizable({ 
@@ -731,20 +740,20 @@ This event is triggered when the resizing in progress.{% endhighlight %}
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Resizable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -758,12 +767,13 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //resizeStart event for Resizable
 $("#resizing").ejResizable({ 
         resize: function(args) {}
-});      {% endhighlight %}
+});     
+ {% endhighlight %}
 
 
 
@@ -793,20 +803,20 @@ This event is triggered when the resizing is start.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Resizable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -820,7 +830,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //resizeStart event for Resizable
 $("#resizing").ejResizable({ 
@@ -855,20 +865,20 @@ This event is triggered when the resizing is stop.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Resizable.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -882,7 +892,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-{% highlight html %}
+{% highlight js %}
  
 //resizeStop event for Resizable
 $("#resizing").ejResizable({ 
