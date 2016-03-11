@@ -9,7 +9,7 @@ documentation: ug
 
 # Server Configuration
 
-In Spreadsheet control, the import and export to and from excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .Net Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services. 
+In Spreadsheet control, the import and export to and from excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .NET Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services. 
 
 * WebAPI 
 * WCF Service
