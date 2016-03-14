@@ -748,7 +748,7 @@ Enables or disables the ability to edit a row or cell.
 
 <ts name = "ej.TreeGrid.EditMode"/>
 
- specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
+specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and "rowEditing" is for entire row.
 
 <table class="params">
 <thead>
@@ -3414,7 +3414,7 @@ Triggered when toolbar item is clicked in TreeGrid.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
- <td class="description">Arguments when toolbarClick event is triggered.
+<td class="description">Arguments when toolbarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
