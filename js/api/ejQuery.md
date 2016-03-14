@@ -112,8 +112,7 @@ It is used to execute the query on URL Binding
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-dataManager{% endhighlight %}</td>
+<td class="name">dataManager</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">json data or OData</td>
 </tr>
