@@ -5277,7 +5277,7 @@ $("#Grid").ejGrid("collapseGroupDropArea");
 
 
 
-### columns(column details, \[action\])
+### columns(columnDetails, \[action\])
 {:#methods:columns}
 
 Add or remove columns in grid column collections
