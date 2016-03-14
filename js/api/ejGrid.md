@@ -1326,7 +1326,7 @@ Gets or sets a value that indicates whether to enables column template for a par
 <script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
- columns:[{field:"OrderID",headerText:"TemplateColumn",template:"<span>{{:EmployeeID}}</span>"},
+ columns:[{field:"OrderID",headerText:"TemplateColumn",template:"<span>{{"{{"}}:EmployeeID{{}}}}</span>"},
           {field:"EmployeeID",headerText:"Employee",template:true,templateID:"#columnTemplate"} ]
 });
 </script>
