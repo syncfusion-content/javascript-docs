@@ -101,7 +101,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 * You can draw the Thermometer with Label color and set animate property to _True_.  
 
-* Intially set the animate property to _False_ to avoid unwanted script loads.
+* Initially set the animate property to _False_ to avoid unwanted script loads.
 
 
 

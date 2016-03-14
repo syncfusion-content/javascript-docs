@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The rangenavigator can be easily configured to the DOM element, such as div. you can create a rangenavigator with a highly customizable look and feel.
+The range navigator can be easily configured to the DOM element, such as div. You can create a range navigator with a highly customizable look and feel.
 
 
 
@@ -39,13 +39,13 @@ $(element).ejRangeNavigator(options, options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for rangenavigator</td>
+<td class="description last">settings for range navigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for rangenavigator</td>
+<td class="description last">settings for range navigator</td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ options{% endhighlight %}</td>
  
 <script>
 // Create RangeNavigator
-$('#container').RangeNavigator();       
+$('#container').ejRangeNavigator();       
 </script>{% endhighlight %}
 
 
@@ -2777,7 +2777,7 @@ Right</td>
 
 
 
-Specifies the horizontalAlignment of the label in RangeNavigator. See <a href="global.html#HorizontalAlignment">HorizontalAlignment</a>
+Specifies the horizontalAlignment of the label in range navigator. See <a href="global.html#HorizontalAlignment">HorizontalAlignment</a>
 
 
 
@@ -2897,7 +2897,7 @@ Options for customizing the range navigator.
 
 
 
-Specifies the background color of RangeNavigator.
+Specifies the background color of range navigator.
 
 
 
@@ -3186,7 +3186,7 @@ Options for customizing the major grid lines.
 
 
 
-Specifies the color of major grid lines in RangeNavigator.
+Specifies the color of major grid lines in range navigator.
 
 
 
@@ -3306,7 +3306,7 @@ Options for customizing the minor grid lines.
 
 
 
-Specifies the color of minor grid lines in RangeNavigator.
+Specifies the color of minor grid lines in range navigator.
 
 
 
@@ -3332,11 +3332,11 @@ Specifies the color of minor grid lines in RangeNavigator.
 
 {% highlight html %}
  
-//Gets or sets color of majorGridLines in RangeNavigator, after initialization:
-        //Gets the color of majorGridLines in RangeNavigator
+//Gets or sets color of majorGridLines in range navigator, after initialization:
+        //Gets the color of majorGridLines in range navigator
         $("#container").ejRangeNavigator("option", "navigatorStyleSettings.majorGridLineStyle.color");
                       
-        //Sets the color of majorGridLines in RangeNavigator{% endhighlight %}
+        //Sets the color of majorGridLines in range navigator{% endhighlight %}
 
 
 
@@ -4098,7 +4098,7 @@ Specifies the starting range of range navigator.
 
 
 
-selectedData is for getting the data when the "rangeChanged" event trigger from clientside.
+selectedData is for getting the data when the "rangeChanged" event trigger from client side.
 
 
 
@@ -5208,7 +5208,7 @@ Options for customizing the major tick lines in axis.
 
 
 
-Specifies the size of the majorTickLines in RangeNavigator
+Specifies the size of the majorTickLines in range navigator
 
 
 
@@ -5693,7 +5693,7 @@ This property determines the starting position of the zoomed axis. Value must be
 
 
 
-destroy the RangeNavigator widget
+destroy the range navigator widget
 
 
 
@@ -5707,9 +5707,9 @@ destroy the RangeNavigator widget
 <div id="container"></div> 
  
 <script>
-// Destroy RangeNavigator
+// Destroy range navigator
 var obj = $("#container").data("ejRangeNavigator");
-obj.destroy(); // destroy the RangeNavigator
+obj.destroy(); // destroy the range navigator
 </script>{% endhighlight %}
 
 
@@ -5759,7 +5759,7 @@ Fires on load of range navigator.
 <td class="name">{% highlight html %}
 Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
+<td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5771,7 +5771,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the RangeNavigator model</td>
+<td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5826,7 +5826,7 @@ Fires after range navigator is loaded.
 <td class="name">{% highlight html %}
 Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
+<td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5838,7 +5838,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the RangeNavigator model</td>
+<td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5893,7 +5893,7 @@ Fires on changing the range of range navigator.
 <td class="name">{% highlight html %}
 Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
+<td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5905,7 +5905,7 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the RangeNavigator model</td>
+<td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}

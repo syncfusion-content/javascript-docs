@@ -31,7 +31,7 @@ $(element).ejCircularGauge(options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">For seting the Circular gauge</td>
+<td class="description last">For setting the Circular gauge</td>
 </tr>
 </tbody>
 </table>
@@ -110,7 +110,7 @@ Specifies animationSpeed of circular gauge
 
 
 
-Specifies the backgroundcolor of circular gauge.
+Specifies the background color of circular gauge.
 
 
 #### Default Value
@@ -1054,7 +1054,7 @@ CounterClockwise</td>
 
 
 
-Specify representating state of circular gauge
+Specify representing state of circular gauge
 
 
 #### Default Value

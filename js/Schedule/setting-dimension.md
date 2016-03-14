@@ -131,5 +131,5 @@ $(function() {
 
 {% endhighlight %}
 
-N> When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behaviour of the Scheduler when it is resized either in desktop/mobile mode.
+N> When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behavior of the Scheduler when it is resized either in desktop/mobile mode.
 

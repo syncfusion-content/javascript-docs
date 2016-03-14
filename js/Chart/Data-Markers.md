@@ -334,7 +334,7 @@ When the data is provided by using the [`points`](../api/ejchart#members:series-
 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img10.png)
 
-When the data is bound to the series by using the [`dataSource`](../api/ejchart#members:series-datasource) option, you can customize the points in the [`seriesRendering`](../api/ejchart#members:events-seriesrendering) event as illustarted in the following code example,
+When the data is bound to the series by using the [`dataSource`](../api/ejchart#members:series-datasource) option, you can customize the points in the [`seriesRendering`](../api/ejchart#members:events-seriesrendering) event as illustrated in the following code example,
 
 {% highlight js %}
 
@@ -390,7 +390,7 @@ When the data is bound to the series by using the [`dataSource`](../api/ejchart#
 
 ## Connect Line
 
-This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connecterline types can be set as *bezier* or *line* by using the [`type`](../api/ejchart#members:series-marker-datalabel-connectorline-type) option.
+This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connector line types can be set as *bezier* or *line* by using the [`type`](../api/ejchart#members:series-marker-datalabel-connectorline-type) option.
 
  The following code example illustrates this,
 
@@ -421,7 +421,7 @@ This feature is used to connect label and data point by using a line. It can be 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img11.png)
 
 
-## Smartlabels
+## Smart labels
 
 Overlapping of the labels can be avoided by enabling the [`enableSmartLabels`](../api/ejchart#members:series-enablesmartlabels) property. The default value is *true* for *accumulation type series* and *false* for *other series types*.
 

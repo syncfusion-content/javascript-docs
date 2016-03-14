@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The Linera gauge can be easily configured to the DOM element, such as div. you can create a linear gauge with a highly customizable look and feel.
+The Linear gauge can be easily configured to the DOM element, such as div. you can create a linear gauge with a highly customizable look and feel.
 
 
 
@@ -39,7 +39,7 @@ $(element).ejLinearGauge(options)
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">For seting the Linear gauge</td>
+<td class="description last">For setting the Linear gauge</td>
 </tr>
 </tbody>
 </table>
@@ -438,7 +438,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 
-Specifies the frame backgroundimageurl of linear gauge
+Specifies the frame background image url of linear gauge
 
 
 
@@ -8715,7 +8715,7 @@ To get MarkerStyle in number
 <td class="name">{% highlight html %}
 argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">vscaleIndex alue for the Gauge</td>
+<td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10532,7 +10532,7 @@ To set setBarWidth
 <td class="name">{% highlight html %}
 argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">scaleIndexvalue for the Gauge</td>
+<td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -11108,7 +11108,7 @@ argument.scaleIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">pointerIndexvalue for the Gauge</td>
+<td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -12660,7 +12660,7 @@ argument.TickIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Tick Stylefor Gauge</td>
+<td class="description last">Tick Style for Gauge</td>
 </tr>
 </tbody>
 </table>
@@ -12852,7 +12852,7 @@ argument.TickIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Tick YDistance From Scalefor Gauge</td>
+<td class="description last">Tick YDistance From Scale for Gauge</td>
 </tr>
 </tbody>
 </table>
