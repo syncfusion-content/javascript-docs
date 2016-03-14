@@ -15019,7 +15019,7 @@ $("#container").ejChart({
 
 
 
-### primaryXAxis.maximumLabelWidth `number`
+### primaryYAxis.maximumLabelWidth `number`
 {:#members:primaryyaxis-maximumlabelwidth}
 
 
@@ -25858,12 +25858,6 @@ style{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the chart model object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
 symbolShape{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
@@ -26005,7 +25999,7 @@ pointIndex{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
+seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series collection to which the point belongs</td>
 </tr>
