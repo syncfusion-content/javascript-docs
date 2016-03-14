@@ -5292,7 +5292,7 @@ Add or remove columns in grid column collections
 </thead>
 <tbody>
 <tr>
-<td class="name">column details</td>
+<td class="name">columnDetails</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of columns or string of field name to add/remove the column in grid</td>
 </tr>
