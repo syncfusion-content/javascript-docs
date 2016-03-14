@@ -372,5 +372,3 @@ var updateData = {OrderID: 10249, CustomerID: "Test", EmployeeID: 0 };
 ej.DataManager(first).update("OrderID", updateData, first);
 $(function (){});
 </script>{% endhighlight %}
-
-
