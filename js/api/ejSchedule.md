@@ -5895,7 +5895,7 @@ Triggers before the appointment window opens.
         <tr>
             <td class="name">object</td>
             <td class="type">object</td>
-            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
+            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window or edit appointment or edit series option.</td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -5933,34 +5933,14 @@ Triggers before the appointment window opens.
             <td class="description">Returns the name of the event.</td>
         </tr>
         <tr>
-            <td class="name">object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of edit appointmentWindowOpen event while selecting the edit appointment or edit series option.</td>
-        </tr>
-        <tr>
             <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the edit appointment object.</td>
         </tr>
         <tr>
-            <td class="name">cancel</td>
-            <td class="type">boolean</td>
-            <td class="description">Returns the cancel option value.</td>
-        </tr>
-        <tr>
             <td class="name">edit</td>
             <td class="type">boolean</td>
             <td class="description">Returns the edit occurrence option value.</td>
-        </tr>
-        <tr>
-            <td class="name">model</td>
-            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
-            <td class="description">Returns the Schedule model.</td>
-        </tr>
-        <tr>
-            <td class="name">type</td>
-            <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
         </tr>
     </tbody>
 </table>
