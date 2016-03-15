@@ -13,7 +13,7 @@ Diagram's `scrollSettings` enables you to read the current scroll status, view p
 
 ## Get current scroll status
 
-Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of propeties. To explore those properties, see [Scroll Settings](/js/api/ejDiagram#members:scrollsettings "Scroll Settings")
+Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/js/api/ejDiagram#members:scrollsettings "Scroll Settings")
 
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `horizontalOffset` and `verticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
