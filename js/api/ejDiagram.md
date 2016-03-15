@@ -1670,7 +1670,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.sourcePoint.x `Number`
 {:#members:connectors-sourcepoint-x}
 
-Defines the x-coordinates of the point of element
+Defines the x-coordinate of a position
 
 #### Default Value:
 
@@ -1690,7 +1690,7 @@ var point = {x: 10};
 ### connectors.sourcePoint.y `Number`
 {:#members:connectors-sourcepoint-y}
 
-Defines the y-coordinates of the point of element
+Defines the y-coordinate of a position
 
 #### Default Value:
 
