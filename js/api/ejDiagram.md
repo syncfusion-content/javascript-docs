@@ -1216,6 +1216,8 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point `object`
 {:#members:connectors-segments-point}
 
+<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+
 Describes the end point of bezier/straight segment
 
 #### Default Value:
@@ -1239,6 +1241,8 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point1 `object`
 {:#members:connectors-segments-point1}
 
+<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+
 Defines the first control point of the bezier segment
 
 #### Default Value:
@@ -1260,6 +1264,8 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 ### connectors.segments.point2 `object`
 {:#members:connectors-segments-point2}
+
+<ts ref="ej.Diagram.Connectors.SourcePoint"/>
 
 Defines the second control point of bezier segment
 
@@ -1661,6 +1667,46 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
+### connectors.sourcePoint.x `Number`
+{:#members:connectors-sourcepoint-x}
+
+Defines the x-coordinate of a position
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var point = {x: 10};
+</script>
+
+{% endhighlight %}
+
+### connectors.sourcePoint.y `Number`
+{:#members:connectors-sourcepoint-y}
+
+Defines the y-coordinate of a position
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var point = {y: 10};
+</script>
+
+{% endhighlight %}
+
 ### connectors.sourcePort `String`
 {:#members:connectors-sourceport}
 
@@ -1929,6 +1975,8 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 ### connectors.targetPoint `object`
 {:#members:connectors-targetpoint}
+
+<ts ref = "ej.Diagram.Connectors.SourcePoint"/>
 
 Describes the end point of the connector
 
