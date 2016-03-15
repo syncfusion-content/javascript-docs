@@ -1166,22 +1166,39 @@ url</td><td>
 string</td><td>
 URL of the content.</td></tr>
 <tr>
-<td>
-data.responseText</td><td>
-string</td><td>
-Error page content</td></tr>
+<td class="name">data</td>
+<td class="type"><ts ref="ej.Dialog.Model"/><span class="param-type">Object</span></td>
+<td class="description last">
+<table class="params">
+<thead>
 <tr>
-<td>
-data.status</td><td>
-integer</td><td>
-Error code</td></tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
-<td>
-data.statusText</td><td>
-string</td><td>
-The corresponding error description.</td></tr>
+<td class="name">responseText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Error page content.</td>
+</tr>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Error code.</td>
+</tr>
+<tr>
+<td class="name">statusText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">The corresponding error description.</td>
+</tr>
+</tbody>
 </table>
-
+</td>
+</td>
+</tr>
+</table>
 
 Example
 {:.example}
