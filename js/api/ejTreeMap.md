@@ -119,7 +119,7 @@ Specifies the border thickness of the treemap
 {% endhighlight %}
 
 
-### color `string`
+### uniColorMapping.color `string`
 {:#members:color}
 
 Specifies the uniform color mapping of the treemap
@@ -153,7 +153,7 @@ Specifies the uniform color mapping of the treemap
 {% endhighlight %}
 
 
-### color `string`
+### desaturationColorMapping.color `string`
 {:#members:color}
 
 Specifies the color for desaturationColorMapping
@@ -1356,40 +1356,6 @@ Specifies the rangeMaximum value for desaturation color mapping
 {% endhighlight %}
 
 
-### rangeMaximum `number`
-{:#members:rangemaximum}
-
-Specifies the rangeMaximum value for desaturation color mapping
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
- 
-//To set rangeMaximum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the rangeMaximum API, after initialization:
-   
-   //Gets the rangeMaximum value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
- 
-   //Sets the rangeMaximum value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
-
-{% endhighlight %}
-
-
 ### rangeMinimum `number`
 {:#members:rangeminimum}
 
@@ -1407,40 +1373,6 @@ Specifies the rangeMinimum value for desaturation color mapping
   $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
 
 {% endhighlight %}
-
-{% highlight html %}
- 
-//Get or set the rangeMinimum API, after initialization:
-   
-   //Gets the rangeMinimum value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
- 
-   //Sets the rangeMinimum value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
-
-{% endhighlight %}
-
-
-### rangeMinimum `number`
-{:#members:rangeminimum}
-
-Specifies the rangeMinimum value for desaturation color mapping
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
- 
-//To set rangeMinimum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
-
-{% endhighlight %}
-
 
 {% highlight html %}
  
