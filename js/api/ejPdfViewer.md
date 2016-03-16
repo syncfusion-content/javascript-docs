@@ -92,8 +92,10 @@ Shows or hides the tooltip of the toolbar items.
 {% endhighlight %}
 {% endtabs %}
 
-### toolbarSettings.toolbarItem `enum`
+### toolbarItems `enum`
 {:#members:toolbarsettings-toolbaritem}
+
+<ts name="ej.PdfViewer.ToolbarItems"/>
 
 Shows or hides the grouped items in the toolbar with the help of enum ej.PdfViewer.ToolbarItems
 
@@ -206,6 +208,8 @@ var currentZoom = pdfviewerObj.zoomPercentage;
 
 ### pdfService `enum`
 {:#members:pdfservice}
+
+<ts name="ej.PdfViewer.PdfService"/>
 
 Specifies the location of the supporting PDF service
 
