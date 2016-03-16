@@ -125,22 +125,22 @@ Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
 <tr>
 <td class="name">
 Left</td>
-<td class="description">To set Left arrowPosition of the splitbutton</td>
+<td class="description">To set Left arrowPosition of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Right</td>
-<td class="description">To set Right arrowPosition of the splitbutton</td>
+<td class="description">To set Right arrowPosition of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Top</td>
-<td class="description">To set Top arrowPosition of the splitbutton</td>
+<td class="description">To set Top arrowPosition of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Bottom</td>
-<td class="description">To set Bottom arrowPosition of the splitbutton</td>
+<td class="description">To set Bottom arrowPosition of the split button</td>
 </tr>
 </tbody>
 </table>
@@ -669,22 +669,22 @@ Specifies the imagePosition of the Split Button.See imagePositions
 <tr>
 <td class="name">
 ImageRight</td>
-<td class="description">To specify Left position of the splitbutton</td>
+<td class="description">To specify Left position of the split button</td>
 </tr>
 <tr>
 <td class="name">
 ImageLeft</td>
-<td class="description">To specify Right position of the splitbutton</td>
+<td class="description">To specify Right position of the split button</td>
 </tr>
 <tr>
 <td class="name">
 ImageTop</td>
-<td class="description">To specify Top position of the splitbutton</td>
+<td class="description">To specify Top position of the split button</td>
 </tr>
 <tr>
 <td class="name">
 ImageBottom</td>
-<td class="description">To specify Bottom position of the splitbutton</td>
+<td class="description">To specify Bottom position of the split button</td>
 </tr>
 </tbody>
 </table>
@@ -870,27 +870,27 @@ Specifies the size of the Button. See ButtonSize
 <tr>
 <td class="name">
 Mini</td>
-<td class="description">To specify the minimum size of the splitbutton</td>
+<td class="description">To specify the minimum size of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Small</td>
-<td class="description">To specify the small size of the splitbutton</td>
+<td class="description">To specify the small size of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Medium</td>
-<td class="description">To specify the medium size of the splitbutton</td>
+<td class="description">To specify the medium size of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Large</td>
-<td class="description">To specify the large size of the splitbutton</td>
+<td class="description">To specify the large size of the split button</td>
 </tr>
 <tr>
 <td class="name">
 Normal</td>
-<td class="description">To specify the normal size of the splitbutton</td>
+<td class="description">To specify the normal size of the split button</td>
 </tr>
 </tbody>
 </table>

@@ -69,7 +69,7 @@ $("#radiobtn1").ejRadioButton();
 
 
 
-Specifies the check atribute of the Radio Button.
+Specifies the check attribute of the Radio Button.
 
 
 #### Default Value
@@ -184,7 +184,7 @@ Specifies the RadioButton control state.
 
 
 
-Specifies the enablePersistence property for RadioButton while initialization. The enablePersistence API save current model value to browser cookies for state maintains. While refreshing the radiobutton control page the model value apply from browser cookies.
+Specifies the enablePersistence property for RadioButton while initialization. The enablePersistence API save current model value to browser cookies for state maintains. While refreshing the radio button control page the model value apply from browser cookies.
 
 
 #### Default Value
@@ -335,7 +335,7 @@ Specifies the id attribute for the Radio Button while initialization.
 
 
 
-Specify the idprefix value to be added before the current id of the RadioButton.
+Specify the idPrefix value to be added before the current id of the RadioButton.
 
 
 #### Default Value
@@ -409,12 +409,12 @@ Specifies the size of the RadioButton.
 <tr>
 <td class="name">
 Small</td>
-<td class="description">Shows small size radiobutton</td>
+<td class="description">Shows small size radio button</td>
 </tr>
 <tr>
 <td class="name">
 Medium</td>
-<td class="description">Shows medium size radiobutton</td>
+<td class="description">Shows medium size radio button</td>
 </tr>
 </tbody>
 </table>
@@ -566,7 +566,7 @@ $("#radiobtn1").ejRadioButton ();
 
 
 
-Specifies the value atribute of the Radio Button.
+Specifies the value attribute of the Radio Button.
 
 
 #### Default Value

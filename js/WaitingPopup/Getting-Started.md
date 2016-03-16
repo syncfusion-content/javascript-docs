@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 This section explains briefly about how to create a **WaitingPopup** in your application with **JavaScript**.
-**Essential JavaScript WaitingPopup** provides support to display a **WaitingPopup** within your webpage. From the following guidelines, you can learn how to create a **WaitingPopup** in a real-time login page authentication scenario. 
+**Essential JavaScript WaitingPopup** provides support to display a **WaitingPopup** within your web page. From the following guidelines, you can learn how to create a **WaitingPopup** in a real-time login page authentication scenario. 
 
 The following screenshot illustrates the functionality of a **WaitingPopup** with login page scenario.
 

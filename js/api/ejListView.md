@@ -141,7 +141,7 @@ $("#lb").ejListView ("option", "cssClass", "customclass");
 
 
 
-Contains the list of data for generating the listview items.
+Contains the list of data for generating the ListView items.
 
 
 #### Default Value
@@ -1254,7 +1254,7 @@ To add item in the given index.
 <td class="name">
 item</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Specifies the item to be added in listview</td>
+<td class="description">Specifies the item to be added in ListView</td>
 </tr>
 <tr>
 <td class="name">
@@ -1303,7 +1303,7 @@ $("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'></li>"
 
 To check all the items.
 
-N> Need to enable *enableCheckMark* property to check all items in the listview control.
+N> Need to enable *enableCheckMark* property to check all items in the ListView control.
 
 
 #### Example
@@ -1345,7 +1345,7 @@ $("#lb").ejListView("checkAllItem");
 
 To check item in the given index.
 
-N> Need to enable *enableCheckMark* property to check item in the listview control.
+N> Need to enable *enableCheckMark* property to check item in the ListView control.
 
 
 <table class="params">
@@ -2594,7 +2594,7 @@ Event triggers before the ajax request happens.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -2608,7 +2608,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2683,7 +2683,7 @@ Event triggers after the ajax content loaded completely.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -2697,7 +2697,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2766,7 +2766,7 @@ Event triggers when the ajax request failed.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -2780,7 +2780,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2810,7 +2810,7 @@ textStatus</td>
 <td class="name">
 item</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the curent list item.</td>
+<td class="description">returns the current list item.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2879,7 +2879,7 @@ Event triggers after the ajax content loaded successfully.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -2893,7 +2893,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2917,7 +2917,7 @@ content</td>
 <td class="name">
 item</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the curent list item.</td>
+<td class="description">returns the current list item.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2992,7 +2992,7 @@ Event triggers before the items loaded.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -3006,7 +3006,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3082,7 +3082,7 @@ Event triggers after the items loaded.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -3096,7 +3096,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3172,7 +3172,7 @@ Event triggers when mouse down happens on the item.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -3186,7 +3186,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3304,7 +3304,7 @@ Event triggers when mouse up happens on the item.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from listview.
+<td class="description">Event parameters from ListView.
 <table class="params">
 <thead>
 <tr>
@@ -3318,7 +3318,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be cancelled; otherwise, false.</td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">

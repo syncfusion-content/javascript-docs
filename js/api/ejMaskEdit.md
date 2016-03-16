@@ -84,7 +84,7 @@ Specify the cssClass to achieve custom theme.
 {:#members:customcharacter}
 
 
-Specify the custom character allowed to entered in maskedit textbox control.
+Specify the custom character allowed to entered in mask edit textbox control.
 
 
 #### Default Value
@@ -112,7 +112,7 @@ Specify the custom character allowed to entered in maskedit textbox control.
 {:#members:enabled}
 
 
-Specify the state of the maskedit textbox control.
+Specify the state of the mask edit textbox control.
 
 #### Default Value
 
@@ -139,7 +139,7 @@ Specify the state of the maskedit textbox control.
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
-Specify the enablePersistence to maskedit textbox to save current model value to browser cookies for state maintains.
+Specify the enablePersistence to mask edit textbox to save current model value to browser cookies for state maintains.
 
 #### Example
 
@@ -158,7 +158,7 @@ Specify the enablePersistence to maskedit textbox to save current model value to
 ### height `string`
 {:#members:height}
 
-Specifies the height for the maskedit textbox control.
+Specifies the height for the mask edit textbox control.
 
 
 #### Default Value
@@ -211,7 +211,7 @@ Specifies whether hide the prompt characters with spaces on blur. Prompt chars w
 ### htmlAttributes `object`
 {:#members:htmlattributes}
 
-Specifies the list of html attributes to be added to maskedit textbox.
+Specifies the list of html attributes to be added to mask edit textbox.
 
 #### Default Value
 
@@ -238,7 +238,7 @@ Specifies the list of html attributes to be added to maskedit textbox.
 <ts name="ej.InputMode" />
 
 
-Specify the inputMode for maskedit textbox control. See <a href="global.html#InputMode">InputMode</a>
+Specify the inputMode for mask edit textbox control. See <a href="global.html#InputMode">InputMode</a>
 
 
 <table class="props">
@@ -323,7 +323,7 @@ Specifies the input mask.
 ### name `string`
 {:#members:name}
 
-Specifies the name attribute value for the maskedit textbox.
+Specifies the name attribute value for the mask edit textbox.
 
 #### Default Value
 
@@ -346,7 +346,7 @@ Specifies the name attribute value for the maskedit textbox.
 ### readOnly `boolean`
 {:#members:readonly}
 
-Toggles the readonly state of the maskedit textbox. When the maskedit textbox is readonly, it doesn't allow your input.
+Toggles the readonly state of the mask edit textbox. When the mask edit textbox is readonly, it doesn't allow your input.
 
 #### Default Value
 
@@ -373,7 +373,7 @@ Toggles the readonly state of the maskedit textbox. When the maskedit textbox is
 {:#members:showerror}
 
 
-Specifies whether the error will show until correct value entered in the maskedit textbox control.
+Specifies whether the error will show until correct value entered in the mask edit textbox control.
 
 #### Default Value
 
@@ -400,7 +400,7 @@ Specifies whether the error will show until correct value entered in the maskedi
 ### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
-Maskedit input is displayed in rounded corner style when this property is set to true.
+MaskEdit input is displayed in rounded corner style when this property is set to true.
 
 
 #### Default Value
@@ -431,7 +431,7 @@ Maskedit input is displayed in rounded corner style when this property is set to
 <ts name="ej.TextAlign" />
 
 
-Specify the text alignment for maskedit textbox control.See <a href="global.html#TextAlign">TextAlign</a>
+Specify the text alignment for mask edit textbox control.See <a href="global.html#TextAlign">TextAlign</a>
 
 <table class="props">
 <thead>
@@ -500,7 +500,7 @@ Right</td>
 {:#members:validationmessage}
 
 
-Sets the jQuery validation error message in maskedit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
+Sets the jQuery validation error message in mask edit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
 
 
 #### Default Value
@@ -529,7 +529,7 @@ Sets the jQuery validation error message in maskedit. This property works when t
 {:#members:validationrules}
 
 
-Sets the jQuery validation rules to the Maskedit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
+Sets the jQuery validation rules to the MaskEdit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
 
 
 #### Default Value
@@ -558,7 +558,7 @@ Sets the jQuery validation rules to the Maskedit. This property works when the w
 {:#members:value}
 
 
-Specifies the value for the maskedit textbox control.
+Specifies the value for the mask edit textbox control.
 
 #### Default Value
 
@@ -613,7 +613,7 @@ Specifies the water mark text to be displayed in input text.
 {:#members:width}
 
 
-Specifies the width for the maskedit textbox control.
+Specifies the width for the mask edit textbox control.
 
 
 #### Default Value
@@ -645,7 +645,7 @@ Specifies the width for the maskedit textbox control.
 {:#methods:clear}
 
 
-To clear the text in maskedit textbox control.
+To clear the text in mask edit textbox control.
 
 
 #### Example
@@ -661,7 +661,7 @@ To clear the text in maskedit textbox control.
         
         // Create MaskEdit control object
         var maskObj = $("#mask").data("ejMaskEdit");
-        maskObj.clear(); // clear the maskedit control
+        maskObj.clear(); // clear the mask edit control
     </script>
                  
 {% endhighlight %}
@@ -684,7 +684,7 @@ To clear the text in maskedit textbox control.
 {:#methods:disable}
 
 
-To disable the maskedit textbox control.
+To disable the mask edit textbox control.
 
 
 #### Example
@@ -701,7 +701,7 @@ To disable the maskedit textbox control.
 
         // Create MaskEdit control object
         var maskObj = $("#mask").data("ejMaskEdit");
-        maskObj.disable(); // disable the maskedit control
+        maskObj.disable(); // disable the mask edit control
     </script>
                  
                  
@@ -725,7 +725,7 @@ To disable the maskedit textbox control.
 {:#methods:enable}
 
 
-To enable the maskedit textbox control.
+To enable the mask edit textbox control.
 
 
 #### Example
@@ -741,7 +741,7 @@ To enable the maskedit textbox control.
 
         // Create MaskEdit control object
         var maskObj = $("#mask").data("ejMaskEdit");
-        maskObj.enable(); // enable the maskedit control
+        maskObj.enable(); // enable the mask edit control
     </script>
                 
 {% endhighlight %}
@@ -753,7 +753,7 @@ To enable the maskedit textbox control.
 
     <script>
         $("#mask").ejMaskEdit({ maskFormat: "99-99-9999", value: "12345678" });
-        // enable the maskedit control 
+        // enable the mask edit control 
         $("#mask").ejMaskEdit("enable");
     </script>
 
@@ -764,7 +764,7 @@ To enable the maskedit textbox control.
 {:#methods:get_strippedvalue}
 
 
-To obtained the pure value of the textvalue, removes all the symbols in maskedit textbox control.
+To obtained the pure value of the text value, removes all the symbols in mask edit textbox control.
 
 
 #### Returns:
@@ -786,7 +786,7 @@ string
 
         // Create MaskEdit control object
         var maskObj = $("#mask").data("ejMaskEdit");
-        // Return the pure value of the textvalue, removes all the symbols
+        // Return the pure value of the text value, removes all the symbols
         alert(maskObj.get_StrippedValue()); 
     </script>
 
@@ -799,7 +799,7 @@ string
 
     <script>
         $("#mask").ejMaskEdit({ maskFormat: "99-99-9999", value: "12345678" });
-        // Return the pure value of the textvalue, removes all the symbols
+        // Return the pure value of the text value, removes all the symbols
         alert($("#mask").ejMaskEdit("get_StrippedValue"));
     </script>
 
@@ -811,7 +811,7 @@ string
 
 
 
-To obtained the textbox value as such that, Just replace all '_' to ' '(space) in maskedit textbox control.
+To obtained the textbox value as such that, Just replace all '_' to ' '(space) in mask edit textbox control.
 
 
 #### Returns:
@@ -875,7 +875,7 @@ Fires when value changed in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -889,13 +889,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -907,13 +907,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1071,7 +1071,7 @@ Fires when focused in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1085,13 +1085,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1103,13 +1103,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1157,7 +1157,7 @@ Fires when focused out in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1171,13 +1171,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1189,13 +1189,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1243,7 +1243,7 @@ Fires when keydown in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1257,13 +1257,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1275,13 +1275,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1314,7 +1314,7 @@ unmaskedValue</td>
 {:#events:keypress}
 
 
-Fires when keypress in mask edit textbox control.
+Fires when key press in mask edit textbox control.
 
 <table class="params">
 <thead>
@@ -1329,7 +1329,7 @@ Fires when keypress in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1343,13 +1343,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1361,13 +1361,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1414,7 +1414,7 @@ Fires when keyup in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1428,13 +1428,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1446,13 +1446,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1501,7 +1501,7 @@ Fires when mouse out in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1515,13 +1515,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1533,13 +1533,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1586,7 +1586,7 @@ Fires when mouse over in mask edit textbox control.
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from maskedit textbox control
+<td class="description">Event parameters from mask edit textbox control
 <table class="params">
 <thead>
 <tr>
@@ -1600,13 +1600,13 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.MaskEdit.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the maskedit model</td>
+<td class="description">returns the mask edit model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1618,13 +1618,13 @@ type</td>
 <td class="name">
 value</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the maskedit value</td>
+<td class="description">returns the mask edit value</td>
 </tr>
 <tr>
 <td class="name">
 unmaskedValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in mask edit textbox control.</td>
 </tr>
 </tbody>
 </table>

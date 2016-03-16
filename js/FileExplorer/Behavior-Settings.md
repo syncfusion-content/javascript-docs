@@ -13,7 +13,7 @@ Here are the some properties to customize the behavior of FileExplorer.
 
 ## File type restriction
 
-FileExplorer control showcase all the files from the filesystem, here you can customize the filetypes that what you want to show by using [fileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes) property. It filter the files based on the files extensions.
+FileExplorer control showcase all the files from the filesystem, here you can customize the file types that what you want to show by using [fileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes) property. It filter the files based on the files extensions.
 
 By default it having the value “*.*”, so it allows all the file types. In case of image browser you can allow the image files only by setting "*.png, *.gif, *.jpg, *.jpeg", so it doesn’t allow the other type of files.
 
@@ -39,9 +39,9 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
 {% endhighlight %}
 
-## Customize the Ajax request settings
+## Customize the AJAX request settings
 
-As you already know FileExplorer is a client – server based control and each action performed in the client sends an Ajax request to the server to perform the server side operations. While the Ajax request, the Ajax configurations can be customized through [ajaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings) property.
+As you already know FileExplorer is a client – server based control and each action performed in the client sends an Ajax request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through [ajaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings) property.
 
 You can see the following requests passed during the **client – server actions**:
 
@@ -63,9 +63,9 @@ The following is the syntax for ajaxSettings property.
                 
 {% endhighlight %}
 
-The actions “read, createFolder, remove, rename, paste, getDetails” are supported all the jQuery Ajax configurations. The remaining actions “upload, download, getImage” are accepted the url only.
+The actions “read, createFolder, remove, rename, paste, getDetails” are supported all the jQuery AJAX configurations. The remaining actions “upload, download, getImage” are accepted the url only.
 
-If you want to customize read action alone, the Ajax **url** and **dataType** are changed for the read action, refer the below code example.
+If you want to customize read action alone, the AJAX **url** and **dataType** are changed for the read action, refer the below code example.
 
 {% highlight js %}
 

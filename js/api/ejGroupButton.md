@@ -228,12 +228,12 @@ Sets the GroupButton behavior to works as Checkbox mode/ radio button mode based
 
 <td class="name">
 CheckBox</td>
-<td class="description">Sets the Groupbutton to work as checkbox mode </td>
+<td class="description">Sets the GroupButton to work as checkbox mode </td>
 </tr>
 <tr>
 <td class="name">
 RadioButton</td>
-<td class="description">Sets the Radiobutton to work as radio button mode  </td>
+<td class="description">Sets the RadioButton to work as radio button mode  </td>
 </tr>
 
 </tbody>
@@ -1338,7 +1338,7 @@ Shows the GroupButton control, if its hide.
 
 {% endhighlight %}
 
-### showitem(element)
+### showItem(element)
 {:#methods:showitem}
 
 
@@ -1397,7 +1397,7 @@ Specific button element</td></tr>
 
 
 
-Triggered before any button element in the GroupButtton get selected.
+Triggered before any button element in the GroupButton get selected.
 
 <table class="params">
         <thead>
@@ -1695,7 +1695,7 @@ type</td>
 {% endhighlight %}
 
 
-### keypress
+### keyPress
 {:#events:keypress}
 
 

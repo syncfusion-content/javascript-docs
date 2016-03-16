@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a **DateTimePicker** in your application with **JavaScript**.
 
-**Essential JavaScript DateTimePicker** provides support to display a calendar within a webpage and allows you to pick a date and time from the calendar. In this example, you can learn how to customize **DateTimePicker** in a real-time application for an appointment and to choose current time for one week. 
+**Essential JavaScript DateTimePicker** provides support to display a calendar within a web page and allows you to pick a date and time from the calendar. In this example, you can learn how to customize **DateTimePicker** in a real-time application for an appointment and to choose current time for one week. 
 
 The following screenshot illustrates the functionality of a **DateTimePicker** with date range of maximum one week.
 

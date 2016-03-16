@@ -6,9 +6,9 @@ platform: js
 control: DatePicker
 documentation: ug
 ---
-# Behaviour Settings
+# Behavior Settings
 
-DatePicker has some default behaviour settings which helps you to perform more operation by inbuilt.
+DatePicker has some default behavior settings which helps you to perform more operation by inbuilt.
 
 ## Selected Date
 

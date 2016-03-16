@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **TimePicker** in your application with **JavaScript.** The **Essential JavaScript** **TimePicker** provides support to display a **TimePicker** in your webpage and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
+This section explains briefly about how to create a **TimePicker** in your application with **JavaScript.** The **Essential JavaScript** **TimePicker** provides support to display a **TimePicker** in your web page and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
@@ -209,11 +209,11 @@ Execute the above code to achieve the desired result. You can select the date an
 
 ![](/js/TimePicker/Getting-Started_images/Getting-Started_img4.png) 
 
-## Display the Acknowledgement Message
+## Display the Acknowledgment Message
 
-The **acknowledgement message** is displayed when you click the **Book** button.
+The **acknowledgment message** is displayed when you click the **Book** button.
 
-The following code example shows how to display the **acknowledgement message**.
+The following code example shows how to display the **acknowledgment message**.
 
 {% highlight js %}
 
@@ -247,7 +247,7 @@ The following code example shows how to display the **acknowledgement message**.
 
 {% endhighlight %}
 
-The following screenshot displays the **acknowledgement message**.
+The following screenshot displays the **acknowledgment message**.
 
 ![](/js/TimePicker/Getting-Started_images/Getting-Started_img5.png) 
 

@@ -278,7 +278,7 @@ The following screenshot is the output.
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 
-In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learnt the appearance customization etc.  
+In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learn the appearance customization etc.  
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items. You can simply customize the **Menu** in an efficient manner.
 

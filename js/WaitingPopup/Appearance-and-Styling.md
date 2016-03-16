@@ -125,7 +125,7 @@ Initialize the **WaitingPopup** with custom template using the following code ex
  In **CSS**, you can configure the custom styles for **WaitingPopup**.
 
 
-N> Images for this sample are available ‘installed sample location /images/waitingpopup’ and we need to define images in mentioned CSS. Henceforth the images will display.
+N> Images for this sample are available ‘installed sample location /images/waitingPopup’ and we need to define images in mentioned CSS. Henceforth the images will display.
 
 
 
@@ -145,7 +145,7 @@ N> Images for this sample are available ‘installed sample location /images/wai
     height: 76px;
    }
    .logo {
-       background-image: url("../images/waitingpopup/js_logo.png");
+       background-image: url("../images/waitingPopup/js_logo.png");
        float: left;
        height: 100%;
        width: 77px;
@@ -161,7 +161,7 @@ N> Images for this sample are available ‘installed sample location /images/wai
        margin: 0;
    }
    .loader {
-       background: url("../images/waitingpopup/load_light.gif") no-repeat scroll -5px 18px transparent;
+       background: url("../images/waitingPopup/load_light.gif") no-repeat scroll -5px 18px transparent;
        height: 40px;
        width: 100%;
    }

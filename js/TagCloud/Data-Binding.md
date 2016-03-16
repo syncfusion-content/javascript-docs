@@ -35,7 +35,7 @@ It maps to the frequency field name from the data table or **JSON** data that is
 
 ## Local Binding
 
-Local databinding allows you to map **JSON** data to **TagCloud**, that the corresponding text, url, and frequency fields are assigned with a local **JSON** data.
+Local data binding allows you to map **JSON** data to **TagCloud**, that the corresponding text, url, and frequency fields are assigned with a local **JSON** data.
 
 ### Defining the Local data for TagCloud
 
@@ -252,7 +252,7 @@ Execute the above code to render the following output.
 
 ## Angular binding
 
-**TagCloud** widget is availed with two types of angular JS support namely, 
+**TagCloud** widget is availed with two types of angularJS support namely, 
 
 * One way binding
 * Two way binding 
@@ -263,11 +263,11 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 Apply the plugin and property assigning to the **TagCloud** widget element through the directive that starts with a letter **“e-“.**
 
-To know more detail about the Angular binding, refer the following link location,
+To know more detail about the AngularJS binding, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts you the way to bind data to the **TagCloud** widget using angular support,
+The following example depicts you the way to bind data to the **TagCloud** widget using angularJS support,
 
 {% highlight html %}
 
@@ -322,7 +322,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 
 
-The following screenshot illustrates a **TagCloud** control using Angular databinding,
+The following screenshot illustrates a **TagCloud** control using AngularJS data binding,
 
 ![](/js/TagCloud/Data-Binding_images/Data-Binding_img4.png)
 
