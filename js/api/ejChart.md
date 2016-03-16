@@ -3045,7 +3045,7 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 {:#members:commonseriesoptions-marker-datalabel-horizontaltextalignment}
 
 
-<ts name = "ej.datavisualization.Chart.HorizontalAlignment"/>
+<ts name = "ej.datavisualization.Chart.HorizontalTextAlignment"/>
 
 
 Horizontal alignment of the data label. 

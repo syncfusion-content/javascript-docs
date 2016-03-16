@@ -693,7 +693,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 ### outerCustomLabelPosition `enum`
 {:#members:outercustomlabelposition}
 
-<ts name = "ej.datavisualization.CircularGauge.OuterCustomLabelPosition"/>
+<ts name = "ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
 
 Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
@@ -1558,7 +1558,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 ### scales.indicators.type `enum`
 {:#members:scales.indicators.type}
 
-<ts name = "ej.datavisualization.CircularGauge.IndicatorType"/>
+<ts name = "ej.datavisualization.CircularGauge.IndicatorTypes"/>
 
 Specify indicator style of circular gauge. See <a href="global.html#IndicatorType">IndicatorType</a>
 
@@ -3163,7 +3163,7 @@ Specify opacity value for pointer of circular gauge
 {:#members:scales.pointers.placement}
 
 
-<ts ref = "ej.datavisualization.CircularGauge.LabelPlacement"/>
+<ts ref = "ej.datavisualization.CircularGauge.Placement"/>
 
 Specify pointer Placement value of circular gauge. See <a href="global.html#PointerPlacement">PointerPlacement</a>
 
