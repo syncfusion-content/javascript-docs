@@ -85,7 +85,7 @@ You can also customize the format. Refer the following list to create your custo
 * tt - The AM/PM designator.
 
 
-In the following example, set **dateTimeFormat** to **fulldatetime** format.
+In the following example, set **dateTimeFormat** to **full datetime** format.
 
 Add the following code in your **HTML** page.
 

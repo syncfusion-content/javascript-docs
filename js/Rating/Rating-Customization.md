@@ -47,7 +47,7 @@ The following screenshot illustrates the **Rating** with custom defined value.
 
 ### Min Value
 
-**EJ Rating** control provides support for setting **minimum** **value**. This is achieved by adding minValue property. When the minValue property is set, the Ratin value starts with **minValue**+1.
+**EJ Rating** control provides support for setting **minimum** **value**. This is achieved by adding minValue property. When the minValue property is set, the Rating value starts with **minValue**+1.
 
 The following code example is used to render the **Rating** control with **minimum** **rating**.
 

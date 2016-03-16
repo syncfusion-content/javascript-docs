@@ -260,12 +260,12 @@ To know more detail about the Angular binding, refer the following link location
 <http://help.syncfusion.com/js/angularjs>
 
 
-Add the following script files as given in the below example to access knockout binding. It contains JS library for angular binding.
+Add the following script files as given in the below example to access knockoutJS binding. It contains JS library for angular binding.
 
 * Angular.min.js
 * ej.widget.angular.min.js
 
-The following code example depicts you the way to bind data to the **Toolbar** widget through angular support,
+The following code example depicts you the way to bind data to the **Toolbar** widget through angularJS support,
 
 {% highlight html %}
     

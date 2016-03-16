@@ -511,7 +511,7 @@ local storage.
 
 
 
-Specify the Right to Left direction of the Togglebutton.
+Specify the Right to Left direction of the ToggleButton.
 
 
 #### Default Value
@@ -640,22 +640,22 @@ N>  This image position is applicable only with the contentType property value s
 <tr>
 <td class="name">
 ImageRight</td>
-<td class="description">To specify Left position of the togglebutton</td>
+<td class="description">To specify Left position of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 ImageLeft</td>
-<td class="description">To specify Right position of the togglebutton</td>
+<td class="description">To specify Right position of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 ImageTop</td>
-<td class="description">To specify Top position of the togglebutton</td>
+<td class="description">To specify Top position of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 ImageBottom</td>
-<td class="description">To specify Bottom position of the togglebutton</td>
+<td class="description">To specify Bottom position of the toggle button</td>
 </tr>
 </tbody>
 </table>
@@ -789,27 +789,27 @@ Specifies the size of the ToggleButton. See ButtonSize as below
 <tr>
 <td class="name">
 Mini</td>
-<td class="description">To specify the minimum size of the togglebutton</td>
+<td class="description">To specify the minimum size of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 Small</td>
-<td class="description">To specify the small size of the togglebutton</td>
+<td class="description">To specify the small size of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 Medium</td>
-<td class="description">To specify the medium size of the togglebutton</td>
+<td class="description">To specify the medium size of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 Large</td>
-<td class="description">To specify the large size of the togglebutton</td>
+<td class="description">To specify the large size of the toggle button</td>
 </tr>
 <tr>
 <td class="name">
 Normal</td>
-<td class="description">To specify the normal size of the togglebutton</td>
+<td class="description">To specify the normal size of the toggle button</td>
 </tr>
 </tbody>
 </table>
@@ -1145,7 +1145,7 @@ Fires when ToggleButton control state is changed successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1213,7 +1213,7 @@ Fires when ToggleButton control is clicked successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1287,7 +1287,7 @@ Fires when ToggleButton control is created successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1348,7 +1348,7 @@ Fires when ToggleButton control is destroyed successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">

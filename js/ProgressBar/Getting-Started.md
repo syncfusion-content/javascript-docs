@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 This section briefly describes how to create a **ProgressBar** control using **Javascript** and learn its features.
-**Essential JavaScript** **ProgressBar** displays a **ProgressBar** within a webpage that allows you to show the progress of an event. Here, you can learn how to customize the progress and color of the **ProgressBar** in a real-time application to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This helps you to validate the password is typed. 
+**Essential JavaScript** **ProgressBar** displays a **ProgressBar** within a web page that allows you to show the progress of an event. Here, you can learn how to customize the progress and color of the **ProgressBar** in a real-time application to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This helps you to validate the password is typed. 
 
 The following screenshot shows the **ProgressBar.**
 

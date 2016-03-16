@@ -660,7 +660,7 @@ $("#tile").ejTile("option", "height", 300);            {% endhighlight %}
 
 
 
-Specifies Tile imageclass, using this property we can give images for each tile through css classes.
+Specifies Tile imageClass, using this property we can give images for each tile through css classes.
 
 
 
@@ -731,7 +731,7 @@ $("#tile").ejTile("option", "imageClass", "sample");
 
 
 
-Specifies the position of tile image. See imageposition
+Specifies the position of tile image. See imagePosition
 
 
 <table class="params">
@@ -1547,7 +1547,7 @@ $("#tile").ejTile("option", "text", "Settings");            {% endhighlight %}
 
 
 
-Aligns the text of a tile. See textalignment
+Aligns the text of a tile. See textAlignment
 
 
 <table class="params">
@@ -1731,7 +1731,7 @@ $("#tile").ejTile("option", "textPosition", "inner");            {% endhighlight
 
 
 
-Specifies the size of a tile.  See tilesize
+Specifies the size of a tile.  See tileSize
 
 
 <table class="params">
@@ -1959,7 +1959,7 @@ value.updateTemplate("sample2");
 
 
 
-Event triggers when the mousedown happens in the tile
+Event triggers when the mouse down happens in the tile
 
 <table class="params">
 <thead>
@@ -2058,7 +2058,7 @@ mouseDown: function (args) {
 
 
 
-Event triggers when the mouseup happens in the tile
+Event triggers when the mouse up happens in the tile
 
 <table class="params">
 <thead>

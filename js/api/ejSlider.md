@@ -1543,7 +1543,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1650,7 +1650,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1733,7 +1733,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1817,7 +1817,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1918,7 +1918,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2019,7 +2019,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">

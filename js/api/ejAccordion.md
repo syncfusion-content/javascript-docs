@@ -285,7 +285,7 @@ Allows you to set the custom header Icon. It accepts two key values “header”
 
 #### Default Value
 
-* "{ header: "e-collaps", selectedHeader: "e-expand" }"
+* "{ header: "e-collapse", selectedHeader: "e-expand" }"
 
 ### customIcon.header `String`
 {:#members:customicon-header}
@@ -1929,7 +1929,7 @@ accObj.show(); //Calls the show method of Accordion.
 {:#events:activate}
 
 
-Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
 
 <table class="params">
@@ -2285,7 +2285,7 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 <td class="name">
  data </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the succesfull data sent.</td>
+<td class="description">returns the successful data sent.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2413,7 +2413,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 ### beforeInactivate
 {:#events:beforeinactivate}
 
-Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
 <table class="params">
 <thead>
@@ -2622,7 +2622,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 ### inActivate
 {:#events:inactivate}
 
-Triggered after a Accordion item is active or inactive. Argument values are activeindex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
 
 
 <table class="params">

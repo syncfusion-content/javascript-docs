@@ -118,7 +118,7 @@ Initialize the **Textboxes widget** as shown in the following section.
             });
             // simple MaskEdit creation
             $("#mobiNo").ejMaskEdit({
-                watermarkText: "Mobile No" // sets watermark in maskedit
+                watermarkText: "Mobile No" // sets watermark in mask edit
             });
 
             // simple Button creation
@@ -193,7 +193,7 @@ The following screenshot displays the output when the above code is executed.
 
 ## Set the MinValue, MaxValue and value in NumericTextBox
 
-You can set the **“minValue”**,**“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
+You can set the **“minValue”**,**“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **MaskEdit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
 {% highlight js %}
 
@@ -225,8 +225,8 @@ You can set the **“minValue”**,**“maxValue”** and **“value”** in Num
             });
             // simple MaskEdit creation
             $("#mobiNo").ejMaskEdit({
-                watermarkText: "Mobile No", // sets watermark in maskedit
-                maskFormat: "99-999-99999"// sets the mask format in maskedit
+                watermarkText: "Mobile No", // sets watermark in mask edit
+                maskFormat: "99-999-99999"// sets the mask format in mask edit
             });
             // simple Button creation
             $("#cbill").ejButton({
@@ -282,7 +282,7 @@ You can set the “**strict mode” option** to restrict entering values defined
             });
             // simple MaskEdit creation
             $("#mobiNo").ejMaskEdit({
-                watermarkText: "Mobile No", // sets watermark in Maskedit
+                watermarkText: "Mobile No", // sets watermark in MaskEdit
                 maskFormat: "99-999-99999"// sets the mask format
             });
             // Simple Button creation

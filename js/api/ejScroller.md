@@ -242,7 +242,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-Save current model value to browser cookies for state maintanence. While refresh the page Rating control values are retained.
+Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
 
 
 #### Default Value

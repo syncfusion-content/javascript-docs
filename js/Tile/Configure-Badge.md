@@ -15,9 +15,9 @@ The **“data-ej-badge-enabled”** attribute enables or disables the badge for 
 
 The **"data-ej-badge-value”** attribute is used to set the badge value to a **Tile**. By default, the **Value** is set to **1** on initialization. The **"data-ej-badge-text"** attribute is used to set the text instead of number for **Tile** badge. 
 
-The **"data-ej-badge-maxvalue"** attribute is used to set the maximum badge value to a **Tile**. When you set the badge value greater than **"data-ej-badge-maxvalue”**, it shows maximum value in badge with **plus** symbol. 
+The **"data-ej-badge-maxValue"** attribute is used to set the maximum badge value to a **Tile**. When you set the badge value greater than **"data-ej-badge-maxValue”**, it shows maximum value in badge with **plus** symbol. 
 
-The “**data-ej-badge-minvalue”** attribute is used to set the minimum badge value to a **Tile**. When you set the badge value less than **"data-ej-badge-minvalue”**, it shows minimum value in badge.
+The “**data-ej-badge-minValue”** attribute is used to set the minimum badge value to a **Tile**. When you set the badge value less than **"data-ej-badge-minValue”**, it shows minimum value in badge.
 
 Refer to the following code examples.
 
@@ -33,7 +33,7 @@ Add the following code inside the **script** tag.
 
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "center",
-            badge: { enabled: true, minVlaue: 10, maxValue: 80, value: 88 },
+            badge: { enabled: true, minValue: 10, maxValue: 80, value: 88 },
             text: "Messages", imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/messages.png"
         });
 

@@ -133,7 +133,7 @@ When this property is set to false, it disables the rating control.
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
-Save current model value to browser cookies for state maintanence. While refresh the page Rating control values are retained.
+Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
 
 #### Default Value
 

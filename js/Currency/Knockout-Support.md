@@ -98,6 +98,6 @@ CurrencyTextBox at initial load
 
 ![](/js/Currency/Knockout-Support_images/Knockout-Support_img2.png)
 
-CurrencyTextBox with KnockoutJS binding
+CurrencyTextBox with knockout binding
 {:.caption}
 

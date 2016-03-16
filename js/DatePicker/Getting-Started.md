@@ -164,5 +164,5 @@ You can assign values after initialization in DatePicker (‘it helps to get or 
 
 {% endhighlight %}
 
-N>  Existing DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of DatePicker behaviour.
+N>  Existing DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of DatePicker behavior.
 
