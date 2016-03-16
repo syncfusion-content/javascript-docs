@@ -88,6 +88,8 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 ### bridgeDirection `enum`
 {:#members:bridgedirection}
 
+<ts name = "ej.datavisualization.Diagram.BridgeDirection"/>
+    
 Sets the direction of line bridges.
 
 <table class="props">
@@ -8535,6 +8537,8 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 ### tool `enum`
 {:#members:tool}
+
+<ts name = "ej.datavisualization.Diagram.Tool"/>
 
 Enables/Disables the interactive behaviors of diagram.
 
