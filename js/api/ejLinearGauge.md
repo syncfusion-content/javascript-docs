@@ -816,7 +816,7 @@ Specifies the orientation for Linear gauge.
 {:#members:outercustomlabelposition}
 
 
-<ts name = "ej.LinearGauge.LabelPosition"/>
+<ts name = "ej.datavisualization.LinearGauge.OuterCustomLabelPosition"/>
 
 Specify labelPosition value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
@@ -1960,7 +1960,7 @@ Specifies the fontFamily in customLabels
 {:#members:scales-customlabels-font-fontstyle}
 
 
-<ts name = "ej.LinearGauge.FontStyle"/>
+<ts name = "ej.datavisualization.LinearGauge.FontStyle"/>
 
 Specifies the fontStyle in customLabels. See <a href="global.html#FontStyle">FontStyle</a>
 
@@ -2427,7 +2427,7 @@ Specifies the label Value in customLabels
 {:#members:scales-direction}
 
 
-<ts name = "ej.LinearGauge.Direction"/>
+<ts name = "ej.datavisualization.LinearGauge.Direction"/>
 
 Specifies the scale Direction of the Scale. See <a href="global.html#Directions">Directions</a>
 
@@ -2867,7 +2867,7 @@ $("#LinearGauge1").ejLinearGauge({
 {:#members:scales-indicators-font-fontstyle}
 
 
-<ts ref = "ej.LinearGauge.FontStyle"/>
+<ts ref = "ej.datavisualization.LinearGauge.FontStyle"/>
 
 
 
@@ -3759,7 +3759,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-<ts name = "ej.LinearGauge.IndicatorTypes"/>
+<ts name = "ej.datavisualization.LinearGauge.IndicatorTypes"/>
 
 Specifies the indicator Style of font in bar indicators
 
@@ -4236,7 +4236,7 @@ Specifies the fontFamily of font.
 {:#members:scales-labels-font-fontstyle}
 
 
-<ts ref = "ej.LinearGauge.FontStyle"/>
+<ts ref = "ej.datavisualization.LinearGauge.FontStyle"/>
 
 
 
@@ -4427,7 +4427,7 @@ Specifies the opacity of label.
 ### scales.labels.placement `enum`
 {:#members:scales-labels-placement}
 
-<ts name = "ej.LinearGauge.LabelPlacement"/>
+<ts name = "ej.datavisualization.LinearGauge.PointerPlacement"/>
 
 Specifies the label Placement of label. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
@@ -4549,7 +4549,7 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 
 
-<ts name = "ej.LinearGauge.LabelType"/>
+<ts name = "ej.datavisualization.LinearGauge.ScaleType"/>
 
 Specifies the label Style of label. See <a href="global.html#LabelType">LabelType</a>
 
@@ -4666,7 +4666,7 @@ Specifies the unitText of label.
 {:#members:scales-labels-unittextplacement}
 
 
-<ts name = "ej.LinearGauge.TextPlacement"/>
+<ts name = "ej.datavisualization.LinearGauge.UnitTextPlacement"/>
 
 Specifies the unitText Position of label.See <a href="global.html#UnitTextPlacement">UnitTextPlacement</a>
 
@@ -5272,7 +5272,7 @@ Specifies the opacity of marker pointer
 
 
 
-<ts ref = "ej.LinearGauge.LabelPlacement"/>
+<ts ref = "ej.datavisualization.LinearGauge.PointerPlacement"/>
 
 
 
@@ -5318,7 +5318,7 @@ Specifies the pointer Placement of marker pointer See <a href="global.html#Point
 ### scales.markerPointers.type `enum`
 {:#members:scales-markerpointers-type}
 
-<ts name = "ej.LinearGauge.PointerType"/>
+<ts name = "ej.datavisualization.LinearGauge.MarkerType"/>
 
 Specifies the marker Style of marker pointerSee <a href="global.html#MarkerType">MarkerType</a>
 
@@ -6365,7 +6365,7 @@ Specifies the opacity in the ranges.
 {:#members:scales-ranges-placement}
 
 
-<ts ref = "ej.LinearGauge.LabelPlacement"/>
+<ts ref = "ej.datavisualization.LinearGauge.PointerPlacement"/>
 
 
 
@@ -7277,7 +7277,7 @@ Specifies the opacity in the tick.
 
 
 
-<ts ref = "ej.LinearGauge.LabelPlacement"/>
+<ts ref = "ej.datavisualization.LinearGauge.PointerPlacement"/>
 
 
 
@@ -7324,7 +7324,7 @@ Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement
 {:#members:scales-ticks-type}
 
 
-<ts name = "ej.LinearGauge.TicksType"/>
+<ts name = "ej.datavisualization.LinearGauge.TicksType"/>
 
 Specifies the tick Style in the tick. See <a href="global.html#TickType">TickType</a>
 
@@ -7438,7 +7438,7 @@ Specifies the tick Width in the tick.
 ### scales.type `enum`
 {:#members:scales-type}
 
-<ts name = "ej.LinearGauge.ScaleType"/>
+<ts name = "ej.datavisualization.LinearGauge.ScaleType"/>
 
 Specifies the scaleBar type .See <a href="global.html#ScaleType">ScaleType</a>
 
@@ -7560,7 +7560,7 @@ Specifies the scaleBar width.
 {:#members:theme}
 
 
-<ts name = "ej.LinearGauge.Theme"/>
+<ts name = "ej.datavisualization.LinearGauge.Themes"/>
 
 Specifies the theme for Linear gauge. See LinearGauge.Themes
 

@@ -369,7 +369,7 @@ captionSettings :{font :{fontFamily : "algerian"}}
 ### captionSettings.font.fontStyle `enum`
 {:#members:captionsettings-font-fontstyle}
 
-<ts name="ej.BulletGraph.FontStyle"/>
+<ts name="ej.datavisualization.BulletGraph.FontStyle"/>
 
 Specifies the fontStyle of caption
 
@@ -447,7 +447,7 @@ captionSettings :{font :{fontStyle : "italic"}}
 {:#members:captionsettings-font-fontweight}
 
 
-<ts name="ej.BulletGraph.FontWeight"/>
+<ts name="ej.datavisualization.BulletGraph.FontWeight"/>
 
 Specifies the fontWeight of caption
 
@@ -771,7 +771,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.indicator.font.fontStyle `enum`
 {:#members:captionsettings-indicator-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle"/>
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -821,7 +821,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 {:#members:captionsettings-indicator-font-fontweight}
 
 
-<ts ref="ej.BulletGraph.FontWeight"/>
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -1643,7 +1643,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 ### captionSettings.indicator.textAlignment `enum`
 {:#members:captionsettings-indicator-textalignment}
 
-<ts name="ej.BulletGraph.TextAlignment"/>
+<ts name="ej.datavisualization.BulletGraph.TextAlignment"/>
 
 Specifies the alignement of indicator with respect to scale based on text position
 
@@ -1724,7 +1724,7 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 {:#members:captionsettings-indicator-textanchor}
 
 
-<ts name="ej.BulletGraph.TextAnchor"/>
+<ts name="ej.datavisualization.BulletGraph.TextAnchor"/>
 
 Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
 
@@ -1851,7 +1851,7 @@ captionSettings :{ indicator :{textAngle :10} }
 {:#members:captionsettings-indicator-textposition}
 
 
-<ts name="ej.BulletGraph.TextPosition"/>
+<ts name="ej.datavisualization.BulletGraph.TextPosition"/>
 
 Specifies where indicator should be placed
 
@@ -2350,7 +2350,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.subTitle.font.fontStyle `enum`
 {:#members:captionsettings-subtitle-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle"/>
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -2396,7 +2396,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 ### captionSettings.subTitle.font.fontWeight `enum`
 {:#members:captionsettings-subtitle-font-fontweight}
 
-<ts ref="ej.BulletGraph.FontWeight"/>
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -2760,7 +2760,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 ### captionSettings.subTitle.textAlignment `enum`
 {:#members:captionsettings-subtitle-textalignment}
 
-<ts ref="ej.BulletGraph.TextAlignment"/>
+<ts ref="ej.datavisualization.BulletGraph.TextAlignment"/>
 
 
 
@@ -2810,7 +2810,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 {:#members:captionsettings-subtitle-textanchor}
 
 
-<ts ref="ej.BulletGraph.TextAnchor"/>
+<ts ref="ej.datavisualization.BulletGraph.TextAnchor"/>
 
 
 
@@ -2907,7 +2907,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 {:#members:captionsettings-subtitle-textposition}
 
 
-<ts ref="ej.BulletGraph.TextPosition"/>
+<ts ref="ej.datavisualization.BulletGraph.TextPosition"/>
 
 
 
@@ -3005,7 +3005,7 @@ captionSettings :{text : "Production"}
 ### captionSettings.textAlignment `enum`
 {:#members:captionsettings-textalignment}
 
-<ts ref="ej.BulletGraph.TextAlignment"/>
+<ts ref="ej.datavisualization.BulletGraph.TextAlignment"/>
 
 
 
@@ -3054,7 +3054,7 @@ captionSettings :{textAlignment: 'Center'}
 ### captionSettings.textAnchor `enum`
 {:#members:captionsettings-textanchor}
 
-<ts ref="ej.BulletGraph.TextAnchor"/>
+<ts ref="ej.datavisualization.BulletGraph.TextAnchor"/>
 
 
 
@@ -3153,7 +3153,7 @@ captionSettings :{textAngle : 5}
 {:#members:captionsettings-textposition}
 
 
-<ts ref="ej.BulletGraph.TextPosition"/>
+<ts ref="ej.datavisualization.BulletGraph.TextPosition"/>
 
 
 
@@ -3348,7 +3348,7 @@ enableResizing : false
 ### flowDirection `enum`
 {:#members:flowdirection}
 
-<ts name="ej.BulletGraph.FlowDirection"/>
+<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
 
 Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
 
@@ -3470,7 +3470,7 @@ height : 600
 {:#members:orientation}
 
 
-<ts name="ej.BulletGraph.Orientation"/>
+<ts name="ej.datavisualization.BulletGraph.Orientation"/>
 
 Bullet graph will render in the specified orientation.
 
@@ -4726,7 +4726,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 ### quantitativeScaleSettings.labelSettings.font.fontStyle `enum`
 {:#members:quantitativescalesettings-labelsettings-font-fontstyle}
 
-<ts ref="ej.BulletGraph.FontStyle"/>
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -4776,7 +4776,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 {:#members:quantitativescalesettings-labelsettings-font-fontweight}
 
 
-<ts ref="ej.BulletGraph.FontWeight"/>
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -4874,7 +4874,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 {:#members:quantitativescalesettings-labelsettings-labelplacement}
 
 
-<ts name="ej.BulletGraph.LabelPlacement"/>
+<ts name="ej.datavisualization.BulletGraph.LabelPlacement"/>
 
 Specifies the placement of labels in bullet graph scale.
 
@@ -5093,7 +5093,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 ### quantitativeScaleSettings.labelSettings.position `enum`
 {:#members:quantitativescalesettings-labelsettings-position}
 
-<ts name= "ej.BulletGraph.Position"/>
+<ts name= "ej.datavisualization.BulletGraph.LabelPosition"/>
 
 Specifies the position of the labels to render either above or below the graph. See <a href="global.html#Position">Position</a>
 
@@ -5869,7 +5869,7 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 {:#members:quantitativescalesettings-tickplacement}
 
 
-<ts name="ej.BulletGraph.TickPlacement"/>
+<ts name="ej.datavisualization.BulletGraph.TickPlacement"/>
 
 Specifies the placement of ticks to render either inside or outside the scale.
 
@@ -5940,7 +5940,7 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 {:#members:quantitativescalesettings-tickposition}
 
 
-<ts name="ej.BulletGraph.TickPosition"/>
+<ts name="ej.datavisualization.BulletGraph.TickPosition"/>
 
 Specifies the position of the ticks to render either above,below or inside
 
