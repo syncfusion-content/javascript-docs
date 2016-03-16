@@ -535,6 +535,8 @@ Specifies the mapping property path for duration of a task in datasource
 ### durationUnit `enum`
 {:#members:durationunit}
 
+<ts name = "ej.Gantt.DurationUnit"/>
+
 Specifies the duration unit for each tasks whether days or hours or minutes
 
 <table class="params">

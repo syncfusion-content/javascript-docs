@@ -1087,6 +1087,8 @@ Specifies the index of the selected row.
 ### selectionType `enum`
 {:#members:selectiontype}
 
+<ts name = "ej.Gantt.SelectionType"/>
+
 Specifies the type of selection whether to select single row or multiple rows.
 
 <table class="params">
