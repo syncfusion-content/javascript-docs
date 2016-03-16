@@ -305,7 +305,7 @@ Specify the url of the frame background image for circular gauge
 ### frame.frameType `enum`
 {:#members:frame.frametype}
 
-<ts name = "ej.CircularGauge.FrameType"/>
+<ts name = "ej.datavisualization.CircularGauge.Frame"/>
 
 Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame</a>
 
@@ -428,7 +428,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCi
 ### gaugePosition `enum`
 {:#members:gaugeposition}
 
-<ts name = "ej.CircularGauge.GaugePosition"/>
+<ts name = "ej.datavisualization.CircularGauge.gaugePosition"/>
 
 Specify gaugePosition value of circular gauge See GaugePosition
 
@@ -693,7 +693,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 ### outerCustomLabelPosition `enum`
 {:#members:outercustomlabelposition}
 
-<ts name = "ej.CircularGauge.LabelPosition"/>
+<ts name = "ej.datavisualization.CircularGauge.OuterCustomLabelPosition"/>
 
 Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
@@ -994,7 +994,7 @@ Specify border width of circular gauge
 ### scales.direction `enum`
 {:#members:scales.direction}
 
-<ts name = "ej.CircularGauge.Direction"/>
+<ts name = "ej.datavisualization.CircularGauge.Direction"/>
 
 Specify scale direction of circular gauge. See <a href="global.html#Directions">Directions</a>
 
@@ -1558,7 +1558,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 ### scales.indicators.type `enum`
 {:#members:scales.indicators.type}
 
-<ts name = "ej.CircularGauge.IndicatorTypes"/>
+<ts name = "ej.datavisualization.CircularGauge.IndicatorType"/>
 
 Specify indicator style of circular gauge. See <a href="global.html#IndicatorType">IndicatorType</a>
 
@@ -2036,7 +2036,7 @@ Specify opacity value for labels of circular gauge
 ### scales.labels.placement `enum`
 {:#members:scales.labels.placement}
 
-<ts name = "ej.CircularGauge.Placement"/>
+<ts name = "ej.datavisualization.CircularGauge.Placement"/>
 
 Specify label placement of circular gauge. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
@@ -2098,7 +2098,7 @@ Center</td>
 ### scales.labels.type `enum`
 {:#members:scales.labels.type}
 
-<ts name = "ej.CircularGauge.LabelType"/>
+<ts name = "ej.datavisualization.CircularGauge.LabelType"/>
 
 Specify label Style of circular gauge. See <a href="global.html#LabelType">LabelType</a>
 
@@ -2187,7 +2187,7 @@ Specify unitText of circular gauge
 ### scales.labels.unitTextPosition `enum`
 {:#members:scales.labels.unittextposition}
 
-<ts name = "ej.CircularGauge.TextPosition"/>
+<ts name = "ej.datavisualization.CircularGauge.UnitTextPlacement"/>
 
 Specify unitTextPosition of circular gauge. See UnitTextPosition
 
@@ -2937,7 +2937,7 @@ Specify pointer length of circular gauge
 ### scales.pointers.markerType `enum`
 {:#members:scales.pointers.markertype}
 
-<ts name = "ej.CircularGauge.MarkerType"/>
+<ts name = "ej.datavisualization.CircularGauge.MarkerType"/>
 
 Specify marker Style value of circular gauge. See <a href="global.html#MarkerType">MarkerType</a>
 
@@ -3054,7 +3054,7 @@ Image</td>
 ### scales.pointers.needleType `enum`
 {:#members:scales.pointers.needletype}
 
-<ts name = "ej.CircularGauge.NeedleType"/>
+<ts name = "ej.datavisualization.CircularGauge.NeedleType"/>
 
 Specify needle Style value of circular gauge. See <a href="global.html#NeedleType">NeedleType</a>
 
@@ -3163,7 +3163,7 @@ Specify opacity value for pointer of circular gauge
 {:#members:scales.pointers.placement}
 
 
-<ts ref = "ej.CircularGauge.Placement"/>
+<ts ref = "ej.datavisualization.CircularGauge.LabelPlacement"/>
 
 Specify pointer Placement value of circular gauge. See <a href="global.html#PointerPlacement">PointerPlacement</a>
 
@@ -3591,7 +3591,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 ### scales.pointers.type `enum`
 {:#members:scales.pointers.type}
 
-<ts name = "ej.CircularGauge.PointerType"/>
+<ts name = "ej.datavisualization.CircularGauge.PointerType"/>
 
 Specify pointer type value of circular gauge. See <a href="global.html#PointerType">PointerType</a>
 
@@ -4078,7 +4078,7 @@ Specify opacity value for ranges of circular gauge
 ### scales.ranges.placement `enum`
 {:#members:scales.ranges.placement}
 
-<ts ref = "ej.CircularGauge.Placement"/>
+<ts ref = "ej.datavisualization.CircularGauge.Placement"/>
 
 
 Specify placement of circular gauge. See <a href="global.html#RangePlacement">RangePlacement</a>
@@ -4927,7 +4927,7 @@ Specify tick height of circular gauge
 ### scales.ticks.placement `enum`
 {:#members:scales.ticks.placement}
 
-<ts ref = "ej.CircularGauge.Placement"/>
+<ts ref = "ej.datavisualization.CircularGauge.Placement"/>
 
 
 Specify tick placement of circular gauge. See <a href="global.html#TickPlacement">TickPlacement</a>
@@ -4960,7 +4960,7 @@ Specify tick placement of circular gauge. See <a href="global.html#TickPlacement
 ### scales.ticks.type `enum`
 {:#members:scales.ticks.type}
 
-<ts ref = "ej.CircularGauge.LabelType"/>
+<ts ref = "ej.datavisualization.CircularGauge.LabelType"/>
 
 
 Specify tick Style of circular gauge. See <a href="global.html#TickType">TickType</a>
