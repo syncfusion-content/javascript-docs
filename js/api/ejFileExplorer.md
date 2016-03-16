@@ -556,7 +556,7 @@ Allows specified type of files only to display in FileExplorer control.
 
 
 
-By using filterSettings property, you can customize the search functionality of the searchbar in FileExplorer control.
+By using filterSettings property, you can customize the search functionality of the search bar in FileExplorer control.
 
 
 
@@ -2284,7 +2284,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2369,7 +2369,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2467,7 +2467,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2568,7 +2568,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2660,7 +2660,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2730,7 +2730,7 @@ type</td>
 
 
 
-Fires when new folder is created sucessfully in file system.
+Fires when new folder is created successfully in file system.
 
 <table class="params">
 <thead>
@@ -2759,7 +2759,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2850,7 +2850,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2948,7 +2948,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3033,7 +3033,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3131,7 +3131,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3204,7 +3204,7 @@ type</td>
 
 
 
-Fires when file or folder is deleted sucessfully.
+Fires when file or folder is deleted successfully.
 
 <table class="params">
 <thead>
@@ -3233,7 +3233,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3422,7 +3422,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3506,7 +3506,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3593,7 +3593,7 @@ argument</td>
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">

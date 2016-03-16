@@ -556,7 +556,7 @@ Specified value to be added an id attribute of the CheckBox.
 
 
 
-Specify the idprefix value to be added before the current id of the CheckBox.
+Specify the prefix value of id to be added before the current id of the CheckBox.
 
 
 

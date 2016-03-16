@@ -31,7 +31,7 @@ To suppress this warning, you need to specify the "*Access data sources across d
 
 **Option 2: Using JSONP for cross-origin request**
 
-Using JSONP datatype, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**jsonp**”. And we have provided “**doJSONPAction**” method to handle “jsonp” type Ajax request on server side.  Please refer below code snippet to specify **ajaxDataType** as “jsonp”.
+Using JSONP data type, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**JSONP**”. And we have provided “**doJSONPAction**” method to handle “JSONP” type Ajax request on server side.  Please refer below code snippet to specify **ajaxDataType** as “JSONP”.
 
     
     {% highlight javascript %}
@@ -44,7 +44,7 @@ Using JSONP datatype, you can perform cross origin-request. To enable cross-orig
         
     {% endhighlight %}
     
-If we specify “ajaxDataType” as “jsonp”, data will be received in string format while calling “doJSONPAction” method of Web API Controller, here you need to deserialize the received “json” data into FileExplorerParams object. After performing corresponding operations, you have to specify the response data in serialized format with wrapped callback function. Please refer below code snippet to handle “jsonp” operations on server.
+If we specify “ajaxDataType” as “JSONP”, data will be received in string format while calling “doJSONPAction” method of Web API Controller, here you need to deserialize the received “json” data into FileExplorerParams object. After performing corresponding operations, you have to specify the response data in serialized format with wrapped callback function. Please refer below code snippet to handle “JSONP” operations on server.
 
     
     {% highlight c# %}

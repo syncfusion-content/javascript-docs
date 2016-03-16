@@ -53,8 +53,8 @@ $(element).ejTagCloud()
 <script> 
 $(function () {
         // document ready
-        // initialize the array of data for tagcloud input      
-// simple tagcloud creation
+        // initialize the array of data for TagCloud input      
+// simple TagCloud creation
         $("#tagcloud").ejTagCloud({ 
             dataSource:  window.websiteCollection,
             titleText: "Tech Sites"
@@ -417,12 +417,12 @@ Defines the format for the TagCloud to display the tag items.See Format
 <tr>
 <td class="name">
 Cloud</td>
-<td class="description">To render the tagCloud items in cloud format</td>
+<td class="description">To render the TagCloud items in cloud format</td>
 </tr>
 <tr>
 <td class="name">
 List</td>
-<td class="description">To render the tagCloud items in list format</td>
+<td class="description">To render the TagCloud items in list format</td>
 </tr>
 </tbody>
 </table>
@@ -838,12 +838,12 @@ string</td>
 var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
-// initialize the array of data for tagcloud input
+// initialize the array of data for TagCloud input
 $("#tagcloud").ejTagCloud({ 
             dataSource: window.websiteCollection,
             titleText: "Tech Sites"
 });
-//initialize the tagCloud object
+//initialize the TagCloud object
 tagObj = $("#tagcloud").data("ejTagCloud");
 //To Inserts a new item into the TagCloud
 tagObj.insert(tag);
@@ -859,7 +859,7 @@ tagObj.insert(tag);
 var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
-// initialize the array of data for tagcloud input  
+// initialize the array of data for TagCloud input  
 $("#tagcloud").ejTagCloud({ 
             dataSource: window.websiteCollection,titleText: "Tech Sites"
 });  
@@ -1006,12 +1006,12 @@ name</td>
 var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
-// initialize the array of data for tagcloud input
+// initialize the array of data for TagCloud input
 $("#tagcloud").ejTagCloud({ 
             dataSource: window.websiteCollection,
             titleText: "Tech Sites"
 });
-//initialize the tagCloud object
+//initialize the TagCloud object
 tagObj = $("#tagcloud").data("ejTagCloud");
 //To Inserts a new item into the TagCloud
 tagObj.remove(tag);
@@ -1027,7 +1027,7 @@ tagObj.remove(tag);
 var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
-// initialize the array of data for tagcloud input
+// initialize the array of data for TagCloud input
 $("#tagcloud").ejTagCloud({ 
             dataSource: window.websiteCollection,
             titleText: "Tech Sites"
@@ -1092,7 +1092,7 @@ $("#tagcloud").ejTagCloud({
 dataSource:window.websiteCollection,
 titleText: "Tech Sites"
 });
-//initialize the tagCloud object
+//initialize the TagCloud object
 var tagObj = $("#tagcloud").data("ejTagCloud");
 // Removes the item from the TagCloud based on the position.
 tagObj.removeAt(2);
@@ -1173,7 +1173,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TagCloud.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the tagcloud model</td>
+<td class="description">returns the TagCloud model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1271,7 +1271,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TagCloud.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the tagcloud model</td>
+<td class="description">returns the TagCloud model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1357,7 +1357,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TagCloud.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the tagcloud model</td>
+<td class="description">returns the TagCloud model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1384,7 +1384,7 @@ type</td>
 <div id="tagcloud"></div> 
  
 <script>
-//destroy event for tagCloud
+//destroy event for TagCloud
 $("#tagcloud").ejTagCloud({
  dataSource: window.websiteCollection,
  titleText: "Tech Sites",
@@ -1443,7 +1443,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TagCloud.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the tagcloud model</td>
+<td class="description">returns the TagCloud model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1482,7 +1482,7 @@ url</td>
 <div id="tagcloud"></div> 
  
 <script>
-//mouseout event for tagCloud
+//mouseout event for TagCloud
 $("#tagcloud").ejTagCloud({
  dataSource: window.websiteCollection,
  titleText: "Tech Sites",
@@ -1541,7 +1541,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TagCloud.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the tagcloud model</td>
+<td class="description">returns the TagCloud model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1580,7 +1580,7 @@ url</td>
 <div id="tagcloud"></div> 
  
 <script>
-//mouse over event for tagCloud
+//mouse over event for TagCloud
 $("#tagcloud").ejTagCloud({
  dataSource: window.websiteCollection,
 titleText: "Tech Sites",

@@ -127,7 +127,7 @@ To get the node value, you can use [getNode](http://help.syncfusion.com/js/api/e
 
 {% endhighlight %}
 
-N>  Existing TreeView instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of TreeView behaviour.
+N>  Existing TreeView instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of TreeView behavior.
 
 To edit the node text, you can use [updateText](http://help.syncfusion.com/js/api/ejtreeview#methods:updatetext) method as shown below code example. 
 

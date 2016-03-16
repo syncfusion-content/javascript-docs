@@ -691,7 +691,7 @@ $("#target").ejWaitingPopup("show");
 
 
 
-Fires after Create waitingpopup successfully
+Fires after Create WaitingPopup successfully
 
 <table class="params">
 <thead>
@@ -712,7 +712,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.WaitingPopup.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the waitingpopup model</td>
+<td class="description">returns the WaitingPopup model</td>
 </tr>
 <tr>
 <td class="name">
@@ -767,7 +767,7 @@ type</td>
 
 
 
-Fires after Destroy waitingpopup successfully
+Fires after Destroy WaitingPopup successfully
 
 <table class="params">
 <thead>
@@ -788,7 +788,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.WaitingPopup.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the waitingpopup model</td>
+<td class="description">returns the WaitingPopup model</td>
 </tr>
 <tr>
 <td class="name">
