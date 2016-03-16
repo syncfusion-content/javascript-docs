@@ -1335,6 +1335,8 @@ Sets current date of the Schedule. The Schedule displays initially with the date
 ### currentView `string|enum`
 {:#members:currentview}
 
+<ts name="ej.Schedule.CurrentView"/>
+
 Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView(ej.Schedule.CurrentView) are as follows,
 
 <table class="params">
@@ -2071,6 +2073,8 @@ Sets the minimum date limit to display on the Schedule. Setting minDate with spe
 
 ### orientation `string|enum`
 {:#members:orientation}
+
+<ts name="ej.Schedule.Orientation"/>
 
 Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values. The enum values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
 
@@ -3211,6 +3215,8 @@ Sets the start hour time range to be displayed on the Schedule.
 
 ### timeMode `string|enum`
 {:#members:timemode}
+
+<ts name="ej.Schedule.TimeMode"/>
 
 Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value("12" or "24") or the below mentioned enum values. The enum values that are accepted by timeMode(ej.Schedule.TimeMode) are as follows,
 
