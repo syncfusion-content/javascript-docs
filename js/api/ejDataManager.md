@@ -8,7 +8,7 @@ metacontent:
 ---
 
 # ejDataManager
-<ts  isFrameWork = “true” />
+<ts  isFrameWork="true" />
 
 Communicates with data source and returns the desired result based on the Query provided.
 
