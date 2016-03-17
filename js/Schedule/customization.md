@@ -4,7 +4,7 @@ description: Customization of working hours, date, and appointment window
 platform: js
 control: schedule
 documentation: ug
-keywords: customization, work hours, appointment window, display hours 
+keywords: customization, work hours, appointment window, display hours, Query cell info
 ---
 # Customization
 
@@ -558,3 +558,45 @@ function cancel() {
 
 {% endhighlight %}
 
+## Query cell info
+
+It is possible to customize the scheduler DOM element in that scheduler using [queryCellInfo ](/js/api/ejschedule#events:appointmentwindowopen) event. There are several main things that we can customize through query cell info event.
+
+* Work cell
+* Month cell
+* All day cell
+* Appointment
+* Time cells
+* Date header cells
+* Resource header cell
+* Agenda time cell
+* Agenda resource cell
+* Agenda date cell
+* Agenda event cell
+
+The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
+
+{% highlight html %}
+
+    <!--Container for ejScheduler widget--> 
+    <div id="Schedule1"></div> 
+    <script type="text/javascript"> 
+       $(function() { 
+	       $("#Schedule1").ejSchedule({ 
+		      queryCellInfo: "checkInfo"
+	   });
+    }); 
+    function checkInfo(args) {
+	    switch (args.requestType) {
+		case "workcells":
+			args.element.css("background-color", "#ffe9cc");
+			break;
+		case "monthcells":
+			args.element.css("background-color", "#faa41a");
+			args.element.css("border-color", "#faa41a");
+			break;
+		}
+    }
+    </script>
+
+{% endhighlight %}

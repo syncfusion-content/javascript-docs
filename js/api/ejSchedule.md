@@ -4113,10 +4113,10 @@ Allows setting draggable area for the Scheduler appointments. Also, turns on the
 
 ## Methods
 
-### deleteAppointment(guid)
+### deleteAppointment(data)
 {:#methods:deleteappointment}
 
-This method is used to delete the appointment based on the guid value passed to it.
+This method is used to delete the appointment based on the guid value or the appointment data passed to it.
 
 <table class="params">
     <thead>
@@ -4128,9 +4128,9 @@ This method is used to delete the appointment based on the guid value passed to 
     </thead>
     <tbody>
         <tr>
-            <td class="name">guid</td>
-            <td class="type">string</td>
-            <td class="description">guid value of an appointment element</td>
+            <td class="name">data</td>
+            <td class="type">String or object</td>
+            <td class="description">guid value of an appointment element or the appointment object</td>
         </tr>
     </tbody>
 </table>
@@ -6761,6 +6761,90 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
+### queryCellInfo
+{:#events:queryCellInfo}
+
+Triggered every time a request is made to access particular work cell information, element and data.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current appontment.</td>
+        </tr>
+        <tr>
+            <td class="name">element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendered DOM element.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the rendering element name in the scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">cellType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the cell which is currently rendering.</td>
+        </tr>
+        <tr>
+            <td class="name">currentAppointmentDate</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start date of currently rendering appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">cell</td>
+            <td class="type">object</td>
+            <td class="description">Return the currently rendering cell information.</td>
+        </tr>
+        <tr>
+            <td class="name">resource</td>
+            <td class="type">object</td>
+            <td class="description">Return the current resource details.</td>
+        </tr>
+        <tr>
+            <td class="name">currentDay</td>
+            <td class="type">object</td>
+            <td class="description">Return the currently rendering date information.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Schedule">
+    </div> 
+    <script> 
+    $("#Schedule").ejSchedule({ queryCellInfo: function (args){
+	switch (args.requestType) {
+                case "workcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "monthcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "alldaycells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+    } }}); 
+    </script>
+
+{% endhighlight %}
 
 ### reminder
 {:#events:reminder}
