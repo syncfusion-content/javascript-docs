@@ -73,7 +73,7 @@ It navigates to the parent directory of the current folder.<br/><br/><br/><br/><
 <tr>
 <td>
 Addressbar <br/><br/></td><td>
-The addressbar is the textbox which displays the path of the current directory, as a series of its parent directory separated by slash (“/”).<br/><br/>And the address bar is an editable area, so you can enter any directory’s path to a quick navigation.<br/><br/><br/><br/></td></tr>
+The Address bar is the textbox which displays the path of the current directory, as a series of its parent directory separated by slash (“/”).<br/><br/>And the address bar is an editable area, so you can enter any directory’s path to a quick navigation.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Refresh <br/><br/></td><td>
@@ -113,7 +113,7 @@ It displays the details of the current selected file or folder.<br/><br/><br/><b
 <tr>
 <td>
 Searchbar<br/><br/></td><td>
-The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the searchbar can be customize, for details check {{'[here](#customizing-the-search)'| markdownify }}.<br/><br/><br/><br/></td></tr>
+The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the Search bar can be customize, for details check {{'[here](#customizing-the-search)'| markdownify }}.<br/><br/><br/><br/></td></tr>
 </table>
 
 

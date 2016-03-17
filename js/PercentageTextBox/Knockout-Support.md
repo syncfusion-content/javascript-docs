@@ -22,7 +22,7 @@ For more information about the **knockout binding**, refer the following online 
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following example depicts the way to bind data to the **PercentageTextBox** widgets through **knockout** **support** that enables and populates data to the **PercentageTextBox** widget based on the value set to the other **PercentageTextBox** widget.
+The following example depicts the way to bind data to the **PercentageTextBox** widgets through **knockoutJS** **support** that enables and populates data to the **PercentageTextBox** widget based on the value set to the other **PercentageTextBox** widget.
 
 {% highlight html %}
 
@@ -90,6 +90,6 @@ PercentageTextBox at initial load
 
 ![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img2.png)
 
-PercentageTextBox with knockout binding
+PercentageTextBox with knockoutJS binding
 {:.caption}
 

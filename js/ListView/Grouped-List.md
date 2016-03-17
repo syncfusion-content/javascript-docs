@@ -11,7 +11,7 @@ documentation: ug
 
 **First Level Group List**
 
-The **ListView** widget can make as grouped list by setting the **“data-ej-enablegrouplist”** attribute as **“True”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
+The **ListView** widget can make as grouped list by setting the **“data-ej-enableGroupList”** attribute as **“True”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
 
 Refer the following code example.
 

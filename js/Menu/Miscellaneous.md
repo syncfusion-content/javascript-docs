@@ -134,7 +134,7 @@ The following screenshot displays the output of the above code.
 
 ##Show root level arrows
 
-Specifies the main menu item arrows to display only when it contains child menu items. You can use “**showRooltLevelArrows**” property to display the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
+Specifies the main menu item arrows to display only when it contains child menu items. You can use “**showRootLevelArrows**” property to display the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
 Add the following **&lt;script&gt;** in the above code sample.
 
@@ -147,7 +147,7 @@ Add the following **&lt;script&gt;** in the above code sample.
         jQuery(function($) {
             $("#menucontrol").ejMenu({
                 width: 500,
-                showRooltLevelArrows: false
+                showRootLevelArrows: false
             });
         });
 

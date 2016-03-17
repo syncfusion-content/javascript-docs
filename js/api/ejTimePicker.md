@@ -1313,7 +1313,7 @@ timeObj.disable(); // disable the timepicker
 <input type="text" id="timepicker" />
 <script>
 $("#timepicker").ejTimePicker();
-// disable the timepicker
+// disable the time picker
 $("#timepicker").ejTimePicker("disable");
 </script>
 
@@ -1352,7 +1352,7 @@ Allows you to enable the TimePicker.
 $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
-timeObj.enable(); // enables the timepicker
+timeObj.enable(); // enables the time picker
 </script>
 
 {% endhighlight %}
@@ -1363,7 +1363,7 @@ timeObj.enable(); // enables the timepicker
 <input type="text" id="timepicker" />
 <script>
 $("#timepicker").ejTimePicker();
-// enables the timepicker
+// enables the time picker
 $("#timepicker").ejTimePicker("enable");
 </script>
 
@@ -1407,7 +1407,7 @@ string
 $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
-timeObj.getValue(); // returns the timepicker value
+timeObj.getValue(); // returns the time picker value
 </script>
 
 {% endhighlight %}
@@ -1453,7 +1453,7 @@ This method will hide the TimePicker control popup.
 $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
-timeObj.hide(); // hide the timepicker popup
+timeObj.hide(); // hide the time picker popup
 </script>
 
 {% endhighlight %}
@@ -1464,7 +1464,7 @@ timeObj.hide(); // hide the timepicker popup
 <input type="text" id="timepicker" />
 <script>
 $("#timepicker").ejTimePicker();
-// to hide the timepicker popup
+// to hide the time picker popup
 $("#timepicker").ejTimePicker("hide");
 </script>
 
@@ -1544,7 +1544,7 @@ This method will show the TimePicker control popup.
 $("#timepicker").ejTimePicker();
 // Create TimePicker instance
 var timeObj = $("#timepicker").data("ejTimePicker");
-timeObj.show(); // show the timepicker popup
+timeObj.show(); // show the time picker popup
 </script>
 
 {% endhighlight %}
@@ -1555,7 +1555,7 @@ timeObj.show(); // show the timepicker popup
 <input type="text" id="timepicker" />
 <script>
 $("#timepicker").ejTimePicker();
-// to show the timepicker popup
+// to show the time picker popup
 $("#timepicker").ejTimePicker("show");
 </script>
 
@@ -1604,7 +1604,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1763,7 +1763,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1950,7 +1950,7 @@ type</td>
  
 <input type="text" id="timepicker" />
 <script>
-//create event for timepicker
+//create event for TimePicker
 $("#timepicker").ejTimePicker({
    create: function (args) {}
 });   
@@ -2016,7 +2016,7 @@ type</td>
  
 <input type="text" id="timepicker" />
 <script>
-//destroy event for timepicker
+//destroy event for TimePicker
 $("#timepicker").ejTimePicker({
    destroy: function (args) {}
 });   
@@ -2039,7 +2039,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-Fires when the timepicker control gets focus.
+Fires when the TimePicker control gets focus.
 
 
 <table class="params">
@@ -2061,7 +2061,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2096,7 +2096,7 @@ value</td>
  
 <input type="text" id="timepicker" />
 <script>
-//focusIn event for timepicker
+//focusIn event for TimePicker
 $("#timepicker").ejTimePicker({
    focusIn: function (args) {}
 });      
@@ -2119,7 +2119,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-Fires when the timepicker control get lost focus.
+Fires when the TimePicker control get lost focus.
 
 
 <table class="params">
@@ -2141,7 +2141,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2176,7 +2176,7 @@ value</td>
  
 <input type="text" id="timepicker" />
 <script>
-//focusOut event for timepicker
+//focusOut event for TimePicker
 $("#timepicker").ejTimePicker({
    focusOut: function (args) {}
 }); 
@@ -2254,7 +2254,7 @@ value</td>
  
 <input type="text" id="timepicker" />
 <script>
-//open event for timepicker
+//open event for TimePicker
 $("#timepicker").ejTimePicker({
    open: function (args) {}
 });   
@@ -2277,7 +2277,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-Fires when the value is selected from the TimePicker dropdownlist.
+Fires when the value is selected from the TimePicker dropdown list.
 
 
 <table class="params">
@@ -2299,7 +2299,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2334,7 +2334,7 @@ value</td>
  
 <input type="text" id="timepicker" />
 <script>
-//select event for timepicker
+//select event for TimePicker
 $("#timepicker").ejTimePicker({
    select: function (args) {}
 });   

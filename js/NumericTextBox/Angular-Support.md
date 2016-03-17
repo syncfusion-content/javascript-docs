@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular Support
 
-The **NumericTextBox** widget supports two types of **Angular JS support** namely, 
+The **NumericTextBox** widget supports two types of **AngularJS support** namely, 
 
 * One-way binding
 * Two-way binding 
@@ -18,15 +18,15 @@ The **NumericTextBox** widget supports two types of **Angular JS support** namel
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **NumericTextBox** widget, but the changes made in **NumericTextBox** widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **NumericTextBox** widget.
 
-**Two-way binding** supports both the processes; it applies the scope values to the **NumericTextBox** properties as well as the changes made in the **NumericTextBox** widget also get reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes; it applies the scope values to the **NumericTextBox** properties as well as the changes made in the **NumericTextBox** widget also get reflected back and triggered within the angularJS scope change function.
 
 Apply the plugin and property assigning to the **NumericTextBox** widget element through the directive that starts with the letter **“e-“.**
 
-To know more details about the **Angular binding**, refer the following link location,
+To know more details about the **AngularJS binding**, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts the way to bind data to the **NumericTextBox** widget through **angular support**.
+The following example depicts the way to bind data to the **NumericTextBox** widget through **angularJS support**.
 
 {% highlight html %}
 
@@ -85,7 +85,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 
 
 
-The output of **NumericTextBox** controls with **two-way angular binding** is as follows.
+The output of **NumericTextBox** controls with **two-way angularJS binding** is as follows.
 
 ![](/js/NumericTextBox/Angular-Support_images/Angular-Support_img1.png)
 
@@ -94,6 +94,6 @@ NumericTextBox at initial load
 
 ![](/js/NumericTextBox/Angular-Support_images/Angular-Support_img2.png)
 
-NumericTextBox with Angular Binding
+NumericTextBox with AngularJS Binding
 {:.caption}
 

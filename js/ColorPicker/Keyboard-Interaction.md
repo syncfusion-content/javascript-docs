@@ -57,7 +57,7 @@ Keyboard shortcut keys
             Right
         </td>
         <td>
-            Increase the staturation value
+            Increase the saturation value
         </td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@ Keyboard shortcut keys
             Left
         </td>
         <td>
-            Decrease the staturation value
+            Decrease the saturation value
         </td>
     </tr>
     <tr>
@@ -114,7 +114,7 @@ Keyboard shortcut keys
 
 The following steps explain how you can enable **keyboard** interaction for **ColorPicker** textbox.
 
-In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorPicker** widget and enable keyboard interaction by the **accesskey** property.
+In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorPicker** widget and enable keyboard interaction by the **access key** property.
 
 {% highlight html %}
 

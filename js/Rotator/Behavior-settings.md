@@ -105,7 +105,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 * ej.Rotator.PagerPosition.BottomLeft
 * ej.Rotator.PagerPosition.BottomRight
 * ej.Rotator.PagerPosition.Outside
-* ej.Rotator.PagerPosition.TopCentre
+* ej.Rotator.PagerPosition.TopCenter
 * ej.Rotator.PagerPosition.TopLeft
 * ej.Rotator.PagerPosition.TopRight
 

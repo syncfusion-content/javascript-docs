@@ -132,7 +132,7 @@ Used to allow or restrict the editing in DatePicker input field directly. By set
 
 
 
-### allowDrilDown `boolean`
+### allowDrillDown `boolean`
 {:#members:allowdrildown}
 
 allow or restrict the drill down to multiple levels of view (month/year/decade) in DatePicker calendar
@@ -165,8 +165,8 @@ allow or restrict the drill down to multiple levels of view (month/year/decade) 
  
 <input type="text" id="datepicker" />
 <script>
-//To set allowDrilDown API during initialization  
-        $("#datepicker").ejDatePicker({   allowDrilDown : true });
+//To set allowDrillDown API during initialization  
+        $("#datepicker").ejDatePicker({   allowDrillDown : true });
 </script>{% endhighlight %}
 
 
@@ -2372,7 +2372,7 @@ Fires before closing the DatePicker popup.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2451,7 +2451,7 @@ Fires when each date is created in the DatePicker popup calendar.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2525,7 +2525,7 @@ Fires before opening the DatePicker popup.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2605,7 +2605,7 @@ Fires when the DatePicker input value is changed.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2682,7 +2682,7 @@ Fires when DatePicker popup is closed.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2759,7 +2759,7 @@ Fires when the DatePicker is created successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2824,7 +2824,7 @@ Fires when the DatePicker is destroyed successfully.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2881,7 +2881,7 @@ Fires when DatePicker input gets focus.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2946,7 +2946,7 @@ Fires when DatePicker input loses the focus.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3023,7 +3023,7 @@ Fires when DatePicker popup is opened.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3100,7 +3100,7 @@ Fires when a date is selected from the DatePicker popup.
 <td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be cancelled, else false.</td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">

@@ -51,7 +51,7 @@ A Rotator widget can be made by the following steps.
 The following guidelines help you to configure images.
 
 * Copy the following codes in the **HTML** file. 
-* Ensure you have saved images in the **Rotator/imi** folder.
+* Ensure you have saved images in the **Rotator/image** folder.
 
 
 {% highlight html %}
@@ -61,11 +61,11 @@ The following guidelines help you to configure images.
       <div class="cols-sample-area">
          <div class="frame">
             <ul id="sliderContent">
-               <li><img class="image" src="../imi/Untitled.png"/></li>
-               <li><img class="image" src="../imi/Untitled1.png"/></li>
-               <li><img class="image" src="../imi/Untitled2.png"/></li>
-               <li><img class="image" src="../imi/Untitled3.png"/></li>
-               <li><img class="image" src="../imi/Untitled4.png"/></li>
+               <li><img class="image" src="../image/Untitled.png"/></li>
+               <li><img class="image" src="../image/Untitled1.png"/></li>
+               <li><img class="image" src="../image/Untitled2.png"/></li>
+               <li><img class="image" src="../image/Untitled3.png"/></li>
+               <li><img class="image" src="../image/Untitled4.png"/></li>
             </ul>
          </div>
       </div>
