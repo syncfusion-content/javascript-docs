@@ -185,6 +185,8 @@ Specifies the export settings.
 ### exportSettings.exportOptions `enum`
 {:#members:exportsettings-exportoptions}
 
+<ts name = "ej.ReportViewer.ExportOptions"/>
+
 Specifies the export formats.
 
 <table class="params">
@@ -239,6 +241,8 @@ Specifies the export formats.
 ### exportSettings.excelFormat `enum`
 {:#members:exportsettings-excelformat}
 
+<ts name = "ej.ReportViewer.ExcelFormats"/>
+
 Specifies the excel export format.
 
 <table class="params">
@@ -288,6 +292,8 @@ Specifies the excel export format.
 
 ### exportSettings.wordFormat `enum`
 {:#members:exportsettings-wordformat}
+
+<ts name = "ej.ReportViewer.WordFormats"/>
 
 Specifies the word export format.
 
@@ -455,6 +461,8 @@ Specifies the page settings.
 ### pageSettings.orientation `enum`
 {:#members:pagesettings-orientation}
 
+<ts name = "ej.ReportViewer.Orientation"/>
+
 Specifies the print layout orientation.
 
 <table class="params">
@@ -496,6 +504,8 @@ Specifies the print layout orientation.
 
 ### pageSettings.paperSize `enum`
 {:#members:pagesettings-papersize}
+
+<ts name = "ej.ReportViewer.PaperSize"/>
 
 Specifies the paper size of print layout.
 
@@ -766,6 +776,8 @@ Enables and disables the print mode.
 ### printOptions `enum`
 {:#members:printOptions}
 
+<ts name = "ej.ReportViewer.PrintOptions"/>
+
 Specifies the print option of the report.
 
 <table class="params">
@@ -809,6 +821,8 @@ Specifies the print option of the report.
 ### processingMode `enum`
 {:#members:processingmode}
 
+<ts name = "ej.ReportViewer.ProcessingMode"/>
+
 Specifies the processing mode of the report.
 
 <table class="params">
@@ -847,6 +861,8 @@ Specifies the processing mode of the report.
 
 ### renderMode `enum`
 {:#members:rendermode}
+
+<ts name = "ej.ReportViewer.RenderMode"/>
 
 Specifies the render layout.
 
@@ -978,6 +994,8 @@ Fires when user click on toolbar item in the toolbar.
 
 ### toolbarSettings.items `enum`
 {:#members:toolbarsettings-items}
+
+<ts name = "ej.ReportViewer.ToolbarItems"/>
 
 Specifies the toolbar items.
 
