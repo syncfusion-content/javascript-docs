@@ -145,7 +145,8 @@ JQueryPromise
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/");
 var query =  ej.Query().select(["OrderID", "CustomerID", "ShipName"]).from("Orders").take(3);
 var promise = dataManager.executeQuery(query);
-promise.done(function(e){}); 
+promise.done(function(e){});
+promise.fail(function(e){});
 </script>{% endhighlight %}
 
 
