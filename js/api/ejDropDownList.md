@@ -921,14 +921,12 @@ When the enableFilterSearch property value is set to true, the values in the Dro
 </thead>
 <tbody>
 <tr>
-<td class="name">
-ej.FilterType.Contains</td>
+<td class="name"><ts ref="ej.FilterType.Contains"/></td>
 
 <td class="description last">filter the data wherever contains search key </td>
 </tr>
 <tr>
-<td class="name">
-ej.FilterType.StartsWith</td>
+<td class="name"><ts ref ="ej.FilterType.StartsWith"/></td>
 
 <td class="description last">filter the data based on search key present at start position</td>
 </tr>
@@ -1425,14 +1423,12 @@ With the help of this property, you can make a single or multi selection with th
 </thead>
 <tbody>
 <tr>
-<td class="name">
-ej.MultiSelectMode.None</td>
+<td class="name"><ts ref="ej.MultiSelectMode.None"/></td>
 
 <td class="description last"> can select only single item in DropDownList </td>
 </tr>
 <tr>
-<td class="name">
-ej.MultiSelectMode.Delimiter</td>
+<td class="name"><ts ref="ej.MultiSelectMode.Delimiter"/></td>
 
 <td class="description last">can select multiple items and it's seperated by delimiterChar</td>
 </tr>
@@ -1986,14 +1982,12 @@ When the enableSorting property value is set to true, this property helps to sor
 </thead>
 <tbody>
 <tr>
-<td class="name">
-ej.SortOrder.Ascending</td>
+<td class="name"><ts ref="ej.SortOrder.Ascending"/></td>
 
 <td class="description last"> Sort the data in ascending order</td>
 </tr>
 <tr>
-<td class="name">
-ej.SortOrder.Descending</td>
+<td class="name"><ts ref="ej.SortOrder.Descending"/></td>
 
 <td class="description last">Sort the data in descending order</td>
 </tr>
@@ -2477,14 +2471,12 @@ This property enables the data to load dynamically in two ways.
 </thead>
 <tbody>
 <tr>
-<td class="name">
-ej.VirtualScrollMode.Normal</td>
+<td class="name"><ts ref="ej.VirtualScrollMode.Normal"/></td>
 
 <td class="description last"> The data is loaded only to the corresponding page (display items). When scrolling some other position, it enables the load on demand with the DropDownList.</td>
 </tr>
 <tr>
-<td class="name">
-ej.VirtualScrollMode.Continuous</td>
+<td class="name"><ts ref="ej.VirtualScrollMode.Continuous"/></td>
 
 <td class="description last">The data items are loaded from the remote when scroll handle reaches the end of the scrollbar like infinity scrolling.</td>
 </tr>
