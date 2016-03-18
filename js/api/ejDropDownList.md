@@ -907,7 +907,7 @@ Defines the tag value.
 {:#members:filterType}
 
 
-
+<ts name="ej.FilterType"/>
 
 When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search textbox.
 
@@ -922,13 +922,13 @@ When the enableFilterSearch property value is set to true, the values in the Dro
 <tbody>
 <tr>
 <td class="name">
-ej.FilterType.Contains</td>
+contains</td>
 
 <td class="description last">filter the data wherever contains search key </td>
 </tr>
 <tr>
 <td class="name">
-ej.FilterType.StartsWith</td>
+startsWith</td>
 
 <td class="description last">filter the data based on search key present at start position</td>
 </tr>
@@ -1412,7 +1412,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 ### multiSelectMode `enum` 
 {:#members:multiselectmode }
 
-
+<ts name="ej.MultiSelectMode"/>
 
 With the help of this property, you can make a single or multi selection with the DropDownList and display the text in two modes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
 
@@ -1426,19 +1426,19 @@ With the help of this property, you can make a single or multi selection with th
 <tbody>
 <tr>
 <td class="name">
-ej.MultiSelectMode.None</td>
+none</td>
 
 <td class="description last"> can select only single item in DropDownList </td>
 </tr>
 <tr>
 <td class="name">
-ej.MultiSelectMode.Delimiter</td>
+delimiter</td>
 
 <td class="description last">can select multiple items and it's seperated by delimiterChar</td>
 </tr>
 <tr>
 <td class="name">
-ej.MultiSelectMode.VisualMode</td>
+visualMode</td>
 
 <td class="description last"> can select multiple items and it's show's like visual box in textbox</td>
 </tr>
@@ -1972,7 +1972,7 @@ DropDownList textbox displayed with the rounded corner style.
 ### sortOrder  `enum`
 {:#members:sortorder}
 
-
+<ts name="ej.SortOrder"/>
 
 
 When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
@@ -1987,13 +1987,13 @@ When the enableSorting property value is set to true, this property helps to sor
 <tbody>
 <tr>
 <td class="name">
-ej.SortOrder.Ascending</td>
+ascending</td>
 
 <td class="description last"> Sort the data in ascending order</td>
 </tr>
 <tr>
 <td class="name">
-ej.SortOrder.Descending</td>
+descending</td>
 
 <td class="description last">Sort the data in descending order</td>
 </tr>
@@ -2461,7 +2461,7 @@ Defines the width of the DropDownList textbox.
 ### virtualScrollMode  `enum` 
 {:#members:virtualscrollmode}
 
-
+<ts name="ej.VirtualScrollMode" />
 
 The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an Ajax request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items to be fetched from the server on every Ajax request. 
 
@@ -2478,13 +2478,13 @@ This property enables the data to load dynamically in two ways.
 <tbody>
 <tr>
 <td class="name">
-ej.VirtualScrollMode.Normal</td>
+normal</td>
 
 <td class="description last"> The data is loaded only to the corresponding page (display items). When scrolling some other position, it enables the load on demand with the DropDownList.</td>
 </tr>
 <tr>
 <td class="name">
-ej.VirtualScrollMode.Continuous</td>
+continuous</td>
 
 <td class="description last">The data items are loaded from the remote when scroll handle reaches the end of the scrollbar like infinity scrolling.</td>
 </tr>

@@ -164,7 +164,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 ![](Summary_images/summaryGrid_img3.png)
 
 
-### Custom Summary
+## Custom Summary
 
 Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
 

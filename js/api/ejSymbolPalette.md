@@ -378,19 +378,14 @@ Triggers when a palette item is selected or unselected
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">argument</td>
-			<td class="type">Object</td>
-			<td class="description">args parameter from diagram</td>
-		</tr>
-		<tr>
-			<td class="name">argument.changetype</td>
+			<td class="name">changeType</td>
 			<td class="type">String</td>
-			<td class="description">return should be inserted or removed</td>
+			<td class="description last">returns whether an element is selected or unselected</td>
 		</tr>
 		<tr>
-			<td class="name">argument.element</td>
+			<td class="name">element</td>
 			<td class="type">Object</td>
-			<td class="description">parameter returns node or connector which to be added or deleted</td>
+			<td class="description last">returns the node or connector that is selected or unselected</td>
 		</tr>
 	</tbody>
 </table>
