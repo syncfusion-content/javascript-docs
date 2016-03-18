@@ -64,7 +64,7 @@ $("#OlapClient1").ejOlapClient(...);
 ### chartType `enum`
 {:#members:charttype}
 
-<ts ref = "ej.olap.OlapChart.ChartTypes"/>
+<ts name = "ej.olap.OlapChart.ChartTypes"/>
 
 Allows the user to set the specific chart type for OlapChart.
 
