@@ -15,7 +15,7 @@ Support has been provided in PivotGrid to load and render large amount of data w
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotPager()
 

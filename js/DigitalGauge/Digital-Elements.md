@@ -26,7 +26,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Digital Gauge rendering

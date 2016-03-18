@@ -21,7 +21,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For circular gauge rendering
@@ -54,7 +54,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -97,7 +97,7 @@ The Pointers border is modified with the object called **border** as in scales. 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Circular Gauge rendering
@@ -142,7 +142,7 @@ Based on the value, the**pointer** point out the label value. You can set the po
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -189,7 +189,7 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     // For Circular Gauge rendering
@@ -311,7 +311,7 @@ In this type, needle pointer is completely replaced by image. We can implement i
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function() {
         $("#CoreCircularGauge").ejCircularGauge({
@@ -385,7 +385,7 @@ In this type, marker pointer is completely replaced by image. We can implement i
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#CoreCircularGauge").ejCircularGauge({
@@ -459,7 +459,7 @@ In this type, marker pointer is drawn first and then image also loaded. We can i
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#CoreCircularGauge").ejCircularGauge({
@@ -522,7 +522,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -580,7 +580,7 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#CircularGauge1").ejCircularGauge({
@@ -639,7 +639,7 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#CircularGauge1").ejCircularGauge({
@@ -693,7 +693,7 @@ Similar to other collection, font option is also available in this pointer value
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
    $(function () {
         $("#CircularGauge1").ejCircularGauge({

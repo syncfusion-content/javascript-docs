@@ -14,7 +14,7 @@ PivotSchemaDesigner, also known as PivotTable Field List, is automatically popul
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotSchemaDesigner()
 

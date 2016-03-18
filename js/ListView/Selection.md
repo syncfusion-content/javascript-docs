@@ -39,7 +39,7 @@ Refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#defaultlistbox").ejListView({ enableCheckMark: true, width: 400 });
@@ -85,7 +85,7 @@ Refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#defaultlistbox").ejListView({ preventSelection: true, width: 400 });
@@ -125,7 +125,7 @@ Refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
     
         $(function () {
             $("#defaultlistbox").ejListView({ persistSelection: true, width: 400 });

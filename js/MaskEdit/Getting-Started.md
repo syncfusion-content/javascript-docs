@@ -159,7 +159,7 @@ Initialize **textbox** in the **&lt;script&gt;** tag.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function() {
             $("#maskedit").ejMaskEdit({
@@ -240,7 +240,7 @@ The **&lt;script&gt;** tag defines the mask value for product key.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function() {

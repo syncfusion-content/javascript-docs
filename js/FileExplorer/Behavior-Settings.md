@@ -17,7 +17,7 @@ FileExplorer control showcase all the files from the filesystem, here you can cu
 
 By default it having the value “*.*”, so it allows all the file types. In case of image browser you can allow the image files only by setting "*.png, *.gif, *.jpg, *.jpeg", so it doesn’t allow the other type of files.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
 
@@ -57,7 +57,7 @@ You can see the following requests passed during the **client – server actions
 
 The following is the syntax for ajaxSettings property.
 
-{% highlight js %}
+{% highlight javascript %}
 
        ajaxSettings: { read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, upload: {}, download: {}, getImage: {} }
                 
@@ -67,7 +67,7 @@ The actions “read, createFolder, remove, rename, paste, getDetails” are supp
 
 If you want to customize read action alone, the AJAX **url** and **dataType** are changed for the read action, refer the below code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

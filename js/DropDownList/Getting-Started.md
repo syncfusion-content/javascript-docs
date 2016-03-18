@@ -123,7 +123,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 			
 	{% endhighlight %}
 	
-	{% highlight js %}	
+	{% highlight javascript %}	
 	
 		$(function () {
 				
@@ -148,7 +148,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 	
 	{% endhighlight %}
 	
-	{% highlight js %}	
+	{% highlight javascript %}	
 	
 	$(function () {
 		
@@ -177,7 +177,7 @@ DropDownList dimensions can be set using width and height API.
 	
 	{% endhighlight %}
 	
-	{% highlight js %}	
+	{% highlight javascript %}	
 	
 	$(function () {
 			
@@ -201,7 +201,7 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 
 	{% endhighlight %}
 	
-	{% highlight js %}
+	{% highlight javascript %}
 	
 	
 	$(function () {
@@ -250,7 +250,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
 
 	{% endhighlight %}
 	
-	{% highlight js %}	
+	{% highlight javascript %}	
 	
 	$(function () {
 		

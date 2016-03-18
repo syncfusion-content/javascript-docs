@@ -17,7 +17,7 @@ The TimePicker control for JavaScript allows users to select a time value. The a
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTimePicker()
 

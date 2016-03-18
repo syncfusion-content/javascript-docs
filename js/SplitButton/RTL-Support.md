@@ -29,7 +29,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Initialize the control in JavaScript
      

@@ -15,7 +15,7 @@ We can localize the OlapClient controls text with a collection of localized stri
 
 Following code example illustrates on how to localize OlapClient based on **French** culture.
 
-{% highlight js %}
+{% highlight javascript %}
 
 ej.olap.OlapClient.locale["fr-FR"] = {
     DeferUpdate: "Différer Mise à jour",

@@ -13,7 +13,7 @@ The MaskEdit control provides an easy and reliable way of collecting user input 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejMaskEdit()
 

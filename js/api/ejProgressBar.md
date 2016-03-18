@@ -23,7 +23,7 @@ The ProgressBar control is a graphical control element used to visualize the cha
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejProgressBar()
 

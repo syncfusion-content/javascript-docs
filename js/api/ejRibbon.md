@@ -13,7 +13,7 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(element).ejRibbon();
 
@@ -7336,7 +7336,7 @@ Destroys the ribbon widget. All the events bound using this._on are unbound auto
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
  
     <script>
     var ribbonObj = $("#Ribbon").data("ejRibbon");
@@ -7346,7 +7346,7 @@ Destroys the ribbon widget. All the events bound using this._on are unbound auto
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
     <script>
     // destroy the ribbon

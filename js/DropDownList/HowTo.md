@@ -19,7 +19,7 @@ documentation: ug
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             var items = [
@@ -59,7 +59,7 @@ Adding text and value is demonstrated in the below given sample,
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
        $(function () {
             var items = [
@@ -98,7 +98,7 @@ Bind the select event and you can retrieve the value from args.value.
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             var items = [
@@ -154,7 +154,7 @@ You can use [headerTemplate](http://help.syncfusion.com/js/api/ejdropdownlist#me
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             var items = [

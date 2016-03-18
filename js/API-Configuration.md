@@ -16,7 +16,7 @@ It is possible to get and set the various properties available within the contro
 The API values can be accessed by using either of the following ways,
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 // First way
 $("jquery-selector").ej-plugin-name("model.propertyName");
@@ -37,7 +37,7 @@ It is possible to set new values to the properties of the Syncfusion widgets eit
 
 ### During Initialization
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("jquery-selector").ej-plugin-name({
     propertyName1: value1,
@@ -55,7 +55,7 @@ $("#myDate").ejDatePicker({
 
 ### After initialization
 
-{% highlight js %}
+{% highlight javascript %}
 
 // First way
 var obj = $("jquery-selector").data("ej-plugin-name"); // [RECOMMENDED METHOD]

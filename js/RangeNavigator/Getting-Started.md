@@ -92,7 +92,7 @@ To add series to **ejRangeNavigator,** you need to set **dataSource** property o
 
 You can create data source for **RangeNavigator** as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 
     window.chartData = [{ “xDate”: new Date(2011, 0, 1), “yValue”: 10 },
                         { “xDate”: new Date(2011, 2, 1), “yValue”: 5 },
@@ -107,7 +107,7 @@ You can create data source for **RangeNavigator** as follows.
 
 Now, add the **dataSource** to the **RangeNavigator** and provide the field name to get the values from the **dataSource** in **xName** and **yName** options.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
             $(“#rangecontainer”).ejRangeNavigator({
@@ -131,7 +131,7 @@ You can customize **Tooltip** for RangeNavigator using **tooltip** option. You c
 
 The following code sample shows how to enable a Tooltip.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $(function () {
@@ -209,7 +209,7 @@ $(function () {
 
 You can update the chart with the selected data using the **rangeChanged** event of **ejRangeNavigator**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#rangecontainer").ejRangeNavigator({
     //...
@@ -240,7 +240,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 You can create a **dataSource** for Chart Series with integer Values using the following code sample.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     window.chartData = [
@@ -258,7 +258,7 @@ You can create a **dataSource** for Chart Series with integer Values using the f
 
 Now, you can set the **dataSource** for Chart Series and **valueType** property to “numeric” as given in the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
           $("#rangecontainer").ejRangeNavigator({

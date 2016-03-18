@@ -87,7 +87,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
   
     // Add the code in your script section with start level as century in DateTimePicker popup
     $('#dateTime').ejDateTimePicker({
@@ -110,7 +110,7 @@ The following code snippet is set to depth level in **DateTimePicker.**
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#dateTime').ejDateTimePicker({
        startLevel: "century",

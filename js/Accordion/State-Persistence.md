@@ -48,7 +48,7 @@ In an HTML page, define a div element that is a container for  Accordion wi
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure enablePersistence for Accordion
     $("#accordion").ejAccordion({

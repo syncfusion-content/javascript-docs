@@ -49,7 +49,7 @@ To include the control in the application the following references need to be ad
 
 Add the below CSS reference in the head section, for the default theme
 
-{% highlight js %}
+{% highlight javascript %}
 
        <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br /><br />
 
@@ -130,7 +130,7 @@ For getting started you can use the “**ej.web.all.min.js**” file, which enca
 
 So you can add the below Script references in the head section:
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     <!--External script references-->
@@ -168,7 +168,7 @@ The control can be created from a div element. So you can add the div element in
 
 Once added the element you can initialize the control from the script section like below:
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

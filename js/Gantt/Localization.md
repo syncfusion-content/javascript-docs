@@ -39,7 +39,7 @@ baselineStartDate<br/>
 baselineEndDate<br/>
 </td>
 <td>
-{% highlight js %}
+{% highlight javascript %}
 columnHeaderTexts: 
 {
 taskId: "ID",
@@ -63,7 +63,7 @@ editFormTitle<br/>
 saveButton<br/>
 cancelButton<br/>
 </td><td>
-{% highlight js %}
+{% highlight javascript %}
 editDialogTexts: 
 {
 addFormTitle: "New Task",
@@ -76,7 +76,7 @@ cancelButton: "Cancel"
 <tr>
 <td>
 Date Format</td><td>
-{% highlight js %}
+{% highlight javascript %}
 calendars: 
 {
 standard: {
@@ -126,7 +126,7 @@ Refer the external dependency to support localization
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     ej.Gantt.localization["fr-FR"] = {
 

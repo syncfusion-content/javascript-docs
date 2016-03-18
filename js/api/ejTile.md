@@ -16,7 +16,7 @@ The Web Tiles are simple, opaque rectangles or squares and they are arrayed on t
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTile()
 

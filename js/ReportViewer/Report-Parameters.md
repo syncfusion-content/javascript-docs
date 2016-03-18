@@ -13,7 +13,7 @@ The ReportViewer has support to add report Parameters to ReportViewer at runtime
 
 The following code example illustrates how to add ReportParameter at control creation.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#viewer").ejReportViewer({
     reportServiceUrl: "/api/SSRSReport",

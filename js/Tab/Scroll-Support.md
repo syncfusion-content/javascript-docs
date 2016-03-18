@@ -68,7 +68,7 @@ Add the following **HTML** code to create a simple Tab with scroll button.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render Tab control        
         $(function () {

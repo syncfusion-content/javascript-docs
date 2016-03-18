@@ -19,7 +19,7 @@ The Navigation Drawer is a sliding panel that displays the list of navigation op
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejNavigationDrawer()
 

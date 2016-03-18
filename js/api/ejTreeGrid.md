@@ -14,7 +14,7 @@ keywords: ejTreeGrid, API, Essential JS TreeGrid
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTreeGrid()
 

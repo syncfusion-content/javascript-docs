@@ -11,7 +11,7 @@ documentation: ug
 
 Defer Update support allows the user to refresh the control on-demand and not during every user interaction. To enable this functionality, set the `enableDeferUpdate` property to true. By default, the value is set to false.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
     url: "../OlapClient",

@@ -27,7 +27,7 @@ To use ejMap, refer the following libraries in **HTML** page.
 
 You can link these libraries from a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
 
-{% highlight js %}
+{% highlight javascript %}
 
     <!--  jquery script  -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
@@ -53,7 +53,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 **[usa.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
     var usMap = //Paste all the content copied from the JSON file//
 
@@ -65,7 +65,7 @@ The datasource is populated with JSON data relative to shape data and stored in 
 
 **[populationData.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
     var populationData = [
         { name: "California", population: "38332521" },
@@ -127,7 +127,7 @@ The datasource is populated with JSON data relative to shape data and stored in 
 
 Refer to both shape data and datasource as illustrated in the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
     <!-- Shape data file-->
     <script src="usa.js" type="text/javascript"></script>
@@ -141,7 +141,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 1\. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size.
 
-{% highlight js %}
+{% highlight javascript %}
 
     <body>
         <div id="mapContainer" style="width: 900px; height: 600px;"></div>
@@ -152,7 +152,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 2\. Add a script tag anywhere in the web page and add the following code. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     <script type="text/javascript" language="javascript ">
         jQuery(function ($) {	
@@ -170,7 +170,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 3\. The final **HTML** file appears as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>

@@ -32,7 +32,7 @@ The **en-US** locale is currently being used as default culture in DatePicker. Y
 
 Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
 
- {% highlight js %}
+ {% highlight javascript %}
    
            <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.de-DE.min.js"></script>
                 
@@ -40,7 +40,7 @@ Refer the below German culture file in head section of html page after the refer
 
 Set German culture to DatePicker at initialization.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -62,7 +62,7 @@ Set German culture to DatePicker at initialization.
 
 By default DatePicker input has **“select date”** as watermark text, you can also change this value by using [watermarkText](http://help.syncfusion.com/js/api/ejdatepicker#members:watermarktext) property. Also there’s a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **‘buttonText’** property.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -84,7 +84,7 @@ Based on culture specific, only date gets localized but by changing the watermar
 
 Refer below code example to update those value based some culture say for example English and German.
 
-{% highlight js %}
+{% highlight javascript %}
 
     ej.DatePicker.Locale['en-US'] = {
         watermarkText: "Select date",

@@ -58,7 +58,7 @@ Create the **ejLinearGauge** widget as follows,
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#LinearGauge1").ejLinearGauge();
@@ -80,7 +80,7 @@ On executing the above code sample renders a default **Linear Gauge** with defau
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -105,7 +105,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -141,7 +141,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -185,7 +185,7 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -226,7 +226,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -270,7 +270,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -332,7 +332,7 @@ On executing the above code sample renders a **Linear Gauge** with custom labels
 
 The following code example illustrates how to use custom texts.
 
-{% highlight js %}
+{% highlight javascript %}
 
    $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -378,7 +378,7 @@ You can add a function to convert the temperature from Degrees to Fahrenheit val
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -414,7 +414,7 @@ You can add the function that displays the current temperature value in the cust
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {

@@ -63,7 +63,7 @@ I> The given excluded properties can be included in persist state using `_ignore
 
 Persisted state can be accessed through local storage using corresponding key name. Key name is the combination of plugin name and control id.
 
-{% highlight js %}
+{% highlight javascript %}
 var gridStateString = window.localStorage.ejGridGrid; // grid state as string
 
 var gridStateObject = JSON.parse(window.localStorage.ejGridGrid);//grid state as object

@@ -151,7 +151,7 @@ Then, the data for the grid can be populated for using it as cell references whi
 
 And, the grid will be configured with `dataSource`.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script type="text/javascript">
 
@@ -220,7 +220,7 @@ Here the dependencies can be enabled by setting `UseDependencies` property to tr
 
 The methods `SetValueRowCol` and `GetValueRowCol` act as intermediate to transfer the data between CalcEngine and the Grid. These code can be written after sheet has been registered into CalcEngine.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script type="text/javascript">
 <!--- other codes --->
@@ -310,7 +310,7 @@ calcObj.setValueRowCol = function (sheetID, value, row, col) {
 
 The given formula in the text box can be evaluated using `parseAndComputeFormula` by click on the `compute` button.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("input:button").ejButton({
 click: function (args) {
@@ -362,7 +362,7 @@ These registered variable names are indexer keys. In `[C] = [A] + [B] * 10`, the
 CalcQuick object can be created in the `body` tag. Each element is registered as the key or virtual references by using the `setKeyValue` method.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script type="text/javascript">
 
@@ -382,7 +382,7 @@ CalcQuick object can be created in the `body` tag. Each element is registered as
 
 After registering keys, the formulas and values are assigned for the keys.
 
-{% highlight js %}
+{% highlight javascript %}
 
 document.getElementById("txtBoxA").value = "12"; 
 document.getElementById("txtBoxB").value = "3"; 
@@ -396,7 +396,7 @@ document.getElementById("txtBoxC").value = "= [A] + 2 * [B]";
 
 The evaluation of keys can be triggered using `setDirty` method which will computes the formulas of the keys. The result will be returned through `getKeyValue` method.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //evaluating key formulas
 calculator.setDirty(); 

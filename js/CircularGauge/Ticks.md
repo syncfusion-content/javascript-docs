@@ -21,7 +21,7 @@ Tick collection is directly added to the scale object. Refer the following code 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -56,7 +56,7 @@ Major type ticks are for major interval values and minor type ticks are for mino
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     $(function () {

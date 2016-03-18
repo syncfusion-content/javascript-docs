@@ -157,7 +157,7 @@ To export multiple grids in current page, the method `ej.Grid.exportAll` can be 
 
 The JavaScript code snippet for it is 
 
-{% highlight js %}
+{% highlight javascript %}
 	$('#exportAll').click(function(){
 			ej.Grid.exportAll('MultipleExportToExcel',['#Grid1', '#Grid2']);
 		});
@@ -272,7 +272,7 @@ By default `pageSettings` is ignored in export to facilitate all pages export. T
 
 The snippet for this is.
 
-{% highlight js %}
+{% highlight javascript %}
 
 	var grid = $('#Grid').ejGrid('instance');
 	grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('pageSettings'), 1);
@@ -337,7 +337,7 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) can be sent to server on export postback by removing the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
 
-{% highlight js %}
+{% highlight javascript %}
 
 var grid = $('#GridId').ejGrid('instance');
 grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);

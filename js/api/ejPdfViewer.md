@@ -163,7 +163,7 @@ Gets the total number of pages in PDF document.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 var totalPages = pdfviewerObj.pageCount;
@@ -179,7 +179,7 @@ Gets the number of the page being displayed in the PDF Viewer.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 var currentPage = pdfviewerObj.currentPageNumber;
@@ -196,7 +196,7 @@ Gets the current zoom percentage of the PDF document in viewer.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 var currentZoom = pdfviewerObj.zoomPercentage;
@@ -247,7 +247,7 @@ Denotes that the service is hosted in the remote server
 The below code snippet shows the service accessed from remote server.
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 <div id="viewer"></div>
 <script type="text/javascript">
         $(function () {
@@ -267,7 +267,7 @@ Navigates to the specific page in the PDF document. If the page is not available
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToPage(4);
@@ -283,7 +283,7 @@ Navigates to the last page of the PDF document.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToLastPage();
@@ -299,7 +299,7 @@ Navigates to the first page of PDF document.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToFirstPage();
@@ -315,7 +315,7 @@ Navigates to the next page of the PDF document.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToNextPage();
@@ -331,7 +331,7 @@ Navigates to the previous page of the PDF document.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToPreviousPage();
@@ -347,7 +347,7 @@ Shows/hides the page navigation tools in the toolbar
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showPageNavigationTools(false);
@@ -363,7 +363,7 @@ Shows/hides the zoom tools in the tool bar.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showMagnificationTools(false);
@@ -379,7 +379,7 @@ Shows/hides the tool bar in the PDF viewer.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showToolbar(false);
@@ -395,7 +395,7 @@ Loads the document with the filename and displays it in PDF viewer.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.load("Manual");
@@ -410,7 +410,7 @@ Scales the page to fit the page in the container in the control.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.fitToPage();
@@ -426,7 +426,7 @@ Scales the page to fit the page width to the width of the container in the contr
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.fitToWidth();
@@ -442,7 +442,7 @@ Magnifies the page to the next value in the zoom drop down list.
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomIn();
@@ -458,7 +458,7 @@ Shrinks the page to the previous value in the magnification in the drop down lis
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomOut();
@@ -474,7 +474,7 @@ Scales the page to the specified percentage ranging from 50 to 400. If the given
 #### Example:
 
 {% tabs %}
-{% highlight js %}
+{% highlight javascript %}
 
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomTo(130);

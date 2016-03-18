@@ -44,7 +44,7 @@ The local data can be an array of JSON objects which is assigned for the ListBox
 
 Here the bikeName and bikeId fields are mapped with text and id properties of the field object respectively.
 
-{% highlight js %}
+{% highlight javascript %}
 
 jQuery(function ($)
         {
@@ -120,7 +120,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {
@@ -164,7 +164,7 @@ The scrolling type can be defined via `virtualScrollMode` property.
 
 This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {
@@ -205,7 +205,7 @@ This mode allows you to load the list box data when the scrollbar reaches the en
 
 The number of items to be loaded per request can be specified using the “itemRequestCount” property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {
@@ -256,7 +256,7 @@ N> _The “itemRequestCount” property will work only when “virtualScrollMode
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
      jQuery(function ($) {

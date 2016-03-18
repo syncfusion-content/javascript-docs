@@ -15,7 +15,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 var dataManager = new ej.DataManager(datasource, query, adaptor)
 

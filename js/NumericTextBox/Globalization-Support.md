@@ -39,7 +39,7 @@ The following example describes the way to use Globalization for NumericTextBox 
         
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         /* Numeric Textbox */
         $("#numeric").ejNumericTextbox({

@@ -22,7 +22,7 @@ To select an item initially you can pass the item’s value via [value](http://h
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var items = [{
@@ -64,7 +64,7 @@ N> To retrieve the selected item’s li elements and value you can use [getSelec
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -110,7 +110,7 @@ You can select a single or more than one item by passing index values to the pro
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -151,7 +151,7 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -197,7 +197,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     var obj;
 
@@ -253,7 +253,7 @@ The below given example explains the behavior of grouping with JSON array bindin
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function() {
 	    var skillset = [{
@@ -350,7 +350,7 @@ N> 2.  When using UL-LI elements you need to use “e-category” class in li el
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function() {
 	    $('#dropdown1').ejDropDownList({
@@ -374,7 +374,7 @@ Sorting is enabled to order to display the items alphabetically in either ascend
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function() {
 	    var items = [{
@@ -430,7 +430,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         //first dropdown
@@ -559,7 +559,7 @@ You can also bind the data source to the cascading DropDownList dynamically usin
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
     $(function() {
         //first dropdown
@@ -656,7 +656,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
      $(function() {
         var items = [{
@@ -706,7 +706,7 @@ N> Items are filtered based on “contains” filter type by default.
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var items = [{
@@ -770,7 +770,7 @@ Required field and min value validation is demonstrated in the below given examp
                 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{

@@ -16,7 +16,7 @@ documentation: ug
 Set **id** for RadioButton control as follows.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             //set new id value as follows
@@ -35,7 +35,7 @@ Setting a new prefix id for **RadioButton** control is as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             //set new idPrefix value as follows
@@ -64,7 +64,7 @@ Set name and value for each radio button control as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             //set name and value for each radio button as follows

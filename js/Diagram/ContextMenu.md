@@ -17,7 +17,7 @@ Diagram provides some in-built context menu items and allows to define custom me
 The `enableContextMenu` property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
 The following code illustrates how to enable the default context menu items.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
 	width: "700px",
@@ -35,7 +35,7 @@ $("#DiagramContent").ejDiagram({
 Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `contextMenu.items`. Sub menu items for context menu can set using `contextMenu.items.subItems`
 The following code example illustrate how to add custom context menu items.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
 	width: "700px",
@@ -93,7 +93,7 @@ The following code example illustrates how to customize the icon of context menu
 
 You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
 	contextMenu: {

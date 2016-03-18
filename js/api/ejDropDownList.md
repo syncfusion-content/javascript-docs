@@ -16,7 +16,7 @@ The DropDownList control provides a list of options to choose an item from the l
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDropDownList()
 

@@ -59,7 +59,7 @@ Add the following **HTML** to render sub **Tab** with **ajax** content.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render sub Tab with Ajax content.
         $(function () {

@@ -18,7 +18,7 @@ documentation: ug
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
@@ -34,7 +34,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 **Localization** is the key feature that provides solutions globally with the help of localized control. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
                $("#rangecontainer").ejRangeNavigator({
@@ -55,7 +55,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 **Right-to-Left** or **RTL** describes the ability of application to handle and responds you to communicate with a right-to-left language, like Arabic or Japanese. **enableRTL** property is used to change the rendering format  to **"Right to Left"**, by default it renders from **"Left to Right"** in **RangeNavigator**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
                $("#rangecontainer").ejRangeNavigator({

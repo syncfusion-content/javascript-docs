@@ -18,7 +18,7 @@ The Tab control is an interface where list of items are expanded from a single i
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejTab()
 

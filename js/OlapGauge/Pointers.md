@@ -18,7 +18,7 @@ OlapGauge pointers has two types such as,
 
 Needle type pointers are the default pointers which is always located at the center of the Gauge. There are 5 different shapes for the needle pointers which are rectangle, triangle, trapezoid, arrow and image.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -39,7 +39,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 For marker pointer, the available shapes are rectangle, triangle, ellipse, diamond, pentagon, circle, slider, pointer, wedge, trapezoid, rounded rectangle and image.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -62,7 +62,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 Pointer collection can be directly added to the scales option within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -95,7 +95,7 @@ The appearance of the pointer can be customized through the following properties
 * **opacity** – sets the opacity of the pointer.  By default, the value is 1.
 * **type** – sets the type of the pointer.  By default, the type is “needle”.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -143,7 +143,7 @@ Pointer can be positioned with the help of below two properties.
 
 N> Both the properties can be applied only if the pointer type is set to "marker". Needle pointer type appears only at the center of the widget, which is its default position.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -168,7 +168,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 It is possible to replace the pointers with image. To view the pointers as image, we need to set the appropriate location in the `imageUrl` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -205,7 +205,7 @@ To display the current value of the pointers in OlapGauge widget, `pointerValueT
 * **angle** – sets the rotation angle of the text. By default, its value is 0.
 * **font** – sets the font size, font style and font family of the text.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

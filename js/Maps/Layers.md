@@ -31,13 +31,13 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 
 **[usa.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
     var world_map = //Paste all the content copied from the JSON file// 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({

@@ -52,7 +52,7 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -120,7 +120,7 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set the value to this property as **Boolean** type.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration

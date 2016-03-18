@@ -45,7 +45,7 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {

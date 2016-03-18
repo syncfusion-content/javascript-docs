@@ -11,7 +11,7 @@ documentation: ug
 
 OlapGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapGauge by setting [`isResponsive`](/js/api/ejolapgauge#members:isresponsive) property to true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

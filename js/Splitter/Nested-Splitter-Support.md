@@ -51,7 +51,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#outersplitter").ejSplitter({
         height: 280, width: 600,

@@ -22,7 +22,7 @@ Also, we can render the Dialog widget content through the following ways.
 
 This settings can be specified through `contentType` property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#dialog").ejDialog({
                 title: "Dialog",
@@ -56,7 +56,7 @@ We can handle the AJAX request’s success and failures through the events “aj
 
 The previous example is modified as below to handle the success and failure events.
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#dialog").ejDialog({
                 title: "Dialog",

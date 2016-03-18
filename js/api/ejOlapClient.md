@@ -14,7 +14,7 @@ OlapClient is an ad hoc analysis tool that can be easily bound to any OLAP datas
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejOlapClient()
 

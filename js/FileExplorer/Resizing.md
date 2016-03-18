@@ -13,7 +13,7 @@ The FileExplorer has the resize support through the resize handle which appears 
 
 The resize behavior can be enabled through the [enableResize](http://help.syncfusion.com/js/api/ejfileexplorer#members:enableresize) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -43,7 +43,7 @@ The resize behavior can be enabled through the [enableResize](http://help.syncfu
 
 By enabling the [isResponsive](http://help.syncfusion.com/js/api/ejfileexplorer#members:isresponsive) property, you can make the FileExplorer as responsive. While resizing the FileExplorer component, the inner content and toolbar items are automatically adjusted to equalize the size. The toolbar items are displayed within Dropdown on enabling the responsive. Otherwise it floated to the next line to equalize the space. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -76,7 +76,7 @@ By enabling the [isResponsive](http://help.syncfusion.com/js/api/ejfileexplorer#
 
 You can restrict the dimension of the FileExplorer by setting the [minHeight](http://help.syncfusion.com/js/api/ejfileexplorer#members:minheight), [maxHeight](http://help.syncfusion.com/js/api/ejfileexplorer#members:maxheight) and [minWidth](http://help.syncfusion.com/js/api/ejfileexplorer#members:minwidth),[maxWidth](http://help.syncfusion.com/js/api/ejfileexplorer#members:maxwidth) properties while resizing the FileExplorer. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

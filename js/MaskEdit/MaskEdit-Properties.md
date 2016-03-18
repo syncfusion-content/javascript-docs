@@ -38,7 +38,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function() {
             $("#maskedit").ejMaskEdit({

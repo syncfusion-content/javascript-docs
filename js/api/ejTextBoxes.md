@@ -23,7 +23,7 @@ keywords: TextBoxes, ejTextBoxes, syncfusion, TextBoxes api
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejNumericTextbox()
 

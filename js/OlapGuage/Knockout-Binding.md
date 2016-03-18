@@ -15,7 +15,7 @@ When using Knockout, the view page is simply a HTML document with declarative bi
 
 The following code example illustrates how to bind data to the OlapGauge through Knockout Binding.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var scale = [{
     showRanges: true,

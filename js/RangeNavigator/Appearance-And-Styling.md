@@ -15,7 +15,7 @@ documentation: ug
 
 The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using “**font**” property in label Settings. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#rangecontainer").ejRangeNavigator({
         // ...             
@@ -62,7 +62,7 @@ Labels in **RangeNavigator** are placed inside or outside of the control. You ca
 
 The following screen shot illustrates both the lower and higher level labels that are placed outside the control with **labelPlacement** specified as outside.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#rangecontainer").ejRangeNavigator({
         // ...             
@@ -92,7 +92,7 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 RangeNavigator is customized using **navigatorStyleSettings** properties. You can customize the selected and unselected region color using **selectedRegionColor**, **unselectedRegionColor** in **navigatorStyleSettings** and the thumb of the slider using **thumbColor, thumbRadius** and **thumbStroke** in **navigatorStyleSettings.  majorGridLineStyle** and **minorGridLineStyle**  are used to customize the grid line color and visibility.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#rangecontainer").ejRangeNavigator({
         // ...    
@@ -178,7 +178,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 15. gradientsaffron
 16. gradientsaffrondark
 
-{% highlight js %}
+{% highlight javascript %}
 
 
                $("#rangecontainer").ejRangeNavigator(

@@ -27,7 +27,7 @@ Refer to the following code examples.
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", textAlignment: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/camera.png", text: "Camera" });
 

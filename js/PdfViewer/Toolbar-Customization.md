@@ -36,7 +36,7 @@ The ejPdfViewer has an option to show or hide these grouped items in the default
 
 The below code snippet describes how to hide the magnification tools in the widget.
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
             var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ~ej.PdfViewer.ToolbarItems.MagnificationTools}});
         });
@@ -48,7 +48,7 @@ The toolbar can be customized as per the application’s needs, by hiding the ex
 
 Hide the default toolbar of the ejPdfViewer, by using the below code snippet.
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI"}).data("ejPdfViewer").showToolbar(false);
 });

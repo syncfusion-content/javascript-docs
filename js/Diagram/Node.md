@@ -21,7 +21,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 To create a node, You have to define the node object and add that to `nodes` collection of the Diagram model. The following code example illustrates how to add a node to the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 // Defines JSON to create a node
 var node = {
 	//Name of the node
@@ -58,7 +58,7 @@ $("#diagram").ejDiagram({
 
 Nodes can be added at runtime by using public method, `add`. The following code illustrates how to add a node.
 
-{% highlight js %}
+{% highlight javascript %}
 // Defines JSON to create a node
 var node = {
 	name: "node1",
@@ -97,7 +97,7 @@ Nodes can be interactively drawn by clicking and dragging the Diagram surface by
 
 The client side method `updateNode` is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 diagram.updateNode("nodeName", {
@@ -123,7 +123,7 @@ The following table illustrates how pivot relates offset values with node bounda
 
 The following code illustrates how to change the `pivot` value.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create node
 var nodes = [{
@@ -146,7 +146,7 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 You can customize the appearance of a node by changing its font, fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
 
-{% highlight js %}
+{% highlight javascript %}
 var nodes = [{
 	name: "node1",
 	width: 100, height: 100,
@@ -179,7 +179,7 @@ There are two types of gradients.
 
 The `gradient` property of node allows you to define and applies the gradient effect to that node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Creates linear gradient
 
@@ -230,7 +230,7 @@ var nodes = [{
 
 **Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `constraints` property of node. The following code illustrates how to drop shadow.
 
-{% highlight js %}
+{% highlight javascript %}
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 //Enables Shadow effect for a node.
@@ -252,7 +252,7 @@ var nodes = [{
 
 The following code illustrates how to disable shadow effect at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.findNode("node");
@@ -269,7 +269,7 @@ diagram.updateNode("node", { constraints: constraints });
 
 The angle, translation, and opacity of the shadow can be customized with the `shadow` property of node. The following code example illustrates how to customize shadow.
 
-{% highlight js %}
+{% highlight javascript %}
 var nodes = [{
 	name: "node", offsetX: 100, offsetY: 100,
 	height: 100, width: 100,

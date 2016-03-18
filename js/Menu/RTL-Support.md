@@ -67,7 +67,7 @@ The following code depicts you on how to enable the **rtl** property of the **Me
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     jQuery(function ($) {
         $("#menucontrol").ejMenu({ enableRTL: true });

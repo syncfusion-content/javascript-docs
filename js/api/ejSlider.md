@@ -24,7 +24,7 @@ The Slider provides support to select a value from a particular range as well as
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSlider()
 

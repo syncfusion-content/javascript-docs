@@ -31,7 +31,7 @@ The following code example is used to render the Rating control with **vertical*
     
  {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
       // Add the following script to render Rating with customized orientation.
     

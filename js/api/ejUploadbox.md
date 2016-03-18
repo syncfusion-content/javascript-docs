@@ -24,7 +24,7 @@ The Uploadbox control supports uploading files into the designated server, regar
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejUploadbox()
 

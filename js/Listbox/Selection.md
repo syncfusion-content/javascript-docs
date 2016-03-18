@@ -38,7 +38,7 @@ By default, the ListBox widget allows single item selection. We can select speci
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {
@@ -62,7 +62,7 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 {% seealso %} [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction). {% endseealso %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
           jQuery(function ($) {
@@ -87,7 +87,7 @@ The specified items can be checked on initialize through “checkedIndices” pr
 
 {% seealso %} [checkedIndices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {

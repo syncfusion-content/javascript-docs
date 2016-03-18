@@ -29,7 +29,7 @@ You can add the page content with text-area by referring to this section.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $('#defaultradialmenu').ejRadialMenu({ width: "250" });

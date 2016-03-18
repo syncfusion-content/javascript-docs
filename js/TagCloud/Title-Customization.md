@@ -26,7 +26,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Disable the Title element of TagCloud control as follows.
@@ -62,7 +62,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -101,7 +101,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Disable the Title element of TagCloud control as follows.

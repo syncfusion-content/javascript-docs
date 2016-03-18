@@ -15,7 +15,7 @@ A page or printed media with barcode often appears colorful in the background an
 
 N>    This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
-{% highlight js %}
+{% highlight javascript %}
 $("#barcode").ejBarcode({
    text: "B5330E8278BC4C797C49DD3ED5AD9715",
    symbologyType: "code39",
@@ -34,7 +34,7 @@ Execute the above code to render the following output.
 ##Customizing the Barcode height
 The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan).
 
-{% highlight js %}
+{% highlight javascript %}
 $("#barcode").ejBarcode({
    text: "B5330E8278BC4C797C49DD3ED5AD9715",
    symbologyType: "code39",

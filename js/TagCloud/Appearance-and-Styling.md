@@ -25,7 +25,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Assign the values for minFontSize  and maxFontSize properties below.
     
@@ -73,7 +73,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -133,7 +133,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
      // Add the cssClass property to TagCloud.

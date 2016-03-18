@@ -79,7 +79,7 @@ Make text bold<br/><br/></td></tr></table>
 
 To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#texteditor").ejRTE({
         value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +

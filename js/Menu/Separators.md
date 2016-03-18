@@ -68,7 +68,7 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function ($) {

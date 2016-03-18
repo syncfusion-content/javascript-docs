@@ -16,7 +16,7 @@ In order to achieve **Angular Binding,** refer the following script files.
 
 Apply the plugin and property assigning the OlapGauge element through the directive that starts with the letter "e-". The following example depicts how to bind data to the OlapGauge control through Angular support.
 
-{% highlight js %}
+{% highlight javascript %}
 
  var scale = [{
      showRanges: true,

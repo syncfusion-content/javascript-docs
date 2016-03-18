@@ -34,7 +34,7 @@ These files are referred under the <head> tag in HTML page.
 
 Exporting feature provides an option that allows you to export either OlapChart or PivotGrid or both with the use of the property `clientExportMode`. The following code example illustrates the same. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
     url: "../OlapClient",

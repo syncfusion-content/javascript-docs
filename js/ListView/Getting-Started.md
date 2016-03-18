@@ -74,7 +74,7 @@ Create the **ListView** control by adding script as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
             $(function () {
@@ -96,7 +96,7 @@ You can add a header for **ListView**. Refer to the following script.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         $("#listview").ejListView({ showHeader: true, headerTitle: "Mailbox"});

@@ -19,7 +19,7 @@ The following steps illustrate how to add palette items to symbol palette.
 
 You can create a palette item as a node, group, connector, lane, or phase. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define palette items.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Creates a node
 var node = {
@@ -98,7 +98,7 @@ var phase = {
 To initialize a palette, define a JSON object with the property `name` that is displayed as the header text of palette. The palette items need to be defined and added to the `items` collection of the palette. The `expanded` property of palette allows to expand/collapse its palette items. 
 The following code example illustrates how to define a palette with items that are defined in the previous section. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines the JSON to create a palette
 var palette = 
@@ -117,7 +117,7 @@ var palette =
 
 You can add any number of palettes to the `palettes` collection of the symbol palette. The following example illustrates how to define symbol palette with a palette object that is defined in the previous step.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes the symbol palette
 $("#symbolpalette").ejSymbolPalette({ 
@@ -140,7 +140,7 @@ The following image shows the symbol palette with multiple palette Items.
 
 You can customize the size of the individual palette items. The `paletteItem` property of node enables you to define the size, preview size of the symbol items. The following code example illustrates how to change the size of a palette item.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#symbolpalette").ejSymbolPalette({
 	//Defines the palette collection 
@@ -191,7 +191,7 @@ Palette item size can be based on the actual size of the node, regardless of the
 
 The `enableScale` property of the palette item enables you to customize the size of the item regardless of the precedence. The following code example illustrates how to customize the palette item size.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#symbolpalette").ejSymbolPalette({
 	palettes: [{
@@ -221,7 +221,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 You can show/hide the palette item texts by using the `showPaletteItemText` property of symbol palette. The following code illustrates how to customize the appearance of the symbol Palette.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Initializes symbol palette
 $("#palette").ejSymbolPalette({
@@ -247,7 +247,7 @@ To explore the properties of symbol palette, refer to [Symbol Palette Properties
 The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer.
 The `diagramId` property of symbol palette allows to define the Diagram over which the symbol items can be dragged and dropped. The following code example illustrates how to relate the symbol palette with the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Relates Diagram to symbol palette
 $("#symbolpalette").ejSymbolPalette({

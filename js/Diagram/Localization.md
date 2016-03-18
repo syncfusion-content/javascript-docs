@@ -14,7 +14,7 @@ documentation: ug
 
 The following code illustrates how to provide localization support for Context Menu items.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines the context menu items with spanish language
 

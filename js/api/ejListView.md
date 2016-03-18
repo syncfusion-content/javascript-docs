@@ -15,7 +15,7 @@ The ListView widget builds interactive ListView interface. This control allows y
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejListView()
 

@@ -21,7 +21,7 @@ Tick collection can be directly added to the scale object. Refer the following c
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         //For Linear gauge rendering
@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {
@@ -153,7 +153,7 @@ Ticks are two types such as **majorInterval** and **minorInterval**. Major type 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For Linear gauge rendering
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Linear Gauge rendering

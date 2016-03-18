@@ -13,7 +13,7 @@ documentation: ug
 
 Full Circle frame lets the OlapGauge display in circular shape. Frame type can be set using the [`frameType`](/js/api/ejcirculargauge#members:frame) property.  By default, the frame type is "fullCircle".
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -29,7 +29,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 Half Circle frame lets the OlapGauge display in semi-circular shape. For this, frame type needs to be set as "halfCircle" within the [`frameType`](/js/api/ejcirculargauge#members:frame) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

@@ -82,7 +82,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {

@@ -14,7 +14,7 @@ The Accordion control is an interface where lists of items can be collapsed or e
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejAccordion()
 

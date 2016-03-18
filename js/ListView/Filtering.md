@@ -38,7 +38,7 @@ Refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#defaultlistbox").ejListView({ width: 300, enableFiltering: true });

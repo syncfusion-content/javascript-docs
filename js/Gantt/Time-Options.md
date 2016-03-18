@@ -21,7 +21,7 @@ The datetime data type for start date and end date defines the exact starting po
 
 Use the following code example for setting different time scales of working hours.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -32,7 +32,7 @@ Use the following code example for setting different time scales of working hour
 
 Use the following code example for including time options in start date and end date of a task.
 
-{% highlight js %}
+{% highlight javascript %}
 
         var taskDetails = [{
             taskID: 1,

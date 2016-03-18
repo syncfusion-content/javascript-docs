@@ -39,7 +39,7 @@ Add the following **HTML** to render **Tab** with header image.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
         // Add the following script for Tab render with customizes header image.
@@ -114,7 +114,7 @@ Add the following **HTML** to render **Tab** with rounder corner.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render Tab with rounded corner.
         $(function () {         
@@ -157,7 +157,7 @@ Add the following **HTML** to render **Tab** with enable/disable.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   
         // Add the following script to render Tab with disabled format.
@@ -202,7 +202,7 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render Tab with Reload icon.
         $(function () {         
@@ -244,7 +244,7 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render Tab with customized collapsible mode.
         $(function () {         
@@ -291,7 +291,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     
            // Add the following script to render Tab with customized height and height adjust mode.
@@ -338,7 +338,7 @@ Add the following **HTML** to render **Tab** with customized width.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script to render Tab with customized width.
         $(function () {         
@@ -401,7 +401,7 @@ Add the following **HTML** to render **Tab** with customized style.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     
         $(function () {         

@@ -24,7 +24,7 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Linear Gauge rendering
@@ -88,7 +88,7 @@ State ranges are used to specify the indicator behavior in the certain region. *
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#LinearGauge1").ejLinearGauge({
@@ -184,7 +184,7 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
      $(function () {
@@ -250,7 +250,7 @@ The basic font options available for the textual type indicators in the **Linear
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    $(function () {
         // For Linear Gauge rendering
@@ -352,7 +352,7 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Linear Gauge rendering

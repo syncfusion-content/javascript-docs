@@ -31,7 +31,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -145,7 +145,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -262,7 +262,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     //Here use size property to render the toggle button in different sizes
@@ -443,7 +443,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
       // Here use contentType property to render the toggle button with different contents
@@ -669,7 +669,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     //It explains how to render the toggle button images with different position
@@ -884,7 +884,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     //implement custom CSS for each toggle button

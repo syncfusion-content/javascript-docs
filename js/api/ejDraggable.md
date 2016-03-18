@@ -17,7 +17,7 @@ Plugin to make any DOM element draggable.
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDraggable()
 
@@ -35,7 +35,7 @@ $(element).ejDraggable()
 
  {% endhighlight %}
  
-{% highlight js %}
+{% highlight javascript %}
 <script>
 // Create Dragable
 $('#dragable').ejDraggable();   
@@ -91,7 +91,7 @@ If clone is specified.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set clone API value during initialization  
         $("#dragable").ejDraggable({ clone: true });                           
@@ -99,7 +99,7 @@ If clone is specified.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the clone API, after initialization:
         //Gets the clone value  
@@ -149,7 +149,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set cursorAt API value during initialization  
         $("#dragable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                
@@ -157,7 +157,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
@@ -191,7 +191,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set distance API value during initialization  
         $("#dragable").ejDraggable({ distance: 1 });                            
@@ -199,7 +199,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the distance API, after initialization:
         //Gets the distance value  
@@ -249,7 +249,7 @@ The drag area is used to restrict the dragging element bounds.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set dragArea API value during initialization  
         $("#dragable").ejDraggable({ dragArea: true });                         
@@ -257,7 +257,7 @@ The drag area is used to restrict the dragging element bounds.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the dragArea API, after initialization:
         //Gets the dragArea value  
@@ -307,7 +307,7 @@ If specified, restricts drag start click to the specified element(s).
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set handle API value during initialization  
         $("#dragable").ejDraggable({ handle: null });                           
@@ -315,7 +315,7 @@ If specified, restricts drag start click to the specified element(s).
   {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the handle API, after initialization:
         //Gets the handle value  
@@ -361,7 +361,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set scope API value during initialization  
         $("#dragable").ejDraggable({ scope: 'default' });                               
@@ -369,7 +369,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -417,7 +417,7 @@ destroy in the dragable.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 <script>
 // Create dragableObj
 var dragableObj  = $("#dragable").data("ejDraggable");
@@ -488,7 +488,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //destroy event for Draggable
 $("#dragable").ejDraggable({ 
@@ -566,7 +566,7 @@ target</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //drag event for Draggable
 $("#dragable").ejDraggable({ 
@@ -642,7 +642,7 @@ target</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //dragStart event for Draggable
 $("#dragable").ejDraggable({ 
@@ -716,7 +716,7 @@ target</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //dragStop event for Draggable
 $("#dragable").ejDraggable({ 
@@ -770,7 +770,7 @@ sender</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //helper event for Draggable
 $("#dragable").ejDraggable({ 

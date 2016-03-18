@@ -94,7 +94,7 @@ Initializes the RadioButton in script.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {

@@ -25,7 +25,7 @@ You can also customize the appearance of off-page regions with the property `bac
 
 The following code illustrates how to customize the page size and the appearance of page and off-page.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	//Sets off-page background
@@ -62,7 +62,7 @@ When MultiplePage is enabled, size of the page dynamically increases or decrea
 `multiplePage` and `showPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	pageSettings: {

@@ -25,7 +25,7 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTagCloud()
 

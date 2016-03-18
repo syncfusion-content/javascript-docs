@@ -13,7 +13,7 @@ documentation: ug
 
 In EjChart, you can add multiple series object in the [`series`](../api/ejchart.html#members:series) options. The series are rendered in the order it is added to the [`series`](../api/ejchart.html#members:series) option, by default. You can change this order by using the [`zOrder`](../api/ejchart.html#members:series-zorder) option.  
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({
@@ -61,7 +61,7 @@ N> The inline properties of the series has the first priority and override the c
 
 The following code example explains on how to enable marker, tooltip and animation for the chart series by using the commonSeriesOptions.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({
@@ -105,7 +105,7 @@ The following code example explains on how to enable marker, tooltip and animati
 
 EjChart allows you to render the combination of different series in the chart. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({
@@ -143,7 +143,7 @@ EjChart allows you to render the combination of different series in the chart.
 When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({

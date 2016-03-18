@@ -13,7 +13,7 @@ keywords: get ribbon object,ribbon get ribbon object
 
 After Ribbon initialization, Ribbon object is stored in a container element of Ribbon and it can be accessed for further processing. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // "defaultRibbon" is Id of Ribbon control
     var ribbonObject = $("#defaultRibbon").ejRibbon("instance");

@@ -42,7 +42,7 @@ The **width** property is used to set width of the **Toolbar**. Set the value to
 The **showRoundedCorner** property is used to enable rounded corner for **Toolbar**. Set the value to this property as **Boolean** type.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -60,7 +60,7 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -98,7 +98,7 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration

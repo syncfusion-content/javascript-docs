@@ -61,7 +61,7 @@ Once the container is added, create the **ejDigitalGauge** widget as follows,
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {
@@ -82,7 +82,7 @@ On executing the above code, sample renders a default **Digital Gauge** with def
 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge.
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#DigitalGauge1").ejDigitalGauge({
@@ -122,7 +122,7 @@ You can customize the **Digital Gauge** using different properties.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#DigitalGauge1").ejDigitalGauge({
@@ -180,7 +180,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 You can position the digital letters inside the canvas element using **location** property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#DigitalGauge1").ejDigitalGauge({
@@ -207,7 +207,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 You can add **Items collection** to display the temperature value as used in the Digital thermometer.
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#DigitalGauge1").ejDigitalGauge({

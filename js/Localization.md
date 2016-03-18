@@ -42,7 +42,7 @@ N>   To translate our control content from default English to any of the culture
 
 Define the **locale** property which is applicable for all the Syncfusion components with the required culture codes declared by **EJ globalize script**. Usually, the culture codes are defined in short forms like **en-US** for English culture, **de-DE** for German culture, **fr-FR** for French culture and so on. The below sample code shows how to define the **locale** property for **DatePicker** control,
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#MyDatePicker").ejDatePicker({
      locale: "de-DE",
@@ -215,7 +215,7 @@ Refer the same steps mentioned in the previous example – as it is applicable f
 
 Define the collection of custom localized-words for the **de-De** culture within the script section as shown below,
 
-{% highlight js %}
+{% highlight javascript %}
 
        //localized words defined for de-DE culture
         ej.Grid.Locale["de-DE"] = {

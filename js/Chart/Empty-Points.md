@@ -11,7 +11,7 @@ documentation: ug
 
 The Data points that uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the [`points`](../api/ejchart.html#members:series-points) property, you can set the **isEmpty** to true to specify that the particular point is an empty point.
 
-{% highlight js %}
+{% highlight javascript %}
 
       $("#chartcontainer").ejChart({
                 
@@ -43,7 +43,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 You can customize the empty points visibility and change its [`displayMode`](../api/ejchart.html#members:series-emptyPointSettings-displayMode) *(gap, zero and average)* using [`emptyPointSettings`](../api/ejchart.html#members:series-emptyPointSettings) option.
 
-{% highlight js %}
+{% highlight javascript %}
 
       $("#chartcontainer").ejChart({
                 
@@ -72,7 +72,7 @@ If the [`visible`](../api/ejchart.html#members:series-emptyPointSettings-visible
 
 Empty points color and border can be customized using [`style`](../api/ejchart.html#members:series-emptyPointSettings-style) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptyPointSettings).
 
-{% highlight js %}
+{% highlight javascript %}
 
       $("#chartcontainer").ejChart({
                 

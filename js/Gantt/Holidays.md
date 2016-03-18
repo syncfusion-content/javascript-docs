@@ -11,7 +11,7 @@ documentation: ug
 
 Holidays in Gantt control is used to highlight the non-working days in Gantt control and it can be initialized with Gantt control by using the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...

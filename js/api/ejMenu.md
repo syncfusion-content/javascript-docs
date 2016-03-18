@@ -13,7 +13,7 @@ The Menu control supports displaying a Menu created from list items. The Menu is
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejMenu()
 
@@ -58,7 +58,7 @@ $(element).ejMenu()
     </ul>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#menu").ejMenu();
 
@@ -168,7 +168,7 @@ None</td>
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
       //To set animationType API value during initialization   
       $("#menu").ejMenu({ animationType: ej.AnimationType.Default }); 
@@ -210,7 +210,7 @@ Specifies the target id of context menu. On right clicking the specified context
  
 {% endhighlight %}
 
-{% highlight js %}   
+{% highlight javascript %}   
 
         //To set contextMenuTarget API value during initialization  
 
@@ -268,7 +268,7 @@ Specify the CSS class to achieve custom theme.
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
  
      //To Set the CSS class during initialization.    
 
@@ -326,7 +326,7 @@ To enable or disable the Animation effect while hover or click an menu items.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
       //To set enableAnimation API value during initialization 
       
@@ -385,7 +385,7 @@ Specifies the root menu items to be aligned center in horizontal menu.
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
       //To set enableCenterAlign API value during initialization  
 
@@ -444,7 +444,7 @@ Enable / Disable the Menu control.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
      //To set enabled API value during initialization  
  
@@ -503,7 +503,7 @@ Specifies the menu items to be displayed in right to left direction.
  
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
      //To set rtl API value during initialization  
 
@@ -561,7 +561,7 @@ Specifies the menu items to be displayed in right to left direction.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
         //To set enableSeparator API value during initialization  
 
@@ -607,7 +607,7 @@ Specifies the target which needs to be excluded. i.e., The context menu will not
          
 {% endhighlight %}
 
-{% highlight js %}                  
+{% highlight javascript %}                  
  
     //To set excludeTarget API value during initialization  
 
@@ -633,7 +633,7 @@ Fields used to bind the data source and it includes following field members to m
         
 {% endhighlight %}
 
-{% highlight js %}        
+{% highlight javascript %}        
  
         //To set fields API value during initialization  
 
@@ -776,7 +776,7 @@ Specifies the height of the root menu.
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
         //To set height API value during initialization  
         $("#menu").ejMenu({ height: 22 }); 
@@ -834,7 +834,7 @@ Specifies the list of html attributes to be added to menu control.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
         //To set htmlAttributes API value during initialization  
 
@@ -923,7 +923,7 @@ NormalMenu</td>
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
         //To set menuType API value during initialization  
 
@@ -989,7 +989,7 @@ Specifies the sub menu items to be show or open only on click.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
        //To set openOnClick API value during initialization  
  
@@ -1080,7 +1080,7 @@ Vertical</td>
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
         //To set orientation API value during initialization  
  
@@ -1143,7 +1143,7 @@ Specifies the main menu items arrows only to be shown if it contains child items
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         //To set showRooltLevelArrows API value during initialization  
         
@@ -1204,7 +1204,7 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
         //To set showSubLevelArrows API value during initialization  
  
@@ -1304,7 +1304,7 @@ Right</td>
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
 
         //To set subMenuDirection API value during initialization  
@@ -1372,7 +1372,7 @@ Specifies the title to responsive menu.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         //To set titleText API value during initialization  
 
@@ -1432,7 +1432,7 @@ Specifies the width of the main menu.
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
   
         //To set width API value during initialization  
  
@@ -1493,7 +1493,7 @@ Disables the Menu control.
  
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#menu").ejMenu();
     
@@ -1544,7 +1544,7 @@ Disables the Menu control.
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
     $("#menu").ejMenu();
     
@@ -1622,7 +1622,7 @@ itemtext</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -1673,7 +1673,7 @@ itemtext</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -1751,7 +1751,7 @@ itemid</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -1801,7 +1801,7 @@ itemid</td>
     </ul>
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
  
         $("#menu").ejMenu();
 
@@ -1860,7 +1860,7 @@ Enables the Menu control.
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -1911,7 +1911,7 @@ Enables the Menu control.
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -1988,7 +1988,7 @@ itemtext</td>
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -2038,7 +2038,7 @@ itemtext</td>
     </ul>
 {% endhighlight %}
 
-{% highlight js %}     
+{% highlight javascript %}     
 
         $("#menu").ejMenu();
 
@@ -2114,7 +2114,7 @@ itemid</td>
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -2165,7 +2165,7 @@ itemid</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2221,7 +2221,7 @@ Hides the Context Menu control.
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -2272,7 +2272,7 @@ Hides the Context Menu control.
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -2355,7 +2355,7 @@ target</td>
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
     $("#menu").ejMenu();
     
@@ -2409,7 +2409,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2495,7 +2495,7 @@ target</td>
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
         
@@ -2549,7 +2549,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2634,7 +2634,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2688,7 +2688,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2767,7 +2767,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2818,7 +2818,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -2915,7 +2915,7 @@ event</td>
  
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
         $("#menu").ejMenu();
 
@@ -2966,7 +2966,7 @@ event</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         $("#menu").ejMenu();
 
@@ -3079,7 +3079,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
 
         //before context menu open event for menu
         $("#menu").ejMenu({
@@ -3201,7 +3201,7 @@ selectedItem</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //click event for menu
         $("#menu").ejMenu({
@@ -3308,7 +3308,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //context menu close event for menu
         $("#menu").ejMenu({
@@ -3418,7 +3418,7 @@ target</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //context menu open event for menu
         $("#menu").ejMenu({
@@ -3517,7 +3517,7 @@ type</td>
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
  
         //Create event for menu
         $("#menu").ejMenu({
@@ -3618,7 +3618,7 @@ type</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //Destroy event for menu
         $("#menu").ejMenu({
@@ -3736,7 +3736,7 @@ event</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //keydown event for menu
         $("#menu").ejMenu({
@@ -3853,7 +3853,7 @@ event</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
   
         //mouse out event for menu
         $("#menu").ejMenu({
@@ -3974,7 +3974,7 @@ event</td>
 
 {% endhighlight %}
 
-{% highlight js %}  
+{% highlight javascript %}  
  
         //mouse over event for menu
         $("#menu").ejMenu({

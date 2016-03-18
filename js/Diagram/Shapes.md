@@ -23,7 +23,7 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 Texts can be added to the Diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = ej.datavisualization.Diagram;
 //Creates a html node
@@ -50,7 +50,7 @@ var nodes = [{
 ## Image
 Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = ej.datavisualization.Diagram;
 //Creates an Image node
@@ -93,7 +93,7 @@ Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrom
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create node with HTML element
 var nodes = [{
@@ -131,7 +131,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create node with HTML element
 var nodes = [{
@@ -156,7 +156,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the inbuilts [Basic Shapes](/js/api/global#basicshapes "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -196,7 +196,7 @@ N> When the `shape` is not set for a basic shape, it is considered a "rectangle"
 
 Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path". The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create path node
 
@@ -224,7 +224,7 @@ The list of basic shapes are as follows.
 
 The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the inbuilts [Flow Shapes](/js/api/global#flowshapes "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -259,7 +259,7 @@ The list of flow shapes are as follows.
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the inbuilts [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -316,7 +316,7 @@ An event is notated with a circle and it represents an event in a business proce
 
 The `event` property of the node allows you to define the type of the event. The default value of the `event` is "start". The following code example illustrates how to create a BPMN Event.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -373,7 +373,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -424,7 +424,7 @@ There are two types of activities .They are listed as follows.
 
 To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/js/api/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -458,7 +458,7 @@ The different activities of BPMN process are listed as follows.
 
 The `task` property of node allows you to define the `type` of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -507,7 +507,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 Loop is a task that is internally being looped. The `loop` property of task allows you to define the type of loop. The default value for `loop` is "none". 
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -566,7 +566,7 @@ The following table contains various types of BPMN loops.
 
 Compensation is triggered when operation is partially failed and you can enable it with the `compensation` property of task.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [];
 
@@ -623,7 +623,7 @@ $("#diagram").ejDiagram({
 
 A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the `call` property of task.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -658,7 +658,7 @@ $("#diagram").ejDiagram({
 
 An ad hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and you can set it with the `adhoc` property of subprocess. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -692,7 +692,7 @@ $("#diagram").ejDiagram({
 
 Boundary represents the type of task that is being processed. The `boundary` property of sub process allows you to define the type of boundary. By default, it is set as "default".
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -732,7 +732,7 @@ The following table contains various types of BPMN boundaries.
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as "dataobject". You can create multiple instances of data object with the `collection` property of node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -765,7 +765,7 @@ $("#diagram").ejDiagram({
 
 DataSource is used to store or access data associated with a business process. To create a data source, set the `shape` as "datasource". The following code example illustrate how to create data source.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",

@@ -27,7 +27,7 @@ Ports act as the connection points of node and allows to create connections with
 
 To add a connection port, you need to define the port object and add it to node's `ports` collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [{
 	width: 100,
@@ -58,7 +58,7 @@ $("#diagram").ejDiagram({
 
 You can add ports at runtime by using the client side method `addPorts`. The following code illustrates how to add ports to node at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines a collection of ports that have to be added at runtime
 var ports = [
@@ -91,7 +91,7 @@ To explore the set of properties for defining a port, refer to [Port Properties]
 
 The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var selectedObject = diagram.model.selectedItems.children[0];
@@ -112,7 +112,7 @@ The appearance of ports can be customized with a set of style specific propertie
 
 The following code illustrates how to change the appearance of port.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var ports = [{
 	// Specifies the port position

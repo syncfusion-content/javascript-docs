@@ -49,7 +49,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure heightAdjustMode for accordion
     $("#accordion").ejAccordion({
@@ -106,7 +106,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Enable showRoundedCorner for Accordion
     $("#accordion").ejAccordion({
@@ -161,7 +161,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Set the “e-arrowheaddown” and “e-arrowheadup” classes to header and selectedHeader properties.  “e-arrowheaddown” and “e-arrowheadup” are available in ej.widgets.core.min.css file.
     $("#accordion").ejAccordion({
@@ -192,7 +192,7 @@ By default the **Animation** for expanding and collapsing is enabled. To remove 
 Following code disables **Animation** for **Accordion**.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#accordion").ejAccordion({
         enableAnimation: false
@@ -206,7 +206,7 @@ This feature allows you to set the speed for expanding and collapsing the **Acco
 
 The following code sample sets value for **expandSpeed** and **collapseSpeed** properties,
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#accordion").ejAccordion({
         expandSpeed: 600,
@@ -278,7 +278,7 @@ In the HTML page, define a &lt;div&gt; element that is a container for  Acco
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Set the cssClass property for Accordion
     $("#accordion").ejAccordion({

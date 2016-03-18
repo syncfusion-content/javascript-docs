@@ -19,7 +19,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Digital Gauge rendering
@@ -56,7 +56,7 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
      // For Digital Gauge rendering

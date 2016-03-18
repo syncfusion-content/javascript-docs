@@ -13,7 +13,7 @@ The Spreadsheet can be easily configured to the DOM element, such as div. you ca
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSpreadsheet(options)
 

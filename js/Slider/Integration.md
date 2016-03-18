@@ -71,7 +71,7 @@ The following example explains you the binding of **value** property using the A
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -126,7 +126,7 @@ The following example explains you the binding of **value** property using the A
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

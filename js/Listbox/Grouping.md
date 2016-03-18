@@ -50,7 +50,7 @@ The header for each group can be defined using the “span” element”.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {

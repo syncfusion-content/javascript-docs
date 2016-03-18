@@ -35,7 +35,7 @@ CalcQuick object can be created in the `body` tag like below,
 
 Each element is registered as the key or virtual references in the `CalcQuick` by using the `setKeyValue` method.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script type="text/javascript">
 
@@ -53,7 +53,7 @@ Each element is registered as the key or virtual references in the `CalcQuick` b
 
 After registering keys, the formulas and values are assigned for the keys.
 
-{% highlight js %}
+{% highlight javascript %}
 
 document.getElementById("txtBoxA").value = "12"; 
 document.getElementById("txtBoxB").value = "3"; 
@@ -66,7 +66,7 @@ document.getElementById("txtBoxC").value = "= [A] + 2 * [B]";
 
 The evaluation of keys can be triggered using `setDirty` method which will computes the formulas of the keys.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //evaluating key formulas
 calculator.setDirty(); 
@@ -84,7 +84,7 @@ Whereas, the result will be returned through `getKeyValue` method.
 
 Instead of using `setDirty`, the automatic calculation can be triggered at the time of assigning the values to keys by enabling `autoCalc` property and the `ValueSet` event handler will be used to retrieve the values.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Codes. 
 calculator.autoCalc = true; 

@@ -15,7 +15,7 @@ The Gantt control for JavaScript has built-in support for sorting one or more co
 
 Gantt allows the tasks to be sorted in ascending or descending order based on the selected column by enabling the `allowSorting` option in Gantt control. The following code example shows you how to enable sorting in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -28,7 +28,7 @@ Gantt allows the tasks to be sorted in ascending or descending order based on th
 
 Gantt allows you to sort multiple columns by clicking the desired column headers while holding the `CTRL` key. The following code example shows you how to enable multicolumn sorting in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...

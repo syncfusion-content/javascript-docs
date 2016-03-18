@@ -85,7 +85,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // In JavaScript, you can initialize the Menu control.
     var data = [
@@ -170,7 +170,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
     // Initialize the Menu control in JavaScript.

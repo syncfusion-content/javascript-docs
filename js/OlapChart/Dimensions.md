@@ -13,7 +13,7 @@ documentation: ug
 
 You can customize the OlapChart dimension by setting the width and height of the widget in percentage.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
    $("#OlapChart1").ejOlapChart({
@@ -32,7 +32,7 @@ $(function () {
 
 You can customize the OlapChart dimension by setting the width and height of the widget in pixels.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -56,7 +56,7 @@ $(function()
 
 OlapChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapChart by setting [`isResponsive`](/js/api/ejolapchart#members:isresponsive) property to true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
    $("#OlapChart1").ejOlapChart({

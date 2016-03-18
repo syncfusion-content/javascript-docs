@@ -64,7 +64,7 @@ Add the input element to render **ColorPicker** control.
 Initialize **ColorPicker** element in **&lt;script&gt;** tag.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     jQuery(function ($) {
         $("#CategoryColor").ejColorPicker({ value: "#278787" });
@@ -143,7 +143,7 @@ Initialize the element in **&lt;script&gt;** tag.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     var listBoxObj, colorObj;
     jQuery(function ($) {
@@ -253,7 +253,7 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     jQuery(function ($) {
         //reuse the previous section script block

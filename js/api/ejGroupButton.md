@@ -13,7 +13,7 @@ The Essential JavaScript Group Button widget helps to display multiple buttons w
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejGroupButton(options);
 

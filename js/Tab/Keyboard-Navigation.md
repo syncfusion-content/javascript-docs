@@ -68,7 +68,7 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Add the following script to render Tab with keyboard navigation.

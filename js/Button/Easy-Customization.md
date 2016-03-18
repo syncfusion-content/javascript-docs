@@ -84,7 +84,7 @@ In the **HTML** page, add the following button elements to configure button widg
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     //Here size property is used to render the button in different sizes
     $(function () {
@@ -237,7 +237,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Here use contentType property to render the button with different contents
@@ -397,7 +397,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     //Using imagePosition property you can render the button images with different position
     $(function () {
@@ -531,7 +531,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     //implement custom CSS for each button
     $(function () {

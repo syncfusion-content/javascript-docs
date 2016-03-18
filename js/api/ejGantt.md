@@ -14,7 +14,7 @@ The Essential JavaScript Gantt control is designed to visualize and edit the pro
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejGantt();
 

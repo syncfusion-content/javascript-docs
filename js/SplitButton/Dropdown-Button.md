@@ -26,7 +26,7 @@ In the **HTML** page, add the following button elements to configure **Button
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Initialize the control in JavaScript
     $(function () {

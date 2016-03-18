@@ -11,7 +11,7 @@ documentation: ug
 
 Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({

@@ -162,7 +162,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // DataManager creation
@@ -298,7 +298,7 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     var list = [{
         iconid: "1",

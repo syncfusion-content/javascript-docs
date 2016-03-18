@@ -30,7 +30,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // In JavaScript, configure the showScale property as follows.
@@ -78,7 +78,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         
         // In JavaScript, set the value of showSmallTicks property as “false”.
@@ -131,7 +131,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         
         // In JavaScript, specify the value for smallStep and largeStep properties.

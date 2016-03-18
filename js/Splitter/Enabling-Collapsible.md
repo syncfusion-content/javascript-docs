@@ -38,7 +38,7 @@ In the **HTML** page set the **&lt;div&gt;** element to render **Splitter** cont
         
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
     $("#splitter").ejSplitter({
        height: 280, width: 600,

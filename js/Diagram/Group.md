@@ -17,7 +17,7 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 You can add a group to the Diagram model through `nodes` collection. To define an object as group, set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [{
 	//Sets the name
@@ -66,7 +66,7 @@ You can add a group node at runtime by using the client side method `add`.
 
 The following code illustrates how a group node is added at run time.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var group = {
 	name: "group1",
@@ -124,7 +124,7 @@ There are two types of containers available.
 
 The `container` property of group should be defined and its `type` should be set as `canvas` to create a canvas panel. The following code illustrates how to add a canvas panel.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [{
 	type: "group",
@@ -194,7 +194,7 @@ $("#DiagramContent").ejDiagram({
 
 The `container` property of group should be defined and its `type` should be set as `stack` to create a canvas panel The following code illustrates how to add a stack panel.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [{
 	type: "group",

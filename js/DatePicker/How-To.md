@@ -20,7 +20,7 @@ You can get the browser culture name at page load or document ready state. Based
 
 DatePicker allows you to restrict date selection in specific range by using date range option. But you can also restrict selective date in DatePicker calendar by utilizing [beforeDateCreate](http://help.syncfusion.com/js/api/ejdatepicker#events:beforedatecreate) event. This event will get triggered at each date creation. So you can disable the selective date in this event to restrict the user.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $(function () {
 
@@ -59,7 +59,7 @@ DatePicker allows you to restrict date selection in specific range by using date
 
 DatePicker is responsive control, you have to just set the input element width as 100%. In Bootstrap grid layout use the below code example to get responsive textbox. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

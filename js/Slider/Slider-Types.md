@@ -54,7 +54,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **RangeS
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // When initializing the Slider components, configure the sliderType property as follows.
     $("#minSlider").ejSlider({

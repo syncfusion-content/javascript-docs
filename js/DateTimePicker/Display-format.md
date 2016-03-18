@@ -100,7 +100,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the code in your script section to render the DateTimePicker
     $('#dateTime').ejDateTimePicker({
@@ -181,7 +181,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the code in your script section to render the DateTimePicker with short header
     $('#dateTime').ejDateTimePicker({

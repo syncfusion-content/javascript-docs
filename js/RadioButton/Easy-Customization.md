@@ -43,7 +43,7 @@ In the **HTML** page, add the following input elements to configure **RadioButto
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Initializes the control in JavaScript
@@ -111,7 +111,7 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Initializes the control in JavaScript
@@ -213,7 +213,7 @@ In the HTML page, add the following input elements to configure RadioButton widg
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Initializes the control in JavaScript
     $(function () {
@@ -279,7 +279,7 @@ In the HTML page, add the following button elements to configure RadioButton wid
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Initializes the control in JavaScript
     $(function () {

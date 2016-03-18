@@ -102,7 +102,7 @@ Add the following style in the **HTML** file.
 
 Add the following script in the **HTML** file.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {

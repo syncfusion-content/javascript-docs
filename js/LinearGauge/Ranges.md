@@ -21,7 +21,7 @@ Range collection can be directly added to the scale object. Refer the following 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         //For Linear gauge rendering
@@ -90,7 +90,7 @@ The major attributes for ranges are **startValue** and **endValue**. The **start
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
    $(function () {
@@ -160,7 +160,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {
@@ -230,7 +230,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {
@@ -298,7 +298,7 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     $(function () {

@@ -17,7 +17,7 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 **Step 3**: The name of the field, which contains the actual resources assigned for a particular task in the dataSource is specified using `resourceInfoMapping`.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var projectResources = [{
         resourceId: 1,

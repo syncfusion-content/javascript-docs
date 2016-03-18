@@ -22,7 +22,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSplitButton()
 

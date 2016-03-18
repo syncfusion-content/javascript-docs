@@ -15,7 +15,7 @@ We can localize the OlapChart controls text with a collection of localized strin
 
 Following code example illustrates on how to localize OlapChart based on **“French”** culture.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <html> 
   //...

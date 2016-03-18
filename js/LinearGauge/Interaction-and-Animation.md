@@ -22,7 +22,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Linear Gauge rendering

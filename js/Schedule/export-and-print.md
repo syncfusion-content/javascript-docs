@@ -179,7 +179,7 @@ The following code example depicts the way to export the Scheduler with appointm
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 function onExportClick(e) {
     var obj = $("#Schedule1").data("ejSchedule");

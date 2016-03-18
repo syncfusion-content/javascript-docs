@@ -13,7 +13,7 @@ documentation: ug
 
 Custom label collection can be directly added to the scales option within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -41,7 +41,7 @@ The appearance of the custom labels can be changed through the following propert
 * **color** – sets the color of the label text.
 * **textAngle** – rotates the label to a specified angle. By default, the value is 0.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -73,7 +73,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the `customLabels` option. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

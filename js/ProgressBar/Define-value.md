@@ -30,7 +30,7 @@ The following steps explain you on how to set the **value** for the ProgressBar 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following code example to set the value for the ProgressBar widget.
@@ -76,7 +76,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following code example to set the value in percentage for the ProgressBar widget.

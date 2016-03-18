@@ -12,7 +12,7 @@ documentation: ug
 ##Series Point customization
 By using the [`fill`](/js/api/ejchart#members:series-fill) and [`border`](/js/api/ejchart#members:series-border) properties of Chart series, you can customize the OlapChart series color, border color and border width.
  
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
