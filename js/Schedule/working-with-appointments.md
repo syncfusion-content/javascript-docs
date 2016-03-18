@@ -287,40 +287,80 @@ N> All these CRUD operations on appointments (add/edit/delete) can also be done 
 
 You can delete the appointments dynamically through the public method [deleteAppointment](/js/api/ejschedule#methods:deleteappointment), which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
 
-For example, here the below code example depicts the way to delete the appointments programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+#### Example 1 - Using GUID 
+
+The below code example depicts the way to delete the appointments using GUID programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
 
-<!--Container for ejScheduler widget-->
-<div id="schedule"></div>
+    <!--Container for ejScheduler widget-->
+    <div id="schedule"></div>
 
-<script>
-$("#schedule").ejSchedule({
-    currentDate: new Date(2015, 11, 7),
-    appointmentSettings: {
-        //Array of JSON data configure in dataSource
-        dataSource: [{
-            Id: 1,
-            Subject: "Music Class",
-            StartTime: new Date("2015/11/7 06:00 AM"),
-            EndTime: new Date("2015/11/7 07:00 AM")
-        }, {
-            Id: 2,
-            Subject: "School",
-            StartTime: new Date("2015/11/7 9:00 AM"),
-            EndTime: new Date("2015/11/7 02:30 PM")
-        }]
-    },
-    appointmentClick: "onAppointmentClick"
-});
+    <script>
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
 
-//addAppointment is a function, gets called on clicking the Add button
-function onAppointmentClick(args) {
-    var schObj = $("#schedule").data("ejSchedule");
-    schObj.deleteAppointment(args.appointment.Guid);
-    // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
-}	
-</script>
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment.Guid);
+        // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+    }	
+    </script>
+
+{% endhighlight %}
+
+#### Example 2 - Using Appointment object 
+
+The below code example depicts the way to delete the appointments using appointment data programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+
+{% highlight html %}
+
+    <!--Container for ejScheduler widget-->
+    <div id="schedule"></div>
+
+    <script>
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
+
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment);
+    }	
+    </script>
 
 {% endhighlight %}
 
