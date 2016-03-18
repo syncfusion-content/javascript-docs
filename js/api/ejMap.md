@@ -596,7 +596,7 @@ Specifies the navigation control template for map
 ### model.navigationControl.dockPosition `enum`
 {:#members:model-navigationcontrol-dockposition}
 
-<ts ref = "ej.Map.Position"/>
+<ts name = "ej.Map.Position"/>
 
 Set the dockPosition value for navigation control
 
@@ -717,7 +717,7 @@ Enables or Disables the Navigation for handling zooming map
 ### model.navigationControl.orientation `enum`
 {:#members:model-navigationcontrol-orientation}
 
-<ts ref = "ej.Map.Orientation"/>
+<ts name = "ej.Map.Orientation"/>
 
 Set the orientation value for navigation control
 
@@ -784,7 +784,7 @@ Layer for holding the map shapes
 ### shapeLayer.bingMapType `enum`
 {:#members:shapelayer-bingmaptype}
 
-<ts ref = "ej.Map.BingMapType"/>
+<ts name = "ej.Map.BingMapType"/>
 
 to get the type of bing map.
 
@@ -1520,7 +1520,7 @@ enable or disable the showlabel property
 ### shapeLayer.labelSettings.smartLabelSize `enum`
 {:#members:shapelayer-labelsettings-smartlabelsize}
 
-<ts ref = "ej.Map.LabelSize"/>
+<ts name = "ej.Map.LabelSize"/>
 
 set the smartLabelSize property
 
@@ -1574,7 +1574,7 @@ set the smartLabelSize property
 ### shapeLayer.layerType `enum`
 {:#members:shapelayer-layertype}
 
-<ts ref = "ej.Map.LayerType"/>
+<ts name = "ej.Map.LayerType"/>
 
 Specifies the map type.
 
@@ -1672,7 +1672,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 ### shapeLayer.legendSettings.dockPosition `enum`
 {:#members:shapelayer-legendsettings-dockposition}
 
-<ts ref = "ej.Map.DockPosition"/>
+<ts name = "ej.Map.DockPosition"/>
 
 Determines the legend placement and it is valid only when dockOnMap is true
 
@@ -1769,7 +1769,7 @@ height value for legend setting
 ### shapeLayer.legendSettings.icon `enum`
 {:#members:shapelayer-legendsettings-icon}
 
-<ts ref = "ej.Map.LegendIcons"/>
+<ts name = "ej.Map.LegendIcons"/>
 
 to get icon value for legend setting
 
@@ -1893,7 +1893,7 @@ icon Width value for legend setting
 ### shapeLayer.legendSettings.labelOrientation `enum`
 {:#members:shapelayer-legendsettings-labelorientation}
 
-<ts ref = "ej.Map.LabelOrientation"/>
+<ts name = "ej.Map.LabelOrientation"/>
 
 set the orientation of legend labels
 
@@ -1982,7 +1982,7 @@ to get leftLabel value for legend setting
 ### shapeLayer.legendSettings.mode `enum`
 {:#members:shapelayer-legendsettings-mode}
 
-<ts ref = "ej.Map.LegendMode"/>
+<ts name = "ej.Map.LegendMode"/>
 
 to get mode of legend setting
 
@@ -2328,7 +2328,7 @@ to get title of legend setting
 ### shapeLayer.legendSettings.type `enum`
 {:#members:shapelayer-legendsettings-type}
 
-<ts ref = "ej.Map.LegendType"/>
+<ts name = "ej.Map.LegendType"/>
 
 to get type of legend setting
 
@@ -2534,7 +2534,7 @@ Specify selectedMapShapes for shape layer
 ### shapeLayer.selectionMode `enum`
 {:#members:shapelayer-selectionmode}
 
-<ts ref = "ej.Map.SelectionMode"/>
+<ts name = "ej.Map.SelectionMode"/>
 
 Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
 
