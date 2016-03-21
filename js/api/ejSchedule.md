@@ -4129,7 +4129,7 @@ This method is used to delete the appointment based on the guid value or the app
     <tbody>
         <tr>
             <td class="name">data</td>
-            <td class="type">String or object</td>
+            <td class="type">string or object</td>
             <td class="description">GUID value of an appointment element or an appointment object</td>
         </tr>
     </tbody>
