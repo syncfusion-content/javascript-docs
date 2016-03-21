@@ -4113,10 +4113,10 @@ Allows setting draggable area for the Scheduler appointments. Also, turns on the
 
 ## Methods
 
-### deleteAppointment(guid)
+### deleteAppointment(data)
 {:#methods:deleteappointment}
 
-This method is used to delete the appointment based on the guid value passed to it.
+This method is used to delete the appointment based on the guid value or the appointment data passed to it.
 
 <table class="params">
     <thead>
@@ -4128,50 +4128,91 @@ This method is used to delete the appointment based on the guid value passed to 
     </thead>
     <tbody>
         <tr>
-            <td class="name">guid</td>
-            <td class="type">string</td>
-            <td class="description">guid value of an appointment element</td>
+            <td class="name">data</td>
+            <td class="type">String or object</td>
+            <td class="description">GUID value of an appointment element or an appointment object</td>
         </tr>
     </tbody>
 </table>
 
+#### Using GUID Value
 
-#### Example
+The following code snippet explain how to delete an appointment by using the GUID while clicking the appointment
+
 
 {% highlight html %}
  
-<div id="Schedule"></div> 
+    <div id="Schedule"></div> 
  
-<script>
-$("#Schedule").ejSchedule({
-    currentDate: new Date(2015, 11, 7),
-    appointmentSettings: {
-        //Array of JSON data configure in dataSource
-        dataSource: [{
-            Id: 1,
-            Subject: "Music Class",
-            StartTime: new Date("2015/11/7 06:00 AM"),
-            EndTime: new Date("2015/11/7 07:00 AM")
-        }, {
-            Id: 2,
-            Subject: "School",
-            StartTime: new Date("2015/11/7 9:00 AM"),
-            EndTime: new Date("2015/11/7 02:30 PM")
-        }]
-    },
-    appointmentClick: "onAppointmentClick"
-});
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
 
-//addAppointment is a function, gets called on clicking the Add button
-function onAppointmentClick(args) {
-    var schObj = $("#schedule").data("ejSchedule");
-    schObj.deleteAppointment(args.appointment.Guid);
-    // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
-}	
-</script>
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment.Guid);
+        // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+    }	
+    </script>
 
 {% endhighlight %}
 
+#### Using Appointent Object
+
+The following code snippet explain how to delete an appointment by using appointment object while clicking the appointment
+
+
+{% highlight html %}
+ 
+    <div id="Schedule"></div> 
+ 
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
+
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment);
+    }	
+    </script>
+
+{% endhighlight %}
 
 ### destroy()
 {:#methods:destroy}
@@ -6761,6 +6802,95 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
+### queryCellInfo
+{:#events:queryCellInfo}
+
+Triggers every time before the elements of the scheduler such as work cells, time cells or header cells and so on renders or re-renders on a page.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current appontment data.</td>
+        </tr>
+        <tr>
+            <td class="name">element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering DOM element.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the currently rendering element on the scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">cellType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the cell type which is currently rendering on the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">currentAppointmentDate</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start date of the currently rendering appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">cell</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering cell information.</td>
+        </tr>
+        <tr>
+            <td class="name">resource</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering resource details.</td>
+        </tr>
+        <tr>
+            <td class="name">currentDay</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering date information.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Schedule">
+    </div> 
+    <script> 
+    $("#Schedule").ejSchedule({ queryCellInfo: function (args){
+	switch (args.requestType) {
+                case "workcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "monthcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "alldaycells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+    } }}); 
+    </script>
+
+{% endhighlight %}
 
 ### reminder
 {:#events:reminder}
