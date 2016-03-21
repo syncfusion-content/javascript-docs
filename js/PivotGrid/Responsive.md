@@ -12,7 +12,7 @@ PivotGrid and PivotTable Field list control supports responsive rendering based 
 
 On resizing the browser, the PivotTable Field list will get collapse and an icon will appear on the left-hand side of the browser. User can toggle its view and perform UI interaction.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -25,16 +25,20 @@ $(function() {
 
 ![](Responsive_images/normal.png)
 
-_Normal PivotGrid_
+Normal PivotGrid
+{:.caption}
 
 ![](Responsive_images/responsive.png)
 
-_Responsive PivotGrid_
+Responsive PivotGrid
+{:.caption}
 
 ![](Responsive_images/res-schema.png)
 
-_Responsive PivotTable Field List - Collapsed_
+Responsive PivotTable Field List - Collapsed
+{:.caption}
 
 ![](Responsive_images/res-schema1.png)
 
-_Responsive PivotTable Field List - Expanded_
+Responsive PivotTable Field List - Expanded
+{:.caption}

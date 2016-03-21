@@ -22,7 +22,7 @@ You can add **Marker Pointer** collection directly to the scale object. To add p
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         //For Linear gauge rendering
@@ -74,7 +74,7 @@ The **value** property is the important element in the marker pointer collection
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         //For render linear gauge
@@ -140,7 +140,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Render Linear gauge
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For Render Linear gauge
@@ -302,7 +302,7 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {

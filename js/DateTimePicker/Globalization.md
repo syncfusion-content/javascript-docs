@@ -32,7 +32,7 @@ For example, if you want to change month names to your culture month just replac
 
 The following code example is used to know Spanish calendar globalize information.
 
-{% highlight js %}
+{% highlight javascript %}
 
     calendars: {
        standard: {
@@ -84,7 +84,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the code in your script section to render the DateTimePicker with Spanish culture
     $("#dateTime").ejDateTimePicker({

@@ -84,7 +84,7 @@ Initialize the editor by adding the following script to the HTML document.
 
 You can configure a toolbar with the tools as your application requires.
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 $("#texteditor").ejRTE({
 toolsList: ["style", "lists", "doAction", "links", "images"],
@@ -103,7 +103,7 @@ images: ["image"]
 
 You can set the content of the editor as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
@@ -112,7 +112,7 @@ value: "The RichTextEditor (RTE) control enables you to edit the conten
 
 To retrieve the editor contents,
 
-{% highlight js %}
+{% highlight javascript %}
 var currentValue = $("#texteditor").ejRTE("model.value");
 {% endhighlight %}
 

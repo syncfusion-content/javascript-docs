@@ -35,7 +35,7 @@ Add the following **HTML** to render **Tab** with **RTL** format.
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
         // Add the following script to render Tab with RTL format.

@@ -17,7 +17,7 @@ The Splitter is a layout control that enables you to divide a Web page into dist
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSplitter(options)
 

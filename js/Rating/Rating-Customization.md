@@ -33,7 +33,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following script to render Rating with customized value.
     
@@ -69,7 +69,7 @@ The following code example is used to render the **Rating** control with **minim
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following script to render Rating with minimum value.
@@ -106,7 +106,7 @@ The following code example is used to render the Rating control with **maximum**
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following script to render Rating with minimum value.
 
@@ -158,7 +158,7 @@ The following code example is used to render the **Rating** control with **Preci
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     
     // Add the following script to render Rating with Precision.
@@ -197,7 +197,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following script to render Rating with customized increment.
 
@@ -217,7 +217,7 @@ The following code example is used to render the **Rating** control with **allow
 
  Add the following HTML to render Rating with allowReset.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
     <table>
@@ -241,7 +241,7 @@ The following code example is used to render the **Rating** control with **allow
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following script to render Rating with allowReset.
@@ -280,7 +280,7 @@ The following code example is used to render the **Rating** control with **readO
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
      // Add the following script to render Rating with readOnly .
 
@@ -317,7 +317,7 @@ The following code example is used to render the **Rating** control with **enabl
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following script to render Rating in disabled form.
     

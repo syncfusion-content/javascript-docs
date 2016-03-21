@@ -83,7 +83,7 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}  
+{% highlight javascript %}  
        
         $("#tile1").ejTile({
             tileSize: "medium", 

@@ -18,7 +18,7 @@ The Scroller control has a sliding document whose position corresponds to a valu
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejScroller()
 

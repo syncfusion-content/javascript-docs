@@ -13,7 +13,7 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejMap();
 

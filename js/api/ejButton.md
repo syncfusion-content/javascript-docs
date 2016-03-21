@@ -14,7 +14,7 @@ Custom Design for Html Button control.
 #### Syntax
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $(element).ejButton(options)
 

@@ -15,7 +15,7 @@ A **QR Code** is a two-dimensional barcode that consists of a grid of dark and l
 
 Here is the code snippet to create a QR Code:
 
-{% highlight js %}
+{% highlight javascript %}
 $("#barcode").ej.Barcode({
    text: "B5330E8278BC4C797C49DD3ED5AD9715",
    symbologyType: "qrbarcode",

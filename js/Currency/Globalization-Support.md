@@ -39,7 +39,7 @@ The following example describes the way to use localization for **CurrencyTextBo
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     
          // Currency Textbox 

@@ -18,7 +18,7 @@ The RadioButton control allows you to choose an option to perform an action. Thi
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRadioButton()
 

@@ -89,7 +89,7 @@ Add a div element in the &lt;body&gt; tag as below.
 
 Initialize the Dialog widgets by adding the script section as below.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#dialog").ejDialog();
@@ -124,7 +124,7 @@ Add the contents for the dialog as below.
 
 The Dialog widget’s title can be set as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#dialog").ejDialog({ title: "Dialog" });

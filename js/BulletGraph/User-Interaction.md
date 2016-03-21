@@ -13,7 +13,7 @@ documentation: ug
 
 **Bullet Graph** supports animation that makes the performance measure bar to animate when rendering the **Bullet Graph**. **Animation** is enabled or disabled using **enableAnimation** property. By default, **Animation** is enabled in **Bullet Graph**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -30,7 +30,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 **Bullet Graph** is made responsive when resizing the browser by using **enableResizing** property. By default the value of this property is **true** in **Bullet Graph**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -49,7 +49,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 Background color for qualitative range is applied to major ticks and minor ticks of the **Bullet Graph** using **applyRangeStrokeToTicks** property. The range colors are applied to labels using **applyRangeStrokeToLabels** property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -90,7 +90,7 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#BulletGraph1").ejBulletGraph({
          value: 8,

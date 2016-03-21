@@ -14,7 +14,7 @@ The FileExplorer control provides the translations for all static texts and mess
 
 The below table lists out the keys with corresponding texts in English culture.
 
-{% highlight js %}
+{% highlight javascript %}
 
         ej.FileExplorer.Locale["en-US"] = {
 
@@ -194,7 +194,7 @@ For example the culture code for German is **de-DE**.
 
 You can customize built-in text and messages based on your culture. The below example shows the usage of FileExplorer with German (de-DE) culture. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         ej.FileExplorer.Locale["de-DE"] = {
 
@@ -368,7 +368,7 @@ You can customize built-in text and messages based on your culture. The below ex
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

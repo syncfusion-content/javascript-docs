@@ -314,7 +314,7 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
             $("#texteditor").ejRTE({
@@ -396,7 +396,7 @@ Required field, minlength, maxlength, minWordCount and maxWordCount values valid
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     <script type="text/javascript">
         $(function () {

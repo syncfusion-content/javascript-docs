@@ -25,7 +25,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         //Declaration.
@@ -61,7 +61,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
       // Add Custom Text for the ProgressBar widget.
     
@@ -118,7 +118,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Add the class for the ProgressBar Widget.

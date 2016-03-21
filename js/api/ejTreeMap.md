@@ -13,7 +13,7 @@ The treemap can be easily configured to the DOM element, such as div and can be 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTreeMap<span class="signature">()</span>
 

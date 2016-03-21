@@ -58,7 +58,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 Let us create and add a `node` (JSON data) with specific position, size, label and shape.
 
-{% highlight js %}
+{% highlight javascript %}
 // a node is created and stored in nodes array.
 var nodes = [{
 	// Unique name for the node
@@ -97,7 +97,7 @@ Added node will be displayed in diagram as shown below.
 
 * Create another `node` with another set of data.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes =
 [
@@ -115,7 +115,7 @@ var nodes =
 
 * Connect these two nodes by adding a `connector` into `diagram.connectors` collection with reference to source and target end.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [{
 	// Unique name for the connector
@@ -144,7 +144,7 @@ $("#diagram").ejDiagram({
 
 * Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `width` and `height`, we can move such properties into `defaultSettings`. Above code can be rewritten as shown below.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes = [{
 	name: "Start",
@@ -191,7 +191,7 @@ $("#diagram").ejDiagram({
 
 Similarly we can add required nodes and connectors to form a complete flow diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodes =
 [
@@ -249,7 +249,7 @@ Initializing diagram is already discussed in Flow Diagram > [Initialize diagram]
 	* `Name` is used as a unique identifier and
 	* `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initialize data source...
 var data = [
@@ -268,7 +268,7 @@ var data = [
 
 * You can configure this "Employee Information" with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how dataSourceSetting is used to map id and parent with property name identifiers for employee information.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initialize data source...
 $("#diagram").ejDiagram({
@@ -287,7 +287,7 @@ $("#diagram").ejDiagram({
 
 Following code examples indicate how to define the default appearance of node and connector using defaultSetting. The NodeTemplate is used to update each node based on employee data.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //To represent the roles
 var codes = {
@@ -347,7 +347,7 @@ $("#diagram").ejDiagram({
 
 * Next you need to arrange nodes in an organizational chart structure, and to do this you can apply layout as shown in following code example. You can see that spacing, margin and orientation are defined, that can also be customized based on the needs.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	//Use automatic layout to arrange elements on the page

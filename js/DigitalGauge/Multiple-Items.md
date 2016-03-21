@@ -17,7 +17,7 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function() {
     // For Digital Gauge rendering

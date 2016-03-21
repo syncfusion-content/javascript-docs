@@ -14,7 +14,7 @@ Input field that display the DatePicker calendar as popup to select and set the 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDatePicker(options)
 

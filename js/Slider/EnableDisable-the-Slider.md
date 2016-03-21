@@ -28,7 +28,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // During initialization disable the Slider by setting value for enabled property as false.
         $("#defaultSlider").ejSlider({

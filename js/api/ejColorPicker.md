@@ -13,7 +13,7 @@ The ColorPicker control provides you a rich visual interface for color selection
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejColorPicker(options)
 

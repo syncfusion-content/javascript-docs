@@ -17,7 +17,7 @@ The **Series** property provides access to a collection of all series that are d
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#rangecontainer").ejRangeNavigator({

@@ -112,7 +112,7 @@ User can export contents of the OlapChart to Excel document for future archival,
 
 For Excel export, **“ej.olap.OlapChart.ExportOptions.Excel”** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {
@@ -133,7 +133,7 @@ User can export contents of the OlapChart to Word document for future archival, 
 
 For Word export, **“ej.olap.OlapChart.ExportOptions.Word”** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {
@@ -151,7 +151,7 @@ User can export contents of the OlapChart to CSV document for future archival, r
 
 For CSV export, **“ej.olap.OlapChart.ExportOptions.CSV”** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {
@@ -170,7 +170,7 @@ User can export contents of the OlapChart to PDF document for future archival, r
 
 For PDF export, **“ej.olap.OlapChart.ExportOptions.PDF”** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {
@@ -194,7 +194,7 @@ User can export contents of the OlapChart to image format for future archival, r
 
 For EMF export, **“ej.olap.OlapChart.ExportOptions.EMF”** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {

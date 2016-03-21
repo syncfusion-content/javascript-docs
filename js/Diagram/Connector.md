@@ -22,7 +22,7 @@ To explore the properties of a `connector`, refer to [Connector Properties](/js/
 
 The `sourcePoint` and `targetPoint` properties of connector allow you to define the end points of a `connector`. The following code example illustrates how to add a connector through connector collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Creates connector
 var connectors = [
@@ -56,7 +56,7 @@ $("#DiagramContent").ejDiagram({
 
 Connectors can be added at runtime with the client side method, `add`. The following code example illustrates how to add connector at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON
 var connector = {
@@ -99,7 +99,7 @@ Connectors can be interactively drawn by clicking and dragging on the Diagram su
 
 The client side method, `updateConnector` is used to update the connectors at run time. The following code example illustrates how to update a connector at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 diagram.updateConnector("connectorName", {
@@ -114,7 +114,7 @@ diagram.updateConnector("connectorName", {
 
 The `SourceNode` and `targetNode` properties allow to define the nodes to be connected. The following code example illustrates how to connect two nodes.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create tasks
 var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
@@ -169,7 +169,7 @@ The `sourcePort` and `targetPort` properties allow to create connections between
 The following code example illustrates how to create port to port connections.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines ports for task2
 var ports = [
@@ -228,7 +228,7 @@ The path of the connector is defined with a collection of segments. There are th
 Straight segment allows to create a straight line.
 To create a straight line, you should specify the `type` of the segment as "straight" and add a straight segment to `segments` collection. The following code example illustrates how to create a default straight segment.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines JSON
 var connector = {
@@ -253,7 +253,7 @@ connectors.push(connector);
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -282,7 +282,7 @@ Orthogonal segments are used to create segments that are perpendicular to each o
 
 Set the segment `type` as "othogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -304,7 +304,7 @@ connectors.push(connector);
 
 The `length` and `direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -343,7 +343,7 @@ Bezier segments are used to create curve segments and the curves are configurabl
 
 To create a bezier segment, the `segment.type` is set as `bezier`. The following code example illustrates how to create a default Bezier segment.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -365,7 +365,7 @@ connectors.push(connector);
 
 The `point1` and `point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -393,7 +393,7 @@ connectors.push(connector);
 
 The `vactor1` and `vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines JSON
 var connector = {
@@ -421,7 +421,7 @@ connectors.push(connector);
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to `connector.segments` collection. The Following code example illustrates how to create a connector with multiple segments.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var connectors = [];
 //Defines JSON
@@ -457,7 +457,7 @@ To explore the properties of decorators, refer to [Decorator Properties](/js/api
 
 The `shape` property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var DecoratorShapes = ej.datavisualization.Diagram.DecoratorShapes;
 var connectors = [];
@@ -523,7 +523,7 @@ Padding is used to leave space between the Connector's end point and the object 
 
 The `sourcePadding` and `targerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create tasks
 var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
@@ -551,7 +551,7 @@ var connectors = [{
 
 The `connectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create tasks
 var task1 = {
@@ -584,7 +584,7 @@ var connectors = [
 
 The `connectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create tasks
 var ports = [{
@@ -625,7 +625,7 @@ var connectors = [
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order (upper one) draws an arc over the underlying connector.
 Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var Diagram = ej.datavisualization.Diagram;
 //Enables briding for a single connector
@@ -654,7 +654,7 @@ To explore the bridge directions, refer to [Bridge Directions](/js/api/global#br
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var DiagramConstraints= ej.datavisualization.Diagram.DiagramConstraints;
 
@@ -675,7 +675,7 @@ $("#DiagramContent").ejDiagram({
 
 Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with `cornerRadius` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Defines JSON to create tasks
 var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
@@ -709,7 +709,7 @@ Stroke width, stroke color, and style of the lines and decorators can be customi
 
 The following code example illustrates how to customize the segment appearance.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Customizes the appearance of the connector
 var connectors = [{
@@ -734,7 +734,7 @@ var connectors = [{
 
 The following code example illustrates how to customize the appearance of the decorator.
 
-{% highlight js %}
+{% highlight javascript %}
 //Customizes the appearance of decorator
 
 var targetDecorator = {

@@ -13,7 +13,7 @@ documentation: ug
 
 Scale can be added within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -39,7 +39,7 @@ Pointer Cap is a circular shape element that is located at the center of the Ola
 * **borderWidth** – sets the width of the pointer cap border.
 * **backgroundColor** – sets the background color of the pointer cap.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -77,7 +77,7 @@ The appearance of the scale can be customized through the following properties.
 
 The `showIndicators`, `showTicks`, `showRanges`, `showPointers` and `showScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers and scale bar respectively.  By default, these properties are set to true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

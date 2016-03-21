@@ -62,7 +62,7 @@ Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split** **But
 
 Initialization of **ejSplitButton** in script
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {

@@ -38,7 +38,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // When initializing Slider widget, configure the “value” and “values” property as follows.	    
         $("#defaultSlider").ejSlider({
@@ -83,7 +83,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // When initializing Slider widget, configure the minValue and maxValue properties as follows.

@@ -16,7 +16,7 @@ Specifies the height of the root menu. You can customize the height of the **Men
 You can specify the height of the **Menu** control in the script as follows.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function($) {
@@ -34,7 +34,7 @@ Specifies the width of the main menu. You can customize the width of the **Menu*
 
 You can specify the width of the **Menu** control in the script as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function($) {
@@ -54,7 +54,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -84,7 +84,7 @@ Add the following **&lt;script&gt;** in the above sample code.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function ($) {
@@ -112,7 +112,7 @@ You can specify the title of the **Menu** control in the script as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function ($) {
@@ -140,7 +140,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -170,7 +170,7 @@ Add the following **&lt;script&gt;** in the sample code.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function($) {

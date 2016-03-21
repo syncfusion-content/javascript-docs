@@ -98,7 +98,7 @@ Add necessary input elements to render **Textbox widget**.
 
 Initialize the **Textboxes widget** as shown in the following section.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Declares Necessary variable creation 
@@ -198,7 +198,7 @@ The following screenshot displays the output when the above code is executed.
 
 You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **MaskEdit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Declares the Necessary variable creation 
@@ -256,7 +256,7 @@ The following screenshot illustrates the output of the above code examples.
 
 You can set the “**enableStrictMode” option** to restrict entering values defined outside the range. The following code example illustrates how to set **enableStrictMode** option. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Declares Necessary variable creation 
         var kmcalc, servtax, amuntperkm;
@@ -308,7 +308,7 @@ Run the above code example and you can see that it restricts entering a value ex
 
 You can use events to calculate the total and display the value. You can achieve this with the help of “click” event in the button widget. The calculation steps have to be written in the call back function of button’s “click” event.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Declares Necessary variable creation 

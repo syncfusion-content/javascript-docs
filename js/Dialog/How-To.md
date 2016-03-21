@@ -98,7 +98,7 @@ Create a div element to render the child Dialog widget and use it as a content o
 
 Initialize both the Dialog widgets by adding the script section as below.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {

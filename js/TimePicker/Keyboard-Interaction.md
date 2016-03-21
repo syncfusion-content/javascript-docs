@@ -122,7 +122,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // You can render the TimePicker control using the following code.
     $(function () {

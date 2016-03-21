@@ -54,7 +54,7 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#defaultSlider").ejSlider({
@@ -104,7 +104,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // In JavaScript, specify a class as the value for “cssClass” property.
@@ -179,7 +179,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // In JavaScript, during initialization disable the showTooltip property.
@@ -207,7 +207,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // In JavaScript, during initialization enable the showRoundedCorner property.

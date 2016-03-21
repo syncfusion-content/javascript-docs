@@ -25,7 +25,7 @@ For more information, refer to [Keyboard Interactions](/js/Diagram/Interaction#k
 
 The client side methods `undo` and `redo` help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#Diagram").ejDiagram("instance");
 
@@ -46,7 +46,7 @@ The following example illustrates how to track such custom property changes.
 
 The following code example illustrates how to save the existing property values. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -62,7 +62,7 @@ node.empInfo = newValue;
 
 * Change the employee information
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Updates the new information
 var newValue = { role: "New role" };
@@ -75,7 +75,7 @@ node.empInfo = newValue;
 You need to define the methods to handle the custom changes and you need to assign that to `undo` and `redo` properties of `historyManager`.
 The following code example illustrates how to define methods to handle the custom changes.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	historyManager: {
@@ -107,7 +107,7 @@ History manager allows to revert or restore multiple changes through a single un
 
 The client side method `startGroupAction` is used to notify the Diagram to start grouping the changes. The client side method `closeGroupAction` is used to notify to stop grouping the changes. The following code illustrates how to undo/redo fillColor change of multiple elements at a time.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var group = diagram.model.selectedItems
 

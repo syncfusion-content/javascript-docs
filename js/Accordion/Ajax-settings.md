@@ -45,7 +45,7 @@ documentation: ug
 </div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure the Accordion control
     $("#ajaxAccordion").ejAccordion();

@@ -46,7 +46,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

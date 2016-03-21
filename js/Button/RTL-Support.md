@@ -21,7 +21,7 @@ In the **HTML** page, add the following button elements to configure button widg
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
     
     $(function () {
         $("#button_rtl").ejButton({

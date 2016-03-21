@@ -29,7 +29,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // In JavaScript, during initialization disable the enableAnimation property.
@@ -57,7 +57,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // In JavaScript, during initialization specify the value for animationSpeed property.
         $("#defaultSlider").ejSlider({

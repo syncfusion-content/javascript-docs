@@ -17,7 +17,7 @@ The DateTimePicker control is used to input the date and time with a specific fo
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDateTimePicker(options)
 

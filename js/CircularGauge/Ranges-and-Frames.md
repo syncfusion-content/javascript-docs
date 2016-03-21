@@ -21,7 +21,7 @@ Range collection is directly added to the scale object. Refer the following code
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For circular gauge rendering
@@ -54,7 +54,7 @@ The API **size** is used to specify the width of the ranges.  The major attribut
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -97,7 +97,7 @@ You can set the background color to improve the look and feel of the **Circular 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
       $(function () {
         // For Circular Gauge rendering
@@ -138,7 +138,7 @@ You can position ranges using two properties such as **distanceFromScale** and *
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -184,7 +184,7 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -242,7 +242,7 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
    $(function () {

@@ -22,7 +22,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the code in your script section to render DateTimePicker with right to left appearance
     $('#dateTime').ejDateTimePicker({

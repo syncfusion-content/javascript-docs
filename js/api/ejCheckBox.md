@@ -15,7 +15,7 @@ The CheckBox control allows you to check an option to perform an action. This co
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejCheckBox()
 

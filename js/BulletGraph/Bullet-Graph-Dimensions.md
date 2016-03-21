@@ -13,7 +13,7 @@ This section explains you on how to change the dimensions of the **Bullet Graph*
 
 ## Size
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -34,7 +34,7 @@ In the above code example, width is set as 500 pixel and height is set as 100 pi
 
 The feature measure bar value is customized using the **value** property. Default value of this property is 0.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -55,7 +55,7 @@ The following screenshot displays **Bullet Graph** with a performance measure va
 
 The **Comparative measure value** is set using **comparativeMeasureValue** property. The default value of this property is 0.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -76,7 +76,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 **Bullet Graph Theme** is customized using **theme** property. Default value is **flatlight. Bullet Graph** supports **flatlight** and **flatdark** themes. **Flatdark** theme improves **Bullet Graph** appearance when background of **Bullet Graph** container uses dark color like black.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -97,7 +97,7 @@ The following screenshot displays **Bullet Graph** with **flatdark** theme
 
 Bullet Graph is oriented either horizontally or vertically using orientation property. Default value of this property is horizontal.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -115,7 +115,7 @@ $("#bullet1").ejBulletGraph({
 
 The Flow direction of Bullet Graph is customized using flowDirection property. Default value of this property is forward. Setting forward renders Bullet Graph left to right and backward renders from right to left.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -137,7 +137,7 @@ The following screenshot displays **Bullet Graph** in a backward direction.
 
 Size of the Qualitative range is customized using qualitativeRangeSize property. Default value of this property is 32.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -159,7 +159,7 @@ The following screenshot displays **Bullet Graph** with Qualitative range of siz
 
 Length of the **Quantitative****scale** is customized using **quantitativeScaleLength** property. Default value of this property is 475.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

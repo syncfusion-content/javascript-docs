@@ -16,7 +16,7 @@ Custom Design for Html Pager control.
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPager()
 

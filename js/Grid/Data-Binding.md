@@ -28,7 +28,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 	$(function () {
 
 		$("#Grid").ejGrid({
@@ -52,7 +52,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	$(function () {
 
 			$("#Grid").ejGrid({
@@ -88,7 +88,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	$(function () {
 
 		var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
@@ -118,7 +118,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	$(function () {
 
 		var dataManager = ej.DataManager({
@@ -147,7 +147,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	$(function () {
 		var dataManager = ej.DataManager({
 			url:"/api/Orders",
@@ -215,7 +215,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 
 	var customAdaptor = new ej.Adaptor().extend({
@@ -281,7 +281,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 
 	var dataManager = ej.DataManager({
@@ -320,7 +320,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
 
@@ -358,7 +358,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 	$("#Grid").ejGrid({
 		dataSource: ej.DataManager({
@@ -420,7 +420,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 	var dataManger = ej.DataManager({
 		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Order",
@@ -512,7 +512,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 	$("#Grid").ejGrid({
 		dataSource: ej.DataManager($("#Table1")),

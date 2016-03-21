@@ -41,7 +41,7 @@ Refer the below jQuery validation plugin script after jQuery script reference.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

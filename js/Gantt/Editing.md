@@ -22,7 +22,7 @@ Update the task details through grid cell editing by setting editMode as `cellEd
 
 The following code example shows you how to enable `cellEditing` in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -44,7 +44,7 @@ Update the task details through edit dialog by setting `editMode` as `normal`.
 
 The following code example shows you how to enable normal editing in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -64,7 +64,7 @@ The following screenshot shows the output of `normal` editing.
 
 Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -77,7 +77,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
 
-{% highlight js %}
+{% highlight javascript %}
 
           $("#GanttContainer").ejGantt({
               //...

@@ -258,7 +258,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 When closing a window containing the ejPdfViewer, you can also remove the ejPdfViewer and the related objects at runtime by calling the “destroy” function as below
 
-{% highlight js %}
+{% highlight javascript %}
 var pdfviewerObj = $("#container").data("ejPdfViewer");
 pdfviewerObj.destroy();
 {% endhighlight %}

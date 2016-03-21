@@ -26,7 +26,7 @@ The following code example illustrates you on how to change the schedule mode.
 
 In the Week schedule mode, the upper part of the schedule header displays the weeks, whereas the bottom half of the header displays the days.Refer the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#GanttContainer").ejGantt({
             //...
@@ -47,7 +47,7 @@ The following screenshot illustrates the Week Schedule in Gantt control.
 
 In the Week schedule mode, the upper part of the schedule header displays the Months whereas the bottom header of the schedule displays its corresponding Weeks.Refer the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
       $("#GanttContainer").ejGantt({
           //... 
@@ -68,7 +68,7 @@ The following screenshot illustrates the Month Schedule in Gantt control.
 
 In the Week schedule mode, the upper schedule header displays the Years, whereas the bottom header displays its corresponding Months. Refer the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#GanttContainer").ejGantt({
             //...
@@ -89,7 +89,7 @@ The following screen shot shows the Year Schedule in Gantt control.
 
 In the Week schedule mode, the upper part of the header displays the Days, whereas the bottom schedule header displays its corresponding Hours. Refer the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#GanttContainer").ejGantt({
             //...
@@ -120,7 +120,7 @@ The value `auto`, automatically calculates the interval depending upon the `sche
 
 The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#GanttContainer").ejGantt({
            // ... 

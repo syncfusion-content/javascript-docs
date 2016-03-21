@@ -90,7 +90,7 @@ You can customize the values of feature and comparative measure bars in a **Bull
 
 Assign the data in **localData** variable to the **dataSource** property of **BulletGraph** as shown in the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     var localData = [
@@ -216,7 +216,7 @@ Assign the data in **localData** variable to the **dataSource** property of **Bu
 
 Once the **dataSource** property is assigned with the required values, you can bind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** as shown in the following code sample.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -240,7 +240,7 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 **Minimum**, **maximum** and **interval** values for the **quantitativeScale** of the **bullet graph** should be set, as shown in the following code example. The ticks and labels within the scale also need to be positioned.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -281,7 +281,7 @@ As you can see in the image above, the bullet graph without any ranges is displa
 
 By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges** can be added to the control. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -333,7 +333,7 @@ After adding **qualitativeRanges** to the **BulletGraph**, the control will be r
 
 You have to do the following code changes in the quantitative scale in order to customize the tick size, the colors of the feature bar and comparative measure symbols. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -389,7 +389,7 @@ When customization of ticks and measure bars is done, **BulletGraph** looks as f
 
 You can display an appropriate Caption and Subtitle in the **BulletGraph** by adding the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -456,7 +456,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 You can use a Tooltip in your application to display any information. In this example, a tooltip is used to show the values (in millimeter) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the **visible** property in tooltip to **True.** Also, in order to set the template tooltip, you can pass the template id to it as shown in the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {

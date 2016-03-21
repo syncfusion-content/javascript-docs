@@ -25,7 +25,7 @@ Diagram can be populated based on the user defined JSON data (**Local Data**) by
 
 To map the user defined JSON data with Diagram, you have to configure the fields of `dataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes local data
 
@@ -114,7 +114,7 @@ You can bind the Diagram with Remote Data by using dataManager.
 
 To bind remote data to the Diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
 	//Initializes Diagram
@@ -248,7 +248,7 @@ The following code illustrates how to convert HTML table to the Diagram.
 	</tbody>
 </table>
 {% endhighlight %}
-{% highlight js %}
+{% highlight javascript %}
 
 //Binds custom JSON with node
 

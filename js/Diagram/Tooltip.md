@@ -22,7 +22,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 To disable the default tooltip, You need to set `selectedItems.tooltip` as `null`. The following code example illustrates how to disable default tooltip.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	//Disable tooltip during interaction
@@ -50,7 +50,7 @@ To show tooltip on mouse over, the `tooltip` property of Diagram model needs to 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -88,7 +88,7 @@ $("#diagram").ejDiagram({
 
 Tooltips on mouse over can be disabled by assigning `tooltip` property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	//Disables mouse over tooltip at runtime
@@ -101,7 +101,7 @@ $("#diagram").ejDiagram({
 
 Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the `tooltip` property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the `constraints` of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
@@ -142,7 +142,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
@@ -176,7 +176,7 @@ var node = {
 
 To display the tooltip at mouse position, you need to set "mouse" option to the `relativeMode` property of tooltip. The following code example illustrates how to show tooltip at mouse position.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 

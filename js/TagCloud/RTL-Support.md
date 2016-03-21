@@ -23,7 +23,7 @@ The following steps explains you the enabling of right-to-left property in **Tag
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Enable RTL property for TagCloud.  

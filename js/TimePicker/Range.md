@@ -23,7 +23,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Use minTime and maxTime property to change the Range of the TimePicker.
     $(function () {

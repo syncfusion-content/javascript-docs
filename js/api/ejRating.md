@@ -15,7 +15,7 @@ The Rating control provides an intuitive Rating experience that enables you to s
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRating()
 

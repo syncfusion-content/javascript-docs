@@ -14,7 +14,7 @@ documentation: ug
 ###Format Numeric labels
 By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -99,7 +99,7 @@ The Currency symbol is appended to number and number is rounded to 2 decimal pla
 ###Label Format Customization 
 By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property of [`primaryYAxis`](/js/api/ejchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -125,7 +125,7 @@ $(function()
 ###Axis Visibility
 Axis visibility can be set by using the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property of the respective axis. The default value of the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property is true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -149,7 +149,7 @@ $(function()
 ###Label Customization
 By using the [`font`](/js/api/ejchart#members:primaryxaxis-font) property of the axis, we can customize the labels – font family, color, opacity, size and font-weight.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -178,7 +178,7 @@ $(function()
 ###Label and Tick Positioning
 Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/js/api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](/js/api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -202,7 +202,7 @@ $(function()
 ###Grid Lines Customization
 By using the [`majorGridLines`](/js/api/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible by default.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -237,7 +237,7 @@ $(function()
 ###Tick Line Customization
 By using the [`majorTickLines`](/js/api/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines. The minor tick lines are not visible by default.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -274,7 +274,7 @@ $(function()
 ###Inversing Axis
 Axis can be inversed by using the [`isInversed`](/js/api/ejchart#members:primaryxaxis-isinversed) property of the axis. By default, the value of the [`isInversed`](/js/api/ejchart#members:primaryyaxis-isinversed) property is false.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -302,7 +302,7 @@ $(function()
 ###Placing Axes at Opposite Side
 The [`opposedPosition`](/js/api/ejchart#members:primaryxaxis-opposedposition) property of Chart axis can be used to place the axis at the opposite direction from its default position. By default, the value of [`opposedPosition`](/js/api/ejchart#members:primaryyaxis-opposedposition) property is false.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -331,7 +331,7 @@ $(function()
 
 When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {

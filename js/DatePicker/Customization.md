@@ -14,7 +14,7 @@ DatePicker provides more flexible way to customize the below listed properties.
 
 By default DatePicker has standard height and width (height: ‘30px’ and width: ’143px’). You can change this height and width by using [height](http://help.syncfusion.com/js/api/ejdatepicker#members:height) and [width](http://help.syncfusion.com/js/api/ejdatepicker#members:width) property respectively.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -34,7 +34,7 @@ By default DatePicker has standard height and width (height: ‘30px’ and widt
 
 Mostly dimension plays a vital role in web application to get responsive layout in all devices. DatePicker is a form control and you can make it as responsive by specifying its width as “**100%**".
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -54,7 +54,7 @@ Mostly dimension plays a vital role in web application to get responsive layout 
 
 You can show or hide the footer of DatePicker calendar by using [showFooter](http://help.syncfusion.com/js/api/ejdatepicker#members:showfooter) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -78,7 +78,7 @@ DatePicker textbox contains a button to open the DatePicker calendar. You can hi
 
 By hiding this button, you can open the DatePicker by focusing the input textbox element itself.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $(function () {
 
@@ -98,7 +98,7 @@ By hiding this button, you can open the DatePicker by focusing the input textbox
 
 You can show or hide the other month days from DatePicker calendar by using [showOtherMonths](http://help.syncfusion.com/js/api/ejdatepicker#members:showothermonths) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -118,7 +118,7 @@ You can show or hide the other month days from DatePicker calendar by using [sho
 
 DatePicker allows you to highlight the special dates in DatePicker calendar by using [specialDates](http://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) property. It receives the array of JSON data, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var data = [{ specialdate: "28/06/2015", customClass: "birthday", tooltip: "xxx birthday" }]
 
@@ -144,7 +144,7 @@ It specifies the mapping field of icon CSS class.<br/><br/></td></tr>
 tooltip<br/><br/></td><td>
 It specifies the mapping field of tool tip text.<br/><br/></td></tr>
 </table>
-{% highlight js %}
+{% highlight javascript %}
 
     // assign special date values in local variable data
 

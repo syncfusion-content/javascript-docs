@@ -34,7 +34,7 @@ The following properties are not included while maintaining DropDownList’s sta
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function() {
 	    var items = [{
@@ -70,7 +70,7 @@ The following properties are not included while maintaining DropDownList’s sta
 
 Persisted state can be accessed through local storage using corresponding key name. Key name formation would be in below order. It is combination of plugin name and control id.
 
-{% highlight js %}
+{% highlight javascript %}
 
 	// DropDownList state as string
 	var dropdownlistStateString = window.localStorage.ejDropDownListdropdown;

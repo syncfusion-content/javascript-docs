@@ -115,7 +115,7 @@ Initialize **Radial Menu** control with the **div** element and set its target c
 
 
 
-{% highlight js %}
+{% highlight javascript %}
   
         $(function () {
             $('#radialmenu').ejRadialMenu({ targetElementId: "radialtarget" });
@@ -129,7 +129,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#textarea").select(function (e) {

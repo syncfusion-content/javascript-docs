@@ -19,7 +19,7 @@ The opacity of the character is adjustable with the help of **opacity** property
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   $(function () {
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
@@ -64,7 +64,7 @@ The number of text to be displayed can be limited by the attribute called **coun
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Digital Gauge rendering
@@ -109,7 +109,7 @@ The text in the **Digital****Gauge** is positioned with position object. This ob
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Digital Gauge rendering
@@ -152,7 +152,7 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Digital Gauge rendering

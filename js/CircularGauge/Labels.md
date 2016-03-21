@@ -22,7 +22,7 @@ documentation: ug
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         //For circular gauge rendering
@@ -59,7 +59,7 @@ Font option is also available on the labels. The basic three properties of fonts
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Circular Gauge rendering
@@ -119,7 +119,7 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Circular Gauge rendering
@@ -165,7 +165,7 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering

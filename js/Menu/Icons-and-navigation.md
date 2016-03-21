@@ -28,7 +28,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Initialize the Menu control in JavaScript.
@@ -156,7 +156,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     // Add the following code in your script section.

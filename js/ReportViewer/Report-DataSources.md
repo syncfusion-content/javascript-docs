@@ -13,7 +13,7 @@ The ReportViewer has support to add data sources to ReportViewer for RDLC report
 
 The following code example illustrates how to add DataSource at control creation.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#viewer")
     .ejReportViewer({

@@ -21,7 +21,7 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRotator()
 

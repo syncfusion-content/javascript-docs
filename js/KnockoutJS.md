@@ -53,7 +53,7 @@ KnockoutJS provides a special type of variable `observable`, through which the d
 
 Here, the below sample code defines how to define the `observable` variable within the `script` section,
 
-{% highlight js %}
+{% highlight javascript %}
 
 window.viewModel = {
    dateValue: ko.observable(new Date(2014, 05, 15))
@@ -65,7 +65,7 @@ The value to be bound to the UI element needs to be passed through the **ko.obse
 
 The `data-bind` attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with Knockout, we need to call the `ko.applyBindings() function at the end of the script, so that the `data-bind` attribute will get recognised. Such Knockout code needs to be wrapped in a jQuery function as shown below within the script section, in order to work properly.
 
-{% highlight js %}
+{% highlight javascript %}
 
 window.viewModel = {
     value: ko.observable(new Date(2014, 05, 15))

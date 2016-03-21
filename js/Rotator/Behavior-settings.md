@@ -46,7 +46,7 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration
@@ -59,7 +59,7 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
 The “isResponsive” property resizes the Rotator when the browser window is resized. The default value is ‘false’. The value set to this property is Boolean. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -73,7 +73,7 @@ The “isResponsive” property resizes the Rotator when the browser window is r
 
 The **Rotator** Items continuously rotate without user interference by enable the **enableAutoPlay** property. The default value is ‘**false’**. The value set to this property is **Boolean**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -86,7 +86,7 @@ The **Rotator** Items continuously rotate without user interference by enable th
 
 The **stopOnHover** property pauses the **auto play** while hover on the **Rotator** content. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -111,7 +111,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     
     $(function () {
@@ -133,7 +133,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 The **“showPager”** property turns on or off the **pager** support in the **Rotator** control. The **Pager** is used to navigate the **Rotator** Items. The default value is ‘**true**’. The value set to this property is **Boolean**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -152,7 +152,7 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 The “**showPlayButton**” property enables play / pause button on **Rotator**. The default value is ‘**false**’. The value set to this property is **Boolean**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -169,7 +169,7 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 The “**showNavigateButton**” property turns on or off the slide buttons (next and previous) in the **Rotator** Items. Slide buttons are used to navigate the **Rotator** Items. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -186,7 +186,7 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 When the **Rotator** Item is an image, you can specify a caption for the **Rotator** Item. The caption text for each **Rotator** Item is set by using the title attribute of the respective **&lt;image&gt;** tag. The caption cannot be displayed when multiple **Rotator** Items are present. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration

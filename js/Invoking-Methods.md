@@ -11,7 +11,7 @@ documentation: ug
 
 The methods can be invoked the same way as the properties are accessed. The following syntaxes defines the ways to invoke the public methods of the widgets.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // First way
 var obj = $("jquery-selector").data("ej-plugin-name"); // [RECOMMENDED METHOD]

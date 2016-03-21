@@ -58,7 +58,7 @@ To define connection to data source, you can use **ej.DataManager** class. The d
 
 The local array is set as data source using the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //jsonArray is local javascript array reference
 var dataManager = ej.DataManager(window.jsonArray);
@@ -68,7 +68,7 @@ var dataManager = ej.DataManager(window.jsonArray);
 
 In this application, as you have web service for **NorthWind** database, you can assign the web service **URL** link to the **URL** property of **ejDataManager,** and you can enable **crossDomain** to retrieve data from another domain.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var dataManager = ej.DataManager({
      url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",

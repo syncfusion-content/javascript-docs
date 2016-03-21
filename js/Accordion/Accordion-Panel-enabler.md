@@ -45,7 +45,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // To disable the control set enabled property value as false
     $("#accordion").ejAccordion({
@@ -101,7 +101,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#accordion").ejAccordion({
         enabledItems: [1, 2],

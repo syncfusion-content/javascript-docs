@@ -13,7 +13,7 @@ documentation: ug
 
 The dimension of the FileExplorer can be customized through [height](http://help.syncfusion.com/js/api/ejfileexplorer#members:height) and [width](http://help.syncfusion.com/js/api/ejfileexplorer#members:width) property. The dimension can be set in percentage (ex; width: “100 %”), so that the control inherits the width from the parent element. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -43,7 +43,7 @@ The navigation pane contains the tree view element which displays all the folder
 
 The visibility of the navigation pane can be controlled by the [showNavigationPane](http://help.syncfusion.com/js/api/ejfileexplorer#members:shownavigationpane) property. By disabling this property, you can hide the navigation pane from FileExplorer. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -87,7 +87,7 @@ You can change the layout of current view by the switcher which displays at righ
 
 Also the layout views can be changed through the [layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -117,7 +117,7 @@ By default sorting is enabled in grid view of FileExplorer, it helps you to sort
 
 The behavior of the columns can be customized through the [columns](http://help.syncfusion.com/js/api/ejfileexplorer#members:gridsettings-columns) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -163,7 +163,7 @@ The behavior of the columns can be customized through the [columns](http://help.
 
 The footer displays the details of the current selected files and folders, and the footer contains the switcher to change the layout view. The visibility of the footer can be customized by the [showFooter](http://help.syncfusion.com/js/api/ejfileexplorer#members:showfooter) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

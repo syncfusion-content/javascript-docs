@@ -18,7 +18,7 @@ The WaitingPopup control for JavaScript is a visual element that provides suppor
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejWaitingPopup()
 

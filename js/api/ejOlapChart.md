@@ -14,7 +14,7 @@ The OlapChart is a lightweight control that reads OLAP information and visualize
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejOlapChart()
 

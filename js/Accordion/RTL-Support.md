@@ -47,7 +47,7 @@ In an HTML page, define a div element that is a container for  Accordion widg
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Enable RTL for accordion control
     $("#accordion").ejAccordion({

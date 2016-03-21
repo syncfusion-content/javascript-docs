@@ -15,7 +15,7 @@ The OlapChart control allows you to view the Cube information in a 3D view with 
 
 3D Column Chart is rendered by specifying the chart type as **“Column”** in the **“commonSeriesOptions”** enumeration property as well as by setting the [`enable3D`](/js/api/ejchart#members:enable3d) property to **“true”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {
@@ -43,7 +43,7 @@ $("#OlapChart1").ejOlapChart(
 
 3D Bar Chart is rendered by specifying the chart type as **“Bar”** in the **“commonSeriesOptions”** enumeration property as well as by setting the [`enable3D`](/js/api/ejchart#members:enable3d) property to **“true”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {
@@ -70,7 +70,7 @@ $("#OlapChart1").ejOlapChart(
 ## 3D Stacking Bar Chart
 3D Stacking Bar Chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“commonSeriesOptions”** enumeration property as well as by setting the [`enable3D`](/js/api/ejchart#members:enable3d) property to **“true”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {
@@ -97,7 +97,7 @@ $("#OlapChart1").ejOlapChart(
 ## 3D Stacking Column Chart
 3D Stacking Column Chart is rendered by specifying the chart type as **“Stacking Column”** in the **“commonSeriesOptions”** enumeration property as well as by setting the [`enable3D`](/js/api/ejchart#members:enable3d) property to **“true”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {
@@ -124,7 +124,7 @@ $("#OlapChart1").ejOlapChart(
 ## 3D Pie Chart
 3D Pie Chart is rendered by specifying the chart type as **"Pie"** in the **"commonSeriesOptions"** enumeration property as well as by setting the [`enable3D`](/js/api/ejchart#members:enable3d) property to **“true”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {
@@ -149,7 +149,7 @@ $("#OlapChart1").ejOlapChart(
 ##Rotating 3D Chart
 We can rotate the 3D Chart towards left or right by setting an appropriate angle value to the [`rotation`](/js/api/ejchart#members:rotation) property. The direction of the Chart display depends upon the positive or negative angle value.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapChart1").ejOlapChart(
 {

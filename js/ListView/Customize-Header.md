@@ -39,7 +39,7 @@ Refer the following code example.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
  
         $(function () {
             $("#defaultlistbox").ejListView({showHeader:true, **showHeaderBackButton:true, headerBackButtonText :"Menu"**, width:400});

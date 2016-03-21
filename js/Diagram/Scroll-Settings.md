@@ -18,7 +18,7 @@ Scroll settings allows you to read the scroll status, view port size, and curren
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `horizontalOffset` and `verticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	height: "400px",
@@ -47,7 +47,7 @@ In the example given below, the vertical scroll bar is scrolled down by 50px and
 
 You can programmatically change the scroll offsets at runtime by using the client side method `update`. The following code illustrates how to change the scroll offsets and zoom factor at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var scrollSettings = {
@@ -76,7 +76,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the node or connec
 
 The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 15 for all sides (left, right, top, and bottom) and it can be changed by using the `autoScrollBorder` property of page settings. The following code example illustrates how to set Autoscroll border. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#Diagram").ejDiagram({
 	pageSettings: {
@@ -99,7 +99,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 
 The following code example illustrates how to specify the scroll limit.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	pageSettings: {
@@ -114,7 +114,7 @@ $("#diagram").ejDiagram({
 
 You can restrict scrolling beyond any particular rectangular area by using the `scrollableArea` property of scroll settings. To restrict scrolling beyond any custom region, you have to set the `scrollLimit` as "limited". The following code example illustrates how to customize scrollable area.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	pageSettings: {

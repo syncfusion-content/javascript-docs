@@ -14,7 +14,7 @@ The OlapGauge control is ideal for highlighting business critical Key Performanc
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejOlapGauge()
 

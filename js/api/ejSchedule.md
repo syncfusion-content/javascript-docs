@@ -13,7 +13,7 @@ An Event calendar that manages the list of various activities like events/appoin
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSchedule()
 

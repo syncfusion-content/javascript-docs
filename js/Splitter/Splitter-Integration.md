@@ -70,7 +70,7 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#treeview").ejTreeView({ nodeSelect: "treeClicked" }); /* Render TreeView inside Splitter pane */
         

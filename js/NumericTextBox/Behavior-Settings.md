@@ -25,7 +25,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#numeric").ejNumericTextbox({
@@ -58,7 +58,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -101,7 +101,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -138,7 +138,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -181,7 +181,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
       
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({            
@@ -214,7 +214,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
          
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -258,7 +258,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -287,7 +287,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
        
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -324,7 +324,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
        
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -368,7 +368,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({           
@@ -423,7 +423,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
          
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -479,7 +479,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
       
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#numeric").ejNumericTextbox({
             value: 1,
@@ -513,7 +513,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({
@@ -548,7 +548,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#numeric").ejNumericTextbox({            

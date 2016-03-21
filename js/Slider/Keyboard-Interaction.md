@@ -60,7 +60,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Focus the Slider control in the document key down function.
         $("#rangeSlider").ejSlider({

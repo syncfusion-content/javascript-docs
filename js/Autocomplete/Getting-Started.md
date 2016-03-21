@@ -94,7 +94,7 @@ Add an input element in the &lt;body&gt; tag as below.
 
 Initialize the AutoComplete widget by adding the following code in script section
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $('#autocomplete').ejAutocomplete();
@@ -112,7 +112,7 @@ The data for the suggestion list can be populated using the dataSource property.
 {%seealso%}[Data Binding](http://help.syncfusion.com/js/autocomplete/data-binding){%endseealso%}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         /*Local Data Source*/
@@ -138,7 +138,7 @@ The data for the suggestion list can be populated using the dataSource property.
 
 This button helps you to show all the available suggestions on clicking it.
 
-{% highlight js %}
+{% highlight javascript %}
 
         
         $('#autocomplete').ejAutocomplete({ dataSource: carList, showPopupButton:true });

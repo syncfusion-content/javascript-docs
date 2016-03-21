@@ -38,7 +38,7 @@ Add the following **HTML** for simple **Tab** creation with **Close** **Button**
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -81,7 +81,7 @@ Add the following **HTML** for **Tab** orientation.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // Add the following script for Tab render with customized orientation.
         $(function () {         
@@ -124,7 +124,7 @@ Add the following **HTML** for **Tab** **state** **maintenance**.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
         // Add the following script for Tab state maintenance.

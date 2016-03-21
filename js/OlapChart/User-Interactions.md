@@ -14,7 +14,7 @@ documentation: ug
 ###Enable Tooltip for Data Points
 Tooltip for the data points can be enabled using the **"visible"** option of the [`tooltip`](/js/api/ejchart#members:commonseriesoptions-tooltip-visible) property under **"commonSeriesOptions"** of the OlapChart.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -41,7 +41,7 @@ $(function()
 ###Tooltip Template
 HTML elements can be displayed inside the tooltip by using the [`template`](/js/api/ejchart#members:commonseriesoptions-tooltip-template) option. The template option takes the value of the “id” attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of the corresponding data points.
 
-{% highlight js %}
+{% highlight javascript %}
 
 <body>
     <div id="OlapChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
@@ -80,7 +80,7 @@ HTML elements can be displayed inside the tooltip by using the [`template`](/js/
 ###Tooltip Customization
 By using [`fill`](/js/api/ejchart#members:commonseriesoptions-tooltip-fill) and [`border`](/js/api/ejchart#members:commonseriesoptions-tooltip-border) properties of tooltip, you can customize its background color, border color and border width.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -113,7 +113,7 @@ $(function()
 ###Tooltip with Rounded Corners
 The tooltip properties, `rx` and `ry` are used to customize its corner radius.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -148,7 +148,7 @@ There are two ways to zoom the Chart:
 * When [`zooming.enable`](/js/api/ejchart#members:zooming-enable) option is set to true, you can zoom the Chart by using rubber band selection.
 * When [`zooming.enableMouseWheel`](/js/api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the Chart on mouse wheel scrolling.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -175,7 +175,7 @@ After zooming the Chart, a zooming toolbar will appear with options to *zoom, pa
 ###Types of Zooming
 You can zoom the particular axis like horizontal axis or vertical axis or both axis using [`type`](/js/api/ejchart#members:zooming-type) option in zooming. The default value is “x,y” (indicating both axis).
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -199,7 +199,7 @@ $(function()
 ###Marker Shape Customization
 In OlapChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -232,7 +232,7 @@ function onSeriesRenders(args)
 ###Enable Crosshair and Crosshair Label
 Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the [`visible`](/js/api/ejchart#members:crosshair-visible) option in [`crosshair`](/js/api/ejchart#members:crosshair) property. Crosshair label can be enabled by using the **“visible”** option in [`crosshairLabel`](/js/api/ejchart#members:crosshair) property within its corresponding axis.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -271,7 +271,7 @@ $(function()
 ###Crosshair Line and Label Customization
 By using `line` property of crosshair, you can customize its line color and width. Also by using `fill` and `border` properties of crosshair label, you can customize its background color, border color and border width.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -325,7 +325,7 @@ $(function()
 ###Enable trackball
 Trackball can be enabled by setting both - ['visible'](/js/api/ejchart#members:crosshair-visible) option of the crosshair to true and [`type`](/js/api/ejchart#members:crosshair-type) option of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -350,7 +350,7 @@ $(function()
 ###Trackball Marker and Line Customization
 Shape and size of the trackball marker can be customized using the [`shape`](/js/api/ejchart#members:commonseriesoptions-marker-shape) and [`size`](/js/api/ejchart#members:crosshair-marker-size) options of the crosshair marker. Color and width of the trackball line can be customized using the **“line”** option in the crosshair.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -392,7 +392,7 @@ $(function()
 ##Highlight
 OlapChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/js/api/ejchart#members:series-highlightsettings-enable) option of the series.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -427,7 +427,7 @@ You can set three different modes for highlighting data points and series by usi
 * points
 * cluster
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -464,7 +464,7 @@ function onSeriesRenders(args)
 To customize the highlighted series, use [`border.color`](/js/api/ejchart#members:series-highlightsettings-border-color), [`border.width`](/js/api/ejchart#members:series-highlightsettings-border-width) and [`opacity`](/js/api/ejchart#members:series-highlightsettings-opacity)
  options in the [`highlightSettings`](/js/api/ejchart#members:series-highlightsettings) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -523,7 +523,7 @@ OlapChart provides pattern support for highlighting the data by setting an appro
 * diagonalForward
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -559,7 +559,7 @@ function onSeriesRenders(args)
 ##Selection
 OlapChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings-enable) option of the series.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -597,7 +597,7 @@ You can set three different selection mode for highlighting the data points and 
 * points
 * cluster
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -633,7 +633,7 @@ function onSeriesRenders(args)
 ###Customize the Selection Styles
 To customize the selection styles, use the [`border.color`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-border-color), [`border.width`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-border-width) and [`opacity`](/js/api/ejchart#members:commonseriesoptions-selectionsettings-opacity) options in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings).
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -690,7 +690,7 @@ OlapChart provides pattern support for the selecting the data by setting an appr
 * diagonalBackward
 * diagonalForward
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {

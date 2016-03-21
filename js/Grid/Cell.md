@@ -36,7 +36,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
 		$("#Grid").ejGrid({
@@ -71,7 +71,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function () {
 		$("#Grid").ejGrid({
@@ -106,7 +106,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$(function () {
 		$("#Grid").ejGrid({
@@ -143,7 +143,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -184,7 +184,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -216,7 +216,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -258,7 +258,7 @@ The following code example describes the above behavior.
 </script>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -302,7 +302,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -332,7 +332,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -367,7 +367,7 @@ The following code example describes the above behavior.
  </script>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'

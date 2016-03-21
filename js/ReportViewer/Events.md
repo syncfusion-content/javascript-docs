@@ -43,7 +43,7 @@ Fires when the report is loaded.</td></tr>
 </table>
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#viewer").ejReportViewer({
     reportServiceUrl: '/api/RDLCReport',

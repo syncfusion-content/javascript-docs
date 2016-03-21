@@ -506,7 +506,7 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function() {
 
 var dataManger = ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",

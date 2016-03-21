@@ -84,7 +84,7 @@ User can export contents of the PivotGrid to Excel document for future archival,
 
 For Excel export, **"ej.PivotGrid.ExportOptions.Excel"** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args) {
    var gridObj = $('#PivotGrid1').data("ejPivotGrid");
@@ -100,7 +100,7 @@ User can export contents of the PivotGrid to CSV document for future archival, r
 
 For CSV export, **"ej.PivotGrid.ExportOptions.CSV"** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args) {
    var gridObj = $('#PivotGrid1').data("ejPivotGrid");
@@ -119,7 +119,7 @@ User can export contents of the PivotGrid to Word document for future archival, 
 
 For Word export, **"ej.PivotGrid.ExportOptions.Word"** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args) {
    var gridObj = $('#PivotGrid1').data("ejPivotGrid");
@@ -138,7 +138,7 @@ User can export contents of the PivotGrid to PDF document for future archival, r
 
 For PDF export, **"ej.PivotGrid.ExportOptions.PDF"** enumeration value is sent as the parameter.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function exportBtnClick(args) {
    var gridObj = $('#PivotGrid1').data("ejPivotGrid");

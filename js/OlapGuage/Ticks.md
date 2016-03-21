@@ -13,7 +13,7 @@ documentation: ug
 
 Tick collection can be directly added to the scales option within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -41,7 +41,7 @@ The appearance of the tick can be customized through the following properties.
 * **distanceFromScale** – sets the distance between scale and ticks. By default, the values is 0.
 * **placement** – positions the ticks with respect to the scale.  By default, the value is set to "far".
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

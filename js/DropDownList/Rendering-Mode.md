@@ -28,7 +28,7 @@ You can bind the local JSON array data source to the DropDownList using [dataSou
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 	
 	
 		$(function () {
@@ -173,7 +173,7 @@ Create a div with UL-LI elements and assign that div id into [targetID](http://h
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     	$(function() {
 		

@@ -44,7 +44,7 @@ To calculate a sheet formula, the sheet should be registered to `CalcEngine` obj
 
 The index based values can be set based on spreadsheet like rowIndex and colIndex when formula is applied in a cell using `SetValueRowCol` method.
 
-{% highlight js %}
+{% highlight javascript %}
 
 calcObj.setValueRowCol = function (sheetID, value, row, col) { 
 //set the value to grid cell 
@@ -56,7 +56,7 @@ calcObj.setValueRowCol = function (sheetID, value, row, col) {
 
 The `GetValueRowCol` method gets the value of a cell based on the spreadsheet like rowIndex and colIndex.
 
-{% highlight js %}
+{% highlight javascript %}
 
 calcObj.getValueRowCol = function (sheetID,row, col) { 
 //return the data based on row and column index 

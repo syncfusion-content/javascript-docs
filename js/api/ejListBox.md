@@ -77,7 +77,7 @@ N> Since this is a deprecated property we suggest to use **allowDrag** and **all
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#list").ejListBox({
 
@@ -99,7 +99,7 @@ Enables/disables the dragging behavior of the items in ListBox widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#list").ejListBox({
                 allowDrag: true
@@ -120,7 +120,7 @@ N> Need to enable allowDrag property to drag the list (li) item from the listbox
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#list").ejListBox({
                 allowDrop: true
@@ -140,7 +140,7 @@ Enables or disables multiple selection.
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({allowMultiSelection: true}); 
 
@@ -158,7 +158,7 @@ Loads the list data on demand via scrolling behavior to improve the application�
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#customerlist").ejListBox({
 
@@ -181,7 +181,7 @@ N> It works only when the enableIncrementalSearch is set as true.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({
 
@@ -205,7 +205,7 @@ Dynamically populate data of a list box while selecting an item in another list 
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $('#list').ejListBox({
 
@@ -228,7 +228,7 @@ To check all the items of the ListBox widget. It works only when the showCheckbo
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({showCheckbox: true, checkAll: true }); 
 
@@ -247,7 +247,7 @@ N> Since this is a deprecated property we suggest to use checkedIndices property
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({ showCheckbox:true, checkedItems : [1,2] }); 
 
@@ -268,7 +268,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({ showCheckbox:true, checkedItemlist : [1,2] }); 
 
@@ -288,7 +288,7 @@ N> Since this is a deprecated property we suggest to use checkedIndices property
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox({ showCheckbox: true, checkItemsByIndex: "2,3" });
         
@@ -306,7 +306,7 @@ Set of list items to be checked by default using its index. It works only when t
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox({ showCheckbox: true, checkedIndices: "2,3" });
         
@@ -324,7 +324,7 @@ The root class for the ListBox widget to customize the existing theme.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#list").ejListBox({ cssClass: 'gradient-lime' });
         
@@ -343,7 +343,7 @@ Contains the list of data for generating the list items.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $("#customerlist").ejListBox({
 
@@ -364,7 +364,7 @@ Disables set of list items using its index value.
 Example
 {:.example} 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({disableItemsByIndex : "2,3"}); 
 
@@ -381,7 +381,7 @@ Enables or disables the ListBox widget.
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({enabled : false }); 
 
@@ -398,7 +398,7 @@ Enables the set of disabled list items using its index value.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $('#list').ejListBox({ enableItemsByIndex: "2,3" });
 
@@ -417,7 +417,7 @@ N> Since this is a deprecated property we suggest to use allowVirtualScrolling p
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#customerlist").ejListBox({
      enableLoadOnDemand: true
@@ -438,7 +438,7 @@ Enables or disables the search behavior to find the specific list item by typing
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({enableIncrementalSearch : true}); 
 
@@ -457,7 +457,7 @@ N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is suppor
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({enablePersistence : false}); 
 
@@ -474,7 +474,7 @@ Displays the ListBox widget’s content from right to left when enabled.
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({enableRTL : true }); 
 
@@ -493,7 +493,7 @@ N> Since this is a deprecated property we suggest to use allowVirtualScrolling p
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#customerlist").ejListBox({
      enableVirtualScrolling: true
@@ -513,7 +513,7 @@ Mapping fields for the data items of the ListBox widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
        
 $("#countrylist").ejListBox({
 
@@ -596,7 +596,7 @@ Defines the height of the ListBox widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({ height: "300"}); 
 
@@ -614,7 +614,7 @@ The number of list items to be shown in the ListBox widget. The remaining list i
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({itemsCount: 8}); 
 
@@ -633,7 +633,7 @@ N> It’s dependent on datasource property.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({totalItemsCount: 8});
 
@@ -650,7 +650,7 @@ The number of list items to be loaded in the list box while enabling virtual scr
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#customerlist").ejListBox({
 
@@ -674,7 +674,7 @@ Default Value:
 Example
 {:.example}
 
- {% highlight js %}
+ {% highlight javascript %}
 
         $('#countryList').ejListBox({ 
 
@@ -695,7 +695,7 @@ The query to retrieve required data from the data source.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 var query = ej.Query()
 
@@ -722,7 +722,7 @@ N> Since this is a deprecated property we suggest to use selectedIndex property.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({selectedItemIndex : 2}); 
     
@@ -741,7 +741,7 @@ N> Since this is a deprecated property we suggest to use selectedIndices propert
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox({ 
         
@@ -766,7 +766,7 @@ N> Since this is a deprecated property we suggest to use selectedIndices propert
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({allowMultiSelection:true, selectedItems : [1,2]}); 
 
@@ -783,7 +783,7 @@ The list item to be selected by default using its index.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({selectedIndex : 2}); 
 
@@ -800,7 +800,7 @@ The list items to be selected by default using its indices. To use this property
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({selectedIndices : [2,4]}); 
 
@@ -817,7 +817,7 @@ Enables/Disables the multi selection option with the help of checkbox control.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({showCheckbox: true }); 
 
@@ -834,7 +834,7 @@ To display the ListBox container with rounded corners.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $('#list').ejListBox({ showRoundedCorner: true }); 
 
@@ -851,7 +851,7 @@ The template to display the ListBox widget with customized appearance.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $('#selectExperts').ejListBox({
 
@@ -872,7 +872,7 @@ Unchecks all the checked list items. It is dependent on showCheckbox property.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#button").ejButton({ text: "uncheck All list Items", click: "uncheckall" });
 
@@ -889,7 +889,7 @@ Unchecks the list of items by using its index values. It is dependent on showChe
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $('#list').ejListBox({ showCheckbox: true, uncheckItemsByIndex: "2,3" });
             
@@ -992,7 +992,7 @@ Specifies the virtual scroll mode to load the list data on demand via scrolling 
 Example
 {:.example}
 
- {% highlight js %}
+ {% highlight javascript %}
             $("#customerlist").ejListBox({
             
                     allowVirtualScrolling: true, 
@@ -1014,7 +1014,7 @@ Defines the width of the ListBox widget.
 Example
 {:.example}
 
- {% highlight js %}
+ {% highlight javascript %}
  
     $('#list').ejListBox({ width: "220"}); 
     
@@ -1032,7 +1032,7 @@ Default Value:
 Example
 {:.example}
 
- {% highlight js %}
+ {% highlight javascript %}
  
     $('#list').ejListBox({ targetID: "carslist"}); 
     
@@ -1070,7 +1070,7 @@ The index value to add the given items at the specified index. If index is not s
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox("addItem","Audi R8",1); 
 
@@ -1086,7 +1086,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox("checkAll"); 
 
@@ -1114,7 +1114,7 @@ Index of the listbox item to be checked. If index is not specified, the given it
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox("checkItemByIndex",3); 
 
@@ -1246,7 +1246,7 @@ Indices of the listbox items to be disabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $('#list').ejListBox("disableItemsByIndices" ,"3,5,7"); 
 

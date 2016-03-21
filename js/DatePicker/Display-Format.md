@@ -114,7 +114,7 @@ UTC<br/><br/></td><td>
 </table>
 By default ‘en-US’ culture date format is "M/d/yyyy".
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -136,7 +136,7 @@ By default ‘en-US’ culture date format is "M/d/yyyy".
 
 To get the culture and date format of DatePicker, refer the below code example
 
-{% highlight js %}
+{% highlight javascript %}
 
         // create instance for datePicker
 
@@ -156,7 +156,7 @@ N> by default date format is based on culture specific. You have to refer the re
 
 DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using [headerFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -176,7 +176,7 @@ DatePicker calendar consists of header, day header, days and footer section. In 
 
 Day header determines the days name to be displayed in terms of short, medium and long in DatePicker calendar by using [dayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat) property. Also the DatePicker calendar size varies with this specified values.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -198,7 +198,7 @@ DatePicker calendar shows tooltip on hovering the date by specifying the formatt
 
 You can also change the format of tooltip by using “**tooltipFormat**” property. Below codes example allows to show tooltip and format its value. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

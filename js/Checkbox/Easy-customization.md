@@ -31,7 +31,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
   {% endhighlight %}
   
-  {% highlight js %}
+  {% highlight javascript %}
 
   
     $(function () {
@@ -75,7 +75,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         //Disables the Tri- state for checkbox
@@ -158,7 +158,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
 
     $(function () {
@@ -218,7 +218,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         //size property is used to specify the checkbox size
@@ -257,7 +257,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
  
     $(function () {
@@ -300,7 +300,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
 
     $(function () {

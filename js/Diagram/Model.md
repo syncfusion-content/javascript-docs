@@ -11,7 +11,7 @@ documentation: ug
 
 The Diagram model represents the data to render the Diagram and to manipulate the Diagram elements. The following code illustrates how to define Diagram model.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Creates diagram
 $("#Diagram").ejDiagram({

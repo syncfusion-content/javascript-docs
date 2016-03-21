@@ -14,7 +14,7 @@ DatePicker has some default behavior settings which helps you to perform more op
 
 DatePicker value can be selected through picking date from DatePicker calendar or you can set it by using [value](http://help.syncfusion.com/js/api/ejdatepicker#members:value) property.
 
-{% highlight js %}
+{% highlight javascript %}
   
     $(function () {
 
@@ -51,7 +51,7 @@ DatePicker provides an option to restrict the user to pick the date from specifi
 
 **maxDate** -  specifies the maximum date to be picked in DatePicker calendar by disabling above date of maxDate. 
 
-{% highlight js %}
+{% highlight javascript %}
      
 	   $(function () {
 
@@ -84,7 +84,7 @@ By default DatePicker starts with month view and can be drill down into year, de
 * “decade”  – shows the years in decade to pick.
 * “century” – shows the decades in century to pick.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
 
@@ -120,7 +120,7 @@ You can make use of ‘div’ element to create DatePicker when you going for in
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -144,7 +144,7 @@ Also the valid date should be defined in specified range or else it resets to mi
 
 By default “**enableStrictMode**” is true, so you can enter any value other than date too, but an **error** class (**‘.** **e** **-** **error’**) will get added to wrapper to highlight the invalid date.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -162,7 +162,7 @@ By default “**enableStrictMode**” is true, so you can enter any value other 
 
 You can also override the **“** **error** **”** class to highlight when invalid date is entered.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

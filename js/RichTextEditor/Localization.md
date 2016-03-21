@@ -11,7 +11,7 @@ documentation: ug
 
 The editor provides option to localize its strings, it is used to adapting the editor to a particular local language. By default, the editor will use the US English (en-US) as its language. Please find the table with list of keys and their corresponding values for default language (en-US).
 
-{% highlight js %}
+{% highlight javascript %}
 
 ej.RTE.Locale["en-US"] = {
     
@@ -121,7 +121,7 @@ N>  The culture name has to be specified in a standard format such as [Language 
 
 To localize the editor’s strings with your own localization, copy the default language informations and localize the strings in the values column. For example, to localize the editor in German language (“de-DE”).
 
-{% highlight js %}
+{% highlight javascript %}
 
 ej.RTE.Locale["de-DE"] = {
         
@@ -231,7 +231,7 @@ ej.RTE.Locale["de-DE"] = {
 
 You can set the [locale](http://help.syncfusion.com/js/api/ejrte#members:locale) property of the editor to the new language. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#texteditor").ejRTE({
         value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +

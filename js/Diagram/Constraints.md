@@ -25,7 +25,7 @@ For more information about Diagram contraints, refer to [Diagram Constraints](/j
 
 The following example illustrates how to disable page editing.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 //Disables PageEditing
@@ -55,7 +55,7 @@ For more information about node contraints, refer to [Node Constraints](/js/api/
 
 The following code illustrates how to disable rotation.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Disables rotation
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
@@ -88,7 +88,7 @@ For more information about connector contraints, refer to [Connector Constraints
 
 The following code illustrates how to disable selection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Disables selection
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
@@ -115,7 +115,7 @@ For more information about port contraints, refer to [Port Constraints](/js/api/
 
 The following code illustrates how to disable creating connections with a port.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var PortConstraints = ej.datavisualization.Diagram.PortConstraints;
 var nodes = [{
@@ -145,7 +145,7 @@ For more information about Selector contraints, refer to [Selector Constraints](
 
 The following code illustrates how to hide rotator.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var SelectorConstraints = ej.datavisualization.Diagram.SelectorConstraints;
 $("#diagram").ejDiagram({
@@ -172,7 +172,7 @@ For more information about snap constraints, refer to [Snap Constraints](/js/api
 
 The following code illustrates how to show only horizontal gridlines.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	snapSettings: {
@@ -189,7 +189,7 @@ Some of the behaviors can be defined through both the specific object(node/conne
 
 The following code example illustrates how to inherit the line bridging behavior from the Diagram model.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Enables/disables line bridging based on the Diagram constraints
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
@@ -221,7 +221,7 @@ $("#diagram").ejDiagram({
 
 You can **add** or **enable** multiple values at a time by using **Bitwise** ‘\|’ (OR) **operator**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 
@@ -233,7 +233,7 @@ In the above example, you can do both the selection and rotation.
 
 You can **remove** or **disable** values by using **Bitwise** ‘&~’ (XOR) **operator**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 node.constraints = node.constraints & ~(NodeConstraints.Rotate);
@@ -246,7 +246,7 @@ In the above example, **Rotation** is disabled but other constraints are enabl
 
 You can check any value by using **Bitwise** ‘&’ (AND) **operator**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 if ((node.constraints & (ej.datavisualization.Diagram.NodeConstraints.Rotate)) == (ej.datavisualization.Diagram.NodeConstraints.Rotate));
 

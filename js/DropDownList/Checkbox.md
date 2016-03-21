@@ -17,7 +17,7 @@ DropDownList displays checkboxes to the left of each item when you set [showChec
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var items = [{
@@ -58,7 +58,7 @@ N> if you want to showcase the DropDownList with default checked items on data b
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -117,7 +117,7 @@ Each checked item’s text is appended to the textbox with delimiter “,” by 
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -164,7 +164,7 @@ When you enable this option in DropDownList widget, each checked item’s text i
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
    
 	$(function() { 
             var items = [{
@@ -209,7 +209,7 @@ You can check/uncheck all the list items at run time by using [checkAll](http://
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
         var target;
         

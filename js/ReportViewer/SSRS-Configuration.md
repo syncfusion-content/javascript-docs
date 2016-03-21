@@ -11,7 +11,7 @@ documentation: ug
 
 The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’s `reportServerUrl` property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’s `reportPath` property. 
 
-{% highlight js %}
+{% highlight javascript %}
 $("#viewer").ejReportViewer({
     reportServiceUrl: "/api/SSRSReport",
     processingMode: ej.ReportViewer.ProcessingMode.Remote,

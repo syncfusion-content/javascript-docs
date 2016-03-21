@@ -44,7 +44,7 @@ Add `div` container for barcode rendering.
 
 Set the `symbologyType` and provide input URL to the `text` property to render the QR Code.
 
-{% highlight js %}
+{% highlight javascript %}
 <script type="text/javascript">
    $(function() {
       // document ready
@@ -90,7 +90,7 @@ Add `div` container for barcode rendering.
 
 Set the `symbologyType` and provide input to the `text` property to render the Code39 barcode.
 
-{% highlight js %}
+{% highlight javascript %}
 $("#barcode").ejBarcode({
    text: "SYNCFUSION",
    symbologyType: "code39"

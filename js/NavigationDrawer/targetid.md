@@ -28,7 +28,7 @@ This property is used to define the target Id for **Navigation Drawer**. The dra
 
 Add the following code in the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
     
         $("#navpane").ejNavigationDrawer({ position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
         $("#drawerTarget").ejButton({text:"Open Drawer"});

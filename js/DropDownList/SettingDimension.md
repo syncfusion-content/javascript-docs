@@ -35,7 +35,7 @@ N> By default popup list is shown on DropDownList button click but you can displ
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var items = [{
@@ -123,7 +123,7 @@ To show a resize handle in the popup list, use [enablePopupResize](http://help.s
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{

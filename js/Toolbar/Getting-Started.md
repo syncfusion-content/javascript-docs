@@ -72,7 +72,7 @@ Create an HTML file and add the following template into the **HTML** file for **
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $(function () {// document ready
           // simple Toolbar control creation
@@ -183,7 +183,7 @@ After updating the **Toolbar** **items** with their **CSS** styles, you can rend
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -373,7 +373,7 @@ Add the following styles in the code table to display the toolbar items as follo
 
 After updating the Toolbar items with their **CSS** styles, you can render the toolbar inside the **&lt;script&gt;** tag and also need to render the drop down list control for **select zoom value**. Basically, dropdown list control is rendered with input element. **Set Zoom value** is one of the items in the toolbar. The following code example shows how to render and initialize **drop down control** with list of **zoom values**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration  
@@ -483,7 +483,7 @@ Execute the given code to render a **PDF reader** as follows.
 
 So far, you have added the required toolbar items and configured its appearance. When you click on **toolbar items**, the operation is performed through **client slide click event**. The following code example explains how to perform operations when you click on the **toolbar items**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

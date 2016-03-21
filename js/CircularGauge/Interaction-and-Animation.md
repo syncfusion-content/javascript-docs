@@ -21,7 +21,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Circular Gauge rendering
@@ -48,7 +48,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Circular Gauge rendering

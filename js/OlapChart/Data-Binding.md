@@ -250,7 +250,7 @@ You can expose services through the properties such as binding, contract and add
 
 The endpointBehaviors are illustrated as follows. 
  
-{% highlight xml %}
+{% highlight xaml %}
 
 <system.serviceModel> 
     ......
@@ -266,7 +266,7 @@ The endpointBehaviors are illustrated as follows.
 
 The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <system.serviceModel>
     <behaviors>

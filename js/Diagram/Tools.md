@@ -17,7 +17,7 @@ Drawing tool allows you to draw any kind of node/connector during runtime by cli
 
 To draw a shape, you need to set the JSON of that shape to the `drawType` property of the Diagram model and you have to activate the drawing tool by using the `tool` property. The following code example illustrates how to draw a rectangle at run time. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -49,7 +49,7 @@ diagram.update({
 
 The following code example illustrates how to draw a path.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 diagram.model.drawType = {
@@ -75,7 +75,7 @@ diagram.update({
 
 To draw connectors, you have to set the JSON of the connector to `drawType` property. The drawing tool can be activated by using the `tool` property as shown. The following code example illustrates how to draw a straight line connector. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 //JSON to create a straight line connector
@@ -98,7 +98,7 @@ diagram.update({
 
 Diagram allows you to create a textNode as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -135,7 +135,7 @@ When more than one of those tools are applied, a tool is activated based on the 
 
 You can set the desired tool to the `tool` property of the Diagram model. The following code illustrates how to enable single/multiple tools.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // To Enable Single Tool 
 $("#diagram").ejDiagram({

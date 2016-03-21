@@ -62,7 +62,7 @@ In the demo, a JSON array is created with text, imgId, role and country which is
 	 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
     
     var empList = [{
         text: "Erik Linden",

@@ -11,7 +11,7 @@ documentation: ug
 
 OlapClient widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapClient by setting [`isResponsive`](/js/api/ejolapclient#members:displaysettings-isresponsive) property to true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
     url: "../OlapClient",

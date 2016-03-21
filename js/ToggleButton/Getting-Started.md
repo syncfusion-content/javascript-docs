@@ -84,7 +84,7 @@ Initialization of **ToggleButton** in script
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

@@ -19,7 +19,7 @@ The `selectionColor` property is used to get or set the selected shape color. Th
 
 You can select the shape by tapping the shape. The Single selection is enabled by the `enableSelection` property of shape layer. When `enableSelection` is set to false, the shapes cannot be selected. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -50,7 +50,7 @@ You can select the shape by tapping the shape. The Single selection is enabled b
 
 This feature enables you to select multiple Map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the `selectionMode` property as "**multiple**" along with the `enableSelection` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -77,7 +77,7 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that comes within the rectangle is selected.
 You can enable this feature by setting the `draggingOnSelection` property in the `layers` to **True**.
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -132,7 +132,7 @@ The `minValue` property is used to set the minimum zoom level of the Map.
 
 The `maxValue` property is used to set the maximum zoom level of the Map.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function($) {
@@ -168,7 +168,7 @@ Maps can be zoomed by using the following options also,
 
 You can zoom the Maps by using `zoom` method. The `zoom` method contains parameter zoom value. The Map can be zoomed or scaled based on zoom value parameter.
 
-{% highlight js %}
+{% highlight javascript %}
  
         $("#map").ejMap("zoom", 2);
 
@@ -193,7 +193,7 @@ You can enable this feature by setting `enableZoomOnSelection` property value as
 
 When `enableZoomOnSelection` property is set to true, then zooming by double click is muted.
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -252,7 +252,7 @@ Zoom level of the map</td></tr>
 
 The panning feature enables the Map navigation. The `enablePan` property is used to enable or disable the panning support.
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -273,7 +273,7 @@ The panning feature enables the Map navigation. The `enablePan` property is used
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -315,7 +315,7 @@ The navigation control can be positioned in the following locations within the c
 
 You can set this option by using `dockPosition` property in `navigationControl`.
 
-{% highlight js %}
+{% highlight javascript %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({

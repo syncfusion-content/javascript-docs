@@ -23,7 +23,7 @@ The TreeView can be easily configured with the DOM element, such as div or ul. y
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTreeView(options)
 

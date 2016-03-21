@@ -83,7 +83,7 @@ Create a HTML file and paste the following template to the HTML file to create t
 
 Initialize **ejScroller** in the target area in the script.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function() {
             $("#scrollcontent").ejScroller({

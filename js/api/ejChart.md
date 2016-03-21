@@ -16,7 +16,7 @@ Essential chart can be easily configured to the DOM element, such as div. You ca
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejChart();
 
@@ -90,7 +90,7 @@ Angle to rotate the annotation in degrees.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -126,7 +126,7 @@ Text content or id of a HTML element to be displayed as annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -162,7 +162,7 @@ Specifies how annotations have to be placed in Chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -194,7 +194,7 @@ Specifies the horizontal alignment of the annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -245,7 +245,7 @@ Annotation is placed at the specified value above its original position.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -277,7 +277,7 @@ Annotation is placed at the specified value from left side of its original posit
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -309,7 +309,7 @@ Annotation is placed at the specified value from the right side of its original 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -341,7 +341,7 @@ Annotation is placed at the specified value under its original position.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -373,7 +373,7 @@ Controls the opacity of the annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -408,7 +408,7 @@ Specifies whether annotation has to be placed with respect to chart or series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -443,7 +443,7 @@ Specifies the vertical alignment of the annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -478,7 +478,7 @@ Controls the visibility of the annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -515,7 +515,7 @@ This property is not applicable when coordinateUnit is none.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -550,7 +550,7 @@ Name of the horizontal axis to be used for positioning the annotation. This prop
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -587,7 +587,7 @@ This property is not applicable when coordinateUnit is none.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -622,7 +622,7 @@ This property is applicable only when coordinateUnit is points.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -657,7 +657,7 @@ Url of the image to be used as chart background.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -707,7 +707,7 @@ Border color of the chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
                              
 $("#container").ejChart({
 
@@ -739,7 +739,7 @@ Opacity of the chart border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -771,7 +771,7 @@ Width of the Chart border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -803,7 +803,7 @@ Controls whether Chart has to be responsive or not.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -851,7 +851,7 @@ Background color of the plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -900,7 +900,7 @@ Border color of the plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -932,7 +932,7 @@ Opacity of the plot area border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -964,7 +964,7 @@ Border width of the plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -1010,7 +1010,7 @@ Specifies the unit to measure the width of the column in plotting area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -1042,7 +1042,7 @@ Width of the column in plotting area. Width is measured in either pixel or perce
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -1074,7 +1074,7 @@ Color of the line that indicates the starting point of the column in plotting ar
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -1106,7 +1106,7 @@ Width of the line that indicates the starting point of the column in plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -1166,7 +1166,7 @@ Border color of all series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1197,7 +1197,7 @@ DashArray for border of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1231,7 +1231,7 @@ Border width of all series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1263,7 +1263,7 @@ Pattern of dashes and gaps used to stroke all the line type series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1295,7 +1295,7 @@ Set the dataSource for all series. It can be an array of JSON objects or an inst
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1331,7 +1331,7 @@ Controls the size of the hole in doughnut series. Value ranges from 0 to 1
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1365,7 +1365,7 @@ Controls the size of the doughnut series. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1396,7 +1396,7 @@ Specifies the type of series to be drawn in radar or polar series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1430,7 +1430,7 @@ Enable/disable the animation for all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1462,7 +1462,7 @@ To avoid overlapping of data labels smartly.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1496,7 +1496,7 @@ Start angle of pie/doughnut series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1529,7 +1529,7 @@ Explodes the pie/doughnut slices on mouse move.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1563,7 +1563,7 @@ Explodes all the slice of pie/doughnut on render.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1597,7 +1597,7 @@ Index of the point to be exploded from pie/doughnut/pyramid/funnel.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1633,7 +1633,7 @@ Specifies the distance of the slice from the center, when it is exploded.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1667,7 +1667,7 @@ Fill color for all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1715,7 +1715,7 @@ Font color of the text in all series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1747,7 +1747,7 @@ Font Family for all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1779,7 +1779,7 @@ Specifies the font Style for all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1811,7 +1811,7 @@ Specifies the font weight for all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1843,7 +1843,7 @@ Opacity for text in all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1874,7 +1874,7 @@ Font size for text in all the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -1909,7 +1909,7 @@ Sets the height of the funnel in funnel series. Values can be either pixel or pe
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 <div id="container"></div> 
 <script>
@@ -1944,7 +1944,7 @@ Sets the width of the funnel in funnel series. Values can be either pixel or per
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -1980,7 +1980,7 @@ Gap between the slices in pyramid and funnel series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2015,7 +2015,7 @@ Specifies whether to join start and end point of a line/area series used in pola
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2050,7 +2050,7 @@ Specifies whether to stack the column series in polar/radar charts.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2085,7 +2085,7 @@ Renders the chart vertically. This is applicable only for cartesian type series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2116,7 +2116,7 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -2148,7 +2148,7 @@ Specifies the line cap of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2178,7 +2178,7 @@ Specifies the type of shape to be used where two lines meet.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2236,7 +2236,7 @@ Border color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2268,7 +2268,7 @@ Border width of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2313,7 +2313,7 @@ Angle of the data label in degrees. Only the text gets rotated, whereas the back
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2361,7 +2361,7 @@ Border color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2393,7 +2393,7 @@ Border width of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2438,7 +2438,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -2473,7 +2473,7 @@ Width of the connector.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2506,7 +2506,7 @@ Background color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2551,7 +2551,7 @@ Font family of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2581,7 +2581,7 @@ Font style of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2612,7 +2612,7 @@ Font weight of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2644,7 +2644,7 @@ Opacity of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2676,7 +2676,7 @@ Font size of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -2708,7 +2708,7 @@ Horizontal alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -2755,7 +2755,7 @@ Bottom margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2786,7 +2786,7 @@ Left margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2818,7 +2818,7 @@ Right margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2850,7 +2850,7 @@ Top margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -2884,7 +2884,7 @@ Opacity of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2916,7 +2916,7 @@ Background shape of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2946,7 +2946,7 @@ Name of a field in data source, where datalabel text is displayed.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -2979,7 +2979,7 @@ Specifies the position of the data label. This property can be used only for the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3013,7 +3013,7 @@ Vertical alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3047,7 +3047,7 @@ Controls the visibility of the data labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3079,7 +3079,7 @@ Color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -3113,7 +3113,7 @@ The URL for the Image to be displayed as marker. In order to display image as ma
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3147,7 +3147,7 @@ Opacity of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3179,7 +3179,7 @@ Specifies the shape of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3226,7 +3226,7 @@ Height of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3258,7 +3258,7 @@ Width of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3291,7 +3291,7 @@ Controls the visibility of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -3325,7 +3325,7 @@ Opacity of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3357,7 +3357,7 @@ Name of a field in data source, where the fill color for all the data points is 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3389,7 +3389,7 @@ Controls the size of pie series. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3421,7 +3421,7 @@ Specifies the mode of the pyramid series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3455,7 +3455,7 @@ Start angle from where the pie/doughnut series renders. By default it starts fro
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3514,7 +3514,7 @@ Border color of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3546,7 +3546,7 @@ Border width of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3579,7 +3579,7 @@ Customize the corner radius of the tooltip rectangle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3613,7 +3613,7 @@ Customize the corner radius of the tooltip rectangle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3647,7 +3647,7 @@ Specifies the duration, the tooltip has to be displayed.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3679,7 +3679,7 @@ Enables/disables the animation of the tooltip when moving from one point to othe
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3711,7 +3711,7 @@ Background color of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3743,7 +3743,7 @@ Format of the tooltip content.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3778,7 +3778,7 @@ Opacity of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3813,7 +3813,7 @@ Custom template to format the tooltip content. Use “point.x” and “point.y�
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  <div id="item" style="display: none;"> 
     <div>
        <div>#point.x#</div>
@@ -3852,7 +3852,7 @@ Controls the visibility of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -3883,7 +3883,7 @@ Specifies the type of the series to render in chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3917,7 +3917,7 @@ Specifies the name of the x-axis that has to be associated with this series. Add
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3950,7 +3950,7 @@ Name of the property in the datasource that contains x value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -3985,7 +3985,7 @@ Specifies the name of the y-axis that has to be associated with this series. Add
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -4019,7 +4019,7 @@ Name of the property in the datasource that contains y value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4054,7 +4054,7 @@ Name of the property in the datasource that contains high value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4086,7 +4086,7 @@ Name of the property in the datasource that contains low value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4120,7 +4120,7 @@ Name of the property in the datasource that contains open value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4149,7 +4149,7 @@ Name of the property in the datasource that contains close value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4182,7 +4182,7 @@ Name of the property in the datasource that contains the size value for the bubb
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4225,7 +4225,7 @@ Controls the visibility of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4265,7 +4265,7 @@ Specifies the mode of empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4312,7 +4312,7 @@ Color of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4357,7 +4357,7 @@ Border color of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4393,7 +4393,7 @@ Border width of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4430,7 +4430,7 @@ Fill color for the positive column of the waterfall.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4476,7 +4476,7 @@ Width of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4509,7 +4509,7 @@ Color of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4543,7 +4543,7 @@ DashArray of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4578,7 +4578,7 @@ DashArray of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4616,7 +4616,7 @@ Show/hides the error bar
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4647,7 +4647,7 @@ Specifies the type of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4677,7 +4677,7 @@ Specifies the mode of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4708,7 +4708,7 @@ Specifies the direction of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4739,7 +4739,7 @@ Value of vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4769,7 +4769,7 @@ Value of horizontal  error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4800,7 +4800,7 @@ Value of positive horizontal error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4832,7 +4832,7 @@ Value of negative horizontal error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4863,7 +4863,7 @@ Value of positive vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4895,7 +4895,7 @@ Value of negative vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4926,7 +4926,7 @@ Fill color of the error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -4960,7 +4960,7 @@ Width of the error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5001,7 +5001,7 @@ Show/Hides the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5031,7 +5031,7 @@ Width of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5062,7 +5062,7 @@ Length of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5092,7 +5092,7 @@ Color of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5137,7 +5137,7 @@ Show/hides the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5170,7 +5170,7 @@ Specifies the type of the trendline for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5200,7 +5200,7 @@ Name for the trendlines that is to be displayed in the legend text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5231,7 +5231,7 @@ Fill color of the trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5262,7 +5262,7 @@ Width of the trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5292,7 +5292,7 @@ Opacity of the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5323,7 +5323,7 @@ Pattern of dashes and gaps used to stroke the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5353,7 +5353,7 @@ Future trends of the current series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5383,7 +5383,7 @@ Past trends of the current series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5415,7 +5415,7 @@ Specifies the order of the polynomial trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5446,7 +5446,7 @@ Specifies the moving average starting period value.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5489,7 +5489,7 @@ Enables/disables the ability to highlight the series or data point interactively
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5518,7 +5518,7 @@ See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({ 
@@ -5553,7 +5553,7 @@ Specifies whether the series or data point has to be highlighted.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5583,7 +5583,7 @@ Color of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5613,7 +5613,7 @@ Opacity of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5651,7 +5651,7 @@ Border color of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5680,7 +5680,7 @@ Border width of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5711,7 +5711,7 @@ Specifies the pattern for the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5743,7 +5743,7 @@ Custom pattern for the series on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5787,7 +5787,7 @@ Enables/disables the ability to select a series/data point interactively.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5816,7 +5816,7 @@ See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({ 
@@ -5851,7 +5851,7 @@ Specifies whether the series or data point has to be selected.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5883,7 +5883,7 @@ Color of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5913,7 +5913,7 @@ Opacity of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5950,7 +5950,7 @@ Border color of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -5979,7 +5979,7 @@ Border width of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -6008,7 +6008,7 @@ Specifies the pattern for the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -6038,7 +6038,7 @@ Custom pattern for the series on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -6110,7 +6110,7 @@ Border width of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6142,7 +6142,7 @@ Opacity of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6187,7 +6187,7 @@ Height of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6219,7 +6219,7 @@ Width of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6251,7 +6251,7 @@ Show/hides the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6286,7 +6286,7 @@ Specifies the type of the crosshair. It can be trackball or crosshair
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6318,7 +6318,7 @@ Show/hides the crosshair/trackball visibility.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6354,7 +6354,7 @@ Depth of the 3D Chart from front view of series to background wall. This propert
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#container").ejChart({
@@ -6387,7 +6387,7 @@ Controls whether 3D view has to be enabled or not. 3D view is supported only for
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#container").ejChart({
@@ -6422,7 +6422,7 @@ Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering sup
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6459,7 +6459,7 @@ Controls whether 3D view has to be rotated on dragging. This property is applica
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -6508,7 +6508,7 @@ The dPeriod value for stochastic indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6543,7 +6543,7 @@ Enables/disables the animation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6577,7 +6577,7 @@ Color of the technical indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -6635,7 +6635,7 @@ Color of the histogram border in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6669,7 +6669,7 @@ Controls the width of histogram border line in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -6703,7 +6703,7 @@ Color of histogram columns in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6737,7 +6737,7 @@ Opacity of histogram columns in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6771,7 +6771,7 @@ Specifies the k period in stochastic indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6805,7 +6805,7 @@ Specifies the long period in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6852,7 +6852,7 @@ Color of lower line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6886,7 +6886,7 @@ Width of the lower line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6933,7 +6933,7 @@ Color of MACD line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -6967,7 +6967,7 @@ Width of the MACD line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7001,7 +7001,7 @@ Specifies the type of the MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7035,7 +7035,7 @@ Specifies period value in indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7082,7 +7082,7 @@ Color of period line in indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7116,7 +7116,7 @@ Width of the period line in indicators.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7150,7 +7150,7 @@ Name of the series for which indicator has to be drawn.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7184,7 +7184,7 @@ Specifies the short period in MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7218,7 +7218,7 @@ Specifies the standard deviation value for Bollinger band indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
     
@@ -7278,7 +7278,7 @@ Border color of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7312,7 +7312,7 @@ Border width of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7346,7 +7346,7 @@ Specifies the animation duration of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7380,7 +7380,7 @@ Enables/disables the tooltip animation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -7414,7 +7414,7 @@ Format of indicator tooltip. Use “point.x” and “point.y” as a placeholde
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7448,7 +7448,7 @@ Background color of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7482,7 +7482,7 @@ Opacity of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7516,7 +7516,7 @@ Controls the visibility of indicator tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7550,7 +7550,7 @@ Trigger value of MACD indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7584,7 +7584,7 @@ Specifies the visibility of indicator.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7618,7 +7618,7 @@ Specifies the type of indicator that has to be rendered.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7665,7 +7665,7 @@ Fill color of the upper line in indicators
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7699,7 +7699,7 @@ Width of the upper line in indicators.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7733,7 +7733,7 @@ Width of the indicator line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -7767,7 +7767,7 @@ Name of the horizontal axis used for indicator. Primary X axis is used when x ax
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
     
@@ -7801,7 +7801,7 @@ Name of the vertical axis used for indicator. Primary Y axis is used when y axis
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -7846,7 +7846,7 @@ Horizontal alignment of the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -7881,7 +7881,7 @@ Background for the legend. Use this property to add a background image or backgr
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -7930,7 +7930,7 @@ Border color of the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -7962,7 +7962,7 @@ Border width of the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -7994,7 +7994,7 @@ Number of columns to arrange the legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8029,7 +8029,7 @@ Controls whether legend has to use scrollbar or not. When enabled, scroll bar ap
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8065,7 +8065,7 @@ Legend items representing invisible series is displayed in gray color.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8114,7 +8114,7 @@ Font family for legend item text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8146,7 +8146,7 @@ Font style for legend item text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8178,7 +8178,7 @@ Font weight for legend item text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8210,7 +8210,7 @@ Font size for legend item text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8242,7 +8242,7 @@ Gap or padding between the legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8304,7 +8304,7 @@ Border color of the legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8336,7 +8336,7 @@ Border width of the legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8368,7 +8368,7 @@ Height of the shape in legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8400,7 +8400,7 @@ Width of the shape in legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8446,7 +8446,7 @@ X value or horizontal offset to position the legend in chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8478,7 +8478,7 @@ Y value or vertical offset to position the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8510,7 +8510,7 @@ Opacity of the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8546,7 +8546,7 @@ To manually specify the location of legend, set **custom** as value to this prop
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8581,7 +8581,7 @@ Number of rows to arrange the legend items.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8616,7 +8616,7 @@ Shape of the legend items. Default shape for pie and doughnut series is circle a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8665,7 +8665,7 @@ Height of the legend. Height can be specified in either pixel or percentage.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8697,7 +8697,7 @@ Width of the legend. Width can be specified in either pixel or percentage.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8756,7 +8756,7 @@ Font family for the text in legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8788,7 +8788,7 @@ Font style for legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8820,7 +8820,7 @@ Font weight for legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8852,7 +8852,7 @@ Font size for legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8883,7 +8883,7 @@ Background color for the chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8927,7 +8927,7 @@ Width of the title border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8960,7 +8960,7 @@ color of the title border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -8993,7 +8993,7 @@ opacity of the title border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9026,7 +9026,7 @@ opacity of the title border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9059,7 +9059,7 @@ Text to be displayed in legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9094,7 +9094,7 @@ Alignment of the legend title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9127,7 +9127,7 @@ Specifies the action taken when the legend width is more than the textWidth.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({ 
   legend :{
@@ -9160,7 +9160,7 @@ Text width for legend item.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({ 
   legend :{
@@ -9194,7 +9194,7 @@ Controls the visibility of the legend.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9230,7 +9230,7 @@ String type properties like title text are not localized automatically. Provide 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9264,7 +9264,7 @@ Palette is used to store the series fill color in array and apply the color to s
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9310,7 +9310,7 @@ Spacing for the left margin of chart area. Setting positive value decreases the 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9342,7 +9342,7 @@ Spacing for the right margin of chart area. Setting positive value decreases the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9374,7 +9374,7 @@ Spacing for the top margin of chart area. Setting positive value decreases the h
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9406,7 +9406,7 @@ Spacing for the bottom margin of the chart area. Setting positive value decrease
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9441,7 +9441,7 @@ This property is applicable only when 3D view is enabled
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9517,7 +9517,7 @@ Fill color for the even grid bands.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9551,7 +9551,7 @@ Opacity of the even grid band.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9598,7 +9598,7 @@ Fill color of the odd grid bands
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -9632,7 +9632,7 @@ Opacity of odd grid band
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9679,7 +9679,7 @@ Pattern of dashes and gaps to be applied to the axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9713,7 +9713,7 @@ Padding for axis line. Normally, it is used along with plotOffset to pad the plo
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9747,7 +9747,7 @@ Show/hides the axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9781,7 +9781,7 @@ Width of axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9815,7 +9815,7 @@ Specifies the index of the column where the axis is associated, when the chart a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9849,7 +9849,7 @@ Specifies the number of columns or plot areas an axis has to span horizontally.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9896,7 +9896,7 @@ Show/hides the crosshair label associated with this axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9930,7 +9930,7 @@ With this setting, you can request axis to calculate intervals approximately equ
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9964,7 +9964,7 @@ Specifies the position of labels at the edge of the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -9998,7 +9998,7 @@ Specifies whether to trim the axis label when the width of the label exceeds the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10045,7 +10045,7 @@ Font family of labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10080,7 +10080,7 @@ Font style of labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10114,7 +10114,7 @@ Font weight of the label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10148,7 +10148,7 @@ Opacity of the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10182,7 +10182,7 @@ Font size of the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10217,7 +10217,7 @@ Specifies the type of interval in date time axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10251,7 +10251,7 @@ Specifies whether to inverse the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10285,7 +10285,7 @@ Custom formatting for axis label and supports all standard formatting type of nu
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10319,7 +10319,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10353,7 +10353,7 @@ Specifies the position of the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10387,7 +10387,7 @@ Angle in degrees to rotate the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10421,7 +10421,7 @@ Logarithmic base value. This is applicable only for logarithmic axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10468,7 +10468,7 @@ Pattern of dashes and gaps used to stroke the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10502,7 +10502,7 @@ Opacity of major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10536,7 +10536,7 @@ Show/hides the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10570,7 +10570,7 @@ Width of the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10617,7 +10617,7 @@ Length of the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10651,7 +10651,7 @@ Show/hides the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10685,7 +10685,7 @@ Width of the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10719,7 +10719,7 @@ Maximum number of labels to be displayed in every 100 pixels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10753,7 +10753,7 @@ Maximum width of the axis label. When the label exceeds the width, the label get
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10800,7 +10800,7 @@ Patterns of dashes and gaps used to stroke the minor grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10834,7 +10834,7 @@ Show/hides the minor grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10868,7 +10868,7 @@ Width of the minorGridLines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10915,7 +10915,7 @@ Length of the minor tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10949,7 +10949,7 @@ Show/hides the minor tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -10983,7 +10983,7 @@ Width of the minor tick line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -11017,7 +11017,7 @@ Specifies the number of minor ticks per interval.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -11049,7 +11049,7 @@ Unique name of the axis. To associate an axis with the series, you have to set t
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11083,7 +11083,7 @@ Specifies whether to render the axis at the opposite side of its default positio
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11117,7 +11117,7 @@ Specifies the padding for the plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11160,7 +11160,7 @@ Minimum value of the axis range.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11190,7 +11190,7 @@ Maximum value of the axis range.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11220,7 +11220,7 @@ Interval of the axis range.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11252,7 +11252,7 @@ Specifies the padding for the axis range.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11286,7 +11286,7 @@ Rounds the number to the given number of decimals.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11342,7 +11342,7 @@ Border color of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -11376,7 +11376,7 @@ Background color of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11410,7 +11410,7 @@ End value of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11457,7 +11457,7 @@ Font color of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11491,7 +11491,7 @@ Font family of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11525,7 +11525,7 @@ Font style of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({ 
 
@@ -11559,7 +11559,7 @@ Font weight of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11593,7 +11593,7 @@ Opacity of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11627,7 +11627,7 @@ Font size of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11661,7 +11661,7 @@ Start value of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11695,7 +11695,7 @@ Indicates whether to render the strip line from the minimum/start value of the a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11729,7 +11729,7 @@ Specifies text to be displayed inside the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
  
@@ -11763,7 +11763,7 @@ Specifies the alignment of the text inside the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11797,7 +11797,7 @@ Show/hides the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11831,7 +11831,7 @@ Width of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11865,7 +11865,7 @@ Specifies the order where the strip line and the series have to be rendered. Whe
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11900,7 +11900,7 @@ Specifies the position of the axis tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11947,7 +11947,7 @@ Specifies whether to trim the axis title when it exceeds the chart area or the m
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -11994,7 +11994,7 @@ Font family of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12028,7 +12028,7 @@ Font style of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#container").ejChart({
@@ -12063,7 +12063,7 @@ Font weight of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12097,7 +12097,7 @@ Opacity of the axis title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12131,7 +12131,7 @@ Font size of the axis title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12165,7 +12165,7 @@ Maximum width of the title, when the title exceeds this width, the title gets tr
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12199,7 +12199,7 @@ Title for the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12233,7 +12233,7 @@ Controls the visibility of axis title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12268,7 +12268,7 @@ Specifies the type of data the axis is handling.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12302,7 +12302,7 @@ Show/hides the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12336,7 +12336,7 @@ The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled b
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12371,7 +12371,7 @@ Position of the zoomed axis. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12444,7 +12444,7 @@ Fill color for the even grid bands.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12478,7 +12478,7 @@ Opacity of the even grid band.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12525,7 +12525,7 @@ Fill color of the odd grid bands.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12559,7 +12559,7 @@ Opacity of odd grid band.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12606,7 +12606,7 @@ Pattern of dashes and gaps to be applied to the axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12640,7 +12640,7 @@ Padding for axis line. Normally, it is used along with plotOffset to pad the plo
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12674,7 +12674,7 @@ Show/hides the axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12708,7 +12708,7 @@ Width of axis line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12755,7 +12755,7 @@ Show/hides the crosshair label associated with this axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12789,7 +12789,7 @@ With this setting, you can request axis to calculate intervals approximately equ
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12824,7 +12824,7 @@ Specifies the position of labels at the edge of the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12858,7 +12858,7 @@ Specifies whether to trim the axis label when the width of the label exceeds the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12905,7 +12905,7 @@ Font family of labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12940,7 +12940,7 @@ ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fo
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -12975,7 +12975,7 @@ Font weight of the label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13009,7 +13009,7 @@ Opacity of the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13043,7 +13043,7 @@ Font size of the axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13078,7 +13078,7 @@ Specifies the type of interval in date time axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13112,7 +13112,7 @@ Specifies whether to inverse the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13146,7 +13146,7 @@ Custom formatting for axis label and supports all standard formatting type of nu
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13180,7 +13180,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13211,7 +13211,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13246,7 +13246,7 @@ Logarithmic base value. This is applicable only for logarithmic axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13293,7 +13293,7 @@ Pattern of dashes and gaps used to stroke the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13327,7 +13327,7 @@ Opacity of major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13361,7 +13361,7 @@ Show/hides the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13395,7 +13395,7 @@ Width of the major grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13442,7 +13442,7 @@ Length of the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13476,7 +13476,7 @@ Show/hides the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13510,7 +13510,7 @@ Width of the major tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13544,7 +13544,7 @@ Maximum number of labels to be displayed in every 100 pixels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13578,7 +13578,7 @@ Maximum width of the axis label. When the label exceeds the width, the label get
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13625,7 +13625,7 @@ Patterns of dashes and gaps used to stroke the minor grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13659,7 +13659,7 @@ Show/hides the minor grid lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13693,7 +13693,7 @@ Width of the minorGridLines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13740,7 +13740,7 @@ Length of the minor tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#container").ejChart({
@@ -13775,7 +13775,7 @@ Show/hides the minor tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13809,7 +13809,7 @@ Width of the minor tick line
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13843,7 +13843,7 @@ Specifies the number of minor ticks per interval.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13877,7 +13877,7 @@ Unique name of the axis. To associate an axis with the series, you have to set t
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13911,7 +13911,7 @@ Specifies whether to render the axis at the opposite side of its default positio
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13944,7 +13944,7 @@ Specifies the padding for the plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -13979,7 +13979,7 @@ Specifies the padding for the axis range.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14013,7 +14013,7 @@ Rounds the number to the given number of decimals.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14047,7 +14047,7 @@ Specifies the index of the row to which the axis is associated, when the chart a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14080,7 +14080,7 @@ Specifies the number of row or plot areas an axis has to span vertically.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14135,7 +14135,7 @@ Border color of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14169,7 +14169,7 @@ Background color of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14203,7 +14203,7 @@ End value of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14250,7 +14250,7 @@ Font color of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14284,7 +14284,7 @@ Font family of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14318,7 +14318,7 @@ Font style of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14352,7 +14352,7 @@ Font weight of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14386,7 +14386,7 @@ Opacity of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14420,7 +14420,7 @@ Font size of the strip line text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14454,7 +14454,7 @@ Start value of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14488,7 +14488,7 @@ Indicates whether to render the strip line from the minimum/start value of the a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14522,7 +14522,7 @@ Specifies text to be displayed inside the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14557,7 +14557,7 @@ Specifies the alignment of the text inside the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14591,7 +14591,7 @@ Show/hides the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14625,7 +14625,7 @@ Width of the strip line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14658,7 +14658,7 @@ Specifies the order in which strip line and the series have to be rendered. When
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14693,7 +14693,7 @@ Specifies the position of the axis tick lines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14740,7 +14740,7 @@ Specifies whether to trim the axis title when it exceeds the chart area or the m
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14787,7 +14787,7 @@ Font family of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14821,7 +14821,7 @@ Font style of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14855,7 +14855,7 @@ Font weight of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14889,7 +14889,7 @@ Opacity of the axis title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14923,7 +14923,7 @@ Font size of the axis title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14957,7 +14957,7 @@ Maximum width of the title, when the title exceeds this width, the title gets tr
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -14991,7 +14991,7 @@ Title for the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15025,7 +15025,7 @@ Controls the visibility of axis title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15060,7 +15060,7 @@ Specifies the type of data the axis is handling.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15094,7 +15094,7 @@ Show/hides the axis.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15128,7 +15128,7 @@ The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled b
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15162,7 +15162,7 @@ Position of the zoomed axis. Value ranges from 0 to 1
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15196,7 +15196,7 @@ Rotation angle of the 3D view. This property is applicable only when 3D view is 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#container").ejChart({
 
@@ -15245,7 +15245,7 @@ Specifies the unit to measure the height of the row in plotting area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -15277,7 +15277,7 @@ Height of the row in plotting area. Height is measured in either pixel or percen
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -15309,7 +15309,7 @@ Color of the line that indicates the starting point of the row in plotting area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -15341,7 +15341,7 @@ Width of the line that indicates the starting point of the row in plot area.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -15388,7 +15388,7 @@ Color of the point, where the close is up in financial chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15436,7 +15436,7 @@ Border color of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15468,7 +15468,7 @@ Border width of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -15500,7 +15500,7 @@ DashArray for border of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15538,7 +15538,7 @@ Color of the point, where the close is down in financial chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15572,7 +15572,7 @@ Pattern of dashes and gaps used to stroke the line type series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -15606,7 +15606,7 @@ Specifies the dataSource for the series. It can be an array of JSON objects or a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15639,7 +15639,7 @@ Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15672,7 +15672,7 @@ Controls the size of the doughnut series. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15704,7 +15704,7 @@ Type of series to be drawn in radar or polar series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 series : [{drawType : "column" }]                   
@@ -15736,7 +15736,7 @@ Enable/disable the animation of series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15769,7 +15769,7 @@ To avoid overlapping of data labels smartly.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15802,7 +15802,7 @@ End angle of pie/doughnut series. For a complete circle, it has to be 360, by de
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 series : [{endAngle: 270 }]                   
@@ -15835,7 +15835,7 @@ Explodes the pie/doughnut slices on mouse move.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15868,7 +15868,7 @@ Explodes all the slice of pie/doughnut on render.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15901,7 +15901,7 @@ Index of the point to be exploded from pie/doughnut/pyramid/funnel.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15935,7 +15935,7 @@ Specifies the distance of the slice from the center, when it is exploded.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -15969,7 +15969,7 @@ Fill color of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16015,7 +16015,7 @@ Font color of the series text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16047,7 +16047,7 @@ Font Family of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16079,7 +16079,7 @@ Font Style of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16111,7 +16111,7 @@ Font weight of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16143,7 +16143,7 @@ Opacity of series text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16175,7 +16175,7 @@ Size of the series text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16207,7 +16207,7 @@ Specifies the height of the funnel in funnel series. Values can be in both pixel
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16240,7 +16240,7 @@ Specifies the width of the funnel in funnel series. Values can be in both pixel 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16273,7 +16273,7 @@ Gap between the slices of pyramid/funnel series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16305,7 +16305,7 @@ Specifies whether to join start and end point of a line/area series used in pola
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16337,7 +16337,7 @@ Specifies whether to stack the column series in polar/radar charts.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16372,7 +16372,7 @@ Renders the chart vertically. This is applicable only for cartesian type series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16407,7 +16407,7 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16441,7 +16441,7 @@ Specifies the line cap of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16471,7 +16471,7 @@ Specifies the type of shape to be used where two lines meet.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16529,7 +16529,7 @@ Border color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16561,7 +16561,7 @@ Border width of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -16608,7 +16608,7 @@ Angle of the data label in degrees. Only the text gets rotated, whereas the back
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16653,7 +16653,7 @@ Border color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16685,7 +16685,7 @@ Border width of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16729,7 +16729,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16761,7 +16761,7 @@ Width of the connector.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16795,7 +16795,7 @@ Background color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16840,7 +16840,7 @@ Font family of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -16872,7 +16872,7 @@ Font style of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16902,7 +16902,7 @@ Font weight of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16934,7 +16934,7 @@ Opacity of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -16966,7 +16966,7 @@ Font size of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17001,7 +17001,7 @@ Horizontal alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17046,7 +17046,7 @@ Bottom margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17078,7 +17078,7 @@ Left margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17110,7 +17110,7 @@ Right margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17142,7 +17142,7 @@ Top margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17176,7 +17176,7 @@ Opacity of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17206,7 +17206,7 @@ Background shape of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17236,7 +17236,7 @@ Name of a field in data source where datalabel text is displayed.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17266,7 +17266,7 @@ Specifies the position of the data label. This property can be used only for the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17298,7 +17298,7 @@ Vertical alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -17331,7 +17331,7 @@ Controls the visibility of the data labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -17361,7 +17361,7 @@ Custom template to format the data label content. Use “point.x” and “point
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -17395,7 +17395,7 @@ Moves the label vertically by some offset.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -17426,7 +17426,7 @@ Color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17458,7 +17458,7 @@ The URL for the Image that is to be displayed as marker. In order to display ima
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17490,7 +17490,7 @@ Opacity of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17522,7 +17522,7 @@ Specifies the shape of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17568,7 +17568,7 @@ Height of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17600,7 +17600,7 @@ Width of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17633,7 +17633,7 @@ Controls the visibility of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17665,7 +17665,7 @@ Opacity of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17697,7 +17697,7 @@ Name of a field in data source where fill color for all the data points is gener
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17731,7 +17731,7 @@ Controls the size of pie series. Value ranges from 0 to 1.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17776,7 +17776,7 @@ Controls the visibility of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17816,7 +17816,7 @@ Specifies the mode of empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17863,7 +17863,7 @@ Color of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17908,7 +17908,7 @@ Border color of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17944,7 +17944,7 @@ Border width of the empty point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -17981,7 +17981,7 @@ Fill color for the positive column of the waterfall.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18027,7 +18027,7 @@ Width of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18060,7 +18060,7 @@ Color of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18094,7 +18094,7 @@ DashArray of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18129,7 +18129,7 @@ DashArray of the connector line.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18167,7 +18167,7 @@ Show/hides the error bar
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18198,7 +18198,7 @@ Specifies the type of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18228,7 +18228,7 @@ Specifies the mode of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18259,7 +18259,7 @@ Specifies the direction of error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18290,7 +18290,7 @@ Value of vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18320,7 +18320,7 @@ Value of horizontal  error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18351,7 +18351,7 @@ Value of positive horizontal error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18383,7 +18383,7 @@ Value of negative horizontal error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18414,7 +18414,7 @@ Value of positive vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18446,7 +18446,7 @@ Value of negative vertical error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18477,7 +18477,7 @@ Fill color of the error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18511,7 +18511,7 @@ Width of the error bar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18552,7 +18552,7 @@ Show/Hides the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18582,7 +18582,7 @@ Width of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18613,7 +18613,7 @@ Length of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18643,7 +18643,7 @@ Color of the error bar cap.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18702,7 +18702,7 @@ Border color of the point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18734,7 +18734,7 @@ Border width of the point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -18767,7 +18767,7 @@ To show/hide the intermediate summary from the last intermediate point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -18799,7 +18799,7 @@ To show/hide the total summary of the waterfall series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -18834,7 +18834,7 @@ Close value of the point. Close value is applicable only for financial type seri
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18864,7 +18864,7 @@ Size of a bubble in the bubble series. This is applicable only for the bubble se
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18896,7 +18896,7 @@ Background color of the point. This is applicable only for column type series an
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18928,7 +18928,7 @@ High value of the point. High value is applicable only for financial type series
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -18960,7 +18960,7 @@ Low value of the point. Low value is applicable only for financial type series, 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19018,7 +19018,7 @@ Border color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19050,7 +19050,7 @@ Border width of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19097,7 +19097,7 @@ Angle of the data label in degrees. Only the text gets rotated, whereas the back
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19142,7 +19142,7 @@ Border color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19174,7 +19174,7 @@ Border width of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19218,7 +19218,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19250,7 +19250,7 @@ Width of the connector.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19284,7 +19284,7 @@ Background color of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19329,7 +19329,7 @@ Font family of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19361,7 +19361,7 @@ Font style of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19391,7 +19391,7 @@ Font weight of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19423,7 +19423,7 @@ Opacity of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19455,7 +19455,7 @@ Font size of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19490,7 +19490,7 @@ Horizontal alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19535,7 +19535,7 @@ Bottom margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19567,7 +19567,7 @@ Left margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19599,7 +19599,7 @@ Right margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19631,7 +19631,7 @@ Top margin of the text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19665,7 +19665,7 @@ Opacity of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19695,7 +19695,7 @@ Background shape of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19725,7 +19725,7 @@ Specifies the position of the data label. This property can be used only for the
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19757,7 +19757,7 @@ Vertical alignment of the data label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19790,7 +19790,7 @@ Controls the visibility of the data labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19820,7 +19820,7 @@ Custom template to format the data label content. Use “point.x” and “point
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19854,7 +19854,7 @@ Moves the label vertically by specified offset.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -19885,7 +19885,7 @@ Color of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19917,7 +19917,7 @@ The URL for the Image that is to be displayed as marker. In order to display ima
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19949,7 +19949,7 @@ Opacity of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -19981,7 +19981,7 @@ Specifies the shape of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20027,7 +20027,7 @@ Height of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20059,7 +20059,7 @@ Width of the marker.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20092,7 +20092,7 @@ Controls the visibility of the marker shape.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20124,7 +20124,7 @@ Open value of the point. This is applicable only for financial type series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20156,7 +20156,7 @@ Datalabel text for the point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20188,7 +20188,7 @@ X value of the point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20220,7 +20220,7 @@ Y value of the point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20252,7 +20252,7 @@ Specifies the mode of the pyramid series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20286,7 +20286,7 @@ Specifies ej.Query to select data from dataSource. This property is applicable o
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 var query =  ej.Query().from("Orders").take(10);
@@ -20322,7 +20322,7 @@ Start angle from where the pie/doughnut series renders. It starts from 0, by def
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -20382,7 +20382,7 @@ Border Color of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20414,7 +20414,7 @@ Border Width of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20444,7 +20444,7 @@ Customize the corner radius of the tooltip rectangle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20480,7 +20480,7 @@ Customize the corner radius of the tooltip rectangle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20516,7 +20516,7 @@ Specifies the duration, the tooltip has to be displayed.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20548,7 +20548,7 @@ Enables/disables the animation of the tooltip when moving from one point to anot
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20580,7 +20580,7 @@ Background color of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20615,7 +20615,7 @@ Format of the tooltip content.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20648,7 +20648,7 @@ Opacity of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20680,7 +20680,7 @@ Custom template to format the tooltip content. Use “point.x” and “point.y�
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  <div id="item" style="display: none;"> 
     <div>
@@ -20722,7 +20722,7 @@ Controls the visibility of the tooltip.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20753,7 +20753,7 @@ Specifies the type of the series to render in chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20787,7 +20787,7 @@ Controls the visibility of the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -20820,7 +20820,7 @@ Specifies the name of the x-axis that has to be associated with this series. Add
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -20853,7 +20853,7 @@ Name of the property in the datasource that contains x value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -20886,7 +20886,7 @@ Specifies the name of the y-axis that has to be associated with this series. Add
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 
 $("#container").ejChart({
@@ -20920,7 +20920,7 @@ Name of the property in the datasource that contains y value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20952,7 +20952,7 @@ Name of the property in the datasource that contains high value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -20984,7 +20984,7 @@ Name of the property in the datasource that contains low value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21018,7 +21018,7 @@ Name of the property in the datasource that contains open value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21047,7 +21047,7 @@ Name of the property in the datasource that contains close value for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21080,7 +21080,7 @@ Name of the property in the datasource that contains the size value for the bubb
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21124,7 +21124,7 @@ Show/hides the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21157,7 +21157,7 @@ Specifies the type of trendline for the series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21187,7 +21187,7 @@ Name for the trendlines that is to be displayed in legend text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21218,7 +21218,7 @@ Fill color of the trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21249,7 +21249,7 @@ Width of the trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21279,7 +21279,7 @@ Opacity of the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21310,7 +21310,7 @@ Pattern of dashes and gaps used to stroke the trendline.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21340,7 +21340,7 @@ Future trends of the current series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21370,7 +21370,7 @@ Past trends of the current series.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21402,7 +21402,7 @@ Specifies the order of polynomial trendlines.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21432,7 +21432,7 @@ Specifies the moving average starting period  value.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21475,7 +21475,7 @@ Enables/disables the ability to highlight series or data point interactively.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21503,7 +21503,7 @@ See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({ 
@@ -21537,7 +21537,7 @@ Specifies whether series or data point has to be highlighted.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21567,7 +21567,7 @@ Color of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21597,7 +21597,7 @@ Opacity of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21635,7 +21635,7 @@ Border color of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21664,7 +21664,7 @@ Border width of the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21695,7 +21695,7 @@ Specifies the pattern for the series/point on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21727,7 +21727,7 @@ Custom pattern for the series on highlight.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21771,7 +21771,7 @@ Enables/disables the ability to select a series/data point interactively.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21802,7 +21802,7 @@ Specifies whether series or data point has to be selected.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21834,7 +21834,7 @@ Color of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21864,7 +21864,7 @@ Opacity of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21901,7 +21901,7 @@ Border color of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21929,7 +21929,7 @@ See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21962,7 +21962,7 @@ Border width of the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -21991,7 +21991,7 @@ Specifies the pattern for the series/point on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -22021,7 +22021,7 @@ Custom pattern for the series on selection.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
  
 $("#container").ejChart({
@@ -22056,7 +22056,7 @@ Controls whether data points has to be displayed side by side or along the depth
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
     
@@ -22103,7 +22103,7 @@ Height of the Chart. Height can be specified in either pixel or percentage.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22135,7 +22135,7 @@ Width of the Chart. Width can be specified in either pixel or percentage.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22167,7 +22167,7 @@ Specifies the theme for Chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22204,7 +22204,7 @@ Slope angle of 3D Chart. This property is applicable only when 3D view is enable
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22264,7 +22264,7 @@ Font family for Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22296,7 +22296,7 @@ Font style for Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22328,7 +22328,7 @@ Font weight for Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22360,7 +22360,7 @@ Opacity of the Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22392,7 +22392,7 @@ Font size for Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22449,7 +22449,7 @@ Font family of sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22481,7 +22481,7 @@ Font style for sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22513,7 +22513,7 @@ Font weight for sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22545,7 +22545,7 @@ Opacity of the sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22577,7 +22577,7 @@ Font size for sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22608,7 +22608,7 @@ Background color for the chart subtitle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22653,7 +22653,7 @@ Width of the subtitle border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22686,7 +22686,7 @@ color of the subtitle border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22719,7 +22719,7 @@ opacity of the subtitle border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22752,7 +22752,7 @@ opacity of the subtitle border.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22784,7 +22784,7 @@ Text to be displayed in sub title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22819,7 +22819,7 @@ Alignment of sub title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22853,7 +22853,7 @@ Background color for the chart subtitle.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22886,7 +22886,7 @@ Text to be displayed in Chart title.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22921,7 +22921,7 @@ Alignment of the title text.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -22958,7 +22958,7 @@ Width of the wall used in 3D Chart. Wall is present only in Cartesian type 3D se
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23005,7 +23005,7 @@ Enables or disables zooming.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23037,7 +23037,7 @@ Enable or disables the differed zooming. When it is enabled, chart is updated on
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23069,7 +23069,7 @@ Enables/disables the ability to zoom the chart on moving the mouse wheel.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23104,7 +23104,7 @@ Specifies whether to allow zooming the chart vertically or horizontally or in bo
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23137,7 +23137,7 @@ To display user specified buttons in zooming toolbar.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart({
 
@@ -23183,7 +23183,7 @@ Following are the parameters that you can pass to this method.
 <br/><br./>
 Example
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 //animating series array
 chartObj.animate(chartObj.model.series);
@@ -23197,7 +23197,7 @@ chartObj.animate(chartObj.model.series);
 <br/><br/>
 Example,
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 //animating a specific indicator
 chartObj.animate(chartObj.model.indicators[0]);
@@ -23240,7 +23240,7 @@ Following are the parameters that you can pass to this method,
 <br/><br./>
 Example
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 chartObj.export(‘image’);
 {% endhighlight %}
@@ -23254,7 +23254,7 @@ URL of the service, where the chart will be exported to excel.
 <br/><br/>
 Example,
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport')
 {% endhighlight %}
@@ -23269,7 +23269,7 @@ When this parameter is true, all the chart objects initialized to the same docum
 <br/><br/>
 Example,
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true)
 {% endhighlight %}
@@ -23294,14 +23294,14 @@ Redraws the entire chart. You can call this method whenever you update, add or r
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
 // Redraw Chart
 var chartObj = $("#container").data("ejChart");
 chartObj.redraw();
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 $("#container").ejChart("redraw");      
 {% endhighlight %}
@@ -23325,7 +23325,7 @@ Example:
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 //animationComplete event for chart
 
@@ -23350,25 +23350,25 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the series that completed has animation.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23388,7 +23388,7 @@ Fires before rendering the labels. This event is fired for each label in axis. Y
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axesLabelRendering event for chart
 
@@ -23413,37 +23413,37 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.Axis{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the corresponding axis.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.Label.Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">Formatted text of the respective label. You can also add custom text to the label.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.Label.Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">Actual value of the label.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23465,7 +23465,7 @@ Fires during the initialization of axis labels.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axesLabelsInitialize event for chart
 
@@ -23490,25 +23490,25 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.axes{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Collection of axes in Chart</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23528,7 +23528,7 @@ Fires during axes range calculation. This event is fired for each axis present i
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axesRangeCalculate event for chart
 
@@ -23552,43 +23552,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.range.delta{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Difference between minimum and maximum value of axis range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.range.interval{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Interval value of axis range. Grid lines, tick lines and axis labels are drawn based on this interval value.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.range.max{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Maximum value of axis range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.range.min{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Minimum value of axis range.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23609,7 +23609,7 @@ Fires before rendering the axis title. This event is triggered for each axis wit
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axesTitleRendering event for chart
 
@@ -23633,43 +23633,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.axes{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the axis whose title is being rendered</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.x{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of title location</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.y{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of title location</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.title{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Axis title text. You can add custom text to the title.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23690,7 +23690,7 @@ Fires during the calculation of chart area bounds. You can use this event to cus
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //chartAreaBoundsCalculate event for chart
 
@@ -23715,43 +23715,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.areaBounds.Height{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Height of the chart area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.areaBounds.Width{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Width of the chart area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.areaBounds.X{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of the chart area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.areaBounds.Y{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of the chart area.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23773,7 +23773,7 @@ Fires after chart is created.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Create event for chart
 
@@ -23797,19 +23797,19 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23833,7 +23833,7 @@ Fires when chart is destroyed completely.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Destroy event for chart
 
@@ -23857,19 +23857,19 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23892,7 +23892,7 @@ Fires before rendering the data labels. This event is triggered for each data la
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //displayTextRendering event for chart
 
@@ -23917,49 +23917,49 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text displayed in data label. You can add custom text to the data label</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.x{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of data label location</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.y{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of data label location</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series Collection whose data label is being rendered </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the point in series whose data label is being rendered </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -23980,7 +23980,7 @@ Fires during the calculation of legend bounds. You can use this event to customi
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //legendBoundsCalculate event for chart
 
@@ -24005,37 +24005,37 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendBounds.Height{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Height of the legend.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendBounds.Width{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Width of the legend.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data. legendBounds.Rows{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Number of rows to display the legend items</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -24056,7 +24056,7 @@ Fires on clicking the legend item.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //legendItemClick event for chart
 
@@ -24080,61 +24080,61 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.location.startX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.location.startY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.LegendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.Bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance that holds information about legend bounds and legend item bounds.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.symbolShape{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the series object corresponding to the legend item</td>
@@ -24154,7 +24154,7 @@ Fires when moving mouse over legend item. You can use this event for hit testing
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //legendItemMouseMove event for chart
 
@@ -24179,61 +24179,61 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.location.startX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.location.startY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.LegendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.Bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem.symbolShape{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 Argument.data.legendItem.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the series object corresponding to the legend item</td>
@@ -24255,7 +24255,7 @@ Fires before rendering the legend item. This event is fired for each legend item
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //legendItemRendering event for chart
 
@@ -24280,55 +24280,55 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.startX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.startY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of legend item in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.legendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Options to customize the legend item styles such as border, color, size, etc.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the chart model object.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.symbolShape{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
@@ -24350,7 +24350,7 @@ Fires before loading the chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //load event for chart
 
@@ -24376,19 +24376,19 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -24408,7 +24408,7 @@ Fires on clicking a point in chart. You can use this event to handle clicks made
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //pointRegionClick event for chart
 
@@ -24433,43 +24433,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.x{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of point in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.y{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of point in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.region.Region.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the point in series</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.region.Region.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series collection to which the point belongs</td>
@@ -24489,7 +24489,7 @@ Fires when mouse is moved over a point.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //pointRegionMouseMove event for chart
 
@@ -24512,43 +24512,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.x{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">X-coordinate of point in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location.y{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Y-coordinate of point in pixel</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.region.Region.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the point in series</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.region.seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series collection to which the point belongs</td>
@@ -24569,7 +24569,7 @@ Fires before rendering chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //preRender event for chart
 
@@ -24593,19 +24593,19 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
@@ -24625,7 +24625,7 @@ Fires after selecting a series. This event is triggered after selecting a series
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //seriesRendering event for chart
 
@@ -24650,31 +24650,31 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the selected series</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the selected series</td>
@@ -24694,7 +24694,7 @@ Fires before rendering a series. This event is fired for each series in Chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //seriesRendering event for chart
 
@@ -24719,25 +24719,25 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the series which is about to get rendered</td>
@@ -24757,7 +24757,7 @@ Fires before rendering the marker symbols. This event is triggered for each mark
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //symbolRendering event for chart
 
@@ -24783,31 +24783,31 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance that holds the location of marker symbol</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Options to customize the marker style such as color, border and size</td>
@@ -24828,7 +24828,7 @@ Fires before rendering the Chart title. You can use this event to add custom tex
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //titleRendering event for chart
 
@@ -24852,37 +24852,37 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Option to customize the title location in pixels</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.size{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Read-only option to find the size of the title</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.title{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Use this option to add custom text in title</td>
@@ -24902,7 +24902,7 @@ Fires before rendering the tooltip. This event is fired when tooltip is enabled 
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //toolTipInitialize event for chart
  
@@ -24926,37 +24926,37 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.currentText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text to be displayed in tooltip. Set this option to customize the text displayed in tooltip</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the point on which mouse is hovered</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series collection whose point is hovered by mouse</td>
@@ -24977,7 +24977,7 @@ Fires before rendering crosshair tooltip in axis. This event is fired for each a
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //trackAxisToolTip event for chart
 
@@ -25001,43 +25001,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Location of the crosshair label in pixels</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.axisIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the axis for which crosshair label is displayed</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.crossAxis{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Instance of the chart axis object for which cross hair label is displayed</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.currentTrackText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text to be displayed in crosshair label. Use this option to add custom text in crosshair label</td>
@@ -25058,7 +25058,7 @@ Fires before rendering trackball tooltip. This event is fired for each series in
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //trackToolTip event for chart
 
@@ -25082,49 +25082,49 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Location of the trackball tooltip in pixels</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pointIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the point for which trackball tooltip is displayed</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.seriesIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the series in series collection</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.currentText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text to be displayed in trackball tooltip. Use this option to add custom text in trackball tooltip</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.series{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the series object for which trackball tooltip is displayed.</td>
@@ -25146,7 +25146,7 @@ Fires, on clicking the axis label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axisLabelClick event for chart
 
@@ -25170,43 +25170,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the labels in chart area. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the label.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.axis{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the corresponding axis.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Label that is clicked.</td>
@@ -25228,7 +25228,7 @@ Fires on moving mouse over the axis label.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //axisLabelMouseMove event for chart
 
@@ -25252,43 +25252,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the labels in chart area. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index of the label.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.axis{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the corresponding axis.</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Label that is hovered.</td>
@@ -25309,7 +25309,7 @@ Fires, on the clicking the chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //chartClick event for chart
 
@@ -25333,49 +25333,49 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">ID of the target element. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.size{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Width and height of the chart. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">x-coordinate of the pointer, relative to the page </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">y-coordinate of the pointer, relative to the page </td>
@@ -25396,7 +25396,7 @@ Fires on moving mouse over the chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //chartMouseMove event for chart
 
@@ -25420,49 +25420,49 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">ID of the target element. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.size{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Width and height of the chart. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">x-coordinate of the pointer, relative to the page </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">y-coordinate of the pointer, relative to the page </td>
@@ -25484,7 +25484,7 @@ Fires, on double clicking the chart.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //chartDoubleClick event for chart
 
@@ -25508,49 +25508,49 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">ID of the target element. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.size{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Width and height of the chart. </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">x-coordinate of the pointer, relative to the page </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">y-coordinate of the pointer, relative to the page </td>
@@ -25571,7 +25571,7 @@ Fires on clicking the annotation.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //annotationClick event for chart
 
@@ -25595,43 +25595,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.location{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">X and Y co-ordinate of the annotation in chart area.  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.contentData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Information about the annotation, like Coordinate unit, Region, content </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageX{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">x-coordinate of the pointer, relative to the page  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.pageY{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">y-coordinate of the pointer, relative to the page </td>
@@ -25653,7 +25653,7 @@ Fires, after the chart is resized.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //afterResize event for chart
 
@@ -25677,55 +25677,55 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.width{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart width, after resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.height{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart height, after resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.prevWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart width, before resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.prevHeight{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart height, before resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.originalWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart width, when the chart was first rendered  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.originalHeight{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart height, when the chart was first rendered  </td>
@@ -25748,7 +25748,7 @@ Fires, when chart size is changing.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //beforeResize event for chart
 
@@ -25772,43 +25772,43 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.currentWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart width, before resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.currentHeight{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart height, before resize  </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.newWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart width, after resize   </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.newHeight{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Chart height, after resize   </td>
@@ -25832,7 +25832,7 @@ Fires, when error bar is rendering.
 #### Example
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //errorBarRendering event for chart
 
@@ -25856,25 +25856,25 @@ $("#container").ejChart({
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Set this option to true to cancel the event    </td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Instance of the chart model object</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight js %}
+<td class="name">{% highlight javascript %}
 argument.data.errorbar{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Error bar Object  </td>

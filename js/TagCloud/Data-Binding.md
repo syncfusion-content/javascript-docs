@@ -49,7 +49,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Define local data source elements with text, url and frequency fields.
@@ -81,7 +81,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#techweblist").ejTagCloud({
         dataSource: websiteCollection
@@ -125,7 +125,7 @@ Define DataManager and assign remote data source to it. Initialize query for bin
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -144,7 +144,7 @@ Assign datasource and query property values to bind the remote data. Map the cor
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  

@@ -19,7 +19,7 @@ The Toolbar control supports displaying a list of tools within a web page. This 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejToolbar()
 

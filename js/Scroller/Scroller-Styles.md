@@ -82,7 +82,7 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
       $("#scrollcontent").ejScroller({
           height: 300,

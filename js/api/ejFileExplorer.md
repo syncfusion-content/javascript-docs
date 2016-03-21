@@ -16,7 +16,7 @@ FileExplorer provides a Windows Explorer-like functionality for any web applicat
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejFileExplorer(options)
 

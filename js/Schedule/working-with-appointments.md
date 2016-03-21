@@ -652,7 +652,7 @@ The following code example lets you drag and drop the external items from the tr
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 function onDragStart(e) {
     if (e.targetElementData.parentId == "") return false;
@@ -823,7 +823,7 @@ The [categorizeSettings](/js/api/ejschedule#members:categorizesettings) is an ob
 * [allowMultiple](/js/api/ejschedule#members:categorizesettings-allowmultiple) – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
 * [dataSource](/js/api/ejschedule#members:categorizesettings-datasource) – Bind the categorize collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 6 default values for data source collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 categorizeSettings: {
     dataSource: [{
@@ -977,7 +977,7 @@ The [prioritySettings](/js/api/ejschedule#members:prioritysettings) is an object
 * template – Customize the priority icon/images using template options. Refer this [priority template](/js/schedule/templates#priority-settings-template) topic.
 * [dataSource](/js/api/ejschedule#members:prioritysettings-datasource) – binds the priority collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 4 default values for priority data source collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 prioritySettings: {
     dataSource: [{

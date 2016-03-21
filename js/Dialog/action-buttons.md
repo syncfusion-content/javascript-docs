@@ -24,7 +24,7 @@ The Dialog widget provides the following action buttons.
 
 You can display only the necessary buttons in the Dialog widget by configuring the `actionButtons` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
            //create dialog widget
             $("#dialog").ejDialog({

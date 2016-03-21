@@ -15,7 +15,7 @@ documentation: ug
 
 Set id for **Checkbox** control as follows.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -33,7 +33,7 @@ Set prefix id for **Checkbox** control as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         
         $(function () {
@@ -55,7 +55,7 @@ You can set name and value for **Checkbox** control as follows.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $(function () {

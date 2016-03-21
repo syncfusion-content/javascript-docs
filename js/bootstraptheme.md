@@ -85,7 +85,7 @@ Now, define the containers for two of our Syncfusion widgets namely **RTE** and 
 
 Initialize the RTE and button controls within the &lt;script&gt; section as shown below,
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {

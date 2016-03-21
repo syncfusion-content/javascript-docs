@@ -61,7 +61,7 @@ Adding **Ul** element for **Menu** rendering.
 
 Initialize the **Menu** control in &lt;script&gt; tag. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             // document ready
@@ -82,7 +82,7 @@ Output of the above steps.
 
 Every **Menu** has a list of **Menu** items with list of sub level **Menu** items. From the following guidelines, you can learn how to initialize the root level elements of **Menu** control with Local data source value.  Initialize the **Menu** with data source value as illustrated in the following code example. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         var data = [
@@ -147,7 +147,7 @@ Every **Menu** items have a list of sub level **Menu** items. From the following
 
 The following code example describes how to initialize first level sub menu items of product **Menu** item.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        var data = [
@@ -215,7 +215,7 @@ You can define the sub-menu items to multiple levels in **Menu** control. You ne
 To initialize multiple levels sub menu items, use the following code example.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         var data = [

@@ -19,7 +19,7 @@ In the application that uses Gantt control, you can connect the data source gene
 
 The following code example shows how to bind the hierarchical local data into the Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var taskDetails = [{
             taskID: 1,
@@ -87,7 +87,7 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 * ID Field- This field must contain unique values used to identify nodes. It should be mapped to the `taskIdMapping` property.
 * Parent ID Field- This field must contain values that indicate parent nodes.  It should be mapped to the `parentTaskIdMapping` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var projectData1 = [
 

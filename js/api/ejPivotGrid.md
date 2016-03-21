@@ -14,7 +14,7 @@ The PivotGrid control is easily configurable, presentation-quality business cont
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotGrid()
 

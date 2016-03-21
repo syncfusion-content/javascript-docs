@@ -20,7 +20,7 @@ For example, the `ejButton` widget, when created through JavaScript code will re
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
 //  initialization of ejButton widget 
 $("#button11").ejButton({
