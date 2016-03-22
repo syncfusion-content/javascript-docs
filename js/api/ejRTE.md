@@ -720,6 +720,48 @@ Formats the contents based on the XHTML rules.
 
 
 
+### enableTabKeyNavigation  `boolean`
+{:#members:enableTabKeyNavigation }
+
+
+
+
+
+Enables the tab key action with the RichTextEditor content. 
+
+
+#### Default Value
+
+
+
+
+* True
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified enableTabKeyNavigation value.
+    $("#rteSample").ejRTE({ enableTabKeyNavigation: false });
+</script>
+{% endhighlight %}
+
+
+
+
+
 ### externalCSS `string`
 {:#members:externalcss}
 
@@ -1913,6 +1955,48 @@ Shows the Custom Table in the RTE.
 
 
 
+### showContextMenu  `boolean`
+{:#members:showContextMenu}
+
+
+
+
+Shows custom contextmenu with the RTE. 
+
+
+#### Default Value
+
+
+
+
+* True
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified showContextMenu value.
+    $("#rteSample").ejRTE({ showContextMenu: false });
+</script>
+
+{% endhighlight %}
+
+
+
+
+
 ### showDimensions `boolean`
 {:#members:showdimensions}
 
@@ -2521,6 +2605,42 @@ Specifies the clipboard tools and the display order of this tool in the RTE tool
     // Initializes the RTE with the specified clipboard tools value.
     $("#rteSample").ejRTE({ tools: {
             clipboard: ["cut", "copy", "paste"]         
+            }    
+    });
+    </script>
+{% endhighlight %}
+
+
+
+
+### tools.edit `array`
+{:#members:tools-edit}
+
+
+
+
+Specifies the edit tools and the displays tool in the RTE toolbar.
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+   <script>
+    // Initializes the RTE with the specified edit tools value.
+    $("#rteSample").ejRTE({ tools: {
+            edit: ["findAndReplace"]         
             }    
     });
     </script>
@@ -3514,7 +3634,7 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 
 
 
-* ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "links", "images", "media", "tables", "casing","view", "customTools","print"]
+* ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "links", "images", "media", "tables", "casing","view", "customTools","print","edit"]
 
 
 
@@ -4364,6 +4484,112 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("hide");// Hides the rte       
 </script>{% endhighlight %}
 
+
+
+
+### insertMenuOption()
+{:#methods:insertMenuOption}
+
+
+
+Inserts new item to the target contextmenu node. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+option </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">
+Object data’s for inserting the new item to the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+newItem </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">
+Target menu item text.
+</td>
+</tr>
+<tr>
+<td class="name">
+targetItem </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">
+Target menu item text
+</td>
+</tr>
+<tr>
+<td class="name">
+insertType </td>
+<td class="type"><span class="param-type">string </span></td>
+<td class="description">
+Menu item insertion type - insert||insertAfter||insertBefore”.
+</td>
+</tr>
+<tr>
+<td class="name">
+menuType </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">
+menu visibility types.
+-	 text:boolean, image: boolean, hyperlink: boolean, table: boolean 
+
+</td>
+</tr>
+<tr>
+<td class="name">
+spriteCssClass </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">
+Sprite css class name for menu item icon.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                        
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >
+<script>
+$("#rteSample").ejRTE();
+// Creates the RTE
+var rteeObj  = $("#rteSample").data("ejRTE");// Inserts new item to the contextmenu
+rteeObj.insertMenuOption({newItem:"Show Table Details",targetItem:"Table Properties", insertType:("insertAfter"), menuType:{text:false,image:false,hyperlink:false,table:true},spriteCssClass:"e-rte-toolbar-icon tableProperties"}); 
+</script>
+{% endhighlight %}
+
+
+
 ### pasteContent()
 {:#methods:pasteContent}
 
@@ -4440,6 +4666,55 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("refresh");// Refreshes the rte       
 </script>{% endhighlight %}
 
+
+### removeMenuOption ()
+{:#methods:removeMenuOption}
+
+
+
+
+Removes the target menu item from the RTE contextmenu.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+option </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">
+Target Node text.
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                 
+       <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >
+<script>
+    $("#rteSample").ejRTE();
+    // Creates the RTE
+    var rteeObj = $("#rteSample").data("ejRTE");
+    rteeObj.removeMenuOption("Target"); 
+</script>
+{% endhighlight %}
 
 
 ### removeToolbarItem()
@@ -4836,6 +5111,90 @@ $("#rteSample").ejRTE({
         create: function(args) {}
 });      
 </script>{% endhighlight %}
+
+
+### contextMenuClick  
+{:#events:contextMenuClick  }
+
+
+
+
+
+Fires when mouse click on menu items.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+text</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns clicked menu item text.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">returns clicked menu item element.</td>
+</tr>
+<tr>
+<td class="name">
+selectedItem</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the selected item.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >     
+<script>
+$("#rteSample").ejRTE();
+//contextMenuClick event for RTE
+$("#rteSample").ejRTE({ 
+        contextMenuClick: function(args) {
+            
+        }
+});
+   
+</script>{% endhighlight %}
+
 
 
 
