@@ -1558,7 +1558,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
 ### contextMenuSettings.contextMenuItems `Array`
 {:#members:contextmenusettings-contextmenuitems}
 
-Gets or sets a value that indicates whether to add the default context menu actions as a context menu items If enableContextMenu is true it will show all the items related to the target, if u want selected items from contextmenu u have to mention in the contextMenuItems
+Gets or sets a value that indicates whether to add the default context menu actions as a context menu items If enableContextMenu is true it will show all the items related to the target, if you want selected items from contextmenu you have to mention in the contextMenuItems
 
 #### Default Value:
 {:.param}
