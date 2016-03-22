@@ -179,7 +179,7 @@ It includes the dataSource option and the fields related to Schedule appointment
 
 {% endhighlight %}
 
-### appointmentSettings.dataSource `object/Array`
+### appointmentSettings.dataSource `object|Array`
 {:#members:appointmentsettings-datasource}
 
 
@@ -914,7 +914,7 @@ When set to true, enables the categories option to be applied for the appointmen
 
 {% endhighlight %}
 
-### categorizeSettings.dataSource `array/object`
+### categorizeSettings.dataSource `array|object`
 {:#members:categorizesettings-datasource }
 
 #### Default Value
@@ -2169,7 +2169,7 @@ When set to true, enables the priority options available for the Schedule appoin
 
 {% endhighlight %}
 
-### prioritySettings.dataSource `object/array`
+### prioritySettings.dataSource `object|array`
 {:#members:prioritysettings-datasource }
 
 The dataSource option can accept the JSON object collection that contains the priority related data.
@@ -4264,7 +4264,7 @@ Exports the appointments from the Schedule control.
         </tr>
         <tr>
             <td class="name">id</td>
-            <td class="type">string/number</td>
+            <td class="type">string|number</td>
             <td class="description">Pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
         </tr>
     </tbody>
@@ -4651,7 +4651,7 @@ Searches the appointments from the appointment list of Schedule control.
     <tbody>
         <tr>
             <td class="name">searchString</td>
-            <td class="type">object/string</td>
+            <td class="type">object|string</td>
             <td class="description">Defines the search word or the filter condition, based on which the appointments are filtered from the list.</td>
         </tr>
         <tr>
@@ -4661,7 +4661,7 @@ Searches the appointments from the appointment list of Schedule control.
         </tr>
         <tr>
             <td class="name">operator</td>
-            <td class="type">enum/string</td>
+            <td class="type">enum|string</td>
             <td class="description">Defines the filterOperator value for the search operation.</td>
         </tr>
         <tr>
