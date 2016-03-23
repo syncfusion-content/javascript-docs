@@ -10231,7 +10231,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
 
 
-Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true. 
+IsIndexed is points plotting based on index in category axis value type charts.
 
 
 #### Default Value

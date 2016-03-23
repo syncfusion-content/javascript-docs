@@ -203,6 +203,39 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 
 
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+Specify isResponsive value of circular gauge
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  isResponsive : true });
+</script>{% endhighlight %}
+
+
+
+
 ### frame `object`
 {:#members:frame}
 
@@ -496,39 +529,6 @@ Specify isRadialGradient value of circular gauge
 <script>          
         $("#CoreCircularGauge").ejCircularGauge({  isRadialGradient : true });
 </script>{% endhighlight %}
-
-
-
-### isResponsive `boolean`
-{:#members:isresponsive}
-
-
-
-
-Specify isResponsive value of circular gauge
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="CoreCircularGauge">
-</div> 
- 
-<script>                  
-        $("#CoreCircularGauge").ejCircularGauge({  isResponsive : true });
-</script>{% endhighlight %}
-
 
 
 

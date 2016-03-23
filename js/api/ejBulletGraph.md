@@ -3134,6 +3134,55 @@ enableAnimation : false
 
 
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+
+
+
+
+Sets a value whether to make the bullet graph responsive on resize.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+isResponsive : false                  
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### flowDirection `enum`
 {:#members:flowdirection}
 
@@ -3225,54 +3274,6 @@ $("#bulletGraph1").ejBulletGraph({
 height : 600                    
 });
 </script>  {% endhighlight %}
-
-
-
-
-
-
-### isResponsive `boolean`
-{:#members:isresponsive}
-
-
-
-
-
-
-
-
-Sets a value whether to make the bullet graph responsive on resize.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-isResponsive : false                  
-});
-</script>{% endhighlight %}
 
 
 

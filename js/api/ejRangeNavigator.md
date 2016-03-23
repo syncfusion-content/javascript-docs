@@ -189,6 +189,55 @@ Specifies the data source for range navigator.
 
 
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+
+
+
+
+Sets a value whether to make the range navigator responsive on resize.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   isResponsive: true;
+   });
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
 ### enableDeferredUpdate `boolean`
 {:#members:enabledeferredupdate}
 
@@ -278,54 +327,6 @@ Toggles the direction of rendering the range navigator control.
 <script>
         $("#container").ejRangeNavigator({
   enableRTL: true,
-   });
-</script>  {% endhighlight %}
-
-
-
-
-
-
-### isResponsive `boolean`
-{:#members:isresponsive}
-
-
-
-
-
-
-
-
-Sets a value whether to make the range navigator responsive on resize.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="RangeNavigator"></div> 
-<script>
-        $("#container").ejRangeNavigator({
-   isResponsive: true;
    });
 </script>  {% endhighlight %}
 
