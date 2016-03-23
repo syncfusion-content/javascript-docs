@@ -10225,6 +10225,39 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
 
+### primaryXAxis.isIndexed `boolean`
+{:#members:primaryxaxis-isindexed}
+
+
+
+
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true. 
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     primaryXAxis: { isIndexed : true}
+                           
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ayxewsvh)
+
 ### primaryXAxis.isInversed `boolean`
 {:#members:primaryxaxis-isinversed}
 

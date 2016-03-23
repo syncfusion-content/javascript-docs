@@ -91,6 +91,25 @@ $("#chartcontainer").ejChart({
 
 ![](/js/Chart/Axis_images/axis_img3.png)
 
+### Indexed Category Axis
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true.
+
+In the figure below, the first chart shows a default category axis chart that is not-indexed while the second chart shows x-axis is indexed chart.
+
+![](/js/Chart/Axis_images/axis_img50.png)
+
+![](/js/Chart/Axis_images/axis_img51.png)
+
+{% highlight js %}
+$("#chartcontainer").ejChart({
+   primaryXAxis: {
+        //  ...
+        
+       isIndexed:true,                
+        //  ...        
+         },
+});
+{% endhighlight %}
 
 ## Numeric Axis 
 
