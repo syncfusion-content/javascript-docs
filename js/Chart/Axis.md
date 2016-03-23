@@ -91,18 +91,6 @@ $("#chartcontainer").ejChart({
 
 ![](/js/Chart/Axis_images/axis_img3.png)
 
-### Index based points plotting 
-To plot points based on index ,you can set the **isIndexed true.
-{% highlight js %}
-$("#chartcontainer").ejChart({
-   primaryXAxis: {
-        //  ...
-        
-       isIndexed:true,                
-        //  ...        
-         },
-});
-{% endhighlight %}
 
 ## Numeric Axis 
 

@@ -93,54 +93,6 @@ Requires
 
 
 
-### isResponsive `boolean`
-{:#members:isresponsive}
-
-
-
-
-
-
-
-
-Specifies the resize option of the DigitalGauge.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="DigitalCore"></div> 
- 
-<script>
-$("#DigitalCore").ejDigitalGauge({ isResponsive: true }); 
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### frame`object`
 {:#members:frame}
 
@@ -373,6 +325,54 @@ Specifies the height of the DigitalGauge.
  
 <script>
 $("#DigitalCore").ejDigitalGauge({ height: 60 }); 
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+
+
+
+
+Specifies the resize option of the DigitalGauge.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({ isResponsive: true }); 
 </script>{% endhighlight %}
 
 

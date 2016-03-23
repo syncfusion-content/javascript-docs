@@ -10225,39 +10225,6 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
 
-### primaryXAxis.isIndexed `boolean`
-{:#members:primaryxaxis-isindexed}
-
-
-
-
-IsIndexed is points plotting based on index in category axis value type charts.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     primaryXAxis: { isIndexed : true}
-                           
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ayxewsvh)
-
 ### primaryXAxis.isInversed `boolean`
 {:#members:primaryxaxis-isinversed}
 
