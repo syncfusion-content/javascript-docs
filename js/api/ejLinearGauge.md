@@ -330,6 +330,54 @@ Specifies the animate state for marker pointer
 
 
 
+### isResponsive `boolean`
+{:#members:isResponsive}
+
+
+
+
+
+
+
+
+Specifies the can resize state.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({ isResponsive: true });   
+</script> {% endhighlight %}
+
+
+
+
+
+
+
 ### frame `object`
 {:#members:frame}
 
@@ -564,54 +612,6 @@ Specifies the height of Linear gauge.
 <script> 
         $("#LinearGauge1").ejLinearGauge({ height: 360 }); 
 </script>   {% endhighlight %}
-
-
-
-
-
-
-
-### isResponsive `boolean`
-{:#members:isResponsive}
-
-
-
-
-
-
-
-
-Specifies the can resize state.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="LinearGauge1"></div> 
- 
-<script>
-        $("#LinearGauge1").ejLinearGauge({ isResponsive: true });   
-</script> {% endhighlight %}
 
 
 
