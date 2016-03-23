@@ -330,7 +330,6 @@ Specifies the animate state for marker pointer
 
 
 
-
 ### frame `object`
 {:#members:frame}
 
