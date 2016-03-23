@@ -39,7 +39,8 @@ The Kanban can be easily configured to the DOM element, such as div. you can cre
                         { headerText: "In Progress",key: "InProgress" },
                         { headerText: "Testing",key: "Testing" },
                         { headerText: "Done",key: "Close" }
-                    ]                
+                    ],
+                    keyField:"Status"
                 });        
      </script>
 
@@ -108,9 +109,8 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
         keyField: "Status",
         fields: {
                 primaryKey: "Id",
-			    content: "Text",
-		        priority: "RankId",
-        },
+			    content: "Text"		        
+        }
     });
     });
     </script>
@@ -379,7 +379,7 @@ Gets or sets a value that indicates whether to enable allowSelection behavior on
 {% endhighlight %}
 
 ### allowHover `boolean`
-{:#members:allowselection}
+{:#members:allowHover}
 
 Gets or sets a value that indicates whether to allow card hover actions.
 
@@ -429,7 +429,7 @@ To allow keyboard navigation actions.
 
 #### Default Value:
 
-* true
+* false
 
 #### Example
 
