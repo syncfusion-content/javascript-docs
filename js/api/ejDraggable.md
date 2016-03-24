@@ -9,7 +9,6 @@ keywords: Draggable, ejDraggable, syncfusion, Draggable api
 ---
 
 # ejDraggable
-<ts  isFrameWork="true" />
 
 Plugin to make any DOM element draggable.  
 
