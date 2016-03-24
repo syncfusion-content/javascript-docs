@@ -117,7 +117,7 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
 
 {% endhighlight %}
 
-### allowTitle 'boolean'
+### allowTitle `boolean`
 {:#members:allowtitle}
 
 To enable or disable the title of the card.
