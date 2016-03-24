@@ -905,65 +905,6 @@ Gets the name to custom menu.
     
 {% endhighlight %}
 
-### contextMenuSettings.customMenuItems `object`
-{:#members:contextmenusettings-custommenuitems}
-
-Gets or sets the target element to which the context menu item belongs
-
-#### Default Value:
-
-* object
-
-#### Example
-
-{% highlight html %}
-
-       <div id="Kanban"></div>
-       <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
-        }
-    });
-    });
-    </script>
-    
-
-{% endhighlight %}
-
 ### contextMenuSettings.customMenuItems.template `String`
 {:#members:contextmenusettings-custommenuitems-template}
 
@@ -4892,63 +4833,6 @@ To specify the key value to multi selection by right arrow.
                     keySettings: {
                         focus: "e",     
 					    multiSelectionByRightArrow: "shift+39",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.multiSelectionByUpArrow `string`
-{:#members:keysettings-multiselectionbyuparrow}
-
-To specify the key value to multi selection by up arrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    multiSelectionByUpArrow: "shift+38",
 					  },
                 });
 		   
