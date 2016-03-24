@@ -3114,45 +3114,6 @@ Specifies the customOrderedList tools and the display order of this tool in the 
 
 
 
-### tools.customUnorderedList `array`
-{:#members:tools-customUnorderedList }
-
-
-Specifies the customUnOrderedList tools and the display order of this tool in the RTE toolbar.
-
-
-
-#### Example
-
-
-
-{% highlight html %} 
-
-
-<textarea id="rteSample">     
-<p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea>
-   <script>
-    // Initializes the RTE with the specified customUnorderedList tools value.
-    $("#rteSample").ejRTE({ tools: {
-            customUnorderedList: [{
-                        name: "unOrderedInsert",
-                        tooltip: "Custom UnOrderedList",
-                        css: "e-rte-toolbar-icon e-rte-unlistitems customUnOrdered",
-	                    text: "Smiley",
-                        listImage:"url('../content/images/rte/Smiley-GIF.gif')"                    
-                 }]
-            }    
-    });
-    </script>
-{% endhighlight %}
-
-
-
 ### tools.customOrderedList.name `string`
 {:#members:tools-customOrderedList-name }
 
@@ -3380,6 +3341,45 @@ Specifies the image for customOrderedList item.
 	                    text: "Lower-Greek",
                         listImage:"url('../content/images/rte/Smiley-GIF.gif')"                              
           }]
+            }    
+    });
+    </script>
+{% endhighlight %}
+
+
+
+### tools.customUnorderedList `array`
+{:#members:tools-customUnorderedList }
+
+
+Specifies the customUnOrderedList tools and the display order of this tool in the RTE toolbar.
+
+
+
+#### Example
+
+
+
+{% highlight html %} 
+
+
+<textarea id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+   <script>
+    // Initializes the RTE with the specified customUnorderedList tools value.
+    $("#rteSample").ejRTE({ tools: {
+            customUnorderedList: [{
+                        name: "unOrderedInsert",
+                        tooltip: "Custom UnOrderedList",
+                        css: "e-rte-toolbar-icon e-rte-unlistitems customUnOrdered",
+	                    text: "Smiley",
+                        listImage:"url('../content/images/rte/Smiley-GIF.gif')"                    
+                 }]
             }    
     });
     </script>
