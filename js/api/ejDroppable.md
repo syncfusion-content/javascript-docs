@@ -8,7 +8,7 @@ keywords: Droppable, ejDroppable, syncfusion, Droppable api
 ---
 
 # ejDroppable
-
+<ts  isFrameWork="true" />
 
 Plugin to make any DOM element Droppable.  
 
