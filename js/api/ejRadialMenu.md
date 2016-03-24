@@ -3,8 +3,7 @@ layout: post
 title: ejRadialMenu
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: RadialMenu, ejRadialMenu, syncfusion, RadialMenu api
 ---
 
 # Custom Design for Html radialmenu control.
@@ -50,7 +49,9 @@ data-ej-text="message"></li>
 <li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
 data-ej-text="browser"></li>
 </ul>
-</div>{% endhighlight %}
+</div>
+
+{% endhighlight %}
 
 
 
@@ -126,7 +127,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "autoOpen":true });      
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -137,7 +140,9 @@ $("#defaultradialmenu").ejRadialMenu({ "autoOpen":true });
 $("#defaultradialmenu").ejRadialMenu ("option", "autoOpen");                    
 // Sets the autoOpen API
 $("#defaultradialmenu").ejRadialMenu ("option", "autoOpen", true);            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -193,7 +198,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "backImageClass":"e-backimage" });       
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -204,7 +211,9 @@ $("#defaultradialmenu").ejRadialMenu({ "backImageClass":"e-backimage" });
 $("#defaultradialmenu").ejRadialMenu ("option", "backImageClass");                      
 // Sets the backImageClass API
 $("#defaultradialmenu").ejRadialMenu ("option", "backImageClass", "e-backimage");            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -260,7 +269,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "cssClass":"customclass" });     
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -271,7 +282,9 @@ $("#defaultradialmenu").ejRadialMenu({ "cssClass":"customclass" });
 $("#defaultradialmenu").ejRadialMenu ("option", "cssClass");                    
 // Sets the cssClass API
 $("#defaultradialmenu").ejRadialMenu ("option", "cssClass", "customclass");            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -327,7 +340,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "enableAnimation":true });       
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -338,7 +353,9 @@ $("#defaultradialmenu").ejRadialMenu({ "enableAnimation":true });
 $("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation");                     
 // Sets the enableAnimation API
 $("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation", true);            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -394,7 +411,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "imageClass":"e-radialimage" }); 
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -405,7 +424,9 @@ $("#defaultradialmenu").ejRadialMenu({ "imageClass":"e-radialimage" });
  $("#radialmenu").ejRadialMenu ("option", "imageClass");                        
 // Sets the imageClass API
 $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -461,7 +482,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "radius":150});  
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -472,7 +495,9 @@ $("#defaultradialmenu").ejRadialMenu({ "radius":150});
  $("#radialmenu").ejRadialMenu ("option", "radius");                    
 // Sets the radius API
 $("#radialmenu").ejRadialMenu ("option", "radius", 150);            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -528,7 +553,9 @@ data-ej-text="browser"></li>
 $(function () {
 $("#defaultradialmenu").ejRadialMenu({ "targetElementId":"target" });   
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -539,7 +566,9 @@ $("#defaultradialmenu").ejRadialMenu({ "targetElementId":"target" });
 $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId");                     
 // Sets the targetElementId API
 $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");            
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -583,7 +612,9 @@ data-ej-text="message"></li>
 <li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
 data-ej-text="browser"></li>
 </ul>
-</div>{% endhighlight %}
+</div>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -630,14 +661,18 @@ data-ej-text="message"></li>
 <li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
 data-ej-text="browser"></li>
 </ul>
-</div>{% endhighlight %}
+</div>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 <script>
 $("#defaultradialmenu").ejRadialMenu ("menuHide");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -677,14 +712,18 @@ data-ej-text="message"></li>
 <li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
 data-ej-text="browser"></li>
 </ul>
-</div>{% endhighlight %}
+</div>
+
+{% endhighlight %}
 
 
 {% highlight html %}
  
 <script>
 $("#defaultradialmenu").ejRadialMenu ("show");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -794,7 +833,9 @@ $("#defaultradialmenu").ejRadialMenu({
   mousedown: function (args) { //handle the event
 }
 });         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -900,7 +941,9 @@ $("#defaultradialmenu").ejRadialMenu({
   mouseup: function (args) { //handle the event
 }
 });         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1006,7 +1049,9 @@ $("#defaultradialmenu").ejRadialMenu({
   select: function (args) { //handle the event
 }
 });         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
