@@ -39,8 +39,7 @@ The Kanban can be easily configured to the DOM element, such as div. you can cre
                         { headerText: "In Progress",key: "InProgress" },
                         { headerText: "Testing",key: "Testing" },
                         { headerText: "Done",key: "Close" }
-                    ],
-                    keyField:"Status"
+                    ]                
                 });        
      </script>
 
@@ -109,15 +108,16 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
         keyField: "Status",
         fields: {
                 primaryKey: "Id",
-			    content: "Text"		        
-        }
+			    content: "Text",
+		        priority: "RankId",
+        },
     });
     });
     </script>
 
 {% endhighlight %}
 
-### allowTitle `boolean`
+### allowTitle 'boolean'
 {:#members:allowtitle}
 
 To enable or disable the title of the card.
@@ -203,7 +203,7 @@ Customize the settings for swimlane.
 {% endhighlight %}
 
 ### swimlaneSettings.showCount `boolean`
-{:#members:swimlaneSettings-showcount}
+{:#members:swimlanesettings-showcount}
 
 To enable or disable items count in swimlane
 
@@ -379,7 +379,7 @@ Gets or sets a value that indicates whether to enable allowSelection behavior on
 {% endhighlight %}
 
 ### allowHover `boolean`
-{:#members:allowHover}
+{:#members:allowselection}
 
 Gets or sets a value that indicates whether to allow card hover actions.
 
@@ -429,7 +429,7 @@ To allow keyboard navigation actions.
 
 #### Default Value:
 
-* false
+* true
 
 #### Example
 
@@ -541,7 +541,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
        <div id="Kanban">
        </div>
        <script type="text/javascript">
-       window.kanbandata = [
+            window.kanbandata = [
             { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
@@ -568,19 +568,11 @@ Gets or sets an object that indicates whether to customize the context menu beha
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
-        }
+                        
+        }        
     });
     });
-    </script>
+       </script>
     
 {% endhighlight %}
 
@@ -600,7 +592,7 @@ To enable Context menu , All default context menu will show.
        <div id="Kanban">
        </div>
        <script type="text/javascript">
-       window.kanbandata = [
+           window.kanbandata = [
             { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
@@ -626,20 +618,12 @@ To enable Context menu , All default context menu will show.
             content: "Text",
         },			
         contextMenuSettings: {
-            enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
-        }
+            enable: true
+                        
+        }        
     });
     });
-    </script>
+       </script>
     
 
 {% endhighlight %}
@@ -659,7 +643,7 @@ Gets or sets a value that indicates the list of items needs to be diable from de
 
        <div id="Kanban"></div>
        <script type="text/javascript">
-       window.kanbandata = [
+        window.kanbandata = [
             { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
@@ -686,18 +670,13 @@ Gets or sets a value that indicates the list of items needs to be diable from de
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
+			disableDefaultItems: [ej.Kanban.MenuItem.AddCard]                   
+        },
+     editSettings: {
             allowAdding: true
-        }
+        }        
     });
-    });
+    }); 
     </script>
     
 
@@ -746,16 +725,12 @@ Gets or sets a value that indicates whether to add custom contextMenu items
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
             customMenuItems: [                            
                       { text: "Menu1" },
                       { text: "Menu2", target: ej.Kanban.Target.Header},
                       { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
-        }
+            ],  			
+        }     
     });
     });
     </script>
@@ -830,15 +805,11 @@ Sets context menu to target element.
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
             customMenuItems: [                            
                       { text: "Menu1" },
                       { text: "Menu2", target: ej.Kanban.Target.Header},
                       { text: "Menu3", target:"" }							
             ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
         }
     });
     });
@@ -889,15 +860,11 @@ Gets the name to custom menu.
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
             customMenuItems: [                            
                       { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
+                      { text: "Menu2"},
+                      { text: "Menu3"}							
+            ]                
         }
     });
     });
@@ -956,19 +923,15 @@ Gets the template to render custom menu.
         },			
         contextMenuSettings: {
             enable: true,
-            disableDefaultItems: [ej.Kanban.MenuItem.AddCard],
             customMenuItems: [                            
                       { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header, template: "#contexttemplate1" },
-                      { text: "Menu3", target:"", template: "#contexttemplate2" }							
+                      { text: "Menu2", template: "#contexttemplate1" },
+                      { text: "Menu3", template: "#contexttemplate2" }							
             ],                 
-        },	 
-        editSettings: {
-            allowAdding: true
         }
     });
     });
-    </script>
+    </script>      
     
 {% endhighlight %}
 
@@ -985,35 +948,35 @@ Gets or sets an object that indicates to render the kanban with specified column
 
 {% highlight html %}
 
-      <div id="Kanban"></div>
-      <script type="text/javascript">
-          window.kanbandata = [
-               { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-               { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-               { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-               { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-               { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-               { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],                   
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-        },			
-        keyField: "Status"                    
-    }
-);   
-});
+        <div id="Kanban"></div>
+        <script type="text/javascript">
+            window.kanbandata = [
+                { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
+                { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
+                { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
+                { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
+                { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
+                { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
+            ];
+        $(function() {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],                   
+            fields: {
+                primaryKey: "Id",
+                content: "Text",
+            },			
+            keyField: "Status"                    
+        }
+    );   
+    });
 </script>
  
 {% endhighlight %}
@@ -1624,7 +1587,7 @@ Gets or sets an object that indicates whether to Customize the card based on the
 {% endhighlight %}
 
 ### cardSettings.template `string`
-{:#members:cardSettings-template}
+{:#members:cardsettings-template}
 
 Gets or sets a value that indicates to add the template of card .
 
@@ -2009,7 +1972,7 @@ Gets or sets a value that indicates whether to enablehover support for performin
 {% endhighlight %}
 
 ### editSettings `object`
-{:#members:editSettings}
+{:#members:editsettings}
 
 Get or sets an object that indicates whether to customize the editing behavior of the kanban.
 
@@ -2531,7 +2494,7 @@ It is used to set the particular editType in the card for editing.
 {% endhighlight %}
 
 ### editSettings.editItems.validationRules `object`
-{:#members:editsettings-edititems- edittype.validationrules}
+{:#members:editsettings-edititems-edittype-validationrules}
 
 Gets or sets a value that indicates to define constraints for saving data to the database.
 
@@ -4833,6 +4796,63 @@ To specify the key value to multi selection by right arrow.
                     keySettings: {
                         focus: "e",     
 					    multiSelectionByRightArrow: "shift+39",
+					  },
+                });
+		   
+            $(document).on("keydown", function (e) {
+                if (e.altKey && e.keyCode === 74) { 
+                    $("#Kanban").focus();
+                }
+            });
+        });
+    </script>
+    
+{% endhighlight %}
+
+### keySettings.multiSelectionByUpArrow `string`
+{:#members:keysettings-multiselectionbyuparrow}
+
+To specify the key value to multi selection by up arrow.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"></div>
+     <script type="text/javascript">
+	 window.kanbandata = [
+            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
+            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
+        ];
+        $(function() {
+            var data = ej.DataManager(window.kanbandata);
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					allowKeyboardNavigation:true,
+                    columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Testing", key: "Testing"},
+                        { headerText: "Done", key: "Close" }
+                    ],                                                           			
+                    keyField: "Status",
+					fields: {
+                      primaryKey: "Id",
+                      swimlaneKey: "Assignee",
+                      content: "Text",
+                    },	
+                    keySettings: {
+                        focus: "e",     
+					    multiSelectionByUpArrow: "shift+38",
 					  },
                 });
 		   
@@ -9251,7 +9271,7 @@ Triggered when context menu item is clicked in Kanban
 {% endhighlight %}
 
 ### contextOpen
-{:#events:contextOpen}
+{:#events:contextopen}
 
 Triggered before the context menu is opened.
 
