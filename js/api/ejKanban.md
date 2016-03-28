@@ -1157,6 +1157,8 @@ To customize the column constraints whether the constraints contains minimum lim
 			$("#constraint").ejDropDownList({ width: "120px", change: "onConstraintTypeChange",selectedItemIndex: 0});
         });
         </script>
+        
+{% endhighlight %}       
  
 ### columns.constraints.type `string`
 {:#members:columns-constraints-type}
