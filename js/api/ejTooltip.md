@@ -1409,25 +1409,25 @@ This event is triggered before the Tooltip widget get closed.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.content</td>
+content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1472,25 +1472,25 @@ This event is triggered before the Tooltip widget gets open.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.content</td>
+content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1534,25 +1534,25 @@ Fires on clicking to the target element.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.event</td>
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -1597,25 +1597,25 @@ This event is triggered after the Tooltip widget is closed.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.content</td>
+content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1659,19 +1659,19 @@ This event is triggered after the Tooltip is created successfully.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1715,19 +1715,19 @@ This event is triggered after the Tooltip widget is destroyed successfully.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1771,25 +1771,25 @@ This event is triggered while hovering the target element, when tooltip position
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.event</td>
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -1833,25 +1833,25 @@ This event is triggered after the Tooltip is opened.
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.content</td>
+content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1895,25 +1895,25 @@ This event is triggered while hover the target element, when the tooltip positio
 <tbody>
 <tr>
 <td class="name">
-argument.cancel</td>
+cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">
-argument.model</td>
+model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
 <td class="name">
-argument.type</td>
+type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">
-argument.event</td>
+event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
