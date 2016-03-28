@@ -112,7 +112,7 @@ integer <br/><br/></td><td>
 Sets the animation speed in milliseconds.<br/><br/></td></tr>
 </table>
 
-### animation.effect 'Enum'
+### animation.effect `enum`
 {:#members:animation-effect}
 
 <ts name="ej.Tooltip.effect"/>
@@ -142,7 +142,7 @@ Determines the type of effect.
 </tr>
 </table>
 
-### animation.speed 'number'
+### animation.speed `number`
 {:#members:animation-speed}
 
 Sets the animation speed in milliseconds.
@@ -279,7 +279,7 @@ Specified the delay to hide Tooltip when closeMode is auto.
     
 {% endhighlight %}
 
-### closeMode 'enum'
+### closeMode `enum`
 {:#members:closeMode}
 
 <ts name="ej.Tooltip.closeMode"/>
@@ -419,7 +419,7 @@ Sets the Tooltip in alternate position when collision occurs.
 {% endhighlight %}
         
 
-### containment 'string'
+### containment `string`
 
 {:#members:containment}
 
@@ -451,7 +451,7 @@ Specified the selector for the container element.
     
 {% endhighlight %}
 
-### content 'string'
+### content `string`
 
 {:#members:content}
 
@@ -636,7 +636,7 @@ Defines the height of the Tooltip popup.
 {% endhighlight %}
 
 
-### isBalloon  'boolean'
+### isBalloon  `boolean`
 {:#members:isBalloon}
 
 Enables the arrow in Tooltip.
@@ -664,7 +664,7 @@ Enables the arrow in Tooltip.
         
 {% endhighlight %}
 
-### position 'object'
+### position `object`
 {:#members:position}
 
 defines various attributes of the Tooltip position
@@ -674,14 +674,14 @@ defines various attributes of the Tooltip position
 
 Sets the Tooltip position against target.
 
-### position.target.horizontal 'string|number`
+### position.target.horizontal `string|number`
 {:#members:position-target-horizontal}
 
 #### Default Value
 {:.param}
 * right
 
-### position.target.vertical 'string|number`
+### position.target.vertical `string|number`
 {:#members:position-target-vertical}
 
 #### Default Value
@@ -693,14 +693,14 @@ Sets the Tooltip position against target.
 
 Sets the arrow position again popup.
 
-### position.stem.horizontal 'string'
+### position.stem.horizontal `string`
 {:#members:position-stem-horizontal}
 
 #### Default Value
 {:.param}
 * left
 
-### position.stem.vertical 'string'
+### position.stem.vertical `string`
 {:#members:position-stem-vertical}
 
 #### Default Value
@@ -896,7 +896,7 @@ The template to display the content with cutomized appearance.
         
 {% endhighlight %}
 
-### title `string'
+### title `string`
 {:#members:title}
 
 The title text to be displayed in the Tooltip header.
@@ -925,7 +925,7 @@ The title text to be displayed in the Tooltip header.
     
 {% endhighlight %}
 
-### trigger `enum'
+### trigger `enum`
 {:#members:trigger}
 
 <ts name="ej.Tooltip.trigger"/>
@@ -1408,26 +1408,26 @@ This event is triggered before the Tooltip widget get closed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.content{% endhighlight %}</td>
+<td class="name">
+argument.content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1471,26 +1471,26 @@ This event is triggered before the Tooltip widget gets open.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.content{% endhighlight %}</td>
+<td class="name">
+argument.content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1533,26 +1533,26 @@ Fires on clicking to the target element.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+argument.event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -1596,26 +1596,26 @@ This event is triggered after the Tooltip widget is closed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.content{% endhighlight %}</td>
+<td class="name">
+argument.content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1658,20 +1658,20 @@ This event is triggered after the Tooltip is created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1714,20 +1714,20 @@ This event is triggered after the Tooltip widget is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
@@ -1770,26 +1770,26 @@ This event is triggered while hovering the target element, when tooltip position
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+argument.event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
@@ -1832,26 +1832,26 @@ This event is triggered after the Tooltip is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.content{% endhighlight %}</td>
+<td class="name">
+argument.content</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the Tooltip's content</td>
 </tr>
@@ -1894,26 +1894,26 @@ This event is triggered while hover the target element, when the tooltip positio
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
+<td class="name">
+argument.cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
+<td class="name">
+argument.model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the Tooltip model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
+<td class="name">
+argument.type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.event{% endhighlight %}</td>
+<td class="name">
+argument.event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event object</td>
 </tr>
