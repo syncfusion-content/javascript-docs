@@ -117,7 +117,7 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
 
 {% endhighlight %}
 
-### allowTitle 'boolean'
+### allowTitle `boolean`
 {:#members:allowtitle}
 
 To enable or disable the title of the card.
@@ -4798,63 +4798,6 @@ To specify the key value to multi selection by right arrow.
                     keySettings: {
                         focus: "e",     
 					    multiSelectionByRightArrow: "shift+39",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.multiSelectionByUpArrow `string`
-{:#members:keysettings-multiselectionbyuparrow}
-
-To specify the key value to multi selection by up arrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    multiSelectionByUpArrow: "shift+38",
 					  },
                 });
 		   
