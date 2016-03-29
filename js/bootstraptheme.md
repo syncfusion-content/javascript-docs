@@ -1,6 +1,6 @@
 ---
 layout: post
-title: bootstrap theme
+title: bootstrap theme supports all Essential JavaScript web components
 description: bootstrap theme
 platform: js
 control: General Topics
