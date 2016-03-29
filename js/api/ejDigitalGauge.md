@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDigitalGauge
+title: Properties,methods and events of Essential JS ejDigitalGauge widget
 documentation: API
 platform: js
 metaname: 
