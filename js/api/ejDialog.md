@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDialog
+title: Properties,methods and events of Essential JS ejDialog widget
 description: Methods, members, events available in ejDialog
 documentation: API
 platform: js
