@@ -17,6 +17,7 @@ The Scheduler can be customized in various aspects like -
 * Customize the entire appointment window with the user required fields
 * Setting different time Slot duration
 * Complete Scheduler customization using queryCellInfo event
+* Setting different first day of week
 
 ## Hour Customization
 
@@ -96,6 +97,47 @@ $(function() {
 
 N> By default, work hour **start** is set to **9** and **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
+## First Day of Week
+
+The [firstDayOfWeek](/js/api/ejschedule#members:firstdayofweek) property allows to set any of the week days as start of the week/workweek/month view in Scheduler. It accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this `firstDayOfWeek` depends on the current culture (language) assigned to the Scheduler.
+
+To set different first day of week in Scheduler,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Week,
+        // Configure the week start day(First day of week)
+        firstDayOfWeek: ej.Schedule.FirstDayOfWeek.Tuesday,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %} 
+
+N> The sub-control datepicker which is used within Scheduler for start/end time fields in appointment window and for date navigation purposes will also follow the same first day of week. 
+
 ## TimeScale
 
 The [TimeScale](/js/api/ejschedule#members:timeScale) allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
@@ -103,6 +145,7 @@ The [TimeScale](/js/api/ejschedule#members:timeScale) allows the user to set the
 * [enable](/js/api/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * [majorSlot](/js/api/ejschedule#members:timeScale-majorSlot) – Specifies the major time slot duration.
 * [minorSlotCount](/js/api/ejschedule#members:timeScale-minorSlotCount) – Specifies the value, based on which the minor time slots are divided into appropriate count.
+* [TimeScale templates](/js/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
 
 The majorSlot and minorSlot can be set on the Scheduler with the following code example.
 

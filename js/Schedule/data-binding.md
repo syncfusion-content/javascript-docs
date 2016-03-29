@@ -841,7 +841,8 @@ public JsonResult add(Appointment value)
     };
     db.Appointments.InsertOnSubmit(appoint);
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers while editing/dragging/resizing the existing appointment
@@ -864,7 +865,8 @@ public JsonResult update(Appointment value)
         appoint.RecurrenceRule = value.RecurrenceRule;
     }
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers when an appointment is deleted
@@ -874,7 +876,8 @@ public JsonResult remove(string key)
     Appointment app = db.Appointments.Where(c => c.Id == Convert.ToInt32(key)).FirstOrDefault();
     if (app != null) db.Appointments.DeleteOnSubmit(app);
     db.SubmitChanges();
-    return Json(app, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers for any of the Scheduler CRUD operation

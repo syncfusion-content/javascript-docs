@@ -152,9 +152,7 @@ $(function() {
 
 N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the id must be defined the same as mentioned in the above code example – as we have processed the menus based on this id within our source.
 
-
 ## Custom Menu Options
-
 
 Apart from the default available options, it is also possible to add custom menu options to the context-menu of both the appointment and cell collection.
 
@@ -287,8 +285,8 @@ $(function() {
             }]
         },
         beforeContextMenuOpen: function(args) {
-            //args.target –target information to depict either cell/appointment
-            if ($(args.target.target).hasClass("e-workcells,e-monthcells"))
+            //args.events.target – target information to depict either cell/appointment
+            if ($(args.events.target).hasClass("e-workcells") || $(args.events.target).hasClass("e-monthcells"))
                 args.cancel = true;
         }
     });
