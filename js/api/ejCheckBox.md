@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejCheckBox
+title: Properties,methods and events of Essential JS ejCheckBox widget
 description: API reference for ejCheckBox
 documentation: API
 platform: js
