@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDroppable
+title: Properties,methods and events of Essential JS ejDroppable widget
 description: API reference for ejDroppable
 documentation: API
 platform: js
