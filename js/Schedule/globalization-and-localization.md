@@ -415,3 +415,43 @@ $(function() {
 
 {% endhighlight %}
 
+## First Day of Week
+
+The [firstDayOfWeek](/js/api/ejschedule#members:firstdayofweek) property allows to set any of the week days as start of the week/workweek/month view in Scheduler. It accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this `firstDayOfWeek` depends on the current culture (language) assigned to the Scheduler.
+
+To set different first day of week in Scheduler,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Week,
+        // Configure the week start day(First day of week)
+        firstDayOfWeek: ej.Schedule.FirstDayOfWeek.Tuesday,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %} 
+
+N> The sub-control datepicker which is used within Scheduler for start/end time fields in appointment window and for date navigation purposes will also follow the same first day of week. 

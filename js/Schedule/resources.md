@@ -116,23 +116,23 @@ $(function() {
                         text: "Room1",
                         id: 1,
                         groupId: 1,
-                        color: "#f8a398", workHourStart: 10, workHourEndt: 18, customDays: ["monday","wednesday","friday"]
+                        color: "#f8a398", workHourStart: 10, workHourEnd: 18, customDays: ["monday","wednesday","friday"]
                     }, {
                         text: "Room2",
                         id: 2,
                         groupId: 2,
-                        color: "#56ca85", workHourStart: 6, workHourEndt: 10, customDays: ["monday","saturday"]
+                        color: "#56ca85", workHourStart: 6, workHourEnd: 10, customDays: ["monday","saturday"]
                     }, {
                         text: "Room3",
                         id: 3,
                         groupId: 2,
-                        color: "#56ac88", workHourStart: 11, workHourEndt: 15, customDays: ["tuesday","friday"]
+                        color: "#56ac88", workHourStart: 11, workHourEnd: 15, customDays: ["tuesday","friday"]
                     }
                 ],
                 text: "text",
                 id: "id",
                 color: "color",
-                groupId: "groupId", start: "workHourStart", end: "workHourEndt", workWeek: "customDays"
+                groupId: "groupId", start: "workHourStart", end: "workHourEnd", workWeek: "customDays"
             }
         }],
         appointmentSettings: {
@@ -478,3 +478,66 @@ $(function() {
 
 N> Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
 
+## Different Working days and Hours for Resources
+
+It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for every individual resources is applicable only for the vertical Scheduler mode and not for timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation.  The custom workdays and workhours needs to be defined within the `resourceSettings` property using the following 3 sub-properties available within it.
+
+* [start](/js/api/ejschedule#members:resources-resourcesettings-start) is used to define the work start hour for each individual resources.
+* [end](/js/api/ejschedule#members:resources-resourcesettings-end) is used to define the work end hour for each individual resources.
+* [workWeek](/js/api/ejschedule#members:resources-resourcesettings-workWeek) is used to define different working days for each individual resources.
+
+**Example**: To display the Scheduler with each individual resources having different workhours and workdays, the code example is depicted below.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+                width: "100%",
+                height: "525px",
+	            currentDate: new Date(2014,4,5),
+                currentView: ej.Schedule.CurrentView.Workweek,
+                group: {
+                    resources: ["Rooms", "Owners"]
+                },
+                resources: [{
+                    field: "roomId",
+                    title: "Room",
+                    name: "Rooms", allowMultiple: false,
+                    resourceSettings: { 
+	                   dataSource: [
+	                       { text: "ROOM1", id: 1, groupId: 1, color: "#cb6bb2" },
+	                       { text: "ROOM2", id: 2, groupId: 1, color: "#56ca85"}],
+ 	                   text: "text", id: "id", groupId: "groupId", color: "color"
+                    }
+                }, {
+                    field: "ownerId",
+                    title: "Owner",
+                    name: "Owners", allowMultiple: true,
+                    resourceSettings: { 
+	                   dataSource: [
+	                       { text: "Nancy", id: 1, groupId: 1, color: "#ffaa00", on: 10, off: 18, customDays: ["monday","wednesday","friday"] },
+	                       { text: "Steven", id: 3, groupId: 2, color: "#f8a398", on: 6, off: 10, customDays: ["tuesday","thursday"] },
+	                       { text: "Michael", id: 5, groupId: 1, color: "#7499e1", on: 11, off: 15, customDays: ["sunday","tuesday","thursday","saturday"] }],
+                       text: "text", id: "id", groupId: "groupId", color: "color", start: "on", end: "off", workWeek: "customDays"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2015, 04, 05, 9, 00),
+                        EndTime: new Date(2015, 04, 05, 10, 30),
+                        ownerId: 2,
+                        roomId: 3
+                    }],
+                    resourceFields: "ownerId,roomId"
+                }
+    });
+});	
+</script>
+
+{% endhighlight %}

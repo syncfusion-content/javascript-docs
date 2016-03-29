@@ -4,8 +4,9 @@ description: Working with Scheduler appointments and its related options like Re
 platform: js
 control: schedule
 documentation: ug
-keywords: appointments, recurrence, recurring appointment, all-day 
+keywords: appointments, recurrence, recurring appointment, resize, drag and drop, search, categorize, priority, occurrence, reminder, filter and CRUD 
 ---
+
 # Working with Appointments
 
 An appointment represents a certain time interval in a schedule cell depicting a plan made for the specified time interval. 
