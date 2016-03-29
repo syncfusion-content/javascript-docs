@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDraggable
+title: Properties,methods and events of Essential JS ejDraggable widget
 description: API reference for ejDraggable
 documentation: API
 platform: js
