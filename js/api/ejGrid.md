@@ -1,6 +1,6 @@
 ---
  layout: post
- title: ejGrid
+ title: Properties,methods and events of Essential JS ejGrid widget
  description: Methods,members and events avaliable in ejGrid
  documentation: API
  platform: js
