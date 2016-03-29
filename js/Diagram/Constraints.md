@@ -48,6 +48,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Drop shadow
 * Drag label
 * Define tooltip
+* Interaction
 
 For more information about node contraints, refer to [Node Constraints](/js/api/global#nodeconstraints "Node Constraints")
 
@@ -81,6 +82,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Define tooltip
 * Bridging
 * Label dragging
+* Interaction
 
 For more information about connector contraints, refer to [Connector Constraints](/js/api/global#connectorconstraints "Connector Constraints")
 

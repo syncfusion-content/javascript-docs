@@ -21,7 +21,19 @@ The size and appearance of the Diagram pages can be customized with the `pageSet
 The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
 To explore those properties, refer [Page Settings](/js/api/ejDiagram#members:pagesettings "Page Settings").
 
-You can also customize the appearance of off-page regions with the property `backgroundColor`.
+You can also customize the appearance of off-page regions with the property `backgroundColor`, `backgroundImage`.
+
+### BackgroundImage
+
+The `backgroundImage` property sets one or more background images.
+
+`ImageAlignment`, `Scale`, `Source` are the properties of backgroundImage that customize the image.
+ 
+`ImageAlignment` customize the position of the image over the diagram/node area.To explore the properties, refer [Image Alignment](/js/api/ejDiagram#members:backgroundimage-alignment "Image Alignment").
+
+`Scale` describes how the image can be scaled.For more information, refer [Scale](/js/api/ejDiagram#members:backgroundimage-scale "Scale").
+
+`Source` describes the source path of the image.
 
 The following code illustrates how to customize the page size and the appearance of page and off-page.
 
@@ -30,6 +42,7 @@ The following code illustrates how to customize the page size and the appearance
 $("#diagram").ejDiagram({
 	//Sets off-page background
 	backgroundColor: "whitesmoke",
+		backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMid,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"syncfusion.png"},
 	pageSettings: {
 		//Sets page size
 		pageHeight: 500,
@@ -46,6 +59,7 @@ $("#diagram").ejDiagram({
 });
 {% endhighlight %}
 
+![](/js/Diagram/Page-Settings_images/Page-Settings_img5.png)
 
 ![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
 

@@ -476,6 +476,66 @@ Orientation, spacings, and position of layout can be customized with a set of pr
 
 To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#members:layout "Layout Properties").
 
+### Layout Bounds 
+
+Diagram provides support to customize the custom bounds to align the layout. You can set the desired bounds using `layout.bounds` . For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
+
+### Layout Alignment
+
+Layout can be aligned relative to the specified layout boundaries. It has horizontal and vertical alignment settings.
+
+### Horizontal Alignment and Vertical Alignment
+
+The `horizontalAlignment` property of layout is used to set how the layout is horizontally aligned within the layout bounds. For more information about horizontal alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-horizontalalignment "Layout Alignment") The `verticalAlignment` properety of layout is used to set how the layout is vertically aligned within the layout bounds. For more information about vertical alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-verticalalignment "Layout Alignment")
+
+### Layout Margin
+
+Layout provides support to add some blank space in the layout bounds.
+
+The following code illustrates how to customize the layout
+
+{% highlight js %}
+
+var type = ej.datavisualization.Diagram.LayoutTypes;
+var orientation = ej.datavisualization.Diagram.LayoutOrientations;
+
+$("#diagram").ejDiagram({
+	layout: {
+		
+		//Sets the type of the layout
+		type: type.HierarchicalTree,
+
+		//Sets the orientation
+		orientation: orientation.BottomToTop,
+		
+		//Sets the bounds
+		bounds:{x:100,y:100,width:500,height:500},
+		
+		//Sets the alignment of the layout
+		horizontalALignment:ej.datavisualization.Diagram.HorizontalAlignment.Left,
+		verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top,
+		
+		//Sets the margin
+		margin:{left:25,right:25,top:25,bottom:25}
+	},
+	defaultSettings: {
+		//Sets the default properties of the node.
+		//Sets the default properties of the connector.
+	},
+
+	//Initializes the node template.
+	nodeTemplate: nodeTemplate,
+
+	//Configures data source for Diagram
+	dataSourceSettings: {
+		//Specifies the dataSource
+	}
+});
+
+{% endhighlight %}
+
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+
 ### Layout Orientation
 
 Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")
