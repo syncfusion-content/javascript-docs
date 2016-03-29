@@ -404,7 +404,7 @@ Example
 ### hatchStyle  `enum`
 {:#members:hatchstyle}
 
-
+<ts name="ej.HatchStyle"/>
 
 
 

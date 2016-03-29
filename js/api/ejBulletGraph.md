@@ -369,12 +369,40 @@ captionSettings :{font :{fontFamily : "algerian"}}
 ### captionSettings.font.fontStyle `enum`
 {:#members:captionsettings-font-fontstyle}
 
+<ts name="ej.datavisualization.BulletGraph.FontStyle"/>
+
+Specifies the fontStyle of caption
 
 
-
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description last">The texts are displayed in the defaut format</td>
+</tr>
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in italized format</td>
+</tr> 
+<tr>
+<td class="name">
+Oblique</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in the oblique format</td>
+</tr> 
+</tbody>
+</table>
 
 Specifies the fontStyle of caption. Caption text render with this fontStyle. See <a href="global.html#FontStyle">FontStyle</a>
 
@@ -419,10 +447,46 @@ captionSettings :{font :{fontStyle : "italic"}}
 {:#members:captionsettings-font-fontweight}
 
 
+<ts name="ej.datavisualization.BulletGraph.FontWeight"/>
+
+Specifies the fontWeight of caption
 
 
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description last">The texts are displayed in the default manner</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in the Bold </td>
+</tr> 
+<tr>
+<td class="name">
+Bolder</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed with incresed boldness compared to the bold option</td>
+</tr> 
+<tr>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed with the decreased lightness </td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the fontWeight of caption. Caption text render with this fontWeight. See <a href="global.html#FontWeight">FontWeight</a>
@@ -707,7 +771,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.indicator.font.fontStyle `enum`
 {:#members:captionsettings-indicator-font-fontstyle}
 
-
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -757,7 +821,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 {:#members:captionsettings-indicator-font-fontweight}
 
 
-
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -1579,9 +1643,40 @@ captionSettings :{ indicator :{text : "Power Production"} }
 ### captionSettings.indicator.textAlignment `enum`
 {:#members:captionsettings-indicator-textalignment}
 
+<ts name="ej.datavisualization.BulletGraph.TextAlignment"/>
+
+Specifies the alignement of indicator with respect to scale based on text position
 
 
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Near</td>
+<td class="type">string</td> 
+<td class="description last">The text is  aligned near to the scale</td>
+</tr>
+<tr>
+<td class="name">
+Far</td>
+<td class="type">string</td>
+<td class="description last">The text is aligned far from the scale</td>
+</tr> 
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td>
+<td class="description last">The text is aligned center of the scale </td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -1629,11 +1724,40 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 {:#members:captionsettings-indicator-textanchor}
 
 
+<ts name="ej.datavisualization.BulletGraph.TextAnchor"/>
+
+Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
 
 
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Start</td>
+<td class="type">string</td> 
+<td class="description last">The Start is used to anchor the text from begining</td>
+</tr>
+<tr>
+<td class="name">
+Middle</td>
+<td class="type">string</td>
+<td class="description last">The Middle is used to anchor the text from the center</td>
+</tr> 
+<tr>
+<td class="name">
+End</td>
+<td class="type">string</td>
+<td class="description last">The End is used to anchor the text from the end</td>
+</tr> 
+</tbody>
+</table>
 
 Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
 
@@ -1727,10 +1851,52 @@ captionSettings :{ indicator :{textAngle :10} }
 {:#members:captionsettings-indicator-textposition}
 
 
+<ts name="ej.datavisualization.BulletGraph.TextPosition"/>
+
+Specifies where indicator should be placed
 
 
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Top</td>
+<td class="type">string</td> 
+<td class="description last">The texts are positioned on the top of the quantitative scales</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="description last">The texts are positioned to the right of the quantitative scales</td>
+</tr> 
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td>
+<td class="description last">The texts are positioned to the left of the quantitative scales</td>
+</tr> 
+<tr>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
+<td class="description last">The texts are positioned to the bottom of the quantitative scales</td>
+</tr> 
+<tr>
+<td class="name">
+Float</td>
+<td class="type">string</td>
+<td class="description last">The text can be placed at any location using the float property</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies where indicator should be placed.
@@ -2184,7 +2350,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 ### captionSettings.subTitle.font.fontStyle `enum`
 {:#members:captionsettings-subtitle-font-fontstyle}
 
-
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -2201,10 +2367,7 @@ Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. S
 
 
 
-
-
 * "Normal"
-
 
 
 
@@ -2233,8 +2396,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 ### captionSettings.subTitle.font.fontWeight `enum`
 {:#members:captionsettings-subtitle-font-fontweight}
 
-
-
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -2598,7 +2760,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 ### captionSettings.subTitle.textAlignment `enum`
 {:#members:captionsettings-subtitle-textalignment}
 
-
+<ts ref="ej.datavisualization.BulletGraph.TextAlignment"/>
 
 
 
@@ -2648,7 +2810,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 {:#members:captionsettings-subtitle-textanchor}
 
 
-
+<ts ref="ej.datavisualization.BulletGraph.TextAnchor"/>
 
 
 
@@ -2667,7 +2829,6 @@ Specifies where subtitle text should be anchored when sub title text overlaps wi
 
 
 * 'start'
-
 
 
 
@@ -2746,6 +2907,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 {:#members:captionsettings-subtitle-textposition}
 
 
+<ts ref="ej.datavisualization.BulletGraph.TextPosition"/>
 
 
 
@@ -2843,7 +3005,7 @@ captionSettings :{text : "Production"}
 ### captionSettings.textAlignment `enum`
 {:#members:captionsettings-textalignment}
 
-
+<ts ref="ej.datavisualization.BulletGraph.TextAlignment"/>
 
 
 
@@ -2892,7 +3054,7 @@ captionSettings :{textAlignment: 'Center'}
 ### captionSettings.textAnchor `enum`
 {:#members:captionsettings-textanchor}
 
-
+<ts ref="ej.datavisualization.BulletGraph.TextAnchor"/>
 
 
 
@@ -2991,7 +3153,7 @@ captionSettings :{textAngle : 5}
 {:#members:captionsettings-textposition}
 
 
-
+<ts ref="ej.datavisualization.BulletGraph.TextPosition"/>
 
 
 
@@ -3186,11 +3348,34 @@ enableResizing : false
 ### flowDirection `enum`
 {:#members:flowdirection}
 
+<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
+
+Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
 
 
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Forward</td>
+<td class="type">string</td> 
+<td class="description last">The BulletGraph is rendered from left to right</td>
+</tr>
+<tr>
+<td class="name">
+Backward</td>
+<td class="type">string</td>
+<td class="description last">The BulletGraph is rendered from right to left</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. See <a href="global.html#FlowDirection">FlowDirection</a>
@@ -3285,9 +3470,34 @@ height : 600
 {:#members:orientation}
 
 
+<ts name="ej.datavisualization.BulletGraph.Orientation"/>
+
+Bullet graph will render in the specified orientation.
 
 
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td> 
+<td class="description last">The BulletGraph is oriented in horizontal direction</td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="description last">The BulletGraph is oriented in vertical direction</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -3401,102 +3611,6 @@ qualitativeRanges :[{rangeEnd : 4.5}]
 
 
 
-### qualitativeRanges.rangeEnd `number`
-{:#members:qualitativeranges-rangeend}
-
-
-
-
-
-
-
-
-Specifies the ending range to which the qualitative ranges will render.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* 7.3
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeEnd : 7}]                 
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### qualitativeRanges.rangeEnd `number`
-{:#members:qualitativeranges-rangeend}
-
-
-
-
-
-
-
-
-Specifies the ending range to which the qualitative ranges will render.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* 10
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeEnd : 5}]                 
-});
-</script>{% endhighlight %}
-
-
-
-
-
 
 
 ### qualitativeRanges.rangeOpacity `number`
@@ -3542,201 +3656,6 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 });
 </script>{% endhighlight %}
 
-
-
-
-
-
-
-### qualitativeRanges.rangeOpacity `number`
-{:#members:qualitativeranges-rangeopacity}
-
-
-
-
-
-
-
-
-Specifies the opacity for the qualitative ranges.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeOpacity : 0.5}]                 
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### qualitativeRanges.rangeOpacity `number`
-{:#members:qualitativeranges-rangeopacity}
-
-
-
-
-
-
-
-
-Specifies the opacity for the qualitative ranges.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeOpacity : 0.5}]                 
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### qualitativeRanges.rangeStroke `string`
-{:#members:qualitativeranges-rangestroke}
-
-
-
-
-
-
-
-
-Specifies the stroke for the qualitative ranges.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeStroke : 5}]                 
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### qualitativeRanges.rangeStroke `string`
-{:#members:qualitativeranges-rangestroke}
-
-
-
-
-
-
-
-
-Specifies the stroke for the qualitative ranges.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-qualitativeRanges :[{rangeStroke : 5}]                 
-});
-</script>{% endhighlight %}
 
 
 
@@ -4807,7 +4726,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 ### quantitativeScaleSettings.labelSettings.font.fontStyle `enum`
 {:#members:quantitativescalesettings-labelsettings-font-fontstyle}
 
-
+<ts ref="ej.datavisualization.BulletGraph.FontStyle"/>
 
 
 
@@ -4857,7 +4776,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 {:#members:quantitativescalesettings-labelsettings-font-fontweight}
 
 
-
+<ts ref="ej.datavisualization.BulletGraph.FontWeight"/>
 
 
 
@@ -4955,10 +4874,34 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 {:#members:quantitativescalesettings-labelsettings-labelplacement}
 
 
+<ts name="ej.datavisualization.BulletGraph.LabelPlacement"/>
+
+Specifies the placement of labels in bullet graph scale.
 
 
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inside</td>
+<td class="type">string</td> 
+<td class="description last">The Quantitive Scale Labels are placed inside the scale</td>
+</tr>
+<tr>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
+<td class="description last">The Quantitive Scale labels are placed outside the scale</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the placement of labels in bullet graph scale.
@@ -5150,11 +5093,34 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 ### quantitativeScaleSettings.labelSettings.position `enum`
 {:#members:quantitativescalesettings-labelsettings-position}
 
+<ts name= "ej.datavisualization.BulletGraph.LabelPosition"/>
+
+Specifies the position of the labels to render either above or below the graph. See <a href="global.html#Position">Position</a>
 
 
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Above</td>
+<td class="type">string</td> 
+<td class="description last">The labels are placed above the graph</td>
+</tr>
+<tr>
+<td class="name">
+Below</td>
+<td class="type">string</td>
+<td class="description last">The labels are placed below the graph</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the position of the labels to render either above or below the graph. See <a href="global.html#Position">Position</a>
@@ -5903,12 +5869,34 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 {:#members:quantitativescalesettings-tickplacement}
 
 
+<ts name="ej.datavisualization.BulletGraph.TickPlacement"/>
+
+Specifies the placement of ticks to render either inside or outside the scale.
 
 
-
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inside</td>
+<td class="type">string</td> 
+<td class="description last">The QuantitiveScaleticks are placed inside the scale </td>
+</tr>
+<tr>
+<td class="name">
+Outside</td>
+<td class="type">string</td>
+<td class="description last">The QuantitiveScaleTicks are placed outside the scale</td>
+</tr> 
+</tbody>
+</table>
 Specifies the placement of ticks to render either inside or outside the scale. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
 
@@ -5952,10 +5940,40 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 {:#members:quantitativescalesettings-tickposition}
 
 
+<ts name="ej.datavisualization.BulletGraph.TickPosition"/>
+
+Specifies the position of the ticks to render either above,below or inside
 
 
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Below</td>
+<td class="type">string</td> 
+<td class="description last">The ticks are positioned below the quantitive scale</td>
+</tr>
+<tr>
+<td class="name">
+Above</td>
+<td class="type">string</td>
+<td class="description last">The ticks are positioned above the quantitive scale</td>
+</tr> 
+<tr>
+<td class="name">
+Cross</td>
+<td class="type">string</td>
+<td class="description last">The ticks are placed inside the quantitive scale</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the position of the ticks to render either above, below or inside the graph. See <a href="global.html#LabelPosition">LabelPosition</a>
@@ -6625,26 +6643,26 @@ Fires on rendering the caption of bullet graph.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">scaleElement</span></td>
+scaleElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.captionElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">captionElement</span></td>
+captionElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the current captionSettings element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.captionType{% endhighlight %}</td>
-<td class="type"><span class="param-type">captionType</span></td>
+captionType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the type of the captionSettings.</td>
 </tr>
 </tbody>
@@ -6692,26 +6710,26 @@ Fires on rendering the category.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">scaleElement</span></td>
+scaleElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.categoryElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">categoryElement</span></td>
+categoryElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of category element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.Value{% endhighlight %}</td>
-<td class="type"><span class="param-type">Value</span></td>
+Value{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the text value of the category that is drawn.</td>
 </tr>
 </tbody>
@@ -6759,26 +6777,26 @@ Fires on rendering the comparative measure symbol.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">scaleElement</span></td>
+scaleElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.targetElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">targetElement</span></td>
+targetElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of comparative measure element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.Value{% endhighlight %}</td>
-<td class="type"><span class="param-type">Value</span></td>
+Value{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the comparative measure symbol.</td>
 </tr>
 </tbody>
@@ -6826,26 +6844,26 @@ Fires on rednering the feature measure bar.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">scaleElement</span></td>
+scaleElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.currentElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">currentElement</span></td>
+currentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of feature measure element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.Value{% endhighlight %}</td>
-<td class="type"><span class="param-type">Value</span></td>
+Value{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the feature measure bar.</td>
 </tr>
 </tbody>
@@ -6893,26 +6911,26 @@ Fires on rendering the indicator of bullet graph.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.indicatorSettings{% endhighlight %}</td>
-<td class="type"><span class="param-type">indicatorSettings</span></td>
+indicatorSettings{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns an object to customize bullet graph indicator text and symbol before rendering it.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.model{% endhighlight %}</td>
-<td class="type"><span class="param-type"><a href="global.html#model">model</a></span></td>
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">type</span></td>
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the type of event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">cancel</span></td>
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">for cancelling the event.</td>
 </tr>
 </tbody>
@@ -6960,26 +6978,26 @@ Fires on rendering the labels.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.scaleElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">scaleElement</span></td>
+scaleElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.tickElement{% endhighlight %}</td>
-<td class="type"><span class="param-type">labelElement</span></td>
+tickElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.labelType{% endhighlight %}</td>
-<td class="type"><span class="param-type">labelType</span></td>
+labelType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the label type.</td>
 </tr>
 </tbody>
@@ -7027,26 +7045,26 @@ Fires on rendering the qualitative ranges.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.Object{% endhighlight %}</td>
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.rangeIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">rangeIndex</span></td>
+rangeIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of current range.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.rangeOptions{% endhighlight %}</td>
-<td class="type"><span class="param-type">rangeOptions</span></td>
+rangeOptions{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the settings for current range.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.rangeEndValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">rangeEndValue</span></td>
+rangeEndValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the end value of current range.</td>
 </tr>
 </tbody>

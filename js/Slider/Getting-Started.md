@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started 
 
 This section explains briefly about how to create a **Slider** in your application with **JavaScript**.
-**Essential JavaScript Slider** widget provides support to display a **Slider** within the webpage. Here, you can learn how to use **Sliders** in a real-time application. The example shows you how to use the **Slider** control to select mobile model within the specified price range in a Mobile Purchase Application.
+**Essential JavaScript Slider** widget provides support to display a **Slider** within the web page. Here, you can learn how to use **Sliders** in a real-time application. The example shows you how to use the **Slider** control to select mobile model within the specified price range in a Mobile Purchase Application.
 
 The following screenshot demonstrates the functionality of **Slider** control. By selecting mobile model in the dropdown, you can purchase a mobile at any rate specified in the **Mobile Price Slider**. In addition, you can also specify the number of mobiles you require by using the **Mobile** **Count** **Slider**. Simultaneously, you can observe the changes in the **Mobile Price** and **Count** using **Sliders**.
 

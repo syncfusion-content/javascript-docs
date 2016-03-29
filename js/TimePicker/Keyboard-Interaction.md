@@ -27,7 +27,7 @@ List of keyboard shortcuts
             <a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j
         </td>
         <td>
-            Focuses into Timepicker widget
+            Focuses into TimePicker widget
         </td>
     </tr>
     <tr>

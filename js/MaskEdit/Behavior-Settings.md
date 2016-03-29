@@ -129,7 +129,7 @@ Output of MaskEdit after setting “**height**” and “**width**” is as foll
 
 ## Define Value
 
-The value of **MaskEdit** can be assigned by using the **value** property. The default value for v**alue** property is null.
+The value of **MaskEdit** can be assigned by using the **value** property. The default value for **value** property is null.
 
 The following steps explain the **value** property in the **MaskEdit** control.
 

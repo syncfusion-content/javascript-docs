@@ -26,7 +26,7 @@ documentation: ug
 * gradient-saffron
 * gradient-saffron-dark
 
-##Cssclass
+##cssClass
 
 **Menu** control also customizes its appearance using user-defined **CSS** and custom skin options (colors and backgrounds). To apply custom themes you can use the “cssClass” property. “cssClass” property sets the root class for **Menu** control theme.
 

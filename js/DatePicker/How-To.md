@@ -77,5 +77,5 @@ DatePicker is responsive control, you have to just set the input element width a
 
 ## How to use DatePicker in AngularJS?
 
-You can use DatePicker control in AngularJS framework. To know more about JS component with Angular refer here [JS component in Angular](http://help.syncfusion.com/js/angularjs).
+You can use DatePicker control in AngularJS Framework. To know more about JS component with AngularJS refer here [JS component in AngularJS](http://help.syncfusion.com/js/angularjs).
 

@@ -986,7 +986,9 @@ Specifies the virtual scroll mode to load the list data on demand via scrolling 
 <td>This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
 </tr>
 </table>
+
 #### Default Value:
+
 * ej.VirtualScrollMode.Normal
 
 Example
@@ -1134,8 +1136,8 @@ Checks multiple list items by using its index values. It is dependent on showChe
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/indices</td><td>
-number[]</td><td>
+indices</td><td>
+number|number[]</td><td>
 Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1361,7 +1363,7 @@ Returns the list of checked items in the ListBox widget. It is dependent on show
 N> This method does not accept any arguments.
 
 ####Returns:
-number[]
+object
 
 Example
 {:.example}
@@ -1379,6 +1381,9 @@ Example
 Returns the list of selected items in the ListBox widget. 
 
 N> This method does not accept any arguments.
+
+####Returns:
+object
 
 Example
 {:.example}
@@ -1409,6 +1414,8 @@ string</td><td>
 The list item text (label)</td></tr>
 </table>
 
+####Returns:
+number
 
 Example
 {:.example}
@@ -1434,10 +1441,13 @@ Returns an item’s index based on the value given.
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/indices</td><td>
+indices</td><td>
 string</td><td>
 The list item’s value</td></tr>
 </table>
+
+####Returns:
+number
 
 Example
 {:.example}
@@ -1467,6 +1477,9 @@ number </td><td>
 The list item index.</td></tr>
 </table>
 
+####Returns:
+string
+
 Example
 {:.example}
 
@@ -1495,6 +1508,9 @@ number </td><td>
 The list item index.</td></tr>
 </table>
 
+####Returns:
+object
+
 Example
 {:.example}
 
@@ -1522,6 +1538,9 @@ text</td><td>
 string</td><td>
 The list item text.</td></tr>
 </table>
+
+####Returns:
+object
 
 Example
 {:.example}
@@ -1858,8 +1877,8 @@ Selects a set of list items through its index values. This method will works whe
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/Indices</td><td>
-number[]</td><td>
+Indices</td><td>
+number|number[]</td><td>
 Index/Indices of the listbox items to be selected.</td></tr>
 </table>
 
@@ -1888,8 +1907,8 @@ Selects a set of list items through its index values.
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/Indices</td><td>
-number[]</td><td>
+Indices</td><td>
+number|number[]</td><td>
 Index/Indices of the listbox item to be selected.</td></tr>
 </table>
 
@@ -2071,8 +2090,8 @@ Unselects a set of list items using its index values.
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/Indices</td><td>
-number[]</td><td>
+Indices</td><td>
+number|number[]</td><td>
 Index/Indices of the listbox item to be unselected.</td></tr>
 </table>
 

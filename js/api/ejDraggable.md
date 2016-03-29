@@ -10,7 +10,6 @@ keywords: Draggable, ejDraggable, syncfusion, Draggable api
 
 # ejDraggable
 
-
 Plugin to make any DOM element draggable.  
 
 

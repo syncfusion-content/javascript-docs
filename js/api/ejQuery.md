@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejQuery
+<ts  isFrameWork="true" />
+
 Communicates with data source and returns the desired result based on the Query provided.
 
 #### Example
@@ -869,7 +872,5 @@ ej.Query
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","lessthan","10253"));
 var tbody="";
 for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
-
-
 
 

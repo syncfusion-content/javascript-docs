@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejDataManager
+<ts  isFrameWork="true" />
+
 Communicates with data source and returns the desired result based on the Query provided.
 
 
@@ -142,7 +145,8 @@ JQueryPromise
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/");
 var query =  ej.Query().select(["OrderID", "CustomerID", "ShipName"]).from("Orders").take(3);
 var promise = dataManager.executeQuery(query);
-promise.done(function(e){}); 
+promise.done(function(e){});
+promise.fail(function(e){});
 </script>{% endhighlight %}
 
 
@@ -372,5 +376,3 @@ var updateData = {OrderID: 10249, CustomerID: "Test", EmployeeID: 0 };
 ej.DataManager(first).update("OrderID", updateData, first);
 $(function (){});
 </script>{% endhighlight %}
-
-

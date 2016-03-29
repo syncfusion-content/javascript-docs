@@ -99,14 +99,14 @@ options</td>
 {:#members:buttontext}
 
 
-The colorpicker control allows to define the customized text to displayed in button elements. Using the property to achieve the customized culture values.
+The ColorPicker control allows to define the customized text to displayed in button elements. Using the property to achieve the customized culture values.
 
 
 #### Default Value
 
 
 
-* buttonText.apply= "Apply", buttonText.cancel= "Cancel",buttonText.Swaches="Swatches"
+* buttonText.apply= "Apply", buttonText.cancel= "Cancel",buttonText.swatches="Swatches"
 
 
 
@@ -152,7 +152,7 @@ Split</td>
 <tr>
 <td class="name">
 Dropdown</td>
-<td class="description">Displays the button in Dropdown modee</td>
+<td class="description">Displays the button in Dropdown mode</td>
 </tr>
 </tbody>
 </table>
@@ -357,7 +357,7 @@ This property allows to define the custom colors in the palette model.Custom pal
 
 
 
-This property allows to embed the popup in the order of DOM element flow . When we set the value as true, the colorpicker popup is always in visible state.
+This property allows to embed the popup in the order of DOM element flow . When we set the value as true, the color picker popup is always in visible state.
 
 
 
@@ -544,7 +544,7 @@ It allows to define the characteristics of the ColorPicker control. It will help
 <ts name="ej.ColorPicker.ModelType"/>
 
 
-Specifies the model type to be rendered initially in the colorpicker control. See below to get available ModelType
+Specifies the model type to be rendered initially in the color picker control. See below to get available ModelType
 
 
 <table class="props">
@@ -558,12 +558,12 @@ Specifies the model type to be rendered initially in the colorpicker control. Se
 <tr>
 <td class="name">
 Palette</td>
-<td class="description">support palette type mode in colorpicker.</td>
+<td class="description">support palette type mode in color picker.</td>
 </tr>
 <tr>
 <td class="name">
 Picker</td>
-<td class="description">support palette type mode in colorpicker.</td>
+<td class="description">support palette type mode in color picker.</td>
 </tr>
 </tbody>
 </table>
@@ -670,7 +670,7 @@ This property allows to change the opacity value .The selected color opacity wil
 
 
 
-Specifies the palette type to be displayed at initial time in palette model.There two types of palette model availabale in colorpicker control. See below available Palette
+Specifies the palette type to be displayed at initial time in palette model.There two types of palette model available in ColorPicker control. See below available Palette
 
 <table class="props">
 <thead>
@@ -988,7 +988,7 @@ This property allows to provides live preview support for current cursor selecti
 
 
 
-This property allows to store the color values in custom list.The colorpicker will keep up to 11 colors in a custom list.By clicking the add button, the selected color from picker or palette will get added in the recent color list.
+This property allows to store the color values in custom list.The ColorPicker will keep up to 11 colors in a custom list.By clicking the add button, the selected color from picker or palette will get added in the recent color list.
 
 
 
@@ -1041,7 +1041,7 @@ This property allows to store the color values in custom list.The colorpicker wi
 
 
 
-This property allows to shows tooltip to notify the slider value in colorpicker control.
+This property allows to shows tooltip to notify the slider value in color picker control.
 
 
 
@@ -1094,7 +1094,7 @@ This property allows to shows tooltip to notify the slider value in colorpicker 
 
 
 
-Specifies the toolIcon to be disaplyed in dropdown control color area.
+Specifies the toolIcon to be displayed in dropdown control color area.
 
 
 
@@ -1209,7 +1209,7 @@ This property allows to define the customized text or content to displayed when 
 
 
 
-Specifies the color value for colorpicker control, the value is in hexadecimal form with prefix of "#".
+Specifies the color value for color picker control, the value is in hexadecimal form with prefix of "#".
 
 
 
@@ -1543,7 +1543,7 @@ object
 
 
 
-Hides the colorpicker popup, if in opended state.
+Hides the ColorPicker popup, if in opened state.
 
 
 
@@ -1562,7 +1562,7 @@ Hides the colorpicker popup, if in opended state.
         $('#colorPick').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
         var colorObj = $("#colorPick").data("ejColorPicker");
-        colorObj.hide(); // hide the colorpicker popup
+        colorObj.hide(); // hide the ColorPicker popup
         </script> 
 
 {% endhighlight %}
@@ -1575,7 +1575,7 @@ Hides the colorpicker popup, if in opended state.
         <script>
         // Create Color picker
         $('#colorPick').ejColorPicker({ value: "#278787" });
-        // hide the colorpicker popup
+        // hide the ColorPicker popup
         $("#colorPick").ejColorPicker("hide");
         </script>      
 
@@ -1775,7 +1775,7 @@ object
 
 
 
-Open the colorpicker popup.
+Open the ColorPicker popup.
 
 
 
@@ -1794,7 +1794,7 @@ Open the colorpicker popup.
         $('#colorPick').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
         var colorObj = $("#colorPick").data("ejColorPicker");
-        colorObj.show(); // open the colorpicker popup
+        colorObj.show(); // open the ColorPicker popup
         </script>
 
  {% endhighlight %}
@@ -1807,7 +1807,7 @@ Open the colorpicker popup.
         <script>
         // Create Color picker
         $('#colorPick').ejColorPicker({ value: "#278787" });
-        // open the colorpicker popup
+        // open the ColorPicker popup
         $("#colorPick").ejColorPicker("show");
         </script>      
 
@@ -1831,7 +1831,7 @@ Open the colorpicker popup.
 
 
 
-Fires after Color value has been changed sucessfully.If the user want to perform any operation after the color value changed then the user can make use of this change event.
+Fires after Color value has been changed successfully.If the user want to perform any operation after the color value changed then the user can make use of this change event.
 
 <table class="params">
 <thead>
@@ -2291,7 +2291,7 @@ type</td>
 
 
 
-Fires after Color value has been selected sucessfully. If the user want to perform any operation after the color value selected then the user can make use of this select event.
+Fires after Color value has been selected successfully. If the user want to perform any operation after the color value selected then the user can make use of this select event.
 
 <table class="params">
 <thead>

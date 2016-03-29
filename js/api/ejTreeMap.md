@@ -119,7 +119,7 @@ Specifies the border thickness of the treemap
 {% endhighlight %}
 
 
-### color `string`
+### uniColorMapping.color `string`
 {:#members:color}
 
 Specifies the uniform color mapping of the treemap
@@ -153,7 +153,7 @@ Specifies the uniform color mapping of the treemap
 {% endhighlight %}
 
 
-### color `string`
+### desaturationColorMapping.color `string`
 {:#members:color}
 
 Specifies the color for desaturationColorMapping
@@ -298,6 +298,8 @@ Specifies the desaturationColorMapping settings of the treemap
 
 ### dockPosition `enum`
 {:#members:dockposition}
+
+<ts name = "ej.TreeMap.DockPosition"/>
 
 Specifies the dockPosition for legend
 
@@ -874,6 +876,8 @@ Specifies the iconWidth for legend
 ### itemsLayoutMode `enum`
 {:#members:itemslayoutmode}
 
+<ts name = "ej.TreeMap.ItemsLayoutMode"/>
+
 Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
 
 <table class="params">
@@ -1077,6 +1081,8 @@ Specifies the label path of the leaf item.
 ### leafItemSettings.labelPosition `enum`
 {:#members:leafitemsettings-labelposition}
 
+<ts name = "ej.TreeMap.Position"/>
+
 Specifies the position of the leaf labels.
 
 <table class="params">
@@ -1161,6 +1167,8 @@ Specifies the position of the leaf labels.
 
 ### leafItemSettings.labelVisibilityMode `enum`
 {:#members:leafitemsettings-labelvisibilitymode}
+
+<ts name = "ej.TreeMap.VisibilityMode"/>
 
 Specifies the mode of label visibility
 
@@ -1356,40 +1364,6 @@ Specifies the rangeMaximum value for desaturation color mapping
 {% endhighlight %}
 
 
-### rangeMaximum `number`
-{:#members:rangemaximum}
-
-Specifies the rangeMaximum value for desaturation color mapping
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
- 
-//To set rangeMaximum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the rangeMaximum API, after initialization:
-   
-   //Gets the rangeMaximum value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
- 
-   //Sets the rangeMaximum value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
-
-{% endhighlight %}
-
-
 ### rangeMinimum `number`
 {:#members:rangeminimum}
 
@@ -1407,40 +1381,6 @@ Specifies the rangeMinimum value for desaturation color mapping
   $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
 
 {% endhighlight %}
-
-{% highlight html %}
- 
-//Get or set the rangeMinimum API, after initialization:
-   
-   //Gets the rangeMinimum value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
- 
-   //Sets the rangeMinimum value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
-
-{% endhighlight %}
-
-
-### rangeMinimum `number`
-{:#members:rangeminimum}
-
-Specifies the rangeMinimum value for desaturation color mapping
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
- 
-//To set rangeMinimum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
-
-{% endhighlight %}
-
 
 {% highlight html %}
  
@@ -1459,6 +1399,8 @@ Specifies the rangeMinimum value for desaturation color mapping
 
 ### shapeLayer.groupSelectionMode `enum`
 {:#members:shapelayer-groupselectionmode}
+
+<ts name = "ej.TreeMap.groupSelectionMode"/>
 
 Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
 
@@ -2021,6 +1963,8 @@ Specifies the header template for tree map level.
 ### treeMapLevel.headerVisibilityMode `enum`
 {:#members:treemaplevel-headervisibilitymode}
 
+<ts name = "ej.TreeMap.VisibilityMode"/>
+
 Specifies the mode of header visibility
 
 <table class="params">
@@ -2073,6 +2017,8 @@ Specifies the mode of header visibility
 
 ### treeMapLevel.labelPosition `enum`
 {:#members:treemaplevel-labelposition}
+
+<ts ref = "ej.TreeMap.Position"/>
 
 Specifies the position of the labels.
 
@@ -2192,6 +2138,8 @@ Specifies the label template for tree map level.
 
 ### treeMapLevel.labelVisibilityMode `enum`
 {:#members:treemaplevel-labelvisibilitymode}
+
+<ts ref = "ej.TreeMap.VisibilityMode"/>
 
 Specifies the mode of label visibility
 

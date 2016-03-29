@@ -460,7 +460,7 @@ N>  This is applicable for the content type’s imageonly, textandimage, imagete
 
 
 
-Convert the button as repeat button. It raises the 'Click' event repeattedly from the it is pressed until it is released.
+Convert the button as repeat button. It raises the 'Click' event repeatedly from the it is pressed until it is released.
 
 
 #### Default Value
@@ -497,7 +497,7 @@ Convert the button as repeat button. It raises the 'Click' event repeattedly fro
 
 
 
-Displays the Button with rounded corncers.
+Displays the Button with rounded corners.
 
 
 #### Default Value

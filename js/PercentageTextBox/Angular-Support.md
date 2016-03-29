@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular Support
 
-The **PercentageTextBox** widget supports two types of **Angular JS support** namely, 
+The **PercentageTextBox** widget supports two types of **AngularJS support** namely, 
 
 * One-way binding
 * Two-way binding 
@@ -20,11 +20,11 @@ The **PercentageTextBox** widget supports two types of **Angular JS support** na
 
 Apply the plugin and property assigning to the **PercentageTextBox** widget element through the directive that starts with the letter **“e-“.**
 
-To know more details about the **Angular binding**, refer the following link location,
+To know more details about the **AngularJS binding**, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts the way to bind data to the **PercentageTextBox** widget through **angular support**.
+The following example depicts the way to bind data to the **PercentageTextBox** widget through **angularJS support**.
 
 {% highlight html %}
 
@@ -74,7 +74,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 
 
 
-The output of **PercentageTextBox** controls with **two-way angular binding** is as follows.
+The output of **PercentageTextBox** controls with **two-way angularJS binding** is as follows.
 
 ![](/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png) 
 

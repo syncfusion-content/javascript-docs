@@ -179,7 +179,7 @@ It includes the dataSource option and the fields related to Schedule appointment
 
 {% endhighlight %}
 
-### appointmentSettings.dataSource `object/Array`
+### appointmentSettings.dataSource `object|Array`
 {:#members:appointmentsettings-datasource}
 
 
@@ -914,7 +914,7 @@ When set to true, enables the categories option to be applied for the appointmen
 
 {% endhighlight %}
 
-### categorizeSettings.dataSource `array/object`
+### categorizeSettings.dataSource `array|object`
 {:#members:categorizesettings-datasource }
 
 #### Default Value
@@ -1334,6 +1334,8 @@ Sets current date of the Schedule. The Schedule displays initially with the date
 
 ### currentView `string|enum`
 {:#members:currentview}
+
+<ts name="ej.Schedule.CurrentView"/>
 
 Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView(ej.Schedule.CurrentView) are as follows,
 
@@ -2072,6 +2074,8 @@ Sets the minimum date limit to display on the Schedule. Setting minDate with spe
 ### orientation `string|enum`
 {:#members:orientation}
 
+<ts name="ej.Schedule.Orientation"/>
+
 Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values. The enum values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
 
 <table class="params">
@@ -2165,7 +2169,7 @@ When set to true, enables the priority options available for the Schedule appoin
 
 {% endhighlight %}
 
-### prioritySettings.dataSource `object/array`
+### prioritySettings.dataSource `object|array`
 {:#members:prioritysettings-datasource }
 
 The dataSource option can accept the JSON object collection that contains the priority related data.
@@ -3212,6 +3216,8 @@ Sets the start hour time range to be displayed on the Schedule.
 ### timeMode `string|enum`
 {:#members:timemode}
 
+<ts name="ej.Schedule.TimeMode"/>
+
 Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value("12" or "24") or the below mentioned enum values. The enum values that are accepted by timeMode(ej.Schedule.TimeMode) are as follows,
 
 <table class="params">
@@ -4107,10 +4113,10 @@ Allows setting draggable area for the Scheduler appointments. Also, turns on the
 
 ## Methods
 
-### deleteAppointment(guid)
+### deleteAppointment(data)
 {:#methods:deleteappointment}
 
-This method is used to delete the appointment based on the guid value passed to it.
+This method is used to delete the appointment based on the guid value or the appointment data passed to it.
 
 <table class="params">
     <thead>
@@ -4122,50 +4128,91 @@ This method is used to delete the appointment based on the guid value passed to 
     </thead>
     <tbody>
         <tr>
-            <td class="name">guid</td>
-            <td class="type">string</td>
-            <td class="description">guid value of an appointment element</td>
+            <td class="name">data</td>
+            <td class="type">string|object</td>
+            <td class="description">GUID value of an appointment element or an appointment object</td>
         </tr>
     </tbody>
 </table>
 
+#### Using GUID Value
 
-#### Example
+The following code snippet explain how to delete an appointment by using the GUID while clicking the appointment
+
 
 {% highlight html %}
  
-<div id="Schedule"></div> 
+    <div id="Schedule"></div> 
  
-<script>
-$("#Schedule").ejSchedule({
-    currentDate: new Date(2015, 11, 7),
-    appointmentSettings: {
-        //Array of JSON data configure in dataSource
-        dataSource: [{
-            Id: 1,
-            Subject: "Music Class",
-            StartTime: new Date("2015/11/7 06:00 AM"),
-            EndTime: new Date("2015/11/7 07:00 AM")
-        }, {
-            Id: 2,
-            Subject: "School",
-            StartTime: new Date("2015/11/7 9:00 AM"),
-            EndTime: new Date("2015/11/7 02:30 PM")
-        }]
-    },
-    appointmentClick: "onAppointmentClick"
-});
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
 
-//addAppointment is a function, gets called on clicking the Add button
-function onAppointmentClick(args) {
-    var schObj = $("#schedule").data("ejSchedule");
-    schObj.deleteAppointment(args.appointment.Guid);
-    // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
-}	
-</script>
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment.Guid);
+        // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+    }	
+    </script>
 
 {% endhighlight %}
 
+#### Using Appointent Object
+
+The following code snippet explain how to delete an appointment by using appointment object while clicking the appointment
+
+
+{% highlight html %}
+ 
+    <div id="Schedule"></div> 
+ 
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
+
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment);
+    }	
+    </script>
+
+{% endhighlight %}
 
 ### destroy()
 {:#methods:destroy}
@@ -4217,7 +4264,7 @@ Exports the appointments from the Schedule control.
         </tr>
         <tr>
             <td class="name">id</td>
-            <td class="type">string/number</td>
+            <td class="type">string|number</td>
             <td class="description">Pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
         </tr>
     </tbody>
@@ -4604,7 +4651,7 @@ Searches the appointments from the appointment list of Schedule control.
     <tbody>
         <tr>
             <td class="name">searchString</td>
-            <td class="type">object/string</td>
+            <td class="type">object|string</td>
             <td class="description">Defines the search word or the filter condition, based on which the appointments are filtered from the list.</td>
         </tr>
         <tr>
@@ -4614,7 +4661,7 @@ Searches the appointments from the appointment list of Schedule control.
         </tr>
         <tr>
             <td class="name">operator</td>
-            <td class="type">enum/string</td>
+            <td class="type">enum|string</td>
             <td class="description">Defines the filterOperator value for the search operation.</td>
         </tr>
         <tr>
@@ -5895,7 +5942,7 @@ Triggers before the appointment window opens.
         <tr>
             <td class="name">object</td>
             <td class="type">object</td>
-            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
+            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window or edit appointment or edit series option.</td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -5933,34 +5980,14 @@ Triggers before the appointment window opens.
             <td class="description">Returns the name of the event.</td>
         </tr>
         <tr>
-            <td class="name">object</td>
-            <td class="type">object</td>
-            <td class="description">Returns the object of edit appointmentWindowOpen event while selecting the edit appointment or edit series option.</td>
-        </tr>
-        <tr>
             <td class="name">appointment</td>
             <td class="type">object</td>
             <td class="description">Returns the edit appointment object.</td>
         </tr>
         <tr>
-            <td class="name">cancel</td>
-            <td class="type">boolean</td>
-            <td class="description">Returns the cancel option value.</td>
-        </tr>
-        <tr>
             <td class="name">edit</td>
             <td class="type">boolean</td>
             <td class="description">Returns the edit occurrence option value.</td>
-        </tr>
-        <tr>
-            <td class="name">model</td>
-            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
-            <td class="description">Returns the Schedule model.</td>
-        </tr>
-        <tr>
-            <td class="name">type</td>
-            <td class="type">string</td>
-            <td class="description">Returns the name of the event.</td>
         </tr>
     </tbody>
 </table>
@@ -6775,6 +6802,95 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
+### queryCellInfo
+{:#events:queryCellInfo}
+
+Triggers every time before the elements of the scheduler such as work cells, time cells or header cells and so on renders or re-renders on a page.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current appontment data.</td>
+        </tr>
+        <tr>
+            <td class="name">element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering DOM element.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the currently rendering element on the scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">cellType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the cell type which is currently rendering on the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">currentAppointmentDate</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start date of the currently rendering appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">cell</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering cell information.</td>
+        </tr>
+        <tr>
+            <td class="name">resource</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering resource details.</td>
+        </tr>
+        <tr>
+            <td class="name">currentDay</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering date information.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Schedule">
+    </div> 
+    <script> 
+    $("#Schedule").ejSchedule({ queryCellInfo: function (args){
+	switch (args.requestType) {
+                case "workcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "monthcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "alldaycells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+    } }}); 
+    </script>
+
+{% endhighlight %}
 
 ### reminder
 {:#events:reminder}

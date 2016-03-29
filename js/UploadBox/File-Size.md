@@ -73,7 +73,7 @@ By default, the IIS web server allows for limited file size to be uploaded to th
 
 ### How to upload files up to 28.6 MB?
 
-In order to allow larger file size uploads, such as above 4MB, you can override it by modifying the “maxRequestLength” attribute in the web application’s configuration file **web.config**. The property _**maxRequestLength**_ indicates the maximum file upload size of 28.6MB, supported by ASP.NET. You cannot upload the files when the **fileSize** property is below the **maxRequestLength** value.
+In order to allow larger file size uploads, such as above 4MB, you can override it by modifying the “maxRequestLenth” attribute in the web application’s configuration file **web.config**. The property _**maxRequestLength**_ indicates the maximum file upload size of 28.6MB, supported by ASP.NET. You cannot upload the files when the **fileSize** property is below the **maxRequestLength** value.
 
 
 
@@ -91,7 +91,7 @@ Details</th></tr>
 <a href="https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx">maxRequestLength</a></td><td>
 Property</td><td>
 28.6 MB</td><td>
-Maximum request size supported by ASP.NET.</td></tr>
+Maximum request sizesupported by ASP.NET.</td></tr>
 </table>
 
 

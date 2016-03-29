@@ -84,7 +84,6 @@ $('#Spreadsheet').ejSpreadsheet();
 * ej.uploadbox.js
 * ej.togglebutton.js
 * ej.calculate.js
-* ej.excelfilter.js
 * ej.tab.js
 * ej.toolbar.js
 
@@ -140,7 +139,7 @@ allowAutoCellType:true
 ### allowAutoFill `Boolean`
 {:#members:allowautofill}
 
-Gets or sets a value that indicates whether to enable or disable autofill feature in the Spreadsheet. 
+Gets or sets a value that indicates whether to enable or disable auto fill feature in the Spreadsheet. 
 
 #### Default Value
 * true
@@ -160,7 +159,7 @@ allowAutoFill: true
 ### allowAutoSum `Boolean`
 {:#members:allowautosum}
 
-Gets or sets a value that indicates whether to enable or disable autosum feature in the Spreadsheet.
+Gets or sets a value that indicates whether to enable or disable auto sum feature in the Spreadsheet.
 
 #### Default Value
 * true
@@ -305,7 +304,7 @@ allowConditionalFormats : true
 ### allowDataValidation `Boolean`
 {:#members:allowdatavalidation}
 
-Gets or sets a value that indicates whether to enable or disable datavalidation feature in the Spreadsheet.
+Gets or sets a value that indicates whether to enable or disable data validation feature in the Spreadsheet.
 
 #### Default Value
 * true
@@ -501,7 +500,7 @@ allowFreezing : true
 ### allowHyperlink `Boolean`
 {:#members:allowhyperlink}
 
-Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a webpage.
+Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a web page.
 
 #### Default Value
 * true
@@ -769,16 +768,16 @@ apWidth: 100
 ### autoFillSettings `Object`
 {:#members:autofillsettings}
 
-Gets or sets an object that indicates to customize the autofill behavior in the Spreadsheet.
+Gets or sets an object that indicates to customize the auto fill behavior in the Spreadsheet.
 
 ### autoFillSettings.fillType `Enum` 
 {:#members:autofillsettings-filltype}
 
 <ts name="ej.Spreadsheet.AutoFillOptions"/>
 
-This property is used to set filltype unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
+This property is used to set fillType unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
 
-Note: allowAutoFill must be true while setting filltype. 
+Note: allowAutoFill must be true while setting fillType. 
 
 <table class="params">
 <thead>
@@ -1382,7 +1381,7 @@ allowPageSetup: true
 ### printSettings.allowPageSize `Boolean`
 {:#members:printsettings-allowpagesize}
 
-Gets or sets a value that indicates whether to enable or disable pagesize support for printing in Spreadsheet.
+Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
 
 Note: allowPrinting must be true while enabling allowPageSetup.
 
@@ -1607,11 +1606,11 @@ Note: allowScrolling must be true while enabling this property.
 <tbody>
 <tr>
 <td class="name">Infinite</td>
-<td class="description">To enable Infinite scrollmode for Spreadsheet.</td>
+<td class="description">To enable Infinite scroll mode for Spreadsheet.</td>
 </tr>
 <tr>
 <td class="name">Normal</td>
-<td class="description">To enable Normal scrollmode for Spreadsheet.</td>
+<td class="description">To enable Normal scroll mode for Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
@@ -1802,10 +1801,10 @@ enableAnimation: true
 
 <ts name="ej.Spreadsheet.SelectionUnit"/>
 
-Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and Multirange.
+Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
 
 Note: allowSelection must be true while using this property.
-
+	
 <table class="params">
 <thead>
 <tr>
@@ -1824,7 +1823,7 @@ Note: allowSelection must be true while using this property.
 </tr>
 <tr>
 <td class="name">MultiRange</td>
-<td class="description">To enable Multirange selection in Spreadsheet.</td>
+<td class="description">To enable MultiRange selection in Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
@@ -2648,7 +2647,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will return the activecell object in specified sheet index else it will use the current sheet index</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will return the active cell object in specified sheet index else it will use the current sheet index</td>
 </tr>
 </tbody>
 </table>
@@ -2679,7 +2678,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveCell", 1);
 ### getActiveCellElem(\[sheetIdx\])
 {:#methods:getactivecellelem}
 
-This method is used to get the activecell element based on the given sheet index in the Spreadsheet.
+This method is used to get the active cell element based on the given sheet index in the Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -2692,7 +2691,7 @@ This method is used to get the activecell element based on the given sheet index
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the activecell element in specified <br/>sheet index else it will use the current active sheet index.</td>
+<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the active cell element in specified <br/>sheet index else it will use the current active sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -2723,7 +2722,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveCellElem", 1);
 ### getActiveSheetIndex()
 {:#methods:getactivesheetindex}
 
-This method is used to get the current activesheet index in Spreadsheet.
+This method is used to get the current active sheet index in Spreadsheet.
 
 ####Returns:
 Number
@@ -2751,7 +2750,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveSheetIndex");
 ### getAutoFillElem()
 {:#methods:getautofillelem}
 
-This method is used to get the autofill element in Spreadsheet.
+This method is used to get the auto fill element in Spreadsheet.
 
 ####Returns:
 Element
@@ -3026,7 +3025,7 @@ $("#Spreadsheet").ejSpreadsheet("getRange", 1, 2, 4, 5, 1);
 
 {% endhighlight %}
 
-### getRangeData(\[range\], valueonly, \[property\], \[sheetIdx\], \[skipDateTime\],  \[skipFormula\], \[skipHiddenRow\], \[virtualRowIdx\], \[virtualRowCount\])
+### getRangeData(\[range\], valueOnly, \[property\], \[sheetIdx\], \[skipDateTime\],  \[skipFormula\], \[skipHiddenRow\], \[virtualRowIdx\], \[virtualRowCount\])
 {:#methods:getrangedata}
 
 This method is used to get the data in specified range in Spreadsheet.
@@ -3045,7 +3044,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <td class="description"><span class="optional">Optional. </span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
-<td class="name">valueonly</td>
+<td class="name">valueOnly</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass 'true' if you want cell values alone.</td>
 </tr>
@@ -4045,7 +4044,7 @@ $("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
 ### setActiveCell(rowIdx, colIdx, sheetIdx)
 {:#methods:setactivecell}
 
-This method is used to set the activecell in the Spreadsheet.
+This method is used to set the active cell in the Spreadsheet.
 
 <table class="params">
 <thead>
@@ -5278,10 +5277,10 @@ xlObj.XLComment.deleteComment("A1:D3", 1, true);
 
 {% endhighlight %}
 
-### XLComment.editComment(\[trgtCell\])
+### XLComment.editComment(\[targetCell\])
 {:#methods:xlcomment-editcomment}
 
-This method is used to edit the comment in the trgtCell in Spreadsheet.
+This method is used to edit the comment in the target Cell in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -5292,7 +5291,7 @@ This method is used to edit the comment in the trgtCell in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">trgtCell</td>
+<td class="name">targetCell</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass the row index and column index of the cell which contains comment. </td>
 </tr>
@@ -5457,7 +5456,7 @@ xlObj.XLComment.showAllComments();
 
 {% endhighlight %}
 
-### XLComment.showHideComment(\[trgtCell\])
+### XLComment.showHideComment(\[targetCell\])
 {:#methods:xlcomment-showhidecomment}
 
 This method is used to show or hide the specific comment in the Spreadsheet.
@@ -5471,9 +5470,9 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">trgtCell</td>
+<td class="name">targetCell</td>
 <td class="type"><span class="param-type">Element</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty agument active cell will proceesed.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty argument active cell will processed.</td>
 </tr>
 </tbody>
 </table>
@@ -5537,7 +5536,7 @@ xlObj.XLDragDrop.moveRangeTo(options.sourcerange, options.destinationrange); // 
 ### XLDragFill.autoFill(options)
 {:#methods:xldragfill-autofill}
 
-This method is used to perform autofill in Spreadsheet.
+This method is used to perform auto fill in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -5550,7 +5549,7 @@ This method is used to perform autofill in Spreadsheet.
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the options to perform autofill in Spreadsheet.</td>
+<td class="description">Pass the options to perform auto fill in Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
@@ -5604,10 +5603,10 @@ xlObj.XLDragFill.hideAutoFillOptions();
 {% endhighlight %}
 
 
-### XLDragFill.positionAutoFillElement(isdragfill)
+### XLDragFill.positionAutoFillElement(isDragFill)
 {:#methods:xldragfill-positionautofillelement}
 
-This method is used to set position of the autofill element in the Spreadsheet.
+This method is used to set position of the auto fill element in the Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -5618,7 +5617,7 @@ This method is used to set position of the autofill element in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">isdragfill</td>
+<td class="name">isDragFill</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass the drag fill status as boolean value for show auto fill options in Spreadsheet.</td>
 </tr>
@@ -5759,7 +5758,7 @@ This method is used to get the property value of particular cell, based on the r
 </table>
 
 ####Returns:
-Object/string/array based on the property.
+Object|String|Array
 
 #### Example
 
@@ -5874,7 +5873,7 @@ xlObj.XLEdit.updateCell({rowIndex: 1, colIndex: 1}, "product");
 
 {% endhighlight %}
 
-### XLEdit.updateCellValue(cellIdx, val, formatclass, sheetIdx)
+### XLEdit.updateCellValue(cellIdx, val, formatClass, sheetIdx)
 {:#methods:xledit-updatecellvalue}
 
 This method is used to update a particular cell value and its format in the Spreadsheet.
@@ -5898,7 +5897,7 @@ This method is used to update a particular cell value and its format in the Spre
 <td class="description">Pass the cell value.</td>
 </tr>
 <tr>
-<td class="name">formatclass</td>
+<td class="name">formatClass</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the class name to update format. </td>
 </tr>
@@ -6188,7 +6187,7 @@ xlObj.XLFormat.updateDecimalPlaces("increment", "A1:C3");
 
 {% endhighlight %}
 
-### XLFormat.updateFormat(formatobj, \[range\])
+### XLFormat.updateFormat(formatObj, \[range\])
 {:#methods:xlformat-updateformat}
 
 This method is used to update the format for the selected range of cells in the Spreadsheet.
@@ -6202,7 +6201,7 @@ This method is used to update the format for the selected range of cells in the 
 </thead>
 <tbody>
 <tr>
-<td class="name">formatobj</td>
+<td class="name">formatObj</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the format object that you want to update.</td>
 </tr>
@@ -6227,7 +6226,7 @@ xlObj.XLFormat.updateFormat(formatObj, [1, 0, 3, 0]);
 
 {% endhighlight %}
 
-### XLFormat.updateUniqueFormat(formatclass, \[range\])
+### XLFormat.updateUniqueFormat(formatClass, \[range\])
 {:#methods:xlformat-updateuniqueformat}
 
 This method is used to update the unique format for selected range of cells in the Spreadsheet.
@@ -6241,7 +6240,7 @@ This method is used to update the unique format for selected range of cells in t
 </thead>
 <tbody>
 <tr>
-<td class="name">formatclass</td>
+<td class="name">formatClass</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the unique format class.</td>
 </tr>
@@ -6285,7 +6284,7 @@ This method is used to freeze columns upto the specified column index in the Spr
 <tr>
 <td class="name">colIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the column to be freezed.</td>
+<td class="description">Index of the column to be freeze.</td>
 </tr>
 </tbody>
 </table>
@@ -6677,7 +6676,7 @@ This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formul
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">If range is specified, it will apply autosum for the specified range else it will use the current selected range.</td>
+<td class="description">If range is specified, it will apply auto sum for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -7158,7 +7157,7 @@ This method is used to sort a particular range of cells based on its values in t
 <tr>
 <td class="name">direction</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the direction to sort (ascending or Decending).</td>
+<td class="description">Pass the direction to sort (ascending or descending).</td>
 </tr>
 </tbody>
 </table>
@@ -7430,7 +7429,7 @@ Triggered for every action complete.
 <td class="description">Returns Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">selCell</td>
+<td class="name">selectedCell</td>
 <td class="type"><span class="param-type">array|object</span></td>
 <td class="description">Returns the applied cell format object.</td>
 </tr>
@@ -7503,12 +7502,12 @@ Triggered when the auto fill operation begins.
 <tr>
 <td class="name">dataRange</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Returns autofill begin cell range.</td>
+<td class="description">Returns auto fill begin cell range.</td>
 </tr>
 <tr>
 <td class="name">direction</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns which direction drag the autofill.</td>
+<td class="description">Returns which direction drag the auto fill.</td>
 </tr>
 <tr>
 <td class="name">fillRange</td>
@@ -7588,12 +7587,12 @@ Triggered when the auto fill operation completes.
 <tr>
 <td class="name">dataRange</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Returns autofill begin cell range.</td>
+<td class="description">Returns auto fill begin cell range.</td>
 </tr>
 <tr>
 <td class="name">direction</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns which direction to drag the autofill.</td>
+<td class="description">Returns which direction to drag the auto fill.</td>
 </tr>
 <tr>
 <td class="name">fillRange</td>
@@ -7826,7 +7825,7 @@ Triggered before the selected cells are dropped.
 <tr>
 <td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the currentcell row and column index.</td>
+<td class="description">Returns the current cell row and column index.</td>
 </tr>
 <tr>
 <td class="name">dragAndDropRange</td>
@@ -8448,7 +8447,7 @@ Triggered when the selected cells are being dragged.
 <tr>
 <td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the currentcell row and columnn index.</td>
+<td class="description">Returns the current cell row and column index.</td>
 </tr>
 <tr>
 <td class="name">dragAndDropRange</td>
@@ -9213,7 +9212,7 @@ Triggered when click on the ribbon.
 <tr>
 <td class="name">isChecked</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Returns ischecked in boolean.</td>
+<td class="description">Returns isChecked in boolean.</td>
 </tr>
 <tr>
 <td class="name">type</td>

@@ -38,7 +38,7 @@ Decrements the value</td></tr>
 
 The following steps explain the implementation of keyboard interaction in **PercentageTextBox** .
 
-In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. Set the **accesskey** property to the **PercentageTextBox** control for focusing the control while key is pressed.
+In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. Set the **access key** property to the **PercentageTextBox** control for focusing the control while key is pressed.
 
 
 

@@ -1103,11 +1103,11 @@ Specifies the popup position of DateTimePicker.See below to know available popup
 </thead>
 <tbody>
 <tr>
-<tr>
 <td class="name">
-Botton</td>
+Bottom</td>
 <td class="description">Opens the DateTimePicker popup below to the DateTimePicker input box</td>
 </tr>
+<tr>
 <td class="name">
 Top</td>
 <td class="description">Opens the DateTimePicker popup above to the DateTimePicker input box </td>
@@ -1257,7 +1257,7 @@ It allows showing days in other months of DatePicker calendar inside the DateTim
 
 
 
-Shows or hides the arrow button from the DateTimePicker textbox. When the button disabled, the DateTimePicker popup opens while focus in the textbox and hides while focusout from the textbox.
+Shows or hides the arrow button from the DateTimePicker textbox. When the button disabled, the DateTimePicker popup opens while focus in the textbox and hides while focus out from the textbox.
 
 
 
@@ -1577,7 +1577,7 @@ We can drill down up to time interval on selected date with meridian details.
 
 
 
-### timeDrillDwon.enabled `boolean`
+### timeDrillDown.enabled `boolean`
 {:#members:timedrilldown-enabled}
 
 
@@ -1689,7 +1689,7 @@ Allows the user to show or hide the meridian with time in DateTimePicker.
 
 
 
-After choosing the time, the popup will close automatically if we set it as true, otherwise we focusout the datetimepicker or choose timeNow button for closing the popup.
+After choosing the time, the popup will close automatically if we set it as true, otherwise we focus out the DateTimePicker or choose timeNow button for closing the popup.
 
 
 
@@ -1774,7 +1774,7 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 
 
 
-Set the jquery validation error message in datetimepicker.
+Set the jquery validation error message in DateTimePicker.
 
 
 
@@ -1831,7 +1831,7 @@ Set the jquery validation error message in datetimepicker.
 
 
 
-Set the jquery validation rules in datetimepicker.
+Set the jquery validation rules in DateTimePicker.
 
 
 
@@ -2009,7 +2009,7 @@ Disables the DateTimePicker control.
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
-datetimeObj.disable(); // disables the datetimepicker
+datetimeObj.disable(); // disables the DateTimePicker
 </script>{% endhighlight %}
 
 
@@ -2018,7 +2018,7 @@ datetimeObj.disable(); // disables the datetimepicker
 <input type="text" id="datetime" />
 <script>
 $("#datetime").ejDateTimePicker();
-// disables the datetimepicker
+// disables the DateTimePicker
 $("#datetime").ejDateTimePicker("disable");
 </script>{% endhighlight %}
 
@@ -2055,7 +2055,7 @@ Enables the DateTimePicker control.
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
-datetimeObj.enable(); // enables the datetimepicker
+datetimeObj.enable(); // enables the DateTimePicker
 </script>{% endhighlight %}
 
 
@@ -2064,7 +2064,7 @@ datetimeObj.enable(); // enables the datetimepicker
 <input type="text" id="datetime" />
 <script>
 $("#datetime").ejDateTimePicker();
-// enables the datetimepicker
+// enables the DateTimePicker
 $("#datetime").ejDateTimePicker("enable");
 </script>{% endhighlight %}
 
@@ -2304,7 +2304,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2350,7 +2350,7 @@ isInteraction</td>
  
 <input type="text" id="datetime" />
 <script>
-//change event for datetimepicker
+//change event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    change: function (args) {}
 }); 
@@ -2393,7 +2393,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2427,7 +2427,7 @@ prevDateTime</td>
  
 <input type="text" id="datetime" />
 <script>
-//close event for datetimepicker
+//close event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    close: function (args) {}
 }); 
@@ -2492,7 +2492,7 @@ type</td>
  
 <input type="text" id="datetime" />
 <script>
-//create event for datetimepicker
+//create event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    create: function (args) {}
 }); 
@@ -2557,7 +2557,7 @@ type</td>
  
 <input type="text" id="datetime" />
 <script>
-//destroy event for datetimepicker
+//destroy event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    destroy: function (args) {}
 }); 
@@ -2600,7 +2600,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2628,7 +2628,7 @@ value</td>
  
 <input type="text" id="datetime" />
 <script>
-//focusIn event for datetimepicker
+//focusIn event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    focusIn: function (args) {}
 }); 
@@ -2671,7 +2671,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2699,7 +2699,7 @@ value</td>
  
 <input type="text" id="datetime" />
 <script>
-//focusOut event for datetimepicker
+//focusOut event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    focusOut: function (args) {}
 }); 
@@ -2742,7 +2742,7 @@ cancel</td>
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
-<td class="description">returns the timepicker model</td>
+<td class="description">returns the TimePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -2776,7 +2776,7 @@ prevDateTime</td>
  
 <input type="text" id="datetime" />
 <script>
-//open event for datetimepicker
+//open event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    open: function (args) {}
 });      

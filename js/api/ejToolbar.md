@@ -99,7 +99,7 @@ $(element).ejToolbar()
 
 
 
-Sets the root CSS class for Toolbar control to acheive the custom theme.
+Sets the root CSS class for Toolbar control to achieve the custom theme.
 
 
 #### Default Value

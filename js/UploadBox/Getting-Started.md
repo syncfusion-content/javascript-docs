@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create an **Uploadbox** in your application with **JavaScript.** **Essential JavaScript Uploadbox** widget provides support to upload files or photos within your web page. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
+This section explains briefly about how to create an **Uploadbox** in your application with **JavaScript.** **Essential JavaScript Uploadbox** widget provides support to upload files or photos within your webpage. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
 
 The following screenshot demonstrates the functionality of **Uploadbox** with the file extension.
 

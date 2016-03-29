@@ -64,7 +64,7 @@ MaskEdit with MaskFormat
 
 ![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img2.png)
 
-MaskEdit with HidePromtOnLeave
+MaskEdit with HidePromptOnLeave
 {:.caption}
 
 

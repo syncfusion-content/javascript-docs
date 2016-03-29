@@ -9,7 +9,7 @@ documentation: ug
 
 # Server Configuration
 
-In Spreadsheet control, the import and export to and from excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .Net Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services. 
+In Spreadsheet control, the import and export to and from excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .NET Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services. 
 
 * WebAPI 
 * WCF Service
@@ -150,4 +150,4 @@ Import and Export Helper functions are available in the Assembly `Syncfusion.EJ.
 
 N> 1. _The above mentioned assemblies will be available in below location after Essential studio build installation._
 N> 2. _C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\precompiledassemblies\x.x.x.x\y.y._
-N> 3. _x.x.x.x defines build version of Essential Studio and y.y defines .Net framework version._
+N> 3. _x.x.x.x defines build version of Essential Studio and y.y defines .NET Framework version._
