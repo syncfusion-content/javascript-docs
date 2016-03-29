@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejKanban
+title: Properties,methods and events of Essential JS ejKanban widget
 description: Members,Methods,Events available in ejKanban
 documentation: API
 platform: js
