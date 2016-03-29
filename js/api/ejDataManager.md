@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDataManager
+title: Properties,methods and events of Essential JS ejDataManager widget
 documentation: API
 platform: js
 metaname: 
