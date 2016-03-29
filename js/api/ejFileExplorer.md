@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejFileExplorer
+title: Properties,methods and events of Essential JS ejFileExplorer widget
 description: API reference for ejFileExplorer
 documentation: API
 platform: js
