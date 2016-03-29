@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDropDownList
+title: Properties,methods and events of Essential JS ejDropDownList widget
 description: API reference for ejDropDownList
 documentation: API
 platform: js
