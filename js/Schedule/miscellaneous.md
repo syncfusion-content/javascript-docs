@@ -68,11 +68,11 @@ $(function() {
 
 {% endhighlight %}
 
-N> The All-day row expands vertically whenever more number of appointments are populated in the one or more days.
+N> The All-day row expands vertically, whenever more number of appointments are populated in one or more days.
 
 ## Show/Hide Header bar
 
-The header bar is the topmost region of the Scheduler which includes the date navigation icons and view navigation options – and also shown on the Scheduler by default. To hide the header bar, set the [showHeaderBar](/js/api/ejschedule#members:showheaderbar) property to **false** as shown below.
+The header bar is the top most region of the Scheduler which includes the date navigation icons and view navigation options – and also shown on the Scheduler by default. To hide the header bar, set the [showHeaderBar](/js/api/ejschedule#members:showheaderbar) property to **false** as shown below.
 
 {% highlight html %}
 

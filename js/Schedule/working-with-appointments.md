@@ -314,7 +314,6 @@ $("#schedule").ejSchedule({
     appointmentClick: "onAppointmentClick"
 });
 
-//addAppointment is a function, gets called on clicking the Add button
 function onAppointmentClick(args) {
     var schObj = $("#schedule").data("ejSchedule");
     schObj.deleteAppointment(args.appointment.Guid);
@@ -1219,7 +1218,7 @@ function showResult(list) {
 
 There are scenarios where you require the same appointments to be repeatedly created for multiple days on daily, weekly, monthly, and yearly or every weekday basis. 
 
-In appointment data collection, **recurrence** and **recurrenceRule** are depended fields. While creating or binding the recurrence appointment, the **recurrence** field is set to **true** and **recurrenceRule** contains recurrence pattern details in string format.
+In appointment data collection, **recurrence** and **recurrenceRule** are dependent fields. While creating or binding the recurrence appointment, the **recurrence** field is set to **true** and **recurrenceRule** contains recurrence pattern details in string format.
 
 ### Recurrence Rule
 

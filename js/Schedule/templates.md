@@ -21,7 +21,6 @@ Template is applicable to all the below specified elements of the Scheduler,
 
 ## Appointment Template
 
-
 The template design that applies on for the Scheduler appointments. The field names that are mapped from the dataSource to the appropriate field properties within the [appointmentSettings](/js/api/ejschedule#members:appointmentsettings) can be accessed within the template.
 
 Apart from the dataSource field names, the template can also access the current view of the Scheduler using the name **View** – which can contain either of the following values in lowercase. 
@@ -31,7 +30,7 @@ Apart from the dataSource field names, the template can also access the current 
 * workweek
 * agenda
 * month
-* custom view
+* customview
 
 It is controlled by an API named [appointmentTemplateId](/js/api/ejschedule#members:appointmenttemplateid) which accepts the id value of the template design block preceded by a symbol **#**.
 
@@ -77,7 +76,7 @@ $(function() {
 
 The template design that applies on the Scheduler elements such as allday cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
 
-**Allday cells** - An API named [allDayCellsTemplateId](/js/api/ejschedule#members:alldaycellstemplateid) can be used to customize the allday cells, which accepts the id of the template design block preceded with a symbol **#**.
+**All-day cells** - An API named [allDayCellsTemplateId](/js/api/ejschedule#members:alldaycellstemplateid) can be used to customize the all-day cells, which accepts the id of the template design block preceded with a symbol **#**.
 
 **Work cells and Month cells** - An API named [workCellsTemplateId](/js/api/ejschedule#members:workcellstemplateid) can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
 
@@ -192,7 +191,7 @@ $.views.helpers({ dTemplate: _dateFormat });
 
 ## Resource Header Template
 
-The template structure that applies on the resource headers of the Scheduler. By default, only the resource names will be displayed on the resource header bar. Also, the way of rendering resource headers on the Scheduler is comparatively different for both vertical and horizontal scheduler views. 
+The template structure that applies on the resource headers of the Scheduler. By default, only the resource names will be displayed on the resource header bar. Also, the way of rendering resource headers on the Scheduler is comparatively different for both the vertical and horizontal scheduler views. 
 
 The field names that are mapped from the dataSource to the appropriate field properties within the **resourceSettings** can be accessed within the resource header template.
 

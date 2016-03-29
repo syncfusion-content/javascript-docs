@@ -40,7 +40,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> **currentView** property accepts both the `string` and `ej.Schedule.CurrentView` enum value.
+N> The **currentView** property accepts both the `string` and `ej.Schedule.CurrentView` enum value.
 
 ## Day 
 

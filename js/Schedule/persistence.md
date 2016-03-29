@@ -27,7 +27,7 @@ isDST</td><td>
 timeZone</td></tr>
 <tr>
 <td>
-Timescale</td><td>
+timeScale</td><td>
 startHour</td></tr>
 <tr>
 <td>
@@ -51,8 +51,8 @@ maxDate</td><td>
 renderDates</td></tr>
 <tr>
 <td>
-Orientation</td><td>
-Views</td></tr>
+orientation</td><td>
+views</td></tr>
 <tr>
 <td>
 workWeek</td><td>
@@ -68,7 +68,15 @@ isResponsive</td></tr>
 <tr>
 <td>
 enableRecurrenceValidation</td><td>
-</td></tr>
+showOverflowButton</td></tr>
+<tr>
+<td>
+allowDragAndDrop</td><td>
+showDeleteConfirmationDialog</td></tr>
+<tr>
+<td>
+showNextPrevMonth</td><td>
+appointmentDragArea</td></tr>
 </table>
 
 The Schedule properties that are not retained while maintaining state persistence are included within the **ignoreOnPersist** list, which makes it not to persist by default.

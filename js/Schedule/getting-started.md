@@ -161,7 +161,6 @@ N> ODataAdaptor is the default adaptor used within DataManager. While binding to
 
 ## Mapper Fields
 
-
 The appointment fields are needed to be mapped with the appropriate column names from the dataSource as shown below.
 
 {% highlight html %}
