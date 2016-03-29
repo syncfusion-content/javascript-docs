@@ -3485,6 +3485,28 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### scrollSettings.scrollOneStepBy `Number`
+{:#members:scrollsettings-scrollonestepby}
+ 
+This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents.
+
+#### Default Value:
+{:.param}
+* 57
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings:{ scrollOneStepBy:100 }
+});
+</script> 
+{% endhighlight %}
+
 ### searchSettings `Object`
 {:#members:searchsettings}
 
