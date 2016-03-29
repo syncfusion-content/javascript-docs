@@ -1,6 +1,6 @@
 ---
 layout: post
-title: requirejs
+title: requirejs support for all of Essential JavaScript components
 description: requirejs
 platform: js
 control: General Topics
