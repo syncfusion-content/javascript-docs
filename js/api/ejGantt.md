@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejGantt
+title: Properties,methods and events of Essential JS ejGantt widget
 description: Methods, members, events available in ejGantt
 documentation: API
 platform: js
