@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejBulletGraph
+title: Properties,methods and events of Essential JS ejBulletGraph widget
 documentation: API
 platform: js
 metaname: 
