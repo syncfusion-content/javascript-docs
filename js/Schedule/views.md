@@ -40,7 +40,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> **currentView** property accepts both the `string` and `ej.Schedule.CurrentView` enum value.
+N> The **currentView** property accepts both the `string` and `ej.Schedule.CurrentView` enum value.
 
 ## Day 
 
@@ -116,7 +116,7 @@ $(function() {
 
 ## Work Week 
 
-Workweek view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using [workWeek](/js/api/ejschedule#members:workweek) API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
+Work week view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using [workWeek](/js/api/ejschedule#members:workweek) API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
 
 {% highlight html %}
 
@@ -233,6 +233,10 @@ $(function() {
 </script>
 
 {% endhighlight %}
+
+When the date difference between the provided start and end date is greater than 7, then the month-like view will get displayed in Vertical Scheduler mode - whereas with the date difference less than 7 days displays the Scheduler with exact count of the specified days.
+
+N> When the `currentDate` property of Scheduler is set with a date, that lies beyond the specified custom date range - then the Scheduler navigates to the current date with the mentioned date differences.  
 
 ## Agenda
 

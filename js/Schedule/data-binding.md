@@ -60,7 +60,7 @@ Binds the name of the categorize field and also its related validation rules. It
 <tr>
 <td>
 priority<br/><br/></td><td>
-Binds the name of the priority field, its related validation rules and also indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
+Binds the name of the priority field and its related validation rules, which indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 resourceFields<br/><br/></td><td>
@@ -156,7 +156,7 @@ $(function() {
 
 ## Appointment Field Validation
 
-It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
+It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each of the fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
 
 Refer the appointment fields specified with validation rules from the following code example.
 
@@ -210,7 +210,7 @@ Refer the appointment fields specified with validation rules from the following 
 
 ## Binding to JSON Data Array
 
-To bind the Scheduler events data as array of JSON objects in JavaScript, refer the below code example.
+To bind the Scheduler events data as array of JSON objects, refer the below code example.
 
 **Example** - Array of JSON Data Binding
 
@@ -309,7 +309,7 @@ $(function() {
 
 ## WebAPI Binding
 
-The Schedule appointment data can be bound through the Web API service and it is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
+The Schedule appointment data can also be bound through the Web API services. It is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
 
 {% highlight html %}
 
@@ -352,7 +352,7 @@ public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String
 
 ## ASP.Net Web Method Binding
 
-The Schedule appointment data can retrieve data from ASP.Net Web methods. It can be achieved using the UrlAdaptor of ej.DataManager.
+The Schedule appointment data can retrieve data from ASP.Net Web methods by making use of the UrlAdaptor of ejDataManager.
 
 {% highlight html %}
 
@@ -449,6 +449,7 @@ public class ScheduleAppointmentsObjData
     {
         
     }
+    
     public ScheduleAppointmentsObjData(int _id, string _subject, string _location, string _startTime, string _endTime, string _description, string _owner, string _priority, bool _recurrence, string _recurrenceType, string _recurrenceTypeCount, string _remainderCategorize, string _customStyle, bool _allDay, string _recurrenceStartDate, string _recurrenceEndDate, string _recurrenceRule)
     {
         this._id = _id;
@@ -707,7 +708,7 @@ public static void add(object value)
     GetAllRecords().Insert(0, appointValue);
 }
 
-// Triggers while editing appointments.
+// Triggers while editing the appointments.
 [WebMethod]
 [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 public static void update(object value)
@@ -726,7 +727,7 @@ public static void update(object value)
     }
 }
 
-// Triggers on deleting the appointment.
+// Triggers on deleting an appointment.
 [WebMethod]
 [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 public static void remove(int key)
@@ -778,7 +779,7 @@ public static void Crud(List<object> added, List<object> changed, List<object> d
 
 ## MVC Controller Action Binding
 
-The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ej.DataManager](/js/datamanager/overview).
+The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ejDataManager](/js/datamanager/overview).
 
 {% highlight html %}
 
@@ -840,7 +841,8 @@ public JsonResult add(Appointment value)
     };
     db.Appointments.InsertOnSubmit(appoint);
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers while editing/dragging/resizing the existing appointment
@@ -863,7 +865,8 @@ public JsonResult update(Appointment value)
         appoint.RecurrenceRule = value.RecurrenceRule;
     }
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers when an appointment is deleted
@@ -873,7 +876,8 @@ public JsonResult remove(string key)
     Appointment app = db.Appointments.Where(c => c.Id == Convert.ToInt32(key)).FirstOrDefault();
     if (app != null) db.Appointments.DeleteOnSubmit(app);
     db.SubmitChanges();
-    return Json(app, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers for any of the Scheduler CRUD operation
@@ -946,7 +950,7 @@ public class EditParams
 
 ## Loading Data on Demand
 
-Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading** **time**, and that too only for the current Scheduler view**.** There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of action of Scheduler consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
+Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading time**, and that too only for the current Scheduler view. There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of Scheduler action, consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
 
 The **enableLoadOnDemand** property is used to enable or disable the load on demand functionality of the schedule.
 

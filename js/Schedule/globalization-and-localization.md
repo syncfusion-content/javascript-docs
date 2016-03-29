@@ -18,7 +18,7 @@ Scheduler also comes with default localization support which allows it to custom
 
 N> By default, the Schedule control is localized in **en-US** culture.
 
-To localize Scheduler into a particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                   
+To localize Scheduler into any particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                   
 
 _<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures_
 
@@ -190,7 +190,7 @@ $(function() {
 
 ## Time Zone
 
-The Scheduler makes use of the System time zone by default. If it needs to be provided with some other user-specific time zone value, then the API [timeZone](/js/api/ejschedule#members:timezone) can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default. 
+The Scheduler makes use of the System time zone by default. If it needs to follow some other user-specific time zone, then the API [timeZone](/js/api/ejschedule#members:timezone) can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default. 
 
 When [isDST](/js/api/ejschedule#members:isdst) property is set to **true**, the Scheduler internally processes the time difference values (for the Start and end time of the appointments) related to the Scheduler time zone that observes daylight savings time. 
 
@@ -222,7 +222,9 @@ $(function() {
 
 {% endhighlight %}
 
-Apart from the default Scheduler time zone, it is also possible to set the different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
+### Setting different TimeZone for Scheduler Appointments
+
+Apart from the default action of applying specific timezone to the entire Scheduler, it is also possible to set different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
 
 N> The **isDST** property closely relies on the appointment fields like [StartTimeZone](/js/api/ejschedule#members:appointmentsettings-starttimezone) and [EndTimeZone](/js/api/ejschedule#members:appointmentsettings-endtimezone), for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
 
@@ -254,6 +256,8 @@ $(function() {
 </script>
 
 {% endhighlight %}
+
+### Customizing the TimeZone Collection
 
 It is also possible to define or customize the default time zone collection of the Scheduler, by using the [timeZoneCollection](/js/api/ejschedule#members:timezonecollection) API as follows.
 
@@ -341,7 +345,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> The values defined within the **timeZoneCollection** dataSource are usually the options displayed at the start and end time zone dropdown fields of the appointment window.
+N> The values defined within the **timeZoneCollection** dataSource are usually the only options displayed within the start and end time zone dropdown fields of the appointment window.
 
 ## Time Mode
 
@@ -352,7 +356,7 @@ The user can also set specific time mode for the Scheduler using [timeMode](/js/
 * ej.Schedule.TimeMode.Hour12
 * ej.Schedule.TimeMode.Hour24
 
-The following code snippet shows the way to set specific **24 hour format time mode** for the Scheduler.
+The following code snippet shows the way to set specific **24 hour format** time mode for the Scheduler.
 
 {% highlight html %}
 
@@ -411,3 +415,43 @@ $(function() {
 
 {% endhighlight %}
 
+## First Day of Week
+
+The [firstDayOfWeek](/js/api/ejschedule#members:firstdayofweek) property allows to set any of the week days as start of the week/workweek/month view in Scheduler. It accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this `firstDayOfWeek` depends on the current culture (language) assigned to the Scheduler.
+
+To set different first day of week in Scheduler,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Week,
+        // Configure the week start day(First day of week)
+        firstDayOfWeek: ej.Schedule.FirstDayOfWeek.Tuesday,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %} 
+
+N> The sub-control datepicker which is used within Scheduler for start/end time fields in appointment window and for date navigation purposes will also follow the same first day of week. 

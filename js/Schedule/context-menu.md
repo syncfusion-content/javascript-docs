@@ -60,6 +60,7 @@ Go to date</td></tr>
 <td>
 Settings (View, TimeMode, Work Hours) </td></tr>
 </table>
+
 The following code snippet shows how to enable the context menu settings in Scheduler and to make use of it with default available options. 
 
 {% highlight html %}
@@ -129,8 +130,8 @@ $(function() {
                     text: "24 Hours",
                     parentId: "timemode"
                 }, {
-                    id: "businesshours",
-                    text: "Business Hours",
+                    id: "workhours",
+                    text: "Work Hours",
                     parentId: "settings"
                 }]
             }
@@ -149,15 +150,13 @@ $(function() {
 
 {% endhighlight %}
 
-N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the id must be defined the same as mentioned in the above code example – as we processed the menus based on this id within our source.
-
+N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the id must be defined the same as mentioned in the above code example – as we have processed the menus based on this id within our source.
 
 ## Custom Menu Options
 
+Apart from the default available options, it is also possible to add custom menu options to the context-menu of both the appointment and cell collection.
 
-Apart from the default available options, it is also possible to add custom menu options to the context-menu in both the appointment and cell collection.
-
-The following code example depicts how **to add the custom menu items** to the appointment and cells collection of the context menu settings.
+The following code example depicts how **to add the custom menu items** to the appointment and cell collection of the context menu settings.
 
 {% highlight html %}
 
@@ -201,7 +200,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> The **id’s** given for the custom menu items **must be unique** in both the appointment and cells collection. 
+N> The **id** given for the custom menu items **must be unique** in both the appointment and cell collection. 
 
 ## Handling Menu Actions
 
@@ -251,7 +250,7 @@ $(function() {
 {% endhighlight %}
 
 
-Also, it is possible to predict the target on which the right click is made either on the cells or appointments with the use of the event [beforeContextMenuOpen](/js/api/ejschedule#events:beforecontextmenuopen). The below code example shows how to block the display of context menu when right clicked on the cells by setting **args.cancel** as **true**.
+Also, it is possible to predict the target on which the right click is made, either on the cells or appointments with the use of the event [beforeContextMenuOpen](/js/api/ejschedule#events:beforecontextmenuopen). The below code example shows how to block the display of context menu, when right clicked on the cells by setting **args.cancel** as **true**.
 
 {% highlight html %}
 
@@ -286,8 +285,8 @@ $(function() {
             }]
         },
         beforeContextMenuOpen: function(args) {
-            //args.target –target information to depict either cell/appointment
-            if ($(args.target.target).hasClass("e-workcells,e-monthcells"))
+            //args.events.target – target information to depict either cell/appointment
+            if ($(args.events.target).hasClass("e-workcells") || $(args.events.target).hasClass("e-monthcells"))
                 args.cancel = true;
         }
     });
@@ -298,7 +297,7 @@ $(function() {
 
 ## Adding Categorize Option
 
-To include the default categorize options within the context menu, it is necessary to enable the [categorizeSettings](/js/api/ejschedule#members:categorizesettings) property as shown in the below code example.
+To include the default categorize option within the context menu, it is necessary to enable the [categorizeSettings](/js/api/ejschedule#members:categorizesettings) property as shown in the below code example.
 
 {% highlight html %}
 
@@ -341,5 +340,5 @@ $(function() {
 
 {% endhighlight %}
 
-N> The **categorize** option must be added only to the **appointment** collection, which displays on right clicking over the appointments.
+N> The **categorize** option must be added only to the **appointment** collection, which displays on right clicking the appointments.
 
