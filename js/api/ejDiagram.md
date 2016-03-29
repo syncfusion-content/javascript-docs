@@ -212,7 +212,7 @@ Sets the source path of the background image
 
 #### Default Value:
 
-* ""
+* null
 
 #### Example
 
@@ -4747,11 +4747,7 @@ Sets the horizontal alignment of the label.
             <td class="name">Right</td>
             <td class="description last">Used to align text horizontally on right side of node/connector</td>
        </tr>
-        <tr>
-            <td class="name">Stretch</td>
-            <td class="description last">Used to horizontally stretch the label throughout node/connector</td>
-       </tr>
-   </tbody>
+     </tbody>
 </table>
 
 #### Default Value:
@@ -5115,10 +5111,6 @@ Sets the vertical alignment of the label.
         <tr>
             <td class="name">Bottom</td>
             <td class="description last">Set vertical alignment as bottom</td>
-       </tr>
-       <tr>
-            <td class="name">Stretch</td>
-            <td class="description last">Set vertical alignment as stretch</td>
        </tr>
    </tbody>
 </table>
