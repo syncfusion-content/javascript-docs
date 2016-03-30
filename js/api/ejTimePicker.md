@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejTimePicker widget
+title: Properties,Methods and Events of Essential JS ejTimePicker Widget
 description: API reference for ejTimePicker
 documentation: API
 platform: js
