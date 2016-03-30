@@ -1,6 +1,6 @@
 ---
 layout: post
-title: right to left supports all the Essential JavaScript Widget
+title: Right to Left supports all the Essential JavaScript Widget
 description: right to left
 platform: js
 control: General Topics
