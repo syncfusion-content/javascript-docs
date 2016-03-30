@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejColorPicker widget
+title: Properties,Methods and Events of Essential JS ejColorPicker Widget
 description: API reference for ejColorPicker
 documentation: API
 platform: js
