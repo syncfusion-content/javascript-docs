@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API reference for ejListBox
+title: Properties,Methods and Events of Essential JS ejListBox Widget
 description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
 keywords: ejListBox, API, Essential JS ListBox, ListBox
@@ -2613,7 +2613,7 @@ $("#list").ejListBox({
 ### actionBeforeSuccess 
 {:#events:actionBeforeSuccess}
 
-Triggers when scrolled in the ListBox actionBeforeSuccess is successfully loaded.
+Event will be triggered before the requested data via AJAX once loaded in successfully.
 
 <table>
 <tr>
@@ -2950,7 +2950,7 @@ Example
 ### focusIn
 {:#events:focusIn}
 
-Triggers when Click inside the ListBox widget is focusIn successfully.
+Triggers when focus the listbox items.
 
 <table>
 <tr>
@@ -2996,7 +2996,7 @@ Example
 ### focusOut
 {:#events:focusOut}
 
-Triggers when Click outside the ListBox widget is focusOut successfully.
+Triggers when focus out from listbox items.
 
 <table>
 <tr>
