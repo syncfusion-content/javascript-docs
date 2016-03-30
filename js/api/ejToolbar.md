@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejToolbar
+title: Properties,methods and events of Essential JS ejToolbar widget
 description: API reference for ejToolbar
 documentation: API
 platform: js
