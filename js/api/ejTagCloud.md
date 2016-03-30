@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTagCloud
+title: Properties,methods and events of Essential JS ejTagCloud widget
 description: API reference for ejTagCloud
 documentation: API
 platform: js
