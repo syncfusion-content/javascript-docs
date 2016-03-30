@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejSchedule widget
+title: Properties,Methods and Events of Essential JS ejSchedule Widget
 description: Methods, Members and Events available in ejSchedule
 documentation: API
 platform: js
