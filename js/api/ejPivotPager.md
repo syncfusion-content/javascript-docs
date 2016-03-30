@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejPivotPager widget
+title: Properties,Methods and Events of Essential JS ejPivotPager Widget
 documentation: API
 platform: js
 keywords: ejPivotPager, API, Essential JS PivotPager
