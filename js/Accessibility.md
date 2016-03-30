@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility
+title: Accessibility of Essential JS UI widgets
 description: WAI-ARIA accessibility compliance of Essential JS UI widgets
 platform: js
 control: Introduction
