@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejToggleButton widget
+title: Properties,Methods and Events of Essential JS ejToggleButton Widget
 description: API reference for ejToggleButton
 documentation: API
 platform: js
