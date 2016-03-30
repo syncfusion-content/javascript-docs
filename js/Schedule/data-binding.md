@@ -360,9 +360,9 @@ The appointment data can also be bound to the Scheduler using OLEDB database as 
 
 <script>
 $(function() {
-    // get the appointments data from Web method
+    // get the appointment data from the specified controller action
     var dataManager = ej.DataManager({
-        url: "Home/GetData", // This will trigger to bind the appointments data to schedule control
+        url: "Home/GetData", // This will trigger to bind the appointment data initially to the Schedule control
         crudUrl: "Home/Batch", // This will trigger while performing CRUD operation on the Scheduler appointments
         adaptor: new ej.UrlAdaptor()
     });
@@ -411,7 +411,7 @@ The server-side controller code to retrieve and bind the appointment data to Sch
         // To retrieve the appointments from database and bind it to Scheduler
         public JsonResult GetData()
         {
-            // Mention your dataSource to be used in the Project here
+            // Mention your own dataSource to be used here.
             string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
             DataSet myDataSet = new DataSet();
             OleDbConnection myAccessConn = null;
@@ -434,7 +434,7 @@ The control code to handle the CRUD operation are as follows.
 
         public JsonResult Batch(EditParams param)
         {
-            // Mention your dataSource to be used in the Project here
+            // Mention your own dataSource to be used here.
             string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
             if (param.action == "insert" || (param.action == "batch" && param.added != null))  // this block of code will execute while inserting the appointments
             {
