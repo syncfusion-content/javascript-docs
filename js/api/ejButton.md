@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejButton widget
+title: Properties,Methods and Events of Essential JS ejButton Widget
 description: API reference for ejButton
 documentation: API
 platform: js
