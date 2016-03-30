@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejResizable widget
+title: Properties,Methods and Events of Essential JS ejResizable Widget
 description: API reference for ejResizable
 documentation: API
 platform: js
