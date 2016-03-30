@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejPivotGrid widget
+title: Properties,Methods and Events of Essential JS ejPivotGrid Widget
 documentation: API
 platform: js
 keywords: ejPivotGrid, API, Essential JS PivotGrid
