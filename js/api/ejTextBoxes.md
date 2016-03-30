@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTextBoxes
+title: Properties,methods and events of Essential JS ejTextBoxes widget
 description: API reference for ejTextBoxes
 documentation: API
 platform: js
