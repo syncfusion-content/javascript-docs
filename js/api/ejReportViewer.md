@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejReportViewer
+title: Properties,methods and events of Essential JS ejReportViewer widget
 documentation: API
 platform: js
 metaname: 
