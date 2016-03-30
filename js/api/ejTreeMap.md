@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTreeMap
+title: Properties,methods and events of Essential JS ejTreeMap widget
 description: API reference for ejMap
 documentation: API
 platform: js
