@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSplitButton
+title: Properties,methods and events of Essential JS ejSplitButton widget
 description: API reference for ejSplitButton
 documentation: API
 platform: js
