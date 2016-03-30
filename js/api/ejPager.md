@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejPager widget
+title: Properties,Methods and Events of Essential JS ejPager Widget
 description: Methods,members and events avaliable in ejPager
 documentation: API
 platform: js
