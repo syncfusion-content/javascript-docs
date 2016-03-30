@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejCalculate widget
+title: Properties,Methods and Events of Essential JS ejCalculate Widget
 documentation: API
 platform: js
 metaname: 
