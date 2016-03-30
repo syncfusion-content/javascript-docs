@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejOlapChart widget
+title: Properties,Methods and Events of Essential JS ejOlapChart Widget
 documentation: API
 platform: js
 keywords: ejOlapChart, API, Essential JS OlapChart
