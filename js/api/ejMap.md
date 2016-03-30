@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejMap widget
+title: Properties,Methods and Events of Essential JS ejMap Widget
 description: API reference for ejMap
 documentation: API
 platform: js
