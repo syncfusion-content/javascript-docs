@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejTreeGrid widget
+title: Properties,Methods and Events of Essential JS ejTreeGrid Widget
 description: Methods, members, events available in ejTreeGrid
 documentation: API
 platform: js
