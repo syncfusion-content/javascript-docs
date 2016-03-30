@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejScroller
+title: Properties,methods and events of Essential JS ejScroller widget
 description: API reference for ejScroller
 documentation: API
 platform: js
