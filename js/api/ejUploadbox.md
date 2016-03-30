@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejUploadbox
+title: Properties,methods and events of Essential JS ejUploadbox widget
 description: API reference for ejUploadbox
 documentation: API
 platform: js
