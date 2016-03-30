@@ -157,6 +157,9 @@ Below code snippet shows only the magnification tools in the toolbar.
 {% endhighlight %}
 {% endtabs %}
 
+### serviceUrl `String`
+{:#members:serviceurl}
+
 ### pageCount `Number`
 {:#members:pagecount}
 
