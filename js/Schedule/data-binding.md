@@ -349,7 +349,7 @@ public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String
 
 {% endhighlight %}
 
-## Data binding using OLEDB
+## Databinding using OLEDB
 
 The appointment data can also be bound to the Scheduler using OLEDB database as depicted below.
 
