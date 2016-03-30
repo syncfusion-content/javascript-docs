@@ -1491,264 +1491,6 @@ allowScrolling: true,
 
 {% endhighlight %}
 
-### sheets `Array`
-{:#members:sheets}
-
-Specifies single sheet or multiple sheets in the spreadsheet control.
-
-#### Default Value:
-
-* array
-
-### sheets.rangeSettings `Array`
-{:#members:sheets.rangeSettings}
-
-Specifies single range or multiple range settings for a sheet in the spreadsheet control.
-
-#### Default Value:
-
-* array
-
-### sheets.rangeSettings.dataSource `Object`
-{:#members:dataSource}
-
-Gets or sets the data to render the spreadsheet control.
-
-#### Default Value:
-
-* Object
-
-### sheets.rangeSettings.showHeader `Boolean`
-{:#members:sheets.rangeSettings.showHeader}
-
-Gets or sets a value that indicates whether to enable or disable the datasource header in the spreadsheet control.
-
-#### Default Value:
-
-* false
-
-### sheets.rangeSettings.startCell `String`
-{:#members:sheets.rangeSettings.startCell}
-
-Specifies the start cell for the datasource range in the spreadsheet control.
-
-#### Default Value:
-
-* A1
-
-### sheets.rangeSettings.headerStyles `Object`
-{:#members:sheets.rangeSettings.headerStyles}
-
-#### Default Value:
-
-* null
-
-### sheets.rangeSettings.range `Array`
-{:#members:sheets.rangeSettings.range}
-
-#### Default Value:
-
-* [0, 0, 0, 0]
-
-### sheets.colCount `Number`
-{:#members:sheets.colCount}
-
-#### Default Value:
-
-* 21
-
-### sheets.rowCount `Number`
-{:#members:sheets.rowCount}
-
-#### Default Value:
-
-* 20
-
-### sheets.columnsWidthCollection `Array`
-{:#members:sheets.columnsWidthCollection}
-
-#### Default Value:
-
-* null
-
-### sheets.rowsHeightCollection `Array`
-{:#members:sheets.rowsHeightCollection}
-
-#### Default Value:
-
-* null
-
-### sheets.showHeadings `Boolean`
-{:#members:sheets.showHeadings}
-
-#### Default Value:
-
-* true
-
-### sheets.showGridlines `Boolean`
-{:#members:sheets.showGridlines}
-
-#### Default Value:
-
-* true
-
-### sheets.query `Object`
-{:#members:sheets.query}
-
-#### Default Value:
-
-* null
-
-### sheets.primaryKey `String`
-{:#members:sheets.primaryKey}
-
-#### Default Value:
-
-* ""
-
-### sheets.fieldAsColumnHeader `Boolean`
-{:#members:sheets.fieldAsColumnHeader}
-
-#### Default Value:
-
-* false
-
-### sheets.batchChanges `Object`
-{:#members:sheets.batchChanges}
-
-### sheets.filterSettings.filteredColumns `Array`
-{:#members:sheets.filterSettings.filteredColumns}
-
-#### Default Value:
-
-* null
-
-### sheets.filterSettings.maxFilterChoices `Number`
-{:#members:sheets.filterSettings.maxFilterChoices}
-
-#### Default Value:
-
-* 1000
-
-### sheets.filterSettings.filteredRange `Array`
-{:#members:sheets.filterSettings.filteredRange}
-
-#### Default Value:
-
-* null
-
-### sheets.filterSettings.range `String`
-{:#members:sheets.filterSettings.range}
-
-#### Default Value:
-
-* ""
-
-### sheets.filterSettings.tableRange `Array`
-{:#members:sheets.filterSettings.tableRange}
-
-#### Default Value:
-
-* null
-
-### sheets.frozenRows `Number`
-{:#members:sheets.frozenRows}
-
-#### Default Value:
-
-* 0 
-
-### sheets.frozenColumns `Number`
-{:#members:sheets.frozenColumns}
-
-#### Default Value:
-
-* 0 
-
-### sheets.columnWidth `Number`
-{:#members:sheets.columnWidth}
-
-#### Default Value:
-
-* 64 
-
-### sheets.rowHeight `Number`
-{:#members:sheets.rowHeight}
-
-#### Default Value:
-
-* 20 
-
-### sheets.selectedRange `Array`
-{:#members:sheets.selectedRange}
-
-#### Default Value:
-
-*  [0, 0, 0, 0] 
-
-### sheets.tableManager `Object`
-{:#members:sheets.tableManager}
-
-#### Default Value:
-
-* null 
-
-### sheets.sheetInfo `Object`
-{:#members:sheets.sheetInfo}
-
-#### Default Value:
-
-* null 
-
-### sheets.staticWidth `Number`
-{:#members:sheets.staticWidth}
-
-#### Default Value:
-
-* 0 
-
-### sheets.hideColsCollection `Object`
-{:#members:sheets.hideColsCollection}
-
-#### Default Value:
-
-* null 
-
-### sheets.hideRowsCollection `Object`
-{:#members:sheets.hideRowsCollection}
-
-#### Default Value:
-
-* null 
-
-### sheets.filteredRowsCollection `Array`
-{:#members:sheets.filteredRowsCollection}
-
-#### Default Value:
-
-* [] 
-
-### sheets.usedRange `Object`
-{:#members:sheets.usedRange}
-
-#### Default Value:
-
-*  { rowIndex: 0, colIndex: 0 } 
-
-### sheets.mergedCells `Array`
-{:#members:sheets.mergedCells}
-
-#### Default Value:
-
-* [] 
-
-### sheets.isSheetProtected `Boolean`
-{:#members:sheets.isSheetProtected}
-
-#### Default Value:
-
-* false 
-
 ### scrollSettings.allowSheetOnDemand `Boolean`
 {:#members:scrollsettings-allowsheetondemand}
 
@@ -2089,9 +1831,6 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionUnit.MultiRange
 
-
-
-
 #### Example
 
 {% highlight html %}
@@ -2127,8 +1866,374 @@ sheetCount: 5
 
 {% endhighlight %}
 
-### showGridlines `Boolean`
-{:#members:showgridlines}
+### sheets `Array`
+{:#members:sheets}
+
+Gets or sets an object that indicates to customize the sheet behavior in Spreadsheet.
+
+### sheets.colCount `Number`
+{:#members:sheets-colcount}
+
+Gets or sets a value that indicates to define column count in the Spreadsheet.
+
+#### Default Value:
+
+* 21
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}],
+colCount: 25
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.columnWidth `Number`
+{:#members:sheets-columnWidth}
+
+Gets or sets a value that indicates to define column width in the Spreadsheet.
+
+#### Default Value:
+
+* 64 
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+        columnWidth: 100
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.dataSource `Object`
+{:#members:sheets-datasource}
+
+Gets or sets the data to render the Spreadsheet.
+
+#### Default Value:
+
+* -
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: window.defaultData;
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.fieldAsColumnHeader `Boolean`
+{:#members:sheets-fieldascolumnheader}
+
+Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: dataManager,
+query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+fieldAsColumnHeader: true,
+primaryKey: "OrderID"
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.headerStyles `Object`
+{:#members:sheets-headerstyles}
+
+Specifies the header styles for the datasource range in Spreadsheet.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.primaryKey `String`
+{:#members:sheets-primarykey}
+
+Specifies the primary key for the datasource in Spreadsheet.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: dataManager,
+query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+primaryKey: "OrderID"
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.query `Object`
+{:#members:sheets-query}
+
+Specifies the query for the datasource in Spreadsheet.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: dataManager,
+query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings `Array`
+{:#members:sheets-rangesettings}
+
+Specifies single range or multiple range settings for a sheet in Spreadsheet.
+
+#### Default Value:
+
+* -
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[
+{rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A1"}]},
+{rangeSettings: [{dataSource: window.personList, showHeader: true, startCell: "D1"}]}
+]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.dataSource `Object`
+{:#members:sheets-rangesettings-datasource}
+
+Gets or sets the data to render the Spreadsheet.
+
+#### Default Value:
+
+* -
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A1"}]}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.headerStyles `Object`
+{:#members:sheets-rangesettings-headerstyles}
+
+Specifies the header styles for the datasource range in Spreadsheet.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.primaryKey `String`
+{:#members:sheets-rangesettings-primarykey}
+
+Specifies the primary key for the datasource in Spreadsheet.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: dataManager,
+sheets:[{
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+        primaryKey: "OrderID"
+    }]
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.query `Object`
+{:#members:sheets-rangesettings-query}
+
+Specifies the query for the datasource in Spreadsheet.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: dataManager,
+rangeSettings:[{
+    query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
+    }]
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.showHeader `Boolean`
+{:#members:sheets-rangesettings-showheader}
+
+Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, showHeader: true}]}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rangeSettings.startCell `String`
+{:#members:sheets-rangesettings-startcell}
+
+Specifies the start cell for the datasource range in Spreadsheet.
+
+#### Default Value:
+
+* "A1"
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}]}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rowCount `Number`
+{:#members:sheets-rowcount}
+
+Gets or sets a value that indicates to define row count in the Spreadsheet.
+
+#### Default Value:
+
+* 20
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}],
+rowCount: 30
+}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.showGridlines `Boolean`
+{:#members:sheets-showgridlines}
 
 Gets or sets a value that indicates whether to show or hide grid lines in the Spreadsheet.
 
@@ -2149,10 +2254,33 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### showHeader `Boolean`
-{:#members:showheader}
 
-Gets or sets a value that indicates whether to show or hide grid headers in the Spreadsheet.
+### sheets.showHeader `Boolean`
+{:#members:sheets-showheader}
+
+Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: window.defaultData, showHeader: true}]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.showHeadings `Boolean`
+{:#members:sheets-showheadings}
+
+Gets or sets a value that indicates whether to show or hide headings in the Spreadsheet.
 
 #### Default Value
 * true
@@ -2164,9 +2292,31 @@ Gets or sets a value that indicates whether to show or hide grid headers in the 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
 	sheets:[{
-		showHeader: true
+		showHeadings: true
 	}]
 });   
+</script>
+
+{% endhighlight %}
+
+### sheets.startCell `String`
+{:#members:sheets.startCell}
+
+Specifies the start cell for the datasource range in Spreadsheet.
+
+#### Default Value:
+
+* "A1"
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets:[{
+dataSource: window.defaultData, startCell: "A1"}]
+});    
 </script>
 
 {% endhighlight %}
