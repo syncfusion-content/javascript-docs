@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSplitter
+title: Properties,methods and events of Essential JS ejSplitter widget
 description: API reference for ejSplitter
 documentation: API
 platform: js
