@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejListView widget
+title: Properties,Methods and Events of Essential JS ejListView Widget
 description: API reference for ejListView
 documentation: API
 platform: js
