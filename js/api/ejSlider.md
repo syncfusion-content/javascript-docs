@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejSlider widget
+title: Properties,Methods and Events of Essential JS ejSlider Widget
 description: API reference for ejSlider
 documentation: API
 platform: js
