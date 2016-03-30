@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejAccordion widget
+title: Properties,Methods and Events of Essential JS ejAccordion Widget
 description: API reference for ejAccordion
 documentation: API
 platform: js
