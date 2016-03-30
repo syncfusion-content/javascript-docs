@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejRating widget
+title: Properties,Methods and Events of Essential JS ejRating Widget
 description: API reference for ejRating
 documentation: API
 platform: js
