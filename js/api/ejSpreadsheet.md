@@ -6166,7 +6166,7 @@ This method is used to get the property value of particular cell, based on the r
 </table>
 
 ####Returns:
-Object/string/array based on the property.
+Object|String|Array
 
 #### Example
 
