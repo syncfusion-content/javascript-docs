@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,methods and events of Essential JS ejOlapGauge widget
+title: Properties,Methods and Events of Essential JS ejOlapGauge Widget
 documentation: API
 platform: js
 keywords: ejOlapGauge, API, Essential JS OlapGauge
