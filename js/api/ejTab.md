@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTab
+title: Properties,methods and events of Essential JS ejTab widget
 description: API reference for ejTab
 documentation: API
 platform: js
