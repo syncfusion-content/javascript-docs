@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejMaskEdit
+title: Properties,methods and events of Essential JS ejMaskEdit widget
 description: API reference for ejMaskEdit
 documentation: API
 platform: js
