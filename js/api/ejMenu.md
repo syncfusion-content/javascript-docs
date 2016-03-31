@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejMenu Widget
+title: Properties, Methods and Events of ejMenu Widget
 description: API reference for ejMenu
 documentation: API
 platform: js
