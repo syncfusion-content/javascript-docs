@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejSpreadsheet Widget
+title: Properties, Methods and Events of ejSpreadsheet Widget
 description: Methods,members and events avaliable in ejSpreadsheet
 documentation: API
 platform: js
