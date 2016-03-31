@@ -2578,7 +2578,7 @@ Holds all the options related to the resources settings of the Schedule. It is a
 
 * null
 
-### resources.fields `string`
+### resources.field `string`
 {:#members:resources-fields}
 
 It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
@@ -2849,8 +2849,22 @@ Binds groupId field name in the dataSource to resourceSettings **groupId**.
 
 Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs. 
 
+### resources.resourceSettings.start `string`
+{:#members:resources-resourcesettings-start}
 
-#### Example - To set the resources options with id, text, groupId and color fields.
+Binds the starting work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the starting work hour for specific resources.
+
+### resources.resourceSettings.end `string`
+{:#members:resources-resourcesettings-end}
+
+Binds the end work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the end work hour for specific resources.
+
+### resources.resourceSettings.workWeek `string`
+{:#members:resources-resourcesettings-workweek}
+
+Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with some values (array of day names), only those days will render for the specific resources.
+
+#### Example - To set the resources options with id, text, groupId, color, start, end and workWeek fields.
 
 {% highlight html %}
 
@@ -2875,10 +2889,10 @@ Binds color field name in the dataSource to resourceSettings **color**. The colo
                     resourceSettings: {
                         dataSource: [
                        // groupId groups the current resources under the previous level of resource object
-                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
-                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
-                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
-                        text: "text", id: "id", color: "color", groupId: "groupId"
+                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398", start: "10", end: "15", workWeek: ["monday","wednesday","friday"] },
+                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85", start: "10", end: "15", workWeek: ["tuesday","thursday"] },
+                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88", start: "10", end: "15", workWeek: ["sunday","saturday"] }],
+                        text: "text", id: "id", color: "color", groupId: "groupId", start: "start", end: "end", workWeek: "workWeek"
 
                     }
                 }],
