@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDraggable
+title: Properties, Methods and Events of ejDraggable Widget
 description: API reference for ejDraggable
 documentation: API
 platform: js
