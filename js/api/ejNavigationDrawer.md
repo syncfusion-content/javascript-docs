@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejNavigationDrawer Widget
+title: Properties, Methods and Events of ejNavigationDrawer Widget
 description: API reference for ejNavigationDrawer
 documentation: API
 platform: js
