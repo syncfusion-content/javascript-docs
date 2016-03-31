@@ -9,11 +9,164 @@ documentation: ug
 
 # Columns
 
-The TreeGrid column displays the information from a bounded data source and it is editable to update the task details through TreeGrid.
+Column definitions, specified in the **columns** option, define how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the **‘field’** property of the corresponding column object.
 
-### Column Resizing
+### Formatting
 
-You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the column resize feature at initializing TreeGrid.
+The values in each column can be formatted using the **‘format’** property of the column object.
+
+The following example shows how to specify the numeric format string to display currency, percentage symbols and date values in a column,
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "Percentage", headerText: "Percentage", format: "{0:P0}"},
+                { field: "Currency", headerText: "Currency", format: "{0:C2}" },
+                { field: "startDate", headerText: "Start Date", format: "{0:MM/dd/yyyy}" },
+                { field: "endDate", headerText: "End Date", format: "{0:MM/dd/yyyy hh:mm:ss}"}
+            ]
+        });
+    });
+
+{% endhighlight %}
+
+Note: For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
+
+For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
+
+### Headers
+
+#### Header text
+
+Using **columns.headerText** property, you can provide the title for a specific column. The below code snippet is shows how to set header text for the columns,
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id"},
+                { field: "taskName", headerText: "Task Name" },
+                { field: "startDate", headerText: "Start Date" },
+                { field: "endDate", headerText: "End Date" }                   
+            ]
+        })
+    });
+
+{% endhighlight %}
+
+#### Text wrapping
+
+It is possible to wrap the header text or the title for the column, when the content exceeds the column width using the **headerTextOverflow** property. By default this property is set to **none**. To enable wrapping of header text, you have to set **headerTextOverflow** property to **‘wrap’**. The below code snippet demonstrates this,
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        headerTextOverflow: "wrap",
+    });
+
+{% endhighlight %}
+
+#### Header Template
+
+Using **columns.headerTemplateID** property, you can specify the Id of the script element, which contains the JsRender template, to the specific column.
+
+Following code snippet shows how to set the header template,
+
+{% highlight html %}
+
+    <script type="text/x-jsrender" id="resource">
+        <div>
+            <div class="name">
+                <img src="13.4.0.53/themes/web/images/treegrid/icon-03.png" width="20" height="20" />
+            </div>
+            <div style="position:relative; top:3px;">
+                Resources
+            </div>
+        </div>
+    </script>
+    
+    <script type="text/x-jsrender" id="projectName">
+        <div>
+            <div>
+                <img src="13.4.0.53/themes/web/images/treegrid/icon-01.png" width="20" height="20" />
+            </div>
+            <div style="position:relative; top:3px;">
+                Task Name
+            </div>
+        </div>
+    </script>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [{
+                field: "taskName",
+                editType: "stringedit",
+                headerTemplateID: "#projectName"
+            }, {
+                field: "startDate",
+                editType: "datepicker"
+            }, {
+                field: "resourceId",
+                editType: "dropdownedit",
+                dropdownData: projectResources,
+                headerTemplateID: "#resource"
+            }, {
+                field: "progress",
+                editType: "numericedit"
+            }]
+        })
+    });
+
+{% endhighlight %}
+
+The below screenshot depicts column headers with custom templates,
+
+![](/js/TreeGrid/Columns_images/Columns_img1.png)
+
+### Frozen Columns
+
+Specific columns can be frozen by enabling **columns.isFrozen** property of the respective column object. The columns which are frozen remain static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime, by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when **columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **columns.allowFreezing** property of that specific column.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            showColumnChooser: true,
+            columns: [
+                { field: "taskID", headerText: "ID", width: 60, isFrozen: true, allowFreezing: false },
+                { field: "taskName", headerText: "Task Name", width: 200, isFrozen: true },
+                { field: "startDate", headerText: "Start Date" },
+                { field: "endDate", headerText: "End Date" },
+                { field: "duration", headerText: "Duration" },
+            ]
+        });
+    });
+
+{% endhighlight %}
+
+The below screenshot depicts TreeGrid with frozen columns,
+
+![](/js/TreeGrid/Columns_images/Columns_img2.png)
+
+It is also possible to freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.
+
+![](/js/TreeGrid/Columns_images/Columns_img3.png)
+
+### Resizing
+
+You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting **allowColumnResize** property to true.
 
 {% highlight js %}
 
@@ -27,169 +180,55 @@ You can change the width of the column in TreeGrid to show the entire text of 
 
 ### Column Template
 
-Column Template is used to customize the column’s look and feel based on requirement.
+Columns can be customized either by using JsRender templates or by AngularJS templates,
 
-The following code example shows you how to display the icon in the TreeGrid column.
+Using **columns.templateID** property, you can specify the Id of the script element, which contains the template for the column. However, you need to enable **columns.isTemplateColumn** property for the specific column to display the custom template instead of default template.
 
-Code snippet to create a custom template element to be rendered
+Following code example show how to define template for the column,
 
 {% highlight html %}
 
-    <script type="text/x-jsrender" id="customColumnTemplate">     
-         <div  style='height:20px;' unselectable='on'> {{"{{"}}if hasChildRecords{{}}}}
-         <div class='intend' style='height:1px; float:left; width: {{"{{"}}:level*20{{}}}}px; display:inline-block;'> </div>
-         {{"{{"}}else !hasChildRecords{{}}}}
-         <div class='intend' style='height:1px; float:left; width:{{"{{"}}:(level)*20{{}}}}px; display:inline-block;'> </div>
-         {{"{{"}}/if{{}}}}                         
-         <div class='{{"{{"}}if expanded{{}}}}e-treegridexpand{{"{{"}}else hasChildRecords{{}}}} e-treegridcollapse{{"{{"}}/if{{}}}} {{"{{"}}if level===4{{}}}} e-doc {{"{{"}}/if{{}}}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;display:inline-block;' unselectable='on'> </div>
-         <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{"{{"}}:#data['Name']{{}}}} </div>
-         </div>
-    </script>    
+    // JsRender template definition.
+    <script type="text/x-jsrender" id="columnTemplate">
+        {{if #data['resourceNames']}}
+           <div style="display:inline-block;position:relative;left:10px;top:1px">
+               <img src="../images/gantt/{{:#data['resourceNames']}}.png" height="40" />
+           </div>
+        {{/if}}
+    </script>
     
 {% endhighlight %}
 
-Code snippet for applying style to the template element
-
-{% highlight css %}
-
-        .e-treegrid .e-treegridexpand {
-            background-image: url(../images/treegrid/folder-open.png);
-            background-repeat: no-repeat;
-            width: 14px;
-            height: 14px;
-        }
-        .e-treegrid .e-treegridcollapse {
-            background-image: url(../images/treegrid/Folder.png);
-            background-repeat: no-repeat;
-            width: 14px;
-            height: 14px;
-        }
-        .e-treegrid .e-doc {
-            background-image: url(../images/treegrid/Document.png);
-            background-repeat: no-repeat;
-            width: 14px;
-            height: 14px;
-        }
-
-        .e-treegrid .e-treegridexpand:before {
-            content: none;
-        }
-
-        .e-treegrid .e-treegridcollapse:before {
-            content: none;
-        }
-        
-{% endhighlight %}
-
-Code snippet to render custom template in TreeGrid columns
-
 {% highlight js %}
 
+    <script type="text/javascript">         
         $(function () {
-
             $("#TreeGridContainer").ejTreeGrid({
-                dataSource: treeGridDataSource,
-                childMapping: "Children",
-                columns: [{ field: "Name", headerText: "Name", isTemplateColumn: true, templateID: "customColumnTemplate" },
-                          { field: "Type", headerText: "Type" },
-                          { field: "DateCreated", headerText: "Date Created" },
-                          { field: "DateModified", headerText: "Date Modified" }]
+               //...
+               rowHeight:50,
+               columns: [
+                    { field: "taskID", headerText: "Task Id", width: "45" },
+                    { field: "taskName", headerText: "Task Name" },
+                    { headerText: "Resource", isTemplateColumn: true, templateID: "columnTemplate", textAlign: "center" },
+                    { field: "resourceNames", headerText: "Resource Name" },
+               ]
             })
         });
+    </script>
 
 {% endhighlight %}
 
-The following screenshot displays the customized column in TreeGrid control.
+![](/js/TreeGrid/Columns_images/Columns_img4.png)
 
-![](/js/TreeGrid/Columns_images/Columns_img1.png)
+### Column Menu
 
-### Column Filtering
+Column menu can be displayed in column header by enabling **‘showColumnChooser’**.
 
-Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with [`allowFiltering`](/js/api/ejtreegrid#allowfilteringspan-classtype-signature-type-booleanbooleanspan "allowFiltering") property, by setting this property to `true`, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting `false` to `allowFiltering` property in each column object.
+Following are the items displayed in the column menu,
 
-Filtering modes can be toggled between `immediate` and `onEnter` modes using [`filterBarMode`](/js/api/ejtreegrid#filterbarmodespan-classtype-signature-type-enumenumspan "filterBarMode") property.
-
-* `immediate` - In this mode, filtering starts with key press event.
-* `onEnter` - In this mode, filtering starts when enter key is pressed.
-
-Filtering type can be defined by [`filterEditType`](/js/api/ejtreegrid#columnsfilteredittypespan-classtype-signature-type-stringstringspan "filterEditType") property in each column object.
-
-The following are the types of column filtering types available in TreeGrid,
-
-* stringedit
-* numericedit
-* booleanedit
-* dropdownlist
-* datepicker
-* datetimepicker
-
-{% highlight js %}
-
-    $("#treegrid1").ejTreeGrid({
-        // ...     
-        filterBarMode: "immediate",
-        allowFiltering: true,
-        columns: [
-
-            {
-                field: "taskID",
-                headerText: "Task Id",
-                width: "45",
-                allowFiltering: false,
-                editType: "numericedit"
-            }, {
-                field: "taskName",
-                headerText: "Task Name",
-                editType: "stringedit",
-                filterEditType: "stringedit"
-            }, {
-                field: "startDate",
-                headerText: "Start Date",
-                editType: "datepicker",
-                filterEditType: "datepicker"
-            }, {
-                field: "endDate",
-                headerText: "End Date",
-                editType: "datepicker",
-                filterEditType: "datepicker"
-            }, {
-                field: "duration",
-                headerText: "Duration",
-                editType: "booleanedit",
-                filterEditType: "numericedit"
-            }, {
-                field: "progress",
-                headerText: "Progress",
-                editType: "booleanedit",
-                filterEditType: "numericedit"
-            }
-        ],
-        // ...             
-    });
-
-{% endhighlight %}
-
-The following screenshot displays the column filtering in TreeGrid control.
-
-![](/js/TreeGrid/Columns_images/Columns_img2.png)
-
-### Column Chooser
-
-TreeGrid supports enabling and disabling the visibility of the columns dynamically with the [`showColumnChooser`](/js/api/ejtreegrid#showcolumnchooserspan-classtype-signature-type-booleanbooleanspan "showColumnChooser") property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the TreeGrid columns.
-
-![](/js/TreeGrid/Columns_images/Columns_img3.png)
-
-The column menu is enabled with the `showColumnChooser` property and the default value for this property is `false`
-
-The column menu provides the following options.
-
-* Sort Ascending
-* Sort Descending
-* Columns 
-
-The **Sort Ascending** and **Sort Descending** options are enabled or disabled by using the [`allowSorting`](/js/api/ejtreegrid#allowsortingspan-classtype-signature-type-booleanbooleanspan "allowSorting") property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the [`allowMultiSorting`](/js/api/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") property should be enabled. 
-
-You can also disable the visibility of the particular column in column collection manually by setting the `visible` property to `false`.
+* **Column Chooser** – Display all the column names; you can enable or disable a column by selecting or deselecting the respective column name in the column chooser menu.
+* **Sort Ascending & Sort Descending** – Used to sort the items in the column. These menu options will be displayed only when you enable **allowSorting** property to true. To perform multilevel sorting, the **‘allowMultiSorting’** property should be enabled.
+* **Freeze, Unfreeze & Freeze Preceding Columns** – Used to freeze or unfreeze the columns. These set of menu options will be displayed in all the columns when **columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **columns.allowFreezing** property of that specific column.
 
 {% highlight js %}
 
@@ -200,16 +239,77 @@ You can also disable the visibility of the particular column in column collectio
         allowSorting: true,
         allowMultiSorting: true,
         columns:[
-              // ...  
-              { field: "duration", headerText: "Duration", 
-                visible: false
-              }
-              // ...  
-            ],
+            // ...  
+            { field: "duration", headerText: "Duration", visible: false }
+            // ...  
+        ],
         // ...             
     });
 
 {% endhighlight %}
 
-![](/js/TreeGrid/Columns_images/Columns_img4.png)
+![](/js/TreeGrid/Columns_images/Columns_img5.png)
 
+### Changing position of expander column
+
+The position of the expander column, which acts as tree column, can be changed using the **‘treeColumnIndex’** property,
+
+Following code example shows how to change the position of the expander column,
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        treeColumnIndex: 2,
+    });
+
+{% endhighlight %}
+
+### Visibility
+
+Columns can be hidden on loading by setting the **‘columns.visible’** property as false,
+
+Following code example explains how to hide the fourth column,
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id", width: "45" },
+                { field: "taskName", headerText: "Task Name" },
+                { field: "startDate", headerText: "Start Date" },
+                { field: "endDate", headerText: "End Date", visible: false },
+                { field: "progress", headerText: "Progress" }
+            ]
+        })
+    });
+        
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img6.png)
+
+### Read-only
+
+A column can be made read-only by setting the **columns.allowEditing** property as false,
+
+Note: By setting columns.allowEditing as false, that specific column alone is made as read only, and by setting editSettings.allowEditing as false, the entire TreeGrid is made read only.
+
+The below code snippet demonstrates this,
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id"},
+                { field: "taskName", headerText: "Task Name",allowEditing: false },
+                { field: "startDate", headerText: "Start Date"},
+                { field: "endDate", headerText: "End Date" }
+            ]
+        })
+    });
+
+{% endhighlight %}
