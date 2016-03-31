@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejPivotSchemaDesigner Widget
+title: Properties, Methods and Events of ejPivotSchemaDesigner Widget
 documentation: API
 platform: js
 keywords: ejPivotSchemaDesigner, API, Essential JS PivotSchemaDesigner
