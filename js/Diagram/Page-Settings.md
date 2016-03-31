@@ -29,15 +29,11 @@ You can also customize the appearance of off-page regions with the property `bac
 
 ### BackgroundImage
 
-The `backgroundImage` property sets one or more background images.
-
-`ImageAlignment`, `Scale`, `Source` are the properties of backgroundImage that customize the image.
+You can set any background image for diagram. Diagram allows to stretch and align the background images anywhere on the diagram area. 
+`source` property of `backgroundImage` allows you to set the path of the image. `scale` and `align` properties help to stretch/align the background images.
  
-`ImageAlignment` customize the position of the image over the diagram/node area.To explore the properties, refer [Image Alignment](/js/api/ejDiagram#members:backgroundimage-alignment "Image Alignment").
+To explore the backgroundImage properties, refer [Background Image](/js/api/ejDiagram#members:backgroundimage "Background Image").
 
-`Scale` describes how the image can be scaled.For more information, refer [Scale](/js/api/ejDiagram#members:backgroundimage-scale "Scale").
-
-`Source` describes the source path of the image.
 
 The following code illustrates how to customize the page size and the appearance of page and off-page.
 
@@ -46,7 +42,7 @@ The following code illustrates how to customize the page size and the appearance
 $("#diagram").ejDiagram({
 	//Sets off-page background
 	backgroundColor: "whitesmoke",
-		backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMid,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"syncfusion.png"},
+    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMid,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"syncfusion.png"},
 	pageSettings: {
 		//Sets page size
 		pageHeight: 500,
