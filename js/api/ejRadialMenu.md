@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRadialMenu
+title: Properties, Methods and Events of ejRadialMenu Widget
 documentation: API
 platform: js
 metaname: 
