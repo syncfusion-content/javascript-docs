@@ -408,13 +408,36 @@ $("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
 {:#members:badge-position}
 
 
-
-
+<ts name = "ej.Tile.badge-position"/>
 
 
 
 
 Sets position for tile badge.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+topright</td>
+<td class="description">To set the topright position of tile badge</td>
+</tr>
+<tr>
+<td class="name">
+bottomright</td>
+<td class="description">To set the bottomright of tile image</td>
+</tr>
+</tbody>
+</table>
+
 
 
 
