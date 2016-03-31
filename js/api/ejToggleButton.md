@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejToggleButton
+title: Properties, Methods and Events of ejToggleButton Widget
 description: API reference for ejToggleButton
 documentation: API
 platform: js
