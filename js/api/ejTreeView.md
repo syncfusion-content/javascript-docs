@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejTreeView Widget
+title: Properties, Methods and Events of ejTreeView Widget
 description: API reference for ejTreeView
 documentation: API
 platform: js
