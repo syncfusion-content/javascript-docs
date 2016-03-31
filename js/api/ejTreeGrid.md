@@ -216,6 +216,31 @@ Specifies the id of the template that has to be applied for alternate rows.
 {% endhighlight %}
 
 
+### childMapping `string`
+{:#members:childmapping}
+
+Specifies the mapping property path for sub tasks in datasource
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>                          
+        $("#treegrid").ejTreeGrid({  childMapping : "Children" });
+</script>
+
+{% endhighlight %}
+
+
 ### columns `array`
 {:#members:columns}
 
