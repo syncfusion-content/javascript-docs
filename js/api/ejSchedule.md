@@ -4105,6 +4105,43 @@ Allows setting draggable area for the Scheduler appointments. Also, turns on the
 
 {% endhighlight %}
 
+
+### showNextPrevMonth `boolean`
+{:#members:shownextprevmonth}
+
+When set to true, displays the other months days from the current month on the Schedule.
+
+#### Default Value
+
+* true
+
+#### Example - To hide the other months days from the current month.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                currentView: "month",
+                showNextPrevMonth: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ## Methods
 
 ### deleteAppointment(guid)
