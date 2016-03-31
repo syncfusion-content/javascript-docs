@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDateTimePicker
+title: Properties, Methods and Events of ejDateTimePicker Widget
 description: API reference for ejDateTimePicker
 documentation: API
 platform: js
