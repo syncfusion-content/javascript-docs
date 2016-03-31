@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejCircularGauge Widget
+title: Properties,Methods and Events of ejCircularGauge Widget
 documentation: API
 platform: js
 metaname: 
