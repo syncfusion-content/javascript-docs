@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejDiagram Widget
+title: Properties, Methods and Events of ejDiagram Widget
 description: API reference for ejDiagram
 documentation: API
 platform: js
