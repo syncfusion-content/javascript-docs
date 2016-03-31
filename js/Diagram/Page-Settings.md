@@ -42,7 +42,7 @@ The following code illustrates how to customize the page size and the appearance
 $("#diagram").ejDiagram({
 	//Sets off-page background
 	backgroundColor: "whitesmoke",
-    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMid,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"syncfusion.png"},
+    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMin,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"syncfusion.png"},
 	pageSettings: {
 		//Sets page size
 		pageHeight: 500,
