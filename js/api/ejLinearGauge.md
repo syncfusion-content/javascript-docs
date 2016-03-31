@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejLinearGauge Widget
+title: Properties, Methods and Events of ejLinearGauge Widget
 documentation: API
 platform: js
 metaname: 
