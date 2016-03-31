@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejCalculate
+title: Properties, Methods and Events of ejCalculate Widget
 documentation: API
 platform: js
 metaname: 
