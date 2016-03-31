@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejRibbon Widget
+title: Properties, Methods and Events of ejRibbon Widget
 description: Members,Methods,Events available in ejRibbon
 documentation: API
 platform: js
