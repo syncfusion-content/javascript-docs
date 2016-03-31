@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejOlapClient
+title: Properties, Methods and Events of ejOlapClient Widget
 documentation: API
 platform: js
 keywords: ejOlapClient, API, Essential JS OlapClient
