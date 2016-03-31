@@ -478,21 +478,19 @@ To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#mem
 
 ### Layout Bounds 
 
-Diagram provides support to customize the custom bounds to align the layout. You can set the desired bounds using `layout.bounds` . For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any rectangular area. `bounds` property of layout allows you to set the desired bounds . For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
 
 ### Layout Alignment
 
-Layout can be aligned relative to the specified layout boundaries. It has horizontal and vertical alignment settings.
+You can align the layout anywhere over the layout bounds or over the viewport.
 
-### Horizontal Alignment and Vertical Alignment
-
-The `horizontalAlignment` property of layout is used to set how the layout is horizontally aligned within the layout bounds. For more information about horizontal alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-horizontalalignment "Layout Alignment") The `verticalAlignment` properety of layout is used to set how the layout is vertically aligned within the layout bounds. For more information about vertical alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-verticalalignment "Layout Alignment")
+The `horizontalAlignment` and `verticalAlignment` properties of layout allow you to define how the layout should be aligned within the layout bounds/viewport. For more information about vertical alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-verticalalignment "Layout Alignment")
 
 ### Layout Margin
 
-Layout provides support to add some blank space in the layout bounds.
+Diagram provides support to leave space between the layout/viewport and layout. You can set the margin using the `margin` property of layout.
 
-The following code illustrates how to customize the layout
+The following code illustrates how to customize the layoutt
 
 {% highlight js %}
 
