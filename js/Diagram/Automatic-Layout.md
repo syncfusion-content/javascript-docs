@@ -488,6 +488,8 @@ Layout can be aligned relative to the specified layout boundaries. It has horizo
 
 The `horizontalAlignment` property of layout is used to set how the layout is horizontally aligned within the layout bounds. For more information about horizontal alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-horizontalalignment "Layout Alignment") The `verticalAlignment` properety of layout is used to set how the layout is vertically aligned within the layout bounds. For more information about vertical alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-verticalalignment "Layout Alignment")
 
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+
 ### Layout Margin
 
 Layout provides support to add some blank space in the layout bounds.
@@ -534,7 +536,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
 
 ### Layout Orientation
 
