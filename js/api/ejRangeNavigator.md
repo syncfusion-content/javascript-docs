@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejRangeNavigator Widget
+title: Properties, Methods and Events of ejRangeNavigator Widget
 documentation: API
 platform: js
 metaname: 
