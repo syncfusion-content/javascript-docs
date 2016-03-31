@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejFileExplorer
+title: Properties, ethods and Events of ejFileExplorer Widget
 description: API reference for ejFileExplorer
 documentation: API
 platform: js
