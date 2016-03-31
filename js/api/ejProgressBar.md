@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejProgressBar Widget
+title: Properties, Methods and Events of ejProgressBar Widget
 description: API reference for ejProgressBar
 documentation: API
 platform: js
