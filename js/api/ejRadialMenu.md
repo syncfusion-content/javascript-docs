@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejRadialMenu Widget
+title: Properties, Methods and Events of ejRadialMenu Widget
 documentation: API
 platform: js
 metaname: 
