@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejRadioButton Widget
+title: Properties, Methods and Events of ejRadioButton Widget
 description: API reference for ejRadioButton
 documentation: API
 platform: js
