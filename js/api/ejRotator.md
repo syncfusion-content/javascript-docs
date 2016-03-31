@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejRotator Widget
+title: Properties, Methods and Events of ejRotator Widget
 description: API reference for ejRotator
 documentation: API
 platform: js
