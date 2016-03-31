@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejButton
+title: Properties, Methods and Events of ejButton Widget
 description: API reference for ejButton
 documentation: API
 platform: js
