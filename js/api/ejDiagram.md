@@ -3032,52 +3032,6 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout.horizontalAlignment `enum`
-{:#members:layout-horizontalalignment}
-
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
-
-Defines how to horizontally align the layout within the layout bounds
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Left</td>
-            <td class="description last">Used to align layout horizontally on left side of layout bounds</td>
-        </tr>
-        <tr>
-            <td class="name">Center</td>
-            <td class="description last">Used to align layout horizontally on center of layout bounds</td>
-        </tr>
-        <tr>
-            <td class="name">Right</td>
-            <td class="description last">Used to align layout horizontally on right side of layout bounds</td>
-        </tr>
-    </tbody>
-</table>
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.HorizontalAlignment.Center
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-$("#diagramcontent").ejDiagram({layout: { horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Center }});
-</script>
-
-{% endhighlight %}
-
-
 ### layout.horizontalspacing `Number`
 {:#members:layout-horizontalspacing}
 
