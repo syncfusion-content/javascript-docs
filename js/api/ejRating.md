@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRating
+title: Properties, Methods and Events of ejRating Widget
 description: API reference for ejRating
 documentation: API
 platform: js
