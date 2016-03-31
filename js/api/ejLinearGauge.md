@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejLinearGauge
+title: Properties, Methods and Events of ejLinearGauge Widget
 documentation: API
 platform: js
 metaname: 
