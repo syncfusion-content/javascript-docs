@@ -1121,7 +1121,7 @@ Example
 {% endhighlight %}
 
 
-### checkItemsByIndices(index|indices) 
+### checkItemsByIndices(indices) 
 {:#methods:checkitemsbyindices}
 
 Checks multiple list items by using its index values. It is dependent on showCheckbox property.
@@ -1134,7 +1134,7 @@ Checks multiple list items by using its index values. It is dependent on showChe
 <b>Description</b></td></tr>
 <tr>
 <td>
-index/indices</td><td>
+indices</td><td>
 number[]</td><td>
 Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
@@ -2643,11 +2643,6 @@ Object</td><td>
 Object of ListBox widget which contains DataManager arguments</td></tr>
 <tr>
 <td>
-query</td><td>
-Data</td><td>
-Data of the ListBox Widget</td></tr>
-<tr>
-<td>
 cancel</td><td>
 Boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
@@ -2661,8 +2656,6 @@ List of array object</td></tr>
 xhr</td><td>
 Object</td><td>
 ExcuteQuery object of DataManager</td></tr>
-<tr>
-<td>
 </table>
 
 Example
