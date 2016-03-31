@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API reference for ejListBox
+title: Properties,Methods and Events of Essential JS ejListBox Widget
 description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
 keywords: ejListBox, API, Essential JS ListBox, ListBox
@@ -986,9 +986,7 @@ Specifies the virtual scroll mode to load the list data on demand via scrolling 
 <td>This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
 </tr>
 </table>
-
 #### Default Value:
-
 * ej.VirtualScrollMode.Normal
 
 Example
@@ -1136,8 +1134,8 @@ Checks multiple list items by using its index values. It is dependent on showChe
 <b>Description</b></td></tr>
 <tr>
 <td>
-indices</td><td>
-number|number[]</td><td>
+index/indices</td><td>
+number[]</td><td>
 Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
 </table>
 
@@ -1147,7 +1145,7 @@ N> This method accepts array of integers or a string containing integer values s
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
         
         $('#list').ejListBox("checkItemsByIndices","2,3");
 
@@ -1164,7 +1162,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("disable"); 
 
@@ -1192,7 +1190,7 @@ Text of the listbox item to be disabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("disableItem","Audi A5"); 
 
@@ -1220,7 +1218,7 @@ Index of the listbox item to be disabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("disableItemByIndex" ,3); 
 
@@ -1263,7 +1261,7 @@ Enables the ListBox widget when it is disabled.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("enable");
             
@@ -1291,7 +1289,7 @@ Text of the listbox item to be enabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("enableItem", "Audi A5");
 
@@ -1319,7 +1317,7 @@ Index of the listbox item to be enabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("enableItemByIndex", 5);
 
@@ -1347,7 +1345,7 @@ Indices of the listbox items to be enabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
 
         $('#list').ejListBox("enableItemsByIndices", "3,5");
@@ -1363,12 +1361,13 @@ Returns the list of checked items in the ListBox widget. It is dependent on show
 N> This method does not accept any arguments.
 
 ####Returns:
+
 object
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("getCheckedItems");
 
@@ -1383,12 +1382,13 @@ Returns the list of selected items in the ListBox widget.
 N> This method does not accept any arguments.
 
 ####Returns:
+
 object
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("getSelectedItems");
 
@@ -1415,13 +1415,14 @@ The list item text (label)</td></tr>
 </table>
 
 ####Returns:
+
 number
 
 Example
 {:.example}
 
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("getIndexByText", "Audi A5");
 
@@ -1447,12 +1448,13 @@ The list item’s value</td></tr>
 </table>
 
 ####Returns:
+
 number
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("getIndexByValue", "audia4");
 
@@ -1478,12 +1480,13 @@ The list item index.</td></tr>
 </table>
 
 ####Returns:
+
 string
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("getTextByIndex", 3);
 
@@ -1509,12 +1512,13 @@ The list item index.</td></tr>
 </table>
 
 ####Returns:
+
 object
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("getItemByIndex", 3);
 
@@ -1540,12 +1544,13 @@ The list item text.</td></tr>
 </table>
 
 ####Returns:
+
 object
 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("getItemByText", "Audi A7");
 
@@ -1572,7 +1577,7 @@ Data to merge in listbox.</td></tr>
 Example
 {:.example}
 
-{% highlight html%}
+{% highlight html %}
 
  <ul id="list"></ul>
 <button id="mergedata">Merge Data </button>
@@ -1602,7 +1607,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("moveDown");
             
@@ -1619,7 +1624,7 @@ Selects the previous item based on the current selection.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("moveUp");
 
@@ -1647,7 +1652,7 @@ Refreshes both the datasource and the dimensions of the ListBox widget when the 
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
                 $("#customerlist").ejListBox("refresh", true);
 
@@ -1663,7 +1668,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("removeAll");
 
@@ -1683,7 +1688,7 @@ N> 2. Since this method is deprecated, we suggest you to use  removeSelectedItem
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("removeItem"); 
             
@@ -1700,7 +1705,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("removeSelectedItems");
 
@@ -1728,7 +1733,7 @@ Text of the listbox item to be removed. </td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("removeItemByText","Audi A5");
 
@@ -1756,7 +1761,7 @@ Index of the listbox item to be removed.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("removeItemByIndex", 2);
 
@@ -1773,7 +1778,7 @@ N> This method does not accept any arguments.
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("selectAll");
 
@@ -1801,7 +1806,7 @@ Text of the listbox item to be selected.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
             $('#list').ejListBox("selectItemByText", "Audi A5");
 
@@ -2605,6 +2610,78 @@ $("#list").ejListBox({
 {% endhighlight %}
 
 
+### actionBeforeSuccess 
+{:#events:actionBeforeSuccess}
+
+Event will be triggered before the requested data via AJAX once loaded in successfully.
+
+<table>
+<tr>
+<th>
+<b>Event Arguments</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
+<tr>
+<td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+actual</td><td>
+Object</td><td>
+List of actual object.</td></tr>
+<tr>
+<td>
+request</td><td>
+Object</td><td>
+Object of ListBox widget which contains DataManager arguments</td></tr>
+<tr>
+<td>
+query</td><td>
+Data</td><td>
+Data of the ListBox Widget</td></tr>
+<tr>
+<td>
+cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+result</td><td>
+Array</td><td>
+List of array object</td></tr>
+<tr>
+<td>
+xhr</td><td>
+Object</td><td>
+ExcuteQuery object of DataManager</td></tr>
+<tr>
+<td>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+$("#list").ejListBox({
+
+    actionBeforeSuccess: function(args) {
+
+        //do something
+
+    }
+
+});
+
+{% endhighlight %}
+
 ### change 
 {:#events:change}
 
@@ -2861,6 +2938,97 @@ Example
  $("#list").ejListBox({
 
     destroy: function(args) {
+
+        //do something
+
+    }
+
+});
+
+{% endhighlight %}
+
+### focusIn
+{:#events:focusIn}
+
+Triggers when focus the listbox items.
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+ 
+ $("#list").ejListBox({
+
+    focusIn: function(args) {
+
+        //do something
+
+    }
+
+});
+
+{% endhighlight %}
+
+
+### focusOut
+{:#events:focusOut}
+
+Triggers when focus out from listbox items.
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+model</td><td>
+<ts ref="ej.ListBox.Model"/>Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+ 
+ $("#list").ejListBox({
+
+    focusOut: function(args) {
 
         //do something
 
