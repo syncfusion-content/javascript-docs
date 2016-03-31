@@ -18,14 +18,10 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 
 The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
 
-The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with `backgroundImage` and set of appearance specific properties.
+The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
 To explore those properties, refer [Page Settings](/js/api/ejDiagram#members:pagesettings "Page Settings").
 
-You can also customize the appearance of off-page regions with the property `backgroundColor`.
-
-![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
-
-![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
+You can also customize the appearance of off-page regions with the property `backgroundColor`, `backgroundImage`.
 
 ### BackgroundImage
 
@@ -65,6 +61,9 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Page-Settings_images/Page-Settings_img5.png)
 
+![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
+
+![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
 N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
