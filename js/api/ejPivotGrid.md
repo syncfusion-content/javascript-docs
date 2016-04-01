@@ -196,6 +196,36 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {values: itemsArray}});
 
 {% endhighlight %}
 
+### dataSource.values.measures `array`
+{:#members:datasource-values[0]-measures}
+
+This holds the measures unique names to bind the measures from Cube.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {values: {measures : itemsArray}}});
+
+{% endhighlight %}
+
+### dataSource.values.axis `string`
+{:#members:datasource-values[0]-axis}
+
+To set the axis name in-order to place the measures.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {values: {axis : value}}});
+
+{% endhighlight %}
+
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
@@ -212,37 +242,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {filters: itemsArray}});
 
 {% endhighlight %}
 
-
-
-### dataSource.values[0].measures `array`
-{:#members:datasource-values[0]-measures}
-
-This holds the measures unique names to bind the measures from Cube.
-
-#### Default Value: []
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGrid1").ejPivotGrid({dataSource: {values: {measures : itemsArray}}});
-
-{% endhighlight %}
-
-### dataSource.values[0].axis `string`
-{:#members:datasource-values[0]-axis}
-
-To set the axis name in-order to place the measures.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGrid1").ejPivotGrid({dataSource: {values: {axis : value}}});
-
-{% endhighlight %}
 
 
 ### drilledItems `array`
