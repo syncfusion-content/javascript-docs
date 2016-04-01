@@ -2804,7 +2804,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine.width `number`
-{:#members:commonseriesoptions-marker-datalabel-connectorline-width}
+{:#members:commonseriesoptions.marker.datalabel.connectorline.width}
 
 
 
@@ -5311,7 +5311,7 @@ commonSeriesOptions : {
  
 
 ### commonSeriesOptions.connectorLine-color `string`
-{:#members:commonseriesoptions-connectorline-color}
+{:#members:commonseriesoptions.connectorline.color}
 
 
 
@@ -5345,7 +5345,7 @@ $("#container").ejChart({
  
 
 ### commonSeriesOptions.connectorLine-dashArray `string`
-{:#members:commonseriesoptions-connectorline-dasharray}
+{:#members:commonseriesoptions.connectorline.dasharray}
 
 
 
@@ -5380,7 +5380,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.connectorLine-opacity `number`
-{:#members:commonseriesoptions-connectorline-opacity}
+{:#members:commonseriesoptions.connectorline.opacity}
 
 
 
@@ -5414,15 +5414,15 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.errorBar `object`
-{:#members:commonseriesoptions-errorbar}
+{:#members:commonseriesoptions.errorbar}
 
 
 Options to customize the error bar in series.
 
 
 
-### commonSeriesOptions.errorBar-visibility `boolean`
-{:#members:commonseriesoptions-errorbar-visibility}
+### commonSeriesOptions.errorBar.visibility `boolean`
+{:#members:commonseriesoptions.errorbar.visibility}
 
 
 Show/hides the error bar
@@ -5452,8 +5452,8 @@ $("#container").ejChart({
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
    
-### commonSeriesOptions.errorBar-type `enum`
-{:#members:commonseriesoptions-errorbar-type}
+### commonSeriesOptions.errorBar.type `enum`
+{:#members:commonseriesoptions.errorbar.type}
 
 <ts name = "ej.datavisualization.Chart.ErrorBarType"/>
 
@@ -5522,8 +5522,8 @@ $("#container").ejChart({
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
-### commonSeriesOptions.errorBar-mode `enum`
-{:#members:commonseriesoptions-errorbar-mode}
+### commonSeriesOptions.errorBar.mode `enum`
+{:#members:commonseriesoptions.errorbar.mode}
  
 <ts name = "ej.datavisualization.Chart.ErrorBarMode"/>
  
@@ -5587,8 +5587,8 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 
-### commonSeriesOptions.errorBar-direction `enum`
-{:#members:commonseriesoptions-errorbar-direction}
+### commonSeriesOptions.errorBar.direction `enum`
+{:#members:commonseriesoptions.errorbar.direction}
 
 
 <ts name = "ej.datavisualization.Chart.ErrorBarDirection"/>
@@ -5653,8 +5653,8 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 
-### commonSeriesOptions.errorBar-verticalErrorValue `number`
-{:#members:commonseriesoptions-errorbar-verticalerrorvalue}
+### commonSeriesOptions.errorBar.verticalErrorValue `number`
+{:#members:commonseriesoptions.errorbar.verticalerrorvalue}
 
 
 Value of vertical error bar.
@@ -5683,8 +5683,8 @@ $("#container").ejChart({
  
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
-### commonSeriesOptions.errorBar-horizontalErrorValue `number`
-{:#members:commonseriesoptions-errorbar-horizontalerrorvalue}
+### commonSeriesOptions.errorBar.horizontalErrorValue `number`
+{:#members:commonseriesoptions.errorbar.horizontalerrorvalue}
 
 
 Value of horizontal  error bar.
@@ -5714,8 +5714,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### commonSeriesOptions.errorBar-horizontalPositiveErrorValue `number`
-{:#members:commonseriesoptions-errorbar-horizontalpositiveerrorvalue}
+### commonSeriesOptions.errorBar.horizontalPositiveErrorValue `number`
+{:#members:commonseriesoptions.errorbar.horizontalpositiveerrorvalue}
 
 
 Value of positive horizontal error bar.
@@ -5746,8 +5746,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### commonSeriesOptions.errorBar-horizontalNegativeErrorValue `number`
-{:#members:commonseriesoptions-errorbar-horizontalnegativeerrorvalue}
+### commonSeriesOptions.errorBar.horizontalNegativeErrorValue `number`
+{:#members:commonseriesoptions.errorbar.horizontalnegativeerrorvalue}
 
 
 Value of negative horizontal error bar.
@@ -5777,8 +5777,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### commonSeriesOptions.errorBar-verticalPositiveErrorValue `number`
-{:#members:commonseriesoptions-errorbar-verticalpositiveerrorvalue}
+### commonSeriesOptions.errorBar.verticalPositiveErrorValue `number`
+{:#members:commonseriesoptions.errorbar.verticalpositiveerrorvalue}
 
 
 Value of positive vertical error bar.
@@ -5809,8 +5809,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### commonSeriesOptions.errorBar-verticalNegativeErrorValue `number`
-{:#members:commonseriesoptions-errorbar-verticalnegativeerrorvalue}
+### commonSeriesOptions.errorBar.verticalNegativeErrorValue `number`
+{:#members:commonseriesoptions.errorbar.verticalnegativeerrorvalue}
 
 
 Value of negative vertical error bar.
@@ -5840,8 +5840,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### commonSeriesOptions.errorBar-fill `string`
-{:#members:commonseriesoptions-errorbar-fill}
+### commonSeriesOptions.errorBar.fill `string`
+{:#members:commonseriesoptions.errorbar.fill}
 
 
 Fill color of the error bar.
@@ -5874,8 +5874,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
     
 
-### commonSeriesOptions.errorBar-width `number`
-{:#members:commonseriesoptions-errorbar-width}
+### commonSeriesOptions.errorBar.width `number`
+{:#members:commonseriesoptions.errorbar.width}
 
 
 Width of the error bar.
@@ -5907,8 +5907,8 @@ $("#container").ejChart({
 
 
 
-### commonSeriesOptions.errorBar-cap `object`
-{:#members:commonseriesoptions-errorbar-cap}
+### commonSeriesOptions.errorBar.cap `object`
+{:#members:commonseriesoptions.errorbar.cap}
 
 
 Options for customizing the error bar cap.
@@ -5916,8 +5916,8 @@ Options for customizing the error bar cap.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### commonSeriesOptions.errorBar-cap-visible `boolean`
-{:#members:commonseriesoptions-errorbar-cap-visible}
+### commonSeriesOptions.errorBar.cap.visible `boolean`
+{:#members:commonseriesoptions.errorbar.cap.visible}
 
 Show/Hides the error bar cap.
 
@@ -5946,8 +5946,8 @@ $("#container").ejChart({
  {% endhighlight %} 
  
 
-### commonSeriesOptions.errorBar-cap-width `number`
-{:#members:commonseriesoptions-errorbar-cap-width}
+### commonSeriesOptions.errorBar.cap.width `number`
+{:#members:commonseriesoptions.errorbar.cap.width}
 
 Width of the error bar cap.
 
@@ -5977,8 +5977,8 @@ $("#container").ejChart({
  
  
  
-### commonSeriesOptions.errorBar-cap-length `number`
-{:#members:commonseriesoptions-errorbar-cap-length}
+### commonSeriesOptions.errorBar.cap.length `number`
+{:#members:commonseriesoptions.errorbar.cap.length}
 
 Length of the error bar cap.
 
@@ -6007,8 +6007,8 @@ $("#container").ejChart({
  {% endhighlight %} 
  
 
-### commonSeriesOptions.errorBar-cap-fill `string`
-{:#members:commonseriesoptions-errorbar-cap-fill}
+### commonSeriesOptions.errorBar.cap.fill `string`
+{:#members:commonseriesoptions.errorbar.cap.fill}
 
 Color of the error bar cap.
 
@@ -6038,7 +6038,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.trendlines `array`
-{:#members:commonseriesoptions-trendlines}
+{:#members:commonseriesoptions.trendlines}
 
 
 
@@ -6390,7 +6390,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
 
 
 ### commonSeriesOptions.highlightSettings `object`
-{:#members:commonseriesoptions-highlightsettings}
+{:#members:commonseriesoptions.highlightsettings}
 
 
 
@@ -6716,7 +6716,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ecgabpa5)
 
 
 ### commonSeriesOptions.selectionSettings `object`
-{:#members:commonseriesoptions-selectionsettings}
+{:#members:commonseriesoptions.selectionsettings}
 
 
 
@@ -19496,7 +19496,7 @@ series : [{
  
  
 ### series.connectorLine `object`
-{:#members:series-connectorline}
+{:#members:series.connectorline}
 
 
 
@@ -19506,8 +19506,8 @@ Options for customizing the waterfall connector line.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
-### series.connectorLine-width `number`
-{:#members:series-connectorline-width}
+### series.connectorLine.width `number`
+{:#members:series.connectorline.width}
 
 
 
@@ -19539,8 +19539,8 @@ series : [{
  {% endhighlight %} 
  
 
-### series.connectorLine-color `string`
-{:#members:series-connectorline-color}
+### series.connectorLine.color `string`
+{:#members:series.connectorline.color}
 
 
 
@@ -19573,8 +19573,8 @@ $("#container").ejChart({
  
  
 
-### series.connectorLine-dashArray `string`
-{:#members:series-connectorline-dasharray}
+### series.connectorLine.dashArray `string`
+{:#members:series.connectorline.dasharray}
 
 
 
@@ -19608,8 +19608,8 @@ $("#container").ejChart({
 
 
 
-### series.connectorLine-opacity `number`
-{:#members:series-connectorline-opacity}
+### series.connectorLine.opacity `number`
+{:#members:series.connectorline.opacity}
 
 
 
@@ -19643,15 +19643,15 @@ $("#container").ejChart({
 
 
 ### series.errorBar `object`
-{:#members:series-errorbar}
+{:#members:series.errorbar}
 
 
 Options to customize the error bar in series.
 
 
 
-### series.errorBar-visibility `boolean`
-{:#members:series-errorbar-visibility}
+### series.errorBar.visibility `boolean`
+{:#members:series.errorbar.visibility}
 
 
 Show/hides the error bar
@@ -19681,8 +19681,8 @@ $("#container").ejChart({
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
    
-### series.errorBar-type `enum`
-{:#members:series-errorbar-type}
+### series.errorBar.type `enum`
+{:#members:series.errorbar.type}
 
 <ts ref = "ej.datavisualization.Chart.ErrorbarType"/>
 
@@ -19712,8 +19712,8 @@ $("#container").ejChart({
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
-### series.errorBar-mode `enum`
-{:#members:series-errorbar-mode}
+### series.errorBar.mode `enum`
+{:#members:series.errorbar.mode}
 
 
 Specifies the mode of error bar.
@@ -19743,8 +19743,8 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 
-### series.errorBar-direction `enum`
-{:#members:series-errorbar-direction}
+### series.errorBar.direction `enum`
+{:#members:series.errorbar.direction}
 
 
 Specifies the direction of error bar.
@@ -19774,8 +19774,8 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 
-### series.errorBar-verticalErrorValue `number`
-{:#members:series-errorbar-verticalerrorvalue}
+### series.errorBar.verticalErrorValue `number`
+{:#members:series.errorbar.verticalerrorvalue}
 
 
 Value of vertical error bar.
@@ -19804,8 +19804,8 @@ $("#container").ejChart({
  
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
-### series.errorBar-horizontalErrorValue `number`
-{:#members:series-errorbar-horizontalerrorvalue}
+### series.errorBar.horizontalErrorValue `number`
+{:#members:series.errorbar.horizontalerrorvalue}
 
 
 Value of horizontal  error bar.
@@ -19835,8 +19835,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### series.errorBar-horizontalPositiveErrorValue `number`
-{:#members:series-errorbar-horizontalpositiveerrorvalue}
+### series.errorBar.horizontalPositiveErrorValue `number`
+{:#members:series.errorbar.horizontalpositiveerrorvalue}
 
 
 Value of positive horizontal error bar.
@@ -19867,8 +19867,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### series.errorBar-horizontalNegativeErrorValue `number`
-{:#members:series-errorbar-horizontalnegativeerrorvalue}
+### series.errorBar.horizontalNegativeErrorValue `number`
+{:#members:series.errorbar.horizontalnegativeerrorvalue}
 
 
 Value of negative horizontal error bar.
@@ -19898,8 +19898,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### series.errorBar-verticalPositiveErrorValue `number`
-{:#members:series-errorbar-verticalpositiveerrorvalue}
+### series.errorBar.verticalPositiveErrorValue `number`
+{:#members:series.errorbar.verticalpositiveerrorvalue}
 
 
 Value of positive vertical error bar.
@@ -19930,8 +19930,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### series.errorBar-verticalNegativeErrorValue `number`
-{:#members:series-errorbar-verticalnegativeerrorvalue}
+### series.errorBar.verticalNegativeErrorValue `number`
+{:#members:series.errorbar.verticalnegativeerrorvalue}
 
 
 Value of negative vertical error bar.
@@ -19961,8 +19961,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### series.errorBar-fill `string`
-{:#members:series-errorbar-fill}
+### series.errorBar.fill `string`
+{:#members:series.errorbar.fill}
 
 
 Fill color of the error bar.
@@ -19995,8 +19995,8 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
     
 
-### series.errorBar-width `number`
-{:#members:series-errorbar-width}
+### series.errorBar.width `number`
+{:#members:series.errorbar.width}
 
 
 Width of the error bar.
@@ -20028,8 +20028,8 @@ $("#container").ejChart({
 
 
 
-### series.errorBar-cap `object`
-{:#members:series-errorbar-cap}
+### series.errorBar.cap `object`
+{:#members:series.errorbar.cap}
 
 
 Options for customizing the error bar cap.
@@ -20037,8 +20037,8 @@ Options for customizing the error bar cap.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 
-### series.errorBar-cap-visible `boolean`
-{:#members:series-errorbar-cap-visible}
+### series.errorBar.cap.visible `boolean`
+{:#members:series.errorbar.cap.visible}
 
 Show/Hides the error bar cap.
 
@@ -20067,8 +20067,8 @@ $("#container").ejChart({
  {% endhighlight %} 
  
 
-### series.errorBar-cap-width `number`
-{:#members:series-errorbar-cap-width}
+### series.errorBar.cap.width `number`
+{:#members:series.errorbar.cap.width}
 
 Width of the error bar cap.
 
@@ -20098,8 +20098,8 @@ $("#container").ejChart({
  
  
  
-### series.errorBar-cap-length `number`
-{:#members:series-errorbar-cap-length}
+### series.errorBar.cap.length `number`
+{:#members:series.errorbar.cap.length}
 
 Length of the error bar cap.
 
@@ -20128,8 +20128,8 @@ $("#container").ejChart({
  {% endhighlight %} 
  
 
-### series.errorBar-cap-fill `string`
-{:#members:series-errorbar-cap-fill}
+### series.errorBar.cap.fill `string`
+{:#members:series.errorbar.cap.fill}
 
 Color of the error bar cap.
 
@@ -20160,7 +20160,7 @@ $("#container").ejChart({
   
 
 ### series.points `array`
-{:#members:series-points}
+{:#members:series.points}
 
 
 
@@ -21731,7 +21731,7 @@ series :[{ points:[{ y : 20 }] }]
 
 
 ### series.pyramidMode `enum`
-{:#members:series-pyramidmode}
+{:#members:series.pyramidmode}
 
 <ts ref = "ej.datavisualization.Chart.PyramidMode"/>
 
@@ -21765,7 +21765,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
 
 
 ### series.query `object`
-{:#members:series-query}
+{:#members:series.query}
 
 
 
@@ -21801,7 +21801,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 ### series.startAngle `number`
-{:#members:series-startangle}
+{:#members:series.startangle}
 
 
 
@@ -21835,7 +21835,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cw1zlin3)
 
 
 ### series.tooltip `object`
-{:#members:series-tooltip}
+{:#members:series.tooltip}
 
 
 
@@ -22233,7 +22233,7 @@ series : [{tooltip : {visible : true} }]
 
 
 ### series.type `enum`
-{:#members:series-type}
+{:#members:series.type}
 
 
 <ts ref = "ej.datavisualization.Chart.Type"/>
@@ -22265,7 +22265,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xab3pr0x)
 
 
 ### series.visibility `string`
-{:#members:series-visibility}
+{:#members:series.visibility}
 
 
 
@@ -22299,7 +22299,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
 ### series.xAxisName `string`
-{:#members:series-xaxisname}
+{:#members:series.xaxisname}
 
 
 
@@ -22332,7 +22332,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 
 
 ### series.xName `string`
-{:#members:series-xname}
+{:#members:series.xname}
 
 
 
@@ -22365,7 +22365,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 ### series.yAxisName `string`
-{:#members:series-yaxisname}
+{:#members:series.yaxisname}
 
 
 
@@ -22399,7 +22399,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 
 
 ### series.yName `string`
-{:#members:series-yname}
+{:#members:series.yname}
 
 
 
@@ -22431,7 +22431,7 @@ series : [{yName: "YValue" }]
 
 
 ### series.high `string`
-{:#members:series-high}
+{:#members:series.high}
 
 
 
@@ -22497,7 +22497,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 ### series.open `string`
-{:#members:series-open}
+{:#members:series.open}
 
 
 
@@ -22528,7 +22528,7 @@ series : [{open: "oepn" }]
 
 
 ### series.close `string`
-{:#members:series-close}
+{:#members:series.close}
 
 
 Name of the property in the datasource that contains close value for the series.
@@ -22559,7 +22559,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 ### series.size `string`
-{:#members:series-size}
+{:#members:series.size}
 
 
 
@@ -22592,7 +22592,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
 
 
 ### series.trendlines `array`
-{:#members:series-trendlines}
+{:#members:series.trendlines}
 
 
 
@@ -22943,7 +22943,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
 ### series.highlightsettings `object`
-{:#members:series-highlightsettings}
+{:#members:series.highlightsettings}
 
 
 
@@ -23240,7 +23240,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zmumutbx)
 
 
 ### series.selectionSettings `object`
-{:#members:series-selectionsettings}
+{:#members:series.selectionsettings}
 
 
 
@@ -24023,7 +24023,7 @@ Options to customize the sub title of Chart.
 
 
 ### title.subTitle.font `object`
-{:#members:title-subtitle-font}
+{:#members:title.subtitle-font}
 
 
 
@@ -24196,7 +24196,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.background `string`
-{:#members:title-subtitle-background}
+{:#members:title-subtitle.background}
 
 
 
@@ -24440,8 +24440,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
 
 
 
-### title.subTitle-background `string`
-{:#members:title-subtitle-background}
+### title.subTitle.background `string`
+{:#members:title.subtitle.background}
 
 
 
