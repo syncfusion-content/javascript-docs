@@ -11153,7 +11153,7 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 		</tr>
 		<tr>
 			<td class="name">sourceType</td>
-			<td class="type">Enum</td>
+			<td class="type">String</td>
 			<td class="description last">parameter returns the enum which defines the type of the source</td>
 		</tr>
 	</tbody>
@@ -11459,7 +11459,7 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 		</tr>
 		<tr>
 			<td class="name">cause</td>
-			<td class="type">Enum</td>
+			<td class="type">String</td>
 			<td class="description last">parameter returns the action is nudge or not</td>
 		</tr>
 		<tr>

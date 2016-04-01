@@ -1777,7 +1777,7 @@ $("#tile").ejTile("option", "caption-alignment", "left");            {% endhighl
 
 
 
-### caption-position `enum`
+### caption.position `enum`
 {:#members:caption-position}
 
 

@@ -526,19 +526,19 @@ Specifies the paper size of print layout.
 <td class="description">Specifies the A4 as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
-<td class="name">B4(JIS)</td>
+<td class="name">B4_JIS</td>
 <td class="description">Specifies the B4(JIS) as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
-<td class="name">B5(JIS)</td>
+<td class="name">B5_JIS</td>
 <td class="description">Specifies the B5(JIS) as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
-<td class="name">Envelope #10</td>
+<td class="name">Envelope_10</td>
 <td class="description">Specifies the Envelope #10 as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
-<td class="name">Envelope Monarch</td>
+<td class="name">Envelope_Monarch</td>
 <td class="description">Specifies the Envelope as value in pageSettings.paperSize to get specified size.</td>
 </tr>
 <tr>
