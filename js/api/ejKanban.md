@@ -8126,7 +8126,7 @@ Trigger after the card is clicked.
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name">current card</td>
+<td class="name">currentCard</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current card to the kanban.</td>
 </tr>
