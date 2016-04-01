@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejScroller
+title: Properties, Methods and Events of ejScroller Widget
 description: API reference for ejScroller
 documentation: API
 platform: js

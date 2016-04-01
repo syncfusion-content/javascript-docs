@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejListView
+title: Properties, Methods and Events of ejListView Widget
 description: API reference for ejListView
 documentation: API
 platform: js

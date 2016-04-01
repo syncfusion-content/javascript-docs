@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejCaptcha
+title: Properties, Methods and Events of ejCaptcha Widget
 documentation: API
 platform: js
 metaname: 

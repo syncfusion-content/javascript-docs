@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejGroupButton
+title: Properties, Methods and Events of ejGroupButton Widget
 description: API reference for ejGroupButton
 documentation: API
 platform: js

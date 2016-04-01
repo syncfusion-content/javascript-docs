@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRTE
+title: Properties, Methods and Events of ejRTE Widget
 description: API reference for ejRTE
 documentation: API
 platform: js

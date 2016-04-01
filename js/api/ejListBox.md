@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API reference for ejListBox
+title: Properties, Methods and Events of ejListBox Widget
 description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
 keywords: ejListBox, API, Essential JS ListBox, ListBox

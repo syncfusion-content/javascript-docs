@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTile
+title: Properties, Methods and Events of ejTile Widget
 description: API reference for ejTile
 documentation: API
 platform: js

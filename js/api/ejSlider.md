@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSlider
+title: Properties, Methods and Events of ejSlider Widget
 description: API reference for ejSlider
 documentation: API
 platform: js

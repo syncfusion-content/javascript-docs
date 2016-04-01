@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejWaitingPopup
+title: Properties, Methods and Events of ejWaitingPopup Widget
 description: API reference for ejWaitingPopup
 documentation: API
 platform: js

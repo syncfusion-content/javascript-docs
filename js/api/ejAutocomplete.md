@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejAutocomplete
+title: Properties,Methods and Events of Essential JS ejAutocomplete Widget
 description: Methods, members, events available in ejAutocomplete
 documentation: API
 platform: js
