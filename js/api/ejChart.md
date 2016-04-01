@@ -24012,7 +24012,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle `object`
-{:#members:title-subtitle}
+{:#members:title.subtitle}
 
 
 
@@ -24023,7 +24023,7 @@ Options to customize the sub title of Chart.
 
 
 ### title.subTitle.font `object`
-{:#members:title.subtitle-font}
+{:#members:title.subtitle.font}
 
 
 
@@ -24196,7 +24196,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.background `string`
-{:#members:title-subtitle.background}
+{:#members:title.subtitle.background}
 
 
 
