@@ -3078,7 +3078,7 @@ $("#diagramcontent").ejDiagram({layout: { horizontalAlignment:ej.datavisualizati
 {% endhighlight %}
 
 
-### layout.horizontalspacing `Number`
+### layout.horizontalSpacing `Number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
