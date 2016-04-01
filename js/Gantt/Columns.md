@@ -15,7 +15,7 @@ The TreeGrid column displays the information from a bounded data source and it w
 
 You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at **Gantt** initialize.
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#GanttContainer").ejGantt({
         //...
@@ -38,7 +38,7 @@ The following code example shows you how to display the icon in the TreeGrid col
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
             $.views.helpers({ className: getClassName });
 
@@ -192,7 +192,7 @@ The column menu provides the following options:
 
 Sort Ascending and Sort Descending options can be enabled or disabled with the `allowSorting` property. Single level sorting can be performed with these options. To perform multilevel sorting, `allowMultiSorting` property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#gantt").ejGantt(
     {   

@@ -54,7 +54,7 @@ Add a div element that acts as a container for **ejCircularGauge** widget.
 
 Create the **ejCircularGauge** widget as follows,
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#CircularGauge1").ejCircularGauge();
@@ -72,7 +72,7 @@ On executing the above code, sample renders a default **Circular Gauge** with de
 
 Pointers have different height and range. You can set the height and width of the gauge.
 
-{% highlight js %}
+{% highlight javascript %}
 
   $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -92,7 +92,7 @@ The following screenshot displays a **Gauge** in which height and width are set.
 
 You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **False** for user interaction. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -117,7 +117,7 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 * Major Ticks and Minor Ticks have the interval values 20 and 5 respectively. Show ranges and show indicators are used to display the ranges and indicators in their respective positions.
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -158,7 +158,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 To display the values in the **Gauge,** scale labels are used. You can customize the label color.  
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -192,7 +192,7 @@ On executing the above code, sample renders a default **Circular Gauge** with cu
 
 You can use three pointers that denote kilometer value, rotation per minute value and torque value.The torque value pointer should not be similar to other two pointers. Set the torque pointer as marker pointer. You can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -258,7 +258,7 @@ On executing the above code, sample renders a customized **Circular Gauge** as f
 
 You can display the tick value with customization as given in the following code example. You can set width and height of the Major ticks greater than the Minor ticks. You can set dark background for tick Color to have a better visibility.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -302,7 +302,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **“True”** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed.You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -358,7 +358,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 Indicators denote whether the pointer values are placed in their respective zones. You can position the indicator on the respective range value for the required changes. You can set the location of the indicator using **position** property. The **stateRanges** property defines how the indicator should behave when the pointer is in certain values. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#CircularGauge1").ejCircularGauge({
         width: 500,
@@ -453,7 +453,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 You can specify the text in the **Gauge** using **Custom labels** and you can customize it through various properties. You can use custom texts to display the three range description.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $("#CircularGauge1").ejCircularGauge({

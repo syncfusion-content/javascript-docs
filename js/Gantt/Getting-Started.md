@@ -66,7 +66,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 3.Create data source for ejGantt.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var data = [{
         taskID: 1,
@@ -118,7 +118,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 4.Initialize the Gantt with data source created in the last step.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         $("#GanttContainer").ejGantt({
@@ -144,7 +144,7 @@ A Gantt chart is created as shown in the following screen shot.
 
 Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`toolbarSettings`](/js/api/ejgantt#toolbarsettingsspan-classtype-signature-type-objectobjectspan "toolbarSettings") property.
 
-{% highlight js %}
+{% highlight javascript %}
 
     toolbarSettings: {
      showToolbar:true,
@@ -178,7 +178,7 @@ The Gantt control has sorting functionality to arrange the tasks in ascending or
 
 Enable the multicolumn sorting in Gantt by setting [`allowMultiSorting`](/js/api/ejgantt#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the `CTRL` key.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
          //...
@@ -208,7 +208,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 Modify the predecessor details of a task using mouse interactions by setting [`allowGanttChartEditing`](/js/api/ejgantt#allowganttcharteditingspan-classtype-signature-type-booleanbooleanspan "allowGanttChartEditing") as `true` and setting the value for `predecessorMapping` property.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -236,7 +236,7 @@ You can enable the context menu in Gantt, by setting the [`enableContextMenu`](/
 
  as `true`.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({   
         //...
@@ -263,7 +263,7 @@ You can show the relationship in tasks, by using the [`predecessorsMapping`](/js
 
 , as shown in the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("# GanttContainer ").ejGantt({                
        //...
@@ -282,7 +282,7 @@ In Gantt control, you can display and assign the resource for each task. Create 
 
 1.Create the resource collection to be displayed in ejGantt
 
-{% highlight js %}
+{% highlight javascript %}
 
     var projectResources =[{
         resourceId: 1,
@@ -302,7 +302,7 @@ In Gantt control, you can display and assign the resource for each task. Create 
 
 2.Initialize the Gantt with resources created in last step. 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("# GanttContainer ").ejGantt({
         //...

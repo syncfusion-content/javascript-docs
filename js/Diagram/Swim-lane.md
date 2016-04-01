@@ -35,7 +35,7 @@ To create a swimlane, you need to define an object with `isSwimlane` property th
 
 The following code example illustrates how to define a swimlane object.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var swimlane = {
 	name: "swimlaneNode",
@@ -59,7 +59,7 @@ For more information about adding a node/swimlane to the Diagram, refer to [Add 
 
 The following code example illustrates how to add a swimlane to the Diagram through `nodes` collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	nodes: [swimlane]
@@ -73,7 +73,7 @@ $("#diagram").ejDiagram({
 
 Swimlane allows to define a header to textually describe it. The `header` property of swimlane allows you to define its textual description(`text`) and to customize its appearance. The following code example illustrates how to define swimlane header.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines the header and format its text
 var header = {
@@ -114,7 +114,7 @@ diagram.updateNode("swimlaneName", { header: {fontColor:"white"} })
 
 Swimlane headers can be updated at runtime with the client side method `updateNode`. The following code example illustrates how to update a lane's header at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -133,7 +133,7 @@ diagram.updateNode("swimlane", { header: header });
 
 You can hide the swimlane headers. The following code example illustrates how to hide headers.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var header = {
 	text: "Swimlane",
@@ -152,7 +152,7 @@ You can add any number of lanes to a swimlane and the lanes are automatically st
 
 To create an empty lane, you need to define an object with `isLane` property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines an empty lane
 var lane = {
@@ -187,7 +187,7 @@ var swimlane = {
 The `header` property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
 You can limit the size of a lane with its `minWidth`, `minHeight`, `maxWidth`, and `maxHeight` properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines the lane header
 var laneHeader = {
@@ -234,7 +234,7 @@ var swimlane = {
 
 You can disable/update the lane header at runtime with the client side method, `updateNode`. The following code example illustrates how to disable the lane header at run time.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -247,7 +247,7 @@ diagram.updateNode("laneName", { header: {height: 0} })
 
 To add nodes to a lane, You need to add them to the `children` collection of lane. The following code example illustrates how to add nodes to a lane.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Defines children of lane
 var children = [
@@ -310,7 +310,7 @@ To define a phase, you have to set the length of the region to the `offset` prop
 
 The following code example illustrates how to add a phase on initializing swimlane.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Creates a phase
 var phase1 = {
@@ -352,7 +352,7 @@ var swimlane = {
 
 You can add a region at runtime with the client side method, `addPhase`. The following code example illustrates how to add a phase at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var phase = {
 	name: "Phase3",
@@ -366,7 +366,7 @@ diagram.addPhase("swimlaneName", phase);
 
 A phase can be updated at runtime with the client side API `updateNode`. The following code example illustrates how to a update phase at runtime.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {

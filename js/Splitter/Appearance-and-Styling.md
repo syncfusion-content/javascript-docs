@@ -47,7 +47,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#outersplitter").ejSplitter({
         height: 280, width: "100%",
@@ -95,7 +95,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
     
     $("#splitter").ejSplitter({
         height: 280, width: 600,
@@ -161,7 +161,7 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#splitter").ejSplitter({
         height: 280, width: 600,
@@ -226,7 +226,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#splitter").ejSplitter({
         height: 280, width: 600,

@@ -28,7 +28,7 @@ In an HTML page, add a &lt;div&gt; element to render it as a Slider widget.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#BasicSlider").ejSlider({
             height: "20",
@@ -57,7 +57,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // When initializing the Slider widget, configure the “incrementStep” property as follows.
@@ -91,7 +91,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

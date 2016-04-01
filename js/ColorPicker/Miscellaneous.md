@@ -21,7 +21,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     var ColorObj;
@@ -46,7 +46,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
  
     var ColorObj;
     jQuery(function ($) {
@@ -70,7 +70,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     var ColorObj;

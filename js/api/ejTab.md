@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTab
+title: Properties, Methods and Events of ejTab Widget
 description: API reference for ejTab
 documentation: API
 platform: js
@@ -18,7 +18,7 @@ The Tab control is an interface where list of items are expanded from a single i
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejTab()
 

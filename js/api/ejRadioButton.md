@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRadioButton
+title: Properties, Methods and Events of ejRadioButton Widget
 description: API reference for ejRadioButton
 documentation: API
 platform: js
@@ -18,7 +18,7 @@ The RadioButton control allows you to choose an option to perform an action. Thi
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRadioButton()
 

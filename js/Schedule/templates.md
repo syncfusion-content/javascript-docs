@@ -179,7 +179,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 function _dateFormat(date) {
     var dFormat = ej.format(new Date(date), "dd/MM");

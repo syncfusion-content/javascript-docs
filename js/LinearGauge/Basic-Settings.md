@@ -22,7 +22,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    $(function () {
         // For Linear Gauge rendering
@@ -82,7 +82,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Linear Gauge rendering
@@ -146,7 +146,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
      $(function () {
@@ -213,7 +213,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Linear Gauge rendering

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: requirejs
+title: RequireJS support for all of Essential JavaScript components
 description: requirejs
 platform: js
 control: General Topics
@@ -52,7 +52,7 @@ _For example, If you have installed the Essential Studio package within `C:\Prog
 
 * While using the **RequireJS**, some custom scripts are needed for running the application. In this case, you need to configure the **RequireJS** with the other dependencies within the script section as follows,
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         require.config({
@@ -73,7 +73,7 @@ _For example, If you have installed the Essential Studio package within `C:\Prog
 
 * Once the **RequireJS** paths are configured, now you can load the needed widgets within the **require** scope by passing the corresponding **Module** path. You can also mention the external dependencies here as specified below,
 
-{% highlight js %}
+{% highlight javascript %}
 
 
       require(["jquery", "easing", "scripts/web/ej.treeview.min"], function () {

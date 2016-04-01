@@ -13,7 +13,7 @@ documentation: ug
 
 The following table lists the default English localization User Interface based on French culture.
 
-_Table: List of default English localization User Interface based on French culture_
+List of default English localization User Interface based on French culture
 
 <table>
 <tr>
@@ -60,7 +60,7 @@ RenderingFailed</td><td>
 
 The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture.
 
-{% highlight js %}
+{% highlight javascript %}
 
  ej.olap.OlapGauge.locale["fr-FR"] = {
     RevenueGoal: "Objectif de chiffre d'affaires",

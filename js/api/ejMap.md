@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejMap
+title: Properties, Methods and Events of ejMap Widget
 description: API reference for ejMap
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejMap();
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDropDownList
+title: Properties, Methods and Events of ejDropDownList Widget
 description: API reference for ejDropDownList
 documentation: API
 platform: js
@@ -16,7 +16,7 @@ The DropDownList control provides a list of options to choose an item from the l
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDropDownList()
 

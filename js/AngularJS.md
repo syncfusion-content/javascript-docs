@@ -11,7 +11,7 @@ documentation: ug
 
 Essential JS includes angular directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-{% highlight js %}
+{% highlight javascript %}
 
 angular.module('DateCtrl', ['ejangular'])
      .controller('DatePickerCtrl', function ($scope) {

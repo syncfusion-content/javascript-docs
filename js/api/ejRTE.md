@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRTE
+title: Properties, Methods and Events of ejRTE Widget
 description: API reference for ejRTE
 documentation: API
 platform: js
@@ -19,7 +19,7 @@ Rich text editor is a component that help you to display or edit the content inc
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRTE(options)
 

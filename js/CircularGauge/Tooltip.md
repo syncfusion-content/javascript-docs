@@ -23,7 +23,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#tooltipGauge").ejCircularGauge({
@@ -86,7 +86,7 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#tooltipGauge").ejCircularGauge({

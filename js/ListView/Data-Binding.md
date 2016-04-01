@@ -26,7 +26,7 @@ Create div element to render the ListView sample.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         window.dbitem =
             [
@@ -99,7 +99,7 @@ Please refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
  
         window.dbitem =
             [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },

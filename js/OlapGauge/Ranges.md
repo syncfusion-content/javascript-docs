@@ -13,7 +13,7 @@ documentation: ug
 
 Range collection can be directly added to the scales option within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -44,7 +44,7 @@ The appearance of the range can be customized through the following properties.
 
 Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -87,7 +87,7 @@ N> On setting both the position properties - "distanceFromScale" and "placement"
 ## Multiple Ranges 
 Multiple ranges can be added by placing an array of objects in `ranges` option.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

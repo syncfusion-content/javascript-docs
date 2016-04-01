@@ -22,7 +22,7 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {
@@ -52,7 +52,7 @@ Basic attributes such as **height** and **width** property are used to set heigh
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#SubGauge1").ejCircularGauge({
@@ -100,7 +100,7 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         $("#SubGauge1").ejCircularGauge({

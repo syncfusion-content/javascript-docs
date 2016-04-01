@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDialog
+title: Properties, Methods and Events of ejDialog Widget
 description: Methods, members, events available in ejDialog
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The Dialog control displays a Dialog window within a webpage. The Dialog enables
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(element).ejDialog(options)
 
@@ -35,7 +35,7 @@ Settings for Dialog.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
     
     // Create the Dialog widget
 
@@ -69,7 +69,7 @@ Default Value:
 Example 
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({actionButtons: ["close","collapsible","pin"]}); 
     
@@ -88,7 +88,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#dialog").ejDialog({allowDraggable: false});
          
@@ -106,7 +106,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({allowKeyboardNavigation: true}); 
 
@@ -154,7 +154,7 @@ The duration for the animation effect when the dialog is closed.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#dialog").ejDialog({
         
@@ -203,7 +203,7 @@ close
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({closeIconTooltip: "close" }); 
 
@@ -222,7 +222,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({closeOnEscape: false}); 
     
@@ -243,7 +243,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({containment: "#dragarea"}); 
 
@@ -264,7 +264,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({content: "#samplearea" }); 
 
@@ -284,7 +284,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({contentType: "ajax" }); 
 
@@ -303,7 +303,7 @@ null
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({contentType: "ajax",
 
@@ -324,7 +324,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ cssClass: "gradient-lime" }); 
     
@@ -343,7 +343,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ enableAnimation: false}); 
 
@@ -362,7 +362,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ enabled: true }); 
 
@@ -381,7 +381,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({enableModal: true}); 
 
@@ -403,7 +403,7 @@ false
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({enablePersistence: true}); 
 
@@ -422,7 +422,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({enableResize: false}); 
 
@@ -441,7 +441,7 @@ false
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({enableRTL: true}); 
 
@@ -460,7 +460,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({faviconCSS : "custom-icon" }); 
 
@@ -479,7 +479,7 @@ auto
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({height: 400 }); 
 
@@ -500,7 +500,7 @@ false
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({isResponsive: true }); 
 
@@ -517,7 +517,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({locale: "en-US"});
 
@@ -537,7 +537,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({maxHeight: 600 }); 
 
@@ -556,7 +556,7 @@ null
 Example
 {:.example}
     
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({maxWidth: 600 }); 
 
@@ -575,7 +575,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({minHeight: 400 }); 
 
@@ -593,7 +593,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({minWidth: 400 }); 
 
@@ -629,7 +629,7 @@ Sets the top position of the Dialog widget.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 
@@ -648,7 +648,7 @@ true
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({showHeader: false}); 
 
@@ -667,7 +667,7 @@ true
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({showOnInit:true}); 
 
@@ -686,7 +686,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({showRoundedCorner: true}); 
 
@@ -705,7 +705,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({target: "#samplearea" }); 
 
@@ -724,7 +724,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({title: "Custom title" }); 
 
@@ -795,7 +795,7 @@ Sets the tooltip for pin button.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({tooltip: { close: "Exit" }}); 
 
@@ -814,7 +814,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({width: 500 }); 
 
@@ -833,7 +833,7 @@ Default Value:
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({zIndex: 500 }); 
 
@@ -849,7 +849,7 @@ Closes the dialog widget dynamically.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("close"); 
 
@@ -863,7 +863,7 @@ Collapses the content area when it is expanded.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("collapse"); 
 
@@ -878,7 +878,7 @@ Destroys the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("destroy"); 
 
@@ -893,7 +893,7 @@ Expands the content area when it is collapsed.
 Example 
 {:.example}   
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("collapse");
 
@@ -910,7 +910,7 @@ N>Since it is deprecated we suggest to use the method “[isOpen](#methods:isope
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("isOpened"); 
 
@@ -925,7 +925,7 @@ Checks whether the Dialog widget is opened or not. This methods returns Boolean 
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     var isOpen = $("#dialog").ejDialog("isOpen"); 
 
@@ -940,7 +940,7 @@ Maximizes the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("maximize"); 
 
@@ -955,7 +955,7 @@ Minimizes the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("minimize"); 
 
@@ -970,7 +970,7 @@ Opens the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("open"); 
 
@@ -984,7 +984,7 @@ Pins the dialog in its current position.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("pin"); 
 
@@ -999,7 +999,7 @@ Restores the dialog.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("maximize");
 
@@ -1014,7 +1014,7 @@ Unpins the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("unpin"); 
 
@@ -1042,7 +1042,7 @@ The title for the dialog widget.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("setTitle","The Dialog"); 
 
@@ -1070,7 +1070,7 @@ The content for the dialog widget. It accepts both string and html string.</td><
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("setContent","custom content"); 
 
@@ -1085,7 +1085,7 @@ Sets the focus on the Dialog widget.
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog("focus"); 
 
@@ -1126,7 +1126,7 @@ Name of the event</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#dialog").ejDialog({ beforeOpen: function (args) {} }); 
@@ -1204,7 +1204,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#dialog").ejDialog({ ajaxError: function (args){} }); 
@@ -1254,7 +1254,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#dialog").ejDialog({ ajaxSuccess: function (args){}});
@@ -1300,7 +1300,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#dialog").ejDialog({ beforeClose: function(args){}});
@@ -1353,7 +1353,7 @@ Example
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ Close: function (args) {} }); 
 
@@ -1398,7 +1398,7 @@ Example
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ close: function (args) {} }); 
 
@@ -1450,7 +1450,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ contentLoad: function (args) {} }); 
 
@@ -1489,7 +1489,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ create: function (args) {} }); 
 
@@ -1527,7 +1527,7 @@ Name of the event.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#dialog").ejDialog({ destroy: function (args) {} }); 
@@ -1572,7 +1572,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ drag: function (args) {} }); 
 
@@ -1616,7 +1616,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#dialog").ejDialog({ dragStart: function (args) {} }); 
 
@@ -1659,7 +1659,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ dragStop: function (args) {} }); 
 
@@ -1697,7 +1697,7 @@ Name of the event.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
            $("#dialog").ejDialog({ open: function (args) {} }); 
@@ -1742,7 +1742,7 @@ Example
 {:.example}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#dialog").ejDialog({ resize: function (args) {} }); 
 
@@ -1785,7 +1785,7 @@ Current event object.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#dialog").ejDialog({ resizeStart: function (args) {} }); 
@@ -1829,7 +1829,7 @@ Current event object.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#dialog").ejDialog({ resizeStop: function (args) {} }); 
@@ -1868,7 +1868,7 @@ Name of the event.</td></tr>
 Example
 {:.example}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#dialog").ejDialog({ 
@@ -1915,7 +1915,7 @@ Example
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#dialog").ejDialog({ 
 

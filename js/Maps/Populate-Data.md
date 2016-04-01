@@ -23,7 +23,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 **[usa.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
     var usMap = //Paste all the content copied from the JSON file// 
 
@@ -61,7 +61,7 @@ Refer both shape data and datasource as illustrated in the following code exampl
 
 **[populationData.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
     var populationData = [
         { name: "California", population: "38332521" },

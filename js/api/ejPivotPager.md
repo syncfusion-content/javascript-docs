@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejPivotPager
+title: Properties, Methods and Events of ejPivotPager Widget
 documentation: API
 platform: js
 keywords: ejPivotPager, API, Essential JS PivotPager
@@ -15,7 +15,7 @@ Support has been provided in PivotGrid to load and render large amount of data w
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotPager()
 

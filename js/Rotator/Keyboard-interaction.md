@@ -114,7 +114,7 @@ You can refer the following code example for **keyboard** navigation.
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
   
   	
@@ -148,7 +148,7 @@ You can refer the following code example for **keyboard** navigation.
 
 Add the following code in your **JavaScript** to focus the control.
 
-  {% highlight js %}
+  {% highlight javascript %}
 
   
     //Control focus key

@@ -182,7 +182,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var empList = [{
@@ -245,7 +245,7 @@ The JSON array to the [dataSource](http://help.syncfusion.com/js/api/ejdropdownl
 	
 {% endhighlight %}
 
-{% highlight js %}	
+{% highlight javascript %}	
   
     $(function() {
         var items = [{
@@ -289,7 +289,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
@@ -319,7 +319,7 @@ For further details about OData service please refer [the link](http://www.odata
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var dataManager = ej.DataManager({
@@ -352,7 +352,7 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         $("#dropdown1").ejDropDownList({
@@ -400,7 +400,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
     $(function() {
         //custom adaptor
@@ -472,7 +472,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
         $(function() { 
             var dataManager = ej.DataManager({
@@ -505,7 +505,7 @@ N> In both modes, set of items will be fetched based on the count specified in t
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
     
        $(function() {        
         var dataManager = ej.DataManager({

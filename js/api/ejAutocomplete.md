@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejAutocomplete
+title: Properties,Methods and Events of Essential JS ejAutocomplete Widget
 description: Methods, members, events available in ejAutocomplete
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 		
 	$(element).ejAutocomplete()
 
@@ -62,7 +62,7 @@ N> This property is applicable only when the “[MultiSelectMode](http://help.sy
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		dataSource: window.carList, 
@@ -85,7 +85,7 @@ N>  This property will work only when the “[MultiSelectMode](http://help.syncf
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		allowAddNew: true, 
@@ -107,7 +107,7 @@ Enables or disables the sorting of suggestion list item. The default sort order 
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		allowSorting: false 
@@ -126,7 +126,7 @@ To focus the items in the suggestion list when the popup is shown. By default fi
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		autoFocus: true 
@@ -145,7 +145,7 @@ Enables or disables the case sensitive search.
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		caseSensitiveSearch: true 
@@ -164,7 +164,7 @@ The root class for the **Autocomplete** textbox widget which helps in customizin
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		cssClass: 'gradient-lime' 
@@ -183,7 +183,7 @@ The data source contains the list of data for the suggestions list. It can be a 
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		dataSource: window.carList, 
@@ -203,7 +203,7 @@ The time delay (in milliseconds) after which the suggestion popup will be shown.
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		delaySuggestionTimeout: 500 
@@ -226,7 +226,7 @@ N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any 
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		multiSelectMode: ej.MultiSelectMode.Delimiter, 
@@ -248,7 +248,7 @@ N> This property is applicable only when the [showEmptyResultText](http://help.s
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		emptyResultText: 'No Results Found' 
@@ -269,7 +269,7 @@ N> This property works only when “[filterType](http://help.syncfusion.com/js/a
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		enableAutoFill: true 
@@ -288,7 +288,7 @@ Enables or disables the **Autocomplete** textbox widget.
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		enabled: false
@@ -307,7 +307,7 @@ Enables or disables displaying the duplicate names present in the search result.
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		enableDistinct: true 
@@ -328,7 +328,7 @@ N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is suppo
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		enablePersistence: true 
@@ -347,7 +347,7 @@ Displays the Autocomplete widget’s content from right to left when enabled.
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		enableRTL: true 
@@ -394,7 +394,7 @@ Used to group the suggestion list items. <br/><br/></td>
 
 #### Example 
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		fields: { 
@@ -417,7 +417,7 @@ Specifies the search filter type. There are several types of search filter avail
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		filterType: 'contains' 
@@ -436,7 +436,7 @@ The height of the Autocomplete textbox.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		height: 30 
@@ -455,7 +455,7 @@ The search text can be highlighted in the AutoComplete suggestion list when enab
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		highlightSearch: true 
@@ -474,7 +474,7 @@ Number of items to be displayed in the suggestion list.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		itemsCount: 2 
@@ -493,7 +493,7 @@ Minimum number of character to be entered in the Autocomplete textbox to show th
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		minCharacter: 3 
@@ -532,7 +532,7 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		multiSelectMode: ej.MultiSelectMode.Delimiter 
@@ -551,7 +551,7 @@ The height of the suggestion list.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		popupHeight: '100px' 
@@ -570,7 +570,7 @@ The width of the suggestion list.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		popupWidth: '152px' 
@@ -589,7 +589,7 @@ The query to retrieve the data from the data source.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	var dataManger = ej.DataManager({ 
 		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" 
@@ -618,7 +618,7 @@ Indicates that the autocomplete textbox values can only be readable.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		readOnly: true 
@@ -633,7 +633,7 @@ Sets the value for the Autocomplete textbox based on the given input key value.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$('#autocomplete').ejAutocomplete({
 		selectValueByKey: "15", 
@@ -656,7 +656,7 @@ Enables or disables showing the message when there are no suggestions for the en
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		showEmptyResultText: false 
@@ -675,7 +675,7 @@ Enables or disables the loading icon to intimate the searching operation. The lo
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		showLoadingIcon: false 
@@ -694,7 +694,7 @@ Enables the showPopup button in autocomplete textbox. When the Showpopup button 
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		showPopupButton: true 
@@ -713,7 +713,7 @@ Enables or disables rounded corner.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		showRoundedCorner: true 
@@ -751,7 +751,7 @@ Sort order specifies whether the suggestion list values has to be displayed in a
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		sortOrder: ej.SortOrder.Decending 
@@ -770,7 +770,7 @@ The template to display the suggestion list items with customized appearance.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		dataSource: window.mobileList, 
@@ -793,7 +793,7 @@ The jQuery validation error message to be displayed on form validation.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		validationRules: { 
@@ -817,7 +817,7 @@ The jQuery validation rules for form validation.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		validationRules: { 
@@ -838,7 +838,7 @@ The value to be displayed in the autocomplete textbox.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		value: "USA" 
@@ -857,7 +857,7 @@ Enables or disables the visibility of the autocomplete textbox.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		visible: false 
@@ -876,7 +876,7 @@ The text to be displayed when the value of the autocomplete textbox is empty.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		watermarkText: 'Enter the car name' 
@@ -895,7 +895,7 @@ The width of the Autocomplete textbox.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		width: 200 
@@ -914,7 +914,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("clearText");
 
@@ -929,7 +929,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("destroy");
 
@@ -944,7 +944,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("disable");
 
@@ -959,7 +959,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("enable");
 
@@ -974,7 +974,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("getSelectedItems");
 
@@ -989,7 +989,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("getValue");
 
@@ -1004,7 +1004,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("search");
 
@@ -1019,7 +1019,7 @@ N> This method does not accept any arguments.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("open");
 
@@ -1047,7 +1047,7 @@ Sets the value of the Autocomplete textbox based on the given key value.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("selectValueByKey","IND");
 
@@ -1073,7 +1073,7 @@ Sets the value of the Autocomplete textbox based on the given input text value.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete("selectValueByText","India");
 
@@ -1090,7 +1090,7 @@ Triggers when the data requested from AJAX will get successfully loaded in the *
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		actionSuccess:function(arg){
@@ -1109,7 +1109,7 @@ N> It internally uses jQuery ajaxComplete event. For details refer [here](http:/
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		actionComplete:function(arg){
@@ -1128,7 +1128,7 @@ Triggers when the data requested from AJAX get failed.
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		actionFailure:function(arg){
@@ -1173,7 +1173,7 @@ Triggers when the text box value is changed.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		change: function (argument) {
@@ -1213,7 +1213,7 @@ Triggers after the suggestion popup is closed.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({ 
 		close: function (argument) {
@@ -1253,7 +1253,7 @@ Triggers when Autocomplete widget is created.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		create: function (argument) {
@@ -1293,7 +1293,7 @@ Triggers after the Autocomplete widget is destroyed.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		destroy: function (argument) {
@@ -1338,7 +1338,7 @@ Triggers after the autocomplete textbox is focused.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		focusIn: function (argument) {
@@ -1383,7 +1383,7 @@ Triggers after the Autocomplete textbox gets out of the focus.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		focusOut: function (argument) {
@@ -1423,7 +1423,7 @@ Triggers after the suggestion list is opened.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({  
 		open: function (argument) {
@@ -1483,7 +1483,7 @@ Triggers when an item has been selected from the suggestion list.
 
 #### Example  
 
-{% highlight js %}
+{% highlight javascript %}
 
 	$("#autocomplete").ejAutocomplete({
 		select: function (argument) {

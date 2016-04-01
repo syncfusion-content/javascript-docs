@@ -74,7 +74,7 @@ Initialize **Tab** in &lt;script&gt; tag.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -168,7 +168,7 @@ The following code example is used for rendering the content with **rating** con
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -302,7 +302,7 @@ The sub **Tab** control rendering script is represented in the following code ex
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $(function () {
@@ -337,7 +337,7 @@ The following code example is used to render the sub **Tab** element in the vert
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {          
@@ -534,7 +534,7 @@ After the content declaration of all the **Tab** control, render the final outpu
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {

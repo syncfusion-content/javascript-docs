@@ -16,7 +16,7 @@ documentation: ug
 If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fired after dragging and dropping the slider. By default the **enableDeferredUpdate**is true. If **enableDeferredUpdate**is false then the **rangeChanged** event gets fired while dragging the slider.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#rangecontainer").ejRangeNavigator(
@@ -38,7 +38,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 This event is handled when the **RangeNavigator** gets loaded. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#rangecontainer").ejRangeNavigator({
@@ -58,7 +58,7 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 
 This event gets fired whenever the selected range changes in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#rangecontainer").ejRangeNavigator({
@@ -79,7 +79,7 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 
 You can easily update the data for chart by assigning the **zoomFactor** and **zoomPosition** of the **RangeNavigator** to the chart axis.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#rangecontainer").ejRangeNavigator({

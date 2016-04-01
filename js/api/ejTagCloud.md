@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTagCloud
+title: Properties, Methods and Events of ejTagCloud Widget
 description: API reference for ejTagCloud
 documentation: API
 platform: js
@@ -25,7 +25,7 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTagCloud()
 

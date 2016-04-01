@@ -83,7 +83,7 @@ Add &lt;Button&gt; element to create a Button control.
 
 Initialize Button in the script with properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
       $(function () {
 
@@ -210,7 +210,7 @@ Add the following code inside the **&lt;body&gt;** tag.
 
 Add the following code in the **&lt;script&gt;** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var v = document.getElementsByTagName("audio")[0];
     v.pause();
@@ -258,7 +258,7 @@ Add the following code in the **&lt;script&gt;** tag.
 
 Add the following function in **&lt;script&gt;** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
     function start(e) {
         v.play();// play the current song
@@ -318,7 +318,7 @@ Add **&lt;Button&gt;** element using the following code example.
 
 Initialize &lt;Button&gt; script with required properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -352,7 +352,7 @@ Initialize &lt;Button&gt; script with required properties.
 
 Add Function Definition from click event to Button function.
 
-{% highlight js %}
+{% highlight javascript %}
 
     function boldsetunset(e) {
         if (e.isChecked) {

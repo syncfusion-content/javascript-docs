@@ -22,7 +22,7 @@ Custom labels collection is directly added to the scale object. Refer the follow
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For circular gauge rendering
@@ -53,7 +53,7 @@ Font option is also available on  custom labels. The basic three properties of f
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Circular Gauge rendering
@@ -102,7 +102,7 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
           // For Circular Gauge rendering
@@ -175,7 +175,7 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
           $("#CircularGauge1").ejCircularGauge({

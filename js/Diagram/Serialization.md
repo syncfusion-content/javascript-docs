@@ -15,7 +15,7 @@ documentation: ug
 
 The Diagram is serialized as JSON data while saving. The client side method, `save` helps to serialize the Diagram as JSON. The following code illustrates how to save the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#Diagram").ejDiagram("instance");
 
@@ -26,7 +26,7 @@ var json = diagram.save();
 
 This json data can be converted to string and stored for future use. The following snippet illustrates how to save the serialized JSON into local storage.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Saves the json object in to local storage
 localStorage.setItem("diagram", JSON.stringify(json));
@@ -40,7 +40,7 @@ Diagram can also be saved as raster or vector image files. For more information 
 
 Diagram is loaded from the Serialized JSON data. The client side method, `load` helps you to load the Diagram from the serialized JSON. The following code illustrates how to load the Diagram from serialized JSON data.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Retrieves the json object from local storage
 json = JSON.parse(localStorage.getItem("diagram"));
@@ -59,7 +59,7 @@ There are some limitations in saving/loading the Diagrams and they are listed as
 * Events could be serialized only when they are defined as string. Also, the functions need to be maintained in the application level.
 When they are defined as function, it is not serialized.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function nodeCollectionChange(args) {
 }
@@ -89,7 +89,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 diagram.load(json);
 
@@ -109,7 +109,7 @@ diagram.load(json);
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 diagram.load(json);
 

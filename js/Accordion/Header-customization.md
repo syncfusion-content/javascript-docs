@@ -48,7 +48,7 @@ In an HTML page, define a div element that is a container for Accordion widg
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure collapsible header for Accordion
     $("#accordion").ejAccordion({
@@ -102,7 +102,7 @@ In an HTML page, define a div element that is a container for  Accordion widg
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure header expand event for Accordion
     $("#accordion").ejAccordion({
@@ -158,7 +158,7 @@ In an HTML page, define a div element that is a container for  Accordion wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure selected item for Accordion based on the index
     $("#accordion").ejAccordion({
@@ -211,7 +211,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure multiple item selection for Accordion
     $("#accordion").ejAccordion({

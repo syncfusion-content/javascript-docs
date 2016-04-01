@@ -42,7 +42,7 @@ The parent child relationship should be defined in data sources of both the list
 
 Create the ListBox widgets as below. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -126,7 +126,7 @@ Create the UL elements to render the parent and the child ListBox widgets as bel
 
 Create the ListBox widgets as below.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             // datasource for parent listbox

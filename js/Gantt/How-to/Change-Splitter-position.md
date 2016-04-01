@@ -13,7 +13,7 @@ In Gantt control, Splitter separates the TreeGrid section from the Chart section
 
 The following code example explains how to define the `splitterPosition` property in the Gantt.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#gantt").ejGantt({
 

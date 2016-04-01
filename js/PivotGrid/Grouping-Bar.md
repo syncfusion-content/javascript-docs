@@ -14,7 +14,7 @@ I> This feature is applicable only for relational datasource.
 ## Initialization 
 Grouping Bar allows user to dynamically alter the report by filter, sort and remove operations in the PivotGrid control. Based on the datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the `enableGroupingBar` property to true.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({

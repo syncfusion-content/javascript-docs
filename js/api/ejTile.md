@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTile
+title: Properties, Methods and Events of ejTile Widget
 description: API reference for ejTile
 documentation: API
 platform: js
@@ -16,7 +16,7 @@ The Web Tiles are simple, opaque rectangles or squares and they are arrayed on t
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTile()
 

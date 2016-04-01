@@ -15,7 +15,7 @@ documentation: ug
 
 You can hide the **Indicator** by changing the “**showIndicator**” property to “**false**”.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#OlapGauge1").ejOlapGauge({

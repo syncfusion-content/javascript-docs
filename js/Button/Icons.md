@@ -30,7 +30,7 @@ Refer to the following link to know what are the values passed in the “**Conte
 
 Also in the button sample, you can use the icon class names as follows,
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#buttonid").ejButton({
         contentType: "imageonly",

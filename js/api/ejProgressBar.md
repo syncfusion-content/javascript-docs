@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejProgressBar
+title: Properties, Methods and Events of ejProgressBar Widget
 description: API reference for ejProgressBar
 documentation: API
 platform: js
@@ -23,7 +23,7 @@ The ProgressBar control is a graphical control element used to visualize the cha
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejProgressBar()
 

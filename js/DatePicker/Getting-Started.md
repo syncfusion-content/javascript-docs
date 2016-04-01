@@ -101,7 +101,7 @@ DatePicker can be created using ‘input’ element
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -119,7 +119,7 @@ N>  DatePicker is a form control, so on form submitting its value can be retriev
 
 DatePicker provides an options to configure all its properties and get its value. DatePicker value can be assigned during initialization or at run time. Below code shows how to assign values at initialization.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $(function () {
@@ -140,7 +140,7 @@ DatePicker provides an options to configure all its properties and get its value
 
 You can assign values after initialization in DatePicker (‘it helps to get or set value at run time). Let’s consider that going to set date value at button click.
 
-{% highlight js %}
+{% highlight javascript %}
 
         //bind below onClick action to button
 

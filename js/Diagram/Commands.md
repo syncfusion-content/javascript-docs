@@ -42,7 +42,7 @@ The accepted values of the argument "direction" are as follows.
 
 The following code example illustrates how to align all the selected objects at the left side of selection boundary.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Sets direction as left
@@ -60,7 +60,7 @@ Spacing commands enable you to place the selected objects on the page at equal i
 
 The following code example illustrates how to execute the space commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
@@ -82,7 +82,7 @@ Sizing commands enable to equally size the selected nodes with respect to the fi
 
 The following code example illustrates how to execute the size commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
@@ -106,7 +106,7 @@ Clipboard commands are used to cut, copy or paste the selected elements.
 
 The following code illustrates how to execute the clipboard commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Cuts the selected elements from the Diagram to the Diagram’s clipboard
 diagram.cut();
@@ -127,7 +127,7 @@ diagram.paste();
 
 The following code illustrates how to execute the Grouping commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Groups the selected elements.
 diagram.group();
@@ -145,7 +145,7 @@ diagram.ungroup();
 
 The `bringToFront` command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Brings to front
 diagram.bringToFront();
@@ -158,7 +158,7 @@ diagram.bringToFront();
 
 The `sendToBack` command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Sends to back
 diagram.sendToBack();
@@ -171,7 +171,7 @@ diagram.sendToBack();
 
 The `moveForward` command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Moves forward
 diagram.moveForward();
@@ -184,7 +184,7 @@ diagram.moveForward();
 
 The `sendBackward` command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Sends backward
 diagram.sendBackward();
@@ -199,7 +199,7 @@ diagram.sendBackward();
 
 The following code illustrates how to zoom-in/zoom out the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 function Zoom() {
 	var diagram = $("#diagram").ejDiagram("instance");
@@ -241,7 +241,7 @@ The accepted values of the argument "direction" are as follows.
 
 The following code illustrates how to execute Nudge command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagramcontent").ejDiagram("instance");
 //Nudges up
@@ -265,7 +265,7 @@ For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#ke
 
 The following code illustrates how to execute the bringIntoView command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Brings the specified rectangular region of the Diagram content to the viewport of the page.
@@ -284,7 +284,7 @@ diagram.bringIntoView({
 
 The following code illustrates how to execute the bringToCenter command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Brings the specified rectangular region of the Diagram content to the center of the viewport.
@@ -319,7 +319,7 @@ Description</th></tr>
 
 The following code illustrates how to execute FitToPage command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Fits to page – fit Diagram based on elements
 diagram.fitToPage("page", "content", {
@@ -354,7 +354,7 @@ To explore the properties of custom commands, refer to [Commands](/js/api/ejDiag
 
 The following code example illustrates how to define a custom command.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
 commandManager: {
@@ -392,7 +392,7 @@ When any one of the default commands is not desired, they can be disabled. To ch
 
 The following code example illustrates how to disable a command and how to modify the in-built commands.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
 	//Disables the nudging commands

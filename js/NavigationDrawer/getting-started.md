@@ -108,7 +108,7 @@ Create the navigation drawer control as follows. You can display the navigation 
 
 Add the following code in the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         $("#navpane").ejNavigationDrawer({ enableListView: true, targetId: "target" });
@@ -206,7 +206,7 @@ You can load the appropriate content for the navigation items by updating the co
 
 Add the following code in the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
       $(function () {
            $("#navpane").ejNavigationDrawer({ enableListView: true, targetId: "target", listViewSettings: { mouseDown: 'slideMenuClick', persistSelection: true } });
@@ -218,7 +218,7 @@ Add the following code in the **script** tag.
 In the mouse down handler, you can hide the other content and display the respective selected item’s content.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     function slideMenuClick(e) {
             $('#Home, #Profile, #Photos, #Location').hide(); //Hiding all other contents

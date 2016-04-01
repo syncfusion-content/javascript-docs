@@ -27,7 +27,7 @@ documentation: ug
 
 Add the following code in the **script** tag.
     
-{% highlight js %}   
+{% highlight javascript %}   
 
         $("#navpane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
 

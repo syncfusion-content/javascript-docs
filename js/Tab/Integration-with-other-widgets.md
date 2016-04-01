@@ -45,7 +45,7 @@ Add the following **HTML** to render **Tab** with other widget.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following script to render Tab with other widget.  
     $(function () {

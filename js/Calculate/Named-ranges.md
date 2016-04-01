@@ -24,7 +24,7 @@ A cell, range of cells, formulas, constants, or tables can be represented in a s
 
 A name can be added for a cell or range of cells using `addNamedRange` method. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 calcObj.addNamedRange($("#newName").val(), cell)
 
@@ -48,7 +48,7 @@ The names are maintained in a collection `NamedRange`. Thus, the name can be cha
 
 A name can be removed from a cell or range of cells using `removeNamedRange` method. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 calcObj.removeNamedRange($("#newName").val(), cell)
 

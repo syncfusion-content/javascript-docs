@@ -98,7 +98,7 @@ Initialize **TimePicker** using the following code example.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // document ready
@@ -143,7 +143,7 @@ The following screenshot displays a **TimePicker** control.
 
 In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minTime** and **maxTime**, **minDate** and **maxDate**. By this way, only times ranging between **minTime** and **maxTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var curdate = new Date();// mentions the current date.
     var mintime = "9:00 AM"; // mentions the start time.
@@ -178,7 +178,7 @@ You can select the **Time** in **TimePicker** with the interval of one hour. You
 
 The following code example shows how to set **Time interval**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var curdate = new Date();// mentions the current date.
     var mintime = "9:00 AM"; // mentions the start time.
@@ -215,7 +215,7 @@ The **acknowledgment message** is displayed when you click the **Book** button.
 
 The following code example shows how to display the **acknowledgment message**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     var curdate = new Date();// mentions the current date.
     var mintime = "9:00 AM"; // mentions the start time.
@@ -310,7 +310,7 @@ Add input element to render **Two TimePickers**.
 
 Initialize **Two TimePickers** using the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     var curdate = new Date();// mentions the current date.

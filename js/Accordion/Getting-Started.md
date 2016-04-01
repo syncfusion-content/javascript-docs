@@ -138,7 +138,7 @@ Add a &lt;div&gt; element. It is a container for Accordion control.
 
 Create the Accordion control as follows.
 
-{% highlight js %}
+{% highlight javascript %}
   
     $(function () {
         // document ready
@@ -164,7 +164,7 @@ N> enableMultipleOpen property is false by default.
 
 You can also open all the panels during initialization using the **selectedItems** property of the **Accordion** control. The following code sample illustrates the opening of multiple tabs by passing the tab index values of tab.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         $("#accordion").ejAccordion({
@@ -190,7 +190,7 @@ N> showRoundedCorner property is False by default.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         $("#accordion").ejAccordion({
@@ -216,7 +216,7 @@ Up or Down arrow icons are available in **e-arrowheadup** and **e- arrowheaddown
 
 You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arrowheadup** and **e-arrowheaddown** class to **selectedHeader** and **header** properties respectively.
 
-{% highlight js %}
+{% highlight javascript %}
 
   
     $(function () {

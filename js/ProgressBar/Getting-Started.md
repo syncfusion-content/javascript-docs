@@ -90,7 +90,7 @@ Initialize **ProgressBar** in script.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
     
     $(function () {   
         $("#progressBar").ejProgressBar({ 
@@ -161,7 +161,7 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
     $(document).keypress(function () {    //To capture the keypress inside the document           

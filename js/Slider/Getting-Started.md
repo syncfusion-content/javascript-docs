@@ -168,7 +168,7 @@ Initialize **Slider** using the following code example.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         var priceObj, countObj, priceValue = 0,target;                
         $(function() {
@@ -350,7 +350,7 @@ Initialize **Slider** using the following code example.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     var loanObj, interestObj, tenureObj, loanValue = 0,
     interestValue = 0,

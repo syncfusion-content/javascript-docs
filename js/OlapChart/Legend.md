@@ -13,7 +13,7 @@ documentation: ug
 
 You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in OlapChart.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -36,7 +36,7 @@ $(function()
 ##Legend Shape
 You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in OlapChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -61,7 +61,7 @@ $(function()
 ##Legend Position
 By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the OlapChart. Default value of legend position is “bottom”.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -87,7 +87,7 @@ $(function()
 ##Legend Title
 To add the legend title, you have to specify the title text in [`title.text`](/js/api/ejchart#members:legend-title-text) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -114,7 +114,7 @@ $(function()
 ##Legend Alignment
 You can align the legend to center, far and near based on its position in the Chart area using the [`alignment`](/js/api/ejchart#members:legend-alignment) option.
  
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -139,7 +139,7 @@ $(function()
 ##Legend Items - Size and Border
 By using the legend [`itemStyle.width`](/js/api/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/js/api/ejchart#members:legend-itemstyle-height) and [`itemStyle.border`](/js/api/ejchart#members:legend-itemstyle-border) properties, you can change the legend items - size and border.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -172,7 +172,7 @@ $(function()
 ##Legend Border
 By using the [`border`](/js/api/ejchart#members:legend-border) option in legend, you can customize border color and width.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {
@@ -200,7 +200,7 @@ $(function()
 ##Legend Text
 By using the [`font`](/js/api/ejchart#members:legend-font) option, you can customize the font family, font style, font weight and size of the legend text. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function()
 {

@@ -11,7 +11,7 @@ documentation: ug
 
 The ReportViewer has an option to show or hide items in the toolbar. To customize the toolbar items, use the ReportViewer’s `toolbarSettings` property. The toolbar template can also be customized by specifying custom template to ReportViewer toolbar.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#viewer").ejReportViewer({
     toolbarSettings:{

@@ -48,7 +48,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
     // Initialize the control in JavaScript.

@@ -25,7 +25,7 @@ To calculate custom formula function, writing a method is required. Any kind of 
 
 Here, add a method that accepts an argument list and then returns the minimum value in the list. The list can be individual cell references and cell ranges, or numbers. This code example uses `CalcEngine` methods to handle the parsing and retrieving of values from the argument list. For example, custom function code has been used here.
 
-{% highlight js %}
+{% highlight javascript %}
 
  customAdd = function (argsList) {
                 var splitArgs = 
@@ -44,7 +44,7 @@ Here, add a method that accepts an argument list and then returns the minimum va
 
 This is achieved by using the `addCustomFunction` method. This method accepts the string that is used when you refer the function in a spreadsheet formula, and the second argument is a custom method name.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Adds formula name ADD to the Library.
 calcObj.addCustomFunction("ADD", "customAdd")
@@ -55,7 +55,7 @@ calcObj.addCustomFunction("ADD", "customAdd")
 
 To remove a single function from the Function Library, use the `calcObj.removeFunction` method, passing a `function name` as the string that references this function from a formula.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Remove formula name ADD from the Library. 
  calcObj.removeFunction("ADD", "customAdd")
@@ -66,7 +66,7 @@ To remove a single function from the Function Library, use the `calcObj.removeFu
 
 To replace a function with another implementation, remove the original name and add the same name again with a different method name.
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Remove formula name ADD from the Library.
  calcObj.removeFunction("SUM", "customAdd")
@@ -82,7 +82,7 @@ Removing unused functions from the Function Library, reduces the `memory usage a
 
 To remove all functions, you can clear the hash table that holds them by using the `engine.LibraryFunctions.Clear` method.
 
-{% highlight js %}
+{% highlight javascript %}
 
   // Remove all functions from the Library.
   engine.LibraryFunctions.Clear();

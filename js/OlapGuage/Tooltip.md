@@ -11,7 +11,7 @@ documentation: ug
 
 Tooltip can be enabled by using the [`enableTooltip`](/js/api/ejolapgauge#members:enabletooltip) property. By default, this property is set to "false".
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

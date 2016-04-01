@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSpreadsheet
+title: Properties, Methods and Events of ejSpreadsheet Widget
 description: Methods,members and events avaliable in ejSpreadsheet
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The Spreadsheet can be easily configured to the DOM element, such as div. you ca
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSpreadsheet(options)
 

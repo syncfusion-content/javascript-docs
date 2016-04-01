@@ -185,27 +185,28 @@ namespace ReportViewerDemo.Api
 2. You can route the WebAPI in Application_Start event into Global.asax file as follows.
 
    ~~~ csharp
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Web;
-   using System.Web.Security;
-   using System.Web.SessionState;
-   using System.Web.Http;
    
-   namespace ReportViewerDemo 
-   {
-	   public class Global: System.Web.HttpApplication 
+	   using System;
+	   using System.Collections.Generic;
+	   using System.Linq;
+	   using System.Web;
+	   using System.Web.Security;
+	   using System.Web.SessionState;
+	   using System.Web.Http;
+	   
+	   namespace ReportViewerDemo 
 	   {
-           protected void Application_Start(object sender, EventArgs e) 
-           {
-               System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
-               name: "DefaultApi",
-               routeTemplate: "api/{controller}/{action}/{id}",
-               defaults: new { id = RouteParameter.Optional });
-           }
-       }
-   }
+		   public class Global: System.Web.HttpApplication 
+		   {
+			   protected void Application_Start(object sender, EventArgs e) 
+			   {
+				   System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+				   name: "DefaultApi",
+				   routeTemplate: "api/{controller}/{action}/{id}",
+				   defaults: new { id = RouteParameter.Optional });
+			   }
+		   }
+	   }
    ~~~
 
 ### Run the Application
@@ -224,31 +225,33 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 1. Set the `reportPath` from SSRS and SSRS `reportServerUrl` in the ReportViewer properties.
 
    ~~~ html
-   <div>
-       <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-       <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-       <!-- Setting property and initializing ejReportViewer widget.-->
-       <script type="text/javascript">
-           $(function () {
-               $("#viewer").ejReportViewer({
-                   reportServiceUrl: "/api/ReportApi",
-                   reportPath: "/SSRSSamples/Territory Sales",
-                   reportServerUrl: "http://mvc.syncfusion.com/reportserver"
-               });
-           });
-       </script>
-   </div>
+   
+	   <div>
+		   <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+		   <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+		   <!-- Setting property and initializing ejReportViewer widget.-->
+		   <script type="text/javascript">
+			   $(function () {
+				   $("#viewer").ejReportViewer({
+					   reportServiceUrl: "/api/ReportApi",
+					   reportPath: "/SSRSSamples/Territory Sales",
+					   reportServerUrl: "http://mvc.syncfusion.com/reportserver"
+				   });
+			   });
+		   </script>
+	   </div>
    ~~~
 
 2. Add the credential information in ReportApiController’s `OnInitReportOptions` method which is available in `IReportController`.
 
    ~~~ csharp
-   public void OnInitReportOptions(ReportViewerOptions reportOption)
-   {
-       //Add SSRS Server and database credentials here
-       reportOption.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
-       reportOption.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
-   }
+   
+	   public void OnInitReportOptions(ReportViewerOptions reportOption)
+	   {
+		   //Add SSRS Server and database credentials here
+		   reportOption.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
+		   reportOption.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
+	   }
    ~~~
 
 3. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
@@ -265,33 +268,34 @@ The ReportViewer has data binding support to visualize the RDLC reports. The fol
 1. Assign the RDLC report path to ReportViewer’s `reportPath` property and set the data sources to the ReportViewer’s `dataSources` property.
 
    ~~~ html
-   <div>
-       <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-       <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-       <!-- Setting property and initializing ejReportViewer widget.-->
-       <script type="text/javascript">
-           $(function () {
-               $("#viewer").ejReportViewer({
-                   reportServiceUrl: "/api/ReportApi",
-                   processingMode: ej.ReportViewer.ProcessingMode.Local,
-                   reportPath: 'Product List.rdlc',
-                   dataSources: [{
-                       value: [
-                       {
-                           ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
-                       },
-                       {
-                           ProductName: "Chicken Delite", OrderId: "323B61", Price: 100, Category: "Non-Veg", Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.", ProductImage: ""
-                       },
-                       {
-                           ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
-                       }],
-                       name: "list"
-                   }]
-               });
-           });
-        </script>
-   </div>
+   
+	   <div>
+		   <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+		   <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+		   <!-- Setting property and initializing ejReportViewer widget.-->
+		   <script type="text/javascript">
+			   $(function () {
+				   $("#viewer").ejReportViewer({
+					   reportServiceUrl: "/api/ReportApi",
+					   processingMode: ej.ReportViewer.ProcessingMode.Local,
+					   reportPath: 'Product List.rdlc',
+					   dataSources: [{
+						   value: [
+						   {
+							   ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
+						   },
+						   {
+							   ProductName: "Chicken Delite", OrderId: "323B61", Price: 100, Category: "Non-Veg", Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.", ProductImage: ""
+						   },
+						   {
+							   ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
+						   }],
+						   name: "list"
+					   }]
+				   });
+			   });
+			</script>
+	   </div>
    ~~~
 
 2. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.

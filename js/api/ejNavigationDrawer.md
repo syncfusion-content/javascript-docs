@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejNavigationDrawer
+title: Properties, Methods and Events of ejNavigationDrawer Widget
 description: API reference for ejNavigationDrawer
 documentation: API
 platform: js
@@ -19,7 +19,7 @@ The Navigation Drawer is a sliding panel that displays the list of navigation op
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejNavigationDrawer()
 

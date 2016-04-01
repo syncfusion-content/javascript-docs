@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejUploadbox
+title: Properties, Methods and Events of ejUploadbox Widget
 description: API reference for ejUploadbox
 documentation: API
 platform: js
@@ -24,7 +24,7 @@ The Uploadbox control supports uploading files into the designated server, regar
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejUploadbox()
 

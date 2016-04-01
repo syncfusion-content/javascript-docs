@@ -16,7 +16,7 @@ documentation: ug
 This property sets the **width** of a **Rotator** Item. The value set to this property is **string** or **number**.
 
 
-  {% highlight js %}
+  {% highlight javascript %}
   
     $(function () {
         // declaration
@@ -26,7 +26,7 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
   {% endhighlight %}
   
   
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration
@@ -41,7 +41,7 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
 This property sets the **height** of a **Rotator** Item. The value set to this property is **string** or **number**.
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration
@@ -51,7 +51,7 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
   {% endhighlight %}
   
   
-  {% highlight js %}
+  {% highlight javascript %}
   	
     $(function () {
         // declaration

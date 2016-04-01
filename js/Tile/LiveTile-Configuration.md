@@ -25,7 +25,7 @@ Refer to the following code examples.
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}    
+{% highlight javascript %}    
    
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",
@@ -61,7 +61,7 @@ Refer to the following code examples.
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
     
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",
@@ -107,7 +107,7 @@ Refer to the following code examples.
 
 Add the following code inside the **script** tag.
     
-{% highlight js %}
+{% highlight javascript %}
         
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",

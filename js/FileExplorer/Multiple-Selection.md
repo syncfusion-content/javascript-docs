@@ -12,7 +12,7 @@ documentation: ug
 
 The FileExplorer allows the user to select multiple files by enabling the [allowMultiSelection](http://help.syncfusion.com/js/api/ejfileexplorer#members:allowmultiselection) property. The multiple selection can be done by pressing the **Ctrl** key or **Shift** key. You can select all the files in the directory by pressing “**Ctrl + A**”. The multiple selection is useful on copy pasting multiple files, deleting multiple files and downloading multiple files.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

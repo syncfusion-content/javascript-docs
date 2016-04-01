@@ -48,7 +48,7 @@ This property retrieves data from remote data. This property is applicable only 
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration
@@ -129,7 +129,7 @@ The following code example depicts the way to bind data to the **Rotator** throu
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         var imageList = [
@@ -208,7 +208,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     var list = [

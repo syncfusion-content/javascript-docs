@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejPivotSchemaDesigner
+title: Properties, Methods and Events of ejPivotSchemaDesigner Widget
 documentation: API
 platform: js
 keywords: ejPivotSchemaDesigner, API, Essential JS PivotSchemaDesigner
@@ -14,7 +14,7 @@ PivotSchemaDesigner, also known as PivotTable Field List, is automatically popul
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotSchemaDesigner()
 

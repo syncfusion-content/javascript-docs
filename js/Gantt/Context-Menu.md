@@ -21,7 +21,7 @@ The default context menu contains the following options.
 
 The following code example shows you how to enable the default context menu in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -38,7 +38,7 @@ The following screenshot shows the default Context menu in Gantt control.
 
 You can add custom context menu option in Gantt control. The following code example shows you how to add the custom context menu option in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...

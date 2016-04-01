@@ -19,7 +19,7 @@ It provides the short description of the expected value in dropdown and will dis
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{
@@ -64,7 +64,7 @@ You can use [showRoundedCorner](http://help.syncfusion.com/js/api/ejdropdownlist
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
   
     $(function() {
         var items = [{
@@ -111,7 +111,7 @@ N> you can also use [enable()](http://help.syncfusion.com/js/api/ejdropdownlist#
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         var items = [{
@@ -157,7 +157,7 @@ Note: when you add an item dynamically to the widget, you can specify the HTML a
      
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 	
     $(function() {
         var items = [{

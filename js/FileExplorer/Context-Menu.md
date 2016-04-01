@@ -85,7 +85,7 @@ It displays the details of the current selected file or folder.<br/><br/></td></
 
 The presence of the context menu can be controlled by the [showContextMenu](http://help.syncfusion.com/js/api/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our inbuilt context menu.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -120,7 +120,7 @@ For example, if you disable the “Upload” item, it disables in all places whe
 
 These methods only accepts the context menu item name as the parameter. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

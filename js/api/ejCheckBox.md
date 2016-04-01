@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejCheckBox
+title: Properties,Methods and Events of ejCheckBox Widget
 description: API reference for ejCheckBox
 documentation: API
 platform: js
@@ -15,7 +15,7 @@ The CheckBox control allows you to check an option to perform an action. This co
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejCheckBox()
 

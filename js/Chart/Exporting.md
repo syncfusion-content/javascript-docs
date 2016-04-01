@@ -158,7 +158,7 @@ EjChart supports exporting more than one charts in a page, with the *third* argu
 
 N> Refer to the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet. 
 
-{% highlight js %}
+{% highlight javascript %}
 
        //Render Chart1
        $("#container1").ejChart();

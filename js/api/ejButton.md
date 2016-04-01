@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejButton
+title: Properties, Methods and Events of ejButton Widget
 description: API reference for ejButton
 documentation: API
 platform: js
@@ -14,7 +14,7 @@ Custom Design for Html Button control.
 #### Syntax
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $(element).ejButton(options)
 

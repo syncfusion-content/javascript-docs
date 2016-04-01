@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejPager
+title: Properties, Methods and Events of ejPager Widget
 description: Methods,members and events avaliable in ejPager
 documentation: API
 platform: js
@@ -16,7 +16,7 @@ Custom Design for Html Pager control.
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPager()
 

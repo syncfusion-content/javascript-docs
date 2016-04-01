@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDroppable
+title: Properties, Methods and Events of ejDroppable Widget
 description: API reference for ejDroppable
 documentation: API
 platform: js
@@ -14,7 +14,7 @@ Plugin to make any DOM element Droppable.
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDroppable()
 
@@ -32,7 +32,7 @@ $(element).ejDroppable()
  
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script>
 // Create Dragable
@@ -79,7 +79,7 @@ Used to accept the specified draggable items.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set scope API value during initialization  
         $("#droppable").ejDroppable({ accept: null });                          
@@ -87,7 +87,7 @@ Used to accept the specified draggable items.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the accept API, after initialization:
         //Gets the accept value  
@@ -118,7 +118,7 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set scope API value during initialization  
         $("#droppable").ejDroppable({ scope: 'default' });                             
@@ -126,7 +126,7 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -158,7 +158,7 @@ destroy in the Droppable.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script>
 // Create droppabaleObj

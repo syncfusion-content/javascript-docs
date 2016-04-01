@@ -15,7 +15,7 @@ You can customize the look and feel of the Gantt control by applying themes and 
 
 You can customize the week header format and day header format in the Schedule part of the Gantt control by using the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...
@@ -36,7 +36,7 @@ The following screenshot shows the customized format schedule header in Gantt co
 
 You can customize the Taskbar based on the task information in Gantt control to highlight the task. The following code example shows how to customize the Taskbar in Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer").ejGantt({
         //...

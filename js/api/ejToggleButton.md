@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejToggleButton
+title: Properties, Methods and Events of ejToggleButton Widget
 description: API reference for ejToggleButton
 documentation: API
 platform: js
@@ -18,7 +18,7 @@ The Toggle Button allows you to perform the toggle option by using checked and u
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejToggleButton()
 

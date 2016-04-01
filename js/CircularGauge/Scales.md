@@ -35,7 +35,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
   //For circular gauge rendering
@@ -69,7 +69,7 @@ The Scale border is modified with the object called **border**. It has two borde
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         //For circular gauge rendering
@@ -110,7 +110,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -150,7 +150,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Circular Gauge rendering
@@ -204,7 +204,7 @@ You can set **Multiple scales** for a single **Circular Gauge** control by using
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({

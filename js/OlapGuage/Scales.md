@@ -15,7 +15,7 @@ documentation: ug
 
 Radius of the **Scale Bar** is changed with the help of **scale Radius** property and in order to make **Scale Bar** visible, set **showScaleBar** property to ‘**true’**. You can set size of the **Scale Bar** with the help of **scaleBareSize** and border width using **scaleBorderWidth** property**.** 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#OlapGauge1").ejOlapGauge({

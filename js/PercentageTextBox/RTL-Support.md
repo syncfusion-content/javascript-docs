@@ -36,7 +36,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 	    $("#percent").ejPercentageTextbox({

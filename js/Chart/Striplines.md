@@ -16,7 +16,7 @@ EjChart supports horizontal and vertical striplines.
 You can create horizontal stripline by adding the [`stripline`](../api/ejchart#members:primaryyaxis-stripline) in the **vertical axis** and set [`visible`](../api/ejchart#members:primaryxaxis-stripline-visible) option to **true**. Striplines are rendered in the specified **start** to **end** range and you can add more than one stripline for an axis.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...
@@ -52,7 +52,7 @@ You can create horizontal stripline by adding the [`stripline`](../api/ejchart#m
 You can create vertical stripline by adding the [`stripline`](../api/ejchart#members:primaryxaxis-stripline) in the **horizontal axis** and set [`visible`](../api/ejchart#members:primaryyaxis-stripline-visible) option to **true**.  
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...
@@ -85,7 +85,7 @@ You can create vertical stripline by adding the [`stripline`](../api/ejchart#mem
 
 To customize the stripLine text, use the [`text`](../api/ejchart#members:primaryyaxis-stripline-text) and [`font`](../api/ejchart#members:primaryyaxis-stripline-font) options. 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...
@@ -113,7 +113,7 @@ To customize the stripLine text, use the [`text`](../api/ejchart#members:primary
 
 Stripline text can be aligned by using the [`textAlignment`](../api/ejchart#members:primaryyaxis-stripline-textalignment) property.  
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...
@@ -140,7 +140,7 @@ Stripline text can be aligned by using the [`textAlignment`](../api/ejchart#memb
 
 To customize the stripLine styles, use the [`color`](../api/ejchart#members:primaryyaxis-stripline-color), [`opacity`](../api/ejchart#members:primaryyaxis-stripline-opacity), [`borderWidth`](../api/ejchart#members:primaryyaxis-stripline-borderwidth) and [`borderColor`](../api/ejchart#members:primaryyaxis-stripline-bordercolor) properties. 
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...
@@ -170,7 +170,7 @@ To customize the stripLine styles, use the [`color`](../api/ejchart#members:prim
 
 Stripline [`zIndex`](../api/ejchart#members:primaryyaxis-stripline-zindex) property is used to display the stripLine either behind or over the series.  
 
-{% highlight js %}
+{% highlight javascript %}
 
      $("#chartcontainer").ejChart({
           // ...

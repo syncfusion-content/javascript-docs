@@ -61,7 +61,7 @@ Add the following code example before **&lt;/body&gt;** tag to add list of items
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("document").ready(function (event) {
          var websiteCollection = [
@@ -103,7 +103,7 @@ The following screenshot displays the output of the above code example.
 
 In the above code example, the **frequency** properties are used to set the min and max font size to the **TagCloud** list item.
 
-{% highlight js %}
+{% highlight javascript %}
    
     $("document").ready(function (event) {
          var websiteCollection = [
@@ -143,7 +143,7 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("document").ready(function (event) {
               var websiteCollection = [

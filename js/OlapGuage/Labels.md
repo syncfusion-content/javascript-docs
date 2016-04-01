@@ -13,7 +13,7 @@ documentation: ug
 
 Label collection can be directly added to the scales option within the OlapGauge widget as an array.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -40,7 +40,7 @@ The appearance of the Label can be customized through the following properties.
 * **includeFirstValue** – includes the initial value based on user requirement.  By default, the value is “true”.
 * **font** – sets the font size, font style and font family of the label.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -82,7 +82,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 The `unitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `unitTextPosition` property, the text can be positioned either in front or back. By default, text appears at the back.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

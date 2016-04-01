@@ -88,7 +88,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration    
@@ -212,7 +212,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
 This property specifies the number of **Rotator** Items to be displayed. The default value is ‘**1’**. The value set to this property is **string** or **number**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
        // declaration
@@ -245,7 +245,7 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
 This property specifies the number of **Rotator** Items to **navigate** on a single click (next/previous/play buttons). The **navigateSteps** property value must be less than or equal to the **displayItemsCount** property value. The default value is ‘**1**’. The value set to this property is **string** or **number**.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         // declaration
@@ -276,7 +276,7 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
 
 This property sets the **index** of the slide that is displayed first. The default value is ‘1’. The value set to this property is **string** or **number**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -295,7 +295,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 
 This property sets the space between the **Rotator** Items. The value set to this property is **string** or **number**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -309,7 +309,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
 **animationType** property specifies the **Animation** type for the **Rotator** Item. **animationType** options include slide, fastSlide, slowSlide, and other custom easing animationTypes. The default value is ‘**slide**’. The value set to this property is **string**. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -325,7 +325,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
 This property sets the **speed** of slide transition. The default value is ‘**600**’. The value set to this property is **string** or **number**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -342,7 +342,7 @@ This property sets the **speed** of slide transition. The default value is ‘**
 
 This property sets the **delay** between the **Rotator** Items to move after the slide transition. The default value is **500**. The value set to this property is **string** or **number.**
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -378,7 +378,7 @@ By default, there are 12 themes support available for **Rotator** control as fol
 
 This property is used to set **root** **class** for **Rotator** control theme. The value set to this property is **string** type.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

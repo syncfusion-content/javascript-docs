@@ -71,7 +71,7 @@ In an **HTML** page, add the **&lt;ul&gt;** and **&lt;li&gt;** to configure **Me
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
      
     // Initialize the control in JavaScript.
@@ -96,7 +96,7 @@ Add the following code in your **&lt;script&gt;** section.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function ($) {

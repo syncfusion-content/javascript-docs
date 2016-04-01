@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDataManager
+title: Properties,Methods and Events of Essential JS ejDataManager Widget
 documentation: API
 platform: js
 metaname: 
@@ -15,7 +15,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 var dataManager = new ej.DataManager(datasource, query, adaptor)
 

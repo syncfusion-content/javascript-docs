@@ -52,7 +52,7 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#pizzaMenu").ejAccordion({ enableMultipleOpen: true });
 

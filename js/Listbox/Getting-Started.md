@@ -97,7 +97,7 @@ Initialize the ListBox widget as below.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
       $(function () {
@@ -164,7 +164,7 @@ The ListBox widget supports item selection.
 
 {% seealso %} [Selection](http://help.syncfusion.com/js/listbox/selection) {% endseealso %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         jQuery(function ($) {

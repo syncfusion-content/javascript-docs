@@ -37,7 +37,7 @@ You cannot finish a task until the other task is completed.
 
 The following code example shows you how to show the predecessor in the Gantt control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#GanttContainer ").ejGantt({
         //...

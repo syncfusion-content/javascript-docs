@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDatePicker
+title: Properties,Methods and Events of ejDatePicker Widget
 description: API reference for ejDatePicker
 documentation: API
 platform: js
@@ -14,7 +14,7 @@ Input field that display the DatePicker calendar as popup to select and set the 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDatePicker(options)
 

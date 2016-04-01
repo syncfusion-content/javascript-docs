@@ -23,7 +23,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Set default value of the TimePicker as follows.
     $(function () {
@@ -52,7 +52,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // To enable/disable TimePicker controls use the following code example.
     //Enable Timepicker:
@@ -93,7 +93,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Configure delay time for PopUp panel in TimePicker control as follows,
     $('#time').ejTimePicker({
@@ -123,7 +123,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // You can configure Rounded Corner  in TimePicker control as follows,
     $('#time').ejTimePicker({
@@ -153,7 +153,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // You can customize the width and height of the TimePicker as follows.
     $(function () {
@@ -182,7 +182,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Use popupHeight and popupWidth property for the TimePicker as follows.
     $(function () {
@@ -215,7 +215,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Use enablePersistence property to maintain selected value as follows.
     $(function () {
@@ -244,7 +244,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Use enableStrictMode property to set default value as follows.
     $(function () {
@@ -279,7 +279,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Change Time Interval using hourInterval, minuteInterval and secondInterval property.
     $(function () {

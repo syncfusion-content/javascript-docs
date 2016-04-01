@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRibbon
+title: Properties, Methods and Events of ejRibbon Widget
 description: Members,Methods,Events available in ejRibbon
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(element).ejRibbon();
 
@@ -1764,7 +1764,6 @@ Specifies the menu members, events by using the menu settings for the menu in th
 #### Default Value:
 
 * object
-
 <ts ref = “ej.Menu.Model” />
 
 #### Example
@@ -2778,7 +2777,6 @@ Specifies the Syncfusion button members, events by using this buttonSettings.
 #### Default Value:
 
 * object
-
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -3198,7 +3196,6 @@ Specifies the syncfusion button members, events by using buttonSettings.
 #### Default Value:
 
 * object
-
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -3667,7 +3664,6 @@ Specifies the Syncfusion menu members, events by using menuSettings.
 #### Default Value:
 
 * object
-
 <ts ref = “ej.Menu.Model” />
 
 #### Example
@@ -4269,7 +4265,6 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
 #### Default Value:
 
 * object
-
 <ts ref = “ej.DropDownList.Model” />
 
 #### Example
@@ -4618,7 +4613,6 @@ Specifies the Syncfusion button members, events by using buttonSettings.
 #### Default Value:
 
 * object
-
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -5382,7 +5376,6 @@ Specifies the Syncfusion split button members, events by using this splitButtonS
 #### Default Value:
 
 * object
-
 <ts ref = “ej.SplitButton.Model” />
 
 #### Example
@@ -5493,7 +5486,6 @@ Specifies the Syncfusion toggle button members, events by using toggleButtonSett
 #### Default Value:
 
 * object
-
 <ts ref = “ej.ToggleButton.Model” />
 
 #### Example
@@ -7336,7 +7328,7 @@ Destroys the ribbon widget. All the events bound using this._on are unbound auto
 
 #### Example
 
-{% highlight js %}
+{% highlight javascript %}
  
     <script>
     var ribbonObj = $("#Ribbon").data("ejRibbon");
@@ -7346,7 +7338,7 @@ Destroys the ribbon widget. All the events bound using this._on are unbound auto
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
     <script>
     // destroy the ribbon

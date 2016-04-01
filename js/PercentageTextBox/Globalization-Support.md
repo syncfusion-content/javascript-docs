@@ -51,7 +51,7 @@ The following example describes the way to use Globalization for **PercentageTex
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#percent").ejPercentageTextbox({

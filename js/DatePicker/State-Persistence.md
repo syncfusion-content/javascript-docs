@@ -17,7 +17,7 @@ You can sustain the entire widget model of DatePicker even after form post or br
 are stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

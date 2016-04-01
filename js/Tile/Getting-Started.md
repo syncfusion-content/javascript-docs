@@ -51,7 +51,7 @@ Create a div element that acts as a container for Tile control. Initialize ejTil
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
  
     $(function ()
     {
@@ -104,7 +104,7 @@ Refer to the following code example.
 
 Add the following code inside the **script** tag.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#tile1").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/people_1.png', imagePosition: "fill", tileSize: "medium", text: "People" });

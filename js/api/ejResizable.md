@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejResizable
+title: Properties, Methods and Events of ejResizable Widget
 description: API reference for ejResizable
 documentation: API
 platform: js
@@ -16,7 +16,7 @@ Plugin to make any DOM element Resizable.
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejResizable()
 
@@ -35,7 +35,7 @@ $(element).ejResizable()
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 <script>
 // Create resizing
 $('#resizing').ejResizable();   
@@ -103,7 +103,7 @@ Sets the offset of the resizing helper relative to the mouse cursor.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set cursorAt API value during initialization  
         $("#resizing").ejResizable({ cursorAt:  { top: 1, left: -2 } });                                
@@ -111,7 +111,7 @@ Sets the offset of the resizing helper relative to the mouse cursor.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
@@ -161,7 +161,7 @@ Distance in pixels after mousedown the mouse must move before resizing should st
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set distance API value during initialization  
         $("#resizing").ejResizable({ distance: 1 });                            
@@ -169,7 +169,7 @@ Distance in pixels after mousedown the mouse must move before resizing should st
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the distance API, after initialization:
         //Gets the distance value  
@@ -219,7 +219,7 @@ If specified, restricts resize start click to the specified element(s).
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set handle API value during initialization  
         $("#resizing").ejResizable({ handle: null });                           
@@ -227,7 +227,7 @@ If specified, restricts resize start click to the specified element(s).
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the handle API, after initialization:
         //Gets the handle value  
@@ -277,7 +277,7 @@ Sets the max height for resizing
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set maxHeight API value during initialization  
         $("#resizing").ejResizable({ maxHeight: null });                                
@@ -285,7 +285,7 @@ Sets the max height for resizing
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the maxHeight API, after initialization:
         //Gets the maxHeight value  
@@ -335,7 +335,7 @@ Sets the max width for resizing
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set maxWidth API value during initialization  
         $("#resizing").ejResizable({ maxWidth: null });                         
@@ -343,7 +343,7 @@ Sets the max width for resizing
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the maxWidth API, after initialization:
         //Gets the maxWidth value  
@@ -393,7 +393,7 @@ Sets the min Height for resizing
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set minHeight API value during initialization  
         $("#resizing").ejResizable({ minHeight: null });                                
@@ -401,7 +401,7 @@ Sets the min Height for resizing
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the minHeight API, after initialization:
         //Gets the minHeight value  
@@ -451,7 +451,7 @@ Sets the min Width for resizing
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set minWidth API value during initialization  
         $("#resizing").ejResizable({ minWidth: null });                         
@@ -459,7 +459,7 @@ Sets the min Width for resizing
   {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the minWidth API, after initialization:
         //Gets the minWidth value  
@@ -510,7 +510,7 @@ Used to group sets of resizeable items.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //To set scope API value during initialization  
         $("#resizing").ejResizable({ scope: 'default' });                               
@@ -518,7 +518,7 @@ Used to group sets of resizeable items.
  {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
@@ -566,7 +566,7 @@ destroy in the Resizable.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 <script>
 // Create resizingObj
@@ -638,7 +638,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //destroy event for Resizable
 $("#resizing").ejResizable({ 
@@ -702,7 +702,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //helper event for Resizable
 $("#resizing").ejResizable({ 
@@ -767,7 +767,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //resizeStart event for Resizable
 $("#resizing").ejResizable({ 
@@ -830,7 +830,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //resizeStart event for Resizable
 $("#resizing").ejResizable({ 
@@ -892,7 +892,7 @@ type</td>
 
 
 
-{% highlight js %}
+{% highlight javascript %}
  
 //resizeStop event for Resizable
 $("#resizing").ejResizable({ 

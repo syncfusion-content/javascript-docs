@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejToolbar
+title: Properties, Methods and Events of ejToolbar Widget
 description: API reference for ejToolbar
 documentation: API
 platform: js
@@ -19,7 +19,7 @@ The Toolbar control supports displaying a list of tools within a web page. This 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejToolbar()
 

@@ -16,7 +16,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		toolbarSettings : { showToolbar : true, toolbarItems : ["search"] },
@@ -46,7 +46,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		toolbarSettings : { showToolbar : true, toolbarItems : ["search"] },

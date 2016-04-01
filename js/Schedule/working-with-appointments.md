@@ -691,7 +691,7 @@ The following code example lets you drag and drop the external items from the tr
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 function onDragStart(e) {
     if (e.targetElementData.parentId == "") return false;
@@ -864,7 +864,7 @@ The [categorizeSettings](/js/api/ejschedule#members:categorizesettings) holds th
 
 We have below 6 default values for Categorize dataSource collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 categorizeSettings: {
     dataSource: [{
@@ -1020,7 +1020,7 @@ The [prioritySettings](/js/api/ejschedule#members:prioritysettings) holds the be
 
 We have below 4 default values for priority dataSource collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
 prioritySettings: {
     dataSource: [{

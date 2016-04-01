@@ -19,7 +19,7 @@ The basic customization for any control is to set the dimension. Here dimension 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Digital Gauge rendering
@@ -58,7 +58,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Digital Gauge rendering
@@ -96,7 +96,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
  $(function () {

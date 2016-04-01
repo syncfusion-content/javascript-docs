@@ -17,7 +17,7 @@ documentation: ug
 
 You can set the location of the **custom label** in circular gauge using “**location**” property. Refer the following code example.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#OlapGauge1").ejOlapGauge({
@@ -102,7 +102,7 @@ $(function() {
 
 You can customize the **custom label** font with font style, font family, and size properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function() {
     $("#OlapGauge1").ejOlapGauge({

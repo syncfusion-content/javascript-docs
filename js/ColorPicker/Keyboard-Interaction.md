@@ -123,7 +123,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorP
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
     jQuery(function ($) {

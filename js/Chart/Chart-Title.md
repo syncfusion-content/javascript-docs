@@ -13,7 +13,7 @@ documentation: ug
 
 By using the title option, you can add the [`text`](../api/ejchart.html#members:title-text) as well as customize its [`border`](../api/ejchart.html#members:title-border),  [`background`](../api/ejchart.html#members:title-background) color and [`font`](../api/ejchart.html#members:title-font).
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#chartcontainer").ejChart({ 
 
@@ -57,7 +57,7 @@ $("#chartcontainer").ejChart({
 
 You can change the title alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart.html#members:title-textalignment) property of the chart title. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({
@@ -83,7 +83,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 
 By using the subTitle option, you can add the [`subTitle`](../api/ejchart.html#members:title-subtitle) to the chart title and customize its [`border`](../api/ejchart.html#members:title-subtitle-border),  [`background`](../api/ejchart.html#members:title-subtitle-background) color and [`font`](../api/ejchart.html#members:title-subtitle-font). 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#chartcontainer").ejChart({
                
@@ -126,7 +126,7 @@ $("#chartcontainer").ejChart({
 
 You can change the subtitle alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart.html#members:title-subtitle-textalignment) property of the subTitle.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#chartcontainer").ejChart({

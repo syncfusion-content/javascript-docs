@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejPivotGrid
+title: Properties, Methods and Events of ejPivotGrid Widget
 documentation: API
 platform: js
 keywords: ejPivotGrid, API, Essential JS PivotGrid
@@ -14,7 +14,7 @@ The PivotGrid control is easily configurable, presentation-quality business cont
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejPivotGrid()
 

@@ -13,7 +13,7 @@ documentation: ug
 
 Gauges can be arranged in specified number of rows by using the [`rowsCount`](/js/api/ejolapgauge#members:rowscount) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",
@@ -29,7 +29,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 Gauges can be arranged in specified number of columns by using the [`columnsCount`](/js/api/ejolapgauge#members:columnscount) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#OlapGauge1").ejOlapGauge({
     url: "../OlapGauge",

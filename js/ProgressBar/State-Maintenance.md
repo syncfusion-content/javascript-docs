@@ -23,7 +23,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following script to enable State Maintenance.

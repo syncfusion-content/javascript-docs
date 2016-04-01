@@ -15,7 +15,7 @@ The **Quantitative Scale** appearance is customized using **quantitativeScaleSet
 
 **Quantitative Scale** range is set using the properties **minimum**, **maximum** and **interval** of **quantitativeScaleSettings** property. **Minimum** specifies the start range of the scale, **maximum** specifies the end range of scale and **interval** specifies the number of intervals between start and end range. Default values of **minimum**, **maximum** and **interval** are 0, 10 and 1 respectively. The number of minor ticks (ticks between intervals) are specified using **minorTicksPerInterval** property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -41,7 +41,7 @@ The following screenshot displays a **Bullet Graph** with start range 0, end ran
 
 Bullet Graph does not position Quantitative scale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the location property available in quantitativeScaleSettings.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -62,7 +62,7 @@ The following screenshot displays **Bullet Graph** with Quantitative scale at 20
 
 Color, size and width of **Major tick** lines are customized using **majorTickSettings** property in **quantitativeScaleSettings**. Default value of **size** and **width** properties are 13 and 2 respectively. **Ticks** are drawn in black color by default. The property **size** represents the height of **tick** lines and **width** represents the width of **tick** lines and **ticks** color are customized using **stroke** property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -89,7 +89,7 @@ The following screenshot displays **Major ticks** in **gray** color with a width
 
 Minor ticks can also be customized similar to major ticks. The properties stroke, width and size of minorTickSettings are used to customize Minor ticks in quantitative scale. Stroke specifies the color of ticks, width specifies the width of ticks and size specifies the height of the ticks.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -116,7 +116,7 @@ The following screenshot displays **Bullet Graph** with customized **Minor ticks
 
 **Ticks** are positioned below, above or inside the quantitative scale. By default **ticks** are positioned below the quantitative scale. The **tickPosition** property is used to customize the position of ticks in quantitative scale. **Ticks** can be placed inside the quantitative scale by setting **tickPosition** to **cross**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -141,7 +141,7 @@ The following screenshot displays **Bullet Graph** with ticks positioned above q
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -176,7 +176,7 @@ The following screenshot displays **Bullet Graph** ticks inside **Quantitative S
 
 **Quantitative****scale****labels** are customized with prefix, suffix, font, color and size using **labelSettings** property. By default, label text is displayed in black color with 12 pixel ‘Segoe UI’ font and there is a padding of 20 pixels space between quantitative scale and labels.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -212,7 +212,7 @@ The following screenshot displays **Bullet Graph** labels in blue color
 
 **Quantitative****scale****labels** can be placed either inside or outside the scale using “**labelPlacement**” property. By default labels are placed 15 pixels outside the scale.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -249,7 +249,7 @@ The following screenshot displays **Bullet Graph** labels inside **Quantitative 
 
 Performance measure bar is customized using featuredMeasureSettings in quantitativeScaleSettings property. Color of the bar is customized using stroke property and width using width property. By default bar is drawn in black color with 6 pixels of width.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -276,7 +276,7 @@ The following screenshot displays **Bullet Graph** with customized **Performance
 
 Comparative symbol color and width are customized using comparativeMeasureSettings through quantitativeScaleSettings property. Color of the symbol is customized using stroke property and width using width property. By default Comparative measure symbol is displayed in black color with a width of 5 pixels.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 
@@ -303,7 +303,7 @@ The following screenshot displays **Bullet Graph** with customized **Comparative
 
 **Bullet Graph** supports comparing more than one performance at a time, given that all the comparisons are related using **featureMeasure** in **quantitativeScaleSettings** property.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

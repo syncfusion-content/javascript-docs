@@ -23,7 +23,7 @@ You can add Bar Pointer collection directly to the scale object. Refer the follo
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $ (function () {
         // For Rendering Linear gauge
@@ -76,7 +76,7 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Rendering Linear gauge
@@ -136,7 +136,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $(function () {
@@ -196,7 +196,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Rendering Linear gauge
@@ -251,7 +251,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Rendering Linear gauge

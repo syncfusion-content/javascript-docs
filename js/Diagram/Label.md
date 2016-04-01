@@ -15,7 +15,7 @@ documentation: ug
 
 You can add a label to a node/connector by defining the label object and adding that to the `labels` collection of node/connector. The `text` property of label defines the text to be displayed. The following code illustrates how to create a Label. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -83,7 +83,7 @@ The client side API `updateLabel` is used to update the labels at run time.
 
 The following code example illustrates how to change the label properties.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var selectedObject = diagram.model.selectedItems.children[0];
@@ -124,7 +124,7 @@ The following tables illustrates all the possible alignments visually with **off
 
 The following codes illustrates how to align labels.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -167,7 +167,7 @@ $("#diagram").ejDiagram({
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the `margin` property.
 The following code example illustrates how to align a label based on its `offset`, `horizontalAlignment`, `verticalAlignment` and `margin` values.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -209,7 +209,7 @@ $("#diagram").ejDiagram({
 
 The `textAlign` property of label allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -249,7 +249,7 @@ $("#diagram").ejDiagram({
 
 When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The `wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -287,7 +287,7 @@ $("#diagram").ejDiagram({
 
 You can change the font style of the labels with the font specific properties(`fontSize`,`fontFamily`,`fontColor`.,). The following code illustrates how to customize the appearance of a label.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -323,7 +323,7 @@ $("#diagram").ejDiagram({
 
 The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -358,7 +358,7 @@ $("#diagram").ejDiagram({
 
 A **Label** can be displaced from its original position to any preferred location interactively. Dragging is disabled by default. You can enable label dragging with the `constraints` property of node/connector. The following code illustrates how to enable label **dragging**.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 var nodes = [{
@@ -417,7 +417,7 @@ $("#diagram").ejDiagram({
 
 You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the `rotateAngle` property of label. The following code illustrates how to rotate a label.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -459,7 +459,7 @@ Double-clicking any label will enables **editing** of that. Double-clicking the 
 
 You can programmatically edit the label by changing the `mode` of the label. The following code illustrates how to edit the label programmatically.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.model.selectedItems.children[0];
@@ -477,7 +477,7 @@ diagram.updateLabel(node.name, node.labels[0], options);
 
 Diagram allows to create read only labels. You have to set the `readOnly` property of label to enable/disable the read only mode. The following code illustrates how to enable **readOnly** mode.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
@@ -508,7 +508,7 @@ $("#diagram").ejDiagram({
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",

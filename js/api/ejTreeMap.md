@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTreeMap
+title: Properties, Methods and Events of ejTreeMap Widget
 description: API reference for ejMap
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The treemap can be easily configured to the DOM element, such as div and can be 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTreeMap<span class="signature">()</span>
 

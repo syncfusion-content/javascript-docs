@@ -15,7 +15,7 @@ documentation: ug
 
 Following code example illustrates on how to localize OlapGauge based on "French" culture.
 
-{% highlight js %}
+{% highlight javascript %}
 
 ej.olap.OlapGauge.locale["fr-FR"] = {
     RevenueGoal: "Objectif de chiffre d'affaires",

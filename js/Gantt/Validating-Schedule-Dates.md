@@ -13,7 +13,7 @@ Validating schedule dates is used to change the schedule start date and end date
 
 `PrevTimeSpan` and `NextTimeSpan` toolbar items are used to create new time span based on the schedule mode.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#gantt").ejGantt({

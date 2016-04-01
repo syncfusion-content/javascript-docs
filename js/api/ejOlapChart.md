@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejOlapChart
+title: Properties, Methods and Events of ejOlapChart Widget
 documentation: API
 platform: js
 keywords: ejOlapChart, API, Essential JS OlapChart
@@ -14,7 +14,7 @@ The OlapChart is a lightweight control that reads OLAP information and visualize
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejOlapChart()
 

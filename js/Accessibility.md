@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility
+title: Accessibility of Essential JS UI widgets
 description: WAI-ARIA accessibility compliance of Essential JS UI widgets
 platform: js
 control: Introduction
@@ -20,7 +20,7 @@ For example, the `ejButton` widget, when created through JavaScript code will re
 
 {% endhighlight %}
 
-{% highlight js %} 
+{% highlight javascript %} 
 
 //  initialization of ejButton widget 
 $("#button11").ejButton({

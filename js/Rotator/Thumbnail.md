@@ -72,7 +72,7 @@ You can refer the following code example of Thumbnail in Rotator.
   {% endhighlight %}
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
   
 

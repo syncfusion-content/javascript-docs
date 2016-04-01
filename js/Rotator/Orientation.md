@@ -25,7 +25,7 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
  Add the following script in your **HTML** page.
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
     $(function () {
         // declaration
@@ -35,7 +35,7 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
   {% endhighlight %}
   
   
-  {% highlight js %}
+  {% highlight javascript %}
 
   
   	
@@ -59,7 +59,7 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
 
 
 
-  {% highlight js %}
+  {% highlight javascript %}
 
   	
 
@@ -72,7 +72,7 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
   {% endhighlight %}
   
   
-  {% highlight js %}
+  {% highlight javascript %}
 
   
 

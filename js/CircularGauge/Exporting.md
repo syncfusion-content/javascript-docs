@@ -25,7 +25,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         $("#circulargauge").ejCircularGauge();

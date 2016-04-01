@@ -23,7 +23,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 	    $("#numeric").ejNumericTextbox({

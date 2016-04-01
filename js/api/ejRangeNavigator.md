@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRangeNavigator
+title: Properties, Methods and Events of ejRangeNavigator Widget
 documentation: API
 platform: js
 metaname: 

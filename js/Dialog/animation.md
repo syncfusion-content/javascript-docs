@@ -14,7 +14,7 @@ The Dialog widget can be animated while opening and closing the dialog.
 
 We can specify the effect and the duration for the animation. There are two types of effects. They are slide and fade. We can configure these settings separately for open and close dialog actions.
 
-{% highlight js %}
+{% highlight javascript %}
 
             //create dialog widget
             $("#dialog").ejDialog({

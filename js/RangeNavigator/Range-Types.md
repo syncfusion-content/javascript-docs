@@ -18,7 +18,7 @@ documentation: ug
 
 **RangeNavigator** is also used with numeric data and the **valueType** for this data is “**numeric**”
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#rangecontainer").ejRangeNavigator({
@@ -41,7 +41,7 @@ The following screenshot displays the **RangeNavigator** with numeric data.
 
 By default the **valueType** of the **RangeNavigator** is “**datetime**” and represents the **DateTime** values.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#rangecontainer").ejRangeNavigator({
@@ -71,7 +71,7 @@ The **DateTime** range type contains an **intervalType** property that sets the 
 By default **intervalType** for higher level labels are **years** and for lower level labels its **quarters.**
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 $("#rangecontainer").ejRangeNavigator({

@@ -21,7 +21,7 @@ The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the 
 To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [
@@ -98,7 +98,7 @@ The Radial Tree layout arranges nodes on a virtual concentric circles around a r
 
 To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [
@@ -181,7 +181,7 @@ $("#diagram").ejDiagram({
 An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
 The following code example illustrates how to create an organizational chart.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [
@@ -272,7 +272,7 @@ You can set Chart orientations, chart types, and offset to be left between paren
 
 The following code example illustrates how to define the method getLayoutInfo.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var chartOrientations = ej.datavisualization.Diagram.ChartOrientations;
 var chartTypes = ej.datavisualization.Diagram.ChartTypes;
@@ -324,7 +324,7 @@ The following table illustrates the different chart orientations and chart types
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [
@@ -405,7 +405,7 @@ $("#diagram").ejDiagram({
 
 The following code example illustrates how to add assistants to layout.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [
@@ -482,7 +482,7 @@ Diagram provides support to customize the orientation of layout. You can set the
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var type = ej.datavisualization.Diagram.LayoutTypes;
 var orientation = ej.datavisualization.Diagram.LayoutOrientations;
@@ -524,7 +524,7 @@ $("#diagram").ejDiagram({
 Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the `layout.fixedNode`.
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes data source
 var data = [{
@@ -587,7 +587,7 @@ $("#DiagramContent").ejDiagram({
 
 Diagram allows to expand/collapse the sub trees of a layout. `node.isExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
-{% highlight js %}
+{% highlight javascript %}
 
 //Initializes Diagram
 $("#diagram").ejDiagram({

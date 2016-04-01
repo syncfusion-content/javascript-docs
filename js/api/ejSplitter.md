@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSplitter
+title: Properties, Methods and Events of ejSplitter Widget
 description: API reference for ejSplitter
 documentation: API
 platform: js
@@ -17,7 +17,7 @@ The Splitter is a layout control that enables you to divide a Web page into dist
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSplitter(options)
 

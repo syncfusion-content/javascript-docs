@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejGantt
+title: Properties, Methods and Events of ejGantt Widget
 description: Methods, members, events available in ejGantt
 documentation: API
 platform: js
@@ -14,7 +14,7 @@ The Essential JavaScript Gantt control is designed to visualize and edit the pro
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejGantt();
 

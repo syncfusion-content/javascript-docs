@@ -43,7 +43,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
     // Add the following code in your script section.
@@ -90,7 +90,7 @@ You can hide and show the context menu using the following methods.
 
 Hides the context menu control. Add the following script code in the sample in order to hide the context menu.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     jQuery(function ($) {
@@ -113,7 +113,7 @@ Hides the context menu control. Add the following script code in the sample in o
 
 Shows the context menu control. Add the following script code in the sample in order to show the context menu.
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 

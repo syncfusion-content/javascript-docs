@@ -58,7 +58,7 @@ public class SignalHub: Hub
 {% endhighlight %}
 
 3) Implementation of SignalR communication with Grid through Hub.
-{% highlight js %}
+{% highlight javascript %}
 
 <div id="Grid"></div>
 <script type="text/javascript">
@@ -178,7 +178,7 @@ Using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “sear
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $("#Grid").ejGrid({
 dataSource: window.gridData,
 allowPaging: true,

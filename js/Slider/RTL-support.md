@@ -29,7 +29,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range 
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         // In JavaScript, when initializing the Slider, specify the value for “enableRTL” property as “true” 
         $("#rangeSlider").ejSlider({

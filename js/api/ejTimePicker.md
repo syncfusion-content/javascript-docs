@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejTimePicker
+title: Properties, Methods and Events of ejTimePicker Widget
 description: API reference for ejTimePicker
 documentation: API
 platform: js
@@ -17,7 +17,7 @@ The TimePicker control for JavaScript allows users to select a time value. The a
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejTimePicker()
 

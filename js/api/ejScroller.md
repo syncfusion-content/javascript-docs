@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejScroller
+title: Properties, Methods and Events of ejScroller Widget
 description: API reference for ejScroller
 documentation: API
 platform: js
@@ -18,7 +18,7 @@ The Scroller control has a sliding document whose position corresponds to a valu
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejScroller()
 

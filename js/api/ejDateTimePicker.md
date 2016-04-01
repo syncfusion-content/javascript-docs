@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejDateTimePicker
+title: Properties, Methods and Events of ejDateTimePicker Widget
 description: API reference for ejDateTimePicker
 documentation: API
 platform: js
@@ -17,7 +17,7 @@ The DateTimePicker control is used to input the date and time with a specific fo
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejDateTimePicker(options)
 

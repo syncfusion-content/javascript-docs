@@ -22,7 +22,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         // For Linear Gauge rendering
@@ -86,7 +86,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    $(function () {
         // For Linear Gauge rendering
@@ -152,7 +152,7 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function () {
         //For rendering Liner gauge
@@ -210,7 +210,7 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(function () {
         // For Linear Gauge rendering

@@ -108,7 +108,7 @@ Add the following code for Keyboard navigation in your **Menu** control.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         // Add the following code in your script section.

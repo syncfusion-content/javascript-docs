@@ -94,7 +94,7 @@ Initialize **DateTimePicker** in the script.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
        $('#dateTime').ejDateTimePicker({
@@ -115,7 +115,7 @@ The following screenshot displays a **DateTimePicker** control.
 
 In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties **min** and **max** that enables the specified date range in the **DateTimePicker** control.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
        $('#dateTime').ejDateTimePicker({

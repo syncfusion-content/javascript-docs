@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejFileExplorer
+title: Properties, Methods and Events of ejFileExplorer Widget
 description: API reference for ejFileExplorer
 documentation: API
 platform: js
@@ -16,7 +16,7 @@ FileExplorer provides a Windows Explorer-like functionality for any web applicat
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(element).ejFileExplorer(options)
 

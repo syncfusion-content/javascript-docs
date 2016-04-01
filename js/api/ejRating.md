@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRating
+title: Properties, Methods and Events of ejRating Widget
 description: API reference for ejRating
 documentation: API
 platform: js
@@ -15,7 +15,7 @@ The Rating control provides an intuitive Rating experience that enables you to s
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRating()
 

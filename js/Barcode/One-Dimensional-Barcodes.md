@@ -15,7 +15,7 @@ The **Code 39** character set includes the digits 0-9, the letters A-Z (upper ca
 
 Here is the code example to create Code 39 barcode:
 
-{% highlight js %}
+{% highlight javascript %}
 $("#barcode").ejBarcode({
    text: "SYNCFUSION",
    symbologyType: "code39",

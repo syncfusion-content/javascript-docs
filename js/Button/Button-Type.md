@@ -60,7 +60,7 @@ In the HTML page, add the following button elements to configure Button widget.
 	
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Initialize the control in JavaScript
     //type property is used to render different type of buttons

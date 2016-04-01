@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejOlapGauge
+title: Properties, Methods and Events of ejOlapGauge Widget
 documentation: API
 platform: js
 keywords: ejOlapGauge, API, Essential JS OlapGauge
@@ -14,7 +14,7 @@ The OlapGauge control is ideal for highlighting business critical Key Performanc
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejOlapGauge()
 

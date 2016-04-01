@@ -149,7 +149,7 @@ Add the following code example in **HTML** file to configure Tree View.
 
 Add the following code example in the view page to set the action to view the image.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function () {
         $("#treeView").ejTreeView({ nodeSelect: "treeClicked" });

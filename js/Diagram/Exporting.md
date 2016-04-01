@@ -12,7 +12,7 @@ documentation: ug
 Diagram provides support to export its content as image/svg files.
 The client side method `exportDiagram` helps to export the Diagram. The following code illustrates how to export the Diagram as image.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 //Exports the Diagram as an image of JPEG format
@@ -45,7 +45,7 @@ For more information about the exportable formats, refer to [File Formats](/js/a
 
 Margin specifies the amount of space that has to be left around the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
@@ -74,7 +74,7 @@ For more information about the exporting modes, refer to [Exporting Modes](/js/a
 
 The following code example illustrates how to export the Diagram as raw data.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
@@ -99,7 +99,7 @@ For more information about region, refer to [Regions](/js/api/global#region "Reg
 
 The following code example illustrates how to export the region occupied by the Diagram elements.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
@@ -112,7 +112,7 @@ diagram.exportDiagram(options);
 
 The following code example illustrates how to export any specific region of the Diagram.
 
-{% highlight js %}
+{% highlight javascript %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {

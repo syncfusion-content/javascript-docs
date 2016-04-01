@@ -108,7 +108,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     // Add the following code in your <script> section.
@@ -167,7 +167,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Add the following code in your script section.
     jQuery(function ($) {

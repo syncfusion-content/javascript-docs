@@ -20,7 +20,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -62,7 +62,7 @@ The following code example describes the above behavior.
 </script>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -156,7 +156,7 @@ The following code example describes the above behavior.
 }
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		//The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -185,7 +185,7 @@ By default its value is `true`, so the following code example describes the how 
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 $(function () {
 	$("#Grid").ejGrid({
 		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'

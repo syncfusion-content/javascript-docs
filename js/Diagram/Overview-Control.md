@@ -32,7 +32,7 @@ The `sourceId` property of overview should be set with the corresponding Diagram
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 // Initializes the Diagram control
 $("#diagram").ejDiagram({

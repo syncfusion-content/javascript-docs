@@ -23,7 +23,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Change time format for TimePicker controls as follows.
     $(function () {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejWaitingPopup
+title: Properties, Methods and Events of ejWaitingPopup Widget
 description: API reference for ejWaitingPopup
 documentation: API
 platform: js
@@ -18,7 +18,7 @@ The WaitingPopup control for JavaScript is a visual element that provides suppor
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejWaitingPopup()
 

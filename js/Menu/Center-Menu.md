@@ -65,7 +65,7 @@ Add the following code in your **&lt;script&gt;** section.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
    
         jQuery(function ($) {

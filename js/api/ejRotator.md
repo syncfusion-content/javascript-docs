@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejRotator
+title: Properties, Methods and Events of ejRotator Widget
 description: API reference for ejRotator
 documentation: API
 platform: js
@@ -21,7 +21,7 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejRotator()
 

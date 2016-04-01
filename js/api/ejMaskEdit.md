@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejMaskEdit
+title: Properties, Methods and Events of ejMaskEdit Widget
 description: API reference for ejMaskEdit
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ The MaskEdit control provides an easy and reliable way of collecting user input 
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejMaskEdit()
 

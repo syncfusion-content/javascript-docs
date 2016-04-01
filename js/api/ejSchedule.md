@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ejSchedule
+title: Properties, Methods and Events of ejSchedule Widget
 description: Methods, Members and Events available in ejSchedule
 documentation: API
 platform: js
@@ -13,7 +13,7 @@ An Event calendar that manages the list of various activities like events/appoin
 
 #### Syntax
 
-{% highlight js %}
+{% highlight javascript %}
 
 $(element).ejSchedule()
 

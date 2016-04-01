@@ -138,7 +138,7 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
  Initialize Rating in script.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $(function() {
         $("#moviesTab").ejTab();

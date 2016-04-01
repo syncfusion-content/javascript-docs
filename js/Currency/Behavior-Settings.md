@@ -26,7 +26,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#currency").ejCurrencyTextbox({
@@ -61,7 +61,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#currency").ejCurrencyTextbox({
@@ -103,7 +103,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             value: 10, //value(10) exceeds maxValue(8), so it will returns 8.
@@ -139,7 +139,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             value: 3,
@@ -183,7 +183,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#currency").ejCurrencyTextbox({
@@ -217,7 +217,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             value:5,
@@ -260,7 +260,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             name: "currency"            
@@ -286,7 +286,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
       
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#currency").ejCurrencyTextbox({
@@ -323,7 +323,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         $("#currency").ejCurrencyTextbox({
@@ -368,7 +368,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
  
         $("#currency").ejCurrencyTextbox({
@@ -423,7 +423,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
          $("#currency").ejCurrencyTextbox({
             value: 3,
@@ -479,7 +479,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             value: 3,
@@ -511,7 +511,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({
             value: 3,
@@ -552,7 +552,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
     
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#currency").ejCurrencyTextbox({           
             watermarkText: "Currency"

@@ -43,7 +43,7 @@ The possible enum values for the gaugePosition are as follows:
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
  $(function() {
      $("#CoreCircularGaugehalfright").ejCircularGauge({

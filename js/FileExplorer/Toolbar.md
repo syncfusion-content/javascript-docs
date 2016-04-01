@@ -17,7 +17,7 @@ The toolbar having the list of items to perform various operations and grouped i
 
 From below you can see the available toolbar items and its categorization:
 
-{% highlight js %}
+{% highlight javascript %}
 
         // all tools grouped under the below categories
 
@@ -121,7 +121,7 @@ The Search bar is the textbox which is used to search the files from the current
 
 The visibility of the toolbar can be customized through the [showToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar) property. By disabling this property you can remove the toolbar from FileExplorer.
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -149,7 +149,7 @@ The visibility of the toolbar can be customized through the [showToolbar](http:/
 
 As you can see the available toolbar items from [here](#toolbar-items). From the list of available items, you can configure and group your required toolbar items only through the [tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools) property. And also you can arrange the toolbar items by the [toolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -201,7 +201,7 @@ The FileExplorer allows the following filter types in the search functionality.
 * Contains
 * Ends with
 
-{% highlight js %}
+{% highlight javascript %}
 
 
         ej.FileExplorer.filterType = {
@@ -225,7 +225,7 @@ The FileExplorer allows the following filter types in the search functionality.
 
 So you can configure the filter type with case sensitivity like below:
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -263,7 +263,7 @@ From the [toolbar items](#toolbar-items) you can see the list of built-in tools 
 
 You can find an online demo sample of FileExplorer with custom tool from [here](http://js.syncfusion.com/demos/web/#!/azure/fileexplorer/CustomTool).
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -341,7 +341,7 @@ Each toolbar item can be enabled or disabled through the below client-side publi
 
 These methods accepts the tool name as the parameter. It also allows the parameter as tool item index or the jQuery object of the tool item. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 
@@ -371,7 +371,7 @@ FileExplorer helps you to upload the file using [Upload](http://help.syncfusion.
 
 This property has the below sub properties with the default values:
 
-{% highlight js %}
+{% highlight javascript %}
 
         uploadSettings: {
 
@@ -391,7 +391,7 @@ This property has the below sub properties with the default values:
 
 **autoUpload**: when you enable this property,  the upload action performed automatically after select the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action on press the “upload” button. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
 

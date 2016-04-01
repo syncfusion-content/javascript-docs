@@ -143,7 +143,7 @@ Initialize **Checkbox** in script.
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     
     // Simple checkbox creation    
@@ -252,7 +252,7 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Simple checkbox creation  
     $(function () {

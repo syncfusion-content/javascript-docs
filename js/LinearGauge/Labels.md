@@ -26,7 +26,7 @@ Labels are units that are used to display the values in the scales. You can cust
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
   $(function () {
         // For Rendering Linear gauge
@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 $ (function () {
        // For Linear Gauge rendering

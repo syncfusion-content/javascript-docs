@@ -35,7 +35,7 @@ The following code example is used to render the **Rating** control without **to
 
  Add the following script to render Rating without Tooltip.
 
-{% highlight js %}
+{% highlight javascript %}
 
  $("#rating").ejRating({ showTooltip:false });
 
@@ -66,7 +66,7 @@ The following code example is used to render the **Rating** control with customi
  
  {% endhighlight %}
  
-{% highlight js %}
+{% highlight javascript %}
 
   // Add the following script to render Rating with customized shapeWidth and shapeHeight.
 
@@ -174,7 +174,7 @@ The following code example is used to render the **Rating** control with **custo
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
 // Add the following script to render Rating with customized style.

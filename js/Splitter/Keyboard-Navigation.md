@@ -89,7 +89,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
 
     $("#spliter").ejSplitter({

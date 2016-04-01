@@ -47,7 +47,7 @@ In an HTML page, define a div element that is a container for  Accordion wi
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
 
     // Enable multiple open for Accordion
     $("#accordion").ejAccordion({

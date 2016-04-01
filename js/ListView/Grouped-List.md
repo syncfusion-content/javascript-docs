@@ -44,7 +44,7 @@ Refer the following code example.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#defaultlistbox").ejListView({ width:400, enableGroupList:true });
@@ -100,7 +100,7 @@ Refer the following code examples.
 
 Add the following script in your code.
     
-{% highlight js %}
+{% highlight javascript %}
 
         $(function () {
             $("#defaultlistbox").ejListView({showHeader: true, headerTitle: "Favourite", width:400, enableGroupList:true});
