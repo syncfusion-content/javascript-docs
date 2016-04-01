@@ -3032,6 +3032,49 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
+### layout.horizontalSpacing `Number`
+{:#members:layout-horizontalspacing}
+
+Sets the space to be horizontally left between nodes
+
+#### Default Value:
+
+* 30
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+//horizontalSpacing of the layout
+$("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
+</script>
+
+{% endhighlight %}
+
+
+### layout.margin `Object`
+{:#members:layout-margin}
+
+Defines the space to be left between layout bounds and layout.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+// margin of the layout
+$("#diagramcontent").ejDiagram({layout: { margin:{ left: 10, right: 10, top: 10, bottom: 10} }});
+</script>
+
+{% endhighlight %}
+
 ### layout.horizontalAlignment `enum`
 {:#members:layout-horizontalalignment}
 
@@ -3077,49 +3120,6 @@ $("#diagramcontent").ejDiagram({layout: { horizontalAlignment:ej.datavisualizati
 
 {% endhighlight %}
 
-
-### layout.horizontalSpacing `Number`
-{:#members:layout-horizontalspacing}
-
-Sets the space to be horizontally left between nodes
-
-#### Default Value:
-
-* 30
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-//horizontalSpacing of the layout
-$("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
-</script>
-
-{% endhighlight %}
-
-
-### layout.margin `Object`
-{:#members:layout-margin}
-
-Defines the space to be left between layout bounds and layout.
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Margin()
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-// margin of the layout
-$("#diagramcontent").ejDiagram({layout: { margin:{ left: 10, right: 10, top: 10, bottom: 10} }});
-</script>
-
-{% endhighlight %}
 
 ### layout.verticalAlignment `enum`
 {:#members:layout-verticalalignment }
