@@ -75,7 +75,7 @@ Requires
 
 
 
-### autoOpen<span class="type-signature type boolean">boolean</span>
+### autoOpen `boolean`
 {:#members:autoopen}
 
 
@@ -142,7 +142,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "autoOpen", true);
 
 
 
-### backImageClass<span class="type-signature type string">string</span>
+### backImageClass `string`
 {:#members:backimageclass}
 
 
@@ -209,7 +209,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "backImageClass", "e-backimage")
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -276,7 +276,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "cssClass", "customclass");
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -343,7 +343,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation", true);
 
 
 
-### imageClass<span class="type-signature type string">string</span>
+### imageClass `string`
 {:#members:imageclass}
 
 
@@ -410,7 +410,7 @@ $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");
 
 
 
-### radius<span class="type-signature type int">int</span>
+### radius `number`
 {:#members:radius}
 
 
@@ -477,7 +477,7 @@ $("#radialmenu").ejRadialMenu ("option", "radius", 150);
 
 
 
-### targetElementId<span class="type-signature type string">string</span>
+### targetElementId `string`
 {:#members:targetelementid}
 
 
