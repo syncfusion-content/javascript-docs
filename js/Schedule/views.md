@@ -155,6 +155,10 @@ $(function() {
 
 Month view displays the entire days of a particular month and all its related appointments. An alternative way to navigate to a particular date in a day view directly from Month view, clicking on the appropriate month cell date header will do so. If the week date range column is clicked, it will navigate to the corresponding week view.
 
+The next and previous month date cells in the Month view can be shown/hidden on the Scheduler using [showNextPrevMonth](/js/api/ejschedule#members:shownextprevmonth) property by setting it to *false*.
+
+For example – To set the Month view as current view in Scheduler and to hide the other month days in it, refer the below code example.
+
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
@@ -165,6 +169,7 @@ $(function() {
     $("#schedule").ejSchedule({
         // Set the Active view as Month
         currentView: ej.Schedule.CurrentView.Month,
+        showNextPrevMonth: false,
         currentDate: new Date(2015, 11, 7),
         appointmentSettings: {
             //Array of JSON data configure in dataSource
