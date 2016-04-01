@@ -408,7 +408,7 @@ $("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
 {:#members:badge-position}
 
 
-<ts name = "ej.Tile.badge-position"/>
+<ts name = "ej.Tile.BadgePosition"/>
 
 
 
