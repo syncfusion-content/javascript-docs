@@ -27,22 +27,24 @@ You can also customize the appearance of off-page regions with the property `bac
 
 ![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
+N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
+
 ### BackgroundImage
 
-You can set any background image for diagram. Diagram allows to stretch and align the background images anywhere on the diagram area. 
-`source` property of `backgroundImage` allows you to set the path of the image. `scale` and `align` properties help to stretch/align the background images.
+You can stretch and align the background image anywhere over the diagram area. 
+The `source` property of `backgroundImage` allows you to set the path of the image. The `scale` and the `align` properties help to stretch/align the background images.
  
 To explore the backgroundImage properties, refer [Background Image](/js/api/ejDiagram#members:backgroundimage "Background Image").
 
 
-The following code illustrates how to customize the page size and the appearance of page and off-page.
+The following code illustrates how to stretch and align the background image.
 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
 	//Sets off-page background
 	backgroundColor: "whitesmoke",
-    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMin,scale:ej.datavisualization.Diagram.scaleConstraints.Meet,source:"airplane.png"},
+    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMin, scale:ej.datavisualization.Diagram.scaleConstraints.Meet, source:"airplane.png"},
 	pageSettings: {
 		//Sets page size
 		pageHeight: 500,
@@ -61,7 +63,6 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Page-Settings_images/Page-Settings_img5.png)
 
-N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
 ## MultiplePage and PageBreaks
 
