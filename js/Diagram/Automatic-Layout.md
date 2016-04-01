@@ -478,17 +478,13 @@ To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#mem
 
 ### Layout Bounds 
 
-Diagram provides support to customize the custom bounds to align the layout. You can set the desired bounds using `layout.bounds` . For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
 
 ### Layout Alignment
 
-Layout can be aligned relative to the specified layout boundaries. It has horizontal and vertical alignment settings.
+You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
 
-### Horizontal Alignment and Vertical Alignment
-
-The `horizontalAlignment` property of layout is used to set how the layout is horizontally aligned within the layout bounds. For more information about horizontal alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-horizontalalignment "Layout Alignment") The `verticalAlignment` properety of layout is used to set how the layout is vertically aligned within the layout bounds. For more information about vertical alignment, refer to [Layout Alignment] (/js/api/ejDiagram#members:layout-verticalalignment "Layout Alignment")
-
-The following code illustrates how to customize the layout alignment
+The following code illustrates how to align the layout at the top left of the layout bounds.
 
 {% highlight js %}
 
@@ -500,18 +496,12 @@ $("#diagram").ejDiagram({
 		
 		//Sets the type of the layout
 		type: type.HierarchicalTree,
-
-		//Sets the orientation
 		orientation: orientation.TopToBottom,
-		
-		//Sets the bounds
-		bounds:{x:0,y:0,width:500,height:500},
-		
-		//Sets the space to be horizontally left between nodes
 		horizontalSpacing: 25,
-
-		//Sets the space to be vertically left between nodes
 		verticalSpacing: 30,
+		
+		//Sets the layout bounds
+		bounds:{x:0,y:0,width:500,height:500},
 		
 		//Sets the alignment of the layout
 		horizontalALignment:ej.datavisualization.Diagram.HorizontalAlignment.Left,
@@ -538,9 +528,9 @@ $("#diagram").ejDiagram({
 
 ### Layout Margin
 
-Layout provides support to add some blank space in the layout bounds.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The `margin` property of the layout allows you to set the blank space.
 
-The following code illustrates how to customize the layout margin
+The following code illustrates how to set the layout margin.
 
 {% highlight js %}
 
@@ -549,22 +539,12 @@ var orientation = ej.datavisualization.Diagram.LayoutOrientations;
 
 $("#diagram").ejDiagram({
 	layout: {
-		
-		//Sets the type of the layout
+	
 		type: type.HierarchicalTree,
-
-		//Sets the orientation
 		orientation: orientation.TopToBottom,
-		
-		//Sets the bounds
 		bounds:{x:0,y:0,width:500,height:500},
-		
-		//Sets the space to be horizontally left between nodes
 		horizontalSpacing: 25,
-
-		//Sets the space to be vertically left between nodes
 		verticalSpacing: 30,
-		
 		horizontalALignment:ej.datavisualization.Diagram.HorizontalAlignment.Left,
 		verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top,
 		
