@@ -4978,7 +4978,7 @@ Fires the action when the list item checkbox value is changed.
 <td class="description">Returns the selected item ID.</td>
 </tr>
 <tr>
-<td class="name">model}</td>
+<td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the DropDownList model</td>
 </tr>
