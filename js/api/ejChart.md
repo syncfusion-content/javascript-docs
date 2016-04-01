@@ -24369,40 +24369,6 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
 
 
-
-### title.subTitle.background `string`
-{:#members:title-subtitle-background}
-
-
-
-
-Background color for the chart subtitle.
-
-
-#### Default Value
-
-* "transparent"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-   title : { 
-       subTitle:{ background : "red" } }                     
-
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
-
-
 ### title.text `string`
 {:#members:title-text}
 
