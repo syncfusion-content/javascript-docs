@@ -7033,7 +7033,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.call `Boolean`
+### nodes.task.call `Boolean`
 {:#members:nodes-tasks-call}
 
 To set whether the task is a global task or not
@@ -7057,7 +7057,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.compensation `Boolean`
+### nodes.task.compensation `Boolean`
 {:#members:nodes-tasks-compensation}
 
 Sets whether the task is triggered as a compensation of another specific activity
@@ -7081,7 +7081,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.loop `enum`
+### nodes.task.loop `enum`
 {:#members:nodes-tasks-loop}
 
 <ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
@@ -7134,7 +7134,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.type `enum`
+### nodes.task.type `enum`
 {:#members:nodes-tasks-type}
 
 <ts name = "ej.datavisualization.Diagram.BPMNTasks"/>
