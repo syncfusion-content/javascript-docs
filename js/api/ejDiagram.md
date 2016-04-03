@@ -1218,7 +1218,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point `object`
 {:#members:connectors-segments-point}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Describes the end point of bezier/straight segment
 
@@ -1243,7 +1243,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point1 `object`
 {:#members:connectors-segments-point1}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Defines the first control point of the bezier segment
 
@@ -1267,7 +1267,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point2 `object`
 {:#members:connectors-segments-point2}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Defines the second control point of bezier segment
 
@@ -1978,7 +1978,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 ### connectors.targetPoint `object`
 {:#members:connectors-targetpoint}
 
-<ts ref = "ej.Diagram.Connectors.SourcePoint"/>
+<ts ref = "ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Describes the end point of the connector
 

@@ -17947,7 +17947,7 @@ series :[{lineCap : "butt"}]
 ### series.lineJoin `enum`
 {:#members:series-linejoin}
 
-<ts ref = "ej.datavisualization.Chart.Linejoin"/>
+<ts ref = "ej.datavisualization.Chart.LineJoin"/>
 
 
 Specifies the type of shape to be used where two lines meet.
