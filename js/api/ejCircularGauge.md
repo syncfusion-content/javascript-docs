@@ -305,7 +305,7 @@ Specify the url of the frame background image for circular gauge
 ### frame.frameType `enum`
 {:#members:frame.frametype}
 
-<ts name = "ej.datavisualization.CircularGauge.Frame"/>
+<ts name = "ej.datavisualization.CircularGauge.FrameType"/>
 
 Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame</a>
 
