@@ -340,7 +340,7 @@ It allows to define the characteristics of the Button control. It will helps to 
 ### imagePosition `enum`
 {:#members:imageposition}
 
-<ts name="ej.ButtonType"/>
+<ts name="ej.ImagePosition"/>
 
 
 Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See below to know about available ImagePosition

@@ -6789,12 +6789,6 @@ Triggered for every kanban action before its starts.
         </thead>
         <tbody>
         <tr>
-        <td class="name">cancel
-        </td>
-        <td class="type"><span class="param-type">boolean</span></td>
-        <td class="description last">Returns the cancel option value.</td>
-        </tr>
-        <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
         <td class="description last">Returns the kanban model.</td>
