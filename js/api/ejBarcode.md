@@ -814,7 +814,7 @@ $("#barcode").ejBarcode({
 ### symbologyType `enum`
 {:#members:symbologytype}
 
-<ts name="ej.Barcode.SymbologyType"/>
+<ts name="ej.datavisualization.Barcode.SymbologyType"/>
 
 Specifies the type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
 <table class="params">
