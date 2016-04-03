@@ -299,7 +299,7 @@ Specifies the desaturationColorMapping settings of the treemap
 ### dockPosition `enum`
 {:#members:dockposition}
 
-<ts name = "ej.TreeMap.DockPosition"/>
+<ts name = "ej.datavisualization.TreeMap.DockPosition"/>
 
 Specifies the dockPosition for legend
 
@@ -876,7 +876,7 @@ Specifies the iconWidth for legend
 ### itemsLayoutMode `enum`
 {:#members:itemslayoutmode}
 
-<ts name = "ej.TreeMap.ItemsLayoutMode"/>
+<ts name = "ej.datavisualization.TreeMap.ItemsLayoutMode"/>
 
 Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
 
@@ -1081,7 +1081,7 @@ Specifies the label path of the leaf item.
 ### leafItemSettings.labelPosition `enum`
 {:#members:leafitemsettings-labelposition}
 
-<ts name = "ej.TreeMap.Position"/>
+<ts name = "ej.datavisualization.TreeMap.Position"/>
 
 Specifies the position of the leaf labels.
 
@@ -1168,7 +1168,7 @@ Specifies the position of the leaf labels.
 ### leafItemSettings.labelVisibilityMode `enum`
 {:#members:leafitemsettings-labelvisibilitymode}
 
-<ts name = "ej.TreeMap.VisibilityMode"/>
+<ts name = "ej.datavisualization.TreeMap.VisibilityMode"/>
 
 Specifies the mode of label visibility
 
@@ -1400,7 +1400,7 @@ Specifies the rangeMinimum value for desaturation color mapping
 ### shapeLayer.groupSelectionMode `enum`
 {:#members:shapelayer-groupselectionmode}
 
-<ts name = "ej.TreeMap.groupSelectionMode"/>
+<ts name = "ej.datavisualization.TreeMap.groupSelectionMode"/>
 
 Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
 
@@ -1963,7 +1963,7 @@ Specifies the header template for tree map level.
 ### treeMapLevel.headerVisibilityMode `enum`
 {:#members:treemaplevel-headervisibilitymode}
 
-<ts name = "ej.TreeMap.VisibilityMode"/>
+<ts name = "ej.datavisualization.TreeMap.VisibilityMode"/>
 
 Specifies the mode of header visibility
 
@@ -2018,7 +2018,7 @@ Specifies the mode of header visibility
 ### treeMapLevel.labelPosition `enum`
 {:#members:treemaplevel-labelposition}
 
-<ts ref = "ej.TreeMap.Position"/>
+<ts ref = "ej.datavisualization.TreeMap.Position"/>
 
 Specifies the position of the labels.
 
@@ -2139,7 +2139,7 @@ Specifies the label template for tree map level.
 ### treeMapLevel.labelVisibilityMode `enum`
 {:#members:treemaplevel-labelvisibilitymode}
 
-<ts ref = "ej.TreeMap.VisibilityMode"/>
+<ts ref = "ej.datavisualization.TreeMap.VisibilityMode"/>
 
 Specifies the mode of label visibility
 

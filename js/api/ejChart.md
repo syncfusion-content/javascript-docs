@@ -19675,7 +19675,7 @@ $("#container").ejChart({
 ### series.errorBar.type `enum`
 {:#members:series.errorbar.type}
 
-<ts ref = "ej.datavisualization.Chart.ErrorbarType"/>
+<ts ref = "ej.datavisualization.Chart.ErrorBarType"/>
 
 Specifies the type of error bar.
 
