@@ -404,7 +404,7 @@ Triggers when it reaches client-side after any AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ Triggers before any AJAX request is passed from OlapChart to service methods.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -542,7 +542,7 @@ Triggers when drill up/down happens in OlapChart control.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ Triggers when OlapChart widget completes all operations at client-side after any
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -703,7 +703,7 @@ Triggers when any error occurred during AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -779,7 +779,7 @@ Triggers when OlapChart successfully reaches client-side after any AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapChart.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>

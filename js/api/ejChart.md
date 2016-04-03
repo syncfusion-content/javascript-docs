@@ -22935,7 +22935,7 @@ series :[{trendlines:[{ period: 3 }]}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
-### series.highlightsettings `object`
+### series.highlightSettings `object`
 {:#members:series.highlightsettings}
 
 
