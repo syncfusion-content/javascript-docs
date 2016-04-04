@@ -379,7 +379,7 @@ Gets or sets a value that indicates whether to enable allowSelection behavior on
 {% endhighlight %}
 
 ### allowHover `boolean`
-{:#members:allowselection}
+{:#members:allowhover}
 
 Gets or sets a value that indicates whether to allow card hover actions.
 
@@ -2496,7 +2496,7 @@ It is used to set the particular editType in the card for editing.
 {% endhighlight %}
 
 ### editSettings.editItems.validationRules `object`
-{:#members:editsettings-edititems-edittype-validationrules}
+{:#members:editsettings-edititems-validationrules}
 
 Gets or sets a value that indicates to define constraints for saving data to the database.
 
@@ -5075,7 +5075,7 @@ To customize the searching behavior of the kanban.
 {% endhighlight %}
 
 ### searchSettings.fields `array`
-{:#members:allowsearching-fields}
+{:#members:searchsettings-fields}
 
 To customize the fields the searching operation can be perform.
 
@@ -5627,7 +5627,7 @@ To enable or disable the tooltip display.
   {% endhighlight %}
   
 ### tooltipSettings.template `string`
-{:#members:tooltipsettings-templateid}
+{:#members:tooltipsettings-template}
 
 To customize the tooltip display based on your requirements.
 
@@ -6001,7 +6001,7 @@ Destroy the kanban widget all events bound using this._on will be unbind automat
     
 {% endhighlight %}
 
-### DeleteCard(Key)
+### deleteCard(Key)
 {:#methods:deletecard}
 
 Delete a card in kanban control.
