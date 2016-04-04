@@ -2659,7 +2659,7 @@ $("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], 
 
 {% endhighlight %}
 
-### copySheet(fromIdx, toIdx)
+### copySheet(fromIdx, toIdx, \[isCopySheet\])
 {:#methods:copysheet}
 
 This method is used to copy sheets in Spreadsheet.
@@ -2682,6 +2682,11 @@ This method is used to copy sheets in Spreadsheet.
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the position index where you want to copy.</td>
 </tr>
+<tr>
+<td class="name">isCopySheet</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass true to copy particular sheet, if pass false then sheet will be moved to mentioned toIdx.</td>
+</tr>
 </tbody>
 </table>
 
@@ -2691,7 +2696,7 @@ This method is used to copy sheets in Spreadsheet.
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.copySheet(2, 1); // Sends a copy sheet request to the Spreadsheet.
+xlObj.copySheet(2, 1, true); // Sends a copy sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -2699,7 +2704,7 @@ xlObj.copySheet(2, 1); // Sends a copy sheet request to the Spreadsheet.
 {% highlight html %}
 <script>
 // Sends a copy sheet request to the Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("copySheet", 2, 1);        
+$("#Spreadsheet").ejSpreadsheet("copySheet", 2, 1, true);        
 </script>
 
 {% endhighlight %}
@@ -5804,7 +5809,7 @@ $("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));
 
 {% endhighlight %}
 
-### XLComment.setComment(\[range\], data, \[showEditPanel\])
+### XLComment.setComment(\[range\], data, \[showEditPanel\], \[showUserName\])
 {:#methods:xlcomment-setcomment}
 
 This method is used to set new comment in Spreadsheet.
@@ -5831,6 +5836,11 @@ This method is used to set new comment in Spreadsheet.
 <td class="name">showEditPanel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true to show comment in edit mode </td>
+</tr>
+<tr>
+<td class="name">showUserName</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass false to hide user name in comment area.</td>
 </tr>
 </tbody>
 </table>
@@ -6243,7 +6253,7 @@ xlObj.XLEdit.saveCell();
 
 {% endhighlight %}
 
-### XLEdit.updateCell(cell, value)
+### XLEdit.updateCell(cell, value, \[sheetIdx\])
 {:#methods:xledit-updatecell}
 
 This method is used to update a particular cell value in the Spreadsheet.
@@ -6265,6 +6275,11 @@ This method is used to update a particular cell value in the Spreadsheet.
 <td class="name">value</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional. </span>Pass the index of sheet.</td>
 </tr>
 </tbody>
 </table>
