@@ -4793,6 +4793,39 @@ $("#Grid").ejGrid("addIgnoreOnExport","filterSettings");
 </script>
 {% endhighlight %}
 
+### addIgnoreOnExport()
+{:#methods:addignoreonexport}
+
+Adds a grid model property which is to be ignored upon exporting.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+
+####Example
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a request to ignore the filterSettings property upon exporting
+gridObj.addIgnoreOnExport("filterSettings"); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a request to ignore the filterSettings property upon exporting
+$("#Grid").ejGrid("addIgnoreOnExport","filterSettings");       
+</script>
+{% endhighlight %}
+
+
 ### addRecord()
 {:#methods:addrecord}
 
@@ -4820,9 +4853,42 @@ gridObj.addRecord();
  
 <script>
 // add new record to the grid
+$("#Grid").ejGrid("addRecord");       
+</script>
+{% endhighlight %}
+
+### addRecord(data,\[serverChange\])
+{:#methods:addrecord}
+
+Add a new record in grid control when allowAdding is set as true.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends an add new record request to the grid
+gridObj.addRecord({"OrderID":12333});
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// add new record to the grid
 $("#Grid").ejGrid("addRecord",{OrderID:12333})       
 </script>
 {% endhighlight %}
+
+
 
 ### batchCancel()
 {:#methods:batchcancel}
@@ -4990,6 +5056,37 @@ gridObj.clearCellSelection();  // clears all of the cell selection
 <script>         
 // clears all of the cell selection
 $("#Grid").ejGrid("clearCellSelection");        
+</script>{% endhighlight %}
+
+### clearCellSelection(rowIndex,columnIndex)
+{:#methods:clearcellselection}
+
+It is used to clear specified the cell selection.
+
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearCellSelection(1,2);  // clears specified the cell selection
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>         
+// clears all of the cell selection
+$("#Grid").ejGrid("clearCellSelection",1,2);        
 </script>{% endhighlight %}
 
 
@@ -5337,7 +5434,7 @@ $("#Grid").ejGrid("columns","CustomerID", "add");
 
 
 
-### dataSource(datasource)
+### dataSource(datasource,\[templateRefresh\])
 {:#methods:datasource}
 
 Refresh the grid with new data source
@@ -5355,6 +5452,11 @@ Refresh the grid with new data source
 <td class="name">datasource</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass new data source to the grid</td>
+</tr>
+<tr>
+<td class="name">templateRefresh</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Specifies the template  will be refreshed</td>
 </tr>
 </tbody>
 </table>
@@ -5733,7 +5835,65 @@ gridObj.export("/api/GridExport/ExcelExport");
 $("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
 </script>{% endhighlight %}
 
-### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\])
+### export(action, \[serverEvent\], \[multipleExport\])
+{:#methods:export}
+
+Export the grid content to excel, word or pdf document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the controller action name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">serverEvent</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"><span class="optional">optional</span>ASP server event name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">multipleExport</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the mutiple exporting value as true/false</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends an exporting request
+gridObj.export("/api/GridExport/ExcelExport"); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends an exporting request
+$("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
+</script>{% endhighlight %}
+
+### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\],\[actualFilterValue\])
 {:#methods:filtercolumn}
 
 
@@ -5772,6 +5932,11 @@ Send a filtering request to filter one column in grid.
 <td class="name">matchcase</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the match case value as true/false</td>
+</tr>
+<tr>
+<td class="name">actualFilterValue</td>
+<td class="type"><span class="param-type">string/number</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the value to be filtered in a column</td>
 </tr>
 </tbody>
 </table>
@@ -7582,8 +7747,38 @@ gridObj.saveCell();
 $("#Grid").ejGrid("saveCell);
 </script>{% endhighlight %}
 
+### saveCell(preventSaveEvent)
+{:#methods:savecell}
 
-###  setDimension()
+Prevent the cellSave client-side event based on the parameter.
+
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Prevent save the edited cell
+gridObj.saveCell(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+// Prevent save the edited cell
+$("#Grid").ejGrid("saveCell);
+</script>{% endhighlight %}
+
+
+
+###  setDimension(height, width)
 {:#methods:setdimension}
  
 Set dimension for grid with corresponding to grid parent.
@@ -7810,6 +8005,58 @@ gridObj.selectColumns(1,4);
 $("#Grid").ejGrid("selectColumns", 1, 4);
 </script>{% endhighlight %}
 
+### selectColumns(columnIndex,\[toIndex\])
+{:#methods:selectcolumns}
+
+Select columns in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the starting index of column for selecting columns.</td>
+</tr>
+<tr>
+<td class="name">toIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the ending index of column for selecting columns.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Selects columns based on the given index
+gridObj.selectColumns(1,4); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Selects columns based on the given index
+$("#Grid").ejGrid("selectColumns", 1, 4);
+</script>{% endhighlight %}
 
 ### selectRows(fromIndex, toIndex)
 {:#methods:selectrows}
@@ -7834,6 +8081,64 @@ Select rows in grid.
 <td class="name">toIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the ending index of row for selecting rows.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Selects rows based on the given index
+gridObj.selectRows(1, 4); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Selects rows based on the given index
+$("#Grid").ejGrid("selectRows", 1, 4);
+</script>{% endhighlight %}
+
+### selectRows(from,to,target)
+{:#methods:selectrows}
+
+Select rows in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">from</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the starting index of row for selecting rows.</td>
+</tr>
+<tr>
+<td class="name">to</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the ending index of row for selecting rows.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to selecting rows based on cell.</td>
 </tr>
 </tbody>
 </table>
