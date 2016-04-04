@@ -8106,8 +8106,7 @@ Select rows in grid.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">
-It is used to selecting rows based on cell.</td>
+<td class="description last">Target element which is clicked.</td>
 </tr>
 </tbody>
 </table>
