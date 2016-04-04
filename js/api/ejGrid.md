@@ -4761,7 +4761,7 @@ $("#Grid").ejGrid({
 
 ## Methods
 
-### addIgnoreOnExport()
+### addIgnoreOnExport(args)
 {:#methods:addignoreonexport}
 
 Adds a grid model property which is to be ignored upon exporting.
@@ -4792,39 +4792,6 @@ gridObj.addIgnoreOnExport("filterSettings");
 $("#Grid").ejGrid("addIgnoreOnExport","filterSettings");       
 </script>
 {% endhighlight %}
-
-### addIgnoreOnExport()
-{:#methods:addignoreonexport}
-
-Adds a grid model property which is to be ignored upon exporting.
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-
-####Example
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a request to ignore the filterSettings property upon exporting
-gridObj.addIgnoreOnExport("filterSettings"); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends a request to ignore the filterSettings property upon exporting
-$("#Grid").ejGrid("addIgnoreOnExport","filterSettings");       
-</script>
-{% endhighlight %}
-
 
 ### addRecord()
 {:#methods:addrecord}
@@ -5456,7 +5423,7 @@ Refresh the grid with new data source
 <tr>
 <td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Specifies the template  will be refreshed</td>
+<td class="description last">The template column of the Grid control will be refresh if templateRefresh is true.</td>
 </tr>
 </tbody>
 </table>
@@ -5935,8 +5902,9 @@ Send a filtering request to filter one column in grid.
 </tr>
 <tr>
 <td class="name">actualFilterValue</td>
-<td class="type"><span class="param-type">string/number</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the value to be filtered in a column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><span class="optional">optional</span>actualFilterValue denote the filter object of current filtered columns.
+Pass the value to filtered in a column</td>
 </tr>
 </tbody>
 </table>
@@ -7750,7 +7718,7 @@ $("#Grid").ejGrid("saveCell);
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
 
-Prevent the cellSave client-side event based on the parameter.
+We can prevent the client side cellsave event triggering by set the preventSaveEvent argument as true.
 
 #### Returns:
 {:#methods:returns:}
@@ -7766,14 +7734,14 @@ Boolean
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Prevent save the edited cell
-gridObj.saveCell(); 
+gridObj.saveCell(true); 
 </script>{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Prevent save the edited cell
-$("#Grid").ejGrid("saveCell);
+$("#Grid").ejGrid("saveCell",true);
 </script>{% endhighlight %}
 
 
@@ -8111,7 +8079,7 @@ gridObj.selectRows(1, 4);
 $("#Grid").ejGrid("selectRows", 1, 4);
 </script>{% endhighlight %}
 
-### selectRows(from,to,target)
+### selectRows(from,to,\[target\])
 {:#methods:selectrows}
 
 Select rows in grid.
@@ -8138,7 +8106,8 @@ Select rows in grid.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">It is used to selecting rows based on cell.</td>
+<td class="description last">
+It is used to selecting rows based on cell.</td>
 </tr>
 </tbody>
 </table>
