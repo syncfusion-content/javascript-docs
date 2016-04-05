@@ -274,7 +274,7 @@ Example
 
 {% endhighlight %}
 
-### checkItemsByIndex [Deprecated] `string`
+### checkItemsByIndex [Deprecated] `array`
 {:#members:checkitemsbyindex} 
 
 List of items to be checked by default using index values. It works only when the showCheckbox property is set to true. 
@@ -294,7 +294,7 @@ Example
         
 {% endhighlight %}
 
-### checkedIndices `string`
+### checkedIndices `array`
 {:#members:checkedindices} 
 
 Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
