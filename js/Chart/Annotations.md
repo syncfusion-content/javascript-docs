@@ -47,7 +47,7 @@ You can add annotations to the chart by using the [`annotations`](../api/ejchart
 
 To rotate the annotation template, you can use the [`angle`](../api/ejchart#members:annotations-angle) property of the annotations. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#chartcontainer").ejChart({
@@ -82,7 +82,7 @@ By using the [`coordinateUnit`](../api/ejchart#members:annotations-coordinateuni
 
 N> By using the [`region`](../api/ejchart#members:annotations-region) option, you can specify whether the annotation is placed relative to the entire chart or plot area.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#chartcontainer").ejChart({
@@ -109,7 +109,7 @@ N> By using the [`region`](../api/ejchart#members:annotations-region) option, yo
 
 When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates by using the [`horizontalAlignment`](../api/ejchart#members:annotations-horizontalalignment) and [`verticalAlignment`](../api/ejchart#members:annotations-verticalalignment) options. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#chartcontainer").ejChart({

@@ -80,7 +80,7 @@ Now, the Chart is rendered with some auto-generated random values and with defau
 
 Now, this section explains how to plot JSON data to the Chart. First, let us prepare a sample JSON data with each object containing following fields – month and sales.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
   var chartData = [
@@ -102,7 +102,7 @@ Now, this section explains how to plot JSON data to the Chart. First, let us pre
 
 Add a series object to the chart by using the [`series`](../api/ejchart.html#members:series) option and set the chart type as *line* by using the [`type`](../api/ejchart#members:series-type) option. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -122,7 +122,7 @@ You can also add multiple series objects based on your requirement. Refer to the
 
 Now, map the month and sales values in the data source to the line series by setting the [`xName`](../api/ejchart.html#members:series-xname) and [`yName`](../api/ejchart#members:series-yname) with the field names respectively and then set the actual data by using the *dataSource* option. Refer to the [`Data Binding`](working-with-data.html) section to know more about binding the local and remote data to the chart.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -147,7 +147,7 @@ Since the data is related to sales, format the vertical axis labels by adding �
 
 The following code example illustrates this,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -175,7 +175,7 @@ The following code example illustrates this,
 
 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -217,7 +217,7 @@ The above HTML template is used as a template for each data label. Here, “poin
 
 The following code example shows how to set the id of the above template to [`template`](../api/ejchart#members:series-marker-datalabel-template) option,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -247,7 +247,7 @@ Refer to the [`Data Markers`](Data-Markers.html) section to know more about the 
 
 You can enable or disable the legend by using the [`visible`](../api/ejchart#members:legend-visible) option in the [`legend`](../api/ejchart#members:legend). It is enabled in the chart, by default.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -280,7 +280,7 @@ The Tooltip is useful when you cannot display information by using the [`Data La
 
 The following code example illustrates this,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -306,7 +306,7 @@ Refer to the [`Tooltip`](user-interactions.html) section to know more about form
 
 You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the [`text`](../api/ejchart#members:title-text) option of the [`title`](../api/ejchart#members:title).
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({

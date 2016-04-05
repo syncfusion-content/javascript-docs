@@ -13,7 +13,7 @@ Chart can be updated dynamically with the real time data. Whenever you add a poi
 
 N> You can get the chart **instance** using instance method.
 
-{% highlight javascript %}
+{% highlight js %}
 
      //Rendering empty Chart without data
      $("#chartcontainer").ejChart({

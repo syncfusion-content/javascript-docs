@@ -19,7 +19,7 @@ Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#memb
 
 The following code example explains on how to enable series marker and add shapes,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -63,7 +63,7 @@ Apart from the shapes, you can also add images to mark the data point by using t
 
 The following code example illustrates this,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -94,7 +94,7 @@ Data label can be added to a chart series by enabling the [`visible`](../api/ejc
 
 The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -139,7 +139,7 @@ The following code example shows how to add background shapes and set template t
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -182,7 +182,7 @@ The appearance of the labels can be customized by using the [`font`](../api/ejch
 
 The following code example shows how to rotate datalabel text and customize the font.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -212,7 +212,7 @@ You can position the label to the top, center or bottom position of the segment 
 
 The following code example shows how to set textPosition to display data label in the middle of the column rectangle.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -241,7 +241,7 @@ The label can be positioned inside or outside the perimeter of the series by usi
 
 The following code example shows how to set the *labelPosition*,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -292,7 +292,7 @@ There are two ways to achieve this based on how the data is fed to the series.
 
 When the data is provided by using the [`points`](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [`marker`](../api/ejchart#members:series-marker) option as illustrated in the following code example.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -336,7 +336,7 @@ When the data is provided by using the [`points`](../api/ejchart#members:series-
 
 When the data is bound to the series by using the [`dataSource`](../api/ejchart#members:series-datasource) option, you can customize the points in the [`seriesRendering`](../api/ejchart#members:events-seriesrendering) event as illustrated in the following code example,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -394,7 +394,7 @@ This feature is used to connect label and data point by using a line. It can be 
 
  The following code example illustrates this,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({
@@ -427,7 +427,7 @@ Overlapping of the labels can be avoided by enabling the [`enableSmartLabels`](.
 
 The following code example shows how to enable smart labels,
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({

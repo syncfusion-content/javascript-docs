@@ -15,7 +15,7 @@ The legend contains the list of chart series and Trendlines that appear in a cha
 
 By default, the legend is enabled in the chart. You can enable or disable it by using the [`visible`](../api/ejchart#members:legend-visible) option of the legend.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#chartcontainer").ejChart({
@@ -39,7 +39,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 To add the title to the legend, you have to specify the [`legend.title.text`](../api/ejchart#members:legend-title-text) option.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -65,7 +65,7 @@ To add the title to the legend, you have to specify the [`legend.title.text`](..
 
 By using the [`position`](../api/ejchart#members:legend-position) option, you can position the legend at *left*, *right*, *top* or *bottom* of the chart. The legend is positioned at the **bottom** of the chart, by default.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -88,7 +88,7 @@ By using the [`position`](../api/ejchart#members:legend-position) option, you ca
 
 You can align the legend to the *center*, *far* or *near* based on its position by using the [`alignment`](../api/ejchart#members:legend-alignment) option.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -121,7 +121,7 @@ You can arrange the legend items horizontally and vertically by using the [`rowC
 * When both the options are specified and have the same value, the preference is given to the [`columnCount`](../api/ejchart#members:legend-columncount) when it is positioned at the top/bottom position. The preference is given to the [`rowCount`](../api/ejchart#members:legend-rowcount) when it is positioned at the left/right position.
  
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -146,7 +146,7 @@ You can arrange the legend items horizontally and vertically by using the [`rowC
 
 To change the legend icon shape, you have to specify the shape in the [`shape`](../api/ejchart#members:legend-shape) property of the legend. When you want the legend icon to display the prototype of the series, you have to set the **seriesType** as shape.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -169,7 +169,7 @@ To change the legend icon shape, you have to specify the shape in the [`shape`](
 
 You can change the size of the legend items by using the [`itemStyle.width`](../api/ejchart#members:legend-itemstyle-width) and [`itemStyle.height`](../api/ejchart#members:legend-itemstyle-height) options. To change the legend item border, use [`border`](../api/ejchart#members:legend-border) option of the legend itemStyle.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -191,7 +191,7 @@ You can change the size of the legend items by using the [`itemStyle.width`](../
 
 By default, legend takes 20% of the **height** horizontally when it was placed on the top or bottom position and 20% of the **width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejchart#members:legend-size) option of the legend.  
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({   
@@ -214,7 +214,7 @@ By default, legend takes 20% of the **height** horizontally when it was placed o
 
 You can control the spacing between the legend items by using the [`itemPadding`](../api/ejchart#members:legend-itempadding) option of the legend.  The default value is 10. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -236,7 +236,7 @@ You can control the spacing between the legend items by using the [`itemPadding`
 
 You can customize the legend border by using the [`border`](../api/ejchart#members:legend-border) option in the legend. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -258,7 +258,7 @@ You can customize the legend border by using the [`border`](../api/ejchart#membe
 
 You can enable or disable the legend scrollbar by using the [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option of the legend. When you disable the scrollbar option, the legend does not consider the [`default size`](legend.html#legend-size) and chart draws in the reaming space. The default value of [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option is **true**.  
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -281,7 +281,7 @@ You can enable or disable the legend scrollbar by using the [`enableScrollbar`](
 
 To customize the legend item text and title you can use the [`legend.font`](../api/ejchart#members:legend-font) and [`legend.title`](../api/ejchart#members:legend-title) options. You can change the legend title alignment by using the [`textAlignment`](../api/ejchart#members:legend-title-textAlignment) option of the legend title.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -312,7 +312,7 @@ To customize the legend item text and title you can use the [`legend.font`](../a
 
 You can trim the legend item text when its width exceeds the [`legend.textWidth`](../api/ejchart#members:legend-textWidth), by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"trim"**. The original text will be displayed on mouse hover.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#chartcontainer").ejChart({
@@ -350,7 +350,7 @@ You can wrap and trim the legend text by specifying [`textOverflow`](../api/ejch
 
 You can get the legend item details such as *index*, *bounds*, *shape* and *series* by subscribing the [`legendItemClick`](../api/ejchart#events:legenditemclick) event on the chart. When the legend item is clicked, it triggers the event and returns the [`legend information`](../api/ejchart.html#events:legenditemclick). 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -377,7 +377,7 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
 
 You can select a specific series or point while clicking on the corresponding legend item through disabling the [`toggleSeriesVisibility`](../api/ejchart#members:legend-toggleseriesvisibility) option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series [`selection`](../api/ejchart.html#members:series-selectionsettings).
 
-{% highlight javascript %}
+{% highlight js %}
 
 
         $("#chartcontainer").ejChart({
@@ -401,7 +401,7 @@ You can select a specific series or point while clicking on the corresponding le
 
 You can collapse the specific series/point legend item displaying in the chart, by setting the [`visibleOnLegend`](../api/ejchart.html#members:series-visibleonlegend) as *"hidden"* in the point or series.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
      $("#chartcontainer").ejChart({

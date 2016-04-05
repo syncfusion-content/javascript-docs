@@ -898,6 +898,235 @@ $("#container").ejChart({
 
 
 
+### exportSettings `object`
+{:#members:exportsettings}
+
+This provides options for customizing export settings
+
+
+### exportSettings.filename `string`
+{:#members:exportsettings-filename}
+
+
+
+
+Specifies the downloading filename
+
+
+#### Default Value
+
+
+
+* "chart"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { filename : "mychart" }
+                          
+});
+
+{% endhighlight %}
+
+
+### exportSettings.action `string`
+{:#members:exportsettings-action}
+
+
+
+
+Specifies the name of the action url
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { action : "http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export" }
+                          
+});
+
+{% endhighlight %}
+
+### exportSettings.angle `number`
+{:#members:exportsettings-angle}
+
+
+
+
+Specifies the angle for rotation
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { angle : 90}
+                          
+});
+
+{% endhighlight %}
+
+
+### exportSettings.type `enum`
+{:#members:exportsettings-type}
+
+
+
+
+Specifies the format of the file to export
+
+
+#### Default Value
+
+
+
+* "png"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { type : "jpg"}
+                          
+});
+
+{% endhighlight %}
+
+
+### exportSettings.orientation `enum`
+{:#members:exportsettings-orientation}
+
+
+
+
+Specifies the orientation of the document
+
+
+#### Default Value
+
+
+
+* "portrait"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { orientation : "landscape"}
+                          
+});
+
+{% endhighlight %}
+
+
+### exportSettings.mode `enum`
+{:#members:exportsettings-mode}
+
+
+
+
+Specifies the mode of exporting
+
+
+#### Default Value
+
+
+
+* "client"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { mode : "server"}
+                          
+});
+
+{% endhighlight %}
+
+
+### exportSettings.multipleExport `boolean`
+{:#members:exportsettings-multipleexport}
+
+
+
+
+Enable/ disable the multiple excel exporting
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+     exportSettings: { multipleExport : true }
+                          
+});
+
+{% endhighlight %}
+
+
 ### chartArea `object`
 {:#members:chartarea}
 
@@ -1343,6 +1572,38 @@ commonSeriesOptions :{border :{ width : 2 } }
 });
 {% endhighlight %}
 
+
+
+
+### commonSeriesOptions.visibleOnLegend `string`
+{:#members:commonseriesoptions-visibleonlegend}
+
+
+
+
+Enables or disables the visibility of legend item.
+
+
+
+#### Default Value
+
+
+
+ * "visible"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions : {visibleOnLegend: "hidden" }                   
+});
+{% endhighlight %}
 
 
 
@@ -6422,19 +6683,25 @@ Specifies whether the series or data point has to be highlighted.
 <td class="name">
 Series</td>
 <td class="type">string</td> 
-<td class="description">Highlight the series of the chart.</td>
+<td class="description">Highlight/Select the series of the chart.</td>
 </tr>
 <tr>
 <td class="name">
 Point</td>
 <td class="type">string</td>
-<td class="description">Highlight the point in the series.</td>
+<td class="description">Highlight/Select the point in the series.</td>
 </tr> 
 <tr>
 <td class="name">
 Cluster</td>
 <td class="type">string</td>
-<td class="description">Highlight the points all series of same index.</td>
+<td class="description">Highlight/Select the points all series of same index.</td>
+</tr> 
+<tr>
+<td class="name">
+Range</td>
+<td class="type">string</td>
+<td class="description">Select the data points by mouse dragging in the chart area.</td>
 </tr> 
 </tbody>
 </table>
@@ -6785,6 +7052,66 @@ commonSeriesOptions :{selectionSettings:{mode:"point"}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 
+
+
+
+### commonseriesoptions.selectionSettings.rangeType `enum`
+{:#members:commonseriesoptions-selectionsettings-rangetype}
+
+<ts ref = "ej.datavisualization.Chart.RangeType"/>
+
+Specifies the drawn rectangle type.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+XY</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in both horizontal and vertically.</td>
+</tr>
+<tr>
+<td class="name">
+X</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in horizontally.</td>
+<td class="name">
+Y</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in vertically.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+
+
+* "xy" 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+     commonSeriesOptions: [{
+      selectionSettings:{
+              rangeType : 'x'
+             }
+	  }]
+  }); 
+
+{% endhighlight %}
 
 
 ### commonSeriesOptions.selectionSettings.color `string`
@@ -10758,6 +11085,41 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n23ku03f)
+
+
+
+
+### primaryXAxis.isIndexed `boolean`
+{:#members:primaryxaxis-isindexed}
+
+
+
+
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { isIndexed: true }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryXAxis.axisLine `object`
@@ -20234,6 +20596,44 @@ series :[{ points:[{ border :{width : 2} }] }]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
+
+
+
+### series.points.visibleOnLegend `string`
+{:#members:series-points-visibleonlegend}
+
+
+
+
+Enables or disables the visibility of legend item.
+
+
+
+#### Default Value
+
+
+
+ * "visible"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+      series : [{
+          points: [{x: "Wheat", y: 394, visibleOnLegend: "hidden" },
+             //...
+           ] 
+      }]                   
+});
+{% endhighlight %}
+
+
 ### series.points.showIntermediateSum `boolean`
 {:#members:series-points-showintermediatesum}
 
@@ -22286,6 +22686,39 @@ series : [{visibility: "hidden" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
+
+
+### series.visibleOnLegend `string`
+{:#members:series-visibleonlegend}
+
+
+
+
+Enables or disables the visibility of legend item.
+
+
+
+#### Default Value
+
+
+
+ * "visible"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series : [{visibleOnLegend: "hidden" }]                   
+});
+{% endhighlight %}
+
+
 ### series.xAxisName `string`
 {:#members:series.xaxisname}
 
@@ -23296,6 +23729,68 @@ $("#container").ejChart({
      series: [{
       selectionSettings:{
               type : 'multiple'
+             }
+	  }]
+  }); 
+
+{% endhighlight %}
+
+
+
+### series.selectionSettings.rangeType `enum`
+{:#members:series-selectionSettings-rangetype}
+
+<ts ref = "ej.datavisualization.Chart.RangeType"/>
+
+Specifies the drawn rectangle type.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+XY</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in both horizontal and vertically.</td>
+</tr>
+<tr>
+<td class="name">
+X</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in horizontally.</td>
+<td class="name">
+Y</td>
+<td class="type">string</td>
+<td class="description">It will be draw a range rectangle in vertically.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "xy"
+ 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+     series: [{
+      selectionSettings:{
+              rangeType : 'x'
              }
 	  }]
   }); 
@@ -27372,3 +27867,209 @@ errorbar{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+
+### scrollChanged
+{:#events:scrollchanged}
+
+
+Trigger, after the scrollbar position is changed.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the scrollbar position old start and end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the scrollbar position new start and end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for chart
+$("#container").ejChart({
+   scrollChanged: function (args) {}
+});{% endhighlight %}
+
+
+
+### scrollStart
+{:#events:scrollstart}
+
+
+Event triggered when scroll starts
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datastartRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the scrollbar position starting range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataendRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the scrollbar position end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for chart
+$("#container").ejChart({
+   scrollStart: function (args) {}
+});{% endhighlight %}
+
+
+
+### scrollEnd
+{:#events:scrollend}
+
+
+Event triggered when scroll end
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the scrollbar position old start and end range value on change end of scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the scrollbar position new start and end range value on change end of scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for chart
+$("#container").ejChart({
+   scrollEnd: function (args) {}
+});{% endhighlight %}

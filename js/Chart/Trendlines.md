@@ -11,7 +11,7 @@ documentation: ug
 
 EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -37,7 +37,7 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 
 A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), **dashArray** and **opacity**. The default type of trendline is **"linear"**.
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -73,7 +73,7 @@ EjChart supports the following type of Trendlines.
 
 To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -96,7 +96,7 @@ To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:
 
 Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) as **"exponential"**. 
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -119,7 +119,7 @@ Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) as **"Logarithmic"**.  
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -142,7 +142,7 @@ Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) of the trendline as **"power"**. 
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -165,7 +165,7 @@ Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:s
 
 Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -189,7 +189,7 @@ Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ej
 
 MovingAverage Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) of the trendline as **"movingAverage"**. 
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -218,7 +218,7 @@ MovingAverage Trendline can be rendered by setting the [`type`](../api/ejchart#m
 
 The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-forwardForecast) is used to determine the distance moving towards the future trend.
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -243,7 +243,7 @@ The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-f
 
 The value set for the [`backwardForecast`](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{
@@ -267,7 +267,7 @@ The value set for the [`backwardForecast`](../api/ejchart#members:series-trendli
 
 To display the legend item for trendline, use the [`name`](../api/ejchart#members:series-trendlines-name) property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
-{% highlight javascript %}
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series:[{

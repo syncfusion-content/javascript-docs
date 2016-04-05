@@ -11,7 +11,7 @@ documentation: ug
 
 * When there are large number of points to load, you can enable canvas rendering mode in chart. Canvas rendering is faster than SVG because it does not involve manipulating DOM elements as much as SVG rendering.   
 
-{% highlight javascript %}
+{% highlight js %}
 
       $("#chartcontainer").ejChart({
             

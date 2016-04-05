@@ -36,7 +36,7 @@ You can customize the chart dimension by setting the width and height for the co
 
 You can also set the chart dimension by using the [`size`](../api/ejchart#members:size) property of the chart. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
     $("#container").ejChart({
@@ -80,7 +80,7 @@ You can specify the chart size in percentage by using the [`size`](../api/ejchar
 
 To resize the Chart when the browser or the chart container is resized, set the [`isResponsive`](../api/ejchart#members:isResponsive) property to **true**, where the chart adapts to the changes in size of the container.
 
-{% highlight javascript %}
+{% highlight js %}
 
       $("#container").ejChart({
            // ...
