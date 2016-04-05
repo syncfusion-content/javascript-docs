@@ -7779,7 +7779,7 @@ $("#Grid").ejGrid("saveCell);
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
 
-We can prevent the client side cellSave event by passing the preventSaveEvent argument as true.
+We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.
 
 <table class="params">
 <thead>
@@ -7793,7 +7793,7 @@ We can prevent the client side cellSave event by passing the preventSaveEvent ar
 <tr>
 <td class="name">preventSaveEvent</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the preventSaveEvent to the cell to prevent the clientside cellsave</td>
+<td class="description last"><span class="optional">optional</span>If we pass preventSaveEvent as true, it prevents the client side cellSave event triggering </td>
 </tr>
 </tbody>
 </table>
