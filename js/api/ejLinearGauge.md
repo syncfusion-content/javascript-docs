@@ -331,7 +331,7 @@ Specifies the animate state for marker pointer
 
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 
 

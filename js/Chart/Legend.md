@@ -394,3 +394,28 @@ You can select a specific series or point while clicking on the corresponding le
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img16.png)
+
+
+
+## Collapsing legend item
+
+You can collapse the specific series/point legend item displaying in the chart, by setting the [`visibleOnLegend`](../api/ejchart.html#members:series-visibleonlegend) as *"hidden"* in the point or series.
+
+{% highlight javascript %}
+
+
+     $("#chartcontainer").ejChart({
+     
+          //Initializing Series
+          series:[{
+             points: [{ x: 'Albania', y: 60.1 },
+                     //...
+                     //Collapse the point's legend item in the legend collection
+                     { x: 'New Zealand', y: 82.8, visibleOnLegend:'hidden' }]
+                  }],
+         legend: { visible: true}
+     });
+      
+{% endhighlight %}
+
+![](/js/Chart/Legend_images/Legend_img17.png)

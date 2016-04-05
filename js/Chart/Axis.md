@@ -92,6 +92,36 @@ $("#chartcontainer").ejChart({
 ![](/js/Chart/Axis_images/axis_img3.png)
 
 
+### Indexed Category Axis
+
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting [`isIndexed`](../api/ejchart#members:primaryxaxis-isindexed) property to true in the axis.
+
+{% highlight javascript %}
+
+    $("#chartcontainer").ejChart({
+         // ...             
+         primaryXAxis: {                                  
+             isIndexed: true
+         },       
+         series:[{
+             points:[{ x: "Monday", y: 50 }, { x: "Tuesday", y: 40 }, { x: "Wednesday", y: 70 },
+                    { x: "Thursday", y: 60 }, { x: "Friday", y: 50 },
+                    { x: "Monday", y: 40 }, { x: "Monday", y: 30 } 
+                       ] 
+          }],
+        // ...             
+     });
+
+{% endhighlight %}
+
+
+![](/js/Chart/Axis_images/axis_img50.png)
+
+**While Category axis isIndexed value false**
+
+![](/js/Chart/Axis_images/axis_img51.png)
+
+
 ## Numeric Axis 
 
 Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the [`valueType`](../api/ejchart#members:primaryxaxis-valuetype) property of the axis to **double**. 
