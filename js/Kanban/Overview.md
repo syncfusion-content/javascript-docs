@@ -15,7 +15,7 @@ Some important features of the Kanban control are:
 
 *	Data sources - Bind the Kanban control with an array of JSON objects or [`ej.DataManager`](http://help.syncfusion.com/js/datamanager/overview) which support OData and remote web service binding.
 *	Swim lane – Supports Swim lane grouping.
-*	Quick Filters – Supports filtering based on user Query.
+*   Filters – Supports filtering based on user Query.
 *	Editing - Offers card editing, inserting, and deleting using Dialog.
 *	Card template - Offers to render the card based on user template.
 

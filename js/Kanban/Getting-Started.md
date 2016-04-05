@@ -54,6 +54,14 @@ Refer to the internal dependencies in the following table.
    </tr>
    <tr>
       <td>
+        ej.globalize.min.js
+      </td>
+      <td>
+       It is referred when using localization in Kanban.
+      </td>
+   </tr>
+   <tr>
+      <td>
          ej.scroller.min.js
       </td>
       <td>
