@@ -120,7 +120,7 @@ Tooltip dimensions can be set using width and height API.
 
 ## Tooltip Appearance 
 
-You can configure the apperance of the Tooltip with the title, close button and callout as your application requires.
+You can configure the appearance of the Tooltip with the title, close button and callout as your application requires.
 
 {% highlight html %}
  
