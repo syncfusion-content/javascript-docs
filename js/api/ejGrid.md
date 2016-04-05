@@ -1669,7 +1669,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### contextMenuSettings.disableDefaultitems `Boolean`
+### contextMenuSettings.disableDefaultItems `Boolean`
 {:#members:contextmenusettings-disabledefaultitems}
 
 Gets or sets a value that indicates whether to disable the default context menu items in the grid.
@@ -5484,7 +5484,7 @@ Refresh the grid with new data source
 <tr>
 <td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span>The template column of the Grid control will be refresh if templateRefresh is true.</td>
+<td class="description last"><span class="optional">optional</span> When templateRefresh is set true, grid get refreshed</td>
 </tr>
 </tbody>
 </table>
@@ -7779,7 +7779,7 @@ $("#Grid").ejGrid("saveCell);
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
 
-We can prevent the client side cellsave event by passing the preventSaveEvent argument as true.
+We can prevent the client side cellsave event by passing the `preventSaveEvent` argument as true.
 
 <table class="params">
 <thead>
@@ -8054,7 +8054,7 @@ $("#Grid").ejGrid("selectColumns", 1, 4);
 ### selectColumns(columnIndex,\[toIndex\])
 {:#methods:selectcolumns}
 
-Select columns in grid.
+Select the specified columns in grid based on Index provided.
 
 <table class="params">
 <thead>
@@ -8073,7 +8073,7 @@ Select columns in grid.
 <tr>
 <td class="name">toIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the ending index of column for selecting columns.</td>
+<td class="description last"><span class="optional">optional</span>It is used to set the ending index of column for selecting columns.</td>
 </tr>
 </tbody>
 </table>
@@ -8160,7 +8160,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 ### selectRows(from,to,\[target\])
 {:#methods:selectrows}
 
-Select rows in grid.
+Select specified rows in grid based on Index provided.
 
 <table class="params">
 <thead>
@@ -8183,7 +8183,7 @@ Select rows in grid.
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">array/number</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last"><span class="optional">optional</span>Target element which is clicked.</td>
 </tr>
 </tbody>
@@ -8287,17 +8287,17 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 <tbody>
 <tr>
 <td class="name">rowIndex</td>
-<td class="type"><span class="param-type">array/mumber</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the index of row.</td>
 </tr>
 <tr>
 <td class="name">cellIndex</td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the index of cell.</td>
 </tr>
 <tr>
 <td class="name">value</td>
-<td class="type"><span class="param-type">array/number</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
 </tr>
 </tbody>
