@@ -5484,7 +5484,7 @@ Refresh the grid with new data source
 <tr>
 <td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span> When templateRefresh is set true, grid get refreshed</td>
+<td class="description last"><span class="optional">optional</span> When templateRefresh is set true, both header and contents get refreshed</td>
 </tr>
 </tbody>
 </table>
@@ -7779,7 +7779,7 @@ $("#Grid").ejGrid("saveCell);
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
 
-We can prevent the client side cellsave event by passing the `preventSaveEvent` argument as true.
+We can prevent the client side cellSave event by passing the preventSaveEvent argument as true.
 
 <table class="params">
 <thead>
