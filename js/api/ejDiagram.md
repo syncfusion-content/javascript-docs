@@ -7864,8 +7864,8 @@ Defines the scrollable region of diagram.
    </thead>
     <tbody>
         <tr>
-            <td class="name">Infinity</td>
-            <td class="description last">Used to set scrollLimit as Infinity</td>
+            <td class="name">Infinite</td>
+            <td class="description last">Used to set scrollLimit as Infinite</td>
        </tr>
         <tr>
             <td class="name">Diagram</td>
@@ -7880,7 +7880,7 @@ Defines the scrollable region of diagram.
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.ScrollLimit.Infinity
+* ej.datavisualization.Diagram.ScrollLimit.Infinite
 
 #### Example
 
