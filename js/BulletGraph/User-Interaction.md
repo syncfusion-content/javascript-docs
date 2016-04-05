@@ -28,14 +28,14 @@ $("#BulletGraph1").ejBulletGraph({
 
 ## Responsiveness during browser resize
 
-**Bullet Graph** is made responsive when resizing the browser by using **enableResizing** property. By default the value of this property is **true** in **Bullet Graph**.
+**Bullet Graph** is made responsive when resizing the browser by using **isResponsive** property. By default the value of this property is **true** in **Bullet Graph**.
 
 {% highlight javascript %}
 
 
 
 $("#BulletGraph1").ejBulletGraph({
-                    enableResizing: true,
+                    isResponsive: true,
                     value: 8,
                     comparativeMeasureValue: 5,                    
                 });

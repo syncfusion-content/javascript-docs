@@ -898,41 +898,6 @@ $("#container").ejChart({
 
 
 
-### canResize `boolean`
-{:#members:canresize}
-
-
-
-
-Controls whether Chart has to be responsive or not.
-
-
-#### Default Value
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-   canResize : true             
-
-});
-
-{% endhighlight %}
-
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r12awtp3)
-
-
-
-
 ### chartArea `object`
 {:#members:chartarea}
 
@@ -8793,7 +8758,37 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
 
+
+
+
+Controls whether Chart has to be responsive or not.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   isResponsive : true             
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1dkyopq5)
 
 
 ### legend `object`

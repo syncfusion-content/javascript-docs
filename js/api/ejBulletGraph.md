@@ -3296,86 +3296,14 @@ enableAnimation : false
 
 
 
-### enableResizing `boolean`
-{:#members:enableresizing}
-
-
-
-
-
-
-
-
-Sets a value whether to make the bullet graph responsive on resize.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-enableResizing : false                  
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### flowDirection `enum`
 {:#members:flowdirection}
 
-<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
-
-Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
 
 
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Forward</td>
-<td class="type">string</td> 
-<td class="description last">The BulletGraph is rendered from left to right</td>
-</tr>
-<tr>
-<td class="name">
-Backward</td>
-<td class="type">string</td>
-<td class="description last">The BulletGraph is rendered from right to left</td>
-</tr> 
-</tbody>
-</table>
+
+
+
 
 
 Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. See <a href="global.html#FlowDirection">FlowDirection</a>
@@ -3420,11 +3348,34 @@ flowDirection : "backward"
 ### height `number`
 {:#members:height}
 
+<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
+
+Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
 
 
-
-
-
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Forward</td>
+<td class="type">string</td> 
+<td class="description last">The BulletGraph is rendered from left to right</td>
+</tr>
+<tr>
+<td class="name">
+Backward</td>
+<td class="type">string</td>
+<td class="description last">The BulletGraph is rendered from right to left</td>
+</tr> 
+</tbody>
+</table>
 
 
 Specifies the height of the bullet graph.
@@ -3459,6 +3410,55 @@ $("#bulletGraph1").ejBulletGraph({
 height : 600                    
 });
 </script>  {% endhighlight %}
+
+
+
+
+
+
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+
+
+
+
+Sets a value whether to make the bullet graph responsive on resize.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+isResponsive : false                  
+});
+</script>{% endhighlight %}
 
 
 
