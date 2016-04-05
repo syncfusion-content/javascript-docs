@@ -932,7 +932,7 @@ columnCount: 30
 Gets or sets a value that indicates to define the common width for each column in the Spreadsheet.
 
 #### Default Value
-* 60
+* 64
 
 #### Example
 {% highlight html %}
@@ -966,6 +966,31 @@ cssClass: "gradient-lime"
 
 {% endhighlight %}
 
+### customFormulas `Object`
+{:#members:customformulas}
+
+Gets or sets a value that indicates custom formulas in Spreadsheet.
+
+#### Default Value
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Set the custom formula
+$('#Spreadsheet').ejSpreadsheet({
+customFormulas: [{
+	formulaName:"CUSTOMTOTAL",
+	functionName:"customTotal"
+}]
+});   
+function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
 ### enableContextMenu `Boolean`
 {:#members:enablecontextmenu}
 
@@ -981,6 +1006,26 @@ Gets or sets a value that indicates whether to enable or disable context menu in
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
 enableContextMenu: true
+});                   
+</script>
+
+{% endhighlight %}
+
+### enablePivotTable `Boolean`
+{:#members:enablepivottable}
+
+Gets or sets a value that indicates whether to enable or disable pivot table in the Spreadsheet.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+enablePivotTable: false
 });                   
 </script>
 
@@ -1167,6 +1212,26 @@ formatSettings({
 allowFontFamily: true
 })
 });  
+</script>
+
+{% endhighlight %}
+
+### importOnLoad `Boolean`
+{:#members:importonload}
+
+Gets or sets a value that indicates whether to enable or disable import while initial loading.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+importOnLoad: false
+});                   
 </script>
 
 {% endhighlight %}
@@ -1643,7 +1708,7 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite,
 Gets or sets the value that indicates to define the height off spreadsheet.
 
 #### Default Value
-* 1200
+* 1300
 
 #### Example
 
@@ -1896,7 +1961,7 @@ colCount: 25
 {% endhighlight %}
 
 ### sheets.columnWidth `Number`
-{:#members:sheets-columnWidth}
+{:#members:sheets-columnwidth}
 
 Gets or sets a value that indicates to define column width in the Spreadsheet.
 
@@ -2300,7 +2365,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### sheets.startCell `String`
-{:#members:sheets.startCell}
+{:#members:sheets-startcell}
 
 Specifies the start cell for the datasource range in Spreadsheet.
 
@@ -2382,6 +2447,53 @@ userName: "User Name"
 {% endhighlight %}
 
 ## Methods
+
+### addCustomFormula(formulaName, functionName)
+{:#methods:addcustomformula}
+
+This method is used to add custom formulas in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">formulaName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the name of the formula.</td>
+</tr>
+<tr>
+<td class="name">functionName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the name of the function.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.addCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a add custom formula request to the Spreadsheet.
+function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a add custom formula request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("addCustomFormula","CUSTOMTOTAL","customTotal" );     
+function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.  
+</script>
+
+{% endhighlight %}
 
 ### addNewSheet()
 {:#methods:addnewsheet}
@@ -2607,7 +2719,7 @@ $("#Spreadsheet").ejSpreadsheet("clearRange","updateTable");
 
 {% endhighlight %}
 
-### clearRangeData(\[range\], \[property\], \[skipHiddenRow\])
+### clearRangeData(\[range\], \[property\],\[cells\],\[skipHiddenRow\],\[status\],\[skipCell\])
 {:#methods:clearrangedata}
 
 It is used to remove data in the specified range of cells based on the defined property.
@@ -2632,9 +2744,24 @@ It is used to remove data in the specified range of cells based on the defined p
 <td class="description"><span class="optional">Optional. </span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
 </tr>
 <tr>
+<td class="name">cells</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span></td>
+</tr>
+<tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span> </td>
 <td class="description"><span class="optional">Optional. </span> If pass true, if you want to skip the hidden rows </td>
+</tr>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span>Pass the status to perform undo and redo operation.</td>
+</tr>
+<tr>
+<td class="name">skipCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span>It specifies whether to skip element processing or not.</td>
 </tr>
 </tbody>
 </table>
@@ -2659,7 +2786,7 @@ $("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], 
 
 {% endhighlight %}
 
-### copySheet(fromIdx, toIdx, \[isCopySheet\])
+### copySheet(fromIdx, toIdx, isCopySheet)
 {:#methods:copysheet}
 
 This method is used to copy sheets in Spreadsheet.
@@ -2685,7 +2812,7 @@ This method is used to copy sheets in Spreadsheet.
 <tr>
 <td class="name">isCopySheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true to copy particular sheet, if pass false then sheet will be moved to mentioned toIdx.</td>
+<td class="description">Pass true,If you want to copy sheet or else it will move sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -3239,6 +3366,50 @@ xlObj.getCell(2, 3, 1); // Get the cell based on rowIndex and colIndex.
 <script>
 // Get the cell based on row and column index
 $("#Spreadsheet").ejSpreadsheet("getCell", 2, 3, 1);        
+</script>
+
+{% endhighlight %}
+
+### getDataSettings(sheetIdx)
+{:#methods:getdatasettings}
+
+This method is used to get the data settings in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+####Returns:
+Number
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getDataSettings(1); // Gets the data settings in Spreadsheet
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets the data settings in Spreadsheet
+$("#Spreadsheet").ejSpreadsheet("getDataSettings", 1);        
 </script>
 
 {% endhighlight %}
@@ -4329,7 +4500,6 @@ $("#Spreadsheet").ejSpreadsheet("moveSheet", 2, 1);
 
 {% endhighlight %}
 
-
 ### protectSheet(\[isProtected\])
 {:#methods:protectsheet}
 
@@ -4367,7 +4537,105 @@ $("#Spreadsheet").ejSpreadsheet("protectSheet", false);
 
 {% endhighlight %}
 
-### removeHyperlink(range, \[isClearHLink\])
+### refreshContent(sheetIdx)
+{:#methods:refreshcontent}
+This method is used to refresh the content in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the index of the sheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.refreshContent(1);
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+$("#Spreadsheet").ejSpreadsheet("refreshContent",1);
+</script>
+{% endhighlight %}
+
+
+### refreshSpreadsheet()
+{:#methods:refreshspreadsheet}
+This method is used to refresh the Spreadsheet.
+
+#### Example
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.refreshSpreadsheet();
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+$("#Spreadsheet").ejSpreadsheet("refreshSpreadsheet");
+</script>
+{% endhighlight %}
+
+### removeCustomFormula(formulaName, functionName)
+{:#methods:removecustomformula}
+
+This method is used to remove custom formulae in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">formulaName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the name of the formula.</td>
+</tr>
+<tr>
+<td class="name">functionName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the name of the function.</td>
+</tr>
+</tbody>
+</table>
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.removeCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a remove custom formula request to the Spreadsheet.
+function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Sends a remove custom formula request to the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("removeCustomFormula","CUSTOMTOTAL","customTotal" ); 
+function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet .      
+</script>
+{% endhighlight %}
+
+### removeHyperlink(range, \[isClearHLink\], status, cells, \[skipHiddenRow\])
 {:#methods:removehyperlink}
 
 This method is used to remove the hyperlink from selected cells of current sheet.
@@ -4390,6 +4658,21 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <td class="name">isClearHLink</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> If it is true, It will clear link only not format.</td>
+</tr>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass the status to perform undo and redo operations.</td>
+</tr>
+<tr>
+<td class="name">cells</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass the cells that you want to remove hyperlink..</td>
+</tr>
+<tr>
+<td class="name">skipHiddenRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows.</td>
 </tr>
 </tbody>
 </table>
@@ -4450,6 +4733,70 @@ xlObj.removeRange("updateTable");
 <script>
 // Sends a remove range request to the Spreadsheet.
 $("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
+</script>
+
+{% endhighlight %}
+
+### saveAsJSON()
+{:#methods:saveasjson}
+
+This method is used to save json data in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.saveAsJSON();
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+$("#Spreadsheet").ejSpreadsheet("saveAsJSON");
+</script>
+
+{% endhighlight %}
+
+### saveBatchChanges(sheetIdx)
+{:#methods:savebatchchanges}
+
+This method is used to save batch changes in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index for Spreadsheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//Set sheet index for Spreadsheet. 
+xlObj.saveBatchChanges(1);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+//Set sheet index for Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("saveBatchChanges", 1);
 </script>
 
 {% endhighlight %}
@@ -4594,7 +4941,7 @@ $("#Spreadsheet").ejSpreadsheet("setBorder", { borderStyle: "solid", ID: "outsid
 
 {% endhighlight %}
 
-### setHyperlink(range, link, sheetIdx)
+### setHyperlink(range, link, sheetIdx, selcells)
 {:#methods:sethyperlink}
 
 This method is used to set the hyperlink in selected cells of the current sheet.
@@ -4621,6 +4968,11 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">If we pass cellAddress then which sheet to be navigate in the applied link.</td>
+</tr>
+<tr>
+<td class="name">selcells</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the selected cell address.</td>
 </tr>
 </tbody>
 </table>
@@ -5809,7 +6161,7 @@ $("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));
 
 {% endhighlight %}
 
-### XLComment.setComment(\[range\], data, \[showEditPanel\], \[showUserName\])
+### XLComment.setComment(\[range\], data, \[showEditPanel\])
 {:#methods:xlcomment-setcomment}
 
 This method is used to set new comment in Spreadsheet.
@@ -5836,11 +6188,6 @@ This method is used to set new comment in Spreadsheet.
 <td class="name">showEditPanel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description"><span class="optional">Optional. </span> Pass true to show comment in edit mode </td>
-</tr>
-<tr>
-<td class="name">showUserName</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass false to hide user name in comment area.</td>
 </tr>
 </tbody>
 </table>
@@ -6253,7 +6600,7 @@ xlObj.XLEdit.saveCell();
 
 {% endhighlight %}
 
-### XLEdit.updateCell(cell, value, \[sheetIdx\])
+### XLEdit.updateCell(cell, value)
 {:#methods:xledit-updatecell}
 
 This method is used to update a particular cell value in the Spreadsheet.
@@ -6275,11 +6622,6 @@ This method is used to update a particular cell value in the Spreadsheet.
 <td class="name">value</td>
 <td class="type"><span class="param-type">string|number</span></td>
 <td class="description">Pass the cell value.</td>
-</tr>
-<tr>
-<td class="name">sheetIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span>Pass the index of sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -6533,6 +6875,45 @@ This method is used to set format style and values in a cell or range of cells.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a format request to the Spreadsheet.
 xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
+</script>
+
+{% endhighlight %}
+
+### XLFormat.removeStyle(range,options)
+{:#methods:xlformat-removestyle}
+
+This method is used to remove the style in the specified range.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">array|string</span></td>
+<td class="description">Pass the cell range .</td>
+</tr>
+<tr>
+<td class="name">options</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span>Pass the options for which the style gets removed.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Sends a remove style request to the Spreadsheet.
+xlObj.XLFormat.removeStyle("E4:F13",{ cellStyle: true, tableStyle: true, format: true, border: true }); 
 </script>
 
 {% endhighlight %}
@@ -6829,6 +7210,172 @@ xlObj.XLFreeze.freezeTopRow();
 
 {% endhighlight %}
 
+### XLPivot
+{:#methods:xlpivot}
+
+### XLPivot.clearPivotFieldList(pivotName)
+{:#methods:xlpivot-clearpivotfieldlist}
+
+This property is used to clear the pivot table list in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pivotName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the name of the pivot table. </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLPivot.clearPivotFieldList("name"); // Sends a clear pivot field list request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+
+### XLPivot.createPivotTable(range,location,name,settings,pvt)
+{:#methods:xlpivot-createpivottable}
+
+This method is used to create pivot table.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">It specifies the range for which the pivot table is created.</td>
+</tr>
+<tr>
+<td class="name">location</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">It specifies the location in which the pivot table is created.</td>
+</tr>
+<tr>
+<td class="name">name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">It specifies the name of the pivot table.</td>
+</tr>
+<tr>
+<td class="name">settings</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the pivot table settings.</td>
+</tr>
+<tr>
+<td class="name">pvt</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the pivot range, sheet index, address and data dource .</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// create a pivot table in the sheet.
+var settings = {
+                 rows: [ {fieldName: "Country",},{fieldName: "State",}],
+                 columns: [{fieldName: "Product",}],
+                 values: [{fieldName: "Amount", },{fieldName: "Quantity", } ],
+                 filters: [ {fieldName: "Date", }] };
+xlObj.XLPivot.createPivotTable("Sheet1!$A$1:$F$25","Sheet1!$A$1", null, settings);
+</script>
+
+{% endhighlight %}
+
+### XLPivot.deletePivotTable(pivotName)
+{:#methods:xlpivot-deletepivottable}
+
+This method is used to delete the pivot table which is selected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pivotName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the name of the pivot table.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// Delete pivot table in the sheet.
+xlObj.XLPivot.deletePivotTable("name");
+</script>
+
+{% endhighlight %}
+
+### XLPivot.refreshDataSource(name, sheetIdx)
+{:#methods:xlpivot-refreshdatasource}
+
+This method is used to refresh data in pivot table.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional. </span>Pass the name of the pivot table.</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional. </span>Pass the index of the sheet.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLPivot.refreshDataSource(); // Sends a refresh data source request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
 
 ### XLPrint
 {:#methods:xlprint}
@@ -8066,6 +8613,66 @@ autoFillComplete: function (args){}
 
 {% endhighlight %}
 
+### beforeBatchSave
+{:#events:beforebatchsave}
+
+Triggered before the batch save.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeBatchSave event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr><tr>
+<td class="name">dataSetting</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Returns the query, primary key,batch changes for the data Source.</td>
+</tr>
+<tr>
+<td class="name">batchChanges</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Returns the changed record object.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+//beforeBatchSave event for Spreadsheet
+$("#Spreadsheet").ejSpreadsheet({
+beforeBatchSave: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
 ### beforeCellFormat
 {:#events:beforecellformat}
 
@@ -8588,6 +9195,67 @@ cellEdit: function (args){}
 
 {% endhighlight %}
 
+### cellFormatting
+{:#events:cellformatting}
+
+Triggered while cell is formatting.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellFormatting event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">SheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index</td>
+</tr>
+<tr>
+<td class="name">Format</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the applied style format object</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the cell index.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+//cellFormatting event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+cellFormatting: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
 ### cellHover
 {:#events:cellhover}
 
@@ -8695,6 +9363,16 @@ Triggered when save the edited cell.
 <td class="name">columnObject</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the column field information.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Returns the index of the row.</td>
+</tr>
+<tr>
+<td class="name">colIndex</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Returns the index of the column.</td>
 </tr>
 <tr>
 <td class="name">model</td>
