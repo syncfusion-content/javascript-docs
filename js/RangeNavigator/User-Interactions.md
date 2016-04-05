@@ -13,7 +13,7 @@ documentation: ug
 
 EjRangeNavigator provides highlighting supports to the intervals on mouse hover. To enable the highlighting option, set the [`enable`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings-enable) property to true in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings) of [`navigatorStyleSettings`](../api/ejrangenavigator#members:navigatorstylesettings).
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#rangecontainer").ejRangeNavigator({   
      
@@ -41,7 +41,7 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 To customize the highlighted intervals, use color, border and opacity options in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings).
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#rangecontainer").ejRangeNavigator({   
      
@@ -72,7 +72,7 @@ To customize the highlighted intervals, use color, border and opacity options in
 
 EjRangeNavigator provides selection supports to the intervals by, clicking and dragging the highlighted intervals. To enable the selection option, set the [`enable`](../api/ejrangenavigator#members:navigatorstylesettings-selectionsettings-enable) property to true in the [`selectionSettings`](../api/ejrangenavigator#members:navigatorstylesettings-selectionsettings).
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#rangecontainer").ejRangeNavigator({   
      
@@ -100,7 +100,7 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 To customize the selected intervals, use color, border and opacity options in the selectionSettings.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#rangecontainer").ejRangeNavigator({   
      
@@ -136,7 +136,7 @@ To customize the selected intervals, use color, border and opacity options in th
 
 * When you change the scrollbar position, [`scrollEnd`](../api/ejrangenavigator#events:scrollend) event returns the current position of start and end range value.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#scrollcontent").ejRangeNavigator({
           

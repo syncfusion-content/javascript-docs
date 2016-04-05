@@ -22,7 +22,7 @@ To split the chart area vertically into a number of rows, use [`rowDefinitions`]
 * To customize each row’s horizontal line, use [`lineColor`](../api/ejchart.html#members:rowdefinitions-linecolor) and [`lineWidth`](../api/ejchart.html#members:rowdefinitions-linewidth) property.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $("#chartcontainer").ejChart({
@@ -70,7 +70,7 @@ To split the chart area vertically into a number of rows, use [`rowDefinitions`]
 
 For spanning the vertical axis along multiple panes vertically, you can use [`rowSpan`](../api/ejchart.html#members:primaryyaxis-rowspan) property of axis. 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $("#chartcontainer").ejChart({
@@ -112,7 +112,7 @@ To split the chart area horizontally into a number of columns, use [`columnDefin
  
 * To associate a horizontal axis to a column, specify the columnDefinitions **index** value to the [`columnIndex`](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
  
-{% highlight js %}
+{% highlight javascript %}
 
  
        $("#chartcontainer").ejChart({
@@ -153,7 +153,7 @@ To split the chart area horizontally into a number of columns, use [`columnDefin
 
 For spanning the horizontal axis along multiple panes horizontally, you can use [`columnSpan`](../api/ejchart.html#members:primaryxaxis-columnspan) property of axis. 
 
-{% highlight js %}
+{% highlight javascript %}
 
  
        $("#chartcontainer").ejChart({

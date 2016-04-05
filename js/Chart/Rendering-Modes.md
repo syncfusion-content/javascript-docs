@@ -40,7 +40,7 @@ You can switch between SVG and Canvas rendering by using the [`enableCanvasRende
 The following code example shows how to enable HTML5 Canvas rendering in chart.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
 
        $("#chartcontainer").ejChart({

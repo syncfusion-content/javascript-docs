@@ -18,7 +18,7 @@ There are two ways to provide local data to chart.
 N> For the **OHLC** type series, you have to map four dataSource fields ([`high`](../api/ejchart#members:series-high), [`low`](../api/ejchart#members:series-low), [`open`](../api/ejchart#members:series-open) and [`close`](../api/ejchart#members:series-close)) to bind the data source and for the **bubble** series you have to map the [`size`](../api/ejchart#members:series-size) field along with the [`xName`](../api/ejchart#members:series-xname) and [`yName`](../api/ejchart#members:series-yname). 
 
 
-{% highlight js %}
+{% highlight javascript %}
 
      var chartData = [
           { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },  { month: 'Mar', sales: 34 },
@@ -49,7 +49,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 2.You can also plot data to chart using [`points`](../api/ejchart.html#members:series-points) option in the series. Using this property you can customize each and every point in the data.
 
-{% highlight js %}
+{% highlight javascript %}
 
     $("#chartcontainer").ejChart({
 
@@ -76,7 +76,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 You can bind the remote data to the chart by using the DataManager and you can use the [`query`](../api/ejchart#members:series-query) property of the series to filter the data from the dataSource.
 
 
-{% highlight js %}
+{% highlight javascript %}
 
         //Remote URL           
         var dataManger = new ej.DataManager({
@@ -136,7 +136,7 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 {% endhighlight %}
 
 
-{% highlight js %}
+{% highlight javascript %}
 
        //Data source for chart.
         var obj = [

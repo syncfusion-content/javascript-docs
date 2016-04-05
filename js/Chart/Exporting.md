@@ -208,7 +208,7 @@ EjChart supports exporting more than one charts in a page, with the third argume
 
 N> Refer the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet.
 
-{% highlight js %}
+{% highlight javascript %}
     //Render Chart1
        $("#container1").ejChart();
 
@@ -274,7 +274,7 @@ ejChart provides options to customize the name of the file to be exported. This 
 
 We can also rotate the chart and can export it. Possible angles of rotation are 0, 90, -90 and 180 degree. This can be achieved by setting values to the “angle” property in exporting.
 
-{% highlight js %}
+{% highlight javascript %}
 
         //Exporting the chart after rotating
         $("#chartcontainer").ejChart(

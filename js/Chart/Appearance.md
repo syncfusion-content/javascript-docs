@@ -13,7 +13,7 @@ documentation: ug
 
 The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the [`palette`](../api/ejchart#members:palette) property. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         $("#chartcontainer").ejChart({
             
@@ -55,7 +55,7 @@ Following are the built-in themes available in the Chart
 
 You can set your desired theme by using the [`theme`](../api/ejchart#members:theme) property. Flat light is the default theme used in the Chart.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
             
@@ -75,7 +75,7 @@ You can set your desired theme by using the [`theme`](../api/ejchart#members:the
 
 Marker, data label and fill color of each point in a series can be customized individually by using the [`points`](../api/ejchart#members:series-points) collection.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
             
@@ -110,7 +110,7 @@ To customize the series border color, width and dashArray, you can use [`series.
 
 N> Series border can be applied to all the series (except line, spline, hilo, hiloopenclose and stepline series).
 
-{% highlight js %}
+{% highlight javascript %}
 
   $("#chartcontainer").ejChart({
 
@@ -136,7 +136,7 @@ N> Series border can be applied to all the series (except line, spline, hilo, hi
 
 The Chart background can be customized by using the [`background`](../api/ejchart#members:background) property of the Chart. To customize the chart border, use [`border`](../api/ejchart#members:border) option of the chart. 
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -162,7 +162,7 @@ The Chart background can be customized by using the [`background`](../api/ejchar
 
 The Chart [`margin`](../api/ejchart#members:margin) property is used to add the margin to the chart area at the left, right, top and bottom position.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -184,7 +184,7 @@ The Chart [`margin`](../api/ejchart#members:margin) property is used to add the 
 
 Background image can be added to the chart by using the [`backGroundImageUrl`](../api/ejchart#members:backgroundimageurl) property.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -209,7 +209,7 @@ Background image can be added to the chart by using the [`backGroundImageUrl`](.
 
 The Chart area background can be customized by using the [`background`](../api/ejchart#members:chartarea-background) property in the chart area. 
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -234,7 +234,7 @@ The Chart area background can be customized by using the [`background`](../api/e
 
 You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the [`alternateGridBand`](../api/ejchart#members:primaryxaxis-alternategridband) property of the axis. The properties [`odd`](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [`even`](../api/ejchart#members:primaryxaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively. 
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -267,7 +267,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 You can enable animation by using the [`enableAnimation`](../api/ejchart#members:series-enableanimation) property of the series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
        
@@ -289,7 +289,7 @@ You can enable animation by using the [`enableAnimation`](../api/ejchart#members
 
 However, you can force the chart to animate series by calling the animate method as illustrated in the following code example,
 
-{% highlight js %}
+{% highlight javascript %}
 
        $("#chartcontainer").ejChart({
             series : [{
