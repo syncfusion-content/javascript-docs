@@ -64,7 +64,7 @@ $("#OlapClient1").ejOlapClient(...);
 ### chartType `enum`
 {:#members:charttype}
 
-<ts ref = "ej.olap.OlapChart.ChartTypes"/>
+<ts name = "ej.olap.OlapChart.ChartTypes"/>
 
 Allows the user to set the specific chart type for OlapChart.
 
@@ -848,7 +848,7 @@ Triggers when it reaches client-side after any AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -924,7 +924,7 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -999,7 +999,7 @@ Triggers before rendering the OlapChart.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
@@ -1063,7 +1063,7 @@ Triggers while we initiate loading of the widget.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -1133,7 +1133,7 @@ Triggers when OlapClient widget completes all operations at client-end after any
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -1207,7 +1207,7 @@ Triggers when any error occurred during AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -1276,7 +1276,7 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.OlapClient.Model"/>object</td>
+<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
 <td class="description last">returns the OlapClient model.</td>
 </tr>
 <tr>
@@ -1421,7 +1421,7 @@ $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Dis
 ### DefaultView `enum`
 {:#enum:defaultview}
 
-<ts name = "ej.OlapClient.DefaultView"/>
+<ts name = "ej.olap.OlapClient.DefaultView"/>
 
 Allows the user to set either Chart or Grid as the start-up widget.
 

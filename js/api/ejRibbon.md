@@ -8026,7 +8026,7 @@ Removes the given index tab item from the ribbon control.
 {% endhighlight %}
 
 
-### setTabText(string, string)
+### setTabText(tabText, newText)
 {:#methods:settabtext}
 
 Sets new text to the given text tab in the ribbon control.
@@ -8041,12 +8041,12 @@ Sets new text to the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name">string</td>
+<td class="name">tabText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">current text of the tab item.</td>
 </tr>
 <tr>
-<td class="name">string</td>
+<td class="name">newText</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">new text of the tab item.</td>
 </tr>

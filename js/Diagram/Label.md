@@ -104,7 +104,7 @@ The following image shows the relationship between the label position (black col
 
 ![](/js/Diagram/Label_images/Label_img2.png)
 
-### Horizontal and vertical alignements
+### Horizontal and vertical alignments
 
 The `horizontalAlignment` property of label is used to set how the label is horizontally aligned at the label position determined from the fraction values. The `verticalAlignment` property is used to set how label is vertically aligned at the label position. 
 

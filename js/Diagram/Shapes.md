@@ -153,7 +153,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the inbuilts [Basic Shapes](/js/api/global#basicshapes "Basic Shapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the built-in shape. [Basic Shapes](/js/api/global#basicshapes "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight javascript %}
@@ -222,7 +222,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the inbuilts [Flow Shapes](/js/api/global#flowshapes "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the built-in shape. [Flow Shapes](/js/api/global#flowshapes "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
 
 {% highlight javascript %}
 
@@ -257,7 +257,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the inbuilts [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight javascript %}
 

@@ -95,7 +95,7 @@ diagram.load(json);
 
 {% endhighlight %}
 
-* Css classes have to be retained in the application level, while loading the Diagram.
+* CSS classes have to be retained in the application level, while loading the Diagram.
 
 {% highlight html %}
 

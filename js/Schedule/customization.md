@@ -4,7 +4,7 @@ description: Customization of working hours, date, and appointment window
 platform: js
 control: schedule
 documentation: ug
-keywords: customization, work hours, appointment window, display hours 
+keywords: customization, work hours, appointment window, display hours, Query cell info
 ---
 # Customization
 
@@ -16,6 +16,8 @@ The Scheduler can be customized in various aspects like -
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 * Setting different time Slot duration
+* Complete Scheduler customization using queryCellInfo event
+* Setting different [first day of week](/js/schedule/globalization-and-localization#first-day-of-week)
 
 ## Hour Customization
 
@@ -25,8 +27,8 @@ It includes customization of displaying Scheduler with specific Start/End hours 
 
 It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely [startHour](/js/api/ejschedule#members:starthour) and [endHour](/js/api/ejschedule#members:endhour) can be used. 
 
-* **startHour** - Sets the start time. The hour from which the Scheduler time display actually starts.
-* **endHour** - Sets the end time. The hour on which the Scheduler time display should end.
+* **startHour** - The hour from which the Scheduler time display actually starts.
+* **endHour** - The hour on which the Scheduler time display should end.
 
 The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
@@ -58,13 +60,12 @@ $(function() {
 
 ### Working Hours
 
-Working hours indicates the work hour limit within the Scheduler. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. [workHour](/js/api/ejschedule#members:workhours) is a object property which contains the below specified options,
+Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. [workHour](/js/api/ejschedule#members:workhours) is a object property which contains the below specified options,
 
-* **[highlight](/js/api/ejschedule#members:workhours-highlight)** – enables/disables the work hour highlighting functionality.
-* **[start](/js/api/ejschedule#members:workhours-start)** - sets the time to be depicted as the start of the working/business hour in a day. 
-* **[end](/js/api/ejschedule#members:workhours-end)** - sets the time limit to denote the end of the working/business hour in a day. 
+* **[highlight](/js/api/ejschedule#members:workhours-highlight)** – enables/disables the highlighting of work hours.
+* **[start](/js/api/ejschedule#members:workhours-start)** - sets the start time of the working/business hour in a day. 
+* **[end](/js/api/ejschedule#members:workhours-end)** - sets the end time limit of the working/business hour in a day. 
 
-The work hours are differentiated from other normal hours, by depicting the Scheduler cells in different color shade that belongs to this working hour time range. 
 
 {% highlight html %}
 
@@ -94,15 +95,16 @@ $(function() {
 
 {% endhighlight %}
 
-N> By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+N> By default, work hour **start** is set to **9** and **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
 ## TimeScale
 
-The [TimeScale](/js/api/ejschedule#members:timeScale) is an object collection which allows the user to set the required time slot duration to be displayed on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
+The [TimeScale](/js/api/ejschedule#members:timeScale) allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
 
-* [enable](/js/api/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the timescale option. Its default value is `true`.
+* [enable](/js/api/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * [majorSlot](/js/api/ejschedule#members:timeScale-majorSlot) – Specifies the major time slot duration.
-* [minorSlotCount](/js/api/ejschedule#members:timeScale-minorSlotCount) – Specifies the value based on which the minor time slots are divided.
+* [minorSlotCount](/js/api/ejschedule#members:timeScale-minorSlotCount) – Specifies the value, based on which the minor time slots are divided into appropriate count.
+* [TimeScale templates](/js/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
 
 The majorSlot and minorSlot can be set on the Scheduler with the following code example.
 
@@ -137,7 +139,7 @@ $(function() {
 
 ## Date Customization
 
-The dates in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.
+The date in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.
 
 ### Current Date
 
@@ -166,13 +168,13 @@ $(function() {
 
 {% endhighlight %}
 
-N> By default, the System current date will be taken as Scheduler’s Current date.
+N> By default, the System current date will be taken as Scheduler’s current date.
 
 ### MinDate and MaxDate
 
-Providing the [minDate](/js/api/ejschedule#members:mindate) and [maxDate](/js/api/ejschedule#members:maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler dates that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that belongs beyond these date ranges will not be displayed on the Scheduler.  
+Providing the [minDate](/js/api/ejschedule#members:mindate) and [maxDate](/js/api/ejschedule#members:maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that lies beyond these date ranges will not be displayed on the Scheduler.  
 
-The following code example show how to set the minDate and maxDate properties of the Scheduler.
+The following code example shows how to set the minDate and maxDate properties of the Scheduler.
 
 {% highlight html %}
 
@@ -204,7 +206,7 @@ N> The **maxDate** value provided should always be greater than that of **minDat
 
 It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) event within which the display of default appointment window is prevented.
 
-The following code example lets you create the custom appointment with a single extra field for defining the appointment type.
+The following code example lets you create the custom appointment window with a single extra field for defining the appointment type.
 
 {% highlight html %}
 
@@ -292,7 +294,7 @@ The styles to be applied for the controls within the custom appointment window a
 
 {% endhighlight %}
 
-Now, define the Schedule control with custom window within script as shown below.
+Now, define the Schedule control with custom appointment window within script as shown below.
 
 {% highlight html %}
 
@@ -558,3 +560,98 @@ function cancel() {
 
 {% endhighlight %}
 
+## Scheduler Customization using queryCellInfo
+
+It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using [queryCellInfo ](/js/api/ejschedule#events:appointmentwindowopen) event.
+
+The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
+
+{% highlight html %}
+
+    <!--Container for ejScheduler widget--> 
+    <div id="Schedule1"></div> 
+    <script type="text/javascript"> 
+       $(function() { 
+	       $("#Schedule1").ejSchedule({ 
+		      queryCellInfo: "checkInfo"
+	   });
+    }); 
+    function checkInfo(args) {
+	    switch (args.requestType) {
+		case "workcells":
+			args.element.css("background-color", "#ffe9cc");
+			break;
+		case "monthcells":
+			args.element.css("background-color", "#faa41a");
+			args.element.css("border-color", "#faa41a");
+			break;
+		}
+    }
+    </script>
+
+{% endhighlight %}
+
+The Scheduler elements are listed below which can be formatted through this event. The names are listed in the format with which it can be accessed or used within the requestType argument of the event.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Request Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="description">Depicts the appointment element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">agendacells</td>
+            <td class="description">Depicts the Agenda Cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">alldaycells</td>
+            <td class="description">Depicts the AllDay cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">headercells</td>
+            <td class="description">Depicts the header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">resourceheadercells</td>
+            <td class="description">Depicts the resource header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">leftheadercells</td>
+            <td class="description">Depicts the left empty space on header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">leftindentcells</td>
+            <td class="description">Depicts the left empty space on date cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">timecells</td>
+            <td class="description">Depicts the left side time panel cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">headerdate</td>
+            <td class="description">Depicts the header date cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">emptytd</td>
+            <td class="description">Depicts the empty space above the vertical scroller within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">resourcegroupheader</td>
+            <td class="description">Depicts the header group cell in horizontal orientation in the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">monthcells</td>
+            <td class="description">Depicts the month cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">workcells</td>
+            <td class="description">Depicts the work cell element within the Scheduler.</td>
+        </tr>
+    </tbody>
+</table>

@@ -15,7 +15,6 @@ The Spreadsheet have the following list of external dependencies.
 * [jQuery](http://jquery.com/) 1.7.1 and later versions.
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates.
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support the animation effects in the components.
-* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1) v0.1.1 - to support the globalization.
 * [jQuery.validate](https://github.com/jzaefferer/jquery-validation) - to support validation in editing and dialog inputs.
 
 And the internal dependencies are tabulated below. 
@@ -159,8 +158,8 @@ ej.ribbon.min.js</td><td>
 These files are used when ribbon option is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.button.min.js</td><td>
-</td></tr>
+ej.button.min.js</td><td rowspan = "16">
+These files are used while enable the cellFormatting , import and drag and drap feature in the Spreadsheet.</td></tr>
 <tr>
 <td>
 ej.checkbox.min.js</td><td>
@@ -215,16 +214,20 @@ ej.uploadbox.min.js</td><td>
 </td></tr>
 <tr>
 <td>
+ej.draggable.min.js</td><td>
+</td></tr>
+<tr>
+<td>
+ej.datepicker.min.js</td><td>
+</td></tr>
+<tr>
+<td>
 ej.calculate.min.js</td><td>
 Must be referred and used for formula in Spreadsheet.  </td></tr>
 <tr>
 <td>
 ej.dialog.min.js</td><td>
 Must be referred since dialog is used in various features in Spreadsheet.  </td></tr>
-<tr>
-<td>
-ej.draggable.min.js</td><td>
-</td></tr>
 <tr>
 <td>
 ej.treeview.min.js</td><td>
@@ -235,10 +238,10 @@ ej.excelfilter.min.js</td><td>
 Should be referred when filtering is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.datepicker.min.js</td><td>
-</td></tr>
+ej.globalize.min.js</td><td>
+It is referred when using localization in Spreadsheet.  </td></tr>
 </table>
-For getting started, you can use the `ej.web.all.min.js` file, which encapsulates all the `ej` controls and frameworks in one single file. For themes, you can use the `ej.web.all.min.css` or Use CDN links for scripts and CSS from the snippet given. 
+For getting started, you can use the `ej.web.all.min.js` file, which encapsulates all the `ej` controls and frameworks in one single file. For themes, you can use the `ej.web.all.min.css` or Use CDN links for scripts and CSS from the snippet given.To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -395,7 +398,7 @@ The Spreadsheet control also has support for excel like drag fill, which can be 
 3. Formula Series - fill formula based on cell reference.
 4. Formatting - repeat cell formats.
 
-For auto filling, editing and autofill should be enabled using `allowEditing` and `allowAutoFill`.
+For auto filling, editing and auto fill should be enabled using `allowEditing` and `allowAutoFill`.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>

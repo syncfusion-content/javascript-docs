@@ -44,7 +44,7 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
     $("#rangecontainer").ejRangeNavigator({
     // ...             
     loaded: function(sender) {
-        sender.model.enableAutoResizing = false;
+        sender.model.isResponsive = false;
     },
     //...
     });

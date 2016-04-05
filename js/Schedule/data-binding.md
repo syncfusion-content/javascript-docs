@@ -60,7 +60,7 @@ Binds the name of the categorize field and also its related validation rules. It
 <tr>
 <td>
 priority<br/><br/></td><td>
-Binds the name of the priority field, its related validation rules and also indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
+Binds the name of the priority field and its related validation rules, which indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 resourceFields<br/><br/></td><td>
@@ -156,7 +156,7 @@ $(function() {
 
 ## Appointment Field Validation
 
-It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
+It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each of the fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
 
 Refer the appointment fields specified with validation rules from the following code example.
 
@@ -210,7 +210,7 @@ Refer the appointment fields specified with validation rules from the following 
 
 ## Binding to JSON Data Array
 
-To bind the Scheduler events data as array of JSON objects in JavaScript, refer the below code example.
+To bind the Scheduler events data as array of JSON objects, refer the below code example.
 
 **Example** - Array of JSON Data Binding
 
@@ -309,7 +309,7 @@ $(function() {
 
 ## WebAPI Binding
 
-The Schedule appointment data can be bound through the Web API service and it is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
+The Schedule appointment data can also be bound through the Web API services. It is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
 
 {% highlight html %}
 
@@ -349,10 +349,224 @@ public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String
 
 {% endhighlight %}
 
+## Databinding using OLEDB
+
+The appointment data can also be bound to the Scheduler using OLEDB database as depicted below.
+
+{% highlight html %}
+
+<!-- HTML element will initialize as a ejSchedule -->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    // get the appointment data from the specified controller action
+    var dataManager = ej.DataManager({
+        url: "Home/GetData", // This will trigger to bind the appointment data initially to the Schedule control
+        crudUrl: "Home/Batch", // This will trigger while performing CRUD operation on the Scheduler appointments
+        adaptor: new ej.UrlAdaptor()
+    });
+
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager,
+            id: "Id",
+            subject: "Subject",
+            startTime: "StartTime",
+            endTime: "EndTime",
+            startTimeZone: "StartTimeZone",
+            endTimeZone: "EndTimeZone",
+            description: "Description",
+            allday: "AllDay",
+            recurrence: "Recurrence",
+            recurrenceRule: "RecurrenceRule"
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+The server-side controller code to retrieve and bind the appointment data to Scheduler are as follows. Also, define a class with all the required appointment fields as depicted in the below code example.
+
+{% highlight c# %}
+
+        // Define a class with all appointment fields
+        public class ScheduleData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean AllDay { get; set; }
+            public Boolean Recurrence { get; set; }
+            public string RecurrenceRule { get; set; }
+            public string StartTimeZone { get; set; }
+            public string EndTimeZone { get; set; }
+            public string Description { get; set; }
+        }
+
+        // To retrieve the appointments from database and bind it to Scheduler
+        public JsonResult GetData()
+        {
+            // Mention your own dataSource to be used here.
+            string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
+            DataSet myDataSet = new DataSet();
+            OleDbConnection myAccessConn = null;
+            myAccessConn = new OleDbConnection(strAccessConn);
+            OleDbCommand myAccessCommand = new OleDbCommand("SELECT * FROM DefaultSchedule", myAccessConn);
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(myAccessCommand);
+            myAccessConn.Open();
+            myDataAdapter.Fill(myDataSet, "DefaultSchedule");
+            List<ScheduleData> datasource = new List<ScheduleData>();
+            datasource = myDataSet.Tables[0].AsEnumerable().Select(dataRow => new ScheduleData { Id = dataRow.Field<int>("Id"), Subject = dataRow.Field<string>("Subject"), StartTime = dataRow.Field<DateTime>("StartTime"), EndTime = dataRow.Field<DateTime>("EndTime"), AllDay = dataRow.Field<bool>("AllDay"), Recurrence = dataRow.Field<bool>("Recurrence"), RecurrenceRule = dataRow.Field<string>("RecurrenceRule"), Description = dataRow.Field<string>("Description"), StartTimeZone = dataRow.Field<string>("StartTimeZone"), EndTimeZone = dataRow.Field<string>("EndTimeZone") }).ToList();
+            myAccessConn.Close();
+            return Json(datasource, JsonRequestBehavior.AllowGet);
+        }
+
+{% endhighlight %}
+
+The control code to handle the CRUD operation are as follows.
+
+{% highlight c# %}
+
+        public JsonResult Batch(EditParams param)
+        {
+            // Mention your own dataSource to be used here.
+            string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
+            if (param.action == "insert" || (param.action == "batch" && param.added != null))  // this block of code will execute while inserting the appointments
+            {
+                var value = param.action == "insert" ? param.value : param.added[0];
+                using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+                {
+                    OleDbCommand cmd = new OleDbCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO DefaultSchedule(Subject,StartTime,EndTime,AllDay,Recurrence,RecurrenceRule,Description,StartTimeZone,EndTimeZone) VALUES (@Subject,@StartTime,@EndTime,@AllDay,@Recurrence,@RecurrenceRule,@Description,@StartTimeZone,@EndTimeZone)";
+                    if (string.IsNullOrEmpty(value.Subject))
+                        cmd.Parameters.AddWithValue("@Subject", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@Subject", value.Subject);
+                    cmd.Parameters.AddWithValue("@StartTime", value.StartTime);
+                    cmd.Parameters.AddWithValue("@EndTime", value.EndTime);
+                    cmd.Parameters.AddWithValue("@AllDay", value.AllDay);
+                    cmd.Parameters.AddWithValue("@Recurrence", value.Recurrence);
+                    if (string.IsNullOrEmpty(value.RecurrenceRule))
+                        cmd.Parameters.AddWithValue("@RecurrenceRule", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@RecurrenceRule", value.RecurrenceRule);
+                    if (string.IsNullOrEmpty(value.Description))
+                        cmd.Parameters.AddWithValue("@Description", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@Description", value.Description);
+                    if (string.IsNullOrEmpty(value.StartTimeZone))
+                        cmd.Parameters.AddWithValue("@StartTimeZone", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@StartTimeZone", value.StartTimeZone);
+                    if (string.IsNullOrEmpty(value.EndTimeZone))
+                        cmd.Parameters.AddWithValue("@EndTimeZone", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@EndTimeZone", value.EndTimeZone);
+                    cmd.Connection = myCon;
+                    myCon.Open();
+                    cmd.ExecuteNonQuery();
+                    myCon.Close();
+
+                }
+            }
+            if (param.action == "remove" || param.deleted != null)  // this block of code will execute while removing the appointment
+            {
+                if (param.action == "remove")
+                {
+                    using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+                    {
+                        myCon.Open();
+                        OleDbCommand cmd = new OleDbCommand("DELETE FROM DefaultSchedule WHERE Id = @Key", myCon);
+                        cmd.Parameters.AddWithValue("@Key", param.key);
+                        cmd.ExecuteNonQuery();
+                        myCon.Close();
+                    }
+                }
+                else
+                {
+                    foreach (var apps in param.deleted)
+                    {
+                        using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+                        {
+                            myCon.Open();
+                            OleDbCommand cmd = new OleDbCommand("DELETE FROM DefaultSchedule WHERE Id = @Key", myCon);
+                            cmd.Parameters.AddWithValue("@Key", apps.Id);
+                            cmd.ExecuteNonQuery();
+                            myCon.Close();
+                        }
+                    }
+                }
+            }
+            if ((param.action == "batch" && param.changed != null) || param.action == "update")   // this block of code will execute while updating the appointment
+            {
+                var value = param.action == "update" ? param.value : param.changed[0];
+                using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+                {
+                    myCon.Open();
+                    OleDbCommand cmd = new OleDbCommand("UPDATE DefaultSchedule SET Subject=@Subject,StartTime=@StartTime,EndTime=@EndTime,AllDay=@AllDay,Recurrence=@Recurrence,RecurrenceRule=@RecurrenceRule,Description=@Description,StartTimeZone=@StartTimeZone,EndTimeZone=@EndTimeZone  WHERE Id = @Key", myCon);
+                    if (string.IsNullOrEmpty(value.Subject))
+                        cmd.Parameters.AddWithValue("@Subject", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@Subject", value.Subject);
+                    cmd.Parameters.AddWithValue("@StartTime", value.StartTime);
+                    cmd.Parameters.AddWithValue("@EndTime", value.EndTime);
+                    cmd.Parameters.AddWithValue("@AllDay", value.AllDay);
+                    cmd.Parameters.AddWithValue("@Recurrence", value.Recurrence);
+                    if (string.IsNullOrEmpty(value.RecurrenceRule))
+                        cmd.Parameters.AddWithValue("@RecurrenceRule", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@RecurrenceRule", value.RecurrenceRule);
+                    if (string.IsNullOrEmpty(value.Description))
+                        cmd.Parameters.AddWithValue("@Description", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@Description", value.Description);
+                    if (string.IsNullOrEmpty(value.StartTimeZone))
+                        cmd.Parameters.AddWithValue("@StartTimeZone", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@StartTimeZone", value.StartTimeZone);
+                    if (string.IsNullOrEmpty(value.EndTimeZone))
+                        cmd.Parameters.AddWithValue("@EndTimeZone", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@EndTimeZone", value.EndTimeZone);
+                    cmd.Parameters.AddWithValue("@Key", value.Id);
+                    cmd.ExecuteNonQuery();
+                    myCon.Close();
+                }
+            }
+            OleDbConnection myAccessConn = new OleDbConnection(strAccessConn);
+            OleDbCommand myAccessCommand = new OleDbCommand("SELECT * FROM DefaultSchedule", myAccessConn);
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(myAccessCommand);
+            DataSet myDataSet = new DataSet();
+            myAccessConn.Open();
+            myDataAdapter.Fill(myDataSet, "DefaultSchedule");
+            List<ScheduleData> datasource = new List<ScheduleData>();
+            datasource = myDataSet.Tables[0].AsEnumerable().Select(dataRow => new ScheduleData { Id = dataRow.Field<int>("Id"), Subject = dataRow.Field<string>("Subject"), StartTime = dataRow.Field<DateTime>("StartTime"), EndTime = dataRow.Field<DateTime>("EndTime"), AllDay = dataRow.Field<bool>("AllDay"), Recurrence = dataRow.Field<bool>("Recurrence"), RecurrenceRule = dataRow.Field<string>("RecurrenceRule"), Description = dataRow.Field<string>("Description"), StartTimeZone = dataRow.Field<string>("StartTimeZone"), EndTimeZone = dataRow.Field<string>("EndTimeZone") }).ToList();
+            myAccessConn.Close();
+            return Json(datasource, JsonRequestBehavior.AllowGet);
+        }
+        
+        // Class definition for EditParams to be used as parameter in the above Crud method for receiving the object value in it.
+        public class EditParams
+        {
+            public string key { get; set; }
+            public string action { get; set; }
+            public List<ScheduleData> added { get; set; }
+            public List<ScheduleData> changed { get; set; }
+            public List<ScheduleData> deleted { get; set; }
+            public ScheduleData value { get; set; }
+        }
+
+{% endhighlight %}
 
 ## ASP.Net Web Method Binding
 
-The Schedule appointment data can retrieve data from ASP.Net Web methods. It can be achieved using the UrlAdaptor of ej.DataManager.
+The Schedule appointment data can retrieve data from ASP.Net Web methods by making use of the UrlAdaptor of ejDataManager.
 
 {% highlight html %}
 
@@ -449,6 +663,7 @@ public class ScheduleAppointmentsObjData
     {
         
     }
+    
     public ScheduleAppointmentsObjData(int _id, string _subject, string _location, string _startTime, string _endTime, string _description, string _owner, string _priority, bool _recurrence, string _recurrenceType, string _recurrenceTypeCount, string _remainderCategorize, string _customStyle, bool _allDay, string _recurrenceStartDate, string _recurrenceEndDate, string _recurrenceRule)
     {
         this._id = _id;
@@ -707,7 +922,7 @@ public static void add(object value)
     GetAllRecords().Insert(0, appointValue);
 }
 
-// Triggers while editing appointments.
+// Triggers while editing the appointments.
 [WebMethod]
 [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 public static void update(object value)
@@ -726,7 +941,7 @@ public static void update(object value)
     }
 }
 
-// Triggers on deleting the appointment.
+// Triggers on deleting an appointment.
 [WebMethod]
 [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 public static void remove(int key)
@@ -775,10 +990,9 @@ public static void Crud(List<object> added, List<object> changed, List<object> d
 
 {% endhighlight %}
 
-
 ## MVC Controller Action Binding
 
-The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ej.DataManager](/js/datamanager/overview).
+The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ejDataManager](/js/datamanager/overview).
 
 {% highlight html %}
 
@@ -840,7 +1054,8 @@ public JsonResult add(Appointment value)
     };
     db.Appointments.InsertOnSubmit(appoint);
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers while editing/dragging/resizing the existing appointment
@@ -863,7 +1078,8 @@ public JsonResult update(Appointment value)
         appoint.RecurrenceRule = value.RecurrenceRule;
     }
     db.SubmitChanges();
-    return Json(appoint, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers when an appointment is deleted
@@ -873,7 +1089,8 @@ public JsonResult remove(string key)
     Appointment app = db.Appointments.Where(c => c.Id == Convert.ToInt32(key)).FirstOrDefault();
     if (app != null) db.Appointments.DeleteOnSubmit(app);
     db.SubmitChanges();
-    return Json(app, JsonRequestBehavior.AllowGet);
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100);
+    return Json(data, JsonRequestBehavior.AllowGet);
 }
 
 // Triggers for any of the Scheduler CRUD operation
@@ -946,7 +1163,7 @@ public class EditParams
 
 ## Loading Data on Demand
 
-Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading** **time**, and that too only for the current Scheduler view**.** There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of action of Scheduler consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
+Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading time**, and that too only for the current Scheduler view. There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of Scheduler action, consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
 
 The **enableLoadOnDemand** property is used to enable or disable the load on demand functionality of the schedule.
 

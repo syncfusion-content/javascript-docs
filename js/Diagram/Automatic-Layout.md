@@ -178,7 +178,7 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizatoinalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}
@@ -478,7 +478,7 @@ To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#mem
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 

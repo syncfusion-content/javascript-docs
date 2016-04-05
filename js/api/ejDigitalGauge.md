@@ -93,54 +93,6 @@ Requires
 
 
 
-### enableResize `boolean`
-{:#members:enableresize}
-
-
-
-
-
-
-
-
-Specifies the resize option of the DigitalGauge.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="DigitalCore"></div> 
- 
-<script>
-$("#DigitalCore").ejDigitalGauge({ enableResize: true }); 
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### frame`object`
 {:#members:frame}
 
@@ -381,6 +333,54 @@ $("#DigitalCore").ejDigitalGauge({ height: 60 });
 
 
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+
+
+
+
+
+
+
+Specifies the resize option of the DigitalGauge.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({ isResponsive: true }); 
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### items`object`
 {:#members:items}
 
@@ -451,7 +451,8 @@ Specifies the Character settings for the DigitalGauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -624,9 +625,53 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 ### items.characterSettings.type `enum`
 {:#members:items-charactersettings-type}
 
+<ts name="ej.datavisualization.DigitalGauge.CharacterType"/>
+
+Specifies the character type for the text to be displayed.
 
 
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+SevenSegment</td>
+<td class="type">string</td> 
+<td class="description last">Characters are displayed in Seven Segment Format</td>
+</tr>
+<tr>
+<td class="name">
+FourteenSegment</td>
+<td class="type">string</td>
+<td class="description last">Characters are displayed in Fourteen Segment Format</td>
+</tr> 
+<tr>
+<td class="name">
+SixteenSegment</td>
+<td class="type">string</td>
+<td class="description last">Characters are displayed in Sixteen Segment format</td>
+</tr> 
+<tr>
+<td class="name">
+EightCrossEightDotMatrix</td>
+<td class="type">string</td>
+<td class="description last">Characters are displayed in EightCrossEightDotMatrix format</td>
+</tr> 
+<tr>
+<td class="name">
+EightCrossEightSquareMatrix</td>
+<td class="type">string</td>
+<td class="description last">Characters are displayed in EightCrossEightSquareMatrix format</td>
+</tr> 
+</tbody>
+</table>
 
 
 
@@ -741,7 +786,8 @@ Set the specific font for the text, when the enableCustomFont is set to true
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -819,8 +865,53 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 ### items.font.fontStyle `enum`
 {:#members:items-font-fontstyle}
 
+<ts name="ej.datavisualization.DigitalGauge.FontStyle"/>
+
+Set the font style for the font
 
 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th> 
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description last">The texts are displayed in the default format</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in the bold format</td>
+</tr> 
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in  itialized  format</td>
+</tr> 
+<tr>
+<td class="name">
+Underline</td>
+<td class="type">string</td>
+<td class="description last">The texts are dispalyed in underlined format</td>
+</tr>
+<tr>
+<td class="name">
+Strikeout</td>
+<td class="type">string</td>
+<td class="description last">The texts are displayed in the striked out format</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -937,7 +1028,8 @@ Set the location for the text, where it needs to be placed within the gauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1084,7 +1176,8 @@ Set the segment settings for the digital gauge.
 
 
 
-* Object
+{:.param}
+* null
 
 
 
@@ -1743,7 +1836,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{value: "Welcome" }]});
 
 
 
-### matrixSegmentData
+### matrixSegmentData `object`
 {:#members:matrixsegmentdata}
 
 
@@ -1765,7 +1858,7 @@ Specifies the matrixSegmentData for the DigitalGauge.
 
 
 
-### segmentData
+### segmentData `object`
 {:#members:segmentdata}
 
 
@@ -2055,7 +2148,7 @@ Gets the location of an item that is displayed on the gauge.
 <tr>
 <td class="name">{% highlight html %}
 itemIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">int</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">Position value of an item that is displayed on the gauge.</td>
 </tr>
 </tbody>
@@ -2107,7 +2200,7 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 <tr>
 <td class="name">{% highlight html %}
 itemIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">int</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of an item that displayed on the gauge</td>
 </tr>
 </tbody>
@@ -2194,7 +2287,7 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 <tr>
 <td class="name">{% highlight html %}
 itemIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">int</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
@@ -2252,7 +2345,7 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 <tr>
 <td class="name">{% highlight html %}
 itemIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">int</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
@@ -2316,44 +2409,39 @@ Triggers when the gauge is initialized.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.object{% endhighlight %}</td>
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.items{% endhighlight %}</td>
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.context{% endhighlight %}</td>
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name"></td>
-<td class="type"></td>
-<td class="description last"></td>
 </tr>
 </tbody>
 </table>
@@ -2403,37 +2491,37 @@ Triggers when the gauge item rendering.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.object{% endhighlight %}</td>
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.items{% endhighlight %}</td>
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.context{% endhighlight %}</td>
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2485,37 +2573,37 @@ Triggers when the gauge is start to load.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.object{% endhighlight %}</td>
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.items{% endhighlight %}</td>
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.context{% endhighlight %}</td>
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2567,37 +2655,37 @@ Triggers when the gauge render is completed.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-args.object{% endhighlight %}</td>
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.cancel{% endhighlight %}</td>
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.items{% endhighlight %}</td>
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.context{% endhighlight %}</td>
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.model{% endhighlight %}</td>
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-args.type{% endhighlight %}</td>
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>

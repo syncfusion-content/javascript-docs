@@ -280,7 +280,7 @@ connectors.push(connector);
 
 Orthogonal segments are used to create segments that are perpendicular to each other.
 
-Set the segment `type` as "othogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
+Set the segment `type` as "orthogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
 {% highlight javascript %}
 
@@ -521,7 +521,7 @@ connectors.push(connector3);
 
 Padding is used to leave space between the Connector's end point and the object to where it is connected.
 
-The `sourcePadding` and `targerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
+The `sourcePadding` and `targetPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
 
 {% highlight javascript %}
 

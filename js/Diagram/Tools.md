@@ -111,7 +111,7 @@ diagram.update({
 
 {% endhighlight %}
 
-Once you activate the texttool, you can also able to perform label editing of a node/connector.
+Once you activate the TextTool, you can also able to perform label editing of a node/connector.
 
 ## Tool Selection
 

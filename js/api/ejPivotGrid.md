@@ -101,18 +101,18 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {data:value}});
 {% endhighlight %}
 
 
-### dataSource.data `object`
-{:#members:datasource-data}
+### dataSource.catalog `string`
+{:#members:datasource-catalog}
 
-Provides the raw data source for the PivotGrid.
+Contains the database name as string type to fetch the data from the given connection string.
 
-#### Default Value: null
+#### Default Value: “”
 
 **Example:**
 
 {% highlight html %}
  
-$("#PivotGrid1").ejPivotGrid({dataSource: {data: value}});
+$("#PivotGrid1").ejPivotGrid({dataSource: {catalog: value}});
 
 {% endhighlight %}
 
@@ -131,6 +131,39 @@ Lists out the items to be arranged in column section of PivotGrid.
 $("#PivotGrid1").ejPivotGrid({dataSource: {columns: itemsArray}});
 
 {% endhighlight %}
+
+
+### dataSource.cube `string`
+{:#members:datasource-cube}
+
+Contains the respective Cube name as string type.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {cube: value}});
+
+{% endhighlight %}
+
+
+### dataSource.data `object`
+{:#members:datasource-data}
+
+Provides the raw data source for the PivotGrid.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {data: value}});
+
+{% endhighlight %}
+
 
 ### dataSource.rows `array`
 {:#members:datasource-rows}
@@ -163,6 +196,36 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {values: itemsArray}});
 
 {% endhighlight %}
 
+### dataSource.values.measures `array`
+{:#members:datasource-values[0]-measures}
+
+This holds the measures unique names to bind the measures from Cube.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {values: {measures : itemsArray}}});
+
+{% endhighlight %}
+
+### dataSource.values.axis `string`
+{:#members:datasource-values[0]-axis}
+
+To set the axis name in-order to place the measures.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {values: {axis : value}}});
+
+{% endhighlight %}
+
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
@@ -178,6 +241,15 @@ Lists out the items which supports filtering of values in PivotGrid.
 $("#PivotGrid1").ejPivotGrid({dataSource: {filters: itemsArray}});
 
 {% endhighlight %}
+
+
+
+### drilledItems `array`
+{:#members:drilleditems}
+
+Used to bind the drilled members by default through report.
+
+#### Default Value: []
 
 
 ### customObject `object`
@@ -483,6 +555,15 @@ Allows the user to enable/disable hyperlink for value cells.
 $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableValueCellHyperlink: true } });
 
 {% endhighlight %}
+
+
+### isNamedSets `boolean`
+{:#members:isnamedsets}
+
+This is used for identifying whether the member is Named Set or not.
+
+#### Default Value: false
+
 
 ### isResponsive `boolean`
 {:#members:isresponsive}

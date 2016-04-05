@@ -2230,12 +2230,6 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-model</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the previous value</td>
-</tr>
-<tr>
-<td class="name">
 value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the time value</td>

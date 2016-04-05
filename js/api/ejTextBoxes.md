@@ -8,6 +8,7 @@ keywords: TextBoxes, ejTextBoxes, syncfusion, TextBoxes api
 ---
 
 # ejTextBoxes
+<ts name = "ejNumericTextbox,ejCurrencyTextbox,ejPercentageTextbox" />
 
 
 

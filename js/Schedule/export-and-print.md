@@ -4,7 +4,7 @@ description: Export/Print the complete Scheduler or specific appointment alone
 platform: js
 control: schedule
 documentation: ug
-keywords: export, print 
+keywords: export, import and print 
 ---
 # Export and Print
 
@@ -76,7 +76,7 @@ N> The Id value of the appointment passed in the above code example can be retri
 
 ### Exporting all Appointments
 
-To export the entire appointments, the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
+To export the entire Scheduler appointments, the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
 
 The following code example depicts the way to export all the Scheduler appointments as a whole.
 
@@ -141,7 +141,7 @@ public void ExportToICS(FormCollection form)
 
 ## PDF Export
 
-Scheduler supports to export the entire schedule control along with its appointments in PDF format, for which the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
+Scheduler supports exporting it along with all its appointments in PDF format, for which the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
 
 The following code example depicts the way to export the Scheduler with appointments in PDF format.
 
@@ -250,9 +250,13 @@ function onClick(args) {
 
 {% endhighlight %}
 
-### Printing specific appointments
+### Printing Specific Appointments
 
-To print a particular appointment, the context menu **print** option can be used. The print option is handled internally by default, so that when an appointment is right clicked – choosing print option from the context menu that pops-out will automatically print that appointment.
+To print a particular appointment, either the default context menu **print** option can be used or else the [print](/js/api/ejschedule#methods:print) method can be used by passing the id of the appointment to be printed as its argument. 
+
+#### Using Context Menu
+
+Here, the print action is handled internally by default, so that when an appointment is right clicked – choosing print option from the context menu that pops-out will automatically print that particular appointment.
 
 N> To handle this functionality, the context menu settings needs to be enabled with print option added to the appointment items.
 
@@ -297,11 +301,47 @@ $(function() {
 
 {% endhighlight %}
 
+#### Using print() method
+
+The public method `print` needs to be used here by passing the appointment object as its argument, that needs to be printed.
+
+For example, here the below code example depicts the way to print the particular appointment programmatically by calling the **print** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"> </div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
+}); 
+
+function onAppointmentClick(args) {
+    var schObj = $("#Schedule1").data("ejSchedule");
+    schObj.print(args.appointment);
+}  
+</script>
+
+{% endhighlight %}
+
 ## Import Appointments
 
-To import appointments into the Scheduler, server-side method `renderingImportAppointments` can be used, which returns the appointments retrieved from the specified file path.
+To import appointments into the Scheduler, server-side method `renderingImportAppointments` needs to be used, which returns the list of appointments retrieved from the specified file path.
 
-To Import appointments into the Scheduler, refer the following code example.
+Refer the following code example to import the appointments into Scheduler.
 
 {% highlight html %}
 

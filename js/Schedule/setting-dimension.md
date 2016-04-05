@@ -15,7 +15,6 @@ The dimension normally refers to the height and width of the element. With Sched
 
 ## Scheduler Dimension
 
-
 The [height](/js/api/ejschedule#members:height) and [width](/js/api/ejschedule#members:width) properties can be defined to set the outer dimension of the Scheduler control.
 
 {% highlight html %}
@@ -71,7 +70,7 @@ N> In **desktop** mode, the default height value of the cells is set to **20px**
 
 ### Cell Auto-Height
 
-The height of the cells especially in timeline view can be made to adjust automatically based on its exceeding appointment count. It is controlled by an API named [showOverflowButton](/js/api/ejschedule#members:showOverflowButton) which accepts true or false value, denoting whether to enable/disable the cell auto-height adjusting option. To enable this option, set the value of `showOverflowButton` as `false` whereas its default value is `true`.
+The height of the cells specifically in timeline view can be made to adjust automatically based on its exceeding appointment count. It is controlled by an API named [showOverflowButton](/js/api/ejschedule#members:showOverflowButton) which accepts true or false value, denoting whether to enable/disable the cell auto-height adjusting option. To enable this option, set the value of `showOverflowButton` as `false` whereas its default value is `true`.
 
 In **Vertical** view, the same functionality is made applicable only in the **Month View** whereas in **Horizontal** mode, it is applicable in all the views.
 
@@ -131,5 +130,5 @@ $(function() {
 
 {% endhighlight %}
 
-N> When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behavior of the Scheduler when it is resized either in desktop/mobile mode.
+N> When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behavior of the Scheduler while resizing it in desktop/mobile mode.
 

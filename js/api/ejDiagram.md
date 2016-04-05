@@ -1218,7 +1218,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point `object`
 {:#members:connectors-segments-point}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Describes the end point of bezier/straight segment
 
@@ -1243,7 +1243,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point1 `object`
 {:#members:connectors-segments-point1}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Defines the first control point of the bezier segment
 
@@ -1267,7 +1267,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.segments.point2 `object`
 {:#members:connectors-segments-point2}
 
-<ts ref="ej.Diagram.Connectors.SourcePoint"/>
+<ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Defines the second control point of bezier segment
 
@@ -1978,7 +1978,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 ### connectors.targetPoint `object`
 {:#members:connectors-targetpoint}
 
-<ts ref = "ej.Diagram.Connectors.SourcePoint"/>
+<ts ref = "ej.datavisualization.Diagram.ConnectorsSourcePoint"/>
 
 Describes the end point of the connector
 
@@ -2916,7 +2916,7 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout.horizontalspacing `Number`
+### layout.horizontalSpacing `Number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
@@ -4144,7 +4144,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 ### nodes.gradient.Stop.opacity `Number`
 {:#members:nodes-gradient-stop-opacity}
 
-Decribes the transparency level of the region
+Describes the transparency level of the region
 
 #### Default Value:
 
@@ -4286,7 +4286,7 @@ for(var i = 0; i < node.inEdges.length; i++){
 
 {% endhighlight %}
 
-### nodes.isexpanded `Boolean`
+### nodes.isExpanded `Boolean`
 {:#members:nodes-isexpanded}
 
 Defines whether the sub tree of the node is expanded or collapsed
@@ -5045,7 +5045,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.lanes `Array`
 {:#members:nodes-lanes}
 
-An array of objects where each object represents a lane. Appilicable, if the node is a swimlane.
+An array of objects where each object represents a lane. Applicable, if the node is a swimlane.
 
 #### Default Value:
 
@@ -6569,7 +6569,7 @@ Defines when the port should be visible.
        </tr>
         <tr>
             <td class="name">Connect</td>
-            <td class="description last">Port gets visibile when connect connector to node</td>
+            <td class="description last">Port gets visible when connect connector to node</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -7033,7 +7033,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.call `Boolean`
+### nodes.task.call `Boolean`
 {:#members:nodes-tasks-call}
 
 To set whether the task is a global task or not
@@ -7057,7 +7057,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.compensation `Boolean`
+### nodes.task.compensation `Boolean`
 {:#members:nodes-tasks-compensation}
 
 Sets whether the task is triggered as a compensation of another specific activity
@@ -7081,7 +7081,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.loop `enum`
+### nodes.task.loop `enum`
 {:#members:nodes-tasks-loop}
 
 <ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
@@ -7134,7 +7134,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tasks.type `enum`
+### nodes.task.type `enum`
 {:#members:nodes-tasks-type}
 
 <ts name = "ej.datavisualization.Diagram.BPMNTasks"/>
@@ -7331,43 +7331,43 @@ Sets the type of BPMN Event Triggers.
     <tbody>
         <tr>
             <td class="name">None</td>
-            <td class="description last">Used to set Event Triger as None</td>
+            <td class="description last">Used to set Event Trigger as None</td>
        </tr>
         <tr>
             <td class="name">Message</td>
-            <td class="description last">Used to set Event Triger as Message</td>
+            <td class="description last">Used to set Event Trigger as Message</td>
        </tr>
         <tr>
             <td class="name">Timer</td>
-            <td class="description last">Used to set Event Triger as Timer</td>
+            <td class="description last">Used to set Event Trigger as Timer</td>
        </tr>
         <tr>
             <td class="name">Escalation</td>
-            <td class="description last">Used to set Event Triger as Escalation</td>
+            <td class="description last">Used to set Event Trigger as Escalation</td>
        </tr>
         <tr>
             <td class="name">Link</td>
-            <td class="description last">Used to set Event Triger as Link</td>
+            <td class="description last">Used to set Event Trigger as Link</td>
        </tr>
         <tr>
             <td class="name">Error</td>
-            <td class="description last">Used to set Event Triger as Error</td>
+            <td class="description last">Used to set Event Trigger as Error</td>
        </tr>
         <tr>
             <td class="name">Compensation</td>
-            <td class="description last">Used to set Event Triger as Compensation</td>
+            <td class="description last">Used to set Event Trigger as Compensation</td>
        </tr>
         <tr>
             <td class="name">Signal</td>
-            <td class="description last">Used to set Event Triger as Signal</td>
+            <td class="description last">Used to set Event Trigger as Signal</td>
        </tr>
         <tr>
             <td class="name">Multiple</td>
-            <td class="description last">Used to set Event Triger as Multiple</td>
+            <td class="description last">Used to set Event Trigger as Multiple</td>
        </tr>
         <tr>
             <td class="name">Parallel</td>
-            <td class="description last">Used to set Event Triger as Parallel</td>
+            <td class="description last">Used to set Event Trigger as Parallel</td>
        </tr>
    </tbody>
 </table>
@@ -7454,7 +7454,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes})
 
 <ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
-Sets the vertical aligment of a node. Applicable, if the parent of a node is a container.
+Sets the vertical alignment of a node. Applicable, if the parent of a node is a container.
 
 <table class="props">
     <thead>
@@ -10476,7 +10476,7 @@ Used to zoomIn/zoomOut diagram
 		<tr>
 			<td class="name">zoom</td>
 			<td class="type">object</td>
-			<td class="description last">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
+			<td class="description last">options to zoom the diagram(zoom factor, zoomIn/zoomOut)</td>
 		</tr>
 	</tbody>
 </table>
@@ -10919,7 +10919,7 @@ Triggers when a node, connector or diagram model is clicked twice
 		<tr>
 			<td class="name">element</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the selected obejct</td>
+			<td class="description last">parameter returns the selected object</td>
 		</tr>
 	</tbody>
 </table>
@@ -11149,11 +11149,11 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 		<tr>
 			<td class="name">target</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the object over which the objecct will be dropped</td>
+			<td class="description last">parameter returns the object over which the object will be dropped</td>
 		</tr>
 		<tr>
 			<td class="name">sourceType</td>
-			<td class="type">Enum</td>
+			<td class="type">String</td>
 			<td class="description last">parameter returns the enum which defines the type of the source</td>
 		</tr>
 	</tbody>
@@ -11459,7 +11459,7 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 		</tr>
 		<tr>
 			<td class="name">cause</td>
-			<td class="type">Enum</td>
+			<td class="type">String</td>
 			<td class="description last">parameter returns the action is nudge or not</td>
 		</tr>
 		<tr>
@@ -11768,7 +11768,7 @@ Triggers when label editing is ended
 		<tr>
 			<td class="name">keyCode</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the keycode of the key entered</td>
+			<td class="description last">parameter returns the keyCode of the key entered</td>
 		</tr>
 	</tbody>
 </table>

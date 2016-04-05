@@ -518,7 +518,7 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 <td>Multiple values are separated using a given special character.<br/><br/></td>
 </tr>
 <tr>
-<td>Visual mode<br/><br/></td>
+<td>VisualMode<br/><br/></td>
 <td>Each values are displayed in separate box with close button.<br/><br/></td>
 </tr>
 </table>

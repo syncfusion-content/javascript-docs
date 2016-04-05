@@ -394,6 +394,7 @@ Specifies the name attribute for the Radio Button while initialization.
 
 
 
+<ts name="ej.RadioButtonSize"/>
 
 Specifies the size of the RadioButton.
 

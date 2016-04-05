@@ -9,7 +9,6 @@ keywords: Droppable, ejDroppable, syncfusion, Droppable api
 
 # ejDroppable
 
-
 Plugin to make any DOM element Droppable.  
 
 

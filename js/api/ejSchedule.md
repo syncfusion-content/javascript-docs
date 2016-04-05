@@ -2578,7 +2578,7 @@ Holds all the options related to the resources settings of the Schedule. It is a
 
 * null
 
-### resources.fields `string`
+### resources.field `string`
 {:#members:resources-fields}
 
 It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
@@ -2849,8 +2849,22 @@ Binds groupId field name in the dataSource to resourceSettings **groupId**.
 
 Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs. 
 
+### resources.resourceSettings.start `string`
+{:#members:resources-resourcesettings-start}
 
-#### Example - To set the resources options with id, text, groupId and color fields.
+Binds the starting work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the starting work hour for specific resources.
+
+### resources.resourceSettings.end `string`
+{:#members:resources-resourcesettings-end}
+
+Binds the end work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the end work hour for specific resources.
+
+### resources.resourceSettings.workWeek `string`
+{:#members:resources-resourcesettings-workweek}
+
+Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with some values (array of day names), only those days will render for the specific resources.
+
+#### Example - To set the resources options with id, text, groupId, color, start, end and workWeek fields.
 
 {% highlight html %}
 
@@ -2875,10 +2889,10 @@ Binds color field name in the dataSource to resourceSettings **color**. The colo
                     resourceSettings: {
                         dataSource: [
                        // groupId groups the current resources under the previous level of resource object
-                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
-                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
-                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
-                        text: "text", id: "id", color: "color", groupId: "groupId"
+                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398", start: "10", end: "15", workWeek: ["monday","wednesday","friday"] },
+                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85", start: "10", end: "15", workWeek: ["tuesday","thursday"] },
+                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88", start: "10", end: "15", workWeek: ["sunday","saturday"] }],
+                        text: "text", id: "id", color: "color", groupId: "groupId", start: "start", end: "end", workWeek: "workWeek"
 
                     }
                 }],
@@ -4111,12 +4125,49 @@ Allows setting draggable area for the Scheduler appointments. Also, turns on the
 
 {% endhighlight %}
 
+
+### showNextPrevMonth `boolean`
+{:#members:shownextprevmonth}
+
+When set to true, displays the other months days from the current month on the Schedule.
+
+#### Default Value
+
+* true
+
+#### Example - To hide the other months days from the current month.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                currentView: "month",
+                showNextPrevMonth: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ## Methods
 
-### deleteAppointment(guid)
+### deleteAppointment(data)
 {:#methods:deleteappointment}
 
-This method is used to delete the appointment based on the guid value passed to it.
+This method is used to delete the appointment based on the guid value or the appointment data passed to it.
 
 <table class="params">
     <thead>
@@ -4128,50 +4179,91 @@ This method is used to delete the appointment based on the guid value passed to 
     </thead>
     <tbody>
         <tr>
-            <td class="name">guid</td>
-            <td class="type">string</td>
-            <td class="description">guid value of an appointment element</td>
+            <td class="name">data</td>
+            <td class="type">string|object</td>
+            <td class="description">GUID value of an appointment element or an appointment object</td>
         </tr>
     </tbody>
 </table>
 
+#### Using GUID Value
 
-#### Example
+The following code snippet explain how to delete an appointment by using the GUID while clicking the appointment
+
 
 {% highlight html %}
  
-<div id="Schedule"></div> 
+    <div id="Schedule"></div> 
  
-<script>
-$("#Schedule").ejSchedule({
-    currentDate: new Date(2015, 11, 7),
-    appointmentSettings: {
-        //Array of JSON data configure in dataSource
-        dataSource: [{
-            Id: 1,
-            Subject: "Music Class",
-            StartTime: new Date("2015/11/7 06:00 AM"),
-            EndTime: new Date("2015/11/7 07:00 AM")
-        }, {
-            Id: 2,
-            Subject: "School",
-            StartTime: new Date("2015/11/7 9:00 AM"),
-            EndTime: new Date("2015/11/7 02:30 PM")
-        }]
-    },
-    appointmentClick: "onAppointmentClick"
-});
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
 
-//addAppointment is a function, gets called on clicking the Add button
-function onAppointmentClick(args) {
-    var schObj = $("#schedule").data("ejSchedule");
-    schObj.deleteAppointment(args.appointment.Guid);
-    // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
-}	
-</script>
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment.Guid);
+        // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+    }	
+    </script>
 
 {% endhighlight %}
 
+#### Using Appointent Object
+
+The following code snippet explain how to delete an appointment by using appointment object while clicking the appointment
+
+
+{% highlight html %}
+ 
+    <div id="Schedule"></div> 
+ 
+    <script>
+    $("#Schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, 
+            {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        appointmentClick: "onAppointmentClick"
+    });
+
+    //addAppointment is a function, gets called on clicking the Add button
+    function onAppointmentClick(args) {
+        var schObj = $("#schedule").data("ejSchedule");
+        schObj.deleteAppointment(args.appointment);
+    }	
+    </script>
+
+{% endhighlight %}
 
 ### destroy()
 {:#methods:destroy}
@@ -6761,6 +6853,95 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
+### queryCellInfo
+{:#events:queryCellInfo}
+
+Triggers every time before the elements of the scheduler such as work cells, time cells or header cells and so on renders or re-renders on a page.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current appontment data.</td>
+        </tr>
+        <tr>
+            <td class="name">element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering DOM element.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the currently rendering element on the scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">cellType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the cell type which is currently rendering on the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">currentAppointmentDate</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start date of the currently rendering appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">cell</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering cell information.</td>
+        </tr>
+        <tr>
+            <td class="name">resource</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering resource details.</td>
+        </tr>
+        <tr>
+            <td class="name">currentDay</td>
+            <td class="type">object</td>
+            <td class="description">Returns the currently rendering date information.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Schedule">
+    </div> 
+    <script> 
+    $("#Schedule").ejSchedule({ queryCellInfo: function (args){
+	switch (args.requestType) {
+                case "workcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "monthcells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+                case "alldaycells":
+                        args.element.css("background-color", "#dcf1f8");
+                    break;
+    } }}); 
+    </script>
+
+{% endhighlight %}
 
 ### reminder
 {:#events:reminder}

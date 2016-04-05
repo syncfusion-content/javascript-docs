@@ -1103,11 +1103,11 @@ Specifies the popup position of DateTimePicker.See below to know available popup
 </thead>
 <tbody>
 <tr>
-<tr>
 <td class="name">
 Bottom</td>
 <td class="description">Opens the DateTimePicker popup below to the DateTimePicker input box</td>
 </tr>
+<tr>
 <td class="name">
 Top</td>
 <td class="description">Opens the DateTimePicker popup above to the DateTimePicker input box </td>

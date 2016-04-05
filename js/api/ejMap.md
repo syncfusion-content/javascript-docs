@@ -594,7 +594,9 @@ Specifies the navigation control template for map
 
 
 ### model.navigationControl.dockPosition `enum`
-{:#members:model-navigationcontrol-}
+{:#members:model-navigationcontrol-dockposition}
+
+<ts name = "ej.datavisualization.Map.Position"/>
 
 Set the dockPosition value for navigation control
 
@@ -713,7 +715,9 @@ Enables or Disables the Navigation for handling zooming map
 
 
 ### model.navigationControl.orientation `enum`
-{:#members:model-navigationcontrol-}
+{:#members:model-navigationcontrol-orientation}
+
+<ts name = "ej.datavisualization.Map.Orientation"/>
 
 Set the orientation value for navigation control
 
@@ -779,6 +783,8 @@ Layer for holding the map shapes
 
 ### shapeLayer.bingMapType `enum`
 {:#members:shapelayer-bingmaptype}
+
+<ts name = "ej.datavisualization.Map.BingMapType"/>
 
 to get the type of bing map.
 
@@ -1514,6 +1520,8 @@ enable or disable the showlabel property
 ### shapeLayer.labelSettings.smartLabelSize `enum`
 {:#members:shapelayer-labelsettings-smartlabelsize}
 
+<ts name = "ej.datavisualization.Map.LabelSize"/>
+
 set the smartLabelSize property
 
 <table class="params">
@@ -1565,6 +1573,8 @@ set the smartLabelSize property
 
 ### shapeLayer.layerType `enum`
 {:#members:shapelayer-layertype}
+
+<ts name = "ej.datavisualization.Map.LayerType"/>
 
 Specifies the map type.
 
@@ -1662,6 +1672,8 @@ Determines whether the legend should be placed outside or inside the map bounds
 ### shapeLayer.legendSettings.dockPosition `enum`
 {:#members:shapelayer-legendsettings-dockposition}
 
+<ts name = "ej.datavisualization.Map.DockPosition"/>
+
 Determines the legend placement and it is valid only when dockOnMap is true
 
 <table class="params">
@@ -1756,6 +1768,8 @@ height value for legend setting
 
 ### shapeLayer.legendSettings.icon `enum`
 {:#members:shapelayer-legendsettings-icon}
+
+<ts name = "ej.datavisualization.Map.LegendIcons"/>
 
 to get icon value for legend setting
 
@@ -1879,6 +1893,8 @@ icon Width value for legend setting
 ### shapeLayer.legendSettings.labelOrientation `enum`
 {:#members:shapelayer-legendsettings-labelorientation}
 
+<ts name = "ej.datavisualization.Map.LabelOrientation"/>
+
 set the orientation of legend labels
 
 <table class="params">
@@ -1966,6 +1982,8 @@ to get leftLabel value for legend setting
 ### shapeLayer.legendSettings.mode `enum`
 {:#members:shapelayer-legendsettings-mode}
 
+<ts name = "ej.datavisualization.Map.LegendMode"/>
+
 to get mode of legend setting
 
 <table class="params">
@@ -2019,6 +2037,8 @@ to get mode of legend setting
 
 ### shapeLayer.legendSettings.position `enum`
 {:#members:shapelayer-legendsettings-position}
+
+<ts ref = "ej.datavisualization.Map.Position"/>
 
 set the position of legend settings
 
@@ -2308,6 +2328,8 @@ to get title of legend setting
 ### shapeLayer.legendSettings.type `enum`
 {:#members:shapelayer-legendsettings-type}
 
+<ts name = "ej.datavisualization.Map.LegendType"/>
+
 to get type of legend setting
 
 <table class="params">
@@ -2511,6 +2533,8 @@ Specify selectedMapShapes for shape layer
 
 ### shapeLayer.selectionMode `enum`
 {:#members:shapelayer-selectionmode}
+
+<ts name = "ej.datavisualization.Map.SelectionMode"/>
 
 Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
 
