@@ -847,7 +847,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### selectedItemIndex `number|string`
+### selectedItemIndex `number`
 {:#members:selecteditemindex}
 
 The given index header will activate (open). If collapsible is set to true, and a negative value is given, then all headers are collapsed. Otherwise, the first panel is
