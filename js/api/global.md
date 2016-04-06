@@ -2805,11 +2805,25 @@ None</td>
 <td class="description">Disables all DiagramConstraints</td>
 </tr>
 <tr>
+<tr>
+<td class="name">
+UserInteraction</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Enables/Disables the interaction at runtime</td>
+</tr>
+<tr>
+<td class="name">
+APIUpdate</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Enables/Disables to edit the page programmatically</td>
+</tr>
 <td class="name">
 PageEditable</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
-<td class="description">Enables/Disables PageEditing</td>
+<td class="description">Enables/Disables to edit the diagram both through programmatically and through interaction</td>
 </tr>
 <tr>
 <td class="name">
@@ -2855,6 +2869,13 @@ Undoable</td>
 </tr>
 <tr>
 <td class="name">
+Resizable</td>
+<td class="type">DiagramConstraints</td>
+<td class="default">LSH</td>
+<td class="description">Autamatically adjusts the view port size, when the window is resized</td>
+</tr>
+<tr>
+<td class="name">
 Default</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">BITOR</td>
@@ -2862,7 +2883,6 @@ Default</td>
 </tr>
 </tbody>
 </table>
-
 
 
 

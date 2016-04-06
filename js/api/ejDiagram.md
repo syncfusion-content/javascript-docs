@@ -11459,6 +11459,82 @@ groupChange:function (args) {}
 
 {% endhighlight %}
 
+### historyChange 
+{:#events:historychange}
+
+Triggers when a change is reverted or restored(undo/redo)
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>			 
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">changes</td>
+			<td class="type">Array</td>			 
+			<td class="description">An array of objects, where each object represents the changes made in last undo/redo. To explore how the changes are defined, refer [Undo Redo Changes](#undo-redo-changes)</td>
+		</tr>
+		<tr>
+			<td class="name">Source</td>
+			<td class="type">Array</td>			 
+			<td class="description">A collection of objects that are changed in the last undo/redo</td>
+		</tr>		 
+	</tbody>
+</table>
+
+#### Undo Redo Changes
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>			 
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">type</td>
+			<td class="type">string</td>			 
+			<td class="description">Returns the type of change that is reverted/restored (example:positionChanged, sizeChanged)</td>
+		</tr>
+		<tr>
+			<td class="name">newValues</td>
+			<td class="type">Object</td>			 
+			<td class="description">Returns the new values of the properties that are changed.(example:newValues:{offset:60,offset:60,width:60,height:60})</td>
+		</tr>
+		<tr>
+			<td class="name">oldValues</td>
+			<td class="type">Object</td>			 
+			<td class="description">Returns the old values of the properties that are changed.(example:oldValues:{offset:60,offset:60,width:60,height:60})</td>
+		</tr>
+		<tr>
+			<td class="name">addedItems</td>
+			<td class="type">Array</td>			 
+			<td class="description">Returns the items that are newly added to model</td>
+		</tr>
+		<tr>
+			<td class="name">deletedItems</td>
+			<td class="type">Array</td>			 
+			<td class="description">Returns the items that are deleted from model</td>
+		</tr>		 
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+// history change event for diagram
+$("#diagramcontent").ejDiagram({
+historyChange:function (args) {}
+});
+
+{% endhighlight %}
+
 ### itemClick
 {:#events:itemclick}
 

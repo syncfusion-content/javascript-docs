@@ -18,6 +18,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Line Bridging
 * Zoom and Pan
 * Undo Redo
+* Resizing
 
 For more information about Diagram constraints, refer to [Diagram Constraints](/js/api/global#diagramconstraints "Diagram Constraints").
 
