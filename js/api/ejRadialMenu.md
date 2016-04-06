@@ -34,7 +34,7 @@ $("#defaultradialmenu").ejRadialMenu();
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -105,7 +105,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -172,7 +172,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -239,7 +239,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -306,7 +306,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -373,7 +373,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -440,7 +440,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -507,7 +507,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -543,6 +543,73 @@ $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");
 
 
 
+
+### position `object`
+{:#members:position}
+
+
+To set radial render position.
+
+
+
+Default Value:
+{:.param}
+
+
+
+* null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+// Set Radialmenu position on initialization. 
+//To set position API 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ position:{x:10,y:10} });   
+});
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the Radialmenu position, after initialization:
+<script>
+// Gets the position API.                
+$("#defaultradialmenu").ejRadialMenu ("option", "position");                     
+// Sets the position API
+$("#defaultradialmenu").ejRadialMenu ("option", "position");            
+</script>{% endhighlight %}
+
+
+
+
 ## Methods
 
 
@@ -554,7 +621,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");
 
 
 
-To hide the redialmenu
+To hide the radialmenu
 
 
 
@@ -567,7 +634,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -595,15 +662,15 @@ $("#defaultradialmenu").ejRadialMenu ("hide");
 
 
 
-### menuHide<span class="signature">()</span>
-{:#methods:menuhide}
+### menuHide<span class="signature">()</span>[Deprecated]
+{:#methods:menuhidedeprecated}
 
 
 
 
-To hide the redialmenu items
+To hide the radialmenu items
 
-
+N>Since it is deprecated use the method “[hideMenu](#methods:hideMenu)”
 
 Example
 {:.example}
@@ -614,7 +681,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -642,6 +709,53 @@ $("#defaultradialmenu").ejRadialMenu ("menuHide");
 
 
 
+### hideMenu<span class="signature">()</span>
+{:#methods:hidemenu}
+
+
+
+
+To hide the radialmenu items
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu ("hideMenu");
+</script>{% endhighlight %}
+
+
+
+
 ### show<span class="signature">()</span>
 {:#methods:show}
 
@@ -661,7 +775,7 @@ Example
 <div >
 <br />
 <p>
-Syncfusion is the enterprise technology partner of choice for Windows development
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
 <div id="defaultradialmenu">
@@ -688,230 +802,606 @@ $("#defaultradialmenu").ejRadialMenu ("show");
 
 
 
+### showMenu<span class="signature">()</span>
+{:#methods:showmenu}
+
+
+
+
+To show menu items
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu ("showMenu");
+</script>{% endhighlight %}
+
+
+
+
+### enableItemByIndex<span class="signature">()</span>
+{:#methods:enableitembyindex}
+
+
+
+
+To enable menu item using index
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu ({ "autoOpen":true});
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.enableItemByIndex(0);
+</script>{% endhighlight %}
+
+
+
+
+### enableItemsByIndices<span class="signature">()</span>
+{:#methods:enableItemsByIndices}
+
+
+
+
+To enable menu items using indices
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu ({ "autoOpen":true});
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.enableItemsByIndices([0,2]);
+</script>{% endhighlight %}
+
+
+
+
+### disableItemByIndex<span class="signature">()</span>
+{:#methods:disableitembyindex}
+
+
+
+
+To disable menu item using index
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.disableItemByIndex(0);
+</script>{% endhighlight %}
+
+
+
+
+### disableItemsByIndices<span class="signature">()</span>
+{:#methods:disableitemsbyindices}
+
+
+
+
+To disable menu items using indices
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.disableItemsByIndices([1,3]);
+</script>{% endhighlight %}
+
+
+
+
+### enableItem<span class="signature">()</span>
+{:#methods:enableitem}
+
+
+
+
+To enable menu item using item text
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.enableItem("social");
+</script>{% endhighlight %}
+
+
+
+
+### disableItem<span class="signature">()</span>
+{:#methods:disableitem}
+
+
+
+
+To disable menu item using item text
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.disableItem("social");
+</script>{% endhighlight %}
+
+
+
+
+### enableItems<span class="signature">()</span>
+{:#methods:enableitems}
+
+
+
+
+To enable menu items using item texts
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction" data-ej-enabled="false"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.enableItems(["social","direction"]);
+</script>{% endhighlight %}
+
+
+
+
+### disableItems<span class="signature">()</span>
+{:#methods:disableitems}
+
+
+
+
+To disable menu items using item texts
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.disableItems(["social","direction"]);
+</script>{% endhighlight %}
+
+
+
+
+### updateBadgeValue<span class="signature">()</span>
+{:#methods:updatebadgevalue}
+
+
+
+
+To update menu item badge value
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.updateBadgeValue(0,4);
+</script>{% endhighlight %}
+
+
+
+
+### showBadge<span class="signature">()</span>
+{:#methods:showbadge}
+
+
+
+
+To show menu item badge 
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.showBadge(0);
+</script>{% endhighlight %}
+
+
+
+
+### hideBadge<span class="signature">()</span>
+{:#methods:hidebadge}
+
+
+
+
+To hide menu item badge 
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+obj.hideBadge(0);
+</script>{% endhighlight %}
+
+
+
+
 ## Events
 
 
 
 
-### mouseDown
-{:#events:mousedown}
-
-
-
-
-Event triggers when the mouse down happens.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Radialmenu
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the Radialmenu model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the item of element</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the name of item</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//MouseDown event for Radialmenu
-<div >
-<br />
-<p>
-Syncfusion is the enterprise technology partner of choice for Windows development
-</p>
-</div>  
-<div id="defaultradialmenu">
-<ul>
-<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
-data-ej-text="social"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
-data-ej-text="music"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
-data-ej-text="direction"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
-data-ej-text="message"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
-data-ej-text="browser"></li>
-</ul>
-</div>
-<script>
-$("#defaultradialmenu").ejRadialMenu({
-  mousedown: function (args) { //handle the event
-}
-});         
-</script>{% endhighlight %}
-
-
-
-
-### mouseUp
-{:#events:mouseup}
-
-
-
-
-Event triggers when the mouse up happens.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Radialmenu
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the Radialmenu model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-item{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the item of element</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-itemName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the name of item</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-//MouseUp event for Radialmenu
-<div >
-<br />
-<p>
-Syncfusion is the enterprise technology partner of choice for Windows development
-</p>
-</div>  
-<div id="defaultradialmenu">
-<ul>
-<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
-data-ej-text="social"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
-data-ej-text="music"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
-data-ej-text="direction"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
-data-ej-text="message"></li>
-<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
-data-ej-text="browser"></li>
-</ul>
-</div>
-<script>
-$("#defaultradialmenu").ejRadialMenu({
-  mouseup: function (args) { //handle the event
-}
-});         
-</script>{% endhighlight %}
-
-
-
-
-### select
-{:#events:select}
+### select[Deprecated]
+{:#events:selectdeprecated}
 
 
 
 
 Event triggers when we select an item.
+
+N>Since it is deprecated use the method “[click](#events:click)”
 
 <table class="params">
 <thead>
@@ -1007,6 +1497,302 @@ $("#defaultradialmenu").ejRadialMenu({
 }
 });         
 </script>{% endhighlight %}
+
+
+
+### click
+{:#events:click}
+
+
+
+
+Event triggers when we click an item.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from Radialmenu
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the Radialmenu model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+item{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the item of element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+itemName{% endhighlight %}</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description last">returns the name of item</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+//click event for Radialmenu
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>
+<script>
+$("#defaultradialmenu").ejRadialMenu({
+  click: function (args) { //handle the event
+}
+});         
+</script>{% endhighlight %}
+
+
+
+
+### open 
+{:#events:open}
+
+
+
+
+Event triggers when the menu is opened.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from Radialmenu
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the Radialmenu model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+//open event for Radialmenu
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>
+<script>
+$("#defaultradialmenu").ejRadialMenu({
+  open: function (args) { //handle the event
+}
+});         
+</script>{% endhighlight %}
+
+
+
+
+### close 
+{:#events:close}
+
+
+
+
+Event triggers when the menu is closed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from Radialmenu
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the Radialmenu model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+//close event for Radialmenu
+<div >
+<br />
+<p>
+Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+</p>
+</div>  
+<div id="defaultradialmenu">
+<ul>
+<li data-ej-imageurl="../themes/sample/radialmenu/social.png"
+data-ej-text="social"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/music.png" 
+data-ej-text="music"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/direction.png" 
+data-ej-text="direction"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/message.png" 
+data-ej-text="message"></li>
+<li data-ej-imageurl="../themes/sample/radialmenu/browser.png" 
+data-ej-text="browser"></li>
+</ul>
+</div>
+<script>
+$("#defaultradialmenu").ejRadialMenu({
+  close: function (args) { //handle the event
+}
+});         
+</script>{% endhighlight %}
+
 
 
 
