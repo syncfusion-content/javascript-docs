@@ -61,9 +61,6 @@ $("#diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Page-Settings_images/Page-Settings_img5.png)
-
-
 ## MultiplePage and PageBreaks
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
