@@ -12879,7 +12879,63 @@ Thermometer</td>
 
 
 
+### Boundary Constraints
+{:#enum:boundaryConstraints}
 
+
+
+
+
+
+
+
+Enum for Boundary Constraints in diagram
+
+
+
+
+
+
+#### Properties
+
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Infinity</td>
+<td class="type">string</td>
+<td class="default">infinity</td>
+<td class="description">Allows to move the diagram elements in all directions, without any restrictions</td>
+</tr>
+<tr>
+<td class="name">
+Diagram</td>
+<td class="type">string</td>
+<td class="default">diagram</td>
+<td class="description">Allows to move the diagram elements beyond the diagram content</td>
+</tr>
+<tr>
+<td class="name">
+Page</td>
+<td class="type">string</td>
+<td class="default">page</td>
+<td class="description">Allows to move the diagram elements only the region specified on pageSettings </td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -17519,3 +17575,5 @@ Clear Selected Map Shapes
 {:#methods:refreshmarkers}
 
 Generates markers
+
+

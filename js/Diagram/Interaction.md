@@ -92,6 +92,65 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
+## Working with multiple diagrams
+
+Diagram provides support to drag diagram elements from one diagram to another. 
+
+If you enable `FloatElements` constraints to any diagram, it will allow you to drag elements from it and the elements can be dropped into any other diagram.
+
+The following code illustrates how to drag nodes over multiple diagrams.
+
+{% highlight html %}
+    &lt;body&gt;
+
+        &lt;div id="sourceDiagram"&gt;
+
+        &lt;/div&gt;
+
+
+
+        &lt;div id="targetDiagram"&gt;
+
+        &lt;/div&gt;
+
+    &lt;/body&gt;
+{% endhighlight %}
+
+{% highlight js %}
+    
+        //Enables the FloatElements constraints
+        var constraints = ej.datavisualization.Diagram.DiagramConstraints.Default | ej.datavisualization.Diagram.DiagramConstraints.FloatElements;
+
+        var node = { name: "node1", height: 100, width: 100, offsetX: 100, offsetY: 100, fillColor: "#05ADA4", labels: [{ text: "Node" }] };
+        
+        //Creates the source
+        $("#sourceDiagram").ejDiagram({
+            height: "500px",
+            width: "400px",
+            nodes: [node],
+            //Set the constraints to the diagram
+            constraints: constraints
+        });
+        
+        //Creates the target diagram
+        $("#targetDiagram").ejDiagram({
+            height: "500px",
+            width: "400px",
+            constraints: constraints
+        });
+        
+     
+{% endhighlight %}
+
+
+The following screen short illustrates how the nodes are dragged from one diagram to another.
+ 
+![](/js/Diagram/Interaction_images/Interaction_img12.png)
+
+![](/js/Diagram/Interaction_images/Interaction_img13.png)
+ 
+
+
 ## Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
@@ -313,5 +372,9 @@ The following table illustrates those commands with the associated key values.
 | Ctrl+MouseScroll | zoom | Zoom(Zoom in/Zoom out the diagram) |
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
+| Tab | focusToNextItem | Focus the next node/connector based on z-order |
+| Shift + Tab | focusToPreviousItem | Focus the previous node/connector based on z-order |
+| Enter | selectFocusedItem | Select the focussed node/connector |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").
+ 
