@@ -290,7 +290,7 @@ Example
 
 {% highlight js %}
 
-        $('#list').ejListBox({ showCheckbox: true, checkItemsByIndex: "2,3" });
+        $('#list').ejListBox({ showCheckbox: true, checkItemsByIndex: [2,3] });
         
 {% endhighlight %}
 
@@ -308,7 +308,7 @@ Example
 
 {% highlight js %}
 
-        $('#list').ejListBox({ showCheckbox: true, checkedIndices: "2,3" });
+        $('#list').ejListBox({ showCheckbox: true, checkedIndices: [2,3] });
         
 {% endhighlight %}
 
