@@ -18,18 +18,33 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 
 The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
 
-The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
+The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with `backgroundImage` and set of appearance specific properties.
 To explore those properties, refer [Page Settings](/js/api/ejDiagram#members:pagesettings "Page Settings").
 
 You can also customize the appearance of off-page regions with the property `backgroundColor`.
 
-The following code illustrates how to customize the page size and the appearance of page and off-page.
+![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
+
+![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
+
+N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
+
+### BackgroundImage
+
+You can stretch and align the background image anywhere over the diagram area. 
+The `source` property of `backgroundImage` allows you to set the path of the image. The `scale` and the `align` properties help to stretch/align the background images.
+ 
+To explore the backgroundImage properties, refer [Background Image](/js/api/ejDiagram#members:backgroundimage "Background Image").
+
+
+The following code illustrates how to stretch and align the background image.
 
 {% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	//Sets off-page background
 	backgroundColor: "whitesmoke",
+    backgroundImage: {alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMin, scale:ej.datavisualization.Diagram.scaleConstraints.Meet, source:"airplane.png"},
 	pageSettings: {
 		//Sets page size
 		pageHeight: 500,
@@ -45,13 +60,6 @@ $("#diagram").ejDiagram({
 	}
 });
 {% endhighlight %}
-
-
-![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
-
-![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
-
-N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
 ## MultiplePage and PageBreaks
 

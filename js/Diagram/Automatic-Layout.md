@@ -476,6 +476,99 @@ Orientation, spacings, and position of layout can be customized with a set of pr
 
 To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#members:layout "Layout Properties").
 
+### Layout Bounds 
+
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
+
+### Layout Alignment
+
+You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
+
+The following code illustrates how to align the layout at the top left of the layout bounds.
+
+{% highlight js %}
+
+var type = ej.datavisualization.Diagram.LayoutTypes;
+var orientation = ej.datavisualization.Diagram.LayoutOrientations;
+
+$("#diagram").ejDiagram({
+	layout: {
+		
+		//Sets the type of the layout
+		type: type.HierarchicalTree,
+		orientation: orientation.TopToBottom,
+		horizontalSpacing: 25,
+		verticalSpacing: 30,
+		
+		//Sets the layout bounds
+		bounds:{x:0,y:0,width:500,height:500},
+		
+		//Sets the alignment of the layout
+		horizontalALignment:ej.datavisualization.Diagram.HorizontalAlignment.Left,
+		verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top,
+	},
+	defaultSettings: {
+		//Sets the default properties of the node.
+		//Sets the default properties of the connector.
+	},
+
+	//Initializes the node template.
+	nodeTemplate: nodeTemplate,
+
+	//Configures data source for Diagram
+	dataSourceSettings: {
+		//Specifies the dataSource
+	}
+});
+
+{% endhighlight %}
+
+
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+
+### Layout Margin
+
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The `margin` property of the layout allows you to set the blank space.
+
+The following code illustrates how to set the layout margin.
+
+{% highlight js %}
+
+var type = ej.datavisualization.Diagram.LayoutTypes;
+var orientation = ej.datavisualization.Diagram.LayoutOrientations;
+
+$("#diagram").ejDiagram({
+	layout: {
+	
+		type: type.HierarchicalTree,
+		orientation: orientation.TopToBottom,
+		bounds:{x:0,y:0,width:500,height:500},
+		horizontalSpacing: 25,
+		verticalSpacing: 30,
+		horizontalALignment:ej.datavisualization.Diagram.HorizontalAlignment.Left,
+		verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top,
+		
+		//Sets the margin
+		margin:{left:10,right:10,top:10,bottom:10}
+	},
+	defaultSettings: {
+		//Sets the default properties of the node.
+		//Sets the default properties of the connector.
+	},
+
+	//Initializes the node template.
+	nodeTemplate: nodeTemplate,
+
+	//Configures data source for Diagram
+	dataSourceSettings: {
+		//Specifies the dataSource
+	}
+});
+
+{% endhighlight %}
+
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
+
 ### Layout Orientation
 
 Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")

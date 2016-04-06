@@ -72,7 +72,7 @@ Defines the path of the background image of diagram elements
 
 #### Default Value:
 
-* null
+* ""
 
 #### Example
 
@@ -81,6 +81,146 @@ Defines the path of the background image of diagram elements
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
+</script>
+
+{% endhighlight %}
+
+### backgroundImage.alignment `enum`
+{:#members:backgroundimage-alignment}
+
+<ts name = "ej.datavisualization.Diagram.ImageAlignment "/>
+    
+Defines how to align the background image over the diagram area.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Scales the graphic content non-uniformly to the width and height of the diagram area
+</td>
+       </tr>
+        <tr>
+            <td class="name">XMinYMin</td>
+            <td class="description last">Used to align the image at the top left of diagram area </td>
+       </tr>
+        <tr>
+            <td class="name">XMinYMid</td>
+            <td class="description last">Used to align the image at the left center of diagram area</td>
+       </tr>
+        <tr>
+            <td class="name">XMinYMax</td>
+            <td class="description last">Used to align the image at the bottom left of diagram area</td>
+       </tr>
+        <tr>
+            <td class="name">XMidYMin</td>
+            <td class="description last">Used to align the image at the top center of diagram area</td>
+       </tr>
+        <tr>
+            <td class="name">XMidYMid</td>
+            <td class="description last">Used to align the image at the center of diagram area</td>
+       </tr>
+        <tr>
+            <td class="name">XMidYMax</td>
+            <td class="description last">Used to align the image at the bottom center of diagram area</td>
+       </tr>
+        <tr>
+            <td class="name">XMaxYMin</td>
+            <td class="description last">Used to align the image at the top right of diagram area/node</td>
+       </tr>
+        <tr>
+            <td class="name">XMaxYMid</td>
+            <td class="description last">Used to align the image at the right center of diagram area/node</td>
+       </tr>
+        <tr>
+            <td class="name">XMaxYMax</td>
+            <td class="description last">Used to align the image at the bottom right of diagram area/node</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ImageAlignment.XMidYMid
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ backgroundImage:{alignment: ej.datavisualization.Diagram.ImageAlignment.XMidYMid }});
+</script>
+
+{% endhighlight %}
+
+
+### backgroundImage.scale `enum`
+{:# members:backgroundimage-scale}
+
+<ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
+    
+Defines how the background image should be scaled/stretched
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to scale the image non-uniformly to the given width/height</td>
+       </tr>
+        <tr>
+            <td class="name">Meet</td>
+            <td class="description last">Used to scale the image uniformly so that it fits the viewport</td>
+       </tr>
+        <tr>
+            <td class="name">Slice</td>
+            <td class="description last">Used to scale the image uniformly to the maximum</td>
+       </tr>
+    </tbody>
+</table>
+ 
+#### Default Value:
+
+* ej.datavisualization.Diagram.ScaleConstraints.Meet
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ backgroundImage:{scale:ej.datavisualization.Diagram.ScaleConstraints.Meet }});
+</script>
+
+{% endhighlight %}
+
+### backgroundImage.source `String`
+{:# members:backgroundimage-source}
+
+Sets the source path of the background image
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ backgroundImage:{ source:"Syncfusion.png" }});
 </script>
 
 {% endhighlight %}
@@ -702,6 +842,10 @@ Enables or disables the behaviors of connectors.
         <tr>
             <td class="name">InheritBridging</td>
             <td class="description last">Enables bridging to the connector</td>
+       </tr>
+        <tr>
+            <td class="name">PointerEvents</td>
+            <td class="description last">Enables user interaction to the connector</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -2875,7 +3019,29 @@ function customUndoRedo(args) {
 ### layout `object`
 {:#members:layout}
 
-Automatically arranges the nodes and connectors in a predefined manner
+Automatically arranges the nodes and connectors in a predefined manner.
+
+### layout.bounds `Object`
+{:#members:layout-bounds}
+
+Specifies the custom bounds to arrange/align the layout
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Rectangle() 
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+// bounds of the layout
+$("#diagramcontent").ejDiagram({layout: { bounds:{ x: 0, y: 0, width: 1000, height: 1000} }});
+</script>
+
+{% endhighlight %}
+
 
 ### layout.fixedNode `String`
 {:#members:layout-fixednode}
@@ -2937,14 +3103,15 @@ $("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
 
 {% endhighlight %}
 
-### layout.marginX `Number`
-{:#members:layout-marginx}
 
-Sets the margin value to be horizontally left between the layout and diagram
+### layout.margin `Object`
+{:#members:layout-margin}
+
+Defines the space to be left between layout bounds and layout.
 
 #### Default Value:
 
-* 0
+* ej.datavisualization.Diagram.Margin()
 
 #### Example
 
@@ -2952,20 +3119,45 @@ Sets the margin value to be horizontally left between the layout and diagram
 
 <div id="diagramcontent"></div>
 <script>
-//marginX of the layout
-$("#diagramcontent").ejDiagram({ layout: { marginX: 50 } });
+// margin of the layout
+$("#diagramcontent").ejDiagram({layout: { margin:{ left: 10, right: 10, top: 10, bottom: 10} }});
 </script>
 
 {% endhighlight %}
 
-### layout.marginY `Number`
-{:#members:layout-marginy}
+### layout.horizontalAlignment `enum`
+{:#members:layout-horizontalalignment}
 
-Sets the margin value to be vertically left between layout and diagram
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Defines how to horizontally align the layout within the layout bounds
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align layout horizontally on left side of layout bounds</td>
+        </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align layout horizontally on center of layout bounds</td>
+        </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align layout horizontally on right side of layout bounds</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value:
 
-* 0
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
 
 #### Example
 
@@ -2973,8 +3165,53 @@ Sets the margin value to be vertically left between layout and diagram
 
 <div id="diagramcontent"></div>
 <script>
-// marginY of the layout
-$("#diagramcontent").ejDiagram({layout: { marginY: 50 }});
+$("#diagramcontent").ejDiagram({layout: { horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Center }});
+</script>
+
+{% endhighlight %}
+
+
+### layout.verticalAlignment `enum`
+{:#members:layout-verticalalignment }
+
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Defines how to vertically align the layout within the layout bounds
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to align layout vertically on top of layout bounds</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align layout vertically on center of layout bounds</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to align layout vertically on bottom of layout bounds</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({layout: { verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Center }});
 </script>
 
 {% endhighlight %}
@@ -3460,6 +3697,10 @@ Enables or disables the default behaviors of the node.
         <tr>
             <td class="name">AspectRatio</td>
             <td class="description last">Enables Proportional resize for node</td>
+       </tr>
+        <tr>
+            <td class="name">PointerEvents</td>
+            <td class="description last">Enables the user interaction with the node</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -4556,7 +4797,7 @@ Sets the horizontal alignment of the label.
             <td class="name">Right</td>
             <td class="description last">Used to align text horizontally on right side of node/connector</td>
        </tr>
-   </tbody>
+     </tbody>
 </table>
 
 #### Default Value:
