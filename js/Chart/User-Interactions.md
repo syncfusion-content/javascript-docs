@@ -264,6 +264,27 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
 
 ![](/js/Chart/User-Interactions_images/User-Interactions_img8.png)
 
+
+
+### Enable ScrollBar
+
+EjChart provides scrollbar support to view the other portions of chart area which is not shown in the view port when zoomed, by setting true to [`enableScrollbar`](../api/ejchart#members:zooming-enablescrollbar) option in [`zooming`](../api/ejchart#members:zooming).  
+
+{% highlight javascript %}
+
+
+    $("#chartcontainer").ejChart({
+             //  ...             
+	         //Enable zooming scrollbar  in chart
+             zooming: {enable:true, enableScrollbar: true}
+             // ...
+     });
+
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img9.png)
+
 ## Crosshair
 
 Crosshair is used to view the value of an axis at mouse position or touch contact point. 
@@ -299,7 +320,7 @@ Crosshair can be enabled by using the [`visible`](../api/ejchart#members:series-
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img9.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img10.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
@@ -334,7 +355,7 @@ The [`fill`](../api/ejchart#members:crosshair-fill) and [`border`](../api/ejchar
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img10.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img11.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
@@ -365,7 +386,7 @@ Trackball can be enabled by setting the [`visible`](../api/ejchart#members:cross
 {% endhighlight %}
 
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img11.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img12.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/trackball) here to view the Trackball online demo sample.
 
@@ -402,7 +423,7 @@ Shape and size of the trackball marker can be customized by using the [`shape`](
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img12.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img13.png)
 
 
 ### Format Trackball tooltip
@@ -435,7 +456,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img13.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img14.png)
 
 
 ## Highlight
@@ -506,7 +527,7 @@ To highlight all the data points of the specified series, you can set the **“s
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img14.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img15.png)
 
 
 **Point mode**
@@ -537,7 +558,7 @@ To highlight a single point, you can set the **“point”** value to the [`mode
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img15.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img16.png)
 
 
 **Cluster mode**
@@ -568,7 +589,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img16.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img17.png)
 
 ### Customize the highlight styles
 
@@ -598,7 +619,7 @@ To customize the highlighted series, use the [`color`](../api/ejchart#members:se
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img17.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img18.png)
 
 
 ### Patterns to highlight
@@ -649,7 +670,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img18.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img19.png)
 
 #### Custom pattern
 
@@ -719,11 +740,12 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 
 ### Selection Mode
 
-You can set three different selection mode for highlighting the data point and series by using the [`mode`](../api/ejchart#members:series-selectionsettings-mode) property of the selectionSettings.
+You can set four different selection mode for highlighting the data point and series by using the [`mode`](../api/ejchart#members:series-selectionsettings-mode) property of the selectionSettings.
 
 * Series
 * Points
 * Cluster
+* Range
 
 **Series mode**
 
@@ -753,7 +775,7 @@ To select all the data points of the specified series, you can set the **"series
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img19.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img20.png)
 
 **Point mode**
 
@@ -783,7 +805,7 @@ To highlight a single point, you can set the **"point"** value to the [`mode`](.
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img20.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img21.png)
 
 
 **Cluster mode**
@@ -814,7 +836,52 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img21.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img22.png)
+
+
+
+**Range mode**
+
+To fetch the selected area data points value, you can set the selectionSettings [`mode`](../api/ejchart#members:series-selectionsettings-mode) as **range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using [`rangeType`](../api/ejchart#members:series-selectionsettings-rangetype) property and the selected data’s are returned as an array collection in the [`rangeSelected`](../api/ejchart#events:rangeselected) event.  
+
+{% highlight javascript %}
+
+
+        $("#chartcontainer").ejChart({
+                    // ...
+                    series:[{
+                  
+                        selectionSettings: {
+                            enable: true, 
+                         
+                            //Change selection mode
+                            mode: 'range',
+
+                            //Enable both axis selection
+                            rangeType:'xy'
+
+                            // ...
+                        }, 
+
+                        // ... 
+                    }],
+                 //Subscribe the rangeSelected event. 
+                 rangeSelected: "rangeSelection"  
+                 // ...
+           });
+
+         //event to fetch the selected data point values
+         rangeSelection:function (sender){
+            var selectedData = sender.data.selectedDataCollection;
+            //...
+         }
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img23.png)
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/selection/rangeselection) here to view the Multiple data selection online demo sample.
+
 
 
 ### Selection Type
@@ -851,7 +918,7 @@ To select a data point or a series on mouse click based on the [`selectionSettin
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img22.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img24.png)
 
 **Multiple Type**
 
@@ -880,7 +947,7 @@ For selecting multiple data points or series on mouse click, set [`selectionSett
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img23.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img25.png)
 
 
 ### Customizing selection styles
@@ -912,7 +979,7 @@ To customize the selection styles, use the [`color`](../api/ejchart#members:seri
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img24.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img26.png)
 
 
 ### Patterns for selection
@@ -963,7 +1030,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% endhighlight %}
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img25.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img27.png)
 
 
 #### Custom pattern
@@ -1002,7 +1069,7 @@ To create a custom pattern for selecting the data points, set the [`pattern`](..
 {% endhighlight %}
 
 
-![](/js/Chart/User-Interactions_images/User-Interactions_img26.png)
+![](/js/Chart/User-Interactions_images/User-Interactions_img28.png)
 
 
 ### Handling Series Selection

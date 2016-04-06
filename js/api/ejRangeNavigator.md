@@ -155,6 +155,114 @@ Toggles the placement of slider exactly on the place it left or on the nearest i
 
 
 
+### border `object`
+{:#members:border}
+
+
+
+
+Options for customizing the color, opacity and width of the chart border.
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
+
+
+
+
+
+### border.color `string`
+{:#members:border-color}
+
+
+
+
+Border color of rangenavigator. When enable the scrollbar, the default color will be set as "#B4B4B4".
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+                             
+$("#container").ejRangeNavigator({
+
+   border: { color: "green" }                      
+
+});
+
+{% endhighlight %}
+
+
+
+
+### border.opacity `number`
+{:#members:border-opacity}
+
+
+
+
+Opacity of the rangeNavigator border.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejRangeNavigator({
+
+   border: { opacity: 0.5 }                      
+
+});
+
+{% endhighlight %}
+
+
+
+
+### border.width `number`
+{:#members:border-width}
+
+
+
+
+Width of the RangeNavigator border.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejRangeNavigator({
+
+   border: { width: 2 }                      
+
+});
+
+{% endhighlight %}
+
 
 
 ### dataSource `object`
@@ -233,6 +341,29 @@ Toggles the redrawing of chart on moving the sliders.
 </script>  {% endhighlight %}
 
 
+
+
+
+### enableScrollbar `boolean`
+{:#members:enablescrollbar}
+
+Enable the scrollbar option in the rangenavigator.
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   enableScrollbar: true,
+   });
+</script>  {% endhighlight %}
 
 
 
@@ -776,6 +907,13 @@ Hours</td>
 <td class="type">string</td>
 <td class="description last">The labels are displayed with hours as intervals between them</td>
 </tr> 
+<tr>
+<td class="name">
+Minutes</td>
+
+<td class="type">string</td>
+<td class="description last">The labels are displayed with minutes as intervals between them</td>
+</tr> 
 </tbody>
 </table>
 
@@ -786,7 +924,7 @@ Hours</td>
 
 
 
-* "years"
+* "auto"
 
 
 
@@ -1775,7 +1913,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 
 
 
-* "years"
+* "auto"
 
 
 
@@ -3831,6 +3969,268 @@ Specifies the opacity of Unselected Region.
 
 
 
+### navigatorStyleSettings.highlightSettings `object`
+{:#members:navigatorstylesettings-highlightsettings}
+
+Contains the options for highlighting the range navigator on mouse over.
+
+
+
+### navigatorStyleSettings.highlightSettings.enable `boolean`
+{:#members:navigatorstylesettings-highlightsettings-enable}
+
+
+Enable the highlight settings in range navigator.
+
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ highlightSettings:{enable: true}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.highlightSettings.color `string`
+{:#members:navigatorstylesettings-highlightsettings-color}
+
+
+To set the color to the highlight.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ highlightSettings:{color: "red"}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.highlightSettings.opacity `number`
+{:#members:navigatorstylesettings-highlightsettings-opacity}
+
+
+To set the opacity to the highlight.
+
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ highlightSettings:{opacity: 0.4}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.highlightSettings.border `object`
+{:#members:navigatorstylesettings-highlightsettings-border}
+
+Contains the border properties for highlighting rectangle.
+
+### navigatorStyleSettings.highlightSettings.border.color `string`
+{:#members:navigatorstylesettings-highlightsettings-border-color}
+
+
+To set the border color to the highlight.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ highlightSettings:{border: {color: "yellow"}}},
+   });
+</script>  {% endhighlight %}
+
+### navigatorStyleSettings.highlightSettings.border.width `number`
+{:#members:navigatorstylesettings-highlightsettings-border-width}
+
+
+To set the border width to the highlight.
+
+
+#### Default Value
+
+* 1
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ highlightSettings:{border: {width: 1.4}}},
+   });
+</script>  {% endhighlight %}
+
+
+
+
+### navigatorStyleSettings.selectionSettings `object`
+{:#members:navigatorstylesettings-selectionsettings}
+
+Contains the options for selection the range navigator on mouse over.
+
+
+
+### navigatorStyleSettings.selectionSettings.enable `boolean`
+{:#members:navigatorstylesettings-selectionsettings-enable}
+
+
+Enable the selection settings in range navigator.
+
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ selectionSettings:{enable: true}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.selectionSettings.color `string`
+{:#members:navigatorstylesettings-selectionsettings-color}
+
+
+To set the color to the selection.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ selectionSettings:{color: "red"}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.selectionSettings.opacity `number`
+{:#members:navigatorstylesettings-selectionsettings-opacity}
+
+
+To set the opacity to the selection.
+
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ selectionSettings:{opacity: 0.4}},
+   });
+</script>  {% endhighlight %}
+
+
+### navigatorStyleSettings.selectionSettings.border `object`
+{:#members:navigatorstylesettings-selectionsettings-border}
+
+Contains the border properties for selecting the rectangle.
+
+### navigatorStyleSettings.selectionSettings.border.color `string`
+{:#members:navigatorstylesettings-selectionsettings-border-color}
+
+
+To set the border color to the selection.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ selectionSettings:{border: {color: "yellow"}}},
+   });
+</script>  {% endhighlight %}
+
+### navigatorStyleSettings.selectionSettings.border.width `number`
+{:#members:navigatorstylesettings-selectionsettings-border-width}
+
+
+To set the border width to the selection.
+
+
+#### Default Value
+
+* 1
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   navigatorStyleSettings:{ selectionSettings:{border: {width: 1.4}}},
+   });
+</script>  {% endhighlight %}
 
 
 
@@ -4227,6 +4627,60 @@ Specifies the starting range of range navigator.
 
 
 
+
+
+### scrollRangeSettings `object`
+{:#members:scrollrangesettings}
+
+
+
+Options for rendering scrollbar based on the start and end range values.
+
+
+
+
+### scrollRangeSettings.end `string`
+{:#members:scrollrangesettings-end}
+
+Specifies the ending range of range navigator scrollbar and that should be greater than the rangenavigator datasource end value.
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+   $("#container").ejRangeNavigator({
+          scrollRangeSettings:{end:"01/05/1993"},
+   });
+{% endhighlight %}
+
+
+### scrollRangeSettings.start `string`
+{:#members:scrollrangesettings-start}
+
+
+Specifies the starting range of range navigator scrollbar and that should be less than the rangenavigator datasource start value.
+
+#### Default Value
+
+
+* null
+
+#### Example
+
+
+{% highlight js %}
+ 
+  $("#container").ejRangeNavigator({
+      scrollRangeSettings:{start:"01/05/1992"},
+   });
+   
+{% endhighlight %}
 
 
 
@@ -5931,4 +6385,209 @@ $("#container").ejRangeNavigator({
 
 
 
+
+
+### scrollChanged
+{:#events:scrollchanged}
+
+
+Fires on changing the scrollbar position of range navigator.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the scrollbar position old start and end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the scrollbar position new start and end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for rangenavigator
+$("#container").ejRangeNavigator({
+   scrollChanged: function (args) {}
+});{% endhighlight %}
+
+
+
+### scrollStart
+{:#events:scrollstart}
+
+
+Fires on when starting to change the scrollbar position of range navigator.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datastartRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the scrollbar position starting range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataendRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the scrollbar position end range value on changing scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for rangenavigator
+$("#container").ejRangeNavigator({
+   scrollStart: function (args) {}
+});{% endhighlight %}
+
+
+
+### scrollEnd
+{:#events:scrollend}
+
+
+Fires on changes ending the scrollbar position of range navigator.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the scrollbar position old start and end range value on change end of scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the scrollbar position new start and end range value on change end of scrollbar</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//scrollbarChanged event for rangenavigator
+$("#container").ejRangeNavigator({
+   scrollEnd: function (args) {}
+});{% endhighlight %}
 

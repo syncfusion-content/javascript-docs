@@ -126,7 +126,35 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img5.png)
 
+### MultiColor Line
 
+You can change the color of the line segments by using the [`fill`](../api/ejchart.html#members:series-points-fill) property of the each [`points`](../api/ejchart.html#members:series-points) in the series.
+
+{% highlight javascript %}
+
+
+       $("#chartcontainer").ejChart({
+            //   ...
+            series: [{
+               //  Change the color of a line 
+                points:[{ fill: 'red' },
+                       //  ...         
+                ],
+               //  ...         
+            }],
+            
+            //    ...
+
+        });
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img81.png)
+
+[Click](http://js.syncfusion.com/demos/web/#%21/azure/chart/chartcustomization/multicolorline) here to view the MultiColor Line Chart online demo sample.
+
+ 
 ## Step Line Chart
 
 To render a Step Line Chart, set the series [`type`](../api/ejchart.html#members:series-type) as **"stepline"** in the chart series. To change the StepLine segment color, you can use the [`fill`](../api/ejchart.html#members:series-fill) property of the series.
@@ -1355,6 +1383,53 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/semipieanddoughnut) here to view the Semi Doughnut Chart online demo sample.
+
+
+
+## Multiple Pie Chart
+
+EjChart provides support to render more than one series in pie and in doughnut chart. Radius of each series is calculated based on the radius of the previous series. And in addition legend is displayed according to the list of chart series.
+
+{% highlight javascript %}
+
+    $("#chartcontainer").ejChart({
+         // ...             
+               
+         series:[{
+              //Adding multiple pie series
+              type: "pie",
+              //...
+            },{
+               //Adding multiple pie series
+               type: "pie",
+               //...
+          }],
+        // ...             
+     });
+
+{% endhighlight %}
+
+**Multiple Pie** 
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img82.png)
+
+**Multiple Doughnut** 
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img83.png)
+
+[Click](http://js.syncfusion.com/demos/web/#%21/azure/chart/multiplepie) here to view the Multiple Pie chart online demo sample.
+
+### Start and End Angle Support
+
+In the Multiple Pie chart, the start and end angle property is also supported.
+
+**Sector of Multiple Pie**
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img84.png)
+
+**Sector of Multiple Doughnut**
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img85.png)
 
 
 ## Pyramid Chart
