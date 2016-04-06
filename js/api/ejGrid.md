@@ -1669,7 +1669,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### contextMenuSettings.disabledefaultitems `Boolean`
+### contextMenuSettings.disableDefaultItems `Boolean`
 {:#members:contextmenusettings-disabledefaultitems}
 
 Gets or sets a value that indicates whether to disable the default context menu items in the grid.
@@ -4783,10 +4783,27 @@ $("#Grid").ejGrid({
 
 ## Methods
 
-### addIgnoreOnExport(args)
+### addIgnoreOnExport(propertyNames)
 {:#methods:addignoreonexport}
 
 Adds a grid model property which is to be ignored upon exporting.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">propertyNames</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last">Pass the array of parameters which need to be ignored on exporting </td>
+</tr>
+</tbody>
+</table>
 
 #### Returns:
 {:#methods:returns:}
@@ -4850,6 +4867,28 @@ $("#Grid").ejGrid("addRecord");
 {:#methods:addrecord}
 
 Add a new record in grid control when allowAdding is set as true.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last">Pass the array of added Records</td>
+</tr>
+<tr>
+<td class="name">serverChange</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last"><span class="optional">optional</span>If we pass serverChange as true, send post to server side for server action.</td>
+</tr>
+</tbody>
+</table>
 
 #### Returns:
 {:#methods:returns:}
@@ -5050,7 +5089,29 @@ $("#Grid").ejGrid("clearCellSelection");
 ### clearCellSelection(rowIndex,columnIndex)
 {:#methods:clearcellselection}
 
-It is used to clear specified the cell selection.
+It is used to clear specified cell selection based on the rowIndex and columnIndex provided.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to pass the rowindex of the cell</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to pass the column index of the cell.</td>
+</tr>
+</tbody>
+</table>
 
 #### Returns:
 {:#methods:returns:}
@@ -5445,7 +5506,7 @@ Refresh the grid with new data source
 <tr>
 <td class="name">templateRefresh</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">The template column of the Grid control will be refresh if templateRefresh is true.</td>
+<td class="description last"><span class="optional">optional</span> When templateRefresh is set true, both header and contents get refreshed</td>
 </tr>
 </tbody>
 </table>
@@ -5899,7 +5960,7 @@ Send a filtering request to filter one column in grid.
 <tbody>
 <tr>
 <td class="name">fieldName</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>
@@ -5909,7 +5970,7 @@ Send a filtering request to filter one column in grid.
 </tr>
 <tr>
 <td class="name">filterValue</td>
-<td class="type"><span class="param-type">string/number</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the value to be filtered in a column</td>
 </tr>
 <tr>
@@ -7740,12 +7801,29 @@ $("#Grid").ejGrid("saveCell);
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
 
-We can prevent the client side cellsave event triggering by set the preventSaveEvent argument as true.
+We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">preventSaveEvent</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last"><span class="optional">optional</span>If we pass preventSaveEvent as true, it prevents the client side cellSave event triggering </td>
+</tr>
+</tbody>
+</table>
 
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+Void
 
 ####Example
 {:.example}
@@ -7998,7 +8076,7 @@ $("#Grid").ejGrid("selectColumns", 1, 4);
 ### selectColumns(columnIndex,\[toIndex\])
 {:#methods:selectcolumns}
 
-Select columns in grid.
+Select the specified columns in grid based on Index provided.
 
 <table class="params">
 <thead>
@@ -8017,7 +8095,7 @@ Select columns in grid.
 <tr>
 <td class="name">toIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the ending index of column for selecting columns.</td>
+<td class="description last"><span class="optional">optional</span>It is used to set the ending index of column for selecting columns.</td>
 </tr>
 </tbody>
 </table>
@@ -8025,7 +8103,7 @@ Select columns in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+Boolean
 
 #### Example
 {:.example}
@@ -8104,7 +8182,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 ### selectRows(from,to,\[target\])
 {:#methods:selectrows}
 
-Select rows in grid.
+Select specified rows in grid based on Index provided.
 
 <table class="params">
 <thead>
@@ -8117,18 +8195,18 @@ Select rows in grid.
 <tbody>
 <tr>
 <td class="name">from</td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">array/number</span></td>
 <td class="description last">It is used to set the starting index of row for selecting rows.</td>
 </tr>
 <tr>
 <td class="name">to</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to set the ending index of row for selecting rows.</td>
+<td class="description last"><span class="optional">optional</span>It is used to set the ending index of row for selecting rows.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Target element which is clicked.</td>
+<td class="description last"><span class="optional">optional</span>Target element which is clicked.</td>
 </tr>
 </tbody>
 </table>
@@ -8231,17 +8309,17 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 <tbody>
 <tr>
 <td class="name">rowIndex</td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the index of row.</td>
 </tr>
 <tr>
 <td class="name">cellIndex</td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the index of cell.</td>
 </tr>
 <tr>
 <td class="name">value</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">It is used to set the value for the cell based on specified row and cell Index.</td>
 </tr>
 </tbody>
