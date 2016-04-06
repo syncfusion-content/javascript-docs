@@ -2724,7 +2724,7 @@ APIUpdate</td>
 PageEditable</td>
 <td class="type">ConnectorConstraints</td>
 <td class="default">LSH</td>
-<td class="description">Enables/Disables the interaction and APIUpdate</td>
+<td class="description">Enables/Disables to edit the diagram both through programmatically and through interaction</td>
 </tr>
 <tr>
 <td class="name">
