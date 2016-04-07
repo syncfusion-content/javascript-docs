@@ -43,7 +43,7 @@ $(element).ejTooltip(options);
     <script>
         $("#test").ejTooltip(
 		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
+		     content: "JavaScript is the programming language of HTML and the Web."
 		});
     </script>
 
@@ -79,7 +79,7 @@ Tooltip control can be accessed through the keyboard shortcut keys.
         $("#test").ejTooltip(
 		 {
 		     content: "JavaScript is the programming language of HTML and the Web.",
-		     allowKeyboardNavigation: true,
+		     allowKeyboardNavigation: true
              
 		 });
     </script>
@@ -165,7 +165,7 @@ Sets the animation speed in milliseconds.
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            animation :{ effect : "slide", speed : 1000},
+            animation :{ effect : "slide", speed : 1000}
         });
 
     </script>
@@ -219,7 +219,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            associate: "mouse",
+            associate: "mouse"
         });
 
     </script>
@@ -242,7 +242,7 @@ And also, absolute positioning via horizontal(x), vertical(y) e.g. A Tooltip at 
             position :{
                 horizontal : 10,
                 vertical : 10,
-               },
+               }
         });
 
     </script>
@@ -321,7 +321,7 @@ Specifies the closing behaviour of Tooltip popup.
             $("#test").ejTooltip(
             {
                 content: "JavaScript is the programming language of HTML and the Web.",
-                closeMode : "sticky",
+                closeMode : "sticky"
             });
 
         </script>
@@ -341,7 +341,7 @@ Specifies the closing behaviour of Tooltip popup.
             $("#test").ejTooltip(
             {
                 content: "JavaScript is the programming language of HTML and the Web.",
-                closeMode : "auto",
+                closeMode : "auto"
             });
 
         </script>
@@ -390,7 +390,7 @@ Sets the Tooltip in alternate position when collision occurs.
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            collision : "fit",
+            collision : "fit"
    
         });
 
@@ -410,8 +410,8 @@ Sets the Tooltip in alternate position when collision occurs.
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            collision : "flip",
-   
+            collision : "flip"
+  
         });
 
     </script>
@@ -420,7 +420,6 @@ Sets the Tooltip in alternate position when collision occurs.
         
 
 ### containment `string`
-
 {:#members:containment}
 
 Specified the selector for the container element.
@@ -443,7 +442,7 @@ Specified the selector for the container element.
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            containment : ".frame",
+            containment : ".frame"
    
         });
 
@@ -452,7 +451,6 @@ Specified the selector for the container element.
 {% endhighlight %}
 
 ### content `string`
-
 {:#members:content}
 
 Specifies the text for Tooltip.
@@ -471,7 +469,7 @@ Specifies the text for Tooltip.
     <script>
         $("#test").ejTooltip(
 		 {
-		     content: "JavaScript is the programming language of HTML and the Web.",
+		     content: "JavaScript is the programming language of HTML and the Web."
 		  
 		 });
     </script>
@@ -516,7 +514,7 @@ Sets the root CSS class for Tooltip for the customization.
         $("#test").ejTooltip(
 	    {
                content: "JavaScript is the programming language of HTML and the Web.",
-                cssClass : "myStyle",
+                cssClass : "myStyle"
          });
             
      </script>
@@ -544,7 +542,7 @@ Enables or disables the Tooltip.
             $("#test").ejTooltip(
             {
                 content: "JavaScript is the programming language of HTML and the Web.",
-                enabled: false,
+                enabled: false
             });
 
         </script>
@@ -572,7 +570,7 @@ Sets the Tooltip direction from right to left.
          $("#test").ejTooltip(
 		 {
 		     content: "JavaScript is the programming language of HTML and the Web.",
-             enableRTL: true ,
+             enableRTL: true 
              
 		 });
     </script>
@@ -600,7 +598,7 @@ Enables the Tooltip to remains visible for the period of time.
          $("#test").ejTooltip(
 		 {
 		     content: "JavaScript is the programming language of HTML and the Web.",
-             enableInteraction: true ,
+             enableInteraction: true 
              
 		 });
     </script>
@@ -628,7 +626,7 @@ Defines the height of the Tooltip popup.
             $("#test").ejTooltip(
             {
                 content: "JavaScript is the programming language of HTML and the Web.",
-                height :"50px",
+                height :"50px"
             });
 
         </script>
@@ -657,7 +655,7 @@ Enables the arrow in Tooltip.
             $("#test").ejTooltip(
             {
                 content: "JavaScript is the programming language of HTML and the Web.",
-                isBalloon :false,
+                isBalloon :false
             });
 
         </script>
@@ -677,16 +675,20 @@ Sets the Tooltip position against target.
 ### position.target.horizontal `string|number`
 {:#members:position-target-horizontal}
 
-#### Default Value
-{:.param}
-* right
-
-### position.target.vertical `string|number`
-{:#members:position-target-vertical}
+Sets the Tooltip position against target based on horizontal(x) value.
 
 #### Default Value
 {:.param}
 * center
+
+### position.target.vertical `string|number`
+{:#members:position-target-vertical}
+
+Sets the Tooltip position against target based on vertical(y) value.
+
+#### Default Value
+{:.param}
+* top
 
 ### position.stem `object`
 {:#members:position-stem}
@@ -696,16 +698,20 @@ Sets the arrow position again popup.
 ### position.stem.horizontal `string`
 {:#members:position-stem-horizontal}
 
-#### Default Value
-{:.param}
-* left
-
-### position.stem.vertical `string`
-{:#members:position-stem-vertical}
+Sets the arrow position again popup based on horiaontal(x) value
 
 #### Default Value
 {:.param}
 * center
+
+### position.stem.vertical `string`
+{:#members:position-stem-vertical}
+
+Sets the arrow position again popup based on vertical(y) value
+
+#### Default Value
+{:.param}
+* bottom
 
 #### Example
 {:.example}
@@ -728,7 +734,7 @@ Sets the arrow position again popup.
 						    horizontal: "center",
 						    vertical: "bottom"
 						}
-					},
+					}
             });
 
         </script>
@@ -756,7 +762,7 @@ Enables or disables rounded corner.
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            showRoundedCorner :true,
+            showRoundedCorner :true
         });
 
     </script>
@@ -808,7 +814,7 @@ Specified a selector for elements, within the container.
 
             $("#detail").ejTooltip(
             {
-                target: "#detail",
+                target: "#detail"
        
             });
 
@@ -866,7 +872,7 @@ The template to display the content with cutomized appearance.
             $("#test").ejTooltip(
             {
                 template: '<div class="main"> <img src="../images/Employee/7.png" class="logo"/><div class="des">Name : Peter <br> Contact No : 987654321 <br> Email id :perter@outlook.com <br></div></div>',
-                width:"100px",
+                width:"100px"
             });
 
         </script>
@@ -918,7 +924,7 @@ The title text to be displayed in the Tooltip header.
         $("#test").ejTooltip(
 		{
 		    content: "JavaScript is the programming language of HTML and the Web.",
-		    title : "Header",
+		    title : "Header"
 		});
 
     </script>
@@ -970,7 +976,7 @@ The below example will cause the Tooltip to be shown when the target element is 
         $("#test").ejTooltip(
 		{
 		    content: "JavaScript is the programming language of HTML and the Web.",
-		    trigger : "click",
+		    trigger : "click"
 		});
 
     </script>
@@ -992,7 +998,7 @@ The below example will cause the Tooltip to be shown when the target element is 
         $("#test").ejTooltip(
 		{
 		    content: "JavaScript is the programming language of HTML and the Web.",
-		    trigger : "focus",
+		    trigger : "focus"
 		});
 
     </script>
@@ -1021,7 +1027,7 @@ Defines the width of the Tooltip popup.
         $("#test").ejTooltip(
 		{
 		    content: "JavaScript is the programming language of HTML and the Web.",
-		    width:"100px",
+		    width:"100px"
 		});
 
     </script>
@@ -1054,7 +1060,7 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.destroy();
 
@@ -1073,7 +1079,7 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('destroy');
 
@@ -1104,7 +1110,7 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.disable();
 
@@ -1122,7 +1128,7 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('disable');
 
@@ -1153,7 +1159,7 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.enable();
 
@@ -1171,7 +1177,7 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('enable');
 
@@ -1195,13 +1201,13 @@ Hide the Tooltip popup.
 <tbody>
 <tr>
 <td class="name">effect</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">optional</span>Determines the type of effect that takes place when hiding the tooltip.</td>
+<td class="type"> <span class="param-type">string</span></td>
+<td class="description"> <span class="optional">optional</span> Determines the type of effect that takes place when hiding the tooltip.</td>
 </tr>
 <tr>
 <td class="name">func</td>
-<td class="type"><span class="param-type">function</span></td>
-<td class="description"><span class="optional">optional</span>custom effect takes place when hiding the tooltip.</td>
+<td class="type"> <span class="param-type"> function </span> </td>
+<td class="description"> <span class="optional">optional</span> custom effect takes place when hiding the tooltip.</td>
 </tr>
 </tbody>
 </table>
@@ -1224,7 +1230,7 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.hide();
 
@@ -1242,12 +1248,51 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('hide');
 
     </script>
 
+{% endhighlight %}
+
+{% highlight html %}
+
+    <div class="control">
+            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+    <button id="open">Hide</button>
+ 
+    // Creates the Tooltip
+    <script>
+    
+        $("#test").ejTooltip(
+		{
+		     content: "JavaScript is the programming language of HTML and the Web."
+		});
+        tip = $("#test").data("ejTooltip");
+        tip.show();
+        
+        $("#open").ejButton({
+            size: "large",
+            showRoundedCorner: true,
+            click: "onClick",
+
+        });
+      
+        function onClick(args){
+        	tip = $("#test").data("ejTooltip");
+        	tip.hide("myFunc");
+        }
+        
+         function myFunc(args) {
+			tip = $("#test").data("ejTooltip");
+			$(tip.tooltip).slideDown(200, "easeOutElastic");
+        
+        }
+        
+    </script>
+    
 {% endhighlight %}
 
 ### refresh(target)
@@ -1293,11 +1338,21 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.refresh(".altPosition");
 
     </script>
+    <style>
+        .altPosition{
+            width : 100px;
+            height : 100px;
+            border : 1px solid;
+            left : 100px;
+            top : 120px;
+            position: absolute;
+        }
+     </style>
     
 {% endhighlight %}
 
@@ -1312,7 +1367,7 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('refresh', ".altPosition");
 
@@ -1365,7 +1420,7 @@ Void
 
 	    var tipObj =$("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		}).data("ejTooltip");
 	    tipObj.show();
 
@@ -1383,12 +1438,49 @@ Void
 
 	    $("#test").ejTooltip(
 		{
-            content: "JavaScript is the programming language of HTML and the Web.",
+            content: "JavaScript is the programming language of HTML and the Web."
 		});
 	    $("#test").ejTooltip('show');
 
     </script>
 
+{% endhighlight %}
+
+{% highlight html %}
+
+    <div class="control">
+            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+    <button id="open">Open</button>
+ 
+    // Creates the Tooltip
+    <script>
+    
+        $("#test").ejTooltip(
+		{
+		     content: "JavaScript is the programming language of HTML and the Web."
+		});
+        
+        $("#open").ejButton({
+            size: "large",
+            showRoundedCorner: true,
+            click: "onClick",
+
+        });
+      
+        function onClick(args){
+        	tip = $("#test").data("ejTooltip");
+        	tip.show("myFunc");
+        }
+        
+         function myFunc(args) {
+			tip = $("#test").data("ejTooltip");
+			$(tip.tooltip).slideDown(200, "easeOutElastic");
+        
+        }
+        
+    </script>
+    
 {% endhighlight %}
 
 ## Events
