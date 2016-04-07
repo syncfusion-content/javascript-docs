@@ -53,8 +53,7 @@ $('#Schedule').ejSchedule();
 * module:ej.datepicker.js
 * module:ej.timepicker.js
 * module:ej.navigationdrawer.js
-
-
+* module:ej.recurrenceeditor.js
 
 ## Members
 
@@ -182,10 +181,9 @@ It includes the dataSource option and the fields related to Schedule appointment
 ### appointmentSettings.dataSource `object|Array`
 {:#members:appointmentsettings-datasource}
 
-
 #### Default Value
 
-* Array
+* []
 
 The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance that contains Schedule appointments.
 
@@ -218,7 +216,6 @@ The dataSource option accepts either JSON object collection or DataManager ([ej.
 </script>
 
 {% endhighlight %}
-
 
 #### Example - To set the dataSource with DataManager instance.
 
@@ -318,7 +315,6 @@ Assign the table name from where the records are to be fetched for the Schedule.
 
 {% endhighlight %}
 
-
 > The following are the appointment fields that holds the appropriate column names from the dataSource. All its default values are `null`.
 
 ### appointmentSettings.id `string`
@@ -326,15 +322,27 @@ Assign the table name from where the records are to be fetched for the Schedule.
 
 Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
 
+#### Default Value
+
+* null
+
 ### appointmentSettings.startTime `string`
 {:#members:appointmentsettings-starttime}
 
 Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
 
+#### Default Value
+
+* null
+
 ### appointmentSettings.endTime `string`
 {:#members:appointmentsettings-endtime}
 
 Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
+
+#### Default Value
+
+* null
 
 #### Example - To create a simple appointment with the fields id, startTime and endTime.
 
@@ -369,6 +377,10 @@ Binds the name of endTime field in dataSource with the end time of Schedule appo
 
 Binds the name of subject field in the dataSource to appointment Subject. Indicates the Subject or title that gets displayed on Schedule appointments.
 
+#### Default Value
+
+* null
+
 #### Example - To create an appointment with Subject.
 
 {% highlight html %}
@@ -402,6 +414,10 @@ Binds the name of subject field in the dataSource to appointment Subject. Indica
 
 Binds the description field name in dataSource. It indicates the appointment description.
 
+#### Default Value
+
+* null
+
 #### Example - To create an appointment with Description.
 
 {% highlight html %}
@@ -430,17 +446,25 @@ Binds the description field name in dataSource. It indicates the appointment des
 
 {% endhighlight %}
 
-> Unlike Subject field that is displayed as a label over an appointment, the description doesn’t show up on it, by default. To display description over appointments, the appointment template can be used.
+> Unlike Subject field that gets displayed over an appointment with corresponding time, the description doesn’t show up on it, by default. To display description over appointments, the appointment template can be used.
 
 ### appointmentSettings.recurrence `string`
 {:#members:appointmentsettings-recurrence}
 
 Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
 
+#### Default Value
+
+* null
+
 ### appointmentSettings.recurrenceRule `string`
 {:#members:appointmentsettings-recurrencerule}
 
 Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
+
+#### Default Value
+
+* null
 
 #### Example - To create a recurrence appointment.
 
@@ -483,7 +507,7 @@ Binds the name of allDay field in dataSource. It indicates whether the appointme
 
 #### Default Value
 
-* AllDay
+* null
 
 #### Example - To create an all-day appointment.
 
@@ -518,11 +542,11 @@ Binds the name of allDay field in dataSource. It indicates whether the appointme
 ### appointmentSettings.resourceFields `string`
 {:#members:appointmentsettings-resourcefields}
 
+Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
+
 #### Default Value
 
 * null
-
-Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
 
 #### Example - To create appointments in multiple resources scenario.
 
@@ -571,11 +595,11 @@ Binds one or more fields in resource collection dataSource. It maps the resource
 ### appointmentSettings.categorize `string`
 {:#members:appointmentsettings-categorize}
 
+Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
+
 #### Default Value
 
 * null
-
-Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
 
 #### Example - To create appointments with categorize options.
 
@@ -616,11 +640,11 @@ Binds the name of categorize field in dataSource. It indicates the categorize va
 ### appointmentSettings.location `string`
 {:#members:appointmentsettings-location}
 
+Binds the name of location field in dataSource. It indicates the appointment location.
+
 #### Default Value
 
 * null
-
-Binds the name of location field in dataSource. It indicates the appointment location.
 
 #### Example - To create appointments with categorize options.
 
@@ -658,11 +682,11 @@ Binds the name of location field in dataSource. It indicates the appointment loc
 ### appointmentSettings.priority `string`
 {:#members:appointmentsettings-priority}
 
+Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
+
 #### Default Value
 
 * null
-
-Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
 
 #### Example - To create appointments with priority option.
 
@@ -700,20 +724,20 @@ Binds the name of the priority field in dataSource. It indicates the priority, h
 ### appointmentSettings.startTimeZone `string`
 {:#members:appointmentsettings-starttimezone}
 
+Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
+
 #### Default Value
 
-* StartTimeZone
-
-Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
+* null
 
 ### appointmentSettings.endTimeZone `string`
 {:#members:appointmentsettings-endtimezone}
 
+Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
+
 #### Default Value
 
-* EndTimeZone
-
-Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
+* null
 
 #### Example - To create appointments with StartTimeZone and EndTimeZone.
 
@@ -752,11 +776,11 @@ Binds the name of end timezone field in dataSource. It indicates the timezone of
 ### appointmentTemplateId `string`
 {:#members:appointmenttemplateid}
 
+Template design that applies on the Schedule appointments. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be used within the template.
+
 #### Default Value
 
 * null
-
-Template design that applies on the Schedule appointments. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be used within the template.
 
 #### Example - To set the appointment template.
 
@@ -793,11 +817,11 @@ Template design that applies on the Schedule appointments. All the field names t
 ### cssClass `string`
 {:#members:cssclass  }
 
+Accepts the custom CSS class name that defines specific user-defined styles and themes to be applied for partial or complete elements of the Schedule.
+
 #### Default Value
 
-* ""
-
-Accepts the custom CSS class name that defines specific user-defined styles and themes to be applied for partial or complete elements of the Schedule. 
+* "" 
 
 #### Example - To simply customize the background color of Scheduler header element by using custom css class name.
 
@@ -840,11 +864,11 @@ Sets various categorize colors to the Schedule appointments to differentiate it.
 ### categorizeSettings.allowMultiple `boolean`
 {:#members:categorizesettings-allowmultiple}
 
+When set to true, enables the multiple selection of categories to be applied for the appointments.
+
 #### Default Value
 
 * false
-
-When set to true, enables the multiple selection of categories to be applied for the appointments.
 
 #### Example - To enable multiple selection of categories.
 
@@ -879,11 +903,11 @@ When set to true, enables the multiple selection of categories to be applied for
 ### categorizeSettings.enable `boolean`
 {:#members:categorizesettings-enable}
 
+When set to true, enables the categories option to be applied for the appointments.
+
 #### Default Value
 
 * false
-
-When set to true, enables the categories option to be applied for the appointments.
 
 #### Example - To enable the categorize option.
 
@@ -917,11 +941,21 @@ When set to true, enables the categories option to be applied for the appointmen
 ### categorizeSettings.dataSource `array|object`
 {:#members:categorizesettings-datasource }
 
+The dataSource option accepts either the JSON object collection or DataManager [[ej.DataManager](/js/datamanager/overview)] instance that contains the categorize data.
+
 #### Default Value
 
-* Array
-
-The dataSource option accepts either the JSON object collection or DataManager [[ej.DataManager](/js/datamanager/overview)] instance that contains the categorize data.
+*  {% highlight js %}
+     [ 
+       { text: "Blue Category", id: 1, color: "#43b496", fontColor: "#ffffff" },
+       { text: "Green Category", id: 2, color: "#7f993e", fontColor: "#ffffff" },
+       { text: "Orange Category", id: 3, color: "#cc8638", fontColor: "#ffffff" },
+       { text: "Purple Category", id: 4, color: "#ab54a0", fontColor: "#ffffff" },
+       { text: "Red Category", id: 5, color: "#dd654e", fontColor: "#ffffff" },
+       { text: "Yellow Category", id: 6, color: "#d0af2b", fontColor: "#ffffff" }
+     ]
+     
+   {% endhighlight %}
 
 #### Example - To set the dataSource with array of JSON object collection.
 
@@ -966,7 +1000,7 @@ Binds id field name in the dataSource to id of category data.
 
 #### Default Value
 
-* id
+* "id"
 
 ### categorizeSettings.text `string`
 {:#members:categorizesettings-text}
@@ -975,7 +1009,7 @@ Binds text field name in the dataSource to category text.
 
 #### Default Value
 
-* text
+* "text"
 
 ### categorizeSettings.color `string`
 {:#members:categorizesettings-color}
@@ -984,7 +1018,7 @@ Binds color field name in the dataSource to category color.
 
 #### Default Value
 
-* color
+* "color"
 
 #### Example - To set the categorize options with id, text and color fields.
 
@@ -1030,7 +1064,7 @@ Binds fontColor field name in the dataSource to category font.
 
 #### Default Value
 
-* fontColor
+* "fontColor"
 
 #### Example - To set categorize options with fontColor.
 
@@ -1139,7 +1173,7 @@ Sets the width for Schedule cells.
 ### contextMenuSettings `object`
 {:#members:contextmenusettings}
 
-Holds all options related to the context menu settings of the Schedule.
+Holds all options related to the context menu settings of Scheduler.
 
 ### contextMenuSettings.enable `boolean`
 {:#members:contextmenusettings-enable}
@@ -1186,10 +1220,51 @@ When set to true, enables the context menu options available for the Schedule ce
 
 Contains all the default context menu options that are applicable for both Schedule cells and appointments. It also supports adding custom menu items to cells or appointment collection.
 
+### contextMenuSettings.menuItems.appointment `Array`
+{:#members:contextmenusettings-menuitems-appointment}
+
+All the appointment related context menu items are grouped under this appointment menu collection.
+
 #### Default Value
 
-* []
+* {% highlight js %}
 
+    [
+      { id: "open", text: "Open Appointment" },
+      { id: "delete", text: "Delete Appointment" }
+    ]
+  
+  {% endhighlight %}
+  
+### contextMenuSettings.menuItems.cells `Array`
+{:#members:contextmenusettings-menuitems-cells}
+
+All the Scheduler cell related context menu items are grouped under this cells menu item collection.
+
+#### Default Value
+
+* {% highlight js %}
+
+    [
+        { id: "new", text: "New Appointment" },
+        { id: "recurrence", text: "New Recurring Appointment" },
+        { id: "today", text: "Today" },
+        { id: "gotodate", text: "Go to date" },
+        { id: "settings", text: "Settings" },
+        { id: "view", text: "View", parentId: "settings" },
+        { id: "timemode", text: "TimeMode", parentId: "settings" },
+        { id: "view_Day", text: "Day", parentId: "view" },
+        { id: "view_Week", text: "Week", parentId: "view" },
+        { id: "view_Workweek", text: "Workweek", parentId: "view" },
+        { id: "view_Month", text: "Month", parentId: "view" },
+        { id: "view_Agenda", text: "Agenda", parentId: "view" },
+        { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
+        { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
+        { id: "workhours", text: "Work Hours", parentId: "settings" }
+    ]
+  
+  {% endhighlight %}
+  
 #### Example - Default context menu options available for Schedule cells and appointments.
 
 {% highlight html %}
@@ -1221,7 +1296,7 @@ Contains all the default context menu options that are applicable for both Sched
                         { id: "view_Month", text: "Month", parentId: "view" },
                         { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
                         { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
-                        { id: "businesshours", text: "Business Hours", parentId: "settings" }
+                        { id: "workhours", text: "Work Hours", parentId: "settings" }
                       ]
                     }
                 },
@@ -1297,7 +1372,7 @@ Contains all the default context menu options that are applicable for both Sched
 
 {% endhighlight %}
 
-> In the above code example, menuItemClick event is defined that triggers when any of the menu options are selected. Here, the condition is checked as, when the id of selected menu item option contains custom1, then the target appointment’s text and its color gets modified.
+> In the above code example, `menuItemClick` event is defined that triggers when any of the menu options are selected. Here, the condition is checked as, when the id of selected menu item option contains *custom1*, then the target appointment’s text and its color gets modified.
 
 ### currentDate `object`
 {:#members:currentdate}
@@ -1349,27 +1424,27 @@ Sets current view of the Schedule. Schedule renders initially with the view that
     <tbody>
         <tr>
             <td class="name">Day</td>
-            <td class="description">Set currentView as Day to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as Day</td>
         </tr>
         <tr>
             <td class="name">Week</td>
-            <td class="description">Set currentView as Week to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as Week</td>
         </tr>
         <tr>
             <td class="name">Workweek</td>
-            <td class="description">Set currentView as Workweek to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as WorkWeek</td>
         </tr>
         <tr>
             <td class="name">Month</td>
-            <td class="description">Set currentView as Month to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as Month</td>
         </tr>
         <tr>
             <td class="name">Agenda</td>
-            <td class="description">Set currentView as Agenda to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as Agenda</td>
         </tr>
         <tr>
             <td class="name">CustomView</td>
-            <td class="description">Set currentView as CustomView to Scheduler</td>
+            <td class="description">Sets currentView of the Scheduler as CustomView with user-specified date range.</td>
         </tr>
     </tbody>
 </table>
@@ -1655,7 +1730,7 @@ To configure resource grouping on the Schedule.
 
 > By default, group is assigned with null value.
 
-### group.resources `object`
+### group.resources `array`
 {:#members:group-resources}
 
 Holds the array of resource names to be grouped on the Schedule.
@@ -1822,7 +1897,7 @@ Sets the start time to depict the start of working or business hour in a day.
 
 #### Default Value
 
-* null
+* 9
 
 #### Example - To set the working start hour for Scheduler.
 
@@ -1837,7 +1912,7 @@ Sets the start time to depict the start of working or business hour in a day.
                 currentDate: new Date(2014, 04, 05),
                 workHours:{
                     highlight:false,
-                    start:9
+                    start:7
                 },
                 appointmentSettings: {
                     dataSource: [{
@@ -1860,7 +1935,7 @@ Sets the end time to depict the end of working or business hour in a day.
 
 #### Default Value
 
-* null
+* 18
 
 #### Example - To set the working end hour for Scheduler.
 
@@ -1876,7 +1951,7 @@ Sets the end time to depict the end of working or business hour in a day.
                 workHours:{
                     highlight:false,
                     start:9,
-                    end:18
+                    end:20
                 },
                 appointmentSettings: {
                     dataSource: [{
@@ -2176,7 +2251,14 @@ The dataSource option can accept the JSON object collection that contains the pr
 
 #### Default Value
 
-* Array
+* {% highlight js%}
+    [
+      { text: "None", value: "none" },
+      { text: "High", value: "high" },
+      { text: "Medium", value: "medium" },
+      { text: "Low", value: "low" }
+    ]
+  {% endhighlight %}
 
 #### Example - To set the dataSource with array of JSON object collection.
 
@@ -2221,7 +2303,7 @@ Binds text field name in the dataSource to prioritySettings text. These text get
 
 #### Default Value
 
-* text
+* "text"
 
 ### prioritySettings.value `string`
 {:#members:prioritysettings-value }
@@ -2230,7 +2312,7 @@ Binds value field name in the dataSource to prioritySettings value. These field 
 
 #### Default Value
 
-* value
+* "value"
 
 #### Example - To set the priority options with text and value fields.
 
@@ -2338,7 +2420,7 @@ Allows priority field customization in the appointment window to add custom icon
 
 {% endhighlight %}
 
-> Since the prioritySettings contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.
+> Since the `prioritySettings` contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.
 
 ### readOnly `boolean`
 {:#members:readonly }
@@ -2585,7 +2667,7 @@ It holds the name of the resource field to be bound to the Schedule appointments
 
 #### Default Value
 
-* []
+* null
 
 #### Example - To specify the resource field.
 
@@ -2632,7 +2714,7 @@ It holds the title name of the resource field to be displayed on the Schedule ap
 
 #### Default Value
 
-* []
+* null
 
 #### Example - To specify the resource title.
 
@@ -2677,7 +2759,7 @@ A unique resource name that is used for differentiating various resource objects
 
 #### Default Value
 
-* []
+* null
 
 #### Example - To specify the resource name field.
 
@@ -2728,7 +2810,7 @@ When set to true, allows multiple selection of resource names, thus creating mul
 
 #### Default Value
 
-* []
+* null
 
 #### Example - To set allowMultiple option for a resource object.
 
@@ -2788,7 +2870,11 @@ It holds the field names of the resources to be bound to the Schedule and also t
 ### resources.resourceSettings.dataSource `object|array`
 {:#members:resources-resourcesettings-datasource}
 
-The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance that contains the resources related data.
+The dataSource option accepts either JSON object collection or DataManager ([ejDataManager](/js/datamanager/overview)) instance that contains the resources related data.
+
+#### Default Value
+
+* []
 
 #### Example - To set the dataSource with array of JSON object collection.
 
@@ -2827,42 +2913,70 @@ The dataSource option accepts either JSON object collection or DataManager ([ej.
 
 {% endhighlight %}
 
-> The following are the resourceSettings fields that maps the appropriate column names from the dataSource.
+The following are the `resourceSettings` fields, that maps the appropriate column names from the dataSource.
 
 ### resources.resourceSettings.text `string`
 {:#members:resources-resourcesettings-text}
 
 Binds text field name in the dataSource to resourceSettings **text**. These text gets listed out in resources field of the appointment window.
 
+#### Default Value
+
+* null
+
 ### resources.resourceSettings.id `string`
 {:#members:resources-resourcesettings-id}
 
 Binds id field name in the dataSource to resourceSettings **id**. 
+
+#### Default Value
+
+* null
 
 ### resources.resourceSettings.groupId `string`
 {:#members:resources-resourcesettings-groupid}
 
 Binds groupId field name in the dataSource to resourceSettings **groupId**.
 
+#### Default Value
+
+* null
+
 ### resources.resourceSettings.color `string`
 {:#members:resources-resourcesettings-color}
 
-Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs. 
+Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs.
+
+#### Default Value
+
+* null 
 
 ### resources.resourceSettings.start `string`
 {:#members:resources-resourcesettings-start}
 
-Binds the starting work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the starting work hour for specific resources.
+Binds the starting work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the starting work hour for specific resources.
+
+#### Default Value
+
+* null
 
 ### resources.resourceSettings.end `string`
 {:#members:resources-resourcesettings-end}
 
-Binds the end work hour field name in the dataSource. It's optional, but when provided with some numeric value will set the end work hour for specific resources.
+Binds the end work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the end work hour for specific resources.
+
+#### Default Value
+
+* null
 
 ### resources.resourceSettings.workWeek `string`
 {:#members:resources-resourcesettings-workweek}
 
-Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with some values (array of day names), only those days will render for the specific resources.
+Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with specific collection of days (array of day names), only those days will render for the specific resources.
+
+#### Default Value
+
+* null
 
 #### Example - To set the resources options with id, text, groupId, color, start, end and workWeek fields.
 
@@ -2918,6 +3032,10 @@ Binds the resources working days field name in the dataSource. It's optional, an
 {:#members:resources-resourcesettings-appointmentclass}
 
 Binds appointmentClass field name in the dataSource. It applies custom CSS class name to appointments depicting to the resource it belongs.
+
+#### Default Value
+
+* null
 
 #### Example - To customize the styles of the appointments based on the resources it belongs, use the appointmentClass field with other resources options.
 
@@ -2977,8 +3095,7 @@ Binds appointmentClass field name in the dataSource. It applies custom CSS class
 
 {% endhighlight %}
 
-> The custom css class names defined separately for each resources within 'style' tag are prefixed with the class name '.e-schedule', only then it gets applied to the appointments.
-
+> The custom CSS class names defined separately for each resources within 'style' tag are prefixed with the class name '.e-schedule', only then it gets applied to the appointments.
 
 ### showAllDayRow `boolean`
 {:#members:showalldayrow}
@@ -3157,41 +3274,6 @@ When set to true, displays the quick window for every single click made on the S
 
 {% endhighlight %}
 
-### showTimeScale `boolean`
-{:#members:showtimescale}
-
-When set to true, displays the timescale on the left side of the Schedule.
-
-#### Default Value
-
-* true
-
-#### Example - To hide the timescale.
-
-{% highlight html %}
-
-<div id="Schedule"></div>
-
-<script type="text/javascript">
-        $(function () {
-            $("#Schedule").ejSchedule({
-                width: "100%",
-                currentDate: new Date(2014, 04, 05),
-                showTimeScale: false,
-                appointmentSettings: {
-                    dataSource: [{
-                        Id: 101,
-                        Subject: "Talk with Nature",
-                        StartTime: new Date(2014, 4, 5, 10, 00),
-                        EndTime: new Date(2014, 4, 5, 11, 00)
-                    }]
-                }
-            });
-        });
-</script>
-
-{% endhighlight %}
-
 ### startHour `number`
 {:#members:starthour}
 
@@ -3244,11 +3326,11 @@ Sets either 12 or 24 hour time mode on the Schedule. It accepts either the strin
     <tbody>
         <tr>
             <td class="name">Hour12</td>
-            <td class="description">Set timeMode as 12 hours to Scheduler</td>
+            <td class="description">Sets 12 hour time mode to Scheduler</td>
         </tr>
         <tr>
             <td class="name">Hour24</td>
-            <td class="description">Set timeMode as 24 hours to Scheduler</td>
+            <td class="description">Sets 24 hour time mode to Scheduler</td>
         </tr>
     </tbody>
 </table>
@@ -3328,6 +3410,48 @@ Sets the collection of timezone items to be bound to the Schedule. Only the item
 
 Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule timezones.
 
+#### Default Value
+
+* {% highlight js %}
+
+    [
+        { text: "UTC -12:00", id: "1", value: "UTC -12:00" },
+        { text: "UTC -11:00", id: "2", value: "UTC -11:00" },
+        { text: "UTC -10:00", id: "3", value: "UTC -10:00" },
+        { text: "UTC -09:00", id: "4", value: "UTC -09:00" },
+        { text: "UTC -08:00", id: "5", value: "UTC -08:00" },
+        { text: "UTC -07:00", id: "6", value: "UTC -07:00" },
+        { text: "UTC -06:00", id: "7", value: "UTC -06:00" },
+        { text: "UTC -05:00", id: "8", value: "UTC -05:00" },
+        { text: "UTC -04:30", id: "9", value: "UTC -04:30" },
+        { text: "UTC -04:00", id: "10", value: "UTC -04:00" },
+        { text: "UTC -03:30", id: "11", value: "UTC -03:30" },
+        { text: "UTC -03:00", id: "12", value: "UTC -03:00" },
+        { text: "UTC -02:00", id: "13", value: "UTC -02:00" },
+        { text: "UTC -01:00", id: "14", value: "UTC -01:00" },
+        { text: "UTC +00:00", id: "15", value: "UTC +00:00" },
+        { text: "UTC +01:00", id: "16", value: "UTC +01:00" },
+        { text: "UTC +02:00", id: "17", value: "UTC +02:00" },
+        { text: "UTC +03:00", id: "18", value: "UTC +03:00" },
+        { text: "UTC +03:30", id: "19", value: "UTC +03:30" },
+        { text: "UTC +04:00", id: "20", value: "UTC +04:00" },
+        { text: "UTC +04:30", id: "21", value: "UTC +04:30" },
+        { text: "UTC +05:00", id: "22", value: "UTC +05:00" },
+        { text: "UTC +05:30", id: "23", value: "UTC +05:30" },
+        { text: "UTC +05:45", id: "24", value: "UTC +05:45" },
+        { text: "UTC +06:00", id: "25", value: "UTC +06:00" },
+        { text: "UTC +06:30", id: "26", value: "UTC +06:30" },
+        { text: "UTC +07:00", id: "27", value: "UTC +07:00" },
+        { text: "UTC +08:00", id: "28", value: "UTC +08:00" },
+        { text: "UTC +09:00", id: "29", value: "UTC +09:00" },
+        { text: "UTC +09:30", id: "30", value: "UTC +09:30" },
+        { text: "UTC +10:00", id: "31", value: "UTC +10:00" },
+        { text: "UTC +11:00", id: "32", value: "UTC +11:00" },
+        { text: "UTC +12:00", id: "33", value: "UTC +12:00" },
+        { text: "UTC +13:00", id: "34", value: "UTC +13:00" }
+    ]
+  {% endhighlight %}              
+
 #### Example - To set the dataSource with array of JSON object collection.
 
 {% highlight html %}
@@ -3369,15 +3493,27 @@ Sets the collection of timezone items to the dataSource that accepts either JSON
 
 Binds text field name in the dataSource to timeZoneCollection **text**. These text gets listed out in the timezone fields of the appointment window.
 
+#### Default Value
+
+* "text"
+
 ### timeZoneCollection.id `string`
 {:#members:timezonecollection-id }
 
-Binds id field name in the dataSource to timeZoneCollection **id**.  
+Binds id field name in the dataSource to timeZoneCollection **id**.
+
+#### Default Value
+
+* "id"  
 
 ### timeZoneCollection.value `string`
 {:#members:timezonecollection-value }
 
 Binds value field name in the dataSource to timeZoneCollection **value**.
+
+#### Default Value
+
+* "value"
 
 #### Example - To define the timeZoneCollection options by using all the above specified fields.
 
@@ -3413,7 +3549,6 @@ Binds value field name in the dataSource to timeZoneCollection **value**.
 </script>
 
 {% endhighlight %}
-
 
 ### views `array`
 {:#members:views }
@@ -3457,7 +3592,7 @@ Sets the width of the Schedule. Accepts both pixel and percentage values.
 
 #### Default Value
 
-* 100%
+* "100%"
 
 #### Example - To set the width of the Schedule in pixels.
 
@@ -3629,17 +3764,16 @@ You can customize the time column display based on the requirement.
 
 {% endhighlight %}
 
-
 ### firstDayOfWeek `string`
 {:#members:firstdayofweek}
 
-You can change or set the starting day of the week.
+Sets specific day as the starting day of the week.
 
 #### Default Value
 
 * null
 
-#### Example - To set Tuesday as starting day of the week.
+#### Example - To set Saturday as starting day of the week.
 
 {% highlight html %}
 
@@ -3649,7 +3783,7 @@ You can change or set the starting day of the week.
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
-                firstDayOfWeek:"Tuesday",
+                firstDayOfWeek:"Saturday",
             });
         });
 </script>
@@ -3659,13 +3793,13 @@ You can change or set the starting day of the week.
 ### workWeek `array`
 {:#members:workweek}
 
-You can set the workWeek days of the workWeek.
+Sets different day collection within workWeek view.
 
 #### Default Value
 
 * ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
-#### Example - To set Tuesday to Saturday as workWeek days of the workWeek.
+#### Example - To set Tuesday to Saturday as workWeek days.
 
 {% highlight html %}
 
@@ -3685,12 +3819,12 @@ You can set the workWeek days of the workWeek.
 ### tooltipSettings `object`
 {:#members:tooltipsettings}
 
-The tooltip allows to display appointment details in a tooltip while hovering on it.
+Allows to pop-up appointment details in a tooltip while hovering over the appointments.
 
 ### tooltipSettings.enable `boolean`
 {:#members:tooltipsettings-enable}
 
-To enable or disable the tooltip display.
+Enables or disables the tooltip display.
 
 #### Default Value
 
@@ -3706,8 +3840,8 @@ To enable or disable the tooltip display.
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
-                tooltipSettings:{
-                    enable:true
+                tooltipSettings: {
+                    enable: true
                 }
             });
         });
@@ -3718,7 +3852,7 @@ To enable or disable the tooltip display.
 ### tooltipSettings.templateId `string`
 {:#members:tooltipsettings-templateId}
 
-To customize the tooltip display based on your requirements.
+Template design that customizes the tooltip. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be accessed within the template.
 
 #### Default Value
 
@@ -3760,11 +3894,11 @@ Holds all the options related to the time scale of Scheduler. The timeslots eith
 ### timeScale.enable `boolean`
 {:#members:timescale-enable}
 
-When set to true, displays the timescale on the Scheduler.
+When set to true, displays the time slots on the Scheduler.
 
 #### Default Value
 
-* null
+* true
 
 #### Example – To display the timescale on Scheduler.
 
@@ -3817,7 +3951,7 @@ Accepts the value in minutes. When provided with specific value, displays the ap
 
 * 60
 
-#### Example – To set the specific major and minor slots for Scheduler. When majorTimeSlot is provided with the value 60 and minorTimeSlotCount is given as 2, then the Scheduler splits each hour into 2 timeslots with half an hour difference for each row, which means that 30 minutes time Interval is actually set to the Scheduler.
+#### Example – To set the specific major and minor slots for Scheduler. 
 
 {% highlight html %}
 
@@ -3851,10 +3985,12 @@ Accepts the value in minutes. When provided with specific value, displays the ap
 
 {% endhighlight %}
 
+N> When `majorTimeSlot` is provided with the value **60** and `minorTimeSlotCount` is given as **2**, then the Scheduler splits each hour into 2 timeslots with half an hour time difference for each row, which means that 30 minutes time interval is actually set to the Scheduler.
+
 ### timeScale.minorSlotTemplateId `string`
 {:#members:timescale-minorslottemplateid }
 
-Accepts id value of the template defined for minor time slots
+Template design that customizes the timecells (minor slots) that are partitioned based on minorSlotCount. Accepts id value of the template defined for minor time slots.
 
 #### Default Value
 
@@ -3863,8 +3999,7 @@ Accepts id value of the template defined for minor time slots
 ### timeScale.majorSlotTemplateId `string`
 {:#members:timescale-majorslottemplateid }
 
-Accepts id value of the template defined for major time slots.
-
+Template design that customizes the timecells (major slots). Accepts id value of the template defined for major time slots.
 
 #### Default Value
 
@@ -3959,13 +4094,13 @@ When set to true, shows the delete confirmation dialog before deleting an appoin
 ### allDayCellsTemplateId  `string`
 {:#members:alldaycellstemplateid}
 
-Accepts the id value of the template layout defined for the all-day cells.
+Accepts the id value of the template layout defined for the all-day cells and customizes it.
 
 #### Default Value
 
 * null
 
-#### Example - To display the customized allday cells.
+#### Example - To display the customized all-day cells.
 
 {% highlight html %}
 
@@ -3997,7 +4132,7 @@ Accepts the id value of the template layout defined for the work cells and month
 
 * null
 
-#### Example - To display the customized scheduler cells.
+#### Example - To display the customized Scheduler cells.
 
 {% highlight html %}
 
@@ -4023,7 +4158,7 @@ Accepts the id value of the template layout defined for the work cells and month
 ### dateHeaderTemplateId  `string`
 {:#members:dateheadertemplateid}
 
-Accepts the id value of the template layout defined for the date header cells.
+Accepts the id value of the template layout defined for the date header cells and customizes it.
 
 #### Default Value
 
@@ -4052,10 +4187,10 @@ Accepts the id value of the template layout defined for the date header cells.
 
 {% endhighlight %}
 
-### showOverflowButton  `boolean`
+### showOverflowButton `boolean`
 {:#members:showoverflowbutton}
 
-when set to false, allows the height of the work-cells to adjust automatically based on the number of appointment count it has. 
+when set to false, allows the height of the work-cells to adjust automatically (either expand or collapse) based on the number of appointment count it has. 
 
 #### Default Value
 
@@ -4186,10 +4321,9 @@ This method is used to delete the appointment based on the guid value or the app
     </tbody>
 </table>
 
-#### Using GUID Value
+#### Example - Using GUID Value
 
-The following code snippet explain how to delete an appointment by using the GUID while clicking the appointment
-
+The following code snippet explain how to delete an appointment by using the GUID, while clicking an appointment.
 
 {% highlight html %}
  
@@ -4216,7 +4350,6 @@ The following code snippet explain how to delete an appointment by using the GUI
         appointmentClick: "onAppointmentClick"
     });
 
-    //addAppointment is a function, gets called on clicking the Add button
     function onAppointmentClick(args) {
         var schObj = $("#schedule").data("ejSchedule");
         schObj.deleteAppointment(args.appointment.Guid);
@@ -4226,10 +4359,9 @@ The following code snippet explain how to delete an appointment by using the GUI
 
 {% endhighlight %}
 
-#### Using Appointent Object
+#### Example - Using Appointent Object
 
-The following code snippet explain how to delete an appointment by using appointment object while clicking the appointment
-
+The following code snippet explain how to delete an appointment by passing appointment object, while clicking an appointment.
 
 {% highlight html %}
  
@@ -4256,7 +4388,6 @@ The following code snippet explain how to delete an appointment by using appoint
         appointmentClick: "onAppointmentClick"
     });
 
-    //addAppointment is a function, gets called on clicking the Add button
     function onAppointmentClick(args) {
         var schObj = $("#schedule").data("ejSchedule");
         schObj.deleteAppointment(args.appointment);
@@ -4270,9 +4401,7 @@ The following code snippet explain how to delete an appointment by using appoint
 
 Destroys the Schedule widget. All the events bound using this._on are unbound automatically and the control is moved to pre-init state.
 
-
 #### Example
-
 
 {% highlight html %}
  
@@ -4287,7 +4416,6 @@ schObj.destroy(); // destroy the schedule
 </script>
 
 {% endhighlight %}
-
 
 ### exportSchedule(action, serverEvent, id)
 {:#methods:exportschedule}
@@ -4323,7 +4451,6 @@ Exports the appointments from the Schedule control.
 
 
 #### Example
-
 
 {% highlight html %}
  
@@ -4366,8 +4493,7 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 ### filterAppointments(filterConditions)
 {:#methods:filterappointments}
 
-
-Searches the appointments from appointment list of Schedule control.
+Searches and filters the appointments from appointment list of Schedule control.
 
 <table class="params">
     <thead>
@@ -4435,7 +4561,7 @@ var filter=[{
    value: "with",
    predicate: "or"
 }];
-var appointments=schObj.filterAppointments(filter); // Gets the appointments list of Schedule control
+var appointments=schObj.filterAppointments(filter); // filters the appointments list of Schedule control
 </script>
 
 {% endhighlight %}
@@ -4443,8 +4569,7 @@ var appointments=schObj.filterAppointments(filter); // Gets the appointments lis
 ### getAppointments()
 {:#methods:getappointments}
 
-
-Gets the appointment list of Schedule control.
+Gets the complete appointment list of Schedule control.
 
 #### Example
 
@@ -4493,15 +4618,29 @@ var appointments=schObj.getAppointments(); // Gets the appointments list of Sche
 
 {% endhighlight %}
 
-
-### print()
+### print(data)
 {:#methods:print}
 
+Prints the entire Scheduler or a single appointment based on the appointment data passed as an argument to it. Simply calling the print() method, without passing any argument will print the entire Scheduler. 
 
-Prints the Scheduler.
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">data</td>
+            <td class="type">object</td>
+            <td class="description">Either accepts no arguments at all or else accepts an appointment object.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Example
-
 
 {% highlight html %}
  
@@ -4538,20 +4677,27 @@ $('#Schedule').ejSchedule({
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
                     endTimeZone: "EndTimeZone"
-       }                            
+       },
+       appointmentClick: "onAppointmentClick"                            
   });
+  
+    function onAppointmentClick(args) {
+        var schObj = $("#Schedule").data("ejSchedule");
+        schObj.print(args.appointment); //Print specific appointment
+    }
+
+// Use the below 2 lines of code within any particular action like button click to print the entire Scheduler.     
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.print();
+schObj.print(); // Prints entire Scheduler with all appointments
+
 </script>
 
 {% endhighlight %}
 
-
 ### refreshScroller()
-
 {:#methods:refreshscroller}
 
-Refreshes the Scroller within Scheduler while using it with some other controls or application.
+Refreshes the Scroller of Scheduler while using it within some other controls or application.
 
 #### Example
 
@@ -4572,7 +4718,7 @@ schObj.refreshScroller(); // To refresh scroller while using Schedule control in
 
 {:#methods:saveappointment}
 
-It is used to save the appointment. The appointment obj is based on the argument passed along with this method.
+It is used to save the appointment. The appointment object is based on the argument passed to this method.
 
 <table class="params">
     <thead>
@@ -4640,7 +4786,6 @@ $('#Schedule').ejSchedule({
 
 {% endhighlight %}
 
-
 ### getSlotByElement(element)
 
 {:#methods:getslotbyelement}
@@ -4689,7 +4834,7 @@ $('#Schedule').ejSchedule();
 ### searchAppointments(searchString, field, operator, ignoreCase)
 {:#methods:searchappointments}
 
-Searches the appointments from the appointment list of Schedule control.
+Searches the appointments from the appointment list of Schedule control based on the provided search string in its argument list.
 
 <table class="params">
     <thead>
@@ -4768,7 +4913,7 @@ $('#Schedule').ejSchedule({
        }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
-var appointments=schObj.searchAppointments("with"); // Gets the appointments list of Schedule control
+var appointments=schObj.searchAppointments("with"); // Searches the appointments list of Schedule control for the appointments containing the word "with"
 </script>
 
 {% endhighlight %}
@@ -4776,7 +4921,7 @@ var appointments=schObj.searchAppointments("with"); // Gets the appointments lis
 ### refresh()
 {:#methods:refresh}
 
-To refresh the Schedule control.
+Refreshes the entire Schedule control.
 
 #### Example
 
@@ -4792,11 +4937,10 @@ schObj.refresh(); // To refresh the Schedule control within the client side even
 
 {% endhighlight %}
 
-
 ### refreshAppointment()
 {:#methods:refreshappointment}
 
-Refreshes only the appointments within the Schedule control.
+Refreshes only the appointment elements within the Schedule control.
 
 #### Example
 
@@ -4807,20 +4951,17 @@ Refreshes only the appointments within the Schedule control.
 <script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.refreshAppointment(); // To refresh the Schedule control within the client side event
+schObj.refreshAppointment(); // To refresh all the appointments within Scheduler
 </script>
 
 {% endhighlight %}
-
-
-
 
 ## Events
 
 ### actionBegin
 {:#events:actionbegin}
 
-Triggers before the action begin of the Schedule.
+Triggers on the beginning of every action that starts within the Schedule.
 
 <table class="params">
     <thead>
@@ -4933,7 +5074,7 @@ Triggers before the action begin of the Schedule.
         <tr>
             <td class="name">argument</td>
             <td class="type">object</td>
-            <td class="description">Event parameters when date change by calendar action starts:
+            <td class="description">Event parameters when date changed through Scheduler calendar:
             <table class="params">
                 <thead>
                     <tr>
@@ -5209,7 +5350,7 @@ $("#Schedule").ejSchedule({
 {:#events:actioncomplete}
 
 
-Triggers after the completion of action in the Schedule.
+Triggers after the completion of every action within the Schedule.
 
 <table class="params">
     <thead>
@@ -5307,7 +5448,7 @@ Triggers after the completion of action in the Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when date change by calendar action completes:
+        <td class="description">Event parameters when date change action through Scheduler calendar completes:
         <table class="params">
             <thead>
                 <tr>
@@ -5581,7 +5722,7 @@ $("#Schedule").ejSchedule({
 ### appointmentClick
 {:#events:appointmentclick}
 
-Triggers after the appointment is clicked.
+Triggers after an appointment is clicked.
 
 <table class="params">
     <thead>
@@ -5843,7 +5984,7 @@ $("#Schedule").ejSchedule({
 {:#events:appointmenthover}
 
 
-Triggers after the appointment is hovered.
+Triggers on hovering the mouse over the appointments.
 
 <table class="params">
     <thead>
@@ -5924,7 +6065,7 @@ $("#Schedule").ejSchedule({
 ### beforeAppointmentCreate
 {:#events:beforeappointmentcreate}
 
-Triggers before the appointment gets saved.
+Triggers before the new appointment gets saved.
 
 <table class="params">
     <thead>
@@ -6288,7 +6429,7 @@ $("#Schedule").ejSchedule({
 ### cellHover
 {:#events:cellhover}
 
-Triggers after the cell is hovered.
+Triggers on hovering the mouse overs the cells.
 
 <table class="params">
     <thead>
@@ -6617,7 +6758,7 @@ $("#Schedule").ejSchedule({
 {:#events:menuitemclick}
 
 
-Triggers after the context menu is clicked.
+Triggers after the menu/sub-menu items within the context menu is clicked.
 
 <table class="params">
     <thead>
@@ -6854,7 +6995,7 @@ $("#Schedule").ejSchedule({
 {% endhighlight %}
 
 ### queryCellInfo
-{:#events:queryCellInfo}
+{:#events:querycellinfo}
 
 Triggers every time before the elements of the scheduler such as work cells, time cells or header cells and so on renders or re-renders on a page.
 
@@ -6946,7 +7087,7 @@ Triggers every time before the elements of the scheduler such as work cells, tim
 ### reminder
 {:#events:reminder}
 
-Triggers when the reminder is raised for an appointment.
+Triggers when the reminder is raised for an appointment based on the `alertBefore` value.
 
 <table class="params">
     <thead>
@@ -7162,7 +7303,7 @@ $("#Schedule").ejSchedule({
 ### resizeStop
 {:#events:resizestop}
 
-Triggers when appointment resizing stops.
+Triggers when an appointment resizing stops.
 
 <table class="params">
     <thead>
@@ -7419,7 +7560,7 @@ $("#Schedule").ejSchedule({
 ### appointmentCreated
 {:#events:appointmentcreated}
 
-Triggers after the appointment is saved.
+Triggers after the new appointment is saved.
 
 <table class="params">
     <thead>
@@ -7474,7 +7615,7 @@ $("#Schedule").ejSchedule({
 {:#events:appointmentchanged}
 
 
-Triggers after the appointment is edited.
+Triggers after an existing appointment is edited.
 
 <table class="params">
     <thead>
