@@ -1,0 +1,48 @@
+---
+layout: post
+title: Summary-Type
+description: summary type
+platform: js
+control: PivotGrid
+documentation: ug
+---
+
+# Summary Type
+
+I> This feature is applicable only for Relational datasource only at Client Mode.
+
+Allow us to specify the required summary type that PivotGrid should use in its summary cells. “Sum” is the default summary type. Following are the summary types that are supported:
+
+* sum
+* average
+* count
+* minimum
+* maximum
+
+{% highlight js %}
+
+$(function () {
+    $("#PivotGrid1").ejPivotGrid({
+        dataSource: {
+            data: pivotData,
+            //……
+            values: [{
+                fieldName: "Amount",
+                fieldCaption: "Amount",
+                summaryType: ej.PivotAnalysis.SummaryType.Average
+            },
+            {
+                fieldName: "Quantity",
+                fieldCaption: "Quantity",
+                summaryType: ej.PivotAnalysis.SummaryType.Sum
+            }
+            ],
+            //……
+        },
+    });
+});
+{% endhighlight %}
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/purejssummarytype.png" %}
+
+

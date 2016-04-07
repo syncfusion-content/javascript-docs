@@ -20,3 +20,4 @@ Some of the key feature available in PivotGrid are listed below:
 5. Export: PivotGrid can be exported to Word, PDF, CSV and Excel documents.
 6. PivotGrid control specific features such as hyperlink, cell selection, conditional formatting, RTL, globalization and localization are supported as well.  
 
+

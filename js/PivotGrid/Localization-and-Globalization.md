@@ -32,7 +32,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../wcf/PivotGridService.svc",
+                 url: "../OLAPService",
                 locale: "fr-FR",
                 enableVirtualScrolling: true,
                 afterServiceInvoke: "onServiceInvoke",
@@ -377,11 +377,11 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../wcf/PivotGridService.svc",
+        url: "../OLAPService",
         enableRTL: true
     });
 });
@@ -389,3 +389,4 @@ $(function() {
 {% endhighlight %}
 
 ![](Localization-and-Globalization_images/rtl.png)
+
