@@ -9,15 +9,15 @@ documentation: ug
 
 # Defer Update
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
+I> This feature is applicable for OLAP datasource only at Server Mode.
 
-{% highlight javascript %}
+Defer Update support allows you to refresh the control only on-demand and not during every UI interaction. 
+
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../wcf/OLAPService.svc",
-        analysisMode: ej.PivotGrid.AnalysisMode.OlapAnalysis,
-        enableDeferUpdate: true,
+        url: "../OLAPService",
         afterServiceInvoke: "onServiceInvokes"
     });
 });
@@ -31,5 +31,6 @@ function onServiceInvokes(args) {
 
 {% endhighlight %}
 
-![](/js/PivotGrid/Defer-Update_images/defer.png) 
+![](/Defer-Update_images/defer.png) 
+
 

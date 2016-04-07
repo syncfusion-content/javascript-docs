@@ -24,7 +24,7 @@ Also hyperlink option provides separate event for row, column, value and summary
 * [`summaryCellHyperlinkClick`](/js/api/ejpivotgrid#events:summarycellhyperlinkclick) - Returns column header information through event on hyperlink click.
 * [`valueCellHyperlinkClick`](/js/api/ejpivotgrid#events:valuecellhyperlinkclick) - Returns value cell information through event on hyperlink click.
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -38,7 +38,7 @@ $(function() {
         rowHeaderHyperlinkClick: "CellClickEvent",
         columnHeaderHyperlinkClick: "CellClickEvent",
         summaryCellHyperlinkClick: "CellClickEvent",
-        url: "../wcf/PivotGridService.svc",
+       url: "../OLAPService",
         layout: ej.PivotGrid.Layout.Normal
     });
 
@@ -56,11 +56,11 @@ You can select a particular range of value cells from PivotGrid and manipulate/d
 
 The **"cellSelection"** event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../wcf/PivotGridService.svc",
+        url: "../OLAPService",
         enableCellSelection: true,
         cellSelection: "valueCellClick"
     });
@@ -82,11 +82,11 @@ Cell context allows user to perform any custom operation on cell right-click. Fo
 
 Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid#members:enablecellcontext) property to true. The **"cellContext"** event would be raised as soon as right-click is done providing cell information through event argument.
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../wcf/CellContextService.svc",
+       url: "../OLAPService",
         enableCellContext: true,
         cellContext: "cell_RightClick"
     });
@@ -115,7 +115,7 @@ Conditional formatting is enabled by setting `enableConditionalFormatting` prope
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../wcf/PivotGridService.svc",
+                url: "../OLAPService",
                 enableConditionalFormatting: true
             });
             $("#Button1").ejButton({
@@ -139,4 +139,5 @@ Conditional formatting is enabled by setting `enableConditionalFormatting` prope
 {% endhighlight %}
 
 ![](PivotGrid-Elements_images/conditional.png)
+
 

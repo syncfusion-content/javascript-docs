@@ -12,9 +12,11 @@ documentation: ug
 ##Initialization  
 Field List, also known as Pivot Schema Designer, allows user to add, rearrange, filter and remove fields to show data in PivotGrid exactly the way they want.
 
-Based on the datasource, OLAP or Relational, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names respectively. PivotTable Field List provides an Excel like appearance and behavior.
+Based on the datasource, OLAP, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
 
-In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **“ejPivotSchemaDesigner”** method. 
+In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **“ejPivotSchemaDesigner”** method.
+
+##Client Mode
 
 {% highlight html %}
 
@@ -23,17 +25,79 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 <body>
 
-    <!--Create a tag which acts as a container for PivotGrid-->
+<!--Create a tag which acts as a container for PivotGrid-->
     <div id="PivotGrid1" style="width: 55%; height: 670px; overflow: scroll; float: left;"></div>
 
-    <!--Create a tag which acts as a container for PivotTable Field List-->
+<!--Create a tag which acts as a container for PivotTable Field List-->
     <div id="PivotSchemaDesigner1" style="height:650px;width:40%;">
     </div>
 
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../wcf/PivotGridService.svc",
+                dataSource: {
+                    data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
+                    catalog: "Adventure Works DW 2008 SE",
+                    cube: "Adventure Works",
+                    rows: [{
+                        fieldName: "[Customer].[Customer Geography]"
+                    }],
+                    columns: [{
+                        fieldName: "[Date].[Fiscal]"
+                    }],
+                    values: [{
+                        measures: [{
+                            fieldName: "[Measures].[Internet Sales Amount]",
+                        }],
+                        axis: "columns"
+                    }]
+                },
+                renderSuccess: "RenderFieldList"
+            });
+        });
+
+        function RenderFieldList(args) {
+             //Initialize PivotTable Field List
+            $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+                pivotControl: args,
+                layout: ej.PivotSchemaDesigner.Layouts.Excel,
+                olap: {
+                    showKPI: false,
+                    showNamedSets: true
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>   
+
+{% endhighlight %}
+ 
+
+![](PivotTable-Field-List_images/olapclientfieldlsit.png)
+
+
+##Server Mode
+
+{% highlight html %}
+
+<html>
+//...
+
+<body>
+
+<!--Create a tag which acts as a container for PivotGrid-->
+    <div id="PivotGrid1" style="width: 55%; height: 670px; overflow: scroll; float: left;"></div>
+
+<!--Create a tag which acts as a container for PivotTable Field List-->
+    <div id="PivotSchemaDesigner1" style="height:650px;width:40%;"></div>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotGrid1").ejPivotGrid({
+                url: "../OLAPService",
                 afterServiceInvoke: "onServiceInvokes"
             });
         });
@@ -82,3 +146,5 @@ Values can be filtered by checking/unchecking the check box besides them, inside
 ![](PivotTable-Field-List_images/filterclick.png)
 
 ![](PivotTable-Field-List_images/filter.png)
+
+
