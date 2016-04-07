@@ -206,7 +206,7 @@ For demonstration purpose, [`Northwind OData service`](http://mvc.syncfusion.com
     <div id='Kanban'></div>
     <script>
         $(function() {
-                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/BetaServices/Northwnd.svc/Tasks");
+                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks");
                 $("#Kanban").ejKanban(
                 {
                     dataSource: dataManager,
@@ -239,7 +239,7 @@ In order to display cards in Kanban control, you need to map the database fields
     <div id='Kanban'></div>
         <script>
             $(function () {
-                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/BetaServices/Northwnd.svc/Tasks");
+                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks");
                 $("#Kanban").ejKanban(
                     {
                         dataSource: dataManager,
@@ -265,14 +265,14 @@ N> _`fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection
 
 ## Enable Swimlane
 
-`Swimlane` can be enabled by mapping the ` fields.swimlaneKey` to appropriate column name in `dataSource`. This enables the grouping of the cards based on the mapped column values.
+`Swimlane` can be enabled by mapping the `fields.swimlaneKey` to appropriate column name in `dataSource`. This enables the grouping of the cards based on the mapped column values.
 
 {% highlight html %}
 
     <div id='Kanban'></div>
         <script>
             $(function () {
-                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/BetaServices/Northwnd.svc/Tasks");
+                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks");
                 $("#Kanban").ejKanban(
                     {
                         dataSource: dataManager,
@@ -305,7 +305,7 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
     <div id='Kanban'></div>
         <script>
             $(function () {
-                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/BetaServices/Northwnd.svc/Tasks");
+                var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks");
     
                 $("#Kanban").ejKanban(
                     {
