@@ -67,7 +67,7 @@ To create a new web form in the application
    * Syncfusion.Pdf.Base
    * Syncfusion.XlsIO.Base
    * Syncfusion.DocIO.Base
-   * Synfusion.Shared.Wpf
+   * Syncfusion.Shared.Wpf
    * Syncfusion.Chart.Wpf
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf 
