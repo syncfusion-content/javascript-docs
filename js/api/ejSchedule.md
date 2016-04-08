@@ -4634,7 +4634,7 @@ Prints the entire Scheduler or a single appointment based on the appointment dat
     <tbody>
         <tr>
             <td class="name">data</td>
-            <td class="type">null|object</td>
+            <td class="type">object</td>
             <td class="description">Either accepts no arguments at all or else accepts an appointment object.</td>
         </tr>
     </tbody>
