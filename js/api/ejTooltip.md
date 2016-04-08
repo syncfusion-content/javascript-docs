@@ -7,10 +7,10 @@ platform: js
 keywords: Tooltip, ejTooltip, syncfusion, Tooltip api
 ---
 
-#ejTooltip
+# ejTooltip
 The Tooltip control will display a popup hint when the user hover/click/focus to the element. 
 
-####Syntax
+#### Syntax
 $(element).ejTooltip(options);
 
 <table class="params">
