@@ -8135,6 +8135,53 @@ $("#diagramcontent").ejDiagram({
 </script>
 {% endhighlight %}
 
+
+### pageSettings.boundaryConstraints `enum`
+{:#members:pagesettings-boundaryconstraints}
+
+<ts name = "ej.datavisualization.Diagram.BoundaryConstraints"/>
+
+Defines the draggable region of diagram elements.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Infinity</td>
+            <td class="description last">Used to set boundaryConstraints as Infinity</td>
+       </tr>
+        <tr>
+            <td class="name">Diagram</td>
+            <td class="description last">Used to set boundaryConstraints as Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Page</td>
+            <td class="description last">Used to set boundaryConstraints as Page</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BoundaryConstraints.Infinity
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({
+    pageSettings:{ boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Diagram }
+});
+</script>
+{% endhighlight %}
+
 ### pageSettings.showPageBreak `Boolean`
 {:#members:pagesettings-showpagebreak}
 
