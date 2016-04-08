@@ -22,10 +22,6 @@ $(element).ejTile()
 
 {% endhighlight %}
 
-
-
-
-
 #### Example
 
 
@@ -65,61 +61,22 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 ## Members
 
 
-
-
-
-
-
-
 ### badge `object`
 {:#members:badge}
 
 
-
-
-
-
-
-
 Section for badge specific functionalities and it represents the notification for tile items.
-
-
-
-
-
-
-
 
 ### badge.enabled `boolean`
 {:#members:badge-enabled}
 
 
-
-
-
-
-
-
 Specifies whether to enable badge or not.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * false
-
-
-
-
-
-
 
 
 #### Example
@@ -141,49 +98,25 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 
 {% highlight html %}
  
+ <script>
 //Get or set the enabled, after initialization:
 // Get the enabled API value.
  $("#tile").ejTile("option", "badge.enabled");                  
 // Set the enabled API
-$("#tile").ejTile("option", "badge.enabled", true);          
+$("#tile").ejTile("option", "badge.enabled", true);  
+</script>        
   {% endhighlight %}
-
-
-
-
-
-
 
 ### badge.maxValue `number`
 {:#members:badge-maxvalue}
 
 
-
-
-
-
-
-
 Specifies maximum value for tile badge.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * 100
-
-
-
-
-
-
 
 
 #### Example
@@ -202,52 +135,26 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the maxValue, after initialization:
 // Get the maxValue API value.
  $("#tile").ejTile("option", "badge.maxValue");                 
 // Set the maxValue API
 $("#tile").ejTile("option", "badge.maxValue", 3);           
-
+</script>
  {% endhighlight %}
-
-
-
-
-
 
 
 ### badge.minValue `number`
 {:#members:badge-minvalue}
 
 
-
-
-
-
-
-
 Specifies minimum value for tile badge.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * 1
-
-
-
-
-
-
-
 
 #### Example
 
@@ -265,51 +172,25 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the minValue, after initialization:
 // Get the minValue API value.
  $("#tile").ejTile("option", "badge.minValue");                 
 // Set the minValue API
 $("#tile").ejTile("option", "badge.minValue", 5);           
-
+</script>
  {% endhighlight %}
-
-
-
-
-
 
 
 ### badge.text `string`
 {:#members:badge-text}
 
-
-
-
-
-
-
-
 Specifies text instead of number for tile badge.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * null
-
-
-
-
-
-
 
 
 #### Example
@@ -329,55 +210,29 @@ $("#tile").ejTile({imageUrl: "themes/sample/tile/people.png", badge: { enabled: 
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the badge text, after initialization:
 // Get the badge text API value.
  $("#tile").ejTile("option", "badge.text");                     
 // Set the badge text API
-$("#tile").ejTile("option", "badge.text", "ten");            
+$("#tile").ejTile("option", "badge.text", "ten"); 
+</script>           
 {% endhighlight %}
-
-
-
-
-
 
 
 ### badge.value `number`
 {:#members:badge-value}
 
 
-
-
-
-
-
-
 Sets value for tile badge.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * 1
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -391,30 +246,22 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the value, after initialization:
 // Get the value API value.
  $("#tile").ejTile("option", "badge.value");                    
 // Set the value API
-$("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "badge.value", 5); 
+</script>           {% endhighlight %}
 
 
 ### badge.position `enum`
 {:#members:badge-position}
 
 
-<ts name = "ej.Tile.BadgePosition"/>
-
-
-
+<ts name = "ej.Tile.badge-position"/>
 
 Sets position for tile badge.
-
 
 
 <table class="params">
@@ -433,40 +280,23 @@ topright</td>
 <tr>
 <td class="name">
 bottomright</td>
-<td class="description">To set the bottomright of tile image</td>
+<td class="description">To set the bottomright of tile badge</td>
 </tr>
 </tbody>
 </table>
 
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
  * “bottomright”
  
  
+#### Example
  
- 
- 
- 
- 
- 
- #### Example
- 
-
-
 {% highlight html %}
  
-// Set value on initialization. 
-// To set value API value 
+// Set position on initialization. 
+// To set position API value 
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
@@ -475,50 +305,274 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 
 
 {% highlight html %}
- 
-//Get or set the value, after initialization:
-// Get the value API value.
+<script>
+//Get or set the position, after initialization:
+// Get the position API value.
  $("#tile").ejTile("option", "badge.position");                    
-// Set the value API
-$("#tile").ejTile("option", "badge.position","bottomright");            {% endhighlight %}
+// Set the position API
+$("#tile").ejTile("option", "badge.position","bottomright"); </script>           {% endhighlight %}
+
+
+### caption `object`
+{:#members:caption}
+
+
+Section for caption specific functionalities and it represents the notification for tile items.
+
+### caption.enabled `boolean`
+{:#members:caption-enabled}
+
+Specifies whether the tile text to be shown or hidden.
+
+
+#### Default Value
+
+
+* true
+
+#### Example
 
 
 
+{% highlight html %}
+ 
+// Set enabled on initialization. 
+// To set enabled API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption: { enabled: true},tileSize:'medium'}); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+//Get or set the enabled, after initialization:
+// Get the enabled API value.
+ $("#tile").ejTile("option", "caption.enabled");                       
+// Set the enabled API
+$("#tile").ejTile("option", "caption.enabled", false);</script>            {% endhighlight %}
+
+
+### caption.text `string`
+{:#members:caption-text}
+
+Changes the text of a tile.
+
+
+#### Default Value
+
+
+* "Text"
+
+#### Example
 
 
 
+{% highlight html %}
+ 
+// Set text on initialization. 
+// To set text API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{text:"Settings"},tileSize:'medium'}); 
+</script>{% endhighlight %}
 
-### captionTemplateId `string`
-{:#members:captiontemplateid}
+
+{% highlight html %}
+<script>
+//Get or set the text, after initialization:
+// Get the text API value.
+ $("#tile").ejTile("option", "caption.text");                   
+// Set the text API
+$("#tile").ejTile("option", "caption.text", "Settings");</script>           {% endhighlight %}
 
 
+### caption.alignment `enum`
+{:#members:caption-alignment}
 
 
+<ts name = "ej.Tile.caption-alignment"/>
 
 
+It is used to align the text of a tile.
 
 
-Specifies the tile caption in outside of template content.
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="description">To set the normal alignment of text in tile control</td>
+</tr>
+<tr>
+<td class="name">
+Left</td>
+<td class="description">To set the left alignment of text in tile control</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="description">To set the right alignment of text in tile control</td>
+</tr>
+<tr>
+<td class="name">
+Center</td>
+<td class="description">To set the center alignment of text in tile control</td>
+</tr>
+</tbody>
+</table>
 
 
 
 #### Default Value
 
 
+* "normal"
+
+#### Example
 
 
 
+{% highlight html %}
+ 
+// Set alignment on initialization. 
+// To set alignment API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{alignment:"left"},tileSize:'medium' }); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+//Get or set the alignment, after initialization:
+// Get the alignment API value.
+ $("#tile").ejTile("option", "caption.alignment");                  
+// Set the alignment API
+$("#tile").ejTile("option", "caption.alignment", "left");</script>           {% endhighlight %}
+
+
+### caption.position `enum`
+{:#members:caption-position}
+
+
+<ts name = "ej.Tile.caption-position"/>
+
+It is used to specify the caption position like innertop,  innerbottom and outer.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Innertop</td>
+<td class="description">To set the innertop position of the tile text</td>
+</tr>
+<tr>
+<td class="name">
+Innerbottom</td>
+<td class="description">To set the innerbottom position of the tile text</td>
+</tr>
+<tr>
+<td class="name">
+Outer</td>
+<td class="description">To set the outer position of the tile text</td>
+</tr>
+</tbody>
+</table>
+
+ 
+#### Default Value
+
+
+* "Innerbottom"
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+// Set position on initialization. 
+// To set position API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{position:"innerbottom"},tileSize:'medium' }); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+//Get or set the position, after initialization:
+// Get the position API value.
+ $("#tile").ejTile("option", "caption.position");                  
+// Set the position API
+$("#tile").ejTile("option", "caption.position", "innerbottom");</script>            {% endhighlight %}
+
+### caption.icon `string`
+{:#members:caption-icon}
+
+
+sets the icon instead of text.
+
+#### Default Value
 
 
 * null
 
 
+#### Example
 
 
 
+{% highlight html %}
+ 
+// Set icon on initialization. 
+// To set icon API value 
+<div id="tile" ></div>
+<script> 
+// Create Tile control 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{icon:'e-icon-images'},tileSize:'medium'}); 
+</script>{% endhighlight %}
 
 
+{% highlight html %}
+<script>
+//Get or set the icon, after initialization:
+// Get the icon API value.
+ $("#tile").ejTile("option", "caption.icon");                      
+// Set the liveTile imageUrl API
+$("#tile").ejTile("option", "caption.icon",);</script>  {% endhighlight %}
+
+### captionTemplateId[Deprecated] `string`
+{:#members:captiontemplateid}
+
+
+Specifies the tile caption in outside of template content.
+
+N>Since it is deprecated.
+
+
+#### Default Value
+
+* null
 
 #### Example
 
@@ -538,50 +592,23 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", captionTemplateId
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the captionTemplateId, after initialization:
 // Get the captionTemplateId API value.
  $("#tile").ejTile("option", "captionTemplateId");                      
 // Set the captionTemplateId API
-$("#tile").ejTile("option", "captionTemplateId", "sample");            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "captionTemplateId", "sample");</script>            {% endhighlight %}
 
 
 ### cssClass `string`
 {:#members:cssclass}
 
 
-
-
-
-
-
-
 Sets the root class for Tile theme. This cssClass API helps to use custom skinning option for Tile control. By defining the root class using this API, we need to include this root class in CSS.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * ""
-
-
-
-
-
-
-
 
 #### Example
 
@@ -599,49 +626,25 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", cssClass:"customc
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the cssClass, after initialization:
 // Get the cssClass API value.
  $("#tile").ejTile("option", "cssClass");                       
 // Set the cssClass API
-$("#tile").ejTile("option", "cssClass", "customclass");            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "cssClass", "customclass");</script>           {% endhighlight %}
 
 
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
-
-
-
-
-
-
 Saves current model value to browser cookies for state maintains. While refreshing the page retains the model value applies from browser cookies.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * false
-
-
-
-
-
-
 
 
 #### Example
@@ -660,28 +663,16 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", enablePersistence
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the enablePersistence, after initialization:
 // Get the enablePersistence API value.
  $("#tile").ejTile("option", "enablePersistence");                      
 // Set the enablePersistence API
-$("#tile").ejTile("option", "enablePersistence", true);            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "enablePersistence", true);</script>            {% endhighlight %}
 
 
 ### height `number`
 {:#members:height}
-
-
-
-
-
-
-
 
 Customize the tile size height.
 
@@ -690,20 +681,7 @@ Customize the tile size height.
 
 #### Default Value
 
-
-
-
-
-
-
-* "null"
-
-
-
-
-
-
-
+* null
 
 #### Example
 
@@ -721,49 +699,24 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", width:300, height
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the height, after initialization:
 // Get the height API value.
  $("#tile").ejTile("option", "height");                 
 // Set the width API
-$("#tile").ejTile("option", "height", 300);            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "height", 300);</script>            {% endhighlight %}
 
 
 ### imageClass `string`
 {:#members:imageclass}
 
 
-
-
-
-
-
-
-Specifies Tile imageClass, using this property we can give images for each tile through css classes.
-
-
-
+Specifies Tile imageclass, using this property we can give images for each tile through css classes.
 
 #### Default Value
 
 
-
-
-
-
-
 * null
-
-
-
-
-
-
 
 
 #### Example
@@ -788,18 +741,13 @@ background-image:url("themes/sample/tile/people.png");
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the imageClass, after initialization:
 // Get the imageClass API value.
  $("#tile").ejTile("option", "imageClass");                     
 // Set the imageClass API
-$("#tile").ejTile("option", "imageClass", "sample");           
+$("#tile").ejTile("option", "imageClass", "sample"); </script>          
  {% endhighlight %}
-
-
-
-
-
 
 
 ### imagePosition `enum`
@@ -808,14 +756,7 @@ $("#tile").ejTile("option", "imageClass", "sample");
 
 <ts name = "ej.Tile.ImagePosition"/>
 
-
-
-
-
-
-
-
-Specifies the position of tile image. See imagePosition
+Specifies the position of tile image.
 
 
 <table class="params">
@@ -879,25 +820,9 @@ Fill</td>
 </tbody>
 </table>
 
-
-
-
-
 #### Default Value
 
-
-
-
-
-
-
 * "center"
-
-
-
-
-
-
 
 
 #### Example
@@ -916,50 +841,25 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", imagePosition: "r
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the imagePosition, after initialization:
 // Get the imagePosition API value.
  $("#tile").ejTile("option", "imagePosition");                  
 // Set the imagePosition API
-$("#tile").ejTile("option", "imagePosition", "right");            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "imagePosition", "right");</script>            {% endhighlight %}
 
 
 ### imageTemplateId `string`
 {:#members:imagetemplateid}
 
 
-
-
-
-
-
-
 Specifies the tile image in outside of template content.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * null
-
-
-
-
-
-
-
 
 #### Example
 
@@ -979,50 +879,23 @@ $("#tile").ejTile({ imageTemplateId: "sample" });
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the imageTemplateId, after initialization:
 // Get the imageTemplateId API value.
  $("#tile").ejTile("option", "imageTemplateId");                        
 // Set the imageTemplateId API
-$("#tile").ejTile("option", "imageTemplateId", "sample");            {% endhighlight %}
-
-
-
-
-
-
+$("#tile").ejTile("option", "imageTemplateId", "sample");</script>            {% endhighlight %}
 
 ### imageUrl `string`
 {:#members:imageurl}
 
-
-
-
-
-
-
-
 Specifies the url of tile image.
-
-
-
 
 #### Default Value
 
 
 
-
-
-
-
 * null
-
-
-
-
-
-
-
 
 #### Example
 
@@ -1040,50 +913,23 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png"});
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the imageUrl, after initialization:
 // Get the imageUrl API value.
  $("#tile").ejTile("option", "imageUrl");                       
 // Set the imageUrl API
-$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");            
+$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png"); </script>           
 {% endhighlight %}
-
-
-
-
-
 
 
 ### livetile `object`
 {:#members:livetile}
 
 
-
-
-
-
-
-
 Section for livetile specific functionalities.
-
-
-
-
-
-
-
-
-
-
 
 ### livetile.enabled `boolean`
 {:#members:livetile-enabled}
-
-
-
-
-
-
 
 
 Specifies whether to enable livetile or not.
@@ -1093,19 +939,7 @@ Specifies whether to enable livetile or not.
 
 #### Default Value
 
-
-
-
-
-
-
 * false
-
-
-
-
-
-
 
 
 #### Example
@@ -1124,50 +958,26 @@ $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageUrl:['
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the liveTile enabled, after initialization:
 // Get the liveTile enabled API value.
  $("#tile").ejTile("option", "liveTile.enabled");                       
 // Set the liveTile enabled API
-$("#tile").ejTile("option", "liveTile.enabled", true);           
+$("#tile").ejTile("option", "liveTile.enabled", true); </script>          
  {% endhighlight %}
-
-
-
-
-
 
 
 ### livetile.imageClass `string`
 {:#members:livetile-imageclass}
 
 
-
-
-
-
-
-
 Specifies liveTile images in css classes.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * null
-
-
-
-
-
-
 
 
 #### Example
@@ -1200,55 +1010,28 @@ background-image:url("themes/sample/tile/people_1.png");
 
 
 {% highlight html %}
- 
+<script> 
 //Get or set the liveTile imageClass, after initialization:
 // Get the liveTile imageClass API value.
  $("#tile").ejTile("option", "liveTile.imageClass");                    
 // Set the liveTile imageClass API
-$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);           
+$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);</script>          
  {% endhighlight %}
-
-
-
-
-
 
 
 ### livetile.imageTemplateId `string`
 {:#members:livetile-imagetemplateid}
 
 
-
-
-
-
-
-
 Specifies liveTile images in templates.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * null
 
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1268,50 +1051,25 @@ $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageTempla
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the liveTile imageTemplateId, after initialization:
 // Get the liveTile imageTemplateId API value.
  $("#tile").ejTile("option", "liveTile.imageTemplateId");                       
 // Set the liveTile imageTemplateId API
-$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);         
+$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']); </script>       
    {% endhighlight %}
-
-
-
-
-
 
 
 ### livetile.imageUrl `string`
 {:#members:livetile-imageurl}
 
 
-
-
-
-
-
-
 Specifies liveTile images in css classes.
-
-
-
 
 #### Default Value
 
 
-
-
-
-
-
 * null
-
-
-
-
-
-
 
 
 #### Example
@@ -1330,17 +1088,12 @@ $("#tile").ejTile({ renderMode: "windows", livetile: { enabled: true, imageUrl: 
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the liveTile imageUrl, after initialization:
 // Get the liveTile imageUrl API value.
  $("#tile").ejTile("option", "liveTile.imageUrl");                      
 // Set the liveTile imageUrl API
-$("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png']);            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png']);</script>           {% endhighlight %}
 
 
 ### livetile.type `enum`
@@ -1348,13 +1101,6 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 
 
 <ts name = "ej.Tile.LiveTileType"/>
-
-
-
-
-
-
-
 
 Specifies liveTile type for Tile. See orientation
 
@@ -1384,26 +1130,10 @@ Carousel</td>
 </tr>
 </tbody>
 </table>
- 
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * "flip"
-
-
-
-
-
-
 
 
 #### Example
@@ -1422,17 +1152,12 @@ $("#tile").ejTile({ renderMode: "windows", liveTile: { enabled: true, imageUrl: 
 
 
 {% highlight html %}
- 
+<script> 
 //Get or set the liveTile type, after initialization:
 // Get the liveTile type API value.
  $("#tile").ejTile("option", "liveTile.type");                  
 // Set the liveTile type API
-$("#tile").ejTile("option", "liveTile.type", "carousel");            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "liveTile.type", "carousel");</script>            {% endhighlight %}
 
 
 ### livetile.updateInterval `number`
@@ -1440,31 +1165,13 @@ $("#tile").ejTile("option", "liveTile.type", "carousel");            {% endhighl
 
 
 
-
-
-
-
-
 Specifies time interval between two successive livetile animation
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * 2000
-
-
-
-
-
-
 
 
 #### Example
@@ -1483,16 +1190,12 @@ $("#tile").ejTile({renderMode: "windows", liveTile: { enabled: true, imageUrl: [
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the liveTile updateInterval, after initialization:
 // Get the liveTile updateInterval API value.
  $("#tile").ejTile("option", "liveTile.updateInterval");                        
 // Set the liveTile updateInterval API
-$("#tile").ejTile("option", "liveTile.updateInterval", 1000);            {% endhighlight %}
-
-
-
-
+$("#tile").ejTile("option", "liveTile.updateInterval", 1000);</script>            {% endhighlight %}
 
 
 
@@ -1500,36 +1203,15 @@ $("#tile").ejTile("option", "liveTile.updateInterval", 1000);            {% endh
 {:#members:livetile-text}
 
 
-
-
-
-
-
-
 Sets the text to each living tile
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * Null
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1544,28 +1226,16 @@ $("#tile").ejTile({renderMode: "windows", liveTile: { enabled: true, imageUrl: [
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the liveTile text, after initialization:
 // Get the liveTile text API value.
  $("#tile").ejTile("option", "liveTile.text");                        
 // Set the liveTile text API
-$("#tile").ejTile("option", "liveTile.text", 1000);            {% endhighlight %}
+$("#tile").ejTile("option", "liveTile.text", 1000);</script>           {% endhighlight %}
 
 
-
-
-
-
-
-### showText `boolean`
+### showText[Deprecated] `boolean`
 {:#members:showtext}
-
-
-
-
-
-
-
 
 Specifies whether the tile text to be shown or hidden.
 
@@ -1575,19 +1245,7 @@ N>Since it is deprecated we suggest to use the API “[caption-enabled](#members
 #### Default Value
 
 
-
-
-
-
-
 * true
-
-
-
-
-
-
-
 
 #### Example
 
@@ -1600,33 +1258,21 @@ N>Since it is deprecated we suggest to use the API “[caption-enabled](#members
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption: { enabled: true},tileSize:'medium'}); 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", showText:true}); 
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
+<script> 
 //Get or set the showText, after initialization:
 // Get the showText API value.
- $("#tile").ejTile("option", "caption-enabled");                       
+ $("#tile").ejTile("option", "showText");                       
 // Set the showText API
-$("#tile").ejTile("option", "caption-enabled", false);            {% endhighlight %}
+$("#tile").ejTile("option", "showText", false);</script>            {% endhighlight %}
 
 
-
-
-
-
-
-
-### text `string`
+### text[Deprecated] `string`
 {:#members:text}
-
-
-
-
-
-
 
 
 Changes the text of a tile.
@@ -1637,18 +1283,7 @@ N>Since it is deprecated we suggest to use the API “[caption-text](#members:ca
 #### Default Value
 
 
-
-
-
-
-
 * "Text"
-
-
-
-
-
-
 
 
 #### Example
@@ -1662,38 +1297,27 @@ N>Since it is deprecated we suggest to use the API “[caption-text](#members:ca
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{text:"Settings"},tileSize:'medium'}); 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", text:"Settings"}); 
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the text, after initialization:
 // Get the text API value.
- $("#tile").ejTile("option", "caption-text");                   
+ $("#tile").ejTile("option", "text");                   
 // Set the text API
-$("#tile").ejTile("option", "caption-text", "Settings");            {% endhighlight %}
+$("#tile").ejTile("option", "text", "Settings"); </script>          {% endhighlight %}
 
 
-
-
-
-
-
-### textAlignment `enum`
+### textAlignment[Deprecated] `enum`
 {:#members:textalignment}
 
 
 <ts name = "ej.Tile.TextAlignment"/>
 
 
-
-
-
-
-
-
-Aligns the text of a tile. See textAlignment
+It is used to align the text of a tile.
 
 
 <table class="params">
@@ -1707,47 +1331,35 @@ Aligns the text of a tile. See textAlignment
 <tr>
 <td class="name">
 Normal</td>
-<td class="description">To set the normal alignment of text for tile control</td>
+<td class="description">To set the normal alignment of text in tile control</td>
 </tr>
 <tr>
 <td class="name">
 Left</td>
-<td class="description">To set the left alignment of text for tile control</td>
+<td class="description">To set the left alignment of text in tile control</td>
 </tr>
 <tr>
 <td class="name">
 Right</td>
-<td class="description">To set the right alignment of text for tile control</td>
+<td class="description">To set the right alignment of text in tile control</td>
 </tr>
 <tr>
 <td class="name">
 Center</td>
-<td class="description">To set the center alignment of text for tile control</td>
+<td class="description">To set the center alignment of text in tile control</td>
 </tr>
 </tbody>
 </table>
 
- N>Since it is deprecated we suggest to use the API “[caption-alignment](#members:caption-alignment)”.
-
+ 
+N>Since it is deprecated we suggest to use the API “[caption-alignment](#members:caption-alignment)”.
 
 
 
 #### Default Value
 
 
-
-
-
-
-
 * "normal"
-
-
-
-
-
-
-
 
 #### Example
 
@@ -1760,177 +1372,17 @@ Center</td>
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{alignment:"left"},tileSize:'medium' }); 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", textAlignment:"left" }); 
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the textAlignment, after initialization:
 // Get the textAlignment API value.
- $("#tile").ejTile("option", "caption-alignment");                  
+ $("#tile").ejTile("option", "textAlignment");                  
 // Set the textAlignment API
-$("#tile").ejTile("option", "caption-alignment", "left");            {% endhighlight %}
-
-
-
-
-
-
-### caption.position `enum`
-{:#members:caption-position}
-
-
-
-<ts name = "ej.Tile.TextPosition"/>
-
-
-
-
-
-
-
-
-Position of the text for tile control. See textPosition
-
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Innertop</td>
-<td class="description">To set the innertop position of the tile text</td>
-</tr>
-<tr>
-<td class="name">
-Innerbottom</td>
-<td class="description">To set the innerbottom position of the tile text</td>
-</tr>
-<tr>
-<td class="name">
-Outer</td>
-<td class="description">To set the outer position of the tile text</td>
-</tr>
-</tbody>
-</table>
-
- 
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-
-* "Innerbottom"
-
-
-
-
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-// Set textPosition on initialization. 
-// To set textPosition API value 
-<div id="tile" ></div>
-<script> 
-// Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{position:"innerbottom"},tileSize:'medium' }); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the textPosition, after initialization:
-// Get the textPosition API value.
- $("#tile").ejTile("option", "caption-position");                  
-// Set the textPosition API
-$("#tile").ejTile("option", "caption-position", "innerbottom");            {% endhighlight %}
-
-
-
-
-
-
-
-### caption.icon `string`
-{:#members:caption-icon}
-
-
-
-
-
-
-
-
-sets the icon instead of text.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-// Set icon on initialization. 
-// To set caption icon API value 
-<div id="tile" ></div>
-<script> 
-// Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", caption:{icon:'e-icon-images'},tileSize:'medium'}); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the caption icon, after initialization:
-// Get the caption icon API value.
- $("#tile").ejTile("option", "caption-icon");                      
-// Set the liveTile imageUrl API
-$("#tile").ejTile("option", "caption-icon",);  {% endhighlight %}
-
-
-
-
-
-
+$("#tile").ejTile("option", "textAlignment", "left");</script>          {% endhighlight %}
 
 ### tileSize `enum`
 {:#members:tilesize}
@@ -1938,13 +1390,7 @@ $("#tile").ejTile("option", "caption-icon",);  {% endhighlight %}
 
 <ts name = "ej.Tile.TileSize"/>
 
-
-
-
-
-
-
-Specifies the size of a tile.  See tileSize
+Specifies the size of a tile.  See tilesize
 
 
 <table class="params">
@@ -1978,24 +1424,9 @@ Wide</td>
 </tbody>
 </table>
 
-
-
-
 #### Default Value
 
-
-
-
-
-
-
 * "small"
-
-
-
-
-
-
 
 
 #### Example
@@ -2014,50 +1445,22 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", tileSize:"medium"
 
 
 {% highlight html %}
- 
+<script> 
 //Get or set the tileSize, after initialization:
 // Get the tileSize API value.
  $("#tile").ejTile("option", "tileSize");                       
 // Set the tileSize API
-$("#tile").ejTile("option", "tileSize", "medium");            {% endhighlight %}
-
-
-
-
-
-
+$("#tile").ejTile("option", "tileSize", "medium");</script>            {% endhighlight %}
 
 ### width `number`
 {:#members:width}
 
-
-
-
-
-
-
-
 Customize the tile size width.
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
-* "null"
-
-
-
-
-
-
-
+* null
 
 #### Example
 
@@ -2075,53 +1478,24 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", width:300,height:
 
 
 {% highlight html %}
- 
+<script> 
 //Get or set the width, after initialization:
 // Get the width API value.
  $("#tile").ejTile("option", "width");                  
 // Set the width API
-$("#tile").ejTile("option", "width", 300);            {% endhighlight %}
-
-
-
-
-
+$("#tile").ejTile("option", "width", 300);</script>            {% endhighlight %}
 
 
 ### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
-
-
-
-
-
-
-
 Sets the rounded corner to  tile.
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * false
 
-
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -2136,53 +1510,26 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png",showRoundedCorner:
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the showRoundedCorner, after initialization:
 // Get the showRoundedCorner API value.
  $("#tile").ejTile("option", "showRoundedCorner");                       
 // Set the showRoundedCorner API
-$("#tile").ejTile("option", "showRoundedCorner", false);            {% endhighlight %}
-
-
-
+$("#tile").ejTile("option", "showRoundedCorner", false);</script>           {% endhighlight %}
 
 
 
 ### allowSelection `boolean`
-{:#members:allowSelection}
-
-
-
-
-
-
+{:#members:allowselection}
 
 
 Sets allowSelection to  tile.
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * false
 
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2196,52 +1543,26 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png",allowSelection:tru
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the allowSelection, after initialization:
 // Get the allowSelection API value.
  $("#tile").ejTile("option", "allowSelection");                       
 // Set the allowSelection API
-$("#tile").ejTile("option", "allowSelection", false);            {% endhighlight %}
-
-
-
-
+$("#tile").ejTile("option", "allowSelection", false);</script>           {% endhighlight %}
 
 
 ### backgroundColor `string`
 {:#members:backgroundcolor}
 
 
-
-
-
-
-
-
 Sets the background color to  tile.
-
-
-
 
 #### Default Value
 
 
-
-
-
-
-
 * false
 
-
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -2256,23 +1577,15 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png",backgroundColor:"#
 
 
 {% highlight html %}
- 
+<script>
 //Get or set the backgroundColor, after initialization:
 // Get the backgroundColor API value.
  $("#tile").ejTile("option", "backgroundColor");                       
 // Set the backgroundColor API
-$("#tile").ejTile("option", "backgroundColor","#ffffff");            {% endhighlight %}
-
-
-
+$("#tile").ejTile("option", "backgroundColor","#ffffff");</script>           {% endhighlight %}
 
 
 ## Methods
-
-
-
-
-
 
 
 
@@ -2281,13 +1594,7 @@ $("#tile").ejTile("option", "backgroundColor","#ffffff");            {% endhighl
 
 
 
-
-
-
-
-
 Update the image template of tile item to another one.
-
 
 
 <table class="params">
@@ -2332,28 +1639,14 @@ value.updateTemplate("sample2");
 
 
 
-
-
 ## Events
-
-
-
-
-
-
 
 
 ### mouseDown
 {:#events:mousedown}
 
 
-
-
-
-
-
-
-Event triggers when the mouse down happens in the tile
+Event triggers when the mousedown happens in the tile
 
 <table class="params">
 <thead>
@@ -2416,10 +1709,7 @@ index</td>
 </table>
 
 
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -2438,21 +1728,12 @@ mouseDown: function (args) {
 
 
 
-
-
-
-
 ### mouseUp
 {:#events:mouseup}
 
 
 
-
-
-
-
-
-Event triggers when the mouse up happens in the tile
+Event triggers when the mouseup happens in the tile
 
 <table class="params">
 <thead>
@@ -2515,10 +1796,7 @@ index</td>
 </table>
 
 
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -2534,7 +1812,6 @@ mouseUp: function (args) {
 }
 }); 
 </script>{% endhighlight %}
-
 
 
 
