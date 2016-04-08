@@ -30,7 +30,7 @@ $(element).ejTooltip(options);
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
