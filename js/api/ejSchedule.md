@@ -181,11 +181,11 @@ It includes the dataSource option and the fields related to Schedule appointment
 ### appointmentSettings.dataSource `object|Array`
 {:#members:appointmentsettings-datasource}
 
+The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance that contains Schedule appointments.
+
 #### Default Value
 
 * []
-
-The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance that contains Schedule appointments.
 
 #### Example - To set the dataSource with array of JSON object collection.
 
@@ -246,11 +246,11 @@ The dataSource option accepts either JSON object collection or DataManager ([ej.
 ### appointmentSettings.query `string`
 {:#members:appointmentsettings-query}
 
+It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
+
 #### Default Value
 
 * null
-
-It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
 
 #### Example - To query the datamanager to fetch specific record count from the Events table.
 
@@ -283,11 +283,11 @@ It holds either the ej.Query() object or simply the query string that retrieves 
 ### appointmentSettings.tableName `string`
 {:#members:appointmentsettings-tablename}
 
+Assign the table name from where the records are to be fetched for the Schedule.
+
 #### Default Value
 
 * null
-
-Assign the table name from where the records are to be fetched for the Schedule.
 
 #### Example - Using tableName property to fetch all the records directly from it.
 
