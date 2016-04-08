@@ -7,16 +7,16 @@ control: PivotGrid
 documentation: ug
 ---
 
-#PivotTable Field List
+# PivotTable Field List
 
-##Initialization  
+## Initialization  
 Field List, also known as Pivot Schema Designer, allows user to add, rearrange, filter and remove fields to show data in PivotGrid exactly the way they want.
 
 Based on the datasource, OLAP, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
 
 In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **“ejPivotSchemaDesigner”** method.
 
-##Client Mode
+### Client Mode
 
 {% highlight html %}
 
@@ -79,7 +79,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 ![](PivotTable-Field-List_images/olapclientfieldlsit.png)
 
 
-##Server Mode
+### Server Mode
 
 {% highlight html %}
 

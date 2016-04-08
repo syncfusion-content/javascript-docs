@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-##Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
+## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
 
 This section covers the information that you need to know to populate a simple PivotGrid with OLAP data completely on the client-side.  
 
@@ -104,20 +104,20 @@ The above code will generate a simple PivotGrid with "Customer Geography" field 
 
 ![](Getting-Started_images/OlapClientside.png) 
 
-##Creating a simple application with PivotGrid and OLAP datasource (Server Mode)
+## Creating a simple application with PivotGrid and OLAP datasource (Server Mode)
 
 This section covers the information required to create a simple PivotGrid bound to OLAP datasource.  
 
 N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotGrid is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
-###Project Initialization
+### Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
 Next you need to add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, click **Add.**
 
 Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
 
-###Scripts and CSS Initialization
+### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are highlighted below in an appropriate order.
 
 1. ej.widgets.all.min.css
@@ -133,7 +133,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
-###Control Initialization
+### Control Initialization
 In-order to initialize a PivotGrid widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotGrid widget. Then you need to initialize the widget using `ejPivotGrid` method.
     
 {% highlight html %}
@@ -174,7 +174,7 @@ The “url” property in PivotGrid widget points the service endpoint, where da
 
 N> The above "GettingStarted.html" contains WebAPI Url, which is **“../OLAPService”**. Suppose if you are using WCF service then the Url would look like **"../OLAPService.svc"**. 
 
-###WebAPI
+### WebAPI
 
 **Adding a WebAPI Controller**
 
@@ -435,7 +435,7 @@ Now, PivotGrid will be rendered with Internet Sales Amount over a period of fisc
 
 ![](Getting-Started_images/olapwebapi.png) 
 
-###WCF
+### WCF
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
 
 

@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Localization and Globalization
+# Localization and Globalization
 
-##Localization in PivotGrid 
+## Localization in PivotGrid 
 You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.locale`](/js/api/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
 
 {% highlight html %}
@@ -335,7 +335,7 @@ The following table lists the default keywords in French culture for Pivot Pager
 </tr>
 </table>
 
-##Localization and Globalization of Cube Info
+## Localization and Globalization of Cube Info
 Content displayed within the PivotGrid control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
  
 * To get the localized string based on different cultures, from OLAP Cube, you need to set **"Locale Identifier"** in the connection string to a specific culture.
@@ -354,7 +354,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 ![](Localization-and-Globalization_images/localization.png)
 
-##Localization and Globalization of Relational Info
+## Localization and Globalization of Relational Info
 Content displayed within the PivotGrid control are obtained from the Relational datasource. So following are the steps that needs to done to get localized as well as globalized content.
  
 * To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotGrid.  
@@ -373,7 +373,7 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 ![](Localization-and-Globalization_images/localizationinfo.png)
 
-##RTL
+## RTL
 
 You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
 

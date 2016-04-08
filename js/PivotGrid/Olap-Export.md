@@ -158,7 +158,7 @@ public void Export(System.IO.Stream stream) {
 {% endhighlight %}
 
 
-## Excel Export
+### Excel Export
 User can export contents of the PivotGrid to Excel document for future archival, references and analysis purposes. To achieve Excel export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -177,7 +177,7 @@ function exportBtnClick(args) {
 
 ![](Export_images/excelexport.png)
 
-## CSV Export
+### CSV Export
 User can export contents of the PivotGrid to CSV document for future archival, references and analysis purposes.
 
 For CSV export, **"ej.PivotGrid.ExportOptions.CSV"** enumeration value is sent as the parameter.
@@ -193,7 +193,7 @@ function exportBtnClick(args) {
 
 ![](Export_images/csvexport.png)
 
-## Word Export
+### Word Export
 User can export contents of the PivotGrid to Word document for future archival, references and analysis purposes. To achieve Word export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -212,7 +212,7 @@ function exportBtnClick(args) {
 
 ![](Export_images/wordexport1.png)
 
-## PDF Export  
+### PDF Export  
 User can export contents of the PivotGrid to PDF document for future archival, references and analysis purposes. To achieve PDF export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -232,7 +232,7 @@ function exportBtnClick(args) {
 ![](Export_images/pdfexport.png)
 
 
-## Customize the export document name
+### Customize the export document name
 
 The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
 

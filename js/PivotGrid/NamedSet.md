@@ -7,13 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Named Sets
+# Named Sets
 
 Named sets is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining cube data, arithmetic operators, numbers and functions.
 
-##Client Mode
+## Client Mode
 
-You can bind the Named Sets in PivotGrid by setting it's unique name in the `filedName` property either in row or column axis and `isNamedSets` boolean property to "true".
+You can bind the Named Sets in PivotGrid by setting it's unique name in the `fieldName` property either in row or column axis and `isNamedSets` boolean property to "true".
 
 {% highlight js %}
 
@@ -50,7 +50,7 @@ You can bind the Named Sets in PivotGrid by setting it's unique name in the `fil
 ![](KPI_images/namedset.png)
 
 
-##Server Mode
+## Server Mode
 
 You can add Named Sets in the PivotGrid by using NamedSetElement Class in the OlapReport. 
 

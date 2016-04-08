@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Paging
+# Paging
 
 I> This feature is applicable only for OLAP datasource only at Server Mode.
 
-##Pager 
+## Pager 
 Paging helps to improve the rendering performance of the PivotGrid control by breaking large amount of data into sections and displaying them.
  
 In-order to initialize a "Pager", first you need to define a "div" tag with an appropriate "id" attribute which acts as a container for the widget. Then you need to initialize the widget using **“ejPivotPager”** method.
@@ -57,7 +57,7 @@ Following are the navigation option available in Pager.
 
 ![](Paging_images/paging.png)
 
-##Virtual Scrolling
+## Virtual Scrolling
 Virtual Scrolling is a technique that allows user to scroll vertically and horizontally the scroll bar to view the paged information. You can enable Virtual Scrolling option in PivotGrid by setting the [`enableVirtualScrolling`](/js/api/ejpivotgrid#members:enablevirtualscrolling) property to true.
 
 {% highlight js %}
@@ -71,7 +71,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ![](Paging_images/virtual-scrolling.png)
 
-##Page Setting (Report)
+## Page Setting (Report)
 The page setting for categorical and series axes are mandatorily needs to be done in OlapReport class by using the following properties.
 
 * EnablePaging - Specifies a value indicating whether to enable or disable paging in PivotGrid control.
