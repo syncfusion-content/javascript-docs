@@ -31,7 +31,6 @@ $(element).ejTooltip(options);
 </table>
 
 #### Example
-{:.example}
 
 {% highlight html %}
  
