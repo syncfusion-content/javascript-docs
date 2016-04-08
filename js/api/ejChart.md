@@ -1003,10 +1003,58 @@ $("#container").ejChart({
 {:#members:exportsettings-type}
 
 
+<ts name = "ej.datavisualization.Chart.ExportingType"/>
 
 
 Specifies the format of the file to export
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+PNG</td>
+<td class="type">string</td> 
+<td class="description last">The chart will be exported in .png format</td>
+</tr>
+<tr>
+<td class="name">
+JPG</td>
+<td class="type">string</td>
+<td class="description last">The chart will be exported in .jpg format</td>
+</tr> 
+<tr>
+<td class="name">
+PDF</td>
+<td class="type">string</td>
+<td class="description last">The chart will be exported in .pdf format</td>
+</tr> 
+<tr>
+<td class="name">
+DOCX</td>
+<td class="type">string</td>
+<td class="description last">The chart will be exported in .doc format</td>
+</tr> 
+<tr>
+<td class="name">
+XLSX</td>
+<td class="type">string</td>
+<td class="description last">The chart will be exported in .xlsx format</td>
+</tr> 
+<tr>
+<td class="name">
+SVG</td>
+<td class="type">string</td>
+<td class="description last">The chart will be exported in .svg format</td>
+</tr> 
+</tbody>
+</table>
 
 #### Default Value
 
@@ -1035,9 +1083,34 @@ $("#container").ejChart({
 {:#members:exportsettings-orientation}
 
 
+<ts name = "ej.datavisualization.Chart.ExportingOrientation"/>
 
 
 Specifies the orientation of the document
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Portrait</td>
+<td class="type">string</td> 
+<td class="description last">The Chart is exported in portrait for .doc type</td>
+</tr>
+<tr>
+<td class="name">
+Landscape</td>
+<td class="type">string</td>
+<td class="description last">The Chart is exported in landscape for .doc type</td>
+</tr> 
+</tbody>
+</table>
 
 
 #### Default Value
@@ -1066,10 +1139,34 @@ $("#container").ejChart({
 ### exportSettings.mode `enum`
 {:#members:exportsettings-mode}
 
-
+<ts name = "ej.datavisualization.Chart.ExportingMode"/>
 
 
 Specifies the mode of exporting
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Server Side</td>
+<td class="type">string</td> 
+<td class="description last">The Chart is exported at server side</td>
+</tr>
+<tr>
+<td class="name">
+Client Side</td>
+<td class="type">string</td>
+<td class="description last">The Chart is exported at client side</td>
+</tr> 
+</tbody>
+</table>
 
 
 #### Default Value
@@ -7058,7 +7155,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 ### commonseriesoptions.selectionSettings.rangeType `enum`
 {:#members:commonseriesoptions-selectionsettings-rangetype}
 
-<ts ref = "ej.datavisualization.Chart.RangeType"/>
+<ts name = "ej.datavisualization.Chart.RangeType"/>
 
 Specifies the drawn rectangle type.
 
@@ -7083,6 +7180,8 @@ XY</td>
 X</td>
 <td class="type">string</td>
 <td class="description">It will be draw a range rectangle in horizontally.</td>
+</tr>
+<tr>
 <td class="name">
 Y</td>
 <td class="type">string</td>
@@ -15017,6 +15116,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
 {:#members:primaryyaxis-labelposition}
 
 <ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+Specifies the position of the axis labels.
 
 
 #### Default Value

@@ -3300,15 +3300,39 @@ enableAnimation : false
 {:#members:flowdirection}
 
 
+<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
 
 
 
+Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. 
 
 
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Forward</td>
+<td class="type">string</td> 
+<td class="description last">The BulletGraph is rendered from left to right</td>
+</tr>
+<tr>
+<td class="name">
+Backward</td>
+<td class="type">string</td>
+<td class="description last">The BulletGraph is rendered from right to left</td>
+</tr> 
+</tbody>
+</table>
 
-Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. See <a href="global.html#FlowDirection">FlowDirection</a>
 
-
+Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. 
 
 
 #### Default Value
@@ -3347,35 +3371,6 @@ flowDirection : "backward"
 
 ### height `number`
 {:#members:height}
-
-<ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
-
-Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Forward</td>
-<td class="type">string</td> 
-<td class="description last">The BulletGraph is rendered from left to right</td>
-</tr>
-<tr>
-<td class="name">
-Backward</td>
-<td class="type">string</td>
-<td class="description last">The BulletGraph is rendered from right to left</td>
-</tr> 
-</tbody>
-</table>
 
 
 Specifies the height of the bullet graph.
