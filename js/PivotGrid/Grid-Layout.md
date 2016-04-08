@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Grid Layout
+# Grid Layout
 
 I> This feature is applicable only for OLAP datasource only at Server Mode.
 
-##Normal Layout
+## Normal Layout
 
 A layout in which summary cells are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in PivotGrid control. The enumeration property [`layout`](/js/api/ejpivotgrid#members:layout) needs to be set to **"ej.PivotGrid.Layout.Normal"** in-order to view PivotGrid in normal layout. 
 

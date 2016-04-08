@@ -32,7 +32,7 @@ Defer Update support allows you to refresh the control only on-demand and not du
   
 {% endhighlight %}
 
-![](/Defer-Update_images/relationaldeferupdate.png) 
+![](Defer-Update_images/relationaldeferupdate.png) 
 
 
 

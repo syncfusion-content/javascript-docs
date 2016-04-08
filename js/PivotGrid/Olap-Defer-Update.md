@@ -31,6 +31,6 @@ function onServiceInvokes(args) {
 
 {% endhighlight %}
 
-![](/Defer-Update_images/defer.png) 
+![](Defer-Update_images/defer.png) 
 
 

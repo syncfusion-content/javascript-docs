@@ -40,7 +40,7 @@ Excel, Word and PDF
 
 The PivotGrid control can be exported by invoking **"exportPivotGrid"** method, with an appropriate export option as parameter.
 
-##Client Mode
+## Client Mode
 
 For client side, Relational datasource contents can be exported only to Excel. The document can be saved from the browser to the local disk drive for later use.
 
@@ -100,7 +100,7 @@ To achieve Excel export, we need to add the following dependency library into th
 ![](Export_images/Exportingpure.png)
 
 
-##Server Mode
+## Server Mode
 
 {% highlight html %}
 
@@ -149,7 +149,7 @@ pGrid.ExportToExcel(fileName, args, HttpContext.Current.Response);
 
 {% endhighlight %}
 
-## Excel Export
+### Excel Export
 User can export contents of the PivotGrid to Excel document for future archival, references and analysis purposes. To achieve Excel export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -168,7 +168,7 @@ function exportBtnClick(args) {
 
 ![](Export_images/Sampleexcel.png)
 
-## Word Export
+### Word Export
 User can export contents of the PivotGrid to Word document for future archival, references and analysis purposes. To achieve Word export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -187,7 +187,7 @@ function exportBtnClick(args) {
 
 ![](Export_images/Sampleword.png)
 
-## PDF Export  
+### PDF Export  
 User can export contents of the PivotGrid to PDF document for future archival, references and analysis purposes. To achieve PDF export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
@@ -207,7 +207,7 @@ function exportBtnClick(args) {
 ![](Export_images/Samplepdf.png)
 
 
-## Customize the export document name
+### Customize the export document name
 
 The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
 
