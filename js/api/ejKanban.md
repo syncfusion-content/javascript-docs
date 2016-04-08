@@ -1929,50 +1929,6 @@ To show Total count of cards in each column
     
 {% endhighlight %}
 
-### enableHover `boolean`
-{:#members:enablehover}
-
-Gets or sets a value that indicates whether to enablehover support for performing card hover actions.
-    
-#### Default Value:
-
-* true
-
-#### Example
-
-{% highlight html %}
- 
-     <div id="kanban">
-     </div>
-     <script type="text/javascript">
-            window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" }
-        ];
-		$(function() {
-             var data = ej.DataManager(window.kanbandata);
-             $("#kanban").ejKanban(
-             {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress"}
-                    ],                                                           			
-					fields: {
-                          primaryKey: "Id",
-                          swimlaneKey: "Assignee",
-                          content: "Text",
-                    }, 
-                    keyField: "Status",  
-					enableHover: true
-			 }
-            );
-        });
-    </script>
-   
-{% endhighlight %}
-
 ### editSettings `object`
 {:#members:editsettings}
 
@@ -3140,7 +3096,7 @@ To map datasource field for column values mapping
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Gets or sets a value that indicates whether the kanban design has be to made responsive.
+When set to true, adapts the Kanban layout to fit the screen size of devices on which it renders.
 
 #### Default Value:
 
@@ -3186,7 +3142,7 @@ Gets or sets a value that indicates whether the kanban design has be to made res
 ### minWidth `number`
 {:#members:minwidth}
 
-Gets or sets a value that indicates whether to set the minimum width of the responsive kanban while isResponsive property is true and enableResponsiveRow property is set as false.
+Gets or sets a value that indicates whether to set the minimum width of the responsive kanban while isResponsive property is true.
 
 #### Default Value:
 
@@ -3434,47 +3390,6 @@ Gets or sets an object of tooltip to filter buttons.
     
 {% endhighlight %}
 
-### primaryKeyField `String`
-{:#members:primarykeyfield}
-
-The primarykey field is get as property of kanban. And this will used for Drag and drop and editing mainly
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-    <div id="kanban"></div>
-    <script type="text/javascript">
-          window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" }
-          ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#kanban").ejKanban(
-        {
-            dataSource: data,
-            keyField: "Status",
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress"}
-            ],                                                           			
-            fields: {
-               primaryKey: "Id",
-               content: "Text",
-            },
-        }
-    );
-    });
-    </script>
-    
-{% endhighlight %}
-
 ### query `object`
 {:#members:query}
 
@@ -3584,1229 +3499,6 @@ To change the key in keyboard interaction to kanban control.
         }
     });
     });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.focus `object`
-{:#members:keysettings-focus}
-
-To specify the focus in kanban control.
-
-#### Default Value:
-
-* Object
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowKeyboardNavigation:true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            },			
-            selectionType: "multiple",
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String},
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea}
-                ],
-                allowEditing: true,
-                allowAdding: true
-            },					
-                  
-            keySettings: {
-                focus: "e",     
-            },
-        });
-		   
-    $(document).on("keydown", function (e) {
-        if (e.altKey && e.keyCode === 74) { 
-            $("#Kanban").focus();
-        }
-    });
-    });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.insertCard `string`
-{:#members:keysettings-insertcard}
-
-To specify the key value to insert the card. 
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-					selectionType: "multiple",
-                      editSettings: {
-                        editItems: [
-                            { field: "Id", editType: ej.Kanban.EditingType.String},
-                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                            { field: "Text", editType: ej.Kanban.EditingType.TextArea}
-							],
-                        allowEditing: true,
-                        allowAdding: true
-                    },					
-                  
-                    keySettings: {
-                        focus: "e",     
-					    insertCard: "45",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.deleteCard `string`
-{:#members:keysettings-deletecard}
-
-To specify the key value to delete the card. 
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-					selectionType: "multiple",
-                    keySettings: {
-                        focus: "e",     
-					    deleteCard: "46", 
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.editCard `string`
-{:#members:keysettings-editcard}
-
-TTo specify the key value to edit the card.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-					selectionType: "multiple",
-                      editSettings: {
-                        editItems: [
-                            { field: "Id", editType: ej.Kanban.EditingType.String},
-                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                            { field: "Text", editType: ej.Kanban.EditingType.TextArea}
-							],
-                        allowEditing: true,
-                        allowAdding: true
-                    },					
-                  
-                    keySettings: {
-                        focus: "e",     
-					    editCard: "113",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.saveRequest `string`
-{:#members:keysettings-saverequest}
-
-TTo specify the key value to save request.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },				           
-                    keySettings: {
-                        focus: "e",     
-					     saveRequest: "13", 
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.cancelRequest `string`
-{:#members:keysettings-cancelrequest}
-
-To specify the key value to cancel request.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-                    keySettings: {
-                        focus: "e",     
-					    cancelRequest: "27",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.firstCardSelection `string`
-{:#members:keysettings-firstcardselection}
-
-To specify the key value to first card selection.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-	            keySettings: {
-                        focus: "e",     
-					    firstCardSelection: "36",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.lastCardSelection `string`
-{:#members:keysettings-lastcardselection}
-
-To specify the key value to last card selection.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    lastCardSelection: "35",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.upArrow `string`
-{:#members:keysettings-uparrow}
-
-To specify the key value to upArrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    upArrow: "38",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.downArrow `string`
-{:#members:keysettings-downarrow}
-
-To specify the key value to downArrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowKeyboardNavigation:true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-            keySettings: {
-                focus: "e",     
-                downArrow: "40", 
-            },
-        });
-		   
-    $(document).on("keydown", function (e) {
-        if (e.altKey && e.keyCode === 74) { 
-            $("#Kanban").focus();
-        }
-    });
-    });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.rightArrow `string`
-{:#members:keysettings-rightarrow}
-
-To specify the key value to rightArrow.
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-    <div id="Kanban"></div>
-    <script type="text/javascript">
-    window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-           { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowKeyboardNavigation:true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-            keySettings: {
-                focus: "e",     
-                rightArrow: "39",
-            },
-        });
-		   
-    $(document).on("keydown", function (e) {
-        if (e.altKey && e.keyCode === 74) { 
-            $("#Kanban").focus();
-        }
-    });
-    });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.leftArrow `string`
-{:#members:keysettings-leftarrow}
-
-To specify the key value to leftArrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowKeyboardNavigation:true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-            keySettings: {
-                focus: "e",     
-                leftArrow: "37", 
-            },
-        });
-		   
-    $(document).on("keydown", function (e) {
-        if (e.altKey && e.keyCode === 74) { 
-            $("#Kanban").focus();
-        }
-    });
-    });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.swimlaneExpandAll `string`
-{:#members:keysettings-swimlaneexpandall}
-
-To specify the key value to swimlane expand all.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					     swimlaneExpandAll: "ctrl+40",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.swimlaneCollapseAll `string`
-{:#members:keysettings-swimlanecollapseall}
-
-To specify the key value to swimlane collapse all.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    swimlaneCollapseAll: "ctrl+38",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.selectedGroupExpand `string`
-{:#members:keysettings-selectedgroupexpand}
-
-To specify the key value to selected group expand.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    selectedGroupExpand: "alt+40",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.selectedGroupCollapse `string`
-{:#members:keysettings-selectedgroupcollapse}
-
-To specify the key value to selected group collapse.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    selectedGroupCollapse: "alt+38", 
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.selectedColumnCollapse `string`
-{:#members:keysettings-selectedcolumncollapse }
-
-To specify the key value to selected column collapse.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					     selectedColumnCollapse: "ctrl+37",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.selectedColumnExpand `string`
-{:#members:keysettings-selectedcolumnexpand}
-
-To specify the key value to selected column expand.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    selectedColumnExpand: "ctrl+39",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.multiSelectionByUpArrow `string`
-{:#members:keysettings-multiselectionbyuparrow}
-
-To specify the key value to multi selection by up arrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					   multiSelectionByDownArrow: "shift+40",
-					  },
-                });
-		        $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.multiSelectionByLeftArrow `string`
-{:#members:keysettings-multiselectionbyleftarrow}
-
-To specify the key value to multi selection by left arrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    multiSelectionByLeftArrow: "shift+37",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
-    </script>
-    
-{% endhighlight %}
-
-### keySettings.multiSelectionByRightArrow `string`
-{:#members:keysettings-multiselectionbyrightarrow}
-
-To specify the key value to multi selection by right arrow.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation:true,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close" }
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keySettings: {
-                        focus: "e",     
-					    multiSelectionByRightArrow: "shift+39",
-					  },
-                });
-		   
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { 
-                    $("#Kanban").focus();
-                }
-            });
-        });
     </script>
     
 {% endhighlight %}
@@ -5035,7 +3727,7 @@ To customize the searching behavior of the kanban.
 
 {% highlight html %} 
 
-          <div id="Kanban"></div>
+         <div id="Kanban"></div>
          <script type="text/javascript">
          window.kanbandata = [
             {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
@@ -5071,6 +3763,7 @@ To customize the searching behavior of the kanban.
                 }
             );
         });
+        </script>
         
 {% endhighlight %}
 
@@ -5831,7 +4524,7 @@ Add a new card in kanban control.If parameters are not given default dialog will
 
 Method used for send a clear search request to kanban.
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -6131,7 +4824,7 @@ toggleColumn based on the headerText in kanban.
     </tbody>
     </table>
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -6154,7 +4847,7 @@ toggleColumn based on the headerText in kanban.
       
 {% endhighlight %}
 
-### toggleCard($div or key)
+### toggleCard($div or id)
 {:#methods:togglecard}
 
 Expand or collapse the card based on the state of target "div"
@@ -6173,12 +4866,12 @@ Expand or collapse the card based on the state of target "div"
     key
     </td>
     <td class="type"><span class="param-type">string/number</span></td>
-    <td class="description last">Pass the key of card to be toggle </td>
+    <td class="description last">Pass the id of card to be toggle </td>
     </tr>
     </tbody>
     </table>
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -6201,7 +4894,7 @@ Expand or collapse the card based on the state of target "div"
       
 {% endhighlight %}
 
-### toggleSwimlane(($div or key)
+### toggleSwimlane($div or key)
 {:#methods:toggleswimlane}
 
 Expand or collapse the swimlane row based on the state of target "div"
@@ -6225,7 +4918,7 @@ Expand or collapse the swimlane row based on the state of target "div"
     </tbody>
     </table>
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -6280,7 +4973,7 @@ Expand all the swimlane rows in kanban.
 ### getVisibleColumnNames()
 {:#methods:getvisiblecolumnnames}
 
-used for get the names of all the visible column name collections in kanban.
+Used for get the names of all the visible column name collections in kanban.
 
 #### Example
 
@@ -6516,7 +5209,7 @@ Refresh the kanban contents.The template refreshment is based on the argument pa
 ### searchCards(searchString)
 {:#methods:searchcards}
 
-send a search request to kanban with specified string passed in it.
+Send a search request to kanban with specified string passed in it.
 
   <table class="params">
     <thead>
@@ -6536,7 +5229,7 @@ send a search request to kanban with specified string passed in it.
     </tbody>
     </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6546,7 +5239,7 @@ send a search request to kanban with specified string passed in it.
     // Create kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a search request to the kanban
-    kanbanObj.search("Analyse"); 
+    kanbanObj.searchCards("Analyse"); 
     </script>
 
 {% endhighlight %}
@@ -6556,7 +5249,7 @@ send a search request to kanban with specified string passed in it.
 
     <script>
     // Sends a search request to the kanban
-    $("#Kanban").ejKanban("search", "Analyse");        
+    $("#Kanban").ejKanban("searchCards", "Analyse");        
     </script>
     
 {% endhighlight %}
@@ -6588,7 +5281,7 @@ Method used for set validation to a field during editing.
     </tbody>
     </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6643,7 +5336,7 @@ Send an edit card request in kanban.Parameter will be Html element or primary ke
     </tbody>
     </table>
 
-####Example
+#### Example
 
 {% highlight html %}
  
