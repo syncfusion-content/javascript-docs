@@ -4,7 +4,7 @@ layout: post
 
 title:  JavaScript Source Maps for Syncfusion Essential JS Widgets
 
-description: How to use source maps in EJ controls to debug the script files 
+description: JavaScript Source Maps for Syncfusion Essential JS Widgets 
 
 platform: js
 
