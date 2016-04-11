@@ -3249,7 +3249,9 @@
                     <li><a href="/js/api/ejfileexplorer#members">Members</a>
                         <ul>
                             <li id="toc-members:ajaxaction"><a href="/js/api/ejfileexplorer#members:ajaxaction">ajaxAction</a></li>
+                            <li id="toc-members:ajaxdatatype"><a href="/js/api/ejfileexplorer#members:ajaxdatatype">ajaxDataType</a></li>
                             <li id="toc-members:ajaxsettings"><a href="/js/api/ejfileexplorer#members:ajaxsettings">ajaxSettings</a></li>
+                            <li id="toc-members:allowmultiselection"><a href="/js/api/ejfileexplorer#members:allowmultiselection">allowMultiSelection</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejfileexplorer#members:cssclass">cssClass</a></li>
                             <li id="toc-members:enableresize"><a href="/js/api/ejfileexplorer#members:enableresize">enableResize</a></li>
                             <li id="toc-members:enablertl"><a href="/js/api/ejfileexplorer#members:enablertl">enableRTL</a></li>
@@ -3262,7 +3264,6 @@
                             </li>
                             <li id="toc-members:gridsettings"><a href="/js/api/ejfileexplorer#members:gridsettings">gridSettings</a>
                                 <ul>
-                                    <li id="toc-members:gridsettings-allowsearching"><a href="/js/api/ejfileexplorer#members:gridsettings-allowsearching">allowSearching</a></li>
                                     <li id="toc-members:gridsettings-allowsorting"><a href="/js/api/ejfileexplorer#members:gridsettings-allowsorting">allowSorting</a></li>
                                     <li id="toc-members:gridsettings-columns"><a href="/js/api/ejfileexplorer#members:gridsettings-columns">columns</a></li>
                                 </ul>
@@ -3271,18 +3272,27 @@
                             <li id="toc-members:isresponsive"><a href="/js/api/ejfileexplorer#members:isresponsive">isResponsive</a></li>
                             <li id="toc-members:layout"><a href="/js/api/ejfileexplorer#members:layout">layout</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejfileexplorer#members:locale">locale</a></li>
+                            <li id="toc-members:maxheight"><a href="/js/api/ejfileexplorer#members:maxheight">maxHeight</a></li>
+                            <li id="toc-members:maxwidth"><a href="/js/api/ejfileexplorer#members:maxwidth">maxWidth</a></li>
+                            <li id="toc-members:minheight"><a href="/js/api/ejfileexplorer#members:minheight">minHeight</a></li>
+                            <li id="toc-members:minwidth"><a href="/js/api/ejfileexplorer#members:minwidth">minWidth</a></li>
                             <li id="toc-members:path"><a href="/js/api/ejfileexplorer#members:path">path</a></li>
+                            <li id="toc-members:selectedfolder"><a href="/js/api/ejfileexplorer#members:selectedfolder">selectedFolder</a></li>
+                            <li id="toc-members:selecteditems"><a href="/js/api/ejfileexplorer#members:selecteditems">selectedItems</a></li>
+                            <li id="toc-members:showcheckbox"><a href="/js/api/ejfileexplorer#members:showcheckbox">showCheckbox</a></li>
                             <li id="toc-members:showcontextmenu"><a href="/js/api/ejfileexplorer#members:showcontextmenu">showContextMenu</a></li>
                             <li id="toc-members:showfooter"><a href="/js/api/ejfileexplorer#members:showfooter">showFooter</a></li>
-                            <li id="toc-members:showlayout"><a href="/js/api/ejfileexplorer#members:showlayout">showLayout</a></li>
+                            <li id="toc-members:showroundedcorner"><a href="/js/api/ejfileexplorer#members:showroundedcorner">showRoundedCorner</a></li>
+                            <li id="toc-members:showthumbnail"><a href="/js/api/ejfileexplorer#members:showthumbnail">showThumbnail</a></li>
                             <li id="toc-members:showtoolbar"><a href="/js/api/ejfileexplorer#members:showtoolbar">showToolbar</a></li>
-                            <li id="toc-members:showtreeview"><a href="/js/api/ejfileexplorer#members:showtreeview">showTreeview</a></li>
+                            <li id="toc-members:shownavigationpane"><a href="/js/api/ejfileexplorer#members:shownavigationpane">showNavigationPane</a></li>
                             <li id="toc-members:tools"><a href="/js/api/ejfileexplorer#members:tools">tools</a></li>
                             <li id="toc-members:toolslist"><a href="/js/api/ejfileexplorer#members:toolslist">toolsList</a></li>
-                            <li id="toc-members:uploadboxsettings"><a href="/js/api/ejfileexplorer#members:uploadboxsettings">uploadBoxSettings</a>
+                            <li id="toc-members:uploadsettings"><a href="/js/api/ejfileexplorer#members:uploadsettings">uploadSettings</a>
                                 <ul>
-                                    <li id="toc-members:uploadboxsettings-filesize"><a href="/js/api/ejfileexplorer#members:uploadboxsettings-filesize">fileSize</a></li>
-                                    <li id="toc-members:uploadboxsettings-multiplefilesselection"><a href="/js/api/ejfileexplorer#members:uploadboxsettings-multiplefilesselection">multipleFilesSelection</a></li>
+                                    <li id="toc-members:uploadsettings-maxfilesize"><a href="/js/api/ejfileexplorer#members:uploadsettings-maxfilesize">maxFileSize</a></li>
+                                    <li id="toc-members:uploadsettings-allowmultiplefile"><a href="/js/api/ejfileexplorer#members:uploadsettings-allowmultiplefile">allowMultipleFile</a></li>
+                                    <li id="toc-members:uploadsettings-autoupload"><a href="/js/api/ejfileexplorer#members:uploadsettings-autoupload">autoUpload</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:width"><a href="/js/api/ejfileexplorer#members:width">width</a></li>
@@ -3290,19 +3300,33 @@
                     </li>
                     <li><a href="/js/api/ejfileexplorer#methods">Methods</a>
                         <ul>
+                            <li id="toc-methods:adjustsize"><a href="/js/api/ejfileexplorer#methods:adjustsize">adjustSize</a></li>
+                            <li id="toc-methods:disablemenuitem"><a href="/js/api/ejfileexplorer#methods:disablemenuitem">disableMenuItem</a></li>
                             <li id="toc-methods:disabletoolbaritem"><a href="/js/api/ejfileexplorer#methods:disabletoolbaritem">disableToolbarItem</a></li>
+                            <li id="toc-methods:enablemenuitem"><a href="/js/api/ejfileexplorer#methods:enablemenuitem">enableMenuItem</a></li>
                             <li id="toc-methods:enabletoolbaritem"><a href="/js/api/ejfileexplorer#methods:enabletoolbaritem">enableToolbarItem</a></li>
+                            <li id="toc-methods:refresh"><a href="/js/api/ejfileexplorer#methods:refresh">refresh</a></li>
+                            <li id="toc-methods:removetoolbaritem"><a href="/js/api/ejfileexplorer#methods:removetoolbaritem">removeToolbarItem</a></li>
                         </ul>
                     </li>
                     <li><a href="/js/api/ejfileexplorer#events">Events</a>
                         <ul>
+                            <li id="toc-events:beforeajaxrequest"><a href="/js/api/ejfileexplorer#events:beforeajaxrequest">beforeAjaxRequest</a></li>
+                            <li id="toc-events:beforedownload"><a href="/js/api/ejfileexplorer#events:beforedownload">beforeDownload</a></li>
+                            <li id="toc-events:beforeopen"><a href="/js/api/ejfileexplorer#events:beforeopen">beforeOpen</a></li>
+                            <li id="toc-events:beforeupload"><a href="/js/api/ejfileexplorer#events:beforeupload">beforeUpload</a></li>
                             <li id="toc-events:copy"><a href="/js/api/ejfileexplorer#events:copy">copy</a></li>
                             <li id="toc-events:createfolder"><a href="/js/api/ejfileexplorer#events:createfolder">createFolder</a></li>
+                            <li id="toc-events:cut"><a href="/js/api/ejfileexplorer#events:cut">cut</a></li>
                             <li id="toc-events:layoutchange"><a href="/js/api/ejfileexplorer#events:layoutchange">layoutChange</a></li>
-                            <li id="toc-events:move"><a href="/js/api/ejfileexplorer#events:move">move</a></li>
                             <li id="toc-events:open"><a href="/js/api/ejfileexplorer#events:open">open</a></li>
+                            <li id="toc-events:paste"><a href="/js/api/ejfileexplorer#events:paste">paste</a></li>
                             <li id="toc-events:remove"><a href="/js/api/ejfileexplorer#events:remove">remove</a></li>
+                            <li id="toc-events:resize"><a href="/js/api/ejfileexplorer#events:resize">resize</a></li>
+                            <li id="toc-events:resizestart"><a href="/js/api/ejfileexplorer#events:resizestart">resizeStart</a></li>
+                            <li id="toc-events:resizestop"><a href="/js/api/ejfileexplorer#events:resizestop">resizeStop</a></li>
                             <li id="toc-events:select"><a href="/js/api/ejfileexplorer#events:select">select</a></li>
+                            <li id="toc-events:templaterefresh"><a href="/js/api/ejfileexplorer#events:templaterefresh">templateRefresh</a></li>
                         </ul>
                     </li>
                 </ul>

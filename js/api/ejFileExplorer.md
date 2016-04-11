@@ -643,7 +643,7 @@ Enables or disables to perform the filter operation with case sensitive.
 
 
 
-Sets the search filter type. There are several filter types available, such as "startswith", "contains", "endswith". See filterType.
+Sets the search filter type. There are several filter types available such as "startswith", "contains", "endswith". See filterType.
 
 
 <table class="props">
@@ -677,7 +677,7 @@ EndsWith</td>
 <td class="description">Enum for filter type endswith</td>
 </tr>
 </tbody>
-</table>        
+</table>
 
 #### Default Value
 
@@ -985,7 +985,7 @@ Enables or disables the responsive support for FileExplorer control during the w
 
 
 
-Sets the file view type. There are three view types available, such as grid, tile and largeicons. See layoutType.
+Sets the file view type. There are three view types available such as Grid, Tile and Large icons. See layoutType.
 
 
 <table class="props">
@@ -1814,7 +1814,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 ### uploadSettings.maxFileSize `number`
-{:#members:uploadSettings-maxfilesize}
+{:#members:uploadsettings-maxfilesize}
 
 
 
@@ -1871,7 +1871,7 @@ Specifies the maximum file size allowed to upload. It accepts the value in bytes
 
 
 ### uploadSettings.allowMultipleFile `boolean`
-{:#members:uploadSettings-allowmultiplefile}
+{:#members:uploadsettings-allowmultiplefile}
 
 
 
@@ -1922,7 +1922,7 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
 {% endhighlight %}
 
 ### uploadSettings.autoUpload `boolean`
-{:#members:uploadSettings-autoupload}
+{:#members:uploadsettings-autoupload}
 
 
 
