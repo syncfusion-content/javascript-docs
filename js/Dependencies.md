@@ -43,7 +43,7 @@ Some JavaScript UI web widgets like Grid and Schedule requires the below assembl
 * Syncfusion.Pdf.Base
 * Syncfusion.XlsIO.Base
 * Syncfusion.DocIO.Base
-* Synfusion.Shared.Wpf
+* Syncfusion.Shared.Wpf
 * Syncfusion.Chart.Wpf
 * Syncfusion.Gauge.Wpf
 * Syncfusion.SfMaps.Wpf 
