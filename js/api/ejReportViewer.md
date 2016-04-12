@@ -202,8 +202,8 @@ Specifies the export formats.
 <td class="description">Specifies the All property in ExportOptions to get all available options.</td>
 </tr>
 <tr>
-<td class="name">Pdf</td>
-<td class="description">Specifies the Pdf property in ExportOptions to get Pdf option.</td>
+<td class="name">PDF</td>
+<td class="description">Specifies the PDF property in ExportOptions to get PDF option.</td>
 </tr>
 <tr>
 <td class="name">Word</td>
@@ -214,8 +214,8 @@ Specifies the export formats.
 <td class="description">Specifies the Excel property in ExportOptions to get Excel option.</td>
 </tr>
 <tr>
-<td class="name">Html</td>
-<td class="description">Specifies the Html property in ExportOptions to get Html option.</td>
+<td class="name">HTML</td>
+<td class="description">Specifies the HTML property in ExportOptions to get HTML option.</td>
 </tr>
 </tbody>
 </table>
@@ -314,8 +314,8 @@ Specifies the word export format.
 <td class="description">Specifies the Dot property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
-<td class="name">Docx</td>
-<td class="description">Specifies the Docx property in WordFormats to get specified version of exported format.</td>
+<td class="name">DOCX</td>
+<td class="description">Specifies the DOCX property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
 <td class="name">Word2007</td>
@@ -366,24 +366,24 @@ Specifies the word export format.
 <td class="description">Specifies the Word2013Dotm property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
-<td class="name">Rtf</td>
-<td class="description">Specifies the Rtf property in WordFormats to get specified version of exported format.</td>
+<td class="name">RTF</td>
+<td class="description">Specifies the RTF property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
 <td class="name">Txt</td>
 <td class="description">Specifies the Txt property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
-<td class="name">EPub</td>
-<td class="description">Specifies the EPub property in WordFormats to get specified version of exported format.</td>
+<td class="name">EPUB</td>
+<td class="description">Specifies the EPUB property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
-<td class="name">Html</td>
-<td class="description">Specifies the Html property in WordFormats to get specified version of exported format.</td>
+<td class="name">HTML</td>
+<td class="description">Specifies the HTML property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
-<td class="name">Xml</td>
-<td class="description">Specifies the Xml property in WordFormats to get specified version of exported format.</td>
+<td class="name">XML</td>
+<td class="description">Specifies the XML property in WordFormats to get specified version of exported format.</td>
 </tr>
 <tr>
 <td class="name">Automatic</td>
@@ -927,7 +927,7 @@ Gets or sets the path of the report file.
 ### reportServerUrl `String`
 {:#members:reportserverurl}
 
-Gets or sets the reports server url.
+Gets or sets the reports server URL.
 
 #### Default Value
 
@@ -947,7 +947,7 @@ Gets or sets the reports server url.
 ### reportServiceUrl `String`
 {:#members:reportserviceurl}
 
-Specifies the report Web API service url.
+Specifies the report Web API service URL.
 
 #### Default Value
 
