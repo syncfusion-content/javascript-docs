@@ -301,7 +301,7 @@ N> 2. `name` attribute is used to get the changed field values while saving the 
 N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
 N> 4.  For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -439,7 +439,7 @@ N> 1. `value` attribute is used to bind the corresponding field value while edit
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("dialogtemplate") or `enum` value (`ej.Grid.EditMode.DialogTemplate`).
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -625,7 +625,7 @@ N> 1. `value` attribute is used to bind the corresponding field value while edit
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Grid.EditMode.ExternalFormTemplate`).
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -878,7 +878,7 @@ maxlength</td><td>
 Requires the element to be of given maximum length.</td></tr>
 <tr>
 <td>
-rangelength</td><td>
+range</td><td>
 Requires the element to be in given value range.</td></tr>
 <tr>
 <td>
@@ -1366,7 +1366,7 @@ $(function () {
 {% endhighlight %}
 
 
-Please refer the below image for more information about batch paramaters
+Please refer the below image for more information about batch parameters
 
 ![](Editing_images/Editing_img25.png)
 
