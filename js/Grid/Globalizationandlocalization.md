@@ -432,8 +432,8 @@ PredicateAnd</td><td>
 AND</td></tr>
 <tr>
 <td>
-Ok</td><td>
-Ok</td></tr>
+OK</td><td>
+OK</td></tr>
 <tr>
 <td>
 MathCase</td><td>
