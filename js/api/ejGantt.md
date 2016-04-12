@@ -1182,7 +1182,7 @@ Specifies the background of parent progressbar in Gantt
 ### parentTaskbarBackground `string`
 {:#members:parenttaskbarbackground}
 
-Specifies the background of parent taskbar in gantt
+Specifies the background of parent taskbar in Gantt
 
 
 #### Default Value:
@@ -1457,7 +1457,7 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 ### resourceIdMapping `string`
 {:#members:resourceidmapping}
 
-Specifies the mapping property name for resource ID in resource Collection in gantt
+Specifies the mapping property name for resource ID in resource Collection in Gantt
 
 
 #### Default Value:
@@ -1513,7 +1513,7 @@ Specifies the mapping property path for resources of a task in datasource
 {:#members:resourcenamemapping}
 
 
-Specifies the mapping property path for resource name of a task in gantt
+Specifies the mapping property path for resource name of a task in Gantt
 
 
 #### Default Value:
@@ -1866,7 +1866,7 @@ Specifies the schedule mode
 ### scheduleHeaderSettings.weekendBackground `string`
 {:#members:scheduleheadersettings-weekendbackground}
 
-Specified the background for weekends in gantt
+Specified the background for weekends in Gantt
 
 
 #### Default Value:
@@ -1978,7 +1978,7 @@ Specifies start date of the gantt schedule. By default, start date will be round
 ### selectedItem `number`
 {:#members:selecteditem}
 
-Specifies the selected row index in gantt
+Specifies the selected row index in Gantt
 
 
 #### Default Value:
@@ -2007,7 +2007,7 @@ Specifies the selected row index in gantt
 ### selectedRowIndex `number`
 {:#members:selectedrowindex}
 
-Specifies the selected row Index in gantt , the row with given index will highlighted
+Specifies the selected row Index in Gantt , the row with given index will highlighted
 
 
 #### Default Value:
@@ -2198,14 +2198,14 @@ Specifies whether to display task name beside task bar.
 ### sizeSettings `object`
 {:#members:sizesettings}
 
-Specifies the size option of gantt control.
+Specifies the size option of Gantt control.
 
 
 ### sizeSettings.height `string`
 {:#members:sizesettings-height}
 
 
-Specifies the height of gantt control
+Specifies the height of Gantt control
 
 
 #### Default Value:
@@ -2234,7 +2234,7 @@ Specifies the height of gantt control
 ### sizeSettings.width `string`
 {:#members:sizesettings-width}
 
-Specifies the width of gantt control
+Specifies the width of Gantt control
 
 
 #### Default Value:
@@ -2263,13 +2263,13 @@ Specifies the width of gantt control
 ### sortSettings `object`
 {:#members:sortsettings}
 
-Specifies the sorting options for gantt.
+Specifies the sorting options for Gantt.
 
 
 ### sortSettings.sortedColumns `array`
 {:#members:sortsettings-sortedcolumns}
 
-Specifies the sorted columns for gantt
+Specifies the sorted columns for Gantt
 
 
 #### Default Value:
@@ -2295,7 +2295,7 @@ Specifies the sorted columns for gantt
 ### splitterPosition `string`
 {:#members:splitterposition}
 
-Specifies splitter position in gantt.
+Specifies splitter position in Gantt.
 
 
 #### Default Value:
@@ -2382,7 +2382,7 @@ Specifies the options for striplines
 ### taskbarBackground `string`
 {:#members:taskbarbackground}
 
-Specifies the background of the taskbar in gantt
+Specifies the background of the taskbar in Gantt
 
 
 #### Default Value:
@@ -2409,7 +2409,7 @@ Specifies the background of the taskbar in gantt
 ### taskbarEditingTooltipTemplate `string`
 {:#members:taskbareditingtooltiptemplate}
 
-Specifies the template script for customized tooltip for taskbar editing in gantt
+Specifies the template script for customized tooltip for taskbar editing in Gantt
 
 
 #### Default Value:
@@ -2439,7 +2439,7 @@ Specifies the template script for customized tooltip for taskbar editing in gant
 {:#members:taskbareditingtooltiptemplateid}
 
 
-Specifies the template Id for customized tooltip for taskbar editing in gantt
+Specifies the template Id for customized tooltip for taskbar editing in Gantt
 
 
 #### Default Value:
@@ -2636,7 +2636,7 @@ Specifies the list of toolbar items to rendered in toolbar
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
-Specifies the tree expander column in gantt
+Specifies the tree expander column in Gantt
 
 
 #### Default Value:
@@ -2665,7 +2665,7 @@ Specifies the tree expander column in gantt
 ### weekendBackground `string`
 {:#members:weekendbackground}
 
-Specifies the weekendBackground color in gantt
+Specifies the weekendBackground color in Gantt
 
 
 #### Default Value:
@@ -2823,7 +2823,7 @@ gantObj.setSplitterIndex(3); // Set splitter position after column index 3
 ### cancelEdit()
 {:#methods:canceledit}
 
-To cancel the edited state of an item in gantt
+To cancel the edited state of an item in Gantt
 
 #### Example
 
@@ -2841,7 +2841,7 @@ gantObj.cancelEdit(); // To cancel edited
 ### collapseAllItems()
 {:#methods:collapseallitems}
 
-To collapse all the parent items in gantt
+To collapse all the parent items in Gantt
 
 
 #### Example
@@ -2854,14 +2854,14 @@ To collapse all the parent items in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.collapseAllItems(); // To collapse all parent items in gantt
+gantObj.collapseAllItems(); // To collapse all parent items in Gantt
 </script>
 {% endhighlight %}
 
 ### deleteItem()
 {:#methods:deleteitem}
 
-To delete a selected item in gantt
+To delete a selected item in Gantt
 
 
 #### Example
@@ -2882,7 +2882,7 @@ gantObj.deleteItem(); // To delete a task
 ### destroy()
 {:#methods:destroy}
 
-destroy the gantt widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+destroy the Gantt widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
 #### Example
@@ -2916,7 +2916,7 @@ To Expand all the parent items in gantt
 <script>
 // Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.expandAllItems(); // To expand all parent items in gantt
+gantObj.expandAllItems(); // To expand all parent items in Gantt
 </script>
 {% endhighlight %}
 
@@ -2924,7 +2924,7 @@ gantObj.expandAllItems(); // To expand all parent items in gantt
 ### expandCollapseRecord(taskId)
 {:#methods:expandcollapserecord}
 
-To expand and collapse an item in gantt using item's ID
+To expand and collapse an item in Gantt using item's ID
 
 <table class="params">
 <thead>
@@ -3012,7 +3012,7 @@ To indent a selected item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.indentItem(); // To indent a selected item in gantt
+gantObj.indentItem(); // To indent a selected item in Gantt
 </script>
 {% endhighlight %}
 
@@ -3020,7 +3020,7 @@ gantObj.indentItem(); // To indent a selected item in gantt
 ### openAddDialog()
 {:#methods:openadddialog}
 
-To Open the dialog to add new task to the gantt
+To Open the dialog to add new task to the Gantt
 
 
 #### Example
@@ -3041,7 +3041,7 @@ gantObj.openAddDialog(); // To open the add dialog
 ### openEditDialog()
 {:#methods:openeditdialog}
 
-To Open the dialog to edit existing task to the gantt
+To Open the dialog to edit existing task to the Gantt
 
 
 #### Example
@@ -3062,7 +3062,7 @@ gantObj.openEditDialog(); // To open the add dialog
 ### outdentItem()
 {:#methods:outdentitem}
 
-To outdent a selected item in gantt
+To outdent a selected item in Gantt
 
 
 #### Example
@@ -3075,7 +3075,7 @@ To outdent a selected item in gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.outdentItem(); // To outdent a selected item in gantt
+gantObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
@@ -3083,7 +3083,7 @@ gantObj.outdentItem(); // To outdent a selected item in gantt
 ### saveEdit()
 {:#methods:saveedit}
 
-To save the edited state of an item in gantt
+To save the edited state of an item in Gantt
 
 
 #### Example
@@ -3142,7 +3142,7 @@ gantObj.searchItem($("#text").val()); // To search a task
 ### setSplitterPosition(width)
 {:#methods:setsplitterposition}
 
-To set the grid width in gantt
+To set the grid width in Gantt
 
 <table class="params">
 <thead>
@@ -3221,7 +3221,7 @@ gantObj.showColumn("Task Name");
 ### actionBegin
 {:#events:actionbegin}
 
-Triggered for every gantt action before its starts.
+Triggered for every Gantt action before its starts.
 
 <table class="params">
 <thead>
@@ -3235,7 +3235,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters when gantt is initialized:
+<td class="description">Event parameters when Gantt is initialized:
 <table class="params">
 <thead>
 <tr>
@@ -3337,7 +3337,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3379,7 +3379,7 @@ Triggered for every gantt action before its starts.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3490,7 +3490,7 @@ $("#gantt").ejGantt({
 ### actionComplete
 {:#events:actioncomplete}
 
-Triggered for every gantt action success event.
+Triggered for every Gantt action success event.
 
 <table class="params">
 <thead>
@@ -3504,7 +3504,7 @@ Triggered for every gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters when gantt is initialized:
+<td class="description">Event parameters when Gantt is initialized:
 <table class="params">
 <thead>
 <tr>
@@ -3834,7 +3834,7 @@ $("#gantt").ejGantt({
 {:#events:collapsed}
 
 
-Triggered after collapsed the gantt record
+Triggered after collapsed the Gantt record
 
 <table class="params">
 <thead>
@@ -3908,7 +3908,7 @@ $("#gantt").ejGantt({
 ### collapsing
 {:#events:collapsing}
 
-Triggered while collapsing the gantt record
+Triggered while collapsing the Gantt record
 
 <table class="params">
 <thead>
@@ -4014,7 +4014,7 @@ Triggered while Context Menu is rendered in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4051,7 +4051,7 @@ $("#gantt").ejGantt({
 ### endEdit
 {:#events:endedit}
 
-Triggered after save the modified cellValue in gantt.
+Triggered after save the modified cellValue in Gantt.
 
 <table class="params">
 <thead>
@@ -4273,7 +4273,7 @@ $("#gantt").ejGantt({
 ### load
 {:#events:load}
 
-Triggered while gantt is loaded
+Triggered while Gantt is loaded
 
 <table class="params">
 <thead>
@@ -4305,7 +4305,7 @@ Triggered while gantt is loaded
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model</td>
+<td class="description">Returns the Gantt model</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -4411,7 +4411,7 @@ $("#gantt").ejGantt({
 ### queryTaskbarInfo
 {:#events:querytaskbarinfo}
 
-Triggered while rendering each taskbar in the gantt chart
+Triggered while rendering each taskbar in the Gantt chart
 
 <table class="params">
 <thead>
