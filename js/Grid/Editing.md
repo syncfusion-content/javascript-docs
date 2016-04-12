@@ -848,7 +848,7 @@ The below validation script files are needed when editing is enabled with valida
 2. jquery.validate.unobtrusive.min.js
  
  
-### jQuery Validation
+### Jquery Validation
 
 
 You can set validation rules using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following are jQuery validation methods.
