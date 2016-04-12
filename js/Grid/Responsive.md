@@ -167,12 +167,12 @@ $("#Grid").ejGrid({
 ![](Responsive_images/Responsive_img8.png)
 {:caption}
 
-Default tablayout
+Default tab layout
 
 ![](Responsive_images/Responsive_img9.png)
 
 {:caption}
-Filtering design in tablayout.
+Filtering design in tab layout.
 
 ## Width
 
