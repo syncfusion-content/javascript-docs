@@ -3555,7 +3555,7 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
      
 {% endhighlight %}
 
-### scrollsettings.height `string/number`
+### scrollSettings.height `string/number`
 {:#members:scrollsettings-height}
 
 Gets or sets an object that indicates to render the kanban with specified scroll height.
