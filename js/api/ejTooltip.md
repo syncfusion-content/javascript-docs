@@ -1036,7 +1036,6 @@ Defines the width of the Tooltip popup.
 ## Methods
 
 ### destroy()
-
 {:#methods:destroy}
 
 Destroys the Tooltip control.
@@ -1184,7 +1183,7 @@ Void
 
 {% endhighlight %}
 
-### hide(\[effect]\)
+### hide([effect],[func])
 {:#methods:hide}
 
 Hide the Tooltip popup.
@@ -1374,7 +1373,7 @@ Void
 
 {% endhighlight %}
 
-### show(['effect'])
+### show([effect],[func])
 {:#methods:show}
 
 Shows the Tooltip popup.
@@ -1550,6 +1549,7 @@ content</td>
 ### beforeOpen
 {:#events:beforeOpen}
 
+
 This event is triggered before the Tooltip widget gets open.
 
 <table class="params">
@@ -1609,7 +1609,7 @@ content</td>
     
  {% endhighlight %}
  
- ### click
+### click
 {:#events:click}
 
 Fires on clicking to the target element. 
