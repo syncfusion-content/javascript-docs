@@ -191,13 +191,13 @@ The following screenshot illustrates the **Tab** content with rating control.
 
 
 
-## Ajax Content Load (Load On Demand) 
+## AJAX Content Load (Load On Demand) 
 
 You can change the contents in sub **Tab** element periodically and you are provided with a support to change the contents without any problems. To achieve the content load, use the Load on Demand concept.
 
-In Load On-Demand, the external HTML file with the necessary details is referred in &lt;href&gt; section during **Tab** header declaration section. When you click the **Tab** header, the Ajax automatically calls the content from the external files and displays in a **Tab** content section.
+In Load On-Demand, the external HTML file with the necessary details is referred in &lt;href&gt; section during **Tab** header declaration section. When you click the **Tab** header, the AJAX automatically calls the content from the external files and displays in a **Tab** content section.
 
-### Sub Tab with Ajax Content
+### Sub Tab with AJAX Content
 
 Each item is having a variety of options and these options are also specified in the limited space. So you can choose the **Tab** control that is used within the root **Tab** to specify more details.
 
@@ -246,7 +246,7 @@ The Load On-Demand supported **HTML** file content (cornSpinach.html)
 
 
 
-The Load On Demand supported html file content (chickenDelite.html)
+The Load On Demand supported HTML file content (chickenDelite.html)
 
 
 
@@ -315,7 +315,7 @@ The sub **Tab** control rendering script is represented in the following code ex
 
 
 
-At the time of Ajax call, the content fetched from external file referenced location is illustrated in the following screenshot.
+At the time of AJAX call, the content fetched from external file referenced location is illustrated in the following screenshot.
 
 
 

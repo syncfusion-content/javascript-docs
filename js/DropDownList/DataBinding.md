@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. You can bind either local array or oData, WebApi and other RESTful services in the DropDownList.
+To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. You can bind either local array or OData, WebApi and other RESTful services in the DropDownList.
 
 ## Fields
 
@@ -452,7 +452,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 ## Virtual Scrolling 
 
-To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via Ajax request.
+To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](http://help.syncfusion.com/js/api/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
 
 This supports two modes of virtualization. They are,
 

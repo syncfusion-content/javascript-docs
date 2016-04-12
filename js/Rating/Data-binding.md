@@ -9,11 +9,11 @@ documentation: ug
 
 # Data-binding
 
-## Knockout Binding
+## KnockoutJS Binding
 
-**Knockout** support allows you to bind the **HTML** elements with any of the available data models. For Knockout Binding, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
+**KnockoutJS** support allows you to bind the **HTML** elements with any of the available data models. For Knockout Binding, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
 
-**Knockout Binding** is of two types:
+**KnockoutJS Binding** is of two types:
 
 * One-way binding
 * Two-way binding
@@ -26,7 +26,7 @@ Apply the plugin and the property assigning the **Rating** element through the d
 
 The following example depicts the way to bind data to the **Rating** control through **Knockout** support.
 
- Add the following HTML to render rating with Knockout support.
+ Add the following HTML to render rating with KnockoutJS support.
 
 {% highlight html %}
 
@@ -82,22 +82,22 @@ The following screenshot illustrates **Rating** with **Knockout** support.
 
 ![](/js/Rating/Data-binding_images/Data-binding_img1.png) 
 
-## Angular Binding
+## AngularJS Binding
 
-For Angular Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files. Rating control is availed with two types of angular JS support namely, 
+For AngularJS Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files. Rating control is availed with two types of AngularJS support namely, 
 
 * One-way binding
 * Two-way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the Rating control. But the changes made in Rating control are not reflected or triggered in the scope collection. This kind of binding is applied to all the properties of the Rating control.
 
-**Two-way binding** supports both the processes; it applies the scope values to the Rating properties and also the changes made in the Rating control are reflected back and triggered within the angular scope change function. The Rating property called Value supports **two-way binding**.
+**Two-way binding** supports both the processes; it applies the scope values to the Rating properties and also the changes made in the Rating control are reflected back and triggered within the AngularJS scope change function. The Rating property called Value supports **two-way binding**.
 
 Apply the plugin and property assigning the **Rating** element through the directive that starts with the letter **“e-“.** 
 
 The following example depicts the way to bind data to the **Rating** control by **angular** support.
 
- Add the following HTML to render Rating with angular support.
+ Add the following HTML to render Rating with AngularJS support.
 
 {% highlight html %}
 

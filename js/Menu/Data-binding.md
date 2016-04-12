@@ -59,7 +59,7 @@ Specifies the image attribute to “img” tag inside items list </td></tr>
 <tr>
 <td>
 htmlAttribute</td><td>
-Specifies the html attributes to “li” item list</td></tr>
+Specifies the HTML attributes to “li” item list</td></tr>
 <tr>
 <td>
 imageUrl</td><td>

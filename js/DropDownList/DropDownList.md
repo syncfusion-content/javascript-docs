@@ -22,5 +22,5 @@ The DropDownList widget displays a single column list of items which enables you
 * **Cascading** - Cascades the data sources with multiple DropDownList. 
 * **State persistence** -  Persistent state of properties on page refresh. 
 * **Responsive** -  Suits responsive layouts. 
-* **Validation** - Inbuilt jQuery validation. 
+* **Validation** - Built in jQuery validation. 
 * **Accessibility** - Supports keyboard and ARIA accessibility.
