@@ -9,7 +9,7 @@ keywords: ejTreeGrid, API, Essential JS TreeGrid
 
 # ejTreeGrid
 
- Custom Design for Html Tree grid control.
+ Custom Design for HTML TreeGrid control.
 
 
 #### Syntax
@@ -2334,7 +2334,7 @@ Triggered after collapsed the TreeGrid record
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of collpsed record..</td>
+<td class="description">Returns the data of collapsed record..</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
