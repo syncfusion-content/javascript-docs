@@ -50,12 +50,12 @@ $(function () {
 
 ## Server configuration
 
-Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .Net. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
+Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .NET. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
 * WebAPI 
 * WCF Service
-* ASP.Net MVC Controller Action 
-* ASP.Net WebMethod 
+* ASP.NET MVC Controller Action 
+* ASP.NET WebMethod 
 
 Following code snippet demonstrate exporting with WebAPI controller.
 
@@ -147,7 +147,7 @@ Currently server helper functions allows following three types of exporting
 
 * Word
 * Excel
-* Pdf
+* PDF
 
 
 ## Multiple Grid export to single file
