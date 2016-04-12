@@ -53,7 +53,7 @@ $('#gantt').ejGantt();
 ### addDialogFields `Array`
 {:#members:adddialogfields}
 
-Specifies the fields to be included in the add dialog in gantt
+Specifies the fields to be included in the add dialog in Gantt
 
 
 #### Default Value:
@@ -108,7 +108,7 @@ Enables or disables the ability to resize column.
 ### allowGanttChartEditing `boolean`
 {:#members:allowganttchartediting}
 
-Enables or Disables gantt chart editing in gantt
+Enables or Disables gantt chart editing in Gantt
 
 
 #### Default Value:
@@ -137,7 +137,7 @@ Enables or Disables gantt chart editing in gantt
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
-Enables or Disables Keyboard navigation in gantt
+Enables or Disables Keyboard navigation in Gantt
 
 
 #### Default Value:
@@ -265,7 +265,7 @@ Enable or disable predecessor validation. When it is true, all the task's start 
 ### baselineColor `string`
 {:#members:baselinecolor}
 
-Specifies the baseline background color in gantt
+Specifies the baseline background color in Gantt
 
 
 #### Default Value:
@@ -399,7 +399,7 @@ Specifies the background of connector lines in Gantt
 ### connectorlineWidth `number`
 {:#members:connectorlinewidth}
 
-Specifies the width of the connector lines in gantt
+Specifies the width of the connector lines in Gantt
 
 
 #### Default Value:
@@ -426,7 +426,7 @@ Specifies the width of the connector lines in gantt
 ### cssClass `string`
 {:#members:cssclass}
 
-Specify the CSS class for gantt to achieve custom theme.
+Specify the CSS class for Gantt to achieve custom theme.
 
 
 #### Default Value:
@@ -452,7 +452,7 @@ Specify the CSS class for gantt to achieve custom theme.
 ### dataSource `array`
 {:#members:datasource}
 
-Collection of data or hierarchical data to represent in gantt
+Collection of data or hierarchical data to represent in Gantt
 
 
 #### Default Value:
@@ -480,7 +480,7 @@ Collection of data or hierarchical data to represent in gantt
 ### dateFormat `string`
 {:#members:dateformat}
 
-Specifies the dateFormat for gantt , given format is displayed in tooltip , grid .
+Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
 
 
 #### Default Value:
@@ -586,7 +586,7 @@ Specifies the duration unit for each tasks whether days or hours or minutes
 ### editDialogFields `Array`
 {:#members:editdialogfields}
 
-Specifies the fields to be included in the edit dialog in gantt
+Specifies the fields to be included in the edit dialog in Gantt
 
 
 #### Default Value:
@@ -669,13 +669,13 @@ Specifies the position of splitter in Gantt, based on column index in Gantt.
 ### editSettings `object`
 {:#members:editsettings}
 
-Specifies the editSettings options in gantt.
+Specifies the editSettings options in Gantt.
 
 
 ### editSettings.allowAdding `boolean`
 {:#members:editsettings-allowadding}
 
-Enables or disables add record icon in gantt toolbar
+Enables or disables add record icon in Gantt toolbar
 
 
 #### Default Value:
@@ -701,7 +701,7 @@ Enables or disables add record icon in gantt toolbar
 ### editSettings.allowDeleting `boolean`
 {:#members:editsettings-allowdeleting}
 
-Enables or disables delete icon in gantt toolbar
+Enables or disables delete icon in Gantt toolbar
 
 
 #### Default Value:
@@ -779,7 +779,7 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
-Enables or Disables enableAltRow row effect in gantt
+Enables or Disables enableAltRow row effect in Gantt
 
 
 #### Default Value:
@@ -804,7 +804,7 @@ Enables or Disables enableAltRow row effect in gantt
 ### enableCollapseAll `boolean`
 {:#members:enablecollapseall}
 
-Enables or disables the collapse all records when loading the gantt.
+Enables or disables the collapse all records when loading the Gantt.
 
 
 #### Default Value:
@@ -833,7 +833,7 @@ Enables or disables the collapse all records when loading the gantt.
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
-Enables or disables the contextmenu for gantt , when enabled contextmenu appears on right clicking gantt
+Enables or disables the contextmenu for Gantt , when enabled contextmenu appears on right clicking Gantt
 
 
 #### Default Value:
@@ -862,7 +862,7 @@ Enables or disables the contextmenu for gantt , when enabled contextmenu appears
 ### enableProgressBarResizing `boolean`
 {:#members:enableprogressbarresizing}
 
-Indicates whether we can edit the progress of a task interactively in gantt chart.
+Indicates whether we can edit the progress of a task interactively in Gantt.
 
 
 #### Default Value:
@@ -1022,7 +1022,7 @@ Specifies the mapping property path for end Date of a task in datasource
 ### highlightWeekends `boolean`
 {:#members:highlightweekends}
 
-Specifies whether to highlight the weekends in gantt .
+Specifies whether to highlight the weekends in Gantt .
 
 
 #### Default Value:
@@ -1048,7 +1048,7 @@ Specifies whether to highlight the weekends in gantt .
 ### holidays `array`
 {:#members:holidays}
 
-Collection of holidays with date, background and label information to be displayed in gantt.
+Collection of holidays with date, background and label information to be displayed in Gantt.
 
 
 #### Default Value:
@@ -1103,7 +1103,7 @@ Specifies whether to include weekends while calculating the duration of a task.
 ### locale `string`
 {:#members:locale}
 
-Specify the locale for gantt
+Specify the locale for Gantt
 
 
 #### Default Value:
@@ -1155,7 +1155,7 @@ Specifies the mapping property path for milestone in datasource
 ### parentProgressbarBackground `string`
 {:#members:parentprogressbarbackground}
 
-Specifies the background of parent progressbar in gantt
+Specifies the background of parent progressbar in Gantt
 
 
 #### Default Value:
@@ -1261,7 +1261,7 @@ Specifies the mapping property path for predecessors of a task in datasource
 ### progressbarBackground `string`
 {:#members:progressbarbackground}
 
-Specifies the background of progressbar in gantt
+Specifies the background of progressbar in Gantt
 
 
 #### Default Value:
@@ -1345,7 +1345,7 @@ Specifies the template for tooltip on resizing progressbar
 ### progressbarTooltipTemplateId `string`
 {:#members:progressbartooltiptemplateid}
 
-Specifies the template ID for customized tooltip for progressbar editing in gantt
+Specifies the template ID for customized tooltip for progressbar editing in Gantt
 
 
 #### Default Value:
@@ -1599,7 +1599,7 @@ Specifies whether rounding off the day working time edits
 ### rowHeight `number`
 {:#members:rowheight}
 
-Specifies the height of a single row in gantt. Also, we need to set same height in the CSS style with class name e-rowcell.
+Specifies the height of a single row in Gantt. Also, we need to set same height in the CSS style with class name e-rowcell.
 
 
 #### Default Value:
@@ -1628,7 +1628,7 @@ Specifies the height of a single row in gantt. Also, we need to set same height 
 {:#members:scheduleenddate}
 
 
-Specifies end date of the gantt schedule. By default, end date will be rounded to its next Saturday.
+Specifies end date of the Gantt schedule. By default, end date will be rounded to its next Saturday.
 
 
 #### Default Value:
