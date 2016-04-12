@@ -58,7 +58,7 @@ $(element).ejTooltip(options);
 ## Members
 
 ### allowKeyboardNavigation `boolean`
-{:#members:allowKeyboardNavigation}
+{:#members:allowkeyboardnavigation}
 
 Tooltip control can be accessed through the keyboard shortcut keys.
 
@@ -249,7 +249,7 @@ And also, absolute positioning via horizontal(x), vertical(y) e.g. A Tooltip at 
 {% endhighlight %}
 
 ### autoCloseTimeout `number`
-{:#members:autoCloseTimeout}
+{:#members:autoclosetimeout}
 
 Specified the delay to hide Tooltip when closeMode is auto.
 
@@ -279,7 +279,7 @@ Specified the delay to hide Tooltip when closeMode is auto.
 {% endhighlight %}
 
 ### closeMode `enum`
-{:#members:closeMode}
+{:#members:closemode}
 
 <ts name="ej.Tooltip.closeMode"/>
 
@@ -549,7 +549,7 @@ Enables or disables the Tooltip.
 {% endhighlight %}
 
 ### enableRTL `boolean`
-{:#members:enableRTL}
+{:#members:enablertl}
 
 Sets the Tooltip direction from right to left.
 
@@ -577,7 +577,7 @@ Sets the Tooltip direction from right to left.
 {% endhighlight %}
 
 ### enableInteraction `boolean`
-{:#members:enableInteraction}
+{:#members:enableinteraction}
 
 Enables the Tooltip to remains visible for the period of time.
 
@@ -634,7 +634,7 @@ Defines the height of the Tooltip popup.
 
 
 ### isBalloon  `boolean`
-{:#members:isBalloon}
+{:#members:isballoon}
 
 Enables the arrow in Tooltip.
 
@@ -1484,7 +1484,7 @@ Void
 ## Events
 
 ### beforeClose 
-{:#events:beforeClose}
+{:#events:beforeclose}
 
 This event is triggered before the Tooltip widget get closed.
 
@@ -1547,7 +1547,7 @@ content</td>
  {% endhighlight %}
 
 ### beforeOpen
-{:#events:beforeOpen}
+{:#events:beforeopen}
 
 
 This event is triggered before the Tooltip widget gets open.

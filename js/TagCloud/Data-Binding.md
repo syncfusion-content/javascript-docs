@@ -25,9 +25,9 @@ It accepts the data of object type that is usually the query string to fetch the
 
 It maps the corresponding text field name from the data table or **JSON** data that is assigned to the dataSource with the text property of the **TagCloud** control. The text value that is fetched from the table renders the value to be displayed in the **TagCloud**.
 
-### url
+### URL
 
-url field in the data table or **JSON** data assigned the datasource is mapped to the url property of the **TagCloud** control. The url property defines the link to be navigated on clicking the corresponding text item.
+URL field in the data table or **JSON** data assigned the datasource is mapped to the URL property of the **TagCloud** control. The URL property defines the link to be navigated on clicking the corresponding text item.
 
 ### frequency
 
@@ -35,7 +35,7 @@ It maps to the frequency field name from the data table or **JSON** data that is
 
 ## Local Binding
 
-Local data binding allows you to map **JSON** data to **TagCloud**, that the corresponding text, url, and frequency fields are assigned with a local **JSON** data.
+Local data binding allows you to map **JSON** data to **TagCloud**, that the corresponding text, URL, and frequency fields are assigned with a local **JSON** data.
 
 ### Defining the Local data for TagCloud
 
@@ -167,9 +167,9 @@ The following screenshot displays a **TagCloud** control with remote data bindin
 
 
 
-## Knockout binding
+## KnockoutJS binding
 
-Two types of knockout binding is supported,
+Two types of KnockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -178,7 +178,7 @@ One-way binding refers to the process of applying observable values to all avail
 
 Two-way binding supports both the processes – it applies the observable values to the **TagCloud** widget properties as well as the changes made in the **TagCloud** widget is also reflected back and triggered within the observable collections. 
 
-For more information about the knockout binding, refer the following link location,
+For more information about the KnockoutJS binding, refer the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
@@ -250,16 +250,16 @@ Execute the above code to render the following output.
 
 
 
-## Angular binding
+## AngularJS binding
 
-**TagCloud** widget is availed with two types of angularJS support namely, 
+**TagCloud** widget is availed with two types of AngularJS support namely, 
 
 * One way binding
 * Two way binding 
 
 One-way binding refers to the process of applying scope values to all available properties of the TagCloud widget, but the changes made in **TagCloud** widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **TagCloud** widget.
 
-Two-way binding supports both the processes – it applies the scope values to the **TagCloud** properties as well as the changes made in the **TagCloud** widget is also be reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes – it applies the scope values to the **TagCloud** properties as well as the changes made in the **TagCloud** widget is also be reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the **TagCloud** widget element through the directive that starts with a letter **“e-“.**
 
@@ -267,7 +267,7 @@ To know more detail about the AngularJS binding, refer the following link locati
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts you the way to bind data to the **TagCloud** widget using angularJS support,
+The following example depicts you the way to bind data to the **TagCloud** widget using AngularJS support,
 
 {% highlight html %}
 

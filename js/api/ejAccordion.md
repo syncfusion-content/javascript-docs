@@ -1064,7 +1064,7 @@ index</td>
 <td class="name">
 isAjaxReq</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Enable or disable the ajax request to the added panel</td>
+<td class="description">Enable or disable the AJAX request to the added panel</td>
 </tr>
 </tbody>
 </table>
@@ -2048,9 +2048,9 @@ Triggered before the AJAX content is loaded in a content panel. Arguments have l
 </tr>
 <tr>
 <td class="name">
- url </td>
+ URL </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns current ajax content location</td>
+<td class="description">returns current AJAX content location</td>
 </tr>
 </tbody>
 </table>
@@ -2122,9 +2122,9 @@ Triggered after AJAX load failed action. Arguments have URL, error message, and 
 </tr>
 <tr>
 <td class="name">
- url </td>
+ URL </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns current ajax content location</td>
+<td class="description">returns current AJAX content location</td>
 </tr>
 <tr>
 <td class="name">
@@ -2203,7 +2203,7 @@ Triggered after the AJAX content loads. Arguments have current model values.
 <td class="name">
  url </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the url</td>
+<td class="description">returns the name of the URL</td>
 </tr>
 </tbody>
 </table>
@@ -2277,9 +2277,9 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 </tr>
 <tr>
 <td class="name">
- url </td>
+ URL </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns current ajax content location</td>
+<td class="description">returns current AJAX content location</td>
 </tr>
 <tr>
 <td class="name">
@@ -2291,7 +2291,7 @@ Triggered after AJAX success action. Arguments have URL, content, and current mo
 <td class="name">
  content </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the ajax content.</td>
+<td class="description">returns the AJAX content.</td>
 </tr>
 </tbody>
 </table>

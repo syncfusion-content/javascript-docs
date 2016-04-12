@@ -156,7 +156,7 @@ Specify the CSS class to button to achieve custom theme.
 
 
 
-The dataSource contains the list of data to display in a cloud format. Each data contains a link url, frequency to categorize the font size and a display text.
+The dataSource contains the list of data to display in a cloud format. Each data contains a link URL, frequency to categorize the font size and a display text.
 
 
 
@@ -337,7 +337,7 @@ Defines the frequency number to categorize the font size.
 
 
 
-Defines the html attributes for the anchor elements inside the each tag items.
+Defines the HTML attributes for the anchor elements inside the each tag items.
 
 
 
@@ -381,7 +381,7 @@ Defines the tag value or display text.
 
 
 
-Defines the url link to navigate while click the tag.
+Defines the URL link to navigate while click the tag.
 
 
 
@@ -1189,9 +1189,9 @@ text</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">return current url link</td>
+<td class="description">return current URL link</td>
 </tr>
 </tbody>
 </table>
@@ -1459,9 +1459,9 @@ text</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">return current url link</td>
+<td class="description">return current URL link</td>
 </tr>
 </tbody>
 </table>
@@ -1557,9 +1557,9 @@ text</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">return current url link</td>
+<td class="description">return current URL link</td>
 </tr>
 </tbody>
 </table>

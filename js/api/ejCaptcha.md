@@ -411,7 +411,7 @@ Example
 
 
 
-Specifies the background apperance for the captcha.
+Specifies the background appearance for the captcha.
 
 <table class="params">
     <thead>
@@ -1139,7 +1139,7 @@ Example
 
 
 
-Fires when captch refresh begins.
+Fires when captcha refresh begins.
 
 <table class="params">
 <thead>
@@ -1204,7 +1204,7 @@ Example
 
 
 
-Fires after captch refresh completed.
+Fires after captcha refresh completed.
 
 <table class="params">
 <thead>
@@ -1269,7 +1269,7 @@ Example
 
 
 
-Fires when captch refresh fails to load.
+Fires when captcha refresh fails to load.
 
 <table class="params">
 <thead>
@@ -1334,7 +1334,7 @@ Example
 
 
 
-Fires after captch refresh succeeded.
+Fires after captcha refresh succeeded.
 
 <table class="params">
 <thead>

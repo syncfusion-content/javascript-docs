@@ -619,7 +619,7 @@ Specifies the target which needs to be excluded. i.e., The context menu will not
 ### fields `object`
 {:#members:fields}
 
-Fields used to bind the data source and it includes following field members to make databind easier.
+Fields used to bind the data source and it includes following field members to make data bind easier.
 
 #### Default Value
 
@@ -659,7 +659,7 @@ It receives datasource as Essential DataManager object and JSON object.
 {:#members:fields-htmlattribute}
 
 
-Specifies the html attributes to &ldquo;li&rdquo; item list.
+Specifies the hTML attributes to &ldquo;li&rdquo; item list.
 
 
 ### fields.id `string`
@@ -724,7 +724,7 @@ Specifies the text of menu items list.
 ### fields.url `string`
 {:#members:fields-url}
 
-Specifies the url to the anchor tag in menu item list.
+Specifies the URL to the anchor tag in menu item list.
 
 ### height `string|number`
 {:#members:height}
@@ -788,7 +788,7 @@ Specifies the height of the root menu.
 
 {:#members:htmlattributes}
 
-Specifies the list of html attributes to be added to menu control.
+Specifies the list of HTML attributes to be added to menu control.
 
 #### Default Value
 
@@ -871,7 +871,7 @@ ContextMenu</td>
 <td class="name">
 NormalMenu</td>
 <td class="type">string</td>
-<td class="default">normalmenu</td>
+<td class="default">normal menu</td>
 <td class="description">Used to set MenuType as NormalMenu</td>
 </tr>
 </tbody>
@@ -1089,8 +1089,8 @@ Vertical</td>
 {% endhighlight %}
 
 
-### showRooltLevelArrows `boolean`
-{:#members:showrooltlevelarrows}
+### showRootLevelArrows `boolean`
+{:#members:showRootLevelArrows}
 
 
 Specifies the main menu items arrows only to be shown if it contains child items.
@@ -1145,9 +1145,9 @@ Specifies the main menu items arrows only to be shown if it contains child items
 
 {% highlight javascript %}
 
-        //To set showRooltLevelArrows API value during initialization  
+        //To set showRootLevelArrows API value during initialization  
         
-        $("#menu").ejMenu({ showRooltLevelArrows: true });
+        $("#menu").ejMenu({ showRootLevelArrows: true });
 
 {% endhighlight %}
 
@@ -1219,7 +1219,7 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 <ts name="ej.Direction" />
 
 
-Specifies position of pulldown submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
+Specifies position of pull down submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
 
 <table class="props">
 <thead>
