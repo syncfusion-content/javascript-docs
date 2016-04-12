@@ -775,7 +775,7 @@ The event API to bind the action for active the tab items.
 
 <ts name="ej.Tab.Position"/>
 
-Specifies the position of Tab header as top, bottom, left or right. See below to get availanle Position
+Specifies the position of Tab header as top, bottom, left or right. See below to get available Position
 
 <table class="props">
 <thead>
@@ -1480,7 +1480,7 @@ Set the width for outer panel element, if not it&rsquo;s take parent width.
 
 
 
-Add new tab items with given name, url and given index position, if index null it&rsquo;s add last item.
+Add new tab items with given name, URL and given index position, if index null it&rsquo;s add last item.
 
 <table class="params">
 <thead>
@@ -1493,7 +1493,7 @@ Add new tab items with given name, url and given index position, if index null i
 <tbody>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">URL name / tab id.</td>
 </tr>
@@ -2316,7 +2316,7 @@ isInteraction</td>
 
 
 
-Triggered before ajax content has been loaded.
+Triggered before AJAX content has been loaded.
 
 <table class="params">
 <thead>
@@ -2386,10 +2386,10 @@ activeIndex</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string
 </span></td>
-<td class="description">returns the url of ajax request</td>
+<td class="description">returns the URL of AJAX request</td>
 </tr>
 <tr>
 <td class="name">
@@ -2443,7 +2443,7 @@ isInteraction</td>
 
 
 
-Triggered if error occurs in Ajax request.
+Triggered if error occurs in AJAX request.
 
 <table class="params">
 <thead>
@@ -2490,13 +2490,13 @@ type</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns ajax data details.</td>
+<td class="description">returns AJAX data details.</td>
 </tr>
 <tr>
 <td class="name">
 url</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the url of ajax request.</td>
+<td class="description">returns the URL of AJAX request.</td>
 </tr>
 </tbody>
 </table>
@@ -2544,7 +2544,7 @@ url</td>
 
 
 
-Triggered after ajax content load action.
+Triggered after AJAX content load action.
 
 <table class="params">
 <thead>
@@ -2613,9 +2613,9 @@ activeIndex</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the url of ajax request</td>
+<td class="description">returns the URL of AJAX request</td>
 </tr>
 <tr>
 <td class="name">
@@ -2716,19 +2716,19 @@ type</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">return ajax data.</td>
+<td class="description">return AJAX data.</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns ajax url</td>
+<td class="description">returns AJAX URL</td>
 </tr>
 <tr>
 <td class="name">
 content</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns content of ajax request.</td>
+<td class="description">returns content of AJAX request.</td>
 </tr>
 </tbody>
 </table>

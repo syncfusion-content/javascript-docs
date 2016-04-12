@@ -79,7 +79,7 @@ This property sets the text value for Toolbar item while mouse over in Toolbar. 
 
 **Toolbar** provides you an extensive data binding support to generate **Toolbar** items, that the values can be mapped to the **ToolBar** fields, namely **key** and **text**.
 
-And also you can add image, image styles, sprite css class, query and html attributes options with data binding fields. The following code explains the details about the data binding with **Toolbar**. 
+And also you can add image, image styles, sprite CSS class, query and HTML attributes options with data binding fields. The following code explains the details about the data binding with **Toolbar**. 
 
 {% highlight html %}
 
@@ -187,11 +187,11 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 ![](/js/Toolbar/Data-binding_images/Data-binding_img2.png) 
 
-## Knockout binding
+## KnockoutJS binding
 
-Knockout support allows you to bind the **HTML** elements against any of the available data models.
+KnockoutJS support allows you to bind the **HTML** elements against any of the available data models.
 
-Two types of knockout binding is supported,
+Two types of KnockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -200,12 +200,12 @@ One-way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes – it applies the observable values to the **Toolbar** properties as well as the changes made in the Toolbar widget is reflected back and triggered within the observable collections. 
 
-For more information about the knockout binding, refer the following link location,
+For more information about the KnockoutJS binding, refer the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
 
-N> Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
+N> Add the following script files along with the specified code to access KnockoutJS binding. It contains JS library for KnockoutJS binding.
 
 * Knockout.min.js
 * ej.widget.ko.min.js
@@ -215,7 +215,7 @@ The link for the script file is as follows:
 [http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js)
 
 
-The following code example depicts you the way to bind data to the **Toolbar** through the knockout support. 
+The following code example depicts you the way to bind data to the **Toolbar** through the KnockoutJS support. 
 
 {% highlight html %}
 
@@ -244,28 +244,28 @@ The following code example depicts you the way to bind data to the **Toolbar** t
  ![](/js/Toolbar/Data-binding_images/Data-binding_img4.png)
     
 
-## Angular binding
+## AngularJS binding
     
-**Toolbar** is availed with two types of **angular JS** support namely, 
+**Toolbar** is availed with two types of **AngularJS** support namely, 
 
 * One way binding
 * Two way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the Toolbar, where the changes made in **Toolbar** widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **Toolbar**.
 
-Two-way binding supports both the processes – it applies the scope values to the **Toolbar** properties as well as the changes made in the **Toolbar** widget is also reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes – it applies the scope values to the **Toolbar** properties as well as the changes made in the **Toolbar** widget is also reflected back and triggered within the AngularJS scope change function.
 
-To know more detail about the Angular binding, refer the following link location,
+To know more detail about the AngularJS binding, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
 
-Add the following script files as given in the below example to access knockoutJS binding. It contains JS library for angular binding.
+Add the following script files as given in the below example to access KnockoutJS binding. It contains JS library for AngularJS binding.
 
 * Angular.min.js
 * ej.widget.angular.min.js
 
-The following code example depicts you the way to bind data to the **Toolbar** widget through angularJS support,
+The following code example depicts you the way to bind data to the **Toolbar** widget through AngularJS support,
 
 {% highlight html %}
     

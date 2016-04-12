@@ -49,7 +49,7 @@ To clear the text of the DropDownList input, you can use [clearText](http://help
 
 ## Add an item dynamically to the DropDownList?
 
-You can use [addItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, html attributes, selected, image and its associated attributes such as alt, width, and height etc..,
+You can use [addItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, HTML attributes, selected, image and its associated attributes such as alt, width, and height etc..,
 
 Adding text and value is demonstrated in the below given sample,
 
@@ -125,7 +125,7 @@ The following screenshot will exhibit the select event arguments details,
 
 ## Append custom HTML in DropDownList popup outside the scroller part?
 
-Create a custom html element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
+Create a custom HTML element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
 
 ## Add check all option in popup list?
 
@@ -359,7 +359,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
     
 {% endhighlight %}
 
-Now override the addItem method which will be redefined based on this scenario to avoid adding duplicate data on vistualScrolling and empty the _updateSelectedIndexByValue prototype method.
+Now override the addItem method which will be redefined based on this scenario to avoid adding duplicate data on virtualScrolling and empty the _updateSelectedIndexByValue prototype method.
 
 {% highlight javascript %}
     

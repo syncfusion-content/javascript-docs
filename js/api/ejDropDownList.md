@@ -865,7 +865,7 @@ Defines the tag value to be selected initially.
 
 
 
-Defines the sprite css for the image tag.
+Defines the sprite CSS for the image tag.
 
 
 
@@ -1434,7 +1434,7 @@ none</td>
 <td class="name">
 delimiter</td>
 
-<td class="description last">can select multiple items and it's seperated by delimiterChar</td>
+<td class="description last">can select multiple items and it's separated by delimiterChar</td>
 </tr>
 <tr>
 <td class="name">
@@ -2259,7 +2259,7 @@ Sets the jQuery validation error message in the DropDownList
 
 
 
-Sets the jquery validation rules in the Dropdownlist.
+Sets the jQuery validation rules in the Dropdownlist.
 
 
 #### Default Value
@@ -2463,7 +2463,7 @@ Defines the width of the DropDownList textbox.
 
 <ts name="ej.VirtualScrollMode" />
 
-The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an Ajax request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items to be fetched from the server on every Ajax request. 
+The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items to be fetched from the server on every AJAX request. 
 
 This property enables the data to load dynamically in two ways. 
 
@@ -2567,7 +2567,7 @@ continuous</td>
 
 
 
-Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and html attributes for those items. 
+Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items. 
 
 <table class="params">
 <thead>
@@ -3455,7 +3455,7 @@ This method is used to retrieve the items value that are selected in the DropDow
 
 ####Returns: string
 
-This method will return the selected Item value and seperated by delimiterChar in multi selection mode. 
+This method will return the selected Item value and separated by delimiterChar in multi selection mode. 
 
 #### Example
 
@@ -4095,7 +4095,7 @@ This method is used to unselect an item in the DropDownList by using the given t
 <tr>
 <td class="name">index</td>
 <td class="type">string|number|array</td>
-<td class="description last"> unselect the list items realtes to given text</td>
+<td class="description last"> unselect the list items relates to given text</td>
 </tr>
 
 </tbody>
@@ -4183,7 +4183,7 @@ This method is used to unselect an item in the DropDownList by using the given v
 <tr>
 <td class="name">index</td>
 <td class="type">string|number|array</td>
-<td class="description last"> unselect the list items realtes to given values</td>
+<td class="description last"> unselect the list items relates to given values</td>
 </tr>
 
 </tbody>

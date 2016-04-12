@@ -1231,7 +1231,7 @@ Sets the title text of the dialog popup.
 
 
 
-The dropAreaText is displayed when the draganddrop support is enabled in the Uploadbox control.
+The dropAreaText is displayed when the drag and drop support is enabled in the Uploadbox control.
 
 
 
@@ -1284,7 +1284,7 @@ The dropAreaText is displayed when the draganddrop support is enabled in the Upl
 
 
 
-Specifies the dropAreaHeight when the draganddrop support is enabled in the Uploadbox control.
+Specifies the dropAreaHeight when the drag and drop support is enabled in the Uploadbox control.
 
 
 
@@ -1335,7 +1335,7 @@ Specifies the dropAreaHeight when the draganddrop support is enabled in the Uplo
 
 
 
-Specifies the dropAreaWidth when the draganddrop support is enabled in the Uploadbox control.
+Specifies the dropAreaWidth when the drag and drop support is enabled in the Uploadbox control.
 
 
 

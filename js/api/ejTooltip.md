@@ -88,7 +88,7 @@ Tooltip control can be accessed through the keyboard shortcut keys.
 ### animation `object`
 {:#members:animation}
 
-Specifies the animation behaviour in  Tooltip. It contains the following sub properties.
+Specifies the animation behavior in  Tooltip. It contains the following sub properties.
 
 <table>
 <tr>
@@ -283,7 +283,7 @@ Specified the delay to hide Tooltip when closeMode is auto.
 
 <ts name="ej.Tooltip.closeMode"/>
 
-Specifies the closing behaviour of Tooltip popup.
+Specifies the closing behavior of Tooltip popup.
 
 #### Default Value
 {:.param}
@@ -697,7 +697,7 @@ Sets the arrow position again popup.
 ### position.stem.horizontal `string`
 {:#members:position-stem-horizontal}
 
-Sets the arrow position again popup based on horiaontal(x) value
+Sets the arrow position again popup based on horizontal(x) value
 
 #### Default Value
 {:.param}
@@ -843,7 +843,7 @@ Specified a selector for elements, within the container.
 ### template `string`
 {:#members:template}
 
-The template to display the content with cutomized appearance.
+The template to display the content with customized appearance.
 
 #### Default Value
 {:.param}

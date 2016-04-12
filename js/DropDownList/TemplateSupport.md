@@ -17,7 +17,7 @@ You can create the popup header by using [headerTemplate](http://helpjs.syncfusi
 
 ## Template Field
 
-Create a set of div containers with common syntax or elements and assign it to the [template](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:template) property. You can add any Html mark-up element inside the DropDownList list using this property.
+Create a set of div containers with common syntax or elements and assign it to the [template](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:template) property. You can add any HTML mark-up element inside the DropDownList list using this property.
 
 In the demo, a JSON array is created with text, imgId, role and country which is initialized with dataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the items in popup.
 

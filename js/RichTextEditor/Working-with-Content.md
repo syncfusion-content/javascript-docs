@@ -182,7 +182,7 @@ N> Some browsers block the clipboard access from JavaScript. If you want to use 
 
 The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/js/api/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
 
-N>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 {% highlight html %}
 
@@ -339,9 +339,9 @@ N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.val
 
 ### jQuery Validation Methods
 
-The following are jquery validation methods.
+The following are jQuery validation methods.
 
-_List of jquery validation methods_
+_List of jQuery validation methods_
 
 <table>
 <tr>

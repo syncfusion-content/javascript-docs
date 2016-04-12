@@ -2085,7 +2085,7 @@ Shows the FontOption in the RTE.
 
 
 
-Shows footer in the RTE. When the footer is enabled, it displays the html tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
+Shows footer in the RTE. When the footer is enabled, it displays the HTML tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
 
 
 #### Default Value
@@ -3742,7 +3742,7 @@ $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to 
 
 
 
-Sets the jquery validation rules to the Rich Text Editor.
+Sets the jQuery validation rules to the Rich Text Editor.
 
 
 #### Default Value
@@ -3797,7 +3797,7 @@ Sets the jquery validation rules to the Rich Text Editor.
 ### validationMessage  `object`
 {:#members:validationmessage}
 
-Sets the jquery validation error message to the Rich Text Editor. 
+Sets the jQuery validation error message to the Rich Text Editor. 
 
 
 #### Default Value
@@ -4349,7 +4349,7 @@ $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.
 
 
 
-Gets the selected html string from the RTE control.
+Gets the selected HTML string from the RTE control.
 
 
 
@@ -4557,7 +4557,7 @@ menu visibility types.
 spriteCssClass </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">
-Sprite css class name for menu item icon.
+Sprite CSS class name for menu item icon.
 </td>
 </tr>
 </tbody>

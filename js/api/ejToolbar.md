@@ -509,7 +509,7 @@ Defines the group name for the item.
 
 
 
-Defines the html attributes such as id, class, styles for the item to extend the capability.
+Defines the HTML attributes such as id, class, styles for the item to extend the capability.
 
 
 
