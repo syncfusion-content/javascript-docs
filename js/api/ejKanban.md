@@ -631,7 +631,7 @@ To enable Context menu , All default context menu will show.
 ### contextMenuSettings.disableDefaultItems `array`
 {:#members:contextmenusettings-disabledefaultitems}
 
-Gets or sets a value that indicates the list of items needs to be diable from default context menu
+Gets or sets a value that indicates the list of items needs to be disable from default context menu
 
 #### Default Value:
 
@@ -984,7 +984,7 @@ Gets or sets an object that indicates to render the kanban with specified column
 ### columns.headerText `string`
 {:#members:columns-headertext}
 
-Gets or sets an object that indicates to render the kanban with specified columns headertext.
+Gets or sets an object that indicates to render the kanban with specified columns header text.
 
 #### Default Value
 
@@ -1076,7 +1076,7 @@ Gets or sets an object that indicates to render the kanban with specified column
 ### columns.isCollapsed `boolean`
 {:#members:columns-iscollapsed}
 
-To set column collape or expand state
+To set column collapse or expand state
 
 #### Default Value
 
@@ -1681,7 +1681,7 @@ Gets or sets a value that indicates to add the template of card .
 ### cardSettings.colorMapping `object`
 {:#members:cardsettings-colormapping}
 
-To customize the card bordercolor based on assinged task. Colors and corresponding values defined  here will be mapped with colorField mapped data source column.
+To customize the card border color based on assigned task. Colors and corresponding values defined  here will be mapped with colorField mapped data source column.
 
 #### Default Value
 
@@ -2908,7 +2908,7 @@ TagField has been Mapped into card tag.
 ### fields.title `string`
 {:#members:fields-title}
 
-TitleField has been Mapped to field in datasource for title content. If titlefield specified , card expand/collapse will be enabled with header and content section
+Title Field has been Mapped to field in datasource for title content. If title field specified , card expand/collapse will be enabled with header and content section
 
 #### Default Value:
 
@@ -2953,7 +2953,7 @@ TitleField has been Mapped to field in datasource for title content. If titlefie
 ### fields.color `string`
 {:#members:fields-color}
 
-To customize the card has been Mapped into card colorfield.
+To customize the card has been Mapped into card color field.
 
 #### Default Value:
 
@@ -3926,7 +3926,7 @@ To customize the operator based on searching.
 ### searchSettings.ignoreCase `boolean`
 {:#members:searchsettings-ignorecase}
 
-To customize the ignorecase based on searching.
+To customize the ignore case based on searching.
 
 #### Default Value:
 
@@ -4491,7 +4491,7 @@ Add a new card in kanban control.If parameters are not given default dialog will
     <tr>
     <td class="name">card</td>
     <td class="type"><span class="param-type">array</span></td>
-    <td class="description last">Pass the edited json data of card need to be add.</td>
+    <td class="description last">Pass the edited JSON data of card need to be add.</td>
     </tr>
     </tbody>
     </table>
@@ -4609,14 +4609,14 @@ Add or remove columns in kanban columns collections
     </thead>
     <tbody>
     <tr>
-    <td class="name">columndetails</td>
+    <td class="name">column details</td>
     <td class="type"><span class="param-type">array/string</span></td>
     <td class="description last">Pass array of columns or string of headerText to add/remove the column in kanban</td>
     </tr>
     <tr>
-    <td class="name">keyvalue</td>
+    <td class="name">key value</td>
     <td class="type"><span class="param-type">array/string</span></td>
-    <td class="description last">Pass array of columns or string of keyvalue to add/remove the column in kanban</td>
+    <td class="description last">Pass array of columns or string of key value to add/remove the column in kanban</td>
     </tr>
     <tr>
     <td class="name">action</td>
@@ -5309,7 +5309,7 @@ Method used for set validation to a field during editing.
 ### startEdit($div or key)
 {:#methods:startedit}
 
-Send an edit card request in kanban.Parameter will be Html element or primary key
+Send an edit card request in kanban.Parameter will be HTML element or primary key
 
   <table class="params">
     <thead>
@@ -5411,7 +5411,7 @@ Show columns in the kanban based on the header text.
 ### updateCard(key,data)
 {:#methods:updatecard}
 
-Update a card in kanban control based on key and json data given.
+Update a card in kanban control based on key and JSON data given.
 
  <table class="params">
     <thead>
@@ -5434,7 +5434,7 @@ Update a card in kanban control based on key and json data given.
     data
     </td>
     <td class="type"><span class="param-type">array</span></td>
-    <td class="description last">Pass the edited json data of card need to be update.</td>
+    <td class="description last">Pass the edited JSON data of card need to be update.</td>
     </tr>
     </tbody>
     </table>
@@ -5444,9 +5444,9 @@ Update a card in kanban control based on key and json data given.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a update card request to the kanban
+    // Sends a update card request to the Kanban
     kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Text: "Task 1", Assignee: "Andrew Piller");
     </script>
     
@@ -5457,7 +5457,7 @@ Update a card in kanban control based on key and json data given.
 ### actionBegin
 {:#events:actionbegin}
 
-Triggered for every kanban action before its starts.
+Triggered for every Kanban action before its starts.
     
  <table class="params">
         <thead>
@@ -5471,7 +5471,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban is initialized:
+        <td class="description last">Event parameters when Kanban is initialized:
         <table class="params">
         <thead>
         <tr>
@@ -5484,7 +5484,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">type</td>
@@ -5498,7 +5498,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban card editing action starts:
+        <td class="description last">Event parameters when Kanban card editing action starts:
         <table class="params">
         <thead>
         <tr>
@@ -5516,7 +5516,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">originalEventType</td>
@@ -5550,7 +5550,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban card save action starts:
+        <td class="description last">Event parameters when Kanban card save action starts:
         <table class="params">
         <thead>
         <tr>
@@ -5573,7 +5573,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">primaryKeyValue</td>
@@ -5597,7 +5597,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban card cancel action starts:
+        <td class="description last">Event parameters when Kanban card cancel action starts:
         <table class="params">
         <thead>
         <tr>
@@ -5615,7 +5615,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">requestType</td>
@@ -5634,7 +5634,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban card delete action starts:
+        <td class="description last">Event parameters when Kanban card delete action starts:
         <table class="params">
         <thead>
         <tr>
@@ -5657,7 +5657,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">requestType</td>
@@ -5699,7 +5699,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">requestType</td>
@@ -5718,7 +5718,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">argument</td>
         <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">Event parameters when kanban filtering action starts:
+        <td class="description last">Event parameters when Kanban filtering action starts:
         <table class="params">
         <thead>
         <tr>
@@ -5734,7 +5734,7 @@ Triggered for every kanban action before its starts.
         <td class="description last">Returns the cancel option value.</td>
         </tr>
         <tr>
-        <td class="name">currentFilteringobject</td>
+        <td class="name">currentFiltering object</td>
         <td class="type"><span class="param-type">object</span></td>
         <td class="description last">Returns current filtering object field name.</td>
         </tr>
@@ -5746,7 +5746,7 @@ Triggered for every kanban action before its starts.
         <tr>
         <td class="name">model</td>
         <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the kanban model.</td>
+        <td class="description last">Returns the Kanban model.</td>
         </tr>
         <tr>
         <td class="name">requestType</td>
@@ -5782,7 +5782,7 @@ Triggered for every kanban action before its starts.
 ### actionComplete
 {:#events:actioncomplete}
 
-tiggered for every kanban action success event.
+Triggered for every Kanban action success event.
 
 <table class="params">
     <thead>
@@ -5796,7 +5796,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">Object</span></td>
-    <td class="description last">Arguments in actionComplete when kanban is initialized.
+    <td class="description last">Arguments in actionComplete when Kanban is initialized.
     <table class="params">
     <thead>
     <tr>
@@ -5814,7 +5814,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">requestType</td>
@@ -5833,7 +5833,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Arguments in actionComplete after kanban card editing action is completed.
+    <td class="description last">Arguments in actionComplete after Kanban card editing action is completed.
     <table class="params">
     <thead>
     <tr>
@@ -5851,7 +5851,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -5876,7 +5876,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -5890,7 +5890,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Arguments in actionComplete after kanban card save action is completed.
+    <td class="description last">Arguments in actionComplete after Kanban card save action is completed.
     <table class="params">
     <thead>
     <tr>
@@ -5918,7 +5918,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -5933,7 +5933,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -5947,7 +5947,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Arguments in actionComplete after kanban card cancel action is completed.
+    <td class="description last">Arguments in actionComplete after Kanban card cancel action is completed.
     <table class="params">
     <thead>
     <tr>
@@ -5965,7 +5965,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -5980,7 +5980,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -5994,7 +5994,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Arguments in actionComplete after kanban card delete action is completed.
+    <td class="description last">Arguments in actionComplete after Kanban card delete action is completed.
     <table class="params">
     <thead>
     <tr>
@@ -6017,7 +6017,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -6032,7 +6032,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -6069,7 +6069,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -6084,7 +6084,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -6098,7 +6098,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">argument</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Arguments in actionComplete after kanban filtering action is completed.
+    <td class="description last">Arguments in actionComplete after Kanban filtering action is completed.
     <table class="params">
     <thead>
     <tr>
@@ -6126,7 +6126,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">model</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns the kanban model.</td>
+    <td class="description last">Returns the Kanban model.</td>
     </tr>
     <tr>
     <td class="name">originalEventType</td>
@@ -6141,7 +6141,7 @@ tiggered for every kanban action success event.
     <tr>
     <td class="name">target</td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Returns kanban element.</td>
+    <td class="description last">Returns Kanban element.</td>
     </tr>
     <tr>
     <td class="name">type</td>
@@ -6172,7 +6172,7 @@ tiggered for every kanban action success event.
 ### actionFailure
 {:#events:actionfailure}
 
-Triggered for every kanban action server failure event.
+Triggered for every Kanban action server failure event.
 
 <table class="params">
 <thead>
@@ -6186,7 +6186,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments in actionFailure when kanban is initialized.
+<td class="description last">Arguments in actionFailure when Kanban is initialized.
 <table class="params">
 <thead>
 <tr>
@@ -6204,7 +6204,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -6228,7 +6228,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionFailure after kanban card editing action is completed.
+<td class="description last">Arguments in actionFailure after Kanban card editing action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -6246,7 +6246,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">originalEventType</td>
@@ -6266,7 +6266,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6285,7 +6285,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionFailure after kanban card save action is completed.
+<td class="description last">Arguments in actionFailure after Kanban card save action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -6308,7 +6308,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">originalEventType</td>
@@ -6323,7 +6323,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6342,7 +6342,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionFailure after kanban card delete action is completed.
+<td class="description last">Arguments in actionFailure after Kanban card delete action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -6365,7 +6365,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">originalEventType</td>
@@ -6380,7 +6380,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6422,7 +6422,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">originalEventType</td>
@@ -6437,7 +6437,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6456,7 +6456,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionFailure after kanban filtering action is completed.
+<td class="description last">Arguments in actionFailure after Kanban filtering action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -6484,7 +6484,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">originalEventType</td>
@@ -6499,7 +6499,7 @@ Triggered for every kanban action server failure event.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6549,7 +6549,7 @@ Triggered before the task is going to be edited.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments when beginEdit event is triggered.
+<td class="description last">Arguments when begin edit event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -6567,7 +6567,7 @@ Triggered before the task is going to be edited.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">primaryKeyValue</td>
@@ -6577,7 +6577,7 @@ Triggered before the task is going to be edited.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns beginedit data.</td>
+<td class="description last">Returns begin edit data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6636,7 +6636,7 @@ Triggered before the task is going to be added
 <td class="name">
 model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">primaryKeyValue</td>
@@ -6676,7 +6676,7 @@ model</td>
 ### beforeCardSelect
 {:#events:beforecardselect}
 
-triggered before the card is going to be selecting.
+Triggered before the card is going to be selecting.
 
 <table class="params">
 <thead>
@@ -6731,7 +6731,7 @@ triggered before the card is going to be selecting.
 <td class="description last">Returns the previously select the card element</td>
 </tr>
 <tr>
-<td class="name">previousRowcellindex</td>
+<td class="name">previous Row cell index</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously select card indexes</td>
 </tr>
@@ -6743,7 +6743,7 @@ triggered before the card is going to be selecting.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -6815,17 +6815,17 @@ Trigger after the card is clicked.
 <tr>
 <td class="name">currentCard</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the current card to the kanban.</td>
+<td class="description last">Returns the current card to the Kanban.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban element.</td>
+<td class="description last">Returns Kanban element.</td>
 </tr>
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">columnName</td>
@@ -6896,7 +6896,7 @@ Triggered when the card is being dragged.
 <td class="description last">Returns drag data.</td>
 </tr>
 <tr>
-<td class="name">dragtarget</td>
+<td class="name">drag target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns drag start element.</td>
 </tr>
@@ -6908,7 +6908,7 @@ Triggered when the card is being dragged.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -6971,7 +6971,7 @@ Triggered when card dragging start.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns carddragstart data.</td>
+<td class="description last">Returns card drag start data.</td>
 </tr>
 <tr>
 <td class="name">draggedElement</td>
@@ -6981,10 +6981,10 @@ Triggered when card dragging start.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
-<td class="name">dragtarget</td>
+<td class="name">drag target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns drag start element.</td>
 </tr>
@@ -7017,7 +7017,7 @@ Triggered when card dragging start.
 ### cardDragStop
 {:#events:carddragstop}
 
-triggered when card dragging stops.
+Triggered when card dragging stops.
 
 <table class="params">
 <thead>
@@ -7054,17 +7054,17 @@ triggered when card dragging stops.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
-<td class="name">droptarget</td>
+<td class="name">drop target</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns drag stop element.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns dragg stop data.</td>
+<td class="description last">Returns drag stop data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7137,7 +7137,7 @@ Triggered when the card is Drop.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">target</td>
@@ -7223,7 +7223,7 @@ Triggered after the card is select.
 <td class="description last">Returns the previously select the card element</td>
 </tr>
 <tr>
-<td class="name">previousRowcellindex</td>
+<td class="name">previous Row cell index</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously select card indexes</td>
 </tr>
@@ -7235,7 +7235,7 @@ Triggered after the card is select.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -7307,7 +7307,7 @@ Triggered when card is double clicked.
 </tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7388,7 +7388,7 @@ Triggered before the card is going to be selecting
 <td class="description last">Returns the previously selecting the card element</td>
 </tr>
 <tr>
-<td class="name">previousRowcellindex</td>
+<td class="name">previous Row cell index</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously rowcell is selecting card indexes</td>
 </tr>
@@ -7400,7 +7400,7 @@ Triggered before the card is going to be selecting
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -7436,7 +7436,7 @@ Triggered before the card is going to be selecting
 ### dataBound
 {:#events:databound}
 
-Triggered the kanban is bound with data during initial rendering.
+Triggered the Kanban is bound with data during initial rendering.
 
 <table class="params">
 <thead>
@@ -7468,7 +7468,7 @@ Triggered the kanban is bound with data during initial rendering.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7525,7 +7525,7 @@ Triggered after the task is deleted.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -7603,7 +7603,7 @@ Triggered after the task is edited.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -7710,7 +7710,7 @@ Triggered when toolbar item is clicked in Kanban.
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7720,7 +7720,7 @@ Triggered when toolbar item is clicked in Kanban.
 <tr>
 <td class="name">toolbarData</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the toolbar object of the kanban.</td>
+<td class="description last">Returns the toolbar object of the Kanban.</td>
 </tr>
 </tbody>
 </table>
@@ -7760,7 +7760,7 @@ Triggered every time a single card rendered request is made to access particular
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from kanban
+<td class="description last">Event parameters from Kanban
 <table class="params">
 <thead>
 <tr>
@@ -7773,12 +7773,12 @@ Triggered every time a single card rendered request is made to access particular
 <tr>
 <td class="name">card</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban card.</td>
+<td class="description last">Returns Kanban card.</td>
 </tr>
 <tr>
 <td class="name">cell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns kanban card.</td>
+<td class="description last">Returns Kanban card.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -7798,7 +7798,7 @@ Triggered every time a single card rendered request is made to access particular
 <tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7860,7 +7860,7 @@ Triggered when context menu item is clicked in Kanban
 </tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -7936,7 +7936,7 @@ Triggered before the context menu is opened.
 </tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the kanban model.</td>
+<td class="description last">Returns the Kanban model.</td>
 </tr>
 <tr>
 <td class="name">type</td>

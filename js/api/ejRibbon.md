@@ -1465,7 +1465,7 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
 ### applicationTab.backstageSettings.pages.contentID `string`
 {:#members:applicationtab-backstagesettings-pages-contentid}
 
-Specifies the id of html elements like div, ul, etc., as ribbon backstage page's tab content.
+Specifies the id of HTML elements like div, ul, etc., as ribbon backstage page's tab content.
 
 #### Default Value:
 
@@ -3026,7 +3026,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
 ### tabs.groups.content.groups.cssClass `string`
 {:#members:tabs-groups-content-groups-cssclass}
 
-Specifies the css class property to apply styles to the button, split, dropdown controls in the groups.
+Specifies the CSS class property to apply styles to the button, split, dropdown controls in the groups.
 
 #### Default Value:
 
@@ -3191,7 +3191,7 @@ Specifies the Syncfusion button and menu as gallery extra items.
 ### tabs.groups.content.groups.customGalleryItems.buttonSettings `object`
 {:#members:tabs-groups-content-groups-customgalleryitems-buttonsettings}
 
-Specifies the syncfusion button members, events by using buttonSettings.
+Specifies the Syncfusion button members, events by using buttonSettings.
 
 #### Default Value:
 
@@ -3988,7 +3988,7 @@ Specifies the tooltip for gallery extra item's button.
 ### tabs.groups.content.groups.customToolTip `object`
 {:#members:tabs-groups-content-groups-customtooltip}
 
-Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and html support are also provided for title and content.
+Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and HTML support are also provided for title and content.
 
 #### Default Value:
 
@@ -4056,7 +4056,7 @@ Provides custom tooltip for button, split button, dropdown list, toggle button, 
 ### tabs.groups.content.groups.customToolTip.content `string`
 {:#members:tabs-groups-content-groups-customtooltip-content}
 
-Sets content to the custom tooltip. Text and html support are provided for content.
+Sets content to the custom tooltip. Text and HTML support are provided for content.
 
 #### Default Value:
 
@@ -4192,7 +4192,7 @@ Sets icon to the custom tooltip content.
 ### tabs.groups.content.groups.customToolTip.title `string`
 {:#members:tabs-groups-content-groups-customtooltip-title}
 
-Sets title to the custom tooltip. Text and html support are provided for title and the title is in bold for text format.
+Sets title to the custom tooltip. Text and HTML support are provided for title and the title is in bold for text format.
 
 #### Default Value:
 
@@ -8637,7 +8637,7 @@ Triggered before the ribbon control is destroyed.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8722,7 +8722,7 @@ Triggered when the control in the group is clicked successfully.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8789,7 +8789,7 @@ Triggered when the control in the group is clicked successfully.
 ### groupExpand
 {:#events:groupexpand}
 
-Triggered when the groupexpander in the group is clicked successfully.
+Triggered when the group expander in the group is clicked successfully.
 
 <table class="params">
 <thead>
@@ -8803,7 +8803,7 @@ Triggered when the groupexpander in the group is clicked successfully.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8818,7 +8818,7 @@ Triggered when the groupexpander in the group is clicked successfully.
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the clicked groupexpander.</td>
+<td class="description last">returns the clicked group expander.</td>
 </tr>
 </tbody>
 </table>
@@ -8884,7 +8884,7 @@ Triggered when an item in the Gallery control is clicked successfully.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
 </tr>
 <tr>
 <td class="name">model</td>
