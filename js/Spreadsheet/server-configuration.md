@@ -13,8 +13,8 @@ In Spreadsheet control, the import and export to and from excel is processed in 
 
 * WebAPI 
 * WCF Service
-* ASP.Net MVC Controller Action 
-* ASP.Net WebForm's WebMethod 
+* ASP.NET MVC Controller Action 
+* ASP.NET WebForm's WebMethod 
 
 Following code snippet demonstrate importing and exporting with WebAPI controller.
 
@@ -148,6 +148,6 @@ Import and Export Helper functions are available in the Assembly `Syncfusion.EJ.
 6. Syncfusion.XlsIO.Base
 7. Syncfusion.PDF.Base
 
-N> 1. _The above mentioned assemblies will be available in below location after Essential studio build installation._
+N> 1. _The above mentioned assemblies will be available in below location after Essential Studio build installation._
 N> 2. _C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\precompiledassemblies\x.x.x.x\y.y._
 N> 3. _x.x.x.x defines build version of Essential Studio and y.y defines .NET Framework version._
