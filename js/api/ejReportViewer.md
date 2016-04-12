@@ -199,7 +199,7 @@ Specifies the export formats.
 <tbody>
 <tr>
 <td class="name">All</td>
-<td class="description">Specifies the All property in ExportOptions to get all availble options.</td>
+<td class="description">Specifies the All property in ExportOptions to get all available options.</td>
 </tr>
 <tr>
 <td class="name">Pdf</td>
