@@ -7,13 +7,13 @@ control: OlapGauge
 documentation: ug
 ---
 
-# Knockout Binding
+# KnockoutJS Binding
 
-Knockout Binding allows you to bind HTML elements against any data model. It uses a Model-View-ViewModel(MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI), and ViewModel acts as the intermediary between Model and View.
+KnockoutJS Binding allows you to bind HTML elements against any data model. It uses a Model-View-ViewModel(MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI), and ViewModel acts as the intermediary between Model and View.
 
-When using Knockout, the view page is simply a HTML document with declarative bindings that you can link to the ViewModel. ViewModel is nothing but an object, holding a list of items for creating the OlapGauge control by using Knockout Binding. When you call ko.applyBindings with a specific element it binds everything under that element.
+When using KnockoutJS, the view page is simply a HTML document with declarative bindings that you can link to the ViewModel. ViewModel is nothing but an object, holding a list of items for creating the OlapGauge control by using KnockoutJS Binding. When you call ko.applyBindings with a specific element it binds everything under that element.
 
-The following code example illustrates how to bind data to the OlapGauge through Knockout Binding.
+The following code example illustrates how to bind data to the OlapGauge through KnockoutJS Binding.
 
 {% highlight javascript %}
 

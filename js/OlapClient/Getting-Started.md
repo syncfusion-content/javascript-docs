@@ -26,9 +26,9 @@ Now, set “GettingStarted.html” as start-up page by right-clicking on “Gett
 The scripts and style sheets that are mandatorily required to render OlapClient widget inside a HTML page are highlighted in an appropriate order as follows,
 
 1. ej.widgets.all.min.css
-2. jquery-1.10.2.min.js
-3. jquery.easing.1.3.min.js
-4. jquery.globalize.min.js
+2. jQuery-1.10.2.min.js
+3. jQuery.easing.1.3.min.js
+4. jQuery.globalize.min.js
 5. ej.web.all.min.js
 
 You can find the scripts and style sheets listed above could in any of the following locations:
@@ -79,7 +79,7 @@ In-order to initialize a OlapClient widget, first you need to define a “div”
 
 The “url” property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapClient widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI Url, which is **“../OlapClientService”**. Suppose if you are using WCF service, then the Url would look like **“../OlapClientService.svc”**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“../OlapClientService”**. Suppose if you are using WCF service, then the URL would look like **“../OlapClientService.svc”**. 
 
 ###WebAPI
 

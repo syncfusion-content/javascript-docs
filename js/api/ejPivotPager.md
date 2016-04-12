@@ -37,8 +37,8 @@ $("#PivotPager1").ejPivotPager(...);
 
 #### Requires
 
-* module:jquery-1.10.2.min.js
-* module:jquery.easing.1.3.min.js
+* module:jQuery-1.10.2.min.js
+* module:jQuery.easing.1.3.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
