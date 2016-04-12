@@ -250,7 +250,7 @@ $(function () {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtulScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtulScrolling") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `true`. It supports two mode of virtualization. They are,
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtualScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtulScrolling") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `true`. It supports two mode of virtualization. They are,
 
 1. Normal Mode
 2. Continuous Mode
