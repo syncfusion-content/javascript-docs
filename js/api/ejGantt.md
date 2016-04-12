@@ -2938,7 +2938,7 @@ To expand and collapse an item in gantt using item's ID
 <tr>
 <td class="name">taskId</td>
 <td class="type">Number</td>
-<td class="description">Exapnd or Collapse a record based on task id.</td>
+<td class="description">Expand or Collapse a record based on task id.</td>
 </tr>
 </tbody>
 </table>
