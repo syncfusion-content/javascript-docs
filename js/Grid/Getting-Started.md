@@ -46,7 +46,7 @@ It is referred when scrolling is used in the Grid.  </td></tr>
 <tr>
 <td>
 ej.waitingpopup.min.js</td><td>
-It is referred when the remote databinding is used in the Grid. The waiting popup shows while requesting the server for data.</td></tr>
+It is referred when the remote data binding is used in the Grid. The waiting popup shows while requesting the server for data.</td></tr>
 <tr>
 <td>
 ej.gridresize.min.js</td><td>
