@@ -32,7 +32,7 @@ To apply tooltip for cells, You need to use [`customAttributes`](http://help.syn
 
 Grid  supports SignalR features for live updates in record. Please find the below option to configure signalR with Grid. 
 
-1) Before configure SignalR with ejGrid. You need to Setup SignalR configuration in visual studio project. For reference, please find the link.
+1) Before configure SignalR with ejGrid. You need to Setup SignalR configuration in Visual Studio project. For reference, please find the link.
 
 N> [signalR](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
 
