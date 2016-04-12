@@ -159,67 +159,52 @@ These files are used when ribbon option is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
 ej.button.min.js</td><td rowspan = "16">
-These files are used while enable the cellFormatting , import and drag and drap feature in the Spreadsheet.</td></tr>
+These files are used while enable the cellFormatting , import and drag and drop feature in the Spreadsheet.</td></tr>
 <tr>
 <td>
-ej.checkbox.min.js</td><td>
-</td></tr>
+ej.checkbox.min.js</td></tr>
 <tr>
 <td>
-ej.radiobutton.min.js</td><td>
-</td></tr>
+ej.radiobutton.min.js</td></tr>
 <tr>
 <td>
-ej.dropdownlist.min.js</td><td>
-</td></tr>
+ej.dropdownlist.min.js</td></tr>
 <tr>
 <td>
-ej.listbox.min.js</td><td>
-</td></tr>
+ej.listbox.min.js</td></tr>
 <tr>
 <td>
-ej.editor.min.js</td><td>
-</td></tr>
+ej.editor.min.js</td></tr>
 <tr>
 <td>
-ej.menu.min.js</td><td>
-</td></tr>
+ej.menu.min.js</td></tr>
 <tr>
 <td>
-ej.colorpicker.min.js</td><td>
-</td></tr>
+ej.colorpicker.min.js</td></tr>
 <tr>
 <td>
-ej.slider.min.js</td><td>
-</td></tr>
+ej.slider.min.js</td></tr>
 <tr>
 <td>
-ej.splitbutton.min.js</td><td>
-</td></tr>
+ej.splitbutton.min.js</td></tr>
 <tr>
 <td>
-ej.togglebutton.min.js</td><td>
-</td></tr>
+ej.togglebutton.min.js</td></tr>
 <tr>
 <td>
-ej.toolbar.min.js</td><td>
-</td></tr>
+ej.toolbar.min.js</td></tr>
 <tr>
 <td>
-ej.tab.min.js</td><td>
-</td></tr>
+ej.tab.min.js</td></tr>
 <tr>
 <td>
-ej.uploadbox.min.js</td><td>
-</td></tr>
+ej.uploadbox.min.js</td></tr>
 <tr>
 <td>
-ej.draggable.min.js</td><td>
-</td></tr>
+ej.draggable.min.js</td></tr>
 <tr>
 <td>
-ej.datepicker.min.js</td><td>
-</td></tr>
+ej.datepicker.min.js</td></tr>
 <tr>
 <td>
 ej.calculate.min.js</td><td>
@@ -295,7 +280,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
 
 ## Initialize from Excel File
 
-The Spreadsheet control can be initialized from an Excel file by defining `importSettings.importUrl` with server endpoint. The server endpoint requires to be a .Net Web service or MVC controller/action, where excel file can be serialized in to JSON format, that the Spreadsheet can understand. The required .Net helper libraries are provided in Essential Studio build, please refer [this link](http://help.syncfusion.com/js/spreadsheet/server-configuration)  for configuring server.
+The Spreadsheet control can be initialized from an Excel file by defining `importSettings.importUrl` with server endpoint. The server endpoint requires to be a .NET Web service or MVC controller/action, where excel file can be serialized in to JSON format, that the Spreadsheet can understand. The required .NET helper libraries are provided in Essential Studio build, please refer [this link](http://help.syncfusion.com/js/spreadsheet/server-configuration)  for configuring server.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
@@ -319,7 +304,7 @@ The Spreadsheet control can be initialized from an Excel file by defining `impor
 
 ## Cell Navigation and Drag Fill
 
-The Spreadsheet provides built-in support for cell navigation as in MS Excel. The supported Key combinations are tabulated in the following table.
+The Spreadsheet provides built-in support for cell navigation as in Microsoft Excel. The supported Key combinations are tabulated in the following table.
 
 <table>
 <tr>

@@ -523,7 +523,7 @@ allowHyperlink: true
 
 Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
 
-Note: Need to specify importMapper while enabling this feature. Import feature supports xls, xlsx file formats.
+Note: Need to specify importMapper while enabling this feature. Import feature supports XLS, XLSX file formats.
 
 #### Default Value
 * true
@@ -1269,7 +1269,7 @@ importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
 ### importSettings.importUrl `String`
 {:#members:importsettings-importurl}
 
-Sets import Url to access the online files in the Spreadsheet.
+Sets import URL to access the online files in the Spreadsheet.
 
 Note: allowImport must be true while using this property.
 
@@ -4740,7 +4740,7 @@ $("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
 ### saveAsJSON()
 {:#methods:saveasjson}
 
-This method is used to save json data in Spreadsheet.
+This method is used to save JSON data in Spreadsheet.
 
 #### Example
 
@@ -4941,7 +4941,7 @@ $("#Spreadsheet").ejSpreadsheet("setBorder", { borderStyle: "solid", ID: "outsid
 
 {% endhighlight %}
 
-### setHyperlink(range, link, sheetIdx, selcells)
+### setHyperlink(range, link, sheetIdx)
 {:#methods:sethyperlink}
 
 This method is used to set the hyperlink in selected cells of the current sheet.
@@ -4968,11 +4968,6 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">If we pass cellAddress then which sheet to be navigate in the applied link.</td>
-</tr>
-<tr>
-<td class="name">selcells</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the selected cell address.</td>
 </tr>
 </tbody>
 </table>
@@ -7284,7 +7279,7 @@ This method is used to create pivot table.
 <tr>
 <td class="name">pvt</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the pivot range, sheet index, address and data dource .</td>
+<td class="description">Pass the pivot range, sheet index, address and data source .</td>
 </tr>
 </tbody>
 </table>
