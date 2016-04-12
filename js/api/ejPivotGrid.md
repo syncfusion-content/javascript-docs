@@ -35,8 +35,8 @@ $("#PivotGrid1").ejPivotGrid(...);
 
 #### Requires
 
-* module:jquery-1.10.2.min.js
-* module:jquery.easing.1.3.min.js
+* module:jQuery-1.10.2.min.js
+* module:jQuery.easing.1.3.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
@@ -1919,7 +1919,7 @@ Sets the mode for the PivotGrid widget for binding either OLAP or relational dat
     </thead>
     <tbody>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind an OLAP data source to PivotGrid.</td>
         </tr>
         <tr>

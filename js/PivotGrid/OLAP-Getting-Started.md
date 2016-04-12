@@ -18,9 +18,9 @@ This section covers the information that you need to know to populate a simple P
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are highlighted below in an appropriate order.
 
 1. ej.widgets.all.min.css
-2. jquery-1.10.2.min.js
-3. jquery.easing.1.3.min.js
-4. jquery.linq.js
+2. jQuery-1.10.2.min.js
+3. jQuery.easing.1.3.min.js
+4. jQuery.linq.js
 5. ej.web.all.min.js
 
 ### Initialize PivotGrid
@@ -121,8 +121,8 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are highlighted below in an appropriate order.
 
 1. ej.widgets.all.min.css
-2. jquery-1.10.2.min.js
-3. jquery.easing.1.3.min.js
+2. jQuery-1.10.2.min.js
+3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
 
 The scripts and style sheets listed above could be found in any of the following locations:
@@ -172,7 +172,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 
 The “url” property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI Url, which is **“../OLAPService”**. Suppose if you are using WCF service then the Url would look like **"../OLAPService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“../OLAPService”**. Suppose if you are using WCF service then the URL would look like **"../OLAPService.svc"**. 
 
 ### WebAPI
 

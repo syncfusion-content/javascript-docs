@@ -7,14 +7,14 @@ control: OlapGauge
 documentation: ug
 ---
 
-# Angular Binding
+# AngularJS Binding
 
-In order to achieve **Angular Binding,** refer the following script files.
+In order to achieve **AngularJS Binding,** refer the following script files.
 
 * angular.min.js
 * ej.widget.angular.min.js
 
-Apply the plugin and property assigning the OlapGauge element through the directive that starts with the letter "e-". The following example depicts how to bind data to the OlapGauge control through Angular support.
+Apply the plugin and property assigning the OlapGauge element through the directive that starts with the letter "e-". The following example depicts how to bind data to the OlapGauge control through AngularJS support.
 
 {% highlight javascript %}
 

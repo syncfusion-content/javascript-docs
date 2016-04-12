@@ -66,7 +66,7 @@ $(function() {
 
 
 ## Filtering Values
-Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. Atleast one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.
+Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. At least one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.
 
 ![](Grouping-Bar_images/OlapClntFiltering.png)
 
