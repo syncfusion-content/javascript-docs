@@ -259,7 +259,7 @@ $("#tile").ejTile("option", "badge.value", 5);
 {:#members:badge-position}
 
 
-<ts name = "ej.Tile.badge-position"/>
+<ts name = "ej.Tile.BadgePosition"/>
 
 Sets position for tile badge.
 
@@ -393,7 +393,7 @@ $("#tile").ejTile("option", "caption.text", "Settings");</script>           {% e
 {:#members:caption-alignment}
 
 
-<ts name = "ej.Tile.caption-alignment"/>
+<ts name = "ej.Tile.CaptionAlignment"/>
 
 
 It is used to align the text of a tile.
@@ -465,7 +465,7 @@ $("#tile").ejTile("option", "caption.alignment", "left");</script>           {% 
 {:#members:caption-position}
 
 
-<ts name = "ej.Tile.caption-position"/>
+<ts name = "ej.Tile.CaptionPosition"/>
 
 It is used to specify the caption position like innertop,  innerbottom and outer.
 
