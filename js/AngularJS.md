@@ -9,7 +9,7 @@ documentation: ug
 
 # AngularJS
 
-Essential JS includes angular directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
+Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
 {% highlight javascript %}
 
@@ -184,7 +184,7 @@ ejSplitButton</td><td>
 -</td></tr>
 <tr>
 <td>
-ejSpliter</td><td>
+ejSplitter</td><td>
 -</td></tr>
 <tr>
 <td>
