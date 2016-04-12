@@ -377,7 +377,7 @@ The custom parameter will be passed along with the data request of the grid as f
 ![](dataBinding_images/dataBinding_img7.png)
 
 
-#### Handling Http Errors
+#### Handling HTTP Errors
 
 During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
 
