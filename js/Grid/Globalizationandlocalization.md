@@ -432,7 +432,7 @@ PredicateAnd</td><td>
 AND</td></tr>
 <tr>
 <td>
-OK</td><td>
+Ok</td><td>
 OK</td></tr>
 <tr>
 <td>
