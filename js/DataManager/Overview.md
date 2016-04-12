@@ -17,7 +17,7 @@ documentation: ug
 
 2. Web Services
 
-3. oData
+3. OData
 
 Basically, all services that have **JSON** acts as a transport.
 
