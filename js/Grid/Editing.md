@@ -56,7 +56,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported inbuilt by [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") based on specific data type of the column. 
+The edit type of bound column can be customized using [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported built-in by [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") based on specific data type of the column. 
 
 * [`CheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "CheckBox") control for boolean data type.
 * [`NumericTextBox`](http://help.syncfusion.com/js/api/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
@@ -301,7 +301,7 @@ N> 2. `name` attribute is used to get the changed field values while saving the 
 N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
 N> 4.  For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -439,7 +439,7 @@ N> 1. `value` attribute is used to bind the corresponding field value while edit
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("dialogtemplate") or `enum` value (`ej.Grid.EditMode.DialogTemplate`).
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -625,7 +625,7 @@ N> 1. `value` attribute is used to bind the corresponding field value while edit
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Grid.EditMode.ExternalFormTemplate`).
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -851,7 +851,7 @@ The below validation script files are needed when editing is enabled with valida
 ### Jquery Validation
 
 
-You can set validation rules using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following are Jquery validation methods.
+You can set validation rules using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following are jQuery validation methods.
 
 __List__ __of__ __Jquery__ __validation__ __methods__
 
@@ -878,7 +878,7 @@ maxlength</td><td>
 Requires the element to be of given maximum length.</td></tr>
 <tr>
 <td>
-rangelength</td><td>
+range</td><td>
 Requires the element to be in given value range.</td></tr>
 <tr>
 <td>
@@ -899,7 +899,7 @@ The element requires a valid email.</td></tr>
 <tr>
 <td>
 url</td><td>
-The element requires a valid url</td></tr>
+The element requires a valid URL</td></tr>
 <tr>
 <td>
 date</td><td>
@@ -926,7 +926,7 @@ equalTo</td><td>
 Requires the element to be the same as another.</td></tr>
 </table>
 
-Grid supports all the standard validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
+Grid supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
 
 The following code example describes the above behavior.
 
@@ -968,7 +968,7 @@ The following output is displayed as a result of the above code example.
 
 ### Custom Validation
 
-In addition to Jquery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). 
+In addition to jQuery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). 
 
 Using `messages` property of [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") you can specify the error message for that column.
 
@@ -1366,7 +1366,7 @@ $(function () {
 {% endhighlight %}
 
 
-Please refer the below image for more information about batch paramaters
+Please refer the below image for more information about batch parameters
 
 ![](Editing_images/Editing_img25.png)
 
