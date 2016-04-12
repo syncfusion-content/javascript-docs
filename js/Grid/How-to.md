@@ -10,7 +10,7 @@ documentation: ug
 
 ## Display Tooltip
 
-To apply tooltip for cells, You need to use [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes) in columns. For more reference, about [`cutomAttributes`](http://help.syncfusion.com/js/grid/columns#custom-attribute).
+To apply tooltip for cells, You need to use [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes) in columns. For more reference, about [`customAttributes`](http://help.syncfusion.com/js/grid/columns#custom-attribute).
 
 {% highlight html %}
 <div id="Grid"></div>
