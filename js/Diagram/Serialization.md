@@ -24,11 +24,11 @@ var json = diagram.save();
 
 {% endhighlight %}
 
-This json data can be converted to string and stored for future use. The following snippet illustrates how to save the serialized JSON into local storage.
+This JSON data can be converted to string and stored for future use. The following snippet illustrates how to save the serialized JSON into local storage.
 
 {% highlight javascript %}
 
-//Saves the json object in to local storage
+//Saves the JSON object in to local storage
 localStorage.setItem("diagram", JSON.stringify(json));
 
 {% endhighlight %}
@@ -76,7 +76,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-* Html / Native template needs to be retained in the application level, while loading the native and html node.
+* HTML / Native template needs to be retained in the application level, while loading the Native and HTML node.
 
 {% highlight html %}
 
