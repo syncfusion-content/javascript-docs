@@ -387,13 +387,13 @@ Specifies the fontStyle of caption
 <td class="name">
 Normal</td>
 <td class="type">string</td> 
-<td class="description last">The texts are displayed in the defaut format</td>
+<td class="description last">The texts are displayed in the defalut format</td>
 </tr>
 <tr>
 <td class="name">
 Italic</td>
 <td class="type">string</td>
-<td class="description last">The texts are displayed in italized format</td>
+<td class="description last">The texts are displayed in italic format</td>
 </tr> 
 <tr>
 <td class="name">
@@ -477,7 +477,7 @@ Bold</td>
 <td class="name">
 Bolder</td>
 <td class="type">string</td>
-<td class="description last">The texts are displayed with incresed boldness compared to the bold option</td>
+<td class="description last">The texts are displayed with increased boldness compared to the bold option</td>
 </tr> 
 <tr>
 <td class="name">
@@ -1334,7 +1334,7 @@ captionSettings :{indicator :{symbol : { color :"green" }}}
 
 
 
-Specifies the url of image that represents indicator symbol.
+Specifies the URL of image that represents indicator symbol.
 
 
 
@@ -1645,7 +1645,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 
 <ts name="ej.datavisualization.BulletGraph.TextAlignment"/>
 
-Specifies the alignement of indicator with respect to scale based on text position
+Specifies the alignment of indicator with respect to scale based on text position
 
 
 <table class="props">
@@ -1742,7 +1742,7 @@ Specifies where indicator text should be anchored when indicator overlaps with o
 <td class="name">
 Start</td>
 <td class="type">string</td> 
-<td class="description last">The Start is used to anchor the text from begining</td>
+<td class="description last">The Start is used to anchor the text from beginning</td>
 </tr>
 <tr>
 <td class="name">
@@ -1987,8 +1987,8 @@ captionSettings :{ indicator :{textSpacing :10} }
 
 
 
-### captionSettings.indicator.visibile `boolean`
-{:#members:captionsettings-indicator-visibile}
+### captionSettings.indicator.visible `boolean`
+{:#members:captionsettings-indicator-visible}
 
 
 
@@ -4887,13 +4887,13 @@ Specifies the placement of labels in bullet graph scale.
 <td class="name">
 Inside</td>
 <td class="type">string</td> 
-<td class="description last">The Quantitive Scale Labels are placed inside the scale</td>
+<td class="description last">The Quantitative Scale Labels are placed inside the scale</td>
 </tr>
 <tr>
 <td class="name">
 Outside</td>
 <td class="type">string</td>
-<td class="description last">The Quantitive Scale labels are placed outside the scale</td>
+<td class="description last">The Quantitative Scale labels are placed outside the scale</td>
 </tr> 
 </tbody>
 </table>
@@ -5953,19 +5953,19 @@ Specifies the position of the ticks to render either above,below or inside
 <td class="name">
 Below</td>
 <td class="type">string</td> 
-<td class="description last">The ticks are positioned below the quantitive scale</td>
+<td class="description last">The ticks are positioned below the Quantitative scale</td>
 </tr>
 <tr>
 <td class="name">
 Above</td>
 <td class="type">string</td>
-<td class="description last">The ticks are positioned above the quantitive scale</td>
+<td class="description last">The ticks are positioned above the Quantitative scale</td>
 </tr> 
 <tr>
 <td class="name">
 Cross</td>
 <td class="type">string</td>
-<td class="description last">The ticks are placed inside the quantitive scale</td>
+<td class="description last">The ticks are placed inside the Quantitative scale</td>
 </tr> 
 </tbody>
 </table>
@@ -6437,7 +6437,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 
 
-To redraw the bulet graph
+To redraw the bullet graph
 
 
 
@@ -6826,7 +6826,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-Fires on rednering the feature measure bar.
+Fires on rendering the feature measure bar.
 
 <table class="params">
 <thead>
@@ -6926,7 +6926,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">for cancelling the event.</td>
+<td class="description last">for canceling the event.</td>
 </tr>
 </tbody>
 </table>

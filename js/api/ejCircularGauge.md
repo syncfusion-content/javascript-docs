@@ -242,7 +242,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.
 
 
 
-Specify the url of the frame background image for circular gauge
+Specify the URL of the frame background image for circular gauge
 
 
 #### Default Value
@@ -443,7 +443,7 @@ MiddleRight</td>
 <td class="name">
 Center</td>
 <td class="type">string</td>
-<td class="description">The gauge will be placed center of the ccontainer</td>
+<td class="description">The gauge will be placed center of the container</td>
 </tr> 
 <tr>
 <td class="name">

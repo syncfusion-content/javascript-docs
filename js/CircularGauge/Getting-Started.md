@@ -11,7 +11,7 @@ documentation: ug
 
 This section encompasses how to configure **Circular Gauge**. You can provide data to a **Circular Gauge** and make them to display  in a required way. 
 
-The following screen shot displays a **Circular Gauge**, which visually represents the functions of an Automobile speedometer with RPM (Rotation per Minute), KmpH (Kilometer per hour) and it denotes the speed level indicators (Safe, Caution and Danger). 
+The following screen shot displays a **Circular Gauge**, which visually represents the functions of an Automobile speedometer with RPM (Rotation per Minute), kph (Kilometer per hour) and it denotes the speed level indicators (Safe, Caution and Danger). 
 
 ![](/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png)
 
