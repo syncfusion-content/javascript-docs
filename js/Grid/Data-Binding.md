@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Data binding
 
-The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of databinding methods such as
+The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as
 
 1. Local data
 2. Remote data
