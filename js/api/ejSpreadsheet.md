@@ -1065,7 +1065,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 ### exportSettings.csvUrl `String`
 {:#members:exportsettings-csvurl}
 
-Gets or sets a value that indicates to define csvUrl for export to csv format.
+Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
 Note: User must specify allowExporting true while use this property.
 
