@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Data binding
 
-The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of databinding methods such as
+The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as
 
 1. Local data
 2. Remote data
@@ -377,7 +377,7 @@ The custom parameter will be passed along with the data request of the grid as f
 ![](dataBinding_images/dataBinding_img7.png)
 
 
-#### Handling Http Errors
+#### Handling HTTP Errors
 
 During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
 
