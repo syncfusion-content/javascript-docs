@@ -813,7 +813,7 @@ $("#Grid").ejGrid({
 ### columns.cssClass `String`
 {:#members:columns-cssclass}
 
-Gets or sets a value that indicates to provide custom css for an individual column.
+Gets or sets a value that indicates to provide custom CSS for an individual column.
 
 #### Default Value:
 {:.param}
@@ -860,7 +860,7 @@ $("#Grid").ejGrid({
 ### columns.dataSource `Array`
 {:#members:columns-datasource}
 
-Gets or sets a value that indicates to bind the external datasource to the particular column when columnEditType as "dropdownedit" and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
+Gets or sets a value that indicates to bind the external datasource to the particular column when column `editType` as `dropdownedit` and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
 
 #### Default Value:
 {:.param}
@@ -906,7 +906,7 @@ $("#Grid").ejGrid({
 ### columns.disableHtmlEncode `Boolean`
 {:#members:columns-disablehtmlencode}
 
-Gets or sets a value that indicates to render the grid content and header with an html elements
+Gets or sets a value that indicates to render the grid content and header with an HTML elements
 
 #### Default Value:
 {:.param}
@@ -2772,7 +2772,7 @@ $("#Grid").ejGrid({
 ### groupSettings.showDropArea `Boolean`
 {:#members:groupsettings-showdroparea}
 
-Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using groupsettings.
+Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using `groupSettings`.
 
 #### Default Value:
 {:.param}
@@ -3030,7 +3030,7 @@ $("#Grid").ejGrid({
 ### pageSettings.enableQueryString `Boolean`
 {:#members:pagesettings-enablequerystring}
 
-Gets or sets a value that indicates whether to pass the current page information as a query string along with the url while navigating to other page.
+Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
 
 #### Default Value:
 {:.param}
@@ -3238,7 +3238,7 @@ Gets or sets a value that indicates whether to define the number of pages to pri
 </tr>
 <tr>
 <td class="name">CurrentPage</td>
-<td class="description">Prints curren tpage.</td>
+<td class="description">Prints current page.</td>
 </tr>  
 </table>
 
@@ -3664,7 +3664,7 @@ This property is used to configure the selection behavior of the grid.
 ### selectionSettings.enableToggle `Boolean`
 {:#members:selectionsettings-enabletoggle}
 
-Gets or sets a value that indicates whether to enable the toggle selction behavior for row, cell and column.
+Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
 
 #### Default Value:
 {:.param}
@@ -3688,7 +3688,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.SelectionMode"/>
 
-Gets or sets a value that indicates whether to add the default selection actions as a seleciton mode.See selectionMode
+Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
 
 #### Default Value:
 {:.param}
@@ -5103,7 +5103,7 @@ It is used to clear specified cell selection based on the rowIndex and columnInd
 <tr>
 <td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">It is used to pass the rowindex of the cell</td>
+<td class="description last">It is used to pass the row index of the cell</td>
 </tr>
 <tr>
 <td class="name">columnIndex</td>
@@ -5561,7 +5561,7 @@ Delete a record in grid control when allowDeleting is set as true
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Pass the json data of record need to be delete.</td>
+<td class="description last">Pass the JSON data of record need to be delete.</td>
 </tr>
 </tbody>
 </table>
@@ -5757,7 +5757,7 @@ Expand or collapse the row based on the row state in grid
 <tbody>
 <tr>
 <td class="name">$target</td>
-<td class="type"><span class="param-type">JQuery</span></td>
+<td class="type"><span class="param-type">jQuery</span></td>
 <td class="description last">Pass the target object to expand/collapse the row based on its row state</td>
 </tr>
 </tbody>
@@ -5825,7 +5825,7 @@ $("#Grid").ejGrid("expandGroupDropArea");
 ### export(action, \[serverEvent\], \[multipleExport\], \[gridIds\])
 {:#methods:export}
 
-Export the grid content to excel, word or pdf document.
+Export the grid content to excel, word or PDF document.
 
 <table class="params">
 <thead>
@@ -5888,7 +5888,7 @@ $("#Grid").ejGrid("export","/api/GridExport/ExcelExport");
 ### export(action, \[serverEvent\], \[multipleExport\])
 {:#methods:export}
 
-Export the grid content to excel, word or pdf document.
+Export the grid content to excel, word or PDF document.
 
 <table class="params">
 <thead>
@@ -5912,7 +5912,7 @@ Export the grid content to excel, word or pdf document.
 <tr>
 <td class="name">multipleExport</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the mutiple exporting value as true/false</td>
+<td class="description last"><span class="optional">optional</span>Pass the multiple exporting value as true/false</td>
 </tr>
 </tbody>
 </table>
@@ -6861,7 +6861,7 @@ Get the row index based on the given tr element in grid.
 <tbody>
 <tr>
 <td class="name">$tr</td>
-<td class="type"><span class="param-type">JQuery</span></td>
+<td class="type"><span class="param-type">jQuery</span></td>
 <td class="description last">Pass the tr element in grid content to get its row index</td>
 </tr>
 </tbody>
@@ -8640,7 +8640,7 @@ Send an edit record request in grid
 <tbody>
 <tr>
 <td class="name">$tr</td>
-<td class="type"><span class="param-type">JQuery</span></td>
+<td class="type"><span class="param-type">jQuery</span></td>
 <td class="description last">Pass the tr- selected row element to be edited in grid</td>
 </tr>
 </tbody>
@@ -8744,7 +8744,7 @@ Update a edited record in grid control when allowEditing is set as true.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Pass the edited json data of record need to be update.</td>
+<td class="description last">Pass the edited JSON data of record need to be update.</td>
 </tr>
 </tbody>
 </table>
@@ -13215,7 +13215,7 @@ Triggered when record is clicked.
 <tr>
 <td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the jquery object of the current selected row.</td>
+<td class="description last">Returns the jQuery object of the current selected row.</td>
 </tr>
 <tr>
 <td class="name">cell</td>
@@ -13310,7 +13310,7 @@ Triggered when record is double clicked.
 <tr>
 <td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the jquery object of the current selected row.</td>
+<td class="description last">Returns the jQuery object of the current selected row.</td>
 </tr>
 <tr>
 <td class="name">cell</td>
