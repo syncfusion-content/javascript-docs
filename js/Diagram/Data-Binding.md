@@ -17,7 +17,7 @@ To explore those properties, see [Data source settings](/js/api/ejDiagram#member
 * Diagram supports three different kinds of Data binding.
 	* Local Data
 	* Remote Data
-	* Html Table Data
+	* HTML Table Data
 
 ## Local Data
 
@@ -173,7 +173,7 @@ function nodeTemplate(diagram, node) {
 
 ![](/js/Diagram/Data-Binding_images/Data-Binding_img2.png)
 
-## Html Table Data
+## HTML Table Data
 
 The Diagram provides support to populate the Diagram from the **HTML table**. It is flexible to convert HTML table to Diagram by using **Data Manager**.
 

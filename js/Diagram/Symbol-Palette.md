@@ -87,7 +87,7 @@ The following image shows the symbol palette with multiple palette Items.
 
 Palettes can be annotated with its header texts and you can change the height of palette header by using `HeaderHeight` property of symbol palette.
 
-Also, you can embed any Html element into a palette header by defining the ScriptTemplate id to palette's templateId property. Following code example illustrates how to customize palette headers.
+Also, you can embed any HTML element into a palette header by defining the ScriptTemplate id to palette's templateId property. Following code example illustrates how to customize palette headers.
 
 {% highlight html %}
 
@@ -217,7 +217,7 @@ Symbol size will be set based on the following precedence.
 
 * Symbol size will be rendered in the palette based on node.paletteItem's `width` and `height` property. 
 * If paletteItem's width and height property is not specified, symbol size will be rendered in the palette based on model's `paletteItemWidth` and `paletteItemHeight` property. 
-* If you dont specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
+* If you don't specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
  
 
 ### Stretch the symbols into the palette
@@ -347,7 +347,7 @@ Symbol preview size will be set based on the following precedence.
 
 * Symbol preview size will be set based on node.paletteItem's `previewWidth` and `previewHeight` property. 
 * If paletteItem's width and height property is not specified, symbol size will be set based on model's `previewWidth` and `previewHeight` property. 
-* If you dont specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
+* If you don't specify above two, then symbol size will be rendered in the palette based on node's `width` and `height` property. 
 
 ## Show/hide the symbol Text 
 

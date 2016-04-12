@@ -13,7 +13,7 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 * Text Node
 * Image Node
-* Html Node
+* HTML Node
 * Native Node
 * Basic Shapes
 * Flow Shapes
@@ -78,7 +78,7 @@ Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrom
 
 ## HTML
 
-**Html** elements can be embedded in the Diagram through **Html** type node. To create a html node, you need to set the `type` of node as "html". In addition, you need to set the id of html template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
+**Html** elements can be embedded in the Diagram through **Html** type node. To create a HTML node, you need to set the `type` of node as "html". In addition, you need to set the id of HTML template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
 
 {% highlight html %}
 
@@ -116,7 +116,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 ## Native
 
-**Diagram** provides support to embed **SVG** element into a node. To create a native node, the `type` node should be set as "native". Also, you need to define the id of the svg template by using the `templateId` property of node. The following code illustrates how a **Native node** is created.
+**Diagram** provides support to embed **SVG** element into a node. To create a native node, the `type` node should be set as "native". Also, you need to define the id of the SVG template by using the `templateId` property of node. The following code illustrates how a **Native node** is created.
 
 {% highlight html %}
 
@@ -257,7 +257,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight javascript %}
 
