@@ -52,7 +52,7 @@ Binds the appointment description field name and also its related validation rul
 <tr>
 <td>
 allDay<br/><br/></td><td>
-Binds the name of the allDay field. It accepts the <b>boolean</b> value and indicates whether the appointment is an allday appointment or not.<br/><br/></td></tr>
+Binds the name of the `allDay` field. It accepts the <b>boolean</b> value and indicates whether the appointment is an all-day appointment or not.<br/><br/></td></tr>
 <tr>
 <td>
 categorize<br/><br/></td><td>
@@ -60,7 +60,7 @@ Binds the name of the categorize field and also its related validation rules. It
 <tr>
 <td>
 priority<br/><br/></td><td>
-Binds the name of the priority field and its related validation rules, which indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
+Binds the name of the priority field, its related validation rules and also indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 resourceFields<br/><br/></td><td>
@@ -156,7 +156,7 @@ $(function() {
 
 ## Appointment Field Validation
 
-It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each of the fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
+It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
 
 Refer the appointment fields specified with validation rules from the following code example.
 
@@ -243,7 +243,7 @@ $("#schedule").ejSchedule({
 
 ## Binding Remote Data Service
 
-The appointment data can be bound to the Scheduler through the [Odata](http://www.odata.org) remote services, where the service URL is mapped with [ejDatamanager](/js/datamanager/overview) and then configured to the Schedule dataSource API.
+The appointment data can be bound to the Scheduler through the [Odata](http://www.odata.org) remote services, where the service URL is mapped with [Data manager](/js/datamanager/overview) and then configured to the Schedule dataSource API.
 
 {% highlight html %}
 
@@ -309,7 +309,7 @@ $(function() {
 
 ## WebAPI Binding
 
-The Schedule appointment data can also be bound through the Web API services. It is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
+The Schedule appointment data can be bound through the Web API service and it is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
 
 {% highlight html %}
 
@@ -349,7 +349,7 @@ public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String
 
 {% endhighlight %}
 
-## Databinding using OLEDB
+## Data binding using OLEDB
 
 The appointment data can also be bound to the Scheduler using OLEDB database as depicted below.
 
@@ -564,9 +564,9 @@ The control code to handle the CRUD operation are as follows.
 
 {% endhighlight %}
 
-## ASP.Net Web Method Binding
+## ASP.NET Web Method Binding
 
-The Schedule appointment data can retrieve data from ASP.Net Web methods by making use of the UrlAdaptor of ejDataManager.
+The Schedule appointment data can retrieve data from ASP.NET Web methods by making use of the UrlAdaptor of ejDataManager.
 
 {% highlight html %}
 
@@ -990,9 +990,10 @@ public static void Crud(List<object> added, List<object> changed, List<object> d
 
 {% endhighlight %}
 
+
 ## MVC Controller Action Binding
 
-The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ejDataManager](/js/datamanager/overview).
+The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ej.DataManager](/js/datamanager/overview).
 
 {% highlight html %}
 

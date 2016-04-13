@@ -62,7 +62,7 @@ Binds the color field name in the dataSource to the resourceSettings <b>color</b
 <tr>
 <td>
 appointmentClass<br/><br/></td><td>
-Binds the appointmentClass field name in the dataSource. It applies the custom css class name to the appointments based on the resources.<br/><br/><br/><br/></td></tr>
+Binds the appointmentClass field name in the dataSource. It applies the custom CSS class name to the appointments based on the resources.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 start<br/><br/></td><td>
@@ -156,11 +156,11 @@ N> The resource object defined at **first level** within the **resources** colle
 
 ## Data Binding
 
-The resources data can be bound to the Schedule control through the **resourceSettings** option available within the **resources** property. The data-binding can be done either using JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance which contains the resources related data.
+The resource data can be bound to the Schedule control through the **resourceSettings** options available within the **resources** property. The data-binding can be done either using JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance which contains the resources related data.
 
 ### JSON Data
 
-**Example**: To set the resource data using array of **JSON** object collection
+**Example**: To set the resource data with array of **JSON** object collection
 
 {% highlight html %}
 

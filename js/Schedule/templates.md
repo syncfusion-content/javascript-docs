@@ -30,7 +30,7 @@ Apart from the dataSource field names, the template can also access the current 
 * workweek
 * agenda
 * month
-* customview
+* custom view
 
 It is controlled by an API named [appointmentTemplateId](/js/api/ejschedule#members:appointmenttemplateid) which accepts the id value of the template design block preceded by a symbol **#**.
 
@@ -74,7 +74,7 @@ $(function() {
 
 ## Cell Templates
 
-The template design that applies on the Scheduler elements such as allday cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
+The template design that applies on the Scheduler elements such as all-day cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
 
 **All-day cells** - An API named [allDayCellsTemplateId](/js/api/ejschedule#members:alldaycellstemplateid) can be used to customize the all-day cells, which accepts the id of the template design block preceded with a symbol **#**.
 
@@ -87,7 +87,7 @@ The cells can be customized with the following code example.
 <!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-<!-- Template for Alldaycells -->
+<!-- Template for All-day cells -->
 <script id="alldayTemplate" type="text/x-jsrender">
     <div class="e-icon e-scheduleallday" style="opacity:0.5"></div>
     <span style="opacity:0.5">AllDay</span>
@@ -179,7 +179,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
 function _dateFormat(date) {
     var dFormat = ej.format(new Date(date), "dd/MM");

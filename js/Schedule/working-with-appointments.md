@@ -23,7 +23,7 @@ N> If the normal appointment is to be created for two days (say from November 25
 
 ### All-Day 
 
-Represents an appointment that is created for an entire day such as holiday events. It renders separately in All-day row, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view. 
+Represents an appointment that is created for an entire day such as holiday events. It renders separately in an All-day row, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view. 
 
 N> An all-day row is normally visible on the Scheduler, as the [showAllDayRow](/js/api/ejschedule#members:showalldayrow) property is set to true by default. 
 
@@ -924,7 +924,7 @@ It holds the binding name for <b>color</b> field in the categorize dataSource.<b
 <tr>
 <td>
 fontColor<br/><br/></td><td>
-It holds the binding name for <b>fontcolor</b> field in the categorize dataSource. This font color apply in the appointment.<br/><br/></td></tr>
+It holds the binding name for <b>fontColor</b> field in the categorize dataSource. This font color applies for the appointment.<br/><br/></td></tr>
 </table>
 
 {% highlight html %}
@@ -1114,7 +1114,7 @@ $(function() {
 
 ### Appointment Search
 
-The public method [searchAppointments](/js/api/ejschedule#methods:searchappointments) is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignorecase.
+The public method [searchAppointments](/js/api/ejschedule#methods:searchappointments) is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignore case.
 
 **searchString** - It is used to search the given word/sentence within the appointment data.
 
@@ -1285,7 +1285,7 @@ Purpose<br/><br/></th></tr>
 <td>
 1<br/><br/></td><td>
 FREQ<br/><br/></td><td>
-Maintains the Repeat type value of the appointment. <br/><br/>(<b>Example</b>: Daily, Weekly, Monthly, Yearly, Every weekday)<br/><br/>Example: <b>FREQ=DAILY</b>;INTERVAL=1<br/><br/></td></tr>
+Maintains the Repeat type value of the appointment. <br/><br/>(<b>Example</b>: Daily, Weekly, Monthly, Yearly, Every week day)<br/><br/>Example: <b>FREQ=DAILY</b>;INTERVAL=1<br/><br/></td></tr>
 <tr>
 <td>
 2<br/><br/></td><td>
