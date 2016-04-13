@@ -40,8 +40,12 @@ $('#Schedule').ejSchedule();
 * module:ej.globalize.min.js
 * module:ej.core.js
 * module:ej.data.js
-* module:ej.schedule.js
 * module:ej.scroller.js
+* module:ej.touch.js
+* module:ej.draggable.js
+* module:ej.navigationdrawerbase.js
+* module:ej.listviewbase.js
+* module:ej.listview.js
 * module:ej.radiobutton.js
 * module:ej.editor.js
 * module:ej.dropdownlist.js
@@ -54,6 +58,7 @@ $('#Schedule').ejSchedule();
 * module:ej.timepicker.js
 * module:ej.navigationdrawer.js
 * module:ej.recurrenceeditor.js
+* module:ej.schedule.js
 
 ## Members
 
@@ -217,7 +222,7 @@ The dataSource option accepts either JSON object collection or DataManager ([ej.
 
 {% endhighlight %}
 
-#### Example - To set the dataSource with DataManager instance.
+#### Example - To set the dataSource with data manager instance.
 
 {% highlight html %}
 
@@ -252,7 +257,7 @@ It holds either the ej.Query() object or simply the query string that retrieves 
 
 * null
 
-#### Example - To query the datamanager to fetch specific record count from the Events table.
+#### Example - Query the data manager to fetch specific record count from the Events table.
 
 {% highlight html %}
 
@@ -503,7 +508,7 @@ Binds the name of recurrenceRule field in dataSource. It indicates the recurrenc
 ### appointmentSettings.allDay `string`
 {:#members:appointmentsettings-allday}
 
-Binds the name of allDay field in dataSource. It indicates whether the appointment is an allday appointment or not.
+Binds the name of `allDay` field in dataSource. It indicates whether the appointment is an all-day appointment or not.
 
 #### Default Value
 
@@ -4359,7 +4364,7 @@ The following code snippet explain how to delete an appointment by using the GUI
 
 {% endhighlight %}
 
-#### Example - Using Appointent Object
+#### Example - Using Appointment Object
 
 The following code snippet explain how to delete an appointment by passing appointment object, while clicking an appointment.
 
@@ -4762,7 +4767,7 @@ $('#Schedule').ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -5789,7 +5794,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -5878,7 +5883,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -5967,7 +5972,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -6050,7 +6055,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -6565,7 +6570,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -6648,7 +6653,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -6741,7 +6746,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -7021,7 +7026,7 @@ Triggers every time before the elements of the scheduler such as work cells, tim
         <tr>
             <td class="name">appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the current appontment data.</td>
+            <td class="description">Returns the current appointment data.</td>
         </tr>
         <tr>
             <td class="name">element</td>
@@ -7207,7 +7212,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -7288,7 +7293,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -7374,7 +7379,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -7404,7 +7409,7 @@ Triggers when the overflow button is clicked.
         <tr>
             <td class="name">object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object consisting of starttime, endtime and resource value of the underlying cell on which the clicked overflow button is present.  </td>
+            <td class="description">Returns the object consisting of start time, end time and resource value of the underlying cell on which the clicked overflow button is present.  </td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -7461,7 +7466,7 @@ Triggers while mouse hovering on the overflow button.
         <tr>
             <td class="name">object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object consisting of starttime, endtime and resource value of the underlying cell on which the overflow button is currently hovered.  </td>
+            <td class="description">Returns the object consisting of start time, end time and resource value of the underlying cell on which the overflow button is currently hovered.  </td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -7687,7 +7692,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
@@ -7775,7 +7780,7 @@ $("#Schedule").ejSchedule({
                     startTime: "StartTime",
                     endTime: "EndTime",
                     subject: "Subject",
-                    allday:"AllDay",
+                    allDay:"AllDay",
                     recurrence:"Recurrence",
                     recurrenceRule:"RecurrenceRule",
                     startTimeZone: "StartTimeZone",
