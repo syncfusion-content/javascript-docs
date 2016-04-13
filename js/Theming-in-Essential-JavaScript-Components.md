@@ -27,7 +27,7 @@ By default, there are 13 themes available for Essential JavaScript widgets.
 * gradient-saffron-dark
 * bootstrap-theme
 
-Syncfusion provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the widgets. All the above specified theme files are available within the **css** folder which is mentioned [here](/js/installation-and-deployment#install-location).
+Syncfusion provides a CSS file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the widgets. All the above specified theme files are available within the **css** folder which is mentioned [here](/js/installation-and-deployment#install-location).
 
 ## Adding specific theme to your application
 
@@ -43,7 +43,7 @@ N>   appfolder\Content\ej\flat-saffron
 
 N> Both of these folders and files are mandatory for any themes. 
 
-3. Copy the css files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
+3. Copy the CSS files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
 4. Refer the **ej.web.all.min.css** file in your HTML page within the `<head>` section before making any script reference as shown below,
 
 {% highlight html %}
@@ -108,7 +108,7 @@ By default, the root element of each web widgets are given a unique class name w
 There are two possible ways to customize the theming of the component either by – 
 
 * Overwriting the styles of specific child elements of a component by defining the customized styles explicitly in the sample side. 
-* Replacing the entire css file with the Customized CSS class name and referring it in the application.
+* Replacing the entire CSS file with the Customized CSS class name and referring it in the application.
 
 #### Overwriting the styles of specific child elements of a DatePicker widget:
 
@@ -118,7 +118,7 @@ By default, the header element of the DatePicker control which displays the Mont
 DatePicker control with header color displayed based on the theme applied.
 {:.caption}
 
-To change the background-color of the above header element of the DatePicker, define the customized css styles to be applied for the header element (**e-header**) of the DatePicker within the **Style** section of the HTML page as shown below, 
+To change the background-color of the above header element of the DatePicker, define the customized CSS styles to be applied for the header element (**e-header**) of the DatePicker within the **Style** section of the HTML page as shown below, 
 
 {% highlight css %}
 
@@ -158,20 +158,20 @@ Now you need to assign the user-defined CSS class name to the DatePicker compone
 
 {% endhighlight %}
 
-When you run the above code, the background color for the header element (**e-header**) of the DatePicker component will be customized with its background color changed to **yellowgreen** as shown below,
+When you run the above code, the background color for the header element (**e-header**) of the DatePicker component will be customized with its background color changed to **yellow green** as shown below,
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img5.png) 
 
 Likewise, you can customize any of the specific child elements present within the component by using its class name preceded with the user-defined Custom CSS class name. The user-defined Custom CSS class name will be added to the root element of the Syncfusion widget (for the purpose of overwriting the default styles present in the theme initially applied to the widget) which can be seen in the above highlighted image.
 
-Also, refer the required css file (**ej.web.all.min.css**) in your application as specified earlier, so as to include the default styling effects, font icon images and the other theming effects for the remaining classes of the component that are not customized explicitly with the custom CSS class name. 
+Also, refer the required CSS file (**ej.web.all.min.css**) in your application as specified earlier, so as to include the default styling effects, font icon images and the other theming effects for the remaining classes of the component that are not customized explicitly with the custom CSS class name. 
 
-#### Replacing the entire css file with the Customized CSS class name
+#### Replacing the entire CSS file with the Customized CSS class name
 
-To replace the entire css file with your own customized CSS class name, you need to copy the uncompressed version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
+To replace the entire CSS file with your own customized CSS class name, you need to copy the uncompressed version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
 
-The non-minified version of the css files are present within the **assets-src** folder, as mentioned earlier in this [section](/js/installation-and-deployment#src). 
+The non-minified version of the CSS files are present within the **assets-src** folder, as mentioned earlier in this [section](/js/installation-and-deployment#src). 
 
-To customize the entire css file and refer it in your HTML page - Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the uncompressed version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (uncompressed) file present within the **flat-saffron** theme folder in our application)
+To customize the entire CSS file and refer it in your HTML page - Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the uncompressed version of the required CSS file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (uncompressed) file present within the **flat-saffron** theme folder in our application)
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png) 
 
 {% highlight html %}
@@ -198,7 +198,7 @@ To customize the entire css file and refer it in your HTML page - Follow the usu
 
 {% endhighlight %}
 
-Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as `e-datepicker`. You can change it manually with the user-specified root class name such as `e-cutomdatepicker` in the css file as shown below,
+Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as `e-datepicker`. You can change it manually with the user-specified root class name such as `e-cutomdatepicker` in the CSS file as shown below,
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png)
 
 CSS file with default root e-datepicker name
@@ -209,7 +209,7 @@ CSS file with default root e-datepicker name
 CSS file with Customized root class name
 {:.caption}
 
-To change/customize further the styles of the other child elements of the datepicker widget like header (`e-header` class), current-month and other-month, you need to modify the appropriate css properties within the `ej.theme.css` file as shown below,
+To change/customize further the styles of the other child elements of the datepicker widget like header (`e-header` class), current-month and other-month, you need to modify the appropriate CSS properties within the `ej.theme.css` file as shown below,
 
 `e-header` element with newly customized background-color
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img9.png) 
@@ -220,7 +220,7 @@ To change/customize further the styles of the other child elements of the datepi
 `other-month` element with newly customized text color
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img11.png) 
 
-Save the changes made in the css file and then set the user-specified custom css class name(`e-customdatepicker`) to the `cssClass` property of the datepicker widget as shown below,
+Save the changes made in the CSS file and then set the user-specified custom CSS class name(`e-customdatepicker`) to the `cssClass` property of the datepicker widget as shown below,
 
 {% highlight html %}
 
@@ -246,5 +246,5 @@ Save the changes made in the css file and then set the user-specified custom css
 
 {% endhighlight %}
 
-Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the css files as shown below,
+Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the CSS files as shown below,
 ![](/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png) 
