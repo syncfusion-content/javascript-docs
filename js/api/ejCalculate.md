@@ -7,29 +7,8 @@ metaname:
 metacontent: 
 ---
 
-Custom engine to perfom calculation like excel sheet
-
-
-
-
-
-
-
-
-
-
+Custom engine to perform calculation like excel sheet
 $(element).ejCalculate<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
 Example
 {:.example}
 
@@ -83,7 +62,7 @@ Requires
 
 
 
-Add the custom formuls with function in CalcEngine library
+Add the custom formulas with function in CalcEngine library
 
 <table class="params">
 <thead>
