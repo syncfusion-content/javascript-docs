@@ -13,7 +13,7 @@ This section explains briefly about how to create a PDF viewer in your web appli
 
 **Create your first PDF viewer application in JavaScript**
 
-Create a new project in the visual studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
+Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
@@ -27,7 +27,7 @@ Name the page as Default.html and click OK.
 
 **Add References**
 
-* Add reference to the following list of assemblies from ASP.NET Web API nuget package.  
+* Add reference to the following list of assemblies from ASP.NET Web API NuGet package.  
 
    * System.Web.Http
    * System. Web.Http.WebHost
