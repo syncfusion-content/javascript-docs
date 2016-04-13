@@ -42,7 +42,7 @@ $('#container').ejMap();
 
 * module:ej.datavisualization.Map
 
-* module:jsrender
+* module:JsRender
 
 * module:properties
 
@@ -86,7 +86,7 @@ Specifies the background color for map
 ### baseMapIndex `number`
 {:#members:basemapindex}
 
-Specifies the base map-index of the map to determine the shapelayer to be displayed
+Specifies the baseMapIndex of the map to determine the shape layer to be displayed
 
 #### Default Value
 
@@ -392,7 +392,7 @@ Specifies the zoom factor for map zoom value.
 ### layers `array`
 {:#members:layers}
 
-Hold the shapelayers to be displayed in map
+Hold the shape layers to be displayed in map
 
 #### Default Value
 
@@ -1487,7 +1487,7 @@ set the labelPath property
 ### shapeLayer.labelSettings.showLabels `boolean`
 {:#members:shapelayer-labelsettings-showlabels}
 
-enable or disable the showlabel property
+The property specifies wheather to show labels or not.
 
 #### Default Value
 
@@ -3288,7 +3288,7 @@ Specifies the tooltip template for shapes.
 ### shapeLayer.urlTemplate `string`
 {:#members:shapelayer-urltemplate}
 
-Specifies the url template for the OSM type map.
+Specifies the URL template for the OSM type map.
 
 #### Default Value
 
@@ -3331,7 +3331,7 @@ Enables or Disables the Zooming for map.
 ### navigateTo(latitude, longitude, level)
 {:#methods:navigateto}
 
-Method for navigating to specific shape based on latitude, longitude and zoomlevel.
+Method for navigating to specific shape based on latitude, longitude and zoom level.
 
 <table class="params">
     <thead>
@@ -3537,7 +3537,7 @@ Triggered on selecting the map markers.
 {% endhighlight %}
 
 
-### mouseleave
+### mouse leave
 {:#events:mouseleave}
 
 Triggers while leaving the hovered map shape

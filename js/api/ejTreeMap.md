@@ -42,7 +42,7 @@ $('#container').ejTreeMap();
 
 * module:ej.datavisualization.TreeMap
 
-* module:jsrender
+* module:JsRender
 
 * module:properties
 
@@ -225,7 +225,7 @@ Specifies the colors of the paletteColorMapping
 ### colorValuePath `string`
 {:#members:colorvaluepath}
 
-Specifies the color valuepath of the treemap
+Specifies the color value path of the treemap
 
 #### Default Value
 
@@ -945,7 +945,7 @@ Specifies the leaf settings of the treemap
 ### leafItemSettings.borderBrush `string`
 {:#members:leafitemsettings-borderbrush}
 
-Specifies the border bruch color of the leaf item.
+Specifies the border brush color of the leaf item.
 
 #### Default Value
 
@@ -1185,8 +1185,8 @@ Specifies the mode of label visibility
 			<td class="description">specifies the visible mode</td>
 		</tr>
     <tr>
-			<td class="name">hideonexceededlength</td>			
-			<td class="description">specifies the hideonexceededlength mode</td>
+			<td class="name">hide on exceeded length</td>			
+			<td class="description">specifies the hide on exceeded length mode</td>
 		</tr>
 	</tbody>
 </table>
@@ -1263,7 +1263,7 @@ Specifies the legend settings of the treemap
 ### levels `array`
 {:#members:levels}
 
-Specify levels of treemap for grouped visualization of datas
+Specify levels of treemap for grouped visualization of data
 
 #### Default Value
 
@@ -1980,8 +1980,8 @@ Specifies the mode of header visibility
 			<td class="description">specifies the visible mode</td>
 		</tr>
     <tr>
-			<td class="name">hideonexceededlength</td>			
-			<td class="description">specifies the hideonexceededlength mode</td>
+			<td class="name">hide on exceeded length</td>			
+			<td class="description">specifies the hide on exceeded length mode</td>
 		</tr>
 	</tbody>
 </table>
@@ -2156,8 +2156,8 @@ Specifies the mode of label visibility
 			<td class="description">specifies the visible mode</td>
 		</tr>
     <tr>
-			<td class="name">hideonexceededlength</td>			
-			<td class="description">specifies the hideonexceededlength mode</td>
+			<td class="name">hide on exceeded length</td>			
+			<td class="description">specifies the hide on exceeded length mode</td>
 		</tr>
 	</tbody>
 </table>
@@ -2327,10 +2327,10 @@ Specifies the from value for rangeColorMapping.
 {% endhighlight %}
 
 
-### treeMapRangeColorMapping.legendlabel `string`
+### treeMapRangeColorMapping.legendLabel `string`
 {:#members:treemaprangecolormapping-legendlabel}
 
-Specifies the legendlabel value for rangeColorMapping.
+Specifies the legend label value for rangeColorMapping.
 
 #### Default Value
 
@@ -2403,7 +2403,7 @@ Specifies the uniColorMapping settings of the treemap
 ### weightValuePath `string`
 {:#members:weightvaluepath}
 
-Specifies the weight valuepath of the treemap
+Specifies the weight value path of the treemap
 
 #### Default Value
 
