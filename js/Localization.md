@@ -104,7 +104,7 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the DatePicker control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the datepicker will get localized appropriately based on the dynamic selection made – which is depicted in the below code.
 
-N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
+N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
 
 
 {% highlight html %}
@@ -301,7 +301,7 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the Grid control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the grid control will get localized appropriately based on the dynamic selection made. Also, you need to define the collection of custom localized-words for all the required cultures (here, defined for **es-ES** and **de-DE** cultures) within the script section as depicted below,
 
-N>   In the below example, copy the culture files of **de-DE** and **es-ES** into the Scripts folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the Grid control switches between the selected culture appropriately.
+N>   In the below example, copy the culture files of **de-DE** and **es-ES** into the Scripts folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the Grid control switches between the selected culture appropriately.
 
 {% highlight html %}
 
@@ -402,7 +402,7 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
 
 # Right To Left
 
-All the **Essential JavaScript** **Widget** supports **RTL** option, when set to **true** will align the widget and its contents from **Right to Left**. The property **enableRTL** is used to handle this behaviour and is set to false by default for all the widgets. 
+All the **Essential JavaScript** **Widget** supports **RTL** option, when set to **true** will align the widget and its contents from **Right to Left**. The property **enableRTL** is used to handle this behavior and is set to false by default for all the widgets. 
 
 **Example**: To display the DatePicker control from Right-To-Left, we need to define its **enableRTL** property to **true** as depicted below,
 
