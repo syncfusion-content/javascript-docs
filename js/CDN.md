@@ -43,7 +43,7 @@ Supports animation</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js</a></td></tr>
 <tr>
 <td>
-jsrender</td><td>
+JsRender</td><td>
 Supports template rendering</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js">http://cdn.syncfusion.com/js/assets/external/jsrender.min.js</a>  </td></tr>
 <tr>
@@ -130,7 +130,7 @@ _Example, to access the ej.widget.angular.min.js file in {{ site.releaseversion 
 
 ## CDN style sheet links
 
-The CDN links for all the css files are provided in the below table. Refer the following syntax:
+The CDN links for all the CSS files are provided in the below table. Refer the following syntax:
 
 http://cdn.syncfusion.com/**[version]**/js/web/**[fileName]** – Core 
 
@@ -146,72 +146,72 @@ CDN link</th></tr>
 <tr>
 <td>
 Flat-Azure (default theme)</td><td>
-Includes the css properties defined for all the widgets in flat-azure theme. (Default-theme)</td><td>
+Includes the CSS properties defined for all the widgets in flat-azure theme. (Default-theme)</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
-Includes the css properties defined for all the widgets in flat-azure dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in flat-azure dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Flat-lime</td><td>
-Includes the css properties defined for all the widgets in flat-lime theme.</td><td>
+Includes the CSS properties defined for all the widgets in flat-lime theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-lime Dark</td><td>
-Includes the css properties defined for all the widgets in flat-lime dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in flat-lime dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron</td><td>
-Includes the css properties defined for all the widgets in flat-saffron theme.</td><td>
+Includes the CSS properties defined for all the widgets in flat-saffron theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron Dark</td><td>
-Includes the css properties defined for all the widgets in flat-saffron dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in flat-saffron dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Azure</td><td>
-Includes the css properties defined for all the widgets in gradient-azure theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-azure theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Gradient-Azure Dark</td><td>
-Includes the css properties defined for all the widgets in gradient-azure dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-azure dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime</td><td>
-Includes the css properties defined for all the widgets in gradient-lime theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-lime theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime Dark</td><td>
-Includes the css properties defined for all the widgets in gradient-lime dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-lime dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron</td><td>
-Includes the css properties defined for all the widgets in gradient-saffron theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-saffron theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron Dark</td><td>
-Includes the css properties defined for all the widgets in gradient-saffron dark theme.</td><td>
+Includes the CSS properties defined for all the widgets in gradient-saffron dark theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Bootstrap-theme</td><td>
-Includes the css properties defined for all the widgets in bootstrap theme.</td><td>
+Includes the CSS properties defined for all the widgets in bootstrap theme.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 ej.responsive.css</td><td>
-To make the widget responsive, it is necessary to refer this css file.</td><td>
+To make the widget responsive, it is necessary to refer this CSS file.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css</a></td></tr>
 </table>
 
@@ -242,7 +242,7 @@ N>    All the provided CDN links can be accessed either through `http` or `https
 
 ## Refer local Scripts and CSS, when CDN fails
 
-One of the major risk with CDN links is that – sometimes it may go down due to the network or connection problems. On such scenarios, we can refer the local scripts and css files dynamically in the application by checking if the scripts and css files loaded through CDN returns `undefined` as depicted below,
+One of the major risk with CDN links is that – sometimes it may go down due to the network or connection problems. On such scenarios, we can refer the local scripts and CSS files dynamically in the application by checking if the scripts and CSS files loaded through CDN returns `undefined` as depicted below,
 
 {% highlight html %}
 
