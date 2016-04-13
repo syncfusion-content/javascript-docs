@@ -7564,7 +7564,7 @@ String
 {% endhighlight %}
 
 
-### hideTab(string)
+### hideTab(text)
 {:#methods:hidetab}
 
 Hides the given text tab in the ribbon control.
@@ -7579,7 +7579,7 @@ Hides the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name">string</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -7677,7 +7677,7 @@ Hides the given text tab in the ribbon control.
 {% endhighlight %}
 
 
-### isEnable(string)
+### isEnable(text)
 {:#methods:isenable}
 
 Checks whether the given text tab in the ribbon control is enabled or not.
@@ -7692,7 +7692,7 @@ Checks whether the given text tab in the ribbon control is enabled or not.
 </thead>
 <tbody>
 <tr>
-<td class="name">string</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -7795,7 +7795,7 @@ Boolean
 {% endhighlight %}
 
 
-### isVisible(string)
+### isVisible(text)
 {:#methods:isvisible}
 
 Checks whether the given text tab in the ribbon control is visible or not.
@@ -7810,7 +7810,7 @@ Checks whether the given text tab in the ribbon control is visible or not.
 </thead>
 <tbody>
 <tr>
-<td class="name">string</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -8301,7 +8301,7 @@ Displays the ribbon backstage page.
 {% endhighlight %}
 
 
-### showTab(string)
+### showTab(text)
 {:#methods:showtab}
 
 Displays the given text tab in the ribbon control.
@@ -8316,7 +8316,7 @@ Displays the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name">string</td>
+<td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
