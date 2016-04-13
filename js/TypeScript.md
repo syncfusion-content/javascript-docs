@@ -42,7 +42,7 @@ Add the ej.widgets.all.d.ts and jquery.d.ts type-definition files in your projec
 Now, refer these two files within the app.ts file (before referring these files, remove all the unwanted content in that app.ts file) as shown below,
 ![](/js/TypeScript_images/TypeScript_img4.png) 
 
-Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and css references in this page as shown below,
+Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and CSS references in this page as shown below,
 ![](/js/TypeScript_images/TypeScript_img5.png) 
 
 Now build your application, so that the **app.js** file is automatically generated and got added to your project (User have nothing to do with this file). Now, whatever code changes that you make in **app.ts** file will be reflected in app.js file automatically. 
