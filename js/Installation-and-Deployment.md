@@ -23,8 +23,8 @@ _For example, if you had chosen to install under `C:\Program Files (x86)`, then 
 
 Within the root `javascript` folder, the `assets` folder contains all the minified versions of scripts along with the [Source Maps](/js/sourcemap) and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
 
-  * Css - contains the style sheets for mobile and web components.
-  * External - contains the external dependency files such as jquery, jquery.easing etc.
+  * CSS - contains the style sheets for mobile and web components.
+  * External - contains the external dependency files such as jQuery, jquery.easing etc.
   * Scripts - includes all the necessary widget scripts as well as culture scripts for Syncfusion Essential JS components.
   * TypeScript - includes the default type-definition file `ej.widgets.all.d.ts`.
 
@@ -35,7 +35,7 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 The assets have been organized in the following folder structure
 
 * Assets – contains all the necessary scripts and stylesheets.
-* External – contains the external dependency files such as jquery, jquery.easing etc.
+* External – contains the external dependency files such as jQuery, jquery.easing etc.
 * Samples  – contains sample code that demonstrate usage of all the components.
 
 
@@ -58,7 +58,7 @@ The steps to install the Syncfusion JavaScript NuGet Packages in Visual Studio a
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
    **Name**: Name of the package that listed in Available package sources  
-   **Source**: Syncfusion JavaScript NuGet Package feed url 
+   **Source**: Syncfusion JavaScript NuGet Package feed URL 
    [http://nuget.syncfusion.com/javascript](http://nuget.syncfusion.com/javascript)
     
    ![](Installation-and-Deployment_images/NuGetConfig2.jpeg)
@@ -102,14 +102,14 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
 ### Overview
 
-[Bower](http://bower.io) is a package manager for the Web. Syncfusion bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
+[Bower](http://bower.io) is a package manager for the Web. Syncfusion Bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
 
-I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as syncfusion-javascript in the bower registry.
+I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as Syncfusion-JavaScript in the Bower registry.
 
 ### Bower Installation
 
-To configure the bower in your machine you need to install [node, npm](http://nodejs.org) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower). 
-Syncfusion Javascript Bower package can be configured in the following ways.
+To configure the Bower in your machine you need to install [node, npm](http://nodejs.org) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower). 
+Syncfusion JavaScript Bower package can be configured in the following ways.
 
 1. Using command prompt.
 
@@ -119,11 +119,11 @@ Syncfusion Javascript Bower package can be configured in the following ways.
 
 #### Using command prompt
 
-Perform the below steps to install Syncfusion bower Package via command prompt in your web application.
+Perform the below steps to install Syncfusion Bower Package via command prompt in your web application.
 
 1. Open your web project’s location in a command prompt window.
 
-2. Then run the command bower install <package name>.
+2. Then run the command Bower install <package name>.
 
    ~~~
    bower install syncfusion-javascript
@@ -131,10 +131,10 @@ Perform the below steps to install Syncfusion bower Package via command prompt i
    
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
 
-3. The bower will install the Syncfusion Javascript files into the project location to develop with Syncfusion controls.
+3. The Bower will install the Syncfusion JavaScript files into the project location to develop with Syncfusion controls.
 
-N>To install a particular version of a bower package, you need to provide the version as suffix of the package name while installing. For instance, run the below command, Eg: To install the package of version 13.3.0.18. 
-N>'bower install syncfusion-javascript#13.3.0.18'
+N>To install a particular version of a Bower package, you need to provide the version as suffix of the package name while installing. For instance, run the below command, Eg: To install the package of version 13.3.0.18. 
+N>'bower install Syncfusion-javascript#13.3.0.18'
 
 #### Using bower.json file
 
@@ -149,9 +149,9 @@ N>'bower init'
 
 #### From local directory
 
-You can install the Syncfusion bower package from a local directory. To perform this follow the below steps.
+You can install the Syncfusion Bower package from a local directory. To perform this follow the below steps.
 
-1. Navigate the [Syncfusion Javascript bower repository](https://github.com/syncfusion/JavaScript-Widgets/) location on github and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
+1. Navigate the [Syncfusion JavaScript Bower repository](https://github.com/syncfusion/JavaScript-Widgets/) location on GitHub and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.jpeg)
 
@@ -161,7 +161,7 @@ You can install the Syncfusion bower package from a local directory. To perform 
 
 ### Bower Update
 
-To update the installed bower packages, run the command bower update <package name>.
+To update the installed Bower packages, run the command Bower update <package name>.
 ~~~
 bower update syncfusion-javascript
 ~~~
