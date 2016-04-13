@@ -3609,7 +3609,7 @@ $("#Spreadsheet").ejSpreadsheet("getRange", 1, 2, 4, 5, 1);
 
 {% endhighlight %}
 
-### getRangeData(\[range\], valueOnly, \[property\], \[sheetIdx\], \[skipDateTime\],  \[skipFormula\], \[skipHiddenRow\], \[virtualRowIdx\], \[virtualRowCount\])
+### getRangeData(\[options\])
 {:#methods:getrangedata}
 
 This method is used to get the data in specified range in Spreadsheet.
@@ -3623,49 +3623,9 @@ This method is used to get the data in specified range in Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">range</td>
-<td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will get range data for the specified range else it will use the current selected range. </td>
-</tr>
-<tr>
-<td class="name">valueOnly</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass 'true' if you want cell values alone.</td>
-</tr>
-<tr>
-<td class="name">property</td>
-<td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If property is specified, it will get the specified property in the range else it will get default properties.</td>
-</tr>
-<tr>
-<td class="name">sheetIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
-</tr>
-<tr>
-<td class="name">skipDateTime</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> When skipDateTime is set as true, it return 'value2' cell value (cell type as 'datetime')</td>
-</tr>
-<tr>
-<td class="name">skipFormula</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true, if you want to get the calculated formula value else it return formula string.</td>
-</tr>
-<tr>
-<td class="name">skipHiddenRow</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
-</tr>
-<tr>
-<td class="name">virtualRowIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass virtual row index of sheet.</td>
-</tr>
-<tr>
-<td class="name">virtualRowCount</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass virtual row count of sheet.</td>
+<td class="name">options</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional. </span> Pass the range, property, sheetIdx, valueOnly in options. </td>
 </tr>
 </tbody>
 </table>
@@ -3680,7 +3640,7 @@ Array
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getRangeData([2, 6, 2, 6], false, ["value"], 1, false); // To get the cells data of specified range
+xlObj.getRangeData({range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1}); // To get the cells data of specified range
 </script>
 
 {% endhighlight %}
@@ -3688,7 +3648,7 @@ xlObj.getRangeData([2, 6, 2, 6], false, ["value"], 1, false); // To get the cell
 {% highlight html %}
 <script>
 // To get the cells data of specified range
-$("#Spreadsheet").ejSpreadsheet("getRangeData", [2, 6, 2, 6], false, ["value"], 1, false);        
+$("#Spreadsheet").ejSpreadsheet("getRangeData", {range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1});        
 </script>
 
 {% endhighlight %}
@@ -3767,7 +3727,7 @@ Object
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
-// Initialize the Spreadsheet object..
+// Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.getSheet(1); // Gets sheet details of Spreadsheet.
 </script>
@@ -4635,7 +4595,7 @@ function customTotal(args){}//args-It uses the value given by the user while usi
 </script>
 {% endhighlight %}
 
-### removeHyperlink(range, \[isClearHLink\], status, cells, \[skipHiddenRow\])
+### removeHyperlink(range, \[isClearHLink\], \[status\], \[cells\], \[skipHiddenRow\])
 {:#methods:removehyperlink}
 
 This method is used to remove the hyperlink from selected cells of current sheet.
@@ -4667,7 +4627,7 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <tr>
 <td class="name">cells</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the cells that you want to remove hyperlink..</td>
+<td class="description"><span class="optional">Optional. </span> Pass the cells that you want to remove hyperlink.</td>
 </tr>
 <tr>
 <td class="name">skipHiddenRow</td>
@@ -5823,7 +5783,7 @@ xlObj.XLCFormat.setCFRule({ "action": "lessthan", "input1": "30", "color": "yell
 ### XLChart
 {:#methods:xlchart}
 
-### XLChart.createChart(\[range\], options)
+### XLChart.createChart(\[range\], \[options\])
 {:#methods:xlchart-createchart}
 
 This method is used to create a chart for specified range in Spreadsheet.
@@ -5844,7 +5804,7 @@ This method is used to create a chart for specified range in Spreadsheet.
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">To pass the type of chart and chart name.</td>
+<td class="description"><span class="optional">Optional. </span> To pass the type of chart and chart name.</td>
 </tr>
 </tbody>
 </table>
@@ -6156,7 +6116,7 @@ $("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));
 
 {% endhighlight %}
 
-### XLComment.setComment(\[range\], data, \[showEditPanel\])
+### XLComment.setComment(\[range\], \[data\], \[showEditPanel\])
 {:#methods:xlcomment-setcomment}
 
 This method is used to set new comment in Spreadsheet.
@@ -6177,7 +6137,7 @@ This method is used to set new comment in Spreadsheet.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the comment data.</td>
+<td class="description"><span class="optional">Optional. </span> Pass the comment data.</td>
 </tr>
 <tr>
 <td class="name">showEditPanel</td>
