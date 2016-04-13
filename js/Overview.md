@@ -9,7 +9,7 @@ documentation: ug
 
 # Welcome to Syncfusion Essential JS
 
-Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, gantt, scheduler, diagram and much more.   
+Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
 ## How to best read this user guide
 
@@ -17,7 +17,7 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 * Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://js.syncfusion.com/demos/web/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario. 
 
-* After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additonal information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
+* After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additional information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
 
 * Another valuable resource is the [API reference](http://help.syncfusion.com/js/api) which provides detailed information on the object hierarchy as well as the settings available on every object.
 
