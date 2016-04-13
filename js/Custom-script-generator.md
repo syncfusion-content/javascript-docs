@@ -9,7 +9,7 @@ documentation: ug
 
 # Include only the needed widgets
 
-The users with Essential Studio Enterprise license or Essential Studio for JavaScript license can make use of the Custom Script Generator (CSG) tool to create a single file that packs together only the required scripts and css files together. This utility can generate both the minified and uncompressed version of the scripts and CSS files.
+The users with Essential Studio Enterprise license or Essential Studio for JavaScript license can make use of the Custom Script Generator (CSG) tool to create a single file that packs together only the required scripts and CSS files together. This utility can generate both the minified and uncompressed version of the scripts and CSS files.
 
 ## Getting started with Custom Script Generator
 
@@ -46,7 +46,7 @@ Navigate to the **Settings** Page through the **Settings** option as shown below
 
 ![](/js/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img5.png) 
 
-Now click on the **Proceed icon** to request for the Custom script and css file generation for the required controls.
+Now click on the **Proceed icon** to request for the Custom script and CSS file generation for the required controls.
 ![](/js/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img6.png) 
 
 ### Editing and Deleting the Saved Settings
