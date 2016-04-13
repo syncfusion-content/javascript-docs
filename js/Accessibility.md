@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility
 
-All the Essential JS UI widgets provide built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. This ensures that the widgets work properly with  assistive technologies. WAI-ARIA complaince for the widgets have been achieved by providing proper keyboard navigation support as well as by defining the required ARIA attributes to the DOM elements.
+All the Essential JS UI widgets provide built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. This ensures that the widgets work properly with  assistive technologies. WAI-ARIA compliance for the widgets have been achieved by providing proper keyboard navigation support as well as by defining the required ARIA attributes to the DOM elements.
 
 For example, the `ejButton` widget, when created through JavaScript code will render in the web browser with HTML DOM elements (along with the assigned built-in ARIA attributes) as shown below,
 
