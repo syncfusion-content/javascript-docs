@@ -11,7 +11,7 @@ metacontent:
 
 # Pager
 
-Custom Design for Html Pager control.
+Custom Design for HTML Pager control.
 
 
 #### Syntax
@@ -41,7 +41,7 @@ $("#pager").ejPager(pagerModel);
 
 #### Requires
 
-* module:jquery-1.10.2.min.js
+* module:jQuery-1.10.2.min.js
 * module:ej.core.js
 * module:ej.touch.js
 * module:ej.pager.js
@@ -113,7 +113,7 @@ $("#pager").ejPager({currentPage: 1 })
 ### totalPages `Number`
 {:#members:totalpages}
 
-Get or sets a value of total number of pages in the pager. The totalPages value is calculated based on pagesize and totalrecords.
+Get or sets a value of total number of pages in the pager. The totalPages value is calculated based on page size and total records.
 
 #### Default Value:
 {:.param}
@@ -151,7 +151,7 @@ $("#pager").ejPager({totalRecordsCount: 10 })
 ### enableQueryString `Boolean`
 {:#members:enablequerystring}
 
-Gets or sets a value that indicates whether to pass the current page information as a query string along with the url while navigating to other page.
+Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
 
 #### Default Value:
 {:.param}
