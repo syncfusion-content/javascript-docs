@@ -28,7 +28,7 @@ The ej.widget.ko.min.js file which needs to be referred along with the knockout.
 
 ## KnockoutJS Concepts
 
-The two major concepts of the KnockoutJS on which our Syncfucion widgets mainly relies on are as follows,
+The two major concepts of the KnockoutJS on which our Syncfusion widgets mainly relies on are as follows,
 
 * Declarative binding
 * Dependency tracking
@@ -61,9 +61,9 @@ window.viewModel = {
 
 {% endhighlight %}
 
-The value to be bound to the UI element needs to be passed through the **ko.observable** varaiable as shown above. The `dateValue` defined in the above code is an observable variable holding a date value, which can be assigned to the properties of the UI components.
+The value to be bound to the UI element needs to be passed through the **ko.observable** varaible as shown above. The `dateValue` defined in the above code is an observable variable holding a date value, which can be assigned to the properties of the UI components.
 
-The `data-bind` attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with Knockout, we need to call the `ko.applyBindings() function at the end of the script, so that the `data-bind` attribute will get recognised. Such Knockout code needs to be wrapped in a jQuery function as shown below within the script section, in order to work properly.
+The `data-bind` attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with KnockoutJS, we need to call the `ko.applyBindings() function at the end of the script, so that the `data-bind` attribute will get recognized. Such KnockoutJS code needs to be wrapped in a jQuery function as shown below within the script section, in order to work properly.
 
 {% highlight javascript %}
 
