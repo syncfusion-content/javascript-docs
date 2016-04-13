@@ -86,7 +86,7 @@ Specifies the background color for map
 ### baseMapIndex `number`
 {:#members:basemapindex}
 
-Specifies the baseMapIndex of the map to determine the shape layer to be displayed
+Specifies the index of the map to determine the shape layer to be displayed
 
 #### Default Value
 
