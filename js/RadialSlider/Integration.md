@@ -7,9 +7,9 @@ control:RadialSlider
 documentation: ug
 ---
 
-#Integration
+# Integration
 
-# Knockout Support
+## Knockout Support
 
 **Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
 
@@ -81,7 +81,7 @@ The following example depicts the way to bind data to the **RadialSlider** widge
 
 {% endhighlight %}
 
-# Angular Support
+## Angular Support
 
 The **RadialSlider** widget supports two types of **Angular JS support** namely, 
 
