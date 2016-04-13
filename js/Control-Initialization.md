@@ -71,8 +71,8 @@ Now, Include the specific theme reference to your HTML file by referring the app
 
 Essential JS widgets requires the following external dependent scripts,
 
-* jquery-1.10.2.min.js 
-* jquery.easing.1.3.min.js
+* jQuery-1.10.2.min.js 
+* jQuery.easing.1.3.min.js
 * jsrender.min.js
 
 In the below specified location, you can find the dependent script files. Copy and paste it into the **Scripts** folder of your application,
@@ -225,11 +225,11 @@ Finally, to add the Syncfusion datepicker widget into the HTML page, refer the s
 
 ## Using CDN link for script and style sheet reference 
 
-With this method, you can skip the process of copying and pasting the required script and style sheets into your application and can directly provide the cdn link references for it.
+With this method, you can skip the process of copying and pasting the required script and style sheets into your application and can directly provide the CDN link references for it.
 
 ### HTML file creation
 
-Create a basic HTML file and directly refer all the required cdn links for the [scripts](/js/cdn#cdn-script-links) and [style sheets](/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
+Create a basic HTML file and directly refer all the required CDN links for the [scripts](/js/cdn#cdn-script-links) and [style sheets](/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
 
 {% highlight html %}
 
