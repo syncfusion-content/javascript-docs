@@ -31,7 +31,7 @@ The ej.support property contains a collection of properties representing differe
 
 1. cors – represents the cross browser support.
 
-2. enableLocalizaedSort – enables the localized sort operation.
+2. enableLocalizedSort – enables the localized sort operation.
 
 3. stableSort – enables stable sort operation.
 
