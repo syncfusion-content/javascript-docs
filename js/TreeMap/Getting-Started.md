@@ -23,7 +23,7 @@ To add a **TreeMap** control in your application, refer the following libraries 
 
 * [jQuery](http://jquery.com/) version  1.10.1 and above
 * ej.widgets.all  
-* jsrender
+* JsRender
 * ej.web.all
 
 The following code sample explains how to link these libraries from a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).

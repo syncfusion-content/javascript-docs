@@ -23,7 +23,7 @@ To use ejMap, refer the following libraries in **HTML** page.
 
 * [jQuery](http://jquery.com/) version  1.10.1 and above,
 * ej.widgets.all.min  
-* jsrender
+* JsRender
 
 You can link these libraries from a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
 
