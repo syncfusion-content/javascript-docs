@@ -66,7 +66,7 @@ The result of the above code example is illustrated as follows.
 
 ###OData binding
 
-**OData** is standardized protocol for creating and consuming data. You can retrieve data from oData service using **DataManager.** You can refer to the following code example of remote Data binding using oData service.
+**OData** is standardized protocol for creating and consuming data. You can retrieve data from OData service using **DataManager.** You can refer to the following code example of remote Data binding using OData service.
 
 
 
@@ -657,7 +657,7 @@ Result of above code example is illustrated as follows.
 
 ![](/js/DataManager/Data-Binding_images/Data-Binding_img13.png) 
 
-##Html Table
+##HTML Table
 
 Other than **JSON** and **Remote** datasource, the **DataManager** can also fetch and use data from **HTML** element. You can achieve this by using the **table** property of the **DataManager**. The **DataManager** can fetch data from the **HTML** table element.
 
