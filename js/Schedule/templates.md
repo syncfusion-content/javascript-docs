@@ -30,7 +30,7 @@ Apart from the dataSource field names, the template can also access the current 
 * workweek
 * agenda
 * month
-* customview
+* custom view
 
 It is controlled by an API named [appointmentTemplateId](/js/api/ejschedule#members:appointmenttemplateid) which accepts the id value of the template design block preceded by a symbol **#**.
 
