@@ -45,7 +45,7 @@ The **data-role** type is enabled by default. Therefore, while making use of the
 
 The demonstration of such **data-role** declaration with a simple **DatePicker** control creation is shown below,
 
-Refer the **ej.unobtrusive.min.js** file in your application along with the other script and css reference section and add the code for defining the **DatePicker** control with the basic HTML mark-up tags along with its attributes defined with **data-ej** keyword prepended as shown below, 
+Refer the **ej.unobtrusive.min.js** file in your application along with the other script and CSS reference section and add the code for defining the **DatePicker** control with the basic HTML mark-up tags along with its attributes defined with **data-ej** keyword prepended as shown below, 
 
 {% highlight html %}
 
@@ -140,5 +140,5 @@ N>   Also, you can notice here that the HTML tag name is replaced by the control
 The output of the above code will look as the one shown below with the value set to the given date,
 ![](/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png) 
 
-The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and css references separately.
+The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and CSS references separately.
 
