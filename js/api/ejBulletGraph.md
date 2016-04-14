@@ -8,6 +8,7 @@ metacontent:
 ---
 
 # Custom Design for Bullet graph.
+<ts root="datavisualization" />
 
 
 
