@@ -160,7 +160,7 @@ Below code snippet shows only the magnification tools in the toolbar.
 ### serviceUrl `String`
 {:#members:serviceurl}
 
-Sets the local or remote service URL to the PDF viewer
+Sets the PDF Web API service URL
 
 ### pageCount `Number`
 {:#members:pagecount}
