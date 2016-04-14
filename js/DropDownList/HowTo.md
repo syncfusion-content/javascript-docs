@@ -522,3 +522,40 @@ Finally define change event to maintain the selected items on search
     
 {% endhighlight %}
 
+##How to Remove Items from DropdownList?
+
+Remove the items from dataSource whatever you want by using [splice](http://www.tutorialspoint.com/javascript/array_splice.htm# "") method and then rebind the data through set model. 
+Removing an entry from DropdownList is demonstrated in the below given sample.
+
+{% highlight html %}
+<input id="dropdown1" /> <button id="remove">Remove items</button>
+ {% endhighlight %}   
+   
+
+{% highlight javascript %}
+
+  $(document).ready(function () {
+            var data = [
+              { text: "ListItem1", value: "item1" },
+              { text: "ListItem2", value: "item2" },
+              { text: "ListItem3", value: "item3" },
+              { text: "ListItem4", value: "item4" },
+              { text: "ListItem5", value: "item5" }
+            ];
+            // create DropDownList from input HTML element
+            $("#dropdown1").ejDropDownList({
+                dataSource: data
+            });
+            $("#remove").click(function () {
+                ddl = $("#dropdown1").data("ejDropDownList");
+                data1 = ddl.model.dataSource.splice(0);
+                data1.splice(0, 1);
+                ddl.setModel({ dataSource: data1 });
+            });
+        });
+{% endhighlight %}  
+The following screenshot exhibits the output of above code:
+Before removing:
+![](HowTo_images/HowTo_img4.jpeg)
+After removing:
+![](HowTo_images/HowTo_img5.jpeg)
