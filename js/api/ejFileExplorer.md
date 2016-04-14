@@ -1492,7 +1492,7 @@ Enables or disables the footer in FileExplorer control. The footer element displ
 {:#members:showroundedcorner}
 
 
-Enables or disables to rounded corner style in FileExplorer control.
+FileExplorer control is displayed with rounded corner when this property is set to true.
 
 
 #### Default Value
@@ -1526,7 +1526,7 @@ Enables or disables to rounded corner style in FileExplorer control.
 {:#members:showthumbnail}
 
 
-Enables or disables to show image preview in layout of FileExplorer control.
+FileExplorer control is rendered with thumbnail preview of images in Tile and LargeIcons layout when this property set to true.
 
 
 #### Default Value
