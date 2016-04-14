@@ -8,6 +8,7 @@ keywords: map, ejmap, map api, syncfusion
 ---
 
 # ejMap
+<ts root="datavisualization" />
 
 The map can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 
