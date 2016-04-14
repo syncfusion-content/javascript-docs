@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejCalculate
+<ts  isFrameWork="true" />
+
 Custom engine to perform calculation like excel sheet
 $(element).ejCalculate<span class="signature">()</span>
 Example
