@@ -13,7 +13,7 @@ keywords: FileExplorer,  Syncfusion, FileExplorer UG Doc, How To
 
 **Cross-origin request**
 
-The FileExplorer can browse and manage files on [http://mvc.syncfusion.com/OdataServices](http://mvc.syncfusion.com/OdataServices#)  servers, which is located in other domains. If a server is located on a different domain, on a different port or using different protocol (HTTP / HTTPS) such requests are considered to be “cross-origin requests”. These type requests are prohibited by IE9 and its earlier browsers.
+The FileExplorer can browse and manage files on "**http://mvc.syncfusion.com/OdataServices**"  servers, which is located in other domains. If a server is located on a different domain, on a different port or using different protocol (HTTP / HTTPS) such requests are considered to be “**cross-origin requests**”. These type of requests are prohibited by IE9 and its earlier browsers.
 
 **Enabling cross-origin request in IE8 and IE9**
 
@@ -31,7 +31,7 @@ To suppress this warning, you need to specify the "*Access data sources across d
 
 **Option 2: Using JSONP for cross-origin request**
 
-Using JSONP datatype, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**jsonp**”. And we have provided “**doJSONPAction**” method to handle “jsonp” type Ajax request on server side.  Please refer below code snippet to specify **ajaxDataType** as “jsonp”.
+Using JSONP datatype, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**jsonp**”. And we have provided “**doJSONPAction**” method to handle “jsonp” type Ajax request on server side.  Please refer below code snippet to specify **ajaxDataType** as “**jsonp**”.
 
     
     {% highlight javascript %}
