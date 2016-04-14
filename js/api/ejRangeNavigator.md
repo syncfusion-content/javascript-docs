@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejRangeNavigator
+<ts root="datavisualization" />
+
 The range navigator can be easily configured to the DOM element, such as div. You can create a range navigator with a highly customizable look and feel.
 
 
