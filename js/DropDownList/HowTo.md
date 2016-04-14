@@ -557,7 +557,7 @@ Removing an entry from DropdownList is demonstrated in the below given sample.
 The following screenshot exhibits the output of above code:
 
 Before removing an item:
-![](HowTo_images/HowTo_img4a.JPG)
+![](HowTo_images/Image1.JPG)
 
 After removing an item:
-![](HowTo_images/HowTo_img4.JPG)
+![](HowTo_images/Image2.JPG)
