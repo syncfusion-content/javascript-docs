@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Knockout-Support
-description: knockout support
+title: KnockoutJS-Support
+description: KnockoutJS support
 platform: js
 control:RadialSlider 
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Integration
 
-## Knockout Support
+## KnockoutJS Support
 
-**Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
+**KnockoutJS support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
 
 * One-way binding
 * Two-way binding
@@ -20,18 +20,18 @@ documentation: ug
 
 **Two-way binding** supports both the processes; it applies the observable values to the **Textbox** widget properties as well as the changes made in the **RadialSlider** widget are also reflected back and triggered within the observable collections. 
 
-For more information about the **knockout binding**, refer the following online documentation in the given link location,
+For more information about the **KnockoutJS binding**, refer the following online documentation in the given link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following example depicts the way to bind data to the **RadialSlider** widgets through **knockout** **support** that enables and populates data to the **RadialSlider** widget based on the value set to the other **RadialSlider** widget.
+The following example depicts the way to bind data to the **RadialSlider** widgets through **KnockoutJS** **support** that enables and populates data to the **RadialSlider** widget based on the value set to the other **RadialSlider** widget.
 
 {% highlight html %}
 
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>RadialSlider - Knockout Support</title>
+        <title>RadialSlider - KnockoutJS Support</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"/>
@@ -81,31 +81,31 @@ The following example depicts the way to bind data to the **RadialSlider** widge
 
 {% endhighlight %}
 
-## Angular Support
+## AngularJS Support
 
-The **RadialSlider** widget supports two types of **Angular JS support** namely, 
+The **RadialSlider** widget supports two types of **AngularJS support** namely, 
 
 * One-way binding
 * Two-way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **RadialSlider** widget, but the changes made in **RadialSlider** widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **RadialSlider** widget.
 
-**Two-way binding** supports both the processes; it applies the scope values to the **RadialSlider** properties as well as the changes made in the **RadialSlider** widget also get reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes; it applies the scope values to the **RadialSlider** properties as well as the changes made in the **RadialSlider** widget also get reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the **RadialSlider** widget element through the directive that starts with the letter **“e-“.**
 
-To know more details about the **Angular binding**, refer the following link location,
+To know more details about the **AngularJS binding**, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts the way to bind data to the **RadialSlider** widget through **angular support**.
+The following example depicts the way to bind data to the **RadialSlider** widget through **AngularJS support**.
 
 {% highlight html %}
 
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>RadialSlider - Angular Support</title>
+        <title>RadialSlider - AngularJS Support</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"/>
