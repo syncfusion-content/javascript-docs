@@ -105,7 +105,7 @@ Initialize the AutoComplete widget by adding the following code in script sectio
 
 
 
-## Databinding
+## Data binding
 
 The data for the suggestion list can be populated using the dataSource property. 
 

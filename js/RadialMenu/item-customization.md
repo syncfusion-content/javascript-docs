@@ -9,7 +9,7 @@ documentation: ug
 
 ## Item Customization
 
-You can customize the **Radial Menu** items by using the **Imageurl** and **Text** properties. The **imageurl** property specifies the URL of the image for the items. **Data-ej-text** attribute is used to specify the item text. Refer to the following code example.
+You can customize the **Radial Menu** items by using the **ImageUrl** and **Text** properties. The **imageUrl** property specifies the URL of the image for the items. **Data-ej-text** attribute is used to specify the item text. Refer to the following code example.
 
 You can add the page content with text-area by referring to this section.
 
