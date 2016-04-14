@@ -524,7 +524,7 @@ Finally define change event to maintain the selected items on search
 
 ## To remove the items from DropDownList?
 
-You can remove the items from the DropDownList  by using [splice](http://www.tutorialspoint.com/javascript/array_splice.htm# "") method and then rebind the data source through set model. 
+You can remove the items from the DropDownList  by using [splice](http://www.tutorialspoint.com/javascript/array_splice.htm#) method and then rebind the data source through set model. 
 Removing an entry from DropdownList is demonstrated in the below given sample.
 
 {% highlight html %}
@@ -556,8 +556,8 @@ Removing an entry from DropdownList is demonstrated in the below given sample.
 {% endhighlight %}  
 The following screenshot exhibits the output of above code:
 
-![](HowTo_images/HowTo_img4.jpeg)
 Before removing an item:
+![](HowTo_images/HowTo_img4a.jpeg)
 
-![](HowTo_images/HowTo_img5.jpeg)
 After removing an item:
+![](HowTo_images/HowTo_img4b.jpeg)
