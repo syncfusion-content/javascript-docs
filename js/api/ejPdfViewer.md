@@ -160,6 +160,8 @@ Below code snippet shows only the magnification tools in the toolbar.
 ### serviceUrl `String`
 {:#members:serviceurl}
 
+Sets the PDF Web API service URL
+
 ### pageCount `Number`
 {:#members:pagecount}
 
