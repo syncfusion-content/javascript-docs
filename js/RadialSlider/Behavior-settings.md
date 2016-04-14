@@ -45,7 +45,7 @@ The **RadialSlider** property **enableRoundOff** allow  to show  the rounded off
 
 ## Display inline
 
-The **RadialSlider** property **inline** is used to show  the inline behaviour to the **RadialSlider**. Set the value to this property as **Boolean** type.
+The **RadialSlider** property **inline** is used to show  the inline behavior to the **RadialSlider**. Set the value to this property as **Boolean** type.
 
 {% highlight html %}
 
@@ -118,7 +118,7 @@ The following screenshot shows the output for the above code example.
 
 ## Ticks customization
 
-The **RadialSlider** property **ticks** allow to show  the array of numeric value to  the **RadialSlider**. By Default "RadialSlider " ticks value is a set to an array of lenght 11 as following,
+The **RadialSlider** property **ticks** allow to show  the array of numeric value to  the **RadialSlider**. By Default "RadialSlider " ticks value is a set to an array of length 11 as following,
 
 ticks= { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 }. You can refer the below code for reference.
 
