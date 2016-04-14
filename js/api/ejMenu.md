@@ -2285,7 +2285,7 @@ Hides the Context Menu control.
 ### hideItems([itemID])
 {:#methods:hideItems}
 
-Hides the specific item in the Menu control.
+Hides the specific items in Menu control.
 
 #### Example
 
@@ -3083,7 +3083,7 @@ event</td>
 ### showItems([itemID])
 {:#methods:showItems}
 
-Show the specific item in the Menu control.
+Show the specific items in Menu control.
 
 #### Example
 
