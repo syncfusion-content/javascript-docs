@@ -1052,7 +1052,7 @@ Top</td>
 <td class="name">
 Bottom</td>
 <td class="type">string</td>
-<td class="description last">Labels are placed at teh bottom of the slider</td>
+<td class="description last">Labels are placed at the bottom of the slider</td>
 </tr> 
 </tbody>
 </table>
@@ -2747,7 +2747,7 @@ Bold</td>
 <td class="name">
 Italic</td>
 <td class="type">string</td>
-<td class="description last">The labels are displayed in the itialized format</td>
+<td class="description last">The labels are displayed in the italic format</td>
 </tr> 
 </tbody>
 </table>
@@ -2801,7 +2801,7 @@ Specifies the label font style. Labels render with the specified font style..See
 
 <ts name="ej.datavisualization.RangeNavigator.FontWeight"/>
 
-Specifies the lable font weight
+Specifies the label font weight
 
 
 
@@ -3253,7 +3253,7 @@ Specifies the border width of range navigator.
 
 
 
-Specifies the left side thumb template in range navigator we can give either div id or html string
+Specifies the left side thumb template in range navigator we can give either div id or HTML string
 
 
 
@@ -3590,7 +3590,7 @@ Specifies the opacity of RangeNavigator.
 
 
 
-Specifies the right side thumb template in range navigator we can give either div id or html string
+Specifies the right side thumb template in range navigator we can give either div id or HTML string
 
 
 
@@ -5923,7 +5923,7 @@ Numeric</td>
 <td class="name">
 DateTime</td>
 <td class="type">string</td>
-<td class="description last">The default value type of Range Navigator is DateTime and it reprsents the DateTime Values</td>
+<td class="description last">The default value type of Range Navigator is DateTime and it represents the DateTime Values</td>
 </tr> 
 
 </tbody>

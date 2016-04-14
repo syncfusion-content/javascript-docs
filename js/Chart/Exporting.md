@@ -90,7 +90,7 @@ Server-side operation can be done by using the server-side frameworks such as We
 
 {% endhighlight %}
 
-At the server side, chart can be exported as jpg, png, SVG, PDF, word document and as excel documents. For this the following code have to place in the controller.
+At the server side, chart can be exported as JPG, PNG, SVG, PDF, word document and as excel documents. For this the following code have to place in the controller.
 
 {% highlight csharp %}
 
@@ -198,7 +198,7 @@ public void ExportChart(string Data, string ChartModel)
 
 ### Excel Exporting
 
-Excel exporting is a server-side operation. In addition have to refer Syncfusion.XlsIO dll to export as excel.
+Excel exporting is a server-side operation. In addition have to refer Syncfusion.XlsIO assembly to export as excel.
 
 ![](/js/Chart/Exporting_images/Exporting_img1.png)
 

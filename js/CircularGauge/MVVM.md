@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM
 
-## Angular JS
+## AngularJS
 
-Circular Gauge contains angular support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value.  
+Circular Gauge contains AngularJS support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value.  
 
 ## Rendering the Circular Gauge
 
@@ -302,9 +302,9 @@ Execute the above code to render the following output.
 
 ![](/js/CircularGauge/MVVM_images/MVVM_img7.png)
 
-## Knockout JS
+## KnockoutJS
 
-Knockout support allows you to bind the **HTML** elements against any of the available data models.Two types of knockout binding is supported as of angular,
+KnockoutJS support allows you to bind the **HTML** elements against any of the available data models.Two types of KnockoutJS binding is supported as of AngularJS,
 
 * one-way binding
 

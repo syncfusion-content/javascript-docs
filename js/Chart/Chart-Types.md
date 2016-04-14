@@ -1707,9 +1707,9 @@ You can change the scatter size by using the [`size`](../api/ejchart.html#member
 ![](/js/Chart/Chart-Types_images/Chart-Types_img60.png)
 
 
-## HiloOpenClose Chart 
+## HiLoOpenClose Chart 
 
-To create a HiloOpenClose chart, you can set the series [`type`](../api/ejchart.html#members:series-type) as **"hiloopenclose"** in the chart series. HiloOpenClose chart requires 5 fields ([`x`](../api/ejchart.html#members:series-points-x), [`high`](../api/ejchart.html#members:series-high), [`low`](../api/ejchart.html#members:series-low), [`open`](../api/ejchart.html#members:series-open) and [`close`](../api/ejchart.html#members:series-close)) to plot a segment.  
+To create a HiLoOpenClose chart, you can set the series [`type`](../api/ejchart.html#members:series-type) as **"hiloopenclose"** in the chart series. HiLoOpenClose chart requires 5 fields ([`x`](../api/ejchart.html#members:series-points-x), [`high`](../api/ejchart.html#members:series-high), [`low`](../api/ejchart.html#members:series-low), [`open`](../api/ejchart.html#members:series-open) and [`close`](../api/ejchart.html#members:series-close)) to plot a segment.  
 
 
 {% highlight javascript %}
@@ -1745,12 +1745,12 @@ To create a HiloOpenClose chart, you can set the series [`type`](../api/ejchart.
 ![](/js/Chart/Chart-Types_images/Chart-Types_img61.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hiloopenclose) here to view the HiloOpenClose Chart online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hiloopenclose) here to view the HiLoOpenClose Chart online demo sample.
 
 
 ### DrawMode
 
-You can change the HiloOpenClose chart [`drawMode`](../api/ejchart.html#members:series-drawmode) to [`open`](../api/ejchart.html#members:series-open), [`close`](../api/ejchart.html#members:series-close) or *both*. The default value of [`drawMode`](../api/ejchart.html#members:series-drawmode) is **"both"**. 
+You can change the HiLoOpenClose chart [`drawMode`](../api/ejchart.html#members:series-drawmode) to [`open`](../api/ejchart.html#members:series-open), [`close`](../api/ejchart.html#members:series-close) or *both*. The default value of [`drawMode`](../api/ejchart.html#members:series-drawmode) is **"both"**. 
 
 {% highlight javascript %}
 
@@ -1774,7 +1774,7 @@ You can change the HiloOpenClose chart [`drawMode`](../api/ejchart.html#members:
 
 ### Bull and Bear Color	
 
-Hiloopenclose chart [`bullFillColor`](../api/ejchart.html#members:series-bullfillcolor) is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and [`bearFillColor`](../api/ejchart.html#members:series-bearfillcolor) is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
+HiLoOpenClose chart [`bullFillColor`](../api/ejchart.html#members:series-bullfillcolor) is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and [`bearFillColor`](../api/ejchart.html#members:series-bearfillcolor) is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
 
 {% highlight javascript %}
 
@@ -1861,9 +1861,9 @@ Candle chart [`bullFillColor`](../api/ejchart.html#members:series-bullfillcolor)
 ![](/js/Chart/Chart-Types_images/Chart-Types_img65.png)
 
 
-## Hilo
+## HiLo
 
-Hilo chart is created by setting the series [`type`](../api/ejchart.html#members:series-type) as **"hilo"** in the chart series. Hilo chart requires 3 fields ([`x`](../api/ejchart.html#members:series-points-x), [`high`](../api/ejchart.html#members:series-high) and [`low`](../api/ejchart.html#members:series-low)) to plot a segment.  
+HiLo chart is created by setting the series [`type`](../api/ejchart.html#members:series-type) as **"hilo"** in the chart series. HiLo chart requires 3 fields ([`x`](../api/ejchart.html#members:series-points-x), [`high`](../api/ejchart.html#members:series-high) and [`low`](../api/ejchart.html#members:series-low)) to plot a segment.  
 
 {% highlight javascript %}
 
@@ -1897,7 +1897,7 @@ Hilo chart is created by setting the series [`type`](../api/ejchart.html#members
 ![](/js/Chart/Chart-Types_images/Chart-Types_img66.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hilo) here to view the Hilo Chart online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hilo) here to view the HiLo Chart online demo sample.
 
 ## Polar
 

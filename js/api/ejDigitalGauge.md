@@ -151,7 +151,7 @@ $("#DigitalCore").ejDigitalGauge({ frame:{backgroundImageUrl: null, innerWidth:6
 
 
 
-Specifies the url of an image to be displayed as background of the Digital gauge.
+Specifies the URL of an image to be displayed as background of the Digital gauge.
 
 
 
@@ -896,19 +896,19 @@ Bold</td>
 <td class="name">
 Italic</td>
 <td class="type">string</td>
-<td class="description last">The texts are displayed in  itialized  format</td>
+<td class="description last">The texts are displayed in  italic  format</td>
 </tr> 
 <tr>
 <td class="name">
 Underline</td>
 <td class="type">string</td>
-<td class="description last">The texts are dispalyed in underlined format</td>
+<td class="description last">The texts are displayed in underlined format</td>
 </tr>
 <tr>
 <td class="name">
 Strikeout</td>
 <td class="type">string</td>
-<td class="description last">The texts are displayed in the striked out format</td>
+<td class="description last">The texts are displayed in the strike out format</td>
 </tr>
 </tbody>
 </table>

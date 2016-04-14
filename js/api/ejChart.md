@@ -758,7 +758,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
 
 
-Url of the image to be used as chart background.
+URL of the image to be used as chart background.
 
 
 #### Default Value
@@ -942,7 +942,7 @@ $("#container").ejChart({
 
 
 
-Specifies the name of the action url
+Specifies the name of the action URL
 
 
 #### Default Value
@@ -2622,7 +2622,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 
 
 
-Renders the chart vertically. This is applicable only for cartesian type series.
+Renders the chart vertically. This is applicable only for Cartesian type series.
 
 
 #### Default Value
@@ -2799,19 +2799,19 @@ Specifies the type of shape to be used where two lines meet.
 <td class="name">
 Round</td>
 <td class="type">string</td> 
-<td class="description">Linejoin will be round.</td>
+<td class="description">Line join will be round.</td>
 </tr>
 <tr>
 <td class="name">
 Bevel</td>
 <td class="type">string</td>
-<td class="description">Linejoin will be bevel.</td>
+<td class="description">Line join will be bevel.</td>
 </tr> 
 <tr>
 <td class="name">
 Miter</td>
 <td class="type">string</td>
-<td class="description">Linejoin will be miter.</td>
+<td class="description">Line join will be miter.</td>
 </tr> 
 </tbody>
 </table>
@@ -3738,7 +3738,7 @@ Image</td>
 <td class="name">
 SeriesType</td>
 <td class="type">string</td>
-<td class="description">Shape of the datalabel will be seriestype.</td>
+<td class="description">Shape of the datalabel will be SeriesType.</td>
 </tr> 
 
 </tbody>
@@ -4883,15 +4883,15 @@ Pie</td>
 </tr>
 <tr>
 <td class="name">
-Hilo</td>
+HiLo</td>
 <td class="type">string</td>
-<td class="description">Specifies the series type as hilo.</td>
+<td class="description">Specifies the series type as HiLo.</td>
 </tr> 
 <tr>
 <td class="name">
-HiloOpenClose</td>
+HiLoOpenClose</td>
 <td class="type">string</td>
-<td class="description">Specifies the series type as hiloopenclose.</td>
+<td class="description">Specifies the series type as HiLoOpenClose.</td>
 </tr> 
 <tr>
 <td class="name">
@@ -5799,25 +5799,25 @@ Specifies the type of error bar.
 <td class="name">
 FixedValue</td>
 <td class="type">string</td> 
-<td class="description">Set the type of the errorbar as FixedValue.</td>
+<td class="description">Set the type of the error bar as FixedValue.</td>
 </tr>
 <tr>
 <td class="name">
 Percentage</td>
 <td class="type">string</td>
-<td class="description">Set the type of the errorbar as Percentage.</td>
+<td class="description">Set the type of the error bar as Percentage.</td>
 </tr> 
 <tr>
 <td class="name">
 StandardDeviation</td>
 <td class="type">string</td>
-<td class="description">Set the type of the errorbar as StandardDeviation.</td>
+<td class="description">Set the type of the error bar as StandardDeviation.</td>
 </tr> 
 <tr>
 <td class="name">
 StandardError</td>
 <td class="type">string</td>
-<td class="description">Set the type of the errorbar as StandardError.</td>
+<td class="description">Set the type of the error bar as StandardError.</td>
 </tr> 
 </tbody>
 </table>
@@ -7106,7 +7106,7 @@ See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
  
  
 $("#container").ejChart({ 
-commonseriesoptions:{
+commonSeriesOptions:{
   selectionSettings:{
               type : 'multiple'
              }
@@ -11998,7 +11998,7 @@ Rotate90</td>
 <td class="name">
 Rotate45</td>
 <td class="type">string</td>
-<td class="description">Displays axis labels with 45 degreee</td>
+<td class="description">Displays axis labels with 45 degree</td>
 </tr> 
 <tr>
 <td class="name">
@@ -13676,7 +13676,7 @@ $("#container").ejChart({
 
 <ts name = "ej.datavisualization.Chart.ZIndex"/>
 
-Specifies the order where the strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
+Specifies the order where the strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
 
 <table class="props">
@@ -16565,7 +16565,7 @@ $("#container").ejChart({
 
 
 
-Specifies the order in which strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered below the series and when it is “over”, it is rendered above the series.
+Specifies the order in which strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered below the series and when it is “over”, it is rendered above the series.
 
 
 #### Default Value
@@ -18307,7 +18307,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/mj2qdclr)
 
 
 
-Renders the chart vertically. This is applicable only for cartesian type series.
+Renders the chart vertically. This is applicable only for Cartesian type series.
 
 
 #### Default Value
@@ -25303,7 +25303,7 @@ chartObj.animate(chartObj.model.indicators[0]);
 
 
 
-### export(type, url, exportMultipleChart)
+### export(type, URL, exportMultipleChart)
 {:#methods:export}
 
 
@@ -25340,7 +25340,7 @@ chartObj.export(‘image’);
 </td>
 </tr>
 <tr>
-<td class="name">url</td>
+<td class="name">URL</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">
 URL of the service, where the chart will be exported to excel.

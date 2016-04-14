@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Chart for Javascript is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
+Essential Chart for JavaScript is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
 
 Some of the key features are,
 

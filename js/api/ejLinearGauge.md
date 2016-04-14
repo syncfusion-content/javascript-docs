@@ -438,7 +438,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 
-Specifies the frame background image url of linear gauge
+Specifies the frame background image URL of linear gauge
 
 
 

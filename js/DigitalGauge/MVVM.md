@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM
 
-**Angular JS**
+**AngularJS**
 
-**Digital Gauge** contains angular support. It is possible to add object as well as array object in the **Digital Gauge**. The two way binding support is given to the **value** for displaying the text.
+**Digital Gauge** contains AngularJS support. It is possible to add object as well as array object in the **Digital Gauge**. The two way binding support is given to the **value** for displaying the text.
 
 ## Rendering the Digital Gauge
 
@@ -114,9 +114,9 @@ Execute the above code to render the following output.
 
 
 
-## Knockout Binding
+## KnockoutJS Binding
 
-Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
+KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of AngularJS,
 
   * one-way binding
 

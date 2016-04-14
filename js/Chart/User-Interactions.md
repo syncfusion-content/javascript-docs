@@ -629,7 +629,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 1.	chessboard
 2.	crosshatch
 3.	dots
-4.	packman
+4.	pacman
 5.	grid
 6.	turquoise
 7.	star
@@ -989,7 +989,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 1.	chessboard
 2.	crosshatch
 3.	dots
-4.	packman
+4.	pacman
 5.	grid
 6.	turquoise
 7.	star
