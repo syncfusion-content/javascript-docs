@@ -104,7 +104,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-### contentId `string`
+### contentid `string`
 {:#members:contentid}
 
 
@@ -114,7 +114,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-Specifies the contentId for navigation drawer, where the AJAX content need to updated
+Specifies the contentId for navigation drawer, where the ajax content need to updated
 
 
 
@@ -178,7 +178,7 @@ $("#navpane").ejNavigationDrawer ("option", "contentId", "container");
 
 
 
-### cssClass `string`
+### cssclass `string`
 {:#members:cssclass}
 
 
@@ -384,7 +384,7 @@ $("#navpane").ejNavigationDrawer ("option", "direction", "left");
 
 
 
-### enableListView `boolean`
+### enablelistview `boolean`
 {:#members:enablelistview}
 
 
@@ -554,7 +554,7 @@ $("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item
 
 
 
-### listViewSettings `object`
+### listviewsettings `object`
 {:#members:listviewsettings}
 
 
@@ -708,7 +708,7 @@ $("#navpane").ejNavigationDrawer ("option", "position", "fixed");
 
 
 
-### targetId `string`
+### targetid `string`
 {:#members:targetid}
 
 
@@ -1146,7 +1146,7 @@ $(function(){
 
 
 
-### beforeClose
+### beforeclose
 {:#events:beforeclose}
 
 

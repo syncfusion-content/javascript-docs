@@ -9,7 +9,7 @@ documentation: ug
 
 #Integration
 
-# KnockoutJS Support
+# Knockout Support
 
 **Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
 
@@ -81,7 +81,7 @@ The following example depicts the way to bind data to the **RadialSlider** widge
 
 {% endhighlight %}
 
-# AngularJS Support
+# Angular Support
 
 The **RadialSlider** widget supports two types of **Angular JS support** namely, 
 
@@ -90,7 +90,7 @@ The **RadialSlider** widget supports two types of **Angular JS support** namely,
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **RadialSlider** widget, but the changes made in **RadialSlider** widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **RadialSlider** widget.
 
-**Two-way binding** supports both the processes; it applies the scope values to the **RadialSlider** properties as well as the changes made in the **RadialSlider** widget also get reflected back and triggered within the angularJS scope change function.
+**Two-way binding** supports both the processes; it applies the scope values to the **RadialSlider** properties as well as the changes made in the **RadialSlider** widget also get reflected back and triggered within the angular scope change function.
 
 Apply the plugin and property assigning to the **RadialSlider** widget element through the directive that starts with the letter **“e-“.**
 

@@ -17,7 +17,7 @@ The RadialSlider control that provides an optimized interface for selecting a nu
 
 * AngleSupport: Supports start and end angle level view of RadialSlider.
 
-* width: Supports stroke width of the RadialSlider .
+* width: Supports strokewidth of the RadialSlider .
 
 * Animation: Supports animation effect to the RadialSlider.
 
@@ -27,4 +27,4 @@ The RadialSlider control that provides an optimized interface for selecting a nu
 
 * ticks: This allow the array of numeric value to the RadialSlider.
 
-* showInnerCircle: Supports to show or hide the inner circle to RadialSlider.
+* showInnerCircle: Supports to show or hide the innnercircle to RadialSlider.

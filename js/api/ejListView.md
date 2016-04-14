@@ -197,7 +197,7 @@ $("#lb").ejListView ("option", "dataSource", true);
 
 
 
-Specifies whether to load AJAX content while selecting item.
+Specifies whether to load ajax content while selecting item.
 
 
 #### Default Value
@@ -1858,7 +1858,7 @@ To get the text of the item in the given index.
 <td class="name">
 index</td>
 <td class="type"><span class="param-type">string|number</span></td>
-<td class="description">Specifies the index value to get the text value.</td>
+<td class="description">Specifies the index value to get the textvalue.</td>
 </tr>
 </tbody>
 </table>
@@ -2106,7 +2106,7 @@ $("#lb").ejListView("isChecked",2);
 {:#methods:loadajaxcontent}
 
 
-To load the AJAX content while selecting the item.
+To load the ajax content while selecting the item.
 
 <table class="params">
 <thead>
@@ -2121,7 +2121,7 @@ To load the AJAX content while selecting the item.
 <td class="name">
 item</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Specifies the item to load the AJAX content.</td>
+<td class="description">Specifies the item to load the ajax content.</td>
 </tr>
 </tbody>
 </table>
@@ -2579,7 +2579,7 @@ $("#lb").ejListView("unCheckItem",2);
 
 
 
-Event triggers before the AJAX request happens.
+Event triggers before the ajax request happens.
 
 <table class="params">
 <thead>
@@ -2626,7 +2626,7 @@ model</td>
 <td class="name">
 ajaxData</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">returns the AJAX settings.</td>
+<td class="description">returns the ajax settings.</td>
 </tr>
 </tbody>
 </table>
@@ -2668,7 +2668,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 
-Event triggers after the AJAX content loaded completely.
+Event triggers after the ajax content loaded completely.
 
 <table class="params">
 <thead>
@@ -2751,7 +2751,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 
-Event triggers when the AJAX request failed.
+Event triggers when the ajax request failed.
 
 <table class="params">
 <thead>
@@ -2798,7 +2798,7 @@ model</td>
 <td class="name">
 errorThrown</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description">returns the error thrown in the AJAX post.</td>
+<td class="description">returns the error thrown in the ajax post.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2864,7 +2864,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 
-Event triggers after the AJAX content loaded successfully.
+Event triggers after the ajax content loaded successfully.
 
 <table class="params">
 <thead>
@@ -2911,7 +2911,7 @@ model</td>
 <td class="name">
 content</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the AJAX current content.</td>
+<td class="description">returns the ajax current content.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2933,9 +2933,9 @@ index</td>
 </tr>
 <tr>
 <td class="name">
-URL</td>
+url</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the current URL of the AJAX post.</td>
+<td class="description">returns the current url of the ajax post.</td>
 </tr>
 </tbody>
 </table>

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Start Angle
 
-The **RadialSlider** property **startAngle** Indicates the starting point of the Radialslider and its  allow you to change the startAngle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
+The **RadialSlider** property **startAngle** Indicates the starting point of the Radialslider and its  allow you to change the startangle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
 
 
 {% highlight html %}
@@ -35,7 +35,7 @@ The following screenshot illustrates the output of the above code.
 
 ## End Angle
 
-The **RadialSlider** property **endAngle** Indicates the end point of the Radialslider and its  allow you  to change the   endAngle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
+The **RadialSlider** property **endAngle** Indicates the end point of the Radialslider and its  allow you  to change the   endangle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
 
 {% highlight html %}
 

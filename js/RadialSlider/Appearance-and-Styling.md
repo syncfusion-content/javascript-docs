@@ -15,7 +15,7 @@ documentation: ug
 
 You need two style sheets to apply styles to **RadialSlider** control; one **ej.widgets.core.min.css** and one **ej.theme.min.css**. If you use **ej.widgets.all.min.css** then you don’t need to use **ej.widgets.core.min.css** and **ej.theme.min.css** because **ej.widgets.all.min.css** is a combination of these two.
 
-The core style sheet applies styles related to positioning and size, but are not related to the color scheme and always require the control to look correct and function properly. The theme styles sheet applies theme-specific styles like colors and backgrounds.
+The core style sheet applies styles related to positioning and size, but are not related to the color scheme and always require the control to look correct and function properly. The theme styles heet applies theme-specific styles like colors and backgrounds.
 
 The following list is of the twelve themes supported by **RadialSlider**:
 
@@ -36,7 +36,7 @@ The following list is of the twelve themes supported by **RadialSlider**:
 
 Add the following code in your **HTML** page.
 
-## cssClass
+## Css Class
 
 **RadialSlider** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **RadialSlider** theme.
 

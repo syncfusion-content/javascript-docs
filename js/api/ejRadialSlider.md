@@ -255,7 +255,7 @@ Specifies the inline for label show or not on given radius.
 {:#members:innercircleimageclass}
 
 
-Specifies innerCircleImageClass, using this property we can give images for center radial circle through CSS classes.
+Specifies innerCircleImageClass, using this property we can give images for center radial circle through css classes.
 
 
 #### Default Value:

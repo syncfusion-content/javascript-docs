@@ -14,7 +14,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 **Key Features**
 
-* Multi word Search: Supports searching using multiple words
+* Multiword Search: Supports searching using multiple words
 
 * Data binding: Supports data binding with JSON data and remote data.
 

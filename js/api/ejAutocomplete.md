@@ -175,7 +175,7 @@ The root class for the **Autocomplete** textbox widget which helps in customizin
 ### dataSource `object|array`
 {:#members:datasource}
 
-The data source contains the list of data for the suggestions list. It can be a string array or JSON array. 
+The data source contains the list of data for the suggestions list. It can be a string array or json array. 
 
 #### Default Value: 
 
@@ -380,7 +380,7 @@ Used to group the suggestion list items. <br/><br/></td>
 </tr>
 <tr>
 <td>fields.htmlAttributes<br/><br/></td>
-<td>Defines the HTML attributes such as id, class, styles for the item.<br/><br/></td>
+<td>Defines the html attributes such as id, class, styles for the item.<br/><br/></td>
 </tr>
 <tr>
 <td>fields.key<br/><br/></td>
@@ -686,7 +686,7 @@ Enables or disables the loading icon to intimate the searching operation. The lo
 ### showPopupButton `Boolean`
 {:#members:showpopupbutton}
 
-Enables the showPopup button in autocomplete textbox. When the showPopup button is clicked, it displays all the available data from the data source.
+Enables the showPopup button in autocomplete textbox. When the Showpopup button is clicked, it displays all the available data from the data source.
 
 #### Default Value:  
 

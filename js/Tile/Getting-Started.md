@@ -39,7 +39,7 @@ Create an HTML file and paste the following template for web layout.
 
 
 
-Create a div element that acts as a container for Tile control. Initialize ejTile as in the following code example and specify the tile text, size and image URL.
+Create a div element that acts as a container for Tile control. Initialize ejTile as in the following code example and specify the tile text, size and image url.
 
 
 

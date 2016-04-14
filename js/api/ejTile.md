@@ -467,7 +467,7 @@ $("#tile").ejTile("option", "caption.alignment", "left");</script>           {% 
 
 <ts name = "ej.Tile.CaptionPosition"/>
 
-It is used to specify the caption position like Inner top,  inner bottom and outer.
+It is used to specify the caption position like innertop,  innerbottom and outer.
 
 
 <table class="params">
@@ -481,12 +481,12 @@ It is used to specify the caption position like Inner top,  inner bottom and out
 <tr>
 <td class="name">
 Innertop</td>
-<td class="description">To set the inner top position of the tile text</td>
+<td class="description">To set the innertop position of the tile text</td>
 </tr>
 <tr>
 <td class="name">
 Innerbottom</td>
-<td class="description">To set the inner bottom position of the tile text</td>
+<td class="description">To set the innerbottom position of the tile text</td>
 </tr>
 <tr>
 <td class="name">
@@ -711,7 +711,7 @@ $("#tile").ejTile("option", "height", 300);</script>            {% endhighlight 
 {:#members:imageclass}
 
 
-Specifies Tile imageClass, using this property we can give images for each tile through CSS classes.
+Specifies Tile imageclass, using this property we can give images for each tile through css classes.
 
 #### Default Value
 
@@ -889,7 +889,7 @@ $("#tile").ejTile("option", "imageTemplateId", "sample");</script>            {%
 ### imageUrl `string`
 {:#members:imageurl}
 
-Specifies the URL of tile image.
+Specifies the url of tile image.
 
 #### Default Value
 
@@ -971,7 +971,7 @@ $("#tile").ejTile("option", "liveTile.enabled", true); </script>
 {:#members:livetile-imageclass}
 
 
-Specifies liveTile images in CSS classes.
+Specifies liveTile images in css classes.
 
 
 #### Default Value
@@ -1064,7 +1064,7 @@ $("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);
 {:#members:livetile-imageurl}
 
 
-Specifies liveTile images in CSS classes.
+Specifies liveTile images in css classes.
 
 #### Default Value
 
@@ -1390,7 +1390,7 @@ $("#tile").ejTile("option", "textAlignment", "left");</script>          {% endhi
 
 <ts name = "ej.Tile.TileSize"/>
 
-Specifies the size of a tile.  See tileSize
+Specifies the size of a tile.  See tilesize
 
 
 <table class="params">
@@ -1646,7 +1646,7 @@ value.updateTemplate("sample2");
 {:#events:mousedown}
 
 
-Event triggers when the mouseDown happens in the tile
+Event triggers when the mousedown happens in the tile
 
 <table class="params">
 <thead>
@@ -1733,7 +1733,7 @@ mouseDown: function (args) {
 
 
 
-Event triggers when the mouseUp happens in the tile
+Event triggers when the mouseup happens in the tile
 
 <table class="params">
 <thead>

@@ -14,7 +14,7 @@ BY default, the content inside the Dialog element is considered as the content f
 
 Also, we can render the Dialog widget content through the following ways.
 
-1. request through AJAX
+1. request through Ajax
 
 2. request iframe content
 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for HTML radialmenu control.
+# Custom Design for Html radialmenu control.
 
 
 
@@ -81,7 +81,7 @@ Requires
 
 
 
-To show the Radial in initial render.
+To show the Radial in intial render.
 
 
 Default Value:
@@ -762,7 +762,7 @@ $("#defaultradialmenu").ejRadialMenu ("hideMenu");
 
 
 
-To Show the radial menu
+To Show the redialmenu
 
 
 

@@ -374,7 +374,7 @@ By default, there are 12 themes support available for **Rotator** control as fol
 * gradient-saffron
 * gradient-saffron-dark
 
-### cssClass
+### Css class
 
 This property is used to set **root** **class** for **Rotator** control theme. The value set to this property is **string** type.
 

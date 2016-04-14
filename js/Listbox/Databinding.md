@@ -7,7 +7,7 @@ control: ListBox
 documentation: ug
 ---
 
-# Data binding
+# Databinding
 
 ## Field mapping
 
@@ -80,7 +80,7 @@ jQuery(function ($)
 
 ### OData
 
-[OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
 Here the CustomerID field is mapped with text property of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
 
@@ -116,7 +116,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
 
 

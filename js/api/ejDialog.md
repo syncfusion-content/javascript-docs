@@ -9,7 +9,7 @@ keywords: ejDialog, API, Essential JS Dialog
 
 # ejDialog
 
-The Dialog control displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 #### Syntax
 
@@ -274,7 +274,7 @@ Example
 ### contentType `String`
 {:#members:contenttype}
 
-The content type to load the dialog content at run time. The possible values are null, AJAX, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](#members:contenturl) property.
+The content type to load the dialog content at run time. The possible values are null, ajax, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](#members:contenturl) property.
 
 Default Value:
 {:.param}
@@ -1064,7 +1064,7 @@ Sets the content for the Dialog widget dynamically.
 <td>
 content</td><td>
 string</td><td>
-The content for the dialog widget. It accepts both string and HTML string.</td></tr>
+The content for the dialog widget. It accepts both string and html string.</td></tr>
 </table>
 
 Example
@@ -1137,7 +1137,7 @@ Example
 ###ajaxError
 {:#events:ajaxerror}
 
-This event is triggered whenever the AJAX request fails to retrieve the dialog content.
+This event is triggered whenever the Ajax request fails to retrieve the dialog content.
 
 <table>
 <tr>
@@ -1162,7 +1162,7 @@ string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-URL</td><td>
+url</td><td>
 string</td><td>
 URL of the content.</td></tr>
 <tr>
@@ -1215,7 +1215,7 @@ Example
 ### ajaxSuccess
 {:#events:ajaxsuccess}
 
-This event is triggered whenever the AJAX request to retrieve the dialog content, gets succeed.
+This event is triggered whenever the Ajax request to retrieve the dialog content, gets succeed.
 
 <table>
 <tr>
@@ -1240,7 +1240,7 @@ string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-URL</td><td>
+url</td><td>
 string</td><td>
 URL of the content.</td></tr>
 <tr>
@@ -1436,7 +1436,7 @@ String</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
-URL</td><td>
+url</td><td>
 String</td><td>
 URL of the content.</td></tr>
 <tr>

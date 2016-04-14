@@ -42,7 +42,7 @@ Create an **HTML** file and paste the following template for web layout.
 
 
 
-Create a **div** element that is a container for **Radial Menu**. You can set the images for each item by giving the image **url** with the **data-ej-imageUrl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example.
+Create a **div** element that is a container for **Radial Menu**. You can set the images for each item by giving the image **url** with the **data-ej-imageurl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example.
 
 
 
