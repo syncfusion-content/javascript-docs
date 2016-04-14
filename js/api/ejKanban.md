@@ -1099,7 +1099,7 @@ To set column collapse or expand state
             $("#Kanban").ejKanban(
                 {
                     dataSource: data,
-					toggleColumn:true,
+					allowToggleColumn: true,
 					columns: [
                             { headerText: "Backlog", key: "Open", isCollapsed: false },
                             { headerText: "In Progress", key: "InProgress", isCollapsed: false },
@@ -3694,7 +3694,7 @@ To allow the kanban to freeze particular swimlane at the time of scrolling , unt
 					scrollSettings:{  
 					 height:500,
 				     width:800,
-					 freezeSwimlane:true
+					 allowFreezeSwimlane:true,
 					},
                     columns: [
                         { headerText: "Backlog", key: "Open",width:250 },
