@@ -12,7 +12,7 @@ documentation: ug
 ## Binding PivotGrid to Collection
 This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer to the following links.
 
-When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/getting-started). 
+When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode). 
 
 Or, when you use WCF service, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotgrid/olap-connectivity).
 
