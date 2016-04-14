@@ -2282,8 +2282,8 @@ Hides the Context Menu control.
 {% endhighlight %}
 
 
-### hideItem([itemID])
-{:#methods:hideItem}
+### hideItems([itemID])
+{:#methods:hideItems}
 
 Hides the specific item in the Menu control.
 
@@ -2335,7 +2335,7 @@ Hides the specific item in the Menu control.
         var menuObj = $("#menu").data("ejMenu");
 
         //To hide the menu items
-        menuObj.hideItem(["#search","#company"]);
+        menuObj.hideItems(["#search","#company"]);
 
 {% endhighlight %}
 
@@ -2383,7 +2383,7 @@ Hides the specific item in the Menu control.
         $("#menu").ejMenu();
 
         //To hide the menu items
-        $("#menu").ejMenu("hideItem","#search");
+        $("#menu").ejMenu("hideItems","#search");
 
 {% endhighlight %}
 
@@ -3080,8 +3080,8 @@ event</td>
 
 {% endhighlight %}
 
-### showItem([itemID])
-{:#methods:showItem}
+### showItems([itemID])
+{:#methods:showItems}
 
 Show the specific item in the Menu control.
 
@@ -3133,7 +3133,7 @@ Show the specific item in the Menu control.
         var menuObj = $("#menu").data("ejMenu");
 
         //To show the menu items
-        menuObj.showItem(["#search","#company"]);
+        menuObj.showItems(["#search","#company"]);
 
 {% endhighlight %}
 
@@ -3181,7 +3181,7 @@ Show the specific item in the Menu control.
         $("#menu").ejMenu();
 
         //To show the menu items.
-        $("#menu").ejMenu("showItem",#search");
+        $("#menu").ejMenu("showItems",#search");
 
 {% endhighlight %}
 
