@@ -8,6 +8,7 @@ keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
 
 # ejDiagram
+<ts root="datavisualization" />
 
 The diagram control provides 2D surface to visualize the data as shapes, lines, text and images. It can be configured to DOM element such as DIV.
 
