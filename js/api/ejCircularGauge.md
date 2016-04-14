@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejCircularGauge
+<ts root="datavisualization" />
+
 The Circular gauge can be easily configured to the DOM element, such as div. you can create a circular gauge with a highly customizable look and feel.
 
 
