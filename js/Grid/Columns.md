@@ -165,11 +165,10 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img3.png)
 
 
-### Header Template
+## Header Template
 
 The template design that applies on for the column header. To render template, set [`headerTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertemplateid "headerTemplateID") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
 N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as `text/x-jsrender`.
 

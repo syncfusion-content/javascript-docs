@@ -7,6 +7,9 @@ metaname:
 metacontent: 
 ---
 
+# ejLinearGauge
+<ts root="datavisualization" />
+
 The Linear gauge can be easily configured to the DOM element, such as div. you can create a linear gauge with a highly customizable look and feel.
 
 

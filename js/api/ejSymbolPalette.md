@@ -8,6 +8,7 @@ keywords: symbolpalette, ejSymbolPalette, symbol palette api, syncfusion
 ---
 
 # ejSymbolPalette
+<ts root="datavisualization" />
 
 The symbol palette control allows to predefine the frequently used nodes and connectors and to drag and drop those nodes/connectors to drawing area
 
