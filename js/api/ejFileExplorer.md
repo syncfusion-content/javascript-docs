@@ -79,9 +79,6 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 * module:jquery.easing.1.3.min.js
 
 
-* module:jquery.globalize.min.js
-
-
 * module:jsrender.min.js
 
 
@@ -89,6 +86,9 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 * module:ej.data.js
+
+
+* module:ej.globalize.js
 
 
 * module:ej.scroller.js
@@ -124,6 +124,12 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 * module:ej.fileexplorer.js
 
 
+* module:ej.checkbox.js
+
+
+* module:ej.splitbutton.js
+
+
 * module:ej.grid.edit.js
 
 
@@ -156,7 +162,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the URL of server side ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
+Sets the URL of server side ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in FileExplorer.
 
 
 
@@ -252,7 +258,7 @@ By using ajaxSettings property, you can customize the ajax configurations. Norma
 
 
 
-* { read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}}
+* { read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}, search: {}}
 
 
 
@@ -637,7 +643,7 @@ Enables or disables to perform the filter operation with case sensitive.
 
 
 
-Sets the search filter type. There are several filter types available, such as "startswith", "contains", "endswith". See <a href="global.html#filterType">filterType</a>
+Sets the search filter type. There are several filter types available such as "startswith", "contains", "endswith". See filterType.
 
 
 <table class="props">
@@ -663,6 +669,12 @@ Contains</td>
 <td class="type">string</td>
 <td class="default">contains</td>
 <td class="description">Enum for filter type contains</td>
+</tr>
+<td class="name">
+EndsWith</td>
+<td class="type">string</td>
+<td class="default">endswith</td>
+<td class="description">Enum for filter type endswith</td>
 </tr>
 </tbody>
 </table>
@@ -813,7 +825,7 @@ Gets or sets an object that indicates to render the grid with specified columns.
 
 
 
-* [{ field: "name", headerText: "Name", width: "25%" }, { field: "type", headerText: "Type", width: "20%" }, { field: "dateModified", headerText: "Date Modified", width: "35%" }, { field: "size", headerText: "Size", width: "15%", textAlign: "right", headerTextAlign: "left" }]
+* [{ field: "name", headerText: "Name", width: "30%" }, { field: "dateModified", headerText: "Date Modified", width: "30%" }, { field: "type", headerText: "Type", width: "15%" }, { field: "size", headerText: "Size", width: "12%", textAlign: "right", headerTextAlign: "left" }]
 
 
 
@@ -973,7 +985,7 @@ Enables or disables the responsive support for FileExplorer control during the w
 
 
 
-Sets the file view type. There are two view types available, such as grid, tile. See layoutType.
+Sets the file view type. There are three view types available such as Grid, Tile and Large icons. See layoutType.
 
 
 <table class="props">
@@ -1165,7 +1177,7 @@ Sets the minimum height of FileExplorer control.
 #### Default Value
 
 
-* 250
+* "250px"
 
 #### Example
 
@@ -1195,7 +1207,7 @@ Sets the minimum width of FileExplorer control.
 #### Default Value
 
 
-* 400
+* "400px"
 
 #### Example
 
@@ -1331,6 +1343,40 @@ The selectedItems is used to select the specified items (file, folder) of FileEx
 {% endhighlight %}
 
 
+### showCheckbox `boolean`
+{:#members:showcheckbox}
+
+
+Enables or disables the checkbox option in FileExplorer control.
+
+
+#### Default Value
+
+
+* true
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the showCheckbox value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        showCheckbox: false,
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                     
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
 
 ### showContextMenu `boolean`
 {:#members:showcontextmenu}
@@ -1442,9 +1488,70 @@ Enables or disables the footer in FileExplorer control. The footer element displ
 
 
 
+### showRoundedCorner `boolean`
+{:#members:showroundedcorner}
+
+
+FileExplorer control is displayed with rounded corner when this property is set to true.
+
+
+#### Default Value
+
+
+* false
+
+
+#### Example
 
 
 
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the showRoundedCorner value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        showRoundedCorner: true,
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+### showThumbnail `boolean`
+{:#members:showthumbnail}
+
+
+FileExplorer control is rendered with thumbnail preview of images in Tile and LargeIcons layout when this property set to true.
+
+
+#### Default Value
+
+
+* true
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the showThumbnail value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        showThumbnail: false,
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
+        });
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -1585,7 +1692,7 @@ The tools property is used to configure and group required toolbar items in File
 
 
 
-* { creation:["NewFolder", "Open"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"] }
+* { creation: ["NewFolder"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"], layout: ["Layout"]}
 
 
 
@@ -1650,7 +1757,7 @@ The toolsList property is used to arrange the toolbar items in the FileExplorer 
 
 
 
-* ["creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
+* ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
 
 
 
@@ -1707,7 +1814,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 ### uploadSettings.maxFileSize `number`
-{:#members:uploadSettings-maxfilesize}
+{:#members:uploadsettings-maxfilesize}
 
 
 
@@ -1764,7 +1871,7 @@ Specifies the maximum file size allowed to upload. It accepts the value in bytes
 
 
 ### uploadSettings.allowMultipleFile `boolean`
-{:#members:uploadSettings-allowmultiplefile}
+{:#members:uploadsettings-allowmultiplefile}
 
 
 
@@ -1815,7 +1922,7 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
 {% endhighlight %}
 
 ### uploadSettings.autoUpload `boolean`
-{:#members:uploadSettings-autoupload}
+{:#members:uploadsettings-autoupload}
 
 
 
@@ -2290,7 +2397,7 @@ cancel</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the ajax response data</td>
+<td class="description">returns the ajax request data</td>
 </tr>
 <tr>
 <td class="name">
@@ -2952,6 +3059,11 @@ cancel</td>
 </tr>
 <tr>
 <td class="name">
+isInteraction</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">return true when we change the layout via interaction, else false.</td>
+</tr>
+<td class="name">
 layoutType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current view type.</td>
@@ -3038,7 +3150,7 @@ cancel</td>
 <tr>
 <td class="name">
 itemType</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the opened item type.</td>
 </tr>
 <tr>
@@ -3144,7 +3256,7 @@ model</td>
 <td class="name">
 name</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description">returns the name of moved file or folder.</td>
+<td class="description">returns the name of moved/copied file or folder.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3264,7 +3376,7 @@ path</td>
 <td class="name">
 selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the selected item details.</td>
+<td class="description">returns the removed item details.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3605,14 +3717,14 @@ model</td>
 <tr>
 <td class="name">
 name</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of clicked item.</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description">returns the name of selected items.</td>
 </tr>
 <tr>
 <td class="name">
 path</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the path of clicked item.</td>
+<td class="description">returns the path of selected items.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3655,6 +3767,108 @@ type</td>
 
 {% endhighlight %}
 
+
+### templateRefresh
+{:#events:templaterefresh}
+
+
+
+Triggered when refresh the template column elements in the grid view of FileExplorer control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+cell</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">Returns the cell object.</td>
+</tr>
+<tr>
+<td class="name">
+column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the column object.</td>
+</tr>
+<tr>
+<td class="name">
+data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the current row data.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the grid model of FileExplorer.</td>
+</tr>
+<tr>
+<td class="name">
+rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current row index.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // select event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",        
+        templateRefresh: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
 
 
 
