@@ -244,7 +244,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### allowRowDragAndDrop `Boolean`
-{:#members:allowRowDragAndDrop}
+{:#members:allowrowdraganddrop}
 
 Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
 
@@ -3633,12 +3633,12 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### rowDropSettings `Object`
-{:#members:rowDropSettings}
+{:#members:rowdropsettings}
 
 Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
 
 ### rowDropSettings.dropTargetID `object`
-{:#members:rowDropSettings-dropTargetID}
+{:#members:rowdropsettings-droptargetid}
 
 This specifies the grid to drop the grid rows only at particular target element.
 
@@ -3660,7 +3660,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### rowDropSettings.dragMapper `string`
-{:#members:rowDropSettings-dragMapper}
+{:#members:rowdropsettings-dragmapper}
 
 This helps in mapping server-side action when rows are dragged from Grid.
 
@@ -3682,7 +3682,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### rowDropSettings.dropMapper `string`
-{:#members:rowDropSettings-dropMapper}
+{:#members:rowdropsettings-dropmapper}
 
 This helps in mapping server-side action when rows are dropped in Grid.
 
@@ -12086,7 +12086,7 @@ $("#Grid").ejGrid({
 </script>{% endhighlight %}
 
 ### rowDrag
-{:#events:rowDrag}
+{:#events:rowdrag}
 
 Triggered when the row is being dragged.
 
@@ -12166,7 +12166,7 @@ $("#Grid").ejGrid({
 </script>{% endhighlight %}
 
 ### rowDragStart
-{:#events:rowDragStart}
+{:#events:rowdragstart}
 
 Triggered when row dragging begins.
 
