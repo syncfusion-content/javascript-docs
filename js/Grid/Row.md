@@ -204,13 +204,13 @@ The following output is displayed as a result of the above code example.
 
 ## Drag-and-Drop
 
-Grid rows can be reordered, dropped to another Grid or custom control by enabling [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowRowDragAndDrop "allowRowDragAndDrop") Grid property.
+Grid rows can be reordered, dropped to another Grid or custom control by enabling [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") Grid property.
 
 N> To enable selection of multiple rows by mouse dragging on Grid rows, [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "selectionType") property of Grid must be set to `multiple`.
 
 ### Reorder
 
-By simply enabling the property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowRowDragAndDrop "allowRowDragAndDrop"), Grid rows can be reordered within the same Grid.
+By simply enabling the property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop"), Grid rows can be reordered within the same Grid.
 
 The following code example describes the above behavior.
 
@@ -240,14 +240,15 @@ $(function () {
 The following output is displayed before reordering rows. 
 
 ![](Row_images/Row_img5.png)
+{:Before Drop}
 
 The following output is displayed after reordering rows.
 
-![](Row_images/Row_img6.png)
+{:After Drop}
 
 ### Grid-to-Grid
 
-To drag and drop rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowRowDragAndDrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](http://help.syncfusion.com/js/api/ejgrid#members:rowDropSettings-dropTargetID "dropTargetID") property of Grid [`rowDropSettings`](http://help.syncfusion.com/js/api/ejgrid#members:rowDropSettings "rowDropSettings").
+To drag and drop rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](http://help.syncfusion.com/js/api/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](http://help.syncfusion.com/js/api/ejgrid#members:rowdropsettings "rowDropSettings").
 
 The following code example describes the above behavior.
 
@@ -292,16 +293,18 @@ $(function () {
 The following output is displayed before dropping Grid rows.
 
 ![](Row_images/Row_img7.png)
+{:Before Drop}
 
 The following output is displayed after dropping Grid rows.
 
 ![](Row_images/Row_img8.png)
+{:After Drop}
 
 ### Grid-to-Custom control
 
 You can also drag and drop grid rows to any custom control. For instance, let it be a form.
 
-Enable the Grid property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowRowDragAndDrop "allowRowDragAndDrop") and specify the target form element ID in [`dropTargetID`](http://help.syncfusion.com/js/api/ejgrid#members:rowDropSettings-dropTargetID "dropTargetID") property of Grid [`rowDropSettings`](http://help.syncfusion.com/js/api/ejgrid#members:rowDropSettings "rowDropSettings").
+Enable the Grid property [`allowRowDragAndDrop`](http://help.syncfusion.com/js/api/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target form element ID in [`dropTargetID`](http://help.syncfusion.com/js/api/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](http://help.syncfusion.com/js/api/ejgrid#members:rowdropsettings "rowDropSettings").
 
 The following code example describes the above behavior.
 
@@ -363,7 +366,9 @@ $(function () {
 The following output is displayed before dropping the rows on Form.
 
 ![](Row_images/Row_img9.png)
+{:Before Drop}
 
 The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
+{:After Drop}
