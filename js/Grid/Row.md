@@ -244,6 +244,7 @@ The following output is displayed before reordering rows.
 
 The following output is displayed after reordering rows.
 
+![](Row_images/Row_img6.png)
 {:After Drop}
 
 ### Grid-to-Grid
