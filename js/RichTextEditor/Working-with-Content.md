@@ -430,9 +430,9 @@ Required field, minlength, maxlength, minWordCount and maxWordCount values valid
 
 ![](Working-with-Content_images/Validation.png)
 
+
 # Find and Replace
-RTE provides find and replace support, which is used to find a keyword matches and replace it with the specified text in editor content.
-* In order use it, we enable the find and replace item with the editor toolbar (or) Press CTRL+F key.
+RTE provides find and replace support, which is used to search for a keyword in RTE content and replace the matched keyword with a specified text. In order to use it, we have to enable the find and replace item in the editor toolbar (or) Press CTRL+F key.  
 
 {% highlight html %}
 
@@ -483,13 +483,117 @@ Replaces the particular selected match with the specified text.
 ReplaceAll
 </td>
 <td>
-Replaces the entire matches with the specified tex.
+Replaces the entire matches with the specified text.
 </td>
 </tr>
 </table>
-Note:
-Before performing the Replace/ReplaceAll action, we must do the find action to validate the match’s availability.  
-
 ![](Working-with-Content_images/Find.png)
+Note:  Before performing the Replace/ReplaceAll action, we must do the find action to validate the match’s availability.  
+
+
+# Context Menu 
+Editor provides custom context menu support, which enables more interaction on the content modification and also it can be enabled dynamically.
+* The showContextMenu property helps to enable custom context menu within editor area.
+
+{% highlight html %}
+<textarea id="texteditor">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+<script>
+$("#texteditor").ejRTE({ showFooter:true, enableResize:true,**showContextMenu: true**});
+
+//or
+rteObj=$("#texteditor").data(”ejRTE”);
+rteObj.setModel({showContextMenu: true});
+</script>
+
+{% endhighlight %}
+
+* Based on the target content type contextmenu provides different actions- refer the details with below table.
+
+<table>
+<tr>
+<td>
+Content-Type
+</td>
+<td>
+Supported Actions 
+</td>
+</tr>
+<tr>
+<td>
+Text content
+</td>
+<td>
+cut, copy, paste, add/edit/open/remove hyperlink.
+</td>
+</tr>
+<tr>
+<td>
+Image content
+</td>
+<td>
+cut, copy, paste, image properties.
+</td>
+</tr>
+<tr>
+<td>
+Table content
+</td>
+<td>
+cut, copy, paste, insert row/column, remove row/column/table, edit table properties, add/edit/open/remove hyperlink.
+</td>
+</tr>
+</table>
+
+
+## How to add/remove an item with the context menu
+### Adding an item with the context menu:
+  To add a new item to the editor contextmenu, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
+
+{% highlight html %}
+
+<textarea id="texteditor">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+<script>
+$("#rteSample").ejRTE({ contextMenuClick: function(args){//handle menu-item click action.
+ } });
+var rteeObj = $("#rteSample").data("ejRTE");// Inserts new item to the contextmenu 
+rteeObj.insertMenuOption({newItem:"Show Table Details",                                                 
+targetItem: "Table Properties",
+insertType:("insertAfter"),
+menuType:{text:false,image:false,hyperlink:false,table:true},                             
+spriteCssClass:"e-rte-toolbar-icon tableProperties"});
+</script>
+{% endhighlight %}
+
+
+### Removing an item from the context menu:
+  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](http://help.syncfusion.com/js/api/ejrte#methods:removeMenuOption "").
+
+{% highlight html %}
+<textarea id="texteditor">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+<script>
+var rteeObj = $("#rteSample").data("ejRTE"); 
+rteeObj.removeMenuOption("Table-Details");
+</script> 
+{% endhighlight %}
+
+![](Working-with-Content_images/ContextMenu.png)
 
 

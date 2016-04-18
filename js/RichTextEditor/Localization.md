@@ -159,7 +159,7 @@ ej.RTE.Locale["en-US"] = {
 		ReplaceWith:"Replace with",		
 		Replace:"Replace",
 		ReplaceAll:"Replace All",
-		FindErrorMsg:"Couldn't found the specified word."
+		FindErrorMsg:"Couldn't find the specified word."
     };
     var format = [
     { text: "Paragraph", value: "p", spriteCssClass: "e-paragraph" },
