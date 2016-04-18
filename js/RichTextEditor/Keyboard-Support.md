@@ -67,15 +67,18 @@ Redo the last action<br/><br/></td></tr>
 <tr>
 <td>
 <kbd>CTRL</kbd> + <kbd>U</kbd><br/><br/></td><td>
-Make text underline<br/><br/></td></tr>
+Applies underline format with the selected content.
+<br/><br/></td></tr>
 <tr>
 <td>
 <kbd>CTRL</kbd>  + <kbd>I</kbd><br/><br/></td><td>
-Make text italic<br/><br/></td></tr>
+Applies italic format with the selected content.
+<br/><br/></td></tr>
 <tr>
 <td>
 <kbd>CTRL</kbd> + <kbd>B</kbd><br/><br/></td><td>
-Make text bold<br/><br/></td></tr>
+Applies bold format with the selected content.
+<br/><br/></td></tr>
 <tr>
 <td>
 <kbd>CTL</kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd><br/><br/>
@@ -97,7 +100,7 @@ Opens hyperlink dialog for attaching the hyperlink with the selected content.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>K</kbd><br/><br/>
 </td>
 <td>
-Remove hyperlink from the selected content.
+Removes hyperlink from the selected content.
 </td>
 </tr>
 <tr>
@@ -177,7 +180,7 @@ Inserts video to the content.
 <kbd>CTRL</kbd>+ <kbd>SHIFT</kbd> +<kbd>F</kbd><br/><br/>
 </td>
 <td>
-Editor area will be expanded with full mode.
+Expands the editor area to full screen mode.
 </td>
 </tr>
 <tr>
@@ -193,7 +196,7 @@ Clear text formats from the selected content.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>C</kbd><br/><br/>
 </td>
 <td>
-Open custom table dialog, for insert a customized table with the content.
+Opens custom table dialog, to insert a customized table with the content.
 </td>
 </tr>
 <tr>
@@ -201,7 +204,7 @@ Open custom table dialog, for insert a customized table with the content.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd><br/><br/>
 </td>
 <td>
-Open edit table dialog, for editing the table property.
+Opens edit table dialog, for editing the table property.
 </td>
 </tr>
 <tr>
@@ -209,7 +212,7 @@ Open edit table dialog, for editing the table property.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>LEFT</kbd><br/><br/>
 </td>
 <td>
-New column will be Inserted before the current focused cell.
+Inserts a column before the focused cell.
 </td>
 </tr>
 <tr>
@@ -217,7 +220,7 @@ New column will be Inserted before the current focused cell.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>RIGHT</kbd><br/><br/>
 </td>
 <td>
-New column will be Inserted after the current focused cell.
+Inserts a column after the focused cell.
 </td>
 </tr>
 <tr>
@@ -225,7 +228,7 @@ New column will be Inserted after the current focused cell.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>UP</kbd><br/><br/>
 </td>
 <td>
-New column will be Inserted above to the current focused cell.
+Inserts a row above the focused cell.
 </td>
 </tr>
 <tr>
@@ -233,7 +236,7 @@ New column will be Inserted above to the current focused cell.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>DOWN</kbd><br/><br/>
 </td>
 <td>
-New column will be Inserted below to the current focused cell.
+Inserts a row below the focused cell.
 </td>
 </tr>
 <tr>
@@ -281,7 +284,7 @@ Increase font size for the selected content.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>L</kbd><br/><br/>
 </td>
 <td>
-Replaces the selected content to lowercased content.
+Replaces the selected content to lowercase content.
 </td>
 </tr>
 <tr>
@@ -289,7 +292,7 @@ Replaces the selected content to lowercased content.
 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>U</kbd><br/><br/>
 </td>
 <td>
-Replaces the selected content to uppercased content. 
+Replaces the selected content to uppercase content. 
 </td>
 </tr>
 <tr>
