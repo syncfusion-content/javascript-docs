@@ -741,7 +741,132 @@ $("#chartcontainer").ejChart({
 
 ## Common axis features
 
-Customization of features such as axis title, labels, grid lines and tick lines are common to all the axis. Each of these features are explained in this section.
+Customization of features such as axis crossing, title, labels, grid lines and tick lines are common to all the axis. Each of these features are explained in this section.
+
+
+### Axis Crossing
+
+Axis can be positioned anywhere in chart area using the [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property of axis. This property specifies where the horizontal axis should intersect or cross the vertical axis and vice versa. Default value of [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property is null.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({
+
+		primaryXAxis:
+		{
+			//Crosses primary Y axis at 0
+			crossesAt: 0,
+
+			//...
+		},	
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_crossing1.png)
+
+
+#### Crossing a specific Axis
+
+The [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) property takes axis name as input and determines the axis used for crossing. By default all the horizontal axes crosses in primary Y axis and all the vertical axes crosses in primary X axis.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+
+		primaryXAxis:
+		{
+			//Crosses vertical axis at -0.2
+			crossesAt: -0.2,
+
+			//Crosses in secondary Y axis
+			crossesInAxis: 'secondaryYAxis',
+
+
+			//...
+		},	
+
+		//Vertical axis for crossing
+		axes: [{
+			orientation: 'vertical',
+			name: 'secondaryYAxis',
+
+			//...
+		}],
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_crossing2.png)
+
+Axis will be placed in the opposite side if value of [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property is greater than the maximum value of crossing axis (axis name provided through [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) property or primary Y axis for horizontal axis).
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+
+		primaryXAxis:
+		{
+			//Crosses primary Y axis at 200
+			crossesAt: 200,
+
+			//...
+		},	
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_crossing3.png)
+
+
+#### Crossing in DateTime Axis
+
+For crossing in a date time horizontal axis, date object should be provided as value for [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property of vertical axes.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+
+		primaryYAxis:
+		{
+			//Crosses horizontal axis at 5/29/2010
+			crossesAt: new Date(2010, 4, 29),
+
+			//...
+		}
+		//...
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_crossing4.png)
+
+
+#### Crossing in Category Axis
+
+For crossing in a category type horizontal axis, either a string object or a number corresponding to the index of category value can be used for [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property of vertical axes.
+
+W> String value provided for [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property is case-sensitive. 
+
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+
+		primaryYAxis:
+		{
+			//Crosses horizontal axis at category value ‘Third’
+			crossesAt: 'Third',
+
+			//...
+		}
+		//...
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_crossing5.png)
+
 
 ### Axis Visibility
 

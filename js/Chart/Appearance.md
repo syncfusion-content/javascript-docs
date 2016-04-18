@@ -104,6 +104,78 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ![](/js/Chart/Appearance_images/Appearance_img3.png)
 
+## Column Width customization
+
+Width of the column type series can be customized by using the [`columnWidth`](../api/ejchart#members:series-columnwidth) property. Default value of [`columnWidth`](../api/ejchart#members:series-columnwidth) is 0.7. Value ranges from 0 to 1. Here 1 corresponds to 100% of available width and 0 corresponds to 0% of available width.
+
+N> Width of a column also depends upon the [`columnSpacing`](../api/ejchart#members:series-columnspacing) property, because [`columnSpacing`](../api/ejchart#members:series-columnSpacing) will reduce the space available for drawing a column
+
+{% highlight javascript %}
+
+    $('#container').ejChart({
+
+		//Common settings for all series
+		commonSeriesOptions: {
+    
+			//Width of columns in column type series
+			columnWidth: 0.7
+
+			//...        
+		},
+
+		//Settings specific to individual series
+		series: [{
+		
+			//Width of columns in column type series
+			columnWidth: 0.8
+
+			//... 
+		}],
+
+		//...
+
+	});	
+
+{% endhighlight %}
+
+![](/js/Chart/Appearance_images/Appearance_colSpacing1.png)
+
+## Spacing between Column Series
+
+Spacing between column type series can be customized using the [`columnSpacing`](../api/ejchart#members:series-columnspacing) property. Default value of [`columnSpacing`](../api/ejchart#members:series-columnspacing) is 0. Value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
+
+N> Column spacing will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width.
+
+{% highlight javascript %}
+
+    $('#container').ejChart({
+
+		//Common settings for all series
+		commonSeriesOptions: {
+    
+			//Spacing between column series
+		columnSpacing: 0,
+
+			//...
+		},
+
+		//Settings specific to individual series
+		series: [{
+    
+			//Spacing between column series
+			columnSpacing: 0.2,
+	
+			//...
+		}],
+
+		//...
+
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Appearance_images/Appearance_colSpacing2.png)
+
 ## Series border customization
 
 To customize the series border color, width and dashArray, you can use [`series.border`](../api/ejchart#members:series-border) option. 
