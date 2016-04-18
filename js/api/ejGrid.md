@@ -8292,7 +8292,7 @@ $("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
 
 Used to update a particular cell value.
 
-N> It will work only for Local Data. then It is perform all editing operation except batch edit.
+N> It will work only for Local Data.This method applicable for all editMode's except batch edit mode.
 
 #### setCellText(rowIndex, cellIndex, value)
 {:#methods:setcelltext}
@@ -8414,7 +8414,7 @@ $("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
 
 Used to update a particular cell value based on specified row Index and the fieldName.
 
-N> It will working only for batch editing.  
+N> It will working only for batch edit mode.  
 
 <table class="params">
 <thead>
