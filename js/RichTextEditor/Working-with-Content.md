@@ -490,5 +490,6 @@ Replaces the entire matches with the specified tex.
 Note:
 Before performing the Replace/ReplaceAll action, we must do the find action to validate the match’s availability.  
 
+![](Working-with-Content_images/Find.png)
 
 
