@@ -25272,26 +25272,23 @@ Following are the parameters that you can pass to this method.
 <tbody>
 <tr>
 <td class="name">options</td>
-<td class="type"><span class="param-type">array</span></td>
-<td class="description last">Series and indicator objects passed in the array collection are animated.
-<br/><br./>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">If an array collection is passed as parameter, series and indicator objects passed in array collection are animated.
+<br/><br/>
 Example
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 //animating series array
 chartObj.animate(chartObj.model.series);
 {% endhighlight %}
-</td>
-</tr>
-<tr>
-<td class="name">option</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Series or indicator object passed to this method are animated.
+
+<br/>
+If a series or indicator object is passed to this method, then the specific series or indicator is animated.
 <br/><br/>
 Example,
 
-{% highlight js %}
+{% highlight javascript %}
 var chartObj  = $("#container").data("ejChart");
 //animating a specific indicator
 chartObj.animate(chartObj.model.indicators[0]);
