@@ -75,7 +75,264 @@ Make text italic<br/><br/></td></tr>
 <tr>
 <td>
 <kbd>CTRL</kbd> + <kbd>B</kbd><br/><br/></td><td>
-Make text bold<br/><br/></td></tr></table>
+Make text bold<br/><br/></td></tr>
+<tr>
+<td>
+<kbd>CTL</kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd>
+</td>
+<td>
+Applies strike format with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>K</kbd>
+</td>
+<td>
+Opens hyperlink dialog for attaching the hyperlink with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>K</kbd>
+</td>
+<td>
+Remove hyperlink from the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>E</kbd>
+</td>
+<td>
+Justify center.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>J</kbd>
+</td>
+<td>
+Justify Full.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>L</kbd>
+</td>
+<td>
+Justify Left.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>R</kbd>
+</td>
+<td>
+Justify Right.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>M</kbd>
+</td>
+<td>
+Increases the indent of the focused content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>M</kbd>
+</td>
+<td>
+Decreases the indent of the focused content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL </kbd>+<kbd>SHIFT</kbd>+<kbd>H</kbd>
+</td>
+<td>
+Opens the html source of the editor content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+ <kbd>SHIFT </kbd>+<kbd>I</kbd>
+</td>
+<td>
+Inserts or edit image with editor content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>V</kbd>
+</td>
+<td>
+Inserts video to the content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+ <kbd>SHIFT</kbd> +<kbd>F</kbd>
+</td>
+<td>
+Editor area will be expanded with full mode.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>R</kbd>
+</td>
+<td>
+Clear text formats from the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>C</kbd>
+</td>
+<td>
+Open custom table dialog, for insert a customized table with the content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd>
+</td>
+<td>
+Open edit table dialog, for editing the table property.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>LEFT</kbd>
+</td>
+<td>
+New column will be Inserted before the current focused cell.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>RIGHT</kbd>
+</td>
+<td>
+New column will be Inserted after the current focused cell.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>UP</kbd>
+</td>
+<td>
+New column will be Inserted above to the current focused cell.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>DOWN</kbd>
+</td>
+<td>
+New column will be Inserted below to the current focused cell.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>C</kbd>
+</td>
+<td>
+Removes focused column from the table.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>R</kbd>
+</td>
+<td>
+Removes focused row from the table.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>A</kbd>
+</td>
+<td>
+Deletes  entire Table
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd><</kbd>   
+</td>
+<td>
+Decrease font size for the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>></kbd>
+</td>
+<td>
+Increase font size for the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>L</kbd>
+</td>
+<td>
+Replaces the selected content to lowercased content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>U</kbd>
+</td>
+<td>
+Replaces the selected content to uppercased content. 
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd> +<kbd>=</kbd>
+</td>
+<td>
+Enables the superscript with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd> +<kbd>=</kbd>
+</td>
+<td>
+Enables the subscript with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>O</kbd>
+</td>
+<td>
+Inserts the ordered list element with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTLR</kbd> +<kbd>ALT</kbd>+<kbd>O</kbd>
+</td>
+<td>
+Inserts the unordered list element with the selected content.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>CTRL</kbd>+<kbd>F10</kbd>
+</td>
+<td>
+Clears the entire editor content.
+</td>
+</tr>
+</table>
 
 To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
@@ -88,3 +345,4 @@ $("#texteditor").ejRTE({
     });
 {% endhighlight %}
 
+**Note:** In order to make the tab key for form element navigation –disable the **enableTabKeyNavigation** property.
