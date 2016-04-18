@@ -112,11 +112,11 @@ Initialize the ListBox widget as below.
 
 ![Alt text](Getting-Started_images\Getting-Started_img1.png)
 
-## Databinding
+## Data binding
 
 We can populate data in the ListBox widget using “datasource” and “fields” properties. 
 
-{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
+{% seealso %} [Data binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 {% highlight html %}
 

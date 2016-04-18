@@ -27,7 +27,7 @@ It defines mapping fields for the data items of the **Rotator**. The value set t
 
 It specifies the text content of the tag. The value set to this property is **string** type.
 
-## Url
+## URL
 
 This property specifies the **URL** for an image. The value set to this property is **string** type.
 
@@ -86,7 +86,7 @@ This property retrieves data from remote data. This property is applicable only 
 
 ![](/js/Rotator/Data-Binding_images/Data-Binding_img1.png)
 
-## Knockout support
+## KnockoutJS support
 
 **Knockout** support allows you to bind the **HTML** elements against any of the available data models.
 
@@ -103,7 +103,7 @@ For more information about the **Knockout** binding, you can refer the online do
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
+Add the following script files along with the given code to access KnockoutJS binding. They have JS library for KnockoutJS binding.
 
  
 * knockout-min.js
@@ -155,22 +155,22 @@ The following code example depicts the way to bind data to the **Rotator** throu
 
 ![](/js/Rotator/Data-Binding_images/Data-Binding_img2.png) 
 
-## Angular support
+## AngularJS support
 
-Rotator is availed with two types of angular JS support namely, 
+Rotator is availed with two types of AngularJS support namely, 
 
 * One way binding
 * Two way binding 
 
 **One way binding** refers to the process of applying scope values to all the available properties of the Rotator. But the changes made in **Rotator** widget are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the **Rotator**.
 
-**Two-way binding** supports both the processes – it applies the scope values to the **Rotator** properties as well as the changes made in the **Rotator** widget are also reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes – it applies the scope values to the **Rotator** properties as well as the changes made in the **Rotator** widget are also reflected back and triggered within the AngularJS scope change function.
 
 To know more details about the **Angular** **binding**, you can refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.
+Add the following script files as given in the following example to access AngularJS binding. They have JS library for AngularJS binding.
 
 
 

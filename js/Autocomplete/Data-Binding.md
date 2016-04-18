@@ -70,7 +70,7 @@ Here the name and index fields are mapped with text and key properties of the fi
 
 #### OData
 
-[OData](http://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
+[OData](http://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
 
 Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
 
@@ -106,7 +106,7 @@ Here the ContactName and SupplierID fields are mapped with text and key properti
 
 
 
-[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
 Here the ContactName field is mapped with text property of the field object. 
 

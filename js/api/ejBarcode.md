@@ -8,6 +8,7 @@ metacontent:
 ---
 
 # Custom Design for Barcode control.
+<ts root="datavisualization" />
 
 $(element).ejBarcode<span class="signature">()</span>
 
