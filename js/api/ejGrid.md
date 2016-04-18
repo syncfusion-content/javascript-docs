@@ -8414,7 +8414,7 @@ $("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
 
 Used to update a particular cell value based on specified row Index and the fieldName.
 
-N> It will working only for batch editing.then we need to save it using batch save or explicitly.   
+N> It will working only for batch editing.  
 
 <table class="params">
 <thead>
