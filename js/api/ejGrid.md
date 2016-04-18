@@ -8292,7 +8292,7 @@ $("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
 
 Used to update a particular cell value.
 
-N> setCellText method is working in Local Data and in others but except batch editing
+N> It will work only for Local Data.It is perform all editing operation except batch edit.
 
 #### setCellText(rowIndex, cellIndex, value)
 {:#methods:setcelltext}
