@@ -243,6 +243,27 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### allowRowDragAndDrop `Boolean`
+{:#members:allowrowdraganddrop}
+
+Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}                     
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop:true
+});
+</script> 
+{% endhighlight %}
+
 ### allowResizeToFit `Boolean`
 {:#members:allowresizetofit}
 
@@ -3607,6 +3628,77 @@ $("#Grid").ejGrid({
    allowSearching: true,
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
    searchSettings: { ignoreCase: true, key:"VINET" }
+});
+</script> 
+{% endhighlight %}
+
+### rowDropSettings `Object`
+{:#members:rowdropsettings}
+
+Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
+
+### rowDropSettings.dropTargetID `object`
+{:#members:rowdropsettings-droptargetid}
+
+This specifies the grid to drop the grid rows only at particular target element.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid" }
+});
+</script> 
+{% endhighlight %}
+
+### rowDropSettings.dragMapper `string`
+{:#members:rowdropsettings-dragmapper}
+
+This helps in mapping server-side action when rows are dragged from Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid", dragMapper: "Home/DragHandler" }
+});
+</script> 
+{% endhighlight %}
+
+### rowDropSettings.dropMapper `string`
+{:#members:rowdropsettings-dropmapper}
+
+This helps in mapping server-side action when rows are dropped in Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid", dropMapper: "Home/DragHandler" }
 });
 </script> 
 {% endhighlight %}
@@ -11992,6 +12084,247 @@ $("#Grid").ejGrid({
  columnDrop: function (args) {}
 });
 </script>{% endhighlight %}
+
+### rowDrag
+{:#events:rowdrag}
+
+Triggered when the row is being dragged.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDrag event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggableType</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns draggable element type.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the draggable row object.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns target elements based on mouse move position.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns JSON data of dragged rows.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   rowDrag: function (args) {}
+});
+</script>{% endhighlight %}
+
+### rowDragStart
+{:#events:rowdragstart}
+
+Triggered when row dragging begins.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDragStart event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggableType</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns draggable element type.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the draggable row object.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns drag start element cell.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the JSON data of dragged rows.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    rowDragStart: function (args) {}
+});
+</script>{% endhighlight %}
+
+### rowDrop
+{:#events:rowdrop}
+
+Triggered when the row is dropped.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDrop event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggableType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns draggable element type.</td>
+</tr>
+<tr>
+<td class="name">rows</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the draggable row object.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current mouse position cell element.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the JSON data of dragged rows.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
+$("#Grid").ejGrid({
+ rowDrop: function (args) {}
+});
+</script>{% endhighlight %}
+
 
 ### columnSelected
 {:#events:columnselected}
