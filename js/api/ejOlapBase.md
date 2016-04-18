@@ -9,6 +9,7 @@ metacontent:
 ---
 
 # OlapBase
+<ts  isFrameWork="true" />
 
 Support has been provided in PivotGrid to load OLAP Cube information at client-side directly through XML/A. 
 

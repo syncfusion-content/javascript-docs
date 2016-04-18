@@ -8,6 +8,7 @@ keywords: treemap, ejtreemap, treemap api, syncfusion
 ---
 
 # ejTreeMap
+<ts root="datavisualization" />
 
 The treemap can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 

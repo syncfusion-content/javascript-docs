@@ -253,7 +253,7 @@ Example
 
 {% endhighlight %}
 
-### checkedItemlist [Deprecated] `array`
+### checkedItemList [Deprecated] `array`
 {:#members:checkeditemlist} 
 
 List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
@@ -545,7 +545,7 @@ The grouping in the ListBox widget can be defined using this field. </td></tr>
 <tr>
 <td>
 fields.htmlAttributes</td><td>
-Defines the html attributes such as id, class, styles for the specific ListBox item.</td></tr>
+Defines the HTML attributes such as id, class, styles for the specific ListBox item.</td></tr>
 <tr>
 <td>
 fields.id</td><td>
@@ -569,7 +569,7 @@ Defines the specific field name which contains Boolean values to specify whether
 <tr>
 <td>
 spriteCssClass</td><td>
-Defines the sprite css class for the image to be displayed.</td></tr>
+Defines the sprite CSS class for the image to be displayed.</td></tr>
 <tr>
 <td>
 tableName</td><td>
@@ -728,7 +728,7 @@ Example
     
 {% endhighlight %}
 
-### selectedItemlist [Deprecated] `array`
+### selectedItemList [Deprecated] `array`
 {:#members:selecteditemlist}
 
 The list of items to be selected by default using its index values. To use this property allowMultiSelection should be enabled.
@@ -898,7 +898,7 @@ Example
 ### value `number`
 {:#members:value}
 
-Holds the selected items values and used to bind value to the list item using angular and knockout.
+Holds the selected items values and used to bind value to the list item using angularJS and knockoutJS.
 
 #### Default Value:
 * “”
@@ -1788,7 +1788,7 @@ Example
 ### selectItemByText(text)
 {:#methods:selectItemByText}
 
-Selects the list tem using its text value.
+Selects the list item using its text value.
 
 <table>
 <tr>
@@ -1816,7 +1816,7 @@ Example
 ### selectItemByValue(value)
 {:#methods:selectitembyvalue}
 
-Selects list tem using its value property.
+Selects list item using its value property.
 
 <table>
 <tr>
@@ -2655,7 +2655,7 @@ List of array object</td></tr>
 <td>
 xhr</td><td>
 Object</td><td>
-ExcuteQuery object of DataManager</td></tr>
+ExecuteQuery object of DataManager</td></tr>
 </table>
 
 Example

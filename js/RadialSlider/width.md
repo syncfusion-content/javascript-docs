@@ -11,7 +11,7 @@ documentation: ug
 
 ## Stroke Width
 
-**Radial Slider** strokewidth  property  specifies the width of the outline on the "RadialSlider" . By default, the **Radial slider** strokeWidth is set as 2. Refer to the following code example.
+**Radial Slider** stroke width  property  specifies the width of the outline on the "RadialSlider" . By default, the **Radial slider** strokeWidth is set as 2. Refer to the following code example.
 
 {% highlight html %}
 

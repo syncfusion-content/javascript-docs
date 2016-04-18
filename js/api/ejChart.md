@@ -10,6 +10,7 @@ metacontent:
 ---
 
 # ejChart
+<ts root="datavisualization" />
 
 Essential chart can be easily configured to the DOM element, such as div. You can create a Chart with highly customizable look and feel.
 
