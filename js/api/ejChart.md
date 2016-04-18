@@ -25277,7 +25277,7 @@ Following are the parameters that you can pass to this method.
 <br/><br/>
 Example
 
-{% highlight javascript %}
+{% highlight js %}
 var chartObj  = $("#container").data("ejChart");
 //animating series array
 chartObj.animate(chartObj.model.series);
@@ -25288,7 +25288,7 @@ If a series or indicator object is passed to this method, then the specific seri
 <br/><br/>
 Example,
 
-{% highlight javascript %}
+{% highlight js %}
 var chartObj  = $("#container").data("ejChart");
 //animating a specific indicator
 chartObj.animate(chartObj.model.indicators[0]);
