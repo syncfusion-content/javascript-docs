@@ -78,7 +78,7 @@ Make text italic<br/><br/></td></tr>
 Make text bold<br/><br/></td></tr>
 <tr>
 <td>
-<kbd>CTL</kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd>
+<kbd>CTL</kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd><br/><br/>
 </td>
 <td>
 Applies strike format with the selected content.
@@ -86,7 +86,7 @@ Applies strike format with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>K</kbd>
+<kbd>CTRL</kbd>+<kbd>K</kbd><br/><br/>
 </td>
 <td>
 Opens hyperlink dialog for attaching the hyperlink with the selected content.
@@ -94,7 +94,7 @@ Opens hyperlink dialog for attaching the hyperlink with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>K</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>K</kbd><br/><br/>
 </td>
 <td>
 Remove hyperlink from the selected content.
@@ -102,7 +102,7 @@ Remove hyperlink from the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>E</kbd>
+<kbd>CTRL</kbd>+<kbd>E</kbd><br/><br/>
 </td>
 <td>
 Justify center.
@@ -110,7 +110,7 @@ Justify center.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>J</kbd>
+<kbd>CTRL</kbd>+<kbd>J</kbd><br/><br/>
 </td>
 <td>
 Justify Full.
@@ -118,7 +118,7 @@ Justify Full.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>L</kbd>
+<kbd>CTRL</kbd>+<kbd>L</kbd><br/><br/>
 </td>
 <td>
 Justify Left.
@@ -126,7 +126,7 @@ Justify Left.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>R</kbd>
+<kbd>CTRL</kbd>+<kbd>R</kbd><br/><br/>
 </td>
 <td>
 Justify Right.
@@ -134,7 +134,7 @@ Justify Right.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>M</kbd>
+<kbd>CTRL</kbd>+<kbd>M</kbd><br/><br/>
 </td>
 <td>
 Increases the indent of the focused content.
@@ -142,7 +142,7 @@ Increases the indent of the focused content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>M</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>M</kbd><br/><br/>
 </td>
 <td>
 Decreases the indent of the focused content.
@@ -150,7 +150,7 @@ Decreases the indent of the focused content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL </kbd>+<kbd>SHIFT</kbd>+<kbd>H</kbd>
+<kbd>CTRL </kbd>+<kbd>SHIFT</kbd>+<kbd>H</kbd><br/><br/>
 </td>
 <td>
 Opens the html source of the editor content.
@@ -158,7 +158,7 @@ Opens the html source of the editor content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+ <kbd>SHIFT </kbd>+<kbd>I</kbd>
+<kbd>CTRL</kbd>+ <kbd>SHIFT </kbd>+<kbd>I</kbd><br/><br/>
 </td>
 <td>
 Inserts or edit image with editor content.
@@ -166,7 +166,7 @@ Inserts or edit image with editor content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>V</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>V</kbd><br/><br/>
 </td>
 <td>
 Inserts video to the content.
@@ -174,7 +174,7 @@ Inserts video to the content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+ <kbd>SHIFT</kbd> +<kbd>F</kbd>
+<kbd>CTRL</kbd>+ <kbd>SHIFT</kbd> +<kbd>F</kbd><br/><br/>
 </td>
 <td>
 Editor area will be expanded with full mode.
@@ -182,7 +182,7 @@ Editor area will be expanded with full mode.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>R</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>R</kbd><br/><br/>
 </td>
 <td>
 Clear text formats from the selected content.
@@ -190,7 +190,7 @@ Clear text formats from the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>C</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>C</kbd><br/><br/>
 </td>
 <td>
 Open custom table dialog, for insert a customized table with the content.
@@ -198,7 +198,7 @@ Open custom table dialog, for insert a customized table with the content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd><br/><br/>
 </td>
 <td>
 Open edit table dialog, for editing the table property.
@@ -206,7 +206,7 @@ Open edit table dialog, for editing the table property.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>LEFT</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>LEFT</kbd><br/><br/>
 </td>
 <td>
 New column will be Inserted before the current focused cell.
@@ -214,7 +214,7 @@ New column will be Inserted before the current focused cell.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>RIGHT</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>RIGHT</kbd><br/><br/>
 </td>
 <td>
 New column will be Inserted after the current focused cell.
@@ -222,7 +222,7 @@ New column will be Inserted after the current focused cell.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>UP</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>UP</kbd><br/><br/>
 </td>
 <td>
 New column will be Inserted above to the current focused cell.
@@ -230,7 +230,7 @@ New column will be Inserted above to the current focused cell.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>DOWN</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>DOWN</kbd><br/><br/>
 </td>
 <td>
 New column will be Inserted below to the current focused cell.
@@ -238,7 +238,7 @@ New column will be Inserted below to the current focused cell.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>C</kbd>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>C</kbd><br/><br/>
 </td>
 <td>
 Removes focused column from the table.
@@ -246,7 +246,7 @@ Removes focused column from the table.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>R</kbd>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>R</kbd><br/><br/>
 </td>
 <td>
 Removes focused row from the table.
@@ -254,7 +254,7 @@ Removes focused row from the table.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>A</kbd>
+<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>A</kbd><br/><br/>
 </td>
 <td>
 Deletes  entire Table
@@ -262,7 +262,7 @@ Deletes  entire Table
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd><</kbd>   
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd><</kbd><br/><br/>   
 </td>
 <td>
 Decrease font size for the selected content.
@@ -270,7 +270,7 @@ Decrease font size for the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>></kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>></kbd><br/><br/>
 </td>
 <td>
 Increase font size for the selected content.
@@ -278,7 +278,7 @@ Increase font size for the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>L</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>L</kbd><br/><br/>
 </td>
 <td>
 Replaces the selected content to lowercased content.
@@ -286,7 +286,7 @@ Replaces the selected content to lowercased content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>U</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>U</kbd><br/><br/>
 </td>
 <td>
 Replaces the selected content to uppercased content. 
@@ -294,7 +294,7 @@ Replaces the selected content to uppercased content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd> +<kbd>=</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd> +<kbd>=</kbd><br/><br/>
 </td>
 <td>
 Enables the superscript with the selected content.
@@ -302,7 +302,7 @@ Enables the superscript with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd> +<kbd>=</kbd>
+<kbd>CTRL</kbd> +<kbd>=</kbd><br/><br/>
 </td>
 <td>
 Enables the subscript with the selected content.
@@ -310,7 +310,7 @@ Enables the subscript with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>O</kbd>
+<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>O</kbd><br/><br/>
 </td>
 <td>
 Inserts the ordered list element with the selected content.
@@ -318,7 +318,7 @@ Inserts the ordered list element with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTLR</kbd> +<kbd>ALT</kbd>+<kbd>O</kbd>
+<kbd>CTLR</kbd> +<kbd>ALT</kbd>+<kbd>O</kbd><br/><br/>
 </td>
 <td>
 Inserts the unordered list element with the selected content.
@@ -326,7 +326,7 @@ Inserts the unordered list element with the selected content.
 </tr>
 <tr>
 <td>
-<kbd>CTRL</kbd>+<kbd>F10</kbd>
+<kbd>CTRL</kbd>+<kbd>F10</kbd><br/><br/>
 </td>
 <td>
 Clears the entire editor content.
