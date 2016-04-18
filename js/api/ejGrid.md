@@ -3512,8 +3512,8 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to customize the searching behavior of the grid
 
-### searchSettings.field `object`
-{:#members:searchsettings-field}
+### searchSettings.fields `object`
+{:#members:searchsettings-fields}
 
 This specify the grid to search for the value in particular columns that is mentioned in the field.
 
@@ -3530,7 +3530,7 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSearching: true,
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { field:["OrderID","CustomerID","EmployeeID"], key:"VINET"}
+   searchSettings: { fields:["OrderID","CustomerID","EmployeeID"], key:"VINET"}
 });
 </script> 
 {% endhighlight %}
@@ -8291,7 +8291,8 @@ $("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
 {:#methods:setcelltext}
 
 Used to update a particular cell value.
-Note: It will work only for Local Data.
+
+N> setCellText method is working in Local Data and in others but except batch editing
 
 #### setCellText(rowIndex, cellIndex, value)
 {:#methods:setcelltext}
@@ -8412,6 +8413,8 @@ $("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
 {:#methods:setcellvalue}
 
 Used to update a particular cell value based on specified row Index and the fieldName.
+
+N> It will working only for batch editing.then we need to save it using batch save or explicitly.   
 
 <table class="params">
 <thead>
