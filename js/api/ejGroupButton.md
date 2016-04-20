@@ -378,7 +378,7 @@ Defines the characteristics of the ejGroupButton control and extend the capabili
 ### orientation `enum`
 {:#members:orientation}
 
-<ts name="ej.Orientation"/>
+<ts ref="ej.Orientation"/>
 
 Specify the orientation of the GroupButton. See below to get available orientations 
 
