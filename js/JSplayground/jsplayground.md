@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSplayground support to widget for Essential JS
+title: JSPlayground support to widget for Essential JS
 description: run the samples in live editor
 platform: js
 control: General
