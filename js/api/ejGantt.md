@@ -970,7 +970,7 @@ Enables or disables tooltip for taskbar.
 ### enableVirtualization `boolean`
 {:#members:enablevirtualization}
 
-Enables/Disables virtualization for rendering gantt items.
+Enables/Disables virtualization for rendering Gantt items.
 
 
 #### Default Value:
@@ -1428,7 +1428,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 ### renderBaseline `boolean`
 {:#members:renderbaseline}
 
-Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in gantt
+Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in Gantt
 
 
 #### Default Value:
@@ -1949,7 +1949,7 @@ Specified the format for year view in schedule header
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
 
-Specifies start date of the gantt schedule. By default, start date will be rounded to its previous Sunday.
+Specifies start date of the Gantt schedule. By default, start date will be rounded to its previous Sunday.
 
 
 #### Default Value:
@@ -2744,7 +2744,7 @@ Specifies the working time schedule of day
 ### addRecord(data, rowPosition)
 {:#methods:addrecord}
 
-To add item in gantt
+To add item in Gantt
 
 <table class="params">
 <thead>
@@ -2903,7 +2903,7 @@ ganttObj.destroy(); // destroy the gantt
 ### expandAllItems()
 {:#methods:expandallitems}
 
-To Expand all the parent items in gantt
+To Expand all the parent items in Gantt
 
 
 #### Example
@@ -2999,7 +2999,7 @@ gantObj.hideColumn("Task Name");
 ### indentItem()
 {:#methods:indentitem}
 
-To indent a selected item in gantt
+To indent a selected item in Gantt
 
 
 #### Example
@@ -3536,7 +3536,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after perform the sorting in grid tree is completed:
+<td class="description">Event parameters after perform the sorting in TreeGrid is completed:
 <table class="params">
 <thead>
 <tr>
@@ -3559,7 +3559,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3606,7 +3606,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3648,7 +3648,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -3759,7 +3759,7 @@ $("#gantt").ejGantt({
 ### beginEdit
 {:#events:beginedit}
 
-Triggered while enter the edit mode in the tree grid cell
+Triggered while enter the edit mode in the TreeGrid cell
 
 <table class="params">
 <thead>
@@ -4204,7 +4204,7 @@ $("#gantt").ejGantt({
 ### expanding
 {:#events:expanding}
 
-Triggered while expanding the gantt record
+Triggered while expanding the Gantt record
 
 <table class="params">
 <thead>
@@ -4337,7 +4337,7 @@ $("#gantt").ejGantt({
 ### queryCellInfo
 {:#events:querycellinfo}
 
-Triggered while rendering each cell in the tree grid
+Triggered while rendering each cell in the TreeGrid
 
 <table class="params">
 <thead>
@@ -4411,7 +4411,7 @@ $("#gantt").ejGantt({
 ### queryTaskbarInfo
 {:#events:querytaskbarinfo}
 
-Triggered while rendering each taskbar in the Gantt chart
+Triggered while rendering each taskbar in the Gantt 
 
 <table class="params">
 <thead>
@@ -4784,7 +4784,7 @@ Triggered after completing the editing operation in taskbar
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 </tbody>
 </table>
@@ -4843,7 +4843,7 @@ Triggered while editing the gantt chart (dragging, resizing the taskbar )
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">rowData</td>
