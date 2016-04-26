@@ -110,6 +110,24 @@ Clipboard Actions<br/><br/></td><td>
 Controls the clipboard actions by applying specific action on the selected content.<br/><br/></td><td>
 tools: {<br/>clipboard: ["cut", "copy", "paste"]<br/>}<br/><br/></td><td>
 No<br/><br/></td></tr>
+<tr>
+<td>
+Edit<br/><br/></td><td>
+Allows to make find and replace functionalities with the content.<br/><br/></td><td>
+tools: {<br/>edit: ["findAndReplace"] <br/>}<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+view <br/><br/></td><td>
+Allows to change the editor view mode.<br/><br/></td><td>
+tools: { <br/>view: ["fullScreen","zoomIn","zoomOut"]<br/>}<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+print <br/><br/></td><td>
+Allows to print the editor content.<br/><br/></td><td>
+tools: { <br/>print: ["print"]<br/>}<br/><br/></td><td>
+No<br/><br/></td></tr>
 </table>
 
 ### Customize Toolbar
@@ -425,4 +443,5 @@ height:300,minHeight:250,maxHeight:500
 {% endhighlight %}
 
 N> When you set the enableRTL property to true, the resize handle will automatically positioned to the bottom-left corner of the editor.
+
 

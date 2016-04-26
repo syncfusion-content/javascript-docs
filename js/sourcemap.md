@@ -2,13 +2,13 @@
 
 layout: post
 
-title:  JavaScript Source Maps for Syncfusion Essential JS Widgets
+title: JavaScript Source Maps for Syncfusion Essential JS Widgets
 
 description: JavaScript Source Maps for Syncfusion Essential JS Widgets 
 
 platform: js
 
-control:Introduction
+control: Introduction
 
 documentation: ug
 

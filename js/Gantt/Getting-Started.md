@@ -318,5 +318,5 @@ The following screenshot displays resource allocation for tasks in Gantt chart.
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img10.png)
 
-By following these steps, you have learnt how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
+By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
