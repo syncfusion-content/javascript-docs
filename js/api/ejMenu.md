@@ -1002,7 +1002,7 @@ Specifies the sub menu items to be show or open only on click.
 ### orientation `string|enum`
 {:#members:orientation}
 
-<ts name="ej.Orientation" />
+<ts ref="ej.Orientation" />
 
 
 Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See <a href="global.html#Orientation">Orientation</a>
