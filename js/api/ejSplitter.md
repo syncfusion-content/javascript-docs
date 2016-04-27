@@ -569,7 +569,7 @@ N> We have renamed the API "enableAutoResize" to "isResponsive".
 {:#members:orientation}
 
 
-<ts name = "ej.Orientation"/>
+<ts ref = "ej.Orientation"/>
 
 
 
