@@ -698,7 +698,7 @@ Specifies the starting value of the slider.
 
 
 
-<ts name="ej.Orientation"/>
+<ts ref="ej.Orientation"/>
 
 
 
