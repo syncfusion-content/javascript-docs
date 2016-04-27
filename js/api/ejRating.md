@@ -263,7 +263,7 @@ Allow to render the minimum number of Rating shape(star).
 {:#members:orientation}
 
 
-<ts name="ej.Orientation" />
+<ts ref="ej.Orientation" />
 
 
 Specifies the orientation of Rating control. See <a href="global.html#Orientation">Orientation</a>
