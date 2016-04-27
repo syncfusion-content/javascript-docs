@@ -789,7 +789,7 @@ Enables/Disables the responsive support for Toolbar items during the window resi
 {:#members:orientation}
 
 
-<ts name = "ej.Orientation"/>
+<ts ref = "ej.Orientation"/>
 
 
 
