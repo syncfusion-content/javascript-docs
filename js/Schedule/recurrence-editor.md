@@ -57,7 +57,33 @@ To get the real appearance of the RecurrenceEditor, the dependent css file `ej.w
 
 ## Control Initialization 
 
-// Use the same model of Scheduler control initialization topic
+Create a Div element within the body section of the HTML document, where the RecurrenceEditor needs to be rendered
+
+{% highlight html %}
+
+<body>
+	<div id="RecurrenceEditor"></div>
+</body>
+
+{% endhighlight %}
+
+Initialize the RecurrenceEditor control by adding the following script code to the body section of the HTML document.
+
+{% highlight html %}
+
+<body>
+    <!-- div for RecurrenceEditor creation -->    
+    <div id="RecurrenceEditor"></div>
+	
+    <script type="text/javascript">
+        // To initialize recurrenceEditor
+        $(function () {
+            $("#RecurrenceEditor").ejRecurrenceEditor();
+        });
+    </script>
+</body>
+
+{% endhighlight %}
 
 
 ## Generating Recurrence Rule
