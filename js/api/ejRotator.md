@@ -1066,7 +1066,7 @@ Specifies the number of Rotator Items to navigate on a single click (next/previo
 
 
 
-<ts name="ej.Orientation" />
+<ts ref="ej.Orientation" />
 
 
 
