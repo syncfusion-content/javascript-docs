@@ -8,6 +8,7 @@ keywords: map, ejmap, map api, syncfusion
 ---
 
 # ejMap
+<ts root="datavisualization" />
 
 The map can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 
@@ -287,8 +288,14 @@ Determines whether map need to resize when container is resized
 {% endhighlight %}
 
 
-### enableZoom `boolean`
-{:#members:enablezoom}
+### zoomSettings `object`
+{:#members:zoomsettings}
+
+Enables or Disables the Zooming for map.
+
+
+### zoomSettings.enableZoom `boolean`
+{:#members:zoomsettings-enablezoom}
 
 Enables or Disables the zooming of map
 
@@ -321,8 +328,8 @@ Enables or Disables the zooming of map
 {% endhighlight %}
 
 
-### enableZoomOnSelection `boolean`
-{:#members:enablezoomonselection}
+### zoomSettings.enableZoomOnSelection `boolean`
+{:#members:zoomsettings-enablezoomonselection}
 
 Enables or Disables the zoom on selecting the map shape
 
@@ -355,8 +362,8 @@ Enables or Disables the zoom on selecting the map shape
 {% endhighlight %}
 
 
-### factor `number`
-{:#members:factor}
+### zoomSettings.factor `number`
+{:#members:zoomsettings-factor}
 
 Specifies the zoom factor for map zoom value.
 
@@ -389,43 +396,8 @@ Specifies the zoom factor for map zoom value.
 {% endhighlight %}
 
 
-### layers `array`
-{:#members:layers}
-
-Hold the shape layers to be displayed in map
-
-#### Default Value
-
-* []
-
-
-#### Example
-
-{% highlight html %}
-  
-// Set the layers during initialization.                        
-   $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the layer after initialization:
-  
-  //Gets the layer from map.
-  
-  var layer =$("#container").data("ejMap").model.layers[layerIndex];
-  
-  //Sets the layer to map.
-  
-  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };
-
-{% endhighlight %}
-
-
-### level `number`
-{:#members:level}
+### zoomSettings.level `number`
+{:#members:zoomsettings-level}
 
 Specifies the zoom level value for which map to be zoomed
 
@@ -457,42 +429,8 @@ Specifies the zoom level value for which map to be zoomed
 {% endhighlight %}
 
 
-### maxValue `number`
-{:#members:maxvalue}
-
-Specifies the maximum zoom level of the map
-
-#### Default Value
-
-* 100
-
-#### Example
-
-{% highlight html %}
- 
-//To set maxValue API value during initialization 
-  $("#container").ejMap({zoomSettings:{maxValue:100}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the maxValue API, after initialization:
-   
-   //Gets the maxValue value
-    
-   var property = $("#container").data("ejMap").model.zoomSettings.maxValue;
-   
-   //Sets the maxValue value 
-   
-   $("#container").data("ejMap").model.zoomSettings.maxValue= 100;
-
-{% endhighlight %}
-
-
-### minValue `number`
-{:#members:minvalue}
+### zoomSettings.minValue `number`
+{:#members:zoomsettings-minvalue}
 
 Specifies the minimum zoomSettings level of the map
 
@@ -525,15 +463,55 @@ Specifies the minimum zoomSettings level of the map
 {% endhighlight %}
 
 
-### model.navigationControl.absolutePosition `object`
-{:#members:model-navigationcontrol-}
+### zoomSettings.maxValue `number`
+{:#members:zoomsettings-maxvalue}
+
+Specifies the maximum zoom level of the map
+
+#### Default Value
+
+* 100
+
+#### Example
+
+{% highlight html %}
+ 
+//To set maxValue API value during initialization 
+  $("#container").ejMap({zoomSettings:{maxValue:100}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the maxValue API, after initialization:
+   
+   //Gets the maxValue value
+    
+   var property = $("#container").data("ejMap").model.zoomSettings.maxValue;
+   
+   //Sets the maxValue value 
+   
+   $("#container").data("ejMap").model.zoomSettings.maxValue= 100;
+
+{% endhighlight %}
+
+
+### navigationControl `object`
+{:#members:navigationcontrol}
+
+Enables or Disables the navigation control for map to perform zooming and panning on map shapes.
+
+
+### navigationControl.absolutePosition `object`
+{:#members:navigationcontrol-absoluteposition}
 
 Set the absolutePosition for navigation control
 
 
 #### Default Value
 
-* [0,0]
+* {x:0,y:0}
 
 #### Example
 
@@ -560,8 +538,8 @@ Set the absolutePosition for navigation control
 {% endhighlight %}
 
 
-### model.navigationControl.content `string`
-{:#members:model-navigationcontrol-}
+### navigationControl.content `string`
+{:#members:navigationcontrol-content}
 
 Specifies the navigation control template for map
 
@@ -593,8 +571,8 @@ Specifies the navigation control template for map
 {% endhighlight %}
 
 
-### model.navigationControl.dockPosition `enum`
-{:#members:model-navigationcontrol-dockposition}
+### navigationControl.dockPosition `enum`
+{:#members:navigationcontrol-dockposition}
 
 <ts name = "ej.datavisualization.Map.Position"/>
 
@@ -680,8 +658,8 @@ Set the dockPosition value for navigation control
 {% endhighlight %}
 
 
-### model.navigationControl.enableNavigation `boolean`
-{:#members:model-navigationcontrol-}
+### navigationControl.enableNavigation `boolean`
+{:#members:navigationcontrol-enablenavigation}
 
 Enables or Disables the Navigation for handling zooming map
 
@@ -714,10 +692,10 @@ Enables or Disables the Navigation for handling zooming map
 {% endhighlight %}
 
 
-### model.navigationControl.orientation `enum`
-{:#members:model-navigationcontrol-orientation}
+### navigationControl.orientation `enum`
+{:#members:navigationcontrol-orientation}
 
-<ts name = "ej.datavisualization.Map.Orientation"/>
+<ts name = "ej.datavisualization.Map.LabelOrientation"/>
 
 Set the orientation value for navigation control
 
@@ -769,20 +747,14 @@ Set the orientation value for navigation control
 {% endhighlight %}
 
 
-### navigationControl `object`
-{:#members:navigationcontrol}
-
-Enables or Disables the navigation control for map to perform zooming and panning on map shapes.
-
-
-### shapeLayer `object`
-{:#members:shapelayer}
+### layers `array`
+{:#members:layers}
 
 Layer for holding the map shapes
 
 
-### shapeLayer.bingMapType `enum`
-{:#members:shapelayer-bingmaptype}
+### layers.bingMapType `enum`
+{:#members:layers-bingmaptype}
 
 <ts name = "ej.datavisualization.Map.BingMapType"/>
 
@@ -840,8 +812,8 @@ to get the type of bing map.
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings `object`
-{:#members:shapelayer-bubblesettings}
+### layers.bubbleSettings `object`
+{:#members:layers-bubblesettings}
 
 Specifies the bubble settings for map
 
@@ -870,8 +842,8 @@ Specifies the bubble settings for map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.bubbleOpacity `number`
-{:#members:shapelayer-bubblesettings-bubbleopacity}
+### layers.bubbleSettings.bubbleOpacity `number`
+{:#members:layers-bubblesettings-bubbleopacity}
 
 Specifies the bubble Opacity value of bubbles for shape layer in map
 
@@ -904,8 +876,8 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.color `string`
-{:#members:shapelayer-bubblesettings-color}
+### layers.bubbleSettings.color `string`
+{:#members:layers-bubblesettings-color}
 
 Specifies the mouse hover color of the shape layer in map
 
@@ -937,8 +909,8 @@ Specifies the mouse hover color of the shape layer in map
 
 {% endhighlight %}
 
-### shapeLayer.bubbleSettings.colorMappings `object`
-{:#members:shapelayer-bubblesettings-colormappings}
+### layers.bubbleSettings.colorMappings `object`
+{:#members:layers-bubblesettings-colormappings}
 
 Specifies the colorMappings of the shape layer in map
 
@@ -971,8 +943,8 @@ Specifies the colorMappings of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.colorValuePath `string`
-{:#members:shapelayer-bubblesettings-colorvaluepath}
+### layers.bubbleSettings.colorValuePath `string`
+{:#members:layers-bubblesettings-colorvaluepath}
 
 Specifies the bubble color valuePath of the shape layer in map
 
@@ -1003,8 +975,8 @@ Specifies the bubble color valuePath of the shape layer in map
 
 {% endhighlight %}
 
-### shapeLayer.bubbleSettings.maxValue `number`
-{:#members:shapelayer-bubblesettings-maxvalue}
+### layers.bubbleSettings.maxValue `number`
+{:#members:layers-bubblesettings-maxvalue}
 
 Specifies the maximum size value of bubbles for shape layer in map
 
@@ -1037,8 +1009,8 @@ Specifies the maximum size value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.minValue  `number`
-{:#members:shapelayer-bubblesettings-minvalue}
+### layers.bubbleSettings.minValue  `number`
+{:#members:layers-bubblesettings-minvalue}
 
 Specifies the minimum size value of bubbles for shape layer in map
 
@@ -1071,8 +1043,8 @@ Specifies the minimum size value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.showBubble `boolean`
-{:#members:shapelayer-bubblesettings-showbubble}
+### layers.bubbleSettings.showBubble `boolean`
+{:#members:layers-bubblesettings-showbubble}
 
 Specifies the showBubble visibility status map
 
@@ -1105,8 +1077,8 @@ Specifies the showBubble visibility status map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.showTooltip `boolean`
-{:#members:shapelayer-bubblesettings-showtooltip}
+### layers.bubbleSettings.showTooltip `boolean`
+{:#members:layers-bubblesettings-showtooltip}
 
 Specifies the tooltip visibility status of the shape layer in map
 
@@ -1139,8 +1111,8 @@ Specifies the tooltip visibility status of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.tooltipTemplate `string`
-{:#members:shapelayer-bubblesettings-tooltiptemplate}
+### layers.bubbleSettings.tooltipTemplate `string`
+{:#members:layers-bubblesettings-tooltiptemplate}
 
 Specifies the bubble tooltip template of the shape layer in map
 
@@ -1173,8 +1145,8 @@ Specifies the bubble tooltip template of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.bubbleSettings.valuePath `string`
-{:#members:shapelayer-bubblesettings-valuepath}
+### layers.bubbleSettings.valuePath `string`
+{:#members:layers-bubblesettings-valuepath}
 
 Specifies the bubble valuePath of the shape layer in map
 
@@ -1207,8 +1179,8 @@ Specifies the bubble valuePath of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.dataSource `object`
-{:#members:shapelayer-datasource}
+### layers.dataSource `object`
+{:#members:layers-datasource}
 
 Specifies the datasource for the shape layer
 
@@ -1237,8 +1209,8 @@ Specifies the datasource for the shape layer
 {% endhighlight %}
 
 
-### shapeLayer.enableAnimation `boolean`
-{:#members:shapelayer-enableanimation}
+### layers.enableAnimation `boolean`
+{:#members:layers-enableanimation}
 
 Enables or disables the animation
 
@@ -1273,8 +1245,8 @@ Enables or disables the animation
 {% endhighlight %}
 
 
-### shapeLayer.enableMouseHover `boolean`
-{:#members:shapelayer-enablemousehover}
+### layers.enableMouseHover `boolean`
+{:#members:layers-enablemousehover}
 
 Enables or disables the shape mouse hover
 
@@ -1305,8 +1277,8 @@ Enables or disables the shape mouse hover
 {% endhighlight %}
 
 
-### shapeLayer.enableSelection `boolean`
-{:#members:shapelayer-enableselection}
+### layers.enableSelection `boolean`
+{:#members:layers-enableselection}
 
 Enables or disables the shape selection
 
@@ -1339,8 +1311,8 @@ Enables or disables the shape selection
 {% endhighlight %}
 
 
-### shapeLayer.key `string`
-{:#members:shapelayer-key}
+### layers.key `string`
+{:#members:layers-key}}
 
 to get the key of bing map
 
@@ -1373,14 +1345,14 @@ to get the key of bing map
 {% endhighlight %}
 
 
-### shapeLayer.labelSettings `object`
-{:#members:shapelayer-labelsettings}
+### layers.labelSettings `object`
+{:#members:layers-labelsettings}
 
 Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
 
 
-### shapeLayer.labelSettings.enableSmartLabel `Boolean`
-{:#members:shapelayer-labelsettings-enablesmartlabel}
+### layers.labelSettings.enableSmartLabel `Boolean`
+{:#members:layers-labelsettings-enablesmartlabel}
 
 enable or disable the enableSmartLabel property
 
@@ -1413,8 +1385,8 @@ enable or disable the enableSmartLabel property
 {% endhighlight %}
 
 
-### shapeLayer.labelSettings.labelLength `number`
-{:#members:shapelayer-labelsettings-labellength}
+### layers.labelSettings.labelLength `number`
+{:#members:layers-labelsettings-labellength}
 
 set the labelLength property
 
@@ -1448,8 +1420,9 @@ set the labelLength property
 {% endhighlight %}
 
 
-### shapeLayer.labelSettings.labelPath `string`
-{:#members:shapelayer-labelsettings-labelpath}
+
+### layers.labelSettings.labelPath `string`
+{:#members:layers-labelsettings-labelpath}
 
 set the labelPath property
 
@@ -1484,8 +1457,9 @@ set the labelPath property
 {% endhighlight %}
 
 
-### shapeLayer.labelSettings.showLabels `boolean`
-{:#members:shapelayer-labelsettings-showlabels}
+
+### layers.labelSettings.showLabels `boolean`
+{:#members:layers-labelsettings-showlabels}
 
 The property specifies wheather to show labels or not.
 
@@ -1517,8 +1491,8 @@ The property specifies wheather to show labels or not.
 {% endhighlight %}
 
 
-### shapeLayer.labelSettings.smartLabelSize `enum`
-{:#members:shapelayer-labelsettings-smartlabelsize}
+### layers.labelSettings.smartLabelSize `enum`
+{:#members:layers-labelsettings-smartlabelsize}
 
 <ts name = "ej.datavisualization.Map.LabelSize"/>
 
@@ -1571,8 +1545,8 @@ set the smartLabelSize property
 {% endhighlight %}
 
 
-### shapeLayer.layerType `enum`
-{:#members:shapelayer-layertype}
+### layers.layerType `enum`
+{:#members:layers-layertype}
 
 <ts name = "ej.datavisualization.Map.LayerType"/>
 
@@ -1629,14 +1603,14 @@ Specifies the map type.
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings `object`
-{:#members:shapelayer-legendsettings}
+### layers.legendSettings `object`
+{:#members:layers-legendsettings}
 
 Options for enabling and configuring legendSettings position, height, width, mode, type etc.,
 
 
-### shapeLayer.legendSettings.dockOnMap `boolean`
-{:#members:shapelayer-legendsettings-dockonmap}
+### layers.legendSettings.dockOnMap `boolean`
+{:#members:layers-legendsettings-dockonmap}
 
 Determines whether the legend should be placed outside or inside the map bounds
 
@@ -1669,8 +1643,8 @@ Determines whether the legend should be placed outside or inside the map bounds
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.dockPosition `enum`
-{:#members:shapelayer-legendsettings-dockposition}
+### layers.legendSettings.dockPosition `enum`
+{:#members:layers-legendsettings-dockposition}
 
 <ts name = "ej.datavisualization.Map.DockPosition"/>
 
@@ -1732,8 +1706,8 @@ Determines the legend placement and it is valid only when dockOnMap is true
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.height `number`
-{:#members:shapelayer-legendsettings-height}
+### layers.legendSettings.height `number`
+{:#members:layers-legendsettings-height}
 
 height value for legend setting
 
@@ -1766,8 +1740,8 @@ height value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.icon `enum`
-{:#members:shapelayer-legendsettings-icon}
+### layers.legendSettings.icon `enum`
+{:#members:layers-legendsettings-icon}
 
 <ts name = "ej.datavisualization.Map.LegendIcons"/>
 
@@ -1822,8 +1796,8 @@ to get icon value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.iconHeight `number`
-{:#members:shapelayer-legendsettings-iconheight}
+### layers.legendSettings.iconHeight `number`
+{:#members:layers-legendsettings-iconheight}
 
 icon height value for legend setting
 
@@ -1856,8 +1830,8 @@ icon height value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.iconWidth `number`
-{:#members:shapelayer-legendsettings-iconwidth}
+### layers.legendSettings.iconWidth `number`
+{:#members:layers-legendsettings-iconwidth}
 
 icon Width value for legend setting
 
@@ -1890,8 +1864,8 @@ icon Width value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.labelOrientation `enum`
-{:#members:shapelayer-legendsettings-labelorientation}
+### layers.legendSettings.labelOrientation `enum`
+{:#members:layers-legendsettings-labelorientation}
 
 <ts name = "ej.datavisualization.Map.LabelOrientation"/>
 
@@ -1945,8 +1919,8 @@ set the orientation of legend labels
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.leftLabel `string`
-{:#members:shapelayer-legendsettings-leftlabel}
+### layers.legendSettings.leftLabel `string`
+{:#members:layers-legendsettings-leftlabel}
 
 to get leftLabel value for legend setting
 
@@ -1979,8 +1953,8 @@ to get leftLabel value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.mode `enum`
-{:#members:shapelayer-legendsettings-mode}
+### layers.legendSettings.LegendMode `enum`
+{:#members:layers-legendsettings-mode}
 
 <ts name = "ej.datavisualization.Map.LegendMode"/>
 
@@ -2035,8 +2009,8 @@ to get mode of legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.position `enum`
-{:#members:shapelayer-legendsettings-position}
+### layers.legendSettings.position `enum`
+{:#members:layers-legendsettings-position}
 
 <ts ref = "ej.datavisualization.Map.Position"/>
 
@@ -2122,8 +2096,8 @@ set the position of legend settings
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.positionX `number`
-{:#members:shapelayer-legendsettings-positionx}
+### layers.legendSettings.positionX `number`
+{:#members:layers-legendsettings-positionx}
 
 x position value for legend setting
 
@@ -2156,8 +2130,8 @@ x position value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.positionY `number`
-{:#members:shapelayer-legendsettings-positiony}
+### layers.legendSettings.positionY `number`
+{:#members:layers-legendsettings-positiony}
 
 y position value for legend setting
 
@@ -2189,8 +2163,8 @@ y position value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.rightLabel `string`
-{:#members:shapelayer-legendsettings-rightlabel}
+### layers.legendSettings.rightLabel `string`
+{:#members:layers-legendsettings-rightlabel}
 
 to get rightLabel value for legend setting
 
@@ -2223,8 +2197,8 @@ to get rightLabel value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.showLabels `boolean`
-{:#members:shapelayer-legendsettings-showlabels}
+### layers.legendSettings.showLabels `boolean`
+{:#members:layers-legendsettings-showlabels}
 
 Enables or Disables the showLabels
 
@@ -2257,8 +2231,8 @@ Enables or Disables the showLabels
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.showLegend `boolean`
-{:#members:shapelayer-legendsettings-showlegend}
+### layers.legendSettings.showLegend `boolean`
+{:#members:layers-legendsettings-showlegend}
 
 Enables or Disables the showLegend
 
@@ -2291,8 +2265,8 @@ Enables or Disables the showLegend
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.title `string`
-{:#members:shapelayer-legendsettings-title}
+### layers.legendSettings.title `string`
+{:#members:layers-legendsettings-title}
 
 to get title of legend setting
 
@@ -2325,8 +2299,8 @@ to get title of legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.type `enum`
-{:#members:shapelayer-legendsettings-type}
+### layers.legendSettings.type `enum`
+{:#members:layers-legendsettings-type}
 
 <ts name = "ej.datavisualization.Map.LegendType"/>
 
@@ -2380,8 +2354,8 @@ to get type of legend setting
 {% endhighlight %}
 
 
-### shapeLayer.legendSettings.width `number`
-{:#members:shapelayer-legendsettings-width}
+### layers.legendSettings.width `number`
+{:#members:layers-legendsettings-width}
 
 width value for legend setting
 
@@ -2414,8 +2388,8 @@ width value for legend setting
 {% endhighlight %}
 
 
-### shapeLayer.mapItemsTemplate `string`
-{:#members:shapelayer-mapitemstemplate}
+### layers.mapItemsTemplate `string`
+{:#members:layers-mapitemstemplate}
 
 Specifies the map items template for shapes.
 
@@ -2444,7 +2418,7 @@ Specifies the map items template for shapes.
 {% endhighlight %}
 
 
-### shapeLayer.markers `array`
+### layers.markers `Array`
 {:#members:shapelayer-markers}
 
 Specify markers for shape layer.
@@ -2478,8 +2452,8 @@ Specify markers for shape layer.
 {% endhighlight %}
 
 
-### shapeLayer.markerTemplate `string`
-{:#members:shapelayer-markertemplate}
+### layers.markerTemplate `string`
+{:#members:layers-markertemplate}
 
 Specifies the map marker template for map layer.
 
@@ -2512,8 +2486,8 @@ Specifies the map marker template for map layer.
 {% endhighlight %}
 
 
-### shapeLayer.selectedMapShapes `array`
-{:#members:shapelayer-selectedmapshapes}
+### layers.selectedMapShapes `Array`
+{:#members:layers-selectedmapshapes}
 
 Specify selectedMapShapes for shape layer
 
@@ -2587,8 +2561,8 @@ Specifies the selection mode of the map. Accepted selection mode values are Defa
 {% endhighlight %}
 
 
-### shapeLayer.shapeData object `object`
-{:#members:shapelayer-shapedata}
+### layers.shapeData `object`
+{:#members:layers-shapedata}
 
 Specifies the shape data for the shape layer
 
@@ -2617,8 +2591,8 @@ Specifies the shape data for the shape layer
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings `object`
-{:#members:shapelayer-shapesettings}
+### layers.shapeSettings `object`
+{:#members:layers-shapesettings}
 
 Specifies the shape settings of map layer
 
@@ -2647,8 +2621,8 @@ Specifies the shape settings of map layer
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.autoFill `boolean`
-{:#members:shapelayer-shapesettings-autofill}
+### layers.shapeSettings.autoFill `boolean`
+{:#members:layers-shapesettings-autofill}
 
 Enables or Disables the auto fill colors for shape layer in map. When this property value set to true, shapes will be filled with palette colors.
 
@@ -2681,8 +2655,8 @@ Enables or Disables the auto fill colors for shape layer in map. When this prope
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.colorMappings `object`
-{:#members:shapelayer-shapesettings-colormappings}
+### layers.shapeSettings.colorMappings `object`
+{:#members:layers-shapesettings-colormappings}
 
 Specifies the colorMappings of the shape layer in map
 
@@ -2713,10 +2687,39 @@ Specifies the colorMappings of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.colorPalette `string`
-{:#members:shapelayer-shapesettings-colorpalette}
+### layers.shapeSettings.colorPalette `enum`
+{:#members:layers-shapesettings-colorpalette}
+
+<ts name = "ej.datavisualization.Map.ColorPalette"/>
 
 Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">palette1</td>			
+			<td class="description">specifies the palette1 color</td>
+		</tr>
+		<tr>
+			<td class="name">palette2</td>			
+			<td class="description">specifies the palette2 color</td>
+		</tr>
+        <tr>
+			<td class="name">palette3</td>			
+			<td class="description">specifies the palette3 color</td>
+		</tr>
+         <tr>
+			<td class="name">custompalette</td>			
+			<td class="description">specifies the custom color</td>
+		</tr>
+	</tbody>
+</table>
 
 #### Default Value
 
@@ -2747,8 +2750,8 @@ Specifies the shape color palette value of the shape layer in map. Accepted colo
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.colorValuePath `string`
-{:#members:shapelayer-shapesettings-colorvaluepath}
+### layers.shapeSettings.colorValuePath `string`
+{:#members:layers-shapesettings-colorvaluepath}
 
 Specifies the shape color valuePath of the shape layer in map
 
@@ -2780,8 +2783,8 @@ Specifies the shape color valuePath of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.enableGradient `boolean`
-{:#members:shapelayer-shapesettings-enablegradient}
+### layers.shapeSettings.enableGradient `boolean`
+{:#members:layers-shapesettings-enablegradient}
 
 Enables or Disables the gradient colors for map shapes.
 
@@ -2814,8 +2817,8 @@ Enables or Disables the gradient colors for map shapes.
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.fill `string`
-{:#members:shapelayer-shapesettings-fill}
+### layers.shapeSettings.fill `string`
+{:#members:layers-shapesettings-fill}
 
 Specifies the shape fill color of the shape layer in map
 
@@ -2848,8 +2851,8 @@ Specifies the shape fill color of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.highlightBorderWidth `number`
-{:#members:shapelayer-shapesettings-highlightborderwidth}
+### layers.shapeSettings.highlightBorderWidth `number`
+{:#members:layers-shapesettings-highlightborderwidth}
 
 Specifies the mouse over width of the shape layer in map
 
@@ -2882,8 +2885,8 @@ Specifies the mouse over width of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.highlightColor `string`
-{:#members:shapelayer-shapesettings-highlightcolor}
+### layers.shapeSettings.highlightColor `string`
+{:#members:layers-shapesettings-highlightcolor}
 
 Specifies the mouse hover color of the shape layer in map
 
@@ -2916,8 +2919,8 @@ Example
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.highlightStroke `string`
-{:#members:shapelayer-shapesettings-highlightstroke}
+### layers.shapeSettings.highlightStroke `string`
+{:#members:layers-shapesettings-highlightstroke}
 
 Specifies the mouse over stroke color of the shape layer in map
 
@@ -2950,8 +2953,8 @@ Specifies the mouse over stroke color of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.selectionColor `string`
-{:#members:shapelayer-shapesettings-selectioncolor}
+### layers.shapeSettings.selectionColor `string`
+{:#members:layers-shapesettings-selectioncolor}
 
 Specifies the shape selection color of the shape layer in map
 
@@ -2984,8 +2987,8 @@ Specifies the shape selection color of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.selectionStroke `string`
-{:#members:shapelayer-shapesettings-selectionstroke}
+### layers.shapeSettings.selectionStroke `string`
+{:#members:layers-shapesettings-selectionstroke}
 
 Specifies the shape selection stroke color of the shape layer in map
 
@@ -3018,8 +3021,8 @@ Specifies the shape selection stroke color of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.selectionStrokeWidth `number`
-{:#members:shapelayer-shapesettings-selectionstrokewidth}
+### layers.shapeSettings.selectionStrokeWidth `number`
+{:#members:layers-shapesettings-selectionstrokewidth}
 
 Specifies the shape selection stroke width of the shape layer in map
 
@@ -3052,8 +3055,8 @@ Specifies the shape selection stroke width of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.stroke `string`
-{:#members:shapelayer-shapesettings-stroke}
+### layers.shapeSettings.stroke `string`
+{:#members:layers-shapesettings-stroke}
 
 Specifies the shape stroke color of the shape layer in map
 
@@ -3086,8 +3089,8 @@ Specifies the shape stroke color of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.strokeThickness `number`
-{:#members:shapelayer-shapesettings-strokethickness}
+### layers.shapeSettings.strokeThickness `number`
+{:#members:layers-shapesettings-strokethickness}
 
 Specifies the shape stroke thickness value of the shape layer in map
 
@@ -3120,8 +3123,8 @@ Specifies the shape stroke thickness value of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.shapeSettings.valuePath `string`
-{:#members:shapelayer-shapesettings-valuepath}
+### layers.shapeSettings.valuePath `string`
+{:#members:layers-shapesettings-valuepath}
 
 Specifies the shape valuePath of the shape layer in map
 
@@ -3154,8 +3157,8 @@ Specifies the shape valuePath of the shape layer in map
 {% endhighlight %}
 
 
-### shapeLayer.showMapItems `boolean`
-{:#members:shapelayer-showmapitems}
+### layers.showMapItems `boolean`
+{:#members:layers-showmapitems}
 
 Shows or hides the map items.
 
@@ -3188,8 +3191,8 @@ Shows or hides the map items.
 {% endhighlight %}
 
 
-### shapeLayer.showTooltip `boolean`
-{:#members:shapelayer-showtooltip}
+### layers.showTooltip `boolean`
+{:#members:layers-showtooltip}
 
 Shows or hides the tooltip for shapes
 
@@ -3222,41 +3225,8 @@ Shows or hides the tooltip for shapes
 {% endhighlight %}
 
 
-### shapeLayer.subLayers `array`
-{:#members:shapelayer-sublayers}
-
-Specifies the sub shape layers
-
-#### Default Value
-
-* []
-
-#### Example
-
-{% highlight html %}
-  
-// Set the subLayers during initialization.                     
-
-   $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapShapeData }, shapeData: mapShapeData }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the layer after initialization:
-   
-   //Gets the layer from map.
-   
-   var layer =$("#container").data("ejMap").model.layers[layerIndex];
-   
-   //Sets the layer to map.
-   
-   $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapSubShapeData }, shapeData: mapShapeData };{% endhighlight %}
-
-
-### shapeLayer.tooltipTemplate `string`
-{:#members:shapelayer-tooltiptemplate}
+### layers.tooltipTemplate `string`
+{:#members:layers-tooltiptemplate}
 
 Specifies the tooltip template for shapes.
 
@@ -3285,8 +3255,8 @@ Specifies the tooltip template for shapes.
 {% endhighlight %}
 
 
-### shapeLayer.urlTemplate `string`
-{:#members:shapelayer-urltemplate}
+### layers.urlTemplate `string`
+{:#members:layers-urltemplate}
 
 Specifies the URL template for the OSM type map.
 
@@ -3317,13 +3287,6 @@ Specifies the URL template for the OSM type map.
    $("#container").data("ejMap").model.layers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';
 
 {% endhighlight %}
-
-
-### zoomSettings `object`
-{:#members:zoomsettings}
-
-Enables or Disables the Zooming for map.
-
 
 
 ## Methods
@@ -3537,7 +3500,7 @@ Triggered on selecting the map markers.
 {% endhighlight %}
 
 
-### mouse leave
+### mouseleave
 {:#events:mouseleave}
 
 Triggers while leaving the hovered map shape

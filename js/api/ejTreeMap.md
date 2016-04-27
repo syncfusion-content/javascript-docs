@@ -8,6 +8,7 @@ keywords: treemap, ejtreemap, treemap api, syncfusion
 ---
 
 # ejTreeMap
+<ts root="datavisualization" />
 
 The treemap can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 
@@ -119,8 +120,14 @@ Specifies the border thickness of the treemap
 {% endhighlight %}
 
 
+### uniColorMapping `object`
+{:#members:unicolormapping}
+
+Specifies the uniColorMapping settings of the treemap
+
+
 ### uniColorMapping.color `string`
-{:#members:color}
+{:#members:unicolormapping-color}
 
 Specifies the uniform color mapping of the treemap
 
@@ -153,8 +160,14 @@ Specifies the uniform color mapping of the treemap
 {% endhighlight %}
 
 
+### desaturationColorMapping `object`
+{:#members:desaturationcolormapping}
+
+Specifies the desaturationColorMapping settings of the treemap
+
+
 ### desaturationColorMapping.color `string`
-{:#members:color}
+{:#members:desaturationcolormapping-color}
 
 Specifies the color for desaturationColorMapping
 
@@ -188,8 +201,14 @@ Specifies the color for desaturationColorMapping
 {% endhighlight %}
 
 
-### colors `array`
-{:#members:colors}
+### paletteColorMapping `object`
+{:#members:palettecolormapping}
+
+Specifies the paletteColorMapping of the treemap
+
+
+### paletteColorMapping.colors `array`
+{:#members:palettecolormapping-colors}
 
 Specifies the colors of the paletteColorMapping
 
@@ -288,12 +307,6 @@ Specifies the datasource of the treemap
    $("#container").data("ejTreeMap").model.datasource = medal_data; 
 
 {% endhighlight %}
-
-
-### desaturationColorMapping `object`
-{:#members:desaturationcolormapping}
-
-Specifies the desaturationColorMapping settings of the treemap
 
 
 ### dockPosition `enum`
@@ -497,8 +510,8 @@ Specifies whether treemap need to resize when container is resized
 {% endhighlight %}
 
 
-### from `number`
-{:#members:from}
+### desaturationColorMapping.from `number`
+{:#members:desaturationcolormapping-from}
 
 Specifies the from value for desaturation color mapping
 
@@ -565,8 +578,14 @@ Specifies the group color mapping of the treemap
 {% endhighlight %}
 
 
-### height `number`
-{:#members:height}
+### legendSettings `object`
+{:#members:legendsettings}
+
+Specifies the legend settings of the treemap
+
+
+### legendSettings.height `number`
+{:#members:legendsettings-height}
 
 Specifies the height for legend
 
@@ -805,8 +824,8 @@ Specifies whether treemap item need to highlighted on selection
 {% endhighlight %}
 
 
-### iconHeight `number`
-{:#members:iconheight}
+### legendSettings.iconHeight `number`
+{:#members:legendsettings-iconheight}
 
 Specifies the iconHeight for legend
 
@@ -839,8 +858,8 @@ Specifies the iconHeight for legend
 {% endhighlight %}
 
 
-### iconWidth `number`
-{:#members:iconwidth}
+### legendSettings.iconWidth `number`
+{:#members:legendsettings-iconwidth}
 
 Specifies the iconWidth for legend
 
@@ -1254,52 +1273,6 @@ Shows or hides the label of the leaf item.
 {% endhighlight %}
 
 
-### legendSettings `object`
-{:#members:legendsettings}
-
-Specifies the legend settings of the treemap
-
-
-### levels `array`
-{:#members:levels}
-
-Specify levels of treemap for grouped visualization of data
-
-#### Default Value
-
-* []
-
-#### Example
-
-{% highlight html %}
-  
-// Set the levels during initialization.                
-  $("#container").ejTreeMap({   levels: [{ groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the levels after initialization:
-  
-  //Gets the levels from map.
-  
-  var levels =$("#container").data("ejTreeMap").model.levels[levelIndex];
-  
-  //Sets the levels to map.
-  
-  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };
-
-{% endhighlight %}
-
-
-### paletteColorMapping `object`
-{:#members:palettecolormapping}
-
-Specifies the paletteColorMapping of the treemap
-
-
 ### rangeColorMapping `array`
 {:#members:rangecolormapping}
 
@@ -1330,8 +1303,8 @@ Specifies the rangeColorMapping settings of the treemap
 {% endhighlight %}
 
 
-### rangeMaximum `number`
-{:#members:rangemaximum}
+### desaturationColorMapping.rangeMaximum `number`
+{:#members:desaturationcolormapping-rangemaximum}
 
 Specifies the rangeMaximum value for desaturation color mapping
 
@@ -1364,8 +1337,8 @@ Specifies the rangeMaximum value for desaturation color mapping
 {% endhighlight %}
 
 
-### rangeMinimum `number`
-{:#members:rangeminimum}
+### desaturationColorMapping.rangeMinimum `number`
+{:#members:desaturationcolormapping-rangeminimum}
 
 Specifies the rangeMinimum value for desaturation color mapping
 
@@ -1397,8 +1370,8 @@ Specifies the rangeMinimum value for desaturation color mapping
 {% endhighlight %}
 
 
-### shapeLayer.groupSelectionMode `enum`
-{:#members:shapelayer-groupselectionmode}
+### groupSelectionMode `enum`
+{:#members:groupselectionmode}
 
 <ts name = "ej.datavisualization.TreeMap.groupSelectionMode"/>
 
@@ -1431,8 +1404,8 @@ Specifies the selection mode of the treemap. Accepted selection mode values are 
 
 {% highlight html %}
   
-// Set the selection mode during initialization.                        
-        $("#container").ejTreeMap({layers: [{ selectionMode:'default' }]})
+// Set the selection mode during initialization.                                        
+          $("#container").ejTreeMap({groupSelectionMode:'default'});
 
 {% endhighlight %}
 
@@ -1443,11 +1416,11 @@ Specifies the selection mode of the treemap. Accepted selection mode values are 
   
   //Gets the selection mode from treemap.
   
-  var property =$("#container").data("ejTreeMap").model.layers[layerIndex].groupSelectionMode;
+  var property =$("#container").data("ejTreeMap").model.groupSelectionMode;
   
   //Sets the selection mode to treemap.
   
-  $("#container").data("ejTreeMap").model.layers[layerIndex].groupSelectionMode  = 'default';
+  $("#container").data("ejTreeMap").model.groupSelectionMode  = 'default';
 
 {% endhighlight %}
 
@@ -1520,8 +1493,8 @@ Specifies whether treemap tooltip need to be visible
 {% endhighlight %}
 
 
-### template `string`
-{:#members:template}
+### legendSettings.template `string`
+{:#members:legendsettings-template}
 
 Specifies the template for legendSettings
 
@@ -1553,8 +1526,8 @@ Specifies the template for legendSettings
 
 {% endhighlight %}
 
-### to `number`
-{:#members:to}
+### desaturationColorMapping.to `number`
+{:#members:desaturationcolormapping-to}
 
 Specifies the to value for desaturation color mapping
 
@@ -1621,8 +1594,8 @@ Specifies the tooltip template of the treemap
 {% endhighlight %}
 
 
-### TreeMapGroupColorMapping.groupID `string`
-{:#members:treemapgroupcolormapping-groupid}
+### groupColorMapping.groupID `string`
+{:#members:groupcolormapping-groupid}
 
 Specifies the groupID for GroupColorMapping.
 
@@ -1689,14 +1662,42 @@ Hold the treeMapItems to be displayed in treemap
 {% endhighlight %}
 
 
-### treeMapLevel `object`
-{:#members:treemaplevel}
+### levels `array`
+{:#members:levels}
 
-Hold the Level settings of TreeMap
+Specify levels of treemap for grouped visualization of data
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+  
+// Set the levels during initialization.                
+  $("#container").ejTreeMap({   levels: [{ groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' }]})
+
+{% endhighlight %}
 
 
-### treeMapLevel.groupBackground `string`
-{:#members:treemaplevel-groupbackground}
+{% highlight html %}
+ 
+//Get or set the levels after initialization:
+  
+  //Gets the levels from map.
+  
+  var levels =$("#container").data("ejTreeMap").model.levels[levelIndex];
+  
+  //Sets the levels to map.
+  
+  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };
+
+{% endhighlight %}
+
+
+### levels.groupBackground `string`
+{:#members:levels-groupbackground}
 
 specifies the group background
 
@@ -1729,8 +1730,8 @@ specifies the group background
 {% endhighlight %}
 
 
-### treeMapLevel.groupBorderColor `string`
-{:#members:treemaplevel-groupbordercolor}
+### levels.groupBorderColor `string`
+{:#members:levels-groupbordercolor}
 
 Specifies the group border color for tree map level.
 
@@ -1763,8 +1764,8 @@ Specifies the group border color for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.groupBorderThickness `number`
-{:#members:treemaplevel-groupborderthickness}
+### levels.groupBorderThickness `number`
+{:#members:levels-groupborderthickness}
 
 Specifies the group border thickness for tree map level.
 
@@ -1797,8 +1798,8 @@ Specifies the group border thickness for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.groupGap `number`
-{:#members:treemaplevel-groupgap}
+### levels.groupGap `number`
+{:#members:levels-groupgap}
 
 Specifies the group gap for tree map level.
 
@@ -1831,8 +1832,8 @@ Specifies the group gap for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.groupPadding `number`
-{:#members:treemaplevel-grouppadding}
+### levels.groupPadding `number`
+{:#members:levels-grouppadding}
 
 Specifies the group padding for tree map level.
 
@@ -1865,8 +1866,8 @@ Specifies the group padding for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.groupPath `string`
-{:#members:treemaplevel-grouppath}
+### levels.groupPath `string`
+{:#members:levels-grouppath}
 
 Specifies the group path for tree map level.
 
@@ -1875,7 +1876,9 @@ Specifies the group path for tree map level.
 {% highlight html %}
   
 // Set the groupPath during initialization.                     
-   $("#container").ejTreeMap({levels: [{ groupPath:"pathName" }]}){% endhighlight %}
+   $("#container").ejTreeMap({levels: [{ groupPath:"pathName" }]})
+
+{% endhighlight %}
 
 {% highlight html %}
  
@@ -1892,8 +1895,8 @@ Specifies the group path for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.headerHeight `number`
-{:#members:treemaplevel-headerheight}
+### levels.headerHeight `number`
+{:#members:levels-headerheight}
 
 Specifies the header height for tree map level.
 
@@ -1926,8 +1929,8 @@ Specifies the header height for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.headerTemplate `string`
-{:#members:treemaplevel-headertemplate}
+### levels.headerTemplate `string`
+{:#members:levels-headertemplate}
 
 Specifies the header template for tree map level.
 
@@ -1960,8 +1963,8 @@ Specifies the header template for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.headerVisibilityMode `enum`
-{:#members:treemaplevel-headervisibilitymode}
+### levels.headerVisibilityMode `enum`
+{:#members:levels-headervisibilitymode}
 
 <ts name = "ej.datavisualization.TreeMap.VisibilityMode"/>
 
@@ -2015,8 +2018,8 @@ Specifies the mode of header visibility
 {% endhighlight %}
 
 
-### treeMapLevel.labelPosition `enum`
-{:#members:treemaplevel-labelposition}
+### levels.labelPosition `enum`
+{:#members:levels-labelposition}
 
 <ts ref = "ej.datavisualization.TreeMap.Position"/>
 
@@ -2102,8 +2105,8 @@ Specifies the position of the labels.
 {% endhighlight %}
 
 
-### treeMapLevel.labelTemplate `string`
-{:#members:treemaplevel-labeltemplate}
+### levels.labelTemplate `string`
+{:#members:levels-labeltemplate}
 
 Specifies the label template for tree map level.
 
@@ -2136,8 +2139,8 @@ Specifies the label template for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.labelVisibilityMode `enum`
-{:#members:treemaplevel-labelvisibilitymode}
+### levels.labelVisibilityMode `enum`
+{:#members:levels-labelvisibilitymode}
 
 <ts ref = "ej.datavisualization.TreeMap.VisibilityMode"/>
 
@@ -2191,8 +2194,8 @@ Specifies the mode of label visibility
 {% endhighlight %}
 
 
-### treeMapLevel.showHeader `boolean`
-{:#members:treemaplevel-showheader}
+### levels.showHeader `boolean`
+{:#members:levels-showheader}
 
 Shows or hides the header for tree map level.
 
@@ -2225,8 +2228,8 @@ Shows or hides the header for tree map level.
 {% endhighlight %}
 
 
-### treeMapLevel.showLabels `boolean`
-{:#members:treemaplevel-showlabels}
+### levels.showLabels `boolean`
+{:#members:levels-showlabels}
 
 Shows or hides the labels for tree map level.
 
@@ -2259,8 +2262,8 @@ Shows or hides the labels for tree map level.
 {% endhighlight %}
 
 
-### treeMapRangeColorMapping.color `string`
-{:#members:treemaprangecolormapping-color}
+### rangeColorMapping.color `string`
+{:#members:rangecolormapping-color}
 
 Specifies the color value for rangeColorMapping.
 
@@ -2293,8 +2296,8 @@ Specifies the color value for rangeColorMapping.
 {% endhighlight %}
 
 
-### treeMapRangeColorMapping.from `number`
-{:#members:treemaprangecolormapping-from}
+### rangeColorMapping.from `number`
+{:#members:rangecolormapping-from}
 
 Specifies the from value for rangeColorMapping.
 
@@ -2327,8 +2330,8 @@ Specifies the from value for rangeColorMapping.
 {% endhighlight %}
 
 
-### treeMapRangeColorMapping.legendLabel `string`
-{:#members:treemaprangecolormapping-legendlabel}
+### rangecolormapping.legendLabel `string`
+{:#members:rangecolormapping-legendlabel}
 
 Specifies the legend label value for rangeColorMapping.
 
@@ -2361,8 +2364,8 @@ Specifies the legend label value for rangeColorMapping.
 {% endhighlight %}
 
 
-### treeMapRangeColorMapping.to `number`
-{:#members:treemaprangecolormapping-to}
+### rangeColorMapping.to `number`
+{:#members:rangecolormapping-to}
 
 Specifies the to value for rangeColorMapping.
 
@@ -2394,11 +2397,6 @@ Specifies the to value for rangeColorMapping.
 
 {% endhighlight %}
 
-
-### uniColorMapping `object`
-{:#members:unicolormapping}
-
-Specifies the uniColorMapping settings of the treemap
 
 ### weightValuePath `string`
 {:#members:weightvaluepath}
@@ -2434,8 +2432,8 @@ Specifies the weight value path of the treemap
 {% endhighlight %}
 
 
-### width `number`
-{:#members:width}
+### legendSettings.width `number`
+{:#members:legendsettings-width}
 
 Specifies the width for legend
 
