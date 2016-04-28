@@ -144,7 +144,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-N> _In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API._
+N>  In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
 
  {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
@@ -160,7 +160,7 @@ N> _In the above data manager configuration, “crossDomain” must be set to tr
 
 The scrolling type can be defined via `virtualScrollMode` property.
 
-#### **Normal Scrolling**
+#### Normal Scrolling
 
 This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
@@ -192,14 +192,14 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
 
-N> _By default, the value of “virtualScrollMode” property is normal._
+N> By default, the value of “virtualScrollMode” property is normal.
 
 ![Alt text](Databinding_images\Databinding_img4.png)
 
 ![Alt text](Databinding_images\Databinding_img5.png)
 
 
-#### **Continuous Scrolling**
+#### Continuous Scrolling
 
 This mode allows you to load the list box data when the scrollbar reaches the end point. In this mode, we can specify the number of items to be loaded per request.
 
@@ -235,7 +235,7 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
 
-N> _The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”._
+N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
 
 ![Alt text](Databinding_images\Databinding_img6.png)
 
