@@ -189,27 +189,6 @@ Example
 {% endhighlight %}
 
 
-### closeIconTooltip `String`
-{:#members:closeicontooltip}
-
-The tooltip text for the dialog close button.
-
-N> Since it is deprecated we suggest to use the API “[tooltip](#members:tooltip)”.
-
-Default Value:
-{:.param}
-close
-
-Example
-{:.example}
-
-{% highlight javascript %}
-
-    $("#dialog").ejDialog({closeIconTooltip: "close" }); 
-
-{% endhighlight %}
-
-
 ### closeOnEscape `Boolean`
 {:#members:closeonescape}
 
@@ -250,27 +229,6 @@ Example
 {% endhighlight %}
 
 
-### content[Deprecated] `String`
-{:#members:content}
-
-The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
-
-N>Since it is deprecated we suggest to use the API “[target](#members:target)”.
-
-Default Value: 
-{:.param}
- null
-
-Example
-{:.example}
-
-{% highlight javascript %}
-
-    $("#dialog").ejDialog({content: "#samplearea" }); 
-
-{% endhighlight %}
-
-
 ### contentType `String`
 {:#members:contenttype}
 
@@ -281,7 +239,7 @@ Default Value:
 
  null
 
-Example
+Examples
 {:.example}
 
 {% highlight javascript %}
@@ -900,23 +858,6 @@ Example
 {% endhighlight %}
 
 
-### isOpened<span class="signature">()</span> [Deprecated]
-{:#methods:isopened}
-
-Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
-
-N>Since it is deprecated we suggest to use the method “[isOpen](#methods:isopen)”.
-
-Example
-{:.example}
-
-{% highlight javascript %}
-
-    $("#dialog").ejDialog("isOpened"); 
-
-{% endhighlight %}
-
-
 ### isOpen<span class="signature">()</span>
 {:#methods:isopen}
 
@@ -1304,58 +1245,6 @@ Example
 
 
     $("#dialog").ejDialog({ beforeClose: function(args){}});
-
-{% endhighlight %}
-
-
-###Close [Deprecated]
-{:#events:closedeprecated}
-
-This event is triggered after the dialog widget is closed.
-
-N>Since it is deprecated use the method “[close](#events:close)”. Here casing is the difference between two methods.
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-event</td><td>
-Object</td><td>
-Current event object.</td></tr>
-<tr>
-<td>
-cancel</td><td>
-Boolean</td><td>
-Set this option to true to cancel the event.</td></tr>
-<tr>
-<td>
-model</td><td><ts ref="ej.Dialog.Model"/>
-Object</td><td>
-Instance of the dialog model object.</td></tr>
-<tr>
-<td>
-isInteraction</td><td>
-Boolean</td><td>
-Specifies whether the event is triggered by user interaction or method call.</td></tr>
-<tr>
-<td>
-type</td><td>
-String</td><td>
-Name of the event.</td></tr>
-</table>
-
-Example
-{:.example}
-
-
-
-{% highlight javascript %}
-
-    $("#dialog").ejDialog({ Close: function (args) {} }); 
 
 {% endhighlight %}
 

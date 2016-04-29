@@ -115,6 +115,40 @@ Enables or disables the sorting of suggestion list item. The default sort order 
 
 {% endhighlight %}
 
+### animateType `Boolean`
+{:#members:animateType}
+
+Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
+
+<table>
+<tr>
+<th>Name<br/><br/></th>
+<th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>slide<br/><br/></td>
+<td>Supports to animation type with slide type only.<br/><br/></td>
+</tr>
+<tr>
+<td>fade<br/><br/></td>
+<td>Supports to animation type with fade type only.<br/><br/></td>
+</tr>
+</table>
+
+#### Default Value: 
+
+* slide
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+		animateType: "fade" 
+	});
+
+{% endhighlight %}
+
 ### autoFocus `Boolean`
 {:#members:autofocus}
 
@@ -370,10 +404,6 @@ Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>fields.category[Deprecated]<br/><br/></td>
-<td>Used to group the suggestion list items. <br/><br/>Note: Since this is deprecated, we suggest you to use fields.groupBy API.<br/><br/></td>
-</tr>
-<tr>
 <td>
 fields.groupBy<br/><br/></td><td>
 Used to group the suggestion list items. <br/><br/></td>
@@ -626,7 +656,7 @@ Indicates that the autocomplete textbox values can only be readable.
 
 {% endhighlight %}
 
-### selectValueByKey [Deprecated] `Number`
+### selectValueByKey `Number`
 {:#members:selectvaluebykey}
 
 Sets the value for the Autocomplete textbox based on the given input key value.
@@ -1080,6 +1110,24 @@ Sets the value of the Autocomplete textbox based on the given input text value.
 {% endhighlight %}
 
 ## Events
+
+### actionBegin
+{:#events:actionBegin}
+Triggers when the AJAX requests Begins.
+
+ N>  It internally uses jQuery ajaxStart event. For details refer [here](http://api.jquery.com/ajaxStart/#).
+
+#### Example
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({
+		actionBegin:function(arg){
+			//Action Success Code
+		} 
+	});
+
+{% endhighlight %}
 
 ### actionSuccess
 {:#events:actionsuccess}
