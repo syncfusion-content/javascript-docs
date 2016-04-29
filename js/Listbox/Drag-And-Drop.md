@@ -77,7 +77,7 @@ Enable the drag and drop support through “allowDrag” and “allowDrop” pro
 
 
 
-N> _The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration._
+N> The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration.
 
 
 ![](Drag-and-drop_images\Drag-and-drop_img1.png)
@@ -194,5 +194,5 @@ Item reordering can be done within a ListBox widget by enabling both “allowDra
 
 ![](Drag-and-drop_images\Drag-and-drop_img4.png)
 
-N> _The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”._
+N> The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”.
 

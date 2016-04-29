@@ -178,7 +178,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {:.image }
 
 
-N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager._ 
+N> ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager.
 
 
 ## Enable Paging
@@ -200,7 +200,7 @@ N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other
 </script>
 {% endhighlight %}
 
-N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively._
+N> Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
 ![](Getting-started_images/Getting-started_img3.png)

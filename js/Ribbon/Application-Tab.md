@@ -263,4 +263,4 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 
 ![](/js/Ribbon/Application-Tab_images/Application-Tab_img3.png)
 
-N> _Height & width of backstage can be set using [`height`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered._
+N> Height & width of backstage can be set using [`height`](http://help.syncfusion.com/js/api/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered.

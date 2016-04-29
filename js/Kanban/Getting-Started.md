@@ -168,8 +168,8 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 {% endhighlight %}
 
-N> 1._In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server._
-N> 2._For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components)._ 
+N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Create a Kanban
 
@@ -223,7 +223,7 @@ For demonstration purpose, [`Northwind OData service`](http://mvc.syncfusion.com
 
 ![](/js/Kanban/Getting_Started_images/Getting_Started_img2.png)
 
-N> _ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [`data adaptor`](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager._
+N>  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [`data adaptor`](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 ## Mapping Values
 
@@ -261,7 +261,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 ![](/js/Kanban/Getting_Started_images/Getting_Started_img3.png)
 
-N> _`fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection” and “Editing” Features._
+N>  `fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection” and “Editing” Features.
 
 ## Enable Swimlane
 
