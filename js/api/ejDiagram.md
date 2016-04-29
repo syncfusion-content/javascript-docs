@@ -8153,7 +8153,7 @@ Defines the draggable region of diagram elements.
    </thead>
     <tbody>
         <tr>
-            <td class="name">Infinity</td>
+            <td class="name">Infinite</td>
             <td class="description last">Used to set boundaryConstraints as Infinity</td>
        </tr>
         <tr>

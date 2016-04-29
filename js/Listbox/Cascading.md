@@ -84,7 +84,7 @@ Create the ListBox widgets as below.
 
 The parent ListBox widget’s “cascadeTo” API should point to its child ListBox widget by specifying the id of the child ListBox widget. The child ListBox widget can be displayed with empty data on initialize by setting its “loadDataOnInit” property to false.
 
-N> _In the below data source definition, the “categoryId” column will act as a primary key to define the parent-child relationship._
+N>  In the below data source definition, the “categoryId” column will act as a primary key to define the parent-child relationship.
 
 ## Multilevel cascading
 
