@@ -2154,7 +2154,7 @@ Sets the minimum date limit to display on the Schedule. Setting minDate with spe
 ### orientation `string|enum`
 {:#members:orientation}
 
-<ts ref="ej.Schedule.Orientation"/>
+<ts name="ej.Schedule.Orientation"/>
 
 Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values. The enum values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
 
