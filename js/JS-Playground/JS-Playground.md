@@ -14,7 +14,7 @@ Syncfusion JS Playground acts as editor for all JavaScript developers to get sta
 
 Playground shown as below.
 
-![JS Playground](playground_images\overview.png)
+![JS-Playground](playground_images\overview.png)
 
 The options provided in this live editor are explained below.
 
@@ -30,7 +30,7 @@ Note:  Chrome<b> Ctrl + N </b> will not work use <b>F4</b>
 
 JS Playground with new option looks like as below.
 
-![JS Playground](playground_images\new.png)
+![JS-Playground](playground_images\new.png)
 
 ## Save
 
@@ -42,7 +42,7 @@ We can download the content of the sample in HTML or PDF format. To download the
 
 Refer the below screenshot for downloading the content of the sample.
 
-![JS Playground](playground_images\download.png)
+![JS-Playground](playground_images\download.png)
 
 ## Output
 
@@ -54,11 +54,11 @@ You can check and test the output in mobile emulation in various mode like iOS, 
 
 Please refer the below screenshot for selecting the platform.
 
-![JS Playground](playground_images\mode.png)
+![JS-Playground](playground_images\mode.png)
 
 Please refer the below screenshot for Android platform.
 
-![JS Playground](playground_images\android.png)
+![JS-Playground](playground_images\android.png)
 
 ## Library Switching
 
@@ -66,7 +66,7 @@ If you want to use specific EJ version library you can easily switch by selectin
 
 Refer the below screenshot for selecting the library.
 
-![JS Playground](playground_images\library.png)
+![JS-Playground](playground_images\library.png)
 
 ## Third party controls
 
@@ -74,7 +74,7 @@ If you want to use external script references like jQuery, Bootstrap you can eas
 
 Refer the below screenshot
 
-![JS Playground](playground_images\thirdparty.png)
+![JS-Playground](playground_images\thirdparty.png)
 
 ## Helper intellisense
 
@@ -88,7 +88,7 @@ If the codes are misaligned, after pressing the shift + tab codes are aligned pr
 
 Refer the below screenshot.
 
-![JS Playground](playground_images\codealignment.png)
+![JS-Playground](playground_images\codealignment.png)
 
 ## Tutorials
 
@@ -96,6 +96,6 @@ Here we are discussed about widget creation,configuring properties,invoking meth
 
 Refer the below screenshot
 
-![JS Playground](playground_images\tutorial.png)
+![JS-Playground](playground_images\tutorial.png)
 
 
