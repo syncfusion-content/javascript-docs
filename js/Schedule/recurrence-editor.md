@@ -10,12 +10,6 @@ keywords: recurrence editor, recurrence widget, ejRecurrenceEditor, js recurrenc
 
 The **Recurrence Editor** includes the entire recurrence related information in a separate portable manner which can be either utilized as a separate widget or else can be embed within the appointment window of Scheduler to enable recurrence options within it. The recurrence rule can be easily generated based on the frequency selected. The customizations like changing the labels of the recurrence editor is also possible to achieve through its properties. The frequencies available are Never, Daily, Weekly, Monthly, Yearly and Every weekday.
  
-Some of the key features of Recurrence Editor are as follows, 
- 
-* **Frequencies** - 6 types of repeat modes are available namely Never, Daily, Weekly, Monthly, Yearly, Everyweekday.
-* **SelectedRecurrenceType** - To select the recurrence type in the recurrence editor. 
-* **firstDayOfWeek** - Allows setting starting day of the week in recurrence editor.
-
 ## Getting Started
 
 To render the Recurrence Editor control as a separate widget, the following list of external dependencies are needed, 
@@ -51,13 +45,13 @@ These files are referred for proper working of the sub-controls used within Recu
 </table>
 
 
-N> RecurrenceEditor uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
+N> Recurrence Editor uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the RecurrenceEditor, the dependent css file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the Recurrence Editor, the dependent css file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 ## Control Initialization 
 
-Create a Div element within the body section of the HTML document, where the RecurrenceEditor needs to be rendered
+Create a div element within the body section of the HTML document, where the Recurrence Editor needs to be rendered.
 
 {% highlight html %}
 
@@ -67,7 +61,7 @@ Create a Div element within the body section of the HTML document, where the Rec
 
 {% endhighlight %}
 
-Initialize the RecurrenceEditor control by adding the following script code to the body section of the HTML document.
+Initialize the Recurrence Editor control, by adding the following script code to the body section of the HTML document.
 
 {% highlight html %}
 
