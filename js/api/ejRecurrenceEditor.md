@@ -9,7 +9,7 @@ keywords: ejRecurrenceEditor, API, Essential JS recurrence editor
 
 # ejRecurrenceEditor
 
-The **Recurrence Editor** includes the entire recurrence related information in a separate portable manner which can be either utilized as a separate widget or else can be embed within the appointment window of Scheduler to enable recurrence options within it. The recurrence rule can be easily generated based on the frequency selected. The customizations like changing the labels of the recurrence editor is also possible to achieve through its properties. The frequencies available are Never, Daily, Weekly, Monthly, Yearly and Every weekday. 
+The **Recurrence Editor** includes the entire recurrence related information in a separate portable manner which can be either utilized as a separate widget or else can be embed within the appointment window of Scheduler to enable recurrence options within it. The recurrence rule can be easily generated based on the frequency selected. The customizations like changing the labels of the Recurrence Editor is also possible to achieve through its properties. The frequencies available are Never, Daily, Weekly, Monthly, Yearly and Every weekday. 
   
 #### Syntax
 
@@ -109,7 +109,7 @@ When set to true, enables the spin button of numeric textboxes within the Recurr
 
 * true
 
-#### Example - To disable the spin button of numeric textbox within recurrence editor.
+#### Example - To disable the spin button of numeric textbox within Recurrence Editor.
 
 {% highlight html %}
  
@@ -128,7 +128,7 @@ When set to true, enables the spin button of numeric textboxes within the Recurr
 ### startDate `object`
 {:#members:startdate}
 
-Sets the start date of the recurrence. The Recurrence editor initially displays the current date as its start date.
+Sets the start date of the recurrence. The Recurrence Editor initially displays the current date as its start date.
 
 #### Default Value
 
@@ -153,7 +153,7 @@ Sets the start date of the recurrence. The Recurrence editor initially displays 
 ### locale `string`
 {:#members:locale}
 
-Sets the specific culture to the RecurrenceEditor.
+Sets the specific culture to the Recurrence Editor.
 
 #### Default Value
 
@@ -175,18 +175,18 @@ Sets the specific culture to the RecurrenceEditor.
 
 {% endhighlight %}
 
-> To set any culture for Recurrenceeditor, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in RecurrenceEditor, refer to the **globalize.culture.fr-FR.min.js** script file. Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.RecurrenceEditor.Locale[“fr-FR”] = { }; under script section.
+> To set any culture for Recurrence Editor, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Recurrence Editor, refer to the **globalize.culture.fr-FR.min.js** script file. Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.RecurrenceEditor.Locale[“fr-FR”] = { }; under script section.
 
 ### dateFormat `string`
 {:#members:dateformat}
 
-Sets the date format for RecurrenceEditor.
+Sets the date format for Recurrence Editor.
 
 #### Default Value
 
 * ""
 
-#### Example - To set the date format for RecurrenceEditor.
+#### Example - To set the date format for Recurrence Editor.
 
 {% highlight html %}
 
@@ -237,7 +237,7 @@ Sets the minimum date limit to display on the datepickers defined within the Rec
 
 * new Date(1900, 01, 01)
 
-#### Example - To set the minimum date on the Recurrence Edior.
+#### Example - To set the minimum date on the Recurrence Editor.
 
 {% highlight html %}
 
@@ -263,7 +263,7 @@ Sets the maximum date limit to display on the datepickers used within the Recurr
 
 * new Date(2099, 12, 31)
 
-#### Example - To set the maximum date on the RecurrenceEditor.
+#### Example - To set the maximum date on the Recurrence Editor.
 
 {% highlight html %}
 
@@ -283,11 +283,11 @@ Sets the maximum date limit to display on the datepickers used within the Recurr
 ### cssClass `string`
 {:#members:cssclass  }
 
+Accepts the custom CSS class name, that defines specific user-defined styles and themes to be applied on partial or complete elements of the Recurrence Editor. 
+
 #### Default Value
 
 * ""
-
-Accepts the custom CSS class name, that defines specific user-defined styles and themes to be applied on partial or complete elements of the Recurrence Editor. 
 
 #### Example - To simply customize the background color of Recurrence Editor by using custom CSS class name.
 
@@ -384,14 +384,14 @@ Generates the collection of date, that lies within the selected recurrence start
         });
 
 var schObj = $("#RecurrenceEditor").data("ejRecurrenceEditor");
-var recurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10";
-var strDate = new Date();
-schObj.recurrenceDateGenerator(recurrenceRule,strDate);
+var recurrenceString = "FREQ=DAILY;INTERVAL=1;COUNT=10";
+var startDate = new Date();
+schObj.recurrenceDateGenerator(recurrenceString,startDate);
 </script>
 
 {% endhighlight %}
 
-### recurrenceRuleSplit(recurrenceRule,appointment)
+### recurrenceRuleSplit(recurrenceRule,exDate)
 {:#methods:recurrencerulesplit}
 
  It splits and returns the recurrence rule string into object collection.
@@ -412,8 +412,8 @@ schObj.recurrenceDateGenerator(recurrenceRule,strDate);
         </tr>
         <tr>
             <td class="name">recurrenceRule</td>
-            <td class="type">object</td>
-            <td class="description">It refers the date object of the appointment</td>
+            <td class="type">string</td>
+            <td class="description">It refers the appointment date of exdate</td>
         </tr>
     </tbody>
 </table>
@@ -433,8 +433,8 @@ schObj.recurrenceDateGenerator(recurrenceRule,strDate);
 
 var schObj = $("#RecurrenceEditor").data("ejRecurrenceEditor");
 var recurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10";
-var appointment ="11/2/2016"
-schObj.recurrenceRuleSplit(recurrenceRule,appointment);
+var exDate ="11/2/2016"
+schObj.recurrenceRuleSplit(recurrenceRule,exDate);
 </script>
 
 {% endhighlight %}
@@ -444,7 +444,7 @@ schObj.recurrenceRuleSplit(recurrenceRule,appointment);
 ### change
 {:#events:change}
 
-Triggers whenever any of the recurrence editor’s value is changed.  
+Triggers whenever any of the Recurrence Editor’s value is changed.  
 
 <table class="params">
 <thead>
