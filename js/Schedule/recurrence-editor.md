@@ -40,7 +40,7 @@ ej.recurrenceeditor.min.js<br/><br/></td><td>
 Schedule core file<br/><br/></td></tr>
 <tr>
 <td>
-ej.scroller.js<br/><br/>ej.button.min.js<br/><br/>ej.datepicker.min.js<br/><br/>ej.checkbox.min.js<br/><br/>ej.editor.min.js<br/><br/>ej.dropdownlist.min.js<br/><br/>ej.togglebutton.min.js<br/><br/>ej.radiobutton.min.js<br/><br/></td><td>
+ej.scroller.js<br/><br/>ej.datepicker.min.js<br/><br/>ej.checkbox.min.js<br/><br/>ej.editor.min.js<br/><br/>ej.dropdownlist.min.js<br/><br/>ej.radiobutton.min.js<br/><br/></td><td>
 These files are referred for proper working of the sub-controls used within RecurrenceEditor.<br/><br/></td></tr>
 </table>
 
