@@ -763,7 +763,7 @@ Axis can be positioned anywhere in chart area using the [`crossesAt`](../api/ejc
 
 {% endhighlight %}
 
-![](/js/Chart/Axis_images/axis_crossing1.png)
+![](/js/Chart/Axis_images/axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -797,7 +797,7 @@ The [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) propert
 
 {% endhighlight %}
 
-![](/js/Chart/Axis_images/axis_crossing2.png)
+![](/js/Chart/Axis_images/axis_img53.png)
 
 Axis will be placed in the opposite side if value of [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property is greater than the maximum value of crossing axis (axis name provided through [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) property or primary Y axis for horizontal axis).
 
@@ -816,7 +816,7 @@ Axis will be placed in the opposite side if value of [`crossesAt`](../api/ejchar
 
 {% endhighlight %}
 
-![](/js/Chart/Axis_images/axis_crossing3.png)
+![](/js/Chart/Axis_images/axis_img54.png)
 
 
 #### Crossing in DateTime Axis
@@ -839,7 +839,7 @@ For crossing in a date time horizontal axis, date object should be provided as v
 
 {% endhighlight %}
 
-![](/js/Chart/Axis_images/axis_crossing4.png)
+![](/js/Chart/Axis_images/axis_img55.png)
 
 
 #### Crossing in Category Axis
@@ -856,7 +856,7 @@ W> String value provided for [`crossesAt`](../api/ejchart#members:primaryxaxis-c
 		primaryYAxis:
 		{
 			//Crosses horizontal axis at category value ‘Third’
-			crossesAt: 'Third',
+			crossesAt: 'Tuesday',
 
 			//...
 		}
@@ -865,7 +865,7 @@ W> String value provided for [`crossesAt`](../api/ejchart#members:primaryxaxis-c
 
 {% endhighlight %}
 
-![](/js/Chart/Axis_images/axis_crossing5.png)
+![](/js/Chart/Axis_images/axis_img56.png)
 
 
 ### Axis Visibility
