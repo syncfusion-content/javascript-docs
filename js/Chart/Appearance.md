@@ -138,7 +138,7 @@ N> Width of a column also depends upon the [`columnSpacing`](../api/ejchart#memb
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_colSpacing1.png)
+![](/js/Chart/Appearance_images/Appearance_img10.png)
 
 ## Spacing between Column Series
 
@@ -174,7 +174,7 @@ N> Column spacing will also affect the width of the column. For example, setting
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_colSpacing2.png)
+![](/js/Chart/Appearance_images/Appearance_img11.png)
 
 ## Series border customization
 
