@@ -4,7 +4,7 @@ title: Properties, Methods and Events of ejKanban Widget
 description: Members,Methods,Events available in ejKanban
 documentation: API
 platform: js
-keywords: kanban, ejKanban, syncfusion, kanban api
+keywords: Kanban, ejKanban, syncfusion, Kanban api
 ---
 
 # ejKanban
@@ -76,7 +76,7 @@ The Kanban can be easily configured to the DOM element, such as div. you can cre
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
-Gets or sets a value that indicates whether to enable allowDragAndDrop behavior on kanban.
+Gets or sets a value that indicates whether to enable allowDragAndDrop behavior on Kanban.
 
 #### Default Value
 
@@ -293,7 +293,7 @@ To enable or disable the column expand /collapse.
 ### allowSearching `boolean`
 {:#members:allowsearching}
 
-To enable Searching operation in kanban.
+To enable Searching operation in Kanban.
 
 #### Default Value:
 
@@ -337,7 +337,7 @@ To enable Searching operation in kanban.
 ### allowSelection `boolean`
 {:#members:allowselection}
 
-Gets or sets a value that indicates whether to enable allowSelection behavior on kanban.User can select card and the selected card will be highlighted on kanban.
+Gets or sets a value that indicates whether to enable allowSelection behavior on Kanban.User can select card and the selected card will be highlighted on Kanban.
 
 #### Default Value:
 
@@ -476,7 +476,7 @@ To allow keyboard navigation actions.
 ### allowScrolling `boolean`
 {:#members:allowscrolling}
 
-Gets or sets a value that indicates whether to enable the scrollbar in the kanban and view the card by scroll through the kanban manually.
+Gets or sets a value that indicates whether to enable the scrollbar in the Kanban and view the card by scroll through the Kanban manually.
 
 #### Default Value:
 
@@ -528,7 +528,7 @@ Gets or sets a value that indicates whether to enable the scrollbar in the kanba
 ### contextMenuSettings `object`
 {:#members:contextmenusettings}
 
-Gets or sets an object that indicates whether to customize the context menu behavior of the kanban.
+Gets or sets an object that indicates whether to customize the context menu behavior of the Kanban.
 
 #### Default Value:
 
@@ -754,15 +754,15 @@ Sets context menu to target element.
 <tbody>
 <tr>
 <td class="name">Header</td>
-<td class="description">Sets context menu to kanban header</td>
+<td class="description">Sets context menu to Kanban header</td>
 </tr>
 <tr>
 <td class="name">Content</td>
-<td class="description">Sets context menu to kanban content</td>
+<td class="description">Sets context menu to Kanban content</td>
 </tr>
 <tr>
 <td class="name">All</td>
-<td class="description">Sets context menu to kanban</td>
+<td class="description">Sets context menu to Kanban</td>
 </tr>
 </tbody>
 </table>
@@ -938,7 +938,7 @@ Gets the template to render custom menu.
 ### columns `array`
 {:#members:columns}
 
-Gets or sets an object that indicates to render the kanban with specified columns.
+Gets or sets an object that indicates to render the Kanban with specified columns.
 
 #### Default Value:
 
@@ -984,7 +984,7 @@ Gets or sets an object that indicates to render the kanban with specified column
 ### columns.headerText `string`
 {:#members:columns-headertext}
 
-Gets or sets an object that indicates to render the kanban with specified columns header text.
+Gets or sets an object that indicates to render the Kanban with specified columns header text.
 
 #### Default Value
 
@@ -1030,7 +1030,7 @@ Gets or sets an object that indicates to render the kanban with specified column
 ### columns.key `string/number`
 {:#members:columns-key}
 
-Gets or sets an object that indicates to render the kanban with specified columns key.
+Gets or sets an object that indicates to render the Kanban with specified columns key.
 
 #### Default Value
 
@@ -1402,7 +1402,7 @@ Gets or sets a value that indicates to add the template within the header elemen
 ### columns.width `string/number`
 {:#members:columns-width}
 
-Gets or sets an object that indicates to render the kanban with specified columns width.
+Gets or sets an object that indicates to render the Kanban with specified columns width.
 
 #### Default Value:
 
@@ -1449,7 +1449,7 @@ Gets or sets an object that indicates to render the kanban with specified column
 ### columns.visible `boolean`
 {:#members:columns-visible}
 
-Gets or sets an object that indicates to render the kanban with specified columns visible.
+Gets or sets an object that indicates to render the Kanban with specified columns visible.
 
 #### Default Value:
 
@@ -1734,7 +1734,7 @@ To customize the card border color based on assigned task. Colors and correspond
 ### cssClass `string`
 {:#members:cssclass}
 
-Gets or sets a value that indicates to render the kanban with custom theme.
+Gets or sets a value that indicates to render the Kanban with custom theme.
 
 #### Default Value:
 
@@ -1784,7 +1784,7 @@ Gets or sets a value that indicates to render the kanban with custom theme.
  ### dataSource `object`
 {:#members:datasource}
 
-Gets or sets the data to render the kanban with card.
+Gets or sets the data to render the Kanban with card.
 
 #### Default Value:
 
@@ -1827,7 +1827,7 @@ Gets or sets the data to render the kanban with card.
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-Align content in the kanban control from right to left by setting the property as true.
+Align content in the Kanban control from right to left by setting the property as true.
 
 #### Default Value:
 
@@ -1932,7 +1932,7 @@ To show Total count of cards in each column
 ### editSettings `object`
 {:#members:editsettings}
 
-Get or sets an object that indicates whether to customize the editing behavior of the kanban.
+Get or sets an object that indicates whether to customize the editing behavior of the Kanban.
 
 #### Default Value:
 
@@ -1989,7 +1989,7 @@ Get or sets an object that indicates whether to customize the editing behavior o
 ### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
-Gets or sets a value that indicates whether to enable the editing action in cards of kanban.
+Gets or sets a value that indicates whether to enable the editing action in cards of Kanban.
 
 #### Default Value:
 
@@ -2045,7 +2045,7 @@ Gets or sets a value that indicates whether to enable the editing action in card
 ### editSettings.allowAdding `boolean`
 {:#members:editsettings-allowadding}
 
-Gets or sets a value that indicates whether to enable the adding action in cards behavior on kanban.
+Gets or sets a value that indicates whether to enable the adding action in cards behavior on Kanban.
 
 #### Default Value:
 
@@ -2170,7 +2170,7 @@ This specifies the id of the template.which is require to be edited using the Di
 
 <ts name="ej.Kanban.EditMode"/>
 
-Get or sets an object that indicates whether to customize the editMode of the kanban.
+Get or sets an object that indicates whether to customize the editMode of the Kanban.
 
 <table class="params">
 <thead>
@@ -2182,11 +2182,11 @@ Get or sets an object that indicates whether to customize the editMode of the ka
 <tbody>
 <tr>
 <td class="name">Dialog</td>
-<td class="description">Creates kanban with editMode as Dialog</td>
+<td class="description">Creates Kanban with editMode as Dialog</td>
 </tr>
 <tr>
 <td class="name">DialogTemplate</td>
-<td class="description">Creates kanban with editMode as DialogTemplate</td>
+<td class="description">Creates Kanban with editMode as DialogTemplate</td>
 </tr>
 </tbody>
 </table>
@@ -2245,7 +2245,7 @@ Get or sets an object that indicates whether to customize the editMode of the ka
 ### editSettings.editItems `array`
 {:#members: editsettings-edititems}
 
-Get or sets an object that indicates whether to customize the editing fields of kanban card.
+Get or sets an object that indicates whether to customize the editing fields of Kanban card.
 
 #### Default Value:
 
@@ -2683,7 +2683,7 @@ To customize field mappings for card , editing title and control key parameters
 ### fields.primaryKey `string`
 {:#members:fields-primarykey}
 
-The primarykey field is get as property of kanban. And this will used for Drag and drop and editing mainly.
+The primarykey field is get as property of Kanban. And this will used for Drag and drop and editing mainly.
 
 #### Default Value:
 
@@ -3142,7 +3142,7 @@ When set to true, adapts the Kanban layout to fit the screen size of devices on 
 ### minWidth `number`
 {:#members:minwidth}
 
-Gets or sets a value that indicates whether to set the minimum width of the responsive kanban while isResponsive property is true.
+Gets or sets a value that indicates whether to set the minimum width of the responsive Kanban while isResponsive property is true.
 
 #### Default Value:
 
@@ -3393,7 +3393,7 @@ Gets or sets an object of tooltip to filter buttons.
 ### query `object`
 {:#members:query}
 
-ej Query to query database of kanban.
+ej Query to query database of Kanban.
 
 #### Default Value:
 
@@ -3437,7 +3437,7 @@ ej Query to query database of kanban.
 ### keySettings `object`
 {:#members:keysettings}
 
-To change the key in keyboard interaction to kanban control.
+To change the key in keyboard interaction to Kanban control.
 
 #### Default Value
 
@@ -3506,7 +3506,7 @@ To change the key in keyboard interaction to kanban control.
 ### scrollSettings `object`
 {:#members:scrollsettings}
 
-Gets or sets an object that indicates whether to customize the scrolling behavior of the kanban.
+Gets or sets an object that indicates whether to customize the scrolling behavior of the Kanban.
 
 #### Default Value:
 
@@ -3558,7 +3558,7 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
 ### scrollSettings.height `string/number`
 {:#members:scrollsettings-height}
 
-Gets or sets an object that indicates to render the kanban with specified scroll height.
+Gets or sets an object that indicates to render the Kanban with specified scroll height.
 
 #### Default Value:
 
@@ -3609,7 +3609,7 @@ Gets or sets an object that indicates to render the kanban with specified scroll
 ### scrollSettings.width `string/number`
 {:#members:scrollsettings-width}
 
-Gets or sets an object that indicates to render the kanban with specified scroll width.
+Gets or sets an object that indicates to render the Kanban with specified scroll width.
 
 #### Default Value:
 
@@ -3661,7 +3661,7 @@ Gets or sets an object that indicates to render the kanban with specified scroll
 ### scrollSettings.allowFreezeSwimlane `boolean`
 {:#members:scrollsettings-allowfreezeswimlane}
 
-To allow the kanban to freeze particular swimlane at the time of scrolling , until scroll reaches next swimlane and it continues.
+To allow the Kanban to freeze particular swimlane at the time of scrolling , until scroll reaches next swimlane and it continues.
 
 #### Default Value:
 
@@ -3717,7 +3717,7 @@ To allow the kanban to freeze particular swimlane at the time of scrolling , unt
 ### searchSettings `object`
 {:#members:searchsettings}
 
-To customize the searching behavior of the kanban.
+To customize the searching behavior of the Kanban.
 
 #### Default Value:
 
@@ -4044,7 +4044,7 @@ To allow customize selection type. Accepting types are "single" and "multiple".
 ### stackedHeaderRows `array`
 {:#members:stackedheaderrows}
 
-Gets or sets an object that indicates to managing the collection of stacked header rows for the kanban.
+Gets or sets an object that indicates to managing the collection of stacked header rows for the Kanban.
 
 #### Default Value:
 
@@ -4472,7 +4472,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 ### addCard(\[primaryKey\],\[card\])
 {:#methods:addcard}
 
-Add a new card in kanban control.If parameters are not given default dialog will be open
+Add a new card in Kanban control.If parameters are not given default dialog will be open
 
  <table class="params">
     <thead>
@@ -4501,9 +4501,9 @@ Add a new card in kanban control.If parameters are not given default dialog will
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends an add new card request to the kanban
+    // Sends an add new card request to the Kanban
     kanbanObj.addCard(); 
     </script>
     
@@ -4513,7 +4513,7 @@ Add a new card in kanban control.If parameters are not given default dialog will
 {% highlight html %}
  
     <script>
-    // add new card to the kanban
+    // add new card to the Kanban
      kanbanObj.addCard("2",{Id:2, Status: "Open", Text: "Task 1", Assignee: "Nancy" })     
     </script>
     
@@ -4522,16 +4522,16 @@ Add a new card in kanban control.If parameters are not given default dialog will
 ### clearSearch()
 {:#methods:clearsearch}
 
-Method used for send a clear search request to kanban.
+Method used for send a clear search request to Kanban.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a clearSearch request to the kanban
+    // Sends a clearSearch request to the Kanban
     kanbanObj.clearSearch(); 
     </script>
 
@@ -4547,7 +4547,7 @@ It is used to clear all the card selection.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#kanban").data("ejKanban");
     kanbanObj.clearSelection();  // clears all of the card selection
     </script>
@@ -4568,14 +4568,14 @@ It is used to clear all the card selection.
 ### collapseAll()
 {:#methods:collapseall}
 
-Collapse all the swimlane rows in kanban.
+Collapse all the swimlane rows in Kanban.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Collapse all the  rows
     kanbanObj.collapseAll(); 
@@ -4597,7 +4597,7 @@ Collapse all the swimlane rows in kanban.
 ### columns(column,key,\[action\])
 {:#methods:columns}
 
-Add or remove columns in kanban columns collections
+Add or remove columns in Kanban columns collections
 
  <table class="params">
     <thead>
@@ -4611,12 +4611,12 @@ Add or remove columns in kanban columns collections
     <tr>
     <td class="name">column details</td>
     <td class="type"><span class="param-type">array/string</span></td>
-    <td class="description last">Pass array of columns or string of headerText to add/remove the column in kanban</td>
+    <td class="description last">Pass array of columns or string of headerText to add/remove the column in Kanban</td>
     </tr>
     <tr>
     <td class="name">key value</td>
     <td class="type"><span class="param-type">array/string</span></td>
-    <td class="description last">Pass array of columns or string of key value to add/remove the column in kanban</td>
+    <td class="description last">Pass array of columns or string of key value to add/remove the column in Kanban</td>
     </tr>
     <tr>
     <td class="name">action</td>
@@ -4631,11 +4631,11 @@ Add or remove columns in kanban columns collections
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#kanban").data("ejKanban");
-    // remove kanban column
+    // remove Kanban column
     kanbanObj.columns("Testing","Testing", "remove");
-    // Add new column into kanban or modified already existing column in the kanban.
+    // Add new column into Kanban or modified already existing column in the Kanban.
     kanbanObj.columns("Codereview","codereview","add"); 
     </script>
     
@@ -4644,16 +4644,16 @@ Add or remove columns in kanban columns collections
 ### cancelEdit()
 {:#methods:canceledit}
 
-Send a cancel request of add/edit card in kanban
+Send a cancel request of add/edit card in Kanban
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a cancel request to the kanban
+    // Sends a cancel request to the Kanban
     kanbanObj.cancelEdit(); 
     </script>
     
@@ -4663,7 +4663,7 @@ Send a cancel request of add/edit card in kanban
 {% highlight html %}
  
     <script>
-    // Sends a cancel request to the kanban
+    // Sends a cancel request to the Kanban
     $("#Kanban").ejKanban("cancelEdit");        
     </script>
     
@@ -4672,7 +4672,7 @@ Send a cancel request of add/edit card in kanban
 ### destroy()
 {:#methods:destroy}
 
-Destroy the kanban widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroy the Kanban widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 #### Example
 
@@ -4680,7 +4680,7 @@ Destroy the kanban widget all events bound using this._on will be unbind automat
  
     <script>
     var kanbanObj = $("#Kanban").data("ejKanban");
-    kanbanObj.destroy(); // destroy the kanban
+    kanbanObj.destroy(); // destroy the Kanban
     </script>
     
 {% endhighlight %}
@@ -4697,7 +4697,7 @@ Destroy the kanban widget all events bound using this._on will be unbind automat
 ### deleteCard(Key)
 {:#methods:deletecard}
 
-Delete a card in kanban control.
+Delete a card in Kanban control.
 
 <table class="params">
     <thead>
@@ -4721,9 +4721,9 @@ Delete a card in kanban control.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#kanban").data("ejKanban");
-    // Sends a delete card request to the kanban
+    // Sends a delete card request to the Kanban
     kanbanObj.deleteCard(2); 
     </script>
     
@@ -4732,7 +4732,7 @@ Delete a card in kanban control.
 ### dataSource(datasource)
 {:#methods:datasource}
 
-Refresh the kanban with new data source.
+Refresh the Kanban with new data source.
 
  <table class="params">
     <thead>
@@ -4745,7 +4745,7 @@ Refresh the kanban with new data source.
     <tbody>
     <tr>
     <td class="name">datasource</td><td class="type"><span class="param-type">array</span></td>
-    <td class="description last">Pass new data source to the kanban</td>
+    <td class="description last">Pass new data source to the Kanban</td>
     </tr>
     </tbody>
     </table>
@@ -4755,9 +4755,9 @@ Refresh the kanban with new data source.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Refreshes the kanban data source
+    // Refreshes the Kanban data source
     kanbanObj.dataSource(data); 
     </script>
     
@@ -4767,7 +4767,7 @@ Refresh the kanban with new data source.
 {% highlight html %}
  
     <script>
-    // Refreshes the kanban data source
+    // Refreshes the Kanban data source
     $("#Kanban").ejKanban("dataSource", data);        
     </script>
 
@@ -4776,16 +4776,16 @@ Refresh the kanban with new data source.
 ### endEdit()
 {:#methods:endedit}
 
-Send a save request in kanban when any card is in edit/new add card state.
+Send a save request in Kanban when any card is in edit/new add card state.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a save request to the kanban
+    // Sends a save request to the Kanban
     kanbanObj.endEdit(); 
     </script>
     
@@ -4794,7 +4794,7 @@ Send a save request in kanban when any card is in edit/new add card state.
 {% highlight html %}
  
     <script>
-    // Sends a save request to the kanban
+    // Sends a save request to the Kanban
     $("#Kanban").ejKanban("endEdit");        
     </script>
     
@@ -4803,7 +4803,7 @@ Send a save request in kanban when any card is in edit/new add card state.
 ### toggleColumn(headerText or $div)
 {:#methods:togglecolumn}
 
-toggleColumn based on the headerText in kanban.
+toggleColumn based on the headerText in Kanban.
 
  <table class="params">
     <thead>
@@ -4829,7 +4829,7 @@ toggleColumn based on the headerText in kanban.
 {% highlight html %}
  
       <script>
-      // Create kanban object.
+      // Create Kanban object.
       var kanbanObj = $("#Kanban").data("ejKanban");
       // toggleColumn the row based on the row state
       kanbanObj.toggleColumn("Backlog");  
@@ -4876,7 +4876,7 @@ Expand or collapse the card based on the state of target "div"
 {% highlight html %}
  
       <script>
-      // Create kanban object.
+      // Create Kanban object.
       var kanbanObj = $("#Kanban").data("ejKanban");
       // toggleCard the row based on the row state
       kanbanObj.toggleCard("2");  
@@ -4923,7 +4923,7 @@ Expand or collapse the swimlane row based on the state of target "div"
 {% highlight html %}
  
       <script>
-      // Create kanban object.
+      // Create Kanban object.
       var kanbanObj = $("#Kanban").data("ejKanban");
       // toggleSwimlane the row based on the row state
       kanbanObj.toggleSwimlane($(".e-slexpandcollapse").eq(1)); 
@@ -4945,14 +4945,14 @@ Expand or collapse the swimlane row based on the state of target "div"
 ### expandAll()
 {:#methods:expandall}
 
-Expand all the swimlane rows in kanban.
+Expand all the swimlane rows in Kanban.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // expand all the  rows
     kanbanObj.expandAll(); 
@@ -4973,14 +4973,14 @@ Expand all the swimlane rows in kanban.
 ### getVisibleColumnNames()
 {:#methods:getvisiblecolumnnames}
 
-Used for get the names of all the visible column name collections in kanban.
+Used for get the names of all the visible column name collections in Kanban.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Gets the names of all the visible column collections
     kanbanObj.getVisibleColumnNames(); 
@@ -5001,16 +5001,16 @@ Used for get the names of all the visible column name collections in kanban.
 ### getScrollObject()
 {:#methods:getscrollobject}
 
-Get the scroller object of kanban.
+Get the scroller object of Kanban.
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Gets scroll object of kanban control
+    // Gets scroll object of Kanban control
     kanbanObj.getScrollObject(); 
     </script>
     
@@ -5020,7 +5020,7 @@ Get the scroller object of kanban.
 {% highlight html %}
  
     <script>
-    // Gets scroll object of kanban control
+    // Gets scroll object of Kanban control
     $("#Kanban").ejKanban("getScrollObject");        
     </script>
     
@@ -5030,7 +5030,7 @@ Get the scroller object of kanban.
 ### getColumnByHeaderText(headerText)
 {:#methods:getcolumnbyheadertext}
 
-Get the column details based on the given header text in kanban.
+Get the column details based on the given header text in Kanban.
 
   <table class="params">
     <thead>
@@ -5062,7 +5062,7 @@ String
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Gets the column details based on the given headerText
     kanbanObj.getColumnByHeaderText("Testing"); 
@@ -5083,7 +5083,7 @@ String
 ### hideColumns(headerText)
 {:#methods:hidecolumns}
 
-Hide columns from the kanban based on the header text
+Hide columns from the Kanban based on the header text
 
   <table class="params">
     <thead>
@@ -5109,7 +5109,7 @@ Hide columns from the kanban based on the header text
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     kanbanObj.hideColumns("Testing"); // Hides column based on the given header text of the column
     kanbanObj.hideColumns(["Testing", "Done"]); // Hide columns based on the array of header text of the columns given
@@ -5131,16 +5131,16 @@ Hide columns from the kanban based on the header text
 ### refreshTemplate()
 {:#methods:refreshtemplate}
 
-Refresh the template of the kanban
+Refresh the template of the Kanban
 
 #### Example
 
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Refreshes the template of the kanban control
+    // Refreshes the template of the Kanban control
     kanbanObj.refreshTemplate(); 
     </script>
     
@@ -5150,7 +5150,7 @@ Refresh the template of the kanban
 {% highlight html %}
  
     <script>
-    // Refreshes the template of the kanban control.
+    // Refreshes the template of the Kanban control.
     $("#Kanban").ejKanban("refreshTemplate");        
     </script>
     
@@ -5159,7 +5159,7 @@ Refresh the template of the kanban
 ### refresh(\[templateRefresh\])
 {:#methods:refresh}
 
-Refresh the kanban contents.The template refreshment is based on the argument passed along with this method
+Refresh the Kanban contents.The template refreshment is based on the argument passed along with this method
 
 <table class="params">
     <thead>
@@ -5175,7 +5175,7 @@ Refresh the kanban contents.The template refreshment is based on the argument pa
     templateRefresh
     </td>
     <td class="type"><span class="param-type">boolean</span></td>
-    <td class="description last"><span class="optional">optional</span> When templateRefresh is set true, template and kanban contents both are refreshed in kanban else only kanban content is refreshed</td>
+    <td class="description last"><span class="optional">optional</span> When templateRefresh is set true, template and Kanban contents both are refreshed in Kanban else only Kanban content is refreshed</td>
     </tr>
     </tbody>
     </table>
@@ -5186,10 +5186,10 @@ Refresh the kanban contents.The template refreshment is based on the argument pa
  
     <div id="Kanban"></div> 
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    kanbanObj.refresh(); // Refresh the kanban contents only
-    kanbanObj.refresh(true); // Refresh the template of the kanban control.
+    kanbanObj.refresh(); // Refresh the Kanban contents only
+    kanbanObj.refresh(true); // Refresh the template of the Kanban control.
     </script>
     
 {% endhighlight %}
@@ -5198,9 +5198,9 @@ Refresh the kanban contents.The template refreshment is based on the argument pa
  
     <div id="Kanban"></div> 
     <script>
-    // Refresh the kanban.
+    // Refresh the Kanban.
     $("#Kanban").ejKanban("refresh");        
-    // Refresh the template of the kanban control.
+    // Refresh the template of the Kanban control.
     $("#Kanban").ejKanban("refresh", true);        
     </script>
     
@@ -5209,7 +5209,7 @@ Refresh the kanban contents.The template refreshment is based on the argument pa
 ### searchCards(searchString)
 {:#methods:searchcards}
 
-Send a search request to kanban with specified string passed in it.
+Send a search request to Kanban with specified string passed in it.
 
   <table class="params">
     <thead>
@@ -5236,9 +5236,9 @@ Send a search request to kanban with specified string passed in it.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a search request to the kanban
+    // Sends a search request to the Kanban
     kanbanObj.searchCards("Analyse"); 
     </script>
 
@@ -5248,7 +5248,7 @@ Send a search request to kanban with specified string passed in it.
 {% highlight html %}
 
     <script>
-    // Sends a search request to the kanban
+    // Sends a search request to the Kanban
     $("#Kanban").ejKanban("searchCards", "Analyse");        
     </script>
     
@@ -5288,7 +5288,7 @@ Method used for set validation to a field during editing.
 {% highlight html %}
  
      <script>
-     // Create kanban object.
+     // Create Kanban object.
      var kanbanObj = $("#Kanban").data("ejKanban");
      // It is used to set validation to a field during editing
      kanbanObj.setValidationToField("Id", { required: true }); 
@@ -5309,7 +5309,7 @@ Method used for set validation to a field during editing.
 ### startEdit($div or key)
 {:#methods:startedit}
 
-Send an edit card request in kanban.Parameter will be HTML element or primary key
+Send an edit card request in Kanban.Parameter will be HTML element or primary key
 
   <table class="params">
     <thead>
@@ -5325,13 +5325,13 @@ Send an edit card request in kanban.Parameter will be HTML element or primary ke
     $div
     </td>
     <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Pass the div selected row element to be edited in kanban</td>
+    <td class="description last">Pass the div selected row element to be edited in Kanban</td>
     </tr>
     <td class="name">
     key
     </td>
     <td class="type"><span class="param-type">string/number</span></td>
-    <td class="description last">Pass the key element to be edited in kanban</td>
+    <td class="description last">Pass the key element to be edited in Kanban</td>
     </tr>
     </tbody>
     </table>
@@ -5341,9 +5341,9 @@ Send an edit card request in kanban.Parameter will be HTML element or primary ke
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends an edit card request to the kanban
+    // Sends an edit card request to the Kanban
     kanbanObj.startEdit($(".e-kanbancontent .e-kanbancard").first()); 
     kanbanObj.startEdit(2); 
     </script>
@@ -5353,7 +5353,7 @@ Send an edit card request in kanban.Parameter will be HTML element or primary ke
 {% highlight html %}
  
     <script>
-    // Sends an edit card request to the kanban
+    // Sends an edit card request to the Kanban
     $("#Kanban").ejKanban("startEdit", ($(".e-kanbancontent .e-kanbancard").first());        
     $("#Kanban").ejKanban("startEdit", 2);        
     </script>
@@ -5363,7 +5363,7 @@ Send an edit card request in kanban.Parameter will be HTML element or primary ke
 ### showColumns(headerText)
 {:#methods:showcolumns}
 
-Show columns in the kanban based on the header text.
+Show columns in the Kanban based on the header text.
 
 <table class="params">
     <thead>
@@ -5389,7 +5389,7 @@ Show columns in the kanban based on the header text.
 {% highlight html %}
  
     <script>
-    // Create kanban object.
+    // Create Kanban object.
     var kanbanObj = $("#kanban").data("ejKanban");
     kanbanObj.showColumns("Testing"); // Shows column based on the given header text of the column
     kanbanObj.showColumns(["Testing", "Done"]); // Shows columns based on the array of header text of the columns given
@@ -5411,7 +5411,7 @@ Show columns in the kanban based on the header text.
 ### updateCard(key,data)
 {:#methods:updatecard}
 
-Update a card in kanban control based on key and JSON data given.
+Update a card in Kanban control based on key and JSON data given.
 
  <table class="params">
     <thead>

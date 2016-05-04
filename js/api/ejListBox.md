@@ -64,29 +64,6 @@ Requires
 ## Members
 
 
-### allowDragAndDrop [Deprecated] `boolean`
-{:#members:allowdraganddrop}
-
-Enables/disables the drag and drop behavior of the ListBox widget.
-
-N> Since this is a deprecated property we suggest to use **allowDrag** and **allowDrop** properties.
-
-#### Default Value:
-* false
-
-Example
-{:.example}
-
-{% highlight js %}
-
-$("#list").ejListBox({
-
-    allowDragAndDrop: true
-
-});
-            
-{% endhighlight %}
-
 ### allowDrag `boolean`
 {:#members:allowdrag} 
 
@@ -216,84 +193,6 @@ $('#list').ejListBox({
 {% endhighlight %}
 
 
-### checkAll [Deprecated] `boolean`
-{:#members:checkall} 
-
-To check all the items of the ListBox widget. It works only when the showCheckbox property is set to true. 
-
-#### Default Value:
-
-* false
-
-Example
-{:.example}
-
-{% highlight js %}
-
-    $('#list').ejListBox({showCheckbox: true, checkAll: true }); 
-
-{% endhighlight %}
-
-### checkedItems [Deprecated] `array`
-{:#members:checkeditems} 
-
-List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
-
-N> Since this is a deprecated property we suggest to use checkedIndices property.
-
-#### Default Value:
-* []
-
-Example
-{:.example}
-
-{% highlight js %}
-
-    $('#list').ejListBox({ showCheckbox:true, checkedItems : [1,2] }); 
-
-{% endhighlight %}
-
-### checkedItemList [Deprecated] `array`
-{:#members:checkeditemlist} 
-
-List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
-
-N> Since this is a deprecated property we suggest to use checkedIndices property.
-
-#### Default Value:
-
-* []
-
-Example
-{:.example}
-
-
-{% highlight js %}
-
-    $('#list').ejListBox({ showCheckbox:true, checkedItemlist : [1,2] }); 
-
-{% endhighlight %}
-
-### checkItemsByIndex [Deprecated] `array`
-{:#members:checkitemsbyindex} 
-
-List of items to be checked by default using index values. It works only when the showCheckbox property is set to true. 
-
-N> Since this is a deprecated property we suggest to use checkedIndices property.
-
-#### Default Value: 
-
-* null
-
-Example
-{:.example}
-
-{% highlight js %}
-
-        $('#list').ejListBox({ showCheckbox: true, checkItemsByIndex: [2,3] });
-        
-{% endhighlight %}
-
 ### checkedIndices `array`
 {:#members:checkedindices} 
 
@@ -353,22 +252,6 @@ Example
             
  {% endhighlight %}
 
-### disableItemsByIndex [Deprecated] `string`
-{:#members:disableitemsbyindex}
-
-Disables set of list items using its index value.
-
-#### Default Value:
-* null
-
-Example
-{:.example} 
-
-{% highlight js %}
-
-    $('#list').ejListBox({disableItemsByIndex : "2,3"}); 
-
-{% endhighlight %}
 
 ### enabled `boolean`
 {:#members:enabled}
@@ -386,45 +269,6 @@ Example
     $('#list').ejListBox({enabled : false }); 
 
 {% endhighlight %}
-
-### enableItemsByIndex [Deprecated] `string`
-{:#members:enableitemsbyindex}
-
-Enables the set of disabled list items using its index value.
-
-#### Default Value:
-* null
-
-Example
-{:.example}
-
-{% highlight js %}
-
-            $('#list').ejListBox({ enableItemsByIndex: "2,3" });
-
-{% endhighlight  %}
-
-### enableLoadOnDemand [Deprecated] `boolean`
-{:#members:enableloadondemand}
-
-Loads data on demand for the ListBox widget via scrolling behavior.If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “normal”.
-
-N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
-
-#### Default Value:
-* false
-
-Example
-{:.example}
-
-{% highlight js %}
-
- $("#customerlist").ejListBox({
-     enableLoadOnDemand: true
- });
- 
- {% endhighlight %}
-
 
 
 ### enableIncrementalSearch `boolean`
@@ -480,27 +324,6 @@ Example
 
 {% endhighlight %}
 
-### enableVirtualScrolling  [Deprecated] `boolean`
-{:#members:enablevirtualscrolling}
-
-Loads data on demand for the ListBox widget via scrolling behavior. If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “continuous”.
-
-N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
-
-#### Default Value:
-* false
-
-Example
-{:.example}
-
-{% highlight js %}
-
- $("#customerlist").ejListBox({
-     enableVirtualScrolling: true
- });
-
-{% endhighlight %}
-
 
 ### fields `object`
 {:#members:fields}
@@ -531,11 +354,6 @@ $("#countrylist").ejListBox({
 <table>
 <tr>
 <td>
-fields.category [Deprecated]</td><td>
-The grouping in the ListBox widget can be defined using this field.Since this is deprecated we suggest you to use fields.groupBy API.
-</td></tr>
-<tr>
-<td>
 fields.checkBy </td><td>
 Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.</td></tr>
 <tr>
@@ -560,10 +378,6 @@ fields.imageAttributes</td><td>
 Defines the image attributes such as height, width, styles and so on.</td></tr>
 <tr>
 <td>
-fields.selected [Deprecated]</td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
-<tr>
-<td>
 selectBy</td><td>
 Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.</td></tr>
 <tr>
@@ -578,10 +392,6 @@ Defines the table name to get the specific set of list items to be loaded in the
 <td>
 text</td><td>
 Defines the specific field name in the data source to load the list with data.</td></tr>
-<tr>
-<td>
-tooltipText [Deprecated]</td><td>
-Defines the specific field name to display the tooltip text for all the list items.</td></tr>
 </table>
 
 
@@ -709,68 +519,6 @@ $("#customerlist").ejListBox({
 
 {% endhighlight %}
 
-### selectedItemIndex [Deprecated] `number`
-{:#members:selecteditemindex}
-
-The item to be selected by default using its index.
-
-N> Since this is a deprecated property we suggest to use selectedIndex property.
-
-#### Default Value:
-* null
-
-Example
-{:.example}
-
-{% highlight js %}
-
-    $('#list').ejListBox({selectedItemIndex : 2}); 
-    
-{% endhighlight %}
-
-### selectedItemList [Deprecated] `array`
-{:#members:selecteditemlist}
-
-The list of items to be selected by default using its index values. To use this property allowMultiSelection should be enabled.
-
-N> Since this is a deprecated property we suggest to use selectedIndices property.
-
-#### Default Value:
-* []
-
-Example
-{:.example}
-
-{% highlight js %}
-
-        $('#list').ejListBox({ 
-        
-        allowMultiSelection:true,
-        
-            selectedItemlist : [1,2] 
-        
-        }); 
-
-{% endhighlight %}
-
-### selectedItems [Deprecated] `array`
-{:#members:selecteditems}
-
-The list of items to be selected by default using its index. To use this property allowMultiSelection should be enabled.
-
-N> Since this is a deprecated property we suggest to use selectedIndices property.
-
-#### Default Value:
-* []
-
-Example
-{:.example}
-
-{% highlight js %}
-
-    $('#list').ejListBox({allowMultiSelection:true, selectedItems : [1,2]}); 
-
-{% endhighlight %}
 
 ### selectedIndex `number`
 {:#members:selectedindex}
@@ -861,39 +609,6 @@ Example
         
  {% endhighlight %}
 
-### unCheckAll [Deprecated] `boolean`
-{:#members:uncheckall}
-
-Unchecks all the checked list items. It is dependent on showCheckbox property.
-
-#### Default Value:
-* false
-
-Example
-{:.example}
-
-{% highlight js %}
-
-    $("#button").ejButton({ text: "uncheck All list Items", click: "uncheckall" });
-
-{% endhighlight %}
-
-### uncheckItemsByIndex [Deprecated] `string`
-{:#members:uncheckitemsbyindex}
-
-Unchecks the list of items by using its index values. It is dependent on showCheckbox property.
-
-#### Default Value:
-* null
-
-Example
-{:.example}
-
-{% highlight js %}
-
-            $('#list').ejListBox({ showCheckbox: true, uncheckItemsByIndex: "2,3" });
-            
-{% endhighlight %}
 
 ### value `number`
 {:#members:value}
@@ -1672,27 +1387,7 @@ Example
 
             $('#list').ejListBox("removeAll");
 
-{% endhighlight %}
-
-
-### removeItem [Deprecated]
-{:#methods:removeitem}
-
-Removes the selected list items from the listbox. 
-
-
-N> 1. This method does not accept any arguments.
-N> 2. Since this method is deprecated, we suggest you to use  removeSelectedItems method.
-
-
-Example
-{:.example}
-
-{% highlight js %}
-
-            $('#list').ejListBox("removeItem"); 
-            
- {% endhighlight %}         
+{% endhighlight %}        
 
 
 ### removeSelectedItems()
@@ -1869,36 +1564,6 @@ Example
 {% endhighlight %}
 
 
-### selectItemsByIndex(index|indices) [Deprecated]
-{:#methods:selectitemsbyindex}
-
-Selects a set of list items through its index values. This method will works when allowMultiSelection property is set to true.
-
-<table>
-<tr>
-<td>
-<b>Parameters</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-Indices</td><td>
-number|number[]</td><td>
-Index/Indices of the listbox items to be selected.</td></tr>
-</table>
-
-N> Since this property is deprecated, we suggest you to use selectItemsByIndices property.
-
-Example
-{:.example}
-
-{% highlight js%}
-
-            $('#list').ejListBox("selectItemsByIndex", "2,3,5");
-
-{% endhighlight %}
-
-
 ### selectItemsByIndices(indices)
 {:#methods:selectitemsbyindices}
 
@@ -1924,24 +1589,6 @@ Example
 
             $('#list').ejListBox("selectItemsByIndices", "2,3,5");
             
-{% endhighlight %}
-
-
-### unCheckAll [Deprecated]
-{:#methods:unCheckAll}
-
-Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
-
-N> 1. This method does not accept any arguments.
-N> 2. Since this method is deprecated, we suggest you to use  uncheckAll method.
-
-Example
-{:.example}
-
-{% highlight js%}
-
-            $('#list').ejListBox("unCheckAll");
-
 {% endhighlight %}
 
 
@@ -2018,23 +1665,6 @@ Example
 {% endhighlight %}
 
 
-### unSelectAll [Deprecated]
-{:#methods:unSelectAll}
-
-Unselect all the selected list items in the ListBox widget. 
-
-N> 1. This method does not accept any arguments.
-N> 2. Since this method is deprecated, we suggest you to use unselectAll method.
-
-Example
-{:.example}
-
-{% highlight js%}
-
-            $('#list').ejListBox("unSelectAll");
-
-{% endhighlight %}
-
 
 ### unselectAll
 {:#methods:unselectall}
@@ -2078,37 +1708,6 @@ Example
 {% highlight js%}
 
             $('#list').ejListBox("unselectItemByIndex", 2);
-
-{% endhighlight %}
-
-
-### unselectItemsByIndex(index|indices) [Deprecated]
-{:#methods:unselectitemsbyindex}
-
-Unselects a set of list items using its index values. 
-
-<table>
-<tr>
-<td>
-<b>Parameters</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-Indices</td><td>
-number|number[]</td><td>
-Index/Indices of the listbox item to be unselected.</td></tr>
-</table>
-
-
-N> Since this property is deprecated, we suggest you to use unselectItemsByIndices property.
-
-Example
-{:.example}
-
-{% highlight js%}
-
-            $('#list').ejListBox("unselectItemsByIndex", "2,3,5");
 
 {% endhighlight %}
 
@@ -3127,61 +2726,6 @@ $("#list").ejListBox({
 
 {% endhighlight %}
 
-### itemRequest [Deprecated]
-{:#events:itemRequest}
-
-Triggers when scrolling action (virtual scrolling) requests for new set of list items to be loaded in the ListBox widget.
-
-<table>
-<tr>
-<th>
-Event Arguments</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-model</td><td>
-<ts ref="ej.ListBox.Model"/>Object</td><td>
-Instance of the listbox model object.</td></tr>
-<tr>
-<td>
-type</td><td>
-String</td><td>
-Name of the event.</td></tr>
-<tr>
-<td>
-cancel</td><td>
-Boolean</td><td>
-Set this option to true to cancel the event.</td></tr>
-<tr>
-<td>
-originalEvent</td><td>
-Object</td><td>
-Returns the event arguments like event type,timestamp, etc.,</td></tr>
-<tr>
-<td>
-scrollData</td><td>
-Object</td><td>
-Returns the dimension and position properties for scrolled element.</td></tr>
-</table>
-
-Example
-{:.example}
-
-{% highlight js%}
-
-$("#list").ejListBox({
-
-    itemRequest: function(args) {
-
-        //do something
-
-    }
-
-});
-
-{% endhighlight %}
-
 
 ### itemDragStart
 {:#events:itemdragstart}
@@ -3370,103 +2914,6 @@ $("#list").ejListBox({
 {% endhighlight %}
 
 
-### itemDropped [Deprecated]
-{:#events:itemdropped}
-
-Triggers when the list item is dropped. 
-
-N> Since this event is deprecated we suggest to use itemDrop event.
-
-<table>
-<tr>
-<th>
-Event Arguments</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-model</td><td>
-<ts ref="ej.ListBox.Model"/>Object</td><td>
-Instance of the listbox model object.</td></tr>
-<tr>
-<td>
-type</td><td>
-String</td><td>
-Name of the event.</td></tr>
-<tr>
-<td>
-cancel</td><td>
-Boolean</td><td>
-Set this option to true to cancel the event.</td></tr>
-<tr>
-<td>
-items</td><td>
-Array</td><td>
-An array of list item objects which are being dropped.
-<table>
-<tr>
-<td>
-item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
-isChecked</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is checked or not.</td></tr>
-<tr>
-<td>
-isSelected</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is selected or not.</td></tr>
-<tr>
-<td>
-isEnabled</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is enabled or not.</td></tr>
-<tr>
-<td>
-text</td><td>
-String</td><td>
-List item’s text (label).</td></tr>
-<tr>
-<td>
-value</td><td>
-String</td><td>
-List item’s value.</td></tr>
-</table>
-</td></tr>
-
-</table>
-
- Example
- {:.example}
-
-{% highlight js%}
-
-$("#list").ejListBox({
-
-    itemDropped: function(args) {
-
-        //do something
-
-    }
-
-});
-
-{% endhighlight %}
-
-
 ### itemDrop 
 {:#events:itemdrop}
 
@@ -3553,94 +3000,6 @@ List item’s value.</td></tr>
 $("#list").ejListBox({
 
     itemDrop: function(args) {
-
-        //do something
-
-    }
-
-});
-
-{% endhighlight %}
-
-
-### selected [Deprecated]
-{:#events:selected}
-
-Triggers when a list item gets selected.
-
-N> Since this event is deprecated, we suggest to use select event.
-
-<table>
-<tr>
-<th>
-Event Arguments</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-model</td><td>
-<ts ref="ej.ListBox.Model"/>Object</td><td>
-Instance of the listbox model object.</td></tr>
-<tr>
-<td>
-type</td><td>
-String</td><td>
-Name of the event.</td></tr>
-<tr>
-<td>
-item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
-cancel</td><td>
-Boolean</td><td>
-Set this option to true to cancel the event.</td></tr>
-<tr>
-<td>
-isChecked</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is checked or not.</td></tr>
-<tr>
-<td>
-isSelected</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is selected or not.</td></tr>
-<tr>
-<td>
-isEnabled</td><td>
-Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
-<tr>
-<td>
-text</td><td>
-String</td><td>
-List item’s text (label).</td></tr>
-<tr>
-<td>
-value</td><td>
-String</td><td>
-List item’s value.</td></tr>
-</table>
-
- Example
- {:.example}
-
-{% highlight js%}
-
-$("#list").ejListBox({
-
-    selected: function(args) {
 
         //do something
 
@@ -3822,92 +3181,5 @@ $("#list").ejListBox({
 
 {% endhighlight %}
 
-
-### selectIndexChanged [Deprecated]
-{:#events:selectindexchanged}
-
-Triggers when the item selection is changed. 
-
-N> Since this event is deprecated. We suggest to use change event.
-
-<table>
-<tr>
-<th>
-Event Arguments</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-model</td><td>
-<ts ref="ej.ListBox.Model"/>Object</td><td>
-Instance of the listbox model object.</td></tr>
-<tr>
-<td>
-type</td><td>
-String</td><td>
-Name of the event.</td></tr>
-<tr>
-<td>
-item</td><td>
-Object</td><td>
-List item object.</td></tr>
-<tr>
-<td>
-data</td><td>
-Object</td><td>
-The Datasource of the listbox.</td></tr>
-<tr>
-<td>
-index</td><td>
-Number</td><td>
-List item’s index.</td></tr>
-<tr>
-<td>
-cancel</td><td>
-Boolean</td><td>
-Set this option to true to cancel the event.</td></tr>
-<tr>
-<td>
-isChecked</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is checked or not.</td></tr>
-<tr>
-<td>
-isSelected</td><td>
-Boolean</td><td>
-Boolean value based on whether the list item is selected or not.</td></tr>
-<tr>
-<td>
-isEnabled</td><td>
-Boolean</td><td>
-Boolean value based on the list item is enabled or not.</td></tr>
-<tr>
-<td>
-text</td><td>
-String</td><td>
-List item’s text (label).</td></tr>
-<tr>
-<td>
-value</td><td>
-String</td><td>
-List item’s value.</td></tr>
-</table>
-
- Example
- {:.example}
-
-{% highlight js%}
-
-$("#list").ejListBox({
-
-    selectIndexChanged: function(args) {
-
-        //do something
-
-    }
-
-});
-
-{% endhighlight %}
 
 

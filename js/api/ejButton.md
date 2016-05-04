@@ -256,9 +256,7 @@ Specify the Right to Left direction to button
         
         <script>
         // Set the enableRTL during initialization.                     
-                $("#button1").ejButton({ contentType: ej.ContentType.TextAndImage,
-        imagePosition: ej.ImagePosition.ImageLeft,
-        prefixIcon: "e-uiLight e-login", enableRTL : true });        
+                $("#button1").ejButton({ enableRTL : true });        
         </script>                                 
 
 {% endhighlight %}
