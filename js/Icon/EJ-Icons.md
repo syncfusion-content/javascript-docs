@@ -1,19 +1,38 @@
 ---
 layout: post
-title: EJ Icons
-description: EJ Icons
+title: Essential Studio for JavaScript:Icon Package
+description: Essential Studio for JavaScript:Icon Package
 platform: js
-control: Introduction
+control: General Topics 
 documentation: ug
 ---
 
-# EJ Icons
+# EJ Icon Package
 
-The **Essential Studio for JavaScript** provides a set of font icons that can be utilized in your application by applying the class names in element. To make it simple and standard, the EJIcon class names are followed by **“e-icon e-{icon name}“** syntax.  
+The **Essential Studio for JavaScript** provides a set of icons that can be utilized in your application by applying the class names in element. To make it simple and standard, the EJ Icon class names are followed by **“e-icon e-{icon name}“** syntax.  
+
+## How to use EJ icons in your application?
+
+**Step 1:**
+
+To use the icon fonts in your application, you need to maintain the folder structure of the theme files and the corresponding images for icons.
+
+You have to include the common-images folder in the specified theme folder for displaying icons and refer theme files in your application.
 
 **For example**:
 
-The following example showcase to display the ejicon by using their corresponding class names.
+“default-theme” folder css which contains the “ej.widgets.all.min.css/ej.web.all.min.css” and “ej.theme.min.css” file. The “ej.widgets.core.min.css” file is in the outside of the default theme folder as shown below:
+
+![](/js/Icon/IconLibrary_images/themefolder.png)
+
+Theme files are available in the following location:
+
+(Installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css\web\default-theme.
+
+
+**Step 2:**
+
+The following example showcases to display the EJ Icon by using their corresponding class names.
 
 {% tabs %}
 {% highlight html %}
@@ -21,9 +40,9 @@ The following example showcase to display the ejicon by using their correspondin
 <!doctype html>
 <html>
 <head>
-    <title>Essential Studio for JavaScript : EJ Icons</title>
+    <title>Essential Studio for JavaScript : EJ Icon Package</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-    //css references
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
 </head>
 <body>
   <div class="icons">
@@ -41,6 +60,20 @@ The following example showcase to display the ejicon by using their correspondin
        <div class="e-icon e-font"></div>
      </li>
    </ul>
+   <ul>
+      <li>
+        <div class="e-icon e-indent"></div>
+      </li>
+      <li>
+        <div class="e-icon e-outdent"></div>
+      </li>
+      <li>
+        <div class="e-icon e-redo"></div>
+      </li>
+      <li>
+        <div class="e-icon e-undo"></div>
+      </li>
+     </ul>
   </div>
 </body>
 </html>
@@ -65,9 +98,13 @@ The following example showcase to display the ejicon by using their correspondin
 
 N>  Make sure the css file (ej.widgets.all.min.css/ej.web.all.min.css) is referred in your application.
 
-## List of Icons
+Execute the above code to render the following output.
 
-The complete list of ejicons is listed in the following table.
+![](/js/Icon/IconLibrary_images/output.png)
+
+**Step 3:**
+
+The complete list of EJ icons are listed in the following table. You have to use the below class names prefix with e- in your application.
 
   <style type="text/css" class="cssStyles"> 
       table {
@@ -1031,908 +1068,908 @@ The complete list of ejicons is listed in the following table.
 <tr>
 <td>
 <div class="spriteimage shrink"></div>
- <div class="txt">e-shrink</div>
+ <div class="txt">shrink</div>
 </td>
 <td>
 <div class="spriteimage enlarge"></div>
-<div class="txt">e-enlarge</div>
+<div class="txt">enlarge</div>
 </td>
 <td>
 <div class="spriteimage key"></div>
-<div class="txt">e-key</div>
+<div class="txt">key</div>
 </td>
 <td>
 <div class="spriteimage list"></div>
-<div class="txt">e-list</div>
+<div class="txt">list</div>
 </td>
 <td>
 <div class="spriteimage listnum"></div>
-<div class="txt">e-list-numbered</div>
+<div class="txt">list-numbered</div>
 </td>
 </tr>
 
  <tr>
 <td>
  <div class="spriteimage listnum_01"></div>
-<div class="txt">e-list-numbered_01</div>
+<div class="txt">list-numbered_01</div>
 </td>
 <td>
 <div class="spriteimage indent"></div>
-<div class="txt">e-indent</div>
+<div class="txt">indent</div>
  </td>
  <td>
 <div class="spriteimage indent_01"></div>
-<div class="txt">e-indent_01</div>
+<div class="txt">indent_01</div>
 </td>
 <td>
 <div class="spriteimage outdent"></div>
-<div class="txt">e-outdent</div>
+<div class="txt">outdent</div>
 </td>
 <td>
 <div class="spriteimage outdent_01"></div>
-<div class="txt">e-outdent_01</div>
+<div class="txt">outdent_01</div>
 </td>
 </tr>
 
 <tr>
  <td>
 <div class="spriteimage close"></div>
-<div class="txt">e-close</div>
+<div class="txt">close</div>
 </td>
 <td>
 <div class="spriteimage close_01"></div>
-<div class="txt">e-close_01</div>
+<div class="txt">close_01</div>
 </td>
 <td>
 <div class="spriteimage undo"></div>
-<div class="txt">e-undo</div>
+<div class="txt">undo</div>
 </td>
 <td>
 <div class="spriteimage undo_01"></div>
-<div class="txt">e-undo_01</div>
+<div class="txt">undo_01</div>
 </td>
 <td>
 <div class="spriteimage redo"></div>
-<div class="txt">e-redo</div>
+<div class="txt">redo</div>
 </td>	
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage redo_01"></div>
-<div class="txt">e-redo_01</div>
+<div class="txt">redo_01</div>
 </td>
 <td>
 <div class="spriteimage video"></div>
-<div class="txt">e-video</div>
+<div class="txt">video</div>
 </td>
 <td>
 <div class="spriteimage video_01"></div>
-<div class="txt">e-video_01</div>
+<div class="txt">video_01</div>
 </td>
 <td>
 <div class="spriteimage cross"></div>
-<div class="txt">e-cross-circle</div>
+<div class="txt">cross-circle</div>
 </td>
 <td>
 <div class="spriteimage brush"></div>
-<div class="txt">e-clean-brush</div>
+<div class="txt">clean-brush</div>
 </td>
 </tr> 
 
 <tr>
  <td>
 <div class="spriteimage dcol"></div>
-<div class="txt">e-delete-column</div>
+<div class="txt">delete-column</div>
 </td>
  <td>
 <div class="spriteimage dcol_01"></div>
-<div class="txt">e-delete-column_01</div>
+<div class="txt">delete-column_01</div>
 </td>
  <td>
 <div class="spriteimage drow"></div>
-<div class="txt">e-delete-row</div>
+<div class="txt">delete-row</div>
 </td>
  <td>
 <div class="spriteimage drow_01"></div>
-<div class="txt">e-delete-row_01</div>
+<div class="txt">delete-row_01</div>
 </td>
  <td>
 <div class="spriteimage icolleft"></div>
-<div class="txt">e-insert-column-left</div>
+<div class="txt">insert-column-left</div>
 </td>
 </tr>
 
 <tr>
  <td>
 <div class="spriteimage icolleft_01"></div>
-<div class="txt">e-insert-column-left_01</div>
+<div class="txt">insert-column-left_01</div>
 </td>
  <td>
 <div class="spriteimage icolleft_02"></div>
-<div class="txt">e-insert-column-left_02</div>
+<div class="txt">insert-column-left_02</div>
 </td>
  <td>
 <div class="spriteimage icolright"></div>
-<div class="txt">e-insert-column-right</div>
+<div class="txt">insert-column-right</div>
 </td>
  <td>
 <div class="spriteimage icolright_01"></div>
-<div class="txt">e-insert-column-right_01</div>
+<div class="txt">insert-column-right_01</div>
 </td>
  <td>
 <div class="spriteimage icolright_02"></div>
-<div class="txt">e-insert-column-right_02</div>
+<div class="txt">insert-column-right_02</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage irowbelow"></div>
-<div class="txt">e-insert-row-below</div>
+<div class="txt">insert-row-below</div>
 </td>
 <td>
 <div class="spriteimage irowbelow_01"></div>
-<div class="txt">e-insert-row-below_01</div>
+<div class="txt">insert-row-below_01</div>
 </td>
 <td>
 <div class="spriteimage irowbelow_2"></div>
-<div class="txt">e-insert-row-below_02</div>
+<div class="txt">insert-row-below_02</div>
 </td>
 <td>
 <div class="spriteimage irowabove"></div>
-<div class="txt">e-insert-row-above</div>
+<div class="txt">insert-row-above</div>
 </td>
 <td>
 <div class="spriteimage irowabove_01"></div>
-<div class="txt">e-insert-row-above_01</div>
+<div class="txt">insert-row-above_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage irowabove_02"></div>
-<div class="txt">e-insert-row-above_02</div>
+<div class="txt">insert-row-above_02</div>
 </td>
 <td>
 <div class="spriteimage table"></div>
-<div class="txt">e-table</div>
+<div class="txt">table</div>
 </td>
 <td>
 <div class="spriteimage table_01"></div>
-<div class="txt">e-table_01</div>
+<div class="txt">table_01</div>
 </td>
 <td>
 <div class="spriteimage table_02"></div>
-<div class="txt">e-table_02</div>
+<div class="txt">table_02</div>
 </td>
 <td>
 <div class="spriteimage sigma"></div>
-<div class="txt">e-sigma</div>
+<div class="txt">sigma</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage sigma_01"></div>
-<div class="txt">e-sigma_01</div>
+<div class="txt">sigma_01</div>
 </td>
 <td>
 <div class="spriteimage uppercase"></div>
-<div class="txt">e-uppercase</div>
+<div class="txt">uppercase</div>
 </td>
 <td>
 <div class="spriteimage uppercase_01"></div>
-<div class="txt">e-uppercase_01</div>
+<div class="txt">uppercase_01</div>
 </td>
 <td>
 <div class="spriteimage lowercase"></div>
-<div class="txt">e-lowercase</div>
+<div class="txt">lowercase</div>
 </td>
 <td>
 <div class="spriteimage lowercase_01"></div>
-<div class="txt">e-lowercase_01</div>
+<div class="txt">lowercase_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage bgcolor"></div>
-<div class="txt">e-background-color</div>
+<div class="txt">background-color</div>
 </td>
 <td>
 <div class="spriteimage superscript"></div>
-<div class="txt">e-superscript</div>
+<div class="txt">superscript</div>
 </td>
 <td>
 <div class="spriteimage superscript_01"></div>
-<div class="txt">e-superscript_01</div>
+<div class="txt">superscript_01</div>
 </td>
 <td>
 <div class="spriteimage subscript"></div>
-<div class="txt">e-subscript</div>
+<div class="txt">subscript</div>
 </td>
 <td>
 <div class="spriteimage subscript_01"></div>
-<div class="txt">e-subscript_01</div>
+<div class="txt">subscript_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage restore"></div>
-<div class="txt">e-restore</div>
+<div class="txt">restore</div>
 </td>
 <td>
 <div class="spriteimage upload"></div>
-<div class="txt">e-upload</div>
+<div class="txt">upload</div>
 </td>
 <td>
 <div class="spriteimage download"></div>
-<div class="txt">e-download</div>
+<div class="txt">download</div>
 </td>
 <td>
 <div class="spriteimage save"></div>
-<div class="txt">e-save</div>
+<div class="txt">save</div>
 </td>
 <td>
 <div class="spriteimage save_01"></div>
-<div class="txt">e-save_01</div>
+<div class="txt">save_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage save_02"></div>
-<div class="txt">e-save_02</div>
+<div class="txt">save_02</div>
 </td>
 <td>
 <div class="spriteimage mail"></div>
-<div class="txt">e-mail/e-message</div>
+<div class="txt">mail/message</div>
 </td>
 <td>
 <div class="spriteimage arrowhead-right"></div>
-<div class="txt">e-arrowhead-right</div>
+<div class="txt">arrowhead-right</div>
 </td>
 <td>
 <div class="spriteimage arrowhead-right_01"></div>
-<div class="txt">e-arrowhead-right_01</div>
+<div class="txt">arrowhead-right_01</div>
 </td>
 <td>
 <div class="spriteimage arrowhead-left"></div>
-<div class="txt">e-arrowhead-left</div>
+<div class="txt">arrowhead-left</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage arrowhead-left_01"></div>
-<div class="txt">e-arrowhead-left_01</div>
+<div class="txt">arrowhead-left_01</div>
 </td>
 <td>
 <div class="spriteimage arrowhead-up"></div>
-<div class="txt">e-arrowhead-up</div>
+<div class="txt">arrowhead-up</div>
 </td>
 <td>
 <div class="spriteimage arrowhead-down"></div>
-<div class="txt">e-arrowhead-down</div>
+<div class="txt">arrowhead-down</div>
 </td>
 <td>
 <div class="spriteimage arrow-sans-right"></div>
-<div class="txt">e-arrow-sans-right</div>
+<div class="txt">arrow-sans-right</div>
 </td>
 <td>
 <div class="spriteimage arrow-sans-right_01"></div>
-<div class="txt">e-arrow-sans-right_01</div>
+<div class="txt">arrow-sans-right_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage arrow-sans-left"></div>
-<div class="txt">e-arrow-sans-left</div>
+<div class="txt">arrow-sans-left</div>
 </td>
 <td>
 <div class="spriteimage arrow-sans-left_01"></div>
-<div class="txt">e-arrow-sans-left_01</div>
+<div class="txt">arrow-sans-left_01</div>
 </td>
 <td>
 <div class="spriteimage arrow-sans-up"></div>
-<div class="txt">e-arrow-sans-up</div>
+<div class="txt">arrow-sans-up</div>
 </td>
 <td>
 <div class="spriteimage arrow-sans-down"></div>
-<div class="txt">e-arrow-sans-down</div>
+<div class="txt">arrow-sans-down</div>
 </td>
 <td>
 <div class="spriteimage datetime"></div>
-<div class="txt">e-datetime</div>
+<div class="txt">datetime</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage datetime_01"></div>
-<div class="txt">e-datetime_01</div>
+<div class="txt">datetime_01</div>
 </td>
 <td>
 <div class="spriteimage calendar"></div>
-<div class="txt">e-calendar</div>
+<div class="txt">calendar</div>
 </td>
 <td>
 <div class="spriteimage calendar_01"></div>
-<div class="txt">e-calendar_01</div>
+<div class="txt">calendar_01</div>
 </td>
 <td>
 <div class="spriteimage calendar-plus"></div>
-<div class="txt">e-calendar-plus</div>
+<div class="txt">calendar-plus</div>
 </td>
 <td>
 <div class="spriteimage calendar-edit"></div>
-<div class="txt">e-calendar-edit</div>
+<div class="txt">calendar-edit</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage chevron-right"></div>
-<div class="txt">e-chevron-right</div>
+<div class="txt">chevron-right</div>
 </td>
 <td>
 <div class="spriteimage chevron-right_01"></div>
-<div class="txt">e-chevron-right_01</div>
+<div class="txt">chevron-right_01</div>
 </td>
 <td>
 <div class="spriteimage chevron-right_02"></div>
-<div class="txt">e-chevron-right_02</div>
+<div class="txt">chevron-right_02</div>
 </td>
 <td>
 <div class="spriteimage chevron-left"></div>
-<div class="txt">e-chevron-left</div>
+<div class="txt">chevron-left</div>
 </td>
 <td>
 <div class="spriteimage chevron-left_01"></div>
-<div class="txt">e-chevron-left_01</div>
+<div class="txt">chevron-left_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage chevron-left_02"></div>
-<div class="txt">e-chevron-left_02</div>
+<div class="txt">chevron-left_02</div>
 </td>
 <td>
 <div class="spriteimage chevron-up"></div>
-<div class="txt">e-chevron-up</div>
+<div class="txt">chevron-up</div>
 </td>
 <td>
 <div class="spriteimage chevron-up_01"></div>
-<div class="txt">e-chevron-up_01</div>
+<div class="txt">chevron-up_01</div>
 </td>
 <td>
 <div class="spriteimage chevron-down"></div>
-<div class="txt">e-chevron-down</div>
+<div class="txt">chevron-down</div>
 </td>
 <td>
 <div class="spriteimage chevron-down_01"></div>
-<div class="txt">e-chevron-down_01</div>
+<div class="txt">chevron-down_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage chevron-circle-right"></div>
-<div class="txt">e-chevron-circle-right</div>
+<div class="txt">chevron-circle-right</div>
 </td>
 <td>
 <div class="spriteimage chevron-circle-left"></div>
-<div class="txt">e-chevron-circle-left</div>
+<div class="txt">chevron-circle-left</div>
 </td>
 <td>
 <div class="spriteimage font"></div>
-<div class="txt">e-font</div>
+<div class="txt">font</div>
 </td>
 <td>
 <div class="spriteimage strikethrough"></div>
-<div class="txt">e-strikethrough</div>
+<div class="txt">strikethrough</div>
 </td>
 <td>
 <div class="spriteimage strikethrough_01"></div>
-<div class="txt">e-strikethrough_01</div>
+<div class="txt">strikethrough_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage bold"></div>
-<div class="txt">e-bold</div>
+<div class="txt">bold</div>
 </td>
 <td>
 <div class="spriteimage bold_01"></div>
-<div class="txt">e-bold_01</div>
+<div class="txt">bold_01</div>
 </td>
 <td>
 <div class="spriteimage italic"></div>
-<div class="txt">e-italic</div>
+<div class="txt">italic</div>
 </td>
 <td>
 <div class="spriteimage italic_01"></div>
-<div class="txt">e-italic_01</div>
+<div class="txt">italic_01</div>
 </td>
 <td>
 <div class="spriteimage underline"></div>
-<div class="txt">e-underline</div>
+<div class="txt">underline</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage underline_01"></div>
-<div class="txt">e-underline_01</div>
+<div class="txt">underline_01</div>
 </td>
 <td>
 <div class="spriteimage reply"></div>
-<div class="txt">e-reply</div>
+<div class="txt">reply</div>
 </td>
 <td>
 <div class="spriteimage forward"></div>
-<div class="txt">e-forward</div>
+<div class="txt">forward</div>
 </td>
 <td>
 <div class="spriteimage export"></div>
-<div class="txt">e-export</div>
+<div class="txt">export</div>
 </td>
 <td>
 <div class="spriteimage user"></div>
-<div class="txt">e-user</div>
+<div class="txt">user</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage clipboard"></div>
-<div class="txt">e-clipboard</div>
+<div class="txt">clipboard</div>
 </td>
 <td>
 <div class="spriteimage home"></div>
-<div class="txt">e-home</div>
+<div class="txt">home</div>
 </td>
 <td>
 <div class="spriteimage clear"></div>
-<div class="txt">e-clear</div>
+<div class="txt">clear</div>
 </td>
 <td>
 <div class="spriteimage resize-handle"></div>
-<div class="txt">e-resize-handle</div>
+<div class="txt">resize-handle</div>
 </td>
 <td>
 <div class="spriteimage link"></div>
-<div class="txt">e-link</div>
+<div class="txt">link</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage link_01"></div>
-<div class="txt">e-link_01</div>
+<div class="txt">link_01</div>
 </td>
 <td>
 <div class="spriteimage unlink"></div>
-<div class="txt">e-unlink</div>
+<div class="txt">unlink</div>
 </td>
 <td>
 <div class="spriteimage unlink_01"></div>
-<div class="txt">e-unlink_01</div>
+<div class="txt">unlink_01</div>
 </td>
 <td>
 <div class="spriteimage external-link"></div>
-<div class="txt">e-external-link</div>
+<div class="txt">external-link</div>
 </td>
 <td>
 <div class="spriteimage external-link_01"></div>
-<div class="txt">e-external-link_01</div>
+<div class="txt">external-link_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage clock"></div>
-<div class="txt">e-clock</div>
+<div class="txt">clock</div>
 </td>
 <td>
 <div class="spriteimage settings"></div>
-<div class="txt">e-settings</div>
+<div class="txt">settings</div>
 </td>
 <td>
 <div class="spriteimage cut"></div>
-<div class="txt">e-cut</div>
+<div class="txt">cut</div>
 </td>
 <td>
 <div class="spriteimage cut_01"></div>
-<div class="txt">e-cut_01</div>
+<div class="txt">cut_01</div>
 </td>
 <td>
 <div class="spriteimage copy"></div>
-<div class="txt">e-copy</div>
+<div class="txt">copy</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage copy_01"></div>
-<div class="txt">e-copy_01</div>
+<div class="txt">copy_01</div>
 </td>
 <td>
 <div class="spriteimage copy_02"></div>
-<div class="txt">e-copy_02</div>
+<div class="txt">copy_02</div>
 </td>
 <td>
 <div class="spriteimage paste"></div>
-<div class="txt">e-paste</div>
+<div class="txt">paste</div>
 </td>
 <td>
 <div class="spriteimage paste_01"></div>
-<div class="txt">e-paste_01</div>
+<div class="txt">paste_01</div>
 </td>
 <td>
 <div class="spriteimage star"></div>
-<div class="txt">e-star</div>
+<div class="txt">star</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage pointer"></div>
-<div class="txt">e-pointer</div>
+<div class="txt">pointer</div>
 </td>
 <td>
 <div class="spriteimage sortdirect"></div>
-<div class="txt">e-sortdirect</div>
+<div class="txt">sortdirect</div>
 </td>
 <td>
 <div class="spriteimage shoppingcart"></div>
-<div class="txt">e-shoppingcart</div>
+<div class="txt">shoppingcart</div>
 </td>
 <td>
 <div class="spriteimage shoppingcart_01"></div>
-<div class="txt">e-shoppingcart_01</div>
+<div class="txt">shoppingcart_01</div>
 </td>
 <td>
 <div class="spriteimage cursor"></div>
-<div class="txt">e-cursor</div>
+<div class="txt">cursor</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage warning"></div>
-<div class="txt">e-warning</div>
+<div class="txt">warning</div>
 </td>
 <td>
 <div class="spriteimage zoom-out"></div>
-<div class="txt">e-zoom-out</div>
+<div class="txt">zoom-out</div>
 </td>
 <td>
 <div class="spriteimage zoom-out_01"></div>
-<div class="txt">e-zoom-out_01</div>
+<div class="txt">zoom-out_01</div>
 </td>
 <td>
 <div class="spriteimage zoom-out_02"></div>
-<div class="txt">e-zoom-out_02</div>
+<div class="txt">zoom-out_02</div>
 </td>
 <td>
 <div class="spriteimage zoom-in"></div>
-<div class="txt">e-zoom-in</div>
+<div class="txt">zoom-in</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage zoom-in_01"></div>
-<div class="txt">e-zoom-in_01</div>
+<div class="txt">zoom-in_01</div>
 </td>
 <td>
 <div class="spriteimage zoom-in_02"></div>
-<div class="txt">e-zoom-in_02</div>
+<div class="txt">zoom-in_02</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-left"></div>
-<div class="txt">e-arrow-circle-left</div>
+<div class="txt">arrow-circle-left</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-left_01"></div>
-<div class="txt">e-arrow-circle-left_01</div>
+<div class="txt">arrow-circle-left_01</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-left_02"></div>
-<div class="txt">e-arrow-circle-left_02</div>
+<div class="txt">arrow-circle-left_02</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage arrow-circle-right"></div>
-<div class="txt">e-arrow-circle-right</div>
+<div class="txt">arrow-circle-right</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-right_01"></div>
-<div class="txt">e-arrow-circle-right_01</div>
+<div class="txt">arrow-circle-right_01</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-right_02"></div>
-<div class="txt">e-arrow-circle-right_02</div>
+<div class="txt">arrow-circle-right_02</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-up"></div>
-<div class="txt">e-arrow-circle-up</div>
+<div class="txt">arrow-circle-up</div>
 </td>
 <td>
 <div class="spriteimage arrow-circle-down"></div>
-<div class="txt">e-arrow-circle-down</div>
+<div class="txt">arrow-circle-down</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage edit"></div>
-<div class="txt">e-edit</div>
+<div class="txt">edit</div>
 </td>
 <td>
 <div class="spriteimage edit_01"></div>
-<div class="txt">e-edit_01</div>
+<div class="txt">edit_01</div>
 </td>
 <td>
 <div class="spriteimage edit_02"></div>
-<div class="txt">e-edit_02</div>
+<div class="txt">edit_02</div>
 </td>
 <td>
 <div class="spriteimage edit_03"></div>
-<div class="txt">e-edit_03</div>
+<div class="txt">edit_03</div>
 </td>
 <td>
 <div class="spriteimage edit_04"></div>
-<div class="txt">e-edit_04</div>
+<div class="txt">edit_04</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage edit_05"></div>
-<div class="txt">e-edit_05</div>
+<div class="txt">edit_05</div>
 </td>
 <td>
 <div class="spriteimage notification"></div>
-<div class="txt">e-notification</div>
+<div class="txt">notification</div>
 </td>
 <td>
 <div class="spriteimage notification_01"></div>
-<div class="txt">e-notification_01</div>
+<div class="txt">notification_01</div>
 </td>
 <td>
 <div class="spriteimage info"></div>
-<div class="txt">e-info</div>
+<div class="txt">info</div>
 </td>
 <td>
 <div class="spriteimage smiley"></div>
-<div class="txt">e-smiley</div>
+<div class="txt">smiley</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage checkmark"></div>
-<div class="txt">e-checkmark</div>
+<div class="txt">checkmark</div>
 </td>
 <td>
 <div class="spriteimage checkmark_01"></div>
-<div class="txt">e-checkmark_01</div>
+<div class="txt">checkmark_01</div>
 </td>
 <td>
 <div class="spriteimage media-play"></div>
-<div class="txt">e-media-play</div>
+<div class="txt">media-play</div>
 </td>
 <td>
 <div class="spriteimage media-pause"></div>
-<div class="txt">e-media-pause</div>
+<div class="txt">media-pause</div>
 </td>
 <td>
 <div class="spriteimage media-eject"></div>
-<div class="txt">e-media-eject</div>
+<div class="txt">media-eject</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage media-next"></div>
-<div class="txt">e-media-next</div>
+<div class="txt">media-next</div>
 </td>
 <td>
 <div class="spriteimage media-previous"></div>
-<div class="txt">e-media-previous</div>
+<div class="txt">media-previous</div>
 </td>
 <td>
 <div class="spriteimage media-forward"></div>
-<div class="txt">e-media-forward</div>
+<div class="txt">media-forward</div>
 </td>
 <td>
 <div class="spriteimage media-forward_01"></div>
-<div class="txt">e-media-forward_01</div>
+<div class="txt">media-forward_01</div>
 </td>
 <td>
 <div class="spriteimage media-forward_02"></div>
-<div class="txt">e-media-forward_02</div>
+<div class="txt">media-forward_02</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage media-forward_03"></div>
-<div class="txt">e-media-forward_03</div>
+<div class="txt">media-forward_03</div>
 </td>
 <td>
 <div class="spriteimage media-forward_04"></div>
-<div class="txt">e-media-forward_04</div>
+<div class="txt">media-forward_04</div>
 </td>
 <td>
 <div class="spriteimage media-backward"></div>
-<div class="txt">e-media-backward</div>
+<div class="txt">media-backward</div>
 </td>
 <td>
 <div class="spriteimage media-backward_01"></div>
-<div class="txt">e-media-backward_01</div>
+<div class="txt">media-backward_01</div>
 </td>
 <td>
 <div class="spriteimage media-backward_02"></div>
-<div class="txt">e-media-backward_02</div>
+<div class="txt">media-backward_02</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage media-backward_03"></div>
-<div class="txt">e-media-backward_03</div>
+<div class="txt">media-backward_03</div>
 </td>
 <td>
 <div class="spriteimage media-backward_04"></div>
-<div class="txt">e-media-backward_04</div>
+<div class="txt">media-backward_04</div>
 </td>
 <td>
 <div class="spriteimage play-circle"></div>
-<div class="txt">e-play-circle</div>
+<div class="txt">play-circle</div>
 </td>
 <td>
 <div class="spriteimage full-screen-expand"></div>
-<div class="txt">e-full-screen-expand</div>
+<div class="txt">full-screen-expand</div>
 </td>
 <td>
 <div class="spriteimage full-screen-expand_01"></div>
-<div class="txt">e-full-screen-expand_01</div>
+<div class="txt">full-screen-expand_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage full-screen-collapse"></div>
-<div class="txt">e-full-screen-collapse</div>
+<div class="txt">full-screen-collapse</div>
 </td>
 <td>
 <div class="spriteimage full-screen-collapse_01"></div>
-<div class="txt">e-full-screen-collapse_01</div>
+<div class="txt">full-screen-collapse_01</div>
 </td>
 <td>
 <div class="spriteimage bullets"></div>
-<div class="txt">e-bullets</div>
+<div class="txt">bullets</div>
 </td>
 <td>
 <div class="spriteimage bullets_01"></div>
-<div class="txt">e-bullets_01</div>
+<div class="txt">bullets_01</div>
 </td>
 <td>
 <div class="spriteimage filter"></div>
-<div class="txt">e-filter</div>
+<div class="txt">filter</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage filter_01"></div>
-<div class="txt">e-filter_01</div>
+<div class="txt">filter_01</div>
 </td>
 <td>
 <div class="spriteimage filternone"></div>
-<div class="txt">e-filternone</div>
+<div class="txt">filternone</div>
 </td>
 <td>
 <div class="spriteimage filternone_01"></div>
-<div class="txt">e-filternone_01</div>
+<div class="txt">filternone_01</div>
 </td>
 <td>
 <div class="spriteimage filter-settings"></div>
-<div class="txt">e-filter-settings</div>
+<div class="txt">filter-settings</div>
 </td>
 <td>
 <div class="spriteimage align-right"></div>
-<div class="txt">e-align-right</div>
+<div class="txt">align-right</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage align-right_01"></div>
-<div class="txt">e-align-right_01</div>
+<div class="txt">align-right_01</div>
 </td>
 <td>
 <div class="spriteimage align-left"></div>
-<div class="txt">e-align-left</div>
+<div class="txt">align-left</div>
 </td>
 <td>
 <div class="spriteimage align-left_01"></div>
-<div class="txt">e-align-left_01</div>
+<div class="txt">align-left_01</div>
 </td>
 <td>
 <div class="spriteimage align-justify"></div>
-<div class="txt">e-align-justify</div>
+<div class="txt">align-justify</div>
 </td>
 <td>
 <div class="spriteimage align-justify_01"></div>
-<div class="txt">e-align-justify_01</div>
+<div class="txt">align-justify_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage align-center"></div>
-<div class="txt">e-align-center</div>
+<div class="txt">align-center</div>
 </td>
 <td>
 <div class="spriteimage align-center_01"></div>
-<div class="txt">e-align-center_01</div>
+<div class="txt">align-center_01</div>
 </td>
 <td>
 <div class="spriteimage align-none"></div>
-<div class="txt">e-align-none</div>
+<div class="txt">align-none</div>
 </td>
 <td>
 <div class="spriteimage search"></div>
-<div class="txt">e-search</div>
+<div class="txt">search</div>
 </td>
 <td>
 <div class="spriteimage search_01"></div>
-<div class="txt">e-search_01</div>
+<div class="txt">search_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage image"></div>
-<div class="txt">e-image</div>
+<div class="txt">image</div>
 </td>
 <td>
 <div class="spriteimage image_01"></div>
-<div class="txt">e-image_01</div>
+<div class="txt">image_01</div>
 </td>
 <td>
 <div class="spriteimage plus"></div>
-<div class="txt">e-plus</div>
+<div class="txt">plus</div>
 </td>
 <td>
 <div class="spriteimage plus_01"></div>
-<div class="txt">e-plus_01</div>
+<div class="txt">plus_01</div>
 </td>
 <td>
 <div class="spriteimage minus"></div>
-<div class="txt">e-minus</div>
+<div class="txt">minus</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage minus_01"></div>
-<div class="txt">e-minus_01</div>
+<div class="txt">minus_01</div>
 </td>
 <td>
 <div class="spriteimage code"></div>
-<div class="txt">e-code</div>
+<div class="txt">code</div>
 </td>
 <td>
 <div class="spriteimage code_01"></div>
@@ -1940,440 +1977,440 @@ The complete list of ejicons is listed in the following table.
 </td>
 <td>
 <div class="spriteimage code-hexagon"></div>
-<div class="txt">e-code-hexagon</div>
+<div class="txt">code-hexagon</div>
 </td>
 <td>
 <div class="spriteimage file-code"></div>
-<div class="txt">e-file-code</div>
+<div class="txt">file-code</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage file-html"></div>
-<div class="txt">e-file-html</div>
+<div class="txt">file-html</div>
 </td>
 <td>
 <div class="spriteimage palette"></div>
-<div class="txt">e-palette</div>
+<div class="txt">palette</div>
 </td>
 <td>
 <div class="spriteimage reload"></div>
-<div class="txt">e-reload</div>
+<div class="txt">reload</div>
 </td>
 <td>
 <div class="spriteimage delete"></div>
-<div class="txt">e-delete</div>
+<div class="txt">delete</div>
 </td>
 <td>
 <div class="spriteimage delete_01"></div>
-<div class="txt">e-delete_01</div>
+<div class="txt">delete_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage delete_02"></div>
-<div class="txt">e-delete_02</div>
+<div class="txt">delete_02</div>
 </td>
 <td>
 <div class="spriteimage delete_03"></div>
-<div class="txt">e-delete_03</div>
+<div class="txt">delete_03</div>
 </td>
 <td>
 <div class="spriteimage delete_04"></div>
-<div class="txt">e-delete_04</div>
+<div class="txt">delete_04</div>
 </td>
 <td>
 <div class="spriteimage delete_05"></div>
-<div class="txt">e-delete_05</div>
+<div class="txt">delete_05</div>
 </td>
 <td>
 <div class="spriteimage pin"></div>
-<div class="txt">e-pin</div>
+<div class="txt">pin</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage unpin"></div>
-<div class="txt">e-unpin</div>
+<div class="txt">unpin</div>
 </td>
 <td>
 <div class="spriteimage stop"></div>
-<div class="txt">e-stop</div>
+<div class="txt">stop</div>
 </td>
 <td>
 <div class="spriteimage power-cord"></div>
-<div class="txt">e-power-cord</div>
+<div class="txt">power-cord</div>
 </td>
 <td>
 <div class="spriteimage fullborders"></div>
-<div class="txt">e-fullborders</div>
+<div class="txt">fullborders</div>
 </td>
 <td>
 <div class="spriteimage threed"></div>
-<div class="txt">e-3d</div>
+<div class="txt">3d</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage file-excel"></div>
-<div class="txt">e-file-excel</div>
+<div class="txt">file-excel</div>
 </td>
 <td>
 <div class="spriteimage file-text"></div>
-<div class="txt">e-file-text</div>
+<div class="txt">file-text</div>
 </td>
 <td>
 <div class="spriteimage file-text_01"></div>
-<div class="txt">e-file-text_01</div>
+<div class="txt">file-text_01</div>
 </td>
 <td>
 <div class="spriteimage file-mdx"></div>
-<div class="txt">e-file-mdx</div>
+<div class="txt">file-mdx</div>
 </td>
 <td>
 <div class="spriteimage file-empty"></div>
-<div class="txt">e-file-empty</div>
+<div class="txt">file-empty</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage file-list"></div>
-<div class="txt">e-file-list</div>
+<div class="txt">file-list</div>
 </td>
 <td>
 <div class="spriteimage file-delete_01"></div>
-<div class="txt">e-file-delete_01</div>
+<div class="txt">file-delete_01</div>
 </td>
 <td>
 <div class="spriteimage file-settings"></div>
-<div class="txt">e-file-settings</div>
+<div class="txt">file-settings</div>
 </td>
 <td>
 <div class="spriteimage circle-square"></div>
-<div class="txt">e-circle-square</div>
+<div class="txt">circle-square</div>
 </td>
 <td>
 <div class="spriteimage diagonal-square"></div>
-<div class="txt">e-diagonal-square</div>
+<div class="txt">diagonal-square</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage hexagon-square"></div>
-<div class="txt">e-hexagon-square</div>
+<div class="txt">hexagon-square</div>
 </td>
 <td>
 <div class="spriteimage pentagon-square"></div>
-<div class="txt">e-pentagon-square</div>
+<div class="txt">pentagon-square</div>
 </td>
 <td>
 <div class="spriteimage globe"></div>
-<div class="txt">e-globe</div>
+<div class="txt">globe</div>
 </td>
 <td>
 <div class="spriteimage globe_01"></div>
-<div class="txt">e-globe_01</div>
+<div class="txt">globe_01</div>
 </td>
 <td>
 <div class="spriteimage vertical-barchart"></div>
-<div class="txt">e-vertical-barchart</div>
+<div class="txt">vertical-barchart</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage vertical-barchart_01"></div>
-<div class="txt">e-vertical-barchart_01</div>
+<div class="txt">vertical-barchart_01</div>
 </td>
 <td>
 <div class="spriteimage horizontal-barchart"></div>
-<div class="txt">e-horizontal-barchart</div>
+<div class="txt">horizontal-barchart</div>
 </td>
 <td>
 <div class="spriteimage horizontal-barchart_01"></div>
-<div class="txt">e-horizontal-barchart_01</div>
+<div class="txt">horizontal-barchart_01</div>
 </td>
 <td>
 <div class="spriteimage pie-chart"></div>
-<div class="txt">e-pie-chart</div>
+<div class="txt">pie-chart</div>
 </td>
 <td>
 <div class="spriteimage triangle"></div>
-<div class="txt">e-triangle</div>
+<div class="txt">triangle</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage inverted-triangle"></div>
-<div class="txt">e-inverted-triangle</div>
+<div class="txt">inverted-triangle</div>
 </td>
 <td>
 <div class="spriteimage pyramid"></div>
-<div class="txt">e-pyramid</div>
+<div class="txt">pyramid</div>
 </td>
 <td>
 <div class="spriteimage inverted-pyramid"></div>
-<div class="txt">e-inverted-pyramid</div>
+<div class="txt">inverted-pyramid</div>
 </td>
 <td>
 <div class="spriteimage comments"></div>
-<div class="txt">e-comments</div>
+<div class="txt">comments</div>
 </td>
 <td>
 <div class="spriteimage folder"></div>
-<div class="txt">e-folder</div>
+<div class="txt">folder</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage folder_01"></div>
-<div class="txt">e-folder_01</div>
+<div class="txt">folder_01</div>
 </td>
 <td>
 <div class="spriteimage folder-open"></div>
-<div class="txt">e-folder-open</div>
+<div class="txt">folder-open</div>
 </td>
 <td>
 <div class="spriteimage folder-open_01"></div>
-<div class="txt">e-folder-open_01</div>
+<div class="txt">folder-open_01</div>
 </td>
 <td>
 <div class="spriteimage folder-add"></div>
-<div class="txt">e-folder-add</div>
+<div class="txt">folder-add</div>
 </td>
 <td>
 <div class="spriteimage signal"></div>
-<div class="txt">e-signal</div>
+<div class="txt">signal</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage sort-alpha-desc"></div>
-<div class="txt">e-sort-alpha-desc</div>
+<div class="txt">sort-alpha-desc</div>
 </td>
 <td>
 <div class="spriteimage sort-alpha-desc_01"></div>
-<div class="txt">e-sort-alpha-desc_01</div>
+<div class="txt">sort-alpha-desc_01</div>
 </td>
 <td>
 <div class="spriteimage sort-alpha-asc"></div>
-<div class="txt">e-sort-alpha-asc</div>
+<div class="txt">sort-alpha-asc</div>
 </td>
 <td>
 <div class="spriteimage sort-alpha-asc_01"></div>
-<div class="txt">e-sort-alpha-asc_01</div>
+<div class="txt">sort-alpha-asc_01</div>
 </td>
 <td>
 <div class="spriteimage print"></div>
-<div class="txt">e-print</div>
+<div class="txt">print</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage print_01"></div>
-<div class="txt">e-print_01</div>
+<div class="txt">print_01</div>
 </td>
 <td>
 <div class="spriteimage print_02"></div>
-<div class="txt">e-print_02</div>
+<div class="txt">print_02</div>
 </td>
 <td>
 <div class="spriteimage print_03"></div>
-<div class="txt">e-print_03</div>
+<div class="txt">print_03</div>
 </td>
 <td>
 <div class="spriteimage word"></div>
-<div class="txt">e-word</div>
+<div class="txt">word</div>
 </td>
 <td>
 <div class="spriteimage word_01"></div>
-<div class="txt">e-word_01</div>
+<div class="txt">word_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage word-export"></div>
-<div class="txt">e-word-export</div>
+<div class="txt">word-export</div>
 </td>
 <td>
 <div class="spriteimage pdf"></div>
-<div class="txt">e-pdf</div>
+<div class="txt">pdf</div>
 </td>
 <td>
 <div class="spriteimage pdf_01"></div>
-<div class="txt">e-pdf_01</div>
+<div class="txt">pdf_01</div>
 </td>
 <td>
 <div class="spriteimage pdf-export"></div>
-<div class="txt">e-pdf-export</div>
+<div class="txt">pdf-export</div>
 </td>
 <td>
 <div class="spriteimage excel"></div>
-<div class="txt">e-excel</div>
+<div class="txt">excel</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage excel_01"></div>
-<div class="txt">e-excel_01</div>
+<div class="txt">excel_01</div>
 </td>
 <td>
 <div class="spriteimage excel-export"></div>
-<div class="txt">e-excel-export</div>
+<div class="txt">excel-export</div>
 </td>
 <td>
 <div class="spriteimage powerpoint-export"></div>
-<div class="txt">e-powerpoint-export</div>
+<div class="txt">powerpoint-export</div>
 </td>
 <td>
 <div class="spriteimage ie"></div>
-<div class="txt">e-ie</div>
+<div class="txt">ie</div>
 </td>
 <td>
 <div class="spriteimage exit"></div>
-<div class="txt">e-exit</div>
+<div class="txt">exit</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage document"></div>
-<div class="txt">e-document</div>
+<div class="txt">document</div>
 </td>
 <td>
 <div class="spriteimage documents"></div>
-<div class="txt">e-documents</div>
+<div class="txt">documents</div>
 </td>
 <td>
 <div class="spriteimage question"></div>
-<div class="txt">e-question</div>
+<div class="txt">question</div>
 </td>
 <td>
 <div class="spriteimage film"></div>
-<div class="txt">e-film</div>
+<div class="txt">film</div>
 </td>
 <td>
 <div class="spriteimage volume-up"></div>
-<div class="txt">e-volume-up</div>
+<div class="txt">volume-up</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage circle-one"></div>
-<div class="txt">e-circle-one</div>
+<div class="txt">circle-one</div>
 </td>
 <td>
 <div class="spriteimage circle-two"></div>
-<div class="txt">e-circle-two</div>
+<div class="txt">circle-two</div>
 </td>
 <td>
 <div class="spriteimage circle-three"></div>
-<div class="txt">e-circle-three</div>
+<div class="txt">circle-three</div>
 </td>
 <td>
 <div class="spriteimage circle-four"></div>
-<div class="txt">e-circle-four</div>
+<div class="txt">circle-four</div>
 </td>
 <td>
 <div class="spriteimage arrow-right"></div>
-<div class="txt">e-arrow-right</div>
+<div class="txt">arrow-right</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage arrow-left"></div>
-<div class="txt">e-arrow-left</div>
+<div class="txt">arrow-left</div>
 </td>
 <td>
 <div class="spriteimage arrow-left_01"></div>
-<div class="txt">e-arrow-left_01</div>
+<div class="txt">arrow-left_01</div>
 </td>
 <td>
 <div class="spriteimage arrow-up"></div>
-<div class="txt">e-arrow-up</div>
+<div class="txt">arrow-up</div>
 </td>
 <td>
 <div class="spriteimage arrow-down"></div>
-<div class="txt">e-arrow-down</div>
+<div class="txt">arrow-down</div>
 </td>
 <td>
 <div class="spriteimage arrow-down_01"></div>
-<div class="txt">e-arrow-down_01</div>
+<div class="txt">arrow-down_01</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage sync"></div>
-<div class="txt">e-sync</div>
+<div class="txt">sync</div>
 </td>
 <td>
 <div class="spriteimage sync-disabled"></div>
-<div class="txt">e-sync-disabled</div>
+<div class="txt">sync-disabled</div>
 </td>
 <td>
 <div class="spriteimage paperclip"></div>
-<div class="txt">e-paperclip</div>
+<div class="txt">paperclip</div>
 </td>
 <td>
 <div class="spriteimage paperclip_01"></div>
-<div class="txt">e-paperclip_01</div>
+<div class="txt">paperclip_01</div>
 </td>
 <td>
 <div class="spriteimage circle"></div>
-<div class="txt">e-circle</div>
+<div class="txt">circle</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage circle_01"></div>
-<div class="txt">e-circle_01</div>
+<div class="txt">circle_01</div>
 </td>
 <td>
 <div class="spriteimage th-list"></div>
-<div class="txt">e-th-list</div>
+<div class="txt">th-list</div>
 </td>
 <td>
 <div class="spriteimage th-large"></div>
-<div class="txt">e-th-large</div>
+<div class="txt">th-large</div>
 </td>
 <td>
 <div class="spriteimage th"></div>
-<div class="txt">e-th</div>
+<div class="txt">th</div>
 </td>
 <td>
 <div class="spriteimage th-small"></div>
-<div class="txt">e-th-small</div>
+<div class="txt">th-small</div>
 </td>
 </tr>
 
 <tr>
 <td>
 <div class="spriteimage view-details"></div>
-<div class="txt">e-view-details</div>
+<div class="txt">view-details</div>
 </td>
 <td>
 <div class="spriteimage file-resize-four-direction"></div>
-<div class="txt">e-file-resize-four-direction</div>
+<div class="txt">file-resize-four-direction</div>
 </td>
 <td>
 <div class="spriteimage file-resize-horizontal"></div>
-<div class="txt">e-file-resize-horizontal</div>
+<div class="txt">file-resize-horizontal</div>
 </td>
 </tr>
 </table>
