@@ -875,7 +875,7 @@ argument</td>
 <tr>
 <td class="name">
 value</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
@@ -957,7 +957,7 @@ argument</td>
 <tr>
 <td class="name">
 value</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
@@ -1174,7 +1174,7 @@ argument</td>
 <tr>
 <td class="name">
 value</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
@@ -1254,7 +1254,7 @@ argument</td>
 <tr>
 <td class="name">
 value</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">returns the current value.</td>
 </tr>
 <tr>
