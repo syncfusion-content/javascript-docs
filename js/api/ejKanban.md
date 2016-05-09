@@ -1477,7 +1477,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
                     columns: [
                         { headerText: "Backlog", key: "Open",visible:false},
                         { headerText: "In Progress", key: "InProgress",visible:true },
-                        { headerText: "Testing", key: "Testing" visible:false },
+                        { headerText: "Testing", key: "Testing",visible:false },
                         { headerText: "Done", key: "Close",visible:true }
                     ],
                     keyField: "Status",
@@ -1492,6 +1492,63 @@ Gets or sets an object that indicates to render the Kanban with specified column
  
  {% endhighlight %}
 
+### columns.showAddButton `boolean`
+{:#members:columns-showaddbutton}
+
+Gets or sets an object that indicates to render the Kanban with specified columns to show the add button.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+        <div id="Kanban"></div>
+	    <script type="text/javascript">
+         window.kanbandata = [
+                         { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
+                         { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
+                         { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
+                         { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
+                         { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
+                         { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
+          ];
+          $(function() {
+		        var data = ej.DataManager(window.kanbandata);
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+                    columns: [
+                        { headerText: "Backlog", key: "Open", showAddButton: true },
+                        { headerText: "In Progress", key: "InProgress", showAddButton: true },
+                        { headerText: "Testing", key: "Testing", showAddButton: true },
+                        { headerText: "Done", key: "Close", showAddButton: true }
+                    ],
+                    keyField: "Status",
+                    fields: {
+                        primaryKey: "Id",
+                        content: "Summary",
+                        imageUrl: "ImgUrl"
+                    },
+                    editSettings: {
+                        editItems: [
+                            { field: "Id", editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+                            { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
+                        ],
+                        allowEditing: true,
+                        allowAdding: true
+                    },
+                });
+        });
+    </script>
+ 
+ {% endhighlight %}
+ 
 ### cardSettings `object`
 {:#members:cardsettings}
 
@@ -1729,6 +1786,144 @@ To customize the card border color based on assigned task. Colors and correspond
     });
     </script>
        
+{% endhighlight %}
+
+### customToolbarItems `Array`
+{:#members:customtoolbaritems}
+
+Gets or sets a value that indicates whether to add customToolbarItems within the toolbar to perform any action in the Kanban.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"> </div>
+	    <script id="Delete" type="text/x-jsrender">
+        <a class="e-customdelete  e-icon" />
+        </script>
+     <style type="text/css" class="cssStyles">
+        .e-customdelete:before {
+            content: "\e800";
+            line-height: 26px;
+            min-height: 26px;
+            min-width: 14px;
+            display: inline-block;
+        }
+     </style>
+     <script type="text/javascript">
+        window.kanbandata = [
+            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
+            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
+            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
+            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
+        ];                 
+     $(function() {
+     var data = ej.DataManager(window.kanbandata);
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+                    columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Testing", key: "Testing"},
+                        { headerText: "Done", key: "Close"}
+                    ],
+                    keyField: "Status",
+                    customToolbarItems: [
+					 {
+					     template: "#Delete",
+					 },
+                    ],
+                    allowTitle: true,
+                    fields: {
+                        primaryKey: "Id",
+                        content: "Summary",
+                        imageUrl: "ImgUrl"
+                    },
+                    toolbarClick: function (args) {
+                        if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
+                            var selectedcard = this.element.find(".e-cardselection");
+                            this.deleteCard(selectedcard.attr("id"));
+                        }
+                       
+                    },
+                });
+        });
+    </script>
+    
+{% endhighlight %}
+
+### customToolbarItems.template `string`
+{:#members:customtoolbaritems-template}
+
+Gets the template to render customToolbarItems.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"> </div>
+	    <script id="Delete" type="text/x-jsrender">
+        <a class="e-customdelete  e-icon" />
+        </script>
+     <style type="text/css" class="cssStyles">
+        .e-customdelete:before {
+            content: "\e800";
+            line-height: 26px;
+            min-height: 26px;
+            min-width: 14px;
+            display: inline-block;
+        }
+     </style>
+     <script type="text/javascript">
+        window.kanbandata = [
+            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
+            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
+            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
+            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
+        ];                 
+     $(function() {
+     var data = ej.DataManager(window.kanbandata);
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+                    columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Testing", key: "Testing"},
+                        { headerText: "Done", key: "Close"}
+                    ],
+                    keyField: "Status",
+                    customToolbarItems: [
+					 {
+					     template: "#Delete",
+					 },
+                    ],
+                    allowTitle: true,
+                    fields: {
+                        primaryKey: "Id",
+                        content: "Summary",
+                        imageUrl: "ImgUrl"
+                    },
+                    toolbarClick: function (args) {
+                        if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
+                            var selectedcard = this.element.find(".e-cardselection");
+                            this.deleteCard(selectedcard.attr("id"));
+                        }
+                       
+                    },
+                });
+        });
+    </script>
+    
 {% endhighlight %}
 
 ### cssClass `string`
