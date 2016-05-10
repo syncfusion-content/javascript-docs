@@ -115,7 +115,7 @@ Enables or disables the sorting of suggestion list item. The default sort order 
 
 {% endhighlight %}
 
-### animateType `Boolean`
+### animateType `Enum`
 {:#members:animateType}
 
 Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
