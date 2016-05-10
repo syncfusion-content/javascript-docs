@@ -743,7 +743,7 @@ In the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasourc
 
 I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
 
-N> In remote data, datasource should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
+N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
 The following code example describes the above behavior.
 
