@@ -738,9 +738,11 @@ The following output is displayed as a result of the above code example.
 
 Lookup data source can be bound to [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Data [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") and `text` can be set using [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
+In the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property, we can bound local and remote data.
+
 I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
 
-I> [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") key name must be same.
+N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
 The following code example describes the above behavior.
 
@@ -762,6 +764,8 @@ $(function () {
 		columns : [
 			{ field: "OrderID", isPrimaryKey: true },
 			{ field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: window.employeeView, headerText: "First Name" },
+			         //(or)
+			{ field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees/" }), headerText: "First Name" },
 			{ field: "CustomerID" },
 			{ field: "Freight" },
 			{ field: "ShipCity" }
