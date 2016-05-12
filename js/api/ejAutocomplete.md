@@ -118,12 +118,18 @@ Enables or disables the sorting of suggestion list item. The default sort order 
 ### animateType `Enum`
 {:#members:animateType}
 
+<ts name = "ej.Autocomplete.Animation"/>
+
 Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
 
 <table>
 <tr>
 <th>Name<br/><br/></th>
 <th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>none<br/><br/></td>
+<td>Supports to animation type with none type only.<br/><br/></td>
 </tr>
 <tr>
 <td>slide<br/><br/></td>
