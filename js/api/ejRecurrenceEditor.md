@@ -411,7 +411,7 @@ schObj.recurrenceDateGenerator(recurrenceString,startDate);
             <td class="description">It refers recurrence rule for the recurrence editor.</td>
         </tr>
         <tr>
-            <td class="name">recurrenceRule</td>
+            <td class="name">exDate</td>
             <td class="type">string</td>
             <td class="description">It refers the appointment date of exdate</td>
         </tr>
@@ -462,7 +462,7 @@ Triggers whenever any of the Recurrence Editor’s value is changed.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.RecurrenceEditor.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the Recurrence Editor model</td>
 </tr>
 <tr>
