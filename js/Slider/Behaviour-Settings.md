@@ -11,15 +11,15 @@ documentation: ug
 
 ## Height
 
-By default, **Slider** renders with a height of 14px. You can change the **Slider** height using **height** property. Specify the value for this property in string format.
+By default, **Slider** renders with a height of 14px. You can change the **Slider** height using **height** property.You can specify the value for this property in number or string format.
 
 ## Width
 
-By default, **Slider** widget renders with 100% width. You can customize the width of the Slider using **width** property. Specify the value for this property in string format.
+By default, **Slider** widget renders with 100% width. You can customize the width of the Slider using **width** property.You can specify the value for this property in number or string format.
 
 The following steps explains you on how to configure the **height** and **width** of the **Slider**.
 
-In an HTML page, add a &lt;div&gt; element to render it as a Slider widget.
+In a HTML page, add a &lt;div&gt; element to render it as a Slider widget.
 
 
 {% highlight html %}
@@ -43,11 +43,11 @@ Execute the above code example to render the following output.
 
 ## IncrementStep
 
-This property sets the incremental step value for the **Slider**. When the **Slider** handle slides through mouse or keyboard, it increments / decrements the value based on the step value. By default, when the slider handle is moved, single value increments / decrements. Using **incrementStep** property you can change the increment step value. Data type of this property is number.
+This property sets the incremental step value for the **Slider**. When the **Slider** handle slides through mouse or keyboard, it increments / decrements the value based on the step value. By default, when the slider handle is moved,the increments / decrements value is one. Using **incrementStep** property you can change the increment step value. Data type of this property is number.
 
 The following steps explains you on how to configure the **incrementStep** property.
 
-In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
+In a **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
 
 
 
@@ -82,7 +82,7 @@ This feature prevents you from interacting with the **Slider**. That is you can 
 
 The following steps explain you on how to enable the **readOnly** property.
 
-In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
+In a **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
 
 {% highlight html %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Decimal Places
 
-**decimalPlaces** property specifies number of values allowed after the decimal point.The default value of **decimalPlaces** property is 0 i.e., by default you cannot specify decimal value in NumericTextBox. We need to add this property to allow decimal values.
+**decimalPlaces** property specifies number of values allowed after the decimal point.The default value of **decimalPlaces** property is 0. i.e., By default you cannot specify decimal value in NumericTextBox. We need to add this property to allow decimal values.
 
 ### Configure Decimal Places
 
@@ -43,7 +43,7 @@ The output for **NumericTextBox** with **decimalPlaces** is as follows.
 
 ## Persistence Support
 
-The **NumericTextBox** widgets provides the state maintenance support. You can maintain the previous changes made in the control after a page loads.
+The **NumericTextBox** widgets provides the state maintenance support. You can maintain the previous changes made in the control after a page refresh.
 
 ### Configure Persistence Support 
 
@@ -105,7 +105,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 
         $("#numeric").ejNumericTextbox({
-            value: 10, //value(10) exceeds maxValue(5), so it will returns 5.
+            value: 10, //value(10) exceeds maxValue(5), so it will add the error class.
             minValue: -3,
             maxValue:5,
             enableStrictMode: true
@@ -467,7 +467,7 @@ The output for NumericTextBox after applying **cssClass** is as follows.
 
 The NumericTextBox provides you with rounded corner support whose appearance is different from normal textbox controls.
 
-**Configure Rounded Corner Support**
+###Configure Rounded Corner Support
 
 The following steps explain the implementation of **showRoundedCorner** in **NumericTextBox** .
 

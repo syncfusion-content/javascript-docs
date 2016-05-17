@@ -14,9 +14,9 @@ keywords: TextBoxes, ejTextBoxes, syncfusion, TextBoxes api
 
  NumericTextBox is used to display only numeric values. It has Spin buttons to increase or decrease the values in the Text Box.
 
- CurrencyTextBox is used to display only currency values. it has Spin buttons to increase or decrease the values in the Text Box.
+ CurrencyTextBox is used to display only currency values. It has Spin buttons to increase or decrease the values in the Text Box.
 
- PercentageTextBox control is used to display only percentage values. It has Spin buttons to increase or decrease the values in the Text Box.
+ PercentageTextBox is used to display only percentage values. It has Spin buttons to increase or decrease the values in the Text Box.
 
 
 
@@ -86,7 +86,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-Sets the root CSS class for Accordion theme, which is used customize. 
+Sets the root CSS class for Editors which allow us to customize the appearance. 
 
 
 #### Default Value
@@ -127,7 +127,7 @@ Sets the root CSS class for Accordion theme, which is used customize.
 
 
 
-DecimalPlaces declares the number of digits to be displayed right side of the value.
+Specifies the number of digits that should be allowed after the decimal point.
 
 
 #### Default Value
@@ -168,7 +168,7 @@ DecimalPlaces declares the number of digits to be displayed right side of the va
 
 
 
-Specify the editor control state.
+Specifies the editor control state.
 
 
 #### Default Value
@@ -209,7 +209,7 @@ Specify the editor control state.
 
 
 
-Specify the enablePersistence to editor to save current model value to browser cookies for state maintains
+Specify the enablePersistence to editor to save current editor control value to browser cookies for state maintenance.
 
 
 #### Default Value
@@ -250,7 +250,7 @@ Specify the enablePersistence to editor to save current model value to browser c
 
 
 
-Specify the Right to Left Direction to editor.
+Specifies the Right to Left Direction to editor.
 
 
 #### Default Value
@@ -291,7 +291,7 @@ Specify the Right to Left Direction to editor.
 
 
 
-Strict mode option to restrict entering values defined outside the range in the editor.
+When enableStrictMode true it allows the value outside of the range also but it highlights the textbox with error class,otherwise it internally changed to the correct value.
 
 
 #### Default Value
@@ -324,6 +324,44 @@ Strict mode option to restrict entering values defined outside the range in the 
 </script>{% endhighlight %}
 
 
+### groupSize 'string'
+{:#members:groupSize}
+
+
+
+Specifies the number of digits in each group to the editor.
+
+
+#### Default Value
+
+
+
+
+* Based on the culture.
+
+
+
+
+#Example
+
+
+
+{% highlight html %}
+ 
+	<input id="numeric" type="text" /> 
+ 
+	<input id="currency" type="text" /> 
+ 
+	<input id="percentage" type="text" /> 
+ 
+	<script>
+	//To set groupSize API value during initialization  
+        $("#numeric").ejNumericTextbox({ groupSize:"2" , value:500 });        
+        $("#currency").ejCurrencyTextbox({ groupSize:"2", value:100  });
+        $("#percentage").ejPercentageTextbox({ groupSize:"2", value:505  });                         
+	</script>{% endhighlight %}
+    
+    
 ### groupSeparator `string`
 {:#members:groupseparator}
 
@@ -356,7 +394,7 @@ It provides the options to get the customized character to separate the digits. 
 <input id="percentage" type="text" /> 
  
 <script>
-//To set enableStrictMode API value during initialization  
+//To set groupSeparator API value during initialization  
         $("#numeric").ejNumericTextbox({ groupSeparator: "-", value:5  });   
         $("#currency").ejCurrencyTextbox({ groupSeparator: "-", value:55  });
         $("#percentage").ejPercentageTextbox({ groupSeparator: "-", value:555  });                   
@@ -450,7 +488,7 @@ It allows to define the characteristics of the Editors control. It will helps to
 
 
 
-The Editor value increment or decrement based an increment step value.
+The Editor value increment or decrement based an incrementStep value.
 
 
 #### Default Value
@@ -491,7 +529,8 @@ The Editor value increment or decrement based an increment step value.
 
 
 
-Specifies the Localization info used by the editor.
+Defines the localization culture for editor.
+
 
 
 #### Default Value
@@ -649,6 +688,87 @@ Specifies the name of the editor.
 
 
 
+### negativePattern 'string'
+{:#members:negativepattern}
+
+
+
+
+Specifies the pattern for formatting positive values in editor.We have maintained some standard to define the negative pattern. you have to specify 'n' to place the digit in your pattern.ejTextbox allows you to define a currency or percent symbol where you want to place it.
+
+
+####Default value
+
+
+
+
+
+* Based on the culture
+
+
+
+
+#### Example
+
+
+{% highlight html %} 
+ 	<input id="numeric" type="text" /> 
+
+	<input id="currency" type="text" /> 
+ 
+	<input id="percentage" type="text" /> 
+ 
+	<script>
+	//To set negativePattern API value during initialization 
+	    $("#numeric").ejNumericTextbox({ negativePattern:"( n) , value:-5 });         //output: ( 5)
+        $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
+        $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 minValue:-600 });  //output: -505 $                       
+	</script>{% endhighlight %} 
+    
+    
+    
+    
+
+### positivePattern 'string'
+{:#members:positivepattern}
+
+
+
+
+Specifies the pattern for formatting positive values in editor.We have maintained some standard to define the positive pattern. you have to specify 'n' to place the digit in your pattern.ejTextbox allows you to define a currency or percent symbol where you want to place it.
+
+
+N>NumerictextBox does not support for positive pattern.
+
+
+####Default value
+
+
+
+
+* Based on the culture
+
+
+
+
+#### Example
+
+
+{% highlight html %} 
+ 
+	<input id="currency" type="text" /> 
+ 
+	<input id="percentage" type="text" /> 
+ 
+	<script>
+	//To set positivePattern API value during initialization  
+        $("#percentage").ejPercentageTextbox({ positivePattern:"% n", value:100  });      //% 100
+        $("#currency").ejCurrencyTextbox({ positivePattern:"n $", value:505  });  //505 $                       
+	</script>{% endhighlight %} 
+    
+    
+    
+    
 ### readOnly `boolean`
 {:#members:readonly}
 
@@ -696,7 +816,7 @@ Toggles the readonly state of the editor. When the Editor is readonly it doesn't
 
 
 
-Specify the rounded corner to editor
+Specifies to Change the sharped edges into rounded corner for the Editor.
 
 
 #### Default Value
@@ -804,7 +924,7 @@ Enables decimal separator position validation on type .
 <input id="percentage" type="text" /> 
  
 <script>
-//To set decimalPlaces API value during initialization  
+//To set validateOnType API value during initialization  
         $("#numeric").ejNumericTextbox({ validateOnType: true, value:5  });     
         $("#currency").ejCurrencyTextbox({ validateOnType: true , value:5 });
         $("#percentage").ejPercentageTextbox({ validateOnType: true, value:5  });                        
@@ -947,7 +1067,7 @@ Specifies the value of the editor.
 
 
 
-Specify the watermark text to editor.
+Specifies the watermark text to editor.
 
 
 #### Default Value
