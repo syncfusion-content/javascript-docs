@@ -9,11 +9,15 @@ documentation: ug
 
 # Angular 2
 
-Before getting started with Syncfusion JavaScript for Angular2.0, prepare your application with the official [Angular2 getting started documentation](https://angular.io/docs/ts/latest/quickstart.html).
+Essential JavaScript provides support for Angular 2 framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property defintion easier. 
+
+# Getting Started
+
+Before getting started with Syncfusion JavaScript for Angular 2, prepare your application with the official [Getting Started documentation](https://angular.io/docs/ts/latest/quickstart.html).
 
 ## 1. Preparing the HTML document
 
-Angular2 wrappers for Syncfusion JavaScript controls is available in the file `ej.angular2.js` which can be copied from Syncfusion Build installed location.
+Angular 2 wrappers for Syncfusion JavaScript controls is available in the file `ej.angular2.js` which can be copied from Syncfusion Build installed location.
 
 {% highlight html %}
 
