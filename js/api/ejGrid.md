@@ -4105,7 +4105,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.column `String`
+### stackedHeaderRows.stackedHeaderColumns.column `Object`
 {:#members:stackedheaderrows-stackedheadercolumns-column}
 
 Gets or sets a value that indicates the header text for the particular stacked header column.
@@ -4124,7 +4124,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Frieght",column:["Freight","EmployeeID","OrderDate"]}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
