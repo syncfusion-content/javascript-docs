@@ -136,7 +136,7 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 
 
-You can add the following location in the **URL** path for the background image and to apply styling. 
+You can add the following  **URL** for the background image and to apply styling. 
 
 [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
 
@@ -196,7 +196,7 @@ The following screenshot displays the output when the above code is executed.
 
 ## Set the MinValue, MaxValue and value in Textboxes
 
-You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **MaskEdit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
+You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges.The following code example illustrates how to achieve this.
 
 {% highlight javascript %}
 

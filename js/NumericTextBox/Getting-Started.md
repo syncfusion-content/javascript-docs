@@ -135,7 +135,7 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 
 
-You can add the following location in the **URL** path for the background image and to apply styling. [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
+You can add the following **URL** path for the background image and to apply styling. [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
 
 
 
@@ -193,7 +193,7 @@ The following screenshot displays the output when the above code is executed.
 
 ## Set the MinValue, MaxValue and value in NumericTextBox
 
-You can set the **“minValue”**,**“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **MaskEdit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
+You can set the **“minValue”**,**“maxValue”** and **“value”** in Numeric, Percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges. The following code example illustrates how to achieve this.
 
 {% highlight javascript %}
 
@@ -205,28 +205,28 @@ You can set the **“minValue”**,**“maxValue”** and **“value”** in Num
             // simple Numeric creation
             $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
-                value: 35, // sets value in the numeric
-                minValue: 1, // sets min value for range 
-                maxValue: 10000 // sets max value for range
+                value: 35, // sets value 
+                minValue: 1, // sets min value 
+                maxValue: 10000 // sets max value
             });
             // simple Percentage creation
             $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-                value: 3,// sets value by default 
-                minValue: 5, // sets min value for calculation
-                maxValue: 100// sets max value for calculation
+                value: 3,// sets value  
+                minValue: 5, // sets min value 
+                maxValue: 100// sets max value 
             });
             // simple Currency creation
             $("#amountperum").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", //sets watermark in currency
-                value: 55, // sets value by default
-                minValue: 5,// sets min value for amount
-                maxValue: 55// sets max value for amount
+                value: 55, // sets value  
+                minValue: 5,// sets min value 
+                maxValue: 55// sets max value  
             });
             // simple MaskEdit creation
             $("#mobiNo").ejMaskEdit({
                 watermarkText: "Mobile No", // sets watermark in mask edit
-                maskFormat: "99-999-99999"// sets the mask format in mask edit
+                maskFormat: "99-999-99999"// sets mask format  
             });
             // simple Button creation
             $("#cbill").ejButton({
@@ -261,24 +261,24 @@ You can set the “**strict mode” option** to restrict entering values defined
             // simple Numeric creation
             $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
-                value: 35, // sets value in the numeric
-                minValue: 1, // sets min value for range 
-                maxValue: 10000, // sets max value for range
-                enableStrictMode: true // sets strict mode to True will set the value 
+                value: 35, // sets value  
+                minValue: 1, // sets min value   
+                maxValue: 10000, // sets max value  
+                enableStrictMode: true // sets strict mode to True  
             });
             // simple Percentage creation
             $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-                value: 3, // sets value by default 
-                minValue: 5, // sets min value for calculation
-                maxValue: 100// sets max value for calculation
+                value: 3, // sets value   
+                minValue: 5, // sets min value  
+                maxValue: 100// sets max value  
             });
             // simple Currency creation
             $("#amountperum").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", // sets watermark in currency
-                value: 55, // sets value by default
-                minValue: 5, // sets min value for amount
-                maxValue: 55// sets max value for amount
+                value: 55, // sets value  
+                minValue: 5, // sets min value  
+                maxValue: 55// sets max value  
             });
             // simple MaskEdit creation
             $("#mobiNo").ejMaskEdit({
@@ -307,7 +307,7 @@ You can use events to calculate the total and display the value. You can achieve
 
 {% highlight javascript %}
 
-        // Declares Necessary variable creation 
+        // Declares Necessary variable to create the Application 
         var kmcalc, servtax, amuntperkm;
         $(function () {
             // Refers to the Textboxes customization section
