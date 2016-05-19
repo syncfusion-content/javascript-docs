@@ -243,27 +243,6 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowRowDragAndDrop `Boolean`
-{:#members:allowrowdraganddrop}
-
-Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
-
-#### Default Value:
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %}                     
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowRowDragAndDrop:true
-});
-</script> 
-{% endhighlight %}
-
 ### allowResizeToFit `Boolean`
 {:#members:allowresizetofit}
 
@@ -304,6 +283,27 @@ $("#Grid").ejGrid({
     allowResizing:true,
     allowScrolling:true,
     scrollSettings:{width:300,height:300}
+});
+</script> 
+{% endhighlight %}
+
+### allowRowDragAndDrop `Boolean`
+{:#members:allowrowdraganddrop}
+
+Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}                     
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop:true
 });
 </script> 
 {% endhighlight %}
@@ -505,6 +505,48 @@ queryString: "EmployeeID",
 </script>
 {% endhighlight %}
 
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name="ej.Grid.ClipMode"/>
+
+Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
+
+#### Default Value:
+{:.param}
+* ej.Grid.ClipMode.Clip
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell</td>
+</tr> 
+<tr>
+<td class="name">EllipsisWithTooltip</td>
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
+</tr>   
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
+ });
+</script> {% endhighlight %}
+
 ### columnLayout `enum`
 {:#members:columnlayout}
 
@@ -674,29 +716,6 @@ $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowResizing:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowResizing:false},{field:"ShipCity"}] 
-});
-</script> 
-{% endhighlight %}
-
-### columns.showInColumnChooser `Boolean`
-{:#members:columns-showincolumnchooser}
-
-Used to hide the particular column in column chooser by giving value as false.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-  dataSource:window.gridData,
- showColumnChooser:true,
-    columns:[{field:"OrderID"},{field:"CustomerID",showInColumnChooser:false},{field:"ShipCity"}] 
-});
 });
 </script> 
 {% endhighlight %}
@@ -1307,14 +1326,14 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.isUnbound `Boolean`
-{:#members:columns-isunbound}
+### columns.showInColumnChooser `Boolean`
+{:#members:columns-showincolumnchooser}
 
-Gets or sets a value that indicates whether to bind the column which are not in the datasource
+Used to hide the particular column in column chooser by giving value as false.
 
 #### Default Value:
 {:.param}
-* false
+* true
 
 #### Example
 {:.example}
@@ -1323,7 +1342,9 @@ Gets or sets a value that indicates whether to bind the column which are not in 
 <script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
-  columns:[{field:"OrderID",isUnbound:false},{field:"CustomerID"},{field:"ShipCity",headerText:"ShipCity"}]
+ showColumnChooser:true,
+    columns:[{field:"OrderID"},{field:"CustomerID",showInColumnChooser:false},{field:"ShipCity"}] 
+});
 });
 </script> 
 {% endhighlight %}
@@ -1349,30 +1370,6 @@ $("#Grid").ejGrid({
  dataSource:window.gridData,
  columns:[{field:"OrderID",headerText:"TemplateColumn",template:"<span>{{"{{"}}:EmployeeID{{}}}}</span>"},
           {field:"EmployeeID",headerText:"Employee",template:true,templateID:"#columnTemplate"} ]
-});
-</script>
-{% endhighlight %}
-
-### columns.templateID `String`
-{:#members:columns-templateid}
-
-Gets or sets a value that indicates to add the template as a particular column data .
-
-#### Default Value:
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
-</script>
-<script>
-$("#Grid").ejGrid({
- dataSource:window.gridData,
- columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
 });
 </script>
 {% endhighlight %}
@@ -1445,49 +1442,6 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
      });
-</script> {% endhighlight %}
-
-
-### columns.clipMode `enum`
-{:#members:columns-clipmode}
-
-<ts name="ej.Grid.ClipMode"/>
-
-Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
-
-#### Default Value:
-{:.param}
-* ej.Grid.ClipMode.Clip
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Ellipsis</td>
-<td class="description">Shows ellipsis for the overflown cell.</td>
-</tr>
-<tr>
-<td class="name">Clip</td>
-<td class="description">Truncate the text in the cell</td>
-</tr> 
-<tr>
-<td class="name">EllipsisWithTooltip</td>
-<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
-</tr>   
-</table>
-
-#### Example
-{:.example}
-
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:window.gridData,
-    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
- });
 </script> {% endhighlight %}
 
 ### columns.type `String`
@@ -2724,28 +2678,6 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.enableDropAreaAnimation `Boolean`
-{:#members:groupsettings-enabledropareaanimation}
-
-Gets or sets a value that indicates whether to enable the animation effects to the group drop area
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowGrouping: true,
-   enableDropAreaAnimation:true                        
-});
-</script>            
-{% endhighlight %}
-
 ### groupSettings.enableDropAreaAutoSizing `Boolean`
 {:#members:groupsettings-enabledropareaautosizing}
 
@@ -2879,53 +2811,6 @@ $("#Grid").ejGrid({
     groupSettings:{showToggleButton: true, showUngroupButton:true}
 });
 </script> 
-{% endhighlight %}
-
-### textWrapSettings `Object`
-{:#members:textwrapsettings}
-
-Gets or sets an object that indicates whether to auto wrap the grid header or content or both
-
-### textWrapSettings.wrapMode `enum`
-{:#members:textWrapSettings-wrapmode}
-
-<ts name="ej.Grid.WrapMode"/>
-
-This specifies the grid to apply the auto wrap for grid content or header or both.
-
-#### Default Value:
-{:.param}
-* ej.Grid.WrapMode.Both
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Both</td>
-<td class="description">Auto wrap is applied for both content and header.</td>
-</tr>
-<tr>
-<td class="name">Content</td>
-<td class="description">Auto wrap is applied only for content.</td>
-</tr>  
-<tr>
-<td class="name">Header</td>
-<td class="description">Auto wrap is applied only for header.</td>
-</tr> 
-</table>
-
-#### Example
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowTextWrap: true, 
-   textWrapSettings:{ wrapMode: ej.Grid.WrapMode.Both }                
-});
-</script>
 {% endhighlight %}
 
 ### isResponsive `Boolean`
@@ -3331,6 +3216,332 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### rowDropSettings `Object`
+{:#members:rowdropsettings}
+
+Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
+
+### rowDropSettings.dropTargetID `object`
+{:#members:rowdropsettings-droptargetid}
+
+This specifies the grid to drop the grid rows only at particular target element.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid" }
+});
+</script> 
+{% endhighlight %}
+
+### rowDropSettings.dragMapper `string`
+{:#members:rowdropsettings-dragmapper}
+
+This helps in mapping server-side action when rows are dragged from Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid", dragMapper: "Home/DragHandler" }
+});
+</script> 
+{% endhighlight %}
+
+### rowDropSettings.dropMapper `string`
+{:#members:rowdropsettings-dropmapper}
+
+This helps in mapping server-side action when rows are dropped in Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#DestGrid", dropMapper: "Home/DragHandler" }
+});
+</script> 
+{% endhighlight %}
+
+### searchSettings `Object`
+{:#members:searchsettings}
+
+Gets or sets an object that indicates whether to customize the searching behavior of the grid
+
+### searchSettings.fields `object`
+{:#members:searchsettings-fields}
+
+This specify the grid to search for the value in particular columns that is mentioned in the field.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSearching: true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
+   searchSettings: { fields:["OrderID","CustomerID","EmployeeID"], key:"VINET"}
+});
+</script> 
+{% endhighlight %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+
+This specifies the grid to search the particular data that is mentioned in the key.
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSearching: true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
+   searchSettings: { key:"VINET" }
+});
+</script> 
+{% endhighlight %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+It specifies the grid to search the records based on operator.
+
+**List of enum type operators**
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value:
+{:.param}
+* contains
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSearching: true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
+   searchSettings: { operator:"contains", key:"VINET"}
+});
+</script> 
+{% endhighlight %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+
+It enables or disables case-sensitivity while searching the search key in grid.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSearching: true,
+   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
+   searchSettings: { ignoreCase: true, key:"VINET" }
+});
+</script> 
+{% endhighlight %}
+
+### selectedRecords `Array`
+{:#members:selectedrecords}
+
+Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+});                       
+</script>
+<script>
+// display single or multiple selected records
+$("#Grid").ejGrid("model.selectedRecords")        
+</script>
+{% endhighlight %}
+
+### selectedRowIndex `Number`
+{:#members:selectedrowindex}
+
+Gets or sets a value that indicates to select the row while initializing the grid
+
+#### Default Value:
+{:.param}
+* -1
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    selectedRowIndex:1
+});
+</script> 
+{% endhighlight %}
+
+### selectionSettings `Object`
+{:#members:selectionsettings}
+
+This property is used to configure the selection behavior of the grid.
+
+### selectionSettings.enableToggle `Boolean`
+{:#members:selectionsettings-enabletoggle}
+
+Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:  window.gridData,
+    allowSelection: true,   
+    selectionSettings: {enableToggle: true }
+});
+</script>
+{% endhighlight %}
+
+### selectionSettings.selectionMode `enum`
+{:#members:selectionsettings-selectionmode}
+
+<ts name="ej.Grid.SelectionMode"/>
+
+Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
+
+#### Default Value:
+{:.param}
+* ["row"]
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">Selection is row basis.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">Selection is cell basis.</td>
+</tr>  
+<tr>
+<td class="name">Column</td>
+<td class="description">Selection is column basis.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSelection: true,   
+   selectionSettings: {selectionMode: ["row","cell","column"] }
+});
+</script>
+{% endhighlight %}
+
+### selectionType `enum`
+{:#members:selectiontype}
+
+<ts name="ej.Grid.SelectionType"/>
+
+The row selection behavior of grid. Accepting types are "single" and "multiple".
+
+#### Default Value:
+{:.param}
+* ej.Grid.SelectionType.Single
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Single</td>
+<td class="description">Specifies the selection type as single.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="description">Specifies the selection type as multiple.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   selectionType:"multiple"
+});
+</script> 
+{% endhighlight %}
+
 ### scrollSettings `Object`
 {:#members:scrollsettings}
 
@@ -3528,354 +3739,6 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### searchSettings `Object`
-{:#members:searchsettings}
-
-Gets or sets an object that indicates whether to customize the searching behavior of the grid
-
-### searchSettings.fields `object`
-{:#members:searchsettings-fields}
-
-This specify the grid to search for the value in particular columns that is mentioned in the field.
-
-#### Default Value:
-{:.param}
-* []
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSearching: true,
-   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { fields:["OrderID","CustomerID","EmployeeID"], key:"VINET"}
-});
-</script> 
-{% endhighlight %}
-
-### searchSettings.key `string`
-{:#members:searchsettings-key}
-
-This specifies the grid to search the particular data that is mentioned in the key.
-
-#### Default Value:
-{:.param}
-* ""
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSearching: true,
-   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { key:"VINET" }
-});
-</script> 
-{% endhighlight %}
-
-### searchSettings.operator `string`
-{:#members:searchsettings-operator}
-
-It specifies the grid to search the records based on operator.
-
-**List of enum type operators**
-1. ej.FilterOperators.contain
-2. ej.FilterOperators.equal
-3. ej.FilterOperators.notEqual
-4. ej.FilterOperators.startsWith
-5. ej.FilterOperators.endsWith
-
-#### Default Value:
-{:.param}
-* contains
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSearching: true,
-   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { operator:"contains", key:"VINET"}
-});
-</script> 
-{% endhighlight %}
-
-### searchSettings.ignoreCase `boolean`
-{:#members:searchsettings-ignorecase}
-
-It enables or disables case-sensitivity while searching the search key in grid.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSearching: true,
-   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Search] },
-   searchSettings: { ignoreCase: true, key:"VINET" }
-});
-</script> 
-{% endhighlight %}
-
-### rowDropSettings `Object`
-{:#members:rowdropsettings}
-
-Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
-
-### rowDropSettings.dropTargetID `object`
-{:#members:rowdropsettings-droptargetid}
-
-This specifies the grid to drop the grid rows only at particular target element.
-
-#### Default Value:
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid" }
-});
-</script> 
-{% endhighlight %}
-
-### rowDropSettings.dragMapper `string`
-{:#members:rowdropsettings-dragmapper}
-
-This helps in mapping server-side action when rows are dragged from Grid.
-
-#### Default Value:
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dragMapper: "Home/DragHandler" }
-});
-</script> 
-{% endhighlight %}
-
-### rowDropSettings.dropMapper `string`
-{:#members:rowdropsettings-dropmapper}
-
-This helps in mapping server-side action when rows are dropped in Grid.
-
-#### Default Value:
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dropMapper: "Home/DragHandler" }
-});
-</script> 
-{% endhighlight %}
-
-### selectedRecords `Array`
-{:#members:selectedrecords}
-
-Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
-
-#### Default Value:
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-});                       
-</script>
-<script>
-// display single or multiple selected records
-$("#Grid").ejGrid("model.selectedRecords")        
-</script>
-{% endhighlight %}
-
-### selectedRowIndex `Number`
-{:#members:selectedrowindex}
-
-Gets or sets a value that indicates to select the row while initializing the grid
-
-#### Default Value:
-{:.param}
-* -1
-
-#### Example
-{:.example}
-{% highlight html %} 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:window.gridData,
-    selectedRowIndex:1
-});
-</script> 
-{% endhighlight %}
-
-### selectionSettings `Object`
-{:#members:selectionsettings}
-
-This property is used to configure the selection behavior of the grid.
-
-### selectionSettings.enableToggle `Boolean`
-{:#members:selectionsettings-enabletoggle}
-
-Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
-
-#### Default Value:
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:  window.gridData,
-    allowSelection: true,   
-    selectionSettings: {enableToggle: true }
-});
-</script>
-{% endhighlight %}
-
-### selectionSettings.selectionMode `enum`
-{:#members:selectionsettings-selectionmode}
-
-<ts name="ej.Grid.SelectionMode"/>
-
-Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
-
-#### Default Value:
-{:.param}
-* ["row"]
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Row</td>
-<td class="description">Selection is row basis.</td>
-</tr>
-<tr>
-<td class="name">Cell</td>
-<td class="description">Selection is cell basis.</td>
-</tr>  
-<tr>
-<td class="name">Column</td>
-<td class="description">Selection is column basis.</td>
-</tr> 
-</table>
-
-#### Example
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSelection: true,   
-   selectionSettings: {selectionMode: ["row","cell","column"] }
-});
-</script>
-{% endhighlight %}
-
-### selectionType `enum`
-{:#members:selectiontype}
-
-<ts name="ej.Grid.SelectionType"/>
-
-The row selection behavior of grid. Accepting types are "single" and "multiple".
-
-#### Default Value:
-{:.param}
-* ej.Grid.SelectionType.Single
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Single</td>
-<td class="description">Specifies the selection type as single.</td>
-</tr>
-<tr>
-<td class="name">Multiple</td>
-<td class="description">Specifies the selection type as multiple.</td>
-</tr>  
-</table>
-
-#### Example
-{% highlight html %} 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   selectionType:"multiple"
-});
-</script> 
-{% endhighlight %}
-
-### showAddNewRow `Boolean`
-{:#members:showaddnewrow}
-
-This specifies to add new editable row dynamically at the either top or bottom of the grid.
-
-#### Default Value:
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %} 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-dataSource:window.gridData,
-columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
-editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", showAddNewRow: true },
-});
-</script> 
-{% endhighlight %}
-
 ### showColumnChooser `Boolean`
 {:#members:showcolumnchooser}
 Gets or sets a value that indicates whether to enable column chooser on grid. On enabling feature able to show/hide grid columns
@@ -3893,34 +3756,6 @@ Gets or sets a value that indicates whether to enable column chooser on grid. On
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     showColumnChooser:true                      
-});
-</script>                 
-{% endhighlight %}
-
-### showInColumnChooser `Boolean`
-{:#members:showInColumnChooser}
-Gets or sets a value that indicates whether to show column in column chooser.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-            
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:window.gridData,
-    showColumnChooser:true,
-	columns: [
-                        { field: "OrderID", showInColumnChooser:false,headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right},
-                        { field: "CustomerID", headerText: "Customer ID", width: 80, visible: false },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                        { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right }
-                ]
 });
 </script>                 
 {% endhighlight %}
@@ -4747,6 +4582,53 @@ $("#Grid").ejGrid({
            dataMember: "Freight"
         }]
      }]                                    
+});
+</script>
+{% endhighlight %}
+
+### textWrapSettings `Object`
+{:#members:textwrapsettings}
+
+Gets or sets an object that indicates whether to auto wrap the grid header or content or both
+
+### textWrapSettings.wrapMode `enum`
+{:#members:textWrapSettings-wrapmode}
+
+<ts name="ej.Grid.WrapMode"/>
+
+This specifies the grid to apply the auto wrap for grid content or header or both.
+
+#### Default Value:
+{:.param}
+* ej.Grid.WrapMode.Both
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Auto wrap is applied for both content and header.</td>
+</tr>
+<tr>
+<td class="name">Content</td>
+<td class="description">Auto wrap is applied only for content.</td>
+</tr>  
+<tr>
+<td class="name">Header</td>
+<td class="description">Auto wrap is applied only for header.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowTextWrap: true, 
+   textWrapSettings:{ wrapMode: ej.Grid.WrapMode.Both }                
 });
 </script>
 {% endhighlight %}
