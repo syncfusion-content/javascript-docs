@@ -2258,28 +2258,6 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableFocusout `Boolean`
-{:#members:enablefocusout}
-
-Gets or sets a value that indicates whether to dim out the active colors in the grid indicating the grid has lost focus.
-
-#### Default Value:
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %} 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:window.gridData,    
-    columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
-    enableFocusout: true
-});
-</script> 
-{% endhighlight %}
-
 ### enableHeaderHover `Boolean`
 {:#members:enableheaderhover}
 
