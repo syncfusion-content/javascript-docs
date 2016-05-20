@@ -85,7 +85,17 @@ $("#OlapChart1").ejOlapChart({ cssClass : "gradient-lime" });
 ### commonSeriesOptions `object`
 {:#members:commonseriesoptions}
 
-Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
+Options available to configure the properties of entire series. You can also override the options for specific series by using series collection.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotChart1").ejPivotChart({commonSeriesOptions: {type: ej.PivotChart.ChartTypes.Line}});
+
+{% endhighlight %}
 
 ### currentReport `string`
 {:#members:currentreport}
@@ -299,7 +309,17 @@ $("#OlapChart1").ejOlapChart({ isResponsive: true });
 ### legend `object`
 {:#members:legend}
 
-Options to customize the legend items and legend title.
+Options available to customize the legend items and its title.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotChart1").ejPivotChart({legend: {visible: true}});
+
+{% endhighlight %}
 
 ### locale `string`
 {:#members:locale}
@@ -336,10 +356,30 @@ $("#PivotChart1").ejPivotChart({operationalMode: ej.PivotChart.OperationalMode.S
 
 This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
 
+#### Default Value: {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotChart1").ejPivotChart({ primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 });
+
+{% endhighlight %}
+
 ### primaryYAxis `object`
 {:#members:primaryyaxis}
 
 This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotChart1").ejPivotChart({ title: { text: "Customer Count"} });
+
+{% endhighlight %}
 
 ### rotation `number`
 {:#members:rotation}
@@ -437,6 +477,16 @@ $("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "IninlizeChar
 {:#members:size}
 
 Options to customize the Chart size.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapChart1").ejOlapChart({ size: { height: "450px", width: "95%" } });
+
+{% endhighlight %}
 
 ###  url `string`
 {:#members:url}
