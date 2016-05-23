@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotChart Widget
+title: Properties, Methods and Events of ejOlapChart Widget
 documentation: API
 platform: js
-keywords: ejPivotChart, API, Essential JS PivotChart
+keywords: ejOlapChart, API, Essential JS OlapChart
 metaname: 
 metacontent: 
 ---
 
-# ejPivotChart
+# ejOlapChart
 
-The PivotChart is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
+The OlapChart is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
 
 #### Syntax
 
 {% highlight javascript %}
 
-$(element).ejPivotChart()
+$(element).ejOlapChart()
 
 {% endhighlight %}
 
@@ -25,11 +25,11 @@ $(element).ejPivotChart()
 
 {% highlight html %}
  
-<div id="PivotChart1"></div>
+<div id="OlapChart1"></div>
 
 <script>
-    //Create PivotChart
-    $("#PivotChart1").ejPivotChart(...);
+    //Create OlapChart
+    $("#OlapChart1").ejOlapChart(...);
 </script>
 
 {% endhighlight %}
@@ -46,7 +46,7 @@ $(element).ejPivotChart()
 * module:ej.draggable.js
 * module:ej.waitingpopup.js
 * module:ej.chart.js
-* module:ej.pivotchart.js
+* module:ej.olapchart.js
 
 
 ## Members
@@ -70,7 +70,7 @@ $("#PivotChart1").ejPivotChart({analysisMode: ej.PivotChart.AnalysisMode.Relatio
 ### cssClass `string`
 {:#members:cssclass}
 
-Specifies the CSS class to PivotChart to achieve custom theme.
+Specifies the CSS class to OlapChart to achieve custom theme.
 
 #### Default Value: “”
 
@@ -78,24 +78,14 @@ Specifies the CSS class to PivotChart to achieve custom theme.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ cssClass : "gradient-lime" });
+$("#OlapChart1").ejOlapChart({ cssClass : "gradient-lime" });
 
 {% endhighlight %}
 
 ### commonSeriesOptions `object`
 {:#members:commonseriesoptions}
 
-Options available to configure the properties of entire series. You can also override the options for specific series by using series collection.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions: {type: ej.PivotChart.ChartTypes.Line}});
-
-{% endhighlight %}
+Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
 
 ### currentReport `string`
 {:#members:currentreport}
@@ -272,14 +262,14 @@ Object utilized to pass additional information between client-end and service-en
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ customObject: {"key":"Hello World"} });
+$("#OlapChart1").ejOlapChart({ customObject: {"key":"Hello World"} });
 
 {% endhighlight %}
 
 ### enable3D `boolean`
 {:#members:enable3d}
 
-Allows the user to enable 3D view of PivotChart.
+Allows the user to enable 3D view of OlapChart.
 
 #### Default Value: false
 
@@ -287,14 +277,14 @@ Allows the user to enable 3D view of PivotChart.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ enable3D: true });
+$("#OlapChart1").ejOlapChart({ enable3D: true });
 
 {% endhighlight %}
 
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Allows the user to enable PivotChart’s responsiveness in the browser layout.
+Allows the user to enable OlapChart’s responsiveness in the browser layout.
 
 #### Default Value: false
 
@@ -302,24 +292,14 @@ Allows the user to enable PivotChart’s responsiveness in the browser layout.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ isResponsive: true });
+$("#OlapChart1").ejOlapChart({ isResponsive: true });
 
 {% endhighlight %}
 
 ### legend `object`
 {:#members:legend}
 
-Options available to customize the legend items and its title.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({legend: {visible: true}});
-
-{% endhighlight %}
+Options to customize the legend items and legend title.
 
 ### locale `string`
 {:#members:locale}
@@ -332,7 +312,7 @@ Allows the user to set the localized language for the widget.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ locale: "fr-FR" }); 
+$("#OlapChart1").ejOlapChart({ locale: "fr-FR" }); 
 
 {% endhighlight %}
 
@@ -356,35 +336,15 @@ $("#PivotChart1").ejPivotChart({operationalMode: ej.PivotChart.OperationalMode.S
 
 This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
 
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 });
-
-{% endhighlight %}
-
 ### primaryYAxis `object`
 {:#members:primaryyaxis}
 
 This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
 
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ title: { text: "Customer Count"} });
-
-{% endhighlight %}
-
 ### rotation `number`
 {:#members:rotation}
 
-Allows the user to rotate the angle of PivotChart in 3D view.
+Allows the user to rotate the angle of OlapChart in 3D view.
 
 #### Default Value: 0
 
@@ -392,7 +352,7 @@ Allows the user to rotate the angle of PivotChart in 3D view.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ rotation: 45 }); 
+$("#OlapChart1").ejOlapChart({ rotation: 45 }); 
 
 {% endhighlight %}
 
@@ -408,12 +368,12 @@ Allows the user to set custom name for the methods at service-end, communicated 
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "MyMethod1", drillDown: "MyMethod2"} });
+$("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "MyMethod1", drillDown: "MyMethod2"} });
 
 {% endhighlight %}
 
-### serviceMethodSettings.exportPivotChart `string`
-{:#members:servicemethodsettings-exportPivotChart}
+### serviceMethodSettings.exportOlapChart `string`
+{:#members:servicemethodsettings-exportolapchart}
 
 Allows the user to set the custom name for the service method that’s responsible for exporting.
 
@@ -423,7 +383,7 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight html %}
  
-$("# PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "Export"} });                                  
+$("# OlapChart1").ejOlapChart({ serviceMethodSettings: { exportOlapChart: "Export"} });                                  
 
 {% endhighlight %}
 
@@ -431,7 +391,7 @@ $("# PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "Ex
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for drilling up/down operation in PivotChart.
+Allows the user to set the custom name for the service method that&rsquo;s responsible for drilling up/down operation in OlapChart.
 
 #### Default Value: "DrillChart"
 
@@ -439,7 +399,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {drillDown: "DrillChartMyMethod"} });                                       
+$("#OlapChart1").ejOlapChart({ serviceMethodSettings: {drillDown: "DrillChartMyMethod"} });                                       
 
 {% endhighlight %}
 
@@ -461,7 +421,7 @@ $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "Exp
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing PivotChart.
+Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapChart.
 
 #### Default Value: "InitializeChart"
 
@@ -469,7 +429,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "IninlizeChartMyMethod"} });
+$("#OlapChart1").ejOlapChart({ serviceMethodSettings: {initialize: "IninlizeChartMyMethod"} });
 
  {% endhighlight %}
 
@@ -477,16 +437,6 @@ $("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "IninlizeCh
 {:#members:size}
 
 Options to customize the Chart size.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ size: { height: "450px", width: "95%" } });
-
-{% endhighlight %}
 
 ###  url `string`
 {:#members:url}
@@ -499,7 +449,7 @@ Connects the service using the specified URL for any server updates.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({ url: "/PivotChartService.svc" });
+$("#OlapChart1").ejOlapChart({ url: "/OlapChartService.svc" });
 
 {% endhighlight %}
 
@@ -515,19 +465,19 @@ Perform an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
  
-<div id="PivotChart1"></div> 
+<div id="OlapChart1"></div> 
  
 <script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.olap.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.olap.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
+$('#OlapChart1').ejOlapChart({
+      url: "OlapChartService.svc",
+                animation: true, type: ej.olap.OlapChart.ChartTypes.Column, 
+                       commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column, tooltip: { visible: true} },
                        size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
                        primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
                        load: "loadTheme"
  });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.doAjaxPost("POST", "/PivotChartService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
+var chartObj = $("#OlapChart1").data("ejOlapChart");
+chartObj.doAjaxPost("POST", "/OlapChartService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
 </script>
 
 {% endhighlight %}
@@ -543,33 +493,33 @@ Perform an asynchronous HTTP (FullPost) submit.
 
 {% highlight html %}
 
-<div id="PivotChart1"></div> 
+<div id="OlapChart1"></div> 
  
 <script>
-$('#PivotChart1).ejPivotChart({
-      url: "PivotChartService.svc",
+$('#OlapChart1).ejOlapChart({
+      url: "OlapChartService.svc",
  });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.doPostBack("/PivotChartService.svc/Initialize", {"key", "Hello World"});
+var chartObj = $("#OlapChart1").data("ejOlapChart");
+chartObj.doPostBack("/OlapChartService.svc/Initialize", {"key", "Hello World"});
 </script> 
 
 {% endhighlight %}
 
 
-### exportPivotChart()
-{:#methods:exportpivotchart}
+### exportOlapChart()
+{:#methods:exportolapchart}
 
-Exports the PivotChart to an appropriate format based on the parameter passed.
+Exports the OlapChart to an appropriate format based on the parameter passed.
   
 **Example:**
 
 {% highlight html %}
  
-<div id="PivotChart1"></div> 
+<div id="OlapChart1"></div> 
  
 <script>
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.Excel);
+var chartObj = $("#OlapChart1").data("ejOlapChart");
+chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);
 </script>
 
 {% endhighlight %}
@@ -579,25 +529,25 @@ chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.Excel);
 ### renderChartFromJSON()
 {:#methods:renderchartfromjson}
 
-This function receives the JSON formatted datasource to render the PivotChart control.
+This function receives the JSON formatted datasource to render the OlapChart control.
 
 
 **Example:**
 
 {% highlight html %}
  
-<div id="PivotChart1"></div> 
+<div id="OlapChart1"></div> 
  
 <script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.olap.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.olap.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
+$('#OlapChart1').ejOlapChart({
+      url: "OlapChartService.svc",
+                animation: true, type: ej.olap.OlapChart.ChartTypes.Column, 
+                       commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column, tooltip: { visible: true} },
                        size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
                        primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
                        load: "loadTheme"
  });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
+var chartObj = $("#OlapChart1").data("ejOlapChart");
 chartObj.renderControlFromJSON(this.getJSONRecords());
 </script>
 
@@ -612,18 +562,18 @@ This function receives the update from service-end, which would be utilized for 
 
 {% highlight html %}
  
-<div id="PivotChart1"></div> 
+<div id="OlapChart1"></div> 
  
 <script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.olap.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.olap.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
+$('#OlapChart1').ejOlapChart({
+      url: "OlapChartService.svc",
+                animation: true, type: ej.olap.OlapChart.ChartTypes.Column, 
+                       commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column, tooltip: { visible: true} },
                        size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
                        primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
                        load: "loadTheme"
   });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
+var chartObj = $("#OlapChart1").data("ejOlapChart");
 chartObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
 </script>
 
@@ -650,7 +600,7 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -663,17 +613,17 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -682,8 +632,8 @@ Triggers when it reaches client-side after any AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -702,7 +652,7 @@ Triggers when it reaches client-side after any AJAX request.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    afterServiceInvoke: function (args) {}
 });
 
@@ -712,7 +662,7 @@ $("#PivotChart1").ejPivotChart({
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from PivotChart to service methods.
+Triggers before any AJAX request is passed from OlapChart to service methods.
 
 <table class="params">
 <thead>
@@ -726,7 +676,7 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -739,17 +689,17 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -758,8 +708,8 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -778,7 +728,7 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    beforeServiceInvoke: function (args) {}
 });      
 
@@ -789,7 +739,7 @@ $("#PivotChart1").ejPivotChart({
 ### drillSuccess
 {:#events:drillsuccess}
 
-Triggers when drill up/down happens in PivotChart control.
+Triggers when drill up/down happens in OlapChart control.
 
 <table class="params">
 <thead>
@@ -803,7 +753,7 @@ Triggers when drill up/down happens in PivotChart control.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -820,8 +770,8 @@ Triggers when drill up/down happens in PivotChart control.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -840,7 +790,7 @@ Triggers when drill up/down happens in PivotChart control.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    drillSuccess: function (args) {}
 });
 
@@ -852,7 +802,7 @@ $("#PivotChart1").ejPivotChart({
 ### renderComplete
 {:#events:rendercomplete}
 
-Triggers when PivotChart widget completes all operations at client-side after any AJAX request.
+Triggers when OlapChart widget completes all operations at client-side after any AJAX request.
 
 <table class="params">
 <thead>
@@ -866,7 +816,7 @@ Triggers when PivotChart widget completes all operations at client-side after an
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -879,17 +829,17 @@ Triggers when PivotChart widget completes all operations at client-side after an
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -898,8 +848,8 @@ Triggers when PivotChart widget completes all operations at client-side after an
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -918,7 +868,7 @@ Triggers when PivotChart widget completes all operations at client-side after an
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    renderComplete: function (args) {}
 });     
 
@@ -944,7 +894,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -957,12 +907,12 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">message</td>
@@ -972,7 +922,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -981,8 +931,8 @@ Triggers when any error occurred during AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1001,7 +951,7 @@ Triggers when any error occurred during AJAX request.
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    renderFailure: function (args) {}
 });      
 
@@ -1011,7 +961,7 @@ $("#PivotChart1").ejPivotChart({
 ### renderSuccess
 {:#events:rendersuccess}
 
-Triggers when PivotChart successfully reaches client-side after any AJAX request.
+Triggers when OlapChart successfully reaches client-side after any AJAX request.
 
 <table class="params">
 <thead>
@@ -1025,7 +975,7 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
+<td class="description last">Event parameters from OlapChart
 <table class="params">
 <thead>
 <tr>
@@ -1038,17 +988,17 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
+<td class="description last">return the current action of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
+<td class="description last">return the custom object bounds with OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
+<td class="description last">return the outer HTML of OlapChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1057,8 +1007,8 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
+<td class="type"><ts ref="ej.olap.OlapChart.Model"/>object</td>
+<td class="description last">returns the OlapChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1077,7 +1027,7 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({
+$("#OlapChart1").ejOlapChart({
    renderSuccess: function (args) {}
 });     
 
@@ -1090,7 +1040,7 @@ $("#PivotChart1").ejPivotChart({
 ### SymbolShapes  `enum`
 {:#enum:symbolshapes}
 
-<ts name = "ej.olap.PivotChart.SymbolShapes"/>
+<ts name = "ej.olap.OlapChart.SymbolShapes"/>
 
 Allows the user to set shape for the marker.
 
@@ -1189,7 +1139,7 @@ Allows the user to set shape for the marker.
 
 {% highlight html %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{marker :{ shape: ej.olap.PivotChart.SymbolShapes.LeftArrow} }});
+$("#OlapChart1").ejOlapChart({commonSeriesOptions :{marker :{ shape: ej.olap.OlapChart.SymbolShapes.LeftArrow} }});
 
 {% endhighlight %}
 
@@ -1197,9 +1147,9 @@ $("#PivotChart1").ejPivotChart({commonSeriesOptions :{marker :{ shape: ej.olap.P
 ### ChartTypes `enum`
 {:#enum:charttypes}
 
-<ts name = "ej.olap.PivotChart.ChartTypes"/>
+<ts name = "ej.olap.OlapChart.ChartTypes"/>
 
-Allows the user to set the type for PivotChart.
+Allows the user to set the type for OlapChart.
 
 <table class="params">
     <thead>
@@ -1211,71 +1161,71 @@ Allows the user to set the type for PivotChart.
     <tbody>
         <tr>
             <td class="name">Line</td>
-            <td class="description">To render a Line type PivotChart.</td>
+            <td class="description">To render a Line type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Spline</td>
-            <td class="description">To render a Spline type PivotChart.</td>
+            <td class="description">To render a Spline type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Column</td>
-            <td class="description">To render a Column type PivotChart.</td>
+            <td class="description">To render a Column type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Area</td>
-            <td class="description">To render an Area type PivotChart.</td>
+            <td class="description">To render an Area type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">SplineArea</td>
-            <td class="description">To render a SplineArea type PivotChart.</td>
+            <td class="description">To render a SplineArea type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">StepLine</td>
-            <td class="description">To render a StepLine type PivotChart.</td>
+            <td class="description">To render a StepLine type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">StepArea</td>
-            <td class="description">To render a StepArea type PivotChart.</td>
+            <td class="description">To render a StepArea type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Pie</td>
-            <td class="description">To render a Pie type PivotChart.</td>
+            <td class="description">To render a Pie type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Bar</td>
-            <td class="description">To render a Bar type PivotChart.</td>
+            <td class="description">To render a Bar type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">StackingArea</td>
-            <td class="description">To render a StackingArea type PivotChart.</td>
+            <td class="description">To render a StackingArea type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">StackingColumn</td>
-            <td class="description">To render a StackingColumn type PivotChart.</td>
+            <td class="description">To render a StackingColumn type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">StackingBar</td>
-            <td class="description">To render a StackingBar type PivotChart.</td>
+            <td class="description">To render a StackingBar type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Pyramid</td>
-            <td class="description">To render a Pyramid type PivotChart.</td>
+            <td class="description">To render a Pyramid type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Funnel</td>
-            <td class="description">To render a Funnel type PivotChart.</td>
+            <td class="description">To render a Funnel type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Doughnut</td>
-            <td class="description">To render a Doughnut type PivotChart.</td>
+            <td class="description">To render a Doughnut type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Scatter</td>
-            <td class="description">To render a Scatter type PivotChart.</td>
+            <td class="description">To render a Scatter type OlapChart.</td>
         </tr>
         <tr>
             <td class="name">Bubble</td>
-            <td class="description">To render a Bubble type PivotChart.</td>
+            <td class="description">To render a Bubble type OlapChart.</td>
         </tr>
     </tbody>
 </table>
@@ -1284,16 +1234,16 @@ Allows the user to set the type for PivotChart.
 
 {% highlight html %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{ type: ej.olap.PivotChart.ChartTypes.Column} });
+$("#OlapChart1").ejOlapChart({commonSeriesOptions :{ type: ej.olap.OlapChart.ChartTypes.Column} });
 
 {% endhighlight %}
 
 ### ExportOption  `enum`
 {:#enum:exportoption }
 
-<ts name = "ej.olap.PivotChart.ExportOptions"/>
+<ts name = "ej.olap.OlapChart.ExportOptions"/>
 
-Allows the user to export PivotChart to an appropriate format based on the parameter passed.
+Allows the user to export OlapChart to an appropriate format based on the parameter passed.
 
 <table class="params">
     <thead>
@@ -1305,39 +1255,39 @@ Allows the user to export PivotChart to an appropriate format based on the param
     <tbody>
         <tr>
             <td class="name">Excel</td>
-            <td class="description">To export PivotChart in Excel format.</td>
+            <td class="description">To export OlapChart in Excel format.</td>
         </tr>
         <tr>
             <td class="name">Word</td>
-            <td class="description">To export PivotChart in Word format.</td>
+            <td class="description">To export OlapChart in Word format.</td>
         </tr>
         <tr>
             <td class="name">PDF</td>
-            <td class="description">To export PivotChart in PDF format.</td>
+            <td class="description">To export OlapChart in PDF format.</td>
         </tr>
         <tr>
             <td class="name">CSV</td>
-            <td class="description">To export PivotChart in CSV format.</td>
+            <td class="description">To export OlapChart in CSV format.</td>
         </tr>
         <tr>
             <td class="name">PNG</td>
-            <td class="description">To export PivotChart in PNG format.</td>
+            <td class="description">To export OlapChart in PNG format.</td>
         </tr>
         <tr>
             <td class="name">JPG</td>
-            <td class="description">To export PivotChart in JPG format.</td>
+            <td class="description">To export OlapChart in JPG format.</td>
         </tr>
         <tr>
             <td class="name">EMF</td>
-            <td class="description">To export PivotChart in EMF format.</td>
+            <td class="description">To export OlapChart in EMF format.</td>
         </tr>
         <tr>
             <td class="name">GIF</td>
-            <td class="description">To export PivotChart in GIF format.</td>
+            <td class="description">To export OlapChart in GIF format.</td>
         </tr>
         <tr>
             <td class="name">BMP</td>
-            <td class="description">To export PivotChart in BMP format.</td>
+            <td class="description">To export OlapChart in BMP format.</td>
         </tr>
     </tbody>
 </table>
@@ -1346,6 +1296,6 @@ Allows the user to export PivotChart to an appropriate format based on the param
 
 {% highlight html %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{ exportPivotChart: ej.olap.PivotChart.ExportOptions.Excel } });
+$("#OlapChart1").ejOlapChart({commonSeriesOptions :{ exportOlapChart: ej.olap.OlapChart.ExportOptions.Excel } });
 
 {% endhighlight %}

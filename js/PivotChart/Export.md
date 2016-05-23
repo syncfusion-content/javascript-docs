@@ -3,13 +3,13 @@ layout: post
 title: Export
 description: export
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 #Exporting
 
-The OlapChart control can be exported to the following file formats.
+The PivotChart control can be exported to the following file formats.
 
 * Excel
 * Word
@@ -17,7 +17,7 @@ The OlapChart control can be exported to the following file formats.
 * CSV
 * Image
 
-The additional script files required for exporting OlapChart are mentioned below:
+The additional script files required for exporting PivotChart are mentioned below:
 
 * rgbcolor.js 
 * StackBlur.js 
@@ -36,7 +36,7 @@ These files are referred under the <head> tag in HTML page.
 
 {% endhighlight %}
 
-The OlapChart control can be exported by invoking **“exportOlapChart”** method, with an appropriate export option as parameter.
+The PivotChart control can be exported by invoking **“exportPivotChart”** method, with an appropriate export option as parameter.
 
 
 {% highlight html %}
@@ -46,14 +46,14 @@ The OlapChart control can be exported by invoking **“exportOlapChart”** meth
 
 <body> 
     //...
-    <div id="OlapChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
     <button id="exportBtn">Export</button>
     <script type="text/javascript">
         $(function()
         {
-            $("#OlapChart1").ejOlapChart(
+            $("#PivotChart1").ejPivotChart(
             {
-                url: "../wcf/OlapChartService.svc"
+                url: "../wcf/PivotChartService.svc"
                     //...
             });
             $("#exportBtn").ejButton(
@@ -64,9 +64,9 @@ The OlapChart control can be exported by invoking **“exportOlapChart”** meth
 
         function exportBtnClick(args)
         {
-            var chartObj = $('#OlapChart1').data("ejOlapChart");
+            var chartObj = $('#PivotChart1').data("ejPivotChart");
             //Provide an appropriate export option as parameter.
-            chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);
+            chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.Excel);
         }
     </script>
 </body>
@@ -84,7 +84,7 @@ public void Export() {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     string fileName = "Sample";
-    htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+    htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}
@@ -98,27 +98,27 @@ public void Export(Stream stream) {
     string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     string fileName = "Sample";
-    htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+    htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}
 
 
 ##Excel Export
-User can export contents of the OlapChart to Excel document for future archival, references and analysis purposes. To achieve Excel export, we need to add the following dependency libraries into the application.
+User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes. To achieve Excel export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
 
-For Excel export, **“ej.olap.OlapChart.ExportOptions.Excel”** enumeration value is sent as the parameter.
+For Excel export, **“ej.olap.PivotChart.ExportOptions.Excel”** enumeration value is sent as the parameter.
 
 {% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#OlapChart1').data("ejOlapChart ");
-        //Setting export option as Excel in the exportOlapChart method
-        chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+        //Setting export option as Excel in the exportPivotChart method
+        chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.Excel);
 }
 
 {% endhighlight %}  
@@ -126,20 +126,20 @@ function exportBtnClick(args)
 ![](Export_images/Export_img1.png)
 
 ##Word Export
-User can export contents of the OlapChart to Word document for future archival, references and analysis purposes. To achieve Word export, we need to add the following dependency libraries into the application.
+User can export contents of the PivotChart to Word document for future archival, references and analysis purposes. To achieve Word export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.DocIo.Base
 
-For Word export, **“ej.olap.OlapChart.ExportOptions.Word”** enumeration value is sent as the parameter.
+For Word export, **“ej.olap.PivotChart.ExportOptions.Word”** enumeration value is sent as the parameter.
 
 {% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#OlapChart1').data("ejOlapChart ");
-        //Setting export option as Word in the exportOlapChart method
-        chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Word);
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+        //Setting export option as Word in the exportPivotChart method
+        chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.Word);
 }
 
 {% endhighlight %}
@@ -147,36 +147,36 @@ function exportBtnClick(args)
 ![](Export_images/Export_img2.png)
 
 ##CSV Export
-User can export contents of the OlapChart to CSV document for future archival, references and analysis purposes.
+User can export contents of the PivotChart to CSV document for future archival, references and analysis purposes.
 
-For CSV export, **“ej.olap.OlapChart.ExportOptions.CSV”** enumeration value is sent as the parameter.
+For CSV export, **“ej.olap.PivotChart.ExportOptions.CSV”** enumeration value is sent as the parameter.
 
 {% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#OlapChart1').data("ejOlapChart ");
-        //Setting export option as CSV in the exportOlapChart method
-        chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.CSV);
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+        //Setting export option as CSV in the exportPivotChart method
+        chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.CSV);
 }
 
 {% endhighlight %}
 
 ##PDF Export
-User can export contents of the OlapChart to PDF document for future archival, references and analysis purposes. To achieve PDF export, we need to add the following dependency libraries into the application.
+User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes. To achieve PDF export, we need to add the following dependency libraries into the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.Pdf.Base
 
-For PDF export, **“ej.olap.OlapChart.ExportOptions.PDF”** enumeration value is sent as the parameter.
+For PDF export, **“ej.olap.PivotChart.ExportOptions.PDF”** enumeration value is sent as the parameter.
 
 {% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#OlapChart1').data("ejOlapChart ");
-        //Setting export option as PDF in the exportOlapChart method
-        chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.PDF);
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+        //Setting export option as PDF in the exportPivotChart method
+        chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.PDF);
 }
 
 {% endhighlight %} 
@@ -184,7 +184,7 @@ function exportBtnClick(args)
 ![](Export_images/Export_img3.png)
 
 ##Image Export
-User can export contents of the OlapChart to image format for future archival, references and analysis purposes. We can export OlapChart to the following image formats.
+User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
 
 * PNG
 * EMF
@@ -192,15 +192,15 @@ User can export contents of the OlapChart to image format for future archival, r
 * GIF
 * BMP
 
-For EMF export, **“ej.olap.OlapChart.ExportOptions.EMF”** enumeration value is sent as the parameter.
+For EMF export, **“ej.olap.PivotChart.ExportOptions.EMF”** enumeration value is sent as the parameter.
 
 {% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#OlapChart1').data("ejOlapChart ");
-        //Setting export option as EMF in the exportOlapChart method
-        chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.EMF);
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+        //Setting export option as EMF in the exportPivotChart method
+        chartObj.exportPivotChart(ej.olap.PivotChart.ExportOptions.EMF);
 }
 
 {% endhighlight %}  
@@ -219,7 +219,7 @@ public void Export() {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     string fileName = "File name is customized here";
-    htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+    htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}
@@ -233,7 +233,7 @@ public void Export(System.IO.Stream stream) {
     string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     string fileName = " File name is customized here ";
-    htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+    htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}

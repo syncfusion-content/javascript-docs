@@ -3,13 +3,13 @@ layout: post
 title: 3D-Visualization
 description: 3d visualization
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 # 3D Visualization
 
-The OlapChart control allows you to view the Cube information in a 3D view with 5 different chart types such as Bar, Column, Stacking Bar, Stocking Column and Pie.
+The PivotChart control allows you to view the Cube information in a 3D view with 5 different chart types such as Bar, Column, Stacking Bar, Stocking Column and Pie.
 
 ## 3D Column Chart
 
@@ -17,15 +17,15 @@ The OlapChart control allows you to view the Cube information in a 3D view with 
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     commonSeriesOptions:
     {
         //Setting chart type to series
-        type: ej.olap.OlapChart.ChartTypes.Column
+        type: ej.olap.PivotChart.ChartTypes.Column
     },
     rotation: 24,
     size:
@@ -45,15 +45,15 @@ $("#OlapChart1").ejOlapChart(
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     commonSeriesOptions:
     {
         //Setting chart type to series
-        type: ej.olap.OlapChart.ChartTypes.Bar
+        type: ej.olap.PivotChart.ChartTypes.Bar
     },
     rotation: 24,
     size:
@@ -72,15 +72,15 @@ $("#OlapChart1").ejOlapChart(
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     commonSeriesOptions:
     {
         //Setting chart type to series
-        type: ej.olap.OlapChart.ChartTypes.StackingBar
+        type: ej.olap.PivotChart.ChartTypes.StackingBar
     },
     rotation: 24,
     size:
@@ -99,15 +99,15 @@ $("#OlapChart1").ejOlapChart(
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     commonSeriesOptions:
     {
         //Setting chart type to series
-        type: ej.olap.OlapChart.ChartTypes.StackingColumn
+        type: ej.olap.PivotChart.ChartTypes.StackingColumn
     },
     rotation: 24,
     size:
@@ -126,14 +126,14 @@ $("#OlapChart1").ejOlapChart(
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     commonSeriesOptions: {
        //Setting chart type to series
-       type: ej.olap.OlapChart.ChartTypes.Pie
+       type: ej.olap.PivotChart.ChartTypes.Pie
     },
     rotation: 24,
     size: {
@@ -151,9 +151,9 @@ We can rotate the 3D Chart towards left or right by setting an appropriate angle
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart(
+$("#PivotChart1").ejPivotChart(
 {
-    url: "../wcf/OlapChartService.svc",
+    url: "../wcf/PivotChartService.svc",
     //Enable 3D Chart
     enable3D: true,
     //Rotates the 3D Chart

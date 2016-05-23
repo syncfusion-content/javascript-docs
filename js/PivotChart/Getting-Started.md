@@ -3,27 +3,27 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 # Getting Started
 
-##Creating a simple application with OlapChart
+##Creating a simple application with PivotChart
 
-This section covers the information required to create a simple OlapChart bound to OLAP datasource.
+This section covers the information required to create a simple PivotChart bound to OLAP datasource.
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapChart is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience. 
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotChart is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience. 
 
 ###Project Initialization
-Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapChartDemo”**.
+Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotChartDemo”**.
 
 Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **GettingStarted.html**, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
 ###Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a OlapChart widget inside a HTML page are highlighted in an appropriate order as follows,
+The scripts and style sheets that are mandatorily required to render a PivotChart widget inside a HTML page are highlighted in an appropriate order as follows,
 
 1. ej.widgets.all.min.css
 2. jQuery-1.10.2.min.js
@@ -40,7 +40,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-In-order to initialize a OlapChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for OlapChart widget. Then you need to initialize the widget using ejOlapChart method.
+In-order to initialize a PivotChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotChart widget. Then you need to initialize the widget using ejPivotChart method.
 
 {% highlight html %}
 
@@ -48,7 +48,7 @@ In-order to initialize a OlapChart widget, first you need to define a “div” 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>OlapChart - Getting Started</title>
+    <title>PivotChart - Getting Started</title>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
@@ -59,15 +59,15 @@ In-order to initialize a OlapChart widget, first you need to define a “div” 
 <body>
     <form id="form1" runat="server">
         <div>
-            <!--Creating a div tag that acts as a container for ejOlapChart widget.-->
-            <div id="OlapChart" style="height: 350px; width: 100%; overflow: auto"> </div>
+            <!--Creating a div tag that acts as a container for ejPivotChart widget.-->
+            <div id="PivotChart" style="height: 350px; width: 100%; overflow: auto"> </div>
             <script type="text/javascript">
-                //Setting property and initializing ejOlapChart widget.
+                //Setting property and initializing ejPivotChart widget.
                 $(function()
                 {
-                    $("#OlapChart").ejOlapChart(
+                    $("#PivotChart").ejPivotChart(
                     {
-                        url: "../OlapChartService",
+                        url: "../PivotChartService",
                         size:
                         {
                             height: "350px",
@@ -84,29 +84,29 @@ In-order to initialize a OlapChart widget, first you need to define a “div” 
 
 {% endhighlight %}
 
-The “url” property in OlapChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapChart widget as endpoint are WCF and WebAPI.
+The “url” property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotChart widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“../OlapChartService”**. Suppose if you are using WCF service, then the URL would look like **“../OlapChartService.svc”**.
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“../PivotChartService”**. Suppose if you are using WCF service, then the URL would look like **“../PivotChartService.svc”**.
 
 ###WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **OlapChartServiceController.cs**. Finally, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **PivotChartServiceController.cs**. Finally, click **Add.**
 
 Now, WebAPI controller is added into your application successfully with the following file. The utilization of this file will be explained in the following sections.
  
-* OlapChartServiceController.cs
+* PivotChartServiceController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in the demo the controller is named as “PivotChartServiceController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapChartServiceController.cs` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `PivotChartServiceController.cs` file.
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
-    public class OlapChartServiceController: ApiController
+    public class PivotChartServiceController: ApiController
     {
     
     }
@@ -133,7 +133,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `OlapChartServiceController.cs` file.
+The following are the list of namespaces to be added on top of the main class inside `PivotChartServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -144,9 +144,9 @@ using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
 using Syncfusion.JavaScript.Olap;
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
-    public class OlapChartServiceController : ApiController
+    public class PivotChartServiceController : ApiController
     {
 
     }
@@ -156,15 +156,15 @@ namespace OlapChartDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartServiceController.cs` file.
+Now, the connection string to connect OLAP Cube, PivotChart and JavaScriptSerializer instances are created immediately inside the main class in `PivotChartServiceController.cs` file.
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
-    public class OlapChartServiceController: ApiController
+    public class PivotChartServiceController: ApiController
     {
-        OlapChart htmlHelper = new OlapChart();
+        PivotChart htmlHelper = new PivotChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //Other codes
@@ -175,15 +175,15 @@ namespace OlapChartDemo
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside OlapChartServiceController class, found inside `OlapChartServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside PivotChartServiceController class, found inside `PivotChartServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
-    public class OlapChartServiceController: ApiController
+    public class PivotChartServiceController: ApiController
     {
-        OlapChart htmlHelper = new OlapChart();
+        PivotChart htmlHelper = new PivotChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         [System.Web.Http.ActionName("InitializeChart")]
@@ -212,7 +212,7 @@ namespace OlapChartDemo
             string args = HttpContext.Current.Request.Form.GetValues(0)[0];
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             string fileName = "Sample";
-            htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+            htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
         private OlapReport CreateOlapReport()
         {
@@ -259,11 +259,11 @@ public class Global: System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, OlapChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
+Now, PivotChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img9.png"%}
+{% include image.html url="/js/PivotChart/Getting-Started_images/Getting-Started_img9.png"%}
 
 ###WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/js/olapchart/data-binding#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/js/PivotChart/data-binding#wcf).
 
 

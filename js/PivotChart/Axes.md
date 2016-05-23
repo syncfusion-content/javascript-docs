@@ -3,7 +3,7 @@ layout: post
 title: Axes
 description: axes 
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -18,9 +18,9 @@ By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) p
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //...
         primaryYAxis:
         {
@@ -103,9 +103,9 @@ By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) p
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //...
         primaryYAxis:
         {
@@ -129,9 +129,9 @@ Axis visibility can be set by using the [`visible`](/js/api/ejchart#members:prim
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //...
         primaryYAxis:
         {
@@ -153,9 +153,9 @@ By using the [`font`](/js/api/ejchart#members:primaryxaxis-font) property of the
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -182,9 +182,9 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -206,9 +206,9 @@ By using the [`majorGridLines`](/js/api/ejchart#members:primaryxaxis-majorgridli
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -241,9 +241,9 @@ By using the [`majorTickLines`](/js/api/ejchart#members:primaryxaxis-majortickli
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -278,9 +278,9 @@ Axis can be inversed by using the [`isInversed`](/js/api/ejchart#members:primary
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -306,9 +306,9 @@ The [`opposedPosition`](/js/api/ejchart#members:primaryxaxis-opposedposition) pr
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         primaryXAxis:
         {
@@ -335,9 +335,9 @@ When the axis labels overlap with each other based on the Chart dimensions and l
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //... 
         // Avoid overlapping of X-axis labels
         primaryXAxis:

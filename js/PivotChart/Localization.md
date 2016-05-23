@@ -3,17 +3,17 @@ layout: post
 title: Localization
 description: localization 
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 # Localization
 
-## Localization in OlapChart
+## Localization in PivotChart
 
-We can localize the OlapChart controls text with a collection of localized strings using [`ej.olap.OlapChart.locale`](/js/api/ejolapchart#members:locale) for different cultures. By default, the OlapChart control is localized in **“en-US”.**
+We can localize the PivotChart controls text with a collection of localized strings using [`ej.olap.PivotChart.locale`](/js/api/ejPivotChart#members:locale) for different cultures. By default, the PivotChart control is localized in **“en-US”.**
 
-Following code example illustrates on how to localize OlapChart based on **“French”** culture.
+Following code example illustrates on how to localize PivotChart based on **“French”** culture.
 
 {% highlight javascript %}
 
@@ -21,20 +21,20 @@ Following code example illustrates on how to localize OlapChart based on **“Fr
   //...
 
 <body>
-    <!--Create a tag which acts as a container for OlapChart-->
-    <div id="OlapChart1" style="width: 55%; height: 670px;"></div>
+    <!--Create a tag which acts as a container for PivotChart-->
+    <div id="PivotChart1" style="width: 55%; height: 670px;"></div>
     <script type="text/javascript">
         $(function()
         {
-            $("#OlapChart1").ejOlapChart(
+            $("#PivotChart1").ejPivotChart(
             {
-                url: "../wcf/OlapChartService.svc",
+                url: "../wcf/PivotChartService.svc",
                 //....
                 locale: "fr-FR",
                 //....
             });
         });
-        ej.olap.OlapChart.locale["fr-FR"] = {
+        ej.olap.PivotChart.locale["fr-FR"] = {
             Measure: "Mesure",
             Row: "Rangée",
             Column: "Colonne",
@@ -50,7 +50,7 @@ Following code example illustrates on how to localize OlapChart based on **“Fr
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **“French”** culture for OlapChart.
+Following table localizes the in-built keywords to **“French”** culture for PivotChart.
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ Exit</td><td>
 
 ## Localization and Globalization of Cube Info
 
-Content displayed within the OlapChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
 
 * To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
 * To bind the globalized content in PivotGrid control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture. 
