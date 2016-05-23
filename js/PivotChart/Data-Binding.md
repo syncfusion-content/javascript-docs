@@ -3,13 +3,13 @@ layout: post
 title: Data-Binding
 description: data binding
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 # Data Binding 
 
-##Binding OlapChart to Offline Cube
+##Binding PivotChart to Offline Cube
 
 To connect an OLAP Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
 
@@ -20,7 +20,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapChart to Cube in local SQL Server
+##Binding PivotChart to Cube in local SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
@@ -31,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapChart to Cube in online SQL Server
+##Binding PivotChart to Cube in online SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
@@ -43,7 +43,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapChart to Cube in online Mondrian Server
+##Binding PivotChart to Cube in online Mondrian Server
 
 To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
@@ -56,7 +56,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 {% endhighlight %}
 
 
-##Binding OlapChart to Cube in online ActivePivot Server
+##Binding PivotChart to Cube in online ActivePivot Server
 To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -71,24 +71,24 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **OlapChartService.svc**, click Add.
+To add a WCF service in an existing web application, right-click on project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **PivotChartService.svc**, click Add.
 
 Now, WCF service is added into your application successfully with the following files. The utilization of these files are explained in the following sections.
 
-* OlapChartService.svc
-* OlapChartService.svc.cs
-* IOlapChartService.cs
+* PivotChartService.svc
+* PivotChartService.svc.cs
+* IPivotChartService.cs
 
 **Configuring WCF Service Class**
 
-Remove the “DoWork” method present inside both **OlapChartService.svc.cs** and **IOlapChartService.cs** files. Next, add **AspNetCompatibilityRequirements** attribute on top of main class present inside `OlapChartService.svc.cs` and set **“RequirementsMode”** value as **“Allowed”**.
+Remove the “DoWork” method present inside both **PivotChartService.svc.cs** and **IPivotChartService.cs** files. Next, add **AspNetCompatibilityRequirements** attribute on top of main class present inside `PivotChartService.svc.cs` and set **“RequirementsMode”** value as **“Allowed”**.
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapChartService: IOlapChartService
+    public class PivotChartService: IPivotChartService
     {
     
     }
@@ -115,7 +115,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapChartService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `PivotChartService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -125,10 +125,10 @@ using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript.Olap;
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapChartService: IOlapChartService
+    public class PivotChartService: IPivotChartService
     {
     
     }
@@ -137,16 +137,16 @@ namespace OlapChartDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartService.svc.cs` file.
+Now, the connection string to connect OLAP Cube, PivotChart and JavaScriptSerializer instances are created immediately inside the main class in `PivotChartService.svc.cs` file.
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapChartService: IOlapChartService
+    public class PivotChartService: IPivotChartService
     {
-        OlapChart htmlHelper = new OlapChart();
+        PivotChart htmlHelper = new PivotChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //Other codes
@@ -157,14 +157,14 @@ namespace OlapChartDemo
 
 **Service methods in WCF Service**
 
-First, define the service methods inside IOlapChartService interface, found in `IOlapChartService.cs` file, created while adding WCF Service to your Web Application.
+First, define the service methods inside IPivotChartService interface, found in `IPivotChartService.cs` file, created while adding WCF Service to your Web Application.
 
  {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
     [ServiceContract]
-    public interface IOlapChartService
+    public interface IPivotChartService
     {
         [OperationContract]
         Dictionary < string, object > InitializeChart(string action, string customObject);
@@ -177,26 +177,26 @@ namespace OlapChartDemo
 
 {% endhighlight %}
 
-Secondly, elaborate the service methods inside the main class, found in `OlapChartService.svc.cs` file
+Secondly, elaborate the service methods inside the main class, found in `PivotChartService.svc.cs` file
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotChartDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapChartService: IOlapChartService
+    public class PivotChartService: IPivotChartService
     {
-        OlapChart htmlHelper = new OlapChart();
+        PivotChart htmlHelper = new PivotChart();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        //This method provides the required information from server-side to initialize the OlapChart.
+        //This method provides the required information from server-side to initialize the PivotChart.
         public Dictionary < string, object > InitializeChart(string action, string customObject)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(CreateOlapReport());
                 return htmlHelper.GetJsonData(action, DataManager);
             }
-            //This method provides the required information from server-side while the drill up or down operation is performed in OlapChart.
+            //This method provides the required information from server-side while the drill up or down operation is performed in PivotChart.
         public Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string customObject)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -204,16 +204,16 @@ namespace OlapChartDemo
                 dynamic customData = serializer.Deserialize < dynamic > (customObject.ToString());
                 return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
             }
-            //This method exports the OlapChart to Excel, word and PDF.
+            //This method exports the PivotChart to Excel, word and PDF.
         public void Export(System.IO.Stream stream)
             {
                 System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
                 string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 string fileName = "Sample";
-                htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+                htmlHelper.ExportPivotChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
             }
-            //This method carries information about the default report rendered within OlapChart initially. 
+            //This method carries information about the default report rendered within PivotChart initially. 
         private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport();
@@ -244,7 +244,7 @@ namespace OlapChartDemo
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapChartService` contract and hence it is `OlapChartDemo.IOlapChartService`.
+* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IPivotChartService` contract and hence it is `PivotChartDemo.IPivotChartService`.
 * **Binding**: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * **behaviorConfiguration**: This property contains the name of the behavior to be used in the endpoint.
 
@@ -256,8 +256,8 @@ The endpointBehaviors are illustrated as follows.
     ......
     ......
     <services>
-        <service name="OlapChartDemo.OlapChartService">
-            <endpoint address="" behaviorConfiguration="OlapChartDemo.OlapChartServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="OlapChartDemo.IOlapChartService" /> 
+        <service name="PivotChartDemo.PivotChartService">
+            <endpoint address="" behaviorConfiguration="PivotChartDemo.PivotChartServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotChartDemo.IPivotChartService" /> 
         </service>
     </services>
 </system.serviceModel>
@@ -271,7 +271,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 <system.serviceModel>
     <behaviors>
         <endpointBehaviors>
-            <behavior name="OlapChartDemo.OlapChartServiceAspNetAjaxBehavior">
+            <behavior name="PivotChartDemo.PivotChartServiceAspNetAjaxBehavior">
                 <enableWebScript /> 
             </behavior>
         </endpointBehaviors>
@@ -282,10 +282,10 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 {% endhighlight %}
 
 
-N> In this example, **“OlapChartDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“OlapChartService”** indicates the name of the WCF service created.
+N> In this example, **“PivotChartDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“PivotChartService”** indicates the name of the WCF service created.
 
-Now, OlapChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
+Now, PivotChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img9.png"%}
+{% include image.html url="/js/PivotChart/Getting-Started_images/Getting-Started_img9.png"%}
 
 

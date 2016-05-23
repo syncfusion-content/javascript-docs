@@ -3,7 +3,7 @@ layout: post
 title: Legend
 description: legend
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -11,15 +11,15 @@ documentation: ug
 
 ##Legend Visibility
 
-You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in OlapChart.
+You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in PivotChart.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             //Legend Visibility 
@@ -34,15 +34,15 @@ $(function()
 ![](Legend_images/Legend_img1.png) 
 
 ##Legend Shape
-You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in OlapChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
+You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in PivotChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -59,15 +59,15 @@ $(function()
 ![](Legend_images/Legend_img2.png) 
 
 ##Legend Position
-By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the OlapChart. Default value of legend position is “bottom”.
+By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the PivotChart. Default value of legend position is “bottom”.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -91,9 +91,9 @@ To add the legend title, you have to specify the title text in [`title.text`](/j
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -118,9 +118,9 @@ You can align the legend to center, far and near based on its position in the Ch
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -143,9 +143,9 @@ By using the legend [`itemStyle.width`](/js/api/ejchart#members:legend-itemstyle
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -176,9 +176,9 @@ By using the [`border`](/js/api/ejchart#members:legend-border) option in legend,
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,
@@ -204,9 +204,9 @@ By using the [`font`](/js/api/ejchart#members:legend-font) option, you can custo
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         legend:
         {
             visible: true,

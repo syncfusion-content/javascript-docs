@@ -3,7 +3,7 @@ layout: post
 title: Appearance
 description: appearance
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ##Built-in Themes
 
-Following are the built-in themes available in the OlapChart.
+Following are the built-in themes available in the PivotChart.
 
 * flatlight
 * flatdark
@@ -30,15 +30,15 @@ Following are the built-in themes available in the OlapChart.
 * gradient-saffron
 * gradient-saffrondark
 
-By using the [`theme`](/js/api/ejchart#members:theme) property, you can set the desired theme in OlapChart. By default, **“Flat Light”** theme is applied to OlapChart.
+By using the [`theme`](/js/api/ejchart#members:theme) property, you can set the desired theme in PivotChart. By default, **“Flat Light”** theme is applied to PivotChart.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //Applying gradient theme
         theme: "gradientlight",
         //....
@@ -49,18 +49,18 @@ $(function()
 
 ![](Appearance_images/themes.png)
 
-##OlapChart - Area Customization
+##PivotChart - Area Customization
 
 ###Border Customization
-To customize the OlapChart border, use [`border`](/js/api/ejchart#members:border) property in OlapChart.
+To customize the PivotChart border, use [`border`](/js/api/ejchart#members:border) property in PivotChart.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //Customize the Chart border and opacity
         border:
         {
@@ -77,15 +77,15 @@ $(function()
 ![](Appearance_images/bordercustomize.png)
 
 ###Margin Customization
-The OlapChart control [`margin`](/js/api/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
+The PivotChart control [`margin`](/js/api/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         //Change Chart margin to left, right, top and bottom.
         margin:
         {
@@ -103,15 +103,15 @@ $(function()
 ![](Appearance_images/margincustomize.png)
 
 ###Background Customization
-The OlapChart control background can be customized by using the [`background`](/js/api/ejchart#members:chartarea-background) property in the Chart area.
+The PivotChart control background can be customized by using the [`background`](/js/api/ejchart#members:chartarea-background) property in the Chart area.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         chartArea:
         {
             //Setting background for Chart area
@@ -132,9 +132,9 @@ By using the [`alternateGridBand`](/js/api/ejchart#members:primaryxaxis-alternat
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         primaryYAxis:
         {
             //....
@@ -158,15 +158,15 @@ $(function()
 ![](Appearance_images/gridbands.png)
 
 ###Animation
-You can enable animation by using the [`enableAnimation`](/js/api/ejchart#members:commonseriesoptions-enableanimation) property under [`commonseriesOptions`](/js/api/ejchart#members:commonseriesoptions) of the OlapChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
+You can enable animation by using the [`enableAnimation`](/js/api/ejchart#members:commonseriesoptions-enableanimation) property under [`commonseriesOptions`](/js/api/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        url: "../wcf/PivotChartService.svc",
         commonSeriesOptions:
         {
             //Enabling animation in series
