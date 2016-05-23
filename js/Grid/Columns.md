@@ -460,10 +460,6 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-<script type="text/x-jsrender" id="columnTemplate">
-<!--The image is referred from this location "http://jsplayground.syncfusion.com/13.2.0.29/themes/web/images/employees/1.png" based on EmployeeID-->
-<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />
-</script>
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -476,9 +472,7 @@ $(function () {
 			pageSize : 4
 		},
 		columns : [
-			{ headerText: "Photo", template: "<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />" },
-						//(or)
-			{ headerText: "Photo", template: true, templateID: "#columnTemplate" />" },
+			{ headerText: "Photo", template: "<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />" },						
 			{ field: "EmployeeID" },
 			{ field: "FirstName" },
 			{ field: "LastName" },
@@ -675,8 +669,7 @@ $(function () {
 				headerText : "Employee Details",
 				commands : [
 					{ type: "details", buttonOptions: { text: "Details", width: "100", click: "onClick" } }
-				],
-				isUnbound : true,
+				],				
 				textAlign : ej.TextAlign.Center,
 				width : 150
 			}
