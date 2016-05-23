@@ -1674,7 +1674,7 @@ $("#Grid").ejGrid({
 ### cssClass `String`
 {:#members:cssclass}
 
-Gets or sets a value that indicates to render the grid with custom theme. allowScrolling &ndash; Gets or sets a value that indicates whether to enable the scrollbar in the grid and view the records by scroll through the grid manually
+Gets or sets a value that indicates to render the grid with custom theme. 
 
 #### Default Value:
 {:.param}
