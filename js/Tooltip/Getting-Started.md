@@ -45,12 +45,12 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
         <meta name="author" content="Syncfusion">
         <title></title>
         <!-- Essential Studio for JavaScript  theme reference -->
-        <link rel="stylesheet" href="http://cdn.syncfusion.com/14.1.0.41/js/web/flat-azure/ej.web.all.min.css" />
+        <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
     
         <!-- Essential Studio for JavaScript  script references -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-        <script src="http://cdn.syncfusion.com/14.1.0.41/js/web/ej.web.all.min.js"> </script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
     
         <!-- Add your custom scripts here -->
     
