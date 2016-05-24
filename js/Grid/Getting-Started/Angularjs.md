@@ -143,9 +143,9 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 
 {% endhighlight %}
 
-N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> 1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
-2. The array properties of Syncfusion widget's in angularjs has to be defined by using the scope variable.
+N> 2.The array properties of Syncfusion widget's in angularjs has to be defined by using the scope variable.
 
 ![](Getting-started_images/Angularimages/Getting-started_img3.png)
 {:.image }
