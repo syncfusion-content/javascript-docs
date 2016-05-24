@@ -1514,3 +1514,322 @@ $("#scrollcontent").ejScroller({
 
 
 
+
+### wheelStart
+{:#events:wheelStart}
+
+
+
+
+Fires when user start to scroll the mouse trackball.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from scroller
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Scroller.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the scroller model</td>
+</tr>
+<tr>
+<td class="name">
+originalEvent</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the original event name of the current event.</td>
+</tr>
+<tr>
+<td class="name">
+scrollData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current data related to the event.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="scrollcontent" style="width:900px;" >
+<p>Model view controller (MVC) is a software architecture pattern which separates the
+representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any
+output representation of data, such as a chart or a diagram. Multiple views of the same data 
+are possible, such as a bar chart for management and a tabular view for accountants. 
+The controller mediates input, converting it to commands for the model or view.The central 
+ideas behind MVC are code reusability and n addition to dividing the application into three 
+kinds of components, the MVC design defines the interactions between them.
+
+<ul>
+<li>
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+It can also send commands to the model to update the model's state (e.g., editing a document).
+</li>
+</ul> 
+</div> 
+ 
+<script>
+//destroy event for scroller
+$("#scrollcontent").ejScroller({
+   wheelStart: function (args) {}
+});  
+</script>     {% endhighlight %}
+
+
+
+
+### wheelMove
+{:#events:wheelMove}
+
+
+
+
+Fires when user move to scroll the mouse trackball.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from scroller
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Scroller.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the scroller model</td>
+</tr>
+<tr>
+<td class="name">
+originalEvent</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the original event name of the current event.</td>
+</tr>
+<td class="name">
+direction</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the trackball scrolling direction. If it returns 1 the wheel moved to the top to bottom direction. And if it returns the -1 the wheel moved the bottom to top direction.</td>
+</tr>
+<tr>
+<tr>
+<td class="name">
+scrollData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current data related to the event.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="scrollcontent" style="width:900px;" >
+<p>Model view controller (MVC) is a software architecture pattern which separates the
+representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any
+output representation of data, such as a chart or a diagram. Multiple views of the same data 
+are possible, such as a bar chart for management and a tabular view for accountants. 
+The controller mediates input, converting it to commands for the model or view.The central 
+ideas behind MVC are code reusability and n addition to dividing the application into three 
+kinds of components, the MVC design defines the interactions between them.
+
+<ul>
+<li>
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+It can also send commands to the model to update the model's state (e.g., editing a document).
+</li>
+</ul> 
+</div> 
+ 
+<script>
+//destroy event for scroller
+$("#scrollcontent").ejScroller({
+   wheelMove: function (args) {}
+});  
+</script>     {% endhighlight %}
+
+
+
+
+### wheelStop
+{:#events:wheelStop}
+
+
+
+
+Fires when user stop to scroll the mouse trackball.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from scroller
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Scroller.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the scroller model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+originalEvent</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the original event name of the current event.</td>
+</tr>
+<td class="name">
+direction</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the trackball scrolling direction. If it returns 1 the wheel moved to the top to bottom direction. And if it returns the -1 the wheel moved the bottom to top direction.</td>
+</tr>
+<tr>
+<tr>
+<td class="name">
+scrollData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current data related to the event.</td>
+</tr>
+<tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="scrollcontent" style="width:900px;" >
+<p>Model view controller (MVC) is a software architecture pattern which separates the
+representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any
+output representation of data, such as a chart or a diagram. Multiple views of the same data 
+are possible, such as a bar chart for management and a tabular view for accountants. 
+The controller mediates input, converting it to commands for the model or view.The central 
+ideas behind MVC are code reusability and n addition to dividing the application into three 
+kinds of components, the MVC design defines the interactions between them.
+
+<ul>
+<li>
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+It can also send commands to the model to update the model's state (e.g., editing a document).
+</li>
+</ul> 
+</div> 
+ 
+<script>
+//destroy event for scroller
+$("#scrollcontent").ejScroller({
+   wheelStop: function (args) {}
+});  
+</script>     {% endhighlight %}
