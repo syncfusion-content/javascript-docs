@@ -1176,7 +1176,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.labels.horizontalAlignment `enum`
 {:#members:connectors-labels-horizontalalignment}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+<ts ref = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the label.
 
@@ -1199,10 +1199,6 @@ Sets the horizontal alignment of the label.
         <tr>
             <td class="name">Right</td>
             <td class="description last">Used to align text horizontally on right side of node/connector</td>
-       </tr>
-       <tr>
-            <td class="name">Stretch</td>
-            <td class="description last">Used to horizontally stretch the label throughout node/connector</td>
        </tr>
    </tbody>
 </table>
@@ -1279,7 +1275,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.labels.mode `enum`
 {:#members:connectors-labels-mode}
 
-<ts name = "ej.datavisualization.Diagram.LabelEditMode"/>
+<ts ref = "ej.datavisualization.Diagram.LabelEditMode"/>
 
 Gets whether the label is currently being edited or not.
 
@@ -1342,7 +1338,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.offset `object`
+### connectors.labels.offset `Object`
 {:#members:connectors-labels-offset}
 
 Sets the fraction/ratio(relative to connector) that defines the position of the label
@@ -1442,7 +1438,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.labels.textAlign `enum`
 {:#members:connectors-labels-textalign}
 
-<ts name = "ej.datavisualization.Diagram.TextAlign"/>
+<ts ref = "ej.datavisualization.Diagram.TextAlign"/>
 	
 Defines how to align the text inside the label.
 
@@ -1491,7 +1487,7 @@ $("#diagramcontent").ejDiagram({ connectors:connectors });
 ### connectors.labels.textDecoration `enum`
 {:#members:connectors-labels-textdecoration}
 
-<ts name = "ej.datavisualization.Diagram.TextDecorations"/>
+<ts ref = "ej.datavisualization.Diagram.TextDecorations"/>
 
 Sets how to decorate the label text.
 
@@ -1545,7 +1541,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.labels.verticalAlignment `enum`
 {:#members:connectors-labels-verticalalignment}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
+<ts ref = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of the label.
 
@@ -1568,10 +1564,6 @@ Sets the vertical alignment of the label.
         <tr>
             <td class="name">Bottom</td>
             <td class="description last">Set vertical alignment as bottom</td>
-       </tr>
-       <tr>
-            <td class="name">Stretch</td>
-            <td class="description last">Set vertical alignment as stretch</td>
        </tr>
    </tbody>
 </table>
@@ -1648,7 +1640,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.labels.wrapping `enum`
 {:#members:connectors-labels-wrapping}
 
-<ts name = "ej.datavisualization.Diagram.TextWrapping"/>
+<ts ref = "ej.datavisualization.Diagram.TextWrapping"/>
 
 Defines how the label text needs to be wrapped.
 
