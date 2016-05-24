@@ -1,0 +1,310 @@
+---
+layout: post
+title: Behavior-Settings
+description: behavior settings
+platform: js
+control: GroupButton
+documentation: ug
+---
+
+# Behavior Settings
+
+GroupButton has some default behavior settings which helps you to perform more operation by inbuilt selection.
+
+## Different modes of button
+
+Group button provides the different types of modes called check box mode, radio button mode. Setting a **groupButtonMode** property value to checkbox mode, we can perform the multiple actions in a single group. In this case, you can toggle the all the buttons state and perform the actions, since it all will behave as individual button in a group of button. 
+
+Setting a ButtonMode to radio, we can perform the only single action with all related actions in a group of button.
+
+Checkbox mode- Here, multiple button can be selected, please check with the below use case for this mode.
+
+{% highlight html %}
+
+
+        <div id="groupButton">
+
+            <ul>
+
+                <li>
+
+                    Daily
+
+                </li>
+
+                <li>
+
+                    Weekly
+
+                </li>
+
+                <li>
+
+                    Monthly
+
+                </li>
+
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+       <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "checkbox",
+
+                width: "215px"
+
+            });
+
+        </script>
+
+{% endhighlight %}
+
+![](Behavior-Settings_images/Behavior-Settings_img1.jpeg)
+
+
+Radio Button Mode: Here, single button only can be selected, Please check with the below use case
+
+{% highlight html %}
+
+
+        <div id="groupButton">
+
+            <ul>
+
+                <li>
+
+                    Credi Card
+
+                </li>
+
+                <li>
+
+                    Debit Card
+
+                </li>
+
+                <li>
+
+                    Net Banking
+
+                </li>
+
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+        <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "radiobutton",
+
+                width: "215px"
+
+            });
+
+        </script>
+
+{% endhighlight %}
+
+![](Behavior-Settings_images/Behavior-Settings_img2.jpeg)
+
+
+## SelectedItemIndex
+
+The state of the button can be changed by clicking on the button. Also the selection state of the button can be achieved by using **selectedItemIndex** API which is used to select the button items in ejGroupButton based on index. 
+
+This property will accept the array values and it’s value will be differ based on current mode of Button. If the Button mode is “Radio”, then the selected items can have single value within the array, since we can select a single button only in this mode. Whereas for the “checkbox” mode, the selectedItemIndex can have the multiple values within an array, since multiple button can be in active state in this mode.
+
+**Setting a selectedItemIndex for checkbox mode:**
+
+{% highlight html %}
+
+        <div id="groupButton">
+
+            <ul>
+
+                <li>
+
+                    Credi Card
+
+                </li>
+
+                <li>
+
+                    Debit Card
+
+                </li>
+
+                <li>
+
+                    Net Banking
+
+                </li>
+
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+**Setting a selectedItemIndex for radio button mode**
+
+{% highlight js %}
+
+        <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "radiobutton",
+
+                width: "215px",
+
+                selectedItemIndex: [1]
+
+            });
+
+        </script>
+
+{% endhighlight %}
+
+![](Behavior-Settings_images/Behavior-Settings_img3.jpeg)
+
+
+**Select and deselect the button items using public method **
+
+Button items in ejGroupButton can be selected or deselected using available public methods “**selectItem**, **deselectItem**”. These two methods will get the index of targeted button as argument. 
+
+Select the Button Items:
+
+{% highlight html %}
+
+        <div id="groupButton">
+
+            <ul>
+
+                <li>
+
+                    Credi Card
+
+                </li>
+
+                <li>
+
+                    Debit Card
+
+                </li>
+
+                <li>
+
+                    Net Banking
+
+                </li>
+
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+        <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "radiobutton",
+
+                width: "300px",
+
+                selectedItemIndex: [1]
+
+            });
+
+            grpbtnObj = $("#groupButton").data("ejGroupButton");
+
+            grpbtnObj.selectItem(0);
+
+        </script>
+
+{% endhighlight %}
+
+Deselect the Button Items:
+
+{% highlight js %}
+
+        <script>
+
+            grpbtnObj = $("#groupButton").data("ejGroupButton");
+
+            grpbtnObj.deselectItem(0);
+
+        </script>
+
+{% endhighlight %}
+
+**Select or deselect using id attribute:** 
+
+You can select or deselect the button items based on id of the button items also. Please check with the below code example to know about the selection/deselection based on id attribute
+
+{% highlight html %}
+
+        <div id="groupButton">
+
+            <ul>
+
+                <li id="payment_option_1">
+
+                    Credi Card
+
+                </li>
+
+                <li id="payment_option_2">
+
+                    Debit Card
+
+                </li>
+
+                <li id="payment_option_2">
+
+                    Net Banking
+
+                </li>
+
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+        <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "checkbox",
+
+                width: "300px",
+
+            });
+
+            grpbtnObj = $("#groupButton").data("ejGroupButton");
+
+            grpbtnObj.selectItem("payment_option_2");
+
+        </script>
+
+{% endhighlight %}
+
