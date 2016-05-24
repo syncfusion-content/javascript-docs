@@ -1180,29 +1180,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 Sets the horizontal alignment of the label.
 
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Left</td>
-            <td class="description last">Used to align text horizontally on left side of node/connector</td>
-       </tr>
-        <tr>
-            <td class="name">Center</td>
-            <td class="description last">Used to align text horizontally on center of node/connector</td>
-       </tr>
-        <tr>
-            <td class="name">Right</td>
-            <td class="description last">Used to align text horizontally on right side of node/connector</td>
-       </tr>
-   </tbody>
-</table>
-
 #### Default Value:
 
 * ej.datavisualization.Diagram.HorizontalAlignment.Center
@@ -1278,25 +1255,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 <ts ref = "ej.datavisualization.Diagram.LabelEditMode"/>
 
 Gets whether the label is currently being edited or not.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Edit</td>
-            <td class="description last">Used to set label edit mode as edit</td>
-       </tr>
-        <tr>
-            <td class="name">View</td>
-            <td class="description last">Used to set label edit mode as view</td>
-       </tr>
-   </tbody>
-</table>
 
 #### Default Value:
 
@@ -1442,29 +1400,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 	
 Defines how to align the text inside the label.
 
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Left</td>
-            <td class="description last">Used to align text on left side of connector</td>
-       </tr>
-        <tr>
-            <td class="name">Center</td>
-            <td class="description last">Used to align text on center of connector</td>
-       </tr>
-        <tr>
-            <td class="name">Right</td>
-            <td class="description last">Used to align text on Right side of connector</td>
-       </tr>
-   </tbody>
-</table>
-
 #### Default Value:
 
 * ej.datavisualization.Diagram.TextAlign.Center
@@ -1490,33 +1425,6 @@ $("#diagramcontent").ejDiagram({ connectors:connectors });
 <ts ref = "ej.datavisualization.Diagram.TextDecorations"/>
 
 Sets how to decorate the label text.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Underline</td>
-            <td class="description last">Used to set text decoration of the label as Underline</td>
-       </tr>
-        <tr>
-            <td class="name">Overline</td>
-            <td class="description last">Used to set text decoration of the label as Overline</td>
-       </tr>
-        <tr>
-            <td class="name">LineThrough</td>
-            <td class="description last">Used to set text decoration of the label as LineThrough</td>
-       </tr>
-        <tr>
-            <td class="name">None</td>
-            <td class="description last">Used to set text decoration of the label as None</td>
-       </tr>
-   </tbody>
-</table>
 
 #### Default Value:
 
@@ -1544,29 +1452,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 <ts ref = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of the label.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Top</td>
-            <td class="description last">Set vertical alignment as top</td>
-       </tr>
-        <tr>
-            <td class="name">Middle</td>
-            <td class="description last">Set vertical alignment as middle</td>
-       </tr>
-        <tr>
-            <td class="name">Bottom</td>
-            <td class="description last">Set vertical alignment as bottom</td>
-       </tr>
-   </tbody>
-</table>
 
 #### Default Value:
 
@@ -1643,29 +1528,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 <ts ref = "ej.datavisualization.Diagram.TextWrapping"/>
 
 Defines how the label text needs to be wrapped.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">NoWrap</td>
-            <td class="description last">Disables wrapping</td>
-       </tr>
-        <tr>
-            <td class="name">Wrap</td>
-            <td class="description last">Enables Line-break at normal word break points</td>
-       </tr>
-        <tr>
-            <td class="name">WrapWithOverflow</td>
-            <td class="description last">Enables Line-break at normal word break points with longer word overflows</td>
-       </tr>
-   </tbody>
-</table>
 
 #### Default Value:
 
@@ -9275,6 +9137,292 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
+### selectedItems.userHandles.backgroundColor `String`
+{:#members:selectedItems-userhandles-backgroundcolor}
+
+Defines the background color of the userhandle
+
+####Default Value:
+
+* "#2382c3"
+
+####Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.backgroundColor = "#4D4D4D";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.borderColor `String`
+{:#members:selectedItems-userhandles-borderColor}
+
+Sets the border color of the userhandle
+
+#### Default Value:
+
+* "transparent"
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.borderColor = "red";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.enableMultiSelection `Boolean`
+{:#members:selectedItems-userhandles-enableMultiSelection}
+
+Enables or disables the multiselection of the userhandle
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.enableMultiSelection = true;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.pathColor `String`
+{:#members:selectedItems-userhandles-pathColor}
+
+Sets the color of the custom shape of userhandle
+
+####Default Value:
+
+* transparent
+
+####Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle"; 
+        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+        cloneHandle.tool = new CloneTool(cloneHandle.name);
+        cloneHandle.pathColor = "white";
+        userHandle.push(cloneHandle);
+        $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.pathData `String`
+{:#members:selectedItems-userhandles-pathData}
+
+Defines the custom shape of the userhandle
+
+####Default Value:
+
+* ""
+
+####Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+        cloneHandle.tool = new CloneTool(cloneHandle.name);
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+      
+### selectedItems.userHandles.position `enum`
+{:#members:selectedItems-userhandles-position}
+
+<ts name = "ej.datavisualization.Diagram.UserHandlePositions "/>
+    
+Defines the position of the userhandle
+    
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">TopLeft</td>
+            <td class="description last">Set the position of the userhandle as topleft</td>
+       </tr>
+        <tr>
+            <td class="name">TopCenter</td>
+            <td class="description last">Set the position of the userhandle as topcenter</td>
+       </tr>
+        <tr>
+            <td class="name">TopRight</td>
+            <td class="description last">Set the position of the userhandle as topright</td>
+       </tr>
+       <tr>
+            <td class="name">MiddleLeft</td>
+            <td class="description last">Set the position of the userhandle as middleleft</td>
+       </tr>
+       <tr>
+            <td class="name">MiddleRight</td>
+            <td class="description last">Set the position of the userhandle as middleright</td>
+       </tr>
+       <tr>
+            <td class="name">BottomLeft</td>
+            <td class="description last">Set the position of the userhandle as bottomleft</td>
+       </tr>
+       <tr>
+            <td class="name">BottomCenter</td>
+            <td class="description last">Set the position of the userhandle as bottomcenter</td>
+       </tr>
+        <tr>
+            <td class="name">BottomRight</td>
+            <td class="description last">Set the position of the userhandle as bottom right</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.UserHandlePositions.BottomCenter
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.position =" middleleft";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.size `Number`
+{:#members:selectedItems-userhandles-size}
+
+Defines the size of the userhandle
+
+#### Default Value:
+
+* 8
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.size = 20;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+
+### selectedItems.userHandles.tool `Object`
+{:#members:selectedItems-userhandles-tool}
+
+Enables/Disables the interactive behaviors of the userhandle
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script> 
+  var CloneTool = (function (base) {
+            ej.datavisualization.Diagram.extend(CloneTool, base);
+            function CloneTool(name) {
+                base.call(this, name);
+                this.singleAction = true;
+                this.clonedNodes = [];
+                this.cursor = "pointer";
+            }
+            CloneTool.prototype.mouseup = function (evt) {
+                    this.diagram.copy();
+                    this.diagram.paste();
+                }
+            }
+            return CloneTool;
+        })(ej.datavisualization.Diagram.ToolBase);
+var userHandle = [];
+var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.name = "cloneHandle";
+cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+cloneHandle.tool =  new CloneTool(cloneHandle.name);;
+userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.visible `Boolean`
+{:#members:selectedItems-userhandles-visible}
+
+Defines the visibility of the userhandle
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.visible = "true";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
 ### selectedItems.width `Number`
 {:#members:selecteditems-width}
 
@@ -9858,315 +10006,6 @@ $("#diagramcontent").ejDiagram({
 	tooltip: {
 		templateId: "mouseovertooltip"
 	} });	
-</script>
-
-{% endhighlight %}
-
-### userHandles `Array`
-{:#members:userhandles}
-
-Specifies the userhandle of the node/connector
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var userHandle= [];
-var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.backgroundColor `String`
-{:#members:userhandles-backgroundcolor}
-
-Defines the background color of the userhandle
-
-####Default Value:
-
-* "#2382c3"
-
-####Example
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.backgroundColor = "#4D4D4D";
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.borderColor `String`
-{:#members:userhandles-borderColor}
-
-Sets the border color of the userhandle
-
-#### Default Value:
-
-* "transparent"
-
-#### Example
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.borderColor = "red";
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-</script>
-
-{% endhighlight %}
-
-### userHandles.enableMultiSelection `Boolean`
-{:#members:userhandles-enableMultiSelection}
-
-Enables or disables the multiselection of the userhandle
-
-#### Default Value:
-
-* false
-
-#### Example
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.enableMultiSelection = true;
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.pathColor `String`
-{:#members:userhandles-pathColor}
-
-Sets the color of the custom shape of userhandle
-
-####Default Value:
-
-* transparent
-
-####Example
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle"; 
-        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
-        cloneHandle.tool = new CloneTool(cloneHandle.name);
-        cloneHandle.pathColor = "white";
-        userHandle.push(cloneHandle);
-        $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.pathData `String`
-{:#members:userhandles-pathData}
-
-Defines the custom shape of the userhandle
-
-####Default Value:
-
-* ""
-
-####Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
-        cloneHandle.tool = new CloneTool(cloneHandle.name);
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-      
-### userHandles.position `enum`
-{:#members:userhandles-position}
-
-<ts name = "ej.datavisualization.Diagram.UserHandlePositions "/>
-    
-Defines the position of the userhandle
-    
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">TopLeft</td>
-            <td class="description last">Set the position of the userhandle as topleft</td>
-       </tr>
-        <tr>
-            <td class="name">TopCenter</td>
-            <td class="description last">Set the position of the userhandle as topcenter</td>
-       </tr>
-        <tr>
-            <td class="name">TopRight</td>
-            <td class="description last">Set the position of the userhandle as topright</td>
-       </tr>
-       <tr>
-            <td class="name">MiddleLeft</td>
-            <td class="description last">Set the position of the userhandle as middleleft</td>
-       </tr>
-       <tr>
-            <td class="name">MiddleRight</td>
-            <td class="description last">Set the position of the userhandle as middleright</td>
-       </tr>
-       <tr>
-            <td class="name">BottomLeft</td>
-            <td class="description last">Set the position of the userhandle as bottomleft</td>
-       </tr>
-       <tr>
-            <td class="name">BottomCenter</td>
-            <td class="description last">Set the position of the userhandle as bottomcenter</td>
-       </tr>
-        <tr>
-            <td class="name">BottomRight</td>
-            <td class="description last">Set the position of the userhandle as bottom right</td>
-       </tr>
-   </tbody>
-</table>
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.UserHandlePositions.BottomCenter
-
-#### Example
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.position =" middleleft";
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.size `Number`
-{:#members:userhandles-size}
-
-Defines the size of the userhandle
-
-#### Default Value:
-
-* 8
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.size = 20;
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-
-### userHandles.tool `Object`
-{:#members:userhandles-tool}
-
-Enables/Disables the interactive behaviors of the userhandle
-
-#### Default Value:
-
-* ""
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script> 
-  var CloneTool = (function (base) {
-            ej.datavisualization.Diagram.extend(CloneTool, base);
-            function CloneTool(name) {
-                base.call(this, name);
-                this.singleAction = true;
-                this.clonedNodes = [];
-                this.cursor = "pointer";
-            }
-            CloneTool.prototype.mouseup = function (evt) {
-                    this.diagram.copy();
-                    this.diagram.paste();
-                }
-            }
-            return CloneTool;
-        })(ej.datavisualization.Diagram.ToolBase);
-var userHandle = [];
-var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.name = "cloneHandle";
-cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
-cloneHandle.tool =  new CloneTool(cloneHandle.name);;
-userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>
-
-{% endhighlight %}
-
-### userHandles.visible `Boolean`
-{:#members:userhandles-visible}
-
-Defines the visibility of the userhandle
-
-#### Default Value:
-
-* true
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
- var userHandle = [];
-        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-        cloneHandle.name = "cloneHandle";
-        cloneHandle.visible = "true";
-        userHandle.push(cloneHandle);
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 </script>
 
 {% endhighlight %}
