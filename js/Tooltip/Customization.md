@@ -5,6 +5,7 @@ description: Customization in Tooltip widget for Syncfusion Essential JS
 platform: js
 control: Tooltip
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget, Tooltip template,
 ---
 
 # Customization
@@ -22,45 +23,28 @@ By default you can add any text or image to the Tooltip. To customize the toolti
     <script type="text/javascript">
         $("#centerImg").ejTooltip(
          {
-             width: "450px",
-             height: "200px",
-             content: '<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" class="logo"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="link"> <div class="author"><b> Author:</b> </div> <div class="category"> Alessandro Del Sole </div></div><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div><div class="rate"><div class="rateDef"> Rate this: </div><input class="rating"></input></div><div class="btnGroup"><button class="button1">Download Now</button> <button class="button2"> Review Comments </button></div><div></div>'
+             width: "350px",
+             content: '<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" width="150px" height="120px"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>'
          });
-        $(".rating").ejRating({ height: "30", allowReset: false, value: 4 });
-        $(".button1").ejButton({ width: "120px", height: "32px", showRoundedCorner: true });
-        $(".button2").ejButton({ width: "135px", height: "32px", showRoundedCorner: true });
     </script>
     <style>
         h4 {
             margin-top: 0px;
             margin-bottom: 2px;
         }
-
+		.e-tooltip-wrap .e-tipContainer .e-tipcontent {
+			padding: 5px 0px;
+		}
         .poster {
             float: left;
-            box-sizing: border-box;
             padding: 4px 0px;
-            width: 150px;
         }
-
         .new {
             text-align: center;
         }
-
         .def {
-            width: 280px;
             float: right;
-            height: 230px;
         }
-
-        .e-tooltip-wrap .e-tipContainer .e-tipcontent {
-            padding: 4px 1px;
-        }
-
-        .e-tooltip-wrap {
-            max-width: 485px;
-        }
-
         .ctrl {
             border: 1px solid #ebebe0;
             width: 150px;
@@ -69,52 +53,18 @@ By default you can add any text or image to the Tooltip. To customize the toolti
             margin-top: 239px;
             margin-left: 250px;
         }
-
         .ctrImg {
             width: 150px;
             height: 160px;
         }
-
-        .logo {
-            float: left;
-            width: 150px;
-            height: 185px;
-        }
-
         .category {
-            float: left;
             margin-left: 10px;
         }
-
-        .link {
-            padding: 2px;
-        }
-
-        .main {
-            width: 440px;
-            height: 190px;
-            box-sizing: border-box;
-        }
-
         .description {
-            width: 290px;
-            margin-top: 20px;
-            height: 60px;
-            background-color: inherit;
-            line-height: 20px;
-        }
-
-        .author {
-            float: left;
-        }
-
-        .rate {
-            height: 50px;
-            clear: both;
-        }
-
-        .e-button {
-            margin-right: 10px;
+            width: 200px;
+			height: 60px;
+			line-height: 22px;
+			margin-top: 10px;
         }
     </style>
     

@@ -5,6 +5,7 @@ description: How To section of Tooltip widget
 platform: JS
 control: Tooltip
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 ---
 
 # How To
@@ -460,51 +461,4 @@ Using this property, Links can be provided in Tooltip content where user can nav
 		});
     </script>
     
-{% endhighlight %}
-
-## Showcase the tooltip programmatically
-
-By default and according to the “trigger” property, Tooltip will be show upon users’ mouse clicks or mouse hovering, focus. In addition to this, you may also manually open or close a Tooltip at anytime with a simple javascript command.
-
-{% highlight html %}
-
-    <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-	</div>
-    
-	<button id="show">Show</button>
-	<button id="hide">Hide</button>
-    
-    <script type="text/javascript">
-	   $(function (){
-           $("#test").ejTooltip(
-    		{
-    		     content: "JavaScript is the programming language of HTML and the Web."
-               
-    		});
-		
-            $("#show").ejButton({
-                size: "large",
-                showRoundedCorner: true,
-                click: "onShow"
-    
-            });
-    		$("#hide").ejButton({
-                size: "large",
-                showRoundedCorner: true,
-                click: "onHide"
-    
-            });
-      
-	   });
-    	function onShow(args){
-    		tip = $("#test").data("ejTooltip");
-    		tip.show();
-    	}
-    	function onHide(args){
-    		tip = $("#test").data("ejTooltip");
-    		tip.hide();
-    	}
-	</script>
- 
 {% endhighlight %}

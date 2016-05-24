@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Tooltip Control
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 ---
 
 # Overview

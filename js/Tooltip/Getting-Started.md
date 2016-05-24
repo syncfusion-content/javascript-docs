@@ -5,6 +5,7 @@ description: How to create the Tooltip
 platform: JS
 control: Tooltip
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 ---
 # Getting started
 

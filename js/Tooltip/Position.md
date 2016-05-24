@@ -5,6 +5,7 @@ description: Positionining support to Tooltip widget for Syncfusion Essential JS
 platform: js
 control: Tooltip
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget, Tooltip position, Tooltip collision
 ---
 
 # Position
