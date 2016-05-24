@@ -167,3 +167,145 @@ bower update syncfusion-javascript
 ~~~
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img10.jpeg)
+
+## Configuring Syncfusion npm Packages
+
+### Overview
+
+npm is the Package Manager for JavaScript. npm makes it easy for JavaScript developers to share and reuse the code and it makes it easy to update the code that you're sharing.
+
+### Syncfusion npm package
+
+Syncfusion JavaScript npm package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as syncfusion-javaScript in the npm registry.
+
+### Syncfusion npm Installation 
+
+To configure the npm,  install the [nodejs](http://nodejs.org/) and update the npm. For more information to configure the npm packages refer the official site of [npm](https://docs.npmjs.com/getting-started/installing-node). 
+
+syncfusion-javascript npm package can be configured in following ways.
+
+1. Using Command prompt
+
+2. Using package.json file.
+
+3. From local directory
+
+#### Using command prompt
+
+Follow the below steps to install Syncfusion JavaScript npm package via command prompt in required web application location.
+
+1. Open project’s location in command prompt window.
+
+2. Run the installation command for npm.
+
+   ~~~
+   npm install syncfusion-javascript
+   ~~~
+
+   ![](Installation-and-Deployment_images/npminstallationsteps_img1.jpeg)
+
+3. npm install the Syncfusion JavaScript assets into the project location to develop with Syncfusion controls.  
+
+N> As per standard Syncfusion used the 3 digit version for npm packages. To install a particular version of npm package, provide the version as suffix of the package name while installing. For instance, run the below command, 
+N> E.g. The below command installs Syncfusion Javascript package of version 14.1.0.46. 
+N> 'npm install Syncfusion-javascript@14.1.46'
+
+#### Using package.json file
+
+Add the Syncfusion JavaScript packages to the package.json by simply specify the package name. This will install/restore the package to the Visual Studio project. Refer the below image.
+
+![](Installation-and-Deployment_images/npminstallationsteps_img2.jpeg)
+
+N> ASP.NET 5 (preview) projects have package.json file by default. Visual Studio project doesn’t have package.json file then, run the below command using the project command prompt.  
+N> 'npm init'
+
+![](Installation-and-Deployment_images/npminstallationsteps_img3.jpeg)
+
+#### From Local Directory
+
+Install the Syncfusion JavaScript npm package from a local directory.
+
+1. Navigate the [Syncfusion JavaScript repository](https://github.com/syncfusion/JavaScript-Widgets) location on GitHub and download the repository as zip by click the “Download ZIP” button and extract the contents in your computer’s any of the local directory.
+
+   ![](Installation-and-Deployment_images/npminstallationsteps_img4.jpeg)
+
+2. Run the install command by providing the package content location.
+
+   ![](Installation-and-Deployment_images/npminstallationsteps_img5.jpeg)
+
+### npm Update
+
+#### Updating global packages
+
+To update the globally installed npm packages, run the below command to update the package by globally.
+
+~~~
+npm install g- syncfusion-javascript
+~~~
+
+![](Installation-and-Deployment_images/npminstallationsteps_img6.jpeg)
+
+### Updating local packages
+
+To update the locally installed npm packages, run the below command to update the package by local location.
+
+~~~
+npm update
+~~~
+
+![](Installation-and-Deployment_images/npminstallationsteps_img7.jpeg)
+
+## Configuring Syncfusion JSPM Packages
+
+### Overview
+
+jspm is a package manager for [SystemJS universal module loader](https://github.com/systemjs/systemjs), built on top of the dynamic [ES6 module loader](https://github.com/ModuleLoader/es6-module-loader). This can load any module format (ES6, AMD, CommonJS and globals) directly from any registry such as npm and GitHub with flat versioned dependency management. Any custom registry endpoints can be created through the Registry API.
+
+### Syncfusion JavaScript JSPM
+
+Syncfusion JavaScript jspm package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as Syncfusion-JavaScript in the npm registry too.
+
+### Syncfusion jspm Installation 
+
+#### Using Command prompt 
+
+Follow the below steps to install Syncfusion JavaScript jspm package via command prompt in required web application location.
+
+1. Open project’s location in command prompt window.
+
+2. A) To install the Syncfusion JavaScript jspm package via github repository.
+
+   ~~~
+   jspm install syncfusion=github:syncfusion/Javascript-Widgets
+   ~~~
+   
+   ![](Installation-and-Deployment_images/jspminstallationsteps_img1.jpeg)
+
+   B) To install the Syncfusion JavaScript jspm package via npm repository.  
+   ~~~
+   jspm install npm:syncfusion-javascript
+   ~~~
+   
+N> As per standard Syncfusion used the 3 digit version for jspm packages. To install a particular version of jspm package, need to provide the version as suffix of the package name while installing. For instance, run the below command,  
+N> E.g. The below command installs Syncfusion Javascript package of version 14.1.0.46.  
+N> 'jspm install syncfusion=github:syncfusion/JavaScript-Widgets@14.1.46'
+
+### jspm Update
+
+To update all the installed packages by using below command.
+
+~~~
+jspm update
+~~~
+
+![](Installation-and-Deployment_images/jspminstallationsteps_img1.jpeg)
+
+To update specific package by using below commands.
+
+~~~
+jspm update npm:syncfusion-javascript
+~~~
+  (Or)
+~~~
+jspm update syncfusion=github:syncfusion/JavaScript-Widgets
+~~~
