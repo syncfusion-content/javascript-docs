@@ -3160,34 +3160,6 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
-Contextmenuitem(ejdiagram:383line):
-{ name: "cut", text: "Cut" },
-            { name: "copy", text: "Copy" },
-            { name: "paste", text: "Paste" },
-            { name: "undo", text: "Undo" },
-            { name: "redo", text: "Redo" },
-            { name: "selectAll", text: "Select All" },
-            {
-                name: "grouping",
-                text: "Grouping",
-                subItems: [
-                    { name: "group", text: "Group" },
-                    { name: "ungroup", text: "Ungroup" }
-                ]
-            },
-            {
-                name: "order",
-                text: "Order",
-                subItems: [
-                    { name: "bringToFront", text: "Bring To Front" },
-                    { name: "moveForward", text: "Move Forward" },
-                    { name: "sendToBack", text: "Send To Back" },
-                    { name: "sendBackward", text: "Send Backward" }
-                ]
-
-
-
-
 ### dataSourceSettings `object`
 {:#members:datasourcesettings}
 
