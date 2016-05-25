@@ -405,8 +405,150 @@ $("#defaultradialmenu").ejRadialMenu({ "imageClass":"e-radialimage" });
  $("#radialmenu").ejRadialMenu ("option", "imageClass");                        
 // Sets the imageClass API
 $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");            
+</script>
+
+{% endhighlight %}
+
+
+
+
+
+### items `object`
+{:#members:items}
+
+
+
+
+Specify the items of radial menu
+
+
+#### Default Value
+
+
+
+* Object
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="defaultradialmenu">
+</div>
+ 
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField", imageUrl:"/Bold.jpg"} }); 
+});
 </script>{% endhighlight %}
 
+
+
+
+
+
+### items.imageUrl `string`
+{:#members:items.imageUrl}
+
+
+
+
+Specify the URL of the frame background image for radial menu item
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="defaultradialmenu">
+</div>
+ 
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ items:{ imageUrl:"/Bold.jpg"} }); 
+});
+</script>{% endhighlight %}
+
+
+
+
+### items.text `string`
+{:#members:items.text}
+
+
+Specifies the text of RadialMenu item. 
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="defaultradialmenu">
+</div>
+ 
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField" } }); 
+});
+</script>{% endhighlight %}
+
+
+
+### items.enabled `boolean`
+{:#members:items.enabled}
+
+
+Specifies the enable state of RadialMenu item. 
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="defaultradialmenu">
+</div>
+ 
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ items:{ enabled:false } }); 
+});
+</script>{% endhighlight %}
 
 
 
