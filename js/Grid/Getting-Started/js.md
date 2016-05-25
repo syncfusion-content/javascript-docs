@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-##Preparing HTML document
+## Preparing HTML document
 
 The grid control has the following list of external JavaScript dependencies. 
 
@@ -119,7 +119,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -151,7 +151,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started_img1.png)
+![](../Getting-started_images/Getting-started_img1.png)
 {:.image }
 
 
@@ -174,7 +174,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img2.png)
+![](../Getting-started_images/Getting-started_img2.png)
 {:.image }
 
 
@@ -203,7 +203,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 N> Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
-![](Getting-started_images/Getting-started_img3.png)
+![](../Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
@@ -228,7 +228,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](http:
     </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img4.png)
+![](../Getting-started_images/Getting-started_img4.png)
 {:.image }
 
 
@@ -252,7 +252,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](http:
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img5.png)
+![](../Getting-started_images/Getting-started_img5.png)
 {:.image }
 
 
@@ -276,7 +276,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img6.png)
+![](../Getting-started_images/Getting-started_img6.png)
 {:.image }
 
 
@@ -311,7 +311,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img7.png)
+![](../Getting-started_images/Getting-started_img7.png)
 {:.image }
 
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-Before we start with the Grid, please refer [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding integrating Syncfusion widget's.
+Before we start with the Grid, please refer [this page](http://help.syncfusion.com/js/angularjs) for general information regarding integrating Syncfusion widget's.
 
 ## Preparing HTML document
 
@@ -27,18 +27,21 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 <!DOCTYPE html>
 <html>
 <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Essential Studio for JavaScript">
-		<meta name="author" content="Syncfusion">
-	    <title></title><!-- Essential Studio for JavaScript  theme reference -->
-	    <link rel="stylesheet" href="http://cdn.syncfusion.com/13.4.0.53/js/web/flat-azure/ej.web.all.min.css" />
-		    <!-- Essential Studio for JavaScript  script references -->
-	    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script> 
-		<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-		<script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.web.all.min.js"> </script>
-		<script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.widget.angular.min.js"> </script>
-			<!-- Add your custom scripts here -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Essential Studio for JavaScript">
+     <meta name="author" content="Syncfusion">
+	 <title></title>
+     <!-- Essential Studio for JavaScript  theme reference -->
+	 <link rel="stylesheet" href="http://cdn.syncfusion.com/13.4.0.53/js/web/flat-azure/ej.web.all.min.css" />
+		    
+     <!-- Essential Studio for JavaScript  script references -->
+	 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script> 
+     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+     <script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.web.all.min.js"> </script>
+     <script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.widget.angular.min.js"> </script>
+	 
+     <!-- Add your custom scripts here -->	
 </head>
 <body>
 </body>
@@ -46,7 +49,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 {% endhighlight %}
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -82,7 +85,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img1.png)
+![](../Getting-started_images/Angularimages/Getting-started_img1.png)
 {:.image }
 
 In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion’s Grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
@@ -111,7 +114,7 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
 
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img2.png)
+![](../Getting-started_images/Angularimages/Getting-started_img2.png)
 {:.image }
 
 
@@ -134,7 +137,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('PagingCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");;
+                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
                 $scope.pageset = { pageSize: 8 };
             });
     </script>
@@ -147,7 +150,7 @@ N> 1.Pager settings can be customized by using the `e-pagesettings-pagesize` pro
 
 N> 2.The array properties of Syncfusion widget's in angularjs has to be defined by using the scope variable.
 
-![](Getting-started_images/Angularimages/Getting-started_img3.png)
+![](../Getting-started_images/Angularimages/Getting-started_img3.png)
 {:.image }
 
 
@@ -163,7 +166,7 @@ N> 2.The array properties of Syncfusion widget's in angularjs has to be defined 
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="FilteringCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowfiltering="true" }>
+    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowfiltering="true">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
@@ -176,7 +179,7 @@ N> 2.The array properties of Syncfusion widget's in angularjs has to be defined 
 
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img4.png)
+![](../Getting-started_images/Angularimages/Getting-started_img4.png)
 {:.image }
 
 ## Enable Grouping
@@ -190,7 +193,7 @@ N> 2.The array properties of Syncfusion widget's in angularjs has to be defined 
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="GroupingCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" }>
+    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
@@ -202,7 +205,7 @@ N> 2.The array properties of Syncfusion widget's in angularjs has to be defined 
 </html>
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img5.png)
+![](../Getting-started_images/Angularimages/Getting-started_img5.png)
 {:.image }
 
 Refer to the following code example for initial grouping.
@@ -229,7 +232,7 @@ Refer to the following code example for initial grouping.
 
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img6.png)
+![](../Getting-started_images/Angularimages/Getting-started_img6.png)
 {:.image }
 
 ## Add Summaries
@@ -248,7 +251,7 @@ Refer to the following code example for initial grouping.
     <script>
         angular.module('listCtrl', ['ejangular'])
        .controller('SummaryCtrl', function ($scope) {
-           $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");;
+           $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
            $scope.grouping = { groupedColumns: ["ItemType"] };
            $scope.summaryRows = [
                             { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Stock", dataMember: "Stock" }] },
@@ -260,7 +263,7 @@ Refer to the following code example for initial grouping.
 
 {% endhighlight %}
 
-![](Getting-started_images/Angularimages/Getting-started_img7.png)
+![](../Getting-started_images/Angularimages/Getting-started_img7.png)
 {:.image }
 
 
