@@ -324,7 +324,7 @@ When enableStrictMode true it allows the value outside of the range also but it 
 </script>{% endhighlight %}
 
 
-### groupSize 'string'
+### groupSize `string`
 {:#members:groupSize}
 
 
@@ -688,7 +688,7 @@ Specifies the name of the editor.
 
 
 
-### negativePattern 'string'
+##### negativepattern `string`
 {:#members:negativepattern}
 
 
@@ -729,7 +729,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
     
     
 
-### positivePattern 'string'
+##### positivepattern `string`
 {:#members:positivepattern}
 
 
