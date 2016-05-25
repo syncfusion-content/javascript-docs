@@ -74,7 +74,7 @@ By passing the jQuery element of the required button to **getIndex** public meth
 
             grpbtnObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.enableItem(1);
+            grpbtnObj.getIndex(id); // id of the element
 
         </script>
 

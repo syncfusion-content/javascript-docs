@@ -12,7 +12,7 @@ documentation: ug
 
 ## A new HTML document and required codes
 
-This section explains you briefly on how to create a EJ GroupButton in your application with JavaScript. To get start with Group Button, create a new HTML file and refer the below specified dependent CSS file as well as scripts files.
+This section explains you briefly on how to create a GroupButton in your application with JavaScript. To get start with GroupButton, create a new HTML file and refer the below specified dependent CSS file as well as scripts files.
 
 **CSS file**
 
@@ -34,7 +34,7 @@ Must be referred always before using all the JS controls.<br/><br/><br/></td></t
 <tr>
 <td>
 **ej.data.min.js**<br/><br/></td><td>
-Must be referred since we have provided the dataSource support to Group Button<br/><br/></td></tr>
+Must be referred since we have provided the dataSource support to GroupButton<br/><br/></td></tr>
 <tr>
 <td>
 **ej.groupbutton.min.js**<br/><br/><br/></td><td>
@@ -69,7 +69,7 @@ A simple html file with required CSS and script reference added to create GroupB
     </head>
 
     <body>
-        <!--Place input element to create Group Button-->
+        <!--Place input element to create GroupButton-->
 
         <script>
 
@@ -86,7 +86,7 @@ A simple html file with required CSS and script reference added to create GroupB
 
 
 
-## Group Button initialization
+## GroupButton initialization
 
 GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in html page,
 
@@ -118,5 +118,5 @@ GroupButton can be created using “div” tag or “span” tag and correspondi
 
 {% endhighlight %}
 
-Also we can use the dataSoruce, to create the Group Button which is explained under the dataSource section in this documentation.
+Also we can use the dataSoruce, to create the GroupButton which is explained under the dataSource section in this documentation.
 

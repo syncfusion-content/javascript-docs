@@ -9,14 +9,14 @@ documentation: ug
 
 # DataSoruce
 
-Group button can populate the button items based on data source and by specifying the associated fields. 
+GroupButton can populate the button items based on data source and by specifying the associated fields. 
 
 Refer the below table to know about the available fields
 
 <table>
 <tr>
 <td>
-Text<br/><br/></td><td>
+text<br/><br/></td><td>
 Text to be displayed in button<br/><br/></td></tr>
 <tr>
 <td>
@@ -53,11 +53,11 @@ It defines the image attributes such as height, width, styles, etc.<br/><br/></t
 </table>
 ## Local Data
 
-To set the local JSON data, define a JSON array and initialize the Group Button with **dataSource** property. Specify the column names in the fields’ property.
+To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.
 
 N> the columns are bounded automatically when the fields are specified with the default names like id, text, etc...
 
-Below is the sample to code to render the Group Button JSON dataSource,
+Below is the sample to code to render the GroupButton JSON dataSource,
 
 {% highlight html %}
 
@@ -101,7 +101,7 @@ Below is the sample to code to render the Group Button JSON dataSource,
 
 ## Remote Data
 
-To bind remote data to the Group Button, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
+To bind remote data to the GroupButton, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
 
 {% highlight js %}
 

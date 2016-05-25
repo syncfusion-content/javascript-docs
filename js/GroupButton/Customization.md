@@ -70,15 +70,15 @@ By default GroupButton has standard height and width. You can change this height
 
 ## ContentType
 
-The content of the **Button** items in GroupButton can have a text and images. Group Button provides the some predefined contentType options to easily customize the appearance of each button associated with GroupButton component without any complex CSS tricks. **GroupButton** items supports the following content types.
+The content of the **Button** items in GroupButton can have a text and images. GroupButton provides the some predefined contentType options to easily customize the appearance of each button associated with GroupButton component without any complex CSS tricks. **GroupButton** items supports the following content types.
 
 List of content types for button
 
 <table>
 <tr>
 <td>
-Content Types<br/><br/></td><td>
-Description<br/><br/></td></tr>
+**Content Types**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
 <td>
 textOnly<br/><br/></td><td>
@@ -102,7 +102,7 @@ Supports image with both ends and middle in text.<br/><br/></td></tr>
 </table>
 ## Icons
 
-Group button has the option to add the icons to button elements which enhance the appearance. Icons inside the button can be added easily using **prefixIcon** and **suffixIcon** fields with dataSource property. GroupButton control also supports the build-in icon libraries. The ej.widgets.core.min.css contains definitions for important icons that can be used in buttons. You can get the details about available icons with that corresponding class from [here](http://help.syncfusion.com/js/icon/ej-icons# ""). 
+GroupButton has the option to add the icons to button elements which enhance the appearance. Icons inside the button can be added easily using **prefixIcon** and **suffixIcon** fields with dataSource property. GroupButton control also supports the build-in icon libraries. The ej.widgets.core.min.css contains definitions for important icons that can be used in buttons. You can get the details about available icons with that corresponding class from [here](http://help.syncfusion.com/js/icon/ej-icons). 
 
 Simply you can use these build-in icons by mentioning the icon class name as value in **prefixIcon** and **suffixIcon** property. You can use any font icons that are defined in ej.widgets.core.min.css. It avoids the complexity in specifying icon using sprite image and CSS.
 
@@ -151,10 +151,10 @@ Simply you can use these build-in icons by mentioning the icon class name as val
 
 ## Orientation
 
-Group button has two built-in orientation support called vertical and horizontal orientations which defines the direction of rendered GroupButton component. You can set the value to this property as enum or string type.
+GroupButton has two built-in orientation support called vertical and horizontal orientations which defines the direction of rendered GroupButton component. You can set the value to this property as enum or string type.
 
-1. ej.Orientation.Horizontal or “Horizontal”
-2. ej.Orientation.Vertical or “Vertical”
+ * ej.Orientation.Horizontal or “Horizontal”
+ * ej.Orientation.Vertical or “Vertical”
 
 {% highlight js %}
 
