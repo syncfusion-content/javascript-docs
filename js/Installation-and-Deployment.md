@@ -281,7 +281,8 @@ Follow the below steps to install Syncfusion JavaScript jspm package via command
    
    ![](Installation-and-Deployment_images/jspminstallationsteps_img1.jpeg)
 
-   B) To install the Syncfusion JavaScript jspm package via npm repository.  
+   B) To install the Syncfusion JavaScript jspm package via npm repository.
+   
    ~~~
    jspm install npm:syncfusion-javascript
    ~~~
@@ -305,7 +306,9 @@ To update specific package by using below commands.
 ~~~
 jspm update npm:syncfusion-javascript
 ~~~
+
   (Or)
+  
 ~~~
 jspm update syncfusion=github:syncfusion/JavaScript-Widgets
 ~~~
