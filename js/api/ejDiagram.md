@@ -9138,7 +9138,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.backgroundColor `String`
-{:#members:selectedItems-userhandles-backgroundcolor}
+{:#members:selecteditems-userhandles-backgroundcolor}
 
 Defines the background color of the user handle
 
@@ -9162,7 +9162,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.borderColor `String`
-{:#members:selectedItems-userhandles-borderColor}
+{:#members:selecteditems-userhandles-bordercolor}
 
 Sets the border color of the user handle
 
@@ -9186,7 +9186,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.enableMultiSelection `Boolean`
-{:#members:selectedItems-userhandles-enableMultiSelection}
+{:#members:selecteditems-userhandles-enablemultiselection}
 
 Defines whether the user handle should be added, when more than one element is selected
 
@@ -9210,7 +9210,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.pathColor `String`
-{:#members:selectedItems-userhandles-pathColor}
+{:#members:selecteditems-userhandles-pathcolor}
 
 Sets the stroke color of the user handle
 
@@ -9236,7 +9236,7 @@ Sets the stroke color of the user handle
 {% endhighlight %}
 
 ### selectedItems.userHandles.pathData `String`
-{:#members:selectedItems-userhandles-pathData}
+{:#members:selecteditems-userhandles-pathdata}
 
 Defines the custom shape of the user handle
 
@@ -9262,7 +9262,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
       
 ### selectedItems.userHandles.position `enum`
-{:#members:selectedItems-userhandles-position}
+{:#members:selecteditems-userhandles-position}
 
 <ts name = "ej.datavisualization.Diagram.UserHandlePositions "/>
     
@@ -9331,7 +9331,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.size `Number`
-{:#members:selectedItems-userhandles-size}
+{:#members:selecteditems-userhandles-size}
 
 Defines the size of the user handle
 
@@ -9357,7 +9357,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 
 ### selectedItems.userHandles.tool `Object`
-{:#members:selectedItems-userhandles-tool}
+{:#members:selecteditems-userhandles-tool}
 
 Defines the interactive behaviors of the user handle
 
@@ -9398,7 +9398,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 ### selectedItems.userHandles.visible `Boolean`
-{:#members:selectedItems-userhandles-visible}
+{:#members:selecteditems-userhandles-visible}
 
 Defines the visibility of the user handle
 
