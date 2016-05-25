@@ -688,7 +688,7 @@ Specifies the name of the editor.
 
 
 
-##### negativepattern `string`
+##### negativePattern `string`
 {:#members:negativepattern}
 
 
@@ -729,7 +729,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
     
     
 
-##### positivepattern `string`
+##### positivePattern `string`
 {:#members:positivepattern}
 
 
