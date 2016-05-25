@@ -7,7 +7,7 @@ control: GroupButton
 documentation: ug
 ---
 
-# DataSoruce
+# DataSource
 
 GroupButton can populate the button items based on data source and by specifying the associated fields. 
 
@@ -96,7 +96,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 {% endhighlight %}
 
-![](DataSoruce_images/DataSoruce_img1.jpeg)
+![](DataSource_images/DataSoruce_img1.jpeg)
 
 
 ## Remote Data

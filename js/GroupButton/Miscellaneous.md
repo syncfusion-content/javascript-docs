@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show/Hide the items
 
-Particular currently showing button items can be hided. Also it provides the options to show the hided button again. These functionality can be achieved using **showItem** or **hideItem** method.
+Particular currently showing button items can be hided. Also it provides the options to show the hided button again. These functionalities can be achieved using **showItem** or **hideItem** method.
 
 **Hide the Button item based on given index**
 
