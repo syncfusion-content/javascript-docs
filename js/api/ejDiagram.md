@@ -984,7 +984,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 A collection of JSON objects where each object represents a label.
 
-<ts name="ConnectorLabel"/>
+<ts name="connectorLabel"/>
 
 #### Default Value:
 
@@ -5130,7 +5130,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 A collection of objects where each object represents a label
 
-<ts name="NodeLabel"/>
+<ts name="nodeLabel"/>
 
 #### Default Value:
 
