@@ -5,6 +5,7 @@ description: How to create the Tooltip
 platform: JS
 control: Tooltip
 documentation: ug
+keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 ---
 # Getting started
 
@@ -45,12 +46,12 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
         <meta name="author" content="Syncfusion">
         <title></title>
         <!-- Essential Studio for JavaScript  theme reference -->
-        <link rel="stylesheet" href="http://cdn.syncfusion.com/14.1.0.1/js/web/flat-azure/ej.web.all.min.css" />
+        <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
     
         <!-- Essential Studio for JavaScript  script references -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-        <script src="http://cdn.syncfusion.com/14.1.0.1/js/web/ej.web.all.min.js"> </script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
     
         <!-- Add your custom scripts here -->
     
@@ -69,7 +70,7 @@ For themes, you can use the `ej.web.all.min.css` CDN link from the code example 
 
 ## Create a Tooltip
 
-The Tooltip can be created from any HTML element with the HTML `id` attribute set to it. To create the Tooltip, you should call the `ejTooltip` jQuery plug-in function with the options as parameter. Refer to the following code example.
+The Tooltip can be created from any HTML element with the HTML `id` attribute and pre-defined options set to it. To create the Tooltip, you should call the `ejTooltip` jQuery plug-in function with the options as parameter. Refer to the following code example.
 
 {% highlight html %}
  
@@ -77,7 +78,7 @@ The Tooltip can be created from any HTML element with the HTML `id` attribute se
                    
 		<div class="img" id="sample">
 		  <a target="_blank" href="image/taj.png">
-			<img src="../images/tooltip/template-05.png" alt="Delphi">
+			<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
 		  </a>
 		  <div class="desc">Delphi Succinctly</div>
 		</div>
@@ -93,11 +94,38 @@ The Tooltip can be created from any HTML element with the HTML `id` attribute se
 
 {% endhighlight %}
 
+Apply the following style sheet
+
+{% highlight html %}
+
+    <style>
+        div.img {
+            border: 1px solid #ccc;
+            width: 159px;
+            height: 213px;
+            left: 35%;
+            position: relative;
+            top: 20%;
+        }
+
+        div.img img {
+            width: 159px;
+            height: 179px;
+        }
+
+        div.desc {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    
+{% endhighlight %}
+
 ![](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Setting Dimensions
 
-Tooltip dimensions can be set using width and height API.
+Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ejtooltip#members:width) and [height](http://help.syncfusion.com/js/api/ejtooltip#members:height) API.
 
 {% highlight html %}
  
@@ -111,7 +139,7 @@ Tooltip dimensions can be set using width and height API.
 		{
 		     content: "JavaScript is the programming language of HTML and the Web.",
              width: "100px",
-             height: "100px",
+             height: "100px"
 		});
     </script>
     
@@ -126,7 +154,7 @@ You can configure the appearance of the Tooltip with the title, close button and
  
     <div class="img" id="sample">
 	  <a target="_blank" href="image/taj.png">
-		<img src="../images/tooltip/template-05.png" alt="Delphi">
+		<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
 	  </a>
 	  <div class="desc">Delphi Succinctly</div>
 	</div>
@@ -151,11 +179,11 @@ Apply the following styles to show the Tooltip.
     <style>
         div.img {
 			
-			    border: 1px solid #ccc;
-				float: left;
-				box-sizing: border-box;
-				height: 200px;
-				width: 146px;;
+		    border: 1px solid #ccc;
+			float: left;
+			box-sizing: border-box;
+			height: 200px;
+			width: 146px;
 		
 		}
 		div.img img{
