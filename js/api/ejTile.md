@@ -922,17 +922,17 @@ $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png"); </scri
 {% endhighlight %}
 
 
-### livetile `object`
-{:#members:livetile}
+### liveTile `object`
+{:#members:liveTile}
 
 
-Section for livetile specific functionalities.
+Section for liveTile specific functionalities.
 
-### livetile.enabled `boolean`
-{:#members:livetile-enabled}
+### liveTile.enabled `boolean`
+{:#members:liveTile-enabled}
 
 
-Specifies whether to enable livetile or not.
+Specifies whether to enable liveTile or not.
 
 
 
@@ -967,8 +967,8 @@ $("#tile").ejTile("option", "liveTile.enabled", true); </script>
  {% endhighlight %}
 
 
-### livetile.imageClass `string`
-{:#members:livetile-imageclass}
+### liveTile.imageClass `string`
+{:#members:liveTile-imageclass}
 
 
 Specifies liveTile images in CSS classes.
@@ -1019,8 +1019,8 @@ $("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);</scr
  {% endhighlight %}
 
 
-### livetile.imageTemplateId `string`
-{:#members:livetile-imagetemplateid}
+### liveTile.imageTemplateId `string`
+{:#members:liveTile-imagetemplateid}
 
 
 Specifies liveTile images in templates.
@@ -1060,8 +1060,8 @@ $("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);
    {% endhighlight %}
 
 
-### livetile.imageUrl `string`
-{:#members:livetile-imageurl}
+### liveTile.imageUrl `string`
+{:#members:liveTile-imageurl}
 
 
 Specifies liveTile images in CSS classes.
@@ -1083,7 +1083,7 @@ Specifies liveTile images in CSS classes.
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
-$("#tile").ejTile({ renderMode: "windows", livetile: { enabled: true, imageUrl: ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png'] } }); 
+$("#tile").ejTile({ renderMode: "windows", liveTile: { enabled: true, imageUrl: ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png'] } }); 
 </script>{% endhighlight %}
 
 
@@ -1096,11 +1096,11 @@ $("#tile").ejTile({ renderMode: "windows", livetile: { enabled: true, imageUrl: 
 $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png']);</script>           {% endhighlight %}
 
 
-### livetile.type `enum`
-{:#members:livetile-type}
+### liveTile.type `enum`
+{:#members:liveTile-type}
 
 
-<ts name = "ej.Tile.LiveTileType"/>
+<ts name = "ej.Tile.liveTileType"/>
 
 Specifies liveTile type for Tile. See orientation
 
@@ -1160,12 +1160,12 @@ $("#tile").ejTile({ renderMode: "windows", liveTile: { enabled: true, imageUrl: 
 $("#tile").ejTile("option", "liveTile.type", "carousel");</script>            {% endhighlight %}
 
 
-### livetile.updateInterval `number`
-{:#members:livetile-updateinterval}
+### liveTile.updateInterval `number`
+{:#members:liveTile-updateinterval}
 
 
 
-Specifies time interval between two successive livetile animation
+Specifies time interval between two successive liveTile animation
 
 
 #### Default Value
@@ -1199,8 +1199,8 @@ $("#tile").ejTile("option", "liveTile.updateInterval", 1000);</script>          
 
 
 
-### livetile.text `array`
-{:#members:livetile-text}
+### liveTile.text `array`
+{:#members:liveTile-text}
 
 
 Sets the text to each living tile

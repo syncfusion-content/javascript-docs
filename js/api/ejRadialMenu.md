@@ -413,7 +413,7 @@ $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");
 
 
 
-### items `object`
+### items `array`
 {:#members:items}
 
 
@@ -422,16 +422,10 @@ $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");
 Specify the items of radial menu
 
 
-#### Default Value
 
 
-
-* Object
-
-
-
-
-#### Example
+Example
+{:.example}
 
 
 {% highlight html %}
@@ -441,7 +435,7 @@ Specify the items of radial menu
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField", imageUrl:"/Bold.jpg"} }); 
+$("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField", imageUrl:"/Bold.jpg"}] }); 
 });
 </script>{% endhighlight %}
 
@@ -456,20 +450,13 @@ $("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField", imageUrl:"/Bold
 
 
 
-Specify the URL of the frame background image for radial menu item
-
-
-#### Default Value
-
-
-
-* null
+Specify the URL of the frame background image for radial menu item.
 
 
 
 
-
-#### Example
+Example
+{:.example}
 
 
 {% highlight html %}
@@ -479,7 +466,7 @@ Specify the URL of the frame background image for radial menu item
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:{ imageUrl:"/Bold.jpg"} }); 
+$("#defaultradialmenu").ejRadialMenu({ items:[{ imageUrl:"/Bold.jpg"}] }); 
 });
 </script>{% endhighlight %}
 
@@ -493,14 +480,6 @@ $("#defaultradialmenu").ejRadialMenu({ items:{ imageUrl:"/Bold.jpg"} });
 Specifies the text of RadialMenu item. 
 
 
-#### Default Value
-
-
-
-* null
-
-
-
 
 
 #### Example
@@ -513,7 +492,7 @@ Specifies the text of RadialMenu item.
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField" } }); 
+$("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField" }] }); 
 });
 </script>{% endhighlight %}
 
@@ -526,17 +505,9 @@ $("#defaultradialmenu").ejRadialMenu({ items:{ text:"textField" } });
 Specifies the enable state of RadialMenu item. 
 
 
-#### Default Value
 
-
-
-* true
-
-
-
-
-
-#### Example
+Example
+{:.example}
 
 
 {% highlight html %}
@@ -546,8 +517,168 @@ Specifies the enable state of RadialMenu item.
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:{ enabled:false } }); 
+$("#defaultradialmenu").ejRadialMenu({ items:[{ enabled:false }] }); 
 });
+</script>{% endhighlight %}
+
+
+### items.click `string`
+{:#members:items-click}
+
+
+specify the click event to corresponding image/text for performing some specific action.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{imageUrl:"themes/sample/tile/font.png", text:"Bold", click:"bold" }]});
+function bold(e){
+  //do some actions
+}
+</script>{% endhighlight %}
+
+
+
+### items.badge.enabled `boolean`
+{:#members:items-badge.enabled}
+
+
+Specifies whether to enable radialmenu item badge or not.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{text:"Bold", enabled: true, badge.enabled:true }]});
+
+</script>{% endhighlight %}
+
+
+
+### items.badge.value `number`
+{:#members:items-badge.value}
+
+
+Specifies the value of radial menu item badge.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3 }]});
+
+</script>{% endhighlight %}
+
+
+
+### items.type `string`
+{:#members:items-type}
+
+
+Specifies the type of nested radial menu item.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", type:"slider" }]});
+
+</script>{% endhighlight %}
+
+
+
+
+### items.sliderSettings.ticks `array`
+{:#members:items-sliderSettings.ticks}
+
+
+Specifies the sliderSettings ticks values of nested radial menu items.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3, type:"slider", sliderSettings.ticks:[0,2,4,6,8,10] }]});
+
+</script>{% endhighlight %}
+
+
+
+
+### items.sliderSettings.strokeWidth `number`
+{:#members:items-sliderSettings.strokeWidth}
+
+
+Specifies the sliderSettings stroke Width value.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{badge.value:3, type:"slider", sliderSettings.ticks:[0,2,4,6,8,10], sliderSettings.strokeWidth:3 }]});
+
+</script>{% endhighlight %}
+
+
+
+
+
+
+### items.sliderSettings.labelSpace `number`
+{:#members:items-sliderSettings.labelSpace}
+
+
+Specifies the value of sliderSettings labelSpace .
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{ type:"slider", sliderSettings.ticks:[0,2,4,6,8,10], sliderSettings.labelSpace:15 }]});
+
 </script>{% endhighlight %}
 
 
