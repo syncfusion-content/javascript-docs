@@ -982,7 +982,9 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 ### connectors.labels `Array`
 {:#members:connectors-labels}
 
-A collection of JSON objects where each object represents a label. For label properties, refer [Labels](#members:nodes-labels)
+A collection of JSON objects where each object represents a label.
+
+<ts name="ej.datavisualization.Diagram.ConnectorLabel"/>
 
 #### Default Value:
 
@@ -998,6 +1000,550 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
 	              //Define the labels collection
                   labels:[{ text:"connector" }]}; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.bold `Boolean`
+{:#members:connectors-labels-bold}
+
+Enables/disables the bold style
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", bold:true}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.borderColor `String`
+{:#members:connectors-labels-bordercolor}
+
+Sets the border color of the label
+
+#### Default Value:
+
+* "transparent"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", borderColor:"red", borderWidth: 2}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.borderWidth `Number`
+{:#members:connectors-labels-borderwidth}
+
+Sets the border width of the label
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", borderColor:"red", borderWidth: 2}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.fillColor `String`
+{:#members:connectors-labels-fillcolor}
+
+Sets the fill color of the text area
+
+#### Default Value:
+
+* "transparent"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", fillColor: "green"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.fontColor `String`
+{:#members:connectors-labels-fontcolor}
+
+Sets the font color of the text
+
+#### Default Value:
+
+* "black"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", fontColor: "green"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.fontFamily `String`
+{:#members:connectors-labels-fontfamily}
+
+Sets the font family of the text
+
+#### Default Value:
+
+* "Arial"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", fontColor: "green", fontFamily:"seugoe UI"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.fontSize `Number`
+{:#members:connectors-labels-fontsize}
+
+Defines the font size of the text
+
+#### Default Value:
+
+* 12
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", fontSize: 14}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.horizontalAlignment `enum`
+{:#members:connectors-labels-horizontalalignment}
+
+<ts ref = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Sets the horizontal alignment of the label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Align the text at the left most position of connector
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.italic `Boolean`
+{:#members:connectors-labels-italic}
+
+Enables/disables the italic style
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", italic:true}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin `Object`
+{:#members:connectors-labels-margin}
+
+To set the margin of the label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Leaves 5px space between the left boundary of connector and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.mode `enum`
+{:#members:connectors-labels-mode}
+
+<ts ref = "ej.datavisualization.Diagram.LabelEditMode"/>
+
+Gets whether the label is currently being edited or not.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelEditMode.Edit
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = diagram.selectionList[0];
+console.log(connector.labels[0].mode);
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.name `String`
+{:#members:connectors-labels-name}
+
+Sets the unique identifier of the label
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", name:"label1"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.offset `Object`
+{:#members:connectors-labels-offset}
+
+Sets the fraction/ratio(relative to connector) that defines the position of the label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.readOnly `Boolean`
+{:#members:connectors-labels-readonly}
+
+Defines whether the label is editable or not
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", readOnly:true}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.rotateAngle `Number`
+{:#members:connectors-labels-rotateangle}
+
+Defines the angle to which the label needs to be rotated
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", rotateAngle: 90}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.text `String`
+{:#members:connectors-labels-text}
+
+Defines the label text
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"Label"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.textAlign `enum`
+{:#members:connectors-labels-textalign}
+
+<ts ref = "ej.datavisualization.Diagram.TextAlign"/>
+	
+Defines how to align the text inside the label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TextAlign.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"node Label", textAlign:ej.datavisualization.Diagram.TextAlign.Left}]
+      }];
+$("#diagramcontent").ejDiagram({ connectors:connectors });
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.textDecoration `enum`
+{:#members:connectors-labels-textdecoration}
+
+<ts ref = "ej.datavisualization.Diagram.TextDecorations"/>
+
+Sets how to decorate the label text.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TextDecorations.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Decorate the text with an underline
+         labels:[{ text:"Label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.verticalAlignment `enum`
+{:#members:connectors-labels-verticalalignment}
+
+<ts ref = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Sets the vertical alignment of the label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Aligns the text at the top most position of connector
+         labels:[{ text:"label", offset:{ y:0 }, verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }]
+      }];
+$("#diagramcontent").ejDiagram({ connectors:connectors });
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.visible `Boolean`
+{:#members:connectors-labels-visible}
+
+Enables or disables the visibility of the label
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"Label", visible: false}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.width `Number`
+{:#members:connectors-labels-width}
+
+Sets the width of the label(the maximum value of label width and the connector width will be considered as label width)
+
+#### Default Value:
+
+* 50
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"Label", width: 100}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.wrapping `enum`
+{:#members:connectors-labels-wrapping}
+
+<ts ref = "ej.datavisualization.Diagram.TextWrapping"/>
+
+Defines how the label text needs to be wrapped.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+         labels:[{ text:"Enter Your Text", wrapping:ej.datavisualization.Diagram.TextWrapping.NoWrap}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
 
 {% endhighlight %}
@@ -4583,6 +5129,8 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 {:#members:nodes-labels}
 
 A collection of objects where each object represents a label
+
+<ts name="ej.datavisualization.Diagram.NodeLabel"/>
 
 #### Default Value:
 
@@ -8569,7 +9117,7 @@ $("#diagramcontent").ejDiagram({
 ### selectedItems.userHandles `Array`
 {:#members:selecteditems-userhandles}
 
-A collection of frequently using commands that have to be added around the selector.
+A collection of frequently used commands that will be added around the selector
 
 #### Default Value:
 
@@ -8584,6 +9132,291 @@ A collection of frequently using commands that have to be added around the selec
 var userHandle= [];
 var cloneHandle = ej.datavisualization.Diagram.UserHandle();
 userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.backgroundColor `String`
+{:#members:selecteditems-userhandles-backgroundcolor}
+
+Defines the background color of the user handle
+
+####Default Value:
+
+* "#2382c3"
+
+####Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.backgroundColor = "#4D4D4D";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.borderColor `String`
+{:#members:selecteditems-userhandles-bordercolor}
+
+Sets the border color of the user handle
+
+#### Default Value:
+
+* "transparent"
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.borderColor = "red";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.enableMultiSelection `Boolean`
+{:#members:selecteditems-userhandles-enablemultiselection}
+
+Defines whether the user handle should be added, when more than one element is selected
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.enableMultiSelection = true;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.pathColor `String`
+{:#members:selecteditems-userhandles-pathcolor}
+
+Sets the stroke color of the user handle
+
+####Default Value:
+
+* transparent
+
+####Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle"; 
+        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+        cloneHandle.tool = new CloneTool(cloneHandle.name);
+        cloneHandle.pathColor = "white";
+        userHandle.push(cloneHandle);
+        $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.pathData `String`
+{:#members:selecteditems-userhandles-pathdata}
+
+Defines the custom shape of the user handle
+
+####Default Value:
+
+* ""
+
+####Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+        cloneHandle.tool = new CloneTool(cloneHandle.name);
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+      
+### selectedItems.userHandles.position `enum`
+{:#members:selecteditems-userhandles-position}
+
+<ts name = "ej.datavisualization.Diagram.UserHandlePositions "/>
+    
+Defines the position of the user handle
+    
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">TopLeft</td>
+            <td class="description last">Set the position of the userhandle as topleft</td>
+       </tr>
+        <tr>
+            <td class="name">TopCenter</td>
+            <td class="description last">Set the position of the userhandle as topcenter</td>
+       </tr>
+        <tr>
+            <td class="name">TopRight</td>
+            <td class="description last">Set the position of the userhandle as topright</td>
+       </tr>
+       <tr>
+            <td class="name">MiddleLeft</td>
+            <td class="description last">Set the position of the userhandle as middleleft</td>
+       </tr>
+       <tr>
+            <td class="name">MiddleRight</td>
+            <td class="description last">Set the position of the userhandle as middleright</td>
+       </tr>
+       <tr>
+            <td class="name">BottomLeft</td>
+            <td class="description last">Set the position of the userhandle as bottomleft</td>
+       </tr>
+       <tr>
+            <td class="name">BottomCenter</td>
+            <td class="description last">Set the position of the userhandle as bottomcenter</td>
+       </tr>
+        <tr>
+            <td class="name">BottomRight</td>
+            <td class="description last">Set the position of the userhandle as bottom right</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.UserHandlePositions.BottomCenter
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.position =" middleleft";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.size `Number`
+{:#members:selecteditems-userhandles-size}
+
+Defines the size of the user handle
+
+#### Default Value:
+
+* 8
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.size = 20;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+
+### selectedItems.userHandles.tool `Object`
+{:#members:selecteditems-userhandles-tool}
+
+Defines the interactive behaviors of the user handle
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script> 
+  var CloneTool = (function (base) {
+            ej.datavisualization.Diagram.extend(CloneTool, base);
+            function CloneTool(name) {
+                base.call(this, name);
+                this.singleAction = true;
+                this.clonedNodes = [];
+                this.cursor = "pointer";
+            }
+            CloneTool.prototype.mouseup = function (evt) {
+                    this.diagram.copy();
+                    this.diagram.paste();
+                }
+            }
+            return CloneTool;
+        })(ej.datavisualization.Diagram.ToolBase);
+var userHandle = [];
+var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.name = "cloneHandle";
+cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+cloneHandle.tool =  new CloneTool(cloneHandle.name);;
+userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.visible `Boolean`
+{:#members:selecteditems-userhandles-visible}
+
+Defines the visibility of the user handle
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.visible = "true";
+        userHandle.push(cloneHandle);
 $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 </script>
 
@@ -10691,7 +11524,7 @@ Update userhandles with respect to the given node
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = diagram.selectionList[0];
-diagram.updateUSerHandles(node);
+diagram.updateUserHandles(node);
 </script>
 
 {% endhighlight %}
