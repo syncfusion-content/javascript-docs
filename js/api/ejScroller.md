@@ -1733,7 +1733,7 @@ $("#scrollcontent").ejScroller({
 
 
 
-Fires when the user stop to scroll the mouse trackball.
+It will fire when mouse trackball has been stop to wheel.
 
 <table class="params">
 <thead>
