@@ -1624,7 +1624,7 @@ $("#scrollcontent").ejScroller({
 
 
 
-It keeps on fires when mouse trackball has been move to wheel.
+It fires whenever the mouse wheel is rotated either in upwards or downwards
 
 <table class="params">
 <thead>
