@@ -1521,7 +1521,7 @@ $("#scrollcontent").ejScroller({
 
 
 
-Fires when user start to scroll the mouse trackball.
+ It will fire when mouse trackball has been start to wheel.
 
 <table class="params">
 <thead>
@@ -1562,7 +1562,7 @@ model</td>
 <td class="name">
 originalEvent</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the original event name of the current event.</td>
+<td class="description">returns the original event name and its event properties of the current event.</td>
 </tr>
 <tr>
 <td class="name">
@@ -1624,7 +1624,7 @@ $("#scrollcontent").ejScroller({
 
 
 
-Fires when user move to scroll the mouse trackball.
+It keeps on fires when mouse trackball has been move to wheel.
 
 <table class="params">
 <thead>
@@ -1665,12 +1665,12 @@ model</td>
 <td class="name">
 originalEvent</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the original event name of the current event.</td>
+<td class="description">returns the original event name and its event properties of the current event.</td>
 </tr>
 <td class="name">
 direction</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the trackball scrolling direction. If it returns 1 the wheel moved to the top to bottom direction. And if it returns the -1 the wheel moved the bottom to top direction.</td>
+<td class="description">returns the trackball scrolling direction. If it returns 1, the wheel moved top to bottom direction. or if it returns -1, the wheel moved bottom to top direction.</td>
 </tr>
 <tr>
 <tr>
@@ -1733,7 +1733,7 @@ $("#scrollcontent").ejScroller({
 
 
 
-Fires when user stop to scroll the mouse trackball.
+Fires when the user stop to scroll the mouse trackball.
 
 <table class="params">
 <thead>
@@ -1780,12 +1780,12 @@ type</td>
 <td class="name">
 originalEvent</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the original event name of the current event.</td>
+<td class="description">returns the original event name and its event properties of the current event.</td>
 </tr>
 <td class="name">
 direction</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the trackball scrolling direction. If it returns 1 the wheel moved to the top to bottom direction. And if it returns the -1 the wheel moved the bottom to top direction.</td>
+<td class="description">returns the trackball scrolling direction. If it returns 1, the wheel moved top to bottom direction. or if it returns -1, the wheel moved bottom to top direction.</td>
 </tr>
 <tr>
 <tr>
