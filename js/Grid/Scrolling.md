@@ -254,6 +254,7 @@ The virtual scrolling support allows you to load data that you require (load dat
 
 1. Normal Mode
 2. Continuous Mode
+3. Virtualization
 
 N> The following features are not supported by virtual scrolling 
 N> 1. Grouping
@@ -315,4 +316,32 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img9.png)
 
+### Virtualization:
 
+It allows you to load the grid with data while scrolling. It is an improvised virtual scrolling feature. In order to enable this, you need to enable both the AllowVirtualScrolling and EnableVirtualization(new) property of the Grid ScrollSettings. Some of the relevant functionalities of this are,
+
+1.	White space will not be appeared in the Grid. 
+2.	Improved page rendering performance. 
+
+This can be achieved by setting [`enableVirtualization`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "enableVirtualization") as `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, allowVirtualScrolling: true, enableVirtualization: true },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img10.png)
