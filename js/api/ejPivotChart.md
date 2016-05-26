@@ -412,22 +412,6 @@ $("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "MyMethod1"
 
 {% endhighlight %}
 
-### serviceMethodSettings.exportPivotChart `string`
-{:#members:servicemethodsettings-exportPivotChart}
-
-Allows the user to set the custom name for the service method that’s responsible for exporting.
-
-#### Default Value: "Export"
-
-**Example:**
-
-{% highlight html %}
- 
-$("# PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "Export"} });                                  
-
-{% endhighlight %}
-
-
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
