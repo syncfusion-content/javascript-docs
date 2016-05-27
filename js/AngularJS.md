@@ -287,3 +287,29 @@ Events can be bind to controls using the prefix `e-` and particular event name. 
 </html>
 
 {% endhighlight %}
+
+##Widget Reference
+
+we can able to access the element attributes of ejWidget from your controller through `id` selector.  Refer the following code example.
+ 
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
+  <head>
+    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
+    <!-- SCRIPT & CSS REFERENCE SECTION -->
+  </head>
+  <body ng-controller="DatePickerCtrl">
+    <input id="mydatepicker1" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+    <script type="text/javascript">
+        angular.module('DateCtrl', ['ejangular'])
+           .controller('DatePickerCtrl',["$scope", function ($scope) {
+               $scope.dateValue = "01/01/2015";
+               $scope.dateChanged = function(e){
+                  alert($scope.mydatepicker1.element.val())
+               }
+        }]);
+    </script>
+  </body>
+</html>
+
+{% endhighlight %}
