@@ -120,7 +120,7 @@ Determines the type of effect.
 
 #### Default Value
 {:.param}
-* ej.Tooltip.effect.None
+* ej.Tooltip.Effect.None
 
 <table>
 <tr>
@@ -180,7 +180,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
 
 #### Default Value
 {:.param}
-* target
+* ej.Tooltip.Associate.Target
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
 {% highlight html %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a> the way you really want to.
     </div>
     <script type="text/javascript">
 
@@ -229,6 +229,7 @@ And also, absolute positioning via horizontal(x), vertical(y) e.g. A Tooltip at 
 
 {% highlight html %}
 {:.example}
+
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
@@ -281,13 +282,13 @@ Specified the delay to hide Tooltip when closeMode is auto.
 ### closeMode `enum`
 {:#members:closemode}
 
-<ts name="ej.Tooltip.closeMode"/>
+<ts name="ej.Tooltip.CloseMode"/>
 
 Specifies the closing behavior of Tooltip popup.
 
 #### Default Value
 {:.param}
-* none
+* ej.Tooltip.CloseMode.None
 
 <table>
 <tr>
@@ -312,6 +313,7 @@ Specifies the closing behavior of Tooltip popup.
 
 {% highlight html %}
 {:.example}
+
         <div class="control">
             TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
         </div>
@@ -350,13 +352,13 @@ Specifies the closing behavior of Tooltip popup.
 ### collision `enum`
 {:#members:collision}
 
-<ts name="ej.Tooltip.collision"/>
+<ts name="ej.Tooltip.Collision"/>
     
 Sets the Tooltip in alternate position when collision occurs.
 
 #### Default Value
 {:.param}
-* "flipfit"
+* ej.Tooltip.Collision.FlipFit
 
 <table>
 <tr>
@@ -466,6 +468,7 @@ Specifies the text for Tooltip.
 
 {% highlight html %}
 {:.example}
+
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
@@ -848,13 +851,13 @@ The title text to be displayed in the Tooltip header.
 ### trigger `enum`
 {:#members:trigger}
 
-<ts name="ej.Tooltip.trigger"/>
+<ts name="ej.Tooltip.Trigger"/>
     
 Specified the event action to show case the Tooltip.
   
 #### Default Value
 {:.param}
-* hover
+* ej.Tooltip.Trigger.Hover
 
 <table>
 <tr>
@@ -1208,10 +1211,10 @@ Void
     
 {% endhighlight %}
 
-### show([effect],[func],[target])
+### show([target],[effect],[func])
 {:#methods:show}
 
-Shows the Tooltip popup.
+Shows the Tooltip popup for the given target element with the specifed effect.
 
 <table class="params">
 <thead>
