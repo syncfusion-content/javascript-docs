@@ -287,3 +287,24 @@ Events can be bind to controls using the prefix `e-` and particular event name. 
 </html>
 
 {% endhighlight %}
+
+## Getting Widget Reference in Controller
+
+In controller, you can get the reference to the `ej` widgets using the `ID` of particular widget in AngularJS scope. Refer the following code example.
+ 
+{% highlight html %}
+  <body ng-controller="DatePickerCtrl">
+    <input id="mydatepicker" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+
+    <script type="text/javascript">
+        angular.module('DateCtrl', ['ejangular'])
+           .controller('DatePickerCtrl',["$scope", function ($scope) {
+               $scope.dateValue = "01/01/2015";
+               $scope.dateChanged = function(e){
+                  alert($scope.mydatepicker.model.value)
+               }
+        }]);
+    </script>
+  </body>
+
+{% endhighlight %}
