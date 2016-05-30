@@ -2210,7 +2210,7 @@ $("#list").ejListBox({
 
 
 ### actionBeforeSuccess 
-{:#events:actionBeforeSuccess}
+{:#events:actionbeforesuccess}
 
 Event will be triggered before the requested data via AJAX once loaded in successfully.
 
@@ -2540,7 +2540,7 @@ Example
 {% endhighlight %}
 
 ### focusIn
-{:#events:focusIn}
+{:#events:focusin}
 
 Triggers when focus the listbox items.
 
@@ -2586,7 +2586,7 @@ Example
 
 
 ### focusOut
-{:#events:focusOut}
+{:#events:focusout}
 
 Triggers when focus out from listbox items.
 
