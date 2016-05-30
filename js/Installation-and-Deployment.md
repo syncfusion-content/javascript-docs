@@ -162,6 +162,7 @@ You can install the Syncfusion Bower package from a local directory. To perform 
 ### Bower Update
 
 To update the installed Bower packages, run the command Bower update <package name>.
+
 ~~~
 bower update syncfusion-javascript
 ~~~
