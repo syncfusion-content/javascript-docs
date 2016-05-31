@@ -215,10 +215,11 @@ N> To pass the theme value as a string instead of the enum value, refer to the f
     PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, "flat-saffron",Request.Form["locale"]);
 {% endhighlight %}
 
-Setting Page Options:
+### Setting Page Options:
 
 It is possible to set/change the Pdf page settings such as size, margins (left, right, top and bottom), transition, and rotate angle and header/footer values by passing the page settings and page document template object values into the export method. 
-Page Settings:
+
+#### Page Settings:
 You can set/apply the following page property values to the PDF file before exporting it with the Scheduler by using the `PdfPageSettings` object. 
 a)	Page Size
 b)	Orientation
@@ -275,7 +276,7 @@ To apply the above page setting values, you need to create an object for the `Pd
         }
 {% endhighlight %}
 
-Header/Footer Settings:
+#### Header/Footer Settings:
 
 You can also set the header and footer options to the PDF page before it is being exported, by passing the `PDFDocumentTemplate` object values as mentioned in the following code example. 
 
