@@ -198,11 +198,11 @@ public ActionResult PDFExport(string scheduleModel)
     PdfExport exp = new PdfExport();
     JavaScriptSerializer serializer = new JavaScriptSerializer();
     SchedulePDFExport convert= new SchedulePDFExport();
-// Here calling the public method to convert the model values to ScheduleProperties type from string type
+    // Here calling the public method to convert the model values to ScheduleProperties type from string type
     ScheduleProperties scheduleObject = convert.ScheduleSerializeModel(scheduleModel); 
-// Here converting the schedule appointments data into enumerable object by deserializing              
+    // Here converting the schedule appointments data into enumerable object by deserializing              
     IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(Request.Form["ScheduleProcesedApps"], typeof(IEnumerable));
-// Here passing the theme values from enum collection
+    // Here passing the theme values from enum collection
     PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron,Request.Form["locale"]);
     document.Save("Schedule.pdf", HttpContext.ApplicationInstance.Response, HttpReadType.Save);
     return RedirectToAction("PDFExportController");
@@ -242,16 +242,16 @@ To apply the above page setting values, you need to create an object for the `Pd
 
             PdfExport exp = new PdfExport();
 
-// Here the 50f is the default value for the margins. If you are not assigning any separate values like Margins.Left = 15 means 50f value will be setting to all the Margin properties.
+            // Here the 50f is the default value for the margins. If you are not assigning any separate values like Margins.Left = 15 means 50f value will be setting to all the Margin properties.
             PdfPageSettings pageSettings = new PdfPageSettings(50f);  
 
-// Here you can assign the PdfPageSize enum value (ex: A3, A4)
+            // Here you can assign the PdfPageSize enum value (ex: A3, A4)
             pageSettings.Size = PdfPageSize.A3;  
 
-// Here Landscape value assigned to the orientation. You can set either Landscape/Portrait for this Orientation property
+            // Here Landscape value assigned to the orientation. You can set either Landscape/Portrait for this Orientation property
             pageSettings.Orientation = PdfPageOrientation.Landscape; 
 
-// Here assigned different values for the margins 
+            // Here assigned different values for the margins 
             pageSettings.Margins.Left = 15;
 
             pageSettings.Margins.Right = 15;
@@ -260,14 +260,14 @@ To apply the above page setting values, you need to create an object for the `Pd
 
             pageSettings.Margins.Bottom = 20;
 
-// Here assigned the Transition Direction as BottomToTop. You can also set any of the Transition values to this property
+            // Here assigned the Transition Direction as BottomToTop. You can also set any of the Transition values to this property
 
             pageSettings.Transition.Direction= PdfTransitionDirection.BottomToTop;
 
-// Here assigned the Rotate Angle as RotateAngle180. You can also set any of the Rotate values to this property
+            // Here assigned the Rotate Angle as RotateAngle180. You can also set any of the Rotate values to this property
             pageSettings.Rotate = PdfPageRotateAngle.RotateAngle180;
 
-// Here passing the page settings object value into the export method.
+            // Here passing the page settings object value into the export method.
 
             PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron, Request.Form["locale"], pageSettings);
             document.Save("Schedule.pdf", HttpContext.ApplicationInstance.Response, HttpReadType.Save);
