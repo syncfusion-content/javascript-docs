@@ -1278,6 +1278,10 @@ Shows or hides the label of the leaf item.
 
 Specifies the rangeColorMapping settings of the treemap
 
+#### Default Value
+
+* []
+
 #### Example
 
 {% highlight html %}
@@ -2296,6 +2300,10 @@ Specifies the color value for rangeColorMapping.
 {% endhighlight %}
 
 
+### rangeColorMapping.gradientColors `array`
+{:#members:rangecolormapping-gradientcolors}
+
+
 ### rangeColorMapping.from `number`
 {:#members:rangecolormapping-from}
 
@@ -2330,7 +2338,7 @@ Specifies the from value for rangeColorMapping.
 {% endhighlight %}
 
 
-### rangecolormapping.legendLabel `string`
+### rangeColorMapping.legendLabel `string`
 {:#members:rangecolormapping-legendlabel}
 
 Specifies the legend label value for rangeColorMapping.

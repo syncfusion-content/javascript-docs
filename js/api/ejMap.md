@@ -1209,6 +1209,68 @@ Specifies the datasource for the shape layer
 {% endhighlight %}
 
 
+### layers.shapeDataPath `string`
+{:#members:layers-shapedatapath}
+
+Specifies the datapath of shape 
+
+
+#### Example
+
+{% highlight html %}
+
+// Set the shapeDataPath of layer during initialization.                        
+   $("#container").ejMap({layers: [{ shapeDataPath: "name"}]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the shapeDataPath after initialization:
+   
+   //Gets the shapeDataPath from map layer.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].shapeDataPath;
+   
+   //Sets the shapeDataPath to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].shapeDataPath  = 'name';
+
+{% endhighlight %}
+
+
+### layers.shapePropertyPath `string`
+{:#members:layers-shapepropertypath}
+
+Specifies the datapath of shape 
+
+
+#### Example
+
+{% highlight html %}
+
+// Set the shapePropertyPath of layer during initialization.                        
+   $("#container").ejMap({layers: [{ shapePropertyPath: "name"}]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the shapePropertyPath after initialization:
+   
+   //Gets the shapePropertyPath from map layer.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].shapePropertyPath;
+   
+   //Sets the shapePropertyPath to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].shapePropertyPath  = 'name';
+
+{% endhighlight %}
+
+
 ### layers.enableAnimation `boolean`
 {:#members:layers-enableanimation}
 
