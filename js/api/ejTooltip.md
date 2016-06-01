@@ -120,7 +120,7 @@ Determines the type of effect.
 
 #### Default Value
 {:.param}
-* ej.Tooltip.effect.None
+* ej.Tooltip.Effect.None
 
 <table>
 <tr>
@@ -180,7 +180,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
 
 #### Default Value
 {:.param}
-* target
+* ej.Tooltip.Associate.Target
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
 {% highlight html %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a> the way you really want to.
     </div>
     <script type="text/javascript">
 
@@ -229,6 +229,7 @@ And also, absolute positioning via horizontal(x), vertical(y) e.g. A Tooltip at 
 
 {% highlight html %}
 {:.example}
+
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
@@ -281,13 +282,13 @@ Specified the delay to hide Tooltip when closeMode is auto.
 ### closeMode `enum`
 {:#members:closemode}
 
-<ts name="ej.Tooltip.closeMode"/>
+<ts name="ej.Tooltip.CloseMode"/>
 
 Specifies the closing behavior of Tooltip popup.
 
 #### Default Value
 {:.param}
-* none
+* ej.Tooltip.CloseMode.None
 
 <table>
 <tr>
@@ -312,6 +313,7 @@ Specifies the closing behavior of Tooltip popup.
 
 {% highlight html %}
 {:.example}
+
         <div class="control">
             TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
         </div>
@@ -350,13 +352,13 @@ Specifies the closing behavior of Tooltip popup.
 ### collision `enum`
 {:#members:collision}
 
-<ts name="ej.Tooltip.collision"/>
+<ts name="ej.Tooltip.Collision"/>
     
 Sets the Tooltip in alternate position when collision occurs.
 
 #### Default Value
 {:.param}
-* "flip"
+* ej.Tooltip.Collision.FlipFit
 
 <table>
 <tr>
@@ -370,6 +372,10 @@ Sets the Tooltip in alternate position when collision occurs.
 <tr>
 <td class="name">Fit</td>
 <td class="description">Shift the Tooltip popup away from the edge of the window(collision side) that means adjacent position.</td>
+</tr> 
+<tr>
+<td class="name">FlipFit</td>
+<td class="description">Ensure as much of the element is visible as possible to showcase.</td>
 </tr> 
 <tr>
 <td class="name">None</td>
@@ -462,6 +468,7 @@ Specifies the text for Tooltip.
 
 {% highlight html %}
 {:.example}
+
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
@@ -570,34 +577,6 @@ Sets the Tooltip direction from right to left.
 		 {
 		     content: "JavaScript is the programming language of HTML and the Web.",
              enableRTL: true 
-             
-		 });
-    </script>
-    
-{% endhighlight %}
-
-### enableInteraction `boolean`
-{:#members:enableinteraction}
-
-Enables the Tooltip to remains visible for the period of time.
-
-#### Default Value
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %}
- 
-    <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    </div>
-    <script>
-        // Initializes the Tooltip with the enableInteraction value specified.
-         $("#test").ejTooltip(
-		 {
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             enableInteraction: true 
              
 		 });
     </script>
@@ -789,22 +768,22 @@ Specified a selector for elements, within the container.
             </tr>
             <tr>
                 <td>SF6089</td>
-                <td><a href="#" title="Peter">Peter</a></td>
+                <td><a href="#" class="e-info" title="Peter">Peter</a></td>
                 <td>Software Engineer</td>
             </tr>
             <tr>
                 <td>SF6073</td>
-                <td> <a href="#" title="Joe">Joe </a> </td>
+                <td> <a href="#" class="e-info" title="Joe">Joe </a> </td>
                 <td>Tester</td>
             </tr>
             <tr>
                 <td>SF6073</td>
-                <td> <a href="#" title="Lois"> Lois </a> </td>
+                <td> <a href="#"class="e-info" title="Lois"> Lois </a> </td>
                 <td>Content Writer</td>
             </tr>
             <tr>
                 <td>SF7896</td>
-                <td> <a href="#" title="Cleveland"> Cleveland </a> </td>
+                <td> <a href="#" class="e-info" title="Cleveland"> Cleveland </a> </td>
                 <td>Graphics Designer</td>
             </tr>
         </table>
@@ -813,7 +792,7 @@ Specified a selector for elements, within the container.
 
             $("#detail").ejTooltip(
             {
-                target: "#detail"
+                target: ".e-info"
        
             });
 
@@ -838,67 +817,6 @@ Specified a selector for elements, within the container.
             }
         </style>
 
-{% endhighlight %}
-
-### template `string`
-{:#members:template}
-
-The template to display the content with customized appearance.
-
-#### Default Value
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
- 
-        <table>
-            <tr>
-                <th>EmployeeID</th>
-                <th>Name</th>
-                <th>Designation</th>
-            </tr>
-            <tr>
-                <td>SF6089</td>
-                <td><a href="#" id="test">Peter</a></td>
-                <td>Software Engineer</td>
-            </tr>
-        </table>
-
-        <script type="text/javascript">
-
-            $("#test").ejTooltip(
-            {
-                template: '<div class="main"> <img src="../images/Employee/7.png" class="logo"/><div class="des">Name : Peter <br> Contact No : 987654321 <br> Email id :perter@outlook.com <br></div></div>',
-                width:"100px"
-            });
-
-        </script>
-        <style>
-             table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            th, td {
-                text-align: left;
-                padding: 8px;
-            }
-            .logo{
-                    float: left;
-            }
-
-            tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
-
-            th {
-                background-color: #4CAF50;
-                color: white;
-            }
-        </style>
-        
 {% endhighlight %}
 
 ### title `string`
@@ -933,13 +851,13 @@ The title text to be displayed in the Tooltip header.
 ### trigger `enum`
 {:#members:trigger}
 
-<ts name="ej.Tooltip.trigger"/>
+<ts name="ej.Tooltip.Trigger"/>
     
 Specified the event action to show case the Tooltip.
   
 #### Default Value
 {:.param}
-* hover
+* ej.Tooltip.Trigger.Hover
 
 <table>
 <tr>
@@ -1293,90 +1211,10 @@ Void
     
 {% endhighlight %}
 
-### refresh(target)
-{:#methods:refresh}
-
-This will change the Tooltip position dynamically with the different element. 
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">target</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last"> The Tooltip position changed dynamically with the given element.</td>
-</tr>
-</tbody>
-</table> 
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-#### Example
-{:.example}
-
-{% highlight html %}
- 
-     <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-     </div>
-     <div class="altPosition">
-     
-     </div>
-
-    <script type="text/javascript">
-
-	    var tipObj =$("#test").ejTooltip(
-		{
-            content: "JavaScript is the programming language of HTML and the Web."
-		}).data("ejTooltip");
-	    tipObj.refresh(".altPosition");
-
-    </script>
-    <style>
-        .altPosition{
-            width : 100px;
-            height : 100px;
-            border : 1px solid;
-            left : 100px;
-            top : 120px;
-            position: absolute;
-        }
-     </style>
-    
-{% endhighlight %}
-
-{% highlight html %}
- 
-    <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    </div>
-    <div class="altPosition"> </div>
-
-    <script type="text/javascript">
-
-	    $("#test").ejTooltip(
-		{
-            content: "JavaScript is the programming language of HTML and the Web."
-		});
-	    $("#test").ejTooltip('refresh', ".altPosition");
-
-    </script>
-
-{% endhighlight %}
-
-### show([effect],[func])
+### show([target],[effect],[func])
 {:#methods:show}
 
-Shows the Tooltip popup.
+Shows the Tooltip popup for the given target element with the specifed effect.
 
 <table class="params">
 <thead>
@@ -1396,6 +1234,11 @@ Shows the Tooltip popup.
 <td class="name">func</td>
 <td class="type"><span class="param-type">function</span></td>
 <td class="description"><span class="optional">optional</span>custom effect takes place when showing the tooltip.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">JQuery Element</span></td>
+<td class="description"><span class="optional">optional</span>Tooltip will be shown for the given element</td>
 </tr>
 </tbody>
 </table>
@@ -1477,6 +1320,40 @@ Void
         
         }
         
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+
+    <div class="control">
+            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+    <div class="new">
+            JavaScript is a high-level, dynamic, untyped, and <a id="newPosition" href="#"> interpreted </a>programming language.
+    </div>
+    <button id="open">Re position</button>
+ 
+    // Creates the Tooltip
+    <script>
+    
+        $("#test").ejTooltip(
+		{
+		     content: "JavaScript is the programming language of HTML and the Web."
+		});
+        
+        $("#open").ejButton({
+            size: "large",
+            showRoundedCorner: true,
+            click: "onClick",
+
+        });
+      
+        function onClick(args){
+        	tip = $("#test").data("ejTooltip");
+        	tip.show("#newPosition");
+        }
+ 
     </script>
     
 {% endhighlight %}
