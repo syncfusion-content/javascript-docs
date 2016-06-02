@@ -81,7 +81,7 @@ $('#scrollcontent').ejScroller();
 
 
 ### autoHide `boolean`
-{:#members:autoHide}
+{:#members:autohide}
 
 
 
@@ -1481,7 +1481,7 @@ $("#scrollcontent").ejScroller({
 
 
 ### wheelStart
-{:#events:wheelStart}
+{:#events:wheelstart}
 
 
 
@@ -1529,10 +1529,7 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1570,7 +1567,7 @@ $("#scrollcontent").ejScroller({
 
 
 ### wheelMove
-{:#events:wheelMove}
+{:#events:wheelmove}
 
 
 
@@ -1662,7 +1659,7 @@ $("#scrollcontent").ejScroller({
 
 
 ### wheelStop
-{:#events:wheelStop}
+{:#events:wheelstop}
 
 
 

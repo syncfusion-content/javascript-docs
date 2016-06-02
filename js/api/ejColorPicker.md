@@ -1027,7 +1027,46 @@ This property allows to store the color values in custom list.The ColorPicker wi
 
 
 
+### showSwitcher `boolean`
+{:#members:showswitcher}
 
+
+Allows to show/hides the switcher button in ColorPicker control.It helps to switch palette or picker mode in colorpicker. 
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+   
+        <input type="text" id="colorPick"/> 
+        
+        <script>
+        //To set showSwitcher API during initialization
+        $('#colorPick').ejColorPicker({ value: "#278787", showSwitcher: false});
+        </script>
+
+{% endhighlight %}
 
 
 
