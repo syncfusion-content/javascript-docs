@@ -22,19 +22,19 @@ By default you can add any text or image to the Tooltip. To customize the toolti
     </div>
     <script type="text/javascript">
         $("#centerImg").ejTooltip(
-         {
-             width: "350px",
-             content: '<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" width="150px" height="120px"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>'
-         });
+        {
+            width: "350px",
+            content: '<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" width="150px" height="120px"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>'
+        });
     </script>
     <style>
         h4 {
             margin-top: 0px;
             margin-bottom: 2px;
         }
-		.e-tooltip-wrap .e-tipContainer .e-tipcontent {
-			padding: 5px 0px;
-		}
+        .e-tooltip-wrap .e-tipContainer .e-tipcontent {
+            padding: 5px 0px;
+        }
         .poster {
             float: left;
             padding: 4px 0px;
@@ -62,9 +62,9 @@ By default you can add any text or image to the Tooltip. To customize the toolti
         }
         .description {
             width: 200px;
-			height: 60px;
-			line-height: 22px;
-			margin-top: 10px;
+            height: 60px;
+            line-height: 22px;
+            margin-top: 10px;
         }
     </style>
     
@@ -84,11 +84,10 @@ Tooltip title can be customized with the image or any html element.
     </div>
     <script type="text/javascript">
         $("#centerImg").ejTooltip(
-         {
-             title : '<div><img class="titleImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" /> <div class="description"> Roslyn Succinctly </div> </div> ',
-             content: '<div>Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>'
-         });
-        
+        {
+            title : '<div><img class="titleImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" /> <div class="description"> Roslyn Succinctly </div> </div> ',
+            content: '<div>Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>'
+        });
     </script>
     <style>
         .titleImg {
@@ -144,17 +143,14 @@ Let's create a Tooltip that slides down when shown using the [animation](http://
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
- 
+
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             animation : {
-				effect : "slide",
-				speed :  1000
-			}
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            animation : { effect : "slide", speed :  1000 }
+        });
     </script>
 
 {% endhighlight %}
@@ -172,31 +168,26 @@ Show or Hide method may receive an optional 'callback' parameter, which represen
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
     <button id="open">Open</button>
- 
+
     // Creates the Tooltip
     <script>
-    
+
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web."
-		});
-        
+        {
+            content: "JavaScript is the programming language of HTML and the Web."
+        });
         $("#open").ejButton({
             size: "large",
             showRoundedCorner: true,
             click: "onClick",
-
         });
-      
         function onClick(args){
-        	tip = $("#test").data("ejTooltip");
-        	tip.show(null,"myFunc");
+            tip = $("#test").data("ejTooltip");
+            tip.show(null,"myFunc");
         }
-        
-         function myFunc(args) {
-			tip = $("#test").data("ejTooltip");
-			$(tip.tooltip).slideDown(200, "easeOutElastic");
-        
+        function myFunc(args) {
+            tip = $("#test").data("ejTooltip");
+            $(tip.tooltip).slideDown(200, "easeOutElastic");
         }
         
     </script>
@@ -215,27 +206,25 @@ It's easy to update a tooltip’s content – whether it’s open or closed.
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
         <button id="open">Update Content</button>
     </div>
-    
-    <script type="text/javascript">
-	$(function (){
-       $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web."
-			
-		});
-		 $("#open").ejButton({
-            size: "large",
-            showRoundedCorner: true,
-            click: "onClick",
 
+    <script type="text/javascript">
+        $(function (){
+            $("#test").ejTooltip(
+            {
+                content: "JavaScript is the programming language of HTML and the Web."
+            });
+            $("#open").ejButton({
+                size: "large",
+                showRoundedCorner: true,
+                click: "onClick"
+            });
         });
-	});
-	function onClick(args){
-		tip = $("#test").data("ejTooltip");
-        tip.setModel({ content: "JavaScript" });
-        tip.show();
-	}
-	</script>
+        function onClick(args){
+            tip = $("#test").data("ejTooltip");
+            tip.setModel({ content: "JavaScript" });
+            tip.show();
+        }
+    </script>
     
 {% endhighlight %}
 
@@ -262,7 +251,7 @@ None (Default)<br/></td><td>
 Tooltip will be hidden when mouse leaves the target element.<br/></td></tr>
 </table>
 
-## Auto
+### Auto
 
 The tooltip will be visible only for the period of time specified in the [autoCloseTimeout](http://help.syncfusion.com/js/api/ejtooltip#members:autoclosetimeout).
 
@@ -270,25 +259,25 @@ Let see an example, this Tooltip will only hide after hovering the target for 20
 
 {% highlight html %}
 
-     <div class="control">
+    <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
- 
+
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-			 closeMode : "auto",
-			 autoCloseTimeout : 2000
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            closeMode : "auto",
+            autoCloseTimeout : 2000
+        });
     </script>
     
 {% endhighlight %}
 
 N> Time specified in the autoCloseTimeout will be in milliseconds and the default value is 4000ms
 
-## Sticky
+### Sticky
 
 A close button will be shown with the Tooltip. The button element (i.e. close button) located by default at the top right of the Tooltip or titlebar (if title is enabled). The tooltip gets closed when the button is clicked.
 
@@ -297,15 +286,15 @@ A close button will be shown with the Tooltip. The button element (i.e. close bu
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
- 
+
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             width : "200px",
-			 closeMode : "sticky"
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            width : "200px",
+            closeMode : "sticky"
+        });
     </script>
 
 {% endhighlight %}
@@ -319,16 +308,16 @@ You can also have Tooltip with a title, in which case the button will lye within
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
- 
+
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-			 width : "200px",
-			 title : "JavaScript",
-			 closeMode : "sticky"
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            width : "200px",
+            title : "JavaScript",
+            closeMode : "sticky"
+        });
     </script>
 
 {% endhighlight %}

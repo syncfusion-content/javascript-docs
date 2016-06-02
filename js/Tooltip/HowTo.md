@@ -90,47 +90,46 @@ Render the employees table and create the tooltip. Once the tooltip created, the
         </table>
     </div>
     
-        <script type="text/javascript">
-            var content;
-            var target = $("#details").ejTooltip(
-            {
-                target: ".e-info",
-				content: " ",
-                beforeOpen: "onOpen",
-				width : "350px",
-				height: "128px",
-				position :{
-					target : {horizontal :"right", vertical :"bottom"},
-					stem :{horizontal:"left", vertical:"top"}
-				}
-				
-            }).data("ejTooltip");
-            function onOpen(args) {
-                proxy = args;
-                $.ajax({
-                    dataType: "json",
-                    url: "tooltipData.js",
-                    success: function (result) {
-                        var emp = [
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/2.png" },
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/4.png" },
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/8.png" },
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/3.png" },
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/1.png" },
-                            { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/6.png" },
-                        ];
-                        for (i = 0; i < result.length ; i++) {
-                            if (result[i].LastName == $(proxy.event.target).attr("data-content"))
-                                content = '<div class="main"> <img src=' + emp[i].photo + ' class="logo"/><div class="des"><table> <tr> <th> ' + result[i].TitleOfCourtesy + ' ' + result[i].LastName + '</th> </tr> <tr> <td> Title </td> <td>&nbsp;&nbsp;: ' + result[i].Title + '</td> </tr> <tr><td> Address</td><td>&nbsp;&nbsp;: ' + result[i].Address + '</td> </tr><tr> <td> City </td> <td>&nbsp;&nbsp;: ' + result[i].City + '</td> </tr> <tr> <td> PostalCode </td> <td>&nbsp;&nbsp;: ' + result[i].PostalCode + '</td> </tr> </table></div></div>';
-                        }
-                        target.setModel({ content: content });
-    
-                    }
-                });
-                target.show(args.event.target);
-                args.cancel = true;
+    <script type="text/javascript">
+        var content;
+        var target = $("#details").ejTooltip(
+        {
+            target: ".e-info",
+            content: " ",
+            beforeOpen: "onOpen",
+            width : "350px",
+            height: "128px",
+            position :{
+                target : {horizontal :"right", vertical :"bottom"},
+                stem :{horizontal:"left", vertical:"top"}
             }
-        </script>
+            
+        }).data("ejTooltip");
+        function onOpen(args) {
+            proxy = args;
+            $.ajax({
+                dataType: "json",
+                url: "tooltipData.js",
+                success: function (result) {
+                    var emp = [
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/2.png" },
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/4.png" },
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/8.png" },
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/3.png" },
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/1.png" },
+                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/6.png" },
+                    ];
+                    for (i = 0; i < result.length ; i++) {
+                        if (result[i].LastName == $(proxy.event.target).attr("data-content"))
+                            content = '<div class="main"> <img src=' + emp[i].photo + ' class="logo"/><div class="des"><table> <tr> <th> ' + result[i].TitleOfCourtesy + ' ' + result[i].LastName + '</th> </tr> <tr> <td> Title </td> <td>&nbsp;&nbsp;: ' + result[i].Title + '</td> </tr> <tr><td> Address</td><td>&nbsp;&nbsp;: ' + result[i].Address + '</td> </tr><tr> <td> City </td> <td>&nbsp;&nbsp;: ' + result[i].City + '</td> </tr> <tr> <td> PostalCode </td> <td>&nbsp;&nbsp;: ' + result[i].PostalCode + '</td> </tr> </table></div></div>';
+                    }
+                    target.setModel({ content: content });
+                }
+            });
+            target.show(args.event.target);
+            args.cancel = true;
+        }
+    </script>
         
 {% endhighlight %}
 
@@ -149,18 +148,18 @@ Defines the style for the tooltip layout and table as follows.
             width: 100%;
         }
 
-       .frame th, .frame td {
+        .frame th, .frame td {
             text-align: left;
             padding: 8px;
         }
 
         .logo {
             float: left;
-           width: 100px;
+            width: 100px;
             height: 114px;
         }
 
-       .frame tr:nth-child(even) {
+        .frame tr:nth-child(even) {
             background-color: #f2f2f2;
         }
 
@@ -168,7 +167,7 @@ Defines the style for the tooltip layout and table as follows.
             background-color: #4CAF50;
             color: white;
         }
-		
+        
         .des {
             width: 230px;
             float: right;
@@ -203,12 +202,10 @@ Render the slider control and finds its handle to render the Tooltip as follows
         </div>
     </div>
     
-     <script>
-     
+    <script>
+
         $(function () {
-
             var loanvalue = 100;
-
             $("#loanSlider").ejSlider({
                 height: 16,
                 value: loanvalue,
@@ -216,19 +213,18 @@ Render the slider control and finds its handle to render the Tooltip as follows
                 minValue: 10,
                 maxValue: 1000,
                 incrementStep: 10,
-				change: "onSlide",
+                change: "onSlide",
                 slide: "onSlide",
-				stop : "onStop"
+                stop : "onStop"
             });
             //Create the Tooltip
             var loadTip = $($('#loanSlider').find(".e-handle")).ejTooltip({
                 content: "$ " + loanObj.getValue().toString(),
                 showRoundedCorner: true,
                 isBalloon : false
-                
             }).data("ejTooltip");
-            
-         });
+        });
+
     </script>
     
 {% endhighlight %}
@@ -237,17 +233,17 @@ Once the handler in the slider, start its sliding the below function will be tri
 
 {% highlight html %}
 
-    function onSlide(args) {
-		
-        this.wrapper.prev().children('span.value').html(args.value);
-        var target = "#" + args.id, value = args.value.toString();
-        if(args.id == "loanSlider")
-        	value =  "$ " +value;
-        var tipWidth = (value < 10) ? "13px" : (10 <= value >= 100) ? "25px" : "auto";
-        var tipObj = $($("div" + target).find(".e-handle")).data("ejTooltip");
-        tipObj.setModel({content : value, width : tipWidth});
-        tipObj.show($("div" + target).find(".e-handle"));
-    } 
+        function onSlide(args) {
+            
+            this.wrapper.prev().children('span.value').html(args.value);
+            var target = "#" + args.id, value = args.value.toString();
+            if(args.id == "loanSlider")
+                value =  "$ " +value;
+            var tipWidth = (value < 10) ? "13px" : (10 <= value >= 100) ? "25px" : "auto";
+            var tipObj = $($("div" + target).find(".e-handle")).data("ejTooltip");
+            tipObj.setModel({content : value, width : tipWidth});
+            tipObj.show($("div" + target).find(".e-handle"));
+        } 
 
 {% endhighlight %}
 
@@ -255,13 +251,13 @@ Once the sliding is stopped, the Tooltip will be shown for the particular period
 
 {% highlight html %}
 
-    function onStop(args){
-		setTimeout( function(){ 
-			var target = "#" + args.id;
-			var tipObj = $($("div" + target).find(".e-handle")).data("ejTooltip");
-			tipObj.hide();
-		}, 1000);
-	}
+        function onStop(args){
+            setTimeout( function(){ 
+                var target = "#" + args.id;
+                var tipObj = $($("div" + target).find(".e-handle")).data("ejTooltip");
+                tipObj.hide();
+            }, 1000);
+        }
         
 {% endhighlight %}
 
@@ -275,29 +271,25 @@ Styling the Tip's background and border colours is done using "cssClass" API of 
 
     <div class="frame">
         <div class="img" id="custom">
-			
-			<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" alt="Roslyn Succinctly" >
-			
-			<div class="desc">Roslyn Succinctly</div>
-		</div>
+            <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" alt="Roslyn Succinctly" >
+            <div class="desc">Roslyn Succinctly</div>
+        </div>
     </div>
-    <script type="text/javascript">
-        $(function () {
-
-           target = $("#custom").ejTooltip({
-                    content : "Learn to use the Python language to create programs of all kinds to creating practical applications.",
-                    width: "200px",
-                    tip :{
-                        size : { width : 25, height : 12}
-                    },
-                    position :{
-                        stem: {	horizontal: "left", vertical: "center" },
-                        target: { horizontal : "right", vertical : "center",
-                        },
-                    }
-                }).data("ejTooltip");
-        });
-    </script>
+<script type="text/javascript">
+    $(function () {
+        target = $("#custom").ejTooltip({
+            content : "Learn to use the Python language to create programs of all kinds to creating practical applications.",
+            width: "200px",
+            tip :{
+                size : { width : 25, height : 12}
+            },
+            position :{
+                stem: {	horizontal: "left", vertical: "center" },
+                target: { horizontal : "right", vertical : "center"}
+            }
+        }).data("ejTooltip");
+    });
+</script>
     
 {% endhighlight %}
 
@@ -305,31 +297,23 @@ Defines the style for the tip as follow as
 
 {% highlight html %}
     
-     <style>
+    <style>
         div.img {
-			border: 1px solid #ccc;
-			width: 159px;
-			height: 213px;
-			left: 35%;
-			position: relative;
-			top: 20%;
-		}
+            border: 1px solid #ccc;
+            width: 159px;
+            height: 213px;
+            left: 35%;
+            position: relative;
+            top: 20%;
+        }
         div.img img{
-			width: 159px;
-			height: 179px;
-		}
-		div.desc {
-			padding: 8px;
-			text-align: center;
-		}
-		.e-arrowRightCenter:before {
-			border-width: 7px;
-			margin-top: -7px;
-		}
-		.e-arrowRightCenter:after {
-			border-width: 6px;
-			margin-top: -6px;
-		}
+            width: 159px;
+            height: 179px;
+        }
+        div.desc {
+            padding: 8px;
+            text-align: center;
+        }
     </style>
     
 {% endhighlight %}
@@ -377,14 +361,8 @@ The example below demonstrates how to create a Tooltip for multiple targets elem
             width: "180px",
             height: "30px",
             position: {
-                stem: {
-                    horizontal: "left",
-                    vertical: "center"
-                },
-                target: {
-                    horizontal: "right",
-                    vertical: "center",
-                },
+                stem: { horizontal: "left", vertical: "center"},
+                target: { horizontal: "right", vertical: "center"}
             },
             target: ".e-info"
         });
@@ -412,29 +390,25 @@ Apply the following styles to the form element.
             padding: 15px;
             text-align: left;
         }
-
         #form {
             position: absolute;
             left: 200px;
         }
-
         fieldset {
             border: 1px solid #D9DEDD;
             padding: 15px;
             width: 400px;
         }
-
         .info {
             font-weight: bold;
         }
-
         #sample {
             margin-right: 50px;
         }
-
         .e-button {
             margin: 10px;
         }
+        
     </style>
     
 {% endhighlight %}
@@ -450,15 +424,15 @@ Using this property, Links can be provided in Tooltip content where user can nav
     <div class="control">
         TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
     </div>
- 
+
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             closeMode : "auto",
-             autoCloseTimeout: 2000
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            closeMode : "auto",
+            autoCloseTimeout: 2000
+        });
     </script>
     
 {% endhighlight %}

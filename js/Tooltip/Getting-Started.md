@@ -9,7 +9,7 @@ keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 ---
 # Getting started
 
-##Preparing HTML document
+## Preparing HTML document
 
 The Tooltip control has the following list of external JavaScript dependencies. 
 
@@ -74,21 +74,19 @@ The Tooltip can be created from any HTML element with the HTML `id` attribute an
 
 {% highlight html %}
  
-    <div class="frame">
-                   
-		<div class="img" id="sample">
-		  <a target="_blank" href="image/taj.png">
-			<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
-		  </a>
-		  <div class="desc">Delphi Succinctly</div>
-		</div>
-
+    <div class="frame">    
+        <div class="img" id="sample">
+            <a target="_blank" href="image/taj.png">
+            <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+            </a>
+            <div class="desc">Delphi Succinctly</div>
+        </div>
     </div>
  
     // Creates the Tooltip
     <script>
         $("#sample").ejTooltip({
-                content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms."
+            content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms."
         });
     </script>
 
@@ -107,12 +105,10 @@ Apply the following style sheet
             position: relative;
             top: 20%;
         }
-
         div.img img {
             width: 159px;
             height: 179px;
         }
-
         div.desc {
             padding: 8px;
             text-align: center;
@@ -136,14 +132,13 @@ Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ej
     // Creates the Tooltip
     <script>
         $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             width: "100px",
-             height: "100px"
-		});
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            width: "100px",
+            height: "100px"
+        });
     </script>
     
-
 {% endhighlight %}
 
 ## Tooltip Appearance 
@@ -153,21 +148,21 @@ You can configure the appearance of the Tooltip with the title, close button and
 {% highlight html %}
  
     <div class="img" id="sample">
-	  <a target="_blank" href="image/taj.png">
-		<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
-	  </a>
-	  <div class="desc">Delphi Succinctly</div>
-	</div>
+        <a target="_blank" href="image/taj.png">
+        <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+        </a>
+        <div class="desc">Delphi Succinctly</div>
+    </div>
  
     // Creates the Tooltip
     <script>
         $("#sample").ejTooltip({
-                content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.",
-				title: "Delphi Succinctly",
-				width : "180px",
-				closeMode : "sticky",
-                isBalloon : false
-            });
+            content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.",
+            title: "Delphi Succinctly",
+            width : "180px",
+            closeMode : "sticky",
+            isBalloon : false
+        });
     </script>
     
 {% endhighlight %}
@@ -178,22 +173,20 @@ Apply the following styles to show the Tooltip.
 
     <style>
         div.img {
-			
-		    border: 1px solid #ccc;
-			float: left;
-			box-sizing: border-box;
-			height: 200px;
-			width: 146px;
-		
-		}
-		div.img img{
-			width: 100%;
-			height: 166px;
-		}
-		div.desc {
-			padding: 6px;
-			text-align: center;
-		}
+            border: 1px solid #ccc;
+            float: left;
+            box-sizing: border-box;
+            height: 200px;
+            width: 146px;
+        }
+        div.img img{
+            width: 100%;
+            height: 166px;
+        }
+        div.desc {
+            padding: 6px;
+            text-align: center;
+        }
     </style>
     
 {% endhighlight %}
