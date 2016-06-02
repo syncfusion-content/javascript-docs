@@ -1237,7 +1237,7 @@ Shows the Tooltip popup for the given target element with the specifed effect.
 </tr>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type">JQuery Element</span></td>
+<td class="type"><span class="param-type">jQuery</span></td>
 <td class="description"><span class="optional">optional</span>Tooltip will be shown for the given element</td>
 </tr>
 </tbody>
