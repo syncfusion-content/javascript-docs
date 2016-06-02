@@ -1352,20 +1352,6 @@ Fires when Scroller control is created.
 <tbody>
 <tr>
 <td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from scroller
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
@@ -1384,10 +1370,7 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1440,21 +1423,6 @@ Fires when Scroller control is destroyed.
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from scroller
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td class="name">
 cancel</td>
@@ -1475,10 +1443,7 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1523,20 +1488,6 @@ $("#scrollcontent").ejScroller({
 
  It will fire when mouse trackball has been start to wheel.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from scroller
 <table class="params">
 <thead>
 <tr>
@@ -1637,20 +1588,6 @@ It fires whenever the mouse wheel is rotated either in upwards or downwards
 <tbody>
 <tr>
 <td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from scroller
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
@@ -1687,10 +1624,7 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 #### Example
@@ -1746,20 +1680,6 @@ It will fire when mouse trackball has been stop to wheel.
 <tbody>
 <tr>
 <td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from scroller
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
@@ -1795,10 +1715,6 @@ scrollData</td>
 <td class="description">returns the current data related to the event.</td>
 </tr>
 <tr>
-</tbody>
-</table>
-</td>
-</tr>
 </tbody>
 </table>
 
