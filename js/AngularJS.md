@@ -308,3 +308,22 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
   </body>
 
 {% endhighlight %}
+
+## Widget Configuration in Controller
+
+We can able to access whole `ej` widgets configuration in controller. please find the code example:
+
+{% highlight html %}
+  <body ng-controller="DatePickerCtrl">
+    <input id="mydatepicker" ej-datepicker="dateSettings" />
+
+    <script type="text/javascript">
+        angular.module('DateCtrl', ['ejangular'])
+           .controller('DatePickerCtrl', ["$scope", function ($scope) {
+               $scope.dateSettings = { value: new Date(2013, 06, 28), dateFormat: "MM/dd/yyyy" }
+           }]);
+    </script>
+    
+  </body>
+
+{% endhighlight %}
