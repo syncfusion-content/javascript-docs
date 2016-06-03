@@ -40,7 +40,7 @@ Add link to the CSS file from the specific [theme](http://help.syncfusion.com/js
 
     <meta charset="utf-8" />
     <title>Getting Started - ListBox </title>
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
 
 {% endhighlight %}
@@ -55,7 +55,7 @@ Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with depe
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 
 
 {% endhighlight %}

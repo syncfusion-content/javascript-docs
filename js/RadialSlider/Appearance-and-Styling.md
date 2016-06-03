@@ -51,13 +51,13 @@ Add the following code in your **HTML** page to render the RadialSlider.
     <head>
         <title>RadialSlider - cssClass</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-        <link href="http://cdn.syncfusion.com/13.4.0.53/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-        <link href="http://cdn.syncfusion.com/13.4.0.58/js/web/responsive-css/ej.responsive.css" rel="stylesheet"/>
+        <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"/>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>	
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js" type="text/javascript"></script>
-        <script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.web.all.min.js" type="text/javascript"></script>    
-        <script src="http://cdn.syncfusion.com/13.4.0.53/js/common/ej.widget.angular.min.js" type="text/javascript"></script>
+        <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>    
+        <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.widget.angular.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="radialSlider">
