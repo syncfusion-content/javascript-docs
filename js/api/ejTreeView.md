@@ -7961,5 +7961,59 @@ $("#treeView").ejTreeView({
 </script>{% endhighlight %}
 
 
+### ready
+{:#events:ready}
 
+
+Fires when TreeView nodes are loaded successfully
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+ cancel </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<td class="name"> 
+ element </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the TreeView element.</td>
+</tr>
+<tr>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name"> 
+ type </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with ready event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    ready: function(args) {}
+});
+</script>{% endhighlight %}
 
