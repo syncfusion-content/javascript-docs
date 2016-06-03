@@ -720,7 +720,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
  
 	<script>
 	//To set negativePattern API value during initialization 
-	    $("#numeric").ejNumericTextbox({ negativePattern:"( n) , value:-5 });         //output: ( 5)
+	    $("#numeric").ejNumericTextbox({ negativePattern:"( n)", value:-5 });         //output: ( 5)
         $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
         $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 minValue:-600 });  //output: -505 $                       
 	</script>{% endhighlight %} 

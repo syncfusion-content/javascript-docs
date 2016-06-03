@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-**Essential JavaScript CurrencyTextBox** is used to display only currency values. it has Spin buttons to increase or decrease the values in the Text Box.
+**Essential JavaScript CurrencyTextBox** is used to display only currency values. It has Spin buttons to increase or decrease the values in the Text Box.
 
 **Key Features**
 
