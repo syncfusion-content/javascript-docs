@@ -22788,6 +22788,35 @@ series : [{visibility: "hidden" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
+### series.name `string`
+{:#members:series.name}
+
+
+
+
+Represent the name of the series, that is to be displayed in legend.
+
+
+
+#### Default Value
+
+
+
+ * ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series : [{name: "India" }]                   
+});
+{% endhighlight %} 
 
 
 ### series.visibleOnLegend `string`
