@@ -75,8 +75,6 @@ Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
 
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
