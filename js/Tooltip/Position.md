@@ -16,23 +16,23 @@ Lets position the Tooltips (stems) left center corner at the right center of the
 
 {% highlight html %}
  
-    <div class="img" id="sample">
-	  <a target="_blank" href="image/taj.png">
-		<img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
-	  </a>
-	  <div class="desc">Delphi Succinctly</div>
-	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#sample").ejTooltip({
-                content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.",
-				position : {
-					stem : {horizontal :"left", vertical : "center"},
-					target :{horizontal: "right", vertical: "center"}
-				 }
-            });
-    </script>
+<div class="img" id="sample">
+    <a target="_blank" href="image/taj.png">
+        <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+    </a>
+    <div class="desc">Delphi Succinctly</div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#sample").ejTooltip({
+        content: "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.",
+        position : {
+            stem : {horizontal :"left", vertical : "center"},
+            target :{horizontal: "right", vertical: "center"}
+            }
+    });
+</script>
     
 {% endhighlight %}
 
@@ -40,25 +40,23 @@ Apply the following styles to show the Tooltip.
 
 {% highlight html %}
 
-    <style>
-        div.img {
-			
-		    border: 1px solid #ccc;
-			float: left;
-			box-sizing: border-box;
-			height: 200px;
-			width: 146px;
-		
-		}
-		div.img img{
-			width: 100%;
-			height: 166px;
-		}
-		div.desc {
-			padding: 6px;
-			text-align: center;
-		}
-    </style>
+<style>
+    div.img {
+        border: 1px solid #ccc;
+        float: left;
+        box-sizing: border-box;
+        height: 200px;
+        width: 146px;
+    }
+    div.img img{
+        width: 100%;
+        height: 166px;
+    }
+    div.desc {
+        padding: 6px;
+        text-align: center;
+    }
+</style>
     
 {% endhighlight %}
 
@@ -74,20 +72,20 @@ Let's append our Tooltip to a custom 'frame' container:
 
 {% highlight html %}
  
-     	<div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             containment: ".frame"
-		});
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        containment: ".frame"
+    });
+</script>
     
 {% endhighlight %}
 
@@ -101,64 +99,86 @@ N> By default all Tooltips are appended to the document.body element.
  
  {% highlight html %}
  
-     	<div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web."
-		});
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web."
+    });
+</script>
     
 {% endhighlight %}
  
 We can also position the Tooltip in relation to the mouse.
  
- {% highlight html %}
+{% highlight html %}
  
-    <div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             associate : "mouse"
-		});
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        associate : "mousefollow"
+    });
+</script>
     
 {% endhighlight %}
+
+Position the tooltip at the current mouse position, once enter to the target element as follows
+
+{% highlight html %}
+ 
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        associate : "mouseenter"
+    });
+</script>
+    
+{% endhighlight %}
+
 
 It also possible to place the tooltip relation to the window as follows
 
 {% highlight html %}
  
-    <div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             associate : "window",
-			 position : {
-				target : {horizontal : "right", vertical: "bottom"}
-			 }
-		});
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        associate : "window",
+        position : {
+            target : {horizontal : "right", vertical: "bottom"}
+        }
+    });
+</script>
     
 {% endhighlight %}
     
@@ -166,23 +186,23 @@ And last but not least, absolute positioning via X,Y co-ordinates e.g. a Tooltip
 
 {% highlight html %}
  
-    <div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             associate : "axis",
-			 position : {
-				target : {horizontal : 10, vertical: 10}
-			 }
-		});
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        associate : "axis",
+        position : {
+            target : {horizontal : 10, vertical: 10}
+        }
+    });
+</script>
     
 {% endhighlight %}
 
@@ -217,19 +237,19 @@ Does not apply any collision detection.<br/></td></tr>
 
 {% highlight html %}
  
-    <div class="frame">
-    	    <div class="control">
-    	        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-    	    </div>
-    	</div>
- 
-    // Creates the Tooltip
-    <script>
-        $("#test").ejTooltip(
-		{
-		     content: "JavaScript is the programming language of HTML and the Web.",
-             collision : "fit"
-         });
-    </script>
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+</div>
+
+// Creates the Tooltip
+<script>
+    $("#test").ejTooltip(
+    {
+        content: "JavaScript is the programming language of HTML and the Web.",
+        collision : "fit"
+    });
+</script>
     
 {% endhighlight %}
