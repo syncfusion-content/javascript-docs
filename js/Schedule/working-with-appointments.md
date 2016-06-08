@@ -1527,7 +1527,7 @@ It holds the binding name for <b>customStyle</b> field in the blockout dataSourc
 
 <script>
     $(function() {
-            $("#Schedule1").ejSchedule({
+            $("#schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
                 //Configure the blockout settings
                 blockoutSettings: {
@@ -1577,7 +1577,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 
 <script>
         $(function () {
-            $("#Schedule").ejSchedule({
+            $("#schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
                 //Configure the blockout settings
                 blockoutSettings: {
@@ -1625,7 +1625,7 @@ The [blockoutSettings](/js/api/ejschedule#members:blocktimesettings) holds the b
 
 <script>
     $(function() {
-            $("#Schedule1").ejSchedule({
+            $("#schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 5),
                 blockoutSettings: {
                     enable: true,
@@ -1660,7 +1660,7 @@ The [blockoutSettings](/js/api/ejschedule#members:blocktimesettings) holds the b
 
 <script>
         $(function () {
-            $("#Schedule").ejSchedule({
+            $("#schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 2),
                 group: {
                     resources: ["Owners"]
