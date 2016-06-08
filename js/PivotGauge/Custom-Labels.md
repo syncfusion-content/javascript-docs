@@ -3,7 +3,7 @@ layout: post
 title: Custom-Labels
 description: custom labels
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 ## Adding Custom Label Collection
 
-Custom label collection can be directly added to the scales option within the OlapGauge widget as an array.
+Custom label collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -43,8 +43,8 @@ The appearance of the custom labels can be changed through the following propert
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -71,12 +71,12 @@ $("#OlapGauge1").ejOlapGauge({
 
 ## Multiple Custom Labels
 
-Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the `customLabels` option. 
+Multiple custom labels can be set to an PivotGauge widget by adding an array of objects within the `customLabels` option. 
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...

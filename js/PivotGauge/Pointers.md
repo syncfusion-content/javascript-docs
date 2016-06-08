@@ -3,7 +3,7 @@ layout: post
 title: Pointers
 description: pointers
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer Types
 
-OlapGauge pointers has two types such as,
+PivotGauge pointers has two types such as,
 	
 * Needle
 * Marker
@@ -20,8 +20,8 @@ Needle type pointers are the default pointers which is always located at the cen
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -41,8 +41,8 @@ For marker pointer, the available shapes are rectangle, triangle, ellipse, diamo
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -60,12 +60,12 @@ $("#OlapGauge1").ejOlapGauge({
 
 ## Adding Pointer Collection
 
-Pointer collection can be directly added to the scales option within the OlapGauge widget as an array.
+Pointer collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -97,8 +97,8 @@ The appearance of the pointer can be customized through the following properties
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -145,8 +145,8 @@ N> Both the properties can be applied only if the pointer type is set to "marker
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -170,8 +170,8 @@ It is possible to replace the pointers with image. To view the pointers as image
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -196,7 +196,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 ## Pointer Value Text
 
-To display the current value of the pointers in OlapGauge widget, `pointerValueText` option inside pointers is used.  Following are the properties used to enable and customize the pointer value text.
+To display the current value of the pointers in PivotGauge widget, `pointerValueText` option inside pointers is used.  Following are the properties used to enable and customize the pointer value text.
  
 * **showValue** – enables the pointer value text by setting the property to “true”. By default, its value is “true”.
 * **distance** – sets the distance between pointer and text.
@@ -207,8 +207,8 @@ To display the current value of the pointers in OlapGauge widget, `pointerValueT
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...

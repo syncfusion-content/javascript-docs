@@ -3,7 +3,7 @@ layout: post
 title: Labels
 description: labels 
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 ## Adding Label Collection
 
-Label collection can be directly added to the scales option within the OlapGauge widget as an array.
+Label collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -42,8 +42,8 @@ The appearance of the Label can be customized through the following properties.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -84,8 +84,8 @@ The `unitText` property is used to add some text along with the labels. Normally
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...

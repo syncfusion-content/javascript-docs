@@ -3,7 +3,7 @@ layout: post
 title: Ticks
 description: ticks
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 ## Adding Tick Collection
 
-Tick collection can be directly added to the scales option within the OlapGauge widget as an array.
+Tick collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -43,8 +43,8 @@ The appearance of the tick can be customized through the following properties.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...

@@ -3,7 +3,7 @@ layout: post
 title: Scale
 description: scale
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 ## Adding Scale
 
-Scale can be added within the OlapGauge widget as an array.
+Scale can be added within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         radius: 150
@@ -32,7 +32,7 @@ $("#OlapGauge1").ejOlapGauge({
 
 ### Pointer Cap
 
-Pointer Cap is a circular shape element that is located at the center of the OlapGauge. It can be customized with the `pointerCap` option inside scales. Following are the properties used to customize its appearance.
+Pointer Cap is a circular shape element that is located at the center of the PivotGauge. It can be customized with the `pointerCap` option inside scales. Following are the properties used to customize its appearance.
 
 * **radius** – sets the radius of the pointer cap.
 * **borderColor** – sets the color of the pointer cap border.
@@ -41,8 +41,8 @@ Pointer Cap is a circular shape element that is located at the center of the Ola
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -79,8 +79,8 @@ The `showIndicators`, `showTicks`, `showRanges`, `showPointers` and `showScaleBa
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
