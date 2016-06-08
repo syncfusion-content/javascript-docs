@@ -338,7 +338,7 @@ public class Global: System.Web.HttpApplication
 
 Now, PivotGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
-{% include image.html url="/js/PivotGauge/Getting-Started_images/PivotGauge.png" %}
+{% include image.html url="/js/PivotGauge/Getting-Started_images/OlapGauge.png" %}
 
 ###WCF
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding#wcf).
