@@ -3,27 +3,27 @@ layout: post
 title: Getting-Started
 description: getting started 
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
 # Getting Started 
 
-##Creating a simple application with OlapGauge
+##Creating a simple application with PivotGauge
 
-This section covers the information required to create a simple OlapGauge bound to OLAP datasource.
+This section covers the information required to create a simple PivotGauge bound to OLAP datasource.
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotGauge is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ###Project Initialization
-Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapGaugeDemo”**.
+Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotGaugeDemo”**.
 
 Next add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right-clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
 ###Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a OlapGauge widget inside a HTML page are highlighted in an appropriate order as follows,
+The scripts and style sheets that are mandatorily required to render a PivotGauge widget inside a HTML page are highlighted in an appropriate order as follows,
 
 1. ej.widgets.all.min.css
 2. jQuery-1.10.2.min.js
@@ -39,14 +39,14 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-In-order to initialize a OlapGauge widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for OlapGauge widget. Then you need to initialize the widget using ejOlapGauge method.
+In-order to initialize a PivotGauge widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotGauge widget. Then you need to initialize the widget using ejPivotGauge method.
     
 {% highlight html %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>OlapGauge - Getting Started</title>
+    <title>PivotGauge - Getting Started</title>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
@@ -56,14 +56,14 @@ In-order to initialize a OlapGauge widget, first you need to define a “div” 
 <body>
     <form id="form1" runat="server">
         <div>
-            <!--Creating a div tag, that acts as a container for ejOlapGauge widget.-->
-            <div id="OlapGauge" style="height: 350px; width: 100%; position:relative"> </div> //Setting properties and initializing ejOlapGauge widget.
+            <!--Creating a div tag, that acts as a container for ejPivotGauge widget.-->
+            <div id="PivotGauge" style="height: 350px; width: 100%; position:relative"> </div> //Setting properties and initializing ejPivotGauge widget.
             <script type="text/javascript">
                 $(function()
                 {
-                    $("#OlapGauge").ejOlapGauge(
+                    $("#PivotGauge").ejPivotGauge(
                     {
-                        url: "../OlapGauge",
+                        url: "../PivotGauge",
                         enableTooltip: true,
                         load: "loadGaugeTheme",
                         backgroundColor: "transparent",
@@ -179,29 +179,29 @@ In-order to initialize a OlapGauge widget, first you need to define a “div” 
 
 {% endhighlight %}
 
-The “url” property in OlapGauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapGauge widget as endpoint are WCF and WebAPI.
+The “url” property in PivotGauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGauge widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is “../OlapGaugeService”. Suppose if you are using WCF service, then the URL would look like "../OlapGaugeService.svc". 
+N> The above "GettingStarted.html" contains WebAPI URL, which is “../PivotGaugeService”. Suppose if you are using WCF service, then the URL would look like "../PivotGaugeService.svc". 
 
 ###WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapGaugeController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “PivotGaugeController.cs”, click **Add.**
 
 Now, WebAPI controller is added into your application successfully with the following file. The utilization of this file will be explained in the following sections.
  
-* OlapGaugeController.cs
+* PivotGaugeController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named as “OlapGaugeController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named as “PivotGaugeController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapGaugeController.cs` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `PivotGaugeController.cs` file.
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
-    public class OlapGaugeController: ApiController
+    public class PivotGaugeController: ApiController
     {
     
     }
@@ -224,7 +224,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapGaugeController.cs` file. 
+Following are the list of namespaces to be added on top of the main class inside `PivotGaugeController.cs` file. 
 
 {% highlight c# %}
 
@@ -234,9 +234,9 @@ using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
 using Syncfusion.JavaScript.Olap;
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
-    public class OlapGaugeController: ApiController
+    public class PivotGaugeController: ApiController
     {
     
     }
@@ -245,15 +245,15 @@ namespace OlapGaugeDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `OlapGaugeController.cs` file.
+Now, the connection string to connect OLAP Cube, PivotGauge and JavaScriptSerializer instances are created immediately inside the main class in `PivotGaugeController.cs` file.
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
-    public class OlapGaugeController: ApiController
+    public class PivotGaugeController: ApiController
     {
-        OlapGauge htmlHelper = new OlapGauge();
+        PivotGauge htmlHelper = new PivotGauge();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //Other codes
@@ -264,15 +264,15 @@ namespace OlapGaugeDemo
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside OlapGaugeController class, found inside `OlapGaugeController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside PivotGaugeController class, found inside `PivotGaugeController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
-    public class OlapGaugeController: ApiController
+    public class PivotGaugeController: ApiController
     {
-        OlapGauge htmlHelper = new OlapGauge();
+        PivotGauge htmlHelper = new PivotGauge();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         [System.Web.Http.ActionName("InitializeGauge")]
@@ -336,10 +336,10 @@ public class Global: System.Web.HttpApplication
 }
 {% endhighlight %}
 
-Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
+Now, PivotGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
+{% include image.html url="/js/PivotGauge/Getting-Started_images/PivotGauge.png" %}
 
 ###WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding#wcf).
   

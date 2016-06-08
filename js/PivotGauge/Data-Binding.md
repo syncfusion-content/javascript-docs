@@ -3,13 +3,13 @@ layout: post
 title: Data-Binding
 description: data binding
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
 #Data Binding 
 
-##Binding OlapGauge to Offline Cube
+##Binding PivotGauge to Offline Cube
 To connect an OLAP Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -19,7 +19,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapGauge to Cube in local SQL Server
+##Binding PivotGauge to Cube in local SQL Server
 To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -29,7 +29,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapGauge to Cube in online SQL Server
+##Binding PivotGauge to Cube in online SQL Server
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set host server link and database name needs to be set in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -39,7 +39,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapGauge to Cube in online Mondrian Server
+##Binding PivotGauge to Cube in online Mondrian Server
 To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -50,7 +50,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-##Binding OlapGauge to Cube in online ActivePivot Server
+##Binding PivotGauge to Cube in online ActivePivot Server
 To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -65,23 +65,23 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“OlapGaugeService.svc”**, click Add.
+To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“PivotGaugeService.svc”**, click Add.
  
 Now, WCF service is added into your application successfully with the following files. The utilization of these files are explained in the following sections.
 
-* OlapGaugeService.svc
-* OlapGaugeService.svc.cs
-* IOlapGaugeService.cs
+* PivotGaugeService.svc
+* PivotGaugeService.svc.cs
+* IPivotGaugeService.cs
 
 **Configuring WCF Service Class**
-Remove the “DoWork” method present inside both OlapGaugeService.svc.cs and IOlapGaugeService.cs files. Next, add **AspNetCompatibilityRequirements** attribute on top of main class present inside `OlapGaugeService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the “DoWork” method present inside both PivotGaugeService.svc.cs and IPivotGaugeService.cs files. Next, add **AspNetCompatibilityRequirements** attribute on top of main class present inside `PivotGaugeService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapGaugeService: IOlapGaugeService
+    public class PivotGaugeService: IPivotGaugeService
     {
     
     }
@@ -105,7 +105,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `OlapGaugeService.svc.cs` file.
+The following are the list of namespaces to be added on top of the main class inside `PivotGaugeService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -115,10 +115,10 @@ using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript.Olap;
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapGaugeService: IOlapGaugeService
+    public class PivotGaugeService: IPivotGaugeService
     {
     
     }
@@ -128,15 +128,15 @@ namespace OlapGaugeDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `OlapGaugeService.svc.cs` file.
+Now the connection string to connect OLAP Cube, PivotGauge and JavaScriptSerializer instances are created immediately inside the main class in `PivotGaugeService.svc.cs` file.
 
 {% highlight c# %}
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapGaugeService: IOlapGaugeService
+    public class PivotGaugeService: IPivotGaugeService
     {
-        OlapGauge htmlHelper = new OlapGauge();
+        PivotGauge htmlHelper = new PivotGauge();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //Other codes
@@ -147,14 +147,14 @@ namespace OlapGaugeDemo
 
 **Service methods in WCF Service**
 
-First, define the service methods inside IOlapGaugeService interface, found in `IOlapGaugeService.cs` file, created while adding WCF Service to your Web Application.
+First, define the service methods inside IPivotGaugeService interface, found in `IPivotGaugeService.cs` file, created while adding WCF Service to your Web Application.
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
     [ServiceContract]
-    public interface IOlapGaugeService
+    public interface IPivotGaugeService
     {
         [OperationContract]
         Dictionary < string, object > InitializeGauge(string action, string customObject);
@@ -163,26 +163,26 @@ namespace OlapGaugeDemo
 
 {% endhighlight %}
 
-Secondly, elaborate the service methods inside the main class, found in `OlapGaugeService.svc.cs` file
+Secondly, elaborate the service methods inside the main class, found in `PivotGaugeService.svc.cs` file
 
 {% highlight c# %}
 
-namespace OlapGaugeDemo
+namespace PivotGaugeDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapGaugeService: IOlapGaugeService
+    public class PivotGaugeService: IPivotGaugeService
     {
-        OlapGauge htmlHelper = new OlapGauge();
+        PivotGauge htmlHelper = new PivotGauge();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        //This method provides the required information from server-side for initializing the OlapGauge.
+        //This method provides the required information from server-side for initializing the PivotGauge.
         public Dictionary < string, object > InitializeGauge(string action, string customObject)
             {
                 OlapDataManager DataManager = DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(CreateOlapReport());
                 return htmlHelper.GetJsonData(action, DataManager);
             }
-            //This method carries the information about the default report that is rendered within OlapGauge initially. 
+            //This method carries the information about the default report that is rendered within PivotGauge initially. 
         private OlapReport CreateOlapReport()
         {
             OlapReport report = new OlapReport();
@@ -236,7 +236,7 @@ namespace OlapGaugeDemo
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
 
-* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapGaugeService` contract and hence it is `OlapGaugeDemo.IOlapGaugeService`.
+* **Contract**: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IPivotGaugeService` contract and hence it is `PivotGaugeDemo.IPivotGaugeService`.
 * **Binding**: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * **behaviorConfiguration**: This property contains the name of the behavior to be used in the endpoint.
 
@@ -248,8 +248,8 @@ The endpointBehaviors are illustrated as follows.
     …… 
     ……
     <services>
-        <service name="OlapGaugeDemo.OlapGaugeService">
-            <endpoint address="" behaviorConfiguration="OlapGaugeDemo.OlapGaugeServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="OlapGaugeDemo.IOlapGaugeService" /> 
+        <service name="PivotGaugeDemo.PivotGaugeService">
+            <endpoint address="" behaviorConfiguration="PivotGaugeDemo.PivotGaugeServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotGaugeDemo.IPivotGaugeService" /> 
         </service>
     </services>
 </system.serviceModel>
@@ -262,7 +262,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 <system.serviceModel>
     <behaviors>
         <endpointBehaviors>
-            <behavior name="OlapGaugeDemo.OlapGaugeServiceAspNetAjaxBehavior">
+            <behavior name="PivotGaugeDemo.PivotGaugeServiceAspNetAjaxBehavior">
                 <enableWebScript /> 
             </behavior>
         </endpointBehaviors>
@@ -274,9 +274,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 {% endhighlight %}
 
 
-N> In this example, **“OlapGaugeDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“OlapGaugeService”** indicates the name of the WCF service created.
+N> In this example, **“PivotGaugeDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“PivotGaugeService”** indicates the name of the WCF service created.
 
-Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
+Now, PivotGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
+{% include image.html url="/js/PivotGauge/Getting-Started_images/OlapGauge.png" %}
 

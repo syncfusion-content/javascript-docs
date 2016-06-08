@@ -3,7 +3,7 @@ layout: post
 title: Ranges
 description: ranges
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 ## Adding Range Collection
 
-Range collection can be directly added to the scales option within the OlapGauge widget as an array.
+Range collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -46,8 +46,8 @@ Positioning the range could be set either through `placement` or `distanceFromSc
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
@@ -89,8 +89,8 @@ Multiple ranges can be added by placing an array of objects in `ranges` option.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
+$("#PivotGauge1").ejPivotGauge({
+    url: "../PivotGauge",
     //...
     scales: [{
         //...
