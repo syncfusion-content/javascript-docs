@@ -1561,7 +1561,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 $("#scrollcontent").ejScroller({
    wheelStart: function (args) {}
 });  
-</script>     {% endhighlight %}
+</script>     
+{% endhighlight %}
 
 
 
@@ -1653,7 +1654,8 @@ It can also send commands to the model to update the model's state (e.g., editin
 $("#scrollcontent").ejScroller({
    wheelMove: function (args) {}
 });  
-</script>     {% endhighlight %}
+</script>    
+ {% endhighlight %}
 
 
 
@@ -1745,4 +1747,5 @@ It can also send commands to the model to update the model's state (e.g., editin
 $("#scrollcontent").ejScroller({
    wheelStop: function (args) {}
 });  
-</script>     {% endhighlight %}
+</script>     
+{% endhighlight %}
