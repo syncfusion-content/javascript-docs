@@ -8022,7 +8022,9 @@ $("#treeView").ejTreeView({
         dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
         child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
     },
-    ready: function(args) {}
+    ready: function(args) {
+        alert("All TreeView nodes are loaded successfully.");
+    }
 });
 </script>
 {% endhighlight %}
