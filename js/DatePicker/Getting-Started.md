@@ -71,8 +71,6 @@ A simple html file with required CSS and script reference added to create DatePi
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
 
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
