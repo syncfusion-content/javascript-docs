@@ -8010,10 +8010,20 @@ Fires when TreeView nodes are loaded successfully
 
 <div id="treeView"></div>
 <script>
+// DataManager creation
+var dataManger = ej.DataManager({
+    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+});
+// Query creation
+var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 // Initialize TreeView with ready event.
 $("#treeView").ejTreeView({
-    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    fields: {
+        dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
+        child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
+    },
     ready: function(args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
