@@ -17,7 +17,7 @@ GroupButton provides the different types of modes called check box mode, radio b
 
 Setting a ButtonMode to radio, we can perform the only single action with all related actions in a group of button.
 
-Checkbox Mode :- Here, multiple button can be selected, please check with the below use case for this mode.
+** Checkbox Mode :** Here, multiple button can be selected, please check with the below use case for this mode.
 
 {% highlight html %}
 
@@ -51,8 +51,7 @@ Checkbox Mode :- Here, multiple button can be selected, please check with the be
 {% endhighlight %}
 
 {% highlight js %}
-
-       <script>
+    
 
             $("#groupButton").ejGroupButton({
 
@@ -62,14 +61,13 @@ Checkbox Mode :- Here, multiple button can be selected, please check with the be
 
             });
 
-        </script>
-
+       
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.jpeg)
 
 
-Radio Button Mode: Here, single button only can be selected, Please check with the below use case
+** Radio Button Mode:** Here, single button only can be selected, Please check with the below use case
 
 {% highlight html %}
 
@@ -127,7 +125,7 @@ The state of the button can be changed by clicking on the button. Also the selec
 
 This property will accept the array values and its value will be differ based on current mode of Button. If the Button mode is “Radio”, then the selected items can have single value within the array, since we can select a single button only in this mode. Whereas for the “checkbox” mode, the selectedItemIndex can have the multiple values within an array, since multiple button can be in active state in this mode.
 
-**Setting a selectedItemIndex for checkbox mode:**
+** Setting a selectedItemIndex for checkbox mode **
 
 {% highlight html %}
 
@@ -159,7 +157,7 @@ This property will accept the array values and its value will be differ based on
 
 {% endhighlight %}
 
-**Setting a selectedItemIndex for radio button mode**
+** Setting a selectedItemIndex for radio button mode**
 
 {% highlight js %}
 
@@ -182,11 +180,11 @@ This property will accept the array values and its value will be differ based on
 ![](Behavior-Settings_images/Behavior-Settings_img3.jpeg)
 
 
-**Select and deselect the button items using public method **
+## Select and deselect the button items using public method 
 
 Button items in GroupButton can be selected or deselected using available public methods “**selectItem**, **deselectItem**”. These two methods will get the index of targeted button as argument. 
 
-Select the Button Items:
+** Select the Button Items  **
 
 {% highlight html %}
 
@@ -240,7 +238,7 @@ Select the Button Items:
 
 {% endhighlight %}
 
-Deselect the Button Items:
+** Deselect the Button Items **
 
 {% highlight js %}
 
@@ -254,7 +252,7 @@ Deselect the Button Items:
 
 {% endhighlight %}
 
-**Select or deselect using id attribute:** 
+**Select or deselect using id attribute ** 
 
 You can select or deselect the button items based on id of the button items also. Please check with the below code example to know about the selection/deselection based on id attribute
 

@@ -17,9 +17,9 @@ List of predefined button size
 
 <table>
 <tr>
-<td>
-**Button Types**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Button Types<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Normal<br/><br/></td><td>
@@ -41,6 +41,7 @@ Creates GroupButton with inbuilt medium size height, width specified.<br/><br/><
 Large<br/><br/></td><td>
 Creates GroupButton with inbuilt large size height, width specified.<br/><br/></td></tr>
 </table>
+
 ## Set Dimension
 
 By default GroupButton has standard height and width. You can change this height and width by using height and width property respectively. 
@@ -76,9 +77,9 @@ List of content types for button
 
 <table>
 <tr>
-<td>
-**Content Types**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Content Types<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 textOnly<br/><br/></td><td>
@@ -100,6 +101,8 @@ Supports image with the text content.<br/><br/></td></tr>
 imageTextImage<br/><br/></td><td>
 Supports image with both ends and middle in text.<br/><br/></td></tr>
 </table>
+
+
 ## Icons
 
 GroupButton has the option to add the icons to button elements which enhance the appearance. Icons inside the button can be added easily using **prefixIcon** and **suffixIcon** fields with dataSource property. GroupButton control also supports the build-in icon libraries. The ej.widgets.core.min.css contains definitions for important icons that can be used in buttons. You can get the details about available icons with that corresponding class from [here](http://help.syncfusion.com/js/icon/ej-icons). 
