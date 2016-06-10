@@ -90,6 +90,56 @@ $('#slider').ejSlider();
 
 
 
+### allowMouseWheel `boolean`
+{:#members : allowmousewheel}
+
+
+
+
+
+
+
+
+Specifies the allowMouseWheel of the slider.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+### Example
+
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+//To set animationSpeed API value during initialization  
+$("#slider").ejSlider({ allowMouseWheel: true});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### animationSpeed `number`
 {:#members:animationspeed}
 
@@ -440,7 +490,7 @@ Specifies the height of the slider.
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
