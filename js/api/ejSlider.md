@@ -2128,3 +2128,28 @@ $("#slider").ejSlider({
 
 
 
+### tooltipChange
+{:#events:tooltipchange}
+
+
+
+
+Fires when display the custom tooltip
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+//stop event for slider control
+$("#slider").ejSlider({
+   tooltipChange: function (args) {}
+});
+</script>{% endhighlight %}
+

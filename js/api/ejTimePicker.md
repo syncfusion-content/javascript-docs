@@ -385,6 +385,51 @@ When the enableStrictMode is set as true it allows the value outside of the rang
 
 
 
+### disableTimes `object`
+{:#members:disabletimes}
+
+
+
+
+
+
+Specifies the disabled time ranges
+
+
+
+### Default value
+
+
+
+
+
+* {}
+
+
+
+
+
+
+#### Example
+
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+// Set the height value during initialization.                  
+        $("#timepicker").ejTimePicker({  disableTimes:[{startTime:"3:00 AM",endTime:"5:00 AM"}] });
+</script> 
+
+{% endhighlight %}
+
+
+
+
+
+
 ### height `string|number`
 {:#members:height}
 
