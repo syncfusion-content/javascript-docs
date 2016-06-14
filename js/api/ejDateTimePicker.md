@@ -1925,6 +1925,56 @@ Sets the DateTime value to the control.
 
 
 
+### watermarkText `string`
+{:#members:watermarktext}
+
+
+
+
+
+
+
+
+Specifies the water mark text to be displayed in input text.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* "Select date and time"
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set watermarkText during initialization  
+        $("#datetime").ejDateTimePicker({  watermarkText: "select value" });
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### width `string | number`
 {:#members:width}
 
@@ -2273,6 +2323,78 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
+### beforeclose
+{:#events:beforeclose}
+
+
+
+
+
+
+
+
+Fires before the datetime popup closed in the DateTimePicker.
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//change event for DateTimePicker
+$("#datetime").ejDateTimePicker({
+   beforeclose: function (args) {}
+}); 
+</script>  
+
+
+
+
+
+
+
+### beforeopen
+{:#events:beforeopen}
+
+
+
+
+
+
+
+
+Fires before the datetime popup open in the DateTimePicker.
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//change event for DateTimePicker
+$("#datetime").ejDateTimePicker({
+   beforeopen: function (args) {}
+}); 
+</script>  
+
+
+
+
+
+
+
+
 ### change
 {:#events:change}
 
@@ -2284,6 +2406,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 Fires when the datetime value changed in the DateTimePicker textbox.
+
 
 <table class="params">
 <thead>

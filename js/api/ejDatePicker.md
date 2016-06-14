@@ -1352,6 +1352,55 @@ Allows to toggles the read only state of the DatePicker. When the widget is read
 
 
 
+### showDisabledRange `boolean`
+{:members:showdisablerange}
+
+
+
+
+
+It allow to show/hide the disable date ranges
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set showDisabledRange API during initialization  
+        $("#datepicker").ejDatePicker({  showDisabledRange: false });
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 ### showFooter `boolean`
 {:#members:showfooter}
 
