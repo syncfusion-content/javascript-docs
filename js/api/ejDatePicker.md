@@ -1353,13 +1353,13 @@ Allows to toggles the read only state of the DatePicker. When the widget is read
 
 
 ### showDisabledRange `boolean`
-{:members:showdisablerange}
+{:members:showdisabledrange}
 
 
 
 
 
-It allow to show/hide the disable date ranges
+It allow to show/hide the disabled date ranges
 
 
 

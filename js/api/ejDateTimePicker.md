@@ -2336,6 +2336,48 @@ $("#datetime").ejDateTimePicker("show");
 Fires before the datetime popup closed in the DateTimePicker.
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the DateTimePicker model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event parameters from DateTimePicker.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">returns the DateTimePicker popup.</td>
+</tr>
+</tbody>
+</table>
+
+
 
 
 
@@ -2347,7 +2389,7 @@ Fires before the datetime popup closed in the DateTimePicker.
  
 <input type="text" id="datetime" />
 <script>
-//popup close event for DateTimePicker
+//popup before close event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    beforeClose: function (args) {}
 }); 
@@ -2368,10 +2410,50 @@ $("#datetime").ejDateTimePicker({
 
 
 
-
 Fires before the datetime popup open in the DateTimePicker.
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the DateTimePicker model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event parameters from DateTimePicker.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">returns the DateTimePicker popup.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -2382,7 +2464,7 @@ Fires before the datetime popup open in the DateTimePicker.
  
 <input type="text" id="datetime" />
 <script>
-//before open event for DateTimePicker
+//popup before open event for DateTimePicker
 $("#datetime").ejDateTimePicker({
    beforeOpen: function (args) {}
 }); 
