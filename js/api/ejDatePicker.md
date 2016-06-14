@@ -178,6 +178,37 @@ allow or restrict the drill down to multiple levels of view (month/year/decade) 
 
 
 
+### blackoutDates `object`
+
+
+Disable the Specified date value 
+
+
+
+
+### Default value
+
+
+
+
+* {}
+
+
+
+
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set buttonText API during initialization  
+        $("#datepicker").ejDatePicker({blackoutDates: [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)] });
+</script>{% endhighlight %}
+
+
+
 ### buttonText `string`
 {:#members:buttontext}
 
@@ -213,7 +244,7 @@ Sets the specified text value to the today button in the DatePicker calendar.
 <input type="text" id="datepicker" />
 <script>
 //To set buttonText API during initialization  
-        $("#datepicker").ejDatePicker({  buttonText : "Now" });
+        $("#datepicker").ejDatePicker({  buttonText : "Now"});
 </script>{% endhighlight %}
 
 
