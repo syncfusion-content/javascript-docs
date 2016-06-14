@@ -2733,6 +2733,70 @@ type</td>
 
 
 
+### create
+{:#events:create}
+
+
+Fires when FileExplorer control was created
+
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // copy event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        create: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
 ### copy
 {:#events:copy}
 
@@ -3018,6 +3082,74 @@ type</td>
         </script>
 
 {% endhighlight %}
+
+
+
+### destroy
+{:#events:destroy}
+
+
+
+
+
+
+
+
+Fires when the FileExplorer is destroyed successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // layoutChange event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        layoutChange: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
 
 
 

@@ -589,7 +589,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 

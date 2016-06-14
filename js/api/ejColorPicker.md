@@ -129,7 +129,7 @@ The ColorPicker control allows to define the customized text to displayed in but
 
 
 
-### buttonMode `enum`
+### buttonMode `enum|string`
 {:#members:buttonmode}
 
 <ts name="ej.ButtonMode"/>
@@ -188,7 +188,7 @@ Dropdown</td>
 
 
 
-### columns `number`
+### columns `number|string`
 {:#members:columns}
 
 
@@ -536,7 +536,7 @@ It allows to define the characteristics of the ColorPicker control. It will help
 
 
 
-### modelType `enum`
+### modelType `enum|string`
 {:#members:modeltype}
 
 
@@ -607,7 +607,7 @@ Picker</td>
 
 
 
-### opacityValue `number`
+### opacityValue `number|string`
 {:#members:opacityvalue}
 
 
@@ -660,7 +660,7 @@ This property allows to change the opacity value .The selected color opacity wil
 
 
 
-### palette `enum`
+### palette `enum|string`
 {:#members:palette}
 
 
@@ -733,7 +733,7 @@ CustomPalette</td>
 
 
 
-### presetType `enum`
+### presetType `enum|string`
 {:#members:presettype}
 
 

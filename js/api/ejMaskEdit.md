@@ -395,6 +395,36 @@ Specifies whether the error will show until correct value entered in the mask ed
     </script>
 
  {% endhighlight %}
+ 
+ 
+ 
+ ### showPromptChar `boolean`
+{:#members:showpromptchar}
+
+
+when showPromptChar is true, the hide the prompt characters are shown in focus of the control and hides in focusout of the control.
+
+
+#### Default Value
+
+
+* true
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <input id="mask" type="text" />
+
+    <script>
+        //To set showPromptChar API value during initialization
+        $("#mask").ejMaskEdit({showPromptChar: false });
+    </script>
+
+ {% endhighlight %}
 
 
 ### showRoundedCorner `boolean`
