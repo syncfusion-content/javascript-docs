@@ -39,13 +39,17 @@ $('#container').ejMap();
 
 #### Requires
 
-* module:jQuery
+* module:jQuery.js
 
-* module:ej.datavisualization.Map
+* module:ej.core.js
 
-* module:JsRender
+* module:ej.data.js
 
-* module:properties
+* module:ej.map.js
+
+* module:jsrender.js
+
+* module:properties.js
 
 
 ## Members
@@ -1271,42 +1275,6 @@ Specifies the datapath of shape
 {% endhighlight %}
 
 
-### layers.enableAnimation `boolean`
-{:#members:layers-enableanimation}
-
-Enables or disables the animation
-
-#### Default Value
-
-* false
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
-  
-// Set the enableAnimation during initialization.                       
-   $("#container").ejMap({layers: [{ enableAnimation:false }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the enableAnimation after initialization:
-   
-   //Gets the enableAnimation from map.
-   
-   var property =$("#container").data("ejMap").model.layers[layerIndex].enableAnimation;
-   
-   //Sets the enableAnimation to map.
-   
-   $("#container").data("ejMap").model.layers[layerIndex].enableAnimation  = false;
-
-{% endhighlight %}
-
-
 ### layers.enableMouseHover `boolean`
 {:#members:layers-enablemousehover}
 
@@ -2481,7 +2449,7 @@ Specifies the map items template for shapes.
 
 
 ### layers.markers `Array`
-{:#members:shapelayer-markers}
+{:#members:layers-markers}
 
 Specify markers for shape layer.
 
@@ -2567,8 +2535,8 @@ Specify selectedMapShapes for shape layer
 {% endhighlight %}
 
 
-### shapeLayer.selectionMode `enum`
-{:#members:shapelayer-selectionmode}
+### layers.selectionMode `enum`
+{:#members:layers-selectionmode}
 
 <ts name = "ej.datavisualization.Map.SelectionMode"/>
 
