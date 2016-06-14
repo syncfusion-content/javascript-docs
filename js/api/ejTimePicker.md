@@ -385,15 +385,15 @@ When the enableStrictMode is set as true it allows the value outside of the rang
 
 
 
-### disableTimes `object`
-{:#members:disabletimes}
+### disableTimeRanges `object`
+{:#members:disabletimeranges}
 
 
 
 
 
 
-Specifies the disabled time ranges
+Specifies the list of time range to disable
 
 
 
@@ -420,7 +420,9 @@ Specifies the disabled time ranges
 <input type="text" id="timepicker" />
 <script>
 // Set the height value during initialization.                  
-        $("#timepicker").ejTimePicker({  disableTimes:[{startTime:"3:00 AM",endTime:"5:00 AM"}] });
+        $("#timepicker").ejTimePicker({  disableTimeRanges: [{ startTime: "3:00 AM", endTime: "6:00 AM" },
+                    { startTime: "1:00 PM", endTime: "3:00 PM" },
+                    { startTime: "8:00 PM", endTime: "10:00 PM" }] });
 </script> 
 
 {% endhighlight %}
