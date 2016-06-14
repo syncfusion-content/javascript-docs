@@ -517,6 +517,67 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
 
 {% endhighlight %}
 
+### enableRTL `object`
+{:#members:enablertl}
+
+Align content in the ribbon control from right to left by setting the property as true.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+    <li><a>ملف</a>
+        <ul>
+            <li><a>جديد</a></li>
+            <li><a>فتح</a></li>
+            <li><a>حفظ</a></li>
+        </ul>
+    </li>
+    </ul>
+    <script type="text/javascript">
+    $(function () {
+
+        $("#defaultRibbon").ejRibbon({
+            width: "100%",
+            enableRTL: true,
+            applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+            tabs: [{
+                id: "home", text: "منزل", groups: [{
+                    text: "جديد", alignType: ej.Ribbon.AlignType.Rows, content: [{
+                        groups: [{
+                            id: "new",
+                            text: "جديد",
+                            toolTip: "جديد",
+                            buttonSettings: {
+                                contentType: ej.ContentType.ImageOnly,
+                                imagePosition: ej.ImagePosition.ImageTop,
+                                prefixIcon: "e-ribbon e-new",
+                                click: "executeAction"
+                            }
+                        }
+                        ],
+                        defaults: {
+                            type: ej.Ribbon.Type.Button,
+                            width: 60,
+                            height: 80
+                        }
+                    }]
+                },
+                ]
+            },
+            ]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### expandPinSettings `object`
 {:#members:expandpinsettings}
 
@@ -6581,6 +6642,203 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
 
  {% endhighlight %}
 
+### addBackStageItem(pageitem,\[index\])
+{:#methods:addbackstageitem}
+
+Add new option to Backstagepage.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pageitem</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">select the object to add the backstage item</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">index to the backstageitem this is optional.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+
+        });
+    });
+    var addBackStage =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+    //initialize the Ribbon object
+     var ribbonObj = $("#Ribbon").data("ejRibbon");
+    // Add backstage items to the ribbon
+     ribbonObj.addBackStageItem(addBackStage, 1);
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+
+        });
+    });
+    var addBackStage =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+     $("#Ribbon").ejRibbon("addBackStageItem",addBackStage, 1); 
+    </script>
+    
+{% endhighlight %}
 
 ### addTab(tabText, ribbonGroups, \[index\])
 {:#methods:addtab}
@@ -8413,6 +8671,702 @@ Displays the given text tab in the ribbon control.
 
 {% endhighlight %}
 
+### updateGroup(tabIndex, groupId, \[contentGroup\])
+{:#methods:updategroup}
+
+To customize Group alone in the inside content.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">tabIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">ribbon tab index.</td>
+</tr>
+<tr>
+<td class="name">groupId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">groupid to be displayed in ribbon tab .</td>
+</tr>
+<tr>
+<td class="name">contentGroup</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">contentGroup is used in the object</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+        
+    <ul id="menu">
+    <li><a>FILE </a>
+        <ul>
+            <li><a>New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Save</a></li>
+            <li><a>Save as</a></li>
+            <li><a>Print</a></li>
+        </ul>
+    </li>
+    </ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            // Set the width during initialization.         
+            width: "700px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "One",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "one",
+                            text: "one"
+                        }, {
+                            id: "two",
+                            text: "two"
+
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }]
+        });
+    });
+    var ribbonGrp =
+         {
+           text: "new one "
+          };
+    //initialize the Ribbon object
+    var ribbonObj = $("#Ribbon").data("ejRibbon");
+    ribbonObj.updateGroup(1, one, ribbonGrp);
+    </script>
+
+{% endhighlight %}
+
+{% highlight html %}
+        
+    <ul id="menu">
+    <li><a>FILE </a>
+        <ul>
+            <li><a>New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Save</a></li>
+            <li><a>Save as</a></li>
+            <li><a>Print</a></li>
+        </ul>
+    </li>
+    </ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            // Set the width during initialization.         
+            width: "700px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "One",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "one",
+                            text: "one"
+                        }, {
+                            id: "two",
+                            text: "two"
+
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }]
+        });
+    });
+    var ribbonGrp =
+         {
+           text: "new one "
+          };
+    $("#Ribbon").ejRibbon("updateGroup",1, one, ribbonGrp);
+    </script>
+
+{% endhighlight %}
+
+### updateBackStageItem(index,\[pageitem\])
+{:#methods:updatebackstageitem}
+
+Update option in existing Backstage.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">index to the backstageitem</td>
+</tr>
+<tr>
+<td class="name">pageitem</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">select the object to add the backstage item</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+        });
+    });
+    var updateBackStage =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+    $("#Ribbon").ejRibbon("updateBackStageItem",1,updateBackStage);
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+        });
+    });
+    var updateBackSatge =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+    //initialize the Ribbon object
+    var ribbonObj = $("#Ribbon").data("ejRibbon");
+    ribbonObj.updateBackSatgeItem(1,updateBackSatge);
+    </script>
+    
+{% endhighlight %}
+
+### removeTabGroupContent(tabIndex, groupIndex, \[subGroupIndex\])
+{:#methods:removetabgroupcontent}
+
+To customize whole content from Tab Group.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">tabIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">ribbon tab index.</td>
+</tr>
+<tr>
+<td class="name">groupIndex</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">ribbon group index.</td>
+</tr>
+<tr>
+<td class="name">subGroupIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">sub group index in the ribbon group,</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+        
+    <ul id="menu">
+    <li><a>FILE </a>
+        <ul>
+            <li><a>New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Save</a></li>
+            <li><a>Save as</a></li>
+            <li><a>Print</a></li>
+        </ul>
+    </li>
+    </ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            // Set the width during initialization.         
+            width: "700px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "One",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "one",
+                            text: "one"
+                        }, {
+                            id: "two",
+                            text: "two"
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }]
+        });
+    });
+    var content = {
+        id: "new",
+        text: "new",
+    };
+    $("#Ribbon").ejRibbon("removeTabGroupContent",1, "One", 0);
+    </script>
+
+ {% endhighlight %}
+
+{% highlight html %}
+        
+    <ul id="menu">
+    <li><a>FILE </a>
+        <ul>
+            <li><a>New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Save</a></li>
+            <li><a>Save as</a></li>
+            <li><a>Print</a></li>
+        </ul>
+    </li>
+    </ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            // Set the width during initialization.         
+            width: "700px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "One",
+                    alignType: ej.Ribbon.alignType.rows,
+                    content: [{
+                        groups: [{
+                            id: "one",
+                            text: "one"
+                        }, {
+                            id: "two",
+                            text: "two"
+                        }],
+                        defaults: {
+                            type: ej.Ribbon.type.button,
+                            width: 60,
+                            height: 70
+                        }
+                    }]
+                }]
+            }]
+        });
+    });
+    var content = {
+        id: "new",
+        text: "new",
+    };
+    //initialize the Ribbon object
+    var ribbonObj = $("#Ribbon").data("ejRibbon");
+    // remove tab group content in the ribbon 
+    ribbonObj.removeTabGroupContent(1, "One", 0);
+    </script>
+
+ {% endhighlight %}
+ 
+### removeBackStageItem(index)
+{:#methods:removebackstageitem}
+
+Remove option from Backstage.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">index to the backstageitem</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+        });
+    });
+    var removeBackStage =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+    //initialize the Ribbon object
+    var ribbonObj = $("#Ribbon").data("ejRibbon");
+    // remove backstage item in the ribbon 
+    ribbonObj.removeBackStageItem(1);
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <div id="content1">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Info</div>
+        <li>Protect Workbook</li>
+        <li>Inspect Workbook</li>
+        <li>Versions</li>
+        <li>Browser View Options</li>
+    </ul>
+    </div>
+    <div id="content2">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Open</div>
+        <li>Recent Workbooks</li>
+        <li>Computer</li>
+    </ul>
+    </div>
+    <div id="content3">
+    <ul style="list-style: none">
+        <div style="margin-left: 30px; font-size: 20px">Export</div>
+        <li>Create PDF/XPS Document</li>
+        <li>Change File Type</li>
+    </ul>
+    </div>
+    <div id="Ribbon"></div>
+    <button id="btn">Home button</button>
+    <script type="text/javascript">
+    $(function () {
+        $("#Ribbon").ejRibbon({
+            width: "500px",
+            applicationTab: {
+                type: ej.Ribbon.applicationTabType.backstage,
+                backstageSettings: {
+                    text: "FILE",
+                    height: 250,
+                    width: 600,
+                    headerWidth: 125,
+                    pages: [{
+                        id: "info",
+                        text: "Info",
+                        itemType: ej.Ribbon.itemType.tab,
+                        contentID: "content1"
+                    }, {
+                        id: "open",
+                        text: "Open",
+                        contentID: "content2"
+                    }, {
+                        id: "export",
+                        text: "Export",
+                        contentID: "content3",
+                        enableSeparator: true
+                    }, {
+                        id: "exit",
+                        text: "Exit",
+                        itemType: ej.Ribbon.itemType.button
+                    }]
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.alignType.rows,
+                    type: "custom",
+                    contentID: "btn"
+                }]
+            }],
+        });
+    });
+    var removeBackStage =
+                    {
+                        id: "File",
+                        text: "File",
+                        itemType: ej.Ribbon.ItemType.Tab
+                    }
+    $("#Ribbon").ejRibbon("removeBackStageItem",1);
+    </script>
+    
+{% endhighlight %}
 
 ## Events
 

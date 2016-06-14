@@ -20,6 +20,7 @@ The `Ribbon` control for JavaScript provides with rich customizable user interfa
 * **Gallery** - Convenient way to visually display related options with text/images.
 * **Resize** – Provides resizing to group controls dynamically based on window size.
 * **Expand and Collapse** - Ribbon can be expanded and collapsed using expand/collapse button.
+* **RTL support** —Provides a full-fledged right-to-left mode which aligns content in the Ribbon control from right to left.
 * **Screen-Tip** - Supports HTML and enhanced custom tooltips for controls of Ribbon groups.
 * **Theme** - Essential JavaScript controls consist of 12 built-in themes (6 – flat and 6 – gradient effects). It also supports bootstrap theme.
 
