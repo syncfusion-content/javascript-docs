@@ -2323,7 +2323,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
-### beforeclose
+### beforeClose
 {:#events:beforeclose}
 
 
@@ -2347,9 +2347,9 @@ Fires before the datetime popup closed in the DateTimePicker.
  
 <input type="text" id="datetime" />
 <script>
-//change event for DateTimePicker
+//popup close event for DateTimePicker
 $("#datetime").ejDateTimePicker({
-   beforeclose: function (args) {}
+   beforeClose: function (args) {}
 }); 
 </script>  
 
@@ -2359,7 +2359,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-### beforeopen
+### beforeOpen
 {:#events:beforeopen}
 
 
@@ -2382,9 +2382,9 @@ Fires before the datetime popup open in the DateTimePicker.
  
 <input type="text" id="datetime" />
 <script>
-//change event for DateTimePicker
+//before open event for DateTimePicker
 $("#datetime").ejDateTimePicker({
-   beforeopen: function (args) {}
+   beforeOpen: function (args) {}
 }); 
 </script>  
 
