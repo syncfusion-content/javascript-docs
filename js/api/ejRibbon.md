@@ -6675,25 +6675,9 @@ Add new option to Backstagepage.
  
     <div id="content1">
     <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
-    <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -6710,19 +6694,9 @@ Add new option to Backstagepage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -6761,25 +6735,9 @@ Add new option to Backstagepage.
  
     <div id="content1">
     <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
-    <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -6796,19 +6754,9 @@ Add new option to Backstagepage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -8860,25 +8808,9 @@ Update option in existing Backstage.
  
     <div id="content1">
     <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
-    <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -8895,19 +8827,9 @@ Update option in existing Backstage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -8925,6 +8847,7 @@ Update option in existing Backstage.
                     contentID: "btn"
                 }]
             }],
+
         });
     });
     var updateBackStage =
@@ -8942,25 +8865,9 @@ Update option in existing Backstage.
  
     <div id="content1">
     <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
-    <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -8977,19 +8884,9 @@ Update option in existing Backstage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -9007,6 +8904,7 @@ Update option in existing Backstage.
                     contentID: "btn"
                 }]
             }],
+
         });
     });
     var updateBackSatge =
@@ -9203,27 +9101,11 @@ Remove option from Backstage.
 
 {% highlight html %}
  
-    <div id="content1">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
+   <div id="content1">
     <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -9240,19 +9122,9 @@ Remove option from Backstage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -9270,6 +9142,7 @@ Remove option from Backstage.
                     contentID: "btn"
                 }]
             }],
+
         });
     });
     var removeBackStage =
@@ -9290,25 +9163,9 @@ Remove option from Backstage.
  
     <div id="content1">
     <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Info</div>
-        <li>Protect Workbook</li>
-        <li>Inspect Workbook</li>
-        <li>Versions</li>
-        <li>Browser View Options</li>
-    </ul>
-    </div>
-    <div id="content2">
-    <ul style="list-style: none">
         <div style="margin-left: 30px; font-size: 20px">Open</div>
         <li>Recent Workbooks</li>
         <li>Computer</li>
-    </ul>
-    </div>
-    <div id="content3">
-    <ul style="list-style: none">
-        <div style="margin-left: 30px; font-size: 20px">Export</div>
-        <li>Create PDF/XPS Document</li>
-        <li>Change File Type</li>
     </ul>
     </div>
     <div id="Ribbon"></div>
@@ -9325,19 +9182,9 @@ Remove option from Backstage.
                     width: 600,
                     headerWidth: 125,
                     pages: [{
-                        id: "info",
-                        text: "Info",
-                        itemType: ej.Ribbon.itemType.tab,
-                        contentID: "content1"
-                    }, {
                         id: "open",
                         text: "Open",
-                        contentID: "content2"
-                    }, {
-                        id: "export",
-                        text: "Export",
-                        contentID: "content3",
-                        enableSeparator: true
+                        contentID: "content1"
                     }, {
                         id: "exit",
                         text: "Exit",
@@ -9355,6 +9202,7 @@ Remove option from Backstage.
                     contentID: "btn"
                 }]
             }],
+
         });
     });
     var removeBackStage =
