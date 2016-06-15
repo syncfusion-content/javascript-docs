@@ -192,9 +192,13 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
 <td class="description">Sets the position related to target element.</td>
 </tr>
 <tr>
-<td class="name">Mouse</td>
-<td class="description">Sets the position related to mouse.</td>
-</tr> 
+<td class="name">MouseFollow </td>
+<td class="description">Anchor the tooltip to the mouse.</td>
+</tr>
+<tr>
+<td class="name">MouseEnter </td>
+<td class="description">Opens at the current mouse position once entered into the target element.</td>
+</tr>  
 <tr>
 <td class="name">Axis</td>
 <td class="description">Sets the position related to (x,y) co-ordinates.</td>
@@ -218,7 +222,7 @@ Sets the position related to target element, window, mouse or (x,y) co-ordinates
         $("#test").ejTooltip(
         {
             content: "JavaScript is the programming language of HTML and the Web.",
-            associate: "mouse"
+            associate: "mouseFollow"
         });
 
     </script>
@@ -741,6 +745,34 @@ Enables or disables rounded corner.
         {
             content: "JavaScript is the programming language of HTML and the Web.",
             showRoundedCorner :true
+        });
+
+    </script>
+        
+{% endhighlight %}
+
+### showShadow  `boolean`
+{:#members:showShadow}
+
+Shadow effect will be applied for the Tooltip wrapper.
+
+#### Default Value
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+ 
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+    <script type="text/javascript">
+
+        $("#test").ejTooltip(
+        {
+            content: "JavaScript is the programming language of HTML and the Web.",
+            showShadow :true
         });
 
     </script>
