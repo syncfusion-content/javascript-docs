@@ -840,67 +840,6 @@ Specified a selector for elements, within the container.
 
 {% endhighlight %}
 
-### template `string`
-{:#members:template}
-
-The template to display the content with customized appearance.
-
-#### Default Value
-{:.param}
-* null
-
-#### Example
-{:.example}
-{% highlight html %}
- 
-        <table>
-            <tr>
-                <th>EmployeeID</th>
-                <th>Name</th>
-                <th>Designation</th>
-            </tr>
-            <tr>
-                <td>SF6089</td>
-                <td><a href="#" id="test">Peter</a></td>
-                <td>Software Engineer</td>
-            </tr>
-        </table>
-
-        <script type="text/javascript">
-
-            $("#test").ejTooltip(
-            {
-                template: '<div class="main"> <img src="../images/Employee/7.png" class="logo"/><div class="des">Name : Peter <br> Contact No : 987654321 <br> Email id :perter@outlook.com <br></div></div>',
-                width:"100px"
-            });
-
-        </script>
-        <style>
-             table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            th, td {
-                text-align: left;
-                padding: 8px;
-            }
-            .logo{
-                    float: left;
-            }
-
-            tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
-
-            th {
-                background-color: #4CAF50;
-                color: white;
-            }
-        </style>
-        
-{% endhighlight %}
-
 ### title `string`
 {:#members:title}
 
