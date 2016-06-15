@@ -2297,6 +2297,29 @@ rowCount: 30
 
 {% endhighlight %}
 
+### sheets.sheetName `String`
+{:#members:sheets-sheetname}
+
+Sets a value that indicates to define sheet name in the Spreadsheet.
+
+#### Default Value
+
+* "Sheet1"
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+	sheets:[{
+		sheetName: "Spreadsheet"
+	}]
+});   
+</script>
+
+{% endhighlight %}
+
 ### sheets.showGridlines `Boolean`
 {:#members:sheets-showgridlines}
 
