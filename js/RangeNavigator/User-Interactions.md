@@ -128,7 +128,7 @@ To customize the selected intervals, use color, border and opacity options in th
 
 ## Scrollbar
 
-* To render the Scrollbar in RangeNaviagtor, you need to enable [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.
+* To render the Scrollbar in RangeNavigator, you need to enable [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.
  
 * [`scrollRangeSettings`](../api/ejrangenavigator#members:scrollrangesettings) of  rangenavigator [`start`](../api/ejrangenavigator#members:scrollrangesettings-start) and [`end`](../api/ejrangenavigator#members:scrollrangesettings-end) value is used to set the minimum and maximum datasource value to be added in the rangenavigator.
  
