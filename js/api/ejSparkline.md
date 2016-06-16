@@ -828,6 +828,10 @@ tooltip :{ font : { fontFamily : "Algerian"}}
  ### tooltip.font.fontStyle `enum`
 {:#members:tooltip-font-fontstyle}
 
+
+<ts name = "ej.datavisualization.Sparkline.FontStyle"/>
+
+
 Specifies the font Style for the tooltip.
 
 
@@ -878,6 +882,9 @@ tooltip : {font :{fontStyle : "italic"}}
 
 ### tooltip.font.fontWeight `enum`
 {:#members:tooltip-font-fontweight}
+
+
+<ts name = "ej.datavisualization.Sparkline.FontWeight"/>
 
 
 Specifies the font weight for the tooltip.
