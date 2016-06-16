@@ -194,8 +194,8 @@ $("#container").ejSparkline({
 
 
 
-### highColor `string`
-{:#members:highcolor}
+### highPointColor `string`
+{:#members:highpointcolor}
 
 Color for series high point.
 
@@ -208,7 +208,7 @@ Color for series high point.
 {% highlight js %}
   
 $("#container").ejSparkline({
-    highColor : "green"                  
+    highPointColor : "green"                  
 });
 
 {% endhighlight %}
@@ -218,8 +218,8 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
-### lowColor `string`
-{:#members:lowcolor}
+### lowPointColor `string`
+{:#members:lowpointcolor}
 
 Color for series low point.
 
@@ -232,7 +232,7 @@ Color for series low point.
 {% highlight js %}
  
 $("#container").ejSparkline({
-    lowColor : "green"                  
+    lowPointColor : "green"                  
 });
 
 {% endhighlight %}
@@ -242,8 +242,8 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
-### startColor `string`
-{:#members:startcolor}
+### startPointColor `string`
+{:#members:startpointcolor}
 
 Color for series start point.
 
@@ -256,7 +256,7 @@ Color for series start point.
 {% highlight js %}
  
 $("#container").ejSparkline({
-    startColor : "green"                  
+    startPointColor : "green"                  
 });
 
 {% endhighlight %}
@@ -266,8 +266,8 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
-### endColor `string`
-{:#members:endcolor}
+### endPointColor `string`
+{:#members:endpointcolor}
 
 Color for series end point.
 
@@ -280,7 +280,7 @@ Color for series end point.
 {% highlight js %}
  
 $("#container").ejSparkline({
-    endColor : "green"                  
+    endPointColor : "green"                  
 });
 
 {% endhighlight %}
@@ -290,8 +290,8 @@ Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
-### negativeColor `string`
-{:#members:negativecolor}
+### negativePointColor `string`
+{:#members:negativepointcolor}
 
 Color for series negative point.
 
@@ -304,7 +304,7 @@ Color for series negative point.
 {% highlight js %}
  
 $("#container").ejSparkline({
-    negativeColor : "green"                  
+    negativePointColor : "green"                  
 });
 
 {% endhighlight %}
@@ -655,18 +655,18 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
 
 
 
-### trackball `object`
-{:#members:trackball}
+### tooltip `object`
+{:#members:tooltip}
 
-Options to customize the trackball.
-
-
+Options to customize the tooltip.
 
 
-### trackball.visible `boolean`
-{:#members:trackball-visible}
 
-Show/hides the trackball visibility.
+
+### tooltip.visible `boolean`
+{:#members:tooltip-visible}
+
+Show/hides the tooltip visibility.
 
 #### Default Value
 
@@ -678,7 +678,7 @@ Show/hides the trackball visibility.
  
 $("#container").ejSparkline({
 
-   trackball :{visible :true}              
+   tooltip :{visible :true}              
 
 });
 
@@ -689,10 +689,10 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
 
 
 
-### trackball.template `string`
-{:#members:trackball-template}
+### tooltip.template `string`
+{:#members:tooltip-template}
 
-Custom template to the trackball.
+Custom template to the tooltip.
 
 #### Default Value
 
@@ -703,7 +703,7 @@ Custom template to the trackball.
 {% highlight js %}
 
 $("#container").ejSparkline({
-    trackball :{template : "item"}                  
+    tooltip :{template : "item"}                  
 });
 
 {% endhighlight %}
@@ -712,7 +712,291 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l5pmkkgr)
  
 
  
+ ### tooltip.border `object`
+{:#members:tooltip-border}
+
+Options for customizing the border of the tooltip.
+
+### tooltip.border.color `string`
+{:#members:tooltip-border-color}
+
+Border color of the tooltip. 
+
+#### Default Value
+
+* "transparent"
+
+#### Example
+
+{% highlight js %}
  
+$("#container").ejSparkline({
+    tooltip:{
+        border:{color : "green"}
+    }                  
+});
+
+{% endhighlight %}
+
+
+
+
+### tooltip.border.width `number`
+{:#members:tooltip-border-width}
+
+Border width of the tooltip. 
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejSparkline({
+    tooltip :{border :{width : 2}}                  
+});
+
+{% endhighlight %}
+
+
+### tooltip.font `object`
+{:#members:tooltip.font}
+
+Options for customizing the font of the tooltip.
+
+### tooltip.font.color `string`
+{:#members:tooltip-font-color}
+
+
+
+
+Font color of the text in the tooltip.
+
+
+#### Default Value
+
+
+
+* "#111111"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+tooltip :{font :{color : "green"}}                 
+});
+{% endhighlight %}
+
+### tooltip.font.fontFamily `string`
+{:#members:tooltip-font-fontfamily}
+
+
+
+
+Font Family for the tooltip.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+tooltip :{ font : { fontFamily : "Algerian"}}                 
+});
+ {% endhighlight %}
+ 
+ 
+ ### tooltip.font.fontStyle `enum`
+{:#members:tooltip-font-fontstyle}
+
+Specifies the font Style for the tooltip.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description">Specifies the fontStyle as normal.</td>
+</tr>
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description">Specifies the fontStyle as italic.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "Normal"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+tooltip : {font :{fontStyle : "italic"}}                 
+});
+{% endhighlight %}
+
+
+### tooltip.font.fontWeight `enum`
+{:#members:tooltip-font-fontweight}
+
+
+Specifies the font weight for the tooltip.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Regular</td>
+<td class="type">string</td> 
+<td class="description">Specifies the font weight as regular.</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as bold.</td>
+</tr> 
+<tr>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as lighter.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "Regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+tooltip :{font :{fontWeight : "lighter"}}                 
+});
+{% endhighlight %}
+
+
+
+
+### tooltip.font.opacity `number`
+{:#members:tooltip-font-opacity}
+
+
+
+
+Opacity for text in the tooltip.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+tooltip :{font :{opacity : 0.5}}                 
+});
+{% endhighlight %}
+
+
+
+
+### tooltip.font.size `string`
+{:#members:tooltip-font-size}
+
+
+
+
+Font size for text in the tooltip.
+
+#### Default Value
+
+
+
+ * "8px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+tooltip :{font :{size : "14px"}}                 
+});
+{% endhighlight %}
+
  ### markerSettings `object`
 {:#members:markersettings}
 
