@@ -7153,7 +7153,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 
 
 
-### commonseriesoptions.selectionSettings.rangeType `enum`
+### commonSeriesOptions.selectionSettings.rangeType `enum`
 {:#members:commonseriesoptions-selectionsettings-rangetype}
 
 <ts name = "ej.datavisualization.Chart.RangeType"/>
