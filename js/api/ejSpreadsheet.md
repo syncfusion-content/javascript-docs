@@ -4283,7 +4283,7 @@ This method is used to import excel file manually by using form data.
 </tbody>
 </table>
 
-The Objects are File, Password, Url, FileStream, FileType. 
+The Objects are File, Password, URL, FileStream, FileType. 
 
 #### Example
 
