@@ -544,6 +544,25 @@ function bold(e){
 }
 </script>{% endhighlight %}
 
+### items.badge `array`
+{:#members:items-badge}
+
+
+Specifies radialmenu item badges.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{text:"Bold", enabled: true, badge.enabled:true }]});
+
+</script>{% endhighlight %}
 
 
 ### items.badge.enabled `boolean`
@@ -607,6 +626,27 @@ Example
 <div id="radialmenu" ></div>
 <script>
 $("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", type:"slider" }]});
+
+</script>{% endhighlight %}
+
+
+### items.sliderSettings `array`
+{:#members:items-sliderSettings}
+
+
+Specifies the sliderSettings ticks for nested radial menu items.
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+<div id="radialmenu" ></div>
+<script>
+$("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3, type:"slider", sliderSettings.ticks:[0,2,4,6,8,10] }]});
 
 </script>{% endhighlight %}
 
