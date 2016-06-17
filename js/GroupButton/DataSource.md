@@ -40,7 +40,7 @@ Selected<br/><br/></td><td>
 Specifies the selection state of button item<br/><br/></td></tr>
 <tr>
 <td>
-url<br/><br/></td><td>
+URL<br/><br/></td><td>
 Used to include the URL tag to the button item<br/><br/></td></tr>
 <tr>
 <td>

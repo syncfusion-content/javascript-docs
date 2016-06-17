@@ -11,7 +11,7 @@ documentation: ug
 
 ## Size
 
-GroupButton component size can be varied based on the Size property values. Size is the enum type API and it is has the following inbuilt values
+GroupButton component size can be varied based on the Size property values. Size is the enum type API and it is has the following Built-in values
 
 List of predefined button size
 
@@ -27,19 +27,19 @@ Creates GroupButton with content size.<br/><br/></td></tr>
 <tr>
 <td>
 Mini<br/><br/></td><td>
-Creates GroupButton with inbuilt mini size height, width specified.<br/><br/></td></tr>
+Creates GroupButton with Built-in mini size height, width specified.<br/><br/></td></tr>
 <tr>
 <td>
 Small<br/><br/></td><td>
-Creates GroupButton with inbuilt small size height, width specified.<br/><br/></td></tr>
+Creates GroupButton with Built-in small size height, width specified.<br/><br/></td></tr>
 <tr>
 <td>
 Medium<br/><br/></td><td>
-Creates GroupButton with inbuilt medium size height, width specified.<br/><br/></td></tr>
+Creates GroupButton with Built-in medium size height, width specified.<br/><br/></td></tr>
 <tr>
 <td>
 Large<br/><br/></td><td>
-Creates GroupButton with inbuilt large size height, width specified.<br/><br/></td></tr>
+Creates GroupButton with Built-in large size height, width specified.<br/><br/></td></tr>
 </table>
 
 ## Set Dimension
@@ -105,9 +105,9 @@ Supports image with both ends and middle in text.<br/><br/></td></tr>
 
 ## Icons
 
-GroupButton has the option to add the icons to button elements which enhance the appearance. Icons inside the button can be added easily using **prefixIcon** and **suffixIcon** fields with dataSource property. GroupButton control also supports the build-in icon libraries. The ej.widgets.core.min.css contains definitions for important icons that can be used in buttons. You can get the details about available icons with that corresponding class from [here](http://help.syncfusion.com/js/icon/ej-icons). 
+GroupButton has the option to add the icons to button elements which enhance the appearance. Icons inside the button can be added easily using **prefixIcon** and **suffixIcon** fields with dataSource property. GroupButton control also supports the Built-in icon libraries. The ej.widgets.core.min.css contains definitions for important icons that can be used in buttons. You can get the details about available icons with that corresponding class from [here](http://help.syncfusion.com/js/icon/ej-icons). 
 
-Simply you can use these build-in icons by mentioning the icon class name as value in **prefixIcon** and **suffixIcon** property. You can use any font icons that are defined in ej.widgets.core.min.css. It avoids the complexity in specifying icon using sprite image and CSS.
+Simply you can use these Built-in icons by mentioning the icon class name as value in **prefixIcon** and **suffixIcon** property. You can use any font icons that are defined in ej.widgets.core.min.css. It avoids the complexity in specifying icon using sprite image and CSS.
 
 {% highlight html %}
 

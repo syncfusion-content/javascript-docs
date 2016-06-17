@@ -44,7 +44,7 @@ You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’
 
 [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js#) – includes all web widgets.
 
-A simple html file with required CSS and script reference added to create GroupButton
+A simple HTML file with required CSS and script reference added to create GroupButton
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ A simple html file with required CSS and script reference added to create GroupB
 
 ## GroupButton initialization
 
-GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in html page,
+GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in HTML page,
 
 {% highlight html %}
 
@@ -116,5 +116,5 @@ GroupButton can be created using “div” tag or “span” tag and correspondi
 
 {% endhighlight %}
 
-Also we can use the dataSoruce, to create the GroupButton which is explained under the dataSource section in this documentation.
+Also we can use the dataSource, to create the GroupButton which is explained under the dataSource section in this documentation.
 
