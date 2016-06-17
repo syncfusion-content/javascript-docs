@@ -15,7 +15,7 @@ This section explains briefly about how to create a **NumericTextBox** control i
 
 ## Create Textboxes Widgets
 
-Create an **HTML** file and add the following template to the html file for Textbox widget creation.
+Create an **HTML** file and add the following template to the HTML file for Textbox widget creation.
 
 {% highlight html %}
 

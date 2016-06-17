@@ -1203,7 +1203,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-Specifies the html attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
 
 
 
@@ -1269,7 +1269,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-Specifies the html attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
 
 
 
@@ -3077,7 +3077,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childs and index.
+To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childes and index.
 
 <table class="params">
 <thead>
@@ -4505,7 +4505,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-### moveNode(sourceNode, destionationNode, index) 
+### moveNode(sourceNode, destinationNode, index) 
 {:#methods:movenode}
 
 
@@ -4515,7 +4515,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-To move the TreeView node with in same TreeView. The new poistion of given TreeView node will be based on destionation node and index position.  
+To move the TreeView node with in same TreeView. The new position of given TreeView node will be based on destination node and index position.  
 
 <table class="params">
 <thead>
@@ -5753,7 +5753,7 @@ Fires before loading nodes to TreeView.
 </tr>
 <tr>
 <td class="name"> 
- ajaxOptions </td>
+ AjaxOptions </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the AJAX settings object</td>
 </tr>

@@ -83,7 +83,7 @@ It displays the details of the current selected file or folder.<br/><br/></td></
 </table>
 ## Context menu Visibility
 
-The presence of the context menu can be controlled by the [showContextMenu](http://help.syncfusion.com/js/api/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our inbuilt context menu.
+The presence of the context menu can be controlled by the [showContextMenu](http://help.syncfusion.com/js/api/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our built-in context menu.
 
 {% highlight javascript %}
 
