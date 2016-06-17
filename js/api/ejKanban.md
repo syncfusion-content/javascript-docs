@@ -5899,7 +5899,7 @@ Triggered for every Kanban action before its starts.
         <tr>
         <td class="name">requestType</td>
         <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns request type as "beginadd".</td>
+        <td class="description last">Returns request type as `beginadd`.</td>
         </tr>
         <tr>
         <td class="name">type</td>

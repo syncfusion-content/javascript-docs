@@ -1526,7 +1526,7 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
 ### applicationTab.backstageSettings.pages.contentID `string`
 {:#members:applicationtab-backstagesettings-pages-contentid}
 
-Specifies the id of HTML elements like div, ul, etc., as ribbon backstage page's tab content.
+Specifies the id of HTML elements like `div`,`ul`, etc., as ribbon backstage page's tab content.
 
 #### Default Value:
 
@@ -1778,7 +1778,7 @@ Specifies the width of backstage page header that contains tabs and buttons.
 ### applicationTab.menuItemID `string`
 {:#members:applicationtab-menuitemid}
 
-Specifies the ID of 'ul' list to create application menu in the ribbon control.
+Specifies the ID of `ul` list to create application menu in the ribbon control.
 
 #### Default Value:
 
@@ -6642,10 +6642,10 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
 
  {% endhighlight %}
 
-### addBackStageItem(pageitem,\[index\])
+### addBackStageItem(item,\[index\])
 {:#methods:addbackstageitem}
 
-Add new option to Backstagepage.
+Add new option to Backstage page.
 
 <table class="params">
 <thead>
@@ -6657,14 +6657,14 @@ Add new option to Backstagepage.
 </thead>
 <tbody>
 <tr>
-<td class="name">pageitem</td>
+<td class="name">item</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">select the object to add the backstage item</td>
 </tr>
 <tr>
 <td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index to the backstageitem this is optional.</td>
+<td class="description last">index to the backstage item this is optional.</td>
 </tr>
 </tbody>
 </table>
@@ -8641,7 +8641,7 @@ To customize Group alone in the inside content.
 <tr>
 <td class="name">groupId</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">groupid to be displayed in ribbon tab .</td>
+<td class="description last">group id to be displayed in ribbon tab .</td>
 </tr>
 <tr>
 <td class="name">contentGroup</td>
@@ -8775,7 +8775,7 @@ To customize Group alone in the inside content.
 
 {% endhighlight %}
 
-### updateBackStageItem(index,\[pageitem\])
+### updateBackStageItem(index,\[item\])
 {:#methods:updatebackstageitem}
 
 Update option in existing Backstage.
@@ -8792,10 +8792,10 @@ Update option in existing Backstage.
 <tr>
 <td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index to the backstageitem</td>
+<td class="description last">index to the backstage item</td>
 </tr>
 <tr>
-<td class="name">pageitem</td>
+<td class="name">item</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">select the object to add the backstage item</td>
 </tr>
@@ -9092,7 +9092,7 @@ Remove option from Backstage.
 <tr>
 <td class="name">index</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index to the backstageitem</td>
+<td class="description last">index to the backstage item</td>
 </tr>
 </tbody>
 </table>
