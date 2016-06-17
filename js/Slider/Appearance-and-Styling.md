@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling	
 
-**Slider** widget looks sleek and enriched with good UI appearance. It is included with both metro (flat) theme and gradient theme support. Totally twelve inbuilt themes are provided including six flat themes and six gradient themes. The themes include three color variations such as “Azure”, “Lime” and “Saffron”. The themes supported by the **Slider** widgets are as follows,
+**Slider** widget looks sleek and enriched with good UI appearance. It is included with both metro (flat) theme and gradient theme support. Totally twelve built-in themes are provided including six flat themes and six gradient themes. The themes include three color variations such as “Azure”, “Lime” and “Saffron”. The themes supported by the **Slider** widgets are as follows,
 
 * default-theme
 * flat-azure-dark

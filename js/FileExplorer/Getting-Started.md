@@ -55,7 +55,7 @@ Add the below CSS reference in the head section, for the default theme
 
 {% endhighlight %}
 
-N> Essential JS widgets having the support for 13 inbuilt themes, to know more please check [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#)
+N> Essential JS widgets having the support for 13 built-in themes, to know more please check [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#)
 
 ### Script references
 

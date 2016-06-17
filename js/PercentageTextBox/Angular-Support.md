@@ -7,7 +7,7 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-# Angular Support
+# AngularJS Support
 
 The **PercentageTextBox** widget supports two types of **AngularJS support** namely, 
 

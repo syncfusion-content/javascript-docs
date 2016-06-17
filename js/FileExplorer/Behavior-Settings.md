@@ -63,7 +63,7 @@ The following is the syntax for ajaxSettings property.
                 
 {% endhighlight %}
 
-The actions “read, createFolder, remove, rename, paste, getDetails” are supported all the jQuery AJAX configurations. The remaining actions “upload, download, getImage” are accepted the url only.
+The actions “read, createFolder, remove, rename, paste, getDetails” are supported all the jQuery AJAX configurations. The remaining actions “upload, download, getImage” are accepted the URL only.
 
 If you want to customize read action alone, the AJAX **url** and **dataType** are changed for the read action, refer the below code example.
 

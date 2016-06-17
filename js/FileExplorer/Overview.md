@@ -13,7 +13,7 @@ The **Essential JavaScript FileExplorer** is an interface for managing the File 
 
 For a live demo of FileExplorer check the online sample from [here](http://js.syncfusion.com/demos/web/#!/azure/fileexplorer/DefaultFunctionalities)
 
-N>  The FileExplorer control was officially added with the Essential studio JavaScript package from the v13.1 release only.
+N>  The FileExplorer control was officially added with the Essential Studio JavaScript package from the v13.1 release only.
 
 ![](Overview_images/Overview_img1.png)
 
@@ -27,7 +27,7 @@ N>  The FileExplorer control was officially added with the Essential studio Java
 * Easy UI customization
 * Different layouts (grid and tile view)
 * Context menu support
-* Inbuilt image viewer support
+* built-in image viewer support
 * Keyboard navigation 
 * Right to Left alignment (RTL) support
 * Localization support

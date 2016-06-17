@@ -15,7 +15,7 @@ This section explains briefly about how to create a **Editors** control in your 
 
 ## Create Textboxes Widgets
 
-Create an **HTML** file and add the following template to the html file for Textbox widget creation.
+Create an **HTML** file and add the following template to the HTML file for Textbox widget creation.
 
 {% highlight html %}
 

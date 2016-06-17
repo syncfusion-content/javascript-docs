@@ -440,7 +440,7 @@ Specifies the height of the slider.
 
 
 ### htmlAttributes `object`
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 

@@ -129,9 +129,9 @@ Sample: [http://jsplayground.syncfusion.com/rm4zm5yw](http://jsplayground.syncfu
 
 N> First run the provided Web API service, then you will get an URL like [http://localhost:51460/](http://localhost:51460/#) (Here port number may change). As per port number, use the specified URL in “path” and “ajaxAction” of “FileExplorer” sample.
 
-### Parameter list for Ajax request and response of FileExplorer
+### Parameter list for AJAX request and response of FileExplorer
 
-By default, we send following parameters in data field of the corresponding Ajax request. This helps to handle the server side operation. Some Server side action methods only will return the response data. This response data and request parameters are explained in following table. By referring to below table, you can create custom functions to perform server side operations of “FileExplorer”. 
+By default, we send following parameters in data field of the corresponding AJAX request. This helps to handle the server side operation. Some Server side action methods only will return the response data. This response data and request parameters are explained in following table. By referring to below table, you can create custom functions to perform server side operations of “FileExplorer”. 
 
 <table>
 <tr>

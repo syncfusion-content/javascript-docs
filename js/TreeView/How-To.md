@@ -36,9 +36,9 @@ Refer the sample from the link [PersistData](http://jsplayground.syncfusion.com/
 
 You can able to filter TreeView nodes based on node text. Refer the sample from the link [FilterTreeNodes](http://jsplayground.syncfusion.com/vbxs3mi0#) to know how to filter tree nodes based on the node text.
 
-## Angular data binding to update data while add and remove node
+## AngularJS data binding to update data while add and remove node
 
-TreeView allow you to bind and update tree data in mapped data component while add and removing node using Angular binding. Refer the sample from the link [AngularDataBinding](http://jsplayground.syncfusion.com/vcxy2cke#) to know how to update data using Angular binding.
+TreeView allow you to bind and update tree data in mapped data component while add and removing node using Angular binding. Refer the sample from the link [AngularDataBinding](http://jsplayground.syncfusion.com/vcxy2cke#) to know how to update data using AngularJS binding.
 
 ## Set Tooltip for TreeView nodes
 
