@@ -24,7 +24,7 @@ Project Creation Wizard
 
 ### Create HTML Page
 
-To create a new web form in the application
+To create a new Web Form in the application
 
 1. Right-Click on the project and select Add
 
