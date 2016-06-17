@@ -11,7 +11,7 @@ documentation: ug
 
 Knockout support allows you to bind the **HTML** elements against any of the available data models.
 
-Two types of knockout binding supported,
+Two types of Knockout binding supported,
 
 * One-way binding
 * Two-way binding
@@ -22,11 +22,11 @@ One way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes – it applies the observable values to the **TimePicker** widget properties as well as the changes made in the **TimePicker** widget is also reflected back and triggered within the observable collections. 
 
-For more information about the knockout binding, refer the following link location,
+For more information about the Knockout binding, refer the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following example depicts the way to bind data to the **TimePicker** widget through the knockout support that enables and populate data to **TimePicker** widget based on the value set to another **TimePicker** widget.
+The following example depicts the way to bind data to the **TimePicker** widget through the Knockout support that enables and populate data to **TimePicker** widget based on the value set to another **TimePicker** widget.
 
 {% highlight html %}
 

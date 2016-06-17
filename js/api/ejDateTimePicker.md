@@ -1774,7 +1774,7 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 
 
 
-Set the jquery validation error message in DateTimePicker.
+Set the jQuery validation error message in DateTimePicker.
 
 
 
@@ -1831,7 +1831,7 @@ Set the jquery validation error message in DateTimePicker.
 
 
 
-Set the jquery validation rules in DateTimePicker.
+Set the jQuery validation rules in DateTimePicker.
 
 
 

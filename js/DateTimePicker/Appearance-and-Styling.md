@@ -69,7 +69,7 @@ Add the following code in your **HTML** page.
 
 ![](/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
-## Css Class
+## CSS Class
 
 **DateTimePicker** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **DateTimePicker** theme.
 

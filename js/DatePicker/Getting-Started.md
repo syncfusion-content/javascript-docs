@@ -31,7 +31,7 @@ Description / Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
-Includes only the widget basic functions and framework features. Must be referred always before using all the JS controls<br/><br/></td></tr>
+Includes only the widget basic functions and Framework features. Must be referred always before using all the JS controls<br/><br/></td></tr>
 <tr>
 <td>
 ej.globalize.min.js<br/><br/></td><td>
@@ -50,7 +50,7 @@ You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’
 
 N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-A simple html file with required CSS and script reference added to create DatePicker
+A simple HTML file with required CSS and script reference added to create DatePicker
 
 {% highlight html %}
 
