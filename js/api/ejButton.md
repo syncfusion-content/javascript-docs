@@ -9,7 +9,7 @@ keywords: Button, ejButton, syncfusion, button api
 
 # ejButton
 
-Custom Design for Html Button control.
+Custom Design for HTML Button control.
 
 #### Syntax
 
@@ -545,28 +545,28 @@ Specifies the size of the Button. See below to know available ButtonSize
 <tr>
 <td class="name">
 Normal</td>
-<td class="description">Creates button with inbuilt default size height, width specified</td>
+<td class="description">Creates button with Built-in default size height, width specified</td>
 </tr>
 <tr>
 <td class="name">
 Mini</td>
-<td class="description">Creates button with inbuilt mini size height, width specified</td>
+<td class="description">Creates button with Built-in mini size height, width specified</td>
 </tr>
 <tr>
 <td class="name">
 Small</td>
-<td class="description">Creates button with inbuilt small size height, width specified</td>
+<td class="description">Creates button with Built-in small size height, width specified</td>
 </tr>
 
 <tr>
 <td class="name">
 Medium</td>
-<td class="description">Creates button with inbuilt medium size height, width specified </td>
+<td class="description">Creates button with Built-in medium size height, width specified </td>
 </tr>
 <tr>
 <td class="name">
 Large</td>
-<td class="description">Creates button with inbuilt large size height, width specified </td>
+<td class="description">Creates button with Built-in large size height, width specified </td>
 </tr>
 
 </tbody>
@@ -740,17 +740,17 @@ Specifies the Type of the Button. See below to know available ButtonType
 <tr>
 <td class="name">
 Button</td>
-<td class="description">Creates button with inbuilt button type specified</td>
+<td class="description">Creates button with Built-in button type specified</td>
 </tr>
 <tr>
 <td class="name">
 Reset</td>
-<td class="description">Creates button with inbuilt reset type specified </td>
+<td class="description">Creates button with Built-in reset type specified </td>
 </tr>
 <tr>
 <td class="name">
 Submit</td>
-<td class="description">Creates button with inbuilt submit type specified</td>
+<td class="description">Creates button with Built-in submit type specified</td>
 </tr>
 </tbody>
 </table>

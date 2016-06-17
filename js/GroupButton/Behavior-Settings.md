@@ -9,7 +9,7 @@ documentation: ug
 
 # Behavior Settings
 
-GroupButton has some default behavior settings which helps you to perform more operation by inbuilt selection.
+GroupButton has some default behavior settings which helps you to perform more operation by Built-in selection.
 
 ## Different modes of button
 

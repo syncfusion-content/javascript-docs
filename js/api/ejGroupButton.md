@@ -330,7 +330,7 @@ specifies the position of the image
  
  ### fields.url `string`
  
- specifies the url of the button for navigation. 
+ specifies the URL of the button for navigation. 
 
 ### Example
 
@@ -841,7 +841,7 @@ Remove the selection state of the specified the button element from the GroupBut
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1150,7 +1150,7 @@ Returns the index value for specified button element in the GroupButton control.
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1199,7 +1199,7 @@ This method returns the list of active state button elements from the GroupButto
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1305,7 +1305,7 @@ Hide the specified button element from the ejGroupButton control.
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
