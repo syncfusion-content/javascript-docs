@@ -429,7 +429,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% endhighlight %}
 
 
-Custom Css Styles.
+Custom CSS Styles.
 
 
 

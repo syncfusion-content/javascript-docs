@@ -7,7 +7,7 @@ control: ColorPicker
 documentation: ug
 ---
 
-# Angular Binding
+# AngularJS Binding
 
 The **ColorPicker** widget is availed with two types of **angular JS** support namely, 
 
@@ -16,7 +16,7 @@ The **ColorPicker** widget is availed with two types of **angular JS** support n
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **ColorPicker** widget. The changes made in **ColorPicker** widget are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the **ColorPicker** widget.
 
-**Two-way binding** supports both the processes. It applies the scope values to the **ColorPicker** properties, as well as the changes made in the **ColorPicker** widget are reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes. It applies the scope values to the **ColorPicker** properties, as well as the changes made in the **ColorPicker** widget are reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the **ColorPicker** widget element through the directive that starts with **“e-“.**
 
