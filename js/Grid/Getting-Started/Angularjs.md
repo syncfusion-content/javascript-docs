@@ -20,7 +20,7 @@ The Grid control has the following list of external JavaScript dependencies.
 
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/)- to support animation effects in the components
 
-To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. Also use the `ej.widget.angular.min.js` script file that encapsulates the angular directives for our controls. So the complete boilerplate code is
+To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. Also use the `ej.widget.angular.min.js` script file that encapsulates the AngularJS directives for our controls. So the complete boilerplate code is
 
 {% highlight html %}
 
@@ -57,7 +57,7 @@ For themes, you can use the `ej.web.all.min.css` CDN link from the code example 
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application. 
 
-The grid can be created using `ej-grid` angular directive and its properties can be defined using `e-` prefix followed by the property name. 
+The grid can be created using `ej-grid` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name. 
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -88,7 +88,7 @@ The code example for defining controls in AngularJS is as follows,
 ![](../Getting-started_images/Angularimages/Getting-started_img1.png)
 {:.image }
 
-In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion’s Grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
+In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion’s Grid AngularJS widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
 
 ## Data Binding
 
@@ -148,7 +148,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 
 N> 1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
-N> 2.The array properties of Syncfusion widget's in angularjs has to be defined by using the scope variable.
+N> 2.The array properties of Syncfusion widget's in AngularJS has to be defined by using the scope variable.
 
 ![](../Getting-started_images/Angularimages/Getting-started_img3.png)
 {:.image }
