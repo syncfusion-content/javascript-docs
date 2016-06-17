@@ -20,6 +20,6 @@ The DatePicker control provides support for displaying DatePicker calendar in we
 * Responsive dimension.
 * Flexible customization.
 * Custom Styling.
-* Inbuilt JQuery validation.
+* Built-in jQuery validation.
 * Accessibility (keyboard and ARIA).
 

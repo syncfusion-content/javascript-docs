@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation
-description: Validate the date using JQuery
+description: Validate the date using jQuery
 platform: js
 control: DatePicker
 documentation: ug
@@ -12,7 +12,7 @@ DatePicker is a form control and therefore its value to be validated before proc
 
 DatePicker supports this validation by built-in, so you can do client validation with simple steps to validate and respond validation message. The jQuery validate plugin rules and custom methods can be used in the DatePicker control with the help of two properties,[validationRules](http://help.syncfusion.com/js/api/ejdatepicker#members:validationrules) and [validationMessage](http://help.syncfusion.com/js/api/ejdatepicker#members:validationmessage). 
 
-Before using those properties, you need to add the jQuery validate plugin to your html page.
+Before using those properties, you need to add the jQuery validate plugin to your HTML page.
 
 Refer the below jQuery validation plugin script after jQuery script reference.
 
