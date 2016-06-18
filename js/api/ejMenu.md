@@ -659,7 +659,7 @@ It receives datasource as Essential DataManager object and JSON object.
 {:#members:fields-htmlattribute}
 
 
-Specifies the hTML attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML attributes to &ldquo;li&rdquo; item list.
 
 
 ### fields.id `string`
@@ -1219,7 +1219,7 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 <ts name="ej.Direction" />
 
 
-Specifies position of pull down submenus that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
+Specifies position of pull down submenu that will appear on mouse over.See <a href="global.html#Direction">Direction</a>
 
 <table class="props">
 <thead>
