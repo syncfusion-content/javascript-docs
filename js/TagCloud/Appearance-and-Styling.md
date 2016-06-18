@@ -116,7 +116,7 @@ By default, there are 12 themes support available for **TagCloud** control namel
 * gradient-saffron
 * gradient-saffron-dark
 
-## Css Class
+## CssClass
 
 You can use the CSS class to customize the **TagCloud** appearance. Any of the CSS properties can be used to modify look and feel of tag cloud based on the requirement. Define a **CSS** class as per requirement and assign the class name to **cssClass** property.
 
