@@ -182,7 +182,7 @@ For more information about the KnockoutJS binding, refer the following link loca
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following code example depicts you the way to bind data to the **TagCloud** widget using knockout support,
+The following code example depicts you the way to bind data to the **TagCloud** widget using Knockout support,
 
 {% highlight html %}
 
