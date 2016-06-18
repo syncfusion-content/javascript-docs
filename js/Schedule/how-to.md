@@ -414,3 +414,161 @@ function onAppointmentOpen(args) {
 
 {% endhighlight %}
 
+## Synchronize the Schedule with Outlook
+
+Schedule appointments can be synchronized with Outlook and vice versa, by making use of the Microsoft Outlook 12/15 Object library. 
+
+The following code example depicts the way to synchronize the Schedule with Outlook.
+
+{% highlight html %}
+
+<body>
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div style="float: left" id="Schedule1">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                var dataManager = ej.DataManager({
+                    url: '@Url.Action("GetApp", "Home")',
+                    crudUrl: '@Url.Action("Batch","Home")',
+                    crossDomain: true
+                });
+                dataManager.adaptor = new ej.UrlAdaptor();
+                $("#Schedule1").ejSchedule({
+                    width: "100%",
+                    height: "525px",
+                    currentDate: new Date(2015, 5, 15),
+                    appointmentSettings: {
+                        dataSource: dataManager,
+                        id: "Id",
+                        subject: "Subject",
+                        startTime: "StartTime",
+                        endTime: "EndTime",
+                        startTimeZone: "StartTimeZone",
+                        endTimeZone: "EndTimeZone",
+                        allDay: "AllDay",
+                        recurrence: "Recurrence",
+                        recurrenceRule: "RecurrenceRule"
+                    }
+                });
+
+            });
+        </script>
+</body>
+
+{% endhighlight %}
+
+Schedule control is not directly compatible with the Outlook calendar object, as it returns the COM object. Therefore, in order to bind the schedule control with those data retrieved from outlook, then it is necessary to convert the COM object into the schedule acceptable object format. To do so add the following code example in your code behind. 
+ 
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.ComponentModel;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using Microsoft.Office.Interop.Outlook; // required Microsoft DLL 
+using System.Web.Script.Serialization;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ScheduleCRUDJS.Models;
+using System.Collections;
+namespace ScheduleCRUDJS.Controllers
+{
+    public class HomeController : Controller
+    {
+        ScheduleDataDataContext db = new ScheduleDataDataContext();
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public JsonResult GetApp() // function to display the outlook appointments in Schedule initially
+        {
+            IEnumerable data = GetData(); 
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+        public List<MultipleResource> GetData() // function to return the outlook appointments
+        {
+            Microsoft.Office.Interop.Outlook.Application oApp = new Microsoft.Office.Interop.Outlook.Application();
+            Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
+            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
+            Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
+            List<Microsoft.Office.Interop.Outlook.AppointmentItem> lst = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
+
+            foreach (Microsoft.Office.Interop.Outlook.AppointmentItem item in outlookCalendarItems)
+            {
+                lst.Add(item);
+            }
+
+            List<MultipleResource> newApp = new List<MultipleResource>();
+            // converting COM object into IEnumerable object
+            for (var i = 0; i < lst.Count; i++)
+            {
+                MultipleResource app = new MultipleResource();
+                app.Id = i;
+                app.Subject = lst[i].Subject;
+                app.AllDay = lst[i].AllDayEvent;
+                app.StartTime = Convert.ToDateTime(lst[i].Start.ToString());
+                string endTime = lst[i].End.ToString();
+                DateTime appEndDate = Convert.ToDateTime(endTime);
+                if (endTime.Contains("12:00:00 AM") && app.AllDay == true)
+                    app.EndTime = appEndDate.AddMinutes(-1);
+                else
+                    app.EndTime = appEndDate;
+                app.Recurrence = false;
+                app.RecurrenceRule = null;
+                newApp.Add(app);
+            }
+            return newApp;
+        }
+        public JsonResult Batch(EditParams param)
+        {
+            if (param.action == "insert" || (param.action == "batch" && param.added != null))          // this block of code will execute while inserting the appointments
+            {
+                var value = param.action == "insert" ? param.value : param.added[0];
+                int intMax = db.MultipleResources.ToList().Count > 0 ? db.MultipleResources.ToList().Max(p => p.Id) : 1;
+                DateTime startTime = Convert.ToDateTime(value.StartTime);
+                DateTime endTime = Convert.ToDateTime(value.EndTime);
+                MultipleResource appoint = new MultipleResource()
+                {
+                    Id = intMax + 1,
+                    StartTime = startTime,
+                    EndTime = endTime,
+                    StartTimeZone = value.StartTimeZone,
+                    EndTimeZone = value.EndTimeZone,
+                    Subject = value.Subject,
+                    OwnerId = value.OwnerId,
+                    AllDay = value.AllDay,
+                    Recurrence = value.Recurrence,
+                    RecurrenceRule = value.RecurrenceRule
+                };
+                db.MultipleResources.InsertOnSubmit(appoint);
+                db.SubmitChanges();
+                Microsoft.Office.Interop.Outlook.Application outlookApp = new Microsoft.Office.Interop.Outlook.Application();
+                Microsoft.Office.Interop.Outlook.AppointmentItem newAppointment = null;
+                newAppointment = (Microsoft.Office.Interop.Outlook.AppointmentItem)outlookApp.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType.olAppointmentItem);
+                newAppointment.Start = Convert.ToDateTime(value.StartTime).ToUniversalTime();
+                newAppointment.End = Convert.ToDateTime(value.EndTime).ToUniversalTime();
+                newAppointment.Subject = value.Subject.ToString();
+                newAppointment.Save();
+            }
+            IEnumerable data = new ScheduleDataDataContext().MultipleResources.Take(200);
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+    }
+}
+
+{% endhighlight %}
+
+N> In order to achieve the above scenario, need to refer the Microsoft DLL in your application (Microsoft Outlook 12/15 Object library [Microsoft.Office.Interop.Outlook] and refer it in the controller page as shown above).
