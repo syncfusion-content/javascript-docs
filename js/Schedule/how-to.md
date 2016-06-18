@@ -416,7 +416,7 @@ function onAppointmentOpen(args) {
 
 ## Synchronize the Schedule with Outlook
 
-Schedule appointments can be synchronized with Outlook and vice versa. 
+Schedule appointments can be synchronized with Outlook and vice versa, by making use of the Microsoft Outlook 12/15 Object library. 
 
 The following code example depicts the way to synchronize the Schedule with Outlook.
 
@@ -462,7 +462,7 @@ The following code example depicts the way to synchronize the Schedule with Outl
 
 {% endhighlight %}
 
- We would like to let you know that our Schedule control is not directly compatible with Outlook calendar object, as it returns the COM object. Therefore, in order to bind the schedule control with those data retrieved from outlook, then it is necessary to convert the COM object into the schedule acceptable object format. To do so add the following code example in your code behind. 
+Schedule control is not directly compatible with the Outlook calendar object, as it returns the COM object. Therefore, in order to bind the schedule control with those data retrieved from outlook, then it is necessary to convert the COM object into the schedule acceptable object format. To do so add the following code example in your code behind. 
  
 {% highlight c# %}
 
@@ -571,4 +571,4 @@ namespace ScheduleCRUDJS.Controllers
 
 {% endhighlight %}
 
-N> In order to achieve the above scenario, need to refer the Microsoft DLL in your application (Microsoft Outlook 12/15 Object library (Microsoft.Office.Interop.Outlook) and use it in the controller page as shown above).
+N> In order to achieve the above scenario, need to refer the Microsoft DLL in your application (Microsoft Outlook 12/15 Object library [Microsoft.Office.Interop.Outlook] and refer it in the controller page as shown above).
