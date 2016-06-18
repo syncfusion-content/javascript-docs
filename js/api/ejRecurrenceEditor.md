@@ -52,14 +52,14 @@ $('#RecurrenceEditor').ejRecurrenceEditor();
 ### frequencies `array`
 {:#members:frequencies}
 
-Defines the collection of recurrence frequencies within Recurrence editor such as Never, Daily, Weekly, Monthly, Yearly and Every weekday.
+Defines the collection of recurrence frequencies within Recurrence Editor such as Never, Daily, Weekly, Monthly, Yearly and Every Weekday.
 
 
 #### Default Value
 
 * ["never", "daily", "weekly", "monthly", "yearly", "everyweekday"]
 
-#### Example - To set specific frequencies for Recurrence Editor.
+#### Example - To set frequencies for Recurrence Editor.
 
 {% highlight html %}
 
@@ -93,7 +93,7 @@ Sets the starting day of the week.
 <script type="text/javascript">
         $(function () {
             $("#RecurrenceEditor").ejRecurrenceEditor({
-              firstDayOfWeek:true
+              firstDayOfWeek: "tuesday"
             });
         });
 </script>
@@ -103,13 +103,13 @@ Sets the starting day of the week.
 ### enableSpinners `boolean`
 {:#members:enablespinners}
 
-When set to true, enables the spin button of numeric textboxes within the Recurrence editor.  
+When set to true, enables the spin button of numeric textboxes within the Recurrence Editor.  
 
 #### Default Value
 
 * true
 
-#### Example - To disable the spin button of numeric textbox within Recurrence Editor.
+#### Example - To disable the spin button of numeric textboxes within Recurrence Editor.
 
 {% highlight html %}
  
@@ -134,7 +134,7 @@ Sets the start date of the recurrence. The Recurrence Editor initially displays 
 
 * new Date()
 
-#### Example - To set the specific date for Recurrence Editor.
+#### Example - To set the specific starting date of Recurrence Editor.
 
 {% highlight html %}
  
@@ -180,7 +180,7 @@ Sets the specific culture to the Recurrence Editor.
 ### dateFormat `string`
 {:#members:dateformat}
 
-Sets the date format for Recurrence Editor.
+Sets the date format for the datepickers available within the Recurrence Editor.
 
 #### Default Value
 
@@ -202,10 +202,35 @@ Sets the date format for Recurrence Editor.
 
 {% endhighlight %}
 
+### enableRTL `boolean`
+{:#members:enablertl}
+
+When set to true, renders the Recurrence Editor options from Right-to-Left direction.
+
+#### Default Value
+
+* false
+
+#### Example - To set the enableRTL property for Recurrence Editor.
+
+{% highlight html %}
+
+<div id="RecurrenceEditor"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#RecurrenceEditor").ejRecurrenceEditor({
+                enableRTL: true
+             });
+        });
+</script>
+
+{% endhighlight %}
+
 ### selectedRecurrenceType `number`
 {:#members:selectedrecurrencetype}
 
-Sets the specific repeat type(frequency) on Recurrence Editor based on the index value provided. For example, setting the value 1 will initially set the repeat type as “Daily” and display its related options.   
+Sets the active/current repeat type(frequency) on Recurrence Editor based on the index value provided. For example, setting the value 1 will initially set the repeat type as `Daily` and display its related options.   
 
 #### Default Value
 
@@ -283,7 +308,7 @@ Sets the maximum date limit to display on the datepickers used within the Recurr
 ### cssClass `string`
 {:#members:cssclass  }
 
-Accepts the custom CSS class name, that defines specific user-defined styles and themes to be applied on partial or complete elements of the Recurrence Editor. 
+Accepts the custom CSS class name, that defines user-defined styles and themes to be applied on partial or complete elements of the Recurrence Editor. 
 
 #### Default Value
 
@@ -315,8 +340,8 @@ Accepts the custom CSS class name, that defines specific user-defined styles and
 
 ## Methods
 
-### closeRecurPublic()
-{:#methods:closerecurpublic}
+### getRecurrenceRule()
+{:#methods:getrecurrencerule}
 
 
 Generates the recurrence rule with the options selected within the Recurrence Editor.
@@ -336,14 +361,14 @@ Generates the recurrence rule with the options selected within the Recurrence Ed
         });
 
 var schObj = $("#RecurrenceEditor").data("ejRecurrenceEditor");
-schObj.closeRecurPublic();
+schObj.getRecurrenceRule();
 alert(schObj._recRule);
 </script>
 
 {% endhighlight %}
 
 
-### recurrenceDateGenerator(recurrenceString,startDate)
+### recurrenceDateGenerator(recurrenceString, startDate)
 {:#methods:recurrencedategenerator}
 
 Generates the collection of date, that lies within the selected recurrence start and end date for which the recurrence pattern applies.
@@ -408,12 +433,12 @@ schObj.recurrenceDateGenerator(recurrenceString,startDate);
         <tr>
             <td class="name">recurrenceRule</td>
             <td class="type">string</td>
-            <td class="description">It refers recurrence rule for the recurrence editor.</td>
+            <td class="description">It refers the recurrence rule string.</td>
         </tr>
         <tr>
             <td class="name">exDate</td>
-            <td class="type">string</td>
-            <td class="description">It refers the appointment date of exdate</td>
+            <td class="type">object</td>
+            <td class="description">It refers the appointment dates (ExDate) to be excluded</td>
         </tr>
     </tbody>
 </table>
@@ -458,17 +483,17 @@ Triggers whenever any of the Recurrence Editor’s value is changed.
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
+<td class="description">When set to true, event gets canceled.</td>
 </tr>
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.RecurrenceEditor.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the Recurrence Editor model</td>
+<td class="description">Returns the Recurrence Editor model</td>
 </tr>
 <tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event</td>
+<td class="description">Returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">recurrenceRule</td>
