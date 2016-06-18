@@ -19,7 +19,7 @@ Each item has a variety of options and these options are also specified in the l
 
 The following code example illustrates to create the **Tab** control within the root **Tab** element. This **HTML** code is appended within the previous **HTML** code section. To render the child **Tab** with its header, add this code example within the first **Tab** &lt;div&gt; element. 
 
-Add the following **HTML** to render sub **Tab** with **ajax** content.
+Add the following **HTML** to render sub **Tab** with **AJAX** content.
 
 {% highlight html %}
 
