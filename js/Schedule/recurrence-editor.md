@@ -40,7 +40,7 @@ ej.recurrenceeditor.min.js<br/><br/></td><td>
 Schedule core file<br/><br/></td></tr>
 <tr>
 <td>
-ej.scroller.js<br/><br/>ej.datepicker.min.js<br/><br/>ej.checkbox.min.js<br/><br/>ej.editor.min.js<br/><br/>ej.dropdownlist.min.js<br/><br/>ej.radiobutton.min.js<br/><br/></td><td>
+ej.scroller.min.js<br/><br/>ej.datepicker.min.js<br/><br/>ej.checkbox.min.js<br/><br/>ej.editor.min.js<br/><br/>ej.dropdownlist.min.js<br/><br/>ej.radiobutton.min.js<br/><br/></td><td>
 These files are referred for proper working of the sub-controls used within RecurrenceEditor.<br/><br/></td></tr>
 </table>
 
@@ -108,7 +108,7 @@ The following code example depicts the way to generate the recurrence rule.
          }
         function closerecurrence() {
             var obj = $(".e-recurrenceeditor").data("ejRecurrenceEditor")
-            obj.closeRecurPublic();
+            obj.getRecurrenceRule();
             alert(obj._recRule);
         }
   </script>
