@@ -828,7 +828,7 @@ Accepts the custom CSS class name that defines specific user-defined styles and 
 
 * "" 
 
-#### Example - To simply customize the background color of Scheduler header element by using custom css class name.
+#### Example - To simply customize the background color of Scheduler header element by using custom CSS class name.
 
 {% highlight html %}
 
@@ -2425,7 +2425,7 @@ Allows priority field customization in the appointment window to add custom icon
 
 {% endhighlight %}
 
-> Since the `prioritySettings` contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.
+> Since the `prioritySettings` contains the default values in its dataSource like none, high, medium and low, the appropriate CSS classes has to be created with the same value names to apply it on the template.
 
 ### readOnly `boolean`
 {:#members:readonly }
@@ -2541,7 +2541,7 @@ Sets the timing, when the reminders are to be alerted for the Schedule appointme
 ### renderDates `object`
 {:#members:renderdates}
 
-Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to **customview**.
+Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to `ej.Schedule.CurrentView.CustomView`.
 
 #### Default Value
 
