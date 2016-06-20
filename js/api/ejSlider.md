@@ -91,7 +91,7 @@ $('#slider').ejSlider();
 
 
 ### allowMouseWheel `boolean`
-{:#members : allowmousewheel}
+{:#members:allowmousewheel}
 
 
 
