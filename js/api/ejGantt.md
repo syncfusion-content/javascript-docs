@@ -108,7 +108,7 @@ Enables or disables the ability to resize column.
 ### allowGanttChartEditing `boolean`
 {:#members:allowganttchartediting}
 
-Enables or Disables gantt chart editing in Gantt
+Enables or Disables Gantt chart editing in Gantt
 
 
 #### Default Value:
@@ -3290,7 +3290,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the gantt model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4811,7 +4811,7 @@ $("#gantt").ejGantt({
 ### taskbarEditing
 {:#events:taskbarediting}
 
-Triggered while editing the gantt chart (dragging, resizing the taskbar )
+Triggered while editing the Gantt chart (dragging, resizing the taskbar )
 
 <table class="params">
 <thead>
