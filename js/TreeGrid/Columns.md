@@ -226,7 +226,7 @@ Column menu can be displayed in column header by enabling **‘showColumnChooser
 
 Following are the items displayed in the column menu,
 
-* **Column Chooser** – Display all the column names; you can enable or disable a column by selecting or deselecting the respective column name in the column chooser menu.
+* **Column Chooser** – Display all the column names; you can enable or disable a column by select or deselect the respective column name in the column chooser menu.
 * **Sort Ascending & Sort Descending** – Used to sort the items in the column. These menu options will be displayed only when you enable **allowSorting** property to true. To perform multilevel sorting, the **‘allowMultiSorting’** property should be enabled.
 * **Freeze, Unfreeze & Freeze Preceding Columns** – Used to freeze or unfreeze the columns. These set of menu options will be displayed in all the columns when **columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **columns.allowFreezing** property of that specific column.
 
