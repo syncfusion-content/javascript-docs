@@ -20,7 +20,7 @@ The following section explains you on how to set orientation for the toolbar.
 
 This property sets the **Toolbar** in **horizontal** orientation. You can refer the following steps to set horizontal orientation for **Toolbar** control.
 
-In View, create ul-li list of toolbar items and invoke the toolbar helper.
+In View, create UL-LI list of toolbar items and invoke the toolbar helper.
 
 Add the following script in your **HTML** page.
 
@@ -54,7 +54,7 @@ The following screenshot illustrates a **Toolbar** with horizontal orientation.
 
 This property sets the **Toolbar** in **vertical** orientation. You can refer the following steps to set vertical orientation for **Toolbar** control.
 
-Create ul-li list of toolbar items and invoke the toolbar helper.
+Create UL-LI list of toolbar items and invoke the toolbar helper.
 
 Add the following script in your **HTML** page.
 
