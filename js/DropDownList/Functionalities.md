@@ -56,7 +56,7 @@ To select an item initially you can pass the item’s value via [value](http://h
 
 ![](Functionalities_images/Functionalities_img1.jpeg)
 
-N> To retrieve the selected item’s li elements and value you can use [getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue) methods respectively.
+N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
 {% highlight html %}
 
@@ -341,7 +341,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 N> Grouping has restrictions in the following scenarios,
 N> 1.  It is not supported on using HTML "select" element with predefined set of options
-N> 2.  When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
+N> 2.  When using UL-LI elements you need to use “e-category” class in LI element to specify it as the grouping header. The following code will explain this behavior,
 
 
 {% highlight html %}
