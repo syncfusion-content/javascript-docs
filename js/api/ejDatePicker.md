@@ -179,7 +179,7 @@ allow or restrict the drill down to multiple levels of view (month/year/decade) 
 
 
 ### blackoutDates `object`
-
+{:#members:blackoutdates}
 
 Disable the Specified date value 
 
