@@ -119,7 +119,7 @@ export class AppComponent {
 
 N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) angular help document.
 
-E> Error : Cannot find module 'ej/dialog.component’ - This error will throw if missing of `ej.angular2.min.js` file from sample.
+E> Error : Cannot find module 'ej/dialog.component' - This error will throw if missing of `ej.angular2.min.js` file from sample.
 
 ## 3. Invoking EJ widget methods from component instance
 
