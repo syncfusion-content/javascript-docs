@@ -2393,7 +2393,7 @@ element</td>
 $("#datetime").ejDateTimePicker({
    beforeClose: function (args) {}
 }); 
-</script>  
+</script>  {% endhighlight %}
 
 
 
@@ -2468,7 +2468,7 @@ element</td>
 $("#datetime").ejDateTimePicker({
    beforeOpen: function (args) {}
 }); 
-</script>  
+</script>{% endhighlight %}
 
 
 
