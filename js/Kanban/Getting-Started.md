@@ -46,6 +46,14 @@ Refer to the internal dependencies in the following table.
    </tr>
    <tr>
       <td>
+        ej.touch.min.js 
+      </td>
+      <td>
+          It is referred when using touch functionalities in Kanban.
+      </td>
+   </tr>
+   <tr>
+      <td>
         ej.kanban.min.js
       </td>
       <td>
@@ -136,14 +144,6 @@ Refer to the internal dependencies in the following table.
       </td>
       <td>
         These files are used while using the cell edit type as RTE in the Kanban.
-      </td>
-   </tr>
-    <tr>
-      <td>
-        ej.touch.min.js 
-      </td>
-      <td>
-        These files are used to enable touch operations in touch devices in the Kanban.
       </td>
    </tr>
 </table>
