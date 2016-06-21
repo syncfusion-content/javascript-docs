@@ -238,6 +238,32 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 {% endhighlight %}
 
 
+### allowDragAndDrop `boolean`
+{:#members:allowdraganddrop}
+
+Enables or disables the ability to drag and drop the row interactively to reorder the rows
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ allowDragAndDrop:  true });            
+</script>
+
+{% endhighlight %}
+
+
 ### enablePredecessorValidation `boolean`
 {:#members:enablepredecessorvalidation}
 
@@ -369,6 +395,31 @@ Specifies the mapping property path for sub tasks in datasource
 {% endhighlight %}
 
 
+### columnDialogFields `array`
+{:#members:columndialogfields}
+
+To Specify the column fields that we need to display in the dialog while inserting a new column with the help of column menu.
+
+
+#### Default Value:
+{:.param}
+
+* []
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
+        $("#gantt").ejGantt({ columnDialogFields: ["field", "headerText", "editType", "width", "visible", "allowSorting", "textAlign", "headerTextAlign"] });                   
+</script>
+
+{% endhighlight %}
+
 ### connectorLineBackground `string`
 {:#members:connectorlinebackground}
 
@@ -448,6 +499,80 @@ Specify the CSS class for Gantt to achieve custom theme.
 
 {% endhighlight %}
 
+
+### dragTooltip `object`
+{:#members:dragtooltip}
+
+Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
+
+
+### dragTooltip.showTooltip `boolean`
+{:#members:dragtooltip-showtooltip}
+
+Specify whether to show tooltip while dragging a row.
+
+
+#### Default Value
+
+* true
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({  dragTooltip : { showTooltip:  true } });
+</script>
+{% endhighlight %}
+
+
+### dragTooltip.tooltipItems `array`
+{:#members:dragtooltip-tooltipitems}
+
+options to add field names whose corresponding value in the dragged row needs to be shown in the preview tooltip
+
+
+#### Default Value
+
+* []
+
+
+#### Example
+
+
+{% highlight html %}
+                    
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({  dragTooltip : { tooltipItems: "TaskName","TaskID","StartDate" } });
+</script>
+
+{% endhighlight %}
+
+
+### dragTooltip.tooltipTemplate `string`
+{:#members:dragtooltip-tooltiptemplate}
+
+Custom template for tooltip that is shown while dragging a row.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+{% highlight html %}               
+                    
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({  dragTooltip : { tooltipTemplate: "" } });
+</script>
+{% endhighlight %}
 
 ### dataSource `array`
 {:#members:datasource}
@@ -775,6 +900,48 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `enum`
+{:#members:editsettings.begineditaction}
+<ts name = "ej.Gantt.BeginEditAction"/>
+
+Specifies when should we begin the editing, in single click or in double click.           
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Click</td>
+<td class="description">you can edit a row in single click.</td>
+</tr>
+<tr>
+<td class="name">DblClick</td>
+<td class="description">you can edit a row in double click.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.BeginEditAction.DblClick
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ editSettings:{beginEditAction : ej.Gantt.BeginEditAction.Click} });                      * 
+</script>           
+
+{% endhighlight %}
+
 
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
@@ -800,6 +967,54 @@ Enables or Disables enableAltRow row effect in Gantt
 
 {% endhighlight %}
 
+
+### enableWBS `boolean`
+{:#members:enableWBS}
+
+Enables or disables WBS (Work Breakdown Structure) column in Gantt, to represents all the tasks of the Gantt in hierarchical format or tree like structure. 
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({ enableWBS : true});                    
+</script>
+
+{% endhighlight %}
+
+### enableWBSPredecessor `boolean`
+{:#members:enableWBSpredecessor}
+
+Enables or disables WBSPredecessor column in Gantt, to depicts the relationship between WBS and Predecessor value of an each and every tasks in Gantt. 
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({ enableWBSPredecessor : true});                    
+</script>
+
+{% endhighlight %}
 
 ### enableCollapseAll `boolean`
 {:#members:enablecollapseall}
@@ -1151,6 +1366,99 @@ Specifies the mapping property path for milestone in datasource
 
 {% endhighlight %}
 
+### showColumnOptions `boolean`
+{:#members:showcolumnoptions}
+
+To showup the additional column properties to customize the column further. By enabling this property we will get few more options in the column menu.          
+
+#### Default Value:
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ showColumnOptions:  true });                      * 
+</script>
+
+{% endhighlight %}
+
+### parentTaskbarTemplate `string`
+{:#members:parenttaskbartemplate}
+
+To Specify the JsRender script Id to customise the task bar with our preference
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    parentTaskbarTemplate: "ParentTaskbarTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
+### selectionType `enum`
+{:#members:selectiontype}
+
+<ts name = "ej.Gantt.SelectionType"/>
+
+Specifies the type of selection whether to select single row or multiple rows.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Single</td>
+<td class="description">you can select a single row.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="description">you can select a multiple row.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.SelectionType.Single
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ selectionType:ej.Gantt.SelectionType.Multiple });                      * 
+</script>           
+
+{% endhighlight %}
 
 ### parentProgressbarBackground `string`
 {:#members:parentprogressbarbackground}
@@ -1624,6 +1932,7 @@ Specifies the height of a single row in Gantt. Also, we need to set same height 
 {% endhighlight %}
 
 
+
 ### scheduleEndDate `string`
 {:#members:scheduleenddate}
 
@@ -2059,6 +2368,7 @@ Enables or disables the column chooser.
 {% endhighlight %}
 
 
+
 ### showGridCellTooltip `boolean`
 {:#members:showgridcelltooltip}
 
@@ -2259,6 +2569,49 @@ Specifies the width of Gantt control
 
 {% endhighlight %}
 
+### selectedCellIndexes `array`
+{:#members:selectedcellindexes}
+
+To select the number of required cells at load time. We need to specify rowIndex and its corresponding cellIndex to be select.
+
+### selectedCellIndexes.rowIndex `number`
+{:#members:selectedcellindexes-rowIndex}
+
+
+Specifies the row index of the cell to be selected Gantt control
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+### selectedCellIndexes.cellIndex `number`
+{:#members:selectedcellindexes-cellIndex}
+
+Specifies the cell index to be selected in the row.
+
+
+#### Default Value:
+{:.param}
+
+* " "
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    selectedCellIndexes:[{rowIndex: 2, cellIndex: 3}];
+ });            
+</script>
+
+{% endhighlight %}
 
 ### sortSettings `object`
 {:#members:sortsettings}
@@ -2493,6 +2846,63 @@ Specifies the template for tooltip on mouse action on taskbars
 
 {% endhighlight %}
 
+### taskbarTemplate `string`
+{:#members:taskbartemplate}
+
+To Specify the JsRender script Id to customize the task bar with our preference
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    taskbarTemplate: "TaskbarTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
+
+### milestoneTemplate `string`
+{:#members:milestonetemplate}
+
+To Specify the JsRender script Id to customize the mile stone with our preference
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    milestoneTemplate: "MilestoneTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
 
 ### taskbarTooltipTemplateId `string`
 {:#members:taskbartooltiptemplateid}
@@ -2627,7 +3037,7 @@ Specifies the list of toolbar items to rendered in toolbar
  
 <div id="gantt"></div> 
 <script>  
-        $("#gantt").ejGantt({ toolbarItems: [ej.Gantt.ToolbarItems.Add,ej.Gantt.ToolbarItems.Edit] });                   
+        $("#gantt").ejGantt({ toolbarSettings: { toolbarItems: [ej.Gantt.ToolbarItems.Add,ej.Gantt.ToolbarItems.Edit] } });                   
 </script>
 
 {% endhighlight %}
@@ -2661,6 +3071,48 @@ Specifies the tree expander column in Gantt
 
 {% endhighlight %}
 
+### selectionMode `enum`
+{:#members:selectionmode}
+
+<ts name = "ej.Gantt.SelectionMode"/>
+
+Specifies the type of selection whether to select row or cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Row</td>
+<td class="description">you can select a row.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">you can select a cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.SelectionMode.Row
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ selectionMode:ej.Gantt.SelectionMode.Row });                      * 
+</script>           
+
+{% endhighlight %}
 
 ### weekendBackground `string`
 {:#members:weekendbackground}
@@ -2781,6 +3233,50 @@ To add item in Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
 ganttObj.addRecord(data, ej.Gantt.AddRowPosition.Child); // To add a task
+</script>
+{% endhighlight %}
+
+
+### selectCells(Indexes,preservePreviousSelectedCell)
+{:#methods:selectcells}
+
+To select cell based on the cell and row index dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Indexes</td>
+<td class="type">array</td>
+<td class="description">array of cell indexes to be select</td>
+</tr>
+<tr>
+<td class="name">preservePreviousSelectedCell</td>
+<td class="type">boolean</td>
+<td class="description">Defines that we need to preserve the previously selected cells of not</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
+ganttObj.selectCells(indexes, true); // To add a task
 </script>
 {% endhighlight %}
 
@@ -3828,6 +4324,469 @@ $("#gantt").ejGantt({
 });
 </script>
 {% endhighlight %}
+
+### cellSelecting
+{:#events:cellselecting}
+
+Triggered before selecting a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   cellSelecting: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### cellSelected
+{:#events:cellselected}
+
+Triggered after selected a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+<tr>
+<td class="name">previousData</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row data</td>
+</tr>
+<tr>
+<td class="name">previousCellIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell index</td>
+</tr>
+<tr>
+<td class="name">perviousRowIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row index</td>
+</tr>
+<tr>
+<td class="name">previousTargetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell element</td>
+</tr>
+<tr>
+<td class="name">previousTargetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   cellSelected: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### rowDrag
+{:#events:rowdrag}
+
+
+Triggered while dragging a row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when dragging a row.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row on which we are dragging.</td>
+</tr>
+<tr>
+<td class="name">targetRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on which we are dragging.</td>
+</tr>
+<tr>
+<td class="name">canDrop</td>
+<td class="type">boolean</td>
+<td class="description">Returns that we can drop over that record or not.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDrag: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### rowDragStart
+{:#events:rowdragstart}
+
+
+Triggered while start to drag row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when drag starts.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">boolean</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDragStart: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### rowDragStop
+{:#events:rowdragstop}
+
+
+Triggered while drop a row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when dragging a row.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">targetRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDragStop: function (args) {}
+});
+</script>
+{% endhighlight %}
+
 
 
 ### collapsed

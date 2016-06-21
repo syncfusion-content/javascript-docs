@@ -191,6 +191,26 @@ Enables or disables the ability to sort the rows based on a single field/column 
         
 {% endhighlight %}
 
+### allowPaging `boolean`
+{:#members:allowpaging}
+
+To Specify the TreeGrid to show up in the paginated data. Also it enables or disables the pager control at the bottom of TreeGrid to dynamic navigation of data source. Paging can be further customized with the help of "pageSettings" property.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+
+        $("#treegrid").ejTreeGrid({ allowPaging : true });
+        
+{% endhighlight %}
+
 
 ### altRowTemplateID `string`
 {:#members:altrowtemplateid}
@@ -302,6 +322,24 @@ Enables or disables the ability to sort the rows based on this column/field.
 
 {% endhighlight %}
 
+### columns.allowCellSelection `boolean`
+{:#members:columns-allowcellselection}
+
+Column Property to allow the cell selection for that particular column.
+
+#### Default Value:
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({ columns: [{ allowCellSelection: true },{allowCellSelection: false }]  });
+
+{% endhighlight %}
 
 ### columns.editType `enum`
 {:#members:columns-edittype}
@@ -520,6 +558,30 @@ Specifies whether the column is frozen
 
 {% endhighlight %}
 
+### columnDialogFields `array`
+{:#members:columndialogfields}
+
+To Specify the column fields that we need to display in the dialog while inserting a new column with the help of column menu.
+
+
+#### Default Value:
+{:.param}
+
+* []
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
+        $("#treegrid").ejTreeGrid({ columnDialogFields: ["field", "headerText", "editType", "width", "visible", "allowSorting", "textAlign", "headerTextAlign"] });                   
+</script>
+
+{% endhighlight %}
 
 ### columns.allowFreezing `boolean`
 
@@ -863,6 +925,49 @@ Specifies the position where the new row has to be added.
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `enum`
+{:#members:editsettings-begineditaction}
+<ts name = "ej.TreeGrid.BeginEditAction"/>
+
+Specifies when should we begin the editing, in single click or in double click.             
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Click</td>
+<td class="description">you can edit a row in single click.</td>
+</tr>
+<tr>
+<td class="name">DblClick</td>
+<td class="description">you can edit a row in double click.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.BeginEditAction.DblClick
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="treeGrid"></div> 
+<script>   
+        $("#treeGrid").ej.treeGrid({ editSettings:{beginEditAction : ej.TreeGrid.BeginEditAction.Click} });                      * 
+</script>           
+
+{% endhighlight %}
+
+
 
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
@@ -1014,6 +1119,202 @@ Specifies the name of the field in the dataSource, which contains the parent’s
 {% endhighlight %}
 
 
+### pageSettings `object`
+{:#members:pagesettings}
+
+Specifies the options for customizing the pager.
+
+
+### pageSettings.pageCount `number`
+{:#members:pagesettings-pagecount}
+
+Using this property we can specify the number of pages should pager contains, according to this count TreeGrid height will be updated.
+
+
+#### Default Value:
+{:.param}
+
+* 8
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                          
+        $("#treegrid").ejGantt({  
+                        pageSettings:{pageCount: 10, }
+                });
+</script>              
+
+{% endhighlight %}
+
+
+### pageSettings.pageSize `number`
+{:#members:pagesettings-pagesize}
+
+This specifies the number of records should display in each page.
+
+
+#### Default Value:
+{:.param}
+
+* 12
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
+        $("#treegrid").ejTreeGrid({  
+                pageSettings:{pageSize : 10}
+        });
+</script>               
+
+{% endhighlight %}
+
+### pageSettings.totalRecordsCount `number`
+{:#members:pagesettings-totalrecordscount}
+
+Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasoure bound to TreeGrid.
+
+
+#### Default Value:
+{:.param}
+
+* null
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
+        $("#treegrid").ejTreeGrid({  
+                        pageSettings:{totalRecordsCount : null}
+                });
+</script>               
+
+{% endhighlight %}
+
+### pageSettings.currentPage `number`
+{:#members:pagesettings-currentpage}
+
+This allows us to set the current page at load time.
+
+#### Default Value:
+{:.param}
+
+* 1
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
+        $("#treegrid").ejTreeGrid({  
+                        pageSettings:{currentPage : 2}
+                });
+</script>               
+
+{% endhighlight %}
+
+### pageSettings.pageSizeMode `enum`
+{:#members:pagesettings-pagesizemode}
+
+<ts name = "ej.TreeGrid.PageSizeMode"/>
+
+Specifies the mode of record count in a page, whether it should count all the records or the root to count zero level parent records.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">All</td>
+<td class="description">To count all the parent and child records.</td>
+</tr>
+<tr>
+<td class="name">Root</td>
+<td class="description">To count the Zeroth level parent records.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.PageSizeMode.All
+
+
+#### Example
+
+
+{% highlight html %}
+          
+        $("#treegrid").ejTreeGrid({ pageSettings :{ pageSizeMode:ej.TreeGrid.PageSizeMode.Root } });                   
+
+{% endhighlight %}
+
+
+### pageSettings.template `string`
+{:#members:pageSettings-template}
+
+To specify Custom template for Pager control.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({ pageSettings :{ template:"PageTemplate" }});        
+
+{% endhighlight %}
+
+### cellTooltipTemplate `string`
+{:#members:celltooltiptemplate}
+
+To specify the template id for tooltip on mouse actions.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({ cellTooltipTemplate : "CellTooltipTemplate"});        
+
+{% endhighlight %}
+
+
 ### query `object`
 {:#members:query}
 
@@ -1108,11 +1409,54 @@ Specifies the index of the selected row.
 
 {% endhighlight %}
 
+### selectionMode `enum`
+{:#members:selectionmode}
+
+<ts name = "ej.TreeGrid.SelectionMode"/>
+
+Specifies the type of selection whether to select row or cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Row</td>
+<td class="description">you can select a row.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">you can select a cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.SelectionMode.Row
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="treegrid"></div> 
+<script>   
+        $("#treegrid").ejTreeGrid({ selectionMode:ej.TreeGrid.SelectionMode.Row });                      * 
+</script>           
+
+{% endhighlight %}
+
 
 ### selectionType `enum`
 {:#members:selectiontype}
 
-<ts name = "ej.Gantt.SelectionType"/>
+<ts name = "ej.TreeGrid.SelectionType"/>
 
 Specifies the type of selection whether to select single row or multiple rows.
 
@@ -1146,6 +1490,29 @@ Specifies the type of selection whether to select single row or multiple rows.
 {% highlight html %}
           
         $("#treegrid").ejTreeGrid({ selectionType:ej.TreeGrid.SelectionType.Multiple });                   
+
+{% endhighlight %}
+
+### showColumnOptions `boolean`
+{:#members:showcolumnoptions}
+
+To showup the additional column properties to customize the column further. By enabling this property we will get few more options in the column menu.          
+
+#### Default Value:
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>   
+        $("#treegrid").ejTreeGrid({ showColumnOptions:  true });                      * 
+</script>
 
 {% endhighlight %}
 
@@ -1405,6 +1772,50 @@ treegridObj.clearSelection(2);
 </script>
 {% endhighlight %}
 
+### selectCells(Indexes,preservePreviousSelectedCell)
+{:#methods:selectcells}
+
+To select cell based on the cell and row index dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Indexes</td>
+<td class="type">array</td>
+<td class="description">array of cell indexes to be select</td>
+</tr>
+<tr>
+<td class="name">preservePreviousSelectedCell</td>
+<td class="type">boolean</td>
+<td class="description">Defines that we need to preserve the previously selected cells or not</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create treegrid
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
+treegridObj.selectCells(indexes, true); // To add a task
+</script>
+{% endhighlight %}
+
+
 ### collapseAll()
 {:#methods:collapseall}
 
@@ -1645,6 +2056,45 @@ To search an item with search string provided at the run time
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.search("Plan"); // To search a Plan string in tree grid data
 </script>
+
+{% endhighlight %}
+
+### gotoPage(number)
+{:#methods:gotopage}
+
+To navigate to the specific page
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">number</td>
+<td class="type">number</td>
+<td class="description">you pass a page number to navigate</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.gotoPage(3);
+</script> 
 
 {% endhighlight %}
 
@@ -3254,6 +3704,197 @@ Triggered while drop a row in TreeGrid control
 <script>
 $("#treegrid").ejTreeGrid({
    rowDragStop: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### cellSelecting
+{:#events:cellselecting}
+
+Triggered before selecting a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   cellSelecting: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### cellSelected
+{:#events:cellselected}
+
+Triggered after selected a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+<tr>
+<td class="name">previousData</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row data</td>
+</tr>
+<tr>
+<td class="name">previousCellIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell index</td>
+</tr>
+<tr>
+<td class="name">perviousRowIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row index</td>
+</tr>
+<tr>
+<td class="name">previousTargetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell element</td>
+</tr>
+<tr>
+<td class="name">previousTargetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   cellSelected: function (args) {}
 });
 </script>
 {% endhighlight %}
