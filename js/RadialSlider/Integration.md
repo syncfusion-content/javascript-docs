@@ -3,7 +3,7 @@ layout: post
 title: KnockoutJS-Support
 description: KnockoutJS support
 platform: js
-control:RadialSlider 
+control: RadialSlider 
 documentation: ug
 ---
 
