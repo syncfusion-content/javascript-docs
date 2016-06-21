@@ -194,8 +194,7 @@ Enables or disables the ability to sort the rows based on a single field/column 
 ### allowPaging `boolean`
 {:#members:allowpaging}
 
-To Specify the TreeGrid to show up in the paginated data. Also it enables or disables the pager control at the bottom of TreeGrid to dynamic navigation of data source. Paging can be further customized with the help of "pageSettings" property.
-
+Enables/disables pagination of rows in TreeGrid
 
 #### Default Value
 
@@ -325,7 +324,7 @@ Enables or disables the ability to sort the rows based on this column/field.
 ### columns.allowCellSelection `boolean`
 {:#members:columns-allowcellselection}
 
-Column Property to allow the cell selection for that particular column.
+Enables/disables cell selection.
 
 #### Default Value:
 
@@ -561,8 +560,7 @@ Specifies whether the column is frozen
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
-To Specify the column fields that we need to display in the dialog while inserting a new column with the help of column menu.
-
+To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
 
 #### Default Value:
 {:.param}
@@ -929,7 +927,7 @@ Specifies the position where the new row has to be added.
 {:#members:editsettings-begineditaction}
 <ts name = "ej.TreeGrid.BeginEditAction"/>
 
-Specifies when should we begin the editing, in single click or in double click.             
+Specifies the mouse action to begin the editing.             
 
 <table class="params">
 <thead>
@@ -1156,7 +1154,7 @@ Using this property we can specify the number of pages should pager contains, ac
 ### pageSettings.pageSize `number`
 {:#members:pagesettings-pagesize}
 
-This specifies the number of records should display in each page.
+This specifies the number of rows to display in each page.
 
 
 #### Default Value:
@@ -1210,7 +1208,7 @@ Get the value of records which is bound to TreeGrid. The totalRecordsCount value
 ### pageSettings.currentPage `number`
 {:#members:pagesettings-currentpage}
 
-This allows us to set the current page at load time.
+Specifies the current page to display at load time.
 
 #### Default Value:
 {:.param}
@@ -1277,7 +1275,7 @@ Specifies the mode of record count in a page, whether it should count all the re
 ### pageSettings.template `string`
 {:#members:pageSettings-template}
 
-To specify Custom template for Pager control.
+Specifies the Custom template for Pager control.
 
 
 #### Default Value
@@ -1496,7 +1494,7 @@ Specifies the type of selection whether to select single row or multiple rows.
 ### showColumnOptions `boolean`
 {:#members:showcolumnoptions}
 
-To showup the additional column properties to customize the column further. By enabling this property we will get few more options in the column menu.          
+Enables/disables the options for inserting , deleting and renaming  columns.
 
 #### Default Value:
 {:.param}
@@ -2062,7 +2060,7 @@ treegridObj.search("Plan"); // To search a Plan string in tree grid data
 ### gotoPage(number)
 {:#methods:gotopage}
 
-To navigate to the specific page
+To navigate to the specific page while paging is enabled.
 
 <table class="params">
 <thead>
