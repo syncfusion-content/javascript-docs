@@ -398,7 +398,7 @@ Specifies the mapping property path for sub tasks in datasource
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
-To Specify the column fields that we need to display in the dialog while inserting a new column with the help of column menu.
+To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
 
 
 #### Default Value:
@@ -503,13 +503,13 @@ Specify the CSS class for Gantt to achieve custom theme.
 ### dragTooltip `object`
 {:#members:dragtooltip}
 
-Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
+Option for customizing the drag tooltip while reordering the rows.
 
 
 ### dragTooltip.showTooltip `boolean`
 {:#members:dragtooltip-showtooltip}
 
-Specify whether to show tooltip while dragging a row.
+Specifies option to enable/disable tooltip while drag and drop a row.
 
 
 #### Default Value
@@ -532,7 +532,7 @@ Specify whether to show tooltip while dragging a row.
 ### dragTooltip.tooltipItems `array`
 {:#members:dragtooltip-tooltipitems}
 
-options to add field names whose corresponding value in the dragged row needs to be shown in the preview tooltip
+Specifies the data source fields to be displayed in the drag tooltip.
 
 
 #### Default Value
@@ -556,7 +556,7 @@ options to add field names whose corresponding value in the dragged row needs to
 ### dragTooltip.tooltipTemplate `string`
 {:#members:dragtooltip-tooltiptemplate}
 
-Custom template for tooltip that is shown while dragging a row.
+Specifies the custom template for drag tooltip.
 
 
 #### Default Value
@@ -904,7 +904,7 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 {:#members:editsettings.begineditaction}
 <ts name = "ej.Gantt.BeginEditAction"/>
 
-Specifies when should we begin the editing, in single click or in double click.           
+Specifies the mouse action to begin the editing.          
 
 <table class="params">
 <thead>
@@ -971,7 +971,7 @@ Enables or Disables enableAltRow row effect in Gantt
 ### enableWBS `boolean`
 {:#members:enableWBS}
 
-Enables or disables WBS (Work Breakdown Structure) column in Gantt, to represents all the tasks of the Gantt in hierarchical format or tree like structure. 
+Enables/disables work breakdown structure column. 
 
 
 #### Default Value:
@@ -995,7 +995,7 @@ Enables or disables WBS (Work Breakdown Structure) column in Gantt, to represent
 ### enableWBSPredecessor `boolean`
 {:#members:enableWBSpredecessor}
 
-Enables or disables WBSPredecessor column in Gantt, to depicts the relationship between WBS and Predecessor value of an each and every tasks in Gantt. 
+Enables/disables WBS predecessor column. 
 
 
 #### Default Value:
@@ -1369,7 +1369,7 @@ Specifies the mapping property path for milestone in datasource
 ### showColumnOptions `boolean`
 {:#members:showcolumnoptions}
 
-To showup the additional column properties to customize the column further. By enabling this property we will get few more options in the column menu.          
+Enables/disables the options for inserting , deleting and renaming  columns.       
 
 #### Default Value:
 {:.param}
@@ -1392,7 +1392,7 @@ To showup the additional column properties to customize the column further. By e
 ### parentTaskbarTemplate `string`
 {:#members:parenttaskbartemplate}
 
-To Specify the JsRender script Id to customise the task bar with our preference
+Specifies the template for parent taskbar
 
 
 #### Default Value:
@@ -1422,7 +1422,7 @@ To Specify the JsRender script Id to customise the task bar with our preference
 
 <ts name = "ej.Gantt.SelectionType"/>
 
-Specifies the type of selection whether to select single row or multiple rows.
+Specifies the row selection type.
 
 <table class="params">
 <thead>
@@ -2572,7 +2572,7 @@ Specifies the width of Gantt control
 ### selectedCellIndexes `array`
 {:#members:selectedcellindexes}
 
-To select the number of required cells at load time. We need to specify rowIndex and its corresponding cellIndex to be select.
+Specifies the selected cell information on rendering Gantt.
 
 ### selectedCellIndexes.rowIndex `number`
 {:#members:selectedcellindexes-rowIndex}
