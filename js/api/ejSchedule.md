@@ -4772,7 +4772,7 @@ Binds the name of `resourceId` field in dataSource. Specifies the id of the reso
 ### blockoutSettings.customStyle `string`
 {:#members:blockoutsettings-customstyle}
 
-Binds the name of `customStyle` field in dataSource. It applies the custom css to the block intervals.
+Binds the name of `customStyle` field in dataSource. It applies the custom CSS to the block intervals.
 
 #### Default Value
 
