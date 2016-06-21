@@ -1475,7 +1475,7 @@ It allows to block the particular timeslots in Schedule. When specific timeslots
 
 The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below block intervals related properties such as,
 
-* [enable](/js/api/ejschedule#members:blocktimesettings-enable) - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
+* [enable](/js/api/ejschedule#members:blockoutsettings-enable) - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
 * [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) – It applies the template design to block the intervals.
 * [dataSource](/js/api/ejschedule#members:blockoutsettings-datasource) – Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
 
@@ -1609,7 +1609,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below properties to customize the block intervals such as,
 
 * [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) - Template design that applies on the block intervals.
-* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom css that applies on the blocked intervals.
+* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom CSS that applies on the blocked intervals.
 
 {% highlight html %}
 
