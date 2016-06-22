@@ -334,7 +334,7 @@ specifies the position of the image
 
 ### Example
 
-{% highlight html %}
+{% endhighlight %}
 <script>
 $("#groupButton").ejGroupButton({
     groupButtonMode: "radiobutton",
