@@ -68,10 +68,7 @@ $("#datepicker").ejDatePicker();
 * module:jquery.easing.1.3.js
 
 
-* module:jquery.globalize.js
-
-
-* module:globalize.cultures.min.js
+* module:ej.globalize.js
 
 
 * module:ej.core.js
