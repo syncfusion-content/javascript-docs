@@ -48,7 +48,7 @@ $(element).ejTooltip(options);
 
 {% endhighlight %}
 
-####Requires
+#### Requires
 {:.require}
 
 * module:jQuery
