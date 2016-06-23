@@ -3477,21 +3477,30 @@ $("#treeView").ejTreeView("getText", $("#book"));
 
 
 
-### getTreeData()
+### getTreeData([id])
 {:#methods:gettreedata}
-
-
-
-
-
-
-
 
 To get the updated datasource of TreeView after performing some operation like drag and drop, node editing, adding and removing node.
 
+If you pass the ID of TreeView node as arguments for this method then it will return the updated data source with child of specified node otherwise it will return the entire updated data source of TreeView.
 
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+id </td>
+<td class="type"><span class="param-type">string|number</span></td>
+<td class="description">ID of TreeView node</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Returns:
@@ -3519,12 +3528,14 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.getTreeData(); // It will return the updated datasource as array of JSON object, after performing some operation.
+treeObj.getTreeData("book"); // It will return the updated datasource with child of specified node as array of JSON object, after performing some operation.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
 <script>
-$("#treeView").ejTreeView("getTreeData");        
+$("#treeView").ejTreeView("getTreeData");
+$("#treeView").ejTreeView("getTreeData", "book");
 </script>{% endhighlight %}
 
 
