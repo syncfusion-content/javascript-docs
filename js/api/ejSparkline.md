@@ -127,9 +127,64 @@ $("#container").ejSparkline({
 
 
 
+### border `object`
+{:#members:border}
 
-### strokeWidth `number`
-{:#members:strokeWidth}
+Options for customizing the color, opacity and width of the sparkline border.
+
+
+
+### border.color `string`
+{:#members:border-color}
+
+Border color of the sparkline.
+
+
+#### Default Value
+
+* transparent
+
+#### Example
+
+{% highlight js %}
+                             
+$("#container").ejSparkline({
+
+   border: { color: "green" }                      
+
+});
+
+{% endhighlight %}
+
+
+
+
+### border.width `number`
+{:#members:border-width}
+
+Width of the Sparkline border.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+
+   border: { width: 2 }                      
+
+});
+
+{% endhighlight %}
+
+
+
+
+### width `number`
+{:#members:width}
 
 Border width of the series.
 
@@ -142,7 +197,7 @@ Border width of the series.
 {% highlight js %}
 
 $("#container").ejSparkline({
-    strokeWidth : 2                   
+    width : 2                   
 });
 
 {% endhighlight %}
@@ -165,28 +220,6 @@ Opacity of the series.
  
 $("#container").ejSparkline({
     opacity : 2                  
-});
-
-{% endhighlight %}
-
-
-
-
-### bandOpacity `number`
-{:#members:bandopacity}
-
-Range band opacity of the series.
-
-#### Default Value
-
-* 1
-
-#### Example
-
-{% highlight js %} 
- 
-$("#container").ejSparkline({
-    bandOpacity : 2                  
 });
 
 {% endhighlight %}
@@ -312,10 +345,16 @@ $("#container").ejSparkline({
 Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
+### rangeBandSettings `object`
+{:#members:rangebandsettings}
+
+Options for customizing the color, opacity of the sparkline start and end range.
 
 
-### startRange `number`
-{:#members:startrange}
+
+
+### rangeBandSettings.startRange `number`
+{:#members:rangebandsettings-startrange}
 
 Start value of the range band.
 
@@ -328,7 +367,9 @@ Start value of the range band.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    startRange : 2                  
+    rangebandsettings:{
+        startRange : 2
+    }                  
 });
 
 {% endhighlight %}
@@ -336,8 +377,8 @@ $("#container").ejSparkline({
 
 
 
-### endRange `number`
-{:#members:endrange}
+### rangeBandSettings.endRange `number`
+{:#members:rangebandsettings-endrange}
 
 End value of the range band.
 
@@ -350,12 +391,104 @@ End value of the range band.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    endRange : 2                  
+    rangebandsettings:{
+        endRange : 2
+    }                  
 });
 
 {% endhighlight %}
 
 
+
+
+### rangeBandSettings.opacity `number`
+{:#members:rangebandsettings-opacity}
+
+Range band opacity of the series.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %} 
+ 
+$("#container").ejSparkline({
+    rangebandsettings:{
+        opacity : 2
+    }                  
+});
+
+{% endhighlight %}
+
+
+
+
+### rangeBandSettings.color `string`
+{:#members:rangebandsettings-color}
+
+Range band color of the series.
+
+#### Default Value
+
+* transparent
+
+#### Example
+
+{% highlight js %} 
+ 
+$("#container").ejSparkline({
+    rangebandsettings:{
+        color : 'purple'
+    }                  
+});
+
+{% endhighlight %}
+
+
+
+
+### palette `string`
+{:#members:palette}
+
+Name of a field in data source, where the fill color for all the data points is generated.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+    palette : "ColorFieldName"                  
+});
+{% endhighlight %}
+
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Controls whether sparkline has to be responsive or not.
+
+#### Default Value
+
+* true
+
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+
+   isResponsive : true             
+
+});
+
+{% endhighlight %}
 
 
 ### enableCanvasRendering `boolean`
@@ -688,6 +821,31 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
 
 
 
+### tooltip.fill `string`
+{:#members:tooltip-fill}
+
+Fill color for the sparkline tooltip.
+
+#### Default Value
+
+* "white"
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+    tooltip:{
+        fill : "green"
+    }                  
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+
+
+
 
 ### tooltip.template `string`
 {:#members:tooltip-template}
@@ -790,7 +948,7 @@ Font color of the text in the tooltip.
 {% highlight js %}
  
  
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip :{font :{color : "green"}}                 
 });
 {% endhighlight %}
@@ -819,7 +977,7 @@ Font Family for the tooltip.
 {% highlight js %}
  
 
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip :{ font : { fontFamily : "Algerian"}}                 
 });
  {% endhighlight %}
@@ -874,7 +1032,7 @@ Italic</td>
 {% highlight js %}
  
 
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip : {font :{fontStyle : "italic"}}                 
 });
 {% endhighlight %}
@@ -936,7 +1094,7 @@ Lighter</td>
 {% highlight js %}
  
 
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip :{font :{fontWeight : "lighter"}}                 
 });
 {% endhighlight %}
@@ -968,7 +1126,7 @@ Opacity for text in the tooltip.
 {% highlight js %}
  
 
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip :{font :{opacity : 0.5}}                 
 });
 {% endhighlight %}
@@ -999,7 +1157,7 @@ Font size for text in the tooltip.
 {% highlight js %}
  
  
-$("#container").ejChart({
+$("#container").ejSparkline({
 tooltip :{font :{size : "14px"}}                 
 });
 {% endhighlight %}
@@ -1008,6 +1166,30 @@ tooltip :{font :{size : "14px"}}
 {:#members:markersettings}
 
 Options for displaying and customizing marker for a data point.
+
+
+
+
+### markerSettings.opacity `number`
+{:#members:markerSettings-opacity}
+
+Controls the opacity of the marker.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %} 
+ 
+$("#container").ejSparkline({
+    markerSettings:{
+        opacity : 2
+    }                  
+});
+
+{% endhighlight %}
 
 
 
@@ -1056,21 +1238,21 @@ $("#container").ejSparkline({
 
 
 
-### markerSettings.color `string`
-{:#members:markersettings-color}
+### markerSettings.fill `string`
+{:#members:markersettings-fill}
 
 Color of the marker shape. 
 
 #### Default Value
 
-* "#33ccff"
+* "white"
 
 #### Example
 
 {% highlight js %}
  
 $("#container").ejSparkline({
-    markerSettings : { color : "green" }                  
+    markerSettings : { fill : "green" }                  
 });
 
 {% endhighlight %}
@@ -1099,6 +1281,29 @@ Border color of the marker shape.
 $("#container").ejSparkline({
     markerSettings:{
         border:{color : "green"}
+    }                  
+});
+
+{% endhighlight %}
+
+
+
+### markerSettings.border.opacity `number`
+{:#members:markerSettings-border-opacity}
+
+Controls the opacity of the marker border.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %} 
+ 
+$("#container").ejSparkline({
+    markerSettings:{
+        border:{opacity : 2}
     }                  
 });
 
@@ -1189,66 +1394,17 @@ $("#container").ejSparkline({
 
 
 
-### border `object`
-{:#members:border}
+### axisLineSettings `object`
+{:#members:axisLineSettings}
 
-Options for customizing the color and width of the sparkline border.
+Options for customizing the color,dashArray and width of the axisLine.
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 
 
 
-
-### border.color `string`
-{:#members:border-color}
-
-Border color of the sparkline.
-
-#### Default Value
-
-* 'transparent'
-
-#### Example
-
-{% highlight js %}
-                             
-$("#container").ejSparkline({
-
-   border: { color: "green" }                      
-
-});
-
-{% endhighlight %}
-
-
-
-
-### border.width `number`
-{:#members:border-width}
-
-Width of the Sparkline border.
-
-#### Default Value
-
-* 1
-
-#### Example
-
-{% highlight js %}
- 
-$("#container").ejSparkline({
-
-   border: { width: 2 }                      
-
-});
-
-{% endhighlight %}
-
-
-
-
-### showAxis `boolean`
-{:#members:showaxis}
+### axisLineSettings.visible `boolean`
+{:#members:axisLineSettings-visible}
 
 Controls the visibility of the axis. 
 
@@ -1261,7 +1417,7 @@ Controls the visibility of the axis.
 {% highlight js %}
  
 $("#container").ejSparkline({
-    showAxis : true                  
+    axisLineSettings : {visible:true}                  
 });
 
 {% endhighlight %}
@@ -1269,18 +1425,8 @@ $("#container").ejSparkline({
 
 
 
-### axisLine `object`
-{:#members:axisline}
-
-Options for customizing the color,dashArray and width of the axisLine.
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
-
-
-
-
-### axisLine.color `string`
-{:#members:axisline-color}
+### axisLineSettings.color `string`
+{:#members:axisLineSettings-color}
 
 Color of the axis line.
 
@@ -1294,7 +1440,7 @@ Color of the axis line.
                              
 $("#container").ejSparkline({
 
-   axisLine: { color: "green" }                      
+   axisLineSettings: { color: "green" }                      
 
 });
 
@@ -1303,8 +1449,8 @@ $("#container").ejSparkline({
 
 
 
-### axisLine.width `number`
-{:#members:axisLine-width}
+### axisLineSettings.width `number`
+{:#members:axisLineSettings-width}
 
 Width of the axis line.
 
@@ -1318,7 +1464,7 @@ Width of the axis line.
  
 $("#container").ejSparkline({
 
-   axisLine: { width: 2 }                      
+   axisLineSettings: { width: 2 }                      
 
 });
 
@@ -1327,8 +1473,8 @@ $("#container").ejSparkline({
 
 
 
-### axisLine.dashArray `number`
-{:#members:axisLine-dashArray}
+### axisLineSettings.dashArray `number`
+{:#members:axisLineSettings-dashArray}
 
 Dash array of the axis line.
 
@@ -1342,12 +1488,40 @@ Dash array of the axis line.
  
 $("#container").ejSparkline({
 
-   axisLine: { dashArray: 2 }                      
+   axisLineSettings: { dashArray: 2 }                      
 
 });
 
 {% endhighlight %}
 
+
+## Methods
+
+
+### redraw()
+{:#methods:redraw}
+
+Redraws the entire sparkline. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
+
+#### Example
+
+{% highlight js %}
+// Redraw Sparkline
+var sparklineObj = $("#container").data("ejSparkline");
+sparklineObj.redraw();
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+$("#container").ejSparkline("redraw");      
+{% endhighlight %}
+
+
+
+
+
+## Events
 
 
 
@@ -1406,7 +1580,7 @@ type{% endhighlight %}</td>
 
 
 ### loaded
-{:#events:load}
+{:#events:loaded}
 
 Fires after loaded the sparkline.
 
@@ -1459,8 +1633,8 @@ type{% endhighlight %}</td>
 
 
 
-### trackTooltipInitializaion
-{:#events:tracktooltipinitializaion}
+### tooltipInitializaion
+{:#events:tooltipinitializaion}
 
 Fires before rendering trackball tooltip. You can use this event to customize the text displayed in trackball tooltip.
 
@@ -1468,11 +1642,11 @@ Fires before rendering trackball tooltip. You can use this event to customize th
 
 {% highlight js %}
  
-//trackToolTip event for sparkline
+//ToolTip event for sparkline
 
 $("#container").ejSparkline({
 
-    trackTooltipInitializaion: function (args) {
+    tooltipInitializaion: function (args) {
               //Do something
     }
    
