@@ -10,7 +10,7 @@ keywords: checkbox, ejCheckBox, syncfusion, checkbox api
 # ejCheckBox
 
 
-The CheckBox control allows you to check an option to perform an action. This control allows you to select true, false or an intermediate option. These CheckBoxes are supported with themes. The html CheckBox control is rendered as Essential JavaScript CheckBox control.
+The CheckBox control allows you to check an option to perform an action. This control allows you to select true, false or an intermediate option. These CheckBoxes are supported with themes. The HTML CheckBox control is rendered as Essential JavaScript CheckBox control.
 
 
 #### Syntax

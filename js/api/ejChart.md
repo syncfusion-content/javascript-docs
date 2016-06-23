@@ -1673,6 +1673,93 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 
 
+### commonSeriesOptions.columnWidth `number`
+{:#members:commonseriesoptions-columnwidth}
+
+
+
+
+Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon **columnSpacing** property.
+
+
+
+#### Default Value
+
+
+
+ * 0.7
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    commonseriesoptions: {
+    
+        //Width of columns in column type series
+		columnWidth: 0.8
+
+        //... 
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
+
+
+
+
+### commonSeriesOptions.columnSpacing `number`
+{:#members:commonseriesoptions-columnspacing}
+
+
+
+
+Spacing between columns of different series. Value ranges from 0 to 1
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    commonseriesoptions: {
+    
+        //20% Spacing between columns
+		columnWidth: 0.2
+
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
+
+
+
+
 ### commonSeriesOptions.visibleOnLegend `string`
 {:#members:commonseriesoptions-visibleonlegend}
 
@@ -7153,7 +7240,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 
 
 
-### commonseriesoptions.selectionSettings.rangeType `enum`
+### commonSeriesOptions.selectionSettings.rangeType `enum`
 {:#members:commonseriesoptions-selectionsettings-rangetype}
 
 <ts name = "ej.datavisualization.Chart.RangeType"/>
@@ -11189,6 +11276,87 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n23ku03f)
 
 
 
+### primaryXAxis.crossesAt `number`
+{:#members:primaryxaxis-crossesat}
+
+
+
+
+Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of crossing axis, then axis will be placed at the opposite side.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		primaryXAxis:
+		{
+			//Crosses primary Y axis at 0
+			crossesAt: 0,
+
+			//...
+		},	
+	});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.crossesInAxis `string`
+{:#members:primaryxaxis-crossesinaxis}
+
+
+
+
+Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X axis or primary Y axis will be used for crossing
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		primaryXAxis:
+		{
+			//Crosses vertical axis at -0.2
+			crossesAt: -0.2,
+
+			//Crosses in secondary Y axis
+			crossesInAxis: 'secondaryYAxis',
+
+			//...
+		},
+	});
+
+{% endhighlight %}
+
+
+
+
 ### primaryXAxis.isIndexed `boolean`
 {:#members:primaryxaxis-isindexed}
 
@@ -14641,6 +14809,85 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zz4cubdn)
 
 
+### primaryYAxis.crossesAt `number`
+{:#members:primaryyaxis-crossesat}
+
+
+
+
+Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of crossing axis, then axis will be placed at the opposite side.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		primaryYAxis:
+		{
+			//Crosses primary Y axis at 0
+			crossesAt: 0,
+
+			//...
+		},	
+	});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.crossesInAxis `string`
+{:#members:primaryyaxis-crossesinaxis}
+
+
+
+
+Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X axis or primary Y axis will be used for crossing
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		primaryYAxis:
+		{
+			//Crosses vertical axis at -0.2
+			crossesAt: -0.2,
+
+			//Crosses in secondary Y axis
+			crossesInAxis: 'secondaryYAxis',
+
+			//...
+		},
+	});
+
+{% endhighlight %}
+
+
 ### primaryYAxis.crosshairLabel `object`
 {:#members:primaryyaxis-crosshairlabel}
 
@@ -17502,6 +17749,92 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 
 
+### series.columnWidth `number`
+{:#members:series-columnwidth}
+
+
+
+
+Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon **columnSpacing** property.
+
+
+
+#### Default Value
+
+
+
+ * 0.7
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    series: [{
+    
+        //Width of columns in column type series
+		columnWidth: 0.8
+
+        //... 
+    }],
+
+    //...
+
+});
+
+{% endhighlight %}
+
+
+
+
+### series.columnSpacing `number`
+{:#members:series-columnspacing}
+
+
+
+
+Spacing between columns of different series. Value ranges from 0 to 1
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    series: [{
+    
+        //20% Spacing between columns
+		columnWidth: 0.2
+
+    }],
+
+    //...
+
+});
+
+{% endhighlight %}
+
+
+
 ### series.dashArray `string`
 {:#members:series-dasharray}
 
@@ -19593,35 +19926,6 @@ series :[{marker :{ visible : true}}]
  {% endhighlight %}
 
 
-### series.name `string`
-{:#members:series.name}
-
-
-
-
-Name of the series, that is to be displayed in the legend.
-
-
-
-#### Default Value
-
-
-
- * ""
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-
-$("#container").ejChart({
-series : [{name: "India" }]                   
-});
-{% endhighlight %} 
 
 
 ### series.opacity `number`

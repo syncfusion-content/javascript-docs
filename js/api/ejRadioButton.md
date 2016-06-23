@@ -480,7 +480,7 @@ Specifies the text content for RadioButton.
 
 
 
-Set the jquery validation error message in radio button.
+Set the jQuery validation error message in radio button.
 
 
 #### Default Value
@@ -525,7 +525,7 @@ $("#radiobtn1").ejRadioButton ();
 
 
 
-Set the jquery validation rules in radio button.
+Set the jQuery validation rules in radio button.
 
 
 #### Default Value

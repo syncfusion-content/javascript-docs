@@ -96,6 +96,6 @@ NumericTextBox at initial load
 
 ![](/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img2.png)
 
-NumericTextBox with knockoutJS binding
+NumericTextBox with KnockoutJS binding
 {:.caption}
 

@@ -90,56 +90,6 @@ $('#slider').ejSlider();
 
 
 
-### allowMouseWheel `boolean`
-{:#members:allowmousewheel}
-
-
-
-
-
-
-
-
-Specifies the allowMouseWheel of the slider.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-### Example
-
-
-
-{% highlight html %}
- 
-<div id="slider"> </div> 
-<script>
-//To set animationSpeed API value during initialization  
-$("#slider").ejSlider({ allowMouseWheel: true});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### animationSpeed `number`
 {:#members:animationspeed}
 
@@ -2127,29 +2077,4 @@ $("#slider").ejSlider({
 
 
 
-
-### tooltipChange
-{:#events:tooltipchange}
-
-
-
-
-Fires when display the custom tooltip
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="slider"> </div> 
-<script>
-//stop event for slider control
-$("#slider").ejSlider({
-   tooltipChange: function (args) {}
-});
-</script>{% endhighlight %}
 

@@ -1774,7 +1774,7 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 
 
 
-Set the jquery validation error message in DateTimePicker.
+Set the jQuery validation error message in DateTimePicker.
 
 
 
@@ -1831,7 +1831,7 @@ Set the jquery validation error message in DateTimePicker.
 
 
 
-Set the jquery validation rules in DateTimePicker.
+Set the jQuery validation rules in DateTimePicker.
 
 
 
@@ -1918,6 +1918,56 @@ Sets the DateTime value to the control.
 //To set value API during initialization  
         $("#datetime").ejDateTimePicker({  value:"6/2/2014 6:00 AM" });
 </script> {% endhighlight %}
+
+
+
+
+
+
+
+### watermarkText `string`
+{:#members:watermarktext}
+
+
+
+
+
+
+
+
+Specifies the water mark text to be displayed in input text.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* "Select date and time"
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//To set watermarkText during initialization  
+        $("#datetime").ejDateTimePicker({  watermarkText: "select value" });
+</script>{% endhighlight %}
 
 
 
@@ -2273,6 +2323,160 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
+### beforeClose
+{:#events:beforeclose}
+
+
+
+
+
+
+
+
+Fires before the datetime popup closed in the DateTimePicker.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the DateTimePicker model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event parameters from DateTimePicker.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">returns the DateTimePicker popup.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//popup before close event for DateTimePicker
+$("#datetime").ejDateTimePicker({
+   beforeClose: function (args) {}
+}); 
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
+### beforeOpen
+{:#events:beforeopen}
+
+
+
+
+
+
+
+Fires before the datetime popup open in the DateTimePicker.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DateTimePicker.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the DateTimePicker model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event parameters from DateTimePicker.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">returns the DateTimePicker popup.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
+//popup before open event for DateTimePicker
+$("#datetime").ejDateTimePicker({
+   beforeOpen: function (args) {}
+}); 
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
 ### change
 {:#events:change}
 
@@ -2284,6 +2488,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 Fires when the datetime value changed in the DateTimePicker textbox.
+
 
 <table class="params">
 <thead>

@@ -3272,7 +3272,7 @@ $("#diagramcontent").ejDiagram({
 ### drawType `Object`
 {:#members:drawtype}
 
-Sets the type of JSON object to be drawn through drawing tool
+Sets the type of Json object to be drawn through drawing tool
 
 #### Default Value:
 
@@ -3925,7 +3925,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 <ts name = "ej.datavisualization.Diagram.BPMNActivity"/>
 
-Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity.
+Defines the type of BPMN Activity. Applicable, if the node is a bpmn activity.
 
 <table class="props">
     <thead>
@@ -4430,7 +4430,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 <ts name = "ej.datavisualization.Diagram.BPMNEvents"/>
 
-Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
+Sets the type of the BPMN Events. Applicable, if the node is a bpmn event.
 
 <table class="props">
     <thead>
@@ -4541,7 +4541,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts name = "ej.datavisualization.Diagram.BPMNGateways"/>
 
-Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
+Sets the type of the BPMN Gateway. Applicable, if the node is a bpmn gateway.
 
 <table class="props">
     <thead>
@@ -7628,7 +7628,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess `Object`
 {:#members:nodes-subprocess}
 
-Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process.
+Defines the sub process of a BPMN Activity. Applicable, if the type of the bpmn activity is sub process.
 
 #### Default Value:
 
@@ -7652,7 +7652,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.adhoc `Boolean`
 {:#members:nodes-subprocess-adhoc}
 
-Defines whether the BPMN sub process is without any prescribed order or not
+Defines whether the bpmn sub process is without any prescribed order or not
 
 #### Default Value:
 
@@ -7725,7 +7725,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.compensation `Boolean`
 {:#members:nodes-subprocess-compensation}
 
-Sets whether the BPMN subprocess is triggered as a compensation of a specific activity
+Sets whether the bpmn subprocess is triggered as a compensation of a specific activity
 
 #### Default Value:
 
@@ -7802,7 +7802,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.task `Object`
 {:#members:nodes-task}
 
-Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
+Defines the task of the bpmn activity. Applicable, if the type of activity is set as task.
 
 #### Default Value:
 
@@ -7876,7 +7876,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
 
-Sets the loop type of a BPMN task.
+Sets the loop type of a bpmn task.
 
 <table class="props">
     <thead>
@@ -8004,7 +8004,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.templateId `String`
 {:#members:nodes-templateid}
 
-Sets the id of SVG/HTML templates. Applicable, if the node is HTML or native.
+Sets the id of svg/html templates. Applicable, if the node is html or native.
 
 #### Default Value:
 
@@ -11497,7 +11497,7 @@ diagram.updateSelection(true);
 ### updateUserHandles(node)
 {:#methods:updateuserhandles}
 
-Update user handles with respect to the given node
+Update userhandles with respect to the given node
 
 <table class="params">
 	<thead>

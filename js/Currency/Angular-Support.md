@@ -7,7 +7,7 @@ control: CurrencyTextBox
 documentation: ug
 ---
 
-# Angular Support
+# AngularJS Support
 
 The **Textbox** widget supports two types of **Angular JS support** namely, 
 

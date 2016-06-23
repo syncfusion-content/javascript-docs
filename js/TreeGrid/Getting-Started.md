@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first TreeGrid in JavaScript
 
-The **Essential Javascript TreeGrid** has been designed to represent and edit the hierarchical data. 
+The **Essential JavaScript TreeGrid** has been designed to represent and edit the hierarchical data. 
 
 This section explains how to create a TreeGrid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output.
 

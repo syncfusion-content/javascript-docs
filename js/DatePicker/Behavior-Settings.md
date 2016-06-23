@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Behavior Settings
 
-DatePicker has some default behavior settings which helps you to perform more operation by inbuilt.
+DatePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
 ## Selected Date
 

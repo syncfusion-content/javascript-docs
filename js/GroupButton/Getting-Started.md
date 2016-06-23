@@ -24,27 +24,27 @@ This section explains you briefly on how to create a GroupButton in your applic
 
 <table>
 <tr>
-<td>
-**File**<br/><br/></td><td>
-**Description/Usage**<br/><br/></td></tr>
+<th>
+File<br/><br/></th><th>
+Description/Usage<br/><br/></th></tr>
 <tr>
 <td>
-**ej.core.min.js**<br/><br/><br/></td><td>
+ej.core.min.js<br/><br/><br/></td><td>
 Must be referred always before using all the JS controls.<br/><br/><br/></td></tr>
 <tr>
 <td>
-**ej.data.min.js**<br/><br/></td><td>
+ej.data.min.js<br/><br/></td><td>
 Must be referred since we have provided the dataSource support to GroupButton<br/><br/></td></tr>
 <tr>
 <td>
-**ej.groupbutton.min.js**<br/><br/><br/></td><td>
+ej.groupbutton.min.js<br/><br/><br/></td><td>
 Group Button plugin.<br/><br/><br/></td></tr>
 </table>
 You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’ web components and frameworks in single file.
 
 [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js#) – includes all web widgets.
 
-A simple html file with required CSS and script reference added to create GroupButton
+A simple HTML file with required CSS and script reference added to create GroupButton
 
 {% highlight html %}
 
@@ -59,8 +59,6 @@ A simple html file with required CSS and script reference added to create GroupB
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> <!--scripts-->
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
@@ -88,7 +86,7 @@ A simple html file with required CSS and script reference added to create GroupB
 
 ## GroupButton initialization
 
-GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in html page,
+GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in HTML page,
 
 {% highlight html %}
 
@@ -110,13 +108,13 @@ GroupButton can be created using “div” tag or “span” tag and correspondi
 
 {% highlight js %}
 
-        <script>
+         <script>
 
             $("#groupButton").ejGroupButton();// initialize the group button control
 
-        </script>
+         </script>
 
 {% endhighlight %}
 
-Also we can use the dataSoruce, to create the GroupButton which is explained under the dataSource section in this documentation.
+Also we can use the dataSource, to create the GroupButton which is explained under the dataSource section in this documentation.
 

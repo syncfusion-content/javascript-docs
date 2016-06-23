@@ -11,7 +11,7 @@ documentation: ug
 
 ## Include Script and CSS
 
-To get start with TreeView, create a new html file and add the required dependent CSS file as well as script files.
+To get start with TreeView, create a new HTML file and add the required dependent CSS file as well as script files.
 
 CSS file
 
@@ -62,7 +62,7 @@ N>  In production, we highly recommend you to use our [custom script generator](
 
 ## Initialize TreeView
 
-A simple html file with required CSS and script reference added to create TreeView control
+A simple HTML file with required CSS and script reference added to create TreeView control
 
 {% highlight html %}
 

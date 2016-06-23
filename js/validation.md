@@ -12,10 +12,10 @@ Using jQuery validation, you can perform the client side validation for our EJ w
 
 **Step 1:** To perform jQuery validation, you need to include the latest version of [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) and [jquery.validate.unobtrusive](http://www.nuget.org/packages/Microsoft.jQuery.Unobtrusive.Validation/#) scripts in your html page.
 
-**Step 2:** jQuery contains some default settings for the validation and it ignores hidden elements in from validation. But some of our EJ components (“Checkbox”, “MaskEdit”, ”NumericTextbox”, “CurrencyTextbox”, “PercentageTextbox”, “RTE”, “Dropdownlist” ) contains hidden fields with values, these
+**Step 2:** jQuery contains some default settings for the validation and it ignores hidden elements in form validation. But some of our EJ components (“Checkbox”, “MaskEdit”, ”NumericTextbox”, “CurrencyTextbox”, “PercentageTextbox”, “RTE”, “Dropdownlist” ) contains hidden fields with values, these
 values need to be validated at here. So to perform the validation properly, you have to set “[]” in “ignore” API of “$.validator.setDefaults”. 
 
-If validation gets fail, in-built “error” class will be added to corresponding element. Here you can specify a custom class with your own style using “errorClass” API and you can place the error message in necessary position using “errorPlacement” API. Refer following code block to customize the default jQuery validation settings.
+If validation gets fail, built-in “error” class will be added to corresponding element. Here you can specify a custom class with your own style using “errorClass” API and you can place the error message in necessary position using “errorPlacement” API. Refer following code block to customize the default jQuery validation settings.
 
     
     {% highlight javascript %}

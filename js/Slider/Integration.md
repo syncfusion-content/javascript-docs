@@ -9,23 +9,23 @@ documentation: ug
 
 # Integration
 
-## Angular binding 
+## AngularJS binding 
 
-Angular JS is structural Framework to create dynamic web apps. It is distributed as a **JavaScript** file. It extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. To learn more about Angular JS refer the following link
+AngularJS is structural Framework to create dynamic web apps. It is distributed as a **JavaScript** file. It extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. To learn more about Angular JS refer the following link
 
 [http://www.w3schools.com/angular/default.asp](http://www.w3schools.com/angular/default.asp)
 
-**Slider** widget is provided with Angular JS support. The support is achieved by including the “**ej.widget.angular.min.js**” file. Refer the following link to know more about the AngularJS support.
+**Slider** widget is provided with AngularJS support. The support is achieved by including the “**ej.widget.angular.min.js**” file. Refer the following link to know more about the AngularJS support.
 
 <http://help.syncfusion.com/js/angularjs>
 
-**Slider** widget is defined using the directive **slider**. The properties of the **Slider** widget can be included as inline **HTML** attributes by prefixing the properties with “**e-**“. The properties are not case sensitive when defining it. Angular JS provides two types of data binding “one way binding” and “two way binding”. 
+**Slider** widget is defined using the directive **slider**. The properties of the **Slider** widget can be included as inline **HTML** attributes by prefixing the properties with “**e-**“. The properties are not case sensitive when defining it. AngularJS provides two types of data binding “one way binding” and “two way binding”. 
 
 All properties in the slider supports one way data binding. Here one way binding specifies that the values for the slider properties are assigned automatically when specified through the data binding notation, but the property values is not changed in the model. That is, the values are displayed only in the **HTML** view not in the application data.
 
 The **Slider** properties **value** and **values** are provided with two way binding support. The changes made to these properties are reflected both in the application data (model) and in **HTML** view.
 
-The following example explains you the binding of **value** property using the Angular support.
+The following example explains you the binding of **value** property using the AngularJS support.
 
 {% highlight html %}
 
@@ -95,11 +95,11 @@ Execute the above code example to render the following output.
 
 ## Knockout binding
 
-KnockOutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockOutJS.
+KnockoutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockOutJS.
 
 [http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
 
-**Slider** widget includes support to use it with KnockOutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockOutJS support
+**Slider** widget includes support to use it with KnockoutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockOutJS support
 
 <http://help.syncfusion.com/js/knockoutjs>
 
@@ -107,7 +107,7 @@ The binding handler name for **Slider** component is **Slider**. Both one way bi
 
 Two way binding support is included only for the applicable **Slider** properties, **value** and **values**. To activate two way binding support, you can specify these properties as observables in the **ViewModel**. Then use the **ko.applyBindings** to activate it. Now these properties binds the underlying data model and the changes is reflected automatically.
 
-The following example explains you the binding of **value** property using the Angular support.
+The following example explains you the binding of **value** property using the AngularJS support.
 
 
 {% highlight html %}

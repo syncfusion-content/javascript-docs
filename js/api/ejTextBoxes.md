@@ -325,7 +325,7 @@ When enableStrictMode true it allows the value outside of the range also but it 
 
 
 ### groupSize `string`
-{:#members:groupSize}
+{:#members:groupsize}
 
 
 
@@ -722,7 +722,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
 	//To set negativePattern API value during initialization 
 	    $("#numeric").ejNumericTextbox({ negativePattern:"( n)", value:-5 });         //output: ( 5)
         $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
-        $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 minValue:-600 });  //output: -505 $                       
+        $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 , minValue:-600 });  //output: -505 $                       
 	</script>{% endhighlight %} 
     
     
@@ -738,7 +738,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
 Specifies the pattern for formatting positive values in editor.We have maintained some standard to define the positive pattern. you have to specify 'n' to place the digit in your pattern.ejTextbox allows you to define a currency or percent symbol where you want to place it.
 
 
-N>NumerictextBox does not support for positive pattern.
+N>NumericTextBox does not support for positive pattern.
 
 
 ####Default value

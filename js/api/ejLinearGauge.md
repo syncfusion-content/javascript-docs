@@ -1043,7 +1043,7 @@ Specifies the read only state.
 
 
 
-### scales `Array`
+### scales `object`
 {:#members:scales}
 
 
@@ -1065,6 +1065,7 @@ Specifies the scales
 
 
 
+{:.param}
 * null
 
 

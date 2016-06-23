@@ -613,7 +613,7 @@ Example
 ### value `number`
 {:#members:value}
 
-Holds the selected items values and used to bind value to the list item using angularJS and knockoutJS.
+Holds the selected items values and used to bind value to the list item using AngularJS and KnockoutJS.
 
 #### Default Value:
 * “”

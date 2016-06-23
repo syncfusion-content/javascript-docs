@@ -44,7 +44,6 @@ Add the following code in your **HTML** page.
    <head>
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css" rel="stylesheet" />
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
    </head>
@@ -69,7 +68,7 @@ Add the following code in your **HTML** page.
 
 ![](/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
-## Css Class
+## CSS Class
 
 **DateTimePicker** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **DateTimePicker** theme.
 
@@ -84,7 +83,6 @@ Add the following code in your **HTML** page to render the DateTimePicker.
    <head>
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css" rel="stylesheet" />
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
    </head>

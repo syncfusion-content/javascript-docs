@@ -1203,7 +1203,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-Specifies the html attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
 
 
 
@@ -1269,7 +1269,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-Specifies the html attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
 
 
 
@@ -3077,7 +3077,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childs and index.
+To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childes and index.
 
 <table class="params">
 <thead>
@@ -4505,7 +4505,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-### moveNode(sourceNode, destionationNode, index) 
+### moveNode(sourceNode, destinationNode, index) 
 {:#methods:movenode}
 
 
@@ -4515,7 +4515,7 @@ treeObj.loadData("myapplication/childdata", $("#book"));
 
 
 
-To move the TreeView node with in same TreeView. The new poistion of given TreeView node will be based on destionation node and index position.  
+To move the TreeView node with in same TreeView. The new position of given TreeView node will be based on destination node and index position.  
 
 <table class="params">
 <thead>
@@ -5753,7 +5753,7 @@ Fires before loading nodes to TreeView.
 </tr>
 <tr>
 <td class="name"> 
- ajaxOptions </td>
+ AjaxOptions </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the AJAX settings object</td>
 </tr>
@@ -7961,71 +7961,5 @@ $("#treeView").ejTreeView({
 </script>{% endhighlight %}
 
 
-### ready
-{:#events:ready}
 
-
-Fires when TreeView nodes are loaded successfully
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"> 
- cancel </td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<td class="name"> 
- element </td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the TreeView element.</td>
-</tr>
-<tr>
-<td class="name"> 
- model </td>
-<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the TreeView model</td>
-</tr>
-<tr>
-<td class="name"> 
- type </td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
-
-<div id="treeView"></div>
-<script>
-// DataManager creation
-var dataManger = ej.DataManager({
-    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-});
-// Query creation
-var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-// Initialize TreeView with ready event.
-$("#treeView").ejTreeView({
-    fields: {
-        dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
-        child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
-    },
-    ready: function(args) {
-        alert("All TreeView nodes are loaded successfully.");
-    }
-});
-</script>
-{% endhighlight %}
 

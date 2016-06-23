@@ -37,7 +37,7 @@ List of predefined button size
             Mini
         </td>
         <td>
-            Creates button with inbuilt mini size height, width specified.
+            Creates button with Built-in mini size height, width specified.
         </td>
     </tr>
     <tr>
@@ -45,7 +45,7 @@ List of predefined button size
             Small
         </td>
         <td>
-            Creates button with inbuilt small size height, width specified.
+            Creates button with Built-in small size height, width specified.
         </td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@ List of predefined button size
             Medium
         </td>
         <td>
-            Creates button with inbuilt medium size height, width specified.
+            Creates button with Built-in medium size height, width specified.
         </td>
     </tr>
     <tr>
@@ -61,7 +61,7 @@ List of predefined button size
             Large
         </td>
         <td>
-            Creates button with inbuilt large size height, width specified.
+            Creates button with Built-in large size height, width specified.
         </td>
     </tr>
 </table>
@@ -193,9 +193,9 @@ List of content types for button
 
 Icons inside the **Button** is added easily using **prefixIcon and suffixIcon** property. Location of the icon in button is a necessary thing and you can easily customize it using the following mentioned options.
 
-**Button** control also supports the build-in icon libraries. The **ej.widgets.core.min.css** contains definitions for important icons that can be used in buttons. Simply you can use these build-in icons by mentioning the icon class name as value in **prefixIcon** and **suffixIcon** property. You can use any font icons that are defined in **ej.widgets.core.min.css**. It avoids the complexity in specifying icon using sprite image and **CSS**.
+**Button** control also supports the Built-in icon libraries. The **ej.widgets.core.min.css** contains definitions for important icons that can be used in buttons. Simply you can use these Built-in icons by mentioning the icon class name as value in **prefixIcon** and **suffixIcon** property. You can use any font icons that are defined in **ej.widgets.core.min.css**. It avoids the complexity in specifying icon using sprite image and **CSS**.
 
-For example the following mentioned build-in **CSS** class are used to show the font icons that is used by media player.
+For example the following mentioned Built-in **CSS** class are used to show the font icons that is used by media player.
 
 * e-mediaback
 * e-mediaforward

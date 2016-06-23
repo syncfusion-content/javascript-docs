@@ -129,28 +129,28 @@ Sample: [http://jsplayground.syncfusion.com/rm4zm5yw](http://jsplayground.syncfu
 
 N> First run the provided Web API service, then you will get an URL like [http://localhost:51460/](http://localhost:51460/#) (Here port number may change). As per port number, use the specified URL in “path” and “ajaxAction” of “FileExplorer” sample.
 
-### Parameter list for Ajax request and response of FileExplorer
+### Parameter list for AJAX request and response of FileExplorer
 
-By default, we send following parameters in data field of the corresponding Ajax request. This helps to handle the server side operation. Some Server side action methods only will return the response data. This response data and request parameters are explained in following table. By referring to below table, you can create custom functions to perform server side operations of “FileExplorer”. 
+By default, we send following parameters in data field of the corresponding AJAX request. This helps to handle the server side operation. Some Server side action methods only will return the response data. This response data and request parameters are explained in following table. By referring to below table, you can create custom functions to perform server side operations of “FileExplorer”. 
 
 <table>
 <tr>
 <td>
-**Operation**
+Operation
 <br/>
 <br/>
 </td>
 <td>
-**Default** **Request** **Parameter**<br/>
+Default Request Parameter<br/>
 <br/>
 </td>
 <td>
-**Response** **data**
+Response data
 <br/>
 <br/>
 </td>
 <td>
-**Action** **Performed**/ **Details**
+Action Performed/ Details
 <br/>
 <br/>
 </td>
@@ -173,7 +173,7 @@ String ExtensionsAllow,
 <br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘**files’** and JSON fields should be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{{'__For__ '| markdownify }}{{'__example__'| markdownify }}{{'__:__'| markdownify }}<br/><br/>{**files**:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
+Response data should be in JSON format with key name as ‘files’ and JSON fields should be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{{'__For__ '| markdownify }}{{'__example__'| markdownify }}{{'__:__'| markdownify }}<br/><br/>{files:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
 <br/>
 </td>
 <td>
@@ -200,7 +200,7 @@ IEnumerable<object> SelectedItems
 <br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘**files’**. In that returning JSON, "**name**” field is necessary.<br/><br/>{"files":[{"**name**":"**New** **folder**","type":"Directory","size":0,"dateModified":"2/25/2016 7:31:02 AM","hasChild":true,"isFile":false,"filterPath":null}],"details":null,"error":null}<br/><br/>
+Response data should be in JSON format with key name as ‘files’. In that returning JSON, "name” field is necessary.<br/><br/>{"files":[{"name":"New folder","type":"Directory","size":0,"dateModified":"2/25/2016 7:31:02 AM","hasChild":true,"isFile":false,"filterPath":null}],"details":null,"error":null}<br/><br/>
 </td>
 <td>
 Create the new folder in given path<br/><br/>
@@ -263,7 +263,7 @@ GetDetails<br/><br/>
 </td><td>
 String ActionType, <br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
 </td><td>
-Response data should be in JSON format like below<br/><br/>{**details**:[{**CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}<br/><br/>
+Response data should be in JSON format like below<br/><br/>{details:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}<br/><br/>
 </td><td>
 get the details of the file/folder from the given path and return data in JSON format<br/><br/>
 </td></tr>
@@ -292,7 +292,7 @@ upload the file to the given path<br/><br/>
 <td>
 GetImage<br/><br/>
 </td><td>
-String Path,<br/><br/>IEnumerable<object> SelectedItems****<br/><br/>
+String Path,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
 </td><td>
 Should return image in HttpResponseMessage.<br/><br/>
 </td><td>
@@ -303,7 +303,7 @@ Used to get image form the given physical path.<br/><br/>
 Search<br/><br/></td><td>
 String ActionType,<br/><br/>String Path,<br/><br/>String SearchString,<br/><br/>Bool CaseSensitive<br/><br/>String ExtensionsAllow<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
 </td><td>
-It should return data in JSON format with key name as ‘**files’** and JSON fields need to be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}{{'____'| markdownify }}<br/><br/>{<br/><br/>"**files**":[{"**name**":"**bird**.**jpg**","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","**hasChild**":**false**,"**isFile**":**true**,"filterPath":null},<br/><br/>{"**name**":"**sea**.**jpg**","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","**hasChild**":**false**,"**isFile**":**true**,"filterPath":null }],<br/><br/>"details":null,<br/><br/>"error":null<br/><br/>}<br/><br/></td><td>
+It should return data in JSON format with key name as ‘files’ and JSON fields need to be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}{{'____'| markdownify }}<br/><br/>{<br/><br/>"files":[{"name":"bird.jpg","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null},<br/><br/>{"name":"sea.jpg","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null }],<br/><br/>"details":null,<br/><br/>"error":null<br/><br/>}<br/><br/></td><td>
 It used to search all the matched files and sub-folders in the given folder path also it filters the specified files using it types.<br/><br/><br/><br/>
 </td></tr>
 </table>

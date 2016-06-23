@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# Angular Support
+# AngularJS Support
 
 **TimePicker** widget is availed with two types of **angular JS** support namely, 
 
@@ -18,15 +18,15 @@ documentation: ug
 
 One way binding refers to the process of applying scope values to all the available properties of the **TimePicker** widget where the changes made in the widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **TimePicker** widget.
 
-Two-way binding supports both the processes – it applies the scope values to the **TimePicker** properties as well as the changes made in the widget is also reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes – it applies the scope values to the **TimePicker** properties as well as the changes made in the widget is also reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the **TimePicker** widget element through the directive that starts with a letter **“e-“.**
 
-To know more details about Angular binding, refer the following link location,
+To know more details about AngularJS binding, refer the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following code example depicts you the way to bind data to the **TimePicker** widget through angular support,
+The following code example depicts you the way to bind data to the **TimePicker** widget through AngularJS support,
 
 
 {% highlight html %}
@@ -39,7 +39,6 @@ The following code example depicts you the way to bind data to the **TimePicker*
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>

@@ -9,13 +9,13 @@ documentation: ug
 
 # Integration
 
-## Angular Support
+## AngularJS Support
 
-**AngularJS** is an open-source web application framework. **AngularJS** extends HTML with new attributes. **AngularJS** is a JavaScript framework. It can be added to an **HTML** page with a **&lt;script&gt;** tag. **AngularJS** extends **HTML** attributes with **Directives**, and binds data to **HTML** with **Expressions**. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
+**AngularJS** is an open-source web application Framework. **AngularJS** extends HTML with new attributes. **AngularJS** is a JavaScript Framework. It can be added to an **HTML** page with a **&lt;script&gt;** tag. **AngularJS** extends **HTML** attributes with **Directives**, and binds data to **HTML** with **Expressions**. The support is achieved by an integration JS library file. You can know more about the AngularJS support in our documentation. You can find the online documentation in the following link location. 
 
 <http://help.syncfusion.com/js/angularjs>
 
-Sometimes you need to use **DateTimePicker** value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the **DateTimePicker** popup window the result of sorting should be changed based on date and timings. To achieve this, date and time value has to bind to the model while you change the value of date and time in **DateTimePicker** control. You can achieve data binding with lesser code by integrating the angular concept with your control.  
+Sometimes you need to use **DateTimePicker** value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the **DateTimePicker** popup window the result of sorting should be changed based on date and timings. To achieve this, date and time value has to bind to the model while you change the value of date and time in **DateTimePicker** control. You can achieve data binding with lesser code by integrating the AngularJS concept with your control.  
 
 In the following example the **DateTimePicker** value is bound with simple textbox. The textbox values are updated while updating the values in **DateTimePicker** control. And also changing the date and time information from textbox is reflected in **DateTimePicker** control.
 
@@ -33,7 +33,6 @@ Add the following code in your **HTML** page.
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <!--scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
@@ -97,7 +96,6 @@ Add the following code in your **HTML** page.
    <head>
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>

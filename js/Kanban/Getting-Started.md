@@ -46,6 +46,14 @@ Refer to the internal dependencies in the following table.
    </tr>
    <tr>
       <td>
+        ej.touch.min.js 
+      </td>
+      <td>
+          It is referred when using touch functionalities in Kanban.
+      </td>
+   </tr>
+   <tr>
+      <td>
         ej.kanban.min.js
       </td>
       <td>

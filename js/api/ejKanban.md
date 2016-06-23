@@ -23,26 +23,26 @@ The Kanban can be easily configured to the DOM element, such as div. you can cre
 
 {% highlight html %}
    
-     <div id="Kanban"></div> 
-     <script>
-        window.kanbandata = [
-                { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-                { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-                { Id: 3, Status: "In Progress", Text: "Task 3",Assignee: "Andrew"},
-                { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-                ];  
-        // Create Kanban
-        $("#Kanban").ejKanban({
-                    dataSource: window.kanbandata,
-                    columns: [
-                        { headerText: "Backlog",key: "Open" },
-                        { headerText: "In Progress",key: "InProgress" },
-                        { headerText: "Testing",key: "Testing" },
-                        { headerText: "Done",key: "Close" }
-                    ]                
-                });        
-     </script>
-
+    <div id="Kanban"></div>
+    <script>
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    // Create Kanban
+    $("#Kanban").ejKanban({
+        dataSource: window.kanbandata,
+        columns: [
+            { headerText: "Backlog", key: "Open" },
+            { headerText: "In Progress", key: "InProgress" },
+            { headerText: "Testing", key: "Testing" },
+            { headerText: "Done", key: "Close" }
+        ]
+    });
+    </script>
+    
 {% endhighlight %}
 
 #### Requires
@@ -86,32 +86,31 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
 
 {% highlight html %}
 
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
-            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-        ];                 
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban({
-        dataSource: data,
-        allowDragAndDrop: true,
-        columns: [
-            { headerText: "Backlog",key: "Open" },
-            { headerText: "In Progress",key: "InProgress" },
-            { headerText: "Testing",key: "Testing" },
-            { headerText: "Done",key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
                 primaryKey: "Id",
-			    content: "Text",
-		        priority: "RankId",
-        },
-    });
+                content: "Summary",
+            },
+        });
     });
     </script>
 
@@ -132,29 +131,31 @@ To enable or disable the title of the card.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-            $(function() {
-                var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(50));
-                $("#Kanban").ejKanban(
-                    {
-                        dataSource: data,
-                        columns: [
-                            { headerText: "Backlog", key: "Open" },
-                            { headerText: "In Progress", key: "InProgress" },
-                            { headerText: "Testing", key: "Testing" },
-                            { headerText: "Done", key: "Close" }
-                        ],
-                        keyField: "Status",
-                        allowTitle: true,
-                        fields:{
-                            primaryKey: "Id",
-                            swimlaneKey: "Assignee",
-                            content: "Summary",
-                            imageUrl: "ImgUrl"
-                        },
-                        allowSelection: false
-                    });
-            });
-        </script>
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            allowTitle: true,
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+        });
+    });
+    </script>
 
 {% endhighlight %}
 
@@ -173,32 +174,34 @@ Customize the settings for swimlane.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-            $(function() {
-                var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(50));
-                $("#Kanban").ejKanban(
-                    {
-                        dataSource: data,
-                        columns: [
-                            { headerText: "Backlog", key: "Open" },
-                            { headerText: "In Progress", key: "InProgress" },
-                            { headerText: "Testing", key: "Testing" },
-                            { headerText: "Done", key: "Close" }
-                        ],
-                        keyField: "Status",
-                        allowTitle: true,
-                        fields:{
-                            primaryKey: "Id",
-                            swimlaneKey: "Assignee",
-                            content: "Summary",
-                            imageUrl: "ImgUrl"
-                        },
-                        swimlaneSettings:{
-                        showCount:true
-                        },
-                        allowSelection: false
-                    });
-            });
-        </script>
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            swimlaneSettings: {
+                showCount: true
+            },
+        });
+    });
+    </script>
 
 {% endhighlight %}
 
@@ -217,32 +220,34 @@ To enable or disable items count in swimlane
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-            $(function() {
-                var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(50));
-                $("#Kanban").ejKanban(
-                    {
-                        dataSource: data,
-                        columns: [
-                            { headerText: "Backlog", key: "Open" },
-                            { headerText: "In Progress", key: "InProgress" },
-                            { headerText: "Testing", key: "Testing" },
-                            { headerText: "Done", key: "Close" }
-                        ],
-                        keyField: "Status",
-                        allowTitle: true,
-                        fields:{
-                            primaryKey: "Id",
-                            swimlaneKey: "Assignee",
-                            content: "Summary",
-                            imageUrl: "ImgUrl"
-                        },
-                        swimlaneSettings:{
-                        showCount:true
-                        },
-                        allowSelection: false
-                    });
-            });
-        </script>
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            swimlaneSettings: {
+                showCount: true
+            },
+        });
+    });
+    </script>
 
 {% endhighlight %}
 
@@ -259,33 +264,33 @@ To enable or disable the column expand /collapse.
 
 {% highlight html %} 
 
-       <div id="Kanban"></div>
-       <script type="text/javascript">
-       window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-           { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
-           { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-       ];                 
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowToggleColumn: true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields:{
-                primaryKey: "Id",
-                content: "Text",
-            },
-        });
-       });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Text: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                allowToggleColumn: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Text",
+                },
+            });
+    });
     </script>
 
 {% endhighlight %}
@@ -304,31 +309,31 @@ To enable Searching operation in Kanban.
 {% highlight html %} 
 
     <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                 { headerText: "Backlog", key: "Open" },
-                 { headerText: "In Progress", key: "InProgress" },
-                 { headerText: "Testing", key: "Testing" },
-                 { headerText: "Done", key: "Close"}
-            ],                                                   			
-            keyField: "Status",
-            fields:{
-                primaryKey: "Id",
-                content: "Text",
-            },	
-            allowSearching: true,					                               
-        });
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                allowSearching: true,
+            });
     });
     </script>
     
@@ -348,31 +353,31 @@ Gets or sets a value that indicates whether to enable allowSelection behavior on
 {% highlight html %}
 
     <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        allowSelection: true,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields:{
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            allowSelection: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
                 primaryKey: "Id",
-                content: "Text",
-            },	
-    });
+                content: "Summary",
+            },
+        });
     });
     </script>
     
@@ -392,31 +397,31 @@ Gets or sets a value that indicates whether to allow card hover actions.
 {% highlight html %}
 
     <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        allowHover:true,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields:{
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            allowHover: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
                 primaryKey: "Id",
-                content: "Text",
-            },	
-    });
+                content: "Summary",
+            },
+        });
     });
     </script>
     
@@ -435,41 +440,41 @@ To allow keyboard navigation actions.
 
 {% highlight html %} 
 
-         <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowKeyboardNavigation: true,
-					columns: [
-                            { headerText: "Backlog", key: "Open", shrink: false },
-                            { headerText: "In Progress", key: "InProgress", shrink: false },
-                            { headerText: "Testing", key: "Testing", shrink: false },
-                            { headerText: "Done", key: "Close", shrink: false }
-					],
-                    keyField: "Status",
-                     fields: {
-					     content: "Text",
-						 primaryKey: "Id",
-						 swimlaneKey: "Assignee",
-				   },
-                    
-                });
-                 $(document).on("keydown", function (e) {
-                //if (e.keyCode === 69) { // j- key code.
-				 if (e.altKey && e.keyCode === 74) { // j- key code.
-                    $("#Kanban").focus();
-			  }});
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                allowKeyboardNavigation: true,
+                columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Testing", key: "Testing"},
+                        { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                },
+            });
+        $(document).on("keydown", function (e) {
+            //if (e.keyCode === 69) { // j- key code.
+            if (e.altKey && e.keyCode === 74) { // j- key code.
+                $("#Kanban").focus();
+            }
         });
-     </script>
+    });
+    </script>
 
 {% endhighlight %}
 
@@ -486,42 +491,88 @@ Gets or sets a value that indicates whether to enable the scrollbar in the Kanba
 
 {% highlight html %}
   
-    <div id="kanban">
-    </div>
+    <div id="kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Close", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,                   
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                   fields: {
-					      primaryKey: "Id",
-						  swimlaneKey: "Assignee",
-					      content: "Text",
-				    },			
-                    keyField: "Status",
-                    allowScrolling: true,
-                    scrollSettings: {
-                        height: 400,
-                        width: 700
-                    }
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                keyField: "Status",
+                allowScrolling: true,
+                scrollSettings: {
+                    height: 400,
+                    width: 700
                 }
-            );
-        });
-     </script>
+            }
+        );
+    });
+    </script>
+
+{% endhighlight %}
+
+### allowPrinting `boolean`
+{:#members:allowprinting}
+
+Gets or sets a value that indicates whether to define the number of pages to print.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                keyField: "Status",
+                allowPrinting: true,
+            }
+        );
+    });
+    </script>
+
      
 {% endhighlight %}
 
@@ -538,48 +589,47 @@ Gets or sets an object that indicates whether to customize the context menu beha
 
 {% highlight html %}
 
-       <div id="Kanban">
-       </div>
-       <script type="text/javascript">
-            window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-                        
-        }        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+    { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+    { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+    { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+    { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+
+            }
+        });
     });
-    });
-       </script>
-    
+    </script>
+
 {% endhighlight %}
 
 ### contextMenuSettings.enable `boolean`
 {:#members:contextmenusettings-enable}
 
-To enable Context menu , All default context menu will show.
+To enable Context menu,All default context menu will show.
 
 #### Default Value:
 
@@ -589,42 +639,39 @@ To enable Context menu , All default context menu will show.
 
 {% highlight html %}
 
-       <div id="Kanban">
-       </div>
-       <script type="text/javascript">
-           window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true
-                        
-        }        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+     { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+     { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+     { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+     { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true
+            }
+        });
     });
-    });
-       </script>
-    
+    </script>
 
 {% endhighlight %}
 
@@ -641,44 +688,43 @@ Gets or sets a value that indicates the list of items needs to be disable from d
 
 {% highlight html %}
 
-       <div id="Kanban"></div>
-       <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-			disableDefaultItems: [ej.Kanban.MenuItem.AddCard]                   
-        },
-     editSettings: {
-            allowAdding: true
-        }        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+        { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+        { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+                disableDefaultItems: [ej.Kanban.MenuItem.AddCard]
+            },
+            editSettings: {
+                allowAdding: true
+            }
+        });
     });
-    }); 
     </script>
-    
 
 {% endhighlight %}
 
@@ -695,46 +741,45 @@ Gets or sets a value that indicates whether to add custom contextMenu items
 
 {% highlight html %}
 
-     <div id="Kanban">
-       </div>
-       <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],  			
-        }     
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+                customMenuItems: [
+                          { text: "Menu1" },
+                          { text: "Menu2", target: ej.Kanban.Target.Header },
+                          { text: "Menu3", target: "" }
+                ],
+            }
+        });
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### contextMenuSettings.customMenuItems.target `enum`
@@ -775,46 +820,45 @@ Sets context menu to target element.
 
 {% highlight html %}
 
-       <div id="Kanban">
-       </div>
-       <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", target: ej.Kanban.Target.Header},
-                      { text: "Menu3", target:"" }							
-            ],                 
-        }
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+                customMenuItems: [
+                          { text: "Menu1" },
+                          { text: "Menu2", target: ej.Kanban.Target.Header },
+                          { text: "Menu3", target: "" }
+                ],
+            }
+        });
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### contextMenuSettings.customMenuItems.text `string`
@@ -830,45 +874,45 @@ Gets the name to custom menu.
 
 {% highlight html %}
 
-       <div id="Kanban">
-       </div>
-       <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2"},
-                      { text: "Menu3"}							
-            ]                
-        }
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+                customMenuItems: [
+                          { text: "Menu1" },
+                          { text: "Menu2" },
+                          { text: "Menu3" }
+                ]
+            }
+        });
     });
     </script>
+
     
 {% endhighlight %}
 
@@ -885,54 +929,66 @@ Gets the template to render custom menu.
 
 {% highlight html %}
 
-        <div id="Kanban"></div>
-	    <script id="contexttemplate" type="text/x-jsrender">
-        <ul><li><a>hi</a></li><li><a>hi</a></li><li><a>hi</a></li></ul>
-        </script>
-        <script id="contexttemplate1" type="text/x-jsrender">
-        <ul><li><a>hello</a></li><li><a>hello</a></li><li><a>hello</a></li></ul>
-        </script>
-        <script id="contexttemplate2" type="text/x-jsrender">
-        <ul><li><a>hihello</a></li><li><a>hihello</a></li><li><a>hihello</a></li></ul>
-        </script> 
-        <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-       ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },			
-        contextMenuSettings: {
-            enable: true,
-            customMenuItems: [                            
-                      { text: "Menu1" },
-                      { text: "Menu2", template: "#contexttemplate1" },
-                      { text: "Menu3", template: "#contexttemplate2" }							
-            ],                 
-        }
+    <div id="Kanban"></div>
+    <script id="contexttemplate" type="text/x-jsrender">
+    <ul>
+        <li><a>hi</a></li>
+        <li><a>hi</a></li>
+        <li><a>hi</a></li>
+    </ul>
+    </script>
+    <script id="contexttemplate1" type="text/x-jsrender">
+    <ul>
+        <li><a>hello</a></li>
+        <li><a>hello</a></li>
+        <li><a>hello</a></li>
+    </ul>
+    </script>
+    <script id="contexttemplate2" type="text/x-jsrender">
+    <ul>
+        <li><a>hihello</a></li>
+        <li><a>hihello</a></li>
+        <li><a>hihello</a></li>
+    </ul>
+    </script>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            contextMenuSettings: {
+                enable: true,
+                customMenuItems: [
+                          { text: "Menu1" },
+                          { text: "Menu2", template: "#contexttemplate1" },
+                          { text: "Menu3", template: "#contexttemplate2" }
+                ],
+            }
+        });
     });
-    });
-    </script>      
-    
+    </script>
+
 {% endhighlight %}
 
 ### columns `array`
@@ -948,17 +1004,17 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
 
-        <div id="Kanban"></div>
-        <script type="text/javascript">
-            window.kanbandata = [
-                { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-                { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-                { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-                { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-                { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-                { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-            ];
-        $(function() {
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+        { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+        { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
         var data = ej.DataManager(window.kanbandata);
         $("#Kanban").ejKanban(
         {
@@ -968,17 +1024,17 @@ Gets or sets an object that indicates to render the Kanban with specified column
                 { headerText: "In Progress", key: "InProgress" },
                 { headerText: "Testing", key: "Testing" },
                 { headerText: "Done", key: "Close" }
-            ],                   
+            ],
             fields: {
                 primaryKey: "Id",
-                content: "Text",
-            },			
-            keyField: "Status"                    
+                content: "Summary",
+            },
+            keyField: "Status"
         }
-    );   
+    );
     });
-</script>
- 
+    </script>
+
 {% endhighlight %}
 
 ### columns.headerText `string`
@@ -994,37 +1050,38 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
 
-      <div id="Kanban"></div>
-      <script type="text/javascript">
-          window.kanbandata = [
-               { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-               { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-               { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-               { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-               { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-               { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-          $(function() {
-		     var data = ej.DataManager(window.kanbandata);
-                $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],                   
-                    fields: {
-                          primaryKey: "Id",
-                          content: "Text",
-                    },		
-                    keyField: "Status"                    
-                }
-            );   
-          });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+            keyField: "Status"
+        }
+    );
+    });
     </script>
+
 {% endhighlight %}
 
 ### columns.key `string/number`
@@ -1040,37 +1097,37 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
  
-      <div id="Kanban"></div>
-      <script type="text/javascript">
-          window.kanbandata = [
-               { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-               { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-               { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-               { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-               { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-               { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-          $(function() {
-		     var data = ej.DataManager(window.kanbandata);
-                $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],                   
-                    fields: {
-                          primaryKey: "Id",
-                          content: "Text",
-                    },		
-                    keyField: "Status"                    
-                }
-            );   
-          });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+            keyField: "Status"
+        }
+    );
+    });
     </script>
- 
+
  {% endhighlight %}
 
 ### columns.isCollapsed `boolean`
@@ -1086,36 +1143,36 @@ To set column collapse or expand state
 
 {% highlight html %}
  
-         <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowToggleColumn: true,
-					columns: [
-                            { headerText: "Backlog", key: "Open", isCollapsed: false },
-                            { headerText: "In Progress", key: "InProgress", isCollapsed: false },
-                            { headerText: "Testing", key: "Testing", isCollapsed: false },
-                            { headerText: "Done", key: "Close", isCollapsed: false }
-					],
-                    keyField: "Status",
-                    fields: {
-                          primaryKey: "Id",
-                          swimlaneKey: "Assignee",
-                          content: "Text",
-                    },			        
-                });
-           });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                allowToggleColumn: true,
+                columns: [
+                        { headerText: "Backlog", key: "Open", isCollapsed: false },
+                        { headerText: "In Progress", key: "InProgress", isCollapsed: false },
+                        { headerText: "Testing", key: "Testing", isCollapsed: false },
+                        { headerText: "Done", key: "Close", isCollapsed: false }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+            });
+    });
     </script>
-    
+
  {% endhighlight %}
 
 ### columns.constraints `object`
@@ -1131,33 +1188,38 @@ To customize the column constraints whether the constraints contains minimum lim
 
 {% highlight html %}
  
-     <div id="Kanban"></div>
-     <script>
-      $(function() {
-            var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    enableTotalCount: true,
-                    columns: [
-                         { headerText: "Backlog", key: "Open"},
-                         { headerText: "In Progress", key: "InProgress",constraints: { min: 1,max:2}, },
-                         { headerText: "Done", key: "Close"}
-                    ],
-                    keyField: "Status",
-					allowTitle: true,
-                    fields: {
-                        primaryKey: "Id",
-                        swimlaneKey: "Assignee",
-                        content: "Summary",
-                        imageUrl: "ImgUrl"
-                    },
-                    allowSelection: false
-                });
-			$("#constraint").ejDropDownList({ width: "120px", change: "onConstraintTypeChange",selectedItemIndex: 0});
-        });
-        </script>
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                enableTotalCount: true,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress", constraints: { min: 1, max: 2 }, },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                allowTitle: true,
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSelection: false
+            });
+        $("#constraint").ejDropDownList({ width: "120px", change: "onConstraintTypeChange", selectedItemIndex: 0 });
+    });
+    </script>
+
 {% endhighlight %}       
  
 ### columns.constraints.type `string`
@@ -1173,50 +1235,50 @@ It is used to specify the type whether the constraints based on column or swimla
 
 {% highlight html %}
  
-      <div id="Kanban"></div>
-       <script type="text/javascript">
-         window.kanbandata = [
-              { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-              { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-              { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-              { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-              { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-              { Id: 6, Status: "InProgress", Text: "Task 6", Assignee: "Nancy" },
-              { Id: 7, Status: "Close", Text: "Task 7", Assignee: "Nancy" },
-              { Id: 8, Status: "Testing", Text: "Task 8", Assignee: "Robert" },
-              { Id: 9, Status: "Close", Text: "Task 9", Assignee: "Nancy" },
-              { Id: 10, Status: "Testing", Text: "Task 10", Assignee: "Robert" },
-              { Id: 11, Status: "Testing", Text: "Task 11", Assignee: "Robert" },
-              { Id: 12, Status: "Close", Text: "Task 12", Assignee: "Andrew" },
-              { Id: 13, Status: "Testing", Text: "Task 13", Assignee: "Nancy" },
-              { Id: 14, Status: "Testing", Text: "Task 14", Assignee: "Robert" },
-              { Id: 15, Status: "Close", Text: "Task 15", Assignee: "Nancy" },
-             
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-					
-            columns: [
-                 { headerText: "Backlog", key: "Open" },
-                 { headerText: "In Progress", key: "InProgress", constraints:{type: ej.Kanban.Type.Swimlane, min: 1,max:2}, },
-                 { headerText: "Testing", key: "Testing", constraints:{ type: ej.Kanban.Type.Column, max:5 },},
-                 { headerText: "Done", key: "Close", constraints: {min: 2, max: 7},},
-            ],                                                   			
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Text",
-            },			
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
+         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
+         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
+         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
+         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
+         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
+         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
+         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
+         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
+         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
+
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
+                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+            }
+        );
     });
     </script>
-    
- {% endhighlight %}
+
+{% endhighlight %}
  
 ### columns.constraints.min `number`
 {:#members:columns-constraints-min}
@@ -1231,49 +1293,49 @@ It is used to specify the minimum amount of card in particular column cell or sw
 
 {% highlight html %}
  
-         <div id="Kanban"></div>
-       <script type="text/javascript">
-         window.kanbandata = [
-              { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-              { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-              { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-              { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-              { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-              { Id: 6, Status: "InProgress", Text: "Task 6", Assignee: "Nancy" },
-              { Id: 7, Status: "Close", Text: "Task 7", Assignee: "Nancy" },
-              { Id: 8, Status: "Testing", Text: "Task 8", Assignee: "Robert" },
-              { Id: 9, Status: "Close", Text: "Task 9", Assignee: "Nancy" },
-              { Id: 10, Status: "Testing", Text: "Task 10", Assignee: "Robert" },
-              { Id: 11, Status: "Testing", Text: "Task 11", Assignee: "Robert" },
-              { Id: 12, Status: "Close", Text: "Task 12", Assignee: "Andrew" },
-              { Id: 13, Status: "Testing", Text: "Task 13", Assignee: "Nancy" },
-              { Id: 14, Status: "Testing", Text: "Task 14", Assignee: "Robert" },
-              { Id: 15, Status: "Close", Text: "Task 15", Assignee: "Nancy" },
-             
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-					
-            columns: [
-                 { headerText: "Backlog", key: "Open" },
-                 { headerText: "In Progress", key: "InProgress", constraints:{type: ej.Kanban.Type.Swimlane, min: 1,max:2}, },
-                 { headerText: "Testing", key: "Testing", constraints:{ type: ej.Kanban.Type.Column, max:5 },},
-                 { headerText: "Done", key: "Close", constraints: {min: 2, max: 7},},
-            ],                                                   			
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Text",
-            },			
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
+         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
+         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
+         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
+         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
+         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
+         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
+         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
+         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
+         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
+
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
+                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+            }
+        );
     });
     </script>
-    
+
  {% endhighlight %}
 
 ### columns.constraints.max `number`
@@ -1289,49 +1351,49 @@ It is used to specify the maximum amount of card in particular column cell or sw
 
 {% highlight html %}
  
-      <div id="Kanban"></div>
-       <script type="text/javascript">
-         window.kanbandata = [
-              { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-              { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-              { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-              { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-              { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-              { Id: 6, Status: "InProgress", Text: "Task 6", Assignee: "Nancy" },
-              { Id: 7, Status: "Close", Text: "Task 7", Assignee: "Nancy" },
-              { Id: 8, Status: "Testing", Text: "Task 8", Assignee: "Robert" },
-              { Id: 9, Status: "Close", Text: "Task 9", Assignee: "Nancy" },
-              { Id: 10, Status: "Testing", Text: "Task 10", Assignee: "Robert" },
-              { Id: 11, Status: "Testing", Text: "Task 11", Assignee: "Robert" },
-              { Id: 12, Status: "Close", Text: "Task 12", Assignee: "Andrew" },
-              { Id: 13, Status: "Testing", Text: "Task 13", Assignee: "Nancy" },
-              { Id: 14, Status: "Testing", Text: "Task 14", Assignee: "Robert" },
-              { Id: 15, Status: "Close", Text: "Task 15", Assignee: "Nancy" },
-             
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-					
-            columns: [
-                 { headerText: "Backlog", key: "Open" },
-                 { headerText: "In Progress", key: "InProgress", constraints:{type: ej.Kanban.Type.Swimlane, min: 1,max:2}, },
-                 { headerText: "Testing", key: "Testing", constraints:{ type: ej.Kanban.Type.Column, max:5 },},
-                 { headerText: "Done", key: "Close", constraints: {min: 2, max: 7},},
-            ],                                                   			
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Text",
-            },			
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
+         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
+         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
+         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
+         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
+         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
+         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
+         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
+         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
+         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
+
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
+                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+            }
+        );
     });
     </script>
-    
+
  {% endhighlight %}
  
 ### columns.headerTemplate `string`
@@ -1347,55 +1409,58 @@ Gets or sets a value that indicates to add the template within the header elemen
 
 {% highlight html %}
  
-        <div id="Kanban"></div>
-			    <div id="calender">
-                    <span class="e-calender e-icon headericon"></span>
-                     In Progress
-                </div>
-				 <div id="userlogin">
-                    <span class="e-userlogin e-icon employee"></span>
-                    Testing
-                </div>
-				<div id="image">
-				     <img src="themes/images/kanban/9.png"> Done
-				 </div>
-				 <div id="check">
-				 <input id="checksync" type="checkbox"/> Backlog
-				 </div>
-         <style type="text/css" class="cssStyles">  
-          img{
-           height:14px;
-		  width: 14px;
-	      }	   
-	   </style>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"},
-			{Id: 3,Status: "Close",Text: "Task 3",Assignee: "Andrew"},
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open", headerTemplate: "#check"},
-                        { headerText: "In Progress", key: "InProgress", headerTemplate: "#calender"},
-                        { headerText: "Testing", key: "Testing", headerTemplate: "#userlogin"},
-                        { headerText: "Done", key: "Close", headerTemplate: "#image"}
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                         primaryKey: "Id",
-                         content: "Text",
-                    },		
-	         });
-		 });
-	   $("#checksync").ejCheckBox();
-	</script>
+    <div id="Kanban"></div>
+    <div id="calender">
+    <span class="e-calender e-icon headericon"></span>
+    In Progress
+    </div>
+    <div id="userlogin">
+    <span class="e-userlogin e-icon employee"></span>
+    Testing
+    </div>
+    <div id="image">
+    <img src="themes/images/kanban/9.png">
+    Done
+    </div>
+    <div id="check">
+    <input id="checksync" type="checkbox" />
+    Backlog
+    </div>
+    <style type="text/css" class="cssStyles">
+    img {
+        height: 14px;
+        width: 14px;
+    }
+    </style>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" },
+       { Id: 3, Status: "Close", Summary: "Task 3", Assignee: "Andrew" },
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open", headerTemplate: "#check" },
+                    { headerText: "In Progress", key: "InProgress", headerTemplate: "#calender" },
+                    { headerText: "Testing", key: "Testing", headerTemplate: "#userlogin" },
+                    { headerText: "Done", key: "Close", headerTemplate: "#image" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+            });
+    });
+    $("#checksync").ejCheckBox();
+    </script>
+
     
  {% endhighlight %}
  
@@ -1412,38 +1477,38 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
       
-      <div id="Kanban"></div>
-      <script type="text/javascript">
-          window.kanbandata = [
-               { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-               { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-               { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-               { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-               { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-               { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-          $(function() {
-		     var data = ej.DataManager(window.kanbandata);
-                $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open",width:80},
-                        { headerText: "Validated", key: "Validate", width: 80 },
-                        { headerText: "Currently Working", key: "InProgress", width: 80 },
-                        { headerText: "Testing", key: "Testing",width:80},
-                        { headerText: "Done", key: "Close",width:70}
-                    ],                   
-                    fields: {
-                         primaryKey: "Id",
-                         content: "Text",
-                    },		
-                    keyField: "Status"                    
-                }
-            );   
-          });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open", width: 80 },
+                { headerText: "Validated", key: "Validate", width: 80 },
+                { headerText: "Currently Working", key: "InProgress", width: 80 },
+                { headerText: "Testing", key: "Testing", width: 80 },
+                { headerText: "Done", key: "Close", width: 70 }
+            ],
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+            keyField: "Status"
+        }
+    );
+    });
     </script>
-         
+
 {% endhighlight %}
 
 ### columns.visible `boolean`
@@ -1459,37 +1524,37 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
  
-         <div id="Kanban"></div>
-         <script type="text/javascript">
-     	 window.kanbandata = [
-                         { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-                         { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-                         { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-                         { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-                         { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-                         { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-          $(function() {
-		        var data = ej.DataManager(window.kanbandata);
-                $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open",visible:false},
-                        { headerText: "In Progress", key: "InProgress",visible:true },
-                        { headerText: "Testing", key: "Testing",visible:false },
-                        { headerText: "Done", key: "Close",visible:true }
-                    ],
-                    keyField: "Status",
-                    fields: {
-                         primaryKey: "Id",
-                         content: "Text",
-                    },		                  
-                }
-            );
-        });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+                    { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+                    { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+                    { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+                    { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+                    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+                    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open", visible: false },
+                { headerText: "In Progress", key: "InProgress", visible: true },
+                { headerText: "Testing", key: "Testing", visible: false },
+                { headerText: "Done", key: "Close", visible: true }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+        }
+    );
+    });
     </script>
- 
+
  {% endhighlight %}
 
 ### columns.showAddButton `boolean`
@@ -1505,48 +1570,48 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% highlight html %}
  
-        <div id="Kanban"></div>
-	    <script type="text/javascript">
-         window.kanbandata = [
-                         { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-                         { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-                         { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-                         { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-                         { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-                         { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-          ];
-          $(function() {
-		        var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open", showAddButton: true },
-                        { headerText: "In Progress", key: "InProgress", showAddButton: true },
-                        { headerText: "Testing", key: "Testing", showAddButton: true },
-                        { headerText: "Done", key: "Close", showAddButton: true }
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+                    { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+                    { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+                    { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+                    { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+                    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+                    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open", showAddButton: true },
+                    { headerText: "In Progress", key: "InProgress", showAddButton: true },
+                    { headerText: "Testing", key: "Testing", showAddButton: true },
+                    { headerText: "Done", key: "Close", showAddButton: true }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    imageUrl: "ImgUrl"
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
                     ],
-                    keyField: "Status",
-                    fields: {
-                        primaryKey: "Id",
-                        content: "Summary",
-                        imageUrl: "ImgUrl"
-                    },
-                    editSettings: {
-                        editItems: [
-                            { field: "Id", editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
-                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
-                            { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
-                        ],
-                        allowEditing: true,
-                        allowAdding: true
-                    },
-                });
-        });
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            });
+    });
     </script>
- 
+
  {% endhighlight %}
  
 ### cardSettings `object`
@@ -1563,13 +1628,13 @@ Gets or sets an object that indicates whether to Customize the card based on the
 {% highlight html %}
      
     <div id="Kanban"></div>
-    <script id="cardtemplate" type="text/x-jsrender">        
-        <table>
+    <script id="cardtemplate" type="text/x-jsrender">
+    <table>
         <tr>
             <td class="photo">
                 <img src="../themes/images/kanban/{{:Priority}}.png">
             </td>
-            
+
             <td class="details">
                 <table>
                     <colgroup>
@@ -1578,68 +1643,70 @@ Gets or sets an object that indicates whether to Customize the card based on the
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td class="CardHeader">   Name: </td>
+                            <td class="CardHeader">Name: </td>
                             <td>{{:Assignee}}</td>
                         </tr>
                         <tr>
-                            <td class="CardHeader">   Task: </td>
+                            <td class="CardHeader">Task: </td>
                             <td>{{:Type}}</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
         </tr>
-    </table> 
+    </table>
     </script>
-    <style type="text/css">             
-        .details > table {
-            margin-left:10px;            
-            border-collapse: separate;
-            border-spacing: 7px;
-            width: 100%;
-        }
-     .photo {
-     padding-left: 6px;
+    <style type="text/css">
+    .details > table {
+        margin-left: 10px;
+        border-collapse: separate;
+        border-spacing: 7px;
+        width: 100%;
     }
+
+    .photo {
+        padding-left: 6px;
+    }
+
     .CardHeader {
-    font-weight: bolder;
+        font-weight: bolder;
     }
     </style>
     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Type:"UG"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Type:"Improvement"},
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-            {Id:4,Status:"Testing",Text:"Task4",Type:"Issue",Assignee:"Nancy"}
-        ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                content: "Text",
-                color: "Type",
-            },
-            cardSettings: {
-                template: "#cardtemplate",                    
-                colorMapping: {
-                    "#cb2027": "Issue,Story",
-                    "#67ab47": "Improvement",
-                    "#fbae19": "Epic",
-                    "#6a5da8": "UG"
-                }
-            },       
-                        
-        });
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    color: "Type",
+                },
+                cardSettings: {
+                    template: "#cardtemplate",
+                    colorMapping: {
+                        "#cb2027": "Issue,Story",
+                        "#67ab47": "Improvement",
+                        "#fbae19": "Epic",
+                        "#6a5da8": "UG"
+                    }
+                },
+
+            });
     });
     </script>
        
@@ -1658,14 +1725,14 @@ Gets or sets a value that indicates to add the template of card .
 
 {% highlight html %}
 
-      <div id="Kanban"></div>
-    <script id="cardtemplate" type="text/x-jsrender">        
-        <table>
+    <div id="Kanban"></div>
+    <script id="cardtemplate" type="text/x-jsrender">
+    <table>
         <tr>
             <td class="photo">
                 <img src="../themes/images/kanban/{{:Priority}}.png">
             </td>
-            
+
             <td class="details">
                 <table>
                     <colgroup>
@@ -1674,65 +1741,64 @@ Gets or sets a value that indicates to add the template of card .
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td class="CardHeader">   Name: </td>
+                            <td class="CardHeader">Name: </td>
                             <td>{{:Assignee}}</td>
                         </tr>
                         <tr>
-                            <td class="CardHeader">   Task: </td>
+                            <td class="CardHeader">Task: </td>
                             <td>{{:Type}}</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
         </tr>
-    </table> 
+    </table>
     </script>
-    <style type="text/css">             
-        .details > table {
-            margin-left:10px;            
-            border-collapse: separate;
-            border-spacing: 7px;
-            width: 100%;
-        }
-     .photo {
-     padding-left: 6px;
+    <style type="text/css">
+    .details > table {
+        margin-left: 10px;
+        border-collapse: separate;
+        border-spacing: 7px;
+        width: 100%;
+    }
+    .photo {
+        padding-left: 6px;
     }
     .CardHeader {
-    font-weight: bolder;
+        font-weight: bolder;
     }
     </style>
     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Type:"UG"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Type:"Improvement"},
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-            {Id:4,Status:"Testing",Text:"Task4",Type:"Issue",Assignee:"Nancy"}
-        ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                content: "Text",
-                color: "Type",
-            },
-            cardSettings: {
-                template: "#cardtemplate",                    
-            },       
-                        
-        });
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    color: "Type",
+                },
+                cardSettings: {
+                    template: "#cardtemplate",
+                },
+            });
     });
     </script>
-    
+
 {% endhighlight %}
        
 ### cardSettings.colorMapping `object`
@@ -1748,44 +1814,44 @@ To customize the card border color based on assigned task. Colors and correspond
 
 {% highlight html %}
  
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-           window.kanbandata = [
-               { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Type:"UG"},
-               { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Type:"Improvement"},
-               { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-               {Id:4,Status:"Testing",Text:"Task4",Type:"Issue",Assignee:"Nancy"}
-           ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                content: "Text",
-                color: "Type",
-            },
-            cardSettings: {  
-                colorMapping: {
-                    "#cb2027": "Issue,Story",
-                    "#67ab47": "Improvement",
-                    "#fbae19": "Epic",
-                    "#6a5da8": "UG"
-                }
-            },       
-                        
-        });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    color: "Type",
+                },
+                cardSettings: {
+                    colorMapping: {
+                        "#cb2027": "Issue,Story",
+                        "#67ab47": "Improvement",
+                        "#fbae19": "Epic",
+                        "#6a5da8": "UG"
+                    }
+                },
+
+            });
     });
     </script>
-       
+  
 {% endhighlight %}
 
 ### customToolbarItems `Array`
@@ -1801,60 +1867,59 @@ Gets or sets a value that indicates whether to add customToolbarItems within the
 
 {% highlight html %}
 
-     <div id="Kanban"> </div>
-	    <script id="Delete" type="text/x-jsrender">
-        <a class="e-customdelete  e-icon" />
-        </script>
-     <style type="text/css" class="cssStyles">
-        .e-customdelete:before {
-            content: "\e800";
-            line-height: 26px;
-            min-height: 26px;
-            min-width: 14px;
-            display: inline-block;
-        }
-     </style>
-     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
-            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-        ];                 
-     $(function() {
-     var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close"}
-                    ],
-                    keyField: "Status",
-                    customToolbarItems: [
-					 {
-					     template: "#Delete",
-					 },
-                    ],
-                    allowTitle: true,
-                    fields: {
-                        primaryKey: "Id",
-                        content: "Summary",
-                        imageUrl: "ImgUrl"
-                    },
-                    toolbarClick: function (args) {
-                        if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
-                            var selectedcard = this.element.find(".e-cardselection");
-                            this.deleteCard(selectedcard.attr("id"));
-                        }
-                       
-                    },
-                });
-        });
+    <div id="Kanban"></div>
+    <script id="Delete" type="text/x-jsrender">
+    <a class="e-customdelete  e-icon" />
     </script>
-    
+    <style type="text/css" class="cssStyles">
+    .e-customdelete:before {
+        content: "\e800";
+        line-height: 26px;
+        min-height: 26px;
+        min-width: 14px;
+        display: inline-block;
+    }
+    </style>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                customToolbarItems: [
+                      {
+                          template: "#Delete"
+                      }
+                ],
+                allowTitle: true,
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    imageUrl: "ImgUrl"
+                },
+                toolbarClick: function (args) {
+                    if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
+                        var selectedcard = this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                    }
+                },
+            });
+    });
+    </script>
+
 {% endhighlight %}
 
 ### customToolbarItems.template `string`
@@ -1870,58 +1935,56 @@ Gets the template to render customToolbarItems.
 
 {% highlight html %}
 
-     <div id="Kanban"> </div>
-	    <script id="Delete" type="text/x-jsrender">
-        <a class="e-customdelete  e-icon" />
-        </script>
-     <style type="text/css" class="cssStyles">
-        .e-customdelete:before {
-            content: "\e800";
-            line-height: 26px;
-            min-height: 26px;
-            min-width: 14px;
-            display: inline-block;
-        }
-     </style>
-     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
-            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-        ];                 
-     $(function() {
-     var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open"},
-                        { headerText: "In Progress", key: "InProgress"},
-                        { headerText: "Testing", key: "Testing"},
-                        { headerText: "Done", key: "Close"}
-                    ],
-                    keyField: "Status",
-                    customToolbarItems: [
-					 {
-					     template: "#Delete",
-					 },
-                    ],
-                    allowTitle: true,
-                    fields: {
-                        primaryKey: "Id",
-                        content: "Summary",
-                        imageUrl: "ImgUrl"
-                    },
-                    toolbarClick: function (args) {
-                        if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
-                            var selectedcard = this.element.find(".e-cardselection");
-                            this.deleteCard(selectedcard.attr("id"));
-                        }
-                       
-                    },
-                });
-        });
+    <div id="Kanban"></div>
+    <script id="Delete" type="text/x-jsrender">
+    <a class="e-customdelete  e-icon" />
+    </script>
+    <style type="text/css" class="cssStyles">
+    .e-customdelete:before {
+        content: "\e800";
+        line-height: 26px;
+        min-height: 26px;
+        min-width: 14px;
+        display: inline-block;
+    }
+    </style>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                customToolbarItems: [
+                      {
+                          template: "#Delete"
+                      }
+                ],
+                allowTitle: true,
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                toolbarClick: function (args) {
+                    if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
+                        var selectedcard = this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                    }
+                },
+            });
+    });
     </script>
     
 {% endhighlight %}
@@ -1941,39 +2004,39 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
  
     <div id="Kanban"></div>
     <style type="text/css">
-        .gradient-green {
-            font-family: cursive;
-        }
+    .gradient-green {
+        font-family: cursive;
+    }
         .gradient-green .e-swimlanerow {
             background: none repeat scroll 0 0 #71A409;
         }
     </style>
     <script>
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" }      
-       ];
-	   $(function() {
-            var data = ej.DataManager(window.kanbandata);
-                $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-                    cssClass: "gradient-green",
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress"}
-                    ],                                                           			
-					fields: {
-                          primaryKey: "Id",
-                          content: "Text",
-                    }, 
-                    keyField: "Status",			
-	          }
-            );
-       });
-    </script> 
-    
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+        {
+            dataSource: data,
+            cssClass: "gradient-green",
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" }
+            ],
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+            keyField: "Status",
+        }
+    );
+    });
+    </script>
+
 {% endhighlight %}
  
  ### dataSource `object`
@@ -1989,33 +2052,33 @@ Gets or sets the data to render the Kanban with card.
 
 {% highlight html %}
     
-     <div id="kanban">
-     </div>
-     <script type="text/javascript">
-       window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" }      
-       ];
-	   $(function() {
-            var data = ej.DataManager(window.kanbandata);
-                $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress"}
-                    ],                                                           			
-					fields: {
-                          primaryKey: "Id",
-                          swimlaneKey: "Assignee",
-                          content: "Text",
-                    },  
-                     keyField: "Status",			
-	          }
-            );
-       });
+    <div id="kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" }
+            ],
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+            keyField: "Status",
+        }
+    );
+    });
     </script>
+
     
 {% endhighlight %}
 
@@ -2032,49 +2095,49 @@ Align content in the Kanban control from right to left by setting the property a
 
 {% highlight html %}
 
-        <div id="Kanban"></div>
-        <script type="text/javascript">
-        window.kanbandata = [
-           {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-           {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-           {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-           {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"},
-           {Id: 5,Status: "InProgress",Text: "Task 5",Assignee: "Andrew"},
-           {Id: 6,Status: "Testing",Text: "Task 6",Assignee: "Nancy"}
-        ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            enableRTL:true,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                          primaryKey: "Id",
-                          swimlaneKey: "Assignee",
-                          content: "Text",
-                    }, 
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String },
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                enableRTL: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-                allowEditing: true,
-                allowAdding: true
-            },					
-        });
-        });
-        </script>
-        
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            });
+    });
+    </script>
+    
 {% endhighlight %}
 
 ### enableTotalCount `boolean`
@@ -2090,38 +2153,38 @@ To show Total count of cards in each column
 
 {% highlight html %}
  
-        <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert" }       
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-       $("#Kanban").ejKanban(
-           {
-		    enableTotalCount: true,
-               dataSource: data,
-               columns: [
-                   { headerText: "Backlog", key: "Open" },
-                   { headerText: "In Progress", key: "InProgress" },
-                   { headerText: "Testing", key: "Testing" },
-                   { headerText: "Done", key: "Close" }
-               ],                                                           			
-               keyField: "Status",
-               fields: {
-                          primaryKey: "Id",
-                          swimlaneKey: "Assignee",
-                          content: "Text",
-                       }, 			
-            
-          });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                enableTotalCount: true,
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+
+            });
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### editSettings `object`
@@ -2137,48 +2200,48 @@ Get or sets an object that indicates whether to customize the editing behavior o
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	   ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            actionComplete: "complete",
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-           }, 
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String},
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea}
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                actionComplete: "complete",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-    );
-    }); 
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+        );
+    });
     </script>
-    
+  
 {% endhighlight %}
 
 ### editSettings.allowEditing `boolean`
@@ -2194,47 +2257,47 @@ Gets or sets a value that indicates whether to enable the editing action in card
 
 {% highlight html %}
 
-      <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	   ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            actionComplete: "complete",
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-             fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-           }, 
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String},
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea}
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                actionComplete: "complete",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-                allowEditing: true
-            },
-        }
-    );
-    }); 
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowEditing: true
+                },
+            }
+        );
+    });
     </script>
-    
+       
 {% endhighlight %}
 
 ### editSettings.allowAdding `boolean`
@@ -2250,47 +2313,47 @@ Gets or sets a value that indicates whether to enable the adding action in cards
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	   ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            actionComplete: "complete",
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-             fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            }, 
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String},
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea}
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                actionComplete: "complete",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-                allowAdding: true
-            },
-        }
-    );
-    }); 
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowAdding: true
+                },
+            }
+        );
+    });
     </script>
-    
+ 
 {% endhighlight %}
 
 ### editSettings.dialogTemplate `String`
@@ -2309,7 +2372,7 @@ This specifies the id of the template.which is require to be edited using the Di
     <div id="Kanban"></div>
     <script id="template" type="text/template">
     <table>
-            <tr>
+        <tr>
             <td style="text-align: right;">Id
             </td>
             <td style="text-align: left">
@@ -2324,39 +2387,39 @@ This specifies the id of the template.which is require to be edited using the Di
     </table>
     </script>
     <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.DialogTemplate,
-                dialogTemplate: "#template",                   
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-    </script>                
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.DialogTemplate,
+                    dialogTemplate: "#template",
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
 
 {% endhighlight %}
 
@@ -2383,6 +2446,14 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
 <td class="name">DialogTemplate</td>
 <td class="description">Creates Kanban with editMode as DialogTemplate</td>
 </tr>
+<tr>
+<td class="name">ExternalForm</td>
+<td class="description">Creates Kanban with editMode as ExternalForm</td>
+</tr>
+<tr>
+<td class="name">ExternalFormTemplate</td>
+<td class="description">Creates Kanban with editMode as ExternalFormTemplate</td>
+</tr>
 </tbody>
 </table>
 
@@ -2394,47 +2465,47 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
 
 {% highlight html %}
 
-        <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.Dialog,
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String },
-                    { field: "Status", editType:  ej.Kanban.EditingType.String },
-                    { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                    { field: "Text", editType:  ej.Kanban.EditingType.TextArea }],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-      </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
 {% endhighlight %}
 
 ### editSettings.editItems `array`
@@ -2450,47 +2521,47 @@ Get or sets an object that indicates whether to customize the editing fields of 
 
 {% highlight html %}
 
-      <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.Dialog,
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String },
-                    { field: "Status", editType:  ej.Kanban.EditingType.String },
-                    { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                    { field: "Text", editType:  ej.Kanban.EditingType.TextArea }],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-      </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
 {% endhighlight %}
 
 ### editSettings.editItems.field `string`
@@ -2506,47 +2577,47 @@ It is used to map editing field in the card.
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-           }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.Dialog,
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String },
-                    { field: "Status", editType:  ej.Kanban.EditingType.String },
-                    { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                    { field: "Text", editType:  ej.Kanban.EditingType.TextArea }],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-      </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
 {% endhighlight %}
 
 ### editSettings.editItems.editType `enum`
@@ -2603,47 +2674,47 @@ It is used to set the particular editType in the card for editing.
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-           }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.Dialog,
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String },
-                    { field: "Status", editType:  ej.Kanban.EditingType.String },
-                    { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                    { field: "Text", editType:  ej.Kanban.EditingType.TextArea }],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-      </script>
-      
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
 {% endhighlight %}
 
 ### editSettings.editItems.validationRules `object`
@@ -2659,48 +2730,48 @@ Gets or sets a value that indicates to define constraints for saving data to the
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	    window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-	    ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata)
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,                    
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-           }, 
-            editSettings: {
-                editMode:ej.Kanban.EditMode.Dialog,
-                editItems: [
-                            { field: "Id", editType: ej.Kanban.EditingType.String,validationRules: { required: true, number: true }},
-                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
-                            { field: "Text", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}}
-							],
-                allowEditing: true,
-                allowAdding: true
-            },
-        }
-      );   
-      })                   
-      </script>
-      
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                                { field: "Id", editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+                                { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                                { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                                { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+                                { field: "Text", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
+                    ],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
 {% endhighlight %}
 
 ### editSettings.editItems.editParams `object`
@@ -2716,49 +2787,49 @@ It is used to set the particular editparams in the card for editing.
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata)
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    actionComplete: "complete",
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    keyField: "Status",
-                    fields: {
-                         primaryKey: "Id",
-                         content: "Text",
-                    }, 
-                    editSettings: {
-                        title: "Assignee",
-                        editMode:ej.Kanban.EditMode.Dialog,
-                        editItems: [
-						    { field: "Id", editType: ej.Kanban.EditingType.String },
-                            { field: "Status", editType:  ej.Kanban.EditingType.String },
-                            { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                            { field: "Text", editType:  ej.Kanban.EditingType.TextArea }],
-                            allowEditing: true,
-                            allowAdding: true
-                    },
-                }
-            );  
-            })                    
-       </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                actionComplete: "complete",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    title: "Assignee",
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+        );
+    })
+    </script>
+ 
 {% endhighlight %}
 
 ### editSettings.editItems.defaultValue `string/number`
@@ -2774,50 +2845,196 @@ It is used to specify defaultValue in the card.
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    actionComplete: "complete",
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    keyField: "Status",
-                    fields: {
-                         primaryKey: "Id",
-                         content: "Text",
-                    }, 
-                    editSettings: {
-                        editMode:ej.Kanban.EditMode.Dialog,
-                        editItems: [
-						    { field: "Id", editType: ej.Kanban.EditingType.String,validationRules: { required: true, number: true }},
-                            { field: "Status", editType:  ej.Kanban.EditingType.String,defaultValue:"Open" },
-                            { field: "Assignee", editType:  ej.Kanban.EditingType.Dropdown },
-                            { field: "Estimate", editType:  ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
-                            { field: "Text", editType:  ej.Kanban.EditingType.TextArea,validationRules: { required: true}}],
-                            allowEditing: true,
-                            allowAdding: true
-                    },
-                }
-            );  
-            })                    
-       </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                actionComplete: "complete",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.Dialog,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+                        { field: "Status", editType: ej.Kanban.EditingType.String, defaultValue: "Open" },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+        );
+    })
+    </script>
+
 {% endhighlight %}
 
+### editSettings.externalFormTemplate `String`
+{:#members:editsettings-externalformtemplate}
+
+This specifies the id of the template which is require to be edited using the External edit form.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+
+{% highlight html %}   
+
+    <div id="Kanban"></div>
+    <script id="template" type="text/template">
+    <table>
+        <tr>
+            <td style="text-align: right;">Id
+            </td>
+            <td style="text-align: left">
+                <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" disabled="disabled" />
+            </td>
+            <td style="text-align: right;">Status
+            </td>
+            <td style="text-align: left">
+                <input id="Status" name="Status" value="{{: Status}}" class="e-field e-ejinputtext valid" />
+            </td>
+        </tr>
+    </table>
+    </script>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.ExternalFormTemplate,
+                    externalFormTemplate: "#template",
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
+{% endhighlight %}
+
+### editSettings.formPosition `enum`
+{:#members:editsettings-formposition}
+
+<ts name="ej.Kanban.FormPosition"/>
+
+This specifies to set the position of an External edit form either in the top-right or bottom of the Kanban.
+
+#### Default Value:
+
+* ej.Kanban.FormPosition.Bottom
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Bottom</td>
+<td class="description">Form position is bottom.</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="description">Form position is right.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+        { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editMode: ej.Kanban.EditMode.ExternalForm,
+                    formPosition: ej.Kanban.FormPosition.Bottom,
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.String },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            }
+          );
+    })
+    </script>
+
+{% endhighlight %}
+            
 ### fields `object`
 {:#members:fields}
 
@@ -2831,48 +3048,48 @@ To customize field mappings for card , editing title and control key parameters
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Type:"UG",Tags:"Analyze,Requirements",ImgUrl:"../themes/images/kanban/1.png"} ,
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Type:"Issue",Tags:"Improvement,Performance",ImgUrl:"../themes/images/kanban/2.png" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Type:"Improvement",Tags:"Improvement,Performance",ImgUrl:"../themes/images/kanban/2.png" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Type:"UG",Tags:"Analyze,Requirements",ImgUrl:"../themes/images/kanban/1.png"},
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Janet Leverling",Type:"Epic",Tags:"Meeting,Requirments",ImgUrl:"../themes/images/kanban/3.png"}       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-            tag: "Tags",
-            title: "Id",
-            color: "Type",
-            imageUrl: "ImgUrl",
-        },
-        cardSettings: {  
-            colorMapping: {
-                "#cb2027": "Issue,Story",
-                "#67ab47": "Improvement",
-                "#fbae19": "Epic",
-                "#6a5da8": "UG"
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG", Tags: "Analyze,Requirements", ImgUrl: "../themes/images/kanban/1.png" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Issue", Tags: "Improvement,Performance", ImgUrl: "../themes/images/kanban/2.png" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Type: "Improvement", Tags: "Improvement,Performance", ImgUrl: "../themes/images/kanban/2.png" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Type: "UG", Tags: "Analyze,Requirements", ImgUrl: "../themes/images/kanban/1.png" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", Type: "Epic", Tags: "Meeting,Requirments", ImgUrl: "../themes/images/kanban/3.png" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+                tag: "Tags",
+                title: "Id",
+                color: "Type",
+                imageUrl: "ImgUrl",
+            },
+            cardSettings: {
+                colorMapping: {
+                    "#cb2027": "Issue,Story",
+                    "#67ab47": "Improvement",
+                    "#fbae19": "Epic",
+                    "#6a5da8": "UG"
+                }
             }
-        }
-    });
+        });
     });
     </script>
-       
+    
 {% endhighlight %}
 
 ### fields.primaryKey `string`
@@ -2888,37 +3105,35 @@ The primarykey field is get as property of Kanban. And this will used for Drag a
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-				  
-        },
-				 
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+        });
     });
     </script>
-       
+     
 {% endhighlight %}
 
 ### fields.swimlaneKey `string`
@@ -2934,36 +3149,36 @@ To enable swimlane grouping based on the given key field.
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Text",
-        },
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+        });
     });
     </script>
-       
+
 {% endhighlight %}
 
 ### fields.priority `string`
@@ -2979,36 +3194,37 @@ Priority field has been mapped data source field to maintain card priority
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Priority:"Low" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Priority:"normal" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Priority:"high"},
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Priority:"Low"},
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Priority:"Critical"}       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            Priority:"Priority",
-            content: "Text",
-        },
-    });
+    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Priority: "Low" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Priority: "normal" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Priority: "high" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Priority: "Low" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Priority: "Critical" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                Priority: "Priority",
+                content: "Summary",
+            },
+        });
     });
     </script>
-       
+
 {% endhighlight %}
 
 ### fields.content `string`
@@ -3024,35 +3240,35 @@ ContentField has been Mapped into card text.
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-        },
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+        });
     });
     </script>
-       
+  
 {% endhighlight %}
 
 ### fields.tag `string`
@@ -3068,36 +3284,36 @@ TagField has been Mapped into card tag.
 
 {% highlight html %}
 
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Estimate:"2.5" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Estimate:"1.5" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Estimate:"1" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Estimate:"3" },
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert",Estimate:"1.5" }       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-            tag: "Tags",
-        },
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+                tag: "Tags",
+            },
+        });
     });
     </script>
-       
+
 {% endhighlight %}
 
 ### fields.title `string`
@@ -3113,36 +3329,36 @@ Title Field has been Mapped to field in datasource for title content. If title f
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert"}       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-            title: "Id",
-        },
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+                title: "Id",
+            },
+        });
     });
     </script>
-       
+     
 {% endhighlight %}
 
 ### fields.color `string`
@@ -3158,44 +3374,44 @@ To customize the card has been Mapped into card color field.
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",Type:"UG"} ,
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",Type:"Issue"},    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",Type:"Improvement" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",Type:"UG"},
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Janet Leverling",Type:"Epic"}       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-            color: "Type",
-        },
-        cardSettings: {  
-            colorMapping: {
-                "#cb2027": "Issue,Story",
-                "#67ab47": "Improvement",
-                "#fbae19": "Epic",
-                "#6a5da8": "UG"
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Issue" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Type: "Improvement" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Type: "UG" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", Type: "Epic" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+                color: "Type",
+            },
+            cardSettings: {
+                colorMapping: {
+                    "#cb2027": "Issue,Story",
+                    "#67ab47": "Improvement",
+                    "#fbae19": "Epic",
+                    "#6a5da8": "UG"
+                }
             }
-        }
-    });
+        });
     });
     </script>
-       
+
 {% endhighlight %}
 
 ### fields.imageUrl `string`
@@ -3211,37 +3427,37 @@ ImageUrlField has been Mapped into card image.
 
 {% highlight html %}
      
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy",ImgUrl:"../themes/images/kanban/1.png"} ,
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew",ImgUrl:"../themes/images/kanban/2.png" },    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew",ImgUrl:"../themes/images/kanban/2.png" },
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy",ImgUrl:"../themes/images/kanban/1.png"},
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Janet Leverling",ImgUrl:"../themes/images/kanban/3.png"}       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        fields: {
-            primaryKey: "Id",
-            content: "Text",
-            imageUrl: "ImgUrl",
-        },
-        
-    });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", ImgUrl: "../themes/images/kanban/1.png" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", ImgUrl: "../themes/images/kanban/2.png" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", ImgUrl: "../themes/images/kanban/2.png" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", ImgUrl: "../themes/images/kanban/1.png" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", ImgUrl: "../themes/images/kanban/3.png" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+                imageUrl: "ImgUrl",
+            },
+
+        });
     });
     </script>
-       
+     
 {% endhighlight %}
 
 ### keyField `string`
@@ -3257,33 +3473,31 @@ To map datasource field for column values mapping
 
 {% highlight html %}
 
-     <div id="Kanban">
-     </div>
-     <script type="text/javascript">
-        window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy"},
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},
-            { Id: 3, Status: "InProgress", Text: "Task 3",Assignee: "Andrew"},
-            { Id: 4, Status:"Testing",Text:"Task4",Assignee:"Nancy"}
-        ];                 
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-		    
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-           fields: {
-            content: "Text",
-        },	
-        });
-        });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                },
+            });
+    });
     </script>
     
 {% endhighlight %}
@@ -3301,37 +3515,37 @@ When set to true, adapts the Kanban layout to fit the screen size of devices on 
 
 {% highlight html %}     
   
-      <div id="Kanban"></div>	   
-      <script type="text/javascript">
-      window.kanbandata = [
-           { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-           { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},    
-           { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-           { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy"},
-           { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert" }       
-      ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            minWidth:400,
-            isResponsive:true,
-            columns: [
-                { headerText: "Backlog", key: "Open",width:150 },
-                { headerText: "In Progress", key: "InProgress" ,width:120},
-                { headerText: "Testing", key: "Testing" ,width:120},
-                { headerText: "Done", key: "Close" ,width:150}
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-            primaryKey: "Id",
-            content: "Text",
-        },
-        });
-     });
-     </script>
-    
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                minWidth: 400,
+                isResponsive: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open", width: 150 },
+                    { headerText: "In Progress", key: "InProgress", width: 120 },
+                    { headerText: "Testing", key: "Testing", width: 120 },
+                    { headerText: "Done", key: "Close", width: 150 }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+            });
+    });
+    </script>
+
 {% endhighlight %}
 
 ### minWidth `number`
@@ -3347,37 +3561,37 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 
 {% highlight html %}
 
-       <div id="Kanban"></div>	   
-       <script type="text/javascript">
-	   window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew"},    
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew"},
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy"},
-            { Id: 5, Status: "Close", Text: "Task 6", Assignee: "Robert" }       
-	   ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            minWidth:400,
-            isResponsive:true,
-            columns: [
-                { headerText: "Backlog", key: "Open",width:150 },
-                { headerText: "In Progress", key: "InProgress" ,width:120},
-                { headerText: "Testing", key: "Testing" ,width:120},
-                { headerText: "Done", key: "Close" ,width:150}
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-            primaryKey: "Id",
-            content: "Text",
-        },
-        });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                minWidth: 400,
+                isResponsive: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open", width: 150 },
+                    { headerText: "In Progress", key: "InProgress", width: 120 },
+                    { headerText: "Testing", key: "Testing", width: 120 },
+                    { headerText: "Done", key: "Close", width: 150 }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+            });
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### filterSettings `array`
@@ -3393,43 +3607,41 @@ To customize the filtering behavior based on queries given.
 
 {% highlight html %} 
 
-     <div id="Kanban">
-     </div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Janet Leverling" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Janet Leverling" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Janet Leverling" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            },  
-            filterSettings: [                             
-                     { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
-                     { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
-            ],                                
-                           					
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+           { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+           { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
+           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                filterSettings: [
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
+                ],
+            }
+        );
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### filterSettings.text `string`
@@ -3445,42 +3657,41 @@ Gets or sets an object of display name to filter queries.
 
 {% highlight html %} 
 
-     <div id="Kanban">
-     </div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Janet Leverling" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Janet Leverling" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Janet Leverling" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-              primaryKey: "Id",
-              content: "Text",
-            }, 
-            filterSettings: [                             
-                     { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
-                     { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
-            ],                                                  					
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+           { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+           { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
+           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                filterSettings: [
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
+                ],
+            }
+        );
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### filterSettings.query `object`
@@ -3496,42 +3707,41 @@ Gets or sets an object that Queries to perform filtering
 
 {% highlight html %}
  
-     <div id="Kanban">
-     </div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Janet Leverling" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Janet Leverling" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Janet Leverling" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                 primaryKey: "Id",
-                 content: "Text",
-            },
-            filterSettings: [                             
-                     { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
-                     { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
-            ],                                            					
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+           { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+           { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
+           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                filterSettings: [
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
+                ],
+            }
+        );
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### filterSettings.description `string`
@@ -3547,42 +3757,41 @@ Gets or sets an object of tooltip to filter buttons.
 
 {% highlight html %} 
 
-     <div id="Kanban">
-     </div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Janet Leverling" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Janet Leverling" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Janet Leverling" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-              primaryKey: "Id",
-              content: "Text",
-            },
-            filterSettings: [                             
-                     { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
-                     { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
-            ],                                          					
-        }
-    );
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+           { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+           { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
+           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                filterSettings: [
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
+                ],
+            }
+        );
     });
     </script>
-    
+      
 {% endhighlight %}
 
 ### query `object`
@@ -3598,33 +3807,32 @@ ej Query to query database of Kanban.
 
 {% highlight html %}       
 
-     <div id="kanban">
-     </div>
-     <script type="text/javascript">
-           window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" }
-        ];
-		$(function() {
-           var query=ej.Query().select(["Status", "Assignee","Text"]);
-           var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-                    keyField: "Status",
-                    query: query,
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress"}
-                    ],                                                           			
-					fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },
-                }
-            );
-        });
+    <div id="kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+     { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
+    ];
+    $(function () {
+        var query = ej.Query().select(["Status", "Assignee", "Text"]);
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                keyField: "Status",
+                query: query,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+            }
+        );
+    });
     </script>
 
 {% endhighlight %}
@@ -3642,60 +3850,60 @@ To change the key in keyboard interaction to Kanban control.
 
 {% highlight html %}
 
-     <div id="Kanban"></div>
-     <script type="text/javascript">
-	 window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Testing", Text: "Task 6", Assignee: "Robert" }
-	 ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            allowKeyboardNavigation:true,
-            columns: [
-                { headerText: "Backlog", key: "Open"},
-                { headerText: "In Progress", key: "InProgress"},
-                { headerText: "Testing", key: "Testing"},
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                content: "Text",
-            },				
-            selectionType: "multiple",
-            editSettings: {
-                editItems: [
-                    { field: "Id", editType: ej.Kanban.EditingType.String},
-                    { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }},
-                    { field: "Text", editType: ej.Kanban.EditingType.TextArea}
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+           { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+           { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                allowKeyboardNavigation: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-                allowEditing: true,
-                allowAdding: true
-            },					
-                  
-            keySettings: {
-                focus: "e",     
-                insertCard: "45",
-            },
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                selectionType: "multiple",
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+
+                keySettings: {
+                    focus: "e",
+                    insertCard: "45",
+                },
+            });
+
+        $(document).on("keydown", function (e) {
+            if (e.altKey && e.keyCode === 74) {
+                $("#Kanban").focus();
+            }
         });
-		   
-    $(document).on("keydown", function (e) {
-        if (e.altKey && e.keyCode === 74) { 
-            $("#Kanban").focus();
-        }
-    });
     });
     </script>
-    
+
 {% endhighlight %}
 
 ### scrollSettings `object`
@@ -3711,43 +3919,42 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
 
 {% highlight html %}
   
-    <div id="kanban">
-    </div>
+    <div id="kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Close", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,                   
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keyField: "Status",
-                    allowScrolling: true,
-                    scrollSettings: {
-                          height: 400,
-                          width: 700
-                    }
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                keyField: "Status",
+                allowScrolling: true,
+                scrollSettings: {
+                    height: 400,
+                    width: 700
                 }
-            );
-        });
-     </script>
-     
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### scrollSettings.height `string/number`
@@ -3763,42 +3970,41 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
 
 {% highlight html %}
   
-    <div id="kanban">
-    </div>
+    <div id="kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Close", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,                   
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keyField: "Status",
-                    allowScrolling: true,
-                    scrollSettings: {
-                        height: 400
-                    }
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                keyField: "Status",
+                allowScrolling: true,
+                scrollSettings: {
+                    height: 400
                 }
-            );
-        });
-     </script>
-     
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### scrollSettings.width `string/number`
@@ -3814,43 +4020,42 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
 
 {% highlight html %}
   
-    <div id="kanban">
-    </div>
+    <div id="kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Close", Text: "Task 6", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,                   
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                    keyField: "Status",
-                    allowScrolling: true,
-                    scrollSettings: {
-                          height: 400,
-                         width: 700
-                    }
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                keyField: "Status",
+                allowScrolling: true,
+                scrollSettings: {
+                    height: 400,
+                    width: 700
                 }
-            );
-        });
-     </script>
-     
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### scrollSettings.allowFreezeSwimlane `boolean`
@@ -3866,47 +4071,46 @@ To allow the Kanban to freeze particular swimlane at the time of scrolling , unt
 
 {% highlight html %}
   
-    <div id="kanban">
-    </div>
+    <div id="kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "InProgress", Text: "Task 5", Assignee: "Andrew" },
-            { Id: 6, Status: "Close", Text: "Task 6", Assignee: "Robert" },
-			{ Id: 7, Status: "Testing", Text: "Task 7", Assignee: "Michael" },
-            { Id: 8, Status: "InProgress", Text: "Task 8", Assignee: "Steven" },
-            { Id: 9, Status: "Close", Text: "Task 9", Assignee: "Robert" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-					allowScrolling:true,
-					scrollSettings:{  
-					 height:500,
-				     width:800,
-					 allowFreezeSwimlane:true,
-					},
-                    columns: [
-                        { headerText: "Backlog", key: "Open",width:250 },
-                        { headerText: "In Progress", key: "InProgress" ,width:220},
-                        { headerText: "Testing", key: "Testing" ,width:220},
-                        { headerText: "Done", key: "Close" ,width:250}
-                    ],                                                           			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },				
-                });
-        });
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" },
+       { Id: 7, Status: "Testing", Summary: "Task 7", Assignee: "Michael" },
+       { Id: 8, Status: "InProgress", Summary: "Task 8", Assignee: "Steven" },
+       { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Robert" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                allowScrolling: true,
+                scrollSettings: {
+                    height: 500,
+                    width: 800,
+                    allowFreezeSwimlane: true,
+                },
+                columns: [
+                    { headerText: "Backlog", key: "Open", width: 250 },
+                    { headerText: "In Progress", key: "InProgress", width: 220 },
+                    { headerText: "Testing", key: "Testing", width: 220 },
+                    { headerText: "Done", key: "Close", width: 250 }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+            });
+    });
     </script>
-     
+        
 {% endhighlight %}
 
 ### searchSettings `object`
@@ -3922,44 +4126,43 @@ To customize the searching behavior of the Kanban.
 
 {% highlight html %} 
 
-         <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                   columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close"}
-                    ],                                                   			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-					allowSearching: true,
-				    searchSettings: {
-                        fields: ["Text","Id"],
-                        key: "",
-                        operator: "contains",
-                        ignoreCase: true,
-                    },
-					
-                }
-            );
-        });
-        </script>
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSearching: true,
+                searchSettings: {
+                    fields: ["Text", "Id"],
+                    key: "",
+                    operator: "contains",
+                    ignoreCase: true,
+                },
+            }
+        );
+    });
+    </script>
+      
 {% endhighlight %}
 
 ### searchSettings.fields `array`
@@ -3975,43 +4178,43 @@ To customize the fields the searching operation can be perform.
 
 {% highlight html %} 
 
-          <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                   columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close"}
-                    ],                                                   			
-                    keyField: "Status",
-				    fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-					allowSearching: true,
-				    searchSettings: {
-                        fields: ["Text","Id"],
-                        key: "",
-                        operator: "contains",
-                        ignoreCase: true,
-                    },
-					
-                }
-            );
-        });
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSearching: true,
+                searchSettings: {
+                    fields: ["Text", "Id"],
+                    key: "",
+                    operator: "contains",
+                    ignoreCase: true,
+                },
+            }
+        );
+    });
+    </script>
+      
 {% endhighlight %}
 
 ### searchSettings.key `string`
@@ -4027,43 +4230,43 @@ To customize the searching string.
 
 {% highlight html %} 
 
-          <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                   columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close"}
-                    ],                                                   			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-					allowSearching: true,
-				    searchSettings: {
-                        fields: ["Text","Id"],
-                        key: "",
-                        operator: "contains",
-                        ignoreCase: true,
-                    },
-					
-                }
-            );
-        });
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSearching: true,
+                searchSettings: {
+                    fields: ["Text", "Id"],
+                    key: "",
+                    operator: "contains",
+                    ignoreCase: true,
+                },
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### searchSettings.operator `string`
@@ -4079,43 +4282,43 @@ To customize the operator based on searching.
 
 {% highlight html %} 
 
-          <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                   columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close"}
-                    ],                                                   			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-					allowSearching: true,
-				    searchSettings: {
-                        fields: ["Text","Id"],
-                        key: "",
-                        operator: "contains",
-                        ignoreCase: true,
-                    },
-					
-                }
-            );
-        });
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSearching: true,
+                searchSettings: {
+                    fields: ["Text", "Id"],
+                    key: "",
+                    operator: "contains",
+                    ignoreCase: true,
+                },
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### searchSettings.ignoreCase `boolean`
@@ -4131,43 +4334,43 @@ To customize the ignore case based on searching.
 
 {% highlight html %} 
 
-          <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "In Progress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                   columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close"}
-                    ],                                                   			
-                    keyField: "Status",
-					fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-					allowSearching: true,
-				    searchSettings: {
-                        fields: ["Text","Id"],
-                        key: "",
-                        operator: "contains",
-                        ignoreCase: true,
-                    },
-					
-                }
-            );
-        });
-        
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                allowSearching: true,
+                searchSettings: {
+                    fields: ["Text", "Id"],
+                    key: "",
+                    operator: "contains",
+                    ignoreCase: true,
+                },
+            }
+        );
+    });
+    </script>
+
 {% endhighlight %}
 
 ### selectionType `enum`
@@ -4204,36 +4407,36 @@ To allow customize selection type. Accepting types are "single" and "multiple".
 
 {% highlight html %} 
 
-         <div id="Kanban"></div>
-         <script type="text/javascript">
-         window.kanbandata = [
-            {Id: 1,Status: "Open",Text: "Task 1",Assignee: "Nancy" },
-            {Id: 2,Status: "Open",Text: "Task 2",Assignee: "Andrew"},
-            {Id: 3,Status: "InProgress",Text: "Task 3",Assignee: "Andrew"},
-            {Id: 4,Status: "Testing",Text: "Task4",Assignee: "Nancy"}
-         ];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-        {
-		    
-            dataSource: data,
-            selectionType:"multiple",
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],                                                           			
-            keyField: "Status",
-            fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-        });
-        });
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+
+                dataSource: data,
+                selectionType: "multiple",
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+            });
+    });
     </script>
-    
+
 {% endhighlight %}
 
 ### stackedHeaderRows `array`
@@ -4251,41 +4454,40 @@ Gets or sets an object that indicates to managing the collection of stacked head
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-	window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "Validate", Text: "Task 5", Assignee: "Andrew" },
-            
-	];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-         {
-             dataSource: data,						
-             columns: [
-                 { headerText: "Backlog", key: "Open",width:80},
-                 { headerText: "Validated", key: "Validate", width: 80 },
-                 { headerText: "In Progress", key: "InProgress", width: 80 },
-                 { headerText: "Testing", key: "Testing",width:80},
-                 { headerText: "Done", key: "Close",width:70}
-             ],                                                           			
-             keyField: "Status",        
-             stackedHeaderRows: [{
-                 stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
-                     { headerText: "Resolved", column: "Testing,Done" }
-                 ]
-             }
-             ],       
-             fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-         });
-         });
-         </script>
-    
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+             {
+                 dataSource: data,
+                 columns: [
+                     { headerText: "Backlog", key: "Open", width: 80 },
+                     { headerText: "Validated", key: "Validate", width: 80 },
+                     { headerText: "In Progress", key: "InProgress", width: 80 },
+                     { headerText: "Testing", key: "Testing", width: 80 },
+                     { headerText: "Done", key: "Close", width: 70 }
+                 ],
+                 keyField: "Status",
+                 stackedHeaderRows: [{
+                     stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
+                         { headerText: "Resolved", column: "Testing,Done" }
+                     ]
+                 }
+                 ],
+                 fields: {
+                     primaryKey: "Id",
+                     content: "Summary",
+                 },
+             });
+    });
+    </script>
+
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns `array`
@@ -4301,43 +4503,42 @@ Gets or sets a value that indicates whether to add stacked header columns into t
 
 {% highlight html %}
   
-      <div id="Kanban"></div>
+    <div id="Kanban"></div>
     <script type="text/javascript">
-	window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "Validate", Text: "Task 5", Assignee: "Andrew" },
-            
-	];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-         {
-             dataSource: data,						
-             columns: [
-                 { headerText: "Backlog", key: "Open",width:80},
-                 { headerText: "Validated", key: "Validate", width: 80 },
-                 { headerText: "In Progress", key: "InProgress", width: 80 },
-                 { headerText: "Testing", key: "Testing",width:80},
-                 { headerText: "Done", key: "Close",width:70}
-             ],                                                           			
-             keyField: "Status",        
-             stackedHeaderRows: [{
-                 stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
-                     { headerText: "Resolved", column: "Testing,Done" }
-                 ]
-             }
-             ],       
-            fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },				
-         });
-         });
-         </script>
-    
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+             {
+                 dataSource: data,
+                 columns: [
+                     { headerText: "Backlog", key: "Open", width: 80 },
+                     { headerText: "Validated", key: "Validate", width: 80 },
+                     { headerText: "In Progress", key: "InProgress", width: 80 },
+                     { headerText: "Testing", key: "Testing", width: 80 },
+                     { headerText: "Done", key: "Close", width: 70 }
+                 ],
+                 keyField: "Status",
+                 stackedHeaderRows: [{
+                     stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
+                         { headerText: "Resolved", column: "Testing,Done" }
+                     ]
+                 }
+                 ],
+                 fields: {
+                     primaryKey: "Id",
+                     content: "Summary",
+                 },
+             });
+    });
+    </script>
+ 
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.headerText `string`
@@ -4353,43 +4554,42 @@ Gets or sets a value that indicates the headerText for the particular stacked he
 
 {% highlight html %}
 
-       <div id="Kanban"></div>
+    <div id="Kanban"></div>
     <script type="text/javascript">
-	window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "Validate", Text: "Task 5", Assignee: "Andrew" },
-            
-	];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-         {
-             dataSource: data,						
-             columns: [
-                 { headerText: "Backlog", key: "Open",width:80},
-                 { headerText: "Validated", key: "Validate", width: 80 },
-                 { headerText: "In Progress", key: "InProgress", width: 80 },
-                 { headerText: "Testing", key: "Testing",width:80},
-                 { headerText: "Done", key: "Close",width:70}
-             ],                                                           			
-             keyField: "Status",        
-             stackedHeaderRows: [{
-                 stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
-                     { headerText: "Resolved", column: "Testing,Done" }
-                 ]
-             }
-             ],       
-               fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-         });
-         });
-         </script>
-    
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+             {
+                 dataSource: data,
+                 columns: [
+                     { headerText: "Backlog", key: "Open", width: 80 },
+                     { headerText: "Validated", key: "Validate", width: 80 },
+                     { headerText: "In Progress", key: "InProgress", width: 80 },
+                     { headerText: "Testing", key: "Testing", width: 80 },
+                     { headerText: "Done", key: "Close", width: 70 }
+                 ],
+                 keyField: "Status",
+                 stackedHeaderRows: [{
+                     stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
+                         { headerText: "Resolved", column: "Testing,Done" }
+                     ]
+                 }
+                 ],
+                 fields: {
+                     primaryKey: "Id",
+                     content: "Summary",
+                 },
+             });
+    });
+    </script>
+
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.column `string`
@@ -4405,44 +4605,43 @@ Gets or sets a value that indicates the column for the particular stacked header
 
 {% highlight html %}
 
-     <div id="Kanban"></div>
+    <div id="Kanban"></div>
     <script type="text/javascript">
-	window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-            { Id: 5, Status: "Validate", Text: "Task 5", Assignee: "Andrew" },
-            
-	];
-    $(function() {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-         {
-             dataSource: data,						
-             columns: [
-                 { headerText: "Backlog", key: "Open",width:80},
-                 { headerText: "Validated", key: "Validate", width: 80 },
-                 { headerText: "In Progress", key: "InProgress", width: 80 },
-                 { headerText: "Testing", key: "Testing",width:80},
-                 { headerText: "Done", key: "Close",width:70}
-             ],                                                           			
-             keyField: "Status",        
-             stackedHeaderRows: [{
-                 stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
-                     { headerText: "Resolved", column: "Testing,Done" }
-                 ]
-             }
-             ],       
-              fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },					
-         });
-         });
-         </script>
-    
-  {% endhighlight %}
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+             {
+                 dataSource: data,
+                 columns: [
+                     { headerText: "Backlog", key: "Open", width: 80 },
+                     { headerText: "Validated", key: "Validate", width: 80 },
+                     { headerText: "In Progress", key: "InProgress", width: 80 },
+                     { headerText: "Testing", key: "Testing", width: 80 },
+                     { headerText: "Done", key: "Close", width: 70 }
+                 ],
+                 keyField: "Status",
+                 stackedHeaderRows: [{
+                     stackedHeaderColumns: [{ headerText: "Unresolved", column: "Backlog,Validated,In Progress" },
+                         { headerText: "Resolved", column: "Testing,Done" }
+                     ]
+                 }
+                 ],
+                 fields: {
+                     primaryKey: "Id",
+                     content: "Summary",
+                 },
+             });
+    });
+    </script>
+
+{% endhighlight %}
 
 ### tooltipSettings `object`
 {:#members:tooltipsettings}
@@ -4463,56 +4662,54 @@ To enable or disable the tooltip display.
 
 {% highlight html %}
 
-    <div id="Kanban">
-    </div>
+    <div id="Kanban"></div>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-                    tooltipSettings: {
-                        enable: true,
-						//template:"#tooltipTemp",
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                tooltipSettings: {
+                    enable: true,
+                },
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                },
+                fields: {
+                    primaryKey: "Id",
+                    content: "Text",
+                    title: "Id",
+                    tag: "Tags",
+                    color: "Type",
+                    imageUrl: "ImgUrl",
+                },
+                cardSettings: {
+                    colorMapping: {
+                        "#cb2027": "Issue,Story",
+                        "#67ab47": "Improvement",
+                        "#fbae19": "Epic",
+                        "#6a5da8": "UG",
                     },
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    keyField: "Status",
-                      fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-                    fields: {
-					  primaryKey: "Id",
-					  content: "Text",
-					  title: "Id",
-					  tag: "Tags",
-					  color: "Type",
-					  imageUrl: "ImgUrl",
-					},
-                    cardSettings: {
-                        colorMapping: {
-                            "#cb2027": "Issue,Story",
-                            "#67ab47": "Improvement",
-                            "#fbae19": "Epic",
-                            "#6a5da8": "UG",
-                      },
-                    },
-                });
-        });
+                },
+            });
+    });
     </script>
-    
-  {% endhighlight %}
+   
+{% endhighlight %}
   
 ### tooltipSettings.template `string`
 {:#members:tooltipsettings-template}
@@ -4527,86 +4724,81 @@ To customize the tooltip display based on your requirements.
 
 {% highlight html %}
 
-    <div id="kanban">
+    <div id="kanban"></div>
+    <script id="tooltipTemp" type="text/x-jsrender">
+    <div class='e-kanbantooltiptemp ' style="display: none">
+        <table>
+            <tr>
+                <td class="photo">
+                    <img src="{{:ImgUrl}}">
+                </td>
+
+                <td class="details">
+                    <table>
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="CardHeader">Name: </td>
+                                <td>{{:Assignee}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">Task: </td>
+                                <td>{{:Type}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </div>
-	 <script id="tooltipTemp" type="text/x-jsrender">
-        <div class='e-kanbantooltiptemp ' style=display:none>
-            <table>
-                <tr>
-                    <td class="photo">
-                        <img src="{{:ImgUrl}}">
-                    </td>
-
-                    <td class="details">
-                        <table>
-                            <colgroup>
-                                <col width="30%">
-                                <col width="70%">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td class="CardHeader">   Name: </td>
-                                    <td>{{:Assignee}}</td>
-                                </tr>
-                                <tr>
-                                    <td class="CardHeader">   Task: </td>
-                                    <td>{{:Type}}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
     </script>
     <script type="text/javascript">
-         window.kanbandata = [
-            { Id: 1, Status: "Open", Text: "Task 1",Type:"Epic", Assignee: "Nancy" },
-            { Id: 2, Status: "Open", Text: "Task 2",Type:"Story", Assignee: "Andrew" },
-            { Id: 3, Status: "InProgress", Text: "Task 3",Type:"Improvment", Assignee: "Andrew" },
-            { Id: 4, Status: "Testing", Text: "Task 4",Type:"Issue", Assignee: "Nancy" }
-        ];
-        $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#kanban").ejKanban(
-                {
-                    dataSource: data,
-                    tooltipSettings: {
-                        enable: true,
-						template:"#tooltipTemp",
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Type: "Epic", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Type: "Story", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Type: "Improvment", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task 4", Type: "Issue", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#kanban").ejKanban(
+            {
+                dataSource: data,
+                tooltipSettings: {
+                    enable: true,
+                    template: "#tooltipTemp",
+                },
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary",
+                    title: "Id",
+                    tag: "Tags",
+                    color: "Type",
+                    imageUrl: "ImgUrl",
+                },
+                cardSettings: {
+                    colorMapping: {
+                        "#cb2027": "Issue,Story",
+                        "#67ab47": "Improvement",
+                        "#fbae19": "Epic",
+                        "#6a5da8": "UG",
                     },
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    keyField: "Status",
-                    fields: {
-                      primaryKey: "Id",
-                      content: "Text",
-                    },	
-                    fields: {
-					  primaryKey: "Id",
-					  content: "Text",
-					  title: "Id",
-					  tag: "Tags",
-					  color: "Type",
-					  imageUrl: "ImgUrl",
-					},
-                    cardSettings: {
-                        colorMapping: {
-                            "#cb2027": "Issue,Story",
-                            "#67ab47": "Improvement",
-                            "#fbae19": "Epic",
-                            "#6a5da8": "UG",
-                      },
-                    },
-                });
-        });
+                },
+            });
+    });
     </script>
-  {% endhighlight %}
+    
+{% endhighlight %}
   
 ### locale `String`
 {:#members:locale}
@@ -4621,98 +4813,53 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 
 {% highlight html %}
 
-    <div id="Kanban"></div> 
+    <div id="Kanban"></div>
     <script>
-        window.kanbandata = [
-                { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-                { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-                { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-                { Id: 4, Status: "Testing", Text: "Task 4", Assignee: "Nancy" },
-                { Id: 5, Status: "Validate", Text: "Task 5", Assignee: "Andrew" }            
-            ];
-         ej.Kanban.locale["es-ES"] = {
-                EmptyCard: "No hay tarjetas para mostrar",
-                SaveButton: "guardar",
-                CancelButton: "cancelar",
-                EditFormTitle: "Detalles de ",
-                AddFormTitle: "Añadir nueva tarjeta",
-                SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} artículo {{else}} artículos {{/if}}",
-             };
-         $(function() {
-            var data = ej.DataManager(window.kanbandata);
-            $("#Kanban").ejKanban(
-                {
-                    dataSource: data,
-                    locale: "en-ES",
-                    columns: [
-                        { headerText: "Backlog", key: "Open" },
-                        { headerText: "In Progress", key: "InProgress" },
-                        { headerText: "Testing", key: "Testing" },
-                        { headerText: "Done", key: "Close" }
-                    ],
-                    keyField: "Status",
-                   fields: {
-                      primaryKey: "Id",
-                      swimlaneKey: "Assignee",
-                      content: "Text",
-                    },	
-                });
-         }); 
-     </script>         
-    
- {% endhighlight %}
+    window.kanbandata = [
+            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+            { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" }
+    ];
+    ej.Kanban.Locale["de-DE"] = {
+        EmptyCard: "Keine Karten angezeigt werden",
+        SaveButton: "Speichern",
+        CancelButton: "stornieren",
+        EditFormTitle: "Details von ",
+        AddFormTitle: "Neue Karte hinzufügen",
+        SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
+        FilterSettings: "Filter:",
+        FilterOfText: "Von",
+        Cards: "kaarten"
+        Max: "Max.",
+        Min: "Min."
+    };
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            locale: "de-DE",
+            columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress", constraints: { max: 2 } },
+                    { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            allowTitle: true,
+            fields: {
+                primaryKey: "Id",
+                swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+        });
+    });
+    </script>
+  
+{% endhighlight %}
 
 ## Methods
-
-### addCard(\[primaryKey\],\[card\])
-{:#methods:addcard}
-
-Add a new card in Kanban control.If parameters are not given default dialog will be open
-
- <table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">primaryKey</td>
-    <td class="type"><span class="param-type">string</span></td>
-    <td class="description last">Pass the primary key field Name of the column</td>
-    </tr>
-    <tr>
-    <td class="name">card</td>
-    <td class="type"><span class="param-type">array</span></td>
-    <td class="description last">Pass the edited JSON data of card need to be add.</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends an add new card request to the Kanban
-    kanbanObj.addCard(); 
-    </script>
-    
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>
-    // add new card to the Kanban
-     kanbanObj.addCard("2",{Id:2, Status: "Open", Text: "Task 1", Assignee: "Nancy" })     
-    </script>
-    
-{% endhighlight %}
 
 ### clearSearch()
 {:#methods:clearsearch}
@@ -4836,10 +4983,10 @@ Add or remove columns in Kanban columns collections
     
 {% endhighlight %}
 
-### cancelEdit()
-{:#methods:canceledit}
+### clearFilter()
+{:#methods:clearfilter}
 
-Send a cancel request of add/edit card in Kanban
+Send a clear request to filter cards in the kanban.
 
 #### Example
 
@@ -4848,18 +4995,8 @@ Send a cancel request of add/edit card in Kanban
     <script>
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a cancel request to the Kanban
-    kanbanObj.cancelEdit(); 
-    </script>
-    
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>
-    // Sends a cancel request to the Kanban
-    $("#Kanban").ejKanban("cancelEdit");        
+    // Sends clear request to filter the cards
+    kanbanObj.clearFilter();
     </script>
     
 {% endhighlight %}
@@ -4885,41 +5022,6 @@ Destroy the Kanban widget all events bound using this._on will be unbind automat
     <script>
     // destroy the Kanban
     $("#Kanban").ejKanban("destroy");        
-    </script>
-    
-{% endhighlight %}
-
-### deleteCard(Key)
-{:#methods:deletecard}
-
-Delete a card in Kanban control.
-
-<table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">Key</td>
-    <td class="type"><span class="param-type">string/number</span></td>
-    <td class="description last">Pass the key of card to be delete</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#kanban").data("ejKanban");
-    // Sends a delete card request to the Kanban
-    kanbanObj.deleteCard(2); 
     </script>
     
 {% endhighlight %}
@@ -4968,10 +5070,26 @@ Refresh the Kanban with new data source.
 
 {% endhighlight %}
 
-### endEdit()
-{:#methods:endedit}
+### filterCards()
+{:#methods:filtercards}
 
-Send a save request in Kanban when any card is in edit/new add card state.
+Send a filtering request to cards in the kanban.
+
+ <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">query</td><td class="type"><span class="param-type">object</span></td>
+    <td class="description last">Pass the query to the cards</td>
+    </tr>
+    </tbody>
+    </table>
 
 #### Example
 
@@ -4980,17 +5098,8 @@ Send a save request in Kanban when any card is in edit/new add card state.
     <script>
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a save request to the Kanban
-    kanbanObj.endEdit(); 
-    </script>
-    
-{% endhighlight %}
-
-{% highlight html %}
- 
-    <script>
-    // Sends a save request to the Kanban
-    $("#Kanban").ejKanban("endEdit");        
+    // Sends filtering request to the cards
+    kanbanObj.filterCards(new ej.Query().where("Assignee", "equal", "Janet Leverling"));
     </script>
     
 {% endhighlight %}
@@ -5031,7 +5140,6 @@ toggleColumn based on the headerText in Kanban.
       </script>
       
 {% endhighlight %}
-
 
 {% highlight html %}
  
@@ -5275,6 +5383,30 @@ String
     
 {% endhighlight %}
 
+### getHeaderTable()
+{:#methods:getheadertable}
+
+Get the table details based on the given header table in Kanban.
+
+#### Returns:
+
+{:#methods:returns:}
+
+String
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Gets the table details based on the given headerTable
+    kanbanObj.getHeaderTable(); 
+    </script>
+    
+{% endhighlight %}
+
 ### hideColumns(headerText)
 {:#methods:hidecolumns}
 
@@ -5449,112 +5581,6 @@ Send a search request to Kanban with specified string passed in it.
     
 {% endhighlight %}
 
-### setValidationToField(name, rules)
-{:#methods:setvalidationtofield}
-
-Method used for set validation to a field during editing.
-
-  <table class="params">
-     <thead>
-     <tr>
-     <th>Name</th>
-     <th>Type</th>
-     <th class="last">Description</th>
-     </tr>
-     </thead>
-     <tbody>
-     <tr>
-     <td class="name">name</td>
-    <td class="type"><span class="param-type">string</span></td>
-    <td class="description last">Specify the name of the column to set validation rules</td>
-    </tr>
-    <tr>
-    <td class="name">rules</td>
-    <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Specify the validation rules for the field</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-     <script>
-     // Create Kanban object.
-     var kanbanObj = $("#Kanban").data("ejKanban");
-     // It is used to set validation to a field during editing
-     kanbanObj.setValidationToField("Id", { required: true }); 
-     </script>
-     
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>
-    // It is used to set validation to a field during editing
-    $("#Kanban").ejKanban("setValidationToField", "Id", { required: true });
-    </script>
-    
-{% endhighlight %} 
-
-### startEdit($div or key)
-{:#methods:startedit}
-
-Send an edit card request in Kanban.Parameter will be HTML element or primary key
-
-  <table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">
-    $div
-    </td>
-    <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Pass the div selected row element to be edited in Kanban</td>
-    </tr>
-    <td class="name">
-    key
-    </td>
-    <td class="type"><span class="param-type">string/number</span></td>
-    <td class="description last">Pass the key element to be edited in Kanban</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends an edit card request to the Kanban
-    kanbanObj.startEdit($(".e-kanbancontent .e-kanbancard").first()); 
-    kanbanObj.startEdit(2); 
-    </script>
-
-{% endhighlight %}
-
-{% highlight html %}
- 
-    <script>
-    // Sends an edit card request to the Kanban
-    $("#Kanban").ejKanban("startEdit", ($(".e-kanbancontent .e-kanbancard").first());        
-    $("#Kanban").ejKanban("startEdit", 2);        
-    </script>
-    
-{% endhighlight %}
-
 ### showColumns(headerText)
 {:#methods:showcolumns}
 
@@ -5646,6 +5672,253 @@ Update a card in Kanban control based on key and JSON data given.
     </script>
     
 {% endhighlight %}
+
+### KanbanEdit
+{:#methods:kanbanedit}
+
+### KanbanEdit.addCard(\[primaryKey\],\[card\])
+{:#methods:kanbanedit-addcard}
+
+Add a new card in Kanban control.If parameters are not given default dialog will be open
+
+ <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">primaryKey</td>
+    <td class="type"><span class="param-type">string</span></td>
+    <td class="description last">Pass the primary key field Name of the column</td>
+    </tr>
+    <tr>
+    <td class="name">card</td>
+    <td class="type"><span class="param-type">array</span></td>
+    <td class="description last">Pass the edited JSON data of card need to be add.</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends an add new card request to the Kanban
+    kanbanObj.KanbanEdit.addCard(); 
+    </script>
+    
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+    <script>
+    // add new card to the Kanban
+     kanbanObj.KanbanEdit.addCard("2",{Id:2, Status: "Open", Text: "Task 1", Assignee: "Nancy" })     
+    </script>
+    
+{% endhighlight %}
+
+### KanbanEdit.cancelEdit()
+{:#methods:kanbanedit-canceledit}
+
+Send a cancel request of add/edit card in Kanban
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends a cancel request to the Kanban
+    kanbanObj.KanbanEdit.cancelEdit(); 
+    </script>
+    
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+    <script>
+    // Sends a cancel request to the Kanban
+    $("#Kanban").ejKanban("cancelEdit");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanEdit.deleteCard(Key)
+{:#methods:kanbanedit-deletecard}
+
+Delete a card in Kanban control.
+
+<table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">Key</td>
+    <td class="type"><span class="param-type">string/number</span></td>
+    <td class="description last">Pass the key of card to be delete</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#kanban").data("ejKanban");
+    // Sends a delete card request to the Kanban
+    kanbanObj.KanbanEdit.deleteCard(2); 
+    </script>
+    
+{% endhighlight %}
+
+### KanbanEdit.endEdit()
+{:#methods:kanbanedit-endedit}
+
+Send a save request in Kanban when any card is in edit/new add card state.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends a save request to the Kanban
+    kanbanObj.KanbanEdit.endEdit(); 
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <script>
+    // Sends a save request to the Kanban
+    $("#Kanban").ejKanban("endEdit");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanEdit.startEdit($div or key)
+{:#methods:kanbanedit-startedit}
+
+Send an edit card request in Kanban.Parameter will be HTML element or primary key
+
+  <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">
+    $div
+    </td>
+    <td class="type"><span class="param-type">object</span></td>
+    <td class="description last">Pass the div selected row element to be edited in Kanban</td>
+    </tr>
+    <td class="name">
+    key
+    </td>
+    <td class="type"><span class="param-type">string/number</span></td>
+    <td class="description last">Pass the key element to be edited in Kanban</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends an edit card request to the Kanban
+    kanbanObj.KanbanEdit.startEdit($(".e-kanbancontent .e-kanbancard").first()); 
+    kanbanObj.KanbanEdit.startEdit(2); 
+    </script>
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <script>
+    // Sends an edit card request to the Kanban
+    $("#Kanban").ejKanban("startEdit", ($(".e-kanbancontent .e-kanbancard").first());        
+    $("#Kanban").ejKanban("startEdit", 2);        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanEdit.setValidationToField(name, rules)
+{:#methods:kanbanedit-setvalidationtofield}
+
+Method used for set validation to a field during editing.
+
+  <table class="params">
+     <thead>
+     <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th class="last">Description</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+     <td class="name">name</td>
+    <td class="type"><span class="param-type">string</span></td>
+    <td class="description last">Specify the name of the column to set validation rules</td>
+    </tr>
+    <tr>
+    <td class="name">rules</td>
+    <td class="type"><span class="param-type">object</span></td>
+    <td class="description last">Specify the validation rules for the field</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+     <script>
+     // Create Kanban object.
+     var kanbanObj = $("#Kanban").data("ejKanban");
+     // It is used to set validation to a field during editing
+     kanbanObj.KanbanEdit.setValidationToField("Id", { required: true }); 
+     </script>
+     
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <script>
+    // It is used to set validation to a field during editing
+    $("#Kanban").ejKanban("setValidationToField", "Id", { required: true });
+    </script>
+    
+{% endhighlight %} 
 
 ## Events
 
@@ -5899,7 +6172,7 @@ Triggered for every Kanban action before its starts.
         <tr>
         <td class="name">requestType</td>
         <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns request type as "beginadd".</td>
+        <td class="description last">Returns request type as `beginadd`.</td>
         </tr>
         <tr>
         <td class="name">type</td>
@@ -7323,6 +7596,11 @@ Triggered when the card is Drop.
 <td class="name">draggedElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns dragged element.</td>
+</tr>
+<tr>
+<td class="name">draggedParent</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns previous parent of dragged element</td>
 </tr>
 <tr>
 <td class="name">data</td>

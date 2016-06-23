@@ -119,6 +119,65 @@ Sets the specified class to GroupButton wrapper element, which allows for custom
 
 {% endhighlight %}
 
+
+### dataSource `object`
+{:#members:datasource}
+
+
+To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.
+
+
+#### Default Value 
+
+
+
+
+* null
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+        <div id="groupButton">
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+        <script>
+
+            $("#groupButton").ejGroupButton({
+
+                groupButtonMode: "radiobutton",
+
+                dataSource: [
+
+                { text: "Day", contentType: "textonly" },
+
+                { text: "Week", contentType: "textonly" },
+
+                { text: "Work Week", contentType: "textonly" },
+
+                { text: "Month", contentType: "textonly", selected: "selected" },
+
+                { text: "Agenda", contentType: "textonly" }],
+
+                showRoundedCorner: true
+
+            });
+
+        </script>
+
+{% endhighlight %}
+
+
+
 ### enableRTL `boolean`
 {:#members:enablertl}
 
@@ -208,6 +267,87 @@ Used to enable or disable the ejGroupButton control.
     </script>
 {% endhighlight %}
 
+
+
+
+### fields `object'
+{:#members:fields}
+
+
+Gets or sets a value that indicates to display the values of the data
+
+
+### Default value
+
+
+
+* null
+
+
+### fields.contentType `enum|string`
+
+
+specifies the contentType of the button
+
+
+### fields.htmlAttribute `object`
+
+
+Specifies the htmlAttributes to the element
+ 
+ 
+### fields.imagePosition `enum|string`
+
+specifies the position of the image
+
+
+### fields.linkAttribute `object`
+ 
+ 
+ specifies the linkAttributes to the element
+ 
+ 
+ ### fields.prefixIcon `string`
+ 
+ specifies the prefixIcon of the element
+ 
+ 
+ ### fields.selected `boolean`
+ 
+ 
+ specifies the button is in selected state
+ 
+ 
+ ### fields.suffixIcon `string`
+ 
+ specifies the suffix Icon of the element
+ 
+ 
+ ### fields.text `string`
+ 
+ specifies the text in the button
+ 
+ 
+ ### fields.url `string`
+ 
+ specifies the URL of the button for navigation. 
+
+### Example
+
+{% endhighlight %}
+<script>
+$("#groupButton").ejGroupButton({
+    groupButtonMode: "radiobutton",
+    dataSource: [
+    { value: "Day", type: "textonly" },
+    { value: "Week", type: "textonly" },
+    { value: "Work Week", type: "textonly" },
+    { value: "Month", type: "textonly", selected: "selected" },
+    { value: "Agenda", type: "textonly" }],
+    fields : { contentType :"type", text:"value", selected: "selected" }
+  });
+ </script>     
+{% highlight html %}
 
 ### groupButtonMode `enum | string`
 {:#members:groupbuttonmode}
@@ -450,6 +590,53 @@ Vertical</td>
 
 
 
+### query `Object`
+{:#members:query}
+
+Query the dataSource from the table for Groupbutton
+
+#### Default Value:
+{:.param}
+
+* null
+
+
+{% highlight js %}
+
+        <script>
+
+            var dataManger = ej.DataManager({
+
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+
+            });
+
+            // Query creation
+
+            var query = ej.Query().from("Orders").take(6);
+
+            $(function () {
+
+                //  declaration 
+
+                $("#groupButton").ejGroupButton({
+
+                    dataSource: dataManger,
+
+                    fields: { text: "CustomerID" },
+
+                    query: query,
+
+                });
+
+            });
+
+        </script>
+
+{% endhighlight %}
+
+
+
 ### selectedItemIndex `number[] | string[]`
 {:#members:selecteditemindex}
 
@@ -654,7 +841,7 @@ Remove the selection state of the specified the button element from the GroupBut
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -963,7 +1150,7 @@ Returns the index value for specified button element in the GroupButton control.
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1012,7 +1199,7 @@ This method returns the list of active state button elements from the GroupButto
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 
@@ -1118,7 +1305,7 @@ Hide the specified button element from the ejGroupButton control.
 <tr>
 <td>
 element</td><td>
-JQuery</td><td>
+jQuery</td><td>
 Specific button element</td></tr>
 </table>
 

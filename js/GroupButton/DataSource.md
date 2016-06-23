@@ -40,7 +40,7 @@ Selected<br/><br/></td><td>
 Specifies the selection state of button item<br/><br/></td></tr>
 <tr>
 <td>
-url<br/><br/></td><td>
+URL<br/><br/></td><td>
 Used to include the URL tag to the button item<br/><br/></td></tr>
 <tr>
 <td>
@@ -51,6 +51,8 @@ It defines the HTML attributes such as class and styles for an button item.<br/>
 linkAttribute<br/><br/></td><td>
 It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
 </table>
+
+
 ## Local Data
 
 To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.

@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Toggle Button** in your ap
 
 ## Control structure
 
-The html checkbox element can be easily configured as **Essential JavaScript Toggle Button** control. The basic rendering of **Essential JavaScript Toggle Button** is achieved by using default functionality.
+The HTML checkbox element can be easily configured as **Essential JavaScript Toggle Button** control. The basic rendering of **Essential JavaScript Toggle Button** is achieved by using default functionality.
 
 ![](/js/ToggleButton/Getting-Started_images/Getting-Started_img1.png) 
 
@@ -27,7 +27,7 @@ The html checkbox element can be easily configured as **Essential JavaScript Tog
 
 
 
-Create an HTML file and paste the following template to html file for **ejToggleButton** creation.
+Create an HTML file and paste the following template to HTML file for **ejToggleButton** creation.
 
 {% highlight html %}
 

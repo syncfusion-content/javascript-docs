@@ -544,6 +544,7 @@ function bold(e){
 }
 </script>{% endhighlight %}
 
+
 ### items.badge `object`
 {:#members:items-badge}
 
@@ -631,6 +632,7 @@ $("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", typ
 
 
 ### items.sliderSettings `object`
+
 {:#members:items-sliderSettings}
 
 

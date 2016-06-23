@@ -90,6 +90,6 @@ PercentageTextBox at initial load
 
 ![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img2.png)
 
-PercentageTextBox with knockoutJS binding
+PercentageTextBox with KnockoutJS binding
 {:.caption}
 
