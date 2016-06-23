@@ -544,11 +544,8 @@ function bold(e){
 }
 </script>{% endhighlight %}
 
-<<<<<<< HEAD
-### items.badge `array`
-=======
+
 ### items.badge `object`
->>>>>>> development
 {:#members:items-badge}
 
 
@@ -634,11 +631,8 @@ $("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", typ
 </script>{% endhighlight %}
 
 
-<<<<<<< HEAD
-### items.sliderSettings `array`
-=======
 ### items.sliderSettings `object`
->>>>>>> development
+
 {:#members:items-sliderSettings}
 
 
