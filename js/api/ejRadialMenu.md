@@ -445,7 +445,7 @@ $("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField", imageUrl:"/Bol
 
 
 ### items.imageUrl `string`
-{:#members:items.imageUrl}
+{:#members:items-imageUrl}
 
 
 
@@ -474,7 +474,7 @@ $("#defaultradialmenu").ejRadialMenu({ items:[{ imageUrl:"/Bold.jpg"}] });
 
 
 ### items.text `string`
-{:#members:items.text}
+{:#members:items-text}
 
 
 Specifies the text of RadialMenu item. 
@@ -499,7 +499,7 @@ $("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField" }] });
 
 
 ### items.enabled `boolean`
-{:#members:items.enabled}
+{:#members:items-enabled}
 
 
 Specifies the enable state of RadialMenu item. 
@@ -544,7 +544,11 @@ function bold(e){
 }
 </script>{% endhighlight %}
 
+<<<<<<< HEAD
 ### items.badge `array`
+=======
+### items.badge `object`
+>>>>>>> development
 {:#members:items-badge}
 
 
@@ -566,7 +570,7 @@ $("#radialmenu").ejRadialMenu({ items:[{text:"Bold", enabled: true, badge.enable
 
 
 ### items.badge.enabled `boolean`
-{:#members:items-badge.enabled}
+{:#members:items-badge-enabled}
 
 
 Specifies whether to enable radialmenu item badge or not.
@@ -588,7 +592,7 @@ $("#radialmenu").ejRadialMenu({ items:[{text:"Bold", enabled: true, badge.enable
 
 
 ### items.badge.value `number`
-{:#members:items-badge.value}
+{:#members:items-badge-value}
 
 
 Specifies the value of radial menu item badge.
@@ -630,7 +634,11 @@ $("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", typ
 </script>{% endhighlight %}
 
 
+<<<<<<< HEAD
 ### items.sliderSettings `array`
+=======
+### items.sliderSettings `object`
+>>>>>>> development
 {:#members:items-sliderSettings}
 
 
@@ -654,7 +662,7 @@ $("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3, type
 
 
 ### items.sliderSettings.ticks `array`
-{:#members:items-sliderSettings.ticks}
+{:#members:items-sliderSettings-ticks}
 
 
 Specifies the sliderSettings ticks values of nested radial menu items.
@@ -677,7 +685,7 @@ $("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3, type
 
 
 ### items.sliderSettings.strokeWidth `number`
-{:#members:items-sliderSettings.strokeWidth}
+{:#members:items-sliderSettings-strokeWidth}
 
 
 Specifies the sliderSettings stroke Width value.
@@ -702,7 +710,7 @@ $("#radialmenu").ejRadialMenu({ items:[{badge.value:3, type:"slider", sliderSett
 
 
 ### items.sliderSettings.labelSpace `number`
-{:#members:items-sliderSettings.labelSpace}
+{:#members:items-sliderSettings-labelSpace}
 
 
 Specifies the value of sliderSettings labelSpace .
