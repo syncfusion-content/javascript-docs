@@ -508,6 +508,77 @@ You can change the color of a column by using the [`fill`](../api/ejchart.html#m
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img18.png)
 
+### Column width customization
+
+Width of the column type series can be customized by using the [`columnWidth`](../api/ejchart#members:series-columnwidth) property. Default value of [`columnWidth`](../api/ejchart#members:series-columnwidth) is 0.7. Value ranges from 0 to 1. Here 1 corresponds to 100% of available width and 0 corresponds to 0% of available width.
+
+N> Width of a column also depends upon the [`columnSpacing`](../api/ejchart#members:series-columnspacing) property, because [`columnSpacing`](../api/ejchart#members:series-columnSpacing) will reduce the space available for drawing a column. This is also applicable for StackingColumn, StackingColumn100, Bar, StackingBar, StackingBar100, RangeColumn, HiLo, HiLoOpenClose, Candle and Waterfall charts.
+
+{% highlight javascript %}
+
+    $('#container').ejChart({
+
+		//Common settings for all series
+		commonSeriesOptions: {
+    
+			//Width of columns in column type series
+			columnWidth: 0.7
+
+			//...        
+		},
+
+		//Settings specific to individual series
+		series: [{
+		
+			//Width of columns in column type series
+			columnWidth: 0.8
+
+			//... 
+		}],
+
+		//...
+
+	});	
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img86.png)
+
+### Spacing between column series
+
+Spacing between column type series can be customized using the [`columnSpacing`](../api/ejchart#members:series-columnspacing) property. Default value of [`columnSpacing`](../api/ejchart#members:series-columnspacing) is 0. Value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
+
+N> Column spacing will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width. This is also applicable for StackingColumn, StackingColumn100, Bar, StackingBar, StackingBar100, RangeColumn, HiLo, HiLoOpenClose, Candle and Waterfall charts.
+
+{% highlight javascript %}
+
+    $('#container').ejChart({
+
+		//Common settings for all series
+		commonSeriesOptions: {
+    
+			//Spacing between column series
+		columnSpacing: 0,
+
+			//...
+		},
+
+		//Settings specific to individual series
+		series: [{
+    
+			//Spacing between column series
+			columnSpacing: 0.2,
+	
+			//...
+		}],
+
+		//...
+
+	});
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img87.png)
 
 ## RangeColumn Chart
 
