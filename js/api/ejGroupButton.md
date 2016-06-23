@@ -270,7 +270,7 @@ Used to enable or disable the ejGroupButton control.
 
 
 
-### fields `object'
+### fields `object`
 {:#members:fields}
 
 
