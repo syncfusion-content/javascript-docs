@@ -922,51 +922,6 @@ Specifies the position where the new row has to be added.
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
 
 {% endhighlight %}
-
-### editSettings.beginEditAction `enum`
-{:#members:editsettings-begineditaction}
-<ts name = "ej.TreeGrid.BeginEditAction"/>
-
-Specifies the mouse action to begin the editing.             
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Click</td>
-<td class="description">you can edit a row in single click.</td>
-</tr>
-<tr>
-<td class="name">DblClick</td>
-<td class="description">you can edit a row in double click.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-
-* ej.TreeGrid.BeginEditAction.DblClick
-
-
-#### Example
-
-
-{% highlight html %}
-          
-<div id="treeGrid"></div> 
-<script>   
-        $("#treeGrid").ej.treeGrid({ editSettings:{beginEditAction : ej.TreeGrid.BeginEditAction.Click} });                      * 
-</script>           
-
-{% endhighlight %}
-
-
-
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -2056,47 +2011,6 @@ treegridObj.search("Plan"); // To search a Plan string in tree grid data
 </script>
 
 {% endhighlight %}
-
-### gotoPage(number)
-{:#methods:gotopage}
-
-To navigate to the specific page while paging is enabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">number</td>
-<td class="type">number</td>
-<td class="description">you pass a page number to navigate</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
- 
-<script>
-// Create Tree Grid object
-var treegridObj = $("#treegrid").data("ejTreeGrid");
-treegridObj.gotoPage(3);
-</script> 
-
-{% endhighlight %}
-
-
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
