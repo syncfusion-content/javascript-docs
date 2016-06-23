@@ -3477,7 +3477,7 @@ $("#treeView").ejTreeView("getText", $("#book"));
 
 
 
-### getTreeData(id)
+### getTreeData([id])
 {:#methods:gettreedata}
 
 To get the updated datasource of TreeView after performing some operation like drag and drop, node editing, adding and removing node.
