@@ -334,7 +334,7 @@ specifies the position of the image
 
 ### Example
 
-{% endhighlight %}
+{% highlight html %}
 <script>
 $("#groupButton").ejGroupButton({
     groupButtonMode: "radiobutton",
@@ -347,7 +347,7 @@ $("#groupButton").ejGroupButton({
     fields : { contentType :"type", text:"value", selected: "selected" }
   });
  </script>     
-{% highlight html %}
+{% endhighlight %}
 
 ### groupButtonMode `enum | string`
 {:#members:groupbuttonmode}
