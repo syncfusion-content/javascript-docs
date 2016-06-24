@@ -434,7 +434,7 @@ To allow keyboard navigation actions.
 
 #### Default Value:
 
-* true
+* false
 
 #### Example
 
@@ -1996,7 +1996,7 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
 
 #### Default Value:
 
-* null
+* ""
 
 #### Example
 
@@ -2039,14 +2039,14 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
 
 {% endhighlight %}
  
- ### dataSource `object`
+### dataSource `object`
 {:#members:datasource}
 
 Gets or sets the data to render the Kanban with card.
 
 #### Default Value:
 
-* Object
+* null
  
 #### Example
 
@@ -2147,7 +2147,7 @@ To show Total count of cards in each column
     
 #### Default Value:
 
-* true
+* false
 
 #### Example
 
@@ -3555,7 +3555,7 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 
 #### Default Value:
 
-* null
+* 0
 
 #### Example
 
@@ -3801,7 +3801,7 @@ ej Query to query database of Kanban.
 
 #### Default Value:
 
-* Object
+* null
 
 #### Example
 
@@ -3844,7 +3844,7 @@ To change the key in keyboard interaction to Kanban control.
 
 #### Default Value
 
-* Object
+* null
 
 #### Example
 
@@ -3964,7 +3964,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
 
 #### Default Value:
 
-* null
+* 0
 
 #### Example
 
@@ -4014,7 +4014,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
 
 #### Default Value:
 
-* null
+* auto
 
 #### Example
 
@@ -4224,7 +4224,7 @@ To customize the searching string.
 
 #### Default Value:
 
-* null
+* ""
 
 #### Example
 
@@ -4276,7 +4276,7 @@ To customize the operator based on searching.
 
 #### Default Value:
 
-* null
+* contains
 
 #### Example
 
@@ -5454,6 +5454,43 @@ Hide columns from the Kanban based on the header text
     </script>
     
 {% endhighlight %}
+
+
+### print()
+{:#methods:print}
+
+Print the Kanban Board
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div> 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // It prints the kanban board.
+    kanbanObj.print(); 
+    </script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>; 
+    <script>
+    // It prints the kanban board.
+    $("#Kanban").ejKanban("print");        
+    </script>
+{% endhighlight %}
+
 
 ### refreshTemplate()
 {:#methods:refreshtemplate}
