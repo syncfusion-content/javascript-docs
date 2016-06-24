@@ -14339,6 +14339,21 @@ Triggered when toolbar item is clicked in grid.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the toolbar object of the selected toolbar element.</td>
 </tr>
+<tr>
+<td class="name">itemId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the Id of the current toolbar element.</td>
+</tr>
+<tr>
+<td class="name">itemIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the index of the current toolbar element.</td>
+</tr>
+<tr>
+<td class="name">itemName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the current toolbar element.</td>
+</tr>
 </tbody>
 </table>
 </td>
