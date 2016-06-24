@@ -797,10 +797,18 @@ Used  the required fields for special Dates in DatePicker in order to customize 
  
 <input type="text" id="datepicker" />
 <script>
-//To set fields API value during initialization         
+//To set fields API value during initialization     
+var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
+spldays = [
+           { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
+           { date: new Date(year, month, 21), tooltip: "In France", iconClass: "flags sprite-France" },
+           { date: new Date(year, month, 17), tooltip: "In USA", iconClass: "flags sprite-USA" },
+           { date: new Date(year, month + 1, 15), tooltip: "In Germany", iconClass: "flags sprite-Germany" },
+           { date: new Date(year, month - 1, 22), tooltip: "In India", iconClass: "flags sprite-India" },
+]
 // declaration
 $("#datepicker").ejDatePicker({ 
-specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",iconClass:"iconClass"}});
+specialDates: spldays, fields: {date:"date",tooltip:"tooltip",iconClass:"iconClass"}});
 </script>{% endhighlight %}
 
 
@@ -1684,9 +1692,17 @@ Specifies the special dates in DatePicker.
  
 <input type="text" id="datepicker" />
 <script>
-//To set specialDates API value during initialization             
+//To set specialDates API value during initialization
+var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
+spldays = [
+           { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
+           { date: new Date(year, month, 21), tooltip: "In France", iconClass: "flags sprite-France" },
+           { date: new Date(year, month, 17), tooltip: "In USA", iconClass: "flags sprite-USA" },
+           { date: new Date(year, month + 1, 15), tooltip: "In Germany", iconClass: "flags sprite-Germany" },
+           { date: new Date(year, month - 1, 22), tooltip: "In India", iconClass: "flags sprite-India" },
+]
 // declaration
-$("#datepicker").ejDatePicker({specialDates:window.spldays});
+$("#datepicker").ejDatePicker({specialDates: spldays});
 </script>{% endhighlight %}
 
 
