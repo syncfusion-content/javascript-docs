@@ -107,7 +107,7 @@ The following code example depicts the way to generate the recurrence rule.
              this.element.find("#recurrencetype_wrapper").css("width", "33%");
          }
         function closerecurrence() {
-            var obj = $(".e-recurrenceeditor").data("ejRecurrenceEditor")
+            var obj = $("#RecurrenceEditor").data("ejRecurrenceEditor")
             obj.getRecurrenceRule();
             alert(obj._recRule);
         }
