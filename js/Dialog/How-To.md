@@ -128,3 +128,77 @@ Initialize both the Dialog widgets by adding the script section as below.
 
 
 {% endhighlight %}
+
+
+
+## Create Confirmation Dialog with Footer option.
+
+Essential JS library supports Alert Dialog widgets.
+
+Using `showFooter` property to render Alert Dialog with Footers in Dialog widget.
+
+Initialize the Dialog widget using the below code.
+
+{% highlight html %}
+
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <input class="e-btn" id="btnOpen" value="Click to open dialog" />
+                <div class="control">
+                    <div id="basicDialog" title="Confirmation Dialog">
+                        Do you really leave the session?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+Initialize Footer in Dialog widgets by adding the script section in JSrender as below.
+
+{% highlight javascript %}
+
+    <script id="sample" type="text/x-jsrender">
+    <div class="footerspan" style="float:right">
+      <button id='btn1'>Ok</button>
+      <button id='btn2'>Cancel</button>
+    </div>
+    <div class="condition" style="float:left; margin-left:15px">
+    <input type="check" id="check1"></div>
+    </script>
+   
+
+{% endhighlight %}
+
+Add the below script to render the Dialog widget.
+
+{% highlight javascript %}
+	
+        $(window).load(function () {
+            // declaration
+            $("#basicDialog").ejDialog({               
+                close: "onDialogClose",
+                target: ".control",
+                showFooter: true,
+                footerTemplateId: "sample"
+            });
+			$("#check1").ejCheckBox({text:"Dont ask me this again"})
+            $("#btnOpen").ejButton({ size: "medium", click: "onOpen", type: "button", height: 30, width: 150 });           
+			$("#btn1").ejButton({ size:"mini",height: 30, width: 70});
+			$("#btn2").ejButton({ size:"mini",height: 30, width: 70});
+        });
+       
+        function onDialogClose(args) {
+            $("#btnOpen").show();
+        }
+        function onOpen() {
+            $("#btnOpen").hide();
+            $("#basicDialog").ejDialog("open");
+        }
+    </script>
+
+{% endhighlight %}
+
+![Create Alert Dialog](how-to_images\dialog-footer1.png)
