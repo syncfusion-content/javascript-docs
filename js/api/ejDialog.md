@@ -797,6 +797,45 @@ Example
 
 {% endhighlight %}
 
+
+### showFooter `Boolean`
+{:#members:showfooter}
+
+Sets the Footer for the Dialog widget.
+
+Default Value:
+{:.param} 
+ false
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejDialog({showFooter: true }); 
+
+{% endhighlight %}
+
+
+### footerTemplateId `String`
+{:#members:footertemplateid}
+
+Sets the FooterTemplate for the Dialog widget.
+
+Default Value:
+{:.param} 
+ null
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejDialog({showFooter: true,footerTemplateId:"sample"}); 
+
+{% endhighlight %}
+
+
 ## Methods
 
 ### close<span class="signature">()</span>
@@ -1811,6 +1850,62 @@ $("#dialog").ejDialog({
 	actionButtons: ["close","collapse","expand"], 
 
 	collapse: function (args) {} 
+
+}); 
+
+{% endhighlight %}
+
+
+###actionButtonClick
+{:#events:actionbuttonclick}
+
+Triggered when the custom action button clicked.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+buttonID</td><td>
+string</td><td>
+Name of the event target attribute.</td></tr>
+<tr>
+<td>
+type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+model</td><td><ts ref="ej.Dialog.Model"/>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+currentTarget</td><td>
+string</td><td>
+Name of the event currenttarget title.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+
+{% highlight javascript %}
+
+$("#dialog").ejDialog({ 
+
+	actionButtonClick:"playMedia",
+
+	playMedia: function (args) {} 
 
 }); 
 
