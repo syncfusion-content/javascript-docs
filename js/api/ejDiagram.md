@@ -2246,16 +2246,16 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape `Object`
 {:#members:connectors-shape}
 
-Defines the shape and flow of the connector.
+Defines the role/meaning of the connector
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.ConnectorShape()
+* null
 
 ### connectors.shape.type `enum`
 {:#members:connectors-shape-type}
 
-<ts name = "ej.datavisualization.Diagram.BPMNShapes">
+<ts name = "ej.datavisualization.Diagram.ConnectorShapes">
 
 Sets the type of the connector
 
@@ -2269,18 +2269,18 @@ Sets the type of the connector
     <tbody>
         <tr>
             <td class="name">BPMN</td>
-            <td class="description last">Used to specify connector shape as BPMN</td>
+            <td class="description last">Used to specify connector type as BPMN</td>
        </tr>
         <tr>
             <td class="name">Classifier</td>
-            <td class="description last">Used to specify connector shape as Classifier</td>
+            <td class="description last">Used to specify connector type as Classifier</td>
        </tr>
       </tbody>
 </table>
 
 #### Default Value:
 
-* ej.dataVisualization.Diagram.BPMNShapes()
+* ej.dataVisualization.Diagram.ConnectorShapes.BPMN
 
 #### Example
 
@@ -2301,7 +2301,7 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 
 <ts name = "ej.datavisualization.Diagram.BPMNFlows"/>
 
-Sets the type of the BPMN flows.
+Sets the type of the flow in a BPMN Process
 
 <table class="props">
     <thead>
@@ -2344,7 +2344,7 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 
 {% endhighlight %}
 
-### connectors.shape.flow.association `enum`
+### connectors.shape.association `enum`
 {:#members:connectors-shape-flow-association}
 
 <ts name = "ej.datavisualization.Diagram.AssociationFlows"/>
@@ -2392,8 +2392,8 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 
 {% endhighlight %}
 
-### connectors.shape.flow.message `enum`
-{:#members:connectors-shape-flow-message}
+### connectors.shape.message `enum`
+{:#members:connectors-shape-message}
 
 <ts name = "ej.datavisualization.Diagram.BPMNMessageFlows"/>
 
@@ -2441,7 +2441,7 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 {% endhighlight %}
 
 ### connectors.shape.sequence `enum`
-{:#members:connectors-shape-flow-sequence}
+{:#members:connectors-shape-sequence}
 
 <ts name = "ej.datavisualization.Diagram.BPMNSequenceFlows"/>
 
@@ -4411,7 +4411,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 ### nodes.annotation `Object`
 {:#members:nodes-annotation}
 
-Defines the angle, direction, height, length, text, width of BPMN annotation
+Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
 
 #### Default Value:
 
@@ -4463,7 +4463,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection">
     
-Sets the direction for the BPMN annotation
+Sets the direction of the text annotion
 
 <table class="props">
     <thead>
@@ -4516,7 +4516,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.annotation.height `Number
 {:#members:nodes-annotation-height}
 
-Sets the height of the text in BPMN annotation 
+Sets the height of the text annotation
 			
 #### Default Value:
 
@@ -4543,7 +4543,7 @@ Sets the distance between the BPMN shape and the annotation
 			
 #### Default Value:
 
-* undefined
+* 0
 
 #### Example
 
@@ -4564,7 +4564,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.annotation.text `String`
 {:#members:nodes-annotation-width}
 
-Sets the text for the BPMN annotation 
+Defines the additional information about the flow object in a BPMN Process
 			
 #### Default Value:
 
@@ -4589,7 +4589,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.annotation.width `Number`
 {:#members:nodes-annotation-width}
 
-Sets the  width of the text in BPMN annotation 
+Sets the  width of the text annotation
 			
 #### Default Value:
 
@@ -8398,7 +8398,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess `Object`
 {:#members:nodes-subprocess}
 
-Defines the sub process of a BPMN Activity. Applicable, if the type of the bpmn activity is sub process.
+Defines a sub process in a BPMN Process. Applicable, if the object is a BPMN Activity
 
 #### Default Value:
 
@@ -8545,7 +8545,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts ref = "ej.datavisualization.Diagram.BPMNEvents"/>
 
-Sets the bpmn subprocess is triggered as a event.
+Sets the type of the event by which the sub-process will be triggered
 
 #### Default Value:
 
@@ -8570,7 +8570,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.events `array`
 {:#members:nodes-subprocess-events}
 
-Defines the events type of a sub process.
+Defines the collection of events that need to be appended witha BPMN Sub-Process
 
 #### Default Value:
 
@@ -8654,7 +8654,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts ref = "ej.datavisualization.Diagram.BPMNTriggers">
 
-Defines the trigger type of a sub process.
+Defines the type of the event trigger
 
 #### Default Value:
 
@@ -8682,7 +8682,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts name = "ej.datavisualization.Diagram.BPMNSubProcessTypes"/>
 
-Defines the type of a sub process.
+Defines the type of a sub process
 
 <table class="props">
     <thead>
