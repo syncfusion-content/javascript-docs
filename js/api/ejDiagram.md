@@ -8398,7 +8398,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess `Object`
 {:#members:nodes-subprocess}
 
-Defines a sub process in a BPMN Process. Applicable, if the object is a BPMN Activity
+Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process.
 
 #### Default Value:
 
