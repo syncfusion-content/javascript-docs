@@ -18,10 +18,6 @@ The below table lists out the keys with corresponding texts in English culture.
 
         ej.FileExplorer.Locale["en-US"] = {
 		
-		    EmptyResult:"No items match your search",
-			
-			EmptyFolder: "This folder is empty",
-           
 		    Back: "Backward",
 
             Forward: "Forward",
@@ -55,6 +51,10 @@ The below table lists out the keys with corresponding texts in English culture.
             Open: "Open",
 
             Search: "Search",
+			
+			EmptyResult:"No items match your search",
+			
+			EmptyFolder: "This folder is empty",
 
             NewFolder: "New Folder",
 
@@ -202,10 +202,6 @@ You can customize built-in text and messages based on your culture. The below ex
 
         ej.FileExplorer.Locale["de-DE"] = {
 		   
-		    EmptyResult: "Keine Artikel entsprechen Ihrer Suche nach",
-           
-		    EmptyFolder:"Dieser Ordner ist leer",
-
             Back: "rückwärts",
 
             Forward: "Nach Vorne",
@@ -239,6 +235,10 @@ You can customize built-in text and messages based on your culture. The below ex
             Open: "geöffnet",
 
             Search: "Suche",
+			
+			EmptyResult: "Keine Artikel entsprechen Ihrer Suche nach",
+			
+			EmptyFolder:"Dieser Ordner ist leer",
 
             NewFolder: "neuer Ordner",
 
