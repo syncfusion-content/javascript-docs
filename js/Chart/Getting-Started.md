@@ -45,7 +45,7 @@ Add a *div* container to render the chart.
 <!DOCTYPE html>
 <html>
 <body>
-      <div id=”chartcontainer” style="width: 820px; height: 500px;"></div>
+      <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
 </body>
 </html>
 
@@ -143,7 +143,7 @@ Now, map the month and sales values in the data source to the line series by set
 ![](/js/Chart/Getting-Started_images/Getting-Started_img2.png)
 
 
-Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the [`labelFormat`](../api/ejchart#members:primaryxaxis-labelformat) option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
+Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the "${value}K" to the [`labelFormat`](../api/ejchart#members:primaryxaxis-labelformat) option of the axis. Here, {value} acts as a placeholder for each axis label, "$" and "K" are the actual prefix and suffix added to each axis label. 
 
 The following code example illustrates this,
 
@@ -213,7 +213,7 @@ There are situations where the default label content is not sufficient to the us
 
 {% endhighlight %}
 
-The above HTML template is used as a template for each data label. Here, “point.x” and “point.y” are the placeholder text used to display the corresponding data point’s x & y value.
+The above HTML template is used as a template for each data label. Here, "point.x" and "point.y" are the placeholder text used to display the corresponding data point’s x & y value.
 
 The following code example shows how to set the id of the above template to [`template`](../api/ejchart#members:series-marker-datalabel-template) option,
 

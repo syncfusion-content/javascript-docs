@@ -17,7 +17,7 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
             series:[{
                   trendlines: [{
                        //Enable Trendline to chart series
-                       visibility: “visible”, type: “linear”
+                       visibility: "visible", type: "linear"
                      }],
                 //...
               }]          

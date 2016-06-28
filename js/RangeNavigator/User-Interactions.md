@@ -52,9 +52,9 @@ To customize the highlighted intervals, use color, border and opacity options in
                     // enable the highlight settings
                     enable: true,         
                     // customizing style
-                    color: ‘#006fa0’,       
+                    color: '#006fa0',       
                     border:{
-                        color: ‘red’ , width: 2
+                        color: 'red' , width: 2
                       }        
               }
               //...
@@ -111,9 +111,9 @@ To customize the selected intervals, use color, border and opacity options in th
                     // enable the selection settings
                     enable: true,         
                     // customizing style
-                    color: ‘#27e8e5’,       
+                    color: '#27e8e5',       
                     border:{
-                         color: ‘red’ , width: 2
+                         color: 'red' , width: 2
                        }
                   //...
               }

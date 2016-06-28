@@ -500,7 +500,7 @@ You can set three different highlight mode for the highlighting data point and s
 
 **Series mode**
 
-To highlight all the data points of the specified series, you can set the **“series”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option in the highlightSettings. 
+To highlight all the data points of the specified series, you can set the **"series"** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option in the highlightSettings. 
 
 
 {% highlight javascript %}
@@ -532,7 +532,7 @@ To highlight all the data points of the specified series, you can set the **“s
 
 **Point mode**
 
-To highlight a single point, you can set the **“point”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
+To highlight a single point, you can set the **"point"** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight javascript %}
 
@@ -563,7 +563,7 @@ To highlight a single point, you can set the **“point”** value to the [`mode
 
 **Cluster mode**
 
-To highlight the points that corresponds to the same index in all the series, set the **“cluster”** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
+To highlight the points that corresponds to the same index in all the series, set the **"cluster"** value to the [`mode`](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight javascript %}
 
