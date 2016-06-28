@@ -5022,14 +5022,14 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 ### nodes.data `Object`
 {:#members:nodes-data}
  
-Sets the type of the BPMN Data.
+Defines the BPMN data object
 
 ### nodes.data.type `enum`
 {:#members:nodes-data-type}
 
 <ts name = "ej.datavisualization.Diagram.BPMNDataObjects"/>
  
-Sets the type of the BPMN Data. Applicable, if the node shape is a BPMN dataObject.
+Sets the type of the BPMN Data object
 
 <table class="props">
     <thead>
@@ -5041,15 +5041,15 @@ Sets the type of the BPMN Data. Applicable, if the node shape is a BPMN dataObje
     <tbody>
         <tr>
             <td class="name">Input</td>
-            <td class="description last">Used to set BPMN data type as Input</td>
+            <td class="description last">Used to notate the Input type BPMN data object</td>
        </tr>
         <tr>
             <td class="name">Output</td>
-            <td class="description last">Used to set BPMN data type as Output</td>
+            <td class="description last">Used to notate the Output type BPMN data object</td>
        </tr>
         <tr>
             <td class="name">None</td>
-            <td class="description last">Used to set BPMN data type as None</td>
+            <td class="description last">Used to set BPMN data object type as None</td>
        </tr>
     </tbody>
 </table>
