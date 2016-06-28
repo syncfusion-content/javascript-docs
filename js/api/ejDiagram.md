@@ -4727,28 +4727,6 @@ $("#diagramcontent").ejDiagram({ nodes:[group] });
 
 {% endhighlight %}
 
-### nodes.collection `Boolean`
-{:#members:nodes-collection}
-
-Defines whether the BPMN data object is a collection or not
-
-#### Default Value:
-
-* false
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{name:"dataobject", type: "bpmn", shape:"dataObject", collection: true, width:50, height: 50, offsetX:100, offsetY:100}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
 ### nodes.connectorPadding `Number`
 {:#members:nodes-connectorpadding}
 
@@ -5041,12 +5019,17 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.dataobject `enum`
-{:#members:nodes-dataobjects}
+### nodes.data `Object`
+{:#members:nodes-data}
+ 
+Sets the type of the BPMN Data.
+
+### nodes.data.type `enum`
+{:#members:nodes-data-type}
 
 <ts name = "ej.datavisualization.Diagram.BPMNDataObjects"/>
  
-Sets the type of the BPMN DataObject. Applicable, if the node is a BPMN dataobject.
+Sets the type of the BPMN Data. Applicable, if the node shape is a BPMN dataObject.
 
 <table class="props">
     <thead>
@@ -5058,22 +5041,22 @@ Sets the type of the BPMN DataObject. Applicable, if the node is a BPMN dataobje
     <tbody>
         <tr>
             <td class="name">Input</td>
-            <td class="description last">Used to set BPMN dataobject as Input</td>
+            <td class="description last">Used to set BPMN data type as Input</td>
        </tr>
         <tr>
             <td class="name">Output</td>
-            <td class="description last">Used to set BPMN dataobject as Output</td>
+            <td class="description last">Used to set BPMN data type as Output</td>
        </tr>
         <tr>
             <td class="name">None</td>
-            <td class="description last">Used to set BPMN dataobject as None</td>
+            <td class="description last">Used to set BPMN data type as None</td>
        </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.BPMNDataObject.Collection
+* ej.datavisualization.Diagram.BPMNDataObject.None
 
 #### Example
 
@@ -5083,6 +5066,28 @@ Sets the type of the BPMN DataObject. Applicable, if the node is a BPMN dataobje
 <script>
 var nodes;
 nodes=[{name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input }, width:50, height: 50, offsetX:100, offsetY:100}];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.data.collection `Boolean`
+{:#members:nodes-data-collection}
+
+Defines whether the BPMN data object is a collection or not
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input, collection: false }, width:50, height: 50, offsetX:100, offsetY:100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
