@@ -17,8 +17,12 @@ The below table lists out the keys with corresponding texts in English culture.
 {% highlight javascript %}
 
         ej.FileExplorer.Locale["en-US"] = {
-
-            Back: "Backward",
+		
+		    EmptyResult:"No items match your search",
+			
+			EmptyFolder: "This folder is empty",
+           
+		    Back: "Backward",
 
             Forward: "Forward",
 
@@ -197,6 +201,10 @@ You can customize built-in text and messages based on your culture. The below ex
 {% highlight javascript %}
 
         ej.FileExplorer.Locale["de-DE"] = {
+		   
+		    EmptyResult: "Keine Artikel entsprechen Ihrer Suche nach",
+           
+		    EmptyFolder:"Dieser Ordner ist leer",
 
             Back: "rückwärts",
 
