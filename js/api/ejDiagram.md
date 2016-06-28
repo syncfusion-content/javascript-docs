@@ -4562,7 +4562,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 {% endhighlight %}
 
 ### nodes.annotation.text `String`
-{:#members:nodes-annotation-width}
+{:#members:nodes-annotation-text}
 
 Defines the additional information about the flow object in a BPMN Process
 			
@@ -5056,7 +5056,7 @@ Sets the type of the BPMN Data. Applicable, if the node shape is a BPMN dataObje
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.BPMNDataObject.None
+* ej.datavisualization.Diagram.BPMNDataObjects.None
 
 #### Example
 
