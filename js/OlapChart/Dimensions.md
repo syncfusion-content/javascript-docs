@@ -3,7 +3,7 @@ layout: post
 title: Dimensions
 description: dimensions
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -11,13 +11,13 @@ documentation: ug
 
 ##Set size in percentage
 
-You can customize the OlapChart dimension by setting the width and height of the widget in percentage.
+You can customize the PivotChart dimension by setting the width and height of the widget in percentage.
 
 {% highlight javascript %}
 
 $(function () {
-   $("#OlapChart1").ejOlapChart({
-       url: "../wcf/OlapChartService.svc", 
+    $("#PivotChart1").ejPivotChart(
+       ....
        //Setting size to Chart container
        size: {
          height: "80%",
@@ -30,15 +30,15 @@ $(function () {
 
 ##Set size in pixels
 
-You can customize the OlapChart dimension by setting the width and height of the widget in pixels.
+You can customize the PivotChart dimension by setting the width and height of the widget in pixels.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         //Setting size to Chart container
         size:
         {
@@ -54,13 +54,13 @@ $(function()
 
 ##Responsive
 
-OlapChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapChart by setting [`isResponsive`](/js/api/ejolapchart#members:isresponsive) property to true.
+PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/js/api/ejolapchart#members:isresponsive) property to true.
 
 {% highlight javascript %}
 
 $(function () {
-   $("#OlapChart1").ejOlapChart({
-       url: "../wcf/OlapChartService.svc", 
+    $("#PivotChart1").ejPivotChart(
+       .... 
        //Enable responsiveness to change the Chart size dynamically.
        isResponsive: true,
        size: {
