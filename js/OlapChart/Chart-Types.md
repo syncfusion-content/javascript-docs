@@ -3,21 +3,18 @@ layout: post
 title: Chart-Types
 description: chart types
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 # Chart Types
 
-Essential **OlapChart JS** supports 14 different types of chart as follows:
+Essential **PivotChart JS** supports 17 different types of chart as follows:
 
    * Column
    * Stacking Column
    * Bar
    * Stacking Bar
-   * Pie
-   * Pyramid
-   * Funnel
    * Line
    * Step Line
    * Spline
@@ -25,31 +22,30 @@ Essential **OlapChart JS** supports 14 different types of chart as follows:
    * Step Area
    * Spline Area
    * Stacking Area
+   * Pie
+   * Doughnut
+   * Pyramid
+   * Funnel
+   * Scatter
+   * Bubble
 
 ## Column Chart
 
 **Column Chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight javascript %}
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    }
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Column
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
+    
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Column
+        }
+    });
 {% endhighlight %}
 
 The following screenshot displays a **Column Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img1.png) 
+![](Chart-Types_images/ColumnChart.png)
 
 ## Stacking Column Chart
 
@@ -57,25 +53,17 @@ The following screenshot displays a **Column Chart**.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.StackingColumn
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.StackingColumn
+        }
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Stacking Column Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img2.png) 
+![](Chart-Types_images/StackingColumnChart.png)
 
 ## Bar Chart
 
@@ -83,26 +71,17 @@ The **Bar Chart** displays horizontal bars for each point in the series and poin
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Bar
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Bar
+        }
+    });
 {% endhighlight %}
 
 The following screenshot displays a **Bar Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img3.png) 
+![](Chart-Types_images/BarChart.png)
 
 ## Stacking Bar Chart
 
@@ -110,104 +89,17 @@ The following screenshot displays a **Bar Chart**.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.StackingBar
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.StackingBar
+        }    
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Stacking Bar Chart.**
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img4.png) 
-
-## Pie Chart
-
-A **Pie chart** is used to summarize a set of categorical data or displaying different values of a given variable (e.g., percentage distribution). This type of chart is a circle divided into a series of segments. Each segment represents a particular category.
-
-{% highlight javascript %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Pie
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-
-{% endhighlight %}
-
-The following screenshot displays a **Pie Chart**.
-
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img5.png) 
-
-## Pyramid Chart
-
-The **Pyramid Chart** type displays the data in the form of a triangle. It helps you to visualize data in a hierarchical structure without any axes.
-
-{% highlight javascript %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Pyramid
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-{% endhighlight %}
-
-The following screen shot displays the **Pyramid Chart.**
-
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img6.png) 
-
-## Funnel Chart
-
-The **Funnel Chart**  type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
-
-{% highlight javascript %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Funnel
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-{% endhighlight %}
-
-The following screen shot displays the **Funnel Chart.**
-
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img14.png) 
+![](Chart-Types_images/StackingBarChart.png) 
 
 ## Line Chart
 
@@ -215,25 +107,17 @@ The **Line Chart** joins the data points on a plot using straight lines that sho
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Line
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Line
+        }  
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Line Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img7.png) 
+![](Chart-Types_images/LineChart.png)
 
 ## Step Line Chart
 
@@ -241,52 +125,35 @@ The following screenshot displays the **Line Chart**.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.StepLine
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.StepLine
+        }
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Step Line Chart.**
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img8.png) 
+![](Chart-Types_images/StepLineChart.png)
 
 ## Spline Chart
 
-The **Spline Chart** is similar to line charts except it connects different data points using curve lines instead of straight lines.
+The **Spline Chart** is similar to line chart where as it connects different data points using curved lines instead of straight lines.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Spline
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Spline
+        }   
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Spline Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img9.png) 
+![](Chart-Types_images/SplineChart.png)
 
 ## Area Chart
 
@@ -294,26 +161,17 @@ The following screenshot displays the **Spline Chart**.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-     },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.Area
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Area
+        }   
+    });
 {% endhighlight %}
 
 The following screenshot displays the **Area Chart**.
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img10.png) 
+![](Chart-Types_images/AreaChart.png)
 
 ## Step Area Chart
 
@@ -321,25 +179,17 @@ The following screenshot displays the **Area Chart**.
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.StepArea
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.StepArea
+        }   
+    });
 {% endhighlight %}
 
 The following screenshot displays a **Step Area Chart.**
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img11.png) 
+![](Chart-Types_images/StepAreaChart.png)
 
 ## Spline Area Chart
 
@@ -347,26 +197,17 @@ The following screenshot displays a **Step Area Chart.**
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.SplineArea
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }    
-});
-
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.SplineArea
+        }    
+    });
 {% endhighlight %}
 
 The following Screenshot displays a **Spline Area Chart.**
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img12.png) 
+![](Chart-Types_images/SplineAreaChart.png)
 
 ## Stacking Area Chart
 
@@ -374,26 +215,125 @@ The following Screenshot displays a **Spline Area Chart.**
 
 {% highlight javascript %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    legend: {
-        visible: true,
-    },
-    commonSeriesOptions: {
-        type: ej.olap.OlapChart.ChartTypes.StackingArea
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }   
-});
-
-
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.StackingArea
+        }  
+    });
 {% endhighlight %}
 
 The following screenshot displays a **Stacking Area Chart.**
 
-![](/js/OlapChart/Chart-Types_images/Chart-Types_img13.png) 
+![](Chart-Types_images/StackingAreaChart.png)
+
+## Pie Chart
+
+A **Pie chart** is used to summarize a set of categorical data or displaying different values of a given variable (e.g., percentage distribution). This type of chart is a circle divided into a series of segments. Each segment represents a particular category.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Pie
+        }
+    });
+{% endhighlight %}
+
+The following screenshot displays a **Pie Chart**.
+
+![](Chart-Types_images/PieChart.png)
+
+## Doughnut Chart
+
+A **Doughnut chart** is also used to summarize a set of categorical data which possesses a doughnut like structure divided into a series of segments. Each segment represents a particular category.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Doughnut
+        }
+    });
+{% endhighlight %}
+
+The following screenshot displays a **Doughnut Chart**.
+
+![](Chart-Types_images/DoughnutChart.png)
+
+## Pyramid Chart
+
+The **Pyramid Chart** type displays the data in the form of a triangle. It helps you to visualize data in a hierarchical structure without any axes.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Pyramid
+        }    
+    });
+{% endhighlight %}
+
+The following screen shot displays the **Pyramid Chart.**
+
+![](Chart-Types_images/PyramidChart.png)
+
+## Funnel Chart
+
+The **Funnel Chart**  type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Funnel
+        }   
+    });
+{% endhighlight %}
+
+The following screen shot displays the **Funnel Chart.**
+
+![](Chart-Types_images/FunnelChart.png)
+
+## Scatter Chart
+
+The **Scatter Chart**  type displays the data as a collection of points corresponding to the associated values.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Scatter
+        }   
+    });
+{% endhighlight %}
+
+The following screen shot displays the **Scatter Chart.**
+
+![](Chart-Types_images/ScatterChart.png) 
+
+## Bubble Chart
+
+The **Bubble Chart**  type displays the data as a collection of bubbles.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.Bubble
+        }   
+    });
+{% endhighlight %}
+
+The following screen shot displays the **Bubble Chart.**
+
+![](Chart-Types_images/BubbleChart.png)
 
 ##Combination Chart
 
@@ -405,34 +345,21 @@ A **combination Chart** combines two or more series types in a single Chart. But
 
 {% highlight javascript %}
 
-$(function() {
-    $("#OlapChart1").ejOlapChart({
-        url: "../wcf/OlapChartService.svc",
-        legend: {
-            visible: true,
-            rowCount: 2
-        },
-        size: {
-            height: "460px",
-            width: "950px"
-        },
-        animation: true,
-        commonSeriesOptions: {
-            type: ej.olap.OlapChart.ChartTypes.Column,
-            tooltip: {
-                visible: true
-            }
-        },
-        seriesRendering: "onSeriesRenders"
+    $(function() {
+        $("#PivotChart1").ejPivotChart({
+            //...
+            commonSeriesOptions: {
+                type: ej.PivotChart.ChartTypes.Line
+            },
+            seriesRendering: "onSeriesRenders"
+        });
     });
-});
 
-function onSeriesRenders(args) {
-    this.model.series[5].type = ej.olap.OlapChart.ChartTypes.Line;
-    this.model.series[5].marker.visible = true;
-}
-
+    function onSeriesRenders(args) {
+        this.model.series[5].type = ej.PivotChart.ChartTypes.Column;
+        this.model.series[5].marker.visible = true;
+    }
 {% endhighlight %}
 
 
-![](/js/OlapChart/Chart-Types_images/combinationalchart.png) 
+![](Chart-Types_images/CombinationChart.png)

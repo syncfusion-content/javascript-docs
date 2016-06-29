@@ -3,7 +3,7 @@ layout: post
 title: Legend
 description: legend
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -11,21 +11,21 @@ documentation: ug
 
 ##Legend Visibility
 
-You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in OlapChart.
+You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in PivotChart.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
             //Legend Visibility 
             visible: true
         },
-        //....
+        ....
     });
 });
 
@@ -34,51 +34,44 @@ $(function()
 ![](Legend_images/Legend_img1.png) 
 
 ##Legend Shape
-You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in OlapChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
+You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in PivotChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
-            rowCount: 3,
             //Applying Legend Shape
             shape: "Star"
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
 ![](Legend_images/Legend_img2.png) 
 
 ##Legend Position
-By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the OlapChart. Default value of legend position is “bottom”.
+By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the PivotChart. Default value of legend position is “bottom”.
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
-            rowCount: 3,
-            shape: "Star",
             //To place the legend at top of the Chart
             position: “top”
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
@@ -89,13 +82,12 @@ To add the legend title, you have to specify the title text in [`title.text`](/j
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
             //Add title to the Chart legend
             title:
@@ -103,9 +95,8 @@ $(function()
                 text: "Countries"
             }
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
@@ -116,21 +107,18 @@ You can align the legend to center, far and near based on its position in the Ch
  
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
-            rowCount: 3,
             //Aligning the legend near to the Chart
             alignment: "Near"
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
@@ -141,13 +129,12 @@ By using the legend [`itemStyle.width`](/js/api/ejchart#members:legend-itemstyle
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
             //Changing legend items border, height and width
             itemStyle:
@@ -161,9 +148,8 @@ $(function()
                 }
             }
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
@@ -174,13 +160,12 @@ By using the [`border`](/js/api/ejchart#members:legend-border) option in legend,
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
             //Setting border color and width to legend
             border:
@@ -189,9 +174,8 @@ $(function()
                 width: 2
             }
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
@@ -202,13 +186,12 @@ By using the [`font`](/js/api/ejchart#members:legend-font) option, you can custo
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         legend:
         {
+            //Legend Visibility 
             visible: true,
             //Customizing the legend text
             font:
@@ -219,9 +202,8 @@ $(function()
                 size: '13px'
             },
         },
-        //....
+        ....
     });
-});
 
 {% endhighlight %}
 
