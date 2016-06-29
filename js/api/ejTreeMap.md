@@ -2330,7 +2330,7 @@ Specifies the from value for rangeColorMapping.
 {% endhighlight %}
 
 
-### rangecolormapping.legendLabel `string`
+### rangeColorMapping.legendLabel `string`
 {:#members:rangecolormapping-legendlabel}
 
 Specifies the legend label value for rangeColorMapping.
