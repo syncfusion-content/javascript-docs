@@ -23,14 +23,14 @@ N>   All the culture-specific script files are available within the below specif
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 </td>
 </tr>
 </table>
@@ -78,7 +78,7 @@ Define the **locale** property for the DatePicker control with the appropriate *
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -119,9 +119,9 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.vi-VN.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.fr-FR.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.vi-VN.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.fr-FR.min.js"></script>
 </head>
 <body> 
     <!--Container for ejDatePicker widget-->
@@ -197,7 +197,7 @@ Refer the same steps mentioned in the previous example – as it is applicable f
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -245,7 +245,7 @@ Now define the **locale** property for the Grid control with the appropriate **c
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -315,8 +315,8 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.de-DE.min.js"></script>
-    <script src="Scripts/ej/cultures/ej.culture.es-ES.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
+    <script src="Scripts/ej/i18n/ej.culture.es-ES.min.js"></script>
 </head>
 <body> 
     <!--Container for ejGrid widget-->
@@ -421,7 +421,7 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
         // Culture file reference to use the ar-DZ culture
-        <script src="Scripts/cultures/ej/cultures/ej.culture.ar-DZ.min.js"></script>
+        <script src="Scripts/ej/i18n/ej.culture.ar-DZ.min.js"></script>
     </head>
     <body>     
         <!--Container for ejDatePicker widget-->
