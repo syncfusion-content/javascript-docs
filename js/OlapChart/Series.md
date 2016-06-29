@@ -3,36 +3,30 @@ layout: post
 title: Series
 description: series
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
 #Series
 
-##Series Point customization
-By using the [`fill`](/js/api/ejchart#members:series-fill) and [`border`](/js/api/ejchart#members:series-border) properties of Chart series, you can customize the OlapChart series color, border color and border width.
+##Series Point Customization
+By using the [`fill`](/js/api/ejchart#members:series-fill) and [`border`](/js/api/ejchart#members:series-border) properties of Chart series, you can customize the PivotChart series color, border color and border width.
  
 {% highlight javascript %}
-
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     this.model.series[0].points[0].fill = "aqua";
     this.model.series[0].points[0].border = {

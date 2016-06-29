@@ -3,7 +3,7 @@ layout: post
 title: User-Interactions
 description: user interactions
 platform: js
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -12,15 +12,14 @@ documentation: ug
 ##Tooltip
 
 ###Enable Tooltip for Data Points
-Tooltip for the data points can be enabled using the **"visible"** option of the [`tooltip`](/js/api/ejchart#members:commonseriesoptions-tooltip-visible) property under **"commonSeriesOptions"** of the OlapChart.
+Tooltip for the data points can be enabled using the **"visible"** option of the [`tooltip`](/js/api/ejchart#members:commonseriesoptions-tooltip-visible) property under **"commonSeriesOptions"** of the PivotChart.
 
 {% highlight javascript %}
-
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
             //....
@@ -33,7 +32,6 @@ $(function()
         //....
     });
 });
-
 {% endhighlight %}
 
 ![](User-Interactions_images/tooltip.png) 
@@ -44,7 +42,7 @@ HTML elements can be displayed inside the tooltip by using the [`template`](/js/
 {% highlight javascript %}
 
 <body>
-    <div id="OlapChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
     <div id="Tooltip" style="display: none;">
         <label id="cc1">In </label>
         <label id="fyvalue">&nbsp;#point.x# </label>
@@ -54,9 +52,9 @@ HTML elements can be displayed inside the tooltip by using the [`template`](/js/
     <script type="text/javascript">
         $(function()
         {
-            $("#OlapChart1").ejOlapChart(
+            $("#PivotChart1").ejPivotChart(
             {
-                url: "../wcf/OlapChartService.svc",
+                //....
                 commonSeriesOptions:
                 {
                     //....
@@ -84,9 +82,9 @@ By using [`fill`](/js/api/ejchart#members:commonseriesoptions-tooltip-fill) and 
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
             //....
@@ -117,9 +115,9 @@ The tooltip properties, `rx` and `ry` are used to customize its corner radius.
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
             //....
@@ -127,8 +125,8 @@ $(function()
             {
                 visible: true,
                 //Customize the corner radius of the tooltip rectangle
-                rx: "50",
-                ry: "50"
+                rx: "20",
+                ry: "20"
             }
         },
         //....
@@ -137,7 +135,7 @@ $(function()
 
 {% endhighlight %} 
 
-![](User-Interactions_images/tooltiprouded.png) 
+![](User-Interactions_images/tooltiprounded.png) 
 
 ##Zooming and Panning
 
@@ -152,9 +150,9 @@ There are two ways to zoom the Chart:
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         //Enable zooming in Chart
         zooming:
         {
@@ -179,9 +177,9 @@ You can zoom the particular axis like horizontal axis or vertical axis or both a
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         //Enable zooming in Chart
         zooming:
         {
@@ -197,29 +195,24 @@ $(function()
 ##Marker and Crosshair
 
 ###Marker Shape Customization
-In OlapChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
+In PivotChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Line
+            type: ej.PivotChart.ChartTypes.Line
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) 
     this.model.series[seriescount].marker.shape = "Triangle";
@@ -236,9 +229,8 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
         //...
         //Initializing Crosshair
         crosshair:
@@ -275,9 +267,8 @@ By using `line` property of crosshair, you can customize its line color and widt
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
         //...
         //Initializing Crosshair
         crosshair:
@@ -329,9 +320,8 @@ Trackball can be enabled by setting both - ['visible'](/js/api/ejchart#members:c
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
         //...
         //Initializing Crosshair 
         crosshair:
@@ -354,9 +344,8 @@ Shape and size of the trackball marker can be customized using the [`shape`](/js
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
         //...
         //Initializing Crosshair
         crosshair:
@@ -390,29 +379,24 @@ $(function()
 ![](User-Interactions_images/trackballmarker.png) 
 
 ##Highlight
-OlapChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/js/api/ejchart#members:series-highlightsettings-enable) option of the series.
+PivotChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/js/api/ejchart#members:series-highlightsettings-enable) option of the series.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) 
     this.model.series[seriescount].highlightSettings.enable = true
@@ -431,23 +415,18 @@ You can set three different modes for highlighting data points and series by usi
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -468,23 +447,18 @@ To customize the highlighted series, use [`border.color`](/js/api/ejchart#member
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -500,7 +474,7 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/customizehighlight.png) 
 
 ###Patterns to Highlight
-OlapChart provides pattern support for highlighting the data by setting an appropriate value to the [`pattern`](/js/api/ejchart#members:series-highlightsettings-pattern) property of the [`highlightSettings`](/js/api/ejchart#members:series-highlightsettings). The different types of highlight patterns are as follows.
+PivotChart provides pattern support for highlighting the data by setting an appropriate value to the [`pattern`](/js/api/ejchart#members:series-highlightsettings-pattern) property of the [`highlightSettings`](/js/api/ejchart#members:series-highlightsettings). The different types of highlight patterns are as follows.
 
 * chessboard
 * crosshatch
@@ -527,23 +501,18 @@ OlapChart provides pattern support for highlighting the data by setting an appro
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -557,29 +526,24 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/patternhighlight.png) 
 
 ##Selection
-OlapChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings-enable) option of the series.
+PivotChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings-enable) option of the series.
 
 {% highlight javascript %}
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -601,23 +565,18 @@ You can set three different selection mode for highlighting the data points and 
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -637,23 +596,18 @@ To customize the selection styles, use the [`border.color`](/js/api/ejchart#memb
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
@@ -668,7 +622,7 @@ function onSeriesRenders(args)
 ![](User-Interactions_images/customizeselection.png) 
 
 ###Patterns for Selection
-OlapChart provides pattern support for the selecting the data by setting an appropriate value to the [`pattern`](/js/api/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings) option. The different types of selection patterns are as follows.
+PivotChart provides pattern support for the selecting the data by setting an appropriate value to the [`pattern`](/js/api/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/js/api/ejchart#members:series-selectionsettings) option. The different types of selection patterns are as follows.
 
 * chessboard
 * crosshatch
@@ -694,23 +648,18 @@ OlapChart provides pattern support for the selecting the data by setting an appr
 
 $(function()
 {
-    $("#OlapChart1").ejOlapChart(
+    $("#PivotChart1").ejPivotChart(
     {
-        url: "../wcf/OlapChartService.svc",
+        ....
         commonSeriesOptions:
         {
-            type: ej.olap.OlapChart.ChartTypes.Column
+            type: ej.PivotChart.ChartTypes.Column
         },
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        },
-        seriesRendering: "onSeriesRenders"
+        seriesRendering: "onSeriesRender"
     });
 });
 
-function onSeriesRenders(args)
+function onSeriesRender(args)
 {
     for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
     {
