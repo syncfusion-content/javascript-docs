@@ -3,30 +3,29 @@ layout: post
 title: Responsive-Layout
 description: responsive layout
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
 # Responsive Layout
 
-OlapGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapGauge by setting [`isResponsive`](/js/api/ejolapgauge#members:isresponsive) property to true.
+PivotGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotGauge by setting [`isResponsive`](/js/api/ejpivotgauge#members:isresponsive) property to true.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    isResponsive: true,
-    //...
-});
+    $("#PivotGauge1").ejPivotGauge({
+        //....
+        isResponsive: true
+    });
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/responsive 1.png)
+![](Responsive-Layout/Responsive1.png)
 
 _Normal View_
 
 
-![](Responsive-Layout_images/responsive 2.png)
+![](Responsive-Layout/Responsive2.png)
 
 _Responsive View_
 

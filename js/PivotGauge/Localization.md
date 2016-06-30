@@ -3,34 +3,33 @@ layout: post
 title: Localization
 description: localization
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
 # Localization
 
-## Localization in OlapGauge Control
+## Localization in PivotGauge Control
 
- We can localize the OlapGauge controls text with a collection of localized strings using **"ej.olap.OlapGauge.locale"** for different cultures. By default, the OlapGauge control is localized in **"en-US"**.
+ We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.locale"** for different cultures. By default, the PivotGauge control is localized in **"en-US"**.
 
-Following code example illustrates on how to localize OlapGauge based on "French" culture.
+Following code example illustrates on how to localize PivotGauge based on "French" culture.
 
 {% highlight javascript %}
 
-ej.olap.OlapGauge.locale["fr-FR"] = {
-    RevenueGoal: "Objectif de chiffre d'affaires",
-    RevenueValue: "Valeur du chiffre d'affaires"
-}
+    ej.PivotGauge.locale["fr-FR"] = {
+        RevenueGoal: "Objectif de chiffre d'affaires",
+        RevenueValue: "Valeur du chiffre d'affaires"
+    }
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    locale: "fr-FR",
-    //...
-});
+    $("#PivotGauge1").ejPivotGauge({
+        //....
+        locale: "fr-FR"
+    });
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to “French” culture for OlapGauge.
+Following table localizes the in-built keywords to “French” culture for PivotGauge.
 
 <table>
 <tr>
@@ -49,19 +48,31 @@ RevenueValue</td><td>
 
 ## Localization and Globalization of Cube Info
 
-Content displayed within the OlapGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
- 
-* To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
-* To bind the globalized content in OlapGauge control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture.
+Content displayed within the PivotGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+
+To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. The attribute is set for PivotGauge in Client Mode as shown below
+
+{% highlight javascript %}
+
+    $("#PivotGauge1").ejPivotGauge({
+        //....
+        dataSource: {
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"
+        }
+    });
+
+{% endhighlight %}
+
+For Server Mode, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture along with setting **"Locale Identifier"** in connection string. 
 
 {% highlight C# %}
 
-//1036 refers to “fr-FR” culture.
-string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
-DataManager = new OlapDataManager(connectionString);
-DataManager.Culture = new System.Globalization.CultureInfo(1036);
-DataManager.OverrideDefaultFormatStrings = true;
+    //1036 refers to “fr-FR” culture.
+    string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
+    DataManager = new OlapDataManager(connectionString);
+    DataManager.Culture = new System.Globalization.CultureInfo(1036);
+    DataManager.OverrideDefaultFormatStrings = true;
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](Localization_images/Localization.png) 
+![](Localization/Localization.png) 
