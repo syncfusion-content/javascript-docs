@@ -3,7 +3,7 @@ layout: post
 title: Layout
 description: layout 
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,33 +11,31 @@ documentation: ug
 
 ##Row-wise Layout 
 
-Gauges can be arranged in specified number of rows by using the [`rowsCount`](/js/api/ejolapgauge#members:rowscount) property.
+Gauges can be arranged in specified number of rows by using the [`rowsCount`](/js/api/ejpivotgauge#members:rowscount) property.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    rowsCount: 2,
-    //...
-});
+    $("#PivotGauge1").ejPivotGauge({
+        //....
+        rowsCount: 2
+    });
 
 {% endhighlight %}
 
-![](Layout_images/row based.png) 
+![](Layout/Row-wiseLayout.png) 
 
 ##Column-wise Layout
 
-Gauges can be arranged in specified number of columns by using the [`columnsCount`](/js/api/ejolapgauge#members:columnscount) property.
+Gauges can be arranged in specified number of columns by using the [`columnsCount`](/js/api/ejpivotgauge#members:columnscount) property.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    columnsCount: 2,
-    //...
-});
+    $("#PivotGauge1").ejPivotGauge({
+        //....
+        columnsCount: 2,
+    });
 
 {% endhighlight %}
 
-![](Layout_images/column based.png) 
+![](Layout/Column-wiseLayout.png)
 

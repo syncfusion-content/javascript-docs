@@ -3,7 +3,7 @@ layout: post
 title: Animation
 description: animation
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -13,12 +13,10 @@ The animation option makes the pointer to rotate from minimum value to actual va
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    enableAnimation: true,
-    animationSpeed: 1000,
-    //...
-});
+    $("#PivotGauge1").ejPivotGauge({
+        //...
+        enableAnimation: true,
+        animationSpeed: 1000
+    });
 
 {% endhighlight %}
