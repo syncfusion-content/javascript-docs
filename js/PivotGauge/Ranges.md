@@ -3,7 +3,7 @@ layout: post
 title: Ranges
 description: ranges
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,22 +11,19 @@ documentation: ug
 
 ## Adding Range Collection
 
-Range collection can be directly added to the scales option within the OlapGauge widget as an array.
+Range collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        ranges: [{
-            distanceFromScale: 10
+        scales: [{
+            //...
+            ranges: [{
+                distanceFromScale: 10
+            }]
         }]
-    }],
-    //...
-});
-
+    });
 {% endhighlight %}
 
 ## Appearance Customization
@@ -46,41 +43,40 @@ Positioning the range could be set either through `placement` or `distanceFromSc
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        ranges: [{
-            startValue: 20,
-            endValue: 50,
-            startWidth: 2,
-            endWidth: 6,
-            backgroundColor: "yellow",
-            border: {
-                color: "red",
-                width: 2
-            },
-            distanceFromScale: 20
-        }, {
-            startValue: 50,
-            endValue: 100,
-            startWidth: 2,
-            endWidth: 7,
-            backgroundColor: "blue",
-            border: {
-                color: "green",
-                width: 2
-            },
-            placement: "near",
+        scales: [{
+            //...
+            ranges: [{
+                startValue: 20,
+                endValue: 50,
+                startWidth: 2,
+                endWidth: 6,
+                backgroundColor: "yellow",
+                border: {
+                    color: "red",
+                    width: 2
+                },
+                distanceFromScale: 20
+            }, 
+            {
+                startValue: 50,
+                endValue: 100,
+                startWidth: 2,
+                endWidth: 7,
+                backgroundColor: "blue",
+                border: {
+                    color: "green",
+                    width: 2
+                },
+                placement: "near",
+            }]
         }]
-    }],
-    //...
-});
+    });
 
 {% endhighlight %}
 
-![](Ranges_images/range customization.png) 
+![](Ranges/AppearanceCustomization.png) 
 
 N> On setting both the position properties - "distanceFromScale" and "placement" for a range, the value set in "distanceFromScale" is given preference.
 
@@ -89,31 +85,33 @@ Multiple ranges can be added by placing an array of objects in `ranges` option.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        ranges: [{
-            startValue: 0,
-            endValue: 10,
-            backgroundColor: "Green",
-            distanceFromScale: -5
-        }, {
-            startValue: 10,
-            endValue: 30,
-            backgroundColor: "yellow",
-            distanceFromScale: -5
-        }, {
-            startValue: 30,
-            endValue: 50,
-            backgroundColor: "red",
-            distanceFromScale: -5
+        scales: [{
+            //...
+            ranges: [
+                {
+                    startValue: 0,
+                    endValue: 10,
+                    backgroundColor: "Green",
+                    distanceFromScale: -5
+                }, 
+                {
+                    startValue: 10,
+                    endValue: 30,
+                    backgroundColor: "yellow",
+                    distanceFromScale: -5
+                }, 
+                {
+                    startValue: 30,
+                    endValue: 50,
+                    backgroundColor: "red",
+                    distanceFromScale: -5
+                }
+            ]
         }]
-    }],
-    //...
-});
+    });
 
 {% endhighlight %}
 
-![](Ranges_images/multiple ranges.png) 
+![](Ranges/MultipleRanges.png) 

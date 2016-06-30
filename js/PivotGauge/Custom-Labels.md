@@ -3,7 +3,7 @@ layout: post
 title: Custom-Labels
 description: custom labels
 platform: js
-control: OlapGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,24 +11,22 @@ documentation: ug
 
 ## Adding Custom Label Collection
 
-Custom label collection can be directly added to the scales option within the OlapGauge widget as an array.
+Custom label collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        customLabels: [{
-            position: {
-                x: 180,
-                y: 290
-            }
+        scales: [{
+            //...
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 290
+                }
+            }]
         }]
-    }],
-    //...
-});
+    });
 
 {% endhighlight %}
 
@@ -43,66 +41,66 @@ The appearance of the custom labels can be changed through the following propert
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        customLabels: [{
-            position: {
-                x: 180,
-                y: 320
-            },
-            font: {
-                size: "12px",
-                fontFamily: "Segoe UI",
-                fontStyle: "Normal"
-            },
-            color: "blue",
-            textAngle: 20
+        scales: [{
+            //...
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 320
+                },
+                font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "blue",
+                textAngle: 20
+            }]
         }]
-    }],
-    //...
-});
+    });
 
 {% endhighlight %}
 
-![](Custom-Label_images/customlabel customization.png) 
+![](Custom-Labels/AppearanceCustomization.png) 
 
 ## Multiple Custom Labels
 
-Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the `customLabels` option. 
+Multiple custom labels can be set to a PivotGauge widget by adding an array of objects within the `customLabels` option. 
 
 {% highlight javascript %}
 
-$("#OlapGauge1").ejOlapGauge({
-    url: "../OlapGauge",
-    //...
-    scales: [{
+    $("#PivotGauge1").ejPivotGauge({
         //...
-        customLabels: [{
-            color: "Red",
-            position: {
-                x: 180,
-                y: 150
-            }
-        }, {
-            color: "Green",
-            position: {
-                x: 180,
-                y: 320
-            }
-        }, {
-            color: "Blue",
-            position: {
-                x: 180,
-                y: 290
-            }
+        scales: [{
+            //...
+            customLabels: [
+                {
+                    color: "Red",
+                    position: {
+                        x: 180,
+                        y: 150
+                    }
+                }, 
+                {
+                    color: "Green",
+                    position: {
+                        x: 180,
+                        y: 320
+                    }
+                }, 
+                {
+                    color: "Blue",
+                    position: {
+                        x: 180,
+                        y: 290
+                    }
+                }
+            ]
         }]
-    }],
-    //...
-});
+    });
 
 {% endhighlight %}
 
-![](Custom-Label_images/multiple custom labels.png) 
+![](Custom-Labels/MultipleCustomLabels.png) 

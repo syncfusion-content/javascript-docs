@@ -166,6 +166,7 @@ namespace OlapClientDemo
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
         OlapChart htmlHelper = new OlapChart();
+        PivotTreeMap treemapHelper = new PivotTreeMap();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //Other codes
     }
@@ -187,6 +188,7 @@ namespace OlapClientDemo
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
         OlapChart htmlHelper = new OlapChart();
+        PivotTreeMap treemapHelper = new PivotTreeMap();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         [System.Web.Http.ActionName("InitializeClient")]
         [System.Web.Http.HttpPost]
@@ -212,6 +214,14 @@ namespace OlapClientDemo
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
                 return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
             }
+            [System.Web.Http.ActionName("InitializeTreeMap")]
+            [System.Web.Http.HttpPost]
+        public Dictionary <string, object> InitializeTreeMap(Dictionary<string, object> jsonResult)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+                return treemapHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+            }
             [System.Web.Http.ActionName("DrillChart")]
             [System.Web.Http.HttpPost]
         public Dictionary < string, object > DrillChart(Dictionary < string, object > jsonResult)
@@ -221,6 +231,15 @@ namespace OlapClientDemo
                 DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
                 return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
             }
+            [System.Web.Http.ActionName("DrillTreeMap")]
+            [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+                DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
+                return treemapHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
+            }   
             [System.Web.Http.ActionName("FilterElement")]
             [System.Web.Http.HttpPost]
         public Dictionary < string, object > FilterElement(Dictionary < string, object > jsonResult)
