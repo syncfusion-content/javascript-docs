@@ -258,7 +258,8 @@ function exportBtnClick(args)
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
     chartObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport","fileName");
 }
-    
+{% endhighlight %}    
+
 ###Server Mode
 
 For customizing name in WebAPI controller, below code snippet is used.
