@@ -121,7 +121,47 @@ Sets the root CSS class for the TimePicker theme, which is used to customize.
 
 
 
+### disableTimeRanges `object`
+{:#members:disabletimeranges}
 
+
+
+
+
+
+Specifies the list of time range to be disabled.
+
+
+
+### Default value
+
+
+
+
+
+* {}
+
+
+
+
+
+
+#### Example
+
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+// Set the disableTimeRanges value during initialization.                  
+        $("#timepicker").ejTimePicker({  disableTimeRanges: [{ startTime: "3:00 AM", endTime: "6:00 AM" },
+                    { startTime: "1:00 PM", endTime: "3:00 PM" },
+                    { startTime: "8:00 PM", endTime: "10:00 PM" }] });
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -378,6 +418,13 @@ When the enableStrictMode is set as true it allows the value outside of the rang
         $("#timepicker").ejTimePicker({  enableStrictMode: true });
         
 </script> {% endhighlight %}
+
+
+
+
+
+
+
 
 
 
