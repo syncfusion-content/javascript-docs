@@ -465,7 +465,7 @@ Allows the user to enable 3D view of PivotChart.
  
 $("#PivotChart1").ejPivotChart({ enable3D: true });
 
-{% endhighlight %
+{% endhighlight %}
 
 ### enableRTL `boolean`
 {:#members:enablertl}
