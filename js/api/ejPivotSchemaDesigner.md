@@ -124,7 +124,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ olap: { showKPI : true } });
 ### showNamedSets `boolean`
 {:#members:shownamedsets}
 
-Allows the user to view the namedsets in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
+Allows the user to view the named sets in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
 
 #### Default Value: false
 

@@ -163,7 +163,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {columns: itemsArray}});
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
 
-Allows the user to bind the item by using its uniquename as field name.
+Allows the user to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -193,7 +193,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {columns: [{ fieldCaption : value}]}
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to enable the usage of namedset items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
@@ -256,7 +256,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {rows: itemsArray}});
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
 
-Allows the user to bind the item by using its uniquename as field name.
+Allows the user to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -286,7 +286,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ fieldCaption : value}]}});
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to enable the usage of namedset items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
@@ -346,7 +346,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {values: [{axis : value}]}});
 ### dataSource.values.fieldName `string`
 {:#members:datasource-values[0]-fieldname}
 
-Allows the user to bind the item by using its uniquename as field name.
+Allows the user to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -392,7 +392,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {filters: itemsArray}});
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
 
-Allows the user to bind the item by using its uniquename as field name.
+Allows the user to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -422,7 +422,7 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ fieldCaption : value}]}
 ### dataSource.filters.isNamedSets `boolean`
 {:#members:datasource-filters-isnamedsets}
 
-Allows the user to enable the usage of namedset items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
