@@ -309,7 +309,7 @@ The [`opposedPosition`](/js/api/ejchart#members:primaryxaxis-opposedposition) pr
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide. 
+When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none. The other options available are rotate45, rotate90, trim, multipleRows, wrap and hide. 
 
 {% highlight javascript %}
 
@@ -321,7 +321,7 @@ When the axis labels overlap with each other based on the Chart dimensions and l
             // Avoid overlapping of X-axis labels
             primaryXAxis:
             {
-                labelIntersectAction: 'multiplerows'
+                labelIntersectAction: 'multipleRows'
             }
         });
     });
