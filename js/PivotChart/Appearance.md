@@ -153,7 +153,7 @@ By using the [`alternateGridBand`](/js/api/ejchart#members:primaryxaxis-alternat
 ![](Appearance_images/GridBandsCustomization.png)
 
 ###Animation
-You can enable animation by using the [`enableAnimation`](/js/api/ejchart#members:commonseriesoptions-enableanimation) property under [`commonseriesOptions`](/js/api/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
+You can enable animation by using the [`enableAnimation`](/js/api/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/js/api/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
 
 {% highlight javascript %}
 
