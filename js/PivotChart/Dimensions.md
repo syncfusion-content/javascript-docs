@@ -54,7 +54,7 @@ $(function()
 
 ##Responsive
 
-PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/js/api/ejolapchart#members:isresponsive) property to true.
+PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/js/api/ejpivotchart#members:isresponsive) property to true.
 
 {% highlight javascript %}
 
