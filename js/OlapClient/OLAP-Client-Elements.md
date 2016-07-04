@@ -189,7 +189,7 @@ New Report option helps the user to clear the existing report collection and to 
 
 ![](OLAP-Client-Elements_images/New report.png)
 
-By giving the required name and clicking OK, the report collection gets loaded with only one empty report with entered name. On clicking Cancel button, report creation gets cancelled.
+By giving the required name and clicking OK, the report collection gets loaded with only one empty report with entered name. On clicking Cancel button, report creation gets canceled.
 
 ![](OLAP-Client-Elements_images/new report 1.png)
 
@@ -198,7 +198,7 @@ Add Report option lets the user to add a report to the existing report collectio
 
 ![](OLAP-Client-Elements_images/Add Report.png)
 
-On clicking OK button after giving appropriate name in the respective column, a report with the entered name is added to the collection. On clicking Cancel button, report creation gets cancelled.
+On clicking OK button after giving appropriate name in the respective column, a report with the entered name is added to the collection. On clicking Cancel button, report creation gets canceled.
 
 ![](OLAP-Client-Elements_images/new report 1.png)
 
@@ -218,7 +218,7 @@ Rename Report option lets the user to rename the current/active report.  On clic
 
 ![](OLAP-Client-Elements_images/Rename Report.png)
 
-After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets cancelled.
+After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets canceled.
 
 ![](OLAP-Client-Elements_images/Rename Report1.png)
 
