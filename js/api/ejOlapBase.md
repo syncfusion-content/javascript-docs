@@ -129,7 +129,7 @@ Sets the options for value filter in advanced filtering (excel-like) concept ava
     <tbody>
         <tr>
             <td class="name">None</td>
-            <td class="description">Doesn't allow the value filtering operartion.</td>
+            <td class="description">Doesn't allow the value filtering operation.</td>
         </tr>
         <tr>
             <td class="name">Equals</td>
