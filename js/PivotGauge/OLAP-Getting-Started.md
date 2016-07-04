@@ -178,7 +178,7 @@ Initialize the OLAP datasource for PivotGauge widget by using **datasource** pro
 
 The above code will generate a series of Gauges for all the countries as shown below.
 
-![](OLAP-Getting-Started/ClientMode.png)
+![](OLAP-Getting-Started_images/ClientMode.png)
 
 ## Creating a simple application with PivotGauge and OLAP datasource (Server Mode)
 
@@ -477,7 +477,7 @@ Once you finish adding the **Global.asax** file, immediately add the namespace *
 
 Now, PivotGauge will be rendered with the provided data as shown below.
 
-![](Olap-Getting-Started/ServerMode.png)
+![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).

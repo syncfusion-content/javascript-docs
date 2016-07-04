@@ -75,4 +75,4 @@ For Server Mode, we need to set **"Culture"** and **"OverrideDefaultFormatString
 
 {% endhighlight %}
 
-![](Localization/Localization.png) 
+![](Localization_images/Localization.png) 

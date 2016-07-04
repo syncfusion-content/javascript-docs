@@ -264,5 +264,5 @@ N> In this example, “PivotChartDemo” indicates the name and root namespace o
 
 Now, PivotChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Connectivity/ServerModeWCF.png)
+![](OLAP-Connectivity_images/ServerModeWCF.png)
 

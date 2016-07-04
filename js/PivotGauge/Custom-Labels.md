@@ -63,7 +63,7 @@ The appearance of the custom labels can be changed through the following propert
 
 {% endhighlight %}
 
-![](Custom-Labels/AppearanceCustomization.png) 
+![](Custom-Labels_images/AppearanceCustomization.png) 
 
 ## Multiple Custom Labels
 
@@ -103,4 +103,4 @@ Multiple custom labels can be set to a PivotGauge widget by adding an array of o
 
 {% endhighlight %}
 
-![](Custom-Labels/MultipleCustomLabels.png) 
+![](Custom-Labels_images/MultipleCustomLabels.png) 
