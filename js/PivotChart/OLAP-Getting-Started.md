@@ -95,7 +95,7 @@ Initialize the OLAP datasource for PivotChart widget as shown below.
 
 The above code will generate a simple PivotChart showing Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
-![](Olap-Getting-Started/OlapClientMode.png) 
+![](Olap-Getting-Started_images/OlapClientMode.png) 
 
 ## Creating a simple application with PivotChart and OLAP datasource (Server Mode)
 
@@ -336,7 +336,7 @@ Once you finish adding the **Global.asax** file, immediately add the namespace *
 
 Now, PivotChart will be rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
-![](Olap-Getting-Started/ServerMode.png)
+![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).

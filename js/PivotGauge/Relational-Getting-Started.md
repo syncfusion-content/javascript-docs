@@ -191,7 +191,7 @@ Now set the JSON data to the **"data"** property available inside the **"dataSou
 
 The above code will generate a simple PivotGauge as shown in the below image. 
 
-![](Relational-Getting-Started/PopulatePivotGaugeWithData.png)
+![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
 ## Creating a simple application with PivotGauge and Relational datasource (Server Mode)
 
@@ -560,7 +560,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 Now, PivotGauge is rendered with sales amount as shown in below image. 
  
-![](Relational-Getting-Started/ServerMode.png)
+![](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 

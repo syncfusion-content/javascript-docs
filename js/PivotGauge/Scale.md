@@ -23,7 +23,7 @@ Scale can be added within the PivotGauge widget as an array.
     });
 {% endhighlight %}
 
-![](Scale/AddingScale.png) 
+![](Scale_images/AddingScale.png) 
 
 ## Scale Customization
 
@@ -53,7 +53,7 @@ Pointer Cap is a circular shape element that is located at the center of the Piv
 
 {% endhighlight %}
 
-![](Scale/PointerCap.png) 
+![](Scale_images/PointerCap.png) 
 
 ### Appearance
 
@@ -94,4 +94,4 @@ The `showIndicators`, `showTicks`, `showRanges`, `showPointers` and `showScaleBa
 
 {% endhighlight %} 
 
-![](Scale/Appearance.png) 
+![](Scale_images/Appearance.png) 

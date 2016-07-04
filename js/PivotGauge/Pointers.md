@@ -33,7 +33,7 @@ Needle type pointers are the default pointers which is always located at the cen
 
 {% endhighlight %}
 
-![](Pointers/NeedlePointer.png) 
+![](Pointers_images/NeedlePointer.png) 
 
 For marker pointer, the available shapes are rectangle, triangle, ellipse, diamond, pentagon, circle, slider, pointer, wedge, trapezoid, rounded rectangle and image.
 
@@ -52,7 +52,7 @@ For marker pointer, the available shapes are rectangle, triangle, ellipse, diamo
 
 {% endhighlight %}
 
-![](Pointers/MarkerPointer.png) 
+![](Pointers_images/MarkerPointer.png) 
 
 ## Adding Pointer Collection
 
@@ -78,7 +78,7 @@ Pointer collection can be directly added to the scales option within the PivotGa
     });
 {% endhighlight %}
 
-![](Pointers/AddingPointerCollection.png)
+![](Pointers_images/AddingPointerCollection.png)
 
 ## Appearance Customization
 
@@ -128,7 +128,7 @@ The appearance of the pointer can be customized through the following properties
 
 {% endhighlight %}
 
-![](Pointers/AppearanceCustomization.png)
+![](Pointers_images/AppearanceCustomization.png)
  
 ## Pointer Position
 
@@ -156,7 +156,7 @@ N> Both the properties can be applied only if the pointer type is set to "marker
 
 {% endhighlight %}
 
-![](Pointers/PointerPosition.png) 
+![](Pointers_images/PointerPosition.png) 
  
 ## Pointer Image
 
@@ -184,7 +184,7 @@ It is possible to replace the pointers with image. To view the pointers as image
     });
 {% endhighlight %}
 
-![](Pointers/PointerImage.png) 
+![](Pointers_images/PointerImage.png) 
 
 ## Pointer Value Text
 
@@ -238,4 +238,4 @@ To display the current value of the pointers in PivotGauge widget, `pointerValue
 
 {% endhighlight %}
 
-![](Pointers/PointerValueText.png)
+![](Pointers_images/PointerValueText.png)

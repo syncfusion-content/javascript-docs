@@ -260,5 +260,5 @@ N> In this example, “PivotGaugeDemo” indicates the name and root namespace o
 
 Now, PivotGauge is rendered with Internet Sales Amount over across different customer geographic locations.
 
-![](Olap-Connectivity/ServerModeWCF.png)
+![](Olap-Connectivity_images/ServerModeWCF.png)
 
