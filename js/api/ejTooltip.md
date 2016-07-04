@@ -1246,7 +1246,7 @@ Void
 ### show([target],[effect],[func])
 {:#methods:show}
 
-Shows the Tooltip popup for the given target element with the specifed effect.
+Shows the Tooltip popup for the given target element with the specified effect.
 
 <table class="params">
 <thead>
@@ -1260,17 +1260,17 @@ Shows the Tooltip popup for the given target element with the specifed effect.
 <tr>
 <td class="name">effect</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">optional</span>Determines the type of effect that takes place when showing the tooltip.</td>
+<td class="description"><span class="optional">optional</span> Determines the type of effect that takes place when showing the tooltip.</td>
 </tr>
 <tr>
 <td class="name">func</td>
 <td class="type"><span class="param-type">function</span></td>
-<td class="description"><span class="optional">optional</span>custom effect takes place when showing the tooltip.</td>
+<td class="description"><span class="optional">optional</span> custom effect takes place when showing the tooltip.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">jQuery</span></td>
-<td class="description"><span class="optional">optional</span>Tooltip will be shown for the given element</td>
+<td class="description"><span class="optional">optional</span> Tooltip will be shown for the given element</td>
 </tr>
 </tbody>
 </table>
