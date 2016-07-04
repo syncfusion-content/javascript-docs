@@ -296,5 +296,5 @@ N> In this example, **“PivotChartDemo”** indicates the name and root namespa
 
 Now, PivotChart will be rendered with sales amount details over a set of products across different countries. 
 
-![](Relational-Connectivity/ServerModeWCF.png)
+![](Relational-Connectivity_images/ServerModeWCF.png)
 

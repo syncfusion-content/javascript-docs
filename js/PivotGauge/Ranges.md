@@ -76,7 +76,7 @@ Positioning the range could be set either through `placement` or `distanceFromSc
 
 {% endhighlight %}
 
-![](Ranges/AppearanceCustomization.png) 
+![](Ranges_images/AppearanceCustomization.png) 
 
 N> On setting both the position properties - "distanceFromScale" and "placement" for a range, the value set in "distanceFromScale" is given preference.
 
@@ -114,4 +114,4 @@ Multiple ranges can be added by placing an array of objects in `ranges` option.
 
 {% endhighlight %}
 
-![](Ranges/MultipleRanges.png) 
+![](Ranges_images/MultipleRanges.png) 

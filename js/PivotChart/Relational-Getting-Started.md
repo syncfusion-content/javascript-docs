@@ -125,7 +125,7 @@ Now set the JSON data to the **"data"** property available inside the **"dataSou
 
 The above code will generate a simple PivotChart with sales amount over a range of products across different locations. 
 
-![](Relational-Getting-Started/PopulatePivotChartWithData.png)
+![](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
 
 ### Apply Sorting
 
@@ -151,7 +151,7 @@ You can sort a field either in ascending or descending order using the **"sortOr
 {% endhighlight %}
 
 
-![](Relational-Getting-Started/ApplySorting.png)
+![](Relational-Getting-Started_images/ApplySorting.png)
 
 
 ### Apply Filtering
@@ -196,7 +196,7 @@ Filtering option allows you to specify a set of values that need to be made eith
     });
 {% endhighlight %}
 
-![](Relational-Getting-Started/ApplyFiltering.png)
+![](Relational-Getting-Started_images/ApplyFiltering.png)
 
 ## Creating a simple application with PivotChart and Relational datasource (Server Mode)
 
@@ -506,7 +506,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 Now, PivotChart is rendered with sales amount details over a set of products across different countries. 
  
-![](Relational-Getting-Started/ServerMode.png)
+![](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 

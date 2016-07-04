@@ -22,7 +22,7 @@ Gauges can be arranged in specified number of rows by using the [`rowsCount`](/j
 
 {% endhighlight %}
 
-![](Layout/Row-wiseLayout.png) 
+![](Layout_images/Row-wiseLayout.png) 
 
 ##Column-wise Layout
 
@@ -37,5 +37,5 @@ Gauges can be arranged in specified number of columns by using the [`columnsCoun
 
 {% endhighlight %}
 
-![](Layout/Column-wiseLayout.png)
+![](Layout_images/Column-wiseLayout.png)
 
