@@ -156,7 +156,7 @@ Initialize the Dialog widget using the below code.
 
 {% endhighlight %}
 
-Initialize Footer in Dialog widgets by adding the script section in JSrender as below.
+Initialize Footer in Dialog widgets by adding the script section in JsRender as below.
 
 {% highlight javascript %}
 

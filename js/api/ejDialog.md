@@ -1891,7 +1891,7 @@ Instance of the dialog model object.</td></tr>
 <td>
 currentTarget</td><td>
 string</td><td>
-Name of the event currenttarget title.</td></tr>
+Name of the event current target title.</td></tr>
 </table>
 
 Example
