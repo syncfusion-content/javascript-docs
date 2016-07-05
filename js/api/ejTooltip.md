@@ -244,9 +244,8 @@ And also, absolute positioning via horizontal(x), vertical(y) e.g. A Tooltip at 
             content: "JavaScript is the programming language of HTML and the Web.",
             associate: "axis",
             position :{
-                horizontal : 10,
-                vertical : 10,
-               }
+               target:{  horizontal : 10, vertical : 10 }
+            }
         });
 
     </script>
