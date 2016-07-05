@@ -181,7 +181,7 @@ Defines the style for the tooltip layout and table as follows.
 
 ## Integration with the Slider control
 
-Tooltip can also be integrated with various other jQuery plugins. Tooltip shows the slider value above the handle.
+Tooltip can also be integrated with various other jQuery plugin. Tooltip shows the slider value above the handle.
 
 Render the slider control and finds its handle to render the Tooltip as follows
 
@@ -265,7 +265,7 @@ function onStop(args){
 
 ## Tip(arrow) customization
 
-Styling the Tip's background and border colours is done using "cssClass" API of Tooltip. Change the size of the tip using the property name called "Tip" and css as follows.
+Styling the Tip's background and border colors is done using "cssClass" API of Tooltip. Change the size of the tip using the property name called "Tip" and CSS as follows.
 
 {% highlight html %}
 

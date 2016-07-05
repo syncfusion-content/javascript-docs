@@ -74,7 +74,7 @@ By default you can add any text or image to the Tooltip. To customize the toolti
 
 ### Tooltip’s title customization
 
-Tooltip title can be customized with the image or any html element. 
+Tooltip title can be customized with the image or any HTML element. 
 
 {% highlight html %}
     
@@ -279,7 +279,7 @@ N> Time specified in the autoCloseTimeout will be in milliseconds and the defaul
 
 ### Sticky
 
-A close button will be shown with the Tooltip. The button element (i.e. close button) located by default at the top right of the Tooltip or titlebar (if title is enabled). The tooltip gets closed when the button is clicked.
+A close button will be shown with the Tooltip. The button element (i.e. close button) located by default at the top right of the Tooltip or title bar (if title is enabled). The tooltip gets closed when the button is clicked.
 
 {% highlight html %}
 
