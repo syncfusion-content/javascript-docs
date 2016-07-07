@@ -388,7 +388,7 @@ Specifies the fontStyle of caption
 <td class="name">
 Normal</td>
 <td class="type">string</td> 
-<td class="description last">The texts are displayed in the defalut format</td>
+<td class="description last">The texts are displayed in the default format</td>
 </tr>
 <tr>
 <td class="name">
@@ -5883,13 +5883,13 @@ Specifies the placement of ticks to render either inside or outside the scale.
 <td class="name">
 Inside</td>
 <td class="type">string</td> 
-<td class="description last">The QuantitiveScaleticks are placed inside the scale </td>
+<td class="description last">The quantitative scale ticks are placed inside the scale </td>
 </tr>
 <tr>
 <td class="name">
 Outside</td>
 <td class="type">string</td>
-<td class="description last">The QuantitiveScaleTicks are placed outside the scale</td>
+<td class="description last">The quantitative scale ticks are placed outside the scale</td>
 </tr> 
 </tbody>
 </table>
