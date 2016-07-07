@@ -39,17 +39,13 @@ $('#container').ejMap();
 
 #### Requires
 
-* module:jQuery.js
+* module:jQuery
 
-* module:ej.core.js
+* module:ej.datavisualization.Map
 
-* module:ej.data.js
+* module:JsRender
 
-* module:ej.map.js
-
-* module:jsrender.js
-
-* module:properties.js
+* module:properties
 
 
 ## Members
@@ -1213,64 +1209,38 @@ Specifies the datasource for the shape layer
 {% endhighlight %}
 
 
-### layers.shapeDataPath `string`
-{:#members:layers-shapedatapath}
+### layers.enableAnimation `boolean`
+{:#members:layers-enableanimation}
 
-Specifies the data path of shape 
+Enables or disables the animation
 
+#### Default Value
+
+* false
 
 #### Example
+{:.example}
+
 
 {% highlight html %}
-
-// Set the shapeDataPath of layer during initialization.                        
-   $("#container").ejMap({layers: [{ shapeDataPath: "name"}]})
+  
+// Set the enableAnimation during initialization.                       
+   $("#container").ejMap({layers: [{ enableAnimation:false }]})
 
 {% endhighlight %}
 
 
 {% highlight html %}
  
-//Get or set the shapeDataPath after initialization:
+//Get or set the enableAnimation after initialization:
    
-   //Gets the shapeDataPath from map layer.
+   //Gets the enableAnimation from map.
    
-   var property =$("#container").data("ejMap").model.layers[layerIndex].shapeDataPath;
+   var property =$("#container").data("ejMap").model.layers[layerIndex].enableAnimation;
    
-   //Sets the shapeDataPath to map layer.
+   //Sets the enableAnimation to map.
    
-   $("#container").data("ejMap").model.layers[layerIndex].shapeDataPath  = 'name';
-
-{% endhighlight %}
-
-
-### layers.shapePropertyPath `string`
-{:#members:layers-shapepropertypath}
-
-Specifies the data path of shape 
-
-
-#### Example
-
-{% highlight html %}
-
-// Set the shapePropertyPath of layer during initialization.                        
-   $("#container").ejMap({layers: [{ shapePropertyPath: "name"}]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the shapePropertyPath after initialization:
-   
-   //Gets the shapePropertyPath from map layer.
-   
-   var property =$("#container").data("ejMap").model.layers[layerIndex].shapePropertyPath;
-   
-   //Sets the shapePropertyPath to map layer.
-   
-   $("#container").data("ejMap").model.layers[layerIndex].shapePropertyPath  = 'name';
+   $("#container").data("ejMap").model.layers[layerIndex].enableAnimation  = false;
 
 {% endhighlight %}
 
@@ -2449,7 +2419,7 @@ Specifies the map items template for shapes.
 
 
 ### layers.markers `Array`
-{:#members:layers-markers}
+{:#members:shapelayer-markers}
 
 Specify markers for shape layer.
 
@@ -2535,8 +2505,8 @@ Specify selectedMapShapes for shape layer
 {% endhighlight %}
 
 
-### layers.selectionMode `enum`
-{:#members:layers-selectionmode}
+### shapeLayer.selectionMode `enum`
+{:#members:shapelayer-selectionmode}
 
 <ts name = "ej.datavisualization.Map.SelectionMode"/>
 
@@ -3530,7 +3500,7 @@ Triggered on selecting the map markers.
 {% endhighlight %}
 
 
-### mouse leave
+### mouseleave
 {:#events:mouseleave}
 
 Triggers while leaving the hovered map shape
@@ -3780,3 +3750,8 @@ Example
 
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
+
+
+
+
+
