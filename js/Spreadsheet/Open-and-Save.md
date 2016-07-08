@@ -9,7 +9,6 @@ documentation: ug
 # Open and Save
 
 The native data format for spreadsheet is JSON. You can load and store JSON data with spreadsheet. In Spreadsheet we have saveAsJSON and loadFromJSON method which is used to save spreadsheet as JSON and same JSON used to render spreadsheet.
-{% tabs %}
 {% highlight html %}
 function SaveAsJSON() {
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
@@ -19,8 +18,6 @@ function loadFromJSON() {
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.loadFromJSON(window.xlData);
 }
-
-
 {% endhighlight %}
 
 
@@ -28,7 +25,8 @@ When you open excel, the excel file need to be read and converted to client side
 
 # Open 
 
-The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [allowImport](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "") option to true. Since Spreadsheet uses a server side helper to open document, set [importMapper](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importmapper "") in importSettings to map server action.
+The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`allowImport`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") option to true. Since Spreadsheet uses a server side helper to open document, set [`importMapper`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importmapper "importMapper") in importSettings to map server action.
+
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
@@ -41,11 +39,10 @@ importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import"
 });
 });
 </script>
-
-
 {% endhighlight %}
 
 Following file types can be opened in Spreadsheet
+
 * XLS
 
 * XLSX
@@ -53,7 +50,7 @@ Following file types can be opened in Spreadsheet
 * CSV
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "") here to view online demo sample.
+[`Click`](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
 You can open excel documents in following ways
 
 1. Initial settings
@@ -66,8 +63,10 @@ You can open excel documents in following ways
 ## Initial settings
 
 The spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set [importUrl](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "") in importSettings. The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set [`importUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "importUrl") in importSettings. The code snippets for document initial load on client side are as follows,
+
 {% highlight html %}
+
 $("#Spreadsheet").ejSpreadsheet({
 importSettings: {
 importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import",
@@ -75,10 +74,9 @@ importUrl: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"
 }         
 });
 
-
 {% endhighlight %}
 
-To load excel documents initially from server side, set [importOnLoad](http://help.syncfusion.com/js/api/ejspreadsheet#members:importonload "") as true and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set [`importOnLoad`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importonload "importOnLoad") as true and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
@@ -119,13 +117,13 @@ return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF
 
 ## Methods
 
-To open an excel document, import method should be called with import options as a parameter. The spreadsheet can open excel document as a stream. The document stream was either from the client side or it can be specified in server side.
+To open an excel document, import method should be called with import options as a parameter. The spreadsheet can open excel document as a stream. The document stream was either from the client side or it can be specified in server side.
 The code snippets to open excel document as a stream from client side are as follows,
 {% highlight html %}
 function fileOpen(args) {
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"),
 stream = args.files[0]; // file stream from ejUploadbox
-xlObj["import"]({ file: stream });
+xlObj\["import"]({ file: stream });
 }
 
 
@@ -153,7 +151,7 @@ The code snippets to open excel document as URL from client side are as follows,
 {% highlight html %}
 function fileOpen() {
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+xlObj\["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
 }
 
 
@@ -182,7 +180,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 # Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [allowExporting](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "") option in exportSettings to true. Since Spreadsheet uses server side helper to save documents set [excelUrl](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "") in exportSettings option.
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in exportSettings to true. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in exportSettings option.
 {% highlight html %}
 <div id="Spreadsheet"></div>
 <script>
@@ -200,7 +198,8 @@ excelUrl: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ ExportToExc
 
 {% endhighlight %}
 
-You can save Spreadsheet contents with following file types,
+You can save Spreadsheet contents with following file types
+
 * XLS
 
 * XLSX
@@ -210,8 +209,9 @@ You can save Spreadsheet contents with following file types,
 * PDF
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "") here to view online demo sample.
+[`Click`](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
 You can save excel documents in following ways
+
 1. Methods
 
 2. User Interface
@@ -219,11 +219,11 @@ You can save excel documents in following ways
 ## Methods
 
 
-To save Spreadsheet document as excel file, export method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
+To save Spreadsheet document as excel file, export method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
 {% highlight html %}
 function saveAsFile() {
 var xlObj = $("#spreadsheet").data("ejSpreadsheet");
-xlObj.XLExport["export"](ej.Spreadsheet.exportType.Excel);
+xlObj.XLExport\["export"](ej.Spreadsheet.exportType.Excel);
 }
 
 
@@ -236,6 +236,7 @@ You can dynamically save spreadsheet by clicking file menu in ribbon and choose 
 # Server Configuration 
 
 The import from excel and export to excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .NET Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services.
+
 * WebAPI
 
 * WCF Service
@@ -270,11 +271,9 @@ Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersio
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ### Server dependencies
 
-Import and Export Helper functions are available in the Assembly Syncfusion.EJ.Export, which is available in Essential Studio and Essential JavaScript builds. The full list of assemblies needed for Spreadsheet import and export is follows.
+Import and Export Helper functions are available in the Assembly Syncfusion.EJ.Export, which is available in Essential Studio and Essential JavaScript builds. The full list of assemblies needed for Spreadsheet import and export is follows.
 
 1. Syncfusion.EJ
 
@@ -291,7 +290,7 @@ Import and Export Helper functions are available in the Assembly Syncfusion.EJ.
 7. Syncfusion.PDF.Base
 
 
-NOTE
-1.The above mentioned assemblies will be available in below location after Essential Studio build installation.
-2.C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\precompiledassemblies\x.x.x.x\y.y.
-3.x.x.x.x defines build version of Essential Studio and y.y defines .NET Framework version.
+
+N> 1. The above mentioned assemblies will be available in below location after Essential Studio build installation.
+N> 2. C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\precompiledassemblies\x.x.x.x\y.y.
+N> 3. x.x.x.x defines build version of Essential Studio and y.y defines .NET Framework version.
