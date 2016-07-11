@@ -54,6 +54,26 @@ $("#PivotGrid1").ejPivotGrid(...);
 
 Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
 
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">OLAP</td>
+            <td class="description">To bind an OLAP data source to PivotGrid.</td>
+        </tr>
+        <tr>
+            <td class="name">Relational</td>
+            <td class="description">To bind a relational data source to PivotGrid.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 #### Default Value: ej.PivotGrid.AnalysisMode.Olap
 
 **Example:**
@@ -1388,6 +1408,25 @@ $("#PivotGrid1").ejPivotGrid({ locale: "en-US" }});
 <ts name = "ej.PivotGrid.OperationalMode"/>
 
 Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ClientMode</td>
+            <td class="description">To bind data source completely from client-side.</td>
+        </tr>
+        <tr>
+            <td class="name">ServerMode</td>
+            <td class="description">To bind data source completely from server-side.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value: ej.PivotGrid.OperationalMode.ClientMode
 
