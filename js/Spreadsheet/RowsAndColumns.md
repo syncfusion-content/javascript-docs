@@ -1,3 +1,12 @@
+---
+layout: post
+title: Rows and Columns with Spreadsheet widget for Syncfusion Essential JS
+description: How to use and customize the Spreadsheet rows and columns
+platform: js
+control: Spreadsheet
+documentation: ug
+--- 
+
 # Rows and columns
 
 Rows and Columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. You have rowCount and colCount in sheets property and model for defining the rows and columns count. Based on this grid content will be created.
