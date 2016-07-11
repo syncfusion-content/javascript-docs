@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows and Columns with Spreadsheet widget for Syncfusion Essential JS
-description: How to use and customize the Shreadsheet rows and columns
+description: How to use and customize the Spreadsheet rows and columns
 platform: js
 control: Spreadsheet
 documentation: ug
