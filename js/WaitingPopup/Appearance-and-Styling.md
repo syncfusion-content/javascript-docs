@@ -190,7 +190,7 @@ You can use the **CSS** class to customize the **WaitingPopup** control appearan
 
 The following steps allows you to configure **CSS** class for an auto-complete textbox.
 
- In the **HTML** page, add a **&lt;input&gt;** element to configure **WaitingPopup** widget.
+ In the **HTML** page, add a **&lt;div&gt;** element to configure **WaitingPopup** widget.
 
 
 
