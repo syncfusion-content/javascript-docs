@@ -5453,9 +5453,6 @@ $("#rteSample").ejRTE({
 ### preRender
 {:#events:preRender}
 
-
-
-
 Fires before the RTE Edit area is rendered and after the toolbar is rendered.
 
 <table class="params">
@@ -5507,6 +5504,72 @@ $("#rteSample").ejRTE();
 //preRender event for RTE
 $("#rteSample").ejRTE({ 
         preRender: function(args) {}
+});   
+</script>   {% endhighlight %}
+
+### select
+{:#events:select}
+
+
+
+
+Fires when the text is selected in the text area
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">When the event is canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the RTE model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+event</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the event object</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >     
+<script>
+$("#rteSample").ejRTE();
+//select event for RTE
+$("#rteSample").ejRTE({ 
+        select: function(args) {}
 });   
 </script>   {% endhighlight %}
 
