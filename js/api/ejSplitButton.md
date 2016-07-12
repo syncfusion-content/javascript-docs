@@ -1343,7 +1343,7 @@ $("#sbutton").ejSplitButton("enable");
 
 
 
-To Hide the list content of the split button.
+To hide the list content of the split button.
 
 
 

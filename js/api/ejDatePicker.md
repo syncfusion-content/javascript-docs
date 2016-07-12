@@ -228,7 +228,7 @@ Sets the specified text value to the today button in the DatePicker calendar.
 
 
 
-Sets the root CSS class for Accordion theme, which is used customize.
+Sets the root CSS class for DatePicker theme, which is used customize.
 
 
 
@@ -876,9 +876,11 @@ Specifies the tooltip to special dates.
 
 
 
+### fields.cssClass `string`
+{:#members:fields-cssclass}
 
 
-
+Specifies the CSS class to customize the date.
 
 
 
