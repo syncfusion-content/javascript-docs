@@ -4985,15 +4985,8 @@ $("#rteSample").ejRTE("show");// Shows the rte
 
 ## Events
 
-
-
-
 ### change
 {:#events:change}
-
-
-
-
 
 Fires when changed successfully.
 
@@ -5030,8 +5023,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5053,10 +5044,6 @@ $("#rteSample").ejRTE({
 
 ### create
 {:#events:create}
-
-
-
-
 
 Fires when the RTE is created successfully
 
@@ -5093,8 +5080,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5115,10 +5100,6 @@ $("#rteSample").ejRTE({
 
 ### contextMenuClick  
 {:#events:contextMenuClick  }
-
-
-
-
 
 Fires when mouse click on menu items.
 
@@ -5173,8 +5154,6 @@ selectedItem</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5195,14 +5174,8 @@ $("#rteSample").ejRTE({
    
 </script>{% endhighlight %}
 
-
-
-
 ### destroy
 {:#events:destroy}
-
-
-
 
 Fires before the RTE is destroyed.
 
@@ -5239,8 +5212,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5262,10 +5233,6 @@ $("#rteSample").ejRTE({
 
 ### execute
 {:#events:execute}
-
-
-
-
 
 Fires when the commands are executed successfully.
 
@@ -5302,8 +5269,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5322,13 +5287,8 @@ $("#rteSample").ejRTE({
 </script>   {% endhighlight %}
 
 
-
-
 ### keydown
 {:#events:keydown}
-
-
-
 
 Fires when the keydown action is successful.
 
@@ -5365,8 +5325,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5384,14 +5342,8 @@ $("#rteSample").ejRTE({
 });  
 </script>    {% endhighlight %}
 
-
-
-
 ### keyup
 {:#events:keyup}
-
-
-
 
 Fires when the keyup action is successful.
 
@@ -5428,8 +5380,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5446,8 +5396,6 @@ $("#rteSample").ejRTE({
         keyup: function(args) {}
 });  
 </script>    {% endhighlight %}
-
-
 
 
 ### preRender
@@ -5488,8 +5436,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5509,9 +5455,6 @@ $("#rteSample").ejRTE({
 
 ### select
 {:#events:select}
-
-
-
 
 Fires when the text is selected in the text area
 
@@ -5551,10 +5494,7 @@ event</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -5571,7 +5511,9 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE({ 
         select: function(args) {}
 });   
-</script>   {% endhighlight %}
+</script>   
+
+{% endhighlight %}
 
 
 
