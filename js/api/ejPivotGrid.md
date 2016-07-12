@@ -73,7 +73,6 @@ Sets the mode for the PivotGrid widget for binding either OLAP or relational dat
     </tbody>
 </table>
 
-
 #### Default Value: ej.PivotGrid.AnalysisMode.Olap
 
 **Example:**
@@ -386,7 +385,6 @@ Allows the user to set the filtering type while doing advanced filtering (excel-
     </tbody>
 </table>
 
-
 #### Default Value: ""
 
 **Example:**
@@ -607,7 +605,6 @@ Allows the user to set the operator for label filtering to do advanced filtering
     </tbody>
 </table>
 
-
 #### Default Value: ""
 
 **Example:**
@@ -708,7 +705,6 @@ Allows the user to set the filtering type while doing advanced filtering (excel-
         </tr>
     </tbody>
 </table>
-
 
 #### Default Value: ""
 
