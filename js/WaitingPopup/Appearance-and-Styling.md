@@ -65,7 +65,7 @@ Execute the above code to render the following output.
 
 The following steps explains you on how to define template to display a text and image for **WaitingPopup** control.
 
- In the **HTML** page, add a **&lt;input&gt;** element to configure **WaitingPopup** widget.
+ In the **HTML** page, add a **&lt;div&gt;** element to configure **WaitingPopup** widget.
 
 
 
