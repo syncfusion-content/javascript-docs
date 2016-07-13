@@ -235,10 +235,10 @@ You can enable Editing in TreeGrid by using the [`editSettings`](/js/api/ejtreeg
 
 And also, the following editors are provided for support in TreeGrid control.
 
-* stringedit
-* booleanedit
-* numericedit
-* dropdownedit
+* string
+* boolean
+* numeric
+* dropdown
 * datepicker
 * datetimepicker
 

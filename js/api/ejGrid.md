@@ -2091,7 +2091,7 @@ This specifies to set the position of an adding new row either in the top or bot
 
 #### Default Value:
 {:.param}
-* ej.Grid.RowPosition.top
+* ej.Grid.Rowposition.Top
 
 <table>
 <tr>
@@ -4688,7 +4688,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### toolbarSettings.toolbarItems `enum`
+### toolbarSettings.toolbarItems `Array`
 {:#members:toolbarsettings-toolbaritems}
 
 <ts name="ej.Grid.ToolBarItems"/>
@@ -9245,6 +9245,11 @@ Triggered for every grid action before its starts.
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
+<td class="name">currentFilterObject</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current filtering object.</td>
+</tr>
+<tr>
 <td class="name">filterCollection</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
@@ -10040,6 +10045,11 @@ Triggered for every grid action success event.
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
+<td class="name">currentFilterObject</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current filtering object.</td>
+</tr>
+<tr>
 <td class="name">filterCollection</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
@@ -10833,6 +10843,11 @@ Triggered for every grid action server failure event.
 <td class="name">currentFilteringColumn</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current filtering column field name.</td>
+</tr>
+<tr>
+<td class="name">currentFilterObject</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current filtering object.</td>
 </tr>
 <tr>
 <td class="name">filterCollection</td>

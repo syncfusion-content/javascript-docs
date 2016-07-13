@@ -1491,7 +1491,7 @@ set the labelPath property
 ### layers.labelSettings.showLabels `boolean`
 {:#members:layers-labelsettings-showlabels}
 
-The property specifies wheather to show labels or not.
+The property specifies whether to show labels or not.
 
 #### Default Value
 

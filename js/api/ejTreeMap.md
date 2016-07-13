@@ -2557,6 +2557,3 @@ Triggers on treemap item selected.
   });
 
 {% endhighlight %}
-
-
-

@@ -1569,7 +1569,8 @@ We can drill down up to time interval on selected date with meridian details.
 <script>
 //To set timeDrillDown API during initialization  
         $("#datetime").ejDateTimePicker({  timeDrillDown: { enabled: true } });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 

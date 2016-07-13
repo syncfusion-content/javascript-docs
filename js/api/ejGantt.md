@@ -4437,7 +4437,7 @@ Triggered after selected a cell
 <td class="description">Returns the previously selected cell index</td>
 </tr>
 <tr>
-<td class="name">perviousRowIndex</td>
+<td class="name">previousRowIndex</td>
 <td class="type">object</td>
 <td class="description">Returns the previously selected row index</td>
 </tr>

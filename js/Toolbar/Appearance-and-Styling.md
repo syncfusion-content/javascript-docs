@@ -56,7 +56,7 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
 ## Enabling Separator 
 
-The **enableSeparator** property is used to set separator between **Toolbar** items. It separates one or more list items. When you want to separate two set of items, then define them in two separate ‘**ul’** tags and set the value to this property as **Boolean** type.
+The **enableSeparator** property is used to set separator between **Toolbar** items. It separates one or more list items. When you want to separate two set of items, then define them in two separate **‘ul’** tags and set the value to this property as **Boolean** type.
 
 
 

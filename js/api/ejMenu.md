@@ -1683,7 +1683,7 @@ itemtext</td>
 {% endhighlight %}
 
 
-### disableItembyID(itemid)
+### disableItemByID(itemid)
 {:#methods:disableitembyid}
 
 
@@ -2048,7 +2048,7 @@ itemtext</td>
 {% endhighlight %}
 
 
-### enableItembyID(itemid)
+### enableItemByID(itemid)
 {:#methods:enableitembyid}
 
 
