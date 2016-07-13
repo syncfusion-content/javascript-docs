@@ -105,5 +105,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-![](/js/DateTimePicker/Globlization_images/Globalization_img1.png)
+![](/js/DateTimePicker/Globalization_images/Globalization_img1.png)
 
