@@ -211,7 +211,7 @@ Specifies whether hide the prompt characters with spaces on blur. Prompt chars w
 ### htmlAttributes `object`
 {:#members:htmlattributes}
 
-Specifies the list of html attributes to be added to mask edit textbox.
+Specifies the list of HTML attributes to be added to mask edit textbox.
 
 #### Default Value
 
