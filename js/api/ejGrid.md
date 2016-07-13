@@ -2091,7 +2091,7 @@ This specifies to set the position of an adding new row either in the top or bot
 
 #### Default Value:
 {:.param}
-* ej.Grid.RowPosition.Top
+* ej.Grid.Rowposition.Top
 
 <table>
 <tr>
