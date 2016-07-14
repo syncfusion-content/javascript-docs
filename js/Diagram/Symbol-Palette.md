@@ -281,7 +281,7 @@ You can customize the preview size of the individual palette items. The `palette
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The `previewWidth` and `previewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
@@ -310,7 +310,7 @@ You can also customize the preview size of the all palette items. The `previewWi
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img4.png)
+![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -333,7 +333,7 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.
