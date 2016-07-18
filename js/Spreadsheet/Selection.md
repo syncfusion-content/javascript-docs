@@ -1,4 +1,4 @@
-﻿---
+---
 title: Selection with Spreadsheet widget for Syncfusion Essential JS
 description: How to perform Selection and configure its properties like selection type, selection mode etc.
 platform: js
