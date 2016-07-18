@@ -205,5 +205,5 @@ obj.search(val);
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/externalsearch_img1.jpeg)
+![](externalsearch_images/externalsearch_img1.png)
 
