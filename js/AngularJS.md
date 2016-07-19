@@ -311,7 +311,7 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
 
 ## Widget Configuration in Controller
 
-We can able to access whole `ej` widgets configuration in controller. please find the code example:
+You can set whole `ej` widgets configuration using particular component attribute. Please find the code snippet for the same:
 
 {% highlight html %}
   <body ng-controller="DatePickerCtrl">
