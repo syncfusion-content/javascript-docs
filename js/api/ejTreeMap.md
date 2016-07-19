@@ -611,6 +611,24 @@ Enable/Disable the drillDown for treemap
 {% endhighlight %}
 
 
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Controls whether Treemap has to be responsive while resizing the window.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set isResponsive API value during initialization 
+  $("#container").ejTreeMap({isResponsive:true});
+{% endhighlight %}
+
 ### enableResize `boolean`
 {:#members:enableresize}
 
@@ -642,6 +660,42 @@ Specifies whether treemap need to resize when container is resized
    
    $("#container").data("ejTreeMap").model.enableResize = false; 
 
+{% endhighlight %}
+
+
+### draggingOnSelection`boolean`
+{:#members:draggingOnSelection}
+
+This property is used to select treemap items while clicking and dragging
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set draggingOnSelection API value during initialization 
+  $("#container").ejTreeMap({draggingOnSelection:false});
+{% endhighlight %}
+
+
+### draggingGroupOnSelection`boolean`
+{:#members:draggingGroupOnSelection}
+
+This property is used to select group of treemap items while clicking and dragging 
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set draggingGroupOnSelectionAPI value during initialization 
+  $("#container").ejTreeMap({draggingGroupOnSelection:false});
 {% endhighlight %}
 
 
@@ -1680,6 +1734,61 @@ Specifies the to value for rangeColorMapping.
 {% endhighlight %}
 
 
+
+### selectionMode `enum`
+{:#members:selectionmode}
+
+<ts name = "ej.datavisualization.TreeMap.selectionMode"/>
+
+Specifies the selection mode of treemap item. Accepted selection mode values are Default and Multiple.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">default</td>			
+			<td class="description">specifies the default mode</td>
+		</tr>
+		<tr>
+			<td class="name">multiple</td>			
+			<td class="description">specifies the multiple mode</td>
+		</tr>  
+	</tbody>
+</table>
+
+#### Default Value
+
+* "default"
+
+#### Example
+
+{% highlight html %}
+  
+// Set the selection mode during initialization.                                        
+          $("#container").ejTreeMap({selectionMode:'default'});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the selection mode after initialization:
+  
+  //Gets the selection mode from treemap.
+  
+  var property =$("#container").data("ejTreeMap").model.selectionMode;
+  
+  //Sets the selection mode to treemap.
+  
+  $("#container").data("ejTreeMap").model.selectionMode  = 'default';
+
+{% endhighlight %}
+
 ### groupSelectionMode `enum`
 {:#members:groupselectionmode}
 
@@ -1769,16 +1878,45 @@ Specifies the legend visibility status of the treemap
 {% endhighlight %}
 
 
-### showTooltip `boolean`
-{:#members:showtooltip}
+### enableGradient `boolean`
+{:#members:enableGradient}
 
-Specifies whether treemap tooltip need to be visible
+Specifies whether gradient color has to be applied for treemap items
 
 #### Default Value
 
 * false
 
 #### Example
+
+{% highlight html %}
+ 
+//To set enableGradient API value during initialization 
+  $("#container").ejTreeMap({enableGradient:true});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the enableGradient API, after initialization:
+   
+   //Gets the enableGradient value 
+   
+   var property =$("#container").data("ejTreeMap").model.enableGradient;
+ 
+   //Sets the enableGradient value 
+   
+   $("#container").data("ejTreeMap").model.enableGradient = false; 
+
+{% endhighlight %}
+
+
+
+### showTooltip `boolean`
+{:#members:showTooltip}
+
+Specifies whether treemap showTooltip need to be visible
 
 {% highlight html %}
  
