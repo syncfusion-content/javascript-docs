@@ -92,3 +92,15 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ![](/js/Gantt/Editing_images/Editing_img3.png)
 
+## Progress bar resizing
+
+You can enable or disable progress bar editing by setting 'enableProgressBarResizing' as 'true' or 'false'.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        //...
+        enableProgressBarResizing: false
+    });
+
+{% endhighlight %}
