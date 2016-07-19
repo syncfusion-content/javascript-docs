@@ -18,9 +18,9 @@ The Syncfusion Aurelia components are named with prefix `ej` to avoid conflictin
 * Event binding
 * Templates
  
-N> Those who are wish to directly getting started with Syncfusion Aurelia components navigate to [here](/js/getting-started).
+N> Those who are wish to directly getting started with Syncfusion Aurelia components navigate to [here](#getting-started).
 
-# Properties
+## Properties
 
 All the properties of Syncfusion JavaScript widget are defined as attributes for particular Aurelia component, so you can easily set value to widget properties, simply by prefixing property name with `e-` in component markup.
 
@@ -34,7 +34,7 @@ The `allowPaging` property of ejGrid widget can be defined as like the below cod
 
 N> The `gridData` will be loaded from Aurelia view-model.
 
-# Two-way binding
+## Two-way binding
 
 Two-way binding observes the property in model and updates the UI automatically. The Syncfusion Aurelia component supports two-way binding for all the interactive properties. For ex., `value` property in input component, dataSource and selectedRowIndex in Grids etc.
 
@@ -48,7 +48,7 @@ The `dataSource` property of ejGrid widget can be defined as two-way bind able p
 
 The below table depicts the properties of all the Syncfusion widgets that supports two-way data binding.
 
-# Event binding
+## Event binding
 
 Events can be bound to the components using the concern event name attribute with prefix `e-on-`.
 
@@ -61,7 +61,7 @@ The `recordClick` event of ejGrid widget can be bound to Aurelia component as li
 
 {% endhighlight %}
 
-# Templates
+## Templates
 
 Aurelia framework’s template engine and syntaxes can be used within all template supported Syncfusion Aurelia components.
 
@@ -83,13 +83,13 @@ The ejGrid widget’s column template can be rendered as like the below code exa
 
 {% endhighlight %}
 
-# Getting started
+## Getting started
 
-We are going to club all the above code examples in this section to render `ejGrid` widget. For quick start, we already configured a template project in GitHub repository [syncfusion-template-repository](aurelia-ui-toolkits/syncfusion-template-repository). Run the below set of commands to clone the repository and install the required packages for Syncfusion Aurelia application.
+We are going to club all the above code examples in this section to render `ejGrid` widget. For quick start, we already configured a template project in GitHub repository [syncfusion-template-repository](https://github.com/aurelia-ui-toolkits/syncfusion-template-repository). Run the below set of commands to clone the repository and install the required packages for Syncfusion Aurelia application.
 
 {% highlight html %}
 
-> git clone “https://github.com/aurelia-ui-toolkits/syncfusion-template-repository”
+> git clone "https://github.com/aurelia-ui-toolkits/syncfusion-template-repository"
 > cd syncfusion-template-repository
 > npm install
 > jspm install
@@ -186,6 +186,8 @@ gulp watch
 
 * Browse to [`http://localhost:9000`](http://localhost:9000)  to see the application. You can make changes in the code found under `src` folder and the browser should auto-refresh itself while you save files. The Grid component is rendered as like the below screenshot.
 
+![](/js/Aurelia_images/skeleton_navigation.png)
+
 # Catalog application
 
-We have developed Catalog application for Aurelia-Syncfusion-Bridge [demo](http://aurelia-ui-toolkits.github.io/demo-syncfusion/) which is fully built on Aurelia framework
+We have developed Catalog application for Aurelia-Syncfusion-Bridge [demo](http://aurelia-ui-toolkits.github.io/demo-syncfusion/) which is fully built on Aurelia framework.
