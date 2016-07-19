@@ -9278,7 +9278,7 @@ $("#container").ejChart({
 
 
 
-Controls whether Chart has to be responsive or not.
+Controls whether Chart has to be responsive while resizing.
 
 
 #### Default Value
