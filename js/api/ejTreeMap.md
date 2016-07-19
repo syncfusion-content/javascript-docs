@@ -443,8 +443,6 @@ Specifies the datasource of the treemap
 
 {% endhighlight %}
 
-
-
 ### dockPosition `enum`
 {:#members:dockposition}
 
@@ -616,7 +614,7 @@ Enable/Disable the drillDown for treemap
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Controls whether Treemap has to be responsive or not.
+Controls whether Treemap has to be responsive while resizing the window.
 
 #### Default Value
 
@@ -667,7 +665,7 @@ Specifies whether treemap need to resize when container is resized
 ### draggingOnSelection`boolean`
 {:#members:draggingOnSelection}
 
-This property is used to select   treemap items when we are dragging 
+This property is used to select treemap items while clicking and dragging
 
 #### Default Value
 
@@ -685,7 +683,7 @@ This property is used to select   treemap items when we are dragging
 ### draggingGroupOnSelection`boolean`
 {:#members:draggingGroupOnSelection}
 
-This property is used to select group of  treemap items when we are dragging 
+This property is used to select group of treemap items while clicking and dragging 
 
 #### Default Value
 
@@ -1741,7 +1739,7 @@ Specifies the to value for rangeColorMapping.
 
 <ts name = "ej.datavisualization.TreeMap.selectionMode"/>
 
-Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
+Specifies the selection mode of treemap item. Accepted selection mode values are Default and Multiple.
 
 <table class="params">
 	<thead>
@@ -1882,7 +1880,7 @@ Specifies the legend visibility status of the treemap
 ### enableGradient `boolean`
 {:#members:enableGradient}
 
-Specifies whether treemap enableGradient need to be visible
+Specifies whether gradient color has to be applied for treemap items
 
 #### Default Value
 
