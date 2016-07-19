@@ -48,6 +48,70 @@ The `dataSource` property of ejGrid widget can be defined as two-way bind able p
 
 The below table depicts the properties of all the Syncfusion widgets that supports two-way data binding.
 
+| **Control** | **Supported properties** |
+| --- | --- |
+| ejAccordion | - |
+| ejAutoComplete | value <br/> selectedValueByKey |
+| ejBarcode | - |
+| ejBulletGraph | - |
+| ejButton | - |
+| ejChart | xZoomFactor <br/> yZoomFactor <br/> xZoomPosition <br/> yZoomPosition |
+| ejCheckBox | Checked |
+| ejCircularGauge | value <br/> minimum <br/> maximum |
+| ejColorPicker | value <br/> opacityValue |
+| ejDatePicker | value |
+| ejDateTimePicker | value |
+| ejDiagram | - |
+| ejDialog | - |
+| ejDigitalGauge | value |
+| ejDropDownList | value |
+| ejFileExplorer | - |
+| ejGantt | dataSource <br/> selectedRowIndex |
+| ejGrid | dataSource |
+| ejGroupButton |   |
+| ejKanban | dataSource |
+| ejLinearGauge | value <br/> minimum <br/> maximum |
+| ejListBox | value |
+| ejListView | dataSource <br/> selectedItemIndex |
+| ejMap | baseMapIndex <br/> enablePan <br/> enableResize <br/> enableAnimation |
+| ejMaskEdit | value |
+| ejMenu | - |
+| ejNavigationDrawer | - |
+| ejPdfViewer | - |
+| ejPivotChart | - |
+| ejPivotGauge | - |
+| ejPivotGrid | - |
+| ejPivotSchemaDesigner | - |
+| ejProgressBar | - |
+| ejRadialMenu | - |
+| ejRadialSlider | - |
+| ejRadioButton | - |
+| ejRangeNavigator | - |
+| ejRating | value |
+| ejReportViewer | - |
+| ejRibbon | - |
+| ejRotator | - |
+| ejRTE | value |
+| ejSchedule | currentView <br/> currentDate |
+| ejScroller | scrollLeft <br/> scrollTop |
+| ejSlider | value |
+| ejSparkline | - |
+| ejSplitButton | - |
+| ejSplitter | - |
+| ejSpreadsheet | - |
+| ejSymbolPalette | - |
+| ejTab | selectedItemIndex |
+| ejTagCloud | - |
+| ejTile | - |
+| ejTimePicker | value |
+| ejToggleButton | - |
+| ejToolbar | - |
+| ejTooltip | - |
+| ejTreeGrid | dataSource <br/> selectedRowIndex |
+| ejTreeMap | dataSource <br/> weightValuePath |
+| ejTreeView | - |
+| ejUploadbox | -  |
+
 ## Event binding
 
 Events can be bound to the components using the concern event name attribute with prefix `e-on-`.
