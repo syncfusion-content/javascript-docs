@@ -44,41 +44,34 @@ $(function () {
 The following list of operations done within the rows and columns are 
 
 * Insert
-
 * Delete
-
 * Show / Hide
-
 * Resizing
 
 ### Insert 
 
 You can insert blank cells, rows or columns based on the selection in a worksheet. You have to enable the allowInsert property to perform the insert operation. 
-
 You can access insert operation through,
 
 * OTHERS tab in ribbon.
-
 * Context menu
 
 Note: In the header context menu you can insert only rows or columns.
 
 #### Insert Shift Bottom
 
-You can dynamically insert blank cells to the top of the selected range and shift the selected cells to down by following 
+You can dynamically insert blank cells to the top of the selected range and shift the selected cells to down by following,
 
 * Click Insert in the context menu and select "Shift Cells Down" option in Insert dialog.
-
 * Click Insert Cells in OTHERS tab in ribbon and select "Shift Cells Down" option in Insert dialog.
 
 You can also perform insert shift bottom using [`insertShiftBottom`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:insertshiftbottom "insertShiftBottom") method.
 
 #### Insert Shift Right
 
-You can dynamically insert blank cells to the left of the selected range and shift the selected cells to right by following
+You can dynamically insert blank cells to the left of the selected range and shift the selected cells to right by following,
 
 * Click Insert in the context menu and select "Shift Cells Right" option in Insert dialog.
-
 * Click Insert Cells in OTHERS tab in ribbon and select "Shift Cells Right" option in Insert dialog.
 
 You can also perform insert shift right using [`insertShiftRight`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:insertshiftright "insertShiftRight") method.
@@ -88,21 +81,17 @@ You can also perform insert shift right using [`insertShiftRight`](http://help.s
 You can dynamically insert the selected number of blank rows to the top of the selected range by following,
 
 * Click Insert in the context menu and select "Entire Row" option in Insert dialog.
-
 * Click Insert Cells in OTHERS tab in ribbon and select "Entire Row" option in Insert dialog.
-
 * Click Insert option in row header context menu. 
 
 You can also perform insert entire row using [`insertEntireRow`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:insertentirerow "insertEntireRow") method.
 
 #### Insert Entire Column
 
-You can dynamically insert the selected number of blank columns to the left of the selected range by following
+You can dynamically insert the selected number of blank columns to the left of the selected range by following,
 
 * Click Insert in the context menu and select "Entire Column" option in Insert dialog.
-
 * Click Insert Cells in OTHERS tab in ribbon and select "Entire Column" option in Insert dialog.
-
 * Click Insert option in column header context menu. 
 
 You can also perform insert entire column using [`insertEntireColumn`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:insertentirecolumn "insertEntireColumn") method.
@@ -114,17 +103,15 @@ You can delete a range of cells, rows or columns based on the selection in works
 You can access delete operation through,
 
 * OTHERS tab in Ribbon
-
 * Context menu
 
 Note: In header Context menu you can delete only rows or columns.
 
 #### Delete Shift Up
 
-You can dynamically delete the selected range of cells and shift the other cells to top by following
+You can dynamically delete the selected range of cells and shift the other cells to top by following,
 
 * Click Delete in the context menu and select "Shift Cells Up" option in Delete dialog.
-
 * Click Delete Cells in OTHERS tab in ribbon and select "Shift Cells Up" option in Delete dialog.
 
 You can also perform delete shift up using [`deleteShiftUp`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:deleteshiftup "deleteShiftUp") method.
@@ -134,19 +121,16 @@ You can also perform delete shift up using [`deleteShiftUp`](http://help.syncfus
 You can dynamically delete the selected range of cells and shift the other cells to left by following,
 
 * Click Delete in the context menu and select "Shift Cells Left" option in Delete dialog.
-
 * Click Delete Cells in OTHERS tab in ribbon and select "Shift Cells Left" option in Delete dialog.
 
 You can also perform delete shift up using [`deleteShiftLeft`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:deleteshiftleft "deleteShiftLeft") method.
 
 #### Delete Entire Row
 
-You can dynamically delete the selected rows and shift the other rows to top by following 
+You can dynamically delete the selected rows and shift the other rows to top by following,
 
 * Click Delete in the context menu and select "Entire Row" option in Delete dialog.
-
 * Click Delete Cells in OTHERS tab in ribbon and select "Entire Row" option in Delete dialog.
-
 * Click Delete option in row header context menu. 
 
 You can also perform delete entire row using [`deleteEntireRow`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:deleteentirerow "deleteEntireRow") method.
@@ -156,9 +140,7 @@ You can also perform delete entire row using [`deleteEntireRow`](http://help.syn
 You can dynamically delete a selected columns and shift other columns to left by following,
 
 * Click Delete in the context menu and select "Entire Column" option in Delete dialog.
-
 * Click Delete Cells in OTHERS tab in ribbon and select "Entire Column" option in Delete dialog.
-
 * Click Delete option in column header context menu. 
 
 You can also perform delete entire column using [`deleteEntireColumn`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:deleteentirecolumn "deleteEntireColumn") method.
@@ -289,12 +271,12 @@ The following output is displayed as a result of the above code example.
 
 ### Resizing
 
-You can change column width or row height with the specified value. You have to enable allowResizing to perform resizing. You can perform resizing through.
+You can change column width or row height with the specified value. You have to enable allowResizing to perform resizing. 
+
+You can perform resizing through,
 
 * Resize option in column header and row header.
-
 * setColWidth and setRowHeight methods.
-
 * rowHeight and columnWidth property.
 
 The following code example describes the above behavior.
