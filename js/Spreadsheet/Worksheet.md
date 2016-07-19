@@ -49,7 +49,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img1.jpeg)
+![](Worksheet_images/Worksheet_img1.png)
 
 ### Remove
 
@@ -80,7 +80,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img2.jpeg)
+![](Worksheet_images/Worksheet_img2.png)
 
 ### Rename
 
@@ -107,7 +107,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img3.jpeg)
+![](Worksheet_images/Worksheet_img3.png)
 
 ### Move
 
@@ -135,7 +135,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img4.jpeg)
+![](Worksheet_images/Worksheet_img4.png)
 
 ### Copy
 
@@ -163,7 +163,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img5.jpeg)
+![](Worksheet_images/Worksheet_img5.png)
 
 ## Headers
 
@@ -190,7 +190,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img6.jpeg)
+![](Worksheet_images/Worksheet_img6.png)
 
 ## Show / Hide Sheets
 
@@ -224,7 +224,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img7.jpeg)
+![](Worksheet_images/Worksheet_img7.png)
 
 ## Show / Hide Gridlines
 
@@ -247,4 +247,4 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img8.jpeg)
+![](Worksheet_images/Worksheet_img8.png)
