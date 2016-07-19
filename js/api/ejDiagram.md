@@ -2255,7 +2255,7 @@ Defines the role/meaning of the connector
 ### connectors.shape.type `enum`
 {:#members:connectors-shape-type}
 
-<ts name = "ej.datavisualization.Diagram.ConnectorShapes">
+<ts name = "ej.datavisualization.Diagram.ConnectorShapes"/>
 
 Sets the type of the connector
 
@@ -2275,12 +2275,12 @@ Sets the type of the connector
             <td class="name">Classifier</td>
             <td class="description last">Used to specify connector type as Classifier</td>
        </tr>
-      </tbody>
+          </tbody>
 </table>
 
 #### Default Value:
 
-* ej.dataVisualization.Diagram.ConnectorShapes.BPMN
+* ej.datavisualization.Diagram.ConnectorShapes.BPMN
 
 #### Example
 
@@ -2294,7 +2294,8 @@ var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 200 }, targetPoi
 $("#diagramcontent").ejDiagram({connectors : connector});
 </script>
 
-{% endhighlight %} 
+
+{% endhighlight %}
 
 ### connectors.shape.flow `enum`
 {:#members:connectors-shape-flow}
@@ -4461,8 +4462,8 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.annotation.direction `enum`
 {:#members:nodes-annotation-direction}
 
-<ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection">
-    
+<ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection"/>
+
 Sets the direction of the text annotion
 
 <table class="props">
@@ -4473,7 +4474,7 @@ Sets the direction of the text annotion
        </tr>
    </thead>
     <tbody>
-       <tr>
+        <tr>
             <td class="name">Left</td>
             <td class="description last">Used to set the direction of BPMN Annotation as left</td>
        </tr>
@@ -4513,7 +4514,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.annotation.height `Number
+### nodes.annotation.height `Number`
 {:#members:nodes-annotation-height}
 
 Sets the height of the text annotation
@@ -5636,7 +5637,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 
 {% endhighlight %}
 
-### nodes.group `enum`
+### nodes.group `Object`
 {:#members:nodes-group}
 
 Sets the type of the BPMN Shapes as group. Applicable, if the node is a BPMN.
@@ -8657,7 +8658,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.trigger `enum`
 {:#members:nodes-subprocess-trigger}
 
-<ts ref = "ej.datavisualization.Diagram.BPMNTriggers">
+<ts ref = "ej.datavisualization.Diagram.BPMNTriggers"/>
 
 Defines the type of the event trigger
 
