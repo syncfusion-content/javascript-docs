@@ -16,7 +16,7 @@ The Gantt control provides built-in support to add, insert and update the tasks.
 * Taskbar Editing
 * Predecessor Editing
 
-### Cell Editing
+## Cell Editing
 
 Update the task details through grid cell editing by setting editMode as `cellEditing`.
 
@@ -38,7 +38,7 @@ The output of Gantt with cellEditing is as follows.
 
 ![](/js/Gantt/Editing_images/Editing_img1.png)
 
-### Normal Editing
+## Normal Editing
 
 Update the task details through edit dialog by setting `editMode` as `normal`.
 
@@ -60,7 +60,7 @@ The following screenshot shows the output of `normal` editing.
 
 ![](/js/Gantt/Editing_images/Editing_img2.png)
 
-### Taskbar Editing
+## Taskbar Editing
 
 Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
 
@@ -73,7 +73,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% endhighlight %}
 
-### Predecessor Editing
+## Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
 
@@ -92,3 +92,15 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ![](/js/Gantt/Editing_images/Editing_img3.png)
 
+### Progress bar resizing
+
+You can enable or disable progress bar editing by setting 'enableProgressBarResizing' as 'true' or 'false'.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        //...
+        enableProgressBarResizing: false
+    });
+
+{% endhighlight %}
