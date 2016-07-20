@@ -9,7 +9,7 @@ documentation: ug
 
 # Aurelia Syncfusion Bridge
 
-Aurelia-Syncfusion-Bridge includes wrappers for Syncfusion-JavaScript widget’s, which act as the interface for both Aurelia frameworks and Syncfusion JavaScript widgets. This bridge is a structured, configurable collection of JavaScript classes which wrap Syncfusion JavaScript controls, presenting them in the form of Aurelia components.
+Aurelia-Syncfusion-Bridge includes wrappers for Syncfusion-JavaScript widget’s, which act as the interface for both [Aurelia](http://aurelia.io/) frameworks and Syncfusion JavaScript widgets. This bridge is a structured, configurable collection of JavaScript classes which wrap Syncfusion JavaScript controls, presenting them in the form of Aurelia components.
 
 The Syncfusion Aurelia components are named with prefix `ej` to avoid conflicting with other library component and offers the following features.
 
@@ -24,7 +24,7 @@ N> Those who are wish to directly getting started with Syncfusion Aurelia compon
 
 All the properties of Syncfusion JavaScript widget are defined as attributes for particular Aurelia component, so you can easily set value to widget properties, simply by prefixing property name with `e-` in component markup.
 
-The `allowPaging` property of ejGrid widget can be defined as like the below code example.
+The `allowPaging` property of `ejGrid` widget can be defined as like the below code example.
 
 {% highlight html %}
 
@@ -36,9 +36,9 @@ N> The `gridData` will be loaded from Aurelia view-model.
 
 ## Two-way binding
 
-Two-way binding observes the property in model and updates the UI automatically. The Syncfusion Aurelia component supports two-way binding for all the interactive properties. For ex., `value` property in input component, dataSource and selectedRowIndex in Grids etc.
+Two-way binding observes the property in model and updates the UI automatically. The Syncfusion Aurelia component supports two-way binding for all the interactive properties. For ex., `value` property in input components, `dataSource` in Grids etc.
 
-The `dataSource` property of ejGrid widget can be defined as two-way bind able property like the below code example.
+The `dataSource` property of `ejGrid` widget can be defined as two-way bindable property like the below code example.
 
 {% highlight html %}
 
@@ -116,11 +116,12 @@ The below table depicts the properties of all the Syncfusion widgets that suppor
 
 Events can be bound to the components using the concern event name attribute with prefix `e-on-`.
 
-The `recordClick` event of ejGrid widget can be bound to Aurelia component as like below code example.
+The `recordClick` event of `ejGrid` widget can be bound to Aurelia component as like below code example.
 
 {% highlight html %}
 
-<ej-grid e-data-source.two-way="gridData" e-allow-paging="true" e-on-record-click.delegate="recordClick($event.detail)">
+<ej-grid e-data-source.two-way="gridData" e-allow-paging="true" 
+        e-on-record-click.delegate="recordClick($event.detail)">
 </ej-grid>
 
 {% endhighlight %}
@@ -129,7 +130,7 @@ The `recordClick` event of ejGrid widget can be bound to Aurelia component as li
 
 Aurelia framework’s template engine and syntaxes can be used within all template supported Syncfusion Aurelia components.
 
-The ejGrid widget’s column template can be rendered as like the below code example.
+The `ejGrid` widget’s column template can be rendered as like the below code example.
 
 {% highlight html %}
 
@@ -163,7 +164,7 @@ We are going to club all the above code examples in this section to render `ejGr
 The below steps describes to create Syncfusion Aurelia Grid component.
 
 * Create `grid` folder inside `src/samples/` location.
-* Create `grid.html` files inside `src/samples/grid` folder and use the below code example to render the Grid component.
+* Create `grid.html` file inside `src/samples/grid` folder and use the below code example to render the Grid component.
 
 {% highlight html %}
 
