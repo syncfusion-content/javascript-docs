@@ -73,6 +73,17 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% endhighlight %}
 
+You can also enable or disable the progressbar resizing by setting 'enableProgressbarResizing'. The following code example shows you to disable this property.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        //...
+        enableProgressBarResizing: false,
+    });
+
+{% endhighlight %}
+
 ## Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
@@ -92,15 +103,3 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ![](/js/Gantt/Editing_images/Editing_img3.png)
 
-### Progress bar resizing
-
-You can enable or disable progress bar editing by setting 'enableProgressBarResizing' as 'true' or 'false'.
-
-{% highlight javascript %}
-
-    $("#GanttContainer").ejGantt({
-        //...
-        enableProgressBarResizing: false
-    });
-
-{% endhighlight %}
