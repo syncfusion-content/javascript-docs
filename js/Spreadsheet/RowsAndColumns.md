@@ -166,14 +166,16 @@ $(function () {
 });
 function loadComplete() {
     var xlObj = this.XLObj;
-    xlObj.insertEntireRow(2, 2);
-    xlObj.insertEntireColumn(2, 2);
-    xlObj.deleteEntireRow(4, 4);
-    xlObj.deleteEntireColumn(4, 4);
-    xlObj.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
-    xlObj.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
-    xlObj.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
-    xlObj.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
+    if(!xlObj.isImport) {
+        xlObj.insertEntireRow(2, 2);
+        xlObj.insertEntireColumn(2, 2);
+        xlObj.deleteEntireRow(4, 4);
+        xlObj.deleteEntireColumn(4, 4);
+        xlObj.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
+        xlObj.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
+        xlObj.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
+        xlObj.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
+    }
 }
 {% endhighlight %}
 
