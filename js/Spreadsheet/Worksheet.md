@@ -198,8 +198,8 @@ You can dynamically show/ hide worksheet by right clicking on the worksheet on t
 
 You can also show / hide worksheet using the following methods. 
 
-* [hideSheet](http://help.syncfusion.com/js/api/ejspreadsheet#methods:hidesheet "")
-* [unhideSheet](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unhidesheet "")
+* [`hideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:hidesheet "hideSheet")
+* [`unhideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unhidesheet "unhideSheet")
 
 The following code example describes the above behavior.
 
