@@ -4696,7 +4696,7 @@ $("#Grid").ejGrid({
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
 
 #### Default Value:
-{:.param
+{:.param}
 * []
 
 <table>
