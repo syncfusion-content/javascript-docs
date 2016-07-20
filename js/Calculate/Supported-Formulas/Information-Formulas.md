@@ -427,7 +427,7 @@ _ISEVEN (value)_
 
 
 
-•If the given value is nonnumeric, ISEVEN function returns `#VALUE!` error value.
+•If the given value is non-numeric, ISEVEN function returns `#VALUE!` error value.
 
 
 
