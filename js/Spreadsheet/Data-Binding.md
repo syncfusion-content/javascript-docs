@@ -32,7 +32,6 @@ dataSource: window.filterData // JSON
 }]
 });
 });
-
 </script>
 
 {% endhighlight %}
@@ -58,7 +57,6 @@ primaryKey: "OrderID"
 }]
 });
 });
-
 </script>
 
 {% endhighlight %}
@@ -73,6 +71,7 @@ A HTML Table element can also be used as the data source of Spreadsheet. To use 
 {% highlight html %}
 
 <div id="Spreadsheet"></div>
+
 <table id="Table1">
 <thead>
 <tr>
@@ -153,56 +152,99 @@ You can bind data in Spreadsheet with following ways,
 
 * Sheet binding 
 
-## Cell Binding
+### Cell Binding
 
 Spreadsheet can bind data for individual cells in a sheet. The data may contain value, style, format, comment and hyperlink. The individual cell properties are listed below,
+
 <table>
-<tr>
-<td colspan=1 rowspan=1>
-Properties<br/></td><td colspan=1 rowspan=1>
-Description<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-index<br/></td><td colspan=1 rowspan=1>
-To specify particular cell<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-value<br/></td><td colspan=1 rowspan=1>
-To specify value. It may be string, integer, formula etc.<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-style<br/></td><td colspan=1 rowspan=1>
-To specify style in a cell<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-format<br/></td><td colspan=1 rowspan=1>
-To specify number format in a cell<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-comment<br/></td><td colspan=1 rowspan=1>
-To specify comment in a cell<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-hyperlink<br/></td><td colspan=1 rowspan=1>
-to specify hyperlink in a cell<br/></td></tr>
-</table>
-The individual row properties are listed below,
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-Properties<br/></td><td colspan=1 rowspan=1>
-Description<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-index<br/></td><td colspan=1 rowspan=1>
-To specify particular row<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-height<br/></td><td colspan=1 rowspan=1>
-To specify row height<br/></td></tr>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            index
+        </td>
+        <td>
+            To specify particular cell
+        </td>
+    </tr>
+    <tr>
+        <td>
+            value
+        </td>
+        <td>
+            To specify value. It may be string, integer, formula etc.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            style
+        </td>
+        <td>
+            To specify style in a cell
+        </td>
+    </tr>
+    <tr>
+        <td>
+            format
+        </td>
+        <td>
+            To specify number format in a cell
+        </td>
+    </tr>
+    <tr>
+        <td>
+            comment
+        </td>
+        <td>
+            To specify comment in a cell
+        </td>
+    </tr>
+    <tr>        
+        <td>
+            hyperlink
+        </td>
+        <td>
+            To specify hyperlink in a cell
+        </td>
+    </tr>
 </table>
 
-You can specify particular row with index property and its height with height property in rows property collection. The following code illustrates cell binding in Spreadsheet
+The individual row properties are listed below,
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            index
+        </td>
+        <td>
+            To specify particular row
+        </td>
+    </tr>
+    <tr>
+        <td>
+            height
+        </td>
+        <td>
+            To specify row height
+        </td>
+    </tr>
+</table>
+
+You can specify particular row with `index` property and its height with `height` property in the rows' property collection. The following code illustrates cell binding in Spreadsheet
 
 {% highlight html %}
 
@@ -274,40 +316,69 @@ cells: [
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img4.png)
 
-## Range Binding
+### Range Binding
 
 Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings "rangeSettings"). The individual range properties are listed below,
 
 <table>
-<tr>
-<td colspan=1 rowspan=1>
-Properties<br/></td><td colspan=1 rowspan=1>
-Description<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-datasource"dataSource")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify JSON or ejDataManager<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-query"query")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify query for ejDataManager<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`startCell`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-startcell"startCell")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify start cell of a range<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`primarykey`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-primarykey"primarykey")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify data source primary key<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`showHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-showheader"showHeader")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To show data source header<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`headerStyles`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-headerstyles"headerStyles")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-to specify header styles<br/></td></tr>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-datasource "dataSource")'| markdownify }}
+        </td>
+        <td>
+            To specify JSON or ejDataManager
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-query "query")'| markdownify }}
+        </td>
+        <td>
+            To specify query for ejDataManager
+        </td>
+    </tr>
+    <tr>
+        <td>    
+            {{'[`startCell`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-startcell "startCell")'| markdownify }}
+        </td>
+        <td>
+            To specify start cell of a range
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`primarykey`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-primarykey "primarykey")'| markdownify }}
+        </td>
+        <td>
+            To specify data source primary key
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`showHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-showheader "showHeader")'| markdownify }}
+        </td>
+        <td>
+            To show data source header
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`headerStyles`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-headerstyles "headerStyles")'| markdownify }}
+        </td>
+        <td>
+            To specify header styles
+        </td>
+    </tr>
 </table>
+
 The following code illustrates range binding in Spreadsheet
 
 {% highlight html %}
@@ -334,44 +405,77 @@ headerStyles: { "font-weight": "bold" }
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img5.png)
 
-## Sheet Binding
+### Sheet Binding
 
 Spreadsheet can bind data for a sheet. The individual sheet properties are listed below,
 
 <table>
-<tr>
-<td colspan=1 rowspan=1>
-Properties<br/></td><td colspan=1 rowspan=1>
-Description<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource"dataSource")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify JSON or ejDataManager<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-query"query")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify query for ejDataManager<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`startCell`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-startcell"startCell")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify start cell of a range<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`primarykey`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-primarykey"primarykey")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To specify data source primary key<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`showHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showheader"showHeader")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To show data source header<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`headerStyles`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-headerstyles"headerStyles")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-to specify header styles<br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-{{'[`fieldAsColumnHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-fieldascolumnheader"fieldAsColumnHeader")'| markdownify }}<br/></td><td colspan=1 rowspan=1>
-To show data source fields in column header<br/></td></tr>
+    <tr>
+        <td>
+            Properties
+        </td>
+        <td>
+            Description
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource")'| markdownify }}
+        </td>
+        <td>
+            To specify JSON or ejDataManager
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-query "query")'| markdownify }}
+        </td>
+        <td>
+            To specify query for ejDataManager
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`startCell`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-startcell "startCell")'| markdownify }}
+        </td>
+        <td>
+            To specify start cell of a range
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`primarykey`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-primarykey "primarykey")'| markdownify }}
+        </td>
+        <td>
+            To specify data source primary key
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`showHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showheader "showHeader")'| markdownify }}
+        </td>
+        <td>
+            To show data source header
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`headerStyles`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-headerstyles "headerStyles")'| markdownify }}
+        </td>
+        <td>
+            To specify header styles
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`fieldAsColumnHeader`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-fieldascolumnheader  "fieldAsColumnHeader")'| markdownify }}
+        </td>
+        <td>
+            To show data source fields in column header
+        </td>
+    </tr>
 </table>
+
 The following code illustrates sheet binding in Spreadsheet
 
 {% highlight html %}
