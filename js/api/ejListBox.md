@@ -1812,7 +1812,7 @@ Example
 
 {% highlight js%}
 
-            $('#list').ejListBox("hideSelectedItems");
+            $('#list').ejListBox("hideCheckedItems");
 
 {% endhighlight %}
 
