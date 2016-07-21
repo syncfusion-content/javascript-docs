@@ -728,10 +728,66 @@ Gets or sets a value that indicates the list of items needs to be disable from d
 
 {% endhighlight %}
 
+### contextMenuSettings.menuItems `array`
+{:#members:contextmenusettings-menuitems}
+
+sets a value that indicates whether to add default Menu items.
+
+#### Default Value:
+
+* array
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    ];
+    $(function () {
+    var data = ej.DataManager(window.kanbandata);
+    $("#Kanban").ejKanban(
+    {
+        dataSource: data,			    
+        allowScrolling:true,
+        scrollSettings:{  
+            height:500,
+            width:900,
+        },
+        columns: [
+            { headerText: "Backlog", key: "Open" },
+            { headerText: "In Progress", key: "InProgress" },
+            { headerText: "Testing", key: "Testing" },
+            { headerText: "Done", key: "Close" }
+        ],
+        keyField: "Status",
+        allowTitle: true,
+        fields: {
+            primaryKey: "Id",
+            swimlaneKey: "Assignee",
+            content: "Summary",
+        },
+        contextMenuSettings: {
+            enable: true,
+             menuItems:[{ menuItem: "Move Right"},{menuItem: "Move Left"  }],
+        }
+    });
+    });
+    </script>
+   
+{% endhighlight %}
+
 ### contextMenuSettings.customMenuItems `array`
 {:#members:contextmenusettings-custommenuitems}
 
-Gets or sets a value that indicates whether to add custom contextMenu items 
+Gets or sets a value that indicates whether to add custom contextMenu items. 
 
 #### Default Value:
 
@@ -2079,6 +2135,63 @@ Gets or sets the data to render the Kanban with card.
     });
     </script>
 
+{% endhighlight %}
+
+### enableTouch `Boolean`
+{:#members:enabletouch}
+
+To perform kanban functionalities with touch interaction.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" },
+       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+       { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                enableTouch:false,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.String },
+                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
+                    ],
+                    allowEditing: true,
+                    allowAdding: true
+                },
+            });
+    });
+    </script>
     
 {% endhighlight %}
 
@@ -2129,7 +2242,7 @@ Align content in the Kanban control from right to left by setting the property a
                         { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowEditing: true,
                     allowAdding: true
@@ -2232,7 +2345,7 @@ Get or sets an object that indicates whether to customize the editing behavior o
                         { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowEditing: true,
                     allowAdding: true
@@ -2289,7 +2402,7 @@ Gets or sets a value that indicates whether to enable the editing action in card
                         { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowEditing: true
                 },
@@ -2345,7 +2458,7 @@ Gets or sets a value that indicates whether to enable the adding action in cards
                         { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowAdding: true
                 },
@@ -2497,7 +2610,7 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -2553,7 +2666,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -2609,7 +2722,7 @@ It is used to map editing field in the card.
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -2706,7 +2819,7 @@ It is used to set the particular editType in the card for editing.
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -2762,7 +2875,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
                                 { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                                 { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                                 { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
-                                { field: "Text", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
+                                { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
                     ],
                     allowEditing: true,
                     allowAdding: true
@@ -2821,7 +2934,7 @@ It is used to set the particular editparams in the card for editing.
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -2878,7 +2991,7 @@ It is used to specify defaultValue in the card.
                         { field: "Status", editType: ej.Kanban.EditingType.String, defaultValue: "Open" },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -3024,7 +3137,7 @@ This specifies to set the position of an External edit form either in the top-ri
                         { field: "Status", editType: ej.Kanban.EditingType.String },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }],
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
                 },
@@ -3884,7 +3997,7 @@ To change the key in keyboard interaction to Kanban control.
                         { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
                         { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Text", editType: ej.Kanban.EditingType.TextArea }
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowEditing: true,
                     allowAdding: true
@@ -4205,7 +4318,7 @@ To customize the fields the searching operation can be perform.
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -4257,7 +4370,7 @@ To customize the searching string.
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -4309,7 +4422,7 @@ To customize the operator based on searching.
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -4361,7 +4474,7 @@ To customize the ignore case based on searching.
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -7942,6 +8055,123 @@ Triggered before the card is going to be selecting
     
 {% endhighlight %}
 
+### create
+{:#events:create}
+
+TTriggered for every Kanban Create.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from kanban
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script>
+    $("#Kanban").ejKanban({
+    create: function (args){}
+    });
+    </script>
+    
+{% endhighlight %}
+
+### cellClick
+{:#events:cellclick}
+
+Triggers after the cell is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the select cell index value.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the edited row index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    cellClick: function (args) {}
+    });
+    </script>
+
+{% endhighlight %}
 
 ### dataBound
 {:#events:databound}
@@ -8000,6 +8230,69 @@ Triggered the Kanban is bound with data during initial rendering.
     <script>
     $("#Kanban").ejKanban({
     dataBound: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
+
+### destroy
+{:#events:destroy}
+
+Triggered when Kanban going to destroy.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when destroy event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns deleted data.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    destroy: function (args) {}
     });
     </script>
     
@@ -8160,6 +8453,123 @@ Triggered after the task is edited.
     
 {% endhighlight %}
 
+### headerClick
+{:#events:headerclick}
+
+Triggers after the header is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the select cell index value.</td>
+</tr>
+<tr>
+<td class="name">columnData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the column object.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    headerClick: function (args) {}
+    });
+    </script>
+
+{% endhighlight %}
+
+### load
+{:#events:load}
+
+Triggered initial load.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when load event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    load: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
