@@ -41,7 +41,7 @@ Refer the below jQuery validation plugin script after jQuery script reference.
 
 {% endhighlight %}
 
-JQuery validation library contains some default settings for validating the form. By default, it ignores hidden elements in from validation. If validation gets fail, in-built “error” class will be added to corresponding element. Here you can specify a custom class with your own style using “errorClass” API and you can place the error message in necessary position using “errorPlacement” API. Refer following code block to customize the default jQuery validation settings.
+jQuery validation library contains some default settings for validating the form. By default, it ignores hidden elements in from validation. If validation gets fail, in-built “error” class will be added to corresponding element. Here you can specify a custom class with your own style using “errorClass” API and you can place the error message in necessary position using “errorPlacement” API. Refer following code block to customize the default jQuery validation settings.
 
    {% highlight javascript %}
        
