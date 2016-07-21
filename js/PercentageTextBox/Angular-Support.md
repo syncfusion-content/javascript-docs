@@ -16,7 +16,7 @@ The **PercentageTextBox** widget supports two types of **AngularJS support** nam
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **PercentageTextBox** widget, but the changes made in **PercentageTextBox** widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **PercentageTextBox** widget.
 
-**Two-way binding** supports both the processes; it applies the scope values to the **PercentageTextBox** properties as well as the changes made in the **PercentageTextBox** widget also get reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes; it applies the scope values to the **PercentageTextBox** properties as well as the changes made in the **PercentageTextBox** widget also get reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the **PercentageTextBox** widget element through the directive that starts with the letter **“e-“.**
 
@@ -35,8 +35,6 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
@@ -74,7 +72,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 
 
 
-The output of **PercentageTextBox** controls with **two-way angularJS binding** is as follows.
+The output of **PercentageTextBox** controls with **two-way AngularJS binding** is as follows.
 
 ![](/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png) 
 
