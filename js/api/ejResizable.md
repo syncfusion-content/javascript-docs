@@ -484,7 +484,7 @@ Sets the min Width for resizing
 
 
 
-Used to group sets of resizeable items.
+Used to group sets of resizable items.
 
 
 
