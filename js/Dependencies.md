@@ -81,5 +81,5 @@ Some JavaScript UI web widgets like Grid and Schedule requires the below assembl
 * Syncfusion.SfChart.WPF
 * Syncfusion.Shared.WPF
 
-All the above specified Syncfusion assemblies are available separately for the .NET Framerworks **4.0**, **4.5** and **4.5.1**.
+All the above specified Syncfusion assemblies are available separately for the .NET Frameworks **4.0**, **4.5** and **4.5.1**.
 
