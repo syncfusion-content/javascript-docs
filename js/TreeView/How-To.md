@@ -38,7 +38,7 @@ You can able to filter TreeView nodes based on node text. Refer the sample from 
 
 ## AngularJS data binding to update data while add and remove node
 
-TreeView allow you to bind and update tree data in mapped data component while add and removing node using Angular binding. Refer the sample from the link [AngularDataBinding](http://jsplayground.syncfusion.com/vcxy2cke#) to know how to update data using AngularJS binding.
+TreeView allow you to bind and update tree data in mapped data component while add and removing node using AngularJS binding. Refer the sample from the link [AngularDataBinding](http://jsplayground.syncfusion.com/vcxy2cke#) to know how to update data using AngularJS binding.
 
 ## Set Tooltip for TreeView nodes
 

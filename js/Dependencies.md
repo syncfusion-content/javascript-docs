@@ -14,7 +14,7 @@ documentation: ug
 **Essential JavaScript** components mainly relies on the following 3 common libraries –
 
 * jQuery 1.7.1 and later versions
-* jsRender - to render the templates.
+* JsRender - to render the templates.
 * jQuery.easing - to support the animation effects in the components.
 
 ## Server-side Libraries
@@ -81,5 +81,5 @@ Some JavaScript UI web widgets like Grid and Schedule requires the below assembl
 * Syncfusion.SfChart.WPF
 * Syncfusion.Shared.WPF
 
-All the above specified Syncfusion assemblies are available separately for the .NET Framerworks **4.0**, **4.5** and **4.5.1**.
+All the above specified Syncfusion assemblies are available separately for the .NET Frameworks **4.0**, **4.5** and **4.5.1**.
 

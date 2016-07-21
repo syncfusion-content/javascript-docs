@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular 2
 
-Essential JavaScript provides support for Angular 2 framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property defintion easier. 
+Essential JavaScript provides support for Angular 2 framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier. 
 
 # Getting Started
 

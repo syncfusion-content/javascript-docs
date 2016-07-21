@@ -16,7 +16,7 @@ documentation: ug
 * **Min and Max Values** — Specifies value range for the NumericTextBox.
 * **Spin Buttons** — Allows to increase or decrease the current value in the NumericTextBox.
 * **Step Value** — Allows to increment or decrement the current value by step value.
-* **Localization** — Essential JavaScript NumericTextBox **provide localization support**. These controls use Globalize.js, a simple JavaScript library that enables to globalize and localize the format, and parse numbers and dates according to the culture. For more information on Globalize.js, see [GitHub Here](https://github.com/jquery/globalize).
+* **Localization** — Essential JavaScript NumericTextBox **provide localization support**. These controls use ej.globalize.js file to globalize and localize the format, and parse numbers and dates according to the culture.
 * **Keyboard Navigation** — Allows to interact with NumericTextBox by using keyboard.
 * **RTL Support** — Support for right to left alignment of NumericTextBox input.
 * **Decimal Values** — specifies the number of digits to allow after the decimal point in the NumericTextBox.
