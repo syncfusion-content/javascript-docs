@@ -78,7 +78,7 @@ It defines the sprite CSS for the image tag.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[htmlAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
-It defines the HTML attributes such as class and styles for a node (li tag).<br/><br/></td></tr>
+It defines the HTML attributes such as class and styles for a node ("li" tag).<br/><br/></td></tr>
 <tr>
 <td>
 {{'[linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
