@@ -17,7 +17,7 @@ Horizontal orientation displays the menu items horizontally and it is the defaul
 
 The following steps explains you the details on rendering the **Menu** control. 
 
-In an **HTML** page, add the **&lt;ul&gt;** and **&lt;li&gt;** to configure **Menu** control.
+In an **HTML** page, add the **&lt;UL&gt;** and **&lt;LI&gt;** to configure **Menu** control.
 
 {% highlight html %}
 

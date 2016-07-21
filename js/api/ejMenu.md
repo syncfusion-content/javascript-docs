@@ -659,7 +659,7 @@ It receives datasource as Essential DataManager object and JSON object.
 {:#members:fields-htmlattribute}
 
 
-Specifies the HTML attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML attributes to &ldquo;LI&rdquo; item list.
 
 
 ### fields.id `string`
@@ -705,7 +705,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 ### fields.spriteCssClass `string`
 {:#members:fields-spritecssclass}
 
-Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
+Specifies the sprite CSS class to &ldquo;LI&rdquo; item list.
 
 
 ### fields.tableName `string`
