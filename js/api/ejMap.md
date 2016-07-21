@@ -1216,7 +1216,7 @@ Specifies the datasource for the shape layer
 ### layers.shapeDataPath `string`
 {:#members:layers-shapedatapath}
 
-Specifies the datapath of shape 
+Specifies the data path of shape 
 
 
 #### Example
@@ -1247,7 +1247,7 @@ Specifies the datapath of shape
 ### layers.shapePropertyPath `string`
 {:#members:layers-shapepropertypath}
 
-Specifies the datapath of shape 
+Specifies the data path of shape 
 
 
 #### Example
