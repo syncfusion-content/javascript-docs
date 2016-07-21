@@ -1805,6 +1805,53 @@ Pause the auto play while hover on the rotator content.
 
 
 
+### template `string`
+{:#members:template}
+
+The template to display the Rotator widget with customized appearance.
+
+
+
+#### Default Value: 
+* null
+
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+           <div class="cols-sample-area">
+                <div class="frame">
+                    <ul id="sliderContent">                        
+                    </ul>
+                </div>
+            </div>
+
+<script>
+           var themeslist = [
+                { text: "Colorful-Night", url: "../content/images/rotator/snowfall.jpg", cls: "text" },
+                { text: "Technology", url: "../content/images/rotator/tablet.jpg" },
+                { text: "Nature", url: "../content/images/rotator/nature.jpg" },
+                { text: "Snow Fall", url: "../content/images/rotator/snowfall.jpg" },
+                { text: "Credit Card", url: "../content/images/rotator/card.jpg" },
+                { text: "Beautiful Bird", url: "../content/images/rotator/bird.jpg" },
+                { text: "Amazing Sculptures", url: "../content/images/rotator/sculpture.jpg" }				
+                ];
+
+            $("#sliderContent").ejRotator({
+		dataSource: themeslist,
+                slideWidth: "100%",
+                frameSpace: "0px",
+		slideHeight: "auto",
+		template: '<div class="image"><img src = ${url} title = ${text} class="image"/> </div>' 				
+            });        
+</script>
+{% endhighlight %}
+
+
 
 
 ### thumbnailSourceID `object`
@@ -2358,6 +2405,83 @@ $("#sliderContent").ejRotator();
 //Moves to the previous slide.
  $("#sliderContent").ejRotator("slidePrevious");
 </script>{% endhighlight %}
+
+
+
+
+
+### updateTemplateById(id, index)
+{:#methods:updatetemplatebyid}
+
+
+
+
+This method is used to update/modify the slide content of template rotator by using id based on index value.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">index of an slide</td>
+</tr>
+<tr>
+<td class="name">id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">id of a new updated slide</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
+//initialize the Rotator object
+$("#sliderContent").ejRotator();
+        var slideObj = $("#sliderContent").data("ejRotator");
+        //Moves to the previous slide.
+        slideObj.updateTemplateById("newId",2);
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
+$("#sliderContent").ejRotator();
+//Moves to the previous slide.
+ $("#sliderContent").ejRotator("updateTemplateById",'newId', 2);
+</script>{% endhighlight %}
+
+
 
 
 

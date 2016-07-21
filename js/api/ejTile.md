@@ -1608,10 +1608,17 @@ Update the image template of tile item to another one.
 <tbody>
 <tr>
 <td class="name">
-name</td>
+id</td>
 <td class="type">
 string</td>
 <td class="description">UpdateTemplate by using id</td>
+</tr>
+<tr>
+<td class="name">
+index</td>
+<td class="type">
+number</td>
+<td class="description">index of the tile</td>
 </tr>
 </tbody>
 </table>
