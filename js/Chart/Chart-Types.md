@@ -2241,7 +2241,7 @@ To customize the connector line color, width, opacity and dashArray of the water
 
 ## Error bar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(line, column, bar, scatter, area, candle, hilo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *"visible"* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *"visible"* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
 
 
 {% highlight javascript %}
