@@ -4691,12 +4691,10 @@ $("#Grid").ejGrid({
 ### toolbarSettings.toolbarItems `Array`
 {:#members:toolbarsettings-toolbaritems}
 
-<ts name="ej.Grid.ToolBarItems"/>
-
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
 
 #### Default Value:
-{:.param
+{:.param}
 * []
 
 <table>
