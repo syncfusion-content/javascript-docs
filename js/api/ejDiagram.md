@@ -2362,7 +2362,7 @@ Sets the type of the Association in a BPMN Process
     <tbody>
         <tr>
             <td class="name">Default</td>
-            <td class="description last">Used to notate default assocoation in a BPMN Process</td>
+            <td class="description last">Used to notate default association in a BPMN Process</td>
        </tr>
         <tr>
             <td class="name">Directional</td>
@@ -2410,7 +2410,7 @@ Sets the type of the message flow. Applicable, if the connector is of type "BPMN
     <tbody>
         <tr>
             <td class="name">Default</td>
-            <td class="description last">Used to notate the default messgae flow in a BPMN Process</td>
+            <td class="description last">Used to notate the default message flow in a BPMN Process</td>
        </tr>
         <tr>
             <td class="name">InitiatingMessage</td>
@@ -4464,7 +4464,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection"/>
 
-Sets the direction of the text annotion
+Sets the direction of the text annotation
 
 <table class="props">
     <thead>
@@ -8525,7 +8525,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.collapsed `Boolean`
 {:#members:nodes-subprocess-collapsed}
 
-Sets whether the bpmn subprocess is triggered as a collapsed of a specific activity
+Sets whether the BPMN subprocess is triggered as a collapsed of a specific activity
 
 #### Default Value:
 
@@ -8576,7 +8576,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.events `array`
 {:#members:nodes-subprocess-events}
 
-Defines the collection of events that need to be appended witha BPMN Sub-Process
+Defines the collection of events that need to be appended with BPMN Sub-Process
 
 #### Default Value:
 
@@ -8737,7 +8737,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.task `Object`
 {:#members:nodes-task}
 
-Defines the task of the bpmn activity. Applicable, if the type of activity is set as task.
+Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
 
 #### Default Value:
 
