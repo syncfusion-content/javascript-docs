@@ -76,7 +76,7 @@ Default Value:
 
 
 
-* 10 px
+* 10 pixels
 
 
 
@@ -133,7 +133,7 @@ Default Value:
 
 
 
-* 150 px
+* 150 pixels
 
 
 
@@ -462,7 +462,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -540,7 +540,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -599,7 +599,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -658,7 +658,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -717,7 +717,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -776,7 +776,7 @@ Default Value:
 
 
 
-* 1 px
+* 1 pixel
 
 
 
@@ -1049,7 +1049,7 @@ Default Value:
 
 
 
-* 3 px
+* 3 pixels
 
 
 
@@ -1106,7 +1106,7 @@ Default Value:
 
 
 
-* 4 px
+* 4 pixels
 
 
 
