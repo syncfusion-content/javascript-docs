@@ -7,11 +7,11 @@ documentation: ug
 ---
 # Selection
 
-Selection functionality enables to select, cell or range of cells to manipulate data on it. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") as true.
+Selection functionality enables selection of cells or range of cells to manipulate data. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") as true.
 
 ## Selection modes
 
-Selection can be performed as single or range. The default selection mode can be set using [`selectionUnit`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectionunit "selectionUnit") in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings").
+The mode of selection can be single or range selection. The default selection mode can be set using [`selectionUnit`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectionunit "selectionUnit") in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings").
 The two types of selection mode are as follows
 
 * Single - ej.Spreadsheet.SelectionUnit.Single
