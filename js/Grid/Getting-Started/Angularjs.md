@@ -122,7 +122,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 
 ## Enable Paging
 
-`Paging` can be enabled by setting the `e-allowpaging` to `true`. This adds the pager in the bottom of the grid and page size can be customized by using the `e-pagesettings-pagesize` attribute.
+`Paging` can be enabled by setting the `e-allowpaging` to `true`. This adds the pager in the bottom of the grid and page size can be customized by using the `e-pageSettings-pageSize` attribute.
 
 
 {% highlight html %}
@@ -146,7 +146,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 
 {% endhighlight %}
 
-N> 1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> 1.Pager settings can be customized by using the `e-pageSettings-pageSize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 N> 2.The array properties of Syncfusion widget's in AngularJS has to be defined by using the scope variable.
 
@@ -184,7 +184,7 @@ N> 2.The array properties of Syncfusion widget's in AngularJS has to be defined 
 
 ## Enable Grouping
 
-`Grouping` can be enabled by setting the `e-allowgrouping` to `true`. Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `e-groupsettings-groupedcolumns` attribute. 
+`Grouping` can be enabled by setting the `e-allowgrouping` to `true`. Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `e-groupSettings-groupedColumns` attribute. 
 
 {% highlight html %}
 

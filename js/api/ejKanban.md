@@ -986,63 +986,57 @@ Gets the template to render custom menu.
 {% highlight html %}
 
     <div id="Kanban"></div>
-    <script id="contexttemplate" type="text/x-jsrender">
-    <ul>
+    <ul id="contexttemplate">
         <li><a>hi</a></li>
         <li><a>hi</a></li>
         <li><a>hi</a></li>
     </ul>
-    </script>
-    <script id="contexttemplate1" type="text/x-jsrender">
-    <ul>
+    <ul id="contexttemplate1">
         <li><a>hello</a></li>
         <li><a>hello</a></li>
         <li><a>hello</a></li>
     </ul>
-    </script>
-    <script id="contexttemplate2" type="text/x-jsrender">
-    <ul>
+    <ul id="contexttemplate2">
         <li><a>hihello</a></li>
         <li><a>hihello</a></li>
         <li><a>hihello</a></li>
     </ul>
-    </script>
     <script type="text/javascript">
-    window.kanbandata = [
-         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
-         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
-         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
-    ];
-    $(function () {
-        var data = ej.DataManager(window.kanbandata);
-        $("#Kanban").ejKanban(
-        {
-            dataSource: data,
-            columns: [
-                { headerText: "Backlog", key: "Open" },
-                { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" },
-                { headerText: "Done", key: "Close" }
-            ],
-            keyField: "Status",
-            fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
-            },
-            contextMenuSettings: {
-                enable: true,
-                customMenuItems: [
-                          { text: "Menu1" },
-                          { text: "Menu2", template: "#contexttemplate1" },
-                          { text: "Menu3", template: "#contexttemplate2" }
+        window.kanbandata = [
+             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+             { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+             { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
+             { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+        ];
+        $(function () {
+            var data = ej.DataManager(window.kanbandata);
+            $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
-            }
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    content: "Summary",
+                },
+                contextMenuSettings: {
+                    enable: true,
+                    customMenuItems: [
+                              { text: "Menu1", template: "#contexttemplate" },
+                              { text: "Menu2", template: "#contexttemplate1" },
+                              { text: "Menu3", template: "#contexttemplate2" }
+                    ],
+                }
+            });
         });
-    });
     </script>
 
 {% endhighlight %}
