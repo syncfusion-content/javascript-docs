@@ -9,11 +9,12 @@ documentation: ug
 
 # Worksheet
 
-Worksheet is a collection of cells organized by rows and columns for storing, formatting, manipulating and displaying data in grid format. You can use sheet tab for switching between worksheets.
+Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets.
+By default Spreadsheet creates single worksheet since default sheetCount value is `1`.
 
 ## List of Sheet Operation 
 
-The following list of operations done within the Worksheet are
+You can perform following operations in Worksheet,
 
 * Add
 * Remove
@@ -22,7 +23,7 @@ The following list of operations done within the Worksheet are
 
 ### Add
 
-The Spreadsheet has support for inserting new sheet. You can dynamically insert sheet by following ways,
+The Spreadsheet has support for inserting new sheet. You can dynamically insert sheet by one of the following ways,
 
 * Click the New sheet button in the spreadsheet sheet tab.
 * Click OTHERS tab in the ribbon and select Insert dropdown button. Then click Insert Sheet.
@@ -84,9 +85,10 @@ The following output is displayed as a result of the above code example.
 
 ### Rename
 
-The Spreadsheet has support for renaming an existing worksheet. You can dynamically rename worksheet by right clicking on the worksheet on the sheet tab and then click Rename in the context menu. 
+The Spreadsheet has support for renaming an existing worksheet. You can dynamically rename worksheet by using one of the following ways,
 
-You can also rename an active worksheet using [`sheetRename`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:sheetrename "sheetRename") method.
+* Right clicking on the worksheet on the sheet tab and then click Rename in the context menu. 
+* Rename an active worksheet using [`sheetRename`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:sheetrename "sheetRename") method.
 
 The following code example describes the above behavior.
 
@@ -102,7 +104,7 @@ The following code example describes the above behavior.
     });
     function loadComplete(args) {          
         if(!this.isImport)
-            this.sheetRename("RenamedSheet")
+            this.sheetRename("RenameSheet")
     }
 {% endhighlight %}
 
@@ -111,9 +113,10 @@ The following output is displayed as a result of the above code example.
 
 ### Move
 
-The Spreadsheet provides support to move an existing worksheet. You can dynamically move a worksheet by right clicking on the worksheet on the sheet tab and then click Move or Copy in the context menu. Then select the sheet that you have to move in the "Move or Copy" dialog.
+The Spreadsheet provides support to move an existing worksheet. You can dynamically move a worksheet by using one of the following ways,
 
-You can also move an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
+* Right clicking on the worksheet on the sheet tab and then click Move or Copy in the context menu. Then select the sheet that you have to move in the "Move or Copy" dialog.
+* Move an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
 
 The following code example describes the above behavior.
 
@@ -139,9 +142,10 @@ The following output is displayed as a result of the above code example.
 
 ### Copy
 
-The Spreadsheet provides support to create a copy an existing worksheet. You can dynamically copy a worksheet by right clicking on the worksheet in the sheet tab that you have to copy and then click Move or Copy in the context menu. Then check the "Create a copy" checkbox in the "Move or Copy" dialog. 
+The Spreadsheet provides support to create a copy an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
 
-You can also copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
+* Right clicking on the worksheet in the sheet tab that you have to copy and then click Move or Copy in the context menu. Then check the "Create a copy" checkbox in the "Move or Copy" dialog. 
+* Copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
 
 The following code example describes the above behavior.
 
@@ -167,9 +171,10 @@ The following output is displayed as a result of the above code example.
 
 ## Headers
 
-Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/ hide worksheet header by selecting PAGE LAYOUT tab in the ribbon and uncheck Headings in the Show group.
+Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/ hide worksheet header by using one of the following ways,
 
-You can also show / hide visibility of worksheet headers using showHeadings method.
+* Select PAGE LAYOUT tab in the ribbon and uncheck Headings in the Show group.
+* Show/Hide the worksheet headers using [`showHeadings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showheadings "showHeadings") property and [`showHeadings`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:showheadings "showHeadings") method.
 
 The following code example describes the above behavior.
 
@@ -192,14 +197,13 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 ![](Worksheet_images/Worksheet_img6.png)
 
-## Show / Hide Sheets
+## Show/Hide Sheets
 
-You can dynamically show/ hide worksheet by right clicking on the worksheet on the sheet tab and then click Hide or Unhide in the context menu.
+You can dynamically show/ hide worksheet by using one of the following ways,
 
-You can also show / hide worksheet using the following methods. 
-
-* [`hideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:hidesheet "hideSheet")
-* [`unhideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unhidesheet "unhideSheet")
+* Right click worksheet on the sheet tab and then click Hide or Unhide in the context menu.
+* Hide the sheet using [`hideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:hidesheet "hideSheet") method.
+* Show the hidden sheet using [`unhideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unhidesheet "unhideSheet") method.
 
 The following code example describes the above behavior.
 
@@ -226,11 +230,12 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 ![](Worksheet_images/Worksheet_img7.png)
 
-## Show / Hide Gridlines
+## Show/Hide Gridlines
 
-Gridlines act as a border like appearance of cells. They are used to distinguish cells on the worksheet. You can dynamically show / hide gridlines by selecting PAGE LAYOUT tab in the ribbon and uncheck Gridlines in the Show group.
+Gridlines act as a border like appearance of cells. They are used to distinguish cells on the worksheet. You can dynamically show/hide gridlines by using one of the following ways,
 
-You can also show / hide gridlines in a worksheet using [`showGridlines`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showgridlines "showGridlines") property.
+* Select PAGE LAYOUT tab in the ribbon and uncheck Gridlines in the Show group.
+* Show/Hide gridlines in a worksheet using [`showGridlines`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showgridlines "showGridlines") property and [`showGridlines`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:showgridlines "showGridlines") method.
 
 The following code example describes the above behavior.
 

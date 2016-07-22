@@ -5170,6 +5170,87 @@ $("#Spreadsheet").ejSpreadsheet("showFormulaBar ");
 
 {% endhighlight %}
 
+### showGridlines(status)
+{:#methods:showgridlines}
+
+This method is used to show/hide gridlines in active sheet in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true to show the gridlines</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide the gridlines in the sheet.
+xlObj.showGridlines(false);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// hide the gridlines in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showGridlines", false);
+</script>
+
+{% endhighlight %}
+
+### showHeadings(status)
+{:#methods:showheadings}
+
+This method is used to show/hide the headers in active sheet in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true to show the sheet headers.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide the headers in the sheet.
+xlObj.showHeadings(false);
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To hide the headers in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showHeadings", false);
+</script>
+
+{% endhighlight %}
+
 ### showRow(startRow, endRow)
 {:#methods:showrow}
 
