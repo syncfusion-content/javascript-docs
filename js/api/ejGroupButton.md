@@ -293,7 +293,7 @@ Specifies the content type of the button. Button can have image only, text only,
 ### fields.htmlAttribute `object`
 
 
-Specifies the html attributes to the element.
+Specifies the HTML attributes to the element.
  
  
 ### fields.imagePosition `enum|string`
