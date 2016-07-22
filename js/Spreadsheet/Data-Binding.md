@@ -10,15 +10,12 @@ documentation: ug
 Spreadsheet can be populated with external datasource using [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property can be assigned either with the instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
 
 * Local Data
-
 * Remote Data
-
 * HTML Table Data
 
 ## Local Data
 
-
-To bind local data to the Spreadsheet, you can assign a JSON array to the [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind local data to the Spreadsheet
+To bind local data to the Spreadsheet, you can assign a JSON array to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind local data to the Spreadsheet
 
 {% highlight html %}
 
@@ -41,7 +38,7 @@ The following output is displayed as a result of the above code snippets.
 
 ##  Remote Data
 
-To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") to the [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet
+To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet
 
 {% highlight html %}
 
@@ -66,7 +63,7 @@ The following output is displayed as a result of the above code snippets.
 
 ## HTML Table Data
 
-A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet
+A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet
 
 {% highlight html %}
 
@@ -144,13 +141,11 @@ The following output is displayed as a result of the above code snippets.
 
 ## Ways to bind data in Spreadsheet
 
-You can bind data in Spreadsheet with following ways,
+You can bind data to Spreadsheet in following ways,
 
 * Cell binding
-
-* Range binding 
-
-* Sheet binding 
+* Range binding
+* Sheet binding
 
 ### Cell Binding
 
@@ -186,7 +181,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             style
         </td>
         <td>
-            To specify style in a cell
+            To specify style in the cell
         </td>
     </tr>
     <tr>
@@ -194,7 +189,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             format
         </td>
         <td>
-            To specify number format in a cell
+            To specify number format in the cell
         </td>
     </tr>
     <tr>
@@ -202,7 +197,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             comment
         </td>
         <td>
-            To specify comment in a cell
+            To specify comment in the cell
         </td>
     </tr>
     <tr>        
@@ -210,7 +205,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             hyperlink
         </td>
         <td>
-            To specify hyperlink in a cell
+            To specify hyperlink in the cell
         </td>
     </tr>
 </table>
@@ -239,7 +234,7 @@ The individual row properties are listed below,
             height
         </td>
         <td>
-            To specify row height
+            To specify height in the row
         </td>
     </tr>
 </table>
@@ -334,7 +329,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings
             {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-datasource "dataSource")'| markdownify }}
         </td>
         <td>
-            To specify JSON or ejDataManager
+            To specify JSON or ej.DataManager
         </td>
     </tr>
     <tr>    
@@ -342,7 +337,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings
             {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-query "query")'| markdownify }}
         </td>
         <td>
-            To specify query for ejDataManager
+            To specify query for ej.DataManager
         </td>
     </tr>
     <tr>
@@ -423,7 +418,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
             {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource")'| markdownify }}
         </td>
         <td>
-            To specify JSON or ejDataManager
+            To specify JSON or ej.DataManager
         </td>
     </tr>
     <tr>
@@ -431,7 +426,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
             {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-query "query")'| markdownify }}
         </td>
         <td>
-            To specify query for ejDataManager
+            To specify query for ej.DataManager
         </td>
     </tr>
     <tr>
