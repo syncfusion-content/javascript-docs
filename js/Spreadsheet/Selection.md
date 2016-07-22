@@ -7,79 +7,24 @@ documentation: ug
 ---
 # Selection
 
-Selection functionality enables selection of cells or range of cells to manipulate data. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") as true.
+Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") as `true`.
 
 ## Selection modes
 
 The mode of selection can be single or range selection. The default selection mode can be set using [`selectionUnit`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectionunit "selectionUnit") in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings").
 The two types of selection mode are as follows
 
-* Single - ej.Spreadsheet.SelectionUnit.Single
-
-* Range - ej.Spreadsheet.SelectionUnit.Range
-
-### Single Selection
-
-Single Selection is used to select a single cell, row or column.
-The following code example describes the above behavior.
-
-{% highlight html %}
-
-<div id="Spreadsheet"></div>
-
-<script>
-$(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
-});
-});
-function loadComplete() {
-this.XLSelection.selectRange("A1");
-}
-</script>
-
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](Selection_images/Selection_img1.png)
-
-### Range Selection
-
-Range selection is used to select a single or multiple cell, row or column.
-The following code example describes the above behavior.
-
-{% highlight html %}
-
-<div id="Spreadsheet"></div>
-
-<script>
-$(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
-});
-});
-function loadComplete() {
-this.XLSelection.selectRange("A1:C3");
-}
-</script>
-
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](Selection_images/Selection_img2.png)
+* Single - `ej.Spreadsheet.SelectionUnit.Single`
+* Range - `ej.Spreadsheet.SelectionUnit.Range`
 
 ## Selection Type
 
 There are four types of selection in Spreadsheet
 
 1. Cell Selection
-
 2. Row Selection
-
 3. Column Selection
-
 4. Sheet Selection
-
 
 You can set default [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings").
 
@@ -106,7 +51,7 @@ this.XLSelection.selectRange("A1:C3");
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Selection_images/Selection_img2.png)
+![](Selection_images/Selection_img1.png)
 
 ### Row Selection 
 
@@ -131,9 +76,9 @@ this.XLSelection.selectRows(0,2);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Selection_images/Selection_img3.png)
+![](Selection_images/Selection_img2.png)
 
-This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as ej.Spreadsheet.SelectionType.Row.
+N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Row`.
 
 ### Column Selection
 
@@ -158,9 +103,9 @@ this.XLSelection.selectColumns(0,2);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Selection_images/Selection_img4.png)
+![](Selection_images/Selection_img3.png)
 
-This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as ej.Spreadsheet.SelectionType.Column. 
+N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Column`. 
 
 ### Sheet Selection
 
@@ -180,11 +125,10 @@ loadComplete: "loadComplete"
 function loadComplete() {
 this.XLSelection.selectSheet();
 }
-
 </script>
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example. 
-![](Selection_images/Selection_img5.png)
+![](Selection_images/Selection_img4.png)
 
