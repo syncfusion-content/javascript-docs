@@ -213,7 +213,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
+$(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
         'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
@@ -282,8 +282,7 @@ The following output is displayed as a result of the above code example.
 
 ## Resizing
 
-You can change [`columnWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#members:columnwidth "columnWidth") and [`rowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#members:rowheight "rowHeight") with the specified value.
-You have to enable [`allowResizing`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowresizing "allowResizing") to perform resizing. 
+You can change [`columnWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#members:columnwidth "columnWidth") and [`rowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#members:rowheight "rowHeight") with the specified value. You have to enable [`allowResizing`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowresizing "allowResizing") to perform resizing. 
 
 You can perform resizing using one of the following ways,
 
