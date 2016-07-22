@@ -946,7 +946,7 @@ The following table contains various types of BPMN boundaries.
 
 ### Data
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as "dataobject" and `type` property defines wheather data is an input or a output. You can create multiple instances of data object with the `collection` property of data.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as "dataobject" and `type` property defines whether data is an input or a output. You can create multiple instances of data object with the `collection` property of data.
 
 {% highlight javascript %}
 

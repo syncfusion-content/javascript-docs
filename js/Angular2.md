@@ -17,7 +17,7 @@ Before getting started with Syncfusion JavaScript for Angular 2, prepare your ap
 
 ## 1. Preparing the HTML document
 
-Angular 2 wrappers for Syncfusion JavaScript controls is available in the file `ej.angular2.js` which can be copied from Syncfusion Build installed location.
+Angular 2 wrappers for Syncfusion JavaScript controls is available in the file `ej.angular2.min.js` which can be copied from Syncfusion Build installed location.
 
 {% highlight html %}
 
@@ -86,36 +86,89 @@ import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
 
 {% endhighlight %}
 
-Now you have imported the list of Angular2 components and child directives if any, to your application. Also in HTML, you can create control element with tag name prefixing `ej-` and control name, i.e., for dialog component it will be `ej-dialog`. All the properties and events of Syncfusion controls can be initialized with the exact casing of original property names. i.e., for dialog component, setting `title` and `showOnInit` property will be 
+### Property Binding
+
+Properties and events names of Syncfusion controls can be initialized with the exact casing of original property names. Bind property to the controls within square bracket(`[]`).
+
+For autocomplete component, create attribute with prefixing `ej-` and control name then setting `dataSource` and `value` property will be
 
 {% highlight html %}
 
-<ej-dialog [title]="'Welcome'" [showOnInit]="false" #welcomeMsg>
-My First Syncfusion JavaScript’s Angular2 component
-</ej-dialog>
+<input type="text" ej-autocomplete [value]= "Austin-Healey" [dataSource]="states" [(ngModel)]="value"/>
 
 {% endhighlight %}
 
-So the complete file content of `app.component.ts` will be as follows
+### Event Binding
+
+Events can be bind to controls using event name within bracket [`()`]. For example, to bind open event on ejAutocomplete, we need to define attribute (open) as onOpen($event). Refer the following snippet for event binding.
+
+{% highlight html %}
+
+<input type="text" ej-autocomplete (open)="onOpen($event)" />
+
+{% endhighlight %}
+
+Define event definition at component side as like follow.
 
 {% highlight javascript %}
 
-import {Component} from '@angular/core';
-import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
-
-@Component({
-    selector: 'my-app',
-    template: `<h1>My First Angular 2 App</h1>
-<ej-dialog title="Welcome" [showOnInit]="false" #welcomeMsg >
-My First Syncfusion JavaScript’s Angular2 component
-</ej-dialog>
-`,
-    directives: [EJ_DIALOG_COMPONENTS]
-})
 export class AppComponent { 
+    onOpen(e){
+        console.log("Triggers after the suggestion list is opened.");        
+    }
 }
 
 {% endhighlight %}
+
+### Two-way Binding
+
+Two-way binding for Angular2 is bind the value in both view and component using attiribute `[(ngModel)]` and use the same for Syncfusion widget also, it can reflect the changes both ways. In general, we could have more than one property bound to the same variable.
+
+Two-way binding for Autocomplete has been demonstrated in the below code,
+
+{% highlight javascript %}
+
+@Component({
+    selector: 'my-app',
+    template: ' <h2>Two-Way Binding</h2>
+    <input type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
+    <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
+    ',
+    directives: [EJ_AUTOCOMPLETE_COMPONENTS],
+})
+export class DefaultComponent {
+    states: Array<string>;
+    value:string; 
+    constructor(public northwindService: NorthwindService) {
+        this.states = [
+         "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
+                    "BMW 7 ", "Bentley Mulsanne", "Bugatti Veyron",
+                    "Chevrolet Camaro", "Cadillac ",
+                    "Duesenberg J ", "Dodge Sprinter",
+                    "Elantra", "Excavator",
+                    "Ford Boss 302", "Ferrari 360", "Ford Thunderbird ",
+                    "GAZ Siber",
+                    "Honda S2000", "Hyundai Santro",
+                    "Isuzu Swift", "Infiniti Skyline",
+                    "Jaguar XJS",
+                    "Kia Sedona EX", "Koenigsegg Agera",
+                    "Lotus Esprit", "Lamborghini Diablo ",
+                    "Mercedes-Benz ", "Mercury Coupe", "Maruti Alto 800",
+                    "Nissan Qashqai",
+                    "Oldsmobile S98", "Opel Superboss",
+                    "Porsche 356 ", "Pontiac Sunbird",
+                    "Scion SRS/SC/SD", "Saab Sportcombi", "Subaru Sambar", "Suzuki Swift",
+                    "Triumph Spitfire ", "Toyota 2000GT",
+                    "Volvo P1800", "Volkswagen Shirako"
+        ];
+        this.value="Jaguar XJS";
+   }
+}
+
+
+{% endhighlight %}
+
+
 
 N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) angular help document.
 
@@ -131,7 +184,7 @@ You can invoke the ej widget’s public methods using Angular 2 component instan
 
 {% endhighlight %}
 
-For ex, to invoke `open` method of dialog widget, you can use like `welcomeMsg.widget.open()`. So the complete file content of `app.component.ts` will be as follows
+For ex, to invoke `clearText` method of autocomplete widget, you can use like `myApp.widget.clearText()`. So the complete code structure of `app.component.ts` will be as follows
 
 {% highlight javascript %}
 
@@ -140,17 +193,44 @@ import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
 
 @Component({
     selector: 'my-app',
-    template: `<h1>My First Angular 2 App</h1>
-
-<button (click)="welcomeMsg.widget.open()">Show Dialog</button>
-
-<ej-dialog title="Welcome" [showOnInit]="false"  #welcomeMsg >
-My First Syncfusion JavaScript’s Angular2 component
-</ej-dialog>
-`,
-    directives: [EJ_DIALOG_COMPONENTS]
+    template: ' <h2>Two-Way Binding</h2>
+    <button id="clearTxt" (click)="myApp.widget.clearText()">clearText</button>
+    <input #myApp type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
+    <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
+    ',
+    directives: [EJ_AUTOCOMPLETE_COMPONENTS],
 })
-export class AppComponent {}
+export class DefaultComponent {
+    states: Array<string>;
+    value:string; 
+    constructor(public northwindService: NorthwindService) {
+        this.states = [
+         "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
+                    "BMW 7 ", "Bentley Mulsanne", "Bugatti Veyron",
+                    "Chevrolet Camaro", "Cadillac ",
+                    "Duesenberg J ", "Dodge Sprinter",
+                    "Elantra", "Excavator",
+                    "Ford Boss 302", "Ferrari 360", "Ford Thunderbird ",
+                    "GAZ Siber",
+                    "Honda S2000", "Hyundai Santro",
+                    "Isuzu Swift", "Infiniti Skyline",
+                    "Jaguar XJS",
+                    "Kia Sedona EX", "Koenigsegg Agera",
+                    "Lotus Esprit", "Lamborghini Diablo ",
+                    "Mercedes-Benz ", "Mercury Coupe", "Maruti Alto 800",
+                    "Nissan Qashqai",
+                    "Oldsmobile S98", "Opel Superboss",
+                    "Porsche 356 ", "Pontiac Sunbird",
+                    "Scion SRS/SC/SD", "Saab Sportcombi", "Subaru Sambar", "Suzuki Swift",
+                    "Triumph Spitfire ", "Toyota 2000GT",
+                    "Volvo P1800", "Volkswagen Shirako"
+        ];
+        this.value="Jaguar XJS";
+   }
+   onOpen(e){
+        console.log("Triggers after the suggestion list is opened.");        
+    }
+}
 
 {% endhighlight %}
 

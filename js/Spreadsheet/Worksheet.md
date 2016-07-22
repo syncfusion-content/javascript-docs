@@ -9,8 +9,7 @@ documentation: ug
 
 # Worksheet
 
-Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets.
-By default Spreadsheet creates single worksheet since default sheetCount value is `1`.
+Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default [`sheetCount`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheetcount "sheetCount") value is `1`.
 
 ## List of Sheet Operation 
 
@@ -37,16 +36,16 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({                                            
-            sheetCount: 1,
-            loadComplete: "loadComplete"               
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                            
+        sheetCount: 1,
+        loadComplete: "loadComplete"               
     });
-    function loadComplete(args) {          
-        if(!this.isImport)
-            this.addNewSheet();
-    }
+});
+function loadComplete(args) {          
+    if(!this.isImport)
+        this.addNewSheet();
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -68,16 +67,16 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({                                        
-            sheetCount: 2,
-            loadComplete: "loadComplete"               
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                        
+        sheetCount: 2,
+        loadComplete: "loadComplete"               
     });
-    function loadComplete(args) {          
-        if(!this.isImport)
-            this.deleteSheet();
-    }
+});
+function loadComplete(args) {          
+    if(!this.isImport)
+        this.deleteSheet();
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -97,15 +96,15 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({                                                       
-            loadComplete: "loadComplete"               
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                                       
+        loadComplete: "loadComplete"               
     });
-    function loadComplete(args) {          
-        if(!this.isImport)
-            this.sheetRename("RenameSheet")
-    }
+});
+function loadComplete(args) {          
+    if(!this.isImport)
+        this.sheetRename("RenameSheet")
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -125,16 +124,16 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({                                        
-            sheetCount: 3,
-            loadComplete: "loadComplete"               
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                        
+        sheetCount: 3,
+        loadComplete: "loadComplete"               
     });
-    function loadComplete(args) {          
-        if (!this.isImport)
-            this.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
-    }
+});
+function loadComplete(args) {          
+    if (!this.isImport)
+        this.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -142,7 +141,7 @@ The following output is displayed as a result of the above code example.
 
 ### Copy
 
-The Spreadsheet provides support to create a copy an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
+The Spreadsheet provides support to create a copy of an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
 
 * Right clicking on the worksheet in the sheet tab that you have to copy and then click Move or Copy in the context menu. Then check the "Create a copy" checkbox in the "Move or Copy" dialog. 
 * Copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
@@ -154,16 +153,16 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({                                        
-            sheetCount: 3,
-            loadComplete: "loadComplete"               
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                        
+        sheetCount: 3,
+        loadComplete: "loadComplete"               
     });
-    function loadComplete(args) {          
+});
+function loadComplete(args) {          
     if (!this.isImport)
         this.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
-    }
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -183,15 +182,15 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({               
-            loadComplete: "loadComplete"
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({               
+        loadComplete: "loadComplete"
     });
-    function loadComplete(args) {
-        if (!this.isImport)
-            this.showHeadings(false);
-    }
+});
+function loadComplete(args) {
+    if (!this.isImport)
+        this.showHeadings(false);
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -212,19 +211,19 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({
-            sheetCount: 3,
-            loadComplete: "loadComplete"
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        sheetCount: 3,
+        loadComplete: "loadComplete"
     });
-    function loadComplete(args) {          
-        if (!this.isImport) {
-            this.hideSheet(1);
-            this.hideSheet(2);
-            this.unhideSheet(1);
-        }
+});
+function loadComplete(args) {          
+    if (!this.isImport) {
+        this.hideSheet(1);
+        this.hideSheet(2);
+        this.unhideSheet(1);
     }
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -244,11 +243,11 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    $(function () {
-        $("#Spreadsheet").ejSpreadsheet({
-            sheets: [{ showGridlines: false }]
-        });
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        sheets: [{ showGridlines: false }]
     });
+});
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
