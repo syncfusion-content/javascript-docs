@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Data Binding
 
-Spreadsheet can be populated with external datasource using [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property can be assigned either with the instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
+Spreadsheet can be populated with external datasource using [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property can be assigned either with the instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
 
 * Local Data
 * Remote Data
@@ -23,11 +23,11 @@ To bind local data to the Spreadsheet, you can assign a JSON array to the worksh
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                                
-sheets: [{
-dataSource: window.filterData // JSON
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({                                
+        sheets: [{
+            dataSource: window.filterData // JSON
+        }]
+    });
 });
 </script>
 
@@ -38,7 +38,7 @@ The following output is displayed as a result of the above code snippets.
 
 ##  Remote Data
 
-To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet
+To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet,
 
 {% highlight html %}
 
@@ -46,13 +46,13 @@ To bind remote data to the Spreadsheet, you can assign a service data as an inst
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-sheets: [{
-dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"),
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress"]),                    
-primaryKey: "OrderID"
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({                
+        sheets: [{
+            dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"),
+            query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress"]),                    
+            primaryKey: "OrderID"
+        }]
+    });
 });
 </script>
 
@@ -63,74 +63,74 @@ The following output is displayed as a result of the above code snippets.
 
 ## HTML Table Data
 
-A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet
+A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet
 
 {% highlight html %}
 
 <div id="Spreadsheet"></div>
 
 <table id="Table1">
-<thead>
-<tr>
-<th>Laptop</th>
-<th>Model</th>
-<th>Price</th>
-<th>OS</th>
-<th>RAM</th>
-<th>ScreenSize</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dell Vostro</td>
-<td>2520</td>
-<td>39990</td>
-<td>Windows 8</td>
-<td>4GB</td>
-<td>15.6</td>
-</tr>
-<tr>
-<td>HP Pavilion Sleekbook</td>
-<td>14-B104AU</td>
-<td>22800</td>
-<td>Windows 8</td>
-<td>2GB</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Sony Vaio</td>
-<td>E14A15</td>
-<td>42500</td>
-<td>Windows 7 Home Premium</td>
-<td>4GB DDR3 RAM</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Lenovo</td>
-<td>Yoga 13</td>
-<td>57000</td>
-<td>Windows 8 RT</td>
-<td>2GB DDR3 RAM</td>
-<td>11.6</td>
-</tr>
-<tr>
-<td>Toshiba</td>
-<td>L850-Y3110</td>
-<td>57700</td>
-<td>Windows 8 SL</td>
-<td>8GB DDR3 RAM</td>
-<td>15.6</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Laptop</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>OS</th>
+            <th>RAM</th>
+            <th>ScreenSize</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dell Vostro</td>
+            <td>2520</td>
+            <td>39990</td>
+            <td>Windows 8</td>
+            <td>4GB</td>
+            <td>15.6</td>
+        </tr>
+        <tr>
+            <td>HP Pavilion Sleekbook</td>
+            <td>14-B104AU</td>
+            <td>22800</td>
+            <td>Windows 8</td>
+            <td>2GB</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Sony Vaio</td>
+            <td>E14A15</td>
+            <td>42500</td>
+            <td>Windows 7 Home Premium</td>
+            <td>4GB DDR3 RAM</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Lenovo</td>
+            <td>Yoga 13</td>
+            <td>57000</td>
+            <td>Windows 8 RT</td>
+            <td>2GB DDR3 RAM</td>
+            <td>11.6</td>
+        </tr>
+        <tr>
+            <td>Toshiba</td>
+            <td>L850-Y3110</td>
+            <td>57700</td>
+            <td>Windows 8 SL</td>
+            <td>8GB DDR3 RAM</td>
+            <td>15.6</td>
+        </tr>
+    </tbody>
 </table>
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-sheets: [{
-dataSource: ej.DataManager($("#Table1"))
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({                
+        sheets: [{
+            dataSource: ej.DataManager($("#Table1"))
+        }]
+    });
 });
 </script>
 
@@ -247,62 +247,62 @@ You can specify particular row with `index` property and its height with `height
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({               
-sheets: [{
-rows: [{
-height: 30,
-cells: [
-{ value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "Price", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "Amount", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "Stock Detail", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "Website", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } }
-]
-},
-{
-cells: [
-{ value: "Casual Shoes", comment: { value: "Casual Footwears with wide variety of colors." } },                                
-{ value: "20", index: 2, format: { type: "currency" } },
-{ value: "=B2*C2" },
-{ value: "OUT OF STOCK" },
-{ value: "Amazon", hyperlink: { webAddr: "www.amazon.com" } }
-]
-},
-{
-cells: [
-{ value: "Sports Shoes", style: { "background-color": "#E5F3FF" } },
-{ value: "20", style: { "background-color": "#E5F3FF" } },
-{ value: "30", format: { type: "currency" }, style: { "background-color": "#E5F3FF" } },
-{ value: "=B3*C3", style: { "background-color": "#E5F3FF" } },
-{ value: "IN STOCK", style: { "background-color": "#E5F3FF" } },
-{ value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" }, style: { "background-color": "#E5F3FF" } }
-]
-},
-{
-cells: [
-{ value: "Formal Shoes", comment: { value: "Formal Footwears with wide range of sizes." } },
-{ value: "20" },
-{ value: "15", format: { type: "currency" } },
-{ value: "=B4*C4" },
-{ value: "IN STOCK" },
-{ value: "Amazon", hyperlink: { webAddr: "www.amazon.com" } }
-]
-},                    
-{
-height: 30,
-index: 5,
-cells: [
-{ style: { "background-color": "#428bca" } },
-{ style: { "background-color": "#428bca" } },
-{ value: "Total Amount", index: 2, style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ value: "=Sum(D2:D4)", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
-{ style: { "background-color": "#428bca" } },
-{ style: { "background-color": "#428bca" } }
-]
-}]                            
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({
+        sheets: [{
+            rows: [{
+                height: 30,
+                cells: [
+                { value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Price", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Amount", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Stock Detail", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Website", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } }
+                ]
+            },
+            {
+                cells: [
+                { value: "Casual Shoes", comment: { value: "Casual Footwears with wide variety of colors." } },
+                { value: "20", index: 2, format: { type: "currency" } },
+                { value: "=B2*C2" },
+                { value: "OUT OF STOCK" },
+                { value: "Amazon", hyperlink: { webAddr: "www.amazon.com" } }
+                ]
+            },
+            {
+                cells: [
+                { value: "Sports Shoes", style: { "background-color": "#E5F3FF" } },
+                { value: "20", style: { "background-color": "#E5F3FF" } },
+                { value: "30", format: { type: "currency" }, style: { "background-color": "#E5F3FF" } },
+                { value: "=B3*C3", style: { "background-color": "#E5F3FF" } },
+                { value: "IN STOCK", style: { "background-color": "#E5F3FF" } },
+                { value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" }, style: { "background-color": "#E5F3FF" } }
+                ]
+            },
+            {
+                cells: [
+                { value: "Formal Shoes", comment: { value: "Formal Footwears with wide range of sizes." } },
+                { value: "20" },
+                { value: "15", format: { type: "currency" } },
+                { value: "=B4*C4" },
+                { value: "IN STOCK" },
+                { value: "Amazon", hyperlink: { webAddr: "www.amazon.com" } }
+                ]
+            },
+            {
+                height: 30,
+                index: 5,
+                cells: [
+                { style: { "background-color": "#428bca" } },
+                { style: { "background-color": "#428bca" } },
+                { value: "Total Amount", index: 2, style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "=Sum(D2:D4)", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { style: { "background-color": "#428bca" } },
+                { style: { "background-color": "#428bca" } }
+                ]
+            }]
+        }]
+    });
 });
 </script>
 
@@ -329,7 +329,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings
             {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-datasource "dataSource")'| markdownify }}
         </td>
         <td>
-            To specify JSON or ej.DataManager
+            To specify JSON or {{'[`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager")'| markdownify }}
         </td>
     </tr>
     <tr>    
@@ -337,7 +337,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings
             {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rangesettings-query "query")'| markdownify }}
         </td>
         <td>
-            To specify query for ej.DataManager
+            To specify query for {{'[`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager")'| markdownify }}
         </td>
     </tr>
     <tr>
@@ -382,16 +382,16 @@ The following code illustrates range binding in Spreadsheet
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({               
-sheets: [{
-rangeSettings: [{
-dataSource: window.markList, // JSON
-startCell: "C2",
-showHeader: true,
-headerStyles: { "font-weight": "bold" }
-}]
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({               
+        sheets: [{
+            rangeSettings: [{
+                dataSource: window.markList, // JSON
+                startCell: "C2",
+                showHeader: true,
+                headerStyles: { "font-weight": "bold" }
+            }]
+        }]
+    });
 });
 </script>
 
@@ -406,19 +406,19 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
 
 <table>
     <tr>
-        <td>
+        <th>
             Properties
-        </td>
-        <td>
+        </th>
+        <th>
             Description
-        </td>
+        </th>
     </tr>
     <tr>
         <td>
             {{'[`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource")'| markdownify }}
         </td>
         <td>
-            To specify JSON or ej.DataManager
+            To specify JSON or {{'[`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager")'| markdownify }}
         </td>
     </tr>
     <tr>
@@ -426,7 +426,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
             {{'[`query`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-query "query")'| markdownify }}
         </td>
         <td>
-            To specify query for ej.DataManager
+            To specify query for {{'[`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager")'| markdownify }}
         </td>
     </tr>
     <tr>
@@ -479,14 +479,14 @@ The following code illustrates sheet binding in Spreadsheet
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-sheets: [{
-dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"),
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress"]),
-fieldAsColumnHeader: true,
-primaryKey: "OrderID"
-}]
-});
+    $("#Spreadsheet").ejSpreadsheet({                
+        sheets: [{
+            dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"),
+            query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress"]),
+            fieldAsColumnHeader: true,
+            primaryKey: "OrderID"
+        }]
+    });
 });
 </script>
 
