@@ -60,7 +60,7 @@ function loadComplete(args) {
 
 ### Merge & Center
 
-You can combine two or more cells located in the same row or column into a single cell with center text align. When cells with multiple values are merged the upper-left most cell's data will be the data of the merged cell. You can do this by oen of the following ways,
+You can combine two or more cells located in the same row or column into a single cell with center text align. When cells with multiple values are merged the upper-left most cell's data will be the data of the merged cell. You can do this by one of the following ways,
 
 * Using Merge&Center button of HOME tab in ribbon.
 * Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enables "mergeCenter" property to perform merge and center.
@@ -301,9 +301,9 @@ N> In the below table first, last is based on the used range.
 
 Drag Fill supports for auto fill of data is cells. You can use this to fill cells with data that follows a pattern or that is based on data in other cells. There is no need to enter the repeated data manually. You can use [`allowAutoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") property to enable/disable the drag fill support. You can use [`showFillOptions`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-showfilloptions "showFillOptions") property to enable/disable the fill option and [`fillType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-filltype "fillType") property for type of fill which are available in [`autoFillSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings "autoFillSettings"). 
 
-You can do autofill by one of the following ways.
+You can do this by one of the following ways.
 
-* Using "autofill" menu which is open while drag and drop the fill handle element.
+* Using "Drag Fill" menu which is open while drag and drop the fill handle element.
 * Using [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
 
 In Drag Fill we have following options, 
@@ -318,7 +318,7 @@ In Drag Fill we have following options,
 
 To copy the selected cell content to the adjacent cells. You can do this by one of the following ways.
 
-* Using fill handle to select the adjacent cell range and "Copy Cells" option in autofill menu to fill the adjacent cells.
+* Using fill handle to select the adjacent cell range and "Copy Cells" option in "Drag Fill" menu to fill the adjacent cells.
 * Using "copyCells" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Series
@@ -327,7 +327,7 @@ To fill the series of numbers, characters, or dates based on selected cell conte
 
 You can do this by one of the following ways,
 
-* Using fill handle to select the adjacent cell range and "Fill Series" option in autofill menu to fill the adjacent cells.
+* Using fill handle to select the adjacent cell range and "Fill Series" option in "Drag Fill" menu to fill the adjacent cells.
 * Using "fillSeries" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Formatting Only
@@ -336,7 +336,7 @@ To fill the cell style and number formatting based on the selected cell content 
 
 You can do this by one of the following ways,
 
-* Using fill handle to select the adjacent cell range and "Fill Formatting Only" option in autofill menu to fill the adjacent cells.
+* Using fill handle to select the adjacent cell range and "Fill Formatting Only" option in "Drag Fill" menu to fill the adjacent cells.
 * Using "fillFormattingOnly" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Without Formatting
@@ -345,17 +345,17 @@ To fill series of numbers, characters, or dates based on the selected cells to t
 
 You can do this by one of the following ways,
 
-* Using fill handle to select the adjacent cell range and "Fill Without Formatting" option in autofill menu to fill the adjacent cells.
+* Using fill handle to select the adjacent cell range and "Fill Without Formatting" option in "Drag Fill" menu to fill the adjacent cells.
 * Using "fillWithoutFormatting" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Flash Fill 
 
 You can do this by one of the following ways,
 
-* Using fill handle to select the adjacent cell range and "Flash Fill" option in autofill menu to fill the adjacent cells.
+* Using fill handle to select the adjacent cell range and "Flash Fill" option in "Drag Fill" menu to fill the adjacent cells.
 * Using "flashFill" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
-The following output is displayed as a result of the auto fill menu in User Interface.
+The following output is displayed as a result of the "Drag Fill" menu in User Interface.
 ![](CellRanges_images/CellRanges_img4.png)
 
 The following code example describes the above behavior.
