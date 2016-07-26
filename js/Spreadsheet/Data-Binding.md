@@ -15,7 +15,7 @@ Spreadsheet can be populated with external datasource using [`dataSource`](http:
 
 ## Local Data
 
-To bind local data to the Spreadsheet, you can assign a JSON array to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind local data to the Spreadsheet
+To bind local data to the Spreadsheet, you can assign a JSON array to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind local data to the Spreadsheet,
 
 {% highlight html %}
 
@@ -25,7 +25,8 @@ To bind local data to the Spreadsheet, you can assign a JSON array to the worksh
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({                                
         sheets: [{
-            dataSource: window.filterData // JSON
+            // the datasource "window.filterData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+            dataSource: window.filterData
         }]
     });
 });
@@ -63,7 +64,7 @@ The following output is displayed as a result of the above code snippets.
 
 ## HTML Table Data
 
-A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet
+A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet,
 
 {% highlight html %}
 
@@ -239,7 +240,7 @@ The individual row properties are listed below,
     </tr>
 </table>
 
-You can specify particular row with `index` property and its height with `height` property in the rows' property collection. The following code illustrates cell binding in Spreadsheet
+You can specify particular row with `index` property and its height with `height` property in the rows' property collection. The following code illustrates cell binding in Spreadsheet,
 
 {% highlight html %}
 
@@ -385,7 +386,8 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({               
         sheets: [{
             rangeSettings: [{
-                dataSource: window.markList, // JSON
+                // the datasource "window.markList" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+                dataSource: window.markList,
                 startCell: "C2",
                 showHeader: true,
                 headerStyles: { "font-weight": "bold" }

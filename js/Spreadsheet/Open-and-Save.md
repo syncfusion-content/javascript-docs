@@ -126,8 +126,10 @@ public class JSXLExportController : ApiController
 
 ### Methods
 
-To open an excel document, [`import`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The spreadsheet can open excel document as a stream. The document stream was either from the client side or it can be specified in server side.
-The code snippets to open excel document as a stream from client side are as follows,
+To open an excel document, [`import`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
+
+#### From Stream
+Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
 
 {% highlight javascript %}
 
@@ -139,7 +141,7 @@ function fileOpen(args) {
 
 {% endhighlight %}
 
-The Code snippets to specify excel document as stream in server side are as follows,
+The code snippets to specify excel document as stream in server side are as follows,
 
 {% highlight c# %}
 
@@ -157,7 +159,8 @@ public HttpResponseMessage Import()
 
 {% endhighlight %}
 
-Spreadsheet can open excel document from specified URL. The URL can be specified either from client side or in server side.
+#### From File URL
+Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
 The code snippets to open excel document as URL from client side are as follows,
 
 {% highlight javascript %}
@@ -169,7 +172,7 @@ function fileOpen() {
 
 {% endhighlight %}
 
-The Code snippets to specify excel document as URL in server side are as follows,
+The code snippets to specify excel document as URL in server side are as follows,
 
 {% highlight c# %}
 
@@ -253,7 +256,7 @@ The import from excel and export to excel is processed in server-side only, thro
 * WCF Service
 * ASP.NET MVC Controller Action
 
-Following code snippet demonstrate open option using WebAPI controller.
+Following code snippets demonstrate open option using WebAPI controller.
 
 {% highlight c# %}
 
