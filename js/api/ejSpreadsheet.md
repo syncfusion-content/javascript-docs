@@ -3856,7 +3856,7 @@ This method is used to hide the entire columns from the specified range (startCo
 <tr>
 <td class="name">endCol</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end column.</td>
+<td class="description">Optional. Index of the end column.</td>
 </tr>
 </tbody>
 </table>
@@ -3868,16 +3868,20 @@ This method is used to hide the entire columns from the specified range (startCo
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Hide a column in the sheet.
-xlObj.hideColumn(1, 1);
+// Hide the column by passing column index in the active sheet.
+xlObj.hideColumn(1);
+// Hide the columns from startCol to endCol in the active sheet.
+xlObj.hideColumn(1, 4);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Hide a column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("hideColumn", 1, 1);
+// Hide the column by passing column index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideColumn", 1);
+// Hide the columns from startCol to endCol in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideColumn", 1, 4);
 </script>
 
 {% endhighlight %}
@@ -3921,7 +3925,7 @@ This method is used to hide the rows, based on the specified row index in Spread
 <tr>
 <td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end row.</td>
+<td class="description"> Optional. Index of the end row.</td>
 </tr>
 </tbody>
 </table>
@@ -3933,7 +3937,9 @@ This method is used to hide the rows, based on the specified row index in Spread
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Hide a row in the sheet.
+// Hide the row by passing row index in the active sheet.
+xlObj.hideRow(1);
+// Hide a rows from startRow to endRow in the active sheet.
 xlObj.hideRow(1, 4);
 </script>
 
@@ -3942,7 +3948,9 @@ xlObj.hideRow(1, 4);
 
 {% highlight html %}
 <script>
-// Hide a row in the sheet.
+// Hide the row by passing row index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideRow", 1);
+// Hide a rows from startRow to endRow in the active sheet.
 $("#Spreadsheet").ejSpreadsheet("hideRow", 1, 4);
 </script>
 
@@ -4993,7 +5001,7 @@ This method is used to set the width for the columns in the Spreadsheet.
 <tr>
 <td class="name">widthColl</td>
 <td class="type"><span class="param-type">array|object</span></td>
-<td class="description">Pass the cell index and width of the cells.</td>
+<td class="description">Pass the column index index and width of the columns.</td>
 </tr>
 </tbody>
 </table>
@@ -5002,19 +5010,24 @@ This method is used to set the width for the columns in the Spreadsheet.
 
 {% highlight html %}
 <script>
-var widthColl= [{cellIndex: 1, width: 40}, {cellIndex: 2, width: 50}];
+var widthCollObj= [{colIndex: 2, width: 40}, {colIndex: 3, width: 50}], widthCollArr = [80, 90];
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Set width for columns in specified sheet
-xlObj.setWidthToColumns(widthColl);
+// Set width for specified columns in active sheet
+xlObj.setWidthToColumns(widthCollObj);
+// Set width for columns starting from the '0'th index in active sheet.
+xlObj.setWidthToColumns(widthCollArr);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Set width for columns in specified sheet
-$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthColl);
+// Set width for specified columns in active sheet.
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollObj);
+// Set width for columns starting from the '0'th index in active sheet.
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollArr);
+
 </script>
 
 {% endhighlight %}
@@ -5120,7 +5133,7 @@ This method is used to show the hidden columns within the specified range in the
 <tr>
 <td class="name">endColIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end column.</td>
+<td class="description">Optional. Index of the end column.</td>
 </tr>
 </tbody>
 </table>
@@ -5131,16 +5144,21 @@ This method is used to show the hidden columns within the specified range in the
 <script>
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// show the hidden column in the sheet.
-xlObj.showColumn(1, 1);
+// show the hidden column by passing column index in the active sheet.
+xlObj.showColumn(1);
+// show the hidden columns from startColIdx to startColIdx in the active sheet.
+xlObj.showColumn(3, 6);
+
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// show the hidden column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("showColumn", 1, 1);
+// show the hidden column by passing column index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showColumn", 1);
+// show the hidden columns from startColIdx to startColIdx in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showColumn", 3, 6);
 </script>
 
 {% endhighlight %}
@@ -5254,7 +5272,7 @@ $("#Spreadsheet").ejSpreadsheet("showHeadings", false);
 ### showRow(startRow, endRow)
 {:#methods:showrow}
 
-This method is used to show the hidden rows in the specified range in the Spreadsheet.
+This method is used to show the hidden rows in the specified range in the Spreadsheet. 
 <table class="params">
 <thead>
 <tr>
@@ -5272,7 +5290,7 @@ This method is used to show the hidden rows in the specified range in the Spread
 <tr>
 <td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end row.</td>
+<td class="description">Optional. Index of the end row.</td>
 </tr>
 </tbody>
 </table>
@@ -5283,16 +5301,20 @@ This method is used to show the hidden rows in the specified range in the Spread
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// To show the hidden rows in the sheet.
-xlObj.showRow(1, 1);
+// show the hidden row by passing row index in the active sheet.
+xlObj.showRow(1);
+// To show the hidden rows for startRow to endRow in the active sheet.
+xlObj.showRow(3, 6);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// show the hidden row in the sheet.
-$("#Spreadsheet").ejSpreadsheet("showRow", 1, 1);
+// show the hidden row by passing row index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showRow", 1);
+// To show the hidden rows for startRow to endRow in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showRow", 3, 6);
 </script>
 
 {% endhighlight %}

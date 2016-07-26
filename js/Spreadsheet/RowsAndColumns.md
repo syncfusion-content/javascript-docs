@@ -9,8 +9,7 @@ documentation: ug
 
 # Rows and columns
 
-Spreadsheet is a tablular format consisting of rows and columns. Rows and Columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. 
-You have [`rowCount`](http://help.syncfusion.com/js/api/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/js/api/ejspreadsheet#members:columncount "columnCount") in sheets property and model for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
+Spreadsheet is a tablular format consisting of rows and columns. Rows and Columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/js/api/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/js/api/ejspreadsheet#members:columncount "columnCount") in sheets property and model for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
 
 ## Rows 
 
@@ -226,8 +225,8 @@ $(function () {
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
     if(!xlObj.isImport){
-        xlObj.hideRow(2, 2);
-        xlObj.hideColumn(2, 2);
+        xlObj.hideRow(2);
+        xlObj.hideColumn(2);
     }
 }
 {% endhighlight %}
@@ -270,8 +269,8 @@ $(function () {
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
     if(!xlObj.isImport){
-        xlObj.showRow(2, 2);
-        xlObj.showColumn(2, 2);
+        xlObj.showRow(2);
+        xlObj.showColumn(2);
     }
 }
 {% endhighlight %}
@@ -287,8 +286,8 @@ You can change [`columnWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#m
 You can perform resizing using one of the following ways,
 
 * Resize option in column header and row header.
-* set the column width by using [`setColWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or [`columnWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:columnwidth "columnWidth") property.
-* set the row height by using [`setRowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or [`rowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:rowheight "rowHeight") property.
+* set the column width by using [`setColWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or [`columnWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#members:columnwidth "columnWidth") property.
+* set the row height by using [`setRowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or [`rowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#members:rowheight "rowHeight") property.
 
 The following code example describes the above behavior.
 
@@ -305,32 +304,6 @@ $(function () {
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],
             rowHeight: 21,
             columnWidth: 64
-        }],
-    });
-});
-{% endhighlight %}
-
-#### Set Column Width
-
-You can set the column width to the specified column using [`setColWidth`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method.
-
-#### Set Row Height
-
-You can set the row height to the specified row using [`setRowHeight`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method.
-
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
