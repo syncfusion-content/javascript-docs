@@ -80,7 +80,7 @@ function loadComplete() {
 The following output is displayed as a result of the above code example.
 ![](Selection_images/Selection_img2.png)
 
-N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Row`.
+N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Row`
 
 ### Column Selection
 
@@ -108,7 +108,7 @@ function loadComplete() {
 The following output is displayed as a result of the above code example.
 ![](Selection_images/Selection_img3.png)
 
-N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Column`. 
+N> This type can be set as default by setting [`selectionType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`selectionSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Column`
 
 ### Sheet Selection
 
