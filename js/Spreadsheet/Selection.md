@@ -31,7 +31,7 @@ You can set default [`selectionType`](http://help.syncfusion.com/js/api/ejspread
 ### Cell Selection 
 
 Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlselection-selectrange "selectRange") method. 
-The following code example describes the above behavior.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -39,12 +39,13 @@ The following code example describes the above behavior.
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
+    $("#Spreadsheet").ejSpreadsheet({                
+        loadComplete: "loadComplete"                
+    });
 });
-});
+
 function loadComplete() {
-this.XLSelection.selectRange("A1:C3");
+    this.XLSelection.selectRange("A1:C3");
 }
 </script>
 
@@ -56,7 +57,7 @@ The following output is displayed as a result of the above code example.
 ### Row Selection 
 
 Row selection is used to select a single or multiple rows. It can be performed using [`selectRows`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlselection-selectrows "selectRows") method.
-The following code example describes the above behavior.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -64,12 +65,13 @@ The following code example describes the above behavior.
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
+    $("#Spreadsheet").ejSpreadsheet({                
+        loadComplete: "loadComplete"                
+    });
 });
-});
+
 function loadComplete() {
-this.XLSelection.selectRows(0,2);
+    this.XLSelection.selectRows(0,2);
 }
 </script>
 
@@ -83,7 +85,7 @@ N> This type can be set as default by setting [`selectionType`](http://help.sync
 ### Column Selection
 
 Column selection is used to select a single or multiple columns. It can be performed using [`selectColumns`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlselection-selectcolumns "selectColumns") method.
-The following code example describes the above behavior.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -91,12 +93,13 @@ The following code example describes the above behavior.
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
+    $("#Spreadsheet").ejSpreadsheet({                
+        loadComplete: "loadComplete"                
+    });
 });
-});
+
 function loadComplete() {
-this.XLSelection.selectColumns(0,2);
+    this.XLSelection.selectColumns(0,2);
 }
 </script>
 
@@ -110,7 +113,7 @@ N> This type can be set as default by setting [`selectionType`](http://help.sync
 ### Sheet Selection
 
 Sheet selection is used to select all cells in a worksheet.  It can be performed using [`selectSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlselection-selectsheet "selectSheet") method.
-The following code example describes the above behavior.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -118,12 +121,12 @@ The following code example describes the above behavior.
 
 <script>
 $(function () {
-$("#Spreadsheet").ejSpreadsheet({                
-loadComplete: "loadComplete"                
-});
+    $("#Spreadsheet").ejSpreadsheet({                
+        loadComplete: "loadComplete"                
+    });
 });
 function loadComplete() {
-this.XLSelection.selectSheet();
+    this.XLSelection.selectSheet();
 }
 </script>
 
@@ -131,4 +134,3 @@ this.XLSelection.selectSheet();
 
 The following output is displayed as a result of the above code example. 
 ![](Selection_images/Selection_img4.png)
-
