@@ -5001,7 +5001,7 @@ This method is used to set the width for the columns in the Spreadsheet.
 <tr>
 <td class="name">widthColl</td>
 <td class="type"><span class="param-type">array|object</span></td>
-<td class="description">Pass the column index index and width of the columns.</td>
+<td class="description">Pass the column index and width of the columns.</td>
 </tr>
 </tbody>
 </table>
