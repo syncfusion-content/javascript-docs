@@ -2789,7 +2789,7 @@ $("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], 
 ### copySheet(fromIdx, toIdx, isCopySheet)
 {:#methods:copysheet}
 
-This method is used to copy sheets in Spreadsheet.
+This method is used to copy or move the sheets in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -2802,12 +2802,12 @@ This method is used to copy sheets in Spreadsheet.
 <tr>
 <td class="name">fromIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the sheet index that you want to copy.</td>
+<td class="description">Pass the sheet index that you want to copy or move.</td>
 </tr>
 <tr>
 <td class="name">toIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the position index where you want to copy.</td>
+<td class="description">Pass the position index where you want to copy or move.</td>
 </tr>
 <tr>
 <td class="name">isCopySheet</td>
@@ -2824,6 +2824,7 @@ This method is used to copy sheets in Spreadsheet.
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.copySheet(2, 1, true); // Sends a copy sheet request to the Spreadsheet.
+//xlObj.copySheet(2, 1, false); // Sends a move sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4418,52 +4419,6 @@ xlObj.mergeCells("A3:B5", true); // To merge the selecetd cell in Spreadsheet.
 <script>
 // To merge the selecetd cell in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("mergeCells","A3:B5");        
-</script>
-
-{% endhighlight %}
-
-### moveSheet(fromIdx, toIdx)
-{:#methods:movesheet}
-
-This method is used to move sheets in Spreadsheet.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">fromIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the sheet index that you want to move.</td>
-</tr>
-<tr>
-<td class="name">toIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the position index where you want to move.</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-<script>
-// Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.moveSheet(2, 1); // Sends a move sheet request to the Spreadsheet.
-</script>
-
-{% endhighlight %}
-
-{% highlight html %}
-<script>
-// Sends a move sheet request to the Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("moveSheet", 2, 1);        
 </script>
 
 {% endhighlight %}
