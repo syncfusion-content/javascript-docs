@@ -676,10 +676,11 @@ Gets or sets a value that indicates whether to enable or disable selection in th
 
 #### Example
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+ 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowSelection: true
+    allowSelection: true
 });         
 </script>
 
@@ -1041,7 +1042,7 @@ Gets or sets an object that indicates to customize the exporting behavior in Spr
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
 
-Note: User must specify excelUrl or csvUrl while enabling this feature.
+N> User must specify excelUrl or csvUrl while enabling this feature
 
 #### Default Value
 * true
@@ -1811,9 +1812,9 @@ enableAnimation: true
 
 <ts name="ej.Spreadsheet.SelectionType"/>
 
-Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
+Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
 
-Note: allowSelection must be true while using this property.
+N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 <table class="params">
 <thead>
@@ -1841,24 +1842,21 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionType.Default
 
-
-
-
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-selectionType: ej.Spreadsheet.SelectionType.Default,
-animationTime: 0.001,
-enableAnimation: true
-})
+    allowSelection: true,
+    selectionSettings({
+        selectionType: ej.Spreadsheet.SelectionType.Default,
+        animationTime: 0.001,
+        enableAnimation: true
+    })
 });
 </script>
-
 {% endhighlight %}
 
 ### selectionSettings.selectionUnit `Enum`
@@ -1868,7 +1866,7 @@ enableAnimation: true
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
 
-Note: allowSelection must be true while using this property.
+N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 	
 <table class="params">
 <thead>
@@ -1880,15 +1878,15 @@ Note: allowSelection must be true while using this property.
 <tbody>
 <tr>
 <td class="name">Single</td>
-<td class="description">To enable Single selection in Spreadsheet.</td>
+<td class="description">To enable Single selection in Spreadsheet</td>
 </tr>
 <tr>
 <td class="name">Range</td>
-<td class="description">To enable Range selection in Spreadsheet.</td>
+<td class="description">To enable Range selection in Spreadsheet</td>
 </tr>
 <tr>
 <td class="name">MultiRange</td>
-<td class="description">To enable MultiRange selection in Spreadsheet.</td>
+<td class="description">To enable MultiRange selection in Spreadsheet</td>
 </tr>
 </tbody>
 </table>
@@ -1899,13 +1897,14 @@ Note: allowSelection must be true while using this property.
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-selectionUnit: ej.Spreadsheet.SelectionUnit.MultiRange
-})
+    allowSelection: true,
+    selectionSettings({
+        selectionUnit: ej.Spreadsheet.SelectionUnit.Single
+    })
 });  
 </script>
 
@@ -1995,15 +1994,16 @@ Gets or sets the data to render the Spreadsheet.
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: window.defaultData;
-}]
+    sheets:[{
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        dataSource: window.defaultData;
+    }]
 });    
 </script>
-
 {% endhighlight %}
 
 ### sheets.fieldAsColumnHeader `Boolean`
@@ -2084,7 +2084,7 @@ primaryKey: "OrderID"
 ### sheets.query `Object`
 {:#members:sheets-query}
 
-Specifies the query for the datasource in Spreadsheet.
+Specifies the query for the [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
 
 #### Default Value:
 
@@ -2094,16 +2094,16 @@ Specifies the query for the datasource in Spreadsheet.
 
 {% highlight html %}
 <div id="Spreadsheet"></div> 
+
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
-}]
+    sheets:[{
+        dataSource: dataManager,
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
+    }]
 });    
 </script>
-
 {% endhighlight %}
 
 ### sheets.rangeSettings `Array`
@@ -6753,7 +6753,7 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1)
 
 This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
 
-Note: Using export, user must be provided the excelUrl and csvUrl property under exportSettings.
+N> Using export, user must be provided the excelUrl and csvUrl property under exportSettings
 
 <table class="params">
 <thead>
@@ -7991,7 +7991,7 @@ xlObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specifi
 
 {% endhighlight %}
 
-### XLSelection.selectRange(range, endCell)
+### XLSelection.selectRange(range)
 {:#methods:xlselection-selectrange}
 
 This method is used to select the specified range of cells in the Spreadsheet.
@@ -8009,11 +8009,6 @@ This method is used to select the specified range of cells in the Spreadsheet.
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass range which want to select.</td>
 </tr>
-<tr>
-<td class="name">endCell</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the row and column index of the end cell.</td>
-</tr>
 </tbody>
 </table>
 
@@ -8023,9 +8018,8 @@ This method is used to select the specified range of cells in the Spreadsheet.
 <script>
 // initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRange("A1:B2", {rowIndex: 7, colIndex: 1 }); //To select range of cells in Spreadsheet.
+xlObj.XLSelection.selectRange("A1:B2"); //To select range of cells in Spreadsheet.
 </script>
-
 {% endhighlight %}
 
 ### XLSelection.selectRow(rowIdx)
