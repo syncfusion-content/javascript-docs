@@ -1004,6 +1004,55 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
+### connectors.labels.alignment `enum`
+{:#members:connectors-labels-alignment}
+
+<ts name = "ej.datavisualization.Diagram.Alignment"/>
+
+Defines how the label should be aligned with respect to the segment
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Before</td>
+            <td class="description last">Used to align the label either top or left(before) of the connector segment</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align the label at center of the connector segment</td>
+       </tr>
+        <tr>
+            <td class="name">After</td>
+            <td class="description last">Used to align the label either bottom or right(after) of the connector segment</td>
+       </tr>
+   </tbody>
+</table>
+
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Alignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	              //Define the labels collection
+                  labels:[{ text:"connector", alignment:"before" }]}; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
 ### connectors.labels.bold `Boolean`
 {:#members:connectors-labels-bold}
 
@@ -1075,6 +1124,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
 
 {% endhighlight %}
+
+### connectors.labels.boundaryConstraints `Boolean`
+{:#members:connectors-labels-boundaryConstraints}
+
+Defines whether the label should be aligned within the connector boundaries
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", boundaryConstraints: "false"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
 
 ### connectors.labels.fillColor `String`
 {:#members:connectors-labels-fillcolor}
@@ -1321,6 +1395,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.opacity `Number`
+{:#members:connectors-labels-opacity}
+
+Defines the transparency of labels
+
+#### Default Value:
+
+* 1
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", opacity: 0.7}
+             ]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
 ### connectors.labels.readOnly `Boolean`
 {:#members:connectors-labels-readonly}
 
@@ -1339,6 +1438,51 @@ Defines whether the label is editable or not
 var connectors;
 connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
          labels:[{ text:"label", readOnly:true}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.relativeMode `enum`
+{:#members:connectors-labels-relativemode}
+
+<ts name = "ej.datavisualization.Diagram.LabelRelativeMode"/>
+
+Defines whether the label should be positioned whether relative to segments or connector boundaries
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">SegmentPath</td>
+            <td class="description last">Sets the relativeMode as SegmentPath</td>
+       </tr>
+        <tr>
+            <td class="name">SegmentBounds</td>
+            <td class="description last">Sets the relativeMode as SegmentBounds</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelRelativeMode.SegmentPath
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", relativeMode:"segmentPath"}]
       }];
 $("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
@@ -1368,6 +1512,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
 
 {% endhighlight %}
+
+### connectors.labels.segmentOffset `String`
+{:#members:connectors-labels-segmentOffset}
+
+Sets the position of the label with respect to the total segment length
+
+#### Default Value:
+
+* 0.5
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"Label", segmentOffset:0.7}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
 
 ### connectors.labels.text `String`
 {:#members:connectors-labels-text}
@@ -2070,6 +2239,252 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
                   vector1: { distance:75, angle: 0}, 
                   vector2: { distance:75, angle: 180} }] }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape `Object`
+{:#members:connectors-shape}
+
+Defines the role/meaning of the connector
+
+#### Default Value:
+
+* null
+
+### connectors.shape.type `enum`
+{:#members:connectors-shape-type}
+
+<ts name = "ej.datavisualization.Diagram.ConnectorShapes"/>
+
+Sets the type of the connector
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">BPMN</td>
+            <td class="description last">Used to specify connector type as BPMN</td>
+       </tr>
+        <tr>
+            <td class="name">Classifier</td>
+            <td class="description last">Used to specify connector type as Classifier</td>
+       </tr>
+          </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ConnectorShapes.BPMN
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>        
+var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 200 }, targetPoint: { x: 200, y: 200 }, 
+     segments: [{ type: "straight" }], shape: { type: "bpmn"} }]
+
+$("#diagramcontent").ejDiagram({connectors : connector});
+</script>
+
+
+{% endhighlight %}
+
+### connectors.shape.flow `enum`
+{:#members:connectors-shape-flow}
+
+<ts name = "ej.datavisualization.Diagram.BPMNFlows"/>
+
+Sets the type of the flow in a BPMN Process
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Sequence</td>
+            <td class="description last">Used to specify the Sequence flow in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">Association</td>
+            <td class="description last">Used to specify the Association flow in a BPMN Process </td>
+       </tr>
+        <tr>
+            <td class="name">Message</td>
+            <td class="description last">Used to specify the Message flow in a BPMN Process</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNFlows.Sequence
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>        
+var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 200 }, targetPoint: { x: 200, y: 200 }, 
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message" } }],
+
+$("#diagramcontent").ejDiagram({connectors : connector});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.association `enum`
+{:#members:connectors-shape-flow-association}
+
+<ts name = "ej.datavisualization.Diagram.AssociationFlows"/>
+
+Sets the type of the Association in a BPMN Process
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Used to notate default association in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">Directional</td>
+            <td class="description last">Used to notate directional association in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">BiDirectional</td>
+            <td class="description last">User to notate bi-directional association in a BPMN Process</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.AssociationFlows.Default
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>        
+var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 300 }, targetPoint: { x: 200, y: 300 }, 
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "association", association: "bidirectional" } }],
+
+$("#diagramcontent").ejDiagram({connectors : connector});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.message `enum`
+{:#members:connectors-shape-message}
+
+<ts name = "ej.datavisualization.Diagram.BPMNMessageFlows"/>
+
+Sets the type of the message flow. Applicable, if the connector is of type "BPMN"
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Used to notate the default message flow in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">InitiatingMessage</td>
+            <td class="description last">Used to notate the instantiating message flow in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">NonInitiatingMessage</td>
+            <td class="description last">Used to notate the non-instantiating message flow in a BPMN Process</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNMessageFlows.Default
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>        
+var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 600 }, targetPoint: { x: 200, y: 600 }, 
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message", message: "noninitiatingmessage" } }],
+
+$("#diagramcontent").ejDiagram({connectors : connector});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.sequence `enum`
+{:#members:connectors-shape-sequence}
+
+<ts name = "ej.datavisualization.Diagram.BPMNSequenceFlows"/>
+
+Sets the type of BPMN sequence flow
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Normal</td>
+            <td class="description last">Used to notate the normal sequence flow in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">Conditional</td>
+            <td class="description last">Used to notate the conditional sequence flow in a BPMN Process</td>
+       </tr>
+        <tr>
+            <td class="name">Default</td>
+            <td class="description last">Used to notate the default sequence flow in a BPMN Process</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNSequenceFlows.Normal
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>        
+var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 600 }, targetPoint: { x: 200, y: 600 }, 
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "sequence", sequence: "default" } }]
+
+$("#diagramcontent").ejDiagram({connectors : connector});
 </script>
 
 {% endhighlight %}
@@ -3994,6 +4409,209 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 
 {% endhighlight %}
 
+### nodes.annotation `Object`
+{:#members:nodes-annotation}
+
+Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNTextAnnotation()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", width: 100, height: 50,
+            angle: -45, length: 150, direction: "top" } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+            
+### nodes.annotation.angle `Number`
+{:#members:nodes-annotation-angle}
+
+Sets the angle between the BPMN shape and the annotation 
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", width: 100, height: 50,
+            angle: -45  } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+            
+### nodes.annotation.direction `enum`
+{:#members:nodes-annotation-direction}
+
+<ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection"/>
+
+Sets the direction of the text annotation
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to set the direction of BPMN Annotation as left</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to set the direction of BPMN Annotation as right</td>
+       </tr>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to set the direction of BPMN Annotation as top</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to set the direction of BPMN Annotation as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNAnnotationDirections.Left
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", 
+            direction:"right", length: 130, angle: -45, 
+            width: 100, height: 50 } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.annotation.height `Number`
+{:#members:nodes-annotation-height}
+
+Sets the height of the text annotation
+			
+#### Default Value:
+
+* 20
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", height: 50,
+            } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.annotation.length `Number`
+{:#members:nodes-annotation-length}
+
+Sets the distance between the BPMN shape and the annotation 
+			
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", width: 100, height: 50,
+           length: 150  } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.annotation.text `String`
+{:#members:nodes-annotation-text}
+
+Defines the additional information about the flow object in a BPMN Process
+			
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", width: 100
+            } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.annotation.width `Number`
+{:#members:nodes-annotation-width}
+
+Sets the  width of the text annotation
+			
+#### Default Value:
+
+* 20
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape: "activity",
+        annotation: { text: "This is a BPMN Activity shape", width: 100
+            } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.borderColor `String`
 {:#members:nodes-bordercolor}
 
@@ -4106,28 +4724,6 @@ var node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, bor
 //A group node with two child nodes
 var group = { name :"group", children:[node1, node2]};
 $("#diagramcontent").ejDiagram({ nodes:[group] });
-</script>
-
-{% endhighlight %}
-
-### nodes.collection `Boolean`
-{:#members:nodes-collection}
-
-Defines whether the BPMN data object is a collection or not
-
-#### Default Value:
-
-* false
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{name:"dataobject", type: "bpmn", shape:"dataObject", collection: true, width:50, height: 50, offsetX:100, offsetY:100}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -4424,6 +5020,79 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
+### nodes.data `Object`
+{:#members:nodes-data}
+ 
+Defines the BPMN data object
+
+### nodes.data.type `enum`
+{:#members:nodes-data-type}
+
+<ts name = "ej.datavisualization.Diagram.BPMNDataObjects"/>
+ 
+Sets the type of the BPMN Data object
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Input</td>
+            <td class="description last">Used to notate the Input type BPMN data object</td>
+       </tr>
+        <tr>
+            <td class="name">Output</td>
+            <td class="description last">Used to notate the Output type BPMN data object</td>
+       </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN data object type as None</td>
+       </tr>
+    </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNDataObjects.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input }, width:50, height: 50, offsetX:100, offsetY:100}];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.data.collection `Boolean`
+{:#members:nodes-data-collection}
+
+Defines whether the BPMN data object is a collection or not
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input, collection: false }, width:50, height: 50, offsetX:100, offsetY:100}];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
 
 ### nodes.event `enum`
 {:#members:nodes-event}
@@ -4459,6 +5128,10 @@ Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
         <tr>
             <td class="name">NonInterruptingIntermediate</td>
             <td class="description last">Used to set BPMN Event as NonInterruptingIntermediate</td>
+       </tr>
+        <tr>
+            <td class="name">ThrowingIntermediate</td>
+            <td class="description last">Used to set BPMN Event as ThrowingIntermediate</td>
        </tr>
    </tbody>
 </table>
@@ -4574,6 +5247,14 @@ Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
         <tr>
             <td class="name">EventBased</td>
             <td class="description last">Used to set BPMN Gateway as EventBased</td>
+       </tr>
+        <tr>
+            <td class="name">ExclusiveEventBased</td>
+            <td class="description last">Used to set BPMN Gateway as ExclusiveEventBased</td>
+       </tr>
+        <tr>
+            <td class="name">ParallelEventBased</td>
+            <td class="description last">Used to set BPMN Gateway as ParallelEventBased</td>
        </tr>
    </tbody>
 </table>
@@ -4952,6 +5633,28 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 				//Sets the opacity
 				{color:"red", offset:100, opacity: 0.5}] } 
 			};
+</script>
+
+{% endhighlight %}
+
+### nodes.group `Object`
+{:#members:nodes-group}
+
+Sets the type of the BPMN Shapes as group. Applicable, if the node is a BPMN.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNShapes
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Group}];
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -5505,6 +6208,30 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 
+</script>
+
+{% endhighlight %}
+
+### nodes.labels.opacity `Number`
+{:#members:nodes-labels-opacity}
+
+Defines the transparency of the labels
+
+#### Default Value:
+
+* 1
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"label", opacity: 0.7}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -7409,6 +8136,55 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.scale `enum`
+{:# members:nodes-scale}
+
+<ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
+    
+Defines how the node should be scaled/stretched
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Set the scale as none</td>
+       </tr>
+        <tr>
+            <td class="name">Meet</td>
+            <td class="description last">Used to scale the node uniformly so that it fits the node bounds</td>
+       </tr>
+        <tr>
+            <td class="name">Slice</td>
+            <td class="description last">Used to scale the node uniformly to the maximum</td>
+       </tr>
+        <tr>
+            <td class="name">Stretch</td>
+            <td class="description last">Used to scale the node non-uniformly to be stretched</td>
+       </tr>
+    </tbody>
+</table>
+ 
+#### Default Value:
+
+* ej.datavisualization.Diagram.ScaleConstraints.Meet
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ node:{scale:ej.datavisualization.Diagram.ScaleConstraints.Slice }});
+</script>
+
+{% endhighlight %}
+
 ### nodes.shadow `Object`
 {:#members:nodes-shadow}
 
@@ -7746,6 +8522,86 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.subProcess.collapsed `Boolean`
+{:#members:nodes-subprocess-collapsed}
+
+Sets whether the BPMN subprocess is triggered as a collapsed of a specific activity
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape:"activity", activity:"subprocess", 
+		subProcess:{ collapsed: false } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.event `enum`
+{:#members:nodes-subprocess-event}
+
+<ts ref = "ej.datavisualization.Diagram.BPMNEvents"/>
+
+Sets the type of the event by which the sub-process will be triggered
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNEvents.Start
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape:"activity", activity:"subprocess", 
+        subProcess: { type: "event", event: "start" }
+         }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.events `array`
+{:#members:nodes-subprocess-events}
+
+Defines the collection of events that need to be appended with BPMN Sub-Process
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { event: "intermediate", offset: { x: 0.25, y: 1 } },
+            { event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
@@ -7799,10 +8655,89 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.subProcess.trigger `enum`
+{:#members:nodes-subprocess-trigger}
+
+<ts ref = "ej.datavisualization.Diagram.BPMNTriggers"/>
+
+Defines the type of the event trigger
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNTriggers.Message
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape:"activity", activity:"subprocess", 
+            subProcess: { type: "event",  trigger: "conditional", offset: { x: 0.75, y: 1 } }
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.subProcess.type `enum`
+{:#members:nodes-subprocess-type}
+
+<ts name = "ej.datavisualization.Diagram.BPMNSubProcessTypes"/>
+
+Defines the type of a sub process
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set BPMN SubProcess type as None</td>
+       </tr>
+        <tr>
+            <td class="name">Transaction</td>
+            <td class="description last">Used to set BPMN SubProcess type as Transaction</td>
+       </tr>
+        <tr>
+            <td class="name">Event</td>
+            <td class="description last">Used to set BPMN SubProcess type as Event</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNSubProcessTypes.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var nodes;
+        nodes = [{
+            name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+            type: "bpmn", shape: "activity", activity: "subprocess",
+            subProcess: { type: event }
+        }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.task `Object`
 {:#members:nodes-task}
 
-Defines the task of the bpmn activity. Applicable, if the type of activity is set as task.
+Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
 
 #### Default Value:
 
@@ -8158,6 +9093,18 @@ Sets the type of BPMN Event Triggers.
         <tr>
             <td class="name">Parallel</td>
             <td class="description last">Used to set Event Trigger as Parallel</td>
+       </tr>
+        <tr>
+            <td class="name">Conditional</td>
+            <td class="description last">Used to set Event Trigger as Conditional</td>
+       </tr>
+        <tr>
+            <td class="name">Termination</td>
+            <td class="description last">Used to set Event Trigger as Termination</td>
+       </tr>
+       <tr>
+            <td class="name">Cancel</td>
+            <td class="description last">Used to set Event Trigger as Cancel</td>
        </tr>
    </tbody>
 </table>

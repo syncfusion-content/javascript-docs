@@ -169,6 +169,36 @@ allow or restrict the drill down to multiple levels of view (month/year/decade) 
 
 
 
+### blackoutDates `object`
+{:#members:blackoutdates}
+
+Disable the list of specified date value.
+
+
+
+
+### Default value
+
+
+
+
+* {}
+
+
+
+
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set blackoutDates API during initialization  
+        $("#datepicker").ejDatePicker({blackoutDates: [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)] });
+</script>
+
+{% endhighlight %}
 
 
 
@@ -228,7 +258,7 @@ Sets the specified text value to the today button in the DatePicker calendar.
 
 
 
-Sets the root CSS class for Accordion theme, which is used customize.
+Sets the root CSS class for DatePicker theme, which is used customize.
 
 
 
@@ -876,9 +906,11 @@ Specifies the tooltip to special dates.
 
 
 
+### fields.cssClass `string`
+{:#members:fields-cssclass}
 
 
-
+Specifies the CSS class to customize the date.
 
 
 
@@ -1358,7 +1390,7 @@ Allows to toggles the read only state of the DatePicker. When the widget is read
 
 
 ### showDisabledRange `boolean`
-{:members:showdisabledrange}
+{:#members:showdisabledrange}
 
 
 

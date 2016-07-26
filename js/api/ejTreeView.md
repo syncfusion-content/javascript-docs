@@ -1203,7 +1203,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to "li" item list.
 
 
 
@@ -1269,7 +1269,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to "li" item list.
 
 
 
@@ -1401,7 +1401,7 @@ Allow us to specify the node to be in selected state
 
 
 
-Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
+Specifies the sprite CSS class to "li" item list.
 
 
 
@@ -5417,7 +5417,7 @@ Fires before cut node in TreeView.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -5861,7 +5861,7 @@ Fires before paste node in TreeView.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -6260,7 +6260,7 @@ Fires when key pressed successfully.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 <tr>
 <td class="name"> 
@@ -6927,7 +6927,7 @@ Fires when node cut successfully.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -7738,7 +7738,7 @@ Fires once node pasted successfully.
 <td class="name">
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>

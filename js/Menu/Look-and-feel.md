@@ -111,12 +111,16 @@ Add the following code in your style section.
 
 
 <style type="text/css" class="cssStyles">
-    .Purple-dark {
-        background: pink;
-    }
-
-    .Purple-dark.e-horizontal .e-list > a {
-            color: #4800ff;
+    .Purple-dark .e-menu,.e-menu.e-horizontal .e-list > ul {     
+          
+       background: pink;              
+     
+     }        
+    
+    .Purple-dark .e-menu.e-horizontal .e-list > a {    
+    
+      color: blue;      
+      
      }
 </style>
 

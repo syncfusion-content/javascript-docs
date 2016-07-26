@@ -428,7 +428,7 @@ Example
 ### height `String` `Number`
 {:#members:height}
 
-Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
+Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type.
 
 Default Value:
 {:.param}
@@ -763,7 +763,7 @@ Example
 ### width `String` `Number`
 {:#members:width}
 
-Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
+Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type.
 
 Default Value:
 {:.param}
@@ -1891,7 +1891,7 @@ Instance of the dialog model object.</td></tr>
 <td>
 currentTarget</td><td>
 string</td><td>
-Name of the event currenttarget title.</td></tr>
+Name of the event current target title.</td></tr>
 </table>
 
 Example

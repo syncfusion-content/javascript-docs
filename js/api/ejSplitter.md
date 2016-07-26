@@ -656,7 +656,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 
-Specify properties for each pane like paneSize, minSize, maxSize, collapsible, resizable. 
+Specify properties for each pane like paneSize, minSize, maxSize, collapsible, expandable, resizable. 
 
 
 
@@ -694,7 +694,7 @@ Specify properties for each pane like paneSize, minSize, maxSize, collapsible, r
 </div> 
 <script>
 //To set properties API value during initialization  
-        $("#innerSplitter").ejSplitter({properties: [{ paneSize: "100px" }, { paneSize: "50px"}]});
+        $("#innerSplitter").ejSplitter({properties: [{ paneSize: "100px", expandable:false }, { collapsible:false, paneSize: "50px"}]});
 </script>{% endhighlight %}
 
 

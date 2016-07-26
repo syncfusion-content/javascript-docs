@@ -2201,7 +2201,7 @@ Triggered after the AJAX content loads. Arguments have current model values.
 </tr>
 <tr>
 <td class="name">
- url </td>
+ URL </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the URL</td>
 </tr>

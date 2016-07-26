@@ -89,7 +89,7 @@ Example
 
 Accepts the items which are dropped in to it, when it is set to true. 
 
-N> Need to enable allowDrag property to drag the list (li) item from the listbox control.
+N> Need to enable allowDrag property to drag the list item from the listbox control.
 
 #### Default Value:
 * false
@@ -1812,7 +1812,7 @@ Example
 
 {% highlight js%}
 
-            $('#list').ejListBox("hideSelectedItems");
+            $('#list').ejListBox("hideCheckedItems");
 
 {% endhighlight %}
 

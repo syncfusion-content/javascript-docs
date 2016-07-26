@@ -537,6 +537,206 @@ Minimum number of character to be entered in the Autocomplete textbox to show th
 
 {% endhighlight %}
 
+### multiColumnSettings `object`
+{:#members:multicolumnsettings}
+
+An **Autocomplete** column collection can be defined and customized through the multiColumnSettings property.
+Column's header, field, and stringFormat can be define via multiColumnSettings properties.
+
+
+#### Example 
+
+{% highlight javascript %}
+
+    $("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+	enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.enable `boolean`
+{:#members:multicolumnsettings-enable}
+
+Allow list of data to be displayed in several columns.
+
+#### Default Value:
+
+* false
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.showHeader `boolean`
+{:#members:multicolumnsettings-showHeader}
+
+Allow header text to be displayed in corresponding columns.
+
+#### Default Value:
+
+* true
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.stringFormat `string`
+{:#members:multicolumnsettings-stringFormat}
+
+Displayed selected value and autocomplete search based on mentioned column value specified in that format.
+
+N> stringFormat as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
+
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.columns `array`
+{:#members:multicolumnsettings-columns}
+
+Field and Header Text collections can be defined and customized through columns field.
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.columns.field `string`
+{:#members:multicolumnsettings-columns-field}
+
+Get or set a value that indicates to display the columns in the autocomplete mapping with column name of the dataSource. 
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.columns.headerText `string`
+{:#members:multicolumnsettings-columns-headerText}
+
+Get or set a value that indicates to display the title of that particular column.
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
 ### multiSelectMode `Enum`
 {:#members:multiselectmode}
 
@@ -753,6 +953,25 @@ Enables or disables rounded corner.
 
 	$("#autocomplete").ejAutocomplete({ 
 		showRoundedCorner: true 
+	});
+
+{% endhighlight %}
+
+### showResetIcon `Boolean`
+{:#members:showreseticon}
+
+Enables or disables reset icon to clear the textbox values.
+
+#### Default Value:  
+
+* false
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+		showResetIcon: true 
 	});
 
 {% endhighlight %}
@@ -1030,6 +1249,22 @@ N> This method does not accept any arguments.
 	$("#autocomplete").ejAutocomplete("getValue");
 
 {% endhighlight %}
+
+### getActiveText()
+{:#methods:getactivetext}
+
+Returns the current active text value in the Autocomplete suggestion list.
+
+N> This method does not accept any arguments.
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete("getActiveText");
+
+{% endhighlight %}
+
 
 ### search()
 {:#methods:search}

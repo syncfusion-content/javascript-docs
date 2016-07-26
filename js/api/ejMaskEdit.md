@@ -211,7 +211,7 @@ Specifies whether hide the prompt characters with spaces on blur. Prompt chars w
 ### htmlAttributes `object`
 {:#members:htmlattributes}
 
-Specifies the list of html attributes to be added to mask edit textbox.
+Specifies the list of HTML attributes to be added to mask edit textbox.
 
 #### Default Value
 
@@ -402,7 +402,7 @@ Specifies whether the error will show until correct value entered in the mask ed
 {:#members:showpromptchar}
 
 
-when showPromptChar is true, the hide the prompt characters are shown in focus of the control and hides in focusout of the control.
+when showPromptChar is true, the hide the prompt characters are shown in focus of the control and hides in focus out of the control.
 
 
 #### Default Value

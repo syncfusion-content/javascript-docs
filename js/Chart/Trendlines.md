@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
+EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
 
 {% highlight javascript %}
 
@@ -17,7 +17,7 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
             series:[{
                   trendlines: [{
                        //Enable Trendline to chart series
-                       visibility: “visible”, type: “linear”
+                       visibility: "visible", type: "linear"
                      }],
                 //...
               }]          

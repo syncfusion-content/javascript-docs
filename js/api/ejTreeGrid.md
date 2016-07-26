@@ -1136,7 +1136,7 @@ This specifies the number of rows to display in each page.
 ### pageSettings.totalRecordsCount `number`
 {:#members:pagesettings-totalrecordscount}
 
-Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasoure bound to TreeGrid.
+Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
 
 
 #### Default Value:
@@ -3776,7 +3776,7 @@ Triggered after selected a cell
 <td class="description">Returns the previously selected cell index</td>
 </tr>
 <tr>
-<td class="name">perviousRowIndex</td>
+<td class="name">previousRowIndex</td>
 <td class="type">object</td>
 <td class="description">Returns the previously selected row index</td>
 </tr>

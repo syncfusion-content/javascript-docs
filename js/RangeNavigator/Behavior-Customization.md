@@ -107,7 +107,7 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 #### Thumb Template
 
-You can customize Thumb template by using **leftThumbTemplate** and **rightThumbTemplate** property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the HTML string to this property under **navigatorStyleSettings**.
+You can customize Thumb template by using **leftThumbTemplate** and **rightThumbTemplate** property. You can add the required template as a "div" element with an "id" to the web page and assign the id or assign the HTML string to this property under **navigatorStyleSettings**.
 
 {% highlight html %}
 
