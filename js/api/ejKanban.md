@@ -862,6 +862,10 @@ Sets context menu to target element.
 <td class="description">Sets context menu to Kanban content</td>
 </tr>
 <tr>
+<td class="name">Card</td>
+<td class="description">Sets context menu to Kanban card</td>
+</tr>
+<tr>
 <td class="name">All</td>
 <td class="description">Sets context menu to Kanban</td>
 </tr>
@@ -908,7 +912,8 @@ Sets context menu to target element.
                 customMenuItems: [
                           { text: "Menu1" },
                           { text: "Menu2", target: ej.Kanban.Target.Header },
-                          { text: "Menu3", target: "" }
+                          { text: "Menu3", target: "card" },
+                          { text: "Menu4", target: "" }
                 ],
             }
         });
@@ -3305,11 +3310,11 @@ Priority field has been mapped data source field to maintain card priority
     <div id="Kanban"></div>
     <script type="text/javascript">
     window.kanbandata = [
-         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Priority: "Low" },
-         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Priority: "normal" },
-         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Priority: "high" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Priority: "Low" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Priority: "Critical" }
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", RankId: 1 },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", RankId: 2 },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", RankId: 2 },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", RankId: 1 },
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", RankId: 3 }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3325,7 +3330,7 @@ Priority field has been mapped data source field to maintain card priority
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                Priority: "Priority",
+                Priority: "RankId",
                 content: "Summary",
             },
         });
