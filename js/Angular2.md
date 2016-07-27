@@ -13,7 +13,7 @@ Essential JavaScript provides support for Angular 2 framework through wrappers. 
 
 # Getting Started
 
-Before getting started with Syncfusion JavaScript for Angular 2, prepare your application with the official [Getting Started documentation](https://angular.io/docs/ts/latest/quickstart.html).
+Before getting started with Syncfusion JavaScript for Angular 2, prepare your application with the official [Getting Started documentation](https://angular.io/docs/ts/latest/quickstart.html) and follow the below steps to create Syncfusion Angular 2 components.
 
 ## 1. Preparing the HTML document
 
@@ -78,19 +78,19 @@ For SystemJS configuration, please refer [Angular 2.0 documentation](https://ang
 
 ## 2. Adding Syncfusion Component to your Application
 
-Each Syncfusion components are wrapped as individual SystemJS module. So for importing and using any Syncfusion component, use `ej/<controlName>.component` in require path and variable name holding references to component is `EJ_<CONTROLNAME>_COMPONENTS`. For getting started, you can import the dialog component, refer the following code snippet for the same.
+Each Syncfusion components are wrapped as individual SystemJS module. So for importing and using any Syncfusion component, use `ej/<controlName>.component` in require path and variable name holding references to component is `EJ_<CONTROLNAME>_COMPONENTS`. For getting started, you can import the autocomplete component, refer the following code snippet for the same.
 
 {% highlight javascript %}
 
-import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
+import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
 
 {% endhighlight %}
 
 ### Property Binding
 
-Properties and events names of Syncfusion controls can be initialized with the exact casing of original property names. Bind property to the controls within square bracket(`[]`).
+Properties of Syncfusion controls can be initialized with the exact casing of original property names. Bind property to the controls within square bracket(`[]`).
 
-For autocomplete component, create attribute with prefixing `ej-` and control name then setting `dataSource` and `value` property will be
+For example, create ejAutocomplete component with prefixing of `ej-` and control name then the properties `dataSource` and `value` can be defined as follows.
 
 {% highlight html %}
 
@@ -100,7 +100,7 @@ For autocomplete component, create attribute with prefixing `ej-` and control na
 
 ### Event Binding
 
-Events can be bind to controls using event name within bracket [`()`]. For example, to bind open event on ejAutocomplete, we need to define attribute (open) as onOpen($event). Refer the following snippet for event binding.
+Events can be bound to the controls using the event name within bracket [`()`]. For example, the `open` event of ejAutocomplete control can be defined as follows.
 
 {% highlight html %}
 
@@ -108,7 +108,7 @@ Events can be bind to controls using event name within bracket [`()`]. For examp
 
 {% endhighlight %}
 
-Define event definition at component side as like follow.
+Define event definition at component model as like the below code example.
 
 {% highlight javascript %}
 
@@ -122,9 +122,9 @@ export class AppComponent {
 
 ### Two-way Binding
 
-Two-way binding for Angular2 is bind the value in both view and component using attiribute `[(ngModel)]` and use the same for Syncfusion widget also, it can reflect the changes both ways. In general, we could have more than one property bound to the same variable.
+Two-way binding of Angular 2 synchronizes the value in both view and component model using attiribute `[(ngModel)]`. The same convension is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
 
-Two-way binding for Autocomplete has been demonstrated in the below code,
+Two-way binding for ejAutocomplete has been demonstrated in the below code.
 
 {% highlight javascript %}
 
@@ -139,7 +139,7 @@ Two-way binding for Autocomplete has been demonstrated in the below code,
 export class DefaultComponent {
     states: Array<string>;
     value:string; 
-    constructor(public northwindService: NorthwindService) {
+    constructor() {
         this.states = [
          "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
                     "BMW 7 ", "Bentley Mulsanne", "Bugatti Veyron",
@@ -170,13 +170,213 @@ export class DefaultComponent {
 
 
 
-N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) angular help document.
+The below table depicts the properties of all the Syncfusion widgets that supports model binding - 
 
-E> Error : Cannot find module 'ej/dialog.component' - This error will throw if missing of `ej.angular2.min.js` file from sample.
+
+<table>
+<tr>
+<th>
+Control</th><th>
+Supported properties</th></tr>
+<tr>
+<td>
+ejAccordion</td><td>
+-</td></tr>
+<tr>
+<td>
+ejAutoComplete</td><td>
+value</td></tr>
+<tr>
+<td>
+ejBarcode</td><td>
+-</td></tr>
+<tr>
+<td>
+ejBulletGraph</td><td>
+-</td></tr>
+<tr>
+<td>
+ejButton</td><td>
+-</td></tr>
+<tr>
+<td>
+ejChart</td><td>
+-</td></tr>
+<tr>
+<td>
+ejCheckBox</td><td>
+-</td></tr>
+<tr>
+<td>
+ejCircularGauge</td><td>
+value<br/>minimum<br/>maximum</td></tr>
+<tr>
+<td>
+ejColorPicker</td><td>
+value<br/>opacityValue</td></tr>
+<tr>
+<td>
+ejDatePicker</td><td>
+value</td></tr>
+<tr>
+<td>
+ejDateTimePicker</td><td>
+value</td></tr>
+<tr>
+<td>
+ejDiagram</td><td>
+-</td></tr>
+<tr>
+<td>
+ejDialog</td><td>
+-</td></tr>
+<tr>
+<td>
+ejDigitalGauge</td><td>
+value</td></tr>
+<tr>
+<td>
+ejDropDownList</td><td>
+value</td></tr>
+<tr>
+<td>
+ejGantt</td><td>
+dataSource<br/>selectedItem<br/>splitterSettings.position</td></tr>
+<tr>
+<td>
+ejGrid</td><td>
+dataSource<br/>pageSettings.currentPage</td></tr>
+<tr>
+<td>
+ejKanban</td><td>
+dataSource</td></tr>
+<tr>
+<td>
+ejLinearGauge</td><td>
+value<br/>minimum<br/>maximum</td></tr>
+<tr>
+<td>
+ejListBox</td><td>
+value</td></tr>
+<tr>
+<td>
+ejListView</td><td>
+dataSource</td></tr>
+<tr>
+<td>
+ejMaps</td><td>
+baseMapIndex<br/>enablePan<br/>enableResize<br/>enableAnimation<br/>zoomSettings.level<br/>zoomSettings.minValue<br/>zoomSettings.maxValue<br/>zoomSettings.factor<br/>zoomSettings.enableZoom<br/>zoomSettings.enableZoomOnSelection<br/>navigationControl.enableNavigation<br/>navigationControl.orientation<br/>navigationControl.absolutePosition<br/>navigationControl.dockPosition</td></tr>
+<tr>
+<td>
+ejMaskEdit</td><td>
+value</td></tr>
+<tr>
+<td>
+ejMenu</td><td>
+-</td></tr>
+<tr>
+<td>
+ejPivotGrid</td><td>
+-</td></tr>
+<tr>
+<td>
+ejRadioButton</td><td>
+-</td></tr>
+<tr>
+<td>
+ejRangeNavigator</td><td>
+-</td></tr>
+<tr>
+<td>
+ejRating</td><td>
+value</td></tr>
+<tr>
+<td>
+ejRTE</td><td>
+value</td></tr>
+<tr>
+<td>
+ejRotator</td><td>
+-</td></tr>
+<tr>
+<td>
+ejSchedule</td><td>
+appointmentSettings.dataSource<br/>currentView<br/>currentDate</td></tr>
+<tr>
+<td>
+ejScroller</td><td>
+-</td></tr>
+<tr>
+<td>
+ejSlider</td><td>
+value</td></tr>
+<tr>
+<td>
+ejSplitButton</td><td>
+-</td></tr>
+<tr>
+<td>
+ejSplitter</td><td>
+-</td></tr>
+<tr>
+<td>
+ejTab</td><td>
+-</td></tr>
+<tr>
+<td>
+ejTagCloud</td><td>
+-</td></tr>
+<tr>
+<td>
+ejNumericTextbox</td><td>
+value</td></tr>
+<tr>
+<td>
+ejPercentageTextbox</td><td>
+value</td></tr>
+<tr>
+<td>
+ejCurrencyTextbox</td><td>
+value</td></tr>
+<tr>
+<td>
+ejTimePicker</td><td>
+value</td></tr>
+<tr>
+<td>
+ejToggleButton</td><td>
+-</td></tr>
+<tr>
+<td>
+ejToolbar</td><td>
+-</td></tr>
+<tr>
+<td>
+ejTreemap</td><td>
+dataSource<br/>weightValuePath</td></tr>
+<tr>
+<td>
+ejTreeView</td><td>
+-</td></tr>
+<tr>
+<td>
+ejUploadbox</td><td>
+-</td></tr>
+<tr>
+<td>
+ejWaitingPopup</td><td>
+-</td></tr>
+</table>
+
+
+
+N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) Angular 2 help document.
+
+E> Error : Cannot find module 'ej/autocomplete.component' - This error will throw if missing of `ej.angular2.min.js` file from sample.
 
 ## 3. Invoking EJ widget methods from component instance
 
-You can invoke the ej widget’s public methods using Angular 2 component instance reference. Syntax for this is 
+You can invoke the ej widget’s public methods using Angular 2 component instance reference like the below syntax.
 
 {% highlight javascript %}
 
@@ -184,12 +384,12 @@ You can invoke the ej widget’s public methods using Angular 2 component instan
 
 {% endhighlight %}
 
-For ex, to invoke `clearText` method of autocomplete widget, you can use like `myApp.widget.clearText()`. So the complete code structure of `app.component.ts` will be as follows
+For example, to invoke `clearText` method of ejAutocomplete widget, you can use like `myApp.widget.clearText()`. So the complete code structure of `app.component.ts` will be as follows.
 
 {% highlight javascript %}
 
 import {Component} from '@angular/core';
-import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
+import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
 
 @Component({
     selector: 'my-app',
@@ -203,7 +403,7 @@ import {EJ_DIALOG_COMPONENTS} from 'ej/dialog.component';
 export class DefaultComponent {
     states: Array<string>;
     value:string; 
-    constructor(public northwindService: NorthwindService) {
+    constructor() {
         this.states = [
          "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
                     "BMW 7 ", "Bentley Mulsanne", "Bugatti Veyron",
@@ -234,6 +434,6 @@ export class DefaultComponent {
 
 {% endhighlight %}
 
-Final browser output will be as follows
+Final browser output renders the ejAutocomplete component and looks like the below screenshot.
 
 ![](/js/Angular2_images/angular2_sample_img.png)
