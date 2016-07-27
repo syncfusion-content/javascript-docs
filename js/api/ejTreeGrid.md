@@ -2011,6 +2011,7 @@ treegridObj.search("Plan"); // To search a Plan string in tree grid data
 </script>
 
 {% endhighlight %}
+
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
