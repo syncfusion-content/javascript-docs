@@ -128,7 +128,7 @@ public class JSXLExportController : ApiController
 
 To open an excel document, [`import`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
 
-#### From Stream
+#### Stream
 Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
 
 {% highlight javascript %}
@@ -159,7 +159,7 @@ public HttpResponseMessage Import()
 
 {% endhighlight %}
 
-#### From File URL
+#### File URL
 Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
 The code snippets to open excel document as URL from client side are as follows,
 
