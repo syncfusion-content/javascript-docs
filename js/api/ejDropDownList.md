@@ -221,7 +221,7 @@ You can customize the appearance of the dropdown by using the cssClass property.
 {% highlight html %}
  
     <head>
-        <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" /> 
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" /> 
     </head>
     <input type="text" id="drpdwn" />
 
