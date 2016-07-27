@@ -89,33 +89,46 @@ $('#drpdwn').ejDropDownList();
 
 ## Members
 
+### allowVirtualScrolling `boolean`
+{:#members:allowvirtualscrolling}
+
+The Virtual Scrolling(lazy loading) feature is used to display a large amount of data that you require without buffering the entire load of a huge database records in the DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true.
+
+####  Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <input type="text" id="CompanyNames" />
+    var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+    $('#CompanyNames').ejDropDownList({
+        "dataSource": dm,
+        "fields": { text: "CompanyName", value: 'ContactName' },
+        "width": 260,
+        "itemsCount": 10,
+        "allowVirtualScrolling": true
+    });
+    
+{% endhighlight %}
 
 ### cascadeTo `string`
 {:#members:cascadeto}
 
-
-
-
 The cascading DropDownLists is a series of two or more DropDownLists in which each DropDownList is filtered according to the previous DropDownList’s value.
-
 
 #### Default Value
 
+*  null
 
-
-
-* null
-
-
-
-
-#### Example
-
-
+####  Example
 
 {% highlight html %}
-<span>Select Group</span><input id="groupsList" type="text"/>
-<span>Select Country</span><input id="countryList" type="text"/><script>
+    
+    <span>Select Group</span><input id="groupsList" type="text"/>
+    <span>Select Country</span><input id="countryList" type="text"/><script>
         var groups = [
             { parentId: 'a', text: "Group A" },
             { parentId: 'b', text: "Group B" },
@@ -154,43 +167,33 @@ The cascading DropDownLists is a series of two or more DropDownLists in which ea
             fields: { value: "value", text: "text" },
             enabled: false
         });
-</script>
+   
 {% endhighlight %}
 
-
 ### caseSensitiveSearch `boolean`
+
 {:#members:casesensitivesearch}
-
-
-
 
 Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
 
+####  Default Value
 
-#### Default Value
+*  false
 
-
-
-
-* false
-
-
-
-
-#### Example
-
-
+####  Example
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList"><ul>
-            <li>Audi A4</li>
-            <li>Audi A5</li>
-            <li>Audi A6</li>
-            <li>Audi A7</li>
-            <li>Audi A8</li>
-        </ul>
-    </div><script>
+    <input type="text" id="drpdwn" /><div id="carsList">
+    <ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul>
+    </div>
+    <script>
         // Initializes the DropDownList with the caseSensitiveSearch specified.
         $("#drpdwn").ejDropDownList(
         { 
@@ -199,45 +202,28 @@ Sets the case sensitivity of the search operation. It supports both enableFilter
            caseSensitiveSearch: true 
         });
 
-</script>
+    </script>
+    
 {% endhighlight %}
-
-
 
 ### cssClass `string`
 {:#members:cssclass}
 
-
-
-
 Dropdown widget's style and appearance can be controlled based on 13 different default built-in themes.  
 You can customize the appearance of the dropdown by using the cssClass property. You need to specify a class name in the cssClass property and the same class name is used before the class definitions wherever the custom styles are applied.
 
-
-
 #### Default Value
-
-
-
 
 * ""
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
-<head>
-
-    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" /> 
-
-</head>
-
-<input type="text" id="drpdwn" />
+    <head>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" /> 
+    </head>
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -258,84 +244,53 @@ You can customize the appearance of the dropdown by using the cssClass property.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### dataSource `object`
 {:#members:datasource}
 
-
-
-
 This property is used to serve data from the data services based on the query provided. To bind the data to the dropdown widget, the dataSource property is assigned with the instance of the ej.DataManager.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <script>
-
-       // DataManager creation.
+        // DataManager creation.
         var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Customers");
 
         $('#drpdwn').ejDropDownList(
         {
-           dataSource: dataManager,
-           fields: { text: "CustomerID" }
+            dataSource: dataManager,
+            fields: { text: "CustomerID" }
         }); 
-
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### delimiterChar `string`
 {:#members:delimiterchar}
 
-
-
-
 Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or any other special character.
-
 
 #### Default Value
 
-
-
-
 * ','
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <script>
-
        window.countries = [
            { text: "Algeria"}, 
            { text: "Argentina"},
@@ -352,36 +307,25 @@ Sets the separator when the multiSelectMode with delimiter option or checkbox is
            dataSource: window.countries, 
            multiSelectMode: "delimiter" 
         });
-
     </script>
+    
 {% endhighlight %}
 
 
 ### enableAnimation `boolean`
 {:#members:enableanimation}
 
-
-
 The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.  
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -403,34 +347,20 @@ The enabled Animation property uses the easeOutQuad animation to SlideDown and S
     </script>
 {% endhighlight %}
 
-
-
-
 ### enabled `boolean`
 {:#members:enabled}
 
-
-
 This property is used to indicate whether the DropDownList control responds to the user interaction or not. By default, the control is in the enabled mode and you can disable it by setting it to false. 
-
 
 #### Default Value
 
-
-
-
 * true
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -453,75 +383,51 @@ This property is used to indicate whether the DropDownList control responds to t
     </script>
 {% endhighlight %}
 
-
-
-
 ### enableIncrementalSearch `boolean`
 {:#members:enableincrementalsearch}
 
-
-
-
 Specifies to perform incremental search for the selection of items from the DropDownList with the help of this property. This helps in selecting the item by using the typed character.
-
 
 #### Default Value
 
-
-
-
 * true
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /> 
- enableFilterSearch 
- <div id="carsList">
-   <ul>
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-   </ul>
- </div>enableFilterSearch <script>          
-// Initializes the enableIncrementalSearch with the value specified.
-$("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
-</script>{% endhighlight %}
+    <input type="text" id="drpdwn" /> 
+    enableFilterSearch 
+    <div id="carsList">
+    <ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul>
+    </div>enableFilterSearch 
+    <script>          
+        // Initializes the enableIncrementalSearch with the value specified.
+        $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
+    </script>
+    
+{% endhighlight %}
 
 ### enableFilterSearch  `boolean`
 {:#members:enablefiltersearch}
 
-
-
-
 This property selects the item in the DropDownList when the item is entered in the Search textbox.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -541,36 +447,23 @@ This property selects the item in the DropDownList when the item is entered in t
          });
 
     </script>
+    
 {% endhighlight %}
-
-
 
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
-
-
-
 Saves the current model value to the browser cookies for state maintenance. While refreshing the DropDownList control page, it retains the model value and it is applied from the browser cookies.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -597,28 +490,19 @@ Saves the current model value to the browser cookies for state maintenance. Whil
 ### enablePopupResize  `boolean`
 {:#members:enablepopupresize}
 
-
-
-
 This enables the resize handler to resize the popup to any size. 
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
-   <select name="selectIndex" id="drpdwn"><option value="Art">Art</option><option value="Architecture">Architecture</option>
+
+    <select name="selectIndex" id="drpdwn">
+        <option value="Art">Art</option>
+        <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
         <option value="Business">Business</option>
         <option value="ComputerIT">Computer IT</option>
@@ -628,50 +512,42 @@ This enables the resize handler to resize the popup to any size.
         <option value="Fiction">Fiction</option>
         <option value="Health">Health</option>
         <option value="Humanities">Humanities</option>
-        <option value="Language">Language</option></select><script>
+        <option value="Language">Language</option>
+    </select>
+    <script>
         // Creates DropDownList.
         $('#drpdwn').ejDropDownList(
         { 
             enablePopupResize: true 
         });
     </script>
+    
 {% endhighlight %}
-
-
 
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-
-
-
 Sets the DropDownList textbox direction from right to left align.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList"><ul>
+    <input type="text" id="drpdwn" />
+    <div id="carsList">
+        <ul>
             <li>Audi A4</li>
             <li>Audi A5</li>
             <li>Audi A6</li>
             <li>Audi A7</li>
             <li>Audi A8</li>
         </ul>
-    </div><script>
+    </div>
+    <script>
         // Initializes the DropDownList with the enableRTL value specified.
         $("#drpdwn").ejDropDownList(
         { 
@@ -680,50 +556,39 @@ Sets the DropDownList textbox direction from right to left align.
         });
 
     </script>
+    
 {% endhighlight %}
-
 
 ### enableSorting  `boolean`
 {:#members:enableSorting}
 
-
-
-
 This property is used to sort the Items in the DropDownList. By default, it sorts the items in an ascending order.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input id="drpdwn" type="text" /><div id="list">
+    <input id="drpdwn" type="text" /><div id="list">
       <ul>
-        <li id="Art">Art</li>
-        <li id="Architecture">Architecture</li>
-        <li id="Biographies">Biographies</li>
-        <li id="ComputerIT">Computer IT</li>
-        <li id="Comics">Comics</li>
-        <li id="Cookery">Cookery</li>
-        <li id="Fiction">Fiction</li>
-        <li id="Health">Health</li>
-        <li id="Humanities">Humanities</li>
-        <li id="Environment">Environment</li>
-        <li id="Language">Language</li>
-        <li id="Business">Business</li>
+            <li id="Art">Art</li>
+            <li id="Architecture">Architecture</li>
+            <li id="Biographies">Biographies</li>
+            <li id="ComputerIT">Computer IT</li>
+            <li id="Comics">Comics</li>
+            <li id="Cookery">Cookery</li>
+            <li id="Fiction">Fiction</li>
+            <li id="Health">Health</li>
+            <li id="Humanities">Humanities</li>
+            <li id="Environment">Environment</li>
+            <li id="Language">Language</li>
+            <li id="Business">Business</li>
       </ul>
-    </div><script>
+    </div>
+    <script>
         // Creates the DropDownList.
         $('#drpdwn').ejDropDownList(
         { 
@@ -737,32 +602,20 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 
 {% endhighlight %}
 
-
 ### fields `object`
 {:#members:fields}
 
-
-
 Specifies the mapping fields for the data items of the DropDownList.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+    <input type="text" id="drpdwn" /><script>
         window.countries = [
            { text: "Algeria", flag: "flag-dz" }, 
            { text: "Argentina", flag: "flag-ar" },
@@ -778,125 +631,53 @@ Specifies the mapping fields for the data items of the DropDownList.
         }); 
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### fields.groupBy `string`
 {:#members:fields-groupby}
 
-
-
-
 Used to group the items. 
-
-
-
-
-
 
 ### fields.htmlAttributes `object`
 {:#members:fields-htmlattributes}
 
-
-
-
 Defines the HTML attributes such as ID, class, and styles for the item.
-
-
-
-
-
 
 ### fields.id `string`
 {:#members:fields-id}
 
-
-
-
 Defines the ID for the tag.
-
-
-
-
 
 ### fields.imageAttributes `string`
 {:#members:fields-imageattributes}
 
-
-
 Defines the image attributes such as height, width, styles, and so on.
-
-
-
-
-
 
 ### fields.imageUrl `string`
 {:#members:fields-imageurl}
 
-
-
-
 Defines the imageURL for the image location.
-
-
-
-
-
 
 ### fields.selected `boolean`
 {:#members:fields-selected}
 
-
-
-
 Defines the tag value to be selected initially.
-
-
-
-
-
 
 ### fields.spriteCssClass `string`
 {:#members:fields-spritecssclass}
 
-
-
-
 Defines the sprite CSS for the image tag.
-
-
-
-
-
 
 ### fields.tableName `string`
 {:#members:fields-tablename}
 
-
-
-
 Defines the table name for tag value or display text while rendering remote data.
-
-
-
-
-
 
 ### fields.text `string`
 {:#members:fields-text}
 
-
-
-
 Defines the text content for the tag.
-
-
-
-
-
 
 ### fields.value `string`
 {:#members:fields-value}
@@ -906,11 +687,9 @@ Defines the tag value.
 ### filterType   `enum`
 {:#members:filterType}
 
-
 <ts name="ej.FilterType"/>
 
 When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search textbox.
-
 
 <table class="params">
 <thead>
@@ -939,16 +718,11 @@ startsWith</td>
 
 * ej.FilterType.Contains
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="drpdwn" type="text" /><div id="list">
+    <input id="drpdwn" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -980,11 +754,9 @@ startsWith</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input id="drpdwn" type="text" /><div id="list">
+    <input id="drpdwn" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -1009,36 +781,25 @@ startsWith</td>
              filterType: ej.FilterType.StartsWith
         });        
     </script>
+    
 {% endhighlight %}
-
 
 ### headerTemplate `string`
 {:#members:headertemplate}
 
-
-
 Used to create visualized header for dropdown items
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
-        
-// Sets the headerTemplate API value during initialization  .   
-<input type="text" id="drpdwn" /><script>
+   
+    // Sets the headerTemplate API value during initialization  .   
+    <input type="text" id="drpdwn" />
+    <script>
         window.countries = [
              { text: "Argentina", flag: "flag-ar" },
              { text: "Armenia", flag: "flag-am" }, 
@@ -1051,7 +812,9 @@ Used to create visualized header for dropdown items
             dataSource: window.countries, 
             template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"
             headerTemplate: "<div class='header'><span class='flag-head'>Flag</span> <span class='con-head'>Countries</span> </div>"
-        });</script><style type="text/css">
+        });
+    </script>
+    <style type="text/css">
         /* Sprite css for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
@@ -1062,100 +825,78 @@ Used to create visualized header for dropdown items
             width: 25px;
         }
         .header {
-			text-align:center;
-			font-weight:600;
-			height:30px;
-			vertical-align:middle;	
-			border-bottom:1px solid #c8c8c8;
-		}
-		.flag-head{
-			float: left;
-			margin-left: 12px;
-			margin-top: 5px;
-		}
-		.con-head{
-			float: right;
-			margin-right: 89px;
-			margin-top: 5px;
-		}
+            text-align:center;
+            font-weight:600;
+            height:30px;
+            vertical-align:middle;	
+            border-bottom:1px solid #c8c8c8;
+        }
+        .flag-head{
+            float: left;
+            margin-left: 12px;
+            margin-top: 5px;
+        }
+        .con-head{
+            float: right;
+            margin-right: 89px;
+            margin-top: 5px;
+        }
         .flag.flag-am {background-position: -25px 0;}
         .flag.flag-ar {background-position: -50px 0;}
         .flag.flag-bd {background-position: -75px 0;}
         .flag.flag-br {background-position: -100px 0;}
         .flag.flag-ca {background-position: -125px 0;}
     </style>
+    
 {% endhighlight %}
 
 ### height `string|number`
 {:#members:height}
 
-
-
-
 Defines the height of the DropDownList textbox.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList">
-        <ul>
-            <li>Audi A4</li>
-            <li>Audi A5</li>
-            <li>Audi A6</li>
-            <li>Audi A7</li>
-            <li>Audi A8</li>
-        </ul>
-    </div><script>
+    <input type="text" id="drpdwn" /><div id="carsList">
+    <ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul>
+    </div>
+    <script>
         //Initializes the DropDownList height property with the value specified.
         $("#drpdwn").ejDropDownList(
         { 
             targetID: "carsList", 
             height: 100 
         });
-      </script>
+    </script>
+    
 {% endhighlight %}
-
 
 ### htmlAttributes  `object` 
 {:#members:htmlattributes}
 
-
-
 It sets the given HTML attributes for the DropDownList control such as ID, name, disabled, etc.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
-
+    <input type="text" id="drpdwn" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -1182,28 +923,17 @@ It sets the given HTML attributes for the DropDownList control such as ID, name,
 ### itemsCount `number`
 {:#members:itemscount}
 
-
-
 Data can be fetched in the DropDownList control by using the DataSource, specifying the number of items.
-
 
 #### Default Value
 
-
-
-
 * 5
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
     <script>
 
         window.countries = [
@@ -1223,33 +953,52 @@ Data can be fetched in the DropDownList control by using the DataSource, specify
     </script>
 {% endhighlight %}
 
+### locale `string`
+{:#members:locale}
+
+Allows the user to set the particular country or region language for the DropDownList.
+
+#### Default Value
+
+* "en-US"
+
+#### Example
+
+{% highlight html %}
+
+    <input type="text" id="selectcompany" />
+
+    $(function () {
+        var datalist = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+        $('#selectcompany').ejDropDownList({
+            dataSource: datalist,
+            fields: { text: "CompanyName", value: 'ContactName' },
+            width: 260,
+            showCheckbox: true,
+            locale: "de-DE",
+            enableFilterSearch: true,
+            enablePopupResize: true
+
+        });
+    });
+    
+{% endhighlight %}
 
 ### maxPopupHeight  `string|number`
 {:#members:maxpopupheight}
 
-
-
-
 Defines the maximum height of the suggestion box. This property restricts the maximum height of the popup when resize is enabled. 
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+    <input type="text" id="drpdwn" />
+    <script>
         var dm = ej.DataManager({ url:   "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
@@ -1266,35 +1015,24 @@ Defines the maximum height of the suggestion box. This property restricts the ma
         });
 
     </script>
+    
 {% endhighlight %}
-
 
 ### minPopupHeight   `string|number`
 {:#members:minpopupheight }
 
-
-
-
 Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled. 
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+    <input type="text" id="drpdwn" />
+    <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
@@ -1318,29 +1056,18 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 ### maxPopupWidth    `string|number`
 {:#members:maxpopupwidth }
 
-
-
-
 Defines the maximum width of the suggestion box. This property restricts the maximum width of the popup when resize is enabled. 
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+    <input type="text" id="drpdwn" />
+    <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
@@ -1365,29 +1092,18 @@ Defines the maximum width of the suggestion box. This property restricts the max
 ### minPopupWidth   `string|number`
 {:#members:minpopupwidth }
 
-
-
-
 Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled. 
-
 
 #### Default Value
 
-
-
-
 * 0
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+    <input type="text" id="drpdwn" />
+    <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
@@ -1448,21 +1164,13 @@ visualMode</td>
 
 #### Default Value
 
-
-
-
 *  ej.MultiSelectMode.None
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -1481,17 +1189,13 @@ visualMode</td>
         });
     </script>
 
-
-
 {% endhighlight %}
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1513,36 +1217,22 @@ visualMode</td>
 
     </script>
 
-
-
 {% endhighlight %}
 
 ### popupHeight `string|number`
 {:#members:popupheight}
 
-
-
-
 Defines the height of the suggestion popup box in the DropDownList control.
-
 
 #### Default Value
 
-
-
-
 * "152px"
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <script>
 
@@ -1561,37 +1251,23 @@ Defines the height of the suggestion popup box in the DropDownList control.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### popupWidth `string|number`
 {:#members:popupwidth}
 
-
-
-
 Defines the width of the suggestion popup box in the DropDownList control.
-
 
 #### Default Value
 
-
-
-
 * "auto"
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+   <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1612,37 +1288,23 @@ Defines the width of the suggestion popup box in the DropDownList control.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### query `object`
 {:#members:query}
 
-
-
-
 Specifies the query to retrieve the data from the DataSource.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <script>
 
@@ -1660,37 +1322,23 @@ Specifies the query to retrieve the data from the DataSource.
          });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### readOnly `boolean`
 {:#members:readonly}
 
-
-
-
 Specifies that the DropDownList textbox values should be read-only.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1712,37 +1360,24 @@ Specifies that the DropDownList textbox values should be read-only.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### selectedIndex  `number`
 {:#members:selectedindex }
-
-
-
 
 Specifies an item to be selected in the DropDownList.
 
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1763,37 +1398,23 @@ Specifies an item to be selected in the DropDownList.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### selectedIndices  `array`
 {:#members:selectedindices}
 
-
-
-
 Specifies the selectedItems for the DropDownList.
-
 
 #### Default Value
 
-
-
-
 * []
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1817,35 +1438,20 @@ Specifies the selectedItems for the DropDownList.
     </script>
 {% endhighlight %}
 
-
-
-
 ### showCheckbox `boolean`
 {:#members:showcheckbox}
 
-
-
-
 Selects multiple items in the DropDownList with the help of the checkbox control. To achieve this, enable the showCheckbox option to true.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1866,37 +1472,23 @@ Selects multiple items in the DropDownList with the help of the checkbox control
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### showPopupOnLoad `boolean`
 {:#members:showpopuponload}
 
-
-
-
 DropDownList control is displayed with the popup seen.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1915,37 +1507,23 @@ DropDownList control is displayed with the popup seen.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
-
-
-
 DropDownList textbox displayed with the rounded corner style.
-
 
 #### Default Value
 
-
-
-
 * false
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -1966,14 +1544,13 @@ DropDownList textbox displayed with the rounded corner style.
         });
 
     </script>
+    
 {% endhighlight %}
-
 
 ### sortOrder  `enum`
 {:#members:sortorder}
 
 <ts name="ej.SortOrder"/>
-
 
 When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
 
@@ -2000,24 +1577,15 @@ descending</td>
 </tbody>
 </table>
 
-
 #### Default Value
-
-
-
 
 * ej.sortOrder.Ascending
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input id="drpdwn" type="text" /><div id="list">
+    <input id="drpdwn" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -2032,7 +1600,8 @@ descending</td>
         <li id="Language">Language</li>
         <li id="Business">Business</li>
       </ul>
-    </div><script>
+    </div>
+    <script>
         // Creates the DropDownList.
         $('#drpdwn').ejDropDownList(
         { 
@@ -2046,32 +1615,20 @@ descending</td>
 
 {% endhighlight %}
 
-
 ### targetID `string`
 {:#members:targetid}
 
-
-
 Specifies the targetID for the DropDownList’s items.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList">
+    <input type="text" id="drpdwn" /><div id="carsList">
         <ul>
             <li>Audi A4</li>
             <li>Audi A5</li>
@@ -2079,7 +1636,8 @@ Specifies the targetID for the DropDownList’s items.
             <li>Audi A7</li>
             <li>Audi A8</li>
         </ul>
-    </div><script>
+    </div>
+    <script>
         // Initializes the DropDownList with the targetID value specified.
         $("#drpdwn").ejDropDownList(
         { 
@@ -2087,38 +1645,25 @@ Specifies the targetID for the DropDownList’s items.
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### template `string`
 {:#members:template}
 
-
-
 By default, you can add any text or image to the DropDownList item. To customize the item layout or to create your own visualized elements, you can use this template support.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
-        
-// Sets the template API value during initialization  .   
-<input type="text" id="drpdwn" /><script>
+      
+    // Sets the template API value during initialization  .   
+    <input type="text" id="drpdwn" />
+    <script>
         window.countries = [
              { text: "Argentina", flag: "flag-ar" },
              { text: "Armenia", flag: "flag-am" }, 
@@ -2130,7 +1675,9 @@ By default, you can add any text or image to the DropDownList item. To customize
         {
             dataSource: window.countries, 
             template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"
-        });</script><style type="text/css">
+        });
+    </script>
+    <style type="text/css">
         /* Sprite css for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
@@ -2146,32 +1693,19 @@ By default, you can add any text or image to the DropDownList item. To customize
         .flag.flag-br {background-position: -100px 0;}
         .flag.flag-ca {background-position: -125px 0;}
     </style>
+    
 {% endhighlight %}
-
-
-
 
 ### text `string`
 {:#members:text}
 
-
-
 Defines the text value that is displayed in the DropDownList textbox.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2200,8 +1734,6 @@ Defines the text value that is displayed in the DropDownList textbox.
     </script>
 {% endhighlight %}
 
-
-
 ### validationMessage `object`
 {:#members:validationmessage}
 
@@ -2210,21 +1742,13 @@ Sets the jQuery validation error message in the DropDownList
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" name="drpdwn" />
+    <input type="text" id="drpdwn" name="drpdwn" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -2248,37 +1772,23 @@ Sets the jQuery validation error message in the DropDownList
         });
 
     </script>
+    
 {% endhighlight %}
-
-
-
 
 ### validationRules `object`
 {:#members:validationrules}
 
-
-
-
 Sets the jQuery validation rules in the Dropdownlist.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" name="drpdwn" />
+    <input type="text" id="drpdwn" name="drpdwn" />
 
     <script>
 
@@ -2303,34 +1813,20 @@ Sets the jQuery validation rules in the Dropdownlist.
     </script>
 {% endhighlight %}
 
-
-
-
 ### value `string`
 {:#members:value}
 
-
-
 Specifies the value (text content) for the DropDownList control.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -2356,35 +1852,20 @@ Specifies the value (text content) for the DropDownList control.
     </script>
 {% endhighlight %}
 
-
-
-
 ### watermarkText `string`
 {:#members:watermarktext}
 
-
-
-
 Specifies a short hint that describes the expected value of the DropDownList control.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -2406,35 +1887,20 @@ Specifies a short hint that describes the expected value of the DropDownList con
     </script>
 {% endhighlight %}
 
-
-
-
 ### width `string|number`
 {:#members:width}
 
-
-
-
 Defines the width of the DropDownList textbox.
-
 
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -2456,7 +1922,6 @@ Defines the width of the DropDownList textbox.
 
     </script>
 {% endhighlight %}
-
 
 ### virtualScrollMode  `enum` 
 {:#members:virtualscrollmode}
@@ -2493,21 +1958,13 @@ continuous</td>
 
 #### Default Value
 
-
-
-
 * "normal"
-
-
-
 
 #### Example - Normal mode
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -2531,11 +1988,9 @@ continuous</td>
 
 #### Example - Continuous mode
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
     <script>
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
@@ -2552,20 +2007,13 @@ continuous</td>
         });
     </script>
 
-
 {% endhighlight %}
 
 
 ## Methods
 
-
-
-
 ### addItem(data)
 {:#methods:additem}
-
-
-
 
 Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items. 
 
@@ -2587,14 +2035,11 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <script>
         window.countries = [
@@ -2620,8 +2065,6 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2660,19 +2103,13 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 ### checkAll()
 {:#methods:checkall}
 
-
-
 This method is used to select all the items in the DropDownList.
-
-
 
 #### Example
 
-
-
 {% highlight html %}
  
- 
+
 <input type="text" id="drpdwn" />
 
     <div id="carsList">
@@ -2730,22 +2167,12 @@ This method is used to select all the items in the DropDownList.
     </script>
 {% endhighlight %}
 
-
-
-
 ### clearText()
 {:#methods:cleartext}
 
-
-
-
 Clears the text in the DropDownList textbox.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2774,7 +2201,6 @@ Clears the text in the DropDownList textbox.
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -2802,22 +2228,12 @@ Clears the text in the DropDownList textbox.
     </script>
 {% endhighlight %}
 
-
-
-
 ### destroy()
 {:#methods:destroy}
 
-
-
-
 Destroys the DropDownList widget.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2875,21 +2291,12 @@ Destroys the DropDownList widget.
     </script>
 {% endhighlight %}
 
-
-
-
 ### disable()
 {:#methods:disable}
 
-
-
 This property is used to disable the DropDownList widget.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2947,13 +2354,8 @@ This property is used to disable the DropDownList widget.
     </script>
 {% endhighlight %}
 
-
-
-
 ### disableItemsByIndices(index)
 {:#methods:disableitembyindices}
-
-
 
 This property disables the set of items in the DropDownList.
 
@@ -2976,8 +2378,6 @@ This property disables the set of items in the DropDownList.
 </table>
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3044,22 +2444,12 @@ This property disables the set of items in the DropDownList.
     </script>
 {% endhighlight %}
 
-
-
-
 ### enable()
 {:#methods:enable}
 
-
-
-
 This property enables the DropDownList control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3118,14 +2508,8 @@ This property enables the DropDownList control.
     </script>
 {% endhighlight %}
 
-
-
-
 ### enableItemsByIndices(index)
 {:#methods:enableitembyindices}
-
-
-
 
 Enables an Item or set of Items that are disabled in the DropDownList
 
@@ -3148,8 +2532,6 @@ Enables an Item or set of Items that are disabled in the DropDownList
 </table>
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3223,8 +2605,6 @@ Enables an Item or set of Items that are disabled in the DropDownList
 ### getItemDataByValue(value)
 {:#methods:getItemDataByValue}
 
-
-
 This method retrieves the items using given value.
 
 <table class="params">
@@ -3250,8 +2630,6 @@ This method retrieves the items using given value.
 This method will return the whole object corresponds to given value from datasource 
 
 #### Example
-
-
 
 {% highlight html %}
  <input type="text" id="drpdwn" />
@@ -3303,14 +2681,8 @@ This method will return the whole object corresponds to given value from datasou
 
 {% endhighlight %}
 
-
-
-
 ### getListData()
 {:#methods:getlistdata}
-
-
-
 
 This method is used to retrieve the items that are bound with the DropDownList.
 
@@ -3322,8 +2694,6 @@ This method will return the whole data which binds with Dropdownlist control
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3360,7 +2730,6 @@ This method will return the whole data which binds with Dropdownlist control
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
   <select name="selectIndex" id="drpdwn">
@@ -3391,13 +2760,8 @@ This method will return the whole data which binds with Dropdownlist control
     </script>
 {% endhighlight %}
 
-
-
 ### getSelectedItem()
 {:#methods:getselecteditem}
-
-
-
 
 This method is used to get the selected items in the DropDownList.
 
@@ -3405,50 +2769,46 @@ This method is used to get the selected items in the DropDownList.
 
 This method will return the selected item elements 
 
-
 #### Example
 
-
-
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList"><ul>
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-   </ul></div><script>
-      // Create DropDownList
-      $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
-      var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
-      DropDownListObj.getSelectedItem(); 
-</script>
+    <input type="text" id="drpdwn" /><div id="carsList"><ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul></div>
+    <script>
+        // Create DropDownList
+        $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
+        var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
+        DropDownListObj.getSelectedItem(); 
+    </script>
+    
 {% endhighlight %}
 
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList"><ul>
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-   </ul>
- </div><script>
-      // Creates the DropDownList
-      $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
-      $('#drpdwn').ejDropDownList("getSelectedItem");         
-</script>
+    <input type="text" id="drpdwn" /><div id="carsList"><ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul>
+    </div><script>
+        // Creates the DropDownList
+        $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
+        $('#drpdwn').ejDropDownList("getSelectedItem");         
+    </script>
+
 {% endhighlight %}
-
-
 
 ### getSelectedValue()
 {:#methods:getselectedvalue}
-
-
 
 
 This method is used to retrieve the items value that are selected in the DropDownList.
@@ -3459,11 +2819,8 @@ This method will return the selected Item value and separated by delimiterChar i
 
 #### Example
 
-
-
 {% highlight html %}
- 
-   
+  
 <select name="selectIndex" id="drpdwn">
 
         <option value="Art">Art</option>
@@ -3495,7 +2852,6 @@ This method will return the selected Item value and separated by delimiterChar i
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
    <select name="selectIndex" id="drpdwn">
@@ -3525,21 +2881,12 @@ This method will return the selected Item value and separated by delimiterChar i
     </script>
 {% endhighlight %}
 
-
-
 ### hidePopup()
 {:#methods:hidepopup}
 
-
-
-
 This method hides the suggestion popup in the DropDownList.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3570,7 +2917,6 @@ This method hides the suggestion popup in the DropDownList.
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
   <input type="text" id="drpdwn" />
@@ -3599,17 +2945,10 @@ This method hides the suggestion popup in the DropDownList.
     </script>
 {% endhighlight %}
 
-
-
-
 ### selectItemsByIndices(indices)
 {:#methods:selectitembyindices}
 
-
-
-
 This method is used to select the list of items in the DropDownList through the Index of the items.
-
 
 <table class="params">
 <thead>
@@ -3632,11 +2971,8 @@ This method is used to select the list of items in the DropDownList through the 
 
 #### Example
 
-
-
 {% highlight html %}
  
-   
 <select name="selectIndex" id="drpdwn">
 
         <option value="Art">Art</option>
@@ -3662,7 +2998,6 @@ This method is used to select the list of items in the DropDownList through the 
 
     </script>
 {% endhighlight %}
-
 
 {% highlight html %}
  
@@ -3691,11 +3026,8 @@ This method is used to select the list of items in the DropDownList through the 
     </script>
 {% endhighlight %}
 
-
 ### selectItemByText(text)
 {:#methods:selectitembytext}
-
-
 
 This method is used to select an item in the DropDownList by using the given text value.
 
@@ -3717,10 +3049,7 @@ This method is used to select an item in the DropDownList by using the given tex
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %} 
  <select name="selectIndex" id="drpdwn"><option value="Architecture">Architecture</option>
@@ -3744,7 +3073,6 @@ This method is used to select an item in the DropDownList by using the given tex
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  <select name="selectIndex" id="drpdwn">
         <option value="Art">Art</option>
@@ -3766,12 +3094,8 @@ This method is used to select an item in the DropDownList by using the given tex
     </script>  
 {% endhighlight %}
 
-
 ### selectItemByValue(value)
 {:#methods:selectitembyvalue}
-
-
-
 
 This method is used to select an item in the DropDownList by using the given value.
 
@@ -3795,8 +3119,6 @@ This method is used to select an item in the DropDownList by using the given val
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3824,7 +3146,6 @@ This method is used to select an item in the DropDownList by using the given val
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
 <select name="selectIndex" id="drpdwn">
@@ -3847,25 +3168,14 @@ This method is used to select an item in the DropDownList by using the given val
     </script>
 {% endhighlight %}
 
-
-
-
 ### showPopup()
 {:#methods:showpopup}
 
-
-
-
 This method shows the DropDownList control with the suggestion popup.
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
  
 <input type="text" id="drpdwn" />
 
@@ -3891,7 +3201,6 @@ This method shows the DropDownList control with the suggestion popup.
 
     </script>
 {% endhighlight %}
-
 
 {% highlight html %}
  
@@ -3920,22 +3229,12 @@ This method shows the DropDownList control with the suggestion popup.
     </script>
 {% endhighlight %}
 
-
-
-
 ### unCheckAll()
 {:#methods:uncheckall}
 
-
-
-
 This method is used to unselect all the items in the DropDownList.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3961,10 +3260,8 @@ This method is used to unselect all the items in the DropDownList.
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
-
   <input type="text" id="drpdwn" /><div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -3985,14 +3282,8 @@ This method is used to unselect all the items in the DropDownList.
     </script>
 {% endhighlight %}
 
-
-
-
 ### unselectItemsByIndices(indices)
 {:#methods:unselectitembyindices}
-
-
-
 
 This method is used to unselect the list of items in the DropDownList through Index of the items.
 
@@ -4014,10 +3305,7 @@ This method is used to unselect the list of items in the DropDownList through In
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4045,7 +3333,6 @@ This method is used to unselect the list of items in the DropDownList through In
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
 <select name="selectIndex" id="drpdwn">
@@ -4072,14 +3359,8 @@ This method is used to unselect the list of items in the DropDownList through In
     </script>
 {% endhighlight %}
 
-
-
-
 ### unselectItemByText(text)
 {:#methods:unselectitembytext}
-
-
-
 
 This method is used to unselect an item in the DropDownList by using the given text value.
 
@@ -4101,11 +3382,7 @@ This method is used to unselect an item in the DropDownList by using the given t
 </tbody>
 </table>
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4133,7 +3410,6 @@ This method is used to unselect an item in the DropDownList by using the given t
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
  <select name="selectIndex" id="drpdwn">
@@ -4160,14 +3436,8 @@ This method is used to unselect an item in the DropDownList by using the given t
     </script>
 {% endhighlight %}
 
-
-
-
 ### unselectItemByValue(value)
 {:#methods:unselectitembyvalue}
-
-
-
 
 This method is used to unselect an item in the DropDownList by using the given value.
 
@@ -4190,8 +3460,6 @@ This method is used to unselect an item in the DropDownList by using the given v
 </table>
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4220,7 +3488,6 @@ This method is used to unselect an item in the DropDownList by using the given v
     </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
   <select name="selectIndex" id="drpdwn">
@@ -4247,19 +3514,10 @@ This method is used to unselect an item in the DropDownList by using the given v
     </script>
 {% endhighlight %}
 
-
-
-
 ## Events
-
-
-
 
 ### actionBegin 
 {:#events:actionBegin}
-
-
-
 
 Fires the action before the XHR request.
 
@@ -4293,7 +3551,6 @@ Fires the action before the XHR request.
 
 #### Example
 
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4325,9 +3582,6 @@ Fires the action before the XHR request.
 
 ### actionComplete
 {:#events:actioncomplete}
-
-
-
 
 Fires the action when the list of items is bound to the DropDownList by xhr post calling 
 
@@ -4386,8 +3640,6 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4418,9 +3670,6 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 
 ### actionFailure
 {:#events:actionfailure}
-
-
-
 
 Fires the action when the xhr post calling failed on remote data binding with the DropDownList control.
 
@@ -4464,8 +3713,6 @@ Fires the action when the xhr post calling failed on remote data binding with th
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4495,8 +3742,6 @@ Fires the action when the xhr post calling failed on remote data binding with th
 
 ### actionSuccess
 {:#events:actionsuccess}
-
-
 
 Fires the action when the xhr post calling succeed on remote data binding with the DropDownList control 
 
@@ -4555,8 +3800,6 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4588,9 +3831,6 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 
 ### beforePopupHide
 {:#events:beforepopuphide}
-
-
-
 
 Fires the action before the popup is ready to hide. 
 
@@ -4634,8 +3874,6 @@ Fires the action before the popup is ready to hide.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4664,15 +3902,11 @@ Fires the action before the popup is ready to hide.
         });
 
     </script>
+    
  {% endhighlight %}
-
-
-
 
 ### beforePopupShown
 {:#events:beforepopupshown}
-
-
 
 Fires the action before the popup is ready to be displayed.
 
@@ -4716,8 +3950,6 @@ Fires the action before the popup is ready to be displayed.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4745,12 +3977,10 @@ Fires the action before the popup is ready to be displayed.
         });
 
     </script>
-   {% endhighlight %}
-
+{% endhighlight %}
 
 ### cascade
 {:#events:cascade}
-
 
 Fires when the cascading happens between two DropDownList exactly after the value changes in the first dropdown and before filtering in the second Dropdown.   
 
@@ -4798,8 +4028,6 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4852,8 +4080,6 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 
 ### change
 {:#events:change}
-
-
 
 Fires the action when the DropDownList control’s value is changed. 
 
@@ -4912,8 +4138,6 @@ Fires the action when the DropDownList control’s value is changed.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -4941,15 +4165,11 @@ Fires the action when the DropDownList control’s value is changed.
         });
 
     </script>
-  {% endhighlight %}
-
-
-
+    
+{% endhighlight %}
 
 ### checkChange
 {:#events:checkchange}
-
-
 
 Fires the action when the list item checkbox value is changed. 
 
@@ -5008,8 +4228,6 @@ Fires the action when the list item checkbox value is changed.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5041,13 +4259,8 @@ Fires the action when the list item checkbox value is changed.
 
   {% endhighlight %}
 
-
-
 ### create
 {:#events:create}
-
-
-
 
 Fires the action once the DropDownList is created.
 
@@ -5081,8 +4294,6 @@ Fires the action once the DropDownList is created.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5112,11 +4323,8 @@ Fires the action once the DropDownList is created.
     </script>
  {% endhighlight %}
 
-
 ### dataBound
 {:#events:databound}
-
-
 
 Fires the action when the list items is bound to the DropDownList. 
 
@@ -5155,8 +4363,6 @@ Fires the action when the list items is bound to the DropDownList.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5184,11 +4390,8 @@ Fires the action when the list items is bound to the DropDownList.
 
  {% endhighlight %}
 
-
 ### destroy
 {:#events:destroy}
-
-
 
 Fires the action when the DropDownList is destroyed. 
 
@@ -5222,8 +4425,6 @@ Fires the action when the DropDownList is destroyed.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5253,14 +4454,8 @@ Fires the action when the DropDownList is destroyed.
     </script>
 {% endhighlight %}
 
-
-
-
 ### popupHide
 {:#events:popuphide}
-
-
-
 
 Fires the action, once the popup is closed
 
@@ -5304,8 +4499,6 @@ Fires the action, once the popup is closed
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5333,13 +4526,8 @@ Fires the action, once the popup is closed
     </script>
 {% endhighlight %}
 
-
-
 ### popupResize
 {:#events:popupresize}
-
-
-
 
 Fires the action, when the popup is resized. 
 
@@ -5378,8 +4566,6 @@ Fires the action, when the popup is resized.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" /><script>
@@ -5405,11 +4591,8 @@ Fires the action, when the popup is resized.
     </script>
 {% endhighlight %}
 
-
 ### popupShown
 {:#events:popupshown}
-
-
 
 Fires the action, once the popup is opened.
 
@@ -5450,10 +4633,7 @@ Fires the action, once the popup is opened.
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -5487,7 +4667,6 @@ Fires the action, once the popup is opened.
 
 ### popupResizeStart
 {:#events:popupresizestart}
-
 
 Fires the action, when resizing a popup starts. 
 
@@ -5526,8 +4705,6 @@ Fires the action, when resizing a popup starts.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <input type="text" id="drpdwn" />
@@ -5558,9 +4735,6 @@ Fires the action, when resizing a popup starts.
 
 ### popupResizeStop
 {:#events:popupresizestop}
-
-
-
 
 Fires the action, when the popup resizing is stopped. 
 
@@ -5596,10 +4770,7 @@ Fires the action, when the popup resizing is stopped.
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -5627,12 +4798,8 @@ Fires the action, when the popup resizing is stopped.
 
 {% endhighlight %}
 
-
-
 ### search
 {:#events:search}
-
-
 
 Fires the action before filtering the list items that starts in the DropDownList when the enableFilterSearch is enabled.
 
@@ -5678,14 +4845,11 @@ Fires the action before filtering the list items that starts in the DropDownList
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>
@@ -5714,12 +4878,8 @@ Fires the action before filtering the list items that starts in the DropDownList
 
 {% endhighlight %}
 
-
 ### select
 {:#events:select}
-
-
-
 
 Fires the action, when the list of item is selected.
 
@@ -5775,13 +4935,11 @@ Fires the action, when the list of item is selected.
 </tbody>
 </table>
 
-
 #### Example
-
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+    <input type="text" id="drpdwn" />
 
     <div id="carsList">
         <ul>

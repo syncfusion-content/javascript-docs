@@ -9,11 +9,12 @@ documentation: ug
 
 # Data Binding
 
-To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. You can bind either local array or OData, WebApi and other RESTful services in the DropDownList.
+To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
 
 ## Fields
 
-The following properties provides you a way to bind either local or remote data to the DropDownList widget.
+The below listed fields are the data collection fields which maps fields for the data items of the DropDownList. 
+
 <table>
     <tr>
         <th>
@@ -234,6 +235,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 {% endhighlight %}
 
 ![](DataBinding_images/DataBinding_img1.jpeg)
+
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_px3jew3i) 
 	
@@ -275,13 +277,13 @@ The JSON array to the [dataSource](http://help.syncfusion.com/js/api/ejdropdownl
 {% endhighlight %}
 
 
-## Remote data 
+## Binding Remote Data Service
 
-To bind remote data to the DropDownList, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property.
+To bind remote data to the DropDownList, assign a service data as an instance of `ejDataManager` to the `dataSource` property.
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class and then you can assign it to DropDownList "dataSource".
+OData is a standardized protocol for creating and consuming data. Provide the [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class and then you can assign it to DropDownList "dataSource".
 
 {% highlight html %}
 
@@ -305,13 +307,10 @@ OData is a standardized protocol for creating and consuming data. You can provi
 {% endhighlight %}
            
           
-### OData Version 4
+## OData Version 4
+The OData v4 is an improved version of OData protocols and the Data Manager can also retrieve and consume data from [ODatav4](http://www.odata.org/) services.
 
-For OData Version 4 support "ej.ODataV4Adaptor" should be used. By using URL property of "ej.DataManager" you can bind OData Version 4 Service link and specify  adaptor as ej.ODataV4Adaptor.
-
-I> You can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new ej.ODataAdaptor).
- 
-For further details about OData service please refer [the link](http://www.odata.org/).
+By using URL property of “ej.DataManager” bind OData Version 4 Service link and specify adaptor as ej.ODataV4Adaptor.
 
 {% highlight html %}
 
@@ -342,9 +341,9 @@ For further details about OData service please refer [the link](http://www.odata
 
 N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/js/api/ejdropdownlist#events). 
 
-### WebAPI
+## WebAPI Binding
 
-Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
+Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
 
 {% highlight html %}
 
@@ -388,8 +387,169 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
 
 ![](DataBinding_images/DataBinding_img3.jpeg)
 
+## ASP.NET Web Method Binding
 
-### Other Restful web services
+The data can retrieve data from ASP.NET Web methods by making use of the WebMethod Adaptor of ejDataManager.
+
+The WebMethod Adaptor is used to bind data source from remote services and code behind methods. 
+By using “[WebMethodAdaptor](http://help.syncfusion.com/js/datamanager/getting-started)” we can bind data from WebService to the DropDownList control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.
+
+{% highlight html %}
+
+    <span> Please select... </span>
+    <input type="text" id="myList" />
+    
+{% endhighlight %}
+
+{% highlight c# %}
+
+    [System.Web.Script.Services.ScriptService]
+    public class WebService1 : System.Web.Services.WebService
+    {
+
+        [WebMethod]
+        public object Get()
+        {
+
+            List<Employee> EmpData = new List<Employee>();
+            EmpData.Add(new Employee
+            {
+                Name = "Erik Linden",
+                Role = "Executive"
+                
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "John Linden",
+                Role = "Representative"
+                
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Louis",
+                Role = "Representative"
+                
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Lawrence",
+                Role = "Executive"
+                
+            });
+            dynamic count = EmpData.Count;
+            return new
+            {
+                result = EmpData,
+                count = count
+            };
+
+        }
+        public class Employee
+        {
+            public string Name { get; set; }
+            public string Role { get; set; }
+            
+        }
+    }
+    
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    <script type="text/javascript">
+        var data = ej.DataManager({
+            url: "WebService1.asmx/Get",
+            adaptor: new ej.WebMethodAdaptor()
+        });
+        var query = ej.Query().requiresCount();
+        $("#myList").ejDropDownList({
+            dataSource: data,
+            query: query,
+            fields : {text :"Name", value :"Country"}
+        });
+    </script>
+    
+{% endhighlight %}
+
+Use the above code example to use WebMethod adaptor and bind the data to the DropDownList.
+
+## MVC controller Action Binding
+
+The data can retrieve from MVC controller. This can be achieved by using the UrlAdaptor of ej.DataManager.
+
+Defines the List of Employee Data and converted into JSON object. 
+
+{% highlight c# %}
+
+    using System.Web.Script.Serialization;
+    public partial class DropdownlistController: Controller
+    {
+        public ActionResult DropdownlistFeatures()
+        {
+            return View();
+         } 
+        public class Employee
+        {
+            public string Name { get; set; }
+            public string Role { get; set; }
+        }
+        public JsonResult getData()
+        {
+            List<Employee> EmpData = new List<Employee>();
+            EmpData.Add(new Employee
+            {
+                Name = "Erik Linden",
+                Role = "Executive"
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "John Linden",
+                Role = "Representative"
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Louis",
+                Role = "Representative"
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Lawrence",
+                Role = "Executive"
+            });
+            var jsonSerialiser = new JavaScriptSerializer();
+            return Json(jsonSerialiser.Serialize(EmpData));
+        }
+    }
+    
+{% endhighlight %}
+
+In client side, specify the URL of Data to url property and specify the type of Adaptor in adaptor property of DataManager and initialize the DropDownList with [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields) property.
+
+{% highlight javascript %}
+
+    <div class="ctrllabel"> Select an Employee</div>
+    <input id="empList"/>
+    
+    <script>
+        $(function() {
+        
+            var dataManager = ej.DataManager({
+                url: "/Dropdownlist/getData",
+                adaptor: new ej.UrlAdaptor()
+            });
+        
+            $("#empList").ejDropDownList({
+            
+                dataSource: dataManager,
+                fields: { text: "Name", value: "Role" }
+            });
+        
+        });
+    </script>
+
+{% endhighlight %}
+
+## Other Restful web services
 
 The [Custom Adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of "ej.DataManager" allows to customize or generate your own adaptor which is used to process "query" and "result" data. 
 When using remote data binding, the adaptor of "ej.DataManager" plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
