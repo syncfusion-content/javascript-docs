@@ -900,6 +900,49 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `boolean`
+{:#members:editsettings-begineditaction}
+
+<ts name = "ej.Gantt.BeginEditAction"/>
+
+Specifies the type to begin edit action.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">click</td>
+<td class="description">you can begin the edit by single click</td>
+</tr>
+<tr>
+<td class="name">dblClick</td>
+<td class="description">you can begin the edit by double click</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.BeginEditAction.DblClick
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ editSettings:{beginEditAction : "dblClick"} });                      * 
+</script>           
+
+{% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 

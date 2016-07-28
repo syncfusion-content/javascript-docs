@@ -946,6 +946,49 @@ Specifies the position where the new row has to be added.
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `boolean`
+{:#members:editsettings-begineditaction}
+
+<ts name = "ej.TreeGrid.BeginEditAction"/>
+
+Specifies the type to begin edit action.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">click</td>
+<td class="description">you can begin the edit by single click</td>
+</tr>
+<tr>
+<td class="name">dblClick</td>
+<td class="description">you can begin the edit by double click</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.BeginEditAction.DblClick
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="treegrid"></div> 
+<script>   
+        $("#treegrid").ejTreeGrid({ editSettings:{beginEditAction : "click"} });                      * 
+</script>           
+
+{% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -1808,6 +1851,45 @@ To collapse all the parent items in tree grid
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.collapseAll(); // To collapse all parent items in tree grid
+</script>
+{% endhighlight %}
+
+### gotoPage(number)
+{:#methods:gotopage}
+
+To Go to the specific page. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">number</td>
+<td class="type">number</td>
+<td class="description">you can pass a number to which the control should navigate.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.gotoPage(3);
+</script> 
 </script>
 {% endhighlight %}
 
