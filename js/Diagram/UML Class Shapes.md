@@ -127,7 +127,7 @@ $("#diagram").ejDiagram({
 
 To define an enumeration, you need to define the `classifier` property of node as "enumeration".  Also you need to define the name and members of the enumeration using the `enumeration` property of node. 
 
-The following code example illustrates how to create an enumeration shape.
+The following code example illustrates how to create an enumeration.
  
  {% highlight javascript %}
  
@@ -426,6 +426,14 @@ The following code example illustrates how to customize the multiplicity.
                x:300
                ,y:200
              }, 
+              labels: [{
+				  margin:{
+                    top:10,
+                    left:10,
+                    right:10,
+                    bottom:20}
+			       }
+		            ],
           segments: [{ 
                 type: "straight" 
               }], 
