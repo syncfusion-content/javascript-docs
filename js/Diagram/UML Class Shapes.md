@@ -16,7 +16,7 @@ The UML class diagram shapes are explained as follows.
 
 ### Class
 
-A Class describes a set of objects that shares the same specifications of features,constraints and semantics.To define a class object, you need to set the `classifier` as "class".
+A Class describes a set of objects that shares the same specifications of features,constraints and semantics.To define a class object, you need to define the `classifier` as "class".
 Also, you need to define the name, attributes and methods of the class using the `class` property of node.
  
 The following code example illustrates how to create a class.
@@ -232,9 +232,9 @@ N> The default value for the property `association` is "directional".
 ### Aggregation
 
 Aggregation is a binary association between a property and one or more composite objects which group together a set of instances.
-Aggregation is decorated with a hollow diamond. To create an aggregation shape, you need to set the `relationship` as "aggregation".
+Aggregation is decorated with a hollow diamond. To create an aggregation shape, you need to define the `relationship` as "aggregation".
 
-The following code example illustrates how to create an association.
+The following code example illustrates how to create an aggregation.
 
 {% highlight javascript %}
 
@@ -273,9 +273,9 @@ The following code example illustrates how to create an association.
 ### Composition
 
 Composition is a "strong" form of "aggregation". Composition is decorated with a black diamond.
-To create a composition shape, set the `relationship` property of connector as "composition".
+To create a composition shape, define the `relationship` property of connector as "composition".
 
-The following code example illustrates how to create an association.
+The following code example illustrates how to create a composition.
 
 {% highlight javascript %}
 
@@ -314,9 +314,9 @@ The following code example illustrates how to create an association.
 ### Dependency
 
 Dependency is a directed relationship which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency  is shown as dashed line with opened arrow.
-To create a dependency, you need to set the `relationship` property of connector as "dependency".
+To create a dependency, you need to define the `relationship` property of connector as "dependency".
 
- The following code example illustrates how to create an association.
+ The following code example illustrates how to create an dependency.
 
 {% highlight javascript %}
 
@@ -357,7 +357,7 @@ To create a dependency, you need to set the `relationship` property of connector
 Inheritance is also called as "generalization". Inheritance is a binary taxonomic directed relationship between a more general classifier(super class) and a more specific classifier(subclass).
 Inheritance is shown as a line with hollow triangle.
 
-To create a composition, you need to set the `relationship` as "inheritance".
+To create a inheritance, you need to define the `relationship` as "inheritance".
 
 The following code example illustrates how to create an inheritance.
 

@@ -800,15 +800,15 @@ The `association` property allows you to define the type of association.The foll
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img66.png)
+![](/js/Diagram/Shapes_images/Shapes_img134.png)
 
 The following table demonstrates the visual representation of assosiation flows.
 
 | Association | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
-| Directional | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| BiDirectional | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| Default | ![](/js/Diagram/Shapes_images/Shapes_img133.png) |
+| Directional | ![](/js/Diagram/Shapes_images/Shapes_img134.png) |
+| BiDirectional | ![](/js/Diagram/Shapes_images/Shapes_img132.png) |
 
 N> The default value for the property `association` is "default".
 
@@ -854,15 +854,15 @@ The `sequence` property allows you to define the type of sequence.The following 
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img66.png)
+![](/js/Diagram/Shapes_images/Shapes_img135.png)
 
 The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
-| Conditional | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| Normal | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| Default | ![](/js/Diagram/Shapes_images/Shapes_img136.png) |
+| Conditional | ![](/js/Diagram/Shapes_images/Shapes_img135.png) |
+| Normal | ![](/js/Diagram/Shapes_images/Shapes_img137.png) |
 
 N> The default value for the property `sequence` is "normal".
 
@@ -909,14 +909,14 @@ The `message` property allows you to define the type of message.The following co
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img66.png)
+![](/js/Diagram/Shapes_images/Shapes_img138.png)
 
 The following table contains various representation of message flows.
 
 | Message | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
-| InitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| NonInitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| Default | ![](/js/Diagram/Shapes_images/Shapes_img139.png) |
+| InitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img138.png) |
+| NonInitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img140.png) |
 
 N> The default value for the property `message` is "default".
