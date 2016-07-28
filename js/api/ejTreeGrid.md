@@ -646,6 +646,29 @@ Shows/hides the context menu.
 
 {% endhighlight %}
 
+### cssClass `string`
+{:#members:cssclass}
+
+Specify the CSS class for TreeGrid to achieve custom theme.
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeGrid"></div> 
+<script>          
+        $("#treeGrid").ejTreeGrid({  cssClass : "gradient-lime" });
+</script>
+
+{% endhighlight %}
 
 ### dataSource `array`
 {:#members:datasource}
@@ -922,6 +945,7 @@ Specifies the position where the new row has to be added.
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
 
 {% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -1912,7 +1936,6 @@ treegridObj.freezePrecedingColumns(field);
 
 
 ### freezeColumn (field, isFrozen)
-
 {:#methods:freezecolumn}
 
 Freeze/unfreeze the specified column.

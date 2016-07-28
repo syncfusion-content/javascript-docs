@@ -1,69 +1,45 @@
 ---
 layout: post
-title: Cell Ranges with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Cell Ranges
+title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
+description: How to use the Spreadsheet Cell Range
 platform: js
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Cell Ranges
+# Cell Range
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected they are surrounded by border. 
 
-You can perform following operations with Cell Ranges,
+You can perform following operations with Cell Range,
 
-* Merge Cell
-* Data Validation
+* Comment
 * Cell Navigation
-* Drag Fill
+* Data Validation
 * Drag and Drop
-* Comments
+* Drag Fill
 * Hyperlink
+* Merge Cell
 
-## Merge Cell
+## Comment
 
-Merge cell is a single cell created by combining or merging two or more individual cells together. You can use [`allowMerging`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowmerging "allowMerging") property to enable/disable merge cells. The cell reference for a merged cell is the cell in the upper left corner of the original selected range or group of cells. 
+Comment is used to add notes to individual cell to give additional information for the data it contains. When a cell has a comment, a red indicator appears in the corner of the cell. When you move the pointer on the cell, the comment appears. You can use [`allowComments`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcomments "allowComments") property to enable/disable comments. 
 
-### Merge Cells
+### To insert a Comment
 
-You can combine two or more cells located in the same row or column into a single cell. When cells with multiple values are merged the upper-left most cell's data will be the data of merged cell. 
+You can insert a comment by using one of the following ways,
 
-You can do this by one of the following ways,
+* Using "New" button under Comments group of REVIEW Tab in ribbon.
+* Using context menu to select "Insert Comment" option in "Comment".
+* Using [`setComment`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
 
-* Using merge Cells option in Merge&Center button of HOME tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method.
+### To Remove a Comment
 
-The following code example describes the above behavior.
+You can remove a comment by using one of the following ways,
 
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.mergeCells("A2:B4", true); // true is for prevent the alert message.
-}
-{% endhighlight %}
-
-### Merge & Center
-
-You can combine two or more cells located in the same row or column into a single cell with center text align. When cells with multiple values are merged the upper-left most cell's data will be the data of the merged cell. You can do this by one of the following ways,
-
-* Using Merge&Center button of HOME tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enables "mergeCenter" property to perform merge and center.
+* Using "Delete" button under Comments group of REVIEW Tab in ribbon.
+* Using context menu to select "Delete Comment" option in "Comment".
+* Using [`deleteComment`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcomment-deletecomment "deleteComment") method.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -73,75 +49,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport){
-        xlObj.mergeCenter = true;
-        xlObj.mergeCells("D2:E4", true); // true is for prevent the alert message.
-    }
-}
-{% endhighlight %}
-
-### Merge Across
-
-You can combine two or more cells located in the same row into a single cell. When cells with multiple values are merged the left most cell's data will be the data of the merged cell.
-
-You can do this by one of the following ways,
-
-* Using Merge Across option in Merge&Center button of HOME tab in ribbon.
-* Using [`mergeAcrossCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method to perform merge across.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.mergeAcrossCells("G2:H4", true); // true is for prevent the alert message.
-}   
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img1.png)
-
-### Unmerge Cells
-
-You can split the merged cell into multiple cells. You can do this by one of the following ways,
-
-* Using unmerge cells option in Merge&Center button of HOME tab in ribbon.
-* Using [`unMergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unmergecells "unMergeCells") method.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -151,117 +59,16 @@ $(function () {
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
     if(!xlObj.isImport) {
-        xlObj.mergeCells("B2:C4", true); // true is for prevent the alert message.
-        xlObj.unmergeCells("B2:C4");
+        xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", true);
+        xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", true);
+        //To Remove a Comment
+        xlObj.XLComment.deleteComment ("A2");
     }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img2.png)
-
-## Data Validation
-
-Data Validation is used to restrict the user to enter the invalid data. You can use [`allowDataValidation`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowdatavalidation "allowDataValidation") property to enable/disable data validation. 
-
-N> The below validation script files are needed for validation.
-N> * jquery.validate.min.js
-N> * jquery.validate.unobtrusive.min.js
-
-#### To apply validation.
-
-You can apply data validation by using one of the following ways,
-
-* Using Data Validation option in Data Validation in Data Tools group under Data Tab.
-* Using [`applyDVRules`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-applydvrules "applyDVRules") method to apply data validation rule.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
-}
-{% endhighlight %}
-
-#### To Clear validation
-
-You can clear data validation rule by one of the following ways,
-
-* Using Clear Data Validation option in Data Validation in Data Tools group under Data Tab.
-* Using [`clearDV`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-cleardv "clearDV") method.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.XLValidate.clearDV("G2:G12");
-}
-{% endhighlight %}
-
-#### To Format invalid data
-
-You can highlight the invalid data by using following ways,
-
-* Using "Format Invalid Data" in Data Validation in Data Tools group under Data Tab.
-* Using [`highlightInvalidData`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-highlightinvaliddata "highlightInvalidData") method to highlight the invalid data.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
-        xlObj.XLValidate.highlightInvalidData ("G2:G12");
-    }
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img3.png)
+![](CellRanges_images/CellRanges_img7.png)
 
 ## Cell Navigation
 
@@ -297,9 +104,143 @@ N> In the below table first, last is based on the used range.
 <tr><td>Ctrl+ Right Arrow<br/></td><td>Go to previous cell from the first empty cell in rightwards.<br/></td></tr>
 </table>
 
+## Data Validation
+
+Data Validation is used to restrict the user to enter the invalid data. You can use [`allowDataValidation`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowdatavalidation "allowDataValidation") property to enable/disable data validation. 
+
+N> The below validation script files are needed for validation.
+    N> * jquery.validate.min.js
+    N> * jquery.validate.unobtrusive.min.js
+
+#### To apply validation.
+
+You can apply data validation by using one of the following ways,
+
+* Using "Data Validation" option in Data Validation button under Data Tools group of DATA Tab in ribbon, Data Validation dialog will be opened in that you can perform Validation.
+* Using [`applyDVRules`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-applydvrules "applyDVRules") method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport)
+        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+}
+{% endhighlight %}
+
+#### To Clear validation
+
+You can clear data validation rule by one of the following ways,
+
+* Using "Clear Validation" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
+* Using [`clearDV`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-cleardv "clearDV") method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport)
+        xlObj.XLValidate.clearDV("G2:G12");
+}
+{% endhighlight %}
+
+#### To Format invalid data
+
+You can highlight the invalid data by using following ways,
+
+* Using "Format Invalid Data" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
+* Using [`highlightInvalidData`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlvalidate-highlightinvaliddata "highlightInvalidData") method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport) {
+        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+        xlObj.XLValidate.highlightInvalidData ("G2:G12");
+    }
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](CellRanges_images/CellRanges_img3.png)
+
+## Drag and Drop
+
+Drag and drop is used to pick a selected cells and drop it into a new place on the worksheet. You can use [`allowDragAndDrop`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowdraganddrop "allowDragAndDrop") property to enable/disable drag and drop. 
+
+You can do this by one of the following ways,
+
+* Using mouse drag and drop.
+* Using [`moveRangeTo`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragdrop-moverangeto "moveRangeTo") Method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport)
+        xlObj.XLDragDrop.moveRangeTo([1, 6, 4, 7], [1, 9, 4, 10]);
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](CellRanges_images/CellRanges_img6.png)
+
 ## Drag Fill
 
-Drag Fill supports for auto fill of data is cells. You can use this to fill cells with data that follows a pattern or that is based on data in other cells. There is no need to enter the repeated data manually. You can use [`allowAutoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") property to enable/disable the drag fill support. You can use [`showFillOptions`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-showfilloptions "showFillOptions") property to enable/disable the fill option and [`fillType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-filltype "fillType") property for type of fill which are available in [`autoFillSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings "autoFillSettings"). 
+Drag Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use [`allowAutoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") property to enable/disable the drag fill support. You can also use [`showFillOptions`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-showfilloptions "showFillOptions") property to enable/disable the fill option and [`fillType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings-filltype "fillType") property for type of fill which are available in [`autoFillSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:autofillsettings "autoFillSettings"). 
 
 You can do this by one of the following ways.
 
@@ -323,7 +264,7 @@ To copy the selected cell content to the adjacent cells. You can do this by one 
 
 #### Fill Series
 
-To fill the series of numbers, characters, or dates based on selected cell content to the adjacent cells with their formats. This is the default autofill option.
+To fill the series of numbers, characters, or dates based on selected cell content to the adjacent cells with their formats. This is the default auto fill option.
 
 You can do this by one of the following ways,
 
@@ -367,8 +308,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true },
                 { dataSource: [{i : 1, j: 1, k : 1, l : 1}, {i : 2, j: 2, k : 2, l : 2}, {i : 3, j: 3, k : 3, l : 3}, {i : 4, j: 4, k : 4, l : 4}], startCell: "I2"}
@@ -401,91 +341,6 @@ function loadComplete(args) {
 The following output is displayed as a result of the above code example.
 ![](CellRanges_images/CellRanges_img5.png)
 
-## Drag and Drop
-
-Drag and drop is used to pick up a cell selection and drop it into a new place on the worksheet. You can use [`allowDragAndDrop`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowdraganddrop "allowDragAndDrop") property to enable/disable drag and drop. 
-
-You can do this by one of the following ways,
-
-* Using the mouse drag and drop.
-* Using [`moveRangeTo`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragdrop-moverangeto "moveRangeTo") Method.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.XLDragDrop.moveRangeTo([1, 6, 4, 7], [1, 9, 4, 10]);
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img6.png)
-
-## Comments
-
-Comments is used to add notes to individual cells to give additional information for the data it contains. When a cell has a comment, a red indicator appears in the corner of the cell. When you move the pointer on the cell, the comment appears. You can use [`allowComments`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcomments "allowComments") property to enable/disable comments. 
-
-### To insert a Comment
-
-You can insert a comment by using one of the following ways,
-
-* Using "New" button of Comments group in Review tab.
-* Using "Insert Comment" option under "Comment" in context menu.
-* Using [`setComment`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
-
-### To Remove a Comment
-
-You can remove a comment by using one of the following ways,
-
-* Using "Delete" button of Comments group in Review tab.
-* Using "Delete Comment" option under "Comment" in context menu.
-* Using [`deleteComment`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcomment-deletecomment "deleteComment") method.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", true);
-        xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", true);
-        //To Remove a Comment
-        xlObj.XLComment.deleteComment ("A2");
-    }
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img7.png)
-
 ## Hyperlink
 
 Hyperlink is used to navigate to web links or cell reference to other sheets or within the sheet in Spreadsheet. You can use [`allowHyperlink`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowhyperlink "allowHyperlink") property to enable/disable Hyperlink.
@@ -494,15 +349,15 @@ Hyperlink is used to navigate to web links or cell reference to other sheets or 
 
 You can insert a hyperlink by one of the following ways,
 
-* Using "Hyperlink" button in insert tab.
-* Using "Hyperlink" option under "Hyperlink" in context menu.
+* Using "Hyperlink" button under Links group of INSERT Tab in ribbon.
+* Using context menu to select "Insert Hyperlink" option in "Hyperlink".
 * Using [`setHyperlink`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:sethyperlink "setHyperlink") method.
 
 ### To Remove a Hyperlink
 
 You can insert a hyperlink by one of the following ways,
 
-* Using "Remove Hyperlink" option under Hyperlink in context menu.
+* Using context menu to select "Remove Hyperlink" option in Hyperlink.
 * Using [`removeHyperlink`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:removehyperlink "removeHyperlink") method.
 
 The following code example describes the above behavior.
@@ -513,8 +368,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -537,3 +391,139 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 ![](CellRanges_images/CellRanges_img8.png)
+
+## Merge Cell
+
+Merge cell is a single cell created by combining two or more individual cells together. You can use [`allowMerging`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowmerging "allowMerging") property to enable/disable merge cells. The cell reference for a merged cell is the cell in the upper left corner of the original selected range or group of cells. 
+
+### Merge Cells
+
+You can combine two or more cells located in the same row or column into a single cell. When cells with multiple values are merged, upper-left most cell's data will be the data of merged cell. 
+
+You can do this by one of the following ways,
+
+* Using "Merge Cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
+* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport)
+        xlObj.mergeCells("A2:B4", true); // true is for prevent the alert message.
+}
+{% endhighlight %}
+
+### Merge & Center
+
+You can combine two or more cells located in the same row or column into a single cell with center text align. When cells with multiple values are merged, upper-left most cell's data will be the data of the merged cell. You can do this by one of the following ways,
+
+* Using Merge & Center button under Alignment group of HOME Tab in ribbon.
+* Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
+* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`](http://help.syncfusion.com/js/api/ejspreadsheet#members:mergecenter "mergecenter") property to align the text content center.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport){
+        xlObj.mergeCenter = true;
+        xlObj.mergeCells("D2:E4", true); // true is for prevent the alert message.
+    }
+}
+{% endhighlight %}
+
+### Merge Across
+
+You can combine two or more cells located in the same row into a single cell. When cells with multiple values are merged, left most cell's data will be the data of the merged cell.
+
+You can do this by one of the following ways,
+
+* Using "Merge Across" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
+* Using [`mergeAcrossCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport)
+        xlObj.mergeAcrossCells("G2:H4", true); // true is for prevent the alert message.
+}   
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](CellRanges_images/CellRanges_img1.png)
+
+### Unmerge Cells
+
+You can split the merged cell into multiple cells. You can do this by one of the following ways,
+
+* Using "Unmerge cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
+* Using [`unMergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unmergecells "unMergeCells") method.
+
+The following code example describes the above behavior.
+{% highlight html %}
+<div id="Spreadsheet"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        sheets: [{
+            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+    if(!xlObj.isImport) {
+        xlObj.mergeCells("B2:C4", true); // true is for prevent the alert message.
+        xlObj.unmergeCells("B2:C4");
+    }
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](CellRanges_images/CellRanges_img2.png)
