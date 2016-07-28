@@ -926,7 +926,7 @@ Enables or Disables enableAltRow row effect in Gantt
 
 
 ### enableWBS `boolean`
-{:#members:enableWBS}
+{:#members:enablewbs}
 
 Enables/disables work breakdown structure column. 
 
@@ -950,7 +950,7 @@ Enables/disables work breakdown structure column.
 {% endhighlight %}
 
 ### enableWBSPredecessor `boolean`
-{:#members:enableWBSpredecessor}
+{:#members:enablewbspredecessor}
 
 Enables/disables WBS predecessor column. 
 
