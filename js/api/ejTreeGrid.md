@@ -523,7 +523,7 @@ Controls the visibility of the column.
 
 ### columns.headerTemplateID `String`
 
-{:#members:columns-headertemplateiD}
+{:#members:columns-headertemplateid}
 
 Specifies the header template value for the column header
 
@@ -672,7 +672,7 @@ Specifies hierarchical or self-referential data to populate the TreeGrid.
 
 
 ### headerTextOverflow `string`
-{:#members:headerTextOverflow}
+{:#members:headertextoverflow}
 
 Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
 
