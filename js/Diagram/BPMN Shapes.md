@@ -752,18 +752,19 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Shapes_images/Shapes_img123.png)
 
-#### BPMN Flow Shapes
+#### BPMN Flows
 
-Connecting objects are lines that connect BPMN flow objects.
+BPMN Flows are lines that connect BPMN flow objects.
 
 ### Association
 
-An Association flow is used to link information and Artifacts with Flow Objects.The type of association are as follows.
+BPMN Association flow is used to link flow objects with its corresponding text or artifact. An association is represented as a dotted graphical line with opened arrow. The type of association are as follows.
+
 * Directional
 * BiDirectional
 * Default
 
-An association is represented as a dotted graphical line with opened arrow.The `association` property allows you to define the type of association.The following code example illustrates how to create an association.
+The `association` property allows you to define the type of association.The following code example illustrates how to create an association.
 
 {% highlight javascript %}
 
@@ -789,7 +790,9 @@ An association is represented as a dotted graphical line with opened arrow.The `
               }], 
            shape: {
                   type: "bpmn",
+				  //Sets the type of the flow as association
                   flow: "association",
+				  //Sets the type of association
                   association: "bidirectional"
               }
 	}]
@@ -799,7 +802,7 @@ An association is represented as a dotted graphical line with opened arrow.The `
 
 ![](/js/Diagram/Shapes_images/Shapes_img66.png)
 
-The following table contains various representation of assosiation flow shape.
+The following table demonstrates the visual representation of assosiation flows.
 
 | Association | Image |
 |---|---|
@@ -811,12 +814,12 @@ N> The default value for the property `association` is `default`.
 
 ### Sequence
 
-A Sequence flow shows the order in which activities are performed in a Process and is repesented with a solid graphical line.The type of sequence are as follows.
+A Sequence flow shows the order in which the activities are performed in a BPMN Process and is repesented with a solid graphical line.The type of sequence are as follows.
 * Normal
 * Conditional
 * Default
 
-The `sequence` property allows you to define the type of sequence.The following code example illustrates how to create an sequence.
+The `sequence` property allows you to define the type of sequence.The following code example illustrates how to create a sequence flow.
 
 {% highlight javascript %}
 
@@ -843,6 +846,7 @@ The `sequence` property allows you to define the type of sequence.The following 
            shape: {
                   type: "bpmn",
                   flow: "sequence",
+				  //Sets the type of srquence flow
                   sequence: "conditional"
               }
 	}]
@@ -852,7 +856,7 @@ The `sequence` property allows you to define the type of sequence.The following 
 
 ![](/js/Diagram/Shapes_images/Shapes_img66.png)
 
-The following table contains various representation of sequence flow shape.
+The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 |---|---|
@@ -865,11 +869,12 @@ N> The default value for the property `sequence` is `normal`.
 ### Message
 
 A Message flow shows the flow of messages between two Participents.A message flow is repesented by dashed line.The type of message are as follows.
-* initiatingMessage
+
+* InitiatingMessage
 * NoninitiatingMessage
 * Default
 
-The `message` property allows you to define the type of message.The following code example illustrates how to create an message.
+The `message` property allows you to define the type of message.The following code example illustrates how to define a message flow.
 
 {% highlight javascript %}
 
@@ -896,6 +901,7 @@ The `message` property allows you to define the type of message.The following co
            shape: {
                   type: "bpmn",
                   flow: "message",
+				  //Sets the type of message flow
                   message: "initiatingmessage"
               }
 	}]
@@ -905,7 +911,7 @@ The `message` property allows you to define the type of message.The following co
 
 ![](/js/Diagram/Shapes_images/Shapes_img66.png)
 
-The following table contains various representation of message flow shape.
+The following table contains various representation of message flows.
 
 | Message | Image |
 |---|---|
