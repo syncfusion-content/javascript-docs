@@ -25,7 +25,8 @@ You can perform following operations in Worksheet,
 The Spreadsheet has support for inserting new sheet. You can dynamically insert sheet by one of the following ways,
 
 * Click the New sheet button in the spreadsheet sheet tab.
-* Click OTHERS tab in the ribbon and select Insert dropdown button. Then click Insert Sheet.
+* Right clicking on the worksheet in the sheet tab and then click Insert option in the context menu.
+* Click OTHERS tab in the ribbon and select Insert Sheet option in Insert dropdown button.
 
 You can also add new sheet using [`addNewSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:addnewsheet "addNewSheet") method.
 
@@ -55,8 +56,8 @@ The following output is displayed as a result of the above code example.
 
 The Spreadsheet has support for removing an existing worksheet. You can dynamically remove the existing sheet by following ways,
 
-* Right click on the worksheet in the sheet tab and then click delete option in the context menu.
-* Select the existing worksheet, Click OTHERS tab in the ribbon and select Delete dropdown button. Then click Delete Sheet.
+* Right clicking on the worksheet in the sheet tab and then click Delete option in the context menu.
+* Click OTHERS tab in the ribbon and select Delete Sheet option in Delete dropdown button.
 
 You can also remove an active worksheet using [`deleteSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:deletesheet "deleteSheet") method.
 
@@ -86,7 +87,7 @@ The following output is displayed as a result of the above code example.
 
 The Spreadsheet has support for renaming an existing worksheet. You can dynamically rename worksheet by using one of the following ways,
 
-* Right clicking on the worksheet on the sheet tab and then click Rename in the context menu. 
+* Right clicking on the worksheet in the sheet tab and then click Rename option in the context menu.
 * Rename an active worksheet using [`sheetRename`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:sheetrename "sheetRename") method.
 
 The following code example describes the above behavior.
@@ -114,7 +115,7 @@ The following output is displayed as a result of the above code example.
 
 The Spreadsheet provides support to move an existing worksheet. You can dynamically move a worksheet by using one of the following ways,
 
-* Right clicking on the worksheet on the sheet tab and then click Move or Copy in the context menu. Then select the sheet that you have to move in the "Move or Copy" dialog.
+* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Select the sheet that you have to move in the “Move or Copy” dialog.
 * Move an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
 
 The following code example describes the above behavior.
@@ -143,7 +144,7 @@ The following output is displayed as a result of the above code example.
 
 The Spreadsheet provides support to create a copy of an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
 
-* Right clicking on the worksheet in the sheet tab that you have to copy and then click Move or Copy in the context menu. Then check the "Create a copy" checkbox in the "Move or Copy" dialog. 
+* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Check the “Create a copy” checkbox in the “Move or Copy” dialog.
 * Copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
 
 The following code example describes the above behavior.
@@ -200,7 +201,7 @@ The following output is displayed as a result of the above code example.
 
 You can dynamically show/ hide worksheet by using one of the following ways,
 
-* Right click worksheet on the sheet tab and then click Hide or Unhide in the context menu.
+* Right clicking on the worksheet in the sheet tab and then click Hide or Unhide in the context menu
 * Hide the sheet using [`hideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:hidesheet "hideSheet") method.
 * Show the hidden sheet using [`unhideSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:unhidesheet "unhideSheet") method.
 
