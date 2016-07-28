@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pick the type of node among the predefined nodes and shapes
-description: How to choose the type of the node with respect to the requirement? 
+title: Visually represent a internal business procedure and their relationships
+description: How to visually represent a internal business procedure and their relationships? 
 platform: js
 control: Diagram
 documentation: ug
@@ -246,7 +246,7 @@ The various types of BPMN tasks are tabulated as follows.
 | Task Type | Image |
 |---|---|
 | Service | ![](/js/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![](/js/Diagram/Shapes_images/Shapes_img36.png) |
+| Send | ![](/js/Diagram/Shapes_images/Shapes_img34.png) |
 | Receive | ![](/js/Diagram/Shapes_images/Shapes_img37.png) |
 | Instantiating Receive | ![](/js/Diagram/Shapes_images/Shapes_img38.png) |
 | Manual | ![](/js/Diagram/Shapes_images/Shapes_img39.png) |
@@ -808,9 +808,9 @@ The following table demonstrates the visual representation of assosiation flows.
 |---|---|
 | Default | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
 | Directional | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| Bidirectional | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| BiDirectional | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
 
-N> The default value for the property `association` is `default`.
+N> The default value for the property `association` is "default".
 
 ### Sequence
 
@@ -864,14 +864,14 @@ The following table contains various representation of sequence flows.
 | Conditional | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
 | Normal | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
 
-N> The default value for the property `sequence` is `normal`.
+N> The default value for the property `sequence` is "normal".
 
 ### Message
 
 A Message flow shows the flow of messages between two Participents.A message flow is repesented by dashed line.The type of message are as follows.
 
 * InitiatingMessage
-* NoninitiatingMessage
+* NonInitiatingMessage
 * Default
 
 The `message` property allows you to define the type of message.The following code example illustrates how to define a message flow.
@@ -916,7 +916,7 @@ The following table contains various representation of message flows.
 | Message | Image |
 |---|---|
 | Default | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
-| initiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| noninitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| InitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
+| NonInitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
 
-N> The default value for the property `message` is `default`.
+N> The default value for the property `message` is "default".
