@@ -754,7 +754,7 @@ $("#diagram").ejDiagram({
 
 #### BPMN Flows
 
-BPMN Flows are lines that connect BPMN flow objects.
+BPMN Flows are lines that connects BPMN flow objects.
 
 ### Association
 
