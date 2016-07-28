@@ -899,6 +899,7 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 </script>
 
 {% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -2234,35 +2235,6 @@ Specifies start date of the Gantt schedule. By default, start date will be round
         $("#gantt").ejGantt(
  {
     scheduleStartDate:"12/2/2000"
- });            
-</script>
-
-{% endhighlight %}
-
-
-### selectedItem `number`
-{:#members:selecteditem}
-
-Specifies the selected row index in Gantt
-
-
-#### Default Value:
-{:.param}
-
-* null
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>  
-        $("#gantt").ejGantt(
- {
-    selectedItem: 2
  });            
 </script>
 
@@ -5798,7 +5770,7 @@ $("#gantt").ejGantt({
 
 
 ### toolbarClick
-{:#events:toolbarClick}
+{:#events:toolbarclick}
 
 Triggered when toolbar item is clicked in Gantt.
 
