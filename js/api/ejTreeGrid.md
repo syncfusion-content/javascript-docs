@@ -1252,7 +1252,7 @@ Specifies the mode of record count in a page, whether it should count all the re
 
 
 ### pageSettings.template `string`
-{:#members:pageSettings-template}
+{:#members:pagesettings-template}
 
 Specifies the Custom template for Pager control.
 
@@ -1810,7 +1810,6 @@ var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.collapseAll(); // To collapse all parent items in tree grid
 </script>
 {% endhighlight %}
-
 
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
