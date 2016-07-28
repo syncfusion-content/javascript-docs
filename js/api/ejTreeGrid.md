@@ -523,7 +523,7 @@ Controls the visibility of the column.
 
 ### columns.headerTemplateID `String`
 
-{:#members:columns-headertemplateiD}
+{:#members:columns-headertemplateid}
 
 Specifies the header template value for the column header
 
