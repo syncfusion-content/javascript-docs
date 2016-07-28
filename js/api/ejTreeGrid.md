@@ -672,7 +672,7 @@ Specifies hierarchical or self-referential data to populate the TreeGrid.
 
 
 ### headerTextOverflow `string`
-{:#members:headerTextOverflow}
+{:#members:headertextoverflow}
 
 Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
 
