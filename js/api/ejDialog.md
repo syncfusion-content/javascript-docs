@@ -1903,9 +1903,9 @@ Example
 
 $("#dialog").ejDialog({ 
 
-	actionButtonClick:"playMedia",
-
-	playMedia: function (args) {} 
+	actionButtonClick: function (args) {
+        
+    } 
 
 }); 
 
