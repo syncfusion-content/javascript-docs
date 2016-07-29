@@ -4924,7 +4924,7 @@ Defines the name, attributes and methods of a Class. Applicable, if the node is 
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.ClassifierShapes.Class
+* null
 
 #### Example
 
