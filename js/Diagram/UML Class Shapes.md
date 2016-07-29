@@ -456,5 +456,6 @@ You can edit the name, attributes and methods of the class diagram shapes just w
 The string "---" acts as a splitter between the three sections. 
 
 The following image illustrates how the text editor will be.
+
 ![](/js/Diagram/Shapes_images/Shapes_img150.png)
   
