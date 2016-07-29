@@ -2492,7 +2492,7 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 ### connectors.shape.relationship`String`
 {:#members:connectors-shape.relationship}
 
-Sets the UML Class Relationship of the connector. Applicable, if the shape of the connector is a umlclassifier
+Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is "classifier".
 
 <table class="props">
     <thead>
@@ -2504,23 +2504,23 @@ Sets the UML Class Relationship of the connector. Applicable, if the shape of th
     <tbody>
         <tr>
             <td class="name">Association</td>
-            <td class="description last">Used to specify connector Relationship as Association</td>
+            <td class="description last">Used to notate association in UML Class Diagram</td>
        </tr>
         <tr>
             <td class="name">Aggregation</td>
-            <td class="description last">Used to specify connector Relationship as Aggregation</td>
+            <td class="description last">Used to notate aggregation in a UML Class Diagram</td>
        </tr>
         <tr>
             <td class="name">Composition</td>
-            <td class="description last">Used to specify connector Relationship as Composition</td>
+            <td class="description last">Used to notate composition in a UML Class Diagram</td>
        </tr>
         <tr>
             <td class="name">Dependency</td>
-            <td class="description last">Used to specify connector Relationship as Dependency</td>
+            <td class="description last">Used to notate dependency in a UML Class Diagram</td>
        </tr>
         <tr>
             <td class="name">Inheritance</td>
-            <td class="description last">Used to specify connector Relationship as Inheritance</td>
+            <td class="description last">Used to notate inheritance in a UML Class Diagram</td>
        </tr>
      </tbody>
 </table>
@@ -2546,7 +2546,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.association`String`
 {:#members:connectors-shape.association}
 
-Sets the UML Class Association of the connector. Applicable, if the relationship of the connector is a Association.
+Sets the type of the UML assosication. Applicable, if the type of the connector is "classifier".
 
 <table class="props">
     <thead>
@@ -2558,11 +2558,11 @@ Sets the UML Class Association of the connector. Applicable, if the relationship
     <tbody>
         <tr>
             <td class="name">Directionaln</td>
-            <td class="description last">Used to specify connector association as Directional</td>
+            <td class="description last">Used to specify the directional association</td>
        </tr>
         <tr>
             <td class="name">Bidirectional</td>
-            <td class="description last">Used to specify connector Relationship as Bidirectional</td>
+            <td class="description last">Used to specify the bidirected association</td>
        </tr>
       </tbody>
 </table>
@@ -2588,7 +2588,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.multiplicity`String`
 {:#members:connectors-shape.multiplicity}
 
-Sets the UML Class multiplicity of the connector. 
+Defines the multiplicity of a relationship in UML class diagram
 
 <table class="props">
     <thead>
@@ -2598,13 +2598,17 @@ Sets the UML Class multiplicity of the connector.
        </tr>
    </thead>
     <tbody>
+       <tr>
+            <td class="name">OneToOne</td>
+            <td class="description last">Used to specify the one to one relationship</td>
+       </tr>
         <tr>
             <td class="name">OneToMany</td>
-            <td class="description last">Used to specify connector Multiplicity as OneToMany</td>
+            <td class="description last">Used to specify the one to many relationship</td>
        </tr>
         <tr>
             <td class="name">ManyToOne</td>
-            <td class="description last">Used to specify connector Multiplicity as ManyToOne</td>
+            <td class="description last">Used to specify the many to one relationship</td>
        </tr>
       </tbody>
 </table>
@@ -4871,7 +4875,7 @@ $("#diagramcontent").ejDiagram({ nodes:[group] });
 
 <ts name = "ej.datavisualization.Diagram.ClassifierShapes"/>
 
-Sets the type of UML classifier. Applicable, if the node is a UMLClassifier.
+Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram shape.
 
 <table class="props">
     <thead>
@@ -4883,15 +4887,15 @@ Sets the type of UML classifier. Applicable, if the node is a UMLClassifier.
     <tbody>
         <tr>
             <td class="name">class</td>
-            <td class="description last">Used to set UML Classifier as Class</td>
+            <td class="description last">Used to define a Class</td>
        </tr>
         <tr>
             <td class="name">Interface</td>
-            <td class="description last">Used to set UML Classifier as Interface</td>
+            <td class="description last">Used to define an Interface</td>
        </tr>
         <tr>
             <td class="name">Enumeration</td>
-            <td class="description last">Used to set UML Classifier as Enumeration</td>
+            <td class="description last">Used to define an Enumeration</td>
        </tr>
    </tbody>
 </table>
@@ -4916,7 +4920,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class `Object`
 {:#members:nodes-class}
 
-Sets the UML class attributes,methods value through class. Applicable, if the classifier is a class.
+Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
 
 #### Default Value:
 
@@ -4962,7 +4966,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.attributes `Array`
 {:#members:nodes-class.attributes}
 
-Sets the attributes of the class shape.
+Defines the collection of attributes
 
 #### Default Value:
 
@@ -4986,7 +4990,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.attributes.name `String`
 {:#members:nodes-class.attributes.name}
 
-Sets the name of attributes in class shape.
+Sets the name of the attribute
 
 #### Default Value:
 
@@ -5010,7 +5014,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.attributes.type `String`
 {:#members:nodes-class.attributes.type}
 
-Sets the type  of attributes (ex:string,date,etc.).
+Sets the data type of attribute
 
 #### Default Value:
 
@@ -5034,7 +5038,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.attributes.scope `String`
 {:#members:nodes-class.attributes.scope}
 
-Sets the type of visibility to the class shape.
+Defines the visisbility of the attribute
 
 #### Default Value:
 
@@ -5058,7 +5062,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.methods `Array`
 {:#members:nodes-class.methods}
 
-Sets the methods of the class shape.
+Defines the collection of methods of a Class.
 
 #### Default Value:
 
@@ -5082,7 +5086,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.class.methods.name `String`
 {:#members:nodes-class.methods.name}
 
-Sets the name of the attributes.
+Sets the name of the method.
 
 #### Default Value:
 
@@ -5106,7 +5110,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.class.methods.arguments `Array`
 {:#members:nodes-class.methods.arguments}
 
-Sets the arguments to the methods.
+Defines the arguments of the method.
 
 #### Default Value:
 
@@ -5130,7 +5134,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.class.methods.arguments.name `String`
 {:#members:nodes-class.methods.arguments.name}
 
-Sets the name of arguments.
+Sets the name of the argument
 
 #### Default Value:
 
@@ -5154,7 +5158,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.class.methods.arguments.type `String`
 {:#members:nodes-class.methods.arguments.type}
 
-Sets the type of arguments
+Sets the type of the argument
 
 #### Default Value:
 
@@ -5178,7 +5182,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.class.methods.type `String`
 {:#members:nodes-class.methods.type}
 
-Sets the type  of methods (ex:string,date,etc.)
+Sets the return type of the method
 
 #### Default Value:
 
@@ -5202,7 +5206,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.methods.scope `String`
 {:#members:nodes-class.methods.scope}
 
-Sets the type of visibility to the class shape
+Sets the visibility of the method.
 
 #### Default Value:
 
@@ -5593,11 +5597,11 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.enumeration `Object`
 {:#members:nodes-enumeration}
 
-Sets the members value through class. Applicable, if the classifier is a enumeration.
+Defines an Enumeration in a UML Class Diagram
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.ClassifierShapes.Class
+* null
 
 #### Example
 
@@ -5617,7 +5621,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.enumeration.name `Stribg`
 {:#members:nodes-enumeration.name}
 
-Sets the name of enumeration
+Sets the name of the Enumeration
 
 #### Default Value:
 
@@ -5641,7 +5645,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.enumeration.members `Array`
 {:#members:nodes-enumeration.members}
 
-Sets the members of enumeration shape.
+Defines the collection of enumeration members
 
 #### Default Value:
 
@@ -5665,7 +5669,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.enumeration.members.name `String`
 {:#members:nodes-enumeration.members.name}
 
-Sets the name of memebers.
+Sets the name of the enumeration member
 
 #### Default Value:
 
@@ -6372,11 +6376,11 @@ for(var i = 0; i < node.inEdges.length; i++){
 ### nodes.interface `Object`
 {:#members:nodes-interface}
 
-Sets the attributes,methods value through interface. Applicable, if the classifier is a interface.
+Defines an interface in a UML Class Diagram
 
 #### Default Value:
 
-* ej.datavisualization.Diagram.ClassifierShapes.Class
+* null
 
 #### Example
 
@@ -6394,7 +6398,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.name `String`
 {:#members:nodes-interface.name}
 
-Sets the name of interface
+Sets the name of the interface
 
 #### Default Value:
 
@@ -6417,7 +6421,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.attributes `Array`
 {:#members:nodes-interface.attributes}
 
-Sets the attributes of the interface shape.
+Defines a collection of attributes of the interface
 
 #### Default Value:
 
@@ -6441,7 +6445,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.attributes.name `String`
 {:#members:nodes-interface.attributes.name}
 
-Sets the name of attributes in interface shape.
+Sets the name of the attribute
 
 #### Default Value:
 
@@ -6465,7 +6469,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.attributes.type `String`
 {:#members:nodes-interface.attributes.type}
 
-Sets the type  of attributes (ex:string,date,etc.)
+Sets the type of the attribute
 
 #### Default Value:
 
@@ -6489,7 +6493,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.attributes.scope `String`
 {:#members:nodes-interface.attributes.scope}
 
-Sets the type of visibility to the interface shape
+Sets the visibility of the attribute
 
 #### Default Value:
 
@@ -6512,7 +6516,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.interface.methods `Array`
 {:#members:nodes-interface.methods}
 
-Sets the methods of the interface shape.
+Defines the collection of public methods of an interface
 
 #### Default Value:
 
@@ -6536,7 +6540,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.interfaces.methods.name `String`
 {:#members:nodes-interface.methods.name}
 
-Sets the name of the methods.
+Sets the name of the method.
 
 #### Default Value:
 
@@ -6560,7 +6564,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.interface.methods.arguments `Array`
 {:#members:nodes-interface.methods.arguments}
 
-Sets the arguments to the methods.
+Defines the collection of arguments of a method
 
 #### Default Value:
 
@@ -6585,7 +6589,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.interface.methods.arguments.name `String`
 {:#members:nodes-interface.methods.arguments.name}
 
-Sets the name of arguments.
+Sets the name of the argument
 
 #### Default Value:
 
@@ -6609,7 +6613,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.interface.methods.arguments.type `String`
 {:#members:nodes-interface.methods.arguments.type}
 
-Sets the type of arguments.
+Sets the type of the argument
 
 #### Default Value:
 
@@ -6633,7 +6637,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ## nodes.interface.methods.type `String`
 {:#members:interface-interface.methods.type}
 
-Sets the type  of methods (ex:string,date,etc.).
+Sets the return type of the method
 
 #### Default Value:
 
@@ -6654,10 +6658,10 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.attributes.scope `String`
+### nodes.interface.methods.scope `String`
 {:#members:nodes-interface.attributes.scope}
 
-Sets the type of visibility to the interface shape.
+Sets the visibility of the method
 
 #### Default Value:
 
