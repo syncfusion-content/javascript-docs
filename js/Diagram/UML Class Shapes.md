@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visually represent a static view of an application and their relationships
-description: How to visually represent a static view of an application and their relationships? 
+title:  Visually represents a static view of an application
+description: How to visually represent the business logic as class diagram? 
 platform: js
 control: Diagram
 documentation: ug
