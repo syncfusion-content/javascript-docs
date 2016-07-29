@@ -2489,6 +2489,148 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 
 {% endhighlight %}
 
+### connectors.shape.relationship`String`
+{:#members:connectors-shape.relationship}
+
+Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is "classifier".
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Association</td>
+            <td class="description last">Used to notate association in UML Class Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Aggregation</td>
+            <td class="description last">Used to notate aggregation in a UML Class Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Composition</td>
+            <td class="description last">Used to notate composition in a UML Class Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Dependency</td>
+            <td class="description last">Used to notate dependency in a UML Class Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Inheritance</td>
+            <td class="description last">Used to notate inheritance in a UML Class Diagram</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ClassifierShapes.Association
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.association`String`
+{:#members:connectors-shape.association}
+
+Sets the type of the UML assosication. Applicable, if the type of the connector is "classifier".
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Directionaln</td>
+            <td class="description last">Used to specify the directional association</td>
+       </tr>
+        <tr>
+            <td class="name">Bidirectional</td>
+            <td class="description last">Used to specify the bidirected association</td>
+       </tr>
+      </tbody>
+</table>
+
+#### Default Value:
+
+*  ej.datavisualization.Diagram.AssociationFlows.Directional
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Association, association: ej.datavisualization.Diagram.AssociationFlows.Directional
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity`String`
+{:#members:connectors-shape.multiplicity}
+
+Defines the multiplicity of a relationship in UML class diagram
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+       <tr>
+            <td class="name">OneToOne</td>
+            <td class="description last">Used to specify the one to one relationship</td>
+       </tr>
+        <tr>
+            <td class="name">OneToMany</td>
+            <td class="description last">Used to specify the one to many relationship</td>
+       </tr>
+        <tr>
+            <td class="name">ManyToOne</td>
+            <td class="description last">Used to specify the many to one relationship</td>
+       </tr>
+      </tbody>
+</table>
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:"onetomany"
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
 ### connectors.sourceDecorator `Object`
 {:#members:connectors-sourcedecorator}
 
@@ -4728,6 +4870,363 @@ $("#diagramcontent").ejDiagram({ nodes:[group] });
 
 {% endhighlight %}
 
+### nodes.classifier `enum`
+{:#members:nodes-classifier}
+
+<ts name = "ej.datavisualization.Diagram.ClassifierShapes"/>
+
+Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram shape.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">class</td>
+            <td class="description last">Used to define a Class</td>
+       </tr>
+        <tr>
+            <td class="name">Interface</td>
+            <td class="description last">Used to define an Interface</td>
+       </tr>
+        <tr>
+            <td class="name">Enumeration</td>
+            <td class="description last">Used to define an Enumeration</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ClassifierShapes.Class
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.class `Object`
+{:#members:nodes-class}
+
+Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.class.name `String`
+{:#members:nodes-class.name}
+
+Sets the name of class.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.class.attributes `Array`
+{:#members:nodes-class.attributes}
+
+Defines the collection of attributes
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", attributes: [{ name: "accepted",}], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.class.attributes.name `String`
+{:#members:nodes-class.attributes.name}
+
+Sets the name of the attribute
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", attributes: [{ name: "accepted" }], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.class.attributes.type `String`
+{:#members:nodes-class.attributes.type}
+
+Sets the data type of attribute
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", attributes: [{ name: "accepted", type: "Date", }], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.class.attributes.scope `String`
+{:#members:nodes-class.attributes.scope}
+
+Defines the visisbility of the attribute
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ScopeValueDefaults.Public
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", attributes: [{ name: "accepted", type: "Date", scope:"protected" }], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.class.methods `Array`
+{:#members:nodes-class.methods}
+
+Defines the collection of methods of a Class.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory" }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.class.methods.name `String`
+{:#members:nodes-class.methods.name}
+
+Sets the name of the method.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.class.methods.arguments `Array`
+{:#members:nodes-class.methods.arguments}
+
+Defines the arguments of the method.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date",type:"String" }], }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.class.methods.arguments.name `String`
+{:#members:nodes-class.methods.arguments.name}
+
+Sets the name of the argument
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.class.methods.arguments.type `String`
+{:#members:nodes-class.methods.arguments.type}
+
+Sets the type of the argument
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.class.methods.type `String`
+{:#members:nodes-class.methods.type}
+
+Sets the return type of the method
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.class.methods.scope `String`
+{:#members:nodes-class.methods.scope}
+
+Sets the visibility of the method.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.ScopeValueDefaults.Public
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+          "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History",scope:"protected" }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
 ### nodes.connectorPadding `Number`
 {:#members:nodes-connectorpadding}
 
@@ -5090,6 +5589,103 @@ Defines whether the BPMN data object is a collection or not
 var nodes;
 nodes=[{name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input, collection: false }, width:50, height: 50, offsetX:100, offsetY:100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.enumeration `Object`
+{:#members:nodes-enumeration}
+
+Defines an Enumeration in a UML Class Diagram
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+      enumeration:{ name: "AccountType", }}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.enumeration.name `Stribg`
+{:#members:nodes-enumeration.name}
+
+Sets the name of the Enumeration
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+      enumeration:{ name: "AccountType", }}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.enumeration.members `Array`
+{:#members:nodes-enumeration.members}
+
+Defines the collection of enumeration members
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+      enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.enumeration.members.name `String`
+{:#members:nodes-enumeration.members.name}
+
+Sets the name of the enumeration member
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+      enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
 </script>
 
 {% endhighlight %}
@@ -5773,6 +6369,315 @@ var node = diagram.selectionList[0];
 for(var i = 0; i < node.inEdges.length; i++){
     console.log(node.inEdges[i]);
 }
+</script>
+
+{% endhighlight %}
+
+### nodes.interface `Object`
+{:#members:nodes-interface}
+
+Defines an interface in a UML Class Diagram
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.name `String`
+{:#members:nodes-interface.name}
+
+Sets the name of the interface
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",} }];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.attributes `Array`
+{:#members:nodes-interface.attributes}
+
+Defines a collection of attributes of the interface
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.attributes.name `String`
+{:#members:nodes-interface.attributes.name}
+
+Sets the name of the attribute
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.attributes.type `String`
+{:#members:nodes-interface.attributes.type}
+
+Sets the type of the attribute
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]" ,  }], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.attributes.scope `String`
+{:#members:nodes-interface.attributes.scope}
+
+Sets the visibility of the attribute
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]",scope:"protected" }], },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.methods `Array`
+{:#members:nodes-interface.methods}
+
+Defines the collection of public methods of an interface
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.interfaces.methods.name `String`
+{:#members:nodes-interface.methods.name}
+
+Sets the name of the method.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.interface.methods.arguments `Array`
+{:#members:nodes-interface.methods.arguments}
+
+Defines the collection of arguments of a method
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+
+</script>
+
+{% endhighlight %}
+
+## nodes.interface.methods.arguments.name `String`
+{:#members:nodes-interface.methods.arguments.name}
+
+Sets the name of the argument
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.interface.methods.arguments.type `String`
+{:#members:nodes-interface.methods.arguments.type}
+
+Sets the type of the argument
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  }]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+## nodes.interface.methods.type `String`
+{:#members:interface-interface.methods.type}
+
+Sets the return type of the method
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account"}]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
+</script>
+
+{% endhighlight %}
+
+### nodes.interface.methods.scope `String`
+{:#members:nodes-interface.attributes.scope}
+
+Sets the visibility of the method
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes = [];
+nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+          "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account",scope:"private"}]  },}];
+$("#DiagramContent").ejDiagram({ nodes:nodes });
+
 </script>
 
 {% endhighlight %}
