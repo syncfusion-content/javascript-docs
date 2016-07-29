@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visually represent a internal business procedure and their relationships
-description: How to visually represent a internal business procedure and their relationships? 
+title: Visually represents the internal business procedures and the communication among them
+description: How to graphically notate the internal business procedure? 
 platform: js
 control: Diagram
 documentation: ug
