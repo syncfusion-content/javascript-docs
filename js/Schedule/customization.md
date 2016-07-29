@@ -206,7 +206,7 @@ N> The **maxDate** value provided should always be greater than that of **minDat
 
 It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) event within which the display of default appointment window is prevented.
 
-The following code example lets you create the custom appointment window with a single extra field for defining the appointment type.
+The following code example lets you create the custom appointment window (using recurrence editor feature) with a single extra field for defining the appointment type.
 
 {% highlight html %}
 
