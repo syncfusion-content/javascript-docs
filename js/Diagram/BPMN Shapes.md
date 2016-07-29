@@ -815,6 +815,7 @@ N> The default value for the property `association` is "default".
 ### Sequence
 
 A Sequence flow shows the order in which the activities are performed in a BPMN Process and is repesented with a solid graphical line.The type of sequence are as follows.
+
 * Normal
 * Conditional
 * Default
