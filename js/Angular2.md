@@ -56,7 +56,7 @@ For quicker startup, we are going to use CDN links for all Syncfusion resources.
     <script src="http://cdn.syncfusion.com/14.1.0.41/js/common/ej.angular2.min.js"></script>
     
     <!-- 2. Configure SystemJS -->
-    <script src="system.config.js"></script>
+    <script src="systemjs.config.js"></script>
     <script>       
       System.import('app')
             .then(null, console.error.bind(console));
