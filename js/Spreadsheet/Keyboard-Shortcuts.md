@@ -8,6 +8,9 @@ documentation: ug
 # Keyboard Shortcuts
 
 <table>
+    <colgroup>
+        <col width="17%"/>
+    </colgroup>
     <tr>
         <th>
             Shortcut
