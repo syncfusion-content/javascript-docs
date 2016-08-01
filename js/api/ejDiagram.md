@@ -4996,7 +4996,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 ### nodes.class.attributes.scope `String`
 {:#members:nodes-class.attributes.scope}
 
-Defines the visisbility of the attribute
+Defines the visibility of the attribute
 
 #### Default Value:
 
