@@ -814,7 +814,7 @@ N> The default value for the property `association` is "default".
 
 ### Sequence
 
-A Sequence flow shows the order in which the activities are performed in a BPMN Process and is repesented with a solid graphical line.The type of sequence are as follows.
+A Sequence flow shows the order in which the activities are performed in a BPMN Process and is represented with a solid graphical line.The type of sequence are as follows.
 
 * Normal
 * Conditional
@@ -869,7 +869,7 @@ N> The default value for the property `sequence` is "normal".
 
 ### Message
 
-A Message flow shows the flow of messages between two Participents.A message flow is repesented by dashed line.The type of message are as follows.
+A Message flow shows the flow of messages between two Participents.A message flow is represented by dashed line.The type of message are as follows.
 
 * InitiatingMessage
 * NonInitiatingMessage
