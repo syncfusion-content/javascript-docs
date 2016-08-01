@@ -53,10 +53,10 @@ For quicker startup, we are going to use CDN links for all Syncfusion resources.
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.1.0.41/js/web/ej.web.all.min.js"> </script> 
-    <script src="http://cdn.syncfusion.com/14.1.0.41/js/common/ej.angular2.min.js"><script>
+    <script src="http://cdn.syncfusion.com/14.1.0.41/js/common/ej.angular2.min.js"></script>
     
     <!-- 2. Configure SystemJS -->
-    <script src="system.config.js"></script>
+    <script src="systemjs.config.js"></script>
     <script>       
       System.import('app')
             .then(null, console.error.bind(console));
@@ -130,13 +130,13 @@ Two-way binding for ejAutocomplete has been demonstrated in the below code.
 
 @Component({
     selector: 'my-app',
-    template: ' <h2>Two-Way Binding</h2>
+    template: `<h2>Two-Way Binding</h2>
     <input type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
-    ',
+    `,
     directives: [EJ_AUTOCOMPLETE_COMPONENTS],
 })
-export class DefaultComponent {
+export class AppComponent {
     states: Array<string>;
     value:string; 
     constructor() {
@@ -393,14 +393,14 @@ import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
 
 @Component({
     selector: 'my-app',
-    template: ' <h2>Two-Way Binding</h2>
+    template: ` <h2>Two-Way Binding</h2>
     <button id="clearTxt" (click)="myApp.widget.clearText()">clearText</button>
     <input #myApp type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
-    ',
+    `,
     directives: [EJ_AUTOCOMPLETE_COMPONENTS],
 })
-export class DefaultComponent {
+export class AppComponent {
     states: Array<string>;
     value:string; 
     constructor() {
