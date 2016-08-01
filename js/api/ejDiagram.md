@@ -2543,48 +2543,6 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.association`String`
-{:#members:connectors-shape.association}
-
-Sets the type of the UML assosication. Applicable, if the type of the connector is "classifier".
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Directionaln</td>
-            <td class="description last">Used to specify the directional association</td>
-       </tr>
-        <tr>
-            <td class="name">Bidirectional</td>
-            <td class="description last">Used to specify the bidirected association</td>
-       </tr>
-      </tbody>
-</table>
-
-#### Default Value:
-
-*  ej.datavisualization.Diagram.AssociationFlows.Directional
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Association, association: ej.datavisualization.Diagram.AssociationFlows.Directional
-                 } }; 
-$("#diagramcontent").ejDiagram({connectors : [connector]});
-</script>
-
-{% endhighlight %}
-
 ### connectors.shape.multiplicity`String`
 {:#members:connectors-shape.multiplicity}
 
@@ -5618,7 +5576,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.enumeration.name `Stribg`
+### nodes.enumeration.name `String`
 {:#members:nodes-enumeration.name}
 
 Sets the name of the Enumeration
