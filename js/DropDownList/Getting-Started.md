@@ -5,6 +5,7 @@ description: To get start with DropDownList by adding references.
 platform: js
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Populating data
 ---
 
 # Getting Started
