@@ -5,6 +5,7 @@ description: Localization in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Localization, DropDownList, dropdown
 ---
 # Localization
 

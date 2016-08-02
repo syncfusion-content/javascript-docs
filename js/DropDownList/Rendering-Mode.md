@@ -5,6 +5,7 @@ description: Describes about rendering mode in DropDownList widget for Syncfusio
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Rendering, DropDownList, dropdown, Rendering Mode
 ---
 
 # Rendering Mode

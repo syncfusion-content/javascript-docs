@@ -5,6 +5,7 @@ description: Describes about the data binding in DropDownList widget for Syncfus
 platform: js
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4
 ---
 
 # Data Binding
