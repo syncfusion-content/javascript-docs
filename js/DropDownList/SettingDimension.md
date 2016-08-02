@@ -5,6 +5,7 @@ description: Setting Dimensions to DropDownList widget for Syncfusion Essential 
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Auto Sizing, DropDownList, dropdown, popup size, 
 ---
 
 # Setting dimensions 

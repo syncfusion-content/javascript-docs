@@ -5,6 +5,7 @@ description: State Persistence support to DropDownList widget for Syncfusion Ess
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Persistence, DropDownList, dropdown, State Persistence
 ---
 
 # State Persistence
