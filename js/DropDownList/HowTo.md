@@ -5,6 +5,7 @@ description: How To Section in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
 ---
 
 # How To
@@ -681,7 +682,7 @@ This can be achieved, by adding the attributes directly to the input element if 
 
  ![](HowTo_images/htmlAttr.png)
  
- ## Add tooltip on hovering the DropDownList’s items?
+## Add tooltip on hovering the DropDownList’s items?
  
  In order to get tooltip on hovering the DropDownList popup items, use htmlAttributes field in it. Generate a DataSource with a field for mapping the HtmlAttributes having the “title” attribute value, which will allow you to show the tooltip on hovering. The htmlAttributes field will set the HTML properties for the list items.
  

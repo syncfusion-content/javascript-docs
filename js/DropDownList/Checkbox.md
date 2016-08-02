@@ -5,6 +5,7 @@ description: Describes about Checkbox functionalities in DropDownList widget for
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
 ---
 
 # Checkbox

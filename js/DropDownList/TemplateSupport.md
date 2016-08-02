@@ -5,6 +5,7 @@ description: Template Support with DropDownList widget for Syncfusion Essential 
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Template Support, DropDownList, dropdown, Header Template
 ---
 
 # Template Support

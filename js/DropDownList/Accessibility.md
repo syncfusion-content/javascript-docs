@@ -5,6 +5,7 @@ description: Web accessibliy support to DropDownList widget for Syncfusion Essen
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Keyboard Navigation, DropDownList, Accessibility
 ---
 
 # Accessibility 
