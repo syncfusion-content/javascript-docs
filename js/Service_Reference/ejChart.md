@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Service reference for ejChart widget
 description: What are the services used in Essential JavaScript Chart.
