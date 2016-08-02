@@ -44,8 +44,6 @@ The RadialSlider provides an optimized interface for selecting a numeric value u
 
 * module:ej.touch
 
-* module:ej.radialsliderbase
-
 * module:ej.radialslider
 
 

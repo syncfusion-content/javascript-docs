@@ -69,6 +69,8 @@ Requires
 
 * module:ej.touch
 
+* module:ej.radialmenu
+
 
 ## Members
 
