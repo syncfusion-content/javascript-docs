@@ -48,7 +48,7 @@ Some JavaScript UI web widgets like Grid and Schedule requires the below assembl
 * Syncfusion.Gauge.Wpf
 * Syncfusion.SfMaps.Wpf 
 
-**Business Intelligence** components (Pivot Grid, Olap Client, Olap Chart and Olap Gauge) require the below listed assemblies -  
+**Business Intelligence** components (Pivot Grid, OLAP Client, OLAP Chart and OLAP Gauge) require the below listed assemblies -  
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base

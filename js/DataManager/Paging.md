@@ -417,7 +417,7 @@ The `range` query is used to get some particular range of records from the data 
 
 
 
-Result of the cabove code example is illustrated as follows.
+Result of the above code example is illustrated as follows.
 
 
 

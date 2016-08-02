@@ -16,7 +16,7 @@ To localize any of our Syncfusion components into a particular culture, it is ne
 * **ej.globalize.min.js** (Mandatory for processing specific source-side actions globally)
 * Other culture-specific script files, to which specific culture you need to adapt any of our Syncfusion control.
 
-I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application (applicable for verison 13.4.0.53 and higher). For verison lower than 13.4.0.53, refer jQuery.globalize.min.js along with ej.web.all.min.js
+I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application (applicable for version 13.4.0.53 and higher). For verison lower than 13.4.0.53, refer jQuery.globalize.min.js along with ej.web.all.min.js
 
 N>   All the culture-specific script files are available within the below specified location once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
