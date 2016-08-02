@@ -26,7 +26,7 @@ _For example, If you have installed the Essential Studio package within `C:\Prog
 
 ### CDN link reference
 
-* Create a HTML file and add the css file and **require.min.js** file reference within the head section as shown below,
+* Create a HTML file and add the CSS file and **require.min.js** file reference within the head section as shown below,
 
 {% highlight html %}
 
