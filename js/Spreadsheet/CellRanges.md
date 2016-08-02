@@ -434,7 +434,7 @@ You can combine two or more cells located in the same row or column into a singl
 
 * Using Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`](http://help.syncfusion.com/js/api/ejspreadsheet#members:mergecenter "mergecenter") property to align the text content center.
+* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`] property to align the text content center.
 
 The following code example describes the above behavior.
 {% highlight html %}
