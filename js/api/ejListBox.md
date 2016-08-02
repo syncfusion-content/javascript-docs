@@ -2436,7 +2436,7 @@ Example
 
 $("#list").ejListBox({
 
-    change: function(args) {
+    checkChange: function(args) {
 
         //do something
 
