@@ -113,7 +113,7 @@ for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td
 ### executeQuery<span class="signature">(query)</span>
 {:#methods:executequery}
 
-The executeQuery property is used to process the data based on the query on Url Binding.
+The executeQuery property is used to process the data based on the query on URL Binding.
 
 <table class="params">
 <thead>
@@ -167,7 +167,7 @@ It is a method used to inserts a new record in the table.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">json data or json array</td>
+<td class="description last">JSON data or JSON array</td>
 </tr>
 <tr>
 <td class="name">tableName</td>

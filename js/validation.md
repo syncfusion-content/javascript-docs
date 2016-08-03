@@ -10,7 +10,7 @@ keywords: Syncfusion EJ widgets, UG document, jQuery validation
 
 Using jQuery validation, you can perform the client side validation for our EJ widgets. Please refer following steps to achieve this.
 
-**Step 1:** To perform jQuery validation, you need to include the latest version of [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) and [jquery.validate.unobtrusive](http://www.nuget.org/packages/Microsoft.jQuery.Unobtrusive.Validation/#) scripts in your html page.
+**Step 1:** To perform jQuery validation, you need to include the latest version of [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) and [jquery.validate.unobtrusive](http://www.nuget.org/packages/Microsoft.jQuery.Unobtrusive.Validation/#) scripts in your HTML page.
 
 **Step 2:** jQuery contains some default settings for the validation and it ignores hidden elements in form validation. But some of our EJ components (“Checkbox”, “MaskEdit”, ”NumericTextbox”, “CurrencyTextbox”, “PercentageTextbox”, “RTE”, “Dropdownlist” ) contains hidden fields with values, these
 values need to be validated at here. So to perform the validation properly, you have to set “[]” in “ignore” API of “$.validator.setDefaults”. 

@@ -53,11 +53,7 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 * module:ej.touch
 
 
-* module:ej.tilebase
-
-
 * module:ej.tile
-
 
 
 

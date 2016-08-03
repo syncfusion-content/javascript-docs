@@ -68,7 +68,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img7.png)
+![](Cell-Ranges_images/Cell-Ranges_img7.png)
 
 ## Cell Navigation
 
@@ -202,7 +202,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img3.png)
+![](Cell-Ranges_images/Cell-Ranges_img3.png)
 
 ## Drag and Drop
 
@@ -236,7 +236,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img6.png)
+![](Cell-Ranges_images/Cell-Ranges_img6.png)
 
 ## Drag Fill
 
@@ -297,7 +297,7 @@ You can do this by one of the following ways,
 * Using "flashFill" as fill type in [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 The following output is displayed as a result of the "Drag Fill" menu in User Interface.
-![](CellRanges_images/CellRanges_img4.png)
+![](Cell-Ranges_images/Cell-Ranges_img4.png)
 
 The following code example describes the above behavior.
 
@@ -339,7 +339,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img5.png)
+![](Cell-Ranges_images/Cell-Ranges_img5.png)
 
 ## Hyperlink
 
@@ -390,7 +390,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img8.png)
+![](Cell-Ranges_images/Cell-Ranges_img8.png)
 
 ## Merge Cell
 
@@ -434,7 +434,7 @@ You can combine two or more cells located in the same row or column into a singl
 
 * Using Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`](http://help.syncfusion.com/js/api/ejspreadsheet#members:mergecenter "mergecenter") property to align the text content center.
+* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`] property to align the text content center.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -492,7 +492,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img1.png)
+![](Cell-Ranges_images/Cell-Ranges_img1.png)
 
 ### Unmerge Cells
 
@@ -526,4 +526,4 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](CellRanges_images/CellRanges_img2.png)
+![](Cell-Ranges_images/Cell-Ranges_img2.png)

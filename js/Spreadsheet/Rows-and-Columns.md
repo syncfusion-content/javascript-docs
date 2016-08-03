@@ -185,7 +185,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](RowsAndColumns_images/RowsAndColumns_img1.png)
+![](Rows-and-Columns_images/Rows-and-Columns_img1.png)
 
 ## Show and Hide 
 
@@ -233,7 +233,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](RowsAndColumns_images/RowsAndColumns_img2.png)
+![](Rows-and-Columns_images/Rows-and-Columns_img2.png)
 
 #### Show Row
 
@@ -277,7 +277,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](RowsAndColumns_images/RowsAndColumns_img3.png)
+![](Rows-and-Columns_images/Rows-and-Columns_img3.png)
 
 ## Resizing
 

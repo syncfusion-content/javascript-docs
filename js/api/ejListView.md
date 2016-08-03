@@ -57,6 +57,8 @@ $("#lb").ejListView();
 
 * module:jQuery
 
+* module: jsrender
+
 * module:ej.core
 
 * module:ej.unobtrusive
@@ -67,7 +69,9 @@ $("#lb").ejListView();
 
 * module:ej.checkbox
 
-* module:ej.listviewbase
+* module:ej.scroller
+
+* module:ej.listview
 
 
 ## Members
