@@ -1,4 +1,4 @@
-﻿﻿---
+---
 layout: post
 title: Service reference for ejDiagram widget
 description: Services used in Essential JavaScript Diagram.
