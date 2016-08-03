@@ -56,10 +56,6 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 * module:ej.tile
 
 
-* module:ej.tile
-
-
-
 
 ## Members
 
