@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: post
 title: Customization
 description: Customization
 platform: Js
