@@ -21,8 +21,8 @@ Gantt supports the following types of column editors,
   * Maskedit
   * Currency
   * Dropdown
+  
 ## Format column
-
 
 It is possible to format a column using ‘load’ event. The following code examples show how to format the ‘progress’ column with percentage value.
 
@@ -148,11 +148,11 @@ The following screenshot displays the customized column in Gantt control.
 
 ### Show column chooser
 
-Gantt supports enabling and disabling the visibility of the columns dynamically with the `showColumnChooser` property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
+Gantt supports enabling and disabling the visibility of the columns dynamically with the [showColumnChooser](/js/api/ejgantt#members:showcolumnchooser "showColumnChooser") property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
 ![](/js/Gantt/Columns_images/Columns_img2.png)
 
-The column menu is enabled with the `showColumnChooser` property, where the default value for this property is `false`.
+The column menu is enabled with the [showColumnChooser](/js/api/ejgantt#members:showcolumnchooser "showColumnChooser") property, where the default value for this property is `false`.
 
 The column menu provides the following options:
 
@@ -160,7 +160,7 @@ The column menu provides the following options:
 * Sort Descending
 * Columns 
 
-Sort Ascending and Sort Descending options can be enabled or disabled with the `allowSorting` property. Single level sorting can be performed with these options. To perform multilevel sorting, `allowMultiSorting` property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
+Sort Ascending and Sort Descending options can be enabled or disabled with the [allowSorting](/js/api/ejgantt#members:allowsorting "allowSorting") property. Single level sorting can be performed with these options. To perform multilevel sorting, [allowMultiSorting](/js/api/ejgantt#members:allowmultisorting "allowMultiSorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
 {% highlight javascript %}
 $("#gantt").ejGantt({
@@ -179,7 +179,7 @@ The following screenshot displays the column chooser in the Gantt control.
 
 ### Show column options
 
-You can customize the column with some more options with the ‘showColumnOptions’ property. Insert new column, delete column and update the header text of the column can be done with this property.
+You can customize the column with some more options with the [showColumnOptions](/js/api/ejgantt#members:showcolumnoptions "showColumnOptions") property. Insert new column, delete column and update the header text of the column can be done with this property.
 
 ![](/js/Gantt/Columns_images/Columns_img4.png)
 
@@ -196,7 +196,7 @@ Inserting column provides the dialog to enter the details for the column
 
 ![](/js/Gantt/Columns_images/Columns_img5.png)
 
-These fields can be customized with ‘columnDialogFields’ this property. The following shows you how to customize these fields.
+These fields can be customized with [columnDialogFields](/js/api/ejgantt#members:columndialogfields "columnDialogFields") this property. The following shows you how to customize these fields.
 
 {% highlight javascript %}
 
