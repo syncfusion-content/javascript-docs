@@ -1791,54 +1791,6 @@ treegridObj.selectCells(indexes, true); // To add a task
 </script>
 {% endhighlight %}
 
-### insertColumnChooser(column,position)
-{:#methods:insertcolumnchooser}
-
-To insert a new column to the specified position
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">column</td>
-<td class="type">object</td>
-<td class="description">object of column data to be rendered</td>
-</tr>
-<tr>
-<td class="name">position</td>
-<td class="type">string</td>
-<td class="description">position where the column should insert</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
- 
-<script>
-// Create treegrid
-var treegridObj = $("#treegrid").data("ejTreeGrid");
-var column = {
-        field:"resource",
-        headerText:"Resource",
-        width:"70px",
-};
-treegridObj.insertColumnChooser(column, "right"); // To add a new column to the right
-</script>
-{% endhighlight %}
-
-
 ### renameColumn(columnIndex,name)
 {:#methods:renamecolumn}
 
