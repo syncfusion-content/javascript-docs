@@ -72,7 +72,7 @@ The screenshot of the custom context menu items in Gantt control is as follows.
 
 ### Custom menu item with sub menu item
 
-It is possible to create a custom sub menu item to a menu item by mapping the parentMenuId.
+It is possible to create a custom menu item with a sub menu by mapping the parentMenuId property from the contextMenuItems argument in the contextMenuOpen event.
 
 The following code example explains on how to add sub context menu for custom menu items.
 
