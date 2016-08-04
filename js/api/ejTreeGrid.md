@@ -1668,8 +1668,56 @@ Shows/hides the toolbar.
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
-Option to add items to the toolbar.
+<ts name = "ej.TreeGrid.ToolbarItems"/>
 
+Specifies the list of toolbar items to rendered in TreeGrid toolbar
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td>
+<td class="description">Enables the add icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Update</td>
+<td class="description">Enables the update icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Enables the cancel icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExpandAll</td>
+<td class="description">Enables the expand all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Collapse All</td>
+<td class="description">Enables the collapse all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">PdfExport</td>
+<td class="description">Enables the pdf export icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExcelExport</td>
+<td class="description">Enables the excel export icon in toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
@@ -2838,6 +2886,7 @@ $("#treegrid").ejTreeGrid({
 {% endhighlight %}
 
 
+
 ### collapsing
 {:#events:collapsing}
 
@@ -2915,6 +2964,256 @@ $("#TreeGrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
+### columnResized
+{:#events:columnresized}
+
+
+Triggered after column resized in TreeGrid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnResized event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is resized</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being resized.</td>
+</tr>
+<tr>
+<td class="name">newWidth</td>
+<td class="type">number</td>
+<td class="description">Returns resized column width after resized.</td>
+</tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type">number</td>
+<td class="description">Returns resized column width before resizing</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnResized: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### columnResizeStart
+{:#events:columnresizestart}
+
+Triggered on starts of column resizing in TreeGrid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnResizeStart event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">Returns the column data in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the column index in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type">number</td>
+<td class="description">Returns column width before dragging</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type">object </td>
+<td class="description">Returns initial column element object.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnResizeStart: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### columnResizeEnd
+{:#events:columnresizeend}
+
+Triggered once column resizing finished in TreeGrid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnResizeEnd event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">Returns the column data in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the column index in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">extra</td>
+<td class="type">number</td>
+<td class="description">Returns the column width difference, before and after the resizing</td>
+</tr>
+<tr>
+<td class="name">newWidth</td>
+<td class="type">number</td>
+<td class="description">Returns the new column width after resized</td>
+</tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type">number</td>
+<td class="description">Returns column width before dragging</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type">object </td>
+<td class="description">Returns initial column element object.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnResizeEnd: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### contextMenuOpen
 {:#events:contextmenuopen}

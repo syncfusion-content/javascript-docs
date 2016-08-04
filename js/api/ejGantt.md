@@ -874,6 +874,55 @@ Specifies the option for enabling or disabling editing in Gantt grid part
 
 {% endhighlight %}
 
+### editSettings.allowIndent `boolean`
+{:#members:editsettings-allowindent}
+
+Specifies the option for enabling or disabling indent action in Gantt.
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  editSettings:{allowIndent : true} });   
+</script>
+
+{% endhighlight %}
+
+### editSettings.allowOutdent `boolean`
+{:#members:editsettings-allowoutdent}
+
+Specifies the option for enabling or disabling outdent action in Gantt
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  editSettings:{allowOutdent : true} });   
+</script>
+
+{% endhighlight %}
+
 
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
@@ -1001,6 +1050,117 @@ Enables or disables the collapse all records when loading the Gantt.
 
 {% endhighlight %}
 
+### leftTaskLabelMapping `string`
+{:#members:lefttasklabelmapping}
+
+Specifies the data source field name to be displayed left of taskbar
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelMapping: "taskId",
+ });            
+</script>
+
+{% endhighlight %}
+
+### rightTaskLabelMapping `string`
+{:#members:righttasklabelmapping}
+
+Specifies the data source field name to be displayed right of taskbar
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelMapping: "taskName",
+ });            
+</script>
+
+{% endhighlight %}
+
+### leftTaskLabelTemplate `string`
+{:#members:lefttasklabeltemplate}
+
+Specifies the template script id for customized view of left taskbar label.
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelTemplate: "#customTaskLeftLabel",
+ });            
+</script>
+
+{% endhighlight %}
+
+### rightTaskLabelTemplate `string`
+{:#members:righttasklabeltemplate}
+
+Specifies the template script id for customized view of right taskbar label.
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelTemplate: "#customTaskRightLabel",
+ });            
+</script>
+
+{% endhighlight %}
 
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
@@ -2121,13 +2281,67 @@ Specifies the schedule mode
  
 <div id="gantt"></div> 
 <script>                          
-        $("#gantt").ejGantt({  
-                        scheduleHeaderSettings:{scheduleHeaderType : ej.Gantt.ScheduleHeaderType.Month}
-               });
+    $("#gantt").ejGantt({  
+               scheduleHeaderSettings:{scheduleHeaderType : ej.Gantt.ScheduleHeaderType.Month}
+    });
 </script>              
 
 {% endhighlight %}
 
+### scheduleHeaderSettings.timescaleStartDateMode `enum`
+{:#members:scheduleheadersettings-timescalestartdatemode}
+
+<ts name = "ej.Gantt.TimescaleRoundMode"/>
+
+Specifies the schedule header roundoff mode.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Sets the schedules automatically according with schedule start and end date.</td>
+</tr>
+<tr>
+<td class="name">Week</td>
+<td class="description">Round off the schedule headers to round off with immediate week</td>
+</tr>
+<tr>
+<td class="name">Month</td>
+<td class="description">Round off the schedule headers to round off with immediate month</td>
+</tr>
+<tr>
+<td class="name">Year</td>
+<td class="description">Round off the schedule headers to round off with immediate year</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+* ej.Gantt.TimescaleRoundMode.Auto
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        scheduleHeaderSettings:{timescaleStartDateMode : ej.Gantt.TimescaleRoundMode.Week}
+                });              
+</script>              
+
+{% endhighlight %}
 
 ### scheduleHeaderSettings.weekendBackground `string`
 {:#members:scheduleheadersettings-weekendbackground}
@@ -2831,6 +3045,30 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 
 {% endhighlight %}
 
+### readOnly `boolean`
+{:#members:readonly}
+
+Enables or disables the readonly state of Gantt
+
+#### Default Value:
+{:.param}
+
+* "false"
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    readOnly: "true"
+ });            
+</script>
+
+{% endhighlight %}
 
 ### taskbarTooltipTemplateId `string`
 {:#members:taskbartooltiptemplateid}
@@ -2948,14 +3186,72 @@ Specifies the state of enabling or disabling toolbar
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
-Specifies the list of toolbar items to rendered in toolbar
+<ts name = "ej.Gantt.ToolbarItems"/>
 
+Specifies the list of toolbar items to rendered in Gantt toolbar
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td>
+<td class="description">Enables the add icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Update</td>
+<td class="description">Enables the update icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Enables the cancel icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Search</td>
+<td class="description">Enables the search icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Indent</td>
+<td class="description">Enables the indent icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Outdent</td>
+<td class="description">Enables the outdent icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExpandAll</td>
+<td class="description">Enables the expand all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Collapse All</td>
+<td class="description">Enables the collapse all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">PrevTimeSpan</td>
+<td class="description">Enables the previous time span icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">NextTimeSpan</td>
+<td class="description">Enables the next time span icon in toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 {:.param}
-
 * []
-
 
 #### Example
 {:.example}

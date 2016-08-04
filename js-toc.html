@@ -3443,6 +3443,8 @@
                                     <li id="toc-members:editsettings-allowadding"><a href="/js/api/ejgantt#members:editsettings-allowadding">allowAdding</a></li>
                                     <li id="toc-members:editsettings-allowdeleting"><a href="/js/api/ejgantt#members:editsettings-allowdeleting">allowDeleting</a></li>
                                     <li id="toc-members:editsettings-allowediting"><a href="/js/api/ejgantt#members:editsettings-allowediting">allowEditing</a></li>
+                                    <li id="toc-members:editsettings-allowindent"><a href="/js/api/ejgantt#members:editsettings-allowindent">allowIndent</a></li>
+                                    <li id="toc-members:editsettings-allowoutdent"><a href="/js/api/ejgantt#members:editsettings-allowoutdent">allowOutdent</a></li>
                                     <li id="toc-members:editsettings-editmode"><a href="/js/api/ejgantt#members:editsettings-editmode">editMode</a></li>                                    
                                 </ul>
                             </li>
@@ -3462,6 +3464,8 @@
                             <li id="toc-members:holidays"><a href="/js/api/ejgantt#members:holidays">holidays</a></li>
                             <li id="toc-members:includeweekend"><a href="/js/api/ejgantt#members:includeweekend">includeWeekend</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejgantt#members:locale">locale</a></li>
+                            <li id="toc-members:lefttasklabelmapping"><a href="/js/api/ejgantt#members:lefttasklabelmapping">leftTaskLabelMapping</a></li>
+                            <li id="toc-members:lefttasklabeltemplate"><a href="/js/api/ejgantt#members:lefttasklabeltemplate">leftTaskLabelTemplate</a></li>                            
                             <li id="toc-members:milestonemapping"><a href="/js/api/ejgantt#members:milestonemapping">milestoneMapping</a></li>
                             <li id="toc-members:milestonetemplate"><a href="/js/api/ejgantt#members:milestonetemplate">milestoneTemplate</a></li>                            
                             <li id="toc-members:parentprogressbarbackground"><a href="/js/api/ejgantt#members:parentprogressbarbackground">parentProgressbarBackground</a></li>
@@ -3475,11 +3479,14 @@
                             <li id="toc-members:progressbartooltiptemplateid"><a href="/js/api/ejgantt#members:progressbartooltiptemplateid">progressbarTooltipTemplateId</a></li>
                             <li id="toc-members:progressmapping"><a href="/js/api/ejgantt#members:progressmapping">progressMapping</a></li>
                             <li id="toc-members:query"><a href="/js/api/ejgantt#members:query">query</a></li>
+                            <li id="toc-members:readonly"><a href="/js/api/ejgantt#members:readonly">readOnly</a></li>
                             <li id="toc-members:renderbaseline"><a href="/js/api/ejgantt#members:renderbaseline">renderBaseline</a></li>
                             <li id="toc-members:resourceidmapping"><a href="/js/api/ejgantt#members:resourceidmapping">resourceIdMapping</a></li>
                             <li id="toc-members:resourceinfomapping"><a href="/js/api/ejgantt#members:resourceinfomapping">resourceInfoMapping</a></li>
                             <li id="toc-members:resourcenamemapping"><a href="/js/api/ejgantt#members:resourcenamemapping">resourceNameMapping</a></li>
                             <li id="toc-members:resources"><a href="/js/api/ejgantt#members:resources">resources</a></li>
+                            <li id="toc-members:righttasklabelmapping"><a href="/js/api/ejgantt#members:righttasklabelmapping">rightTaskLabelMapping</a></li>
+                            <li id="toc-members:righttasklabeltemplate"><a href="/js/api/ejgantt#members:righttasklabeltemplate">rightTaskLabelTemplate</a></li>                            
                             <li id="toc-members:roundoffdayworkingtime"><a href="/js/api/ejgantt#members:roundoffdayworkingtime">roundOffDayworkingTime</a></li>
                             <li id="toc-members:rowheight"><a href="/js/api/ejgantt#members:rowheight">rowHeight</a></li>
                             <li id="toc-members:scheduleenddate"><a href="/js/api/ejgantt#members:scheduleenddate">scheduleEndDate</a></li>
@@ -3490,6 +3497,7 @@
                                     <li id="toc-members:scheduleheadersettings-minutesperinterval"><a href="/js/api/ejgantt#members:scheduleheadersettings-minutesperinterval">minutesPerInterval</a></li>
                                     <li id="toc-members:scheduleheadersettings-monthheaderformat"><a href="/js/api/ejgantt#members:scheduleheadersettings-monthheaderformat">monthHeaderFormat</a></li>
                                     <li id="toc-members:scheduleheadersettings-scheduleheadertype"><a href="/js/api/ejgantt#members:scheduleheadersettings-scheduleheadertype">scheduleHeaderType</a></li>
+                                    <li id="toc-members:scheduleheadersettings-timescalestartdatemode"><a href="/js/api/ejgantt#members:scheduleheadersettings-timescalestartdatemode">timescaleStartDateMode</a></li>                                    
                                     <li id="toc-members:scheduleheadersettings-weekendbackground"><a href="/js/api/ejgantt#members:scheduleheadersettings-weekendbackground">weekendBackground</a></li>
                                     <li id="toc-members:scheduleheadersettings-weekheaderformat"><a href="/js/api/ejgantt#members:scheduleheadersettings-weekheaderformat">weekHeaderFormat</a></li>
                                     <li id="toc-members:scheduleheadersettings-yearheaderformat"><a href="/js/api/ejgantt#members:scheduleheadersettings-yearheaderformat">yearHeaderFormat</a></li>
@@ -9615,6 +9623,9 @@
                             <li id="toc-events:collapsing"><a href="/js/api/ejtreegrid#events:collapsing">collapsing</a></li>
                             <li id="toc-events:cellselecting"><a href="/js/api/ejtreegrid#events:cellselecting">cellSelecting</a></li>
                             <li id="toc-events:cellselected"><a href="/js/api/ejtreegrid#events:cellselected">cellSelected</a></li>
+                            <li id="toc-events:columnresizestart"><a href="/js/api/ejtreegrid#events:columnresizestart">columnResizeStart</a></li>
+                            <li id="toc-events:columnresizeend"><a href="/js/api/ejtreegrid#events:columnresizeend">columnResizeEnd</a></li>
+                            <li id="toc-events:columnresized"><a href="/js/api/ejtreegrid#events:columnresized">columnResized</a></li>                     
                             <li id="toc-events:contextmenuopen"><a href="/js/api/ejtreegrid#events:contextmenuopen">contextMenuOpen</a></li>
                             <li id="toc-events:endedit"><a href="/js/api/ejtreegrid#events:endedit">endEdit</a></li>
                             <li id="toc-events:expanded"><a href="/js/api/ejtreegrid#events:expanded">expanded</a></li>
