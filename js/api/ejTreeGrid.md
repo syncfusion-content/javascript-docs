@@ -1735,7 +1735,6 @@ To clear all the selection in TreeGrid
 </tbody>
 </table>
 
-
 #### Example
 
 
@@ -1792,6 +1791,132 @@ treegridObj.selectCells(indexes, true); // To add a task
 </script>
 {% endhighlight %}
 
+### insertColumnChooser(column,position)
+{:#methods:insertcolumnchooser}
+
+To insert a new column to the specified position
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">object of column data to be rendered</td>
+</tr>
+<tr>
+<td class="name">position</td>
+<td class="type">string</td>
+<td class="description">position where the column should insert</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create treegrid
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+var column = {
+        field:"resource",
+        headerText:"Resource",
+        width:"70px",
+};
+treegridObj.insertColumnChooser(column, "right"); // To add a new column to the right
+</script>
+{% endhighlight %}
+
+
+### renameColumn(columnIndex,name)
+{:#methods:renamecolumn}
+
+To rename a column with the specified name
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Index of the column to be renamed</td>
+</tr>
+<tr>
+<td class="name">name</td>
+<td class="type">string</td>
+<td class="description">Header text of the column </td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create treegrid
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.renameColumn(1, "New Text"); // To re name the column
+</script>
+{% endhighlight %}
+
+### deleteColumn(columnIndex)
+{:#methods:deletecolumn}
+
+To delete the specified column
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Index of the column to be deleted</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create treegrid
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.deleteColumn(1); // To delete the specified column
+</script>
+{% endhighlight %}
 
 ### collapseAll()
 {:#methods:collapseall}
