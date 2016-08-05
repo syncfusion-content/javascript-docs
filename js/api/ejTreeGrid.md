@@ -1670,7 +1670,7 @@ Shows/hides the toolbar.
 
 <ts name = "ej.TreeGrid.ToolbarItems"/>
 
-Specifies the list of toolbar items to rendered in TreeGrid toolbar
+Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 
 <table class="params">
 <thead>
@@ -2968,7 +2968,7 @@ $("#TreeGrid").ejTreeGrid({
 {:#events:columnresized}
 
 
-Triggered after column resized in TreeGrid
+Triggered after a column resized
 
 <table class="params">
 <thead>
@@ -3048,7 +3048,7 @@ $("#TreeGrid").ejTreeGrid({
 ### columnResizeStart
 {:#events:columnresizestart}
 
-Triggered on starts of column resizing in TreeGrid
+Triggered while start to resize a column
 
 <table class="params">
 <thead>
@@ -3128,7 +3128,7 @@ $("#TreeGrid").ejTreeGrid({
 ### columnResizeEnd
 {:#events:columnresizeend}
 
-Triggered once column resizing finished in TreeGrid
+Triggered when a column has been resized
 
 <table class="params">
 <thead>

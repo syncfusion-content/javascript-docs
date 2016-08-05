@@ -1053,8 +1053,7 @@ Enables or disables the collapse all records when loading the Gantt.
 ### leftTaskLabelMapping `string`
 {:#members:lefttasklabelmapping}
 
-Specifies the data source field name to be displayed left of taskbar
-
+Specifies the data source field name to be displayed as left task label
 
 #### Default Value:
 {:.param}
@@ -1081,7 +1080,7 @@ Specifies the data source field name to be displayed left of taskbar
 ### rightTaskLabelMapping `string`
 {:#members:righttasklabelmapping}
 
-Specifies the data source field name to be displayed right of taskbar
+Specifies the data source field name to be displayed as right task label
 
 
 #### Default Value:
@@ -1109,7 +1108,7 @@ Specifies the data source field name to be displayed right of taskbar
 ### leftTaskLabelTemplate `string`
 {:#members:lefttasklabeltemplate}
 
-Specifies the template script id for customized view of left taskbar label.
+Specifies the template for left task label
 
 
 #### Default Value:
@@ -1137,7 +1136,7 @@ Specifies the template script id for customized view of left taskbar label.
 ### rightTaskLabelTemplate `string`
 {:#members:righttasklabeltemplate}
 
-Specifies the template script id for customized view of right taskbar label.
+Specifies the template for right task label
 
 
 #### Default Value:
@@ -2293,7 +2292,7 @@ Specifies the schedule mode
 
 <ts name = "ej.Gantt.TimescaleRoundMode"/>
 
-Specifies the schedule header roundoff mode.
+Specifies the round-off mode for the start date in schedule header.
 
 <table class="params">
 <thead>
@@ -2305,19 +2304,19 @@ Specifies the schedule header roundoff mode.
 <tbody>
 <tr>
 <td class="name">Auto</td>
-<td class="description">Sets the schedules automatically according with schedule start and end date.</td>
+<td class="description">The round-off value will be automatically calculated based on the data source values.</td>
 </tr>
 <tr>
 <td class="name">Week</td>
-<td class="description">Round off the schedule headers to round off with immediate week</td>
+<td class="description">Schedule header start date will round-off to the immediate week.</td>
 </tr>
 <tr>
 <td class="name">Month</td>
-<td class="description">Round off the schedule headers to round off with immediate month</td>
+<td class="description">Schedule headers start date will round off ot the immediate month</td>
 </tr>
 <tr>
 <td class="name">Year</td>
-<td class="description">Round off the schedule headers to round off with immediate year</td>
+<td class="description">Schedule headers start date will round off to the immediate year</td>
 </tr>
 </tbody>
 </table>
@@ -3048,7 +3047,7 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 ### readOnly `boolean`
 {:#members:readonly}
 
-Enables or disables the readonly state of Gantt
+Enables or disables Gantt to read-only mode
 
 #### Default Value:
 {:.param}
@@ -3188,7 +3187,7 @@ Specifies the state of enabling or disabling toolbar
 
 <ts name = "ej.Gantt.ToolbarItems"/>
 
-Specifies the list of toolbar items to rendered in Gantt toolbar
+Specifies the list of toolbar items to be rendered in Gantt toolbar
 
 <table class="params">
 <thead>
