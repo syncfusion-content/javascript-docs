@@ -172,7 +172,8 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({                                                       
-        loadComplete: "loadComplete"               
+        loadComplete: "loadComplete",
+        sheetCount: 2              
     });
 });
 function loadComplete(args) {          

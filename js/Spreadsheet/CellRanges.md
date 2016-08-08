@@ -57,12 +57,11 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", true); // If true comment is in Editing mode.
-        xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", false);
+    if(!this.isImport) {
+        this.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", false);
+        this.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", true); // If true comment is in Editing mode.
         //To Remove a Comment
-        xlObj.XLComment.deleteComment ("A2");
+        this.XLComment.deleteComment ("A2");
     }
 }
 {% endhighlight %}
@@ -74,7 +73,7 @@ The following output is displayed as a result of the above code example.
 
 Cell navigation is used to navigate through the cells using keyboard. You can use [`allowKeyboardNavigation`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowkeyboardnavigation "allowKeyboardNavigation") property to enable/disable cell navigation. You have the following support for cell navigation.
 
-N> In the below table first, last is based on the used range.
+N> In the below table, first cell and last cell is based on the used range.
 
 <table>
 <tr><td>Keys<br/></td><td>Description<br/></td></tr>
@@ -135,9 +134,8 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+    if(!this.isImport) {
+        this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used for ignore blank value and error alert.
     }
 }
@@ -166,11 +164,10 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+    if(!this.isImport) {
+        this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used for ignore blank value and error alert.
-        xlObj.XLValidate.clearDV("G2:G12");
+        this.XLValidate.clearDV("G2:G12");
     }
 }
 {% endhighlight %}
@@ -198,11 +195,10 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+    if(!this.isImport) {
+        this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used for ignore blank value and error alert.
-        xlObj.XLValidate.highlightInvalidData ("G2:G12");
+        this.XLValidate.highlightInvalidData ("G2:G12");
     }
 }
 {% endhighlight %}
@@ -235,9 +231,8 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.XLDragDrop.moveRangeTo([1, 6, 4, 7], [1, 9, 4, 10]);
+    if(!this.isImport)
+        this.XLDragDrop.moveRangeTo([1, 6, 4, 7], [1, 9, 4, 10]);
 }
 {% endhighlight %}
 
@@ -324,22 +319,21 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLEdit.updateValue("N2", "Name");
-        xlObj.XLEdit.updateValue("N3", "Casual Shoes");
-        xlObj.XLEdit.updateValue("N4", "Formal Shoes");
-        xlObj.XLEdit.updateValue("N5", "Sports Shoes");
-        xlObj.XLEdit.updateValue("O2", "FirstName");
-        xlObj.XLEdit.updateValue("O3", "Casual");
-        xlObj.XLFormat.format({ "style": { "background-color": "yellow" } }, "K2:L2");
-        xlObj.XLFormat.format({ "style": { "background-color": "red" } }, "K4:L4");
-        xlObj.XLFormat.format({ "style": { "background-color": "blue" } }, "K5:L5");
-        xlObj.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 8, 4, 8], fillRange: "I6:I10", fillType: "copycells", direction:"down"}); //copy Cells
-        xlObj.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 9, 4, 9], fillRange: "J6:J10", fillType: "fillseries", direction:"down"}); //fill series
-        xlObj.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 10, 4, 10], fillRange: "K6:K10", fillType: "fillformattingonly", direction:"down"}); //fill formatting only
-        xlObj.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 11, 4, 11], fillRange: "L6:L10", fillType: "fillwithoutformatting", direction:"down"}); //fill without formatting
-        xlObj.XLDragFill.autoFill({sheetIdx: 1, dataRange:[2, 14, 2, 14], fillRange: "O4:O6", fillType: "flashfill", direction:"down"}); //flash fill
+    if(!this.isImport) {
+        this.XLEdit.updateValue("N2", "Name");
+        this.XLEdit.updateValue("N3", "Casual Shoes");
+        this.XLEdit.updateValue("N4", "Formal Shoes");
+        this.XLEdit.updateValue("N5", "Sports Shoes");
+        this.XLEdit.updateValue("O2", "FirstName");
+        this.XLEdit.updateValue("O3", "Casual");
+        this.XLFormat.format({ "style": { "background-color": "yellow" } }, "K2:L2");
+        this.XLFormat.format({ "style": { "background-color": "red" } }, "K4:L4");
+        this.XLFormat.format({ "style": { "background-color": "blue" } }, "K5:L5");
+        this.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 8, 4, 8], fillRange: "I6:I10", fillType: "copycells", direction:"down"}); //copy Cells
+        this.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 9, 4, 9], fillRange: "J6:J10", fillType: "fillseries", direction:"down"}); //fill series
+        this.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 10, 4, 10], fillRange: "K6:K10", fillType: "fillformattingonly", direction:"down"}); //fill formatting only
+        this.XLDragFill.autoFill({sheetIdx: 1, dataRange:[1, 11, 4, 11], fillRange: "L6:L10", fillType: "fillwithoutformatting", direction:"down"}); //fill without formatting
+        this.XLDragFill.autoFill({sheetIdx: 1, dataRange:[2, 14, 2, 14], fillRange: "O4:O6", fillType: "flashfill", direction:"down"}); //flash fill
     }      
 }
 {% endhighlight %}
@@ -382,15 +376,14 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.XLEdit.updateValue("I2", "amazon");
-        xlObj.XLEdit.updateValue("J2", "flipkart");
-        xlObj.setHyperlink("E3:E3", { "cellAddr": "A1:D2" }, 2);
-        xlObj.setHyperlink("I2:I2", { "webAddr": "http://www.amazon.com" }, 1);
-        xlObj.setHyperlink("J2:J2", { "webAddr": "http://www.flipkart.com" }, 1);
+    if(!this.isImport) {
+        this.XLEdit.updateValue("I2", "amazon");
+        this.XLEdit.updateValue("J2", "flipkart");
+        this.setHyperlink("E3:E3", { "cellAddr": "A1:D2" }, 2);
+        this.setHyperlink("I2:I2", { "webAddr": "http://www.amazon.com" }, 1);
+        this.setHyperlink("J2:J2", { "webAddr": "http://www.flipkart.com" }, 1);
         //To Remove a Hyperlink
-        xlObj.removeHyperlink("J2:J2");
+        this.removeHyperlink("J2:J2");
     }
 }
 {% endhighlight %}
@@ -428,9 +421,8 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.mergeCells("A2:B4", true); // true is for prevent the alert message.
+    if(!this.isImport)
+        this.mergeCells("A2:B4", true); // true is for prevent the alert message.
 }
 {% endhighlight %}
 
@@ -459,10 +451,9 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport){
-        xlObj.mergeCenter = true;
-        xlObj.mergeCells("D2:E4", true); // true is for prevent the alert message.
+    if(!this.isImport){
+        this.mergeCenter = true;
+        this.mergeCells("D2:E4", true); // true is for prevent the alert message.
     }
 }
 {% endhighlight %}
@@ -492,9 +483,8 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
-        xlObj.mergeAcrossCells("G2:H4", true); // true is for prevent the alert message.
+    if(!this.isImport)
+        this.mergeAcrossCells("G2:H4", true); // true is for prevent the alert message.
 }   
 {% endhighlight %}
 
@@ -524,10 +514,9 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport) {
-        xlObj.mergeCells("B2:C4", true); // true is for prevent the alert message.
-        xlObj.unmergeCells("B2:C4");
+    if(!this.isImport) {
+        this.mergeCells("B2:C4", true); // true is for prevent the alert message.
+        this.unmergeCells("B2:C4");
     }
 }
 {% endhighlight %}

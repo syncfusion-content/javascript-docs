@@ -46,7 +46,7 @@ $(function () {
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         allowCellType: true,
-        loadComplete: "loadComplete"f
+        loadComplete: "loadComplete"
      });
 });
 function loadComplete() {
@@ -172,7 +172,7 @@ $(function () {
     });
 });
 function loadComplete() {
-    var xlObj = this.XLObj, xlCFormat = this.XLCFormat;
+    var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
         xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
@@ -212,7 +212,7 @@ $(function () {
     });
 });
 function loadComplete() {
-    var xlObj = this.XLObj, xlCFormat = this.XLCFormat;
+    var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
         xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
@@ -516,8 +516,10 @@ $(function () {
 function loadComplete() {
     var i, format = [], formatObj = [],xlFormat = this.XLFormat, formatName = ["TableStyleLight8", "TableStyleLight10"];
     if (!this.isImport) {
-        xlFormat.createTable(formatName[0], "A1:B4");
-        xlFormat.createTable(formatName[1], "D1:E4");
+        for (i = 0; i < formatName.length; i++)
+	        formatObj[i] = { "header": true, "name": formatName[i].substr(10), "formatName": formatName[i] };
+        xlFormat.createTable(formatObj[0], "A1:B4");
+        xlFormat.createTable(formatObj[1], "D1:E4");
     }
 }
 {% endhighlight %}
