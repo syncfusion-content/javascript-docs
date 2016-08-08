@@ -9,9 +9,9 @@ documentation: ug
 
 # Cell Range
 
-A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected they are surrounded by border. 
+A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 
-You can perform following operations with Cell Range,
+You have following features in Cell Range,
 
 * Comment
 * Cell Navigation
@@ -49,9 +49,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -59,8 +59,8 @@ $(function () {
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
     if(!xlObj.isImport) {
-        xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", true);
-        xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", true);
+        xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", true); // If true comment is in Editing mode.
+        xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", false);
         //To Remove a Comment
         xlObj.XLComment.deleteComment ("A2");
     }
@@ -84,7 +84,7 @@ N> In the below table first, last is based on the used range.
 <tr><td>Down Arrow<br/></td><td>Go to next cell in the same column<br/></td></tr>
 <tr><td>Right Arrow<br/></td><td>Go to next cell in the same row<br/></td></tr>
 <tr><td>Left Arrow<br/></td><td>Go to previous cell in the same row<br/></td></tr>
-<tr><td>Page Down<br/></td><td>Go to next bloc<br/></td></tr>
+<tr><td>Page Down<br/></td><td>Go to next block<br/></td></tr>
 <tr><td>Page Up<br/></td><td>Go to previous block<br/></td></tr>
 <tr><td>Home<br/></td><td>Go to first cell of the same row<br/></td></tr>
 <tr><td>End<br/></td><td>Go to last cell of the same row<br/></td></tr>
@@ -127,17 +127,19 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
 });
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
+    if(!xlObj.isImport) {
         xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+        //the last two boolean values used for ignore blank value and error alert.
+    }
 }
 {% endhighlight %}
 
@@ -156,17 +158,20 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
 });
 function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport)
+    if(!xlObj.isImport) {
+        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+        //the last two boolean values used for ignore blank value and error alert.
         xlObj.XLValidate.clearDV("G2:G12");
+    }
 }
 {% endhighlight %}
 
@@ -185,9 +190,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -196,6 +201,7 @@ function loadComplete(args) {
     var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
     if(!xlObj.isImport) {
         xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
+        //the last two boolean values used for ignore blank value and error alert.
         xlObj.XLValidate.highlightInvalidData ("G2:G12");
     }
 }
@@ -221,9 +227,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -244,7 +250,7 @@ Drag Fill is used to fill the cells with data based on adjacent cells. It also f
 
 You can do this by one of the following ways.
 
-* Using "Drag Fill" menu which is open while drag and drop the fill handle element.
+* Using "Drag Fill" menu which is open, while drag and drop the fill handle element.
 * Using [`autoFill`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
 
 In Drag Fill we have following options, 
@@ -308,9 +314,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true },
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true },
                 { dataSource: [{i : 1, j: 1, k : 1, l : 1}, {i : 2, j: 2, k : 2, l : 2}, {i : 3, j: 3, k : 3, l : 3}, {i : 4, j: 4, k : 4, l : 4}], startCell: "I2"}
             ],                               
         }],
@@ -368,9 +374,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -414,9 +420,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -434,7 +440,8 @@ You can combine two or more cells located in the same row or column into a singl
 
 * Using Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method and enable/disable the [`mergeCenter`] property to align the text content center.
+* Using [`mergeCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:mergecells "mergeCells") method.
+* Using `mergeCenter` property to enable/disable the center alignment.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -444,9 +451,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -477,9 +484,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -509,9 +516,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
