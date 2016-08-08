@@ -29,7 +29,7 @@ The following code example describes the above behavior.
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
          sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -159,7 +159,7 @@ The following code example describes the above behavior.
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -215,7 +215,7 @@ The following code example describes the above behavior.
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -259,7 +259,7 @@ The following code example describes the above behavior.
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
         }],
@@ -299,7 +299,7 @@ The following code example describes the above behavior.
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],
             rowHeight: 21,

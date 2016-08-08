@@ -41,7 +41,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
@@ -122,7 +122,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
@@ -163,7 +163,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
 `   $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData}],                               
         }],
@@ -203,7 +203,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData}],                               
         }],
@@ -260,7 +260,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],
         }],
@@ -305,7 +305,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
@@ -368,7 +368,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.pivot" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.pivot" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.pivot, showHeader: true }],                               
         }],
@@ -396,7 +396,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sorting
 
-Sorting helps you to arrange the data in a particular order to a selected range of cells. You can use [allowSorting](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "") property to enable/disable sorting. 
+Sorting helps you to arrange the data in a particular order to a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
 
 You have following options in sorting.
 
@@ -433,7 +433,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
@@ -461,7 +461,7 @@ The following output is displayed as a result of the above code example.
 
 ## Table
 
-A table is a data structure that organizes information into rows and columns. You can use [allowFormatAsTable](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowformatastable "") property enable/disable table operations. 
+A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
 
 You can do this by one of the following ways,
 
@@ -505,7 +505,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.bill" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        // the datasource "window.bill" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.bill, showHeader: true }],                               
         }],
