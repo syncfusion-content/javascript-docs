@@ -99,7 +99,7 @@ By default, task name will be displayed to the left and resource names will be d
 
 ### Mapping datasource fields as task labels
 
-It is also possible to set any datasource fields as task labels using [rightTaskLabelMapping](\js\api\ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [leftTaskLabelMapping](\js\api\ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
+It is also possible to set any datasource fields as task labels using [rightTaskLabelMapping](/js/api/ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [leftTaskLabelMapping](/js/api/ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
 
 The following code example explains how to set task name field as right label and task ID field as left label,
 
@@ -127,7 +127,7 @@ The following screenshot shows Gantt with task labels mapped with different data
 
 ### Task label templates
 
-It is possible to customize the task labels with templates, by using [rightTaskLabelTemplate](\js\api\ejgantt#members:righttasklabeltemplate "rightTaskLabelTemplate") and [leftTaskLabelTemplate](\js\api\ejgantt#members:lefttasklabeltemplate "leftTaskLabelTemplate") properties.
+It is possible to customize the task labels with templates, by using [rightTaskLabelTemplate](/js/api/ejgantt#members:righttasklabeltemplate "rightTaskLabelTemplate") and [leftTaskLabelTemplate](/js/api/ejgantt#members:lefttasklabeltemplate "leftTaskLabelTemplate") properties.
 
 The following code example explains how to map custom templates to task labels.
 
@@ -185,7 +185,7 @@ The following screenshot shows Gantt with task label templates.
 
 ## Tooltip template
 
-The default tooltip in Gantt can be customized by using the [taskbarTooltipTemplateId](\js\api\ejgantt#members:taskbartooltiptemplateid "taskbarTooltipTemplateId") property. We need to map the JsRender script element’s ID value to this property.
+The default tooltip in Gantt can be customized by using the [taskbarTooltipTemplateId](/js/api/ejgantt#members:taskbartooltiptemplateid "taskbarTooltipTemplateId") property. We need to map the JsRender script element’s ID value to this property.
 
 The following code example shows how to customize the tooltip.
 
