@@ -46,7 +46,7 @@ In this example, we have bound the raw items obtained into our ejGrid widget. Pl
                     }],
                     axis: "columns"
                 }]
-            }, enableDrillThrough : true, drillThrough: “drilledData”
+            }, enableDrillThrough : true, drillThrough: "drilledData"
         });
     });
 

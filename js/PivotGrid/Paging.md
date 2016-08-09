@@ -33,11 +33,11 @@ Inside the **“ejPivotPager”** method, the enumeration property [`mode`](/js/
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../wcf/PagingService.svc"
+                url: "/OLAPService.svc"
             });
             $("#Pager1").ejPivotPager({
                 mode: ej.PivotPager.Mode.Both,
-                targetControlID: "PivotGrid"
+                targetControlID: "PivotGrid1"
             });
         });
     </script>
@@ -63,7 +63,7 @@ Virtual Scrolling is a technique that allows user to scroll vertically and horiz
 {% highlight js %}
 
 $("#PivotGrid1").ejPivotGrid({
-    url: "../wcf/PivotGridService.svc",
+    url: "/OLAPService.svc",
     enableVirtualScrolling: true
 });
 
@@ -82,30 +82,23 @@ The page setting for categorical and series axes are mandatorily needs to be don
 
 {% highlight c# %}
 
-OlapReport olapReport = new OlapReport();
-olapReport.EnablePaging = true;
-olapReport.PagerOptions.SeriesPageSize = 4;
-olapReport.PagerOptions.CategorialPageSize = 5;
-olapReport.PagerOptions.CategorialCurrentPage = 1;
-olapReport.PagerOptions.SeriesCurrentPage = 1;
+            OlapReport olapReport = new OlapReport();
+            olapReport.CurrentCubeName = "Adventure Works";
+            olapReport.EnablePaging = true;
+            olapReport.PagerOptions.SeriesPageSize = 4;
+            olapReport.PagerOptions.CategorialPageSize = 5;
 
-DimensionElement dimensionElement = new DimensionElement() {
-    Name = "Customer"
-};
-dimensionElement.AddLevel("Customer", "Customer");
-olapReport.CategoricalElements.Add(dimensionElement);
+            DimensionElement dimensionElement = new DimensionElement() { Name = "Customer" };
+            dimensionElement.AddLevel("Customer", "Customer");
+            olapReport.CategoricalElements.Add(dimensionElement);
 
-DimensionElement dimensionElementRow = new DimensionElement() {
-    Name = "Customer", HierarchyName = "Customer"
-};
-dimensionElementRow.AddLevel("Customer Geography", "Country");
-olapReport.SeriesElements.Add(dimensionElementRow);
+            DimensionElement dimensionElementRow = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
+            dimensionElementRow.AddLevel("Customer Geography", "Country");
+            olapReport.SeriesElements.Add(dimensionElementRow);
 
-MeasureElements measureElementColumn = new MeasureElements();
-measureElementColumn.Elements.Add(new MeasureElement {
-    Name = "Internet Sales Amount"
-});
-olapReport.CategoricalElements.Add(measureElementColumn);
+            MeasureElements measureElementColumn = new MeasureElements();
+            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+            olapReport.CategoricalElements.Add(measureElementColumn);
 
 {% endhighlight %}
 

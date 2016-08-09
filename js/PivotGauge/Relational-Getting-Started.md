@@ -17,7 +17,7 @@ This section covers the basic information required to populate a simple PivotGau
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGauge widget which are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -210,7 +210,7 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotGauge widget inside a HTML page are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -529,11 +529,14 @@ Now you need to define the service methods inside RelationalGaugeController clas
             {
                 PivotReport pivotSetting = new PivotReport();
                 pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Date", FieldHeader = "Date", TotalHeader = "Total" });
-                pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
+                pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
                 pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
                 return pivotSetting;
             }
         }
+        .....
+        ..... // Datasource initialization
+        .....
     }
 {% endhighlight %}
 

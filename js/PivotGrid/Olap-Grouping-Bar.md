@@ -55,7 +55,7 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../OLAPService",
+        url: "/OLAPService",
         enableGroupingBar: true
     });
 });

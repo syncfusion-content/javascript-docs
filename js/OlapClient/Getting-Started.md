@@ -25,7 +25,7 @@ Now, set “GettingStarted.html” as start-up page by right-clicking on “Gett
 ###Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render OlapClient widget inside a HTML page are highlighted in an appropriate order as follows,
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. jQuery.globalize.min.js
@@ -66,7 +66,7 @@ In-order to initialize a OlapClient widget, first you need to define a “div”
                 {
                     $("#OlapClient").ejOlapClient(
                     {
-                        url: "../OlapClientService",title: "OLAP Browser"
+                        url: "/OlapClientService",title: "OLAP Browser"
                     });
                 });
             </script>
@@ -79,7 +79,7 @@ In-order to initialize a OlapClient widget, first you need to define a “div”
 
 The “url” property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapClient widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“../OlapClientService”**. Suppose if you are using WCF service, then the URL would look like **“../OlapClientService.svc”**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/OlapClientService”**. Suppose if you are using WCF service, then the URL would look like **“/OlapClientService.svc”**. 
 
 ###WebAPI
 
@@ -216,7 +216,7 @@ namespace OlapClientDemo
             }
             [System.Web.Http.ActionName("InitializeTreeMap")]
             [System.Web.Http.HttpPost]
-        public Dictionary <string, object> InitializeTreeMap(Dictionary<string, object> jsonResult)
+        public Dictionary < string, object > InitializeTreeMap(Dictionary< string, object > jsonResult)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
@@ -233,7 +233,7 @@ namespace OlapClientDemo
             }
             [System.Web.Http.ActionName("DrillTreeMap")]
             [System.Web.Http.HttpPost]
-        public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
+        public Dictionary< string, object > DrillTreeMap(Dictionary< string, object > jsonResult)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
@@ -268,7 +268,7 @@ namespace OlapClientDemo
             }
             [System.Web.Http.ActionName("DrillGrid")]
             [System.Web.Http.HttpPost]
-         public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
+         public Dictionary< string, object > DrillGrid(Dictionary< string, object > jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));

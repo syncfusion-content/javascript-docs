@@ -14,7 +14,7 @@ In Cube Dimension Browser, treeview can be viewed in a filtered manner through t
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     enableMeasureGroups: true
 });

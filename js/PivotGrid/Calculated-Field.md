@@ -31,7 +31,7 @@ Calculated Field can be created at code-behind by defining formula based on the 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
         dataSource: {
-            data: pivot_dataset,
+            data: pivotData,
             rows: [
                    {
                      fieldName: "Country",
@@ -56,7 +56,8 @@ $(function() {
                     formula: "Amount*15"
                  }
              ]
-         }
+         }, 
+         enableGroupingBar: true
     });
 });
 

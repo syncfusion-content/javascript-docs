@@ -39,7 +39,9 @@ The appearance of the range can be customized through the following properties.
 * **placement** – sets the position of the range.
 * **distanceFromScale** – sets the distance between the range and scale.
 
-Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
+Positioning the range could be set either through `placement` or `distanceFromScale` property. 
+
+N> By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
 {% highlight javascript %}
 
