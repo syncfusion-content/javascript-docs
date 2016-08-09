@@ -12,7 +12,7 @@ The Spreadsheet control is a Microsoft Excel-like Spreadsheet component for web.
 
 **Key** **Features**
 
-The key features of Spreadsheet control for JavaScript are:
+The key features of Spreadsheet control for JavaScript are:
 
 * **Editing** - Provides support to edit the cell content.
 * **Sorting** - Helps you to visualize and figure out your data better, organize and find the data quickly that you want.
