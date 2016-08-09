@@ -16,19 +16,32 @@ Worksheet is a collection of cells organized in the form of rows and columns tha
 You can perform following operations in Worksheet,
 
 * Add
+* Copy
+* Move
 * Remove
 * Rename
-* Move and Copy
 
 ### Add
 
-The Spreadsheet has support for inserting new sheet. You can dynamically insert sheet by one of the following ways,
+The Spreadsheet has support for inserting new sheet. You can insert a sheet in two ways.
+
+* Add a new sheet as a last sheet.
+* Insert a new sheet before the active sheet.
+
+#### Add Sheet
+
+You can dynamically add a sheet by one of the following ways,
 
 * Click the New sheet button in the spreadsheet sheet tab.
+* Using [`addNewSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:addnewsheet "addNewSheet") method.
+
+#### Insert Sheet
+
+You can dynamically insert a sheet by one of the following ways,
+
 * Right clicking on the worksheet in the sheet tab and then click Insert option in the context menu.
 * Click OTHERS tab in the ribbon and select Insert Sheet option in Insert dropdown button.
-
-You can also add new sheet using [`addNewSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:addnewsheet "addNewSheet") method.
+* Using [`insertSheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:insertsheet "insertSheet") method.
 
 The following code example describes the above behavior.
 
@@ -44,13 +57,73 @@ $(function () {
     });
 });
 function loadComplete(args) {          
-    if(!this.isImport)
-        this.addNewSheet();
+    if(!this.isImport) {
+        this.addNewSheet(); //To add as a last sheet.
+        //this.insertSheet(); // To insert a sheet before the active sheet.
+    }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 ![](Worksheet_images/Worksheet_img1.png)
+
+### Copy
+
+The Spreadsheet provides support to create a copy of an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
+
+* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Check the “Create a copy” checkbox in the “Move or Copy” dialog.
+* Copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                        
+        sheetCount: 3,
+        loadComplete: "loadComplete"               
+    });
+});
+function loadComplete(args) {          
+    if (!this.isImport)
+        this.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Worksheet_images/Worksheet_img5.png)
+
+### Move
+
+The Spreadsheet provides support to move an existing worksheet. You can dynamically move a worksheet by using one of the following ways,
+
+* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Select the sheet that you have to move in the “Move or Copy” dialog.
+* Move an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({                                        
+        sheetCount: 3,
+        loadComplete: "loadComplete"               
+    });
+});
+function loadComplete(args) {          
+    if (!this.isImport)
+        this.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Worksheet_images/Worksheet_img4.png)
 
 ### Remove
 
@@ -99,7 +172,8 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({                                                       
-        loadComplete: "loadComplete"               
+        loadComplete: "loadComplete",
+        sheetCount: 2              
     });
 });
 function loadComplete(args) {          
@@ -110,64 +184,6 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 ![](Worksheet_images/Worksheet_img3.png)
-
-### Move
-
-The Spreadsheet provides support to move an existing worksheet. You can dynamically move a worksheet by using one of the following ways,
-
-* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Select the sheet that you have to move in the “Move or Copy” dialog.
-* Move an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
-
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="Spreadsheet"></div> 
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({                                        
-        sheetCount: 3,
-        loadComplete: "loadComplete"               
-    });
-});
-function loadComplete(args) {          
-    if (!this.isImport)
-        this.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img4.png)
-
-### Copy
-
-The Spreadsheet provides support to create a copy of an existing worksheet. You can dynamically copy a worksheet by using one of the following ways,
-
-* Right clicking on the worksheet in the sheet tab and then click Move or Copy in the context menu. Check the “Create a copy” checkbox in the “Move or Copy” dialog.
-* Copy an existing worksheet using [`copySheet`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:copysheet "copySheet") method.
-
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="Spreadsheet"></div> 
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({                                        
-        sheetCount: 3,
-        loadComplete: "loadComplete"               
-    });
-});
-function loadComplete(args) {          
-    if (!this.isImport)
-        this.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img5.png)
 
 ## Headers
 
