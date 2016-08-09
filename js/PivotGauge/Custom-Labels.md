@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Custom Label Collection
 
-Custom label collection can be directly added to the scales option within the PivotGauge widget as an array.
+`customLabels` collection can be directly added to the scales option within the PivotGauge widget as an array.
 
 {% highlight javascript %}
 

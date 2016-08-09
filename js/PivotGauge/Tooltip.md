@@ -9,7 +9,9 @@ documentation: ug
 
 # Tooltip
 
-Tooltip can be enabled by using the [`enableTooltip`](/js/api/ejpivotgauge#members:enabletooltip) property. By default, this property is set to "false".
+Tooltip can be enabled by using the [`enableTooltip`](/js/api/ejpivotgauge#members:enabletooltip) property. 
+
+N> By default, this property is set to "false".
 
 {% highlight javascript %}
 

@@ -76,7 +76,9 @@ The appearance of the Label can be customized through the following properties.
 
 ## Unit Text
 
-The `unitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `unitTextPosition` property, the text can be positioned either in front or back. By default, text appears at the back.
+The `unitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `unitTextPosition` property, the text can be positioned either in front or back. 
+
+N> By default, text appears at the back.
 
 {% highlight javascript %}
 

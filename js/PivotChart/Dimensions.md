@@ -15,16 +15,25 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 {% highlight javascript %}
 
-$(function () {
-    $("#PivotChart1").ejPivotChart(
-       ....
-       //Setting size to Chart container
-       size: {
-         height: "80%",
-         width: "80%"
-       }
-    });
-});
+<body>
+    <div id="PivotChart1" style="width: 100%; height: 450px" ></div>
+    <script type="text/javascript">
+                //Datasource
+                ....
+                ....
+        $(function () {
+            $("#PivotChart1").ejPivotChart({
+                ....
+                ....
+                //Setting size to Chart container
+                size: {
+                    height: "80%",
+                    width: "80%"
+               }
+            });
+        });
+    </script>
+</body>
 
 {% endhighlight %}
 
@@ -34,19 +43,25 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 {% highlight javascript %}
 
-$(function()
-{
-    $("#PivotChart1").ejPivotChart(
-    {
-        ....
-        //Setting size to Chart container
-        size:
-        {
-            height: "460px",
-            width: "950px"
-        }
-    });
-});
+<body>
+    <div id="PivotChart1" style="width: 950px; height: 460px" ></div>
+    <script type="text/javascript">
+                //Datasource
+                ....
+                ....
+        $(function () {
+            $("#PivotChart1").ejPivotChart({
+                ....
+                ....
+                //Setting size to Chart container
+                size: {
+                    height: "460px",
+                    width: "950px"
+               }
+            });
+        });
+    </script>
+</body>
 
 {% endhighlight %}
 
@@ -58,17 +73,26 @@ PivotChart widget supports responsive rendering based on the target device (desk
 
 {% highlight javascript %}
 
-$(function () {
-    $("#PivotChart1").ejPivotChart(
-       .... 
-       //Enable responsiveness to change the Chart size dynamically.
-       isResponsive: true,
-       size: {
-         height: "460px",
-         width: "950px"
-       }
-    });
-});
+<body>
+    <div id="PivotChart1" style="min-width: 950px; min-height: 460px" ></div>
+    <script type="text/javascript">
+                //Datasource
+                ....
+                ....
+        $(function () {
+            $("#PivotChart1").ejPivotChart({
+                ....
+                ....
+                //Enable responsiveness to change the Chart size dynamically.
+                isResponsive: true,	
+                size: {
+                    height: "460px",
+                    width: "950px"
+               }
+            });
+        });
+    </script>
+</body>
 
 {% endhighlight %}
 

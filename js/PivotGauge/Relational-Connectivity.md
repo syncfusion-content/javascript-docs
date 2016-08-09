@@ -240,6 +240,9 @@ Secondly, you need to elaborate the service methods inside the main class, found
                 return pivotSetting;
             }
         }
+        .....
+        ..... // Datasource initialization
+        .....
     }
 {% endhighlight %}
 

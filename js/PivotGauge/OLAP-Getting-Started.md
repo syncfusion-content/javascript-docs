@@ -17,7 +17,7 @@ This section covers the information required to populate a simple PivotGauge wit
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGauge widget which are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 5. ej.web.all.min.js
@@ -196,7 +196,7 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotGauge widget inside a HTML page are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -480,7 +480,7 @@ Now, PivotGauge will be rendered with the provided data as shown below.
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
 
 
 
