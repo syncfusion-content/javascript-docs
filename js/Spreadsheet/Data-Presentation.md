@@ -90,29 +90,15 @@ You can create the Chart by one of the following ways,
 
 You can perform the following customizations for chart. These are available in DESIGN Tab which is enabled while clicking the chart element.
 
-#### Add Chart Elements
-
-You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.
-
-#### Switch Row/Column
-
-You can switch the row of the chart to column of the chart and vice versa.
-
-#### Select Data
-
-You can modify the data source of Chart.
-
-#### Chart Type
-
-You can change the type of the chart using Chart Type dialog.
-
-#### Height and Width
-
-You can change the height and width of the chart.
-
-#### Chart Themes
-
-You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.
+<table>
+    <tr><th>Title</br></th><th>Description</br></th></tr>
+    <tr><td>Add Chart Elements</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
+    <tr><td>Switch Row/Column</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
+    <tr><td>Select Data</br></td><td>You can modify the data source of Chart.</br></td></tr>
+    <tr><td>Chart Type</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
+    <tr><td>Height and Width</br></td><td>You can change the height and width of the chart.</br></td></tr>
+    <tr><td>Chart Themes</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
+</table>
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -244,7 +230,7 @@ You have following options in Filtering.
 
 ### Filter by Value
 
-You can perform filtering by using number, string and date. The filtered rows are only visible in the Spreadsheet. All the other rows within the filtered range were hidden.
+You can perform filtering by using number, string. The filtered rows are only visible in the Spreadsheet. All the other rows within the filtered range were hidden.
 
 You can do this by one of the following ways,
 
@@ -282,8 +268,9 @@ The following output is displayed as a result of the above code example.
 
 ### Filter by Color
 
-You can perform filtering by the selected cell color or font color. The filtered rows are only visible in the Spreadsheet. All the other rows within the filtered range were hidden. This option is only available if the selected range of cells having any color.
-You can do this by clicking "Filter by Color" option in filter dialog to select filter by cell color or font color.
+You can perform filtering by the selected cell color or font color. The filtered rows are only visible in the Spreadsheet. You can do this by clicking "Filter by Color" option in filter dialog to select filter by cell color or font color.
+
+N> This option is only available if the selected range of cells having any color.
 
 ### Clear Filter
 
@@ -334,21 +321,13 @@ You can insert a picture by selecting the "Pictures" button under Illustrations 
 
 You can perform the following customizations for picture. These are available in DESIGN Tab which is enabled while clicking the picture element.
 
-#### Change Picture
-
-You can change the picture with existing picture.
-
-#### Reset Picture
-
-You can reset the changes done in the picture such as border changes, height and width changes.
-
-#### Picture Border
-
-You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border. 
-
-#### Height and Width
-
-You can change the height and width of the picture.
+<table>
+    <tr><th>Title</br></th><th>Description</br></th></tr>
+    <tr><td>Change Picture</br></td><td>You can change the picture with existing picture.</br></td></tr>
+    <tr><td>Reset Picture</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
+    <tr><td>Picture Border</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
+    <tr><td>Height and Width</br></td><td>You can change the height and width of the picture.</br></td></tr>
+</table>
 
 ## Pivot Table
 
@@ -396,7 +375,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sorting
 
-Sorting helps you to arrange the data in a particular order to a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
+Sorting helps you to arrange the data to particular order in a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
 
 You have following options in sorting.
 
@@ -467,35 +446,21 @@ You can do this by one of the following ways,
 
 * Using "Format As Table" under Styles group of HOME Tab in ribbon.
 * Using Table option under Tables group of INSERT Tab in ribbon.
-* Using [`createTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and "[`removeTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-removetable "removeTable")" to delete a table.
+* Using [`createTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and [`removeTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-removetable "removeTable") to delete a table.
 
 ### Table Customization
 
 You can perform the following customizations for table. These are available in DESIGN Tab which is enabled while clicking the table.
 
-#### Resize Table
-
-You can resize the table only to increase row count.
-
-#### Convert to Range
-
-You can remove the table using this option.
-
-#### First Column
-
-You can highlight the first column of the table.
-
-#### Last Column
-
-You can highlight the last column of the table.
-
-#### Total Row
-
-You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.
-
-#### Filter Button
-
-You can able to hide or unhide the filter icons in the filter header of a table.
+<table>
+    <tr><th>Title</br></th><th>Description</br></th></tr>
+    <tr><td>Resize Table</br></td><td>You can resize the table only to increase row count.</br></td></tr>
+    <tr><td>Convert to Range</br></td><td>You can remove the table using this option.</br></td></tr>
+    <tr><td>First Column</br></td><td>You can highlight the first column of the table.</br></td></tr>
+    <tr><td>Last Column</br></td><td>You can highlight the last column of the table.</br></td></tr>
+    <tr><td>Total Row</br></td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</br></td></tr>
+    <tr><td>Filter Button</br></td><td>You can able to hide or unhide the filter icons in the filter header of a table.</br></td></tr>
+</table>
 
 The following code example describes the above behavior.
 {% highlight html %}
