@@ -267,10 +267,10 @@ To enable or disable the column expand /collapse.
     <div id="Kanban"></div>
     <script type="text/javascript">
     window.kanbandata = [
-        { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-        { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-        { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-        { Id: 4, Status: "Testing", Text: "Task4", Assignee: "Nancy" }
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -287,7 +287,7 @@ To enable or disable the column expand /collapse.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Text",
+                    content: "Summary",
                 },
             });
     });
@@ -3330,7 +3330,7 @@ Priority field has been mapped data source field to maintain card priority
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                Priority: "RankId",
+                priority: "RankId",
                 content: "Summary",
             },
         });
@@ -4265,7 +4265,7 @@ To customize the searching behavior of the Kanban.
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -4800,10 +4800,6 @@ To enable or disable the tooltip display.
                 fields: {
                     primaryKey: "Id",
                     content: "Summary",
-                },
-                fields: {
-                    primaryKey: "Id",
-                    content: "Text",
                     title: "Id",
                     tag: "Tags",
                     color: "Type",
@@ -5817,7 +5813,7 @@ Update a card in Kanban control based on key and JSON data given.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a update card request to the Kanban
-    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Text: "Task 1", Assignee: "Andrew Piller");
+    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew Piller");
     </script>
     
 {% endhighlight %}
@@ -5865,12 +5861,11 @@ Add a new card in Kanban control.If parameters are not given default dialog will
     
 {% endhighlight %}
 
-
 {% highlight html %}
  
     <script>
     // add new card to the Kanban
-     kanbanObj.KanbanEdit.addCard("2",{Id:2, Status: "Open", Text: "Task 1", Assignee: "Nancy" })     
+     kanbanObj.KanbanEdit.addCard("2",{Id:2, Status: "Open", Summary: "Task 1", Assignee: "Nancy" })     
     </script>
     
 {% endhighlight %}
@@ -6055,7 +6050,7 @@ Method used for set validation to a field during editing.
      // Create Kanban object.
      var kanbanObj = $("#Kanban").data("ejKanban");
      // It is used to set validation to a field during editing
-     kanbanObj.KanbanEdit.setValidationToField("Id", { required: true }); 
+     kanbanObj.KanbanEdit.setValidationToField("Summary", { required: true }); 
      </script>
      
 {% endhighlight %}
@@ -6064,7 +6059,7 @@ Method used for set validation to a field during editing.
  
     <script>
     // It is used to set validation to a field during editing
-    $("#Kanban").ejKanban("setValidationToField", "Id", { required: true });
+    $("#Kanban").ejKanban("setValidationToField", "Summary", { required: true });
     </script>
     
 {% endhighlight %} 
