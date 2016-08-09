@@ -15,7 +15,7 @@ The users with Essential Studio Enterprise license or Essential Studio for JavaS
 
 Log into the [portal](http://csg.syncfusion.com/) with your DirectTrac credentials. The Custom Script Generator Utility options within the **Desktop** tab will be displayed as shown below,
 
-![](js/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img1.png)
+![](/js/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img1.png)
 
 Custom Script Generator utility options
 {:.caption}
