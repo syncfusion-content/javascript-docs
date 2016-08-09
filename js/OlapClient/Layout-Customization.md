@@ -17,7 +17,7 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab
@@ -34,7 +34,7 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         controlPlacement: ej.olap.OlapClient.ControlPlacement.Tile
@@ -53,7 +53,7 @@ To display Grid control by default, set [`defaultView`](/js/api/ejolapclient#mem
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         defaultView: ej.olap.OlapClient.DefaultView.Grid
@@ -70,7 +70,7 @@ To display Chart control by default, set the property [`defaultView`](/js/api/ej
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         defaultView: ej.olap.OlapClient.DefaultView.Chart
@@ -89,7 +89,7 @@ After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) pr
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         mode: ej.olap.OlapClient.DisplayMode.GridOnly
@@ -106,7 +106,7 @@ After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) pr
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         mode: ej.olap.OlapClient.DisplayMode.ChartOnly
@@ -123,7 +123,7 @@ After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) pr
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         mode: ej.olap.OlapClient.DisplayMode.ChartAndGrid
@@ -140,7 +140,7 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         enableTogglePanel: true
@@ -157,7 +157,7 @@ Full screen view helps to visualize the PivotGrid and OlapChart controls inside 
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     displaySettings: {
         enableFullScreen: true
@@ -185,7 +185,7 @@ The layout is set using the [`gridLayout`](/js/api/ejolapclient#members:gridlayo
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     gridLayout: ej.PivotGrid.Layout.NoSummaries
 });
@@ -200,7 +200,7 @@ While loading the OlapClient initially, the OlapChart widget can be rendered in 
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     chartType: ej.olap.OlapChart.ChartTypes.Area
 });

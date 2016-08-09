@@ -16,7 +16,12 @@ PivotGauge pointers has two types namely,
 * Needle
 * Marker
 
-Needle type pointers are the default pointers which is always located at the center of the Gauge. There are 5 different shapes for the needle pointers which are rectangle, triangle, trapezoid, arrow and image.
+Needle type pointers are the default pointers which is always located at the center of the Gauge. Following shapes that are supported for the needle pointers are:
+* rectangle
+* triangle
+* trapezoid
+* arrow
+* image.
 
 {% highlight javascript %}
 

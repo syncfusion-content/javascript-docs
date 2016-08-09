@@ -32,10 +32,13 @@ In-order to initialize PivotTable Field List, first you need to define a â€œdivâ
     <div id="PivotSchemaDesigner1" style="height:650px;width:40%;"></div>
 
     <script type="text/javascript">
+
+    // Datasource
+
       $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
-                data: pivot_dataset,
+                data: pivotData,
                 rows: [{
                     fieldName: "Country",
                     fieldCaption: "Country"
@@ -64,7 +67,7 @@ In-order to initialize PivotTable Field List, first you need to define a â€œdivâ
     });
 
     function RenderFieldList(args) {
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner({
+        $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
             pivotControl: args,
             layout: ej.PivotSchemaDesigner.Layouts.Excel
         });
@@ -98,7 +101,7 @@ In-order to initialize PivotTable Field List, first you need to define a â€œdivâ
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../RelationalService",
+                url: "/RelationalService",
                 afterServiceInvoke: "onServiceInvokes"
             });
         });

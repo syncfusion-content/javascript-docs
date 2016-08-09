@@ -17,7 +17,7 @@ This section covers the information required to populate a simple PivotChart wit
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotChart widget which are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -39,7 +39,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotChart 
         </head>
         <body>
             <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1"></div>
+            <div id="PivotChart1" style="width: 800px; height: 350px"></div>
             <script type="text/javascript">
                 $(function () {
                     //Set properties and initialize ejPivotChart widget.
@@ -61,7 +61,7 @@ Initialize the OLAP datasource for PivotChart widget as shown below.
         //....
 
         <body>
-            <div id="PivotChart1"></div>
+            <div id="PivotChart1" style="width: 800px; height: 350px"></div>
             <script type="text/javascript">
                 $(function() {
                     $("#PivotChart1").ejPivotChart({
@@ -143,7 +143,7 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
 
         <body>
             <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1"> </div>
+            <div id="PivotChart1" style="width: 800px; height: 350px"> </div>
             <script type="text/javascript">
                 //Set properties and initialize ejPivotChart widget.
                 $(function() {
@@ -164,6 +164,28 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
 The “url” property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used for the PivotChart widget as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/OlapChart”**. Suppose if you are using WCF service then the URL would look like **"/OlapChartService.svc"**. 
+
+Register the referenced assemblies in Web.config file available at the root of the application.
+
+{% highlight xml %}
+
+<compilation debug="true" targetFramework="4.5.1">
+    <assemblies> 
+        …… 
+        ……
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+    </assemblies>
+</compilation>
+
+{% endhighlight %}
 
 ### WebAPI
 
