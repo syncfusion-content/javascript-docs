@@ -1663,6 +1663,7 @@ Shows/hides the toolbar.
         $("#treegrid").ejTreeGrid({ showToolBar:  true });                       
 
 {% endhighlight %}
+
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
