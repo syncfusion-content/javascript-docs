@@ -172,10 +172,10 @@ namespace PivotTreeMapDemo
     public interface IPivotTreeMapService
     {
         [OperationContract]
-        Dictionary<string, object> InitializeTreeMap(string action, string currentReport, string customObject);
+        Dictionary< string, object > InitializeTreeMap(string action, string currentReport, string customObject);
 
         [OperationContract]
-        Dictionary<string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string customObject);
+        Dictionary< string, object > DrillTreeMap(string action, string drillInfo, string olapReport, string customObject);
     }
 }
 

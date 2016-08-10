@@ -296,7 +296,7 @@ namespace PivotGridDemo
          public Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
+            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
             return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
         }
 

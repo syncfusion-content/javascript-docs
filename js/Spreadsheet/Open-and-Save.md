@@ -64,7 +64,7 @@ You can open excel documents in following ways,
 ### Initial settings
 
 The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set excel file URL in [`importSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings "importSettings") [`importUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "importUrl"). The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set [`importUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "importUrl") as excel file URL in [`importSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings "importSettings"). The code snippets for document initial load on client side are as follows,
 
 {% highlight html %}
 
@@ -300,6 +300,9 @@ public class JSXLExportController : ApiController
 }
 
 {% endhighlight %}
+
+N> To export as `Stream` skip file name parameter in `Save` method. For more details refer below code snippets,<br>
+   Stream stream = Spreadsheet.Save(sheetModel, sheetData, ExportFormat.XLSX, ExcelVersion.Excel2013);
 
 ### Server dependencies
 

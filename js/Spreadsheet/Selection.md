@@ -46,6 +46,7 @@ $(function () {
 
 function loadComplete() {
     this.XLSelection.selectRange("A1:C3");
+    this.XLDragFill.positionAutoFillElement();
 }
 </script>
 
@@ -72,6 +73,7 @@ $(function () {
 
 function loadComplete() {
     this.XLSelection.selectRows(0,2);
+    this.XLDragFill.positionAutoFillElement();
 }
 </script>
 
@@ -100,6 +102,7 @@ $(function () {
 
 function loadComplete() {
     this.XLSelection.selectColumns(0,2);
+    this.XLDragFill.positionAutoFillElement();
 }
 </script>
 
@@ -126,7 +129,7 @@ $(function () {
     });
 });
 function loadComplete() {
-    this.XLSelection.selectSheet();
+    this.XLSelection.selectSheet();    
 }
 </script>
 

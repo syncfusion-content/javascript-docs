@@ -38,7 +38,7 @@ $(function() {
         rowHeaderHyperlinkClick: "CellClickEvent",
         columnHeaderHyperlinkClick: "CellClickEvent",
         summaryCellHyperlinkClick: "CellClickEvent",
-       url: "../OLAPService",
+       url: "/OLAPService",
         layout: ej.PivotGrid.Layout.Normal
     });
 
@@ -60,7 +60,7 @@ The **"cellSelection"** event would be triggered as soon as the selection proces
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../OLAPService",
+        url: "/OLAPService",
         enableCellSelection: true,
         cellSelection: "valueCellClick"
     });
@@ -86,7 +86,7 @@ Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-       url: "../OLAPService",
+       url: "/OLAPService",
         enableCellContext: true,
         cellContext: "cell_RightClick"
     });
@@ -115,7 +115,7 @@ Conditional formatting is enabled by setting `enableConditionalFormatting` prope
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                url: "../OLAPService",
+                url: "/OLAPService",
                 enableConditionalFormatting: true
             });
             $("#Button1").ejButton({

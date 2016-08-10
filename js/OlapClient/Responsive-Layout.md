@@ -14,7 +14,7 @@ OlapClient widget supports responsive rendering based on the target device (desk
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     isResponsive: true
 });

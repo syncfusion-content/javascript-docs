@@ -16,7 +16,7 @@ On resizing the browser, the PivotTable Field list will get collapse and an icon
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-             url: "../OLAPService",
+             url: "/OLAPService",
         isResponsive: true
     });
 });
