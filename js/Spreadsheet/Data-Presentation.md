@@ -91,6 +91,7 @@ You can create the Chart by one of the following ways,
 You can perform the following customizations for chart. These are available in DESIGN Tab which is enabled while clicking the chart element.
 
 <table>
+    <colgroup><col width="180px" /></colgroup>
     <tr><th>Feature</br></th><th>Description</br></th></tr>
     <tr><td>Add Chart Elements</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
     <tr><td>Switch Row/Column</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
@@ -322,6 +323,7 @@ You can insert a picture by selecting the "Pictures" button under Illustrations 
 You can perform the following customizations for picture. These are available in DESIGN Tab which is enabled while clicking the picture element.
 
 <table>
+    <colgroup><col width="150px" /></colgroup>
     <tr><th>Feature</br></th><th>Description</br></th></tr>
     <tr><td>Change Picture</br></td><td>You can change the picture with existing picture.</br></td></tr>
     <tr><td>Reset Picture</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
@@ -453,6 +455,7 @@ You can do this by one of the following ways,
 You can perform the following customizations for table. These are available in DESIGN Tab which is enabled while clicking the table.
 
 <table>
+    <colgroup><col width="150px" /></colgroup>
     <tr><th>Feature</br></th><th>Description</br></th></tr>
     <tr><td>Resize Table</br></td><td>You can resize the table only to increase row count.</br></td></tr>
     <tr><td>Convert to Range</br></td><td>You can remove the table using this option.</br></td></tr>
