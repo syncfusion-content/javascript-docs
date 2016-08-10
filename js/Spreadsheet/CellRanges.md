@@ -76,6 +76,7 @@ Cell navigation is used to navigate through the cells using keyboard. You can us
 N> In the below table, first cell and last cell is based on the used range.
 
 <table>
+<colgroup><col width="180px" /></colgroup>
 <tr><th>Keys<br/></th><th>Description<br/></th></tr>
 <tr><td>Ctrl + Home<br/></td><td>Go to first cell in the first row.<br/></td></tr>
 <tr><td>Ctrl + End<br/></td><td>Go to last cell in the last row.<br/></td></tr>
