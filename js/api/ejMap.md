@@ -14,7 +14,7 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 #### Syntax
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(element).ejMap();
 
@@ -65,7 +65,7 @@ Specifies the background color for map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set background API value during initialization 
   $("#container").ejMap({background:'white'});
@@ -73,7 +73,7 @@ Specifies the background color for map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the background API, after initialization:
 
@@ -99,7 +99,7 @@ Specifies the index of the map to determine the shape layer to be displayed
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set baseMapIndex API value during initialization 
   $("#container").ejMap({baseMapIndex:0});
@@ -107,7 +107,7 @@ Specifies the index of the map to determine the shape layer to be displayed
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the baseMapIndex API, after initialization:
 
@@ -133,7 +133,7 @@ Specify the center position where map should be displayed
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the centerPosition during initialization.                        
    $("#container").ejMap({centerPosition: [38.5000, -98]});
@@ -141,7 +141,7 @@ Specify the center position where map should be displayed
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the centerPosition after initialization:
 
@@ -167,7 +167,7 @@ Enables or Disables the map animation
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableAnimation API value during initialization 
    $("#container").ejMap({enableAnimation:true});  
@@ -175,7 +175,7 @@ Enables or Disables the map animation
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableAnimation API, after initialization:
    
@@ -202,7 +202,7 @@ Enables or Disables the animation for layer change in map
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableLayerChangeAnimation API value during initialization 
    $("#container").ejMap({enableLayerChangeAnimation:true});       
@@ -210,7 +210,7 @@ Enables or Disables the animation for layer change in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableLayerChangeAnimation API, after initialization:
 
@@ -236,7 +236,7 @@ Enables or Disables the map panning
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enablePan API value during initialization 
    $("#container").ejMap({enablePan:true});        
@@ -244,7 +244,7 @@ Enables or Disables the map panning
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enablePan API, after initialization:
  
@@ -270,7 +270,7 @@ Determines whether map need to resize when container is resized
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableResize API value during initialization 
    $("#container").ejMap({enableResize:true});     
@@ -278,7 +278,7 @@ Determines whether map need to resize when container is resized
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableResize API, after initialization:
    
@@ -309,7 +309,7 @@ Enables or Disables the zooming of map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableZoom API value during initialization 
    $("#container").ejMap({zoomSettings:{enableZoom:true}});           
@@ -317,7 +317,7 @@ Enables or Disables the zooming of map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableZoom API, after initialization:
 
@@ -343,7 +343,7 @@ Enables or Disables the zoom on selecting the map shape
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableZoomOnSelection API value during initialization 
    $("#container").ejMap({zoomSettings:{enableZoomOnSelection:true}});
@@ -351,7 +351,7 @@ Enables or Disables the zoom on selecting the map shape
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableZoomOnSelection API, after initialization:
 
@@ -377,7 +377,7 @@ Specifies the zoom factor for map zoom value.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set zoomFactor API value during initialization 
   $("#container").ejMap({zoomSettings:{factor:1}});
@@ -385,7 +385,7 @@ Specifies the zoom factor for map zoom value.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the zoomFactor API, after initialization:
    
@@ -411,7 +411,7 @@ Specifies the zoom level value for which map to be zoomed
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set zoomLevel API value during initialization 
   $("#container").ejMap({zoomSettings:{level:1}});
@@ -419,7 +419,7 @@ Specifies the zoom level value for which map to be zoomed
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the zoomLevel API, after initialization:
    //Gets the zoomLevel value
@@ -444,7 +444,7 @@ Specifies the minimum zoomSettings level of the map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set minValue API value during initialization 
   $("#container").ejMap({zoomSettings:{minValue:1}});
@@ -452,7 +452,7 @@ Specifies the minimum zoomSettings level of the map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the minValue API, after initialization:
    
@@ -478,7 +478,7 @@ Specifies the maximum zoom level of the map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set maxValue API value during initialization 
   $("#container").ejMap({zoomSettings:{maxValue:100}});
@@ -486,7 +486,7 @@ Specifies the maximum zoom level of the map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the maxValue API, after initialization:
    
@@ -519,7 +519,7 @@ Set the absolutePosition for navigation control
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set absolutePosition API value during initialization 
    $("#container").ejMap(navigationControl:{absolutePosition:{x:5,y:20}});
@@ -527,7 +527,7 @@ Set the absolutePosition for navigation control
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the absolutePosition, after initialization:
    
@@ -553,7 +553,7 @@ Specifies the navigation control template for map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set navigation control template for map during initialization 
    $("#container").ejMap(navigationControl:{content:null});
@@ -561,7 +561,7 @@ Specifies the navigation control template for map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
 
 //Get or set the navigation control template for map, after initialization:
 
@@ -639,7 +639,7 @@ Set the dockPosition value for navigation control
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set dockPosition value during initialization 
    $("#container").ejMap(navigationControl:{dockPosition:'centerleft'});
@@ -647,7 +647,7 @@ Set the dockPosition value for navigation control
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the dockPosition value, after initialization:
    
@@ -673,7 +673,7 @@ Enables or Disables the Navigation for handling zooming map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableNavigation API value during initialization 
    $("#container").ejMap(navigationControl:{enableNavigation:false});
@@ -681,7 +681,7 @@ Enables or Disables the Navigation for handling zooming map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableNavigation, after initialization:
    
@@ -728,7 +728,7 @@ Set the orientation value for navigation control
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set orientation value during initialization 
    $("#container").ejMap(navigationControl:{orientation:'vertical'});
@@ -736,7 +736,7 @@ Set the orientation value for navigation control
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the orientation value, after initialization:
    
@@ -793,7 +793,7 @@ to get the type of bing map.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the type of bing map during initialization.                      
    $("#container").ejMap({layers: [{ bingMapType:'aerial' }]})
@@ -801,7 +801,7 @@ to get the type of bing map.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the type of bing map after initialization:
 
@@ -823,7 +823,7 @@ Specifies the bubble settings for map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 // Set the bubbleSettings of layer during initialization.                       
    $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },bubbleSettings:{ valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64",}, shapeData: mapShapeData }]})
@@ -831,7 +831,7 @@ Specifies the bubble settings for map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the bubbleSettings after initialization:
   
@@ -857,7 +857,7 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set bubbleOpacity API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {bubbleOpacity:'0.9'}}});
@@ -865,7 +865,7 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the bubbleOpacity API, after initialization:
 
@@ -891,7 +891,7 @@ Specifies the mouse hover color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set color API value during initialization 
    $("#container").ejMap({layers:{bubbleSettings: {color:'gray'}}});
@@ -899,7 +899,7 @@ Specifies the mouse hover color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the color API, after initialization:
    
@@ -924,7 +924,7 @@ Specifies the colorMappings of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorMappings API value during initialization 
   $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});
@@ -932,7 +932,7 @@ Specifies the colorMappings of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorMappings API, after initialization:
    
@@ -958,7 +958,7 @@ Specifies the bubble color valuePath of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorValuePath  API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {colorValuePath :'sales'}}});
@@ -966,7 +966,7 @@ Specifies the bubble color valuePath of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorValuePath  API, after initialization:
    //Gets the colorValuePath  value 
@@ -990,7 +990,7 @@ Specifies the maximum size value of bubbles for shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set maxValue API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {maxValue:'20'}}});
@@ -998,7 +998,7 @@ Specifies the maximum size value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the maxValue API, after initialization:
    
@@ -1024,7 +1024,7 @@ Specifies the minimum size value of bubbles for shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set minValue API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {minValue:'10'}}});
@@ -1032,7 +1032,7 @@ Specifies the minimum size value of bubbles for shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the minValue API, after initialization:
    
@@ -1058,7 +1058,7 @@ Specifies the showBubble visibility status map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showBubble API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {showBubble:true}}});
@@ -1066,7 +1066,7 @@ Specifies the showBubble visibility status map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showBubble API, after initialization:
    
@@ -1092,7 +1092,7 @@ Specifies the tooltip visibility status of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showTooltip API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {showTooltip:false}}});
@@ -1100,7 +1100,7 @@ Specifies the tooltip visibility status of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showTooltip API, after initialization:
    
@@ -1126,7 +1126,7 @@ Specifies the bubble tooltip template of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set tooltipTemplate API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {tooltipTemplate:'template'}}});
@@ -1134,7 +1134,7 @@ Specifies the bubble tooltip template of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the tooltipTemplate API, after initialization:
    
@@ -1160,7 +1160,7 @@ Specifies the bubble valuePath of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set valuePath API value during initialization 
   $("#container").ejMap({layers: {bubbleSettings: {valuePath:'name'}}});
@@ -1168,7 +1168,7 @@ Specifies the bubble valuePath of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the valuePath API, after initialization:
    
@@ -1190,7 +1190,7 @@ Specifies the datasource for the shape layer
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the dataSource of layer during initialization.                        
    $("#container").ejMap({layers: [{ layerType: "geometry", dataSource: source,  shapeData: mapShapeData }]})
@@ -1198,7 +1198,7 @@ Specifies the datasource for the shape layer
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the dataSource after initialization:
    
@@ -1221,7 +1221,7 @@ Specifies the data path of shape
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the shapeDataPath of layer during initialization.                        
    $("#container").ejMap({layers: [{ shapeDataPath: "name"}]})
@@ -1229,7 +1229,7 @@ Specifies the data path of shape
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the shapeDataPath after initialization:
    
@@ -1252,7 +1252,7 @@ Specifies the data path of shape
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the shapePropertyPath of layer during initialization.                        
    $("#container").ejMap({layers: [{ shapePropertyPath: "name"}]})
@@ -1260,7 +1260,7 @@ Specifies the data path of shape
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the shapePropertyPath after initialization:
    
@@ -1286,13 +1286,13 @@ Enables or disables the shape mouse hover
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the enableMouseHover during initialization.                      
    $("#container").ejMap({layers: [{ enableMouseHover:false }]}){% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableMouseHover after initialization:
    
@@ -1318,7 +1318,7 @@ Enables or disables the shape selection
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the enableSelection during initialization.                       
    $("#container").ejMap({layers: [{ enableSelection:true }]})
@@ -1326,7 +1326,7 @@ Enables or disables the shape selection
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableSelection after initialization:
    
@@ -1352,7 +1352,7 @@ to get the key of bing map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //to get the key of bing map during initialization 
    $("#container").ejMap({layers: [{  layerType: 'bing', key: "" }]})           
@@ -1360,7 +1360,7 @@ to get the key of bing map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the key of bing map after initialization:
    
@@ -1392,7 +1392,7 @@ enable or disable the enableSmartLabel property
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the enableSmartLabel value of layer during initialization.                    
    $("#container").ejMap({layers:[{labelSettings: { enableSmartLabel: false}}]})
@@ -1400,7 +1400,7 @@ enable or disable the enableSmartLabel property
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableSmartLabel value after initialization:
    
@@ -1427,7 +1427,7 @@ set the labelLength property
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the labelLength value of layer during initialization.                         
    $("#container").ejMap({layers:[{labelSettings: { labelLength: 2}}]})
@@ -1435,7 +1435,7 @@ set the labelLength property
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelLength value after initialization:
    
@@ -1464,7 +1464,7 @@ set the labelPath property
 {:.example}
 
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the labelPath value of layer during initialization.                   
    $("#container").ejMap({layers:[{labelSettings: { labelPath: ""}}]})
@@ -1472,7 +1472,7 @@ set the labelPath property
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelPath value after initialization:
    
@@ -1499,14 +1499,14 @@ The property specifies whether to show labels or not.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 // Set the showLabel value of layer during initialization.                   
    $("#container").ejMap({layers:[{labelSettings: { showLabels: false}}]})
         
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLabel value after initialization:
    
@@ -1553,14 +1553,14 @@ set the smartLabelSize property
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 // Set the smartLabelSize value of layer during initialization.                      
    $("#container").ejMap({layers:[{labelSettings: { smartLabelSize: 'fixed'}}]})
  
  {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the smartLabelSize value after initialization:
    
@@ -1611,14 +1611,14 @@ Specifies the map type.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the layerType during initialization.                     
    $("#container").ejMap({layers: [{ layerType:'geometry' }]})
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the layerType after initialization:
    
@@ -1650,7 +1650,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set dockOnMap API value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {dockOnMap:false} }]})           
@@ -1658,7 +1658,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the dockOnMap API, after initialization:
    
@@ -1713,7 +1713,7 @@ Determines the legend placement and it is valid only when dockOnMap is true
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set dockPosition value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {dockPosition:"top"} }]})           
@@ -1721,7 +1721,7 @@ Determines the legend placement and it is valid only when dockOnMap is true
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set dockPosition value after initialization:
   
@@ -1747,7 +1747,7 @@ height value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set height value for legend during initialization 
    $("#container").ejMap({layers: [{legendSettings: {height:20} }]})           
@@ -1755,7 +1755,7 @@ height value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the height value for legend, after initialization:
    
@@ -1803,7 +1803,7 @@ to get icon value for legend setting
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set icon value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {icon:"rectangle"} }]})           
@@ -1811,7 +1811,7 @@ to get icon value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set icon value after initialization:
    
@@ -1837,7 +1837,7 @@ icon height value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set iconHeight value for legend during initialization 
    $("#container").ejMap({layers: [{legendSettings: {iconHeight:20} }]})           
@@ -1845,7 +1845,7 @@ icon height value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the iconHeight value for legend, after initialization:
    
@@ -1872,14 +1872,14 @@ icon Width value for legend setting
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set iconWidth value for legend during initialization 
    $("#container").ejMap({layers: [{legendSettings: {iconWidth:20} }]})           
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the iconWidth value for legend, after initialization:
    
@@ -1926,7 +1926,7 @@ set the orientation of legend labels
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set label orientaion API value for legend setting during initialization 
    $("#container").ejMap({layers: [{legendSettings: {labelOrientation: "vertical"} }]})                      
@@ -1934,7 +1934,7 @@ set the orientation of legend labels
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the label orientation API, after initialization:
    
@@ -1960,7 +1960,7 @@ to get leftLabel value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set leftLabel value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {leftLabel:""} }]})           
@@ -1968,7 +1968,7 @@ to get leftLabel value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set leftLabel value after initialization:
    
@@ -2016,7 +2016,7 @@ to get mode of legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set legend mode during initialization 
    $("#container").ejMap({layers: [{legendSettings: {mode:"default"} }]})
@@ -2024,7 +2024,7 @@ to get mode of legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the legend mode after initialization:
    
@@ -2103,7 +2103,7 @@ set the position of legend settings
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set legend position API value for legend setting during initialization 
    $("#container").ejMap({layers: [{legendSettings: {position: "topleft"} }]})                      
@@ -2111,7 +2111,7 @@ set the position of legend settings
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the legend position API, after initialization:
    
@@ -2137,7 +2137,7 @@ x position value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set x position value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {positionX: 0} }]})           
@@ -2145,7 +2145,7 @@ x position value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the x position, after initialization:
    
@@ -2171,14 +2171,14 @@ y position value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set y position value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {positionY: 0} }]})           
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the y position, after initialization:
    
@@ -2204,7 +2204,7 @@ to get rightLabel value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set rightLabel value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {rightLabel:""} }]})           
@@ -2212,7 +2212,7 @@ to get rightLabel value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set rightLabel value after initialization:
    
@@ -2238,7 +2238,7 @@ Enables or Disables the showLabels
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showLabels API value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {showLabels:false} }]})           
@@ -2246,7 +2246,7 @@ Enables or Disables the showLabels
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLabels API, after initialization:
    
@@ -2272,7 +2272,7 @@ Enables or Disables the showLegend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showLegend API value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {showLegend:false} }]})
@@ -2280,7 +2280,7 @@ Enables or Disables the showLegend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLegend API, after initialization:
    
@@ -2306,7 +2306,7 @@ to get title of legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set legend title during initialization 
    $("#container").ejMap({layers: [{legendSettings: {title: ""} }]})           
@@ -2314,7 +2314,7 @@ to get title of legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the legend title after initialization:
    
@@ -2361,7 +2361,7 @@ to get type of legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set legend type value during initialization 
    $("#container").ejMap({layers: [{legendSettings: {type:"layers"} }]})           
@@ -2369,7 +2369,7 @@ to get type of legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the legend type value after initialization:
    
@@ -2395,7 +2395,7 @@ width value for legend setting
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set width value for legend during initialization 
    $("#container").ejMap({layers: [{legendSettings: {width:20} }]})           
@@ -2403,7 +2403,7 @@ width value for legend setting
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the width value for legend, after initialization:
    
@@ -2425,7 +2425,7 @@ Specifies the map items template for shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the mapItemsTemplate of layer during initialization.                  
    $("#container").ejMap({layers: [{ layerType: "geometry", mapItemsTemplate: "Template",  shapeData: mapShapeData }]})
@@ -2433,7 +2433,7 @@ Specifies the map items template for shapes.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the mapItemsTemplate after initialization:
    
@@ -2459,7 +2459,7 @@ Specify markers for shape layer.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the markers during initialization.                       
    $("#container").ejMap({layers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]}]})
@@ -2467,7 +2467,7 @@ Specify markers for shape layer.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the markers after initialization:
    
@@ -2493,7 +2493,7 @@ Specifies the map marker template for map layer.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the markerTemplate of layer during initialization.                    
    $("#container").ejMap({layers: [{ layerType: "geometry", markerTemplate: "Template",  shapeData: mapShapeData }]})
@@ -2501,7 +2501,7 @@ Specifies the map marker template for map layer.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the markerTemplate after initialization:
    
@@ -2527,7 +2527,7 @@ Specify selectedMapShapes for shape layer
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //Gets the selectedMapShapes from map 
    var selectedShapes =$("#container").data("ejMap").model.layers[layerIndex].selectedMapShapes;         
@@ -2568,7 +2568,7 @@ Specifies the selection mode of the map. Accepted selection mode values are Defa
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the selection mode during initialization.                        
    $("#container").ejMap({layers: [{ selectionMode:'default' }]})
@@ -2576,7 +2576,7 @@ Specifies the selection mode of the map. Accepted selection mode values are Defa
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the selection mode after initialization:
    
@@ -2598,7 +2598,7 @@ Specifies the shape data for the shape layer
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the shapeData of layer during initialization.                         
    $("#container").ejMap({layers: [{ layerType: "geometry", shapeData: mapShapeData }]})
@@ -2606,7 +2606,7 @@ Specifies the shape data for the shape layer
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the data after initialization:
    
@@ -2628,7 +2628,7 @@ Specifies the shape settings of map layer
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the shapeSettings of layer during initialization.                     
    $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]})
@@ -2636,7 +2636,7 @@ Specifies the shape settings of map layer
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the shapeSettings after initialization:
    
@@ -2662,7 +2662,7 @@ Enables or Disables the auto fill colors for shape layer in map. When this prope
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set autoFill API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {autoFill:false}}});
@@ -2670,7 +2670,7 @@ Enables or Disables the auto fill colors for shape layer in map. When this prope
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the autoFill API, after initialization:
    
@@ -2696,14 +2696,14 @@ Specifies the colorMappings of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorMappings API value during initialization 
   $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorMappings API, after initialization:
    
@@ -2757,7 +2757,7 @@ Specifies the shape color palette value of the shape layer in map. Accepted colo
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorPalette API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {colorPalette:'palette1'}}});
@@ -2765,7 +2765,7 @@ Specifies the shape color palette value of the shape layer in map. Accepted colo
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorPalette API, after initialization:
    
@@ -2791,14 +2791,14 @@ Specifies the shape color valuePath of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorValuePath  API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {colorValuePath :'sales'}}});
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorValuePath  API, after initialization:
    
@@ -2824,7 +2824,7 @@ Enables or Disables the gradient colors for map shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableGradient API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {enableGradient:false}}});
@@ -2832,7 +2832,7 @@ Enables or Disables the gradient colors for map shapes.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableGradient API, after initialization:
    
@@ -2858,7 +2858,7 @@ Specifies the shape fill color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set fill API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {fill:'#E5E5E5'}}});
@@ -2866,7 +2866,7 @@ Specifies the shape fill color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the fill API, after initialization:
 
@@ -2892,7 +2892,7 @@ Specifies the mouse over width of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightBorderWidth API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {highlightBorderWidth:1}}});
@@ -2900,7 +2900,7 @@ Specifies the mouse over width of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightBorderWidth API, after initialization:
    
@@ -2926,7 +2926,7 @@ Specifies the mouse hover color of the shape layer in map
 
 Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightColor API value during initialization 
   $("#container").ejMap({layers:{shapeSettings: {highlightColor:'gray'}}});
@@ -2934,7 +2934,7 @@ Example
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightColor API, after initialization:
    
@@ -2960,7 +2960,7 @@ Specifies the mouse over stroke color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightStroke API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {highlightStroke:'#C1C1C1'}}});
@@ -2968,7 +2968,7 @@ Specifies the mouse over stroke color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightStroke API, after initialization:
    
@@ -2994,7 +2994,7 @@ Specifies the shape selection color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set selectionColor API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {selectionColor:'gray'}}});
@@ -3002,7 +3002,7 @@ Specifies the shape selection color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the selectionColor API, after initialization:
    
@@ -3028,7 +3028,7 @@ Specifies the shape selection stroke color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set selectionStroke API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {selectionStroke:'#C1C1C1'}}});
@@ -3036,7 +3036,7 @@ Specifies the shape selection stroke color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the selectionStroke API, after initialization:
    
@@ -3062,7 +3062,7 @@ Specifies the shape selection stroke width of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set selectionStrokeWidth API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {selectionStrokeWidth:1}}});
@@ -3070,7 +3070,7 @@ Specifies the shape selection stroke width of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the selectionStrokeWidth API, after initialization:
    
@@ -3096,7 +3096,7 @@ Specifies the shape stroke color of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set stroke API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {stroke:'#C1C1C1'}}});
@@ -3104,7 +3104,7 @@ Specifies the shape stroke color of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the stroke API, after initialization:
    
@@ -3130,7 +3130,7 @@ Specifies the shape stroke thickness value of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set strokeThickness API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {strokeThickness:'0.2'}}});
@@ -3138,7 +3138,7 @@ Specifies the shape stroke thickness value of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the strokeThickness API, after initialization:
    
@@ -3164,7 +3164,7 @@ Specifies the shape valuePath of the shape layer in map
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set valuePath API value during initialization 
   $("#container").ejMap({layers: {shapeSettings: {valuePath:'name'}}});
@@ -3172,7 +3172,7 @@ Specifies the shape valuePath of the shape layer in map
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the valuePath API, after initialization:
    
@@ -3198,7 +3198,7 @@ Shows or hides the map items.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the showMapItems during initialization.                  
    $("#container").ejMap({layers: [{ showMapItems:false }]})
@@ -3206,7 +3206,7 @@ Shows or hides the map items.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showMapItems after initialization:
 
@@ -3232,7 +3232,7 @@ Shows or hides the tooltip for shapes
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the showTooltip during initialization.                   
    $("#container").ejMap({layers: [{ showTooltip:false }]})
@@ -3240,7 +3240,7 @@ Shows or hides the tooltip for shapes
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showTooltip after initialization:
 
@@ -3262,7 +3262,7 @@ Specifies the tooltip template for shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 
 // Set the tooltipTemplate of layer during initialization.                   
         $("#container").ejMap({layers: [{ layerType: "geometry", tooltipTemplate: "Template",  shapeData: mapShapeData }]})
@@ -3270,7 +3270,7 @@ Specifies the tooltip template for shapes.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the tooltipTemplate after initialization:
    
@@ -3296,7 +3296,7 @@ Specifies the URL template for the OSM type map.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the urlTemplate during initialization.                   
    $("#container").ejMap({layers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]})
@@ -3304,7 +3304,7 @@ Specifies the URL template for the OSM type map.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the urlTemplate after initialization:
  
@@ -3355,7 +3355,7 @@ Method for navigating to specific shape based on latitude, longitude and zoom le
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //navigateTo method for map
    $("#container").ejMap("navigateTo", lat, lon, level);
@@ -3387,7 +3387,7 @@ Method to perform map panning
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //pan method for map
    $("#container").ejMap("pan", direction);
@@ -3402,7 +3402,7 @@ Method to reload the map.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //refresh method for map
    $("#container").ejMap("refresh");
@@ -3417,7 +3417,7 @@ Method to reload the shapeLayers with updated values
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //refresh layers method for map
    $("#container").ejMap("refreshLayers");
@@ -3449,7 +3449,7 @@ Method to reload the navigation control with updated values.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //Refresh navigation control method for map
    $("#container").ejMap("refreshNavigationControl",navigation);{% endhighlight %}
@@ -3484,7 +3484,7 @@ Method to perform map zooming.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //zoom method for map
    $("#container").ejMap("zoom",level,isAnimate);
@@ -3519,7 +3519,7 @@ Triggered on selecting the map markers.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //markerSelected event for map
   
@@ -3554,7 +3554,7 @@ Triggers while leaving the hovered map shape
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //mouseleave  event for map
   $("#container").ejMap({
@@ -3588,7 +3588,7 @@ Triggers while hovering the map shape.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //mouseover  event for map
   $("#container").ejMap({
@@ -3622,7 +3622,7 @@ Triggers once map render completed.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //onRenderComplete event for map
   $("#container").ejMap({
@@ -3656,7 +3656,7 @@ Triggers when map panning ends.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //panned event for map
   $("#container").ejMap({
@@ -3689,7 +3689,7 @@ Triggered on selecting the map shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //shapeSelected event for map
   $("#container").ejMap({
@@ -3728,7 +3728,7 @@ Triggered when map is zoomed-in.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //zoomedIn event for map
   $("#container").ejMap({
@@ -3769,7 +3769,7 @@ Example
 {:.example}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //zoomedOut event for map
   $("#container").ejMap({
