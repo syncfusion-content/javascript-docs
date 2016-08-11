@@ -14,7 +14,7 @@ The treemap can be easily configured to the DOM element, such as div and can be 
 
 #### Syntax
 
-{% highlight javascript %}
+{% highlight js %}
 
 $(element).ejTreeMap<span class="signature">()</span>
 
@@ -63,7 +63,7 @@ Specifies the border brush color of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set borderBrush API value during initialization 
   $("#container").ejTreeMap( {borderBrush:'white'});
@@ -71,7 +71,7 @@ Specifies the border brush color of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the borderBrush API, after initialization:
    
@@ -97,7 +97,7 @@ Specifies the border thickness of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set borderThickness API value during initialization 
   $("#container").ejTreeMap({borderThickness:1});
@@ -105,7 +105,7 @@ Specifies the border thickness of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the borderThickness API, after initialization:
  
@@ -137,7 +137,7 @@ Specifies the uniform color mapping of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set uniColorMapping API value during initialization 
   $("#container").ejTreeMap( {uniColorMapping{ color: null }});
@@ -145,7 +145,7 @@ Specifies the uniform color mapping of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the uniColorMapping API, after initialization:
    
@@ -177,7 +177,7 @@ Specifies the to value for desaturation color mapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set to API value during initialization 
   $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});
@@ -185,7 +185,7 @@ Specifies the to value for desaturation color mapping
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the to API, after initialization:
    
@@ -212,7 +212,7 @@ Specifies the color for desaturationColorMapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set color API value during initialization 
   $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});
@@ -220,7 +220,7 @@ Specifies the color for desaturationColorMapping
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the color API, after initialization:
    
@@ -246,7 +246,7 @@ Specifies the from value for desaturation color mapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set from API value during initialization 
   $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});
@@ -254,7 +254,7 @@ Specifies the from value for desaturation color mapping
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the from API, after initialization:
    
@@ -280,7 +280,7 @@ Specifies the rangeMaximum value for desaturation color mapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set rangeMaximum API value during initialization 
   $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
@@ -288,7 +288,7 @@ Specifies the rangeMaximum value for desaturation color mapping
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the rangeMaximum API, after initialization:
    
@@ -314,14 +314,14 @@ Specifies the rangeMinimum value for desaturation color mapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set rangeMinimum API value during initialization 
   $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the rangeMinimum API, after initialization:
    
@@ -353,7 +353,7 @@ Specifies the colors of the paletteColorMapping
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set the colors of the paletteColorMapping during initialization 
   $("#container").ejTreeMap( {paletteColorMapping{colors: ["red","green","blue", "yellow"]}});
@@ -361,7 +361,7 @@ Specifies the colors of the paletteColorMapping
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colors of the paletteColorMapping, after initialization:
    
@@ -387,7 +387,7 @@ Specifies the color value path of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set colorValuePath API value during initialization 
   $("#container").ejTreeMap({colorValuePath:'GoldMedals'});
@@ -395,7 +395,7 @@ Specifies the color value path of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the colorValuePath API, after initialization:
    
@@ -421,7 +421,7 @@ Specifies the datasource of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set datasource API value during initialization 
   $("#container").ejTreeMap({datasource:medal_data});
@@ -429,7 +429,7 @@ Specifies the datasource of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the datasource API, after initialization:
    
@@ -484,7 +484,7 @@ Specifies the dockPosition for legend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set dockPosition API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ dockPosition: "top"}});
@@ -492,7 +492,7 @@ Specifies the dockPosition for legend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the dockPosition API, after initialization:
    
@@ -518,7 +518,7 @@ specifies the drillDown header color
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the drillDownHeaderColor during initialization.                  
    $("#container").ejTreeMap({drillDownHeaderColor:'#0478c3'});
@@ -526,7 +526,7 @@ specifies the drillDown header color
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the drillDownHeaderColor API, after initialization:
    
@@ -552,7 +552,7 @@ specifies the drillDown selection color
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the drillDownSelectionColor during initialization.                       
    $("#container").ejTreeMap({drillDownSelectionColor:'#e5e5e5'});
@@ -560,7 +560,7 @@ specifies the drillDown selection color
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the drillDownSelectionColor API, after initialization:
    
@@ -588,7 +588,7 @@ Enable/Disable the drillDown for treemap
 {:.example}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableDrillDown API value during initialization 
   $("#container").ejTreeMap({enableDrillDown:true});
@@ -596,7 +596,7 @@ Enable/Disable the drillDown for treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableDrillDown API, after initialization:
    
@@ -640,7 +640,7 @@ Specifies whether treemap need to resize when container is resized
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableResize API value during initialization 
   $("#container").ejTreeMap({enableResize:false});
@@ -648,7 +648,7 @@ Specifies whether treemap need to resize when container is resized
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableResize API, after initialization:
    
@@ -710,7 +710,7 @@ Specifies the group color mapping of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set groupColorMapping API value during initialization 
   $("#container").ejTreeMap( {groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}]}] });
@@ -718,7 +718,7 @@ Specifies the group color mapping of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupColorMapping API, after initialization:
    
@@ -744,7 +744,7 @@ Specifies the groupID for GroupColorMapping.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupID for GroupColorMapping during initialization.                         
         $("#container").ejTreeMap({groupColorMapping: [{ groupID:"Asia" }]})
@@ -752,7 +752,7 @@ Specifies the groupID for GroupColorMapping.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupID for GroupColorMapping after initialization:
 
@@ -784,7 +784,7 @@ Specifies the height for legend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set height API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ height: 15}});
@@ -792,7 +792,7 @@ Specifies the height for legend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the height API, after initialization:
    
@@ -818,7 +818,7 @@ Specifies the width for legend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set width API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ width: 100}});
@@ -826,7 +826,7 @@ Specifies the width for legend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the width API, after initialization:
    
@@ -852,7 +852,7 @@ Specifies the iconHeight for legend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set iconHeight API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ iconHeight: 15}});
@@ -860,7 +860,7 @@ Specifies the iconHeight for legend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the iconHeight API, after initialization:
    
@@ -886,7 +886,7 @@ Specifies the iconWidth for legend
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set iconWidth API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ iconWidth: 15}});
@@ -894,7 +894,7 @@ Specifies the iconWidth for legend
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the iconWidth API, after initialization:
    
@@ -920,7 +920,7 @@ Specifies the template for legendSettings
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set template API value during initialization 
   $("#container").ejTreeMap( {legendSettings:{ template: null}});
@@ -928,7 +928,7 @@ Specifies the template for legendSettings
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the template API, after initialization:
    
@@ -954,7 +954,7 @@ Specifies the highlight border brush of treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightBorderBrush API value during initialization 
   $("#container").ejTreeMap({highlightBorderBrush:'gray'});
@@ -962,7 +962,7 @@ Specifies the highlight border brush of treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightBorderBrush API, after initialization:
    
@@ -988,7 +988,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightBorderThickness API value during initialization 
   $("#container").ejTreeMap({highlightBorderThickness:5});
@@ -996,7 +996,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightBorderThickness API, after initialization:
  
@@ -1022,7 +1022,7 @@ Specifies the highlight border brush of treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightGroupBorderBrush API value during initialization 
   $("#container").ejTreeMap({highlightGroupBorderBrush:'gray'});
@@ -1030,7 +1030,7 @@ Specifies the highlight border brush of treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightGroupBorderBrush API, after initialization:
    
@@ -1056,7 +1056,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightGroupBorderThickness API value during initialization 
   $("#container").ejTreeMap({highlightGroupBorderThickness:5});
@@ -1064,7 +1064,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightGroupBorderThickness API, after initialization:
    
@@ -1092,7 +1092,7 @@ Specifies whether treemap item need to highlighted on selection
 {:.example}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightGroupOnSelection API value during initialization 
   $("#container").ejTreeMap({highlightGroupOnSelection:false});
@@ -1100,7 +1100,7 @@ Specifies whether treemap item need to highlighted on selection
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightGroupOnSelection API, after initialization:
    
@@ -1126,7 +1126,7 @@ Specifies whether treemap item need to highlighted on selection
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set highlightOnSelection API value during initialization 
   $("#container").ejTreeMap({highlightOnSelection:false});
@@ -1134,7 +1134,7 @@ Specifies whether treemap item need to highlighted on selection
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the highlightOnSelection API, after initialization:
    
@@ -1189,7 +1189,7 @@ Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values 
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set itemsLayoutMode API value during initialization 
   $("#container").ejTreeMap({itemsLayoutMode:ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified});
@@ -1197,7 +1197,7 @@ Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values 
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the itemsLayoutMode API, after initialization:
    
@@ -1229,7 +1229,7 @@ Specifies the border brush color of the leaf item.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set borderBrush API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ borderBrush: "white"}});
@@ -1237,7 +1237,7 @@ Specifies the border brush color of the leaf item.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the borderBrush API, after initialization:
    
@@ -1263,7 +1263,7 @@ Specifies the border thickness of the leaf item.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set borderThickness API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ borderThickness: 1}});
@@ -1271,7 +1271,7 @@ Specifies the border thickness of the leaf item.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the borderThickness API, after initialization:
    
@@ -1297,7 +1297,7 @@ Specifies the label template of the leaf item.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set itemTemplate API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ itemTemplate: "temp"}});
@@ -1305,7 +1305,7 @@ Specifies the label template of the leaf item.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the itemTemplate API, after initialization:
    
@@ -1331,7 +1331,7 @@ Specifies the label path of the leaf item.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelPath API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ labelPath: "GameName"}});
@@ -1339,7 +1339,7 @@ Specifies the label path of the leaf item.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelPath API, after initialization:
    
@@ -1418,7 +1418,7 @@ Specifies the position of the leaf labels.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelPosition API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ labelPosition: "center"}});
@@ -1426,7 +1426,7 @@ Specifies the position of the leaf labels.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelPosition API, after initialization:
    
@@ -1473,7 +1473,7 @@ Specifies the mode of label visibility
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelVisibilityMode API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ labelVisibilityMode: "visible"}});
@@ -1481,7 +1481,7 @@ Specifies the mode of label visibility
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelVisibilityMode API, after initialization:
    
@@ -1507,7 +1507,7 @@ Shows or hides the label of the leaf item.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showLabels API value during initialization 
   $("#container").ejTreeMap({leafItemSettings:{ showLabels: "false"}});
@@ -1515,7 +1515,7 @@ Shows or hides the label of the leaf item.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLabels API, after initialization:
    
@@ -1541,7 +1541,7 @@ Specifies the rangeColorMapping settings of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set rangeColorMapping API value during initialization 
   $("#container").ejTreeMap( {rangeColorMapping:[{ color: "#77D8D8",legendLabel:"1% Growth", from: "0", to: "1" }]});
@@ -1549,7 +1549,7 @@ Specifies the rangeColorMapping settings of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the rangeColorMapping API, after initialization:
    
@@ -1575,7 +1575,7 @@ Specifies the color value for rangeColorMapping.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the color value for rangeColorMapping during initialization.                     
    $("#container").ejTreeMap({rangeColorMapping: [{ color: "#77D8D8" }]})
@@ -1583,7 +1583,7 @@ Specifies the color value for rangeColorMapping.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the color value for rangeColorMapping after initialization:
   
@@ -1609,7 +1609,7 @@ specifies the gradient colors for th given range value
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set gradientColors API value during initialization 
   $("#container").ejTreeMap( {rangeColorMapping:[{ from: "0", to: "1", gradientColors: ["#fde6cc", "#fab665"] }]});
@@ -1617,7 +1617,7 @@ specifies the gradient colors for th given range value
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the gradientColors API, after initialization:
    
@@ -1643,7 +1643,7 @@ Specifies the from value for rangeColorMapping.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the from value for rangeColorMapping during initialization.                      
    $("#container").ejTreeMap({rangeColorMapping: [{ from:-1 }]})
@@ -1651,7 +1651,7 @@ Specifies the from value for rangeColorMapping.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the from value for rangeColorMapping after initialization:
 
@@ -1677,7 +1677,7 @@ Specifies the legend label value for rangeColorMapping.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the legendlabel value for rangeColorMapping during initialization.                       
    $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
@@ -1685,7 +1685,7 @@ Specifies the legend label value for rangeColorMapping.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the legendlabel value for rangeColorMapping after initialization:
 
@@ -1711,7 +1711,7 @@ Specifies the to value for rangeColorMapping.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the to value for rangeColorMapping during initialization.                        
    $("#container").ejTreeMap({rangeColorMapping: [{ to:-1 }]})
@@ -1719,7 +1719,7 @@ Specifies the to value for rangeColorMapping.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the to value for rangeColorMapping after initialization:
 
@@ -1767,7 +1767,7 @@ Specifies the selection mode of treemap item. Accepted selection mode values are
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the selection mode during initialization.                                        
           $("#container").ejTreeMap({selectionMode:'default'});
@@ -1775,7 +1775,7 @@ Specifies the selection mode of treemap item. Accepted selection mode values are
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the selection mode after initialization:
   
@@ -1821,7 +1821,7 @@ Specifies the selection mode of the treemap. Accepted selection mode values are 
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the selection mode during initialization.                                        
           $("#container").ejTreeMap({groupSelectionMode:'default'});
@@ -1829,7 +1829,7 @@ Specifies the selection mode of the treemap. Accepted selection mode values are 
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupSelection mode after initialization:
   
@@ -1855,7 +1855,7 @@ Specifies the legend visibility status of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showLegend API value during initialization 
   $("#container").ejTreeMap({showLegend:false});
@@ -1863,7 +1863,7 @@ Specifies the legend visibility status of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLegend API, after initialization:
    
@@ -1889,7 +1889,7 @@ Specifies whether gradient color has to be applied for treemap items
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set enableGradient API value during initialization 
   $("#container").ejTreeMap({enableGradient:true});
@@ -1897,7 +1897,7 @@ Specifies whether gradient color has to be applied for treemap items
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the enableGradient API, after initialization:
    
@@ -1918,7 +1918,7 @@ Specifies whether gradient color has to be applied for treemap items
 
 Specifies whether treemap showTooltip need to be visible
 
-{% highlight html %}
+{% highlight js %}
  
 //To set showTooltip API value during initialization 
   $("#container").ejTreeMap({showTooltip:false});
@@ -1926,7 +1926,7 @@ Specifies whether treemap showTooltip need to be visible
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showTooltip API, after initialization:
    
@@ -1952,7 +1952,7 @@ Specifies the tooltip template of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set tooltipTemplate API value during initialization 
   $("#container").ejTreeMap({tooltipTemplate:'template'});
@@ -1960,7 +1960,7 @@ Specifies the tooltip template of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the tooltipTemplate API, after initialization:
    
@@ -1986,7 +1986,7 @@ Hold the treeMapItems to be displayed in treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the treeMapItems during initialization. 
   $("#container").ejTreeMap({treeMapItems:[]});                             
@@ -1994,7 +1994,7 @@ Hold the treeMapItems to be displayed in treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the treeMapItems after initialization:
 
@@ -2020,7 +2020,7 @@ Specify levels of treemap for grouped visualization of data
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the levels during initialization.                
   $("#container").ejTreeMap({   levels: [{ groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' }]})
@@ -2028,7 +2028,7 @@ Specify levels of treemap for grouped visualization of data
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the levels after initialization:
   
@@ -2054,7 +2054,7 @@ specifies the group background
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupBackground during initialization.                       
    $("#container").ejTreeMap({levels: [{ groupBackground:"white" }]})
@@ -2062,7 +2062,7 @@ specifies the group background
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupBackground after initialization:
 
@@ -2088,7 +2088,7 @@ Specifies the group border color for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupBorderColor during initialization.                      
    $("#container").ejTreeMap({levels: [{ groupBorderColor:"#58585B" }]})
@@ -2096,7 +2096,7 @@ Specifies the group border color for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupBorderColor after initialization:
 
@@ -2122,7 +2122,7 @@ Specifies the group border thickness for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupBorderThickness during initialization.                  
    $("#container").ejTreeMap({levels: [{ groupBorderThickness:1 }]})
@@ -2130,7 +2130,7 @@ Specifies the group border thickness for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupBorderThickness after initialization:
 
@@ -2156,7 +2156,7 @@ Specifies the group gap for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupGap during initialization.                      
    $("#container").ejTreeMap({levels: [{ groupGap:1 }]})
@@ -2164,7 +2164,7 @@ Specifies the group gap for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupGap after initialization:
   
@@ -2190,7 +2190,7 @@ Specifies the group padding for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupPadding during initialization.                  
    $("#container").ejTreeMap({levels: [{ groupPadding:4 }]})
@@ -2198,7 +2198,7 @@ Specifies the group padding for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupPadding after initialization:
 
@@ -2220,14 +2220,14 @@ Specifies the group path for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the groupPath during initialization.                     
    $("#container").ejTreeMap({levels: [{ groupPath:"pathName" }]})
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the groupPath after initialization:
 
@@ -2253,7 +2253,7 @@ Specifies the header height for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the headerHeight during initialization.                  
    $("#container").ejTreeMap({levels: [{ headerHeight:20 }]})
@@ -2261,7 +2261,7 @@ Specifies the header height for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the headerHeight after initialization:
 
@@ -2287,7 +2287,7 @@ Specifies the header template for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the headerTemplate during initialization.                        
    $("#container").ejTreeMap({levels: [{ headerTemplate:"template" }]})
@@ -2295,7 +2295,7 @@ Specifies the header template for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the headerTemplate after initialization:
 
@@ -2342,7 +2342,7 @@ Specifies the mode of header visibility
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelVisibilityMode API value during initialization 
   $("#container").ejTreeMap({levels:[{ headerVisibilityMode: "visible"}]});
@@ -2350,7 +2350,7 @@ Specifies the mode of header visibility
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the headerVisibilityMode API, after initialization:
    
@@ -2429,7 +2429,7 @@ Specifies the position of the labels.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelPosition API value during initialization 
   $("#container").ejTreeMap({levels:[{ labelPosition: "center"]}});
@@ -2437,7 +2437,7 @@ Specifies the position of the labels.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelPosition API, after initialization:
    
@@ -2463,7 +2463,7 @@ Specifies the label template for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the labelTemplate during initialization.                         
    $("#container").ejTreeMap({levels: [{ labelTemplate:"template" }]})
@@ -2471,7 +2471,7 @@ Specifies the label template for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelTemplate after initialization:
 
@@ -2518,7 +2518,7 @@ Specifies the mode of label visibility
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set labelVisibilityMode API value during initialization 
   $("#container").ejTreeMap({levels:[{ labelVisibilityMode: "visible"}]});
@@ -2526,7 +2526,7 @@ Specifies the mode of label visibility
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the labelVisibilityMode API, after initialization:
    
@@ -2552,7 +2552,7 @@ Shows or hides the header for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the shoeHeader during initialization.                    
    $("#container").ejTreeMap({levels: [{ showHeader:false }]})
@@ -2560,7 +2560,7 @@ Shows or hides the header for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showHeader after initialization:
 
@@ -2586,7 +2586,7 @@ Shows or hides the labels for tree map level.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
   
 // Set the showLabels during initialization.                    
    $("#container").ejTreeMap({levels: [{ showLabels:false }]})
@@ -2594,7 +2594,7 @@ Shows or hides the labels for tree map level.
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the showLabels after initialization:
 
@@ -2620,7 +2620,7 @@ Specifies the weight value path of the treemap
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //To set weightValuePath API value during initialization 
   $("#container").ejTreeMap({weightValuePath:'TotalMedals'});
@@ -2628,7 +2628,7 @@ Specifies the weight value path of the treemap
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
  
 //Get or set the weightValuePath API, after initialization:
    
@@ -2652,7 +2652,7 @@ Method to reload treemap with updated values.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //refresh method for treemap
    $("#container").ejTreeMap("refresh");
@@ -2687,7 +2687,7 @@ Triggers on treemap item selected.
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
 //treemap item selected event for treemap
   $("#container").ejTreeMap({
