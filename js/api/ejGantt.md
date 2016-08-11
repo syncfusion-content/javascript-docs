@@ -2312,7 +2312,7 @@ Specifies the round-off mode for the start date in schedule header.
 </tr>
 <tr>
 <td class="name">Month</td>
-<td class="description">Schedule headers start date will round off ot the immediate month</td>
+<td class="description">Schedule headers start date will round off to the immediate month</td>
 </tr>
 <tr>
 <td class="name">Year</td>
