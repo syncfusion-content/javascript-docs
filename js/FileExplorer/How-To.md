@@ -115,23 +115,27 @@ If we specify “ajaxDataType” as “JSONP”, data will be received in string
 In IE8 and IE9 Browser, These options helps to render our FileExplorer control with cross-origin resource support.
 
 
-## Local service for FileExplorer
+## Service for FileExplorer
 
-You can implement the file handling operations in your server as per your requirement. By default, we have provided built-in “FileExplorerOperations.cs” class for handling the file operation of “FileExplorer” in server side and you can find the file at following Web API service project. Please refer following Web API service, this may be helpful to you.
+Generally web based file explorer needs a service for handling the file related operations in server end.  In same way, our “FileExplorer” control uses server side functionalities for handling the file operations in flexible way, that means you can implement this server side functions in any languages (like C#, VB, Java, PHP, etc.) and can customize it as per your requirement. 
+
+By default, we have provided these server side AJAX handling functionalities in “C#” for managing physical filesystem and you can check it with “FileExplorerOperations” file, which is available at following Web API service application.
 
 Web API service: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip#) 
 
-N> Based on the “ActionType” parameter value that is available in the “doJSONPAction” action method of “FileOperationController” class, you can call the corresponding built-in file handling methods (Read, Search, Download, Upload, Remove, Rename etc...) that are available in our “FileExplorerOperations” class.
+Note: In this Web API application, we have provided “FileOperationController” file, which contains “doJSONAction” action method. When you make AJAX request, “doJSONAction” method will be called with AJAX request parameters then it calls the corresponding built-in file handling methods (Read, Search, Download, Upload, Remove, Rename etc.) that are available in our “FileExplorerOperations” class based on the “ActionType” parameter value.
 
-For your convenience, we have prepared a sample and service based on this and you can find it under following location.
+For your convenience, we have prepared a sample based on this and you can find it under following location.
 
-Sample: [http://jsplayground.syncfusion.com/rm4zm5yw](http://jsplayground.syncfusion.com/rm4zm5yw#) 
+Sample: [http://jsplayground.syncfusion.com/gysvwdcp](http://jsplayground.syncfusion.com/gysvwdcp#) 
 
-N> First run the provided Web API service, then you will get an URL like [http://localhost:51460/](http://localhost:51460/#) (Here port number may change). As per port number, use the specified URL in “path” and “ajaxAction” of “FileExplorer” sample.
+Note: First run the provided Web API service, then you will get an URL like ”[http://localhost:51460/](http://localhost:51460/#)“ (Here port number may change). As per port number, replace the specified URL in “path” and “ajaxAction” of “FileExplorer” sample.
 
-### Parameter list for AJAX request and response of FileExplorer
+Here we have created the file handling service using Web API application (.NET). If you want to use any other languages or platform for implementing this file handling service, you can achieve this. Please refer following table, this may be helpful to you to create your own service for FileExplorer.
 
-By default, we send following parameters in data field of the corresponding AJAX request. This helps to handle the server side operation. Some Server side action methods only will return the response data. This response data and request parameters are explained in following table. By referring to below table, you can create custom functions to perform server side operations of “FileExplorer”. 
+### Parameter list for Ajax request and response of FileExplorer
+
+By default, we send following parameters in Ajax request. Using this details, you can perform the file handling operations of FileExplorer. After performing the file operations, you have to return the response data in proper format. This response data and request parameters are explained in following table. By referring to below table, you can create your custom functions to perform server side operations of “FileExplorer”. 
 
 <table>
 <tr>
