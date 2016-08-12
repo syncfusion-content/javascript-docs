@@ -133,9 +133,9 @@ Note: First run the provided Web API service, then you will get an URL like ”[
 
 Here we have created the file handling service using Web API application (.NET). If you want to use any other languages or platform for implementing this file handling service, you can achieve this. Please refer following table, this may be helpful to you to create your own service for FileExplorer.
 
-### Parameter list for Ajax request and response of FileExplorer
+### Parameter list for AJAX request and response of FileExplorer
 
-By default, we send following parameters in Ajax request. Using this details, you can perform the file handling operations of FileExplorer. After performing the file operations, you have to return the response data in proper format. This response data and request parameters are explained in following table. By referring to below table, you can create your custom functions to perform server side operations of “FileExplorer”. 
+By default, we send following parameters in AJAX request. Using this details, you can perform the file handling operations of FileExplorer. After performing the file operations, you have to return the response data in proper format. This response data and request parameters are explained in following table. By referring to below table, you can create your custom functions to perform server side operations of “FileExplorer”. 
 
 <table>
 <tr>
