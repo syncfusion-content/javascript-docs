@@ -45,7 +45,7 @@ Use the following code example for including time options in start date and end 
                  taskName: "Plan timeline", 
                  startDate: "02/03/2014 08:00:00 AM", 
                  endDate: "02/07/2014 05:00:00 PM",
-                 duration: 2, 
+                 duration: 5, 
                  progress: "100" 
              },
              {
@@ -72,12 +72,12 @@ Use the following code example for including time options in start date and end 
                 duration: 0,
                }
 
-            ]}
+        ]}];
 
 
         $(function() {
             $("#GanttContainer").ejGantt({
-                dataSource: projectData,
+                dataSource: taskDetails,
                 taskIdMapping: "taskID",
                 taskNameMapping: "taskName",
                 startDateMapping: "startDate",
@@ -85,6 +85,7 @@ Use the following code example for including time options in start date and end 
                 durationMapping: "duration",
                 endDateMapping: "endDate",
                 childMapping: "subtasks",
+                treeColumnIndex: 1,
                 dateFormat: "M/d/yyyy hh:mm:ss tt",
                 scheduleStartDate: new Date("02/01/2014 00:00:00 AM"),
                 scheduleEndDate: new Date("03/14/2016 00:00:00 PM"), 

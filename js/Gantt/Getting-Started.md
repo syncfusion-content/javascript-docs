@@ -149,22 +149,23 @@ A Gantt chart is created as shown in the following screen shot.
 Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`toolbarSettings`](/js/api/ejgantt#members:toolbarsettings "toolbarSettings") property.
 
 {% highlight javascript %}
-
+$("#GanttContainer").ejGantt({
     toolbarSettings: {
-     showToolbar:true,
-     toolbarItems:[
-        ej.Gantt.ToolbarItems.Add,
-        ej.Gantt.ToolbarItems.Edit,
-        ej.Gantt.ToolbarItems.Delete,
-        ej.Gantt.ToolbarItems.Update,
-        ej.Gantt.ToolbarItems.Cancel,
-        ej.Gantt.ToolbarItems.Indent,
-        ej.Gantt.ToolbarItems.Outdent,
-        ej.Gantt.ToolbarItems.ExpandAll,
-        ej.Gantt.ToolbarItems.CollapseAll,
-        ej.Gantt.ToolbarItems.Search
+        showToolbar: true,
+        toolbarItems: [
+            ej.Gantt.ToolbarItems.Add,
+            ej.Gantt.ToolbarItems.Edit,
+            ej.Gantt.ToolbarItems.Delete,
+            ej.Gantt.ToolbarItems.Update,
+            ej.Gantt.ToolbarItems.Cancel,
+            ej.Gantt.ToolbarItems.Indent,
+            ej.Gantt.ToolbarItems.Outdent,
+            ej.Gantt.ToolbarItems.ExpandAll,
+            ej.Gantt.ToolbarItems.CollapseAll,
+            ej.Gantt.ToolbarItems.Search
         ],
     }
+});
 
 {% endhighlight %}
 
