@@ -25,7 +25,7 @@ function loadFromJSON() {
 {% endhighlight %}
 
 
-When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. `Server configuration` is used for this process.
+When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
 
@@ -92,9 +92,9 @@ To load excel documents initially from server side, set [`importOnLoad`](http://
 
 <script>
 $(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        importOnLoad: true,
+    $("#Spreadsheet").ejSpreadsheet({        
         importSettings: {
+            importOnLoad: true,
             importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import"
         }           
     });

@@ -1228,10 +1228,14 @@ Gets or sets a value that indicates whether to enable or disable import while in
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-importOnLoad: false
+    importSettings: {
+        importOnLoad: false            
+    }
 });                   
 </script>
 
