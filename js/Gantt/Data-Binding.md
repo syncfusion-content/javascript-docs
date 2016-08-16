@@ -23,7 +23,7 @@ Two types of Data Binding are possible with Gantt control,
 
 The following code example explains how to bind the hierarchical data in Gantt.
 
-{% highlight html %}
+{% highlight javascript %}
 var  taskDetails = [{
 
     taskID: 1,
@@ -91,9 +91,7 @@ var  taskDetails = [{
     ]
 
 }];
-{% endhighlight %}
 
-{% highlight javascript %}
 $(function() {
 
     $("#GanttContainer").ejGantt(
@@ -150,7 +148,7 @@ Gantt can be rendered from self-referential data structures, by mapping the task
 * Task ID field- This field must contain unique values to identify the nodes. It should be mapped to the `taskIdMapping` property.
 * Parent task ID field- This field must contain values to identify the parent nodes. It should be mapped to the `parentTaskIdMapping` property.
 
-{% highlight html %}
+{% highlight javascript %}
 
 var projectData1 = [
 
@@ -185,9 +183,7 @@ var projectData1 = [
     { taskID: 11, taskName: "Task 4", startDate: "02/14/2014", endDate: "02/14/2014", duration: 0, }
 
 ];
-{% endhighlight %}
 
-{% highlight javascript %}
 $(function() {
 
     $("#GanttContainer").ejGantt(
