@@ -22,7 +22,9 @@ The following code example shows how to define template for taskbars in Gantt.
 
 {% highlight html %}
 <div id="gantt" style="height:450px;width:100%;" />
+{% endhighlight %}
 
+{% highlight javascript %}
 <script type="text/x-jsrender" id="taskbarTemplate">
 
     <div class="e-gantt-template-taskbar bg-color">
@@ -103,8 +105,8 @@ It is also possible to set any datasource fields as task labels using [rightTask
 
 The following code example explains how to set task name field as right label and task ID field as left label,
 
-{% highlight html %}
-<script>
+{% highlight javascript %}
+
     $(function() {
 
         $("#GanttContainer").ejGantt({
@@ -118,7 +120,7 @@ The following code example explains how to set task name field as right label an
         });
 
     });
-</script>
+
 {% endhighlight %}
 
 The following screenshot shows Gantt with task labels mapped with different datasource fields
@@ -133,7 +135,9 @@ The following code example explains how to map custom templates to task labels.
 
 {% highlight html %}
 <div id="GanttContainer" style="width:100%;height:450px;" />
+{% endhighlight %}
 
+{% highlight javascript %}
 <script id="rightlabelTemplate" type="text/x-jsrender">
 
     {{"{{"}}if #data['resourceNames']{{}}}}
@@ -191,7 +195,9 @@ The following code example shows how to customize the tooltip.
 
 {% highlight html %}
 <div id="GanttContainer" style="width:100%;height:450px;" />
+{% endhighlight %}
 
+{% highlight javascript %}
 <script type="text/x-jsrender" id="tooltipTemplate">
 
     <table>
