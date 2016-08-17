@@ -499,6 +499,25 @@ Specify the CSS class for Gantt to achieve custom theme.
 
 {% endhighlight %}
 
+### cellTooltipTemplate `string`
+{:#members:celltooltiptemplate}
+
+To specify the template id for tooltip on mouse actions.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({ cellTooltipTemplate : "CellTooltipTemplate"});        
+
+{% endhighlight %}
 
 ### dragTooltip `object`
 {:#members:dragtooltip}
@@ -736,6 +755,25 @@ Specifies the fields to be included in the edit dialog in Gantt
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Enables or diasables the responsiveness of TreeGrid
+
+#### Default Value
+
+* "false"
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({  isResponsive : true });                   
+
+{% endhighlight %}
+
 ### splitterSettings `object`
 {:#members:splittersettings}
 
@@ -923,6 +961,45 @@ Specifies the option for enabling or disabling outdent action in Gantt
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `enum`
+{:#members:editsettings-begineditaction}
+
+<ts name = "ej.Gantt.BeginEditAction"/>
+
+Specifies the mouse action whether single click or double click to begin the editing
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">DblClick</td>
+<td class="description">you can begin the editing at double click</td>
+</tr>
+<tr>
+<td class="name">Click</td>
+<td class="description">you can begin the editing at single click</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+* ej.Gantt.BeginEditAction.DblClick
+
+#### Example
+
+
+{% highlight html %}
+                 
+        $("#Gantt").ejGantt({  editSettings:{beginEditAction : ej.Gantt.BeginEditAction.Click} });
+
+{% endhighlight %}
 
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
@@ -2513,8 +2590,7 @@ Enables or disables the column chooser.
 ### showGridCellTooltip `boolean`
 {:#members:showgridcelltooltip}
 
-Specifies whether to show grid cell tooltip.
-
+Specifies the template for cell tooltip
 
 #### Default Value:
 {:.param}
@@ -4255,7 +4331,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after perform the sorting in TreeGrid is completed:
+<td class="description">Event parameters after perform the sorting in TreeGrid part is completed:
 <table class="params">
 <thead>
 <tr>
@@ -4801,7 +4877,7 @@ Triggered while dragging a row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4883,7 +4959,7 @@ Triggered while start to drag row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4975,7 +5051,7 @@ Triggered while drop a row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -5229,6 +5305,67 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+### create
+{:#events:create}
+
+Triggered when Gantt is rendered completely.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when create event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="Gantt"></div> 
+<script>
+$("#Gantt").ejGantt({
+   create: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### endEdit
 {:#events:endedit}

@@ -18,6 +18,7 @@ Two types of Data Binding are possible with Gantt control,
 
 * Hierarchical datasource binding
 * Self-referential data binding (Flat data)
+
 ### Hierarchical data-source binding
 
 

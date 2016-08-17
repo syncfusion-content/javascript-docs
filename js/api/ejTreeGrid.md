@@ -557,6 +557,187 @@ Specifies whether the column is frozen
 
 {% endhighlight %}
 
+### columns.format `object`
+{:#members:columns-format}
+
+Specifies the display format of a column
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ field: "Currency",  format: "{0:C2}" }, //... ]});
+
+{% endhighlight %}
+
+### columns.isTemplateColumn `boolean`
+
+{:#members:columns-istemplatecolumn}
+
+Specifies whether the column is a template column
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+     $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
+
+{% endhighlight %}
+
+### columns.headerTextAlign `String`
+{:#members:columns-headertextalign}
+
+<ts name = "ej.TextAlign"/>
+
+Specifies the alignment of the column header text
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="description">align the header text to the left</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="description">align the header text to the right</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">To justify the header alignment</td>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">align the header text to the center</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TextAlign.Left
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  headerTextAlign: ej.TextAlign.Center},{headerTextAlign: ej.TextAlign.Right}]});
+
+{% endhighlight %}
+
+### columns.isFrozen `boolean`
+{:#members:columns-isfrozen}
+
+Specifies whether the column is frozen
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  isFrozen: true}]});
+
+{% endhighlight %}
+
+### columns.textAlign `String`
+{:#members:columns-textalign}
+
+<ts name = "ej.TextAlign"/>
+
+Specifies the text alignment for the column
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="description">align the content text to the left</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="description">align the content text to the right</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">To justify the content alignment</td>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">align the content text to the center</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TextAlign.Left
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  textAlign: ej.TextAlign.Center},{ textAlign: ej.TextAlign.Right}]});
+
+{% endhighlight %}
+
+### columns.templateID `String`
+
+{:#members:columns-templateid}
+
+Specifies the template for the TreeGrid column
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+         
+     $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
+
+{% endhighlight %}
+
+### columns.allowEditing `boolean`
+
+{:#members:columns-allowediting}
+
+Enables or disables the ability to edit a row or cell.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  allowEditing: false }]});
+
+{% endhighlight %}
+
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
@@ -850,6 +1031,44 @@ Enables or disables the ability to edit a row or cell.
 
 {% endhighlight %}
 
+### editSettings.beginEditAction `enum`
+{:#members:editsettings-begineditaction}
+
+<ts name = "ej.TreeGrid.BeginEditAction"/>
+
+Specifies the mouse action whether single click or double click to begin the editing
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">DblClick</td>
+<td class="description">you can begin the editing at double click</td>
+</tr>
+<tr>
+<td class="name">Click</td>
+<td class="description">you can begin the editing at single click</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.BeginEditAction.DblClick
+
+#### Example
+
+
+{% highlight html %}
+                 
+        $("#treegrid").ejTreeGrid({  editSettings:{beginEditAction : ej.TreeGrid.BeginEditAction.Click} });
+
+{% endhighlight %}
 
 ### editSettings.editMode `enum`
 {:#members:editsettings-editmode}
@@ -1033,11 +1252,15 @@ Specifies whether to render only the visual elements that are visible in the UI.
 {% endhighlight %}
 
 
-### filterBarMode `string`
-{:#members:filterbarmode}
+### filterSettings `object`
+{:#members:filtersettings}
 
-Specifies if the filtering should happen immediately on each key press or only on pressing enter key.
+Options for filtering and customizing filter actions.
 
+### filterSettings.filterBarMode `string`
+{:#members:filtersettings-filterbarmode}
+
+Specifies the mode on which column filtering should start
 
 #### Default Value
 
@@ -1049,10 +1272,56 @@ Specifies if the filtering should happen immediately on each key press or only o
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  filterBarMode : "onEnter" });
+        $("#treegrid").ejTreeGrid({  filterSettings: { filterBarMode : "onEnter"} });
 
 {% endhighlight %}
 
+### filterSettings.filteredColumns `array`
+{:#members:filtersettings-filteredcolumns}
+
+Specifies the column collection for filering the TreeGrid content on initial load
+
+#### Default Value
+
+* []
+
+#### Example
+
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        filteredColumns: [{
+            value: "plan",
+            field: "taskName",
+            predicate: "and",
+            operator: "startswith"
+        }]
+    },
+});                   
+
+{% endhighlight %}
+
+### locale `string`
+{:#members:locale}
+
+Specifies the localization information to customize the User Interface (UI) to support regional language and culture
+
+
+#### Default Value
+
+* "en-US"
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({  locale : "fr-FR" });                   
+
+{% endhighlight %}
 
 ### idMapping `string`
 {:#members:idmapping}
@@ -1074,6 +1343,25 @@ Specifies the name of the field in the dataSource, which contains the id of that
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Enables or disables the responsiveness of TreeGrid
+
+
+#### Default Value
+
+* "false"
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({  isResponsive : true });                   
+
+{% endhighlight %}
 
 ### parentIdMapping `string`
 {:#members:parentidmapping}
@@ -1274,7 +1562,7 @@ Specifies the Custom template for Pager control.
 ### cellTooltipTemplate `string`
 {:#members:celltooltiptemplate}
 
-To specify the template id for tooltip on mouse actions.
+Specifies the template for cell tooltip
 
 
 #### Default Value
@@ -1511,10 +1799,163 @@ Controls the visibility of the menu button, which is displayed on the column hea
 {% highlight html %}
  
   
-        $("#treegrid").ejTreeGrid({ showColumnChooser:  true });                        * 
+        $("#treegrid").ejTreeGrid({ showColumnChooser:  true });      
+        
+{% endhighlight %}
+
+### showDetailsRow `boolean`
+{:#members:showdetailsrow}
+
+Specifies the visibility of details view
+
+
+#### Default Value
+{:.param}
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    showDetailsRow: true
+});
 
 {% endhighlight %}
 
+### showDetailsRowInfoColumn `boolean`
+{:#members:showdetailsrowinfocolumn}
+
+Specifies the visibility of the expander column which is used to expand or collapse the details view
+
+
+#### Default Value
+{:.param}
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    showDetailsRowInfoColumn: true
+});
+
+{% endhighlight %}
+
+### detailsTemplate `string`
+{:#members:detailstemplate}
+
+Specifies the template for details view
+
+
+#### Default Value
+{:.param}
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    detailsTemplate: "#detailsTemplate"
+});
+
+{% endhighlight %}
+
+### detailsRowHeight `number`
+{:#members:detailsrowheight}
+
+Specifies the row height of the details view
+
+
+#### Default Value
+{:.param}
+* 100
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    detailsRowHeight: "150",
+});
+
+{% endhighlight %}
+
+### showSummaryRow `boolean`
+{:#members:showsummaryrow}
+
+Specifies the visibility of summary row
+
+#### Default Value
+{:.param}
+* false
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    showSummaryRow: true
+});
+{% endhighlight %}
+
+### showTotalSummary `boolean`
+{:#members:showtotalsummary}
+
+Specifies the visibility of total summary row for the corresponding summary column
+
+#### Default Value
+{:.param}
+* false
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    showTotalSummary: true
+});
+{% endhighlight %}
+
+### summaryRows `array`
+{:#members:summaryrows}
+
+Specifies the summary row collection object to be displayed
+
+#### Default Value
+{:.param}
+* []
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    summaryRows: [{
+        title: "Maximum",
+        summaryColumns: [{
+            summaryType: ej.TreeGrid.SummaryType.Maximum,
+            dataMember: "TotalUnits",
+            displayColumn: "TotalUnits",
+            prefix: "Individual maximum unit = "
+        }, {
+            summaryType: ej.TreeGrid.SummaryType.Maximum,
+            dataMember: "TotalCosts",
+            displayColumn: "TotalCosts",
+            prefix: "Individual maximum Cost = ",
+            format: "{0:C}"
+        }]
+    }, ],
+});
+{% endhighlight %}
 
 ### showGridCellTooltip `boolean`
 {:#members:showgridcelltooltip}
@@ -1532,9 +1973,9 @@ Specifies whether to show tooltip when mouse is hovered on the cell.
 
 {% highlight html %}
                  
-        $("#treegrid").ejTreeGrid({  
-                        showGridCellTooltip : true});
-
+$("#treegrid").ejTreeGrid({
+    showGridCellTooltip: true
+});
 {% endhighlight %}
 
 
@@ -1554,9 +1995,9 @@ Specifies whether to show tooltip for the cells, which has expander button.
 
 {% highlight html %}
                   
-        $("#treegrid").ejTreeGrid({  
-                        showGridExpandCellTooltip : true});
-
+$("#treegrid").ejTreeGrid({
+    showGridExpandCellTooltip: true
+});
 {% endhighlight %}
 
 
@@ -1760,6 +2201,50 @@ Specifies the index of the column that needs to have the expander button. By def
 
 
 ## Methods
+
+### addRow(data, rowPosition)
+{:#methods:addrow}
+
+Adds a new row in TreeGrid, while allowAdding is set to true
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Item to add in TreeGrid row.</td>
+</tr>
+<tr>
+<td class="name">rowPosition</td>
+<td class="type">enum</td>
+<td class="description">Defines in which position the row wants to be added</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create TreeGrid object
+var treeGridObj = $("#treegrid").data("ejTreeGrid");
+var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
+treeGridObj.addRecord(data, ej.TreeGrid.RowPosition.Child); // To add a task
+</script>
+{% endhighlight %}
+
 
 ### clearSelection(index)
 {:#methods:clearselection}
@@ -1972,9 +2457,80 @@ To hide the column by using header text
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.hideColumn("Task Name");
 </script> 
-</script>
+
 {% endhighlight %}
 
+### expandAtLevel(index)
+{:#methods:expandatlevel}
+
+Expands the records at specific hierarchical level
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type">number</td>
+<td class="description">you can pass the level as index number to expand</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.expandAtLevel(2);
+</script> 
+
+{% endhighlight %}
+
+### collapseAtLevel(index)
+{:#methods:collapseatlevel}
+
+Collapses the records at specific hierarchical level
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type">number</td>
+<td class="description">you can pass the particular level as index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.collapseAtLevel(2);
+</script> 
+
+{% endhighlight %}
 
 ### refresh(dataSource, query)
 {:#methods:refresh}
@@ -3292,6 +3848,67 @@ $("#treegrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
+### create
+{:#events:create}
+
+Triggered when TreeGrid is rendered completely 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when create event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   create: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### endEdit
 {:#events:endedit}
