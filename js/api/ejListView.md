@@ -1236,13 +1236,13 @@ $("#lb").ejListView ("option", "width", 200);
 
 
 
-### addItem(item, index)
+### addItem(item, index,groupid)
 {:#methods:additem}
 
 
 
 
-To add item in the given index.
+To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
 
 
 <table class="params">
@@ -1265,6 +1265,12 @@ item</td>
 index</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Specifies the index where item to be added</td>
+</tr>
+<tr>
+<td class="name">
+groupid</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">This is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</td>
 </tr>
 </tbody>
 </table>
