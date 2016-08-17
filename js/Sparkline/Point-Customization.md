@@ -9,7 +9,7 @@ documentation: ug
 
 ## Point Customization
 
-You can customize points by initializing the point colors. The customization options allow you to differentiate the [`first`](../api/ejsparkline#members:startpointcolor), [`last`](../api/ejsparkline#members:endpointcolor), [`highest`](../api/ejsparkline#members:highpointcolor), [`lowest`](../api/ejsparkline#members:lowpointcolor), and [`negative`]((../api/ejsparkline#members:negativepointcolor)) points. This customization only applicable for line, column and area type Sparkline.
+You can customize points by initializing the point colors. The customization options allow you to differentiate the [`first`](../api/ejsparkline#members:startpointcolor), [`last`](../api/ejsparkline#members:endpointcolor), [`highest`](../api/ejsparkline#members:highpointcolor), [`lowest`](../api/ejsparkline#members:lowpointcolor), and [`negative`](../api/ejsparkline#members:negativepointcolor) points. This customization only applicable for line, column and area type Sparkline.
 
 {% highlight js %}
 
