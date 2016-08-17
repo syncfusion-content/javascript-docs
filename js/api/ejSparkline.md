@@ -71,13 +71,13 @@ Background color of the plot area.
  
 $("#container").ejSparkline({
 
-    background : "white" 
+    background : "gray" 
                           
 });
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/picztz23)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gv2sqtqn)
 
 
 
@@ -101,7 +101,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/4aoow1t4)
 
 
 
@@ -246,7 +246,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/3idmiwaz)
 
 
 
@@ -270,7 +270,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/03520mkg)
 
 
 
@@ -294,7 +294,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/t5cx1j0s)
 
 
 
@@ -318,7 +318,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/popnp2of)
 
 
 
@@ -342,7 +342,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/obevcr4e)
 
 
 ### rangeBandSettings `object`
@@ -512,7 +512,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fay4avfj)
 
 
 
@@ -538,7 +538,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/poj3iwdx)
 
 
 
@@ -564,7 +564,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/4tml02zj)
 
 
 
@@ -590,7 +590,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ao5x14g1)
 
 
 
@@ -683,7 +683,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wmt2ic0a)
 
 
 
@@ -783,7 +783,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kjszjsg4)
 
 
 
@@ -817,7 +817,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vynngojh)
 
 
 
@@ -842,7 +842,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/2cyx1ypw)
 
 
 
@@ -866,7 +866,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l5pmkkgr)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/duwqnmb2)
  
 
  
@@ -1331,7 +1331,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3vkjgyc0)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/j0okmz5x)
 
 
 
@@ -1341,7 +1341,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3vkjgyc0)
 
 Options to customize the Sparkline size.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wpvk5t3p)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ifrsnjx3)
 
 
 
@@ -1399,7 +1399,7 @@ $("#container").ejSparkline({
 
 Options for customizing the color,dashArray and width of the axisLine.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1wweddy1)
 
 
 
