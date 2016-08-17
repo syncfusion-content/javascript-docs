@@ -3427,6 +3427,7 @@
                             <li id="toc-members:baselinecolor"><a href="/js/api/ejgantt#members:baselinecolor">baselineColor</a></li>
                             <li id="toc-members:baselineenddatemapping"><a href="/js/api/ejgantt#members:baselineenddatemapping">baselineEndDateMapping</a></li>
                             <li id="toc-members:baselinestartdatemapping"><a href="/js/api/ejgantt#members:baselinestartdatemapping">baselineStartDateMapping</a></li>
+                            <li id="toc-members:celltooltiptemplate"><a href="/js/api/ejgantt#members:celltooltiptemplate">cellTooltipTemplate</a></li>                         
                             <li id="toc-members:childmapping"><a href="/js/api/ejgantt#members:childmapping">childMapping</a></li>
                             <li id="toc-members:columndialogfields"><a href="/js/api/ejgantt#members:columndialogfields">columnDiaglogFields</a></li>                            
                             <li id="toc-members:connectorlinebackground"><a href="/js/api/ejgantt#members:connectorlinebackground">connectorLineBackground</a></li>
@@ -3451,7 +3452,8 @@
                                     <li id="toc-members:editsettings-allowediting"><a href="/js/api/ejgantt#members:editsettings-allowediting">allowEditing</a></li>
                                     <li id="toc-members:editsettings-allowindent"><a href="/js/api/ejgantt#members:editsettings-allowindent">allowIndent</a></li>
                                     <li id="toc-members:editsettings-allowoutdent"><a href="/js/api/ejgantt#members:editsettings-allowoutdent">allowOutdent</a></li>
-                                    <li id="toc-members:editsettings-editmode"><a href="/js/api/ejgantt#members:editsettings-editmode">editMode</a></li>                                    
+                                    <li id="toc-members:editsettings-editmode"><a href="/js/api/ejgantt#members:editsettings-editmode">editMode</a></li>
+                                    <li id="toc-members:editsettings-begineditaction"><a href="/js/api/ejgantt#members:editsettings-begineditaction">beginEditAction</a></li>                                                                        
                                 </ul>
                             </li>
                             <li id="toc-members:enablePredecessorValidation"><a href="/js/api/ejgantt#members:enablepredecessorvalidation">enablePredecessorValidation</a></li>
@@ -3469,6 +3471,7 @@
                             <li id="toc-members:highlightweekends"><a href="/js/api/ejgantt#members:highlightweekends">highlightWeekends</a></li>
                             <li id="toc-members:holidays"><a href="/js/api/ejgantt#members:holidays">holidays</a></li>
                             <li id="toc-members:includeweekend"><a href="/js/api/ejgantt#members:includeweekend">includeWeekend</a></li>
+                            <li id="toc-members:isresponsive"><a href="/js/api/ejgantt#members:isresponsive">isResponsive</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejgantt#members:locale">locale</a></li>
                             <li id="toc-members:lefttasklabelmapping"><a href="/js/api/ejgantt#members:lefttasklabelmapping">leftTaskLabelMapping</a></li>
                             <li id="toc-members:lefttasklabeltemplate"><a href="/js/api/ejgantt#members:lefttasklabeltemplate">leftTaskLabelTemplate</a></li>                            
@@ -3592,6 +3595,7 @@
                             <li id="toc-events:collapsed"><a href="/js/api/ejgantt#events:collapsed">collapsed</a></li>
                             <li id="toc-events:collapsing"><a href="/js/api/ejgantt#events:collapsing">collapsing</a></li>
                             <li id="toc-events:contextmenuopen"><a href="/js/api/ejgantt#events:contextmenuopen">contextMenuOpen</a></li>                            
+                            <li id="toc-events:create"><a href="/js/api/ejgantt#events:create">create</a></li>                            
                             <li id="toc-events:endedit"><a href="/js/api/ejgantt#events:endedit">endEdit</a></li>
                             <li id="toc-events:expanded"><a href="/js/api/ejgantt#events:expanded">expanded</a></li>
                             <li id="toc-events:expanding"><a href="/js/api/ejgantt#events:expanding">expanding</a></li>
@@ -9552,15 +9556,21 @@
                                     <li id="toc-members:columns-allowcellselection"><a href="/js/api/ejtreegrid#members:columns-allowcellselection">allowCellSelection</a></li>                                    
                                     <li id="toc-members:columns-allowfiltering"><a href="/js/api/ejtreegrid#members:columns-allowfiltering">allowFiltering</a></li>
                                     <li id="toc-members:columns-allowsorting"><a href="/js/api/ejtreegrid#members:columns-allowsorting">allowSorting</a></li>
+                                    <li id="toc-members:columns-allowfreezing"><a href="/js/api/ejtreegrid#members:columns-allowfreezing">allowFreezing</a></li>
+                                    <li id="toc-members:columns-allowediting"><a href="/js/api/ejtreegrid#members:columns-allowediting">allowEditing</a></li>
                                     <li id="toc-members:columns-edittype"><a href="/js/api/ejtreegrid#members:columns-edittype">editType</a></li>
                                     <li id="toc-members:columns-field"><a href="/js/api/ejtreegrid#members:columns-field">field</a></li>
                                     <li id="toc-members:columns-filteredittype"><a href="/js/api/ejtreegrid#members:columns-filteredittype">filterEditType</a></li>
+                                    <li id="toc-members:columns-format"><a href="/js/api/ejtreegrid#members:columns-format">format</a></li>                                    
                                     <li id="toc-members:columns-headertext"><a href="/js/api/ejtreegrid#members:columns-headertext">headerText</a></li>
-                                    <li id="toc-members:columns-visible"><a href="/js/api/ejtreegrid#members:columns-visible">visible</a></li>                                    
                                     <li id="toc-members:columns-headertemplateid"><a href="/js/api/ejtreegrid#members:columns-headertemplateid">headerTemplateID</a></li>
+                                    <li id="toc-members:columns-headertextalign"><a href="/js/api/ejtreegrid#members:columns-headertextalign">headerTextAlign</a></li>
+                                    <li id="toc-members:columns-istemplatecolumn"><a href="/js/api/ejtreegrid#members:columns-istemplatecolumn">isTemplateColumn</a></li>                                                                     
                                     <li id="toc-members:columns-isfrozen"><a href="/js/api/ejtreegrid#members:columns-isfrozen">isFrozen</a></li>
-                                    <li id="toc-members:columns-allowfreezing"><a href="/js/api/ejtreegrid#members:columns-allowfreezing">allowFreezing</a></li>
-                                </ul>
+                                    <li id="toc-members:columns-textalign"><a href="/js/api/ejtreegrid#members:columns-textalign">textAlign</a></li>
+                                    <li id="toc-members:columns-templateid"><a href="/js/api/ejtreegrid#members:columns-templateid">templateID</a></li>
+                                    <li id="toc-members:columns-visible"><a href="/js/api/ejtreegrid#members:columns-visible">visible</a></li>         
+                               </ul>
                             </li>
                             <li id="toc-members:columndialogfields"><a href="/js/api/ejtreegrid#members:columndialogfields">columnDialogFields</a></li>                            
                             <li id="toc-members:contextmenusettings"><a href="/js/api/ejtreegrid#members:contextmenusettings">contextMenuSettings</a>
@@ -9571,6 +9581,8 @@
                             </li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejtreegrid#members:cssclass">cssClass</a></li>
                             <li id="toc-members:datasource"><a href="/js/api/ejtreegrid#members:datasource">dataSource</a></li>
+                            <li id="toc-members:detailstemplate"><a href="/js/api/ejtreegrid#members:detailstemplate">detailsTemplate</a></li>
+                            <li id="toc-members:detailsrowheight"><a href="/js/api/ejtreegrid#members:detailsrowheight">detailsRowHeight</a></li>
                             <li id="toc-members:dragtooltip"><a href="/js/api/ejtreegrid#members:dragtooltip">dragTooltip</a>
                                 <ul>
                                     <li id="toc-members:dragtooltip-showtooltip"><a href="/js/api/ejtreegrid#members:dragtooltip-showtooltip">showTooltip</a></li>
@@ -9585,14 +9597,22 @@
                                     <li id="toc-members:editsettings-allowediting"><a href="/js/api/ejtreegrid#members:editsettings-allowediting">allowEditing</a></li>                                    
                                     <li id="toc-members:editsettings-editmode"><a href="/js/api/ejtreegrid#members:editsettings-editmode">editMode</a></li>
                                     <li id="toc-members:editsettings-rowposition"><a href="/js/api/ejtreegrid#members:editsettings-rowposition">rowPosition</a></li>
+                                    <li id="toc-members:editsettings-begineditaction"><a href="/js/api/ejtreegrid#members:editsettings-begineditaction">beginEditAction</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:enablealtrow"><a href="/js/api/ejtreegrid#members:enablealtrow">enableAltRow</a></li>
                             <li id="toc-members:enablecollapseall"><a href="/js/api/ejtreegrid#members:enablecollapseall">enableCollapseAll</a></li>
                             <li id="toc-members:enableresize"><a href="/js/api/ejtreegrid#members:enableresize">enableResize</a></li>
                             <li id="toc-members:enablevirtualization"><a href="/js/api/ejtreegrid#members:enablevirtualization">enableVirtualization</a></li>
-                            <li id="toc-members:filterbarmode"><a href="/js/api/ejtreegrid#members:filterbarmode">filterBarMode</a></li>
-                            <li id="toc-members:idmapping"><a href="/js/api/ejtreegrid#members:idmapping">idMapping</a></li>
+                            <li id="toc-members:filtersettings"><a href="/js/api/ejtreegrid#members:filtersettings">filterSettings</a>
+                                <ul>
+                                    <li id="toc-members:filtersettings-filterbarmode"><a href="/js/api/ejtreegrid#members:filtersettings-filterbarmode">filterBarMode</a></li>
+                                    <li id="toc-members:filtersettings-filteredcolumns"><a href="/js/api/ejtreegrid#members:filtersettings-filteredcolumns">filteredColumns</a></li>                                                                  
+                               </ul>
+                            </li>
+                            <li id="toc-members:idmapping"><a href="/js/api/ejtreegrid#members:idmapping">idMapping</a></li> 
+                            <li id="toc-members:isresponsive"><a href="/js/api/ejtreegrid#members:isresponsive">isResponsive</a></li>                          
+                            <li id="toc-members:locale"><a href="/js/api/ejtreegrid#members:locale">locale</a></li>                            
                             <li id="toc-members:pagesettings"><a href="/js/api/ejtreegrid#members:pagesettings">pageSettings</a>
                                 <ul>
                                     <li id="toc-members:pagesettings-pagecount"><a href="/js/api/ejtreegrid#members:pagesettings-pagecount">pageCount</a></li>
@@ -9611,9 +9631,14 @@
                             <li id="toc-members:selectionmode"><a href="/js/api/ejtreegrid#members:selectionmode">selectionMode</a></li>                            
                             <li id="toc-members:selectiontype"><a href="/js/api/ejtreegrid#members:selectiontype">selectionType</a></li>
                             <li id="toc-members:showcolumnchooser"><a href="/js/api/ejtreegrid#members:showcolumnchooser">showColumnChooser</a></li>
-                            <li id="toc-members:showcolumnoptions"><a href="/js/api/ejtreegrid#members:showcolumnoptions">showColumnOptions</a></li>                            
+                            <li id="toc-members:showcolumnoptions"><a href="/js/api/ejtreegrid#members:showcolumnoptions">showColumnOptions</a></li>
+                            <li id="toc-members:showdetailsrow"><a href="/js/api/ejtreegrid#members:showdetailsrow">showDetailsRow</a></li>
+                            <li id="toc-members:showdetailsrowinfocolumn"><a href="/js/api/ejtreegrid#members:showdetailsrowinfocolumn">showDetailsRowInfoColumn</a></li>
                             <li id="toc-members:showgridcelltooltip"><a href="/js/api/ejtreegrid#members:showgridcelltooltip">showGridCellTooltip</a></li>
-                            <li id="toc-members:showgridexpandcelltooltip"><a href="/js/api/ejtreegrid#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>
+                            <li id="toc-members:showgridexpandcelltooltip"><a href="/js/api/ejtreegrid#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>                            
+                            <li id="toc-members:showsummaryrow"><a href="/js/api/ejtreegrid#members:showsummaryrow">showSummaryRow</a></li>
+                            <li id="toc-members:showtotalsummary"><a href="/js/api/ejtreegrid#members:showtotalsummary">showTotalSummary</a></li>
+                            <li id="toc-members:summaryrows"><a href="/js/api/ejtreegrid#members:summaryrows">summaryRows</a></li>
                             <li id="toc-members:sizesettings"><a href="/js/api/ejtreegrid#members:sizesettings">sizeSettings</a>
                                 <ul>
                                     <li id="toc-members:sizesettings-height"><a href="/js/api/ejtreegrid#members:sizesettings-height">height</a></li>
@@ -9636,9 +9661,11 @@
                     </li>
                     <li><a href="/js/api/ejtreegrid#methods">Methods</a>
                         <ul>
+                            <li id="toc-methods:addrow"><a href="/js/api/ejtreegrid#methods:addrow">addRow</a></li>
                             <li id="toc-methods:clearselection"><a href="/js/api/ejtreegrid#methods:clearselection">clearSelection</a></li>
                             <li id="toc-methods:collapseall"><a href="/js/api/ejtreegrid#methods:collapseall">collapseAll</a></li>
-                            <li id="toc-methods:gotopage"><a href="/js/api/ejtreegrid#methods:gotopage">gotoPage</a></li>                            
+                            <li id="toc-methods:expandatlevel"><a href="/js/api/ejtreegrid#methods:expandatlevel">expandAtLevel</a></li>
+                            <li id="toc-methods:collapseatlevel"><a href="/js/api/ejtreegrid#methods:collapseatlevel">collapseAtLevel</a></li>                                                                                    
                             <li id="toc-methods:hidecolumn"><a href="/js/api/ejtreegrid#methods:hidecolumn">hideColumn</a></li>                            
                             <li id="toc-methods:renamecolumn"><a href="/js/api/ejtreegrid#methods:renamecolumn">renameColumn</a></li>
                             <li id="toc-methods:deletecolumn"><a href="/js/api/ejtreegrid#methods:deletecolumn">deleteColumn</a></li>
@@ -9665,6 +9692,7 @@
                             <li id="toc-events:columnresizeend"><a href="/js/api/ejtreegrid#events:columnresizeend">columnResizeEnd</a></li>
                             <li id="toc-events:columnresized"><a href="/js/api/ejtreegrid#events:columnresized">columnResized</a></li>                     
                             <li id="toc-events:contextmenuopen"><a href="/js/api/ejtreegrid#events:contextmenuopen">contextMenuOpen</a></li>
+                            <li id="toc-events:create"><a href="/js/api/ejtreegrid#events:create">create</a></li>                            
                             <li id="toc-events:endedit"><a href="/js/api/ejtreegrid#events:endedit">endEdit</a></li>
                             <li id="toc-events:expanded"><a href="/js/api/ejtreegrid#events:expanded">expanded</a></li>
                             <li id="toc-events:expanding"><a href="/js/api/ejtreegrid#events:expanding">expanding</a></li>
@@ -10385,19 +10413,19 @@
             <li><a href="/js/gantt/editing">Editing</a></li>
             <li><a href="/js/gantt/schedule-modes">Schedule Modes</a></li>
             <li><a href="/js/gantt/columns">Columns</a></li>
-            <li><a href="/js/gantt/task-relationship">Task Relationship</a></li>            
+            <li><a href="/js/gantt/task-relationship">Task Relationship</a></li>
             <li><a href="/js/gantt/time-options">Time Options</a></li>
             <li><a href="/js/gantt/validating-schedule-dates">Validating Schedule Dates</a></li>
             <li><a href="/js/gantt/context-menu">Context Menu</a></li>
-            <li><a href="/js/gantt/customizations">Customizations</a></li>                
-            <li><a href="/js/gantt/sorting">Sorting</a></li>            
+            <li><a href="/js/gantt/customizations">Customizations</a></li>
+            <li><a href="/js/gantt/sorting">Sorting</a></li>
 			<li><a href="/js/gantt/searching">Searching</a></li>
             <li><a href="/js/gantt/toolbar">Toolbar</a></li>
-            <li><a href="/js/gantt/baseline">Baseline</a></li>
+            <li><a href="/js/gantt/baseline">Baseline</a></li>            
             <li><a href="/js/gantt/resources">Resources</a></li>
             <li><a href="/js/gantt/stripline">Stripline</a></li>
             <li><a href="/js/gantt/holidays">Holidays</a></li>
-            <li><a href="/js/gantt/localization">Localization</a></li>            
+            <li><a href="/js/gantt/localization">Localization</a></li>
             <li><a href="/js/gantt/appearance-and-styling">Appearance and Styling</a></li>
             <li>
                 How to
