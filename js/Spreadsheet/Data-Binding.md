@@ -37,7 +37,7 @@ $(function () {
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-##  Remote Data
+## Remote Data
 
 To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") to the worksheet [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet,
 
@@ -61,6 +61,38 @@ $(function () {
 
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img2.png)
+
+### Offline Mode
+
+To avoid sending post back request to server on every action, Spreadsheet allows user to create, update and delete data on client side. To enable this, set `offline` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") as `true` to fetch all data from server on initial rendering of Spreadsheet and perform all operation on client side.
+
+The following code illustrates offline data binding for Spreadsheet,
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div>
+
+<script>
+$(function () {
+    $("#Spreadsheet").ejSpreadsheet({
+        sheets: [{
+            dataSource: ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
+                offline: true
+            }),
+            query: ej.Query().take(5).select(["OrderID", "CustomerID", "EmployeeID", "ShipName",  "ShipAddress"]),
+            primaryKey: "OrderID"
+        }],
+    });
+});
+</script>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code snippets.
+![](Data-Binding_images/Data-Binding_img7.png)
+
+N> For further reference about `offline` property in [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") refer following [`link`](http://help.syncfusion.com/js/datamanager/data-binding#offline-mode "link")
 
 ## HTML Table Data
 
