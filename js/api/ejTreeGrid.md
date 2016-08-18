@@ -539,24 +539,6 @@ Specifies the header template value for the column header
 
 {% endhighlight %}
 
-### columns.isFrozen `boolean`
-
-{:#members:columns-isfrozen}
-
-Specifies whether the column is frozen
-
-#### Default Value
-
-* false
-
-#### Example
-
-{% highlight html %}
-         
-        $("#treegrid").ejTreeGrid({columns: [{  isFrozen: true}]});
-
-{% endhighlight %}
-
 ### columns.format `object`
 {:#members:columns-format}
 
