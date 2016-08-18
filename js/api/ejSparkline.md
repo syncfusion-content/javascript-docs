@@ -367,7 +367,7 @@ Start value of the range band.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    rangebandsettings:{
+     rangeBandSettings:{
         startRange : 2
     }                  
 });
@@ -391,7 +391,7 @@ End value of the range band.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    rangebandsettings:{
+    rangeBandSettings:{
         endRange : 2
     }                  
 });
@@ -415,7 +415,7 @@ Range band opacity of the series.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    rangebandsettings:{
+     rangeBandSettings:{
         opacity : 2
     }                  
 });
@@ -439,7 +439,7 @@ Range band color of the series.
 {% highlight js %} 
  
 $("#container").ejSparkline({
-    rangebandsettings:{
+    rangeBandSettings:{
         color : 'purple'
     }                  
 });
@@ -870,7 +870,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l5pmkkgr)
  
 
  
- ### tooltip.border `object`
+### tooltip.border `object`
 {:#members:tooltip-border}
 
 Options for customizing the border of the tooltip.
@@ -920,7 +920,7 @@ $("#container").ejSparkline({
 
 
 ### tooltip.font `object`
-{:#members:tooltip.font}
+{:#members:tooltip-font}
 
 Options for customizing the font of the tooltip.
 
@@ -983,7 +983,7 @@ tooltip :{ font : { fontFamily : "Algerian"}}
  {% endhighlight %}
  
  
- ### tooltip.font.fontStyle `enum`
+### tooltip.font.fontStyle `enum`
 {:#members:tooltip-font-fontstyle}
 
 
@@ -1162,7 +1162,7 @@ tooltip :{font :{size : "14px"}}
 });
 {% endhighlight %}
 
- ### markerSettings `object`
+### markerSettings `object`
 {:#members:markersettings}
 
 Options for displaying and customizing marker for a data point.
@@ -1171,7 +1171,7 @@ Options for displaying and customizing marker for a data point.
 
 
 ### markerSettings.opacity `number`
-{:#members:markerSettings-opacity}
+{:#members:markersettings-opacity}
 
 Controls the opacity of the marker.
 
@@ -1289,7 +1289,7 @@ $("#container").ejSparkline({
 
 
 ### markerSettings.border.opacity `number`
-{:#members:markerSettings-border-opacity}
+{:#members:markersettings-border-opacity}
 
 Controls the opacity of the marker border.
 
@@ -1395,7 +1395,7 @@ $("#container").ejSparkline({
 
 
 ### axisLineSettings `object`
-{:#members:axisLineSettings}
+{:#members:axislineSettings}
 
 Options for customizing the color,dashArray and width of the axisLine.
 
@@ -1404,7 +1404,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 
 
 ### axisLineSettings.visible `boolean`
-{:#members:axisLineSettings-visible}
+{:#members:axislineSettings-visible}
 
 Controls the visibility of the axis. 
 
@@ -1426,7 +1426,7 @@ $("#container").ejSparkline({
 
 
 ### axisLineSettings.color `string`
-{:#members:axisLineSettings-color}
+{:#members:axislineSettings-color}
 
 Color of the axis line.
 
@@ -1633,8 +1633,8 @@ type{% endhighlight %}</td>
 
 
 
-### tooltipInitialization
-{:#events:tooltipinitializaion}
+### tooltipInitialize
+{:#events:tooltipinitialization}
 
 Fires before rendering trackball tooltip. You can use this event to customize the text displayed in trackball tooltip.
 
@@ -1646,7 +1646,7 @@ Fires before rendering trackball tooltip. You can use this event to customize th
 
 $("#container").ejSparkline({
 
-    tooltipInitializaion: function (args) {
+    tooltipInitialize: function (args) {
               //Do something
     }
    
