@@ -7,7 +7,7 @@ platform: js
 keywords: globalization and localization,kanban globalization and localizationards
 ---
 
-# Globalization and Localization
+# Localization
 
 ## Localization
 
