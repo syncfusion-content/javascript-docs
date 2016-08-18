@@ -822,7 +822,7 @@ Upon clicking to the Prepend button, which will insert the items at index of “
     
 {% endhighlight %}
 
-If you click the postpond button, which insert items at the last index in the DropDownList.
+If you click the postpone button, which insert items at the last index in the DropDownList.
 
 {% highlight javascript %}
 

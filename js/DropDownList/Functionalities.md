@@ -71,7 +71,7 @@ The following API’s, select the items in the DropDownList via text or value or
 </table>
 
 N> Index starts from 0 here.
-N> To use “selectedIndices” property, you should enable wither showCheckbox or multipSelectMode property.
+N> To use “selectedIndices” property, you should enable with showCheckbox or multiSelectMode property.
 
 The following methods, select the items in the DropDownList.
 
