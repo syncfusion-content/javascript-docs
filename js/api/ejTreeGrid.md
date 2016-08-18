@@ -593,7 +593,8 @@ Specifies whether the column is a template column
 
 {% endhighlight %}
 
-### columns.headerTextAlign `String`
+
+### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
 
 <ts name = "ej.TextAlign"/>
@@ -656,7 +657,7 @@ Specifies whether the column is frozen
 
 {% endhighlight %}
 
-### columns.textAlign `String`
+### columns.textAlign `enum`
 {:#members:columns-textalign}
 
 <ts name = "ej.TextAlign"/>
