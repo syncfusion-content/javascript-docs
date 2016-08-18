@@ -265,7 +265,7 @@ Example</th>
 <tr>
 <td>
 Numeric</td><td>
-[`ejTextBoxes`](https://help.syncfusion.com/js/api/ejtextboxes)</td>
+{{ '[ejTextBoxes](https://help.syncfusion.com/js/api/ejtextboxes)' | markdownify }} </td>
 <td>
 control for integers, double, and decimal data’s</td>
 <td>
@@ -283,7 +283,7 @@ HTML Textbox</td>
 <tr>
 <td>
 DatePicker </td><td>
-[`ejDatePicker`](https://help.syncfusion.com/js/api/ejdatepicker)</td>
+{{ '[ejDatePicker](https://help.syncfusion.com/js/api/ejdatepicker)' | markdownify }} </td>
 <td>
 control for date data</td>
 <td>
@@ -292,7 +292,7 @@ editParams: { buttonText : "Now" }</td>
 <tr>
 <td>
 DateTimePicker </td><td>
-[`ejDateTimePicker`](https://help.syncfusion.com/js/api/ejdatetimepicker)</td>
+{{ '[ejDateTimePicker](https://help.syncfusion.com/js/api/ejdatetimepicker)' | markdownify }} </td>
 <td>
 control for date data-time data</td>
 <td>
@@ -301,7 +301,7 @@ editParams: { enabled: true }</td>
 <tr>
 <td>
 DropDown </td><td>
-[`ejDropDownList`](https://help.syncfusion.com/js/api/ejdropdownlist)</td>
+{{ '[ejDropDownList](https://help.syncfusion.com/js/api/ejdropdownlist)' | markdownify }} </td>
 <td>
 control for list of data</td>
 <td>
@@ -310,7 +310,7 @@ editParams: { allowGrouping: true }</td>
 <tr>
 <td>
 RTE </td><td>
-[`ejRTE`](https://help.syncfusion.com/js/api/ejrte)</td>
+{{ '[ejRTE](https://help.syncfusion.com/js/api/ejrte)' | markdownify }} </td>
 <td>
 control for customizing text in RTE format</td>
 <td>
@@ -601,7 +601,7 @@ Please refer to the below screenshot.
 
 ![](Editing_images/editing_img6.png)
 
-Using ‘DataOperations’ helper class you can perform Kanban action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
+Using `DataOperations` helper class you can perform Kanban action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
 
 1.	PerformTake
 2.	PerformSelect
@@ -609,7 +609,7 @@ Using ‘DataOperations’ helper class you can perform Kanban action at server 
 
 ### Accessing CRUD action request details in server side
 
-The ‘Server-Side’ function must be declared with the following parameter name for each editing functionality.
+The `Server-Side` function must be declared with the following parameter name for each editing functionality.
 
 #### Parameters Table
 

@@ -22,19 +22,19 @@ Mapping Fields</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`keyField`](https://help.syncfusion.com/js/api/ejkanban#members:keyField)</td><td>
-Map the column name to use as [`key`](https://help.syncfusion.com/js/api/ejkanban#members:columns-key) values to columns.</td></tr>
+{{ '[keyField](https://help.syncfusion.com/js/api/ejkanban#members:keyField)' | markdownify }} </td><td>
+Map the column name to use as {{ '[key](https://help.syncfusion.com/js/api/ejkanban#members:columns-key)'| markdownify }} values to columns.</td></tr>
 <tr>
 <td>
-[`columns.key`](https://help.syncfusion.com/js/api/ejkanban#members:columns-key) </td><td>
+{{ '[columns.key](https://help.syncfusion.com/js/api/ejkanban#members:columns-key)' | markdownify }} </td><td>
 Map the corresponding `key` values of `keyField` column to each columns.</td></tr>
 <tr>
 <td>
-[`columns.headerText`](https://help.syncfusion.com/js/api/ejkanban#members:columns-headertext) </td><td>
+{{ '[columns.headerText](https://help.syncfusion.com/js/api/ejkanban#members:columns-headertext)' | markdownify }} </td><td>
  It represents the title for particular column</td></tr>
 <tr>
 <td>
-[`fields.content`](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)</td><td>
+{{ '[fields.content](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)' | markdownify }} </td><td>
 Map the column name to use as content to cards.</td></tr>
 </table>
 
