@@ -246,7 +246,7 @@ The altRow background can be changed by setting the background color for the alt
 
     <style>
         .e-treegrid .e-alt-row {
-            background-color: red;
+            background-color: Bisque;
         }
     </style>
 
