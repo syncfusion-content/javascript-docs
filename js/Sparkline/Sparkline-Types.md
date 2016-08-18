@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line Type
 
-To render a Line type Sparkline, set the [`type`](../api/ejsparkline.html#members:type) as **line**. To change the color and width of the line, you can use the [`fill`](../api/ejsparkline.html#members:fill) and [`width'](../api/ejsparkline.html#members:width) property.	
+To render a Line type Sparkline, set the [`type`](../api/ejsparkline.html#members:type) as **line**. To change the color and width of the line, you can use the [`fill`](../api/ejsparkline.html#members:fill) and [`width`](../api/ejsparkline.html#members:width) property.	
 
 {% highlight javascript %}
 
