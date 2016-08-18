@@ -223,7 +223,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img3.png)
 
-## IsCollasped 
+## Toggle 
 
 You can set particular column collapsed state in Kanban by setting [`isCollapsed`](https://help.syncfusion.com/js/api/ejkanban#members:columns-iscollapsed) property of it as true. You need to set [`allowToggleColumn`](https://help.syncfusion.com/js/api/ejkanban#members:allowtogglecolumn) as true to use “Expand/Collapse” Column.
 

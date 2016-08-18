@@ -11,7 +11,7 @@ keywords: editing,kanban editing
 
 The Kanban control has support for dynamic insertion, updating and deletion of cards. 
 
-Set [`allowEditing`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowediting) and [`allowAdding`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowadding) property as true to enable editing/inserting respectively. The primary key for the data source should be defined in [`primayKey`](https://help.syncfusion.com/js/api/ejkanban#members:primarykey), for editing to work properly. 
+Set [`allowEditing`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowediting) and [`allowAdding`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowadding) property as true to enable editing/inserting respectively. The primary key for the data source should be defined in [`primaryKey`](https://help.syncfusion.com/js/api/ejkanban#members:primarykey), for editing to work properly. 
 
 You can start the edit action by double clicking the particular card. Similarly, you can add new card to Kanban either by double clicking the particular cell or on an external button which is bound to call [`addCard`](https://help.syncfusion.com/js/api/ejkanban#methods:kanbanedit-addcard) method of Kanban. 
 
@@ -248,7 +248,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) property of [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems). The following Essential JavaScript controls are supported inbuilt by `editType`. And also you can define the model for all the edit types controls while editing through `editParams` property of `editItems`.
+The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) property of [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems). The following Essential JavaScript controls are supported built-in by `editType`. And also you can define the model for all the edit types controls while editing through `editParams` property of `editItems`.
 
 The following table describes [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) and their corresponding [`editParams`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-editparams) of the specific data type of the column.
 
@@ -274,9 +274,9 @@ editParams: { decimalPlaces: 2}</td>
 <tr>
 <td>
 String</td><td>
-Html Textbox</td>
+HTML Textbox</td>
 <td>
-Html Textbox</td>
+HTML Textbox</td>
 <td>
 -</td>
 </tr>
@@ -319,7 +319,7 @@ editParams: { allowResize: true }</td>
 <tr>
 <td>
 TextArea </td><td>
-Html TextArea</td>
+HTML TextArea</td>
 <td>
 Control for multi-line plain-text editing</td>
 <td>

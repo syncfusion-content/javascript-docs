@@ -24,7 +24,7 @@ Description</th></tr>
 <tr>
 <td>
 [`tag`](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag) </td><td>
-Map the column name to use as tag. Multiple tags can be given with comma separated.  Eg. “API”,”Sql,Database”.</td></tr>
+Map the column name to use as tag. Multiple tags can be given with comma separated.  E.g. "API","SQL, Database".</td></tr>
 <tr>
 <td>
 [`color`](https://help.syncfusion.com/js/api/ejkanban#members:fields-color) </td><td>
@@ -106,7 +106,7 @@ The following output is displayed as a result of the above code example.
 
 ## Template
 
-Templates are used to create custom card layout as per the user convenient. Html templates can be specified in the [`template`](https://help.syncfusion.com/js/api/ejkanban#members:cardSettings-template) property of the [`cardSettings`](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
+Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the [`template`](https://help.syncfusion.com/js/api/ejkanban#members:cardSettings-template) property of the [`cardSettings`](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer this [`link`](https://www.jsviews.com/).
 
