@@ -539,23 +539,6 @@ Specifies the header template value for the column header
 
 {% endhighlight %}
 
-### columns.isFrozen `boolean`
-
-{:#members:columns-isfrozen}
-
-Specifies whether the column is frozen
-
-#### Default Value
-
-* false
-
-#### Example
-
-{% highlight html %}
-         
-        $("#treegrid").ejTreeGrid({columns: [{  isFrozen: true}]});
-
-{% endhighlight %}
 
 ### columns.format `object`
 {:#members:columns-format}
@@ -592,7 +575,6 @@ Specifies whether the column is a template column
      $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
 
 {% endhighlight %}
-
 
 ### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
@@ -1449,7 +1431,7 @@ This specifies the number of rows to display in each page.
 ### pageSettings.totalRecordsCount `number`
 {:#members:pagesettings-totalrecordscount}
 
-Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasoure bound to TreeGrid.
+Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
 
 
 #### Default Value:
@@ -2105,76 +2087,6 @@ Shows/hides the toolbar.
         $("#treegrid").ejTreeGrid({ showToolBar:  true });                       
 
 {% endhighlight %}
-
-
-### toolbarSettings.toolbarItems `array`
-{:#members:toolbarsettings-toolbaritems}
-
-<ts name = "ej.TreeGrid.ToolbarItems"/>
-
-Specifies the list of toolbar items to be rendered in TreeGrid toolbar
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Add</td>
-<td class="description">Enables the add icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">Edit</td>
-<td class="description">Enables the edit icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">Delete</td>
-<td class="description">Enables the edit icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">Update</td>
-<td class="description">Enables the update icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">Cancel</td>
-<td class="description">Enables the cancel icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">ExpandAll</td>
-<td class="description">Enables the expand all icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">Collapse All</td>
-<td class="description">Enables the collapse all icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">PdfExport</td>
-<td class="description">Enables the pdf export icon in toolbar</td>
-</tr>
-<tr>
-<td class="name">ExcelExport</td>
-<td class="description">Enables the excel export icon in toolbar</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value:
-{:.param}
-* []
-
-
-#### Example
-
-
-{% highlight html %}
- 
-        $("#treegrid").ejTreeGrid({ toolbarItems: [ej.TreeGrid.ToolbarItems.Add,ej.TreeGrid.ToolbarItems.Edit] });                       
-
-{% endhighlight %}
-
 
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
@@ -4793,7 +4705,7 @@ Triggered after selected a cell
 <td class="description">Returns the previously selected cell index</td>
 </tr>
 <tr>
-<td class="name">perviousRowIndex</td>
+<td class="name">previousRowIndex</td>
 <td class="type">object</td>
 <td class="description">Returns the previously selected row index</td>
 </tr>
