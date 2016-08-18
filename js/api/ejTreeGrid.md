@@ -539,6 +539,7 @@ Specifies the header template value for the column header
 
 {% endhighlight %}
 
+
 ### columns.format `object`
 {:#members:columns-format}
 
@@ -574,7 +575,6 @@ Specifies whether the column is a template column
      $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
 
 {% endhighlight %}
-
 
 ### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
