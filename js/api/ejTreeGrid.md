@@ -558,6 +558,7 @@ Specifies the display format of a column
 
 {% endhighlight %}
 
+
 ### columns.isTemplateColumn `boolean`
 
 {:#members:columns-istemplatecolumn}
@@ -684,6 +685,7 @@ Specifies the text alignment for the column
         $("#treegrid").ejTreeGrid({columns: [{  textAlign: ej.TextAlign.Center},{ textAlign: ej.TextAlign.Right}]});
 
 {% endhighlight %}
+
 
 ### columns.templateID `String`
 
