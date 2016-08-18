@@ -499,6 +499,7 @@ Specify the CSS class for Gantt to achieve custom theme.
 
 {% endhighlight %}
 
+
 ### cellTooltipTemplate `string`
 {:#members:celltooltiptemplate}
 
@@ -757,7 +758,7 @@ Specifies the fields to be included in the edit dialog in Gantt
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Enables or disables the responsiveness of TreeGrid
+Enables or disables the responsiveness of Gantt
 
 #### Default Value
 
