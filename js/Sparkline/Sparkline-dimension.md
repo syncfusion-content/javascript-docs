@@ -44,7 +44,7 @@ $("#container").ejSparkline({
 
 ## Responsive Sparkline
 
-To resize the Sparkline when the browser or the sparkline container is resized, set the [`isResponsive`](../api/ejsparkline#members:isResponsive) property to **true**, where the sparkline adapts to the changes in size of the container. 
+To resize the Sparkline when the browser or the sparkline container is resized, set the [`isResponsive`](../api/ejsparkline#members:isresponsive) property to **true**, where the sparkline adapts to the changes in size of the container. 
 
 {% highlight javascript %}
 
