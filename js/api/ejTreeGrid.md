@@ -1264,7 +1264,7 @@ Specifies the mode on which column filtering should start
 ### filterSettings.filteredColumns `array`
 {:#members:filtersettings-filteredcolumns}
 
-Specifies the column collection for filering the TreeGrid content on initial load
+Specifies the column collection for filtering the TreeGrid content on initial load
 
 #### Default Value
 
