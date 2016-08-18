@@ -6,13 +6,17 @@ control: ejPdfViewer
 documentation: api
 keywords: ejPdfViewer, Services, Essential JS PDF Viewer, PDF Viewer
 ---
+## PDF Viewer services
+
 ### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/PostViewerAction 
+
 ### Parameter
+
 <table>
 <thead>
 <tr>
 <th>
-{{'**Parameter name **'| markdownify }}
+{{'Parameter name '| markdownify }}
 </th>
 <th>
 {{'**Datatype**'| markdownify }}
@@ -80,11 +84,10 @@ Specify the ajax request whether the request is initial loading or consecutive l
 </tr>
 </tbody>
 </table>
+
 ### Request
-<table>
-<thead>
-<tr>
-<th>
+
+{% highlight javascript %}
 $.ajax({
     type: 'POST',
     contentType: 'application/json: charset=utf-8',
@@ -97,16 +100,16 @@ $.ajax({
         "pageindex": "1"
     }])
 });
-</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+{% endhighlight %}
+
 ### Response
+
 #### Code:  200
+
 #### Content-Type:”application/json:charset=utf-8”;
+
 #### Response Text:
+
 <table>
 <thead>
 <tr>
@@ -185,13 +188,16 @@ Collection of page number which contain annotation
 </tr>
 </tbody>
 </table>
+
 ### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/FileUploadPostAction  
+
 ### Parameter
+
 <table>
 <thead>
 <tr>
 <th>
-{{'**Parameter name **'| markdownify }}
+{{'Parameter name'| markdownify }}
 </th>
 <th>
 {{'**Datatype**'| markdownify }}
@@ -270,11 +276,10 @@ New file name to be loaded into the PDF Viewer
 </tr>
 </tbody>
 </table>
+
 ### Request
-<table>
-<thead>
-<tr>
-<th>
+
+{% highlight javascript %}
 $.ajax({
     type: 'POST',
     contentType: 'application/json: charset=utf-8',
@@ -287,16 +292,16 @@ $.ajax({
         "pageindex": "1"
     }])
 });
-</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+{% endhighlight %}
+
 ### Response
+
 #### Code:  200
+
 #### Content-Type:”application/json:charset=utf-8”;
+
 #### Response Text:
+
 <table>
 <thead>
 <tr>
@@ -375,13 +380,16 @@ Collection of page number which contain annotation
 </tr>
 </tbody>
 </table>
+
 ### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/DocumentDownloadAction 
+
 ### Parameter
+
 <table>
 <thead>
 <tr>
 <th>
-{{'**Parameter name **'| markdownify }}
+{{'Parameter name'| markdownify }}
 </th>
 <th>
 {{'**Datatype**'| markdownify }}
@@ -416,11 +424,10 @@ PDF document name to be download
 </tr>
 </tbody>
 </table>
+
 ### Request
-<table>
-<thead>
-<tr>
-<th>
+
+{% highlight javascript %}
 $.ajax({
     type: 'POST',
     contentType: 'application/json: charset=utf-8',
@@ -430,16 +437,16 @@ $.ajax({
         "DocumentName: this.fileName
     }])
 });
-</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+{% endhighlight %}
+
 ### Response
+
 #### Code:  200
+
 #### Content-Type:”application/json:charset=utf-8”;
+
 #### Response Text:
+
 <table>
 <thead>
 <tr>
@@ -454,47 +461,91 @@ PDF document stream for downloading
 <tbody>
 </tbody>
 </table>
+
 ### PdfViewerHelper
+
 PdfViewerHelper class used to process the PDF document in server side.
+
 ### Methods:
+
 ### Load(string filename)
+
 Loads a PDF document in the PDF viewer from the specified file path.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(filepath/filename.pdf);
+
 ### Load(string filename, string password)
+
 Loads the encrypted PDF document.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(filepath/filename.pdf, password);
+
 ### Load(Stream documentStream)
+
 Loads the PDF document from the specified stream.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(documentStream);
+
 ### Load(Stream documentStream, string password)
+
 Loads the encrypted PDF document from the specified stream.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(documentStream,password);
+
 ### Load(PdfLoadedDocument ldoc)
+
 Loads the PDF document from the PdfLoadedDocument object.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(pdfloadeddocument);
+
 ### Load(byte[] byteArray)
+
 Loads the PDF document from the byte array.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(byteArray);
+
 ### Load(byte[] byteArray, string password)
+
 Loads the encrypted PDF document from the byte array.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(byteArray,password);
+
 ### ProcessPdf(Dictionary&lt;string,string&gt; jsonResult)
+
 Process the PDF document and convert them to json data.
+
 Code snippet:
+
 PdfViewerHelper helper = new PdfViewerHelper();
+
 helper.Load(filepath/filename.pdf);
+
 helper.ProcessPdf(jsonResult)
