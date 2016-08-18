@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Selection and Hovering
+title: Selection and Hovering
 description: Selection and Hovering
 documentation: ug
 platform: js

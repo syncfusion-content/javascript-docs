@@ -20,38 +20,38 @@ Mapping Fields</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`content`](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)</td><td> Map the column name to use as content to cards.</td></tr>
+{{ '[content](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)' | markdownify }} </td><td> Map the column name to use as content to cards.</td></tr>
 <tr>
 <td>
-[`tag`](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag) </td><td>
+{{ '[tag](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag)' | markdownify }}  </td><td>
 Map the column name to use as tag. Multiple tags can be given with comma separated.  Eg. “API”,”Sql,Database”.</td></tr>
 <tr>
 <td>
-[`color`](https://help.syncfusion.com/js/api/ejkanban#members:fields-color) </td><td>
+{{ '[color](https://help.syncfusion.com/js/api/ejkanban#members:fields-color)' | markdownify }} </td><td>
  Map the column name to use as colors to highlight cards left border.</td></tr>
 <tr>
 <td>
-[`colorMapping`](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings.colormapping)</td><td>
+{{ '[colorMapping](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings.colormapping)' | markdownify }} </td><td>
 Map the colors to use with column values which is mapped with `fields.color`.</td></tr>
 <tr>
 <td>
-[`imageUrl`](https://help.syncfusion.com/js/api/ejkanban#members:fields-imgurl)</td><td>
+{{ '[imageUrl](https://help.syncfusion.com/js/api/ejkanban#members:fields-imgurl)' | markdownify }} </td><td>
 Map the column name to use as image to cards.</td></tr>
 <tr>
 <td>
-[`primaryKey`](https://help.syncfusion.com/js/api/ejkanban#members:fields-primarykey)</td><td>
+{{ '[primaryKey](https://help.syncfusion.com/js/api/ejkanban#members:fields-primarykey)' | markdownify }} </td><td>
 Map the column name to use as primary key to cards.</td></tr>
 <tr>
 <td>
-[`priorityKey`](https://help.syncfusion.com/js/api/ejkanban#members:fields-prioritykey)</td><td>
+{{ '[priorityKey](https://help.syncfusion.com/js/api/ejkanban#members:fields-prioritykey)' | markdownify }} </td><td>
 Map the column name to use as priority key to cards.</td></tr>
 <tr>
 <td>
-[`title`](https://help.syncfusion.com/js/api/ejkanban#members:fields-title)</td><td>
+{{ '[title](https://help.syncfusion.com/js/api/ejkanban#members:fields-title)' | markdownify }} </td><td>
 Map the column name to use as title to cards. Default title is  `primaryKey`.</td></tr>
 <tr>
 <td>
-[`allowTitle`](https://help.syncfusion.com/js/api/ejkanban#members:allowtitle)</td><td>
+{{ '[allowTitle](https://help.syncfusion.com/js/api/ejkanban#members:allowtitle)' | markdownify }} </td><td>
 Set as true to enable title for card.</td></tr>
 </table>
 

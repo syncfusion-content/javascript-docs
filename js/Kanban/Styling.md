@@ -32,7 +32,7 @@ To modify Kanban appearance, you need to override default CSS of Kanban. Please 
             <td>
                 e-kanban 
             </td>
-            <td>
+            <td rowspan="2">
               This classes are in this root element (`div`) of Kanban control. 
             </td>
         </tr>
