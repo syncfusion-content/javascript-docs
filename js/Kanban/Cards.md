@@ -24,7 +24,7 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[tag](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag)' | markdownify }}  </td><td>
-Map the column name to use as tag. Multiple tags can be given with comma separated.  Eg. “API”,”Sql,Database”.</td></tr>
+Map the column name to use as tag. Multiple tags can be given with comma separated.  E.g. "API","SQL, Database".</td></tr>
 <tr>
 <td>
 {{ '[color](https://help.syncfusion.com/js/api/ejkanban#members:fields-color)' | markdownify }} </td><td>
