@@ -60,9 +60,9 @@ $("#container").ejSparkline({
 
 ![](/js/Sparkline/Sparkline-Types_images/Sparkline-Types_img3.png)
 
-## Winloss Type
+## WinLoss Type
 
-WinLoss Sparkline render as a column segment and it show the positive, negative and neutral values. You can customize the positive and negative color of the winloss type.
+WinLoss Sparkline render as a column segment and it show the positive, negative and neutral values. You can customize the positive and negative color of the win-loss type.
 
 {% highlight javascript %}
 
