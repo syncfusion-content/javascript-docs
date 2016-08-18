@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Presentation
 
-Data presentation is helpful for proper representation of data in Spreadsheet. You can perform the following operation in Data Presentation.
+Data presentation is helpful for proper representation of data in Spreadsheet. You have following features in Data Presentation.
 
 * Cell types
 * Chart
@@ -43,7 +43,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         allowCellType: true,
         loadComplete: "loadComplete"
@@ -67,7 +67,7 @@ The following output is displayed as a result of the above code example.
 
 ## Chart
 
-Chart is a graphical representation of data. Chart allows to see what the results of data to better understand and predict current and future data. It is usually one row of data with the associated column headings; or one column of data with the associated row headings. You can use [`allowCharts`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
+Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use [`allowCharts`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
 
 ### Type of Charts
 
@@ -90,29 +90,16 @@ You can create the Chart by one of the following ways,
 
 You can perform the following customizations for chart. These are available in DESIGN Tab which is enabled while clicking the chart element.
 
-#### Add Chart Elements
-
-You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.
-
-#### Switch Row/Column
-
-You can switch the row of the chart to column of the chart and vice versa.
-
-#### Select Data
-
-You can modify the data source of Chart.
-
-#### Chart Type
-
-You can change the type of the chart using Chart Type dialog.
-
-#### Height and Width
-
-You can change the height and width of the chart.
-
-#### Chart Themes
-
-You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.
+<table>
+    <colgroup><col width="180px" /></colgroup>
+    <tr><th>Feature</br></th><th>Description</br></th></tr>
+    <tr><td>Add Chart Elements</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
+    <tr><td>Switch Row/Column</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
+    <tr><td>Select Data</br></td><td>You can modify the data source of Chart.</br></td></tr>
+    <tr><td>Chart Type</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
+    <tr><td>Height and Width</br></td><td>You can change the height and width of the chart.</br></td></tr>
+    <tr><td>Chart Themes</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
+</table>
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -124,7 +111,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         allowCharting: true,
         loadComplete: "loadComplete"
@@ -165,14 +152,14 @@ $(function () {
 `   $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1"}],                               
+            rangeSettings: [{ dataSource: window.defaultData}],                               
         }],
         allowConditionalFormats: true,
         loadComplete: "loadComplete"
     });
 });
 function loadComplete() {
-    var xlObj = this.XLObj, xlCFormat = this.XLCFormat;
+    var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
         xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
@@ -205,14 +192,14 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1"}],                               
+            rangeSettings: [{ dataSource: window.defaultData}],                               
         }],
         allowConditionalFormats: true,
         loadComplete: "loadComplete"
     });
 });
 function loadComplete() {
-    var xlObj = this.XLObj, xlCFormat = this.XLCFormat;
+    var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
         xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
@@ -229,7 +216,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filtering
 
-Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use [allowFiltering](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowfiltering "") property to enable/disable filtering. 
+Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use [`allowFiltering`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowfiltering "allowFiltering") property to enable/disable filtering. 
 
 You can apply filtering by one of the following ways,
 
@@ -244,7 +231,7 @@ You have following options in Filtering.
 
 ### Filter by Value
 
-You can perform filtering by using number, string and date. The filtered rows are only visible in the Spreadsheet all the other rows within the filtered range were hidden.
+You can perform filtering by using number, string. The filtered rows are only visible in the Spreadsheet. All the other rows within the filtered range were hidden.
 
 You can do this by one of the following ways,
 
@@ -262,7 +249,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],
         }],
         loadComplete: "loadComplete"
     });
@@ -282,8 +269,9 @@ The following output is displayed as a result of the above code example.
 
 ### Filter by Color
 
-You can perform filtering by the selected cell color or font color. The filtered rows are only visible in the Spreadsheet all the other rows within the filtered range were hidden. This option is only available if the selected range of cells having any color.
-You can do this by clicking "Filter by Color" option in filter dialog to select filter by cell color or font color.
+You can perform filtering by the selected cell color or font color. The filtered rows are only visible in the Spreadsheet. You can do this by clicking "Filter by Color" option in filter dialog to select filter by cell color or font color.
+
+N> This option is only available if the selected range of cells having any color.
 
 ### Clear Filter
 
@@ -307,7 +295,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -334,25 +322,18 @@ You can insert a picture by selecting the "Pictures" button under Illustrations 
 
 You can perform the following customizations for picture. These are available in DESIGN Tab which is enabled while clicking the picture element.
 
-#### Change Picture
-
-You can change the picture with existing picture.
-
-#### Reset Picture
-
-You can reset the changes done in the picture such as border changes, height and width changes.
-
-#### Picture Border
-
-You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border. 
-
-#### Height and Width
-
-You can change the height and width of the picture.
+<table>
+    <colgroup><col width="150px" /></colgroup>
+    <tr><th>Feature</br></th><th>Description</br></th></tr>
+    <tr><td>Change Picture</br></td><td>You can change the picture with existing picture.</br></td></tr>
+    <tr><td>Reset Picture</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
+    <tr><td>Picture Border</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
+    <tr><td>Height and Width</br></td><td>You can change the height and width of the picture.</br></td></tr>
+</table>
 
 ## Pivot Table
 
-Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use [enablePivotTable](http://help.syncfusion.com/js/api/ejspreadsheet#members:enablepivottable "") property to enable/disable pivot table operations. 
+Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use [`enablePivotTable`](http://help.syncfusion.com/js/api/ejspreadsheet#members:enablepivottable "enablePivotTable") property to enable/disable pivot table operations. 
 
 You can do this by one of the following ways,
 
@@ -370,7 +351,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.pivot" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.pivot, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.pivot, showHeader: true }],                               
         }],
         enablePivotTable: true,
         loadComplete: "loadComplete"
@@ -396,7 +377,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sorting
 
-Sorting helps you to arrange the data in a particular order to a selected range of cells. You can use [allowSorting](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "") property to enable/disable sorting. 
+Sorting helps you to arrange the data to particular order in a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
 
 You have following options in sorting.
 
@@ -417,7 +398,7 @@ You can do this by one of the following ways,
 
 ### Sort by Color
 
-You can perform sort by color to arrange the data based on the selected cell background color or font color. This option is only available if the selected range of cells having any color.
+You can perform sort by color to arrange the data based on the selected cell's background color or font color. This option is only available if the selected range of cells having any color.
 
 You can do this by one of the following ways,
 
@@ -435,7 +416,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -461,41 +442,28 @@ The following output is displayed as a result of the above code example.
 
 ## Table
 
-A table is a data structure that organizes information into rows and columns. You can use [allowFormatAsTable](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowformatastable "") property enable/disable table operations. 
+A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
 
 You can do this by one of the following ways,
 
 * Using "Format As Table" under Styles group of HOME Tab in ribbon.
 * Using Table option under Tables group of INSERT Tab in ribbon.
-* Using [`createTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and "[removeTable](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-removetable "")" to delete a table.
+* Using [`createTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and [`removeTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-removetable "removeTable") to delete a table.
 
 ### Table Customization
 
 You can perform the following customizations for table. These are available in DESIGN Tab which is enabled while clicking the table.
 
-#### Resize Table
-
-You can resize the table only to increase row count.
-
-#### Convert to Range
-
-You can remove the table using this option.
-
-#### First Column
-
-You can highlight the first column of the table.
-
-#### Last Column
-
-You can highlight the last column of the table.
-
-#### Total Row
-
-You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.
-
-#### Filter Button
-
-You can able to hide or unhide the filter icons in the filter header of a table.
+<table>
+    <colgroup><col width="150px" /></colgroup>
+    <tr><th>Feature</br></th><th>Description</br></th></tr>
+    <tr><td>Resize Table</br></td><td>You can resize the table only to increase row count.</br></td></tr>
+    <tr><td>Convert to Range</br></td><td>You can remove the table using this option.</br></td></tr>
+    <tr><td>First Column</br></td><td>You can highlight the first column of the table.</br></td></tr>
+    <tr><td>Last Column</br></td><td>You can highlight the last column of the table.</br></td></tr>
+    <tr><td>Total Row</br></td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</br></td></tr>
+    <tr><td>Filter Button</br></td><td>You can able to hide or unhide the filter icons in the filter header of a table.</br></td></tr>
+</table>
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -507,7 +475,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.bill" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.bill, startCell: "A1", showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.bill, showHeader: true }],                               
         }],
         allowFormatAsTable: true,
         loadComplete: "loadComplete"
@@ -516,11 +484,8 @@ $(function () {
 function loadComplete() {
     var i, format = [], formatObj = [],xlFormat = this.XLFormat, formatName = ["TableStyleLight8", "TableStyleLight10"];
     if (!this.isImport) {
-        for (i = 0; i < formatName.length; i++) {
-            format[i] = xlFormat._getTableLayoutFromName(formatName[i]).format;
-            formatObj[i] = { "header": true, "name": "Table" + (i + 1), "format": format[i],   
-            "formatName": formatName[i] };
-        }
+        for (i = 0; i < formatName.length; i++)
+	        formatObj[i] = { "header": true, "name": formatName[i].substr(10), "formatName": formatName[i] };
         xlFormat.createTable(formatObj[0], "A1:B4");
         xlFormat.createTable(formatObj[1], "D1:E4");
     }

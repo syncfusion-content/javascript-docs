@@ -183,7 +183,7 @@ You can customize the column with some more options with the [showColumnOptions]
 
 ![](/js/Gantt/Columns_images/Columns_img4.png)
 
-The column options can be enable or disabled with showColumnOptions property, where the default value for this perperty is false.
+The column options can be enable or disabled with showColumnOptions property, where the default value for this property is false.
 
 The column options provide the following options:
 

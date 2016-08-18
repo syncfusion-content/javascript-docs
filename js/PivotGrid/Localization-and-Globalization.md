@@ -32,7 +32,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
     <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
-                 url: "../OLAPService",
+                 url: "/OLAPService",
                 locale: "fr-FR",
                 enableVirtualScrolling: true,
                 afterServiceInvoke: "onServiceInvoke",
@@ -76,7 +76,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
         ...
     };
 
-        ej.PivotPager.locale["fr-FR"] = {
+        ej.PivotPager.Locale["fr-FR"] = {
             SeriesPage: "Série Page",
             CategoricalPage: "Catégorique Page"
         };
@@ -1173,7 +1173,7 @@ You can render our PivotGrid control from Right to Left by setting [`enableRTL`]
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../OLAPService",
+        url: "/OLAPService",
         enableRTL: true
     });
 });

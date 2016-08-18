@@ -24,7 +24,7 @@ The PivotGrid control can be exported by invoking **"exportPivotGrid"** method, 
     //...
     <body>
        //...
-       <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
        <button id="btnExport">Export</button>
        <script type="text/javascript">
            $(function () {

@@ -4,14 +4,14 @@ title: Service reference for ejTreeGrid widget
 description: What are the exporting services used in Essential JavaScript TreeGrid.
 documentation: api
 platform: js
-keywords: ejTreeGrid, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting
+keywords: ejTreeGrid,ejChart, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting,Chart Exporting
 metaname: 
 metacontent:
-control: ejTreeGrid
+control: ejTreeGrid, ejChart
 ---
-# TreeGrid Exporting services
+## TreeGrid Exporting services
 
-## Description
+### Description
 
 The following are the types of exporting is available in TreeGrid.
 
@@ -22,7 +22,7 @@ The following are the types of exporting is available in TreeGrid.
 
 ### URL
 
-[http://js.syncfusion.com/ejServices/api/JSTreeGridExport/PdfExport](http://js.syncfusion.com/ejServices/api/JSTreeGridExport/PdfExport# "")
+[http://js.syncfusion.com/demos/ejServices/api/JSTreeGridExport/PdfExport](http://js.syncfusion.com/demos/ejServices/api/JSTreeGridExport/PdfExport)
 
 ### Parameter
 
@@ -31,9 +31,9 @@ Type1:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -56,9 +56,9 @@ Type2:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -86,9 +86,9 @@ Type3:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -121,9 +121,9 @@ Type4:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -153,9 +153,9 @@ HeaderText Is to specify the title for export document.</td></tr>
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -193,9 +193,9 @@ Type5:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -233,9 +233,9 @@ Type6:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -407,6 +407,7 @@ headerText</td><td>
 String</td><td>
 HeaderText Is to specify the title for export document.</td></tr>
 </table>
+
 ### Request
 
 {% highlight javascript %}
@@ -420,7 +421,8 @@ toolbarClick: function (args) {
 
 this.exportGrid = this["export"];
 
-if (args.itemName == "PDF Export") {                   this.exportGrid('http://js.syncfusion.com/ejServices/api/JSTreeGridExport/PdfExport/api/JSTreeGridExport/PdfExport', "", false);
+if (args.itemName == "PDF Export") {                   
+    this.exportGrid('http://js.syncfusion.com/ejServices/api/JSTreeGridExport/PdfExport/api/JSTreeGridExport/PdfExport', "", false);
 
 args.cancel = true;
 
@@ -468,7 +470,7 @@ exp.Export(gridProperty, result, settings, "Export");
 
 ### URL
 
-[http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport](http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport# "")
+[http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport](http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport)
 
 ### Parameter
 
@@ -477,9 +479,9 @@ Type1:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -512,9 +514,9 @@ Type2:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -552,9 +554,9 @@ Type3:
 <table>
 <tr>
 <td>
-**Name******</td><td>
-**Type******</td><td>
-**Description******</td></tr>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 TreeGridProperties</td><td>
@@ -591,6 +593,7 @@ filePath</td><td>
 String</td><td>
 With this parameter you can set the location where the exporting file should downloaded. It can be local or server machine file path.</td></tr>
 </table>
+
 ### Request 
 
 {% highlight javascript %}
@@ -646,3 +649,46 @@ exp.Export(gridProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new
 
 ~~~
 
+##ejChart - Exporting service
+
+### Description
+
+To export Chart as PNG, JPG, SVG, PDF document, Excel document or Word document.
+
+### URL
+[http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart](http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart)
+
+### Parameter
+<table>
+<tr>
+<td>Name</td>
+<td>Value</td></tr>
+<tr>
+<td>exportMultipleChart</td><td>false</td>
+</tr>
+</table>
+
+### Request
+
+{% highlight js %}
+ 
+var chart = $(".e-datavisualization-chart").ejChart("instance");
+var exportSettings = chart.model.exportSettings;
+exportSettings.fileName = "Chart";
+exportSettings.angle = "90";
+exportSettings.type = "png";
+exportSettings.mode = 'server';
+exportSettings.action = 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart';
+data = chart.export();
+
+{% endhighlight %}
+
+###Response
+
+####Code: 200
+
+####Content-Type: application/octet-stream
+
+####Response (PNG, JPG, SVG, PDF, Word or Excel):
+
+Browser will prompt a dialog box to save the file (image or document).

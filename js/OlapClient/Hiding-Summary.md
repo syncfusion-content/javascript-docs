@@ -14,7 +14,7 @@ By setting the “GridLayout” property as “NoSummaries”, the summary cells
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-        url: "../OlapClient",
+        url: "/OlapClient",
         title: "OLAP Browser",
         gridLayout: ej.PivotGrid.Layout.NoSummaries
     });

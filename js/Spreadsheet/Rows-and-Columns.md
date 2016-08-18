@@ -169,16 +169,15 @@ $(function () {
     });
 });
 function loadComplete() {
-    var xlObj = this.XLObj;
-    if(!xlObj.isImport) {
-        xlObj.insertEntireRow(2, 2);
-        xlObj.insertEntireColumn(2, 2);
-        xlObj.deleteEntireRow(4, 4);
-        xlObj.deleteEntireColumn(4, 4);
-        xlObj.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
-        xlObj.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
-        xlObj.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
-        xlObj.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
+    if(!this.isImport) {
+        this.insertEntireRow(2, 2);
+        this.insertEntireColumn(2, 2);
+        this.deleteEntireRow(4, 4);
+        this.deleteEntireColumn(4, 4);
+        this.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
+        this.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
+        this.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
+        this.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
     }
 }
 {% endhighlight %}
@@ -223,10 +222,10 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport){
-        xlObj.hideRow(2);
-        xlObj.hideColumn(2);
+    this.setWidthToColumns([180, ]);
+    if(!this.isImport){
+        this.hideRow(2);
+        this.hideColumn(2);
     }
 }
 {% endhighlight %}
@@ -267,10 +266,9 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport){
-        xlObj.showRow(2);
-        xlObj.showColumn(2);
+    if(!this.isImport){
+        this.showRow(2);
+        this.showColumn(2);
     }
 }
 {% endhighlight %}
@@ -309,10 +307,9 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-    if(!xlObj.isImport){
-        xlObj.XLResize.setColWidth(2, 100);
-        xlObj.XLResize.setRowHeight(2, 40);
+    if(!this.isImport){
+        this.XLResize.setColWidth(2, 100);
+        this.XLResize.setRowHeight(2, 40);
     }
 }
 {% endhighlight %}

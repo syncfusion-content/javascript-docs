@@ -17,7 +17,7 @@ A layout in which summary cells are positioned at the bottom of each parent memb
 
 {% highlight js %}
 	$("#PivotGrid1").ejPivotGrid({
-      url: "../OLAPService",
+      url: "/OLAPService",
      layout: ej.PivotGrid.Layout.Normal
 }); 
 
@@ -31,7 +31,7 @@ A layout in which summary cells are completely hidden and the child members appe
 {% highlight js %}
 
 $("#PivotGrid1").ejPivotGrid({
-      url: "../OLAPService",
+      url: "/OLAPService",
      layout: ej.PivotGrid.Layout.NoSummaries
 });
 
@@ -45,7 +45,7 @@ A layout in which summary cells are positioned besides each parent member and th
 {% highlight js %}
 
 $("#PivotGrid1").ejPivotGrid({
-    url: "../OLAPService",
+    url: "/OLAPService",
     layout: ej.PivotGrid.Layout.ExcelLikeLayout
 });
 
@@ -59,7 +59,7 @@ A layout in which summary cells are positioned at the top of each parent member 
 {% highlight js %}
 
 $("#PivotGrid1").ejPivotGrid({
-     url: "../OLAPService",
+     url: "/OLAPService",
      layout: ej.PivotGrid.Layout.NormalTopSummary
 });
 

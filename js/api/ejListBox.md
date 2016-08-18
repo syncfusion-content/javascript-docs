@@ -324,6 +324,23 @@ Example
 
 {% endhighlight %}
 
+### enableWordWrap `boolean`
+{:#members:enablewordwrap}
+
+Specifies ellipsis ("...") representation in an overflowed list item content when it is set to false.
+
+#### Default Value:
+* true
+
+Example 
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({enableWordWrap : false }); 
+
+{% endhighlight %}
+
 
 ### fields `object`
 {:#members:fields}

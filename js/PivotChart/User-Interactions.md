@@ -171,7 +171,9 @@ After zooming the Chart, a zooming toolbar will appear with options to *zoom, pa
 ![](User-Interactions_images/pan.png) 
 
 ###Types of Zooming
-You can zoom the particular axis like horizontal axis or vertical axis or both axis using [`type`](/js/api/ejchart#members:zooming-type) option in zooming. The default value is “x,y” (indicating both axis).
+You can zoom the particular axis like horizontal axis or vertical axis or both axis using [`type`](/js/api/ejchart#members:zooming-type) option in zooming. 
+
+N> By default, the value for the `type` option in zooming is “x,y” (indicating both axis) in PivotChart.
 
 {% highlight javascript %}
 
@@ -195,7 +197,16 @@ $(function()
 ##Marker and Crosshair
 
 ###Marker Shape Customization
-In PivotChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
+In PivotChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with the following symbols.
+* Rectangle
+* Circle
+* Cross
+* Diamond 
+* Pentagon
+* Hexagon
+* Star
+* Ellipse
+* Triangle etc.
 
 {% highlight javascript %}
 
