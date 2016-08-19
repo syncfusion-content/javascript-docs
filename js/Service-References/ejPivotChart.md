@@ -101,10 +101,9 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
         pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
      }
 {% endhighlight %}
-
 #### PivotChart Exporting in C# 
 
-{% highlight c# %}
+{% highlight %}
 
         [System.Web.Http.ActionName("ExcelExport")]
         [System.Web.Http.HttpPost]
