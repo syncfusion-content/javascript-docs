@@ -23,7 +23,7 @@ Description</th></tr>
 {{ '[content](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)' | markdownify }} </td><td> Map the column name to use as content to cards.</td></tr>
 <tr>
 <td>
-[`tag`](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag) </td><td>
+{{ '[tag](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag)' | markdownify }} </td><td>
 Map the column name to use as tag. Multiple tags can be given with comma separated.  E.g. "API","SQL, Database".</td></tr>
 <tr>
 <td>
