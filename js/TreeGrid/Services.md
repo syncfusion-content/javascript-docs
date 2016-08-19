@@ -4,14 +4,14 @@ title: Service reference for ejTreeGrid widget
 description: What are the exporting services used in Essential JavaScript TreeGrid.
 documentation: api
 platform: js
-keywords: ejTreeGrid,ejChart, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting,Chart Exporting
+keywords: ejTreeGrid, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting
 metaname: 
 metacontent:
-control: ejTreeGrid, ejChart
+control: ejTreeGrid
 ---
-## TreeGrid Exporting services
+# TreeGrid Exporting services
 
-### Description
+## Description
 
 The following are the types of exporting is available in TreeGrid.
 
@@ -646,46 +646,3 @@ exp.Export(gridProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new
 
 ~~~
 
-##ejChart - Exporting service
-
-### Description
-
-To export Chart as PNG, JPG, SVG, PDF document, Excel document or Word document.
-
-### URL
-[http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart](http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart)
-
-### Parameter
-<table>
-<tr>
-<td>Name</td>
-<td>Value</td></tr>
-<tr>
-<td>exportMultipleChart</td><td>false</td>
-</tr>
-</table>
-
-### Request
-
-{% highlight js %}
- 
-var chart = $(".e-datavisualization-chart").ejChart("instance");
-var exportSettings = chart.model.exportSettings;
-exportSettings.fileName = "Chart";
-exportSettings.angle = "90";
-exportSettings.type = "png";
-exportSettings.mode = 'server';
-exportSettings.action = 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart';
-data = chart.export();
-
-{% endhighlight %}
-
-###Response
-
-####Code: 200
-
-####Content-Type: application/octet-stream
-
-####Response (PNG, JPG, SVG, PDF, Word or Excel):
-
-Browser will prompt a dialog box to save the file (image or document).
