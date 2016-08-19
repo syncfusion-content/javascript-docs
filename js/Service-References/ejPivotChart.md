@@ -63,7 +63,8 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
 
 #### PivotChart Exporting in JS
 
-{% highlight %}
+{% highlight html %}
+
 <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px">
 <button id="btnExport">Export</button>
  $(function() {
@@ -101,9 +102,10 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
         pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
      }
 {% endhighlight %}
+
 #### PivotChart Exporting in C# 
 
-{% highlight %}
+{% highlight c# %}
 
         [System.Web.Http.ActionName("ExcelExport")]
         [System.Web.Http.HttpPost]
