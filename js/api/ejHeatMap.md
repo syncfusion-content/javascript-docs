@@ -129,7 +129,7 @@ Specifies the source data of the heat map.
     <div id="heatmap"></div>
     <script>
 
-        var columns = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fl�temysost"]
+        var columns = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Flytemysost"]
         var itemSource = [];
         for (var i = 0; i < columns.length; i++) {
             for (var j = 0; j < 6; j++) {
