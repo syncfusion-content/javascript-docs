@@ -117,7 +117,7 @@ It is used to execute the query on URL Binding
 <tr>
 <td class="name">dataManager</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">json data or OData</td>
+<td class="description last">JSON data or OData</td>
 </tr>
 </tbody>
 </table>
@@ -155,7 +155,7 @@ It is used to execute the query on Local Binding
 <tr>
 <td class="name">dataManager </td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">json data</td>
+<td class="description last">JSON data</td>
 </tr>
 </tbody>
 </table>
@@ -354,7 +354,7 @@ Displays the records in hierarchical relationships. The foreign key is used to r
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">query the json data</td>
+<td class="description last">query the JSON data</td>
 </tr>
 </tbody>
 </table>
@@ -442,12 +442,12 @@ The range property is used to retrieve the records based on the given start and 
 <tr>
 <td class="name">start</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">start index of json data</td>
+<td class="description last">start index of JSON data</td>
 </tr>
 <tr>
 <td class="name">end</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">end index of json data</td>
+<td class="description last">end index of JSON data</td>
 </tr>
 </tbody>
 </table>
