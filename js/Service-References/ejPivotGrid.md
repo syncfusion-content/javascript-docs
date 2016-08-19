@@ -105,7 +105,7 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 #### PivotGrid Exporting in C# 
 
-{% highlight c# %}
+{% highlight %}
 
         [System.Web.Http.ActionName("ExcelExport")]
         [System.Web.Http.HttpPost]
