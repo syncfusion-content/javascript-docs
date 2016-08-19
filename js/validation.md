@@ -1,7 +1,7 @@
 ---
 title: JQuery validation
 description: How to perform jQuery validation for EJ form controls
-platform: JavaScript
+platform: js
 control: Introduction
 documentation: UG
 keywords: Validation, jQuery validation, Client side validation
