@@ -12,7 +12,7 @@ keywords: ejPivotChart, Services, JS PivotChart, PivotChart, PivotChart Exportin
 
 PivotChart widget is a lightweight control that reads both OLAP and Relational data source and visualizes it in graphical format with the ability to drill up and down. PivotChart uses services to initialize and operate widget and also to export PivotChart to an Excel, Word, PDF or Image document.
 
-## WCF/WebAPI Service
+## WCF/WebAPI Service to populate PivotChart 
 You can populate a simple PivotChart with OLAP/Relational data completely from the server-side using WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
  
 For Relational data source, [click here.](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode)
@@ -27,10 +27,10 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport)
+http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport
 
 ### Parameter
 <table>
@@ -63,7 +63,8 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
 
 #### PivotChart Exporting in JS
 
-{% highlight %}
+{% highlight html %}
+
 <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px">
 <button id="btnExport">Export</button>
  $(function() {
@@ -101,9 +102,10 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
         pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
      }
 {% endhighlight %}
+
 #### PivotChart Exporting in C# 
 
-{% highlight %}
+{% highlight c# %}
 
         [System.Web.Http.ActionName("ExcelExport")]
         [System.Web.Http.HttpPost]
@@ -146,13 +148,13 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
         }  
 {% endhighlight %}
  
-###Response
+### Response
 
-####Code: 200
+#### Code: 200
 
-####Content-Type: application/octet-stream
+#### Content-Type: application/octet-stream
 
-####Response (Excel, Word, PDF or Image):
+#### Response (Excel, Word, PDF or Image):
 Browser will prompt a dialog box to save the file.
 
 

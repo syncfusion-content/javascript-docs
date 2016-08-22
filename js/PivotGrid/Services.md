@@ -27,12 +27,13 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport)
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport
 
 ### Parameter
+
 <table>
    <th>Type</th>
    <th>URL </th>
@@ -51,7 +52,7 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
       <td>PDF</td>
       <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport</td>
       <td>False</td>
-   </tr
+   </tr>
    <tr>
       <td>CSV</td>
       <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport</td>
@@ -63,7 +64,7 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 #### PivotGrid Exporting in JS
 
-{% highlight %}
+{% highlight html %}
 
 <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
 <button id="btnExport">Export</button>
@@ -105,7 +106,7 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 #### PivotGrid Exporting in C# 
 
-{% highlight %}
+{% highlight c# %}
 
         [System.Web.Http.ActionName("ExcelExport")]
         [System.Web.Http.HttpPost]
@@ -146,12 +147,12 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 {% endhighlight %}
  
 
-###Response
+### Response
 
-####Code: 200
+#### Code: 200
 
-####Content-Type: application/octet-stream
+#### Content-Type: application/octet-stream
 
-####Response (Excel, Word, PDF or CSV):
+#### Response (Excel, Word, PDF or CSV):
 Browser will prompt a dialog box to save the file.
 
