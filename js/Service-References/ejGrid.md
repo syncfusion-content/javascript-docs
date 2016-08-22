@@ -132,7 +132,7 @@ To export grid data as Excel, Word or PDF document.
       <td>false</td>
    </tr>
    <tr>
-      <td>Pdf</td>
+      <td>PDF</td>
       <td>http://js.syncfusion.com/ExportingServices/api/JSGridExport/PdfExport</td>
       <td>false</td>
    </tr>
@@ -140,7 +140,7 @@ To export grid data as Excel, Word or PDF document.
 
 ### Request
 
-#### Essential Grid exporting in Javascript platform
+#### Essential Grid exporting in JavaScript platform
 {% highlight js %}
 $(function() {
     $("#Grid").ejGrid({
