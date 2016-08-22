@@ -27,10 +27,10 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport)
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport
+http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport
 
 ### Parameter
 
@@ -147,12 +147,12 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 {% endhighlight %}
  
 
-###Response
+### Response
 
-####Code: 200
+#### Code: 200
 
-####Content-Type: application/octet-stream
+#### Content-Type: application/octet-stream
 
-####Response (Excel, Word, PDF or CSV):
+#### Response (Excel, Word, PDF or CSV):
 Browser will prompt a dialog box to save the file.
 
